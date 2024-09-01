@@ -1,6 +1,6 @@
 /*
  * Hyperswitch - API Documentation
- *  ## Get started  Hyperswitch provides a collection of APIs that enable you to process and manage payments. Our APIs accept and return JSON in the HTTP body, and return standard HTTP response codes.  You can consume the APIs directly using your favorite HTTP/REST library.  We have a testing environment referred to \"sandbox\", which you can setup to test API calls without affecting production data. Currently, our sandbox environment is live while our production environment is under development and will be available soon. You can sign up on our Dashboard to get API keys to access Hyperswitch API.  ### Environment  Use the following base URLs when making requests to the APIs:  | Environment   |  Base URL                          | |---------------|------------------------------------| | Sandbox       | <https://sandbox.hyperswitch.io>   | | Production    | <https://api.hyperswitch.io>       |  ## Authentication  When you sign up on our [dashboard](https://app.hyperswitch.io) and create a merchant account, you are given a secret key (also referred as api-key) and a publishable key. You may authenticate all API requests with Hyperswitch server by providing the appropriate key in the request Authorization header.  | Key             |  Description                                                                                  | |-----------------|-----------------------------------------------------------------------------------------------| | api-key         | Private key. Used to authenticate all API requests from your merchant server                  | | publishable key | Unique identifier for your account. Used to authenticate API requests from your app's client  |  Never share your secret api keys. Keep them guarded and secure. 
+ *  ## Get started  Hyperswitch provides a collection of APIs that enable you to process and manage payments. Our APIs accept and return JSON in the HTTP body, and return standard HTTP response codes.  You can consume the APIs directly using your favorite HTTP/REST library.  We have a testing environment referred to \"sandbox\", which you can setup to test API calls without affecting production data. Currently, our sandbox environment is live while our production environment is under development and will be available soon. You can sign up on our Dashboard to get API keys to access Hyperswitch API.  ### Environment  Use the following base URLs when making requests to the APIs:  | Environment   |  Base URL                          | |---------------|------------------------------------| | Sandbox       | <https://sandbox.hyperswitch.io>   | | Production    | <https://api.hyperswitch.io>       |  ## Authentication  When you sign up on our [dashboard](https://app.hyperswitch.io) and create a merchant account, you are given a secret key (also referred as api-key) and a publishable key. You may authenticate all API requests with Hyperswitch server by providing the appropriate key in the request Authorization header.  | Key             |  Description                                                                                  | |-----------------|-----------------------------------------------------------------------------------------------| | api-key         | Private key. Used to authenticate all API requests from your merchant server                  | | publishable key | Unique identifier for your account. Used to authenticate API requests from your app's client  |  Never share your secret api keys. Keep them guarded and secure.
  *
  * The version of the OpenAPI document: 0.2.0
  * Contact: hyperswitch@juspay.in
@@ -81,6 +81,7 @@ import com.fasterxml.jackson.annotation.JsonTypeName;
   PaymentsCreateRequest.JSON_PROPERTY_PAYMENT_METHOD_DATA,
   PaymentsCreateRequest.JSON_PROPERTY_PAYMENT_METHOD,
   PaymentsCreateRequest.JSON_PROPERTY_PAYMENT_TOKEN,
+  PaymentsCreateRequest.JSON_PROPERTY_RECURRING_DETAILS,
   PaymentsCreateRequest.JSON_PROPERTY_CARD_CVC,
   PaymentsCreateRequest.JSON_PROPERTY_SHIPPING,
   PaymentsCreateRequest.JSON_PROPERTY_BILLING,
@@ -185,6 +186,9 @@ public class PaymentsCreateRequest {
   public static final String JSON_PROPERTY_PAYMENT_TOKEN = "payment_token";
   private JsonNullable<String> paymentToken = JsonNullable.<String>undefined();
 
+  public static final String JSON_PROPERTY_RECURRING_DETAILS = "recurring_details";
+  private JsonNullable<RecurringDetails> recurringDetails = JsonNullable.<RecurringDetails>undefined();
+
   public static final String JSON_PROPERTY_CARD_CVC = "card_cvc";
   private JsonNullable<String> cardCvc = JsonNullable.<String>undefined();
 
@@ -277,7 +281,7 @@ public class PaymentsCreateRequest {
 
   public PaymentsCreateRequest paymentId(String paymentId) {
     this.paymentId = JsonNullable.<String>of(paymentId);
-    
+
     return this;
   }
 
@@ -298,7 +302,7 @@ public class PaymentsCreateRequest {
   public JsonNullable<String> getPaymentId_JsonNullable() {
     return paymentId;
   }
-  
+
   @JsonProperty(JSON_PROPERTY_PAYMENT_ID)
   public void setPaymentId_JsonNullable(JsonNullable<String> paymentId) {
     this.paymentId = paymentId;
@@ -311,7 +315,7 @@ public class PaymentsCreateRequest {
 
   public PaymentsCreateRequest merchantId(String merchantId) {
     this.merchantId = JsonNullable.<String>of(merchantId);
-    
+
     return this;
   }
 
@@ -332,7 +336,7 @@ public class PaymentsCreateRequest {
   public JsonNullable<String> getMerchantId_JsonNullable() {
     return merchantId;
   }
-  
+
   @JsonProperty(JSON_PROPERTY_MERCHANT_ID)
   public void setMerchantId_JsonNullable(JsonNullable<String> merchantId) {
     this.merchantId = merchantId;
@@ -344,7 +348,7 @@ public class PaymentsCreateRequest {
 
 
   public PaymentsCreateRequest amount(Long amount) {
-    
+
     this.amount = amount;
     return this;
   }
@@ -372,7 +376,7 @@ public class PaymentsCreateRequest {
 
   public PaymentsCreateRequest routing(RoutingAlgorithm routing) {
     this.routing = JsonNullable.<RoutingAlgorithm>of(routing);
-    
+
     return this;
   }
 
@@ -393,7 +397,7 @@ public class PaymentsCreateRequest {
   public JsonNullable<RoutingAlgorithm> getRouting_JsonNullable() {
     return routing;
   }
-  
+
   @JsonProperty(JSON_PROPERTY_ROUTING)
   public void setRouting_JsonNullable(JsonNullable<RoutingAlgorithm> routing) {
     this.routing = routing;
@@ -406,7 +410,7 @@ public class PaymentsCreateRequest {
 
   public PaymentsCreateRequest connector(List<Connector> connector) {
     this.connector = JsonNullable.<List<Connector>>of(connector);
-    
+
     return this;
   }
 
@@ -439,7 +443,7 @@ public class PaymentsCreateRequest {
   public JsonNullable<List<Connector>> getConnector_JsonNullable() {
     return connector;
   }
-  
+
   @JsonProperty(JSON_PROPERTY_CONNECTOR)
   public void setConnector_JsonNullable(JsonNullable<List<Connector>> connector) {
     this.connector = connector;
@@ -451,7 +455,7 @@ public class PaymentsCreateRequest {
 
 
   public PaymentsCreateRequest currency(Currency currency) {
-    
+
     this.currency = currency;
     return this;
   }
@@ -478,7 +482,7 @@ public class PaymentsCreateRequest {
 
   public PaymentsCreateRequest captureMethod(CaptureMethod captureMethod) {
     this.captureMethod = JsonNullable.<CaptureMethod>of(captureMethod);
-    
+
     return this;
   }
 
@@ -499,7 +503,7 @@ public class PaymentsCreateRequest {
   public JsonNullable<CaptureMethod> getCaptureMethod_JsonNullable() {
     return captureMethod;
   }
-  
+
   @JsonProperty(JSON_PROPERTY_CAPTURE_METHOD)
   public void setCaptureMethod_JsonNullable(JsonNullable<CaptureMethod> captureMethod) {
     this.captureMethod = captureMethod;
@@ -512,7 +516,7 @@ public class PaymentsCreateRequest {
 
   public PaymentsCreateRequest amountToCapture(Long amountToCapture) {
     this.amountToCapture = JsonNullable.<Long>of(amountToCapture);
-    
+
     return this;
   }
 
@@ -533,7 +537,7 @@ public class PaymentsCreateRequest {
   public JsonNullable<Long> getAmountToCapture_JsonNullable() {
     return amountToCapture;
   }
-  
+
   @JsonProperty(JSON_PROPERTY_AMOUNT_TO_CAPTURE)
   public void setAmountToCapture_JsonNullable(JsonNullable<Long> amountToCapture) {
     this.amountToCapture = amountToCapture;
@@ -546,7 +550,7 @@ public class PaymentsCreateRequest {
 
   public PaymentsCreateRequest captureOn(OffsetDateTime captureOn) {
     this.captureOn = JsonNullable.<OffsetDateTime>of(captureOn);
-    
+
     return this;
   }
 
@@ -567,7 +571,7 @@ public class PaymentsCreateRequest {
   public JsonNullable<OffsetDateTime> getCaptureOn_JsonNullable() {
     return captureOn;
   }
-  
+
   @JsonProperty(JSON_PROPERTY_CAPTURE_ON)
   public void setCaptureOn_JsonNullable(JsonNullable<OffsetDateTime> captureOn) {
     this.captureOn = captureOn;
@@ -580,7 +584,7 @@ public class PaymentsCreateRequest {
 
   public PaymentsCreateRequest confirm(Boolean confirm) {
     this.confirm = JsonNullable.<Boolean>of(confirm);
-    
+
     return this;
   }
 
@@ -601,7 +605,7 @@ public class PaymentsCreateRequest {
   public JsonNullable<Boolean> getConfirm_JsonNullable() {
     return confirm;
   }
-  
+
   @JsonProperty(JSON_PROPERTY_CONFIRM)
   public void setConfirm_JsonNullable(JsonNullable<Boolean> confirm) {
     this.confirm = confirm;
@@ -614,7 +618,7 @@ public class PaymentsCreateRequest {
 
   public PaymentsCreateRequest customer(CustomerDetails customer) {
     this.customer = JsonNullable.<CustomerDetails>of(customer);
-    
+
     return this;
   }
 
@@ -635,7 +639,7 @@ public class PaymentsCreateRequest {
   public JsonNullable<CustomerDetails> getCustomer_JsonNullable() {
     return customer;
   }
-  
+
   @JsonProperty(JSON_PROPERTY_CUSTOMER)
   public void setCustomer_JsonNullable(JsonNullable<CustomerDetails> customer) {
     this.customer = customer;
@@ -648,7 +652,7 @@ public class PaymentsCreateRequest {
 
   public PaymentsCreateRequest customerId(String customerId) {
     this.customerId = JsonNullable.<String>of(customerId);
-    
+
     return this;
   }
 
@@ -669,7 +673,7 @@ public class PaymentsCreateRequest {
   public JsonNullable<String> getCustomerId_JsonNullable() {
     return customerId;
   }
-  
+
   @JsonProperty(JSON_PROPERTY_CUSTOMER_ID)
   public void setCustomerId_JsonNullable(JsonNullable<String> customerId) {
     this.customerId = customerId;
@@ -682,7 +686,7 @@ public class PaymentsCreateRequest {
 
   public PaymentsCreateRequest email(String email) {
     this.email = JsonNullable.<String>of(email);
-    
+
     return this;
   }
 
@@ -703,7 +707,7 @@ public class PaymentsCreateRequest {
   public JsonNullable<String> getEmail_JsonNullable() {
     return email;
   }
-  
+
   @JsonProperty(JSON_PROPERTY_EMAIL)
   public void setEmail_JsonNullable(JsonNullable<String> email) {
     this.email = email;
@@ -716,7 +720,7 @@ public class PaymentsCreateRequest {
 
   public PaymentsCreateRequest name(String name) {
     this.name = JsonNullable.<String>of(name);
-    
+
     return this;
   }
 
@@ -737,7 +741,7 @@ public class PaymentsCreateRequest {
   public JsonNullable<String> getName_JsonNullable() {
     return name;
   }
-  
+
   @JsonProperty(JSON_PROPERTY_NAME)
   public void setName_JsonNullable(JsonNullable<String> name) {
     this.name = name;
@@ -750,7 +754,7 @@ public class PaymentsCreateRequest {
 
   public PaymentsCreateRequest phone(String phone) {
     this.phone = JsonNullable.<String>of(phone);
-    
+
     return this;
   }
 
@@ -771,7 +775,7 @@ public class PaymentsCreateRequest {
   public JsonNullable<String> getPhone_JsonNullable() {
     return phone;
   }
-  
+
   @JsonProperty(JSON_PROPERTY_PHONE)
   public void setPhone_JsonNullable(JsonNullable<String> phone) {
     this.phone = phone;
@@ -784,7 +788,7 @@ public class PaymentsCreateRequest {
 
   public PaymentsCreateRequest phoneCountryCode(String phoneCountryCode) {
     this.phoneCountryCode = JsonNullable.<String>of(phoneCountryCode);
-    
+
     return this;
   }
 
@@ -805,7 +809,7 @@ public class PaymentsCreateRequest {
   public JsonNullable<String> getPhoneCountryCode_JsonNullable() {
     return phoneCountryCode;
   }
-  
+
   @JsonProperty(JSON_PROPERTY_PHONE_COUNTRY_CODE)
   public void setPhoneCountryCode_JsonNullable(JsonNullable<String> phoneCountryCode) {
     this.phoneCountryCode = phoneCountryCode;
@@ -818,7 +822,7 @@ public class PaymentsCreateRequest {
 
   public PaymentsCreateRequest offSession(Boolean offSession) {
     this.offSession = JsonNullable.<Boolean>of(offSession);
-    
+
     return this;
   }
 
@@ -839,7 +843,7 @@ public class PaymentsCreateRequest {
   public JsonNullable<Boolean> getOffSession_JsonNullable() {
     return offSession;
   }
-  
+
   @JsonProperty(JSON_PROPERTY_OFF_SESSION)
   public void setOffSession_JsonNullable(JsonNullable<Boolean> offSession) {
     this.offSession = offSession;
@@ -852,7 +856,7 @@ public class PaymentsCreateRequest {
 
   public PaymentsCreateRequest description(String description) {
     this.description = JsonNullable.<String>of(description);
-    
+
     return this;
   }
 
@@ -873,7 +877,7 @@ public class PaymentsCreateRequest {
   public JsonNullable<String> getDescription_JsonNullable() {
     return description;
   }
-  
+
   @JsonProperty(JSON_PROPERTY_DESCRIPTION)
   public void setDescription_JsonNullable(JsonNullable<String> description) {
     this.description = description;
@@ -886,7 +890,7 @@ public class PaymentsCreateRequest {
 
   public PaymentsCreateRequest returnUrl(String returnUrl) {
     this.returnUrl = JsonNullable.<String>of(returnUrl);
-    
+
     return this;
   }
 
@@ -907,7 +911,7 @@ public class PaymentsCreateRequest {
   public JsonNullable<String> getReturnUrl_JsonNullable() {
     return returnUrl;
   }
-  
+
   @JsonProperty(JSON_PROPERTY_RETURN_URL)
   public void setReturnUrl_JsonNullable(JsonNullable<String> returnUrl) {
     this.returnUrl = returnUrl;
@@ -920,7 +924,7 @@ public class PaymentsCreateRequest {
 
   public PaymentsCreateRequest setupFutureUsage(FutureUsage setupFutureUsage) {
     this.setupFutureUsage = JsonNullable.<FutureUsage>of(setupFutureUsage);
-    
+
     return this;
   }
 
@@ -941,7 +945,7 @@ public class PaymentsCreateRequest {
   public JsonNullable<FutureUsage> getSetupFutureUsage_JsonNullable() {
     return setupFutureUsage;
   }
-  
+
   @JsonProperty(JSON_PROPERTY_SETUP_FUTURE_USAGE)
   public void setSetupFutureUsage_JsonNullable(JsonNullable<FutureUsage> setupFutureUsage) {
     this.setupFutureUsage = setupFutureUsage;
@@ -954,7 +958,7 @@ public class PaymentsCreateRequest {
 
   public PaymentsCreateRequest authenticationType(AuthenticationType authenticationType) {
     this.authenticationType = JsonNullable.<AuthenticationType>of(authenticationType);
-    
+
     return this;
   }
 
@@ -975,7 +979,7 @@ public class PaymentsCreateRequest {
   public JsonNullable<AuthenticationType> getAuthenticationType_JsonNullable() {
     return authenticationType;
   }
-  
+
   @JsonProperty(JSON_PROPERTY_AUTHENTICATION_TYPE)
   public void setAuthenticationType_JsonNullable(JsonNullable<AuthenticationType> authenticationType) {
     this.authenticationType = authenticationType;
@@ -988,7 +992,7 @@ public class PaymentsCreateRequest {
 
   public PaymentsCreateRequest paymentMethodData(PaymentMethodData paymentMethodData) {
     this.paymentMethodData = JsonNullable.<PaymentMethodData>of(paymentMethodData);
-    
+
     return this;
   }
 
@@ -1009,7 +1013,7 @@ public class PaymentsCreateRequest {
   public JsonNullable<PaymentMethodData> getPaymentMethodData_JsonNullable() {
     return paymentMethodData;
   }
-  
+
   @JsonProperty(JSON_PROPERTY_PAYMENT_METHOD_DATA)
   public void setPaymentMethodData_JsonNullable(JsonNullable<PaymentMethodData> paymentMethodData) {
     this.paymentMethodData = paymentMethodData;
@@ -1022,7 +1026,7 @@ public class PaymentsCreateRequest {
 
   public PaymentsCreateRequest paymentMethod(PaymentMethod paymentMethod) {
     this.paymentMethod = JsonNullable.<PaymentMethod>of(paymentMethod);
-    
+
     return this;
   }
 
@@ -1043,7 +1047,7 @@ public class PaymentsCreateRequest {
   public JsonNullable<PaymentMethod> getPaymentMethod_JsonNullable() {
     return paymentMethod;
   }
-  
+
   @JsonProperty(JSON_PROPERTY_PAYMENT_METHOD)
   public void setPaymentMethod_JsonNullable(JsonNullable<PaymentMethod> paymentMethod) {
     this.paymentMethod = paymentMethod;
@@ -1056,7 +1060,7 @@ public class PaymentsCreateRequest {
 
   public PaymentsCreateRequest paymentToken(String paymentToken) {
     this.paymentToken = JsonNullable.<String>of(paymentToken);
-    
+
     return this;
   }
 
@@ -1077,7 +1081,7 @@ public class PaymentsCreateRequest {
   public JsonNullable<String> getPaymentToken_JsonNullable() {
     return paymentToken;
   }
-  
+
   @JsonProperty(JSON_PROPERTY_PAYMENT_TOKEN)
   public void setPaymentToken_JsonNullable(JsonNullable<String> paymentToken) {
     this.paymentToken = paymentToken;
@@ -1087,10 +1091,36 @@ public class PaymentsCreateRequest {
     this.paymentToken = JsonNullable.<String>of(paymentToken);
   }
 
+    public PaymentsCreateRequest recurringDetails(RecurringDetails recurringDetails) {
+        this.recurringDetails = JsonNullable.<RecurringDetails>of(recurringDetails);
+        return this;
+    }
+
+    @javax.annotation.Nullable
+    @JsonIgnore
+    public RecurringDetails getRecurringDetails() {
+        return recurringDetails.orElse(null);
+    }
+
+    @JsonProperty(JSON_PROPERTY_RECURRING_DETAILS)
+    @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
+    public JsonNullable<RecurringDetails> getRecurringDetails_JsonNullable() {
+        return recurringDetails;
+    }
+
+    @JsonProperty(JSON_PROPERTY_RECURRING_DETAILS)
+    public void setRecurringDetails_JsonNullable(JsonNullable<RecurringDetails> recurringDetails) {
+        this.recurringDetails = recurringDetails;
+    }
+
+    public void setRecurringDetails(RecurringDetails recurringDetails) {
+        this.recurringDetails = JsonNullable.<RecurringDetails>of(recurringDetails);
+    }
+
 
   public PaymentsCreateRequest cardCvc(String cardCvc) {
     this.cardCvc = JsonNullable.<String>of(cardCvc);
-    
+
     return this;
   }
 
@@ -1113,7 +1143,7 @@ public class PaymentsCreateRequest {
   public JsonNullable<String> getCardCvc_JsonNullable() {
     return cardCvc;
   }
-  
+
   @JsonProperty(JSON_PROPERTY_CARD_CVC)
   public void setCardCvc_JsonNullable(JsonNullable<String> cardCvc) {
     this.cardCvc = cardCvc;
@@ -1126,7 +1156,7 @@ public class PaymentsCreateRequest {
 
   public PaymentsCreateRequest shipping(Address shipping) {
     this.shipping = JsonNullable.<Address>of(shipping);
-    
+
     return this;
   }
 
@@ -1147,7 +1177,7 @@ public class PaymentsCreateRequest {
   public JsonNullable<Address> getShipping_JsonNullable() {
     return shipping;
   }
-  
+
   @JsonProperty(JSON_PROPERTY_SHIPPING)
   public void setShipping_JsonNullable(JsonNullable<Address> shipping) {
     this.shipping = shipping;
@@ -1160,7 +1190,7 @@ public class PaymentsCreateRequest {
 
   public PaymentsCreateRequest billing(Address billing) {
     this.billing = JsonNullable.<Address>of(billing);
-    
+
     return this;
   }
 
@@ -1181,7 +1211,7 @@ public class PaymentsCreateRequest {
   public JsonNullable<Address> getBilling_JsonNullable() {
     return billing;
   }
-  
+
   @JsonProperty(JSON_PROPERTY_BILLING)
   public void setBilling_JsonNullable(JsonNullable<Address> billing) {
     this.billing = billing;
@@ -1194,7 +1224,7 @@ public class PaymentsCreateRequest {
 
   public PaymentsCreateRequest statementDescriptorName(String statementDescriptorName) {
     this.statementDescriptorName = JsonNullable.<String>of(statementDescriptorName);
-    
+
     return this;
   }
 
@@ -1215,7 +1245,7 @@ public class PaymentsCreateRequest {
   public JsonNullable<String> getStatementDescriptorName_JsonNullable() {
     return statementDescriptorName;
   }
-  
+
   @JsonProperty(JSON_PROPERTY_STATEMENT_DESCRIPTOR_NAME)
   public void setStatementDescriptorName_JsonNullable(JsonNullable<String> statementDescriptorName) {
     this.statementDescriptorName = statementDescriptorName;
@@ -1228,7 +1258,7 @@ public class PaymentsCreateRequest {
 
   public PaymentsCreateRequest statementDescriptorSuffix(String statementDescriptorSuffix) {
     this.statementDescriptorSuffix = JsonNullable.<String>of(statementDescriptorSuffix);
-    
+
     return this;
   }
 
@@ -1249,7 +1279,7 @@ public class PaymentsCreateRequest {
   public JsonNullable<String> getStatementDescriptorSuffix_JsonNullable() {
     return statementDescriptorSuffix;
   }
-  
+
   @JsonProperty(JSON_PROPERTY_STATEMENT_DESCRIPTOR_SUFFIX)
   public void setStatementDescriptorSuffix_JsonNullable(JsonNullable<String> statementDescriptorSuffix) {
     this.statementDescriptorSuffix = statementDescriptorSuffix;
@@ -1262,7 +1292,7 @@ public class PaymentsCreateRequest {
 
   public PaymentsCreateRequest orderDetails(List<OrderDetailsWithAmount> orderDetails) {
     this.orderDetails = JsonNullable.<List<OrderDetailsWithAmount>>of(orderDetails);
-    
+
     return this;
   }
 
@@ -1295,7 +1325,7 @@ public class PaymentsCreateRequest {
   public JsonNullable<List<OrderDetailsWithAmount>> getOrderDetails_JsonNullable() {
     return orderDetails;
   }
-  
+
   @JsonProperty(JSON_PROPERTY_ORDER_DETAILS)
   public void setOrderDetails_JsonNullable(JsonNullable<List<OrderDetailsWithAmount>> orderDetails) {
     this.orderDetails = orderDetails;
@@ -1308,7 +1338,7 @@ public class PaymentsCreateRequest {
 
   public PaymentsCreateRequest clientSecret(String clientSecret) {
     this.clientSecret = JsonNullable.<String>of(clientSecret);
-    
+
     return this;
   }
 
@@ -1329,7 +1359,7 @@ public class PaymentsCreateRequest {
   public JsonNullable<String> getClientSecret_JsonNullable() {
     return clientSecret;
   }
-  
+
   @JsonProperty(JSON_PROPERTY_CLIENT_SECRET)
   public void setClientSecret_JsonNullable(JsonNullable<String> clientSecret) {
     this.clientSecret = clientSecret;
@@ -1342,7 +1372,7 @@ public class PaymentsCreateRequest {
 
   public PaymentsCreateRequest mandateData(MandateData mandateData) {
     this.mandateData = JsonNullable.<MandateData>of(mandateData);
-    
+
     return this;
   }
 
@@ -1363,7 +1393,7 @@ public class PaymentsCreateRequest {
   public JsonNullable<MandateData> getMandateData_JsonNullable() {
     return mandateData;
   }
-  
+
   @JsonProperty(JSON_PROPERTY_MANDATE_DATA)
   public void setMandateData_JsonNullable(JsonNullable<MandateData> mandateData) {
     this.mandateData = mandateData;
@@ -1376,7 +1406,7 @@ public class PaymentsCreateRequest {
 
   public PaymentsCreateRequest mandateId(String mandateId) {
     this.mandateId = JsonNullable.<String>of(mandateId);
-    
+
     return this;
   }
 
@@ -1397,7 +1427,7 @@ public class PaymentsCreateRequest {
   public JsonNullable<String> getMandateId_JsonNullable() {
     return mandateId;
   }
-  
+
   @JsonProperty(JSON_PROPERTY_MANDATE_ID)
   public void setMandateId_JsonNullable(JsonNullable<String> mandateId) {
     this.mandateId = mandateId;
@@ -1410,7 +1440,7 @@ public class PaymentsCreateRequest {
 
   public PaymentsCreateRequest browserInfo(Object browserInfo) {
     this.browserInfo = JsonNullable.<Object>of(browserInfo);
-    
+
     return this;
   }
 
@@ -1431,7 +1461,7 @@ public class PaymentsCreateRequest {
   public JsonNullable<Object> getBrowserInfo_JsonNullable() {
     return browserInfo;
   }
-  
+
   @JsonProperty(JSON_PROPERTY_BROWSER_INFO)
   public void setBrowserInfo_JsonNullable(JsonNullable<Object> browserInfo) {
     this.browserInfo = browserInfo;
@@ -1444,7 +1474,7 @@ public class PaymentsCreateRequest {
 
   public PaymentsCreateRequest paymentExperience(PaymentExperience paymentExperience) {
     this.paymentExperience = JsonNullable.<PaymentExperience>of(paymentExperience);
-    
+
     return this;
   }
 
@@ -1465,7 +1495,7 @@ public class PaymentsCreateRequest {
   public JsonNullable<PaymentExperience> getPaymentExperience_JsonNullable() {
     return paymentExperience;
   }
-  
+
   @JsonProperty(JSON_PROPERTY_PAYMENT_EXPERIENCE)
   public void setPaymentExperience_JsonNullable(JsonNullable<PaymentExperience> paymentExperience) {
     this.paymentExperience = paymentExperience;
@@ -1478,7 +1508,7 @@ public class PaymentsCreateRequest {
 
   public PaymentsCreateRequest paymentMethodType(PaymentMethodType paymentMethodType) {
     this.paymentMethodType = JsonNullable.<PaymentMethodType>of(paymentMethodType);
-    
+
     return this;
   }
 
@@ -1499,7 +1529,7 @@ public class PaymentsCreateRequest {
   public JsonNullable<PaymentMethodType> getPaymentMethodType_JsonNullable() {
     return paymentMethodType;
   }
-  
+
   @JsonProperty(JSON_PROPERTY_PAYMENT_METHOD_TYPE)
   public void setPaymentMethodType_JsonNullable(JsonNullable<PaymentMethodType> paymentMethodType) {
     this.paymentMethodType = paymentMethodType;
@@ -1512,7 +1542,7 @@ public class PaymentsCreateRequest {
 
   public PaymentsCreateRequest businessCountry(CountryAlpha2 businessCountry) {
     this.businessCountry = JsonNullable.<CountryAlpha2>of(businessCountry);
-    
+
     return this;
   }
 
@@ -1533,7 +1563,7 @@ public class PaymentsCreateRequest {
   public JsonNullable<CountryAlpha2> getBusinessCountry_JsonNullable() {
     return businessCountry;
   }
-  
+
   @JsonProperty(JSON_PROPERTY_BUSINESS_COUNTRY)
   public void setBusinessCountry_JsonNullable(JsonNullable<CountryAlpha2> businessCountry) {
     this.businessCountry = businessCountry;
@@ -1546,7 +1576,7 @@ public class PaymentsCreateRequest {
 
   public PaymentsCreateRequest businessLabel(String businessLabel) {
     this.businessLabel = JsonNullable.<String>of(businessLabel);
-    
+
     return this;
   }
 
@@ -1567,7 +1597,7 @@ public class PaymentsCreateRequest {
   public JsonNullable<String> getBusinessLabel_JsonNullable() {
     return businessLabel;
   }
-  
+
   @JsonProperty(JSON_PROPERTY_BUSINESS_LABEL)
   public void setBusinessLabel_JsonNullable(JsonNullable<String> businessLabel) {
     this.businessLabel = businessLabel;
@@ -1580,7 +1610,7 @@ public class PaymentsCreateRequest {
 
   public PaymentsCreateRequest merchantConnectorDetails(MerchantConnectorDetailsWrap merchantConnectorDetails) {
     this.merchantConnectorDetails = JsonNullable.<MerchantConnectorDetailsWrap>of(merchantConnectorDetails);
-    
+
     return this;
   }
 
@@ -1601,7 +1631,7 @@ public class PaymentsCreateRequest {
   public JsonNullable<MerchantConnectorDetailsWrap> getMerchantConnectorDetails_JsonNullable() {
     return merchantConnectorDetails;
   }
-  
+
   @JsonProperty(JSON_PROPERTY_MERCHANT_CONNECTOR_DETAILS)
   public void setMerchantConnectorDetails_JsonNullable(JsonNullable<MerchantConnectorDetailsWrap> merchantConnectorDetails) {
     this.merchantConnectorDetails = merchantConnectorDetails;
@@ -1614,7 +1644,7 @@ public class PaymentsCreateRequest {
 
   public PaymentsCreateRequest allowedPaymentMethodTypes(List<PaymentMethodType> allowedPaymentMethodTypes) {
     this.allowedPaymentMethodTypes = JsonNullable.<List<PaymentMethodType>>of(allowedPaymentMethodTypes);
-    
+
     return this;
   }
 
@@ -1647,7 +1677,7 @@ public class PaymentsCreateRequest {
   public JsonNullable<List<PaymentMethodType>> getAllowedPaymentMethodTypes_JsonNullable() {
     return allowedPaymentMethodTypes;
   }
-  
+
   @JsonProperty(JSON_PROPERTY_ALLOWED_PAYMENT_METHOD_TYPES)
   public void setAllowedPaymentMethodTypes_JsonNullable(JsonNullable<List<PaymentMethodType>> allowedPaymentMethodTypes) {
     this.allowedPaymentMethodTypes = allowedPaymentMethodTypes;
@@ -1660,7 +1690,7 @@ public class PaymentsCreateRequest {
 
   public PaymentsCreateRequest businessSubLabel(String businessSubLabel) {
     this.businessSubLabel = JsonNullable.<String>of(businessSubLabel);
-    
+
     return this;
   }
 
@@ -1681,7 +1711,7 @@ public class PaymentsCreateRequest {
   public JsonNullable<String> getBusinessSubLabel_JsonNullable() {
     return businessSubLabel;
   }
-  
+
   @JsonProperty(JSON_PROPERTY_BUSINESS_SUB_LABEL)
   public void setBusinessSubLabel_JsonNullable(JsonNullable<String> businessSubLabel) {
     this.businessSubLabel = businessSubLabel;
@@ -1694,7 +1724,7 @@ public class PaymentsCreateRequest {
 
   public PaymentsCreateRequest retryAction(RetryAction retryAction) {
     this.retryAction = JsonNullable.<RetryAction>of(retryAction);
-    
+
     return this;
   }
 
@@ -1715,7 +1745,7 @@ public class PaymentsCreateRequest {
   public JsonNullable<RetryAction> getRetryAction_JsonNullable() {
     return retryAction;
   }
-  
+
   @JsonProperty(JSON_PROPERTY_RETRY_ACTION)
   public void setRetryAction_JsonNullable(JsonNullable<RetryAction> retryAction) {
     this.retryAction = retryAction;
@@ -1728,7 +1758,7 @@ public class PaymentsCreateRequest {
 
   public PaymentsCreateRequest metadata(Object metadata) {
     this.metadata = JsonNullable.<Object>of(metadata);
-    
+
     return this;
   }
 
@@ -1749,7 +1779,7 @@ public class PaymentsCreateRequest {
   public JsonNullable<Object> getMetadata_JsonNullable() {
     return metadata;
   }
-  
+
   @JsonProperty(JSON_PROPERTY_METADATA)
   public void setMetadata_JsonNullable(JsonNullable<Object> metadata) {
     this.metadata = metadata;
@@ -1762,7 +1792,7 @@ public class PaymentsCreateRequest {
 
   public PaymentsCreateRequest connectorMetadata(ConnectorMetadata connectorMetadata) {
     this.connectorMetadata = JsonNullable.<ConnectorMetadata>of(connectorMetadata);
-    
+
     return this;
   }
 
@@ -1783,7 +1813,7 @@ public class PaymentsCreateRequest {
   public JsonNullable<ConnectorMetadata> getConnectorMetadata_JsonNullable() {
     return connectorMetadata;
   }
-  
+
   @JsonProperty(JSON_PROPERTY_CONNECTOR_METADATA)
   public void setConnectorMetadata_JsonNullable(JsonNullable<ConnectorMetadata> connectorMetadata) {
     this.connectorMetadata = connectorMetadata;
@@ -1796,7 +1826,7 @@ public class PaymentsCreateRequest {
 
   public PaymentsCreateRequest featureMetadata(FeatureMetadata featureMetadata) {
     this.featureMetadata = JsonNullable.<FeatureMetadata>of(featureMetadata);
-    
+
     return this;
   }
 
@@ -1817,7 +1847,7 @@ public class PaymentsCreateRequest {
   public JsonNullable<FeatureMetadata> getFeatureMetadata_JsonNullable() {
     return featureMetadata;
   }
-  
+
   @JsonProperty(JSON_PROPERTY_FEATURE_METADATA)
   public void setFeatureMetadata_JsonNullable(JsonNullable<FeatureMetadata> featureMetadata) {
     this.featureMetadata = featureMetadata;
@@ -1830,7 +1860,7 @@ public class PaymentsCreateRequest {
 
   public PaymentsCreateRequest paymentLink(Boolean paymentLink) {
     this.paymentLink = JsonNullable.<Boolean>of(paymentLink);
-    
+
     return this;
   }
 
@@ -1851,7 +1881,7 @@ public class PaymentsCreateRequest {
   public JsonNullable<Boolean> getPaymentLink_JsonNullable() {
     return paymentLink;
   }
-  
+
   @JsonProperty(JSON_PROPERTY_PAYMENT_LINK)
   public void setPaymentLink_JsonNullable(JsonNullable<Boolean> paymentLink) {
     this.paymentLink = paymentLink;
@@ -1864,7 +1894,7 @@ public class PaymentsCreateRequest {
 
   public PaymentsCreateRequest paymentLinkConfig(PaymentCreatePaymentLinkConfig paymentLinkConfig) {
     this.paymentLinkConfig = JsonNullable.<PaymentCreatePaymentLinkConfig>of(paymentLinkConfig);
-    
+
     return this;
   }
 
@@ -1885,7 +1915,7 @@ public class PaymentsCreateRequest {
   public JsonNullable<PaymentCreatePaymentLinkConfig> getPaymentLinkConfig_JsonNullable() {
     return paymentLinkConfig;
   }
-  
+
   @JsonProperty(JSON_PROPERTY_PAYMENT_LINK_CONFIG)
   public void setPaymentLinkConfig_JsonNullable(JsonNullable<PaymentCreatePaymentLinkConfig> paymentLinkConfig) {
     this.paymentLinkConfig = paymentLinkConfig;
@@ -1898,7 +1928,7 @@ public class PaymentsCreateRequest {
 
   public PaymentsCreateRequest profileId(String profileId) {
     this.profileId = JsonNullable.<String>of(profileId);
-    
+
     return this;
   }
 
@@ -1919,7 +1949,7 @@ public class PaymentsCreateRequest {
   public JsonNullable<String> getProfileId_JsonNullable() {
     return profileId;
   }
-  
+
   @JsonProperty(JSON_PROPERTY_PROFILE_ID)
   public void setProfileId_JsonNullable(JsonNullable<String> profileId) {
     this.profileId = profileId;
@@ -1932,7 +1962,7 @@ public class PaymentsCreateRequest {
 
   public PaymentsCreateRequest surchargeDetails(RequestSurchargeDetails surchargeDetails) {
     this.surchargeDetails = JsonNullable.<RequestSurchargeDetails>of(surchargeDetails);
-    
+
     return this;
   }
 
@@ -1953,7 +1983,7 @@ public class PaymentsCreateRequest {
   public JsonNullable<RequestSurchargeDetails> getSurchargeDetails_JsonNullable() {
     return surchargeDetails;
   }
-  
+
   @JsonProperty(JSON_PROPERTY_SURCHARGE_DETAILS)
   public void setSurchargeDetails_JsonNullable(JsonNullable<RequestSurchargeDetails> surchargeDetails) {
     this.surchargeDetails = surchargeDetails;
@@ -1966,7 +1996,7 @@ public class PaymentsCreateRequest {
 
   public PaymentsCreateRequest paymentType(PaymentType paymentType) {
     this.paymentType = JsonNullable.<PaymentType>of(paymentType);
-    
+
     return this;
   }
 
@@ -1987,7 +2017,7 @@ public class PaymentsCreateRequest {
   public JsonNullable<PaymentType> getPaymentType_JsonNullable() {
     return paymentType;
   }
-  
+
   @JsonProperty(JSON_PROPERTY_PAYMENT_TYPE)
   public void setPaymentType_JsonNullable(JsonNullable<PaymentType> paymentType) {
     this.paymentType = paymentType;
@@ -2000,7 +2030,7 @@ public class PaymentsCreateRequest {
 
   public PaymentsCreateRequest requestIncrementalAuthorization(Boolean requestIncrementalAuthorization) {
     this.requestIncrementalAuthorization = JsonNullable.<Boolean>of(requestIncrementalAuthorization);
-    
+
     return this;
   }
 
@@ -2021,7 +2051,7 @@ public class PaymentsCreateRequest {
   public JsonNullable<Boolean> getRequestIncrementalAuthorization_JsonNullable() {
     return requestIncrementalAuthorization;
   }
-  
+
   @JsonProperty(JSON_PROPERTY_REQUEST_INCREMENTAL_AUTHORIZATION)
   public void setRequestIncrementalAuthorization_JsonNullable(JsonNullable<Boolean> requestIncrementalAuthorization) {
     this.requestIncrementalAuthorization = requestIncrementalAuthorization;
@@ -2034,7 +2064,7 @@ public class PaymentsCreateRequest {
 
   public PaymentsCreateRequest sessionExpiry(Integer sessionExpiry) {
     this.sessionExpiry = JsonNullable.<Integer>of(sessionExpiry);
-    
+
     return this;
   }
 
@@ -2056,7 +2086,7 @@ public class PaymentsCreateRequest {
   public JsonNullable<Integer> getSessionExpiry_JsonNullable() {
     return sessionExpiry;
   }
-  
+
   @JsonProperty(JSON_PROPERTY_SESSION_EXPIRY)
   public void setSessionExpiry_JsonNullable(JsonNullable<Integer> sessionExpiry) {
     this.sessionExpiry = sessionExpiry;
@@ -2069,7 +2099,7 @@ public class PaymentsCreateRequest {
 
   public PaymentsCreateRequest frmMetadata(Object frmMetadata) {
     this.frmMetadata = JsonNullable.<Object>of(frmMetadata);
-    
+
     return this;
   }
 
@@ -2090,7 +2120,7 @@ public class PaymentsCreateRequest {
   public JsonNullable<Object> getFrmMetadata_JsonNullable() {
     return frmMetadata;
   }
-  
+
   @JsonProperty(JSON_PROPERTY_FRM_METADATA)
   public void setFrmMetadata_JsonNullable(JsonNullable<Object> frmMetadata) {
     this.frmMetadata = frmMetadata;
@@ -2134,6 +2164,7 @@ public class PaymentsCreateRequest {
         equalsNullable(this.paymentMethodData, paymentsCreateRequest.paymentMethodData) &&
         equalsNullable(this.paymentMethod, paymentsCreateRequest.paymentMethod) &&
         equalsNullable(this.paymentToken, paymentsCreateRequest.paymentToken) &&
+        equalsNullable(this.recurringDetails, paymentsCreateRequest.recurringDetails) &&
         equalsNullable(this.cardCvc, paymentsCreateRequest.cardCvc) &&
         equalsNullable(this.shipping, paymentsCreateRequest.shipping) &&
         equalsNullable(this.billing, paymentsCreateRequest.billing) &&
@@ -2171,7 +2202,7 @@ public class PaymentsCreateRequest {
 
   @Override
   public int hashCode() {
-    return Objects.hash(hashCodeNullable(paymentId), hashCodeNullable(merchantId), amount, hashCodeNullable(routing), hashCodeNullable(connector), currency, hashCodeNullable(captureMethod), hashCodeNullable(amountToCapture), hashCodeNullable(captureOn), hashCodeNullable(confirm), hashCodeNullable(customer), hashCodeNullable(customerId), hashCodeNullable(email), hashCodeNullable(name), hashCodeNullable(phone), hashCodeNullable(phoneCountryCode), hashCodeNullable(offSession), hashCodeNullable(description), hashCodeNullable(returnUrl), hashCodeNullable(setupFutureUsage), hashCodeNullable(authenticationType), hashCodeNullable(paymentMethodData), hashCodeNullable(paymentMethod), hashCodeNullable(paymentToken), hashCodeNullable(cardCvc), hashCodeNullable(shipping), hashCodeNullable(billing), hashCodeNullable(statementDescriptorName), hashCodeNullable(statementDescriptorSuffix), hashCodeNullable(orderDetails), hashCodeNullable(clientSecret), hashCodeNullable(mandateData), hashCodeNullable(mandateId), hashCodeNullable(browserInfo), hashCodeNullable(paymentExperience), hashCodeNullable(paymentMethodType), hashCodeNullable(businessCountry), hashCodeNullable(businessLabel), hashCodeNullable(merchantConnectorDetails), hashCodeNullable(allowedPaymentMethodTypes), hashCodeNullable(businessSubLabel), hashCodeNullable(retryAction), hashCodeNullable(metadata), hashCodeNullable(connectorMetadata), hashCodeNullable(featureMetadata), hashCodeNullable(paymentLink), hashCodeNullable(paymentLinkConfig), hashCodeNullable(profileId), hashCodeNullable(surchargeDetails), hashCodeNullable(paymentType), hashCodeNullable(requestIncrementalAuthorization), hashCodeNullable(sessionExpiry), hashCodeNullable(frmMetadata));
+    return Objects.hash(hashCodeNullable(paymentId), hashCodeNullable(merchantId), amount, hashCodeNullable(routing), hashCodeNullable(connector), currency, hashCodeNullable(captureMethod), hashCodeNullable(amountToCapture), hashCodeNullable(captureOn), hashCodeNullable(confirm), hashCodeNullable(customer), hashCodeNullable(customerId), hashCodeNullable(email), hashCodeNullable(name), hashCodeNullable(phone), hashCodeNullable(phoneCountryCode), hashCodeNullable(offSession), hashCodeNullable(description), hashCodeNullable(returnUrl), hashCodeNullable(setupFutureUsage), hashCodeNullable(authenticationType), hashCodeNullable(paymentMethodData), hashCodeNullable(paymentMethod), hashCodeNullable(paymentToken), hashCodeNullable(recurringDetails), hashCodeNullable(cardCvc), hashCodeNullable(shipping), hashCodeNullable(billing), hashCodeNullable(statementDescriptorName), hashCodeNullable(statementDescriptorSuffix), hashCodeNullable(orderDetails), hashCodeNullable(clientSecret), hashCodeNullable(mandateData), hashCodeNullable(mandateId), hashCodeNullable(browserInfo), hashCodeNullable(paymentExperience), hashCodeNullable(paymentMethodType), hashCodeNullable(businessCountry), hashCodeNullable(businessLabel), hashCodeNullable(merchantConnectorDetails), hashCodeNullable(allowedPaymentMethodTypes), hashCodeNullable(businessSubLabel), hashCodeNullable(retryAction), hashCodeNullable(metadata), hashCodeNullable(connectorMetadata), hashCodeNullable(featureMetadata), hashCodeNullable(paymentLink), hashCodeNullable(paymentLinkConfig), hashCodeNullable(profileId), hashCodeNullable(surchargeDetails), hashCodeNullable(paymentType), hashCodeNullable(requestIncrementalAuthorization), hashCodeNullable(sessionExpiry), hashCodeNullable(frmMetadata));
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -2209,6 +2240,7 @@ public class PaymentsCreateRequest {
     sb.append("    paymentMethodData: ").append(toIndentedString(paymentMethodData)).append("\n");
     sb.append("    paymentMethod: ").append(toIndentedString(paymentMethod)).append("\n");
     sb.append("    paymentToken: ").append(toIndentedString(paymentToken)).append("\n");
+    sb.append("    recurringDetails: ").append(toIndentedString(recurringDetails)).append("\n");
     sb.append("    cardCvc: ").append(toIndentedString(cardCvc)).append("\n");
     sb.append("    shipping: ").append(toIndentedString(shipping)).append("\n");
     sb.append("    billing: ").append(toIndentedString(billing)).append("\n");

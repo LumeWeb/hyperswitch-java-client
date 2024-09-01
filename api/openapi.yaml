@@ -6685,6 +6685,13 @@ components:
       - seicomart
       - pay_easy
       type: string
+    RecurringDetails:
+      properties:
+        type:
+          type: string
+        data:
+          type: string
+      type: object
     PaymentMethodUpdate:
       example:
         metadata: "{}"
@@ -7040,6 +7047,10 @@ components:
           example: 187282ab-40ef-47a9-9206-5099ba31e432
           nullable: true
           type: string
+        recurring_details:
+            allOf:
+                - $ref: '#/components/schemas/RecurringDetails'
+            nullable: true
         card_cvc:
           deprecated: true
           description: |-

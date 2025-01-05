@@ -1,0 +1,56 @@
+name: OpenAPI Spec Check
+
+on:
+    schedule:
+        - cron: '0 0 * * *'  # Runs daily at midnight
+    workflow_dispatch:  # Allows manual triggering
+
+jobs:
+    check-openapi-spec:
+        runs-on: ubuntu-latest
+        permissions:
+            contents: write
+            pull-requests: write
+
+        steps:
+            - uses: actions/checkout@v3
+
+            - name: Download current OpenAPI spec
+              run: |
+                  curl -o new_spec.json https://raw.githubusercontent.com/juspay/hyperswitch/refs/heads/main/api-reference-v2/openapi_spec.json
+
+            - name: Calculate hashes
+              id: hash-check
+              run: |
+                  if [ -f "openapi.json" ]; then
+                    OLD_HASH=$(sha256sum openapi.json | cut -d' ' -f1)
+                    NEW_HASH=$(sha256sum new_spec.json | cut -d' ' -f1)
+                    echo "old_hash=$OLD_HASH" >> $GITHUB_OUTPUT
+                    echo "new_hash=$NEW_HASH" >> $GITHUB_OUTPUT
+                    echo "different=$([[ $OLD_HASH != $NEW_HASH ]] && echo 'true' || echo 'false')" >> $GITHUB_OUTPUT
+                  else
+                    echo "different=true" >> $GITHUB_OUTPUT
+                  fi
+
+            - name: Update OpenAPI spec if different
+              if: steps.hash-check.outputs.different == 'true'
+              run: mv new_spec.json openapi.json
+
+            - name: Create Pull Request
+              if: steps.hash-check.outputs.different == 'true'
+              uses: peter-evans/create-pull-request@v5
+              with:
+                  token: ${{ secrets.GITHUB_TOKEN }}
+                  commit-message: "chore: update OpenAPI specification"
+                  title: "chore: update OpenAPI specification"
+                  body: |
+                      Automated PR to update OpenAPI specification.
+
+                      Old hash: ${{ steps.hash-check.outputs.old_hash }}
+                      New hash: ${{ steps.hash-check.outputs.new_hash }}
+                  branch: feat/openapi-spec-update
+                  branch-suffix: timestamp
+                  delete-branch: true
+                  labels: |
+                      openapi-update
+                      automated pr

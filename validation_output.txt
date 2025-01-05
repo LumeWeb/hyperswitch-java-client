@@ -1,0 +1,212 @@
+Unable to find image 'openapitools/openapi-generator-cli:latest' locally
+latest: Pulling from openapitools/openapi-generator-cli
+521f275cc58b: Pulling fs layer
+4ec0d48772e2: Pulling fs layer
+c206fa8d0304: Pulling fs layer
+f36698d7f25c: Pulling fs layer
+4f82fb5fa4a4: Pulling fs layer
+0553263a7818: Pulling fs layer
+523d272b9269: Pulling fs layer
+f36698d7f25c: Waiting
+4f82fb5fa4a4: Waiting
+0553263a7818: Waiting
+523d272b9269: Waiting
+4ec0d48772e2: Verifying Checksum
+4ec0d48772e2: Download complete
+521f275cc58b: Verifying Checksum
+521f275cc58b: Download complete
+c206fa8d0304: Download complete
+f36698d7f25c: Verifying Checksum
+f36698d7f25c: Download complete
+4f82fb5fa4a4: Download complete
+523d272b9269: Verifying Checksum
+523d272b9269: Download complete
+0553263a7818: Verifying Checksum
+0553263a7818: Download complete
+521f275cc58b: Pull complete
+4ec0d48772e2: Pull complete
+c206fa8d0304: Pull complete
+f36698d7f25c: Pull complete
+4f82fb5fa4a4: Pull complete
+0553263a7818: Pull complete
+523d272b9269: Pull complete
+Digest: sha256:25727e0e6c8b89679948f8f303076524a4894e062830150a09599273036c2775
+Status: Downloaded newer image for openapitools/openapi-generator-cli:latest
+Validating spec (/local/new_spec.json)
+Errors:
+	- paths.'/v2/payment-methods/{id}/confirm-intent'. Declared path parameter id needs to be
+	  defined as a path parameter in path or operation level
+	- paths.'/v2/payment-methods/{id}/update-saved-payment-method'. Declared path parameter id
+	  needs to be defined as a path parameter in path or operation level
+	- attribute paths.'/v2/customers/{id}/saved-payment-methods'(get).operationId is repeated
+	- paths.'/v2/payments/{id}/confirm-intent'. Declared path parameter id needs to be defined
+	  as a path parameter in path or operation level
+	- paths.'/v2/customers/{id}/saved-payment-methods'. Declared path parameter id needs to be
+	  defined as a path parameter in path or operation level
+	- paths.'/v2/payments/{id}/saved-payment-methods'. Declared path parameter id needs to be
+	  defined as a path parameter in path or operation level
+	- attribute components.schemas.ApplePaySessionResponse.default is not of type `object`
+Warnings: 
+	- Unused model: BankAdditionalData
+	- Unused model: PaymentChargeRequest
+	- Unused model: PollResponse
+	- Unused model: GsmResponse
+	- Unused model: PaymentMethodStatus
+	- Unused model: SepaBankTransferAdditionalData
+	- Unused model: CardAdditionalData
+	- Unused model: PayoutMethodDataResponse
+	- Unused model: RequestSurchargeDetails
+	- Unused model: RetrievePaymentLinkResponse
+	- Unused model: BlocklistRequest
+	- Unused model: CustomerDetails
+	- Unused model: PaymentsResponse
+	- Unused model: PayoutConnectors
+	- Unused model: BlocklistDataKind
+	- Unused model: ChargeRefunds
+	- Unused model: ThreeDsCompletionIndicator
+	- Unused model: BusinessCollectLinkConfig
+	- Unused model: MobilePaymentNextStepData
+	- Unused model: MandateRevokedResponse
+	- Unused model: PaymentRetrieveBody
+	- Unused model: RetryAction
+	- Unused model: WebhookDeliveryAttempt
+	- Unused model: CustomerDefaultPaymentMethodResponse
+	- Unused model: DeviceChannel
+	- Unused model: PaymentLinkStatus
+	- Unused model: PaymentsDynamicTaxCalculationRequest
+	- Unused model: RetrievePaymentLinkRequest
+	- Unused model: ListBlocklistQuery
+	- Unused model: CardPayout
+	- Unused model: PayoutStatus
+	- Unused model: RoutingKind
+	- Unused model: RoutingDictionary
+	- Unused model: PayoutRetrieveRequest
+	- Unused model: EphemeralKeyCreateResponse
+	- Unused model: EventType
+	- Unused model: PaymentLinkInitiateRequest
+	- Unused model: PayoutType
+	- Unused model: MandateData
+	- Unused model: BacsBankTransferAdditionalData
+	- Unused model: OutgoingWebhookContent
+	- Unused model: PaymentsExternalAuthenticationRequest
+	- Unused model: PaymentsExternalAuthenticationResponse
+	- Unused model: EventRetrieveResponse
+	- Unused model: AchBankTransferAdditionalData
+	- Unused model: MerchantConnectorDetailsWrap
+	- Unused model: SdkInformation
+	- Unused model: PaymentLinkConfig
+	- Unused model: BankCodeResponse
+	- Unused model: DisputeStatus
+	- Unused model: GsmDeleteResponse
+	- Unused model: TimeRange
+	- Unused model: ProcessorPaymentToken
+	- Unused model: PayoutActionRequest
+	- Unused model: BlocklistResponse
+	- Unused model: PaymentMethodCollectLinkResponse
+	- Unused model: MandateStatus
+	- Unused model: DisputeResponsePaymentsRetrieve
+	- Unused model: PayoutMethodData
+	- Unused model: ToggleKVResponse
+	- Unused model: PayoutListFilterConstraints
+	- Unused model: PaymentChargeType
+	- Unused model: RefundListRequest
+	- Unused model: ExtendedCardInfo
+	- Unused model: AuthorizationStatus
+	- Unused model: PayoutRetrieveBody
+	- Unused model: PayoutListResponse
+	- Unused model: PollStatus
+	- Unused model: GsmUpdateRequest
+	- Unused model: PaymentExperienceTypes
+	- Unused model: PayoutCreatePayoutLinkConfig
+	- Unused model: RefundUpdateRequest
+	- Unused model: AttemptStatus
+	- Unused model: PaymentMethodListResponse
+	- Unused model: RefundRequest
+	- Unused model: DefaultPaymentMethod
+	- Unused model: DisplayAmountOnSdk
+	- Unused model: PayoutAttemptResponse
+	- Unused model: PaymentsCompleteAuthorizeRequest
+	- Unused model: IncrementalAuthorizationResponse
+	- Unused model: MerchantAccountDeleteResponse
+	- Unused model: ScaExemptionType
+	- Unused model: DecoupledAuthenticationType
+	- Unused model: PaymentsDynamicTaxCalculationResponse
+	- Unused model: ExtendedCardInfoResponse
+	- Unused model: PaymentCreatePaymentLinkConfig
+	- Unused model: DisputeResponse
+	- Unused model: StripeChargeType
+	- Unused model: PaymentsCancelRequest
+	- Unused model: ProfileDefaultRoutingConfig
+	- Unused model: TransactionStatus
+	- Unused model: Wallet
+	- Unused model: AuthenticationStatus
+	- Unused model: PaymentType
+	- Unused model: PaymentChargeResponse
+	- Unused model: WalletAdditionalData
+	- Unused model: RefundListResponse
+	- Unused model: GsmDeleteRequest
+	- Unused model: PayoutCreateResponse
+	- Unused model: PaypalAdditionalData
+	- Unused model: PayoutSendPriority
+	- Unused model: OutgoingWebhookRequestContent
+	- Unused model: BankDebitTypes
+	- Unused model: OrderDetails
+	- Unused model: PaymentLinkResponse
+	- Unused model: MerchantConnectorId
+	- Unused model: RoutableChoiceKind
+	- Unused model: StraightThroughAlgorithm
+	- Unused model: ResponsePaymentMethodsEnabled
+	- Unused model: FrmMessage
+	- Unused model: PaymentsCaptureRequest
+	- Unused model: CardNetworkTypes
+	- Unused model: CaptureStatus
+	- Unused model: ExternalAuthenticationDetailsResponse
+	- Unused model: FieldType
+	- Unused model: PaymentListConstraints
+	- Unused model: Venmo
+	- Unused model: BankTransferTypes
+	- Unused model: PaymentsRetrieveRequest
+	- Unused model: PayoutLinkInitiateRequest
+	- Unused model: WeChatPay
+	- Unused model: MandateType
+	- Unused model: PaymentAttemptResponse
+	- Unused model: NextActionType
+	- Unused model: PaymentMethodCollectLinkRequest
+	- Unused model: ToggleKVRequest
+	- Unused model: DisputeStage
+	- Unused model: CustomerDetailsResponse
+	- Unused model: EventListItemResponse
+	- Unused model: PaymentsIncrementalAuthorizationRequest
+	- Unused model: AmountFilter
+	- Unused model: PayoutListConstraints
+	- Unused model: MandateAmountData
+	- Unused model: PaymentListResponse
+	- Unused model: PaymentsCreateResponseOpenApi
+	- Unused model: MandateResponse
+	- Unused model: AdditionalPayoutMethodData
+	- Unused model: PrimaryBusinessDetails
+	- Unused model: VenmoAdditionalData
+	- Unused model: EventClass
+	- Unused model: ToggleBlocklistResponse
+	- Unused model: ResponsePaymentMethodTypes
+	- Unused model: GsmCreateRequest
+	- Unused model: NetworkTransactionIdAndCardDetails
+	- Unused model: EnabledPaymentMethod
+	- Unused model: PayoutLinkResponse
+	- Unused model: PayoutEntityType
+	- Unused model: CaptureResponse
+	- Unused model: GsmDecision
+	- Unused model: PayoutRequest
+	- Unused model: GsmRetrieveRequest
+	- Unused model: RequiredFieldInfo
+	- Unused model: MerchantConnectorListResponse
+	- Unused model: PaymentMethodIssuerCode
+	- Unused model: RewardData
+	- Unused model: PayoutCreateRequest
+	- Unused model: RecurringDetails
+	- Unused model: MandateCardDetails
+	- Unused model: OutgoingWebhookResponseContent
+	- Unused model: OutgoingWebhook
+	- Unused model: Paypal
+
+[error] Spec has 7 errors.

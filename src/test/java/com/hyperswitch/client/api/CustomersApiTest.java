@@ -1,7 +1,6 @@
 package com.hyperswitch.client.api;
 
-import com.hyperswitch.client.HsApiClient;
-import com.hyperswitch.client.api.CustomersApi;
+import com.hyperswitch.client.ApiClient;
 import com.hyperswitch.client.model.CustomerDeleteResponse;
 import com.hyperswitch.client.model.CustomerRequest;
 import com.hyperswitch.client.model.CustomerResponse;
@@ -14,13 +13,6 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-import java.util.Random;
-
-import static org.junit.jupiter.api.Assertions.assertNotNull;
-import static org.mockito.Mockito.verify;
-import static org.mockito.Mockito.when;
-import static org.mockito.ArgumentMatchers.any;
-import org.junit.jupiter.api.Test;
 
 /**
  * API tests for CustomersApi
@@ -31,65 +23,75 @@ class CustomersApiTest {
 
     @BeforeEach
     public void setup() {
-        api = new HsApiClient("api_key","").buildClient(CustomersApi.class);
+        api = new ApiClient().buildClient(CustomersApi.class);
     }
 
     
     /**
-     * Create Customer
+     * Customers - Create
      *
-     * Create Customer  Create a customer object and store the customer details to be reused for future payments. Incase the customer already exists in the system, this API will respond with the customer details.
+     * Creates a customer object and stores the customer details to be reused for future payments. Incase the customer already exists in the system, this API will respond with the customer details.
      */
     @Test
-    void createACustomerTest() throws Exception{
-        // CustomerRequest customerRequest = new CustomerRequest();
-        // System.out.println(customerRequest.toString());
-        // Random random = new Random();
-        // customerRequest.setCustomerId("customer_id_" + random.nextInt(1000));
+    void createACustomerTest() {
+        CustomerRequest customerRequest = null;
         // CustomerResponse response = api.createACustomer(customerRequest);
-        // System.out.println(response.toString());
-        // assertNotNull(response);
+
+        // TODO: test validations
     }
 
     
     /**
-     * Delete Customer
+     * Customers - Delete
      *
-     * Delete Customer  Delete a customer record.
+     * Delete a customer record.
      */
     @Test
     void deleteACustomerTest() {
-        String customerId = null;
-        // CustomerDeleteResponse response = api.deleteACustomer(customerId);
+        String id = null;
+        // CustomerDeleteResponse response = api.deleteACustomer(id);
 
         // TODO: test validations
     }
 
     
     /**
-     * Retrieve Customer
+     * Customers - List
      *
-     * Retrieve Customer  Retrieve a customer&#39;s details.
+     * Lists all the customers for a particular merchant id.
+     */
+    @Test
+    void listAllCustomersForAMerchantTest() {
+        // List<CustomerResponse> response = api.listAllCustomersForAMerchant();
+
+        // TODO: test validations
+    }
+
+    
+    /**
+     * Customers - Retrieve
+     *
+     * Retrieves a customer&#39;s details.
      */
     @Test
     void retrieveACustomerTest() {
-        String customerId = null;
-        // CustomerResponse response = api.retrieveACustomer(customerId);
+        String id = null;
+        // CustomerResponse response = api.retrieveACustomer(id);
 
         // TODO: test validations
     }
 
     
     /**
-     * Update Customer
+     * Customers - Update
      *
-     * Update Customer  Updates the customer&#39;s details in a customer object.
+     * Updates the customer&#39;s details in a customer object.
      */
     @Test
     void updateACustomerTest() {
-        String customerId = null;
+        String id = null;
         CustomerRequest customerRequest = null;
-        // CustomerResponse response = api.updateACustomer(customerId, customerRequest);
+        // CustomerResponse response = api.updateACustomer(id, customerRequest);
 
         // TODO: test validations
     }

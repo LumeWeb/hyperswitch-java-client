@@ -1,6 +1,6 @@
 package com.hyperswitch.client.api;
 
-import com.hyperswitch.client.HsApiClient;
+import com.hyperswitch.client.ApiClient;
 import com.hyperswitch.client.model.MerchantConnectorCreate;
 import com.hyperswitch.client.model.MerchantConnectorDeleteResponse;
 import com.hyperswitch.client.model.MerchantConnectorResponse;
@@ -24,14 +24,14 @@ class MerchantConnectorAccountApiTest {
 
     @BeforeEach
     public void setup() {
-        api = new HsApiClient().buildClient(MerchantConnectorAccountApi.class);
+        api = new ApiClient().buildClient(MerchantConnectorAccountApi.class);
     }
 
     
     /**
-     * Merchant Connector - Create
+     * Connector Account - Create
      *
-     * Merchant Connector - Create  Create a new Merchant Connector for the merchant account. The connector could be a payment processor / facilitator / acquirer or specialized services like Fraud / Accounting etc.\&quot;
+     * Creates a new Connector Account for the merchant account. The connector could be a payment processor/facilitator/acquirer or a provider of specialized services like Fraud/Accounting etc.
      */
     @Test
     void createAMerchantConnectorTest() {
@@ -45,58 +45,41 @@ class MerchantConnectorAccountApiTest {
     /**
      * Merchant Connector - Delete
      *
-     * Merchant Connector - Delete  Delete or Detach a Merchant Connector from Merchant Account
+     * Delete or Detach a Merchant Connector from Merchant Account
      */
     @Test
     void deleteAMerchantConnectorTest() {
-        String accountId = null;
-        Integer connectorId = null;
-        // MerchantConnectorDeleteResponse response = api.deleteAMerchantConnector(accountId, connectorId);
+        Integer id = null;
+        // MerchantConnectorDeleteResponse response = api.deleteAMerchantConnector(id);
 
         // TODO: test validations
     }
 
     
     /**
-     * Merchant Connector - List
+     * Connector Account - Retrieve
      *
-     * Merchant Connector - List  List Merchant Connector Details for the merchant
-     */
-    @Test
-    void listAllMerchantConnectorsTest() {
-        String accountId = null;
-        // List<MerchantConnectorResponse> response = api.listAllMerchantConnectors(accountId);
-
-        // TODO: test validations
-    }
-
-    
-    /**
-     * Merchant Connector - Retrieve
-     *
-     * Merchant Connector - Retrieve  Retrieve Merchant Connector Details
+     * Retrieves details of a Connector account
      */
     @Test
     void retrieveAMerchantConnectorTest() {
-        String accountId = null;
-        Integer connectorId = null;
-        // MerchantConnectorResponse response = api.retrieveAMerchantConnector(accountId, connectorId);
+        Integer id = null;
+        // MerchantConnectorResponse response = api.retrieveAMerchantConnector(id);
 
         // TODO: test validations
     }
 
     
     /**
-     * Merchant Connector - Update
+     * Connector Account - Update
      *
-     * Merchant Connector - Update  To update an existing Merchant Connector. Helpful in enabling / disabling different payment methods and other settings for the connector etc.
+     * To update an existing Connector account. Helpful in enabling/disabling different payment methods and other settings for the connector
      */
     @Test
     void updateAMerchantConnectorTest() {
-        String accountId = null;
-        Integer connectorId = null;
+        Integer id = null;
         MerchantConnectorUpdate merchantConnectorUpdate = null;
-        // MerchantConnectorResponse response = api.updateAMerchantConnector(accountId, connectorId, merchantConnectorUpdate);
+        // MerchantConnectorResponse response = api.updateAMerchantConnector(id, merchantConnectorUpdate);
 
         // TODO: test validations
     }

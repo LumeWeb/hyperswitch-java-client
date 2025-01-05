@@ -1,0 +1,106 @@
+name: OpenAPI Spec Check
+
+on:
+    schedule:
+        - cron: '0 0 * * *'  # Runs daily at midnight
+    workflow_dispatch:  # Allows manual triggering
+
+jobs:
+    check-openapi-spec:
+        runs-on: ubuntu-latest
+        permissions:
+            contents: write
+            pull-requests: write
+
+        steps:
+            - uses: actions/checkout@v3
+
+            - name: Get latest release tag
+              id: get-latest-tag
+              run: |
+                  LATEST_TAG=$(gh api repos/juspay/hyperswitch/tags --jq '.[0].name')
+                  echo "Latest tag: $LATEST_TAG"
+                  echo "latest_tag=$LATEST_TAG" >> $GITHUB_OUTPUT
+              env:
+                  GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+            - name: Download current OpenAPI spec
+              run: |
+                  SPEC_URL="https://raw.githubusercontent.com/juspay/hyperswitch/${{ steps.get-latest-tag.outputs.latest_tag }}/api-reference-v2/openapi_spec.json"
+                  echo "Downloading spec from: $SPEC_URL"
+                  gh api $SPEC_URL > new_spec.json
+              env:
+                  GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+            - name: Validate OpenAPI spec
+              id: validate-spec
+              continue-on-error: true  # This ensures the workflow continues even if this step fails
+              run: |
+                  # Create validation output file
+                  touch validation_output.txt
+
+                  # Run validation and capture output
+                  docker run --rm -v "${PWD}:/local" openapitools/openapi-generator-cli validate \
+                    -i /local/new_spec.json 2>&1 | tee validation_output.txt
+
+                  # Store the exit code
+                  echo "exit_code=${PIPESTATUS[0]}" >> $GITHUB_OUTPUT
+
+                  # Store validation output for PR description
+                  VALIDATION_OUTPUT=$(cat validation_output.txt)
+                  echo "validation_output<<EOF" >> $GITHUB_OUTPUT
+                  echo "$VALIDATION_OUTPUT" >> $GITHUB_OUTPUT
+                  echo "EOF" >> $GITHUB_OUTPUT
+
+                  # Output warning but don't fail
+                  if [ ${PIPESTATUS[0]} -ne 0 ]; then
+                    echo "::warning::OpenAPI validation failed - check validation output for details"
+                  fi
+
+            - name: Calculate hashes
+              id: hash-check
+              run: |
+                  if [ -f "openapi.json" ]; then
+                    OLD_HASH=$(sha256sum openapi.json | cut -d' ' -f1)
+                    NEW_HASH=$(sha256sum new_spec.json | cut -d' ' -f1)
+                    echo "old_hash=$OLD_HASH" >> $GITHUB_OUTPUT
+                    echo "new_hash=$NEW_HASH" >> $GITHUB_OUTPUT
+                    echo "different=$([[ $OLD_HASH != $NEW_HASH ]] && echo 'true' || echo 'false')" >> $GITHUB_OUTPUT
+                  else
+                    echo "different=true" >> $GITHUB_OUTPUT
+                  fi
+
+            - name: Update spec file
+              if: steps.hash-check.outputs.different == 'true'
+              run: mv new_spec.json openapi.json
+
+            - name: Create Pull Request
+              if: steps.hash-check.outputs.different == 'true'
+              uses: peter-evans/create-pull-request@v5
+              with:
+                  token: ${{ secrets.GITHUB_TOKEN }}
+                  commit-message: "chore: update OpenAPI specification to ${{ steps.get-latest-tag.outputs.latest_tag }}"
+                  title: "chore: update OpenAPI specification to ${{ steps.get-latest-tag.outputs.latest_tag }}"
+                  body: |
+                      Automated PR to update OpenAPI specification from Hyperswitch version ${{ steps.get-latest-tag.outputs.latest_tag }}.
+
+                      ### Changes
+                      - Old hash: ${{ steps.hash-check.outputs.old_hash }}
+                      - New hash: ${{ steps.hash-check.outputs.new_hash }}
+
+                      ### Validation Status
+                      ${{ steps.validate-spec.outputs.exit_code == '0' && '✅ Validation passed' || '⚠️ Validation warnings' }}
+
+                      <details>
+                      <summary>Validation Details</summary>
+
+                      ```
+                      ${{ steps.validate-spec.outputs.validation_output }}
+                      ```
+                      </details>
+                  branch: chore/openapi-spec-update
+                  branch-suffix: timestamp
+                  delete-branch: true
+                  labels: |
+                      openapi-update
+                      automated pr

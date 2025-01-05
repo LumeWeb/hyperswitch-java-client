@@ -32,7 +32,9 @@ jobs:
 
             - name: Move generated Files
               run: |
-                  mv java-client/* ./src
+                  mkdir -p src
+                  mv java-client/src/main ./src
+                  mv java-client/src/test ./src
                   rm -rf hyperswitch-java
 
             - name: Create Pull Request

@@ -1,7 +1,7 @@
 apply plugin: 'idea'
 apply plugin: 'eclipse'
 
-group = 'com.hyperswitch'
+group = 'com.lumeweb'
 version = '0.0.1'
 
 buildscript {
@@ -18,9 +18,8 @@ repositories {
     mavenCentral()
 }
 
-
 if(hasProperty('target') && target == 'android') {
-
+    // Android configuration remains the same
     apply plugin: 'com.android.library'
     apply plugin: 'com.github.dcendents.android-maven'
 
@@ -74,7 +73,6 @@ if(hasProperty('target') && target == 'android') {
     }
 
 } else {
-
     apply plugin: 'java'
     apply plugin: 'maven-publish'
 
@@ -82,17 +80,40 @@ if(hasProperty('target') && target == 'android') {
     targetCompatibility = JavaVersion.VERSION_1_8
 
     publishing {
+        repositories {
+            maven {
+                name = "GitHubPackages"
+                url = uri("https://maven.pkg.github.com/lumeweb/hyperswitch-java-client")
+                credentials {
+                    username = project.findProperty("publishGhPackagesUsername") ?: System.getenv("GITHUB_ACTOR")
+                    password = project.findProperty("publishGhPackagesPassword") ?: System.getenv("GITHUB_TOKEN")
+                }
+            }
+        }
+
         publications {
-            maven(MavenPublication) {
-                artifactId = 'hyperswitch-java'
-                from components.java
+            gpr(MavenPublication) {
+                from(components.java)
+                artifactId = 'hyperswitch-client'
+
+                pom {
+                    name = 'Hyperswitch Java Client'
+                    description = 'Java client for Hyperswitch API'
+                    url = 'https://github.com/lumeweb/hyperswitch-java-client'
+                    licenses {
+                        license {
+                            name = 'The Apache License, Version 2.0'
+                            url = 'http://www.apache.org/licenses/LICENSE-2.0.txt'
+                        }
+                    }
+                }
             }
         }
     }
 
     task execute(type:JavaExec) {
-       main = System.getProperty('mainClass')
-       classpath = sourceSets.main.runtimeClasspath
+        main = System.getProperty('mainClass')
+        classpath = sourceSets.main.runtimeClasspath
     }
 }
 
@@ -100,6 +121,7 @@ test {
     useJUnitPlatform()
 }
 
+// Dependencies section remains the same
 ext {
     swagger_annotations_version = "1.6.11"
     jackson_version = "2.14.3"

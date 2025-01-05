@@ -1,0 +1,115 @@
+name: OpenAPI Spec Check
+
+on:
+    schedule:
+        - cron: '0 0 * * *'  # Runs daily at midnight
+    workflow_dispatch:  # Allows manual triggering
+
+jobs:
+    check-openapi-spec:
+        runs-on: ubuntu-latest
+        permissions:
+            contents: write
+            pull-requests: write
+
+        steps:
+            - uses: actions/checkout@v3
+
+            - name: Get latest release tag
+              id: get-latest-tag
+              run: |
+                  LATEST_TAG=$(gh api repos/juspay/hyperswitch/tags --jq '.[0].name')
+                  echo "Latest tag: $LATEST_TAG"
+                  echo "latest_tag=$LATEST_TAG" >> $GITHUB_OUTPUT
+              env:
+                  GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+            - name: Download current OpenAPI spec
+              run: |
+                  SPEC_URL="https://raw.githubusercontent.com/juspay/hyperswitch/${{ steps.get-latest-tag.outputs.latest_tag }}/api-reference-v2/openapi_spec.json"
+                  echo "Downloading spec from: $SPEC_URL"
+                  gh api $SPEC_URL > new_spec.json
+              env:
+                  GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+            - name: Setup Node.js
+              uses: actions/setup-node@v3
+              with:
+                  node-version: '18'
+
+            - name: Install OpenAPI validation tools
+              run: npm install -g @apidevtools/swagger-cli
+
+            - name: Validate OpenAPI spec
+              id: validate-spec
+              run: |
+                  # Run validation and capture output
+                  if ! swagger-cli validate new_spec.json 2>validation_errors.txt; then
+                    echo "Validation warnings detected - continuing with update"
+                    cat validation_errors.txt
+                    echo "has_warnings=true" >> $GITHUB_OUTPUT
+                  else
+                    echo "Validation passed"
+                    echo "has_warnings=false" >> $GITHUB_OUTPUT
+                  fi
+
+            - name: Calculate hashes
+              id: hash-check
+              run: |
+                  if [ -f "openapi.json" ]; then
+                    OLD_HASH=$(sha256sum openapi.json | cut -d' ' -f1)
+                    NEW_HASH=$(sha256sum new_spec.json | cut -d' ' -f1)
+                    echo "old_hash=$OLD_HASH" >> $GITHUB_OUTPUT
+                    echo "new_hash=$NEW_HASH" >> $GITHUB_OUTPUT
+                    echo "different=$([[ $OLD_HASH != $NEW_HASH ]] && echo 'true' || echo 'false')" >> $GITHUB_OUTPUT
+                  else
+                    echo "different=true" >> $GITHUB_OUTPUT
+                  fi
+
+            - name: Create Branch if different
+              if: steps.hash-check.outputs.different == 'true'
+              run: |
+                  git config --global user.name 'github-actions[bot]'
+                  git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+
+                  BRANCH_NAME="feat/openapi-spec-update-$(date +%Y%m%d-%H%M%S)"
+                  git checkout -b $BRANCH_NAME
+
+                  mv new_spec.json openapi.json
+                  git add openapi.json
+                  git commit -m "chore: update OpenAPI specification to ${{ steps.get-latest-tag.outputs.latest_tag }}"
+                  git push origin $BRANCH_NAME
+
+                  # Prepare validation warnings section if any exist
+                  WARNINGS_SECTION=""
+                  if [ "${{ steps.validate-spec.outputs.has_warnings }}" == "true" ]; then
+                    WARNINGS_SECTION="### ⚠️ Validation Notes
+                    Some OpenAPI validation warnings were detected. These are documented here for reference but won't block the update.
+
+                    <details>
+                    <summary>View Validation Output</summary>
+
+                    \`\`\`
+                    $(cat validation_errors.txt)
+                    \`\`\`
+                    </details>
+                    "
+                  fi
+
+                  # Create PR using gh cli
+                  gh pr create \
+                    --title "chore: update OpenAPI specification to ${{ steps.get-latest-tag.outputs.latest_tag }}" \
+                    --body "Automated PR to update OpenAPI specification from Hyperswitch version ${{ steps.get-latest-tag.outputs.latest_tag }}.
+
+                    ### Hash Information
+                    - Old hash: ${{ steps.hash-check.outputs.old_hash }}
+                    - New hash: ${{ steps.hash-check.outputs.new_hash }}
+
+                    $WARNINGS_SECTION" \
+                    --label "openapi-update" \
+                    --label "automated pr" \
+                    --base main \
+                    --head $BRANCH_NAME
+              env:
+                  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+                  GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}

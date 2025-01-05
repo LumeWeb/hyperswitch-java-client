@@ -1,0 +1,55 @@
+name: Generate OpenAPI Client
+
+on:
+    pull_request:
+        types: [closed]
+        paths:
+            - 'openapi_spec.json'
+
+jobs:
+    generate-client:
+        if: github.event.pull_request.merged == true
+        runs-on: ubuntu-latest
+        permissions:
+            contents: write
+            pull-requests: write
+
+        steps:
+            - uses: actions/checkout@v3
+              with:
+                  ref: main
+              name: Remove Existing Version
+            - run: |
+
+                rm -rf ./src/*
+
+            - name: Generate Java Client
+              uses: openapi-generators/openapitools-generator-action@v1
+              with:
+                  generator: java
+                  config-file: openai-generator.yml
+                  openapi-file: openapi_spec.json
+
+            - name: Move generated Files
+              run: |
+                  mkdir -p src
+                  mv java-client/src/main ./src
+                  mv java-client/src/test ./src
+                  rm -rf java-client
+
+            - name: Create Pull Request
+              uses: peter-evans/create-pull-request@v5
+              with:
+                  token: ${{ secrets.GITHUB_TOKEN }}
+                  commit-message: "chore: update Java client from OpenAPI spec"
+                  title: "chore: update Java client"
+                  body: |
+                      Automated PR to update Java client from latest OpenAPI specification.
+
+                      Generated from OpenAPI spec version in PR #${{ github.event.pull_request.number }}
+                  branch: chore/client-update
+                  branch-suffix: timestamp
+                  delete-branch: true
+                  labels: |
+                      client-update
+                      automated pr

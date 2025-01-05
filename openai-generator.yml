@@ -1,0 +1,16 @@
+library: native
+dateLibrary: java8
+hideGenerationTimestamp: true
+artifactId: hyperswitch-client
+groupId: com.lumeweb
+artifactVersion: 0.0.1
+sourceFolder: src/main/java
+apiPackage: com.hyperswitch.api
+modelPackage: com.lumeweb.hyperswitch.model
+invokerPackage: com.lumeweb.hyperswitch.client
+buildTool: gradle
+additionalProperties:
+    useSpringBoot: false
+    gradleProperties: |
+        publishGhPackagesUsername=username
+        publishGhPackagesPassword=token

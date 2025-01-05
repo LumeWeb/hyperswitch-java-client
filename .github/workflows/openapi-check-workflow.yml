@@ -37,21 +37,32 @@ jobs:
               with:
                   node-version: '18'
 
-            - name: Install OpenAPI validation tools
-              run: npm install -g @apidevtools/swagger-cli
+            - name: Install Redocly OpenAPI CLI
+              run: npm install -g @redocly/cli
 
             - name: Validate OpenAPI spec
               id: validate-spec
               run: |
-                  # Run validation and capture output
-                  if ! swagger-cli validate new_spec.json 2>validation_errors.txt; then
-                    echo "Validation warnings detected - continuing with update"
-                    cat validation_errors.txt
-                    echo "has_warnings=true" >> $GITHUB_OUTPUT
+                  # First do a basic lint
+                  if ! npx @redocly/cli lint new_spec.json --format json > validation_output.json 2>validation_errors.txt; then
+                    echo "::warning::OpenAPI validation failed"
+
+                    # Get the error count
+                    ERROR_COUNT=$(jq '.totals.errors' validation_output.json)
+                    WARNING_COUNT=$(jq '.totals.warnings' validation_output.json)
+
+                    echo "error_count=$ERROR_COUNT" >> $GITHUB_OUTPUT
+                    echo "warning_count=$WARNING_COUNT" >> $GITHUB_OUTPUT
+                    echo "validation_failed=true" >> $GITHUB_OUTPUT
                   else
-                    echo "Validation passed"
-                    echo "has_warnings=false" >> $GITHUB_OUTPUT
+                    echo "error_count=0" >> $GITHUB_OUTPUT
+                    echo "warning_count=0" >> $GITHUB_OUTPUT
+                    echo "validation_failed=false" >> $GITHUB_OUTPUT
                   fi
+
+                  # Also try to validate it will work with openapi-generator
+                  echo "Testing compatibility with openapi-generator..."
+                  docker run --rm -v "${PWD}:/local" openapitools/openapi-generator-cli validate -i /local/new_spec.json > generator_validation.txt 2>&1 || true
 
             - name: Calculate hashes
               id: hash-check
@@ -80,21 +91,30 @@ jobs:
                   git commit -m "chore: update OpenAPI specification to ${{ steps.get-latest-tag.outputs.latest_tag }}"
                   git push origin $BRANCH_NAME
 
-                  # Prepare validation warnings section if any exist
-                  WARNINGS_SECTION=""
-                  if [ "${{ steps.validate-spec.outputs.has_warnings }}" == "true" ]; then
-                    WARNINGS_SECTION="### ⚠️ Validation Notes
-                    Some OpenAPI validation warnings were detected. These are documented here for reference but won't block the update.
+                  # Prepare validation section
+                  VALIDATION_SECTION="### 🔍 Validation Status
 
-                    <details>
-                    <summary>View Validation Output</summary>
+                  #### Redocly Validation:
+                  - Errors: ${{ steps.validate-spec.outputs.error_count }}
+                  - Warnings: ${{ steps.validate-spec.outputs.warning_count }}
 
-                    \`\`\`
-                    $(cat validation_errors.txt)
-                    \`\`\`
-                    </details>
-                    "
-                  fi
+                  <details>
+                  <summary>View Redocly Validation Details</summary>
+
+                  \`\`\`json
+                  $(cat validation_output.json)
+                  \`\`\`
+                  </details>
+
+                  #### OpenAPI Generator Validation:
+                  <details>
+                  <summary>View Generator Validation Output</summary>
+
+                  \`\`\`
+                  $(cat generator_validation.txt)
+                  \`\`\`
+                  </details>
+                  "
 
                   # Create PR using gh cli
                   gh pr create \
@@ -105,7 +125,7 @@ jobs:
                     - Old hash: ${{ steps.hash-check.outputs.old_hash }}
                     - New hash: ${{ steps.hash-check.outputs.new_hash }}
 
-                    $WARNINGS_SECTION" \
+                    $VALIDATION_SECTION" \
                     --label "openapi-update" \
                     --label "automated pr" \
                     --base main \

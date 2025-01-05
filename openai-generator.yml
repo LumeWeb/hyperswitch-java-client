@@ -1,0 +1,16 @@
+library: native
+dateLibrary: java8
+hideGenerationTimestamp: true
+artifactId: hyperswitch-client
+groupId: com.hyperswitch
+artifactVersion: 0.0.1
+sourceFolder: src/main/java
+apiPackage: com.hyperswitch.client.api
+modelPackage: com.hyperswitch.client.model
+invokerPackage: com.hyperswitch.client
+buildTool: gradle
+additionalProperties:
+    useSpringBoot: false
+    gradleProperties: |
+        publishGhPackagesUsername=username
+        publishGhPackagesPassword=token

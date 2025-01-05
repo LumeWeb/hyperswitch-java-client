@@ -1,0 +1,88 @@
+name: Release and Publish
+
+on:
+    pull_request:
+        types: [closed]
+        paths:
+            - 'java-client/**'
+
+jobs:
+    release:
+        if: github.event.pull_request.merged == true
+        runs-on: ubuntu-latest
+        permissions:
+            contents: write
+            packages: write
+            pull-requests: write
+
+        steps:
+            - uses: actions/checkout@v3
+              with:
+                  fetch-depth: 0
+
+            - name: Set up JDK
+              uses: actions/setup-java@v3
+              with:
+                  java-version: '11'
+                  distribution: 'temurin'
+
+            - name: Setup Gradle
+              uses: gradle/gradle-build-action@v2
+              with:
+                  gradle-version: wrapper
+
+            - name: Make gradlew executable
+              run: chmod +x ./gradlew
+
+            - name: Determine version bump
+              id: semver
+              uses: mathieudutour/github-tag-action@v6.1
+              with:
+                  github_token: ${{ secrets.GITHUB_TOKEN }}
+                  dry_run: true
+                  default_bump: patch
+
+            - name: Update version in build files
+              run: |
+                  # Update version in build.gradle
+                  sed -i "s/version = '.*'/version = '${{ steps.semver.outputs.new_version }}'/g" build.gradle
+
+            - name: Create Version Update PR
+              uses: peter-evans/create-pull-request@v5
+              with:
+                  token: ${{ secrets.GITHUB_TOKEN }}
+                  commit-message: "chore: bump version to ${{ steps.semver.outputs.new_version }}"
+                  title: "chore: bump version to ${{ steps.semver.outputs.new_version }}"
+                  body: |
+                      Automated PR to update version to ${{ steps.semver.outputs.new_version }}
+
+                      This update was triggered by PR #${{ github.event.pull_request.number }}
+                  branch: chore/version-bump
+                  branch-suffix: timestamp
+                  delete-branch: true
+                  labels: |
+                      version-bump
+                      automated pr
+
+            - name: Build with Gradle
+              run: ./gradlew clean build -x test
+              env:
+                  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+            - name: Create GitHub Release
+              uses: mathieudutour/github-tag-action@v6.1
+              with:
+                  github_token: ${{ secrets.GITHUB_TOKEN }}
+                  commit_sha: ${{ github.event.pull_request.merge_commit_sha }}
+
+            - name: Publish to GitHub Packages
+              run: |
+                  # Create gradle.properties with GitHub Packages credentials
+                  cat <<EOF > gradle.properties
+                  publishGhPackagesUsername=${{ github.actor }}
+                  publishGhPackagesPassword=${{ secrets.GITHUB_TOKEN }}
+                  EOF
+
+                  ./gradlew publish
+              env:
+                  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

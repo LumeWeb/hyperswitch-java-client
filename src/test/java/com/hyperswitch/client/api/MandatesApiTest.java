@@ -1,6 +1,6 @@
 package com.hyperswitch.client.api;
 
-import com.hyperswitch.client.HsApiClient;
+import com.hyperswitch.client.ApiClient;
 import com.hyperswitch.client.model.MandateResponse;
 import com.hyperswitch.client.model.MandateRevokedResponse;
 import org.junit.jupiter.api.Test;
@@ -22,14 +22,28 @@ class MandatesApiTest {
 
     @BeforeEach
     public void setup() {
-        api = new HsApiClient().buildClient(MandatesApi.class);
+        api = new ApiClient().buildClient(MandatesApi.class);
+    }
+
+    
+    /**
+     * Mandates - Customer Mandates List
+     *
+     * Lists all the mandates for a particular customer id.
+     */
+    @Test
+    void listMandatesForACustomerTest() {
+        String customerId = null;
+        // List<MandateResponse> response = api.listMandatesForACustomer(customerId);
+
+        // TODO: test validations
     }
 
     
     /**
      * Mandates - Retrieve Mandate
      *
-     * Mandates - Retrieve Mandate  Retrieve a mandate
+     * Retrieves a mandate created using the Payments/Create API
      */
     @Test
     void retrieveAMandateTest() {
@@ -43,7 +57,7 @@ class MandatesApiTest {
     /**
      * Mandates - Revoke Mandate
      *
-     * Mandates - Revoke Mandate  Revoke a mandate
+     * Revokes a mandate created using the Payments/Create API
      */
     @Test
     void revokeAMandateTest() {

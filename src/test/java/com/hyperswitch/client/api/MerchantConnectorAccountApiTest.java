@@ -1,8 +1,9 @@
 package com.hyperswitch.client.api;
 
-import com.hyperswitch.client.HsApiClient;
+import com.hyperswitch.client.ApiClient;
 import com.hyperswitch.client.model.MerchantConnectorCreate;
 import com.hyperswitch.client.model.MerchantConnectorDeleteResponse;
+import com.hyperswitch.client.model.MerchantConnectorListResponse;
 import com.hyperswitch.client.model.MerchantConnectorResponse;
 import com.hyperswitch.client.model.MerchantConnectorUpdate;
 import org.junit.jupiter.api.Test;
@@ -24,19 +25,20 @@ class MerchantConnectorAccountApiTest {
 
     @BeforeEach
     public void setup() {
-        api = new HsApiClient().buildClient(MerchantConnectorAccountApi.class);
+        api = new ApiClient().buildClient(MerchantConnectorAccountApi.class);
     }
 
     
     /**
      * Merchant Connector - Create
      *
-     * Merchant Connector - Create  Create a new Merchant Connector for the merchant account. The connector could be a payment processor / facilitator / acquirer or specialized services like Fraud / Accounting etc.\&quot;
+     * Creates a new Merchant Connector for the merchant account. The connector could be a payment processor/facilitator/acquirer or a provider of specialized services like Fraud/Accounting etc.
      */
     @Test
     void createAMerchantConnectorTest() {
+        String accountId = null;
         MerchantConnectorCreate merchantConnectorCreate = null;
-        // MerchantConnectorResponse response = api.createAMerchantConnector(merchantConnectorCreate);
+        // MerchantConnectorResponse response = api.createAMerchantConnector(accountId, merchantConnectorCreate);
 
         // TODO: test validations
     }
@@ -45,7 +47,7 @@ class MerchantConnectorAccountApiTest {
     /**
      * Merchant Connector - Delete
      *
-     * Merchant Connector - Delete  Delete or Detach a Merchant Connector from Merchant Account
+     * Delete or Detach a Merchant Connector from Merchant Account
      */
     @Test
     void deleteAMerchantConnectorTest() {
@@ -60,12 +62,12 @@ class MerchantConnectorAccountApiTest {
     /**
      * Merchant Connector - List
      *
-     * Merchant Connector - List  List Merchant Connector Details for the merchant
+     * List Merchant Connector Details for the merchant
      */
     @Test
     void listAllMerchantConnectorsTest() {
         String accountId = null;
-        // List<MerchantConnectorResponse> response = api.listAllMerchantConnectors(accountId);
+        // List<MerchantConnectorListResponse> response = api.listAllMerchantConnectors(accountId);
 
         // TODO: test validations
     }
@@ -74,7 +76,7 @@ class MerchantConnectorAccountApiTest {
     /**
      * Merchant Connector - Retrieve
      *
-     * Merchant Connector - Retrieve  Retrieve Merchant Connector Details
+     * Retrieves details of a Connector account
      */
     @Test
     void retrieveAMerchantConnectorTest() {
@@ -89,7 +91,7 @@ class MerchantConnectorAccountApiTest {
     /**
      * Merchant Connector - Update
      *
-     * Merchant Connector - Update  To update an existing Merchant Connector. Helpful in enabling / disabling different payment methods and other settings for the connector etc.
+     * To update an existing Merchant Connector account. Helpful in enabling/disabling different payment methods and other settings for the connector
      */
     @Test
     void updateAMerchantConnectorTest() {

@@ -1,6 +1,6 @@
 package com.hyperswitch.client.api;
 
-import com.hyperswitch.client.HsApiClient;
+import com.hyperswitch.client.ApiClient;
 import com.hyperswitch.client.model.RefundListRequest;
 import com.hyperswitch.client.model.RefundListResponse;
 import com.hyperswitch.client.model.RefundRequest;
@@ -25,48 +25,42 @@ class RefundsApiTest {
 
     @BeforeEach
     public void setup() {
-        api = new HsApiClient("api_key", "API_KEY")
-                .buildClient(RefundsApi.class);
+        api = new ApiClient().buildClient(RefundsApi.class);
     }
 
     
     /**
      * Refunds - Create
      *
-     * Refunds - Create  To create a refund against an already processed payment
+     * Creates a refund against an already processed payment. In case of some processors, you can even opt to refund only a partial amount multiple times until the original charge amount has been refunded
      */
     @Test
     void createARefundTest() {
-        RefundRequest refundRequest = new RefundRequest();
+        RefundRequest refundRequest = null;
         // RefundResponse response = api.createARefund(refundRequest);
-        // String paymentId = "PAYMENT_ID";
-        // refundRequest.setPaymentId(paymentId);
-        // Long amount = 100L;
-        // refundRequest.setAmount(amount);
-        // System.out.println(refundRequest.toString());
-        // RefundResponse response = api.createARefund(refundRequest);
-        // System.out.println(response.toString());
-    }
-
-    
-    /**
-     * Refunds - List
-     *
-     * Refunds - List  To list the refunds associated with a payment_id or with the merchant, if payment_id is not provided
-     */
-    @Test
-    void listAllRefundsTest() {
-        RefundListRequest refundListRequest = null;
-        // Refun dListResponse response = api.listAllRefunds(refundListRequest);
 
         // TODO: test validations
     }
 
     
     /**
-     * Refunds - Retrieve (GET)
+     * Refunds - List
      *
-     * Refunds - Retrieve (GET)  To retrieve the properties of a Refund. This may be used to get the status of a previously initiated payment or next action for an ongoing payment
+     * Lists all the refunds associated with the merchant or a payment_id if payment_id is not provided
+     */
+    @Test
+    void listAllRefundsTest() {
+        RefundListRequest refundListRequest = null;
+        // RefundListResponse response = api.listAllRefunds(refundListRequest);
+
+        // TODO: test validations
+    }
+
+    
+    /**
+     * Refunds - Retrieve
+     *
+     * Retrieves a Refund. This may be used to get the status of a previously initiated refund
      */
     @Test
     void retrieveARefundTest() {
@@ -80,7 +74,7 @@ class RefundsApiTest {
     /**
      * Refunds - Update
      *
-     * Refunds - Update  To update the properties of a Refund object. This may include attaching a reason for the refund or metadata fields
+     * Updates the properties of a Refund object. This API can be used to attach a reason for the refund or metadata fields
      */
     @Test
     void updateARefundTest() {

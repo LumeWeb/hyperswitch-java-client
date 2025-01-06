@@ -1,10 +1,11 @@
 package com.hyperswitch.client.api;
 
-import com.hyperswitch.client.HsApiClient;
+import com.hyperswitch.client.ApiClient;
 import com.hyperswitch.client.EncodingUtils;
 import com.hyperswitch.client.model.ApiResponse;
 
 import com.hyperswitch.client.model.Currency;
+import com.hyperswitch.client.model.CustomerDefaultPaymentMethodResponse;
 import com.hyperswitch.client.model.CustomerPaymentMethodsListResponse;
 import com.hyperswitch.client.model.PaymentMethodCreate;
 import com.hyperswitch.client.model.PaymentMethodDeleteResponse;
@@ -18,13 +19,13 @@ import java.util.List;
 import java.util.Map;
 import feign.*;
 
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-01-28T20:00:07.865622+05:30[Asia/Kolkata]")
-public interface PaymentMethodsApi extends HsApiClient.Api {
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+public interface PaymentMethodsApi extends ApiClient.Api {
 
 
   /**
    * PaymentMethods - Create
-   * PaymentMethods - Create  To create a payment method against a customer object. In case of cards, this API could be used only by PCI compliant merchants
+   * Creates and stores a payment method against a customer. In case of cards, this API should be used only by PCI compliant merchants.
    * @param paymentMethodCreate  (required)
    * @return PaymentMethodResponse
    */
@@ -38,7 +39,7 @@ public interface PaymentMethodsApi extends HsApiClient.Api {
   /**
    * PaymentMethods - Create
    * Similar to <code>createAPaymentMethod</code> but it also returns the http response headers .
-   * PaymentMethods - Create  To create a payment method against a customer object. In case of cards, this API could be used only by PCI compliant merchants
+   * Creates and stores a payment method against a customer. In case of cards, this API should be used only by PCI compliant merchants.
    * @param paymentMethodCreate  (required)
    * @return A ApiResponse that wraps the response boyd and the http headers.
    */
@@ -53,7 +54,7 @@ public interface PaymentMethodsApi extends HsApiClient.Api {
 
   /**
    * Payment Method - Delete
-   * Payment Method - Delete  Delete payment method
+   * Deletes a payment method of a customer.
    * @param methodId The unique identifier for the Payment Method (required)
    * @return PaymentMethodDeleteResponse
    */
@@ -66,7 +67,7 @@ public interface PaymentMethodsApi extends HsApiClient.Api {
   /**
    * Payment Method - Delete
    * Similar to <code>deleteAPaymentMethod</code> but it also returns the http response headers .
-   * Payment Method - Delete  Delete payment method
+   * Deletes a payment method of a customer.
    * @param methodId The unique identifier for the Payment Method (required)
    * @return A ApiResponse that wraps the response boyd and the http headers.
    */
@@ -80,92 +81,92 @@ public interface PaymentMethodsApi extends HsApiClient.Api {
 
   /**
    * List payment methods for a Customer
-   * List payment methods for a Customer  To filter and list the applicable payment methods for a particular Customer ID
-   * @param clientSecret A secret known only to your application and the authorization server (required)
+   * Lists all the applicable payment methods for a particular Customer ID.
+   * @param customerId The unique identifier for the customer account (required)
    * @param acceptedCountry The two-letter ISO currency code (required)
    * @param acceptedCurrency The three-letter ISO currency code (required)
    * @param minimumAmount The minimum amount accepted for processing by the particular payment method. (required)
-   * @param maximumAmount The maximum amount amount accepted for processing by the particular payment method. (required)
+   * @param maximumAmount The maximum amount accepted for processing by the particular payment method. (required)
    * @param recurringPaymentEnabled Indicates whether the payment method is eligible for recurring payments (required)
    * @param installmentPaymentEnabled Indicates whether the payment method is eligible for installment payments (required)
    * @return CustomerPaymentMethodsListResponse
    */
-  @RequestLine("GET /customers/payment_methods?accepted_country={acceptedCountry}&minimum_amount={minimumAmount}&maximum_amount={maximumAmount}&recurring_payment_enabled={recurringPaymentEnabled}&installment_payment_enabled={installmentPaymentEnabled}")
+  @RequestLine("GET /customers/{customerId}/payment_methods?accepted_country={acceptedCountry}&minimum_amount={minimumAmount}&maximum_amount={maximumAmount}&recurring_payment_enabled={recurringPaymentEnabled}&installment_payment_enabled={installmentPaymentEnabled}")
   @Headers({
     "Accept: application/json",
   })
-  CustomerPaymentMethodsListResponse listAllPaymentMethodsForACustomer(@Param("clientSecret") String clientSecret, @Param("acceptedCountry") List<String> acceptedCountry, @Param("acceptedCurrency") List<Currency> acceptedCurrency, @Param("minimumAmount") Long minimumAmount, @Param("maximumAmount") Long maximumAmount, @Param("recurringPaymentEnabled") Boolean recurringPaymentEnabled, @Param("installmentPaymentEnabled") Boolean installmentPaymentEnabled);
+  CustomerPaymentMethodsListResponse listAllPaymentMethodsForACustomer(@Param("customerId") String customerId, @Param("acceptedCountry") List<String> acceptedCountry, @Param("acceptedCurrency") List<Currency> acceptedCurrency, @Param("minimumAmount") Long minimumAmount, @Param("maximumAmount") Long maximumAmount, @Param("recurringPaymentEnabled") Boolean recurringPaymentEnabled, @Param("installmentPaymentEnabled") Boolean installmentPaymentEnabled);
 
   /**
    * List payment methods for a Customer
    * Similar to <code>listAllPaymentMethodsForACustomer</code> but it also returns the http response headers .
-   * List payment methods for a Customer  To filter and list the applicable payment methods for a particular Customer ID
-   * @param clientSecret A secret known only to your application and the authorization server (required)
+   * Lists all the applicable payment methods for a particular Customer ID.
+   * @param customerId The unique identifier for the customer account (required)
    * @param acceptedCountry The two-letter ISO currency code (required)
    * @param acceptedCurrency The three-letter ISO currency code (required)
    * @param minimumAmount The minimum amount accepted for processing by the particular payment method. (required)
-   * @param maximumAmount The maximum amount amount accepted for processing by the particular payment method. (required)
+   * @param maximumAmount The maximum amount accepted for processing by the particular payment method. (required)
    * @param recurringPaymentEnabled Indicates whether the payment method is eligible for recurring payments (required)
    * @param installmentPaymentEnabled Indicates whether the payment method is eligible for installment payments (required)
    * @return A ApiResponse that wraps the response boyd and the http headers.
    */
-  @RequestLine("GET /customers/payment_methods?accepted_country={acceptedCountry}&minimum_amount={minimumAmount}&maximum_amount={maximumAmount}&recurring_payment_enabled={recurringPaymentEnabled}&installment_payment_enabled={installmentPaymentEnabled}")
+  @RequestLine("GET /customers/{customerId}/payment_methods?accepted_country={acceptedCountry}&minimum_amount={minimumAmount}&maximum_amount={maximumAmount}&recurring_payment_enabled={recurringPaymentEnabled}&installment_payment_enabled={installmentPaymentEnabled}")
   @Headers({
     "Accept: application/json",
   })
-  ApiResponse<CustomerPaymentMethodsListResponse> listAllPaymentMethodsForACustomerWithHttpInfo(@Param("clientSecret") String clientSecret, @Param("acceptedCountry") List<String> acceptedCountry, @Param("acceptedCurrency") List<Currency> acceptedCurrency, @Param("minimumAmount") Long minimumAmount, @Param("maximumAmount") Long maximumAmount, @Param("recurringPaymentEnabled") Boolean recurringPaymentEnabled, @Param("installmentPaymentEnabled") Boolean installmentPaymentEnabled);
+  ApiResponse<CustomerPaymentMethodsListResponse> listAllPaymentMethodsForACustomerWithHttpInfo(@Param("customerId") String customerId, @Param("acceptedCountry") List<String> acceptedCountry, @Param("acceptedCurrency") List<Currency> acceptedCurrency, @Param("minimumAmount") Long minimumAmount, @Param("maximumAmount") Long maximumAmount, @Param("recurringPaymentEnabled") Boolean recurringPaymentEnabled, @Param("installmentPaymentEnabled") Boolean installmentPaymentEnabled);
 
 
   /**
    * List payment methods for a Customer
-   * List payment methods for a Customer  To filter and list the applicable payment methods for a particular Customer ID
+   * Lists all the applicable payment methods for a particular Customer ID.
    * Note, this is equivalent to the other <code>listAllPaymentMethodsForACustomer</code> method,
    * but with the query parameters collected into a single Map parameter. This
    * is convenient for services with optional query parameters, especially when
    * used with the {@link ListAllPaymentMethodsForACustomerQueryParams} class that allows for
    * building up this map in a fluent style.
-   * @param clientSecret A secret known only to your application and the authorization server (required)
+   * @param customerId The unique identifier for the customer account (required)
    * @param acceptedCurrency The three-letter ISO currency code (required)
    * @param queryParams Map of query parameters as name-value pairs
    *   <p>The following elements may be specified in the query map:</p>
    *   <ul>
    *   <li>acceptedCountry - The two-letter ISO currency code (required)</li>
    *   <li>minimumAmount - The minimum amount accepted for processing by the particular payment method. (required)</li>
-   *   <li>maximumAmount - The maximum amount amount accepted for processing by the particular payment method. (required)</li>
+   *   <li>maximumAmount - The maximum amount accepted for processing by the particular payment method. (required)</li>
    *   <li>recurringPaymentEnabled - Indicates whether the payment method is eligible for recurring payments (required)</li>
    *   <li>installmentPaymentEnabled - Indicates whether the payment method is eligible for installment payments (required)</li>
    *   </ul>
    * @return CustomerPaymentMethodsListResponse
    */
-  @RequestLine("GET /customers/payment_methods?accepted_country={acceptedCountry}&minimum_amount={minimumAmount}&maximum_amount={maximumAmount}&recurring_payment_enabled={recurringPaymentEnabled}&installment_payment_enabled={installmentPaymentEnabled}")
+  @RequestLine("GET /customers/{customerId}/payment_methods?accepted_country={acceptedCountry}&minimum_amount={minimumAmount}&maximum_amount={maximumAmount}&recurring_payment_enabled={recurringPaymentEnabled}&installment_payment_enabled={installmentPaymentEnabled}")
   @Headers({
   "Accept: application/json",
   })
-  CustomerPaymentMethodsListResponse listAllPaymentMethodsForACustomer(@Param("clientSecret") String clientSecret, @Param("acceptedCurrency") List<Currency> acceptedCurrency, @QueryMap(encoded=true) ListAllPaymentMethodsForACustomerQueryParams queryParams);
+  CustomerPaymentMethodsListResponse listAllPaymentMethodsForACustomer(@Param("customerId") String customerId, @Param("acceptedCurrency") List<Currency> acceptedCurrency, @QueryMap(encoded=true) ListAllPaymentMethodsForACustomerQueryParams queryParams);
 
   /**
   * List payment methods for a Customer
-  * List payment methods for a Customer  To filter and list the applicable payment methods for a particular Customer ID
+  * Lists all the applicable payment methods for a particular Customer ID.
   * Note, this is equivalent to the other <code>listAllPaymentMethodsForACustomer</code> that receives the query parameters as a map,
   * but this one also exposes the Http response headers
-              * @param clientSecret A secret known only to your application and the authorization server (required)
+              * @param customerId The unique identifier for the customer account (required)
               * @param acceptedCurrency The three-letter ISO currency code (required)
       * @param queryParams Map of query parameters as name-value pairs
       *   <p>The following elements may be specified in the query map:</p>
       *   <ul>
           *   <li>acceptedCountry - The two-letter ISO currency code (required)</li>
           *   <li>minimumAmount - The minimum amount accepted for processing by the particular payment method. (required)</li>
-          *   <li>maximumAmount - The maximum amount amount accepted for processing by the particular payment method. (required)</li>
+          *   <li>maximumAmount - The maximum amount accepted for processing by the particular payment method. (required)</li>
           *   <li>recurringPaymentEnabled - Indicates whether the payment method is eligible for recurring payments (required)</li>
           *   <li>installmentPaymentEnabled - Indicates whether the payment method is eligible for installment payments (required)</li>
       *   </ul>
           * @return CustomerPaymentMethodsListResponse
       */
-      @RequestLine("GET /customers/payment_methods?accepted_country={acceptedCountry}&minimum_amount={minimumAmount}&maximum_amount={maximumAmount}&recurring_payment_enabled={recurringPaymentEnabled}&installment_payment_enabled={installmentPaymentEnabled}")
+      @RequestLine("GET /customers/{customerId}/payment_methods?accepted_country={acceptedCountry}&minimum_amount={minimumAmount}&maximum_amount={maximumAmount}&recurring_payment_enabled={recurringPaymentEnabled}&installment_payment_enabled={installmentPaymentEnabled}")
       @Headers({
     "Accept: application/json",
       })
-   ApiResponse<CustomerPaymentMethodsListResponse> listAllPaymentMethodsForACustomerWithHttpInfo(@Param("clientSecret") String clientSecret, @Param("acceptedCurrency") List<Currency> acceptedCurrency, @QueryMap(encoded=true) ListAllPaymentMethodsForACustomerQueryParams queryParams);
+   ApiResponse<CustomerPaymentMethodsListResponse> listAllPaymentMethodsForACustomerWithHttpInfo(@Param("customerId") String customerId, @Param("acceptedCurrency") List<Currency> acceptedCurrency, @QueryMap(encoded=true) ListAllPaymentMethodsForACustomerQueryParams queryParams);
 
 
    /**
@@ -196,126 +197,13 @@ public interface PaymentMethodsApi extends HsApiClient.Api {
   }
 
   /**
-   * List payment methods for a Customer
-   * List payment methods for a Customer  To filter and list the applicable payment methods for a particular Customer ID
-   * @param acceptedCountry The two-letter ISO currency code (required)
-   * @param acceptedCurrency The three-letter ISO currency code (required)
-   * @param minimumAmount The minimum amount accepted for processing by the particular payment method. (required)
-   * @param maximumAmount The maximum amount amount accepted for processing by the particular payment method. (required)
-   * @param recurringPaymentEnabled Indicates whether the payment method is eligible for recurring payments (required)
-   * @param installmentPaymentEnabled Indicates whether the payment method is eligible for installment payments (required)
-   * @return CustomerPaymentMethodsListResponse
-   */
-  @RequestLine("GET /customers/{customerId}/payment_methods?accepted_country={acceptedCountry}&minimum_amount={minimumAmount}&maximum_amount={maximumAmount}&recurring_payment_enabled={recurringPaymentEnabled}&installment_payment_enabled={installmentPaymentEnabled}")
-  @Headers({
-    "Accept: application/json",
-  })
-  CustomerPaymentMethodsListResponse listAllPaymentMethodsForACustomer_1(@Param("acceptedCountry") List<String> acceptedCountry, @Param("acceptedCurrency") List<Currency> acceptedCurrency, @Param("minimumAmount") Long minimumAmount, @Param("maximumAmount") Long maximumAmount, @Param("recurringPaymentEnabled") Boolean recurringPaymentEnabled, @Param("installmentPaymentEnabled") Boolean installmentPaymentEnabled);
-
-  /**
-   * List payment methods for a Customer
-   * Similar to <code>listAllPaymentMethodsForACustomer_0</code> but it also returns the http response headers .
-   * List payment methods for a Customer  To filter and list the applicable payment methods for a particular Customer ID
-   * @param acceptedCountry The two-letter ISO currency code (required)
-   * @param acceptedCurrency The three-letter ISO currency code (required)
-   * @param minimumAmount The minimum amount accepted for processing by the particular payment method. (required)
-   * @param maximumAmount The maximum amount amount accepted for processing by the particular payment method. (required)
-   * @param recurringPaymentEnabled Indicates whether the payment method is eligible for recurring payments (required)
-   * @param installmentPaymentEnabled Indicates whether the payment method is eligible for installment payments (required)
-   * @return A ApiResponse that wraps the response boyd and the http headers.
-   */
-  @RequestLine("GET /customers/{customerId}/payment_methods?accepted_country={acceptedCountry}&minimum_amount={minimumAmount}&maximum_amount={maximumAmount}&recurring_payment_enabled={recurringPaymentEnabled}&installment_payment_enabled={installmentPaymentEnabled}")
-  @Headers({
-    "Accept: application/json",
-  })
-  ApiResponse<CustomerPaymentMethodsListResponse> listAllPaymentMethodsForACustomer_1WithHttpInfo(@Param("acceptedCountry") List<String> acceptedCountry, @Param("acceptedCurrency") List<Currency> acceptedCurrency, @Param("minimumAmount") Long minimumAmount, @Param("maximumAmount") Long maximumAmount, @Param("recurringPaymentEnabled") Boolean recurringPaymentEnabled, @Param("installmentPaymentEnabled") Boolean installmentPaymentEnabled);
-
-
-  /**
-   * List payment methods for a Customer
-   * List payment methods for a Customer  To filter and list the applicable payment methods for a particular Customer ID
-   * Note, this is equivalent to the other <code>listAllPaymentMethodsForACustomer_0</code> method,
-   * but with the query parameters collected into a single Map parameter. This
-   * is convenient for services with optional query parameters, especially when
-   * used with the {@link ListAllPaymentMethodsForACustomer0QueryParams} class that allows for
-   * building up this map in a fluent style.
-   * @param acceptedCurrency The three-letter ISO currency code (required)
-   * @param queryParams Map of query parameters as name-value pairs
-   *   <p>The following elements may be specified in the query map:</p>
-   *   <ul>
-   *   <li>acceptedCountry - The two-letter ISO currency code (required)</li>
-   *   <li>minimumAmount - The minimum amount accepted for processing by the particular payment method. (required)</li>
-   *   <li>maximumAmount - The maximum amount amount accepted for processing by the particular payment method. (required)</li>
-   *   <li>recurringPaymentEnabled - Indicates whether the payment method is eligible for recurring payments (required)</li>
-   *   <li>installmentPaymentEnabled - Indicates whether the payment method is eligible for installment payments (required)</li>
-   *   </ul>
-   * @return CustomerPaymentMethodsListResponse
-   */
-  @RequestLine("GET /customers/{customerId}/payment_methods?accepted_country={acceptedCountry}&minimum_amount={minimumAmount}&maximum_amount={maximumAmount}&recurring_payment_enabled={recurringPaymentEnabled}&installment_payment_enabled={installmentPaymentEnabled}")
-  @Headers({
-  "Accept: application/json",
-  })
-  CustomerPaymentMethodsListResponse listAllPaymentMethodsForACustomer_1(@Param("acceptedCurrency") List<Currency> acceptedCurrency, @QueryMap(encoded=true) ListAllPaymentMethodsForACustomer0QueryParams queryParams);
-
-  /**
-  * List payment methods for a Customer
-  * List payment methods for a Customer  To filter and list the applicable payment methods for a particular Customer ID
-  * Note, this is equivalent to the other <code>listAllPaymentMethodsForACustomer_0</code> that receives the query parameters as a map,
-  * but this one also exposes the Http response headers
-              * @param acceptedCurrency The three-letter ISO currency code (required)
-      * @param queryParams Map of query parameters as name-value pairs
-      *   <p>The following elements may be specified in the query map:</p>
-      *   <ul>
-          *   <li>acceptedCountry - The two-letter ISO currency code (required)</li>
-          *   <li>minimumAmount - The minimum amount accepted for processing by the particular payment method. (required)</li>
-          *   <li>maximumAmount - The maximum amount amount accepted for processing by the particular payment method. (required)</li>
-          *   <li>recurringPaymentEnabled - Indicates whether the payment method is eligible for recurring payments (required)</li>
-          *   <li>installmentPaymentEnabled - Indicates whether the payment method is eligible for installment payments (required)</li>
-      *   </ul>
-          * @return CustomerPaymentMethodsListResponse
-      */
-      @RequestLine("GET /customers/{customerId}/payment_methods?accepted_country={acceptedCountry}&minimum_amount={minimumAmount}&maximum_amount={maximumAmount}&recurring_payment_enabled={recurringPaymentEnabled}&installment_payment_enabled={installmentPaymentEnabled}")
-      @Headers({
-    "Accept: application/json",
-      })
-   ApiResponse<CustomerPaymentMethodsListResponse> listAllPaymentMethodsForACustomer_1WithHttpInfo(@Param("acceptedCurrency") List<Currency> acceptedCurrency, @QueryMap(encoded=true) ListAllPaymentMethodsForACustomer0QueryParams queryParams);
-
-
-   /**
-   * A convenience class for generating query parameters for the
-   * <code>listAllPaymentMethodsForACustomer_0</code> method in a fluent style.
-   */
-  public static class ListAllPaymentMethodsForACustomer0QueryParams extends HashMap<String, Object> {
-    public ListAllPaymentMethodsForACustomer0QueryParams acceptedCountry(final List<String> value) {
-      put("accepted_country", EncodingUtils.encodeCollection(value, "multi"));
-      return this;
-    }
-    public ListAllPaymentMethodsForACustomer0QueryParams minimumAmount(final Long value) {
-      put("minimum_amount", EncodingUtils.encode(value));
-      return this;
-    }
-    public ListAllPaymentMethodsForACustomer0QueryParams maximumAmount(final Long value) {
-      put("maximum_amount", EncodingUtils.encode(value));
-      return this;
-    }
-    public ListAllPaymentMethodsForACustomer0QueryParams recurringPaymentEnabled(final Boolean value) {
-      put("recurring_payment_enabled", EncodingUtils.encode(value));
-      return this;
-    }
-    public ListAllPaymentMethodsForACustomer0QueryParams installmentPaymentEnabled(final Boolean value) {
-      put("installment_payment_enabled", EncodingUtils.encode(value));
-      return this;
-    }
-  }
-
-  /**
    * List payment methods for a Merchant
-   * List payment methods for a Merchant  To filter and list the applicable payment methods for a particular Merchant ID
+   * Lists the applicable payment methods for a particular Merchant ID. Use the client secret and publishable key authorization to list all relevant payment methods of the merchant for the payment corresponding to the client secret.
    * @param accountId The unique identifier for the merchant account (required)
    * @param acceptedCountry The two-letter ISO currency code (required)
    * @param acceptedCurrency The three-letter ISO currency code (required)
    * @param minimumAmount The minimum amount accepted for processing by the particular payment method. (required)
-   * @param maximumAmount The maximum amount amount accepted for processing by the particular payment method. (required)
+   * @param maximumAmount The maximum amount accepted for processing by the particular payment method. (required)
    * @param recurringPaymentEnabled Indicates whether the payment method is eligible for recurring payments (required)
    * @param installmentPaymentEnabled Indicates whether the payment method is eligible for installment payments (required)
    * @return PaymentMethodListResponse
@@ -329,12 +217,12 @@ public interface PaymentMethodsApi extends HsApiClient.Api {
   /**
    * List payment methods for a Merchant
    * Similar to <code>listAllPaymentMethodsForAMerchant</code> but it also returns the http response headers .
-   * List payment methods for a Merchant  To filter and list the applicable payment methods for a particular Merchant ID
+   * Lists the applicable payment methods for a particular Merchant ID. Use the client secret and publishable key authorization to list all relevant payment methods of the merchant for the payment corresponding to the client secret.
    * @param accountId The unique identifier for the merchant account (required)
    * @param acceptedCountry The two-letter ISO currency code (required)
    * @param acceptedCurrency The three-letter ISO currency code (required)
    * @param minimumAmount The minimum amount accepted for processing by the particular payment method. (required)
-   * @param maximumAmount The maximum amount amount accepted for processing by the particular payment method. (required)
+   * @param maximumAmount The maximum amount accepted for processing by the particular payment method. (required)
    * @param recurringPaymentEnabled Indicates whether the payment method is eligible for recurring payments (required)
    * @param installmentPaymentEnabled Indicates whether the payment method is eligible for installment payments (required)
    * @return A ApiResponse that wraps the response boyd and the http headers.
@@ -348,7 +236,7 @@ public interface PaymentMethodsApi extends HsApiClient.Api {
 
   /**
    * List payment methods for a Merchant
-   * List payment methods for a Merchant  To filter and list the applicable payment methods for a particular Merchant ID
+   * Lists the applicable payment methods for a particular Merchant ID. Use the client secret and publishable key authorization to list all relevant payment methods of the merchant for the payment corresponding to the client secret.
    * Note, this is equivalent to the other <code>listAllPaymentMethodsForAMerchant</code> method,
    * but with the query parameters collected into a single Map parameter. This
    * is convenient for services with optional query parameters, especially when
@@ -361,7 +249,7 @@ public interface PaymentMethodsApi extends HsApiClient.Api {
    *   <ul>
    *   <li>acceptedCountry - The two-letter ISO currency code (required)</li>
    *   <li>minimumAmount - The minimum amount accepted for processing by the particular payment method. (required)</li>
-   *   <li>maximumAmount - The maximum amount amount accepted for processing by the particular payment method. (required)</li>
+   *   <li>maximumAmount - The maximum amount accepted for processing by the particular payment method. (required)</li>
    *   <li>recurringPaymentEnabled - Indicates whether the payment method is eligible for recurring payments (required)</li>
    *   <li>installmentPaymentEnabled - Indicates whether the payment method is eligible for installment payments (required)</li>
    *   </ul>
@@ -375,7 +263,7 @@ public interface PaymentMethodsApi extends HsApiClient.Api {
 
   /**
   * List payment methods for a Merchant
-  * List payment methods for a Merchant  To filter and list the applicable payment methods for a particular Merchant ID
+  * Lists the applicable payment methods for a particular Merchant ID. Use the client secret and publishable key authorization to list all relevant payment methods of the merchant for the payment corresponding to the client secret.
   * Note, this is equivalent to the other <code>listAllPaymentMethodsForAMerchant</code> that receives the query parameters as a map,
   * but this one also exposes the Http response headers
               * @param accountId The unique identifier for the merchant account (required)
@@ -385,7 +273,7 @@ public interface PaymentMethodsApi extends HsApiClient.Api {
       *   <ul>
           *   <li>acceptedCountry - The two-letter ISO currency code (required)</li>
           *   <li>minimumAmount - The minimum amount accepted for processing by the particular payment method. (required)</li>
-          *   <li>maximumAmount - The maximum amount amount accepted for processing by the particular payment method. (required)</li>
+          *   <li>maximumAmount - The maximum amount accepted for processing by the particular payment method. (required)</li>
           *   <li>recurringPaymentEnabled - Indicates whether the payment method is eligible for recurring payments (required)</li>
           *   <li>installmentPaymentEnabled - Indicates whether the payment method is eligible for installment payments (required)</li>
       *   </ul>
@@ -426,8 +314,129 @@ public interface PaymentMethodsApi extends HsApiClient.Api {
   }
 
   /**
+   * List customer saved payment methods for a Payment
+   * Lists all the applicable payment methods for a particular payment tied to the &#x60;client_secret&#x60;.
+   * @param clientSecret A secret known only to your client and the authorization server. Used for client side authentication (required)
+   * @param customerId The unique identifier for the customer account (required)
+   * @param acceptedCountry The two-letter ISO currency code (required)
+   * @param acceptedCurrency The three-letter ISO currency code (required)
+   * @param minimumAmount The minimum amount accepted for processing by the particular payment method. (required)
+   * @param maximumAmount The maximum amount accepted for processing by the particular payment method. (required)
+   * @param recurringPaymentEnabled Indicates whether the payment method is eligible for recurring payments (required)
+   * @param installmentPaymentEnabled Indicates whether the payment method is eligible for installment payments (required)
+   * @return CustomerPaymentMethodsListResponse
+   */
+  @RequestLine("GET /customers/payment_methods?accepted_country={acceptedCountry}&minimum_amount={minimumAmount}&maximum_amount={maximumAmount}&recurring_payment_enabled={recurringPaymentEnabled}&installment_payment_enabled={installmentPaymentEnabled}")
+  @Headers({
+    "Accept: application/json",
+  })
+  CustomerPaymentMethodsListResponse listCustomerPaymentMethods(@Param("clientSecret") String clientSecret, @Param("customerId") String customerId, @Param("acceptedCountry") List<String> acceptedCountry, @Param("acceptedCurrency") List<Currency> acceptedCurrency, @Param("minimumAmount") Long minimumAmount, @Param("maximumAmount") Long maximumAmount, @Param("recurringPaymentEnabled") Boolean recurringPaymentEnabled, @Param("installmentPaymentEnabled") Boolean installmentPaymentEnabled);
+
+  /**
+   * List customer saved payment methods for a Payment
+   * Similar to <code>listCustomerPaymentMethods</code> but it also returns the http response headers .
+   * Lists all the applicable payment methods for a particular payment tied to the &#x60;client_secret&#x60;.
+   * @param clientSecret A secret known only to your client and the authorization server. Used for client side authentication (required)
+   * @param customerId The unique identifier for the customer account (required)
+   * @param acceptedCountry The two-letter ISO currency code (required)
+   * @param acceptedCurrency The three-letter ISO currency code (required)
+   * @param minimumAmount The minimum amount accepted for processing by the particular payment method. (required)
+   * @param maximumAmount The maximum amount accepted for processing by the particular payment method. (required)
+   * @param recurringPaymentEnabled Indicates whether the payment method is eligible for recurring payments (required)
+   * @param installmentPaymentEnabled Indicates whether the payment method is eligible for installment payments (required)
+   * @return A ApiResponse that wraps the response boyd and the http headers.
+   */
+  @RequestLine("GET /customers/payment_methods?accepted_country={acceptedCountry}&minimum_amount={minimumAmount}&maximum_amount={maximumAmount}&recurring_payment_enabled={recurringPaymentEnabled}&installment_payment_enabled={installmentPaymentEnabled}")
+  @Headers({
+    "Accept: application/json",
+  })
+  ApiResponse<CustomerPaymentMethodsListResponse> listCustomerPaymentMethodsWithHttpInfo(@Param("clientSecret") String clientSecret, @Param("customerId") String customerId, @Param("acceptedCountry") List<String> acceptedCountry, @Param("acceptedCurrency") List<Currency> acceptedCurrency, @Param("minimumAmount") Long minimumAmount, @Param("maximumAmount") Long maximumAmount, @Param("recurringPaymentEnabled") Boolean recurringPaymentEnabled, @Param("installmentPaymentEnabled") Boolean installmentPaymentEnabled);
+
+
+  /**
+   * List customer saved payment methods for a Payment
+   * Lists all the applicable payment methods for a particular payment tied to the &#x60;client_secret&#x60;.
+   * Note, this is equivalent to the other <code>listCustomerPaymentMethods</code> method,
+   * but with the query parameters collected into a single Map parameter. This
+   * is convenient for services with optional query parameters, especially when
+   * used with the {@link ListCustomerPaymentMethodsQueryParams} class that allows for
+   * building up this map in a fluent style.
+   * @param clientSecret A secret known only to your client and the authorization server. Used for client side authentication (required)
+   * @param customerId The unique identifier for the customer account (required)
+   * @param acceptedCurrency The three-letter ISO currency code (required)
+   * @param queryParams Map of query parameters as name-value pairs
+   *   <p>The following elements may be specified in the query map:</p>
+   *   <ul>
+   *   <li>acceptedCountry - The two-letter ISO currency code (required)</li>
+   *   <li>minimumAmount - The minimum amount accepted for processing by the particular payment method. (required)</li>
+   *   <li>maximumAmount - The maximum amount accepted for processing by the particular payment method. (required)</li>
+   *   <li>recurringPaymentEnabled - Indicates whether the payment method is eligible for recurring payments (required)</li>
+   *   <li>installmentPaymentEnabled - Indicates whether the payment method is eligible for installment payments (required)</li>
+   *   </ul>
+   * @return CustomerPaymentMethodsListResponse
+   */
+  @RequestLine("GET /customers/payment_methods?accepted_country={acceptedCountry}&minimum_amount={minimumAmount}&maximum_amount={maximumAmount}&recurring_payment_enabled={recurringPaymentEnabled}&installment_payment_enabled={installmentPaymentEnabled}")
+  @Headers({
+  "Accept: application/json",
+  })
+  CustomerPaymentMethodsListResponse listCustomerPaymentMethods(@Param("clientSecret") String clientSecret, @Param("customerId") String customerId, @Param("acceptedCurrency") List<Currency> acceptedCurrency, @QueryMap(encoded=true) ListCustomerPaymentMethodsQueryParams queryParams);
+
+  /**
+  * List customer saved payment methods for a Payment
+  * Lists all the applicable payment methods for a particular payment tied to the &#x60;client_secret&#x60;.
+  * Note, this is equivalent to the other <code>listCustomerPaymentMethods</code> that receives the query parameters as a map,
+  * but this one also exposes the Http response headers
+              * @param clientSecret A secret known only to your client and the authorization server. Used for client side authentication (required)
+              * @param customerId The unique identifier for the customer account (required)
+              * @param acceptedCurrency The three-letter ISO currency code (required)
+      * @param queryParams Map of query parameters as name-value pairs
+      *   <p>The following elements may be specified in the query map:</p>
+      *   <ul>
+          *   <li>acceptedCountry - The two-letter ISO currency code (required)</li>
+          *   <li>minimumAmount - The minimum amount accepted for processing by the particular payment method. (required)</li>
+          *   <li>maximumAmount - The maximum amount accepted for processing by the particular payment method. (required)</li>
+          *   <li>recurringPaymentEnabled - Indicates whether the payment method is eligible for recurring payments (required)</li>
+          *   <li>installmentPaymentEnabled - Indicates whether the payment method is eligible for installment payments (required)</li>
+      *   </ul>
+          * @return CustomerPaymentMethodsListResponse
+      */
+      @RequestLine("GET /customers/payment_methods?accepted_country={acceptedCountry}&minimum_amount={minimumAmount}&maximum_amount={maximumAmount}&recurring_payment_enabled={recurringPaymentEnabled}&installment_payment_enabled={installmentPaymentEnabled}")
+      @Headers({
+    "Accept: application/json",
+      })
+   ApiResponse<CustomerPaymentMethodsListResponse> listCustomerPaymentMethodsWithHttpInfo(@Param("clientSecret") String clientSecret, @Param("customerId") String customerId, @Param("acceptedCurrency") List<Currency> acceptedCurrency, @QueryMap(encoded=true) ListCustomerPaymentMethodsQueryParams queryParams);
+
+
+   /**
+   * A convenience class for generating query parameters for the
+   * <code>listCustomerPaymentMethods</code> method in a fluent style.
+   */
+  public static class ListCustomerPaymentMethodsQueryParams extends HashMap<String, Object> {
+    public ListCustomerPaymentMethodsQueryParams acceptedCountry(final List<String> value) {
+      put("accepted_country", EncodingUtils.encodeCollection(value, "multi"));
+      return this;
+    }
+    public ListCustomerPaymentMethodsQueryParams minimumAmount(final Long value) {
+      put("minimum_amount", EncodingUtils.encode(value));
+      return this;
+    }
+    public ListCustomerPaymentMethodsQueryParams maximumAmount(final Long value) {
+      put("maximum_amount", EncodingUtils.encode(value));
+      return this;
+    }
+    public ListCustomerPaymentMethodsQueryParams recurringPaymentEnabled(final Boolean value) {
+      put("recurring_payment_enabled", EncodingUtils.encode(value));
+      return this;
+    }
+    public ListCustomerPaymentMethodsQueryParams installmentPaymentEnabled(final Boolean value) {
+      put("installment_payment_enabled", EncodingUtils.encode(value));
+      return this;
+    }
+  }
+
+  /**
    * Payment Method - Retrieve
-   * Payment Method - Retrieve  To retrieve a payment method
+   * Retrieves a payment method of a customer.
    * @param methodId The unique identifier for the Payment Method (required)
    * @return PaymentMethodResponse
    */
@@ -440,7 +449,7 @@ public interface PaymentMethodsApi extends HsApiClient.Api {
   /**
    * Payment Method - Retrieve
    * Similar to <code>retrieveAPaymentMethod</code> but it also returns the http response headers .
-   * Payment Method - Retrieve  To retrieve a payment method
+   * Retrieves a payment method of a customer.
    * @param methodId The unique identifier for the Payment Method (required)
    * @return A ApiResponse that wraps the response boyd and the http headers.
    */
@@ -453,13 +462,42 @@ public interface PaymentMethodsApi extends HsApiClient.Api {
 
 
   /**
+   * Payment Method - Set Default Payment Method for Customer
+   * Set the Payment Method as Default for the Customer.
+   * @param customerId The unique identifier for the Customer (required)
+   * @param paymentMethodId The unique identifier for the Payment Method (required)
+   * @return CustomerDefaultPaymentMethodResponse
+   */
+  @RequestLine("GET /{customerId}/payment_methods/{paymentMethodId}/default")
+  @Headers({
+    "Accept: application/json",
+  })
+  CustomerDefaultPaymentMethodResponse setThePaymentMethodAsDefault(@Param("customerId") String customerId, @Param("paymentMethodId") String paymentMethodId);
+
+  /**
+   * Payment Method - Set Default Payment Method for Customer
+   * Similar to <code>setThePaymentMethodAsDefault</code> but it also returns the http response headers .
+   * Set the Payment Method as Default for the Customer.
+   * @param customerId The unique identifier for the Customer (required)
+   * @param paymentMethodId The unique identifier for the Payment Method (required)
+   * @return A ApiResponse that wraps the response boyd and the http headers.
+   */
+  @RequestLine("GET /{customerId}/payment_methods/{paymentMethodId}/default")
+  @Headers({
+    "Accept: application/json",
+  })
+  ApiResponse<CustomerDefaultPaymentMethodResponse> setThePaymentMethodAsDefaultWithHttpInfo(@Param("customerId") String customerId, @Param("paymentMethodId") String paymentMethodId);
+
+
+
+  /**
    * Payment Method - Update
-   * Payment Method - Update  To update an existing payment method attached to a customer object. This API is useful for use cases such as updating the card number for expired cards to prevent discontinuity in recurring payments
+   * Update an existing payment method of a customer. This API is useful for use cases such as updating the card number for expired cards to prevent discontinuity in recurring payments.
    * @param methodId The unique identifier for the Payment Method (required)
    * @param paymentMethodUpdate  (required)
    * @return PaymentMethodResponse
    */
-  @RequestLine("POST /payment_methods/{methodId}")
+  @RequestLine("POST /payment_methods/{methodId}/update")
   @Headers({
     "Content-Type: application/json",
     "Accept: application/json",
@@ -469,12 +507,12 @@ public interface PaymentMethodsApi extends HsApiClient.Api {
   /**
    * Payment Method - Update
    * Similar to <code>updateAPaymentMethod</code> but it also returns the http response headers .
-   * Payment Method - Update  To update an existing payment method attached to a customer object. This API is useful for use cases such as updating the card number for expired cards to prevent discontinuity in recurring payments
+   * Update an existing payment method of a customer. This API is useful for use cases such as updating the card number for expired cards to prevent discontinuity in recurring payments.
    * @param methodId The unique identifier for the Payment Method (required)
    * @param paymentMethodUpdate  (required)
    * @return A ApiResponse that wraps the response boyd and the http headers.
    */
-  @RequestLine("POST /payment_methods/{methodId}")
+  @RequestLine("POST /payment_methods/{methodId}/update")
   @Headers({
     "Content-Type: application/json",
     "Accept: application/json",

@@ -1,6 +1,6 @@
 package com.hyperswitch.client.api;
 
-import com.hyperswitch.client.HsApiClient;
+import com.hyperswitch.client.ApiClient;
 import com.hyperswitch.client.model.GsmCreateRequest;
 import com.hyperswitch.client.model.GsmDeleteRequest;
 import com.hyperswitch.client.model.GsmDeleteResponse;
@@ -26,14 +26,14 @@ class GsmApiTest {
 
     @BeforeEach
     public void setup() {
-        api = new HsApiClient().buildClient(GsmApi.class);
+        api = new ApiClient().buildClient(GsmApi.class);
     }
 
     
     /**
      * Gsm - Create
      *
-     * Gsm - Create  To create a Gsm Rule
+     * Creates a GSM (Global Status Mapping) Rule. A GSM rule is used to map a connector&#39;s error message/error code combination during a particular payments flow/sub-flow to Hyperswitch&#39;s unified status/error code/error message combination. It is also used to decide the next action in the flow - retry/requeue/do_default
      */
     @Test
     void createGsmRuleTest() {
@@ -47,7 +47,7 @@ class GsmApiTest {
     /**
      * Gsm - Delete
      *
-     * Gsm - Delete  To delete a Gsm Rule
+     * Deletes a Gsm Rule
      */
     @Test
     void deleteGsmRuleTest() {
@@ -61,7 +61,7 @@ class GsmApiTest {
     /**
      * Gsm - Get
      *
-     * Gsm - Get  To get a Gsm Rule
+     * Retrieves a Gsm Rule
      */
     @Test
     void retrieveGsmRuleTest() {
@@ -75,7 +75,7 @@ class GsmApiTest {
     /**
      * Gsm - Update
      *
-     * Gsm - Update  To update a Gsm Rule
+     * Updates a Gsm Rule
      */
     @Test
     void updateGsmRuleTest() {

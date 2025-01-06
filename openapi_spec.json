@@ -918,6 +918,17 @@
         ],
         "summary": "Payments - Post Session Tokens",
         "operationId": "Create Post Session Tokens for a Payment",
+        "parameters": [
+          {
+            "name": "payment_id",
+            "in": "path",
+            "description": "The unique identifier for the payment",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
         "requestBody": {
           "content": {
             "application/json": {
@@ -1577,6 +1588,17 @@
         "summary": "Merchant Connector - Create",
         "description": "Creates a new Merchant Connector for the merchant account. The connector could be a payment processor/facilitator/acquirer or a provider of specialized services like Fraud/Accounting etc.",
         "operationId": "Create a Merchant Connector",
+        "parameters": [
+          {
+            "name": "account_id",
+            "in": "path",
+            "description": "The unique identifier for the merchant account",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
         "requestBody": {
           "content": {
             "application/json": {
@@ -2128,6 +2150,17 @@
         "summary": "Mandates - Customer Mandates List",
         "description": "Lists all the mandates for a particular customer id.",
         "operationId": "List Mandates for a Customer",
+        "parameters": [
+          {
+            "name": "customer_id",
+            "in": "path",
+            "description": "The unique identifier for the customer",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
         "responses": {
           "200": {
             "description": "List of retrieved mandates for a customer",
@@ -2652,7 +2685,7 @@
         ],
         "summary": "List customer saved payment methods for a Payment",
         "description": "Lists all the applicable payment methods for a particular payment tied to the `client_secret`.",
-        "operationId": "List all Payment Methods for a Customer",
+        "operationId": "List Customer Payment Methods",
         "parameters": [
           {
             "name": "client-secret",
@@ -5740,9 +5773,7 @@
             "$ref": "#/components/schemas/NoThirdPartySdkSessionResponse"
           },
           {
-            "type": "object",
-            "default": null,
-            "nullable": true
+            "type": "null"
           }
         ]
       },

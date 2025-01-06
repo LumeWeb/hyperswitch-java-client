@@ -9,7 +9,6 @@ import com.hyperswitch.client.model.PaymentsCaptureRequest;
 import com.hyperswitch.client.model.PaymentsCompleteAuthorizeRequest;
 import com.hyperswitch.client.model.PaymentsConfirmRequest;
 import com.hyperswitch.client.model.PaymentsCreateRequest;
-import com.hyperswitch.client.model.PaymentsCreateResponseOpenApi;
 import com.hyperswitch.client.model.PaymentsExternalAuthenticationRequest;
 import com.hyperswitch.client.model.PaymentsExternalAuthenticationResponse;
 import com.hyperswitch.client.model.PaymentsIncrementalAuthorizationRequest;
@@ -112,7 +111,7 @@ class PaymentsApiTest {
     @Test
     void createAPaymentTest() {
         PaymentsCreateRequest paymentsCreateRequest = null;
-        // PaymentsCreateResponseOpenApi response = api.createAPayment(paymentsCreateRequest);
+        // PaymentsResponse response = api.createAPayment(paymentsCreateRequest);
 
         // TODO: test validations
     }

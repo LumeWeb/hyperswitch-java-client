@@ -12,7 +12,6 @@ import com.hyperswitch.client.model.PaymentsCaptureRequest;
 import com.hyperswitch.client.model.PaymentsCompleteAuthorizeRequest;
 import com.hyperswitch.client.model.PaymentsConfirmRequest;
 import com.hyperswitch.client.model.PaymentsCreateRequest;
-import com.hyperswitch.client.model.PaymentsCreateResponseOpenApi;
 import com.hyperswitch.client.model.PaymentsExternalAuthenticationRequest;
 import com.hyperswitch.client.model.PaymentsExternalAuthenticationResponse;
 import com.hyperswitch.client.model.PaymentsIncrementalAuthorizationRequest;
@@ -161,14 +160,14 @@ public interface PaymentsApi extends ApiClient.Api {
    * Payments - Create
    * **Creates a payment object when amount and currency are passed.**  This API is also used to create a mandate by passing the &#x60;mandate_object&#x60;.  Depending on the user journey you wish to achieve, you may opt to complete all the steps in a single request **by attaching a payment method, setting &#x60;confirm&#x3D;true&#x60; and &#x60;capture_method &#x3D; automatic&#x60;** in the *Payments/Create API* request.  Otherwise, To completely process a payment you will have to **create a payment, attach a payment method, confirm and capture funds**. For that you could use the following sequence of API requests -  1. Payments - Create  2. Payments - Update  3. Payments - Confirm  4. Payments - Capture.  You will require the &#39;API - Key&#39; from the Hyperswitch dashboard to make the first call, and use the &#39;client secret&#39; returned in this API along with your &#39;publishable key&#39; to make subsequent API calls from your client.  This page lists the various combinations in which the Payments - Create API can be used and the details about the various fields in the requests and responses.
    * @param paymentsCreateRequest  (required)
-   * @return PaymentsCreateResponseOpenApi
+   * @return PaymentsResponse
    */
   @RequestLine("POST /payments")
   @Headers({
     "Content-Type: application/json",
     "Accept: application/json",
   })
-  PaymentsCreateResponseOpenApi createAPayment(PaymentsCreateRequest paymentsCreateRequest);
+  PaymentsResponse createAPayment(PaymentsCreateRequest paymentsCreateRequest);
 
   /**
    * Payments - Create
@@ -182,7 +181,7 @@ public interface PaymentsApi extends ApiClient.Api {
     "Content-Type: application/json",
     "Accept: application/json",
   })
-  ApiResponse<PaymentsCreateResponseOpenApi> createAPaymentWithHttpInfo(PaymentsCreateRequest paymentsCreateRequest);
+  ApiResponse<PaymentsResponse> createAPaymentWithHttpInfo(PaymentsCreateRequest paymentsCreateRequest);
 
 
 

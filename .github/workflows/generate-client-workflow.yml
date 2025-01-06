@@ -1,14 +1,22 @@
 name: Generate OpenAPI Client
 
 on:
+    # Keep existing PR trigger
     pull_request:
         types: [closed]
         paths:
             - 'openapi_spec.json'
+    # Add manual trigger
+    workflow_dispatch:
+        inputs:
+            skip_validation:
+                description: 'Skip OpenAPI validation'
+                type: boolean
+                default: false
 
 jobs:
     generate-client:
-        if: github.event.pull_request.merged == true
+        if: github.event.pull_request.merged == true || github.event_name == 'workflow_dispatch'
         runs-on: ubuntu-latest
         permissions:
             contents: write
@@ -18,10 +26,18 @@ jobs:
             - uses: actions/checkout@v3
               with:
                   ref: main
-              name: Remove Existing Version
-            - run: |
 
-                rm -rf ./src/*
+            - name: Validate OpenAPI spec
+              if: inputs.skip_validation != true
+              id: validate-spec
+              continue-on-error: true
+              run: |
+                  docker run --rm -v "${PWD}:/local" openapitools/openapi-generator-cli validate \
+                    -i /local/openapi_spec.json
+
+            - name: Remove Existing Version
+              run: |
+                  rm -rf ./src/*
 
             - name: Generate Java Client
               uses: openapi-generators/openapitools-generator-action@v1
@@ -48,7 +64,7 @@ jobs:
                   body: |
                       Automated PR to update Java client from latest OpenAPI specification.
 
-                      Generated from OpenAPI spec version in PR #${{ github.event.pull_request.number }}
+                      ${{ github.event_name == 'pull_request' && format('Generated from OpenAPI spec version in PR #{0}', github.event.pull_request.number) || 'Generated via manual workflow trigger' }}
                   branch: chore/client-update
                   branch-suffix: timestamp
                   delete-branch: true

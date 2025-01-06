@@ -62,7 +62,7 @@ public class RefundRequest {
   private JsonNullable<String> reason = JsonNullable.<String>undefined();
 
   public static final String JSON_PROPERTY_REFUND_TYPE = "refund_type";
-  private JsonNullable<RefundType> refundType = JsonNullable.<RefundType>of(Instant);
+  private JsonNullable<RefundType> refundType = JsonNullable.<RefundType>of(RefundType.INSTANT);
 
   public static final String JSON_PROPERTY_METADATA = "metadata";
   private JsonNullable<Object> metadata = JsonNullable.<Object>undefined();

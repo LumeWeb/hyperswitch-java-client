@@ -1,0 +1,74 @@
+name: Fix OpenAPI Spec
+
+on:
+    workflow_dispatch:
+        inputs:
+            spec_version:
+                description: 'Version of spec to revert to (tag or commit SHA)'
+                required: true
+            fix_description:
+                description: 'Description of the fix being made'
+                required: true
+
+jobs:
+    fix-spec:
+        runs-on: ubuntu-latest
+        permissions:
+            contents: write
+            pull-requests: write
+
+        steps:
+            - uses: actions/checkout@v3
+              with:
+                  fetch-depth: 0
+
+            - name: Fetch specific spec version
+              run: |
+                  # Fetch the specified version of the spec
+                  git fetch origin ${{ github.event.inputs.spec_version }}
+                  git checkout ${{ github.event.inputs.spec_version }} -- openapi_spec.json
+
+            - name: Validate OpenAPI spec
+              id: validate-spec
+              continue-on-error: true
+              run: |
+                  touch validation_output.txt
+                  docker run --rm -v "${PWD}:/local" openapitools/openapi-generator-cli validate \
+                    -i /local/openapi_spec.json 2>&1 | tee validation_output.txt
+
+                  echo "exit_code=${PIPESTATUS[0]}" >> $GITHUB_OUTPUT
+
+                  VALIDATION_OUTPUT=$(cat validation_output.txt)
+                  echo "validation_output<<EOF" >> $GITHUB_OUTPUT
+                  echo "$VALIDATION_OUTPUT" >> $GITHUB_OUTPUT
+                  echo "EOF" >> $GITHUB_OUTPUT
+
+            - name: Create Fix PR
+              uses: peter-evans/create-pull-request@v5
+              with:
+                  token: ${{ secrets.GITHUB_TOKEN }}
+                  commit-message: "fix: revert and fix OpenAPI specification"
+                  title: "fix: OpenAPI specification fixes"
+                  body: |
+                      Fix PR for OpenAPI specification.
+
+                      ### Changes
+                      - Reverted to spec version: ${{ github.event.inputs.spec_version }}
+                      - Fix description: ${{ github.event.inputs.fix_description }}
+
+                      ### Validation Status
+                      ${{ steps.validate-spec.outputs.exit_code == '0' && '✅ Validation passed' || '⚠️ Validation warnings' }}
+
+                      <details>
+                      <summary>Validation Details</summary>
+
+                      ```
+                      ${{ steps.validate-spec.outputs.validation_output }}
+                      ```
+                      </details>
+                  branch: fix/openapi-spec
+                  branch-suffix: timestamp
+                  delete-branch: true
+                  labels: |
+                      openapi-fix
+                      automated pr

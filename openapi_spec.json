@@ -22401,7 +22401,7 @@
                 "$ref": "#/components/schemas/RefundType"
               }
             ],
-            "default": "Instant",
+            "default": "instant",
             "nullable": true
           },
           "metadata": {

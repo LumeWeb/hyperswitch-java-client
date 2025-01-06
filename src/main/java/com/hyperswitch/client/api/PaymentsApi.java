@@ -131,14 +131,14 @@ public interface PaymentsApi extends ApiClient.Api {
    * **Use this API to confirm the payment and forward the payment to the payment processor.**  Alternatively you can confirm the payment within the *Payments/Create* API by setting &#x60;confirm&#x3D;true&#x60;. After confirmation, the payment could either:  1. fail with &#x60;failed&#x60; status or  2. transition to a &#x60;requires_customer_action&#x60; status with a &#x60;next_action&#x60; block or  3. succeed with either &#x60;succeeded&#x60; in case of automatic capture or &#x60;requires_capture&#x60; in case of manual capture
    * @param paymentId The identifier for payment (required)
    * @param paymentsConfirmRequest  (required)
-   * @return PaymentsCreateResponseOpenApi
+   * @return PaymentsResponse
    */
   @RequestLine("POST /payments/{paymentId}/confirm")
   @Headers({
     "Content-Type: application/json",
     "Accept: application/json",
   })
-  PaymentsCreateResponseOpenApi confirmAPayment(@Param("paymentId") String paymentId, PaymentsConfirmRequest paymentsConfirmRequest);
+  PaymentsResponse confirmAPayment(@Param("paymentId") String paymentId, PaymentsConfirmRequest paymentsConfirmRequest);
 
   /**
    * Payments - Confirm
@@ -153,7 +153,7 @@ public interface PaymentsApi extends ApiClient.Api {
     "Content-Type: application/json",
     "Accept: application/json",
   })
-  ApiResponse<PaymentsCreateResponseOpenApi> confirmAPaymentWithHttpInfo(@Param("paymentId") String paymentId, PaymentsConfirmRequest paymentsConfirmRequest);
+  ApiResponse<PaymentsResponse> confirmAPaymentWithHttpInfo(@Param("paymentId") String paymentId, PaymentsConfirmRequest paymentsConfirmRequest);
 
 
 
@@ -516,14 +516,14 @@ public interface PaymentsApi extends ApiClient.Api {
    * To update the properties of a *PaymentIntent* object. This may include attaching a payment method, or attaching customer object or metadata fields after the Payment is created
    * @param paymentId The identifier for payment (required)
    * @param paymentsUpdateRequest  (required)
-   * @return PaymentsCreateResponseOpenApi
+   * @return PaymentsResponse
    */
   @RequestLine("POST /payments/{paymentId}")
   @Headers({
     "Content-Type: application/json",
     "Accept: application/json",
   })
-  PaymentsCreateResponseOpenApi updateAPayment(@Param("paymentId") String paymentId, PaymentsUpdateRequest paymentsUpdateRequest);
+  PaymentsResponse updateAPayment(@Param("paymentId") String paymentId, PaymentsUpdateRequest paymentsUpdateRequest);
 
   /**
    * Payments - Update
@@ -538,7 +538,7 @@ public interface PaymentsApi extends ApiClient.Api {
     "Content-Type: application/json",
     "Accept: application/json",
   })
-  ApiResponse<PaymentsCreateResponseOpenApi> updateAPaymentWithHttpInfo(@Param("paymentId") String paymentId, PaymentsUpdateRequest paymentsUpdateRequest);
+  ApiResponse<PaymentsResponse> updateAPaymentWithHttpInfo(@Param("paymentId") String paymentId, PaymentsUpdateRequest paymentsUpdateRequest);
 
 
 }

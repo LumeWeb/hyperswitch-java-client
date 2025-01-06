@@ -98,7 +98,7 @@ class PaymentsApiTest {
     void confirmAPaymentTest() {
         String paymentId = null;
         PaymentsConfirmRequest paymentsConfirmRequest = null;
-        // PaymentsCreateResponseOpenApi response = api.confirmAPayment(paymentId, paymentsConfirmRequest);
+        // PaymentsResponse response = api.confirmAPayment(paymentId, paymentsConfirmRequest);
 
         // TODO: test validations
     }
@@ -262,7 +262,7 @@ class PaymentsApiTest {
     void updateAPaymentTest() {
         String paymentId = null;
         PaymentsUpdateRequest paymentsUpdateRequest = null;
-        // PaymentsCreateResponseOpenApi response = api.updateAPayment(paymentId, paymentsUpdateRequest);
+        // PaymentsResponse response = api.updateAPayment(paymentId, paymentsUpdateRequest);
 
         // TODO: test validations
     }

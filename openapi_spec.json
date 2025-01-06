@@ -278,7 +278,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/PaymentsCreateResponseOpenApi"
+                  "$ref": "#/components/schemas/PaymentsResponse"
                 }
               }
             }
@@ -409,7 +409,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/PaymentsCreateResponseOpenApi"
+                  "$ref": "#/components/schemas/PaymentsResponse"
                 }
               }
             }

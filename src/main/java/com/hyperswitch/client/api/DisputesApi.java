@@ -1,6 +1,6 @@
 package com.hyperswitch.client.api;
 
-import com.hyperswitch.client.HsApiClient;
+import com.hyperswitch.client.ApiClient;
 import com.hyperswitch.client.EncodingUtils;
 import com.hyperswitch.client.model.ApiResponse;
 
@@ -15,13 +15,13 @@ import java.util.List;
 import java.util.Map;
 import feign.*;
 
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-01-28T20:00:07.865622+05:30[Asia/Kolkata]")
-public interface DisputesApi extends HsApiClient.Api {
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+public interface DisputesApi extends ApiClient.Api {
 
 
   /**
    * Disputes - List Disputes
-   * Disputes - List Disputes
+   * Lists all the Disputes for a merchant
    * @param limit The maximum number of Dispute Objects to include in the response (optional)
    * @param disputeStatus The status of dispute (optional)
    * @param disputeStage The stage of dispute (optional)
@@ -43,7 +43,7 @@ public interface DisputesApi extends HsApiClient.Api {
   /**
    * Disputes - List Disputes
    * Similar to <code>listDisputes</code> but it also returns the http response headers .
-   * Disputes - List Disputes
+   * Lists all the Disputes for a merchant
    * @param limit The maximum number of Dispute Objects to include in the response (optional)
    * @param disputeStatus The status of dispute (optional)
    * @param disputeStage The stage of dispute (optional)
@@ -65,7 +65,7 @@ public interface DisputesApi extends HsApiClient.Api {
 
   /**
    * Disputes - List Disputes
-   * Disputes - List Disputes
+   * Lists all the Disputes for a merchant
    * Note, this is equivalent to the other <code>listDisputes</code> method,
    * but with the query parameters collected into a single Map parameter. This
    * is convenient for services with optional query parameters, especially when
@@ -95,7 +95,7 @@ public interface DisputesApi extends HsApiClient.Api {
 
   /**
   * Disputes - List Disputes
-  * Disputes - List Disputes
+  * Lists all the Disputes for a merchant
   * Note, this is equivalent to the other <code>listDisputes</code> that receives the query parameters as a map,
   * but this one also exposes the Http response headers
       * @param queryParams Map of query parameters as name-value pairs
@@ -170,7 +170,7 @@ public interface DisputesApi extends HsApiClient.Api {
 
   /**
    * Disputes - Retrieve Dispute
-   * Disputes - Retrieve Dispute
+   * Retrieves a dispute
    * @param disputeId The identifier for dispute (required)
    * @return DisputeResponse
    */
@@ -183,7 +183,7 @@ public interface DisputesApi extends HsApiClient.Api {
   /**
    * Disputes - Retrieve Dispute
    * Similar to <code>retrieveADispute</code> but it also returns the http response headers .
-   * Disputes - Retrieve Dispute
+   * Retrieves a dispute
    * @param disputeId The identifier for dispute (required)
    * @return A ApiResponse that wraps the response boyd and the http headers.
    */

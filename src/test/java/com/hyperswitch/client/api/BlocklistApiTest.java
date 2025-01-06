@@ -1,9 +1,10 @@
 package com.hyperswitch.client.api;
 
-import com.hyperswitch.client.HsApiClient;
+import com.hyperswitch.client.ApiClient;
 import com.hyperswitch.client.model.BlocklistDataKind;
 import com.hyperswitch.client.model.BlocklistRequest;
 import com.hyperswitch.client.model.BlocklistResponse;
+import com.hyperswitch.client.model.ToggleBlocklistResponse;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.BeforeEach;
 
@@ -23,7 +24,7 @@ class BlocklistApiTest {
 
     @BeforeEach
     public void setup() {
-        api = new HsApiClient().buildClient(BlocklistApi.class);
+        api = new ApiClient().buildClient(BlocklistApi.class);
     }
 
     
@@ -67,6 +68,36 @@ class BlocklistApiTest {
         BlocklistApi.ListBlockedFingerprintsOfAParticularKindQueryParams queryParams = new BlocklistApi.ListBlockedFingerprintsOfAParticularKindQueryParams()
             .dataKind(null);
         // BlocklistResponse response = api.listBlockedFingerprintsOfAParticularKind(queryParams);
+
+    // TODO: test validations
+    }
+    
+    /**
+     * 
+     *
+     * 
+     */
+    @Test
+    void toggleBlocklistGuardForAParticularMerchantTest() {
+        Boolean status = null;
+        // ToggleBlocklistResponse response = api.toggleBlocklistGuardForAParticularMerchant(status);
+
+        // TODO: test validations
+    }
+
+    /**
+     * 
+     *
+     * 
+     *
+     * This tests the overload of the method that uses a Map for query parameters instead of
+     * listing them out individually.
+     */
+    @Test
+    void toggleBlocklistGuardForAParticularMerchantTestQueryMap() {
+        BlocklistApi.ToggleBlocklistGuardForAParticularMerchantQueryParams queryParams = new BlocklistApi.ToggleBlocklistGuardForAParticularMerchantQueryParams()
+            .status(null);
+        // ToggleBlocklistResponse response = api.toggleBlocklistGuardForAParticularMerchant(queryParams);
 
     // TODO: test validations
     }

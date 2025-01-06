@@ -1,7 +1,8 @@
 package com.hyperswitch.client.api;
 
-import com.hyperswitch.client.HsApiClient;
+import com.hyperswitch.client.ApiClient;
 import com.hyperswitch.client.model.Currency;
+import com.hyperswitch.client.model.CustomerDefaultPaymentMethodResponse;
 import com.hyperswitch.client.model.CustomerPaymentMethodsListResponse;
 import com.hyperswitch.client.model.PaymentMethodCreate;
 import com.hyperswitch.client.model.PaymentMethodDeleteResponse;
@@ -27,14 +28,14 @@ class PaymentMethodsApiTest {
 
     @BeforeEach
     public void setup() {
-        api = new HsApiClient().buildClient(PaymentMethodsApi.class);
+        api = new ApiClient().buildClient(PaymentMethodsApi.class);
     }
 
     
     /**
      * PaymentMethods - Create
      *
-     * PaymentMethods - Create  To create a payment method against a customer object. In case of cards, this API could be used only by PCI compliant merchants
+     * Creates and stores a payment method against a customer. In case of cards, this API should be used only by PCI compliant merchants.
      */
     @Test
     void createAPaymentMethodTest() {
@@ -48,7 +49,7 @@ class PaymentMethodsApiTest {
     /**
      * Payment Method - Delete
      *
-     * Payment Method - Delete  Delete payment method
+     * Deletes a payment method of a customer.
      */
     @Test
     void deleteAPaymentMethodTest() {
@@ -62,18 +63,18 @@ class PaymentMethodsApiTest {
     /**
      * List payment methods for a Customer
      *
-     * List payment methods for a Customer  To filter and list the applicable payment methods for a particular Customer ID
+     * Lists all the applicable payment methods for a particular Customer ID.
      */
     @Test
     void listAllPaymentMethodsForACustomerTest() {
-        String clientSecret = null;
+        String customerId = null;
         List<String> acceptedCountry = null;
         List<Currency> acceptedCurrency = null;
         Long minimumAmount = null;
         Long maximumAmount = null;
         Boolean recurringPaymentEnabled = null;
         Boolean installmentPaymentEnabled = null;
-        // CustomerPaymentMethodsListResponse response = api.listAllPaymentMethodsForACustomer(clientSecret, acceptedCountry, acceptedCurrency, minimumAmount, maximumAmount, recurringPaymentEnabled, installmentPaymentEnabled);
+        // CustomerPaymentMethodsListResponse response = api.listAllPaymentMethodsForACustomer(customerId, acceptedCountry, acceptedCurrency, minimumAmount, maximumAmount, recurringPaymentEnabled, installmentPaymentEnabled);
 
         // TODO: test validations
     }
@@ -81,14 +82,14 @@ class PaymentMethodsApiTest {
     /**
      * List payment methods for a Customer
      *
-     * List payment methods for a Customer  To filter and list the applicable payment methods for a particular Customer ID
+     * Lists all the applicable payment methods for a particular Customer ID.
      *
      * This tests the overload of the method that uses a Map for query parameters instead of
      * listing them out individually.
      */
     @Test
     void listAllPaymentMethodsForACustomerTestQueryMap() {
-        String clientSecret = null;
+        String customerId = null;
         List<Currency> acceptedCurrency = null;
         PaymentMethodsApi.ListAllPaymentMethodsForACustomerQueryParams queryParams = new PaymentMethodsApi.ListAllPaymentMethodsForACustomerQueryParams()
             .acceptedCountry(null)
@@ -96,47 +97,7 @@ class PaymentMethodsApiTest {
             .maximumAmount(null)
             .recurringPaymentEnabled(null)
             .installmentPaymentEnabled(null);
-        // CustomerPaymentMethodsListResponse response = api.listAllPaymentMethodsForACustomer(clientSecret, acceptedCurrency, queryParams);
-
-    // TODO: test validations
-    }
-    
-    /**
-     * List payment methods for a Customer
-     *
-     * List payment methods for a Customer  To filter and list the applicable payment methods for a particular Customer ID
-     */
-    @Test
-    void listAllPaymentMethodsForACustomer_0Test() {
-        List<String> acceptedCountry = null;
-        List<Currency> acceptedCurrency = null;
-        Long minimumAmount = null;
-        Long maximumAmount = null;
-        Boolean recurringPaymentEnabled = null;
-        Boolean installmentPaymentEnabled = null;
-        // CustomerPaymentMethodsListResponse response = api.listAllPaymentMethodsForACustomer_0(acceptedCountry, acceptedCurrency, minimumAmount, maximumAmount, recurringPaymentEnabled, installmentPaymentEnabled);
-
-        // TODO: test validations
-    }
-
-    /**
-     * List payment methods for a Customer
-     *
-     * List payment methods for a Customer  To filter and list the applicable payment methods for a particular Customer ID
-     *
-     * This tests the overload of the method that uses a Map for query parameters instead of
-     * listing them out individually.
-     */
-    @Test
-    void listAllPaymentMethodsForACustomer_0TestQueryMap() {
-        List<Currency> acceptedCurrency = null;
-        PaymentMethodsApi.ListAllPaymentMethodsForACustomer0QueryParams queryParams = new PaymentMethodsApi.ListAllPaymentMethodsForACustomer0QueryParams()
-            .acceptedCountry(null)
-            .minimumAmount(null)
-            .maximumAmount(null)
-            .recurringPaymentEnabled(null)
-            .installmentPaymentEnabled(null);
-        // CustomerPaymentMethodsListResponse response = api.listAllPaymentMethodsForACustomer_0(acceptedCurrency, queryParams);
+        // CustomerPaymentMethodsListResponse response = api.listAllPaymentMethodsForACustomer(customerId, acceptedCurrency, queryParams);
 
     // TODO: test validations
     }
@@ -144,7 +105,7 @@ class PaymentMethodsApiTest {
     /**
      * List payment methods for a Merchant
      *
-     * List payment methods for a Merchant  To filter and list the applicable payment methods for a particular Merchant ID
+     * Lists the applicable payment methods for a particular Merchant ID. Use the client secret and publishable key authorization to list all relevant payment methods of the merchant for the payment corresponding to the client secret.
      */
     @Test
     void listAllPaymentMethodsForAMerchantTest() {
@@ -163,7 +124,7 @@ class PaymentMethodsApiTest {
     /**
      * List payment methods for a Merchant
      *
-     * List payment methods for a Merchant  To filter and list the applicable payment methods for a particular Merchant ID
+     * Lists the applicable payment methods for a particular Merchant ID. Use the client secret and publishable key authorization to list all relevant payment methods of the merchant for the payment corresponding to the client secret.
      *
      * This tests the overload of the method that uses a Map for query parameters instead of
      * listing them out individually.
@@ -184,9 +145,53 @@ class PaymentMethodsApiTest {
     }
     
     /**
+     * List customer saved payment methods for a Payment
+     *
+     * Lists all the applicable payment methods for a particular payment tied to the &#x60;client_secret&#x60;.
+     */
+    @Test
+    void listCustomerPaymentMethodsTest() {
+        String clientSecret = null;
+        String customerId = null;
+        List<String> acceptedCountry = null;
+        List<Currency> acceptedCurrency = null;
+        Long minimumAmount = null;
+        Long maximumAmount = null;
+        Boolean recurringPaymentEnabled = null;
+        Boolean installmentPaymentEnabled = null;
+        // CustomerPaymentMethodsListResponse response = api.listCustomerPaymentMethods(clientSecret, customerId, acceptedCountry, acceptedCurrency, minimumAmount, maximumAmount, recurringPaymentEnabled, installmentPaymentEnabled);
+
+        // TODO: test validations
+    }
+
+    /**
+     * List customer saved payment methods for a Payment
+     *
+     * Lists all the applicable payment methods for a particular payment tied to the &#x60;client_secret&#x60;.
+     *
+     * This tests the overload of the method that uses a Map for query parameters instead of
+     * listing them out individually.
+     */
+    @Test
+    void listCustomerPaymentMethodsTestQueryMap() {
+        String clientSecret = null;
+        String customerId = null;
+        List<Currency> acceptedCurrency = null;
+        PaymentMethodsApi.ListCustomerPaymentMethodsQueryParams queryParams = new PaymentMethodsApi.ListCustomerPaymentMethodsQueryParams()
+            .acceptedCountry(null)
+            .minimumAmount(null)
+            .maximumAmount(null)
+            .recurringPaymentEnabled(null)
+            .installmentPaymentEnabled(null);
+        // CustomerPaymentMethodsListResponse response = api.listCustomerPaymentMethods(clientSecret, customerId, acceptedCurrency, queryParams);
+
+    // TODO: test validations
+    }
+    
+    /**
      * Payment Method - Retrieve
      *
-     * Payment Method - Retrieve  To retrieve a payment method
+     * Retrieves a payment method of a customer.
      */
     @Test
     void retrieveAPaymentMethodTest() {
@@ -198,9 +203,24 @@ class PaymentMethodsApiTest {
 
     
     /**
+     * Payment Method - Set Default Payment Method for Customer
+     *
+     * Set the Payment Method as Default for the Customer.
+     */
+    @Test
+    void setThePaymentMethodAsDefaultTest() {
+        String customerId = null;
+        String paymentMethodId = null;
+        // CustomerDefaultPaymentMethodResponse response = api.setThePaymentMethodAsDefault(customerId, paymentMethodId);
+
+        // TODO: test validations
+    }
+
+    
+    /**
      * Payment Method - Update
      *
-     * Payment Method - Update  To update an existing payment method attached to a customer object. This API is useful for use cases such as updating the card number for expired cards to prevent discontinuity in recurring payments
+     * Update an existing payment method of a customer. This API is useful for use cases such as updating the card number for expired cards to prevent discontinuity in recurring payments.
      */
     @Test
     void updateAPaymentMethodTest() {

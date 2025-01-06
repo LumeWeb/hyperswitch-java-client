@@ -1,12 +1,13 @@
 package com.hyperswitch.client.api;
 
-import com.hyperswitch.client.HsApiClient;
+import com.hyperswitch.client.ApiClient;
 import com.hyperswitch.client.EncodingUtils;
 import com.hyperswitch.client.model.ApiResponse;
 
 import com.hyperswitch.client.model.BlocklistDataKind;
 import com.hyperswitch.client.model.BlocklistRequest;
 import com.hyperswitch.client.model.BlocklistResponse;
+import com.hyperswitch.client.model.ToggleBlocklistResponse;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -14,8 +15,8 @@ import java.util.List;
 import java.util.Map;
 import feign.*;
 
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-01-28T20:00:07.865622+05:30[Asia/Kolkata]")
-public interface BlocklistApi extends HsApiClient.Api {
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+public interface BlocklistApi extends ApiClient.Api {
 
 
   /**
@@ -120,6 +121,83 @@ public interface BlocklistApi extends HsApiClient.Api {
   public static class ListBlockedFingerprintsOfAParticularKindQueryParams extends HashMap<String, Object> {
     public ListBlockedFingerprintsOfAParticularKindQueryParams dataKind(final BlocklistDataKind value) {
       put("data_kind", EncodingUtils.encode(value));
+      return this;
+    }
+  }
+
+  /**
+   * 
+   * 
+   * @param status Boolean value to enable/disable blocklist (required)
+   * @return ToggleBlocklistResponse
+   */
+  @RequestLine("POST /blocklist/toggle?status={status}")
+  @Headers({
+    "Accept: application/json",
+  })
+  ToggleBlocklistResponse toggleBlocklistGuardForAParticularMerchant(@Param("status") Boolean status);
+
+  /**
+   * 
+   * Similar to <code>toggleBlocklistGuardForAParticularMerchant</code> but it also returns the http response headers .
+   * 
+   * @param status Boolean value to enable/disable blocklist (required)
+   * @return A ApiResponse that wraps the response boyd and the http headers.
+   */
+  @RequestLine("POST /blocklist/toggle?status={status}")
+  @Headers({
+    "Accept: application/json",
+  })
+  ApiResponse<ToggleBlocklistResponse> toggleBlocklistGuardForAParticularMerchantWithHttpInfo(@Param("status") Boolean status);
+
+
+  /**
+   * 
+   * 
+   * Note, this is equivalent to the other <code>toggleBlocklistGuardForAParticularMerchant</code> method,
+   * but with the query parameters collected into a single Map parameter. This
+   * is convenient for services with optional query parameters, especially when
+   * used with the {@link ToggleBlocklistGuardForAParticularMerchantQueryParams} class that allows for
+   * building up this map in a fluent style.
+   * @param queryParams Map of query parameters as name-value pairs
+   *   <p>The following elements may be specified in the query map:</p>
+   *   <ul>
+   *   <li>status - Boolean value to enable/disable blocklist (required)</li>
+   *   </ul>
+   * @return ToggleBlocklistResponse
+   */
+  @RequestLine("POST /blocklist/toggle?status={status}")
+  @Headers({
+  "Accept: application/json",
+  })
+  ToggleBlocklistResponse toggleBlocklistGuardForAParticularMerchant(@QueryMap(encoded=true) ToggleBlocklistGuardForAParticularMerchantQueryParams queryParams);
+
+  /**
+  * 
+  * 
+  * Note, this is equivalent to the other <code>toggleBlocklistGuardForAParticularMerchant</code> that receives the query parameters as a map,
+  * but this one also exposes the Http response headers
+      * @param queryParams Map of query parameters as name-value pairs
+      *   <p>The following elements may be specified in the query map:</p>
+      *   <ul>
+          *   <li>status - Boolean value to enable/disable blocklist (required)</li>
+      *   </ul>
+          * @return ToggleBlocklistResponse
+      */
+      @RequestLine("POST /blocklist/toggle?status={status}")
+      @Headers({
+    "Accept: application/json",
+      })
+   ApiResponse<ToggleBlocklistResponse> toggleBlocklistGuardForAParticularMerchantWithHttpInfo(@QueryMap(encoded=true) ToggleBlocklistGuardForAParticularMerchantQueryParams queryParams);
+
+
+   /**
+   * A convenience class for generating query parameters for the
+   * <code>toggleBlocklistGuardForAParticularMerchant</code> method in a fluent style.
+   */
+  public static class ToggleBlocklistGuardForAParticularMerchantQueryParams extends HashMap<String, Object> {
+    public ToggleBlocklistGuardForAParticularMerchantQueryParams status(final Boolean value) {
+      put("status", EncodingUtils.encode(value));
       return this;
     }
   }

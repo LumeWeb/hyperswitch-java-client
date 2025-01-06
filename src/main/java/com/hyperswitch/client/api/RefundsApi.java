@@ -1,6 +1,6 @@
 package com.hyperswitch.client.api;
 
-import com.hyperswitch.client.HsApiClient;
+import com.hyperswitch.client.ApiClient;
 import com.hyperswitch.client.EncodingUtils;
 import com.hyperswitch.client.model.ApiResponse;
 
@@ -16,13 +16,13 @@ import java.util.List;
 import java.util.Map;
 import feign.*;
 
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-01-28T20:00:07.865622+05:30[Asia/Kolkata]")
-public interface RefundsApi extends HsApiClient.Api {
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+public interface RefundsApi extends ApiClient.Api {
 
 
   /**
    * Refunds - Create
-   * Refunds - Create  To create a refund against an already processed payment
+   * Creates a refund against an already processed payment. In case of some processors, you can even opt to refund only a partial amount multiple times until the original charge amount has been refunded
    * @param refundRequest  (required)
    * @return RefundResponse
    */
@@ -36,7 +36,7 @@ public interface RefundsApi extends HsApiClient.Api {
   /**
    * Refunds - Create
    * Similar to <code>createARefund</code> but it also returns the http response headers .
-   * Refunds - Create  To create a refund against an already processed payment
+   * Creates a refund against an already processed payment. In case of some processors, you can even opt to refund only a partial amount multiple times until the original charge amount has been refunded
    * @param refundRequest  (required)
    * @return A ApiResponse that wraps the response boyd and the http headers.
    */
@@ -51,7 +51,7 @@ public interface RefundsApi extends HsApiClient.Api {
 
   /**
    * Refunds - List
-   * Refunds - List  To list the refunds associated with a payment_id or with the merchant, if payment_id is not provided
+   * Lists all the refunds associated with the merchant or a payment_id if payment_id is not provided
    * @param refundListRequest  (required)
    * @return RefundListResponse
    */
@@ -65,7 +65,7 @@ public interface RefundsApi extends HsApiClient.Api {
   /**
    * Refunds - List
    * Similar to <code>listAllRefunds</code> but it also returns the http response headers .
-   * Refunds - List  To list the refunds associated with a payment_id or with the merchant, if payment_id is not provided
+   * Lists all the refunds associated with the merchant or a payment_id if payment_id is not provided
    * @param refundListRequest  (required)
    * @return A ApiResponse that wraps the response boyd and the http headers.
    */
@@ -79,8 +79,8 @@ public interface RefundsApi extends HsApiClient.Api {
 
 
   /**
-   * Refunds - Retrieve (GET)
-   * Refunds - Retrieve (GET)  To retrieve the properties of a Refund. This may be used to get the status of a previously initiated payment or next action for an ongoing payment
+   * Refunds - Retrieve
+   * Retrieves a Refund. This may be used to get the status of a previously initiated refund
    * @param refundId The identifier for refund (required)
    * @return RefundResponse
    */
@@ -91,9 +91,9 @@ public interface RefundsApi extends HsApiClient.Api {
   RefundResponse retrieveARefund(@Param("refundId") String refundId);
 
   /**
-   * Refunds - Retrieve (GET)
+   * Refunds - Retrieve
    * Similar to <code>retrieveARefund</code> but it also returns the http response headers .
-   * Refunds - Retrieve (GET)  To retrieve the properties of a Refund. This may be used to get the status of a previously initiated payment or next action for an ongoing payment
+   * Retrieves a Refund. This may be used to get the status of a previously initiated refund
    * @param refundId The identifier for refund (required)
    * @return A ApiResponse that wraps the response boyd and the http headers.
    */
@@ -107,7 +107,7 @@ public interface RefundsApi extends HsApiClient.Api {
 
   /**
    * Refunds - Update
-   * Refunds - Update  To update the properties of a Refund object. This may include attaching a reason for the refund or metadata fields
+   * Updates the properties of a Refund object. This API can be used to attach a reason for the refund or metadata fields
    * @param refundId The identifier for refund (required)
    * @param refundUpdateRequest  (required)
    * @return RefundResponse
@@ -122,7 +122,7 @@ public interface RefundsApi extends HsApiClient.Api {
   /**
    * Refunds - Update
    * Similar to <code>updateARefund</code> but it also returns the http response headers .
-   * Refunds - Update  To update the properties of a Refund object. This may include attaching a reason for the refund or metadata fields
+   * Updates the properties of a Refund object. This API can be used to attach a reason for the refund or metadata fields
    * @param refundId The identifier for refund (required)
    * @param refundUpdateRequest  (required)
    * @return A ApiResponse that wraps the response boyd and the http headers.

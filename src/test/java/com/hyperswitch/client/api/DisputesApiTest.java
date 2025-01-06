@@ -1,6 +1,6 @@
 package com.hyperswitch.client.api;
 
-import com.hyperswitch.client.HsApiClient;
+import com.hyperswitch.client.ApiClient;
 import com.hyperswitch.client.model.DisputeResponse;
 import com.hyperswitch.client.model.DisputeStage;
 import com.hyperswitch.client.model.DisputeStatus;
@@ -24,14 +24,14 @@ class DisputesApiTest {
 
     @BeforeEach
     public void setup() {
-        api = new HsApiClient().buildClient(DisputesApi.class);
+        api = new ApiClient().buildClient(DisputesApi.class);
     }
 
     
     /**
      * Disputes - List Disputes
      *
-     * Disputes - List Disputes
+     * Lists all the Disputes for a merchant
      */
     @Test
     void listDisputesTest() {
@@ -53,7 +53,7 @@ class DisputesApiTest {
     /**
      * Disputes - List Disputes
      *
-     * Disputes - List Disputes
+     * Lists all the Disputes for a merchant
      *
      * This tests the overload of the method that uses a Map for query parameters instead of
      * listing them out individually.
@@ -79,7 +79,7 @@ class DisputesApiTest {
     /**
      * Disputes - Retrieve Dispute
      *
-     * Disputes - Retrieve Dispute
+     * Retrieves a dispute
      */
     @Test
     void retrieveADisputeTest() {

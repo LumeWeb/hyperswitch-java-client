@@ -4,7 +4,7 @@ apply plugin: 'java'
 apply plugin: 'maven-publish'
 
 group = 'io.github.juspay.hyperswitch'
-version = rootProject.hasProperty('version') ? rootProject.property('version') : '0.0.1-SNAPSHOT'
+version = project.findProperty('version') ?: '0.0.1-SNAPSHOT'
 
 repositories {
     mavenCentral()
@@ -14,17 +14,6 @@ sourceCompatibility = JavaVersion.VERSION_1_8
 targetCompatibility = JavaVersion.VERSION_1_8
 
 publishing {
-    repositories {
-        maven {
-            name = "GitHubPackages"
-            url = uri("https://maven.pkg.github.com/lumeweb/hyperswitch-java-client")
-            credentials {
-                username = project.findProperty("publishGhPackagesUsername") ?: System.getenv("GITHUB_ACTOR")
-                password = project.findProperty("publishGhPackagesPassword") ?: System.getenv("GITHUB_TOKEN")
-            }
-        }
-    }
-
     publications {
         gpr(MavenPublication) {
             from(components.java)
@@ -43,6 +32,16 @@ publishing {
             }
         }
     }
+    repositories {
+        maven {
+            name = "GitHubPackages"
+            url = uri("https://maven.pkg.github.com/lumeweb/hyperswitch-java-client")
+            credentials {
+                username = project.findProperty("publishGhPackagesUsername") ?: System.getenv("GITHUB_ACTOR")
+                password = project.findProperty("publishGhPackagesPassword") ?: System.getenv("GITHUB_TOKEN")
+            }
+        }
+    }
 }
 
 task execute(type: JavaExec) {
@@ -58,16 +57,6 @@ task sourcesJar(type: Jar, dependsOn: classes) {
 task javadocJar(type: Jar, dependsOn: javadoc) {
     archiveClassifier = 'javadoc'
     from javadoc.destinationDir
-}
-
-task printProperties {
-    doLast {
-        println "version: " + project.version
-        println "hasVersion: " + project.hasProperty('version')
-        if (project.hasProperty('version')) {
-            println "version property: " + project.property('version')
-        }
-    }
 }
 
 artifacts {

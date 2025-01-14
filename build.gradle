@@ -1,23 +1,21 @@
+group = 'io.github.juspay.hyperswitch'
+version = project.hasProperty('version') ? project.property('version') : '0.0.1-SNAPSHOT'
+
 apply plugin: 'idea'
 apply plugin: 'eclipse'
 apply plugin: 'java'
 apply plugin: 'maven-publish'
 
-group = 'io.github.juspay.hyperswitch'
-version = project.findProperty('version') ?: '0.0.1-SNAPSHOT'
-
 repositories {
     mavenCentral()
 }
-
-sourceCompatibility = JavaVersion.VERSION_1_8
-targetCompatibility = JavaVersion.VERSION_1_8
 
 publishing {
     publications {
         gpr(MavenPublication) {
             from(components.java)
             artifactId = 'hyperswitch-java-client'
+            version = project.version
 
             pom {
                 name = 'Hyperswitch Java Client'

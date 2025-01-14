@@ -1,133 +1,78 @@
 apply plugin: 'idea'
 apply plugin: 'eclipse'
+apply plugin: 'java'
+apply plugin: 'maven-publish'
 
 group = 'io.github.juspay.hyperswitch'
-version = System.getProperty('version', '0.0.1-SNAPSHOT')
-
-buildscript {
-    repositories {
-        mavenCentral()
-    }
-    dependencies {
-        classpath 'com.android.tools.build:gradle:2.3.+'
-        classpath 'com.github.dcendents:android-maven-gradle-plugin:1.5'
-    }
-}
+version = rootProject.hasProperty('version') ? rootProject.property('version') : '0.0.1-SNAPSHOT'
 
 repositories {
     mavenCentral()
 }
 
-if(hasProperty('target') && target == 'android') {
-    apply plugin: 'com.android.library'
-    apply plugin: 'com.github.dcendents.android-maven'
+sourceCompatibility = JavaVersion.VERSION_1_8
+targetCompatibility = JavaVersion.VERSION_1_8
 
-    android {
-        compileSdkVersion 25
-        buildToolsVersion '25.0.2'
-        defaultConfig {
-            minSdkVersion 14
-            targetSdkVersion 25
-        }
-        compileOptions {
-            sourceCompatibility JavaVersion.VERSION_1_8
-            targetCompatibility JavaVersion.VERSION_1_8
-        }
-
-        // Rename the aar correctly
-        libraryVariants.all { variant ->
-            variant.outputs.each { output ->
-                def outputFile = output.outputFile
-                if (outputFile != null && outputFile.name.endsWith('.aar')) {
-                    def fileName = "${project.name}-${variant.baseName}-${version}.aar"
-                    output.outputFile = new File(outputFile.parent, fileName)
-                }
+publishing {
+    repositories {
+        maven {
+            name = "GitHubPackages"
+            url = uri("https://maven.pkg.github.com/lumeweb/hyperswitch-java-client")
+            credentials {
+                username = project.findProperty("publishGhPackagesUsername") ?: System.getenv("GITHUB_ACTOR")
+                password = project.findProperty("publishGhPackagesPassword") ?: System.getenv("GITHUB_TOKEN")
             }
         }
-
-        dependencies {
-            provided "jakarta.annotation:jakarta.annotation-api:$jakarta_annotation_version"
-        }
     }
 
-    afterEvaluate {
-        android.libraryVariants.all { variant ->
-            def task = project.tasks.create "jar${variant.name.capitalize()}", Jar
-            task.description = "Create jar artifact for ${variant.name}"
-            task.dependsOn variant.javaCompile
-            task.from variant.javaCompile.destinationDirectory
-            task.destinationDirectory = project.file("${project.buildDir}/outputs/jar")
-            task.archiveFileName = "${project.name}-${variant.baseName}-${version}.jar"
-            artifacts.add('archives', task);
-        }
-    }
+    publications {
+        gpr(MavenPublication) {
+            from(components.java)
+            artifactId = 'hyperswitch-java-client'
 
-    task sourcesJar(type: Jar) {
-        from android.sourceSets.main.java.srcDirs
-        classifier = 'sources'
-    }
-
-    artifacts {
-        archives sourcesJar
-    }
-
-} else {
-    apply plugin: 'java'
-    apply plugin: 'maven-publish'
-
-    sourceCompatibility = JavaVersion.VERSION_1_8
-    targetCompatibility = JavaVersion.VERSION_1_8
-
-    publishing {
-        repositories {
-            maven {
-                name = "GitHubPackages"
-                url = uri("https://maven.pkg.github.com/lumeweb/hyperswitch-java-client")
-                credentials {
-                    username = project.findProperty("publishGhPackagesUsername") ?: System.getenv("GITHUB_ACTOR")
-                    password = project.findProperty("publishGhPackagesPassword") ?: System.getenv("GITHUB_TOKEN")
-                }
-            }
-        }
-
-        publications {
-            gpr(MavenPublication) {
-                from(components.java)
-                artifactId = 'hyperswitch-java-client'
-
-                pom {
-                    name = 'Hyperswitch Java Client'
-                    description = 'Java client for Hyperswitch API'
-                    url = 'https://github.com/lumeweb/hyperswitch-java-client'
-                    licenses {
-                        license {
-                            name = 'The Apache License, Version 2.0'
-                            url = 'http://www.apache.org/licenses/LICENSE-2.0.txt'
-                        }
+            pom {
+                name = 'Hyperswitch Java Client'
+                description = 'Java client for Hyperswitch API'
+                url = 'https://github.com/lumeweb/hyperswitch-java-client'
+                licenses {
+                    license {
+                        name = 'The Apache License, Version 2.0'
+                        url = 'http://www.apache.org/licenses/LICENSE-2.0.txt'
                     }
                 }
             }
         }
     }
-    task execute(type:JavaExec) {
-        main = System.getProperty('mainClass')
-        classpath = sourceSets.main.runtimeClasspath
-    }
+}
 
-    task sourcesJar(type: Jar, dependsOn: classes) {
-        classifier = 'sources'
-        from sourceSets.main.allSource
-    }
+task execute(type: JavaExec) {
+    main = System.getProperty('mainClass')
+    classpath = sourceSets.main.runtimeClasspath
+}
 
-    task javadocJar(type: Jar, dependsOn: javadoc) {
-        classifier = 'javadoc'
-        from javadoc.destinationDir
-    }
+task sourcesJar(type: Jar, dependsOn: classes) {
+    archiveClassifier = 'sources'
+    from sourceSets.main.allSource
+}
 
-    artifacts {
-        archives sourcesJar
-        archives javadocJar
+task javadocJar(type: Jar, dependsOn: javadoc) {
+    archiveClassifier = 'javadoc'
+    from javadoc.destinationDir
+}
+
+task printProperties {
+    doLast {
+        println "version: " + project.version
+        println "hasVersion: " + project.hasProperty('version')
+        if (project.hasProperty('version')) {
+            println "version property: " + project.property('version')
+        }
     }
+}
+
+artifacts {
+    archives sourcesJar
+    archives javadocJar
 }
 
 test {

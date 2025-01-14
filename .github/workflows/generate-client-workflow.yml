@@ -46,7 +46,7 @@ jobs:
                   generator-tag: 'v6.5.0'
                   config-file: openai-generator.yml
                   openapi-file: openapi_spec.json
-                  command-args: --library feign
+                  command-args: --library apache-httpclient
 
             - name: Move generated Files
               run: |

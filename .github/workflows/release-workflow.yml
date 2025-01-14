@@ -84,14 +84,15 @@ jobs:
                   github_token: ${{ secrets.GITHUB_TOKEN }}
                   commit_sha: ${{ github.event.pull_request.merge_commit_sha || github.sha }}
 
-            - name: Publish to GitHub Packages
+            - name: Set up Gradle version
               run: |
-                  # Create gradle.properties with GitHub Packages credentials
-                  cat <<EOF > gradle.properties
+                  # Create gradle.properties with all settings
+                  cat > gradle.properties << EOF
                   publishGhPackagesUsername=${{ github.actor }}
                   publishGhPackagesPassword=${{ secrets.GITHUB_TOKEN }}
                   EOF
 
-                  ./gradlew publish
+                  # Run publish with explicit version
+                  ./gradlew -Pversion=${{ steps.semver.outputs.new_version }} publish --info
               env:
                   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

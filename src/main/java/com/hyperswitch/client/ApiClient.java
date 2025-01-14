@@ -107,7 +107,7 @@ public class ApiClient extends JavaTimeFormatter {
   private DateFormat dateFormat;
 
   // Methods that can have a request body
-  private static List<String> bodyMethods = Arrays.asList("POST", "PUT", "DELETE", "PATCH");
+  private static List<String> bodyMethods = Arrays.asList("GET", "POST", "PUT", "DELETE", "PATCH");
 
   public ApiClient(CloseableHttpClient httpClient) {
     objectMapper = new ObjectMapper();

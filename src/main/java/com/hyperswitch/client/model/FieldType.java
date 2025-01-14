@@ -29,6 +29,9 @@ import com.hyperswitch.client.model.FieldTypeOneOf5;
 import com.hyperswitch.client.model.FieldTypeOneOfUserCountry;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 import com.fasterxml.jackson.annotation.JsonTypeName;
+import java.io.UnsupportedEncodingException;
+import java.net.URLEncoder;
+import java.util.StringJoiner;
 
 /**
  * Possible field type of required fields in payment_method_data
@@ -264,6 +267,71 @@ public class FieldType {
       return "null";
     }
     return o.toString().replace("\n", "\n    ");
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @return URL query string
+   */
+  public String toUrlQueryString() {
+    return toUrlQueryString(null);
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @param prefix prefix of the query string
+   * @return URL query string
+   */
+  public String toUrlQueryString(String prefix) {
+    String suffix = "";
+    String containerSuffix = "";
+    String containerPrefix = "";
+    if (prefix == null) {
+      // style=form, explode=true, e.g. /pet?name=cat&type=manx
+      prefix = "";
+    } else {
+      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+      prefix = prefix + "[";
+      suffix = "]";
+      containerSuffix = "]";
+      containerPrefix = "[";
+    }
+
+    StringJoiner joiner = new StringJoiner("&");
+
+    // add `user_country` to the URL query string
+    if (getUserCountry() != null) {
+      joiner.add(getUserCountry().toUrlQueryString(prefix + "user_country" + suffix));
+    }
+
+    // add `user_currency` to the URL query string
+    if (getUserCurrency() != null) {
+      joiner.add(getUserCurrency().toUrlQueryString(prefix + "user_currency" + suffix));
+    }
+
+    // add `user_address_country` to the URL query string
+    if (getUserAddressCountry() != null) {
+      joiner.add(getUserAddressCountry().toUrlQueryString(prefix + "user_address_country" + suffix));
+    }
+
+    // add `user_shipping_address_country` to the URL query string
+    if (getUserShippingAddressCountry() != null) {
+      joiner.add(getUserShippingAddressCountry().toUrlQueryString(prefix + "user_shipping_address_country" + suffix));
+    }
+
+    // add `drop_down` to the URL query string
+    if (getDropDown() != null) {
+      joiner.add(getDropDown().toUrlQueryString(prefix + "drop_down" + suffix));
+    }
+
+    // add `language_preference` to the URL query string
+    if (getLanguagePreference() != null) {
+      joiner.add(getLanguagePreference().toUrlQueryString(prefix + "language_preference" + suffix));
+    }
+
+    return joiner.toString();
   }
 
 }

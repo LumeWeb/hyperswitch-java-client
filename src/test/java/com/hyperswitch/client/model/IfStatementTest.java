@@ -25,20 +25,22 @@ import org.openapitools.jackson.nullable.JsonNullable;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.openapitools.jackson.nullable.JsonNullable;
 import java.util.NoSuchElementException;
-import org.junit.jupiter.api.Test;
+import org.junit.Assert;
+import org.junit.Ignore;
+import org.junit.Test;
 
 
 /**
  * Model tests for IfStatement
  */
-class IfStatementTest {
+public class IfStatementTest {
     private final IfStatement model = new IfStatement();
 
     /**
      * Model tests for IfStatement
      */
     @Test
-    void testIfStatement() {
+    public void testIfStatement() {
         // TODO: test IfStatement
     }
 
@@ -46,7 +48,7 @@ class IfStatementTest {
      * Test the property 'condition'
      */
     @Test
-    void conditionTest() {
+    public void conditionTest() {
         // TODO: test condition
     }
 
@@ -54,7 +56,7 @@ class IfStatementTest {
      * Test the property 'nested'
      */
     @Test
-    void nestedTest() {
+    public void nestedTest() {
         // TODO: test nested
     }
 

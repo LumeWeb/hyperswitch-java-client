@@ -19,20 +19,22 @@ import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonTypeName;
 import com.fasterxml.jackson.annotation.JsonValue;
 import com.hyperswitch.client.model.PaymentsResponse;
-import org.junit.jupiter.api.Test;
+import org.junit.Assert;
+import org.junit.Ignore;
+import org.junit.Test;
 
 
 /**
  * Model tests for PaymentsResponse1
  */
-class PaymentsResponse1Test {
+public class PaymentsResponse1Test {
     private final PaymentsResponse1 model = new PaymentsResponse1();
 
     /**
      * Model tests for PaymentsResponse1
      */
     @Test
-    void testPaymentsResponse1() {
+    public void testPaymentsResponse1() {
         // TODO: test PaymentsResponse1
     }
 
@@ -40,7 +42,7 @@ class PaymentsResponse1Test {
      * Test the property 'type'
      */
     @Test
-    void typeTest() {
+    public void typeTest() {
         // TODO: test type
     }
 
@@ -48,7 +50,7 @@ class PaymentsResponse1Test {
      * Test the property '_object'
      */
     @Test
-    void _objectTest() {
+    public void _objectTest() {
         // TODO: test _object
     }
 

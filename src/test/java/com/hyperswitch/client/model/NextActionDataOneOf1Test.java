@@ -19,20 +19,22 @@ import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonTypeName;
 import com.fasterxml.jackson.annotation.JsonValue;
 import com.hyperswitch.client.model.BankTransferNextStepsData;
-import org.junit.jupiter.api.Test;
+import org.junit.Assert;
+import org.junit.Ignore;
+import org.junit.Test;
 
 
 /**
  * Model tests for NextActionDataOneOf1
  */
-class NextActionDataOneOf1Test {
+public class NextActionDataOneOf1Test {
     private final NextActionDataOneOf1 model = new NextActionDataOneOf1();
 
     /**
      * Model tests for NextActionDataOneOf1
      */
     @Test
-    void testNextActionDataOneOf1() {
+    public void testNextActionDataOneOf1() {
         // TODO: test NextActionDataOneOf1
     }
 
@@ -40,7 +42,7 @@ class NextActionDataOneOf1Test {
      * Test the property 'bankTransferStepsAndChargesDetails'
      */
     @Test
-    void bankTransferStepsAndChargesDetailsTest() {
+    public void bankTransferStepsAndChargesDetailsTest() {
         // TODO: test bankTransferStepsAndChargesDetails
     }
 
@@ -48,7 +50,7 @@ class NextActionDataOneOf1Test {
      * Test the property 'type'
      */
     @Test
-    void typeTest() {
+    public void typeTest() {
         // TODO: test type
     }
 

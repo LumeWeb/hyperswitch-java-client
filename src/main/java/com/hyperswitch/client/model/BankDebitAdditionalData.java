@@ -30,6 +30,9 @@ import com.hyperswitch.client.model.BecsBankDebitAdditionalData;
 import com.hyperswitch.client.model.SepaBankDebitAdditionalData;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 import com.fasterxml.jackson.annotation.JsonTypeName;
+import java.io.UnsupportedEncodingException;
+import java.net.URLEncoder;
+import java.util.StringJoiner;
 
 /**
  * BankDebitAdditionalData
@@ -201,6 +204,61 @@ public class BankDebitAdditionalData {
       return "null";
     }
     return o.toString().replace("\n", "\n    ");
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @return URL query string
+   */
+  public String toUrlQueryString() {
+    return toUrlQueryString(null);
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @param prefix prefix of the query string
+   * @return URL query string
+   */
+  public String toUrlQueryString(String prefix) {
+    String suffix = "";
+    String containerSuffix = "";
+    String containerPrefix = "";
+    if (prefix == null) {
+      // style=form, explode=true, e.g. /pet?name=cat&type=manx
+      prefix = "";
+    } else {
+      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+      prefix = prefix + "[";
+      suffix = "]";
+      containerSuffix = "]";
+      containerPrefix = "[";
+    }
+
+    StringJoiner joiner = new StringJoiner("&");
+
+    // add `ach` to the URL query string
+    if (getAch() != null) {
+      joiner.add(getAch().toUrlQueryString(prefix + "ach" + suffix));
+    }
+
+    // add `bacs` to the URL query string
+    if (getBacs() != null) {
+      joiner.add(getBacs().toUrlQueryString(prefix + "bacs" + suffix));
+    }
+
+    // add `becs` to the URL query string
+    if (getBecs() != null) {
+      joiner.add(getBecs().toUrlQueryString(prefix + "becs" + suffix));
+    }
+
+    // add `sepa` to the URL query string
+    if (getSepa() != null) {
+      joiner.add(getSepa().toUrlQueryString(prefix + "sepa" + suffix));
+    }
+
+    return joiner.toString();
   }
 
 }

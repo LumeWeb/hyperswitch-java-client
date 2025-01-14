@@ -25,20 +25,22 @@ import org.openapitools.jackson.nullable.JsonNullable;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.openapitools.jackson.nullable.JsonNullable;
 import java.util.NoSuchElementException;
-import org.junit.jupiter.api.Test;
+import org.junit.Assert;
+import org.junit.Ignore;
+import org.junit.Test;
 
 
 /**
  * Model tests for LinkedRoutingConfigRetrieveResponse
  */
-class LinkedRoutingConfigRetrieveResponseTest {
+public class LinkedRoutingConfigRetrieveResponseTest {
     private final LinkedRoutingConfigRetrieveResponse model = new LinkedRoutingConfigRetrieveResponse();
 
     /**
      * Model tests for LinkedRoutingConfigRetrieveResponse
      */
     @Test
-    void testLinkedRoutingConfigRetrieveResponse() {
+    public void testLinkedRoutingConfigRetrieveResponse() {
         // TODO: test LinkedRoutingConfigRetrieveResponse
     }
 
@@ -46,7 +48,7 @@ class LinkedRoutingConfigRetrieveResponseTest {
      * Test the property 'algorithm'
      */
     @Test
-    void algorithmTest() {
+    public void algorithmTest() {
         // TODO: test algorithm
     }
 

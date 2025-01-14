@@ -18,20 +18,22 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonTypeName;
 import com.fasterxml.jackson.annotation.JsonValue;
-import org.junit.jupiter.api.Test;
+import org.junit.Assert;
+import org.junit.Ignore;
+import org.junit.Test;
 
 
 /**
  * Model tests for OpenBankingResponse
  */
-class OpenBankingResponseTest {
+public class OpenBankingResponseTest {
     private final OpenBankingResponse model = new OpenBankingResponse();
 
     /**
      * Model tests for OpenBankingResponse
      */
     @Test
-    void testOpenBankingResponse() {
+    public void testOpenBankingResponse() {
         // TODO: test OpenBankingResponse
     }
 
@@ -39,7 +41,7 @@ class OpenBankingResponseTest {
      * Test the property 'openBankingPis'
      */
     @Test
-    void openBankingPisTest() {
+    public void openBankingPisTest() {
         // TODO: test openBankingPis
     }
 

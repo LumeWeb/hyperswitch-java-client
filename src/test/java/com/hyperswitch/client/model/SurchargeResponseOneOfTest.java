@@ -18,20 +18,22 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonTypeName;
 import com.fasterxml.jackson.annotation.JsonValue;
-import org.junit.jupiter.api.Test;
+import org.junit.Assert;
+import org.junit.Ignore;
+import org.junit.Test;
 
 
 /**
  * Model tests for SurchargeResponseOneOf
  */
-class SurchargeResponseOneOfTest {
+public class SurchargeResponseOneOfTest {
     private final SurchargeResponseOneOf model = new SurchargeResponseOneOf();
 
     /**
      * Model tests for SurchargeResponseOneOf
      */
     @Test
-    void testSurchargeResponseOneOf() {
+    public void testSurchargeResponseOneOf() {
         // TODO: test SurchargeResponseOneOf
     }
 
@@ -39,7 +41,7 @@ class SurchargeResponseOneOfTest {
      * Test the property 'type'
      */
     @Test
-    void typeTest() {
+    public void typeTest() {
         // TODO: test type
     }
 
@@ -47,7 +49,7 @@ class SurchargeResponseOneOfTest {
      * Test the property 'value'
      */
     @Test
-    void valueTest() {
+    public void valueTest() {
         // TODO: test value
     }
 

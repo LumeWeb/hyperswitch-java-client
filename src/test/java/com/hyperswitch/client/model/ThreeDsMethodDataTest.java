@@ -26,20 +26,22 @@ import org.openapitools.jackson.nullable.JsonNullable;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.openapitools.jackson.nullable.JsonNullable;
 import java.util.NoSuchElementException;
-import org.junit.jupiter.api.Test;
+import org.junit.Assert;
+import org.junit.Ignore;
+import org.junit.Test;
 
 
 /**
  * Model tests for ThreeDsMethodData
  */
-class ThreeDsMethodDataTest {
+public class ThreeDsMethodDataTest {
     private final ThreeDsMethodData model = new ThreeDsMethodData();
 
     /**
      * Model tests for ThreeDsMethodData
      */
     @Test
-    void testThreeDsMethodData() {
+    public void testThreeDsMethodData() {
         // TODO: test ThreeDsMethodData
     }
 
@@ -47,7 +49,7 @@ class ThreeDsMethodDataTest {
      * Test the property 'threeDsMethodDataSubmission'
      */
     @Test
-    void threeDsMethodDataSubmissionTest() {
+    public void threeDsMethodDataSubmissionTest() {
         // TODO: test threeDsMethodDataSubmission
     }
 
@@ -55,7 +57,7 @@ class ThreeDsMethodDataTest {
      * Test the property 'threeDsMethodData'
      */
     @Test
-    void threeDsMethodDataTest() {
+    public void threeDsMethodDataTest() {
         // TODO: test threeDsMethodData
     }
 
@@ -63,7 +65,7 @@ class ThreeDsMethodDataTest {
      * Test the property 'threeDsMethodUrl'
      */
     @Test
-    void threeDsMethodUrlTest() {
+    public void threeDsMethodUrlTest() {
         // TODO: test threeDsMethodUrl
     }
 
@@ -71,7 +73,7 @@ class ThreeDsMethodDataTest {
      * Test the property 'threeDsMethodKey'
      */
     @Test
-    void threeDsMethodKeyTest() {
+    public void threeDsMethodKeyTest() {
         // TODO: test threeDsMethodKey
     }
 

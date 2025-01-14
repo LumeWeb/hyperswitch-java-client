@@ -26,6 +26,9 @@ import org.openapitools.jackson.nullable.JsonNullable;
 import java.util.NoSuchElementException;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 import com.fasterxml.jackson.annotation.JsonTypeName;
+import java.io.UnsupportedEncodingException;
+import java.net.URLEncoder;
+import java.util.StringJoiner;
 
 /**
  * ConnectorWalletDetails
@@ -240,6 +243,81 @@ public class ConnectorWalletDetails {
       return "null";
     }
     return o.toString().replace("\n", "\n    ");
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @return URL query string
+   */
+  public String toUrlQueryString() {
+    return toUrlQueryString(null);
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @param prefix prefix of the query string
+   * @return URL query string
+   */
+  public String toUrlQueryString(String prefix) {
+    String suffix = "";
+    String containerSuffix = "";
+    String containerPrefix = "";
+    if (prefix == null) {
+      // style=form, explode=true, e.g. /pet?name=cat&type=manx
+      prefix = "";
+    } else {
+      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+      prefix = prefix + "[";
+      suffix = "]";
+      containerSuffix = "]";
+      containerPrefix = "[";
+    }
+
+    StringJoiner joiner = new StringJoiner("&");
+
+    // add `apple_pay_combined` to the URL query string
+    if (getApplePayCombined() != null) {
+      try {
+        joiner.add(String.format("%sapple_pay_combined%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getApplePayCombined()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `apple_pay` to the URL query string
+    if (getApplePay() != null) {
+      try {
+        joiner.add(String.format("%sapple_pay%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getApplePay()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `samsung_pay` to the URL query string
+    if (getSamsungPay() != null) {
+      try {
+        joiner.add(String.format("%ssamsung_pay%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getSamsungPay()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `paze` to the URL query string
+    if (getPaze() != null) {
+      try {
+        joiner.add(String.format("%spaze%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getPaze()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    return joiner.toString();
   }
 
 }

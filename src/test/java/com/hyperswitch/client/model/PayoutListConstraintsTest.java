@@ -23,20 +23,22 @@ import org.openapitools.jackson.nullable.JsonNullable;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.openapitools.jackson.nullable.JsonNullable;
 import java.util.NoSuchElementException;
-import org.junit.jupiter.api.Test;
+import org.junit.Assert;
+import org.junit.Ignore;
+import org.junit.Test;
 
 
 /**
  * Model tests for PayoutListConstraints
  */
-class PayoutListConstraintsTest {
+public class PayoutListConstraintsTest {
     private final PayoutListConstraints model = new PayoutListConstraints();
 
     /**
      * Model tests for PayoutListConstraints
      */
     @Test
-    void testPayoutListConstraints() {
+    public void testPayoutListConstraints() {
         // TODO: test PayoutListConstraints
     }
 
@@ -44,7 +46,7 @@ class PayoutListConstraintsTest {
      * Test the property 'customerId'
      */
     @Test
-    void customerIdTest() {
+    public void customerIdTest() {
         // TODO: test customerId
     }
 
@@ -52,7 +54,7 @@ class PayoutListConstraintsTest {
      * Test the property 'startingAfter'
      */
     @Test
-    void startingAfterTest() {
+    public void startingAfterTest() {
         // TODO: test startingAfter
     }
 
@@ -60,7 +62,7 @@ class PayoutListConstraintsTest {
      * Test the property 'endingBefore'
      */
     @Test
-    void endingBeforeTest() {
+    public void endingBeforeTest() {
         // TODO: test endingBefore
     }
 
@@ -68,7 +70,7 @@ class PayoutListConstraintsTest {
      * Test the property 'limit'
      */
     @Test
-    void limitTest() {
+    public void limitTest() {
         // TODO: test limit
     }
 
@@ -76,7 +78,7 @@ class PayoutListConstraintsTest {
      * Test the property 'created'
      */
     @Test
-    void createdTest() {
+    public void createdTest() {
         // TODO: test created
     }
 
@@ -84,7 +86,7 @@ class PayoutListConstraintsTest {
      * Test the property 'startTime'
      */
     @Test
-    void startTimeTest() {
+    public void startTimeTest() {
         // TODO: test startTime
     }
 
@@ -92,7 +94,7 @@ class PayoutListConstraintsTest {
      * Test the property 'endTime'
      */
     @Test
-    void endTimeTest() {
+    public void endTimeTest() {
         // TODO: test endTime
     }
 

@@ -22,20 +22,22 @@ import org.openapitools.jackson.nullable.JsonNullable;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.openapitools.jackson.nullable.JsonNullable;
 import java.util.NoSuchElementException;
-import org.junit.jupiter.api.Test;
+import org.junit.Assert;
+import org.junit.Ignore;
+import org.junit.Test;
 
 
 /**
  * Model tests for OrganizationCreateRequest
  */
-class OrganizationCreateRequestTest {
+public class OrganizationCreateRequestTest {
     private final OrganizationCreateRequest model = new OrganizationCreateRequest();
 
     /**
      * Model tests for OrganizationCreateRequest
      */
     @Test
-    void testOrganizationCreateRequest() {
+    public void testOrganizationCreateRequest() {
         // TODO: test OrganizationCreateRequest
     }
 
@@ -43,7 +45,7 @@ class OrganizationCreateRequestTest {
      * Test the property 'organizationName'
      */
     @Test
-    void organizationNameTest() {
+    public void organizationNameTest() {
         // TODO: test organizationName
     }
 
@@ -51,7 +53,7 @@ class OrganizationCreateRequestTest {
      * Test the property 'organizationDetails'
      */
     @Test
-    void organizationDetailsTest() {
+    public void organizationDetailsTest() {
         // TODO: test organizationDetails
     }
 
@@ -59,7 +61,7 @@ class OrganizationCreateRequestTest {
      * Test the property 'metadata'
      */
     @Test
-    void metadataTest() {
+    public void metadataTest() {
         // TODO: test metadata
     }
 

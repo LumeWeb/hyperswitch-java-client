@@ -23,20 +23,22 @@ import org.openapitools.jackson.nullable.JsonNullable;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.openapitools.jackson.nullable.JsonNullable;
 import java.util.NoSuchElementException;
-import org.junit.jupiter.api.Test;
+import org.junit.Assert;
+import org.junit.Ignore;
+import org.junit.Test;
 
 
 /**
  * Model tests for IncrementalAuthorizationResponse
  */
-class IncrementalAuthorizationResponseTest {
+public class IncrementalAuthorizationResponseTest {
     private final IncrementalAuthorizationResponse model = new IncrementalAuthorizationResponse();
 
     /**
      * Model tests for IncrementalAuthorizationResponse
      */
     @Test
-    void testIncrementalAuthorizationResponse() {
+    public void testIncrementalAuthorizationResponse() {
         // TODO: test IncrementalAuthorizationResponse
     }
 
@@ -44,7 +46,7 @@ class IncrementalAuthorizationResponseTest {
      * Test the property 'authorizationId'
      */
     @Test
-    void authorizationIdTest() {
+    public void authorizationIdTest() {
         // TODO: test authorizationId
     }
 
@@ -52,7 +54,7 @@ class IncrementalAuthorizationResponseTest {
      * Test the property 'amount'
      */
     @Test
-    void amountTest() {
+    public void amountTest() {
         // TODO: test amount
     }
 
@@ -60,7 +62,7 @@ class IncrementalAuthorizationResponseTest {
      * Test the property 'status'
      */
     @Test
-    void statusTest() {
+    public void statusTest() {
         // TODO: test status
     }
 
@@ -68,7 +70,7 @@ class IncrementalAuthorizationResponseTest {
      * Test the property 'errorCode'
      */
     @Test
-    void errorCodeTest() {
+    public void errorCodeTest() {
         // TODO: test errorCode
     }
 
@@ -76,7 +78,7 @@ class IncrementalAuthorizationResponseTest {
      * Test the property 'errorMessage'
      */
     @Test
-    void errorMessageTest() {
+    public void errorMessageTest() {
         // TODO: test errorMessage
     }
 
@@ -84,7 +86,7 @@ class IncrementalAuthorizationResponseTest {
      * Test the property 'previouslyAuthorizedAmount'
      */
     @Test
-    void previouslyAuthorizedAmountTest() {
+    public void previouslyAuthorizedAmountTest() {
         // TODO: test previouslyAuthorizedAmount
     }
 

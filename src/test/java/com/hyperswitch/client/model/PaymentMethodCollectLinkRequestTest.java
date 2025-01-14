@@ -25,20 +25,22 @@ import org.openapitools.jackson.nullable.JsonNullable;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.openapitools.jackson.nullable.JsonNullable;
 import java.util.NoSuchElementException;
-import org.junit.jupiter.api.Test;
+import org.junit.Assert;
+import org.junit.Ignore;
+import org.junit.Test;
 
 
 /**
  * Model tests for PaymentMethodCollectLinkRequest
  */
-class PaymentMethodCollectLinkRequestTest {
+public class PaymentMethodCollectLinkRequestTest {
     private final PaymentMethodCollectLinkRequest model = new PaymentMethodCollectLinkRequest();
 
     /**
      * Model tests for PaymentMethodCollectLinkRequest
      */
     @Test
-    void testPaymentMethodCollectLinkRequest() {
+    public void testPaymentMethodCollectLinkRequest() {
         // TODO: test PaymentMethodCollectLinkRequest
     }
 
@@ -46,7 +48,7 @@ class PaymentMethodCollectLinkRequestTest {
      * Test the property 'pmCollectLinkId'
      */
     @Test
-    void pmCollectLinkIdTest() {
+    public void pmCollectLinkIdTest() {
         // TODO: test pmCollectLinkId
     }
 
@@ -54,7 +56,7 @@ class PaymentMethodCollectLinkRequestTest {
      * Test the property 'customerId'
      */
     @Test
-    void customerIdTest() {
+    public void customerIdTest() {
         // TODO: test customerId
     }
 
@@ -62,7 +64,7 @@ class PaymentMethodCollectLinkRequestTest {
      * Test the property 'sessionExpiry'
      */
     @Test
-    void sessionExpiryTest() {
+    public void sessionExpiryTest() {
         // TODO: test sessionExpiry
     }
 
@@ -70,7 +72,7 @@ class PaymentMethodCollectLinkRequestTest {
      * Test the property 'returnUrl'
      */
     @Test
-    void returnUrlTest() {
+    public void returnUrlTest() {
         // TODO: test returnUrl
     }
 
@@ -78,7 +80,7 @@ class PaymentMethodCollectLinkRequestTest {
      * Test the property 'enabledPaymentMethods'
      */
     @Test
-    void enabledPaymentMethodsTest() {
+    public void enabledPaymentMethodsTest() {
         // TODO: test enabledPaymentMethods
     }
 
@@ -86,7 +88,7 @@ class PaymentMethodCollectLinkRequestTest {
      * Test the property 'logo'
      */
     @Test
-    void logoTest() {
+    public void logoTest() {
         // TODO: test logo
     }
 
@@ -94,7 +96,7 @@ class PaymentMethodCollectLinkRequestTest {
      * Test the property 'merchantName'
      */
     @Test
-    void merchantNameTest() {
+    public void merchantNameTest() {
         // TODO: test merchantName
     }
 
@@ -102,7 +104,7 @@ class PaymentMethodCollectLinkRequestTest {
      * Test the property 'theme'
      */
     @Test
-    void themeTest() {
+    public void themeTest() {
         // TODO: test theme
     }
 

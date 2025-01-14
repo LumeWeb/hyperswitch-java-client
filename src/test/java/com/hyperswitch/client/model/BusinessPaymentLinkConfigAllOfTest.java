@@ -27,20 +27,22 @@ import org.openapitools.jackson.nullable.JsonNullable;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.openapitools.jackson.nullable.JsonNullable;
 import java.util.NoSuchElementException;
-import org.junit.jupiter.api.Test;
+import org.junit.Assert;
+import org.junit.Ignore;
+import org.junit.Test;
 
 
 /**
  * Model tests for BusinessPaymentLinkConfigAllOf
  */
-class BusinessPaymentLinkConfigAllOfTest {
+public class BusinessPaymentLinkConfigAllOfTest {
     private final BusinessPaymentLinkConfigAllOf model = new BusinessPaymentLinkConfigAllOf();
 
     /**
      * Model tests for BusinessPaymentLinkConfigAllOf
      */
     @Test
-    void testBusinessPaymentLinkConfigAllOf() {
+    public void testBusinessPaymentLinkConfigAllOf() {
         // TODO: test BusinessPaymentLinkConfigAllOf
     }
 
@@ -48,7 +50,7 @@ class BusinessPaymentLinkConfigAllOfTest {
      * Test the property 'domainName'
      */
     @Test
-    void domainNameTest() {
+    public void domainNameTest() {
         // TODO: test domainName
     }
 
@@ -56,7 +58,7 @@ class BusinessPaymentLinkConfigAllOfTest {
      * Test the property 'businessSpecificConfigs'
      */
     @Test
-    void businessSpecificConfigsTest() {
+    public void businessSpecificConfigsTest() {
         // TODO: test businessSpecificConfigs
     }
 
@@ -64,7 +66,7 @@ class BusinessPaymentLinkConfigAllOfTest {
      * Test the property 'allowedDomains'
      */
     @Test
-    void allowedDomainsTest() {
+    public void allowedDomainsTest() {
         // TODO: test allowedDomains
     }
 
@@ -72,7 +74,7 @@ class BusinessPaymentLinkConfigAllOfTest {
      * Test the property 'brandingVisibility'
      */
     @Test
-    void brandingVisibilityTest() {
+    public void brandingVisibilityTest() {
         // TODO: test brandingVisibility
     }
 

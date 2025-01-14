@@ -24,20 +24,22 @@ import org.openapitools.jackson.nullable.JsonNullable;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.openapitools.jackson.nullable.JsonNullable;
 import java.util.NoSuchElementException;
-import org.junit.jupiter.api.Test;
+import org.junit.Assert;
+import org.junit.Ignore;
+import org.junit.Test;
 
 
 /**
  * Model tests for SamsungPayWebWalletData
  */
-class SamsungPayWebWalletDataTest {
+public class SamsungPayWebWalletDataTest {
     private final SamsungPayWebWalletData model = new SamsungPayWebWalletData();
 
     /**
      * Model tests for SamsungPayWebWalletData
      */
     @Test
-    void testSamsungPayWebWalletData() {
+    public void testSamsungPayWebWalletData() {
         // TODO: test SamsungPayWebWalletData
     }
 
@@ -45,7 +47,7 @@ class SamsungPayWebWalletDataTest {
      * Test the property 'method'
      */
     @Test
-    void methodTest() {
+    public void methodTest() {
         // TODO: test method
     }
 
@@ -53,7 +55,7 @@ class SamsungPayWebWalletDataTest {
      * Test the property 'recurringPayment'
      */
     @Test
-    void recurringPaymentTest() {
+    public void recurringPaymentTest() {
         // TODO: test recurringPayment
     }
 
@@ -61,7 +63,7 @@ class SamsungPayWebWalletDataTest {
      * Test the property 'cardBrand'
      */
     @Test
-    void cardBrandTest() {
+    public void cardBrandTest() {
         // TODO: test cardBrand
     }
 
@@ -69,7 +71,7 @@ class SamsungPayWebWalletDataTest {
      * Test the property 'cardLast4digits'
      */
     @Test
-    void cardLast4digitsTest() {
+    public void cardLast4digitsTest() {
         // TODO: test cardLast4digits
     }
 
@@ -77,7 +79,7 @@ class SamsungPayWebWalletDataTest {
      * Test the property '_3dS'
      */
     @Test
-    void _3dSTest() {
+    public void _3dSTest() {
         // TODO: test _3dS
     }
 

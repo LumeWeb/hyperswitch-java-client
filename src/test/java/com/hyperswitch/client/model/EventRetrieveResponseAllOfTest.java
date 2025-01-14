@@ -25,20 +25,22 @@ import org.openapitools.jackson.nullable.JsonNullable;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.openapitools.jackson.nullable.JsonNullable;
 import java.util.NoSuchElementException;
-import org.junit.jupiter.api.Test;
+import org.junit.Assert;
+import org.junit.Ignore;
+import org.junit.Test;
 
 
 /**
  * Model tests for EventRetrieveResponseAllOf
  */
-class EventRetrieveResponseAllOfTest {
+public class EventRetrieveResponseAllOfTest {
     private final EventRetrieveResponseAllOf model = new EventRetrieveResponseAllOf();
 
     /**
      * Model tests for EventRetrieveResponseAllOf
      */
     @Test
-    void testEventRetrieveResponseAllOf() {
+    public void testEventRetrieveResponseAllOf() {
         // TODO: test EventRetrieveResponseAllOf
     }
 
@@ -46,7 +48,7 @@ class EventRetrieveResponseAllOfTest {
      * Test the property 'request'
      */
     @Test
-    void requestTest() {
+    public void requestTest() {
         // TODO: test request
     }
 
@@ -54,7 +56,7 @@ class EventRetrieveResponseAllOfTest {
      * Test the property 'response'
      */
     @Test
-    void responseTest() {
+    public void responseTest() {
         // TODO: test response
     }
 
@@ -62,7 +64,7 @@ class EventRetrieveResponseAllOfTest {
      * Test the property 'deliveryAttempt'
      */
     @Test
-    void deliveryAttemptTest() {
+    public void deliveryAttemptTest() {
         // TODO: test deliveryAttempt
     }
 

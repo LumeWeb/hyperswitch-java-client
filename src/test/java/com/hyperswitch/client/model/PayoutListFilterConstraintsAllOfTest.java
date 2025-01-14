@@ -29,20 +29,22 @@ import org.openapitools.jackson.nullable.JsonNullable;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.openapitools.jackson.nullable.JsonNullable;
 import java.util.NoSuchElementException;
-import org.junit.jupiter.api.Test;
+import org.junit.Assert;
+import org.junit.Ignore;
+import org.junit.Test;
 
 
 /**
  * Model tests for PayoutListFilterConstraintsAllOf
  */
-class PayoutListFilterConstraintsAllOfTest {
+public class PayoutListFilterConstraintsAllOfTest {
     private final PayoutListFilterConstraintsAllOf model = new PayoutListFilterConstraintsAllOf();
 
     /**
      * Model tests for PayoutListFilterConstraintsAllOf
      */
     @Test
-    void testPayoutListFilterConstraintsAllOf() {
+    public void testPayoutListFilterConstraintsAllOf() {
         // TODO: test PayoutListFilterConstraintsAllOf
     }
 
@@ -50,7 +52,7 @@ class PayoutListFilterConstraintsAllOfTest {
      * Test the property 'payoutId'
      */
     @Test
-    void payoutIdTest() {
+    public void payoutIdTest() {
         // TODO: test payoutId
     }
 
@@ -58,7 +60,7 @@ class PayoutListFilterConstraintsAllOfTest {
      * Test the property 'profileId'
      */
     @Test
-    void profileIdTest() {
+    public void profileIdTest() {
         // TODO: test profileId
     }
 
@@ -66,7 +68,7 @@ class PayoutListFilterConstraintsAllOfTest {
      * Test the property 'customerId'
      */
     @Test
-    void customerIdTest() {
+    public void customerIdTest() {
         // TODO: test customerId
     }
 
@@ -74,7 +76,7 @@ class PayoutListFilterConstraintsAllOfTest {
      * Test the property 'limit'
      */
     @Test
-    void limitTest() {
+    public void limitTest() {
         // TODO: test limit
     }
 
@@ -82,7 +84,7 @@ class PayoutListFilterConstraintsAllOfTest {
      * Test the property 'offset'
      */
     @Test
-    void offsetTest() {
+    public void offsetTest() {
         // TODO: test offset
     }
 
@@ -90,7 +92,7 @@ class PayoutListFilterConstraintsAllOfTest {
      * Test the property 'connector'
      */
     @Test
-    void connectorTest() {
+    public void connectorTest() {
         // TODO: test connector
     }
 
@@ -98,7 +100,7 @@ class PayoutListFilterConstraintsAllOfTest {
      * Test the property 'currency'
      */
     @Test
-    void currencyTest() {
+    public void currencyTest() {
         // TODO: test currency
     }
 
@@ -106,7 +108,7 @@ class PayoutListFilterConstraintsAllOfTest {
      * Test the property 'status'
      */
     @Test
-    void statusTest() {
+    public void statusTest() {
         // TODO: test status
     }
 
@@ -114,7 +116,7 @@ class PayoutListFilterConstraintsAllOfTest {
      * Test the property 'payoutMethod'
      */
     @Test
-    void payoutMethodTest() {
+    public void payoutMethodTest() {
         // TODO: test payoutMethod
     }
 
@@ -122,7 +124,7 @@ class PayoutListFilterConstraintsAllOfTest {
      * Test the property 'entityType'
      */
     @Test
-    void entityTypeTest() {
+    public void entityTypeTest() {
         // TODO: test entityType
     }
 

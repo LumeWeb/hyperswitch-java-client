@@ -22,20 +22,22 @@ import org.openapitools.jackson.nullable.JsonNullable;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.openapitools.jackson.nullable.JsonNullable;
 import java.util.NoSuchElementException;
-import org.junit.jupiter.api.Test;
+import org.junit.Assert;
+import org.junit.Ignore;
+import org.junit.Test;
 
 
 /**
  * Model tests for BancontactBankRedirectAdditionalData
  */
-class BancontactBankRedirectAdditionalDataTest {
+public class BancontactBankRedirectAdditionalDataTest {
     private final BancontactBankRedirectAdditionalData model = new BancontactBankRedirectAdditionalData();
 
     /**
      * Model tests for BancontactBankRedirectAdditionalData
      */
     @Test
-    void testBancontactBankRedirectAdditionalData() {
+    public void testBancontactBankRedirectAdditionalData() {
         // TODO: test BancontactBankRedirectAdditionalData
     }
 
@@ -43,7 +45,7 @@ class BancontactBankRedirectAdditionalDataTest {
      * Test the property 'last4'
      */
     @Test
-    void last4Test() {
+    public void last4Test() {
         // TODO: test last4
     }
 
@@ -51,7 +53,7 @@ class BancontactBankRedirectAdditionalDataTest {
      * Test the property 'cardExpMonth'
      */
     @Test
-    void cardExpMonthTest() {
+    public void cardExpMonthTest() {
         // TODO: test cardExpMonth
     }
 
@@ -59,7 +61,7 @@ class BancontactBankRedirectAdditionalDataTest {
      * Test the property 'cardExpYear'
      */
     @Test
-    void cardExpYearTest() {
+    public void cardExpYearTest() {
         // TODO: test cardExpYear
     }
 
@@ -67,7 +69,7 @@ class BancontactBankRedirectAdditionalDataTest {
      * Test the property 'cardHolderName'
      */
     @Test
-    void cardHolderNameTest() {
+    public void cardHolderNameTest() {
         // TODO: test cardHolderName
     }
 

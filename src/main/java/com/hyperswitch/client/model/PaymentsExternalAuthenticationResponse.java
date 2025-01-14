@@ -27,6 +27,9 @@ import org.openapitools.jackson.nullable.JsonNullable;
 import java.util.NoSuchElementException;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 import com.fasterxml.jackson.annotation.JsonTypeName;
+import java.io.UnsupportedEncodingException;
+import java.net.URLEncoder;
+import java.util.StringJoiner;
 
 /**
  * PaymentsExternalAuthenticationResponse
@@ -385,6 +388,121 @@ public class PaymentsExternalAuthenticationResponse {
       return "null";
     }
     return o.toString().replace("\n", "\n    ");
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @return URL query string
+   */
+  public String toUrlQueryString() {
+    return toUrlQueryString(null);
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @param prefix prefix of the query string
+   * @return URL query string
+   */
+  public String toUrlQueryString(String prefix) {
+    String suffix = "";
+    String containerSuffix = "";
+    String containerPrefix = "";
+    if (prefix == null) {
+      // style=form, explode=true, e.g. /pet?name=cat&type=manx
+      prefix = "";
+    } else {
+      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+      prefix = prefix + "[";
+      suffix = "]";
+      containerSuffix = "]";
+      containerPrefix = "[";
+    }
+
+    StringJoiner joiner = new StringJoiner("&");
+
+    // add `trans_status` to the URL query string
+    if (getTransStatus() != null) {
+      try {
+        joiner.add(String.format("%strans_status%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getTransStatus()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `acs_url` to the URL query string
+    if (getAcsUrl() != null) {
+      try {
+        joiner.add(String.format("%sacs_url%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getAcsUrl()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `challenge_request` to the URL query string
+    if (getChallengeRequest() != null) {
+      try {
+        joiner.add(String.format("%schallenge_request%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getChallengeRequest()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `acs_reference_number` to the URL query string
+    if (getAcsReferenceNumber() != null) {
+      try {
+        joiner.add(String.format("%sacs_reference_number%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getAcsReferenceNumber()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `acs_trans_id` to the URL query string
+    if (getAcsTransId() != null) {
+      try {
+        joiner.add(String.format("%sacs_trans_id%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getAcsTransId()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `three_dsserver_trans_id` to the URL query string
+    if (getThreeDsserverTransId() != null) {
+      try {
+        joiner.add(String.format("%sthree_dsserver_trans_id%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getThreeDsserverTransId()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `acs_signed_content` to the URL query string
+    if (getAcsSignedContent() != null) {
+      try {
+        joiner.add(String.format("%sacs_signed_content%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getAcsSignedContent()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `three_ds_requestor_url` to the URL query string
+    if (getThreeDsRequestorUrl() != null) {
+      try {
+        joiner.add(String.format("%sthree_ds_requestor_url%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getThreeDsRequestorUrl()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    return joiner.toString();
   }
 
 }

@@ -39,20 +39,22 @@ import com.hyperswitch.client.model.BankTransferDataOneOf7;
 import com.hyperswitch.client.model.BankTransferDataOneOf8;
 import com.hyperswitch.client.model.BankTransferDataOneOf9;
 import com.hyperswitch.client.model.BankTransferDataOneOfAchBankTransfer;
-import org.junit.jupiter.api.Test;
+import org.junit.Assert;
+import org.junit.Ignore;
+import org.junit.Test;
 
 
 /**
  * Model tests for BankTransferData
  */
-class BankTransferDataTest {
+public class BankTransferDataTest {
     private final BankTransferData model = new BankTransferData();
 
     /**
      * Model tests for BankTransferData
      */
     @Test
-    void testBankTransferData() {
+    public void testBankTransferData() {
         // TODO: test BankTransferData
     }
 
@@ -60,7 +62,7 @@ class BankTransferDataTest {
      * Test the property 'achBankTransfer'
      */
     @Test
-    void achBankTransferTest() {
+    public void achBankTransferTest() {
         // TODO: test achBankTransfer
     }
 
@@ -68,7 +70,7 @@ class BankTransferDataTest {
      * Test the property 'sepaBankTransfer'
      */
     @Test
-    void sepaBankTransferTest() {
+    public void sepaBankTransferTest() {
         // TODO: test sepaBankTransfer
     }
 
@@ -76,7 +78,7 @@ class BankTransferDataTest {
      * Test the property 'bacsBankTransfer'
      */
     @Test
-    void bacsBankTransferTest() {
+    public void bacsBankTransferTest() {
         // TODO: test bacsBankTransfer
     }
 
@@ -84,7 +86,7 @@ class BankTransferDataTest {
      * Test the property 'multibancoBankTransfer'
      */
     @Test
-    void multibancoBankTransferTest() {
+    public void multibancoBankTransferTest() {
         // TODO: test multibancoBankTransfer
     }
 
@@ -92,7 +94,7 @@ class BankTransferDataTest {
      * Test the property 'permataBankTransfer'
      */
     @Test
-    void permataBankTransferTest() {
+    public void permataBankTransferTest() {
         // TODO: test permataBankTransfer
     }
 
@@ -100,7 +102,7 @@ class BankTransferDataTest {
      * Test the property 'bcaBankTransfer'
      */
     @Test
-    void bcaBankTransferTest() {
+    public void bcaBankTransferTest() {
         // TODO: test bcaBankTransfer
     }
 
@@ -108,7 +110,7 @@ class BankTransferDataTest {
      * Test the property 'bniVaBankTransfer'
      */
     @Test
-    void bniVaBankTransferTest() {
+    public void bniVaBankTransferTest() {
         // TODO: test bniVaBankTransfer
     }
 
@@ -116,7 +118,7 @@ class BankTransferDataTest {
      * Test the property 'briVaBankTransfer'
      */
     @Test
-    void briVaBankTransferTest() {
+    public void briVaBankTransferTest() {
         // TODO: test briVaBankTransfer
     }
 
@@ -124,7 +126,7 @@ class BankTransferDataTest {
      * Test the property 'cimbVaBankTransfer'
      */
     @Test
-    void cimbVaBankTransferTest() {
+    public void cimbVaBankTransferTest() {
         // TODO: test cimbVaBankTransfer
     }
 
@@ -132,7 +134,7 @@ class BankTransferDataTest {
      * Test the property 'danamonVaBankTransfer'
      */
     @Test
-    void danamonVaBankTransferTest() {
+    public void danamonVaBankTransferTest() {
         // TODO: test danamonVaBankTransfer
     }
 
@@ -140,7 +142,7 @@ class BankTransferDataTest {
      * Test the property 'mandiriVaBankTransfer'
      */
     @Test
-    void mandiriVaBankTransferTest() {
+    public void mandiriVaBankTransferTest() {
         // TODO: test mandiriVaBankTransfer
     }
 
@@ -148,7 +150,7 @@ class BankTransferDataTest {
      * Test the property 'pix'
      */
     @Test
-    void pixTest() {
+    public void pixTest() {
         // TODO: test pix
     }
 
@@ -156,7 +158,7 @@ class BankTransferDataTest {
      * Test the property 'pse'
      */
     @Test
-    void pseTest() {
+    public void pseTest() {
         // TODO: test pse
     }
 
@@ -164,7 +166,7 @@ class BankTransferDataTest {
      * Test the property 'localBankTransfer'
      */
     @Test
-    void localBankTransferTest() {
+    public void localBankTransferTest() {
         // TODO: test localBankTransfer
     }
 

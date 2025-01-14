@@ -25,20 +25,22 @@ import com.hyperswitch.client.model.FieldTypeOneOf3;
 import com.hyperswitch.client.model.FieldTypeOneOf4;
 import com.hyperswitch.client.model.FieldTypeOneOf5;
 import com.hyperswitch.client.model.FieldTypeOneOfUserCountry;
-import org.junit.jupiter.api.Test;
+import org.junit.Assert;
+import org.junit.Ignore;
+import org.junit.Test;
 
 
 /**
  * Model tests for FieldType
  */
-class FieldTypeTest {
+public class FieldTypeTest {
     private final FieldType model = new FieldType();
 
     /**
      * Model tests for FieldType
      */
     @Test
-    void testFieldType() {
+    public void testFieldType() {
         // TODO: test FieldType
     }
 
@@ -46,7 +48,7 @@ class FieldTypeTest {
      * Test the property 'userCountry'
      */
     @Test
-    void userCountryTest() {
+    public void userCountryTest() {
         // TODO: test userCountry
     }
 
@@ -54,7 +56,7 @@ class FieldTypeTest {
      * Test the property 'userCurrency'
      */
     @Test
-    void userCurrencyTest() {
+    public void userCurrencyTest() {
         // TODO: test userCurrency
     }
 
@@ -62,7 +64,7 @@ class FieldTypeTest {
      * Test the property 'userAddressCountry'
      */
     @Test
-    void userAddressCountryTest() {
+    public void userAddressCountryTest() {
         // TODO: test userAddressCountry
     }
 
@@ -70,7 +72,7 @@ class FieldTypeTest {
      * Test the property 'userShippingAddressCountry'
      */
     @Test
-    void userShippingAddressCountryTest() {
+    public void userShippingAddressCountryTest() {
         // TODO: test userShippingAddressCountry
     }
 
@@ -78,7 +80,7 @@ class FieldTypeTest {
      * Test the property 'dropDown'
      */
     @Test
-    void dropDownTest() {
+    public void dropDownTest() {
         // TODO: test dropDown
     }
 
@@ -86,7 +88,7 @@ class FieldTypeTest {
      * Test the property 'languagePreference'
      */
     @Test
-    void languagePreferenceTest() {
+    public void languagePreferenceTest() {
         // TODO: test languagePreference
     }
 

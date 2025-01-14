@@ -24,20 +24,22 @@ import org.openapitools.jackson.nullable.JsonNullable;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.openapitools.jackson.nullable.JsonNullable;
 import java.util.NoSuchElementException;
-import org.junit.jupiter.api.Test;
+import org.junit.Assert;
+import org.junit.Ignore;
+import org.junit.Test;
 
 
 /**
  * Model tests for AchBankTransferAdditionalData
  */
-class AchBankTransferAdditionalDataTest {
+public class AchBankTransferAdditionalDataTest {
     private final AchBankTransferAdditionalData model = new AchBankTransferAdditionalData();
 
     /**
      * Model tests for AchBankTransferAdditionalData
      */
     @Test
-    void testAchBankTransferAdditionalData() {
+    public void testAchBankTransferAdditionalData() {
         // TODO: test AchBankTransferAdditionalData
     }
 
@@ -45,7 +47,7 @@ class AchBankTransferAdditionalDataTest {
      * Test the property 'bankAccountNumber'
      */
     @Test
-    void bankAccountNumberTest() {
+    public void bankAccountNumberTest() {
         // TODO: test bankAccountNumber
     }
 
@@ -53,7 +55,7 @@ class AchBankTransferAdditionalDataTest {
      * Test the property 'bankRoutingNumber'
      */
     @Test
-    void bankRoutingNumberTest() {
+    public void bankRoutingNumberTest() {
         // TODO: test bankRoutingNumber
     }
 
@@ -61,7 +63,7 @@ class AchBankTransferAdditionalDataTest {
      * Test the property 'bankName'
      */
     @Test
-    void bankNameTest() {
+    public void bankNameTest() {
         // TODO: test bankName
     }
 
@@ -69,7 +71,7 @@ class AchBankTransferAdditionalDataTest {
      * Test the property 'bankCountryCode'
      */
     @Test
-    void bankCountryCodeTest() {
+    public void bankCountryCodeTest() {
         // TODO: test bankCountryCode
     }
 
@@ -77,7 +79,7 @@ class AchBankTransferAdditionalDataTest {
      * Test the property 'bankCity'
      */
     @Test
-    void bankCityTest() {
+    public void bankCityTest() {
         // TODO: test bankCity
     }
 

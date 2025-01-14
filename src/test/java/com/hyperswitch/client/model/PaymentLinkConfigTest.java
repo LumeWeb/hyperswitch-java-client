@@ -29,20 +29,22 @@ import org.openapitools.jackson.nullable.JsonNullable;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.openapitools.jackson.nullable.JsonNullable;
 import java.util.NoSuchElementException;
-import org.junit.jupiter.api.Test;
+import org.junit.Assert;
+import org.junit.Ignore;
+import org.junit.Test;
 
 
 /**
  * Model tests for PaymentLinkConfig
  */
-class PaymentLinkConfigTest {
+public class PaymentLinkConfigTest {
     private final PaymentLinkConfig model = new PaymentLinkConfig();
 
     /**
      * Model tests for PaymentLinkConfig
      */
     @Test
-    void testPaymentLinkConfig() {
+    public void testPaymentLinkConfig() {
         // TODO: test PaymentLinkConfig
     }
 
@@ -50,7 +52,7 @@ class PaymentLinkConfigTest {
      * Test the property 'theme'
      */
     @Test
-    void themeTest() {
+    public void themeTest() {
         // TODO: test theme
     }
 
@@ -58,7 +60,7 @@ class PaymentLinkConfigTest {
      * Test the property 'logo'
      */
     @Test
-    void logoTest() {
+    public void logoTest() {
         // TODO: test logo
     }
 
@@ -66,7 +68,7 @@ class PaymentLinkConfigTest {
      * Test the property 'sellerName'
      */
     @Test
-    void sellerNameTest() {
+    public void sellerNameTest() {
         // TODO: test sellerName
     }
 
@@ -74,7 +76,7 @@ class PaymentLinkConfigTest {
      * Test the property 'sdkLayout'
      */
     @Test
-    void sdkLayoutTest() {
+    public void sdkLayoutTest() {
         // TODO: test sdkLayout
     }
 
@@ -82,7 +84,7 @@ class PaymentLinkConfigTest {
      * Test the property 'displaySdkOnly'
      */
     @Test
-    void displaySdkOnlyTest() {
+    public void displaySdkOnlyTest() {
         // TODO: test displaySdkOnly
     }
 
@@ -90,7 +92,7 @@ class PaymentLinkConfigTest {
      * Test the property 'enabledSavedPaymentMethod'
      */
     @Test
-    void enabledSavedPaymentMethodTest() {
+    public void enabledSavedPaymentMethodTest() {
         // TODO: test enabledSavedPaymentMethod
     }
 
@@ -98,7 +100,7 @@ class PaymentLinkConfigTest {
      * Test the property 'hideCardNicknameField'
      */
     @Test
-    void hideCardNicknameFieldTest() {
+    public void hideCardNicknameFieldTest() {
         // TODO: test hideCardNicknameField
     }
 
@@ -106,7 +108,7 @@ class PaymentLinkConfigTest {
      * Test the property 'showCardFormByDefault'
      */
     @Test
-    void showCardFormByDefaultTest() {
+    public void showCardFormByDefaultTest() {
         // TODO: test showCardFormByDefault
     }
 
@@ -114,7 +116,7 @@ class PaymentLinkConfigTest {
      * Test the property 'allowedDomains'
      */
     @Test
-    void allowedDomainsTest() {
+    public void allowedDomainsTest() {
         // TODO: test allowedDomains
     }
 
@@ -122,7 +124,7 @@ class PaymentLinkConfigTest {
      * Test the property 'transactionDetails'
      */
     @Test
-    void transactionDetailsTest() {
+    public void transactionDetailsTest() {
         // TODO: test transactionDetails
     }
 
@@ -130,7 +132,7 @@ class PaymentLinkConfigTest {
      * Test the property 'backgroundImage'
      */
     @Test
-    void backgroundImageTest() {
+    public void backgroundImageTest() {
         // TODO: test backgroundImage
     }
 
@@ -138,7 +140,7 @@ class PaymentLinkConfigTest {
      * Test the property 'detailsLayout'
      */
     @Test
-    void detailsLayoutTest() {
+    public void detailsLayoutTest() {
         // TODO: test detailsLayout
     }
 
@@ -146,7 +148,7 @@ class PaymentLinkConfigTest {
      * Test the property 'brandingVisibility'
      */
     @Test
-    void brandingVisibilityTest() {
+    public void brandingVisibilityTest() {
         // TODO: test brandingVisibility
     }
 

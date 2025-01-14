@@ -23,20 +23,22 @@ import org.openapitools.jackson.nullable.JsonNullable;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.openapitools.jackson.nullable.JsonNullable;
 import java.util.NoSuchElementException;
-import org.junit.jupiter.api.Test;
+import org.junit.Assert;
+import org.junit.Ignore;
+import org.junit.Test;
 
 
 /**
  * Model tests for PaymentsExternalAuthenticationResponse
  */
-class PaymentsExternalAuthenticationResponseTest {
+public class PaymentsExternalAuthenticationResponseTest {
     private final PaymentsExternalAuthenticationResponse model = new PaymentsExternalAuthenticationResponse();
 
     /**
      * Model tests for PaymentsExternalAuthenticationResponse
      */
     @Test
-    void testPaymentsExternalAuthenticationResponse() {
+    public void testPaymentsExternalAuthenticationResponse() {
         // TODO: test PaymentsExternalAuthenticationResponse
     }
 
@@ -44,7 +46,7 @@ class PaymentsExternalAuthenticationResponseTest {
      * Test the property 'transStatus'
      */
     @Test
-    void transStatusTest() {
+    public void transStatusTest() {
         // TODO: test transStatus
     }
 
@@ -52,7 +54,7 @@ class PaymentsExternalAuthenticationResponseTest {
      * Test the property 'acsUrl'
      */
     @Test
-    void acsUrlTest() {
+    public void acsUrlTest() {
         // TODO: test acsUrl
     }
 
@@ -60,7 +62,7 @@ class PaymentsExternalAuthenticationResponseTest {
      * Test the property 'challengeRequest'
      */
     @Test
-    void challengeRequestTest() {
+    public void challengeRequestTest() {
         // TODO: test challengeRequest
     }
 
@@ -68,7 +70,7 @@ class PaymentsExternalAuthenticationResponseTest {
      * Test the property 'acsReferenceNumber'
      */
     @Test
-    void acsReferenceNumberTest() {
+    public void acsReferenceNumberTest() {
         // TODO: test acsReferenceNumber
     }
 
@@ -76,7 +78,7 @@ class PaymentsExternalAuthenticationResponseTest {
      * Test the property 'acsTransId'
      */
     @Test
-    void acsTransIdTest() {
+    public void acsTransIdTest() {
         // TODO: test acsTransId
     }
 
@@ -84,7 +86,7 @@ class PaymentsExternalAuthenticationResponseTest {
      * Test the property 'threeDsserverTransId'
      */
     @Test
-    void threeDsserverTransIdTest() {
+    public void threeDsserverTransIdTest() {
         // TODO: test threeDsserverTransId
     }
 
@@ -92,7 +94,7 @@ class PaymentsExternalAuthenticationResponseTest {
      * Test the property 'acsSignedContent'
      */
     @Test
-    void acsSignedContentTest() {
+    public void acsSignedContentTest() {
         // TODO: test acsSignedContent
     }
 
@@ -100,7 +102,7 @@ class PaymentsExternalAuthenticationResponseTest {
      * Test the property 'threeDsRequestorUrl'
      */
     @Test
-    void threeDsRequestorUrlTest() {
+    public void threeDsRequestorUrlTest() {
         // TODO: test threeDsRequestorUrl
     }
 

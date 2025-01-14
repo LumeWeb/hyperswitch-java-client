@@ -23,20 +23,22 @@ import org.openapitools.jackson.nullable.JsonNullable;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.openapitools.jackson.nullable.JsonNullable;
 import java.util.NoSuchElementException;
-import org.junit.jupiter.api.Test;
+import org.junit.Assert;
+import org.junit.Ignore;
+import org.junit.Test;
 
 
 /**
  * Model tests for RequiredFieldInfo
  */
-class RequiredFieldInfoTest {
+public class RequiredFieldInfoTest {
     private final RequiredFieldInfo model = new RequiredFieldInfo();
 
     /**
      * Model tests for RequiredFieldInfo
      */
     @Test
-    void testRequiredFieldInfo() {
+    public void testRequiredFieldInfo() {
         // TODO: test RequiredFieldInfo
     }
 
@@ -44,7 +46,7 @@ class RequiredFieldInfoTest {
      * Test the property 'requiredField'
      */
     @Test
-    void requiredFieldTest() {
+    public void requiredFieldTest() {
         // TODO: test requiredField
     }
 
@@ -52,7 +54,7 @@ class RequiredFieldInfoTest {
      * Test the property 'displayName'
      */
     @Test
-    void displayNameTest() {
+    public void displayNameTest() {
         // TODO: test displayName
     }
 
@@ -60,7 +62,7 @@ class RequiredFieldInfoTest {
      * Test the property 'fieldType'
      */
     @Test
-    void fieldTypeTest() {
+    public void fieldTypeTest() {
         // TODO: test fieldType
     }
 
@@ -68,7 +70,7 @@ class RequiredFieldInfoTest {
      * Test the property 'value'
      */
     @Test
-    void valueTest() {
+    public void valueTest() {
         // TODO: test value
     }
 

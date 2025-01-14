@@ -18,20 +18,22 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonTypeName;
 import com.fasterxml.jackson.annotation.JsonValue;
-import org.junit.jupiter.api.Test;
+import org.junit.Assert;
+import org.junit.Ignore;
+import org.junit.Test;
 
 
 /**
  * Model tests for PaymentProcessingDetails
  */
-class PaymentProcessingDetailsTest {
+public class PaymentProcessingDetailsTest {
     private final PaymentProcessingDetails model = new PaymentProcessingDetails();
 
     /**
      * Model tests for PaymentProcessingDetails
      */
     @Test
-    void testPaymentProcessingDetails() {
+    public void testPaymentProcessingDetails() {
         // TODO: test PaymentProcessingDetails
     }
 
@@ -39,7 +41,7 @@ class PaymentProcessingDetailsTest {
      * Test the property 'paymentProcessingCertificate'
      */
     @Test
-    void paymentProcessingCertificateTest() {
+    public void paymentProcessingCertificateTest() {
         // TODO: test paymentProcessingCertificate
     }
 
@@ -47,7 +49,7 @@ class PaymentProcessingDetailsTest {
      * Test the property 'paymentProcessingCertificateKey'
      */
     @Test
-    void paymentProcessingCertificateKeyTest() {
+    public void paymentProcessingCertificateKeyTest() {
         // TODO: test paymentProcessingCertificateKey
     }
 

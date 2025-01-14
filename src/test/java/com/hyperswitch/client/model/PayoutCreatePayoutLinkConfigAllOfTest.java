@@ -26,20 +26,22 @@ import org.openapitools.jackson.nullable.JsonNullable;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.openapitools.jackson.nullable.JsonNullable;
 import java.util.NoSuchElementException;
-import org.junit.jupiter.api.Test;
+import org.junit.Assert;
+import org.junit.Ignore;
+import org.junit.Test;
 
 
 /**
  * Model tests for PayoutCreatePayoutLinkConfigAllOf
  */
-class PayoutCreatePayoutLinkConfigAllOfTest {
+public class PayoutCreatePayoutLinkConfigAllOfTest {
     private final PayoutCreatePayoutLinkConfigAllOf model = new PayoutCreatePayoutLinkConfigAllOf();
 
     /**
      * Model tests for PayoutCreatePayoutLinkConfigAllOf
      */
     @Test
-    void testPayoutCreatePayoutLinkConfigAllOf() {
+    public void testPayoutCreatePayoutLinkConfigAllOf() {
         // TODO: test PayoutCreatePayoutLinkConfigAllOf
     }
 
@@ -47,7 +49,7 @@ class PayoutCreatePayoutLinkConfigAllOfTest {
      * Test the property 'payoutLinkId'
      */
     @Test
-    void payoutLinkIdTest() {
+    public void payoutLinkIdTest() {
         // TODO: test payoutLinkId
     }
 
@@ -55,7 +57,7 @@ class PayoutCreatePayoutLinkConfigAllOfTest {
      * Test the property 'enabledPaymentMethods'
      */
     @Test
-    void enabledPaymentMethodsTest() {
+    public void enabledPaymentMethodsTest() {
         // TODO: test enabledPaymentMethods
     }
 
@@ -63,7 +65,7 @@ class PayoutCreatePayoutLinkConfigAllOfTest {
      * Test the property 'formLayout'
      */
     @Test
-    void formLayoutTest() {
+    public void formLayoutTest() {
         // TODO: test formLayout
     }
 
@@ -71,7 +73,7 @@ class PayoutCreatePayoutLinkConfigAllOfTest {
      * Test the property 'testMode'
      */
     @Test
-    void testModeTest() {
+    public void testModeTest() {
         // TODO: test testMode
     }
 

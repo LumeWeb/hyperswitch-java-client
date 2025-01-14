@@ -13,18 +13,20 @@
 
 package com.hyperswitch.client.model;
 
-import org.junit.jupiter.api.Test;
+import org.junit.Assert;
+import org.junit.Ignore;
+import org.junit.Test;
 
 
 /**
  * Model tests for MobilePaymentConsent
  */
-class MobilePaymentConsentTest {
+public class MobilePaymentConsentTest {
     /**
      * Model tests for MobilePaymentConsent
      */
     @Test
-    void testMobilePaymentConsent() {
+    public void testMobilePaymentConsent() {
         // TODO: test MobilePaymentConsent
     }
 

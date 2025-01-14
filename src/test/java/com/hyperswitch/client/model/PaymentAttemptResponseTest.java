@@ -30,20 +30,22 @@ import org.openapitools.jackson.nullable.JsonNullable;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.openapitools.jackson.nullable.JsonNullable;
 import java.util.NoSuchElementException;
-import org.junit.jupiter.api.Test;
+import org.junit.Assert;
+import org.junit.Ignore;
+import org.junit.Test;
 
 
 /**
  * Model tests for PaymentAttemptResponse
  */
-class PaymentAttemptResponseTest {
+public class PaymentAttemptResponseTest {
     private final PaymentAttemptResponse model = new PaymentAttemptResponse();
 
     /**
      * Model tests for PaymentAttemptResponse
      */
     @Test
-    void testPaymentAttemptResponse() {
+    public void testPaymentAttemptResponse() {
         // TODO: test PaymentAttemptResponse
     }
 
@@ -51,7 +53,7 @@ class PaymentAttemptResponseTest {
      * Test the property 'attemptId'
      */
     @Test
-    void attemptIdTest() {
+    public void attemptIdTest() {
         // TODO: test attemptId
     }
 
@@ -59,7 +61,7 @@ class PaymentAttemptResponseTest {
      * Test the property 'status'
      */
     @Test
-    void statusTest() {
+    public void statusTest() {
         // TODO: test status
     }
 
@@ -67,7 +69,7 @@ class PaymentAttemptResponseTest {
      * Test the property 'amount'
      */
     @Test
-    void amountTest() {
+    public void amountTest() {
         // TODO: test amount
     }
 
@@ -75,7 +77,7 @@ class PaymentAttemptResponseTest {
      * Test the property 'currency'
      */
     @Test
-    void currencyTest() {
+    public void currencyTest() {
         // TODO: test currency
     }
 
@@ -83,7 +85,7 @@ class PaymentAttemptResponseTest {
      * Test the property 'connector'
      */
     @Test
-    void connectorTest() {
+    public void connectorTest() {
         // TODO: test connector
     }
 
@@ -91,7 +93,7 @@ class PaymentAttemptResponseTest {
      * Test the property 'errorMessage'
      */
     @Test
-    void errorMessageTest() {
+    public void errorMessageTest() {
         // TODO: test errorMessage
     }
 
@@ -99,7 +101,7 @@ class PaymentAttemptResponseTest {
      * Test the property 'paymentMethod'
      */
     @Test
-    void paymentMethodTest() {
+    public void paymentMethodTest() {
         // TODO: test paymentMethod
     }
 
@@ -107,7 +109,7 @@ class PaymentAttemptResponseTest {
      * Test the property 'connectorTransactionId'
      */
     @Test
-    void connectorTransactionIdTest() {
+    public void connectorTransactionIdTest() {
         // TODO: test connectorTransactionId
     }
 
@@ -115,7 +117,7 @@ class PaymentAttemptResponseTest {
      * Test the property 'captureMethod'
      */
     @Test
-    void captureMethodTest() {
+    public void captureMethodTest() {
         // TODO: test captureMethod
     }
 
@@ -123,7 +125,7 @@ class PaymentAttemptResponseTest {
      * Test the property 'authenticationType'
      */
     @Test
-    void authenticationTypeTest() {
+    public void authenticationTypeTest() {
         // TODO: test authenticationType
     }
 
@@ -131,7 +133,7 @@ class PaymentAttemptResponseTest {
      * Test the property 'createdAt'
      */
     @Test
-    void createdAtTest() {
+    public void createdAtTest() {
         // TODO: test createdAt
     }
 
@@ -139,7 +141,7 @@ class PaymentAttemptResponseTest {
      * Test the property 'modifiedAt'
      */
     @Test
-    void modifiedAtTest() {
+    public void modifiedAtTest() {
         // TODO: test modifiedAt
     }
 
@@ -147,7 +149,7 @@ class PaymentAttemptResponseTest {
      * Test the property 'cancellationReason'
      */
     @Test
-    void cancellationReasonTest() {
+    public void cancellationReasonTest() {
         // TODO: test cancellationReason
     }
 
@@ -155,7 +157,7 @@ class PaymentAttemptResponseTest {
      * Test the property 'mandateId'
      */
     @Test
-    void mandateIdTest() {
+    public void mandateIdTest() {
         // TODO: test mandateId
     }
 
@@ -163,7 +165,7 @@ class PaymentAttemptResponseTest {
      * Test the property 'errorCode'
      */
     @Test
-    void errorCodeTest() {
+    public void errorCodeTest() {
         // TODO: test errorCode
     }
 
@@ -171,7 +173,7 @@ class PaymentAttemptResponseTest {
      * Test the property 'paymentToken'
      */
     @Test
-    void paymentTokenTest() {
+    public void paymentTokenTest() {
         // TODO: test paymentToken
     }
 
@@ -179,7 +181,7 @@ class PaymentAttemptResponseTest {
      * Test the property 'connectorMetadata'
      */
     @Test
-    void connectorMetadataTest() {
+    public void connectorMetadataTest() {
         // TODO: test connectorMetadata
     }
 
@@ -187,7 +189,7 @@ class PaymentAttemptResponseTest {
      * Test the property 'paymentExperience'
      */
     @Test
-    void paymentExperienceTest() {
+    public void paymentExperienceTest() {
         // TODO: test paymentExperience
     }
 
@@ -195,7 +197,7 @@ class PaymentAttemptResponseTest {
      * Test the property 'paymentMethodType'
      */
     @Test
-    void paymentMethodTypeTest() {
+    public void paymentMethodTypeTest() {
         // TODO: test paymentMethodType
     }
 
@@ -203,7 +205,7 @@ class PaymentAttemptResponseTest {
      * Test the property 'referenceId'
      */
     @Test
-    void referenceIdTest() {
+    public void referenceIdTest() {
         // TODO: test referenceId
     }
 
@@ -211,7 +213,7 @@ class PaymentAttemptResponseTest {
      * Test the property 'unifiedCode'
      */
     @Test
-    void unifiedCodeTest() {
+    public void unifiedCodeTest() {
         // TODO: test unifiedCode
     }
 
@@ -219,7 +221,7 @@ class PaymentAttemptResponseTest {
      * Test the property 'unifiedMessage'
      */
     @Test
-    void unifiedMessageTest() {
+    public void unifiedMessageTest() {
         // TODO: test unifiedMessage
     }
 
@@ -227,7 +229,7 @@ class PaymentAttemptResponseTest {
      * Test the property 'clientSource'
      */
     @Test
-    void clientSourceTest() {
+    public void clientSourceTest() {
         // TODO: test clientSource
     }
 
@@ -235,7 +237,7 @@ class PaymentAttemptResponseTest {
      * Test the property 'clientVersion'
      */
     @Test
-    void clientVersionTest() {
+    public void clientVersionTest() {
         // TODO: test clientVersion
     }
 

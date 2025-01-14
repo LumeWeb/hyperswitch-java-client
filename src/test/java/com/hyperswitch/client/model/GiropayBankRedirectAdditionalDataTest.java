@@ -23,20 +23,22 @@ import org.openapitools.jackson.nullable.JsonNullable;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.openapitools.jackson.nullable.JsonNullable;
 import java.util.NoSuchElementException;
-import org.junit.jupiter.api.Test;
+import org.junit.Assert;
+import org.junit.Ignore;
+import org.junit.Test;
 
 
 /**
  * Model tests for GiropayBankRedirectAdditionalData
  */
-class GiropayBankRedirectAdditionalDataTest {
+public class GiropayBankRedirectAdditionalDataTest {
     private final GiropayBankRedirectAdditionalData model = new GiropayBankRedirectAdditionalData();
 
     /**
      * Model tests for GiropayBankRedirectAdditionalData
      */
     @Test
-    void testGiropayBankRedirectAdditionalData() {
+    public void testGiropayBankRedirectAdditionalData() {
         // TODO: test GiropayBankRedirectAdditionalData
     }
 
@@ -44,7 +46,7 @@ class GiropayBankRedirectAdditionalDataTest {
      * Test the property 'bic'
      */
     @Test
-    void bicTest() {
+    public void bicTest() {
         // TODO: test bic
     }
 
@@ -52,7 +54,7 @@ class GiropayBankRedirectAdditionalDataTest {
      * Test the property 'iban'
      */
     @Test
-    void ibanTest() {
+    public void ibanTest() {
         // TODO: test iban
     }
 
@@ -60,7 +62,7 @@ class GiropayBankRedirectAdditionalDataTest {
      * Test the property 'country'
      */
     @Test
-    void countryTest() {
+    public void countryTest() {
         // TODO: test country
     }
 

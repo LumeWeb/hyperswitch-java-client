@@ -28,20 +28,22 @@ import org.openapitools.jackson.nullable.JsonNullable;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.openapitools.jackson.nullable.JsonNullable;
 import java.util.NoSuchElementException;
-import org.junit.jupiter.api.Test;
+import org.junit.Assert;
+import org.junit.Ignore;
+import org.junit.Test;
 
 
 /**
  * Model tests for PaymentMethodListResponse
  */
-class PaymentMethodListResponseTest {
+public class PaymentMethodListResponseTest {
     private final PaymentMethodListResponse model = new PaymentMethodListResponse();
 
     /**
      * Model tests for PaymentMethodListResponse
      */
     @Test
-    void testPaymentMethodListResponse() {
+    public void testPaymentMethodListResponse() {
         // TODO: test PaymentMethodListResponse
     }
 
@@ -49,7 +51,7 @@ class PaymentMethodListResponseTest {
      * Test the property 'redirectUrl'
      */
     @Test
-    void redirectUrlTest() {
+    public void redirectUrlTest() {
         // TODO: test redirectUrl
     }
 
@@ -57,7 +59,7 @@ class PaymentMethodListResponseTest {
      * Test the property 'currency'
      */
     @Test
-    void currencyTest() {
+    public void currencyTest() {
         // TODO: test currency
     }
 
@@ -65,7 +67,7 @@ class PaymentMethodListResponseTest {
      * Test the property 'paymentMethods'
      */
     @Test
-    void paymentMethodsTest() {
+    public void paymentMethodsTest() {
         // TODO: test paymentMethods
     }
 
@@ -73,7 +75,7 @@ class PaymentMethodListResponseTest {
      * Test the property 'mandatePayment'
      */
     @Test
-    void mandatePaymentTest() {
+    public void mandatePaymentTest() {
         // TODO: test mandatePayment
     }
 
@@ -81,7 +83,7 @@ class PaymentMethodListResponseTest {
      * Test the property 'merchantName'
      */
     @Test
-    void merchantNameTest() {
+    public void merchantNameTest() {
         // TODO: test merchantName
     }
 
@@ -89,7 +91,7 @@ class PaymentMethodListResponseTest {
      * Test the property 'showSurchargeBreakupScreen'
      */
     @Test
-    void showSurchargeBreakupScreenTest() {
+    public void showSurchargeBreakupScreenTest() {
         // TODO: test showSurchargeBreakupScreen
     }
 
@@ -97,7 +99,7 @@ class PaymentMethodListResponseTest {
      * Test the property 'paymentType'
      */
     @Test
-    void paymentTypeTest() {
+    public void paymentTypeTest() {
         // TODO: test paymentType
     }
 
@@ -105,7 +107,7 @@ class PaymentMethodListResponseTest {
      * Test the property 'requestExternalThreeDsAuthentication'
      */
     @Test
-    void requestExternalThreeDsAuthenticationTest() {
+    public void requestExternalThreeDsAuthenticationTest() {
         // TODO: test requestExternalThreeDsAuthentication
     }
 
@@ -113,7 +115,7 @@ class PaymentMethodListResponseTest {
      * Test the property 'collectShippingDetailsFromWallets'
      */
     @Test
-    void collectShippingDetailsFromWalletsTest() {
+    public void collectShippingDetailsFromWalletsTest() {
         // TODO: test collectShippingDetailsFromWallets
     }
 
@@ -121,7 +123,7 @@ class PaymentMethodListResponseTest {
      * Test the property 'collectBillingDetailsFromWallets'
      */
     @Test
-    void collectBillingDetailsFromWalletsTest() {
+    public void collectBillingDetailsFromWalletsTest() {
         // TODO: test collectBillingDetailsFromWallets
     }
 
@@ -129,7 +131,7 @@ class PaymentMethodListResponseTest {
      * Test the property 'isTaxCalculationEnabled'
      */
     @Test
-    void isTaxCalculationEnabledTest() {
+    public void isTaxCalculationEnabledTest() {
         // TODO: test isTaxCalculationEnabled
     }
 

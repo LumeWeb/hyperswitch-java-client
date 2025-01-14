@@ -22,20 +22,22 @@ import org.openapitools.jackson.nullable.JsonNullable;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.openapitools.jackson.nullable.JsonNullable;
 import java.util.NoSuchElementException;
-import org.junit.jupiter.api.Test;
+import org.junit.Assert;
+import org.junit.Ignore;
+import org.junit.Test;
 
 
 /**
  * Model tests for BankRedirectDataOneOf2Blik
  */
-class BankRedirectDataOneOf2BlikTest {
+public class BankRedirectDataOneOf2BlikTest {
     private final BankRedirectDataOneOf2Blik model = new BankRedirectDataOneOf2Blik();
 
     /**
      * Model tests for BankRedirectDataOneOf2Blik
      */
     @Test
-    void testBankRedirectDataOneOf2Blik() {
+    public void testBankRedirectDataOneOf2Blik() {
         // TODO: test BankRedirectDataOneOf2Blik
     }
 
@@ -43,7 +45,7 @@ class BankRedirectDataOneOf2BlikTest {
      * Test the property 'blikCode'
      */
     @Test
-    void blikCodeTest() {
+    public void blikCodeTest() {
         // TODO: test blikCode
     }
 

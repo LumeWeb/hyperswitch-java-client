@@ -13,18 +13,20 @@
 
 package com.hyperswitch.client.model;
 
-import org.junit.jupiter.api.Test;
+import org.junit.Assert;
+import org.junit.Ignore;
+import org.junit.Test;
 
 
 /**
  * Model tests for Currency
  */
-class CurrencyTest {
+public class CurrencyTest {
     /**
      * Model tests for Currency
      */
     @Test
-    void testCurrency() {
+    public void testCurrency() {
         // TODO: test Currency
     }
 

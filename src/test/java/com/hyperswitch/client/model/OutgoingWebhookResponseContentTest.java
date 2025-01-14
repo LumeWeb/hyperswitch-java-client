@@ -25,20 +25,22 @@ import org.openapitools.jackson.nullable.JsonNullable;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.openapitools.jackson.nullable.JsonNullable;
 import java.util.NoSuchElementException;
-import org.junit.jupiter.api.Test;
+import org.junit.Assert;
+import org.junit.Ignore;
+import org.junit.Test;
 
 
 /**
  * Model tests for OutgoingWebhookResponseContent
  */
-class OutgoingWebhookResponseContentTest {
+public class OutgoingWebhookResponseContentTest {
     private final OutgoingWebhookResponseContent model = new OutgoingWebhookResponseContent();
 
     /**
      * Model tests for OutgoingWebhookResponseContent
      */
     @Test
-    void testOutgoingWebhookResponseContent() {
+    public void testOutgoingWebhookResponseContent() {
         // TODO: test OutgoingWebhookResponseContent
     }
 
@@ -46,7 +48,7 @@ class OutgoingWebhookResponseContentTest {
      * Test the property 'body'
      */
     @Test
-    void bodyTest() {
+    public void bodyTest() {
         // TODO: test body
     }
 
@@ -54,7 +56,7 @@ class OutgoingWebhookResponseContentTest {
      * Test the property 'headers'
      */
     @Test
-    void headersTest() {
+    public void headersTest() {
         // TODO: test headers
     }
 
@@ -62,7 +64,7 @@ class OutgoingWebhookResponseContentTest {
      * Test the property 'statusCode'
      */
     @Test
-    void statusCodeTest() {
+    public void statusCodeTest() {
         // TODO: test statusCode
     }
 
@@ -70,7 +72,7 @@ class OutgoingWebhookResponseContentTest {
      * Test the property 'errorMessage'
      */
     @Test
-    void errorMessageTest() {
+    public void errorMessageTest() {
         // TODO: test errorMessage
     }
 

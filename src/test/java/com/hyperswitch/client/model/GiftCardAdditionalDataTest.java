@@ -21,20 +21,22 @@ import com.fasterxml.jackson.annotation.JsonValue;
 import com.hyperswitch.client.model.GiftCardAdditionalDataOneOf;
 import com.hyperswitch.client.model.GiftCardAdditionalDataOneOf1;
 import com.hyperswitch.client.model.GivexGiftCardAdditionalData;
-import org.junit.jupiter.api.Test;
+import org.junit.Assert;
+import org.junit.Ignore;
+import org.junit.Test;
 
 
 /**
  * Model tests for GiftCardAdditionalData
  */
-class GiftCardAdditionalDataTest {
+public class GiftCardAdditionalDataTest {
     private final GiftCardAdditionalData model = new GiftCardAdditionalData();
 
     /**
      * Model tests for GiftCardAdditionalData
      */
     @Test
-    void testGiftCardAdditionalData() {
+    public void testGiftCardAdditionalData() {
         // TODO: test GiftCardAdditionalData
     }
 
@@ -42,7 +44,7 @@ class GiftCardAdditionalDataTest {
      * Test the property 'givex'
      */
     @Test
-    void givexTest() {
+    public void givexTest() {
         // TODO: test givex
     }
 
@@ -50,7 +52,7 @@ class GiftCardAdditionalDataTest {
      * Test the property 'paySafeCard'
      */
     @Test
-    void paySafeCardTest() {
+    public void paySafeCardTest() {
         // TODO: test paySafeCard
     }
 

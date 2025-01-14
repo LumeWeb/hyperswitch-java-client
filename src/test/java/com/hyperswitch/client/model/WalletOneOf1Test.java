@@ -19,20 +19,22 @@ import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonTypeName;
 import com.fasterxml.jackson.annotation.JsonValue;
 import com.hyperswitch.client.model.Venmo;
-import org.junit.jupiter.api.Test;
+import org.junit.Assert;
+import org.junit.Ignore;
+import org.junit.Test;
 
 
 /**
  * Model tests for WalletOneOf1
  */
-class WalletOneOf1Test {
+public class WalletOneOf1Test {
     private final WalletOneOf1 model = new WalletOneOf1();
 
     /**
      * Model tests for WalletOneOf1
      */
     @Test
-    void testWalletOneOf1() {
+    public void testWalletOneOf1() {
         // TODO: test WalletOneOf1
     }
 
@@ -40,7 +42,7 @@ class WalletOneOf1Test {
      * Test the property 'venmo'
      */
     @Test
-    void venmoTest() {
+    public void venmoTest() {
         // TODO: test venmo
     }
 

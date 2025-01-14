@@ -23,20 +23,22 @@ import com.fasterxml.jackson.annotation.JsonTypeName;
 import com.fasterxml.jackson.annotation.JsonValue;
 import com.hyperswitch.client.model.PaymentProcessingDetailsAtOneOf;
 import com.hyperswitch.client.model.PaymentProcessingDetailsAtOneOf1;
-import org.junit.jupiter.api.Test;
+import org.junit.Assert;
+import org.junit.Ignore;
+import org.junit.Test;
 
 
 /**
  * Model tests for PaymentProcessingDetailsAt
  */
-class PaymentProcessingDetailsAtTest {
+public class PaymentProcessingDetailsAtTest {
     private final PaymentProcessingDetailsAt model = new PaymentProcessingDetailsAt();
 
     /**
      * Model tests for PaymentProcessingDetailsAt
      */
     @Test
-    void testPaymentProcessingDetailsAt() {
+    public void testPaymentProcessingDetailsAt() {
         // TODO: test PaymentProcessingDetailsAt
     }
 
@@ -44,7 +46,7 @@ class PaymentProcessingDetailsAtTest {
      * Test the property 'paymentProcessingCertificate'
      */
     @Test
-    void paymentProcessingCertificateTest() {
+    public void paymentProcessingCertificateTest() {
         // TODO: test paymentProcessingCertificate
     }
 
@@ -52,7 +54,7 @@ class PaymentProcessingDetailsAtTest {
      * Test the property 'paymentProcessingCertificateKey'
      */
     @Test
-    void paymentProcessingCertificateKeyTest() {
+    public void paymentProcessingCertificateKeyTest() {
         // TODO: test paymentProcessingCertificateKey
     }
 
@@ -60,7 +62,7 @@ class PaymentProcessingDetailsAtTest {
      * Test the property 'paymentProcessingDetailsAt'
      */
     @Test
-    void paymentProcessingDetailsAtTest() {
+    public void paymentProcessingDetailsAtTest() {
         // TODO: test paymentProcessingDetailsAt
     }
 

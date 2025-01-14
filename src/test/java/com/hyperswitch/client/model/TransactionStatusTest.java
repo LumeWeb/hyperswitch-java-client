@@ -13,18 +13,20 @@
 
 package com.hyperswitch.client.model;
 
-import org.junit.jupiter.api.Test;
+import org.junit.Assert;
+import org.junit.Ignore;
+import org.junit.Test;
 
 
 /**
  * Model tests for TransactionStatus
  */
-class TransactionStatusTest {
+public class TransactionStatusTest {
     /**
      * Model tests for TransactionStatus
      */
     @Test
-    void testTransactionStatus() {
+    public void testTransactionStatus() {
         // TODO: test TransactionStatus
     }
 

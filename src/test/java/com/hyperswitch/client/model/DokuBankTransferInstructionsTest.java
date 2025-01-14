@@ -18,20 +18,22 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonTypeName;
 import com.fasterxml.jackson.annotation.JsonValue;
-import org.junit.jupiter.api.Test;
+import org.junit.Assert;
+import org.junit.Ignore;
+import org.junit.Test;
 
 
 /**
  * Model tests for DokuBankTransferInstructions
  */
-class DokuBankTransferInstructionsTest {
+public class DokuBankTransferInstructionsTest {
     private final DokuBankTransferInstructions model = new DokuBankTransferInstructions();
 
     /**
      * Model tests for DokuBankTransferInstructions
      */
     @Test
-    void testDokuBankTransferInstructions() {
+    public void testDokuBankTransferInstructions() {
         // TODO: test DokuBankTransferInstructions
     }
 
@@ -39,7 +41,7 @@ class DokuBankTransferInstructionsTest {
      * Test the property 'expiresAt'
      */
     @Test
-    void expiresAtTest() {
+    public void expiresAtTest() {
         // TODO: test expiresAt
     }
 
@@ -47,7 +49,7 @@ class DokuBankTransferInstructionsTest {
      * Test the property 'reference'
      */
     @Test
-    void referenceTest() {
+    public void referenceTest() {
         // TODO: test reference
     }
 
@@ -55,7 +57,7 @@ class DokuBankTransferInstructionsTest {
      * Test the property 'instructionsUrl'
      */
     @Test
-    void instructionsUrlTest() {
+    public void instructionsUrlTest() {
         // TODO: test instructionsUrl
     }
 

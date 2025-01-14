@@ -40,20 +40,22 @@ import org.openapitools.jackson.nullable.JsonNullable;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.openapitools.jackson.nullable.JsonNullable;
 import java.util.NoSuchElementException;
-import org.junit.jupiter.api.Test;
+import org.junit.Assert;
+import org.junit.Ignore;
+import org.junit.Test;
 
 
 /**
  * Model tests for NextActionData
  */
-class NextActionDataTest {
+public class NextActionDataTest {
     private final NextActionData model = new NextActionData();
 
     /**
      * Model tests for NextActionData
      */
     @Test
-    void testNextActionData() {
+    public void testNextActionData() {
         // TODO: test NextActionData
     }
 
@@ -61,7 +63,7 @@ class NextActionDataTest {
      * Test the property 'redirectToUrl'
      */
     @Test
-    void redirectToUrlTest() {
+    public void redirectToUrlTest() {
         // TODO: test redirectToUrl
     }
 
@@ -69,7 +71,7 @@ class NextActionDataTest {
      * Test the property 'type'
      */
     @Test
-    void typeTest() {
+    public void typeTest() {
         // TODO: test type
     }
 
@@ -77,7 +79,7 @@ class NextActionDataTest {
      * Test the property 'bankTransferStepsAndChargesDetails'
      */
     @Test
-    void bankTransferStepsAndChargesDetailsTest() {
+    public void bankTransferStepsAndChargesDetailsTest() {
         // TODO: test bankTransferStepsAndChargesDetails
     }
 
@@ -85,7 +87,7 @@ class NextActionDataTest {
      * Test the property 'sessionToken'
      */
     @Test
-    void sessionTokenTest() {
+    public void sessionTokenTest() {
         // TODO: test sessionToken
     }
 
@@ -93,7 +95,7 @@ class NextActionDataTest {
      * Test the property 'imageDataUrl'
      */
     @Test
-    void imageDataUrlTest() {
+    public void imageDataUrlTest() {
         // TODO: test imageDataUrl
     }
 
@@ -101,7 +103,7 @@ class NextActionDataTest {
      * Test the property 'displayToTimestamp'
      */
     @Test
-    void displayToTimestampTest() {
+    public void displayToTimestampTest() {
         // TODO: test displayToTimestamp
     }
 
@@ -109,7 +111,7 @@ class NextActionDataTest {
      * Test the property 'qrCodeUrl'
      */
     @Test
-    void qrCodeUrlTest() {
+    public void qrCodeUrlTest() {
         // TODO: test qrCodeUrl
     }
 
@@ -117,7 +119,7 @@ class NextActionDataTest {
      * Test the property 'qrCodeFetchUrl'
      */
     @Test
-    void qrCodeFetchUrlTest() {
+    public void qrCodeFetchUrlTest() {
         // TODO: test qrCodeFetchUrl
     }
 
@@ -125,7 +127,7 @@ class NextActionDataTest {
      * Test the property 'voucherDetails'
      */
     @Test
-    void voucherDetailsTest() {
+    public void voucherDetailsTest() {
         // TODO: test voucherDetails
     }
 
@@ -133,7 +135,7 @@ class NextActionDataTest {
      * Test the property 'displayFromTimestamp'
      */
     @Test
-    void displayFromTimestampTest() {
+    public void displayFromTimestampTest() {
         // TODO: test displayFromTimestamp
     }
 
@@ -141,7 +143,7 @@ class NextActionDataTest {
      * Test the property 'threeDsData'
      */
     @Test
-    void threeDsDataTest() {
+    public void threeDsDataTest() {
         // TODO: test threeDsData
     }
 
@@ -149,7 +151,7 @@ class NextActionDataTest {
      * Test the property 'nextActionData'
      */
     @Test
-    void nextActionDataTest() {
+    public void nextActionDataTest() {
         // TODO: test nextActionData
     }
 
@@ -157,7 +159,7 @@ class NextActionDataTest {
      * Test the property 'consentDataRequired'
      */
     @Test
-    void consentDataRequiredTest() {
+    public void consentDataRequiredTest() {
         // TODO: test consentDataRequired
     }
 

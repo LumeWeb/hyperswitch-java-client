@@ -23,20 +23,22 @@ import org.openapitools.jackson.nullable.JsonNullable;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.openapitools.jackson.nullable.JsonNullable;
 import java.util.NoSuchElementException;
-import org.junit.jupiter.api.Test;
+import org.junit.Assert;
+import org.junit.Ignore;
+import org.junit.Test;
 
 
 /**
  * Model tests for PaymentsRetrieveRequest
  */
-class PaymentsRetrieveRequestTest {
+public class PaymentsRetrieveRequestTest {
     private final PaymentsRetrieveRequest model = new PaymentsRetrieveRequest();
 
     /**
      * Model tests for PaymentsRetrieveRequest
      */
     @Test
-    void testPaymentsRetrieveRequest() {
+    public void testPaymentsRetrieveRequest() {
         // TODO: test PaymentsRetrieveRequest
     }
 
@@ -44,7 +46,7 @@ class PaymentsRetrieveRequestTest {
      * Test the property 'resourceId'
      */
     @Test
-    void resourceIdTest() {
+    public void resourceIdTest() {
         // TODO: test resourceId
     }
 
@@ -52,7 +54,7 @@ class PaymentsRetrieveRequestTest {
      * Test the property 'merchantId'
      */
     @Test
-    void merchantIdTest() {
+    public void merchantIdTest() {
         // TODO: test merchantId
     }
 
@@ -60,7 +62,7 @@ class PaymentsRetrieveRequestTest {
      * Test the property 'forceSync'
      */
     @Test
-    void forceSyncTest() {
+    public void forceSyncTest() {
         // TODO: test forceSync
     }
 
@@ -68,7 +70,7 @@ class PaymentsRetrieveRequestTest {
      * Test the property 'param'
      */
     @Test
-    void paramTest() {
+    public void paramTest() {
         // TODO: test param
     }
 
@@ -76,7 +78,7 @@ class PaymentsRetrieveRequestTest {
      * Test the property 'connector'
      */
     @Test
-    void connectorTest() {
+    public void connectorTest() {
         // TODO: test connector
     }
 
@@ -84,7 +86,7 @@ class PaymentsRetrieveRequestTest {
      * Test the property 'merchantConnectorDetails'
      */
     @Test
-    void merchantConnectorDetailsTest() {
+    public void merchantConnectorDetailsTest() {
         // TODO: test merchantConnectorDetails
     }
 
@@ -92,7 +94,7 @@ class PaymentsRetrieveRequestTest {
      * Test the property 'clientSecret'
      */
     @Test
-    void clientSecretTest() {
+    public void clientSecretTest() {
         // TODO: test clientSecret
     }
 
@@ -100,7 +102,7 @@ class PaymentsRetrieveRequestTest {
      * Test the property 'expandCaptures'
      */
     @Test
-    void expandCapturesTest() {
+    public void expandCapturesTest() {
         // TODO: test expandCaptures
     }
 
@@ -108,7 +110,7 @@ class PaymentsRetrieveRequestTest {
      * Test the property 'expandAttempts'
      */
     @Test
-    void expandAttemptsTest() {
+    public void expandAttemptsTest() {
         // TODO: test expandAttempts
     }
 

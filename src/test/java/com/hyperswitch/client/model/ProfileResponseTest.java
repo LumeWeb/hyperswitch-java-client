@@ -30,20 +30,22 @@ import org.openapitools.jackson.nullable.JsonNullable;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.openapitools.jackson.nullable.JsonNullable;
 import java.util.NoSuchElementException;
-import org.junit.jupiter.api.Test;
+import org.junit.Assert;
+import org.junit.Ignore;
+import org.junit.Test;
 
 
 /**
  * Model tests for ProfileResponse
  */
-class ProfileResponseTest {
+public class ProfileResponseTest {
     private final ProfileResponse model = new ProfileResponse();
 
     /**
      * Model tests for ProfileResponse
      */
     @Test
-    void testProfileResponse() {
+    public void testProfileResponse() {
         // TODO: test ProfileResponse
     }
 
@@ -51,7 +53,7 @@ class ProfileResponseTest {
      * Test the property 'merchantId'
      */
     @Test
-    void merchantIdTest() {
+    public void merchantIdTest() {
         // TODO: test merchantId
     }
 
@@ -59,7 +61,7 @@ class ProfileResponseTest {
      * Test the property 'profileId'
      */
     @Test
-    void profileIdTest() {
+    public void profileIdTest() {
         // TODO: test profileId
     }
 
@@ -67,7 +69,7 @@ class ProfileResponseTest {
      * Test the property 'profileName'
      */
     @Test
-    void profileNameTest() {
+    public void profileNameTest() {
         // TODO: test profileName
     }
 
@@ -75,7 +77,7 @@ class ProfileResponseTest {
      * Test the property 'returnUrl'
      */
     @Test
-    void returnUrlTest() {
+    public void returnUrlTest() {
         // TODO: test returnUrl
     }
 
@@ -83,7 +85,7 @@ class ProfileResponseTest {
      * Test the property 'enablePaymentResponseHash'
      */
     @Test
-    void enablePaymentResponseHashTest() {
+    public void enablePaymentResponseHashTest() {
         // TODO: test enablePaymentResponseHash
     }
 
@@ -91,7 +93,7 @@ class ProfileResponseTest {
      * Test the property 'paymentResponseHashKey'
      */
     @Test
-    void paymentResponseHashKeyTest() {
+    public void paymentResponseHashKeyTest() {
         // TODO: test paymentResponseHashKey
     }
 
@@ -99,7 +101,7 @@ class ProfileResponseTest {
      * Test the property 'redirectToMerchantWithHttpPost'
      */
     @Test
-    void redirectToMerchantWithHttpPostTest() {
+    public void redirectToMerchantWithHttpPostTest() {
         // TODO: test redirectToMerchantWithHttpPost
     }
 
@@ -107,7 +109,7 @@ class ProfileResponseTest {
      * Test the property 'webhookDetails'
      */
     @Test
-    void webhookDetailsTest() {
+    public void webhookDetailsTest() {
         // TODO: test webhookDetails
     }
 
@@ -115,7 +117,7 @@ class ProfileResponseTest {
      * Test the property 'metadata'
      */
     @Test
-    void metadataTest() {
+    public void metadataTest() {
         // TODO: test metadata
     }
 
@@ -123,7 +125,7 @@ class ProfileResponseTest {
      * Test the property 'routingAlgorithm'
      */
     @Test
-    void routingAlgorithmTest() {
+    public void routingAlgorithmTest() {
         // TODO: test routingAlgorithm
     }
 
@@ -131,7 +133,7 @@ class ProfileResponseTest {
      * Test the property 'intentFulfillmentTime'
      */
     @Test
-    void intentFulfillmentTimeTest() {
+    public void intentFulfillmentTimeTest() {
         // TODO: test intentFulfillmentTime
     }
 
@@ -139,7 +141,7 @@ class ProfileResponseTest {
      * Test the property 'frmRoutingAlgorithm'
      */
     @Test
-    void frmRoutingAlgorithmTest() {
+    public void frmRoutingAlgorithmTest() {
         // TODO: test frmRoutingAlgorithm
     }
 
@@ -147,7 +149,7 @@ class ProfileResponseTest {
      * Test the property 'payoutRoutingAlgorithm'
      */
     @Test
-    void payoutRoutingAlgorithmTest() {
+    public void payoutRoutingAlgorithmTest() {
         // TODO: test payoutRoutingAlgorithm
     }
 
@@ -155,7 +157,7 @@ class ProfileResponseTest {
      * Test the property 'applepayVerifiedDomains'
      */
     @Test
-    void applepayVerifiedDomainsTest() {
+    public void applepayVerifiedDomainsTest() {
         // TODO: test applepayVerifiedDomains
     }
 
@@ -163,7 +165,7 @@ class ProfileResponseTest {
      * Test the property 'sessionExpiry'
      */
     @Test
-    void sessionExpiryTest() {
+    public void sessionExpiryTest() {
         // TODO: test sessionExpiry
     }
 
@@ -171,7 +173,7 @@ class ProfileResponseTest {
      * Test the property 'paymentLinkConfig'
      */
     @Test
-    void paymentLinkConfigTest() {
+    public void paymentLinkConfigTest() {
         // TODO: test paymentLinkConfig
     }
 
@@ -179,7 +181,7 @@ class ProfileResponseTest {
      * Test the property 'authenticationConnectorDetails'
      */
     @Test
-    void authenticationConnectorDetailsTest() {
+    public void authenticationConnectorDetailsTest() {
         // TODO: test authenticationConnectorDetails
     }
 
@@ -187,7 +189,7 @@ class ProfileResponseTest {
      * Test the property 'useBillingAsPaymentMethodBilling'
      */
     @Test
-    void useBillingAsPaymentMethodBillingTest() {
+    public void useBillingAsPaymentMethodBillingTest() {
         // TODO: test useBillingAsPaymentMethodBilling
     }
 
@@ -195,7 +197,7 @@ class ProfileResponseTest {
      * Test the property 'extendedCardInfoConfig'
      */
     @Test
-    void extendedCardInfoConfigTest() {
+    public void extendedCardInfoConfigTest() {
         // TODO: test extendedCardInfoConfig
     }
 
@@ -203,7 +205,7 @@ class ProfileResponseTest {
      * Test the property 'collectShippingDetailsFromWalletConnector'
      */
     @Test
-    void collectShippingDetailsFromWalletConnectorTest() {
+    public void collectShippingDetailsFromWalletConnectorTest() {
         // TODO: test collectShippingDetailsFromWalletConnector
     }
 
@@ -211,7 +213,7 @@ class ProfileResponseTest {
      * Test the property 'collectBillingDetailsFromWalletConnector'
      */
     @Test
-    void collectBillingDetailsFromWalletConnectorTest() {
+    public void collectBillingDetailsFromWalletConnectorTest() {
         // TODO: test collectBillingDetailsFromWalletConnector
     }
 
@@ -219,7 +221,7 @@ class ProfileResponseTest {
      * Test the property 'alwaysCollectShippingDetailsFromWalletConnector'
      */
     @Test
-    void alwaysCollectShippingDetailsFromWalletConnectorTest() {
+    public void alwaysCollectShippingDetailsFromWalletConnectorTest() {
         // TODO: test alwaysCollectShippingDetailsFromWalletConnector
     }
 
@@ -227,7 +229,7 @@ class ProfileResponseTest {
      * Test the property 'alwaysCollectBillingDetailsFromWalletConnector'
      */
     @Test
-    void alwaysCollectBillingDetailsFromWalletConnectorTest() {
+    public void alwaysCollectBillingDetailsFromWalletConnectorTest() {
         // TODO: test alwaysCollectBillingDetailsFromWalletConnector
     }
 
@@ -235,7 +237,7 @@ class ProfileResponseTest {
      * Test the property 'isConnectorAgnosticMitEnabled'
      */
     @Test
-    void isConnectorAgnosticMitEnabledTest() {
+    public void isConnectorAgnosticMitEnabledTest() {
         // TODO: test isConnectorAgnosticMitEnabled
     }
 
@@ -243,7 +245,7 @@ class ProfileResponseTest {
      * Test the property 'payoutLinkConfig'
      */
     @Test
-    void payoutLinkConfigTest() {
+    public void payoutLinkConfigTest() {
         // TODO: test payoutLinkConfig
     }
 
@@ -251,7 +253,7 @@ class ProfileResponseTest {
      * Test the property 'outgoingWebhookCustomHttpHeaders'
      */
     @Test
-    void outgoingWebhookCustomHttpHeadersTest() {
+    public void outgoingWebhookCustomHttpHeadersTest() {
         // TODO: test outgoingWebhookCustomHttpHeaders
     }
 
@@ -259,7 +261,7 @@ class ProfileResponseTest {
      * Test the property 'taxConnectorId'
      */
     @Test
-    void taxConnectorIdTest() {
+    public void taxConnectorIdTest() {
         // TODO: test taxConnectorId
     }
 
@@ -267,7 +269,7 @@ class ProfileResponseTest {
      * Test the property 'isTaxConnectorEnabled'
      */
     @Test
-    void isTaxConnectorEnabledTest() {
+    public void isTaxConnectorEnabledTest() {
         // TODO: test isTaxConnectorEnabled
     }
 
@@ -275,7 +277,7 @@ class ProfileResponseTest {
      * Test the property 'isNetworkTokenizationEnabled'
      */
     @Test
-    void isNetworkTokenizationEnabledTest() {
+    public void isNetworkTokenizationEnabledTest() {
         // TODO: test isNetworkTokenizationEnabled
     }
 
@@ -283,7 +285,7 @@ class ProfileResponseTest {
      * Test the property 'isAutoRetriesEnabled'
      */
     @Test
-    void isAutoRetriesEnabledTest() {
+    public void isAutoRetriesEnabledTest() {
         // TODO: test isAutoRetriesEnabled
     }
 
@@ -291,7 +293,7 @@ class ProfileResponseTest {
      * Test the property 'maxAutoRetriesEnabled'
      */
     @Test
-    void maxAutoRetriesEnabledTest() {
+    public void maxAutoRetriesEnabledTest() {
         // TODO: test maxAutoRetriesEnabled
     }
 

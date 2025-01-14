@@ -23,20 +23,22 @@ import org.openapitools.jackson.nullable.JsonNullable;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.openapitools.jackson.nullable.JsonNullable;
 import java.util.NoSuchElementException;
-import org.junit.jupiter.api.Test;
+import org.junit.Assert;
+import org.junit.Ignore;
+import org.junit.Test;
 
 
 /**
  * Model tests for RoutingRetrieveResponse
  */
-class RoutingRetrieveResponseTest {
+public class RoutingRetrieveResponseTest {
     private final RoutingRetrieveResponse model = new RoutingRetrieveResponse();
 
     /**
      * Model tests for RoutingRetrieveResponse
      */
     @Test
-    void testRoutingRetrieveResponse() {
+    public void testRoutingRetrieveResponse() {
         // TODO: test RoutingRetrieveResponse
     }
 
@@ -44,7 +46,7 @@ class RoutingRetrieveResponseTest {
      * Test the property 'algorithm'
      */
     @Test
-    void algorithmTest() {
+    public void algorithmTest() {
         // TODO: test algorithm
     }
 

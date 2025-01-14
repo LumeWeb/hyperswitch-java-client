@@ -19,20 +19,22 @@ import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonTypeName;
 import com.fasterxml.jackson.annotation.JsonValue;
 import com.hyperswitch.client.model.BankRedirectDataOneOf3Eps;
-import org.junit.jupiter.api.Test;
+import org.junit.Assert;
+import org.junit.Ignore;
+import org.junit.Test;
 
 
 /**
  * Model tests for BankRedirectDataOneOf5
  */
-class BankRedirectDataOneOf5Test {
+public class BankRedirectDataOneOf5Test {
     private final BankRedirectDataOneOf5 model = new BankRedirectDataOneOf5();
 
     /**
      * Model tests for BankRedirectDataOneOf5
      */
     @Test
-    void testBankRedirectDataOneOf5() {
+    public void testBankRedirectDataOneOf5() {
         // TODO: test BankRedirectDataOneOf5
     }
 
@@ -40,7 +42,7 @@ class BankRedirectDataOneOf5Test {
      * Test the property 'ideal'
      */
     @Test
-    void idealTest() {
+    public void idealTest() {
         // TODO: test ideal
     }
 

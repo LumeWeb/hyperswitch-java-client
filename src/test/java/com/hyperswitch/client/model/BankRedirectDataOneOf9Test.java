@@ -19,20 +19,22 @@ import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonTypeName;
 import com.fasterxml.jackson.annotation.JsonValue;
 import com.hyperswitch.client.model.BankRedirectDataOneOf7OnlineBankingCzechRepublic;
-import org.junit.jupiter.api.Test;
+import org.junit.Assert;
+import org.junit.Ignore;
+import org.junit.Test;
 
 
 /**
  * Model tests for BankRedirectDataOneOf9
  */
-class BankRedirectDataOneOf9Test {
+public class BankRedirectDataOneOf9Test {
     private final BankRedirectDataOneOf9 model = new BankRedirectDataOneOf9();
 
     /**
      * Model tests for BankRedirectDataOneOf9
      */
     @Test
-    void testBankRedirectDataOneOf9() {
+    public void testBankRedirectDataOneOf9() {
         // TODO: test BankRedirectDataOneOf9
     }
 
@@ -40,7 +42,7 @@ class BankRedirectDataOneOf9Test {
      * Test the property 'onlineBankingPoland'
      */
     @Test
-    void onlineBankingPolandTest() {
+    public void onlineBankingPolandTest() {
         // TODO: test onlineBankingPoland
     }
 

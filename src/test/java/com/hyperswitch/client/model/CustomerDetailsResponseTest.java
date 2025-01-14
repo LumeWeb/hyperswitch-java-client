@@ -22,20 +22,22 @@ import org.openapitools.jackson.nullable.JsonNullable;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.openapitools.jackson.nullable.JsonNullable;
 import java.util.NoSuchElementException;
-import org.junit.jupiter.api.Test;
+import org.junit.Assert;
+import org.junit.Ignore;
+import org.junit.Test;
 
 
 /**
  * Model tests for CustomerDetailsResponse
  */
-class CustomerDetailsResponseTest {
+public class CustomerDetailsResponseTest {
     private final CustomerDetailsResponse model = new CustomerDetailsResponse();
 
     /**
      * Model tests for CustomerDetailsResponse
      */
     @Test
-    void testCustomerDetailsResponse() {
+    public void testCustomerDetailsResponse() {
         // TODO: test CustomerDetailsResponse
     }
 
@@ -43,7 +45,7 @@ class CustomerDetailsResponseTest {
      * Test the property 'id'
      */
     @Test
-    void idTest() {
+    public void idTest() {
         // TODO: test id
     }
 
@@ -51,7 +53,7 @@ class CustomerDetailsResponseTest {
      * Test the property 'name'
      */
     @Test
-    void nameTest() {
+    public void nameTest() {
         // TODO: test name
     }
 
@@ -59,7 +61,7 @@ class CustomerDetailsResponseTest {
      * Test the property 'email'
      */
     @Test
-    void emailTest() {
+    public void emailTest() {
         // TODO: test email
     }
 
@@ -67,7 +69,7 @@ class CustomerDetailsResponseTest {
      * Test the property 'phone'
      */
     @Test
-    void phoneTest() {
+    public void phoneTest() {
         // TODO: test phone
     }
 
@@ -75,7 +77,7 @@ class CustomerDetailsResponseTest {
      * Test the property 'phoneCountryCode'
      */
     @Test
-    void phoneCountryCodeTest() {
+    public void phoneCountryCodeTest() {
         // TODO: test phoneCountryCode
     }
 

@@ -26,20 +26,22 @@ import com.hyperswitch.client.model.BankDebitDataOneOf2BecsBankDebit;
 import com.hyperswitch.client.model.BankDebitDataOneOf3;
 import com.hyperswitch.client.model.BankDebitDataOneOf3BacsBankDebit;
 import com.hyperswitch.client.model.BankDebitDataOneOfAchBankDebit;
-import org.junit.jupiter.api.Test;
+import org.junit.Assert;
+import org.junit.Ignore;
+import org.junit.Test;
 
 
 /**
  * Model tests for BankDebitData
  */
-class BankDebitDataTest {
+public class BankDebitDataTest {
     private final BankDebitData model = new BankDebitData();
 
     /**
      * Model tests for BankDebitData
      */
     @Test
-    void testBankDebitData() {
+    public void testBankDebitData() {
         // TODO: test BankDebitData
     }
 
@@ -47,7 +49,7 @@ class BankDebitDataTest {
      * Test the property 'achBankDebit'
      */
     @Test
-    void achBankDebitTest() {
+    public void achBankDebitTest() {
         // TODO: test achBankDebit
     }
 
@@ -55,7 +57,7 @@ class BankDebitDataTest {
      * Test the property 'sepaBankDebit'
      */
     @Test
-    void sepaBankDebitTest() {
+    public void sepaBankDebitTest() {
         // TODO: test sepaBankDebit
     }
 
@@ -63,7 +65,7 @@ class BankDebitDataTest {
      * Test the property 'becsBankDebit'
      */
     @Test
-    void becsBankDebitTest() {
+    public void becsBankDebitTest() {
         // TODO: test becsBankDebit
     }
 
@@ -71,7 +73,7 @@ class BankDebitDataTest {
      * Test the property 'bacsBankDebit'
      */
     @Test
-    void bacsBankDebitTest() {
+    public void bacsBankDebitTest() {
         // TODO: test bacsBankDebit
     }
 

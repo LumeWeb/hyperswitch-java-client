@@ -25,20 +25,22 @@ import org.openapitools.jackson.nullable.JsonNullable;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.openapitools.jackson.nullable.JsonNullable;
 import java.util.NoSuchElementException;
-import org.junit.jupiter.api.Test;
+import org.junit.Assert;
+import org.junit.Ignore;
+import org.junit.Test;
 
 
 /**
  * Model tests for BusinessGenericLinkConfigAllOf
  */
-class BusinessGenericLinkConfigAllOfTest {
+public class BusinessGenericLinkConfigAllOfTest {
     private final BusinessGenericLinkConfigAllOf model = new BusinessGenericLinkConfigAllOf();
 
     /**
      * Model tests for BusinessGenericLinkConfigAllOf
      */
     @Test
-    void testBusinessGenericLinkConfigAllOf() {
+    public void testBusinessGenericLinkConfigAllOf() {
         // TODO: test BusinessGenericLinkConfigAllOf
     }
 
@@ -46,7 +48,7 @@ class BusinessGenericLinkConfigAllOfTest {
      * Test the property 'domainName'
      */
     @Test
-    void domainNameTest() {
+    public void domainNameTest() {
         // TODO: test domainName
     }
 
@@ -54,7 +56,7 @@ class BusinessGenericLinkConfigAllOfTest {
      * Test the property 'allowedDomains'
      */
     @Test
-    void allowedDomainsTest() {
+    public void allowedDomainsTest() {
         // TODO: test allowedDomains
     }
 

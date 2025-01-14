@@ -24,20 +24,22 @@ import org.openapitools.jackson.nullable.JsonNullable;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.openapitools.jackson.nullable.JsonNullable;
 import java.util.NoSuchElementException;
-import org.junit.jupiter.api.Test;
+import org.junit.Assert;
+import org.junit.Ignore;
+import org.junit.Test;
 
 
 /**
  * Model tests for ThreeDsData
  */
-class ThreeDsDataTest {
+public class ThreeDsDataTest {
     private final ThreeDsData model = new ThreeDsData();
 
     /**
      * Model tests for ThreeDsData
      */
     @Test
-    void testThreeDsData() {
+    public void testThreeDsData() {
         // TODO: test ThreeDsData
     }
 
@@ -45,7 +47,7 @@ class ThreeDsDataTest {
      * Test the property 'threeDsAuthenticationUrl'
      */
     @Test
-    void threeDsAuthenticationUrlTest() {
+    public void threeDsAuthenticationUrlTest() {
         // TODO: test threeDsAuthenticationUrl
     }
 
@@ -53,7 +55,7 @@ class ThreeDsDataTest {
      * Test the property 'threeDsAuthorizeUrl'
      */
     @Test
-    void threeDsAuthorizeUrlTest() {
+    public void threeDsAuthorizeUrlTest() {
         // TODO: test threeDsAuthorizeUrl
     }
 
@@ -61,7 +63,7 @@ class ThreeDsDataTest {
      * Test the property 'threeDsMethodDetails'
      */
     @Test
-    void threeDsMethodDetailsTest() {
+    public void threeDsMethodDetailsTest() {
         // TODO: test threeDsMethodDetails
     }
 
@@ -69,7 +71,7 @@ class ThreeDsDataTest {
      * Test the property 'pollConfig'
      */
     @Test
-    void pollConfigTest() {
+    public void pollConfigTest() {
         // TODO: test pollConfig
     }
 
@@ -77,7 +79,7 @@ class ThreeDsDataTest {
      * Test the property 'messageVersion'
      */
     @Test
-    void messageVersionTest() {
+    public void messageVersionTest() {
         // TODO: test messageVersion
     }
 
@@ -85,7 +87,7 @@ class ThreeDsDataTest {
      * Test the property 'directoryServerId'
      */
     @Test
-    void directoryServerIdTest() {
+    public void directoryServerIdTest() {
         // TODO: test directoryServerId
     }
 

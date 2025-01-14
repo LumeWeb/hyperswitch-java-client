@@ -13,18 +13,20 @@
 
 package com.hyperswitch.client.model;
 
-import org.junit.jupiter.api.Test;
+import org.junit.Assert;
+import org.junit.Ignore;
+import org.junit.Test;
 
 
 /**
  * Model tests for EventClass
  */
-class EventClassTest {
+public class EventClassTest {
     /**
      * Model tests for EventClass
      */
     @Test
-    void testEventClass() {
+    public void testEventClass() {
         // TODO: test EventClass
     }
 

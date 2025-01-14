@@ -18,20 +18,22 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonTypeName;
 import com.fasterxml.jackson.annotation.JsonValue;
-import org.junit.jupiter.api.Test;
+import org.junit.Assert;
+import org.junit.Ignore;
+import org.junit.Test;
 
 
 /**
  * Model tests for EphemeralKeyCreateResponse
  */
-class EphemeralKeyCreateResponseTest {
+public class EphemeralKeyCreateResponseTest {
     private final EphemeralKeyCreateResponse model = new EphemeralKeyCreateResponse();
 
     /**
      * Model tests for EphemeralKeyCreateResponse
      */
     @Test
-    void testEphemeralKeyCreateResponse() {
+    public void testEphemeralKeyCreateResponse() {
         // TODO: test EphemeralKeyCreateResponse
     }
 
@@ -39,7 +41,7 @@ class EphemeralKeyCreateResponseTest {
      * Test the property 'customerId'
      */
     @Test
-    void customerIdTest() {
+    public void customerIdTest() {
         // TODO: test customerId
     }
 
@@ -47,7 +49,7 @@ class EphemeralKeyCreateResponseTest {
      * Test the property 'createdAt'
      */
     @Test
-    void createdAtTest() {
+    public void createdAtTest() {
         // TODO: test createdAt
     }
 
@@ -55,7 +57,7 @@ class EphemeralKeyCreateResponseTest {
      * Test the property 'expires'
      */
     @Test
-    void expiresTest() {
+    public void expiresTest() {
         // TODO: test expires
     }
 
@@ -63,7 +65,7 @@ class EphemeralKeyCreateResponseTest {
      * Test the property 'secret'
      */
     @Test
-    void secretTest() {
+    public void secretTest() {
         // TODO: test secret
     }
 

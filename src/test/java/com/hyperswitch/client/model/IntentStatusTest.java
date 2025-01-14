@@ -13,18 +13,20 @@
 
 package com.hyperswitch.client.model;
 
-import org.junit.jupiter.api.Test;
+import org.junit.Assert;
+import org.junit.Ignore;
+import org.junit.Test;
 
 
 /**
  * Model tests for IntentStatus
  */
-class IntentStatusTest {
+public class IntentStatusTest {
     /**
      * Model tests for IntentStatus
      */
     @Test
-    void testIntentStatus() {
+    public void testIntentStatus() {
         // TODO: test IntentStatus
     }
 

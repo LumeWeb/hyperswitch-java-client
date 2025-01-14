@@ -13,18 +13,20 @@
 
 package com.hyperswitch.client.model;
 
-import org.junit.jupiter.api.Test;
+import org.junit.Assert;
+import org.junit.Ignore;
+import org.junit.Test;
 
 
 /**
  * Model tests for RoutableConnectors
  */
-class RoutableConnectorsTest {
+public class RoutableConnectorsTest {
     /**
      * Model tests for RoutableConnectors
      */
     @Test
-    void testRoutableConnectors() {
+    public void testRoutableConnectors() {
         // TODO: test RoutableConnectors
     }
 

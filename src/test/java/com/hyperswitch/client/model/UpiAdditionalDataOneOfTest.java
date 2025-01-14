@@ -19,20 +19,22 @@ import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonTypeName;
 import com.fasterxml.jackson.annotation.JsonValue;
 import com.hyperswitch.client.model.UpiCollectAdditionalData;
-import org.junit.jupiter.api.Test;
+import org.junit.Assert;
+import org.junit.Ignore;
+import org.junit.Test;
 
 
 /**
  * Model tests for UpiAdditionalDataOneOf
  */
-class UpiAdditionalDataOneOfTest {
+public class UpiAdditionalDataOneOfTest {
     private final UpiAdditionalDataOneOf model = new UpiAdditionalDataOneOf();
 
     /**
      * Model tests for UpiAdditionalDataOneOf
      */
     @Test
-    void testUpiAdditionalDataOneOf() {
+    public void testUpiAdditionalDataOneOf() {
         // TODO: test UpiAdditionalDataOneOf
     }
 
@@ -40,7 +42,7 @@ class UpiAdditionalDataOneOfTest {
      * Test the property 'upiCollect'
      */
     @Test
-    void upiCollectTest() {
+    public void upiCollectTest() {
         // TODO: test upiCollect
     }
 

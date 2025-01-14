@@ -18,20 +18,22 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonTypeName;
 import com.fasterxml.jackson.annotation.JsonValue;
-import org.junit.jupiter.api.Test;
+import org.junit.Assert;
+import org.junit.Ignore;
+import org.junit.Test;
 
 
 /**
  * Model tests for DisplayAmountOnSdk
  */
-class DisplayAmountOnSdkTest {
+public class DisplayAmountOnSdkTest {
     private final DisplayAmountOnSdk model = new DisplayAmountOnSdk();
 
     /**
      * Model tests for DisplayAmountOnSdk
      */
     @Test
-    void testDisplayAmountOnSdk() {
+    public void testDisplayAmountOnSdk() {
         // TODO: test DisplayAmountOnSdk
     }
 
@@ -39,7 +41,7 @@ class DisplayAmountOnSdkTest {
      * Test the property 'netAmount'
      */
     @Test
-    void netAmountTest() {
+    public void netAmountTest() {
         // TODO: test netAmount
     }
 
@@ -47,7 +49,7 @@ class DisplayAmountOnSdkTest {
      * Test the property 'orderTaxAmount'
      */
     @Test
-    void orderTaxAmountTest() {
+    public void orderTaxAmountTest() {
         // TODO: test orderTaxAmount
     }
 
@@ -55,7 +57,7 @@ class DisplayAmountOnSdkTest {
      * Test the property 'shippingCost'
      */
     @Test
-    void shippingCostTest() {
+    public void shippingCostTest() {
         // TODO: test shippingCost
     }
 

@@ -18,20 +18,22 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonTypeName;
 import com.fasterxml.jackson.annotation.JsonValue;
-import org.junit.jupiter.api.Test;
+import org.junit.Assert;
+import org.junit.Ignore;
+import org.junit.Test;
 
 
 /**
  * Model tests for RevokeApiKeyResponse
  */
-class RevokeApiKeyResponseTest {
+public class RevokeApiKeyResponseTest {
     private final RevokeApiKeyResponse model = new RevokeApiKeyResponse();
 
     /**
      * Model tests for RevokeApiKeyResponse
      */
     @Test
-    void testRevokeApiKeyResponse() {
+    public void testRevokeApiKeyResponse() {
         // TODO: test RevokeApiKeyResponse
     }
 
@@ -39,7 +41,7 @@ class RevokeApiKeyResponseTest {
      * Test the property 'merchantId'
      */
     @Test
-    void merchantIdTest() {
+    public void merchantIdTest() {
         // TODO: test merchantId
     }
 
@@ -47,7 +49,7 @@ class RevokeApiKeyResponseTest {
      * Test the property 'keyId'
      */
     @Test
-    void keyIdTest() {
+    public void keyIdTest() {
         // TODO: test keyId
     }
 
@@ -55,7 +57,7 @@ class RevokeApiKeyResponseTest {
      * Test the property 'revoked'
      */
     @Test
-    void revokedTest() {
+    public void revokedTest() {
         // TODO: test revoked
     }
 

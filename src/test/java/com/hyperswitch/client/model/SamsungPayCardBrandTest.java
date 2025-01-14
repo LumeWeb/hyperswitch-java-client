@@ -13,18 +13,20 @@
 
 package com.hyperswitch.client.model;
 
-import org.junit.jupiter.api.Test;
+import org.junit.Assert;
+import org.junit.Ignore;
+import org.junit.Test;
 
 
 /**
  * Model tests for SamsungPayCardBrand
  */
-class SamsungPayCardBrandTest {
+public class SamsungPayCardBrandTest {
     /**
      * Model tests for SamsungPayCardBrand
      */
     @Test
-    void testSamsungPayCardBrand() {
+    public void testSamsungPayCardBrand() {
         // TODO: test SamsungPayCardBrand
     }
 

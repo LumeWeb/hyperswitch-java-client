@@ -29,6 +29,9 @@ import org.openapitools.jackson.nullable.JsonNullable;
 import java.util.NoSuchElementException;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 import com.fasterxml.jackson.annotation.JsonTypeName;
+import java.io.UnsupportedEncodingException;
+import java.net.URLEncoder;
+import java.util.StringJoiner;
 
 /**
  * Represents an IF statement with conditions and optional nested IF statements  &#x60;&#x60;&#x60;text payment.method &#x3D; card { payment.method.cardtype &#x3D; (credit, debit) { payment.method.network &#x3D; (amex, rupay, diners) } } &#x60;&#x60;&#x60;
@@ -175,6 +178,61 @@ public class IfStatement {
       return "null";
     }
     return o.toString().replace("\n", "\n    ");
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @return URL query string
+   */
+  public String toUrlQueryString() {
+    return toUrlQueryString(null);
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @param prefix prefix of the query string
+   * @return URL query string
+   */
+  public String toUrlQueryString(String prefix) {
+    String suffix = "";
+    String containerSuffix = "";
+    String containerPrefix = "";
+    if (prefix == null) {
+      // style=form, explode=true, e.g. /pet?name=cat&type=manx
+      prefix = "";
+    } else {
+      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+      prefix = prefix + "[";
+      suffix = "]";
+      containerSuffix = "]";
+      containerPrefix = "[";
+    }
+
+    StringJoiner joiner = new StringJoiner("&");
+
+    // add `condition` to the URL query string
+    if (getCondition() != null) {
+      for (int i = 0; i < getCondition().size(); i++) {
+        if (getCondition().get(i) != null) {
+          joiner.add(getCondition().get(i).toUrlQueryString(String.format("%scondition%s%s", prefix, suffix,
+              "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix))));
+        }
+      }
+    }
+
+    // add `nested` to the URL query string
+    if (getNested() != null) {
+      for (int i = 0; i < getNested().size(); i++) {
+        if (getNested().get(i) != null) {
+          joiner.add(getNested().get(i).toUrlQueryString(String.format("%snested%s%s", prefix, suffix,
+              "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix))));
+        }
+      }
+    }
+
+    return joiner.toString();
   }
 
 }

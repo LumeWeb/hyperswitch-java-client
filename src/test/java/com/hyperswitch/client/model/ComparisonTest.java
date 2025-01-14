@@ -22,20 +22,22 @@ import com.hyperswitch.client.model.ComparisonType;
 import com.hyperswitch.client.model.ValueType;
 import java.util.HashMap;
 import java.util.Map;
-import org.junit.jupiter.api.Test;
+import org.junit.Assert;
+import org.junit.Ignore;
+import org.junit.Test;
 
 
 /**
  * Model tests for Comparison
  */
-class ComparisonTest {
+public class ComparisonTest {
     private final Comparison model = new Comparison();
 
     /**
      * Model tests for Comparison
      */
     @Test
-    void testComparison() {
+    public void testComparison() {
         // TODO: test Comparison
     }
 
@@ -43,7 +45,7 @@ class ComparisonTest {
      * Test the property 'lhs'
      */
     @Test
-    void lhsTest() {
+    public void lhsTest() {
         // TODO: test lhs
     }
 
@@ -51,7 +53,7 @@ class ComparisonTest {
      * Test the property 'comparison'
      */
     @Test
-    void comparisonTest() {
+    public void comparisonTest() {
         // TODO: test comparison
     }
 
@@ -59,7 +61,7 @@ class ComparisonTest {
      * Test the property 'value'
      */
     @Test
-    void valueTest() {
+    public void valueTest() {
         // TODO: test value
     }
 
@@ -67,7 +69,7 @@ class ComparisonTest {
      * Test the property 'metadata'
      */
     @Test
-    void metadataTest() {
+    public void metadataTest() {
         // TODO: test metadata
     }
 

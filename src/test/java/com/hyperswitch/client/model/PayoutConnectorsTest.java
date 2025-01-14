@@ -13,18 +13,20 @@
 
 package com.hyperswitch.client.model;
 
-import org.junit.jupiter.api.Test;
+import org.junit.Assert;
+import org.junit.Ignore;
+import org.junit.Test;
 
 
 /**
  * Model tests for PayoutConnectors
  */
-class PayoutConnectorsTest {
+public class PayoutConnectorsTest {
     /**
      * Model tests for PayoutConnectors
      */
     @Test
-    void testPayoutConnectors() {
+    public void testPayoutConnectors() {
         // TODO: test PayoutConnectors
     }
 

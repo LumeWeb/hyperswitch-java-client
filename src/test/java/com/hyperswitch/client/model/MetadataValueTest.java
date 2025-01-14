@@ -18,20 +18,22 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonTypeName;
 import com.fasterxml.jackson.annotation.JsonValue;
-import org.junit.jupiter.api.Test;
+import org.junit.Assert;
+import org.junit.Ignore;
+import org.junit.Test;
 
 
 /**
  * Model tests for MetadataValue
  */
-class MetadataValueTest {
+public class MetadataValueTest {
     private final MetadataValue model = new MetadataValue();
 
     /**
      * Model tests for MetadataValue
      */
     @Test
-    void testMetadataValue() {
+    public void testMetadataValue() {
         // TODO: test MetadataValue
     }
 
@@ -39,7 +41,7 @@ class MetadataValueTest {
      * Test the property 'key'
      */
     @Test
-    void keyTest() {
+    public void keyTest() {
         // TODO: test key
     }
 
@@ -47,7 +49,7 @@ class MetadataValueTest {
      * Test the property 'value'
      */
     @Test
-    void valueTest() {
+    public void valueTest() {
         // TODO: test value
     }
 

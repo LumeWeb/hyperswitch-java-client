@@ -13,18 +13,20 @@
 
 package com.hyperswitch.client.model;
 
-import org.junit.jupiter.api.Test;
+import org.junit.Assert;
+import org.junit.Ignore;
+import org.junit.Test;
 
 
 /**
  * Model tests for ProductType
  */
-class ProductTypeTest {
+public class ProductTypeTest {
     /**
      * Model tests for ProductType
      */
     @Test
-    void testProductType() {
+    public void testProductType() {
         // TODO: test ProductType
     }
 

@@ -13,18 +13,20 @@
 
 package com.hyperswitch.client.model;
 
-import org.junit.jupiter.api.Test;
+import org.junit.Assert;
+import org.junit.Ignore;
+import org.junit.Test;
 
 
 /**
  * Model tests for RoutableChoiceKind
  */
-class RoutableChoiceKindTest {
+public class RoutableChoiceKindTest {
     /**
      * Model tests for RoutableChoiceKind
      */
     @Test
-    void testRoutableChoiceKind() {
+    public void testRoutableChoiceKind() {
         // TODO: test RoutableChoiceKind
     }
 

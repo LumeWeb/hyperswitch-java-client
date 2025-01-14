@@ -22,20 +22,22 @@ import com.hyperswitch.client.model.ConnectorSelection;
 import com.hyperswitch.client.model.IfStatement;
 import java.util.ArrayList;
 import java.util.List;
-import org.junit.jupiter.api.Test;
+import org.junit.Assert;
+import org.junit.Ignore;
+import org.junit.Test;
 
 
 /**
  * Model tests for RuleConnectorSelection
  */
-class RuleConnectorSelectionTest {
+public class RuleConnectorSelectionTest {
     private final RuleConnectorSelection model = new RuleConnectorSelection();
 
     /**
      * Model tests for RuleConnectorSelection
      */
     @Test
-    void testRuleConnectorSelection() {
+    public void testRuleConnectorSelection() {
         // TODO: test RuleConnectorSelection
     }
 
@@ -43,7 +45,7 @@ class RuleConnectorSelectionTest {
      * Test the property 'name'
      */
     @Test
-    void nameTest() {
+    public void nameTest() {
         // TODO: test name
     }
 
@@ -51,7 +53,7 @@ class RuleConnectorSelectionTest {
      * Test the property 'connectorSelection'
      */
     @Test
-    void connectorSelectionTest() {
+    public void connectorSelectionTest() {
         // TODO: test connectorSelection
     }
 
@@ -59,7 +61,7 @@ class RuleConnectorSelectionTest {
      * Test the property 'statements'
      */
     @Test
-    void statementsTest() {
+    public void statementsTest() {
         // TODO: test statements
     }
 

@@ -14,20 +14,22 @@
 package com.hyperswitch.client.model;
 
 import com.fasterxml.jackson.annotation.JsonTypeName;
-import org.junit.jupiter.api.Test;
+import org.junit.Assert;
+import org.junit.Ignore;
+import org.junit.Test;
 
 
 /**
  * Model tests for OutgoingWebhookRequestContentHeadersInnerInner
  */
-class OutgoingWebhookRequestContentHeadersInnerInnerTest {
+public class OutgoingWebhookRequestContentHeadersInnerInnerTest {
     private final OutgoingWebhookRequestContentHeadersInnerInner model = new OutgoingWebhookRequestContentHeadersInnerInner();
 
     /**
      * Model tests for OutgoingWebhookRequestContentHeadersInnerInner
      */
     @Test
-    void testOutgoingWebhookRequestContentHeadersInnerInner() {
+    public void testOutgoingWebhookRequestContentHeadersInnerInner() {
         // TODO: test OutgoingWebhookRequestContentHeadersInnerInner
     }
 

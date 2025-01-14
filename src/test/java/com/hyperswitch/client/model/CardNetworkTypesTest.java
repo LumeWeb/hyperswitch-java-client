@@ -26,20 +26,22 @@ import org.openapitools.jackson.nullable.JsonNullable;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.openapitools.jackson.nullable.JsonNullable;
 import java.util.NoSuchElementException;
-import org.junit.jupiter.api.Test;
+import org.junit.Assert;
+import org.junit.Ignore;
+import org.junit.Test;
 
 
 /**
  * Model tests for CardNetworkTypes
  */
-class CardNetworkTypesTest {
+public class CardNetworkTypesTest {
     private final CardNetworkTypes model = new CardNetworkTypes();
 
     /**
      * Model tests for CardNetworkTypes
      */
     @Test
-    void testCardNetworkTypes() {
+    public void testCardNetworkTypes() {
         // TODO: test CardNetworkTypes
     }
 
@@ -47,7 +49,7 @@ class CardNetworkTypesTest {
      * Test the property 'cardNetwork'
      */
     @Test
-    void cardNetworkTest() {
+    public void cardNetworkTest() {
         // TODO: test cardNetwork
     }
 
@@ -55,7 +57,7 @@ class CardNetworkTypesTest {
      * Test the property 'surchargeDetails'
      */
     @Test
-    void surchargeDetailsTest() {
+    public void surchargeDetailsTest() {
         // TODO: test surchargeDetails
     }
 
@@ -63,7 +65,7 @@ class CardNetworkTypesTest {
      * Test the property 'eligibleConnectors'
      */
     @Test
-    void eligibleConnectorsTest() {
+    public void eligibleConnectorsTest() {
         // TODO: test eligibleConnectors
     }
 

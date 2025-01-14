@@ -19,20 +19,22 @@ import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonTypeName;
 import com.fasterxml.jackson.annotation.JsonValue;
 import com.hyperswitch.client.model.MobilePaymentDataOneOfDirectCarrierBilling;
-import org.junit.jupiter.api.Test;
+import org.junit.Assert;
+import org.junit.Ignore;
+import org.junit.Test;
 
 
 /**
  * Model tests for MobilePaymentResponse
  */
-class MobilePaymentResponseTest {
+public class MobilePaymentResponseTest {
     private final MobilePaymentResponse model = new MobilePaymentResponse();
 
     /**
      * Model tests for MobilePaymentResponse
      */
     @Test
-    void testMobilePaymentResponse() {
+    public void testMobilePaymentResponse() {
         // TODO: test MobilePaymentResponse
     }
 
@@ -40,7 +42,7 @@ class MobilePaymentResponseTest {
      * Test the property 'directCarrierBilling'
      */
     @Test
-    void directCarrierBillingTest() {
+    public void directCarrierBillingTest() {
         // TODO: test directCarrierBilling
     }
 

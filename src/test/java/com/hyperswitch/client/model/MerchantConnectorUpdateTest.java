@@ -32,20 +32,22 @@ import org.openapitools.jackson.nullable.JsonNullable;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.openapitools.jackson.nullable.JsonNullable;
 import java.util.NoSuchElementException;
-import org.junit.jupiter.api.Test;
+import org.junit.Assert;
+import org.junit.Ignore;
+import org.junit.Test;
 
 
 /**
  * Model tests for MerchantConnectorUpdate
  */
-class MerchantConnectorUpdateTest {
+public class MerchantConnectorUpdateTest {
     private final MerchantConnectorUpdate model = new MerchantConnectorUpdate();
 
     /**
      * Model tests for MerchantConnectorUpdate
      */
     @Test
-    void testMerchantConnectorUpdate() {
+    public void testMerchantConnectorUpdate() {
         // TODO: test MerchantConnectorUpdate
     }
 
@@ -53,7 +55,7 @@ class MerchantConnectorUpdateTest {
      * Test the property 'connectorType'
      */
     @Test
-    void connectorTypeTest() {
+    public void connectorTypeTest() {
         // TODO: test connectorType
     }
 
@@ -61,7 +63,7 @@ class MerchantConnectorUpdateTest {
      * Test the property 'connectorLabel'
      */
     @Test
-    void connectorLabelTest() {
+    public void connectorLabelTest() {
         // TODO: test connectorLabel
     }
 
@@ -69,7 +71,7 @@ class MerchantConnectorUpdateTest {
      * Test the property 'connectorAccountDetails'
      */
     @Test
-    void connectorAccountDetailsTest() {
+    public void connectorAccountDetailsTest() {
         // TODO: test connectorAccountDetails
     }
 
@@ -77,7 +79,7 @@ class MerchantConnectorUpdateTest {
      * Test the property 'paymentMethodsEnabled'
      */
     @Test
-    void paymentMethodsEnabledTest() {
+    public void paymentMethodsEnabledTest() {
         // TODO: test paymentMethodsEnabled
     }
 
@@ -85,7 +87,7 @@ class MerchantConnectorUpdateTest {
      * Test the property 'connectorWebhookDetails'
      */
     @Test
-    void connectorWebhookDetailsTest() {
+    public void connectorWebhookDetailsTest() {
         // TODO: test connectorWebhookDetails
     }
 
@@ -93,7 +95,7 @@ class MerchantConnectorUpdateTest {
      * Test the property 'metadata'
      */
     @Test
-    void metadataTest() {
+    public void metadataTest() {
         // TODO: test metadata
     }
 
@@ -101,7 +103,7 @@ class MerchantConnectorUpdateTest {
      * Test the property 'testMode'
      */
     @Test
-    void testModeTest() {
+    public void testModeTest() {
         // TODO: test testMode
     }
 
@@ -109,7 +111,7 @@ class MerchantConnectorUpdateTest {
      * Test the property 'disabled'
      */
     @Test
-    void disabledTest() {
+    public void disabledTest() {
         // TODO: test disabled
     }
 
@@ -117,7 +119,7 @@ class MerchantConnectorUpdateTest {
      * Test the property 'frmConfigs'
      */
     @Test
-    void frmConfigsTest() {
+    public void frmConfigsTest() {
         // TODO: test frmConfigs
     }
 
@@ -125,7 +127,7 @@ class MerchantConnectorUpdateTest {
      * Test the property 'pmAuthConfig'
      */
     @Test
-    void pmAuthConfigTest() {
+    public void pmAuthConfigTest() {
         // TODO: test pmAuthConfig
     }
 
@@ -133,7 +135,7 @@ class MerchantConnectorUpdateTest {
      * Test the property 'status'
      */
     @Test
-    void statusTest() {
+    public void statusTest() {
         // TODO: test status
     }
 
@@ -141,7 +143,7 @@ class MerchantConnectorUpdateTest {
      * Test the property 'additionalMerchantData'
      */
     @Test
-    void additionalMerchantDataTest() {
+    public void additionalMerchantDataTest() {
         // TODO: test additionalMerchantData
     }
 
@@ -149,7 +151,7 @@ class MerchantConnectorUpdateTest {
      * Test the property 'connectorWalletsDetails'
      */
     @Test
-    void connectorWalletsDetailsTest() {
+    public void connectorWalletsDetailsTest() {
         // TODO: test connectorWalletsDetails
     }
 

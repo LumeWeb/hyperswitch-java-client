@@ -54,6 +54,9 @@ import com.hyperswitch.client.model.VoucherResponse;
 import com.hyperswitch.client.model.WalletResponse;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 import com.fasterxml.jackson.annotation.JsonTypeName;
+import java.io.UnsupportedEncodingException;
+import java.net.URLEncoder;
+import java.util.StringJoiner;
 
 /**
  * PaymentMethodDataResponse
@@ -641,6 +644,136 @@ public class PaymentMethodDataResponse {
       return "null";
     }
     return o.toString().replace("\n", "\n    ");
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @return URL query string
+   */
+  public String toUrlQueryString() {
+    return toUrlQueryString(null);
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @param prefix prefix of the query string
+   * @return URL query string
+   */
+  public String toUrlQueryString(String prefix) {
+    String suffix = "";
+    String containerSuffix = "";
+    String containerPrefix = "";
+    if (prefix == null) {
+      // style=form, explode=true, e.g. /pet?name=cat&type=manx
+      prefix = "";
+    } else {
+      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+      prefix = prefix + "[";
+      suffix = "]";
+      containerSuffix = "]";
+      containerPrefix = "[";
+    }
+
+    StringJoiner joiner = new StringJoiner("&");
+
+    // add `card` to the URL query string
+    if (getCard() != null) {
+      joiner.add(getCard().toUrlQueryString(prefix + "card" + suffix));
+    }
+
+    // add `bank_transfer` to the URL query string
+    if (getBankTransfer() != null) {
+      joiner.add(getBankTransfer().toUrlQueryString(prefix + "bank_transfer" + suffix));
+    }
+
+    // add `wallet` to the URL query string
+    if (getWallet() != null) {
+      joiner.add(getWallet().toUrlQueryString(prefix + "wallet" + suffix));
+    }
+
+    // add `pay_later` to the URL query string
+    if (getPayLater() != null) {
+      joiner.add(getPayLater().toUrlQueryString(prefix + "pay_later" + suffix));
+    }
+
+    // add `bank_redirect` to the URL query string
+    if (getBankRedirect() != null) {
+      joiner.add(getBankRedirect().toUrlQueryString(prefix + "bank_redirect" + suffix));
+    }
+
+    // add `crypto` to the URL query string
+    if (getCrypto() != null) {
+      joiner.add(getCrypto().toUrlQueryString(prefix + "crypto" + suffix));
+    }
+
+    // add `bank_debit` to the URL query string
+    if (getBankDebit() != null) {
+      joiner.add(getBankDebit().toUrlQueryString(prefix + "bank_debit" + suffix));
+    }
+
+    // add `mandate_payment` to the URL query string
+    if (getMandatePayment() != null) {
+      try {
+        joiner.add(String.format("%smandate_payment%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getMandatePayment()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `reward` to the URL query string
+    if (getReward() != null) {
+      try {
+        joiner.add(String.format("%sreward%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getReward()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `real_time_payment` to the URL query string
+    if (getRealTimePayment() != null) {
+      joiner.add(getRealTimePayment().toUrlQueryString(prefix + "real_time_payment" + suffix));
+    }
+
+    // add `upi` to the URL query string
+    if (getUpi() != null) {
+      joiner.add(getUpi().toUrlQueryString(prefix + "upi" + suffix));
+    }
+
+    // add `voucher` to the URL query string
+    if (getVoucher() != null) {
+      joiner.add(getVoucher().toUrlQueryString(prefix + "voucher" + suffix));
+    }
+
+    // add `gift_card` to the URL query string
+    if (getGiftCard() != null) {
+      joiner.add(getGiftCard().toUrlQueryString(prefix + "gift_card" + suffix));
+    }
+
+    // add `card_redirect` to the URL query string
+    if (getCardRedirect() != null) {
+      joiner.add(getCardRedirect().toUrlQueryString(prefix + "card_redirect" + suffix));
+    }
+
+    // add `card_token` to the URL query string
+    if (getCardToken() != null) {
+      joiner.add(getCardToken().toUrlQueryString(prefix + "card_token" + suffix));
+    }
+
+    // add `open_banking` to the URL query string
+    if (getOpenBanking() != null) {
+      joiner.add(getOpenBanking().toUrlQueryString(prefix + "open_banking" + suffix));
+    }
+
+    // add `mobile_payment` to the URL query string
+    if (getMobilePayment() != null) {
+      joiner.add(getMobilePayment().toUrlQueryString(prefix + "mobile_payment" + suffix));
+    }
+
+    return joiner.toString();
   }
 
 }

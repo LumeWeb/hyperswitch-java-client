@@ -18,20 +18,22 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonTypeName;
 import com.fasterxml.jackson.annotation.JsonValue;
-import org.junit.jupiter.api.Test;
+import org.junit.Assert;
+import org.junit.Ignore;
+import org.junit.Test;
 
 
 /**
  * Model tests for MultibancoTransferInstructions
  */
-class MultibancoTransferInstructionsTest {
+public class MultibancoTransferInstructionsTest {
     private final MultibancoTransferInstructions model = new MultibancoTransferInstructions();
 
     /**
      * Model tests for MultibancoTransferInstructions
      */
     @Test
-    void testMultibancoTransferInstructions() {
+    public void testMultibancoTransferInstructions() {
         // TODO: test MultibancoTransferInstructions
     }
 
@@ -39,7 +41,7 @@ class MultibancoTransferInstructionsTest {
      * Test the property 'reference'
      */
     @Test
-    void referenceTest() {
+    public void referenceTest() {
         // TODO: test reference
     }
 
@@ -47,7 +49,7 @@ class MultibancoTransferInstructionsTest {
      * Test the property 'entity'
      */
     @Test
-    void entityTest() {
+    public void entityTest() {
         // TODO: test entity
     }
 

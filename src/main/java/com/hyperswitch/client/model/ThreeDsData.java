@@ -28,6 +28,9 @@ import org.openapitools.jackson.nullable.JsonNullable;
 import java.util.NoSuchElementException;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 import com.fasterxml.jackson.annotation.JsonTypeName;
+import java.io.UnsupportedEncodingException;
+import java.net.URLEncoder;
+import java.util.StringJoiner;
 
 /**
  * ThreeDsData
@@ -290,6 +293,91 @@ public class ThreeDsData {
       return "null";
     }
     return o.toString().replace("\n", "\n    ");
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @return URL query string
+   */
+  public String toUrlQueryString() {
+    return toUrlQueryString(null);
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @param prefix prefix of the query string
+   * @return URL query string
+   */
+  public String toUrlQueryString(String prefix) {
+    String suffix = "";
+    String containerSuffix = "";
+    String containerPrefix = "";
+    if (prefix == null) {
+      // style=form, explode=true, e.g. /pet?name=cat&type=manx
+      prefix = "";
+    } else {
+      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+      prefix = prefix + "[";
+      suffix = "]";
+      containerSuffix = "]";
+      containerPrefix = "[";
+    }
+
+    StringJoiner joiner = new StringJoiner("&");
+
+    // add `three_ds_authentication_url` to the URL query string
+    if (getThreeDsAuthenticationUrl() != null) {
+      try {
+        joiner.add(String.format("%sthree_ds_authentication_url%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getThreeDsAuthenticationUrl()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `three_ds_authorize_url` to the URL query string
+    if (getThreeDsAuthorizeUrl() != null) {
+      try {
+        joiner.add(String.format("%sthree_ds_authorize_url%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getThreeDsAuthorizeUrl()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `three_ds_method_details` to the URL query string
+    if (getThreeDsMethodDetails() != null) {
+      joiner.add(getThreeDsMethodDetails().toUrlQueryString(prefix + "three_ds_method_details" + suffix));
+    }
+
+    // add `poll_config` to the URL query string
+    if (getPollConfig() != null) {
+      joiner.add(getPollConfig().toUrlQueryString(prefix + "poll_config" + suffix));
+    }
+
+    // add `message_version` to the URL query string
+    if (getMessageVersion() != null) {
+      try {
+        joiner.add(String.format("%smessage_version%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getMessageVersion()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `directory_server_id` to the URL query string
+    if (getDirectoryServerId() != null) {
+      try {
+        joiner.add(String.format("%sdirectory_server_id%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getDirectoryServerId()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    return joiner.toString();
   }
 
 }

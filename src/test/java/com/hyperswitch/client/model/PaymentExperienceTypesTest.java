@@ -25,20 +25,22 @@ import org.openapitools.jackson.nullable.JsonNullable;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.openapitools.jackson.nullable.JsonNullable;
 import java.util.NoSuchElementException;
-import org.junit.jupiter.api.Test;
+import org.junit.Assert;
+import org.junit.Ignore;
+import org.junit.Test;
 
 
 /**
  * Model tests for PaymentExperienceTypes
  */
-class PaymentExperienceTypesTest {
+public class PaymentExperienceTypesTest {
     private final PaymentExperienceTypes model = new PaymentExperienceTypes();
 
     /**
      * Model tests for PaymentExperienceTypes
      */
     @Test
-    void testPaymentExperienceTypes() {
+    public void testPaymentExperienceTypes() {
         // TODO: test PaymentExperienceTypes
     }
 
@@ -46,7 +48,7 @@ class PaymentExperienceTypesTest {
      * Test the property 'paymentExperienceType'
      */
     @Test
-    void paymentExperienceTypeTest() {
+    public void paymentExperienceTypeTest() {
         // TODO: test paymentExperienceType
     }
 
@@ -54,7 +56,7 @@ class PaymentExperienceTypesTest {
      * Test the property 'eligibleConnectors'
      */
     @Test
-    void eligibleConnectorsTest() {
+    public void eligibleConnectorsTest() {
         // TODO: test eligibleConnectors
     }
 

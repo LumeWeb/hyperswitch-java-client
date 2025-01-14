@@ -27,20 +27,22 @@ import org.openapitools.jackson.nullable.JsonNullable;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.openapitools.jackson.nullable.JsonNullable;
 import java.util.NoSuchElementException;
-import org.junit.jupiter.api.Test;
+import org.junit.Assert;
+import org.junit.Ignore;
+import org.junit.Test;
 
 
 /**
  * Model tests for BankAdditionalData
  */
-class BankAdditionalDataTest {
+public class BankAdditionalDataTest {
     private final BankAdditionalData model = new BankAdditionalData();
 
     /**
      * Model tests for BankAdditionalData
      */
     @Test
-    void testBankAdditionalData() {
+    public void testBankAdditionalData() {
         // TODO: test BankAdditionalData
     }
 
@@ -48,7 +50,7 @@ class BankAdditionalDataTest {
      * Test the property 'bankAccountNumber'
      */
     @Test
-    void bankAccountNumberTest() {
+    public void bankAccountNumberTest() {
         // TODO: test bankAccountNumber
     }
 
@@ -56,7 +58,7 @@ class BankAdditionalDataTest {
      * Test the property 'bankRoutingNumber'
      */
     @Test
-    void bankRoutingNumberTest() {
+    public void bankRoutingNumberTest() {
         // TODO: test bankRoutingNumber
     }
 
@@ -64,7 +66,7 @@ class BankAdditionalDataTest {
      * Test the property 'bankName'
      */
     @Test
-    void bankNameTest() {
+    public void bankNameTest() {
         // TODO: test bankName
     }
 
@@ -72,7 +74,7 @@ class BankAdditionalDataTest {
      * Test the property 'bankCountryCode'
      */
     @Test
-    void bankCountryCodeTest() {
+    public void bankCountryCodeTest() {
         // TODO: test bankCountryCode
     }
 
@@ -80,7 +82,7 @@ class BankAdditionalDataTest {
      * Test the property 'bankCity'
      */
     @Test
-    void bankCityTest() {
+    public void bankCityTest() {
         // TODO: test bankCity
     }
 
@@ -88,7 +90,7 @@ class BankAdditionalDataTest {
      * Test the property 'bankSortCode'
      */
     @Test
-    void bankSortCodeTest() {
+    public void bankSortCodeTest() {
         // TODO: test bankSortCode
     }
 
@@ -96,7 +98,7 @@ class BankAdditionalDataTest {
      * Test the property 'iban'
      */
     @Test
-    void ibanTest() {
+    public void ibanTest() {
         // TODO: test iban
     }
 
@@ -104,7 +106,7 @@ class BankAdditionalDataTest {
      * Test the property 'bic'
      */
     @Test
-    void bicTest() {
+    public void bicTest() {
         // TODO: test bic
     }
 
@@ -112,7 +114,7 @@ class BankAdditionalDataTest {
      * Test the property 'pixKey'
      */
     @Test
-    void pixKeyTest() {
+    public void pixKeyTest() {
         // TODO: test pixKey
     }
 
@@ -120,7 +122,7 @@ class BankAdditionalDataTest {
      * Test the property 'cpf'
      */
     @Test
-    void cpfTest() {
+    public void cpfTest() {
         // TODO: test cpf
     }
 
@@ -128,7 +130,7 @@ class BankAdditionalDataTest {
      * Test the property 'cnpj'
      */
     @Test
-    void cnpjTest() {
+    public void cnpjTest() {
         // TODO: test cnpj
     }
 

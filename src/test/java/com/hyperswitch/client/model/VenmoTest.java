@@ -18,20 +18,22 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonTypeName;
 import com.fasterxml.jackson.annotation.JsonValue;
-import org.junit.jupiter.api.Test;
+import org.junit.Assert;
+import org.junit.Ignore;
+import org.junit.Test;
 
 
 /**
  * Model tests for Venmo
  */
-class VenmoTest {
+public class VenmoTest {
     private final Venmo model = new Venmo();
 
     /**
      * Model tests for Venmo
      */
     @Test
-    void testVenmo() {
+    public void testVenmo() {
         // TODO: test Venmo
     }
 
@@ -39,7 +41,7 @@ class VenmoTest {
      * Test the property 'telephoneNumber'
      */
     @Test
-    void telephoneNumberTest() {
+    public void telephoneNumberTest() {
         // TODO: test telephoneNumber
     }
 

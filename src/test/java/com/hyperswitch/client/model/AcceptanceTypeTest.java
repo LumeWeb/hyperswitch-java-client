@@ -13,18 +13,20 @@
 
 package com.hyperswitch.client.model;
 
-import org.junit.jupiter.api.Test;
+import org.junit.Assert;
+import org.junit.Ignore;
+import org.junit.Test;
 
 
 /**
  * Model tests for AcceptanceType
  */
-class AcceptanceTypeTest {
+public class AcceptanceTypeTest {
     /**
      * Model tests for AcceptanceType
      */
     @Test
-    void testAcceptanceType() {
+    public void testAcceptanceType() {
         // TODO: test AcceptanceType
     }
 

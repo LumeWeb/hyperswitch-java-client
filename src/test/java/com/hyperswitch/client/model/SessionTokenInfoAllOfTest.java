@@ -24,20 +24,22 @@ import org.openapitools.jackson.nullable.JsonNullable;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.openapitools.jackson.nullable.JsonNullable;
 import java.util.NoSuchElementException;
-import org.junit.jupiter.api.Test;
+import org.junit.Assert;
+import org.junit.Ignore;
+import org.junit.Test;
 
 
 /**
  * Model tests for SessionTokenInfoAllOf
  */
-class SessionTokenInfoAllOfTest {
+public class SessionTokenInfoAllOfTest {
     private final SessionTokenInfoAllOf model = new SessionTokenInfoAllOf();
 
     /**
      * Model tests for SessionTokenInfoAllOf
      */
     @Test
-    void testSessionTokenInfoAllOf() {
+    public void testSessionTokenInfoAllOf() {
         // TODO: test SessionTokenInfoAllOf
     }
 
@@ -45,7 +47,7 @@ class SessionTokenInfoAllOfTest {
      * Test the property 'certificate'
      */
     @Test
-    void certificateTest() {
+    public void certificateTest() {
         // TODO: test certificate
     }
 
@@ -53,7 +55,7 @@ class SessionTokenInfoAllOfTest {
      * Test the property 'certificateKeys'
      */
     @Test
-    void certificateKeysTest() {
+    public void certificateKeysTest() {
         // TODO: test certificateKeys
     }
 
@@ -61,7 +63,7 @@ class SessionTokenInfoAllOfTest {
      * Test the property 'merchantIdentifier'
      */
     @Test
-    void merchantIdentifierTest() {
+    public void merchantIdentifierTest() {
         // TODO: test merchantIdentifier
     }
 
@@ -69,7 +71,7 @@ class SessionTokenInfoAllOfTest {
      * Test the property 'displayName'
      */
     @Test
-    void displayNameTest() {
+    public void displayNameTest() {
         // TODO: test displayName
     }
 
@@ -77,7 +79,7 @@ class SessionTokenInfoAllOfTest {
      * Test the property 'initiative'
      */
     @Test
-    void initiativeTest() {
+    public void initiativeTest() {
         // TODO: test initiative
     }
 
@@ -85,7 +87,7 @@ class SessionTokenInfoAllOfTest {
      * Test the property 'initiativeContext'
      */
     @Test
-    void initiativeContextTest() {
+    public void initiativeContextTest() {
         // TODO: test initiativeContext
     }
 
@@ -93,7 +95,7 @@ class SessionTokenInfoAllOfTest {
      * Test the property 'merchantBusinessCountry'
      */
     @Test
-    void merchantBusinessCountryTest() {
+    public void merchantBusinessCountryTest() {
         // TODO: test merchantBusinessCountry
     }
 

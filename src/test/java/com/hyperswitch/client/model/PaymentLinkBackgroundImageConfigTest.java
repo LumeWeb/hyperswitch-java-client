@@ -24,20 +24,22 @@ import org.openapitools.jackson.nullable.JsonNullable;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.openapitools.jackson.nullable.JsonNullable;
 import java.util.NoSuchElementException;
-import org.junit.jupiter.api.Test;
+import org.junit.Assert;
+import org.junit.Ignore;
+import org.junit.Test;
 
 
 /**
  * Model tests for PaymentLinkBackgroundImageConfig
  */
-class PaymentLinkBackgroundImageConfigTest {
+public class PaymentLinkBackgroundImageConfigTest {
     private final PaymentLinkBackgroundImageConfig model = new PaymentLinkBackgroundImageConfig();
 
     /**
      * Model tests for PaymentLinkBackgroundImageConfig
      */
     @Test
-    void testPaymentLinkBackgroundImageConfig() {
+    public void testPaymentLinkBackgroundImageConfig() {
         // TODO: test PaymentLinkBackgroundImageConfig
     }
 
@@ -45,7 +47,7 @@ class PaymentLinkBackgroundImageConfigTest {
      * Test the property 'url'
      */
     @Test
-    void urlTest() {
+    public void urlTest() {
         // TODO: test url
     }
 
@@ -53,7 +55,7 @@ class PaymentLinkBackgroundImageConfigTest {
      * Test the property 'position'
      */
     @Test
-    void positionTest() {
+    public void positionTest() {
         // TODO: test position
     }
 
@@ -61,7 +63,7 @@ class PaymentLinkBackgroundImageConfigTest {
      * Test the property 'size'
      */
     @Test
-    void sizeTest() {
+    public void sizeTest() {
         // TODO: test size
     }
 

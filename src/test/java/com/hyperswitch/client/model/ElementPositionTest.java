@@ -13,18 +13,20 @@
 
 package com.hyperswitch.client.model;
 
-import org.junit.jupiter.api.Test;
+import org.junit.Assert;
+import org.junit.Ignore;
+import org.junit.Test;
 
 
 /**
  * Model tests for ElementPosition
  */
-class ElementPositionTest {
+public class ElementPositionTest {
     /**
      * Model tests for ElementPosition
      */
     @Test
-    void testElementPosition() {
+    public void testElementPosition() {
         // TODO: test ElementPosition
     }
 

@@ -29,6 +29,9 @@ import org.openapitools.jackson.nullable.JsonNullable;
 import java.util.NoSuchElementException;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 import com.fasterxml.jackson.annotation.JsonTypeName;
+import java.io.UnsupportedEncodingException;
+import java.net.URLEncoder;
+import java.util.StringJoiner;
 
 /**
  * GpayAllowedMethodsParameters
@@ -283,6 +286,94 @@ public class GpayAllowedMethodsParameters {
       return "null";
     }
     return o.toString().replace("\n", "\n    ");
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @return URL query string
+   */
+  public String toUrlQueryString() {
+    return toUrlQueryString(null);
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @param prefix prefix of the query string
+   * @return URL query string
+   */
+  public String toUrlQueryString(String prefix) {
+    String suffix = "";
+    String containerSuffix = "";
+    String containerPrefix = "";
+    if (prefix == null) {
+      // style=form, explode=true, e.g. /pet?name=cat&type=manx
+      prefix = "";
+    } else {
+      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+      prefix = prefix + "[";
+      suffix = "]";
+      containerSuffix = "]";
+      containerPrefix = "[";
+    }
+
+    StringJoiner joiner = new StringJoiner("&");
+
+    // add `allowed_auth_methods` to the URL query string
+    if (getAllowedAuthMethods() != null) {
+      for (int i = 0; i < getAllowedAuthMethods().size(); i++) {
+        try {
+          joiner.add(String.format("%sallowed_auth_methods%s%s=%s", prefix, suffix,
+              "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix),
+              URLEncoder.encode(String.valueOf(getAllowedAuthMethods().get(i)), "UTF-8").replaceAll("\\+", "%20")));
+        } catch (UnsupportedEncodingException e) {
+          // Should never happen, UTF-8 is always supported
+          throw new RuntimeException(e);
+        }
+      }
+    }
+
+    // add `allowed_card_networks` to the URL query string
+    if (getAllowedCardNetworks() != null) {
+      for (int i = 0; i < getAllowedCardNetworks().size(); i++) {
+        try {
+          joiner.add(String.format("%sallowed_card_networks%s%s=%s", prefix, suffix,
+              "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix),
+              URLEncoder.encode(String.valueOf(getAllowedCardNetworks().get(i)), "UTF-8").replaceAll("\\+", "%20")));
+        } catch (UnsupportedEncodingException e) {
+          // Should never happen, UTF-8 is always supported
+          throw new RuntimeException(e);
+        }
+      }
+    }
+
+    // add `billing_address_required` to the URL query string
+    if (getBillingAddressRequired() != null) {
+      try {
+        joiner.add(String.format("%sbilling_address_required%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getBillingAddressRequired()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `billing_address_parameters` to the URL query string
+    if (getBillingAddressParameters() != null) {
+      joiner.add(getBillingAddressParameters().toUrlQueryString(prefix + "billing_address_parameters" + suffix));
+    }
+
+    // add `assurance_details_required` to the URL query string
+    if (getAssuranceDetailsRequired() != null) {
+      try {
+        joiner.add(String.format("%sassurance_details_required%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getAssuranceDetailsRequired()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    return joiner.toString();
   }
 
 }

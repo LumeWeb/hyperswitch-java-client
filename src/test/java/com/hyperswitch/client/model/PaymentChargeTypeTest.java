@@ -20,20 +20,22 @@ import com.fasterxml.jackson.annotation.JsonTypeName;
 import com.fasterxml.jackson.annotation.JsonValue;
 import com.hyperswitch.client.model.PaymentChargeTypeOneOf;
 import com.hyperswitch.client.model.StripeChargeType;
-import org.junit.jupiter.api.Test;
+import org.junit.Assert;
+import org.junit.Ignore;
+import org.junit.Test;
 
 
 /**
  * Model tests for PaymentChargeType
  */
-class PaymentChargeTypeTest {
+public class PaymentChargeTypeTest {
     private final PaymentChargeType model = new PaymentChargeType();
 
     /**
      * Model tests for PaymentChargeType
      */
     @Test
-    void testPaymentChargeType() {
+    public void testPaymentChargeType() {
         // TODO: test PaymentChargeType
     }
 
@@ -41,7 +43,7 @@ class PaymentChargeTypeTest {
      * Test the property 'stripe'
      */
     @Test
-    void stripeTest() {
+    public void stripeTest() {
         // TODO: test stripe
     }
 

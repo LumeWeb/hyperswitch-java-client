@@ -23,20 +23,22 @@ import org.openapitools.jackson.nullable.JsonNullable;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.openapitools.jackson.nullable.JsonNullable;
 import java.util.NoSuchElementException;
-import org.junit.jupiter.api.Test;
+import org.junit.Assert;
+import org.junit.Ignore;
+import org.junit.Test;
 
 
 /**
  * Model tests for BankRedirectDataOneOfBancontactCard
  */
-class BankRedirectDataOneOfBancontactCardTest {
+public class BankRedirectDataOneOfBancontactCardTest {
     private final BankRedirectDataOneOfBancontactCard model = new BankRedirectDataOneOfBancontactCard();
 
     /**
      * Model tests for BankRedirectDataOneOfBancontactCard
      */
     @Test
-    void testBankRedirectDataOneOfBancontactCard() {
+    public void testBankRedirectDataOneOfBancontactCard() {
         // TODO: test BankRedirectDataOneOfBancontactCard
     }
 
@@ -44,7 +46,7 @@ class BankRedirectDataOneOfBancontactCardTest {
      * Test the property 'cardNumber'
      */
     @Test
-    void cardNumberTest() {
+    public void cardNumberTest() {
         // TODO: test cardNumber
     }
 
@@ -52,7 +54,7 @@ class BankRedirectDataOneOfBancontactCardTest {
      * Test the property 'cardExpMonth'
      */
     @Test
-    void cardExpMonthTest() {
+    public void cardExpMonthTest() {
         // TODO: test cardExpMonth
     }
 
@@ -60,7 +62,7 @@ class BankRedirectDataOneOfBancontactCardTest {
      * Test the property 'cardExpYear'
      */
     @Test
-    void cardExpYearTest() {
+    public void cardExpYearTest() {
         // TODO: test cardExpYear
     }
 
@@ -68,7 +70,7 @@ class BankRedirectDataOneOfBancontactCardTest {
      * Test the property 'cardHolderName'
      */
     @Test
-    void cardHolderNameTest() {
+    public void cardHolderNameTest() {
         // TODO: test cardHolderName
     }
 
@@ -76,7 +78,7 @@ class BankRedirectDataOneOfBancontactCardTest {
      * Test the property 'billingDetails'
      */
     @Test
-    void billingDetailsTest() {
+    public void billingDetailsTest() {
         // TODO: test billingDetails
     }
 

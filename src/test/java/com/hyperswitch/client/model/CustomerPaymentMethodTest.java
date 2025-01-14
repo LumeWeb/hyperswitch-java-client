@@ -34,20 +34,22 @@ import org.openapitools.jackson.nullable.JsonNullable;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.openapitools.jackson.nullable.JsonNullable;
 import java.util.NoSuchElementException;
-import org.junit.jupiter.api.Test;
+import org.junit.Assert;
+import org.junit.Ignore;
+import org.junit.Test;
 
 
 /**
  * Model tests for CustomerPaymentMethod
  */
-class CustomerPaymentMethodTest {
+public class CustomerPaymentMethodTest {
     private final CustomerPaymentMethod model = new CustomerPaymentMethod();
 
     /**
      * Model tests for CustomerPaymentMethod
      */
     @Test
-    void testCustomerPaymentMethod() {
+    public void testCustomerPaymentMethod() {
         // TODO: test CustomerPaymentMethod
     }
 
@@ -55,7 +57,7 @@ class CustomerPaymentMethodTest {
      * Test the property 'paymentToken'
      */
     @Test
-    void paymentTokenTest() {
+    public void paymentTokenTest() {
         // TODO: test paymentToken
     }
 
@@ -63,7 +65,7 @@ class CustomerPaymentMethodTest {
      * Test the property 'paymentMethodId'
      */
     @Test
-    void paymentMethodIdTest() {
+    public void paymentMethodIdTest() {
         // TODO: test paymentMethodId
     }
 
@@ -71,7 +73,7 @@ class CustomerPaymentMethodTest {
      * Test the property 'customerId'
      */
     @Test
-    void customerIdTest() {
+    public void customerIdTest() {
         // TODO: test customerId
     }
 
@@ -79,7 +81,7 @@ class CustomerPaymentMethodTest {
      * Test the property 'paymentMethod'
      */
     @Test
-    void paymentMethodTest() {
+    public void paymentMethodTest() {
         // TODO: test paymentMethod
     }
 
@@ -87,7 +89,7 @@ class CustomerPaymentMethodTest {
      * Test the property 'paymentMethodType'
      */
     @Test
-    void paymentMethodTypeTest() {
+    public void paymentMethodTypeTest() {
         // TODO: test paymentMethodType
     }
 
@@ -95,7 +97,7 @@ class CustomerPaymentMethodTest {
      * Test the property 'paymentMethodIssuer'
      */
     @Test
-    void paymentMethodIssuerTest() {
+    public void paymentMethodIssuerTest() {
         // TODO: test paymentMethodIssuer
     }
 
@@ -103,7 +105,7 @@ class CustomerPaymentMethodTest {
      * Test the property 'paymentMethodIssuerCode'
      */
     @Test
-    void paymentMethodIssuerCodeTest() {
+    public void paymentMethodIssuerCodeTest() {
         // TODO: test paymentMethodIssuerCode
     }
 
@@ -111,7 +113,7 @@ class CustomerPaymentMethodTest {
      * Test the property 'recurringEnabled'
      */
     @Test
-    void recurringEnabledTest() {
+    public void recurringEnabledTest() {
         // TODO: test recurringEnabled
     }
 
@@ -119,7 +121,7 @@ class CustomerPaymentMethodTest {
      * Test the property 'installmentPaymentEnabled'
      */
     @Test
-    void installmentPaymentEnabledTest() {
+    public void installmentPaymentEnabledTest() {
         // TODO: test installmentPaymentEnabled
     }
 
@@ -127,7 +129,7 @@ class CustomerPaymentMethodTest {
      * Test the property 'paymentExperience'
      */
     @Test
-    void paymentExperienceTest() {
+    public void paymentExperienceTest() {
         // TODO: test paymentExperience
     }
 
@@ -135,7 +137,7 @@ class CustomerPaymentMethodTest {
      * Test the property 'card'
      */
     @Test
-    void cardTest() {
+    public void cardTest() {
         // TODO: test card
     }
 
@@ -143,7 +145,7 @@ class CustomerPaymentMethodTest {
      * Test the property 'metadata'
      */
     @Test
-    void metadataTest() {
+    public void metadataTest() {
         // TODO: test metadata
     }
 
@@ -151,7 +153,7 @@ class CustomerPaymentMethodTest {
      * Test the property 'created'
      */
     @Test
-    void createdTest() {
+    public void createdTest() {
         // TODO: test created
     }
 
@@ -159,7 +161,7 @@ class CustomerPaymentMethodTest {
      * Test the property 'bankTransfer'
      */
     @Test
-    void bankTransferTest() {
+    public void bankTransferTest() {
         // TODO: test bankTransfer
     }
 
@@ -167,7 +169,7 @@ class CustomerPaymentMethodTest {
      * Test the property 'bank'
      */
     @Test
-    void bankTest() {
+    public void bankTest() {
         // TODO: test bank
     }
 
@@ -175,7 +177,7 @@ class CustomerPaymentMethodTest {
      * Test the property 'surchargeDetails'
      */
     @Test
-    void surchargeDetailsTest() {
+    public void surchargeDetailsTest() {
         // TODO: test surchargeDetails
     }
 
@@ -183,7 +185,7 @@ class CustomerPaymentMethodTest {
      * Test the property 'requiresCvv'
      */
     @Test
-    void requiresCvvTest() {
+    public void requiresCvvTest() {
         // TODO: test requiresCvv
     }
 
@@ -191,7 +193,7 @@ class CustomerPaymentMethodTest {
      * Test the property 'lastUsedAt'
      */
     @Test
-    void lastUsedAtTest() {
+    public void lastUsedAtTest() {
         // TODO: test lastUsedAt
     }
 
@@ -199,7 +201,7 @@ class CustomerPaymentMethodTest {
      * Test the property 'defaultPaymentMethodSet'
      */
     @Test
-    void defaultPaymentMethodSetTest() {
+    public void defaultPaymentMethodSetTest() {
         // TODO: test defaultPaymentMethodSet
     }
 
@@ -207,7 +209,7 @@ class CustomerPaymentMethodTest {
      * Test the property 'billing'
      */
     @Test
-    void billingTest() {
+    public void billingTest() {
         // TODO: test billing
     }
 

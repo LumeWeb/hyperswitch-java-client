@@ -26,20 +26,22 @@ import org.openapitools.jackson.nullable.JsonNullable;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.openapitools.jackson.nullable.JsonNullable;
 import java.util.NoSuchElementException;
-import org.junit.jupiter.api.Test;
+import org.junit.Assert;
+import org.junit.Ignore;
+import org.junit.Test;
 
 
 /**
  * Model tests for PaymentMethodCollectLinkResponseAllOf
  */
-class PaymentMethodCollectLinkResponseAllOfTest {
+public class PaymentMethodCollectLinkResponseAllOfTest {
     private final PaymentMethodCollectLinkResponseAllOf model = new PaymentMethodCollectLinkResponseAllOf();
 
     /**
      * Model tests for PaymentMethodCollectLinkResponseAllOf
      */
     @Test
-    void testPaymentMethodCollectLinkResponseAllOf() {
+    public void testPaymentMethodCollectLinkResponseAllOf() {
         // TODO: test PaymentMethodCollectLinkResponseAllOf
     }
 
@@ -47,7 +49,7 @@ class PaymentMethodCollectLinkResponseAllOfTest {
      * Test the property 'pmCollectLinkId'
      */
     @Test
-    void pmCollectLinkIdTest() {
+    public void pmCollectLinkIdTest() {
         // TODO: test pmCollectLinkId
     }
 
@@ -55,7 +57,7 @@ class PaymentMethodCollectLinkResponseAllOfTest {
      * Test the property 'customerId'
      */
     @Test
-    void customerIdTest() {
+    public void customerIdTest() {
         // TODO: test customerId
     }
 
@@ -63,7 +65,7 @@ class PaymentMethodCollectLinkResponseAllOfTest {
      * Test the property 'expiry'
      */
     @Test
-    void expiryTest() {
+    public void expiryTest() {
         // TODO: test expiry
     }
 
@@ -71,7 +73,7 @@ class PaymentMethodCollectLinkResponseAllOfTest {
      * Test the property 'link'
      */
     @Test
-    void linkTest() {
+    public void linkTest() {
         // TODO: test link
     }
 
@@ -79,7 +81,7 @@ class PaymentMethodCollectLinkResponseAllOfTest {
      * Test the property 'returnUrl'
      */
     @Test
-    void returnUrlTest() {
+    public void returnUrlTest() {
         // TODO: test returnUrl
     }
 
@@ -87,7 +89,7 @@ class PaymentMethodCollectLinkResponseAllOfTest {
      * Test the property 'enabledPaymentMethods'
      */
     @Test
-    void enabledPaymentMethodsTest() {
+    public void enabledPaymentMethodsTest() {
         // TODO: test enabledPaymentMethods
     }
 

@@ -22,20 +22,22 @@ import org.openapitools.jackson.nullable.JsonNullable;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.openapitools.jackson.nullable.JsonNullable;
 import java.util.NoSuchElementException;
-import org.junit.jupiter.api.Test;
+import org.junit.Assert;
+import org.junit.Ignore;
+import org.junit.Test;
 
 
 /**
  * Model tests for PixBankTransferAdditionalData
  */
-class PixBankTransferAdditionalDataTest {
+public class PixBankTransferAdditionalDataTest {
     private final PixBankTransferAdditionalData model = new PixBankTransferAdditionalData();
 
     /**
      * Model tests for PixBankTransferAdditionalData
      */
     @Test
-    void testPixBankTransferAdditionalData() {
+    public void testPixBankTransferAdditionalData() {
         // TODO: test PixBankTransferAdditionalData
     }
 
@@ -43,7 +45,7 @@ class PixBankTransferAdditionalDataTest {
      * Test the property 'pixKey'
      */
     @Test
-    void pixKeyTest() {
+    public void pixKeyTest() {
         // TODO: test pixKey
     }
 
@@ -51,7 +53,7 @@ class PixBankTransferAdditionalDataTest {
      * Test the property 'cpf'
      */
     @Test
-    void cpfTest() {
+    public void cpfTest() {
         // TODO: test cpf
     }
 
@@ -59,7 +61,7 @@ class PixBankTransferAdditionalDataTest {
      * Test the property 'cnpj'
      */
     @Test
-    void cnpjTest() {
+    public void cnpjTest() {
         // TODO: test cnpj
     }
 

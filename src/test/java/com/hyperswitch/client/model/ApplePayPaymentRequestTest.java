@@ -28,20 +28,22 @@ import org.openapitools.jackson.nullable.JsonNullable;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.openapitools.jackson.nullable.JsonNullable;
 import java.util.NoSuchElementException;
-import org.junit.jupiter.api.Test;
+import org.junit.Assert;
+import org.junit.Ignore;
+import org.junit.Test;
 
 
 /**
  * Model tests for ApplePayPaymentRequest
  */
-class ApplePayPaymentRequestTest {
+public class ApplePayPaymentRequestTest {
     private final ApplePayPaymentRequest model = new ApplePayPaymentRequest();
 
     /**
      * Model tests for ApplePayPaymentRequest
      */
     @Test
-    void testApplePayPaymentRequest() {
+    public void testApplePayPaymentRequest() {
         // TODO: test ApplePayPaymentRequest
     }
 
@@ -49,7 +51,7 @@ class ApplePayPaymentRequestTest {
      * Test the property 'countryCode'
      */
     @Test
-    void countryCodeTest() {
+    public void countryCodeTest() {
         // TODO: test countryCode
     }
 
@@ -57,7 +59,7 @@ class ApplePayPaymentRequestTest {
      * Test the property 'currencyCode'
      */
     @Test
-    void currencyCodeTest() {
+    public void currencyCodeTest() {
         // TODO: test currencyCode
     }
 
@@ -65,7 +67,7 @@ class ApplePayPaymentRequestTest {
      * Test the property 'total'
      */
     @Test
-    void totalTest() {
+    public void totalTest() {
         // TODO: test total
     }
 
@@ -73,7 +75,7 @@ class ApplePayPaymentRequestTest {
      * Test the property 'merchantCapabilities'
      */
     @Test
-    void merchantCapabilitiesTest() {
+    public void merchantCapabilitiesTest() {
         // TODO: test merchantCapabilities
     }
 
@@ -81,7 +83,7 @@ class ApplePayPaymentRequestTest {
      * Test the property 'supportedNetworks'
      */
     @Test
-    void supportedNetworksTest() {
+    public void supportedNetworksTest() {
         // TODO: test supportedNetworks
     }
 
@@ -89,7 +91,7 @@ class ApplePayPaymentRequestTest {
      * Test the property 'merchantIdentifier'
      */
     @Test
-    void merchantIdentifierTest() {
+    public void merchantIdentifierTest() {
         // TODO: test merchantIdentifier
     }
 
@@ -97,7 +99,7 @@ class ApplePayPaymentRequestTest {
      * Test the property 'requiredBillingContactFields'
      */
     @Test
-    void requiredBillingContactFieldsTest() {
+    public void requiredBillingContactFieldsTest() {
         // TODO: test requiredBillingContactFields
     }
 
@@ -105,7 +107,7 @@ class ApplePayPaymentRequestTest {
      * Test the property 'requiredShippingContactFields'
      */
     @Test
-    void requiredShippingContactFieldsTest() {
+    public void requiredShippingContactFieldsTest() {
         // TODO: test requiredShippingContactFields
     }
 

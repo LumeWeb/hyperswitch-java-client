@@ -22,20 +22,22 @@ import org.openapitools.jackson.nullable.JsonNullable;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.openapitools.jackson.nullable.JsonNullable;
 import java.util.NoSuchElementException;
-import org.junit.jupiter.api.Test;
+import org.junit.Assert;
+import org.junit.Ignore;
+import org.junit.Test;
 
 
 /**
  * Model tests for MobilePaymentDataOneOfDirectCarrierBilling
  */
-class MobilePaymentDataOneOfDirectCarrierBillingTest {
+public class MobilePaymentDataOneOfDirectCarrierBillingTest {
     private final MobilePaymentDataOneOfDirectCarrierBilling model = new MobilePaymentDataOneOfDirectCarrierBilling();
 
     /**
      * Model tests for MobilePaymentDataOneOfDirectCarrierBilling
      */
     @Test
-    void testMobilePaymentDataOneOfDirectCarrierBilling() {
+    public void testMobilePaymentDataOneOfDirectCarrierBilling() {
         // TODO: test MobilePaymentDataOneOfDirectCarrierBilling
     }
 
@@ -43,7 +45,7 @@ class MobilePaymentDataOneOfDirectCarrierBillingTest {
      * Test the property 'msisdn'
      */
     @Test
-    void msisdnTest() {
+    public void msisdnTest() {
         // TODO: test msisdn
     }
 
@@ -51,7 +53,7 @@ class MobilePaymentDataOneOfDirectCarrierBillingTest {
      * Test the property 'clientUid'
      */
     @Test
-    void clientUidTest() {
+    public void clientUidTest() {
         // TODO: test clientUid
     }
 

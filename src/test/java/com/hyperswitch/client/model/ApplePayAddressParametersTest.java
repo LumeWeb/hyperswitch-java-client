@@ -13,18 +13,20 @@
 
 package com.hyperswitch.client.model;
 
-import org.junit.jupiter.api.Test;
+import org.junit.Assert;
+import org.junit.Ignore;
+import org.junit.Test;
 
 
 /**
  * Model tests for ApplePayAddressParameters
  */
-class ApplePayAddressParametersTest {
+public class ApplePayAddressParametersTest {
     /**
      * Model tests for ApplePayAddressParameters
      */
     @Test
-    void testApplePayAddressParameters() {
+    public void testApplePayAddressParameters() {
         // TODO: test ApplePayAddressParameters
     }
 

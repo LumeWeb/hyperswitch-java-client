@@ -13,18 +13,20 @@
 
 package com.hyperswitch.client.model;
 
-import org.junit.jupiter.api.Test;
+import org.junit.Assert;
+import org.junit.Ignore;
+import org.junit.Test;
 
 
 /**
  * Model tests for GpayBillingAddressFormat
  */
-class GpayBillingAddressFormatTest {
+public class GpayBillingAddressFormatTest {
     /**
      * Model tests for GpayBillingAddressFormat
      */
     @Test
-    void testGpayBillingAddressFormat() {
+    public void testGpayBillingAddressFormat() {
         // TODO: test GpayBillingAddressFormat
     }
 

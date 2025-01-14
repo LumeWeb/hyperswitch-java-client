@@ -23,20 +23,22 @@ import org.openapitools.jackson.nullable.JsonNullable;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.openapitools.jackson.nullable.JsonNullable;
 import java.util.NoSuchElementException;
-import org.junit.jupiter.api.Test;
+import org.junit.Assert;
+import org.junit.Ignore;
+import org.junit.Test;
 
 
 /**
  * Model tests for OrganizationResponse
  */
-class OrganizationResponseTest {
+public class OrganizationResponseTest {
     private final OrganizationResponse model = new OrganizationResponse();
 
     /**
      * Model tests for OrganizationResponse
      */
     @Test
-    void testOrganizationResponse() {
+    public void testOrganizationResponse() {
         // TODO: test OrganizationResponse
     }
 
@@ -44,7 +46,7 @@ class OrganizationResponseTest {
      * Test the property 'organizationId'
      */
     @Test
-    void organizationIdTest() {
+    public void organizationIdTest() {
         // TODO: test organizationId
     }
 
@@ -52,7 +54,7 @@ class OrganizationResponseTest {
      * Test the property 'organizationName'
      */
     @Test
-    void organizationNameTest() {
+    public void organizationNameTest() {
         // TODO: test organizationName
     }
 
@@ -60,7 +62,7 @@ class OrganizationResponseTest {
      * Test the property 'organizationDetails'
      */
     @Test
-    void organizationDetailsTest() {
+    public void organizationDetailsTest() {
         // TODO: test organizationDetails
     }
 
@@ -68,7 +70,7 @@ class OrganizationResponseTest {
      * Test the property 'metadata'
      */
     @Test
-    void metadataTest() {
+    public void metadataTest() {
         // TODO: test metadata
     }
 
@@ -76,7 +78,7 @@ class OrganizationResponseTest {
      * Test the property 'modifiedAt'
      */
     @Test
-    void modifiedAtTest() {
+    public void modifiedAtTest() {
         // TODO: test modifiedAt
     }
 
@@ -84,7 +86,7 @@ class OrganizationResponseTest {
      * Test the property 'createdAt'
      */
     @Test
-    void createdAtTest() {
+    public void createdAtTest() {
         // TODO: test createdAt
     }
 

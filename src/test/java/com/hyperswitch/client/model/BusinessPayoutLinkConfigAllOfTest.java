@@ -23,20 +23,22 @@ import org.openapitools.jackson.nullable.JsonNullable;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.openapitools.jackson.nullable.JsonNullable;
 import java.util.NoSuchElementException;
-import org.junit.jupiter.api.Test;
+import org.junit.Assert;
+import org.junit.Ignore;
+import org.junit.Test;
 
 
 /**
  * Model tests for BusinessPayoutLinkConfigAllOf
  */
-class BusinessPayoutLinkConfigAllOfTest {
+public class BusinessPayoutLinkConfigAllOfTest {
     private final BusinessPayoutLinkConfigAllOf model = new BusinessPayoutLinkConfigAllOf();
 
     /**
      * Model tests for BusinessPayoutLinkConfigAllOf
      */
     @Test
-    void testBusinessPayoutLinkConfigAllOf() {
+    public void testBusinessPayoutLinkConfigAllOf() {
         // TODO: test BusinessPayoutLinkConfigAllOf
     }
 
@@ -44,7 +46,7 @@ class BusinessPayoutLinkConfigAllOfTest {
      * Test the property 'formLayout'
      */
     @Test
-    void formLayoutTest() {
+    public void formLayoutTest() {
         // TODO: test formLayout
     }
 
@@ -52,7 +54,7 @@ class BusinessPayoutLinkConfigAllOfTest {
      * Test the property 'payoutTestMode'
      */
     @Test
-    void payoutTestModeTest() {
+    public void payoutTestModeTest() {
         // TODO: test payoutTestMode
     }
 

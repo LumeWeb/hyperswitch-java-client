@@ -19,20 +19,22 @@ import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonTypeName;
 import com.fasterxml.jackson.annotation.JsonValue;
 import com.hyperswitch.client.model.MandateAmountData;
-import org.junit.jupiter.api.Test;
+import org.junit.Assert;
+import org.junit.Ignore;
+import org.junit.Test;
 
 
 /**
  * Model tests for MandateTypeOneOf1
  */
-class MandateTypeOneOf1Test {
+public class MandateTypeOneOf1Test {
     private final MandateTypeOneOf1 model = new MandateTypeOneOf1();
 
     /**
      * Model tests for MandateTypeOneOf1
      */
     @Test
-    void testMandateTypeOneOf1() {
+    public void testMandateTypeOneOf1() {
         // TODO: test MandateTypeOneOf1
     }
 
@@ -40,7 +42,7 @@ class MandateTypeOneOf1Test {
      * Test the property 'multiUse'
      */
     @Test
-    void multiUseTest() {
+    public void multiUseTest() {
         // TODO: test multiUse
     }
 

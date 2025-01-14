@@ -30,20 +30,22 @@ import org.openapitools.jackson.nullable.JsonNullable;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.openapitools.jackson.nullable.JsonNullable;
 import java.util.NoSuchElementException;
-import org.junit.jupiter.api.Test;
+import org.junit.Assert;
+import org.junit.Ignore;
+import org.junit.Test;
 
 
 /**
  * Model tests for GooglePaySessionResponse
  */
-class GooglePaySessionResponseTest {
+public class GooglePaySessionResponseTest {
     private final GooglePaySessionResponse model = new GooglePaySessionResponse();
 
     /**
      * Model tests for GooglePaySessionResponse
      */
     @Test
-    void testGooglePaySessionResponse() {
+    public void testGooglePaySessionResponse() {
         // TODO: test GooglePaySessionResponse
     }
 
@@ -51,7 +53,7 @@ class GooglePaySessionResponseTest {
      * Test the property 'merchantInfo'
      */
     @Test
-    void merchantInfoTest() {
+    public void merchantInfoTest() {
         // TODO: test merchantInfo
     }
 
@@ -59,7 +61,7 @@ class GooglePaySessionResponseTest {
      * Test the property 'shippingAddressRequired'
      */
     @Test
-    void shippingAddressRequiredTest() {
+    public void shippingAddressRequiredTest() {
         // TODO: test shippingAddressRequired
     }
 
@@ -67,7 +69,7 @@ class GooglePaySessionResponseTest {
      * Test the property 'emailRequired'
      */
     @Test
-    void emailRequiredTest() {
+    public void emailRequiredTest() {
         // TODO: test emailRequired
     }
 
@@ -75,7 +77,7 @@ class GooglePaySessionResponseTest {
      * Test the property 'shippingAddressParameters'
      */
     @Test
-    void shippingAddressParametersTest() {
+    public void shippingAddressParametersTest() {
         // TODO: test shippingAddressParameters
     }
 
@@ -83,7 +85,7 @@ class GooglePaySessionResponseTest {
      * Test the property 'allowedPaymentMethods'
      */
     @Test
-    void allowedPaymentMethodsTest() {
+    public void allowedPaymentMethodsTest() {
         // TODO: test allowedPaymentMethods
     }
 
@@ -91,7 +93,7 @@ class GooglePaySessionResponseTest {
      * Test the property 'transactionInfo'
      */
     @Test
-    void transactionInfoTest() {
+    public void transactionInfoTest() {
         // TODO: test transactionInfo
     }
 
@@ -99,7 +101,7 @@ class GooglePaySessionResponseTest {
      * Test the property 'delayedSessionToken'
      */
     @Test
-    void delayedSessionTokenTest() {
+    public void delayedSessionTokenTest() {
         // TODO: test delayedSessionToken
     }
 
@@ -107,7 +109,7 @@ class GooglePaySessionResponseTest {
      * Test the property 'connector'
      */
     @Test
-    void connectorTest() {
+    public void connectorTest() {
         // TODO: test connector
     }
 
@@ -115,7 +117,7 @@ class GooglePaySessionResponseTest {
      * Test the property 'sdkNextAction'
      */
     @Test
-    void sdkNextActionTest() {
+    public void sdkNextActionTest() {
         // TODO: test sdkNextAction
     }
 
@@ -123,7 +125,7 @@ class GooglePaySessionResponseTest {
      * Test the property 'secrets'
      */
     @Test
-    void secretsTest() {
+    public void secretsTest() {
         // TODO: test secrets
     }
 

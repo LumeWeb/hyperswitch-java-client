@@ -19,20 +19,22 @@ import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonTypeName;
 import com.fasterxml.jackson.annotation.JsonValue;
 import com.hyperswitch.client.model.SepaBankDebitAdditionalData;
-import org.junit.jupiter.api.Test;
+import org.junit.Assert;
+import org.junit.Ignore;
+import org.junit.Test;
 
 
 /**
  * Model tests for BankDebitAdditionalDataOneOf3
  */
-class BankDebitAdditionalDataOneOf3Test {
+public class BankDebitAdditionalDataOneOf3Test {
     private final BankDebitAdditionalDataOneOf3 model = new BankDebitAdditionalDataOneOf3();
 
     /**
      * Model tests for BankDebitAdditionalDataOneOf3
      */
     @Test
-    void testBankDebitAdditionalDataOneOf3() {
+    public void testBankDebitAdditionalDataOneOf3() {
         // TODO: test BankDebitAdditionalDataOneOf3
     }
 
@@ -40,7 +42,7 @@ class BankDebitAdditionalDataOneOf3Test {
      * Test the property 'sepa'
      */
     @Test
-    void sepaTest() {
+    public void sepaTest() {
         // TODO: test sepa
     }
 

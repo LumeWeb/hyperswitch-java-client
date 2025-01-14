@@ -19,20 +19,22 @@ import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonTypeName;
 import com.fasterxml.jackson.annotation.JsonValue;
 import com.hyperswitch.client.model.PaypalRedirection;
-import org.junit.jupiter.api.Test;
+import org.junit.Assert;
+import org.junit.Ignore;
+import org.junit.Test;
 
 
 /**
  * Model tests for WalletDataOneOf16
  */
-class WalletDataOneOf16Test {
+public class WalletDataOneOf16Test {
     private final WalletDataOneOf16 model = new WalletDataOneOf16();
 
     /**
      * Model tests for WalletDataOneOf16
      */
     @Test
-    void testWalletDataOneOf16() {
+    public void testWalletDataOneOf16() {
         // TODO: test WalletDataOneOf16
     }
 
@@ -40,7 +42,7 @@ class WalletDataOneOf16Test {
      * Test the property 'paypalRedirect'
      */
     @Test
-    void paypalRedirectTest() {
+    public void paypalRedirectTest() {
         // TODO: test paypalRedirect
     }
 

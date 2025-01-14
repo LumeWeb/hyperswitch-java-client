@@ -18,20 +18,22 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonTypeName;
 import com.fasterxml.jackson.annotation.JsonValue;
-import org.junit.jupiter.api.Test;
+import org.junit.Assert;
+import org.junit.Ignore;
+import org.junit.Test;
 
 
 /**
  * Model tests for CustomerDeleteResponse
  */
-class CustomerDeleteResponseTest {
+public class CustomerDeleteResponseTest {
     private final CustomerDeleteResponse model = new CustomerDeleteResponse();
 
     /**
      * Model tests for CustomerDeleteResponse
      */
     @Test
-    void testCustomerDeleteResponse() {
+    public void testCustomerDeleteResponse() {
         // TODO: test CustomerDeleteResponse
     }
 
@@ -39,7 +41,7 @@ class CustomerDeleteResponseTest {
      * Test the property 'customerId'
      */
     @Test
-    void customerIdTest() {
+    public void customerIdTest() {
         // TODO: test customerId
     }
 
@@ -47,7 +49,7 @@ class CustomerDeleteResponseTest {
      * Test the property 'customerDeleted'
      */
     @Test
-    void customerDeletedTest() {
+    public void customerDeletedTest() {
         // TODO: test customerDeleted
     }
 
@@ -55,7 +57,7 @@ class CustomerDeleteResponseTest {
      * Test the property 'addressDeleted'
      */
     @Test
-    void addressDeletedTest() {
+    public void addressDeletedTest() {
         // TODO: test addressDeleted
     }
 
@@ -63,7 +65,7 @@ class CustomerDeleteResponseTest {
      * Test the property 'paymentMethodsDeleted'
      */
     @Test
-    void paymentMethodsDeletedTest() {
+    public void paymentMethodsDeletedTest() {
         // TODO: test paymentMethodsDeleted
     }
 

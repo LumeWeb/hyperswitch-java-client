@@ -27,6 +27,9 @@ import org.openapitools.jackson.nullable.JsonNullable;
 import java.util.NoSuchElementException;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 import com.fasterxml.jackson.annotation.JsonTypeName;
+import java.io.UnsupportedEncodingException;
+import java.net.URLEncoder;
+import java.util.StringJoiner;
 
 /**
  * MerchantDetails
@@ -441,6 +444,126 @@ public class MerchantDetails {
       return "null";
     }
     return o.toString().replace("\n", "\n    ");
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @return URL query string
+   */
+  public String toUrlQueryString() {
+    return toUrlQueryString(null);
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @param prefix prefix of the query string
+   * @return URL query string
+   */
+  public String toUrlQueryString(String prefix) {
+    String suffix = "";
+    String containerSuffix = "";
+    String containerPrefix = "";
+    if (prefix == null) {
+      // style=form, explode=true, e.g. /pet?name=cat&type=manx
+      prefix = "";
+    } else {
+      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+      prefix = prefix + "[";
+      suffix = "]";
+      containerSuffix = "]";
+      containerPrefix = "[";
+    }
+
+    StringJoiner joiner = new StringJoiner("&");
+
+    // add `primary_contact_person` to the URL query string
+    if (getPrimaryContactPerson() != null) {
+      try {
+        joiner.add(String.format("%sprimary_contact_person%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getPrimaryContactPerson()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `primary_phone` to the URL query string
+    if (getPrimaryPhone() != null) {
+      try {
+        joiner.add(String.format("%sprimary_phone%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getPrimaryPhone()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `primary_email` to the URL query string
+    if (getPrimaryEmail() != null) {
+      try {
+        joiner.add(String.format("%sprimary_email%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getPrimaryEmail()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `secondary_contact_person` to the URL query string
+    if (getSecondaryContactPerson() != null) {
+      try {
+        joiner.add(String.format("%ssecondary_contact_person%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getSecondaryContactPerson()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `secondary_phone` to the URL query string
+    if (getSecondaryPhone() != null) {
+      try {
+        joiner.add(String.format("%ssecondary_phone%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getSecondaryPhone()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `secondary_email` to the URL query string
+    if (getSecondaryEmail() != null) {
+      try {
+        joiner.add(String.format("%ssecondary_email%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getSecondaryEmail()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `website` to the URL query string
+    if (getWebsite() != null) {
+      try {
+        joiner.add(String.format("%swebsite%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getWebsite()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `about_business` to the URL query string
+    if (getAboutBusiness() != null) {
+      try {
+        joiner.add(String.format("%sabout_business%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getAboutBusiness()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `address` to the URL query string
+    if (getAddress() != null) {
+      joiner.add(getAddress().toUrlQueryString(prefix + "address" + suffix));
+    }
+
+    return joiner.toString();
   }
 
 }

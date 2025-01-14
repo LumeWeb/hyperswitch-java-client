@@ -24,20 +24,22 @@ import org.openapitools.jackson.nullable.JsonNullable;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.openapitools.jackson.nullable.JsonNullable;
 import java.util.NoSuchElementException;
-import org.junit.jupiter.api.Test;
+import org.junit.Assert;
+import org.junit.Ignore;
+import org.junit.Test;
 
 
 /**
  * Model tests for PaymentsPostSessionTokensResponse
  */
-class PaymentsPostSessionTokensResponseTest {
+public class PaymentsPostSessionTokensResponseTest {
     private final PaymentsPostSessionTokensResponse model = new PaymentsPostSessionTokensResponse();
 
     /**
      * Model tests for PaymentsPostSessionTokensResponse
      */
     @Test
-    void testPaymentsPostSessionTokensResponse() {
+    public void testPaymentsPostSessionTokensResponse() {
         // TODO: test PaymentsPostSessionTokensResponse
     }
 
@@ -45,7 +47,7 @@ class PaymentsPostSessionTokensResponseTest {
      * Test the property 'paymentId'
      */
     @Test
-    void paymentIdTest() {
+    public void paymentIdTest() {
         // TODO: test paymentId
     }
 
@@ -53,7 +55,7 @@ class PaymentsPostSessionTokensResponseTest {
      * Test the property 'nextAction'
      */
     @Test
-    void nextActionTest() {
+    public void nextActionTest() {
         // TODO: test nextAction
     }
 
@@ -61,7 +63,7 @@ class PaymentsPostSessionTokensResponseTest {
      * Test the property 'status'
      */
     @Test
-    void statusTest() {
+    public void statusTest() {
         // TODO: test status
     }
 

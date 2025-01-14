@@ -23,20 +23,22 @@ import org.openapitools.jackson.nullable.JsonNullable;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.openapitools.jackson.nullable.JsonNullable;
 import java.util.NoSuchElementException;
-import org.junit.jupiter.api.Test;
+import org.junit.Assert;
+import org.junit.Ignore;
+import org.junit.Test;
 
 
 /**
  * Model tests for OrderDetails
  */
-class OrderDetailsTest {
+public class OrderDetailsTest {
     private final OrderDetails model = new OrderDetails();
 
     /**
      * Model tests for OrderDetails
      */
     @Test
-    void testOrderDetails() {
+    public void testOrderDetails() {
         // TODO: test OrderDetails
     }
 
@@ -44,7 +46,7 @@ class OrderDetailsTest {
      * Test the property 'productName'
      */
     @Test
-    void productNameTest() {
+    public void productNameTest() {
         // TODO: test productName
     }
 
@@ -52,7 +54,7 @@ class OrderDetailsTest {
      * Test the property 'quantity'
      */
     @Test
-    void quantityTest() {
+    public void quantityTest() {
         // TODO: test quantity
     }
 
@@ -60,7 +62,7 @@ class OrderDetailsTest {
      * Test the property 'requiresShipping'
      */
     @Test
-    void requiresShippingTest() {
+    public void requiresShippingTest() {
         // TODO: test requiresShipping
     }
 
@@ -68,7 +70,7 @@ class OrderDetailsTest {
      * Test the property 'productImgLink'
      */
     @Test
-    void productImgLinkTest() {
+    public void productImgLinkTest() {
         // TODO: test productImgLink
     }
 
@@ -76,7 +78,7 @@ class OrderDetailsTest {
      * Test the property 'productId'
      */
     @Test
-    void productIdTest() {
+    public void productIdTest() {
         // TODO: test productId
     }
 
@@ -84,7 +86,7 @@ class OrderDetailsTest {
      * Test the property 'category'
      */
     @Test
-    void categoryTest() {
+    public void categoryTest() {
         // TODO: test category
     }
 
@@ -92,7 +94,7 @@ class OrderDetailsTest {
      * Test the property 'subCategory'
      */
     @Test
-    void subCategoryTest() {
+    public void subCategoryTest() {
         // TODO: test subCategory
     }
 
@@ -100,7 +102,7 @@ class OrderDetailsTest {
      * Test the property 'brand'
      */
     @Test
-    void brandTest() {
+    public void brandTest() {
         // TODO: test brand
     }
 
@@ -108,7 +110,7 @@ class OrderDetailsTest {
      * Test the property 'productType'
      */
     @Test
-    void productTypeTest() {
+    public void productTypeTest() {
         // TODO: test productType
     }
 
@@ -116,7 +118,7 @@ class OrderDetailsTest {
      * Test the property 'productTaxCode'
      */
     @Test
-    void productTaxCodeTest() {
+    public void productTaxCodeTest() {
         // TODO: test productTaxCode
     }
 

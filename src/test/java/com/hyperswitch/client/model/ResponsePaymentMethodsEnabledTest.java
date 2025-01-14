@@ -22,20 +22,22 @@ import com.hyperswitch.client.model.PaymentMethod;
 import com.hyperswitch.client.model.ResponsePaymentMethodTypes;
 import java.util.ArrayList;
 import java.util.List;
-import org.junit.jupiter.api.Test;
+import org.junit.Assert;
+import org.junit.Ignore;
+import org.junit.Test;
 
 
 /**
  * Model tests for ResponsePaymentMethodsEnabled
  */
-class ResponsePaymentMethodsEnabledTest {
+public class ResponsePaymentMethodsEnabledTest {
     private final ResponsePaymentMethodsEnabled model = new ResponsePaymentMethodsEnabled();
 
     /**
      * Model tests for ResponsePaymentMethodsEnabled
      */
     @Test
-    void testResponsePaymentMethodsEnabled() {
+    public void testResponsePaymentMethodsEnabled() {
         // TODO: test ResponsePaymentMethodsEnabled
     }
 
@@ -43,7 +45,7 @@ class ResponsePaymentMethodsEnabledTest {
      * Test the property 'paymentMethod'
      */
     @Test
-    void paymentMethodTest() {
+    public void paymentMethodTest() {
         // TODO: test paymentMethod
     }
 
@@ -51,7 +53,7 @@ class ResponsePaymentMethodsEnabledTest {
      * Test the property 'paymentMethodTypes'
      */
     @Test
-    void paymentMethodTypesTest() {
+    public void paymentMethodTypesTest() {
         // TODO: test paymentMethodTypes
     }
 

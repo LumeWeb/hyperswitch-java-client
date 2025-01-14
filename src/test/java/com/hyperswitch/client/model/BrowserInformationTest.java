@@ -22,20 +22,22 @@ import org.openapitools.jackson.nullable.JsonNullable;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.openapitools.jackson.nullable.JsonNullable;
 import java.util.NoSuchElementException;
-import org.junit.jupiter.api.Test;
+import org.junit.Assert;
+import org.junit.Ignore;
+import org.junit.Test;
 
 
 /**
  * Model tests for BrowserInformation
  */
-class BrowserInformationTest {
+public class BrowserInformationTest {
     private final BrowserInformation model = new BrowserInformation();
 
     /**
      * Model tests for BrowserInformation
      */
     @Test
-    void testBrowserInformation() {
+    public void testBrowserInformation() {
         // TODO: test BrowserInformation
     }
 
@@ -43,7 +45,7 @@ class BrowserInformationTest {
      * Test the property 'colorDepth'
      */
     @Test
-    void colorDepthTest() {
+    public void colorDepthTest() {
         // TODO: test colorDepth
     }
 
@@ -51,7 +53,7 @@ class BrowserInformationTest {
      * Test the property 'javaEnabled'
      */
     @Test
-    void javaEnabledTest() {
+    public void javaEnabledTest() {
         // TODO: test javaEnabled
     }
 
@@ -59,7 +61,7 @@ class BrowserInformationTest {
      * Test the property 'javaScriptEnabled'
      */
     @Test
-    void javaScriptEnabledTest() {
+    public void javaScriptEnabledTest() {
         // TODO: test javaScriptEnabled
     }
 
@@ -67,7 +69,7 @@ class BrowserInformationTest {
      * Test the property 'language'
      */
     @Test
-    void languageTest() {
+    public void languageTest() {
         // TODO: test language
     }
 
@@ -75,7 +77,7 @@ class BrowserInformationTest {
      * Test the property 'screenHeight'
      */
     @Test
-    void screenHeightTest() {
+    public void screenHeightTest() {
         // TODO: test screenHeight
     }
 
@@ -83,7 +85,7 @@ class BrowserInformationTest {
      * Test the property 'screenWidth'
      */
     @Test
-    void screenWidthTest() {
+    public void screenWidthTest() {
         // TODO: test screenWidth
     }
 
@@ -91,7 +93,7 @@ class BrowserInformationTest {
      * Test the property 'timeZone'
      */
     @Test
-    void timeZoneTest() {
+    public void timeZoneTest() {
         // TODO: test timeZone
     }
 
@@ -99,7 +101,7 @@ class BrowserInformationTest {
      * Test the property 'ipAddress'
      */
     @Test
-    void ipAddressTest() {
+    public void ipAddressTest() {
         // TODO: test ipAddress
     }
 
@@ -107,7 +109,7 @@ class BrowserInformationTest {
      * Test the property 'acceptHeader'
      */
     @Test
-    void acceptHeaderTest() {
+    public void acceptHeaderTest() {
         // TODO: test acceptHeader
     }
 
@@ -115,7 +117,7 @@ class BrowserInformationTest {
      * Test the property 'userAgent'
      */
     @Test
-    void userAgentTest() {
+    public void userAgentTest() {
         // TODO: test userAgent
     }
 

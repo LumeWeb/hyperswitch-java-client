@@ -21,20 +21,22 @@ import com.fasterxml.jackson.annotation.JsonValue;
 import com.hyperswitch.client.model.RefundResponse;
 import java.util.ArrayList;
 import java.util.List;
-import org.junit.jupiter.api.Test;
+import org.junit.Assert;
+import org.junit.Ignore;
+import org.junit.Test;
 
 
 /**
  * Model tests for RefundListResponse
  */
-class RefundListResponseTest {
+public class RefundListResponseTest {
     private final RefundListResponse model = new RefundListResponse();
 
     /**
      * Model tests for RefundListResponse
      */
     @Test
-    void testRefundListResponse() {
+    public void testRefundListResponse() {
         // TODO: test RefundListResponse
     }
 
@@ -42,7 +44,7 @@ class RefundListResponseTest {
      * Test the property 'count'
      */
     @Test
-    void countTest() {
+    public void countTest() {
         // TODO: test count
     }
 
@@ -50,7 +52,7 @@ class RefundListResponseTest {
      * Test the property 'totalCount'
      */
     @Test
-    void totalCountTest() {
+    public void totalCountTest() {
         // TODO: test totalCount
     }
 
@@ -58,7 +60,7 @@ class RefundListResponseTest {
      * Test the property 'data'
      */
     @Test
-    void dataTest() {
+    public void dataTest() {
         // TODO: test data
     }
 

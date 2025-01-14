@@ -18,20 +18,22 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonTypeName;
 import com.fasterxml.jackson.annotation.JsonValue;
-import org.junit.jupiter.api.Test;
+import org.junit.Assert;
+import org.junit.Ignore;
+import org.junit.Test;
 
 
 /**
  * Model tests for MerchantConnectorWebhookDetails
  */
-class MerchantConnectorWebhookDetailsTest {
+public class MerchantConnectorWebhookDetailsTest {
     private final MerchantConnectorWebhookDetails model = new MerchantConnectorWebhookDetails();
 
     /**
      * Model tests for MerchantConnectorWebhookDetails
      */
     @Test
-    void testMerchantConnectorWebhookDetails() {
+    public void testMerchantConnectorWebhookDetails() {
         // TODO: test MerchantConnectorWebhookDetails
     }
 
@@ -39,7 +41,7 @@ class MerchantConnectorWebhookDetailsTest {
      * Test the property 'merchantSecret'
      */
     @Test
-    void merchantSecretTest() {
+    public void merchantSecretTest() {
         // TODO: test merchantSecret
     }
 
@@ -47,7 +49,7 @@ class MerchantConnectorWebhookDetailsTest {
      * Test the property 'additionalSecret'
      */
     @Test
-    void additionalSecretTest() {
+    public void additionalSecretTest() {
         // TODO: test additionalSecret
     }
 

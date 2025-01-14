@@ -19,20 +19,22 @@ import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonTypeName;
 import com.fasterxml.jackson.annotation.JsonValue;
 import com.hyperswitch.client.model.MbWayRedirection;
-import org.junit.jupiter.api.Test;
+import org.junit.Assert;
+import org.junit.Ignore;
+import org.junit.Test;
 
 
 /**
  * Model tests for WalletDataOneOf14
  */
-class WalletDataOneOf14Test {
+public class WalletDataOneOf14Test {
     private final WalletDataOneOf14 model = new WalletDataOneOf14();
 
     /**
      * Model tests for WalletDataOneOf14
      */
     @Test
-    void testWalletDataOneOf14() {
+    public void testWalletDataOneOf14() {
         // TODO: test WalletDataOneOf14
     }
 
@@ -40,7 +42,7 @@ class WalletDataOneOf14Test {
      * Test the property 'mbWayRedirect'
      */
     @Test
-    void mbWayRedirectTest() {
+    public void mbWayRedirectTest() {
         // TODO: test mbWayRedirect
     }
 

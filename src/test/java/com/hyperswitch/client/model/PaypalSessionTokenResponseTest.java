@@ -19,20 +19,22 @@ import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonTypeName;
 import com.fasterxml.jackson.annotation.JsonValue;
 import com.hyperswitch.client.model.SdkNextAction;
-import org.junit.jupiter.api.Test;
+import org.junit.Assert;
+import org.junit.Ignore;
+import org.junit.Test;
 
 
 /**
  * Model tests for PaypalSessionTokenResponse
  */
-class PaypalSessionTokenResponseTest {
+public class PaypalSessionTokenResponseTest {
     private final PaypalSessionTokenResponse model = new PaypalSessionTokenResponse();
 
     /**
      * Model tests for PaypalSessionTokenResponse
      */
     @Test
-    void testPaypalSessionTokenResponse() {
+    public void testPaypalSessionTokenResponse() {
         // TODO: test PaypalSessionTokenResponse
     }
 
@@ -40,7 +42,7 @@ class PaypalSessionTokenResponseTest {
      * Test the property 'connector'
      */
     @Test
-    void connectorTest() {
+    public void connectorTest() {
         // TODO: test connector
     }
 
@@ -48,7 +50,7 @@ class PaypalSessionTokenResponseTest {
      * Test the property 'sessionToken'
      */
     @Test
-    void sessionTokenTest() {
+    public void sessionTokenTest() {
         // TODO: test sessionToken
     }
 
@@ -56,7 +58,7 @@ class PaypalSessionTokenResponseTest {
      * Test the property 'sdkNextAction'
      */
     @Test
-    void sdkNextActionTest() {
+    public void sdkNextActionTest() {
         // TODO: test sdkNextAction
     }
 

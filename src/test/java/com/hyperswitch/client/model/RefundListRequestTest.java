@@ -28,20 +28,22 @@ import org.openapitools.jackson.nullable.JsonNullable;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.openapitools.jackson.nullable.JsonNullable;
 import java.util.NoSuchElementException;
-import org.junit.jupiter.api.Test;
+import org.junit.Assert;
+import org.junit.Ignore;
+import org.junit.Test;
 
 
 /**
  * Model tests for RefundListRequest
  */
-class RefundListRequestTest {
+public class RefundListRequestTest {
     private final RefundListRequest model = new RefundListRequest();
 
     /**
      * Model tests for RefundListRequest
      */
     @Test
-    void testRefundListRequest() {
+    public void testRefundListRequest() {
         // TODO: test RefundListRequest
     }
 
@@ -49,7 +51,7 @@ class RefundListRequestTest {
      * Test the property 'paymentId'
      */
     @Test
-    void paymentIdTest() {
+    public void paymentIdTest() {
         // TODO: test paymentId
     }
 
@@ -57,7 +59,7 @@ class RefundListRequestTest {
      * Test the property 'refundId'
      */
     @Test
-    void refundIdTest() {
+    public void refundIdTest() {
         // TODO: test refundId
     }
 
@@ -65,7 +67,7 @@ class RefundListRequestTest {
      * Test the property 'profileId'
      */
     @Test
-    void profileIdTest() {
+    public void profileIdTest() {
         // TODO: test profileId
     }
 
@@ -73,7 +75,7 @@ class RefundListRequestTest {
      * Test the property 'limit'
      */
     @Test
-    void limitTest() {
+    public void limitTest() {
         // TODO: test limit
     }
 
@@ -81,7 +83,7 @@ class RefundListRequestTest {
      * Test the property 'offset'
      */
     @Test
-    void offsetTest() {
+    public void offsetTest() {
         // TODO: test offset
     }
 
@@ -89,7 +91,7 @@ class RefundListRequestTest {
      * Test the property 'amountFilter'
      */
     @Test
-    void amountFilterTest() {
+    public void amountFilterTest() {
         // TODO: test amountFilter
     }
 
@@ -97,7 +99,7 @@ class RefundListRequestTest {
      * Test the property 'connector'
      */
     @Test
-    void connectorTest() {
+    public void connectorTest() {
         // TODO: test connector
     }
 
@@ -105,7 +107,7 @@ class RefundListRequestTest {
      * Test the property 'merchantConnectorId'
      */
     @Test
-    void merchantConnectorIdTest() {
+    public void merchantConnectorIdTest() {
         // TODO: test merchantConnectorId
     }
 
@@ -113,7 +115,7 @@ class RefundListRequestTest {
      * Test the property 'currency'
      */
     @Test
-    void currencyTest() {
+    public void currencyTest() {
         // TODO: test currency
     }
 
@@ -121,7 +123,7 @@ class RefundListRequestTest {
      * Test the property 'refundStatus'
      */
     @Test
-    void refundStatusTest() {
+    public void refundStatusTest() {
         // TODO: test refundStatus
     }
 
@@ -129,7 +131,7 @@ class RefundListRequestTest {
      * Test the property 'startTime'
      */
     @Test
-    void startTimeTest() {
+    public void startTimeTest() {
         // TODO: test startTime
     }
 
@@ -137,7 +139,7 @@ class RefundListRequestTest {
      * Test the property 'endTime'
      */
     @Test
-    void endTimeTest() {
+    public void endTimeTest() {
         // TODO: test endTime
     }
 

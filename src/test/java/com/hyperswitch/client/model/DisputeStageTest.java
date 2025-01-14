@@ -13,18 +13,20 @@
 
 package com.hyperswitch.client.model;
 
-import org.junit.jupiter.api.Test;
+import org.junit.Assert;
+import org.junit.Ignore;
+import org.junit.Test;
 
 
 /**
  * Model tests for DisputeStage
  */
-class DisputeStageTest {
+public class DisputeStageTest {
     /**
      * Model tests for DisputeStage
      */
     @Test
-    void testDisputeStage() {
+    public void testDisputeStage() {
         // TODO: test DisputeStage
     }
 

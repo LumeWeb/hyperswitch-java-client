@@ -30,20 +30,22 @@ import org.openapitools.jackson.nullable.JsonNullable;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.openapitools.jackson.nullable.JsonNullable;
 import java.util.NoSuchElementException;
-import org.junit.jupiter.api.Test;
+import org.junit.Assert;
+import org.junit.Ignore;
+import org.junit.Test;
 
 
 /**
  * Model tests for MerchantConnectorListResponse
  */
-class MerchantConnectorListResponseTest {
+public class MerchantConnectorListResponseTest {
     private final MerchantConnectorListResponse model = new MerchantConnectorListResponse();
 
     /**
      * Model tests for MerchantConnectorListResponse
      */
     @Test
-    void testMerchantConnectorListResponse() {
+    public void testMerchantConnectorListResponse() {
         // TODO: test MerchantConnectorListResponse
     }
 
@@ -51,7 +53,7 @@ class MerchantConnectorListResponseTest {
      * Test the property 'connectorType'
      */
     @Test
-    void connectorTypeTest() {
+    public void connectorTypeTest() {
         // TODO: test connectorType
     }
 
@@ -59,7 +61,7 @@ class MerchantConnectorListResponseTest {
      * Test the property 'connectorName'
      */
     @Test
-    void connectorNameTest() {
+    public void connectorNameTest() {
         // TODO: test connectorName
     }
 
@@ -67,7 +69,7 @@ class MerchantConnectorListResponseTest {
      * Test the property 'connectorLabel'
      */
     @Test
-    void connectorLabelTest() {
+    public void connectorLabelTest() {
         // TODO: test connectorLabel
     }
 
@@ -75,7 +77,7 @@ class MerchantConnectorListResponseTest {
      * Test the property 'merchantConnectorId'
      */
     @Test
-    void merchantConnectorIdTest() {
+    public void merchantConnectorIdTest() {
         // TODO: test merchantConnectorId
     }
 
@@ -83,7 +85,7 @@ class MerchantConnectorListResponseTest {
      * Test the property 'profileId'
      */
     @Test
-    void profileIdTest() {
+    public void profileIdTest() {
         // TODO: test profileId
     }
 
@@ -91,7 +93,7 @@ class MerchantConnectorListResponseTest {
      * Test the property 'paymentMethodsEnabled'
      */
     @Test
-    void paymentMethodsEnabledTest() {
+    public void paymentMethodsEnabledTest() {
         // TODO: test paymentMethodsEnabled
     }
 
@@ -99,7 +101,7 @@ class MerchantConnectorListResponseTest {
      * Test the property 'testMode'
      */
     @Test
-    void testModeTest() {
+    public void testModeTest() {
         // TODO: test testMode
     }
 
@@ -107,7 +109,7 @@ class MerchantConnectorListResponseTest {
      * Test the property 'disabled'
      */
     @Test
-    void disabledTest() {
+    public void disabledTest() {
         // TODO: test disabled
     }
 
@@ -115,7 +117,7 @@ class MerchantConnectorListResponseTest {
      * Test the property 'frmConfigs'
      */
     @Test
-    void frmConfigsTest() {
+    public void frmConfigsTest() {
         // TODO: test frmConfigs
     }
 
@@ -123,7 +125,7 @@ class MerchantConnectorListResponseTest {
      * Test the property 'businessCountry'
      */
     @Test
-    void businessCountryTest() {
+    public void businessCountryTest() {
         // TODO: test businessCountry
     }
 
@@ -131,7 +133,7 @@ class MerchantConnectorListResponseTest {
      * Test the property 'businessLabel'
      */
     @Test
-    void businessLabelTest() {
+    public void businessLabelTest() {
         // TODO: test businessLabel
     }
 
@@ -139,7 +141,7 @@ class MerchantConnectorListResponseTest {
      * Test the property 'businessSubLabel'
      */
     @Test
-    void businessSubLabelTest() {
+    public void businessSubLabelTest() {
         // TODO: test businessSubLabel
     }
 
@@ -147,7 +149,7 @@ class MerchantConnectorListResponseTest {
      * Test the property 'applepayVerifiedDomains'
      */
     @Test
-    void applepayVerifiedDomainsTest() {
+    public void applepayVerifiedDomainsTest() {
         // TODO: test applepayVerifiedDomains
     }
 
@@ -155,7 +157,7 @@ class MerchantConnectorListResponseTest {
      * Test the property 'pmAuthConfig'
      */
     @Test
-    void pmAuthConfigTest() {
+    public void pmAuthConfigTest() {
         // TODO: test pmAuthConfig
     }
 
@@ -163,7 +165,7 @@ class MerchantConnectorListResponseTest {
      * Test the property 'status'
      */
     @Test
-    void statusTest() {
+    public void statusTest() {
         // TODO: test status
     }
 

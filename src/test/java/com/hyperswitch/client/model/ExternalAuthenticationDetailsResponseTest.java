@@ -24,20 +24,22 @@ import org.openapitools.jackson.nullable.JsonNullable;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.openapitools.jackson.nullable.JsonNullable;
 import java.util.NoSuchElementException;
-import org.junit.jupiter.api.Test;
+import org.junit.Assert;
+import org.junit.Ignore;
+import org.junit.Test;
 
 
 /**
  * Model tests for ExternalAuthenticationDetailsResponse
  */
-class ExternalAuthenticationDetailsResponseTest {
+public class ExternalAuthenticationDetailsResponseTest {
     private final ExternalAuthenticationDetailsResponse model = new ExternalAuthenticationDetailsResponse();
 
     /**
      * Model tests for ExternalAuthenticationDetailsResponse
      */
     @Test
-    void testExternalAuthenticationDetailsResponse() {
+    public void testExternalAuthenticationDetailsResponse() {
         // TODO: test ExternalAuthenticationDetailsResponse
     }
 
@@ -45,7 +47,7 @@ class ExternalAuthenticationDetailsResponseTest {
      * Test the property 'authenticationFlow'
      */
     @Test
-    void authenticationFlowTest() {
+    public void authenticationFlowTest() {
         // TODO: test authenticationFlow
     }
 
@@ -53,7 +55,7 @@ class ExternalAuthenticationDetailsResponseTest {
      * Test the property 'electronicCommerceIndicator'
      */
     @Test
-    void electronicCommerceIndicatorTest() {
+    public void electronicCommerceIndicatorTest() {
         // TODO: test electronicCommerceIndicator
     }
 
@@ -61,7 +63,7 @@ class ExternalAuthenticationDetailsResponseTest {
      * Test the property 'status'
      */
     @Test
-    void statusTest() {
+    public void statusTest() {
         // TODO: test status
     }
 
@@ -69,7 +71,7 @@ class ExternalAuthenticationDetailsResponseTest {
      * Test the property 'dsTransactionId'
      */
     @Test
-    void dsTransactionIdTest() {
+    public void dsTransactionIdTest() {
         // TODO: test dsTransactionId
     }
 
@@ -77,7 +79,7 @@ class ExternalAuthenticationDetailsResponseTest {
      * Test the property 'version'
      */
     @Test
-    void versionTest() {
+    public void versionTest() {
         // TODO: test version
     }
 
@@ -85,7 +87,7 @@ class ExternalAuthenticationDetailsResponseTest {
      * Test the property 'errorCode'
      */
     @Test
-    void errorCodeTest() {
+    public void errorCodeTest() {
         // TODO: test errorCode
     }
 
@@ -93,7 +95,7 @@ class ExternalAuthenticationDetailsResponseTest {
      * Test the property 'errorMessage'
      */
     @Test
-    void errorMessageTest() {
+    public void errorMessageTest() {
         // TODO: test errorMessage
     }
 

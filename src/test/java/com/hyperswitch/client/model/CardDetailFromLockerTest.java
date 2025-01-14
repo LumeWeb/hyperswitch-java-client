@@ -23,20 +23,22 @@ import org.openapitools.jackson.nullable.JsonNullable;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.openapitools.jackson.nullable.JsonNullable;
 import java.util.NoSuchElementException;
-import org.junit.jupiter.api.Test;
+import org.junit.Assert;
+import org.junit.Ignore;
+import org.junit.Test;
 
 
 /**
  * Model tests for CardDetailFromLocker
  */
-class CardDetailFromLockerTest {
+public class CardDetailFromLockerTest {
     private final CardDetailFromLocker model = new CardDetailFromLocker();
 
     /**
      * Model tests for CardDetailFromLocker
      */
     @Test
-    void testCardDetailFromLocker() {
+    public void testCardDetailFromLocker() {
         // TODO: test CardDetailFromLocker
     }
 
@@ -44,7 +46,7 @@ class CardDetailFromLockerTest {
      * Test the property 'scheme'
      */
     @Test
-    void schemeTest() {
+    public void schemeTest() {
         // TODO: test scheme
     }
 
@@ -52,7 +54,7 @@ class CardDetailFromLockerTest {
      * Test the property 'issuerCountry'
      */
     @Test
-    void issuerCountryTest() {
+    public void issuerCountryTest() {
         // TODO: test issuerCountry
     }
 
@@ -60,7 +62,7 @@ class CardDetailFromLockerTest {
      * Test the property 'last4Digits'
      */
     @Test
-    void last4DigitsTest() {
+    public void last4DigitsTest() {
         // TODO: test last4Digits
     }
 
@@ -68,7 +70,7 @@ class CardDetailFromLockerTest {
      * Test the property 'expiryMonth'
      */
     @Test
-    void expiryMonthTest() {
+    public void expiryMonthTest() {
         // TODO: test expiryMonth
     }
 
@@ -76,7 +78,7 @@ class CardDetailFromLockerTest {
      * Test the property 'expiryYear'
      */
     @Test
-    void expiryYearTest() {
+    public void expiryYearTest() {
         // TODO: test expiryYear
     }
 
@@ -84,7 +86,7 @@ class CardDetailFromLockerTest {
      * Test the property 'cardToken'
      */
     @Test
-    void cardTokenTest() {
+    public void cardTokenTest() {
         // TODO: test cardToken
     }
 
@@ -92,7 +94,7 @@ class CardDetailFromLockerTest {
      * Test the property 'cardHolderName'
      */
     @Test
-    void cardHolderNameTest() {
+    public void cardHolderNameTest() {
         // TODO: test cardHolderName
     }
 
@@ -100,7 +102,7 @@ class CardDetailFromLockerTest {
      * Test the property 'cardFingerprint'
      */
     @Test
-    void cardFingerprintTest() {
+    public void cardFingerprintTest() {
         // TODO: test cardFingerprint
     }
 
@@ -108,7 +110,7 @@ class CardDetailFromLockerTest {
      * Test the property 'nickName'
      */
     @Test
-    void nickNameTest() {
+    public void nickNameTest() {
         // TODO: test nickName
     }
 
@@ -116,7 +118,7 @@ class CardDetailFromLockerTest {
      * Test the property 'cardNetwork'
      */
     @Test
-    void cardNetworkTest() {
+    public void cardNetworkTest() {
         // TODO: test cardNetwork
     }
 
@@ -124,7 +126,7 @@ class CardDetailFromLockerTest {
      * Test the property 'cardIsin'
      */
     @Test
-    void cardIsinTest() {
+    public void cardIsinTest() {
         // TODO: test cardIsin
     }
 
@@ -132,7 +134,7 @@ class CardDetailFromLockerTest {
      * Test the property 'cardIssuer'
      */
     @Test
-    void cardIssuerTest() {
+    public void cardIssuerTest() {
         // TODO: test cardIssuer
     }
 
@@ -140,7 +142,7 @@ class CardDetailFromLockerTest {
      * Test the property 'cardType'
      */
     @Test
-    void cardTypeTest() {
+    public void cardTypeTest() {
         // TODO: test cardType
     }
 
@@ -148,7 +150,7 @@ class CardDetailFromLockerTest {
      * Test the property 'savedToLocker'
      */
     @Test
-    void savedToLockerTest() {
+    public void savedToLockerTest() {
         // TODO: test savedToLocker
     }
 

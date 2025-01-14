@@ -18,20 +18,22 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonTypeName;
 import com.fasterxml.jackson.annotation.JsonValue;
-import org.junit.jupiter.api.Test;
+import org.junit.Assert;
+import org.junit.Ignore;
+import org.junit.Test;
 
 
 /**
  * Model tests for MerchantConnectorDeleteResponse
  */
-class MerchantConnectorDeleteResponseTest {
+public class MerchantConnectorDeleteResponseTest {
     private final MerchantConnectorDeleteResponse model = new MerchantConnectorDeleteResponse();
 
     /**
      * Model tests for MerchantConnectorDeleteResponse
      */
     @Test
-    void testMerchantConnectorDeleteResponse() {
+    public void testMerchantConnectorDeleteResponse() {
         // TODO: test MerchantConnectorDeleteResponse
     }
 
@@ -39,7 +41,7 @@ class MerchantConnectorDeleteResponseTest {
      * Test the property 'merchantId'
      */
     @Test
-    void merchantIdTest() {
+    public void merchantIdTest() {
         // TODO: test merchantId
     }
 
@@ -47,7 +49,7 @@ class MerchantConnectorDeleteResponseTest {
      * Test the property 'merchantConnectorId'
      */
     @Test
-    void merchantConnectorIdTest() {
+    public void merchantConnectorIdTest() {
         // TODO: test merchantConnectorId
     }
 
@@ -55,7 +57,7 @@ class MerchantConnectorDeleteResponseTest {
      * Test the property 'deleted'
      */
     @Test
-    void deletedTest() {
+    public void deletedTest() {
         // TODO: test deleted
     }
 

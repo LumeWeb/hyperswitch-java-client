@@ -23,20 +23,22 @@ import org.openapitools.jackson.nullable.JsonNullable;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.openapitools.jackson.nullable.JsonNullable;
 import java.util.NoSuchElementException;
-import org.junit.jupiter.api.Test;
+import org.junit.Assert;
+import org.junit.Ignore;
+import org.junit.Test;
 
 
 /**
  * Model tests for MandateRevokedResponse
  */
-class MandateRevokedResponseTest {
+public class MandateRevokedResponseTest {
     private final MandateRevokedResponse model = new MandateRevokedResponse();
 
     /**
      * Model tests for MandateRevokedResponse
      */
     @Test
-    void testMandateRevokedResponse() {
+    public void testMandateRevokedResponse() {
         // TODO: test MandateRevokedResponse
     }
 
@@ -44,7 +46,7 @@ class MandateRevokedResponseTest {
      * Test the property 'mandateId'
      */
     @Test
-    void mandateIdTest() {
+    public void mandateIdTest() {
         // TODO: test mandateId
     }
 
@@ -52,7 +54,7 @@ class MandateRevokedResponseTest {
      * Test the property 'status'
      */
     @Test
-    void statusTest() {
+    public void statusTest() {
         // TODO: test status
     }
 
@@ -60,7 +62,7 @@ class MandateRevokedResponseTest {
      * Test the property 'errorCode'
      */
     @Test
-    void errorCodeTest() {
+    public void errorCodeTest() {
         // TODO: test errorCode
     }
 
@@ -68,7 +70,7 @@ class MandateRevokedResponseTest {
      * Test the property 'errorMessage'
      */
     @Test
-    void errorMessageTest() {
+    public void errorMessageTest() {
         // TODO: test errorMessage
     }
 

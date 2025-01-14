@@ -19,20 +19,22 @@ import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonTypeName;
 import com.fasterxml.jackson.annotation.JsonValue;
 import com.hyperswitch.client.model.MultibancoTransferInstructions;
-import org.junit.jupiter.api.Test;
+import org.junit.Assert;
+import org.junit.Ignore;
+import org.junit.Test;
 
 
 /**
  * Model tests for BankTransferInstructionsOneOf4
  */
-class BankTransferInstructionsOneOf4Test {
+public class BankTransferInstructionsOneOf4Test {
     private final BankTransferInstructionsOneOf4 model = new BankTransferInstructionsOneOf4();
 
     /**
      * Model tests for BankTransferInstructionsOneOf4
      */
     @Test
-    void testBankTransferInstructionsOneOf4() {
+    public void testBankTransferInstructionsOneOf4() {
         // TODO: test BankTransferInstructionsOneOf4
     }
 
@@ -40,7 +42,7 @@ class BankTransferInstructionsOneOf4Test {
      * Test the property 'multibanco'
      */
     @Test
-    void multibancoTest() {
+    public void multibancoTest() {
         // TODO: test multibanco
     }
 

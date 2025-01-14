@@ -19,20 +19,22 @@ import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonTypeName;
 import com.fasterxml.jackson.annotation.JsonValue;
 import com.hyperswitch.client.model.PayLaterData;
-import org.junit.jupiter.api.Test;
+import org.junit.Assert;
+import org.junit.Ignore;
+import org.junit.Test;
 
 
 /**
  * Model tests for PayLater
  */
-class PayLaterTest {
+public class PayLaterTest {
     private final PayLater model = new PayLater();
 
     /**
      * Model tests for PayLater
      */
     @Test
-    void testPayLater() {
+    public void testPayLater() {
         // TODO: test PayLater
     }
 
@@ -40,7 +42,7 @@ class PayLaterTest {
      * Test the property 'payLater'
      */
     @Test
-    void payLaterTest() {
+    public void payLaterTest() {
         // TODO: test payLater
     }
 

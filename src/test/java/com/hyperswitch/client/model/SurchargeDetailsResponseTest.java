@@ -24,20 +24,22 @@ import org.openapitools.jackson.nullable.JsonNullable;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.openapitools.jackson.nullable.JsonNullable;
 import java.util.NoSuchElementException;
-import org.junit.jupiter.api.Test;
+import org.junit.Assert;
+import org.junit.Ignore;
+import org.junit.Test;
 
 
 /**
  * Model tests for SurchargeDetailsResponse
  */
-class SurchargeDetailsResponseTest {
+public class SurchargeDetailsResponseTest {
     private final SurchargeDetailsResponse model = new SurchargeDetailsResponse();
 
     /**
      * Model tests for SurchargeDetailsResponse
      */
     @Test
-    void testSurchargeDetailsResponse() {
+    public void testSurchargeDetailsResponse() {
         // TODO: test SurchargeDetailsResponse
     }
 
@@ -45,7 +47,7 @@ class SurchargeDetailsResponseTest {
      * Test the property 'surcharge'
      */
     @Test
-    void surchargeTest() {
+    public void surchargeTest() {
         // TODO: test surcharge
     }
 
@@ -53,7 +55,7 @@ class SurchargeDetailsResponseTest {
      * Test the property 'taxOnSurcharge'
      */
     @Test
-    void taxOnSurchargeTest() {
+    public void taxOnSurchargeTest() {
         // TODO: test taxOnSurcharge
     }
 
@@ -61,7 +63,7 @@ class SurchargeDetailsResponseTest {
      * Test the property 'displaySurchargeAmount'
      */
     @Test
-    void displaySurchargeAmountTest() {
+    public void displaySurchargeAmountTest() {
         // TODO: test displaySurchargeAmount
     }
 
@@ -69,7 +71,7 @@ class SurchargeDetailsResponseTest {
      * Test the property 'displayTaxOnSurchargeAmount'
      */
     @Test
-    void displayTaxOnSurchargeAmountTest() {
+    public void displayTaxOnSurchargeAmountTest() {
         // TODO: test displayTaxOnSurchargeAmount
     }
 
@@ -77,7 +79,7 @@ class SurchargeDetailsResponseTest {
      * Test the property 'displayTotalSurchargeAmount'
      */
     @Test
-    void displayTotalSurchargeAmountTest() {
+    public void displayTotalSurchargeAmountTest() {
         // TODO: test displayTotalSurchargeAmount
     }
 

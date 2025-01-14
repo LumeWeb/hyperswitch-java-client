@@ -19,20 +19,22 @@ import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonTypeName;
 import com.fasterxml.jackson.annotation.JsonValue;
 import com.hyperswitch.client.model.PayLaterDataOneOfKlarnaRedirect;
-import org.junit.jupiter.api.Test;
+import org.junit.Assert;
+import org.junit.Ignore;
+import org.junit.Test;
 
 
 /**
  * Model tests for PayLaterDataOneOf
  */
-class PayLaterDataOneOfTest {
+public class PayLaterDataOneOfTest {
     private final PayLaterDataOneOf model = new PayLaterDataOneOf();
 
     /**
      * Model tests for PayLaterDataOneOf
      */
     @Test
-    void testPayLaterDataOneOf() {
+    public void testPayLaterDataOneOf() {
         // TODO: test PayLaterDataOneOf
     }
 
@@ -40,7 +42,7 @@ class PayLaterDataOneOfTest {
      * Test the property 'klarnaRedirect'
      */
     @Test
-    void klarnaRedirectTest() {
+    public void klarnaRedirectTest() {
         // TODO: test klarnaRedirect
     }
 

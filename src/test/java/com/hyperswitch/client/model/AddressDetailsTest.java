@@ -23,20 +23,22 @@ import org.openapitools.jackson.nullable.JsonNullable;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.openapitools.jackson.nullable.JsonNullable;
 import java.util.NoSuchElementException;
-import org.junit.jupiter.api.Test;
+import org.junit.Assert;
+import org.junit.Ignore;
+import org.junit.Test;
 
 
 /**
  * Model tests for AddressDetails
  */
-class AddressDetailsTest {
+public class AddressDetailsTest {
     private final AddressDetails model = new AddressDetails();
 
     /**
      * Model tests for AddressDetails
      */
     @Test
-    void testAddressDetails() {
+    public void testAddressDetails() {
         // TODO: test AddressDetails
     }
 
@@ -44,7 +46,7 @@ class AddressDetailsTest {
      * Test the property 'city'
      */
     @Test
-    void cityTest() {
+    public void cityTest() {
         // TODO: test city
     }
 
@@ -52,7 +54,7 @@ class AddressDetailsTest {
      * Test the property 'country'
      */
     @Test
-    void countryTest() {
+    public void countryTest() {
         // TODO: test country
     }
 
@@ -60,7 +62,7 @@ class AddressDetailsTest {
      * Test the property 'line1'
      */
     @Test
-    void line1Test() {
+    public void line1Test() {
         // TODO: test line1
     }
 
@@ -68,7 +70,7 @@ class AddressDetailsTest {
      * Test the property 'line2'
      */
     @Test
-    void line2Test() {
+    public void line2Test() {
         // TODO: test line2
     }
 
@@ -76,7 +78,7 @@ class AddressDetailsTest {
      * Test the property 'line3'
      */
     @Test
-    void line3Test() {
+    public void line3Test() {
         // TODO: test line3
     }
 
@@ -84,7 +86,7 @@ class AddressDetailsTest {
      * Test the property 'zip'
      */
     @Test
-    void zipTest() {
+    public void zipTest() {
         // TODO: test zip
     }
 
@@ -92,7 +94,7 @@ class AddressDetailsTest {
      * Test the property 'state'
      */
     @Test
-    void stateTest() {
+    public void stateTest() {
         // TODO: test state
     }
 
@@ -100,7 +102,7 @@ class AddressDetailsTest {
      * Test the property 'firstName'
      */
     @Test
-    void firstNameTest() {
+    public void firstNameTest() {
         // TODO: test firstName
     }
 
@@ -108,7 +110,7 @@ class AddressDetailsTest {
      * Test the property 'lastName'
      */
     @Test
-    void lastNameTest() {
+    public void lastNameTest() {
         // TODO: test lastName
     }
 

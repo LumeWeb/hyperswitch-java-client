@@ -24,20 +24,22 @@ import org.openapitools.jackson.nullable.JsonNullable;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.openapitools.jackson.nullable.JsonNullable;
 import java.util.NoSuchElementException;
-import org.junit.jupiter.api.Test;
+import org.junit.Assert;
+import org.junit.Ignore;
+import org.junit.Test;
 
 
 /**
  * Model tests for CreateApiKeyResponse
  */
-class CreateApiKeyResponseTest {
+public class CreateApiKeyResponseTest {
     private final CreateApiKeyResponse model = new CreateApiKeyResponse();
 
     /**
      * Model tests for CreateApiKeyResponse
      */
     @Test
-    void testCreateApiKeyResponse() {
+    public void testCreateApiKeyResponse() {
         // TODO: test CreateApiKeyResponse
     }
 
@@ -45,7 +47,7 @@ class CreateApiKeyResponseTest {
      * Test the property 'keyId'
      */
     @Test
-    void keyIdTest() {
+    public void keyIdTest() {
         // TODO: test keyId
     }
 
@@ -53,7 +55,7 @@ class CreateApiKeyResponseTest {
      * Test the property 'merchantId'
      */
     @Test
-    void merchantIdTest() {
+    public void merchantIdTest() {
         // TODO: test merchantId
     }
 
@@ -61,7 +63,7 @@ class CreateApiKeyResponseTest {
      * Test the property 'name'
      */
     @Test
-    void nameTest() {
+    public void nameTest() {
         // TODO: test name
     }
 
@@ -69,7 +71,7 @@ class CreateApiKeyResponseTest {
      * Test the property 'description'
      */
     @Test
-    void descriptionTest() {
+    public void descriptionTest() {
         // TODO: test description
     }
 
@@ -77,7 +79,7 @@ class CreateApiKeyResponseTest {
      * Test the property 'apiKey'
      */
     @Test
-    void apiKeyTest() {
+    public void apiKeyTest() {
         // TODO: test apiKey
     }
 
@@ -85,7 +87,7 @@ class CreateApiKeyResponseTest {
      * Test the property 'created'
      */
     @Test
-    void createdTest() {
+    public void createdTest() {
         // TODO: test created
     }
 
@@ -93,7 +95,7 @@ class CreateApiKeyResponseTest {
      * Test the property 'expiration'
      */
     @Test
-    void expirationTest() {
+    public void expirationTest() {
         // TODO: test expiration
     }
 

@@ -24,20 +24,22 @@ import org.openapitools.jackson.nullable.JsonNullable;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.openapitools.jackson.nullable.JsonNullable;
 import java.util.NoSuchElementException;
-import org.junit.jupiter.api.Test;
+import org.junit.Assert;
+import org.junit.Ignore;
+import org.junit.Test;
 
 
 /**
  * Model tests for GsmCreateRequest
  */
-class GsmCreateRequestTest {
+public class GsmCreateRequestTest {
     private final GsmCreateRequest model = new GsmCreateRequest();
 
     /**
      * Model tests for GsmCreateRequest
      */
     @Test
-    void testGsmCreateRequest() {
+    public void testGsmCreateRequest() {
         // TODO: test GsmCreateRequest
     }
 
@@ -45,7 +47,7 @@ class GsmCreateRequestTest {
      * Test the property 'connector'
      */
     @Test
-    void connectorTest() {
+    public void connectorTest() {
         // TODO: test connector
     }
 
@@ -53,7 +55,7 @@ class GsmCreateRequestTest {
      * Test the property 'flow'
      */
     @Test
-    void flowTest() {
+    public void flowTest() {
         // TODO: test flow
     }
 
@@ -61,7 +63,7 @@ class GsmCreateRequestTest {
      * Test the property 'subFlow'
      */
     @Test
-    void subFlowTest() {
+    public void subFlowTest() {
         // TODO: test subFlow
     }
 
@@ -69,7 +71,7 @@ class GsmCreateRequestTest {
      * Test the property 'code'
      */
     @Test
-    void codeTest() {
+    public void codeTest() {
         // TODO: test code
     }
 
@@ -77,7 +79,7 @@ class GsmCreateRequestTest {
      * Test the property 'message'
      */
     @Test
-    void messageTest() {
+    public void messageTest() {
         // TODO: test message
     }
 
@@ -85,7 +87,7 @@ class GsmCreateRequestTest {
      * Test the property 'status'
      */
     @Test
-    void statusTest() {
+    public void statusTest() {
         // TODO: test status
     }
 
@@ -93,7 +95,7 @@ class GsmCreateRequestTest {
      * Test the property 'routerError'
      */
     @Test
-    void routerErrorTest() {
+    public void routerErrorTest() {
         // TODO: test routerError
     }
 
@@ -101,7 +103,7 @@ class GsmCreateRequestTest {
      * Test the property 'decision'
      */
     @Test
-    void decisionTest() {
+    public void decisionTest() {
         // TODO: test decision
     }
 
@@ -109,7 +111,7 @@ class GsmCreateRequestTest {
      * Test the property 'stepUpPossible'
      */
     @Test
-    void stepUpPossibleTest() {
+    public void stepUpPossibleTest() {
         // TODO: test stepUpPossible
     }
 
@@ -117,7 +119,7 @@ class GsmCreateRequestTest {
      * Test the property 'unifiedCode'
      */
     @Test
-    void unifiedCodeTest() {
+    public void unifiedCodeTest() {
         // TODO: test unifiedCode
     }
 
@@ -125,7 +127,7 @@ class GsmCreateRequestTest {
      * Test the property 'unifiedMessage'
      */
     @Test
-    void unifiedMessageTest() {
+    public void unifiedMessageTest() {
         // TODO: test unifiedMessage
     }
 

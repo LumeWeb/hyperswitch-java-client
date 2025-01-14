@@ -25,20 +25,22 @@ import org.openapitools.jackson.nullable.JsonNullable;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.openapitools.jackson.nullable.JsonNullable;
 import java.util.NoSuchElementException;
-import org.junit.jupiter.api.Test;
+import org.junit.Assert;
+import org.junit.Ignore;
+import org.junit.Test;
 
 
 /**
  * Model tests for PaymentMethodCollectLinkRequestAllOf
  */
-class PaymentMethodCollectLinkRequestAllOfTest {
+public class PaymentMethodCollectLinkRequestAllOfTest {
     private final PaymentMethodCollectLinkRequestAllOf model = new PaymentMethodCollectLinkRequestAllOf();
 
     /**
      * Model tests for PaymentMethodCollectLinkRequestAllOf
      */
     @Test
-    void testPaymentMethodCollectLinkRequestAllOf() {
+    public void testPaymentMethodCollectLinkRequestAllOf() {
         // TODO: test PaymentMethodCollectLinkRequestAllOf
     }
 
@@ -46,7 +48,7 @@ class PaymentMethodCollectLinkRequestAllOfTest {
      * Test the property 'pmCollectLinkId'
      */
     @Test
-    void pmCollectLinkIdTest() {
+    public void pmCollectLinkIdTest() {
         // TODO: test pmCollectLinkId
     }
 
@@ -54,7 +56,7 @@ class PaymentMethodCollectLinkRequestAllOfTest {
      * Test the property 'customerId'
      */
     @Test
-    void customerIdTest() {
+    public void customerIdTest() {
         // TODO: test customerId
     }
 
@@ -62,7 +64,7 @@ class PaymentMethodCollectLinkRequestAllOfTest {
      * Test the property 'sessionExpiry'
      */
     @Test
-    void sessionExpiryTest() {
+    public void sessionExpiryTest() {
         // TODO: test sessionExpiry
     }
 
@@ -70,7 +72,7 @@ class PaymentMethodCollectLinkRequestAllOfTest {
      * Test the property 'returnUrl'
      */
     @Test
-    void returnUrlTest() {
+    public void returnUrlTest() {
         // TODO: test returnUrl
     }
 
@@ -78,7 +80,7 @@ class PaymentMethodCollectLinkRequestAllOfTest {
      * Test the property 'enabledPaymentMethods'
      */
     @Test
-    void enabledPaymentMethodsTest() {
+    public void enabledPaymentMethodsTest() {
         // TODO: test enabledPaymentMethods
     }
 

@@ -13,18 +13,20 @@
 
 package com.hyperswitch.client.model;
 
-import org.junit.jupiter.api.Test;
+import org.junit.Assert;
+import org.junit.Ignore;
+import org.junit.Test;
 
 
 /**
  * Model tests for FrmAction
  */
-class FrmActionTest {
+public class FrmActionTest {
     /**
      * Model tests for FrmAction
      */
     @Test
-    void testFrmAction() {
+    public void testFrmAction() {
         // TODO: test FrmAction
     }
 

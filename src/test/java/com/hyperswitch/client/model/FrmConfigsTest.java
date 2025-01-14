@@ -22,20 +22,22 @@ import com.hyperswitch.client.model.ConnectorType;
 import com.hyperswitch.client.model.FrmPaymentMethod;
 import java.util.ArrayList;
 import java.util.List;
-import org.junit.jupiter.api.Test;
+import org.junit.Assert;
+import org.junit.Ignore;
+import org.junit.Test;
 
 
 /**
  * Model tests for FrmConfigs
  */
-class FrmConfigsTest {
+public class FrmConfigsTest {
     private final FrmConfigs model = new FrmConfigs();
 
     /**
      * Model tests for FrmConfigs
      */
     @Test
-    void testFrmConfigs() {
+    public void testFrmConfigs() {
         // TODO: test FrmConfigs
     }
 
@@ -43,7 +45,7 @@ class FrmConfigsTest {
      * Test the property 'gateway'
      */
     @Test
-    void gatewayTest() {
+    public void gatewayTest() {
         // TODO: test gateway
     }
 
@@ -51,7 +53,7 @@ class FrmConfigsTest {
      * Test the property 'paymentMethods'
      */
     @Test
-    void paymentMethodsTest() {
+    public void paymentMethodsTest() {
         // TODO: test paymentMethods
     }
 

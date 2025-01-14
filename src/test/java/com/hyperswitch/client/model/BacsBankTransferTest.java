@@ -23,20 +23,22 @@ import org.openapitools.jackson.nullable.JsonNullable;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.openapitools.jackson.nullable.JsonNullable;
 import java.util.NoSuchElementException;
-import org.junit.jupiter.api.Test;
+import org.junit.Assert;
+import org.junit.Ignore;
+import org.junit.Test;
 
 
 /**
  * Model tests for BacsBankTransfer
  */
-class BacsBankTransferTest {
+public class BacsBankTransferTest {
     private final BacsBankTransfer model = new BacsBankTransfer();
 
     /**
      * Model tests for BacsBankTransfer
      */
     @Test
-    void testBacsBankTransfer() {
+    public void testBacsBankTransfer() {
         // TODO: test BacsBankTransfer
     }
 
@@ -44,7 +46,7 @@ class BacsBankTransferTest {
      * Test the property 'bankName'
      */
     @Test
-    void bankNameTest() {
+    public void bankNameTest() {
         // TODO: test bankName
     }
 
@@ -52,7 +54,7 @@ class BacsBankTransferTest {
      * Test the property 'bankCountryCode'
      */
     @Test
-    void bankCountryCodeTest() {
+    public void bankCountryCodeTest() {
         // TODO: test bankCountryCode
     }
 
@@ -60,7 +62,7 @@ class BacsBankTransferTest {
      * Test the property 'bankCity'
      */
     @Test
-    void bankCityTest() {
+    public void bankCityTest() {
         // TODO: test bankCity
     }
 
@@ -68,7 +70,7 @@ class BacsBankTransferTest {
      * Test the property 'bankAccountNumber'
      */
     @Test
-    void bankAccountNumberTest() {
+    public void bankAccountNumberTest() {
         // TODO: test bankAccountNumber
     }
 
@@ -76,7 +78,7 @@ class BacsBankTransferTest {
      * Test the property 'bankSortCode'
      */
     @Test
-    void bankSortCodeTest() {
+    public void bankSortCodeTest() {
         // TODO: test bankSortCode
     }
 

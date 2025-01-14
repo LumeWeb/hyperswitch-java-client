@@ -23,20 +23,22 @@ import org.openapitools.jackson.nullable.JsonNullable;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.openapitools.jackson.nullable.JsonNullable;
 import java.util.NoSuchElementException;
-import org.junit.jupiter.api.Test;
+import org.junit.Assert;
+import org.junit.Ignore;
+import org.junit.Test;
 
 
 /**
  * Model tests for PaymentListConstraints
  */
-class PaymentListConstraintsTest {
+public class PaymentListConstraintsTest {
     private final PaymentListConstraints model = new PaymentListConstraints();
 
     /**
      * Model tests for PaymentListConstraints
      */
     @Test
-    void testPaymentListConstraints() {
+    public void testPaymentListConstraints() {
         // TODO: test PaymentListConstraints
     }
 
@@ -44,7 +46,7 @@ class PaymentListConstraintsTest {
      * Test the property 'customerId'
      */
     @Test
-    void customerIdTest() {
+    public void customerIdTest() {
         // TODO: test customerId
     }
 
@@ -52,7 +54,7 @@ class PaymentListConstraintsTest {
      * Test the property 'startingAfter'
      */
     @Test
-    void startingAfterTest() {
+    public void startingAfterTest() {
         // TODO: test startingAfter
     }
 
@@ -60,7 +62,7 @@ class PaymentListConstraintsTest {
      * Test the property 'endingBefore'
      */
     @Test
-    void endingBeforeTest() {
+    public void endingBeforeTest() {
         // TODO: test endingBefore
     }
 
@@ -68,7 +70,7 @@ class PaymentListConstraintsTest {
      * Test the property 'limit'
      */
     @Test
-    void limitTest() {
+    public void limitTest() {
         // TODO: test limit
     }
 
@@ -76,7 +78,7 @@ class PaymentListConstraintsTest {
      * Test the property 'created'
      */
     @Test
-    void createdTest() {
+    public void createdTest() {
         // TODO: test created
     }
 
@@ -84,7 +86,7 @@ class PaymentListConstraintsTest {
      * Test the property 'createdLt'
      */
     @Test
-    void createdLtTest() {
+    public void createdLtTest() {
         // TODO: test createdLt
     }
 
@@ -92,7 +94,7 @@ class PaymentListConstraintsTest {
      * Test the property 'createdGt'
      */
     @Test
-    void createdGtTest() {
+    public void createdGtTest() {
         // TODO: test createdGt
     }
 
@@ -100,7 +102,7 @@ class PaymentListConstraintsTest {
      * Test the property 'createdLte'
      */
     @Test
-    void createdLteTest() {
+    public void createdLteTest() {
         // TODO: test createdLte
     }
 
@@ -108,7 +110,7 @@ class PaymentListConstraintsTest {
      * Test the property 'createdGte'
      */
     @Test
-    void createdGteTest() {
+    public void createdGteTest() {
         // TODO: test createdGte
     }
 

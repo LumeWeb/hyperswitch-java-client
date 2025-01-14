@@ -25,20 +25,22 @@ import org.openapitools.jackson.nullable.JsonNullable;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.openapitools.jackson.nullable.JsonNullable;
 import java.util.NoSuchElementException;
-import org.junit.jupiter.api.Test;
+import org.junit.Assert;
+import org.junit.Ignore;
+import org.junit.Test;
 
 
 /**
  * Model tests for MandateResponse
  */
-class MandateResponseTest {
+public class MandateResponseTest {
     private final MandateResponse model = new MandateResponse();
 
     /**
      * Model tests for MandateResponse
      */
     @Test
-    void testMandateResponse() {
+    public void testMandateResponse() {
         // TODO: test MandateResponse
     }
 
@@ -46,7 +48,7 @@ class MandateResponseTest {
      * Test the property 'mandateId'
      */
     @Test
-    void mandateIdTest() {
+    public void mandateIdTest() {
         // TODO: test mandateId
     }
 
@@ -54,7 +56,7 @@ class MandateResponseTest {
      * Test the property 'status'
      */
     @Test
-    void statusTest() {
+    public void statusTest() {
         // TODO: test status
     }
 
@@ -62,7 +64,7 @@ class MandateResponseTest {
      * Test the property 'paymentMethodId'
      */
     @Test
-    void paymentMethodIdTest() {
+    public void paymentMethodIdTest() {
         // TODO: test paymentMethodId
     }
 
@@ -70,7 +72,7 @@ class MandateResponseTest {
      * Test the property 'paymentMethod'
      */
     @Test
-    void paymentMethodTest() {
+    public void paymentMethodTest() {
         // TODO: test paymentMethod
     }
 
@@ -78,7 +80,7 @@ class MandateResponseTest {
      * Test the property 'paymentMethodType'
      */
     @Test
-    void paymentMethodTypeTest() {
+    public void paymentMethodTypeTest() {
         // TODO: test paymentMethodType
     }
 
@@ -86,7 +88,7 @@ class MandateResponseTest {
      * Test the property 'card'
      */
     @Test
-    void cardTest() {
+    public void cardTest() {
         // TODO: test card
     }
 
@@ -94,7 +96,7 @@ class MandateResponseTest {
      * Test the property 'customerAcceptance'
      */
     @Test
-    void customerAcceptanceTest() {
+    public void customerAcceptanceTest() {
         // TODO: test customerAcceptance
     }
 

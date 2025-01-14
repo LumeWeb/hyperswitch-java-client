@@ -26,20 +26,22 @@ import org.openapitools.jackson.nullable.JsonNullable;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.openapitools.jackson.nullable.JsonNullable;
 import java.util.NoSuchElementException;
-import org.junit.jupiter.api.Test;
+import org.junit.Assert;
+import org.junit.Ignore;
+import org.junit.Test;
 
 
 /**
  * Model tests for DisputeResponse
  */
-class DisputeResponseTest {
+public class DisputeResponseTest {
     private final DisputeResponse model = new DisputeResponse();
 
     /**
      * Model tests for DisputeResponse
      */
     @Test
-    void testDisputeResponse() {
+    public void testDisputeResponse() {
         // TODO: test DisputeResponse
     }
 
@@ -47,7 +49,7 @@ class DisputeResponseTest {
      * Test the property 'disputeId'
      */
     @Test
-    void disputeIdTest() {
+    public void disputeIdTest() {
         // TODO: test disputeId
     }
 
@@ -55,7 +57,7 @@ class DisputeResponseTest {
      * Test the property 'paymentId'
      */
     @Test
-    void paymentIdTest() {
+    public void paymentIdTest() {
         // TODO: test paymentId
     }
 
@@ -63,7 +65,7 @@ class DisputeResponseTest {
      * Test the property 'attemptId'
      */
     @Test
-    void attemptIdTest() {
+    public void attemptIdTest() {
         // TODO: test attemptId
     }
 
@@ -71,7 +73,7 @@ class DisputeResponseTest {
      * Test the property 'amount'
      */
     @Test
-    void amountTest() {
+    public void amountTest() {
         // TODO: test amount
     }
 
@@ -79,7 +81,7 @@ class DisputeResponseTest {
      * Test the property 'currency'
      */
     @Test
-    void currencyTest() {
+    public void currencyTest() {
         // TODO: test currency
     }
 
@@ -87,7 +89,7 @@ class DisputeResponseTest {
      * Test the property 'disputeStage'
      */
     @Test
-    void disputeStageTest() {
+    public void disputeStageTest() {
         // TODO: test disputeStage
     }
 
@@ -95,7 +97,7 @@ class DisputeResponseTest {
      * Test the property 'disputeStatus'
      */
     @Test
-    void disputeStatusTest() {
+    public void disputeStatusTest() {
         // TODO: test disputeStatus
     }
 
@@ -103,7 +105,7 @@ class DisputeResponseTest {
      * Test the property 'connector'
      */
     @Test
-    void connectorTest() {
+    public void connectorTest() {
         // TODO: test connector
     }
 
@@ -111,7 +113,7 @@ class DisputeResponseTest {
      * Test the property 'connectorStatus'
      */
     @Test
-    void connectorStatusTest() {
+    public void connectorStatusTest() {
         // TODO: test connectorStatus
     }
 
@@ -119,7 +121,7 @@ class DisputeResponseTest {
      * Test the property 'connectorDisputeId'
      */
     @Test
-    void connectorDisputeIdTest() {
+    public void connectorDisputeIdTest() {
         // TODO: test connectorDisputeId
     }
 
@@ -127,7 +129,7 @@ class DisputeResponseTest {
      * Test the property 'connectorReason'
      */
     @Test
-    void connectorReasonTest() {
+    public void connectorReasonTest() {
         // TODO: test connectorReason
     }
 
@@ -135,7 +137,7 @@ class DisputeResponseTest {
      * Test the property 'connectorReasonCode'
      */
     @Test
-    void connectorReasonCodeTest() {
+    public void connectorReasonCodeTest() {
         // TODO: test connectorReasonCode
     }
 
@@ -143,7 +145,7 @@ class DisputeResponseTest {
      * Test the property 'challengeRequiredBy'
      */
     @Test
-    void challengeRequiredByTest() {
+    public void challengeRequiredByTest() {
         // TODO: test challengeRequiredBy
     }
 
@@ -151,7 +153,7 @@ class DisputeResponseTest {
      * Test the property 'connectorCreatedAt'
      */
     @Test
-    void connectorCreatedAtTest() {
+    public void connectorCreatedAtTest() {
         // TODO: test connectorCreatedAt
     }
 
@@ -159,7 +161,7 @@ class DisputeResponseTest {
      * Test the property 'connectorUpdatedAt'
      */
     @Test
-    void connectorUpdatedAtTest() {
+    public void connectorUpdatedAtTest() {
         // TODO: test connectorUpdatedAt
     }
 
@@ -167,7 +169,7 @@ class DisputeResponseTest {
      * Test the property 'createdAt'
      */
     @Test
-    void createdAtTest() {
+    public void createdAtTest() {
         // TODO: test createdAt
     }
 
@@ -175,7 +177,7 @@ class DisputeResponseTest {
      * Test the property 'profileId'
      */
     @Test
-    void profileIdTest() {
+    public void profileIdTest() {
         // TODO: test profileId
     }
 
@@ -183,7 +185,7 @@ class DisputeResponseTest {
      * Test the property 'merchantConnectorId'
      */
     @Test
-    void merchantConnectorIdTest() {
+    public void merchantConnectorIdTest() {
         // TODO: test merchantConnectorId
     }
 

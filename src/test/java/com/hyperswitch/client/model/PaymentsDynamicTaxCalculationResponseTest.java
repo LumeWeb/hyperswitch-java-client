@@ -23,20 +23,22 @@ import org.openapitools.jackson.nullable.JsonNullable;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.openapitools.jackson.nullable.JsonNullable;
 import java.util.NoSuchElementException;
-import org.junit.jupiter.api.Test;
+import org.junit.Assert;
+import org.junit.Ignore;
+import org.junit.Test;
 
 
 /**
  * Model tests for PaymentsDynamicTaxCalculationResponse
  */
-class PaymentsDynamicTaxCalculationResponseTest {
+public class PaymentsDynamicTaxCalculationResponseTest {
     private final PaymentsDynamicTaxCalculationResponse model = new PaymentsDynamicTaxCalculationResponse();
 
     /**
      * Model tests for PaymentsDynamicTaxCalculationResponse
      */
     @Test
-    void testPaymentsDynamicTaxCalculationResponse() {
+    public void testPaymentsDynamicTaxCalculationResponse() {
         // TODO: test PaymentsDynamicTaxCalculationResponse
     }
 
@@ -44,7 +46,7 @@ class PaymentsDynamicTaxCalculationResponseTest {
      * Test the property 'paymentId'
      */
     @Test
-    void paymentIdTest() {
+    public void paymentIdTest() {
         // TODO: test paymentId
     }
 
@@ -52,7 +54,7 @@ class PaymentsDynamicTaxCalculationResponseTest {
      * Test the property 'netAmount'
      */
     @Test
-    void netAmountTest() {
+    public void netAmountTest() {
         // TODO: test netAmount
     }
 
@@ -60,7 +62,7 @@ class PaymentsDynamicTaxCalculationResponseTest {
      * Test the property 'orderTaxAmount'
      */
     @Test
-    void orderTaxAmountTest() {
+    public void orderTaxAmountTest() {
         // TODO: test orderTaxAmount
     }
 
@@ -68,7 +70,7 @@ class PaymentsDynamicTaxCalculationResponseTest {
      * Test the property 'shippingCost'
      */
     @Test
-    void shippingCostTest() {
+    public void shippingCostTest() {
         // TODO: test shippingCost
     }
 
@@ -76,7 +78,7 @@ class PaymentsDynamicTaxCalculationResponseTest {
      * Test the property 'displayAmount'
      */
     @Test
-    void displayAmountTest() {
+    public void displayAmountTest() {
         // TODO: test displayAmount
     }
 

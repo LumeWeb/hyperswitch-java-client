@@ -13,18 +13,20 @@
 
 package com.hyperswitch.client.model;
 
-import org.junit.jupiter.api.Test;
+import org.junit.Assert;
+import org.junit.Ignore;
+import org.junit.Test;
 
 
 /**
  * Model tests for CardNetwork
  */
-class CardNetworkTest {
+public class CardNetworkTest {
     /**
      * Model tests for CardNetwork
      */
     @Test
-    void testCardNetwork() {
+    public void testCardNetwork() {
         // TODO: test CardNetwork
     }
 

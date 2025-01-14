@@ -26,6 +26,9 @@ import org.openapitools.jackson.nullable.JsonNullable;
 import java.util.NoSuchElementException;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 import com.fasterxml.jackson.annotation.JsonTypeName;
+import java.io.UnsupportedEncodingException;
+import java.net.URLEncoder;
+import java.util.StringJoiner;
 
 /**
  * ThreeDsMethodDataOneOf
@@ -258,6 +261,81 @@ public class ThreeDsMethodDataOneOf {
       return "null";
     }
     return o.toString().replace("\n", "\n    ");
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @return URL query string
+   */
+  public String toUrlQueryString() {
+    return toUrlQueryString(null);
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @param prefix prefix of the query string
+   * @return URL query string
+   */
+  public String toUrlQueryString(String prefix) {
+    String suffix = "";
+    String containerSuffix = "";
+    String containerPrefix = "";
+    if (prefix == null) {
+      // style=form, explode=true, e.g. /pet?name=cat&type=manx
+      prefix = "";
+    } else {
+      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+      prefix = prefix + "[";
+      suffix = "]";
+      containerSuffix = "]";
+      containerPrefix = "[";
+    }
+
+    StringJoiner joiner = new StringJoiner("&");
+
+    // add `three_ds_method_data_submission` to the URL query string
+    if (getThreeDsMethodDataSubmission() != null) {
+      try {
+        joiner.add(String.format("%sthree_ds_method_data_submission%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getThreeDsMethodDataSubmission()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `three_ds_method_data` to the URL query string
+    if (getThreeDsMethodData() != null) {
+      try {
+        joiner.add(String.format("%sthree_ds_method_data%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getThreeDsMethodData()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `three_ds_method_url` to the URL query string
+    if (getThreeDsMethodUrl() != null) {
+      try {
+        joiner.add(String.format("%sthree_ds_method_url%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getThreeDsMethodUrl()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `three_ds_method_key` to the URL query string
+    if (getThreeDsMethodKey() != null) {
+      try {
+        joiner.add(String.format("%sthree_ds_method_key%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getThreeDsMethodKey()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    return joiner.toString();
   }
 
 }

@@ -21,20 +21,22 @@ import com.fasterxml.jackson.annotation.JsonValue;
 import com.hyperswitch.client.model.Currency;
 import java.util.ArrayList;
 import java.util.List;
-import org.junit.jupiter.api.Test;
+import org.junit.Assert;
+import org.junit.Ignore;
+import org.junit.Test;
 
 
 /**
  * Model tests for AcceptedCurrenciesOneOf1
  */
-class AcceptedCurrenciesOneOf1Test {
+public class AcceptedCurrenciesOneOf1Test {
     private final AcceptedCurrenciesOneOf1 model = new AcceptedCurrenciesOneOf1();
 
     /**
      * Model tests for AcceptedCurrenciesOneOf1
      */
     @Test
-    void testAcceptedCurrenciesOneOf1() {
+    public void testAcceptedCurrenciesOneOf1() {
         // TODO: test AcceptedCurrenciesOneOf1
     }
 
@@ -42,7 +44,7 @@ class AcceptedCurrenciesOneOf1Test {
      * Test the property 'type'
      */
     @Test
-    void typeTest() {
+    public void typeTest() {
         // TODO: test type
     }
 
@@ -50,7 +52,7 @@ class AcceptedCurrenciesOneOf1Test {
      * Test the property '_list'
      */
     @Test
-    void _listTest() {
+    public void _listTest() {
         // TODO: test _list
     }
 

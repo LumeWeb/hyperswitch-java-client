@@ -19,20 +19,22 @@ import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonTypeName;
 import com.fasterxml.jackson.annotation.JsonValue;
 import com.hyperswitch.client.model.CardDetail;
-import org.junit.jupiter.api.Test;
+import org.junit.Assert;
+import org.junit.Ignore;
+import org.junit.Test;
 
 
 /**
  * Model tests for PaymentMethodCreateDataOneOf
  */
-class PaymentMethodCreateDataOneOfTest {
+public class PaymentMethodCreateDataOneOfTest {
     private final PaymentMethodCreateDataOneOf model = new PaymentMethodCreateDataOneOf();
 
     /**
      * Model tests for PaymentMethodCreateDataOneOf
      */
     @Test
-    void testPaymentMethodCreateDataOneOf() {
+    public void testPaymentMethodCreateDataOneOf() {
         // TODO: test PaymentMethodCreateDataOneOf
     }
 
@@ -40,7 +42,7 @@ class PaymentMethodCreateDataOneOfTest {
      * Test the property 'card'
      */
     @Test
-    void cardTest() {
+    public void cardTest() {
         // TODO: test card
     }
 

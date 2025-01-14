@@ -18,20 +18,22 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonTypeName;
 import com.fasterxml.jackson.annotation.JsonValue;
-import org.junit.jupiter.api.Test;
+import org.junit.Assert;
+import org.junit.Ignore;
+import org.junit.Test;
 
 
 /**
  * Model tests for GiftCardDetails
  */
-class GiftCardDetailsTest {
+public class GiftCardDetailsTest {
     private final GiftCardDetails model = new GiftCardDetails();
 
     /**
      * Model tests for GiftCardDetails
      */
     @Test
-    void testGiftCardDetails() {
+    public void testGiftCardDetails() {
         // TODO: test GiftCardDetails
     }
 
@@ -39,7 +41,7 @@ class GiftCardDetailsTest {
      * Test the property 'number'
      */
     @Test
-    void numberTest() {
+    public void numberTest() {
         // TODO: test number
     }
 
@@ -47,7 +49,7 @@ class GiftCardDetailsTest {
      * Test the property 'cvc'
      */
     @Test
-    void cvcTest() {
+    public void cvcTest() {
         // TODO: test cvc
     }
 

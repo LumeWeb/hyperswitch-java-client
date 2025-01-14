@@ -23,20 +23,22 @@ import org.openapitools.jackson.nullable.JsonNullable;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.openapitools.jackson.nullable.JsonNullable;
 import java.util.NoSuchElementException;
-import org.junit.jupiter.api.Test;
+import org.junit.Assert;
+import org.junit.Ignore;
+import org.junit.Test;
 
 
 /**
  * Model tests for CardAdditionalData
  */
-class CardAdditionalDataTest {
+public class CardAdditionalDataTest {
     private final CardAdditionalData model = new CardAdditionalData();
 
     /**
      * Model tests for CardAdditionalData
      */
     @Test
-    void testCardAdditionalData() {
+    public void testCardAdditionalData() {
         // TODO: test CardAdditionalData
     }
 
@@ -44,7 +46,7 @@ class CardAdditionalDataTest {
      * Test the property 'cardIssuer'
      */
     @Test
-    void cardIssuerTest() {
+    public void cardIssuerTest() {
         // TODO: test cardIssuer
     }
 
@@ -52,7 +54,7 @@ class CardAdditionalDataTest {
      * Test the property 'cardNetwork'
      */
     @Test
-    void cardNetworkTest() {
+    public void cardNetworkTest() {
         // TODO: test cardNetwork
     }
 
@@ -60,7 +62,7 @@ class CardAdditionalDataTest {
      * Test the property 'cardType'
      */
     @Test
-    void cardTypeTest() {
+    public void cardTypeTest() {
         // TODO: test cardType
     }
 
@@ -68,7 +70,7 @@ class CardAdditionalDataTest {
      * Test the property 'cardIssuingCountry'
      */
     @Test
-    void cardIssuingCountryTest() {
+    public void cardIssuingCountryTest() {
         // TODO: test cardIssuingCountry
     }
 
@@ -76,7 +78,7 @@ class CardAdditionalDataTest {
      * Test the property 'bankCode'
      */
     @Test
-    void bankCodeTest() {
+    public void bankCodeTest() {
         // TODO: test bankCode
     }
 
@@ -84,7 +86,7 @@ class CardAdditionalDataTest {
      * Test the property 'last4'
      */
     @Test
-    void last4Test() {
+    public void last4Test() {
         // TODO: test last4
     }
 
@@ -92,7 +94,7 @@ class CardAdditionalDataTest {
      * Test the property 'cardIsin'
      */
     @Test
-    void cardIsinTest() {
+    public void cardIsinTest() {
         // TODO: test cardIsin
     }
 
@@ -100,7 +102,7 @@ class CardAdditionalDataTest {
      * Test the property 'cardExtendedBin'
      */
     @Test
-    void cardExtendedBinTest() {
+    public void cardExtendedBinTest() {
         // TODO: test cardExtendedBin
     }
 
@@ -108,7 +110,7 @@ class CardAdditionalDataTest {
      * Test the property 'cardExpMonth'
      */
     @Test
-    void cardExpMonthTest() {
+    public void cardExpMonthTest() {
         // TODO: test cardExpMonth
     }
 
@@ -116,7 +118,7 @@ class CardAdditionalDataTest {
      * Test the property 'cardExpYear'
      */
     @Test
-    void cardExpYearTest() {
+    public void cardExpYearTest() {
         // TODO: test cardExpYear
     }
 
@@ -124,7 +126,7 @@ class CardAdditionalDataTest {
      * Test the property 'cardHolderName'
      */
     @Test
-    void cardHolderNameTest() {
+    public void cardHolderNameTest() {
         // TODO: test cardHolderName
     }
 

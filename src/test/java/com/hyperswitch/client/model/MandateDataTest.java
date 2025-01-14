@@ -24,20 +24,22 @@ import org.openapitools.jackson.nullable.JsonNullable;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.openapitools.jackson.nullable.JsonNullable;
 import java.util.NoSuchElementException;
-import org.junit.jupiter.api.Test;
+import org.junit.Assert;
+import org.junit.Ignore;
+import org.junit.Test;
 
 
 /**
  * Model tests for MandateData
  */
-class MandateDataTest {
+public class MandateDataTest {
     private final MandateData model = new MandateData();
 
     /**
      * Model tests for MandateData
      */
     @Test
-    void testMandateData() {
+    public void testMandateData() {
         // TODO: test MandateData
     }
 
@@ -45,7 +47,7 @@ class MandateDataTest {
      * Test the property 'updateMandateId'
      */
     @Test
-    void updateMandateIdTest() {
+    public void updateMandateIdTest() {
         // TODO: test updateMandateId
     }
 
@@ -53,7 +55,7 @@ class MandateDataTest {
      * Test the property 'customerAcceptance'
      */
     @Test
-    void customerAcceptanceTest() {
+    public void customerAcceptanceTest() {
         // TODO: test customerAcceptance
     }
 
@@ -61,7 +63,7 @@ class MandateDataTest {
      * Test the property 'mandateType'
      */
     @Test
-    void mandateTypeTest() {
+    public void mandateTypeTest() {
         // TODO: test mandateType
     }
 

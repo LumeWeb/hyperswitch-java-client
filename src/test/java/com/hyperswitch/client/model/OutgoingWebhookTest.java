@@ -21,20 +21,22 @@ import com.fasterxml.jackson.annotation.JsonValue;
 import com.hyperswitch.client.model.EventType;
 import com.hyperswitch.client.model.OutgoingWebhookContent;
 import java.time.OffsetDateTime;
-import org.junit.jupiter.api.Test;
+import org.junit.Assert;
+import org.junit.Ignore;
+import org.junit.Test;
 
 
 /**
  * Model tests for OutgoingWebhook
  */
-class OutgoingWebhookTest {
+public class OutgoingWebhookTest {
     private final OutgoingWebhook model = new OutgoingWebhook();
 
     /**
      * Model tests for OutgoingWebhook
      */
     @Test
-    void testOutgoingWebhook() {
+    public void testOutgoingWebhook() {
         // TODO: test OutgoingWebhook
     }
 
@@ -42,7 +44,7 @@ class OutgoingWebhookTest {
      * Test the property 'merchantId'
      */
     @Test
-    void merchantIdTest() {
+    public void merchantIdTest() {
         // TODO: test merchantId
     }
 
@@ -50,7 +52,7 @@ class OutgoingWebhookTest {
      * Test the property 'eventId'
      */
     @Test
-    void eventIdTest() {
+    public void eventIdTest() {
         // TODO: test eventId
     }
 
@@ -58,7 +60,7 @@ class OutgoingWebhookTest {
      * Test the property 'eventType'
      */
     @Test
-    void eventTypeTest() {
+    public void eventTypeTest() {
         // TODO: test eventType
     }
 
@@ -66,7 +68,7 @@ class OutgoingWebhookTest {
      * Test the property 'content'
      */
     @Test
-    void contentTest() {
+    public void contentTest() {
         // TODO: test content
     }
 
@@ -74,7 +76,7 @@ class OutgoingWebhookTest {
      * Test the property 'timestamp'
      */
     @Test
-    void timestampTest() {
+    public void timestampTest() {
         // TODO: test timestamp
     }
 

@@ -22,20 +22,22 @@ import org.openapitools.jackson.nullable.JsonNullable;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.openapitools.jackson.nullable.JsonNullable;
 import java.util.NoSuchElementException;
-import org.junit.jupiter.api.Test;
+import org.junit.Assert;
+import org.junit.Ignore;
+import org.junit.Test;
 
 
 /**
  * Model tests for GpayTokenParameters
  */
-class GpayTokenParametersTest {
+public class GpayTokenParametersTest {
     private final GpayTokenParameters model = new GpayTokenParameters();
 
     /**
      * Model tests for GpayTokenParameters
      */
     @Test
-    void testGpayTokenParameters() {
+    public void testGpayTokenParameters() {
         // TODO: test GpayTokenParameters
     }
 
@@ -43,7 +45,7 @@ class GpayTokenParametersTest {
      * Test the property 'gateway'
      */
     @Test
-    void gatewayTest() {
+    public void gatewayTest() {
         // TODO: test gateway
     }
 
@@ -51,7 +53,7 @@ class GpayTokenParametersTest {
      * Test the property 'gatewayMerchantId'
      */
     @Test
-    void gatewayMerchantIdTest() {
+    public void gatewayMerchantIdTest() {
         // TODO: test gatewayMerchantId
     }
 
@@ -59,7 +61,7 @@ class GpayTokenParametersTest {
      * Test the property 'stripeColonVersion'
      */
     @Test
-    void stripeColonVersionTest() {
+    public void stripeColonVersionTest() {
         // TODO: test stripeColonVersion
     }
 
@@ -67,7 +69,7 @@ class GpayTokenParametersTest {
      * Test the property 'stripeColonPublishableKey'
      */
     @Test
-    void stripeColonPublishableKeyTest() {
+    public void stripeColonPublishableKeyTest() {
         // TODO: test stripeColonPublishableKey
     }
 

@@ -22,20 +22,22 @@ import com.hyperswitch.client.model.ConnectorSelection;
 import com.hyperswitch.client.model.RuleConnectorSelection;
 import java.util.HashMap;
 import java.util.Map;
-import org.junit.jupiter.api.Test;
+import org.junit.Assert;
+import org.junit.Ignore;
+import org.junit.Test;
 
 
 /**
  * Model tests for ProgramConnectorSelection
  */
-class ProgramConnectorSelectionTest {
+public class ProgramConnectorSelectionTest {
     private final ProgramConnectorSelection model = new ProgramConnectorSelection();
 
     /**
      * Model tests for ProgramConnectorSelection
      */
     @Test
-    void testProgramConnectorSelection() {
+    public void testProgramConnectorSelection() {
         // TODO: test ProgramConnectorSelection
     }
 
@@ -43,7 +45,7 @@ class ProgramConnectorSelectionTest {
      * Test the property 'defaultSelection'
      */
     @Test
-    void defaultSelectionTest() {
+    public void defaultSelectionTest() {
         // TODO: test defaultSelection
     }
 
@@ -51,7 +53,7 @@ class ProgramConnectorSelectionTest {
      * Test the property 'rules'
      */
     @Test
-    void rulesTest() {
+    public void rulesTest() {
         // TODO: test rules
     }
 
@@ -59,7 +61,7 @@ class ProgramConnectorSelectionTest {
      * Test the property 'metadata'
      */
     @Test
-    void metadataTest() {
+    public void metadataTest() {
         // TODO: test metadata
     }
 

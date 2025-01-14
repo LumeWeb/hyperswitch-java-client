@@ -24,20 +24,22 @@ import org.openapitools.jackson.nullable.JsonNullable;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.openapitools.jackson.nullable.JsonNullable;
 import java.util.NoSuchElementException;
-import org.junit.jupiter.api.Test;
+import org.junit.Assert;
+import org.junit.Ignore;
+import org.junit.Test;
 
 
 /**
  * Model tests for MandateAmountData
  */
-class MandateAmountDataTest {
+public class MandateAmountDataTest {
     private final MandateAmountData model = new MandateAmountData();
 
     /**
      * Model tests for MandateAmountData
      */
     @Test
-    void testMandateAmountData() {
+    public void testMandateAmountData() {
         // TODO: test MandateAmountData
     }
 
@@ -45,7 +47,7 @@ class MandateAmountDataTest {
      * Test the property 'amount'
      */
     @Test
-    void amountTest() {
+    public void amountTest() {
         // TODO: test amount
     }
 
@@ -53,7 +55,7 @@ class MandateAmountDataTest {
      * Test the property 'currency'
      */
     @Test
-    void currencyTest() {
+    public void currencyTest() {
         // TODO: test currency
     }
 
@@ -61,7 +63,7 @@ class MandateAmountDataTest {
      * Test the property 'startDate'
      */
     @Test
-    void startDateTest() {
+    public void startDateTest() {
         // TODO: test startDate
     }
 
@@ -69,7 +71,7 @@ class MandateAmountDataTest {
      * Test the property 'endDate'
      */
     @Test
-    void endDateTest() {
+    public void endDateTest() {
         // TODO: test endDate
     }
 
@@ -77,7 +79,7 @@ class MandateAmountDataTest {
      * Test the property 'metadata'
      */
     @Test
-    void metadataTest() {
+    public void metadataTest() {
         // TODO: test metadata
     }
 

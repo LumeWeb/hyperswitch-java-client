@@ -29,20 +29,22 @@ import com.hyperswitch.client.model.PayLaterDataOneOf5;
 import com.hyperswitch.client.model.PayLaterDataOneOf6;
 import com.hyperswitch.client.model.PayLaterDataOneOf7;
 import com.hyperswitch.client.model.PayLaterDataOneOfKlarnaRedirect;
-import org.junit.jupiter.api.Test;
+import org.junit.Assert;
+import org.junit.Ignore;
+import org.junit.Test;
 
 
 /**
  * Model tests for PayLaterData
  */
-class PayLaterDataTest {
+public class PayLaterDataTest {
     private final PayLaterData model = new PayLaterData();
 
     /**
      * Model tests for PayLaterData
      */
     @Test
-    void testPayLaterData() {
+    public void testPayLaterData() {
         // TODO: test PayLaterData
     }
 
@@ -50,7 +52,7 @@ class PayLaterDataTest {
      * Test the property 'klarnaRedirect'
      */
     @Test
-    void klarnaRedirectTest() {
+    public void klarnaRedirectTest() {
         // TODO: test klarnaRedirect
     }
 
@@ -58,7 +60,7 @@ class PayLaterDataTest {
      * Test the property 'klarnaSdk'
      */
     @Test
-    void klarnaSdkTest() {
+    public void klarnaSdkTest() {
         // TODO: test klarnaSdk
     }
 
@@ -66,7 +68,7 @@ class PayLaterDataTest {
      * Test the property 'affirmRedirect'
      */
     @Test
-    void affirmRedirectTest() {
+    public void affirmRedirectTest() {
         // TODO: test affirmRedirect
     }
 
@@ -74,7 +76,7 @@ class PayLaterDataTest {
      * Test the property 'afterpayClearpayRedirect'
      */
     @Test
-    void afterpayClearpayRedirectTest() {
+    public void afterpayClearpayRedirectTest() {
         // TODO: test afterpayClearpayRedirect
     }
 
@@ -82,7 +84,7 @@ class PayLaterDataTest {
      * Test the property 'payBrightRedirect'
      */
     @Test
-    void payBrightRedirectTest() {
+    public void payBrightRedirectTest() {
         // TODO: test payBrightRedirect
     }
 
@@ -90,7 +92,7 @@ class PayLaterDataTest {
      * Test the property 'walleyRedirect'
      */
     @Test
-    void walleyRedirectTest() {
+    public void walleyRedirectTest() {
         // TODO: test walleyRedirect
     }
 
@@ -98,7 +100,7 @@ class PayLaterDataTest {
      * Test the property 'almaRedirect'
      */
     @Test
-    void almaRedirectTest() {
+    public void almaRedirectTest() {
         // TODO: test almaRedirect
     }
 
@@ -106,7 +108,7 @@ class PayLaterDataTest {
      * Test the property 'atomeRedirect'
      */
     @Test
-    void atomeRedirectTest() {
+    public void atomeRedirectTest() {
         // TODO: test atomeRedirect
     }
 

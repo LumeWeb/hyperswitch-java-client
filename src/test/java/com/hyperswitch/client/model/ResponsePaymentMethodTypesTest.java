@@ -34,20 +34,22 @@ import org.openapitools.jackson.nullable.JsonNullable;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.openapitools.jackson.nullable.JsonNullable;
 import java.util.NoSuchElementException;
-import org.junit.jupiter.api.Test;
+import org.junit.Assert;
+import org.junit.Ignore;
+import org.junit.Test;
 
 
 /**
  * Model tests for ResponsePaymentMethodTypes
  */
-class ResponsePaymentMethodTypesTest {
+public class ResponsePaymentMethodTypesTest {
     private final ResponsePaymentMethodTypes model = new ResponsePaymentMethodTypes();
 
     /**
      * Model tests for ResponsePaymentMethodTypes
      */
     @Test
-    void testResponsePaymentMethodTypes() {
+    public void testResponsePaymentMethodTypes() {
         // TODO: test ResponsePaymentMethodTypes
     }
 
@@ -55,7 +57,7 @@ class ResponsePaymentMethodTypesTest {
      * Test the property 'paymentMethodType'
      */
     @Test
-    void paymentMethodTypeTest() {
+    public void paymentMethodTypeTest() {
         // TODO: test paymentMethodType
     }
 
@@ -63,7 +65,7 @@ class ResponsePaymentMethodTypesTest {
      * Test the property 'paymentExperience'
      */
     @Test
-    void paymentExperienceTest() {
+    public void paymentExperienceTest() {
         // TODO: test paymentExperience
     }
 
@@ -71,7 +73,7 @@ class ResponsePaymentMethodTypesTest {
      * Test the property 'cardNetworks'
      */
     @Test
-    void cardNetworksTest() {
+    public void cardNetworksTest() {
         // TODO: test cardNetworks
     }
 
@@ -79,7 +81,7 @@ class ResponsePaymentMethodTypesTest {
      * Test the property 'bankNames'
      */
     @Test
-    void bankNamesTest() {
+    public void bankNamesTest() {
         // TODO: test bankNames
     }
 
@@ -87,7 +89,7 @@ class ResponsePaymentMethodTypesTest {
      * Test the property 'bankDebits'
      */
     @Test
-    void bankDebitsTest() {
+    public void bankDebitsTest() {
         // TODO: test bankDebits
     }
 
@@ -95,7 +97,7 @@ class ResponsePaymentMethodTypesTest {
      * Test the property 'bankTransfers'
      */
     @Test
-    void bankTransfersTest() {
+    public void bankTransfersTest() {
         // TODO: test bankTransfers
     }
 
@@ -103,7 +105,7 @@ class ResponsePaymentMethodTypesTest {
      * Test the property 'requiredFields'
      */
     @Test
-    void requiredFieldsTest() {
+    public void requiredFieldsTest() {
         // TODO: test requiredFields
     }
 
@@ -111,7 +113,7 @@ class ResponsePaymentMethodTypesTest {
      * Test the property 'surchargeDetails'
      */
     @Test
-    void surchargeDetailsTest() {
+    public void surchargeDetailsTest() {
         // TODO: test surchargeDetails
     }
 
@@ -119,7 +121,7 @@ class ResponsePaymentMethodTypesTest {
      * Test the property 'pmAuthConnector'
      */
     @Test
-    void pmAuthConnectorTest() {
+    public void pmAuthConnectorTest() {
         // TODO: test pmAuthConnector
     }
 

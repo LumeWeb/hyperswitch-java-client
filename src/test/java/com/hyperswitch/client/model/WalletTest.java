@@ -22,20 +22,22 @@ import com.hyperswitch.client.model.Paypal;
 import com.hyperswitch.client.model.Venmo;
 import com.hyperswitch.client.model.WalletOneOf;
 import com.hyperswitch.client.model.WalletOneOf1;
-import org.junit.jupiter.api.Test;
+import org.junit.Assert;
+import org.junit.Ignore;
+import org.junit.Test;
 
 
 /**
  * Model tests for Wallet
  */
-class WalletTest {
+public class WalletTest {
     private final Wallet model = new Wallet();
 
     /**
      * Model tests for Wallet
      */
     @Test
-    void testWallet() {
+    public void testWallet() {
         // TODO: test Wallet
     }
 
@@ -43,7 +45,7 @@ class WalletTest {
      * Test the property 'paypal'
      */
     @Test
-    void paypalTest() {
+    public void paypalTest() {
         // TODO: test paypal
     }
 
@@ -51,7 +53,7 @@ class WalletTest {
      * Test the property 'venmo'
      */
     @Test
-    void venmoTest() {
+    public void venmoTest() {
         // TODO: test venmo
     }
 

@@ -46,7 +46,7 @@ jobs:
                   generator-tag: 'v6.5.0'
                   config-file: openai-generator.yml
                   openapi-file: openapi_spec.json
-                  command-args: --library apache-httpclient -t ~/.openapi-generator/templates
+                  command-args: --library apache-httpclient -t ./.openapi-generator/templates
 
             - name: Move generated Files
               run: |

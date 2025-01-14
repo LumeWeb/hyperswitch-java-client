@@ -43,9 +43,7 @@ jobs:
                   default_bump: patch
 
             - name: Update version in build files
-              run: |
-                  # Update version in build.gradle
-                  sed -i "s/version = '.*'/version = '${{ steps.semver.outputs.new_version }}'/g" build.gradle
+              run: ./gradlew properties -Pversion=${{ steps.semver.outputs.new_version }}
 
             - name: Create Version Update PR
               uses: peter-evans/create-pull-request@v5

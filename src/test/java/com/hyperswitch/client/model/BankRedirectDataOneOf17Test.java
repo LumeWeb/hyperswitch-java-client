@@ -18,20 +18,22 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonTypeName;
 import com.fasterxml.jackson.annotation.JsonValue;
-import org.junit.jupiter.api.Test;
+import org.junit.Assert;
+import org.junit.Ignore;
+import org.junit.Test;
 
 
 /**
  * Model tests for BankRedirectDataOneOf17
  */
-class BankRedirectDataOneOf17Test {
+public class BankRedirectDataOneOf17Test {
     private final BankRedirectDataOneOf17 model = new BankRedirectDataOneOf17();
 
     /**
      * Model tests for BankRedirectDataOneOf17
      */
     @Test
-    void testBankRedirectDataOneOf17() {
+    public void testBankRedirectDataOneOf17() {
         // TODO: test BankRedirectDataOneOf17
     }
 
@@ -39,7 +41,7 @@ class BankRedirectDataOneOf17Test {
      * Test the property 'localBankRedirect'
      */
     @Test
-    void localBankRedirectTest() {
+    public void localBankRedirectTest() {
         // TODO: test localBankRedirect
     }
 

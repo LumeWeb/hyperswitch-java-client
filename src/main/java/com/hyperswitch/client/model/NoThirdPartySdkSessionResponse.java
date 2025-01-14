@@ -22,6 +22,9 @@ import com.fasterxml.jackson.annotation.JsonTypeName;
 import com.fasterxml.jackson.annotation.JsonValue;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 import com.fasterxml.jackson.annotation.JsonTypeName;
+import java.io.UnsupportedEncodingException;
+import java.net.URLEncoder;
+import java.util.StringJoiner;
 
 /**
  * NoThirdPartySdkSessionResponse
@@ -420,6 +423,151 @@ public class NoThirdPartySdkSessionResponse {
       return "null";
     }
     return o.toString().replace("\n", "\n    ");
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @return URL query string
+   */
+  public String toUrlQueryString() {
+    return toUrlQueryString(null);
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @param prefix prefix of the query string
+   * @return URL query string
+   */
+  public String toUrlQueryString(String prefix) {
+    String suffix = "";
+    String containerSuffix = "";
+    String containerPrefix = "";
+    if (prefix == null) {
+      // style=form, explode=true, e.g. /pet?name=cat&type=manx
+      prefix = "";
+    } else {
+      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+      prefix = prefix + "[";
+      suffix = "]";
+      containerSuffix = "]";
+      containerPrefix = "[";
+    }
+
+    StringJoiner joiner = new StringJoiner("&");
+
+    // add `epoch_timestamp` to the URL query string
+    if (getEpochTimestamp() != null) {
+      try {
+        joiner.add(String.format("%sepoch_timestamp%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getEpochTimestamp()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `expires_at` to the URL query string
+    if (getExpiresAt() != null) {
+      try {
+        joiner.add(String.format("%sexpires_at%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getExpiresAt()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `merchant_session_identifier` to the URL query string
+    if (getMerchantSessionIdentifier() != null) {
+      try {
+        joiner.add(String.format("%smerchant_session_identifier%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getMerchantSessionIdentifier()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `nonce` to the URL query string
+    if (getNonce() != null) {
+      try {
+        joiner.add(String.format("%snonce%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getNonce()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `merchant_identifier` to the URL query string
+    if (getMerchantIdentifier() != null) {
+      try {
+        joiner.add(String.format("%smerchant_identifier%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getMerchantIdentifier()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `domain_name` to the URL query string
+    if (getDomainName() != null) {
+      try {
+        joiner.add(String.format("%sdomain_name%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getDomainName()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `display_name` to the URL query string
+    if (getDisplayName() != null) {
+      try {
+        joiner.add(String.format("%sdisplay_name%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getDisplayName()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `signature` to the URL query string
+    if (getSignature() != null) {
+      try {
+        joiner.add(String.format("%ssignature%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getSignature()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `operational_analytics_identifier` to the URL query string
+    if (getOperationalAnalyticsIdentifier() != null) {
+      try {
+        joiner.add(String.format("%soperational_analytics_identifier%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getOperationalAnalyticsIdentifier()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `retries` to the URL query string
+    if (getRetries() != null) {
+      try {
+        joiner.add(String.format("%sretries%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getRetries()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `psp_id` to the URL query string
+    if (getPspId() != null) {
+      try {
+        joiner.add(String.format("%spsp_id%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getPspId()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    return joiner.toString();
   }
 
 }

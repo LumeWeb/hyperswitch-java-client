@@ -25,20 +25,22 @@ import org.openapitools.jackson.nullable.JsonNullable;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.openapitools.jackson.nullable.JsonNullable;
 import java.util.NoSuchElementException;
-import org.junit.jupiter.api.Test;
+import org.junit.Assert;
+import org.junit.Ignore;
+import org.junit.Test;
 
 
 /**
  * Model tests for SessionTokenOneOf4
  */
-class SessionTokenOneOf4Test {
+public class SessionTokenOneOf4Test {
     private final SessionTokenOneOf4 model = new SessionTokenOneOf4();
 
     /**
      * Model tests for SessionTokenOneOf4
      */
     @Test
-    void testSessionTokenOneOf4() {
+    public void testSessionTokenOneOf4() {
         // TODO: test SessionTokenOneOf4
     }
 
@@ -46,7 +48,7 @@ class SessionTokenOneOf4Test {
      * Test the property 'sessionTokenData'
      */
     @Test
-    void sessionTokenDataTest() {
+    public void sessionTokenDataTest() {
         // TODO: test sessionTokenData
     }
 
@@ -54,7 +56,7 @@ class SessionTokenOneOf4Test {
      * Test the property 'paymentRequestData'
      */
     @Test
-    void paymentRequestDataTest() {
+    public void paymentRequestDataTest() {
         // TODO: test paymentRequestData
     }
 
@@ -62,7 +64,7 @@ class SessionTokenOneOf4Test {
      * Test the property 'connector'
      */
     @Test
-    void connectorTest() {
+    public void connectorTest() {
         // TODO: test connector
     }
 
@@ -70,7 +72,7 @@ class SessionTokenOneOf4Test {
      * Test the property 'delayedSessionToken'
      */
     @Test
-    void delayedSessionTokenTest() {
+    public void delayedSessionTokenTest() {
         // TODO: test delayedSessionToken
     }
 
@@ -78,7 +80,7 @@ class SessionTokenOneOf4Test {
      * Test the property 'sdkNextAction'
      */
     @Test
-    void sdkNextActionTest() {
+    public void sdkNextActionTest() {
         // TODO: test sdkNextAction
     }
 
@@ -86,7 +88,7 @@ class SessionTokenOneOf4Test {
      * Test the property 'connectorReferenceId'
      */
     @Test
-    void connectorReferenceIdTest() {
+    public void connectorReferenceIdTest() {
         // TODO: test connectorReferenceId
     }
 
@@ -94,7 +96,7 @@ class SessionTokenOneOf4Test {
      * Test the property 'connectorSdkPublicKey'
      */
     @Test
-    void connectorSdkPublicKeyTest() {
+    public void connectorSdkPublicKeyTest() {
         // TODO: test connectorSdkPublicKey
     }
 
@@ -102,7 +104,7 @@ class SessionTokenOneOf4Test {
      * Test the property 'connectorMerchantId'
      */
     @Test
-    void connectorMerchantIdTest() {
+    public void connectorMerchantIdTest() {
         // TODO: test connectorMerchantId
     }
 
@@ -110,7 +112,7 @@ class SessionTokenOneOf4Test {
      * Test the property 'walletName'
      */
     @Test
-    void walletNameTest() {
+    public void walletNameTest() {
         // TODO: test walletName
     }
 

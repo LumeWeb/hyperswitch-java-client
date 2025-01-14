@@ -22,20 +22,22 @@ import org.openapitools.jackson.nullable.JsonNullable;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.openapitools.jackson.nullable.JsonNullable;
 import java.util.NoSuchElementException;
-import org.junit.jupiter.api.Test;
+import org.junit.Assert;
+import org.junit.Ignore;
+import org.junit.Test;
 
 
 /**
  * Model tests for FrmMessage
  */
-class FrmMessageTest {
+public class FrmMessageTest {
     private final FrmMessage model = new FrmMessage();
 
     /**
      * Model tests for FrmMessage
      */
     @Test
-    void testFrmMessage() {
+    public void testFrmMessage() {
         // TODO: test FrmMessage
     }
 
@@ -43,7 +45,7 @@ class FrmMessageTest {
      * Test the property 'frmName'
      */
     @Test
-    void frmNameTest() {
+    public void frmNameTest() {
         // TODO: test frmName
     }
 
@@ -51,7 +53,7 @@ class FrmMessageTest {
      * Test the property 'frmTransactionId'
      */
     @Test
-    void frmTransactionIdTest() {
+    public void frmTransactionIdTest() {
         // TODO: test frmTransactionId
     }
 
@@ -59,7 +61,7 @@ class FrmMessageTest {
      * Test the property 'frmTransactionType'
      */
     @Test
-    void frmTransactionTypeTest() {
+    public void frmTransactionTypeTest() {
         // TODO: test frmTransactionType
     }
 
@@ -67,7 +69,7 @@ class FrmMessageTest {
      * Test the property 'frmStatus'
      */
     @Test
-    void frmStatusTest() {
+    public void frmStatusTest() {
         // TODO: test frmStatus
     }
 
@@ -75,7 +77,7 @@ class FrmMessageTest {
      * Test the property 'frmScore'
      */
     @Test
-    void frmScoreTest() {
+    public void frmScoreTest() {
         // TODO: test frmScore
     }
 
@@ -83,7 +85,7 @@ class FrmMessageTest {
      * Test the property 'frmReason'
      */
     @Test
-    void frmReasonTest() {
+    public void frmReasonTest() {
         // TODO: test frmReason
     }
 
@@ -91,7 +93,7 @@ class FrmMessageTest {
      * Test the property 'frmError'
      */
     @Test
-    void frmErrorTest() {
+    public void frmErrorTest() {
         // TODO: test frmError
     }
 

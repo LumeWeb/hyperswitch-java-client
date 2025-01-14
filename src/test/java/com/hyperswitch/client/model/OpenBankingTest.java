@@ -19,20 +19,22 @@ import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonTypeName;
 import com.fasterxml.jackson.annotation.JsonValue;
 import com.hyperswitch.client.model.OpenBankingData;
-import org.junit.jupiter.api.Test;
+import org.junit.Assert;
+import org.junit.Ignore;
+import org.junit.Test;
 
 
 /**
  * Model tests for OpenBanking
  */
-class OpenBankingTest {
+public class OpenBankingTest {
     private final OpenBanking model = new OpenBanking();
 
     /**
      * Model tests for OpenBanking
      */
     @Test
-    void testOpenBanking() {
+    public void testOpenBanking() {
         // TODO: test OpenBanking
     }
 
@@ -40,7 +42,7 @@ class OpenBankingTest {
      * Test the property 'openBanking'
      */
     @Test
-    void openBankingTest() {
+    public void openBankingTest() {
         // TODO: test openBanking
     }
 

@@ -13,18 +13,20 @@
 
 package com.hyperswitch.client.model;
 
-import org.junit.jupiter.api.Test;
+import org.junit.Assert;
+import org.junit.Ignore;
+import org.junit.Test;
 
 
 /**
  * Model tests for FrmPreferredFlowTypes
  */
-class FrmPreferredFlowTypesTest {
+public class FrmPreferredFlowTypesTest {
     /**
      * Model tests for FrmPreferredFlowTypes
      */
     @Test
-    void testFrmPreferredFlowTypes() {
+    public void testFrmPreferredFlowTypes() {
         // TODO: test FrmPreferredFlowTypes
     }
 

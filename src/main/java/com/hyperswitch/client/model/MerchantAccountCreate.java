@@ -31,6 +31,9 @@ import org.openapitools.jackson.nullable.JsonNullable;
 import java.util.NoSuchElementException;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 import com.fasterxml.jackson.annotation.JsonTypeName;
+import java.io.UnsupportedEncodingException;
+import java.net.URLEncoder;
+import java.util.StringJoiner;
 
 /**
  * MerchantAccountCreate
@@ -797,6 +800,196 @@ public class MerchantAccountCreate {
       return "null";
     }
     return o.toString().replace("\n", "\n    ");
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @return URL query string
+   */
+  public String toUrlQueryString() {
+    return toUrlQueryString(null);
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @param prefix prefix of the query string
+   * @return URL query string
+   */
+  public String toUrlQueryString(String prefix) {
+    String suffix = "";
+    String containerSuffix = "";
+    String containerPrefix = "";
+    if (prefix == null) {
+      // style=form, explode=true, e.g. /pet?name=cat&type=manx
+      prefix = "";
+    } else {
+      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+      prefix = prefix + "[";
+      suffix = "]";
+      containerSuffix = "]";
+      containerPrefix = "[";
+    }
+
+    StringJoiner joiner = new StringJoiner("&");
+
+    // add `merchant_id` to the URL query string
+    if (getMerchantId() != null) {
+      try {
+        joiner.add(String.format("%smerchant_id%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getMerchantId()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `merchant_name` to the URL query string
+    if (getMerchantName() != null) {
+      try {
+        joiner.add(String.format("%smerchant_name%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getMerchantName()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `merchant_details` to the URL query string
+    if (getMerchantDetails() != null) {
+      joiner.add(getMerchantDetails().toUrlQueryString(prefix + "merchant_details" + suffix));
+    }
+
+    // add `return_url` to the URL query string
+    if (getReturnUrl() != null) {
+      try {
+        joiner.add(String.format("%sreturn_url%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getReturnUrl()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `webhook_details` to the URL query string
+    if (getWebhookDetails() != null) {
+      joiner.add(getWebhookDetails().toUrlQueryString(prefix + "webhook_details" + suffix));
+    }
+
+    // add `payout_routing_algorithm` to the URL query string
+    if (getPayoutRoutingAlgorithm() != null) {
+      joiner.add(getPayoutRoutingAlgorithm().toUrlQueryString(prefix + "payout_routing_algorithm" + suffix));
+    }
+
+    // add `sub_merchants_enabled` to the URL query string
+    if (getSubMerchantsEnabled() != null) {
+      try {
+        joiner.add(String.format("%ssub_merchants_enabled%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getSubMerchantsEnabled()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `parent_merchant_id` to the URL query string
+    if (getParentMerchantId() != null) {
+      try {
+        joiner.add(String.format("%sparent_merchant_id%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getParentMerchantId()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `enable_payment_response_hash` to the URL query string
+    if (getEnablePaymentResponseHash() != null) {
+      try {
+        joiner.add(String.format("%senable_payment_response_hash%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getEnablePaymentResponseHash()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `payment_response_hash_key` to the URL query string
+    if (getPaymentResponseHashKey() != null) {
+      try {
+        joiner.add(String.format("%spayment_response_hash_key%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getPaymentResponseHashKey()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `redirect_to_merchant_with_http_post` to the URL query string
+    if (getRedirectToMerchantWithHttpPost() != null) {
+      try {
+        joiner.add(String.format("%sredirect_to_merchant_with_http_post%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getRedirectToMerchantWithHttpPost()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `metadata` to the URL query string
+    if (getMetadata() != null) {
+      try {
+        joiner.add(String.format("%smetadata%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getMetadata()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `publishable_key` to the URL query string
+    if (getPublishableKey() != null) {
+      try {
+        joiner.add(String.format("%spublishable_key%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getPublishableKey()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `locker_id` to the URL query string
+    if (getLockerId() != null) {
+      try {
+        joiner.add(String.format("%slocker_id%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getLockerId()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `primary_business_details` to the URL query string
+    if (getPrimaryBusinessDetails() != null) {
+      joiner.add(getPrimaryBusinessDetails().toUrlQueryString(prefix + "primary_business_details" + suffix));
+    }
+
+    // add `frm_routing_algorithm` to the URL query string
+    if (getFrmRoutingAlgorithm() != null) {
+      try {
+        joiner.add(String.format("%sfrm_routing_algorithm%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getFrmRoutingAlgorithm()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `organization_id` to the URL query string
+    if (getOrganizationId() != null) {
+      try {
+        joiner.add(String.format("%sorganization_id%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getOrganizationId()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `pm_collect_link_config` to the URL query string
+    if (getPmCollectLinkConfig() != null) {
+      joiner.add(getPmCollectLinkConfig().toUrlQueryString(prefix + "pm_collect_link_config" + suffix));
+    }
+
+    return joiner.toString();
   }
 
 }

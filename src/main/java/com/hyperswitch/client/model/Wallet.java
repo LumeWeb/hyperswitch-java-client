@@ -26,6 +26,9 @@ import com.hyperswitch.client.model.WalletOneOf;
 import com.hyperswitch.client.model.WalletOneOf1;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 import com.fasterxml.jackson.annotation.JsonTypeName;
+import java.io.UnsupportedEncodingException;
+import java.net.URLEncoder;
+import java.util.StringJoiner;
 
 /**
  * Wallet
@@ -133,6 +136,51 @@ public class Wallet {
       return "null";
     }
     return o.toString().replace("\n", "\n    ");
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @return URL query string
+   */
+  public String toUrlQueryString() {
+    return toUrlQueryString(null);
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @param prefix prefix of the query string
+   * @return URL query string
+   */
+  public String toUrlQueryString(String prefix) {
+    String suffix = "";
+    String containerSuffix = "";
+    String containerPrefix = "";
+    if (prefix == null) {
+      // style=form, explode=true, e.g. /pet?name=cat&type=manx
+      prefix = "";
+    } else {
+      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+      prefix = prefix + "[";
+      suffix = "]";
+      containerSuffix = "]";
+      containerPrefix = "[";
+    }
+
+    StringJoiner joiner = new StringJoiner("&");
+
+    // add `paypal` to the URL query string
+    if (getPaypal() != null) {
+      joiner.add(getPaypal().toUrlQueryString(prefix + "paypal" + suffix));
+    }
+
+    // add `venmo` to the URL query string
+    if (getVenmo() != null) {
+      joiner.add(getVenmo().toUrlQueryString(prefix + "venmo" + suffix));
+    }
+
+    return joiner.toString();
   }
 
 }

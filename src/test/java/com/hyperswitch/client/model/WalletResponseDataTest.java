@@ -21,20 +21,22 @@ import com.fasterxml.jackson.annotation.JsonValue;
 import com.hyperswitch.client.model.WalletAdditionalDataForCard;
 import com.hyperswitch.client.model.WalletResponseDataOneOf;
 import com.hyperswitch.client.model.WalletResponseDataOneOf1;
-import org.junit.jupiter.api.Test;
+import org.junit.Assert;
+import org.junit.Ignore;
+import org.junit.Test;
 
 
 /**
  * Model tests for WalletResponseData
  */
-class WalletResponseDataTest {
+public class WalletResponseDataTest {
     private final WalletResponseData model = new WalletResponseData();
 
     /**
      * Model tests for WalletResponseData
      */
     @Test
-    void testWalletResponseData() {
+    public void testWalletResponseData() {
         // TODO: test WalletResponseData
     }
 
@@ -42,7 +44,7 @@ class WalletResponseDataTest {
      * Test the property 'applePay'
      */
     @Test
-    void applePayTest() {
+    public void applePayTest() {
         // TODO: test applePay
     }
 
@@ -50,7 +52,7 @@ class WalletResponseDataTest {
      * Test the property 'googlePay'
      */
     @Test
-    void googlePayTest() {
+    public void googlePayTest() {
         // TODO: test googlePay
     }
 

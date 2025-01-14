@@ -13,18 +13,20 @@
 
 package com.hyperswitch.client.model;
 
-import org.junit.jupiter.api.Test;
+import org.junit.Assert;
+import org.junit.Ignore;
+import org.junit.Test;
 
 
 /**
  * Model tests for WebhookDeliveryAttempt
  */
-class WebhookDeliveryAttemptTest {
+public class WebhookDeliveryAttemptTest {
     /**
      * Model tests for WebhookDeliveryAttempt
      */
     @Test
-    void testWebhookDeliveryAttempt() {
+    public void testWebhookDeliveryAttempt() {
         // TODO: test WebhookDeliveryAttempt
     }
 

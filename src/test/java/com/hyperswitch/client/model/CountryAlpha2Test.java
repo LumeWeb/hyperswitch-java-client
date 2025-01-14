@@ -13,18 +13,20 @@
 
 package com.hyperswitch.client.model;
 
-import org.junit.jupiter.api.Test;
+import org.junit.Assert;
+import org.junit.Ignore;
+import org.junit.Test;
 
 
 /**
  * Model tests for CountryAlpha2
  */
-class CountryAlpha2Test {
+public class CountryAlpha2Test {
     /**
      * Model tests for CountryAlpha2
      */
     @Test
-    void testCountryAlpha2() {
+    public void testCountryAlpha2() {
         // TODO: test CountryAlpha2
     }
 

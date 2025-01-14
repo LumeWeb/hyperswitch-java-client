@@ -32,20 +32,22 @@ import org.openapitools.jackson.nullable.JsonNullable;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.openapitools.jackson.nullable.JsonNullable;
 import java.util.NoSuchElementException;
-import org.junit.jupiter.api.Test;
+import org.junit.Assert;
+import org.junit.Ignore;
+import org.junit.Test;
 
 
 /**
  * Model tests for GpaySessionTokenResponse
  */
-class GpaySessionTokenResponseTest {
+public class GpaySessionTokenResponseTest {
     private final GpaySessionTokenResponse model = new GpaySessionTokenResponse();
 
     /**
      * Model tests for GpaySessionTokenResponse
      */
     @Test
-    void testGpaySessionTokenResponse() {
+    public void testGpaySessionTokenResponse() {
         // TODO: test GpaySessionTokenResponse
     }
 
@@ -53,7 +55,7 @@ class GpaySessionTokenResponseTest {
      * Test the property 'delayedSessionToken'
      */
     @Test
-    void delayedSessionTokenTest() {
+    public void delayedSessionTokenTest() {
         // TODO: test delayedSessionToken
     }
 
@@ -61,7 +63,7 @@ class GpaySessionTokenResponseTest {
      * Test the property 'connector'
      */
     @Test
-    void connectorTest() {
+    public void connectorTest() {
         // TODO: test connector
     }
 
@@ -69,7 +71,7 @@ class GpaySessionTokenResponseTest {
      * Test the property 'sdkNextAction'
      */
     @Test
-    void sdkNextActionTest() {
+    public void sdkNextActionTest() {
         // TODO: test sdkNextAction
     }
 
@@ -77,7 +79,7 @@ class GpaySessionTokenResponseTest {
      * Test the property 'merchantInfo'
      */
     @Test
-    void merchantInfoTest() {
+    public void merchantInfoTest() {
         // TODO: test merchantInfo
     }
 
@@ -85,7 +87,7 @@ class GpaySessionTokenResponseTest {
      * Test the property 'shippingAddressRequired'
      */
     @Test
-    void shippingAddressRequiredTest() {
+    public void shippingAddressRequiredTest() {
         // TODO: test shippingAddressRequired
     }
 
@@ -93,7 +95,7 @@ class GpaySessionTokenResponseTest {
      * Test the property 'emailRequired'
      */
     @Test
-    void emailRequiredTest() {
+    public void emailRequiredTest() {
         // TODO: test emailRequired
     }
 
@@ -101,7 +103,7 @@ class GpaySessionTokenResponseTest {
      * Test the property 'shippingAddressParameters'
      */
     @Test
-    void shippingAddressParametersTest() {
+    public void shippingAddressParametersTest() {
         // TODO: test shippingAddressParameters
     }
 
@@ -109,7 +111,7 @@ class GpaySessionTokenResponseTest {
      * Test the property 'allowedPaymentMethods'
      */
     @Test
-    void allowedPaymentMethodsTest() {
+    public void allowedPaymentMethodsTest() {
         // TODO: test allowedPaymentMethods
     }
 
@@ -117,7 +119,7 @@ class GpaySessionTokenResponseTest {
      * Test the property 'transactionInfo'
      */
     @Test
-    void transactionInfoTest() {
+    public void transactionInfoTest() {
         // TODO: test transactionInfo
     }
 
@@ -125,7 +127,7 @@ class GpaySessionTokenResponseTest {
      * Test the property 'secrets'
      */
     @Test
-    void secretsTest() {
+    public void secretsTest() {
         // TODO: test secrets
     }
 

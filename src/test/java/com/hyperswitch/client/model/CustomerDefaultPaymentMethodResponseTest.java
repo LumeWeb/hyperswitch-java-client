@@ -24,20 +24,22 @@ import org.openapitools.jackson.nullable.JsonNullable;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.openapitools.jackson.nullable.JsonNullable;
 import java.util.NoSuchElementException;
-import org.junit.jupiter.api.Test;
+import org.junit.Assert;
+import org.junit.Ignore;
+import org.junit.Test;
 
 
 /**
  * Model tests for CustomerDefaultPaymentMethodResponse
  */
-class CustomerDefaultPaymentMethodResponseTest {
+public class CustomerDefaultPaymentMethodResponseTest {
     private final CustomerDefaultPaymentMethodResponse model = new CustomerDefaultPaymentMethodResponse();
 
     /**
      * Model tests for CustomerDefaultPaymentMethodResponse
      */
     @Test
-    void testCustomerDefaultPaymentMethodResponse() {
+    public void testCustomerDefaultPaymentMethodResponse() {
         // TODO: test CustomerDefaultPaymentMethodResponse
     }
 
@@ -45,7 +47,7 @@ class CustomerDefaultPaymentMethodResponseTest {
      * Test the property 'defaultPaymentMethodId'
      */
     @Test
-    void defaultPaymentMethodIdTest() {
+    public void defaultPaymentMethodIdTest() {
         // TODO: test defaultPaymentMethodId
     }
 
@@ -53,7 +55,7 @@ class CustomerDefaultPaymentMethodResponseTest {
      * Test the property 'customerId'
      */
     @Test
-    void customerIdTest() {
+    public void customerIdTest() {
         // TODO: test customerId
     }
 
@@ -61,7 +63,7 @@ class CustomerDefaultPaymentMethodResponseTest {
      * Test the property 'paymentMethod'
      */
     @Test
-    void paymentMethodTest() {
+    public void paymentMethodTest() {
         // TODO: test paymentMethod
     }
 
@@ -69,7 +71,7 @@ class CustomerDefaultPaymentMethodResponseTest {
      * Test the property 'paymentMethodType'
      */
     @Test
-    void paymentMethodTypeTest() {
+    public void paymentMethodTypeTest() {
         // TODO: test paymentMethodType
     }
 

@@ -25,20 +25,22 @@ import org.openapitools.jackson.nullable.JsonNullable;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.openapitools.jackson.nullable.JsonNullable;
 import java.util.NoSuchElementException;
-import org.junit.jupiter.api.Test;
+import org.junit.Assert;
+import org.junit.Ignore;
+import org.junit.Test;
 
 
 /**
  * Model tests for FeatureMetadata
  */
-class FeatureMetadataTest {
+public class FeatureMetadataTest {
     private final FeatureMetadata model = new FeatureMetadata();
 
     /**
      * Model tests for FeatureMetadata
      */
     @Test
-    void testFeatureMetadata() {
+    public void testFeatureMetadata() {
         // TODO: test FeatureMetadata
     }
 
@@ -46,7 +48,7 @@ class FeatureMetadataTest {
      * Test the property 'redirectResponse'
      */
     @Test
-    void redirectResponseTest() {
+    public void redirectResponseTest() {
         // TODO: test redirectResponse
     }
 
@@ -54,7 +56,7 @@ class FeatureMetadataTest {
      * Test the property 'searchTags'
      */
     @Test
-    void searchTagsTest() {
+    public void searchTagsTest() {
         // TODO: test searchTags
     }
 

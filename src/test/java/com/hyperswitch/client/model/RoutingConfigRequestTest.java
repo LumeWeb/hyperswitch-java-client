@@ -23,20 +23,22 @@ import org.openapitools.jackson.nullable.JsonNullable;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.openapitools.jackson.nullable.JsonNullable;
 import java.util.NoSuchElementException;
-import org.junit.jupiter.api.Test;
+import org.junit.Assert;
+import org.junit.Ignore;
+import org.junit.Test;
 
 
 /**
  * Model tests for RoutingConfigRequest
  */
-class RoutingConfigRequestTest {
+public class RoutingConfigRequestTest {
     private final RoutingConfigRequest model = new RoutingConfigRequest();
 
     /**
      * Model tests for RoutingConfigRequest
      */
     @Test
-    void testRoutingConfigRequest() {
+    public void testRoutingConfigRequest() {
         // TODO: test RoutingConfigRequest
     }
 
@@ -44,7 +46,7 @@ class RoutingConfigRequestTest {
      * Test the property 'name'
      */
     @Test
-    void nameTest() {
+    public void nameTest() {
         // TODO: test name
     }
 
@@ -52,7 +54,7 @@ class RoutingConfigRequestTest {
      * Test the property 'description'
      */
     @Test
-    void descriptionTest() {
+    public void descriptionTest() {
         // TODO: test description
     }
 
@@ -60,7 +62,7 @@ class RoutingConfigRequestTest {
      * Test the property 'algorithm'
      */
     @Test
-    void algorithmTest() {
+    public void algorithmTest() {
         // TODO: test algorithm
     }
 
@@ -68,7 +70,7 @@ class RoutingConfigRequestTest {
      * Test the property 'profileId'
      */
     @Test
-    void profileIdTest() {
+    public void profileIdTest() {
         // TODO: test profileId
     }
 

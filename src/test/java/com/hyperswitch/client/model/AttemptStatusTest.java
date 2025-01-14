@@ -13,18 +13,20 @@
 
 package com.hyperswitch.client.model;
 
-import org.junit.jupiter.api.Test;
+import org.junit.Assert;
+import org.junit.Ignore;
+import org.junit.Test;
 
 
 /**
  * Model tests for AttemptStatus
  */
-class AttemptStatusTest {
+public class AttemptStatusTest {
     /**
      * Model tests for AttemptStatus
      */
     @Test
-    void testAttemptStatus() {
+    public void testAttemptStatus() {
         // TODO: test AttemptStatus
     }
 

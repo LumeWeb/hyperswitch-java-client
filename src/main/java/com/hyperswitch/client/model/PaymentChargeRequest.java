@@ -23,6 +23,9 @@ import com.fasterxml.jackson.annotation.JsonValue;
 import com.hyperswitch.client.model.PaymentChargeType;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 import com.fasterxml.jackson.annotation.JsonTypeName;
+import java.io.UnsupportedEncodingException;
+import java.net.URLEncoder;
+import java.util.StringJoiner;
 
 /**
  * Fee information to be charged on the payment being collected
@@ -162,6 +165,66 @@ public class PaymentChargeRequest {
       return "null";
     }
     return o.toString().replace("\n", "\n    ");
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @return URL query string
+   */
+  public String toUrlQueryString() {
+    return toUrlQueryString(null);
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @param prefix prefix of the query string
+   * @return URL query string
+   */
+  public String toUrlQueryString(String prefix) {
+    String suffix = "";
+    String containerSuffix = "";
+    String containerPrefix = "";
+    if (prefix == null) {
+      // style=form, explode=true, e.g. /pet?name=cat&type=manx
+      prefix = "";
+    } else {
+      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+      prefix = prefix + "[";
+      suffix = "]";
+      containerSuffix = "]";
+      containerPrefix = "[";
+    }
+
+    StringJoiner joiner = new StringJoiner("&");
+
+    // add `charge_type` to the URL query string
+    if (getChargeType() != null) {
+      joiner.add(getChargeType().toUrlQueryString(prefix + "charge_type" + suffix));
+    }
+
+    // add `fees` to the URL query string
+    if (getFees() != null) {
+      try {
+        joiner.add(String.format("%sfees%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getFees()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `transfer_account_id` to the URL query string
+    if (getTransferAccountId() != null) {
+      try {
+        joiner.add(String.format("%stransfer_account_id%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getTransferAccountId()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    return joiner.toString();
   }
 
 }

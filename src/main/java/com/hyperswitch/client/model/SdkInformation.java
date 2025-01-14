@@ -24,6 +24,9 @@ import java.util.HashMap;
 import java.util.Map;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 import com.fasterxml.jackson.annotation.JsonTypeName;
+import java.io.UnsupportedEncodingException;
+import java.net.URLEncoder;
+import java.util.StringJoiner;
 
 /**
  * SDK Information if request is from SDK
@@ -265,6 +268,105 @@ public class SdkInformation {
       return "null";
     }
     return o.toString().replace("\n", "\n    ");
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @return URL query string
+   */
+  public String toUrlQueryString() {
+    return toUrlQueryString(null);
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @param prefix prefix of the query string
+   * @return URL query string
+   */
+  public String toUrlQueryString(String prefix) {
+    String suffix = "";
+    String containerSuffix = "";
+    String containerPrefix = "";
+    if (prefix == null) {
+      // style=form, explode=true, e.g. /pet?name=cat&type=manx
+      prefix = "";
+    } else {
+      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+      prefix = prefix + "[";
+      suffix = "]";
+      containerSuffix = "]";
+      containerPrefix = "[";
+    }
+
+    StringJoiner joiner = new StringJoiner("&");
+
+    // add `sdk_app_id` to the URL query string
+    if (getSdkAppId() != null) {
+      try {
+        joiner.add(String.format("%ssdk_app_id%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getSdkAppId()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `sdk_enc_data` to the URL query string
+    if (getSdkEncData() != null) {
+      try {
+        joiner.add(String.format("%ssdk_enc_data%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getSdkEncData()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `sdk_ephem_pub_key` to the URL query string
+    if (getSdkEphemPubKey() != null) {
+      for (String _key : getSdkEphemPubKey().keySet()) {
+        try {
+          joiner.add(String.format("%ssdk_ephem_pub_key%s%s=%s", prefix, suffix,
+              "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, _key, containerSuffix),
+              getSdkEphemPubKey().get(_key), URLEncoder.encode(String.valueOf(getSdkEphemPubKey().get(_key)), "UTF-8").replaceAll("\\+", "%20")));
+        } catch (UnsupportedEncodingException e) {
+          // Should never happen, UTF-8 is always supported
+          throw new RuntimeException(e);
+        }
+      }
+    }
+
+    // add `sdk_trans_id` to the URL query string
+    if (getSdkTransId() != null) {
+      try {
+        joiner.add(String.format("%ssdk_trans_id%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getSdkTransId()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `sdk_reference_number` to the URL query string
+    if (getSdkReferenceNumber() != null) {
+      try {
+        joiner.add(String.format("%ssdk_reference_number%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getSdkReferenceNumber()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `sdk_max_timeout` to the URL query string
+    if (getSdkMaxTimeout() != null) {
+      try {
+        joiner.add(String.format("%ssdk_max_timeout%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getSdkMaxTimeout()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    return joiner.toString();
   }
 
 }

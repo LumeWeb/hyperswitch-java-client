@@ -23,20 +23,22 @@ import org.openapitools.jackson.nullable.JsonNullable;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.openapitools.jackson.nullable.JsonNullable;
 import java.util.NoSuchElementException;
-import org.junit.jupiter.api.Test;
+import org.junit.Assert;
+import org.junit.Ignore;
+import org.junit.Test;
 
 
 /**
  * Model tests for GooglePayPaymentMethodInfo
  */
-class GooglePayPaymentMethodInfoTest {
+public class GooglePayPaymentMethodInfoTest {
     private final GooglePayPaymentMethodInfo model = new GooglePayPaymentMethodInfo();
 
     /**
      * Model tests for GooglePayPaymentMethodInfo
      */
     @Test
-    void testGooglePayPaymentMethodInfo() {
+    public void testGooglePayPaymentMethodInfo() {
         // TODO: test GooglePayPaymentMethodInfo
     }
 
@@ -44,7 +46,7 @@ class GooglePayPaymentMethodInfoTest {
      * Test the property 'cardNetwork'
      */
     @Test
-    void cardNetworkTest() {
+    public void cardNetworkTest() {
         // TODO: test cardNetwork
     }
 
@@ -52,7 +54,7 @@ class GooglePayPaymentMethodInfoTest {
      * Test the property 'cardDetails'
      */
     @Test
-    void cardDetailsTest() {
+    public void cardDetailsTest() {
         // TODO: test cardDetails
     }
 
@@ -60,7 +62,7 @@ class GooglePayPaymentMethodInfoTest {
      * Test the property 'assuranceDetails'
      */
     @Test
-    void assuranceDetailsTest() {
+    public void assuranceDetailsTest() {
         // TODO: test assuranceDetails
     }
 

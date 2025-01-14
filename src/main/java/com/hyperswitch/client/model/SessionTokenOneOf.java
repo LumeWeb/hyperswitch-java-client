@@ -34,6 +34,9 @@ import org.openapitools.jackson.nullable.JsonNullable;
 import java.util.NoSuchElementException;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 import com.fasterxml.jackson.annotation.JsonTypeName;
+import java.io.UnsupportedEncodingException;
+import java.net.URLEncoder;
+import java.util.StringJoiner;
 
 /**
  * SessionTokenOneOf
@@ -490,6 +493,126 @@ public class SessionTokenOneOf {
       return "null";
     }
     return o.toString().replace("\n", "\n    ");
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @return URL query string
+   */
+  public String toUrlQueryString() {
+    return toUrlQueryString(null);
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @param prefix prefix of the query string
+   * @return URL query string
+   */
+  public String toUrlQueryString(String prefix) {
+    String suffix = "";
+    String containerSuffix = "";
+    String containerPrefix = "";
+    if (prefix == null) {
+      // style=form, explode=true, e.g. /pet?name=cat&type=manx
+      prefix = "";
+    } else {
+      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+      prefix = prefix + "[";
+      suffix = "]";
+      containerSuffix = "]";
+      containerPrefix = "[";
+    }
+
+    StringJoiner joiner = new StringJoiner("&");
+
+    // add `delayed_session_token` to the URL query string
+    if (getDelayedSessionToken() != null) {
+      try {
+        joiner.add(String.format("%sdelayed_session_token%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getDelayedSessionToken()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `connector` to the URL query string
+    if (getConnector() != null) {
+      try {
+        joiner.add(String.format("%sconnector%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getConnector()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `sdk_next_action` to the URL query string
+    if (getSdkNextAction() != null) {
+      joiner.add(getSdkNextAction().toUrlQueryString(prefix + "sdk_next_action" + suffix));
+    }
+
+    // add `merchant_info` to the URL query string
+    if (getMerchantInfo() != null) {
+      joiner.add(getMerchantInfo().toUrlQueryString(prefix + "merchant_info" + suffix));
+    }
+
+    // add `shipping_address_required` to the URL query string
+    if (getShippingAddressRequired() != null) {
+      try {
+        joiner.add(String.format("%sshipping_address_required%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getShippingAddressRequired()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `email_required` to the URL query string
+    if (getEmailRequired() != null) {
+      try {
+        joiner.add(String.format("%semail_required%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getEmailRequired()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `shipping_address_parameters` to the URL query string
+    if (getShippingAddressParameters() != null) {
+      joiner.add(getShippingAddressParameters().toUrlQueryString(prefix + "shipping_address_parameters" + suffix));
+    }
+
+    // add `allowed_payment_methods` to the URL query string
+    if (getAllowedPaymentMethods() != null) {
+      for (int i = 0; i < getAllowedPaymentMethods().size(); i++) {
+        if (getAllowedPaymentMethods().get(i) != null) {
+          joiner.add(getAllowedPaymentMethods().get(i).toUrlQueryString(String.format("%sallowed_payment_methods%s%s", prefix, suffix,
+              "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix))));
+        }
+      }
+    }
+
+    // add `transaction_info` to the URL query string
+    if (getTransactionInfo() != null) {
+      joiner.add(getTransactionInfo().toUrlQueryString(prefix + "transaction_info" + suffix));
+    }
+
+    // add `secrets` to the URL query string
+    if (getSecrets() != null) {
+      joiner.add(getSecrets().toUrlQueryString(prefix + "secrets" + suffix));
+    }
+
+    // add `wallet_name` to the URL query string
+    if (getWalletName() != null) {
+      try {
+        joiner.add(String.format("%swallet_name%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getWalletName()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    return joiner.toString();
   }
 
 }

@@ -18,20 +18,22 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonTypeName;
 import com.fasterxml.jackson.annotation.JsonValue;
-import org.junit.jupiter.api.Test;
+import org.junit.Assert;
+import org.junit.Ignore;
+import org.junit.Test;
 
 
 /**
  * Model tests for SessionTokenOneOf7
  */
-class SessionTokenOneOf7Test {
+public class SessionTokenOneOf7Test {
     private final SessionTokenOneOf7 model = new SessionTokenOneOf7();
 
     /**
      * Model tests for SessionTokenOneOf7
      */
     @Test
-    void testSessionTokenOneOf7() {
+    public void testSessionTokenOneOf7() {
         // TODO: test SessionTokenOneOf7
     }
 
@@ -39,7 +41,7 @@ class SessionTokenOneOf7Test {
      * Test the property 'walletName'
      */
     @Test
-    void walletNameTest() {
+    public void walletNameTest() {
         // TODO: test walletName
     }
 

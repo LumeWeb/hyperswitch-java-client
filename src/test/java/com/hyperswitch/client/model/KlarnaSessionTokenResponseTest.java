@@ -18,20 +18,22 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonTypeName;
 import com.fasterxml.jackson.annotation.JsonValue;
-import org.junit.jupiter.api.Test;
+import org.junit.Assert;
+import org.junit.Ignore;
+import org.junit.Test;
 
 
 /**
  * Model tests for KlarnaSessionTokenResponse
  */
-class KlarnaSessionTokenResponseTest {
+public class KlarnaSessionTokenResponseTest {
     private final KlarnaSessionTokenResponse model = new KlarnaSessionTokenResponse();
 
     /**
      * Model tests for KlarnaSessionTokenResponse
      */
     @Test
-    void testKlarnaSessionTokenResponse() {
+    public void testKlarnaSessionTokenResponse() {
         // TODO: test KlarnaSessionTokenResponse
     }
 
@@ -39,7 +41,7 @@ class KlarnaSessionTokenResponseTest {
      * Test the property 'sessionToken'
      */
     @Test
-    void sessionTokenTest() {
+    public void sessionTokenTest() {
         // TODO: test sessionToken
     }
 
@@ -47,7 +49,7 @@ class KlarnaSessionTokenResponseTest {
      * Test the property 'sessionId'
      */
     @Test
-    void sessionIdTest() {
+    public void sessionIdTest() {
         // TODO: test sessionId
     }
 

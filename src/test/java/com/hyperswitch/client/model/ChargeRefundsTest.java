@@ -22,20 +22,22 @@ import org.openapitools.jackson.nullable.JsonNullable;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.openapitools.jackson.nullable.JsonNullable;
 import java.util.NoSuchElementException;
-import org.junit.jupiter.api.Test;
+import org.junit.Assert;
+import org.junit.Ignore;
+import org.junit.Test;
 
 
 /**
  * Model tests for ChargeRefunds
  */
-class ChargeRefundsTest {
+public class ChargeRefundsTest {
     private final ChargeRefunds model = new ChargeRefunds();
 
     /**
      * Model tests for ChargeRefunds
      */
     @Test
-    void testChargeRefunds() {
+    public void testChargeRefunds() {
         // TODO: test ChargeRefunds
     }
 
@@ -43,7 +45,7 @@ class ChargeRefundsTest {
      * Test the property 'chargeId'
      */
     @Test
-    void chargeIdTest() {
+    public void chargeIdTest() {
         // TODO: test chargeId
     }
 
@@ -51,7 +53,7 @@ class ChargeRefundsTest {
      * Test the property 'revertPlatformFee'
      */
     @Test
-    void revertPlatformFeeTest() {
+    public void revertPlatformFeeTest() {
         // TODO: test revertPlatformFee
     }
 
@@ -59,7 +61,7 @@ class ChargeRefundsTest {
      * Test the property 'revertTransfer'
      */
     @Test
-    void revertTransferTest() {
+    public void revertTransferTest() {
         // TODO: test revertTransfer
     }
 

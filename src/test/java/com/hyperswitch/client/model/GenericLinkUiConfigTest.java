@@ -22,20 +22,22 @@ import org.openapitools.jackson.nullable.JsonNullable;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.openapitools.jackson.nullable.JsonNullable;
 import java.util.NoSuchElementException;
-import org.junit.jupiter.api.Test;
+import org.junit.Assert;
+import org.junit.Ignore;
+import org.junit.Test;
 
 
 /**
  * Model tests for GenericLinkUiConfig
  */
-class GenericLinkUiConfigTest {
+public class GenericLinkUiConfigTest {
     private final GenericLinkUiConfig model = new GenericLinkUiConfig();
 
     /**
      * Model tests for GenericLinkUiConfig
      */
     @Test
-    void testGenericLinkUiConfig() {
+    public void testGenericLinkUiConfig() {
         // TODO: test GenericLinkUiConfig
     }
 
@@ -43,7 +45,7 @@ class GenericLinkUiConfigTest {
      * Test the property 'logo'
      */
     @Test
-    void logoTest() {
+    public void logoTest() {
         // TODO: test logo
     }
 
@@ -51,7 +53,7 @@ class GenericLinkUiConfigTest {
      * Test the property 'merchantName'
      */
     @Test
-    void merchantNameTest() {
+    public void merchantNameTest() {
         // TODO: test merchantName
     }
 
@@ -59,7 +61,7 @@ class GenericLinkUiConfigTest {
      * Test the property 'theme'
      */
     @Test
-    void themeTest() {
+    public void themeTest() {
         // TODO: test theme
     }
 

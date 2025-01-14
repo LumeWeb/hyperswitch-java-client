@@ -23,20 +23,22 @@ import org.openapitools.jackson.nullable.JsonNullable;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.openapitools.jackson.nullable.JsonNullable;
 import java.util.NoSuchElementException;
-import org.junit.jupiter.api.Test;
+import org.junit.Assert;
+import org.junit.Ignore;
+import org.junit.Test;
 
 
 /**
  * Model tests for UpdateApiKeyRequest
  */
-class UpdateApiKeyRequestTest {
+public class UpdateApiKeyRequestTest {
     private final UpdateApiKeyRequest model = new UpdateApiKeyRequest();
 
     /**
      * Model tests for UpdateApiKeyRequest
      */
     @Test
-    void testUpdateApiKeyRequest() {
+    public void testUpdateApiKeyRequest() {
         // TODO: test UpdateApiKeyRequest
     }
 
@@ -44,7 +46,7 @@ class UpdateApiKeyRequestTest {
      * Test the property 'name'
      */
     @Test
-    void nameTest() {
+    public void nameTest() {
         // TODO: test name
     }
 
@@ -52,7 +54,7 @@ class UpdateApiKeyRequestTest {
      * Test the property 'description'
      */
     @Test
-    void descriptionTest() {
+    public void descriptionTest() {
         // TODO: test description
     }
 
@@ -60,7 +62,7 @@ class UpdateApiKeyRequestTest {
      * Test the property 'expiration'
      */
     @Test
-    void expirationTest() {
+    public void expirationTest() {
         // TODO: test expiration
     }
 

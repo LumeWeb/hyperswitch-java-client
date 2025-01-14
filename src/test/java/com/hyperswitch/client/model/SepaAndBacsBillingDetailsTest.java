@@ -22,20 +22,22 @@ import org.openapitools.jackson.nullable.JsonNullable;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.openapitools.jackson.nullable.JsonNullable;
 import java.util.NoSuchElementException;
-import org.junit.jupiter.api.Test;
+import org.junit.Assert;
+import org.junit.Ignore;
+import org.junit.Test;
 
 
 /**
  * Model tests for SepaAndBacsBillingDetails
  */
-class SepaAndBacsBillingDetailsTest {
+public class SepaAndBacsBillingDetailsTest {
     private final SepaAndBacsBillingDetails model = new SepaAndBacsBillingDetails();
 
     /**
      * Model tests for SepaAndBacsBillingDetails
      */
     @Test
-    void testSepaAndBacsBillingDetails() {
+    public void testSepaAndBacsBillingDetails() {
         // TODO: test SepaAndBacsBillingDetails
     }
 
@@ -43,7 +45,7 @@ class SepaAndBacsBillingDetailsTest {
      * Test the property 'email'
      */
     @Test
-    void emailTest() {
+    public void emailTest() {
         // TODO: test email
     }
 
@@ -51,7 +53,7 @@ class SepaAndBacsBillingDetailsTest {
      * Test the property 'name'
      */
     @Test
-    void nameTest() {
+    public void nameTest() {
         // TODO: test name
     }
 

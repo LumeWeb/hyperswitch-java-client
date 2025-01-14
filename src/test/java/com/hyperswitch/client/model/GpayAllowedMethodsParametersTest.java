@@ -25,20 +25,22 @@ import org.openapitools.jackson.nullable.JsonNullable;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.openapitools.jackson.nullable.JsonNullable;
 import java.util.NoSuchElementException;
-import org.junit.jupiter.api.Test;
+import org.junit.Assert;
+import org.junit.Ignore;
+import org.junit.Test;
 
 
 /**
  * Model tests for GpayAllowedMethodsParameters
  */
-class GpayAllowedMethodsParametersTest {
+public class GpayAllowedMethodsParametersTest {
     private final GpayAllowedMethodsParameters model = new GpayAllowedMethodsParameters();
 
     /**
      * Model tests for GpayAllowedMethodsParameters
      */
     @Test
-    void testGpayAllowedMethodsParameters() {
+    public void testGpayAllowedMethodsParameters() {
         // TODO: test GpayAllowedMethodsParameters
     }
 
@@ -46,7 +48,7 @@ class GpayAllowedMethodsParametersTest {
      * Test the property 'allowedAuthMethods'
      */
     @Test
-    void allowedAuthMethodsTest() {
+    public void allowedAuthMethodsTest() {
         // TODO: test allowedAuthMethods
     }
 
@@ -54,7 +56,7 @@ class GpayAllowedMethodsParametersTest {
      * Test the property 'allowedCardNetworks'
      */
     @Test
-    void allowedCardNetworksTest() {
+    public void allowedCardNetworksTest() {
         // TODO: test allowedCardNetworks
     }
 
@@ -62,7 +64,7 @@ class GpayAllowedMethodsParametersTest {
      * Test the property 'billingAddressRequired'
      */
     @Test
-    void billingAddressRequiredTest() {
+    public void billingAddressRequiredTest() {
         // TODO: test billingAddressRequired
     }
 
@@ -70,7 +72,7 @@ class GpayAllowedMethodsParametersTest {
      * Test the property 'billingAddressParameters'
      */
     @Test
-    void billingAddressParametersTest() {
+    public void billingAddressParametersTest() {
         // TODO: test billingAddressParameters
     }
 
@@ -78,7 +80,7 @@ class GpayAllowedMethodsParametersTest {
      * Test the property 'assuranceDetailsRequired'
      */
     @Test
-    void assuranceDetailsRequiredTest() {
+    public void assuranceDetailsRequiredTest() {
         // TODO: test assuranceDetailsRequired
     }
 

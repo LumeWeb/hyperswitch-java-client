@@ -38,6 +38,9 @@ import org.openapitools.jackson.nullable.JsonNullable;
 import java.util.NoSuchElementException;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 import com.fasterxml.jackson.annotation.JsonTypeName;
+import java.io.UnsupportedEncodingException;
+import java.net.URLEncoder;
+import java.util.StringJoiner;
 
 /**
  * ResponsePaymentMethodTypes
@@ -492,6 +495,116 @@ public class ResponsePaymentMethodTypes {
       return "null";
     }
     return o.toString().replace("\n", "\n    ");
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @return URL query string
+   */
+  public String toUrlQueryString() {
+    return toUrlQueryString(null);
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @param prefix prefix of the query string
+   * @return URL query string
+   */
+  public String toUrlQueryString(String prefix) {
+    String suffix = "";
+    String containerSuffix = "";
+    String containerPrefix = "";
+    if (prefix == null) {
+      // style=form, explode=true, e.g. /pet?name=cat&type=manx
+      prefix = "";
+    } else {
+      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+      prefix = prefix + "[";
+      suffix = "]";
+      containerSuffix = "]";
+      containerPrefix = "[";
+    }
+
+    StringJoiner joiner = new StringJoiner("&");
+
+    // add `payment_method_type` to the URL query string
+    if (getPaymentMethodType() != null) {
+      try {
+        joiner.add(String.format("%spayment_method_type%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getPaymentMethodType()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `payment_experience` to the URL query string
+    if (getPaymentExperience() != null) {
+      for (int i = 0; i < getPaymentExperience().size(); i++) {
+        if (getPaymentExperience().get(i) != null) {
+          joiner.add(getPaymentExperience().get(i).toUrlQueryString(String.format("%spayment_experience%s%s", prefix, suffix,
+              "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix))));
+        }
+      }
+    }
+
+    // add `card_networks` to the URL query string
+    if (getCardNetworks() != null) {
+      for (int i = 0; i < getCardNetworks().size(); i++) {
+        if (getCardNetworks().get(i) != null) {
+          joiner.add(getCardNetworks().get(i).toUrlQueryString(String.format("%scard_networks%s%s", prefix, suffix,
+              "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix))));
+        }
+      }
+    }
+
+    // add `bank_names` to the URL query string
+    if (getBankNames() != null) {
+      for (int i = 0; i < getBankNames().size(); i++) {
+        if (getBankNames().get(i) != null) {
+          joiner.add(getBankNames().get(i).toUrlQueryString(String.format("%sbank_names%s%s", prefix, suffix,
+              "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix))));
+        }
+      }
+    }
+
+    // add `bank_debits` to the URL query string
+    if (getBankDebits() != null) {
+      joiner.add(getBankDebits().toUrlQueryString(prefix + "bank_debits" + suffix));
+    }
+
+    // add `bank_transfers` to the URL query string
+    if (getBankTransfers() != null) {
+      joiner.add(getBankTransfers().toUrlQueryString(prefix + "bank_transfers" + suffix));
+    }
+
+    // add `required_fields` to the URL query string
+    if (getRequiredFields() != null) {
+      for (String _key : getRequiredFields().keySet()) {
+        if (getRequiredFields().get(_key) != null) {
+          joiner.add(getRequiredFields().get(_key).toUrlQueryString(String.format("%srequired_fields%s%s", prefix, suffix,
+              "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, _key, containerSuffix))));
+        }
+      }
+    }
+
+    // add `surcharge_details` to the URL query string
+    if (getSurchargeDetails() != null) {
+      joiner.add(getSurchargeDetails().toUrlQueryString(prefix + "surcharge_details" + suffix));
+    }
+
+    // add `pm_auth_connector` to the URL query string
+    if (getPmAuthConnector() != null) {
+      try {
+        joiner.add(String.format("%spm_auth_connector%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getPmAuthConnector()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    return joiner.toString();
   }
 
 }

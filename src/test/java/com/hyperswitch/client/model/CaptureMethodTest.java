@@ -13,18 +13,20 @@
 
 package com.hyperswitch.client.model;
 
-import org.junit.jupiter.api.Test;
+import org.junit.Assert;
+import org.junit.Ignore;
+import org.junit.Test;
 
 
 /**
  * Model tests for CaptureMethod
  */
-class CaptureMethodTest {
+public class CaptureMethodTest {
     /**
      * Model tests for CaptureMethod
      */
     @Test
-    void testCaptureMethod() {
+    public void testCaptureMethod() {
         // TODO: test CaptureMethod
     }
 

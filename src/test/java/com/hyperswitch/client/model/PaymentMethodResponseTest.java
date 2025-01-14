@@ -30,20 +30,22 @@ import org.openapitools.jackson.nullable.JsonNullable;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.openapitools.jackson.nullable.JsonNullable;
 import java.util.NoSuchElementException;
-import org.junit.jupiter.api.Test;
+import org.junit.Assert;
+import org.junit.Ignore;
+import org.junit.Test;
 
 
 /**
  * Model tests for PaymentMethodResponse
  */
-class PaymentMethodResponseTest {
+public class PaymentMethodResponseTest {
     private final PaymentMethodResponse model = new PaymentMethodResponse();
 
     /**
      * Model tests for PaymentMethodResponse
      */
     @Test
-    void testPaymentMethodResponse() {
+    public void testPaymentMethodResponse() {
         // TODO: test PaymentMethodResponse
     }
 
@@ -51,7 +53,7 @@ class PaymentMethodResponseTest {
      * Test the property 'merchantId'
      */
     @Test
-    void merchantIdTest() {
+    public void merchantIdTest() {
         // TODO: test merchantId
     }
 
@@ -59,7 +61,7 @@ class PaymentMethodResponseTest {
      * Test the property 'customerId'
      */
     @Test
-    void customerIdTest() {
+    public void customerIdTest() {
         // TODO: test customerId
     }
 
@@ -67,7 +69,7 @@ class PaymentMethodResponseTest {
      * Test the property 'paymentMethodId'
      */
     @Test
-    void paymentMethodIdTest() {
+    public void paymentMethodIdTest() {
         // TODO: test paymentMethodId
     }
 
@@ -75,7 +77,7 @@ class PaymentMethodResponseTest {
      * Test the property 'paymentMethod'
      */
     @Test
-    void paymentMethodTest() {
+    public void paymentMethodTest() {
         // TODO: test paymentMethod
     }
 
@@ -83,7 +85,7 @@ class PaymentMethodResponseTest {
      * Test the property 'paymentMethodType'
      */
     @Test
-    void paymentMethodTypeTest() {
+    public void paymentMethodTypeTest() {
         // TODO: test paymentMethodType
     }
 
@@ -91,7 +93,7 @@ class PaymentMethodResponseTest {
      * Test the property 'card'
      */
     @Test
-    void cardTest() {
+    public void cardTest() {
         // TODO: test card
     }
 
@@ -99,7 +101,7 @@ class PaymentMethodResponseTest {
      * Test the property 'recurringEnabled'
      */
     @Test
-    void recurringEnabledTest() {
+    public void recurringEnabledTest() {
         // TODO: test recurringEnabled
     }
 
@@ -107,7 +109,7 @@ class PaymentMethodResponseTest {
      * Test the property 'installmentPaymentEnabled'
      */
     @Test
-    void installmentPaymentEnabledTest() {
+    public void installmentPaymentEnabledTest() {
         // TODO: test installmentPaymentEnabled
     }
 
@@ -115,7 +117,7 @@ class PaymentMethodResponseTest {
      * Test the property 'paymentExperience'
      */
     @Test
-    void paymentExperienceTest() {
+    public void paymentExperienceTest() {
         // TODO: test paymentExperience
     }
 
@@ -123,7 +125,7 @@ class PaymentMethodResponseTest {
      * Test the property 'metadata'
      */
     @Test
-    void metadataTest() {
+    public void metadataTest() {
         // TODO: test metadata
     }
 
@@ -131,7 +133,7 @@ class PaymentMethodResponseTest {
      * Test the property 'created'
      */
     @Test
-    void createdTest() {
+    public void createdTest() {
         // TODO: test created
     }
 
@@ -139,7 +141,7 @@ class PaymentMethodResponseTest {
      * Test the property 'bankTransfer'
      */
     @Test
-    void bankTransferTest() {
+    public void bankTransferTest() {
         // TODO: test bankTransfer
     }
 
@@ -147,7 +149,7 @@ class PaymentMethodResponseTest {
      * Test the property 'lastUsedAt'
      */
     @Test
-    void lastUsedAtTest() {
+    public void lastUsedAtTest() {
         // TODO: test lastUsedAt
     }
 
@@ -155,7 +157,7 @@ class PaymentMethodResponseTest {
      * Test the property 'clientSecret'
      */
     @Test
-    void clientSecretTest() {
+    public void clientSecretTest() {
         // TODO: test clientSecret
     }
 

@@ -23,20 +23,22 @@ import org.openapitools.jackson.nullable.JsonNullable;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.openapitools.jackson.nullable.JsonNullable;
 import java.util.NoSuchElementException;
-import org.junit.jupiter.api.Test;
+import org.junit.Assert;
+import org.junit.Ignore;
+import org.junit.Test;
 
 
 /**
  * Model tests for SessionTokenOneOf6
  */
-class SessionTokenOneOf6Test {
+public class SessionTokenOneOf6Test {
     private final SessionTokenOneOf6 model = new SessionTokenOneOf6();
 
     /**
      * Model tests for SessionTokenOneOf6
      */
     @Test
-    void testSessionTokenOneOf6() {
+    public void testSessionTokenOneOf6() {
         // TODO: test SessionTokenOneOf6
     }
 
@@ -44,7 +46,7 @@ class SessionTokenOneOf6Test {
      * Test the property 'clientId'
      */
     @Test
-    void clientIdTest() {
+    public void clientIdTest() {
         // TODO: test clientId
     }
 
@@ -52,7 +54,7 @@ class SessionTokenOneOf6Test {
      * Test the property 'clientName'
      */
     @Test
-    void clientNameTest() {
+    public void clientNameTest() {
         // TODO: test clientName
     }
 
@@ -60,7 +62,7 @@ class SessionTokenOneOf6Test {
      * Test the property 'clientProfileId'
      */
     @Test
-    void clientProfileIdTest() {
+    public void clientProfileIdTest() {
         // TODO: test clientProfileId
     }
 
@@ -68,7 +70,7 @@ class SessionTokenOneOf6Test {
      * Test the property 'transactionCurrencyCode'
      */
     @Test
-    void transactionCurrencyCodeTest() {
+    public void transactionCurrencyCodeTest() {
         // TODO: test transactionCurrencyCode
     }
 
@@ -76,7 +78,7 @@ class SessionTokenOneOf6Test {
      * Test the property 'transactionAmount'
      */
     @Test
-    void transactionAmountTest() {
+    public void transactionAmountTest() {
         // TODO: test transactionAmount
     }
 
@@ -84,7 +86,7 @@ class SessionTokenOneOf6Test {
      * Test the property 'emailAddress'
      */
     @Test
-    void emailAddressTest() {
+    public void emailAddressTest() {
         // TODO: test emailAddress
     }
 
@@ -92,7 +94,7 @@ class SessionTokenOneOf6Test {
      * Test the property 'walletName'
      */
     @Test
-    void walletNameTest() {
+    public void walletNameTest() {
         // TODO: test walletName
     }
 

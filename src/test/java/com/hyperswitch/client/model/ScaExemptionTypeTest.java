@@ -13,18 +13,20 @@
 
 package com.hyperswitch.client.model;
 
-import org.junit.jupiter.api.Test;
+import org.junit.Assert;
+import org.junit.Ignore;
+import org.junit.Test;
 
 
 /**
  * Model tests for ScaExemptionType
  */
-class ScaExemptionTypeTest {
+public class ScaExemptionTypeTest {
     /**
      * Model tests for ScaExemptionType
      */
     @Test
-    void testScaExemptionType() {
+    public void testScaExemptionType() {
         // TODO: test ScaExemptionType
     }
 

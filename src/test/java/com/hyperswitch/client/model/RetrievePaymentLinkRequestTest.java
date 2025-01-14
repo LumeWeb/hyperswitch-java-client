@@ -22,20 +22,22 @@ import org.openapitools.jackson.nullable.JsonNullable;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.openapitools.jackson.nullable.JsonNullable;
 import java.util.NoSuchElementException;
-import org.junit.jupiter.api.Test;
+import org.junit.Assert;
+import org.junit.Ignore;
+import org.junit.Test;
 
 
 /**
  * Model tests for RetrievePaymentLinkRequest
  */
-class RetrievePaymentLinkRequestTest {
+public class RetrievePaymentLinkRequestTest {
     private final RetrievePaymentLinkRequest model = new RetrievePaymentLinkRequest();
 
     /**
      * Model tests for RetrievePaymentLinkRequest
      */
     @Test
-    void testRetrievePaymentLinkRequest() {
+    public void testRetrievePaymentLinkRequest() {
         // TODO: test RetrievePaymentLinkRequest
     }
 
@@ -43,7 +45,7 @@ class RetrievePaymentLinkRequestTest {
      * Test the property 'clientSecret'
      */
     @Test
-    void clientSecretTest() {
+    public void clientSecretTest() {
         // TODO: test clientSecret
     }
 

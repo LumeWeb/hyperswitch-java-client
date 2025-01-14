@@ -26,20 +26,22 @@ import org.openapitools.jackson.nullable.JsonNullable;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.openapitools.jackson.nullable.JsonNullable;
 import java.util.NoSuchElementException;
-import org.junit.jupiter.api.Test;
+import org.junit.Assert;
+import org.junit.Ignore;
+import org.junit.Test;
 
 
 /**
  * Model tests for RoutingKind
  */
-class RoutingKindTest {
+public class RoutingKindTest {
     private final RoutingKind model = new RoutingKind();
 
     /**
      * Model tests for RoutingKind
      */
     @Test
-    void testRoutingKind() {
+    public void testRoutingKind() {
         // TODO: test RoutingKind
     }
 
@@ -47,7 +49,7 @@ class RoutingKindTest {
      * Test the property 'merchantId'
      */
     @Test
-    void merchantIdTest() {
+    public void merchantIdTest() {
         // TODO: test merchantId
     }
 
@@ -55,7 +57,7 @@ class RoutingKindTest {
      * Test the property 'activeId'
      */
     @Test
-    void activeIdTest() {
+    public void activeIdTest() {
         // TODO: test activeId
     }
 
@@ -63,7 +65,7 @@ class RoutingKindTest {
      * Test the property 'records'
      */
     @Test
-    void recordsTest() {
+    public void recordsTest() {
         // TODO: test records
     }
 

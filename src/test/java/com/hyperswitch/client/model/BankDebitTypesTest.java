@@ -20,20 +20,22 @@ import com.fasterxml.jackson.annotation.JsonTypeName;
 import com.fasterxml.jackson.annotation.JsonValue;
 import java.util.ArrayList;
 import java.util.List;
-import org.junit.jupiter.api.Test;
+import org.junit.Assert;
+import org.junit.Ignore;
+import org.junit.Test;
 
 
 /**
  * Model tests for BankDebitTypes
  */
-class BankDebitTypesTest {
+public class BankDebitTypesTest {
     private final BankDebitTypes model = new BankDebitTypes();
 
     /**
      * Model tests for BankDebitTypes
      */
     @Test
-    void testBankDebitTypes() {
+    public void testBankDebitTypes() {
         // TODO: test BankDebitTypes
     }
 
@@ -41,7 +43,7 @@ class BankDebitTypesTest {
      * Test the property 'eligibleConnectors'
      */
     @Test
-    void eligibleConnectorsTest() {
+    public void eligibleConnectorsTest() {
         // TODO: test eligibleConnectors
     }
 

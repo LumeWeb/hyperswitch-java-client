@@ -23,20 +23,22 @@ import org.openapitools.jackson.nullable.JsonNullable;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.openapitools.jackson.nullable.JsonNullable;
 import java.util.NoSuchElementException;
-import org.junit.jupiter.api.Test;
+import org.junit.Assert;
+import org.junit.Ignore;
+import org.junit.Test;
 
 
 /**
  * Model tests for PazeSessionTokenResponse
  */
-class PazeSessionTokenResponseTest {
+public class PazeSessionTokenResponseTest {
     private final PazeSessionTokenResponse model = new PazeSessionTokenResponse();
 
     /**
      * Model tests for PazeSessionTokenResponse
      */
     @Test
-    void testPazeSessionTokenResponse() {
+    public void testPazeSessionTokenResponse() {
         // TODO: test PazeSessionTokenResponse
     }
 
@@ -44,7 +46,7 @@ class PazeSessionTokenResponseTest {
      * Test the property 'clientId'
      */
     @Test
-    void clientIdTest() {
+    public void clientIdTest() {
         // TODO: test clientId
     }
 
@@ -52,7 +54,7 @@ class PazeSessionTokenResponseTest {
      * Test the property 'clientName'
      */
     @Test
-    void clientNameTest() {
+    public void clientNameTest() {
         // TODO: test clientName
     }
 
@@ -60,7 +62,7 @@ class PazeSessionTokenResponseTest {
      * Test the property 'clientProfileId'
      */
     @Test
-    void clientProfileIdTest() {
+    public void clientProfileIdTest() {
         // TODO: test clientProfileId
     }
 
@@ -68,7 +70,7 @@ class PazeSessionTokenResponseTest {
      * Test the property 'transactionCurrencyCode'
      */
     @Test
-    void transactionCurrencyCodeTest() {
+    public void transactionCurrencyCodeTest() {
         // TODO: test transactionCurrencyCode
     }
 
@@ -76,7 +78,7 @@ class PazeSessionTokenResponseTest {
      * Test the property 'transactionAmount'
      */
     @Test
-    void transactionAmountTest() {
+    public void transactionAmountTest() {
         // TODO: test transactionAmount
     }
 
@@ -84,7 +86,7 @@ class PazeSessionTokenResponseTest {
      * Test the property 'emailAddress'
      */
     @Test
-    void emailAddressTest() {
+    public void emailAddressTest() {
         // TODO: test emailAddress
     }
 

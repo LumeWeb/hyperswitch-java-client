@@ -13,18 +13,20 @@
 
 package com.hyperswitch.client.model;
 
-import org.junit.jupiter.api.Test;
+import org.junit.Assert;
+import org.junit.Ignore;
+import org.junit.Test;
 
 
 /**
  * Model tests for BlocklistDataKind
  */
-class BlocklistDataKindTest {
+public class BlocklistDataKindTest {
     /**
      * Model tests for BlocklistDataKind
      */
     @Test
-    void testBlocklistDataKind() {
+    public void testBlocklistDataKind() {
         // TODO: test BlocklistDataKind
     }
 

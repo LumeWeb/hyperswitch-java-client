@@ -21,20 +21,22 @@ import com.fasterxml.jackson.annotation.JsonValue;
 import com.hyperswitch.client.model.PaymentsResponse;
 import java.util.ArrayList;
 import java.util.List;
-import org.junit.jupiter.api.Test;
+import org.junit.Assert;
+import org.junit.Ignore;
+import org.junit.Test;
 
 
 /**
  * Model tests for PaymentListResponse
  */
-class PaymentListResponseTest {
+public class PaymentListResponseTest {
     private final PaymentListResponse model = new PaymentListResponse();
 
     /**
      * Model tests for PaymentListResponse
      */
     @Test
-    void testPaymentListResponse() {
+    public void testPaymentListResponse() {
         // TODO: test PaymentListResponse
     }
 
@@ -42,7 +44,7 @@ class PaymentListResponseTest {
      * Test the property 'size'
      */
     @Test
-    void sizeTest() {
+    public void sizeTest() {
         // TODO: test size
     }
 
@@ -50,7 +52,7 @@ class PaymentListResponseTest {
      * Test the property 'data'
      */
     @Test
-    void dataTest() {
+    public void dataTest() {
         // TODO: test data
     }
 

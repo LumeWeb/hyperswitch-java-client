@@ -24,20 +24,22 @@ import com.hyperswitch.client.model.PayoutStatus;
 import com.hyperswitch.client.model.PayoutType;
 import java.util.ArrayList;
 import java.util.List;
-import org.junit.jupiter.api.Test;
+import org.junit.Assert;
+import org.junit.Ignore;
+import org.junit.Test;
 
 
 /**
  * Model tests for PayoutListFilters
  */
-class PayoutListFiltersTest {
+public class PayoutListFiltersTest {
     private final PayoutListFilters model = new PayoutListFilters();
 
     /**
      * Model tests for PayoutListFilters
      */
     @Test
-    void testPayoutListFilters() {
+    public void testPayoutListFilters() {
         // TODO: test PayoutListFilters
     }
 
@@ -45,7 +47,7 @@ class PayoutListFiltersTest {
      * Test the property 'connector'
      */
     @Test
-    void connectorTest() {
+    public void connectorTest() {
         // TODO: test connector
     }
 
@@ -53,7 +55,7 @@ class PayoutListFiltersTest {
      * Test the property 'currency'
      */
     @Test
-    void currencyTest() {
+    public void currencyTest() {
         // TODO: test currency
     }
 
@@ -61,7 +63,7 @@ class PayoutListFiltersTest {
      * Test the property 'status'
      */
     @Test
-    void statusTest() {
+    public void statusTest() {
         // TODO: test status
     }
 
@@ -69,7 +71,7 @@ class PayoutListFiltersTest {
      * Test the property 'payoutMethod'
      */
     @Test
-    void payoutMethodTest() {
+    public void payoutMethodTest() {
         // TODO: test payoutMethod
     }
 

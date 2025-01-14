@@ -23,20 +23,22 @@ import org.openapitools.jackson.nullable.JsonNullable;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.openapitools.jackson.nullable.JsonNullable;
 import java.util.NoSuchElementException;
-import org.junit.jupiter.api.Test;
+import org.junit.Assert;
+import org.junit.Ignore;
+import org.junit.Test;
 
 
 /**
  * Model tests for BankDebitDataOneOf1SepaBankDebit
  */
-class BankDebitDataOneOf1SepaBankDebitTest {
+public class BankDebitDataOneOf1SepaBankDebitTest {
     private final BankDebitDataOneOf1SepaBankDebit model = new BankDebitDataOneOf1SepaBankDebit();
 
     /**
      * Model tests for BankDebitDataOneOf1SepaBankDebit
      */
     @Test
-    void testBankDebitDataOneOf1SepaBankDebit() {
+    public void testBankDebitDataOneOf1SepaBankDebit() {
         // TODO: test BankDebitDataOneOf1SepaBankDebit
     }
 
@@ -44,7 +46,7 @@ class BankDebitDataOneOf1SepaBankDebitTest {
      * Test the property 'billingDetails'
      */
     @Test
-    void billingDetailsTest() {
+    public void billingDetailsTest() {
         // TODO: test billingDetails
     }
 
@@ -52,7 +54,7 @@ class BankDebitDataOneOf1SepaBankDebitTest {
      * Test the property 'iban'
      */
     @Test
-    void ibanTest() {
+    public void ibanTest() {
         // TODO: test iban
     }
 
@@ -60,7 +62,7 @@ class BankDebitDataOneOf1SepaBankDebitTest {
      * Test the property 'bankAccountHolderName'
      */
     @Test
-    void bankAccountHolderNameTest() {
+    public void bankAccountHolderNameTest() {
         // TODO: test bankAccountHolderName
     }
 

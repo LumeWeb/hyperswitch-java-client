@@ -20,20 +20,22 @@ import com.fasterxml.jackson.annotation.JsonTypeName;
 import com.fasterxml.jackson.annotation.JsonValue;
 import java.util.HashMap;
 import java.util.Map;
-import org.junit.jupiter.api.Test;
+import org.junit.Assert;
+import org.junit.Ignore;
+import org.junit.Test;
 
 
 /**
  * Model tests for SdkInformation
  */
-class SdkInformationTest {
+public class SdkInformationTest {
     private final SdkInformation model = new SdkInformation();
 
     /**
      * Model tests for SdkInformation
      */
     @Test
-    void testSdkInformation() {
+    public void testSdkInformation() {
         // TODO: test SdkInformation
     }
 
@@ -41,7 +43,7 @@ class SdkInformationTest {
      * Test the property 'sdkAppId'
      */
     @Test
-    void sdkAppIdTest() {
+    public void sdkAppIdTest() {
         // TODO: test sdkAppId
     }
 
@@ -49,7 +51,7 @@ class SdkInformationTest {
      * Test the property 'sdkEncData'
      */
     @Test
-    void sdkEncDataTest() {
+    public void sdkEncDataTest() {
         // TODO: test sdkEncData
     }
 
@@ -57,7 +59,7 @@ class SdkInformationTest {
      * Test the property 'sdkEphemPubKey'
      */
     @Test
-    void sdkEphemPubKeyTest() {
+    public void sdkEphemPubKeyTest() {
         // TODO: test sdkEphemPubKey
     }
 
@@ -65,7 +67,7 @@ class SdkInformationTest {
      * Test the property 'sdkTransId'
      */
     @Test
-    void sdkTransIdTest() {
+    public void sdkTransIdTest() {
         // TODO: test sdkTransId
     }
 
@@ -73,7 +75,7 @@ class SdkInformationTest {
      * Test the property 'sdkReferenceNumber'
      */
     @Test
-    void sdkReferenceNumberTest() {
+    public void sdkReferenceNumberTest() {
         // TODO: test sdkReferenceNumber
     }
 
@@ -81,7 +83,7 @@ class SdkInformationTest {
      * Test the property 'sdkMaxTimeout'
      */
     @Test
-    void sdkMaxTimeoutTest() {
+    public void sdkMaxTimeoutTest() {
         // TODO: test sdkMaxTimeout
     }
 

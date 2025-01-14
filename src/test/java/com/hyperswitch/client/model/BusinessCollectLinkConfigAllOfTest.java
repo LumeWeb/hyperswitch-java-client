@@ -21,20 +21,22 @@ import com.fasterxml.jackson.annotation.JsonValue;
 import com.hyperswitch.client.model.EnabledPaymentMethod;
 import java.util.ArrayList;
 import java.util.List;
-import org.junit.jupiter.api.Test;
+import org.junit.Assert;
+import org.junit.Ignore;
+import org.junit.Test;
 
 
 /**
  * Model tests for BusinessCollectLinkConfigAllOf
  */
-class BusinessCollectLinkConfigAllOfTest {
+public class BusinessCollectLinkConfigAllOfTest {
     private final BusinessCollectLinkConfigAllOf model = new BusinessCollectLinkConfigAllOf();
 
     /**
      * Model tests for BusinessCollectLinkConfigAllOf
      */
     @Test
-    void testBusinessCollectLinkConfigAllOf() {
+    public void testBusinessCollectLinkConfigAllOf() {
         // TODO: test BusinessCollectLinkConfigAllOf
     }
 
@@ -42,7 +44,7 @@ class BusinessCollectLinkConfigAllOfTest {
      * Test the property 'enabledPaymentMethods'
      */
     @Test
-    void enabledPaymentMethodsTest() {
+    public void enabledPaymentMethodsTest() {
         // TODO: test enabledPaymentMethods
     }
 

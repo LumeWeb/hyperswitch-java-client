@@ -24,20 +24,22 @@ import org.openapitools.jackson.nullable.JsonNullable;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.openapitools.jackson.nullable.JsonNullable;
 import java.util.NoSuchElementException;
-import org.junit.jupiter.api.Test;
+import org.junit.Assert;
+import org.junit.Ignore;
+import org.junit.Test;
 
 
 /**
  * Model tests for BankRedirectDataOneOf12Przelewy24
  */
-class BankRedirectDataOneOf12Przelewy24Test {
+public class BankRedirectDataOneOf12Przelewy24Test {
     private final BankRedirectDataOneOf12Przelewy24 model = new BankRedirectDataOneOf12Przelewy24();
 
     /**
      * Model tests for BankRedirectDataOneOf12Przelewy24
      */
     @Test
-    void testBankRedirectDataOneOf12Przelewy24() {
+    public void testBankRedirectDataOneOf12Przelewy24() {
         // TODO: test BankRedirectDataOneOf12Przelewy24
     }
 
@@ -45,7 +47,7 @@ class BankRedirectDataOneOf12Przelewy24Test {
      * Test the property 'bankName'
      */
     @Test
-    void bankNameTest() {
+    public void bankNameTest() {
         // TODO: test bankName
     }
 
@@ -53,7 +55,7 @@ class BankRedirectDataOneOf12Przelewy24Test {
      * Test the property 'billingDetails'
      */
     @Test
-    void billingDetailsTest() {
+    public void billingDetailsTest() {
         // TODO: test billingDetails
     }
 

@@ -18,20 +18,22 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonTypeName;
 import com.fasterxml.jackson.annotation.JsonValue;
-import org.junit.jupiter.api.Test;
+import org.junit.Assert;
+import org.junit.Ignore;
+import org.junit.Test;
 
 
 /**
  * Model tests for MaskedBankDetails
  */
-class MaskedBankDetailsTest {
+public class MaskedBankDetailsTest {
     private final MaskedBankDetails model = new MaskedBankDetails();
 
     /**
      * Model tests for MaskedBankDetails
      */
     @Test
-    void testMaskedBankDetails() {
+    public void testMaskedBankDetails() {
         // TODO: test MaskedBankDetails
     }
 
@@ -39,7 +41,7 @@ class MaskedBankDetailsTest {
      * Test the property 'mask'
      */
     @Test
-    void maskTest() {
+    public void maskTest() {
         // TODO: test mask
     }
 

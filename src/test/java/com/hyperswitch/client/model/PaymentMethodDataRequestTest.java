@@ -38,20 +38,22 @@ import org.openapitools.jackson.nullable.JsonNullable;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.openapitools.jackson.nullable.JsonNullable;
 import java.util.NoSuchElementException;
-import org.junit.jupiter.api.Test;
+import org.junit.Assert;
+import org.junit.Ignore;
+import org.junit.Test;
 
 
 /**
  * Model tests for PaymentMethodDataRequest
  */
-class PaymentMethodDataRequestTest {
+public class PaymentMethodDataRequestTest {
     private final PaymentMethodDataRequest model = new PaymentMethodDataRequest();
 
     /**
      * Model tests for PaymentMethodDataRequest
      */
     @Test
-    void testPaymentMethodDataRequest() {
+    public void testPaymentMethodDataRequest() {
         // TODO: test PaymentMethodDataRequest
     }
 
@@ -59,7 +61,7 @@ class PaymentMethodDataRequestTest {
      * Test the property 'billing'
      */
     @Test
-    void billingTest() {
+    public void billingTest() {
         // TODO: test billing
     }
 
@@ -67,7 +69,7 @@ class PaymentMethodDataRequestTest {
      * Test the property 'card'
      */
     @Test
-    void cardTest() {
+    public void cardTest() {
         // TODO: test card
     }
 
@@ -75,7 +77,7 @@ class PaymentMethodDataRequestTest {
      * Test the property 'cardRedirect'
      */
     @Test
-    void cardRedirectTest() {
+    public void cardRedirectTest() {
         // TODO: test cardRedirect
     }
 
@@ -83,7 +85,7 @@ class PaymentMethodDataRequestTest {
      * Test the property 'wallet'
      */
     @Test
-    void walletTest() {
+    public void walletTest() {
         // TODO: test wallet
     }
 
@@ -91,7 +93,7 @@ class PaymentMethodDataRequestTest {
      * Test the property 'payLater'
      */
     @Test
-    void payLaterTest() {
+    public void payLaterTest() {
         // TODO: test payLater
     }
 
@@ -99,7 +101,7 @@ class PaymentMethodDataRequestTest {
      * Test the property 'bankRedirect'
      */
     @Test
-    void bankRedirectTest() {
+    public void bankRedirectTest() {
         // TODO: test bankRedirect
     }
 
@@ -107,7 +109,7 @@ class PaymentMethodDataRequestTest {
      * Test the property 'bankDebit'
      */
     @Test
-    void bankDebitTest() {
+    public void bankDebitTest() {
         // TODO: test bankDebit
     }
 
@@ -115,7 +117,7 @@ class PaymentMethodDataRequestTest {
      * Test the property 'bankTransfer'
      */
     @Test
-    void bankTransferTest() {
+    public void bankTransferTest() {
         // TODO: test bankTransfer
     }
 
@@ -123,7 +125,7 @@ class PaymentMethodDataRequestTest {
      * Test the property 'realTimePayment'
      */
     @Test
-    void realTimePaymentTest() {
+    public void realTimePaymentTest() {
         // TODO: test realTimePayment
     }
 
@@ -131,7 +133,7 @@ class PaymentMethodDataRequestTest {
      * Test the property 'crypto'
      */
     @Test
-    void cryptoTest() {
+    public void cryptoTest() {
         // TODO: test crypto
     }
 
@@ -139,7 +141,7 @@ class PaymentMethodDataRequestTest {
      * Test the property 'upi'
      */
     @Test
-    void upiTest() {
+    public void upiTest() {
         // TODO: test upi
     }
 
@@ -147,7 +149,7 @@ class PaymentMethodDataRequestTest {
      * Test the property 'voucher'
      */
     @Test
-    void voucherTest() {
+    public void voucherTest() {
         // TODO: test voucher
     }
 
@@ -155,7 +157,7 @@ class PaymentMethodDataRequestTest {
      * Test the property 'giftCard'
      */
     @Test
-    void giftCardTest() {
+    public void giftCardTest() {
         // TODO: test giftCard
     }
 
@@ -163,7 +165,7 @@ class PaymentMethodDataRequestTest {
      * Test the property 'cardToken'
      */
     @Test
-    void cardTokenTest() {
+    public void cardTokenTest() {
         // TODO: test cardToken
     }
 
@@ -171,7 +173,7 @@ class PaymentMethodDataRequestTest {
      * Test the property 'openBanking'
      */
     @Test
-    void openBankingTest() {
+    public void openBankingTest() {
         // TODO: test openBanking
     }
 
@@ -179,7 +181,7 @@ class PaymentMethodDataRequestTest {
      * Test the property 'mobilePayment'
      */
     @Test
-    void mobilePaymentTest() {
+    public void mobilePaymentTest() {
         // TODO: test mobilePayment
     }
 

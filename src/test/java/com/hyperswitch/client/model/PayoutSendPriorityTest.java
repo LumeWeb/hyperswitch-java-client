@@ -13,18 +13,20 @@
 
 package com.hyperswitch.client.model;
 
-import org.junit.jupiter.api.Test;
+import org.junit.Assert;
+import org.junit.Ignore;
+import org.junit.Test;
 
 
 /**
  * Model tests for PayoutSendPriority
  */
-class PayoutSendPriorityTest {
+public class PayoutSendPriorityTest {
     /**
      * Model tests for PayoutSendPriority
      */
     @Test
-    void testPayoutSendPriority() {
+    public void testPayoutSendPriority() {
         // TODO: test PayoutSendPriority
     }
 

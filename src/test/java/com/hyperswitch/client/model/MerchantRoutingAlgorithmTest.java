@@ -20,20 +20,22 @@ import com.fasterxml.jackson.annotation.JsonTypeName;
 import com.fasterxml.jackson.annotation.JsonValue;
 import com.hyperswitch.client.model.RoutingAlgorithm;
 import com.hyperswitch.client.model.TransactionType;
-import org.junit.jupiter.api.Test;
+import org.junit.Assert;
+import org.junit.Ignore;
+import org.junit.Test;
 
 
 /**
  * Model tests for MerchantRoutingAlgorithm
  */
-class MerchantRoutingAlgorithmTest {
+public class MerchantRoutingAlgorithmTest {
     private final MerchantRoutingAlgorithm model = new MerchantRoutingAlgorithm();
 
     /**
      * Model tests for MerchantRoutingAlgorithm
      */
     @Test
-    void testMerchantRoutingAlgorithm() {
+    public void testMerchantRoutingAlgorithm() {
         // TODO: test MerchantRoutingAlgorithm
     }
 
@@ -41,7 +43,7 @@ class MerchantRoutingAlgorithmTest {
      * Test the property 'id'
      */
     @Test
-    void idTest() {
+    public void idTest() {
         // TODO: test id
     }
 
@@ -49,7 +51,7 @@ class MerchantRoutingAlgorithmTest {
      * Test the property 'profileId'
      */
     @Test
-    void profileIdTest() {
+    public void profileIdTest() {
         // TODO: test profileId
     }
 
@@ -57,7 +59,7 @@ class MerchantRoutingAlgorithmTest {
      * Test the property 'name'
      */
     @Test
-    void nameTest() {
+    public void nameTest() {
         // TODO: test name
     }
 
@@ -65,7 +67,7 @@ class MerchantRoutingAlgorithmTest {
      * Test the property 'description'
      */
     @Test
-    void descriptionTest() {
+    public void descriptionTest() {
         // TODO: test description
     }
 
@@ -73,7 +75,7 @@ class MerchantRoutingAlgorithmTest {
      * Test the property 'algorithm'
      */
     @Test
-    void algorithmTest() {
+    public void algorithmTest() {
         // TODO: test algorithm
     }
 
@@ -81,7 +83,7 @@ class MerchantRoutingAlgorithmTest {
      * Test the property 'createdAt'
      */
     @Test
-    void createdAtTest() {
+    public void createdAtTest() {
         // TODO: test createdAt
     }
 
@@ -89,7 +91,7 @@ class MerchantRoutingAlgorithmTest {
      * Test the property 'modifiedAt'
      */
     @Test
-    void modifiedAtTest() {
+    public void modifiedAtTest() {
         // TODO: test modifiedAt
     }
 
@@ -97,7 +99,7 @@ class MerchantRoutingAlgorithmTest {
      * Test the property 'algorithmFor'
      */
     @Test
-    void algorithmForTest() {
+    public void algorithmForTest() {
         // TODO: test algorithmFor
     }
 

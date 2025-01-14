@@ -24,6 +24,9 @@ import com.hyperswitch.client.model.LocalBankTransferAdditionalData;
 import com.hyperswitch.client.model.PixBankTransferAdditionalData;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 import com.fasterxml.jackson.annotation.JsonTypeName;
+import java.io.UnsupportedEncodingException;
+import java.net.URLEncoder;
+import java.util.StringJoiner;
 
 /**
  * BankTransferResponse
@@ -515,6 +518,171 @@ public class BankTransferResponse {
       return "null";
     }
     return o.toString().replace("\n", "\n    ");
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @return URL query string
+   */
+  public String toUrlQueryString() {
+    return toUrlQueryString(null);
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @param prefix prefix of the query string
+   * @return URL query string
+   */
+  public String toUrlQueryString(String prefix) {
+    String suffix = "";
+    String containerSuffix = "";
+    String containerPrefix = "";
+    if (prefix == null) {
+      // style=form, explode=true, e.g. /pet?name=cat&type=manx
+      prefix = "";
+    } else {
+      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+      prefix = prefix + "[";
+      suffix = "]";
+      containerSuffix = "]";
+      containerPrefix = "[";
+    }
+
+    StringJoiner joiner = new StringJoiner("&");
+
+    // add `ach` to the URL query string
+    if (getAch() != null) {
+      try {
+        joiner.add(String.format("%sach%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getAch()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `sepa` to the URL query string
+    if (getSepa() != null) {
+      try {
+        joiner.add(String.format("%ssepa%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getSepa()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `bacs` to the URL query string
+    if (getBacs() != null) {
+      try {
+        joiner.add(String.format("%sbacs%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getBacs()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `multibanco` to the URL query string
+    if (getMultibanco() != null) {
+      try {
+        joiner.add(String.format("%smultibanco%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getMultibanco()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `permata` to the URL query string
+    if (getPermata() != null) {
+      try {
+        joiner.add(String.format("%spermata%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getPermata()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `bca` to the URL query string
+    if (getBca() != null) {
+      try {
+        joiner.add(String.format("%sbca%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getBca()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `bni_va` to the URL query string
+    if (getBniVa() != null) {
+      try {
+        joiner.add(String.format("%sbni_va%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getBniVa()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `bri_va` to the URL query string
+    if (getBriVa() != null) {
+      try {
+        joiner.add(String.format("%sbri_va%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getBriVa()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `cimb_va` to the URL query string
+    if (getCimbVa() != null) {
+      try {
+        joiner.add(String.format("%scimb_va%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCimbVa()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `danamon_va` to the URL query string
+    if (getDanamonVa() != null) {
+      try {
+        joiner.add(String.format("%sdanamon_va%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getDanamonVa()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `mandiri_va` to the URL query string
+    if (getMandiriVa() != null) {
+      try {
+        joiner.add(String.format("%smandiri_va%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getMandiriVa()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `pix` to the URL query string
+    if (getPix() != null) {
+      joiner.add(getPix().toUrlQueryString(prefix + "pix" + suffix));
+    }
+
+    // add `pse` to the URL query string
+    if (getPse() != null) {
+      try {
+        joiner.add(String.format("%spse%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getPse()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `local_bank_transfer` to the URL query string
+    if (getLocalBankTransfer() != null) {
+      joiner.add(getLocalBankTransfer().toUrlQueryString(prefix + "local_bank_transfer" + suffix));
+    }
+
+    return joiner.toString();
   }
 
 }

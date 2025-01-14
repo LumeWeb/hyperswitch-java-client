@@ -23,20 +23,22 @@ import org.openapitools.jackson.nullable.JsonNullable;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.openapitools.jackson.nullable.JsonNullable;
 import java.util.NoSuchElementException;
-import org.junit.jupiter.api.Test;
+import org.junit.Assert;
+import org.junit.Ignore;
+import org.junit.Test;
 
 
 /**
  * Model tests for PaymentMethodDataRequestAllOf
  */
-class PaymentMethodDataRequestAllOfTest {
+public class PaymentMethodDataRequestAllOfTest {
     private final PaymentMethodDataRequestAllOf model = new PaymentMethodDataRequestAllOf();
 
     /**
      * Model tests for PaymentMethodDataRequestAllOf
      */
     @Test
-    void testPaymentMethodDataRequestAllOf() {
+    public void testPaymentMethodDataRequestAllOf() {
         // TODO: test PaymentMethodDataRequestAllOf
     }
 
@@ -44,7 +46,7 @@ class PaymentMethodDataRequestAllOfTest {
      * Test the property 'billing'
      */
     @Test
-    void billingTest() {
+    public void billingTest() {
         // TODO: test billing
     }
 

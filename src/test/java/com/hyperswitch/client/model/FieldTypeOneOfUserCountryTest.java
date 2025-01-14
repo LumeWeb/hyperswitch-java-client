@@ -20,20 +20,22 @@ import com.fasterxml.jackson.annotation.JsonTypeName;
 import com.fasterxml.jackson.annotation.JsonValue;
 import java.util.ArrayList;
 import java.util.List;
-import org.junit.jupiter.api.Test;
+import org.junit.Assert;
+import org.junit.Ignore;
+import org.junit.Test;
 
 
 /**
  * Model tests for FieldTypeOneOfUserCountry
  */
-class FieldTypeOneOfUserCountryTest {
+public class FieldTypeOneOfUserCountryTest {
     private final FieldTypeOneOfUserCountry model = new FieldTypeOneOfUserCountry();
 
     /**
      * Model tests for FieldTypeOneOfUserCountry
      */
     @Test
-    void testFieldTypeOneOfUserCountry() {
+    public void testFieldTypeOneOfUserCountry() {
         // TODO: test FieldTypeOneOfUserCountry
     }
 
@@ -41,7 +43,7 @@ class FieldTypeOneOfUserCountryTest {
      * Test the property 'options'
      */
     @Test
-    void optionsTest() {
+    public void optionsTest() {
         // TODO: test options
     }
 

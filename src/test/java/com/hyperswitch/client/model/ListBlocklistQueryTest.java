@@ -19,20 +19,22 @@ import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonTypeName;
 import com.fasterxml.jackson.annotation.JsonValue;
 import com.hyperswitch.client.model.BlocklistDataKind;
-import org.junit.jupiter.api.Test;
+import org.junit.Assert;
+import org.junit.Ignore;
+import org.junit.Test;
 
 
 /**
  * Model tests for ListBlocklistQuery
  */
-class ListBlocklistQueryTest {
+public class ListBlocklistQueryTest {
     private final ListBlocklistQuery model = new ListBlocklistQuery();
 
     /**
      * Model tests for ListBlocklistQuery
      */
     @Test
-    void testListBlocklistQuery() {
+    public void testListBlocklistQuery() {
         // TODO: test ListBlocklistQuery
     }
 
@@ -40,7 +42,7 @@ class ListBlocklistQueryTest {
      * Test the property 'dataKind'
      */
     @Test
-    void dataKindTest() {
+    public void dataKindTest() {
         // TODO: test dataKind
     }
 
@@ -48,7 +50,7 @@ class ListBlocklistQueryTest {
      * Test the property 'limit'
      */
     @Test
-    void limitTest() {
+    public void limitTest() {
         // TODO: test limit
     }
 
@@ -56,7 +58,7 @@ class ListBlocklistQueryTest {
      * Test the property 'offset'
      */
     @Test
-    void offsetTest() {
+    public void offsetTest() {
         // TODO: test offset
     }
 

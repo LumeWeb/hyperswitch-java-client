@@ -26,20 +26,22 @@ import org.openapitools.jackson.nullable.JsonNullable;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.openapitools.jackson.nullable.JsonNullable;
 import java.util.NoSuchElementException;
-import org.junit.jupiter.api.Test;
+import org.junit.Assert;
+import org.junit.Ignore;
+import org.junit.Test;
 
 
 /**
  * Model tests for BusinessPayoutLinkConfig
  */
-class BusinessPayoutLinkConfigTest {
+public class BusinessPayoutLinkConfigTest {
     private final BusinessPayoutLinkConfig model = new BusinessPayoutLinkConfig();
 
     /**
      * Model tests for BusinessPayoutLinkConfig
      */
     @Test
-    void testBusinessPayoutLinkConfig() {
+    public void testBusinessPayoutLinkConfig() {
         // TODO: test BusinessPayoutLinkConfig
     }
 
@@ -47,7 +49,7 @@ class BusinessPayoutLinkConfigTest {
      * Test the property 'logo'
      */
     @Test
-    void logoTest() {
+    public void logoTest() {
         // TODO: test logo
     }
 
@@ -55,7 +57,7 @@ class BusinessPayoutLinkConfigTest {
      * Test the property 'merchantName'
      */
     @Test
-    void merchantNameTest() {
+    public void merchantNameTest() {
         // TODO: test merchantName
     }
 
@@ -63,7 +65,7 @@ class BusinessPayoutLinkConfigTest {
      * Test the property 'theme'
      */
     @Test
-    void themeTest() {
+    public void themeTest() {
         // TODO: test theme
     }
 
@@ -71,7 +73,7 @@ class BusinessPayoutLinkConfigTest {
      * Test the property 'domainName'
      */
     @Test
-    void domainNameTest() {
+    public void domainNameTest() {
         // TODO: test domainName
     }
 
@@ -79,7 +81,7 @@ class BusinessPayoutLinkConfigTest {
      * Test the property 'allowedDomains'
      */
     @Test
-    void allowedDomainsTest() {
+    public void allowedDomainsTest() {
         // TODO: test allowedDomains
     }
 
@@ -87,7 +89,7 @@ class BusinessPayoutLinkConfigTest {
      * Test the property 'formLayout'
      */
     @Test
-    void formLayoutTest() {
+    public void formLayoutTest() {
         // TODO: test formLayout
     }
 
@@ -95,7 +97,7 @@ class BusinessPayoutLinkConfigTest {
      * Test the property 'payoutTestMode'
      */
     @Test
-    void payoutTestModeTest() {
+    public void payoutTestModeTest() {
         // TODO: test payoutTestMode
     }
 

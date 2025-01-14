@@ -26,6 +26,9 @@ import org.openapitools.jackson.nullable.JsonNullable;
 import java.util.NoSuchElementException;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 import com.fasterxml.jackson.annotation.JsonTypeName;
+import java.io.UnsupportedEncodingException;
+import java.net.URLEncoder;
+import java.util.StringJoiner;
 
 /**
  * Browser information to be used for 3DS 2.0
@@ -483,6 +486,141 @@ public class BrowserInformation {
       return "null";
     }
     return o.toString().replace("\n", "\n    ");
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @return URL query string
+   */
+  public String toUrlQueryString() {
+    return toUrlQueryString(null);
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @param prefix prefix of the query string
+   * @return URL query string
+   */
+  public String toUrlQueryString(String prefix) {
+    String suffix = "";
+    String containerSuffix = "";
+    String containerPrefix = "";
+    if (prefix == null) {
+      // style=form, explode=true, e.g. /pet?name=cat&type=manx
+      prefix = "";
+    } else {
+      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+      prefix = prefix + "[";
+      suffix = "]";
+      containerSuffix = "]";
+      containerPrefix = "[";
+    }
+
+    StringJoiner joiner = new StringJoiner("&");
+
+    // add `color_depth` to the URL query string
+    if (getColorDepth() != null) {
+      try {
+        joiner.add(String.format("%scolor_depth%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getColorDepth()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `java_enabled` to the URL query string
+    if (getJavaEnabled() != null) {
+      try {
+        joiner.add(String.format("%sjava_enabled%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getJavaEnabled()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `java_script_enabled` to the URL query string
+    if (getJavaScriptEnabled() != null) {
+      try {
+        joiner.add(String.format("%sjava_script_enabled%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getJavaScriptEnabled()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `language` to the URL query string
+    if (getLanguage() != null) {
+      try {
+        joiner.add(String.format("%slanguage%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getLanguage()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `screen_height` to the URL query string
+    if (getScreenHeight() != null) {
+      try {
+        joiner.add(String.format("%sscreen_height%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getScreenHeight()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `screen_width` to the URL query string
+    if (getScreenWidth() != null) {
+      try {
+        joiner.add(String.format("%sscreen_width%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getScreenWidth()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `time_zone` to the URL query string
+    if (getTimeZone() != null) {
+      try {
+        joiner.add(String.format("%stime_zone%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getTimeZone()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `ip_address` to the URL query string
+    if (getIpAddress() != null) {
+      try {
+        joiner.add(String.format("%sip_address%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getIpAddress()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `accept_header` to the URL query string
+    if (getAcceptHeader() != null) {
+      try {
+        joiner.add(String.format("%saccept_header%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getAcceptHeader()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `user_agent` to the URL query string
+    if (getUserAgent() != null) {
+      try {
+        joiner.add(String.format("%suser_agent%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getUserAgent()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    return joiner.toString();
   }
 
 }

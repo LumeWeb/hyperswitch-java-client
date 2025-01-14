@@ -13,18 +13,20 @@
 
 package com.hyperswitch.client.model;
 
-import org.junit.jupiter.api.Test;
+import org.junit.Assert;
+import org.junit.Ignore;
+import org.junit.Test;
 
 
 /**
  * Model tests for GsmDecision
  */
-class GsmDecisionTest {
+public class GsmDecisionTest {
     /**
      * Model tests for GsmDecision
      */
     @Test
-    void testGsmDecision() {
+    public void testGsmDecision() {
         // TODO: test GsmDecision
     }
 

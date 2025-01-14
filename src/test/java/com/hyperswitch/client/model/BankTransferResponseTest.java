@@ -20,20 +20,22 @@ import com.fasterxml.jackson.annotation.JsonTypeName;
 import com.fasterxml.jackson.annotation.JsonValue;
 import com.hyperswitch.client.model.LocalBankTransferAdditionalData;
 import com.hyperswitch.client.model.PixBankTransferAdditionalData;
-import org.junit.jupiter.api.Test;
+import org.junit.Assert;
+import org.junit.Ignore;
+import org.junit.Test;
 
 
 /**
  * Model tests for BankTransferResponse
  */
-class BankTransferResponseTest {
+public class BankTransferResponseTest {
     private final BankTransferResponse model = new BankTransferResponse();
 
     /**
      * Model tests for BankTransferResponse
      */
     @Test
-    void testBankTransferResponse() {
+    public void testBankTransferResponse() {
         // TODO: test BankTransferResponse
     }
 
@@ -41,7 +43,7 @@ class BankTransferResponseTest {
      * Test the property 'ach'
      */
     @Test
-    void achTest() {
+    public void achTest() {
         // TODO: test ach
     }
 
@@ -49,7 +51,7 @@ class BankTransferResponseTest {
      * Test the property 'sepa'
      */
     @Test
-    void sepaTest() {
+    public void sepaTest() {
         // TODO: test sepa
     }
 
@@ -57,7 +59,7 @@ class BankTransferResponseTest {
      * Test the property 'bacs'
      */
     @Test
-    void bacsTest() {
+    public void bacsTest() {
         // TODO: test bacs
     }
 
@@ -65,7 +67,7 @@ class BankTransferResponseTest {
      * Test the property 'multibanco'
      */
     @Test
-    void multibancoTest() {
+    public void multibancoTest() {
         // TODO: test multibanco
     }
 
@@ -73,7 +75,7 @@ class BankTransferResponseTest {
      * Test the property 'permata'
      */
     @Test
-    void permataTest() {
+    public void permataTest() {
         // TODO: test permata
     }
 
@@ -81,7 +83,7 @@ class BankTransferResponseTest {
      * Test the property 'bca'
      */
     @Test
-    void bcaTest() {
+    public void bcaTest() {
         // TODO: test bca
     }
 
@@ -89,7 +91,7 @@ class BankTransferResponseTest {
      * Test the property 'bniVa'
      */
     @Test
-    void bniVaTest() {
+    public void bniVaTest() {
         // TODO: test bniVa
     }
 
@@ -97,7 +99,7 @@ class BankTransferResponseTest {
      * Test the property 'briVa'
      */
     @Test
-    void briVaTest() {
+    public void briVaTest() {
         // TODO: test briVa
     }
 
@@ -105,7 +107,7 @@ class BankTransferResponseTest {
      * Test the property 'cimbVa'
      */
     @Test
-    void cimbVaTest() {
+    public void cimbVaTest() {
         // TODO: test cimbVa
     }
 
@@ -113,7 +115,7 @@ class BankTransferResponseTest {
      * Test the property 'danamonVa'
      */
     @Test
-    void danamonVaTest() {
+    public void danamonVaTest() {
         // TODO: test danamonVa
     }
 
@@ -121,7 +123,7 @@ class BankTransferResponseTest {
      * Test the property 'mandiriVa'
      */
     @Test
-    void mandiriVaTest() {
+    public void mandiriVaTest() {
         // TODO: test mandiriVa
     }
 
@@ -129,7 +131,7 @@ class BankTransferResponseTest {
      * Test the property 'pix'
      */
     @Test
-    void pixTest() {
+    public void pixTest() {
         // TODO: test pix
     }
 
@@ -137,7 +139,7 @@ class BankTransferResponseTest {
      * Test the property 'pse'
      */
     @Test
-    void pseTest() {
+    public void pseTest() {
         // TODO: test pse
     }
 
@@ -145,7 +147,7 @@ class BankTransferResponseTest {
      * Test the property 'localBankTransfer'
      */
     @Test
-    void localBankTransferTest() {
+    public void localBankTransferTest() {
         // TODO: test localBankTransfer
     }
 

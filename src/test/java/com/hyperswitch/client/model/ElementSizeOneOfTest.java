@@ -19,20 +19,22 @@ import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonTypeName;
 import com.fasterxml.jackson.annotation.JsonValue;
 import com.hyperswitch.client.model.SizeVariants;
-import org.junit.jupiter.api.Test;
+import org.junit.Assert;
+import org.junit.Ignore;
+import org.junit.Test;
 
 
 /**
  * Model tests for ElementSizeOneOf
  */
-class ElementSizeOneOfTest {
+public class ElementSizeOneOfTest {
     private final ElementSizeOneOf model = new ElementSizeOneOf();
 
     /**
      * Model tests for ElementSizeOneOf
      */
     @Test
-    void testElementSizeOneOf() {
+    public void testElementSizeOneOf() {
         // TODO: test ElementSizeOneOf
     }
 
@@ -40,7 +42,7 @@ class ElementSizeOneOfTest {
      * Test the property 'variants'
      */
     @Test
-    void variantsTest() {
+    public void variantsTest() {
         // TODO: test variants
     }
 

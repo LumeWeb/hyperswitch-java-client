@@ -19,20 +19,22 @@ import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonTypeName;
 import com.fasterxml.jackson.annotation.JsonValue;
 import com.hyperswitch.client.model.DisputeResponse;
-import org.junit.jupiter.api.Test;
+import org.junit.Assert;
+import org.junit.Ignore;
+import org.junit.Test;
 
 
 /**
  * Model tests for DisputeResponse1
  */
-class DisputeResponse1Test {
+public class DisputeResponse1Test {
     private final DisputeResponse1 model = new DisputeResponse1();
 
     /**
      * Model tests for DisputeResponse1
      */
     @Test
-    void testDisputeResponse1() {
+    public void testDisputeResponse1() {
         // TODO: test DisputeResponse1
     }
 
@@ -40,7 +42,7 @@ class DisputeResponse1Test {
      * Test the property 'type'
      */
     @Test
-    void typeTest() {
+    public void typeTest() {
         // TODO: test type
     }
 
@@ -48,7 +50,7 @@ class DisputeResponse1Test {
      * Test the property '_object'
      */
     @Test
-    void _objectTest() {
+    public void _objectTest() {
         // TODO: test _object
     }
 

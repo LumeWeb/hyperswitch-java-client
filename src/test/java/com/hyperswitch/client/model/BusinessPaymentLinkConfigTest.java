@@ -32,20 +32,22 @@ import org.openapitools.jackson.nullable.JsonNullable;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.openapitools.jackson.nullable.JsonNullable;
 import java.util.NoSuchElementException;
-import org.junit.jupiter.api.Test;
+import org.junit.Assert;
+import org.junit.Ignore;
+import org.junit.Test;
 
 
 /**
  * Model tests for BusinessPaymentLinkConfig
  */
-class BusinessPaymentLinkConfigTest {
+public class BusinessPaymentLinkConfigTest {
     private final BusinessPaymentLinkConfig model = new BusinessPaymentLinkConfig();
 
     /**
      * Model tests for BusinessPaymentLinkConfig
      */
     @Test
-    void testBusinessPaymentLinkConfig() {
+    public void testBusinessPaymentLinkConfig() {
         // TODO: test BusinessPaymentLinkConfig
     }
 
@@ -53,7 +55,7 @@ class BusinessPaymentLinkConfigTest {
      * Test the property 'theme'
      */
     @Test
-    void themeTest() {
+    public void themeTest() {
         // TODO: test theme
     }
 
@@ -61,7 +63,7 @@ class BusinessPaymentLinkConfigTest {
      * Test the property 'logo'
      */
     @Test
-    void logoTest() {
+    public void logoTest() {
         // TODO: test logo
     }
 
@@ -69,7 +71,7 @@ class BusinessPaymentLinkConfigTest {
      * Test the property 'sellerName'
      */
     @Test
-    void sellerNameTest() {
+    public void sellerNameTest() {
         // TODO: test sellerName
     }
 
@@ -77,7 +79,7 @@ class BusinessPaymentLinkConfigTest {
      * Test the property 'sdkLayout'
      */
     @Test
-    void sdkLayoutTest() {
+    public void sdkLayoutTest() {
         // TODO: test sdkLayout
     }
 
@@ -85,7 +87,7 @@ class BusinessPaymentLinkConfigTest {
      * Test the property 'displaySdkOnly'
      */
     @Test
-    void displaySdkOnlyTest() {
+    public void displaySdkOnlyTest() {
         // TODO: test displaySdkOnly
     }
 
@@ -93,7 +95,7 @@ class BusinessPaymentLinkConfigTest {
      * Test the property 'enabledSavedPaymentMethod'
      */
     @Test
-    void enabledSavedPaymentMethodTest() {
+    public void enabledSavedPaymentMethodTest() {
         // TODO: test enabledSavedPaymentMethod
     }
 
@@ -101,7 +103,7 @@ class BusinessPaymentLinkConfigTest {
      * Test the property 'hideCardNicknameField'
      */
     @Test
-    void hideCardNicknameFieldTest() {
+    public void hideCardNicknameFieldTest() {
         // TODO: test hideCardNicknameField
     }
 
@@ -109,7 +111,7 @@ class BusinessPaymentLinkConfigTest {
      * Test the property 'showCardFormByDefault'
      */
     @Test
-    void showCardFormByDefaultTest() {
+    public void showCardFormByDefaultTest() {
         // TODO: test showCardFormByDefault
     }
 
@@ -117,7 +119,7 @@ class BusinessPaymentLinkConfigTest {
      * Test the property 'transactionDetails'
      */
     @Test
-    void transactionDetailsTest() {
+    public void transactionDetailsTest() {
         // TODO: test transactionDetails
     }
 
@@ -125,7 +127,7 @@ class BusinessPaymentLinkConfigTest {
      * Test the property 'backgroundImage'
      */
     @Test
-    void backgroundImageTest() {
+    public void backgroundImageTest() {
         // TODO: test backgroundImage
     }
 
@@ -133,7 +135,7 @@ class BusinessPaymentLinkConfigTest {
      * Test the property 'detailsLayout'
      */
     @Test
-    void detailsLayoutTest() {
+    public void detailsLayoutTest() {
         // TODO: test detailsLayout
     }
 
@@ -141,7 +143,7 @@ class BusinessPaymentLinkConfigTest {
      * Test the property 'domainName'
      */
     @Test
-    void domainNameTest() {
+    public void domainNameTest() {
         // TODO: test domainName
     }
 
@@ -149,7 +151,7 @@ class BusinessPaymentLinkConfigTest {
      * Test the property 'businessSpecificConfigs'
      */
     @Test
-    void businessSpecificConfigsTest() {
+    public void businessSpecificConfigsTest() {
         // TODO: test businessSpecificConfigs
     }
 
@@ -157,7 +159,7 @@ class BusinessPaymentLinkConfigTest {
      * Test the property 'allowedDomains'
      */
     @Test
-    void allowedDomainsTest() {
+    public void allowedDomainsTest() {
         // TODO: test allowedDomains
     }
 
@@ -165,7 +167,7 @@ class BusinessPaymentLinkConfigTest {
      * Test the property 'brandingVisibility'
      */
     @Test
-    void brandingVisibilityTest() {
+    public void brandingVisibilityTest() {
         // TODO: test brandingVisibility
     }
 

@@ -19,20 +19,22 @@ import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonTypeName;
 import com.fasterxml.jackson.annotation.JsonValue;
 import com.hyperswitch.client.model.WalletData;
-import org.junit.jupiter.api.Test;
+import org.junit.Assert;
+import org.junit.Ignore;
+import org.junit.Test;
 
 
 /**
  * Model tests for Wallet1
  */
-class Wallet1Test {
+public class Wallet1Test {
     private final Wallet1 model = new Wallet1();
 
     /**
      * Model tests for Wallet1
      */
     @Test
-    void testWallet1() {
+    public void testWallet1() {
         // TODO: test Wallet1
     }
 
@@ -40,7 +42,7 @@ class Wallet1Test {
      * Test the property 'wallet'
      */
     @Test
-    void walletTest() {
+    public void walletTest() {
         // TODO: test wallet
     }
 

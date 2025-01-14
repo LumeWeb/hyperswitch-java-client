@@ -25,20 +25,22 @@ import org.openapitools.jackson.nullable.JsonNullable;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.openapitools.jackson.nullable.JsonNullable;
 import java.util.NoSuchElementException;
-import org.junit.jupiter.api.Test;
+import org.junit.Assert;
+import org.junit.Ignore;
+import org.junit.Test;
 
 
 /**
  * Model tests for PayoutListResponse
  */
-class PayoutListResponseTest {
+public class PayoutListResponseTest {
     private final PayoutListResponse model = new PayoutListResponse();
 
     /**
      * Model tests for PayoutListResponse
      */
     @Test
-    void testPayoutListResponse() {
+    public void testPayoutListResponse() {
         // TODO: test PayoutListResponse
     }
 
@@ -46,7 +48,7 @@ class PayoutListResponseTest {
      * Test the property 'size'
      */
     @Test
-    void sizeTest() {
+    public void sizeTest() {
         // TODO: test size
     }
 
@@ -54,7 +56,7 @@ class PayoutListResponseTest {
      * Test the property 'data'
      */
     @Test
-    void dataTest() {
+    public void dataTest() {
         // TODO: test data
     }
 
@@ -62,7 +64,7 @@ class PayoutListResponseTest {
      * Test the property 'totalCount'
      */
     @Test
-    void totalCountTest() {
+    public void totalCountTest() {
         // TODO: test totalCount
     }
 

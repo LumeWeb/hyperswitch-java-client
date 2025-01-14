@@ -23,20 +23,22 @@ import org.openapitools.jackson.nullable.JsonNullable;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.openapitools.jackson.nullable.JsonNullable;
 import java.util.NoSuchElementException;
-import org.junit.jupiter.api.Test;
+import org.junit.Assert;
+import org.junit.Ignore;
+import org.junit.Test;
 
 
 /**
  * Model tests for SepaBankTransfer
  */
-class SepaBankTransferTest {
+public class SepaBankTransferTest {
     private final SepaBankTransfer model = new SepaBankTransfer();
 
     /**
      * Model tests for SepaBankTransfer
      */
     @Test
-    void testSepaBankTransfer() {
+    public void testSepaBankTransfer() {
         // TODO: test SepaBankTransfer
     }
 
@@ -44,7 +46,7 @@ class SepaBankTransferTest {
      * Test the property 'bankName'
      */
     @Test
-    void bankNameTest() {
+    public void bankNameTest() {
         // TODO: test bankName
     }
 
@@ -52,7 +54,7 @@ class SepaBankTransferTest {
      * Test the property 'bankCountryCode'
      */
     @Test
-    void bankCountryCodeTest() {
+    public void bankCountryCodeTest() {
         // TODO: test bankCountryCode
     }
 
@@ -60,7 +62,7 @@ class SepaBankTransferTest {
      * Test the property 'bankCity'
      */
     @Test
-    void bankCityTest() {
+    public void bankCityTest() {
         // TODO: test bankCity
     }
 
@@ -68,7 +70,7 @@ class SepaBankTransferTest {
      * Test the property 'iban'
      */
     @Test
-    void ibanTest() {
+    public void ibanTest() {
         // TODO: test iban
     }
 
@@ -76,7 +78,7 @@ class SepaBankTransferTest {
      * Test the property 'bic'
      */
     @Test
-    void bicTest() {
+    public void bicTest() {
         // TODO: test bic
     }
 

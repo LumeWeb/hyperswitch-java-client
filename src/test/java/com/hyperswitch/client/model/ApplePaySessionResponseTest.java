@@ -21,20 +21,22 @@ import com.fasterxml.jackson.annotation.JsonValue;
 import com.hyperswitch.client.model.NoThirdPartySdkSessionResponse;
 import com.hyperswitch.client.model.SecretInfoToInitiateSdk;
 import com.hyperswitch.client.model.ThirdPartySdkSessionResponse;
-import org.junit.jupiter.api.Test;
+import org.junit.Assert;
+import org.junit.Ignore;
+import org.junit.Test;
 
 
 /**
  * Model tests for ApplePaySessionResponse
  */
-class ApplePaySessionResponseTest {
+public class ApplePaySessionResponseTest {
     private final ApplePaySessionResponse model = new ApplePaySessionResponse();
 
     /**
      * Model tests for ApplePaySessionResponse
      */
     @Test
-    void testApplePaySessionResponse() {
+    public void testApplePaySessionResponse() {
         // TODO: test ApplePaySessionResponse
     }
 
@@ -42,7 +44,7 @@ class ApplePaySessionResponseTest {
      * Test the property 'secrets'
      */
     @Test
-    void secretsTest() {
+    public void secretsTest() {
         // TODO: test secrets
     }
 
@@ -50,7 +52,7 @@ class ApplePaySessionResponseTest {
      * Test the property 'epochTimestamp'
      */
     @Test
-    void epochTimestampTest() {
+    public void epochTimestampTest() {
         // TODO: test epochTimestamp
     }
 
@@ -58,7 +60,7 @@ class ApplePaySessionResponseTest {
      * Test the property 'expiresAt'
      */
     @Test
-    void expiresAtTest() {
+    public void expiresAtTest() {
         // TODO: test expiresAt
     }
 
@@ -66,7 +68,7 @@ class ApplePaySessionResponseTest {
      * Test the property 'merchantSessionIdentifier'
      */
     @Test
-    void merchantSessionIdentifierTest() {
+    public void merchantSessionIdentifierTest() {
         // TODO: test merchantSessionIdentifier
     }
 
@@ -74,7 +76,7 @@ class ApplePaySessionResponseTest {
      * Test the property 'nonce'
      */
     @Test
-    void nonceTest() {
+    public void nonceTest() {
         // TODO: test nonce
     }
 
@@ -82,7 +84,7 @@ class ApplePaySessionResponseTest {
      * Test the property 'merchantIdentifier'
      */
     @Test
-    void merchantIdentifierTest() {
+    public void merchantIdentifierTest() {
         // TODO: test merchantIdentifier
     }
 
@@ -90,7 +92,7 @@ class ApplePaySessionResponseTest {
      * Test the property 'domainName'
      */
     @Test
-    void domainNameTest() {
+    public void domainNameTest() {
         // TODO: test domainName
     }
 
@@ -98,7 +100,7 @@ class ApplePaySessionResponseTest {
      * Test the property 'displayName'
      */
     @Test
-    void displayNameTest() {
+    public void displayNameTest() {
         // TODO: test displayName
     }
 
@@ -106,7 +108,7 @@ class ApplePaySessionResponseTest {
      * Test the property 'signature'
      */
     @Test
-    void signatureTest() {
+    public void signatureTest() {
         // TODO: test signature
     }
 
@@ -114,7 +116,7 @@ class ApplePaySessionResponseTest {
      * Test the property 'operationalAnalyticsIdentifier'
      */
     @Test
-    void operationalAnalyticsIdentifierTest() {
+    public void operationalAnalyticsIdentifierTest() {
         // TODO: test operationalAnalyticsIdentifier
     }
 
@@ -122,7 +124,7 @@ class ApplePaySessionResponseTest {
      * Test the property 'retries'
      */
     @Test
-    void retriesTest() {
+    public void retriesTest() {
         // TODO: test retries
     }
 
@@ -130,7 +132,7 @@ class ApplePaySessionResponseTest {
      * Test the property 'pspId'
      */
     @Test
-    void pspIdTest() {
+    public void pspIdTest() {
         // TODO: test pspId
     }
 

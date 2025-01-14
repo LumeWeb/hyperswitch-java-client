@@ -19,20 +19,22 @@ import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonTypeName;
 import com.fasterxml.jackson.annotation.JsonValue;
 import com.hyperswitch.client.model.CountryAlpha2;
-import org.junit.jupiter.api.Test;
+import org.junit.Assert;
+import org.junit.Ignore;
+import org.junit.Test;
 
 
 /**
  * Model tests for BankRedirectDataOneOf14Trustly
  */
-class BankRedirectDataOneOf14TrustlyTest {
+public class BankRedirectDataOneOf14TrustlyTest {
     private final BankRedirectDataOneOf14Trustly model = new BankRedirectDataOneOf14Trustly();
 
     /**
      * Model tests for BankRedirectDataOneOf14Trustly
      */
     @Test
-    void testBankRedirectDataOneOf14Trustly() {
+    public void testBankRedirectDataOneOf14Trustly() {
         // TODO: test BankRedirectDataOneOf14Trustly
     }
 
@@ -40,7 +42,7 @@ class BankRedirectDataOneOf14TrustlyTest {
      * Test the property 'country'
      */
     @Test
-    void countryTest() {
+    public void countryTest() {
         // TODO: test country
     }
 

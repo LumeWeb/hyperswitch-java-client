@@ -32,6 +32,9 @@ import org.openapitools.jackson.nullable.JsonNullable;
 import java.util.NoSuchElementException;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 import com.fasterxml.jackson.annotation.JsonTypeName;
+import java.io.UnsupportedEncodingException;
+import java.net.URLEncoder;
+import java.util.StringJoiner;
 
 /**
  * ApplePayPaymentRequest
@@ -430,6 +433,136 @@ public class ApplePayPaymentRequest {
       return "null";
     }
     return o.toString().replace("\n", "\n    ");
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @return URL query string
+   */
+  public String toUrlQueryString() {
+    return toUrlQueryString(null);
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @param prefix prefix of the query string
+   * @return URL query string
+   */
+  public String toUrlQueryString(String prefix) {
+    String suffix = "";
+    String containerSuffix = "";
+    String containerPrefix = "";
+    if (prefix == null) {
+      // style=form, explode=true, e.g. /pet?name=cat&type=manx
+      prefix = "";
+    } else {
+      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+      prefix = prefix + "[";
+      suffix = "]";
+      containerSuffix = "]";
+      containerPrefix = "[";
+    }
+
+    StringJoiner joiner = new StringJoiner("&");
+
+    // add `country_code` to the URL query string
+    if (getCountryCode() != null) {
+      try {
+        joiner.add(String.format("%scountry_code%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCountryCode()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `currency_code` to the URL query string
+    if (getCurrencyCode() != null) {
+      try {
+        joiner.add(String.format("%scurrency_code%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCurrencyCode()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `total` to the URL query string
+    if (getTotal() != null) {
+      joiner.add(getTotal().toUrlQueryString(prefix + "total" + suffix));
+    }
+
+    // add `merchant_capabilities` to the URL query string
+    if (getMerchantCapabilities() != null) {
+      for (int i = 0; i < getMerchantCapabilities().size(); i++) {
+        try {
+          joiner.add(String.format("%smerchant_capabilities%s%s=%s", prefix, suffix,
+              "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix),
+              URLEncoder.encode(String.valueOf(getMerchantCapabilities().get(i)), "UTF-8").replaceAll("\\+", "%20")));
+        } catch (UnsupportedEncodingException e) {
+          // Should never happen, UTF-8 is always supported
+          throw new RuntimeException(e);
+        }
+      }
+    }
+
+    // add `supported_networks` to the URL query string
+    if (getSupportedNetworks() != null) {
+      for (int i = 0; i < getSupportedNetworks().size(); i++) {
+        try {
+          joiner.add(String.format("%ssupported_networks%s%s=%s", prefix, suffix,
+              "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix),
+              URLEncoder.encode(String.valueOf(getSupportedNetworks().get(i)), "UTF-8").replaceAll("\\+", "%20")));
+        } catch (UnsupportedEncodingException e) {
+          // Should never happen, UTF-8 is always supported
+          throw new RuntimeException(e);
+        }
+      }
+    }
+
+    // add `merchant_identifier` to the URL query string
+    if (getMerchantIdentifier() != null) {
+      try {
+        joiner.add(String.format("%smerchant_identifier%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getMerchantIdentifier()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `required_billing_contact_fields` to the URL query string
+    if (getRequiredBillingContactFields() != null) {
+      for (int i = 0; i < getRequiredBillingContactFields().size(); i++) {
+        if (getRequiredBillingContactFields().get(i) != null) {
+          try {
+            joiner.add(String.format("%srequired_billing_contact_fields%s%s=%s", prefix, suffix,
+                "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix),
+                URLEncoder.encode(String.valueOf(getRequiredBillingContactFields().get(i)), "UTF-8").replaceAll("\\+", "%20")));
+          } catch (UnsupportedEncodingException e) {
+            // Should never happen, UTF-8 is always supported
+            throw new RuntimeException(e);
+          }
+        }
+      }
+    }
+
+    // add `required_shipping_contact_fields` to the URL query string
+    if (getRequiredShippingContactFields() != null) {
+      for (int i = 0; i < getRequiredShippingContactFields().size(); i++) {
+        if (getRequiredShippingContactFields().get(i) != null) {
+          try {
+            joiner.add(String.format("%srequired_shipping_contact_fields%s%s=%s", prefix, suffix,
+                "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix),
+                URLEncoder.encode(String.valueOf(getRequiredShippingContactFields().get(i)), "UTF-8").replaceAll("\\+", "%20")));
+          } catch (UnsupportedEncodingException e) {
+            // Should never happen, UTF-8 is always supported
+            throw new RuntimeException(e);
+          }
+        }
+      }
+    }
+
+    return joiner.toString();
   }
 
 }

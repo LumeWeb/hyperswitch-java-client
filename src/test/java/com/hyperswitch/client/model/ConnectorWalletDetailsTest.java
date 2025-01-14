@@ -22,20 +22,22 @@ import org.openapitools.jackson.nullable.JsonNullable;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.openapitools.jackson.nullable.JsonNullable;
 import java.util.NoSuchElementException;
-import org.junit.jupiter.api.Test;
+import org.junit.Assert;
+import org.junit.Ignore;
+import org.junit.Test;
 
 
 /**
  * Model tests for ConnectorWalletDetails
  */
-class ConnectorWalletDetailsTest {
+public class ConnectorWalletDetailsTest {
     private final ConnectorWalletDetails model = new ConnectorWalletDetails();
 
     /**
      * Model tests for ConnectorWalletDetails
      */
     @Test
-    void testConnectorWalletDetails() {
+    public void testConnectorWalletDetails() {
         // TODO: test ConnectorWalletDetails
     }
 
@@ -43,7 +45,7 @@ class ConnectorWalletDetailsTest {
      * Test the property 'applePayCombined'
      */
     @Test
-    void applePayCombinedTest() {
+    public void applePayCombinedTest() {
         // TODO: test applePayCombined
     }
 
@@ -51,7 +53,7 @@ class ConnectorWalletDetailsTest {
      * Test the property 'applePay'
      */
     @Test
-    void applePayTest() {
+    public void applePayTest() {
         // TODO: test applePay
     }
 
@@ -59,7 +61,7 @@ class ConnectorWalletDetailsTest {
      * Test the property 'samsungPay'
      */
     @Test
-    void samsungPayTest() {
+    public void samsungPayTest() {
         // TODO: test samsungPay
     }
 
@@ -67,7 +69,7 @@ class ConnectorWalletDetailsTest {
      * Test the property 'paze'
      */
     @Test
-    void pazeTest() {
+    public void pazeTest() {
         // TODO: test paze
     }
 

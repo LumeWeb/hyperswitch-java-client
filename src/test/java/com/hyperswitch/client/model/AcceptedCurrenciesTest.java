@@ -27,20 +27,22 @@ import com.hyperswitch.client.model.AcceptedCurrenciesOneOf1;
 import com.hyperswitch.client.model.Currency;
 import java.util.ArrayList;
 import java.util.List;
-import org.junit.jupiter.api.Test;
+import org.junit.Assert;
+import org.junit.Ignore;
+import org.junit.Test;
 
 
 /**
  * Model tests for AcceptedCurrencies
  */
-class AcceptedCurrenciesTest {
+public class AcceptedCurrenciesTest {
     private final AcceptedCurrencies model = new AcceptedCurrencies();
 
     /**
      * Model tests for AcceptedCurrencies
      */
     @Test
-    void testAcceptedCurrencies() {
+    public void testAcceptedCurrencies() {
         // TODO: test AcceptedCurrencies
     }
 
@@ -48,7 +50,7 @@ class AcceptedCurrenciesTest {
      * Test the property 'type'
      */
     @Test
-    void typeTest() {
+    public void typeTest() {
         // TODO: test type
     }
 
@@ -56,7 +58,7 @@ class AcceptedCurrenciesTest {
      * Test the property '_list'
      */
     @Test
-    void _listTest() {
+    public void _listTest() {
         // TODO: test _list
     }
 

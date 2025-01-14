@@ -18,20 +18,22 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonTypeName;
 import com.fasterxml.jackson.annotation.JsonValue;
-import org.junit.jupiter.api.Test;
+import org.junit.Assert;
+import org.junit.Ignore;
+import org.junit.Test;
 
 
 /**
  * Model tests for OnlineMandate
  */
-class OnlineMandateTest {
+public class OnlineMandateTest {
     private final OnlineMandate model = new OnlineMandate();
 
     /**
      * Model tests for OnlineMandate
      */
     @Test
-    void testOnlineMandate() {
+    public void testOnlineMandate() {
         // TODO: test OnlineMandate
     }
 
@@ -39,7 +41,7 @@ class OnlineMandateTest {
      * Test the property 'ipAddress'
      */
     @Test
-    void ipAddressTest() {
+    public void ipAddressTest() {
         // TODO: test ipAddress
     }
 
@@ -47,7 +49,7 @@ class OnlineMandateTest {
      * Test the property 'userAgent'
      */
     @Test
-    void userAgentTest() {
+    public void userAgentTest() {
         // TODO: test userAgent
     }
 

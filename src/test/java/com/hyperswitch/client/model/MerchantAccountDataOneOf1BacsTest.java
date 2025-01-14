@@ -22,20 +22,22 @@ import org.openapitools.jackson.nullable.JsonNullable;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.openapitools.jackson.nullable.JsonNullable;
 import java.util.NoSuchElementException;
-import org.junit.jupiter.api.Test;
+import org.junit.Assert;
+import org.junit.Ignore;
+import org.junit.Test;
 
 
 /**
  * Model tests for MerchantAccountDataOneOf1Bacs
  */
-class MerchantAccountDataOneOf1BacsTest {
+public class MerchantAccountDataOneOf1BacsTest {
     private final MerchantAccountDataOneOf1Bacs model = new MerchantAccountDataOneOf1Bacs();
 
     /**
      * Model tests for MerchantAccountDataOneOf1Bacs
      */
     @Test
-    void testMerchantAccountDataOneOf1Bacs() {
+    public void testMerchantAccountDataOneOf1Bacs() {
         // TODO: test MerchantAccountDataOneOf1Bacs
     }
 
@@ -43,7 +45,7 @@ class MerchantAccountDataOneOf1BacsTest {
      * Test the property 'accountNumber'
      */
     @Test
-    void accountNumberTest() {
+    public void accountNumberTest() {
         // TODO: test accountNumber
     }
 
@@ -51,7 +53,7 @@ class MerchantAccountDataOneOf1BacsTest {
      * Test the property 'sortCode'
      */
     @Test
-    void sortCodeTest() {
+    public void sortCodeTest() {
         // TODO: test sortCode
     }
 
@@ -59,7 +61,7 @@ class MerchantAccountDataOneOf1BacsTest {
      * Test the property 'name'
      */
     @Test
-    void nameTest() {
+    public void nameTest() {
         // TODO: test name
     }
 
@@ -67,7 +69,7 @@ class MerchantAccountDataOneOf1BacsTest {
      * Test the property 'connectorRecipientId'
      */
     @Test
-    void connectorRecipientIdTest() {
+    public void connectorRecipientIdTest() {
         // TODO: test connectorRecipientId
     }
 

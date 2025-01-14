@@ -23,20 +23,22 @@ import org.openapitools.jackson.nullable.JsonNullable;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.openapitools.jackson.nullable.JsonNullable;
 import java.util.NoSuchElementException;
-import org.junit.jupiter.api.Test;
+import org.junit.Assert;
+import org.junit.Ignore;
+import org.junit.Test;
 
 
 /**
  * Model tests for RoutableConnectorChoice
  */
-class RoutableConnectorChoiceTest {
+public class RoutableConnectorChoiceTest {
     private final RoutableConnectorChoice model = new RoutableConnectorChoice();
 
     /**
      * Model tests for RoutableConnectorChoice
      */
     @Test
-    void testRoutableConnectorChoice() {
+    public void testRoutableConnectorChoice() {
         // TODO: test RoutableConnectorChoice
     }
 
@@ -44,7 +46,7 @@ class RoutableConnectorChoiceTest {
      * Test the property 'connector'
      */
     @Test
-    void connectorTest() {
+    public void connectorTest() {
         // TODO: test connector
     }
 
@@ -52,7 +54,7 @@ class RoutableConnectorChoiceTest {
      * Test the property 'merchantConnectorId'
      */
     @Test
-    void merchantConnectorIdTest() {
+    public void merchantConnectorIdTest() {
         // TODO: test merchantConnectorId
     }
 

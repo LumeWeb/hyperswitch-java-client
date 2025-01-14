@@ -13,18 +13,20 @@
 
 package com.hyperswitch.client.model;
 
-import org.junit.jupiter.api.Test;
+import org.junit.Assert;
+import org.junit.Ignore;
+import org.junit.Test;
 
 
 /**
  * Model tests for StripeChargeType
  */
-class StripeChargeTypeTest {
+public class StripeChargeTypeTest {
     /**
      * Model tests for StripeChargeType
      */
     @Test
-    void testStripeChargeType() {
+    public void testStripeChargeType() {
         // TODO: test StripeChargeType
     }
 

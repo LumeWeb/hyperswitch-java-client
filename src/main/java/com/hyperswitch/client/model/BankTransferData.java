@@ -43,6 +43,9 @@ import com.hyperswitch.client.model.BankTransferDataOneOf9;
 import com.hyperswitch.client.model.BankTransferDataOneOfAchBankTransfer;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 import com.fasterxml.jackson.annotation.JsonTypeName;
+import java.io.UnsupportedEncodingException;
+import java.net.URLEncoder;
+import java.util.StringJoiner;
 
 /**
  * BankTransferData
@@ -534,6 +537,116 @@ public class BankTransferData {
       return "null";
     }
     return o.toString().replace("\n", "\n    ");
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @return URL query string
+   */
+  public String toUrlQueryString() {
+    return toUrlQueryString(null);
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @param prefix prefix of the query string
+   * @return URL query string
+   */
+  public String toUrlQueryString(String prefix) {
+    String suffix = "";
+    String containerSuffix = "";
+    String containerPrefix = "";
+    if (prefix == null) {
+      // style=form, explode=true, e.g. /pet?name=cat&type=manx
+      prefix = "";
+    } else {
+      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+      prefix = prefix + "[";
+      suffix = "]";
+      containerSuffix = "]";
+      containerPrefix = "[";
+    }
+
+    StringJoiner joiner = new StringJoiner("&");
+
+    // add `ach_bank_transfer` to the URL query string
+    if (getAchBankTransfer() != null) {
+      joiner.add(getAchBankTransfer().toUrlQueryString(prefix + "ach_bank_transfer" + suffix));
+    }
+
+    // add `sepa_bank_transfer` to the URL query string
+    if (getSepaBankTransfer() != null) {
+      joiner.add(getSepaBankTransfer().toUrlQueryString(prefix + "sepa_bank_transfer" + suffix));
+    }
+
+    // add `bacs_bank_transfer` to the URL query string
+    if (getBacsBankTransfer() != null) {
+      joiner.add(getBacsBankTransfer().toUrlQueryString(prefix + "bacs_bank_transfer" + suffix));
+    }
+
+    // add `multibanco_bank_transfer` to the URL query string
+    if (getMultibancoBankTransfer() != null) {
+      joiner.add(getMultibancoBankTransfer().toUrlQueryString(prefix + "multibanco_bank_transfer" + suffix));
+    }
+
+    // add `permata_bank_transfer` to the URL query string
+    if (getPermataBankTransfer() != null) {
+      joiner.add(getPermataBankTransfer().toUrlQueryString(prefix + "permata_bank_transfer" + suffix));
+    }
+
+    // add `bca_bank_transfer` to the URL query string
+    if (getBcaBankTransfer() != null) {
+      joiner.add(getBcaBankTransfer().toUrlQueryString(prefix + "bca_bank_transfer" + suffix));
+    }
+
+    // add `bni_va_bank_transfer` to the URL query string
+    if (getBniVaBankTransfer() != null) {
+      joiner.add(getBniVaBankTransfer().toUrlQueryString(prefix + "bni_va_bank_transfer" + suffix));
+    }
+
+    // add `bri_va_bank_transfer` to the URL query string
+    if (getBriVaBankTransfer() != null) {
+      joiner.add(getBriVaBankTransfer().toUrlQueryString(prefix + "bri_va_bank_transfer" + suffix));
+    }
+
+    // add `cimb_va_bank_transfer` to the URL query string
+    if (getCimbVaBankTransfer() != null) {
+      joiner.add(getCimbVaBankTransfer().toUrlQueryString(prefix + "cimb_va_bank_transfer" + suffix));
+    }
+
+    // add `danamon_va_bank_transfer` to the URL query string
+    if (getDanamonVaBankTransfer() != null) {
+      joiner.add(getDanamonVaBankTransfer().toUrlQueryString(prefix + "danamon_va_bank_transfer" + suffix));
+    }
+
+    // add `mandiri_va_bank_transfer` to the URL query string
+    if (getMandiriVaBankTransfer() != null) {
+      joiner.add(getMandiriVaBankTransfer().toUrlQueryString(prefix + "mandiri_va_bank_transfer" + suffix));
+    }
+
+    // add `pix` to the URL query string
+    if (getPix() != null) {
+      joiner.add(getPix().toUrlQueryString(prefix + "pix" + suffix));
+    }
+
+    // add `pse` to the URL query string
+    if (getPse() != null) {
+      try {
+        joiner.add(String.format("%spse%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getPse()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `local_bank_transfer` to the URL query string
+    if (getLocalBankTransfer() != null) {
+      joiner.add(getLocalBankTransfer().toUrlQueryString(prefix + "local_bank_transfer" + suffix));
+    }
+
+    return joiner.toString();
   }
 
 }

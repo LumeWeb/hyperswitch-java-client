@@ -13,18 +13,20 @@
 
 package com.hyperswitch.client.model;
 
-import org.junit.jupiter.api.Test;
+import org.junit.Assert;
+import org.junit.Ignore;
+import org.junit.Test;
 
 
 /**
  * Model tests for BankHolderType
  */
-class BankHolderTypeTest {
+public class BankHolderTypeTest {
     /**
      * Model tests for BankHolderType
      */
     @Test
-    void testBankHolderType() {
+    public void testBankHolderType() {
         // TODO: test BankHolderType
     }
 

@@ -24,20 +24,22 @@ import com.fasterxml.jackson.annotation.JsonValue;
 import com.hyperswitch.client.model.SurchargePercentage;
 import com.hyperswitch.client.model.SurchargeResponseOneOf;
 import com.hyperswitch.client.model.SurchargeResponseOneOf1;
-import org.junit.jupiter.api.Test;
+import org.junit.Assert;
+import org.junit.Ignore;
+import org.junit.Test;
 
 
 /**
  * Model tests for SurchargeResponse
  */
-class SurchargeResponseTest {
+public class SurchargeResponseTest {
     private final SurchargeResponse model = new SurchargeResponse();
 
     /**
      * Model tests for SurchargeResponse
      */
     @Test
-    void testSurchargeResponse() {
+    public void testSurchargeResponse() {
         // TODO: test SurchargeResponse
     }
 
@@ -45,7 +47,7 @@ class SurchargeResponseTest {
      * Test the property 'type'
      */
     @Test
-    void typeTest() {
+    public void typeTest() {
         // TODO: test type
     }
 
@@ -53,7 +55,7 @@ class SurchargeResponseTest {
      * Test the property 'value'
      */
     @Test
-    void valueTest() {
+    public void valueTest() {
         // TODO: test value
     }
 

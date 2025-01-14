@@ -19,20 +19,22 @@ import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonTypeName;
 import com.fasterxml.jackson.annotation.JsonValue;
 import com.hyperswitch.client.model.SamsungPayWalletCredentials;
-import org.junit.jupiter.api.Test;
+import org.junit.Assert;
+import org.junit.Ignore;
+import org.junit.Test;
 
 
 /**
  * Model tests for SamsungPayWalletData
  */
-class SamsungPayWalletDataTest {
+public class SamsungPayWalletDataTest {
     private final SamsungPayWalletData model = new SamsungPayWalletData();
 
     /**
      * Model tests for SamsungPayWalletData
      */
     @Test
-    void testSamsungPayWalletData() {
+    public void testSamsungPayWalletData() {
         // TODO: test SamsungPayWalletData
     }
 
@@ -40,7 +42,7 @@ class SamsungPayWalletDataTest {
      * Test the property 'paymentCredential'
      */
     @Test
-    void paymentCredentialTest() {
+    public void paymentCredentialTest() {
         // TODO: test paymentCredential
     }
 

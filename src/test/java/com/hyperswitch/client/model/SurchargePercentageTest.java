@@ -18,20 +18,22 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonTypeName;
 import com.fasterxml.jackson.annotation.JsonValue;
-import org.junit.jupiter.api.Test;
+import org.junit.Assert;
+import org.junit.Ignore;
+import org.junit.Test;
 
 
 /**
  * Model tests for SurchargePercentage
  */
-class SurchargePercentageTest {
+public class SurchargePercentageTest {
     private final SurchargePercentage model = new SurchargePercentage();
 
     /**
      * Model tests for SurchargePercentage
      */
     @Test
-    void testSurchargePercentage() {
+    public void testSurchargePercentage() {
         // TODO: test SurchargePercentage
     }
 
@@ -39,7 +41,7 @@ class SurchargePercentageTest {
      * Test the property 'percentage'
      */
     @Test
-    void percentageTest() {
+    public void percentageTest() {
         // TODO: test percentage
     }
 

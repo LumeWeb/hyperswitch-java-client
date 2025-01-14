@@ -22,20 +22,22 @@ import org.openapitools.jackson.nullable.JsonNullable;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.openapitools.jackson.nullable.JsonNullable;
 import java.util.NoSuchElementException;
-import org.junit.jupiter.api.Test;
+import org.junit.Assert;
+import org.junit.Ignore;
+import org.junit.Test;
 
 
 /**
  * Model tests for NextActionDataOneOf6
  */
-class NextActionDataOneOf6Test {
+public class NextActionDataOneOf6Test {
     private final NextActionDataOneOf6 model = new NextActionDataOneOf6();
 
     /**
      * Model tests for NextActionDataOneOf6
      */
     @Test
-    void testNextActionDataOneOf6() {
+    public void testNextActionDataOneOf6() {
         // TODO: test NextActionDataOneOf6
     }
 
@@ -43,7 +45,7 @@ class NextActionDataOneOf6Test {
      * Test the property 'displayFromTimestamp'
      */
     @Test
-    void displayFromTimestampTest() {
+    public void displayFromTimestampTest() {
         // TODO: test displayFromTimestamp
     }
 
@@ -51,7 +53,7 @@ class NextActionDataOneOf6Test {
      * Test the property 'displayToTimestamp'
      */
     @Test
-    void displayToTimestampTest() {
+    public void displayToTimestampTest() {
         // TODO: test displayToTimestamp
     }
 
@@ -59,7 +61,7 @@ class NextActionDataOneOf6Test {
      * Test the property 'type'
      */
     @Test
-    void typeTest() {
+    public void typeTest() {
         // TODO: test type
     }
 

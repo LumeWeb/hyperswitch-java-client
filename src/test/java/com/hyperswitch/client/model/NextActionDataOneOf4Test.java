@@ -18,20 +18,22 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonTypeName;
 import com.fasterxml.jackson.annotation.JsonValue;
-import org.junit.jupiter.api.Test;
+import org.junit.Assert;
+import org.junit.Ignore;
+import org.junit.Test;
 
 
 /**
  * Model tests for NextActionDataOneOf4
  */
-class NextActionDataOneOf4Test {
+public class NextActionDataOneOf4Test {
     private final NextActionDataOneOf4 model = new NextActionDataOneOf4();
 
     /**
      * Model tests for NextActionDataOneOf4
      */
     @Test
-    void testNextActionDataOneOf4() {
+    public void testNextActionDataOneOf4() {
         // TODO: test NextActionDataOneOf4
     }
 
@@ -39,7 +41,7 @@ class NextActionDataOneOf4Test {
      * Test the property 'qrCodeFetchUrl'
      */
     @Test
-    void qrCodeFetchUrlTest() {
+    public void qrCodeFetchUrlTest() {
         // TODO: test qrCodeFetchUrl
     }
 
@@ -47,7 +49,7 @@ class NextActionDataOneOf4Test {
      * Test the property 'type'
      */
     @Test
-    void typeTest() {
+    public void typeTest() {
         // TODO: test type
     }
 

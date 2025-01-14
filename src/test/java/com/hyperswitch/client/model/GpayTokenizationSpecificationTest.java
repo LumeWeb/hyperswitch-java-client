@@ -19,20 +19,22 @@ import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonTypeName;
 import com.fasterxml.jackson.annotation.JsonValue;
 import com.hyperswitch.client.model.GpayTokenParameters;
-import org.junit.jupiter.api.Test;
+import org.junit.Assert;
+import org.junit.Ignore;
+import org.junit.Test;
 
 
 /**
  * Model tests for GpayTokenizationSpecification
  */
-class GpayTokenizationSpecificationTest {
+public class GpayTokenizationSpecificationTest {
     private final GpayTokenizationSpecification model = new GpayTokenizationSpecification();
 
     /**
      * Model tests for GpayTokenizationSpecification
      */
     @Test
-    void testGpayTokenizationSpecification() {
+    public void testGpayTokenizationSpecification() {
         // TODO: test GpayTokenizationSpecification
     }
 
@@ -40,7 +42,7 @@ class GpayTokenizationSpecificationTest {
      * Test the property 'type'
      */
     @Test
-    void typeTest() {
+    public void typeTest() {
         // TODO: test type
     }
 
@@ -48,7 +50,7 @@ class GpayTokenizationSpecificationTest {
      * Test the property 'parameters'
      */
     @Test
-    void parametersTest() {
+    public void parametersTest() {
         // TODO: test parameters
     }
 

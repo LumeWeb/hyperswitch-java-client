@@ -23,20 +23,22 @@ import org.openapitools.jackson.nullable.JsonNullable;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.openapitools.jackson.nullable.JsonNullable;
 import java.util.NoSuchElementException;
-import org.junit.jupiter.api.Test;
+import org.junit.Assert;
+import org.junit.Ignore;
+import org.junit.Test;
 
 
 /**
  * Model tests for ApplepayConnectorMetadataRequest
  */
-class ApplepayConnectorMetadataRequestTest {
+public class ApplepayConnectorMetadataRequestTest {
     private final ApplepayConnectorMetadataRequest model = new ApplepayConnectorMetadataRequest();
 
     /**
      * Model tests for ApplepayConnectorMetadataRequest
      */
     @Test
-    void testApplepayConnectorMetadataRequest() {
+    public void testApplepayConnectorMetadataRequest() {
         // TODO: test ApplepayConnectorMetadataRequest
     }
 
@@ -44,7 +46,7 @@ class ApplepayConnectorMetadataRequestTest {
      * Test the property 'sessionTokenData'
      */
     @Test
-    void sessionTokenDataTest() {
+    public void sessionTokenDataTest() {
         // TODO: test sessionTokenData
     }
 

@@ -26,20 +26,22 @@ import com.hyperswitch.client.model.ConnectorSelectionOneOf1;
 import com.hyperswitch.client.model.ProgramConnectorSelection;
 import com.hyperswitch.client.model.RoutingAlgorithmOneOf;
 import com.hyperswitch.client.model.RoutingAlgorithmOneOf1;
-import org.junit.jupiter.api.Test;
+import org.junit.Assert;
+import org.junit.Ignore;
+import org.junit.Test;
 
 
 /**
  * Model tests for RoutingAlgorithm
  */
-class RoutingAlgorithmTest {
+public class RoutingAlgorithmTest {
     private final RoutingAlgorithm model = new RoutingAlgorithm();
 
     /**
      * Model tests for RoutingAlgorithm
      */
     @Test
-    void testRoutingAlgorithm() {
+    public void testRoutingAlgorithm() {
         // TODO: test RoutingAlgorithm
     }
 
@@ -47,7 +49,7 @@ class RoutingAlgorithmTest {
      * Test the property 'type'
      */
     @Test
-    void typeTest() {
+    public void typeTest() {
         // TODO: test type
     }
 
@@ -55,7 +57,7 @@ class RoutingAlgorithmTest {
      * Test the property 'data'
      */
     @Test
-    void dataTest() {
+    public void dataTest() {
         // TODO: test data
     }
 

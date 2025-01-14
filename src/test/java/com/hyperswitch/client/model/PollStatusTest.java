@@ -13,18 +13,20 @@
 
 package com.hyperswitch.client.model;
 
-import org.junit.jupiter.api.Test;
+import org.junit.Assert;
+import org.junit.Ignore;
+import org.junit.Test;
 
 
 /**
  * Model tests for PollStatus
  */
-class PollStatusTest {
+public class PollStatusTest {
     /**
      * Model tests for PollStatus
      */
     @Test
-    void testPollStatus() {
+    public void testPollStatus() {
         // TODO: test PollStatus
     }
 

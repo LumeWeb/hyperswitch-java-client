@@ -23,20 +23,22 @@ import org.openapitools.jackson.nullable.JsonNullable;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.openapitools.jackson.nullable.JsonNullable;
 import java.util.NoSuchElementException;
-import org.junit.jupiter.api.Test;
+import org.junit.Assert;
+import org.junit.Ignore;
+import org.junit.Test;
 
 
 /**
  * Model tests for MerchantDetails
  */
-class MerchantDetailsTest {
+public class MerchantDetailsTest {
     private final MerchantDetails model = new MerchantDetails();
 
     /**
      * Model tests for MerchantDetails
      */
     @Test
-    void testMerchantDetails() {
+    public void testMerchantDetails() {
         // TODO: test MerchantDetails
     }
 
@@ -44,7 +46,7 @@ class MerchantDetailsTest {
      * Test the property 'primaryContactPerson'
      */
     @Test
-    void primaryContactPersonTest() {
+    public void primaryContactPersonTest() {
         // TODO: test primaryContactPerson
     }
 
@@ -52,7 +54,7 @@ class MerchantDetailsTest {
      * Test the property 'primaryPhone'
      */
     @Test
-    void primaryPhoneTest() {
+    public void primaryPhoneTest() {
         // TODO: test primaryPhone
     }
 
@@ -60,7 +62,7 @@ class MerchantDetailsTest {
      * Test the property 'primaryEmail'
      */
     @Test
-    void primaryEmailTest() {
+    public void primaryEmailTest() {
         // TODO: test primaryEmail
     }
 
@@ -68,7 +70,7 @@ class MerchantDetailsTest {
      * Test the property 'secondaryContactPerson'
      */
     @Test
-    void secondaryContactPersonTest() {
+    public void secondaryContactPersonTest() {
         // TODO: test secondaryContactPerson
     }
 
@@ -76,7 +78,7 @@ class MerchantDetailsTest {
      * Test the property 'secondaryPhone'
      */
     @Test
-    void secondaryPhoneTest() {
+    public void secondaryPhoneTest() {
         // TODO: test secondaryPhone
     }
 
@@ -84,7 +86,7 @@ class MerchantDetailsTest {
      * Test the property 'secondaryEmail'
      */
     @Test
-    void secondaryEmailTest() {
+    public void secondaryEmailTest() {
         // TODO: test secondaryEmail
     }
 
@@ -92,7 +94,7 @@ class MerchantDetailsTest {
      * Test the property 'website'
      */
     @Test
-    void websiteTest() {
+    public void websiteTest() {
         // TODO: test website
     }
 
@@ -100,7 +102,7 @@ class MerchantDetailsTest {
      * Test the property 'aboutBusiness'
      */
     @Test
-    void aboutBusinessTest() {
+    public void aboutBusinessTest() {
         // TODO: test aboutBusiness
     }
 
@@ -108,7 +110,7 @@ class MerchantDetailsTest {
      * Test the property 'address'
      */
     @Test
-    void addressTest() {
+    public void addressTest() {
         // TODO: test address
     }
 

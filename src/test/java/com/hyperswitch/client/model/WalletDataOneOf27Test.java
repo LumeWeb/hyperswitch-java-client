@@ -19,20 +19,22 @@ import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonTypeName;
 import com.fasterxml.jackson.annotation.JsonValue;
 import com.hyperswitch.client.model.MifinityData;
-import org.junit.jupiter.api.Test;
+import org.junit.Assert;
+import org.junit.Ignore;
+import org.junit.Test;
 
 
 /**
  * Model tests for WalletDataOneOf27
  */
-class WalletDataOneOf27Test {
+public class WalletDataOneOf27Test {
     private final WalletDataOneOf27 model = new WalletDataOneOf27();
 
     /**
      * Model tests for WalletDataOneOf27
      */
     @Test
-    void testWalletDataOneOf27() {
+    public void testWalletDataOneOf27() {
         // TODO: test WalletDataOneOf27
     }
 
@@ -40,7 +42,7 @@ class WalletDataOneOf27Test {
      * Test the property 'mifinity'
      */
     @Test
-    void mifinityTest() {
+    public void mifinityTest() {
         // TODO: test mifinity
     }
 

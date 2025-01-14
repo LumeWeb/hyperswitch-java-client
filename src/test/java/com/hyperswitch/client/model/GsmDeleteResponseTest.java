@@ -18,20 +18,22 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonTypeName;
 import com.fasterxml.jackson.annotation.JsonValue;
-import org.junit.jupiter.api.Test;
+import org.junit.Assert;
+import org.junit.Ignore;
+import org.junit.Test;
 
 
 /**
  * Model tests for GsmDeleteResponse
  */
-class GsmDeleteResponseTest {
+public class GsmDeleteResponseTest {
     private final GsmDeleteResponse model = new GsmDeleteResponse();
 
     /**
      * Model tests for GsmDeleteResponse
      */
     @Test
-    void testGsmDeleteResponse() {
+    public void testGsmDeleteResponse() {
         // TODO: test GsmDeleteResponse
     }
 
@@ -39,7 +41,7 @@ class GsmDeleteResponseTest {
      * Test the property 'gsmRuleDelete'
      */
     @Test
-    void gsmRuleDeleteTest() {
+    public void gsmRuleDeleteTest() {
         // TODO: test gsmRuleDelete
     }
 
@@ -47,7 +49,7 @@ class GsmDeleteResponseTest {
      * Test the property 'connector'
      */
     @Test
-    void connectorTest() {
+    public void connectorTest() {
         // TODO: test connector
     }
 
@@ -55,7 +57,7 @@ class GsmDeleteResponseTest {
      * Test the property 'flow'
      */
     @Test
-    void flowTest() {
+    public void flowTest() {
         // TODO: test flow
     }
 
@@ -63,7 +65,7 @@ class GsmDeleteResponseTest {
      * Test the property 'subFlow'
      */
     @Test
-    void subFlowTest() {
+    public void subFlowTest() {
         // TODO: test subFlow
     }
 
@@ -71,7 +73,7 @@ class GsmDeleteResponseTest {
      * Test the property 'code'
      */
     @Test
-    void codeTest() {
+    public void codeTest() {
         // TODO: test code
     }
 

@@ -25,20 +25,22 @@ import org.openapitools.jackson.nullable.JsonNullable;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.openapitools.jackson.nullable.JsonNullable;
 import java.util.NoSuchElementException;
-import org.junit.jupiter.api.Test;
+import org.junit.Assert;
+import org.junit.Ignore;
+import org.junit.Test;
 
 
 /**
  * Model tests for CustomerAcceptance
  */
-class CustomerAcceptanceTest {
+public class CustomerAcceptanceTest {
     private final CustomerAcceptance model = new CustomerAcceptance();
 
     /**
      * Model tests for CustomerAcceptance
      */
     @Test
-    void testCustomerAcceptance() {
+    public void testCustomerAcceptance() {
         // TODO: test CustomerAcceptance
     }
 
@@ -46,7 +48,7 @@ class CustomerAcceptanceTest {
      * Test the property 'acceptanceType'
      */
     @Test
-    void acceptanceTypeTest() {
+    public void acceptanceTypeTest() {
         // TODO: test acceptanceType
     }
 
@@ -54,7 +56,7 @@ class CustomerAcceptanceTest {
      * Test the property 'acceptedAt'
      */
     @Test
-    void acceptedAtTest() {
+    public void acceptedAtTest() {
         // TODO: test acceptedAt
     }
 
@@ -62,7 +64,7 @@ class CustomerAcceptanceTest {
      * Test the property 'online'
      */
     @Test
-    void onlineTest() {
+    public void onlineTest() {
         // TODO: test online
     }
 

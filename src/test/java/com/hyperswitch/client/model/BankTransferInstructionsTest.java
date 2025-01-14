@@ -28,20 +28,22 @@ import com.hyperswitch.client.model.BankTransferInstructionsOneOf4;
 import com.hyperswitch.client.model.DokuBankTransferInstructions;
 import com.hyperswitch.client.model.MultibancoTransferInstructions;
 import com.hyperswitch.client.model.SepaBankTransferInstructions;
-import org.junit.jupiter.api.Test;
+import org.junit.Assert;
+import org.junit.Ignore;
+import org.junit.Test;
 
 
 /**
  * Model tests for BankTransferInstructions
  */
-class BankTransferInstructionsTest {
+public class BankTransferInstructionsTest {
     private final BankTransferInstructions model = new BankTransferInstructions();
 
     /**
      * Model tests for BankTransferInstructions
      */
     @Test
-    void testBankTransferInstructions() {
+    public void testBankTransferInstructions() {
         // TODO: test BankTransferInstructions
     }
 
@@ -49,7 +51,7 @@ class BankTransferInstructionsTest {
      * Test the property 'dokuBankTransferInstructions'
      */
     @Test
-    void dokuBankTransferInstructionsTest() {
+    public void dokuBankTransferInstructionsTest() {
         // TODO: test dokuBankTransferInstructions
     }
 
@@ -57,7 +59,7 @@ class BankTransferInstructionsTest {
      * Test the property 'achCreditTransfer'
      */
     @Test
-    void achCreditTransferTest() {
+    public void achCreditTransferTest() {
         // TODO: test achCreditTransfer
     }
 
@@ -65,7 +67,7 @@ class BankTransferInstructionsTest {
      * Test the property 'sepaBankInstructions'
      */
     @Test
-    void sepaBankInstructionsTest() {
+    public void sepaBankInstructionsTest() {
         // TODO: test sepaBankInstructions
     }
 
@@ -73,7 +75,7 @@ class BankTransferInstructionsTest {
      * Test the property 'bacsBankInstructions'
      */
     @Test
-    void bacsBankInstructionsTest() {
+    public void bacsBankInstructionsTest() {
         // TODO: test bacsBankInstructions
     }
 
@@ -81,7 +83,7 @@ class BankTransferInstructionsTest {
      * Test the property 'multibanco'
      */
     @Test
-    void multibancoTest() {
+    public void multibancoTest() {
         // TODO: test multibanco
     }
 

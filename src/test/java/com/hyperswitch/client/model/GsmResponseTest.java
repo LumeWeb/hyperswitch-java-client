@@ -22,20 +22,22 @@ import org.openapitools.jackson.nullable.JsonNullable;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.openapitools.jackson.nullable.JsonNullable;
 import java.util.NoSuchElementException;
-import org.junit.jupiter.api.Test;
+import org.junit.Assert;
+import org.junit.Ignore;
+import org.junit.Test;
 
 
 /**
  * Model tests for GsmResponse
  */
-class GsmResponseTest {
+public class GsmResponseTest {
     private final GsmResponse model = new GsmResponse();
 
     /**
      * Model tests for GsmResponse
      */
     @Test
-    void testGsmResponse() {
+    public void testGsmResponse() {
         // TODO: test GsmResponse
     }
 
@@ -43,7 +45,7 @@ class GsmResponseTest {
      * Test the property 'connector'
      */
     @Test
-    void connectorTest() {
+    public void connectorTest() {
         // TODO: test connector
     }
 
@@ -51,7 +53,7 @@ class GsmResponseTest {
      * Test the property 'flow'
      */
     @Test
-    void flowTest() {
+    public void flowTest() {
         // TODO: test flow
     }
 
@@ -59,7 +61,7 @@ class GsmResponseTest {
      * Test the property 'subFlow'
      */
     @Test
-    void subFlowTest() {
+    public void subFlowTest() {
         // TODO: test subFlow
     }
 
@@ -67,7 +69,7 @@ class GsmResponseTest {
      * Test the property 'code'
      */
     @Test
-    void codeTest() {
+    public void codeTest() {
         // TODO: test code
     }
 
@@ -75,7 +77,7 @@ class GsmResponseTest {
      * Test the property 'message'
      */
     @Test
-    void messageTest() {
+    public void messageTest() {
         // TODO: test message
     }
 
@@ -83,7 +85,7 @@ class GsmResponseTest {
      * Test the property 'status'
      */
     @Test
-    void statusTest() {
+    public void statusTest() {
         // TODO: test status
     }
 
@@ -91,7 +93,7 @@ class GsmResponseTest {
      * Test the property 'routerError'
      */
     @Test
-    void routerErrorTest() {
+    public void routerErrorTest() {
         // TODO: test routerError
     }
 
@@ -99,7 +101,7 @@ class GsmResponseTest {
      * Test the property 'decision'
      */
     @Test
-    void decisionTest() {
+    public void decisionTest() {
         // TODO: test decision
     }
 
@@ -107,7 +109,7 @@ class GsmResponseTest {
      * Test the property 'stepUpPossible'
      */
     @Test
-    void stepUpPossibleTest() {
+    public void stepUpPossibleTest() {
         // TODO: test stepUpPossible
     }
 
@@ -115,7 +117,7 @@ class GsmResponseTest {
      * Test the property 'unifiedCode'
      */
     @Test
-    void unifiedCodeTest() {
+    public void unifiedCodeTest() {
         // TODO: test unifiedCode
     }
 
@@ -123,7 +125,7 @@ class GsmResponseTest {
      * Test the property 'unifiedMessage'
      */
     @Test
-    void unifiedMessageTest() {
+    public void unifiedMessageTest() {
         // TODO: test unifiedMessage
     }
 

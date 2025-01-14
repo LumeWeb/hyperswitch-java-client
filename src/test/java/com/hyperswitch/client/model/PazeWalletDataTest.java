@@ -18,20 +18,22 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonTypeName;
 import com.fasterxml.jackson.annotation.JsonValue;
-import org.junit.jupiter.api.Test;
+import org.junit.Assert;
+import org.junit.Ignore;
+import org.junit.Test;
 
 
 /**
  * Model tests for PazeWalletData
  */
-class PazeWalletDataTest {
+public class PazeWalletDataTest {
     private final PazeWalletData model = new PazeWalletData();
 
     /**
      * Model tests for PazeWalletData
      */
     @Test
-    void testPazeWalletData() {
+    public void testPazeWalletData() {
         // TODO: test PazeWalletData
     }
 
@@ -39,7 +41,7 @@ class PazeWalletDataTest {
      * Test the property 'completeResponse'
      */
     @Test
-    void completeResponseTest() {
+    public void completeResponseTest() {
         // TODO: test completeResponse
     }
 

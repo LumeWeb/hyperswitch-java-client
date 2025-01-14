@@ -19,20 +19,22 @@ import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonTypeName;
 import com.fasterxml.jackson.annotation.JsonValue;
 import com.hyperswitch.client.model.SdkNextAction;
-import org.junit.jupiter.api.Test;
+import org.junit.Assert;
+import org.junit.Ignore;
+import org.junit.Test;
 
 
 /**
  * Model tests for SessionTokenOneOf3
  */
-class SessionTokenOneOf3Test {
+public class SessionTokenOneOf3Test {
     private final SessionTokenOneOf3 model = new SessionTokenOneOf3();
 
     /**
      * Model tests for SessionTokenOneOf3
      */
     @Test
-    void testSessionTokenOneOf3() {
+    public void testSessionTokenOneOf3() {
         // TODO: test SessionTokenOneOf3
     }
 
@@ -40,7 +42,7 @@ class SessionTokenOneOf3Test {
      * Test the property 'connector'
      */
     @Test
-    void connectorTest() {
+    public void connectorTest() {
         // TODO: test connector
     }
 
@@ -48,7 +50,7 @@ class SessionTokenOneOf3Test {
      * Test the property 'sessionToken'
      */
     @Test
-    void sessionTokenTest() {
+    public void sessionTokenTest() {
         // TODO: test sessionToken
     }
 
@@ -56,7 +58,7 @@ class SessionTokenOneOf3Test {
      * Test the property 'sdkNextAction'
      */
     @Test
-    void sdkNextActionTest() {
+    public void sdkNextActionTest() {
         // TODO: test sdkNextAction
     }
 
@@ -64,7 +66,7 @@ class SessionTokenOneOf3Test {
      * Test the property 'walletName'
      */
     @Test
-    void walletNameTest() {
+    public void walletNameTest() {
         // TODO: test walletName
     }
 

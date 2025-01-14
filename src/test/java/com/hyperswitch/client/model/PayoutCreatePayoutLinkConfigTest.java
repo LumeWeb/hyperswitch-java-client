@@ -26,20 +26,22 @@ import org.openapitools.jackson.nullable.JsonNullable;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.openapitools.jackson.nullable.JsonNullable;
 import java.util.NoSuchElementException;
-import org.junit.jupiter.api.Test;
+import org.junit.Assert;
+import org.junit.Ignore;
+import org.junit.Test;
 
 
 /**
  * Model tests for PayoutCreatePayoutLinkConfig
  */
-class PayoutCreatePayoutLinkConfigTest {
+public class PayoutCreatePayoutLinkConfigTest {
     private final PayoutCreatePayoutLinkConfig model = new PayoutCreatePayoutLinkConfig();
 
     /**
      * Model tests for PayoutCreatePayoutLinkConfig
      */
     @Test
-    void testPayoutCreatePayoutLinkConfig() {
+    public void testPayoutCreatePayoutLinkConfig() {
         // TODO: test PayoutCreatePayoutLinkConfig
     }
 
@@ -47,7 +49,7 @@ class PayoutCreatePayoutLinkConfigTest {
      * Test the property 'payoutLinkId'
      */
     @Test
-    void payoutLinkIdTest() {
+    public void payoutLinkIdTest() {
         // TODO: test payoutLinkId
     }
 
@@ -55,7 +57,7 @@ class PayoutCreatePayoutLinkConfigTest {
      * Test the property 'enabledPaymentMethods'
      */
     @Test
-    void enabledPaymentMethodsTest() {
+    public void enabledPaymentMethodsTest() {
         // TODO: test enabledPaymentMethods
     }
 
@@ -63,7 +65,7 @@ class PayoutCreatePayoutLinkConfigTest {
      * Test the property 'formLayout'
      */
     @Test
-    void formLayoutTest() {
+    public void formLayoutTest() {
         // TODO: test formLayout
     }
 
@@ -71,7 +73,7 @@ class PayoutCreatePayoutLinkConfigTest {
      * Test the property 'testMode'
      */
     @Test
-    void testModeTest() {
+    public void testModeTest() {
         // TODO: test testMode
     }
 
@@ -79,7 +81,7 @@ class PayoutCreatePayoutLinkConfigTest {
      * Test the property 'logo'
      */
     @Test
-    void logoTest() {
+    public void logoTest() {
         // TODO: test logo
     }
 
@@ -87,7 +89,7 @@ class PayoutCreatePayoutLinkConfigTest {
      * Test the property 'merchantName'
      */
     @Test
-    void merchantNameTest() {
+    public void merchantNameTest() {
         // TODO: test merchantName
     }
 
@@ -95,7 +97,7 @@ class PayoutCreatePayoutLinkConfigTest {
      * Test the property 'theme'
      */
     @Test
-    void themeTest() {
+    public void themeTest() {
         // TODO: test theme
     }
 

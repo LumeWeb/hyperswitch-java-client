@@ -33,6 +33,9 @@ import com.hyperswitch.client.model.PayLaterDataOneOf7;
 import com.hyperswitch.client.model.PayLaterDataOneOfKlarnaRedirect;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 import com.fasterxml.jackson.annotation.JsonTypeName;
+import java.io.UnsupportedEncodingException;
+import java.net.URLEncoder;
+import java.util.StringJoiner;
 
 /**
  * PayLaterData
@@ -332,6 +335,106 @@ public class PayLaterData {
       return "null";
     }
     return o.toString().replace("\n", "\n    ");
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @return URL query string
+   */
+  public String toUrlQueryString() {
+    return toUrlQueryString(null);
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @param prefix prefix of the query string
+   * @return URL query string
+   */
+  public String toUrlQueryString(String prefix) {
+    String suffix = "";
+    String containerSuffix = "";
+    String containerPrefix = "";
+    if (prefix == null) {
+      // style=form, explode=true, e.g. /pet?name=cat&type=manx
+      prefix = "";
+    } else {
+      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+      prefix = prefix + "[";
+      suffix = "]";
+      containerSuffix = "]";
+      containerPrefix = "[";
+    }
+
+    StringJoiner joiner = new StringJoiner("&");
+
+    // add `klarna_redirect` to the URL query string
+    if (getKlarnaRedirect() != null) {
+      joiner.add(getKlarnaRedirect().toUrlQueryString(prefix + "klarna_redirect" + suffix));
+    }
+
+    // add `klarna_sdk` to the URL query string
+    if (getKlarnaSdk() != null) {
+      joiner.add(getKlarnaSdk().toUrlQueryString(prefix + "klarna_sdk" + suffix));
+    }
+
+    // add `affirm_redirect` to the URL query string
+    if (getAffirmRedirect() != null) {
+      try {
+        joiner.add(String.format("%saffirm_redirect%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getAffirmRedirect()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `afterpay_clearpay_redirect` to the URL query string
+    if (getAfterpayClearpayRedirect() != null) {
+      joiner.add(getAfterpayClearpayRedirect().toUrlQueryString(prefix + "afterpay_clearpay_redirect" + suffix));
+    }
+
+    // add `pay_bright_redirect` to the URL query string
+    if (getPayBrightRedirect() != null) {
+      try {
+        joiner.add(String.format("%spay_bright_redirect%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getPayBrightRedirect()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `walley_redirect` to the URL query string
+    if (getWalleyRedirect() != null) {
+      try {
+        joiner.add(String.format("%swalley_redirect%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getWalleyRedirect()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `alma_redirect` to the URL query string
+    if (getAlmaRedirect() != null) {
+      try {
+        joiner.add(String.format("%salma_redirect%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getAlmaRedirect()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `atome_redirect` to the URL query string
+    if (getAtomeRedirect() != null) {
+      try {
+        joiner.add(String.format("%satome_redirect%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getAtomeRedirect()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    return joiner.toString();
   }
 
 }

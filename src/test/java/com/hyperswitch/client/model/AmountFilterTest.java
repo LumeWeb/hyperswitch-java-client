@@ -22,20 +22,22 @@ import org.openapitools.jackson.nullable.JsonNullable;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.openapitools.jackson.nullable.JsonNullable;
 import java.util.NoSuchElementException;
-import org.junit.jupiter.api.Test;
+import org.junit.Assert;
+import org.junit.Ignore;
+import org.junit.Test;
 
 
 /**
  * Model tests for AmountFilter
  */
-class AmountFilterTest {
+public class AmountFilterTest {
     private final AmountFilter model = new AmountFilter();
 
     /**
      * Model tests for AmountFilter
      */
     @Test
-    void testAmountFilter() {
+    public void testAmountFilter() {
         // TODO: test AmountFilter
     }
 
@@ -43,7 +45,7 @@ class AmountFilterTest {
      * Test the property 'startAmount'
      */
     @Test
-    void startAmountTest() {
+    public void startAmountTest() {
         // TODO: test startAmount
     }
 
@@ -51,7 +53,7 @@ class AmountFilterTest {
      * Test the property 'endAmount'
      */
     @Test
-    void endAmountTest() {
+    public void endAmountTest() {
         // TODO: test endAmount
     }
 

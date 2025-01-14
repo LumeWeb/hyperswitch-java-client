@@ -23,20 +23,22 @@ import com.hyperswitch.client.model.SamsungPayMerchantPaymentInformation;
 import com.hyperswitch.client.model.SamsungPayProtocolType;
 import java.util.ArrayList;
 import java.util.List;
-import org.junit.jupiter.api.Test;
+import org.junit.Assert;
+import org.junit.Ignore;
+import org.junit.Test;
 
 
 /**
  * Model tests for SamsungPaySessionTokenResponse
  */
-class SamsungPaySessionTokenResponseTest {
+public class SamsungPaySessionTokenResponseTest {
     private final SamsungPaySessionTokenResponse model = new SamsungPaySessionTokenResponse();
 
     /**
      * Model tests for SamsungPaySessionTokenResponse
      */
     @Test
-    void testSamsungPaySessionTokenResponse() {
+    public void testSamsungPaySessionTokenResponse() {
         // TODO: test SamsungPaySessionTokenResponse
     }
 
@@ -44,7 +46,7 @@ class SamsungPaySessionTokenResponseTest {
      * Test the property 'version'
      */
     @Test
-    void versionTest() {
+    public void versionTest() {
         // TODO: test version
     }
 
@@ -52,7 +54,7 @@ class SamsungPaySessionTokenResponseTest {
      * Test the property 'serviceId'
      */
     @Test
-    void serviceIdTest() {
+    public void serviceIdTest() {
         // TODO: test serviceId
     }
 
@@ -60,7 +62,7 @@ class SamsungPaySessionTokenResponseTest {
      * Test the property 'orderNumber'
      */
     @Test
-    void orderNumberTest() {
+    public void orderNumberTest() {
         // TODO: test orderNumber
     }
 
@@ -68,7 +70,7 @@ class SamsungPaySessionTokenResponseTest {
      * Test the property 'merchant'
      */
     @Test
-    void merchantTest() {
+    public void merchantTest() {
         // TODO: test merchant
     }
 
@@ -76,7 +78,7 @@ class SamsungPaySessionTokenResponseTest {
      * Test the property 'amount'
      */
     @Test
-    void amountTest() {
+    public void amountTest() {
         // TODO: test amount
     }
 
@@ -84,7 +86,7 @@ class SamsungPaySessionTokenResponseTest {
      * Test the property 'protocol'
      */
     @Test
-    void protocolTest() {
+    public void protocolTest() {
         // TODO: test protocol
     }
 
@@ -92,7 +94,7 @@ class SamsungPaySessionTokenResponseTest {
      * Test the property 'allowedBrands'
      */
     @Test
-    void allowedBrandsTest() {
+    public void allowedBrandsTest() {
         // TODO: test allowedBrands
     }
 

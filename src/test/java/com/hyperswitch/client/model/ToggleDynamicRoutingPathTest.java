@@ -18,20 +18,22 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonTypeName;
 import com.fasterxml.jackson.annotation.JsonValue;
-import org.junit.jupiter.api.Test;
+import org.junit.Assert;
+import org.junit.Ignore;
+import org.junit.Test;
 
 
 /**
  * Model tests for ToggleDynamicRoutingPath
  */
-class ToggleDynamicRoutingPathTest {
+public class ToggleDynamicRoutingPathTest {
     private final ToggleDynamicRoutingPath model = new ToggleDynamicRoutingPath();
 
     /**
      * Model tests for ToggleDynamicRoutingPath
      */
     @Test
-    void testToggleDynamicRoutingPath() {
+    public void testToggleDynamicRoutingPath() {
         // TODO: test ToggleDynamicRoutingPath
     }
 
@@ -39,7 +41,7 @@ class ToggleDynamicRoutingPathTest {
      * Test the property 'profileId'
      */
     @Test
-    void profileIdTest() {
+    public void profileIdTest() {
         // TODO: test profileId
     }
 

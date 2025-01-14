@@ -31,6 +31,9 @@ import org.openapitools.jackson.nullable.JsonNullable;
 import java.util.NoSuchElementException;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 import com.fasterxml.jackson.annotation.JsonTypeName;
+import java.io.UnsupportedEncodingException;
+import java.net.URLEncoder;
+import java.util.StringJoiner;
 
 /**
  * Configure a custom payment link for the particular payment
@@ -537,6 +540,146 @@ public class PaymentCreatePaymentLinkConfig {
       return "null";
     }
     return o.toString().replace("\n", "\n    ");
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @return URL query string
+   */
+  public String toUrlQueryString() {
+    return toUrlQueryString(null);
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @param prefix prefix of the query string
+   * @return URL query string
+   */
+  public String toUrlQueryString(String prefix) {
+    String suffix = "";
+    String containerSuffix = "";
+    String containerPrefix = "";
+    if (prefix == null) {
+      // style=form, explode=true, e.g. /pet?name=cat&type=manx
+      prefix = "";
+    } else {
+      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+      prefix = prefix + "[";
+      suffix = "]";
+      containerSuffix = "]";
+      containerPrefix = "[";
+    }
+
+    StringJoiner joiner = new StringJoiner("&");
+
+    // add `theme` to the URL query string
+    if (getTheme() != null) {
+      try {
+        joiner.add(String.format("%stheme%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getTheme()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `logo` to the URL query string
+    if (getLogo() != null) {
+      try {
+        joiner.add(String.format("%slogo%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getLogo()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `seller_name` to the URL query string
+    if (getSellerName() != null) {
+      try {
+        joiner.add(String.format("%sseller_name%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getSellerName()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `sdk_layout` to the URL query string
+    if (getSdkLayout() != null) {
+      try {
+        joiner.add(String.format("%ssdk_layout%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getSdkLayout()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `display_sdk_only` to the URL query string
+    if (getDisplaySdkOnly() != null) {
+      try {
+        joiner.add(String.format("%sdisplay_sdk_only%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getDisplaySdkOnly()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `enabled_saved_payment_method` to the URL query string
+    if (getEnabledSavedPaymentMethod() != null) {
+      try {
+        joiner.add(String.format("%senabled_saved_payment_method%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getEnabledSavedPaymentMethod()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `hide_card_nickname_field` to the URL query string
+    if (getHideCardNicknameField() != null) {
+      try {
+        joiner.add(String.format("%shide_card_nickname_field%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getHideCardNicknameField()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `show_card_form_by_default` to the URL query string
+    if (getShowCardFormByDefault() != null) {
+      try {
+        joiner.add(String.format("%sshow_card_form_by_default%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getShowCardFormByDefault()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `transaction_details` to the URL query string
+    if (getTransactionDetails() != null) {
+      for (int i = 0; i < getTransactionDetails().size(); i++) {
+        if (getTransactionDetails().get(i) != null) {
+          joiner.add(getTransactionDetails().get(i).toUrlQueryString(String.format("%stransaction_details%s%s", prefix, suffix,
+              "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix))));
+        }
+      }
+    }
+
+    // add `background_image` to the URL query string
+    if (getBackgroundImage() != null) {
+      joiner.add(getBackgroundImage().toUrlQueryString(prefix + "background_image" + suffix));
+    }
+
+    // add `details_layout` to the URL query string
+    if (getDetailsLayout() != null) {
+      try {
+        joiner.add(String.format("%sdetails_layout%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getDetailsLayout()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    return joiner.toString();
   }
 
 }

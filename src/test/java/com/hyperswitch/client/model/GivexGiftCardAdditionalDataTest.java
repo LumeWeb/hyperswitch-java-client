@@ -18,20 +18,22 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonTypeName;
 import com.fasterxml.jackson.annotation.JsonValue;
-import org.junit.jupiter.api.Test;
+import org.junit.Assert;
+import org.junit.Ignore;
+import org.junit.Test;
 
 
 /**
  * Model tests for GivexGiftCardAdditionalData
  */
-class GivexGiftCardAdditionalDataTest {
+public class GivexGiftCardAdditionalDataTest {
     private final GivexGiftCardAdditionalData model = new GivexGiftCardAdditionalData();
 
     /**
      * Model tests for GivexGiftCardAdditionalData
      */
     @Test
-    void testGivexGiftCardAdditionalData() {
+    public void testGivexGiftCardAdditionalData() {
         // TODO: test GivexGiftCardAdditionalData
     }
 
@@ -39,7 +41,7 @@ class GivexGiftCardAdditionalDataTest {
      * Test the property 'last4'
      */
     @Test
-    void last4Test() {
+    public void last4Test() {
         // TODO: test last4
     }
 

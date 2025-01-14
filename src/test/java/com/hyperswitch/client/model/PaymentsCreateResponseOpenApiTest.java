@@ -54,20 +54,22 @@ import org.openapitools.jackson.nullable.JsonNullable;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.openapitools.jackson.nullable.JsonNullable;
 import java.util.NoSuchElementException;
-import org.junit.jupiter.api.Test;
+import org.junit.Assert;
+import org.junit.Ignore;
+import org.junit.Test;
 
 
 /**
  * Model tests for PaymentsCreateResponseOpenApi
  */
-class PaymentsCreateResponseOpenApiTest {
+public class PaymentsCreateResponseOpenApiTest {
     private final PaymentsCreateResponseOpenApi model = new PaymentsCreateResponseOpenApi();
 
     /**
      * Model tests for PaymentsCreateResponseOpenApi
      */
     @Test
-    void testPaymentsCreateResponseOpenApi() {
+    public void testPaymentsCreateResponseOpenApi() {
         // TODO: test PaymentsCreateResponseOpenApi
     }
 
@@ -75,7 +77,7 @@ class PaymentsCreateResponseOpenApiTest {
      * Test the property 'paymentId'
      */
     @Test
-    void paymentIdTest() {
+    public void paymentIdTest() {
         // TODO: test paymentId
     }
 
@@ -83,7 +85,7 @@ class PaymentsCreateResponseOpenApiTest {
      * Test the property 'merchantId'
      */
     @Test
-    void merchantIdTest() {
+    public void merchantIdTest() {
         // TODO: test merchantId
     }
 
@@ -91,7 +93,7 @@ class PaymentsCreateResponseOpenApiTest {
      * Test the property 'status'
      */
     @Test
-    void statusTest() {
+    public void statusTest() {
         // TODO: test status
     }
 
@@ -99,7 +101,7 @@ class PaymentsCreateResponseOpenApiTest {
      * Test the property 'amount'
      */
     @Test
-    void amountTest() {
+    public void amountTest() {
         // TODO: test amount
     }
 
@@ -107,7 +109,7 @@ class PaymentsCreateResponseOpenApiTest {
      * Test the property 'netAmount'
      */
     @Test
-    void netAmountTest() {
+    public void netAmountTest() {
         // TODO: test netAmount
     }
 
@@ -115,7 +117,7 @@ class PaymentsCreateResponseOpenApiTest {
      * Test the property 'shippingCost'
      */
     @Test
-    void shippingCostTest() {
+    public void shippingCostTest() {
         // TODO: test shippingCost
     }
 
@@ -123,7 +125,7 @@ class PaymentsCreateResponseOpenApiTest {
      * Test the property 'amountCapturable'
      */
     @Test
-    void amountCapturableTest() {
+    public void amountCapturableTest() {
         // TODO: test amountCapturable
     }
 
@@ -131,7 +133,7 @@ class PaymentsCreateResponseOpenApiTest {
      * Test the property 'amountReceived'
      */
     @Test
-    void amountReceivedTest() {
+    public void amountReceivedTest() {
         // TODO: test amountReceived
     }
 
@@ -139,7 +141,7 @@ class PaymentsCreateResponseOpenApiTest {
      * Test the property 'connector'
      */
     @Test
-    void connectorTest() {
+    public void connectorTest() {
         // TODO: test connector
     }
 
@@ -147,7 +149,7 @@ class PaymentsCreateResponseOpenApiTest {
      * Test the property 'clientSecret'
      */
     @Test
-    void clientSecretTest() {
+    public void clientSecretTest() {
         // TODO: test clientSecret
     }
 
@@ -155,7 +157,7 @@ class PaymentsCreateResponseOpenApiTest {
      * Test the property 'created'
      */
     @Test
-    void createdTest() {
+    public void createdTest() {
         // TODO: test created
     }
 
@@ -163,7 +165,7 @@ class PaymentsCreateResponseOpenApiTest {
      * Test the property 'currency'
      */
     @Test
-    void currencyTest() {
+    public void currencyTest() {
         // TODO: test currency
     }
 
@@ -171,7 +173,7 @@ class PaymentsCreateResponseOpenApiTest {
      * Test the property 'customerId'
      */
     @Test
-    void customerIdTest() {
+    public void customerIdTest() {
         // TODO: test customerId
     }
 
@@ -179,7 +181,7 @@ class PaymentsCreateResponseOpenApiTest {
      * Test the property 'description'
      */
     @Test
-    void descriptionTest() {
+    public void descriptionTest() {
         // TODO: test description
     }
 
@@ -187,7 +189,7 @@ class PaymentsCreateResponseOpenApiTest {
      * Test the property 'refunds'
      */
     @Test
-    void refundsTest() {
+    public void refundsTest() {
         // TODO: test refunds
     }
 
@@ -195,7 +197,7 @@ class PaymentsCreateResponseOpenApiTest {
      * Test the property 'disputes'
      */
     @Test
-    void disputesTest() {
+    public void disputesTest() {
         // TODO: test disputes
     }
 
@@ -203,7 +205,7 @@ class PaymentsCreateResponseOpenApiTest {
      * Test the property 'attempts'
      */
     @Test
-    void attemptsTest() {
+    public void attemptsTest() {
         // TODO: test attempts
     }
 
@@ -211,7 +213,7 @@ class PaymentsCreateResponseOpenApiTest {
      * Test the property 'captures'
      */
     @Test
-    void capturesTest() {
+    public void capturesTest() {
         // TODO: test captures
     }
 
@@ -219,7 +221,7 @@ class PaymentsCreateResponseOpenApiTest {
      * Test the property 'mandateId'
      */
     @Test
-    void mandateIdTest() {
+    public void mandateIdTest() {
         // TODO: test mandateId
     }
 
@@ -227,7 +229,7 @@ class PaymentsCreateResponseOpenApiTest {
      * Test the property 'mandateData'
      */
     @Test
-    void mandateDataTest() {
+    public void mandateDataTest() {
         // TODO: test mandateData
     }
 
@@ -235,7 +237,7 @@ class PaymentsCreateResponseOpenApiTest {
      * Test the property 'setupFutureUsage'
      */
     @Test
-    void setupFutureUsageTest() {
+    public void setupFutureUsageTest() {
         // TODO: test setupFutureUsage
     }
 
@@ -243,7 +245,7 @@ class PaymentsCreateResponseOpenApiTest {
      * Test the property 'offSession'
      */
     @Test
-    void offSessionTest() {
+    public void offSessionTest() {
         // TODO: test offSession
     }
 
@@ -251,7 +253,7 @@ class PaymentsCreateResponseOpenApiTest {
      * Test the property 'captureMethod'
      */
     @Test
-    void captureMethodTest() {
+    public void captureMethodTest() {
         // TODO: test captureMethod
     }
 
@@ -259,7 +261,7 @@ class PaymentsCreateResponseOpenApiTest {
      * Test the property 'paymentMethod'
      */
     @Test
-    void paymentMethodTest() {
+    public void paymentMethodTest() {
         // TODO: test paymentMethod
     }
 
@@ -267,7 +269,7 @@ class PaymentsCreateResponseOpenApiTest {
      * Test the property 'paymentMethodData'
      */
     @Test
-    void paymentMethodDataTest() {
+    public void paymentMethodDataTest() {
         // TODO: test paymentMethodData
     }
 
@@ -275,7 +277,7 @@ class PaymentsCreateResponseOpenApiTest {
      * Test the property 'paymentToken'
      */
     @Test
-    void paymentTokenTest() {
+    public void paymentTokenTest() {
         // TODO: test paymentToken
     }
 
@@ -283,7 +285,7 @@ class PaymentsCreateResponseOpenApiTest {
      * Test the property 'shipping'
      */
     @Test
-    void shippingTest() {
+    public void shippingTest() {
         // TODO: test shipping
     }
 
@@ -291,7 +293,7 @@ class PaymentsCreateResponseOpenApiTest {
      * Test the property 'billing'
      */
     @Test
-    void billingTest() {
+    public void billingTest() {
         // TODO: test billing
     }
 
@@ -299,7 +301,7 @@ class PaymentsCreateResponseOpenApiTest {
      * Test the property 'orderDetails'
      */
     @Test
-    void orderDetailsTest() {
+    public void orderDetailsTest() {
         // TODO: test orderDetails
     }
 
@@ -307,7 +309,7 @@ class PaymentsCreateResponseOpenApiTest {
      * Test the property 'email'
      */
     @Test
-    void emailTest() {
+    public void emailTest() {
         // TODO: test email
     }
 
@@ -315,7 +317,7 @@ class PaymentsCreateResponseOpenApiTest {
      * Test the property 'name'
      */
     @Test
-    void nameTest() {
+    public void nameTest() {
         // TODO: test name
     }
 
@@ -323,7 +325,7 @@ class PaymentsCreateResponseOpenApiTest {
      * Test the property 'phone'
      */
     @Test
-    void phoneTest() {
+    public void phoneTest() {
         // TODO: test phone
     }
 
@@ -331,7 +333,7 @@ class PaymentsCreateResponseOpenApiTest {
      * Test the property 'returnUrl'
      */
     @Test
-    void returnUrlTest() {
+    public void returnUrlTest() {
         // TODO: test returnUrl
     }
 
@@ -339,7 +341,7 @@ class PaymentsCreateResponseOpenApiTest {
      * Test the property 'authenticationType'
      */
     @Test
-    void authenticationTypeTest() {
+    public void authenticationTypeTest() {
         // TODO: test authenticationType
     }
 
@@ -347,7 +349,7 @@ class PaymentsCreateResponseOpenApiTest {
      * Test the property 'statementDescriptorName'
      */
     @Test
-    void statementDescriptorNameTest() {
+    public void statementDescriptorNameTest() {
         // TODO: test statementDescriptorName
     }
 
@@ -355,7 +357,7 @@ class PaymentsCreateResponseOpenApiTest {
      * Test the property 'statementDescriptorSuffix'
      */
     @Test
-    void statementDescriptorSuffixTest() {
+    public void statementDescriptorSuffixTest() {
         // TODO: test statementDescriptorSuffix
     }
 
@@ -363,7 +365,7 @@ class PaymentsCreateResponseOpenApiTest {
      * Test the property 'nextAction'
      */
     @Test
-    void nextActionTest() {
+    public void nextActionTest() {
         // TODO: test nextAction
     }
 
@@ -371,7 +373,7 @@ class PaymentsCreateResponseOpenApiTest {
      * Test the property 'cancellationReason'
      */
     @Test
-    void cancellationReasonTest() {
+    public void cancellationReasonTest() {
         // TODO: test cancellationReason
     }
 
@@ -379,7 +381,7 @@ class PaymentsCreateResponseOpenApiTest {
      * Test the property 'errorCode'
      */
     @Test
-    void errorCodeTest() {
+    public void errorCodeTest() {
         // TODO: test errorCode
     }
 
@@ -387,7 +389,7 @@ class PaymentsCreateResponseOpenApiTest {
      * Test the property 'errorMessage'
      */
     @Test
-    void errorMessageTest() {
+    public void errorMessageTest() {
         // TODO: test errorMessage
     }
 
@@ -395,7 +397,7 @@ class PaymentsCreateResponseOpenApiTest {
      * Test the property 'paymentExperience'
      */
     @Test
-    void paymentExperienceTest() {
+    public void paymentExperienceTest() {
         // TODO: test paymentExperience
     }
 
@@ -403,7 +405,7 @@ class PaymentsCreateResponseOpenApiTest {
      * Test the property 'paymentMethodType'
      */
     @Test
-    void paymentMethodTypeTest() {
+    public void paymentMethodTypeTest() {
         // TODO: test paymentMethodType
     }
 
@@ -411,7 +413,7 @@ class PaymentsCreateResponseOpenApiTest {
      * Test the property 'connectorLabel'
      */
     @Test
-    void connectorLabelTest() {
+    public void connectorLabelTest() {
         // TODO: test connectorLabel
     }
 
@@ -419,7 +421,7 @@ class PaymentsCreateResponseOpenApiTest {
      * Test the property 'businessCountry'
      */
     @Test
-    void businessCountryTest() {
+    public void businessCountryTest() {
         // TODO: test businessCountry
     }
 
@@ -427,7 +429,7 @@ class PaymentsCreateResponseOpenApiTest {
      * Test the property 'businessLabel'
      */
     @Test
-    void businessLabelTest() {
+    public void businessLabelTest() {
         // TODO: test businessLabel
     }
 
@@ -435,7 +437,7 @@ class PaymentsCreateResponseOpenApiTest {
      * Test the property 'businessSubLabel'
      */
     @Test
-    void businessSubLabelTest() {
+    public void businessSubLabelTest() {
         // TODO: test businessSubLabel
     }
 
@@ -443,7 +445,7 @@ class PaymentsCreateResponseOpenApiTest {
      * Test the property 'allowedPaymentMethodTypes'
      */
     @Test
-    void allowedPaymentMethodTypesTest() {
+    public void allowedPaymentMethodTypesTest() {
         // TODO: test allowedPaymentMethodTypes
     }
 
@@ -451,7 +453,7 @@ class PaymentsCreateResponseOpenApiTest {
      * Test the property 'ephemeralKey'
      */
     @Test
-    void ephemeralKeyTest() {
+    public void ephemeralKeyTest() {
         // TODO: test ephemeralKey
     }
 
@@ -459,7 +461,7 @@ class PaymentsCreateResponseOpenApiTest {
      * Test the property 'manualRetryAllowed'
      */
     @Test
-    void manualRetryAllowedTest() {
+    public void manualRetryAllowedTest() {
         // TODO: test manualRetryAllowed
     }
 
@@ -467,7 +469,7 @@ class PaymentsCreateResponseOpenApiTest {
      * Test the property 'connectorTransactionId'
      */
     @Test
-    void connectorTransactionIdTest() {
+    public void connectorTransactionIdTest() {
         // TODO: test connectorTransactionId
     }
 
@@ -475,7 +477,7 @@ class PaymentsCreateResponseOpenApiTest {
      * Test the property 'frmMessage'
      */
     @Test
-    void frmMessageTest() {
+    public void frmMessageTest() {
         // TODO: test frmMessage
     }
 
@@ -483,7 +485,7 @@ class PaymentsCreateResponseOpenApiTest {
      * Test the property 'metadata'
      */
     @Test
-    void metadataTest() {
+    public void metadataTest() {
         // TODO: test metadata
     }
 
@@ -491,7 +493,7 @@ class PaymentsCreateResponseOpenApiTest {
      * Test the property 'connectorMetadata'
      */
     @Test
-    void connectorMetadataTest() {
+    public void connectorMetadataTest() {
         // TODO: test connectorMetadata
     }
 
@@ -499,7 +501,7 @@ class PaymentsCreateResponseOpenApiTest {
      * Test the property 'featureMetadata'
      */
     @Test
-    void featureMetadataTest() {
+    public void featureMetadataTest() {
         // TODO: test featureMetadata
     }
 
@@ -507,7 +509,7 @@ class PaymentsCreateResponseOpenApiTest {
      * Test the property 'referenceId'
      */
     @Test
-    void referenceIdTest() {
+    public void referenceIdTest() {
         // TODO: test referenceId
     }
 
@@ -515,7 +517,7 @@ class PaymentsCreateResponseOpenApiTest {
      * Test the property 'paymentLink'
      */
     @Test
-    void paymentLinkTest() {
+    public void paymentLinkTest() {
         // TODO: test paymentLink
     }
 
@@ -523,7 +525,7 @@ class PaymentsCreateResponseOpenApiTest {
      * Test the property 'profileId'
      */
     @Test
-    void profileIdTest() {
+    public void profileIdTest() {
         // TODO: test profileId
     }
 
@@ -531,7 +533,7 @@ class PaymentsCreateResponseOpenApiTest {
      * Test the property 'surchargeDetails'
      */
     @Test
-    void surchargeDetailsTest() {
+    public void surchargeDetailsTest() {
         // TODO: test surchargeDetails
     }
 
@@ -539,7 +541,7 @@ class PaymentsCreateResponseOpenApiTest {
      * Test the property 'attemptCount'
      */
     @Test
-    void attemptCountTest() {
+    public void attemptCountTest() {
         // TODO: test attemptCount
     }
 
@@ -547,7 +549,7 @@ class PaymentsCreateResponseOpenApiTest {
      * Test the property 'merchantDecision'
      */
     @Test
-    void merchantDecisionTest() {
+    public void merchantDecisionTest() {
         // TODO: test merchantDecision
     }
 
@@ -555,7 +557,7 @@ class PaymentsCreateResponseOpenApiTest {
      * Test the property 'merchantConnectorId'
      */
     @Test
-    void merchantConnectorIdTest() {
+    public void merchantConnectorIdTest() {
         // TODO: test merchantConnectorId
     }
 
@@ -563,7 +565,7 @@ class PaymentsCreateResponseOpenApiTest {
      * Test the property 'incrementalAuthorizationAllowed'
      */
     @Test
-    void incrementalAuthorizationAllowedTest() {
+    public void incrementalAuthorizationAllowedTest() {
         // TODO: test incrementalAuthorizationAllowed
     }
 
@@ -571,7 +573,7 @@ class PaymentsCreateResponseOpenApiTest {
      * Test the property 'authorizationCount'
      */
     @Test
-    void authorizationCountTest() {
+    public void authorizationCountTest() {
         // TODO: test authorizationCount
     }
 
@@ -579,7 +581,7 @@ class PaymentsCreateResponseOpenApiTest {
      * Test the property 'incrementalAuthorizations'
      */
     @Test
-    void incrementalAuthorizationsTest() {
+    public void incrementalAuthorizationsTest() {
         // TODO: test incrementalAuthorizations
     }
 
@@ -587,7 +589,7 @@ class PaymentsCreateResponseOpenApiTest {
      * Test the property 'externalAuthenticationDetails'
      */
     @Test
-    void externalAuthenticationDetailsTest() {
+    public void externalAuthenticationDetailsTest() {
         // TODO: test externalAuthenticationDetails
     }
 
@@ -595,7 +597,7 @@ class PaymentsCreateResponseOpenApiTest {
      * Test the property 'external3dsAuthenticationAttempted'
      */
     @Test
-    void external3dsAuthenticationAttemptedTest() {
+    public void external3dsAuthenticationAttemptedTest() {
         // TODO: test external3dsAuthenticationAttempted
     }
 
@@ -603,7 +605,7 @@ class PaymentsCreateResponseOpenApiTest {
      * Test the property 'expiresOn'
      */
     @Test
-    void expiresOnTest() {
+    public void expiresOnTest() {
         // TODO: test expiresOn
     }
 
@@ -611,7 +613,7 @@ class PaymentsCreateResponseOpenApiTest {
      * Test the property 'fingerprint'
      */
     @Test
-    void fingerprintTest() {
+    public void fingerprintTest() {
         // TODO: test fingerprint
     }
 
@@ -619,7 +621,7 @@ class PaymentsCreateResponseOpenApiTest {
      * Test the property 'browserInfo'
      */
     @Test
-    void browserInfoTest() {
+    public void browserInfoTest() {
         // TODO: test browserInfo
     }
 
@@ -627,7 +629,7 @@ class PaymentsCreateResponseOpenApiTest {
      * Test the property 'paymentMethodId'
      */
     @Test
-    void paymentMethodIdTest() {
+    public void paymentMethodIdTest() {
         // TODO: test paymentMethodId
     }
 
@@ -635,7 +637,7 @@ class PaymentsCreateResponseOpenApiTest {
      * Test the property 'paymentMethodStatus'
      */
     @Test
-    void paymentMethodStatusTest() {
+    public void paymentMethodStatusTest() {
         // TODO: test paymentMethodStatus
     }
 
@@ -643,7 +645,7 @@ class PaymentsCreateResponseOpenApiTest {
      * Test the property 'updated'
      */
     @Test
-    void updatedTest() {
+    public void updatedTest() {
         // TODO: test updated
     }
 
@@ -651,7 +653,7 @@ class PaymentsCreateResponseOpenApiTest {
      * Test the property 'charges'
      */
     @Test
-    void chargesTest() {
+    public void chargesTest() {
         // TODO: test charges
     }
 
@@ -659,7 +661,7 @@ class PaymentsCreateResponseOpenApiTest {
      * Test the property 'frmMetadata'
      */
     @Test
-    void frmMetadataTest() {
+    public void frmMetadataTest() {
         // TODO: test frmMetadata
     }
 
@@ -667,7 +669,7 @@ class PaymentsCreateResponseOpenApiTest {
      * Test the property 'merchantOrderReferenceId'
      */
     @Test
-    void merchantOrderReferenceIdTest() {
+    public void merchantOrderReferenceIdTest() {
         // TODO: test merchantOrderReferenceId
     }
 
@@ -675,7 +677,7 @@ class PaymentsCreateResponseOpenApiTest {
      * Test the property 'orderTaxAmount'
      */
     @Test
-    void orderTaxAmountTest() {
+    public void orderTaxAmountTest() {
         // TODO: test orderTaxAmount
     }
 
@@ -683,7 +685,7 @@ class PaymentsCreateResponseOpenApiTest {
      * Test the property 'connectorMandateId'
      */
     @Test
-    void connectorMandateIdTest() {
+    public void connectorMandateIdTest() {
         // TODO: test connectorMandateId
     }
 

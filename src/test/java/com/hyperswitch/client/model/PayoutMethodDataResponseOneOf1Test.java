@@ -19,20 +19,22 @@ import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonTypeName;
 import com.fasterxml.jackson.annotation.JsonValue;
 import com.hyperswitch.client.model.BankAdditionalData;
-import org.junit.jupiter.api.Test;
+import org.junit.Assert;
+import org.junit.Ignore;
+import org.junit.Test;
 
 
 /**
  * Model tests for PayoutMethodDataResponseOneOf1
  */
-class PayoutMethodDataResponseOneOf1Test {
+public class PayoutMethodDataResponseOneOf1Test {
     private final PayoutMethodDataResponseOneOf1 model = new PayoutMethodDataResponseOneOf1();
 
     /**
      * Model tests for PayoutMethodDataResponseOneOf1
      */
     @Test
-    void testPayoutMethodDataResponseOneOf1() {
+    public void testPayoutMethodDataResponseOneOf1() {
         // TODO: test PayoutMethodDataResponseOneOf1
     }
 
@@ -40,7 +42,7 @@ class PayoutMethodDataResponseOneOf1Test {
      * Test the property 'bank'
      */
     @Test
-    void bankTest() {
+    public void bankTest() {
         // TODO: test bank
     }
 

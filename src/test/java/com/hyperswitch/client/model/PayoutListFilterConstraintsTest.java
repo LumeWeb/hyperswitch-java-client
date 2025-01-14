@@ -30,20 +30,22 @@ import org.openapitools.jackson.nullable.JsonNullable;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.openapitools.jackson.nullable.JsonNullable;
 import java.util.NoSuchElementException;
-import org.junit.jupiter.api.Test;
+import org.junit.Assert;
+import org.junit.Ignore;
+import org.junit.Test;
 
 
 /**
  * Model tests for PayoutListFilterConstraints
  */
-class PayoutListFilterConstraintsTest {
+public class PayoutListFilterConstraintsTest {
     private final PayoutListFilterConstraints model = new PayoutListFilterConstraints();
 
     /**
      * Model tests for PayoutListFilterConstraints
      */
     @Test
-    void testPayoutListFilterConstraints() {
+    public void testPayoutListFilterConstraints() {
         // TODO: test PayoutListFilterConstraints
     }
 
@@ -51,7 +53,7 @@ class PayoutListFilterConstraintsTest {
      * Test the property 'payoutId'
      */
     @Test
-    void payoutIdTest() {
+    public void payoutIdTest() {
         // TODO: test payoutId
     }
 
@@ -59,7 +61,7 @@ class PayoutListFilterConstraintsTest {
      * Test the property 'profileId'
      */
     @Test
-    void profileIdTest() {
+    public void profileIdTest() {
         // TODO: test profileId
     }
 
@@ -67,7 +69,7 @@ class PayoutListFilterConstraintsTest {
      * Test the property 'customerId'
      */
     @Test
-    void customerIdTest() {
+    public void customerIdTest() {
         // TODO: test customerId
     }
 
@@ -75,7 +77,7 @@ class PayoutListFilterConstraintsTest {
      * Test the property 'limit'
      */
     @Test
-    void limitTest() {
+    public void limitTest() {
         // TODO: test limit
     }
 
@@ -83,7 +85,7 @@ class PayoutListFilterConstraintsTest {
      * Test the property 'offset'
      */
     @Test
-    void offsetTest() {
+    public void offsetTest() {
         // TODO: test offset
     }
 
@@ -91,7 +93,7 @@ class PayoutListFilterConstraintsTest {
      * Test the property 'connector'
      */
     @Test
-    void connectorTest() {
+    public void connectorTest() {
         // TODO: test connector
     }
 
@@ -99,7 +101,7 @@ class PayoutListFilterConstraintsTest {
      * Test the property 'currency'
      */
     @Test
-    void currencyTest() {
+    public void currencyTest() {
         // TODO: test currency
     }
 
@@ -107,7 +109,7 @@ class PayoutListFilterConstraintsTest {
      * Test the property 'status'
      */
     @Test
-    void statusTest() {
+    public void statusTest() {
         // TODO: test status
     }
 
@@ -115,7 +117,7 @@ class PayoutListFilterConstraintsTest {
      * Test the property 'payoutMethod'
      */
     @Test
-    void payoutMethodTest() {
+    public void payoutMethodTest() {
         // TODO: test payoutMethod
     }
 
@@ -123,7 +125,7 @@ class PayoutListFilterConstraintsTest {
      * Test the property 'entityType'
      */
     @Test
-    void entityTypeTest() {
+    public void entityTypeTest() {
         // TODO: test entityType
     }
 
@@ -131,7 +133,7 @@ class PayoutListFilterConstraintsTest {
      * Test the property 'startTime'
      */
     @Test
-    void startTimeTest() {
+    public void startTimeTest() {
         // TODO: test startTime
     }
 
@@ -139,7 +141,7 @@ class PayoutListFilterConstraintsTest {
      * Test the property 'endTime'
      */
     @Test
-    void endTimeTest() {
+    public void endTimeTest() {
         // TODO: test endTime
     }
 

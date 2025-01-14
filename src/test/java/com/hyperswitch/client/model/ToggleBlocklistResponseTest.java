@@ -18,20 +18,22 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonTypeName;
 import com.fasterxml.jackson.annotation.JsonValue;
-import org.junit.jupiter.api.Test;
+import org.junit.Assert;
+import org.junit.Ignore;
+import org.junit.Test;
 
 
 /**
  * Model tests for ToggleBlocklistResponse
  */
-class ToggleBlocklistResponseTest {
+public class ToggleBlocklistResponseTest {
     private final ToggleBlocklistResponse model = new ToggleBlocklistResponse();
 
     /**
      * Model tests for ToggleBlocklistResponse
      */
     @Test
-    void testToggleBlocklistResponse() {
+    public void testToggleBlocklistResponse() {
         // TODO: test ToggleBlocklistResponse
     }
 
@@ -39,7 +41,7 @@ class ToggleBlocklistResponseTest {
      * Test the property 'blocklistGuardStatus'
      */
     @Test
-    void blocklistGuardStatusTest() {
+    public void blocklistGuardStatusTest() {
         // TODO: test blocklistGuardStatus
     }
 

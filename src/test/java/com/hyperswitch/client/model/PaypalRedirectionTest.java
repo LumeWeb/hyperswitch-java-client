@@ -22,20 +22,22 @@ import org.openapitools.jackson.nullable.JsonNullable;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.openapitools.jackson.nullable.JsonNullable;
 import java.util.NoSuchElementException;
-import org.junit.jupiter.api.Test;
+import org.junit.Assert;
+import org.junit.Ignore;
+import org.junit.Test;
 
 
 /**
  * Model tests for PaypalRedirection
  */
-class PaypalRedirectionTest {
+public class PaypalRedirectionTest {
     private final PaypalRedirection model = new PaypalRedirection();
 
     /**
      * Model tests for PaypalRedirection
      */
     @Test
-    void testPaypalRedirection() {
+    public void testPaypalRedirection() {
         // TODO: test PaypalRedirection
     }
 
@@ -43,7 +45,7 @@ class PaypalRedirectionTest {
      * Test the property 'email'
      */
     @Test
-    void emailTest() {
+    public void emailTest() {
         // TODO: test email
     }
 

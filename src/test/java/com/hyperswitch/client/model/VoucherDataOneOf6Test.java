@@ -19,20 +19,22 @@ import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonTypeName;
 import com.fasterxml.jackson.annotation.JsonValue;
 import com.hyperswitch.client.model.JCSVoucherData;
-import org.junit.jupiter.api.Test;
+import org.junit.Assert;
+import org.junit.Ignore;
+import org.junit.Test;
 
 
 /**
  * Model tests for VoucherDataOneOf6
  */
-class VoucherDataOneOf6Test {
+public class VoucherDataOneOf6Test {
     private final VoucherDataOneOf6 model = new VoucherDataOneOf6();
 
     /**
      * Model tests for VoucherDataOneOf6
      */
     @Test
-    void testVoucherDataOneOf6() {
+    public void testVoucherDataOneOf6() {
         // TODO: test VoucherDataOneOf6
     }
 
@@ -40,7 +42,7 @@ class VoucherDataOneOf6Test {
      * Test the property 'familyMart'
      */
     @Test
-    void familyMartTest() {
+    public void familyMartTest() {
         // TODO: test familyMart
     }
 

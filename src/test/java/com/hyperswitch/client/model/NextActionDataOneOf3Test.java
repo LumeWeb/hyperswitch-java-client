@@ -22,20 +22,22 @@ import org.openapitools.jackson.nullable.JsonNullable;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.openapitools.jackson.nullable.JsonNullable;
 import java.util.NoSuchElementException;
-import org.junit.jupiter.api.Test;
+import org.junit.Assert;
+import org.junit.Ignore;
+import org.junit.Test;
 
 
 /**
  * Model tests for NextActionDataOneOf3
  */
-class NextActionDataOneOf3Test {
+public class NextActionDataOneOf3Test {
     private final NextActionDataOneOf3 model = new NextActionDataOneOf3();
 
     /**
      * Model tests for NextActionDataOneOf3
      */
     @Test
-    void testNextActionDataOneOf3() {
+    public void testNextActionDataOneOf3() {
         // TODO: test NextActionDataOneOf3
     }
 
@@ -43,7 +45,7 @@ class NextActionDataOneOf3Test {
      * Test the property 'imageDataUrl'
      */
     @Test
-    void imageDataUrlTest() {
+    public void imageDataUrlTest() {
         // TODO: test imageDataUrl
     }
 
@@ -51,7 +53,7 @@ class NextActionDataOneOf3Test {
      * Test the property 'displayToTimestamp'
      */
     @Test
-    void displayToTimestampTest() {
+    public void displayToTimestampTest() {
         // TODO: test displayToTimestamp
     }
 
@@ -59,7 +61,7 @@ class NextActionDataOneOf3Test {
      * Test the property 'qrCodeUrl'
      */
     @Test
-    void qrCodeUrlTest() {
+    public void qrCodeUrlTest() {
         // TODO: test qrCodeUrl
     }
 
@@ -67,7 +69,7 @@ class NextActionDataOneOf3Test {
      * Test the property 'type'
      */
     @Test
-    void typeTest() {
+    public void typeTest() {
         // TODO: test type
     }
 

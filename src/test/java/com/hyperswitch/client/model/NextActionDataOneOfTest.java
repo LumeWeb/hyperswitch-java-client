@@ -18,20 +18,22 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonTypeName;
 import com.fasterxml.jackson.annotation.JsonValue;
-import org.junit.jupiter.api.Test;
+import org.junit.Assert;
+import org.junit.Ignore;
+import org.junit.Test;
 
 
 /**
  * Model tests for NextActionDataOneOf
  */
-class NextActionDataOneOfTest {
+public class NextActionDataOneOfTest {
     private final NextActionDataOneOf model = new NextActionDataOneOf();
 
     /**
      * Model tests for NextActionDataOneOf
      */
     @Test
-    void testNextActionDataOneOf() {
+    public void testNextActionDataOneOf() {
         // TODO: test NextActionDataOneOf
     }
 
@@ -39,7 +41,7 @@ class NextActionDataOneOfTest {
      * Test the property 'redirectToUrl'
      */
     @Test
-    void redirectToUrlTest() {
+    public void redirectToUrlTest() {
         // TODO: test redirectToUrl
     }
 
@@ -47,7 +49,7 @@ class NextActionDataOneOfTest {
      * Test the property 'type'
      */
     @Test
-    void typeTest() {
+    public void typeTest() {
         // TODO: test type
     }
 

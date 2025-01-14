@@ -23,6 +23,9 @@ import com.fasterxml.jackson.annotation.JsonValue;
 import com.hyperswitch.client.model.PayLaterDataOneOf1KlarnaSdk;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 import com.fasterxml.jackson.annotation.JsonTypeName;
+import java.io.UnsupportedEncodingException;
+import java.net.URLEncoder;
+import java.util.StringJoiner;
 
 /**
  * PayLaterDataOneOf1
@@ -99,6 +102,46 @@ public class PayLaterDataOneOf1 {
       return "null";
     }
     return o.toString().replace("\n", "\n    ");
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @return URL query string
+   */
+  public String toUrlQueryString() {
+    return toUrlQueryString(null);
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @param prefix prefix of the query string
+   * @return URL query string
+   */
+  public String toUrlQueryString(String prefix) {
+    String suffix = "";
+    String containerSuffix = "";
+    String containerPrefix = "";
+    if (prefix == null) {
+      // style=form, explode=true, e.g. /pet?name=cat&type=manx
+      prefix = "";
+    } else {
+      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+      prefix = prefix + "[";
+      suffix = "]";
+      containerSuffix = "]";
+      containerPrefix = "[";
+    }
+
+    StringJoiner joiner = new StringJoiner("&");
+
+    // add `klarna_sdk` to the URL query string
+    if (getKlarnaSdk() != null) {
+      joiner.add(getKlarnaSdk().toUrlQueryString(prefix + "klarna_sdk" + suffix));
+    }
+
+    return joiner.toString();
   }
 
 }

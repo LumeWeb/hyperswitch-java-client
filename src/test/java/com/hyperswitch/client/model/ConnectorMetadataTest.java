@@ -25,20 +25,22 @@ import org.openapitools.jackson.nullable.JsonNullable;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.openapitools.jackson.nullable.JsonNullable;
 import java.util.NoSuchElementException;
-import org.junit.jupiter.api.Test;
+import org.junit.Assert;
+import org.junit.Ignore;
+import org.junit.Test;
 
 
 /**
  * Model tests for ConnectorMetadata
  */
-class ConnectorMetadataTest {
+public class ConnectorMetadataTest {
     private final ConnectorMetadata model = new ConnectorMetadata();
 
     /**
      * Model tests for ConnectorMetadata
      */
     @Test
-    void testConnectorMetadata() {
+    public void testConnectorMetadata() {
         // TODO: test ConnectorMetadata
     }
 
@@ -46,7 +48,7 @@ class ConnectorMetadataTest {
      * Test the property 'applePay'
      */
     @Test
-    void applePayTest() {
+    public void applePayTest() {
         // TODO: test applePay
     }
 
@@ -54,7 +56,7 @@ class ConnectorMetadataTest {
      * Test the property 'airwallex'
      */
     @Test
-    void airwallexTest() {
+    public void airwallexTest() {
         // TODO: test airwallex
     }
 
@@ -62,7 +64,7 @@ class ConnectorMetadataTest {
      * Test the property 'noon'
      */
     @Test
-    void noonTest() {
+    public void noonTest() {
         // TODO: test noon
     }
 

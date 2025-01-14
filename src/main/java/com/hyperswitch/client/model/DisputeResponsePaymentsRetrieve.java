@@ -29,6 +29,9 @@ import org.openapitools.jackson.nullable.JsonNullable;
 import java.util.NoSuchElementException;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 import com.fasterxml.jackson.annotation.JsonTypeName;
+import java.io.UnsupportedEncodingException;
+import java.net.URLEncoder;
+import java.util.StringJoiner;
 
 /**
  * DisputeResponsePaymentsRetrieve
@@ -475,6 +478,151 @@ public class DisputeResponsePaymentsRetrieve {
       return "null";
     }
     return o.toString().replace("\n", "\n    ");
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @return URL query string
+   */
+  public String toUrlQueryString() {
+    return toUrlQueryString(null);
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @param prefix prefix of the query string
+   * @return URL query string
+   */
+  public String toUrlQueryString(String prefix) {
+    String suffix = "";
+    String containerSuffix = "";
+    String containerPrefix = "";
+    if (prefix == null) {
+      // style=form, explode=true, e.g. /pet?name=cat&type=manx
+      prefix = "";
+    } else {
+      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+      prefix = prefix + "[";
+      suffix = "]";
+      containerSuffix = "]";
+      containerPrefix = "[";
+    }
+
+    StringJoiner joiner = new StringJoiner("&");
+
+    // add `dispute_id` to the URL query string
+    if (getDisputeId() != null) {
+      try {
+        joiner.add(String.format("%sdispute_id%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getDisputeId()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `dispute_stage` to the URL query string
+    if (getDisputeStage() != null) {
+      try {
+        joiner.add(String.format("%sdispute_stage%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getDisputeStage()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `dispute_status` to the URL query string
+    if (getDisputeStatus() != null) {
+      try {
+        joiner.add(String.format("%sdispute_status%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getDisputeStatus()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `connector_status` to the URL query string
+    if (getConnectorStatus() != null) {
+      try {
+        joiner.add(String.format("%sconnector_status%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getConnectorStatus()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `connector_dispute_id` to the URL query string
+    if (getConnectorDisputeId() != null) {
+      try {
+        joiner.add(String.format("%sconnector_dispute_id%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getConnectorDisputeId()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `connector_reason` to the URL query string
+    if (getConnectorReason() != null) {
+      try {
+        joiner.add(String.format("%sconnector_reason%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getConnectorReason()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `connector_reason_code` to the URL query string
+    if (getConnectorReasonCode() != null) {
+      try {
+        joiner.add(String.format("%sconnector_reason_code%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getConnectorReasonCode()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `challenge_required_by` to the URL query string
+    if (getChallengeRequiredBy() != null) {
+      try {
+        joiner.add(String.format("%schallenge_required_by%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getChallengeRequiredBy()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `connector_created_at` to the URL query string
+    if (getConnectorCreatedAt() != null) {
+      try {
+        joiner.add(String.format("%sconnector_created_at%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getConnectorCreatedAt()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `connector_updated_at` to the URL query string
+    if (getConnectorUpdatedAt() != null) {
+      try {
+        joiner.add(String.format("%sconnector_updated_at%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getConnectorUpdatedAt()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `created_at` to the URL query string
+    if (getCreatedAt() != null) {
+      try {
+        joiner.add(String.format("%screated_at%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCreatedAt()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    return joiner.toString();
   }
 
 }

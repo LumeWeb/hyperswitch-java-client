@@ -24,20 +24,22 @@ import org.openapitools.jackson.nullable.JsonNullable;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.openapitools.jackson.nullable.JsonNullable;
 import java.util.NoSuchElementException;
-import org.junit.jupiter.api.Test;
+import org.junit.Assert;
+import org.junit.Ignore;
+import org.junit.Test;
 
 
 /**
  * Model tests for CaptureResponse
  */
-class CaptureResponseTest {
+public class CaptureResponseTest {
     private final CaptureResponse model = new CaptureResponse();
 
     /**
      * Model tests for CaptureResponse
      */
     @Test
-    void testCaptureResponse() {
+    public void testCaptureResponse() {
         // TODO: test CaptureResponse
     }
 
@@ -45,7 +47,7 @@ class CaptureResponseTest {
      * Test the property 'captureId'
      */
     @Test
-    void captureIdTest() {
+    public void captureIdTest() {
         // TODO: test captureId
     }
 
@@ -53,7 +55,7 @@ class CaptureResponseTest {
      * Test the property 'status'
      */
     @Test
-    void statusTest() {
+    public void statusTest() {
         // TODO: test status
     }
 
@@ -61,7 +63,7 @@ class CaptureResponseTest {
      * Test the property 'amount'
      */
     @Test
-    void amountTest() {
+    public void amountTest() {
         // TODO: test amount
     }
 
@@ -69,7 +71,7 @@ class CaptureResponseTest {
      * Test the property 'currency'
      */
     @Test
-    void currencyTest() {
+    public void currencyTest() {
         // TODO: test currency
     }
 
@@ -77,7 +79,7 @@ class CaptureResponseTest {
      * Test the property 'connector'
      */
     @Test
-    void connectorTest() {
+    public void connectorTest() {
         // TODO: test connector
     }
 
@@ -85,7 +87,7 @@ class CaptureResponseTest {
      * Test the property 'authorizedAttemptId'
      */
     @Test
-    void authorizedAttemptIdTest() {
+    public void authorizedAttemptIdTest() {
         // TODO: test authorizedAttemptId
     }
 
@@ -93,7 +95,7 @@ class CaptureResponseTest {
      * Test the property 'connectorCaptureId'
      */
     @Test
-    void connectorCaptureIdTest() {
+    public void connectorCaptureIdTest() {
         // TODO: test connectorCaptureId
     }
 
@@ -101,7 +103,7 @@ class CaptureResponseTest {
      * Test the property 'captureSequence'
      */
     @Test
-    void captureSequenceTest() {
+    public void captureSequenceTest() {
         // TODO: test captureSequence
     }
 
@@ -109,7 +111,7 @@ class CaptureResponseTest {
      * Test the property 'errorMessage'
      */
     @Test
-    void errorMessageTest() {
+    public void errorMessageTest() {
         // TODO: test errorMessage
     }
 
@@ -117,7 +119,7 @@ class CaptureResponseTest {
      * Test the property 'errorCode'
      */
     @Test
-    void errorCodeTest() {
+    public void errorCodeTest() {
         // TODO: test errorCode
     }
 
@@ -125,7 +127,7 @@ class CaptureResponseTest {
      * Test the property 'errorReason'
      */
     @Test
-    void errorReasonTest() {
+    public void errorReasonTest() {
         // TODO: test errorReason
     }
 
@@ -133,7 +135,7 @@ class CaptureResponseTest {
      * Test the property 'referenceId'
      */
     @Test
-    void referenceIdTest() {
+    public void referenceIdTest() {
         // TODO: test referenceId
     }
 

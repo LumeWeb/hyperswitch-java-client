@@ -22,20 +22,22 @@ import org.openapitools.jackson.nullable.JsonNullable;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.openapitools.jackson.nullable.JsonNullable;
 import java.util.NoSuchElementException;
-import org.junit.jupiter.api.Test;
+import org.junit.Assert;
+import org.junit.Ignore;
+import org.junit.Test;
 
 
 /**
  * Model tests for CryptoResponse
  */
-class CryptoResponseTest {
+public class CryptoResponseTest {
     private final CryptoResponse model = new CryptoResponse();
 
     /**
      * Model tests for CryptoResponse
      */
     @Test
-    void testCryptoResponse() {
+    public void testCryptoResponse() {
         // TODO: test CryptoResponse
     }
 
@@ -43,7 +45,7 @@ class CryptoResponseTest {
      * Test the property 'payCurrency'
      */
     @Test
-    void payCurrencyTest() {
+    public void payCurrencyTest() {
         // TODO: test payCurrency
     }
 
@@ -51,7 +53,7 @@ class CryptoResponseTest {
      * Test the property 'network'
      */
     @Test
-    void networkTest() {
+    public void networkTest() {
         // TODO: test network
     }
 

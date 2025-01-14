@@ -28,6 +28,9 @@ import org.openapitools.jackson.nullable.JsonNullable;
 import java.util.NoSuchElementException;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 import com.fasterxml.jackson.annotation.JsonTypeName;
+import java.io.UnsupportedEncodingException;
+import java.net.URLEncoder;
+import java.util.StringJoiner;
 
 /**
  * SessionTokenInfoAllOf
@@ -323,6 +326,111 @@ public class SessionTokenInfoAllOf {
       return "null";
     }
     return o.toString().replace("\n", "\n    ");
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @return URL query string
+   */
+  public String toUrlQueryString() {
+    return toUrlQueryString(null);
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @param prefix prefix of the query string
+   * @return URL query string
+   */
+  public String toUrlQueryString(String prefix) {
+    String suffix = "";
+    String containerSuffix = "";
+    String containerPrefix = "";
+    if (prefix == null) {
+      // style=form, explode=true, e.g. /pet?name=cat&type=manx
+      prefix = "";
+    } else {
+      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+      prefix = prefix + "[";
+      suffix = "]";
+      containerSuffix = "]";
+      containerPrefix = "[";
+    }
+
+    StringJoiner joiner = new StringJoiner("&");
+
+    // add `certificate` to the URL query string
+    if (getCertificate() != null) {
+      try {
+        joiner.add(String.format("%scertificate%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCertificate()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `certificate_keys` to the URL query string
+    if (getCertificateKeys() != null) {
+      try {
+        joiner.add(String.format("%scertificate_keys%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCertificateKeys()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `merchant_identifier` to the URL query string
+    if (getMerchantIdentifier() != null) {
+      try {
+        joiner.add(String.format("%smerchant_identifier%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getMerchantIdentifier()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `display_name` to the URL query string
+    if (getDisplayName() != null) {
+      try {
+        joiner.add(String.format("%sdisplay_name%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getDisplayName()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `initiative` to the URL query string
+    if (getInitiative() != null) {
+      try {
+        joiner.add(String.format("%sinitiative%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getInitiative()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `initiative_context` to the URL query string
+    if (getInitiativeContext() != null) {
+      try {
+        joiner.add(String.format("%sinitiative_context%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getInitiativeContext()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `merchant_business_country` to the URL query string
+    if (getMerchantBusinessCountry() != null) {
+      try {
+        joiner.add(String.format("%smerchant_business_country%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getMerchantBusinessCountry()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    return joiner.toString();
   }
 
 }

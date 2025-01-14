@@ -18,20 +18,22 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonTypeName;
 import com.fasterxml.jackson.annotation.JsonValue;
-import org.junit.jupiter.api.Test;
+import org.junit.Assert;
+import org.junit.Ignore;
+import org.junit.Test;
 
 
 /**
  * Model tests for BlocklistRequestOneOf1
  */
-class BlocklistRequestOneOf1Test {
+public class BlocklistRequestOneOf1Test {
     private final BlocklistRequestOneOf1 model = new BlocklistRequestOneOf1();
 
     /**
      * Model tests for BlocklistRequestOneOf1
      */
     @Test
-    void testBlocklistRequestOneOf1() {
+    public void testBlocklistRequestOneOf1() {
         // TODO: test BlocklistRequestOneOf1
     }
 
@@ -39,7 +41,7 @@ class BlocklistRequestOneOf1Test {
      * Test the property 'type'
      */
     @Test
-    void typeTest() {
+    public void typeTest() {
         // TODO: test type
     }
 
@@ -47,7 +49,7 @@ class BlocklistRequestOneOf1Test {
      * Test the property 'data'
      */
     @Test
-    void dataTest() {
+    public void dataTest() {
         // TODO: test data
     }
 

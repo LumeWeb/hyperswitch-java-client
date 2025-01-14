@@ -27,20 +27,22 @@ import org.openapitools.jackson.nullable.JsonNullable;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.openapitools.jackson.nullable.JsonNullable;
 import java.util.NoSuchElementException;
-import org.junit.jupiter.api.Test;
+import org.junit.Assert;
+import org.junit.Ignore;
+import org.junit.Test;
 
 
 /**
  * Model tests for SessionTokenInfo
  */
-class SessionTokenInfoTest {
+public class SessionTokenInfoTest {
     private final SessionTokenInfo model = new SessionTokenInfo();
 
     /**
      * Model tests for SessionTokenInfo
      */
     @Test
-    void testSessionTokenInfo() {
+    public void testSessionTokenInfo() {
         // TODO: test SessionTokenInfo
     }
 
@@ -48,7 +50,7 @@ class SessionTokenInfoTest {
      * Test the property 'certificate'
      */
     @Test
-    void certificateTest() {
+    public void certificateTest() {
         // TODO: test certificate
     }
 
@@ -56,7 +58,7 @@ class SessionTokenInfoTest {
      * Test the property 'certificateKeys'
      */
     @Test
-    void certificateKeysTest() {
+    public void certificateKeysTest() {
         // TODO: test certificateKeys
     }
 
@@ -64,7 +66,7 @@ class SessionTokenInfoTest {
      * Test the property 'merchantIdentifier'
      */
     @Test
-    void merchantIdentifierTest() {
+    public void merchantIdentifierTest() {
         // TODO: test merchantIdentifier
     }
 
@@ -72,7 +74,7 @@ class SessionTokenInfoTest {
      * Test the property 'displayName'
      */
     @Test
-    void displayNameTest() {
+    public void displayNameTest() {
         // TODO: test displayName
     }
 
@@ -80,7 +82,7 @@ class SessionTokenInfoTest {
      * Test the property 'initiative'
      */
     @Test
-    void initiativeTest() {
+    public void initiativeTest() {
         // TODO: test initiative
     }
 
@@ -88,7 +90,7 @@ class SessionTokenInfoTest {
      * Test the property 'initiativeContext'
      */
     @Test
-    void initiativeContextTest() {
+    public void initiativeContextTest() {
         // TODO: test initiativeContext
     }
 
@@ -96,7 +98,7 @@ class SessionTokenInfoTest {
      * Test the property 'merchantBusinessCountry'
      */
     @Test
-    void merchantBusinessCountryTest() {
+    public void merchantBusinessCountryTest() {
         // TODO: test merchantBusinessCountry
     }
 
@@ -104,7 +106,7 @@ class SessionTokenInfoTest {
      * Test the property 'paymentProcessingCertificate'
      */
     @Test
-    void paymentProcessingCertificateTest() {
+    public void paymentProcessingCertificateTest() {
         // TODO: test paymentProcessingCertificate
     }
 
@@ -112,7 +114,7 @@ class SessionTokenInfoTest {
      * Test the property 'paymentProcessingCertificateKey'
      */
     @Test
-    void paymentProcessingCertificateKeyTest() {
+    public void paymentProcessingCertificateKeyTest() {
         // TODO: test paymentProcessingCertificateKey
     }
 
@@ -120,7 +122,7 @@ class SessionTokenInfoTest {
      * Test the property 'paymentProcessingDetailsAt'
      */
     @Test
-    void paymentProcessingDetailsAtTest() {
+    public void paymentProcessingDetailsAtTest() {
         // TODO: test paymentProcessingDetailsAt
     }
 

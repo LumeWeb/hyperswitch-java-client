@@ -36,20 +36,22 @@ import org.openapitools.jackson.nullable.JsonNullable;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.openapitools.jackson.nullable.JsonNullable;
 import java.util.NoSuchElementException;
-import org.junit.jupiter.api.Test;
+import org.junit.Assert;
+import org.junit.Ignore;
+import org.junit.Test;
 
 
 /**
  * Model tests for PayoutCreateResponse
  */
-class PayoutCreateResponseTest {
+public class PayoutCreateResponseTest {
     private final PayoutCreateResponse model = new PayoutCreateResponse();
 
     /**
      * Model tests for PayoutCreateResponse
      */
     @Test
-    void testPayoutCreateResponse() {
+    public void testPayoutCreateResponse() {
         // TODO: test PayoutCreateResponse
     }
 
@@ -57,7 +59,7 @@ class PayoutCreateResponseTest {
      * Test the property 'payoutId'
      */
     @Test
-    void payoutIdTest() {
+    public void payoutIdTest() {
         // TODO: test payoutId
     }
 
@@ -65,7 +67,7 @@ class PayoutCreateResponseTest {
      * Test the property 'merchantId'
      */
     @Test
-    void merchantIdTest() {
+    public void merchantIdTest() {
         // TODO: test merchantId
     }
 
@@ -73,7 +75,7 @@ class PayoutCreateResponseTest {
      * Test the property 'amount'
      */
     @Test
-    void amountTest() {
+    public void amountTest() {
         // TODO: test amount
     }
 
@@ -81,7 +83,7 @@ class PayoutCreateResponseTest {
      * Test the property 'currency'
      */
     @Test
-    void currencyTest() {
+    public void currencyTest() {
         // TODO: test currency
     }
 
@@ -89,7 +91,7 @@ class PayoutCreateResponseTest {
      * Test the property 'connector'
      */
     @Test
-    void connectorTest() {
+    public void connectorTest() {
         // TODO: test connector
     }
 
@@ -97,7 +99,7 @@ class PayoutCreateResponseTest {
      * Test the property 'payoutType'
      */
     @Test
-    void payoutTypeTest() {
+    public void payoutTypeTest() {
         // TODO: test payoutType
     }
 
@@ -105,7 +107,7 @@ class PayoutCreateResponseTest {
      * Test the property 'payoutMethodData'
      */
     @Test
-    void payoutMethodDataTest() {
+    public void payoutMethodDataTest() {
         // TODO: test payoutMethodData
     }
 
@@ -113,7 +115,7 @@ class PayoutCreateResponseTest {
      * Test the property 'billing'
      */
     @Test
-    void billingTest() {
+    public void billingTest() {
         // TODO: test billing
     }
 
@@ -121,7 +123,7 @@ class PayoutCreateResponseTest {
      * Test the property 'autoFulfill'
      */
     @Test
-    void autoFulfillTest() {
+    public void autoFulfillTest() {
         // TODO: test autoFulfill
     }
 
@@ -129,7 +131,7 @@ class PayoutCreateResponseTest {
      * Test the property 'customerId'
      */
     @Test
-    void customerIdTest() {
+    public void customerIdTest() {
         // TODO: test customerId
     }
 
@@ -137,7 +139,7 @@ class PayoutCreateResponseTest {
      * Test the property 'customer'
      */
     @Test
-    void customerTest() {
+    public void customerTest() {
         // TODO: test customer
     }
 
@@ -145,7 +147,7 @@ class PayoutCreateResponseTest {
      * Test the property 'clientSecret'
      */
     @Test
-    void clientSecretTest() {
+    public void clientSecretTest() {
         // TODO: test clientSecret
     }
 
@@ -153,7 +155,7 @@ class PayoutCreateResponseTest {
      * Test the property 'returnUrl'
      */
     @Test
-    void returnUrlTest() {
+    public void returnUrlTest() {
         // TODO: test returnUrl
     }
 
@@ -161,7 +163,7 @@ class PayoutCreateResponseTest {
      * Test the property 'businessCountry'
      */
     @Test
-    void businessCountryTest() {
+    public void businessCountryTest() {
         // TODO: test businessCountry
     }
 
@@ -169,7 +171,7 @@ class PayoutCreateResponseTest {
      * Test the property 'businessLabel'
      */
     @Test
-    void businessLabelTest() {
+    public void businessLabelTest() {
         // TODO: test businessLabel
     }
 
@@ -177,7 +179,7 @@ class PayoutCreateResponseTest {
      * Test the property 'description'
      */
     @Test
-    void descriptionTest() {
+    public void descriptionTest() {
         // TODO: test description
     }
 
@@ -185,7 +187,7 @@ class PayoutCreateResponseTest {
      * Test the property 'entityType'
      */
     @Test
-    void entityTypeTest() {
+    public void entityTypeTest() {
         // TODO: test entityType
     }
 
@@ -193,7 +195,7 @@ class PayoutCreateResponseTest {
      * Test the property 'recurring'
      */
     @Test
-    void recurringTest() {
+    public void recurringTest() {
         // TODO: test recurring
     }
 
@@ -201,7 +203,7 @@ class PayoutCreateResponseTest {
      * Test the property 'metadata'
      */
     @Test
-    void metadataTest() {
+    public void metadataTest() {
         // TODO: test metadata
     }
 
@@ -209,7 +211,7 @@ class PayoutCreateResponseTest {
      * Test the property 'merchantConnectorId'
      */
     @Test
-    void merchantConnectorIdTest() {
+    public void merchantConnectorIdTest() {
         // TODO: test merchantConnectorId
     }
 
@@ -217,7 +219,7 @@ class PayoutCreateResponseTest {
      * Test the property 'status'
      */
     @Test
-    void statusTest() {
+    public void statusTest() {
         // TODO: test status
     }
 
@@ -225,7 +227,7 @@ class PayoutCreateResponseTest {
      * Test the property 'errorMessage'
      */
     @Test
-    void errorMessageTest() {
+    public void errorMessageTest() {
         // TODO: test errorMessage
     }
 
@@ -233,7 +235,7 @@ class PayoutCreateResponseTest {
      * Test the property 'errorCode'
      */
     @Test
-    void errorCodeTest() {
+    public void errorCodeTest() {
         // TODO: test errorCode
     }
 
@@ -241,7 +243,7 @@ class PayoutCreateResponseTest {
      * Test the property 'profileId'
      */
     @Test
-    void profileIdTest() {
+    public void profileIdTest() {
         // TODO: test profileId
     }
 
@@ -249,7 +251,7 @@ class PayoutCreateResponseTest {
      * Test the property 'created'
      */
     @Test
-    void createdTest() {
+    public void createdTest() {
         // TODO: test created
     }
 
@@ -257,7 +259,7 @@ class PayoutCreateResponseTest {
      * Test the property 'connectorTransactionId'
      */
     @Test
-    void connectorTransactionIdTest() {
+    public void connectorTransactionIdTest() {
         // TODO: test connectorTransactionId
     }
 
@@ -265,7 +267,7 @@ class PayoutCreateResponseTest {
      * Test the property 'priority'
      */
     @Test
-    void priorityTest() {
+    public void priorityTest() {
         // TODO: test priority
     }
 
@@ -273,7 +275,7 @@ class PayoutCreateResponseTest {
      * Test the property 'attempts'
      */
     @Test
-    void attemptsTest() {
+    public void attemptsTest() {
         // TODO: test attempts
     }
 
@@ -281,7 +283,7 @@ class PayoutCreateResponseTest {
      * Test the property 'payoutLink'
      */
     @Test
-    void payoutLinkTest() {
+    public void payoutLinkTest() {
         // TODO: test payoutLink
     }
 
@@ -289,7 +291,7 @@ class PayoutCreateResponseTest {
      * Test the property 'email'
      */
     @Test
-    void emailTest() {
+    public void emailTest() {
         // TODO: test email
     }
 
@@ -297,7 +299,7 @@ class PayoutCreateResponseTest {
      * Test the property 'name'
      */
     @Test
-    void nameTest() {
+    public void nameTest() {
         // TODO: test name
     }
 
@@ -305,7 +307,7 @@ class PayoutCreateResponseTest {
      * Test the property 'phone'
      */
     @Test
-    void phoneTest() {
+    public void phoneTest() {
         // TODO: test phone
     }
 
@@ -313,7 +315,7 @@ class PayoutCreateResponseTest {
      * Test the property 'phoneCountryCode'
      */
     @Test
-    void phoneCountryCodeTest() {
+    public void phoneCountryCodeTest() {
         // TODO: test phoneCountryCode
     }
 
@@ -321,7 +323,7 @@ class PayoutCreateResponseTest {
      * Test the property 'unifiedCode'
      */
     @Test
-    void unifiedCodeTest() {
+    public void unifiedCodeTest() {
         // TODO: test unifiedCode
     }
 
@@ -329,7 +331,7 @@ class PayoutCreateResponseTest {
      * Test the property 'unifiedMessage'
      */
     @Test
-    void unifiedMessageTest() {
+    public void unifiedMessageTest() {
         // TODO: test unifiedMessage
     }
 

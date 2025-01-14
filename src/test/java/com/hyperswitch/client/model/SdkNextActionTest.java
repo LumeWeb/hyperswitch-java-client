@@ -19,20 +19,22 @@ import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonTypeName;
 import com.fasterxml.jackson.annotation.JsonValue;
 import com.hyperswitch.client.model.NextActionCall;
-import org.junit.jupiter.api.Test;
+import org.junit.Assert;
+import org.junit.Ignore;
+import org.junit.Test;
 
 
 /**
  * Model tests for SdkNextAction
  */
-class SdkNextActionTest {
+public class SdkNextActionTest {
     private final SdkNextAction model = new SdkNextAction();
 
     /**
      * Model tests for SdkNextAction
      */
     @Test
-    void testSdkNextAction() {
+    public void testSdkNextAction() {
         // TODO: test SdkNextAction
     }
 
@@ -40,7 +42,7 @@ class SdkNextActionTest {
      * Test the property 'nextAction'
      */
     @Test
-    void nextActionTest() {
+    public void nextActionTest() {
         // TODO: test nextAction
     }
 

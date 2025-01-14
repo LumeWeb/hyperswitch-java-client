@@ -18,20 +18,22 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonTypeName;
 import com.fasterxml.jackson.annotation.JsonValue;
-import org.junit.jupiter.api.Test;
+import org.junit.Assert;
+import org.junit.Ignore;
+import org.junit.Test;
 
 
 /**
  * Model tests for NoThirdPartySdkSessionResponse
  */
-class NoThirdPartySdkSessionResponseTest {
+public class NoThirdPartySdkSessionResponseTest {
     private final NoThirdPartySdkSessionResponse model = new NoThirdPartySdkSessionResponse();
 
     /**
      * Model tests for NoThirdPartySdkSessionResponse
      */
     @Test
-    void testNoThirdPartySdkSessionResponse() {
+    public void testNoThirdPartySdkSessionResponse() {
         // TODO: test NoThirdPartySdkSessionResponse
     }
 
@@ -39,7 +41,7 @@ class NoThirdPartySdkSessionResponseTest {
      * Test the property 'epochTimestamp'
      */
     @Test
-    void epochTimestampTest() {
+    public void epochTimestampTest() {
         // TODO: test epochTimestamp
     }
 
@@ -47,7 +49,7 @@ class NoThirdPartySdkSessionResponseTest {
      * Test the property 'expiresAt'
      */
     @Test
-    void expiresAtTest() {
+    public void expiresAtTest() {
         // TODO: test expiresAt
     }
 
@@ -55,7 +57,7 @@ class NoThirdPartySdkSessionResponseTest {
      * Test the property 'merchantSessionIdentifier'
      */
     @Test
-    void merchantSessionIdentifierTest() {
+    public void merchantSessionIdentifierTest() {
         // TODO: test merchantSessionIdentifier
     }
 
@@ -63,7 +65,7 @@ class NoThirdPartySdkSessionResponseTest {
      * Test the property 'nonce'
      */
     @Test
-    void nonceTest() {
+    public void nonceTest() {
         // TODO: test nonce
     }
 
@@ -71,7 +73,7 @@ class NoThirdPartySdkSessionResponseTest {
      * Test the property 'merchantIdentifier'
      */
     @Test
-    void merchantIdentifierTest() {
+    public void merchantIdentifierTest() {
         // TODO: test merchantIdentifier
     }
 
@@ -79,7 +81,7 @@ class NoThirdPartySdkSessionResponseTest {
      * Test the property 'domainName'
      */
     @Test
-    void domainNameTest() {
+    public void domainNameTest() {
         // TODO: test domainName
     }
 
@@ -87,7 +89,7 @@ class NoThirdPartySdkSessionResponseTest {
      * Test the property 'displayName'
      */
     @Test
-    void displayNameTest() {
+    public void displayNameTest() {
         // TODO: test displayName
     }
 
@@ -95,7 +97,7 @@ class NoThirdPartySdkSessionResponseTest {
      * Test the property 'signature'
      */
     @Test
-    void signatureTest() {
+    public void signatureTest() {
         // TODO: test signature
     }
 
@@ -103,7 +105,7 @@ class NoThirdPartySdkSessionResponseTest {
      * Test the property 'operationalAnalyticsIdentifier'
      */
     @Test
-    void operationalAnalyticsIdentifierTest() {
+    public void operationalAnalyticsIdentifierTest() {
         // TODO: test operationalAnalyticsIdentifier
     }
 
@@ -111,7 +113,7 @@ class NoThirdPartySdkSessionResponseTest {
      * Test the property 'retries'
      */
     @Test
-    void retriesTest() {
+    public void retriesTest() {
         // TODO: test retries
     }
 
@@ -119,7 +121,7 @@ class NoThirdPartySdkSessionResponseTest {
      * Test the property 'pspId'
      */
     @Test
-    void pspIdTest() {
+    public void pspIdTest() {
         // TODO: test pspId
     }
 

@@ -26,20 +26,22 @@ import org.openapitools.jackson.nullable.JsonNullable;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.openapitools.jackson.nullable.JsonNullable;
 import java.util.NoSuchElementException;
-import org.junit.jupiter.api.Test;
+import org.junit.Assert;
+import org.junit.Ignore;
+import org.junit.Test;
 
 
 /**
  * Model tests for PaymentsSessionRequest
  */
-class PaymentsSessionRequestTest {
+public class PaymentsSessionRequestTest {
     private final PaymentsSessionRequest model = new PaymentsSessionRequest();
 
     /**
      * Model tests for PaymentsSessionRequest
      */
     @Test
-    void testPaymentsSessionRequest() {
+    public void testPaymentsSessionRequest() {
         // TODO: test PaymentsSessionRequest
     }
 
@@ -47,7 +49,7 @@ class PaymentsSessionRequestTest {
      * Test the property 'paymentId'
      */
     @Test
-    void paymentIdTest() {
+    public void paymentIdTest() {
         // TODO: test paymentId
     }
 
@@ -55,7 +57,7 @@ class PaymentsSessionRequestTest {
      * Test the property 'clientSecret'
      */
     @Test
-    void clientSecretTest() {
+    public void clientSecretTest() {
         // TODO: test clientSecret
     }
 
@@ -63,7 +65,7 @@ class PaymentsSessionRequestTest {
      * Test the property 'wallets'
      */
     @Test
-    void walletsTest() {
+    public void walletsTest() {
         // TODO: test wallets
     }
 
@@ -71,7 +73,7 @@ class PaymentsSessionRequestTest {
      * Test the property 'merchantConnectorDetails'
      */
     @Test
-    void merchantConnectorDetailsTest() {
+    public void merchantConnectorDetailsTest() {
         // TODO: test merchantConnectorDetails
     }
 

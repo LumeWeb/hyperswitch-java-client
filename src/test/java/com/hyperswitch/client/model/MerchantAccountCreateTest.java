@@ -27,20 +27,22 @@ import org.openapitools.jackson.nullable.JsonNullable;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.openapitools.jackson.nullable.JsonNullable;
 import java.util.NoSuchElementException;
-import org.junit.jupiter.api.Test;
+import org.junit.Assert;
+import org.junit.Ignore;
+import org.junit.Test;
 
 
 /**
  * Model tests for MerchantAccountCreate
  */
-class MerchantAccountCreateTest {
+public class MerchantAccountCreateTest {
     private final MerchantAccountCreate model = new MerchantAccountCreate();
 
     /**
      * Model tests for MerchantAccountCreate
      */
     @Test
-    void testMerchantAccountCreate() {
+    public void testMerchantAccountCreate() {
         // TODO: test MerchantAccountCreate
     }
 
@@ -48,7 +50,7 @@ class MerchantAccountCreateTest {
      * Test the property 'merchantId'
      */
     @Test
-    void merchantIdTest() {
+    public void merchantIdTest() {
         // TODO: test merchantId
     }
 
@@ -56,7 +58,7 @@ class MerchantAccountCreateTest {
      * Test the property 'merchantName'
      */
     @Test
-    void merchantNameTest() {
+    public void merchantNameTest() {
         // TODO: test merchantName
     }
 
@@ -64,7 +66,7 @@ class MerchantAccountCreateTest {
      * Test the property 'merchantDetails'
      */
     @Test
-    void merchantDetailsTest() {
+    public void merchantDetailsTest() {
         // TODO: test merchantDetails
     }
 
@@ -72,7 +74,7 @@ class MerchantAccountCreateTest {
      * Test the property 'returnUrl'
      */
     @Test
-    void returnUrlTest() {
+    public void returnUrlTest() {
         // TODO: test returnUrl
     }
 
@@ -80,7 +82,7 @@ class MerchantAccountCreateTest {
      * Test the property 'webhookDetails'
      */
     @Test
-    void webhookDetailsTest() {
+    public void webhookDetailsTest() {
         // TODO: test webhookDetails
     }
 
@@ -88,7 +90,7 @@ class MerchantAccountCreateTest {
      * Test the property 'payoutRoutingAlgorithm'
      */
     @Test
-    void payoutRoutingAlgorithmTest() {
+    public void payoutRoutingAlgorithmTest() {
         // TODO: test payoutRoutingAlgorithm
     }
 
@@ -96,7 +98,7 @@ class MerchantAccountCreateTest {
      * Test the property 'subMerchantsEnabled'
      */
     @Test
-    void subMerchantsEnabledTest() {
+    public void subMerchantsEnabledTest() {
         // TODO: test subMerchantsEnabled
     }
 
@@ -104,7 +106,7 @@ class MerchantAccountCreateTest {
      * Test the property 'parentMerchantId'
      */
     @Test
-    void parentMerchantIdTest() {
+    public void parentMerchantIdTest() {
         // TODO: test parentMerchantId
     }
 
@@ -112,7 +114,7 @@ class MerchantAccountCreateTest {
      * Test the property 'enablePaymentResponseHash'
      */
     @Test
-    void enablePaymentResponseHashTest() {
+    public void enablePaymentResponseHashTest() {
         // TODO: test enablePaymentResponseHash
     }
 
@@ -120,7 +122,7 @@ class MerchantAccountCreateTest {
      * Test the property 'paymentResponseHashKey'
      */
     @Test
-    void paymentResponseHashKeyTest() {
+    public void paymentResponseHashKeyTest() {
         // TODO: test paymentResponseHashKey
     }
 
@@ -128,7 +130,7 @@ class MerchantAccountCreateTest {
      * Test the property 'redirectToMerchantWithHttpPost'
      */
     @Test
-    void redirectToMerchantWithHttpPostTest() {
+    public void redirectToMerchantWithHttpPostTest() {
         // TODO: test redirectToMerchantWithHttpPost
     }
 
@@ -136,7 +138,7 @@ class MerchantAccountCreateTest {
      * Test the property 'metadata'
      */
     @Test
-    void metadataTest() {
+    public void metadataTest() {
         // TODO: test metadata
     }
 
@@ -144,7 +146,7 @@ class MerchantAccountCreateTest {
      * Test the property 'publishableKey'
      */
     @Test
-    void publishableKeyTest() {
+    public void publishableKeyTest() {
         // TODO: test publishableKey
     }
 
@@ -152,7 +154,7 @@ class MerchantAccountCreateTest {
      * Test the property 'lockerId'
      */
     @Test
-    void lockerIdTest() {
+    public void lockerIdTest() {
         // TODO: test lockerId
     }
 
@@ -160,7 +162,7 @@ class MerchantAccountCreateTest {
      * Test the property 'primaryBusinessDetails'
      */
     @Test
-    void primaryBusinessDetailsTest() {
+    public void primaryBusinessDetailsTest() {
         // TODO: test primaryBusinessDetails
     }
 
@@ -168,7 +170,7 @@ class MerchantAccountCreateTest {
      * Test the property 'frmRoutingAlgorithm'
      */
     @Test
-    void frmRoutingAlgorithmTest() {
+    public void frmRoutingAlgorithmTest() {
         // TODO: test frmRoutingAlgorithm
     }
 
@@ -176,7 +178,7 @@ class MerchantAccountCreateTest {
      * Test the property 'organizationId'
      */
     @Test
-    void organizationIdTest() {
+    public void organizationIdTest() {
         // TODO: test organizationId
     }
 
@@ -184,7 +186,7 @@ class MerchantAccountCreateTest {
      * Test the property 'pmCollectLinkConfig'
      */
     @Test
-    void pmCollectLinkConfigTest() {
+    public void pmCollectLinkConfigTest() {
         // TODO: test pmCollectLinkConfig
     }
 

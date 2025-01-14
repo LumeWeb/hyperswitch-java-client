@@ -13,18 +13,20 @@
 
 package com.hyperswitch.client.model;
 
-import org.junit.jupiter.api.Test;
+import org.junit.Assert;
+import org.junit.Ignore;
+import org.junit.Test;
 
 
 /**
  * Model tests for DynamicRoutingFeatures
  */
-class DynamicRoutingFeaturesTest {
+public class DynamicRoutingFeaturesTest {
     /**
      * Model tests for DynamicRoutingFeatures
      */
     @Test
-    void testDynamicRoutingFeatures() {
+    public void testDynamicRoutingFeatures() {
         // TODO: test DynamicRoutingFeatures
     }
 

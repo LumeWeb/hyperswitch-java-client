@@ -22,20 +22,22 @@ import com.hyperswitch.client.model.MerchantAccountDataOneOf;
 import com.hyperswitch.client.model.MerchantAccountDataOneOf1;
 import com.hyperswitch.client.model.MerchantAccountDataOneOf1Bacs;
 import com.hyperswitch.client.model.MerchantAccountDataOneOfIban;
-import org.junit.jupiter.api.Test;
+import org.junit.Assert;
+import org.junit.Ignore;
+import org.junit.Test;
 
 
 /**
  * Model tests for MerchantAccountData
  */
-class MerchantAccountDataTest {
+public class MerchantAccountDataTest {
     private final MerchantAccountData model = new MerchantAccountData();
 
     /**
      * Model tests for MerchantAccountData
      */
     @Test
-    void testMerchantAccountData() {
+    public void testMerchantAccountData() {
         // TODO: test MerchantAccountData
     }
 
@@ -43,7 +45,7 @@ class MerchantAccountDataTest {
      * Test the property 'iban'
      */
     @Test
-    void ibanTest() {
+    public void ibanTest() {
         // TODO: test iban
     }
 
@@ -51,7 +53,7 @@ class MerchantAccountDataTest {
      * Test the property 'bacs'
      */
     @Test
-    void bacsTest() {
+    public void bacsTest() {
         // TODO: test bacs
     }
 

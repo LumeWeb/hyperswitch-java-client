@@ -13,18 +13,20 @@
 
 package com.hyperswitch.client.model;
 
-import org.junit.jupiter.api.Test;
+import org.junit.Assert;
+import org.junit.Ignore;
+import org.junit.Test;
 
 
 /**
  * Model tests for FutureUsage
  */
-class FutureUsageTest {
+public class FutureUsageTest {
     /**
      * Model tests for FutureUsage
      */
     @Test
-    void testFutureUsage() {
+    public void testFutureUsage() {
         // TODO: test FutureUsage
     }
 

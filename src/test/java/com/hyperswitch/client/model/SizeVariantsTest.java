@@ -13,18 +13,20 @@
 
 package com.hyperswitch.client.model;
 
-import org.junit.jupiter.api.Test;
+import org.junit.Assert;
+import org.junit.Ignore;
+import org.junit.Test;
 
 
 /**
  * Model tests for SizeVariants
  */
-class SizeVariantsTest {
+public class SizeVariantsTest {
     /**
      * Model tests for SizeVariants
      */
     @Test
-    void testSizeVariants() {
+    public void testSizeVariants() {
         // TODO: test SizeVariants
     }
 

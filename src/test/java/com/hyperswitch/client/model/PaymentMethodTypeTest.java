@@ -13,18 +13,20 @@
 
 package com.hyperswitch.client.model;
 
-import org.junit.jupiter.api.Test;
+import org.junit.Assert;
+import org.junit.Ignore;
+import org.junit.Test;
 
 
 /**
  * Model tests for PaymentMethodType
  */
-class PaymentMethodTypeTest {
+public class PaymentMethodTypeTest {
     /**
      * Model tests for PaymentMethodType
      */
     @Test
-    void testPaymentMethodType() {
+    public void testPaymentMethodType() {
         // TODO: test PaymentMethodType
     }
 

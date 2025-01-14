@@ -51,6 +51,9 @@ import com.hyperswitch.client.model.BankRedirectDataOneOf9;
 import com.hyperswitch.client.model.BankRedirectDataOneOfBancontactCard;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 import com.fasterxml.jackson.annotation.JsonTypeName;
+import java.io.UnsupportedEncodingException;
+import java.net.URLEncoder;
+import java.util.StringJoiner;
 
 /**
  * BankRedirectData
@@ -670,6 +673,141 @@ public class BankRedirectData {
       return "null";
     }
     return o.toString().replace("\n", "\n    ");
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @return URL query string
+   */
+  public String toUrlQueryString() {
+    return toUrlQueryString(null);
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @param prefix prefix of the query string
+   * @return URL query string
+   */
+  public String toUrlQueryString(String prefix) {
+    String suffix = "";
+    String containerSuffix = "";
+    String containerPrefix = "";
+    if (prefix == null) {
+      // style=form, explode=true, e.g. /pet?name=cat&type=manx
+      prefix = "";
+    } else {
+      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+      prefix = prefix + "[";
+      suffix = "]";
+      containerSuffix = "]";
+      containerPrefix = "[";
+    }
+
+    StringJoiner joiner = new StringJoiner("&");
+
+    // add `bancontact_card` to the URL query string
+    if (getBancontactCard() != null) {
+      joiner.add(getBancontactCard().toUrlQueryString(prefix + "bancontact_card" + suffix));
+    }
+
+    // add `bizum` to the URL query string
+    if (getBizum() != null) {
+      try {
+        joiner.add(String.format("%sbizum%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getBizum()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `blik` to the URL query string
+    if (getBlik() != null) {
+      joiner.add(getBlik().toUrlQueryString(prefix + "blik" + suffix));
+    }
+
+    // add `eps` to the URL query string
+    if (getEps() != null) {
+      joiner.add(getEps().toUrlQueryString(prefix + "eps" + suffix));
+    }
+
+    // add `giropay` to the URL query string
+    if (getGiropay() != null) {
+      joiner.add(getGiropay().toUrlQueryString(prefix + "giropay" + suffix));
+    }
+
+    // add `ideal` to the URL query string
+    if (getIdeal() != null) {
+      joiner.add(getIdeal().toUrlQueryString(prefix + "ideal" + suffix));
+    }
+
+    // add `interac` to the URL query string
+    if (getInterac() != null) {
+      joiner.add(getInterac().toUrlQueryString(prefix + "interac" + suffix));
+    }
+
+    // add `online_banking_czech_republic` to the URL query string
+    if (getOnlineBankingCzechRepublic() != null) {
+      joiner.add(getOnlineBankingCzechRepublic().toUrlQueryString(prefix + "online_banking_czech_republic" + suffix));
+    }
+
+    // add `online_banking_finland` to the URL query string
+    if (getOnlineBankingFinland() != null) {
+      joiner.add(getOnlineBankingFinland().toUrlQueryString(prefix + "online_banking_finland" + suffix));
+    }
+
+    // add `online_banking_poland` to the URL query string
+    if (getOnlineBankingPoland() != null) {
+      joiner.add(getOnlineBankingPoland().toUrlQueryString(prefix + "online_banking_poland" + suffix));
+    }
+
+    // add `online_banking_slovakia` to the URL query string
+    if (getOnlineBankingSlovakia() != null) {
+      joiner.add(getOnlineBankingSlovakia().toUrlQueryString(prefix + "online_banking_slovakia" + suffix));
+    }
+
+    // add `open_banking_uk` to the URL query string
+    if (getOpenBankingUk() != null) {
+      joiner.add(getOpenBankingUk().toUrlQueryString(prefix + "open_banking_uk" + suffix));
+    }
+
+    // add `przelewy24` to the URL query string
+    if (getPrzelewy24() != null) {
+      joiner.add(getPrzelewy24().toUrlQueryString(prefix + "przelewy24" + suffix));
+    }
+
+    // add `sofort` to the URL query string
+    if (getSofort() != null) {
+      joiner.add(getSofort().toUrlQueryString(prefix + "sofort" + suffix));
+    }
+
+    // add `trustly` to the URL query string
+    if (getTrustly() != null) {
+      joiner.add(getTrustly().toUrlQueryString(prefix + "trustly" + suffix));
+    }
+
+    // add `online_banking_fpx` to the URL query string
+    if (getOnlineBankingFpx() != null) {
+      joiner.add(getOnlineBankingFpx().toUrlQueryString(prefix + "online_banking_fpx" + suffix));
+    }
+
+    // add `online_banking_thailand` to the URL query string
+    if (getOnlineBankingThailand() != null) {
+      joiner.add(getOnlineBankingThailand().toUrlQueryString(prefix + "online_banking_thailand" + suffix));
+    }
+
+    // add `local_bank_redirect` to the URL query string
+    if (getLocalBankRedirect() != null) {
+      try {
+        joiner.add(String.format("%slocal_bank_redirect%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getLocalBankRedirect()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    return joiner.toString();
   }
 
 }

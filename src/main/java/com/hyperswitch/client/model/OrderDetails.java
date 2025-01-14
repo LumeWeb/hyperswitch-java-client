@@ -27,6 +27,9 @@ import org.openapitools.jackson.nullable.JsonNullable;
 import java.util.NoSuchElementException;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 import com.fasterxml.jackson.annotation.JsonTypeName;
+import java.io.UnsupportedEncodingException;
+import java.net.URLEncoder;
+import java.util.StringJoiner;
 
 /**
  * OrderDetails
@@ -466,6 +469,141 @@ public class OrderDetails {
       return "null";
     }
     return o.toString().replace("\n", "\n    ");
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @return URL query string
+   */
+  public String toUrlQueryString() {
+    return toUrlQueryString(null);
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @param prefix prefix of the query string
+   * @return URL query string
+   */
+  public String toUrlQueryString(String prefix) {
+    String suffix = "";
+    String containerSuffix = "";
+    String containerPrefix = "";
+    if (prefix == null) {
+      // style=form, explode=true, e.g. /pet?name=cat&type=manx
+      prefix = "";
+    } else {
+      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+      prefix = prefix + "[";
+      suffix = "]";
+      containerSuffix = "]";
+      containerPrefix = "[";
+    }
+
+    StringJoiner joiner = new StringJoiner("&");
+
+    // add `product_name` to the URL query string
+    if (getProductName() != null) {
+      try {
+        joiner.add(String.format("%sproduct_name%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getProductName()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `quantity` to the URL query string
+    if (getQuantity() != null) {
+      try {
+        joiner.add(String.format("%squantity%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getQuantity()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `requires_shipping` to the URL query string
+    if (getRequiresShipping() != null) {
+      try {
+        joiner.add(String.format("%srequires_shipping%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getRequiresShipping()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `product_img_link` to the URL query string
+    if (getProductImgLink() != null) {
+      try {
+        joiner.add(String.format("%sproduct_img_link%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getProductImgLink()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `product_id` to the URL query string
+    if (getProductId() != null) {
+      try {
+        joiner.add(String.format("%sproduct_id%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getProductId()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `category` to the URL query string
+    if (getCategory() != null) {
+      try {
+        joiner.add(String.format("%scategory%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCategory()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `sub_category` to the URL query string
+    if (getSubCategory() != null) {
+      try {
+        joiner.add(String.format("%ssub_category%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getSubCategory()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `brand` to the URL query string
+    if (getBrand() != null) {
+      try {
+        joiner.add(String.format("%sbrand%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getBrand()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `product_type` to the URL query string
+    if (getProductType() != null) {
+      try {
+        joiner.add(String.format("%sproduct_type%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getProductType()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `product_tax_code` to the URL query string
+    if (getProductTaxCode() != null) {
+      try {
+        joiner.add(String.format("%sproduct_tax_code%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getProductTaxCode()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    return joiner.toString();
   }
 
 }

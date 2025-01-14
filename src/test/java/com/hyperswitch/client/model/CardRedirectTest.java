@@ -19,20 +19,22 @@ import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonTypeName;
 import com.fasterxml.jackson.annotation.JsonValue;
 import com.hyperswitch.client.model.CardRedirectData;
-import org.junit.jupiter.api.Test;
+import org.junit.Assert;
+import org.junit.Ignore;
+import org.junit.Test;
 
 
 /**
  * Model tests for CardRedirect
  */
-class CardRedirectTest {
+public class CardRedirectTest {
     private final CardRedirect model = new CardRedirect();
 
     /**
      * Model tests for CardRedirect
      */
     @Test
-    void testCardRedirect() {
+    public void testCardRedirect() {
         // TODO: test CardRedirect
     }
 
@@ -40,7 +42,7 @@ class CardRedirectTest {
      * Test the property 'cardRedirect'
      */
     @Test
-    void cardRedirectTest() {
+    public void cardRedirectTest() {
         // TODO: test cardRedirect
     }
 

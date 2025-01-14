@@ -23,20 +23,22 @@ import com.hyperswitch.client.model.SamsungPayMerchantPaymentInformation;
 import com.hyperswitch.client.model.SamsungPayProtocolType;
 import java.util.ArrayList;
 import java.util.List;
-import org.junit.jupiter.api.Test;
+import org.junit.Assert;
+import org.junit.Ignore;
+import org.junit.Test;
 
 
 /**
  * Model tests for SessionTokenOneOf1
  */
-class SessionTokenOneOf1Test {
+public class SessionTokenOneOf1Test {
     private final SessionTokenOneOf1 model = new SessionTokenOneOf1();
 
     /**
      * Model tests for SessionTokenOneOf1
      */
     @Test
-    void testSessionTokenOneOf1() {
+    public void testSessionTokenOneOf1() {
         // TODO: test SessionTokenOneOf1
     }
 
@@ -44,7 +46,7 @@ class SessionTokenOneOf1Test {
      * Test the property 'version'
      */
     @Test
-    void versionTest() {
+    public void versionTest() {
         // TODO: test version
     }
 
@@ -52,7 +54,7 @@ class SessionTokenOneOf1Test {
      * Test the property 'serviceId'
      */
     @Test
-    void serviceIdTest() {
+    public void serviceIdTest() {
         // TODO: test serviceId
     }
 
@@ -60,7 +62,7 @@ class SessionTokenOneOf1Test {
      * Test the property 'orderNumber'
      */
     @Test
-    void orderNumberTest() {
+    public void orderNumberTest() {
         // TODO: test orderNumber
     }
 
@@ -68,7 +70,7 @@ class SessionTokenOneOf1Test {
      * Test the property 'merchant'
      */
     @Test
-    void merchantTest() {
+    public void merchantTest() {
         // TODO: test merchant
     }
 
@@ -76,7 +78,7 @@ class SessionTokenOneOf1Test {
      * Test the property 'amount'
      */
     @Test
-    void amountTest() {
+    public void amountTest() {
         // TODO: test amount
     }
 
@@ -84,7 +86,7 @@ class SessionTokenOneOf1Test {
      * Test the property 'protocol'
      */
     @Test
-    void protocolTest() {
+    public void protocolTest() {
         // TODO: test protocol
     }
 
@@ -92,7 +94,7 @@ class SessionTokenOneOf1Test {
      * Test the property 'allowedBrands'
      */
     @Test
-    void allowedBrandsTest() {
+    public void allowedBrandsTest() {
         // TODO: test allowedBrands
     }
 
@@ -100,7 +102,7 @@ class SessionTokenOneOf1Test {
      * Test the property 'walletName'
      */
     @Test
-    void walletNameTest() {
+    public void walletNameTest() {
         // TODO: test walletName
     }
 

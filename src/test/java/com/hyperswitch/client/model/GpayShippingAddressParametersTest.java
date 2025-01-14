@@ -18,20 +18,22 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonTypeName;
 import com.fasterxml.jackson.annotation.JsonValue;
-import org.junit.jupiter.api.Test;
+import org.junit.Assert;
+import org.junit.Ignore;
+import org.junit.Test;
 
 
 /**
  * Model tests for GpayShippingAddressParameters
  */
-class GpayShippingAddressParametersTest {
+public class GpayShippingAddressParametersTest {
     private final GpayShippingAddressParameters model = new GpayShippingAddressParameters();
 
     /**
      * Model tests for GpayShippingAddressParameters
      */
     @Test
-    void testGpayShippingAddressParameters() {
+    public void testGpayShippingAddressParameters() {
         // TODO: test GpayShippingAddressParameters
     }
 
@@ -39,7 +41,7 @@ class GpayShippingAddressParametersTest {
      * Test the property 'phoneNumberRequired'
      */
     @Test
-    void phoneNumberRequiredTest() {
+    public void phoneNumberRequiredTest() {
         // TODO: test phoneNumberRequired
     }
 

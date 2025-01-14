@@ -19,20 +19,22 @@ import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonTypeName;
 import com.fasterxml.jackson.annotation.JsonValue;
 import com.hyperswitch.client.model.RoutableConnectorChoice;
-import org.junit.jupiter.api.Test;
+import org.junit.Assert;
+import org.junit.Ignore;
+import org.junit.Test;
 
 
 /**
  * Model tests for RoutingAlgorithmOneOf
  */
-class RoutingAlgorithmOneOfTest {
+public class RoutingAlgorithmOneOfTest {
     private final RoutingAlgorithmOneOf model = new RoutingAlgorithmOneOf();
 
     /**
      * Model tests for RoutingAlgorithmOneOf
      */
     @Test
-    void testRoutingAlgorithmOneOf() {
+    public void testRoutingAlgorithmOneOf() {
         // TODO: test RoutingAlgorithmOneOf
     }
 
@@ -40,7 +42,7 @@ class RoutingAlgorithmOneOfTest {
      * Test the property 'type'
      */
     @Test
-    void typeTest() {
+    public void typeTest() {
         // TODO: test type
     }
 
@@ -48,7 +50,7 @@ class RoutingAlgorithmOneOfTest {
      * Test the property 'data'
      */
     @Test
-    void dataTest() {
+    public void dataTest() {
         // TODO: test data
     }
 

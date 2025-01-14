@@ -18,20 +18,22 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonTypeName;
 import com.fasterxml.jackson.annotation.JsonValue;
-import org.junit.jupiter.api.Test;
+import org.junit.Assert;
+import org.junit.Ignore;
+import org.junit.Test;
 
 
 /**
  * Model tests for MbWayRedirection
  */
-class MbWayRedirectionTest {
+public class MbWayRedirectionTest {
     private final MbWayRedirection model = new MbWayRedirection();
 
     /**
      * Model tests for MbWayRedirection
      */
     @Test
-    void testMbWayRedirection() {
+    public void testMbWayRedirection() {
         // TODO: test MbWayRedirection
     }
 
@@ -39,7 +41,7 @@ class MbWayRedirectionTest {
      * Test the property 'telephoneNumber'
      */
     @Test
-    void telephoneNumberTest() {
+    public void telephoneNumberTest() {
         // TODO: test telephoneNumber
     }
 

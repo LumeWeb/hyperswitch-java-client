@@ -18,20 +18,22 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonTypeName;
 import com.fasterxml.jackson.annotation.JsonValue;
-import org.junit.jupiter.api.Test;
+import org.junit.Assert;
+import org.junit.Ignore;
+import org.junit.Test;
 
 
 /**
  * Model tests for RewardData
  */
-class RewardDataTest {
+public class RewardDataTest {
     private final RewardData model = new RewardData();
 
     /**
      * Model tests for RewardData
      */
     @Test
-    void testRewardData() {
+    public void testRewardData() {
         // TODO: test RewardData
     }
 
@@ -39,7 +41,7 @@ class RewardDataTest {
      * Test the property 'merchantId'
      */
     @Test
-    void merchantIdTest() {
+    public void merchantIdTest() {
         // TODO: test merchantId
     }
 

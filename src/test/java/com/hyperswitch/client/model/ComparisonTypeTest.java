@@ -13,18 +13,20 @@
 
 package com.hyperswitch.client.model;
 
-import org.junit.jupiter.api.Test;
+import org.junit.Assert;
+import org.junit.Ignore;
+import org.junit.Test;
 
 
 /**
  * Model tests for ComparisonType
  */
-class ComparisonTypeTest {
+public class ComparisonTypeTest {
     /**
      * Model tests for ComparisonType
      */
     @Test
-    void testComparisonType() {
+    public void testComparisonType() {
         // TODO: test ComparisonType
     }
 

@@ -5,10 +5,21 @@ on:
         types: [closed]
         paths:
             - 'src/**'
+    workflow_dispatch:
+        inputs:
+            version_bump:
+                description: 'Version bump type (patch/minor/major)'
+                required: true
+                default: 'patch'
+                type: choice
+                options:
+                    - patch
+                    - minor
+                    - major
 
 jobs:
     release:
-        if: github.event.pull_request.merged == true
+        if: github.event.pull_request.merged == true || github.event_name == 'workflow_dispatch'
         runs-on: ubuntu-latest
         permissions:
             contents: write
@@ -40,7 +51,7 @@ jobs:
               with:
                   github_token: ${{ secrets.GITHUB_TOKEN }}
                   dry_run: true
-                  default_bump: patch
+                  default_bump: ${{ github.event.inputs.version_bump || 'patch' }}
 
             - name: Update version in build files
               run: ./gradlew properties -Pversion=${{ steps.semver.outputs.new_version }}
@@ -54,7 +65,7 @@ jobs:
                   body: |
                       Automated PR to update version to ${{ steps.semver.outputs.new_version }}
 
-                      This update was triggered by PR #${{ github.event.pull_request.number }}
+                      This update was triggered by ${{ github.event_name == 'pull_request' && format('PR #{0}', github.event.pull_request.number) || 'manual workflow dispatch' }}
                   branch: chore/version-bump
                   branch-suffix: timestamp
                   delete-branch: true
@@ -71,7 +82,7 @@ jobs:
               uses: mathieudutour/github-tag-action@v6.1
               with:
                   github_token: ${{ secrets.GITHUB_TOKEN }}
-                  commit_sha: ${{ github.event.pull_request.merge_commit_sha }}
+                  commit_sha: ${{ github.event.pull_request.merge_commit_sha || github.sha }}
 
             - name: Publish to GitHub Packages
               run: |

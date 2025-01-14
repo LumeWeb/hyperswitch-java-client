@@ -19,7 +19,6 @@ repositories {
 }
 
 if(hasProperty('target') && target == 'android') {
-    // Android configuration remains the same
     apply plugin: 'com.android.library'
     apply plugin: 'com.github.dcendents.android-maven'
 
@@ -80,33 +79,10 @@ if(hasProperty('target') && target == 'android') {
     targetCompatibility = JavaVersion.VERSION_1_8
 
     publishing {
-        repositories {
-            maven {
-                name = "GitHubPackages"
-                url = uri("https://maven.pkg.github.com/lumeweb/hyperswitch-java-client")
-                credentials {
-                    username = project.findProperty("publishGhPackagesUsername") ?: System.getenv("GITHUB_ACTOR")
-                    password = project.findProperty("publishGhPackagesPassword") ?: System.getenv("GITHUB_TOKEN")
-                }
-            }
-        }
-
         publications {
-            gpr(MavenPublication) {
-                from(components.java)
+            maven(MavenPublication) {
                 artifactId = 'hyperswitch-java-client'
-
-                pom {
-                    name = 'Hyperswitch Java Client'
-                    description = 'Java client for Hyperswitch API'
-                    url = 'https://github.com/lumeweb/hyperswitch-java-client'
-                    licenses {
-                        license {
-                            name = 'The Apache License, Version 2.0'
-                            url = 'http://www.apache.org/licenses/LICENSE-2.0.txt'
-                        }
-                    }
-                }
+                from components.java
             }
         }
     }
@@ -115,47 +91,47 @@ if(hasProperty('target') && target == 'android') {
         main = System.getProperty('mainClass')
         classpath = sourceSets.main.runtimeClasspath
     }
+
+    task sourcesJar(type: Jar, dependsOn: classes) {
+        classifier = 'sources'
+        from sourceSets.main.allSource
+    }
+
+    task javadocJar(type: Jar, dependsOn: javadoc) {
+        classifier = 'javadoc'
+        from javadoc.destinationDir
+    }
+
+    artifacts {
+        archives sourcesJar
+        archives javadocJar
+    }
 }
 
 test {
     useJUnitPlatform()
 }
 
-// Dependencies section remains the same
 ext {
-    swagger_annotations_version = "1.6.11"
-    jackson_version = "2.14.3"
-    jackson_databind_version = "2.14.3"
+    swagger_annotations_version = "1.6.6"
+    jackson_version = "2.17.1"
+    jackson_databind_version = "2.17.1"
     jackson_databind_nullable_version = "0.2.6"
     jakarta_annotation_version = "1.3.5"
-    feign_version = "10.12"
-    feign_form_version = "3.8.0"
-    junit_version = "5.7.0"
-    scribejava_version = "8.0.0"
+    httpclient_version = "5.1.3"
+    junit_version = "4.13.2"
 }
 
 dependencies {
     implementation "io.swagger:swagger-annotations:$swagger_annotations_version"
     implementation "com.google.code.findbugs:jsr305:3.0.2"
-    implementation "io.github.openfeign:feign-core:$feign_version"
-    implementation "io.github.openfeign:feign-jackson:$feign_version"
-    implementation "io.github.openfeign:feign-slf4j:$feign_version"
-    implementation "io.github.openfeign:feign-okhttp:$feign_version"
-    implementation "io.github.openfeign.form:feign-form:$feign_form_version"
+    implementation "org.apache.httpcomponents.client5:httpclient5:$httpclient_version"
     implementation "com.fasterxml.jackson.core:jackson-core:$jackson_version"
     implementation "com.fasterxml.jackson.core:jackson-annotations:$jackson_version"
     implementation "com.fasterxml.jackson.core:jackson-databind:$jackson_databind_version"
+    implementation "com.fasterxml.jackson.jaxrs:jackson-jaxrs-json-provider:$jackson_version"
     implementation "org.openapitools:jackson-databind-nullable:$jackson_databind_nullable_version"
     implementation "com.fasterxml.jackson.datatype:jackson-datatype-jsr310:$jackson_version"
-    implementation "com.brsanthu:migbase64:2.2"
-    implementation "com.github.scribejava:scribejava-core:$scribejava_version"
-    implementation "com.brsanthu:migbase64:2.2"
     implementation "jakarta.annotation:jakarta.annotation-api:$jakarta_annotation_version"
-    testImplementation "org.junit.jupiter:junit-jupiter:$junit_version"
-    testRuntimeOnly "org.junit.jupiter:junit-jupiter-engine:$junit_version"
-    testImplementation "org.junit.jupiter:junit-jupiter-params:$junit_version"
-    testImplementation "com.github.tomakehurst:wiremock-jre8:2.35.1"
-    testImplementation "org.hamcrest:hamcrest:2.2"
-    testImplementation "commons-io:commons-io:2.8.0"
-    testImplementation "ch.qos.logback:logback-classic:1.2.3"
+    testImplementation "junit:junit:$junit_version"
 }

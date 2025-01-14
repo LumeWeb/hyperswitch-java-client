@@ -15,6 +15,22 @@ jobs:
         steps:
             - uses: actions/checkout@v3
 
+            # Add step to check for existing PR
+            - name: Check for existing PR
+              id: check-pr
+              run: |
+                  PR_NUMBER=$(gh pr list --search "is:open head:chore/openapi-spec-update" --json number -q '.[0].number')
+                  if [ ! -z "$PR_NUMBER" ]; then
+                      echo "Found existing PR #$PR_NUMBER"
+                      echo "exists=true" >> $GITHUB_OUTPUT
+                      echo "number=$PR_NUMBER" >> $GITHUB_OUTPUT
+                  else
+                      echo "No existing PR found"
+                      echo "exists=false" >> $GITHUB_OUTPUT
+                  fi
+              env:
+                  GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
             - name: Get latest release tag
               id: get-latest-tag
               run: |
@@ -34,7 +50,7 @@ jobs:
 
             - name: Validate OpenAPI spec
               id: validate-spec
-              continue-on-error: true  # This ensures the workflow continues even if this step fails
+              continue-on-error: true
               run: |
                   # Create validation output file
                   touch validation_output.txt
@@ -61,7 +77,7 @@ jobs:
               id: hash-check
               run: |
                   if [ -f "openapi_spec.json" ]; then
-                    OLD_HASH=$(sha256sum openapi.json | cut -d' ' -f1)
+                    OLD_HASH=$(sha256sum openapi_spec.json | cut -d' ' -f1)
                     NEW_HASH=$(sha256sum new_spec.json | cut -d' ' -f1)
                     echo "old_hash=$OLD_HASH" >> $GITHUB_OUTPUT
                     echo "new_hash=$NEW_HASH" >> $GITHUB_OUTPUT
@@ -74,7 +90,8 @@ jobs:
               if: steps.hash-check.outputs.different == 'true'
               run: mv new_spec.json openapi_spec.json
 
-            - name: Create Pull Request
+            # Modified PR creation step to handle existing PRs
+            - name: Handle Pull Request
               if: steps.hash-check.outputs.different == 'true'
               uses: peter-evans/create-pull-request@v5
               with:
@@ -99,7 +116,7 @@ jobs:
                       ```
                       </details>
                   branch: chore/openapi-spec-update
-                  branch-suffix: timestamp
+                  branch-suffix: ""
                   delete-branch: true
                   labels: |
                       openapi-update

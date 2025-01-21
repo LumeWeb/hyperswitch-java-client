@@ -46,36 +46,41 @@ import java.util.StringJoiner;
   BankTransferInstructions.JSON_PROPERTY_BACS_BANK_INSTRUCTIONS,
   BankTransferInstructions.JSON_PROPERTY_MULTIBANCO
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class BankTransferInstructions {
   public static final String JSON_PROPERTY_DOKU_BANK_TRANSFER_INSTRUCTIONS = "doku_bank_transfer_instructions";
+  @javax.annotation.Nonnull
   private DokuBankTransferInstructions dokuBankTransferInstructions;
 
   public static final String JSON_PROPERTY_ACH_CREDIT_TRANSFER = "ach_credit_transfer";
+  @javax.annotation.Nonnull
   private AchTransfer achCreditTransfer;
 
   public static final String JSON_PROPERTY_SEPA_BANK_INSTRUCTIONS = "sepa_bank_instructions";
+  @javax.annotation.Nonnull
   private SepaBankTransferInstructions sepaBankInstructions;
 
   public static final String JSON_PROPERTY_BACS_BANK_INSTRUCTIONS = "bacs_bank_instructions";
+  @javax.annotation.Nonnull
   private BacsBankTransferInstructions bacsBankInstructions;
 
   public static final String JSON_PROPERTY_MULTIBANCO = "multibanco";
+  @javax.annotation.Nonnull
   private MultibancoTransferInstructions multibanco;
 
   public BankTransferInstructions() {
   }
 
-  public BankTransferInstructions dokuBankTransferInstructions(DokuBankTransferInstructions dokuBankTransferInstructions) {
+  public BankTransferInstructions dokuBankTransferInstructions(@javax.annotation.Nonnull DokuBankTransferInstructions dokuBankTransferInstructions) {
     
     this.dokuBankTransferInstructions = dokuBankTransferInstructions;
     return this;
   }
 
-   /**
+  /**
    * Get dokuBankTransferInstructions
    * @return dokuBankTransferInstructions
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_DOKU_BANK_TRANSFER_INSTRUCTIONS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -87,21 +92,20 @@ public class BankTransferInstructions {
 
   @JsonProperty(JSON_PROPERTY_DOKU_BANK_TRANSFER_INSTRUCTIONS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setDokuBankTransferInstructions(DokuBankTransferInstructions dokuBankTransferInstructions) {
+  public void setDokuBankTransferInstructions(@javax.annotation.Nonnull DokuBankTransferInstructions dokuBankTransferInstructions) {
     this.dokuBankTransferInstructions = dokuBankTransferInstructions;
   }
 
-
-  public BankTransferInstructions achCreditTransfer(AchTransfer achCreditTransfer) {
+  public BankTransferInstructions achCreditTransfer(@javax.annotation.Nonnull AchTransfer achCreditTransfer) {
     
     this.achCreditTransfer = achCreditTransfer;
     return this;
   }
 
-   /**
+  /**
    * Get achCreditTransfer
    * @return achCreditTransfer
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_ACH_CREDIT_TRANSFER)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -113,21 +117,20 @@ public class BankTransferInstructions {
 
   @JsonProperty(JSON_PROPERTY_ACH_CREDIT_TRANSFER)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setAchCreditTransfer(AchTransfer achCreditTransfer) {
+  public void setAchCreditTransfer(@javax.annotation.Nonnull AchTransfer achCreditTransfer) {
     this.achCreditTransfer = achCreditTransfer;
   }
 
-
-  public BankTransferInstructions sepaBankInstructions(SepaBankTransferInstructions sepaBankInstructions) {
+  public BankTransferInstructions sepaBankInstructions(@javax.annotation.Nonnull SepaBankTransferInstructions sepaBankInstructions) {
     
     this.sepaBankInstructions = sepaBankInstructions;
     return this;
   }
 
-   /**
+  /**
    * Get sepaBankInstructions
    * @return sepaBankInstructions
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_SEPA_BANK_INSTRUCTIONS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -139,21 +142,20 @@ public class BankTransferInstructions {
 
   @JsonProperty(JSON_PROPERTY_SEPA_BANK_INSTRUCTIONS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setSepaBankInstructions(SepaBankTransferInstructions sepaBankInstructions) {
+  public void setSepaBankInstructions(@javax.annotation.Nonnull SepaBankTransferInstructions sepaBankInstructions) {
     this.sepaBankInstructions = sepaBankInstructions;
   }
 
-
-  public BankTransferInstructions bacsBankInstructions(BacsBankTransferInstructions bacsBankInstructions) {
+  public BankTransferInstructions bacsBankInstructions(@javax.annotation.Nonnull BacsBankTransferInstructions bacsBankInstructions) {
     
     this.bacsBankInstructions = bacsBankInstructions;
     return this;
   }
 
-   /**
+  /**
    * Get bacsBankInstructions
    * @return bacsBankInstructions
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_BACS_BANK_INSTRUCTIONS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -165,21 +167,20 @@ public class BankTransferInstructions {
 
   @JsonProperty(JSON_PROPERTY_BACS_BANK_INSTRUCTIONS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setBacsBankInstructions(BacsBankTransferInstructions bacsBankInstructions) {
+  public void setBacsBankInstructions(@javax.annotation.Nonnull BacsBankTransferInstructions bacsBankInstructions) {
     this.bacsBankInstructions = bacsBankInstructions;
   }
 
-
-  public BankTransferInstructions multibanco(MultibancoTransferInstructions multibanco) {
+  public BankTransferInstructions multibanco(@javax.annotation.Nonnull MultibancoTransferInstructions multibanco) {
     
     this.multibanco = multibanco;
     return this;
   }
 
-   /**
+  /**
    * Get multibanco
    * @return multibanco
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_MULTIBANCO)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -191,7 +192,7 @@ public class BankTransferInstructions {
 
   @JsonProperty(JSON_PROPERTY_MULTIBANCO)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setMultibanco(MultibancoTransferInstructions multibanco) {
+  public void setMultibanco(@javax.annotation.Nonnull MultibancoTransferInstructions multibanco) {
     this.multibanco = multibanco;
   }
 

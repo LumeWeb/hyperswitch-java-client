@@ -38,27 +38,29 @@ import java.util.StringJoiner;
   PayLaterDataOneOf3AfterpayClearpayRedirect.JSON_PROPERTY_BILLING_NAME
 })
 @JsonTypeName("PayLaterData_oneOf_3_afterpay_clearpay_redirect")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class PayLaterDataOneOf3AfterpayClearpayRedirect {
   public static final String JSON_PROPERTY_BILLING_EMAIL = "billing_email";
+  @javax.annotation.Nullable
   private JsonNullable<String> billingEmail = JsonNullable.<String>undefined();
 
   public static final String JSON_PROPERTY_BILLING_NAME = "billing_name";
+  @javax.annotation.Nullable
   private JsonNullable<String> billingName = JsonNullable.<String>undefined();
 
   public PayLaterDataOneOf3AfterpayClearpayRedirect() {
   }
 
-  public PayLaterDataOneOf3AfterpayClearpayRedirect billingEmail(String billingEmail) {
+  public PayLaterDataOneOf3AfterpayClearpayRedirect billingEmail(@javax.annotation.Nullable String billingEmail) {
     this.billingEmail = JsonNullable.<String>of(billingEmail);
     
     return this;
   }
 
-   /**
+  /**
    * The billing email
    * @return billingEmail
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -78,21 +80,20 @@ public class PayLaterDataOneOf3AfterpayClearpayRedirect {
     this.billingEmail = billingEmail;
   }
 
-  public void setBillingEmail(String billingEmail) {
+  public void setBillingEmail(@javax.annotation.Nullable String billingEmail) {
     this.billingEmail = JsonNullable.<String>of(billingEmail);
   }
 
-
-  public PayLaterDataOneOf3AfterpayClearpayRedirect billingName(String billingName) {
+  public PayLaterDataOneOf3AfterpayClearpayRedirect billingName(@javax.annotation.Nullable String billingName) {
     this.billingName = JsonNullable.<String>of(billingName);
     
     return this;
   }
 
-   /**
+  /**
    * The billing name
    * @return billingName
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -112,7 +113,7 @@ public class PayLaterDataOneOf3AfterpayClearpayRedirect {
     this.billingName = billingName;
   }
 
-  public void setBillingName(String billingName) {
+  public void setBillingName(@javax.annotation.Nullable String billingName) {
     this.billingName = JsonNullable.<String>of(billingName);
   }
 

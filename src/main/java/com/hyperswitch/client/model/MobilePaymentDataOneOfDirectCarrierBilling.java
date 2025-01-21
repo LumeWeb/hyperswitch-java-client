@@ -38,27 +38,29 @@ import java.util.StringJoiner;
   MobilePaymentDataOneOfDirectCarrierBilling.JSON_PROPERTY_CLIENT_UID
 })
 @JsonTypeName("MobilePaymentData_oneOf_direct_carrier_billing")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class MobilePaymentDataOneOfDirectCarrierBilling {
   public static final String JSON_PROPERTY_MSISDN = "msisdn";
+  @javax.annotation.Nonnull
   private String msisdn;
 
   public static final String JSON_PROPERTY_CLIENT_UID = "client_uid";
+  @javax.annotation.Nullable
   private JsonNullable<String> clientUid = JsonNullable.<String>undefined();
 
   public MobilePaymentDataOneOfDirectCarrierBilling() {
   }
 
-  public MobilePaymentDataOneOfDirectCarrierBilling msisdn(String msisdn) {
+  public MobilePaymentDataOneOfDirectCarrierBilling msisdn(@javax.annotation.Nonnull String msisdn) {
     
     this.msisdn = msisdn;
     return this;
   }
 
-   /**
+  /**
    * The phone number of the user
    * @return msisdn
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_MSISDN)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -70,21 +72,20 @@ public class MobilePaymentDataOneOfDirectCarrierBilling {
 
   @JsonProperty(JSON_PROPERTY_MSISDN)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setMsisdn(String msisdn) {
+  public void setMsisdn(@javax.annotation.Nonnull String msisdn) {
     this.msisdn = msisdn;
   }
 
-
-  public MobilePaymentDataOneOfDirectCarrierBilling clientUid(String clientUid) {
+  public MobilePaymentDataOneOfDirectCarrierBilling clientUid(@javax.annotation.Nullable String clientUid) {
     this.clientUid = JsonNullable.<String>of(clientUid);
     
     return this;
   }
 
-   /**
+  /**
    * Unique user id
    * @return clientUid
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -104,7 +105,7 @@ public class MobilePaymentDataOneOfDirectCarrierBilling {
     this.clientUid = clientUid;
   }
 
-  public void setClientUid(String clientUid) {
+  public void setClientUid(@javax.annotation.Nullable String clientUid) {
     this.clientUid = JsonNullable.<String>of(clientUid);
   }
 

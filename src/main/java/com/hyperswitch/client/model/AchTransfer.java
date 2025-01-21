@@ -35,33 +35,37 @@ import java.util.StringJoiner;
   AchTransfer.JSON_PROPERTY_ROUTING_NUMBER,
   AchTransfer.JSON_PROPERTY_SWIFT_CODE
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class AchTransfer {
   public static final String JSON_PROPERTY_ACCOUNT_NUMBER = "account_number";
+  @javax.annotation.Nonnull
   private String accountNumber;
 
   public static final String JSON_PROPERTY_BANK_NAME = "bank_name";
+  @javax.annotation.Nonnull
   private String bankName;
 
   public static final String JSON_PROPERTY_ROUTING_NUMBER = "routing_number";
+  @javax.annotation.Nonnull
   private String routingNumber;
 
   public static final String JSON_PROPERTY_SWIFT_CODE = "swift_code";
+  @javax.annotation.Nonnull
   private String swiftCode;
 
   public AchTransfer() {
   }
 
-  public AchTransfer accountNumber(String accountNumber) {
+  public AchTransfer accountNumber(@javax.annotation.Nonnull String accountNumber) {
     
     this.accountNumber = accountNumber;
     return this;
   }
 
-   /**
+  /**
    * Get accountNumber
    * @return accountNumber
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_ACCOUNT_NUMBER)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -73,21 +77,20 @@ public class AchTransfer {
 
   @JsonProperty(JSON_PROPERTY_ACCOUNT_NUMBER)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setAccountNumber(String accountNumber) {
+  public void setAccountNumber(@javax.annotation.Nonnull String accountNumber) {
     this.accountNumber = accountNumber;
   }
 
-
-  public AchTransfer bankName(String bankName) {
+  public AchTransfer bankName(@javax.annotation.Nonnull String bankName) {
     
     this.bankName = bankName;
     return this;
   }
 
-   /**
+  /**
    * Get bankName
    * @return bankName
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_BANK_NAME)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -99,21 +102,20 @@ public class AchTransfer {
 
   @JsonProperty(JSON_PROPERTY_BANK_NAME)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setBankName(String bankName) {
+  public void setBankName(@javax.annotation.Nonnull String bankName) {
     this.bankName = bankName;
   }
 
-
-  public AchTransfer routingNumber(String routingNumber) {
+  public AchTransfer routingNumber(@javax.annotation.Nonnull String routingNumber) {
     
     this.routingNumber = routingNumber;
     return this;
   }
 
-   /**
+  /**
    * Get routingNumber
    * @return routingNumber
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_ROUTING_NUMBER)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -125,21 +127,20 @@ public class AchTransfer {
 
   @JsonProperty(JSON_PROPERTY_ROUTING_NUMBER)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setRoutingNumber(String routingNumber) {
+  public void setRoutingNumber(@javax.annotation.Nonnull String routingNumber) {
     this.routingNumber = routingNumber;
   }
 
-
-  public AchTransfer swiftCode(String swiftCode) {
+  public AchTransfer swiftCode(@javax.annotation.Nonnull String swiftCode) {
     
     this.swiftCode = swiftCode;
     return this;
   }
 
-   /**
+  /**
    * Get swiftCode
    * @return swiftCode
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_SWIFT_CODE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -151,7 +152,7 @@ public class AchTransfer {
 
   @JsonProperty(JSON_PROPERTY_SWIFT_CODE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setSwiftCode(String swiftCode) {
+  public void setSwiftCode(@javax.annotation.Nonnull String swiftCode) {
     this.swiftCode = swiftCode;
   }
 

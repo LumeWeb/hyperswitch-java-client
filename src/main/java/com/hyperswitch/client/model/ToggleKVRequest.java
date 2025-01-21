@@ -32,24 +32,25 @@ import java.util.StringJoiner;
 @JsonPropertyOrder({
   ToggleKVRequest.JSON_PROPERTY_KV_ENABLED
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class ToggleKVRequest {
   public static final String JSON_PROPERTY_KV_ENABLED = "kv_enabled";
+  @javax.annotation.Nonnull
   private Boolean kvEnabled;
 
   public ToggleKVRequest() {
   }
 
-  public ToggleKVRequest kvEnabled(Boolean kvEnabled) {
+  public ToggleKVRequest kvEnabled(@javax.annotation.Nonnull Boolean kvEnabled) {
     
     this.kvEnabled = kvEnabled;
     return this;
   }
 
-   /**
+  /**
    * Status of KV for the specific merchant
    * @return kvEnabled
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_KV_ENABLED)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -61,7 +62,7 @@ public class ToggleKVRequest {
 
   @JsonProperty(JSON_PROPERTY_KV_ENABLED)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setKvEnabled(Boolean kvEnabled) {
+  public void setKvEnabled(@javax.annotation.Nonnull Boolean kvEnabled) {
     this.kvEnabled = kvEnabled;
   }
 

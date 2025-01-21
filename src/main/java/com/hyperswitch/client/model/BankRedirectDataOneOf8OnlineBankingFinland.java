@@ -37,24 +37,25 @@ import java.util.StringJoiner;
   BankRedirectDataOneOf8OnlineBankingFinland.JSON_PROPERTY_EMAIL
 })
 @JsonTypeName("BankRedirectData_oneOf_8_online_banking_finland")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class BankRedirectDataOneOf8OnlineBankingFinland {
   public static final String JSON_PROPERTY_EMAIL = "email";
+  @javax.annotation.Nullable
   private JsonNullable<String> email = JsonNullable.<String>undefined();
 
   public BankRedirectDataOneOf8OnlineBankingFinland() {
   }
 
-  public BankRedirectDataOneOf8OnlineBankingFinland email(String email) {
+  public BankRedirectDataOneOf8OnlineBankingFinland email(@javax.annotation.Nullable String email) {
     this.email = JsonNullable.<String>of(email);
     
     return this;
   }
 
-   /**
+  /**
    * Get email
    * @return email
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -74,7 +75,7 @@ public class BankRedirectDataOneOf8OnlineBankingFinland {
     this.email = email;
   }
 
-  public void setEmail(String email) {
+  public void setEmail(@javax.annotation.Nullable String email) {
     this.email = JsonNullable.<String>of(email);
   }
 

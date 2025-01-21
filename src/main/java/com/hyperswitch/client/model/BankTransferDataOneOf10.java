@@ -34,24 +34,25 @@ import java.util.StringJoiner;
   BankTransferDataOneOf10.JSON_PROPERTY_MANDIRI_VA_BANK_TRANSFER
 })
 @JsonTypeName("BankTransferData_oneOf_10")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class BankTransferDataOneOf10 {
   public static final String JSON_PROPERTY_MANDIRI_VA_BANK_TRANSFER = "mandiri_va_bank_transfer";
+  @javax.annotation.Nonnull
   private BankTransferDataOneOf4PermataBankTransfer mandiriVaBankTransfer;
 
   public BankTransferDataOneOf10() {
   }
 
-  public BankTransferDataOneOf10 mandiriVaBankTransfer(BankTransferDataOneOf4PermataBankTransfer mandiriVaBankTransfer) {
+  public BankTransferDataOneOf10 mandiriVaBankTransfer(@javax.annotation.Nonnull BankTransferDataOneOf4PermataBankTransfer mandiriVaBankTransfer) {
     
     this.mandiriVaBankTransfer = mandiriVaBankTransfer;
     return this;
   }
 
-   /**
+  /**
    * Get mandiriVaBankTransfer
    * @return mandiriVaBankTransfer
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_MANDIRI_VA_BANK_TRANSFER)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -63,7 +64,7 @@ public class BankTransferDataOneOf10 {
 
   @JsonProperty(JSON_PROPERTY_MANDIRI_VA_BANK_TRANSFER)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setMandiriVaBankTransfer(BankTransferDataOneOf4PermataBankTransfer mandiriVaBankTransfer) {
+  public void setMandiriVaBankTransfer(@javax.annotation.Nonnull BankTransferDataOneOf4PermataBankTransfer mandiriVaBankTransfer) {
     this.mandiriVaBankTransfer = mandiriVaBankTransfer;
   }
 

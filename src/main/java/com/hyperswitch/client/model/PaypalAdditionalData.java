@@ -38,30 +38,33 @@ import java.util.StringJoiner;
   PaypalAdditionalData.JSON_PROPERTY_TELEPHONE_NUMBER,
   PaypalAdditionalData.JSON_PROPERTY_PAYPAL_ID
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class PaypalAdditionalData {
   public static final String JSON_PROPERTY_EMAIL = "email";
+  @javax.annotation.Nullable
   private JsonNullable<String> email = JsonNullable.<String>undefined();
 
   public static final String JSON_PROPERTY_TELEPHONE_NUMBER = "telephone_number";
+  @javax.annotation.Nullable
   private JsonNullable<String> telephoneNumber = JsonNullable.<String>undefined();
 
   public static final String JSON_PROPERTY_PAYPAL_ID = "paypal_id";
+  @javax.annotation.Nullable
   private JsonNullable<String> paypalId = JsonNullable.<String>undefined();
 
   public PaypalAdditionalData() {
   }
 
-  public PaypalAdditionalData email(String email) {
+  public PaypalAdditionalData email(@javax.annotation.Nullable String email) {
     this.email = JsonNullable.<String>of(email);
     
     return this;
   }
 
-   /**
+  /**
    * Email linked with paypal account
    * @return email
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -81,21 +84,20 @@ public class PaypalAdditionalData {
     this.email = email;
   }
 
-  public void setEmail(String email) {
+  public void setEmail(@javax.annotation.Nullable String email) {
     this.email = JsonNullable.<String>of(email);
   }
 
-
-  public PaypalAdditionalData telephoneNumber(String telephoneNumber) {
+  public PaypalAdditionalData telephoneNumber(@javax.annotation.Nullable String telephoneNumber) {
     this.telephoneNumber = JsonNullable.<String>of(telephoneNumber);
     
     return this;
   }
 
-   /**
+  /**
    * mobile number linked to paypal account
    * @return telephoneNumber
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -115,21 +117,20 @@ public class PaypalAdditionalData {
     this.telephoneNumber = telephoneNumber;
   }
 
-  public void setTelephoneNumber(String telephoneNumber) {
+  public void setTelephoneNumber(@javax.annotation.Nullable String telephoneNumber) {
     this.telephoneNumber = JsonNullable.<String>of(telephoneNumber);
   }
 
-
-  public PaypalAdditionalData paypalId(String paypalId) {
+  public PaypalAdditionalData paypalId(@javax.annotation.Nullable String paypalId) {
     this.paypalId = JsonNullable.<String>of(paypalId);
     
     return this;
   }
 
-   /**
+  /**
    * id of the paypal account
    * @return paypalId
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -149,7 +150,7 @@ public class PaypalAdditionalData {
     this.paypalId = paypalId;
   }
 
-  public void setPaypalId(String paypalId) {
+  public void setPaypalId(@javax.annotation.Nullable String paypalId) {
     this.paypalId = JsonNullable.<String>of(paypalId);
   }
 

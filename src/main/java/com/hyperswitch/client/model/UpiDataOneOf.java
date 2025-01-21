@@ -34,24 +34,25 @@ import java.util.StringJoiner;
   UpiDataOneOf.JSON_PROPERTY_UPI_COLLECT
 })
 @JsonTypeName("UpiData_oneOf")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class UpiDataOneOf {
   public static final String JSON_PROPERTY_UPI_COLLECT = "upi_collect";
+  @javax.annotation.Nonnull
   private UpiCollectData upiCollect;
 
   public UpiDataOneOf() {
   }
 
-  public UpiDataOneOf upiCollect(UpiCollectData upiCollect) {
+  public UpiDataOneOf upiCollect(@javax.annotation.Nonnull UpiCollectData upiCollect) {
     
     this.upiCollect = upiCollect;
     return this;
   }
 
-   /**
+  /**
    * Get upiCollect
    * @return upiCollect
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_UPI_COLLECT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -63,7 +64,7 @@ public class UpiDataOneOf {
 
   @JsonProperty(JSON_PROPERTY_UPI_COLLECT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setUpiCollect(UpiCollectData upiCollect) {
+  public void setUpiCollect(@javax.annotation.Nonnull UpiCollectData upiCollect) {
     this.upiCollect = upiCollect;
   }
 

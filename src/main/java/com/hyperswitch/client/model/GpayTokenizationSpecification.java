@@ -34,27 +34,29 @@ import java.util.StringJoiner;
   GpayTokenizationSpecification.JSON_PROPERTY_TYPE,
   GpayTokenizationSpecification.JSON_PROPERTY_PARAMETERS
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class GpayTokenizationSpecification {
   public static final String JSON_PROPERTY_TYPE = "type";
+  @javax.annotation.Nonnull
   private String type;
 
   public static final String JSON_PROPERTY_PARAMETERS = "parameters";
+  @javax.annotation.Nonnull
   private GpayTokenParameters parameters;
 
   public GpayTokenizationSpecification() {
   }
 
-  public GpayTokenizationSpecification type(String type) {
+  public GpayTokenizationSpecification type(@javax.annotation.Nonnull String type) {
     
     this.type = type;
     return this;
   }
 
-   /**
+  /**
    * The token specification type(ex: PAYMENT_GATEWAY)
    * @return type
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_TYPE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -66,21 +68,20 @@ public class GpayTokenizationSpecification {
 
   @JsonProperty(JSON_PROPERTY_TYPE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setType(String type) {
+  public void setType(@javax.annotation.Nonnull String type) {
     this.type = type;
   }
 
-
-  public GpayTokenizationSpecification parameters(GpayTokenParameters parameters) {
+  public GpayTokenizationSpecification parameters(@javax.annotation.Nonnull GpayTokenParameters parameters) {
     
     this.parameters = parameters;
     return this;
   }
 
-   /**
+  /**
    * Get parameters
    * @return parameters
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_PARAMETERS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -92,7 +93,7 @@ public class GpayTokenizationSpecification {
 
   @JsonProperty(JSON_PROPERTY_PARAMETERS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setParameters(GpayTokenParameters parameters) {
+  public void setParameters(@javax.annotation.Nonnull GpayTokenParameters parameters) {
     this.parameters = parameters;
   }
 

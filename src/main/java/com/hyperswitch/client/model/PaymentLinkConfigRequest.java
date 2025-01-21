@@ -24,6 +24,7 @@ import com.hyperswitch.client.model.PaymentLinkBackgroundImageConfig;
 import com.hyperswitch.client.model.PaymentLinkDetailsLayout;
 import com.hyperswitch.client.model.PaymentLinkTransactionDetails;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import org.openapitools.jackson.nullable.JsonNullable;
 import com.fasterxml.jackson.annotation.JsonIgnore;
@@ -51,54 +52,65 @@ import java.util.StringJoiner;
   PaymentLinkConfigRequest.JSON_PROPERTY_BACKGROUND_IMAGE,
   PaymentLinkConfigRequest.JSON_PROPERTY_DETAILS_LAYOUT
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class PaymentLinkConfigRequest {
   public static final String JSON_PROPERTY_THEME = "theme";
+  @javax.annotation.Nullable
   private JsonNullable<String> theme = JsonNullable.<String>undefined();
 
   public static final String JSON_PROPERTY_LOGO = "logo";
+  @javax.annotation.Nullable
   private JsonNullable<String> logo = JsonNullable.<String>undefined();
 
   public static final String JSON_PROPERTY_SELLER_NAME = "seller_name";
+  @javax.annotation.Nullable
   private JsonNullable<String> sellerName = JsonNullable.<String>undefined();
 
   public static final String JSON_PROPERTY_SDK_LAYOUT = "sdk_layout";
+  @javax.annotation.Nullable
   private JsonNullable<String> sdkLayout = JsonNullable.<String>undefined();
 
   public static final String JSON_PROPERTY_DISPLAY_SDK_ONLY = "display_sdk_only";
+  @javax.annotation.Nullable
   private JsonNullable<Boolean> displaySdkOnly = JsonNullable.<Boolean>of(false);
 
   public static final String JSON_PROPERTY_ENABLED_SAVED_PAYMENT_METHOD = "enabled_saved_payment_method";
+  @javax.annotation.Nullable
   private JsonNullable<Boolean> enabledSavedPaymentMethod = JsonNullable.<Boolean>of(false);
 
   public static final String JSON_PROPERTY_HIDE_CARD_NICKNAME_FIELD = "hide_card_nickname_field";
+  @javax.annotation.Nullable
   private JsonNullable<Boolean> hideCardNicknameField = JsonNullable.<Boolean>of(false);
 
   public static final String JSON_PROPERTY_SHOW_CARD_FORM_BY_DEFAULT = "show_card_form_by_default";
+  @javax.annotation.Nullable
   private JsonNullable<Boolean> showCardFormByDefault = JsonNullable.<Boolean>of(true);
 
   public static final String JSON_PROPERTY_TRANSACTION_DETAILS = "transaction_details";
+  @javax.annotation.Nullable
   private JsonNullable<List<PaymentLinkTransactionDetails>> transactionDetails = JsonNullable.<List<PaymentLinkTransactionDetails>>undefined();
 
   public static final String JSON_PROPERTY_BACKGROUND_IMAGE = "background_image";
+  @javax.annotation.Nullable
   private JsonNullable<PaymentLinkBackgroundImageConfig> backgroundImage = JsonNullable.<PaymentLinkBackgroundImageConfig>undefined();
 
   public static final String JSON_PROPERTY_DETAILS_LAYOUT = "details_layout";
+  @javax.annotation.Nullable
   private JsonNullable<PaymentLinkDetailsLayout> detailsLayout = JsonNullable.<PaymentLinkDetailsLayout>undefined();
 
   public PaymentLinkConfigRequest() {
   }
 
-  public PaymentLinkConfigRequest theme(String theme) {
+  public PaymentLinkConfigRequest theme(@javax.annotation.Nullable String theme) {
     this.theme = JsonNullable.<String>of(theme);
     
     return this;
   }
 
-   /**
+  /**
    * custom theme for the payment link
    * @return theme
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -118,21 +130,20 @@ public class PaymentLinkConfigRequest {
     this.theme = theme;
   }
 
-  public void setTheme(String theme) {
+  public void setTheme(@javax.annotation.Nullable String theme) {
     this.theme = JsonNullable.<String>of(theme);
   }
 
-
-  public PaymentLinkConfigRequest logo(String logo) {
+  public PaymentLinkConfigRequest logo(@javax.annotation.Nullable String logo) {
     this.logo = JsonNullable.<String>of(logo);
     
     return this;
   }
 
-   /**
+  /**
    * merchant display logo
    * @return logo
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -152,21 +163,20 @@ public class PaymentLinkConfigRequest {
     this.logo = logo;
   }
 
-  public void setLogo(String logo) {
+  public void setLogo(@javax.annotation.Nullable String logo) {
     this.logo = JsonNullable.<String>of(logo);
   }
 
-
-  public PaymentLinkConfigRequest sellerName(String sellerName) {
+  public PaymentLinkConfigRequest sellerName(@javax.annotation.Nullable String sellerName) {
     this.sellerName = JsonNullable.<String>of(sellerName);
     
     return this;
   }
 
-   /**
+  /**
    * Custom merchant name for payment link
    * @return sellerName
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -186,21 +196,20 @@ public class PaymentLinkConfigRequest {
     this.sellerName = sellerName;
   }
 
-  public void setSellerName(String sellerName) {
+  public void setSellerName(@javax.annotation.Nullable String sellerName) {
     this.sellerName = JsonNullable.<String>of(sellerName);
   }
 
-
-  public PaymentLinkConfigRequest sdkLayout(String sdkLayout) {
+  public PaymentLinkConfigRequest sdkLayout(@javax.annotation.Nullable String sdkLayout) {
     this.sdkLayout = JsonNullable.<String>of(sdkLayout);
     
     return this;
   }
 
-   /**
+  /**
    * Custom layout for sdk
    * @return sdkLayout
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -220,21 +229,20 @@ public class PaymentLinkConfigRequest {
     this.sdkLayout = sdkLayout;
   }
 
-  public void setSdkLayout(String sdkLayout) {
+  public void setSdkLayout(@javax.annotation.Nullable String sdkLayout) {
     this.sdkLayout = JsonNullable.<String>of(sdkLayout);
   }
 
-
-  public PaymentLinkConfigRequest displaySdkOnly(Boolean displaySdkOnly) {
+  public PaymentLinkConfigRequest displaySdkOnly(@javax.annotation.Nullable Boolean displaySdkOnly) {
     this.displaySdkOnly = JsonNullable.<Boolean>of(displaySdkOnly);
     
     return this;
   }
 
-   /**
+  /**
    * Display only the sdk for payment link
    * @return displaySdkOnly
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -254,21 +262,20 @@ public class PaymentLinkConfigRequest {
     this.displaySdkOnly = displaySdkOnly;
   }
 
-  public void setDisplaySdkOnly(Boolean displaySdkOnly) {
+  public void setDisplaySdkOnly(@javax.annotation.Nullable Boolean displaySdkOnly) {
     this.displaySdkOnly = JsonNullable.<Boolean>of(displaySdkOnly);
   }
 
-
-  public PaymentLinkConfigRequest enabledSavedPaymentMethod(Boolean enabledSavedPaymentMethod) {
+  public PaymentLinkConfigRequest enabledSavedPaymentMethod(@javax.annotation.Nullable Boolean enabledSavedPaymentMethod) {
     this.enabledSavedPaymentMethod = JsonNullable.<Boolean>of(enabledSavedPaymentMethod);
     
     return this;
   }
 
-   /**
+  /**
    * Enable saved payment method option for payment link
    * @return enabledSavedPaymentMethod
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -288,21 +295,20 @@ public class PaymentLinkConfigRequest {
     this.enabledSavedPaymentMethod = enabledSavedPaymentMethod;
   }
 
-  public void setEnabledSavedPaymentMethod(Boolean enabledSavedPaymentMethod) {
+  public void setEnabledSavedPaymentMethod(@javax.annotation.Nullable Boolean enabledSavedPaymentMethod) {
     this.enabledSavedPaymentMethod = JsonNullable.<Boolean>of(enabledSavedPaymentMethod);
   }
 
-
-  public PaymentLinkConfigRequest hideCardNicknameField(Boolean hideCardNicknameField) {
+  public PaymentLinkConfigRequest hideCardNicknameField(@javax.annotation.Nullable Boolean hideCardNicknameField) {
     this.hideCardNicknameField = JsonNullable.<Boolean>of(hideCardNicknameField);
     
     return this;
   }
 
-   /**
+  /**
    * Hide card nickname field option for payment link
    * @return hideCardNicknameField
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -322,21 +328,20 @@ public class PaymentLinkConfigRequest {
     this.hideCardNicknameField = hideCardNicknameField;
   }
 
-  public void setHideCardNicknameField(Boolean hideCardNicknameField) {
+  public void setHideCardNicknameField(@javax.annotation.Nullable Boolean hideCardNicknameField) {
     this.hideCardNicknameField = JsonNullable.<Boolean>of(hideCardNicknameField);
   }
 
-
-  public PaymentLinkConfigRequest showCardFormByDefault(Boolean showCardFormByDefault) {
+  public PaymentLinkConfigRequest showCardFormByDefault(@javax.annotation.Nullable Boolean showCardFormByDefault) {
     this.showCardFormByDefault = JsonNullable.<Boolean>of(showCardFormByDefault);
     
     return this;
   }
 
-   /**
+  /**
    * Show card form by default for payment link
    * @return showCardFormByDefault
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -356,12 +361,11 @@ public class PaymentLinkConfigRequest {
     this.showCardFormByDefault = showCardFormByDefault;
   }
 
-  public void setShowCardFormByDefault(Boolean showCardFormByDefault) {
+  public void setShowCardFormByDefault(@javax.annotation.Nullable Boolean showCardFormByDefault) {
     this.showCardFormByDefault = JsonNullable.<Boolean>of(showCardFormByDefault);
   }
 
-
-  public PaymentLinkConfigRequest transactionDetails(List<PaymentLinkTransactionDetails> transactionDetails) {
+  public PaymentLinkConfigRequest transactionDetails(@javax.annotation.Nullable List<PaymentLinkTransactionDetails> transactionDetails) {
     this.transactionDetails = JsonNullable.<List<PaymentLinkTransactionDetails>>of(transactionDetails);
     
     return this;
@@ -379,10 +383,10 @@ public class PaymentLinkConfigRequest {
     return this;
   }
 
-   /**
+  /**
    * Dynamic details related to merchant to be rendered in payment link
    * @return transactionDetails
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -402,21 +406,20 @@ public class PaymentLinkConfigRequest {
     this.transactionDetails = transactionDetails;
   }
 
-  public void setTransactionDetails(List<PaymentLinkTransactionDetails> transactionDetails) {
+  public void setTransactionDetails(@javax.annotation.Nullable List<PaymentLinkTransactionDetails> transactionDetails) {
     this.transactionDetails = JsonNullable.<List<PaymentLinkTransactionDetails>>of(transactionDetails);
   }
 
-
-  public PaymentLinkConfigRequest backgroundImage(PaymentLinkBackgroundImageConfig backgroundImage) {
+  public PaymentLinkConfigRequest backgroundImage(@javax.annotation.Nullable PaymentLinkBackgroundImageConfig backgroundImage) {
     this.backgroundImage = JsonNullable.<PaymentLinkBackgroundImageConfig>of(backgroundImage);
     
     return this;
   }
 
-   /**
+  /**
    * Get backgroundImage
    * @return backgroundImage
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -436,21 +439,20 @@ public class PaymentLinkConfigRequest {
     this.backgroundImage = backgroundImage;
   }
 
-  public void setBackgroundImage(PaymentLinkBackgroundImageConfig backgroundImage) {
+  public void setBackgroundImage(@javax.annotation.Nullable PaymentLinkBackgroundImageConfig backgroundImage) {
     this.backgroundImage = JsonNullable.<PaymentLinkBackgroundImageConfig>of(backgroundImage);
   }
 
-
-  public PaymentLinkConfigRequest detailsLayout(PaymentLinkDetailsLayout detailsLayout) {
+  public PaymentLinkConfigRequest detailsLayout(@javax.annotation.Nullable PaymentLinkDetailsLayout detailsLayout) {
     this.detailsLayout = JsonNullable.<PaymentLinkDetailsLayout>of(detailsLayout);
     
     return this;
   }
 
-   /**
+  /**
    * Get detailsLayout
    * @return detailsLayout
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -470,7 +472,7 @@ public class PaymentLinkConfigRequest {
     this.detailsLayout = detailsLayout;
   }
 
-  public void setDetailsLayout(PaymentLinkDetailsLayout detailsLayout) {
+  public void setDetailsLayout(@javax.annotation.Nullable PaymentLinkDetailsLayout detailsLayout) {
     this.detailsLayout = JsonNullable.<PaymentLinkDetailsLayout>of(detailsLayout);
   }
 

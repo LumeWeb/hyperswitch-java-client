@@ -23,22 +23,21 @@ import org.openapitools.jackson.nullable.JsonNullable;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.openapitools.jackson.nullable.JsonNullable;
 import java.util.NoSuchElementException;
-import org.junit.Assert;
-import org.junit.Ignore;
-import org.junit.Test;
-
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Test;
 
 /**
  * Model tests for AddressDetails
  */
-public class AddressDetailsTest {
+class AddressDetailsTest {
     private final AddressDetails model = new AddressDetails();
 
     /**
      * Model tests for AddressDetails
      */
     @Test
-    public void testAddressDetails() {
+    void testAddressDetails() {
         // TODO: test AddressDetails
     }
 
@@ -46,7 +45,7 @@ public class AddressDetailsTest {
      * Test the property 'city'
      */
     @Test
-    public void cityTest() {
+    void cityTest() {
         // TODO: test city
     }
 
@@ -54,7 +53,7 @@ public class AddressDetailsTest {
      * Test the property 'country'
      */
     @Test
-    public void countryTest() {
+    void countryTest() {
         // TODO: test country
     }
 
@@ -62,7 +61,7 @@ public class AddressDetailsTest {
      * Test the property 'line1'
      */
     @Test
-    public void line1Test() {
+    void line1Test() {
         // TODO: test line1
     }
 
@@ -70,7 +69,7 @@ public class AddressDetailsTest {
      * Test the property 'line2'
      */
     @Test
-    public void line2Test() {
+    void line2Test() {
         // TODO: test line2
     }
 
@@ -78,7 +77,7 @@ public class AddressDetailsTest {
      * Test the property 'line3'
      */
     @Test
-    public void line3Test() {
+    void line3Test() {
         // TODO: test line3
     }
 
@@ -86,7 +85,7 @@ public class AddressDetailsTest {
      * Test the property 'zip'
      */
     @Test
-    public void zipTest() {
+    void zipTest() {
         // TODO: test zip
     }
 
@@ -94,7 +93,7 @@ public class AddressDetailsTest {
      * Test the property 'state'
      */
     @Test
-    public void stateTest() {
+    void stateTest() {
         // TODO: test state
     }
 
@@ -102,7 +101,7 @@ public class AddressDetailsTest {
      * Test the property 'firstName'
      */
     @Test
-    public void firstNameTest() {
+    void firstNameTest() {
         // TODO: test firstName
     }
 
@@ -110,7 +109,7 @@ public class AddressDetailsTest {
      * Test the property 'lastName'
      */
     @Test
-    public void lastNameTest() {
+    void lastNameTest() {
         // TODO: test lastName
     }
 

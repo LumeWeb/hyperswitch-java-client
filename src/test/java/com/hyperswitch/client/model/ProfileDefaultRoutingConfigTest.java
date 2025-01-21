@@ -20,23 +20,23 @@ import com.fasterxml.jackson.annotation.JsonTypeName;
 import com.fasterxml.jackson.annotation.JsonValue;
 import com.hyperswitch.client.model.RoutableConnectorChoice;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
-import org.junit.Assert;
-import org.junit.Ignore;
-import org.junit.Test;
-
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Test;
 
 /**
  * Model tests for ProfileDefaultRoutingConfig
  */
-public class ProfileDefaultRoutingConfigTest {
+class ProfileDefaultRoutingConfigTest {
     private final ProfileDefaultRoutingConfig model = new ProfileDefaultRoutingConfig();
 
     /**
      * Model tests for ProfileDefaultRoutingConfig
      */
     @Test
-    public void testProfileDefaultRoutingConfig() {
+    void testProfileDefaultRoutingConfig() {
         // TODO: test ProfileDefaultRoutingConfig
     }
 
@@ -44,7 +44,7 @@ public class ProfileDefaultRoutingConfigTest {
      * Test the property 'profileId'
      */
     @Test
-    public void profileIdTest() {
+    void profileIdTest() {
         // TODO: test profileId
     }
 
@@ -52,7 +52,7 @@ public class ProfileDefaultRoutingConfigTest {
      * Test the property 'connectors'
      */
     @Test
-    public void connectorsTest() {
+    void connectorsTest() {
         // TODO: test connectors
     }
 

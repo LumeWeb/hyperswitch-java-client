@@ -33,24 +33,25 @@ import java.util.StringJoiner;
   UpiAdditionalDataOneOf1.JSON_PROPERTY_UPI_INTENT
 })
 @JsonTypeName("UpiAdditionalData_oneOf_1")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class UpiAdditionalDataOneOf1 {
   public static final String JSON_PROPERTY_UPI_INTENT = "upi_intent";
+  @javax.annotation.Nonnull
   private Object upiIntent;
 
   public UpiAdditionalDataOneOf1() {
   }
 
-  public UpiAdditionalDataOneOf1 upiIntent(Object upiIntent) {
+  public UpiAdditionalDataOneOf1 upiIntent(@javax.annotation.Nonnull Object upiIntent) {
     
     this.upiIntent = upiIntent;
     return this;
   }
 
-   /**
+  /**
    * Get upiIntent
    * @return upiIntent
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_UPI_INTENT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -62,7 +63,7 @@ public class UpiAdditionalDataOneOf1 {
 
   @JsonProperty(JSON_PROPERTY_UPI_INTENT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setUpiIntent(Object upiIntent) {
+  public void setUpiIntent(@javax.annotation.Nonnull Object upiIntent) {
     this.upiIntent = upiIntent;
   }
 

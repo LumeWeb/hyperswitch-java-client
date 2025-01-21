@@ -36,30 +36,33 @@ import java.util.StringJoiner;
   BlocklistResponse.JSON_PROPERTY_DATA_KIND,
   BlocklistResponse.JSON_PROPERTY_CREATED_AT
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class BlocklistResponse {
   public static final String JSON_PROPERTY_FINGERPRINT_ID = "fingerprint_id";
+  @javax.annotation.Nonnull
   private String fingerprintId;
 
   public static final String JSON_PROPERTY_DATA_KIND = "data_kind";
+  @javax.annotation.Nonnull
   private BlocklistDataKind dataKind;
 
   public static final String JSON_PROPERTY_CREATED_AT = "created_at";
+  @javax.annotation.Nonnull
   private OffsetDateTime createdAt;
 
   public BlocklistResponse() {
   }
 
-  public BlocklistResponse fingerprintId(String fingerprintId) {
+  public BlocklistResponse fingerprintId(@javax.annotation.Nonnull String fingerprintId) {
     
     this.fingerprintId = fingerprintId;
     return this;
   }
 
-   /**
+  /**
    * Get fingerprintId
    * @return fingerprintId
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_FINGERPRINT_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -71,21 +74,20 @@ public class BlocklistResponse {
 
   @JsonProperty(JSON_PROPERTY_FINGERPRINT_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setFingerprintId(String fingerprintId) {
+  public void setFingerprintId(@javax.annotation.Nonnull String fingerprintId) {
     this.fingerprintId = fingerprintId;
   }
 
-
-  public BlocklistResponse dataKind(BlocklistDataKind dataKind) {
+  public BlocklistResponse dataKind(@javax.annotation.Nonnull BlocklistDataKind dataKind) {
     
     this.dataKind = dataKind;
     return this;
   }
 
-   /**
+  /**
    * Get dataKind
    * @return dataKind
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_DATA_KIND)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -97,21 +99,20 @@ public class BlocklistResponse {
 
   @JsonProperty(JSON_PROPERTY_DATA_KIND)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setDataKind(BlocklistDataKind dataKind) {
+  public void setDataKind(@javax.annotation.Nonnull BlocklistDataKind dataKind) {
     this.dataKind = dataKind;
   }
 
-
-  public BlocklistResponse createdAt(OffsetDateTime createdAt) {
+  public BlocklistResponse createdAt(@javax.annotation.Nonnull OffsetDateTime createdAt) {
     
     this.createdAt = createdAt;
     return this;
   }
 
-   /**
+  /**
    * Get createdAt
    * @return createdAt
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_CREATED_AT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -123,7 +124,7 @@ public class BlocklistResponse {
 
   @JsonProperty(JSON_PROPERTY_CREATED_AT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setCreatedAt(OffsetDateTime createdAt) {
+  public void setCreatedAt(@javax.annotation.Nonnull OffsetDateTime createdAt) {
     this.createdAt = createdAt;
   }
 

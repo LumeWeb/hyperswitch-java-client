@@ -45,48 +45,57 @@ import java.util.StringJoiner;
   MerchantDetails.JSON_PROPERTY_ABOUT_BUSINESS,
   MerchantDetails.JSON_PROPERTY_ADDRESS
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class MerchantDetails {
   public static final String JSON_PROPERTY_PRIMARY_CONTACT_PERSON = "primary_contact_person";
+  @javax.annotation.Nullable
   private JsonNullable<String> primaryContactPerson = JsonNullable.<String>undefined();
 
   public static final String JSON_PROPERTY_PRIMARY_PHONE = "primary_phone";
+  @javax.annotation.Nullable
   private JsonNullable<String> primaryPhone = JsonNullable.<String>undefined();
 
   public static final String JSON_PROPERTY_PRIMARY_EMAIL = "primary_email";
+  @javax.annotation.Nullable
   private JsonNullable<String> primaryEmail = JsonNullable.<String>undefined();
 
   public static final String JSON_PROPERTY_SECONDARY_CONTACT_PERSON = "secondary_contact_person";
+  @javax.annotation.Nullable
   private JsonNullable<String> secondaryContactPerson = JsonNullable.<String>undefined();
 
   public static final String JSON_PROPERTY_SECONDARY_PHONE = "secondary_phone";
+  @javax.annotation.Nullable
   private JsonNullable<String> secondaryPhone = JsonNullable.<String>undefined();
 
   public static final String JSON_PROPERTY_SECONDARY_EMAIL = "secondary_email";
+  @javax.annotation.Nullable
   private JsonNullable<String> secondaryEmail = JsonNullable.<String>undefined();
 
   public static final String JSON_PROPERTY_WEBSITE = "website";
+  @javax.annotation.Nullable
   private JsonNullable<String> website = JsonNullable.<String>undefined();
 
   public static final String JSON_PROPERTY_ABOUT_BUSINESS = "about_business";
+  @javax.annotation.Nullable
   private JsonNullable<String> aboutBusiness = JsonNullable.<String>undefined();
 
   public static final String JSON_PROPERTY_ADDRESS = "address";
+  @javax.annotation.Nullable
   private JsonNullable<AddressDetails> address = JsonNullable.<AddressDetails>undefined();
 
   public MerchantDetails() {
   }
 
-  public MerchantDetails primaryContactPerson(String primaryContactPerson) {
+  public MerchantDetails primaryContactPerson(@javax.annotation.Nullable String primaryContactPerson) {
     this.primaryContactPerson = JsonNullable.<String>of(primaryContactPerson);
     
     return this;
   }
 
-   /**
+  /**
    * The merchant&#39;s primary contact name
    * @return primaryContactPerson
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -106,21 +115,20 @@ public class MerchantDetails {
     this.primaryContactPerson = primaryContactPerson;
   }
 
-  public void setPrimaryContactPerson(String primaryContactPerson) {
+  public void setPrimaryContactPerson(@javax.annotation.Nullable String primaryContactPerson) {
     this.primaryContactPerson = JsonNullable.<String>of(primaryContactPerson);
   }
 
-
-  public MerchantDetails primaryPhone(String primaryPhone) {
+  public MerchantDetails primaryPhone(@javax.annotation.Nullable String primaryPhone) {
     this.primaryPhone = JsonNullable.<String>of(primaryPhone);
     
     return this;
   }
 
-   /**
+  /**
    * The merchant&#39;s primary phone number
    * @return primaryPhone
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -140,21 +148,20 @@ public class MerchantDetails {
     this.primaryPhone = primaryPhone;
   }
 
-  public void setPrimaryPhone(String primaryPhone) {
+  public void setPrimaryPhone(@javax.annotation.Nullable String primaryPhone) {
     this.primaryPhone = JsonNullable.<String>of(primaryPhone);
   }
 
-
-  public MerchantDetails primaryEmail(String primaryEmail) {
+  public MerchantDetails primaryEmail(@javax.annotation.Nullable String primaryEmail) {
     this.primaryEmail = JsonNullable.<String>of(primaryEmail);
     
     return this;
   }
 
-   /**
+  /**
    * The merchant&#39;s primary email address
    * @return primaryEmail
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -174,21 +181,20 @@ public class MerchantDetails {
     this.primaryEmail = primaryEmail;
   }
 
-  public void setPrimaryEmail(String primaryEmail) {
+  public void setPrimaryEmail(@javax.annotation.Nullable String primaryEmail) {
     this.primaryEmail = JsonNullable.<String>of(primaryEmail);
   }
 
-
-  public MerchantDetails secondaryContactPerson(String secondaryContactPerson) {
+  public MerchantDetails secondaryContactPerson(@javax.annotation.Nullable String secondaryContactPerson) {
     this.secondaryContactPerson = JsonNullable.<String>of(secondaryContactPerson);
     
     return this;
   }
 
-   /**
+  /**
    * The merchant&#39;s secondary contact name
    * @return secondaryContactPerson
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -208,21 +214,20 @@ public class MerchantDetails {
     this.secondaryContactPerson = secondaryContactPerson;
   }
 
-  public void setSecondaryContactPerson(String secondaryContactPerson) {
+  public void setSecondaryContactPerson(@javax.annotation.Nullable String secondaryContactPerson) {
     this.secondaryContactPerson = JsonNullable.<String>of(secondaryContactPerson);
   }
 
-
-  public MerchantDetails secondaryPhone(String secondaryPhone) {
+  public MerchantDetails secondaryPhone(@javax.annotation.Nullable String secondaryPhone) {
     this.secondaryPhone = JsonNullable.<String>of(secondaryPhone);
     
     return this;
   }
 
-   /**
+  /**
    * The merchant&#39;s secondary phone number
    * @return secondaryPhone
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -242,21 +247,20 @@ public class MerchantDetails {
     this.secondaryPhone = secondaryPhone;
   }
 
-  public void setSecondaryPhone(String secondaryPhone) {
+  public void setSecondaryPhone(@javax.annotation.Nullable String secondaryPhone) {
     this.secondaryPhone = JsonNullable.<String>of(secondaryPhone);
   }
 
-
-  public MerchantDetails secondaryEmail(String secondaryEmail) {
+  public MerchantDetails secondaryEmail(@javax.annotation.Nullable String secondaryEmail) {
     this.secondaryEmail = JsonNullable.<String>of(secondaryEmail);
     
     return this;
   }
 
-   /**
+  /**
    * The merchant&#39;s secondary email address
    * @return secondaryEmail
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -276,21 +280,20 @@ public class MerchantDetails {
     this.secondaryEmail = secondaryEmail;
   }
 
-  public void setSecondaryEmail(String secondaryEmail) {
+  public void setSecondaryEmail(@javax.annotation.Nullable String secondaryEmail) {
     this.secondaryEmail = JsonNullable.<String>of(secondaryEmail);
   }
 
-
-  public MerchantDetails website(String website) {
+  public MerchantDetails website(@javax.annotation.Nullable String website) {
     this.website = JsonNullable.<String>of(website);
     
     return this;
   }
 
-   /**
+  /**
    * The business website of the merchant
    * @return website
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -310,21 +313,20 @@ public class MerchantDetails {
     this.website = website;
   }
 
-  public void setWebsite(String website) {
+  public void setWebsite(@javax.annotation.Nullable String website) {
     this.website = JsonNullable.<String>of(website);
   }
 
-
-  public MerchantDetails aboutBusiness(String aboutBusiness) {
+  public MerchantDetails aboutBusiness(@javax.annotation.Nullable String aboutBusiness) {
     this.aboutBusiness = JsonNullable.<String>of(aboutBusiness);
     
     return this;
   }
 
-   /**
+  /**
    * A brief description about merchant&#39;s business
    * @return aboutBusiness
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -344,21 +346,20 @@ public class MerchantDetails {
     this.aboutBusiness = aboutBusiness;
   }
 
-  public void setAboutBusiness(String aboutBusiness) {
+  public void setAboutBusiness(@javax.annotation.Nullable String aboutBusiness) {
     this.aboutBusiness = JsonNullable.<String>of(aboutBusiness);
   }
 
-
-  public MerchantDetails address(AddressDetails address) {
+  public MerchantDetails address(@javax.annotation.Nullable AddressDetails address) {
     this.address = JsonNullable.<AddressDetails>of(address);
     
     return this;
   }
 
-   /**
+  /**
    * Get address
    * @return address
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -378,7 +379,7 @@ public class MerchantDetails {
     this.address = address;
   }
 
-  public void setAddress(AddressDetails address) {
+  public void setAddress(@javax.annotation.Nullable AddressDetails address) {
     this.address = JsonNullable.<AddressDetails>of(address);
   }
 

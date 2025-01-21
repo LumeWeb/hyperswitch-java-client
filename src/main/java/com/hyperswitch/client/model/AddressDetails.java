@@ -45,48 +45,57 @@ import java.util.StringJoiner;
   AddressDetails.JSON_PROPERTY_FIRST_NAME,
   AddressDetails.JSON_PROPERTY_LAST_NAME
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class AddressDetails {
   public static final String JSON_PROPERTY_CITY = "city";
+  @javax.annotation.Nullable
   private JsonNullable<String> city = JsonNullable.<String>undefined();
 
   public static final String JSON_PROPERTY_COUNTRY = "country";
+  @javax.annotation.Nullable
   private JsonNullable<CountryAlpha2> country = JsonNullable.<CountryAlpha2>undefined();
 
   public static final String JSON_PROPERTY_LINE1 = "line1";
+  @javax.annotation.Nullable
   private JsonNullable<String> line1 = JsonNullable.<String>undefined();
 
   public static final String JSON_PROPERTY_LINE2 = "line2";
+  @javax.annotation.Nullable
   private JsonNullable<String> line2 = JsonNullable.<String>undefined();
 
   public static final String JSON_PROPERTY_LINE3 = "line3";
+  @javax.annotation.Nullable
   private JsonNullable<String> line3 = JsonNullable.<String>undefined();
 
   public static final String JSON_PROPERTY_ZIP = "zip";
+  @javax.annotation.Nullable
   private JsonNullable<String> zip = JsonNullable.<String>undefined();
 
   public static final String JSON_PROPERTY_STATE = "state";
+  @javax.annotation.Nullable
   private JsonNullable<String> state = JsonNullable.<String>undefined();
 
   public static final String JSON_PROPERTY_FIRST_NAME = "first_name";
+  @javax.annotation.Nullable
   private JsonNullable<String> firstName = JsonNullable.<String>undefined();
 
   public static final String JSON_PROPERTY_LAST_NAME = "last_name";
+  @javax.annotation.Nullable
   private JsonNullable<String> lastName = JsonNullable.<String>undefined();
 
   public AddressDetails() {
   }
 
-  public AddressDetails city(String city) {
+  public AddressDetails city(@javax.annotation.Nullable String city) {
     this.city = JsonNullable.<String>of(city);
     
     return this;
   }
 
-   /**
+  /**
    * The address city
    * @return city
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -106,21 +115,20 @@ public class AddressDetails {
     this.city = city;
   }
 
-  public void setCity(String city) {
+  public void setCity(@javax.annotation.Nullable String city) {
     this.city = JsonNullable.<String>of(city);
   }
 
-
-  public AddressDetails country(CountryAlpha2 country) {
+  public AddressDetails country(@javax.annotation.Nullable CountryAlpha2 country) {
     this.country = JsonNullable.<CountryAlpha2>of(country);
     
     return this;
   }
 
-   /**
+  /**
    * Get country
    * @return country
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -140,21 +148,20 @@ public class AddressDetails {
     this.country = country;
   }
 
-  public void setCountry(CountryAlpha2 country) {
+  public void setCountry(@javax.annotation.Nullable CountryAlpha2 country) {
     this.country = JsonNullable.<CountryAlpha2>of(country);
   }
 
-
-  public AddressDetails line1(String line1) {
+  public AddressDetails line1(@javax.annotation.Nullable String line1) {
     this.line1 = JsonNullable.<String>of(line1);
     
     return this;
   }
 
-   /**
+  /**
    * The first line of the address
    * @return line1
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -174,21 +181,20 @@ public class AddressDetails {
     this.line1 = line1;
   }
 
-  public void setLine1(String line1) {
+  public void setLine1(@javax.annotation.Nullable String line1) {
     this.line1 = JsonNullable.<String>of(line1);
   }
 
-
-  public AddressDetails line2(String line2) {
+  public AddressDetails line2(@javax.annotation.Nullable String line2) {
     this.line2 = JsonNullable.<String>of(line2);
     
     return this;
   }
 
-   /**
+  /**
    * The second line of the address
    * @return line2
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -208,21 +214,20 @@ public class AddressDetails {
     this.line2 = line2;
   }
 
-  public void setLine2(String line2) {
+  public void setLine2(@javax.annotation.Nullable String line2) {
     this.line2 = JsonNullable.<String>of(line2);
   }
 
-
-  public AddressDetails line3(String line3) {
+  public AddressDetails line3(@javax.annotation.Nullable String line3) {
     this.line3 = JsonNullable.<String>of(line3);
     
     return this;
   }
 
-   /**
+  /**
    * The third line of the address
    * @return line3
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -242,21 +247,20 @@ public class AddressDetails {
     this.line3 = line3;
   }
 
-  public void setLine3(String line3) {
+  public void setLine3(@javax.annotation.Nullable String line3) {
     this.line3 = JsonNullable.<String>of(line3);
   }
 
-
-  public AddressDetails zip(String zip) {
+  public AddressDetails zip(@javax.annotation.Nullable String zip) {
     this.zip = JsonNullable.<String>of(zip);
     
     return this;
   }
 
-   /**
+  /**
    * The zip/postal code for the address
    * @return zip
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -276,21 +280,20 @@ public class AddressDetails {
     this.zip = zip;
   }
 
-  public void setZip(String zip) {
+  public void setZip(@javax.annotation.Nullable String zip) {
     this.zip = JsonNullable.<String>of(zip);
   }
 
-
-  public AddressDetails state(String state) {
+  public AddressDetails state(@javax.annotation.Nullable String state) {
     this.state = JsonNullable.<String>of(state);
     
     return this;
   }
 
-   /**
+  /**
    * The address state
    * @return state
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -310,21 +313,20 @@ public class AddressDetails {
     this.state = state;
   }
 
-  public void setState(String state) {
+  public void setState(@javax.annotation.Nullable String state) {
     this.state = JsonNullable.<String>of(state);
   }
 
-
-  public AddressDetails firstName(String firstName) {
+  public AddressDetails firstName(@javax.annotation.Nullable String firstName) {
     this.firstName = JsonNullable.<String>of(firstName);
     
     return this;
   }
 
-   /**
+  /**
    * The first name for the address
    * @return firstName
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -344,21 +346,20 @@ public class AddressDetails {
     this.firstName = firstName;
   }
 
-  public void setFirstName(String firstName) {
+  public void setFirstName(@javax.annotation.Nullable String firstName) {
     this.firstName = JsonNullable.<String>of(firstName);
   }
 
-
-  public AddressDetails lastName(String lastName) {
+  public AddressDetails lastName(@javax.annotation.Nullable String lastName) {
     this.lastName = JsonNullable.<String>of(lastName);
     
     return this;
   }
 
-   /**
+  /**
    * The last name for the address
    * @return lastName
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -378,7 +379,7 @@ public class AddressDetails {
     this.lastName = lastName;
   }
 
-  public void setLastName(String lastName) {
+  public void setLastName(@javax.annotation.Nullable String lastName) {
     this.lastName = JsonNullable.<String>of(lastName);
   }
 

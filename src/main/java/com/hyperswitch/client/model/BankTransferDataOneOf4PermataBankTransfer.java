@@ -38,24 +38,25 @@ import java.util.StringJoiner;
   BankTransferDataOneOf4PermataBankTransfer.JSON_PROPERTY_BILLING_DETAILS
 })
 @JsonTypeName("BankTransferData_oneOf_4_permata_bank_transfer")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class BankTransferDataOneOf4PermataBankTransfer {
   public static final String JSON_PROPERTY_BILLING_DETAILS = "billing_details";
+  @javax.annotation.Nullable
   private JsonNullable<DokuBillingDetails> billingDetails = JsonNullable.<DokuBillingDetails>undefined();
 
   public BankTransferDataOneOf4PermataBankTransfer() {
   }
 
-  public BankTransferDataOneOf4PermataBankTransfer billingDetails(DokuBillingDetails billingDetails) {
+  public BankTransferDataOneOf4PermataBankTransfer billingDetails(@javax.annotation.Nullable DokuBillingDetails billingDetails) {
     this.billingDetails = JsonNullable.<DokuBillingDetails>of(billingDetails);
     
     return this;
   }
 
-   /**
+  /**
    * Get billingDetails
    * @return billingDetails
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -75,7 +76,7 @@ public class BankTransferDataOneOf4PermataBankTransfer {
     this.billingDetails = billingDetails;
   }
 
-  public void setBillingDetails(DokuBillingDetails billingDetails) {
+  public void setBillingDetails(@javax.annotation.Nullable DokuBillingDetails billingDetails) {
     this.billingDetails = JsonNullable.<DokuBillingDetails>of(billingDetails);
   }
 

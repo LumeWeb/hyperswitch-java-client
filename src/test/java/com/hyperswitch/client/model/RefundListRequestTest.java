@@ -23,115 +23,35 @@ import com.hyperswitch.client.model.Currency;
 import com.hyperswitch.client.model.RefundStatus;
 import java.time.OffsetDateTime;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import org.openapitools.jackson.nullable.JsonNullable;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.openapitools.jackson.nullable.JsonNullable;
 import java.util.NoSuchElementException;
-import org.junit.Assert;
-import org.junit.Ignore;
-import org.junit.Test;
-
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Test;
 
 /**
  * Model tests for RefundListRequest
  */
-public class RefundListRequestTest {
+class RefundListRequestTest {
     private final RefundListRequest model = new RefundListRequest();
 
     /**
      * Model tests for RefundListRequest
      */
     @Test
-    public void testRefundListRequest() {
+    void testRefundListRequest() {
         // TODO: test RefundListRequest
-    }
-
-    /**
-     * Test the property 'paymentId'
-     */
-    @Test
-    public void paymentIdTest() {
-        // TODO: test paymentId
-    }
-
-    /**
-     * Test the property 'refundId'
-     */
-    @Test
-    public void refundIdTest() {
-        // TODO: test refundId
-    }
-
-    /**
-     * Test the property 'profileId'
-     */
-    @Test
-    public void profileIdTest() {
-        // TODO: test profileId
-    }
-
-    /**
-     * Test the property 'limit'
-     */
-    @Test
-    public void limitTest() {
-        // TODO: test limit
-    }
-
-    /**
-     * Test the property 'offset'
-     */
-    @Test
-    public void offsetTest() {
-        // TODO: test offset
-    }
-
-    /**
-     * Test the property 'amountFilter'
-     */
-    @Test
-    public void amountFilterTest() {
-        // TODO: test amountFilter
-    }
-
-    /**
-     * Test the property 'connector'
-     */
-    @Test
-    public void connectorTest() {
-        // TODO: test connector
-    }
-
-    /**
-     * Test the property 'merchantConnectorId'
-     */
-    @Test
-    public void merchantConnectorIdTest() {
-        // TODO: test merchantConnectorId
-    }
-
-    /**
-     * Test the property 'currency'
-     */
-    @Test
-    public void currencyTest() {
-        // TODO: test currency
-    }
-
-    /**
-     * Test the property 'refundStatus'
-     */
-    @Test
-    public void refundStatusTest() {
-        // TODO: test refundStatus
     }
 
     /**
      * Test the property 'startTime'
      */
     @Test
-    public void startTimeTest() {
+    void startTimeTest() {
         // TODO: test startTime
     }
 
@@ -139,8 +59,88 @@ public class RefundListRequestTest {
      * Test the property 'endTime'
      */
     @Test
-    public void endTimeTest() {
+    void endTimeTest() {
         // TODO: test endTime
+    }
+
+    /**
+     * Test the property 'paymentId'
+     */
+    @Test
+    void paymentIdTest() {
+        // TODO: test paymentId
+    }
+
+    /**
+     * Test the property 'refundId'
+     */
+    @Test
+    void refundIdTest() {
+        // TODO: test refundId
+    }
+
+    /**
+     * Test the property 'profileId'
+     */
+    @Test
+    void profileIdTest() {
+        // TODO: test profileId
+    }
+
+    /**
+     * Test the property 'limit'
+     */
+    @Test
+    void limitTest() {
+        // TODO: test limit
+    }
+
+    /**
+     * Test the property 'offset'
+     */
+    @Test
+    void offsetTest() {
+        // TODO: test offset
+    }
+
+    /**
+     * Test the property 'amountFilter'
+     */
+    @Test
+    void amountFilterTest() {
+        // TODO: test amountFilter
+    }
+
+    /**
+     * Test the property 'connector'
+     */
+    @Test
+    void connectorTest() {
+        // TODO: test connector
+    }
+
+    /**
+     * Test the property 'merchantConnectorId'
+     */
+    @Test
+    void merchantConnectorIdTest() {
+        // TODO: test merchantConnectorId
+    }
+
+    /**
+     * Test the property 'currency'
+     */
+    @Test
+    void currencyTest() {
+        // TODO: test currency
+    }
+
+    /**
+     * Test the property 'refundStatus'
+     */
+    @Test
+    void refundStatusTest() {
+        // TODO: test refundStatus
     }
 
 }

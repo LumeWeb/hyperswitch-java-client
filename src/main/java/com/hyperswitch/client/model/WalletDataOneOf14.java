@@ -34,24 +34,25 @@ import java.util.StringJoiner;
   WalletDataOneOf14.JSON_PROPERTY_MB_WAY_REDIRECT
 })
 @JsonTypeName("WalletData_oneOf_14")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class WalletDataOneOf14 {
   public static final String JSON_PROPERTY_MB_WAY_REDIRECT = "mb_way_redirect";
+  @javax.annotation.Nonnull
   private MbWayRedirection mbWayRedirect;
 
   public WalletDataOneOf14() {
   }
 
-  public WalletDataOneOf14 mbWayRedirect(MbWayRedirection mbWayRedirect) {
+  public WalletDataOneOf14 mbWayRedirect(@javax.annotation.Nonnull MbWayRedirection mbWayRedirect) {
     
     this.mbWayRedirect = mbWayRedirect;
     return this;
   }
 
-   /**
+  /**
    * Get mbWayRedirect
    * @return mbWayRedirect
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_MB_WAY_REDIRECT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -63,7 +64,7 @@ public class WalletDataOneOf14 {
 
   @JsonProperty(JSON_PROPERTY_MB_WAY_REDIRECT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setMbWayRedirect(MbWayRedirection mbWayRedirect) {
+  public void setMbWayRedirect(@javax.annotation.Nonnull MbWayRedirection mbWayRedirect) {
     this.mbWayRedirect = mbWayRedirect;
   }
 

@@ -21,27 +21,27 @@ import com.fasterxml.jackson.annotation.JsonValue;
 import com.hyperswitch.client.model.CardNetwork;
 import com.hyperswitch.client.model.SurchargeDetailsResponse;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import org.openapitools.jackson.nullable.JsonNullable;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.openapitools.jackson.nullable.JsonNullable;
 import java.util.NoSuchElementException;
-import org.junit.Assert;
-import org.junit.Ignore;
-import org.junit.Test;
-
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Test;
 
 /**
  * Model tests for CardNetworkTypes
  */
-public class CardNetworkTypesTest {
+class CardNetworkTypesTest {
     private final CardNetworkTypes model = new CardNetworkTypes();
 
     /**
      * Model tests for CardNetworkTypes
      */
     @Test
-    public void testCardNetworkTypes() {
+    void testCardNetworkTypes() {
         // TODO: test CardNetworkTypes
     }
 
@@ -49,7 +49,7 @@ public class CardNetworkTypesTest {
      * Test the property 'cardNetwork'
      */
     @Test
-    public void cardNetworkTest() {
+    void cardNetworkTest() {
         // TODO: test cardNetwork
     }
 
@@ -57,7 +57,7 @@ public class CardNetworkTypesTest {
      * Test the property 'surchargeDetails'
      */
     @Test
-    public void surchargeDetailsTest() {
+    void surchargeDetailsTest() {
         // TODO: test surchargeDetails
     }
 
@@ -65,7 +65,7 @@ public class CardNetworkTypesTest {
      * Test the property 'eligibleConnectors'
      */
     @Test
-    public void eligibleConnectorsTest() {
+    void eligibleConnectorsTest() {
         // TODO: test eligibleConnectors
     }
 

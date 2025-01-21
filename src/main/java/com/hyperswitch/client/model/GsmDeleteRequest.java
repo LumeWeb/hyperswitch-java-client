@@ -36,36 +36,41 @@ import java.util.StringJoiner;
   GsmDeleteRequest.JSON_PROPERTY_CODE,
   GsmDeleteRequest.JSON_PROPERTY_MESSAGE
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class GsmDeleteRequest {
   public static final String JSON_PROPERTY_CONNECTOR = "connector";
+  @javax.annotation.Nonnull
   private String connector;
 
   public static final String JSON_PROPERTY_FLOW = "flow";
+  @javax.annotation.Nonnull
   private String flow;
 
   public static final String JSON_PROPERTY_SUB_FLOW = "sub_flow";
+  @javax.annotation.Nonnull
   private String subFlow;
 
   public static final String JSON_PROPERTY_CODE = "code";
+  @javax.annotation.Nonnull
   private String code;
 
   public static final String JSON_PROPERTY_MESSAGE = "message";
+  @javax.annotation.Nonnull
   private String message;
 
   public GsmDeleteRequest() {
   }
 
-  public GsmDeleteRequest connector(String connector) {
+  public GsmDeleteRequest connector(@javax.annotation.Nonnull String connector) {
     
     this.connector = connector;
     return this;
   }
 
-   /**
+  /**
    * The connector through which payment has gone through
    * @return connector
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_CONNECTOR)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -77,21 +82,20 @@ public class GsmDeleteRequest {
 
   @JsonProperty(JSON_PROPERTY_CONNECTOR)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setConnector(String connector) {
+  public void setConnector(@javax.annotation.Nonnull String connector) {
     this.connector = connector;
   }
 
-
-  public GsmDeleteRequest flow(String flow) {
+  public GsmDeleteRequest flow(@javax.annotation.Nonnull String flow) {
     
     this.flow = flow;
     return this;
   }
 
-   /**
+  /**
    * The flow in which the code and message occurred for a connector
    * @return flow
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_FLOW)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -103,21 +107,20 @@ public class GsmDeleteRequest {
 
   @JsonProperty(JSON_PROPERTY_FLOW)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setFlow(String flow) {
+  public void setFlow(@javax.annotation.Nonnull String flow) {
     this.flow = flow;
   }
 
-
-  public GsmDeleteRequest subFlow(String subFlow) {
+  public GsmDeleteRequest subFlow(@javax.annotation.Nonnull String subFlow) {
     
     this.subFlow = subFlow;
     return this;
   }
 
-   /**
+  /**
    * The sub_flow in which the code and message occurred  for a connector
    * @return subFlow
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_SUB_FLOW)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -129,21 +132,20 @@ public class GsmDeleteRequest {
 
   @JsonProperty(JSON_PROPERTY_SUB_FLOW)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setSubFlow(String subFlow) {
+  public void setSubFlow(@javax.annotation.Nonnull String subFlow) {
     this.subFlow = subFlow;
   }
 
-
-  public GsmDeleteRequest code(String code) {
+  public GsmDeleteRequest code(@javax.annotation.Nonnull String code) {
     
     this.code = code;
     return this;
   }
 
-   /**
+  /**
    * code received from the connector
    * @return code
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_CODE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -155,21 +157,20 @@ public class GsmDeleteRequest {
 
   @JsonProperty(JSON_PROPERTY_CODE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setCode(String code) {
+  public void setCode(@javax.annotation.Nonnull String code) {
     this.code = code;
   }
 
-
-  public GsmDeleteRequest message(String message) {
+  public GsmDeleteRequest message(@javax.annotation.Nonnull String message) {
     
     this.message = message;
     return this;
   }
 
-   /**
+  /**
    * message received from the connector
    * @return message
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_MESSAGE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -181,7 +182,7 @@ public class GsmDeleteRequest {
 
   @JsonProperty(JSON_PROPERTY_MESSAGE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setMessage(String message) {
+  public void setMessage(@javax.annotation.Nonnull String message) {
     this.message = message;
   }
 

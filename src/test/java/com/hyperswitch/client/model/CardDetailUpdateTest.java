@@ -22,22 +22,21 @@ import org.openapitools.jackson.nullable.JsonNullable;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.openapitools.jackson.nullable.JsonNullable;
 import java.util.NoSuchElementException;
-import org.junit.Assert;
-import org.junit.Ignore;
-import org.junit.Test;
-
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Test;
 
 /**
  * Model tests for CardDetailUpdate
  */
-public class CardDetailUpdateTest {
+class CardDetailUpdateTest {
     private final CardDetailUpdate model = new CardDetailUpdate();
 
     /**
      * Model tests for CardDetailUpdate
      */
     @Test
-    public void testCardDetailUpdate() {
+    void testCardDetailUpdate() {
         // TODO: test CardDetailUpdate
     }
 
@@ -45,7 +44,7 @@ public class CardDetailUpdateTest {
      * Test the property 'cardExpMonth'
      */
     @Test
-    public void cardExpMonthTest() {
+    void cardExpMonthTest() {
         // TODO: test cardExpMonth
     }
 
@@ -53,7 +52,7 @@ public class CardDetailUpdateTest {
      * Test the property 'cardExpYear'
      */
     @Test
-    public void cardExpYearTest() {
+    void cardExpYearTest() {
         // TODO: test cardExpYear
     }
 
@@ -61,7 +60,7 @@ public class CardDetailUpdateTest {
      * Test the property 'cardHolderName'
      */
     @Test
-    public void cardHolderNameTest() {
+    void cardHolderNameTest() {
         // TODO: test cardHolderName
     }
 
@@ -69,7 +68,7 @@ public class CardDetailUpdateTest {
      * Test the property 'nickName'
      */
     @Test
-    public void nickNameTest() {
+    void nickNameTest() {
         // TODO: test nickName
     }
 

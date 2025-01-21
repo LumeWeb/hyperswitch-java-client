@@ -39,30 +39,33 @@ import java.util.StringJoiner;
   UpdateApiKeyRequest.JSON_PROPERTY_DESCRIPTION,
   UpdateApiKeyRequest.JSON_PROPERTY_EXPIRATION
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class UpdateApiKeyRequest {
   public static final String JSON_PROPERTY_NAME = "name";
+  @javax.annotation.Nullable
   private JsonNullable<String> name = JsonNullable.<String>undefined();
 
   public static final String JSON_PROPERTY_DESCRIPTION = "description";
+  @javax.annotation.Nullable
   private JsonNullable<String> description = JsonNullable.<String>undefined();
 
   public static final String JSON_PROPERTY_EXPIRATION = "expiration";
+  @javax.annotation.Nullable
   private JsonNullable<ApiKeyExpiration> expiration = JsonNullable.<ApiKeyExpiration>undefined();
 
   public UpdateApiKeyRequest() {
   }
 
-  public UpdateApiKeyRequest name(String name) {
+  public UpdateApiKeyRequest name(@javax.annotation.Nullable String name) {
     this.name = JsonNullable.<String>of(name);
     
     return this;
   }
 
-   /**
+  /**
    * A unique name for the API Key to help you identify it.
    * @return name
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -82,21 +85,20 @@ public class UpdateApiKeyRequest {
     this.name = name;
   }
 
-  public void setName(String name) {
+  public void setName(@javax.annotation.Nullable String name) {
     this.name = JsonNullable.<String>of(name);
   }
 
-
-  public UpdateApiKeyRequest description(String description) {
+  public UpdateApiKeyRequest description(@javax.annotation.Nullable String description) {
     this.description = JsonNullable.<String>of(description);
     
     return this;
   }
 
-   /**
+  /**
    * A description to provide more context about the API Key.
    * @return description
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -116,21 +118,20 @@ public class UpdateApiKeyRequest {
     this.description = description;
   }
 
-  public void setDescription(String description) {
+  public void setDescription(@javax.annotation.Nullable String description) {
     this.description = JsonNullable.<String>of(description);
   }
 
-
-  public UpdateApiKeyRequest expiration(ApiKeyExpiration expiration) {
+  public UpdateApiKeyRequest expiration(@javax.annotation.Nullable ApiKeyExpiration expiration) {
     this.expiration = JsonNullable.<ApiKeyExpiration>of(expiration);
     
     return this;
   }
 
-   /**
+  /**
    * Get expiration
    * @return expiration
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -150,7 +151,7 @@ public class UpdateApiKeyRequest {
     this.expiration = expiration;
   }
 
-  public void setExpiration(ApiKeyExpiration expiration) {
+  public void setExpiration(@javax.annotation.Nullable ApiKeyExpiration expiration) {
     this.expiration = JsonNullable.<ApiKeyExpiration>of(expiration);
   }
 

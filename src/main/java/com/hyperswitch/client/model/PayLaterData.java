@@ -50,45 +50,53 @@ import java.util.StringJoiner;
   PayLaterData.JSON_PROPERTY_ALMA_REDIRECT,
   PayLaterData.JSON_PROPERTY_ATOME_REDIRECT
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class PayLaterData {
   public static final String JSON_PROPERTY_KLARNA_REDIRECT = "klarna_redirect";
+  @javax.annotation.Nonnull
   private PayLaterDataOneOfKlarnaRedirect klarnaRedirect;
 
   public static final String JSON_PROPERTY_KLARNA_SDK = "klarna_sdk";
+  @javax.annotation.Nonnull
   private PayLaterDataOneOf1KlarnaSdk klarnaSdk;
 
   public static final String JSON_PROPERTY_AFFIRM_REDIRECT = "affirm_redirect";
+  @javax.annotation.Nonnull
   private Object affirmRedirect;
 
   public static final String JSON_PROPERTY_AFTERPAY_CLEARPAY_REDIRECT = "afterpay_clearpay_redirect";
+  @javax.annotation.Nonnull
   private PayLaterDataOneOf3AfterpayClearpayRedirect afterpayClearpayRedirect;
 
   public static final String JSON_PROPERTY_PAY_BRIGHT_REDIRECT = "pay_bright_redirect";
+  @javax.annotation.Nonnull
   private Object payBrightRedirect;
 
   public static final String JSON_PROPERTY_WALLEY_REDIRECT = "walley_redirect";
+  @javax.annotation.Nonnull
   private Object walleyRedirect;
 
   public static final String JSON_PROPERTY_ALMA_REDIRECT = "alma_redirect";
+  @javax.annotation.Nonnull
   private Object almaRedirect;
 
   public static final String JSON_PROPERTY_ATOME_REDIRECT = "atome_redirect";
+  @javax.annotation.Nonnull
   private Object atomeRedirect;
 
   public PayLaterData() {
   }
 
-  public PayLaterData klarnaRedirect(PayLaterDataOneOfKlarnaRedirect klarnaRedirect) {
+  public PayLaterData klarnaRedirect(@javax.annotation.Nonnull PayLaterDataOneOfKlarnaRedirect klarnaRedirect) {
     
     this.klarnaRedirect = klarnaRedirect;
     return this;
   }
 
-   /**
+  /**
    * Get klarnaRedirect
    * @return klarnaRedirect
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_KLARNA_REDIRECT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -100,21 +108,20 @@ public class PayLaterData {
 
   @JsonProperty(JSON_PROPERTY_KLARNA_REDIRECT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setKlarnaRedirect(PayLaterDataOneOfKlarnaRedirect klarnaRedirect) {
+  public void setKlarnaRedirect(@javax.annotation.Nonnull PayLaterDataOneOfKlarnaRedirect klarnaRedirect) {
     this.klarnaRedirect = klarnaRedirect;
   }
 
-
-  public PayLaterData klarnaSdk(PayLaterDataOneOf1KlarnaSdk klarnaSdk) {
+  public PayLaterData klarnaSdk(@javax.annotation.Nonnull PayLaterDataOneOf1KlarnaSdk klarnaSdk) {
     
     this.klarnaSdk = klarnaSdk;
     return this;
   }
 
-   /**
+  /**
    * Get klarnaSdk
    * @return klarnaSdk
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_KLARNA_SDK)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -126,21 +133,20 @@ public class PayLaterData {
 
   @JsonProperty(JSON_PROPERTY_KLARNA_SDK)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setKlarnaSdk(PayLaterDataOneOf1KlarnaSdk klarnaSdk) {
+  public void setKlarnaSdk(@javax.annotation.Nonnull PayLaterDataOneOf1KlarnaSdk klarnaSdk) {
     this.klarnaSdk = klarnaSdk;
   }
 
-
-  public PayLaterData affirmRedirect(Object affirmRedirect) {
+  public PayLaterData affirmRedirect(@javax.annotation.Nonnull Object affirmRedirect) {
     
     this.affirmRedirect = affirmRedirect;
     return this;
   }
 
-   /**
+  /**
    * For Affirm redirect as PayLater Option
    * @return affirmRedirect
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_AFFIRM_REDIRECT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -152,21 +158,20 @@ public class PayLaterData {
 
   @JsonProperty(JSON_PROPERTY_AFFIRM_REDIRECT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setAffirmRedirect(Object affirmRedirect) {
+  public void setAffirmRedirect(@javax.annotation.Nonnull Object affirmRedirect) {
     this.affirmRedirect = affirmRedirect;
   }
 
-
-  public PayLaterData afterpayClearpayRedirect(PayLaterDataOneOf3AfterpayClearpayRedirect afterpayClearpayRedirect) {
+  public PayLaterData afterpayClearpayRedirect(@javax.annotation.Nonnull PayLaterDataOneOf3AfterpayClearpayRedirect afterpayClearpayRedirect) {
     
     this.afterpayClearpayRedirect = afterpayClearpayRedirect;
     return this;
   }
 
-   /**
+  /**
    * Get afterpayClearpayRedirect
    * @return afterpayClearpayRedirect
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_AFTERPAY_CLEARPAY_REDIRECT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -178,21 +183,20 @@ public class PayLaterData {
 
   @JsonProperty(JSON_PROPERTY_AFTERPAY_CLEARPAY_REDIRECT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setAfterpayClearpayRedirect(PayLaterDataOneOf3AfterpayClearpayRedirect afterpayClearpayRedirect) {
+  public void setAfterpayClearpayRedirect(@javax.annotation.Nonnull PayLaterDataOneOf3AfterpayClearpayRedirect afterpayClearpayRedirect) {
     this.afterpayClearpayRedirect = afterpayClearpayRedirect;
   }
 
-
-  public PayLaterData payBrightRedirect(Object payBrightRedirect) {
+  public PayLaterData payBrightRedirect(@javax.annotation.Nonnull Object payBrightRedirect) {
     
     this.payBrightRedirect = payBrightRedirect;
     return this;
   }
 
-   /**
+  /**
    * For PayBright Redirect as PayLater Option
    * @return payBrightRedirect
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_PAY_BRIGHT_REDIRECT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -204,21 +208,20 @@ public class PayLaterData {
 
   @JsonProperty(JSON_PROPERTY_PAY_BRIGHT_REDIRECT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setPayBrightRedirect(Object payBrightRedirect) {
+  public void setPayBrightRedirect(@javax.annotation.Nonnull Object payBrightRedirect) {
     this.payBrightRedirect = payBrightRedirect;
   }
 
-
-  public PayLaterData walleyRedirect(Object walleyRedirect) {
+  public PayLaterData walleyRedirect(@javax.annotation.Nonnull Object walleyRedirect) {
     
     this.walleyRedirect = walleyRedirect;
     return this;
   }
 
-   /**
+  /**
    * For WalleyRedirect as PayLater Option
    * @return walleyRedirect
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_WALLEY_REDIRECT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -230,21 +233,20 @@ public class PayLaterData {
 
   @JsonProperty(JSON_PROPERTY_WALLEY_REDIRECT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setWalleyRedirect(Object walleyRedirect) {
+  public void setWalleyRedirect(@javax.annotation.Nonnull Object walleyRedirect) {
     this.walleyRedirect = walleyRedirect;
   }
 
-
-  public PayLaterData almaRedirect(Object almaRedirect) {
+  public PayLaterData almaRedirect(@javax.annotation.Nonnull Object almaRedirect) {
     
     this.almaRedirect = almaRedirect;
     return this;
   }
 
-   /**
+  /**
    * For Alma Redirection as PayLater Option
    * @return almaRedirect
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_ALMA_REDIRECT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -256,21 +258,20 @@ public class PayLaterData {
 
   @JsonProperty(JSON_PROPERTY_ALMA_REDIRECT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setAlmaRedirect(Object almaRedirect) {
+  public void setAlmaRedirect(@javax.annotation.Nonnull Object almaRedirect) {
     this.almaRedirect = almaRedirect;
   }
 
-
-  public PayLaterData atomeRedirect(Object atomeRedirect) {
+  public PayLaterData atomeRedirect(@javax.annotation.Nonnull Object atomeRedirect) {
     
     this.atomeRedirect = atomeRedirect;
     return this;
   }
 
-   /**
+  /**
    * Get atomeRedirect
    * @return atomeRedirect
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_ATOME_REDIRECT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -282,7 +283,7 @@ public class PayLaterData {
 
   @JsonProperty(JSON_PROPERTY_ATOME_REDIRECT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setAtomeRedirect(Object atomeRedirect) {
+  public void setAtomeRedirect(@javax.annotation.Nonnull Object atomeRedirect) {
     this.atomeRedirect = atomeRedirect;
   }
 

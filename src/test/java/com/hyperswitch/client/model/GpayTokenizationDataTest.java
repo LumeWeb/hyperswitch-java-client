@@ -18,22 +18,21 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonTypeName;
 import com.fasterxml.jackson.annotation.JsonValue;
-import org.junit.Assert;
-import org.junit.Ignore;
-import org.junit.Test;
-
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Test;
 
 /**
  * Model tests for GpayTokenizationData
  */
-public class GpayTokenizationDataTest {
+class GpayTokenizationDataTest {
     private final GpayTokenizationData model = new GpayTokenizationData();
 
     /**
      * Model tests for GpayTokenizationData
      */
     @Test
-    public void testGpayTokenizationData() {
+    void testGpayTokenizationData() {
         // TODO: test GpayTokenizationData
     }
 
@@ -41,7 +40,7 @@ public class GpayTokenizationDataTest {
      * Test the property 'type'
      */
     @Test
-    public void typeTest() {
+    void typeTest() {
         // TODO: test type
     }
 
@@ -49,7 +48,7 @@ public class GpayTokenizationDataTest {
      * Test the property 'token'
      */
     @Test
-    public void tokenTest() {
+    void tokenTest() {
         // TODO: test token
     }
 

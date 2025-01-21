@@ -32,24 +32,25 @@ import java.util.StringJoiner;
 @JsonPropertyOrder({
   MaskedBankDetails.JSON_PROPERTY_MASK
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class MaskedBankDetails {
   public static final String JSON_PROPERTY_MASK = "mask";
+  @javax.annotation.Nonnull
   private String mask;
 
   public MaskedBankDetails() {
   }
 
-  public MaskedBankDetails mask(String mask) {
+  public MaskedBankDetails mask(@javax.annotation.Nonnull String mask) {
     
     this.mask = mask;
     return this;
   }
 
-   /**
+  /**
    * Get mask
    * @return mask
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_MASK)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -61,7 +62,7 @@ public class MaskedBankDetails {
 
   @JsonProperty(JSON_PROPERTY_MASK)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setMask(String mask) {
+  public void setMask(@javax.annotation.Nonnull String mask) {
     this.mask = mask;
   }
 

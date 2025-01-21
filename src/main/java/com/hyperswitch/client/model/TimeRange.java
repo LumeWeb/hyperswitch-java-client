@@ -38,27 +38,29 @@ import java.util.StringJoiner;
   TimeRange.JSON_PROPERTY_START_TIME,
   TimeRange.JSON_PROPERTY_END_TIME
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class TimeRange {
   public static final String JSON_PROPERTY_START_TIME = "start_time";
+  @javax.annotation.Nonnull
   private OffsetDateTime startTime;
 
   public static final String JSON_PROPERTY_END_TIME = "end_time";
+  @javax.annotation.Nullable
   private JsonNullable<OffsetDateTime> endTime = JsonNullable.<OffsetDateTime>undefined();
 
   public TimeRange() {
   }
 
-  public TimeRange startTime(OffsetDateTime startTime) {
+  public TimeRange startTime(@javax.annotation.Nonnull OffsetDateTime startTime) {
     
     this.startTime = startTime;
     return this;
   }
 
-   /**
+  /**
    * The start time to filter payments list or to get list of filters. To get list of filters start time is needed to be passed
    * @return startTime
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_START_TIME)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -70,21 +72,20 @@ public class TimeRange {
 
   @JsonProperty(JSON_PROPERTY_START_TIME)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setStartTime(OffsetDateTime startTime) {
+  public void setStartTime(@javax.annotation.Nonnull OffsetDateTime startTime) {
     this.startTime = startTime;
   }
 
-
-  public TimeRange endTime(OffsetDateTime endTime) {
+  public TimeRange endTime(@javax.annotation.Nullable OffsetDateTime endTime) {
     this.endTime = JsonNullable.<OffsetDateTime>of(endTime);
     
     return this;
   }
 
-   /**
+  /**
    * The end time to filter payments list or to get list of filters. If not passed the default time is now
    * @return endTime
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -104,7 +105,7 @@ public class TimeRange {
     this.endTime = endTime;
   }
 
-  public void setEndTime(OffsetDateTime endTime) {
+  public void setEndTime(@javax.annotation.Nullable OffsetDateTime endTime) {
     this.endTime = JsonNullable.<OffsetDateTime>of(endTime);
   }
 

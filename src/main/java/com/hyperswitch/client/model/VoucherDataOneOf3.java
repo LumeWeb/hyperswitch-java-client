@@ -34,24 +34,25 @@ import java.util.StringJoiner;
   VoucherDataOneOf3.JSON_PROPERTY_SEVEN_ELEVEN
 })
 @JsonTypeName("VoucherData_oneOf_3")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class VoucherDataOneOf3 {
   public static final String JSON_PROPERTY_SEVEN_ELEVEN = "seven_eleven";
+  @javax.annotation.Nonnull
   private JCSVoucherData sevenEleven;
 
   public VoucherDataOneOf3() {
   }
 
-  public VoucherDataOneOf3 sevenEleven(JCSVoucherData sevenEleven) {
+  public VoucherDataOneOf3 sevenEleven(@javax.annotation.Nonnull JCSVoucherData sevenEleven) {
     
     this.sevenEleven = sevenEleven;
     return this;
   }
 
-   /**
+  /**
    * Get sevenEleven
    * @return sevenEleven
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_SEVEN_ELEVEN)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -63,7 +64,7 @@ public class VoucherDataOneOf3 {
 
   @JsonProperty(JSON_PROPERTY_SEVEN_ELEVEN)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setSevenEleven(JCSVoucherData sevenEleven) {
+  public void setSevenEleven(@javax.annotation.Nonnull JCSVoucherData sevenEleven) {
     this.sevenEleven = sevenEleven;
   }
 

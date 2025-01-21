@@ -13,20 +13,19 @@
 
 package com.hyperswitch.client.model;
 
-import org.junit.Assert;
-import org.junit.Ignore;
-import org.junit.Test;
-
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Test;
 
 /**
  * Model tests for UIWidgetFormLayout
  */
-public class UIWidgetFormLayoutTest {
+class UIWidgetFormLayoutTest {
     /**
      * Model tests for UIWidgetFormLayout
      */
     @Test
-    public void testUIWidgetFormLayout() {
+    void testUIWidgetFormLayout() {
         // TODO: test UIWidgetFormLayout
     }
 

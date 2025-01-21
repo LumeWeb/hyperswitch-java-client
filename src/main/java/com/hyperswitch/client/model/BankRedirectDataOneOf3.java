@@ -34,24 +34,25 @@ import java.util.StringJoiner;
   BankRedirectDataOneOf3.JSON_PROPERTY_EPS
 })
 @JsonTypeName("BankRedirectData_oneOf_3")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class BankRedirectDataOneOf3 {
   public static final String JSON_PROPERTY_EPS = "eps";
+  @javax.annotation.Nonnull
   private BankRedirectDataOneOf3Eps eps;
 
   public BankRedirectDataOneOf3() {
   }
 
-  public BankRedirectDataOneOf3 eps(BankRedirectDataOneOf3Eps eps) {
+  public BankRedirectDataOneOf3 eps(@javax.annotation.Nonnull BankRedirectDataOneOf3Eps eps) {
     
     this.eps = eps;
     return this;
   }
 
-   /**
+  /**
    * Get eps
    * @return eps
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_EPS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -63,7 +64,7 @@ public class BankRedirectDataOneOf3 {
 
   @JsonProperty(JSON_PROPERTY_EPS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setEps(BankRedirectDataOneOf3Eps eps) {
+  public void setEps(@javax.annotation.Nonnull BankRedirectDataOneOf3Eps eps) {
     this.eps = eps;
   }
 

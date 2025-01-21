@@ -38,30 +38,33 @@ import java.util.StringJoiner;
   MerchantRecipientData.JSON_PROPERTY_WALLET_ID,
   MerchantRecipientData.JSON_PROPERTY_ACCOUNT_DATA
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class MerchantRecipientData {
   public static final String JSON_PROPERTY_CONNECTOR_RECIPIENT_ID = "connector_recipient_id";
+  @javax.annotation.Nullable
   private String connectorRecipientId;
 
   public static final String JSON_PROPERTY_WALLET_ID = "wallet_id";
+  @javax.annotation.Nullable
   private String walletId;
 
   public static final String JSON_PROPERTY_ACCOUNT_DATA = "account_data";
+  @javax.annotation.Nonnull
   private MerchantAccountData accountData;
 
   public MerchantRecipientData() {
   }
 
-  public MerchantRecipientData connectorRecipientId(String connectorRecipientId) {
+  public MerchantRecipientData connectorRecipientId(@javax.annotation.Nullable String connectorRecipientId) {
     
     this.connectorRecipientId = connectorRecipientId;
     return this;
   }
 
-   /**
+  /**
    * Get connectorRecipientId
    * @return connectorRecipientId
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_CONNECTOR_RECIPIENT_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -73,21 +76,20 @@ public class MerchantRecipientData {
 
   @JsonProperty(JSON_PROPERTY_CONNECTOR_RECIPIENT_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setConnectorRecipientId(String connectorRecipientId) {
+  public void setConnectorRecipientId(@javax.annotation.Nullable String connectorRecipientId) {
     this.connectorRecipientId = connectorRecipientId;
   }
 
-
-  public MerchantRecipientData walletId(String walletId) {
+  public MerchantRecipientData walletId(@javax.annotation.Nullable String walletId) {
     
     this.walletId = walletId;
     return this;
   }
 
-   /**
+  /**
    * Get walletId
    * @return walletId
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_WALLET_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -99,21 +101,20 @@ public class MerchantRecipientData {
 
   @JsonProperty(JSON_PROPERTY_WALLET_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setWalletId(String walletId) {
+  public void setWalletId(@javax.annotation.Nullable String walletId) {
     this.walletId = walletId;
   }
 
-
-  public MerchantRecipientData accountData(MerchantAccountData accountData) {
+  public MerchantRecipientData accountData(@javax.annotation.Nonnull MerchantAccountData accountData) {
     
     this.accountData = accountData;
     return this;
   }
 
-   /**
+  /**
    * Get accountData
    * @return accountData
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_ACCOUNT_DATA)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -125,7 +126,7 @@ public class MerchantRecipientData {
 
   @JsonProperty(JSON_PROPERTY_ACCOUNT_DATA)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setAccountData(MerchantAccountData accountData) {
+  public void setAccountData(@javax.annotation.Nonnull MerchantAccountData accountData) {
     this.accountData = accountData;
   }
 

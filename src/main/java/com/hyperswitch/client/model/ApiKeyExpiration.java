@@ -27,10 +27,11 @@ import java.util.StringJoiner;
  */
 @JsonPropertyOrder({
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class ApiKeyExpiration {
   public ApiKeyExpiration() {
   }
+
   @Override
   public boolean equals(Object o) {
     if (this == o) {

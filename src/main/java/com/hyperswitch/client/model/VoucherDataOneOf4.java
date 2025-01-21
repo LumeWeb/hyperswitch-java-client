@@ -34,24 +34,25 @@ import java.util.StringJoiner;
   VoucherDataOneOf4.JSON_PROPERTY_LAWSON
 })
 @JsonTypeName("VoucherData_oneOf_4")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class VoucherDataOneOf4 {
   public static final String JSON_PROPERTY_LAWSON = "lawson";
+  @javax.annotation.Nonnull
   private JCSVoucherData lawson;
 
   public VoucherDataOneOf4() {
   }
 
-  public VoucherDataOneOf4 lawson(JCSVoucherData lawson) {
+  public VoucherDataOneOf4 lawson(@javax.annotation.Nonnull JCSVoucherData lawson) {
     
     this.lawson = lawson;
     return this;
   }
 
-   /**
+  /**
    * Get lawson
    * @return lawson
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_LAWSON)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -63,7 +64,7 @@ public class VoucherDataOneOf4 {
 
   @JsonProperty(JSON_PROPERTY_LAWSON)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setLawson(JCSVoucherData lawson) {
+  public void setLawson(@javax.annotation.Nonnull JCSVoucherData lawson) {
     this.lawson = lawson;
   }
 

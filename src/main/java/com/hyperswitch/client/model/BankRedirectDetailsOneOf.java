@@ -34,24 +34,25 @@ import java.util.StringJoiner;
   BankRedirectDetailsOneOf.JSON_PROPERTY_BANCONTACT_CARD
 })
 @JsonTypeName("BankRedirectDetails_oneOf")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class BankRedirectDetailsOneOf {
   public static final String JSON_PROPERTY_BANCONTACT_CARD = "BancontactCard";
+  @javax.annotation.Nonnull
   private BancontactBankRedirectAdditionalData bancontactCard;
 
   public BankRedirectDetailsOneOf() {
   }
 
-  public BankRedirectDetailsOneOf bancontactCard(BancontactBankRedirectAdditionalData bancontactCard) {
+  public BankRedirectDetailsOneOf bancontactCard(@javax.annotation.Nonnull BancontactBankRedirectAdditionalData bancontactCard) {
     
     this.bancontactCard = bancontactCard;
     return this;
   }
 
-   /**
+  /**
    * Get bancontactCard
    * @return bancontactCard
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_BANCONTACT_CARD)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -63,7 +64,7 @@ public class BankRedirectDetailsOneOf {
 
   @JsonProperty(JSON_PROPERTY_BANCONTACT_CARD)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setBancontactCard(BancontactBankRedirectAdditionalData bancontactCard) {
+  public void setBancontactCard(@javax.annotation.Nonnull BancontactBankRedirectAdditionalData bancontactCard) {
     this.bancontactCard = bancontactCard;
   }
 

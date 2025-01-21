@@ -32,24 +32,25 @@ import java.util.StringJoiner;
 @JsonPropertyOrder({
   Venmo.JSON_PROPERTY_TELEPHONE_NUMBER
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class Venmo {
   public static final String JSON_PROPERTY_TELEPHONE_NUMBER = "telephone_number";
+  @javax.annotation.Nonnull
   private String telephoneNumber;
 
   public Venmo() {
   }
 
-  public Venmo telephoneNumber(String telephoneNumber) {
+  public Venmo telephoneNumber(@javax.annotation.Nonnull String telephoneNumber) {
     
     this.telephoneNumber = telephoneNumber;
     return this;
   }
 
-   /**
+  /**
    * mobile number linked to venmo account
    * @return telephoneNumber
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_TELEPHONE_NUMBER)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -61,7 +62,7 @@ public class Venmo {
 
   @JsonProperty(JSON_PROPERTY_TELEPHONE_NUMBER)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setTelephoneNumber(String telephoneNumber) {
+  public void setTelephoneNumber(@javax.annotation.Nonnull String telephoneNumber) {
     this.telephoneNumber = telephoneNumber;
   }
 

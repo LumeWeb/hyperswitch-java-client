@@ -44,31 +44,37 @@ import java.util.StringJoiner;
   SessionTokenOneOf6.JSON_PROPERTY_WALLET_NAME
 })
 @JsonTypeName("SessionToken_oneOf_6")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class SessionTokenOneOf6 {
   public static final String JSON_PROPERTY_CLIENT_ID = "client_id";
+  @javax.annotation.Nonnull
   private String clientId;
 
   public static final String JSON_PROPERTY_CLIENT_NAME = "client_name";
+  @javax.annotation.Nonnull
   private String clientName;
 
   public static final String JSON_PROPERTY_CLIENT_PROFILE_ID = "client_profile_id";
+  @javax.annotation.Nonnull
   private String clientProfileId;
 
   public static final String JSON_PROPERTY_TRANSACTION_CURRENCY_CODE = "transaction_currency_code";
+  @javax.annotation.Nonnull
   private Currency transactionCurrencyCode;
 
   public static final String JSON_PROPERTY_TRANSACTION_AMOUNT = "transaction_amount";
+  @javax.annotation.Nonnull
   private String transactionAmount;
 
   public static final String JSON_PROPERTY_EMAIL_ADDRESS = "email_address";
+  @javax.annotation.Nullable
   private JsonNullable<String> emailAddress = JsonNullable.<String>undefined();
 
   /**
    * Gets or Sets walletName
    */
   public enum WalletNameEnum {
-    PAZE("paze");
+    PAZE(String.valueOf("paze"));
 
     private String value;
 
@@ -98,21 +104,22 @@ public class SessionTokenOneOf6 {
   }
 
   public static final String JSON_PROPERTY_WALLET_NAME = "wallet_name";
+  @javax.annotation.Nonnull
   private WalletNameEnum walletName;
 
   public SessionTokenOneOf6() {
   }
 
-  public SessionTokenOneOf6 clientId(String clientId) {
+  public SessionTokenOneOf6 clientId(@javax.annotation.Nonnull String clientId) {
     
     this.clientId = clientId;
     return this;
   }
 
-   /**
+  /**
    * Paze Client ID
    * @return clientId
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_CLIENT_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -124,21 +131,20 @@ public class SessionTokenOneOf6 {
 
   @JsonProperty(JSON_PROPERTY_CLIENT_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setClientId(String clientId) {
+  public void setClientId(@javax.annotation.Nonnull String clientId) {
     this.clientId = clientId;
   }
 
-
-  public SessionTokenOneOf6 clientName(String clientName) {
+  public SessionTokenOneOf6 clientName(@javax.annotation.Nonnull String clientName) {
     
     this.clientName = clientName;
     return this;
   }
 
-   /**
+  /**
    * Client Name to be displayed on the Paze screen
    * @return clientName
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_CLIENT_NAME)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -150,21 +156,20 @@ public class SessionTokenOneOf6 {
 
   @JsonProperty(JSON_PROPERTY_CLIENT_NAME)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setClientName(String clientName) {
+  public void setClientName(@javax.annotation.Nonnull String clientName) {
     this.clientName = clientName;
   }
 
-
-  public SessionTokenOneOf6 clientProfileId(String clientProfileId) {
+  public SessionTokenOneOf6 clientProfileId(@javax.annotation.Nonnull String clientProfileId) {
     
     this.clientProfileId = clientProfileId;
     return this;
   }
 
-   /**
+  /**
    * Paze Client Profile ID
    * @return clientProfileId
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_CLIENT_PROFILE_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -176,21 +181,20 @@ public class SessionTokenOneOf6 {
 
   @JsonProperty(JSON_PROPERTY_CLIENT_PROFILE_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setClientProfileId(String clientProfileId) {
+  public void setClientProfileId(@javax.annotation.Nonnull String clientProfileId) {
     this.clientProfileId = clientProfileId;
   }
 
-
-  public SessionTokenOneOf6 transactionCurrencyCode(Currency transactionCurrencyCode) {
+  public SessionTokenOneOf6 transactionCurrencyCode(@javax.annotation.Nonnull Currency transactionCurrencyCode) {
     
     this.transactionCurrencyCode = transactionCurrencyCode;
     return this;
   }
 
-   /**
+  /**
    * Get transactionCurrencyCode
    * @return transactionCurrencyCode
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_TRANSACTION_CURRENCY_CODE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -202,21 +206,20 @@ public class SessionTokenOneOf6 {
 
   @JsonProperty(JSON_PROPERTY_TRANSACTION_CURRENCY_CODE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setTransactionCurrencyCode(Currency transactionCurrencyCode) {
+  public void setTransactionCurrencyCode(@javax.annotation.Nonnull Currency transactionCurrencyCode) {
     this.transactionCurrencyCode = transactionCurrencyCode;
   }
 
-
-  public SessionTokenOneOf6 transactionAmount(String transactionAmount) {
+  public SessionTokenOneOf6 transactionAmount(@javax.annotation.Nonnull String transactionAmount) {
     
     this.transactionAmount = transactionAmount;
     return this;
   }
 
-   /**
+  /**
    * The transaction amount
    * @return transactionAmount
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_TRANSACTION_AMOUNT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -228,21 +231,20 @@ public class SessionTokenOneOf6 {
 
   @JsonProperty(JSON_PROPERTY_TRANSACTION_AMOUNT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setTransactionAmount(String transactionAmount) {
+  public void setTransactionAmount(@javax.annotation.Nonnull String transactionAmount) {
     this.transactionAmount = transactionAmount;
   }
 
-
-  public SessionTokenOneOf6 emailAddress(String emailAddress) {
+  public SessionTokenOneOf6 emailAddress(@javax.annotation.Nullable String emailAddress) {
     this.emailAddress = JsonNullable.<String>of(emailAddress);
     
     return this;
   }
 
-   /**
+  /**
    * Email Address
    * @return emailAddress
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -262,21 +264,20 @@ public class SessionTokenOneOf6 {
     this.emailAddress = emailAddress;
   }
 
-  public void setEmailAddress(String emailAddress) {
+  public void setEmailAddress(@javax.annotation.Nullable String emailAddress) {
     this.emailAddress = JsonNullable.<String>of(emailAddress);
   }
 
-
-  public SessionTokenOneOf6 walletName(WalletNameEnum walletName) {
+  public SessionTokenOneOf6 walletName(@javax.annotation.Nonnull WalletNameEnum walletName) {
     
     this.walletName = walletName;
     return this;
   }
 
-   /**
+  /**
    * Get walletName
    * @return walletName
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_WALLET_NAME)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -288,7 +289,7 @@ public class SessionTokenOneOf6 {
 
   @JsonProperty(JSON_PROPERTY_WALLET_NAME)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setWalletName(WalletNameEnum walletName) {
+  public void setWalletName(@javax.annotation.Nonnull WalletNameEnum walletName) {
     this.walletName = walletName;
   }
 

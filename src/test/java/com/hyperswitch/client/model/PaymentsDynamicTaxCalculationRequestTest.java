@@ -24,22 +24,21 @@ import org.openapitools.jackson.nullable.JsonNullable;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.openapitools.jackson.nullable.JsonNullable;
 import java.util.NoSuchElementException;
-import org.junit.Assert;
-import org.junit.Ignore;
-import org.junit.Test;
-
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Test;
 
 /**
  * Model tests for PaymentsDynamicTaxCalculationRequest
  */
-public class PaymentsDynamicTaxCalculationRequestTest {
+class PaymentsDynamicTaxCalculationRequestTest {
     private final PaymentsDynamicTaxCalculationRequest model = new PaymentsDynamicTaxCalculationRequest();
 
     /**
      * Model tests for PaymentsDynamicTaxCalculationRequest
      */
     @Test
-    public void testPaymentsDynamicTaxCalculationRequest() {
+    void testPaymentsDynamicTaxCalculationRequest() {
         // TODO: test PaymentsDynamicTaxCalculationRequest
     }
 
@@ -47,7 +46,7 @@ public class PaymentsDynamicTaxCalculationRequestTest {
      * Test the property 'shipping'
      */
     @Test
-    public void shippingTest() {
+    void shippingTest() {
         // TODO: test shipping
     }
 
@@ -55,7 +54,7 @@ public class PaymentsDynamicTaxCalculationRequestTest {
      * Test the property 'clientSecret'
      */
     @Test
-    public void clientSecretTest() {
+    void clientSecretTest() {
         // TODO: test clientSecret
     }
 
@@ -63,7 +62,7 @@ public class PaymentsDynamicTaxCalculationRequestTest {
      * Test the property 'paymentMethodType'
      */
     @Test
-    public void paymentMethodTypeTest() {
+    void paymentMethodTypeTest() {
         // TODO: test paymentMethodType
     }
 
@@ -71,7 +70,7 @@ public class PaymentsDynamicTaxCalculationRequestTest {
      * Test the property 'sessionId'
      */
     @Test
-    public void sessionIdTest() {
+    void sessionIdTest() {
         // TODO: test sessionId
     }
 

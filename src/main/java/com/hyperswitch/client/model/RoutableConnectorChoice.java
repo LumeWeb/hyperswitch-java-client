@@ -38,27 +38,29 @@ import java.util.StringJoiner;
   RoutableConnectorChoice.JSON_PROPERTY_CONNECTOR,
   RoutableConnectorChoice.JSON_PROPERTY_MERCHANT_CONNECTOR_ID
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class RoutableConnectorChoice {
   public static final String JSON_PROPERTY_CONNECTOR = "connector";
+  @javax.annotation.Nonnull
   private RoutableConnectors connector;
 
   public static final String JSON_PROPERTY_MERCHANT_CONNECTOR_ID = "merchant_connector_id";
+  @javax.annotation.Nullable
   private JsonNullable<String> merchantConnectorId = JsonNullable.<String>undefined();
 
   public RoutableConnectorChoice() {
   }
 
-  public RoutableConnectorChoice connector(RoutableConnectors connector) {
+  public RoutableConnectorChoice connector(@javax.annotation.Nonnull RoutableConnectors connector) {
     
     this.connector = connector;
     return this;
   }
 
-   /**
+  /**
    * Get connector
    * @return connector
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_CONNECTOR)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -70,21 +72,20 @@ public class RoutableConnectorChoice {
 
   @JsonProperty(JSON_PROPERTY_CONNECTOR)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setConnector(RoutableConnectors connector) {
+  public void setConnector(@javax.annotation.Nonnull RoutableConnectors connector) {
     this.connector = connector;
   }
 
-
-  public RoutableConnectorChoice merchantConnectorId(String merchantConnectorId) {
+  public RoutableConnectorChoice merchantConnectorId(@javax.annotation.Nullable String merchantConnectorId) {
     this.merchantConnectorId = JsonNullable.<String>of(merchantConnectorId);
     
     return this;
   }
 
-   /**
+  /**
    * Get merchantConnectorId
    * @return merchantConnectorId
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -104,7 +105,7 @@ public class RoutableConnectorChoice {
     this.merchantConnectorId = merchantConnectorId;
   }
 
-  public void setMerchantConnectorId(String merchantConnectorId) {
+  public void setMerchantConnectorId(@javax.annotation.Nullable String merchantConnectorId) {
     this.merchantConnectorId = JsonNullable.<String>of(merchantConnectorId);
   }
 

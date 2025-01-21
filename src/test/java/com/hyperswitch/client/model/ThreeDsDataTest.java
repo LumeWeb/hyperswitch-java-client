@@ -24,22 +24,21 @@ import org.openapitools.jackson.nullable.JsonNullable;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.openapitools.jackson.nullable.JsonNullable;
 import java.util.NoSuchElementException;
-import org.junit.Assert;
-import org.junit.Ignore;
-import org.junit.Test;
-
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Test;
 
 /**
  * Model tests for ThreeDsData
  */
-public class ThreeDsDataTest {
+class ThreeDsDataTest {
     private final ThreeDsData model = new ThreeDsData();
 
     /**
      * Model tests for ThreeDsData
      */
     @Test
-    public void testThreeDsData() {
+    void testThreeDsData() {
         // TODO: test ThreeDsData
     }
 
@@ -47,7 +46,7 @@ public class ThreeDsDataTest {
      * Test the property 'threeDsAuthenticationUrl'
      */
     @Test
-    public void threeDsAuthenticationUrlTest() {
+    void threeDsAuthenticationUrlTest() {
         // TODO: test threeDsAuthenticationUrl
     }
 
@@ -55,7 +54,7 @@ public class ThreeDsDataTest {
      * Test the property 'threeDsAuthorizeUrl'
      */
     @Test
-    public void threeDsAuthorizeUrlTest() {
+    void threeDsAuthorizeUrlTest() {
         // TODO: test threeDsAuthorizeUrl
     }
 
@@ -63,7 +62,7 @@ public class ThreeDsDataTest {
      * Test the property 'threeDsMethodDetails'
      */
     @Test
-    public void threeDsMethodDetailsTest() {
+    void threeDsMethodDetailsTest() {
         // TODO: test threeDsMethodDetails
     }
 
@@ -71,7 +70,7 @@ public class ThreeDsDataTest {
      * Test the property 'pollConfig'
      */
     @Test
-    public void pollConfigTest() {
+    void pollConfigTest() {
         // TODO: test pollConfig
     }
 
@@ -79,7 +78,7 @@ public class ThreeDsDataTest {
      * Test the property 'messageVersion'
      */
     @Test
-    public void messageVersionTest() {
+    void messageVersionTest() {
         // TODO: test messageVersion
     }
 
@@ -87,7 +86,7 @@ public class ThreeDsDataTest {
      * Test the property 'directoryServerId'
      */
     @Test
-    public void directoryServerIdTest() {
+    void directoryServerIdTest() {
         // TODO: test directoryServerId
     }
 

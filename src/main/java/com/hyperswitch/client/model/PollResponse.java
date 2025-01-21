@@ -34,27 +34,29 @@ import java.util.StringJoiner;
   PollResponse.JSON_PROPERTY_POLL_ID,
   PollResponse.JSON_PROPERTY_STATUS
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class PollResponse {
   public static final String JSON_PROPERTY_POLL_ID = "poll_id";
+  @javax.annotation.Nonnull
   private String pollId;
 
   public static final String JSON_PROPERTY_STATUS = "status";
+  @javax.annotation.Nonnull
   private PollStatus status;
 
   public PollResponse() {
   }
 
-  public PollResponse pollId(String pollId) {
+  public PollResponse pollId(@javax.annotation.Nonnull String pollId) {
     
     this.pollId = pollId;
     return this;
   }
 
-   /**
+  /**
    * The poll id
    * @return pollId
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_POLL_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -66,21 +68,20 @@ public class PollResponse {
 
   @JsonProperty(JSON_PROPERTY_POLL_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setPollId(String pollId) {
+  public void setPollId(@javax.annotation.Nonnull String pollId) {
     this.pollId = pollId;
   }
 
-
-  public PollResponse status(PollStatus status) {
+  public PollResponse status(@javax.annotation.Nonnull PollStatus status) {
     
     this.status = status;
     return this;
   }
 
-   /**
+  /**
    * Get status
    * @return status
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_STATUS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -92,7 +93,7 @@ public class PollResponse {
 
   @JsonProperty(JSON_PROPERTY_STATUS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setStatus(PollStatus status) {
+  public void setStatus(@javax.annotation.Nonnull PollStatus status) {
     this.status = status;
   }
 

@@ -34,16 +34,17 @@ import java.util.StringJoiner;
   NextActionDataOneOf.JSON_PROPERTY_TYPE
 })
 @JsonTypeName("NextActionData_oneOf")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class NextActionDataOneOf {
   public static final String JSON_PROPERTY_REDIRECT_TO_URL = "redirect_to_url";
+  @javax.annotation.Nonnull
   private String redirectToUrl;
 
   /**
    * Gets or Sets type
    */
   public enum TypeEnum {
-    REDIRECT_TO_URL("redirect_to_url");
+    REDIRECT_TO_URL(String.valueOf("redirect_to_url"));
 
     private String value;
 
@@ -73,21 +74,22 @@ public class NextActionDataOneOf {
   }
 
   public static final String JSON_PROPERTY_TYPE = "type";
+  @javax.annotation.Nonnull
   private TypeEnum type;
 
   public NextActionDataOneOf() {
   }
 
-  public NextActionDataOneOf redirectToUrl(String redirectToUrl) {
+  public NextActionDataOneOf redirectToUrl(@javax.annotation.Nonnull String redirectToUrl) {
     
     this.redirectToUrl = redirectToUrl;
     return this;
   }
 
-   /**
+  /**
    * Get redirectToUrl
    * @return redirectToUrl
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_REDIRECT_TO_URL)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -99,21 +101,20 @@ public class NextActionDataOneOf {
 
   @JsonProperty(JSON_PROPERTY_REDIRECT_TO_URL)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setRedirectToUrl(String redirectToUrl) {
+  public void setRedirectToUrl(@javax.annotation.Nonnull String redirectToUrl) {
     this.redirectToUrl = redirectToUrl;
   }
 
-
-  public NextActionDataOneOf type(TypeEnum type) {
+  public NextActionDataOneOf type(@javax.annotation.Nonnull TypeEnum type) {
     
     this.type = type;
     return this;
   }
 
-   /**
+  /**
    * Get type
    * @return type
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_TYPE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -125,7 +126,7 @@ public class NextActionDataOneOf {
 
   @JsonProperty(JSON_PROPERTY_TYPE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setType(TypeEnum type) {
+  public void setType(@javax.annotation.Nonnull TypeEnum type) {
     this.type = type;
   }
 

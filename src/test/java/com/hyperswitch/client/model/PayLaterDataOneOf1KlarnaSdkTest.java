@@ -18,22 +18,21 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonTypeName;
 import com.fasterxml.jackson.annotation.JsonValue;
-import org.junit.Assert;
-import org.junit.Ignore;
-import org.junit.Test;
-
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Test;
 
 /**
  * Model tests for PayLaterDataOneOf1KlarnaSdk
  */
-public class PayLaterDataOneOf1KlarnaSdkTest {
+class PayLaterDataOneOf1KlarnaSdkTest {
     private final PayLaterDataOneOf1KlarnaSdk model = new PayLaterDataOneOf1KlarnaSdk();
 
     /**
      * Model tests for PayLaterDataOneOf1KlarnaSdk
      */
     @Test
-    public void testPayLaterDataOneOf1KlarnaSdk() {
+    void testPayLaterDataOneOf1KlarnaSdk() {
         // TODO: test PayLaterDataOneOf1KlarnaSdk
     }
 
@@ -41,7 +40,7 @@ public class PayLaterDataOneOf1KlarnaSdkTest {
      * Test the property 'token'
      */
     @Test
-    public void tokenTest() {
+    void tokenTest() {
         // TODO: test token
     }
 

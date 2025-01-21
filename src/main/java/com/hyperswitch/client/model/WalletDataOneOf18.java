@@ -34,24 +34,25 @@ import java.util.StringJoiner;
   WalletDataOneOf18.JSON_PROPERTY_PAZE
 })
 @JsonTypeName("WalletData_oneOf_18")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class WalletDataOneOf18 {
   public static final String JSON_PROPERTY_PAZE = "paze";
+  @javax.annotation.Nonnull
   private PazeWalletData paze;
 
   public WalletDataOneOf18() {
   }
 
-  public WalletDataOneOf18 paze(PazeWalletData paze) {
+  public WalletDataOneOf18 paze(@javax.annotation.Nonnull PazeWalletData paze) {
     
     this.paze = paze;
     return this;
   }
 
-   /**
+  /**
    * Get paze
    * @return paze
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_PAZE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -63,7 +64,7 @@ public class WalletDataOneOf18 {
 
   @JsonProperty(JSON_PROPERTY_PAZE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setPaze(PazeWalletData paze) {
+  public void setPaze(@javax.annotation.Nonnull PazeWalletData paze) {
     this.paze = paze;
   }
 

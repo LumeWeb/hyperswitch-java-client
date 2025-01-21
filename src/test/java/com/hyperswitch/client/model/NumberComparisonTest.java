@@ -19,22 +19,21 @@ import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonTypeName;
 import com.fasterxml.jackson.annotation.JsonValue;
 import com.hyperswitch.client.model.ComparisonType;
-import org.junit.Assert;
-import org.junit.Ignore;
-import org.junit.Test;
-
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Test;
 
 /**
  * Model tests for NumberComparison
  */
-public class NumberComparisonTest {
+class NumberComparisonTest {
     private final NumberComparison model = new NumberComparison();
 
     /**
      * Model tests for NumberComparison
      */
     @Test
-    public void testNumberComparison() {
+    void testNumberComparison() {
         // TODO: test NumberComparison
     }
 
@@ -42,7 +41,7 @@ public class NumberComparisonTest {
      * Test the property 'comparisonType'
      */
     @Test
-    public void comparisonTypeTest() {
+    void comparisonTypeTest() {
         // TODO: test comparisonType
     }
 
@@ -50,7 +49,7 @@ public class NumberComparisonTest {
      * Test the property 'number'
      */
     @Test
-    public void numberTest() {
+    void numberTest() {
         // TODO: test number
     }
 

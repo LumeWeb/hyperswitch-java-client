@@ -40,30 +40,33 @@ import java.util.StringJoiner;
   BankRedirectDetails.JSON_PROPERTY_BLIK,
   BankRedirectDetails.JSON_PROPERTY_GIROPAY
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class BankRedirectDetails {
   public static final String JSON_PROPERTY_BANCONTACT_CARD = "BancontactCard";
+  @javax.annotation.Nonnull
   private BancontactBankRedirectAdditionalData bancontactCard;
 
   public static final String JSON_PROPERTY_BLIK = "Blik";
+  @javax.annotation.Nonnull
   private BlikBankRedirectAdditionalData blik;
 
   public static final String JSON_PROPERTY_GIROPAY = "Giropay";
+  @javax.annotation.Nonnull
   private GiropayBankRedirectAdditionalData giropay;
 
   public BankRedirectDetails() {
   }
 
-  public BankRedirectDetails bancontactCard(BancontactBankRedirectAdditionalData bancontactCard) {
+  public BankRedirectDetails bancontactCard(@javax.annotation.Nonnull BancontactBankRedirectAdditionalData bancontactCard) {
     
     this.bancontactCard = bancontactCard;
     return this;
   }
 
-   /**
+  /**
    * Get bancontactCard
    * @return bancontactCard
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_BANCONTACT_CARD)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -75,21 +78,20 @@ public class BankRedirectDetails {
 
   @JsonProperty(JSON_PROPERTY_BANCONTACT_CARD)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setBancontactCard(BancontactBankRedirectAdditionalData bancontactCard) {
+  public void setBancontactCard(@javax.annotation.Nonnull BancontactBankRedirectAdditionalData bancontactCard) {
     this.bancontactCard = bancontactCard;
   }
 
-
-  public BankRedirectDetails blik(BlikBankRedirectAdditionalData blik) {
+  public BankRedirectDetails blik(@javax.annotation.Nonnull BlikBankRedirectAdditionalData blik) {
     
     this.blik = blik;
     return this;
   }
 
-   /**
+  /**
    * Get blik
    * @return blik
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_BLIK)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -101,21 +103,20 @@ public class BankRedirectDetails {
 
   @JsonProperty(JSON_PROPERTY_BLIK)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setBlik(BlikBankRedirectAdditionalData blik) {
+  public void setBlik(@javax.annotation.Nonnull BlikBankRedirectAdditionalData blik) {
     this.blik = blik;
   }
 
-
-  public BankRedirectDetails giropay(GiropayBankRedirectAdditionalData giropay) {
+  public BankRedirectDetails giropay(@javax.annotation.Nonnull GiropayBankRedirectAdditionalData giropay) {
     
     this.giropay = giropay;
     return this;
   }
 
-   /**
+  /**
    * Get giropay
    * @return giropay
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_GIROPAY)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -127,7 +128,7 @@ public class BankRedirectDetails {
 
   @JsonProperty(JSON_PROPERTY_GIROPAY)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setGiropay(GiropayBankRedirectAdditionalData giropay) {
+  public void setGiropay(@javax.annotation.Nonnull GiropayBankRedirectAdditionalData giropay) {
     this.giropay = giropay;
   }
 

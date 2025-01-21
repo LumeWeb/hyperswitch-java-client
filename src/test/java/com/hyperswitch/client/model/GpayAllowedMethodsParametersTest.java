@@ -20,27 +20,27 @@ import com.fasterxml.jackson.annotation.JsonTypeName;
 import com.fasterxml.jackson.annotation.JsonValue;
 import com.hyperswitch.client.model.GpayBillingAddressParameters;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import org.openapitools.jackson.nullable.JsonNullable;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.openapitools.jackson.nullable.JsonNullable;
 import java.util.NoSuchElementException;
-import org.junit.Assert;
-import org.junit.Ignore;
-import org.junit.Test;
-
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Test;
 
 /**
  * Model tests for GpayAllowedMethodsParameters
  */
-public class GpayAllowedMethodsParametersTest {
+class GpayAllowedMethodsParametersTest {
     private final GpayAllowedMethodsParameters model = new GpayAllowedMethodsParameters();
 
     /**
      * Model tests for GpayAllowedMethodsParameters
      */
     @Test
-    public void testGpayAllowedMethodsParameters() {
+    void testGpayAllowedMethodsParameters() {
         // TODO: test GpayAllowedMethodsParameters
     }
 
@@ -48,7 +48,7 @@ public class GpayAllowedMethodsParametersTest {
      * Test the property 'allowedAuthMethods'
      */
     @Test
-    public void allowedAuthMethodsTest() {
+    void allowedAuthMethodsTest() {
         // TODO: test allowedAuthMethods
     }
 
@@ -56,7 +56,7 @@ public class GpayAllowedMethodsParametersTest {
      * Test the property 'allowedCardNetworks'
      */
     @Test
-    public void allowedCardNetworksTest() {
+    void allowedCardNetworksTest() {
         // TODO: test allowedCardNetworks
     }
 
@@ -64,7 +64,7 @@ public class GpayAllowedMethodsParametersTest {
      * Test the property 'billingAddressRequired'
      */
     @Test
-    public void billingAddressRequiredTest() {
+    void billingAddressRequiredTest() {
         // TODO: test billingAddressRequired
     }
 
@@ -72,7 +72,7 @@ public class GpayAllowedMethodsParametersTest {
      * Test the property 'billingAddressParameters'
      */
     @Test
-    public void billingAddressParametersTest() {
+    void billingAddressParametersTest() {
         // TODO: test billingAddressParameters
     }
 
@@ -80,7 +80,7 @@ public class GpayAllowedMethodsParametersTest {
      * Test the property 'assuranceDetailsRequired'
      */
     @Test
-    public void assuranceDetailsRequiredTest() {
+    void assuranceDetailsRequiredTest() {
         // TODO: test assuranceDetailsRequired
     }
 

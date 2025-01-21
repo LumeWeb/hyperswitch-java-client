@@ -34,27 +34,29 @@ import java.util.StringJoiner;
   NumberComparison.JSON_PROPERTY_COMPARISON_TYPE,
   NumberComparison.JSON_PROPERTY_NUMBER
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class NumberComparison {
   public static final String JSON_PROPERTY_COMPARISON_TYPE = "comparisonType";
+  @javax.annotation.Nonnull
   private ComparisonType comparisonType;
 
   public static final String JSON_PROPERTY_NUMBER = "number";
+  @javax.annotation.Nonnull
   private Long number;
 
   public NumberComparison() {
   }
 
-  public NumberComparison comparisonType(ComparisonType comparisonType) {
+  public NumberComparison comparisonType(@javax.annotation.Nonnull ComparisonType comparisonType) {
     
     this.comparisonType = comparisonType;
     return this;
   }
 
-   /**
+  /**
    * Get comparisonType
    * @return comparisonType
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_COMPARISON_TYPE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -66,21 +68,20 @@ public class NumberComparison {
 
   @JsonProperty(JSON_PROPERTY_COMPARISON_TYPE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setComparisonType(ComparisonType comparisonType) {
+  public void setComparisonType(@javax.annotation.Nonnull ComparisonType comparisonType) {
     this.comparisonType = comparisonType;
   }
 
-
-  public NumberComparison number(Long number) {
+  public NumberComparison number(@javax.annotation.Nonnull Long number) {
     
     this.number = number;
     return this;
   }
 
-   /**
+  /**
    * This Unit struct represents MinorUnit in which core amount works
    * @return number
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_NUMBER)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -92,7 +93,7 @@ public class NumberComparison {
 
   @JsonProperty(JSON_PROPERTY_NUMBER)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setNumber(Long number) {
+  public void setNumber(@javax.annotation.Nonnull Long number) {
     this.number = number;
   }
 

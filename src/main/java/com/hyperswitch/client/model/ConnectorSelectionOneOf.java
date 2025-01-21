@@ -22,6 +22,7 @@ import com.fasterxml.jackson.annotation.JsonTypeName;
 import com.fasterxml.jackson.annotation.JsonValue;
 import com.hyperswitch.client.model.RoutableConnectorChoice;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 import com.fasterxml.jackson.annotation.JsonTypeName;
@@ -37,13 +38,13 @@ import java.util.StringJoiner;
   ConnectorSelectionOneOf.JSON_PROPERTY_DATA
 })
 @JsonTypeName("ConnectorSelection_oneOf")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class ConnectorSelectionOneOf {
   /**
    * Gets or Sets type
    */
   public enum TypeEnum {
-    PRIORITY("priority");
+    PRIORITY(String.valueOf("priority"));
 
     private String value;
 
@@ -73,24 +74,26 @@ public class ConnectorSelectionOneOf {
   }
 
   public static final String JSON_PROPERTY_TYPE = "type";
+  @javax.annotation.Nonnull
   private TypeEnum type;
 
   public static final String JSON_PROPERTY_DATA = "data";
+  @javax.annotation.Nonnull
   private List<RoutableConnectorChoice> data = new ArrayList<>();
 
   public ConnectorSelectionOneOf() {
   }
 
-  public ConnectorSelectionOneOf type(TypeEnum type) {
+  public ConnectorSelectionOneOf type(@javax.annotation.Nonnull TypeEnum type) {
     
     this.type = type;
     return this;
   }
 
-   /**
+  /**
    * Get type
    * @return type
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_TYPE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -102,12 +105,11 @@ public class ConnectorSelectionOneOf {
 
   @JsonProperty(JSON_PROPERTY_TYPE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setType(TypeEnum type) {
+  public void setType(@javax.annotation.Nonnull TypeEnum type) {
     this.type = type;
   }
 
-
-  public ConnectorSelectionOneOf data(List<RoutableConnectorChoice> data) {
+  public ConnectorSelectionOneOf data(@javax.annotation.Nonnull List<RoutableConnectorChoice> data) {
     
     this.data = data;
     return this;
@@ -121,10 +123,10 @@ public class ConnectorSelectionOneOf {
     return this;
   }
 
-   /**
+  /**
    * Get data
    * @return data
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_DATA)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -136,7 +138,7 @@ public class ConnectorSelectionOneOf {
 
   @JsonProperty(JSON_PROPERTY_DATA)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setData(List<RoutableConnectorChoice> data) {
+  public void setData(@javax.annotation.Nonnull List<RoutableConnectorChoice> data) {
     this.data = data;
   }
 

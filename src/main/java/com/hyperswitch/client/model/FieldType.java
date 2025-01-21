@@ -44,39 +44,45 @@ import java.util.StringJoiner;
   FieldType.JSON_PROPERTY_DROP_DOWN,
   FieldType.JSON_PROPERTY_LANGUAGE_PREFERENCE
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class FieldType {
   public static final String JSON_PROPERTY_USER_COUNTRY = "user_country";
+  @javax.annotation.Nonnull
   private FieldTypeOneOfUserCountry userCountry;
 
   public static final String JSON_PROPERTY_USER_CURRENCY = "user_currency";
+  @javax.annotation.Nonnull
   private FieldTypeOneOfUserCountry userCurrency;
 
   public static final String JSON_PROPERTY_USER_ADDRESS_COUNTRY = "user_address_country";
+  @javax.annotation.Nonnull
   private FieldTypeOneOfUserCountry userAddressCountry;
 
   public static final String JSON_PROPERTY_USER_SHIPPING_ADDRESS_COUNTRY = "user_shipping_address_country";
+  @javax.annotation.Nonnull
   private FieldTypeOneOfUserCountry userShippingAddressCountry;
 
   public static final String JSON_PROPERTY_DROP_DOWN = "drop_down";
+  @javax.annotation.Nonnull
   private FieldTypeOneOfUserCountry dropDown;
 
   public static final String JSON_PROPERTY_LANGUAGE_PREFERENCE = "language_preference";
+  @javax.annotation.Nonnull
   private FieldTypeOneOfUserCountry languagePreference;
 
   public FieldType() {
   }
 
-  public FieldType userCountry(FieldTypeOneOfUserCountry userCountry) {
+  public FieldType userCountry(@javax.annotation.Nonnull FieldTypeOneOfUserCountry userCountry) {
     
     this.userCountry = userCountry;
     return this;
   }
 
-   /**
+  /**
    * Get userCountry
    * @return userCountry
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_USER_COUNTRY)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -88,21 +94,20 @@ public class FieldType {
 
   @JsonProperty(JSON_PROPERTY_USER_COUNTRY)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setUserCountry(FieldTypeOneOfUserCountry userCountry) {
+  public void setUserCountry(@javax.annotation.Nonnull FieldTypeOneOfUserCountry userCountry) {
     this.userCountry = userCountry;
   }
 
-
-  public FieldType userCurrency(FieldTypeOneOfUserCountry userCurrency) {
+  public FieldType userCurrency(@javax.annotation.Nonnull FieldTypeOneOfUserCountry userCurrency) {
     
     this.userCurrency = userCurrency;
     return this;
   }
 
-   /**
+  /**
    * Get userCurrency
    * @return userCurrency
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_USER_CURRENCY)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -114,21 +119,20 @@ public class FieldType {
 
   @JsonProperty(JSON_PROPERTY_USER_CURRENCY)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setUserCurrency(FieldTypeOneOfUserCountry userCurrency) {
+  public void setUserCurrency(@javax.annotation.Nonnull FieldTypeOneOfUserCountry userCurrency) {
     this.userCurrency = userCurrency;
   }
 
-
-  public FieldType userAddressCountry(FieldTypeOneOfUserCountry userAddressCountry) {
+  public FieldType userAddressCountry(@javax.annotation.Nonnull FieldTypeOneOfUserCountry userAddressCountry) {
     
     this.userAddressCountry = userAddressCountry;
     return this;
   }
 
-   /**
+  /**
    * Get userAddressCountry
    * @return userAddressCountry
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_USER_ADDRESS_COUNTRY)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -140,21 +144,20 @@ public class FieldType {
 
   @JsonProperty(JSON_PROPERTY_USER_ADDRESS_COUNTRY)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setUserAddressCountry(FieldTypeOneOfUserCountry userAddressCountry) {
+  public void setUserAddressCountry(@javax.annotation.Nonnull FieldTypeOneOfUserCountry userAddressCountry) {
     this.userAddressCountry = userAddressCountry;
   }
 
-
-  public FieldType userShippingAddressCountry(FieldTypeOneOfUserCountry userShippingAddressCountry) {
+  public FieldType userShippingAddressCountry(@javax.annotation.Nonnull FieldTypeOneOfUserCountry userShippingAddressCountry) {
     
     this.userShippingAddressCountry = userShippingAddressCountry;
     return this;
   }
 
-   /**
+  /**
    * Get userShippingAddressCountry
    * @return userShippingAddressCountry
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_USER_SHIPPING_ADDRESS_COUNTRY)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -166,21 +169,20 @@ public class FieldType {
 
   @JsonProperty(JSON_PROPERTY_USER_SHIPPING_ADDRESS_COUNTRY)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setUserShippingAddressCountry(FieldTypeOneOfUserCountry userShippingAddressCountry) {
+  public void setUserShippingAddressCountry(@javax.annotation.Nonnull FieldTypeOneOfUserCountry userShippingAddressCountry) {
     this.userShippingAddressCountry = userShippingAddressCountry;
   }
 
-
-  public FieldType dropDown(FieldTypeOneOfUserCountry dropDown) {
+  public FieldType dropDown(@javax.annotation.Nonnull FieldTypeOneOfUserCountry dropDown) {
     
     this.dropDown = dropDown;
     return this;
   }
 
-   /**
+  /**
    * Get dropDown
    * @return dropDown
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_DROP_DOWN)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -192,21 +194,20 @@ public class FieldType {
 
   @JsonProperty(JSON_PROPERTY_DROP_DOWN)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setDropDown(FieldTypeOneOfUserCountry dropDown) {
+  public void setDropDown(@javax.annotation.Nonnull FieldTypeOneOfUserCountry dropDown) {
     this.dropDown = dropDown;
   }
 
-
-  public FieldType languagePreference(FieldTypeOneOfUserCountry languagePreference) {
+  public FieldType languagePreference(@javax.annotation.Nonnull FieldTypeOneOfUserCountry languagePreference) {
     
     this.languagePreference = languagePreference;
     return this;
   }
 
-   /**
+  /**
    * Get languagePreference
    * @return languagePreference
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_LANGUAGE_PREFERENCE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -218,7 +219,7 @@ public class FieldType {
 
   @JsonProperty(JSON_PROPERTY_LANGUAGE_PREFERENCE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setLanguagePreference(FieldTypeOneOfUserCountry languagePreference) {
+  public void setLanguagePreference(@javax.annotation.Nonnull FieldTypeOneOfUserCountry languagePreference) {
     this.languagePreference = languagePreference;
   }
 

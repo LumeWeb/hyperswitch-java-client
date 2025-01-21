@@ -19,9 +19,9 @@ import com.hyperswitch.client.model.CreateApiKeyResponse;
 import com.hyperswitch.client.model.RetrieveApiKeyResponse;
 import com.hyperswitch.client.model.RevokeApiKeyResponse;
 import com.hyperswitch.client.model.UpdateApiKeyRequest;
-import org.junit.Test;
-import org.junit.Ignore;
-import org.junit.Assert;
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Test;
 
 import java.time.LocalDate;
 import java.time.OffsetDateTime;
@@ -33,7 +33,7 @@ import java.util.Map;
 /**
  * API tests for ApiKeyApi
  */
-@Ignore
+@Disabled
 public class ApiKeyApiTest {
 
     private final ApiKeyApi api = new ApiKeyApi();

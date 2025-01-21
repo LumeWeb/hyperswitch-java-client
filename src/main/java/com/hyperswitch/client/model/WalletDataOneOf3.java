@@ -33,24 +33,25 @@ import java.util.StringJoiner;
   WalletDataOneOf3.JSON_PROPERTY_MOMO_REDIRECT
 })
 @JsonTypeName("WalletData_oneOf_3")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class WalletDataOneOf3 {
   public static final String JSON_PROPERTY_MOMO_REDIRECT = "momo_redirect";
+  @javax.annotation.Nonnull
   private Object momoRedirect;
 
   public WalletDataOneOf3() {
   }
 
-  public WalletDataOneOf3 momoRedirect(Object momoRedirect) {
+  public WalletDataOneOf3 momoRedirect(@javax.annotation.Nonnull Object momoRedirect) {
     
     this.momoRedirect = momoRedirect;
     return this;
   }
 
-   /**
+  /**
    * Get momoRedirect
    * @return momoRedirect
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_MOMO_REDIRECT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -62,7 +63,7 @@ public class WalletDataOneOf3 {
 
   @JsonProperty(JSON_PROPERTY_MOMO_REDIRECT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setMomoRedirect(Object momoRedirect) {
+  public void setMomoRedirect(@javax.annotation.Nonnull Object momoRedirect) {
     this.momoRedirect = momoRedirect;
   }
 

@@ -35,13 +35,13 @@ import java.util.StringJoiner;
   PayoutCreateResponse1.JSON_PROPERTY_OBJECT
 })
 @JsonTypeName("PayoutCreateResponse_1")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class PayoutCreateResponse1 {
   /**
    * Gets or Sets type
    */
   public enum TypeEnum {
-    PAYOUT_DETAILS("payout_details");
+    PAYOUT_DETAILS(String.valueOf("payout_details"));
 
     private String value;
 
@@ -71,24 +71,26 @@ public class PayoutCreateResponse1 {
   }
 
   public static final String JSON_PROPERTY_TYPE = "type";
+  @javax.annotation.Nonnull
   private TypeEnum type;
 
   public static final String JSON_PROPERTY_OBJECT = "object";
+  @javax.annotation.Nonnull
   private PayoutCreateResponse _object;
 
   public PayoutCreateResponse1() {
   }
 
-  public PayoutCreateResponse1 type(TypeEnum type) {
+  public PayoutCreateResponse1 type(@javax.annotation.Nonnull TypeEnum type) {
     
     this.type = type;
     return this;
   }
 
-   /**
+  /**
    * Get type
    * @return type
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_TYPE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -100,21 +102,20 @@ public class PayoutCreateResponse1 {
 
   @JsonProperty(JSON_PROPERTY_TYPE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setType(TypeEnum type) {
+  public void setType(@javax.annotation.Nonnull TypeEnum type) {
     this.type = type;
   }
 
-
-  public PayoutCreateResponse1 _object(PayoutCreateResponse _object) {
+  public PayoutCreateResponse1 _object(@javax.annotation.Nonnull PayoutCreateResponse _object) {
     
     this._object = _object;
     return this;
   }
 
-   /**
+  /**
    * Get _object
    * @return _object
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_OBJECT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -126,7 +127,7 @@ public class PayoutCreateResponse1 {
 
   @JsonProperty(JSON_PROPERTY_OBJECT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setObject(PayoutCreateResponse _object) {
+  public void setObject(@javax.annotation.Nonnull PayoutCreateResponse _object) {
     this._object = _object;
   }
 

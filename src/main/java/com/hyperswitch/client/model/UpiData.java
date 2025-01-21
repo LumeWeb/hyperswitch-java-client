@@ -36,27 +36,29 @@ import java.util.StringJoiner;
   UpiData.JSON_PROPERTY_UPI_COLLECT,
   UpiData.JSON_PROPERTY_UPI_INTENT
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class UpiData {
   public static final String JSON_PROPERTY_UPI_COLLECT = "upi_collect";
+  @javax.annotation.Nonnull
   private UpiCollectData upiCollect;
 
   public static final String JSON_PROPERTY_UPI_INTENT = "upi_intent";
+  @javax.annotation.Nonnull
   private Object upiIntent;
 
   public UpiData() {
   }
 
-  public UpiData upiCollect(UpiCollectData upiCollect) {
+  public UpiData upiCollect(@javax.annotation.Nonnull UpiCollectData upiCollect) {
     
     this.upiCollect = upiCollect;
     return this;
   }
 
-   /**
+  /**
    * Get upiCollect
    * @return upiCollect
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_UPI_COLLECT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -68,21 +70,20 @@ public class UpiData {
 
   @JsonProperty(JSON_PROPERTY_UPI_COLLECT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setUpiCollect(UpiCollectData upiCollect) {
+  public void setUpiCollect(@javax.annotation.Nonnull UpiCollectData upiCollect) {
     this.upiCollect = upiCollect;
   }
 
-
-  public UpiData upiIntent(Object upiIntent) {
+  public UpiData upiIntent(@javax.annotation.Nonnull Object upiIntent) {
     
     this.upiIntent = upiIntent;
     return this;
   }
 
-   /**
+  /**
    * Get upiIntent
    * @return upiIntent
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_UPI_INTENT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -94,7 +95,7 @@ public class UpiData {
 
   @JsonProperty(JSON_PROPERTY_UPI_INTENT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setUpiIntent(Object upiIntent) {
+  public void setUpiIntent(@javax.annotation.Nonnull Object upiIntent) {
     this.upiIntent = upiIntent;
   }
 

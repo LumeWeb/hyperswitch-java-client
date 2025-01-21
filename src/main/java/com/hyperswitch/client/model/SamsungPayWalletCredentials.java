@@ -49,51 +49,61 @@ import java.util.StringJoiner;
   SamsungPayWalletCredentials.JSON_PROPERTY_PAYMENT_LAST4_FPAN,
   SamsungPayWalletCredentials.JSON_PROPERTY_MERCHANT_REF
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class SamsungPayWalletCredentials {
   public static final String JSON_PROPERTY_METHOD = "method";
+  @javax.annotation.Nullable
   private JsonNullable<String> method = JsonNullable.<String>undefined();
 
   public static final String JSON_PROPERTY_RECURRING_PAYMENT = "recurring_payment";
+  @javax.annotation.Nullable
   private JsonNullable<Boolean> recurringPayment = JsonNullable.<Boolean>undefined();
 
   public static final String JSON_PROPERTY_CARD_BRAND = "card_brand";
+  @javax.annotation.Nonnull
   private SamsungPayCardBrand cardBrand;
 
   public static final String JSON_PROPERTY_CARD_LAST4DIGITS = "card_last4digits";
+  @javax.annotation.Nonnull
   private String cardLast4digits;
 
   public static final String JSON_PROPERTY_3D_S = "3_d_s";
+  @javax.annotation.Nonnull
   private SamsungPayTokenData _3dS;
 
   public static final String JSON_PROPERTY_PAYMENT_CARD_BRAND = "payment_card_brand";
+  @javax.annotation.Nonnull
   private SamsungPayCardBrand paymentCardBrand;
 
   public static final String JSON_PROPERTY_PAYMENT_CURRENCY_TYPE = "payment_currency_type";
+  @javax.annotation.Nonnull
   private String paymentCurrencyType;
 
   public static final String JSON_PROPERTY_PAYMENT_LAST4_DPAN = "payment_last4_dpan";
+  @javax.annotation.Nullable
   private JsonNullable<String> paymentLast4Dpan = JsonNullable.<String>undefined();
 
   public static final String JSON_PROPERTY_PAYMENT_LAST4_FPAN = "payment_last4_fpan";
+  @javax.annotation.Nonnull
   private String paymentLast4Fpan;
 
   public static final String JSON_PROPERTY_MERCHANT_REF = "merchant_ref";
+  @javax.annotation.Nullable
   private JsonNullable<String> merchantRef = JsonNullable.<String>undefined();
 
   public SamsungPayWalletCredentials() {
   }
 
-  public SamsungPayWalletCredentials method(String method) {
+  public SamsungPayWalletCredentials method(@javax.annotation.Nullable String method) {
     this.method = JsonNullable.<String>of(method);
     
     return this;
   }
 
-   /**
+  /**
    * Specifies authentication method used
    * @return method
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -113,21 +123,20 @@ public class SamsungPayWalletCredentials {
     this.method = method;
   }
 
-  public void setMethod(String method) {
+  public void setMethod(@javax.annotation.Nullable String method) {
     this.method = JsonNullable.<String>of(method);
   }
 
-
-  public SamsungPayWalletCredentials recurringPayment(Boolean recurringPayment) {
+  public SamsungPayWalletCredentials recurringPayment(@javax.annotation.Nullable Boolean recurringPayment) {
     this.recurringPayment = JsonNullable.<Boolean>of(recurringPayment);
     
     return this;
   }
 
-   /**
+  /**
    * Value if credential is enabled for recurring payment
    * @return recurringPayment
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -147,21 +156,20 @@ public class SamsungPayWalletCredentials {
     this.recurringPayment = recurringPayment;
   }
 
-  public void setRecurringPayment(Boolean recurringPayment) {
+  public void setRecurringPayment(@javax.annotation.Nullable Boolean recurringPayment) {
     this.recurringPayment = JsonNullable.<Boolean>of(recurringPayment);
   }
 
-
-  public SamsungPayWalletCredentials cardBrand(SamsungPayCardBrand cardBrand) {
+  public SamsungPayWalletCredentials cardBrand(@javax.annotation.Nonnull SamsungPayCardBrand cardBrand) {
     
     this.cardBrand = cardBrand;
     return this;
   }
 
-   /**
+  /**
    * Get cardBrand
    * @return cardBrand
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_CARD_BRAND)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -173,21 +181,20 @@ public class SamsungPayWalletCredentials {
 
   @JsonProperty(JSON_PROPERTY_CARD_BRAND)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setCardBrand(SamsungPayCardBrand cardBrand) {
+  public void setCardBrand(@javax.annotation.Nonnull SamsungPayCardBrand cardBrand) {
     this.cardBrand = cardBrand;
   }
 
-
-  public SamsungPayWalletCredentials cardLast4digits(String cardLast4digits) {
+  public SamsungPayWalletCredentials cardLast4digits(@javax.annotation.Nonnull String cardLast4digits) {
     
     this.cardLast4digits = cardLast4digits;
     return this;
   }
 
-   /**
+  /**
    * Last 4 digits of the card number
    * @return cardLast4digits
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_CARD_LAST4DIGITS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -199,21 +206,20 @@ public class SamsungPayWalletCredentials {
 
   @JsonProperty(JSON_PROPERTY_CARD_LAST4DIGITS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setCardLast4digits(String cardLast4digits) {
+  public void setCardLast4digits(@javax.annotation.Nonnull String cardLast4digits) {
     this.cardLast4digits = cardLast4digits;
   }
 
-
-  public SamsungPayWalletCredentials _3dS(SamsungPayTokenData _3dS) {
+  public SamsungPayWalletCredentials _3dS(@javax.annotation.Nonnull SamsungPayTokenData _3dS) {
     
     this._3dS = _3dS;
     return this;
   }
 
-   /**
+  /**
    * Get _3dS
    * @return _3dS
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_3D_S)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -225,21 +231,20 @@ public class SamsungPayWalletCredentials {
 
   @JsonProperty(JSON_PROPERTY_3D_S)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void set3dS(SamsungPayTokenData _3dS) {
+  public void set3dS(@javax.annotation.Nonnull SamsungPayTokenData _3dS) {
     this._3dS = _3dS;
   }
 
-
-  public SamsungPayWalletCredentials paymentCardBrand(SamsungPayCardBrand paymentCardBrand) {
+  public SamsungPayWalletCredentials paymentCardBrand(@javax.annotation.Nonnull SamsungPayCardBrand paymentCardBrand) {
     
     this.paymentCardBrand = paymentCardBrand;
     return this;
   }
 
-   /**
+  /**
    * Get paymentCardBrand
    * @return paymentCardBrand
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_PAYMENT_CARD_BRAND)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -251,21 +256,20 @@ public class SamsungPayWalletCredentials {
 
   @JsonProperty(JSON_PROPERTY_PAYMENT_CARD_BRAND)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setPaymentCardBrand(SamsungPayCardBrand paymentCardBrand) {
+  public void setPaymentCardBrand(@javax.annotation.Nonnull SamsungPayCardBrand paymentCardBrand) {
     this.paymentCardBrand = paymentCardBrand;
   }
 
-
-  public SamsungPayWalletCredentials paymentCurrencyType(String paymentCurrencyType) {
+  public SamsungPayWalletCredentials paymentCurrencyType(@javax.annotation.Nonnull String paymentCurrencyType) {
     
     this.paymentCurrencyType = paymentCurrencyType;
     return this;
   }
 
-   /**
+  /**
    * Currency type of the payment
    * @return paymentCurrencyType
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_PAYMENT_CURRENCY_TYPE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -277,21 +281,20 @@ public class SamsungPayWalletCredentials {
 
   @JsonProperty(JSON_PROPERTY_PAYMENT_CURRENCY_TYPE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setPaymentCurrencyType(String paymentCurrencyType) {
+  public void setPaymentCurrencyType(@javax.annotation.Nonnull String paymentCurrencyType) {
     this.paymentCurrencyType = paymentCurrencyType;
   }
 
-
-  public SamsungPayWalletCredentials paymentLast4Dpan(String paymentLast4Dpan) {
+  public SamsungPayWalletCredentials paymentLast4Dpan(@javax.annotation.Nullable String paymentLast4Dpan) {
     this.paymentLast4Dpan = JsonNullable.<String>of(paymentLast4Dpan);
     
     return this;
   }
 
-   /**
+  /**
    * Last 4 digits of the device specific card number
    * @return paymentLast4Dpan
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -311,21 +314,20 @@ public class SamsungPayWalletCredentials {
     this.paymentLast4Dpan = paymentLast4Dpan;
   }
 
-  public void setPaymentLast4Dpan(String paymentLast4Dpan) {
+  public void setPaymentLast4Dpan(@javax.annotation.Nullable String paymentLast4Dpan) {
     this.paymentLast4Dpan = JsonNullable.<String>of(paymentLast4Dpan);
   }
 
-
-  public SamsungPayWalletCredentials paymentLast4Fpan(String paymentLast4Fpan) {
+  public SamsungPayWalletCredentials paymentLast4Fpan(@javax.annotation.Nonnull String paymentLast4Fpan) {
     
     this.paymentLast4Fpan = paymentLast4Fpan;
     return this;
   }
 
-   /**
+  /**
    * Last 4 digits of the card number
    * @return paymentLast4Fpan
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_PAYMENT_LAST4_FPAN)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -337,21 +339,20 @@ public class SamsungPayWalletCredentials {
 
   @JsonProperty(JSON_PROPERTY_PAYMENT_LAST4_FPAN)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setPaymentLast4Fpan(String paymentLast4Fpan) {
+  public void setPaymentLast4Fpan(@javax.annotation.Nonnull String paymentLast4Fpan) {
     this.paymentLast4Fpan = paymentLast4Fpan;
   }
 
-
-  public SamsungPayWalletCredentials merchantRef(String merchantRef) {
+  public SamsungPayWalletCredentials merchantRef(@javax.annotation.Nullable String merchantRef) {
     this.merchantRef = JsonNullable.<String>of(merchantRef);
     
     return this;
   }
 
-   /**
+  /**
    * Merchant reference id that was passed in the session call request
    * @return merchantRef
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -371,7 +372,7 @@ public class SamsungPayWalletCredentials {
     this.merchantRef = merchantRef;
   }
 
-  public void setMerchantRef(String merchantRef) {
+  public void setMerchantRef(@javax.annotation.Nullable String merchantRef) {
     this.merchantRef = JsonNullable.<String>of(merchantRef);
   }
 

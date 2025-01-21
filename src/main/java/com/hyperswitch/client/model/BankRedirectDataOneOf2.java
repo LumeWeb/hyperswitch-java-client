@@ -34,24 +34,25 @@ import java.util.StringJoiner;
   BankRedirectDataOneOf2.JSON_PROPERTY_BLIK
 })
 @JsonTypeName("BankRedirectData_oneOf_2")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class BankRedirectDataOneOf2 {
   public static final String JSON_PROPERTY_BLIK = "blik";
+  @javax.annotation.Nonnull
   private BankRedirectDataOneOf2Blik blik;
 
   public BankRedirectDataOneOf2() {
   }
 
-  public BankRedirectDataOneOf2 blik(BankRedirectDataOneOf2Blik blik) {
+  public BankRedirectDataOneOf2 blik(@javax.annotation.Nonnull BankRedirectDataOneOf2Blik blik) {
     
     this.blik = blik;
     return this;
   }
 
-   /**
+  /**
    * Get blik
    * @return blik
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_BLIK)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -63,7 +64,7 @@ public class BankRedirectDataOneOf2 {
 
   @JsonProperty(JSON_PROPERTY_BLIK)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setBlik(BankRedirectDataOneOf2Blik blik) {
+  public void setBlik(@javax.annotation.Nonnull BankRedirectDataOneOf2Blik blik) {
     this.blik = blik;
   }
 

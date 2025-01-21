@@ -34,24 +34,25 @@ import java.util.StringJoiner;
   WalletOneOf1.JSON_PROPERTY_VENMO
 })
 @JsonTypeName("Wallet_oneOf_1")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class WalletOneOf1 {
   public static final String JSON_PROPERTY_VENMO = "venmo";
+  @javax.annotation.Nonnull
   private Venmo venmo;
 
   public WalletOneOf1() {
   }
 
-  public WalletOneOf1 venmo(Venmo venmo) {
+  public WalletOneOf1 venmo(@javax.annotation.Nonnull Venmo venmo) {
     
     this.venmo = venmo;
     return this;
   }
 
-   /**
+  /**
    * Get venmo
    * @return venmo
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_VENMO)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -63,7 +64,7 @@ public class WalletOneOf1 {
 
   @JsonProperty(JSON_PROPERTY_VENMO)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setVenmo(Venmo venmo) {
+  public void setVenmo(@javax.annotation.Nonnull Venmo venmo) {
     this.venmo = venmo;
   }
 

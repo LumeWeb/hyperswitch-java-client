@@ -42,33 +42,37 @@ import java.util.StringJoiner;
   PaymentsExternalAuthenticationRequest.JSON_PROPERTY_DEVICE_CHANNEL,
   PaymentsExternalAuthenticationRequest.JSON_PROPERTY_THREEDS_METHOD_COMP_IND
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class PaymentsExternalAuthenticationRequest {
   public static final String JSON_PROPERTY_CLIENT_SECRET = "client_secret";
+  @javax.annotation.Nonnull
   private String clientSecret;
 
   public static final String JSON_PROPERTY_SDK_INFORMATION = "sdk_information";
+  @javax.annotation.Nullable
   private JsonNullable<SdkInformation> sdkInformation = JsonNullable.<SdkInformation>undefined();
 
   public static final String JSON_PROPERTY_DEVICE_CHANNEL = "device_channel";
+  @javax.annotation.Nonnull
   private DeviceChannel deviceChannel;
 
   public static final String JSON_PROPERTY_THREEDS_METHOD_COMP_IND = "threeds_method_comp_ind";
+  @javax.annotation.Nonnull
   private ThreeDsCompletionIndicator threedsMethodCompInd;
 
   public PaymentsExternalAuthenticationRequest() {
   }
 
-  public PaymentsExternalAuthenticationRequest clientSecret(String clientSecret) {
+  public PaymentsExternalAuthenticationRequest clientSecret(@javax.annotation.Nonnull String clientSecret) {
     
     this.clientSecret = clientSecret;
     return this;
   }
 
-   /**
+  /**
    * Client Secret
    * @return clientSecret
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_CLIENT_SECRET)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -80,21 +84,20 @@ public class PaymentsExternalAuthenticationRequest {
 
   @JsonProperty(JSON_PROPERTY_CLIENT_SECRET)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setClientSecret(String clientSecret) {
+  public void setClientSecret(@javax.annotation.Nonnull String clientSecret) {
     this.clientSecret = clientSecret;
   }
 
-
-  public PaymentsExternalAuthenticationRequest sdkInformation(SdkInformation sdkInformation) {
+  public PaymentsExternalAuthenticationRequest sdkInformation(@javax.annotation.Nullable SdkInformation sdkInformation) {
     this.sdkInformation = JsonNullable.<SdkInformation>of(sdkInformation);
     
     return this;
   }
 
-   /**
+  /**
    * Get sdkInformation
    * @return sdkInformation
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -114,21 +117,20 @@ public class PaymentsExternalAuthenticationRequest {
     this.sdkInformation = sdkInformation;
   }
 
-  public void setSdkInformation(SdkInformation sdkInformation) {
+  public void setSdkInformation(@javax.annotation.Nullable SdkInformation sdkInformation) {
     this.sdkInformation = JsonNullable.<SdkInformation>of(sdkInformation);
   }
 
-
-  public PaymentsExternalAuthenticationRequest deviceChannel(DeviceChannel deviceChannel) {
+  public PaymentsExternalAuthenticationRequest deviceChannel(@javax.annotation.Nonnull DeviceChannel deviceChannel) {
     
     this.deviceChannel = deviceChannel;
     return this;
   }
 
-   /**
+  /**
    * Get deviceChannel
    * @return deviceChannel
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_DEVICE_CHANNEL)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -140,21 +142,20 @@ public class PaymentsExternalAuthenticationRequest {
 
   @JsonProperty(JSON_PROPERTY_DEVICE_CHANNEL)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setDeviceChannel(DeviceChannel deviceChannel) {
+  public void setDeviceChannel(@javax.annotation.Nonnull DeviceChannel deviceChannel) {
     this.deviceChannel = deviceChannel;
   }
 
-
-  public PaymentsExternalAuthenticationRequest threedsMethodCompInd(ThreeDsCompletionIndicator threedsMethodCompInd) {
+  public PaymentsExternalAuthenticationRequest threedsMethodCompInd(@javax.annotation.Nonnull ThreeDsCompletionIndicator threedsMethodCompInd) {
     
     this.threedsMethodCompInd = threedsMethodCompInd;
     return this;
   }
 
-   /**
+  /**
    * Get threedsMethodCompInd
    * @return threedsMethodCompInd
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_THREEDS_METHOD_COMP_IND)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -166,7 +167,7 @@ public class PaymentsExternalAuthenticationRequest {
 
   @JsonProperty(JSON_PROPERTY_THREEDS_METHOD_COMP_IND)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setThreedsMethodCompInd(ThreeDsCompletionIndicator threedsMethodCompInd) {
+  public void setThreedsMethodCompInd(@javax.annotation.Nonnull ThreeDsCompletionIndicator threedsMethodCompInd) {
     this.threedsMethodCompInd = threedsMethodCompInd;
   }
 

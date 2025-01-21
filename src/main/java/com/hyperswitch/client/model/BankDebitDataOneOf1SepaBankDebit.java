@@ -40,30 +40,33 @@ import java.util.StringJoiner;
   BankDebitDataOneOf1SepaBankDebit.JSON_PROPERTY_BANK_ACCOUNT_HOLDER_NAME
 })
 @JsonTypeName("BankDebitData_oneOf_1_sepa_bank_debit")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class BankDebitDataOneOf1SepaBankDebit {
   public static final String JSON_PROPERTY_BILLING_DETAILS = "billing_details";
+  @javax.annotation.Nullable
   private JsonNullable<BankDebitBilling> billingDetails = JsonNullable.<BankDebitBilling>undefined();
 
   public static final String JSON_PROPERTY_IBAN = "iban";
+  @javax.annotation.Nonnull
   private String iban;
 
   public static final String JSON_PROPERTY_BANK_ACCOUNT_HOLDER_NAME = "bank_account_holder_name";
+  @javax.annotation.Nonnull
   private String bankAccountHolderName;
 
   public BankDebitDataOneOf1SepaBankDebit() {
   }
 
-  public BankDebitDataOneOf1SepaBankDebit billingDetails(BankDebitBilling billingDetails) {
+  public BankDebitDataOneOf1SepaBankDebit billingDetails(@javax.annotation.Nullable BankDebitBilling billingDetails) {
     this.billingDetails = JsonNullable.<BankDebitBilling>of(billingDetails);
     
     return this;
   }
 
-   /**
+  /**
    * Get billingDetails
    * @return billingDetails
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -83,21 +86,20 @@ public class BankDebitDataOneOf1SepaBankDebit {
     this.billingDetails = billingDetails;
   }
 
-  public void setBillingDetails(BankDebitBilling billingDetails) {
+  public void setBillingDetails(@javax.annotation.Nullable BankDebitBilling billingDetails) {
     this.billingDetails = JsonNullable.<BankDebitBilling>of(billingDetails);
   }
 
-
-  public BankDebitDataOneOf1SepaBankDebit iban(String iban) {
+  public BankDebitDataOneOf1SepaBankDebit iban(@javax.annotation.Nonnull String iban) {
     
     this.iban = iban;
     return this;
   }
 
-   /**
+  /**
    * International bank account number (iban) for SEPA
    * @return iban
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_IBAN)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -109,21 +111,20 @@ public class BankDebitDataOneOf1SepaBankDebit {
 
   @JsonProperty(JSON_PROPERTY_IBAN)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setIban(String iban) {
+  public void setIban(@javax.annotation.Nonnull String iban) {
     this.iban = iban;
   }
 
-
-  public BankDebitDataOneOf1SepaBankDebit bankAccountHolderName(String bankAccountHolderName) {
+  public BankDebitDataOneOf1SepaBankDebit bankAccountHolderName(@javax.annotation.Nonnull String bankAccountHolderName) {
     
     this.bankAccountHolderName = bankAccountHolderName;
     return this;
   }
 
-   /**
+  /**
    * Owner name for bank debit
    * @return bankAccountHolderName
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_BANK_ACCOUNT_HOLDER_NAME)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -135,7 +136,7 @@ public class BankDebitDataOneOf1SepaBankDebit {
 
   @JsonProperty(JSON_PROPERTY_BANK_ACCOUNT_HOLDER_NAME)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setBankAccountHolderName(String bankAccountHolderName) {
+  public void setBankAccountHolderName(@javax.annotation.Nonnull String bankAccountHolderName) {
     this.bankAccountHolderName = bankAccountHolderName;
   }
 

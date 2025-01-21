@@ -25,6 +25,7 @@ import com.hyperswitch.client.model.PayoutConnectors;
 import com.hyperswitch.client.model.PayoutStatus;
 import com.hyperswitch.client.model.PayoutType;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 import com.fasterxml.jackson.annotation.JsonTypeName;
@@ -41,24 +42,28 @@ import java.util.StringJoiner;
   PayoutListFilters.JSON_PROPERTY_STATUS,
   PayoutListFilters.JSON_PROPERTY_PAYOUT_METHOD
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class PayoutListFilters {
   public static final String JSON_PROPERTY_CONNECTOR = "connector";
+  @javax.annotation.Nonnull
   private List<PayoutConnectors> connector = new ArrayList<>();
 
   public static final String JSON_PROPERTY_CURRENCY = "currency";
+  @javax.annotation.Nonnull
   private List<Currency> currency = new ArrayList<>();
 
   public static final String JSON_PROPERTY_STATUS = "status";
+  @javax.annotation.Nonnull
   private List<PayoutStatus> status = new ArrayList<>();
 
   public static final String JSON_PROPERTY_PAYOUT_METHOD = "payout_method";
+  @javax.annotation.Nonnull
   private List<PayoutType> payoutMethod = new ArrayList<>();
 
   public PayoutListFilters() {
   }
 
-  public PayoutListFilters connector(List<PayoutConnectors> connector) {
+  public PayoutListFilters connector(@javax.annotation.Nonnull List<PayoutConnectors> connector) {
     
     this.connector = connector;
     return this;
@@ -72,10 +77,10 @@ public class PayoutListFilters {
     return this;
   }
 
-   /**
+  /**
    * The list of available connector filters
    * @return connector
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_CONNECTOR)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -87,12 +92,11 @@ public class PayoutListFilters {
 
   @JsonProperty(JSON_PROPERTY_CONNECTOR)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setConnector(List<PayoutConnectors> connector) {
+  public void setConnector(@javax.annotation.Nonnull List<PayoutConnectors> connector) {
     this.connector = connector;
   }
 
-
-  public PayoutListFilters currency(List<Currency> currency) {
+  public PayoutListFilters currency(@javax.annotation.Nonnull List<Currency> currency) {
     
     this.currency = currency;
     return this;
@@ -106,10 +110,10 @@ public class PayoutListFilters {
     return this;
   }
 
-   /**
+  /**
    * The list of available currency filters
    * @return currency
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_CURRENCY)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -121,12 +125,11 @@ public class PayoutListFilters {
 
   @JsonProperty(JSON_PROPERTY_CURRENCY)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setCurrency(List<Currency> currency) {
+  public void setCurrency(@javax.annotation.Nonnull List<Currency> currency) {
     this.currency = currency;
   }
 
-
-  public PayoutListFilters status(List<PayoutStatus> status) {
+  public PayoutListFilters status(@javax.annotation.Nonnull List<PayoutStatus> status) {
     
     this.status = status;
     return this;
@@ -140,10 +143,10 @@ public class PayoutListFilters {
     return this;
   }
 
-   /**
+  /**
    * The list of available payout status filters
    * @return status
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_STATUS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -155,12 +158,11 @@ public class PayoutListFilters {
 
   @JsonProperty(JSON_PROPERTY_STATUS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setStatus(List<PayoutStatus> status) {
+  public void setStatus(@javax.annotation.Nonnull List<PayoutStatus> status) {
     this.status = status;
   }
 
-
-  public PayoutListFilters payoutMethod(List<PayoutType> payoutMethod) {
+  public PayoutListFilters payoutMethod(@javax.annotation.Nonnull List<PayoutType> payoutMethod) {
     
     this.payoutMethod = payoutMethod;
     return this;
@@ -174,10 +176,10 @@ public class PayoutListFilters {
     return this;
   }
 
-   /**
+  /**
    * The list of available payout method filters
    * @return payoutMethod
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_PAYOUT_METHOD)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -189,7 +191,7 @@ public class PayoutListFilters {
 
   @JsonProperty(JSON_PROPERTY_PAYOUT_METHOD)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setPayoutMethod(List<PayoutType> payoutMethod) {
+  public void setPayoutMethod(@javax.annotation.Nonnull List<PayoutType> payoutMethod) {
     this.payoutMethod = payoutMethod;
   }
 

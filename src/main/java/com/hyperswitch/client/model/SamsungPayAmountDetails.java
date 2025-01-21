@@ -36,30 +36,33 @@ import java.util.StringJoiner;
   SamsungPayAmountDetails.JSON_PROPERTY_CURRENCY_CODE,
   SamsungPayAmountDetails.JSON_PROPERTY_TOTAL
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class SamsungPayAmountDetails {
   public static final String JSON_PROPERTY_OPTION = "option";
+  @javax.annotation.Nonnull
   private SamsungPayAmountFormat option;
 
   public static final String JSON_PROPERTY_CURRENCY_CODE = "currency_code";
+  @javax.annotation.Nonnull
   private Currency currencyCode;
 
   public static final String JSON_PROPERTY_TOTAL = "total";
+  @javax.annotation.Nonnull
   private String total;
 
   public SamsungPayAmountDetails() {
   }
 
-  public SamsungPayAmountDetails option(SamsungPayAmountFormat option) {
+  public SamsungPayAmountDetails option(@javax.annotation.Nonnull SamsungPayAmountFormat option) {
     
     this.option = option;
     return this;
   }
 
-   /**
+  /**
    * Get option
    * @return option
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_OPTION)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -71,21 +74,20 @@ public class SamsungPayAmountDetails {
 
   @JsonProperty(JSON_PROPERTY_OPTION)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setOption(SamsungPayAmountFormat option) {
+  public void setOption(@javax.annotation.Nonnull SamsungPayAmountFormat option) {
     this.option = option;
   }
 
-
-  public SamsungPayAmountDetails currencyCode(Currency currencyCode) {
+  public SamsungPayAmountDetails currencyCode(@javax.annotation.Nonnull Currency currencyCode) {
     
     this.currencyCode = currencyCode;
     return this;
   }
 
-   /**
+  /**
    * Get currencyCode
    * @return currencyCode
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_CURRENCY_CODE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -97,21 +99,20 @@ public class SamsungPayAmountDetails {
 
   @JsonProperty(JSON_PROPERTY_CURRENCY_CODE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setCurrencyCode(Currency currencyCode) {
+  public void setCurrencyCode(@javax.annotation.Nonnull Currency currencyCode) {
     this.currencyCode = currencyCode;
   }
 
-
-  public SamsungPayAmountDetails total(String total) {
+  public SamsungPayAmountDetails total(@javax.annotation.Nonnull String total) {
     
     this.total = total;
     return this;
   }
 
-   /**
+  /**
    * The total amount of the transaction
    * @return total
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_TOTAL)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -123,7 +124,7 @@ public class SamsungPayAmountDetails {
 
   @JsonProperty(JSON_PROPERTY_TOTAL)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setTotal(String total) {
+  public void setTotal(@javax.annotation.Nonnull String total) {
     this.total = total;
   }
 

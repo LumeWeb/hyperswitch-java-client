@@ -25,6 +25,7 @@ import com.hyperswitch.client.model.MandateType;
 import com.hyperswitch.client.model.PaymentType;
 import com.hyperswitch.client.model.ResponsePaymentMethodsEnabled;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import org.openapitools.jackson.nullable.JsonNullable;
 import com.fasterxml.jackson.annotation.JsonIgnore;
@@ -52,54 +53,65 @@ import java.util.StringJoiner;
   PaymentMethodListResponse.JSON_PROPERTY_COLLECT_BILLING_DETAILS_FROM_WALLETS,
   PaymentMethodListResponse.JSON_PROPERTY_IS_TAX_CALCULATION_ENABLED
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class PaymentMethodListResponse {
   public static final String JSON_PROPERTY_REDIRECT_URL = "redirect_url";
+  @javax.annotation.Nullable
   private JsonNullable<String> redirectUrl = JsonNullable.<String>undefined();
 
   public static final String JSON_PROPERTY_CURRENCY = "currency";
+  @javax.annotation.Nonnull
   private Currency currency;
 
   public static final String JSON_PROPERTY_PAYMENT_METHODS = "payment_methods";
+  @javax.annotation.Nonnull
   private List<ResponsePaymentMethodsEnabled> paymentMethods = new ArrayList<>();
 
   public static final String JSON_PROPERTY_MANDATE_PAYMENT = "mandate_payment";
+  @javax.annotation.Nonnull
   private MandateType mandatePayment;
 
   public static final String JSON_PROPERTY_MERCHANT_NAME = "merchant_name";
+  @javax.annotation.Nullable
   private JsonNullable<String> merchantName = JsonNullable.<String>undefined();
 
   public static final String JSON_PROPERTY_SHOW_SURCHARGE_BREAKUP_SCREEN = "show_surcharge_breakup_screen";
+  @javax.annotation.Nonnull
   private Boolean showSurchargeBreakupScreen;
 
   public static final String JSON_PROPERTY_PAYMENT_TYPE = "payment_type";
+  @javax.annotation.Nullable
   private JsonNullable<PaymentType> paymentType = JsonNullable.<PaymentType>undefined();
 
   public static final String JSON_PROPERTY_REQUEST_EXTERNAL_THREE_DS_AUTHENTICATION = "request_external_three_ds_authentication";
+  @javax.annotation.Nonnull
   private Boolean requestExternalThreeDsAuthentication;
 
   public static final String JSON_PROPERTY_COLLECT_SHIPPING_DETAILS_FROM_WALLETS = "collect_shipping_details_from_wallets";
+  @javax.annotation.Nullable
   private JsonNullable<Boolean> collectShippingDetailsFromWallets = JsonNullable.<Boolean>undefined();
 
   public static final String JSON_PROPERTY_COLLECT_BILLING_DETAILS_FROM_WALLETS = "collect_billing_details_from_wallets";
+  @javax.annotation.Nullable
   private JsonNullable<Boolean> collectBillingDetailsFromWallets = JsonNullable.<Boolean>undefined();
 
   public static final String JSON_PROPERTY_IS_TAX_CALCULATION_ENABLED = "is_tax_calculation_enabled";
+  @javax.annotation.Nonnull
   private Boolean isTaxCalculationEnabled;
 
   public PaymentMethodListResponse() {
   }
 
-  public PaymentMethodListResponse redirectUrl(String redirectUrl) {
+  public PaymentMethodListResponse redirectUrl(@javax.annotation.Nullable String redirectUrl) {
     this.redirectUrl = JsonNullable.<String>of(redirectUrl);
     
     return this;
   }
 
-   /**
+  /**
    * Redirect URL of the merchant
    * @return redirectUrl
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -119,21 +131,20 @@ public class PaymentMethodListResponse {
     this.redirectUrl = redirectUrl;
   }
 
-  public void setRedirectUrl(String redirectUrl) {
+  public void setRedirectUrl(@javax.annotation.Nullable String redirectUrl) {
     this.redirectUrl = JsonNullable.<String>of(redirectUrl);
   }
 
-
-  public PaymentMethodListResponse currency(Currency currency) {
+  public PaymentMethodListResponse currency(@javax.annotation.Nonnull Currency currency) {
     
     this.currency = currency;
     return this;
   }
 
-   /**
+  /**
    * Get currency
    * @return currency
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_CURRENCY)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -145,12 +156,11 @@ public class PaymentMethodListResponse {
 
   @JsonProperty(JSON_PROPERTY_CURRENCY)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setCurrency(Currency currency) {
+  public void setCurrency(@javax.annotation.Nonnull Currency currency) {
     this.currency = currency;
   }
 
-
-  public PaymentMethodListResponse paymentMethods(List<ResponsePaymentMethodsEnabled> paymentMethods) {
+  public PaymentMethodListResponse paymentMethods(@javax.annotation.Nonnull List<ResponsePaymentMethodsEnabled> paymentMethods) {
     
     this.paymentMethods = paymentMethods;
     return this;
@@ -164,10 +174,10 @@ public class PaymentMethodListResponse {
     return this;
   }
 
-   /**
+  /**
    * Information about the payment method
    * @return paymentMethods
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_PAYMENT_METHODS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -179,21 +189,20 @@ public class PaymentMethodListResponse {
 
   @JsonProperty(JSON_PROPERTY_PAYMENT_METHODS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setPaymentMethods(List<ResponsePaymentMethodsEnabled> paymentMethods) {
+  public void setPaymentMethods(@javax.annotation.Nonnull List<ResponsePaymentMethodsEnabled> paymentMethods) {
     this.paymentMethods = paymentMethods;
   }
 
-
-  public PaymentMethodListResponse mandatePayment(MandateType mandatePayment) {
+  public PaymentMethodListResponse mandatePayment(@javax.annotation.Nonnull MandateType mandatePayment) {
     
     this.mandatePayment = mandatePayment;
     return this;
   }
 
-   /**
+  /**
    * Get mandatePayment
    * @return mandatePayment
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_MANDATE_PAYMENT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -205,21 +214,20 @@ public class PaymentMethodListResponse {
 
   @JsonProperty(JSON_PROPERTY_MANDATE_PAYMENT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setMandatePayment(MandateType mandatePayment) {
+  public void setMandatePayment(@javax.annotation.Nonnull MandateType mandatePayment) {
     this.mandatePayment = mandatePayment;
   }
 
-
-  public PaymentMethodListResponse merchantName(String merchantName) {
+  public PaymentMethodListResponse merchantName(@javax.annotation.Nullable String merchantName) {
     this.merchantName = JsonNullable.<String>of(merchantName);
     
     return this;
   }
 
-   /**
+  /**
    * Get merchantName
    * @return merchantName
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -239,21 +247,20 @@ public class PaymentMethodListResponse {
     this.merchantName = merchantName;
   }
 
-  public void setMerchantName(String merchantName) {
+  public void setMerchantName(@javax.annotation.Nullable String merchantName) {
     this.merchantName = JsonNullable.<String>of(merchantName);
   }
 
-
-  public PaymentMethodListResponse showSurchargeBreakupScreen(Boolean showSurchargeBreakupScreen) {
+  public PaymentMethodListResponse showSurchargeBreakupScreen(@javax.annotation.Nonnull Boolean showSurchargeBreakupScreen) {
     
     this.showSurchargeBreakupScreen = showSurchargeBreakupScreen;
     return this;
   }
 
-   /**
+  /**
    * flag to indicate if surcharge and tax breakup screen should be shown or not
    * @return showSurchargeBreakupScreen
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_SHOW_SURCHARGE_BREAKUP_SCREEN)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -265,21 +272,20 @@ public class PaymentMethodListResponse {
 
   @JsonProperty(JSON_PROPERTY_SHOW_SURCHARGE_BREAKUP_SCREEN)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setShowSurchargeBreakupScreen(Boolean showSurchargeBreakupScreen) {
+  public void setShowSurchargeBreakupScreen(@javax.annotation.Nonnull Boolean showSurchargeBreakupScreen) {
     this.showSurchargeBreakupScreen = showSurchargeBreakupScreen;
   }
 
-
-  public PaymentMethodListResponse paymentType(PaymentType paymentType) {
+  public PaymentMethodListResponse paymentType(@javax.annotation.Nullable PaymentType paymentType) {
     this.paymentType = JsonNullable.<PaymentType>of(paymentType);
     
     return this;
   }
 
-   /**
+  /**
    * Get paymentType
    * @return paymentType
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -299,21 +305,20 @@ public class PaymentMethodListResponse {
     this.paymentType = paymentType;
   }
 
-  public void setPaymentType(PaymentType paymentType) {
+  public void setPaymentType(@javax.annotation.Nullable PaymentType paymentType) {
     this.paymentType = JsonNullable.<PaymentType>of(paymentType);
   }
 
-
-  public PaymentMethodListResponse requestExternalThreeDsAuthentication(Boolean requestExternalThreeDsAuthentication) {
+  public PaymentMethodListResponse requestExternalThreeDsAuthentication(@javax.annotation.Nonnull Boolean requestExternalThreeDsAuthentication) {
     
     this.requestExternalThreeDsAuthentication = requestExternalThreeDsAuthentication;
     return this;
   }
 
-   /**
+  /**
    * flag to indicate whether to perform external 3ds authentication
    * @return requestExternalThreeDsAuthentication
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_REQUEST_EXTERNAL_THREE_DS_AUTHENTICATION)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -325,21 +330,20 @@ public class PaymentMethodListResponse {
 
   @JsonProperty(JSON_PROPERTY_REQUEST_EXTERNAL_THREE_DS_AUTHENTICATION)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setRequestExternalThreeDsAuthentication(Boolean requestExternalThreeDsAuthentication) {
+  public void setRequestExternalThreeDsAuthentication(@javax.annotation.Nonnull Boolean requestExternalThreeDsAuthentication) {
     this.requestExternalThreeDsAuthentication = requestExternalThreeDsAuthentication;
   }
 
-
-  public PaymentMethodListResponse collectShippingDetailsFromWallets(Boolean collectShippingDetailsFromWallets) {
+  public PaymentMethodListResponse collectShippingDetailsFromWallets(@javax.annotation.Nullable Boolean collectShippingDetailsFromWallets) {
     this.collectShippingDetailsFromWallets = JsonNullable.<Boolean>of(collectShippingDetailsFromWallets);
     
     return this;
   }
 
-   /**
+  /**
    * flag that indicates whether to collect shipping details from wallets or from the customer
    * @return collectShippingDetailsFromWallets
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -359,21 +363,20 @@ public class PaymentMethodListResponse {
     this.collectShippingDetailsFromWallets = collectShippingDetailsFromWallets;
   }
 
-  public void setCollectShippingDetailsFromWallets(Boolean collectShippingDetailsFromWallets) {
+  public void setCollectShippingDetailsFromWallets(@javax.annotation.Nullable Boolean collectShippingDetailsFromWallets) {
     this.collectShippingDetailsFromWallets = JsonNullable.<Boolean>of(collectShippingDetailsFromWallets);
   }
 
-
-  public PaymentMethodListResponse collectBillingDetailsFromWallets(Boolean collectBillingDetailsFromWallets) {
+  public PaymentMethodListResponse collectBillingDetailsFromWallets(@javax.annotation.Nullable Boolean collectBillingDetailsFromWallets) {
     this.collectBillingDetailsFromWallets = JsonNullable.<Boolean>of(collectBillingDetailsFromWallets);
     
     return this;
   }
 
-   /**
+  /**
    * flag that indicates whether to collect billing details from wallets or from the customer
    * @return collectBillingDetailsFromWallets
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -393,21 +396,20 @@ public class PaymentMethodListResponse {
     this.collectBillingDetailsFromWallets = collectBillingDetailsFromWallets;
   }
 
-  public void setCollectBillingDetailsFromWallets(Boolean collectBillingDetailsFromWallets) {
+  public void setCollectBillingDetailsFromWallets(@javax.annotation.Nullable Boolean collectBillingDetailsFromWallets) {
     this.collectBillingDetailsFromWallets = JsonNullable.<Boolean>of(collectBillingDetailsFromWallets);
   }
 
-
-  public PaymentMethodListResponse isTaxCalculationEnabled(Boolean isTaxCalculationEnabled) {
+  public PaymentMethodListResponse isTaxCalculationEnabled(@javax.annotation.Nonnull Boolean isTaxCalculationEnabled) {
     
     this.isTaxCalculationEnabled = isTaxCalculationEnabled;
     return this;
   }
 
-   /**
+  /**
    * flag that indicates whether to calculate tax on the order amount
    * @return isTaxCalculationEnabled
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_IS_TAX_CALCULATION_ENABLED)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -419,7 +421,7 @@ public class PaymentMethodListResponse {
 
   @JsonProperty(JSON_PROPERTY_IS_TAX_CALCULATION_ENABLED)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setIsTaxCalculationEnabled(Boolean isTaxCalculationEnabled) {
+  public void setIsTaxCalculationEnabled(@javax.annotation.Nonnull Boolean isTaxCalculationEnabled) {
     this.isTaxCalculationEnabled = isTaxCalculationEnabled;
   }
 

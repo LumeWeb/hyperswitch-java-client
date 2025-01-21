@@ -42,39 +42,45 @@ import java.util.StringJoiner;
   PaymentsCaptureRequest.JSON_PROPERTY_STATEMENT_DESCRIPTOR_PREFIX,
   PaymentsCaptureRequest.JSON_PROPERTY_MERCHANT_CONNECTOR_DETAILS
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class PaymentsCaptureRequest {
   public static final String JSON_PROPERTY_MERCHANT_ID = "merchant_id";
+  @javax.annotation.Nullable
   private JsonNullable<String> merchantId = JsonNullable.<String>undefined();
 
   public static final String JSON_PROPERTY_AMOUNT_TO_CAPTURE = "amount_to_capture";
+  @javax.annotation.Nonnull
   private Long amountToCapture;
 
   public static final String JSON_PROPERTY_REFUND_UNCAPTURED_AMOUNT = "refund_uncaptured_amount";
+  @javax.annotation.Nullable
   private JsonNullable<Boolean> refundUncapturedAmount = JsonNullable.<Boolean>undefined();
 
   public static final String JSON_PROPERTY_STATEMENT_DESCRIPTOR_SUFFIX = "statement_descriptor_suffix";
+  @javax.annotation.Nullable
   private JsonNullable<String> statementDescriptorSuffix = JsonNullable.<String>undefined();
 
   public static final String JSON_PROPERTY_STATEMENT_DESCRIPTOR_PREFIX = "statement_descriptor_prefix";
+  @javax.annotation.Nullable
   private JsonNullable<String> statementDescriptorPrefix = JsonNullable.<String>undefined();
 
   public static final String JSON_PROPERTY_MERCHANT_CONNECTOR_DETAILS = "merchant_connector_details";
+  @javax.annotation.Nullable
   private JsonNullable<MerchantConnectorDetailsWrap> merchantConnectorDetails = JsonNullable.<MerchantConnectorDetailsWrap>undefined();
 
   public PaymentsCaptureRequest() {
   }
 
-  public PaymentsCaptureRequest merchantId(String merchantId) {
+  public PaymentsCaptureRequest merchantId(@javax.annotation.Nullable String merchantId) {
     this.merchantId = JsonNullable.<String>of(merchantId);
     
     return this;
   }
 
-   /**
+  /**
    * The unique identifier for the merchant
    * @return merchantId
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -94,21 +100,20 @@ public class PaymentsCaptureRequest {
     this.merchantId = merchantId;
   }
 
-  public void setMerchantId(String merchantId) {
+  public void setMerchantId(@javax.annotation.Nullable String merchantId) {
     this.merchantId = JsonNullable.<String>of(merchantId);
   }
 
-
-  public PaymentsCaptureRequest amountToCapture(Long amountToCapture) {
+  public PaymentsCaptureRequest amountToCapture(@javax.annotation.Nonnull Long amountToCapture) {
     
     this.amountToCapture = amountToCapture;
     return this;
   }
 
-   /**
+  /**
    * The Amount to be captured/ debited from the user&#39;s payment method.
    * @return amountToCapture
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_AMOUNT_TO_CAPTURE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -120,21 +125,20 @@ public class PaymentsCaptureRequest {
 
   @JsonProperty(JSON_PROPERTY_AMOUNT_TO_CAPTURE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setAmountToCapture(Long amountToCapture) {
+  public void setAmountToCapture(@javax.annotation.Nonnull Long amountToCapture) {
     this.amountToCapture = amountToCapture;
   }
 
-
-  public PaymentsCaptureRequest refundUncapturedAmount(Boolean refundUncapturedAmount) {
+  public PaymentsCaptureRequest refundUncapturedAmount(@javax.annotation.Nullable Boolean refundUncapturedAmount) {
     this.refundUncapturedAmount = JsonNullable.<Boolean>of(refundUncapturedAmount);
     
     return this;
   }
 
-   /**
+  /**
    * Decider to refund the uncaptured amount
    * @return refundUncapturedAmount
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -154,21 +158,20 @@ public class PaymentsCaptureRequest {
     this.refundUncapturedAmount = refundUncapturedAmount;
   }
 
-  public void setRefundUncapturedAmount(Boolean refundUncapturedAmount) {
+  public void setRefundUncapturedAmount(@javax.annotation.Nullable Boolean refundUncapturedAmount) {
     this.refundUncapturedAmount = JsonNullable.<Boolean>of(refundUncapturedAmount);
   }
 
-
-  public PaymentsCaptureRequest statementDescriptorSuffix(String statementDescriptorSuffix) {
+  public PaymentsCaptureRequest statementDescriptorSuffix(@javax.annotation.Nullable String statementDescriptorSuffix) {
     this.statementDescriptorSuffix = JsonNullable.<String>of(statementDescriptorSuffix);
     
     return this;
   }
 
-   /**
+  /**
    * Provides information about a card payment that customers see on their statements.
    * @return statementDescriptorSuffix
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -188,21 +191,20 @@ public class PaymentsCaptureRequest {
     this.statementDescriptorSuffix = statementDescriptorSuffix;
   }
 
-  public void setStatementDescriptorSuffix(String statementDescriptorSuffix) {
+  public void setStatementDescriptorSuffix(@javax.annotation.Nullable String statementDescriptorSuffix) {
     this.statementDescriptorSuffix = JsonNullable.<String>of(statementDescriptorSuffix);
   }
 
-
-  public PaymentsCaptureRequest statementDescriptorPrefix(String statementDescriptorPrefix) {
+  public PaymentsCaptureRequest statementDescriptorPrefix(@javax.annotation.Nullable String statementDescriptorPrefix) {
     this.statementDescriptorPrefix = JsonNullable.<String>of(statementDescriptorPrefix);
     
     return this;
   }
 
-   /**
+  /**
    * Concatenated with the statement descriptor suffix that’s set on the account to form the complete statement descriptor.
    * @return statementDescriptorPrefix
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -222,21 +224,20 @@ public class PaymentsCaptureRequest {
     this.statementDescriptorPrefix = statementDescriptorPrefix;
   }
 
-  public void setStatementDescriptorPrefix(String statementDescriptorPrefix) {
+  public void setStatementDescriptorPrefix(@javax.annotation.Nullable String statementDescriptorPrefix) {
     this.statementDescriptorPrefix = JsonNullable.<String>of(statementDescriptorPrefix);
   }
 
-
-  public PaymentsCaptureRequest merchantConnectorDetails(MerchantConnectorDetailsWrap merchantConnectorDetails) {
+  public PaymentsCaptureRequest merchantConnectorDetails(@javax.annotation.Nullable MerchantConnectorDetailsWrap merchantConnectorDetails) {
     this.merchantConnectorDetails = JsonNullable.<MerchantConnectorDetailsWrap>of(merchantConnectorDetails);
     
     return this;
   }
 
-   /**
+  /**
    * Get merchantConnectorDetails
    * @return merchantConnectorDetails
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -256,7 +257,7 @@ public class PaymentsCaptureRequest {
     this.merchantConnectorDetails = merchantConnectorDetails;
   }
 
-  public void setMerchantConnectorDetails(MerchantConnectorDetailsWrap merchantConnectorDetails) {
+  public void setMerchantConnectorDetails(@javax.annotation.Nullable MerchantConnectorDetailsWrap merchantConnectorDetails) {
     this.merchantConnectorDetails = JsonNullable.<MerchantConnectorDetailsWrap>of(merchantConnectorDetails);
   }
 

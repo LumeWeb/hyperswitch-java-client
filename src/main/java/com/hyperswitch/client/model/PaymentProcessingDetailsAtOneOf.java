@@ -35,19 +35,21 @@ import java.util.StringJoiner;
   PaymentProcessingDetailsAtOneOf.JSON_PROPERTY_PAYMENT_PROCESSING_DETAILS_AT
 })
 @JsonTypeName("PaymentProcessingDetailsAt_oneOf")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class PaymentProcessingDetailsAtOneOf {
   public static final String JSON_PROPERTY_PAYMENT_PROCESSING_CERTIFICATE = "payment_processing_certificate";
+  @javax.annotation.Nonnull
   private String paymentProcessingCertificate;
 
   public static final String JSON_PROPERTY_PAYMENT_PROCESSING_CERTIFICATE_KEY = "payment_processing_certificate_key";
+  @javax.annotation.Nonnull
   private String paymentProcessingCertificateKey;
 
   /**
    * Gets or Sets paymentProcessingDetailsAt
    */
   public enum PaymentProcessingDetailsAtEnum {
-    HYPERSWITCH("Hyperswitch");
+    HYPERSWITCH(String.valueOf("Hyperswitch"));
 
     private String value;
 
@@ -77,21 +79,22 @@ public class PaymentProcessingDetailsAtOneOf {
   }
 
   public static final String JSON_PROPERTY_PAYMENT_PROCESSING_DETAILS_AT = "payment_processing_details_at";
+  @javax.annotation.Nonnull
   private PaymentProcessingDetailsAtEnum paymentProcessingDetailsAt;
 
   public PaymentProcessingDetailsAtOneOf() {
   }
 
-  public PaymentProcessingDetailsAtOneOf paymentProcessingCertificate(String paymentProcessingCertificate) {
+  public PaymentProcessingDetailsAtOneOf paymentProcessingCertificate(@javax.annotation.Nonnull String paymentProcessingCertificate) {
     
     this.paymentProcessingCertificate = paymentProcessingCertificate;
     return this;
   }
 
-   /**
+  /**
    * Get paymentProcessingCertificate
    * @return paymentProcessingCertificate
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_PAYMENT_PROCESSING_CERTIFICATE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -103,21 +106,20 @@ public class PaymentProcessingDetailsAtOneOf {
 
   @JsonProperty(JSON_PROPERTY_PAYMENT_PROCESSING_CERTIFICATE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setPaymentProcessingCertificate(String paymentProcessingCertificate) {
+  public void setPaymentProcessingCertificate(@javax.annotation.Nonnull String paymentProcessingCertificate) {
     this.paymentProcessingCertificate = paymentProcessingCertificate;
   }
 
-
-  public PaymentProcessingDetailsAtOneOf paymentProcessingCertificateKey(String paymentProcessingCertificateKey) {
+  public PaymentProcessingDetailsAtOneOf paymentProcessingCertificateKey(@javax.annotation.Nonnull String paymentProcessingCertificateKey) {
     
     this.paymentProcessingCertificateKey = paymentProcessingCertificateKey;
     return this;
   }
 
-   /**
+  /**
    * Get paymentProcessingCertificateKey
    * @return paymentProcessingCertificateKey
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_PAYMENT_PROCESSING_CERTIFICATE_KEY)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -129,21 +131,20 @@ public class PaymentProcessingDetailsAtOneOf {
 
   @JsonProperty(JSON_PROPERTY_PAYMENT_PROCESSING_CERTIFICATE_KEY)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setPaymentProcessingCertificateKey(String paymentProcessingCertificateKey) {
+  public void setPaymentProcessingCertificateKey(@javax.annotation.Nonnull String paymentProcessingCertificateKey) {
     this.paymentProcessingCertificateKey = paymentProcessingCertificateKey;
   }
 
-
-  public PaymentProcessingDetailsAtOneOf paymentProcessingDetailsAt(PaymentProcessingDetailsAtEnum paymentProcessingDetailsAt) {
+  public PaymentProcessingDetailsAtOneOf paymentProcessingDetailsAt(@javax.annotation.Nonnull PaymentProcessingDetailsAtEnum paymentProcessingDetailsAt) {
     
     this.paymentProcessingDetailsAt = paymentProcessingDetailsAt;
     return this;
   }
 
-   /**
+  /**
    * Get paymentProcessingDetailsAt
    * @return paymentProcessingDetailsAt
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_PAYMENT_PROCESSING_DETAILS_AT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -155,7 +156,7 @@ public class PaymentProcessingDetailsAtOneOf {
 
   @JsonProperty(JSON_PROPERTY_PAYMENT_PROCESSING_DETAILS_AT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setPaymentProcessingDetailsAt(PaymentProcessingDetailsAtEnum paymentProcessingDetailsAt) {
+  public void setPaymentProcessingDetailsAt(@javax.annotation.Nonnull PaymentProcessingDetailsAtEnum paymentProcessingDetailsAt) {
     this.paymentProcessingDetailsAt = paymentProcessingDetailsAt;
   }
 

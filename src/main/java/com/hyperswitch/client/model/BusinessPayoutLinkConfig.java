@@ -46,42 +46,49 @@ import java.util.StringJoiner;
   BusinessPayoutLinkConfig.JSON_PROPERTY_FORM_LAYOUT,
   BusinessPayoutLinkConfig.JSON_PROPERTY_PAYOUT_TEST_MODE
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class BusinessPayoutLinkConfig {
   public static final String JSON_PROPERTY_LOGO = "logo";
+  @javax.annotation.Nullable
   private JsonNullable<String> logo = JsonNullable.<String>undefined();
 
   public static final String JSON_PROPERTY_MERCHANT_NAME = "merchant_name";
+  @javax.annotation.Nullable
   private JsonNullable<String> merchantName = JsonNullable.<String>undefined();
 
   public static final String JSON_PROPERTY_THEME = "theme";
+  @javax.annotation.Nullable
   private JsonNullable<String> theme = JsonNullable.<String>undefined();
 
   public static final String JSON_PROPERTY_DOMAIN_NAME = "domain_name";
+  @javax.annotation.Nullable
   private JsonNullable<String> domainName = JsonNullable.<String>undefined();
 
   public static final String JSON_PROPERTY_ALLOWED_DOMAINS = "allowed_domains";
+  @javax.annotation.Nonnull
   private Set<String> allowedDomains = new LinkedHashSet<>();
 
   public static final String JSON_PROPERTY_FORM_LAYOUT = "form_layout";
+  @javax.annotation.Nullable
   private JsonNullable<UIWidgetFormLayout> formLayout = JsonNullable.<UIWidgetFormLayout>undefined();
 
   public static final String JSON_PROPERTY_PAYOUT_TEST_MODE = "payout_test_mode";
+  @javax.annotation.Nullable
   private JsonNullable<Boolean> payoutTestMode = JsonNullable.<Boolean>of(false);
 
   public BusinessPayoutLinkConfig() {
   }
 
-  public BusinessPayoutLinkConfig logo(String logo) {
+  public BusinessPayoutLinkConfig logo(@javax.annotation.Nullable String logo) {
     this.logo = JsonNullable.<String>of(logo);
     
     return this;
   }
 
-   /**
+  /**
    * Merchant&#39;s display logo
    * @return logo
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -101,21 +108,20 @@ public class BusinessPayoutLinkConfig {
     this.logo = logo;
   }
 
-  public void setLogo(String logo) {
+  public void setLogo(@javax.annotation.Nullable String logo) {
     this.logo = JsonNullable.<String>of(logo);
   }
 
-
-  public BusinessPayoutLinkConfig merchantName(String merchantName) {
+  public BusinessPayoutLinkConfig merchantName(@javax.annotation.Nullable String merchantName) {
     this.merchantName = JsonNullable.<String>of(merchantName);
     
     return this;
   }
 
-   /**
+  /**
    * Custom merchant name for the link
    * @return merchantName
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -135,21 +141,20 @@ public class BusinessPayoutLinkConfig {
     this.merchantName = merchantName;
   }
 
-  public void setMerchantName(String merchantName) {
+  public void setMerchantName(@javax.annotation.Nullable String merchantName) {
     this.merchantName = JsonNullable.<String>of(merchantName);
   }
 
-
-  public BusinessPayoutLinkConfig theme(String theme) {
+  public BusinessPayoutLinkConfig theme(@javax.annotation.Nullable String theme) {
     this.theme = JsonNullable.<String>of(theme);
     
     return this;
   }
 
-   /**
+  /**
    * Primary color to be used in the form represented in hex format
    * @return theme
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -169,21 +174,20 @@ public class BusinessPayoutLinkConfig {
     this.theme = theme;
   }
 
-  public void setTheme(String theme) {
+  public void setTheme(@javax.annotation.Nullable String theme) {
     this.theme = JsonNullable.<String>of(theme);
   }
 
-
-  public BusinessPayoutLinkConfig domainName(String domainName) {
+  public BusinessPayoutLinkConfig domainName(@javax.annotation.Nullable String domainName) {
     this.domainName = JsonNullable.<String>of(domainName);
     
     return this;
   }
 
-   /**
+  /**
    * Custom domain name to be used for hosting the link
    * @return domainName
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -203,12 +207,11 @@ public class BusinessPayoutLinkConfig {
     this.domainName = domainName;
   }
 
-  public void setDomainName(String domainName) {
+  public void setDomainName(@javax.annotation.Nullable String domainName) {
     this.domainName = JsonNullable.<String>of(domainName);
   }
 
-
-  public BusinessPayoutLinkConfig allowedDomains(Set<String> allowedDomains) {
+  public BusinessPayoutLinkConfig allowedDomains(@javax.annotation.Nonnull Set<String> allowedDomains) {
     
     this.allowedDomains = allowedDomains;
     return this;
@@ -222,10 +225,10 @@ public class BusinessPayoutLinkConfig {
     return this;
   }
 
-   /**
+  /**
    * A list of allowed domains (glob patterns) where this link can be embedded / opened from
    * @return allowedDomains
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_ALLOWED_DOMAINS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -238,21 +241,20 @@ public class BusinessPayoutLinkConfig {
   @JsonDeserialize(as = LinkedHashSet.class)
   @JsonProperty(JSON_PROPERTY_ALLOWED_DOMAINS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setAllowedDomains(Set<String> allowedDomains) {
+  public void setAllowedDomains(@javax.annotation.Nonnull Set<String> allowedDomains) {
     this.allowedDomains = allowedDomains;
   }
 
-
-  public BusinessPayoutLinkConfig formLayout(UIWidgetFormLayout formLayout) {
+  public BusinessPayoutLinkConfig formLayout(@javax.annotation.Nullable UIWidgetFormLayout formLayout) {
     this.formLayout = JsonNullable.<UIWidgetFormLayout>of(formLayout);
     
     return this;
   }
 
-   /**
+  /**
    * Get formLayout
    * @return formLayout
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -272,21 +274,20 @@ public class BusinessPayoutLinkConfig {
     this.formLayout = formLayout;
   }
 
-  public void setFormLayout(UIWidgetFormLayout formLayout) {
+  public void setFormLayout(@javax.annotation.Nullable UIWidgetFormLayout formLayout) {
     this.formLayout = JsonNullable.<UIWidgetFormLayout>of(formLayout);
   }
 
-
-  public BusinessPayoutLinkConfig payoutTestMode(Boolean payoutTestMode) {
+  public BusinessPayoutLinkConfig payoutTestMode(@javax.annotation.Nullable Boolean payoutTestMode) {
     this.payoutTestMode = JsonNullable.<Boolean>of(payoutTestMode);
     
     return this;
   }
 
-   /**
+  /**
    * Allows for removing any validations / pre-requisites which are necessary in a production environment
    * @return payoutTestMode
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -306,7 +307,7 @@ public class BusinessPayoutLinkConfig {
     this.payoutTestMode = payoutTestMode;
   }
 
-  public void setPayoutTestMode(Boolean payoutTestMode) {
+  public void setPayoutTestMode(@javax.annotation.Nullable Boolean payoutTestMode) {
     this.payoutTestMode = JsonNullable.<Boolean>of(payoutTestMode);
   }
 

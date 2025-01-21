@@ -47,22 +47,21 @@ import com.hyperswitch.client.model.BankRedirectDataOneOf8;
 import com.hyperswitch.client.model.BankRedirectDataOneOf8OnlineBankingFinland;
 import com.hyperswitch.client.model.BankRedirectDataOneOf9;
 import com.hyperswitch.client.model.BankRedirectDataOneOfBancontactCard;
-import org.junit.Assert;
-import org.junit.Ignore;
-import org.junit.Test;
-
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Test;
 
 /**
  * Model tests for BankRedirectData
  */
-public class BankRedirectDataTest {
+class BankRedirectDataTest {
     private final BankRedirectData model = new BankRedirectData();
 
     /**
      * Model tests for BankRedirectData
      */
     @Test
-    public void testBankRedirectData() {
+    void testBankRedirectData() {
         // TODO: test BankRedirectData
     }
 
@@ -70,7 +69,7 @@ public class BankRedirectDataTest {
      * Test the property 'bancontactCard'
      */
     @Test
-    public void bancontactCardTest() {
+    void bancontactCardTest() {
         // TODO: test bancontactCard
     }
 
@@ -78,7 +77,7 @@ public class BankRedirectDataTest {
      * Test the property 'bizum'
      */
     @Test
-    public void bizumTest() {
+    void bizumTest() {
         // TODO: test bizum
     }
 
@@ -86,7 +85,7 @@ public class BankRedirectDataTest {
      * Test the property 'blik'
      */
     @Test
-    public void blikTest() {
+    void blikTest() {
         // TODO: test blik
     }
 
@@ -94,7 +93,7 @@ public class BankRedirectDataTest {
      * Test the property 'eps'
      */
     @Test
-    public void epsTest() {
+    void epsTest() {
         // TODO: test eps
     }
 
@@ -102,7 +101,7 @@ public class BankRedirectDataTest {
      * Test the property 'giropay'
      */
     @Test
-    public void giropayTest() {
+    void giropayTest() {
         // TODO: test giropay
     }
 
@@ -110,7 +109,7 @@ public class BankRedirectDataTest {
      * Test the property 'ideal'
      */
     @Test
-    public void idealTest() {
+    void idealTest() {
         // TODO: test ideal
     }
 
@@ -118,7 +117,7 @@ public class BankRedirectDataTest {
      * Test the property 'interac'
      */
     @Test
-    public void interacTest() {
+    void interacTest() {
         // TODO: test interac
     }
 
@@ -126,7 +125,7 @@ public class BankRedirectDataTest {
      * Test the property 'onlineBankingCzechRepublic'
      */
     @Test
-    public void onlineBankingCzechRepublicTest() {
+    void onlineBankingCzechRepublicTest() {
         // TODO: test onlineBankingCzechRepublic
     }
 
@@ -134,7 +133,7 @@ public class BankRedirectDataTest {
      * Test the property 'onlineBankingFinland'
      */
     @Test
-    public void onlineBankingFinlandTest() {
+    void onlineBankingFinlandTest() {
         // TODO: test onlineBankingFinland
     }
 
@@ -142,7 +141,7 @@ public class BankRedirectDataTest {
      * Test the property 'onlineBankingPoland'
      */
     @Test
-    public void onlineBankingPolandTest() {
+    void onlineBankingPolandTest() {
         // TODO: test onlineBankingPoland
     }
 
@@ -150,7 +149,7 @@ public class BankRedirectDataTest {
      * Test the property 'onlineBankingSlovakia'
      */
     @Test
-    public void onlineBankingSlovakiaTest() {
+    void onlineBankingSlovakiaTest() {
         // TODO: test onlineBankingSlovakia
     }
 
@@ -158,7 +157,7 @@ public class BankRedirectDataTest {
      * Test the property 'openBankingUk'
      */
     @Test
-    public void openBankingUkTest() {
+    void openBankingUkTest() {
         // TODO: test openBankingUk
     }
 
@@ -166,7 +165,7 @@ public class BankRedirectDataTest {
      * Test the property 'przelewy24'
      */
     @Test
-    public void przelewy24Test() {
+    void przelewy24Test() {
         // TODO: test przelewy24
     }
 
@@ -174,7 +173,7 @@ public class BankRedirectDataTest {
      * Test the property 'sofort'
      */
     @Test
-    public void sofortTest() {
+    void sofortTest() {
         // TODO: test sofort
     }
 
@@ -182,7 +181,7 @@ public class BankRedirectDataTest {
      * Test the property 'trustly'
      */
     @Test
-    public void trustlyTest() {
+    void trustlyTest() {
         // TODO: test trustly
     }
 
@@ -190,7 +189,7 @@ public class BankRedirectDataTest {
      * Test the property 'onlineBankingFpx'
      */
     @Test
-    public void onlineBankingFpxTest() {
+    void onlineBankingFpxTest() {
         // TODO: test onlineBankingFpx
     }
 
@@ -198,7 +197,7 @@ public class BankRedirectDataTest {
      * Test the property 'onlineBankingThailand'
      */
     @Test
-    public void onlineBankingThailandTest() {
+    void onlineBankingThailandTest() {
         // TODO: test onlineBankingThailand
     }
 
@@ -206,7 +205,7 @@ public class BankRedirectDataTest {
      * Test the property 'localBankRedirect'
      */
     @Test
-    public void localBankRedirectTest() {
+    void localBankRedirectTest() {
         // TODO: test localBankRedirect
     }
 

@@ -37,33 +37,37 @@ import java.util.StringJoiner;
   GooglePayWalletData.JSON_PROPERTY_INFO,
   GooglePayWalletData.JSON_PROPERTY_TOKENIZATION_DATA
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class GooglePayWalletData {
   public static final String JSON_PROPERTY_TYPE = "type";
+  @javax.annotation.Nonnull
   private String type;
 
   public static final String JSON_PROPERTY_DESCRIPTION = "description";
+  @javax.annotation.Nonnull
   private String description;
 
   public static final String JSON_PROPERTY_INFO = "info";
+  @javax.annotation.Nonnull
   private GooglePayPaymentMethodInfo info;
 
   public static final String JSON_PROPERTY_TOKENIZATION_DATA = "tokenization_data";
+  @javax.annotation.Nonnull
   private GpayTokenizationData tokenizationData;
 
   public GooglePayWalletData() {
   }
 
-  public GooglePayWalletData type(String type) {
+  public GooglePayWalletData type(@javax.annotation.Nonnull String type) {
     
     this.type = type;
     return this;
   }
 
-   /**
+  /**
    * The type of payment method
    * @return type
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_TYPE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -75,21 +79,20 @@ public class GooglePayWalletData {
 
   @JsonProperty(JSON_PROPERTY_TYPE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setType(String type) {
+  public void setType(@javax.annotation.Nonnull String type) {
     this.type = type;
   }
 
-
-  public GooglePayWalletData description(String description) {
+  public GooglePayWalletData description(@javax.annotation.Nonnull String description) {
     
     this.description = description;
     return this;
   }
 
-   /**
+  /**
    * User-facing message to describe the payment method that funds this transaction.
    * @return description
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_DESCRIPTION)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -101,21 +104,20 @@ public class GooglePayWalletData {
 
   @JsonProperty(JSON_PROPERTY_DESCRIPTION)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setDescription(String description) {
+  public void setDescription(@javax.annotation.Nonnull String description) {
     this.description = description;
   }
 
-
-  public GooglePayWalletData info(GooglePayPaymentMethodInfo info) {
+  public GooglePayWalletData info(@javax.annotation.Nonnull GooglePayPaymentMethodInfo info) {
     
     this.info = info;
     return this;
   }
 
-   /**
+  /**
    * Get info
    * @return info
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_INFO)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -127,21 +129,20 @@ public class GooglePayWalletData {
 
   @JsonProperty(JSON_PROPERTY_INFO)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setInfo(GooglePayPaymentMethodInfo info) {
+  public void setInfo(@javax.annotation.Nonnull GooglePayPaymentMethodInfo info) {
     this.info = info;
   }
 
-
-  public GooglePayWalletData tokenizationData(GpayTokenizationData tokenizationData) {
+  public GooglePayWalletData tokenizationData(@javax.annotation.Nonnull GpayTokenizationData tokenizationData) {
     
     this.tokenizationData = tokenizationData;
     return this;
   }
 
-   /**
+  /**
    * Get tokenizationData
    * @return tokenizationData
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_TOKENIZATION_DATA)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -153,7 +154,7 @@ public class GooglePayWalletData {
 
   @JsonProperty(JSON_PROPERTY_TOKENIZATION_DATA)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setTokenizationData(GpayTokenizationData tokenizationData) {
+  public void setTokenizationData(@javax.annotation.Nonnull GpayTokenizationData tokenizationData) {
     this.tokenizationData = tokenizationData;
   }
 

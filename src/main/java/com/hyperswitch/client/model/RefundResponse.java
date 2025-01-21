@@ -53,66 +53,81 @@ import java.util.StringJoiner;
   RefundResponse.JSON_PROPERTY_MERCHANT_CONNECTOR_ID,
   RefundResponse.JSON_PROPERTY_CHARGES
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class RefundResponse {
   public static final String JSON_PROPERTY_REFUND_ID = "refund_id";
+  @javax.annotation.Nonnull
   private String refundId;
 
   public static final String JSON_PROPERTY_PAYMENT_ID = "payment_id";
+  @javax.annotation.Nonnull
   private String paymentId;
 
   public static final String JSON_PROPERTY_AMOUNT = "amount";
+  @javax.annotation.Nonnull
   private Long amount;
 
   public static final String JSON_PROPERTY_CURRENCY = "currency";
+  @javax.annotation.Nonnull
   private String currency;
 
   public static final String JSON_PROPERTY_STATUS = "status";
+  @javax.annotation.Nonnull
   private RefundStatus status;
 
   public static final String JSON_PROPERTY_REASON = "reason";
+  @javax.annotation.Nullable
   private JsonNullable<String> reason = JsonNullable.<String>undefined();
 
   public static final String JSON_PROPERTY_METADATA = "metadata";
+  @javax.annotation.Nullable
   private JsonNullable<Object> metadata = JsonNullable.<Object>undefined();
 
   public static final String JSON_PROPERTY_ERROR_MESSAGE = "error_message";
+  @javax.annotation.Nullable
   private JsonNullable<String> errorMessage = JsonNullable.<String>undefined();
 
   public static final String JSON_PROPERTY_ERROR_CODE = "error_code";
+  @javax.annotation.Nullable
   private JsonNullable<String> errorCode = JsonNullable.<String>undefined();
 
   public static final String JSON_PROPERTY_CREATED_AT = "created_at";
+  @javax.annotation.Nullable
   private JsonNullable<OffsetDateTime> createdAt = JsonNullable.<OffsetDateTime>undefined();
 
   public static final String JSON_PROPERTY_UPDATED_AT = "updated_at";
+  @javax.annotation.Nullable
   private JsonNullable<OffsetDateTime> updatedAt = JsonNullable.<OffsetDateTime>undefined();
 
   public static final String JSON_PROPERTY_CONNECTOR = "connector";
+  @javax.annotation.Nonnull
   private String connector;
 
   public static final String JSON_PROPERTY_PROFILE_ID = "profile_id";
+  @javax.annotation.Nullable
   private JsonNullable<String> profileId = JsonNullable.<String>undefined();
 
   public static final String JSON_PROPERTY_MERCHANT_CONNECTOR_ID = "merchant_connector_id";
+  @javax.annotation.Nullable
   private JsonNullable<String> merchantConnectorId = JsonNullable.<String>undefined();
 
   public static final String JSON_PROPERTY_CHARGES = "charges";
+  @javax.annotation.Nullable
   private JsonNullable<ChargeRefunds> charges = JsonNullable.<ChargeRefunds>undefined();
 
   public RefundResponse() {
   }
 
-  public RefundResponse refundId(String refundId) {
+  public RefundResponse refundId(@javax.annotation.Nonnull String refundId) {
     
     this.refundId = refundId;
     return this;
   }
 
-   /**
+  /**
    * Unique Identifier for the refund
    * @return refundId
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_REFUND_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -124,21 +139,20 @@ public class RefundResponse {
 
   @JsonProperty(JSON_PROPERTY_REFUND_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setRefundId(String refundId) {
+  public void setRefundId(@javax.annotation.Nonnull String refundId) {
     this.refundId = refundId;
   }
 
-
-  public RefundResponse paymentId(String paymentId) {
+  public RefundResponse paymentId(@javax.annotation.Nonnull String paymentId) {
     
     this.paymentId = paymentId;
     return this;
   }
 
-   /**
+  /**
    * The payment id against which refund is initiated
    * @return paymentId
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_PAYMENT_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -150,22 +164,21 @@ public class RefundResponse {
 
   @JsonProperty(JSON_PROPERTY_PAYMENT_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setPaymentId(String paymentId) {
+  public void setPaymentId(@javax.annotation.Nonnull String paymentId) {
     this.paymentId = paymentId;
   }
 
-
-  public RefundResponse amount(Long amount) {
+  public RefundResponse amount(@javax.annotation.Nonnull Long amount) {
     
     this.amount = amount;
     return this;
   }
 
-   /**
+  /**
    * The refund amount, which should be less than or equal to the total payment amount. Amount for the payment in lowest denomination of the currency. (i.e) in cents for USD denomination, in paisa for INR denomination etc
    * minimum: 100
    * @return amount
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_AMOUNT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -177,21 +190,20 @@ public class RefundResponse {
 
   @JsonProperty(JSON_PROPERTY_AMOUNT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setAmount(Long amount) {
+  public void setAmount(@javax.annotation.Nonnull Long amount) {
     this.amount = amount;
   }
 
-
-  public RefundResponse currency(String currency) {
+  public RefundResponse currency(@javax.annotation.Nonnull String currency) {
     
     this.currency = currency;
     return this;
   }
 
-   /**
+  /**
    * The three-letter ISO currency code
    * @return currency
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_CURRENCY)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -203,21 +215,20 @@ public class RefundResponse {
 
   @JsonProperty(JSON_PROPERTY_CURRENCY)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setCurrency(String currency) {
+  public void setCurrency(@javax.annotation.Nonnull String currency) {
     this.currency = currency;
   }
 
-
-  public RefundResponse status(RefundStatus status) {
+  public RefundResponse status(@javax.annotation.Nonnull RefundStatus status) {
     
     this.status = status;
     return this;
   }
 
-   /**
+  /**
    * Get status
    * @return status
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_STATUS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -229,21 +240,20 @@ public class RefundResponse {
 
   @JsonProperty(JSON_PROPERTY_STATUS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setStatus(RefundStatus status) {
+  public void setStatus(@javax.annotation.Nonnull RefundStatus status) {
     this.status = status;
   }
 
-
-  public RefundResponse reason(String reason) {
+  public RefundResponse reason(@javax.annotation.Nullable String reason) {
     this.reason = JsonNullable.<String>of(reason);
     
     return this;
   }
 
-   /**
+  /**
    * An arbitrary string attached to the object. Often useful for displaying to users and your customer support executive
    * @return reason
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -263,21 +273,20 @@ public class RefundResponse {
     this.reason = reason;
   }
 
-  public void setReason(String reason) {
+  public void setReason(@javax.annotation.Nullable String reason) {
     this.reason = JsonNullable.<String>of(reason);
   }
 
-
-  public RefundResponse metadata(Object metadata) {
+  public RefundResponse metadata(@javax.annotation.Nullable Object metadata) {
     this.metadata = JsonNullable.<Object>of(metadata);
     
     return this;
   }
 
-   /**
+  /**
    * You can specify up to 50 keys, with key names up to 40 characters long and values up to 500 characters long. Metadata is useful for storing additional, structured information on an object
    * @return metadata
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -297,21 +306,20 @@ public class RefundResponse {
     this.metadata = metadata;
   }
 
-  public void setMetadata(Object metadata) {
+  public void setMetadata(@javax.annotation.Nullable Object metadata) {
     this.metadata = JsonNullable.<Object>of(metadata);
   }
 
-
-  public RefundResponse errorMessage(String errorMessage) {
+  public RefundResponse errorMessage(@javax.annotation.Nullable String errorMessage) {
     this.errorMessage = JsonNullable.<String>of(errorMessage);
     
     return this;
   }
 
-   /**
+  /**
    * The error message
    * @return errorMessage
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -331,21 +339,20 @@ public class RefundResponse {
     this.errorMessage = errorMessage;
   }
 
-  public void setErrorMessage(String errorMessage) {
+  public void setErrorMessage(@javax.annotation.Nullable String errorMessage) {
     this.errorMessage = JsonNullable.<String>of(errorMessage);
   }
 
-
-  public RefundResponse errorCode(String errorCode) {
+  public RefundResponse errorCode(@javax.annotation.Nullable String errorCode) {
     this.errorCode = JsonNullable.<String>of(errorCode);
     
     return this;
   }
 
-   /**
+  /**
    * The code for the error
    * @return errorCode
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -365,21 +372,20 @@ public class RefundResponse {
     this.errorCode = errorCode;
   }
 
-  public void setErrorCode(String errorCode) {
+  public void setErrorCode(@javax.annotation.Nullable String errorCode) {
     this.errorCode = JsonNullable.<String>of(errorCode);
   }
 
-
-  public RefundResponse createdAt(OffsetDateTime createdAt) {
+  public RefundResponse createdAt(@javax.annotation.Nullable OffsetDateTime createdAt) {
     this.createdAt = JsonNullable.<OffsetDateTime>of(createdAt);
     
     return this;
   }
 
-   /**
+  /**
    * The timestamp at which refund is created
    * @return createdAt
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -399,21 +405,20 @@ public class RefundResponse {
     this.createdAt = createdAt;
   }
 
-  public void setCreatedAt(OffsetDateTime createdAt) {
+  public void setCreatedAt(@javax.annotation.Nullable OffsetDateTime createdAt) {
     this.createdAt = JsonNullable.<OffsetDateTime>of(createdAt);
   }
 
-
-  public RefundResponse updatedAt(OffsetDateTime updatedAt) {
+  public RefundResponse updatedAt(@javax.annotation.Nullable OffsetDateTime updatedAt) {
     this.updatedAt = JsonNullable.<OffsetDateTime>of(updatedAt);
     
     return this;
   }
 
-   /**
+  /**
    * The timestamp at which refund is updated
    * @return updatedAt
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -433,21 +438,20 @@ public class RefundResponse {
     this.updatedAt = updatedAt;
   }
 
-  public void setUpdatedAt(OffsetDateTime updatedAt) {
+  public void setUpdatedAt(@javax.annotation.Nullable OffsetDateTime updatedAt) {
     this.updatedAt = JsonNullable.<OffsetDateTime>of(updatedAt);
   }
 
-
-  public RefundResponse connector(String connector) {
+  public RefundResponse connector(@javax.annotation.Nonnull String connector) {
     
     this.connector = connector;
     return this;
   }
 
-   /**
+  /**
    * The connector used for the refund and the corresponding payment
    * @return connector
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_CONNECTOR)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -459,21 +463,20 @@ public class RefundResponse {
 
   @JsonProperty(JSON_PROPERTY_CONNECTOR)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setConnector(String connector) {
+  public void setConnector(@javax.annotation.Nonnull String connector) {
     this.connector = connector;
   }
 
-
-  public RefundResponse profileId(String profileId) {
+  public RefundResponse profileId(@javax.annotation.Nullable String profileId) {
     this.profileId = JsonNullable.<String>of(profileId);
     
     return this;
   }
 
-   /**
+  /**
    * The id of business profile for this refund
    * @return profileId
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -493,21 +496,20 @@ public class RefundResponse {
     this.profileId = profileId;
   }
 
-  public void setProfileId(String profileId) {
+  public void setProfileId(@javax.annotation.Nullable String profileId) {
     this.profileId = JsonNullable.<String>of(profileId);
   }
 
-
-  public RefundResponse merchantConnectorId(String merchantConnectorId) {
+  public RefundResponse merchantConnectorId(@javax.annotation.Nullable String merchantConnectorId) {
     this.merchantConnectorId = JsonNullable.<String>of(merchantConnectorId);
     
     return this;
   }
 
-   /**
+  /**
    * The merchant_connector_id of the processor through which this payment went through
    * @return merchantConnectorId
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -527,21 +529,20 @@ public class RefundResponse {
     this.merchantConnectorId = merchantConnectorId;
   }
 
-  public void setMerchantConnectorId(String merchantConnectorId) {
+  public void setMerchantConnectorId(@javax.annotation.Nullable String merchantConnectorId) {
     this.merchantConnectorId = JsonNullable.<String>of(merchantConnectorId);
   }
 
-
-  public RefundResponse charges(ChargeRefunds charges) {
+  public RefundResponse charges(@javax.annotation.Nullable ChargeRefunds charges) {
     this.charges = JsonNullable.<ChargeRefunds>of(charges);
     
     return this;
   }
 
-   /**
+  /**
    * Get charges
    * @return charges
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -561,7 +562,7 @@ public class RefundResponse {
     this.charges = charges;
   }
 
-  public void setCharges(ChargeRefunds charges) {
+  public void setCharges(@javax.annotation.Nullable ChargeRefunds charges) {
     this.charges = JsonNullable.<ChargeRefunds>of(charges);
   }
 

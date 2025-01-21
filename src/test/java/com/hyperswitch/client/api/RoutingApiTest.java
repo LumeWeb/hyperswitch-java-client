@@ -22,9 +22,9 @@ import com.hyperswitch.client.model.RoutableConnectorChoice;
 import com.hyperswitch.client.model.RoutingConfigRequest;
 import com.hyperswitch.client.model.RoutingDictionaryRecord;
 import com.hyperswitch.client.model.RoutingKind;
-import org.junit.Test;
-import org.junit.Ignore;
-import org.junit.Assert;
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Test;
 
 import java.time.LocalDate;
 import java.time.OffsetDateTime;
@@ -36,7 +36,7 @@ import java.util.Map;
 /**
  * API tests for RoutingApi
  */
-@Ignore
+@Disabled
 public class RoutingApiTest {
 
     private final RoutingApi api = new RoutingApi();

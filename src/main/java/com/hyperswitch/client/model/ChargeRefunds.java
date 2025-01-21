@@ -38,30 +38,33 @@ import java.util.StringJoiner;
   ChargeRefunds.JSON_PROPERTY_REVERT_PLATFORM_FEE,
   ChargeRefunds.JSON_PROPERTY_REVERT_TRANSFER
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class ChargeRefunds {
   public static final String JSON_PROPERTY_CHARGE_ID = "charge_id";
+  @javax.annotation.Nonnull
   private String chargeId;
 
   public static final String JSON_PROPERTY_REVERT_PLATFORM_FEE = "revert_platform_fee";
+  @javax.annotation.Nullable
   private JsonNullable<Boolean> revertPlatformFee = JsonNullable.<Boolean>undefined();
 
   public static final String JSON_PROPERTY_REVERT_TRANSFER = "revert_transfer";
+  @javax.annotation.Nullable
   private JsonNullable<Boolean> revertTransfer = JsonNullable.<Boolean>undefined();
 
   public ChargeRefunds() {
   }
 
-  public ChargeRefunds chargeId(String chargeId) {
+  public ChargeRefunds chargeId(@javax.annotation.Nonnull String chargeId) {
     
     this.chargeId = chargeId;
     return this;
   }
 
-   /**
+  /**
    * Identifier for charge created for the payment
    * @return chargeId
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_CHARGE_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -73,21 +76,20 @@ public class ChargeRefunds {
 
   @JsonProperty(JSON_PROPERTY_CHARGE_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setChargeId(String chargeId) {
+  public void setChargeId(@javax.annotation.Nonnull String chargeId) {
     this.chargeId = chargeId;
   }
 
-
-  public ChargeRefunds revertPlatformFee(Boolean revertPlatformFee) {
+  public ChargeRefunds revertPlatformFee(@javax.annotation.Nullable Boolean revertPlatformFee) {
     this.revertPlatformFee = JsonNullable.<Boolean>of(revertPlatformFee);
     
     return this;
   }
 
-   /**
+  /**
    * Toggle for reverting the application fee that was collected for the payment. If set to false, the funds are pulled from the destination account.
    * @return revertPlatformFee
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -107,21 +109,20 @@ public class ChargeRefunds {
     this.revertPlatformFee = revertPlatformFee;
   }
 
-  public void setRevertPlatformFee(Boolean revertPlatformFee) {
+  public void setRevertPlatformFee(@javax.annotation.Nullable Boolean revertPlatformFee) {
     this.revertPlatformFee = JsonNullable.<Boolean>of(revertPlatformFee);
   }
 
-
-  public ChargeRefunds revertTransfer(Boolean revertTransfer) {
+  public ChargeRefunds revertTransfer(@javax.annotation.Nullable Boolean revertTransfer) {
     this.revertTransfer = JsonNullable.<Boolean>of(revertTransfer);
     
     return this;
   }
 
-   /**
+  /**
    * Toggle for reverting the transfer that was made during the charge. If set to false, the funds are pulled from the main platform&#39;s account.
    * @return revertTransfer
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -141,7 +142,7 @@ public class ChargeRefunds {
     this.revertTransfer = revertTransfer;
   }
 
-  public void setRevertTransfer(Boolean revertTransfer) {
+  public void setRevertTransfer(@javax.annotation.Nullable Boolean revertTransfer) {
     this.revertTransfer = JsonNullable.<Boolean>of(revertTransfer);
   }
 

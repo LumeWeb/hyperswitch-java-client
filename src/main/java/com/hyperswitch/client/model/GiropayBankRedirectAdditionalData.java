@@ -39,30 +39,33 @@ import java.util.StringJoiner;
   GiropayBankRedirectAdditionalData.JSON_PROPERTY_IBAN,
   GiropayBankRedirectAdditionalData.JSON_PROPERTY_COUNTRY
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class GiropayBankRedirectAdditionalData {
   public static final String JSON_PROPERTY_BIC = "bic";
+  @javax.annotation.Nullable
   private JsonNullable<String> bic = JsonNullable.<String>undefined();
 
   public static final String JSON_PROPERTY_IBAN = "iban";
+  @javax.annotation.Nullable
   private JsonNullable<String> iban = JsonNullable.<String>undefined();
 
   public static final String JSON_PROPERTY_COUNTRY = "country";
+  @javax.annotation.Nullable
   private JsonNullable<CountryAlpha2> country = JsonNullable.<CountryAlpha2>undefined();
 
   public GiropayBankRedirectAdditionalData() {
   }
 
-  public GiropayBankRedirectAdditionalData bic(String bic) {
+  public GiropayBankRedirectAdditionalData bic(@javax.annotation.Nullable String bic) {
     this.bic = JsonNullable.<String>of(bic);
     
     return this;
   }
 
-   /**
+  /**
    * Masked bank account bic code
    * @return bic
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -82,21 +85,20 @@ public class GiropayBankRedirectAdditionalData {
     this.bic = bic;
   }
 
-  public void setBic(String bic) {
+  public void setBic(@javax.annotation.Nullable String bic) {
     this.bic = JsonNullable.<String>of(bic);
   }
 
-
-  public GiropayBankRedirectAdditionalData iban(String iban) {
+  public GiropayBankRedirectAdditionalData iban(@javax.annotation.Nullable String iban) {
     this.iban = JsonNullable.<String>of(iban);
     
     return this;
   }
 
-   /**
+  /**
    * Partially masked international bank account number (iban) for SEPA
    * @return iban
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -116,21 +118,20 @@ public class GiropayBankRedirectAdditionalData {
     this.iban = iban;
   }
 
-  public void setIban(String iban) {
+  public void setIban(@javax.annotation.Nullable String iban) {
     this.iban = JsonNullable.<String>of(iban);
   }
 
-
-  public GiropayBankRedirectAdditionalData country(CountryAlpha2 country) {
+  public GiropayBankRedirectAdditionalData country(@javax.annotation.Nullable CountryAlpha2 country) {
     this.country = JsonNullable.<CountryAlpha2>of(country);
     
     return this;
   }
 
-   /**
+  /**
    * Get country
    * @return country
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -150,7 +151,7 @@ public class GiropayBankRedirectAdditionalData {
     this.country = country;
   }
 
-  public void setCountry(CountryAlpha2 country) {
+  public void setCountry(@javax.annotation.Nullable CountryAlpha2 country) {
     this.country = JsonNullable.<CountryAlpha2>of(country);
   }
 

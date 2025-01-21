@@ -46,57 +46,69 @@ import java.util.StringJoiner;
   ApplePaySessionResponse.JSON_PROPERTY_RETRIES,
   ApplePaySessionResponse.JSON_PROPERTY_PSP_ID
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class ApplePaySessionResponse {
   public static final String JSON_PROPERTY_SECRETS = "secrets";
+  @javax.annotation.Nonnull
   private SecretInfoToInitiateSdk secrets;
 
   public static final String JSON_PROPERTY_EPOCH_TIMESTAMP = "epoch_timestamp";
+  @javax.annotation.Nonnull
   private Long epochTimestamp;
 
   public static final String JSON_PROPERTY_EXPIRES_AT = "expires_at";
+  @javax.annotation.Nonnull
   private Long expiresAt;
 
   public static final String JSON_PROPERTY_MERCHANT_SESSION_IDENTIFIER = "merchant_session_identifier";
+  @javax.annotation.Nonnull
   private String merchantSessionIdentifier;
 
   public static final String JSON_PROPERTY_NONCE = "nonce";
+  @javax.annotation.Nonnull
   private String nonce;
 
   public static final String JSON_PROPERTY_MERCHANT_IDENTIFIER = "merchant_identifier";
+  @javax.annotation.Nonnull
   private String merchantIdentifier;
 
   public static final String JSON_PROPERTY_DOMAIN_NAME = "domain_name";
+  @javax.annotation.Nonnull
   private String domainName;
 
   public static final String JSON_PROPERTY_DISPLAY_NAME = "display_name";
+  @javax.annotation.Nonnull
   private String displayName;
 
   public static final String JSON_PROPERTY_SIGNATURE = "signature";
+  @javax.annotation.Nonnull
   private String signature;
 
   public static final String JSON_PROPERTY_OPERATIONAL_ANALYTICS_IDENTIFIER = "operational_analytics_identifier";
+  @javax.annotation.Nonnull
   private String operationalAnalyticsIdentifier;
 
   public static final String JSON_PROPERTY_RETRIES = "retries";
+  @javax.annotation.Nonnull
   private Integer retries;
 
   public static final String JSON_PROPERTY_PSP_ID = "psp_id";
+  @javax.annotation.Nonnull
   private String pspId;
 
   public ApplePaySessionResponse() {
   }
 
-  public ApplePaySessionResponse secrets(SecretInfoToInitiateSdk secrets) {
+  public ApplePaySessionResponse secrets(@javax.annotation.Nonnull SecretInfoToInitiateSdk secrets) {
     
     this.secrets = secrets;
     return this;
   }
 
-   /**
+  /**
    * Get secrets
    * @return secrets
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_SECRETS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -108,22 +120,21 @@ public class ApplePaySessionResponse {
 
   @JsonProperty(JSON_PROPERTY_SECRETS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setSecrets(SecretInfoToInitiateSdk secrets) {
+  public void setSecrets(@javax.annotation.Nonnull SecretInfoToInitiateSdk secrets) {
     this.secrets = secrets;
   }
 
-
-  public ApplePaySessionResponse epochTimestamp(Long epochTimestamp) {
+  public ApplePaySessionResponse epochTimestamp(@javax.annotation.Nonnull Long epochTimestamp) {
     
     this.epochTimestamp = epochTimestamp;
     return this;
   }
 
-   /**
+  /**
    * Timestamp at which session is requested
    * minimum: 0
    * @return epochTimestamp
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_EPOCH_TIMESTAMP)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -135,22 +146,21 @@ public class ApplePaySessionResponse {
 
   @JsonProperty(JSON_PROPERTY_EPOCH_TIMESTAMP)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setEpochTimestamp(Long epochTimestamp) {
+  public void setEpochTimestamp(@javax.annotation.Nonnull Long epochTimestamp) {
     this.epochTimestamp = epochTimestamp;
   }
 
-
-  public ApplePaySessionResponse expiresAt(Long expiresAt) {
+  public ApplePaySessionResponse expiresAt(@javax.annotation.Nonnull Long expiresAt) {
     
     this.expiresAt = expiresAt;
     return this;
   }
 
-   /**
+  /**
    * Timestamp at which session expires
    * minimum: 0
    * @return expiresAt
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_EXPIRES_AT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -162,21 +172,20 @@ public class ApplePaySessionResponse {
 
   @JsonProperty(JSON_PROPERTY_EXPIRES_AT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setExpiresAt(Long expiresAt) {
+  public void setExpiresAt(@javax.annotation.Nonnull Long expiresAt) {
     this.expiresAt = expiresAt;
   }
 
-
-  public ApplePaySessionResponse merchantSessionIdentifier(String merchantSessionIdentifier) {
+  public ApplePaySessionResponse merchantSessionIdentifier(@javax.annotation.Nonnull String merchantSessionIdentifier) {
     
     this.merchantSessionIdentifier = merchantSessionIdentifier;
     return this;
   }
 
-   /**
+  /**
    * The identifier for the merchant session
    * @return merchantSessionIdentifier
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_MERCHANT_SESSION_IDENTIFIER)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -188,21 +197,20 @@ public class ApplePaySessionResponse {
 
   @JsonProperty(JSON_PROPERTY_MERCHANT_SESSION_IDENTIFIER)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setMerchantSessionIdentifier(String merchantSessionIdentifier) {
+  public void setMerchantSessionIdentifier(@javax.annotation.Nonnull String merchantSessionIdentifier) {
     this.merchantSessionIdentifier = merchantSessionIdentifier;
   }
 
-
-  public ApplePaySessionResponse nonce(String nonce) {
+  public ApplePaySessionResponse nonce(@javax.annotation.Nonnull String nonce) {
     
     this.nonce = nonce;
     return this;
   }
 
-   /**
+  /**
    * Apple pay generated unique ID (UUID) value
    * @return nonce
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_NONCE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -214,21 +222,20 @@ public class ApplePaySessionResponse {
 
   @JsonProperty(JSON_PROPERTY_NONCE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setNonce(String nonce) {
+  public void setNonce(@javax.annotation.Nonnull String nonce) {
     this.nonce = nonce;
   }
 
-
-  public ApplePaySessionResponse merchantIdentifier(String merchantIdentifier) {
+  public ApplePaySessionResponse merchantIdentifier(@javax.annotation.Nonnull String merchantIdentifier) {
     
     this.merchantIdentifier = merchantIdentifier;
     return this;
   }
 
-   /**
+  /**
    * The identifier for the merchant
    * @return merchantIdentifier
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_MERCHANT_IDENTIFIER)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -240,21 +247,20 @@ public class ApplePaySessionResponse {
 
   @JsonProperty(JSON_PROPERTY_MERCHANT_IDENTIFIER)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setMerchantIdentifier(String merchantIdentifier) {
+  public void setMerchantIdentifier(@javax.annotation.Nonnull String merchantIdentifier) {
     this.merchantIdentifier = merchantIdentifier;
   }
 
-
-  public ApplePaySessionResponse domainName(String domainName) {
+  public ApplePaySessionResponse domainName(@javax.annotation.Nonnull String domainName) {
     
     this.domainName = domainName;
     return this;
   }
 
-   /**
+  /**
    * The domain name of the merchant which is registered in Apple Pay
    * @return domainName
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_DOMAIN_NAME)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -266,21 +272,20 @@ public class ApplePaySessionResponse {
 
   @JsonProperty(JSON_PROPERTY_DOMAIN_NAME)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setDomainName(String domainName) {
+  public void setDomainName(@javax.annotation.Nonnull String domainName) {
     this.domainName = domainName;
   }
 
-
-  public ApplePaySessionResponse displayName(String displayName) {
+  public ApplePaySessionResponse displayName(@javax.annotation.Nonnull String displayName) {
     
     this.displayName = displayName;
     return this;
   }
 
-   /**
+  /**
    * The name to be displayed on Apple Pay button
    * @return displayName
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_DISPLAY_NAME)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -292,21 +297,20 @@ public class ApplePaySessionResponse {
 
   @JsonProperty(JSON_PROPERTY_DISPLAY_NAME)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setDisplayName(String displayName) {
+  public void setDisplayName(@javax.annotation.Nonnull String displayName) {
     this.displayName = displayName;
   }
 
-
-  public ApplePaySessionResponse signature(String signature) {
+  public ApplePaySessionResponse signature(@javax.annotation.Nonnull String signature) {
     
     this.signature = signature;
     return this;
   }
 
-   /**
+  /**
    * A string which represents the properties of a payment
    * @return signature
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_SIGNATURE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -318,21 +322,20 @@ public class ApplePaySessionResponse {
 
   @JsonProperty(JSON_PROPERTY_SIGNATURE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setSignature(String signature) {
+  public void setSignature(@javax.annotation.Nonnull String signature) {
     this.signature = signature;
   }
 
-
-  public ApplePaySessionResponse operationalAnalyticsIdentifier(String operationalAnalyticsIdentifier) {
+  public ApplePaySessionResponse operationalAnalyticsIdentifier(@javax.annotation.Nonnull String operationalAnalyticsIdentifier) {
     
     this.operationalAnalyticsIdentifier = operationalAnalyticsIdentifier;
     return this;
   }
 
-   /**
+  /**
    * The identifier for the operational analytics
    * @return operationalAnalyticsIdentifier
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_OPERATIONAL_ANALYTICS_IDENTIFIER)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -344,22 +347,21 @@ public class ApplePaySessionResponse {
 
   @JsonProperty(JSON_PROPERTY_OPERATIONAL_ANALYTICS_IDENTIFIER)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setOperationalAnalyticsIdentifier(String operationalAnalyticsIdentifier) {
+  public void setOperationalAnalyticsIdentifier(@javax.annotation.Nonnull String operationalAnalyticsIdentifier) {
     this.operationalAnalyticsIdentifier = operationalAnalyticsIdentifier;
   }
 
-
-  public ApplePaySessionResponse retries(Integer retries) {
+  public ApplePaySessionResponse retries(@javax.annotation.Nonnull Integer retries) {
     
     this.retries = retries;
     return this;
   }
 
-   /**
+  /**
    * The number of retries to get the session response
    * minimum: 0
    * @return retries
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_RETRIES)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -371,21 +373,20 @@ public class ApplePaySessionResponse {
 
   @JsonProperty(JSON_PROPERTY_RETRIES)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setRetries(Integer retries) {
+  public void setRetries(@javax.annotation.Nonnull Integer retries) {
     this.retries = retries;
   }
 
-
-  public ApplePaySessionResponse pspId(String pspId) {
+  public ApplePaySessionResponse pspId(@javax.annotation.Nonnull String pspId) {
     
     this.pspId = pspId;
     return this;
   }
 
-   /**
+  /**
    * The identifier for the connector transaction
    * @return pspId
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_PSP_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -397,7 +398,7 @@ public class ApplePaySessionResponse {
 
   @JsonProperty(JSON_PROPERTY_PSP_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setPspId(String pspId) {
+  public void setPspId(@javax.annotation.Nonnull String pspId) {
     this.pspId = pspId;
   }
 

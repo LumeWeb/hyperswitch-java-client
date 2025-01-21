@@ -22,6 +22,7 @@ import com.fasterxml.jackson.annotation.JsonTypeName;
 import com.fasterxml.jackson.annotation.JsonValue;
 import com.hyperswitch.client.model.ConnectorVolumeSplit;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 import com.fasterxml.jackson.annotation.JsonTypeName;
@@ -37,13 +38,13 @@ import java.util.StringJoiner;
   ConnectorSelectionOneOf1.JSON_PROPERTY_DATA
 })
 @JsonTypeName("ConnectorSelection_oneOf_1")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class ConnectorSelectionOneOf1 {
   /**
    * Gets or Sets type
    */
   public enum TypeEnum {
-    VOLUME_SPLIT("volume_split");
+    VOLUME_SPLIT(String.valueOf("volume_split"));
 
     private String value;
 
@@ -73,24 +74,26 @@ public class ConnectorSelectionOneOf1 {
   }
 
   public static final String JSON_PROPERTY_TYPE = "type";
+  @javax.annotation.Nonnull
   private TypeEnum type;
 
   public static final String JSON_PROPERTY_DATA = "data";
+  @javax.annotation.Nonnull
   private List<ConnectorVolumeSplit> data = new ArrayList<>();
 
   public ConnectorSelectionOneOf1() {
   }
 
-  public ConnectorSelectionOneOf1 type(TypeEnum type) {
+  public ConnectorSelectionOneOf1 type(@javax.annotation.Nonnull TypeEnum type) {
     
     this.type = type;
     return this;
   }
 
-   /**
+  /**
    * Get type
    * @return type
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_TYPE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -102,12 +105,11 @@ public class ConnectorSelectionOneOf1 {
 
   @JsonProperty(JSON_PROPERTY_TYPE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setType(TypeEnum type) {
+  public void setType(@javax.annotation.Nonnull TypeEnum type) {
     this.type = type;
   }
 
-
-  public ConnectorSelectionOneOf1 data(List<ConnectorVolumeSplit> data) {
+  public ConnectorSelectionOneOf1 data(@javax.annotation.Nonnull List<ConnectorVolumeSplit> data) {
     
     this.data = data;
     return this;
@@ -121,10 +123,10 @@ public class ConnectorSelectionOneOf1 {
     return this;
   }
 
-   /**
+  /**
    * Get data
    * @return data
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_DATA)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -136,7 +138,7 @@ public class ConnectorSelectionOneOf1 {
 
   @JsonProperty(JSON_PROPERTY_DATA)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setData(List<ConnectorVolumeSplit> data) {
+  public void setData(@javax.annotation.Nonnull List<ConnectorVolumeSplit> data) {
     this.data = data;
   }
 

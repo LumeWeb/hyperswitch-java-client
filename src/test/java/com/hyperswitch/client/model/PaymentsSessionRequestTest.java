@@ -21,27 +21,27 @@ import com.fasterxml.jackson.annotation.JsonValue;
 import com.hyperswitch.client.model.MerchantConnectorDetailsWrap;
 import com.hyperswitch.client.model.PaymentMethodType;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import org.openapitools.jackson.nullable.JsonNullable;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.openapitools.jackson.nullable.JsonNullable;
 import java.util.NoSuchElementException;
-import org.junit.Assert;
-import org.junit.Ignore;
-import org.junit.Test;
-
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Test;
 
 /**
  * Model tests for PaymentsSessionRequest
  */
-public class PaymentsSessionRequestTest {
+class PaymentsSessionRequestTest {
     private final PaymentsSessionRequest model = new PaymentsSessionRequest();
 
     /**
      * Model tests for PaymentsSessionRequest
      */
     @Test
-    public void testPaymentsSessionRequest() {
+    void testPaymentsSessionRequest() {
         // TODO: test PaymentsSessionRequest
     }
 
@@ -49,7 +49,7 @@ public class PaymentsSessionRequestTest {
      * Test the property 'paymentId'
      */
     @Test
-    public void paymentIdTest() {
+    void paymentIdTest() {
         // TODO: test paymentId
     }
 
@@ -57,7 +57,7 @@ public class PaymentsSessionRequestTest {
      * Test the property 'clientSecret'
      */
     @Test
-    public void clientSecretTest() {
+    void clientSecretTest() {
         // TODO: test clientSecret
     }
 
@@ -65,7 +65,7 @@ public class PaymentsSessionRequestTest {
      * Test the property 'wallets'
      */
     @Test
-    public void walletsTest() {
+    void walletsTest() {
         // TODO: test wallets
     }
 
@@ -73,7 +73,7 @@ public class PaymentsSessionRequestTest {
      * Test the property 'merchantConnectorDetails'
      */
     @Test
-    public void merchantConnectorDetailsTest() {
+    void merchantConnectorDetailsTest() {
         // TODO: test merchantConnectorDetails
     }
 

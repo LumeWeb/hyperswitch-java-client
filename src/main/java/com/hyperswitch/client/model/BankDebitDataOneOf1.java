@@ -34,24 +34,25 @@ import java.util.StringJoiner;
   BankDebitDataOneOf1.JSON_PROPERTY_SEPA_BANK_DEBIT
 })
 @JsonTypeName("BankDebitData_oneOf_1")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class BankDebitDataOneOf1 {
   public static final String JSON_PROPERTY_SEPA_BANK_DEBIT = "sepa_bank_debit";
+  @javax.annotation.Nonnull
   private BankDebitDataOneOf1SepaBankDebit sepaBankDebit;
 
   public BankDebitDataOneOf1() {
   }
 
-  public BankDebitDataOneOf1 sepaBankDebit(BankDebitDataOneOf1SepaBankDebit sepaBankDebit) {
+  public BankDebitDataOneOf1 sepaBankDebit(@javax.annotation.Nonnull BankDebitDataOneOf1SepaBankDebit sepaBankDebit) {
     
     this.sepaBankDebit = sepaBankDebit;
     return this;
   }
 
-   /**
+  /**
    * Get sepaBankDebit
    * @return sepaBankDebit
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_SEPA_BANK_DEBIT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -63,7 +64,7 @@ public class BankDebitDataOneOf1 {
 
   @JsonProperty(JSON_PROPERTY_SEPA_BANK_DEBIT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setSepaBankDebit(BankDebitDataOneOf1SepaBankDebit sepaBankDebit) {
+  public void setSepaBankDebit(@javax.annotation.Nonnull BankDebitDataOneOf1SepaBankDebit sepaBankDebit) {
     this.sepaBankDebit = sepaBankDebit;
   }
 

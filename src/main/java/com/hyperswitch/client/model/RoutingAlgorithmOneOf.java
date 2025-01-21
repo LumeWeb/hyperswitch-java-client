@@ -35,13 +35,13 @@ import java.util.StringJoiner;
   RoutingAlgorithmOneOf.JSON_PROPERTY_DATA
 })
 @JsonTypeName("RoutingAlgorithm_oneOf")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class RoutingAlgorithmOneOf {
   /**
    * Gets or Sets type
    */
   public enum TypeEnum {
-    SINGLE("single");
+    SINGLE(String.valueOf("single"));
 
     private String value;
 
@@ -71,24 +71,26 @@ public class RoutingAlgorithmOneOf {
   }
 
   public static final String JSON_PROPERTY_TYPE = "type";
+  @javax.annotation.Nonnull
   private TypeEnum type;
 
   public static final String JSON_PROPERTY_DATA = "data";
+  @javax.annotation.Nonnull
   private RoutableConnectorChoice data;
 
   public RoutingAlgorithmOneOf() {
   }
 
-  public RoutingAlgorithmOneOf type(TypeEnum type) {
+  public RoutingAlgorithmOneOf type(@javax.annotation.Nonnull TypeEnum type) {
     
     this.type = type;
     return this;
   }
 
-   /**
+  /**
    * Get type
    * @return type
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_TYPE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -100,21 +102,20 @@ public class RoutingAlgorithmOneOf {
 
   @JsonProperty(JSON_PROPERTY_TYPE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setType(TypeEnum type) {
+  public void setType(@javax.annotation.Nonnull TypeEnum type) {
     this.type = type;
   }
 
-
-  public RoutingAlgorithmOneOf data(RoutableConnectorChoice data) {
+  public RoutingAlgorithmOneOf data(@javax.annotation.Nonnull RoutableConnectorChoice data) {
     
     this.data = data;
     return this;
   }
 
-   /**
+  /**
    * Get data
    * @return data
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_DATA)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -126,7 +127,7 @@ public class RoutingAlgorithmOneOf {
 
   @JsonProperty(JSON_PROPERTY_DATA)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setData(RoutableConnectorChoice data) {
+  public void setData(@javax.annotation.Nonnull RoutableConnectorChoice data) {
     this.data = data;
   }
 

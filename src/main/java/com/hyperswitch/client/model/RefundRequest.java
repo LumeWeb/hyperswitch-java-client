@@ -47,48 +47,57 @@ import java.util.StringJoiner;
   RefundRequest.JSON_PROPERTY_MERCHANT_CONNECTOR_DETAILS,
   RefundRequest.JSON_PROPERTY_CHARGES
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class RefundRequest {
   public static final String JSON_PROPERTY_PAYMENT_ID = "payment_id";
+  @javax.annotation.Nonnull
   private String paymentId;
 
   public static final String JSON_PROPERTY_REFUND_ID = "refund_id";
+  @javax.annotation.Nullable
   private JsonNullable<String> refundId = JsonNullable.<String>undefined();
 
   public static final String JSON_PROPERTY_MERCHANT_ID = "merchant_id";
+  @javax.annotation.Nullable
   private JsonNullable<String> merchantId = JsonNullable.<String>undefined();
 
   public static final String JSON_PROPERTY_AMOUNT = "amount";
+  @javax.annotation.Nullable
   private JsonNullable<Long> amount = JsonNullable.<Long>undefined();
 
   public static final String JSON_PROPERTY_REASON = "reason";
+  @javax.annotation.Nullable
   private JsonNullable<String> reason = JsonNullable.<String>undefined();
 
   public static final String JSON_PROPERTY_REFUND_TYPE = "refund_type";
+  @javax.annotation.Nullable
   private JsonNullable<RefundType> refundType = JsonNullable.<RefundType>of(RefundType.INSTANT);
 
   public static final String JSON_PROPERTY_METADATA = "metadata";
+  @javax.annotation.Nullable
   private JsonNullable<Object> metadata = JsonNullable.<Object>undefined();
 
   public static final String JSON_PROPERTY_MERCHANT_CONNECTOR_DETAILS = "merchant_connector_details";
+  @javax.annotation.Nullable
   private JsonNullable<MerchantConnectorDetailsWrap> merchantConnectorDetails = JsonNullable.<MerchantConnectorDetailsWrap>undefined();
 
   public static final String JSON_PROPERTY_CHARGES = "charges";
+  @javax.annotation.Nullable
   private JsonNullable<ChargeRefunds> charges = JsonNullable.<ChargeRefunds>undefined();
 
   public RefundRequest() {
   }
 
-  public RefundRequest paymentId(String paymentId) {
+  public RefundRequest paymentId(@javax.annotation.Nonnull String paymentId) {
     
     this.paymentId = paymentId;
     return this;
   }
 
-   /**
+  /**
    * The payment id against which refund is to be initiated
    * @return paymentId
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_PAYMENT_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -100,21 +109,20 @@ public class RefundRequest {
 
   @JsonProperty(JSON_PROPERTY_PAYMENT_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setPaymentId(String paymentId) {
+  public void setPaymentId(@javax.annotation.Nonnull String paymentId) {
     this.paymentId = paymentId;
   }
 
-
-  public RefundRequest refundId(String refundId) {
+  public RefundRequest refundId(@javax.annotation.Nullable String refundId) {
     this.refundId = JsonNullable.<String>of(refundId);
     
     return this;
   }
 
-   /**
+  /**
    * Unique Identifier for the Refund. This is to ensure idempotency for multiple partial refunds initiated against the same payment. If this is not passed by the merchant, this field shall be auto generated and provided in the API response. It is recommended to generate uuid(v4) as the refund_id.
    * @return refundId
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -134,21 +142,20 @@ public class RefundRequest {
     this.refundId = refundId;
   }
 
-  public void setRefundId(String refundId) {
+  public void setRefundId(@javax.annotation.Nullable String refundId) {
     this.refundId = JsonNullable.<String>of(refundId);
   }
 
-
-  public RefundRequest merchantId(String merchantId) {
+  public RefundRequest merchantId(@javax.annotation.Nullable String merchantId) {
     this.merchantId = JsonNullable.<String>of(merchantId);
     
     return this;
   }
 
-   /**
+  /**
    * The identifier for the Merchant Account
    * @return merchantId
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -168,22 +175,21 @@ public class RefundRequest {
     this.merchantId = merchantId;
   }
 
-  public void setMerchantId(String merchantId) {
+  public void setMerchantId(@javax.annotation.Nullable String merchantId) {
     this.merchantId = JsonNullable.<String>of(merchantId);
   }
 
-
-  public RefundRequest amount(Long amount) {
+  public RefundRequest amount(@javax.annotation.Nullable Long amount) {
     this.amount = JsonNullable.<Long>of(amount);
     
     return this;
   }
 
-   /**
+  /**
    * Total amount for which the refund is to be initiated. Amount for the payment in lowest denomination of the currency. (i.e) in cents for USD denomination, in paisa for INR denomination etc., If not provided, this will default to the full payment amount
    * minimum: 100
    * @return amount
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -203,21 +209,20 @@ public class RefundRequest {
     this.amount = amount;
   }
 
-  public void setAmount(Long amount) {
+  public void setAmount(@javax.annotation.Nullable Long amount) {
     this.amount = JsonNullable.<Long>of(amount);
   }
 
-
-  public RefundRequest reason(String reason) {
+  public RefundRequest reason(@javax.annotation.Nullable String reason) {
     this.reason = JsonNullable.<String>of(reason);
     
     return this;
   }
 
-   /**
+  /**
    * Reason for the refund. Often useful for displaying to users and your customer support executive. In case the payment went through Stripe, this field needs to be passed with one of these enums: &#x60;duplicate&#x60;, &#x60;fraudulent&#x60;, or &#x60;requested_by_customer&#x60;
    * @return reason
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -237,21 +242,20 @@ public class RefundRequest {
     this.reason = reason;
   }
 
-  public void setReason(String reason) {
+  public void setReason(@javax.annotation.Nullable String reason) {
     this.reason = JsonNullable.<String>of(reason);
   }
 
-
-  public RefundRequest refundType(RefundType refundType) {
+  public RefundRequest refundType(@javax.annotation.Nullable RefundType refundType) {
     this.refundType = JsonNullable.<RefundType>of(refundType);
     
     return this;
   }
 
-   /**
+  /**
    * Get refundType
    * @return refundType
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -271,21 +275,20 @@ public class RefundRequest {
     this.refundType = refundType;
   }
 
-  public void setRefundType(RefundType refundType) {
+  public void setRefundType(@javax.annotation.Nullable RefundType refundType) {
     this.refundType = JsonNullable.<RefundType>of(refundType);
   }
 
-
-  public RefundRequest metadata(Object metadata) {
+  public RefundRequest metadata(@javax.annotation.Nullable Object metadata) {
     this.metadata = JsonNullable.<Object>of(metadata);
     
     return this;
   }
 
-   /**
+  /**
    * You can specify up to 50 keys, with key names up to 40 characters long and values up to 500 characters long. Metadata is useful for storing additional, structured information on an object.
    * @return metadata
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -305,21 +308,20 @@ public class RefundRequest {
     this.metadata = metadata;
   }
 
-  public void setMetadata(Object metadata) {
+  public void setMetadata(@javax.annotation.Nullable Object metadata) {
     this.metadata = JsonNullable.<Object>of(metadata);
   }
 
-
-  public RefundRequest merchantConnectorDetails(MerchantConnectorDetailsWrap merchantConnectorDetails) {
+  public RefundRequest merchantConnectorDetails(@javax.annotation.Nullable MerchantConnectorDetailsWrap merchantConnectorDetails) {
     this.merchantConnectorDetails = JsonNullable.<MerchantConnectorDetailsWrap>of(merchantConnectorDetails);
     
     return this;
   }
 
-   /**
+  /**
    * Get merchantConnectorDetails
    * @return merchantConnectorDetails
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -339,21 +341,20 @@ public class RefundRequest {
     this.merchantConnectorDetails = merchantConnectorDetails;
   }
 
-  public void setMerchantConnectorDetails(MerchantConnectorDetailsWrap merchantConnectorDetails) {
+  public void setMerchantConnectorDetails(@javax.annotation.Nullable MerchantConnectorDetailsWrap merchantConnectorDetails) {
     this.merchantConnectorDetails = JsonNullable.<MerchantConnectorDetailsWrap>of(merchantConnectorDetails);
   }
 
-
-  public RefundRequest charges(ChargeRefunds charges) {
+  public RefundRequest charges(@javax.annotation.Nullable ChargeRefunds charges) {
     this.charges = JsonNullable.<ChargeRefunds>of(charges);
     
     return this;
   }
 
-   /**
+  /**
    * Get charges
    * @return charges
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -373,7 +374,7 @@ public class RefundRequest {
     this.charges = charges;
   }
 
-  public void setCharges(ChargeRefunds charges) {
+  public void setCharges(@javax.annotation.Nullable ChargeRefunds charges) {
     this.charges = JsonNullable.<ChargeRefunds>of(charges);
   }
 

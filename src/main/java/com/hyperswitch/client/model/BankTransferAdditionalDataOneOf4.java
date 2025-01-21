@@ -33,24 +33,25 @@ import java.util.StringJoiner;
   BankTransferAdditionalDataOneOf4.JSON_PROPERTY_PERMATA
 })
 @JsonTypeName("BankTransferAdditionalData_oneOf_4")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class BankTransferAdditionalDataOneOf4 {
   public static final String JSON_PROPERTY_PERMATA = "permata";
+  @javax.annotation.Nonnull
   private Object permata;
 
   public BankTransferAdditionalDataOneOf4() {
   }
 
-  public BankTransferAdditionalDataOneOf4 permata(Object permata) {
+  public BankTransferAdditionalDataOneOf4 permata(@javax.annotation.Nonnull Object permata) {
     
     this.permata = permata;
     return this;
   }
 
-   /**
+  /**
    * Get permata
    * @return permata
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_PERMATA)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -62,7 +63,7 @@ public class BankTransferAdditionalDataOneOf4 {
 
   @JsonProperty(JSON_PROPERTY_PERMATA)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setPermata(Object permata) {
+  public void setPermata(@javax.annotation.Nonnull Object permata) {
     this.permata = permata;
   }
 

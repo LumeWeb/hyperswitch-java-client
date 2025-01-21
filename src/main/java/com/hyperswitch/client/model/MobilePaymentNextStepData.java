@@ -33,24 +33,25 @@ import java.util.StringJoiner;
 @JsonPropertyOrder({
   MobilePaymentNextStepData.JSON_PROPERTY_CONSENT_DATA_REQUIRED
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class MobilePaymentNextStepData {
   public static final String JSON_PROPERTY_CONSENT_DATA_REQUIRED = "consent_data_required";
+  @javax.annotation.Nonnull
   private MobilePaymentConsent consentDataRequired;
 
   public MobilePaymentNextStepData() {
   }
 
-  public MobilePaymentNextStepData consentDataRequired(MobilePaymentConsent consentDataRequired) {
+  public MobilePaymentNextStepData consentDataRequired(@javax.annotation.Nonnull MobilePaymentConsent consentDataRequired) {
     
     this.consentDataRequired = consentDataRequired;
     return this;
   }
 
-   /**
+  /**
    * Get consentDataRequired
    * @return consentDataRequired
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_CONSENT_DATA_REQUIRED)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -62,7 +63,7 @@ public class MobilePaymentNextStepData {
 
   @JsonProperty(JSON_PROPERTY_CONSENT_DATA_REQUIRED)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setConsentDataRequired(MobilePaymentConsent consentDataRequired) {
+  public void setConsentDataRequired(@javax.annotation.Nonnull MobilePaymentConsent consentDataRequired) {
     this.consentDataRequired = consentDataRequired;
   }
 

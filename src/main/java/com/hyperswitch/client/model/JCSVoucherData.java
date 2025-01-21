@@ -39,33 +39,37 @@ import java.util.StringJoiner;
   JCSVoucherData.JSON_PROPERTY_EMAIL,
   JCSVoucherData.JSON_PROPERTY_PHONE_NUMBER
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class JCSVoucherData {
   public static final String JSON_PROPERTY_FIRST_NAME = "first_name";
+  @javax.annotation.Nullable
   private JsonNullable<String> firstName = JsonNullable.<String>undefined();
 
   public static final String JSON_PROPERTY_LAST_NAME = "last_name";
+  @javax.annotation.Nullable
   private JsonNullable<String> lastName = JsonNullable.<String>undefined();
 
   public static final String JSON_PROPERTY_EMAIL = "email";
+  @javax.annotation.Nullable
   private JsonNullable<String> email = JsonNullable.<String>undefined();
 
   public static final String JSON_PROPERTY_PHONE_NUMBER = "phone_number";
+  @javax.annotation.Nullable
   private JsonNullable<String> phoneNumber = JsonNullable.<String>undefined();
 
   public JCSVoucherData() {
   }
 
-  public JCSVoucherData firstName(String firstName) {
+  public JCSVoucherData firstName(@javax.annotation.Nullable String firstName) {
     this.firstName = JsonNullable.<String>of(firstName);
     
     return this;
   }
 
-   /**
+  /**
    * The billing first name for Japanese convenience stores
    * @return firstName
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -85,21 +89,20 @@ public class JCSVoucherData {
     this.firstName = firstName;
   }
 
-  public void setFirstName(String firstName) {
+  public void setFirstName(@javax.annotation.Nullable String firstName) {
     this.firstName = JsonNullable.<String>of(firstName);
   }
 
-
-  public JCSVoucherData lastName(String lastName) {
+  public JCSVoucherData lastName(@javax.annotation.Nullable String lastName) {
     this.lastName = JsonNullable.<String>of(lastName);
     
     return this;
   }
 
-   /**
+  /**
    * The billing second name Japanese convenience stores
    * @return lastName
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -119,21 +122,20 @@ public class JCSVoucherData {
     this.lastName = lastName;
   }
 
-  public void setLastName(String lastName) {
+  public void setLastName(@javax.annotation.Nullable String lastName) {
     this.lastName = JsonNullable.<String>of(lastName);
   }
 
-
-  public JCSVoucherData email(String email) {
+  public JCSVoucherData email(@javax.annotation.Nullable String email) {
     this.email = JsonNullable.<String>of(email);
     
     return this;
   }
 
-   /**
+  /**
    * The Email ID for Japanese convenience stores
    * @return email
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -153,21 +155,20 @@ public class JCSVoucherData {
     this.email = email;
   }
 
-  public void setEmail(String email) {
+  public void setEmail(@javax.annotation.Nullable String email) {
     this.email = JsonNullable.<String>of(email);
   }
 
-
-  public JCSVoucherData phoneNumber(String phoneNumber) {
+  public JCSVoucherData phoneNumber(@javax.annotation.Nullable String phoneNumber) {
     this.phoneNumber = JsonNullable.<String>of(phoneNumber);
     
     return this;
   }
 
-   /**
+  /**
    * The telephone number for Japanese convenience stores
    * @return phoneNumber
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -187,7 +188,7 @@ public class JCSVoucherData {
     this.phoneNumber = phoneNumber;
   }
 
-  public void setPhoneNumber(String phoneNumber) {
+  public void setPhoneNumber(@javax.annotation.Nullable String phoneNumber) {
     this.phoneNumber = JsonNullable.<String>of(phoneNumber);
   }
 

@@ -38,24 +38,25 @@ import java.util.StringJoiner;
   BankTransferDataOneOf2BacsBankTransfer.JSON_PROPERTY_BILLING_DETAILS
 })
 @JsonTypeName("BankTransferData_oneOf_2_bacs_bank_transfer")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class BankTransferDataOneOf2BacsBankTransfer {
   public static final String JSON_PROPERTY_BILLING_DETAILS = "billing_details";
+  @javax.annotation.Nullable
   private JsonNullable<SepaAndBacsBillingDetails> billingDetails = JsonNullable.<SepaAndBacsBillingDetails>undefined();
 
   public BankTransferDataOneOf2BacsBankTransfer() {
   }
 
-  public BankTransferDataOneOf2BacsBankTransfer billingDetails(SepaAndBacsBillingDetails billingDetails) {
+  public BankTransferDataOneOf2BacsBankTransfer billingDetails(@javax.annotation.Nullable SepaAndBacsBillingDetails billingDetails) {
     this.billingDetails = JsonNullable.<SepaAndBacsBillingDetails>of(billingDetails);
     
     return this;
   }
 
-   /**
+  /**
    * Get billingDetails
    * @return billingDetails
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -75,7 +76,7 @@ public class BankTransferDataOneOf2BacsBankTransfer {
     this.billingDetails = billingDetails;
   }
 
-  public void setBillingDetails(SepaAndBacsBillingDetails billingDetails) {
+  public void setBillingDetails(@javax.annotation.Nullable SepaAndBacsBillingDetails billingDetails) {
     this.billingDetails = JsonNullable.<SepaAndBacsBillingDetails>of(billingDetails);
   }
 

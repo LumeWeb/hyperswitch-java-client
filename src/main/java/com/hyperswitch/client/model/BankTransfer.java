@@ -33,24 +33,25 @@ import java.util.StringJoiner;
 @JsonPropertyOrder({
   BankTransfer.JSON_PROPERTY_BANK_TRANSFER
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class BankTransfer {
   public static final String JSON_PROPERTY_BANK_TRANSFER = "bank_transfer";
+  @javax.annotation.Nonnull
   private BankTransferData bankTransfer;
 
   public BankTransfer() {
   }
 
-  public BankTransfer bankTransfer(BankTransferData bankTransfer) {
+  public BankTransfer bankTransfer(@javax.annotation.Nonnull BankTransferData bankTransfer) {
     
     this.bankTransfer = bankTransfer;
     return this;
   }
 
-   /**
+  /**
    * Get bankTransfer
    * @return bankTransfer
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_BANK_TRANSFER)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -62,7 +63,7 @@ public class BankTransfer {
 
   @JsonProperty(JSON_PROPERTY_BANK_TRANSFER)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setBankTransfer(BankTransferData bankTransfer) {
+  public void setBankTransfer(@javax.annotation.Nonnull BankTransferData bankTransfer) {
     this.bankTransfer = bankTransfer;
   }
 

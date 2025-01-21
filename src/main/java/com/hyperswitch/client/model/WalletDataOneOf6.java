@@ -33,24 +33,25 @@ import java.util.StringJoiner;
   WalletDataOneOf6.JSON_PROPERTY_GCASH_REDIRECT
 })
 @JsonTypeName("WalletData_oneOf_6")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class WalletDataOneOf6 {
   public static final String JSON_PROPERTY_GCASH_REDIRECT = "gcash_redirect";
+  @javax.annotation.Nonnull
   private Object gcashRedirect;
 
   public WalletDataOneOf6() {
   }
 
-  public WalletDataOneOf6 gcashRedirect(Object gcashRedirect) {
+  public WalletDataOneOf6 gcashRedirect(@javax.annotation.Nonnull Object gcashRedirect) {
     
     this.gcashRedirect = gcashRedirect;
     return this;
   }
 
-   /**
+  /**
    * Get gcashRedirect
    * @return gcashRedirect
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_GCASH_REDIRECT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -62,7 +63,7 @@ public class WalletDataOneOf6 {
 
   @JsonProperty(JSON_PROPERTY_GCASH_REDIRECT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setGcashRedirect(Object gcashRedirect) {
+  public void setGcashRedirect(@javax.annotation.Nonnull Object gcashRedirect) {
     this.gcashRedirect = gcashRedirect;
   }
 

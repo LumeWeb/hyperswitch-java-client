@@ -34,24 +34,25 @@ import java.util.StringJoiner;
   PaymentMethodDataResponseOneOf11.JSON_PROPERTY_VOUCHER
 })
 @JsonTypeName("PaymentMethodDataResponse_oneOf_11")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class PaymentMethodDataResponseOneOf11 {
   public static final String JSON_PROPERTY_VOUCHER = "voucher";
+  @javax.annotation.Nonnull
   private VoucherResponse voucher;
 
   public PaymentMethodDataResponseOneOf11() {
   }
 
-  public PaymentMethodDataResponseOneOf11 voucher(VoucherResponse voucher) {
+  public PaymentMethodDataResponseOneOf11 voucher(@javax.annotation.Nonnull VoucherResponse voucher) {
     
     this.voucher = voucher;
     return this;
   }
 
-   /**
+  /**
    * Get voucher
    * @return voucher
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_VOUCHER)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -63,7 +64,7 @@ public class PaymentMethodDataResponseOneOf11 {
 
   @JsonProperty(JSON_PROPERTY_VOUCHER)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setVoucher(VoucherResponse voucher) {
+  public void setVoucher(@javax.annotation.Nonnull VoucherResponse voucher) {
     this.voucher = voucher;
   }
 

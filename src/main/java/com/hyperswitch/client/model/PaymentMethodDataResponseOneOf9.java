@@ -34,24 +34,25 @@ import java.util.StringJoiner;
   PaymentMethodDataResponseOneOf9.JSON_PROPERTY_REAL_TIME_PAYMENT
 })
 @JsonTypeName("PaymentMethodDataResponse_oneOf_9")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class PaymentMethodDataResponseOneOf9 {
   public static final String JSON_PROPERTY_REAL_TIME_PAYMENT = "real_time_payment";
+  @javax.annotation.Nonnull
   private RealTimePaymentDataResponse realTimePayment;
 
   public PaymentMethodDataResponseOneOf9() {
   }
 
-  public PaymentMethodDataResponseOneOf9 realTimePayment(RealTimePaymentDataResponse realTimePayment) {
+  public PaymentMethodDataResponseOneOf9 realTimePayment(@javax.annotation.Nonnull RealTimePaymentDataResponse realTimePayment) {
     
     this.realTimePayment = realTimePayment;
     return this;
   }
 
-   /**
+  /**
    * Get realTimePayment
    * @return realTimePayment
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_REAL_TIME_PAYMENT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -63,7 +64,7 @@ public class PaymentMethodDataResponseOneOf9 {
 
   @JsonProperty(JSON_PROPERTY_REAL_TIME_PAYMENT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setRealTimePayment(RealTimePaymentDataResponse realTimePayment) {
+  public void setRealTimePayment(@javax.annotation.Nonnull RealTimePaymentDataResponse realTimePayment) {
     this.realTimePayment = realTimePayment;
   }
 

@@ -41,33 +41,37 @@ import java.util.StringJoiner;
   PaymentsDynamicTaxCalculationRequest.JSON_PROPERTY_PAYMENT_METHOD_TYPE,
   PaymentsDynamicTaxCalculationRequest.JSON_PROPERTY_SESSION_ID
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class PaymentsDynamicTaxCalculationRequest {
   public static final String JSON_PROPERTY_SHIPPING = "shipping";
+  @javax.annotation.Nonnull
   private Address shipping;
 
   public static final String JSON_PROPERTY_CLIENT_SECRET = "client_secret";
+  @javax.annotation.Nonnull
   private String clientSecret;
 
   public static final String JSON_PROPERTY_PAYMENT_METHOD_TYPE = "payment_method_type";
+  @javax.annotation.Nonnull
   private PaymentMethodType paymentMethodType;
 
   public static final String JSON_PROPERTY_SESSION_ID = "session_id";
+  @javax.annotation.Nullable
   private JsonNullable<String> sessionId = JsonNullable.<String>undefined();
 
   public PaymentsDynamicTaxCalculationRequest() {
   }
 
-  public PaymentsDynamicTaxCalculationRequest shipping(Address shipping) {
+  public PaymentsDynamicTaxCalculationRequest shipping(@javax.annotation.Nonnull Address shipping) {
     
     this.shipping = shipping;
     return this;
   }
 
-   /**
+  /**
    * Get shipping
    * @return shipping
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_SHIPPING)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -79,21 +83,20 @@ public class PaymentsDynamicTaxCalculationRequest {
 
   @JsonProperty(JSON_PROPERTY_SHIPPING)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setShipping(Address shipping) {
+  public void setShipping(@javax.annotation.Nonnull Address shipping) {
     this.shipping = shipping;
   }
 
-
-  public PaymentsDynamicTaxCalculationRequest clientSecret(String clientSecret) {
+  public PaymentsDynamicTaxCalculationRequest clientSecret(@javax.annotation.Nonnull String clientSecret) {
     
     this.clientSecret = clientSecret;
     return this;
   }
 
-   /**
+  /**
    * Client Secret
    * @return clientSecret
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_CLIENT_SECRET)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -105,21 +108,20 @@ public class PaymentsDynamicTaxCalculationRequest {
 
   @JsonProperty(JSON_PROPERTY_CLIENT_SECRET)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setClientSecret(String clientSecret) {
+  public void setClientSecret(@javax.annotation.Nonnull String clientSecret) {
     this.clientSecret = clientSecret;
   }
 
-
-  public PaymentsDynamicTaxCalculationRequest paymentMethodType(PaymentMethodType paymentMethodType) {
+  public PaymentsDynamicTaxCalculationRequest paymentMethodType(@javax.annotation.Nonnull PaymentMethodType paymentMethodType) {
     
     this.paymentMethodType = paymentMethodType;
     return this;
   }
 
-   /**
+  /**
    * Get paymentMethodType
    * @return paymentMethodType
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_PAYMENT_METHOD_TYPE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -131,21 +133,20 @@ public class PaymentsDynamicTaxCalculationRequest {
 
   @JsonProperty(JSON_PROPERTY_PAYMENT_METHOD_TYPE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setPaymentMethodType(PaymentMethodType paymentMethodType) {
+  public void setPaymentMethodType(@javax.annotation.Nonnull PaymentMethodType paymentMethodType) {
     this.paymentMethodType = paymentMethodType;
   }
 
-
-  public PaymentsDynamicTaxCalculationRequest sessionId(String sessionId) {
+  public PaymentsDynamicTaxCalculationRequest sessionId(@javax.annotation.Nullable String sessionId) {
     this.sessionId = JsonNullable.<String>of(sessionId);
     
     return this;
   }
 
-   /**
+  /**
    * Session Id
    * @return sessionId
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -165,7 +166,7 @@ public class PaymentsDynamicTaxCalculationRequest {
     this.sessionId = sessionId;
   }
 
-  public void setSessionId(String sessionId) {
+  public void setSessionId(@javax.annotation.Nullable String sessionId) {
     this.sessionId = JsonNullable.<String>of(sessionId);
   }
 

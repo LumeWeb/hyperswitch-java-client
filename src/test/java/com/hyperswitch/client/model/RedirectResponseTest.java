@@ -22,22 +22,21 @@ import org.openapitools.jackson.nullable.JsonNullable;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.openapitools.jackson.nullable.JsonNullable;
 import java.util.NoSuchElementException;
-import org.junit.Assert;
-import org.junit.Ignore;
-import org.junit.Test;
-
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Test;
 
 /**
  * Model tests for RedirectResponse
  */
-public class RedirectResponseTest {
+class RedirectResponseTest {
     private final RedirectResponse model = new RedirectResponse();
 
     /**
      * Model tests for RedirectResponse
      */
     @Test
-    public void testRedirectResponse() {
+    void testRedirectResponse() {
         // TODO: test RedirectResponse
     }
 
@@ -45,7 +44,7 @@ public class RedirectResponseTest {
      * Test the property 'param'
      */
     @Test
-    public void paramTest() {
+    void paramTest() {
         // TODO: test param
     }
 
@@ -53,7 +52,7 @@ public class RedirectResponseTest {
      * Test the property 'jsonPayload'
      */
     @Test
-    public void jsonPayloadTest() {
+    void jsonPayloadTest() {
         // TODO: test jsonPayload
     }
 

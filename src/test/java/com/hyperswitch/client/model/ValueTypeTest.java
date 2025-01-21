@@ -30,23 +30,23 @@ import com.hyperswitch.client.model.ValueTypeOneOf4;
 import com.hyperswitch.client.model.ValueTypeOneOf5;
 import com.hyperswitch.client.model.ValueTypeOneOf6;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
-import org.junit.Assert;
-import org.junit.Ignore;
-import org.junit.Test;
-
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Test;
 
 /**
  * Model tests for ValueType
  */
-public class ValueTypeTest {
+class ValueTypeTest {
     private final ValueType model = new ValueType();
 
     /**
      * Model tests for ValueType
      */
     @Test
-    public void testValueType() {
+    void testValueType() {
         // TODO: test ValueType
     }
 
@@ -54,7 +54,7 @@ public class ValueTypeTest {
      * Test the property 'type'
      */
     @Test
-    public void typeTest() {
+    void typeTest() {
         // TODO: test type
     }
 
@@ -62,7 +62,7 @@ public class ValueTypeTest {
      * Test the property 'value'
      */
     @Test
-    public void valueTest() {
+    void valueTest() {
         // TODO: test value
     }
 

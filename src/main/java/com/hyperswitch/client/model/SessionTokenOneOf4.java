@@ -48,37 +48,45 @@ import java.util.StringJoiner;
   SessionTokenOneOf4.JSON_PROPERTY_WALLET_NAME
 })
 @JsonTypeName("SessionToken_oneOf_4")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class SessionTokenOneOf4 {
   public static final String JSON_PROPERTY_SESSION_TOKEN_DATA = "session_token_data";
+  @javax.annotation.Nullable
   private JsonNullable<ApplePaySessionResponse> sessionTokenData = JsonNullable.<ApplePaySessionResponse>undefined();
 
   public static final String JSON_PROPERTY_PAYMENT_REQUEST_DATA = "payment_request_data";
+  @javax.annotation.Nullable
   private JsonNullable<ApplePayPaymentRequest> paymentRequestData = JsonNullable.<ApplePayPaymentRequest>undefined();
 
   public static final String JSON_PROPERTY_CONNECTOR = "connector";
+  @javax.annotation.Nonnull
   private String connector;
 
   public static final String JSON_PROPERTY_DELAYED_SESSION_TOKEN = "delayed_session_token";
+  @javax.annotation.Nonnull
   private Boolean delayedSessionToken;
 
   public static final String JSON_PROPERTY_SDK_NEXT_ACTION = "sdk_next_action";
+  @javax.annotation.Nonnull
   private SdkNextAction sdkNextAction;
 
   public static final String JSON_PROPERTY_CONNECTOR_REFERENCE_ID = "connector_reference_id";
+  @javax.annotation.Nullable
   private JsonNullable<String> connectorReferenceId = JsonNullable.<String>undefined();
 
   public static final String JSON_PROPERTY_CONNECTOR_SDK_PUBLIC_KEY = "connector_sdk_public_key";
+  @javax.annotation.Nullable
   private JsonNullable<String> connectorSdkPublicKey = JsonNullable.<String>undefined();
 
   public static final String JSON_PROPERTY_CONNECTOR_MERCHANT_ID = "connector_merchant_id";
+  @javax.annotation.Nullable
   private JsonNullable<String> connectorMerchantId = JsonNullable.<String>undefined();
 
   /**
    * Gets or Sets walletName
    */
   public enum WalletNameEnum {
-    APPLE_PAY("apple_pay");
+    APPLE_PAY(String.valueOf("apple_pay"));
 
     private String value;
 
@@ -108,21 +116,22 @@ public class SessionTokenOneOf4 {
   }
 
   public static final String JSON_PROPERTY_WALLET_NAME = "wallet_name";
+  @javax.annotation.Nonnull
   private WalletNameEnum walletName;
 
   public SessionTokenOneOf4() {
   }
 
-  public SessionTokenOneOf4 sessionTokenData(ApplePaySessionResponse sessionTokenData) {
+  public SessionTokenOneOf4 sessionTokenData(@javax.annotation.Nullable ApplePaySessionResponse sessionTokenData) {
     this.sessionTokenData = JsonNullable.<ApplePaySessionResponse>of(sessionTokenData);
     
     return this;
   }
 
-   /**
+  /**
    * Get sessionTokenData
    * @return sessionTokenData
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -142,21 +151,20 @@ public class SessionTokenOneOf4 {
     this.sessionTokenData = sessionTokenData;
   }
 
-  public void setSessionTokenData(ApplePaySessionResponse sessionTokenData) {
+  public void setSessionTokenData(@javax.annotation.Nullable ApplePaySessionResponse sessionTokenData) {
     this.sessionTokenData = JsonNullable.<ApplePaySessionResponse>of(sessionTokenData);
   }
 
-
-  public SessionTokenOneOf4 paymentRequestData(ApplePayPaymentRequest paymentRequestData) {
+  public SessionTokenOneOf4 paymentRequestData(@javax.annotation.Nullable ApplePayPaymentRequest paymentRequestData) {
     this.paymentRequestData = JsonNullable.<ApplePayPaymentRequest>of(paymentRequestData);
     
     return this;
   }
 
-   /**
+  /**
    * Get paymentRequestData
    * @return paymentRequestData
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -176,21 +184,20 @@ public class SessionTokenOneOf4 {
     this.paymentRequestData = paymentRequestData;
   }
 
-  public void setPaymentRequestData(ApplePayPaymentRequest paymentRequestData) {
+  public void setPaymentRequestData(@javax.annotation.Nullable ApplePayPaymentRequest paymentRequestData) {
     this.paymentRequestData = JsonNullable.<ApplePayPaymentRequest>of(paymentRequestData);
   }
 
-
-  public SessionTokenOneOf4 connector(String connector) {
+  public SessionTokenOneOf4 connector(@javax.annotation.Nonnull String connector) {
     
     this.connector = connector;
     return this;
   }
 
-   /**
+  /**
    * The session token is w.r.t this connector
    * @return connector
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_CONNECTOR)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -202,21 +209,20 @@ public class SessionTokenOneOf4 {
 
   @JsonProperty(JSON_PROPERTY_CONNECTOR)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setConnector(String connector) {
+  public void setConnector(@javax.annotation.Nonnull String connector) {
     this.connector = connector;
   }
 
-
-  public SessionTokenOneOf4 delayedSessionToken(Boolean delayedSessionToken) {
+  public SessionTokenOneOf4 delayedSessionToken(@javax.annotation.Nonnull Boolean delayedSessionToken) {
     
     this.delayedSessionToken = delayedSessionToken;
     return this;
   }
 
-   /**
+  /**
    * Identifier for the delayed session response
    * @return delayedSessionToken
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_DELAYED_SESSION_TOKEN)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -228,21 +234,20 @@ public class SessionTokenOneOf4 {
 
   @JsonProperty(JSON_PROPERTY_DELAYED_SESSION_TOKEN)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setDelayedSessionToken(Boolean delayedSessionToken) {
+  public void setDelayedSessionToken(@javax.annotation.Nonnull Boolean delayedSessionToken) {
     this.delayedSessionToken = delayedSessionToken;
   }
 
-
-  public SessionTokenOneOf4 sdkNextAction(SdkNextAction sdkNextAction) {
+  public SessionTokenOneOf4 sdkNextAction(@javax.annotation.Nonnull SdkNextAction sdkNextAction) {
     
     this.sdkNextAction = sdkNextAction;
     return this;
   }
 
-   /**
+  /**
    * Get sdkNextAction
    * @return sdkNextAction
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_SDK_NEXT_ACTION)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -254,21 +259,20 @@ public class SessionTokenOneOf4 {
 
   @JsonProperty(JSON_PROPERTY_SDK_NEXT_ACTION)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setSdkNextAction(SdkNextAction sdkNextAction) {
+  public void setSdkNextAction(@javax.annotation.Nonnull SdkNextAction sdkNextAction) {
     this.sdkNextAction = sdkNextAction;
   }
 
-
-  public SessionTokenOneOf4 connectorReferenceId(String connectorReferenceId) {
+  public SessionTokenOneOf4 connectorReferenceId(@javax.annotation.Nullable String connectorReferenceId) {
     this.connectorReferenceId = JsonNullable.<String>of(connectorReferenceId);
     
     return this;
   }
 
-   /**
+  /**
    * The connector transaction id
    * @return connectorReferenceId
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -288,21 +292,20 @@ public class SessionTokenOneOf4 {
     this.connectorReferenceId = connectorReferenceId;
   }
 
-  public void setConnectorReferenceId(String connectorReferenceId) {
+  public void setConnectorReferenceId(@javax.annotation.Nullable String connectorReferenceId) {
     this.connectorReferenceId = JsonNullable.<String>of(connectorReferenceId);
   }
 
-
-  public SessionTokenOneOf4 connectorSdkPublicKey(String connectorSdkPublicKey) {
+  public SessionTokenOneOf4 connectorSdkPublicKey(@javax.annotation.Nullable String connectorSdkPublicKey) {
     this.connectorSdkPublicKey = JsonNullable.<String>of(connectorSdkPublicKey);
     
     return this;
   }
 
-   /**
+  /**
    * The public key id is to invoke third party sdk
    * @return connectorSdkPublicKey
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -322,21 +325,20 @@ public class SessionTokenOneOf4 {
     this.connectorSdkPublicKey = connectorSdkPublicKey;
   }
 
-  public void setConnectorSdkPublicKey(String connectorSdkPublicKey) {
+  public void setConnectorSdkPublicKey(@javax.annotation.Nullable String connectorSdkPublicKey) {
     this.connectorSdkPublicKey = JsonNullable.<String>of(connectorSdkPublicKey);
   }
 
-
-  public SessionTokenOneOf4 connectorMerchantId(String connectorMerchantId) {
+  public SessionTokenOneOf4 connectorMerchantId(@javax.annotation.Nullable String connectorMerchantId) {
     this.connectorMerchantId = JsonNullable.<String>of(connectorMerchantId);
     
     return this;
   }
 
-   /**
+  /**
    * The connector merchant id
    * @return connectorMerchantId
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -356,21 +358,20 @@ public class SessionTokenOneOf4 {
     this.connectorMerchantId = connectorMerchantId;
   }
 
-  public void setConnectorMerchantId(String connectorMerchantId) {
+  public void setConnectorMerchantId(@javax.annotation.Nullable String connectorMerchantId) {
     this.connectorMerchantId = JsonNullable.<String>of(connectorMerchantId);
   }
 
-
-  public SessionTokenOneOf4 walletName(WalletNameEnum walletName) {
+  public SessionTokenOneOf4 walletName(@javax.annotation.Nonnull WalletNameEnum walletName) {
     
     this.walletName = walletName;
     return this;
   }
 
-   /**
+  /**
    * Get walletName
    * @return walletName
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_WALLET_NAME)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -382,7 +383,7 @@ public class SessionTokenOneOf4 {
 
   @JsonProperty(JSON_PROPERTY_WALLET_NAME)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setWalletName(WalletNameEnum walletName) {
+  public void setWalletName(@javax.annotation.Nonnull WalletNameEnum walletName) {
     this.walletName = walletName;
   }
 

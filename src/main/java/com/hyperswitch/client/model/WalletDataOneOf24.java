@@ -33,24 +33,25 @@ import java.util.StringJoiner;
   WalletDataOneOf24.JSON_PROPERTY_WE_CHAT_PAY_QR
 })
 @JsonTypeName("WalletData_oneOf_24")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class WalletDataOneOf24 {
   public static final String JSON_PROPERTY_WE_CHAT_PAY_QR = "we_chat_pay_qr";
+  @javax.annotation.Nonnull
   private Object weChatPayQr;
 
   public WalletDataOneOf24() {
   }
 
-  public WalletDataOneOf24 weChatPayQr(Object weChatPayQr) {
+  public WalletDataOneOf24 weChatPayQr(@javax.annotation.Nonnull Object weChatPayQr) {
     
     this.weChatPayQr = weChatPayQr;
     return this;
   }
 
-   /**
+  /**
    * Get weChatPayQr
    * @return weChatPayQr
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_WE_CHAT_PAY_QR)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -62,7 +63,7 @@ public class WalletDataOneOf24 {
 
   @JsonProperty(JSON_PROPERTY_WE_CHAT_PAY_QR)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setWeChatPayQr(Object weChatPayQr) {
+  public void setWeChatPayQr(@javax.annotation.Nonnull Object weChatPayQr) {
     this.weChatPayQr = weChatPayQr;
   }
 

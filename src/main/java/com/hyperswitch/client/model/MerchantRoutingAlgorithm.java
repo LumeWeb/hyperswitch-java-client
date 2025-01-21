@@ -41,45 +41,53 @@ import java.util.StringJoiner;
   MerchantRoutingAlgorithm.JSON_PROPERTY_MODIFIED_AT,
   MerchantRoutingAlgorithm.JSON_PROPERTY_ALGORITHM_FOR
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class MerchantRoutingAlgorithm {
   public static final String JSON_PROPERTY_ID = "id";
+  @javax.annotation.Nonnull
   private String id;
 
   public static final String JSON_PROPERTY_PROFILE_ID = "profile_id";
+  @javax.annotation.Nonnull
   private String profileId;
 
   public static final String JSON_PROPERTY_NAME = "name";
+  @javax.annotation.Nonnull
   private String name;
 
   public static final String JSON_PROPERTY_DESCRIPTION = "description";
+  @javax.annotation.Nonnull
   private String description;
 
   public static final String JSON_PROPERTY_ALGORITHM = "algorithm";
+  @javax.annotation.Nonnull
   private RoutingAlgorithm algorithm;
 
   public static final String JSON_PROPERTY_CREATED_AT = "created_at";
+  @javax.annotation.Nonnull
   private Long createdAt;
 
   public static final String JSON_PROPERTY_MODIFIED_AT = "modified_at";
+  @javax.annotation.Nonnull
   private Long modifiedAt;
 
   public static final String JSON_PROPERTY_ALGORITHM_FOR = "algorithm_for";
+  @javax.annotation.Nonnull
   private TransactionType algorithmFor;
 
   public MerchantRoutingAlgorithm() {
   }
 
-  public MerchantRoutingAlgorithm id(String id) {
+  public MerchantRoutingAlgorithm id(@javax.annotation.Nonnull String id) {
     
     this.id = id;
     return this;
   }
 
-   /**
+  /**
    * Get id
    * @return id
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -91,21 +99,20 @@ public class MerchantRoutingAlgorithm {
 
   @JsonProperty(JSON_PROPERTY_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setId(String id) {
+  public void setId(@javax.annotation.Nonnull String id) {
     this.id = id;
   }
 
-
-  public MerchantRoutingAlgorithm profileId(String profileId) {
+  public MerchantRoutingAlgorithm profileId(@javax.annotation.Nonnull String profileId) {
     
     this.profileId = profileId;
     return this;
   }
 
-   /**
+  /**
    * Get profileId
    * @return profileId
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_PROFILE_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -117,21 +124,20 @@ public class MerchantRoutingAlgorithm {
 
   @JsonProperty(JSON_PROPERTY_PROFILE_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setProfileId(String profileId) {
+  public void setProfileId(@javax.annotation.Nonnull String profileId) {
     this.profileId = profileId;
   }
 
-
-  public MerchantRoutingAlgorithm name(String name) {
+  public MerchantRoutingAlgorithm name(@javax.annotation.Nonnull String name) {
     
     this.name = name;
     return this;
   }
 
-   /**
+  /**
    * Get name
    * @return name
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_NAME)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -143,21 +149,20 @@ public class MerchantRoutingAlgorithm {
 
   @JsonProperty(JSON_PROPERTY_NAME)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setName(String name) {
+  public void setName(@javax.annotation.Nonnull String name) {
     this.name = name;
   }
 
-
-  public MerchantRoutingAlgorithm description(String description) {
+  public MerchantRoutingAlgorithm description(@javax.annotation.Nonnull String description) {
     
     this.description = description;
     return this;
   }
 
-   /**
+  /**
    * Get description
    * @return description
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_DESCRIPTION)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -169,21 +174,20 @@ public class MerchantRoutingAlgorithm {
 
   @JsonProperty(JSON_PROPERTY_DESCRIPTION)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setDescription(String description) {
+  public void setDescription(@javax.annotation.Nonnull String description) {
     this.description = description;
   }
 
-
-  public MerchantRoutingAlgorithm algorithm(RoutingAlgorithm algorithm) {
+  public MerchantRoutingAlgorithm algorithm(@javax.annotation.Nonnull RoutingAlgorithm algorithm) {
     
     this.algorithm = algorithm;
     return this;
   }
 
-   /**
+  /**
    * Get algorithm
    * @return algorithm
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_ALGORITHM)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -195,21 +199,20 @@ public class MerchantRoutingAlgorithm {
 
   @JsonProperty(JSON_PROPERTY_ALGORITHM)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setAlgorithm(RoutingAlgorithm algorithm) {
+  public void setAlgorithm(@javax.annotation.Nonnull RoutingAlgorithm algorithm) {
     this.algorithm = algorithm;
   }
 
-
-  public MerchantRoutingAlgorithm createdAt(Long createdAt) {
+  public MerchantRoutingAlgorithm createdAt(@javax.annotation.Nonnull Long createdAt) {
     
     this.createdAt = createdAt;
     return this;
   }
 
-   /**
+  /**
    * Get createdAt
    * @return createdAt
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_CREATED_AT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -221,21 +224,20 @@ public class MerchantRoutingAlgorithm {
 
   @JsonProperty(JSON_PROPERTY_CREATED_AT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setCreatedAt(Long createdAt) {
+  public void setCreatedAt(@javax.annotation.Nonnull Long createdAt) {
     this.createdAt = createdAt;
   }
 
-
-  public MerchantRoutingAlgorithm modifiedAt(Long modifiedAt) {
+  public MerchantRoutingAlgorithm modifiedAt(@javax.annotation.Nonnull Long modifiedAt) {
     
     this.modifiedAt = modifiedAt;
     return this;
   }
 
-   /**
+  /**
    * Get modifiedAt
    * @return modifiedAt
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_MODIFIED_AT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -247,21 +249,20 @@ public class MerchantRoutingAlgorithm {
 
   @JsonProperty(JSON_PROPERTY_MODIFIED_AT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setModifiedAt(Long modifiedAt) {
+  public void setModifiedAt(@javax.annotation.Nonnull Long modifiedAt) {
     this.modifiedAt = modifiedAt;
   }
 
-
-  public MerchantRoutingAlgorithm algorithmFor(TransactionType algorithmFor) {
+  public MerchantRoutingAlgorithm algorithmFor(@javax.annotation.Nonnull TransactionType algorithmFor) {
     
     this.algorithmFor = algorithmFor;
     return this;
   }
 
-   /**
+  /**
    * Get algorithmFor
    * @return algorithmFor
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_ALGORITHM_FOR)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -273,7 +274,7 @@ public class MerchantRoutingAlgorithm {
 
   @JsonProperty(JSON_PROPERTY_ALGORITHM_FOR)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setAlgorithmFor(TransactionType algorithmFor) {
+  public void setAlgorithmFor(@javax.annotation.Nonnull TransactionType algorithmFor) {
     this.algorithmFor = algorithmFor;
   }
 

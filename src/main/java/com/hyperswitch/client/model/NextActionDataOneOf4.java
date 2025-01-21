@@ -34,16 +34,17 @@ import java.util.StringJoiner;
   NextActionDataOneOf4.JSON_PROPERTY_TYPE
 })
 @JsonTypeName("NextActionData_oneOf_4")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class NextActionDataOneOf4 {
   public static final String JSON_PROPERTY_QR_CODE_FETCH_URL = "qr_code_fetch_url";
+  @javax.annotation.Nonnull
   private String qrCodeFetchUrl;
 
   /**
    * Gets or Sets type
    */
   public enum TypeEnum {
-    FETCH_QR_CODE_INFORMATION("fetch_qr_code_information");
+    FETCH_QR_CODE_INFORMATION(String.valueOf("fetch_qr_code_information"));
 
     private String value;
 
@@ -73,21 +74,22 @@ public class NextActionDataOneOf4 {
   }
 
   public static final String JSON_PROPERTY_TYPE = "type";
+  @javax.annotation.Nonnull
   private TypeEnum type;
 
   public NextActionDataOneOf4() {
   }
 
-  public NextActionDataOneOf4 qrCodeFetchUrl(String qrCodeFetchUrl) {
+  public NextActionDataOneOf4 qrCodeFetchUrl(@javax.annotation.Nonnull String qrCodeFetchUrl) {
     
     this.qrCodeFetchUrl = qrCodeFetchUrl;
     return this;
   }
 
-   /**
+  /**
    * Get qrCodeFetchUrl
    * @return qrCodeFetchUrl
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_QR_CODE_FETCH_URL)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -99,21 +101,20 @@ public class NextActionDataOneOf4 {
 
   @JsonProperty(JSON_PROPERTY_QR_CODE_FETCH_URL)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setQrCodeFetchUrl(String qrCodeFetchUrl) {
+  public void setQrCodeFetchUrl(@javax.annotation.Nonnull String qrCodeFetchUrl) {
     this.qrCodeFetchUrl = qrCodeFetchUrl;
   }
 
-
-  public NextActionDataOneOf4 type(TypeEnum type) {
+  public NextActionDataOneOf4 type(@javax.annotation.Nonnull TypeEnum type) {
     
     this.type = type;
     return this;
   }
 
-   /**
+  /**
    * Get type
    * @return type
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_TYPE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -125,7 +126,7 @@ public class NextActionDataOneOf4 {
 
   @JsonProperty(JSON_PROPERTY_TYPE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setType(TypeEnum type) {
+  public void setType(@javax.annotation.Nonnull TypeEnum type) {
     this.type = type;
   }
 

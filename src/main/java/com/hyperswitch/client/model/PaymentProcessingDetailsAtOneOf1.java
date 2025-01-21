@@ -33,13 +33,13 @@ import java.util.StringJoiner;
   PaymentProcessingDetailsAtOneOf1.JSON_PROPERTY_PAYMENT_PROCESSING_DETAILS_AT
 })
 @JsonTypeName("PaymentProcessingDetailsAt_oneOf_1")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class PaymentProcessingDetailsAtOneOf1 {
   /**
    * Gets or Sets paymentProcessingDetailsAt
    */
   public enum PaymentProcessingDetailsAtEnum {
-    CONNECTOR("Connector");
+    CONNECTOR(String.valueOf("Connector"));
 
     private String value;
 
@@ -69,21 +69,22 @@ public class PaymentProcessingDetailsAtOneOf1 {
   }
 
   public static final String JSON_PROPERTY_PAYMENT_PROCESSING_DETAILS_AT = "payment_processing_details_at";
+  @javax.annotation.Nonnull
   private PaymentProcessingDetailsAtEnum paymentProcessingDetailsAt;
 
   public PaymentProcessingDetailsAtOneOf1() {
   }
 
-  public PaymentProcessingDetailsAtOneOf1 paymentProcessingDetailsAt(PaymentProcessingDetailsAtEnum paymentProcessingDetailsAt) {
+  public PaymentProcessingDetailsAtOneOf1 paymentProcessingDetailsAt(@javax.annotation.Nonnull PaymentProcessingDetailsAtEnum paymentProcessingDetailsAt) {
     
     this.paymentProcessingDetailsAt = paymentProcessingDetailsAt;
     return this;
   }
 
-   /**
+  /**
    * Get paymentProcessingDetailsAt
    * @return paymentProcessingDetailsAt
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_PAYMENT_PROCESSING_DETAILS_AT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -95,7 +96,7 @@ public class PaymentProcessingDetailsAtOneOf1 {
 
   @JsonProperty(JSON_PROPERTY_PAYMENT_PROCESSING_DETAILS_AT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setPaymentProcessingDetailsAt(PaymentProcessingDetailsAtEnum paymentProcessingDetailsAt) {
+  public void setPaymentProcessingDetailsAt(@javax.annotation.Nonnull PaymentProcessingDetailsAtEnum paymentProcessingDetailsAt) {
     this.paymentProcessingDetailsAt = paymentProcessingDetailsAt;
   }
 

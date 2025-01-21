@@ -18,22 +18,21 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonTypeName;
 import com.fasterxml.jackson.annotation.JsonValue;
-import org.junit.Assert;
-import org.junit.Ignore;
-import org.junit.Test;
-
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Test;
 
 /**
  * Model tests for DefaultPaymentMethod
  */
-public class DefaultPaymentMethodTest {
+class DefaultPaymentMethodTest {
     private final DefaultPaymentMethod model = new DefaultPaymentMethod();
 
     /**
      * Model tests for DefaultPaymentMethod
      */
     @Test
-    public void testDefaultPaymentMethod() {
+    void testDefaultPaymentMethod() {
         // TODO: test DefaultPaymentMethod
     }
 
@@ -41,7 +40,7 @@ public class DefaultPaymentMethodTest {
      * Test the property 'customerId'
      */
     @Test
-    public void customerIdTest() {
+    void customerIdTest() {
         // TODO: test customerId
     }
 
@@ -49,7 +48,7 @@ public class DefaultPaymentMethodTest {
      * Test the property 'paymentMethodId'
      */
     @Test
-    public void paymentMethodIdTest() {
+    void paymentMethodIdTest() {
         // TODO: test paymentMethodId
     }
 

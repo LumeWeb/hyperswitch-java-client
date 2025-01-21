@@ -32,24 +32,25 @@ import java.util.StringJoiner;
 @JsonPropertyOrder({
   GpayShippingAddressParameters.JSON_PROPERTY_PHONE_NUMBER_REQUIRED
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class GpayShippingAddressParameters {
   public static final String JSON_PROPERTY_PHONE_NUMBER_REQUIRED = "phone_number_required";
+  @javax.annotation.Nonnull
   private Boolean phoneNumberRequired;
 
   public GpayShippingAddressParameters() {
   }
 
-  public GpayShippingAddressParameters phoneNumberRequired(Boolean phoneNumberRequired) {
+  public GpayShippingAddressParameters phoneNumberRequired(@javax.annotation.Nonnull Boolean phoneNumberRequired) {
     
     this.phoneNumberRequired = phoneNumberRequired;
     return this;
   }
 
-   /**
+  /**
    * Is shipping phone number required
    * @return phoneNumberRequired
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_PHONE_NUMBER_REQUIRED)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -61,7 +62,7 @@ public class GpayShippingAddressParameters {
 
   @JsonProperty(JSON_PROPERTY_PHONE_NUMBER_REQUIRED)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setPhoneNumberRequired(Boolean phoneNumberRequired) {
+  public void setPhoneNumberRequired(@javax.annotation.Nonnull Boolean phoneNumberRequired) {
     this.phoneNumberRequired = phoneNumberRequired;
   }
 

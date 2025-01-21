@@ -19,22 +19,21 @@ import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonTypeName;
 import com.fasterxml.jackson.annotation.JsonValue;
 import com.hyperswitch.client.model.RoutableConnectorChoice;
-import org.junit.Assert;
-import org.junit.Ignore;
-import org.junit.Test;
-
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Test;
 
 /**
  * Model tests for ConnectorVolumeSplit
  */
-public class ConnectorVolumeSplitTest {
+class ConnectorVolumeSplitTest {
     private final ConnectorVolumeSplit model = new ConnectorVolumeSplit();
 
     /**
      * Model tests for ConnectorVolumeSplit
      */
     @Test
-    public void testConnectorVolumeSplit() {
+    void testConnectorVolumeSplit() {
         // TODO: test ConnectorVolumeSplit
     }
 
@@ -42,7 +41,7 @@ public class ConnectorVolumeSplitTest {
      * Test the property 'connector'
      */
     @Test
-    public void connectorTest() {
+    void connectorTest() {
         // TODO: test connector
     }
 
@@ -50,7 +49,7 @@ public class ConnectorVolumeSplitTest {
      * Test the property 'split'
      */
     @Test
-    public void splitTest() {
+    void splitTest() {
         // TODO: test split
     }
 

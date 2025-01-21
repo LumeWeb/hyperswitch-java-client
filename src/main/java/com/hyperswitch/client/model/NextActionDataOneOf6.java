@@ -39,19 +39,21 @@ import java.util.StringJoiner;
   NextActionDataOneOf6.JSON_PROPERTY_TYPE
 })
 @JsonTypeName("NextActionData_oneOf_6")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class NextActionDataOneOf6 {
   public static final String JSON_PROPERTY_DISPLAY_FROM_TIMESTAMP = "display_from_timestamp";
+  @javax.annotation.Nonnull
   private Integer displayFromTimestamp;
 
   public static final String JSON_PROPERTY_DISPLAY_TO_TIMESTAMP = "display_to_timestamp";
+  @javax.annotation.Nullable
   private JsonNullable<Integer> displayToTimestamp = JsonNullable.<Integer>undefined();
 
   /**
    * Gets or Sets type
    */
   public enum TypeEnum {
-    WAIT_SCREEN_INFORMATION("wait_screen_information");
+    WAIT_SCREEN_INFORMATION(String.valueOf("wait_screen_information"));
 
     private String value;
 
@@ -81,21 +83,22 @@ public class NextActionDataOneOf6 {
   }
 
   public static final String JSON_PROPERTY_TYPE = "type";
+  @javax.annotation.Nonnull
   private TypeEnum type;
 
   public NextActionDataOneOf6() {
   }
 
-  public NextActionDataOneOf6 displayFromTimestamp(Integer displayFromTimestamp) {
+  public NextActionDataOneOf6 displayFromTimestamp(@javax.annotation.Nonnull Integer displayFromTimestamp) {
     
     this.displayFromTimestamp = displayFromTimestamp;
     return this;
   }
 
-   /**
+  /**
    * Get displayFromTimestamp
    * @return displayFromTimestamp
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_DISPLAY_FROM_TIMESTAMP)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -107,21 +110,20 @@ public class NextActionDataOneOf6 {
 
   @JsonProperty(JSON_PROPERTY_DISPLAY_FROM_TIMESTAMP)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setDisplayFromTimestamp(Integer displayFromTimestamp) {
+  public void setDisplayFromTimestamp(@javax.annotation.Nonnull Integer displayFromTimestamp) {
     this.displayFromTimestamp = displayFromTimestamp;
   }
 
-
-  public NextActionDataOneOf6 displayToTimestamp(Integer displayToTimestamp) {
+  public NextActionDataOneOf6 displayToTimestamp(@javax.annotation.Nullable Integer displayToTimestamp) {
     this.displayToTimestamp = JsonNullable.<Integer>of(displayToTimestamp);
     
     return this;
   }
 
-   /**
+  /**
    * Get displayToTimestamp
    * @return displayToTimestamp
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -141,21 +143,20 @@ public class NextActionDataOneOf6 {
     this.displayToTimestamp = displayToTimestamp;
   }
 
-  public void setDisplayToTimestamp(Integer displayToTimestamp) {
+  public void setDisplayToTimestamp(@javax.annotation.Nullable Integer displayToTimestamp) {
     this.displayToTimestamp = JsonNullable.<Integer>of(displayToTimestamp);
   }
 
-
-  public NextActionDataOneOf6 type(TypeEnum type) {
+  public NextActionDataOneOf6 type(@javax.annotation.Nonnull TypeEnum type) {
     
     this.type = type;
     return this;
   }
 
-   /**
+  /**
    * Get type
    * @return type
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_TYPE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -167,7 +168,7 @@ public class NextActionDataOneOf6 {
 
   @JsonProperty(JSON_PROPERTY_TYPE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setType(TypeEnum type) {
+  public void setType(@javax.annotation.Nonnull TypeEnum type) {
     this.type = type;
   }
 

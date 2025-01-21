@@ -20,27 +20,27 @@ import com.fasterxml.jackson.annotation.JsonTypeName;
 import com.fasterxml.jackson.annotation.JsonValue;
 import com.hyperswitch.client.model.RedirectResponse;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import org.openapitools.jackson.nullable.JsonNullable;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.openapitools.jackson.nullable.JsonNullable;
 import java.util.NoSuchElementException;
-import org.junit.Assert;
-import org.junit.Ignore;
-import org.junit.Test;
-
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Test;
 
 /**
  * Model tests for FeatureMetadata
  */
-public class FeatureMetadataTest {
+class FeatureMetadataTest {
     private final FeatureMetadata model = new FeatureMetadata();
 
     /**
      * Model tests for FeatureMetadata
      */
     @Test
-    public void testFeatureMetadata() {
+    void testFeatureMetadata() {
         // TODO: test FeatureMetadata
     }
 
@@ -48,7 +48,7 @@ public class FeatureMetadataTest {
      * Test the property 'redirectResponse'
      */
     @Test
-    public void redirectResponseTest() {
+    void redirectResponseTest() {
         // TODO: test redirectResponse
     }
 
@@ -56,7 +56,7 @@ public class FeatureMetadataTest {
      * Test the property 'searchTags'
      */
     @Test
-    public void searchTagsTest() {
+    void searchTagsTest() {
         // TODO: test searchTags
     }
 

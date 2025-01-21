@@ -34,24 +34,25 @@ import java.util.StringJoiner;
   BankTransferInstructionsOneOf1.JSON_PROPERTY_ACH_CREDIT_TRANSFER
 })
 @JsonTypeName("BankTransferInstructions_oneOf_1")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class BankTransferInstructionsOneOf1 {
   public static final String JSON_PROPERTY_ACH_CREDIT_TRANSFER = "ach_credit_transfer";
+  @javax.annotation.Nonnull
   private AchTransfer achCreditTransfer;
 
   public BankTransferInstructionsOneOf1() {
   }
 
-  public BankTransferInstructionsOneOf1 achCreditTransfer(AchTransfer achCreditTransfer) {
+  public BankTransferInstructionsOneOf1 achCreditTransfer(@javax.annotation.Nonnull AchTransfer achCreditTransfer) {
     
     this.achCreditTransfer = achCreditTransfer;
     return this;
   }
 
-   /**
+  /**
    * Get achCreditTransfer
    * @return achCreditTransfer
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_ACH_CREDIT_TRANSFER)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -63,7 +64,7 @@ public class BankTransferInstructionsOneOf1 {
 
   @JsonProperty(JSON_PROPERTY_ACH_CREDIT_TRANSFER)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setAchCreditTransfer(AchTransfer achCreditTransfer) {
+  public void setAchCreditTransfer(@javax.annotation.Nonnull AchTransfer achCreditTransfer) {
     this.achCreditTransfer = achCreditTransfer;
   }
 

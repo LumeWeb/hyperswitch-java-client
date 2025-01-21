@@ -33,24 +33,25 @@ import java.util.StringJoiner;
 @JsonPropertyOrder({
   ThirdPartySdkSessionResponse.JSON_PROPERTY_SECRETS
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class ThirdPartySdkSessionResponse {
   public static final String JSON_PROPERTY_SECRETS = "secrets";
+  @javax.annotation.Nonnull
   private SecretInfoToInitiateSdk secrets;
 
   public ThirdPartySdkSessionResponse() {
   }
 
-  public ThirdPartySdkSessionResponse secrets(SecretInfoToInitiateSdk secrets) {
+  public ThirdPartySdkSessionResponse secrets(@javax.annotation.Nonnull SecretInfoToInitiateSdk secrets) {
     
     this.secrets = secrets;
     return this;
   }
 
-   /**
+  /**
    * Get secrets
    * @return secrets
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_SECRETS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -62,7 +63,7 @@ public class ThirdPartySdkSessionResponse {
 
   @JsonProperty(JSON_PROPERTY_SECRETS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setSecrets(SecretInfoToInitiateSdk secrets) {
+  public void setSecrets(@javax.annotation.Nonnull SecretInfoToInitiateSdk secrets) {
     this.secrets = secrets;
   }
 

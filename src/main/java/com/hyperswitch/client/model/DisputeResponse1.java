@@ -35,13 +35,13 @@ import java.util.StringJoiner;
   DisputeResponse1.JSON_PROPERTY_OBJECT
 })
 @JsonTypeName("DisputeResponse_1")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class DisputeResponse1 {
   /**
    * Gets or Sets type
    */
   public enum TypeEnum {
-    DISPUTE_DETAILS("dispute_details");
+    DISPUTE_DETAILS(String.valueOf("dispute_details"));
 
     private String value;
 
@@ -71,24 +71,26 @@ public class DisputeResponse1 {
   }
 
   public static final String JSON_PROPERTY_TYPE = "type";
+  @javax.annotation.Nonnull
   private TypeEnum type;
 
   public static final String JSON_PROPERTY_OBJECT = "object";
+  @javax.annotation.Nonnull
   private DisputeResponse _object;
 
   public DisputeResponse1() {
   }
 
-  public DisputeResponse1 type(TypeEnum type) {
+  public DisputeResponse1 type(@javax.annotation.Nonnull TypeEnum type) {
     
     this.type = type;
     return this;
   }
 
-   /**
+  /**
    * Get type
    * @return type
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_TYPE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -100,21 +102,20 @@ public class DisputeResponse1 {
 
   @JsonProperty(JSON_PROPERTY_TYPE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setType(TypeEnum type) {
+  public void setType(@javax.annotation.Nonnull TypeEnum type) {
     this.type = type;
   }
 
-
-  public DisputeResponse1 _object(DisputeResponse _object) {
+  public DisputeResponse1 _object(@javax.annotation.Nonnull DisputeResponse _object) {
     
     this._object = _object;
     return this;
   }
 
-   /**
+  /**
    * Get _object
    * @return _object
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_OBJECT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -126,7 +127,7 @@ public class DisputeResponse1 {
 
   @JsonProperty(JSON_PROPERTY_OBJECT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setObject(DisputeResponse _object) {
+  public void setObject(@javax.annotation.Nonnull DisputeResponse _object) {
     this._object = _object;
   }
 

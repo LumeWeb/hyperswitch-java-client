@@ -38,30 +38,33 @@ import java.util.StringJoiner;
   PayoutRetrieveRequest.JSON_PROPERTY_FORCE_SYNC,
   PayoutRetrieveRequest.JSON_PROPERTY_MERCHANT_ID
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class PayoutRetrieveRequest {
   public static final String JSON_PROPERTY_PAYOUT_ID = "payout_id";
+  @javax.annotation.Nonnull
   private String payoutId;
 
   public static final String JSON_PROPERTY_FORCE_SYNC = "force_sync";
+  @javax.annotation.Nullable
   private JsonNullable<Boolean> forceSync = JsonNullable.<Boolean>of(false);
 
   public static final String JSON_PROPERTY_MERCHANT_ID = "merchant_id";
+  @javax.annotation.Nullable
   private JsonNullable<String> merchantId = JsonNullable.<String>undefined();
 
   public PayoutRetrieveRequest() {
   }
 
-  public PayoutRetrieveRequest payoutId(String payoutId) {
+  public PayoutRetrieveRequest payoutId(@javax.annotation.Nonnull String payoutId) {
     
     this.payoutId = payoutId;
     return this;
   }
 
-   /**
+  /**
    * Unique identifier for the payout. This ensures idempotency for multiple payouts that have been done by a single merchant. This field is auto generated and is returned in the API response.
    * @return payoutId
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_PAYOUT_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -73,21 +76,20 @@ public class PayoutRetrieveRequest {
 
   @JsonProperty(JSON_PROPERTY_PAYOUT_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setPayoutId(String payoutId) {
+  public void setPayoutId(@javax.annotation.Nonnull String payoutId) {
     this.payoutId = payoutId;
   }
 
-
-  public PayoutRetrieveRequest forceSync(Boolean forceSync) {
+  public PayoutRetrieveRequest forceSync(@javax.annotation.Nullable Boolean forceSync) {
     this.forceSync = JsonNullable.<Boolean>of(forceSync);
     
     return this;
   }
 
-   /**
+  /**
    * &#x60;force_sync&#x60; with the connector to get payout details (defaults to false)
    * @return forceSync
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -107,21 +109,20 @@ public class PayoutRetrieveRequest {
     this.forceSync = forceSync;
   }
 
-  public void setForceSync(Boolean forceSync) {
+  public void setForceSync(@javax.annotation.Nullable Boolean forceSync) {
     this.forceSync = JsonNullable.<Boolean>of(forceSync);
   }
 
-
-  public PayoutRetrieveRequest merchantId(String merchantId) {
+  public PayoutRetrieveRequest merchantId(@javax.annotation.Nullable String merchantId) {
     this.merchantId = JsonNullable.<String>of(merchantId);
     
     return this;
   }
 
-   /**
+  /**
    * The identifier for the Merchant Account.
    * @return merchantId
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -141,7 +142,7 @@ public class PayoutRetrieveRequest {
     this.merchantId = merchantId;
   }
 
-  public void setMerchantId(String merchantId) {
+  public void setMerchantId(@javax.annotation.Nullable String merchantId) {
     this.merchantId = JsonNullable.<String>of(merchantId);
   }
 

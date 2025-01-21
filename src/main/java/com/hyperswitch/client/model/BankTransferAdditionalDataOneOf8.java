@@ -33,24 +33,25 @@ import java.util.StringJoiner;
   BankTransferAdditionalDataOneOf8.JSON_PROPERTY_CIMB_VA
 })
 @JsonTypeName("BankTransferAdditionalData_oneOf_8")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class BankTransferAdditionalDataOneOf8 {
   public static final String JSON_PROPERTY_CIMB_VA = "cimb_va";
+  @javax.annotation.Nonnull
   private Object cimbVa;
 
   public BankTransferAdditionalDataOneOf8() {
   }
 
-  public BankTransferAdditionalDataOneOf8 cimbVa(Object cimbVa) {
+  public BankTransferAdditionalDataOneOf8 cimbVa(@javax.annotation.Nonnull Object cimbVa) {
     
     this.cimbVa = cimbVa;
     return this;
   }
 
-   /**
+  /**
    * Get cimbVa
    * @return cimbVa
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_CIMB_VA)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -62,7 +63,7 @@ public class BankTransferAdditionalDataOneOf8 {
 
   @JsonProperty(JSON_PROPERTY_CIMB_VA)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setCimbVa(Object cimbVa) {
+  public void setCimbVa(@javax.annotation.Nonnull Object cimbVa) {
     this.cimbVa = cimbVa;
   }
 

@@ -35,13 +35,13 @@ import java.util.StringJoiner;
   SurchargeResponseOneOf1.JSON_PROPERTY_VALUE
 })
 @JsonTypeName("SurchargeResponse_oneOf_1")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class SurchargeResponseOneOf1 {
   /**
    * Gets or Sets type
    */
   public enum TypeEnum {
-    RATE("rate");
+    RATE(String.valueOf("rate"));
 
     private String value;
 
@@ -71,24 +71,26 @@ public class SurchargeResponseOneOf1 {
   }
 
   public static final String JSON_PROPERTY_TYPE = "type";
+  @javax.annotation.Nonnull
   private TypeEnum type;
 
   public static final String JSON_PROPERTY_VALUE = "value";
+  @javax.annotation.Nonnull
   private SurchargePercentage value;
 
   public SurchargeResponseOneOf1() {
   }
 
-  public SurchargeResponseOneOf1 type(TypeEnum type) {
+  public SurchargeResponseOneOf1 type(@javax.annotation.Nonnull TypeEnum type) {
     
     this.type = type;
     return this;
   }
 
-   /**
+  /**
    * Get type
    * @return type
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_TYPE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -100,21 +102,20 @@ public class SurchargeResponseOneOf1 {
 
   @JsonProperty(JSON_PROPERTY_TYPE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setType(TypeEnum type) {
+  public void setType(@javax.annotation.Nonnull TypeEnum type) {
     this.type = type;
   }
 
-
-  public SurchargeResponseOneOf1 value(SurchargePercentage value) {
+  public SurchargeResponseOneOf1 value(@javax.annotation.Nonnull SurchargePercentage value) {
     
     this.value = value;
     return this;
   }
 
-   /**
+  /**
    * Get value
    * @return value
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_VALUE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -126,7 +127,7 @@ public class SurchargeResponseOneOf1 {
 
   @JsonProperty(JSON_PROPERTY_VALUE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setValue(SurchargePercentage value) {
+  public void setValue(@javax.annotation.Nonnull SurchargePercentage value) {
     this.value = value;
   }
 

@@ -35,13 +35,13 @@ import java.util.StringJoiner;
   ValueTypeOneOf2.JSON_PROPERTY_VALUE
 })
 @JsonTypeName("ValueType_oneOf_2")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class ValueTypeOneOf2 {
   /**
    * Gets or Sets type
    */
   public enum TypeEnum {
-    METADATA_VARIANT("metadata_variant");
+    METADATA_VARIANT(String.valueOf("metadata_variant"));
 
     private String value;
 
@@ -71,24 +71,26 @@ public class ValueTypeOneOf2 {
   }
 
   public static final String JSON_PROPERTY_TYPE = "type";
+  @javax.annotation.Nonnull
   private TypeEnum type;
 
   public static final String JSON_PROPERTY_VALUE = "value";
+  @javax.annotation.Nonnull
   private MetadataValue value;
 
   public ValueTypeOneOf2() {
   }
 
-  public ValueTypeOneOf2 type(TypeEnum type) {
+  public ValueTypeOneOf2 type(@javax.annotation.Nonnull TypeEnum type) {
     
     this.type = type;
     return this;
   }
 
-   /**
+  /**
    * Get type
    * @return type
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_TYPE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -100,21 +102,20 @@ public class ValueTypeOneOf2 {
 
   @JsonProperty(JSON_PROPERTY_TYPE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setType(TypeEnum type) {
+  public void setType(@javax.annotation.Nonnull TypeEnum type) {
     this.type = type;
   }
 
-
-  public ValueTypeOneOf2 value(MetadataValue value) {
+  public ValueTypeOneOf2 value(@javax.annotation.Nonnull MetadataValue value) {
     
     this.value = value;
     return this;
   }
 
-   /**
+  /**
    * Get value
    * @return value
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_VALUE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -126,7 +127,7 @@ public class ValueTypeOneOf2 {
 
   @JsonProperty(JSON_PROPERTY_VALUE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setValue(MetadataValue value) {
+  public void setValue(@javax.annotation.Nonnull MetadataValue value) {
     this.value = value;
   }
 

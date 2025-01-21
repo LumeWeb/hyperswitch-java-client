@@ -38,30 +38,33 @@ import java.util.StringJoiner;
   PaymentLinkResponse.JSON_PROPERTY_SECURE_LINK,
   PaymentLinkResponse.JSON_PROPERTY_PAYMENT_LINK_ID
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class PaymentLinkResponse {
   public static final String JSON_PROPERTY_LINK = "link";
+  @javax.annotation.Nonnull
   private String link;
 
   public static final String JSON_PROPERTY_SECURE_LINK = "secure_link";
+  @javax.annotation.Nullable
   private JsonNullable<String> secureLink = JsonNullable.<String>undefined();
 
   public static final String JSON_PROPERTY_PAYMENT_LINK_ID = "payment_link_id";
+  @javax.annotation.Nonnull
   private String paymentLinkId;
 
   public PaymentLinkResponse() {
   }
 
-  public PaymentLinkResponse link(String link) {
+  public PaymentLinkResponse link(@javax.annotation.Nonnull String link) {
     
     this.link = link;
     return this;
   }
 
-   /**
+  /**
    * URL for rendering the open payment link
    * @return link
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_LINK)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -73,21 +76,20 @@ public class PaymentLinkResponse {
 
   @JsonProperty(JSON_PROPERTY_LINK)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setLink(String link) {
+  public void setLink(@javax.annotation.Nonnull String link) {
     this.link = link;
   }
 
-
-  public PaymentLinkResponse secureLink(String secureLink) {
+  public PaymentLinkResponse secureLink(@javax.annotation.Nullable String secureLink) {
     this.secureLink = JsonNullable.<String>of(secureLink);
     
     return this;
   }
 
-   /**
+  /**
    * URL for rendering the secure payment link
    * @return secureLink
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -107,21 +109,20 @@ public class PaymentLinkResponse {
     this.secureLink = secureLink;
   }
 
-  public void setSecureLink(String secureLink) {
+  public void setSecureLink(@javax.annotation.Nullable String secureLink) {
     this.secureLink = JsonNullable.<String>of(secureLink);
   }
 
-
-  public PaymentLinkResponse paymentLinkId(String paymentLinkId) {
+  public PaymentLinkResponse paymentLinkId(@javax.annotation.Nonnull String paymentLinkId) {
     
     this.paymentLinkId = paymentLinkId;
     return this;
   }
 
-   /**
+  /**
    * Identifier for the payment link
    * @return paymentLinkId
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_PAYMENT_LINK_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -133,7 +134,7 @@ public class PaymentLinkResponse {
 
   @JsonProperty(JSON_PROPERTY_PAYMENT_LINK_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setPaymentLinkId(String paymentLinkId) {
+  public void setPaymentLinkId(@javax.annotation.Nonnull String paymentLinkId) {
     this.paymentLinkId = paymentLinkId;
   }
 

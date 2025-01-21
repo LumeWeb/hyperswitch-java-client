@@ -33,27 +33,29 @@ import java.util.StringJoiner;
   GpayTokenizationData.JSON_PROPERTY_TYPE,
   GpayTokenizationData.JSON_PROPERTY_TOKEN
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class GpayTokenizationData {
   public static final String JSON_PROPERTY_TYPE = "type";
+  @javax.annotation.Nonnull
   private String type;
 
   public static final String JSON_PROPERTY_TOKEN = "token";
+  @javax.annotation.Nonnull
   private String token;
 
   public GpayTokenizationData() {
   }
 
-  public GpayTokenizationData type(String type) {
+  public GpayTokenizationData type(@javax.annotation.Nonnull String type) {
     
     this.type = type;
     return this;
   }
 
-   /**
+  /**
    * The type of the token
    * @return type
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_TYPE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -65,21 +67,20 @@ public class GpayTokenizationData {
 
   @JsonProperty(JSON_PROPERTY_TYPE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setType(String type) {
+  public void setType(@javax.annotation.Nonnull String type) {
     this.type = type;
   }
 
-
-  public GpayTokenizationData token(String token) {
+  public GpayTokenizationData token(@javax.annotation.Nonnull String token) {
     
     this.token = token;
     return this;
   }
 
-   /**
+  /**
    * Token generated for the wallet
    * @return token
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_TOKEN)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -91,7 +92,7 @@ public class GpayTokenizationData {
 
   @JsonProperty(JSON_PROPERTY_TOKEN)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setToken(String token) {
+  public void setToken(@javax.annotation.Nonnull String token) {
     this.token = token;
   }
 

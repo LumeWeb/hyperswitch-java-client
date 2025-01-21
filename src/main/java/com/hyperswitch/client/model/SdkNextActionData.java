@@ -38,27 +38,29 @@ import java.util.StringJoiner;
   SdkNextActionData.JSON_PROPERTY_NEXT_ACTION,
   SdkNextActionData.JSON_PROPERTY_ORDER_ID
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class SdkNextActionData {
   public static final String JSON_PROPERTY_NEXT_ACTION = "next_action";
+  @javax.annotation.Nonnull
   private NextActionCall nextAction;
 
   public static final String JSON_PROPERTY_ORDER_ID = "order_id";
+  @javax.annotation.Nullable
   private JsonNullable<String> orderId = JsonNullable.<String>undefined();
 
   public SdkNextActionData() {
   }
 
-  public SdkNextActionData nextAction(NextActionCall nextAction) {
+  public SdkNextActionData nextAction(@javax.annotation.Nonnull NextActionCall nextAction) {
     
     this.nextAction = nextAction;
     return this;
   }
 
-   /**
+  /**
    * Get nextAction
    * @return nextAction
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_NEXT_ACTION)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -70,21 +72,20 @@ public class SdkNextActionData {
 
   @JsonProperty(JSON_PROPERTY_NEXT_ACTION)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setNextAction(NextActionCall nextAction) {
+  public void setNextAction(@javax.annotation.Nonnull NextActionCall nextAction) {
     this.nextAction = nextAction;
   }
 
-
-  public SdkNextActionData orderId(String orderId) {
+  public SdkNextActionData orderId(@javax.annotation.Nullable String orderId) {
     this.orderId = JsonNullable.<String>of(orderId);
     
     return this;
   }
 
-   /**
+  /**
    * Get orderId
    * @return orderId
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -104,7 +105,7 @@ public class SdkNextActionData {
     this.orderId = orderId;
   }
 
-  public void setOrderId(String orderId) {
+  public void setOrderId(@javax.annotation.Nullable String orderId) {
     this.orderId = JsonNullable.<String>of(orderId);
   }
 

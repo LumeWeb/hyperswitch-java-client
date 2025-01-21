@@ -25,22 +25,21 @@ import org.openapitools.jackson.nullable.JsonNullable;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.openapitools.jackson.nullable.JsonNullable;
 import java.util.NoSuchElementException;
-import org.junit.Assert;
-import org.junit.Ignore;
-import org.junit.Test;
-
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Test;
 
 /**
  * Model tests for MandateResponse
  */
-public class MandateResponseTest {
+class MandateResponseTest {
     private final MandateResponse model = new MandateResponse();
 
     /**
      * Model tests for MandateResponse
      */
     @Test
-    public void testMandateResponse() {
+    void testMandateResponse() {
         // TODO: test MandateResponse
     }
 
@@ -48,7 +47,7 @@ public class MandateResponseTest {
      * Test the property 'mandateId'
      */
     @Test
-    public void mandateIdTest() {
+    void mandateIdTest() {
         // TODO: test mandateId
     }
 
@@ -56,7 +55,7 @@ public class MandateResponseTest {
      * Test the property 'status'
      */
     @Test
-    public void statusTest() {
+    void statusTest() {
         // TODO: test status
     }
 
@@ -64,7 +63,7 @@ public class MandateResponseTest {
      * Test the property 'paymentMethodId'
      */
     @Test
-    public void paymentMethodIdTest() {
+    void paymentMethodIdTest() {
         // TODO: test paymentMethodId
     }
 
@@ -72,7 +71,7 @@ public class MandateResponseTest {
      * Test the property 'paymentMethod'
      */
     @Test
-    public void paymentMethodTest() {
+    void paymentMethodTest() {
         // TODO: test paymentMethod
     }
 
@@ -80,7 +79,7 @@ public class MandateResponseTest {
      * Test the property 'paymentMethodType'
      */
     @Test
-    public void paymentMethodTypeTest() {
+    void paymentMethodTypeTest() {
         // TODO: test paymentMethodType
     }
 
@@ -88,7 +87,7 @@ public class MandateResponseTest {
      * Test the property 'card'
      */
     @Test
-    public void cardTest() {
+    void cardTest() {
         // TODO: test card
     }
 
@@ -96,7 +95,7 @@ public class MandateResponseTest {
      * Test the property 'customerAcceptance'
      */
     @Test
-    public void customerAcceptanceTest() {
+    void customerAcceptanceTest() {
         // TODO: test customerAcceptance
     }
 

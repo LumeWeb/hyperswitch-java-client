@@ -19,22 +19,21 @@ import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonTypeName;
 import com.fasterxml.jackson.annotation.JsonValue;
 import com.hyperswitch.client.model.FieldTypeOneOfUserCountry;
-import org.junit.Assert;
-import org.junit.Ignore;
-import org.junit.Test;
-
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Test;
 
 /**
  * Model tests for FieldTypeOneOf5
  */
-public class FieldTypeOneOf5Test {
+class FieldTypeOneOf5Test {
     private final FieldTypeOneOf5 model = new FieldTypeOneOf5();
 
     /**
      * Model tests for FieldTypeOneOf5
      */
     @Test
-    public void testFieldTypeOneOf5() {
+    void testFieldTypeOneOf5() {
         // TODO: test FieldTypeOneOf5
     }
 
@@ -42,7 +41,7 @@ public class FieldTypeOneOf5Test {
      * Test the property 'languagePreference'
      */
     @Test
-    public void languagePreferenceTest() {
+    void languagePreferenceTest() {
         // TODO: test languagePreference
     }
 

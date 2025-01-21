@@ -22,22 +22,21 @@ import org.openapitools.jackson.nullable.JsonNullable;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.openapitools.jackson.nullable.JsonNullable;
 import java.util.NoSuchElementException;
-import org.junit.Assert;
-import org.junit.Ignore;
-import org.junit.Test;
-
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Test;
 
 /**
  * Model tests for AirwallexData
  */
-public class AirwallexDataTest {
+class AirwallexDataTest {
     private final AirwallexData model = new AirwallexData();
 
     /**
      * Model tests for AirwallexData
      */
     @Test
-    public void testAirwallexData() {
+    void testAirwallexData() {
         // TODO: test AirwallexData
     }
 
@@ -45,7 +44,7 @@ public class AirwallexDataTest {
      * Test the property 'payload'
      */
     @Test
-    public void payloadTest() {
+    void payloadTest() {
         // TODO: test payload
     }
 

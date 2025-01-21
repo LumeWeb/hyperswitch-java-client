@@ -22,6 +22,7 @@ import com.fasterxml.jackson.annotation.JsonTypeName;
 import com.fasterxml.jackson.annotation.JsonValue;
 import com.hyperswitch.client.model.PaymentExperience;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import org.openapitools.jackson.nullable.JsonNullable;
 import com.fasterxml.jackson.annotation.JsonIgnore;
@@ -40,27 +41,29 @@ import java.util.StringJoiner;
   PaymentExperienceTypes.JSON_PROPERTY_PAYMENT_EXPERIENCE_TYPE,
   PaymentExperienceTypes.JSON_PROPERTY_ELIGIBLE_CONNECTORS
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class PaymentExperienceTypes {
   public static final String JSON_PROPERTY_PAYMENT_EXPERIENCE_TYPE = "payment_experience_type";
+  @javax.annotation.Nullable
   private JsonNullable<PaymentExperience> paymentExperienceType = JsonNullable.<PaymentExperience>undefined();
 
   public static final String JSON_PROPERTY_ELIGIBLE_CONNECTORS = "eligible_connectors";
+  @javax.annotation.Nonnull
   private List<String> eligibleConnectors = new ArrayList<>();
 
   public PaymentExperienceTypes() {
   }
 
-  public PaymentExperienceTypes paymentExperienceType(PaymentExperience paymentExperienceType) {
+  public PaymentExperienceTypes paymentExperienceType(@javax.annotation.Nullable PaymentExperience paymentExperienceType) {
     this.paymentExperienceType = JsonNullable.<PaymentExperience>of(paymentExperienceType);
     
     return this;
   }
 
-   /**
+  /**
    * Get paymentExperienceType
    * @return paymentExperienceType
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -80,12 +83,11 @@ public class PaymentExperienceTypes {
     this.paymentExperienceType = paymentExperienceType;
   }
 
-  public void setPaymentExperienceType(PaymentExperience paymentExperienceType) {
+  public void setPaymentExperienceType(@javax.annotation.Nullable PaymentExperience paymentExperienceType) {
     this.paymentExperienceType = JsonNullable.<PaymentExperience>of(paymentExperienceType);
   }
 
-
-  public PaymentExperienceTypes eligibleConnectors(List<String> eligibleConnectors) {
+  public PaymentExperienceTypes eligibleConnectors(@javax.annotation.Nonnull List<String> eligibleConnectors) {
     
     this.eligibleConnectors = eligibleConnectors;
     return this;
@@ -99,10 +101,10 @@ public class PaymentExperienceTypes {
     return this;
   }
 
-   /**
+  /**
    * The list of eligible connectors for a given payment experience
    * @return eligibleConnectors
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_ELIGIBLE_CONNECTORS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -114,7 +116,7 @@ public class PaymentExperienceTypes {
 
   @JsonProperty(JSON_PROPERTY_ELIGIBLE_CONNECTORS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setEligibleConnectors(List<String> eligibleConnectors) {
+  public void setEligibleConnectors(@javax.annotation.Nonnull List<String> eligibleConnectors) {
     this.eligibleConnectors = eligibleConnectors;
   }
 

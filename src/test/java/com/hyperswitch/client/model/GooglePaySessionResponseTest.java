@@ -25,27 +25,27 @@ import com.hyperswitch.client.model.GpayTransactionInfo;
 import com.hyperswitch.client.model.SdkNextAction;
 import com.hyperswitch.client.model.SecretInfoToInitiateSdk;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import org.openapitools.jackson.nullable.JsonNullable;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.openapitools.jackson.nullable.JsonNullable;
 import java.util.NoSuchElementException;
-import org.junit.Assert;
-import org.junit.Ignore;
-import org.junit.Test;
-
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Test;
 
 /**
  * Model tests for GooglePaySessionResponse
  */
-public class GooglePaySessionResponseTest {
+class GooglePaySessionResponseTest {
     private final GooglePaySessionResponse model = new GooglePaySessionResponse();
 
     /**
      * Model tests for GooglePaySessionResponse
      */
     @Test
-    public void testGooglePaySessionResponse() {
+    void testGooglePaySessionResponse() {
         // TODO: test GooglePaySessionResponse
     }
 
@@ -53,7 +53,7 @@ public class GooglePaySessionResponseTest {
      * Test the property 'merchantInfo'
      */
     @Test
-    public void merchantInfoTest() {
+    void merchantInfoTest() {
         // TODO: test merchantInfo
     }
 
@@ -61,7 +61,7 @@ public class GooglePaySessionResponseTest {
      * Test the property 'shippingAddressRequired'
      */
     @Test
-    public void shippingAddressRequiredTest() {
+    void shippingAddressRequiredTest() {
         // TODO: test shippingAddressRequired
     }
 
@@ -69,7 +69,7 @@ public class GooglePaySessionResponseTest {
      * Test the property 'emailRequired'
      */
     @Test
-    public void emailRequiredTest() {
+    void emailRequiredTest() {
         // TODO: test emailRequired
     }
 
@@ -77,7 +77,7 @@ public class GooglePaySessionResponseTest {
      * Test the property 'shippingAddressParameters'
      */
     @Test
-    public void shippingAddressParametersTest() {
+    void shippingAddressParametersTest() {
         // TODO: test shippingAddressParameters
     }
 
@@ -85,7 +85,7 @@ public class GooglePaySessionResponseTest {
      * Test the property 'allowedPaymentMethods'
      */
     @Test
-    public void allowedPaymentMethodsTest() {
+    void allowedPaymentMethodsTest() {
         // TODO: test allowedPaymentMethods
     }
 
@@ -93,7 +93,7 @@ public class GooglePaySessionResponseTest {
      * Test the property 'transactionInfo'
      */
     @Test
-    public void transactionInfoTest() {
+    void transactionInfoTest() {
         // TODO: test transactionInfo
     }
 
@@ -101,7 +101,7 @@ public class GooglePaySessionResponseTest {
      * Test the property 'delayedSessionToken'
      */
     @Test
-    public void delayedSessionTokenTest() {
+    void delayedSessionTokenTest() {
         // TODO: test delayedSessionToken
     }
 
@@ -109,7 +109,7 @@ public class GooglePaySessionResponseTest {
      * Test the property 'connector'
      */
     @Test
-    public void connectorTest() {
+    void connectorTest() {
         // TODO: test connector
     }
 
@@ -117,7 +117,7 @@ public class GooglePaySessionResponseTest {
      * Test the property 'sdkNextAction'
      */
     @Test
-    public void sdkNextActionTest() {
+    void sdkNextActionTest() {
         // TODO: test sdkNextAction
     }
 
@@ -125,7 +125,7 @@ public class GooglePaySessionResponseTest {
      * Test the property 'secrets'
      */
     @Test
-    public void secretsTest() {
+    void secretsTest() {
         // TODO: test secrets
     }
 

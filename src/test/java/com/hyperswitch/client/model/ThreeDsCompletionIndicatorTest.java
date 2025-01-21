@@ -13,20 +13,19 @@
 
 package com.hyperswitch.client.model;
 
-import org.junit.Assert;
-import org.junit.Ignore;
-import org.junit.Test;
-
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Test;
 
 /**
  * Model tests for ThreeDsCompletionIndicator
  */
-public class ThreeDsCompletionIndicatorTest {
+class ThreeDsCompletionIndicatorTest {
     /**
      * Model tests for ThreeDsCompletionIndicator
      */
     @Test
-    public void testThreeDsCompletionIndicator() {
+    void testThreeDsCompletionIndicator() {
         // TODO: test ThreeDsCompletionIndicator
     }
 

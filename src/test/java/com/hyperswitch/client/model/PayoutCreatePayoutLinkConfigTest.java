@@ -21,67 +21,35 @@ import com.fasterxml.jackson.annotation.JsonValue;
 import com.hyperswitch.client.model.EnabledPaymentMethod;
 import com.hyperswitch.client.model.UIWidgetFormLayout;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import org.openapitools.jackson.nullable.JsonNullable;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.openapitools.jackson.nullable.JsonNullable;
 import java.util.NoSuchElementException;
-import org.junit.Assert;
-import org.junit.Ignore;
-import org.junit.Test;
-
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Test;
 
 /**
  * Model tests for PayoutCreatePayoutLinkConfig
  */
-public class PayoutCreatePayoutLinkConfigTest {
+class PayoutCreatePayoutLinkConfigTest {
     private final PayoutCreatePayoutLinkConfig model = new PayoutCreatePayoutLinkConfig();
 
     /**
      * Model tests for PayoutCreatePayoutLinkConfig
      */
     @Test
-    public void testPayoutCreatePayoutLinkConfig() {
+    void testPayoutCreatePayoutLinkConfig() {
         // TODO: test PayoutCreatePayoutLinkConfig
-    }
-
-    /**
-     * Test the property 'payoutLinkId'
-     */
-    @Test
-    public void payoutLinkIdTest() {
-        // TODO: test payoutLinkId
-    }
-
-    /**
-     * Test the property 'enabledPaymentMethods'
-     */
-    @Test
-    public void enabledPaymentMethodsTest() {
-        // TODO: test enabledPaymentMethods
-    }
-
-    /**
-     * Test the property 'formLayout'
-     */
-    @Test
-    public void formLayoutTest() {
-        // TODO: test formLayout
-    }
-
-    /**
-     * Test the property 'testMode'
-     */
-    @Test
-    public void testModeTest() {
-        // TODO: test testMode
     }
 
     /**
      * Test the property 'logo'
      */
     @Test
-    public void logoTest() {
+    void logoTest() {
         // TODO: test logo
     }
 
@@ -89,7 +57,7 @@ public class PayoutCreatePayoutLinkConfigTest {
      * Test the property 'merchantName'
      */
     @Test
-    public void merchantNameTest() {
+    void merchantNameTest() {
         // TODO: test merchantName
     }
 
@@ -97,8 +65,40 @@ public class PayoutCreatePayoutLinkConfigTest {
      * Test the property 'theme'
      */
     @Test
-    public void themeTest() {
+    void themeTest() {
         // TODO: test theme
+    }
+
+    /**
+     * Test the property 'payoutLinkId'
+     */
+    @Test
+    void payoutLinkIdTest() {
+        // TODO: test payoutLinkId
+    }
+
+    /**
+     * Test the property 'enabledPaymentMethods'
+     */
+    @Test
+    void enabledPaymentMethodsTest() {
+        // TODO: test enabledPaymentMethods
+    }
+
+    /**
+     * Test the property 'formLayout'
+     */
+    @Test
+    void formLayoutTest() {
+        // TODO: test formLayout
+    }
+
+    /**
+     * Test the property 'testMode'
+     */
+    @Test
+    void testModeTest() {
+        // TODO: test testMode
     }
 
 }

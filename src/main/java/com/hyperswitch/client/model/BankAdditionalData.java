@@ -51,54 +51,65 @@ import java.util.StringJoiner;
   BankAdditionalData.JSON_PROPERTY_CPF,
   BankAdditionalData.JSON_PROPERTY_CNPJ
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class BankAdditionalData {
   public static final String JSON_PROPERTY_BANK_ACCOUNT_NUMBER = "bank_account_number";
+  @javax.annotation.Nonnull
   private String bankAccountNumber;
 
   public static final String JSON_PROPERTY_BANK_ROUTING_NUMBER = "bank_routing_number";
+  @javax.annotation.Nonnull
   private String bankRoutingNumber;
 
   public static final String JSON_PROPERTY_BANK_NAME = "bank_name";
+  @javax.annotation.Nullable
   private JsonNullable<String> bankName = JsonNullable.<String>undefined();
 
   public static final String JSON_PROPERTY_BANK_COUNTRY_CODE = "bank_country_code";
+  @javax.annotation.Nullable
   private JsonNullable<CountryAlpha2> bankCountryCode = JsonNullable.<CountryAlpha2>undefined();
 
   public static final String JSON_PROPERTY_BANK_CITY = "bank_city";
+  @javax.annotation.Nullable
   private JsonNullable<String> bankCity = JsonNullable.<String>undefined();
 
   public static final String JSON_PROPERTY_BANK_SORT_CODE = "bank_sort_code";
+  @javax.annotation.Nonnull
   private String bankSortCode;
 
   public static final String JSON_PROPERTY_IBAN = "iban";
+  @javax.annotation.Nonnull
   private String iban;
 
   public static final String JSON_PROPERTY_BIC = "bic";
+  @javax.annotation.Nullable
   private JsonNullable<String> bic = JsonNullable.<String>undefined();
 
   public static final String JSON_PROPERTY_PIX_KEY = "pix_key";
+  @javax.annotation.Nullable
   private JsonNullable<String> pixKey = JsonNullable.<String>undefined();
 
   public static final String JSON_PROPERTY_CPF = "cpf";
+  @javax.annotation.Nullable
   private JsonNullable<String> cpf = JsonNullable.<String>undefined();
 
   public static final String JSON_PROPERTY_CNPJ = "cnpj";
+  @javax.annotation.Nullable
   private JsonNullable<String> cnpj = JsonNullable.<String>undefined();
 
   public BankAdditionalData() {
   }
 
-  public BankAdditionalData bankAccountNumber(String bankAccountNumber) {
+  public BankAdditionalData bankAccountNumber(@javax.annotation.Nonnull String bankAccountNumber) {
     
     this.bankAccountNumber = bankAccountNumber;
     return this;
   }
 
-   /**
+  /**
    * Bank account&#39;s owner name
    * @return bankAccountNumber
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_BANK_ACCOUNT_NUMBER)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -110,21 +121,20 @@ public class BankAdditionalData {
 
   @JsonProperty(JSON_PROPERTY_BANK_ACCOUNT_NUMBER)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setBankAccountNumber(String bankAccountNumber) {
+  public void setBankAccountNumber(@javax.annotation.Nonnull String bankAccountNumber) {
     this.bankAccountNumber = bankAccountNumber;
   }
 
-
-  public BankAdditionalData bankRoutingNumber(String bankRoutingNumber) {
+  public BankAdditionalData bankRoutingNumber(@javax.annotation.Nonnull String bankRoutingNumber) {
     
     this.bankRoutingNumber = bankRoutingNumber;
     return this;
   }
 
-   /**
+  /**
    * Partially masked routing number for ach bank debit payment
    * @return bankRoutingNumber
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_BANK_ROUTING_NUMBER)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -136,21 +146,20 @@ public class BankAdditionalData {
 
   @JsonProperty(JSON_PROPERTY_BANK_ROUTING_NUMBER)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setBankRoutingNumber(String bankRoutingNumber) {
+  public void setBankRoutingNumber(@javax.annotation.Nonnull String bankRoutingNumber) {
     this.bankRoutingNumber = bankRoutingNumber;
   }
 
-
-  public BankAdditionalData bankName(String bankName) {
+  public BankAdditionalData bankName(@javax.annotation.Nullable String bankName) {
     this.bankName = JsonNullable.<String>of(bankName);
     
     return this;
   }
 
-   /**
+  /**
    * Bank name
    * @return bankName
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -170,21 +179,20 @@ public class BankAdditionalData {
     this.bankName = bankName;
   }
 
-  public void setBankName(String bankName) {
+  public void setBankName(@javax.annotation.Nullable String bankName) {
     this.bankName = JsonNullable.<String>of(bankName);
   }
 
-
-  public BankAdditionalData bankCountryCode(CountryAlpha2 bankCountryCode) {
+  public BankAdditionalData bankCountryCode(@javax.annotation.Nullable CountryAlpha2 bankCountryCode) {
     this.bankCountryCode = JsonNullable.<CountryAlpha2>of(bankCountryCode);
     
     return this;
   }
 
-   /**
+  /**
    * Get bankCountryCode
    * @return bankCountryCode
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -204,21 +212,20 @@ public class BankAdditionalData {
     this.bankCountryCode = bankCountryCode;
   }
 
-  public void setBankCountryCode(CountryAlpha2 bankCountryCode) {
+  public void setBankCountryCode(@javax.annotation.Nullable CountryAlpha2 bankCountryCode) {
     this.bankCountryCode = JsonNullable.<CountryAlpha2>of(bankCountryCode);
   }
 
-
-  public BankAdditionalData bankCity(String bankCity) {
+  public BankAdditionalData bankCity(@javax.annotation.Nullable String bankCity) {
     this.bankCity = JsonNullable.<String>of(bankCity);
     
     return this;
   }
 
-   /**
+  /**
    * Bank city
    * @return bankCity
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -238,21 +245,20 @@ public class BankAdditionalData {
     this.bankCity = bankCity;
   }
 
-  public void setBankCity(String bankCity) {
+  public void setBankCity(@javax.annotation.Nullable String bankCity) {
     this.bankCity = JsonNullable.<String>of(bankCity);
   }
 
-
-  public BankAdditionalData bankSortCode(String bankSortCode) {
+  public BankAdditionalData bankSortCode(@javax.annotation.Nonnull String bankSortCode) {
     
     this.bankSortCode = bankSortCode;
     return this;
   }
 
-   /**
+  /**
    * Partially masked sort code for Bacs payment method
    * @return bankSortCode
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_BANK_SORT_CODE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -264,21 +270,20 @@ public class BankAdditionalData {
 
   @JsonProperty(JSON_PROPERTY_BANK_SORT_CODE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setBankSortCode(String bankSortCode) {
+  public void setBankSortCode(@javax.annotation.Nonnull String bankSortCode) {
     this.bankSortCode = bankSortCode;
   }
 
-
-  public BankAdditionalData iban(String iban) {
+  public BankAdditionalData iban(@javax.annotation.Nonnull String iban) {
     
     this.iban = iban;
     return this;
   }
 
-   /**
+  /**
    * Partially masked international bank account number (iban) for SEPA
    * @return iban
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_IBAN)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -290,21 +295,20 @@ public class BankAdditionalData {
 
   @JsonProperty(JSON_PROPERTY_IBAN)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setIban(String iban) {
+  public void setIban(@javax.annotation.Nonnull String iban) {
     this.iban = iban;
   }
 
-
-  public BankAdditionalData bic(String bic) {
+  public BankAdditionalData bic(@javax.annotation.Nullable String bic) {
     this.bic = JsonNullable.<String>of(bic);
     
     return this;
   }
 
-   /**
+  /**
    * [8 / 11 digits] Bank Identifier Code (bic) / Swift Code - used in many countries for identifying a bank and it&#39;s branches
    * @return bic
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -324,21 +328,20 @@ public class BankAdditionalData {
     this.bic = bic;
   }
 
-  public void setBic(String bic) {
+  public void setBic(@javax.annotation.Nullable String bic) {
     this.bic = JsonNullable.<String>of(bic);
   }
 
-
-  public BankAdditionalData pixKey(String pixKey) {
+  public BankAdditionalData pixKey(@javax.annotation.Nullable String pixKey) {
     this.pixKey = JsonNullable.<String>of(pixKey);
     
     return this;
   }
 
-   /**
+  /**
    * Partially masked unique key for pix transfer
    * @return pixKey
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -358,21 +361,20 @@ public class BankAdditionalData {
     this.pixKey = pixKey;
   }
 
-  public void setPixKey(String pixKey) {
+  public void setPixKey(@javax.annotation.Nullable String pixKey) {
     this.pixKey = JsonNullable.<String>of(pixKey);
   }
 
-
-  public BankAdditionalData cpf(String cpf) {
+  public BankAdditionalData cpf(@javax.annotation.Nullable String cpf) {
     this.cpf = JsonNullable.<String>of(cpf);
     
     return this;
   }
 
-   /**
+  /**
    * Partially masked CPF - CPF is a Brazilian tax identification number
    * @return cpf
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -392,21 +394,20 @@ public class BankAdditionalData {
     this.cpf = cpf;
   }
 
-  public void setCpf(String cpf) {
+  public void setCpf(@javax.annotation.Nullable String cpf) {
     this.cpf = JsonNullable.<String>of(cpf);
   }
 
-
-  public BankAdditionalData cnpj(String cnpj) {
+  public BankAdditionalData cnpj(@javax.annotation.Nullable String cnpj) {
     this.cnpj = JsonNullable.<String>of(cnpj);
     
     return this;
   }
 
-   /**
+  /**
    * Partially masked CNPJ - CNPJ is a Brazilian company tax identification number
    * @return cnpj
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -426,7 +427,7 @@ public class BankAdditionalData {
     this.cnpj = cnpj;
   }
 
-  public void setCnpj(String cnpj) {
+  public void setCnpj(@javax.annotation.Nullable String cnpj) {
     this.cnpj = JsonNullable.<String>of(cnpj);
   }
 

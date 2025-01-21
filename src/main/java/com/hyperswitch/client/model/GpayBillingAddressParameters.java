@@ -34,27 +34,29 @@ import java.util.StringJoiner;
   GpayBillingAddressParameters.JSON_PROPERTY_PHONE_NUMBER_REQUIRED,
   GpayBillingAddressParameters.JSON_PROPERTY_FORMAT
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class GpayBillingAddressParameters {
   public static final String JSON_PROPERTY_PHONE_NUMBER_REQUIRED = "phone_number_required";
+  @javax.annotation.Nonnull
   private Boolean phoneNumberRequired;
 
   public static final String JSON_PROPERTY_FORMAT = "format";
+  @javax.annotation.Nonnull
   private GpayBillingAddressFormat format;
 
   public GpayBillingAddressParameters() {
   }
 
-  public GpayBillingAddressParameters phoneNumberRequired(Boolean phoneNumberRequired) {
+  public GpayBillingAddressParameters phoneNumberRequired(@javax.annotation.Nonnull Boolean phoneNumberRequired) {
     
     this.phoneNumberRequired = phoneNumberRequired;
     return this;
   }
 
-   /**
+  /**
    * Is billing phone number required
    * @return phoneNumberRequired
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_PHONE_NUMBER_REQUIRED)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -66,21 +68,20 @@ public class GpayBillingAddressParameters {
 
   @JsonProperty(JSON_PROPERTY_PHONE_NUMBER_REQUIRED)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setPhoneNumberRequired(Boolean phoneNumberRequired) {
+  public void setPhoneNumberRequired(@javax.annotation.Nonnull Boolean phoneNumberRequired) {
     this.phoneNumberRequired = phoneNumberRequired;
   }
 
-
-  public GpayBillingAddressParameters format(GpayBillingAddressFormat format) {
+  public GpayBillingAddressParameters format(@javax.annotation.Nonnull GpayBillingAddressFormat format) {
     
     this.format = format;
     return this;
   }
 
-   /**
+  /**
    * Get format
    * @return format
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_FORMAT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -92,7 +93,7 @@ public class GpayBillingAddressParameters {
 
   @JsonProperty(JSON_PROPERTY_FORMAT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setFormat(GpayBillingAddressFormat format) {
+  public void setFormat(@javax.annotation.Nonnull GpayBillingAddressFormat format) {
     this.format = format;
   }
 

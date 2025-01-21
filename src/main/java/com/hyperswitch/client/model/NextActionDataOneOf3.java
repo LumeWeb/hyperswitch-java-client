@@ -40,22 +40,25 @@ import java.util.StringJoiner;
   NextActionDataOneOf3.JSON_PROPERTY_TYPE
 })
 @JsonTypeName("NextActionData_oneOf_3")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class NextActionDataOneOf3 {
   public static final String JSON_PROPERTY_IMAGE_DATA_URL = "image_data_url";
+  @javax.annotation.Nonnull
   private String imageDataUrl;
 
   public static final String JSON_PROPERTY_DISPLAY_TO_TIMESTAMP = "display_to_timestamp";
+  @javax.annotation.Nullable
   private JsonNullable<Long> displayToTimestamp = JsonNullable.<Long>undefined();
 
   public static final String JSON_PROPERTY_QR_CODE_URL = "qr_code_url";
+  @javax.annotation.Nonnull
   private String qrCodeUrl;
 
   /**
    * Gets or Sets type
    */
   public enum TypeEnum {
-    QR_CODE_INFORMATION("qr_code_information");
+    QR_CODE_INFORMATION(String.valueOf("qr_code_information"));
 
     private String value;
 
@@ -85,21 +88,22 @@ public class NextActionDataOneOf3 {
   }
 
   public static final String JSON_PROPERTY_TYPE = "type";
+  @javax.annotation.Nonnull
   private TypeEnum type;
 
   public NextActionDataOneOf3() {
   }
 
-  public NextActionDataOneOf3 imageDataUrl(String imageDataUrl) {
+  public NextActionDataOneOf3 imageDataUrl(@javax.annotation.Nonnull String imageDataUrl) {
     
     this.imageDataUrl = imageDataUrl;
     return this;
   }
 
-   /**
+  /**
    * Hyperswitch generated image data source url
    * @return imageDataUrl
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_IMAGE_DATA_URL)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -111,21 +115,20 @@ public class NextActionDataOneOf3 {
 
   @JsonProperty(JSON_PROPERTY_IMAGE_DATA_URL)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setImageDataUrl(String imageDataUrl) {
+  public void setImageDataUrl(@javax.annotation.Nonnull String imageDataUrl) {
     this.imageDataUrl = imageDataUrl;
   }
 
-
-  public NextActionDataOneOf3 displayToTimestamp(Long displayToTimestamp) {
+  public NextActionDataOneOf3 displayToTimestamp(@javax.annotation.Nullable Long displayToTimestamp) {
     this.displayToTimestamp = JsonNullable.<Long>of(displayToTimestamp);
     
     return this;
   }
 
-   /**
+  /**
    * Get displayToTimestamp
    * @return displayToTimestamp
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -145,21 +148,20 @@ public class NextActionDataOneOf3 {
     this.displayToTimestamp = displayToTimestamp;
   }
 
-  public void setDisplayToTimestamp(Long displayToTimestamp) {
+  public void setDisplayToTimestamp(@javax.annotation.Nullable Long displayToTimestamp) {
     this.displayToTimestamp = JsonNullable.<Long>of(displayToTimestamp);
   }
 
-
-  public NextActionDataOneOf3 qrCodeUrl(String qrCodeUrl) {
+  public NextActionDataOneOf3 qrCodeUrl(@javax.annotation.Nonnull String qrCodeUrl) {
     
     this.qrCodeUrl = qrCodeUrl;
     return this;
   }
 
-   /**
+  /**
    * The url for Qr code given by the connector
    * @return qrCodeUrl
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_QR_CODE_URL)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -171,21 +173,20 @@ public class NextActionDataOneOf3 {
 
   @JsonProperty(JSON_PROPERTY_QR_CODE_URL)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setQrCodeUrl(String qrCodeUrl) {
+  public void setQrCodeUrl(@javax.annotation.Nonnull String qrCodeUrl) {
     this.qrCodeUrl = qrCodeUrl;
   }
 
-
-  public NextActionDataOneOf3 type(TypeEnum type) {
+  public NextActionDataOneOf3 type(@javax.annotation.Nonnull TypeEnum type) {
     
     this.type = type;
     return this;
   }
 
-   /**
+  /**
    * Get type
    * @return type
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_TYPE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -197,7 +198,7 @@ public class NextActionDataOneOf3 {
 
   @JsonProperty(JSON_PROPERTY_TYPE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setType(TypeEnum type) {
+  public void setType(@javax.annotation.Nonnull TypeEnum type) {
     this.type = type;
   }
 

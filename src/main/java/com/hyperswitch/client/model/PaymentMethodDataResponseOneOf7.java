@@ -33,24 +33,25 @@ import java.util.StringJoiner;
   PaymentMethodDataResponseOneOf7.JSON_PROPERTY_MANDATE_PAYMENT
 })
 @JsonTypeName("PaymentMethodDataResponse_oneOf_7")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class PaymentMethodDataResponseOneOf7 {
   public static final String JSON_PROPERTY_MANDATE_PAYMENT = "mandate_payment";
+  @javax.annotation.Nonnull
   private Object mandatePayment;
 
   public PaymentMethodDataResponseOneOf7() {
   }
 
-  public PaymentMethodDataResponseOneOf7 mandatePayment(Object mandatePayment) {
+  public PaymentMethodDataResponseOneOf7 mandatePayment(@javax.annotation.Nonnull Object mandatePayment) {
     
     this.mandatePayment = mandatePayment;
     return this;
   }
 
-   /**
+  /**
    * Get mandatePayment
    * @return mandatePayment
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_MANDATE_PAYMENT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -62,7 +63,7 @@ public class PaymentMethodDataResponseOneOf7 {
 
   @JsonProperty(JSON_PROPERTY_MANDATE_PAYMENT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setMandatePayment(Object mandatePayment) {
+  public void setMandatePayment(@javax.annotation.Nonnull Object mandatePayment) {
     this.mandatePayment = mandatePayment;
   }
 

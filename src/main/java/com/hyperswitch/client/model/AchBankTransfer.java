@@ -41,36 +41,41 @@ import java.util.StringJoiner;
   AchBankTransfer.JSON_PROPERTY_BANK_ACCOUNT_NUMBER,
   AchBankTransfer.JSON_PROPERTY_BANK_ROUTING_NUMBER
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class AchBankTransfer {
   public static final String JSON_PROPERTY_BANK_NAME = "bank_name";
+  @javax.annotation.Nullable
   private JsonNullable<String> bankName = JsonNullable.<String>undefined();
 
   public static final String JSON_PROPERTY_BANK_COUNTRY_CODE = "bank_country_code";
+  @javax.annotation.Nullable
   private JsonNullable<CountryAlpha2> bankCountryCode = JsonNullable.<CountryAlpha2>undefined();
 
   public static final String JSON_PROPERTY_BANK_CITY = "bank_city";
+  @javax.annotation.Nullable
   private JsonNullable<String> bankCity = JsonNullable.<String>undefined();
 
   public static final String JSON_PROPERTY_BANK_ACCOUNT_NUMBER = "bank_account_number";
+  @javax.annotation.Nonnull
   private String bankAccountNumber;
 
   public static final String JSON_PROPERTY_BANK_ROUTING_NUMBER = "bank_routing_number";
+  @javax.annotation.Nonnull
   private String bankRoutingNumber;
 
   public AchBankTransfer() {
   }
 
-  public AchBankTransfer bankName(String bankName) {
+  public AchBankTransfer bankName(@javax.annotation.Nullable String bankName) {
     this.bankName = JsonNullable.<String>of(bankName);
     
     return this;
   }
 
-   /**
+  /**
    * Bank name
    * @return bankName
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -90,21 +95,20 @@ public class AchBankTransfer {
     this.bankName = bankName;
   }
 
-  public void setBankName(String bankName) {
+  public void setBankName(@javax.annotation.Nullable String bankName) {
     this.bankName = JsonNullable.<String>of(bankName);
   }
 
-
-  public AchBankTransfer bankCountryCode(CountryAlpha2 bankCountryCode) {
+  public AchBankTransfer bankCountryCode(@javax.annotation.Nullable CountryAlpha2 bankCountryCode) {
     this.bankCountryCode = JsonNullable.<CountryAlpha2>of(bankCountryCode);
     
     return this;
   }
 
-   /**
+  /**
    * Get bankCountryCode
    * @return bankCountryCode
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -124,21 +128,20 @@ public class AchBankTransfer {
     this.bankCountryCode = bankCountryCode;
   }
 
-  public void setBankCountryCode(CountryAlpha2 bankCountryCode) {
+  public void setBankCountryCode(@javax.annotation.Nullable CountryAlpha2 bankCountryCode) {
     this.bankCountryCode = JsonNullable.<CountryAlpha2>of(bankCountryCode);
   }
 
-
-  public AchBankTransfer bankCity(String bankCity) {
+  public AchBankTransfer bankCity(@javax.annotation.Nullable String bankCity) {
     this.bankCity = JsonNullable.<String>of(bankCity);
     
     return this;
   }
 
-   /**
+  /**
    * Bank city
    * @return bankCity
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -158,21 +161,20 @@ public class AchBankTransfer {
     this.bankCity = bankCity;
   }
 
-  public void setBankCity(String bankCity) {
+  public void setBankCity(@javax.annotation.Nullable String bankCity) {
     this.bankCity = JsonNullable.<String>of(bankCity);
   }
 
-
-  public AchBankTransfer bankAccountNumber(String bankAccountNumber) {
+  public AchBankTransfer bankAccountNumber(@javax.annotation.Nonnull String bankAccountNumber) {
     
     this.bankAccountNumber = bankAccountNumber;
     return this;
   }
 
-   /**
+  /**
    * Bank account number is an unique identifier assigned by a bank to a customer.
    * @return bankAccountNumber
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_BANK_ACCOUNT_NUMBER)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -184,21 +186,20 @@ public class AchBankTransfer {
 
   @JsonProperty(JSON_PROPERTY_BANK_ACCOUNT_NUMBER)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setBankAccountNumber(String bankAccountNumber) {
+  public void setBankAccountNumber(@javax.annotation.Nonnull String bankAccountNumber) {
     this.bankAccountNumber = bankAccountNumber;
   }
 
-
-  public AchBankTransfer bankRoutingNumber(String bankRoutingNumber) {
+  public AchBankTransfer bankRoutingNumber(@javax.annotation.Nonnull String bankRoutingNumber) {
     
     this.bankRoutingNumber = bankRoutingNumber;
     return this;
   }
 
-   /**
+  /**
    * [9 digits] Routing number - used in USA for identifying a specific bank.
    * @return bankRoutingNumber
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_BANK_ROUTING_NUMBER)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -210,7 +211,7 @@ public class AchBankTransfer {
 
   @JsonProperty(JSON_PROPERTY_BANK_ROUTING_NUMBER)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setBankRoutingNumber(String bankRoutingNumber) {
+  public void setBankRoutingNumber(@javax.annotation.Nonnull String bankRoutingNumber) {
     this.bankRoutingNumber = bankRoutingNumber;
   }
 

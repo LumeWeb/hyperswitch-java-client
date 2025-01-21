@@ -23,22 +23,21 @@ import org.openapitools.jackson.nullable.JsonNullable;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.openapitools.jackson.nullable.JsonNullable;
 import java.util.NoSuchElementException;
-import org.junit.Assert;
-import org.junit.Ignore;
-import org.junit.Test;
-
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Test;
 
 /**
  * Model tests for PaymentsDynamicTaxCalculationResponse
  */
-public class PaymentsDynamicTaxCalculationResponseTest {
+class PaymentsDynamicTaxCalculationResponseTest {
     private final PaymentsDynamicTaxCalculationResponse model = new PaymentsDynamicTaxCalculationResponse();
 
     /**
      * Model tests for PaymentsDynamicTaxCalculationResponse
      */
     @Test
-    public void testPaymentsDynamicTaxCalculationResponse() {
+    void testPaymentsDynamicTaxCalculationResponse() {
         // TODO: test PaymentsDynamicTaxCalculationResponse
     }
 
@@ -46,7 +45,7 @@ public class PaymentsDynamicTaxCalculationResponseTest {
      * Test the property 'paymentId'
      */
     @Test
-    public void paymentIdTest() {
+    void paymentIdTest() {
         // TODO: test paymentId
     }
 
@@ -54,7 +53,7 @@ public class PaymentsDynamicTaxCalculationResponseTest {
      * Test the property 'netAmount'
      */
     @Test
-    public void netAmountTest() {
+    void netAmountTest() {
         // TODO: test netAmount
     }
 
@@ -62,7 +61,7 @@ public class PaymentsDynamicTaxCalculationResponseTest {
      * Test the property 'orderTaxAmount'
      */
     @Test
-    public void orderTaxAmountTest() {
+    void orderTaxAmountTest() {
         // TODO: test orderTaxAmount
     }
 
@@ -70,7 +69,7 @@ public class PaymentsDynamicTaxCalculationResponseTest {
      * Test the property 'shippingCost'
      */
     @Test
-    public void shippingCostTest() {
+    void shippingCostTest() {
         // TODO: test shippingCost
     }
 
@@ -78,7 +77,7 @@ public class PaymentsDynamicTaxCalculationResponseTest {
      * Test the property 'displayAmount'
      */
     @Test
-    public void displayAmountTest() {
+    void displayAmountTest() {
         // TODO: test displayAmount
     }
 

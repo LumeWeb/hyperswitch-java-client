@@ -23,6 +23,7 @@ import com.fasterxml.jackson.annotation.JsonValue;
 import com.hyperswitch.client.model.ConnectorType;
 import com.hyperswitch.client.model.FrmPaymentMethod;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 import com.fasterxml.jackson.annotation.JsonTypeName;
@@ -37,27 +38,29 @@ import java.util.StringJoiner;
   FrmConfigs.JSON_PROPERTY_GATEWAY,
   FrmConfigs.JSON_PROPERTY_PAYMENT_METHODS
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class FrmConfigs {
   public static final String JSON_PROPERTY_GATEWAY = "gateway";
+  @javax.annotation.Nonnull
   private ConnectorType gateway;
 
   public static final String JSON_PROPERTY_PAYMENT_METHODS = "payment_methods";
+  @javax.annotation.Nonnull
   private List<FrmPaymentMethod> paymentMethods = new ArrayList<>();
 
   public FrmConfigs() {
   }
 
-  public FrmConfigs gateway(ConnectorType gateway) {
+  public FrmConfigs gateway(@javax.annotation.Nonnull ConnectorType gateway) {
     
     this.gateway = gateway;
     return this;
   }
 
-   /**
+  /**
    * Get gateway
    * @return gateway
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_GATEWAY)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -69,12 +72,11 @@ public class FrmConfigs {
 
   @JsonProperty(JSON_PROPERTY_GATEWAY)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setGateway(ConnectorType gateway) {
+  public void setGateway(@javax.annotation.Nonnull ConnectorType gateway) {
     this.gateway = gateway;
   }
 
-
-  public FrmConfigs paymentMethods(List<FrmPaymentMethod> paymentMethods) {
+  public FrmConfigs paymentMethods(@javax.annotation.Nonnull List<FrmPaymentMethod> paymentMethods) {
     
     this.paymentMethods = paymentMethods;
     return this;
@@ -88,10 +90,10 @@ public class FrmConfigs {
     return this;
   }
 
-   /**
+  /**
    * payment methods that can be used in the payment
    * @return paymentMethods
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_PAYMENT_METHODS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -103,7 +105,7 @@ public class FrmConfigs {
 
   @JsonProperty(JSON_PROPERTY_PAYMENT_METHODS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setPaymentMethods(List<FrmPaymentMethod> paymentMethods) {
+  public void setPaymentMethods(@javax.annotation.Nonnull List<FrmPaymentMethod> paymentMethods) {
     this.paymentMethods = paymentMethods;
   }
 

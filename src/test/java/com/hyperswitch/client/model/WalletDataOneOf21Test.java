@@ -18,22 +18,21 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonTypeName;
 import com.fasterxml.jackson.annotation.JsonValue;
-import org.junit.Assert;
-import org.junit.Ignore;
-import org.junit.Test;
-
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Test;
 
 /**
  * Model tests for WalletDataOneOf21
  */
-public class WalletDataOneOf21Test {
+class WalletDataOneOf21Test {
     private final WalletDataOneOf21 model = new WalletDataOneOf21();
 
     /**
      * Model tests for WalletDataOneOf21
      */
     @Test
-    public void testWalletDataOneOf21() {
+    void testWalletDataOneOf21() {
         // TODO: test WalletDataOneOf21
     }
 
@@ -41,7 +40,7 @@ public class WalletDataOneOf21Test {
      * Test the property 'vippsRedirect'
      */
     @Test
-    public void vippsRedirectTest() {
+    void vippsRedirectTest() {
         // TODO: test vippsRedirect
     }
 

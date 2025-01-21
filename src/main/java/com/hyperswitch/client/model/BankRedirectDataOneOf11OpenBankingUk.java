@@ -36,27 +36,29 @@ import java.util.StringJoiner;
   BankRedirectDataOneOf11OpenBankingUk.JSON_PROPERTY_COUNTRY
 })
 @JsonTypeName("BankRedirectData_oneOf_11_open_banking_uk")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class BankRedirectDataOneOf11OpenBankingUk {
   public static final String JSON_PROPERTY_ISSUER = "issuer";
+  @javax.annotation.Nonnull
   private BankNames issuer;
 
   public static final String JSON_PROPERTY_COUNTRY = "country";
+  @javax.annotation.Nonnull
   private CountryAlpha2 country;
 
   public BankRedirectDataOneOf11OpenBankingUk() {
   }
 
-  public BankRedirectDataOneOf11OpenBankingUk issuer(BankNames issuer) {
+  public BankRedirectDataOneOf11OpenBankingUk issuer(@javax.annotation.Nonnull BankNames issuer) {
     
     this.issuer = issuer;
     return this;
   }
 
-   /**
+  /**
    * Get issuer
    * @return issuer
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_ISSUER)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -68,21 +70,20 @@ public class BankRedirectDataOneOf11OpenBankingUk {
 
   @JsonProperty(JSON_PROPERTY_ISSUER)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setIssuer(BankNames issuer) {
+  public void setIssuer(@javax.annotation.Nonnull BankNames issuer) {
     this.issuer = issuer;
   }
 
-
-  public BankRedirectDataOneOf11OpenBankingUk country(CountryAlpha2 country) {
+  public BankRedirectDataOneOf11OpenBankingUk country(@javax.annotation.Nonnull CountryAlpha2 country) {
     
     this.country = country;
     return this;
   }
 
-   /**
+  /**
    * Get country
    * @return country
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_COUNTRY)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -94,7 +95,7 @@ public class BankRedirectDataOneOf11OpenBankingUk {
 
   @JsonProperty(JSON_PROPERTY_COUNTRY)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setCountry(CountryAlpha2 country) {
+  public void setCountry(@javax.annotation.Nonnull CountryAlpha2 country) {
     this.country = country;
   }
 

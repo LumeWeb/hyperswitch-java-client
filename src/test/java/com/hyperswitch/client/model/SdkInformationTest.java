@@ -20,22 +20,21 @@ import com.fasterxml.jackson.annotation.JsonTypeName;
 import com.fasterxml.jackson.annotation.JsonValue;
 import java.util.HashMap;
 import java.util.Map;
-import org.junit.Assert;
-import org.junit.Ignore;
-import org.junit.Test;
-
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Test;
 
 /**
  * Model tests for SdkInformation
  */
-public class SdkInformationTest {
+class SdkInformationTest {
     private final SdkInformation model = new SdkInformation();
 
     /**
      * Model tests for SdkInformation
      */
     @Test
-    public void testSdkInformation() {
+    void testSdkInformation() {
         // TODO: test SdkInformation
     }
 
@@ -43,7 +42,7 @@ public class SdkInformationTest {
      * Test the property 'sdkAppId'
      */
     @Test
-    public void sdkAppIdTest() {
+    void sdkAppIdTest() {
         // TODO: test sdkAppId
     }
 
@@ -51,7 +50,7 @@ public class SdkInformationTest {
      * Test the property 'sdkEncData'
      */
     @Test
-    public void sdkEncDataTest() {
+    void sdkEncDataTest() {
         // TODO: test sdkEncData
     }
 
@@ -59,7 +58,7 @@ public class SdkInformationTest {
      * Test the property 'sdkEphemPubKey'
      */
     @Test
-    public void sdkEphemPubKeyTest() {
+    void sdkEphemPubKeyTest() {
         // TODO: test sdkEphemPubKey
     }
 
@@ -67,7 +66,7 @@ public class SdkInformationTest {
      * Test the property 'sdkTransId'
      */
     @Test
-    public void sdkTransIdTest() {
+    void sdkTransIdTest() {
         // TODO: test sdkTransId
     }
 
@@ -75,7 +74,7 @@ public class SdkInformationTest {
      * Test the property 'sdkReferenceNumber'
      */
     @Test
-    public void sdkReferenceNumberTest() {
+    void sdkReferenceNumberTest() {
         // TODO: test sdkReferenceNumber
     }
 
@@ -83,7 +82,7 @@ public class SdkInformationTest {
      * Test the property 'sdkMaxTimeout'
      */
     @Test
-    public void sdkMaxTimeoutTest() {
+    void sdkMaxTimeoutTest() {
         // TODO: test sdkMaxTimeout
     }
 

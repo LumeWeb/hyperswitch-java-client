@@ -25,115 +25,35 @@ import com.hyperswitch.client.model.PayoutStatus;
 import com.hyperswitch.client.model.PayoutType;
 import java.time.OffsetDateTime;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import org.openapitools.jackson.nullable.JsonNullable;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.openapitools.jackson.nullable.JsonNullable;
 import java.util.NoSuchElementException;
-import org.junit.Assert;
-import org.junit.Ignore;
-import org.junit.Test;
-
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Test;
 
 /**
  * Model tests for PayoutListFilterConstraints
  */
-public class PayoutListFilterConstraintsTest {
+class PayoutListFilterConstraintsTest {
     private final PayoutListFilterConstraints model = new PayoutListFilterConstraints();
 
     /**
      * Model tests for PayoutListFilterConstraints
      */
     @Test
-    public void testPayoutListFilterConstraints() {
+    void testPayoutListFilterConstraints() {
         // TODO: test PayoutListFilterConstraints
-    }
-
-    /**
-     * Test the property 'payoutId'
-     */
-    @Test
-    public void payoutIdTest() {
-        // TODO: test payoutId
-    }
-
-    /**
-     * Test the property 'profileId'
-     */
-    @Test
-    public void profileIdTest() {
-        // TODO: test profileId
-    }
-
-    /**
-     * Test the property 'customerId'
-     */
-    @Test
-    public void customerIdTest() {
-        // TODO: test customerId
-    }
-
-    /**
-     * Test the property 'limit'
-     */
-    @Test
-    public void limitTest() {
-        // TODO: test limit
-    }
-
-    /**
-     * Test the property 'offset'
-     */
-    @Test
-    public void offsetTest() {
-        // TODO: test offset
-    }
-
-    /**
-     * Test the property 'connector'
-     */
-    @Test
-    public void connectorTest() {
-        // TODO: test connector
-    }
-
-    /**
-     * Test the property 'currency'
-     */
-    @Test
-    public void currencyTest() {
-        // TODO: test currency
-    }
-
-    /**
-     * Test the property 'status'
-     */
-    @Test
-    public void statusTest() {
-        // TODO: test status
-    }
-
-    /**
-     * Test the property 'payoutMethod'
-     */
-    @Test
-    public void payoutMethodTest() {
-        // TODO: test payoutMethod
-    }
-
-    /**
-     * Test the property 'entityType'
-     */
-    @Test
-    public void entityTypeTest() {
-        // TODO: test entityType
     }
 
     /**
      * Test the property 'startTime'
      */
     @Test
-    public void startTimeTest() {
+    void startTimeTest() {
         // TODO: test startTime
     }
 
@@ -141,8 +61,88 @@ public class PayoutListFilterConstraintsTest {
      * Test the property 'endTime'
      */
     @Test
-    public void endTimeTest() {
+    void endTimeTest() {
         // TODO: test endTime
+    }
+
+    /**
+     * Test the property 'payoutId'
+     */
+    @Test
+    void payoutIdTest() {
+        // TODO: test payoutId
+    }
+
+    /**
+     * Test the property 'profileId'
+     */
+    @Test
+    void profileIdTest() {
+        // TODO: test profileId
+    }
+
+    /**
+     * Test the property 'customerId'
+     */
+    @Test
+    void customerIdTest() {
+        // TODO: test customerId
+    }
+
+    /**
+     * Test the property 'limit'
+     */
+    @Test
+    void limitTest() {
+        // TODO: test limit
+    }
+
+    /**
+     * Test the property 'offset'
+     */
+    @Test
+    void offsetTest() {
+        // TODO: test offset
+    }
+
+    /**
+     * Test the property 'connector'
+     */
+    @Test
+    void connectorTest() {
+        // TODO: test connector
+    }
+
+    /**
+     * Test the property 'currency'
+     */
+    @Test
+    void currencyTest() {
+        // TODO: test currency
+    }
+
+    /**
+     * Test the property 'status'
+     */
+    @Test
+    void statusTest() {
+        // TODO: test status
+    }
+
+    /**
+     * Test the property 'payoutMethod'
+     */
+    @Test
+    void payoutMethodTest() {
+        // TODO: test payoutMethod
+    }
+
+    /**
+     * Test the property 'entityType'
+     */
+    @Test
+    void entityTypeTest() {
+        // TODO: test entityType
     }
 
 }

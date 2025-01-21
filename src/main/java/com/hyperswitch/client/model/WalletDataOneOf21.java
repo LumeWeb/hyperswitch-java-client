@@ -33,24 +33,25 @@ import java.util.StringJoiner;
   WalletDataOneOf21.JSON_PROPERTY_VIPPS_REDIRECT
 })
 @JsonTypeName("WalletData_oneOf_21")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class WalletDataOneOf21 {
   public static final String JSON_PROPERTY_VIPPS_REDIRECT = "vipps_redirect";
+  @javax.annotation.Nonnull
   private Object vippsRedirect;
 
   public WalletDataOneOf21() {
   }
 
-  public WalletDataOneOf21 vippsRedirect(Object vippsRedirect) {
+  public WalletDataOneOf21 vippsRedirect(@javax.annotation.Nonnull Object vippsRedirect) {
     
     this.vippsRedirect = vippsRedirect;
     return this;
   }
 
-   /**
+  /**
    * Wallet data for Vipps Redirection
    * @return vippsRedirect
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_VIPPS_REDIRECT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -62,7 +63,7 @@ public class WalletDataOneOf21 {
 
   @JsonProperty(JSON_PROPERTY_VIPPS_REDIRECT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setVippsRedirect(Object vippsRedirect) {
+  public void setVippsRedirect(@javax.annotation.Nonnull Object vippsRedirect) {
     this.vippsRedirect = vippsRedirect;
   }
 

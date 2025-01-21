@@ -19,22 +19,21 @@ import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonTypeName;
 import com.fasterxml.jackson.annotation.JsonValue;
 import com.hyperswitch.client.model.CryptoResponse;
-import org.junit.Assert;
-import org.junit.Ignore;
-import org.junit.Test;
-
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Test;
 
 /**
  * Model tests for PaymentMethodDataResponseOneOf5
  */
-public class PaymentMethodDataResponseOneOf5Test {
+class PaymentMethodDataResponseOneOf5Test {
     private final PaymentMethodDataResponseOneOf5 model = new PaymentMethodDataResponseOneOf5();
 
     /**
      * Model tests for PaymentMethodDataResponseOneOf5
      */
     @Test
-    public void testPaymentMethodDataResponseOneOf5() {
+    void testPaymentMethodDataResponseOneOf5() {
         // TODO: test PaymentMethodDataResponseOneOf5
     }
 
@@ -42,7 +41,7 @@ public class PaymentMethodDataResponseOneOf5Test {
      * Test the property 'crypto'
      */
     @Test
-    public void cryptoTest() {
+    void cryptoTest() {
         // TODO: test crypto
     }
 

@@ -41,30 +41,33 @@ import java.util.StringJoiner;
   CustomerAcceptance.JSON_PROPERTY_ACCEPTED_AT,
   CustomerAcceptance.JSON_PROPERTY_ONLINE
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class CustomerAcceptance {
   public static final String JSON_PROPERTY_ACCEPTANCE_TYPE = "acceptance_type";
+  @javax.annotation.Nonnull
   private AcceptanceType acceptanceType;
 
   public static final String JSON_PROPERTY_ACCEPTED_AT = "accepted_at";
+  @javax.annotation.Nullable
   private JsonNullable<OffsetDateTime> acceptedAt = JsonNullable.<OffsetDateTime>undefined();
 
   public static final String JSON_PROPERTY_ONLINE = "online";
+  @javax.annotation.Nullable
   private JsonNullable<OnlineMandate> online = JsonNullable.<OnlineMandate>undefined();
 
   public CustomerAcceptance() {
   }
 
-  public CustomerAcceptance acceptanceType(AcceptanceType acceptanceType) {
+  public CustomerAcceptance acceptanceType(@javax.annotation.Nonnull AcceptanceType acceptanceType) {
     
     this.acceptanceType = acceptanceType;
     return this;
   }
 
-   /**
+  /**
    * Get acceptanceType
    * @return acceptanceType
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_ACCEPTANCE_TYPE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -76,21 +79,20 @@ public class CustomerAcceptance {
 
   @JsonProperty(JSON_PROPERTY_ACCEPTANCE_TYPE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setAcceptanceType(AcceptanceType acceptanceType) {
+  public void setAcceptanceType(@javax.annotation.Nonnull AcceptanceType acceptanceType) {
     this.acceptanceType = acceptanceType;
   }
 
-
-  public CustomerAcceptance acceptedAt(OffsetDateTime acceptedAt) {
+  public CustomerAcceptance acceptedAt(@javax.annotation.Nullable OffsetDateTime acceptedAt) {
     this.acceptedAt = JsonNullable.<OffsetDateTime>of(acceptedAt);
     
     return this;
   }
 
-   /**
+  /**
    * Specifying when the customer acceptance was provided
    * @return acceptedAt
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -110,21 +112,20 @@ public class CustomerAcceptance {
     this.acceptedAt = acceptedAt;
   }
 
-  public void setAcceptedAt(OffsetDateTime acceptedAt) {
+  public void setAcceptedAt(@javax.annotation.Nullable OffsetDateTime acceptedAt) {
     this.acceptedAt = JsonNullable.<OffsetDateTime>of(acceptedAt);
   }
 
-
-  public CustomerAcceptance online(OnlineMandate online) {
+  public CustomerAcceptance online(@javax.annotation.Nullable OnlineMandate online) {
     this.online = JsonNullable.<OnlineMandate>of(online);
     
     return this;
   }
 
-   /**
+  /**
    * Get online
    * @return online
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -144,7 +145,7 @@ public class CustomerAcceptance {
     this.online = online;
   }
 
-  public void setOnline(OnlineMandate online) {
+  public void setOnline(@javax.annotation.Nullable OnlineMandate online) {
     this.online = JsonNullable.<OnlineMandate>of(online);
   }
 

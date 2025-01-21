@@ -37,27 +37,29 @@ import java.util.StringJoiner;
   RequestSurchargeDetails.JSON_PROPERTY_SURCHARGE_AMOUNT,
   RequestSurchargeDetails.JSON_PROPERTY_TAX_AMOUNT
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class RequestSurchargeDetails {
   public static final String JSON_PROPERTY_SURCHARGE_AMOUNT = "surcharge_amount";
+  @javax.annotation.Nonnull
   private Long surchargeAmount;
 
   public static final String JSON_PROPERTY_TAX_AMOUNT = "tax_amount";
+  @javax.annotation.Nullable
   private JsonNullable<Long> taxAmount = JsonNullable.<Long>undefined();
 
   public RequestSurchargeDetails() {
   }
 
-  public RequestSurchargeDetails surchargeAmount(Long surchargeAmount) {
+  public RequestSurchargeDetails surchargeAmount(@javax.annotation.Nonnull Long surchargeAmount) {
     
     this.surchargeAmount = surchargeAmount;
     return this;
   }
 
-   /**
+  /**
    * Get surchargeAmount
    * @return surchargeAmount
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_SURCHARGE_AMOUNT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -69,21 +71,20 @@ public class RequestSurchargeDetails {
 
   @JsonProperty(JSON_PROPERTY_SURCHARGE_AMOUNT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setSurchargeAmount(Long surchargeAmount) {
+  public void setSurchargeAmount(@javax.annotation.Nonnull Long surchargeAmount) {
     this.surchargeAmount = surchargeAmount;
   }
 
-
-  public RequestSurchargeDetails taxAmount(Long taxAmount) {
+  public RequestSurchargeDetails taxAmount(@javax.annotation.Nullable Long taxAmount) {
     this.taxAmount = JsonNullable.<Long>of(taxAmount);
     
     return this;
   }
 
-   /**
+  /**
    * This Unit struct represents MinorUnit in which core amount works
    * @return taxAmount
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -103,7 +104,7 @@ public class RequestSurchargeDetails {
     this.taxAmount = taxAmount;
   }
 
-  public void setTaxAmount(Long taxAmount) {
+  public void setTaxAmount(@javax.annotation.Nullable Long taxAmount) {
     this.taxAmount = JsonNullable.<Long>of(taxAmount);
   }
 

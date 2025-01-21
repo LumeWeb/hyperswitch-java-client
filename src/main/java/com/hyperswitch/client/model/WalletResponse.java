@@ -34,27 +34,29 @@ import java.util.StringJoiner;
   WalletResponse.JSON_PROPERTY_APPLE_PAY,
   WalletResponse.JSON_PROPERTY_GOOGLE_PAY
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class WalletResponse {
   public static final String JSON_PROPERTY_APPLE_PAY = "apple_pay";
+  @javax.annotation.Nonnull
   private WalletAdditionalDataForCard applePay;
 
   public static final String JSON_PROPERTY_GOOGLE_PAY = "google_pay";
+  @javax.annotation.Nonnull
   private WalletAdditionalDataForCard googlePay;
 
   public WalletResponse() {
   }
 
-  public WalletResponse applePay(WalletAdditionalDataForCard applePay) {
+  public WalletResponse applePay(@javax.annotation.Nonnull WalletAdditionalDataForCard applePay) {
     
     this.applePay = applePay;
     return this;
   }
 
-   /**
+  /**
    * Get applePay
    * @return applePay
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_APPLE_PAY)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -66,21 +68,20 @@ public class WalletResponse {
 
   @JsonProperty(JSON_PROPERTY_APPLE_PAY)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setApplePay(WalletAdditionalDataForCard applePay) {
+  public void setApplePay(@javax.annotation.Nonnull WalletAdditionalDataForCard applePay) {
     this.applePay = applePay;
   }
 
-
-  public WalletResponse googlePay(WalletAdditionalDataForCard googlePay) {
+  public WalletResponse googlePay(@javax.annotation.Nonnull WalletAdditionalDataForCard googlePay) {
     
     this.googlePay = googlePay;
     return this;
   }
 
-   /**
+  /**
    * Get googlePay
    * @return googlePay
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_GOOGLE_PAY)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -92,7 +93,7 @@ public class WalletResponse {
 
   @JsonProperty(JSON_PROPERTY_GOOGLE_PAY)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setGooglePay(WalletAdditionalDataForCard googlePay) {
+  public void setGooglePay(@javax.annotation.Nonnull WalletAdditionalDataForCard googlePay) {
     this.googlePay = googlePay;
   }
 

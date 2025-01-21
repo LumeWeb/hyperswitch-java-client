@@ -34,27 +34,29 @@ import java.util.StringJoiner;
   ConnectorVolumeSplit.JSON_PROPERTY_CONNECTOR,
   ConnectorVolumeSplit.JSON_PROPERTY_SPLIT
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class ConnectorVolumeSplit {
   public static final String JSON_PROPERTY_CONNECTOR = "connector";
+  @javax.annotation.Nonnull
   private RoutableConnectorChoice connector;
 
   public static final String JSON_PROPERTY_SPLIT = "split";
+  @javax.annotation.Nonnull
   private Integer split;
 
   public ConnectorVolumeSplit() {
   }
 
-  public ConnectorVolumeSplit connector(RoutableConnectorChoice connector) {
+  public ConnectorVolumeSplit connector(@javax.annotation.Nonnull RoutableConnectorChoice connector) {
     
     this.connector = connector;
     return this;
   }
 
-   /**
+  /**
    * Get connector
    * @return connector
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_CONNECTOR)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -66,22 +68,21 @@ public class ConnectorVolumeSplit {
 
   @JsonProperty(JSON_PROPERTY_CONNECTOR)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setConnector(RoutableConnectorChoice connector) {
+  public void setConnector(@javax.annotation.Nonnull RoutableConnectorChoice connector) {
     this.connector = connector;
   }
 
-
-  public ConnectorVolumeSplit split(Integer split) {
+  public ConnectorVolumeSplit split(@javax.annotation.Nonnull Integer split) {
     
     this.split = split;
     return this;
   }
 
-   /**
+  /**
    * Get split
    * minimum: 0
    * @return split
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_SPLIT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -93,7 +94,7 @@ public class ConnectorVolumeSplit {
 
   @JsonProperty(JSON_PROPERTY_SPLIT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setSplit(Integer split) {
+  public void setSplit(@javax.annotation.Nonnull Integer split) {
     this.split = split;
   }
 

@@ -38,30 +38,33 @@ import java.util.StringJoiner;
   PixBankTransferAdditionalData.JSON_PROPERTY_CPF,
   PixBankTransferAdditionalData.JSON_PROPERTY_CNPJ
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class PixBankTransferAdditionalData {
   public static final String JSON_PROPERTY_PIX_KEY = "pix_key";
+  @javax.annotation.Nullable
   private JsonNullable<String> pixKey = JsonNullable.<String>undefined();
 
   public static final String JSON_PROPERTY_CPF = "cpf";
+  @javax.annotation.Nullable
   private JsonNullable<String> cpf = JsonNullable.<String>undefined();
 
   public static final String JSON_PROPERTY_CNPJ = "cnpj";
+  @javax.annotation.Nullable
   private JsonNullable<String> cnpj = JsonNullable.<String>undefined();
 
   public PixBankTransferAdditionalData() {
   }
 
-  public PixBankTransferAdditionalData pixKey(String pixKey) {
+  public PixBankTransferAdditionalData pixKey(@javax.annotation.Nullable String pixKey) {
     this.pixKey = JsonNullable.<String>of(pixKey);
     
     return this;
   }
 
-   /**
+  /**
    * Partially masked unique key for pix transfer
    * @return pixKey
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -81,21 +84,20 @@ public class PixBankTransferAdditionalData {
     this.pixKey = pixKey;
   }
 
-  public void setPixKey(String pixKey) {
+  public void setPixKey(@javax.annotation.Nullable String pixKey) {
     this.pixKey = JsonNullable.<String>of(pixKey);
   }
 
-
-  public PixBankTransferAdditionalData cpf(String cpf) {
+  public PixBankTransferAdditionalData cpf(@javax.annotation.Nullable String cpf) {
     this.cpf = JsonNullable.<String>of(cpf);
     
     return this;
   }
 
-   /**
+  /**
    * Partially masked CPF - CPF is a Brazilian tax identification number
    * @return cpf
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -115,21 +117,20 @@ public class PixBankTransferAdditionalData {
     this.cpf = cpf;
   }
 
-  public void setCpf(String cpf) {
+  public void setCpf(@javax.annotation.Nullable String cpf) {
     this.cpf = JsonNullable.<String>of(cpf);
   }
 
-
-  public PixBankTransferAdditionalData cnpj(String cnpj) {
+  public PixBankTransferAdditionalData cnpj(@javax.annotation.Nullable String cnpj) {
     this.cnpj = JsonNullable.<String>of(cnpj);
     
     return this;
   }
 
-   /**
+  /**
    * Partially masked CNPJ - CNPJ is a Brazilian company tax identification number
    * @return cnpj
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -149,7 +150,7 @@ public class PixBankTransferAdditionalData {
     this.cnpj = cnpj;
   }
 
-  public void setCnpj(String cnpj) {
+  public void setCnpj(@javax.annotation.Nullable String cnpj) {
     this.cnpj = JsonNullable.<String>of(cnpj);
   }
 

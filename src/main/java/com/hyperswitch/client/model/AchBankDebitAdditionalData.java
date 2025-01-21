@@ -45,42 +45,49 @@ import java.util.StringJoiner;
   AchBankDebitAdditionalData.JSON_PROPERTY_BANK_TYPE,
   AchBankDebitAdditionalData.JSON_PROPERTY_BANK_HOLDER_TYPE
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class AchBankDebitAdditionalData {
   public static final String JSON_PROPERTY_ACCOUNT_NUMBER = "account_number";
+  @javax.annotation.Nonnull
   private String accountNumber;
 
   public static final String JSON_PROPERTY_ROUTING_NUMBER = "routing_number";
+  @javax.annotation.Nonnull
   private String routingNumber;
 
   public static final String JSON_PROPERTY_CARD_HOLDER_NAME = "card_holder_name";
+  @javax.annotation.Nullable
   private JsonNullable<String> cardHolderName = JsonNullable.<String>undefined();
 
   public static final String JSON_PROPERTY_BANK_ACCOUNT_HOLDER_NAME = "bank_account_holder_name";
+  @javax.annotation.Nullable
   private JsonNullable<String> bankAccountHolderName = JsonNullable.<String>undefined();
 
   public static final String JSON_PROPERTY_BANK_NAME = "bank_name";
+  @javax.annotation.Nullable
   private JsonNullable<BankNames> bankName = JsonNullable.<BankNames>undefined();
 
   public static final String JSON_PROPERTY_BANK_TYPE = "bank_type";
+  @javax.annotation.Nullable
   private JsonNullable<BankType> bankType = JsonNullable.<BankType>undefined();
 
   public static final String JSON_PROPERTY_BANK_HOLDER_TYPE = "bank_holder_type";
+  @javax.annotation.Nullable
   private JsonNullable<BankHolderType> bankHolderType = JsonNullable.<BankHolderType>undefined();
 
   public AchBankDebitAdditionalData() {
   }
 
-  public AchBankDebitAdditionalData accountNumber(String accountNumber) {
+  public AchBankDebitAdditionalData accountNumber(@javax.annotation.Nonnull String accountNumber) {
     
     this.accountNumber = accountNumber;
     return this;
   }
 
-   /**
+  /**
    * Partially masked account number for ach bank debit payment
    * @return accountNumber
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_ACCOUNT_NUMBER)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -92,21 +99,20 @@ public class AchBankDebitAdditionalData {
 
   @JsonProperty(JSON_PROPERTY_ACCOUNT_NUMBER)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setAccountNumber(String accountNumber) {
+  public void setAccountNumber(@javax.annotation.Nonnull String accountNumber) {
     this.accountNumber = accountNumber;
   }
 
-
-  public AchBankDebitAdditionalData routingNumber(String routingNumber) {
+  public AchBankDebitAdditionalData routingNumber(@javax.annotation.Nonnull String routingNumber) {
     
     this.routingNumber = routingNumber;
     return this;
   }
 
-   /**
+  /**
    * Partially masked routing number for ach bank debit payment
    * @return routingNumber
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_ROUTING_NUMBER)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -118,21 +124,20 @@ public class AchBankDebitAdditionalData {
 
   @JsonProperty(JSON_PROPERTY_ROUTING_NUMBER)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setRoutingNumber(String routingNumber) {
+  public void setRoutingNumber(@javax.annotation.Nonnull String routingNumber) {
     this.routingNumber = routingNumber;
   }
 
-
-  public AchBankDebitAdditionalData cardHolderName(String cardHolderName) {
+  public AchBankDebitAdditionalData cardHolderName(@javax.annotation.Nullable String cardHolderName) {
     this.cardHolderName = JsonNullable.<String>of(cardHolderName);
     
     return this;
   }
 
-   /**
+  /**
    * Card holder&#39;s name
    * @return cardHolderName
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -152,21 +157,20 @@ public class AchBankDebitAdditionalData {
     this.cardHolderName = cardHolderName;
   }
 
-  public void setCardHolderName(String cardHolderName) {
+  public void setCardHolderName(@javax.annotation.Nullable String cardHolderName) {
     this.cardHolderName = JsonNullable.<String>of(cardHolderName);
   }
 
-
-  public AchBankDebitAdditionalData bankAccountHolderName(String bankAccountHolderName) {
+  public AchBankDebitAdditionalData bankAccountHolderName(@javax.annotation.Nullable String bankAccountHolderName) {
     this.bankAccountHolderName = JsonNullable.<String>of(bankAccountHolderName);
     
     return this;
   }
 
-   /**
+  /**
    * Bank account&#39;s owner name
    * @return bankAccountHolderName
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -186,21 +190,20 @@ public class AchBankDebitAdditionalData {
     this.bankAccountHolderName = bankAccountHolderName;
   }
 
-  public void setBankAccountHolderName(String bankAccountHolderName) {
+  public void setBankAccountHolderName(@javax.annotation.Nullable String bankAccountHolderName) {
     this.bankAccountHolderName = JsonNullable.<String>of(bankAccountHolderName);
   }
 
-
-  public AchBankDebitAdditionalData bankName(BankNames bankName) {
+  public AchBankDebitAdditionalData bankName(@javax.annotation.Nullable BankNames bankName) {
     this.bankName = JsonNullable.<BankNames>of(bankName);
     
     return this;
   }
 
-   /**
+  /**
    * Get bankName
    * @return bankName
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -220,21 +223,20 @@ public class AchBankDebitAdditionalData {
     this.bankName = bankName;
   }
 
-  public void setBankName(BankNames bankName) {
+  public void setBankName(@javax.annotation.Nullable BankNames bankName) {
     this.bankName = JsonNullable.<BankNames>of(bankName);
   }
 
-
-  public AchBankDebitAdditionalData bankType(BankType bankType) {
+  public AchBankDebitAdditionalData bankType(@javax.annotation.Nullable BankType bankType) {
     this.bankType = JsonNullable.<BankType>of(bankType);
     
     return this;
   }
 
-   /**
+  /**
    * Get bankType
    * @return bankType
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -254,21 +256,20 @@ public class AchBankDebitAdditionalData {
     this.bankType = bankType;
   }
 
-  public void setBankType(BankType bankType) {
+  public void setBankType(@javax.annotation.Nullable BankType bankType) {
     this.bankType = JsonNullable.<BankType>of(bankType);
   }
 
-
-  public AchBankDebitAdditionalData bankHolderType(BankHolderType bankHolderType) {
+  public AchBankDebitAdditionalData bankHolderType(@javax.annotation.Nullable BankHolderType bankHolderType) {
     this.bankHolderType = JsonNullable.<BankHolderType>of(bankHolderType);
     
     return this;
   }
 
-   /**
+  /**
    * Get bankHolderType
    * @return bankHolderType
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -288,7 +289,7 @@ public class AchBankDebitAdditionalData {
     this.bankHolderType = bankHolderType;
   }
 
-  public void setBankHolderType(BankHolderType bankHolderType) {
+  public void setBankHolderType(@javax.annotation.Nullable BankHolderType bankHolderType) {
     this.bankHolderType = JsonNullable.<BankHolderType>of(bankHolderType);
   }
 

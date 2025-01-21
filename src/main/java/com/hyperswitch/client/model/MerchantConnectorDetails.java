@@ -37,27 +37,29 @@ import java.util.StringJoiner;
   MerchantConnectorDetails.JSON_PROPERTY_CONNECTOR_ACCOUNT_DETAILS,
   MerchantConnectorDetails.JSON_PROPERTY_METADATA
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class MerchantConnectorDetails {
   public static final String JSON_PROPERTY_CONNECTOR_ACCOUNT_DETAILS = "connector_account_details";
+  @javax.annotation.Nullable
   private JsonNullable<Object> connectorAccountDetails = JsonNullable.<Object>undefined();
 
   public static final String JSON_PROPERTY_METADATA = "metadata";
+  @javax.annotation.Nullable
   private JsonNullable<Object> metadata = JsonNullable.<Object>undefined();
 
   public MerchantConnectorDetails() {
   }
 
-  public MerchantConnectorDetails connectorAccountDetails(Object connectorAccountDetails) {
+  public MerchantConnectorDetails connectorAccountDetails(@javax.annotation.Nullable Object connectorAccountDetails) {
     this.connectorAccountDetails = JsonNullable.<Object>of(connectorAccountDetails);
     
     return this;
   }
 
-   /**
+  /**
    * Account details of the Connector. You can specify up to 50 keys, with key names up to 40 characters long and values up to 500 characters long. Useful for storing additional, structured information on an object.
    * @return connectorAccountDetails
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -77,21 +79,20 @@ public class MerchantConnectorDetails {
     this.connectorAccountDetails = connectorAccountDetails;
   }
 
-  public void setConnectorAccountDetails(Object connectorAccountDetails) {
+  public void setConnectorAccountDetails(@javax.annotation.Nullable Object connectorAccountDetails) {
     this.connectorAccountDetails = JsonNullable.<Object>of(connectorAccountDetails);
   }
 
-
-  public MerchantConnectorDetails metadata(Object metadata) {
+  public MerchantConnectorDetails metadata(@javax.annotation.Nullable Object metadata) {
     this.metadata = JsonNullable.<Object>of(metadata);
     
     return this;
   }
 
-   /**
+  /**
    * Metadata is useful for storing additional, unstructured information on an object.
    * @return metadata
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -111,7 +112,7 @@ public class MerchantConnectorDetails {
     this.metadata = metadata;
   }
 
-  public void setMetadata(Object metadata) {
+  public void setMetadata(@javax.annotation.Nullable Object metadata) {
     this.metadata = JsonNullable.<Object>of(metadata);
   }
 

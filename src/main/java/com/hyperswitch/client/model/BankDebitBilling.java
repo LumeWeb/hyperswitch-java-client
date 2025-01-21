@@ -39,30 +39,33 @@ import java.util.StringJoiner;
   BankDebitBilling.JSON_PROPERTY_EMAIL,
   BankDebitBilling.JSON_PROPERTY_ADDRESS
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class BankDebitBilling {
   public static final String JSON_PROPERTY_NAME = "name";
+  @javax.annotation.Nullable
   private JsonNullable<String> name = JsonNullable.<String>undefined();
 
   public static final String JSON_PROPERTY_EMAIL = "email";
+  @javax.annotation.Nullable
   private JsonNullable<String> email = JsonNullable.<String>undefined();
 
   public static final String JSON_PROPERTY_ADDRESS = "address";
+  @javax.annotation.Nullable
   private JsonNullable<AddressDetails> address = JsonNullable.<AddressDetails>undefined();
 
   public BankDebitBilling() {
   }
 
-  public BankDebitBilling name(String name) {
+  public BankDebitBilling name(@javax.annotation.Nullable String name) {
     this.name = JsonNullable.<String>of(name);
     
     return this;
   }
 
-   /**
+  /**
    * The billing name for bank debits
    * @return name
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -82,21 +85,20 @@ public class BankDebitBilling {
     this.name = name;
   }
 
-  public void setName(String name) {
+  public void setName(@javax.annotation.Nullable String name) {
     this.name = JsonNullable.<String>of(name);
   }
 
-
-  public BankDebitBilling email(String email) {
+  public BankDebitBilling email(@javax.annotation.Nullable String email) {
     this.email = JsonNullable.<String>of(email);
     
     return this;
   }
 
-   /**
+  /**
    * The billing email for bank debits
    * @return email
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -116,21 +118,20 @@ public class BankDebitBilling {
     this.email = email;
   }
 
-  public void setEmail(String email) {
+  public void setEmail(@javax.annotation.Nullable String email) {
     this.email = JsonNullable.<String>of(email);
   }
 
-
-  public BankDebitBilling address(AddressDetails address) {
+  public BankDebitBilling address(@javax.annotation.Nullable AddressDetails address) {
     this.address = JsonNullable.<AddressDetails>of(address);
     
     return this;
   }
 
-   /**
+  /**
    * Get address
    * @return address
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -150,7 +151,7 @@ public class BankDebitBilling {
     this.address = address;
   }
 
-  public void setAddress(AddressDetails address) {
+  public void setAddress(@javax.annotation.Nullable AddressDetails address) {
     this.address = JsonNullable.<AddressDetails>of(address);
   }
 

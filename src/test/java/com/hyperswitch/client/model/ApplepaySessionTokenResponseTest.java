@@ -25,22 +25,21 @@ import org.openapitools.jackson.nullable.JsonNullable;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.openapitools.jackson.nullable.JsonNullable;
 import java.util.NoSuchElementException;
-import org.junit.Assert;
-import org.junit.Ignore;
-import org.junit.Test;
-
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Test;
 
 /**
  * Model tests for ApplepaySessionTokenResponse
  */
-public class ApplepaySessionTokenResponseTest {
+class ApplepaySessionTokenResponseTest {
     private final ApplepaySessionTokenResponse model = new ApplepaySessionTokenResponse();
 
     /**
      * Model tests for ApplepaySessionTokenResponse
      */
     @Test
-    public void testApplepaySessionTokenResponse() {
+    void testApplepaySessionTokenResponse() {
         // TODO: test ApplepaySessionTokenResponse
     }
 
@@ -48,7 +47,7 @@ public class ApplepaySessionTokenResponseTest {
      * Test the property 'sessionTokenData'
      */
     @Test
-    public void sessionTokenDataTest() {
+    void sessionTokenDataTest() {
         // TODO: test sessionTokenData
     }
 
@@ -56,7 +55,7 @@ public class ApplepaySessionTokenResponseTest {
      * Test the property 'paymentRequestData'
      */
     @Test
-    public void paymentRequestDataTest() {
+    void paymentRequestDataTest() {
         // TODO: test paymentRequestData
     }
 
@@ -64,7 +63,7 @@ public class ApplepaySessionTokenResponseTest {
      * Test the property 'connector'
      */
     @Test
-    public void connectorTest() {
+    void connectorTest() {
         // TODO: test connector
     }
 
@@ -72,7 +71,7 @@ public class ApplepaySessionTokenResponseTest {
      * Test the property 'delayedSessionToken'
      */
     @Test
-    public void delayedSessionTokenTest() {
+    void delayedSessionTokenTest() {
         // TODO: test delayedSessionToken
     }
 
@@ -80,7 +79,7 @@ public class ApplepaySessionTokenResponseTest {
      * Test the property 'sdkNextAction'
      */
     @Test
-    public void sdkNextActionTest() {
+    void sdkNextActionTest() {
         // TODO: test sdkNextAction
     }
 
@@ -88,7 +87,7 @@ public class ApplepaySessionTokenResponseTest {
      * Test the property 'connectorReferenceId'
      */
     @Test
-    public void connectorReferenceIdTest() {
+    void connectorReferenceIdTest() {
         // TODO: test connectorReferenceId
     }
 
@@ -96,7 +95,7 @@ public class ApplepaySessionTokenResponseTest {
      * Test the property 'connectorSdkPublicKey'
      */
     @Test
-    public void connectorSdkPublicKeyTest() {
+    void connectorSdkPublicKeyTest() {
         // TODO: test connectorSdkPublicKey
     }
 
@@ -104,7 +103,7 @@ public class ApplepaySessionTokenResponseTest {
      * Test the property 'connectorMerchantId'
      */
     @Test
-    public void connectorMerchantIdTest() {
+    void connectorMerchantIdTest() {
         // TODO: test connectorMerchantId
     }
 

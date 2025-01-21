@@ -33,24 +33,25 @@ import java.util.StringJoiner;
 @JsonPropertyOrder({
   PayLater.JSON_PROPERTY_PAY_LATER
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class PayLater {
   public static final String JSON_PROPERTY_PAY_LATER = "pay_later";
+  @javax.annotation.Nonnull
   private PayLaterData payLater;
 
   public PayLater() {
   }
 
-  public PayLater payLater(PayLaterData payLater) {
+  public PayLater payLater(@javax.annotation.Nonnull PayLaterData payLater) {
     
     this.payLater = payLater;
     return this;
   }
 
-   /**
+  /**
    * Get payLater
    * @return payLater
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_PAY_LATER)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -62,7 +63,7 @@ public class PayLater {
 
   @JsonProperty(JSON_PROPERTY_PAY_LATER)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setPayLater(PayLaterData payLater) {
+  public void setPayLater(@javax.annotation.Nonnull PayLaterData payLater) {
     this.payLater = payLater;
   }
 

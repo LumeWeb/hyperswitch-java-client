@@ -40,36 +40,41 @@ import java.util.StringJoiner;
   PixBankTransfer.JSON_PROPERTY_PIX_KEY,
   PixBankTransfer.JSON_PROPERTY_TAX_ID
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class PixBankTransfer {
   public static final String JSON_PROPERTY_BANK_NAME = "bank_name";
+  @javax.annotation.Nullable
   private JsonNullable<String> bankName = JsonNullable.<String>undefined();
 
   public static final String JSON_PROPERTY_BANK_BRANCH = "bank_branch";
+  @javax.annotation.Nullable
   private JsonNullable<String> bankBranch = JsonNullable.<String>undefined();
 
   public static final String JSON_PROPERTY_BANK_ACCOUNT_NUMBER = "bank_account_number";
+  @javax.annotation.Nonnull
   private String bankAccountNumber;
 
   public static final String JSON_PROPERTY_PIX_KEY = "pix_key";
+  @javax.annotation.Nonnull
   private String pixKey;
 
   public static final String JSON_PROPERTY_TAX_ID = "tax_id";
+  @javax.annotation.Nullable
   private JsonNullable<String> taxId = JsonNullable.<String>undefined();
 
   public PixBankTransfer() {
   }
 
-  public PixBankTransfer bankName(String bankName) {
+  public PixBankTransfer bankName(@javax.annotation.Nullable String bankName) {
     this.bankName = JsonNullable.<String>of(bankName);
     
     return this;
   }
 
-   /**
+  /**
    * Bank name
    * @return bankName
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -89,21 +94,20 @@ public class PixBankTransfer {
     this.bankName = bankName;
   }
 
-  public void setBankName(String bankName) {
+  public void setBankName(@javax.annotation.Nullable String bankName) {
     this.bankName = JsonNullable.<String>of(bankName);
   }
 
-
-  public PixBankTransfer bankBranch(String bankBranch) {
+  public PixBankTransfer bankBranch(@javax.annotation.Nullable String bankBranch) {
     this.bankBranch = JsonNullable.<String>of(bankBranch);
     
     return this;
   }
 
-   /**
+  /**
    * Bank branch
    * @return bankBranch
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -123,21 +127,20 @@ public class PixBankTransfer {
     this.bankBranch = bankBranch;
   }
 
-  public void setBankBranch(String bankBranch) {
+  public void setBankBranch(@javax.annotation.Nullable String bankBranch) {
     this.bankBranch = JsonNullable.<String>of(bankBranch);
   }
 
-
-  public PixBankTransfer bankAccountNumber(String bankAccountNumber) {
+  public PixBankTransfer bankAccountNumber(@javax.annotation.Nonnull String bankAccountNumber) {
     
     this.bankAccountNumber = bankAccountNumber;
     return this;
   }
 
-   /**
+  /**
    * Bank account number is an unique identifier assigned by a bank to a customer.
    * @return bankAccountNumber
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_BANK_ACCOUNT_NUMBER)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -149,21 +152,20 @@ public class PixBankTransfer {
 
   @JsonProperty(JSON_PROPERTY_BANK_ACCOUNT_NUMBER)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setBankAccountNumber(String bankAccountNumber) {
+  public void setBankAccountNumber(@javax.annotation.Nonnull String bankAccountNumber) {
     this.bankAccountNumber = bankAccountNumber;
   }
 
-
-  public PixBankTransfer pixKey(String pixKey) {
+  public PixBankTransfer pixKey(@javax.annotation.Nonnull String pixKey) {
     
     this.pixKey = pixKey;
     return this;
   }
 
-   /**
+  /**
    * Unique key for pix customer
    * @return pixKey
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_PIX_KEY)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -175,21 +177,20 @@ public class PixBankTransfer {
 
   @JsonProperty(JSON_PROPERTY_PIX_KEY)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setPixKey(String pixKey) {
+  public void setPixKey(@javax.annotation.Nonnull String pixKey) {
     this.pixKey = pixKey;
   }
 
-
-  public PixBankTransfer taxId(String taxId) {
+  public PixBankTransfer taxId(@javax.annotation.Nullable String taxId) {
     this.taxId = JsonNullable.<String>of(taxId);
     
     return this;
   }
 
-   /**
+  /**
    * Individual taxpayer identification number
    * @return taxId
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -209,7 +210,7 @@ public class PixBankTransfer {
     this.taxId = taxId;
   }
 
-  public void setTaxId(String taxId) {
+  public void setTaxId(@javax.annotation.Nullable String taxId) {
     this.taxId = JsonNullable.<String>of(taxId);
   }
 

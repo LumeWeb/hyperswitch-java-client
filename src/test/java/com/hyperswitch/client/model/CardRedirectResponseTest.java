@@ -18,22 +18,21 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonTypeName;
 import com.fasterxml.jackson.annotation.JsonValue;
-import org.junit.Assert;
-import org.junit.Ignore;
-import org.junit.Test;
-
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Test;
 
 /**
  * Model tests for CardRedirectResponse
  */
-public class CardRedirectResponseTest {
+class CardRedirectResponseTest {
     private final CardRedirectResponse model = new CardRedirectResponse();
 
     /**
      * Model tests for CardRedirectResponse
      */
     @Test
-    public void testCardRedirectResponse() {
+    void testCardRedirectResponse() {
         // TODO: test CardRedirectResponse
     }
 
@@ -41,7 +40,7 @@ public class CardRedirectResponseTest {
      * Test the property 'knet'
      */
     @Test
-    public void knetTest() {
+    void knetTest() {
         // TODO: test knet
     }
 
@@ -49,7 +48,7 @@ public class CardRedirectResponseTest {
      * Test the property 'benefit'
      */
     @Test
-    public void benefitTest() {
+    void benefitTest() {
         // TODO: test benefit
     }
 
@@ -57,7 +56,7 @@ public class CardRedirectResponseTest {
      * Test the property 'momoAtm'
      */
     @Test
-    public void momoAtmTest() {
+    void momoAtmTest() {
         // TODO: test momoAtm
     }
 
@@ -65,7 +64,7 @@ public class CardRedirectResponseTest {
      * Test the property 'cardRedirect'
      */
     @Test
-    public void cardRedirectTest() {
+    void cardRedirectTest() {
         // TODO: test cardRedirect
     }
 

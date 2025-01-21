@@ -32,24 +32,25 @@ import java.util.StringJoiner;
 @JsonPropertyOrder({
   PazeWalletData.JSON_PROPERTY_COMPLETE_RESPONSE
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class PazeWalletData {
   public static final String JSON_PROPERTY_COMPLETE_RESPONSE = "complete_response";
+  @javax.annotation.Nonnull
   private String completeResponse;
 
   public PazeWalletData() {
   }
 
-  public PazeWalletData completeResponse(String completeResponse) {
+  public PazeWalletData completeResponse(@javax.annotation.Nonnull String completeResponse) {
     
     this.completeResponse = completeResponse;
     return this;
   }
 
-   /**
+  /**
    * Get completeResponse
    * @return completeResponse
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_COMPLETE_RESPONSE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -61,7 +62,7 @@ public class PazeWalletData {
 
   @JsonProperty(JSON_PROPERTY_COMPLETE_RESPONSE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setCompleteResponse(String completeResponse) {
+  public void setCompleteResponse(@javax.annotation.Nonnull String completeResponse) {
     this.completeResponse = completeResponse;
   }
 

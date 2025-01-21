@@ -34,24 +34,25 @@ import java.util.StringJoiner;
   BankTransferDataOneOf7.JSON_PROPERTY_BRI_VA_BANK_TRANSFER
 })
 @JsonTypeName("BankTransferData_oneOf_7")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class BankTransferDataOneOf7 {
   public static final String JSON_PROPERTY_BRI_VA_BANK_TRANSFER = "bri_va_bank_transfer";
+  @javax.annotation.Nonnull
   private BankTransferDataOneOf4PermataBankTransfer briVaBankTransfer;
 
   public BankTransferDataOneOf7() {
   }
 
-  public BankTransferDataOneOf7 briVaBankTransfer(BankTransferDataOneOf4PermataBankTransfer briVaBankTransfer) {
+  public BankTransferDataOneOf7 briVaBankTransfer(@javax.annotation.Nonnull BankTransferDataOneOf4PermataBankTransfer briVaBankTransfer) {
     
     this.briVaBankTransfer = briVaBankTransfer;
     return this;
   }
 
-   /**
+  /**
    * Get briVaBankTransfer
    * @return briVaBankTransfer
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_BRI_VA_BANK_TRANSFER)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -63,7 +64,7 @@ public class BankTransferDataOneOf7 {
 
   @JsonProperty(JSON_PROPERTY_BRI_VA_BANK_TRANSFER)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setBriVaBankTransfer(BankTransferDataOneOf4PermataBankTransfer briVaBankTransfer) {
+  public void setBriVaBankTransfer(@javax.annotation.Nonnull BankTransferDataOneOf4PermataBankTransfer briVaBankTransfer) {
     this.briVaBankTransfer = briVaBankTransfer;
   }
 

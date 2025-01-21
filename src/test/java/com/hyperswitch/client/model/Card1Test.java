@@ -19,22 +19,21 @@ import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonTypeName;
 import com.fasterxml.jackson.annotation.JsonValue;
 import com.hyperswitch.client.model.Card;
-import org.junit.Assert;
-import org.junit.Ignore;
-import org.junit.Test;
-
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Test;
 
 /**
  * Model tests for Card1
  */
-public class Card1Test {
+class Card1Test {
     private final Card1 model = new Card1();
 
     /**
      * Model tests for Card1
      */
     @Test
-    public void testCard1() {
+    void testCard1() {
         // TODO: test Card1
     }
 
@@ -42,7 +41,7 @@ public class Card1Test {
      * Test the property 'card'
      */
     @Test
-    public void cardTest() {
+    void cardTest() {
         // TODO: test card
     }
 

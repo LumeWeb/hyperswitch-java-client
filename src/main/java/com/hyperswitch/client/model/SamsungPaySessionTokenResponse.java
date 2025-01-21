@@ -24,6 +24,7 @@ import com.hyperswitch.client.model.SamsungPayAmountDetails;
 import com.hyperswitch.client.model.SamsungPayMerchantPaymentInformation;
 import com.hyperswitch.client.model.SamsungPayProtocolType;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 import com.fasterxml.jackson.annotation.JsonTypeName;
@@ -43,42 +44,49 @@ import java.util.StringJoiner;
   SamsungPaySessionTokenResponse.JSON_PROPERTY_PROTOCOL,
   SamsungPaySessionTokenResponse.JSON_PROPERTY_ALLOWED_BRANDS
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class SamsungPaySessionTokenResponse {
   public static final String JSON_PROPERTY_VERSION = "version";
+  @javax.annotation.Nonnull
   private String version;
 
   public static final String JSON_PROPERTY_SERVICE_ID = "service_id";
+  @javax.annotation.Nonnull
   private String serviceId;
 
   public static final String JSON_PROPERTY_ORDER_NUMBER = "order_number";
+  @javax.annotation.Nonnull
   private String orderNumber;
 
   public static final String JSON_PROPERTY_MERCHANT = "merchant";
+  @javax.annotation.Nonnull
   private SamsungPayMerchantPaymentInformation merchant;
 
   public static final String JSON_PROPERTY_AMOUNT = "amount";
+  @javax.annotation.Nonnull
   private SamsungPayAmountDetails amount;
 
   public static final String JSON_PROPERTY_PROTOCOL = "protocol";
+  @javax.annotation.Nonnull
   private SamsungPayProtocolType protocol;
 
   public static final String JSON_PROPERTY_ALLOWED_BRANDS = "allowed_brands";
+  @javax.annotation.Nonnull
   private List<String> allowedBrands = new ArrayList<>();
 
   public SamsungPaySessionTokenResponse() {
   }
 
-  public SamsungPaySessionTokenResponse version(String version) {
+  public SamsungPaySessionTokenResponse version(@javax.annotation.Nonnull String version) {
     
     this.version = version;
     return this;
   }
 
-   /**
+  /**
    * Samsung Pay API version
    * @return version
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_VERSION)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -90,21 +98,20 @@ public class SamsungPaySessionTokenResponse {
 
   @JsonProperty(JSON_PROPERTY_VERSION)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setVersion(String version) {
+  public void setVersion(@javax.annotation.Nonnull String version) {
     this.version = version;
   }
 
-
-  public SamsungPaySessionTokenResponse serviceId(String serviceId) {
+  public SamsungPaySessionTokenResponse serviceId(@javax.annotation.Nonnull String serviceId) {
     
     this.serviceId = serviceId;
     return this;
   }
 
-   /**
+  /**
    * Samsung Pay service ID to which session call needs to be made
    * @return serviceId
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_SERVICE_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -116,21 +123,20 @@ public class SamsungPaySessionTokenResponse {
 
   @JsonProperty(JSON_PROPERTY_SERVICE_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setServiceId(String serviceId) {
+  public void setServiceId(@javax.annotation.Nonnull String serviceId) {
     this.serviceId = serviceId;
   }
 
-
-  public SamsungPaySessionTokenResponse orderNumber(String orderNumber) {
+  public SamsungPaySessionTokenResponse orderNumber(@javax.annotation.Nonnull String orderNumber) {
     
     this.orderNumber = orderNumber;
     return this;
   }
 
-   /**
+  /**
    * Order number of the transaction
    * @return orderNumber
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_ORDER_NUMBER)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -142,21 +148,20 @@ public class SamsungPaySessionTokenResponse {
 
   @JsonProperty(JSON_PROPERTY_ORDER_NUMBER)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setOrderNumber(String orderNumber) {
+  public void setOrderNumber(@javax.annotation.Nonnull String orderNumber) {
     this.orderNumber = orderNumber;
   }
 
-
-  public SamsungPaySessionTokenResponse merchant(SamsungPayMerchantPaymentInformation merchant) {
+  public SamsungPaySessionTokenResponse merchant(@javax.annotation.Nonnull SamsungPayMerchantPaymentInformation merchant) {
     
     this.merchant = merchant;
     return this;
   }
 
-   /**
+  /**
    * Get merchant
    * @return merchant
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_MERCHANT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -168,21 +173,20 @@ public class SamsungPaySessionTokenResponse {
 
   @JsonProperty(JSON_PROPERTY_MERCHANT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setMerchant(SamsungPayMerchantPaymentInformation merchant) {
+  public void setMerchant(@javax.annotation.Nonnull SamsungPayMerchantPaymentInformation merchant) {
     this.merchant = merchant;
   }
 
-
-  public SamsungPaySessionTokenResponse amount(SamsungPayAmountDetails amount) {
+  public SamsungPaySessionTokenResponse amount(@javax.annotation.Nonnull SamsungPayAmountDetails amount) {
     
     this.amount = amount;
     return this;
   }
 
-   /**
+  /**
    * Get amount
    * @return amount
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_AMOUNT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -194,21 +198,20 @@ public class SamsungPaySessionTokenResponse {
 
   @JsonProperty(JSON_PROPERTY_AMOUNT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setAmount(SamsungPayAmountDetails amount) {
+  public void setAmount(@javax.annotation.Nonnull SamsungPayAmountDetails amount) {
     this.amount = amount;
   }
 
-
-  public SamsungPaySessionTokenResponse protocol(SamsungPayProtocolType protocol) {
+  public SamsungPaySessionTokenResponse protocol(@javax.annotation.Nonnull SamsungPayProtocolType protocol) {
     
     this.protocol = protocol;
     return this;
   }
 
-   /**
+  /**
    * Get protocol
    * @return protocol
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_PROTOCOL)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -220,12 +223,11 @@ public class SamsungPaySessionTokenResponse {
 
   @JsonProperty(JSON_PROPERTY_PROTOCOL)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setProtocol(SamsungPayProtocolType protocol) {
+  public void setProtocol(@javax.annotation.Nonnull SamsungPayProtocolType protocol) {
     this.protocol = protocol;
   }
 
-
-  public SamsungPaySessionTokenResponse allowedBrands(List<String> allowedBrands) {
+  public SamsungPaySessionTokenResponse allowedBrands(@javax.annotation.Nonnull List<String> allowedBrands) {
     
     this.allowedBrands = allowedBrands;
     return this;
@@ -239,10 +241,10 @@ public class SamsungPaySessionTokenResponse {
     return this;
   }
 
-   /**
+  /**
    * List of supported card brands
    * @return allowedBrands
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_ALLOWED_BRANDS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -254,7 +256,7 @@ public class SamsungPaySessionTokenResponse {
 
   @JsonProperty(JSON_PROPERTY_ALLOWED_BRANDS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setAllowedBrands(List<String> allowedBrands) {
+  public void setAllowedBrands(@javax.annotation.Nonnull List<String> allowedBrands) {
     this.allowedBrands = allowedBrands;
   }
 

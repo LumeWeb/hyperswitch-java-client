@@ -22,22 +22,21 @@ import org.openapitools.jackson.nullable.JsonNullable;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.openapitools.jackson.nullable.JsonNullable;
 import java.util.NoSuchElementException;
-import org.junit.Assert;
-import org.junit.Ignore;
-import org.junit.Test;
-
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Test;
 
 /**
  * Model tests for BecsBankDebitAdditionalData
  */
-public class BecsBankDebitAdditionalDataTest {
+class BecsBankDebitAdditionalDataTest {
     private final BecsBankDebitAdditionalData model = new BecsBankDebitAdditionalData();
 
     /**
      * Model tests for BecsBankDebitAdditionalData
      */
     @Test
-    public void testBecsBankDebitAdditionalData() {
+    void testBecsBankDebitAdditionalData() {
         // TODO: test BecsBankDebitAdditionalData
     }
 
@@ -45,7 +44,7 @@ public class BecsBankDebitAdditionalDataTest {
      * Test the property 'accountNumber'
      */
     @Test
-    public void accountNumberTest() {
+    void accountNumberTest() {
         // TODO: test accountNumber
     }
 
@@ -53,7 +52,7 @@ public class BecsBankDebitAdditionalDataTest {
      * Test the property 'bsbNumber'
      */
     @Test
-    public void bsbNumberTest() {
+    void bsbNumberTest() {
         // TODO: test bsbNumber
     }
 
@@ -61,7 +60,7 @@ public class BecsBankDebitAdditionalDataTest {
      * Test the property 'bankAccountHolderName'
      */
     @Test
-    public void bankAccountHolderNameTest() {
+    void bankAccountHolderNameTest() {
         // TODO: test bankAccountHolderName
     }
 

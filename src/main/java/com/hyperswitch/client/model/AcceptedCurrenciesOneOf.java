@@ -22,6 +22,7 @@ import com.fasterxml.jackson.annotation.JsonTypeName;
 import com.fasterxml.jackson.annotation.JsonValue;
 import com.hyperswitch.client.model.Currency;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 import com.fasterxml.jackson.annotation.JsonTypeName;
@@ -37,13 +38,13 @@ import java.util.StringJoiner;
   AcceptedCurrenciesOneOf.JSON_PROPERTY_LIST
 })
 @JsonTypeName("AcceptedCurrencies_oneOf")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class AcceptedCurrenciesOneOf {
   /**
    * Gets or Sets type
    */
   public enum TypeEnum {
-    ENABLE_ONLY("enable_only");
+    ENABLE_ONLY(String.valueOf("enable_only"));
 
     private String value;
 
@@ -73,24 +74,26 @@ public class AcceptedCurrenciesOneOf {
   }
 
   public static final String JSON_PROPERTY_TYPE = "type";
+  @javax.annotation.Nonnull
   private TypeEnum type;
 
   public static final String JSON_PROPERTY_LIST = "list";
+  @javax.annotation.Nonnull
   private List<Currency> _list = new ArrayList<>();
 
   public AcceptedCurrenciesOneOf() {
   }
 
-  public AcceptedCurrenciesOneOf type(TypeEnum type) {
+  public AcceptedCurrenciesOneOf type(@javax.annotation.Nonnull TypeEnum type) {
     
     this.type = type;
     return this;
   }
 
-   /**
+  /**
    * Get type
    * @return type
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_TYPE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -102,12 +105,11 @@ public class AcceptedCurrenciesOneOf {
 
   @JsonProperty(JSON_PROPERTY_TYPE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setType(TypeEnum type) {
+  public void setType(@javax.annotation.Nonnull TypeEnum type) {
     this.type = type;
   }
 
-
-  public AcceptedCurrenciesOneOf _list(List<Currency> _list) {
+  public AcceptedCurrenciesOneOf _list(@javax.annotation.Nonnull List<Currency> _list) {
     
     this._list = _list;
     return this;
@@ -121,10 +123,10 @@ public class AcceptedCurrenciesOneOf {
     return this;
   }
 
-   /**
+  /**
    * Get _list
    * @return _list
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_LIST)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -136,7 +138,7 @@ public class AcceptedCurrenciesOneOf {
 
   @JsonProperty(JSON_PROPERTY_LIST)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setList(List<Currency> _list) {
+  public void setList(@javax.annotation.Nonnull List<Currency> _list) {
     this._list = _list;
   }
 

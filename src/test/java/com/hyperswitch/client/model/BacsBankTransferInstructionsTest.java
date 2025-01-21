@@ -18,22 +18,21 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonTypeName;
 import com.fasterxml.jackson.annotation.JsonValue;
-import org.junit.Assert;
-import org.junit.Ignore;
-import org.junit.Test;
-
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Test;
 
 /**
  * Model tests for BacsBankTransferInstructions
  */
-public class BacsBankTransferInstructionsTest {
+class BacsBankTransferInstructionsTest {
     private final BacsBankTransferInstructions model = new BacsBankTransferInstructions();
 
     /**
      * Model tests for BacsBankTransferInstructions
      */
     @Test
-    public void testBacsBankTransferInstructions() {
+    void testBacsBankTransferInstructions() {
         // TODO: test BacsBankTransferInstructions
     }
 
@@ -41,7 +40,7 @@ public class BacsBankTransferInstructionsTest {
      * Test the property 'accountHolderName'
      */
     @Test
-    public void accountHolderNameTest() {
+    void accountHolderNameTest() {
         // TODO: test accountHolderName
     }
 
@@ -49,7 +48,7 @@ public class BacsBankTransferInstructionsTest {
      * Test the property 'accountNumber'
      */
     @Test
-    public void accountNumberTest() {
+    void accountNumberTest() {
         // TODO: test accountNumber
     }
 
@@ -57,7 +56,7 @@ public class BacsBankTransferInstructionsTest {
      * Test the property 'sortCode'
      */
     @Test
-    public void sortCodeTest() {
+    void sortCodeTest() {
         // TODO: test sortCode
     }
 

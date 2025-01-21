@@ -24,22 +24,21 @@ import org.openapitools.jackson.nullable.JsonNullable;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.openapitools.jackson.nullable.JsonNullable;
 import java.util.NoSuchElementException;
-import org.junit.Assert;
-import org.junit.Ignore;
-import org.junit.Test;
-
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Test;
 
 /**
  * Model tests for SamsungPayAppWalletData
  */
-public class SamsungPayAppWalletDataTest {
+class SamsungPayAppWalletDataTest {
     private final SamsungPayAppWalletData model = new SamsungPayAppWalletData();
 
     /**
      * Model tests for SamsungPayAppWalletData
      */
     @Test
-    public void testSamsungPayAppWalletData() {
+    void testSamsungPayAppWalletData() {
         // TODO: test SamsungPayAppWalletData
     }
 
@@ -47,7 +46,7 @@ public class SamsungPayAppWalletDataTest {
      * Test the property '_3dS'
      */
     @Test
-    public void _3dSTest() {
+    void _3dSTest() {
         // TODO: test _3dS
     }
 
@@ -55,7 +54,7 @@ public class SamsungPayAppWalletDataTest {
      * Test the property 'paymentCardBrand'
      */
     @Test
-    public void paymentCardBrandTest() {
+    void paymentCardBrandTest() {
         // TODO: test paymentCardBrand
     }
 
@@ -63,7 +62,7 @@ public class SamsungPayAppWalletDataTest {
      * Test the property 'paymentCurrencyType'
      */
     @Test
-    public void paymentCurrencyTypeTest() {
+    void paymentCurrencyTypeTest() {
         // TODO: test paymentCurrencyType
     }
 
@@ -71,7 +70,7 @@ public class SamsungPayAppWalletDataTest {
      * Test the property 'paymentLast4Dpan'
      */
     @Test
-    public void paymentLast4DpanTest() {
+    void paymentLast4DpanTest() {
         // TODO: test paymentLast4Dpan
     }
 
@@ -79,7 +78,7 @@ public class SamsungPayAppWalletDataTest {
      * Test the property 'paymentLast4Fpan'
      */
     @Test
-    public void paymentLast4FpanTest() {
+    void paymentLast4FpanTest() {
         // TODO: test paymentLast4Fpan
     }
 
@@ -87,7 +86,7 @@ public class SamsungPayAppWalletDataTest {
      * Test the property 'merchantRef'
      */
     @Test
-    public void merchantRefTest() {
+    void merchantRefTest() {
         // TODO: test merchantRef
     }
 
@@ -95,7 +94,7 @@ public class SamsungPayAppWalletDataTest {
      * Test the property 'method'
      */
     @Test
-    public void methodTest() {
+    void methodTest() {
         // TODO: test method
     }
 
@@ -103,7 +102,7 @@ public class SamsungPayAppWalletDataTest {
      * Test the property 'recurringPayment'
      */
     @Test
-    public void recurringPaymentTest() {
+    void recurringPaymentTest() {
         // TODO: test recurringPayment
     }
 

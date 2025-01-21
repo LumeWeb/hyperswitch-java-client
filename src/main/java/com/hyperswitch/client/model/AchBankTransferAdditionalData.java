@@ -42,36 +42,41 @@ import java.util.StringJoiner;
   AchBankTransferAdditionalData.JSON_PROPERTY_BANK_COUNTRY_CODE,
   AchBankTransferAdditionalData.JSON_PROPERTY_BANK_CITY
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class AchBankTransferAdditionalData {
   public static final String JSON_PROPERTY_BANK_ACCOUNT_NUMBER = "bank_account_number";
+  @javax.annotation.Nonnull
   private String bankAccountNumber;
 
   public static final String JSON_PROPERTY_BANK_ROUTING_NUMBER = "bank_routing_number";
+  @javax.annotation.Nonnull
   private String bankRoutingNumber;
 
   public static final String JSON_PROPERTY_BANK_NAME = "bank_name";
+  @javax.annotation.Nullable
   private JsonNullable<BankNames> bankName = JsonNullable.<BankNames>undefined();
 
   public static final String JSON_PROPERTY_BANK_COUNTRY_CODE = "bank_country_code";
+  @javax.annotation.Nullable
   private JsonNullable<CountryAlpha2> bankCountryCode = JsonNullable.<CountryAlpha2>undefined();
 
   public static final String JSON_PROPERTY_BANK_CITY = "bank_city";
+  @javax.annotation.Nullable
   private JsonNullable<String> bankCity = JsonNullable.<String>undefined();
 
   public AchBankTransferAdditionalData() {
   }
 
-  public AchBankTransferAdditionalData bankAccountNumber(String bankAccountNumber) {
+  public AchBankTransferAdditionalData bankAccountNumber(@javax.annotation.Nonnull String bankAccountNumber) {
     
     this.bankAccountNumber = bankAccountNumber;
     return this;
   }
 
-   /**
+  /**
    * Partially masked account number for ach bank debit payment
    * @return bankAccountNumber
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_BANK_ACCOUNT_NUMBER)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -83,21 +88,20 @@ public class AchBankTransferAdditionalData {
 
   @JsonProperty(JSON_PROPERTY_BANK_ACCOUNT_NUMBER)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setBankAccountNumber(String bankAccountNumber) {
+  public void setBankAccountNumber(@javax.annotation.Nonnull String bankAccountNumber) {
     this.bankAccountNumber = bankAccountNumber;
   }
 
-
-  public AchBankTransferAdditionalData bankRoutingNumber(String bankRoutingNumber) {
+  public AchBankTransferAdditionalData bankRoutingNumber(@javax.annotation.Nonnull String bankRoutingNumber) {
     
     this.bankRoutingNumber = bankRoutingNumber;
     return this;
   }
 
-   /**
+  /**
    * Partially masked routing number for ach bank debit payment
    * @return bankRoutingNumber
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_BANK_ROUTING_NUMBER)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -109,21 +113,20 @@ public class AchBankTransferAdditionalData {
 
   @JsonProperty(JSON_PROPERTY_BANK_ROUTING_NUMBER)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setBankRoutingNumber(String bankRoutingNumber) {
+  public void setBankRoutingNumber(@javax.annotation.Nonnull String bankRoutingNumber) {
     this.bankRoutingNumber = bankRoutingNumber;
   }
 
-
-  public AchBankTransferAdditionalData bankName(BankNames bankName) {
+  public AchBankTransferAdditionalData bankName(@javax.annotation.Nullable BankNames bankName) {
     this.bankName = JsonNullable.<BankNames>of(bankName);
     
     return this;
   }
 
-   /**
+  /**
    * Get bankName
    * @return bankName
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -143,21 +146,20 @@ public class AchBankTransferAdditionalData {
     this.bankName = bankName;
   }
 
-  public void setBankName(BankNames bankName) {
+  public void setBankName(@javax.annotation.Nullable BankNames bankName) {
     this.bankName = JsonNullable.<BankNames>of(bankName);
   }
 
-
-  public AchBankTransferAdditionalData bankCountryCode(CountryAlpha2 bankCountryCode) {
+  public AchBankTransferAdditionalData bankCountryCode(@javax.annotation.Nullable CountryAlpha2 bankCountryCode) {
     this.bankCountryCode = JsonNullable.<CountryAlpha2>of(bankCountryCode);
     
     return this;
   }
 
-   /**
+  /**
    * Get bankCountryCode
    * @return bankCountryCode
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -177,21 +179,20 @@ public class AchBankTransferAdditionalData {
     this.bankCountryCode = bankCountryCode;
   }
 
-  public void setBankCountryCode(CountryAlpha2 bankCountryCode) {
+  public void setBankCountryCode(@javax.annotation.Nullable CountryAlpha2 bankCountryCode) {
     this.bankCountryCode = JsonNullable.<CountryAlpha2>of(bankCountryCode);
   }
 
-
-  public AchBankTransferAdditionalData bankCity(String bankCity) {
+  public AchBankTransferAdditionalData bankCity(@javax.annotation.Nullable String bankCity) {
     this.bankCity = JsonNullable.<String>of(bankCity);
     
     return this;
   }
 
-   /**
+  /**
    * Bank city
    * @return bankCity
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -211,7 +212,7 @@ public class AchBankTransferAdditionalData {
     this.bankCity = bankCity;
   }
 
-  public void setBankCity(String bankCity) {
+  public void setBankCity(@javax.annotation.Nullable String bankCity) {
     this.bankCity = JsonNullable.<String>of(bankCity);
   }
 

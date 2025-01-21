@@ -38,27 +38,29 @@ import java.util.StringJoiner;
   MifinityData.JSON_PROPERTY_DATE_OF_BIRTH,
   MifinityData.JSON_PROPERTY_LANGUAGE_PREFERENCE
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class MifinityData {
   public static final String JSON_PROPERTY_DATE_OF_BIRTH = "date_of_birth";
+  @javax.annotation.Nonnull
   private LocalDate dateOfBirth;
 
   public static final String JSON_PROPERTY_LANGUAGE_PREFERENCE = "language_preference";
+  @javax.annotation.Nullable
   private JsonNullable<String> languagePreference = JsonNullable.<String>undefined();
 
   public MifinityData() {
   }
 
-  public MifinityData dateOfBirth(LocalDate dateOfBirth) {
+  public MifinityData dateOfBirth(@javax.annotation.Nonnull LocalDate dateOfBirth) {
     
     this.dateOfBirth = dateOfBirth;
     return this;
   }
 
-   /**
+  /**
    * Get dateOfBirth
    * @return dateOfBirth
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_DATE_OF_BIRTH)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -70,21 +72,20 @@ public class MifinityData {
 
   @JsonProperty(JSON_PROPERTY_DATE_OF_BIRTH)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setDateOfBirth(LocalDate dateOfBirth) {
+  public void setDateOfBirth(@javax.annotation.Nonnull LocalDate dateOfBirth) {
     this.dateOfBirth = dateOfBirth;
   }
 
-
-  public MifinityData languagePreference(String languagePreference) {
+  public MifinityData languagePreference(@javax.annotation.Nullable String languagePreference) {
     this.languagePreference = JsonNullable.<String>of(languagePreference);
     
     return this;
   }
 
-   /**
+  /**
    * Get languagePreference
    * @return languagePreference
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -104,7 +105,7 @@ public class MifinityData {
     this.languagePreference = languagePreference;
   }
 
-  public void setLanguagePreference(String languagePreference) {
+  public void setLanguagePreference(@javax.annotation.Nullable String languagePreference) {
     this.languagePreference = JsonNullable.<String>of(languagePreference);
   }
 

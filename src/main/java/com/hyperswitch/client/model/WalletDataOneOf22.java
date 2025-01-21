@@ -33,24 +33,25 @@ import java.util.StringJoiner;
   WalletDataOneOf22.JSON_PROPERTY_TOUCH_N_GO_REDIRECT
 })
 @JsonTypeName("WalletData_oneOf_22")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class WalletDataOneOf22 {
   public static final String JSON_PROPERTY_TOUCH_N_GO_REDIRECT = "touch_n_go_redirect";
+  @javax.annotation.Nonnull
   private Object touchNGoRedirect;
 
   public WalletDataOneOf22() {
   }
 
-  public WalletDataOneOf22 touchNGoRedirect(Object touchNGoRedirect) {
+  public WalletDataOneOf22 touchNGoRedirect(@javax.annotation.Nonnull Object touchNGoRedirect) {
     
     this.touchNGoRedirect = touchNGoRedirect;
     return this;
   }
 
-   /**
+  /**
    * Get touchNGoRedirect
    * @return touchNGoRedirect
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_TOUCH_N_GO_REDIRECT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -62,7 +63,7 @@ public class WalletDataOneOf22 {
 
   @JsonProperty(JSON_PROPERTY_TOUCH_N_GO_REDIRECT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setTouchNGoRedirect(Object touchNGoRedirect) {
+  public void setTouchNGoRedirect(@javax.annotation.Nonnull Object touchNGoRedirect) {
     this.touchNGoRedirect = touchNGoRedirect;
   }
 

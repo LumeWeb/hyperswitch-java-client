@@ -32,24 +32,25 @@ import java.util.StringJoiner;
 @JsonPropertyOrder({
   GivexGiftCardAdditionalData.JSON_PROPERTY_LAST4
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class GivexGiftCardAdditionalData {
   public static final String JSON_PROPERTY_LAST4 = "last4";
+  @javax.annotation.Nonnull
   private String last4;
 
   public GivexGiftCardAdditionalData() {
   }
 
-  public GivexGiftCardAdditionalData last4(String last4) {
+  public GivexGiftCardAdditionalData last4(@javax.annotation.Nonnull String last4) {
     
     this.last4 = last4;
     return this;
   }
 
-   /**
+  /**
    * Last 4 digits of the gift card number
    * @return last4
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_LAST4)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -61,7 +62,7 @@ public class GivexGiftCardAdditionalData {
 
   @JsonProperty(JSON_PROPERTY_LAST4)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setLast4(String last4) {
+  public void setLast4(@javax.annotation.Nonnull String last4) {
     this.last4 = last4;
   }
 

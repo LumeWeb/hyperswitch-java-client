@@ -33,27 +33,29 @@ import java.util.StringJoiner;
   MerchantConnectorWebhookDetails.JSON_PROPERTY_MERCHANT_SECRET,
   MerchantConnectorWebhookDetails.JSON_PROPERTY_ADDITIONAL_SECRET
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class MerchantConnectorWebhookDetails {
   public static final String JSON_PROPERTY_MERCHANT_SECRET = "merchant_secret";
+  @javax.annotation.Nonnull
   private String merchantSecret;
 
   public static final String JSON_PROPERTY_ADDITIONAL_SECRET = "additional_secret";
+  @javax.annotation.Nonnull
   private String additionalSecret;
 
   public MerchantConnectorWebhookDetails() {
   }
 
-  public MerchantConnectorWebhookDetails merchantSecret(String merchantSecret) {
+  public MerchantConnectorWebhookDetails merchantSecret(@javax.annotation.Nonnull String merchantSecret) {
     
     this.merchantSecret = merchantSecret;
     return this;
   }
 
-   /**
+  /**
    * Get merchantSecret
    * @return merchantSecret
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_MERCHANT_SECRET)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -65,21 +67,20 @@ public class MerchantConnectorWebhookDetails {
 
   @JsonProperty(JSON_PROPERTY_MERCHANT_SECRET)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setMerchantSecret(String merchantSecret) {
+  public void setMerchantSecret(@javax.annotation.Nonnull String merchantSecret) {
     this.merchantSecret = merchantSecret;
   }
 
-
-  public MerchantConnectorWebhookDetails additionalSecret(String additionalSecret) {
+  public MerchantConnectorWebhookDetails additionalSecret(@javax.annotation.Nonnull String additionalSecret) {
     
     this.additionalSecret = additionalSecret;
     return this;
   }
 
-   /**
+  /**
    * Get additionalSecret
    * @return additionalSecret
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_ADDITIONAL_SECRET)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -91,7 +92,7 @@ public class MerchantConnectorWebhookDetails {
 
   @JsonProperty(JSON_PROPERTY_ADDITIONAL_SECRET)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setAdditionalSecret(String additionalSecret) {
+  public void setAdditionalSecret(@javax.annotation.Nonnull String additionalSecret) {
     this.additionalSecret = additionalSecret;
   }
 

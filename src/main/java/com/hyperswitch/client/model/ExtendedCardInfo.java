@@ -46,51 +46,61 @@ import java.util.StringJoiner;
   ExtendedCardInfo.JSON_PROPERTY_CARD_ISSUING_COUNTRY,
   ExtendedCardInfo.JSON_PROPERTY_BANK_CODE
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class ExtendedCardInfo {
   public static final String JSON_PROPERTY_CARD_NUMBER = "card_number";
+  @javax.annotation.Nonnull
   private String cardNumber;
 
   public static final String JSON_PROPERTY_CARD_EXP_MONTH = "card_exp_month";
+  @javax.annotation.Nonnull
   private String cardExpMonth;
 
   public static final String JSON_PROPERTY_CARD_EXP_YEAR = "card_exp_year";
+  @javax.annotation.Nonnull
   private String cardExpYear;
 
   public static final String JSON_PROPERTY_CARD_HOLDER_NAME = "card_holder_name";
+  @javax.annotation.Nonnull
   private String cardHolderName;
 
   public static final String JSON_PROPERTY_CARD_CVC = "card_cvc";
+  @javax.annotation.Nonnull
   private String cardCvc;
 
   public static final String JSON_PROPERTY_CARD_ISSUER = "card_issuer";
+  @javax.annotation.Nullable
   private JsonNullable<String> cardIssuer = JsonNullable.<String>undefined();
 
   public static final String JSON_PROPERTY_CARD_NETWORK = "card_network";
+  @javax.annotation.Nullable
   private JsonNullable<CardNetwork> cardNetwork = JsonNullable.<CardNetwork>undefined();
 
   public static final String JSON_PROPERTY_CARD_TYPE = "card_type";
+  @javax.annotation.Nullable
   private JsonNullable<String> cardType = JsonNullable.<String>undefined();
 
   public static final String JSON_PROPERTY_CARD_ISSUING_COUNTRY = "card_issuing_country";
+  @javax.annotation.Nullable
   private JsonNullable<String> cardIssuingCountry = JsonNullable.<String>undefined();
 
   public static final String JSON_PROPERTY_BANK_CODE = "bank_code";
+  @javax.annotation.Nullable
   private JsonNullable<String> bankCode = JsonNullable.<String>undefined();
 
   public ExtendedCardInfo() {
   }
 
-  public ExtendedCardInfo cardNumber(String cardNumber) {
+  public ExtendedCardInfo cardNumber(@javax.annotation.Nonnull String cardNumber) {
     
     this.cardNumber = cardNumber;
     return this;
   }
 
-   /**
+  /**
    * The card number
    * @return cardNumber
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_CARD_NUMBER)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -102,21 +112,20 @@ public class ExtendedCardInfo {
 
   @JsonProperty(JSON_PROPERTY_CARD_NUMBER)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setCardNumber(String cardNumber) {
+  public void setCardNumber(@javax.annotation.Nonnull String cardNumber) {
     this.cardNumber = cardNumber;
   }
 
-
-  public ExtendedCardInfo cardExpMonth(String cardExpMonth) {
+  public ExtendedCardInfo cardExpMonth(@javax.annotation.Nonnull String cardExpMonth) {
     
     this.cardExpMonth = cardExpMonth;
     return this;
   }
 
-   /**
+  /**
    * The card&#39;s expiry month
    * @return cardExpMonth
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_CARD_EXP_MONTH)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -128,21 +137,20 @@ public class ExtendedCardInfo {
 
   @JsonProperty(JSON_PROPERTY_CARD_EXP_MONTH)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setCardExpMonth(String cardExpMonth) {
+  public void setCardExpMonth(@javax.annotation.Nonnull String cardExpMonth) {
     this.cardExpMonth = cardExpMonth;
   }
 
-
-  public ExtendedCardInfo cardExpYear(String cardExpYear) {
+  public ExtendedCardInfo cardExpYear(@javax.annotation.Nonnull String cardExpYear) {
     
     this.cardExpYear = cardExpYear;
     return this;
   }
 
-   /**
+  /**
    * The card&#39;s expiry year
    * @return cardExpYear
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_CARD_EXP_YEAR)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -154,21 +162,20 @@ public class ExtendedCardInfo {
 
   @JsonProperty(JSON_PROPERTY_CARD_EXP_YEAR)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setCardExpYear(String cardExpYear) {
+  public void setCardExpYear(@javax.annotation.Nonnull String cardExpYear) {
     this.cardExpYear = cardExpYear;
   }
 
-
-  public ExtendedCardInfo cardHolderName(String cardHolderName) {
+  public ExtendedCardInfo cardHolderName(@javax.annotation.Nonnull String cardHolderName) {
     
     this.cardHolderName = cardHolderName;
     return this;
   }
 
-   /**
+  /**
    * The card holder&#39;s name
    * @return cardHolderName
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_CARD_HOLDER_NAME)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -180,21 +187,20 @@ public class ExtendedCardInfo {
 
   @JsonProperty(JSON_PROPERTY_CARD_HOLDER_NAME)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setCardHolderName(String cardHolderName) {
+  public void setCardHolderName(@javax.annotation.Nonnull String cardHolderName) {
     this.cardHolderName = cardHolderName;
   }
 
-
-  public ExtendedCardInfo cardCvc(String cardCvc) {
+  public ExtendedCardInfo cardCvc(@javax.annotation.Nonnull String cardCvc) {
     
     this.cardCvc = cardCvc;
     return this;
   }
 
-   /**
+  /**
    * The CVC number for the card
    * @return cardCvc
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_CARD_CVC)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -206,21 +212,20 @@ public class ExtendedCardInfo {
 
   @JsonProperty(JSON_PROPERTY_CARD_CVC)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setCardCvc(String cardCvc) {
+  public void setCardCvc(@javax.annotation.Nonnull String cardCvc) {
     this.cardCvc = cardCvc;
   }
 
-
-  public ExtendedCardInfo cardIssuer(String cardIssuer) {
+  public ExtendedCardInfo cardIssuer(@javax.annotation.Nullable String cardIssuer) {
     this.cardIssuer = JsonNullable.<String>of(cardIssuer);
     
     return this;
   }
 
-   /**
+  /**
    * The name of the issuer of card
    * @return cardIssuer
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -240,21 +245,20 @@ public class ExtendedCardInfo {
     this.cardIssuer = cardIssuer;
   }
 
-  public void setCardIssuer(String cardIssuer) {
+  public void setCardIssuer(@javax.annotation.Nullable String cardIssuer) {
     this.cardIssuer = JsonNullable.<String>of(cardIssuer);
   }
 
-
-  public ExtendedCardInfo cardNetwork(CardNetwork cardNetwork) {
+  public ExtendedCardInfo cardNetwork(@javax.annotation.Nullable CardNetwork cardNetwork) {
     this.cardNetwork = JsonNullable.<CardNetwork>of(cardNetwork);
     
     return this;
   }
 
-   /**
+  /**
    * Get cardNetwork
    * @return cardNetwork
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -274,21 +278,20 @@ public class ExtendedCardInfo {
     this.cardNetwork = cardNetwork;
   }
 
-  public void setCardNetwork(CardNetwork cardNetwork) {
+  public void setCardNetwork(@javax.annotation.Nullable CardNetwork cardNetwork) {
     this.cardNetwork = JsonNullable.<CardNetwork>of(cardNetwork);
   }
 
-
-  public ExtendedCardInfo cardType(String cardType) {
+  public ExtendedCardInfo cardType(@javax.annotation.Nullable String cardType) {
     this.cardType = JsonNullable.<String>of(cardType);
     
     return this;
   }
 
-   /**
+  /**
    * Get cardType
    * @return cardType
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -308,21 +311,20 @@ public class ExtendedCardInfo {
     this.cardType = cardType;
   }
 
-  public void setCardType(String cardType) {
+  public void setCardType(@javax.annotation.Nullable String cardType) {
     this.cardType = JsonNullable.<String>of(cardType);
   }
 
-
-  public ExtendedCardInfo cardIssuingCountry(String cardIssuingCountry) {
+  public ExtendedCardInfo cardIssuingCountry(@javax.annotation.Nullable String cardIssuingCountry) {
     this.cardIssuingCountry = JsonNullable.<String>of(cardIssuingCountry);
     
     return this;
   }
 
-   /**
+  /**
    * Get cardIssuingCountry
    * @return cardIssuingCountry
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -342,21 +344,20 @@ public class ExtendedCardInfo {
     this.cardIssuingCountry = cardIssuingCountry;
   }
 
-  public void setCardIssuingCountry(String cardIssuingCountry) {
+  public void setCardIssuingCountry(@javax.annotation.Nullable String cardIssuingCountry) {
     this.cardIssuingCountry = JsonNullable.<String>of(cardIssuingCountry);
   }
 
-
-  public ExtendedCardInfo bankCode(String bankCode) {
+  public ExtendedCardInfo bankCode(@javax.annotation.Nullable String bankCode) {
     this.bankCode = JsonNullable.<String>of(bankCode);
     
     return this;
   }
 
-   /**
+  /**
    * Get bankCode
    * @return bankCode
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -376,7 +377,7 @@ public class ExtendedCardInfo {
     this.bankCode = bankCode;
   }
 
-  public void setBankCode(String bankCode) {
+  public void setBankCode(@javax.annotation.Nullable String bankCode) {
     this.bankCode = JsonNullable.<String>of(bankCode);
   }
 

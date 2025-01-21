@@ -43,36 +43,41 @@ import java.util.StringJoiner;
   BusinessGenericLinkConfig.JSON_PROPERTY_DOMAIN_NAME,
   BusinessGenericLinkConfig.JSON_PROPERTY_ALLOWED_DOMAINS
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class BusinessGenericLinkConfig {
   public static final String JSON_PROPERTY_LOGO = "logo";
+  @javax.annotation.Nullable
   private JsonNullable<String> logo = JsonNullable.<String>undefined();
 
   public static final String JSON_PROPERTY_MERCHANT_NAME = "merchant_name";
+  @javax.annotation.Nullable
   private JsonNullable<String> merchantName = JsonNullable.<String>undefined();
 
   public static final String JSON_PROPERTY_THEME = "theme";
+  @javax.annotation.Nullable
   private JsonNullable<String> theme = JsonNullable.<String>undefined();
 
   public static final String JSON_PROPERTY_DOMAIN_NAME = "domain_name";
+  @javax.annotation.Nullable
   private JsonNullable<String> domainName = JsonNullable.<String>undefined();
 
   public static final String JSON_PROPERTY_ALLOWED_DOMAINS = "allowed_domains";
+  @javax.annotation.Nonnull
   private Set<String> allowedDomains = new LinkedHashSet<>();
 
   public BusinessGenericLinkConfig() {
   }
 
-  public BusinessGenericLinkConfig logo(String logo) {
+  public BusinessGenericLinkConfig logo(@javax.annotation.Nullable String logo) {
     this.logo = JsonNullable.<String>of(logo);
     
     return this;
   }
 
-   /**
+  /**
    * Merchant&#39;s display logo
    * @return logo
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -92,21 +97,20 @@ public class BusinessGenericLinkConfig {
     this.logo = logo;
   }
 
-  public void setLogo(String logo) {
+  public void setLogo(@javax.annotation.Nullable String logo) {
     this.logo = JsonNullable.<String>of(logo);
   }
 
-
-  public BusinessGenericLinkConfig merchantName(String merchantName) {
+  public BusinessGenericLinkConfig merchantName(@javax.annotation.Nullable String merchantName) {
     this.merchantName = JsonNullable.<String>of(merchantName);
     
     return this;
   }
 
-   /**
+  /**
    * Custom merchant name for the link
    * @return merchantName
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -126,21 +130,20 @@ public class BusinessGenericLinkConfig {
     this.merchantName = merchantName;
   }
 
-  public void setMerchantName(String merchantName) {
+  public void setMerchantName(@javax.annotation.Nullable String merchantName) {
     this.merchantName = JsonNullable.<String>of(merchantName);
   }
 
-
-  public BusinessGenericLinkConfig theme(String theme) {
+  public BusinessGenericLinkConfig theme(@javax.annotation.Nullable String theme) {
     this.theme = JsonNullable.<String>of(theme);
     
     return this;
   }
 
-   /**
+  /**
    * Primary color to be used in the form represented in hex format
    * @return theme
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -160,21 +163,20 @@ public class BusinessGenericLinkConfig {
     this.theme = theme;
   }
 
-  public void setTheme(String theme) {
+  public void setTheme(@javax.annotation.Nullable String theme) {
     this.theme = JsonNullable.<String>of(theme);
   }
 
-
-  public BusinessGenericLinkConfig domainName(String domainName) {
+  public BusinessGenericLinkConfig domainName(@javax.annotation.Nullable String domainName) {
     this.domainName = JsonNullable.<String>of(domainName);
     
     return this;
   }
 
-   /**
+  /**
    * Custom domain name to be used for hosting the link
    * @return domainName
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -194,12 +196,11 @@ public class BusinessGenericLinkConfig {
     this.domainName = domainName;
   }
 
-  public void setDomainName(String domainName) {
+  public void setDomainName(@javax.annotation.Nullable String domainName) {
     this.domainName = JsonNullable.<String>of(domainName);
   }
 
-
-  public BusinessGenericLinkConfig allowedDomains(Set<String> allowedDomains) {
+  public BusinessGenericLinkConfig allowedDomains(@javax.annotation.Nonnull Set<String> allowedDomains) {
     
     this.allowedDomains = allowedDomains;
     return this;
@@ -213,10 +214,10 @@ public class BusinessGenericLinkConfig {
     return this;
   }
 
-   /**
+  /**
    * A list of allowed domains (glob patterns) where this link can be embedded / opened from
    * @return allowedDomains
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_ALLOWED_DOMAINS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -229,7 +230,7 @@ public class BusinessGenericLinkConfig {
   @JsonDeserialize(as = LinkedHashSet.class)
   @JsonProperty(JSON_PROPERTY_ALLOWED_DOMAINS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setAllowedDomains(Set<String> allowedDomains) {
+  public void setAllowedDomains(@javax.annotation.Nonnull Set<String> allowedDomains) {
     this.allowedDomains = allowedDomains;
   }
 

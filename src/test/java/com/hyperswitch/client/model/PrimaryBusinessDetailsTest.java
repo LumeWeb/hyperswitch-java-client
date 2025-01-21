@@ -19,22 +19,21 @@ import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonTypeName;
 import com.fasterxml.jackson.annotation.JsonValue;
 import com.hyperswitch.client.model.CountryAlpha2;
-import org.junit.Assert;
-import org.junit.Ignore;
-import org.junit.Test;
-
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Test;
 
 /**
  * Model tests for PrimaryBusinessDetails
  */
-public class PrimaryBusinessDetailsTest {
+class PrimaryBusinessDetailsTest {
     private final PrimaryBusinessDetails model = new PrimaryBusinessDetails();
 
     /**
      * Model tests for PrimaryBusinessDetails
      */
     @Test
-    public void testPrimaryBusinessDetails() {
+    void testPrimaryBusinessDetails() {
         // TODO: test PrimaryBusinessDetails
     }
 
@@ -42,7 +41,7 @@ public class PrimaryBusinessDetailsTest {
      * Test the property 'country'
      */
     @Test
-    public void countryTest() {
+    void countryTest() {
         // TODO: test country
     }
 
@@ -50,7 +49,7 @@ public class PrimaryBusinessDetailsTest {
      * Test the property 'business'
      */
     @Test
-    public void businessTest() {
+    void businessTest() {
         // TODO: test business
     }
 

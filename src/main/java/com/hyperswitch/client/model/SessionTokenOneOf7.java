@@ -33,13 +33,13 @@ import java.util.StringJoiner;
   SessionTokenOneOf7.JSON_PROPERTY_WALLET_NAME
 })
 @JsonTypeName("SessionToken_oneOf_7")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class SessionTokenOneOf7 {
   /**
    * Gets or Sets walletName
    */
   public enum WalletNameEnum {
-    NO_SESSION_TOKEN_RECEIVED("no_session_token_received");
+    NO_SESSION_TOKEN_RECEIVED(String.valueOf("no_session_token_received"));
 
     private String value;
 
@@ -69,21 +69,22 @@ public class SessionTokenOneOf7 {
   }
 
   public static final String JSON_PROPERTY_WALLET_NAME = "wallet_name";
+  @javax.annotation.Nonnull
   private WalletNameEnum walletName;
 
   public SessionTokenOneOf7() {
   }
 
-  public SessionTokenOneOf7 walletName(WalletNameEnum walletName) {
+  public SessionTokenOneOf7 walletName(@javax.annotation.Nonnull WalletNameEnum walletName) {
     
     this.walletName = walletName;
     return this;
   }
 
-   /**
+  /**
    * Get walletName
    * @return walletName
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_WALLET_NAME)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -95,7 +96,7 @@ public class SessionTokenOneOf7 {
 
   @JsonProperty(JSON_PROPERTY_WALLET_NAME)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setWalletName(WalletNameEnum walletName) {
+  public void setWalletName(@javax.annotation.Nonnull WalletNameEnum walletName) {
     this.walletName = walletName;
   }
 

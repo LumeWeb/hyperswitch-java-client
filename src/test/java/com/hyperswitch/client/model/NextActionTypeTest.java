@@ -13,20 +13,19 @@
 
 package com.hyperswitch.client.model;
 
-import org.junit.Assert;
-import org.junit.Ignore;
-import org.junit.Test;
-
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Test;
 
 /**
  * Model tests for NextActionType
  */
-public class NextActionTypeTest {
+class NextActionTypeTest {
     /**
      * Model tests for NextActionType
      */
     @Test
-    public void testNextActionType() {
+    void testNextActionType() {
         // TODO: test NextActionType
     }
 

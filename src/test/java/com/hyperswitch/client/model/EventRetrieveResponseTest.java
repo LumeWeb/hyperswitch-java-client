@@ -28,22 +28,21 @@ import org.openapitools.jackson.nullable.JsonNullable;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.openapitools.jackson.nullable.JsonNullable;
 import java.util.NoSuchElementException;
-import org.junit.Assert;
-import org.junit.Ignore;
-import org.junit.Test;
-
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Test;
 
 /**
  * Model tests for EventRetrieveResponse
  */
-public class EventRetrieveResponseTest {
+class EventRetrieveResponseTest {
     private final EventRetrieveResponse model = new EventRetrieveResponse();
 
     /**
      * Model tests for EventRetrieveResponse
      */
     @Test
-    public void testEventRetrieveResponse() {
+    void testEventRetrieveResponse() {
         // TODO: test EventRetrieveResponse
     }
 
@@ -51,7 +50,7 @@ public class EventRetrieveResponseTest {
      * Test the property 'eventId'
      */
     @Test
-    public void eventIdTest() {
+    void eventIdTest() {
         // TODO: test eventId
     }
 
@@ -59,7 +58,7 @@ public class EventRetrieveResponseTest {
      * Test the property 'merchantId'
      */
     @Test
-    public void merchantIdTest() {
+    void merchantIdTest() {
         // TODO: test merchantId
     }
 
@@ -67,7 +66,7 @@ public class EventRetrieveResponseTest {
      * Test the property 'profileId'
      */
     @Test
-    public void profileIdTest() {
+    void profileIdTest() {
         // TODO: test profileId
     }
 
@@ -75,7 +74,7 @@ public class EventRetrieveResponseTest {
      * Test the property 'objectId'
      */
     @Test
-    public void objectIdTest() {
+    void objectIdTest() {
         // TODO: test objectId
     }
 
@@ -83,7 +82,7 @@ public class EventRetrieveResponseTest {
      * Test the property 'eventType'
      */
     @Test
-    public void eventTypeTest() {
+    void eventTypeTest() {
         // TODO: test eventType
     }
 
@@ -91,7 +90,7 @@ public class EventRetrieveResponseTest {
      * Test the property 'eventClass'
      */
     @Test
-    public void eventClassTest() {
+    void eventClassTest() {
         // TODO: test eventClass
     }
 
@@ -99,7 +98,7 @@ public class EventRetrieveResponseTest {
      * Test the property 'isDeliverySuccessful'
      */
     @Test
-    public void isDeliverySuccessfulTest() {
+    void isDeliverySuccessfulTest() {
         // TODO: test isDeliverySuccessful
     }
 
@@ -107,7 +106,7 @@ public class EventRetrieveResponseTest {
      * Test the property 'initialAttemptId'
      */
     @Test
-    public void initialAttemptIdTest() {
+    void initialAttemptIdTest() {
         // TODO: test initialAttemptId
     }
 
@@ -115,7 +114,7 @@ public class EventRetrieveResponseTest {
      * Test the property 'created'
      */
     @Test
-    public void createdTest() {
+    void createdTest() {
         // TODO: test created
     }
 
@@ -123,7 +122,7 @@ public class EventRetrieveResponseTest {
      * Test the property 'request'
      */
     @Test
-    public void requestTest() {
+    void requestTest() {
         // TODO: test request
     }
 
@@ -131,7 +130,7 @@ public class EventRetrieveResponseTest {
      * Test the property 'response'
      */
     @Test
-    public void responseTest() {
+    void responseTest() {
         // TODO: test response
     }
 
@@ -139,7 +138,7 @@ public class EventRetrieveResponseTest {
      * Test the property 'deliveryAttempt'
      */
     @Test
-    public void deliveryAttemptTest() {
+    void deliveryAttemptTest() {
         // TODO: test deliveryAttempt
     }
 

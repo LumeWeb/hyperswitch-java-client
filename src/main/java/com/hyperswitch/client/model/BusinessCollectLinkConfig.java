@@ -23,6 +23,7 @@ import com.fasterxml.jackson.annotation.JsonValue;
 import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
 import com.hyperswitch.client.model.EnabledPaymentMethod;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.LinkedHashSet;
 import java.util.List;
 import java.util.Set;
@@ -47,39 +48,45 @@ import java.util.StringJoiner;
   BusinessCollectLinkConfig.JSON_PROPERTY_ALLOWED_DOMAINS,
   BusinessCollectLinkConfig.JSON_PROPERTY_ENABLED_PAYMENT_METHODS
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class BusinessCollectLinkConfig {
   public static final String JSON_PROPERTY_LOGO = "logo";
+  @javax.annotation.Nullable
   private JsonNullable<String> logo = JsonNullable.<String>undefined();
 
   public static final String JSON_PROPERTY_MERCHANT_NAME = "merchant_name";
+  @javax.annotation.Nullable
   private JsonNullable<String> merchantName = JsonNullable.<String>undefined();
 
   public static final String JSON_PROPERTY_THEME = "theme";
+  @javax.annotation.Nullable
   private JsonNullable<String> theme = JsonNullable.<String>undefined();
 
   public static final String JSON_PROPERTY_DOMAIN_NAME = "domain_name";
+  @javax.annotation.Nullable
   private JsonNullable<String> domainName = JsonNullable.<String>undefined();
 
   public static final String JSON_PROPERTY_ALLOWED_DOMAINS = "allowed_domains";
+  @javax.annotation.Nonnull
   private Set<String> allowedDomains = new LinkedHashSet<>();
 
   public static final String JSON_PROPERTY_ENABLED_PAYMENT_METHODS = "enabled_payment_methods";
+  @javax.annotation.Nonnull
   private List<EnabledPaymentMethod> enabledPaymentMethods = new ArrayList<>();
 
   public BusinessCollectLinkConfig() {
   }
 
-  public BusinessCollectLinkConfig logo(String logo) {
+  public BusinessCollectLinkConfig logo(@javax.annotation.Nullable String logo) {
     this.logo = JsonNullable.<String>of(logo);
     
     return this;
   }
 
-   /**
+  /**
    * Merchant&#39;s display logo
    * @return logo
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -99,21 +106,20 @@ public class BusinessCollectLinkConfig {
     this.logo = logo;
   }
 
-  public void setLogo(String logo) {
+  public void setLogo(@javax.annotation.Nullable String logo) {
     this.logo = JsonNullable.<String>of(logo);
   }
 
-
-  public BusinessCollectLinkConfig merchantName(String merchantName) {
+  public BusinessCollectLinkConfig merchantName(@javax.annotation.Nullable String merchantName) {
     this.merchantName = JsonNullable.<String>of(merchantName);
     
     return this;
   }
 
-   /**
+  /**
    * Custom merchant name for the link
    * @return merchantName
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -133,21 +139,20 @@ public class BusinessCollectLinkConfig {
     this.merchantName = merchantName;
   }
 
-  public void setMerchantName(String merchantName) {
+  public void setMerchantName(@javax.annotation.Nullable String merchantName) {
     this.merchantName = JsonNullable.<String>of(merchantName);
   }
 
-
-  public BusinessCollectLinkConfig theme(String theme) {
+  public BusinessCollectLinkConfig theme(@javax.annotation.Nullable String theme) {
     this.theme = JsonNullable.<String>of(theme);
     
     return this;
   }
 
-   /**
+  /**
    * Primary color to be used in the form represented in hex format
    * @return theme
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -167,21 +172,20 @@ public class BusinessCollectLinkConfig {
     this.theme = theme;
   }
 
-  public void setTheme(String theme) {
+  public void setTheme(@javax.annotation.Nullable String theme) {
     this.theme = JsonNullable.<String>of(theme);
   }
 
-
-  public BusinessCollectLinkConfig domainName(String domainName) {
+  public BusinessCollectLinkConfig domainName(@javax.annotation.Nullable String domainName) {
     this.domainName = JsonNullable.<String>of(domainName);
     
     return this;
   }
 
-   /**
+  /**
    * Custom domain name to be used for hosting the link
    * @return domainName
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -201,12 +205,11 @@ public class BusinessCollectLinkConfig {
     this.domainName = domainName;
   }
 
-  public void setDomainName(String domainName) {
+  public void setDomainName(@javax.annotation.Nullable String domainName) {
     this.domainName = JsonNullable.<String>of(domainName);
   }
 
-
-  public BusinessCollectLinkConfig allowedDomains(Set<String> allowedDomains) {
+  public BusinessCollectLinkConfig allowedDomains(@javax.annotation.Nonnull Set<String> allowedDomains) {
     
     this.allowedDomains = allowedDomains;
     return this;
@@ -220,10 +223,10 @@ public class BusinessCollectLinkConfig {
     return this;
   }
 
-   /**
+  /**
    * A list of allowed domains (glob patterns) where this link can be embedded / opened from
    * @return allowedDomains
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_ALLOWED_DOMAINS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -236,12 +239,11 @@ public class BusinessCollectLinkConfig {
   @JsonDeserialize(as = LinkedHashSet.class)
   @JsonProperty(JSON_PROPERTY_ALLOWED_DOMAINS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setAllowedDomains(Set<String> allowedDomains) {
+  public void setAllowedDomains(@javax.annotation.Nonnull Set<String> allowedDomains) {
     this.allowedDomains = allowedDomains;
   }
 
-
-  public BusinessCollectLinkConfig enabledPaymentMethods(List<EnabledPaymentMethod> enabledPaymentMethods) {
+  public BusinessCollectLinkConfig enabledPaymentMethods(@javax.annotation.Nonnull List<EnabledPaymentMethod> enabledPaymentMethods) {
     
     this.enabledPaymentMethods = enabledPaymentMethods;
     return this;
@@ -255,10 +257,10 @@ public class BusinessCollectLinkConfig {
     return this;
   }
 
-   /**
+  /**
    * List of payment methods shown on collect UI
    * @return enabledPaymentMethods
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_ENABLED_PAYMENT_METHODS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -270,7 +272,7 @@ public class BusinessCollectLinkConfig {
 
   @JsonProperty(JSON_PROPERTY_ENABLED_PAYMENT_METHODS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setEnabledPaymentMethods(List<EnabledPaymentMethod> enabledPaymentMethods) {
+  public void setEnabledPaymentMethods(@javax.annotation.Nonnull List<EnabledPaymentMethod> enabledPaymentMethods) {
     this.enabledPaymentMethods = enabledPaymentMethods;
   }
 

@@ -33,27 +33,29 @@ import java.util.StringJoiner;
   GooglePayAssuranceDetails.JSON_PROPERTY_CARD_HOLDER_AUTHENTICATED,
   GooglePayAssuranceDetails.JSON_PROPERTY_ACCOUNT_VERIFIED
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class GooglePayAssuranceDetails {
   public static final String JSON_PROPERTY_CARD_HOLDER_AUTHENTICATED = "card_holder_authenticated";
+  @javax.annotation.Nonnull
   private Boolean cardHolderAuthenticated;
 
   public static final String JSON_PROPERTY_ACCOUNT_VERIFIED = "account_verified";
+  @javax.annotation.Nonnull
   private Boolean accountVerified;
 
   public GooglePayAssuranceDetails() {
   }
 
-  public GooglePayAssuranceDetails cardHolderAuthenticated(Boolean cardHolderAuthenticated) {
+  public GooglePayAssuranceDetails cardHolderAuthenticated(@javax.annotation.Nonnull Boolean cardHolderAuthenticated) {
     
     this.cardHolderAuthenticated = cardHolderAuthenticated;
     return this;
   }
 
-   /**
+  /**
    * indicates that Cardholder possession validation has been performed
    * @return cardHolderAuthenticated
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_CARD_HOLDER_AUTHENTICATED)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -65,21 +67,20 @@ public class GooglePayAssuranceDetails {
 
   @JsonProperty(JSON_PROPERTY_CARD_HOLDER_AUTHENTICATED)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setCardHolderAuthenticated(Boolean cardHolderAuthenticated) {
+  public void setCardHolderAuthenticated(@javax.annotation.Nonnull Boolean cardHolderAuthenticated) {
     this.cardHolderAuthenticated = cardHolderAuthenticated;
   }
 
-
-  public GooglePayAssuranceDetails accountVerified(Boolean accountVerified) {
+  public GooglePayAssuranceDetails accountVerified(@javax.annotation.Nonnull Boolean accountVerified) {
     
     this.accountVerified = accountVerified;
     return this;
   }
 
-   /**
+  /**
    * indicates that identification and verifications (ID&amp;V) was performed
    * @return accountVerified
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_ACCOUNT_VERIFIED)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -91,7 +92,7 @@ public class GooglePayAssuranceDetails {
 
   @JsonProperty(JSON_PROPERTY_ACCOUNT_VERIFIED)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setAccountVerified(Boolean accountVerified) {
+  public void setAccountVerified(@javax.annotation.Nonnull Boolean accountVerified) {
     this.accountVerified = accountVerified;
   }
 

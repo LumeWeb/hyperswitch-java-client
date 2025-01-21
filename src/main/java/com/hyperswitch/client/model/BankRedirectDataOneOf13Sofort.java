@@ -41,30 +41,33 @@ import java.util.StringJoiner;
   BankRedirectDataOneOf13Sofort.JSON_PROPERTY_PREFERRED_LANGUAGE
 })
 @JsonTypeName("BankRedirectData_oneOf_13_sofort")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class BankRedirectDataOneOf13Sofort {
   public static final String JSON_PROPERTY_BILLING_DETAILS = "billing_details";
+  @javax.annotation.Nullable
   private JsonNullable<BankRedirectBilling> billingDetails = JsonNullable.<BankRedirectBilling>undefined();
 
   public static final String JSON_PROPERTY_COUNTRY = "country";
+  @javax.annotation.Nonnull
   private CountryAlpha2 country;
 
   public static final String JSON_PROPERTY_PREFERRED_LANGUAGE = "preferred_language";
+  @javax.annotation.Nullable
   private JsonNullable<String> preferredLanguage = JsonNullable.<String>undefined();
 
   public BankRedirectDataOneOf13Sofort() {
   }
 
-  public BankRedirectDataOneOf13Sofort billingDetails(BankRedirectBilling billingDetails) {
+  public BankRedirectDataOneOf13Sofort billingDetails(@javax.annotation.Nullable BankRedirectBilling billingDetails) {
     this.billingDetails = JsonNullable.<BankRedirectBilling>of(billingDetails);
     
     return this;
   }
 
-   /**
+  /**
    * Get billingDetails
    * @return billingDetails
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -84,21 +87,20 @@ public class BankRedirectDataOneOf13Sofort {
     this.billingDetails = billingDetails;
   }
 
-  public void setBillingDetails(BankRedirectBilling billingDetails) {
+  public void setBillingDetails(@javax.annotation.Nullable BankRedirectBilling billingDetails) {
     this.billingDetails = JsonNullable.<BankRedirectBilling>of(billingDetails);
   }
 
-
-  public BankRedirectDataOneOf13Sofort country(CountryAlpha2 country) {
+  public BankRedirectDataOneOf13Sofort country(@javax.annotation.Nonnull CountryAlpha2 country) {
     
     this.country = country;
     return this;
   }
 
-   /**
+  /**
    * Get country
    * @return country
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_COUNTRY)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -110,21 +112,20 @@ public class BankRedirectDataOneOf13Sofort {
 
   @JsonProperty(JSON_PROPERTY_COUNTRY)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setCountry(CountryAlpha2 country) {
+  public void setCountry(@javax.annotation.Nonnull CountryAlpha2 country) {
     this.country = country;
   }
 
-
-  public BankRedirectDataOneOf13Sofort preferredLanguage(String preferredLanguage) {
+  public BankRedirectDataOneOf13Sofort preferredLanguage(@javax.annotation.Nullable String preferredLanguage) {
     this.preferredLanguage = JsonNullable.<String>of(preferredLanguage);
     
     return this;
   }
 
-   /**
+  /**
    * The preferred language
    * @return preferredLanguage
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -144,7 +145,7 @@ public class BankRedirectDataOneOf13Sofort {
     this.preferredLanguage = preferredLanguage;
   }
 
-  public void setPreferredLanguage(String preferredLanguage) {
+  public void setPreferredLanguage(@javax.annotation.Nullable String preferredLanguage) {
     this.preferredLanguage = JsonNullable.<String>of(preferredLanguage);
   }
 

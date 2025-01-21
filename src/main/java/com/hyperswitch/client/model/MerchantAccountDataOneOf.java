@@ -34,24 +34,25 @@ import java.util.StringJoiner;
   MerchantAccountDataOneOf.JSON_PROPERTY_IBAN
 })
 @JsonTypeName("MerchantAccountData_oneOf")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class MerchantAccountDataOneOf {
   public static final String JSON_PROPERTY_IBAN = "iban";
+  @javax.annotation.Nonnull
   private MerchantAccountDataOneOfIban iban;
 
   public MerchantAccountDataOneOf() {
   }
 
-  public MerchantAccountDataOneOf iban(MerchantAccountDataOneOfIban iban) {
+  public MerchantAccountDataOneOf iban(@javax.annotation.Nonnull MerchantAccountDataOneOfIban iban) {
     
     this.iban = iban;
     return this;
   }
 
-   /**
+  /**
    * Get iban
    * @return iban
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_IBAN)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -63,7 +64,7 @@ public class MerchantAccountDataOneOf {
 
   @JsonProperty(JSON_PROPERTY_IBAN)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setIban(MerchantAccountDataOneOfIban iban) {
+  public void setIban(@javax.annotation.Nonnull MerchantAccountDataOneOfIban iban) {
     this.iban = iban;
   }
 

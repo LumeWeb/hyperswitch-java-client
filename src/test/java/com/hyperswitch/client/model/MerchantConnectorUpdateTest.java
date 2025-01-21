@@ -27,27 +27,27 @@ import com.hyperswitch.client.model.MerchantConnectorDetails;
 import com.hyperswitch.client.model.MerchantConnectorWebhookDetails;
 import com.hyperswitch.client.model.PaymentMethodsEnabled;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import org.openapitools.jackson.nullable.JsonNullable;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.openapitools.jackson.nullable.JsonNullable;
 import java.util.NoSuchElementException;
-import org.junit.Assert;
-import org.junit.Ignore;
-import org.junit.Test;
-
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Test;
 
 /**
  * Model tests for MerchantConnectorUpdate
  */
-public class MerchantConnectorUpdateTest {
+class MerchantConnectorUpdateTest {
     private final MerchantConnectorUpdate model = new MerchantConnectorUpdate();
 
     /**
      * Model tests for MerchantConnectorUpdate
      */
     @Test
-    public void testMerchantConnectorUpdate() {
+    void testMerchantConnectorUpdate() {
         // TODO: test MerchantConnectorUpdate
     }
 
@@ -55,7 +55,7 @@ public class MerchantConnectorUpdateTest {
      * Test the property 'connectorType'
      */
     @Test
-    public void connectorTypeTest() {
+    void connectorTypeTest() {
         // TODO: test connectorType
     }
 
@@ -63,7 +63,7 @@ public class MerchantConnectorUpdateTest {
      * Test the property 'connectorLabel'
      */
     @Test
-    public void connectorLabelTest() {
+    void connectorLabelTest() {
         // TODO: test connectorLabel
     }
 
@@ -71,7 +71,7 @@ public class MerchantConnectorUpdateTest {
      * Test the property 'connectorAccountDetails'
      */
     @Test
-    public void connectorAccountDetailsTest() {
+    void connectorAccountDetailsTest() {
         // TODO: test connectorAccountDetails
     }
 
@@ -79,7 +79,7 @@ public class MerchantConnectorUpdateTest {
      * Test the property 'paymentMethodsEnabled'
      */
     @Test
-    public void paymentMethodsEnabledTest() {
+    void paymentMethodsEnabledTest() {
         // TODO: test paymentMethodsEnabled
     }
 
@@ -87,7 +87,7 @@ public class MerchantConnectorUpdateTest {
      * Test the property 'connectorWebhookDetails'
      */
     @Test
-    public void connectorWebhookDetailsTest() {
+    void connectorWebhookDetailsTest() {
         // TODO: test connectorWebhookDetails
     }
 
@@ -95,7 +95,7 @@ public class MerchantConnectorUpdateTest {
      * Test the property 'metadata'
      */
     @Test
-    public void metadataTest() {
+    void metadataTest() {
         // TODO: test metadata
     }
 
@@ -103,7 +103,7 @@ public class MerchantConnectorUpdateTest {
      * Test the property 'testMode'
      */
     @Test
-    public void testModeTest() {
+    void testModeTest() {
         // TODO: test testMode
     }
 
@@ -111,7 +111,7 @@ public class MerchantConnectorUpdateTest {
      * Test the property 'disabled'
      */
     @Test
-    public void disabledTest() {
+    void disabledTest() {
         // TODO: test disabled
     }
 
@@ -119,7 +119,7 @@ public class MerchantConnectorUpdateTest {
      * Test the property 'frmConfigs'
      */
     @Test
-    public void frmConfigsTest() {
+    void frmConfigsTest() {
         // TODO: test frmConfigs
     }
 
@@ -127,7 +127,7 @@ public class MerchantConnectorUpdateTest {
      * Test the property 'pmAuthConfig'
      */
     @Test
-    public void pmAuthConfigTest() {
+    void pmAuthConfigTest() {
         // TODO: test pmAuthConfig
     }
 
@@ -135,7 +135,7 @@ public class MerchantConnectorUpdateTest {
      * Test the property 'status'
      */
     @Test
-    public void statusTest() {
+    void statusTest() {
         // TODO: test status
     }
 
@@ -143,7 +143,7 @@ public class MerchantConnectorUpdateTest {
      * Test the property 'additionalMerchantData'
      */
     @Test
-    public void additionalMerchantDataTest() {
+    void additionalMerchantDataTest() {
         // TODO: test additionalMerchantData
     }
 
@@ -151,7 +151,7 @@ public class MerchantConnectorUpdateTest {
      * Test the property 'connectorWalletsDetails'
      */
     @Test
-    public void connectorWalletsDetailsTest() {
+    void connectorWalletsDetailsTest() {
         // TODO: test connectorWalletsDetails
     }
 

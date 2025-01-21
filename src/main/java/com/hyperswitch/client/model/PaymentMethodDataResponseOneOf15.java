@@ -34,24 +34,25 @@ import java.util.StringJoiner;
   PaymentMethodDataResponseOneOf15.JSON_PROPERTY_OPEN_BANKING
 })
 @JsonTypeName("PaymentMethodDataResponse_oneOf_15")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class PaymentMethodDataResponseOneOf15 {
   public static final String JSON_PROPERTY_OPEN_BANKING = "open_banking";
+  @javax.annotation.Nonnull
   private OpenBankingResponse openBanking;
 
   public PaymentMethodDataResponseOneOf15() {
   }
 
-  public PaymentMethodDataResponseOneOf15 openBanking(OpenBankingResponse openBanking) {
+  public PaymentMethodDataResponseOneOf15 openBanking(@javax.annotation.Nonnull OpenBankingResponse openBanking) {
     
     this.openBanking = openBanking;
     return this;
   }
 
-   /**
+  /**
    * Get openBanking
    * @return openBanking
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_OPEN_BANKING)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -63,7 +64,7 @@ public class PaymentMethodDataResponseOneOf15 {
 
   @JsonProperty(JSON_PROPERTY_OPEN_BANKING)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setOpenBanking(OpenBankingResponse openBanking) {
+  public void setOpenBanking(@javax.annotation.Nonnull OpenBankingResponse openBanking) {
     this.openBanking = openBanking;
   }
 

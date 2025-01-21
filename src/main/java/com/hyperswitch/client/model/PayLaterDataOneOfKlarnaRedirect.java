@@ -39,27 +39,29 @@ import java.util.StringJoiner;
   PayLaterDataOneOfKlarnaRedirect.JSON_PROPERTY_BILLING_COUNTRY
 })
 @JsonTypeName("PayLaterData_oneOf_klarna_redirect")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class PayLaterDataOneOfKlarnaRedirect {
   public static final String JSON_PROPERTY_BILLING_EMAIL = "billing_email";
+  @javax.annotation.Nullable
   private JsonNullable<String> billingEmail = JsonNullable.<String>undefined();
 
   public static final String JSON_PROPERTY_BILLING_COUNTRY = "billing_country";
+  @javax.annotation.Nullable
   private JsonNullable<CountryAlpha2> billingCountry = JsonNullable.<CountryAlpha2>undefined();
 
   public PayLaterDataOneOfKlarnaRedirect() {
   }
 
-  public PayLaterDataOneOfKlarnaRedirect billingEmail(String billingEmail) {
+  public PayLaterDataOneOfKlarnaRedirect billingEmail(@javax.annotation.Nullable String billingEmail) {
     this.billingEmail = JsonNullable.<String>of(billingEmail);
     
     return this;
   }
 
-   /**
+  /**
    * The billing email
    * @return billingEmail
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -79,21 +81,20 @@ public class PayLaterDataOneOfKlarnaRedirect {
     this.billingEmail = billingEmail;
   }
 
-  public void setBillingEmail(String billingEmail) {
+  public void setBillingEmail(@javax.annotation.Nullable String billingEmail) {
     this.billingEmail = JsonNullable.<String>of(billingEmail);
   }
 
-
-  public PayLaterDataOneOfKlarnaRedirect billingCountry(CountryAlpha2 billingCountry) {
+  public PayLaterDataOneOfKlarnaRedirect billingCountry(@javax.annotation.Nullable CountryAlpha2 billingCountry) {
     this.billingCountry = JsonNullable.<CountryAlpha2>of(billingCountry);
     
     return this;
   }
 
-   /**
+  /**
    * Get billingCountry
    * @return billingCountry
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -113,7 +114,7 @@ public class PayLaterDataOneOfKlarnaRedirect {
     this.billingCountry = billingCountry;
   }
 
-  public void setBillingCountry(CountryAlpha2 billingCountry) {
+  public void setBillingCountry(@javax.annotation.Nullable CountryAlpha2 billingCountry) {
     this.billingCountry = JsonNullable.<CountryAlpha2>of(billingCountry);
   }
 

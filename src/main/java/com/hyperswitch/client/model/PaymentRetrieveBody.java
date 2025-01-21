@@ -40,36 +40,41 @@ import java.util.StringJoiner;
   PaymentRetrieveBody.JSON_PROPERTY_EXPAND_CAPTURES,
   PaymentRetrieveBody.JSON_PROPERTY_EXPAND_ATTEMPTS
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class PaymentRetrieveBody {
   public static final String JSON_PROPERTY_MERCHANT_ID = "merchant_id";
+  @javax.annotation.Nullable
   private JsonNullable<String> merchantId = JsonNullable.<String>undefined();
 
   public static final String JSON_PROPERTY_FORCE_SYNC = "force_sync";
+  @javax.annotation.Nullable
   private JsonNullable<Boolean> forceSync = JsonNullable.<Boolean>undefined();
 
   public static final String JSON_PROPERTY_CLIENT_SECRET = "client_secret";
+  @javax.annotation.Nullable
   private JsonNullable<String> clientSecret = JsonNullable.<String>undefined();
 
   public static final String JSON_PROPERTY_EXPAND_CAPTURES = "expand_captures";
+  @javax.annotation.Nullable
   private JsonNullable<Boolean> expandCaptures = JsonNullable.<Boolean>undefined();
 
   public static final String JSON_PROPERTY_EXPAND_ATTEMPTS = "expand_attempts";
+  @javax.annotation.Nullable
   private JsonNullable<Boolean> expandAttempts = JsonNullable.<Boolean>undefined();
 
   public PaymentRetrieveBody() {
   }
 
-  public PaymentRetrieveBody merchantId(String merchantId) {
+  public PaymentRetrieveBody merchantId(@javax.annotation.Nullable String merchantId) {
     this.merchantId = JsonNullable.<String>of(merchantId);
     
     return this;
   }
 
-   /**
+  /**
    * The identifier for the Merchant Account.
    * @return merchantId
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -89,21 +94,20 @@ public class PaymentRetrieveBody {
     this.merchantId = merchantId;
   }
 
-  public void setMerchantId(String merchantId) {
+  public void setMerchantId(@javax.annotation.Nullable String merchantId) {
     this.merchantId = JsonNullable.<String>of(merchantId);
   }
 
-
-  public PaymentRetrieveBody forceSync(Boolean forceSync) {
+  public PaymentRetrieveBody forceSync(@javax.annotation.Nullable Boolean forceSync) {
     this.forceSync = JsonNullable.<Boolean>of(forceSync);
     
     return this;
   }
 
-   /**
+  /**
    * Decider to enable or disable the connector call for retrieve request
    * @return forceSync
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -123,21 +127,20 @@ public class PaymentRetrieveBody {
     this.forceSync = forceSync;
   }
 
-  public void setForceSync(Boolean forceSync) {
+  public void setForceSync(@javax.annotation.Nullable Boolean forceSync) {
     this.forceSync = JsonNullable.<Boolean>of(forceSync);
   }
 
-
-  public PaymentRetrieveBody clientSecret(String clientSecret) {
+  public PaymentRetrieveBody clientSecret(@javax.annotation.Nullable String clientSecret) {
     this.clientSecret = JsonNullable.<String>of(clientSecret);
     
     return this;
   }
 
-   /**
+  /**
    * This is a token which expires after 15 minutes, used from the client to authenticate and create sessions from the SDK
    * @return clientSecret
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -157,21 +160,20 @@ public class PaymentRetrieveBody {
     this.clientSecret = clientSecret;
   }
 
-  public void setClientSecret(String clientSecret) {
+  public void setClientSecret(@javax.annotation.Nullable String clientSecret) {
     this.clientSecret = JsonNullable.<String>of(clientSecret);
   }
 
-
-  public PaymentRetrieveBody expandCaptures(Boolean expandCaptures) {
+  public PaymentRetrieveBody expandCaptures(@javax.annotation.Nullable Boolean expandCaptures) {
     this.expandCaptures = JsonNullable.<Boolean>of(expandCaptures);
     
     return this;
   }
 
-   /**
+  /**
    * If enabled provides list of captures linked to latest attempt
    * @return expandCaptures
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -191,21 +193,20 @@ public class PaymentRetrieveBody {
     this.expandCaptures = expandCaptures;
   }
 
-  public void setExpandCaptures(Boolean expandCaptures) {
+  public void setExpandCaptures(@javax.annotation.Nullable Boolean expandCaptures) {
     this.expandCaptures = JsonNullable.<Boolean>of(expandCaptures);
   }
 
-
-  public PaymentRetrieveBody expandAttempts(Boolean expandAttempts) {
+  public PaymentRetrieveBody expandAttempts(@javax.annotation.Nullable Boolean expandAttempts) {
     this.expandAttempts = JsonNullable.<Boolean>of(expandAttempts);
     
     return this;
   }
 
-   /**
+  /**
    * If enabled provides list of attempts linked to payment intent
    * @return expandAttempts
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -225,7 +226,7 @@ public class PaymentRetrieveBody {
     this.expandAttempts = expandAttempts;
   }
 
-  public void setExpandAttempts(Boolean expandAttempts) {
+  public void setExpandAttempts(@javax.annotation.Nullable Boolean expandAttempts) {
     this.expandAttempts = JsonNullable.<Boolean>of(expandAttempts);
   }
 

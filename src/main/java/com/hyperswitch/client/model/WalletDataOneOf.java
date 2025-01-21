@@ -33,24 +33,25 @@ import java.util.StringJoiner;
   WalletDataOneOf.JSON_PROPERTY_ALI_PAY_QR
 })
 @JsonTypeName("WalletData_oneOf")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class WalletDataOneOf {
   public static final String JSON_PROPERTY_ALI_PAY_QR = "ali_pay_qr";
+  @javax.annotation.Nonnull
   private Object aliPayQr;
 
   public WalletDataOneOf() {
   }
 
-  public WalletDataOneOf aliPayQr(Object aliPayQr) {
+  public WalletDataOneOf aliPayQr(@javax.annotation.Nonnull Object aliPayQr) {
     
     this.aliPayQr = aliPayQr;
     return this;
   }
 
-   /**
+  /**
    * Get aliPayQr
    * @return aliPayQr
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_ALI_PAY_QR)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -62,7 +63,7 @@ public class WalletDataOneOf {
 
   @JsonProperty(JSON_PROPERTY_ALI_PAY_QR)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setAliPayQr(Object aliPayQr) {
+  public void setAliPayQr(@javax.annotation.Nonnull Object aliPayQr) {
     this.aliPayQr = aliPayQr;
   }
 

@@ -23,6 +23,7 @@ import com.fasterxml.jackson.annotation.JsonValue;
 import com.hyperswitch.client.model.PaymentMethod;
 import com.hyperswitch.client.model.ResponsePaymentMethodTypes;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 import com.fasterxml.jackson.annotation.JsonTypeName;
@@ -37,27 +38,29 @@ import java.util.StringJoiner;
   ResponsePaymentMethodsEnabled.JSON_PROPERTY_PAYMENT_METHOD,
   ResponsePaymentMethodsEnabled.JSON_PROPERTY_PAYMENT_METHOD_TYPES
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class ResponsePaymentMethodsEnabled {
   public static final String JSON_PROPERTY_PAYMENT_METHOD = "payment_method";
+  @javax.annotation.Nonnull
   private PaymentMethod paymentMethod;
 
   public static final String JSON_PROPERTY_PAYMENT_METHOD_TYPES = "payment_method_types";
+  @javax.annotation.Nonnull
   private List<ResponsePaymentMethodTypes> paymentMethodTypes = new ArrayList<>();
 
   public ResponsePaymentMethodsEnabled() {
   }
 
-  public ResponsePaymentMethodsEnabled paymentMethod(PaymentMethod paymentMethod) {
+  public ResponsePaymentMethodsEnabled paymentMethod(@javax.annotation.Nonnull PaymentMethod paymentMethod) {
     
     this.paymentMethod = paymentMethod;
     return this;
   }
 
-   /**
+  /**
    * Get paymentMethod
    * @return paymentMethod
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_PAYMENT_METHOD)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -69,12 +72,11 @@ public class ResponsePaymentMethodsEnabled {
 
   @JsonProperty(JSON_PROPERTY_PAYMENT_METHOD)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setPaymentMethod(PaymentMethod paymentMethod) {
+  public void setPaymentMethod(@javax.annotation.Nonnull PaymentMethod paymentMethod) {
     this.paymentMethod = paymentMethod;
   }
 
-
-  public ResponsePaymentMethodsEnabled paymentMethodTypes(List<ResponsePaymentMethodTypes> paymentMethodTypes) {
+  public ResponsePaymentMethodsEnabled paymentMethodTypes(@javax.annotation.Nonnull List<ResponsePaymentMethodTypes> paymentMethodTypes) {
     
     this.paymentMethodTypes = paymentMethodTypes;
     return this;
@@ -88,10 +90,10 @@ public class ResponsePaymentMethodsEnabled {
     return this;
   }
 
-   /**
+  /**
    * The list of payment method types enabled for a connector account
    * @return paymentMethodTypes
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_PAYMENT_METHOD_TYPES)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -103,7 +105,7 @@ public class ResponsePaymentMethodsEnabled {
 
   @JsonProperty(JSON_PROPERTY_PAYMENT_METHOD_TYPES)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setPaymentMethodTypes(List<ResponsePaymentMethodTypes> paymentMethodTypes) {
+  public void setPaymentMethodTypes(@javax.annotation.Nonnull List<ResponsePaymentMethodTypes> paymentMethodTypes) {
     this.paymentMethodTypes = paymentMethodTypes;
   }
 

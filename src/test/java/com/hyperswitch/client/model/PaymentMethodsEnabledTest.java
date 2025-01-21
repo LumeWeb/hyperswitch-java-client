@@ -21,27 +21,27 @@ import com.fasterxml.jackson.annotation.JsonValue;
 import com.hyperswitch.client.model.PaymentMethod;
 import com.hyperswitch.client.model.RequestPaymentMethodTypes;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import org.openapitools.jackson.nullable.JsonNullable;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.openapitools.jackson.nullable.JsonNullable;
 import java.util.NoSuchElementException;
-import org.junit.Assert;
-import org.junit.Ignore;
-import org.junit.Test;
-
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Test;
 
 /**
  * Model tests for PaymentMethodsEnabled
  */
-public class PaymentMethodsEnabledTest {
+class PaymentMethodsEnabledTest {
     private final PaymentMethodsEnabled model = new PaymentMethodsEnabled();
 
     /**
      * Model tests for PaymentMethodsEnabled
      */
     @Test
-    public void testPaymentMethodsEnabled() {
+    void testPaymentMethodsEnabled() {
         // TODO: test PaymentMethodsEnabled
     }
 
@@ -49,7 +49,7 @@ public class PaymentMethodsEnabledTest {
      * Test the property 'paymentMethod'
      */
     @Test
-    public void paymentMethodTest() {
+    void paymentMethodTest() {
         // TODO: test paymentMethod
     }
 
@@ -57,7 +57,7 @@ public class PaymentMethodsEnabledTest {
      * Test the property 'paymentMethodTypes'
      */
     @Test
-    public void paymentMethodTypesTest() {
+    void paymentMethodTypesTest() {
         // TODO: test paymentMethodTypes
     }
 

@@ -42,39 +42,45 @@ import java.util.StringJoiner;
   IncrementalAuthorizationResponse.JSON_PROPERTY_ERROR_MESSAGE,
   IncrementalAuthorizationResponse.JSON_PROPERTY_PREVIOUSLY_AUTHORIZED_AMOUNT
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class IncrementalAuthorizationResponse {
   public static final String JSON_PROPERTY_AUTHORIZATION_ID = "authorization_id";
+  @javax.annotation.Nonnull
   private String authorizationId;
 
   public static final String JSON_PROPERTY_AMOUNT = "amount";
+  @javax.annotation.Nonnull
   private Long amount;
 
   public static final String JSON_PROPERTY_STATUS = "status";
+  @javax.annotation.Nonnull
   private AuthorizationStatus status;
 
   public static final String JSON_PROPERTY_ERROR_CODE = "error_code";
+  @javax.annotation.Nullable
   private JsonNullable<String> errorCode = JsonNullable.<String>undefined();
 
   public static final String JSON_PROPERTY_ERROR_MESSAGE = "error_message";
+  @javax.annotation.Nullable
   private JsonNullable<String> errorMessage = JsonNullable.<String>undefined();
 
   public static final String JSON_PROPERTY_PREVIOUSLY_AUTHORIZED_AMOUNT = "previously_authorized_amount";
+  @javax.annotation.Nonnull
   private Long previouslyAuthorizedAmount;
 
   public IncrementalAuthorizationResponse() {
   }
 
-  public IncrementalAuthorizationResponse authorizationId(String authorizationId) {
+  public IncrementalAuthorizationResponse authorizationId(@javax.annotation.Nonnull String authorizationId) {
     
     this.authorizationId = authorizationId;
     return this;
   }
 
-   /**
+  /**
    * The unique identifier of authorization
    * @return authorizationId
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_AUTHORIZATION_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -86,21 +92,20 @@ public class IncrementalAuthorizationResponse {
 
   @JsonProperty(JSON_PROPERTY_AUTHORIZATION_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setAuthorizationId(String authorizationId) {
+  public void setAuthorizationId(@javax.annotation.Nonnull String authorizationId) {
     this.authorizationId = authorizationId;
   }
 
-
-  public IncrementalAuthorizationResponse amount(Long amount) {
+  public IncrementalAuthorizationResponse amount(@javax.annotation.Nonnull Long amount) {
     
     this.amount = amount;
     return this;
   }
 
-   /**
+  /**
    * Amount the authorization has been made for
    * @return amount
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_AMOUNT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -112,21 +117,20 @@ public class IncrementalAuthorizationResponse {
 
   @JsonProperty(JSON_PROPERTY_AMOUNT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setAmount(Long amount) {
+  public void setAmount(@javax.annotation.Nonnull Long amount) {
     this.amount = amount;
   }
 
-
-  public IncrementalAuthorizationResponse status(AuthorizationStatus status) {
+  public IncrementalAuthorizationResponse status(@javax.annotation.Nonnull AuthorizationStatus status) {
     
     this.status = status;
     return this;
   }
 
-   /**
+  /**
    * Get status
    * @return status
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_STATUS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -138,21 +142,20 @@ public class IncrementalAuthorizationResponse {
 
   @JsonProperty(JSON_PROPERTY_STATUS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setStatus(AuthorizationStatus status) {
+  public void setStatus(@javax.annotation.Nonnull AuthorizationStatus status) {
     this.status = status;
   }
 
-
-  public IncrementalAuthorizationResponse errorCode(String errorCode) {
+  public IncrementalAuthorizationResponse errorCode(@javax.annotation.Nullable String errorCode) {
     this.errorCode = JsonNullable.<String>of(errorCode);
     
     return this;
   }
 
-   /**
+  /**
    * Error code sent by the connector for authorization
    * @return errorCode
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -172,21 +175,20 @@ public class IncrementalAuthorizationResponse {
     this.errorCode = errorCode;
   }
 
-  public void setErrorCode(String errorCode) {
+  public void setErrorCode(@javax.annotation.Nullable String errorCode) {
     this.errorCode = JsonNullable.<String>of(errorCode);
   }
 
-
-  public IncrementalAuthorizationResponse errorMessage(String errorMessage) {
+  public IncrementalAuthorizationResponse errorMessage(@javax.annotation.Nullable String errorMessage) {
     this.errorMessage = JsonNullable.<String>of(errorMessage);
     
     return this;
   }
 
-   /**
+  /**
    * Error message sent by the connector for authorization
    * @return errorMessage
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -206,21 +208,20 @@ public class IncrementalAuthorizationResponse {
     this.errorMessage = errorMessage;
   }
 
-  public void setErrorMessage(String errorMessage) {
+  public void setErrorMessage(@javax.annotation.Nullable String errorMessage) {
     this.errorMessage = JsonNullable.<String>of(errorMessage);
   }
 
-
-  public IncrementalAuthorizationResponse previouslyAuthorizedAmount(Long previouslyAuthorizedAmount) {
+  public IncrementalAuthorizationResponse previouslyAuthorizedAmount(@javax.annotation.Nonnull Long previouslyAuthorizedAmount) {
     
     this.previouslyAuthorizedAmount = previouslyAuthorizedAmount;
     return this;
   }
 
-   /**
+  /**
    * This Unit struct represents MinorUnit in which core amount works
    * @return previouslyAuthorizedAmount
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_PREVIOUSLY_AUTHORIZED_AMOUNT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -232,7 +233,7 @@ public class IncrementalAuthorizationResponse {
 
   @JsonProperty(JSON_PROPERTY_PREVIOUSLY_AUTHORIZED_AMOUNT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setPreviouslyAuthorizedAmount(Long previouslyAuthorizedAmount) {
+  public void setPreviouslyAuthorizedAmount(@javax.annotation.Nonnull Long previouslyAuthorizedAmount) {
     this.previouslyAuthorizedAmount = previouslyAuthorizedAmount;
   }
 

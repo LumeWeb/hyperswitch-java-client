@@ -27,6 +27,7 @@ import com.hyperswitch.client.model.ReconStatus;
 import com.hyperswitch.client.model.RoutingAlgorithm;
 import com.hyperswitch.client.model.WebhookDetails;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import org.openapitools.jackson.nullable.JsonNullable;
 import com.fasterxml.jackson.annotation.JsonIgnore;
@@ -64,84 +65,105 @@ import java.util.StringJoiner;
   MerchantAccountResponse.JSON_PROPERTY_RECON_STATUS,
   MerchantAccountResponse.JSON_PROPERTY_PM_COLLECT_LINK_CONFIG
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class MerchantAccountResponse {
   public static final String JSON_PROPERTY_MERCHANT_ID = "merchant_id";
+  @javax.annotation.Nonnull
   private String merchantId;
 
   public static final String JSON_PROPERTY_MERCHANT_NAME = "merchant_name";
+  @javax.annotation.Nullable
   private JsonNullable<String> merchantName = JsonNullable.<String>undefined();
 
   public static final String JSON_PROPERTY_RETURN_URL = "return_url";
+  @javax.annotation.Nullable
   private JsonNullable<String> returnUrl = JsonNullable.<String>undefined();
 
   public static final String JSON_PROPERTY_ENABLE_PAYMENT_RESPONSE_HASH = "enable_payment_response_hash";
+  @javax.annotation.Nonnull
   private Boolean enablePaymentResponseHash = false;
 
   public static final String JSON_PROPERTY_PAYMENT_RESPONSE_HASH_KEY = "payment_response_hash_key";
+  @javax.annotation.Nullable
   private JsonNullable<String> paymentResponseHashKey = JsonNullable.<String>undefined();
 
   public static final String JSON_PROPERTY_REDIRECT_TO_MERCHANT_WITH_HTTP_POST = "redirect_to_merchant_with_http_post";
+  @javax.annotation.Nonnull
   private Boolean redirectToMerchantWithHttpPost = false;
 
   public static final String JSON_PROPERTY_MERCHANT_DETAILS = "merchant_details";
+  @javax.annotation.Nullable
   private JsonNullable<MerchantDetails> merchantDetails = JsonNullable.<MerchantDetails>undefined();
 
   public static final String JSON_PROPERTY_WEBHOOK_DETAILS = "webhook_details";
+  @javax.annotation.Nullable
   private JsonNullable<WebhookDetails> webhookDetails = JsonNullable.<WebhookDetails>undefined();
 
   public static final String JSON_PROPERTY_PAYOUT_ROUTING_ALGORITHM = "payout_routing_algorithm";
+  @javax.annotation.Nullable
   private JsonNullable<RoutingAlgorithm> payoutRoutingAlgorithm = JsonNullable.<RoutingAlgorithm>undefined();
 
   public static final String JSON_PROPERTY_SUB_MERCHANTS_ENABLED = "sub_merchants_enabled";
+  @javax.annotation.Nullable
   private JsonNullable<Boolean> subMerchantsEnabled = JsonNullable.<Boolean>of(false);
 
   public static final String JSON_PROPERTY_PARENT_MERCHANT_ID = "parent_merchant_id";
+  @javax.annotation.Nullable
   private JsonNullable<String> parentMerchantId = JsonNullable.<String>undefined();
 
   public static final String JSON_PROPERTY_PUBLISHABLE_KEY = "publishable_key";
+  @javax.annotation.Nullable
   private JsonNullable<String> publishableKey = JsonNullable.<String>undefined();
 
   public static final String JSON_PROPERTY_METADATA = "metadata";
+  @javax.annotation.Nullable
   private JsonNullable<Object> metadata = JsonNullable.<Object>undefined();
 
   public static final String JSON_PROPERTY_LOCKER_ID = "locker_id";
+  @javax.annotation.Nullable
   private JsonNullable<String> lockerId = JsonNullable.<String>undefined();
 
   public static final String JSON_PROPERTY_PRIMARY_BUSINESS_DETAILS = "primary_business_details";
+  @javax.annotation.Nonnull
   private List<PrimaryBusinessDetails> primaryBusinessDetails = new ArrayList<>();
 
   public static final String JSON_PROPERTY_FRM_ROUTING_ALGORITHM = "frm_routing_algorithm";
+  @javax.annotation.Nullable
   private JsonNullable<RoutingAlgorithm> frmRoutingAlgorithm = JsonNullable.<RoutingAlgorithm>undefined();
 
   public static final String JSON_PROPERTY_ORGANIZATION_ID = "organization_id";
+  @javax.annotation.Nonnull
   private String organizationId;
 
   public static final String JSON_PROPERTY_IS_RECON_ENABLED = "is_recon_enabled";
+  @javax.annotation.Nonnull
   private Boolean isReconEnabled;
 
   public static final String JSON_PROPERTY_DEFAULT_PROFILE = "default_profile";
+  @javax.annotation.Nullable
   private JsonNullable<String> defaultProfile = JsonNullable.<String>undefined();
 
   public static final String JSON_PROPERTY_RECON_STATUS = "recon_status";
+  @javax.annotation.Nonnull
   private ReconStatus reconStatus;
 
   public static final String JSON_PROPERTY_PM_COLLECT_LINK_CONFIG = "pm_collect_link_config";
+  @javax.annotation.Nullable
   private JsonNullable<BusinessCollectLinkConfig> pmCollectLinkConfig = JsonNullable.<BusinessCollectLinkConfig>undefined();
 
   public MerchantAccountResponse() {
   }
 
-  public MerchantAccountResponse merchantId(String merchantId) {
+  public MerchantAccountResponse merchantId(@javax.annotation.Nonnull String merchantId) {
     
     this.merchantId = merchantId;
     return this;
   }
 
-   /**
+  /**
    * The identifier for the Merchant Account
    * @return merchantId
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_MERCHANT_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -153,21 +175,20 @@ public class MerchantAccountResponse {
 
   @JsonProperty(JSON_PROPERTY_MERCHANT_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setMerchantId(String merchantId) {
+  public void setMerchantId(@javax.annotation.Nonnull String merchantId) {
     this.merchantId = merchantId;
   }
 
-
-  public MerchantAccountResponse merchantName(String merchantName) {
+  public MerchantAccountResponse merchantName(@javax.annotation.Nullable String merchantName) {
     this.merchantName = JsonNullable.<String>of(merchantName);
     
     return this;
   }
 
-   /**
+  /**
    * Name of the Merchant Account
    * @return merchantName
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -187,21 +208,20 @@ public class MerchantAccountResponse {
     this.merchantName = merchantName;
   }
 
-  public void setMerchantName(String merchantName) {
+  public void setMerchantName(@javax.annotation.Nullable String merchantName) {
     this.merchantName = JsonNullable.<String>of(merchantName);
   }
 
-
-  public MerchantAccountResponse returnUrl(String returnUrl) {
+  public MerchantAccountResponse returnUrl(@javax.annotation.Nullable String returnUrl) {
     this.returnUrl = JsonNullable.<String>of(returnUrl);
     
     return this;
   }
 
-   /**
+  /**
    * The URL to redirect after completion of the payment
    * @return returnUrl
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -221,21 +241,20 @@ public class MerchantAccountResponse {
     this.returnUrl = returnUrl;
   }
 
-  public void setReturnUrl(String returnUrl) {
+  public void setReturnUrl(@javax.annotation.Nullable String returnUrl) {
     this.returnUrl = JsonNullable.<String>of(returnUrl);
   }
 
-
-  public MerchantAccountResponse enablePaymentResponseHash(Boolean enablePaymentResponseHash) {
+  public MerchantAccountResponse enablePaymentResponseHash(@javax.annotation.Nonnull Boolean enablePaymentResponseHash) {
     
     this.enablePaymentResponseHash = enablePaymentResponseHash;
     return this;
   }
 
-   /**
+  /**
    * A boolean value to indicate if payment response hash needs to be enabled
    * @return enablePaymentResponseHash
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_ENABLE_PAYMENT_RESPONSE_HASH)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -247,21 +266,20 @@ public class MerchantAccountResponse {
 
   @JsonProperty(JSON_PROPERTY_ENABLE_PAYMENT_RESPONSE_HASH)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setEnablePaymentResponseHash(Boolean enablePaymentResponseHash) {
+  public void setEnablePaymentResponseHash(@javax.annotation.Nonnull Boolean enablePaymentResponseHash) {
     this.enablePaymentResponseHash = enablePaymentResponseHash;
   }
 
-
-  public MerchantAccountResponse paymentResponseHashKey(String paymentResponseHashKey) {
+  public MerchantAccountResponse paymentResponseHashKey(@javax.annotation.Nullable String paymentResponseHashKey) {
     this.paymentResponseHashKey = JsonNullable.<String>of(paymentResponseHashKey);
     
     return this;
   }
 
-   /**
+  /**
    * Refers to the hash key used for calculating the signature for webhooks and redirect response. If the value is not provided, a value is automatically generated.
    * @return paymentResponseHashKey
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -281,21 +299,20 @@ public class MerchantAccountResponse {
     this.paymentResponseHashKey = paymentResponseHashKey;
   }
 
-  public void setPaymentResponseHashKey(String paymentResponseHashKey) {
+  public void setPaymentResponseHashKey(@javax.annotation.Nullable String paymentResponseHashKey) {
     this.paymentResponseHashKey = JsonNullable.<String>of(paymentResponseHashKey);
   }
 
-
-  public MerchantAccountResponse redirectToMerchantWithHttpPost(Boolean redirectToMerchantWithHttpPost) {
+  public MerchantAccountResponse redirectToMerchantWithHttpPost(@javax.annotation.Nonnull Boolean redirectToMerchantWithHttpPost) {
     
     this.redirectToMerchantWithHttpPost = redirectToMerchantWithHttpPost;
     return this;
   }
 
-   /**
+  /**
    * A boolean value to indicate if redirect to merchant with http post needs to be enabled
    * @return redirectToMerchantWithHttpPost
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_REDIRECT_TO_MERCHANT_WITH_HTTP_POST)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -307,21 +324,20 @@ public class MerchantAccountResponse {
 
   @JsonProperty(JSON_PROPERTY_REDIRECT_TO_MERCHANT_WITH_HTTP_POST)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setRedirectToMerchantWithHttpPost(Boolean redirectToMerchantWithHttpPost) {
+  public void setRedirectToMerchantWithHttpPost(@javax.annotation.Nonnull Boolean redirectToMerchantWithHttpPost) {
     this.redirectToMerchantWithHttpPost = redirectToMerchantWithHttpPost;
   }
 
-
-  public MerchantAccountResponse merchantDetails(MerchantDetails merchantDetails) {
+  public MerchantAccountResponse merchantDetails(@javax.annotation.Nullable MerchantDetails merchantDetails) {
     this.merchantDetails = JsonNullable.<MerchantDetails>of(merchantDetails);
     
     return this;
   }
 
-   /**
+  /**
    * Get merchantDetails
    * @return merchantDetails
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -341,21 +357,20 @@ public class MerchantAccountResponse {
     this.merchantDetails = merchantDetails;
   }
 
-  public void setMerchantDetails(MerchantDetails merchantDetails) {
+  public void setMerchantDetails(@javax.annotation.Nullable MerchantDetails merchantDetails) {
     this.merchantDetails = JsonNullable.<MerchantDetails>of(merchantDetails);
   }
 
-
-  public MerchantAccountResponse webhookDetails(WebhookDetails webhookDetails) {
+  public MerchantAccountResponse webhookDetails(@javax.annotation.Nullable WebhookDetails webhookDetails) {
     this.webhookDetails = JsonNullable.<WebhookDetails>of(webhookDetails);
     
     return this;
   }
 
-   /**
+  /**
    * Get webhookDetails
    * @return webhookDetails
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -375,21 +390,20 @@ public class MerchantAccountResponse {
     this.webhookDetails = webhookDetails;
   }
 
-  public void setWebhookDetails(WebhookDetails webhookDetails) {
+  public void setWebhookDetails(@javax.annotation.Nullable WebhookDetails webhookDetails) {
     this.webhookDetails = JsonNullable.<WebhookDetails>of(webhookDetails);
   }
 
-
-  public MerchantAccountResponse payoutRoutingAlgorithm(RoutingAlgorithm payoutRoutingAlgorithm) {
+  public MerchantAccountResponse payoutRoutingAlgorithm(@javax.annotation.Nullable RoutingAlgorithm payoutRoutingAlgorithm) {
     this.payoutRoutingAlgorithm = JsonNullable.<RoutingAlgorithm>of(payoutRoutingAlgorithm);
     
     return this;
   }
 
-   /**
+  /**
    * Get payoutRoutingAlgorithm
    * @return payoutRoutingAlgorithm
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -409,21 +423,20 @@ public class MerchantAccountResponse {
     this.payoutRoutingAlgorithm = payoutRoutingAlgorithm;
   }
 
-  public void setPayoutRoutingAlgorithm(RoutingAlgorithm payoutRoutingAlgorithm) {
+  public void setPayoutRoutingAlgorithm(@javax.annotation.Nullable RoutingAlgorithm payoutRoutingAlgorithm) {
     this.payoutRoutingAlgorithm = JsonNullable.<RoutingAlgorithm>of(payoutRoutingAlgorithm);
   }
 
-
-  public MerchantAccountResponse subMerchantsEnabled(Boolean subMerchantsEnabled) {
+  public MerchantAccountResponse subMerchantsEnabled(@javax.annotation.Nullable Boolean subMerchantsEnabled) {
     this.subMerchantsEnabled = JsonNullable.<Boolean>of(subMerchantsEnabled);
     
     return this;
   }
 
-   /**
+  /**
    * A boolean value to indicate if the merchant is a sub-merchant under a master or a parent merchant. By default, its value is false.
    * @return subMerchantsEnabled
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -443,21 +456,20 @@ public class MerchantAccountResponse {
     this.subMerchantsEnabled = subMerchantsEnabled;
   }
 
-  public void setSubMerchantsEnabled(Boolean subMerchantsEnabled) {
+  public void setSubMerchantsEnabled(@javax.annotation.Nullable Boolean subMerchantsEnabled) {
     this.subMerchantsEnabled = JsonNullable.<Boolean>of(subMerchantsEnabled);
   }
 
-
-  public MerchantAccountResponse parentMerchantId(String parentMerchantId) {
+  public MerchantAccountResponse parentMerchantId(@javax.annotation.Nullable String parentMerchantId) {
     this.parentMerchantId = JsonNullable.<String>of(parentMerchantId);
     
     return this;
   }
 
-   /**
+  /**
    * Refers to the Parent Merchant ID if the merchant being created is a sub-merchant
    * @return parentMerchantId
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -477,21 +489,20 @@ public class MerchantAccountResponse {
     this.parentMerchantId = parentMerchantId;
   }
 
-  public void setParentMerchantId(String parentMerchantId) {
+  public void setParentMerchantId(@javax.annotation.Nullable String parentMerchantId) {
     this.parentMerchantId = JsonNullable.<String>of(parentMerchantId);
   }
 
-
-  public MerchantAccountResponse publishableKey(String publishableKey) {
+  public MerchantAccountResponse publishableKey(@javax.annotation.Nullable String publishableKey) {
     this.publishableKey = JsonNullable.<String>of(publishableKey);
     
     return this;
   }
 
-   /**
+  /**
    * API key that will be used for server side API access
    * @return publishableKey
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -511,21 +522,20 @@ public class MerchantAccountResponse {
     this.publishableKey = publishableKey;
   }
 
-  public void setPublishableKey(String publishableKey) {
+  public void setPublishableKey(@javax.annotation.Nullable String publishableKey) {
     this.publishableKey = JsonNullable.<String>of(publishableKey);
   }
 
-
-  public MerchantAccountResponse metadata(Object metadata) {
+  public MerchantAccountResponse metadata(@javax.annotation.Nullable Object metadata) {
     this.metadata = JsonNullable.<Object>of(metadata);
     
     return this;
   }
 
-   /**
+  /**
    * Metadata is useful for storing additional, unstructured information on an object.
    * @return metadata
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -545,21 +555,20 @@ public class MerchantAccountResponse {
     this.metadata = metadata;
   }
 
-  public void setMetadata(Object metadata) {
+  public void setMetadata(@javax.annotation.Nullable Object metadata) {
     this.metadata = JsonNullable.<Object>of(metadata);
   }
 
-
-  public MerchantAccountResponse lockerId(String lockerId) {
+  public MerchantAccountResponse lockerId(@javax.annotation.Nullable String lockerId) {
     this.lockerId = JsonNullable.<String>of(lockerId);
     
     return this;
   }
 
-   /**
+  /**
    * An identifier for the vault used to store payment method information.
    * @return lockerId
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -579,12 +588,11 @@ public class MerchantAccountResponse {
     this.lockerId = lockerId;
   }
 
-  public void setLockerId(String lockerId) {
+  public void setLockerId(@javax.annotation.Nullable String lockerId) {
     this.lockerId = JsonNullable.<String>of(lockerId);
   }
 
-
-  public MerchantAccountResponse primaryBusinessDetails(List<PrimaryBusinessDetails> primaryBusinessDetails) {
+  public MerchantAccountResponse primaryBusinessDetails(@javax.annotation.Nonnull List<PrimaryBusinessDetails> primaryBusinessDetails) {
     
     this.primaryBusinessDetails = primaryBusinessDetails;
     return this;
@@ -598,10 +606,10 @@ public class MerchantAccountResponse {
     return this;
   }
 
-   /**
+  /**
    * Details about the primary business unit of the merchant account
    * @return primaryBusinessDetails
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_PRIMARY_BUSINESS_DETAILS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -613,21 +621,20 @@ public class MerchantAccountResponse {
 
   @JsonProperty(JSON_PROPERTY_PRIMARY_BUSINESS_DETAILS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setPrimaryBusinessDetails(List<PrimaryBusinessDetails> primaryBusinessDetails) {
+  public void setPrimaryBusinessDetails(@javax.annotation.Nonnull List<PrimaryBusinessDetails> primaryBusinessDetails) {
     this.primaryBusinessDetails = primaryBusinessDetails;
   }
 
-
-  public MerchantAccountResponse frmRoutingAlgorithm(RoutingAlgorithm frmRoutingAlgorithm) {
+  public MerchantAccountResponse frmRoutingAlgorithm(@javax.annotation.Nullable RoutingAlgorithm frmRoutingAlgorithm) {
     this.frmRoutingAlgorithm = JsonNullable.<RoutingAlgorithm>of(frmRoutingAlgorithm);
     
     return this;
   }
 
-   /**
+  /**
    * Get frmRoutingAlgorithm
    * @return frmRoutingAlgorithm
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -647,21 +654,20 @@ public class MerchantAccountResponse {
     this.frmRoutingAlgorithm = frmRoutingAlgorithm;
   }
 
-  public void setFrmRoutingAlgorithm(RoutingAlgorithm frmRoutingAlgorithm) {
+  public void setFrmRoutingAlgorithm(@javax.annotation.Nullable RoutingAlgorithm frmRoutingAlgorithm) {
     this.frmRoutingAlgorithm = JsonNullable.<RoutingAlgorithm>of(frmRoutingAlgorithm);
   }
 
-
-  public MerchantAccountResponse organizationId(String organizationId) {
+  public MerchantAccountResponse organizationId(@javax.annotation.Nonnull String organizationId) {
     
     this.organizationId = organizationId;
     return this;
   }
 
-   /**
+  /**
    * The organization id merchant is associated with
    * @return organizationId
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_ORGANIZATION_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -673,21 +679,20 @@ public class MerchantAccountResponse {
 
   @JsonProperty(JSON_PROPERTY_ORGANIZATION_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setOrganizationId(String organizationId) {
+  public void setOrganizationId(@javax.annotation.Nonnull String organizationId) {
     this.organizationId = organizationId;
   }
 
-
-  public MerchantAccountResponse isReconEnabled(Boolean isReconEnabled) {
+  public MerchantAccountResponse isReconEnabled(@javax.annotation.Nonnull Boolean isReconEnabled) {
     
     this.isReconEnabled = isReconEnabled;
     return this;
   }
 
-   /**
+  /**
    * A boolean value to indicate if the merchant has recon service is enabled or not, by default value is false
    * @return isReconEnabled
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_IS_RECON_ENABLED)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -699,21 +704,20 @@ public class MerchantAccountResponse {
 
   @JsonProperty(JSON_PROPERTY_IS_RECON_ENABLED)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setIsReconEnabled(Boolean isReconEnabled) {
+  public void setIsReconEnabled(@javax.annotation.Nonnull Boolean isReconEnabled) {
     this.isReconEnabled = isReconEnabled;
   }
 
-
-  public MerchantAccountResponse defaultProfile(String defaultProfile) {
+  public MerchantAccountResponse defaultProfile(@javax.annotation.Nullable String defaultProfile) {
     this.defaultProfile = JsonNullable.<String>of(defaultProfile);
     
     return this;
   }
 
-   /**
+  /**
    * The default profile that must be used for creating merchant accounts and payments
    * @return defaultProfile
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -733,21 +737,20 @@ public class MerchantAccountResponse {
     this.defaultProfile = defaultProfile;
   }
 
-  public void setDefaultProfile(String defaultProfile) {
+  public void setDefaultProfile(@javax.annotation.Nullable String defaultProfile) {
     this.defaultProfile = JsonNullable.<String>of(defaultProfile);
   }
 
-
-  public MerchantAccountResponse reconStatus(ReconStatus reconStatus) {
+  public MerchantAccountResponse reconStatus(@javax.annotation.Nonnull ReconStatus reconStatus) {
     
     this.reconStatus = reconStatus;
     return this;
   }
 
-   /**
+  /**
    * Get reconStatus
    * @return reconStatus
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_RECON_STATUS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -759,21 +762,20 @@ public class MerchantAccountResponse {
 
   @JsonProperty(JSON_PROPERTY_RECON_STATUS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setReconStatus(ReconStatus reconStatus) {
+  public void setReconStatus(@javax.annotation.Nonnull ReconStatus reconStatus) {
     this.reconStatus = reconStatus;
   }
 
-
-  public MerchantAccountResponse pmCollectLinkConfig(BusinessCollectLinkConfig pmCollectLinkConfig) {
+  public MerchantAccountResponse pmCollectLinkConfig(@javax.annotation.Nullable BusinessCollectLinkConfig pmCollectLinkConfig) {
     this.pmCollectLinkConfig = JsonNullable.<BusinessCollectLinkConfig>of(pmCollectLinkConfig);
     
     return this;
   }
 
-   /**
+  /**
    * Get pmCollectLinkConfig
    * @return pmCollectLinkConfig
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -793,7 +795,7 @@ public class MerchantAccountResponse {
     this.pmCollectLinkConfig = pmCollectLinkConfig;
   }
 
-  public void setPmCollectLinkConfig(BusinessCollectLinkConfig pmCollectLinkConfig) {
+  public void setPmCollectLinkConfig(@javax.annotation.Nullable BusinessCollectLinkConfig pmCollectLinkConfig) {
     this.pmCollectLinkConfig = JsonNullable.<BusinessCollectLinkConfig>of(pmCollectLinkConfig);
   }
 

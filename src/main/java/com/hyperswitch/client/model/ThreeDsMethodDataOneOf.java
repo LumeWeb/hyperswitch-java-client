@@ -40,22 +40,25 @@ import java.util.StringJoiner;
   ThreeDsMethodDataOneOf.JSON_PROPERTY_THREE_DS_METHOD_KEY
 })
 @JsonTypeName("ThreeDsMethodData_oneOf")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class ThreeDsMethodDataOneOf {
   public static final String JSON_PROPERTY_THREE_DS_METHOD_DATA_SUBMISSION = "three_ds_method_data_submission";
+  @javax.annotation.Nonnull
   private Boolean threeDsMethodDataSubmission;
 
   public static final String JSON_PROPERTY_THREE_DS_METHOD_DATA = "three_ds_method_data";
+  @javax.annotation.Nullable
   private JsonNullable<String> threeDsMethodData = JsonNullable.<String>undefined();
 
   public static final String JSON_PROPERTY_THREE_DS_METHOD_URL = "three_ds_method_url";
+  @javax.annotation.Nullable
   private JsonNullable<String> threeDsMethodUrl = JsonNullable.<String>undefined();
 
   /**
    * Gets or Sets threeDsMethodKey
    */
   public enum ThreeDsMethodKeyEnum {
-    THREEDSMETHODDATA("threeDSMethodData");
+    THREE_DS_METHOD_DATA(String.valueOf("threeDSMethodData"));
 
     private String value;
 
@@ -85,21 +88,22 @@ public class ThreeDsMethodDataOneOf {
   }
 
   public static final String JSON_PROPERTY_THREE_DS_METHOD_KEY = "three_ds_method_key";
+  @javax.annotation.Nonnull
   private ThreeDsMethodKeyEnum threeDsMethodKey;
 
   public ThreeDsMethodDataOneOf() {
   }
 
-  public ThreeDsMethodDataOneOf threeDsMethodDataSubmission(Boolean threeDsMethodDataSubmission) {
+  public ThreeDsMethodDataOneOf threeDsMethodDataSubmission(@javax.annotation.Nonnull Boolean threeDsMethodDataSubmission) {
     
     this.threeDsMethodDataSubmission = threeDsMethodDataSubmission;
     return this;
   }
 
-   /**
+  /**
    * Whether ThreeDS method data submission is required
    * @return threeDsMethodDataSubmission
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_THREE_DS_METHOD_DATA_SUBMISSION)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -111,21 +115,20 @@ public class ThreeDsMethodDataOneOf {
 
   @JsonProperty(JSON_PROPERTY_THREE_DS_METHOD_DATA_SUBMISSION)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setThreeDsMethodDataSubmission(Boolean threeDsMethodDataSubmission) {
+  public void setThreeDsMethodDataSubmission(@javax.annotation.Nonnull Boolean threeDsMethodDataSubmission) {
     this.threeDsMethodDataSubmission = threeDsMethodDataSubmission;
   }
 
-
-  public ThreeDsMethodDataOneOf threeDsMethodData(String threeDsMethodData) {
+  public ThreeDsMethodDataOneOf threeDsMethodData(@javax.annotation.Nullable String threeDsMethodData) {
     this.threeDsMethodData = JsonNullable.<String>of(threeDsMethodData);
     
     return this;
   }
 
-   /**
+  /**
    * ThreeDS method data
    * @return threeDsMethodData
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -145,21 +148,20 @@ public class ThreeDsMethodDataOneOf {
     this.threeDsMethodData = threeDsMethodData;
   }
 
-  public void setThreeDsMethodData(String threeDsMethodData) {
+  public void setThreeDsMethodData(@javax.annotation.Nullable String threeDsMethodData) {
     this.threeDsMethodData = JsonNullable.<String>of(threeDsMethodData);
   }
 
-
-  public ThreeDsMethodDataOneOf threeDsMethodUrl(String threeDsMethodUrl) {
+  public ThreeDsMethodDataOneOf threeDsMethodUrl(@javax.annotation.Nullable String threeDsMethodUrl) {
     this.threeDsMethodUrl = JsonNullable.<String>of(threeDsMethodUrl);
     
     return this;
   }
 
-   /**
+  /**
    * ThreeDS method url
    * @return threeDsMethodUrl
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -179,21 +181,20 @@ public class ThreeDsMethodDataOneOf {
     this.threeDsMethodUrl = threeDsMethodUrl;
   }
 
-  public void setThreeDsMethodUrl(String threeDsMethodUrl) {
+  public void setThreeDsMethodUrl(@javax.annotation.Nullable String threeDsMethodUrl) {
     this.threeDsMethodUrl = JsonNullable.<String>of(threeDsMethodUrl);
   }
 
-
-  public ThreeDsMethodDataOneOf threeDsMethodKey(ThreeDsMethodKeyEnum threeDsMethodKey) {
+  public ThreeDsMethodDataOneOf threeDsMethodKey(@javax.annotation.Nonnull ThreeDsMethodKeyEnum threeDsMethodKey) {
     
     this.threeDsMethodKey = threeDsMethodKey;
     return this;
   }
 
-   /**
+  /**
    * Get threeDsMethodKey
    * @return threeDsMethodKey
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_THREE_DS_METHOD_KEY)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -205,7 +206,7 @@ public class ThreeDsMethodDataOneOf {
 
   @JsonProperty(JSON_PROPERTY_THREE_DS_METHOD_KEY)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setThreeDsMethodKey(ThreeDsMethodKeyEnum threeDsMethodKey) {
+  public void setThreeDsMethodKey(@javax.annotation.Nonnull ThreeDsMethodKeyEnum threeDsMethodKey) {
     this.threeDsMethodKey = threeDsMethodKey;
   }
 

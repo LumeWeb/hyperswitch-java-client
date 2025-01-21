@@ -32,24 +32,25 @@ import java.util.StringJoiner;
 @JsonPropertyOrder({
   SurchargePercentage.JSON_PROPERTY_PERCENTAGE
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class SurchargePercentage {
   public static final String JSON_PROPERTY_PERCENTAGE = "percentage";
+  @javax.annotation.Nonnull
   private Float percentage;
 
   public SurchargePercentage() {
   }
 
-  public SurchargePercentage percentage(Float percentage) {
+  public SurchargePercentage percentage(@javax.annotation.Nonnull Float percentage) {
     
     this.percentage = percentage;
     return this;
   }
 
-   /**
+  /**
    * Get percentage
    * @return percentage
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_PERCENTAGE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -61,7 +62,7 @@ public class SurchargePercentage {
 
   @JsonProperty(JSON_PROPERTY_PERCENTAGE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setPercentage(Float percentage) {
+  public void setPercentage(@javax.annotation.Nonnull Float percentage) {
     this.percentage = percentage;
   }
 

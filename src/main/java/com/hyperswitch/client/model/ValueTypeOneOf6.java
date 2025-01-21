@@ -22,6 +22,7 @@ import com.fasterxml.jackson.annotation.JsonTypeName;
 import com.fasterxml.jackson.annotation.JsonValue;
 import com.hyperswitch.client.model.NumberComparison;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 import com.fasterxml.jackson.annotation.JsonTypeName;
@@ -37,13 +38,13 @@ import java.util.StringJoiner;
   ValueTypeOneOf6.JSON_PROPERTY_VALUE
 })
 @JsonTypeName("ValueType_oneOf_6")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class ValueTypeOneOf6 {
   /**
    * Gets or Sets type
    */
   public enum TypeEnum {
-    NUMBER_COMPARISON_ARRAY("number_comparison_array");
+    NUMBER_COMPARISON_ARRAY(String.valueOf("number_comparison_array"));
 
     private String value;
 
@@ -73,24 +74,26 @@ public class ValueTypeOneOf6 {
   }
 
   public static final String JSON_PROPERTY_TYPE = "type";
+  @javax.annotation.Nonnull
   private TypeEnum type;
 
   public static final String JSON_PROPERTY_VALUE = "value";
+  @javax.annotation.Nonnull
   private List<NumberComparison> value = new ArrayList<>();
 
   public ValueTypeOneOf6() {
   }
 
-  public ValueTypeOneOf6 type(TypeEnum type) {
+  public ValueTypeOneOf6 type(@javax.annotation.Nonnull TypeEnum type) {
     
     this.type = type;
     return this;
   }
 
-   /**
+  /**
    * Get type
    * @return type
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_TYPE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -102,12 +105,11 @@ public class ValueTypeOneOf6 {
 
   @JsonProperty(JSON_PROPERTY_TYPE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setType(TypeEnum type) {
+  public void setType(@javax.annotation.Nonnull TypeEnum type) {
     this.type = type;
   }
 
-
-  public ValueTypeOneOf6 value(List<NumberComparison> value) {
+  public ValueTypeOneOf6 value(@javax.annotation.Nonnull List<NumberComparison> value) {
     
     this.value = value;
     return this;
@@ -121,10 +123,10 @@ public class ValueTypeOneOf6 {
     return this;
   }
 
-   /**
+  /**
    * Like a number array but can include comparisons. Useful for conditions like \&quot;500 &lt; amount &lt; 1000\&quot; eg: payment.amount &#x3D; (&gt; 500, &lt; 1000)
    * @return value
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_VALUE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -136,7 +138,7 @@ public class ValueTypeOneOf6 {
 
   @JsonProperty(JSON_PROPERTY_VALUE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setValue(List<NumberComparison> value) {
+  public void setValue(@javax.annotation.Nonnull List<NumberComparison> value) {
     this.value = value;
   }
 

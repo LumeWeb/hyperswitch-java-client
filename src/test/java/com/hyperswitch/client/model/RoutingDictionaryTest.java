@@ -20,27 +20,27 @@ import com.fasterxml.jackson.annotation.JsonTypeName;
 import com.fasterxml.jackson.annotation.JsonValue;
 import com.hyperswitch.client.model.RoutingDictionaryRecord;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import org.openapitools.jackson.nullable.JsonNullable;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.openapitools.jackson.nullable.JsonNullable;
 import java.util.NoSuchElementException;
-import org.junit.Assert;
-import org.junit.Ignore;
-import org.junit.Test;
-
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Test;
 
 /**
  * Model tests for RoutingDictionary
  */
-public class RoutingDictionaryTest {
+class RoutingDictionaryTest {
     private final RoutingDictionary model = new RoutingDictionary();
 
     /**
      * Model tests for RoutingDictionary
      */
     @Test
-    public void testRoutingDictionary() {
+    void testRoutingDictionary() {
         // TODO: test RoutingDictionary
     }
 
@@ -48,7 +48,7 @@ public class RoutingDictionaryTest {
      * Test the property 'merchantId'
      */
     @Test
-    public void merchantIdTest() {
+    void merchantIdTest() {
         // TODO: test merchantId
     }
 
@@ -56,7 +56,7 @@ public class RoutingDictionaryTest {
      * Test the property 'activeId'
      */
     @Test
-    public void activeIdTest() {
+    void activeIdTest() {
         // TODO: test activeId
     }
 
@@ -64,7 +64,7 @@ public class RoutingDictionaryTest {
      * Test the property 'records'
      */
     @Test
-    public void recordsTest() {
+    void recordsTest() {
         // TODO: test records
     }
 

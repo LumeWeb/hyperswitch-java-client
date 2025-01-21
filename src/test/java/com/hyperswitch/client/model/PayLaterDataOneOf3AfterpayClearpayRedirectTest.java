@@ -22,22 +22,21 @@ import org.openapitools.jackson.nullable.JsonNullable;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.openapitools.jackson.nullable.JsonNullable;
 import java.util.NoSuchElementException;
-import org.junit.Assert;
-import org.junit.Ignore;
-import org.junit.Test;
-
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Test;
 
 /**
  * Model tests for PayLaterDataOneOf3AfterpayClearpayRedirect
  */
-public class PayLaterDataOneOf3AfterpayClearpayRedirectTest {
+class PayLaterDataOneOf3AfterpayClearpayRedirectTest {
     private final PayLaterDataOneOf3AfterpayClearpayRedirect model = new PayLaterDataOneOf3AfterpayClearpayRedirect();
 
     /**
      * Model tests for PayLaterDataOneOf3AfterpayClearpayRedirect
      */
     @Test
-    public void testPayLaterDataOneOf3AfterpayClearpayRedirect() {
+    void testPayLaterDataOneOf3AfterpayClearpayRedirect() {
         // TODO: test PayLaterDataOneOf3AfterpayClearpayRedirect
     }
 
@@ -45,7 +44,7 @@ public class PayLaterDataOneOf3AfterpayClearpayRedirectTest {
      * Test the property 'billingEmail'
      */
     @Test
-    public void billingEmailTest() {
+    void billingEmailTest() {
         // TODO: test billingEmail
     }
 
@@ -53,7 +52,7 @@ public class PayLaterDataOneOf3AfterpayClearpayRedirectTest {
      * Test the property 'billingName'
      */
     @Test
-    public void billingNameTest() {
+    void billingNameTest() {
         // TODO: test billingName
     }
 

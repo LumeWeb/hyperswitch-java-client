@@ -23,6 +23,7 @@ import com.fasterxml.jackson.annotation.JsonValue;
 import com.hyperswitch.client.model.CardNetwork;
 import com.hyperswitch.client.model.SurchargeDetailsResponse;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import org.openapitools.jackson.nullable.JsonNullable;
 import com.fasterxml.jackson.annotation.JsonIgnore;
@@ -42,30 +43,33 @@ import java.util.StringJoiner;
   CardNetworkTypes.JSON_PROPERTY_SURCHARGE_DETAILS,
   CardNetworkTypes.JSON_PROPERTY_ELIGIBLE_CONNECTORS
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class CardNetworkTypes {
   public static final String JSON_PROPERTY_CARD_NETWORK = "card_network";
+  @javax.annotation.Nullable
   private JsonNullable<CardNetwork> cardNetwork = JsonNullable.<CardNetwork>undefined();
 
   public static final String JSON_PROPERTY_SURCHARGE_DETAILS = "surcharge_details";
+  @javax.annotation.Nullable
   private JsonNullable<SurchargeDetailsResponse> surchargeDetails = JsonNullable.<SurchargeDetailsResponse>undefined();
 
   public static final String JSON_PROPERTY_ELIGIBLE_CONNECTORS = "eligible_connectors";
+  @javax.annotation.Nonnull
   private List<String> eligibleConnectors = new ArrayList<>();
 
   public CardNetworkTypes() {
   }
 
-  public CardNetworkTypes cardNetwork(CardNetwork cardNetwork) {
+  public CardNetworkTypes cardNetwork(@javax.annotation.Nullable CardNetwork cardNetwork) {
     this.cardNetwork = JsonNullable.<CardNetwork>of(cardNetwork);
     
     return this;
   }
 
-   /**
+  /**
    * Get cardNetwork
    * @return cardNetwork
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -85,21 +89,20 @@ public class CardNetworkTypes {
     this.cardNetwork = cardNetwork;
   }
 
-  public void setCardNetwork(CardNetwork cardNetwork) {
+  public void setCardNetwork(@javax.annotation.Nullable CardNetwork cardNetwork) {
     this.cardNetwork = JsonNullable.<CardNetwork>of(cardNetwork);
   }
 
-
-  public CardNetworkTypes surchargeDetails(SurchargeDetailsResponse surchargeDetails) {
+  public CardNetworkTypes surchargeDetails(@javax.annotation.Nullable SurchargeDetailsResponse surchargeDetails) {
     this.surchargeDetails = JsonNullable.<SurchargeDetailsResponse>of(surchargeDetails);
     
     return this;
   }
 
-   /**
+  /**
    * Get surchargeDetails
    * @return surchargeDetails
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -119,12 +122,11 @@ public class CardNetworkTypes {
     this.surchargeDetails = surchargeDetails;
   }
 
-  public void setSurchargeDetails(SurchargeDetailsResponse surchargeDetails) {
+  public void setSurchargeDetails(@javax.annotation.Nullable SurchargeDetailsResponse surchargeDetails) {
     this.surchargeDetails = JsonNullable.<SurchargeDetailsResponse>of(surchargeDetails);
   }
 
-
-  public CardNetworkTypes eligibleConnectors(List<String> eligibleConnectors) {
+  public CardNetworkTypes eligibleConnectors(@javax.annotation.Nonnull List<String> eligibleConnectors) {
     
     this.eligibleConnectors = eligibleConnectors;
     return this;
@@ -138,10 +140,10 @@ public class CardNetworkTypes {
     return this;
   }
 
-   /**
+  /**
    * The list of eligible connectors for a given card network
    * @return eligibleConnectors
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_ELIGIBLE_CONNECTORS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -153,7 +155,7 @@ public class CardNetworkTypes {
 
   @JsonProperty(JSON_PROPERTY_ELIGIBLE_CONNECTORS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setEligibleConnectors(List<String> eligibleConnectors) {
+  public void setEligibleConnectors(@javax.annotation.Nonnull List<String> eligibleConnectors) {
     this.eligibleConnectors = eligibleConnectors;
   }
 

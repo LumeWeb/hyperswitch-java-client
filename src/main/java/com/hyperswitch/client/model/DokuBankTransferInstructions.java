@@ -34,30 +34,33 @@ import java.util.StringJoiner;
   DokuBankTransferInstructions.JSON_PROPERTY_REFERENCE,
   DokuBankTransferInstructions.JSON_PROPERTY_INSTRUCTIONS_URL
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class DokuBankTransferInstructions {
   public static final String JSON_PROPERTY_EXPIRES_AT = "expires_at";
+  @javax.annotation.Nonnull
   private String expiresAt;
 
   public static final String JSON_PROPERTY_REFERENCE = "reference";
+  @javax.annotation.Nonnull
   private String reference;
 
   public static final String JSON_PROPERTY_INSTRUCTIONS_URL = "instructions_url";
+  @javax.annotation.Nonnull
   private String instructionsUrl;
 
   public DokuBankTransferInstructions() {
   }
 
-  public DokuBankTransferInstructions expiresAt(String expiresAt) {
+  public DokuBankTransferInstructions expiresAt(@javax.annotation.Nonnull String expiresAt) {
     
     this.expiresAt = expiresAt;
     return this;
   }
 
-   /**
+  /**
    * Get expiresAt
    * @return expiresAt
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_EXPIRES_AT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -69,21 +72,20 @@ public class DokuBankTransferInstructions {
 
   @JsonProperty(JSON_PROPERTY_EXPIRES_AT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setExpiresAt(String expiresAt) {
+  public void setExpiresAt(@javax.annotation.Nonnull String expiresAt) {
     this.expiresAt = expiresAt;
   }
 
-
-  public DokuBankTransferInstructions reference(String reference) {
+  public DokuBankTransferInstructions reference(@javax.annotation.Nonnull String reference) {
     
     this.reference = reference;
     return this;
   }
 
-   /**
+  /**
    * Get reference
    * @return reference
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_REFERENCE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -95,21 +97,20 @@ public class DokuBankTransferInstructions {
 
   @JsonProperty(JSON_PROPERTY_REFERENCE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setReference(String reference) {
+  public void setReference(@javax.annotation.Nonnull String reference) {
     this.reference = reference;
   }
 
-
-  public DokuBankTransferInstructions instructionsUrl(String instructionsUrl) {
+  public DokuBankTransferInstructions instructionsUrl(@javax.annotation.Nonnull String instructionsUrl) {
     
     this.instructionsUrl = instructionsUrl;
     return this;
   }
 
-   /**
+  /**
    * Get instructionsUrl
    * @return instructionsUrl
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_INSTRUCTIONS_URL)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -121,7 +122,7 @@ public class DokuBankTransferInstructions {
 
   @JsonProperty(JSON_PROPERTY_INSTRUCTIONS_URL)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setInstructionsUrl(String instructionsUrl) {
+  public void setInstructionsUrl(@javax.annotation.Nonnull String instructionsUrl) {
     this.instructionsUrl = instructionsUrl;
   }
 

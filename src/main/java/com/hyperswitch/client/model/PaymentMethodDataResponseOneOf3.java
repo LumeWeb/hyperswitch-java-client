@@ -34,24 +34,25 @@ import java.util.StringJoiner;
   PaymentMethodDataResponseOneOf3.JSON_PROPERTY_PAY_LATER
 })
 @JsonTypeName("PaymentMethodDataResponse_oneOf_3")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class PaymentMethodDataResponseOneOf3 {
   public static final String JSON_PROPERTY_PAY_LATER = "pay_later";
+  @javax.annotation.Nonnull
   private PaylaterResponse payLater;
 
   public PaymentMethodDataResponseOneOf3() {
   }
 
-  public PaymentMethodDataResponseOneOf3 payLater(PaylaterResponse payLater) {
+  public PaymentMethodDataResponseOneOf3 payLater(@javax.annotation.Nonnull PaylaterResponse payLater) {
     
     this.payLater = payLater;
     return this;
   }
 
-   /**
+  /**
    * Get payLater
    * @return payLater
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_PAY_LATER)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -63,7 +64,7 @@ public class PaymentMethodDataResponseOneOf3 {
 
   @JsonProperty(JSON_PROPERTY_PAY_LATER)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setPayLater(PaylaterResponse payLater) {
+  public void setPayLater(@javax.annotation.Nonnull PaylaterResponse payLater) {
     this.payLater = payLater;
   }
 

@@ -34,24 +34,25 @@ import java.util.StringJoiner;
   VoucherDataOneOf2.JSON_PROPERTY_INDOMARET
 })
 @JsonTypeName("VoucherData_oneOf_2")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class VoucherDataOneOf2 {
   public static final String JSON_PROPERTY_INDOMARET = "indomaret";
+  @javax.annotation.Nonnull
   private IndomaretVoucherData indomaret;
 
   public VoucherDataOneOf2() {
   }
 
-  public VoucherDataOneOf2 indomaret(IndomaretVoucherData indomaret) {
+  public VoucherDataOneOf2 indomaret(@javax.annotation.Nonnull IndomaretVoucherData indomaret) {
     
     this.indomaret = indomaret;
     return this;
   }
 
-   /**
+  /**
    * Get indomaret
    * @return indomaret
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_INDOMARET)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -63,7 +64,7 @@ public class VoucherDataOneOf2 {
 
   @JsonProperty(JSON_PROPERTY_INDOMARET)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setIndomaret(IndomaretVoucherData indomaret) {
+  public void setIndomaret(@javax.annotation.Nonnull IndomaretVoucherData indomaret) {
     this.indomaret = indomaret;
   }
 

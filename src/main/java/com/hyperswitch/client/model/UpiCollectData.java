@@ -36,24 +36,25 @@ import java.util.StringJoiner;
 @JsonPropertyOrder({
   UpiCollectData.JSON_PROPERTY_VPA_ID
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class UpiCollectData {
   public static final String JSON_PROPERTY_VPA_ID = "vpa_id";
+  @javax.annotation.Nullable
   private JsonNullable<String> vpaId = JsonNullable.<String>undefined();
 
   public UpiCollectData() {
   }
 
-  public UpiCollectData vpaId(String vpaId) {
+  public UpiCollectData vpaId(@javax.annotation.Nullable String vpaId) {
     this.vpaId = JsonNullable.<String>of(vpaId);
     
     return this;
   }
 
-   /**
+  /**
    * Get vpaId
    * @return vpaId
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -73,7 +74,7 @@ public class UpiCollectData {
     this.vpaId = vpaId;
   }
 
-  public void setVpaId(String vpaId) {
+  public void setVpaId(@javax.annotation.Nullable String vpaId) {
     this.vpaId = JsonNullable.<String>of(vpaId);
   }
 

@@ -19,22 +19,21 @@ import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonTypeName;
 import com.fasterxml.jackson.annotation.JsonValue;
 import com.hyperswitch.client.model.PayLaterDataOneOf3AfterpayClearpayRedirect;
-import org.junit.Assert;
-import org.junit.Ignore;
-import org.junit.Test;
-
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Test;
 
 /**
  * Model tests for PayLaterDataOneOf3
  */
-public class PayLaterDataOneOf3Test {
+class PayLaterDataOneOf3Test {
     private final PayLaterDataOneOf3 model = new PayLaterDataOneOf3();
 
     /**
      * Model tests for PayLaterDataOneOf3
      */
     @Test
-    public void testPayLaterDataOneOf3() {
+    void testPayLaterDataOneOf3() {
         // TODO: test PayLaterDataOneOf3
     }
 
@@ -42,7 +41,7 @@ public class PayLaterDataOneOf3Test {
      * Test the property 'afterpayClearpayRedirect'
      */
     @Test
-    public void afterpayClearpayRedirectTest() {
+    void afterpayClearpayRedirectTest() {
         // TODO: test afterpayClearpayRedirect
     }
 

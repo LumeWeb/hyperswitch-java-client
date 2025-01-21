@@ -33,24 +33,25 @@ import java.util.StringJoiner;
   PaymentMethodDataResponseOneOf8.JSON_PROPERTY_REWARD
 })
 @JsonTypeName("PaymentMethodDataResponse_oneOf_8")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class PaymentMethodDataResponseOneOf8 {
   public static final String JSON_PROPERTY_REWARD = "reward";
+  @javax.annotation.Nonnull
   private Object reward;
 
   public PaymentMethodDataResponseOneOf8() {
   }
 
-  public PaymentMethodDataResponseOneOf8 reward(Object reward) {
+  public PaymentMethodDataResponseOneOf8 reward(@javax.annotation.Nonnull Object reward) {
     
     this.reward = reward;
     return this;
   }
 
-   /**
+  /**
    * Get reward
    * @return reward
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_REWARD)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -62,7 +63,7 @@ public class PaymentMethodDataResponseOneOf8 {
 
   @JsonProperty(JSON_PROPERTY_REWARD)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setReward(Object reward) {
+  public void setReward(@javax.annotation.Nonnull Object reward) {
     this.reward = reward;
   }
 

@@ -37,27 +37,29 @@ import java.util.StringJoiner;
   MerchantAccountData.JSON_PROPERTY_IBAN,
   MerchantAccountData.JSON_PROPERTY_BACS
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class MerchantAccountData {
   public static final String JSON_PROPERTY_IBAN = "iban";
+  @javax.annotation.Nonnull
   private MerchantAccountDataOneOfIban iban;
 
   public static final String JSON_PROPERTY_BACS = "bacs";
+  @javax.annotation.Nonnull
   private MerchantAccountDataOneOf1Bacs bacs;
 
   public MerchantAccountData() {
   }
 
-  public MerchantAccountData iban(MerchantAccountDataOneOfIban iban) {
+  public MerchantAccountData iban(@javax.annotation.Nonnull MerchantAccountDataOneOfIban iban) {
     
     this.iban = iban;
     return this;
   }
 
-   /**
+  /**
    * Get iban
    * @return iban
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_IBAN)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -69,21 +71,20 @@ public class MerchantAccountData {
 
   @JsonProperty(JSON_PROPERTY_IBAN)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setIban(MerchantAccountDataOneOfIban iban) {
+  public void setIban(@javax.annotation.Nonnull MerchantAccountDataOneOfIban iban) {
     this.iban = iban;
   }
 
-
-  public MerchantAccountData bacs(MerchantAccountDataOneOf1Bacs bacs) {
+  public MerchantAccountData bacs(@javax.annotation.Nonnull MerchantAccountDataOneOf1Bacs bacs) {
     
     this.bacs = bacs;
     return this;
   }
 
-   /**
+  /**
    * Get bacs
    * @return bacs
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_BACS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -95,7 +96,7 @@ public class MerchantAccountData {
 
   @JsonProperty(JSON_PROPERTY_BACS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setBacs(MerchantAccountDataOneOf1Bacs bacs) {
+  public void setBacs(@javax.annotation.Nonnull MerchantAccountDataOneOf1Bacs bacs) {
     this.bacs = bacs;
   }
 

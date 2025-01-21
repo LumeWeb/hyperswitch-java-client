@@ -34,24 +34,25 @@ import java.util.StringJoiner;
   BankTransferDataOneOf11.JSON_PROPERTY_PIX
 })
 @JsonTypeName("BankTransferData_oneOf_11")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class BankTransferDataOneOf11 {
   public static final String JSON_PROPERTY_PIX = "pix";
+  @javax.annotation.Nonnull
   private BankTransferDataOneOf11Pix pix;
 
   public BankTransferDataOneOf11() {
   }
 
-  public BankTransferDataOneOf11 pix(BankTransferDataOneOf11Pix pix) {
+  public BankTransferDataOneOf11 pix(@javax.annotation.Nonnull BankTransferDataOneOf11Pix pix) {
     
     this.pix = pix;
     return this;
   }
 
-   /**
+  /**
    * Get pix
    * @return pix
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_PIX)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -63,7 +64,7 @@ public class BankTransferDataOneOf11 {
 
   @JsonProperty(JSON_PROPERTY_PIX)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setPix(BankTransferDataOneOf11Pix pix) {
+  public void setPix(@javax.annotation.Nonnull BankTransferDataOneOf11Pix pix) {
     this.pix = pix;
   }
 

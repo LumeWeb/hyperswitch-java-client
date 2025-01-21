@@ -34,24 +34,25 @@ import java.util.StringJoiner;
   MandateTypeOneOf.JSON_PROPERTY_SINGLE_USE
 })
 @JsonTypeName("MandateType_oneOf")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class MandateTypeOneOf {
   public static final String JSON_PROPERTY_SINGLE_USE = "single_use";
+  @javax.annotation.Nonnull
   private MandateAmountData singleUse;
 
   public MandateTypeOneOf() {
   }
 
-  public MandateTypeOneOf singleUse(MandateAmountData singleUse) {
+  public MandateTypeOneOf singleUse(@javax.annotation.Nonnull MandateAmountData singleUse) {
     
     this.singleUse = singleUse;
     return this;
   }
 
-   /**
+  /**
    * Get singleUse
    * @return singleUse
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_SINGLE_USE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -63,7 +64,7 @@ public class MandateTypeOneOf {
 
   @JsonProperty(JSON_PROPERTY_SINGLE_USE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setSingleUse(MandateAmountData singleUse) {
+  public void setSingleUse(@javax.annotation.Nonnull MandateAmountData singleUse) {
     this.singleUse = singleUse;
   }
 

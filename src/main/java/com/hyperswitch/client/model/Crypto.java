@@ -33,24 +33,25 @@ import java.util.StringJoiner;
 @JsonPropertyOrder({
   Crypto.JSON_PROPERTY_CRYPTO
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class Crypto {
   public static final String JSON_PROPERTY_CRYPTO = "crypto";
+  @javax.annotation.Nonnull
   private CryptoData crypto;
 
   public Crypto() {
   }
 
-  public Crypto crypto(CryptoData crypto) {
+  public Crypto crypto(@javax.annotation.Nonnull CryptoData crypto) {
     
     this.crypto = crypto;
     return this;
   }
 
-   /**
+  /**
    * Get crypto
    * @return crypto
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_CRYPTO)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -62,7 +63,7 @@ public class Crypto {
 
   @JsonProperty(JSON_PROPERTY_CRYPTO)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setCrypto(CryptoData crypto) {
+  public void setCrypto(@javax.annotation.Nonnull CryptoData crypto) {
     this.crypto = crypto;
   }
 

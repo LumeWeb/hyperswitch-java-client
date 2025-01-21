@@ -22,6 +22,7 @@ import com.fasterxml.jackson.annotation.JsonTypeName;
 import com.fasterxml.jackson.annotation.JsonValue;
 import com.hyperswitch.client.model.RoutingDictionaryRecord;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import org.openapitools.jackson.nullable.JsonNullable;
 import com.fasterxml.jackson.annotation.JsonIgnore;
@@ -41,30 +42,33 @@ import java.util.StringJoiner;
   RoutingDictionary.JSON_PROPERTY_ACTIVE_ID,
   RoutingDictionary.JSON_PROPERTY_RECORDS
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class RoutingDictionary {
   public static final String JSON_PROPERTY_MERCHANT_ID = "merchant_id";
+  @javax.annotation.Nonnull
   private String merchantId;
 
   public static final String JSON_PROPERTY_ACTIVE_ID = "active_id";
+  @javax.annotation.Nullable
   private JsonNullable<String> activeId = JsonNullable.<String>undefined();
 
   public static final String JSON_PROPERTY_RECORDS = "records";
+  @javax.annotation.Nonnull
   private List<RoutingDictionaryRecord> records = new ArrayList<>();
 
   public RoutingDictionary() {
   }
 
-  public RoutingDictionary merchantId(String merchantId) {
+  public RoutingDictionary merchantId(@javax.annotation.Nonnull String merchantId) {
     
     this.merchantId = merchantId;
     return this;
   }
 
-   /**
+  /**
    * Get merchantId
    * @return merchantId
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_MERCHANT_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -76,21 +80,20 @@ public class RoutingDictionary {
 
   @JsonProperty(JSON_PROPERTY_MERCHANT_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setMerchantId(String merchantId) {
+  public void setMerchantId(@javax.annotation.Nonnull String merchantId) {
     this.merchantId = merchantId;
   }
 
-
-  public RoutingDictionary activeId(String activeId) {
+  public RoutingDictionary activeId(@javax.annotation.Nullable String activeId) {
     this.activeId = JsonNullable.<String>of(activeId);
     
     return this;
   }
 
-   /**
+  /**
    * Get activeId
    * @return activeId
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -110,12 +113,11 @@ public class RoutingDictionary {
     this.activeId = activeId;
   }
 
-  public void setActiveId(String activeId) {
+  public void setActiveId(@javax.annotation.Nullable String activeId) {
     this.activeId = JsonNullable.<String>of(activeId);
   }
 
-
-  public RoutingDictionary records(List<RoutingDictionaryRecord> records) {
+  public RoutingDictionary records(@javax.annotation.Nonnull List<RoutingDictionaryRecord> records) {
     
     this.records = records;
     return this;
@@ -129,10 +131,10 @@ public class RoutingDictionary {
     return this;
   }
 
-   /**
+  /**
    * Get records
    * @return records
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_RECORDS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -144,7 +146,7 @@ public class RoutingDictionary {
 
   @JsonProperty(JSON_PROPERTY_RECORDS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setRecords(List<RoutingDictionaryRecord> records) {
+  public void setRecords(@javax.annotation.Nonnull List<RoutingDictionaryRecord> records) {
     this.records = records;
   }
 

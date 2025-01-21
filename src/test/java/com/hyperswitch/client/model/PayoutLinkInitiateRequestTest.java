@@ -18,22 +18,21 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonTypeName;
 import com.fasterxml.jackson.annotation.JsonValue;
-import org.junit.Assert;
-import org.junit.Ignore;
-import org.junit.Test;
-
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Test;
 
 /**
  * Model tests for PayoutLinkInitiateRequest
  */
-public class PayoutLinkInitiateRequestTest {
+class PayoutLinkInitiateRequestTest {
     private final PayoutLinkInitiateRequest model = new PayoutLinkInitiateRequest();
 
     /**
      * Model tests for PayoutLinkInitiateRequest
      */
     @Test
-    public void testPayoutLinkInitiateRequest() {
+    void testPayoutLinkInitiateRequest() {
         // TODO: test PayoutLinkInitiateRequest
     }
 
@@ -41,7 +40,7 @@ public class PayoutLinkInitiateRequestTest {
      * Test the property 'merchantId'
      */
     @Test
-    public void merchantIdTest() {
+    void merchantIdTest() {
         // TODO: test merchantId
     }
 
@@ -49,7 +48,7 @@ public class PayoutLinkInitiateRequestTest {
      * Test the property 'payoutId'
      */
     @Test
-    public void payoutIdTest() {
+    void payoutIdTest() {
         // TODO: test payoutId
     }
 

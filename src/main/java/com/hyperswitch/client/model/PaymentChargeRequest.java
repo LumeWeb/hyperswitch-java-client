@@ -35,30 +35,33 @@ import java.util.StringJoiner;
   PaymentChargeRequest.JSON_PROPERTY_FEES,
   PaymentChargeRequest.JSON_PROPERTY_TRANSFER_ACCOUNT_ID
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class PaymentChargeRequest {
   public static final String JSON_PROPERTY_CHARGE_TYPE = "charge_type";
+  @javax.annotation.Nonnull
   private PaymentChargeType chargeType;
 
   public static final String JSON_PROPERTY_FEES = "fees";
+  @javax.annotation.Nonnull
   private Long fees;
 
   public static final String JSON_PROPERTY_TRANSFER_ACCOUNT_ID = "transfer_account_id";
+  @javax.annotation.Nonnull
   private String transferAccountId;
 
   public PaymentChargeRequest() {
   }
 
-  public PaymentChargeRequest chargeType(PaymentChargeType chargeType) {
+  public PaymentChargeRequest chargeType(@javax.annotation.Nonnull PaymentChargeType chargeType) {
     
     this.chargeType = chargeType;
     return this;
   }
 
-   /**
+  /**
    * Get chargeType
    * @return chargeType
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_CHARGE_TYPE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -70,21 +73,20 @@ public class PaymentChargeRequest {
 
   @JsonProperty(JSON_PROPERTY_CHARGE_TYPE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setChargeType(PaymentChargeType chargeType) {
+  public void setChargeType(@javax.annotation.Nonnull PaymentChargeType chargeType) {
     this.chargeType = chargeType;
   }
 
-
-  public PaymentChargeRequest fees(Long fees) {
+  public PaymentChargeRequest fees(@javax.annotation.Nonnull Long fees) {
     
     this.fees = fees;
     return this;
   }
 
-   /**
+  /**
    * Platform fees to be collected on the payment
    * @return fees
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_FEES)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -96,21 +98,20 @@ public class PaymentChargeRequest {
 
   @JsonProperty(JSON_PROPERTY_FEES)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setFees(Long fees) {
+  public void setFees(@javax.annotation.Nonnull Long fees) {
     this.fees = fees;
   }
 
-
-  public PaymentChargeRequest transferAccountId(String transferAccountId) {
+  public PaymentChargeRequest transferAccountId(@javax.annotation.Nonnull String transferAccountId) {
     
     this.transferAccountId = transferAccountId;
     return this;
   }
 
-   /**
+  /**
    * Identifier for the reseller&#39;s account to send the funds to
    * @return transferAccountId
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_TRANSFER_ACCOUNT_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -122,7 +123,7 @@ public class PaymentChargeRequest {
 
   @JsonProperty(JSON_PROPERTY_TRANSFER_ACCOUNT_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setTransferAccountId(String transferAccountId) {
+  public void setTransferAccountId(@javax.annotation.Nonnull String transferAccountId) {
     this.transferAccountId = transferAccountId;
   }
 

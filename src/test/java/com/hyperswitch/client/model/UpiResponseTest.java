@@ -19,22 +19,21 @@ import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonTypeName;
 import com.fasterxml.jackson.annotation.JsonValue;
 import com.hyperswitch.client.model.UpiCollectAdditionalData;
-import org.junit.Assert;
-import org.junit.Ignore;
-import org.junit.Test;
-
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Test;
 
 /**
  * Model tests for UpiResponse
  */
-public class UpiResponseTest {
+class UpiResponseTest {
     private final UpiResponse model = new UpiResponse();
 
     /**
      * Model tests for UpiResponse
      */
     @Test
-    public void testUpiResponse() {
+    void testUpiResponse() {
         // TODO: test UpiResponse
     }
 
@@ -42,7 +41,7 @@ public class UpiResponseTest {
      * Test the property 'upiCollect'
      */
     @Test
-    public void upiCollectTest() {
+    void upiCollectTest() {
         // TODO: test upiCollect
     }
 
@@ -50,7 +49,7 @@ public class UpiResponseTest {
      * Test the property 'upiIntent'
      */
     @Test
-    public void upiIntentTest() {
+    void upiIntentTest() {
         // TODO: test upiIntent
     }
 

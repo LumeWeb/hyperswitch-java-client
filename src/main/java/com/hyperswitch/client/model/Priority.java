@@ -22,6 +22,7 @@ import com.fasterxml.jackson.annotation.JsonTypeName;
 import com.fasterxml.jackson.annotation.JsonValue;
 import com.hyperswitch.client.model.RoutableConnectorChoice;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 import com.fasterxml.jackson.annotation.JsonTypeName;
@@ -36,13 +37,13 @@ import java.util.StringJoiner;
   Priority.JSON_PROPERTY_TYPE,
   Priority.JSON_PROPERTY_DATA
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class Priority {
   /**
    * Gets or Sets type
    */
   public enum TypeEnum {
-    PRIORITY("priority");
+    PRIORITY(String.valueOf("priority"));
 
     private String value;
 
@@ -72,24 +73,26 @@ public class Priority {
   }
 
   public static final String JSON_PROPERTY_TYPE = "type";
+  @javax.annotation.Nonnull
   private TypeEnum type;
 
   public static final String JSON_PROPERTY_DATA = "data";
+  @javax.annotation.Nonnull
   private List<RoutableConnectorChoice> data = new ArrayList<>();
 
   public Priority() {
   }
 
-  public Priority type(TypeEnum type) {
+  public Priority type(@javax.annotation.Nonnull TypeEnum type) {
     
     this.type = type;
     return this;
   }
 
-   /**
+  /**
    * Get type
    * @return type
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_TYPE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -101,12 +104,11 @@ public class Priority {
 
   @JsonProperty(JSON_PROPERTY_TYPE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setType(TypeEnum type) {
+  public void setType(@javax.annotation.Nonnull TypeEnum type) {
     this.type = type;
   }
 
-
-  public Priority data(List<RoutableConnectorChoice> data) {
+  public Priority data(@javax.annotation.Nonnull List<RoutableConnectorChoice> data) {
     
     this.data = data;
     return this;
@@ -120,10 +122,10 @@ public class Priority {
     return this;
   }
 
-   /**
+  /**
    * Get data
    * @return data
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_DATA)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -135,7 +137,7 @@ public class Priority {
 
   @JsonProperty(JSON_PROPERTY_DATA)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setData(List<RoutableConnectorChoice> data) {
+  public void setData(@javax.annotation.Nonnull List<RoutableConnectorChoice> data) {
     this.data = data;
   }
 

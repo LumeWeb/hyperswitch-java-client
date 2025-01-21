@@ -33,24 +33,25 @@ import java.util.StringJoiner;
   MerchantRecipientDataOneOf1.JSON_PROPERTY_WALLET_ID
 })
 @JsonTypeName("MerchantRecipientData_oneOf_1")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class MerchantRecipientDataOneOf1 {
   public static final String JSON_PROPERTY_WALLET_ID = "wallet_id";
+  @javax.annotation.Nullable
   private String walletId;
 
   public MerchantRecipientDataOneOf1() {
   }
 
-  public MerchantRecipientDataOneOf1 walletId(String walletId) {
+  public MerchantRecipientDataOneOf1 walletId(@javax.annotation.Nullable String walletId) {
     
     this.walletId = walletId;
     return this;
   }
 
-   /**
+  /**
    * Get walletId
    * @return walletId
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_WALLET_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -62,7 +63,7 @@ public class MerchantRecipientDataOneOf1 {
 
   @JsonProperty(JSON_PROPERTY_WALLET_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setWalletId(String walletId) {
+  public void setWalletId(@javax.annotation.Nullable String walletId) {
     this.walletId = walletId;
   }
 

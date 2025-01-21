@@ -33,24 +33,25 @@ import java.util.StringJoiner;
 @JsonPropertyOrder({
   BankRedirect.JSON_PROPERTY_BANK_REDIRECT
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class BankRedirect {
   public static final String JSON_PROPERTY_BANK_REDIRECT = "bank_redirect";
+  @javax.annotation.Nonnull
   private BankRedirectData bankRedirect;
 
   public BankRedirect() {
   }
 
-  public BankRedirect bankRedirect(BankRedirectData bankRedirect) {
+  public BankRedirect bankRedirect(@javax.annotation.Nonnull BankRedirectData bankRedirect) {
     
     this.bankRedirect = bankRedirect;
     return this;
   }
 
-   /**
+  /**
    * Get bankRedirect
    * @return bankRedirect
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_BANK_REDIRECT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -62,7 +63,7 @@ public class BankRedirect {
 
   @JsonProperty(JSON_PROPERTY_BANK_REDIRECT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setBankRedirect(BankRedirectData bankRedirect) {
+  public void setBankRedirect(@javax.annotation.Nonnull BankRedirectData bankRedirect) {
     this.bankRedirect = bankRedirect;
   }
 

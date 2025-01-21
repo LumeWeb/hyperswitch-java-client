@@ -34,13 +34,13 @@ import java.util.StringJoiner;
   RecurringDetailsOneOf.JSON_PROPERTY_DATA
 })
 @JsonTypeName("RecurringDetails_oneOf")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class RecurringDetailsOneOf {
   /**
    * Gets or Sets type
    */
   public enum TypeEnum {
-    MANDATE_ID("mandate_id");
+    MANDATE_ID(String.valueOf("mandate_id"));
 
     private String value;
 
@@ -70,24 +70,26 @@ public class RecurringDetailsOneOf {
   }
 
   public static final String JSON_PROPERTY_TYPE = "type";
+  @javax.annotation.Nonnull
   private TypeEnum type;
 
   public static final String JSON_PROPERTY_DATA = "data";
+  @javax.annotation.Nonnull
   private String data;
 
   public RecurringDetailsOneOf() {
   }
 
-  public RecurringDetailsOneOf type(TypeEnum type) {
+  public RecurringDetailsOneOf type(@javax.annotation.Nonnull TypeEnum type) {
     
     this.type = type;
     return this;
   }
 
-   /**
+  /**
    * Get type
    * @return type
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_TYPE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -99,21 +101,20 @@ public class RecurringDetailsOneOf {
 
   @JsonProperty(JSON_PROPERTY_TYPE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setType(TypeEnum type) {
+  public void setType(@javax.annotation.Nonnull TypeEnum type) {
     this.type = type;
   }
 
-
-  public RecurringDetailsOneOf data(String data) {
+  public RecurringDetailsOneOf data(@javax.annotation.Nonnull String data) {
     
     this.data = data;
     return this;
   }
 
-   /**
+  /**
    * Get data
    * @return data
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_DATA)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -125,7 +126,7 @@ public class RecurringDetailsOneOf {
 
   @JsonProperty(JSON_PROPERTY_DATA)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setData(String data) {
+  public void setData(@javax.annotation.Nonnull String data) {
     this.data = data;
   }
 

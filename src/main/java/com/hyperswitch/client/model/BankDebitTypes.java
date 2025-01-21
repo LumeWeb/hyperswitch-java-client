@@ -21,6 +21,7 @@ import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonTypeName;
 import com.fasterxml.jackson.annotation.JsonValue;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 import com.fasterxml.jackson.annotation.JsonTypeName;
@@ -34,15 +35,16 @@ import java.util.StringJoiner;
 @JsonPropertyOrder({
   BankDebitTypes.JSON_PROPERTY_ELIGIBLE_CONNECTORS
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class BankDebitTypes {
   public static final String JSON_PROPERTY_ELIGIBLE_CONNECTORS = "eligible_connectors";
+  @javax.annotation.Nonnull
   private List<String> eligibleConnectors = new ArrayList<>();
 
   public BankDebitTypes() {
   }
 
-  public BankDebitTypes eligibleConnectors(List<String> eligibleConnectors) {
+  public BankDebitTypes eligibleConnectors(@javax.annotation.Nonnull List<String> eligibleConnectors) {
     
     this.eligibleConnectors = eligibleConnectors;
     return this;
@@ -56,10 +58,10 @@ public class BankDebitTypes {
     return this;
   }
 
-   /**
+  /**
    * Get eligibleConnectors
    * @return eligibleConnectors
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_ELIGIBLE_CONNECTORS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -71,7 +73,7 @@ public class BankDebitTypes {
 
   @JsonProperty(JSON_PROPERTY_ELIGIBLE_CONNECTORS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setEligibleConnectors(List<String> eligibleConnectors) {
+  public void setEligibleConnectors(@javax.annotation.Nonnull List<String> eligibleConnectors) {
     this.eligibleConnectors = eligibleConnectors;
   }
 

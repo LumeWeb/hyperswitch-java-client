@@ -35,33 +35,37 @@ import java.util.StringJoiner;
   CardRedirectResponse.JSON_PROPERTY_MOMO_ATM,
   CardRedirectResponse.JSON_PROPERTY_CARD_REDIRECT
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class CardRedirectResponse {
   public static final String JSON_PROPERTY_KNET = "knet";
+  @javax.annotation.Nonnull
   private Object knet;
 
   public static final String JSON_PROPERTY_BENEFIT = "benefit";
+  @javax.annotation.Nonnull
   private Object benefit;
 
   public static final String JSON_PROPERTY_MOMO_ATM = "momo_atm";
+  @javax.annotation.Nonnull
   private Object momoAtm;
 
   public static final String JSON_PROPERTY_CARD_REDIRECT = "card_redirect";
+  @javax.annotation.Nonnull
   private Object cardRedirect;
 
   public CardRedirectResponse() {
   }
 
-  public CardRedirectResponse knet(Object knet) {
+  public CardRedirectResponse knet(@javax.annotation.Nonnull Object knet) {
     
     this.knet = knet;
     return this;
   }
 
-   /**
+  /**
    * Get knet
    * @return knet
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_KNET)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -73,21 +77,20 @@ public class CardRedirectResponse {
 
   @JsonProperty(JSON_PROPERTY_KNET)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setKnet(Object knet) {
+  public void setKnet(@javax.annotation.Nonnull Object knet) {
     this.knet = knet;
   }
 
-
-  public CardRedirectResponse benefit(Object benefit) {
+  public CardRedirectResponse benefit(@javax.annotation.Nonnull Object benefit) {
     
     this.benefit = benefit;
     return this;
   }
 
-   /**
+  /**
    * Get benefit
    * @return benefit
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_BENEFIT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -99,21 +102,20 @@ public class CardRedirectResponse {
 
   @JsonProperty(JSON_PROPERTY_BENEFIT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setBenefit(Object benefit) {
+  public void setBenefit(@javax.annotation.Nonnull Object benefit) {
     this.benefit = benefit;
   }
 
-
-  public CardRedirectResponse momoAtm(Object momoAtm) {
+  public CardRedirectResponse momoAtm(@javax.annotation.Nonnull Object momoAtm) {
     
     this.momoAtm = momoAtm;
     return this;
   }
 
-   /**
+  /**
    * Get momoAtm
    * @return momoAtm
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_MOMO_ATM)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -125,21 +127,20 @@ public class CardRedirectResponse {
 
   @JsonProperty(JSON_PROPERTY_MOMO_ATM)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setMomoAtm(Object momoAtm) {
+  public void setMomoAtm(@javax.annotation.Nonnull Object momoAtm) {
     this.momoAtm = momoAtm;
   }
 
-
-  public CardRedirectResponse cardRedirect(Object cardRedirect) {
+  public CardRedirectResponse cardRedirect(@javax.annotation.Nonnull Object cardRedirect) {
     
     this.cardRedirect = cardRedirect;
     return this;
   }
 
-   /**
+  /**
    * Get cardRedirect
    * @return cardRedirect
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_CARD_REDIRECT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -151,7 +152,7 @@ public class CardRedirectResponse {
 
   @JsonProperty(JSON_PROPERTY_CARD_REDIRECT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setCardRedirect(Object cardRedirect) {
+  public void setCardRedirect(@javax.annotation.Nonnull Object cardRedirect) {
     this.cardRedirect = cardRedirect;
   }
 

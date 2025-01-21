@@ -42,42 +42,49 @@ import java.util.StringJoiner;
   WebhookDetails.JSON_PROPERTY_PAYMENT_SUCCEEDED_ENABLED,
   WebhookDetails.JSON_PROPERTY_PAYMENT_FAILED_ENABLED
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class WebhookDetails {
   public static final String JSON_PROPERTY_WEBHOOK_VERSION = "webhook_version";
+  @javax.annotation.Nullable
   private JsonNullable<String> webhookVersion = JsonNullable.<String>undefined();
 
   public static final String JSON_PROPERTY_WEBHOOK_USERNAME = "webhook_username";
+  @javax.annotation.Nullable
   private JsonNullable<String> webhookUsername = JsonNullable.<String>undefined();
 
   public static final String JSON_PROPERTY_WEBHOOK_PASSWORD = "webhook_password";
+  @javax.annotation.Nullable
   private JsonNullable<String> webhookPassword = JsonNullable.<String>undefined();
 
   public static final String JSON_PROPERTY_WEBHOOK_URL = "webhook_url";
+  @javax.annotation.Nullable
   private JsonNullable<String> webhookUrl = JsonNullable.<String>undefined();
 
   public static final String JSON_PROPERTY_PAYMENT_CREATED_ENABLED = "payment_created_enabled";
+  @javax.annotation.Nullable
   private JsonNullable<Boolean> paymentCreatedEnabled = JsonNullable.<Boolean>undefined();
 
   public static final String JSON_PROPERTY_PAYMENT_SUCCEEDED_ENABLED = "payment_succeeded_enabled";
+  @javax.annotation.Nullable
   private JsonNullable<Boolean> paymentSucceededEnabled = JsonNullable.<Boolean>undefined();
 
   public static final String JSON_PROPERTY_PAYMENT_FAILED_ENABLED = "payment_failed_enabled";
+  @javax.annotation.Nullable
   private JsonNullable<Boolean> paymentFailedEnabled = JsonNullable.<Boolean>undefined();
 
   public WebhookDetails() {
   }
 
-  public WebhookDetails webhookVersion(String webhookVersion) {
+  public WebhookDetails webhookVersion(@javax.annotation.Nullable String webhookVersion) {
     this.webhookVersion = JsonNullable.<String>of(webhookVersion);
     
     return this;
   }
 
-   /**
+  /**
    * The version for Webhook
    * @return webhookVersion
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -97,21 +104,20 @@ public class WebhookDetails {
     this.webhookVersion = webhookVersion;
   }
 
-  public void setWebhookVersion(String webhookVersion) {
+  public void setWebhookVersion(@javax.annotation.Nullable String webhookVersion) {
     this.webhookVersion = JsonNullable.<String>of(webhookVersion);
   }
 
-
-  public WebhookDetails webhookUsername(String webhookUsername) {
+  public WebhookDetails webhookUsername(@javax.annotation.Nullable String webhookUsername) {
     this.webhookUsername = JsonNullable.<String>of(webhookUsername);
     
     return this;
   }
 
-   /**
+  /**
    * The user name for Webhook login
    * @return webhookUsername
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -131,21 +137,20 @@ public class WebhookDetails {
     this.webhookUsername = webhookUsername;
   }
 
-  public void setWebhookUsername(String webhookUsername) {
+  public void setWebhookUsername(@javax.annotation.Nullable String webhookUsername) {
     this.webhookUsername = JsonNullable.<String>of(webhookUsername);
   }
 
-
-  public WebhookDetails webhookPassword(String webhookPassword) {
+  public WebhookDetails webhookPassword(@javax.annotation.Nullable String webhookPassword) {
     this.webhookPassword = JsonNullable.<String>of(webhookPassword);
     
     return this;
   }
 
-   /**
+  /**
    * The password for Webhook login
    * @return webhookPassword
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -165,21 +170,20 @@ public class WebhookDetails {
     this.webhookPassword = webhookPassword;
   }
 
-  public void setWebhookPassword(String webhookPassword) {
+  public void setWebhookPassword(@javax.annotation.Nullable String webhookPassword) {
     this.webhookPassword = JsonNullable.<String>of(webhookPassword);
   }
 
-
-  public WebhookDetails webhookUrl(String webhookUrl) {
+  public WebhookDetails webhookUrl(@javax.annotation.Nullable String webhookUrl) {
     this.webhookUrl = JsonNullable.<String>of(webhookUrl);
     
     return this;
   }
 
-   /**
+  /**
    * The url for the webhook endpoint
    * @return webhookUrl
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -199,21 +203,20 @@ public class WebhookDetails {
     this.webhookUrl = webhookUrl;
   }
 
-  public void setWebhookUrl(String webhookUrl) {
+  public void setWebhookUrl(@javax.annotation.Nullable String webhookUrl) {
     this.webhookUrl = JsonNullable.<String>of(webhookUrl);
   }
 
-
-  public WebhookDetails paymentCreatedEnabled(Boolean paymentCreatedEnabled) {
+  public WebhookDetails paymentCreatedEnabled(@javax.annotation.Nullable Boolean paymentCreatedEnabled) {
     this.paymentCreatedEnabled = JsonNullable.<Boolean>of(paymentCreatedEnabled);
     
     return this;
   }
 
-   /**
+  /**
    * If this property is true, a webhook message is posted whenever a new payment is created
    * @return paymentCreatedEnabled
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -233,21 +236,20 @@ public class WebhookDetails {
     this.paymentCreatedEnabled = paymentCreatedEnabled;
   }
 
-  public void setPaymentCreatedEnabled(Boolean paymentCreatedEnabled) {
+  public void setPaymentCreatedEnabled(@javax.annotation.Nullable Boolean paymentCreatedEnabled) {
     this.paymentCreatedEnabled = JsonNullable.<Boolean>of(paymentCreatedEnabled);
   }
 
-
-  public WebhookDetails paymentSucceededEnabled(Boolean paymentSucceededEnabled) {
+  public WebhookDetails paymentSucceededEnabled(@javax.annotation.Nullable Boolean paymentSucceededEnabled) {
     this.paymentSucceededEnabled = JsonNullable.<Boolean>of(paymentSucceededEnabled);
     
     return this;
   }
 
-   /**
+  /**
    * If this property is true, a webhook message is posted whenever a payment is successful
    * @return paymentSucceededEnabled
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -267,21 +269,20 @@ public class WebhookDetails {
     this.paymentSucceededEnabled = paymentSucceededEnabled;
   }
 
-  public void setPaymentSucceededEnabled(Boolean paymentSucceededEnabled) {
+  public void setPaymentSucceededEnabled(@javax.annotation.Nullable Boolean paymentSucceededEnabled) {
     this.paymentSucceededEnabled = JsonNullable.<Boolean>of(paymentSucceededEnabled);
   }
 
-
-  public WebhookDetails paymentFailedEnabled(Boolean paymentFailedEnabled) {
+  public WebhookDetails paymentFailedEnabled(@javax.annotation.Nullable Boolean paymentFailedEnabled) {
     this.paymentFailedEnabled = JsonNullable.<Boolean>of(paymentFailedEnabled);
     
     return this;
   }
 
-   /**
+  /**
    * If this property is true, a webhook message is posted whenever a payment fails
    * @return paymentFailedEnabled
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -301,7 +302,7 @@ public class WebhookDetails {
     this.paymentFailedEnabled = paymentFailedEnabled;
   }
 
-  public void setPaymentFailedEnabled(Boolean paymentFailedEnabled) {
+  public void setPaymentFailedEnabled(@javax.annotation.Nullable Boolean paymentFailedEnabled) {
     this.paymentFailedEnabled = JsonNullable.<Boolean>of(paymentFailedEnabled);
   }
 

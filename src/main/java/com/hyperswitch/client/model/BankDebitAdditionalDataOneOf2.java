@@ -34,24 +34,25 @@ import java.util.StringJoiner;
   BankDebitAdditionalDataOneOf2.JSON_PROPERTY_BECS
 })
 @JsonTypeName("BankDebitAdditionalData_oneOf_2")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class BankDebitAdditionalDataOneOf2 {
   public static final String JSON_PROPERTY_BECS = "becs";
+  @javax.annotation.Nonnull
   private BecsBankDebitAdditionalData becs;
 
   public BankDebitAdditionalDataOneOf2() {
   }
 
-  public BankDebitAdditionalDataOneOf2 becs(BecsBankDebitAdditionalData becs) {
+  public BankDebitAdditionalDataOneOf2 becs(@javax.annotation.Nonnull BecsBankDebitAdditionalData becs) {
     
     this.becs = becs;
     return this;
   }
 
-   /**
+  /**
    * Get becs
    * @return becs
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_BECS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -63,7 +64,7 @@ public class BankDebitAdditionalDataOneOf2 {
 
   @JsonProperty(JSON_PROPERTY_BECS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setBecs(BecsBankDebitAdditionalData becs) {
+  public void setBecs(@javax.annotation.Nonnull BecsBankDebitAdditionalData becs) {
     this.becs = becs;
   }
 

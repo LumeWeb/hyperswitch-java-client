@@ -22,22 +22,21 @@ import org.openapitools.jackson.nullable.JsonNullable;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.openapitools.jackson.nullable.JsonNullable;
 import java.util.NoSuchElementException;
-import org.junit.Assert;
-import org.junit.Ignore;
-import org.junit.Test;
-
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Test;
 
 /**
  * Model tests for PaymentRetrieveBody
  */
-public class PaymentRetrieveBodyTest {
+class PaymentRetrieveBodyTest {
     private final PaymentRetrieveBody model = new PaymentRetrieveBody();
 
     /**
      * Model tests for PaymentRetrieveBody
      */
     @Test
-    public void testPaymentRetrieveBody() {
+    void testPaymentRetrieveBody() {
         // TODO: test PaymentRetrieveBody
     }
 
@@ -45,7 +44,7 @@ public class PaymentRetrieveBodyTest {
      * Test the property 'merchantId'
      */
     @Test
-    public void merchantIdTest() {
+    void merchantIdTest() {
         // TODO: test merchantId
     }
 
@@ -53,7 +52,7 @@ public class PaymentRetrieveBodyTest {
      * Test the property 'forceSync'
      */
     @Test
-    public void forceSyncTest() {
+    void forceSyncTest() {
         // TODO: test forceSync
     }
 
@@ -61,7 +60,7 @@ public class PaymentRetrieveBodyTest {
      * Test the property 'clientSecret'
      */
     @Test
-    public void clientSecretTest() {
+    void clientSecretTest() {
         // TODO: test clientSecret
     }
 
@@ -69,7 +68,7 @@ public class PaymentRetrieveBodyTest {
      * Test the property 'expandCaptures'
      */
     @Test
-    public void expandCapturesTest() {
+    void expandCapturesTest() {
         // TODO: test expandCaptures
     }
 
@@ -77,7 +76,7 @@ public class PaymentRetrieveBodyTest {
      * Test the property 'expandAttempts'
      */
     @Test
-    public void expandAttemptsTest() {
+    void expandAttemptsTest() {
         // TODO: test expandAttempts
     }
 

@@ -20,27 +20,27 @@ import com.fasterxml.jackson.annotation.JsonTypeName;
 import com.fasterxml.jackson.annotation.JsonValue;
 import com.hyperswitch.client.model.PayoutCreateResponse;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import org.openapitools.jackson.nullable.JsonNullable;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.openapitools.jackson.nullable.JsonNullable;
 import java.util.NoSuchElementException;
-import org.junit.Assert;
-import org.junit.Ignore;
-import org.junit.Test;
-
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Test;
 
 /**
  * Model tests for PayoutListResponse
  */
-public class PayoutListResponseTest {
+class PayoutListResponseTest {
     private final PayoutListResponse model = new PayoutListResponse();
 
     /**
      * Model tests for PayoutListResponse
      */
     @Test
-    public void testPayoutListResponse() {
+    void testPayoutListResponse() {
         // TODO: test PayoutListResponse
     }
 
@@ -48,7 +48,7 @@ public class PayoutListResponseTest {
      * Test the property 'size'
      */
     @Test
-    public void sizeTest() {
+    void sizeTest() {
         // TODO: test size
     }
 
@@ -56,7 +56,7 @@ public class PayoutListResponseTest {
      * Test the property 'data'
      */
     @Test
-    public void dataTest() {
+    void dataTest() {
         // TODO: test data
     }
 
@@ -64,7 +64,7 @@ public class PayoutListResponseTest {
      * Test the property 'totalCount'
      */
     @Test
-    public void totalCountTest() {
+    void totalCountTest() {
         // TODO: test totalCount
     }
 

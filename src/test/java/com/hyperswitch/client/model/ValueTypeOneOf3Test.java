@@ -18,22 +18,21 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonTypeName;
 import com.fasterxml.jackson.annotation.JsonValue;
-import org.junit.Assert;
-import org.junit.Ignore;
-import org.junit.Test;
-
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Test;
 
 /**
  * Model tests for ValueTypeOneOf3
  */
-public class ValueTypeOneOf3Test {
+class ValueTypeOneOf3Test {
     private final ValueTypeOneOf3 model = new ValueTypeOneOf3();
 
     /**
      * Model tests for ValueTypeOneOf3
      */
     @Test
-    public void testValueTypeOneOf3() {
+    void testValueTypeOneOf3() {
         // TODO: test ValueTypeOneOf3
     }
 
@@ -41,7 +40,7 @@ public class ValueTypeOneOf3Test {
      * Test the property 'type'
      */
     @Test
-    public void typeTest() {
+    void typeTest() {
         // TODO: test type
     }
 
@@ -49,7 +48,7 @@ public class ValueTypeOneOf3Test {
      * Test the property 'value'
      */
     @Test
-    public void valueTest() {
+    void valueTest() {
         // TODO: test value
     }
 

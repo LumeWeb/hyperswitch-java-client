@@ -19,22 +19,21 @@ import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonTypeName;
 import com.fasterxml.jackson.annotation.JsonValue;
 import com.hyperswitch.client.model.BankDebitDataOneOf2BecsBankDebit;
-import org.junit.Assert;
-import org.junit.Ignore;
-import org.junit.Test;
-
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Test;
 
 /**
  * Model tests for BankDebitDataOneOf2
  */
-public class BankDebitDataOneOf2Test {
+class BankDebitDataOneOf2Test {
     private final BankDebitDataOneOf2 model = new BankDebitDataOneOf2();
 
     /**
      * Model tests for BankDebitDataOneOf2
      */
     @Test
-    public void testBankDebitDataOneOf2() {
+    void testBankDebitDataOneOf2() {
         // TODO: test BankDebitDataOneOf2
     }
 
@@ -42,7 +41,7 @@ public class BankDebitDataOneOf2Test {
      * Test the property 'becsBankDebit'
      */
     @Test
-    public void becsBankDebitTest() {
+    void becsBankDebitTest() {
         // TODO: test becsBankDebit
     }
 

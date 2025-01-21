@@ -29,7 +29,7 @@ import com.fasterxml.jackson.annotation.JsonValue;
  */
 public enum ApplePayAddressParameters {
   
-  POSTALADDRESS("postalAddress"),
+  POSTAL_ADDRESS("postalAddress"),
   
   PHONE("phone"),
   

@@ -29,19 +29,19 @@ import com.fasterxml.jackson.annotation.JsonValue;
  */
 public enum DisputeStatus {
   
-  OPENED("dispute_opened"),
+  DISPUTE_OPENED("dispute_opened"),
   
-  EXPIRED("dispute_expired"),
+  DISPUTE_EXPIRED("dispute_expired"),
   
-  ACCEPTED("dispute_accepted"),
+  DISPUTE_ACCEPTED("dispute_accepted"),
   
-  CANCELLED("dispute_cancelled"),
+  DISPUTE_CANCELLED("dispute_cancelled"),
   
-  CHALLENGED("dispute_challenged"),
+  DISPUTE_CHALLENGED("dispute_challenged"),
   
-  WON("dispute_won"),
+  DISPUTE_WON("dispute_won"),
   
-  LOST("dispute_lost");
+  DISPUTE_LOST("dispute_lost");
 
   private String value;
 

@@ -22,22 +22,21 @@ import com.hyperswitch.client.model.AlfamartVoucherData;
 import com.hyperswitch.client.model.BoletoVoucherData;
 import com.hyperswitch.client.model.IndomaretVoucherData;
 import com.hyperswitch.client.model.JCSVoucherData;
-import org.junit.Assert;
-import org.junit.Ignore;
-import org.junit.Test;
-
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Test;
 
 /**
  * Model tests for VoucherResponse
  */
-public class VoucherResponseTest {
+class VoucherResponseTest {
     private final VoucherResponse model = new VoucherResponse();
 
     /**
      * Model tests for VoucherResponse
      */
     @Test
-    public void testVoucherResponse() {
+    void testVoucherResponse() {
         // TODO: test VoucherResponse
     }
 
@@ -45,7 +44,7 @@ public class VoucherResponseTest {
      * Test the property 'boleto'
      */
     @Test
-    public void boletoTest() {
+    void boletoTest() {
         // TODO: test boleto
     }
 
@@ -53,7 +52,7 @@ public class VoucherResponseTest {
      * Test the property 'alfamart'
      */
     @Test
-    public void alfamartTest() {
+    void alfamartTest() {
         // TODO: test alfamart
     }
 
@@ -61,7 +60,7 @@ public class VoucherResponseTest {
      * Test the property 'indomaret'
      */
     @Test
-    public void indomaretTest() {
+    void indomaretTest() {
         // TODO: test indomaret
     }
 
@@ -69,7 +68,7 @@ public class VoucherResponseTest {
      * Test the property 'sevenEleven'
      */
     @Test
-    public void sevenElevenTest() {
+    void sevenElevenTest() {
         // TODO: test sevenEleven
     }
 
@@ -77,7 +76,7 @@ public class VoucherResponseTest {
      * Test the property 'lawson'
      */
     @Test
-    public void lawsonTest() {
+    void lawsonTest() {
         // TODO: test lawson
     }
 
@@ -85,7 +84,7 @@ public class VoucherResponseTest {
      * Test the property 'miniStop'
      */
     @Test
-    public void miniStopTest() {
+    void miniStopTest() {
         // TODO: test miniStop
     }
 
@@ -93,7 +92,7 @@ public class VoucherResponseTest {
      * Test the property 'familyMart'
      */
     @Test
-    public void familyMartTest() {
+    void familyMartTest() {
         // TODO: test familyMart
     }
 
@@ -101,7 +100,7 @@ public class VoucherResponseTest {
      * Test the property 'seicomart'
      */
     @Test
-    public void seicomartTest() {
+    void seicomartTest() {
         // TODO: test seicomart
     }
 
@@ -109,7 +108,7 @@ public class VoucherResponseTest {
      * Test the property 'payEasy'
      */
     @Test
-    public void payEasyTest() {
+    void payEasyTest() {
         // TODO: test payEasy
     }
 

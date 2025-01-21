@@ -24,22 +24,21 @@ import org.openapitools.jackson.nullable.JsonNullable;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.openapitools.jackson.nullable.JsonNullable;
 import java.util.NoSuchElementException;
-import org.junit.Assert;
-import org.junit.Ignore;
-import org.junit.Test;
-
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Test;
 
 /**
  * Model tests for RoutingDictionaryRecord
  */
-public class RoutingDictionaryRecordTest {
+class RoutingDictionaryRecordTest {
     private final RoutingDictionaryRecord model = new RoutingDictionaryRecord();
 
     /**
      * Model tests for RoutingDictionaryRecord
      */
     @Test
-    public void testRoutingDictionaryRecord() {
+    void testRoutingDictionaryRecord() {
         // TODO: test RoutingDictionaryRecord
     }
 
@@ -47,7 +46,7 @@ public class RoutingDictionaryRecordTest {
      * Test the property 'id'
      */
     @Test
-    public void idTest() {
+    void idTest() {
         // TODO: test id
     }
 
@@ -55,7 +54,7 @@ public class RoutingDictionaryRecordTest {
      * Test the property 'profileId'
      */
     @Test
-    public void profileIdTest() {
+    void profileIdTest() {
         // TODO: test profileId
     }
 
@@ -63,7 +62,7 @@ public class RoutingDictionaryRecordTest {
      * Test the property 'name'
      */
     @Test
-    public void nameTest() {
+    void nameTest() {
         // TODO: test name
     }
 
@@ -71,7 +70,7 @@ public class RoutingDictionaryRecordTest {
      * Test the property 'kind'
      */
     @Test
-    public void kindTest() {
+    void kindTest() {
         // TODO: test kind
     }
 
@@ -79,7 +78,7 @@ public class RoutingDictionaryRecordTest {
      * Test the property 'description'
      */
     @Test
-    public void descriptionTest() {
+    void descriptionTest() {
         // TODO: test description
     }
 
@@ -87,7 +86,7 @@ public class RoutingDictionaryRecordTest {
      * Test the property 'createdAt'
      */
     @Test
-    public void createdAtTest() {
+    void createdAtTest() {
         // TODO: test createdAt
     }
 
@@ -95,7 +94,7 @@ public class RoutingDictionaryRecordTest {
      * Test the property 'modifiedAt'
      */
     @Test
-    public void modifiedAtTest() {
+    void modifiedAtTest() {
         // TODO: test modifiedAt
     }
 
@@ -103,7 +102,7 @@ public class RoutingDictionaryRecordTest {
      * Test the property 'algorithmFor'
      */
     @Test
-    public void algorithmForTest() {
+    void algorithmForTest() {
         // TODO: test algorithmFor
     }
 

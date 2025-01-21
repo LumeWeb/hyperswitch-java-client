@@ -34,24 +34,25 @@ import java.util.StringJoiner;
   BankRedirectDataOneOf4.JSON_PROPERTY_GIROPAY
 })
 @JsonTypeName("BankRedirectData_oneOf_4")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class BankRedirectDataOneOf4 {
   public static final String JSON_PROPERTY_GIROPAY = "giropay";
+  @javax.annotation.Nonnull
   private BankRedirectDataOneOf4Giropay giropay;
 
   public BankRedirectDataOneOf4() {
   }
 
-  public BankRedirectDataOneOf4 giropay(BankRedirectDataOneOf4Giropay giropay) {
+  public BankRedirectDataOneOf4 giropay(@javax.annotation.Nonnull BankRedirectDataOneOf4Giropay giropay) {
     
     this.giropay = giropay;
     return this;
   }
 
-   /**
+  /**
    * Get giropay
    * @return giropay
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_GIROPAY)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -63,7 +64,7 @@ public class BankRedirectDataOneOf4 {
 
   @JsonProperty(JSON_PROPERTY_GIROPAY)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setGiropay(BankRedirectDataOneOf4Giropay giropay) {
+  public void setGiropay(@javax.annotation.Nonnull BankRedirectDataOneOf4Giropay giropay) {
     this.giropay = giropay;
   }
 

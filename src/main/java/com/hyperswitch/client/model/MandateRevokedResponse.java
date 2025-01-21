@@ -40,33 +40,37 @@ import java.util.StringJoiner;
   MandateRevokedResponse.JSON_PROPERTY_ERROR_CODE,
   MandateRevokedResponse.JSON_PROPERTY_ERROR_MESSAGE
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class MandateRevokedResponse {
   public static final String JSON_PROPERTY_MANDATE_ID = "mandate_id";
+  @javax.annotation.Nonnull
   private String mandateId;
 
   public static final String JSON_PROPERTY_STATUS = "status";
+  @javax.annotation.Nonnull
   private MandateStatus status;
 
   public static final String JSON_PROPERTY_ERROR_CODE = "error_code";
+  @javax.annotation.Nullable
   private JsonNullable<String> errorCode = JsonNullable.<String>undefined();
 
   public static final String JSON_PROPERTY_ERROR_MESSAGE = "error_message";
+  @javax.annotation.Nullable
   private JsonNullable<String> errorMessage = JsonNullable.<String>undefined();
 
   public MandateRevokedResponse() {
   }
 
-  public MandateRevokedResponse mandateId(String mandateId) {
+  public MandateRevokedResponse mandateId(@javax.annotation.Nonnull String mandateId) {
     
     this.mandateId = mandateId;
     return this;
   }
 
-   /**
+  /**
    * The identifier for mandate
    * @return mandateId
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_MANDATE_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -78,21 +82,20 @@ public class MandateRevokedResponse {
 
   @JsonProperty(JSON_PROPERTY_MANDATE_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setMandateId(String mandateId) {
+  public void setMandateId(@javax.annotation.Nonnull String mandateId) {
     this.mandateId = mandateId;
   }
 
-
-  public MandateRevokedResponse status(MandateStatus status) {
+  public MandateRevokedResponse status(@javax.annotation.Nonnull MandateStatus status) {
     
     this.status = status;
     return this;
   }
 
-   /**
+  /**
    * Get status
    * @return status
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_STATUS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -104,21 +107,20 @@ public class MandateRevokedResponse {
 
   @JsonProperty(JSON_PROPERTY_STATUS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setStatus(MandateStatus status) {
+  public void setStatus(@javax.annotation.Nonnull MandateStatus status) {
     this.status = status;
   }
 
-
-  public MandateRevokedResponse errorCode(String errorCode) {
+  public MandateRevokedResponse errorCode(@javax.annotation.Nullable String errorCode) {
     this.errorCode = JsonNullable.<String>of(errorCode);
     
     return this;
   }
 
-   /**
+  /**
    * If there was an error while calling the connectors the code is received here
    * @return errorCode
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -138,21 +140,20 @@ public class MandateRevokedResponse {
     this.errorCode = errorCode;
   }
 
-  public void setErrorCode(String errorCode) {
+  public void setErrorCode(@javax.annotation.Nullable String errorCode) {
     this.errorCode = JsonNullable.<String>of(errorCode);
   }
 
-
-  public MandateRevokedResponse errorMessage(String errorMessage) {
+  public MandateRevokedResponse errorMessage(@javax.annotation.Nullable String errorMessage) {
     this.errorMessage = JsonNullable.<String>of(errorMessage);
     
     return this;
   }
 
-   /**
+  /**
    * If there was an error while calling the connector the error message is received here
    * @return errorMessage
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -172,7 +173,7 @@ public class MandateRevokedResponse {
     this.errorMessage = errorMessage;
   }
 
-  public void setErrorMessage(String errorMessage) {
+  public void setErrorMessage(@javax.annotation.Nullable String errorMessage) {
     this.errorMessage = JsonNullable.<String>of(errorMessage);
   }
 

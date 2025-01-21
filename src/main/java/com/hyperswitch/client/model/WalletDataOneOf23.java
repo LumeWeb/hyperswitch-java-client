@@ -33,24 +33,25 @@ import java.util.StringJoiner;
   WalletDataOneOf23.JSON_PROPERTY_WE_CHAT_PAY_REDIRECT
 })
 @JsonTypeName("WalletData_oneOf_23")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class WalletDataOneOf23 {
   public static final String JSON_PROPERTY_WE_CHAT_PAY_REDIRECT = "we_chat_pay_redirect";
+  @javax.annotation.Nonnull
   private Object weChatPayRedirect;
 
   public WalletDataOneOf23() {
   }
 
-  public WalletDataOneOf23 weChatPayRedirect(Object weChatPayRedirect) {
+  public WalletDataOneOf23 weChatPayRedirect(@javax.annotation.Nonnull Object weChatPayRedirect) {
     
     this.weChatPayRedirect = weChatPayRedirect;
     return this;
   }
 
-   /**
+  /**
    * Get weChatPayRedirect
    * @return weChatPayRedirect
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_WE_CHAT_PAY_REDIRECT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -62,7 +63,7 @@ public class WalletDataOneOf23 {
 
   @JsonProperty(JSON_PROPERTY_WE_CHAT_PAY_REDIRECT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setWeChatPayRedirect(Object weChatPayRedirect) {
+  public void setWeChatPayRedirect(@javax.annotation.Nonnull Object weChatPayRedirect) {
     this.weChatPayRedirect = weChatPayRedirect;
   }
 

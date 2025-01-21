@@ -50,22 +50,21 @@ import com.hyperswitch.client.model.RealTimePaymentDataResponse;
 import com.hyperswitch.client.model.UpiResponse;
 import com.hyperswitch.client.model.VoucherResponse;
 import com.hyperswitch.client.model.WalletResponse;
-import org.junit.Assert;
-import org.junit.Ignore;
-import org.junit.Test;
-
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Test;
 
 /**
  * Model tests for PaymentMethodDataResponse
  */
-public class PaymentMethodDataResponseTest {
+class PaymentMethodDataResponseTest {
     private final PaymentMethodDataResponse model = new PaymentMethodDataResponse();
 
     /**
      * Model tests for PaymentMethodDataResponse
      */
     @Test
-    public void testPaymentMethodDataResponse() {
+    void testPaymentMethodDataResponse() {
         // TODO: test PaymentMethodDataResponse
     }
 
@@ -73,7 +72,7 @@ public class PaymentMethodDataResponseTest {
      * Test the property 'card'
      */
     @Test
-    public void cardTest() {
+    void cardTest() {
         // TODO: test card
     }
 
@@ -81,7 +80,7 @@ public class PaymentMethodDataResponseTest {
      * Test the property 'bankTransfer'
      */
     @Test
-    public void bankTransferTest() {
+    void bankTransferTest() {
         // TODO: test bankTransfer
     }
 
@@ -89,7 +88,7 @@ public class PaymentMethodDataResponseTest {
      * Test the property 'wallet'
      */
     @Test
-    public void walletTest() {
+    void walletTest() {
         // TODO: test wallet
     }
 
@@ -97,7 +96,7 @@ public class PaymentMethodDataResponseTest {
      * Test the property 'payLater'
      */
     @Test
-    public void payLaterTest() {
+    void payLaterTest() {
         // TODO: test payLater
     }
 
@@ -105,7 +104,7 @@ public class PaymentMethodDataResponseTest {
      * Test the property 'bankRedirect'
      */
     @Test
-    public void bankRedirectTest() {
+    void bankRedirectTest() {
         // TODO: test bankRedirect
     }
 
@@ -113,7 +112,7 @@ public class PaymentMethodDataResponseTest {
      * Test the property 'crypto'
      */
     @Test
-    public void cryptoTest() {
+    void cryptoTest() {
         // TODO: test crypto
     }
 
@@ -121,7 +120,7 @@ public class PaymentMethodDataResponseTest {
      * Test the property 'bankDebit'
      */
     @Test
-    public void bankDebitTest() {
+    void bankDebitTest() {
         // TODO: test bankDebit
     }
 
@@ -129,7 +128,7 @@ public class PaymentMethodDataResponseTest {
      * Test the property 'mandatePayment'
      */
     @Test
-    public void mandatePaymentTest() {
+    void mandatePaymentTest() {
         // TODO: test mandatePayment
     }
 
@@ -137,7 +136,7 @@ public class PaymentMethodDataResponseTest {
      * Test the property 'reward'
      */
     @Test
-    public void rewardTest() {
+    void rewardTest() {
         // TODO: test reward
     }
 
@@ -145,7 +144,7 @@ public class PaymentMethodDataResponseTest {
      * Test the property 'realTimePayment'
      */
     @Test
-    public void realTimePaymentTest() {
+    void realTimePaymentTest() {
         // TODO: test realTimePayment
     }
 
@@ -153,7 +152,7 @@ public class PaymentMethodDataResponseTest {
      * Test the property 'upi'
      */
     @Test
-    public void upiTest() {
+    void upiTest() {
         // TODO: test upi
     }
 
@@ -161,7 +160,7 @@ public class PaymentMethodDataResponseTest {
      * Test the property 'voucher'
      */
     @Test
-    public void voucherTest() {
+    void voucherTest() {
         // TODO: test voucher
     }
 
@@ -169,7 +168,7 @@ public class PaymentMethodDataResponseTest {
      * Test the property 'giftCard'
      */
     @Test
-    public void giftCardTest() {
+    void giftCardTest() {
         // TODO: test giftCard
     }
 
@@ -177,7 +176,7 @@ public class PaymentMethodDataResponseTest {
      * Test the property 'cardRedirect'
      */
     @Test
-    public void cardRedirectTest() {
+    void cardRedirectTest() {
         // TODO: test cardRedirect
     }
 
@@ -185,7 +184,7 @@ public class PaymentMethodDataResponseTest {
      * Test the property 'cardToken'
      */
     @Test
-    public void cardTokenTest() {
+    void cardTokenTest() {
         // TODO: test cardToken
     }
 
@@ -193,7 +192,7 @@ public class PaymentMethodDataResponseTest {
      * Test the property 'openBanking'
      */
     @Test
-    public void openBankingTest() {
+    void openBankingTest() {
         // TODO: test openBanking
     }
 
@@ -201,7 +200,7 @@ public class PaymentMethodDataResponseTest {
      * Test the property 'mobilePayment'
      */
     @Test
-    public void mobilePaymentTest() {
+    void mobilePaymentTest() {
         // TODO: test mobilePayment
     }
 

@@ -23,22 +23,21 @@ import org.openapitools.jackson.nullable.JsonNullable;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.openapitools.jackson.nullable.JsonNullable;
 import java.util.NoSuchElementException;
-import org.junit.Assert;
-import org.junit.Ignore;
-import org.junit.Test;
-
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Test;
 
 /**
  * Model tests for SamsungPayMerchantPaymentInformation
  */
-public class SamsungPayMerchantPaymentInformationTest {
+class SamsungPayMerchantPaymentInformationTest {
     private final SamsungPayMerchantPaymentInformation model = new SamsungPayMerchantPaymentInformation();
 
     /**
      * Model tests for SamsungPayMerchantPaymentInformation
      */
     @Test
-    public void testSamsungPayMerchantPaymentInformation() {
+    void testSamsungPayMerchantPaymentInformation() {
         // TODO: test SamsungPayMerchantPaymentInformation
     }
 
@@ -46,7 +45,7 @@ public class SamsungPayMerchantPaymentInformationTest {
      * Test the property 'name'
      */
     @Test
-    public void nameTest() {
+    void nameTest() {
         // TODO: test name
     }
 
@@ -54,7 +53,7 @@ public class SamsungPayMerchantPaymentInformationTest {
      * Test the property 'url'
      */
     @Test
-    public void urlTest() {
+    void urlTest() {
         // TODO: test url
     }
 
@@ -62,7 +61,7 @@ public class SamsungPayMerchantPaymentInformationTest {
      * Test the property 'countryCode'
      */
     @Test
-    public void countryCodeTest() {
+    void countryCodeTest() {
         // TODO: test countryCode
     }
 

@@ -33,24 +33,25 @@ import java.util.StringJoiner;
   WalletDataOneOf10.JSON_PROPERTY_DANA_REDIRECT
 })
 @JsonTypeName("WalletData_oneOf_10")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class WalletDataOneOf10 {
   public static final String JSON_PROPERTY_DANA_REDIRECT = "dana_redirect";
+  @javax.annotation.Nonnull
   private Object danaRedirect;
 
   public WalletDataOneOf10() {
   }
 
-  public WalletDataOneOf10 danaRedirect(Object danaRedirect) {
+  public WalletDataOneOf10 danaRedirect(@javax.annotation.Nonnull Object danaRedirect) {
     
     this.danaRedirect = danaRedirect;
     return this;
   }
 
-   /**
+  /**
    * Wallet data for DANA redirect flow
    * @return danaRedirect
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_DANA_REDIRECT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -62,7 +63,7 @@ public class WalletDataOneOf10 {
 
   @JsonProperty(JSON_PROPERTY_DANA_REDIRECT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setDanaRedirect(Object danaRedirect) {
+  public void setDanaRedirect(@javax.annotation.Nonnull Object danaRedirect) {
     this.danaRedirect = danaRedirect;
   }
 

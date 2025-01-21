@@ -18,22 +18,21 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonTypeName;
 import com.fasterxml.jackson.annotation.JsonValue;
-import org.junit.Assert;
-import org.junit.Ignore;
-import org.junit.Test;
-
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Test;
 
 /**
  * Model tests for SepaBankTransferInstructions
  */
-public class SepaBankTransferInstructionsTest {
+class SepaBankTransferInstructionsTest {
     private final SepaBankTransferInstructions model = new SepaBankTransferInstructions();
 
     /**
      * Model tests for SepaBankTransferInstructions
      */
     @Test
-    public void testSepaBankTransferInstructions() {
+    void testSepaBankTransferInstructions() {
         // TODO: test SepaBankTransferInstructions
     }
 
@@ -41,7 +40,7 @@ public class SepaBankTransferInstructionsTest {
      * Test the property 'accountHolderName'
      */
     @Test
-    public void accountHolderNameTest() {
+    void accountHolderNameTest() {
         // TODO: test accountHolderName
     }
 
@@ -49,7 +48,7 @@ public class SepaBankTransferInstructionsTest {
      * Test the property 'bic'
      */
     @Test
-    public void bicTest() {
+    void bicTest() {
         // TODO: test bic
     }
 
@@ -57,7 +56,7 @@ public class SepaBankTransferInstructionsTest {
      * Test the property 'country'
      */
     @Test
-    public void countryTest() {
+    void countryTest() {
         // TODO: test country
     }
 
@@ -65,7 +64,7 @@ public class SepaBankTransferInstructionsTest {
      * Test the property 'iban'
      */
     @Test
-    public void ibanTest() {
+    void ibanTest() {
         // TODO: test iban
     }
 
@@ -73,7 +72,7 @@ public class SepaBankTransferInstructionsTest {
      * Test the property 'reference'
      */
     @Test
-    public void referenceTest() {
+    void referenceTest() {
         // TODO: test reference
     }
 

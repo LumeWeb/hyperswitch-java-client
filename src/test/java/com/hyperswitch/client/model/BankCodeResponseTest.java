@@ -20,23 +20,23 @@ import com.fasterxml.jackson.annotation.JsonTypeName;
 import com.fasterxml.jackson.annotation.JsonValue;
 import com.hyperswitch.client.model.BankNames;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
-import org.junit.Assert;
-import org.junit.Ignore;
-import org.junit.Test;
-
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Test;
 
 /**
  * Model tests for BankCodeResponse
  */
-public class BankCodeResponseTest {
+class BankCodeResponseTest {
     private final BankCodeResponse model = new BankCodeResponse();
 
     /**
      * Model tests for BankCodeResponse
      */
     @Test
-    public void testBankCodeResponse() {
+    void testBankCodeResponse() {
         // TODO: test BankCodeResponse
     }
 
@@ -44,7 +44,7 @@ public class BankCodeResponseTest {
      * Test the property 'bankName'
      */
     @Test
-    public void bankNameTest() {
+    void bankNameTest() {
         // TODO: test bankName
     }
 
@@ -52,7 +52,7 @@ public class BankCodeResponseTest {
      * Test the property 'eligibleConnectors'
      */
     @Test
-    public void eligibleConnectorsTest() {
+    void eligibleConnectorsTest() {
         // TODO: test eligibleConnectors
     }
 

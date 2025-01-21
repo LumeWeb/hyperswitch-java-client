@@ -45,45 +45,53 @@ import java.util.StringJoiner;
   RoutingDictionaryRecord.JSON_PROPERTY_MODIFIED_AT,
   RoutingDictionaryRecord.JSON_PROPERTY_ALGORITHM_FOR
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class RoutingDictionaryRecord {
   public static final String JSON_PROPERTY_ID = "id";
+  @javax.annotation.Nonnull
   private String id;
 
   public static final String JSON_PROPERTY_PROFILE_ID = "profile_id";
+  @javax.annotation.Nonnull
   private String profileId;
 
   public static final String JSON_PROPERTY_NAME = "name";
+  @javax.annotation.Nonnull
   private String name;
 
   public static final String JSON_PROPERTY_KIND = "kind";
+  @javax.annotation.Nonnull
   private RoutingAlgorithmKind kind;
 
   public static final String JSON_PROPERTY_DESCRIPTION = "description";
+  @javax.annotation.Nonnull
   private String description;
 
   public static final String JSON_PROPERTY_CREATED_AT = "created_at";
+  @javax.annotation.Nonnull
   private Long createdAt;
 
   public static final String JSON_PROPERTY_MODIFIED_AT = "modified_at";
+  @javax.annotation.Nonnull
   private Long modifiedAt;
 
   public static final String JSON_PROPERTY_ALGORITHM_FOR = "algorithm_for";
+  @javax.annotation.Nullable
   private JsonNullable<TransactionType> algorithmFor = JsonNullable.<TransactionType>undefined();
 
   public RoutingDictionaryRecord() {
   }
 
-  public RoutingDictionaryRecord id(String id) {
+  public RoutingDictionaryRecord id(@javax.annotation.Nonnull String id) {
     
     this.id = id;
     return this;
   }
 
-   /**
+  /**
    * Get id
    * @return id
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -95,21 +103,20 @@ public class RoutingDictionaryRecord {
 
   @JsonProperty(JSON_PROPERTY_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setId(String id) {
+  public void setId(@javax.annotation.Nonnull String id) {
     this.id = id;
   }
 
-
-  public RoutingDictionaryRecord profileId(String profileId) {
+  public RoutingDictionaryRecord profileId(@javax.annotation.Nonnull String profileId) {
     
     this.profileId = profileId;
     return this;
   }
 
-   /**
+  /**
    * Get profileId
    * @return profileId
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_PROFILE_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -121,21 +128,20 @@ public class RoutingDictionaryRecord {
 
   @JsonProperty(JSON_PROPERTY_PROFILE_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setProfileId(String profileId) {
+  public void setProfileId(@javax.annotation.Nonnull String profileId) {
     this.profileId = profileId;
   }
 
-
-  public RoutingDictionaryRecord name(String name) {
+  public RoutingDictionaryRecord name(@javax.annotation.Nonnull String name) {
     
     this.name = name;
     return this;
   }
 
-   /**
+  /**
    * Get name
    * @return name
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_NAME)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -147,21 +153,20 @@ public class RoutingDictionaryRecord {
 
   @JsonProperty(JSON_PROPERTY_NAME)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setName(String name) {
+  public void setName(@javax.annotation.Nonnull String name) {
     this.name = name;
   }
 
-
-  public RoutingDictionaryRecord kind(RoutingAlgorithmKind kind) {
+  public RoutingDictionaryRecord kind(@javax.annotation.Nonnull RoutingAlgorithmKind kind) {
     
     this.kind = kind;
     return this;
   }
 
-   /**
+  /**
    * Get kind
    * @return kind
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_KIND)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -173,21 +178,20 @@ public class RoutingDictionaryRecord {
 
   @JsonProperty(JSON_PROPERTY_KIND)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setKind(RoutingAlgorithmKind kind) {
+  public void setKind(@javax.annotation.Nonnull RoutingAlgorithmKind kind) {
     this.kind = kind;
   }
 
-
-  public RoutingDictionaryRecord description(String description) {
+  public RoutingDictionaryRecord description(@javax.annotation.Nonnull String description) {
     
     this.description = description;
     return this;
   }
 
-   /**
+  /**
    * Get description
    * @return description
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_DESCRIPTION)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -199,21 +203,20 @@ public class RoutingDictionaryRecord {
 
   @JsonProperty(JSON_PROPERTY_DESCRIPTION)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setDescription(String description) {
+  public void setDescription(@javax.annotation.Nonnull String description) {
     this.description = description;
   }
 
-
-  public RoutingDictionaryRecord createdAt(Long createdAt) {
+  public RoutingDictionaryRecord createdAt(@javax.annotation.Nonnull Long createdAt) {
     
     this.createdAt = createdAt;
     return this;
   }
 
-   /**
+  /**
    * Get createdAt
    * @return createdAt
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_CREATED_AT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -225,21 +228,20 @@ public class RoutingDictionaryRecord {
 
   @JsonProperty(JSON_PROPERTY_CREATED_AT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setCreatedAt(Long createdAt) {
+  public void setCreatedAt(@javax.annotation.Nonnull Long createdAt) {
     this.createdAt = createdAt;
   }
 
-
-  public RoutingDictionaryRecord modifiedAt(Long modifiedAt) {
+  public RoutingDictionaryRecord modifiedAt(@javax.annotation.Nonnull Long modifiedAt) {
     
     this.modifiedAt = modifiedAt;
     return this;
   }
 
-   /**
+  /**
    * Get modifiedAt
    * @return modifiedAt
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_MODIFIED_AT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -251,21 +253,20 @@ public class RoutingDictionaryRecord {
 
   @JsonProperty(JSON_PROPERTY_MODIFIED_AT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setModifiedAt(Long modifiedAt) {
+  public void setModifiedAt(@javax.annotation.Nonnull Long modifiedAt) {
     this.modifiedAt = modifiedAt;
   }
 
-
-  public RoutingDictionaryRecord algorithmFor(TransactionType algorithmFor) {
+  public RoutingDictionaryRecord algorithmFor(@javax.annotation.Nullable TransactionType algorithmFor) {
     this.algorithmFor = JsonNullable.<TransactionType>of(algorithmFor);
     
     return this;
   }
 
-   /**
+  /**
    * Get algorithmFor
    * @return algorithmFor
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -285,7 +286,7 @@ public class RoutingDictionaryRecord {
     this.algorithmFor = algorithmFor;
   }
 
-  public void setAlgorithmFor(TransactionType algorithmFor) {
+  public void setAlgorithmFor(@javax.annotation.Nullable TransactionType algorithmFor) {
     this.algorithmFor = JsonNullable.<TransactionType>of(algorithmFor);
   }
 

@@ -33,27 +33,29 @@ import java.util.StringJoiner;
   KlarnaSessionTokenResponse.JSON_PROPERTY_SESSION_TOKEN,
   KlarnaSessionTokenResponse.JSON_PROPERTY_SESSION_ID
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class KlarnaSessionTokenResponse {
   public static final String JSON_PROPERTY_SESSION_TOKEN = "session_token";
+  @javax.annotation.Nonnull
   private String sessionToken;
 
   public static final String JSON_PROPERTY_SESSION_ID = "session_id";
+  @javax.annotation.Nonnull
   private String sessionId;
 
   public KlarnaSessionTokenResponse() {
   }
 
-  public KlarnaSessionTokenResponse sessionToken(String sessionToken) {
+  public KlarnaSessionTokenResponse sessionToken(@javax.annotation.Nonnull String sessionToken) {
     
     this.sessionToken = sessionToken;
     return this;
   }
 
-   /**
+  /**
    * The session token for Klarna
    * @return sessionToken
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_SESSION_TOKEN)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -65,21 +67,20 @@ public class KlarnaSessionTokenResponse {
 
   @JsonProperty(JSON_PROPERTY_SESSION_TOKEN)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setSessionToken(String sessionToken) {
+  public void setSessionToken(@javax.annotation.Nonnull String sessionToken) {
     this.sessionToken = sessionToken;
   }
 
-
-  public KlarnaSessionTokenResponse sessionId(String sessionId) {
+  public KlarnaSessionTokenResponse sessionId(@javax.annotation.Nonnull String sessionId) {
     
     this.sessionId = sessionId;
     return this;
   }
 
-   /**
+  /**
    * The identifier for the session
    * @return sessionId
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_SESSION_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -91,7 +92,7 @@ public class KlarnaSessionTokenResponse {
 
   @JsonProperty(JSON_PROPERTY_SESSION_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setSessionId(String sessionId) {
+  public void setSessionId(@javax.annotation.Nonnull String sessionId) {
     this.sessionId = sessionId;
   }
 

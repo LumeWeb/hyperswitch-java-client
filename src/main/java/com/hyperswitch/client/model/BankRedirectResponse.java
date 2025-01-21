@@ -38,38 +38,117 @@ import java.util.StringJoiner;
  * BankRedirectResponse
  */
 @JsonPropertyOrder({
-  BankRedirectResponse.JSON_PROPERTY_BANK_NAME,
   BankRedirectResponse.JSON_PROPERTY_BANCONTACT_CARD,
   BankRedirectResponse.JSON_PROPERTY_BLIK,
-  BankRedirectResponse.JSON_PROPERTY_GIROPAY
+  BankRedirectResponse.JSON_PROPERTY_GIROPAY,
+  BankRedirectResponse.JSON_PROPERTY_BANK_NAME
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class BankRedirectResponse {
-  public static final String JSON_PROPERTY_BANK_NAME = "bank_name";
-  private JsonNullable<BankNames> bankName = JsonNullable.<BankNames>undefined();
-
   public static final String JSON_PROPERTY_BANCONTACT_CARD = "BancontactCard";
+  @javax.annotation.Nonnull
   private BancontactBankRedirectAdditionalData bancontactCard;
 
   public static final String JSON_PROPERTY_BLIK = "Blik";
+  @javax.annotation.Nonnull
   private BlikBankRedirectAdditionalData blik;
 
   public static final String JSON_PROPERTY_GIROPAY = "Giropay";
+  @javax.annotation.Nonnull
   private GiropayBankRedirectAdditionalData giropay;
+
+  public static final String JSON_PROPERTY_BANK_NAME = "bank_name";
+  @javax.annotation.Nullable
+  private JsonNullable<BankNames> bankName = JsonNullable.<BankNames>undefined();
 
   public BankRedirectResponse() {
   }
 
-  public BankRedirectResponse bankName(BankNames bankName) {
+  public BankRedirectResponse bancontactCard(@javax.annotation.Nonnull BancontactBankRedirectAdditionalData bancontactCard) {
+    
+    this.bancontactCard = bancontactCard;
+    return this;
+  }
+
+  /**
+   * Get bancontactCard
+   * @return bancontactCard
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_BANCONTACT_CARD)
+  @JsonInclude(value = JsonInclude.Include.ALWAYS)
+
+  public BancontactBankRedirectAdditionalData getBancontactCard() {
+    return bancontactCard;
+  }
+
+
+  @JsonProperty(JSON_PROPERTY_BANCONTACT_CARD)
+  @JsonInclude(value = JsonInclude.Include.ALWAYS)
+  public void setBancontactCard(@javax.annotation.Nonnull BancontactBankRedirectAdditionalData bancontactCard) {
+    this.bancontactCard = bancontactCard;
+  }
+
+  public BankRedirectResponse blik(@javax.annotation.Nonnull BlikBankRedirectAdditionalData blik) {
+    
+    this.blik = blik;
+    return this;
+  }
+
+  /**
+   * Get blik
+   * @return blik
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_BLIK)
+  @JsonInclude(value = JsonInclude.Include.ALWAYS)
+
+  public BlikBankRedirectAdditionalData getBlik() {
+    return blik;
+  }
+
+
+  @JsonProperty(JSON_PROPERTY_BLIK)
+  @JsonInclude(value = JsonInclude.Include.ALWAYS)
+  public void setBlik(@javax.annotation.Nonnull BlikBankRedirectAdditionalData blik) {
+    this.blik = blik;
+  }
+
+  public BankRedirectResponse giropay(@javax.annotation.Nonnull GiropayBankRedirectAdditionalData giropay) {
+    
+    this.giropay = giropay;
+    return this;
+  }
+
+  /**
+   * Get giropay
+   * @return giropay
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_GIROPAY)
+  @JsonInclude(value = JsonInclude.Include.ALWAYS)
+
+  public GiropayBankRedirectAdditionalData getGiropay() {
+    return giropay;
+  }
+
+
+  @JsonProperty(JSON_PROPERTY_GIROPAY)
+  @JsonInclude(value = JsonInclude.Include.ALWAYS)
+  public void setGiropay(@javax.annotation.Nonnull GiropayBankRedirectAdditionalData giropay) {
+    this.giropay = giropay;
+  }
+
+  public BankRedirectResponse bankName(@javax.annotation.Nullable BankNames bankName) {
     this.bankName = JsonNullable.<BankNames>of(bankName);
     
     return this;
   }
 
-   /**
+  /**
    * Get bankName
    * @return bankName
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -89,86 +168,8 @@ public class BankRedirectResponse {
     this.bankName = bankName;
   }
 
-  public void setBankName(BankNames bankName) {
+  public void setBankName(@javax.annotation.Nullable BankNames bankName) {
     this.bankName = JsonNullable.<BankNames>of(bankName);
-  }
-
-
-  public BankRedirectResponse bancontactCard(BancontactBankRedirectAdditionalData bancontactCard) {
-    
-    this.bancontactCard = bancontactCard;
-    return this;
-  }
-
-   /**
-   * Get bancontactCard
-   * @return bancontactCard
-  **/
-  @javax.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_BANCONTACT_CARD)
-  @JsonInclude(value = JsonInclude.Include.ALWAYS)
-
-  public BancontactBankRedirectAdditionalData getBancontactCard() {
-    return bancontactCard;
-  }
-
-
-  @JsonProperty(JSON_PROPERTY_BANCONTACT_CARD)
-  @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setBancontactCard(BancontactBankRedirectAdditionalData bancontactCard) {
-    this.bancontactCard = bancontactCard;
-  }
-
-
-  public BankRedirectResponse blik(BlikBankRedirectAdditionalData blik) {
-    
-    this.blik = blik;
-    return this;
-  }
-
-   /**
-   * Get blik
-   * @return blik
-  **/
-  @javax.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_BLIK)
-  @JsonInclude(value = JsonInclude.Include.ALWAYS)
-
-  public BlikBankRedirectAdditionalData getBlik() {
-    return blik;
-  }
-
-
-  @JsonProperty(JSON_PROPERTY_BLIK)
-  @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setBlik(BlikBankRedirectAdditionalData blik) {
-    this.blik = blik;
-  }
-
-
-  public BankRedirectResponse giropay(GiropayBankRedirectAdditionalData giropay) {
-    
-    this.giropay = giropay;
-    return this;
-  }
-
-   /**
-   * Get giropay
-   * @return giropay
-  **/
-  @javax.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_GIROPAY)
-  @JsonInclude(value = JsonInclude.Include.ALWAYS)
-
-  public GiropayBankRedirectAdditionalData getGiropay() {
-    return giropay;
-  }
-
-
-  @JsonProperty(JSON_PROPERTY_GIROPAY)
-  @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setGiropay(GiropayBankRedirectAdditionalData giropay) {
-    this.giropay = giropay;
   }
 
   @Override
@@ -180,10 +181,10 @@ public class BankRedirectResponse {
       return false;
     }
     BankRedirectResponse bankRedirectResponse = (BankRedirectResponse) o;
-    return equalsNullable(this.bankName, bankRedirectResponse.bankName) &&
-        Objects.equals(this.bancontactCard, bankRedirectResponse.bancontactCard) &&
+    return Objects.equals(this.bancontactCard, bankRedirectResponse.bancontactCard) &&
         Objects.equals(this.blik, bankRedirectResponse.blik) &&
-        Objects.equals(this.giropay, bankRedirectResponse.giropay);
+        Objects.equals(this.giropay, bankRedirectResponse.giropay) &&
+        equalsNullable(this.bankName, bankRedirectResponse.bankName);
   }
 
   private static <T> boolean equalsNullable(JsonNullable<T> a, JsonNullable<T> b) {
@@ -192,7 +193,7 @@ public class BankRedirectResponse {
 
   @Override
   public int hashCode() {
-    return Objects.hash(hashCodeNullable(bankName), bancontactCard, blik, giropay);
+    return Objects.hash(bancontactCard, blik, giropay, hashCodeNullable(bankName));
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -206,10 +207,10 @@ public class BankRedirectResponse {
   public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class BankRedirectResponse {\n");
-    sb.append("    bankName: ").append(toIndentedString(bankName)).append("\n");
     sb.append("    bancontactCard: ").append(toIndentedString(bancontactCard)).append("\n");
     sb.append("    blik: ").append(toIndentedString(blik)).append("\n");
     sb.append("    giropay: ").append(toIndentedString(giropay)).append("\n");
+    sb.append("    bankName: ").append(toIndentedString(bankName)).append("\n");
     sb.append("}");
     return sb.toString();
   }
@@ -257,16 +258,6 @@ public class BankRedirectResponse {
 
     StringJoiner joiner = new StringJoiner("&");
 
-    // add `bank_name` to the URL query string
-    if (getBankName() != null) {
-      try {
-        joiner.add(String.format("%sbank_name%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getBankName()), "UTF-8").replaceAll("\\+", "%20")));
-      } catch (UnsupportedEncodingException e) {
-        // Should never happen, UTF-8 is always supported
-        throw new RuntimeException(e);
-      }
-    }
-
     // add `BancontactCard` to the URL query string
     if (getBancontactCard() != null) {
       joiner.add(getBancontactCard().toUrlQueryString(prefix + "BancontactCard" + suffix));
@@ -280,6 +271,16 @@ public class BankRedirectResponse {
     // add `Giropay` to the URL query string
     if (getGiropay() != null) {
       joiner.add(getGiropay().toUrlQueryString(prefix + "Giropay" + suffix));
+    }
+
+    // add `bank_name` to the URL query string
+    if (getBankName() != null) {
+      try {
+        joiner.add(String.format("%sbank_name%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getBankName()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
     }
 
     return joiner.toString();

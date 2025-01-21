@@ -34,24 +34,25 @@ import java.util.StringJoiner;
   AdditionalMerchantDataOneOf.JSON_PROPERTY_OPEN_BANKING_RECIPIENT_DATA
 })
 @JsonTypeName("AdditionalMerchantData_oneOf")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class AdditionalMerchantDataOneOf {
   public static final String JSON_PROPERTY_OPEN_BANKING_RECIPIENT_DATA = "open_banking_recipient_data";
+  @javax.annotation.Nonnull
   private MerchantRecipientData openBankingRecipientData;
 
   public AdditionalMerchantDataOneOf() {
   }
 
-  public AdditionalMerchantDataOneOf openBankingRecipientData(MerchantRecipientData openBankingRecipientData) {
+  public AdditionalMerchantDataOneOf openBankingRecipientData(@javax.annotation.Nonnull MerchantRecipientData openBankingRecipientData) {
     
     this.openBankingRecipientData = openBankingRecipientData;
     return this;
   }
 
-   /**
+  /**
    * Get openBankingRecipientData
    * @return openBankingRecipientData
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_OPEN_BANKING_RECIPIENT_DATA)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -63,7 +64,7 @@ public class AdditionalMerchantDataOneOf {
 
   @JsonProperty(JSON_PROPERTY_OPEN_BANKING_RECIPIENT_DATA)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setOpenBankingRecipientData(MerchantRecipientData openBankingRecipientData) {
+  public void setOpenBankingRecipientData(@javax.annotation.Nonnull MerchantRecipientData openBankingRecipientData) {
     this.openBankingRecipientData = openBankingRecipientData;
   }
 

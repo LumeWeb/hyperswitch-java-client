@@ -34,27 +34,29 @@ import java.util.StringJoiner;
   PrimaryBusinessDetails.JSON_PROPERTY_COUNTRY,
   PrimaryBusinessDetails.JSON_PROPERTY_BUSINESS
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class PrimaryBusinessDetails {
   public static final String JSON_PROPERTY_COUNTRY = "country";
+  @javax.annotation.Nonnull
   private CountryAlpha2 country;
 
   public static final String JSON_PROPERTY_BUSINESS = "business";
+  @javax.annotation.Nonnull
   private String business;
 
   public PrimaryBusinessDetails() {
   }
 
-  public PrimaryBusinessDetails country(CountryAlpha2 country) {
+  public PrimaryBusinessDetails country(@javax.annotation.Nonnull CountryAlpha2 country) {
     
     this.country = country;
     return this;
   }
 
-   /**
+  /**
    * Get country
    * @return country
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_COUNTRY)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -66,21 +68,20 @@ public class PrimaryBusinessDetails {
 
   @JsonProperty(JSON_PROPERTY_COUNTRY)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setCountry(CountryAlpha2 country) {
+  public void setCountry(@javax.annotation.Nonnull CountryAlpha2 country) {
     this.country = country;
   }
 
-
-  public PrimaryBusinessDetails business(String business) {
+  public PrimaryBusinessDetails business(@javax.annotation.Nonnull String business) {
     
     this.business = business;
     return this;
   }
 
-   /**
+  /**
    * Get business
    * @return business
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_BUSINESS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -92,7 +93,7 @@ public class PrimaryBusinessDetails {
 
   @JsonProperty(JSON_PROPERTY_BUSINESS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setBusiness(String business) {
+  public void setBusiness(@javax.annotation.Nonnull String business) {
     this.business = business;
   }
 

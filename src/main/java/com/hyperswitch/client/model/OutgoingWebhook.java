@@ -39,36 +39,41 @@ import java.util.StringJoiner;
   OutgoingWebhook.JSON_PROPERTY_CONTENT,
   OutgoingWebhook.JSON_PROPERTY_TIMESTAMP
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class OutgoingWebhook {
   public static final String JSON_PROPERTY_MERCHANT_ID = "merchant_id";
+  @javax.annotation.Nonnull
   private String merchantId;
 
   public static final String JSON_PROPERTY_EVENT_ID = "event_id";
+  @javax.annotation.Nonnull
   private String eventId;
 
   public static final String JSON_PROPERTY_EVENT_TYPE = "event_type";
+  @javax.annotation.Nonnull
   private EventType eventType;
 
   public static final String JSON_PROPERTY_CONTENT = "content";
+  @javax.annotation.Nonnull
   private OutgoingWebhookContent content;
 
   public static final String JSON_PROPERTY_TIMESTAMP = "timestamp";
+  @javax.annotation.Nullable
   private OffsetDateTime timestamp;
 
   public OutgoingWebhook() {
   }
 
-  public OutgoingWebhook merchantId(String merchantId) {
+  public OutgoingWebhook merchantId(@javax.annotation.Nonnull String merchantId) {
     
     this.merchantId = merchantId;
     return this;
   }
 
-   /**
+  /**
    * The merchant id of the merchant
    * @return merchantId
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_MERCHANT_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -80,21 +85,20 @@ public class OutgoingWebhook {
 
   @JsonProperty(JSON_PROPERTY_MERCHANT_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setMerchantId(String merchantId) {
+  public void setMerchantId(@javax.annotation.Nonnull String merchantId) {
     this.merchantId = merchantId;
   }
 
-
-  public OutgoingWebhook eventId(String eventId) {
+  public OutgoingWebhook eventId(@javax.annotation.Nonnull String eventId) {
     
     this.eventId = eventId;
     return this;
   }
 
-   /**
+  /**
    * The unique event id for each webhook
    * @return eventId
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_EVENT_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -106,21 +110,20 @@ public class OutgoingWebhook {
 
   @JsonProperty(JSON_PROPERTY_EVENT_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setEventId(String eventId) {
+  public void setEventId(@javax.annotation.Nonnull String eventId) {
     this.eventId = eventId;
   }
 
-
-  public OutgoingWebhook eventType(EventType eventType) {
+  public OutgoingWebhook eventType(@javax.annotation.Nonnull EventType eventType) {
     
     this.eventType = eventType;
     return this;
   }
 
-   /**
+  /**
    * Get eventType
    * @return eventType
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_EVENT_TYPE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -132,21 +135,20 @@ public class OutgoingWebhook {
 
   @JsonProperty(JSON_PROPERTY_EVENT_TYPE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setEventType(EventType eventType) {
+  public void setEventType(@javax.annotation.Nonnull EventType eventType) {
     this.eventType = eventType;
   }
 
-
-  public OutgoingWebhook content(OutgoingWebhookContent content) {
+  public OutgoingWebhook content(@javax.annotation.Nonnull OutgoingWebhookContent content) {
     
     this.content = content;
     return this;
   }
 
-   /**
+  /**
    * Get content
    * @return content
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_CONTENT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -158,21 +160,20 @@ public class OutgoingWebhook {
 
   @JsonProperty(JSON_PROPERTY_CONTENT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setContent(OutgoingWebhookContent content) {
+  public void setContent(@javax.annotation.Nonnull OutgoingWebhookContent content) {
     this.content = content;
   }
 
-
-  public OutgoingWebhook timestamp(OffsetDateTime timestamp) {
+  public OutgoingWebhook timestamp(@javax.annotation.Nullable OffsetDateTime timestamp) {
     
     this.timestamp = timestamp;
     return this;
   }
 
-   /**
+  /**
    * The time at which webhook was sent
    * @return timestamp
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_TIMESTAMP)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -184,7 +185,7 @@ public class OutgoingWebhook {
 
   @JsonProperty(JSON_PROPERTY_TIMESTAMP)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setTimestamp(OffsetDateTime timestamp) {
+  public void setTimestamp(@javax.annotation.Nullable OffsetDateTime timestamp) {
     this.timestamp = timestamp;
   }
 

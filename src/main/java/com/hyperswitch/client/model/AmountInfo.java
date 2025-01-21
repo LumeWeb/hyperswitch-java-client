@@ -38,30 +38,33 @@ import java.util.StringJoiner;
   AmountInfo.JSON_PROPERTY_TYPE,
   AmountInfo.JSON_PROPERTY_AMOUNT
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class AmountInfo {
   public static final String JSON_PROPERTY_LABEL = "label";
+  @javax.annotation.Nonnull
   private String label;
 
   public static final String JSON_PROPERTY_TYPE = "type";
+  @javax.annotation.Nullable
   private JsonNullable<String> type = JsonNullable.<String>undefined();
 
   public static final String JSON_PROPERTY_AMOUNT = "amount";
+  @javax.annotation.Nonnull
   private String amount;
 
   public AmountInfo() {
   }
 
-  public AmountInfo label(String label) {
+  public AmountInfo label(@javax.annotation.Nonnull String label) {
     
     this.label = label;
     return this;
   }
 
-   /**
+  /**
    * The label must be the name of the merchant.
    * @return label
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_LABEL)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -73,21 +76,20 @@ public class AmountInfo {
 
   @JsonProperty(JSON_PROPERTY_LABEL)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setLabel(String label) {
+  public void setLabel(@javax.annotation.Nonnull String label) {
     this.label = label;
   }
 
-
-  public AmountInfo type(String type) {
+  public AmountInfo type(@javax.annotation.Nullable String type) {
     this.type = JsonNullable.<String>of(type);
     
     return this;
   }
 
-   /**
+  /**
    * A value that indicates whether the line item(Ex: total, tax, discount, or grand total) is final or pending.
    * @return type
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -107,21 +109,20 @@ public class AmountInfo {
     this.type = type;
   }
 
-  public void setType(String type) {
+  public void setType(@javax.annotation.Nullable String type) {
     this.type = JsonNullable.<String>of(type);
   }
 
-
-  public AmountInfo amount(String amount) {
+  public AmountInfo amount(@javax.annotation.Nonnull String amount) {
     
     this.amount = amount;
     return this;
   }
 
-   /**
+  /**
    * The total amount for the payment in majot unit string (Ex: 38.02)
    * @return amount
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_AMOUNT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -133,7 +134,7 @@ public class AmountInfo {
 
   @JsonProperty(JSON_PROPERTY_AMOUNT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setAmount(String amount) {
+  public void setAmount(@javax.annotation.Nonnull String amount) {
     this.amount = amount;
   }
 

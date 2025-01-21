@@ -34,30 +34,33 @@ import java.util.StringJoiner;
   RevokeApiKeyResponse.JSON_PROPERTY_KEY_ID,
   RevokeApiKeyResponse.JSON_PROPERTY_REVOKED
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class RevokeApiKeyResponse {
   public static final String JSON_PROPERTY_MERCHANT_ID = "merchant_id";
+  @javax.annotation.Nonnull
   private String merchantId;
 
   public static final String JSON_PROPERTY_KEY_ID = "key_id";
+  @javax.annotation.Nonnull
   private String keyId;
 
   public static final String JSON_PROPERTY_REVOKED = "revoked";
+  @javax.annotation.Nonnull
   private Boolean revoked;
 
   public RevokeApiKeyResponse() {
   }
 
-  public RevokeApiKeyResponse merchantId(String merchantId) {
+  public RevokeApiKeyResponse merchantId(@javax.annotation.Nonnull String merchantId) {
     
     this.merchantId = merchantId;
     return this;
   }
 
-   /**
+  /**
    * The identifier for the Merchant Account.
    * @return merchantId
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_MERCHANT_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -69,21 +72,20 @@ public class RevokeApiKeyResponse {
 
   @JsonProperty(JSON_PROPERTY_MERCHANT_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setMerchantId(String merchantId) {
+  public void setMerchantId(@javax.annotation.Nonnull String merchantId) {
     this.merchantId = merchantId;
   }
 
-
-  public RevokeApiKeyResponse keyId(String keyId) {
+  public RevokeApiKeyResponse keyId(@javax.annotation.Nonnull String keyId) {
     
     this.keyId = keyId;
     return this;
   }
 
-   /**
+  /**
    * The identifier for the API Key.
    * @return keyId
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_KEY_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -95,21 +97,20 @@ public class RevokeApiKeyResponse {
 
   @JsonProperty(JSON_PROPERTY_KEY_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setKeyId(String keyId) {
+  public void setKeyId(@javax.annotation.Nonnull String keyId) {
     this.keyId = keyId;
   }
 
-
-  public RevokeApiKeyResponse revoked(Boolean revoked) {
+  public RevokeApiKeyResponse revoked(@javax.annotation.Nonnull Boolean revoked) {
     
     this.revoked = revoked;
     return this;
   }
 
-   /**
+  /**
    * Indicates whether the API key was revoked or not.
    * @return revoked
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_REVOKED)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -121,7 +122,7 @@ public class RevokeApiKeyResponse {
 
   @JsonProperty(JSON_PROPERTY_REVOKED)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setRevoked(Boolean revoked) {
+  public void setRevoked(@javax.annotation.Nonnull Boolean revoked) {
     this.revoked = revoked;
   }
 

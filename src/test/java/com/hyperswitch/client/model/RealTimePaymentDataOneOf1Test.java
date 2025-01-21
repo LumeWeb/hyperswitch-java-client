@@ -18,22 +18,21 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonTypeName;
 import com.fasterxml.jackson.annotation.JsonValue;
-import org.junit.Assert;
-import org.junit.Ignore;
-import org.junit.Test;
-
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Test;
 
 /**
  * Model tests for RealTimePaymentDataOneOf1
  */
-public class RealTimePaymentDataOneOf1Test {
+class RealTimePaymentDataOneOf1Test {
     private final RealTimePaymentDataOneOf1 model = new RealTimePaymentDataOneOf1();
 
     /**
      * Model tests for RealTimePaymentDataOneOf1
      */
     @Test
-    public void testRealTimePaymentDataOneOf1() {
+    void testRealTimePaymentDataOneOf1() {
         // TODO: test RealTimePaymentDataOneOf1
     }
 
@@ -41,7 +40,7 @@ public class RealTimePaymentDataOneOf1Test {
      * Test the property 'duitNow'
      */
     @Test
-    public void duitNowTest() {
+    void duitNowTest() {
         // TODO: test duitNow
     }
 

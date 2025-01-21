@@ -18,22 +18,21 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonTypeName;
 import com.fasterxml.jackson.annotation.JsonValue;
-import org.junit.Assert;
-import org.junit.Ignore;
-import org.junit.Test;
-
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Test;
 
 /**
  * Model tests for PaymentProcessingDetailsAtOneOf
  */
-public class PaymentProcessingDetailsAtOneOfTest {
+class PaymentProcessingDetailsAtOneOfTest {
     private final PaymentProcessingDetailsAtOneOf model = new PaymentProcessingDetailsAtOneOf();
 
     /**
      * Model tests for PaymentProcessingDetailsAtOneOf
      */
     @Test
-    public void testPaymentProcessingDetailsAtOneOf() {
+    void testPaymentProcessingDetailsAtOneOf() {
         // TODO: test PaymentProcessingDetailsAtOneOf
     }
 
@@ -41,7 +40,7 @@ public class PaymentProcessingDetailsAtOneOfTest {
      * Test the property 'paymentProcessingCertificate'
      */
     @Test
-    public void paymentProcessingCertificateTest() {
+    void paymentProcessingCertificateTest() {
         // TODO: test paymentProcessingCertificate
     }
 
@@ -49,7 +48,7 @@ public class PaymentProcessingDetailsAtOneOfTest {
      * Test the property 'paymentProcessingCertificateKey'
      */
     @Test
-    public void paymentProcessingCertificateKeyTest() {
+    void paymentProcessingCertificateKeyTest() {
         // TODO: test paymentProcessingCertificateKey
     }
 
@@ -57,7 +56,7 @@ public class PaymentProcessingDetailsAtOneOfTest {
      * Test the property 'paymentProcessingDetailsAt'
      */
     @Test
-    public void paymentProcessingDetailsAtTest() {
+    void paymentProcessingDetailsAtTest() {
         // TODO: test paymentProcessingDetailsAt
     }
 

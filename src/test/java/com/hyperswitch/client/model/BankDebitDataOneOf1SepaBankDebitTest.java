@@ -23,22 +23,21 @@ import org.openapitools.jackson.nullable.JsonNullable;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.openapitools.jackson.nullable.JsonNullable;
 import java.util.NoSuchElementException;
-import org.junit.Assert;
-import org.junit.Ignore;
-import org.junit.Test;
-
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Test;
 
 /**
  * Model tests for BankDebitDataOneOf1SepaBankDebit
  */
-public class BankDebitDataOneOf1SepaBankDebitTest {
+class BankDebitDataOneOf1SepaBankDebitTest {
     private final BankDebitDataOneOf1SepaBankDebit model = new BankDebitDataOneOf1SepaBankDebit();
 
     /**
      * Model tests for BankDebitDataOneOf1SepaBankDebit
      */
     @Test
-    public void testBankDebitDataOneOf1SepaBankDebit() {
+    void testBankDebitDataOneOf1SepaBankDebit() {
         // TODO: test BankDebitDataOneOf1SepaBankDebit
     }
 
@@ -46,7 +45,7 @@ public class BankDebitDataOneOf1SepaBankDebitTest {
      * Test the property 'billingDetails'
      */
     @Test
-    public void billingDetailsTest() {
+    void billingDetailsTest() {
         // TODO: test billingDetails
     }
 
@@ -54,7 +53,7 @@ public class BankDebitDataOneOf1SepaBankDebitTest {
      * Test the property 'iban'
      */
     @Test
-    public void ibanTest() {
+    void ibanTest() {
         // TODO: test iban
     }
 
@@ -62,7 +61,7 @@ public class BankDebitDataOneOf1SepaBankDebitTest {
      * Test the property 'bankAccountHolderName'
      */
     @Test
-    public void bankAccountHolderNameTest() {
+    void bankAccountHolderNameTest() {
         // TODO: test bankAccountHolderName
     }
 

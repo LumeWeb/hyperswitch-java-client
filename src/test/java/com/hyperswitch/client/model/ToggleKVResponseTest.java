@@ -18,22 +18,21 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonTypeName;
 import com.fasterxml.jackson.annotation.JsonValue;
-import org.junit.Assert;
-import org.junit.Ignore;
-import org.junit.Test;
-
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Test;
 
 /**
  * Model tests for ToggleKVResponse
  */
-public class ToggleKVResponseTest {
+class ToggleKVResponseTest {
     private final ToggleKVResponse model = new ToggleKVResponse();
 
     /**
      * Model tests for ToggleKVResponse
      */
     @Test
-    public void testToggleKVResponse() {
+    void testToggleKVResponse() {
         // TODO: test ToggleKVResponse
     }
 
@@ -41,7 +40,7 @@ public class ToggleKVResponseTest {
      * Test the property 'merchantId'
      */
     @Test
-    public void merchantIdTest() {
+    void merchantIdTest() {
         // TODO: test merchantId
     }
 
@@ -49,7 +48,7 @@ public class ToggleKVResponseTest {
      * Test the property 'kvEnabled'
      */
     @Test
-    public void kvEnabledTest() {
+    void kvEnabledTest() {
         // TODO: test kvEnabled
     }
 

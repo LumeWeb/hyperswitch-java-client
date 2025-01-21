@@ -41,36 +41,41 @@ import java.util.StringJoiner;
   PaymentsDynamicTaxCalculationResponse.JSON_PROPERTY_SHIPPING_COST,
   PaymentsDynamicTaxCalculationResponse.JSON_PROPERTY_DISPLAY_AMOUNT
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class PaymentsDynamicTaxCalculationResponse {
   public static final String JSON_PROPERTY_PAYMENT_ID = "payment_id";
+  @javax.annotation.Nonnull
   private String paymentId;
 
   public static final String JSON_PROPERTY_NET_AMOUNT = "net_amount";
+  @javax.annotation.Nonnull
   private Long netAmount;
 
   public static final String JSON_PROPERTY_ORDER_TAX_AMOUNT = "order_tax_amount";
+  @javax.annotation.Nullable
   private JsonNullable<Long> orderTaxAmount = JsonNullable.<Long>undefined();
 
   public static final String JSON_PROPERTY_SHIPPING_COST = "shipping_cost";
+  @javax.annotation.Nullable
   private JsonNullable<Long> shippingCost = JsonNullable.<Long>undefined();
 
   public static final String JSON_PROPERTY_DISPLAY_AMOUNT = "display_amount";
+  @javax.annotation.Nonnull
   private DisplayAmountOnSdk displayAmount;
 
   public PaymentsDynamicTaxCalculationResponse() {
   }
 
-  public PaymentsDynamicTaxCalculationResponse paymentId(String paymentId) {
+  public PaymentsDynamicTaxCalculationResponse paymentId(@javax.annotation.Nonnull String paymentId) {
     
     this.paymentId = paymentId;
     return this;
   }
 
-   /**
+  /**
    * The identifier for the payment
    * @return paymentId
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_PAYMENT_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -82,21 +87,20 @@ public class PaymentsDynamicTaxCalculationResponse {
 
   @JsonProperty(JSON_PROPERTY_PAYMENT_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setPaymentId(String paymentId) {
+  public void setPaymentId(@javax.annotation.Nonnull String paymentId) {
     this.paymentId = paymentId;
   }
 
-
-  public PaymentsDynamicTaxCalculationResponse netAmount(Long netAmount) {
+  public PaymentsDynamicTaxCalculationResponse netAmount(@javax.annotation.Nonnull Long netAmount) {
     
     this.netAmount = netAmount;
     return this;
   }
 
-   /**
+  /**
    * This Unit struct represents MinorUnit in which core amount works
    * @return netAmount
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_NET_AMOUNT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -108,21 +112,20 @@ public class PaymentsDynamicTaxCalculationResponse {
 
   @JsonProperty(JSON_PROPERTY_NET_AMOUNT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setNetAmount(Long netAmount) {
+  public void setNetAmount(@javax.annotation.Nonnull Long netAmount) {
     this.netAmount = netAmount;
   }
 
-
-  public PaymentsDynamicTaxCalculationResponse orderTaxAmount(Long orderTaxAmount) {
+  public PaymentsDynamicTaxCalculationResponse orderTaxAmount(@javax.annotation.Nullable Long orderTaxAmount) {
     this.orderTaxAmount = JsonNullable.<Long>of(orderTaxAmount);
     
     return this;
   }
 
-   /**
+  /**
    * This Unit struct represents MinorUnit in which core amount works
    * @return orderTaxAmount
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -142,21 +145,20 @@ public class PaymentsDynamicTaxCalculationResponse {
     this.orderTaxAmount = orderTaxAmount;
   }
 
-  public void setOrderTaxAmount(Long orderTaxAmount) {
+  public void setOrderTaxAmount(@javax.annotation.Nullable Long orderTaxAmount) {
     this.orderTaxAmount = JsonNullable.<Long>of(orderTaxAmount);
   }
 
-
-  public PaymentsDynamicTaxCalculationResponse shippingCost(Long shippingCost) {
+  public PaymentsDynamicTaxCalculationResponse shippingCost(@javax.annotation.Nullable Long shippingCost) {
     this.shippingCost = JsonNullable.<Long>of(shippingCost);
     
     return this;
   }
 
-   /**
+  /**
    * This Unit struct represents MinorUnit in which core amount works
    * @return shippingCost
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -176,21 +178,20 @@ public class PaymentsDynamicTaxCalculationResponse {
     this.shippingCost = shippingCost;
   }
 
-  public void setShippingCost(Long shippingCost) {
+  public void setShippingCost(@javax.annotation.Nullable Long shippingCost) {
     this.shippingCost = JsonNullable.<Long>of(shippingCost);
   }
 
-
-  public PaymentsDynamicTaxCalculationResponse displayAmount(DisplayAmountOnSdk displayAmount) {
+  public PaymentsDynamicTaxCalculationResponse displayAmount(@javax.annotation.Nonnull DisplayAmountOnSdk displayAmount) {
     
     this.displayAmount = displayAmount;
     return this;
   }
 
-   /**
+  /**
    * Get displayAmount
    * @return displayAmount
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_DISPLAY_AMOUNT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -202,7 +203,7 @@ public class PaymentsDynamicTaxCalculationResponse {
 
   @JsonProperty(JSON_PROPERTY_DISPLAY_AMOUNT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setDisplayAmount(DisplayAmountOnSdk displayAmount) {
+  public void setDisplayAmount(@javax.annotation.Nonnull DisplayAmountOnSdk displayAmount) {
     this.displayAmount = displayAmount;
   }
 

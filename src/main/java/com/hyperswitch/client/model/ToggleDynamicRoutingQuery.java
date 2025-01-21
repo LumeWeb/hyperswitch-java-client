@@ -33,24 +33,25 @@ import java.util.StringJoiner;
 @JsonPropertyOrder({
   ToggleDynamicRoutingQuery.JSON_PROPERTY_ENABLE
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class ToggleDynamicRoutingQuery {
   public static final String JSON_PROPERTY_ENABLE = "enable";
+  @javax.annotation.Nonnull
   private DynamicRoutingFeatures enable;
 
   public ToggleDynamicRoutingQuery() {
   }
 
-  public ToggleDynamicRoutingQuery enable(DynamicRoutingFeatures enable) {
+  public ToggleDynamicRoutingQuery enable(@javax.annotation.Nonnull DynamicRoutingFeatures enable) {
     
     this.enable = enable;
     return this;
   }
 
-   /**
+  /**
    * Get enable
    * @return enable
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_ENABLE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -62,7 +63,7 @@ public class ToggleDynamicRoutingQuery {
 
   @JsonProperty(JSON_PROPERTY_ENABLE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setEnable(DynamicRoutingFeatures enable) {
+  public void setEnable(@javax.annotation.Nonnull DynamicRoutingFeatures enable) {
     this.enable = enable;
   }
 

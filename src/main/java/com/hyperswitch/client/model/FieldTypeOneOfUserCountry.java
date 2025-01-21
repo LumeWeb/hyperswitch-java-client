@@ -21,6 +21,7 @@ import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonTypeName;
 import com.fasterxml.jackson.annotation.JsonValue;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 import com.fasterxml.jackson.annotation.JsonTypeName;
@@ -35,15 +36,16 @@ import java.util.StringJoiner;
   FieldTypeOneOfUserCountry.JSON_PROPERTY_OPTIONS
 })
 @JsonTypeName("FieldType_oneOf_user_country")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class FieldTypeOneOfUserCountry {
   public static final String JSON_PROPERTY_OPTIONS = "options";
+  @javax.annotation.Nonnull
   private List<String> options = new ArrayList<>();
 
   public FieldTypeOneOfUserCountry() {
   }
 
-  public FieldTypeOneOfUserCountry options(List<String> options) {
+  public FieldTypeOneOfUserCountry options(@javax.annotation.Nonnull List<String> options) {
     
     this.options = options;
     return this;
@@ -57,10 +59,10 @@ public class FieldTypeOneOfUserCountry {
     return this;
   }
 
-   /**
+  /**
    * Get options
    * @return options
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_OPTIONS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -72,7 +74,7 @@ public class FieldTypeOneOfUserCountry {
 
   @JsonProperty(JSON_PROPERTY_OPTIONS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setOptions(List<String> options) {
+  public void setOptions(@javax.annotation.Nonnull List<String> options) {
     this.options = options;
   }
 

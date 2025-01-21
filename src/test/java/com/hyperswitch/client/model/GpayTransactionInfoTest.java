@@ -20,22 +20,21 @@ import com.fasterxml.jackson.annotation.JsonTypeName;
 import com.fasterxml.jackson.annotation.JsonValue;
 import com.hyperswitch.client.model.CountryAlpha2;
 import com.hyperswitch.client.model.Currency;
-import org.junit.Assert;
-import org.junit.Ignore;
-import org.junit.Test;
-
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Test;
 
 /**
  * Model tests for GpayTransactionInfo
  */
-public class GpayTransactionInfoTest {
+class GpayTransactionInfoTest {
     private final GpayTransactionInfo model = new GpayTransactionInfo();
 
     /**
      * Model tests for GpayTransactionInfo
      */
     @Test
-    public void testGpayTransactionInfo() {
+    void testGpayTransactionInfo() {
         // TODO: test GpayTransactionInfo
     }
 
@@ -43,7 +42,7 @@ public class GpayTransactionInfoTest {
      * Test the property 'countryCode'
      */
     @Test
-    public void countryCodeTest() {
+    void countryCodeTest() {
         // TODO: test countryCode
     }
 
@@ -51,7 +50,7 @@ public class GpayTransactionInfoTest {
      * Test the property 'currencyCode'
      */
     @Test
-    public void currencyCodeTest() {
+    void currencyCodeTest() {
         // TODO: test currencyCode
     }
 
@@ -59,7 +58,7 @@ public class GpayTransactionInfoTest {
      * Test the property 'totalPriceStatus'
      */
     @Test
-    public void totalPriceStatusTest() {
+    void totalPriceStatusTest() {
         // TODO: test totalPriceStatus
     }
 
@@ -67,7 +66,7 @@ public class GpayTransactionInfoTest {
      * Test the property 'totalPrice'
      */
     @Test
-    public void totalPriceTest() {
+    void totalPriceTest() {
         // TODO: test totalPrice
     }
 

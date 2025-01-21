@@ -33,24 +33,25 @@ import java.util.StringJoiner;
 @JsonPropertyOrder({
   MobilePayment.JSON_PROPERTY_MOBILE_PAYMENT
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class MobilePayment {
   public static final String JSON_PROPERTY_MOBILE_PAYMENT = "mobile_payment";
+  @javax.annotation.Nonnull
   private MobilePaymentData mobilePayment;
 
   public MobilePayment() {
   }
 
-  public MobilePayment mobilePayment(MobilePaymentData mobilePayment) {
+  public MobilePayment mobilePayment(@javax.annotation.Nonnull MobilePaymentData mobilePayment) {
     
     this.mobilePayment = mobilePayment;
     return this;
   }
 
-   /**
+  /**
    * Get mobilePayment
    * @return mobilePayment
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_MOBILE_PAYMENT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -62,7 +63,7 @@ public class MobilePayment {
 
   @JsonProperty(JSON_PROPERTY_MOBILE_PAYMENT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setMobilePayment(MobilePaymentData mobilePayment) {
+  public void setMobilePayment(@javax.annotation.Nonnull MobilePaymentData mobilePayment) {
     this.mobilePayment = mobilePayment;
   }
 

@@ -19,22 +19,21 @@ import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonTypeName;
 import com.fasterxml.jackson.annotation.JsonValue;
 import com.hyperswitch.client.model.WalletResponse;
-import org.junit.Assert;
-import org.junit.Ignore;
-import org.junit.Test;
-
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Test;
 
 /**
  * Model tests for PaymentMethodDataResponseOneOf2
  */
-public class PaymentMethodDataResponseOneOf2Test {
+class PaymentMethodDataResponseOneOf2Test {
     private final PaymentMethodDataResponseOneOf2 model = new PaymentMethodDataResponseOneOf2();
 
     /**
      * Model tests for PaymentMethodDataResponseOneOf2
      */
     @Test
-    public void testPaymentMethodDataResponseOneOf2() {
+    void testPaymentMethodDataResponseOneOf2() {
         // TODO: test PaymentMethodDataResponseOneOf2
     }
 
@@ -42,7 +41,7 @@ public class PaymentMethodDataResponseOneOf2Test {
      * Test the property 'wallet'
      */
     @Test
-    public void walletTest() {
+    void walletTest() {
         // TODO: test wallet
     }
 

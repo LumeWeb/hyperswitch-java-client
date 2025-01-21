@@ -22,22 +22,21 @@ import com.hyperswitch.client.model.MerchantAccountData;
 import com.hyperswitch.client.model.MerchantRecipientDataOneOf;
 import com.hyperswitch.client.model.MerchantRecipientDataOneOf1;
 import com.hyperswitch.client.model.MerchantRecipientDataOneOf2;
-import org.junit.Assert;
-import org.junit.Ignore;
-import org.junit.Test;
-
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Test;
 
 /**
  * Model tests for MerchantRecipientData
  */
-public class MerchantRecipientDataTest {
+class MerchantRecipientDataTest {
     private final MerchantRecipientData model = new MerchantRecipientData();
 
     /**
      * Model tests for MerchantRecipientData
      */
     @Test
-    public void testMerchantRecipientData() {
+    void testMerchantRecipientData() {
         // TODO: test MerchantRecipientData
     }
 
@@ -45,7 +44,7 @@ public class MerchantRecipientDataTest {
      * Test the property 'connectorRecipientId'
      */
     @Test
-    public void connectorRecipientIdTest() {
+    void connectorRecipientIdTest() {
         // TODO: test connectorRecipientId
     }
 
@@ -53,7 +52,7 @@ public class MerchantRecipientDataTest {
      * Test the property 'walletId'
      */
     @Test
-    public void walletIdTest() {
+    void walletIdTest() {
         // TODO: test walletId
     }
 
@@ -61,7 +60,7 @@ public class MerchantRecipientDataTest {
      * Test the property 'accountData'
      */
     @Test
-    public void accountDataTest() {
+    void accountDataTest() {
         // TODO: test accountData
     }
 

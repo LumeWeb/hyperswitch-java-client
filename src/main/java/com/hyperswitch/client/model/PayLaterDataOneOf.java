@@ -34,24 +34,25 @@ import java.util.StringJoiner;
   PayLaterDataOneOf.JSON_PROPERTY_KLARNA_REDIRECT
 })
 @JsonTypeName("PayLaterData_oneOf")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class PayLaterDataOneOf {
   public static final String JSON_PROPERTY_KLARNA_REDIRECT = "klarna_redirect";
+  @javax.annotation.Nonnull
   private PayLaterDataOneOfKlarnaRedirect klarnaRedirect;
 
   public PayLaterDataOneOf() {
   }
 
-  public PayLaterDataOneOf klarnaRedirect(PayLaterDataOneOfKlarnaRedirect klarnaRedirect) {
+  public PayLaterDataOneOf klarnaRedirect(@javax.annotation.Nonnull PayLaterDataOneOfKlarnaRedirect klarnaRedirect) {
     
     this.klarnaRedirect = klarnaRedirect;
     return this;
   }
 
-   /**
+  /**
    * Get klarnaRedirect
    * @return klarnaRedirect
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_KLARNA_REDIRECT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -63,7 +64,7 @@ public class PayLaterDataOneOf {
 
   @JsonProperty(JSON_PROPERTY_KLARNA_REDIRECT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setKlarnaRedirect(PayLaterDataOneOfKlarnaRedirect klarnaRedirect) {
+  public void setKlarnaRedirect(@javax.annotation.Nonnull PayLaterDataOneOfKlarnaRedirect klarnaRedirect) {
     this.klarnaRedirect = klarnaRedirect;
   }
 

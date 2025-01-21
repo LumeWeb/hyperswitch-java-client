@@ -33,24 +33,25 @@ import java.util.StringJoiner;
   WalletDataOneOf9.JSON_PROPERTY_APPLE_PAY_THIRD_PARTY_SDK
 })
 @JsonTypeName("WalletData_oneOf_9")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class WalletDataOneOf9 {
   public static final String JSON_PROPERTY_APPLE_PAY_THIRD_PARTY_SDK = "apple_pay_third_party_sdk";
+  @javax.annotation.Nonnull
   private Object applePayThirdPartySdk;
 
   public WalletDataOneOf9() {
   }
 
-  public WalletDataOneOf9 applePayThirdPartySdk(Object applePayThirdPartySdk) {
+  public WalletDataOneOf9 applePayThirdPartySdk(@javax.annotation.Nonnull Object applePayThirdPartySdk) {
     
     this.applePayThirdPartySdk = applePayThirdPartySdk;
     return this;
   }
 
-   /**
+  /**
    * Get applePayThirdPartySdk
    * @return applePayThirdPartySdk
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_APPLE_PAY_THIRD_PARTY_SDK)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -62,7 +63,7 @@ public class WalletDataOneOf9 {
 
   @JsonProperty(JSON_PROPERTY_APPLE_PAY_THIRD_PARTY_SDK)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setApplePayThirdPartySdk(Object applePayThirdPartySdk) {
+  public void setApplePayThirdPartySdk(@javax.annotation.Nonnull Object applePayThirdPartySdk) {
     this.applePayThirdPartySdk = applePayThirdPartySdk;
   }
 

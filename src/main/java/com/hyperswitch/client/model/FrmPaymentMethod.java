@@ -24,6 +24,7 @@ import com.hyperswitch.client.model.FrmPaymentMethodType;
 import com.hyperswitch.client.model.FrmPreferredFlowTypes;
 import com.hyperswitch.client.model.PaymentMethod;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import org.openapitools.jackson.nullable.JsonNullable;
 import com.fasterxml.jackson.annotation.JsonIgnore;
@@ -43,30 +44,33 @@ import java.util.StringJoiner;
   FrmPaymentMethod.JSON_PROPERTY_PAYMENT_METHOD_TYPES,
   FrmPaymentMethod.JSON_PROPERTY_FLOW
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class FrmPaymentMethod {
   public static final String JSON_PROPERTY_PAYMENT_METHOD = "payment_method";
+  @javax.annotation.Nonnull
   private PaymentMethod paymentMethod;
 
   public static final String JSON_PROPERTY_PAYMENT_METHOD_TYPES = "payment_method_types";
+  @javax.annotation.Nullable
   private JsonNullable<List<FrmPaymentMethodType>> paymentMethodTypes = JsonNullable.<List<FrmPaymentMethodType>>undefined();
 
   public static final String JSON_PROPERTY_FLOW = "flow";
+  @javax.annotation.Nullable
   private JsonNullable<FrmPreferredFlowTypes> flow = JsonNullable.<FrmPreferredFlowTypes>undefined();
 
   public FrmPaymentMethod() {
   }
 
-  public FrmPaymentMethod paymentMethod(PaymentMethod paymentMethod) {
+  public FrmPaymentMethod paymentMethod(@javax.annotation.Nonnull PaymentMethod paymentMethod) {
     
     this.paymentMethod = paymentMethod;
     return this;
   }
 
-   /**
+  /**
    * Get paymentMethod
    * @return paymentMethod
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_PAYMENT_METHOD)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -78,12 +82,11 @@ public class FrmPaymentMethod {
 
   @JsonProperty(JSON_PROPERTY_PAYMENT_METHOD)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setPaymentMethod(PaymentMethod paymentMethod) {
+  public void setPaymentMethod(@javax.annotation.Nonnull PaymentMethod paymentMethod) {
     this.paymentMethod = paymentMethod;
   }
 
-
-  public FrmPaymentMethod paymentMethodTypes(List<FrmPaymentMethodType> paymentMethodTypes) {
+  public FrmPaymentMethod paymentMethodTypes(@javax.annotation.Nullable List<FrmPaymentMethodType> paymentMethodTypes) {
     this.paymentMethodTypes = JsonNullable.<List<FrmPaymentMethodType>>of(paymentMethodTypes);
     
     return this;
@@ -101,10 +104,10 @@ public class FrmPaymentMethod {
     return this;
   }
 
-   /**
+  /**
    * payment method types(credit, debit) that can be used in the payment. This field is deprecated. It has not been removed to provide backward compatibility.
    * @return paymentMethodTypes
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -124,21 +127,20 @@ public class FrmPaymentMethod {
     this.paymentMethodTypes = paymentMethodTypes;
   }
 
-  public void setPaymentMethodTypes(List<FrmPaymentMethodType> paymentMethodTypes) {
+  public void setPaymentMethodTypes(@javax.annotation.Nullable List<FrmPaymentMethodType> paymentMethodTypes) {
     this.paymentMethodTypes = JsonNullable.<List<FrmPaymentMethodType>>of(paymentMethodTypes);
   }
 
-
-  public FrmPaymentMethod flow(FrmPreferredFlowTypes flow) {
+  public FrmPaymentMethod flow(@javax.annotation.Nullable FrmPreferredFlowTypes flow) {
     this.flow = JsonNullable.<FrmPreferredFlowTypes>of(flow);
     
     return this;
   }
 
-   /**
+  /**
    * Get flow
    * @return flow
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -158,7 +160,7 @@ public class FrmPaymentMethod {
     this.flow = flow;
   }
 
-  public void setFlow(FrmPreferredFlowTypes flow) {
+  public void setFlow(@javax.annotation.Nullable FrmPreferredFlowTypes flow) {
     this.flow = JsonNullable.<FrmPreferredFlowTypes>of(flow);
   }
 

@@ -40,30 +40,33 @@ import java.util.StringJoiner;
   PaymentsPostSessionTokensResponse.JSON_PROPERTY_NEXT_ACTION,
   PaymentsPostSessionTokensResponse.JSON_PROPERTY_STATUS
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class PaymentsPostSessionTokensResponse {
   public static final String JSON_PROPERTY_PAYMENT_ID = "payment_id";
+  @javax.annotation.Nonnull
   private String paymentId;
 
   public static final String JSON_PROPERTY_NEXT_ACTION = "next_action";
+  @javax.annotation.Nullable
   private JsonNullable<NextActionData> nextAction = JsonNullable.<NextActionData>undefined();
 
   public static final String JSON_PROPERTY_STATUS = "status";
+  @javax.annotation.Nonnull
   private IntentStatus status = IntentStatus.REQUIRES_CONFIRMATION;
 
   public PaymentsPostSessionTokensResponse() {
   }
 
-  public PaymentsPostSessionTokensResponse paymentId(String paymentId) {
+  public PaymentsPostSessionTokensResponse paymentId(@javax.annotation.Nonnull String paymentId) {
     
     this.paymentId = paymentId;
     return this;
   }
 
-   /**
+  /**
    * The identifier for the payment
    * @return paymentId
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_PAYMENT_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -75,21 +78,20 @@ public class PaymentsPostSessionTokensResponse {
 
   @JsonProperty(JSON_PROPERTY_PAYMENT_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setPaymentId(String paymentId) {
+  public void setPaymentId(@javax.annotation.Nonnull String paymentId) {
     this.paymentId = paymentId;
   }
 
-
-  public PaymentsPostSessionTokensResponse nextAction(NextActionData nextAction) {
+  public PaymentsPostSessionTokensResponse nextAction(@javax.annotation.Nullable NextActionData nextAction) {
     this.nextAction = JsonNullable.<NextActionData>of(nextAction);
     
     return this;
   }
 
-   /**
+  /**
    * Get nextAction
    * @return nextAction
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -109,21 +111,20 @@ public class PaymentsPostSessionTokensResponse {
     this.nextAction = nextAction;
   }
 
-  public void setNextAction(NextActionData nextAction) {
+  public void setNextAction(@javax.annotation.Nullable NextActionData nextAction) {
     this.nextAction = JsonNullable.<NextActionData>of(nextAction);
   }
 
-
-  public PaymentsPostSessionTokensResponse status(IntentStatus status) {
+  public PaymentsPostSessionTokensResponse status(@javax.annotation.Nonnull IntentStatus status) {
     
     this.status = status;
     return this;
   }
 
-   /**
+  /**
    * Get status
    * @return status
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_STATUS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -135,7 +136,7 @@ public class PaymentsPostSessionTokensResponse {
 
   @JsonProperty(JSON_PROPERTY_STATUS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setStatus(IntentStatus status) {
+  public void setStatus(@javax.annotation.Nonnull IntentStatus status) {
     this.status = status;
   }
 

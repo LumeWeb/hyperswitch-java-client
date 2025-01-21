@@ -33,24 +33,25 @@ import java.util.StringJoiner;
   RealTimePaymentDataOneOf.JSON_PROPERTY_FPS
 })
 @JsonTypeName("RealTimePaymentData_oneOf")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class RealTimePaymentDataOneOf {
   public static final String JSON_PROPERTY_FPS = "fps";
+  @javax.annotation.Nonnull
   private Object fps;
 
   public RealTimePaymentDataOneOf() {
   }
 
-  public RealTimePaymentDataOneOf fps(Object fps) {
+  public RealTimePaymentDataOneOf fps(@javax.annotation.Nonnull Object fps) {
     
     this.fps = fps;
     return this;
   }
 
-   /**
+  /**
    * Get fps
    * @return fps
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_FPS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -62,7 +63,7 @@ public class RealTimePaymentDataOneOf {
 
   @JsonProperty(JSON_PROPERTY_FPS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setFps(Object fps) {
+  public void setFps(@javax.annotation.Nonnull Object fps) {
     this.fps = fps;
   }
 

@@ -38,30 +38,33 @@ import java.util.StringJoiner;
   OrganizationUpdateRequest.JSON_PROPERTY_ORGANIZATION_DETAILS,
   OrganizationUpdateRequest.JSON_PROPERTY_METADATA
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class OrganizationUpdateRequest {
   public static final String JSON_PROPERTY_ORGANIZATION_NAME = "organization_name";
+  @javax.annotation.Nullable
   private JsonNullable<String> organizationName = JsonNullable.<String>undefined();
 
   public static final String JSON_PROPERTY_ORGANIZATION_DETAILS = "organization_details";
+  @javax.annotation.Nullable
   private JsonNullable<Object> organizationDetails = JsonNullable.<Object>undefined();
 
   public static final String JSON_PROPERTY_METADATA = "metadata";
+  @javax.annotation.Nullable
   private JsonNullable<Object> metadata = JsonNullable.<Object>undefined();
 
   public OrganizationUpdateRequest() {
   }
 
-  public OrganizationUpdateRequest organizationName(String organizationName) {
+  public OrganizationUpdateRequest organizationName(@javax.annotation.Nullable String organizationName) {
     this.organizationName = JsonNullable.<String>of(organizationName);
     
     return this;
   }
 
-   /**
+  /**
    * Name of the organization
    * @return organizationName
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -81,21 +84,20 @@ public class OrganizationUpdateRequest {
     this.organizationName = organizationName;
   }
 
-  public void setOrganizationName(String organizationName) {
+  public void setOrganizationName(@javax.annotation.Nullable String organizationName) {
     this.organizationName = JsonNullable.<String>of(organizationName);
   }
 
-
-  public OrganizationUpdateRequest organizationDetails(Object organizationDetails) {
+  public OrganizationUpdateRequest organizationDetails(@javax.annotation.Nullable Object organizationDetails) {
     this.organizationDetails = JsonNullable.<Object>of(organizationDetails);
     
     return this;
   }
 
-   /**
+  /**
    * Details about the organization
    * @return organizationDetails
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -115,21 +117,20 @@ public class OrganizationUpdateRequest {
     this.organizationDetails = organizationDetails;
   }
 
-  public void setOrganizationDetails(Object organizationDetails) {
+  public void setOrganizationDetails(@javax.annotation.Nullable Object organizationDetails) {
     this.organizationDetails = JsonNullable.<Object>of(organizationDetails);
   }
 
-
-  public OrganizationUpdateRequest metadata(Object metadata) {
+  public OrganizationUpdateRequest metadata(@javax.annotation.Nullable Object metadata) {
     this.metadata = JsonNullable.<Object>of(metadata);
     
     return this;
   }
 
-   /**
+  /**
    * Metadata is useful for storing additional, unstructured information on an object.
    * @return metadata
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -149,7 +150,7 @@ public class OrganizationUpdateRequest {
     this.metadata = metadata;
   }
 
-  public void setMetadata(Object metadata) {
+  public void setMetadata(@javax.annotation.Nullable Object metadata) {
     this.metadata = JsonNullable.<Object>of(metadata);
   }
 

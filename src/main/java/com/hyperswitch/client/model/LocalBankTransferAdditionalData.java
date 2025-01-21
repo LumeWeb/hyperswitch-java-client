@@ -36,24 +36,25 @@ import java.util.StringJoiner;
 @JsonPropertyOrder({
   LocalBankTransferAdditionalData.JSON_PROPERTY_BANK_CODE
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class LocalBankTransferAdditionalData {
   public static final String JSON_PROPERTY_BANK_CODE = "bank_code";
+  @javax.annotation.Nullable
   private JsonNullable<String> bankCode = JsonNullable.<String>undefined();
 
   public LocalBankTransferAdditionalData() {
   }
 
-  public LocalBankTransferAdditionalData bankCode(String bankCode) {
+  public LocalBankTransferAdditionalData bankCode(@javax.annotation.Nullable String bankCode) {
     this.bankCode = JsonNullable.<String>of(bankCode);
     
     return this;
   }
 
-   /**
+  /**
    * Partially masked bank code
    * @return bankCode
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -73,7 +74,7 @@ public class LocalBankTransferAdditionalData {
     this.bankCode = bankCode;
   }
 
-  public void setBankCode(String bankCode) {
+  public void setBankCode(@javax.annotation.Nullable String bankCode) {
     this.bankCode = JsonNullable.<String>of(bankCode);
   }
 

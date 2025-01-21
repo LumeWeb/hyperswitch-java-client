@@ -32,24 +32,25 @@ import java.util.StringJoiner;
 @JsonPropertyOrder({
   PayoutCancelRequest.JSON_PROPERTY_PAYOUT_ID
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class PayoutCancelRequest {
   public static final String JSON_PROPERTY_PAYOUT_ID = "payout_id";
+  @javax.annotation.Nonnull
   private String payoutId;
 
   public PayoutCancelRequest() {
   }
 
-  public PayoutCancelRequest payoutId(String payoutId) {
+  public PayoutCancelRequest payoutId(@javax.annotation.Nonnull String payoutId) {
     
     this.payoutId = payoutId;
     return this;
   }
 
-   /**
+  /**
    * Unique identifier for the payout. This ensures idempotency for multiple payouts that have been done by a single merchant. This field is auto generated and is returned in the API response.
    * @return payoutId
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_PAYOUT_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -61,7 +62,7 @@ public class PayoutCancelRequest {
 
   @JsonProperty(JSON_PROPERTY_PAYOUT_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setPayoutId(String payoutId) {
+  public void setPayoutId(@javax.annotation.Nonnull String payoutId) {
     this.payoutId = payoutId;
   }
 

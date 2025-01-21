@@ -37,27 +37,29 @@ import java.util.StringJoiner;
   ProcessorPaymentToken.JSON_PROPERTY_PROCESSOR_PAYMENT_TOKEN,
   ProcessorPaymentToken.JSON_PROPERTY_MERCHANT_CONNECTOR_ID
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class ProcessorPaymentToken {
   public static final String JSON_PROPERTY_PROCESSOR_PAYMENT_TOKEN = "processor_payment_token";
+  @javax.annotation.Nonnull
   private String processorPaymentToken;
 
   public static final String JSON_PROPERTY_MERCHANT_CONNECTOR_ID = "merchant_connector_id";
+  @javax.annotation.Nullable
   private JsonNullable<String> merchantConnectorId = JsonNullable.<String>undefined();
 
   public ProcessorPaymentToken() {
   }
 
-  public ProcessorPaymentToken processorPaymentToken(String processorPaymentToken) {
+  public ProcessorPaymentToken processorPaymentToken(@javax.annotation.Nonnull String processorPaymentToken) {
     
     this.processorPaymentToken = processorPaymentToken;
     return this;
   }
 
-   /**
+  /**
    * Get processorPaymentToken
    * @return processorPaymentToken
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_PROCESSOR_PAYMENT_TOKEN)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -69,21 +71,20 @@ public class ProcessorPaymentToken {
 
   @JsonProperty(JSON_PROPERTY_PROCESSOR_PAYMENT_TOKEN)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setProcessorPaymentToken(String processorPaymentToken) {
+  public void setProcessorPaymentToken(@javax.annotation.Nonnull String processorPaymentToken) {
     this.processorPaymentToken = processorPaymentToken;
   }
 
-
-  public ProcessorPaymentToken merchantConnectorId(String merchantConnectorId) {
+  public ProcessorPaymentToken merchantConnectorId(@javax.annotation.Nullable String merchantConnectorId) {
     this.merchantConnectorId = JsonNullable.<String>of(merchantConnectorId);
     
     return this;
   }
 
-   /**
+  /**
    * Get merchantConnectorId
    * @return merchantConnectorId
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -103,7 +104,7 @@ public class ProcessorPaymentToken {
     this.merchantConnectorId = merchantConnectorId;
   }
 
-  public void setMerchantConnectorId(String merchantConnectorId) {
+  public void setMerchantConnectorId(@javax.annotation.Nullable String merchantConnectorId) {
     this.merchantConnectorId = JsonNullable.<String>of(merchantConnectorId);
   }
 

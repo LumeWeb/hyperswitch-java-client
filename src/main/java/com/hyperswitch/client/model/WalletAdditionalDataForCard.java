@@ -34,30 +34,33 @@ import java.util.StringJoiner;
   WalletAdditionalDataForCard.JSON_PROPERTY_CARD_NETWORK,
   WalletAdditionalDataForCard.JSON_PROPERTY_TYPE
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class WalletAdditionalDataForCard {
   public static final String JSON_PROPERTY_LAST4 = "last4";
+  @javax.annotation.Nonnull
   private String last4;
 
   public static final String JSON_PROPERTY_CARD_NETWORK = "card_network";
+  @javax.annotation.Nonnull
   private String cardNetwork;
 
   public static final String JSON_PROPERTY_TYPE = "type";
+  @javax.annotation.Nonnull
   private String type;
 
   public WalletAdditionalDataForCard() {
   }
 
-  public WalletAdditionalDataForCard last4(String last4) {
+  public WalletAdditionalDataForCard last4(@javax.annotation.Nonnull String last4) {
     
     this.last4 = last4;
     return this;
   }
 
-   /**
+  /**
    * Last 4 digits of the card number
    * @return last4
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_LAST4)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -69,21 +72,20 @@ public class WalletAdditionalDataForCard {
 
   @JsonProperty(JSON_PROPERTY_LAST4)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setLast4(String last4) {
+  public void setLast4(@javax.annotation.Nonnull String last4) {
     this.last4 = last4;
   }
 
-
-  public WalletAdditionalDataForCard cardNetwork(String cardNetwork) {
+  public WalletAdditionalDataForCard cardNetwork(@javax.annotation.Nonnull String cardNetwork) {
     
     this.cardNetwork = cardNetwork;
     return this;
   }
 
-   /**
+  /**
    * The information of the payment method
    * @return cardNetwork
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_CARD_NETWORK)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -95,21 +97,20 @@ public class WalletAdditionalDataForCard {
 
   @JsonProperty(JSON_PROPERTY_CARD_NETWORK)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setCardNetwork(String cardNetwork) {
+  public void setCardNetwork(@javax.annotation.Nonnull String cardNetwork) {
     this.cardNetwork = cardNetwork;
   }
 
-
-  public WalletAdditionalDataForCard type(String type) {
+  public WalletAdditionalDataForCard type(@javax.annotation.Nonnull String type) {
     
     this.type = type;
     return this;
   }
 
-   /**
+  /**
    * The type of payment method
    * @return type
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_TYPE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -121,7 +122,7 @@ public class WalletAdditionalDataForCard {
 
   @JsonProperty(JSON_PROPERTY_TYPE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setType(String type) {
+  public void setType(@javax.annotation.Nonnull String type) {
     this.type = type;
   }
 

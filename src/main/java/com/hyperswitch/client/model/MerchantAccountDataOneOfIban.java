@@ -39,30 +39,33 @@ import java.util.StringJoiner;
   MerchantAccountDataOneOfIban.JSON_PROPERTY_CONNECTOR_RECIPIENT_ID
 })
 @JsonTypeName("MerchantAccountData_oneOf_iban")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class MerchantAccountDataOneOfIban {
   public static final String JSON_PROPERTY_IBAN = "iban";
+  @javax.annotation.Nonnull
   private String iban;
 
   public static final String JSON_PROPERTY_NAME = "name";
+  @javax.annotation.Nonnull
   private String name;
 
   public static final String JSON_PROPERTY_CONNECTOR_RECIPIENT_ID = "connector_recipient_id";
+  @javax.annotation.Nullable
   private JsonNullable<String> connectorRecipientId = JsonNullable.<String>undefined();
 
   public MerchantAccountDataOneOfIban() {
   }
 
-  public MerchantAccountDataOneOfIban iban(String iban) {
+  public MerchantAccountDataOneOfIban iban(@javax.annotation.Nonnull String iban) {
     
     this.iban = iban;
     return this;
   }
 
-   /**
+  /**
    * Get iban
    * @return iban
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_IBAN)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -74,21 +77,20 @@ public class MerchantAccountDataOneOfIban {
 
   @JsonProperty(JSON_PROPERTY_IBAN)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setIban(String iban) {
+  public void setIban(@javax.annotation.Nonnull String iban) {
     this.iban = iban;
   }
 
-
-  public MerchantAccountDataOneOfIban name(String name) {
+  public MerchantAccountDataOneOfIban name(@javax.annotation.Nonnull String name) {
     
     this.name = name;
     return this;
   }
 
-   /**
+  /**
    * Get name
    * @return name
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_NAME)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -100,21 +102,20 @@ public class MerchantAccountDataOneOfIban {
 
   @JsonProperty(JSON_PROPERTY_NAME)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setName(String name) {
+  public void setName(@javax.annotation.Nonnull String name) {
     this.name = name;
   }
 
-
-  public MerchantAccountDataOneOfIban connectorRecipientId(String connectorRecipientId) {
+  public MerchantAccountDataOneOfIban connectorRecipientId(@javax.annotation.Nullable String connectorRecipientId) {
     this.connectorRecipientId = JsonNullable.<String>of(connectorRecipientId);
     
     return this;
   }
 
-   /**
+  /**
    * Get connectorRecipientId
    * @return connectorRecipientId
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -134,7 +135,7 @@ public class MerchantAccountDataOneOfIban {
     this.connectorRecipientId = connectorRecipientId;
   }
 
-  public void setConnectorRecipientId(String connectorRecipientId) {
+  public void setConnectorRecipientId(@javax.annotation.Nullable String connectorRecipientId) {
     this.connectorRecipientId = JsonNullable.<String>of(connectorRecipientId);
   }
 

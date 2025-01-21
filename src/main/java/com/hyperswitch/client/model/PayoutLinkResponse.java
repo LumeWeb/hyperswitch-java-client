@@ -33,27 +33,29 @@ import java.util.StringJoiner;
   PayoutLinkResponse.JSON_PROPERTY_PAYOUT_LINK_ID,
   PayoutLinkResponse.JSON_PROPERTY_LINK
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class PayoutLinkResponse {
   public static final String JSON_PROPERTY_PAYOUT_LINK_ID = "payout_link_id";
+  @javax.annotation.Nonnull
   private String payoutLinkId;
 
   public static final String JSON_PROPERTY_LINK = "link";
+  @javax.annotation.Nonnull
   private String link;
 
   public PayoutLinkResponse() {
   }
 
-  public PayoutLinkResponse payoutLinkId(String payoutLinkId) {
+  public PayoutLinkResponse payoutLinkId(@javax.annotation.Nonnull String payoutLinkId) {
     
     this.payoutLinkId = payoutLinkId;
     return this;
   }
 
-   /**
+  /**
    * Get payoutLinkId
    * @return payoutLinkId
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_PAYOUT_LINK_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -65,21 +67,20 @@ public class PayoutLinkResponse {
 
   @JsonProperty(JSON_PROPERTY_PAYOUT_LINK_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setPayoutLinkId(String payoutLinkId) {
+  public void setPayoutLinkId(@javax.annotation.Nonnull String payoutLinkId) {
     this.payoutLinkId = payoutLinkId;
   }
 
-
-  public PayoutLinkResponse link(String link) {
+  public PayoutLinkResponse link(@javax.annotation.Nonnull String link) {
     
     this.link = link;
     return this;
   }
 
-   /**
+  /**
    * Get link
    * @return link
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_LINK)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -91,7 +92,7 @@ public class PayoutLinkResponse {
 
   @JsonProperty(JSON_PROPERTY_LINK)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setLink(String link) {
+  public void setLink(@javax.annotation.Nonnull String link) {
     this.link = link;
   }
 

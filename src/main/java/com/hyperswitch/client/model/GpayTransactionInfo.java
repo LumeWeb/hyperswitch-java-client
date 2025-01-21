@@ -37,33 +37,37 @@ import java.util.StringJoiner;
   GpayTransactionInfo.JSON_PROPERTY_TOTAL_PRICE_STATUS,
   GpayTransactionInfo.JSON_PROPERTY_TOTAL_PRICE
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class GpayTransactionInfo {
   public static final String JSON_PROPERTY_COUNTRY_CODE = "country_code";
+  @javax.annotation.Nonnull
   private CountryAlpha2 countryCode;
 
   public static final String JSON_PROPERTY_CURRENCY_CODE = "currency_code";
+  @javax.annotation.Nonnull
   private Currency currencyCode;
 
   public static final String JSON_PROPERTY_TOTAL_PRICE_STATUS = "total_price_status";
+  @javax.annotation.Nonnull
   private String totalPriceStatus;
 
   public static final String JSON_PROPERTY_TOTAL_PRICE = "total_price";
+  @javax.annotation.Nonnull
   private String totalPrice;
 
   public GpayTransactionInfo() {
   }
 
-  public GpayTransactionInfo countryCode(CountryAlpha2 countryCode) {
+  public GpayTransactionInfo countryCode(@javax.annotation.Nonnull CountryAlpha2 countryCode) {
     
     this.countryCode = countryCode;
     return this;
   }
 
-   /**
+  /**
    * Get countryCode
    * @return countryCode
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_COUNTRY_CODE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -75,21 +79,20 @@ public class GpayTransactionInfo {
 
   @JsonProperty(JSON_PROPERTY_COUNTRY_CODE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setCountryCode(CountryAlpha2 countryCode) {
+  public void setCountryCode(@javax.annotation.Nonnull CountryAlpha2 countryCode) {
     this.countryCode = countryCode;
   }
 
-
-  public GpayTransactionInfo currencyCode(Currency currencyCode) {
+  public GpayTransactionInfo currencyCode(@javax.annotation.Nonnull Currency currencyCode) {
     
     this.currencyCode = currencyCode;
     return this;
   }
 
-   /**
+  /**
    * Get currencyCode
    * @return currencyCode
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_CURRENCY_CODE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -101,21 +104,20 @@ public class GpayTransactionInfo {
 
   @JsonProperty(JSON_PROPERTY_CURRENCY_CODE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setCurrencyCode(Currency currencyCode) {
+  public void setCurrencyCode(@javax.annotation.Nonnull Currency currencyCode) {
     this.currencyCode = currencyCode;
   }
 
-
-  public GpayTransactionInfo totalPriceStatus(String totalPriceStatus) {
+  public GpayTransactionInfo totalPriceStatus(@javax.annotation.Nonnull String totalPriceStatus) {
     
     this.totalPriceStatus = totalPriceStatus;
     return this;
   }
 
-   /**
+  /**
    * The total price status (ex: &#39;FINAL&#39;)
    * @return totalPriceStatus
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_TOTAL_PRICE_STATUS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -127,21 +129,20 @@ public class GpayTransactionInfo {
 
   @JsonProperty(JSON_PROPERTY_TOTAL_PRICE_STATUS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setTotalPriceStatus(String totalPriceStatus) {
+  public void setTotalPriceStatus(@javax.annotation.Nonnull String totalPriceStatus) {
     this.totalPriceStatus = totalPriceStatus;
   }
 
-
-  public GpayTransactionInfo totalPrice(String totalPrice) {
+  public GpayTransactionInfo totalPrice(@javax.annotation.Nonnull String totalPrice) {
     
     this.totalPrice = totalPrice;
     return this;
   }
 
-   /**
+  /**
    * The total price
    * @return totalPrice
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_TOTAL_PRICE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -153,7 +154,7 @@ public class GpayTransactionInfo {
 
   @JsonProperty(JSON_PROPERTY_TOTAL_PRICE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setTotalPrice(String totalPrice) {
+  public void setTotalPrice(@javax.annotation.Nonnull String totalPrice) {
     this.totalPrice = totalPrice;
   }
 

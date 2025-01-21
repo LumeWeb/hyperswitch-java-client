@@ -38,30 +38,33 @@ import java.util.StringJoiner;
   BacsBankDebitAdditionalData.JSON_PROPERTY_SORT_CODE,
   BacsBankDebitAdditionalData.JSON_PROPERTY_BANK_ACCOUNT_HOLDER_NAME
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class BacsBankDebitAdditionalData {
   public static final String JSON_PROPERTY_ACCOUNT_NUMBER = "account_number";
+  @javax.annotation.Nonnull
   private String accountNumber;
 
   public static final String JSON_PROPERTY_SORT_CODE = "sort_code";
+  @javax.annotation.Nonnull
   private String sortCode;
 
   public static final String JSON_PROPERTY_BANK_ACCOUNT_HOLDER_NAME = "bank_account_holder_name";
+  @javax.annotation.Nullable
   private JsonNullable<String> bankAccountHolderName = JsonNullable.<String>undefined();
 
   public BacsBankDebitAdditionalData() {
   }
 
-  public BacsBankDebitAdditionalData accountNumber(String accountNumber) {
+  public BacsBankDebitAdditionalData accountNumber(@javax.annotation.Nonnull String accountNumber) {
     
     this.accountNumber = accountNumber;
     return this;
   }
 
-   /**
+  /**
    * Partially masked account number for Bacs payment method
    * @return accountNumber
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_ACCOUNT_NUMBER)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -73,21 +76,20 @@ public class BacsBankDebitAdditionalData {
 
   @JsonProperty(JSON_PROPERTY_ACCOUNT_NUMBER)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setAccountNumber(String accountNumber) {
+  public void setAccountNumber(@javax.annotation.Nonnull String accountNumber) {
     this.accountNumber = accountNumber;
   }
 
-
-  public BacsBankDebitAdditionalData sortCode(String sortCode) {
+  public BacsBankDebitAdditionalData sortCode(@javax.annotation.Nonnull String sortCode) {
     
     this.sortCode = sortCode;
     return this;
   }
 
-   /**
+  /**
    * Partially masked sort code for Bacs payment method
    * @return sortCode
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_SORT_CODE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -99,21 +101,20 @@ public class BacsBankDebitAdditionalData {
 
   @JsonProperty(JSON_PROPERTY_SORT_CODE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setSortCode(String sortCode) {
+  public void setSortCode(@javax.annotation.Nonnull String sortCode) {
     this.sortCode = sortCode;
   }
 
-
-  public BacsBankDebitAdditionalData bankAccountHolderName(String bankAccountHolderName) {
+  public BacsBankDebitAdditionalData bankAccountHolderName(@javax.annotation.Nullable String bankAccountHolderName) {
     this.bankAccountHolderName = JsonNullable.<String>of(bankAccountHolderName);
     
     return this;
   }
 
-   /**
+  /**
    * Bank account&#39;s owner name
    * @return bankAccountHolderName
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -133,7 +134,7 @@ public class BacsBankDebitAdditionalData {
     this.bankAccountHolderName = bankAccountHolderName;
   }
 
-  public void setBankAccountHolderName(String bankAccountHolderName) {
+  public void setBankAccountHolderName(@javax.annotation.Nullable String bankAccountHolderName) {
     this.bankAccountHolderName = JsonNullable.<String>of(bankAccountHolderName);
   }
 

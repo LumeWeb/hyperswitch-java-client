@@ -21,22 +21,21 @@ import com.fasterxml.jackson.annotation.JsonValue;
 import com.hyperswitch.client.model.EventClass;
 import com.hyperswitch.client.model.EventType;
 import java.time.OffsetDateTime;
-import org.junit.Assert;
-import org.junit.Ignore;
-import org.junit.Test;
-
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Test;
 
 /**
  * Model tests for EventListItemResponse
  */
-public class EventListItemResponseTest {
+class EventListItemResponseTest {
     private final EventListItemResponse model = new EventListItemResponse();
 
     /**
      * Model tests for EventListItemResponse
      */
     @Test
-    public void testEventListItemResponse() {
+    void testEventListItemResponse() {
         // TODO: test EventListItemResponse
     }
 
@@ -44,7 +43,7 @@ public class EventListItemResponseTest {
      * Test the property 'eventId'
      */
     @Test
-    public void eventIdTest() {
+    void eventIdTest() {
         // TODO: test eventId
     }
 
@@ -52,7 +51,7 @@ public class EventListItemResponseTest {
      * Test the property 'merchantId'
      */
     @Test
-    public void merchantIdTest() {
+    void merchantIdTest() {
         // TODO: test merchantId
     }
 
@@ -60,7 +59,7 @@ public class EventListItemResponseTest {
      * Test the property 'profileId'
      */
     @Test
-    public void profileIdTest() {
+    void profileIdTest() {
         // TODO: test profileId
     }
 
@@ -68,7 +67,7 @@ public class EventListItemResponseTest {
      * Test the property 'objectId'
      */
     @Test
-    public void objectIdTest() {
+    void objectIdTest() {
         // TODO: test objectId
     }
 
@@ -76,7 +75,7 @@ public class EventListItemResponseTest {
      * Test the property 'eventType'
      */
     @Test
-    public void eventTypeTest() {
+    void eventTypeTest() {
         // TODO: test eventType
     }
 
@@ -84,7 +83,7 @@ public class EventListItemResponseTest {
      * Test the property 'eventClass'
      */
     @Test
-    public void eventClassTest() {
+    void eventClassTest() {
         // TODO: test eventClass
     }
 
@@ -92,7 +91,7 @@ public class EventListItemResponseTest {
      * Test the property 'isDeliverySuccessful'
      */
     @Test
-    public void isDeliverySuccessfulTest() {
+    void isDeliverySuccessfulTest() {
         // TODO: test isDeliverySuccessful
     }
 
@@ -100,7 +99,7 @@ public class EventListItemResponseTest {
      * Test the property 'initialAttemptId'
      */
     @Test
-    public void initialAttemptIdTest() {
+    void initialAttemptIdTest() {
         // TODO: test initialAttemptId
     }
 
@@ -108,7 +107,7 @@ public class EventListItemResponseTest {
      * Test the property 'created'
      */
     @Test
-    public void createdTest() {
+    void createdTest() {
         // TODO: test created
     }
 

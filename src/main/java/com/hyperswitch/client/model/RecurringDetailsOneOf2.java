@@ -35,13 +35,13 @@ import java.util.StringJoiner;
   RecurringDetailsOneOf2.JSON_PROPERTY_DATA
 })
 @JsonTypeName("RecurringDetails_oneOf_2")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class RecurringDetailsOneOf2 {
   /**
    * Gets or Sets type
    */
   public enum TypeEnum {
-    PROCESSOR_PAYMENT_TOKEN("processor_payment_token");
+    PROCESSOR_PAYMENT_TOKEN(String.valueOf("processor_payment_token"));
 
     private String value;
 
@@ -71,24 +71,26 @@ public class RecurringDetailsOneOf2 {
   }
 
   public static final String JSON_PROPERTY_TYPE = "type";
+  @javax.annotation.Nonnull
   private TypeEnum type;
 
   public static final String JSON_PROPERTY_DATA = "data";
+  @javax.annotation.Nonnull
   private ProcessorPaymentToken data;
 
   public RecurringDetailsOneOf2() {
   }
 
-  public RecurringDetailsOneOf2 type(TypeEnum type) {
+  public RecurringDetailsOneOf2 type(@javax.annotation.Nonnull TypeEnum type) {
     
     this.type = type;
     return this;
   }
 
-   /**
+  /**
    * Get type
    * @return type
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_TYPE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -100,21 +102,20 @@ public class RecurringDetailsOneOf2 {
 
   @JsonProperty(JSON_PROPERTY_TYPE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setType(TypeEnum type) {
+  public void setType(@javax.annotation.Nonnull TypeEnum type) {
     this.type = type;
   }
 
-
-  public RecurringDetailsOneOf2 data(ProcessorPaymentToken data) {
+  public RecurringDetailsOneOf2 data(@javax.annotation.Nonnull ProcessorPaymentToken data) {
     
     this.data = data;
     return this;
   }
 
-   /**
+  /**
    * Get data
    * @return data
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_DATA)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -126,7 +127,7 @@ public class RecurringDetailsOneOf2 {
 
   @JsonProperty(JSON_PROPERTY_DATA)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setData(ProcessorPaymentToken data) {
+  public void setData(@javax.annotation.Nonnull ProcessorPaymentToken data) {
     this.data = data;
   }
 

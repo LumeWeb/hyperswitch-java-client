@@ -34,24 +34,25 @@ import java.util.StringJoiner;
   BankDebitDataOneOf.JSON_PROPERTY_ACH_BANK_DEBIT
 })
 @JsonTypeName("BankDebitData_oneOf")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class BankDebitDataOneOf {
   public static final String JSON_PROPERTY_ACH_BANK_DEBIT = "ach_bank_debit";
+  @javax.annotation.Nonnull
   private BankDebitDataOneOfAchBankDebit achBankDebit;
 
   public BankDebitDataOneOf() {
   }
 
-  public BankDebitDataOneOf achBankDebit(BankDebitDataOneOfAchBankDebit achBankDebit) {
+  public BankDebitDataOneOf achBankDebit(@javax.annotation.Nonnull BankDebitDataOneOfAchBankDebit achBankDebit) {
     
     this.achBankDebit = achBankDebit;
     return this;
   }
 
-   /**
+  /**
    * Get achBankDebit
    * @return achBankDebit
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_ACH_BANK_DEBIT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -63,7 +64,7 @@ public class BankDebitDataOneOf {
 
   @JsonProperty(JSON_PROPERTY_ACH_BANK_DEBIT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setAchBankDebit(BankDebitDataOneOfAchBankDebit achBankDebit) {
+  public void setAchBankDebit(@javax.annotation.Nonnull BankDebitDataOneOfAchBankDebit achBankDebit) {
     this.achBankDebit = achBankDebit;
   }
 

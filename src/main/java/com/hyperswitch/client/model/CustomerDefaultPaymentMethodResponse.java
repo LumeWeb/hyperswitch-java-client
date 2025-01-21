@@ -41,33 +41,37 @@ import java.util.StringJoiner;
   CustomerDefaultPaymentMethodResponse.JSON_PROPERTY_PAYMENT_METHOD,
   CustomerDefaultPaymentMethodResponse.JSON_PROPERTY_PAYMENT_METHOD_TYPE
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class CustomerDefaultPaymentMethodResponse {
   public static final String JSON_PROPERTY_DEFAULT_PAYMENT_METHOD_ID = "default_payment_method_id";
+  @javax.annotation.Nullable
   private JsonNullable<String> defaultPaymentMethodId = JsonNullable.<String>undefined();
 
   public static final String JSON_PROPERTY_CUSTOMER_ID = "customer_id";
+  @javax.annotation.Nonnull
   private String customerId;
 
   public static final String JSON_PROPERTY_PAYMENT_METHOD = "payment_method";
+  @javax.annotation.Nonnull
   private PaymentMethod paymentMethod;
 
   public static final String JSON_PROPERTY_PAYMENT_METHOD_TYPE = "payment_method_type";
+  @javax.annotation.Nullable
   private JsonNullable<PaymentMethodType> paymentMethodType = JsonNullable.<PaymentMethodType>undefined();
 
   public CustomerDefaultPaymentMethodResponse() {
   }
 
-  public CustomerDefaultPaymentMethodResponse defaultPaymentMethodId(String defaultPaymentMethodId) {
+  public CustomerDefaultPaymentMethodResponse defaultPaymentMethodId(@javax.annotation.Nullable String defaultPaymentMethodId) {
     this.defaultPaymentMethodId = JsonNullable.<String>of(defaultPaymentMethodId);
     
     return this;
   }
 
-   /**
+  /**
    * The unique identifier of the Payment method
    * @return defaultPaymentMethodId
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -87,21 +91,20 @@ public class CustomerDefaultPaymentMethodResponse {
     this.defaultPaymentMethodId = defaultPaymentMethodId;
   }
 
-  public void setDefaultPaymentMethodId(String defaultPaymentMethodId) {
+  public void setDefaultPaymentMethodId(@javax.annotation.Nullable String defaultPaymentMethodId) {
     this.defaultPaymentMethodId = JsonNullable.<String>of(defaultPaymentMethodId);
   }
 
-
-  public CustomerDefaultPaymentMethodResponse customerId(String customerId) {
+  public CustomerDefaultPaymentMethodResponse customerId(@javax.annotation.Nonnull String customerId) {
     
     this.customerId = customerId;
     return this;
   }
 
-   /**
+  /**
    * The unique identifier of the customer.
    * @return customerId
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_CUSTOMER_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -113,21 +116,20 @@ public class CustomerDefaultPaymentMethodResponse {
 
   @JsonProperty(JSON_PROPERTY_CUSTOMER_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setCustomerId(String customerId) {
+  public void setCustomerId(@javax.annotation.Nonnull String customerId) {
     this.customerId = customerId;
   }
 
-
-  public CustomerDefaultPaymentMethodResponse paymentMethod(PaymentMethod paymentMethod) {
+  public CustomerDefaultPaymentMethodResponse paymentMethod(@javax.annotation.Nonnull PaymentMethod paymentMethod) {
     
     this.paymentMethod = paymentMethod;
     return this;
   }
 
-   /**
+  /**
    * Get paymentMethod
    * @return paymentMethod
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_PAYMENT_METHOD)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -139,21 +141,20 @@ public class CustomerDefaultPaymentMethodResponse {
 
   @JsonProperty(JSON_PROPERTY_PAYMENT_METHOD)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setPaymentMethod(PaymentMethod paymentMethod) {
+  public void setPaymentMethod(@javax.annotation.Nonnull PaymentMethod paymentMethod) {
     this.paymentMethod = paymentMethod;
   }
 
-
-  public CustomerDefaultPaymentMethodResponse paymentMethodType(PaymentMethodType paymentMethodType) {
+  public CustomerDefaultPaymentMethodResponse paymentMethodType(@javax.annotation.Nullable PaymentMethodType paymentMethodType) {
     this.paymentMethodType = JsonNullable.<PaymentMethodType>of(paymentMethodType);
     
     return this;
   }
 
-   /**
+  /**
    * Get paymentMethodType
    * @return paymentMethodType
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -173,7 +174,7 @@ public class CustomerDefaultPaymentMethodResponse {
     this.paymentMethodType = paymentMethodType;
   }
 
-  public void setPaymentMethodType(PaymentMethodType paymentMethodType) {
+  public void setPaymentMethodType(@javax.annotation.Nullable PaymentMethodType paymentMethodType) {
     this.paymentMethodType = JsonNullable.<PaymentMethodType>of(paymentMethodType);
   }
 

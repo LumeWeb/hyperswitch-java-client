@@ -38,27 +38,29 @@ import java.util.StringJoiner;
   MerchantConnectorDetailsWrap.JSON_PROPERTY_CREDS_IDENTIFIER,
   MerchantConnectorDetailsWrap.JSON_PROPERTY_ENCODED_DATA
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class MerchantConnectorDetailsWrap {
   public static final String JSON_PROPERTY_CREDS_IDENTIFIER = "creds_identifier";
+  @javax.annotation.Nonnull
   private String credsIdentifier;
 
   public static final String JSON_PROPERTY_ENCODED_DATA = "encoded_data";
+  @javax.annotation.Nullable
   private JsonNullable<MerchantConnectorDetails> encodedData = JsonNullable.<MerchantConnectorDetails>undefined();
 
   public MerchantConnectorDetailsWrap() {
   }
 
-  public MerchantConnectorDetailsWrap credsIdentifier(String credsIdentifier) {
+  public MerchantConnectorDetailsWrap credsIdentifier(@javax.annotation.Nonnull String credsIdentifier) {
     
     this.credsIdentifier = credsIdentifier;
     return this;
   }
 
-   /**
+  /**
    * Creds Identifier is to uniquely identify the credentials. Do not send any sensitive info, like encoded_data in this field. And do not send the string \&quot;null\&quot;.
    * @return credsIdentifier
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_CREDS_IDENTIFIER)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -70,21 +72,20 @@ public class MerchantConnectorDetailsWrap {
 
   @JsonProperty(JSON_PROPERTY_CREDS_IDENTIFIER)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setCredsIdentifier(String credsIdentifier) {
+  public void setCredsIdentifier(@javax.annotation.Nonnull String credsIdentifier) {
     this.credsIdentifier = credsIdentifier;
   }
 
-
-  public MerchantConnectorDetailsWrap encodedData(MerchantConnectorDetails encodedData) {
+  public MerchantConnectorDetailsWrap encodedData(@javax.annotation.Nullable MerchantConnectorDetails encodedData) {
     this.encodedData = JsonNullable.<MerchantConnectorDetails>of(encodedData);
     
     return this;
   }
 
-   /**
+  /**
    * Get encodedData
    * @return encodedData
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -104,7 +105,7 @@ public class MerchantConnectorDetailsWrap {
     this.encodedData = encodedData;
   }
 
-  public void setEncodedData(MerchantConnectorDetails encodedData) {
+  public void setEncodedData(@javax.annotation.Nullable MerchantConnectorDetails encodedData) {
     this.encodedData = JsonNullable.<MerchantConnectorDetails>of(encodedData);
   }
 

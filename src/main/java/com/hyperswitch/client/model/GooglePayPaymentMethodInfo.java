@@ -39,30 +39,33 @@ import java.util.StringJoiner;
   GooglePayPaymentMethodInfo.JSON_PROPERTY_CARD_DETAILS,
   GooglePayPaymentMethodInfo.JSON_PROPERTY_ASSURANCE_DETAILS
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class GooglePayPaymentMethodInfo {
   public static final String JSON_PROPERTY_CARD_NETWORK = "card_network";
+  @javax.annotation.Nonnull
   private String cardNetwork;
 
   public static final String JSON_PROPERTY_CARD_DETAILS = "card_details";
+  @javax.annotation.Nonnull
   private String cardDetails;
 
   public static final String JSON_PROPERTY_ASSURANCE_DETAILS = "assurance_details";
+  @javax.annotation.Nullable
   private JsonNullable<GooglePayAssuranceDetails> assuranceDetails = JsonNullable.<GooglePayAssuranceDetails>undefined();
 
   public GooglePayPaymentMethodInfo() {
   }
 
-  public GooglePayPaymentMethodInfo cardNetwork(String cardNetwork) {
+  public GooglePayPaymentMethodInfo cardNetwork(@javax.annotation.Nonnull String cardNetwork) {
     
     this.cardNetwork = cardNetwork;
     return this;
   }
 
-   /**
+  /**
    * The name of the card network
    * @return cardNetwork
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_CARD_NETWORK)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -74,21 +77,20 @@ public class GooglePayPaymentMethodInfo {
 
   @JsonProperty(JSON_PROPERTY_CARD_NETWORK)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setCardNetwork(String cardNetwork) {
+  public void setCardNetwork(@javax.annotation.Nonnull String cardNetwork) {
     this.cardNetwork = cardNetwork;
   }
 
-
-  public GooglePayPaymentMethodInfo cardDetails(String cardDetails) {
+  public GooglePayPaymentMethodInfo cardDetails(@javax.annotation.Nonnull String cardDetails) {
     
     this.cardDetails = cardDetails;
     return this;
   }
 
-   /**
+  /**
    * The details of the card
    * @return cardDetails
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_CARD_DETAILS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -100,21 +102,20 @@ public class GooglePayPaymentMethodInfo {
 
   @JsonProperty(JSON_PROPERTY_CARD_DETAILS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setCardDetails(String cardDetails) {
+  public void setCardDetails(@javax.annotation.Nonnull String cardDetails) {
     this.cardDetails = cardDetails;
   }
 
-
-  public GooglePayPaymentMethodInfo assuranceDetails(GooglePayAssuranceDetails assuranceDetails) {
+  public GooglePayPaymentMethodInfo assuranceDetails(@javax.annotation.Nullable GooglePayAssuranceDetails assuranceDetails) {
     this.assuranceDetails = JsonNullable.<GooglePayAssuranceDetails>of(assuranceDetails);
     
     return this;
   }
 
-   /**
+  /**
    * Get assuranceDetails
    * @return assuranceDetails
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -134,7 +135,7 @@ public class GooglePayPaymentMethodInfo {
     this.assuranceDetails = assuranceDetails;
   }
 
-  public void setAssuranceDetails(GooglePayAssuranceDetails assuranceDetails) {
+  public void setAssuranceDetails(@javax.annotation.Nullable GooglePayAssuranceDetails assuranceDetails) {
     this.assuranceDetails = JsonNullable.<GooglePayAssuranceDetails>of(assuranceDetails);
   }
 

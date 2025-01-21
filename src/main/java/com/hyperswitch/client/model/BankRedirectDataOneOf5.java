@@ -34,24 +34,25 @@ import java.util.StringJoiner;
   BankRedirectDataOneOf5.JSON_PROPERTY_IDEAL
 })
 @JsonTypeName("BankRedirectData_oneOf_5")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class BankRedirectDataOneOf5 {
   public static final String JSON_PROPERTY_IDEAL = "ideal";
+  @javax.annotation.Nonnull
   private BankRedirectDataOneOf3Eps ideal;
 
   public BankRedirectDataOneOf5() {
   }
 
-  public BankRedirectDataOneOf5 ideal(BankRedirectDataOneOf3Eps ideal) {
+  public BankRedirectDataOneOf5 ideal(@javax.annotation.Nonnull BankRedirectDataOneOf3Eps ideal) {
     
     this.ideal = ideal;
     return this;
   }
 
-   /**
+  /**
    * Get ideal
    * @return ideal
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_IDEAL)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -63,7 +64,7 @@ public class BankRedirectDataOneOf5 {
 
   @JsonProperty(JSON_PROPERTY_IDEAL)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setIdeal(BankRedirectDataOneOf3Eps ideal) {
+  public void setIdeal(@javax.annotation.Nonnull BankRedirectDataOneOf3Eps ideal) {
     this.ideal = ideal;
   }
 

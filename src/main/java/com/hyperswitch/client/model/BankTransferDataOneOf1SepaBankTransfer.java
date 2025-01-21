@@ -40,27 +40,29 @@ import java.util.StringJoiner;
   BankTransferDataOneOf1SepaBankTransfer.JSON_PROPERTY_COUNTRY
 })
 @JsonTypeName("BankTransferData_oneOf_1_sepa_bank_transfer")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class BankTransferDataOneOf1SepaBankTransfer {
   public static final String JSON_PROPERTY_BILLING_DETAILS = "billing_details";
+  @javax.annotation.Nullable
   private JsonNullable<SepaAndBacsBillingDetails> billingDetails = JsonNullable.<SepaAndBacsBillingDetails>undefined();
 
   public static final String JSON_PROPERTY_COUNTRY = "country";
+  @javax.annotation.Nonnull
   private CountryAlpha2 country;
 
   public BankTransferDataOneOf1SepaBankTransfer() {
   }
 
-  public BankTransferDataOneOf1SepaBankTransfer billingDetails(SepaAndBacsBillingDetails billingDetails) {
+  public BankTransferDataOneOf1SepaBankTransfer billingDetails(@javax.annotation.Nullable SepaAndBacsBillingDetails billingDetails) {
     this.billingDetails = JsonNullable.<SepaAndBacsBillingDetails>of(billingDetails);
     
     return this;
   }
 
-   /**
+  /**
    * Get billingDetails
    * @return billingDetails
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -80,21 +82,20 @@ public class BankTransferDataOneOf1SepaBankTransfer {
     this.billingDetails = billingDetails;
   }
 
-  public void setBillingDetails(SepaAndBacsBillingDetails billingDetails) {
+  public void setBillingDetails(@javax.annotation.Nullable SepaAndBacsBillingDetails billingDetails) {
     this.billingDetails = JsonNullable.<SepaAndBacsBillingDetails>of(billingDetails);
   }
 
-
-  public BankTransferDataOneOf1SepaBankTransfer country(CountryAlpha2 country) {
+  public BankTransferDataOneOf1SepaBankTransfer country(@javax.annotation.Nonnull CountryAlpha2 country) {
     
     this.country = country;
     return this;
   }
 
-   /**
+  /**
    * Get country
    * @return country
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_COUNTRY)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -106,7 +107,7 @@ public class BankTransferDataOneOf1SepaBankTransfer {
 
   @JsonProperty(JSON_PROPERTY_COUNTRY)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setCountry(CountryAlpha2 country) {
+  public void setCountry(@javax.annotation.Nonnull CountryAlpha2 country) {
     this.country = country;
   }
 

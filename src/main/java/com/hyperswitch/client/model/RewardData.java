@@ -32,24 +32,25 @@ import java.util.StringJoiner;
 @JsonPropertyOrder({
   RewardData.JSON_PROPERTY_MERCHANT_ID
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class RewardData {
   public static final String JSON_PROPERTY_MERCHANT_ID = "merchant_id";
+  @javax.annotation.Nonnull
   private String merchantId;
 
   public RewardData() {
   }
 
-  public RewardData merchantId(String merchantId) {
+  public RewardData merchantId(@javax.annotation.Nonnull String merchantId) {
     
     this.merchantId = merchantId;
     return this;
   }
 
-   /**
+  /**
    * The merchant ID with which we have to call the connector
    * @return merchantId
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_MERCHANT_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -61,7 +62,7 @@ public class RewardData {
 
   @JsonProperty(JSON_PROPERTY_MERCHANT_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setMerchantId(String merchantId) {
+  public void setMerchantId(@javax.annotation.Nonnull String merchantId) {
     this.merchantId = merchantId;
   }
 

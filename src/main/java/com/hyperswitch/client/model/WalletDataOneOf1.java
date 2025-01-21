@@ -33,24 +33,25 @@ import java.util.StringJoiner;
   WalletDataOneOf1.JSON_PROPERTY_ALI_PAY_REDIRECT
 })
 @JsonTypeName("WalletData_oneOf_1")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class WalletDataOneOf1 {
   public static final String JSON_PROPERTY_ALI_PAY_REDIRECT = "ali_pay_redirect";
+  @javax.annotation.Nonnull
   private Object aliPayRedirect;
 
   public WalletDataOneOf1() {
   }
 
-  public WalletDataOneOf1 aliPayRedirect(Object aliPayRedirect) {
+  public WalletDataOneOf1 aliPayRedirect(@javax.annotation.Nonnull Object aliPayRedirect) {
     
     this.aliPayRedirect = aliPayRedirect;
     return this;
   }
 
-   /**
+  /**
    * Get aliPayRedirect
    * @return aliPayRedirect
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_ALI_PAY_REDIRECT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -62,7 +63,7 @@ public class WalletDataOneOf1 {
 
   @JsonProperty(JSON_PROPERTY_ALI_PAY_REDIRECT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setAliPayRedirect(Object aliPayRedirect) {
+  public void setAliPayRedirect(@javax.annotation.Nonnull Object aliPayRedirect) {
     this.aliPayRedirect = aliPayRedirect;
   }
 

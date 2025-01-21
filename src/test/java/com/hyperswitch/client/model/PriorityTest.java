@@ -20,23 +20,23 @@ import com.fasterxml.jackson.annotation.JsonTypeName;
 import com.fasterxml.jackson.annotation.JsonValue;
 import com.hyperswitch.client.model.RoutableConnectorChoice;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
-import org.junit.Assert;
-import org.junit.Ignore;
-import org.junit.Test;
-
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Test;
 
 /**
  * Model tests for Priority
  */
-public class PriorityTest {
+class PriorityTest {
     private final Priority model = new Priority();
 
     /**
      * Model tests for Priority
      */
     @Test
-    public void testPriority() {
+    void testPriority() {
         // TODO: test Priority
     }
 
@@ -44,7 +44,7 @@ public class PriorityTest {
      * Test the property 'type'
      */
     @Test
-    public void typeTest() {
+    void typeTest() {
         // TODO: test type
     }
 
@@ -52,7 +52,7 @@ public class PriorityTest {
      * Test the property 'data'
      */
     @Test
-    public void dataTest() {
+    void dataTest() {
         // TODO: test data
     }
 

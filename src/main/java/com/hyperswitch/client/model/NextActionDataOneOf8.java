@@ -35,16 +35,17 @@ import java.util.StringJoiner;
   NextActionDataOneOf8.JSON_PROPERTY_TYPE
 })
 @JsonTypeName("NextActionData_oneOf_8")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class NextActionDataOneOf8 {
   public static final String JSON_PROPERTY_NEXT_ACTION_DATA = "next_action_data";
+  @javax.annotation.Nonnull
   private SdkNextActionData nextActionData;
 
   /**
    * Gets or Sets type
    */
   public enum TypeEnum {
-    INVOKE_SDK_CLIENT("invoke_sdk_client");
+    INVOKE_SDK_CLIENT(String.valueOf("invoke_sdk_client"));
 
     private String value;
 
@@ -74,21 +75,22 @@ public class NextActionDataOneOf8 {
   }
 
   public static final String JSON_PROPERTY_TYPE = "type";
+  @javax.annotation.Nonnull
   private TypeEnum type;
 
   public NextActionDataOneOf8() {
   }
 
-  public NextActionDataOneOf8 nextActionData(SdkNextActionData nextActionData) {
+  public NextActionDataOneOf8 nextActionData(@javax.annotation.Nonnull SdkNextActionData nextActionData) {
     
     this.nextActionData = nextActionData;
     return this;
   }
 
-   /**
+  /**
    * Get nextActionData
    * @return nextActionData
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_NEXT_ACTION_DATA)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -100,21 +102,20 @@ public class NextActionDataOneOf8 {
 
   @JsonProperty(JSON_PROPERTY_NEXT_ACTION_DATA)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setNextActionData(SdkNextActionData nextActionData) {
+  public void setNextActionData(@javax.annotation.Nonnull SdkNextActionData nextActionData) {
     this.nextActionData = nextActionData;
   }
 
-
-  public NextActionDataOneOf8 type(TypeEnum type) {
+  public NextActionDataOneOf8 type(@javax.annotation.Nonnull TypeEnum type) {
     
     this.type = type;
     return this;
   }
 
-   /**
+  /**
    * Get type
    * @return type
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_TYPE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -126,7 +127,7 @@ public class NextActionDataOneOf8 {
 
   @JsonProperty(JSON_PROPERTY_TYPE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setType(TypeEnum type) {
+  public void setType(@javax.annotation.Nonnull TypeEnum type) {
     this.type = type;
   }
 

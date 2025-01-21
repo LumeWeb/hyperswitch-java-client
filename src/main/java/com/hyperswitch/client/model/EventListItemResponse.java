@@ -43,48 +43,57 @@ import java.util.StringJoiner;
   EventListItemResponse.JSON_PROPERTY_INITIAL_ATTEMPT_ID,
   EventListItemResponse.JSON_PROPERTY_CREATED
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class EventListItemResponse {
   public static final String JSON_PROPERTY_EVENT_ID = "event_id";
+  @javax.annotation.Nonnull
   private String eventId;
 
   public static final String JSON_PROPERTY_MERCHANT_ID = "merchant_id";
+  @javax.annotation.Nonnull
   private String merchantId;
 
   public static final String JSON_PROPERTY_PROFILE_ID = "profile_id";
+  @javax.annotation.Nonnull
   private String profileId;
 
   public static final String JSON_PROPERTY_OBJECT_ID = "object_id";
+  @javax.annotation.Nonnull
   private String objectId;
 
   public static final String JSON_PROPERTY_EVENT_TYPE = "event_type";
+  @javax.annotation.Nonnull
   private EventType eventType;
 
   public static final String JSON_PROPERTY_EVENT_CLASS = "event_class";
+  @javax.annotation.Nonnull
   private EventClass eventClass;
 
   public static final String JSON_PROPERTY_IS_DELIVERY_SUCCESSFUL = "is_delivery_successful";
+  @javax.annotation.Nonnull
   private Boolean isDeliverySuccessful;
 
   public static final String JSON_PROPERTY_INITIAL_ATTEMPT_ID = "initial_attempt_id";
+  @javax.annotation.Nonnull
   private String initialAttemptId;
 
   public static final String JSON_PROPERTY_CREATED = "created";
+  @javax.annotation.Nonnull
   private OffsetDateTime created;
 
   public EventListItemResponse() {
   }
 
-  public EventListItemResponse eventId(String eventId) {
+  public EventListItemResponse eventId(@javax.annotation.Nonnull String eventId) {
     
     this.eventId = eventId;
     return this;
   }
 
-   /**
+  /**
    * The identifier for the Event.
    * @return eventId
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_EVENT_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -96,21 +105,20 @@ public class EventListItemResponse {
 
   @JsonProperty(JSON_PROPERTY_EVENT_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setEventId(String eventId) {
+  public void setEventId(@javax.annotation.Nonnull String eventId) {
     this.eventId = eventId;
   }
 
-
-  public EventListItemResponse merchantId(String merchantId) {
+  public EventListItemResponse merchantId(@javax.annotation.Nonnull String merchantId) {
     
     this.merchantId = merchantId;
     return this;
   }
 
-   /**
+  /**
    * The identifier for the Merchant Account.
    * @return merchantId
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_MERCHANT_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -122,21 +130,20 @@ public class EventListItemResponse {
 
   @JsonProperty(JSON_PROPERTY_MERCHANT_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setMerchantId(String merchantId) {
+  public void setMerchantId(@javax.annotation.Nonnull String merchantId) {
     this.merchantId = merchantId;
   }
 
-
-  public EventListItemResponse profileId(String profileId) {
+  public EventListItemResponse profileId(@javax.annotation.Nonnull String profileId) {
     
     this.profileId = profileId;
     return this;
   }
 
-   /**
+  /**
    * The identifier for the Business Profile.
    * @return profileId
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_PROFILE_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -148,21 +155,20 @@ public class EventListItemResponse {
 
   @JsonProperty(JSON_PROPERTY_PROFILE_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setProfileId(String profileId) {
+  public void setProfileId(@javax.annotation.Nonnull String profileId) {
     this.profileId = profileId;
   }
 
-
-  public EventListItemResponse objectId(String objectId) {
+  public EventListItemResponse objectId(@javax.annotation.Nonnull String objectId) {
     
     this.objectId = objectId;
     return this;
   }
 
-   /**
+  /**
    * The identifier for the object (Payment Intent ID, Refund ID, etc.)
    * @return objectId
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_OBJECT_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -174,21 +180,20 @@ public class EventListItemResponse {
 
   @JsonProperty(JSON_PROPERTY_OBJECT_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setObjectId(String objectId) {
+  public void setObjectId(@javax.annotation.Nonnull String objectId) {
     this.objectId = objectId;
   }
 
-
-  public EventListItemResponse eventType(EventType eventType) {
+  public EventListItemResponse eventType(@javax.annotation.Nonnull EventType eventType) {
     
     this.eventType = eventType;
     return this;
   }
 
-   /**
+  /**
    * Get eventType
    * @return eventType
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_EVENT_TYPE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -200,21 +205,20 @@ public class EventListItemResponse {
 
   @JsonProperty(JSON_PROPERTY_EVENT_TYPE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setEventType(EventType eventType) {
+  public void setEventType(@javax.annotation.Nonnull EventType eventType) {
     this.eventType = eventType;
   }
 
-
-  public EventListItemResponse eventClass(EventClass eventClass) {
+  public EventListItemResponse eventClass(@javax.annotation.Nonnull EventClass eventClass) {
     
     this.eventClass = eventClass;
     return this;
   }
 
-   /**
+  /**
    * Get eventClass
    * @return eventClass
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_EVENT_CLASS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -226,21 +230,20 @@ public class EventListItemResponse {
 
   @JsonProperty(JSON_PROPERTY_EVENT_CLASS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setEventClass(EventClass eventClass) {
+  public void setEventClass(@javax.annotation.Nonnull EventClass eventClass) {
     this.eventClass = eventClass;
   }
 
-
-  public EventListItemResponse isDeliverySuccessful(Boolean isDeliverySuccessful) {
+  public EventListItemResponse isDeliverySuccessful(@javax.annotation.Nonnull Boolean isDeliverySuccessful) {
     
     this.isDeliverySuccessful = isDeliverySuccessful;
     return this;
   }
 
-   /**
+  /**
    * Indicates whether the webhook delivery attempt was successful.
    * @return isDeliverySuccessful
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_IS_DELIVERY_SUCCESSFUL)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -252,21 +255,20 @@ public class EventListItemResponse {
 
   @JsonProperty(JSON_PROPERTY_IS_DELIVERY_SUCCESSFUL)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setIsDeliverySuccessful(Boolean isDeliverySuccessful) {
+  public void setIsDeliverySuccessful(@javax.annotation.Nonnull Boolean isDeliverySuccessful) {
     this.isDeliverySuccessful = isDeliverySuccessful;
   }
 
-
-  public EventListItemResponse initialAttemptId(String initialAttemptId) {
+  public EventListItemResponse initialAttemptId(@javax.annotation.Nonnull String initialAttemptId) {
     
     this.initialAttemptId = initialAttemptId;
     return this;
   }
 
-   /**
+  /**
    * The identifier for the initial delivery attempt. This will be the same as &#x60;event_id&#x60; for the initial delivery attempt.
    * @return initialAttemptId
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_INITIAL_ATTEMPT_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -278,21 +280,20 @@ public class EventListItemResponse {
 
   @JsonProperty(JSON_PROPERTY_INITIAL_ATTEMPT_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setInitialAttemptId(String initialAttemptId) {
+  public void setInitialAttemptId(@javax.annotation.Nonnull String initialAttemptId) {
     this.initialAttemptId = initialAttemptId;
   }
 
-
-  public EventListItemResponse created(OffsetDateTime created) {
+  public EventListItemResponse created(@javax.annotation.Nonnull OffsetDateTime created) {
     
     this.created = created;
     return this;
   }
 
-   /**
+  /**
    * Time at which the event was created.
    * @return created
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_CREATED)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -304,7 +305,7 @@ public class EventListItemResponse {
 
   @JsonProperty(JSON_PROPERTY_CREATED)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setCreated(OffsetDateTime created) {
+  public void setCreated(@javax.annotation.Nonnull OffsetDateTime created) {
     this.created = created;
   }
 

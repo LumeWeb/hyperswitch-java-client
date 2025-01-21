@@ -22,6 +22,7 @@ import com.fasterxml.jackson.annotation.JsonTypeName;
 import com.fasterxml.jackson.annotation.JsonValue;
 import com.hyperswitch.client.model.PayoutCreateResponse;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import org.openapitools.jackson.nullable.JsonNullable;
 import com.fasterxml.jackson.annotation.JsonIgnore;
@@ -41,31 +42,34 @@ import java.util.StringJoiner;
   PayoutListResponse.JSON_PROPERTY_DATA,
   PayoutListResponse.JSON_PROPERTY_TOTAL_COUNT
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class PayoutListResponse {
   public static final String JSON_PROPERTY_SIZE = "size";
+  @javax.annotation.Nonnull
   private Integer size;
 
   public static final String JSON_PROPERTY_DATA = "data";
+  @javax.annotation.Nonnull
   private List<PayoutCreateResponse> data = new ArrayList<>();
 
   public static final String JSON_PROPERTY_TOTAL_COUNT = "total_count";
+  @javax.annotation.Nullable
   private JsonNullable<Long> totalCount = JsonNullable.<Long>undefined();
 
   public PayoutListResponse() {
   }
 
-  public PayoutListResponse size(Integer size) {
+  public PayoutListResponse size(@javax.annotation.Nonnull Integer size) {
     
     this.size = size;
     return this;
   }
 
-   /**
+  /**
    * The number of payouts included in the list
    * minimum: 0
    * @return size
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_SIZE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -77,12 +81,11 @@ public class PayoutListResponse {
 
   @JsonProperty(JSON_PROPERTY_SIZE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setSize(Integer size) {
+  public void setSize(@javax.annotation.Nonnull Integer size) {
     this.size = size;
   }
 
-
-  public PayoutListResponse data(List<PayoutCreateResponse> data) {
+  public PayoutListResponse data(@javax.annotation.Nonnull List<PayoutCreateResponse> data) {
     
     this.data = data;
     return this;
@@ -96,10 +99,10 @@ public class PayoutListResponse {
     return this;
   }
 
-   /**
+  /**
    * The list of payouts response objects
    * @return data
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_DATA)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -111,21 +114,20 @@ public class PayoutListResponse {
 
   @JsonProperty(JSON_PROPERTY_DATA)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setData(List<PayoutCreateResponse> data) {
+  public void setData(@javax.annotation.Nonnull List<PayoutCreateResponse> data) {
     this.data = data;
   }
 
-
-  public PayoutListResponse totalCount(Long totalCount) {
+  public PayoutListResponse totalCount(@javax.annotation.Nullable Long totalCount) {
     this.totalCount = JsonNullable.<Long>of(totalCount);
     
     return this;
   }
 
-   /**
+  /**
    * The total number of available payouts for given constraints
    * @return totalCount
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -145,7 +147,7 @@ public class PayoutListResponse {
     this.totalCount = totalCount;
   }
 
-  public void setTotalCount(Long totalCount) {
+  public void setTotalCount(@javax.annotation.Nullable Long totalCount) {
     this.totalCount = JsonNullable.<Long>of(totalCount);
   }
 

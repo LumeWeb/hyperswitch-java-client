@@ -34,24 +34,25 @@ import java.util.StringJoiner;
   WalletDataOneOf19.JSON_PROPERTY_SAMSUNG_PAY
 })
 @JsonTypeName("WalletData_oneOf_19")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class WalletDataOneOf19 {
   public static final String JSON_PROPERTY_SAMSUNG_PAY = "samsung_pay";
+  @javax.annotation.Nonnull
   private SamsungPayWalletData samsungPay;
 
   public WalletDataOneOf19() {
   }
 
-  public WalletDataOneOf19 samsungPay(SamsungPayWalletData samsungPay) {
+  public WalletDataOneOf19 samsungPay(@javax.annotation.Nonnull SamsungPayWalletData samsungPay) {
     
     this.samsungPay = samsungPay;
     return this;
   }
 
-   /**
+  /**
    * Get samsungPay
    * @return samsungPay
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_SAMSUNG_PAY)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -63,7 +64,7 @@ public class WalletDataOneOf19 {
 
   @JsonProperty(JSON_PROPERTY_SAMSUNG_PAY)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setSamsungPay(SamsungPayWalletData samsungPay) {
+  public void setSamsungPay(@javax.annotation.Nonnull SamsungPayWalletData samsungPay) {
     this.samsungPay = samsungPay;
   }
 

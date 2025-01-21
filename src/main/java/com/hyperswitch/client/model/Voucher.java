@@ -33,24 +33,25 @@ import java.util.StringJoiner;
 @JsonPropertyOrder({
   Voucher.JSON_PROPERTY_VOUCHER
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class Voucher {
   public static final String JSON_PROPERTY_VOUCHER = "voucher";
+  @javax.annotation.Nonnull
   private VoucherData voucher;
 
   public Voucher() {
   }
 
-  public Voucher voucher(VoucherData voucher) {
+  public Voucher voucher(@javax.annotation.Nonnull VoucherData voucher) {
     
     this.voucher = voucher;
     return this;
   }
 
-   /**
+  /**
    * Get voucher
    * @return voucher
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_VOUCHER)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -62,7 +63,7 @@ public class Voucher {
 
   @JsonProperty(JSON_PROPERTY_VOUCHER)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setVoucher(VoucherData voucher) {
+  public void setVoucher(@javax.annotation.Nonnull VoucherData voucher) {
     this.voucher = voucher;
   }
 

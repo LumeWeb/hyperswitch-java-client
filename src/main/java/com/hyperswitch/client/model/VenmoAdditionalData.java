@@ -36,24 +36,25 @@ import java.util.StringJoiner;
 @JsonPropertyOrder({
   VenmoAdditionalData.JSON_PROPERTY_TELEPHONE_NUMBER
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class VenmoAdditionalData {
   public static final String JSON_PROPERTY_TELEPHONE_NUMBER = "telephone_number";
+  @javax.annotation.Nullable
   private JsonNullable<String> telephoneNumber = JsonNullable.<String>undefined();
 
   public VenmoAdditionalData() {
   }
 
-  public VenmoAdditionalData telephoneNumber(String telephoneNumber) {
+  public VenmoAdditionalData telephoneNumber(@javax.annotation.Nullable String telephoneNumber) {
     this.telephoneNumber = JsonNullable.<String>of(telephoneNumber);
     
     return this;
   }
 
-   /**
+  /**
    * mobile number linked to venmo account
    * @return telephoneNumber
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -73,7 +74,7 @@ public class VenmoAdditionalData {
     this.telephoneNumber = telephoneNumber;
   }
 
-  public void setTelephoneNumber(String telephoneNumber) {
+  public void setTelephoneNumber(@javax.annotation.Nullable String telephoneNumber) {
     this.telephoneNumber = JsonNullable.<String>of(telephoneNumber);
   }
 

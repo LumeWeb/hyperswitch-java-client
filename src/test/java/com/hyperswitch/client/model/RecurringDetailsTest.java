@@ -26,22 +26,21 @@ import com.hyperswitch.client.model.RecurringDetailsOneOf;
 import com.hyperswitch.client.model.RecurringDetailsOneOf1;
 import com.hyperswitch.client.model.RecurringDetailsOneOf2;
 import com.hyperswitch.client.model.RecurringDetailsOneOf3;
-import org.junit.Assert;
-import org.junit.Ignore;
-import org.junit.Test;
-
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Test;
 
 /**
  * Model tests for RecurringDetails
  */
-public class RecurringDetailsTest {
+class RecurringDetailsTest {
     private final RecurringDetails model = new RecurringDetails();
 
     /**
      * Model tests for RecurringDetails
      */
     @Test
-    public void testRecurringDetails() {
+    void testRecurringDetails() {
         // TODO: test RecurringDetails
     }
 
@@ -49,7 +48,7 @@ public class RecurringDetailsTest {
      * Test the property 'type'
      */
     @Test
-    public void typeTest() {
+    void typeTest() {
         // TODO: test type
     }
 
@@ -57,7 +56,7 @@ public class RecurringDetailsTest {
      * Test the property 'data'
      */
     @Test
-    public void dataTest() {
+    void dataTest() {
         // TODO: test data
     }
 

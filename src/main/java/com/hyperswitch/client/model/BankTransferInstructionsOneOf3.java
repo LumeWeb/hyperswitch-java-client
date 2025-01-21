@@ -34,24 +34,25 @@ import java.util.StringJoiner;
   BankTransferInstructionsOneOf3.JSON_PROPERTY_BACS_BANK_INSTRUCTIONS
 })
 @JsonTypeName("BankTransferInstructions_oneOf_3")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class BankTransferInstructionsOneOf3 {
   public static final String JSON_PROPERTY_BACS_BANK_INSTRUCTIONS = "bacs_bank_instructions";
+  @javax.annotation.Nonnull
   private BacsBankTransferInstructions bacsBankInstructions;
 
   public BankTransferInstructionsOneOf3() {
   }
 
-  public BankTransferInstructionsOneOf3 bacsBankInstructions(BacsBankTransferInstructions bacsBankInstructions) {
+  public BankTransferInstructionsOneOf3 bacsBankInstructions(@javax.annotation.Nonnull BacsBankTransferInstructions bacsBankInstructions) {
     
     this.bacsBankInstructions = bacsBankInstructions;
     return this;
   }
 
-   /**
+  /**
    * Get bacsBankInstructions
    * @return bacsBankInstructions
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_BACS_BANK_INSTRUCTIONS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -63,7 +64,7 @@ public class BankTransferInstructionsOneOf3 {
 
   @JsonProperty(JSON_PROPERTY_BACS_BANK_INSTRUCTIONS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setBacsBankInstructions(BacsBankTransferInstructions bacsBankInstructions) {
+  public void setBacsBankInstructions(@javax.annotation.Nonnull BacsBankTransferInstructions bacsBankInstructions) {
     this.bacsBankInstructions = bacsBankInstructions;
   }
 

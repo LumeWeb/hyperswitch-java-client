@@ -35,30 +35,33 @@ import java.util.StringJoiner;
   ListBlocklistQuery.JSON_PROPERTY_LIMIT,
   ListBlocklistQuery.JSON_PROPERTY_OFFSET
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class ListBlocklistQuery {
   public static final String JSON_PROPERTY_DATA_KIND = "data_kind";
+  @javax.annotation.Nonnull
   private BlocklistDataKind dataKind;
 
   public static final String JSON_PROPERTY_LIMIT = "limit";
+  @javax.annotation.Nullable
   private Integer limit;
 
   public static final String JSON_PROPERTY_OFFSET = "offset";
+  @javax.annotation.Nullable
   private Integer offset;
 
   public ListBlocklistQuery() {
   }
 
-  public ListBlocklistQuery dataKind(BlocklistDataKind dataKind) {
+  public ListBlocklistQuery dataKind(@javax.annotation.Nonnull BlocklistDataKind dataKind) {
     
     this.dataKind = dataKind;
     return this;
   }
 
-   /**
+  /**
    * Get dataKind
    * @return dataKind
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_DATA_KIND)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -70,22 +73,21 @@ public class ListBlocklistQuery {
 
   @JsonProperty(JSON_PROPERTY_DATA_KIND)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setDataKind(BlocklistDataKind dataKind) {
+  public void setDataKind(@javax.annotation.Nonnull BlocklistDataKind dataKind) {
     this.dataKind = dataKind;
   }
 
-
-  public ListBlocklistQuery limit(Integer limit) {
+  public ListBlocklistQuery limit(@javax.annotation.Nullable Integer limit) {
     
     this.limit = limit;
     return this;
   }
 
-   /**
+  /**
    * Get limit
    * minimum: 0
    * @return limit
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_LIMIT)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -97,22 +99,21 @@ public class ListBlocklistQuery {
 
   @JsonProperty(JSON_PROPERTY_LIMIT)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setLimit(Integer limit) {
+  public void setLimit(@javax.annotation.Nullable Integer limit) {
     this.limit = limit;
   }
 
-
-  public ListBlocklistQuery offset(Integer offset) {
+  public ListBlocklistQuery offset(@javax.annotation.Nullable Integer offset) {
     
     this.offset = offset;
     return this;
   }
 
-   /**
+  /**
    * Get offset
    * minimum: 0
    * @return offset
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_OFFSET)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -124,7 +125,7 @@ public class ListBlocklistQuery {
 
   @JsonProperty(JSON_PROPERTY_OFFSET)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setOffset(Integer offset) {
+  public void setOffset(@javax.annotation.Nullable Integer offset) {
     this.offset = offset;
   }
 

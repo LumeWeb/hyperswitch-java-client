@@ -37,27 +37,29 @@ import java.util.StringJoiner;
   AmountFilter.JSON_PROPERTY_START_AMOUNT,
   AmountFilter.JSON_PROPERTY_END_AMOUNT
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class AmountFilter {
   public static final String JSON_PROPERTY_START_AMOUNT = "start_amount";
+  @javax.annotation.Nullable
   private JsonNullable<Long> startAmount = JsonNullable.<Long>undefined();
 
   public static final String JSON_PROPERTY_END_AMOUNT = "end_amount";
+  @javax.annotation.Nullable
   private JsonNullable<Long> endAmount = JsonNullable.<Long>undefined();
 
   public AmountFilter() {
   }
 
-  public AmountFilter startAmount(Long startAmount) {
+  public AmountFilter startAmount(@javax.annotation.Nullable Long startAmount) {
     this.startAmount = JsonNullable.<Long>of(startAmount);
     
     return this;
   }
 
-   /**
+  /**
    * The start amount to filter list of transactions which are greater than or equal to the start amount
    * @return startAmount
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -77,21 +79,20 @@ public class AmountFilter {
     this.startAmount = startAmount;
   }
 
-  public void setStartAmount(Long startAmount) {
+  public void setStartAmount(@javax.annotation.Nullable Long startAmount) {
     this.startAmount = JsonNullable.<Long>of(startAmount);
   }
 
-
-  public AmountFilter endAmount(Long endAmount) {
+  public AmountFilter endAmount(@javax.annotation.Nullable Long endAmount) {
     this.endAmount = JsonNullable.<Long>of(endAmount);
     
     return this;
   }
 
-   /**
+  /**
    * The end amount to filter list of transactions which are less than or equal to the end amount
    * @return endAmount
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -111,7 +112,7 @@ public class AmountFilter {
     this.endAmount = endAmount;
   }
 
-  public void setEndAmount(Long endAmount) {
+  public void setEndAmount(@javax.annotation.Nullable Long endAmount) {
     this.endAmount = JsonNullable.<Long>of(endAmount);
   }
 

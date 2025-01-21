@@ -41,33 +41,37 @@ import java.util.StringJoiner;
   BankDebitDataOneOf2BecsBankDebit.JSON_PROPERTY_BANK_ACCOUNT_HOLDER_NAME
 })
 @JsonTypeName("BankDebitData_oneOf_2_becs_bank_debit")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class BankDebitDataOneOf2BecsBankDebit {
   public static final String JSON_PROPERTY_BILLING_DETAILS = "billing_details";
+  @javax.annotation.Nullable
   private JsonNullable<BankDebitBilling> billingDetails = JsonNullable.<BankDebitBilling>undefined();
 
   public static final String JSON_PROPERTY_ACCOUNT_NUMBER = "account_number";
+  @javax.annotation.Nonnull
   private String accountNumber;
 
   public static final String JSON_PROPERTY_BSB_NUMBER = "bsb_number";
+  @javax.annotation.Nonnull
   private String bsbNumber;
 
   public static final String JSON_PROPERTY_BANK_ACCOUNT_HOLDER_NAME = "bank_account_holder_name";
+  @javax.annotation.Nullable
   private JsonNullable<String> bankAccountHolderName = JsonNullable.<String>undefined();
 
   public BankDebitDataOneOf2BecsBankDebit() {
   }
 
-  public BankDebitDataOneOf2BecsBankDebit billingDetails(BankDebitBilling billingDetails) {
+  public BankDebitDataOneOf2BecsBankDebit billingDetails(@javax.annotation.Nullable BankDebitBilling billingDetails) {
     this.billingDetails = JsonNullable.<BankDebitBilling>of(billingDetails);
     
     return this;
   }
 
-   /**
+  /**
    * Get billingDetails
    * @return billingDetails
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -87,21 +91,20 @@ public class BankDebitDataOneOf2BecsBankDebit {
     this.billingDetails = billingDetails;
   }
 
-  public void setBillingDetails(BankDebitBilling billingDetails) {
+  public void setBillingDetails(@javax.annotation.Nullable BankDebitBilling billingDetails) {
     this.billingDetails = JsonNullable.<BankDebitBilling>of(billingDetails);
   }
 
-
-  public BankDebitDataOneOf2BecsBankDebit accountNumber(String accountNumber) {
+  public BankDebitDataOneOf2BecsBankDebit accountNumber(@javax.annotation.Nonnull String accountNumber) {
     
     this.accountNumber = accountNumber;
     return this;
   }
 
-   /**
+  /**
    * Account number for Becs payment method
    * @return accountNumber
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_ACCOUNT_NUMBER)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -113,21 +116,20 @@ public class BankDebitDataOneOf2BecsBankDebit {
 
   @JsonProperty(JSON_PROPERTY_ACCOUNT_NUMBER)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setAccountNumber(String accountNumber) {
+  public void setAccountNumber(@javax.annotation.Nonnull String accountNumber) {
     this.accountNumber = accountNumber;
   }
 
-
-  public BankDebitDataOneOf2BecsBankDebit bsbNumber(String bsbNumber) {
+  public BankDebitDataOneOf2BecsBankDebit bsbNumber(@javax.annotation.Nonnull String bsbNumber) {
     
     this.bsbNumber = bsbNumber;
     return this;
   }
 
-   /**
+  /**
    * Bank-State-Branch (bsb) number
    * @return bsbNumber
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_BSB_NUMBER)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -139,21 +141,20 @@ public class BankDebitDataOneOf2BecsBankDebit {
 
   @JsonProperty(JSON_PROPERTY_BSB_NUMBER)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setBsbNumber(String bsbNumber) {
+  public void setBsbNumber(@javax.annotation.Nonnull String bsbNumber) {
     this.bsbNumber = bsbNumber;
   }
 
-
-  public BankDebitDataOneOf2BecsBankDebit bankAccountHolderName(String bankAccountHolderName) {
+  public BankDebitDataOneOf2BecsBankDebit bankAccountHolderName(@javax.annotation.Nullable String bankAccountHolderName) {
     this.bankAccountHolderName = JsonNullable.<String>of(bankAccountHolderName);
     
     return this;
   }
 
-   /**
+  /**
    * Owner name for bank debit
    * @return bankAccountHolderName
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -173,7 +174,7 @@ public class BankDebitDataOneOf2BecsBankDebit {
     this.bankAccountHolderName = bankAccountHolderName;
   }
 
-  public void setBankAccountHolderName(String bankAccountHolderName) {
+  public void setBankAccountHolderName(@javax.annotation.Nullable String bankAccountHolderName) {
     this.bankAccountHolderName = JsonNullable.<String>of(bankAccountHolderName);
   }
 

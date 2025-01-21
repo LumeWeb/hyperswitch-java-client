@@ -38,30 +38,33 @@ import java.util.StringJoiner;
   ProgramConnectorSelection.JSON_PROPERTY_RULES,
   ProgramConnectorSelection.JSON_PROPERTY_METADATA
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class ProgramConnectorSelection {
   public static final String JSON_PROPERTY_DEFAULT_SELECTION = "defaultSelection";
+  @javax.annotation.Nonnull
   private ConnectorSelection defaultSelection;
 
   public static final String JSON_PROPERTY_RULES = "rules";
+  @javax.annotation.Nonnull
   private RuleConnectorSelection rules;
 
   public static final String JSON_PROPERTY_METADATA = "metadata";
+  @javax.annotation.Nonnull
   private Map<String, Object> metadata = new HashMap<>();
 
   public ProgramConnectorSelection() {
   }
 
-  public ProgramConnectorSelection defaultSelection(ConnectorSelection defaultSelection) {
+  public ProgramConnectorSelection defaultSelection(@javax.annotation.Nonnull ConnectorSelection defaultSelection) {
     
     this.defaultSelection = defaultSelection;
     return this;
   }
 
-   /**
+  /**
    * Get defaultSelection
    * @return defaultSelection
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_DEFAULT_SELECTION)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -73,21 +76,20 @@ public class ProgramConnectorSelection {
 
   @JsonProperty(JSON_PROPERTY_DEFAULT_SELECTION)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setDefaultSelection(ConnectorSelection defaultSelection) {
+  public void setDefaultSelection(@javax.annotation.Nonnull ConnectorSelection defaultSelection) {
     this.defaultSelection = defaultSelection;
   }
 
-
-  public ProgramConnectorSelection rules(RuleConnectorSelection rules) {
+  public ProgramConnectorSelection rules(@javax.annotation.Nonnull RuleConnectorSelection rules) {
     
     this.rules = rules;
     return this;
   }
 
-   /**
+  /**
    * Get rules
    * @return rules
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_RULES)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -99,12 +101,11 @@ public class ProgramConnectorSelection {
 
   @JsonProperty(JSON_PROPERTY_RULES)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setRules(RuleConnectorSelection rules) {
+  public void setRules(@javax.annotation.Nonnull RuleConnectorSelection rules) {
     this.rules = rules;
   }
 
-
-  public ProgramConnectorSelection metadata(Map<String, Object> metadata) {
+  public ProgramConnectorSelection metadata(@javax.annotation.Nonnull Map<String, Object> metadata) {
     
     this.metadata = metadata;
     return this;
@@ -115,10 +116,10 @@ public class ProgramConnectorSelection {
     return this;
   }
 
-   /**
+  /**
    * Get metadata
    * @return metadata
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_METADATA)
   @JsonInclude(content = JsonInclude.Include.ALWAYS, value = JsonInclude.Include.ALWAYS)
@@ -130,7 +131,7 @@ public class ProgramConnectorSelection {
 
   @JsonProperty(JSON_PROPERTY_METADATA)
   @JsonInclude(content = JsonInclude.Include.ALWAYS, value = JsonInclude.Include.ALWAYS)
-  public void setMetadata(Map<String, Object> metadata) {
+  public void setMetadata(@javax.annotation.Nonnull Map<String, Object> metadata) {
     this.metadata = metadata;
   }
 

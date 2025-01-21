@@ -34,24 +34,25 @@ import java.util.StringJoiner;
   BankRedirectDataOneOf15.JSON_PROPERTY_ONLINE_BANKING_FPX
 })
 @JsonTypeName("BankRedirectData_oneOf_15")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class BankRedirectDataOneOf15 {
   public static final String JSON_PROPERTY_ONLINE_BANKING_FPX = "online_banking_fpx";
+  @javax.annotation.Nonnull
   private BankRedirectDataOneOf7OnlineBankingCzechRepublic onlineBankingFpx;
 
   public BankRedirectDataOneOf15() {
   }
 
-  public BankRedirectDataOneOf15 onlineBankingFpx(BankRedirectDataOneOf7OnlineBankingCzechRepublic onlineBankingFpx) {
+  public BankRedirectDataOneOf15 onlineBankingFpx(@javax.annotation.Nonnull BankRedirectDataOneOf7OnlineBankingCzechRepublic onlineBankingFpx) {
     
     this.onlineBankingFpx = onlineBankingFpx;
     return this;
   }
 
-   /**
+  /**
    * Get onlineBankingFpx
    * @return onlineBankingFpx
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_ONLINE_BANKING_FPX)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -63,7 +64,7 @@ public class BankRedirectDataOneOf15 {
 
   @JsonProperty(JSON_PROPERTY_ONLINE_BANKING_FPX)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setOnlineBankingFpx(BankRedirectDataOneOf7OnlineBankingCzechRepublic onlineBankingFpx) {
+  public void setOnlineBankingFpx(@javax.annotation.Nonnull BankRedirectDataOneOf7OnlineBankingCzechRepublic onlineBankingFpx) {
     this.onlineBankingFpx = onlineBankingFpx;
   }
 

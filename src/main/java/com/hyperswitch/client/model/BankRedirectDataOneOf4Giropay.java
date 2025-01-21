@@ -42,33 +42,37 @@ import java.util.StringJoiner;
   BankRedirectDataOneOf4Giropay.JSON_PROPERTY_COUNTRY
 })
 @JsonTypeName("BankRedirectData_oneOf_4_giropay")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class BankRedirectDataOneOf4Giropay {
   public static final String JSON_PROPERTY_BILLING_DETAILS = "billing_details";
+  @javax.annotation.Nullable
   private JsonNullable<BankRedirectBilling> billingDetails = JsonNullable.<BankRedirectBilling>undefined();
 
   public static final String JSON_PROPERTY_BANK_ACCOUNT_BIC = "bank_account_bic";
+  @javax.annotation.Nullable
   private JsonNullable<String> bankAccountBic = JsonNullable.<String>undefined();
 
   public static final String JSON_PROPERTY_BANK_ACCOUNT_IBAN = "bank_account_iban";
+  @javax.annotation.Nullable
   private JsonNullable<String> bankAccountIban = JsonNullable.<String>undefined();
 
   public static final String JSON_PROPERTY_COUNTRY = "country";
+  @javax.annotation.Nonnull
   private CountryAlpha2 country;
 
   public BankRedirectDataOneOf4Giropay() {
   }
 
-  public BankRedirectDataOneOf4Giropay billingDetails(BankRedirectBilling billingDetails) {
+  public BankRedirectDataOneOf4Giropay billingDetails(@javax.annotation.Nullable BankRedirectBilling billingDetails) {
     this.billingDetails = JsonNullable.<BankRedirectBilling>of(billingDetails);
     
     return this;
   }
 
-   /**
+  /**
    * Get billingDetails
    * @return billingDetails
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -88,21 +92,20 @@ public class BankRedirectDataOneOf4Giropay {
     this.billingDetails = billingDetails;
   }
 
-  public void setBillingDetails(BankRedirectBilling billingDetails) {
+  public void setBillingDetails(@javax.annotation.Nullable BankRedirectBilling billingDetails) {
     this.billingDetails = JsonNullable.<BankRedirectBilling>of(billingDetails);
   }
 
-
-  public BankRedirectDataOneOf4Giropay bankAccountBic(String bankAccountBic) {
+  public BankRedirectDataOneOf4Giropay bankAccountBic(@javax.annotation.Nullable String bankAccountBic) {
     this.bankAccountBic = JsonNullable.<String>of(bankAccountBic);
     
     return this;
   }
 
-   /**
+  /**
    * Bank account bic code
    * @return bankAccountBic
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -122,21 +125,20 @@ public class BankRedirectDataOneOf4Giropay {
     this.bankAccountBic = bankAccountBic;
   }
 
-  public void setBankAccountBic(String bankAccountBic) {
+  public void setBankAccountBic(@javax.annotation.Nullable String bankAccountBic) {
     this.bankAccountBic = JsonNullable.<String>of(bankAccountBic);
   }
 
-
-  public BankRedirectDataOneOf4Giropay bankAccountIban(String bankAccountIban) {
+  public BankRedirectDataOneOf4Giropay bankAccountIban(@javax.annotation.Nullable String bankAccountIban) {
     this.bankAccountIban = JsonNullable.<String>of(bankAccountIban);
     
     return this;
   }
 
-   /**
+  /**
    * Bank account iban
    * @return bankAccountIban
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -156,21 +158,20 @@ public class BankRedirectDataOneOf4Giropay {
     this.bankAccountIban = bankAccountIban;
   }
 
-  public void setBankAccountIban(String bankAccountIban) {
+  public void setBankAccountIban(@javax.annotation.Nullable String bankAccountIban) {
     this.bankAccountIban = JsonNullable.<String>of(bankAccountIban);
   }
 
-
-  public BankRedirectDataOneOf4Giropay country(CountryAlpha2 country) {
+  public BankRedirectDataOneOf4Giropay country(@javax.annotation.Nonnull CountryAlpha2 country) {
     
     this.country = country;
     return this;
   }
 
-   /**
+  /**
    * Get country
    * @return country
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_COUNTRY)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -182,7 +183,7 @@ public class BankRedirectDataOneOf4Giropay {
 
   @JsonProperty(JSON_PROPERTY_COUNTRY)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setCountry(CountryAlpha2 country) {
+  public void setCountry(@javax.annotation.Nonnull CountryAlpha2 country) {
     this.country = country;
   }
 

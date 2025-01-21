@@ -33,27 +33,29 @@ import java.util.StringJoiner;
   GiftCardDetails.JSON_PROPERTY_NUMBER,
   GiftCardDetails.JSON_PROPERTY_CVC
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class GiftCardDetails {
   public static final String JSON_PROPERTY_NUMBER = "number";
+  @javax.annotation.Nonnull
   private String number;
 
   public static final String JSON_PROPERTY_CVC = "cvc";
+  @javax.annotation.Nonnull
   private String cvc;
 
   public GiftCardDetails() {
   }
 
-  public GiftCardDetails number(String number) {
+  public GiftCardDetails number(@javax.annotation.Nonnull String number) {
     
     this.number = number;
     return this;
   }
 
-   /**
+  /**
    * The gift card number
    * @return number
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_NUMBER)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -65,21 +67,20 @@ public class GiftCardDetails {
 
   @JsonProperty(JSON_PROPERTY_NUMBER)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setNumber(String number) {
+  public void setNumber(@javax.annotation.Nonnull String number) {
     this.number = number;
   }
 
-
-  public GiftCardDetails cvc(String cvc) {
+  public GiftCardDetails cvc(@javax.annotation.Nonnull String cvc) {
     
     this.cvc = cvc;
     return this;
   }
 
-   /**
+  /**
    * The card verification code.
    * @return cvc
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_CVC)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -91,7 +92,7 @@ public class GiftCardDetails {
 
   @JsonProperty(JSON_PROPERTY_CVC)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setCvc(String cvc) {
+  public void setCvc(@javax.annotation.Nonnull String cvc) {
     this.cvc = cvc;
   }
 

@@ -18,22 +18,21 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonTypeName;
 import com.fasterxml.jackson.annotation.JsonValue;
-import org.junit.Assert;
-import org.junit.Ignore;
-import org.junit.Test;
-
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Test;
 
 /**
  * Model tests for SecretInfoToInitiateSdk
  */
-public class SecretInfoToInitiateSdkTest {
+class SecretInfoToInitiateSdkTest {
     private final SecretInfoToInitiateSdk model = new SecretInfoToInitiateSdk();
 
     /**
      * Model tests for SecretInfoToInitiateSdk
      */
     @Test
-    public void testSecretInfoToInitiateSdk() {
+    void testSecretInfoToInitiateSdk() {
         // TODO: test SecretInfoToInitiateSdk
     }
 
@@ -41,7 +40,7 @@ public class SecretInfoToInitiateSdkTest {
      * Test the property 'display'
      */
     @Test
-    public void displayTest() {
+    void displayTest() {
         // TODO: test display
     }
 
@@ -49,7 +48,7 @@ public class SecretInfoToInitiateSdkTest {
      * Test the property 'payment'
      */
     @Test
-    public void paymentTest() {
+    void paymentTest() {
         // TODO: test payment
     }
 

@@ -35,13 +35,13 @@ import java.util.StringJoiner;
   MandateResponse1.JSON_PROPERTY_OBJECT
 })
 @JsonTypeName("MandateResponse_1")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class MandateResponse1 {
   /**
    * Gets or Sets type
    */
   public enum TypeEnum {
-    MANDATE_DETAILS("mandate_details");
+    MANDATE_DETAILS(String.valueOf("mandate_details"));
 
     private String value;
 
@@ -71,24 +71,26 @@ public class MandateResponse1 {
   }
 
   public static final String JSON_PROPERTY_TYPE = "type";
+  @javax.annotation.Nonnull
   private TypeEnum type;
 
   public static final String JSON_PROPERTY_OBJECT = "object";
+  @javax.annotation.Nonnull
   private MandateResponse _object;
 
   public MandateResponse1() {
   }
 
-  public MandateResponse1 type(TypeEnum type) {
+  public MandateResponse1 type(@javax.annotation.Nonnull TypeEnum type) {
     
     this.type = type;
     return this;
   }
 
-   /**
+  /**
    * Get type
    * @return type
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_TYPE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -100,21 +102,20 @@ public class MandateResponse1 {
 
   @JsonProperty(JSON_PROPERTY_TYPE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setType(TypeEnum type) {
+  public void setType(@javax.annotation.Nonnull TypeEnum type) {
     this.type = type;
   }
 
-
-  public MandateResponse1 _object(MandateResponse _object) {
+  public MandateResponse1 _object(@javax.annotation.Nonnull MandateResponse _object) {
     
     this._object = _object;
     return this;
   }
 
-   /**
+  /**
    * Get _object
    * @return _object
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_OBJECT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -126,7 +127,7 @@ public class MandateResponse1 {
 
   @JsonProperty(JSON_PROPERTY_OBJECT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setObject(MandateResponse _object) {
+  public void setObject(@javax.annotation.Nonnull MandateResponse _object) {
     this._object = _object;
   }
 

@@ -33,24 +33,25 @@ import java.util.StringJoiner;
 @JsonPropertyOrder({
   Upi.JSON_PROPERTY_UPI
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class Upi {
   public static final String JSON_PROPERTY_UPI = "upi";
+  @javax.annotation.Nonnull
   private UpiData upi;
 
   public Upi() {
   }
 
-  public Upi upi(UpiData upi) {
+  public Upi upi(@javax.annotation.Nonnull UpiData upi) {
     
     this.upi = upi;
     return this;
   }
 
-   /**
+  /**
    * Get upi
    * @return upi
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_UPI)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -62,7 +63,7 @@ public class Upi {
 
   @JsonProperty(JSON_PROPERTY_UPI)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setUpi(UpiData upi) {
+  public void setUpi(@javax.annotation.Nonnull UpiData upi) {
     this.upi = upi;
   }
 

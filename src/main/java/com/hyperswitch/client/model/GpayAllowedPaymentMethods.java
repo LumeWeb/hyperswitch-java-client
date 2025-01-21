@@ -36,30 +36,33 @@ import java.util.StringJoiner;
   GpayAllowedPaymentMethods.JSON_PROPERTY_PARAMETERS,
   GpayAllowedPaymentMethods.JSON_PROPERTY_TOKENIZATION_SPECIFICATION
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class GpayAllowedPaymentMethods {
   public static final String JSON_PROPERTY_TYPE = "type";
+  @javax.annotation.Nonnull
   private String type;
 
   public static final String JSON_PROPERTY_PARAMETERS = "parameters";
+  @javax.annotation.Nonnull
   private GpayAllowedMethodsParameters parameters;
 
   public static final String JSON_PROPERTY_TOKENIZATION_SPECIFICATION = "tokenization_specification";
+  @javax.annotation.Nonnull
   private GpayTokenizationSpecification tokenizationSpecification;
 
   public GpayAllowedPaymentMethods() {
   }
 
-  public GpayAllowedPaymentMethods type(String type) {
+  public GpayAllowedPaymentMethods type(@javax.annotation.Nonnull String type) {
     
     this.type = type;
     return this;
   }
 
-   /**
+  /**
    * The type of payment method
    * @return type
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_TYPE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -71,21 +74,20 @@ public class GpayAllowedPaymentMethods {
 
   @JsonProperty(JSON_PROPERTY_TYPE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setType(String type) {
+  public void setType(@javax.annotation.Nonnull String type) {
     this.type = type;
   }
 
-
-  public GpayAllowedPaymentMethods parameters(GpayAllowedMethodsParameters parameters) {
+  public GpayAllowedPaymentMethods parameters(@javax.annotation.Nonnull GpayAllowedMethodsParameters parameters) {
     
     this.parameters = parameters;
     return this;
   }
 
-   /**
+  /**
    * Get parameters
    * @return parameters
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_PARAMETERS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -97,21 +99,20 @@ public class GpayAllowedPaymentMethods {
 
   @JsonProperty(JSON_PROPERTY_PARAMETERS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setParameters(GpayAllowedMethodsParameters parameters) {
+  public void setParameters(@javax.annotation.Nonnull GpayAllowedMethodsParameters parameters) {
     this.parameters = parameters;
   }
 
-
-  public GpayAllowedPaymentMethods tokenizationSpecification(GpayTokenizationSpecification tokenizationSpecification) {
+  public GpayAllowedPaymentMethods tokenizationSpecification(@javax.annotation.Nonnull GpayTokenizationSpecification tokenizationSpecification) {
     
     this.tokenizationSpecification = tokenizationSpecification;
     return this;
   }
 
-   /**
+  /**
    * Get tokenizationSpecification
    * @return tokenizationSpecification
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_TOKENIZATION_SPECIFICATION)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -123,7 +124,7 @@ public class GpayAllowedPaymentMethods {
 
   @JsonProperty(JSON_PROPERTY_TOKENIZATION_SPECIFICATION)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setTokenizationSpecification(GpayTokenizationSpecification tokenizationSpecification) {
+  public void setTokenizationSpecification(@javax.annotation.Nonnull GpayTokenizationSpecification tokenizationSpecification) {
     this.tokenizationSpecification = tokenizationSpecification;
   }
 

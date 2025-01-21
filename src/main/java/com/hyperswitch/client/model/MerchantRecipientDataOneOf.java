@@ -33,24 +33,25 @@ import java.util.StringJoiner;
   MerchantRecipientDataOneOf.JSON_PROPERTY_CONNECTOR_RECIPIENT_ID
 })
 @JsonTypeName("MerchantRecipientData_oneOf")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class MerchantRecipientDataOneOf {
   public static final String JSON_PROPERTY_CONNECTOR_RECIPIENT_ID = "connector_recipient_id";
+  @javax.annotation.Nullable
   private String connectorRecipientId;
 
   public MerchantRecipientDataOneOf() {
   }
 
-  public MerchantRecipientDataOneOf connectorRecipientId(String connectorRecipientId) {
+  public MerchantRecipientDataOneOf connectorRecipientId(@javax.annotation.Nullable String connectorRecipientId) {
     
     this.connectorRecipientId = connectorRecipientId;
     return this;
   }
 
-   /**
+  /**
    * Get connectorRecipientId
    * @return connectorRecipientId
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_CONNECTOR_RECIPIENT_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -62,7 +63,7 @@ public class MerchantRecipientDataOneOf {
 
   @JsonProperty(JSON_PROPERTY_CONNECTOR_RECIPIENT_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setConnectorRecipientId(String connectorRecipientId) {
+  public void setConnectorRecipientId(@javax.annotation.Nullable String connectorRecipientId) {
     this.connectorRecipientId = connectorRecipientId;
   }
 

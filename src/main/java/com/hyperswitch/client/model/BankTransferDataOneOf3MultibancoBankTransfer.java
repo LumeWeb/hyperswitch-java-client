@@ -38,24 +38,25 @@ import java.util.StringJoiner;
   BankTransferDataOneOf3MultibancoBankTransfer.JSON_PROPERTY_BILLING_DETAILS
 })
 @JsonTypeName("BankTransferData_oneOf_3_multibanco_bank_transfer")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class BankTransferDataOneOf3MultibancoBankTransfer {
   public static final String JSON_PROPERTY_BILLING_DETAILS = "billing_details";
+  @javax.annotation.Nullable
   private JsonNullable<MultibancoBillingDetails> billingDetails = JsonNullable.<MultibancoBillingDetails>undefined();
 
   public BankTransferDataOneOf3MultibancoBankTransfer() {
   }
 
-  public BankTransferDataOneOf3MultibancoBankTransfer billingDetails(MultibancoBillingDetails billingDetails) {
+  public BankTransferDataOneOf3MultibancoBankTransfer billingDetails(@javax.annotation.Nullable MultibancoBillingDetails billingDetails) {
     this.billingDetails = JsonNullable.<MultibancoBillingDetails>of(billingDetails);
     
     return this;
   }
 
-   /**
+  /**
    * Get billingDetails
    * @return billingDetails
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -75,7 +76,7 @@ public class BankTransferDataOneOf3MultibancoBankTransfer {
     this.billingDetails = billingDetails;
   }
 
-  public void setBillingDetails(MultibancoBillingDetails billingDetails) {
+  public void setBillingDetails(@javax.annotation.Nullable MultibancoBillingDetails billingDetails) {
     this.billingDetails = JsonNullable.<MultibancoBillingDetails>of(billingDetails);
   }
 

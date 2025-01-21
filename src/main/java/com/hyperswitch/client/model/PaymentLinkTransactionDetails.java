@@ -39,30 +39,33 @@ import java.util.StringJoiner;
   PaymentLinkTransactionDetails.JSON_PROPERTY_VALUE,
   PaymentLinkTransactionDetails.JSON_PROPERTY_UI_CONFIGURATION
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class PaymentLinkTransactionDetails {
   public static final String JSON_PROPERTY_KEY = "key";
+  @javax.annotation.Nonnull
   private String key;
 
   public static final String JSON_PROPERTY_VALUE = "value";
+  @javax.annotation.Nonnull
   private String value;
 
   public static final String JSON_PROPERTY_UI_CONFIGURATION = "ui_configuration";
+  @javax.annotation.Nullable
   private JsonNullable<TransactionDetailsUiConfiguration> uiConfiguration = JsonNullable.<TransactionDetailsUiConfiguration>undefined();
 
   public PaymentLinkTransactionDetails() {
   }
 
-  public PaymentLinkTransactionDetails key(String key) {
+  public PaymentLinkTransactionDetails key(@javax.annotation.Nonnull String key) {
     
     this.key = key;
     return this;
   }
 
-   /**
+  /**
    * Key for the transaction details
    * @return key
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_KEY)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -74,21 +77,20 @@ public class PaymentLinkTransactionDetails {
 
   @JsonProperty(JSON_PROPERTY_KEY)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setKey(String key) {
+  public void setKey(@javax.annotation.Nonnull String key) {
     this.key = key;
   }
 
-
-  public PaymentLinkTransactionDetails value(String value) {
+  public PaymentLinkTransactionDetails value(@javax.annotation.Nonnull String value) {
     
     this.value = value;
     return this;
   }
 
-   /**
+  /**
    * Value for the transaction details
    * @return value
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_VALUE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -100,21 +102,20 @@ public class PaymentLinkTransactionDetails {
 
   @JsonProperty(JSON_PROPERTY_VALUE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setValue(String value) {
+  public void setValue(@javax.annotation.Nonnull String value) {
     this.value = value;
   }
 
-
-  public PaymentLinkTransactionDetails uiConfiguration(TransactionDetailsUiConfiguration uiConfiguration) {
+  public PaymentLinkTransactionDetails uiConfiguration(@javax.annotation.Nullable TransactionDetailsUiConfiguration uiConfiguration) {
     this.uiConfiguration = JsonNullable.<TransactionDetailsUiConfiguration>of(uiConfiguration);
     
     return this;
   }
 
-   /**
+  /**
    * Get uiConfiguration
    * @return uiConfiguration
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -134,7 +135,7 @@ public class PaymentLinkTransactionDetails {
     this.uiConfiguration = uiConfiguration;
   }
 
-  public void setUiConfiguration(TransactionDetailsUiConfiguration uiConfiguration) {
+  public void setUiConfiguration(@javax.annotation.Nullable TransactionDetailsUiConfiguration uiConfiguration) {
     this.uiConfiguration = JsonNullable.<TransactionDetailsUiConfiguration>of(uiConfiguration);
   }
 

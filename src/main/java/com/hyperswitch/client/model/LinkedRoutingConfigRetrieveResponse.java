@@ -23,6 +23,7 @@ import com.fasterxml.jackson.annotation.JsonValue;
 import com.hyperswitch.client.model.MerchantRoutingAlgorithm;
 import com.hyperswitch.client.model.RoutingDictionaryRecord;
 import com.hyperswitch.client.model.RoutingRetrieveResponse;
+import java.util.List;
 import org.openapitools.jackson.nullable.JsonNullable;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.openapitools.jackson.nullable.JsonNullable;
@@ -39,24 +40,25 @@ import java.util.StringJoiner;
 @JsonPropertyOrder({
   LinkedRoutingConfigRetrieveResponse.JSON_PROPERTY_ALGORITHM
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class LinkedRoutingConfigRetrieveResponse {
   public static final String JSON_PROPERTY_ALGORITHM = "algorithm";
+  @javax.annotation.Nullable
   private JsonNullable<MerchantRoutingAlgorithm> algorithm = JsonNullable.<MerchantRoutingAlgorithm>undefined();
 
   public LinkedRoutingConfigRetrieveResponse() {
   }
 
-  public LinkedRoutingConfigRetrieveResponse algorithm(MerchantRoutingAlgorithm algorithm) {
+  public LinkedRoutingConfigRetrieveResponse algorithm(@javax.annotation.Nullable MerchantRoutingAlgorithm algorithm) {
     this.algorithm = JsonNullable.<MerchantRoutingAlgorithm>of(algorithm);
     
     return this;
   }
 
-   /**
+  /**
    * Get algorithm
    * @return algorithm
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -76,7 +78,7 @@ public class LinkedRoutingConfigRetrieveResponse {
     this.algorithm = algorithm;
   }
 
-  public void setAlgorithm(MerchantRoutingAlgorithm algorithm) {
+  public void setAlgorithm(@javax.annotation.Nullable MerchantRoutingAlgorithm algorithm) {
     this.algorithm = JsonNullable.<MerchantRoutingAlgorithm>of(algorithm);
   }
 

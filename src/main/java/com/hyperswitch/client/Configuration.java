@@ -13,8 +13,10 @@
 
 package com.hyperswitch.client;
 
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class Configuration {
+    public static final String VERSION = "0.0.1";
+
     private static ApiClient defaultApiClient = new ApiClient();
 
     /**

@@ -34,13 +34,13 @@ import java.util.StringJoiner;
   ValueTypeOneOf1.JSON_PROPERTY_VALUE
 })
 @JsonTypeName("ValueType_oneOf_1")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class ValueTypeOneOf1 {
   /**
    * Gets or Sets type
    */
   public enum TypeEnum {
-    ENUM_VARIANT("enum_variant");
+    ENUM_VARIANT(String.valueOf("enum_variant"));
 
     private String value;
 
@@ -70,24 +70,26 @@ public class ValueTypeOneOf1 {
   }
 
   public static final String JSON_PROPERTY_TYPE = "type";
+  @javax.annotation.Nonnull
   private TypeEnum type;
 
   public static final String JSON_PROPERTY_VALUE = "value";
+  @javax.annotation.Nonnull
   private String value;
 
   public ValueTypeOneOf1() {
   }
 
-  public ValueTypeOneOf1 type(TypeEnum type) {
+  public ValueTypeOneOf1 type(@javax.annotation.Nonnull TypeEnum type) {
     
     this.type = type;
     return this;
   }
 
-   /**
+  /**
    * Get type
    * @return type
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_TYPE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -99,21 +101,20 @@ public class ValueTypeOneOf1 {
 
   @JsonProperty(JSON_PROPERTY_TYPE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setType(TypeEnum type) {
+  public void setType(@javax.annotation.Nonnull TypeEnum type) {
     this.type = type;
   }
 
-
-  public ValueTypeOneOf1 value(String value) {
+  public ValueTypeOneOf1 value(@javax.annotation.Nonnull String value) {
     
     this.value = value;
     return this;
   }
 
-   /**
+  /**
    * Represents an enum variant
    * @return value
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_VALUE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -125,7 +126,7 @@ public class ValueTypeOneOf1 {
 
   @JsonProperty(JSON_PROPERTY_VALUE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setValue(String value) {
+  public void setValue(@javax.annotation.Nonnull String value) {
     this.value = value;
   }
 

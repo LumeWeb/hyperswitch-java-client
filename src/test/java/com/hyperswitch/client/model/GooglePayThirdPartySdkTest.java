@@ -19,22 +19,21 @@ import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonTypeName;
 import com.fasterxml.jackson.annotation.JsonValue;
 import com.hyperswitch.client.model.SdkNextAction;
-import org.junit.Assert;
-import org.junit.Ignore;
-import org.junit.Test;
-
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Test;
 
 /**
  * Model tests for GooglePayThirdPartySdk
  */
-public class GooglePayThirdPartySdkTest {
+class GooglePayThirdPartySdkTest {
     private final GooglePayThirdPartySdk model = new GooglePayThirdPartySdk();
 
     /**
      * Model tests for GooglePayThirdPartySdk
      */
     @Test
-    public void testGooglePayThirdPartySdk() {
+    void testGooglePayThirdPartySdk() {
         // TODO: test GooglePayThirdPartySdk
     }
 
@@ -42,7 +41,7 @@ public class GooglePayThirdPartySdkTest {
      * Test the property 'delayedSessionToken'
      */
     @Test
-    public void delayedSessionTokenTest() {
+    void delayedSessionTokenTest() {
         // TODO: test delayedSessionToken
     }
 
@@ -50,7 +49,7 @@ public class GooglePayThirdPartySdkTest {
      * Test the property 'connector'
      */
     @Test
-    public void connectorTest() {
+    void connectorTest() {
         // TODO: test connector
     }
 
@@ -58,7 +57,7 @@ public class GooglePayThirdPartySdkTest {
      * Test the property 'sdkNextAction'
      */
     @Test
-    public void sdkNextActionTest() {
+    void sdkNextActionTest() {
         // TODO: test sdkNextAction
     }
 

@@ -21,23 +21,23 @@ import com.fasterxml.jackson.annotation.JsonValue;
 import com.hyperswitch.client.model.ConnectorSelection;
 import com.hyperswitch.client.model.IfStatement;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
-import org.junit.Assert;
-import org.junit.Ignore;
-import org.junit.Test;
-
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Test;
 
 /**
  * Model tests for RuleConnectorSelection
  */
-public class RuleConnectorSelectionTest {
+class RuleConnectorSelectionTest {
     private final RuleConnectorSelection model = new RuleConnectorSelection();
 
     /**
      * Model tests for RuleConnectorSelection
      */
     @Test
-    public void testRuleConnectorSelection() {
+    void testRuleConnectorSelection() {
         // TODO: test RuleConnectorSelection
     }
 
@@ -45,7 +45,7 @@ public class RuleConnectorSelectionTest {
      * Test the property 'name'
      */
     @Test
-    public void nameTest() {
+    void nameTest() {
         // TODO: test name
     }
 
@@ -53,7 +53,7 @@ public class RuleConnectorSelectionTest {
      * Test the property 'connectorSelection'
      */
     @Test
-    public void connectorSelectionTest() {
+    void connectorSelectionTest() {
         // TODO: test connectorSelection
     }
 
@@ -61,7 +61,7 @@ public class RuleConnectorSelectionTest {
      * Test the property 'statements'
      */
     @Test
-    public void statementsTest() {
+    void statementsTest() {
         // TODO: test statements
     }
 

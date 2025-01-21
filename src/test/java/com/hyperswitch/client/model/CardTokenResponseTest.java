@@ -18,22 +18,21 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonTypeName;
 import com.fasterxml.jackson.annotation.JsonValue;
-import org.junit.Assert;
-import org.junit.Ignore;
-import org.junit.Test;
-
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Test;
 
 /**
  * Model tests for CardTokenResponse
  */
-public class CardTokenResponseTest {
+class CardTokenResponseTest {
     private final CardTokenResponse model = new CardTokenResponse();
 
     /**
      * Model tests for CardTokenResponse
      */
     @Test
-    public void testCardTokenResponse() {
+    void testCardTokenResponse() {
         // TODO: test CardTokenResponse
     }
 
@@ -41,7 +40,7 @@ public class CardTokenResponseTest {
      * Test the property 'cardHolderName'
      */
     @Test
-    public void cardHolderNameTest() {
+    void cardHolderNameTest() {
         // TODO: test cardHolderName
     }
 

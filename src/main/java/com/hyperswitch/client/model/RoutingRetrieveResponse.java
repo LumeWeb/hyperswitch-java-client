@@ -37,24 +37,25 @@ import java.util.StringJoiner;
 @JsonPropertyOrder({
   RoutingRetrieveResponse.JSON_PROPERTY_ALGORITHM
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class RoutingRetrieveResponse {
   public static final String JSON_PROPERTY_ALGORITHM = "algorithm";
+  @javax.annotation.Nullable
   private JsonNullable<MerchantRoutingAlgorithm> algorithm = JsonNullable.<MerchantRoutingAlgorithm>undefined();
 
   public RoutingRetrieveResponse() {
   }
 
-  public RoutingRetrieveResponse algorithm(MerchantRoutingAlgorithm algorithm) {
+  public RoutingRetrieveResponse algorithm(@javax.annotation.Nullable MerchantRoutingAlgorithm algorithm) {
     this.algorithm = JsonNullable.<MerchantRoutingAlgorithm>of(algorithm);
     
     return this;
   }
 
-   /**
+  /**
    * Get algorithm
    * @return algorithm
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -74,7 +75,7 @@ public class RoutingRetrieveResponse {
     this.algorithm = algorithm;
   }
 
-  public void setAlgorithm(MerchantRoutingAlgorithm algorithm) {
+  public void setAlgorithm(@javax.annotation.Nullable MerchantRoutingAlgorithm algorithm) {
     this.algorithm = JsonNullable.<MerchantRoutingAlgorithm>of(algorithm);
   }
 

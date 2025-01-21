@@ -45,42 +45,49 @@ import java.util.StringJoiner;
   MandateResponse.JSON_PROPERTY_CARD,
   MandateResponse.JSON_PROPERTY_CUSTOMER_ACCEPTANCE
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class MandateResponse {
   public static final String JSON_PROPERTY_MANDATE_ID = "mandate_id";
+  @javax.annotation.Nonnull
   private String mandateId;
 
   public static final String JSON_PROPERTY_STATUS = "status";
+  @javax.annotation.Nonnull
   private MandateStatus status;
 
   public static final String JSON_PROPERTY_PAYMENT_METHOD_ID = "payment_method_id";
+  @javax.annotation.Nonnull
   private String paymentMethodId;
 
   public static final String JSON_PROPERTY_PAYMENT_METHOD = "payment_method";
+  @javax.annotation.Nonnull
   private String paymentMethod;
 
   public static final String JSON_PROPERTY_PAYMENT_METHOD_TYPE = "payment_method_type";
+  @javax.annotation.Nullable
   private JsonNullable<String> paymentMethodType = JsonNullable.<String>undefined();
 
   public static final String JSON_PROPERTY_CARD = "card";
+  @javax.annotation.Nullable
   private JsonNullable<MandateCardDetails> card = JsonNullable.<MandateCardDetails>undefined();
 
   public static final String JSON_PROPERTY_CUSTOMER_ACCEPTANCE = "customer_acceptance";
+  @javax.annotation.Nullable
   private JsonNullable<CustomerAcceptance> customerAcceptance = JsonNullable.<CustomerAcceptance>undefined();
 
   public MandateResponse() {
   }
 
-  public MandateResponse mandateId(String mandateId) {
+  public MandateResponse mandateId(@javax.annotation.Nonnull String mandateId) {
     
     this.mandateId = mandateId;
     return this;
   }
 
-   /**
+  /**
    * The identifier for mandate
    * @return mandateId
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_MANDATE_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -92,21 +99,20 @@ public class MandateResponse {
 
   @JsonProperty(JSON_PROPERTY_MANDATE_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setMandateId(String mandateId) {
+  public void setMandateId(@javax.annotation.Nonnull String mandateId) {
     this.mandateId = mandateId;
   }
 
-
-  public MandateResponse status(MandateStatus status) {
+  public MandateResponse status(@javax.annotation.Nonnull MandateStatus status) {
     
     this.status = status;
     return this;
   }
 
-   /**
+  /**
    * Get status
    * @return status
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_STATUS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -118,21 +124,20 @@ public class MandateResponse {
 
   @JsonProperty(JSON_PROPERTY_STATUS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setStatus(MandateStatus status) {
+  public void setStatus(@javax.annotation.Nonnull MandateStatus status) {
     this.status = status;
   }
 
-
-  public MandateResponse paymentMethodId(String paymentMethodId) {
+  public MandateResponse paymentMethodId(@javax.annotation.Nonnull String paymentMethodId) {
     
     this.paymentMethodId = paymentMethodId;
     return this;
   }
 
-   /**
+  /**
    * The identifier for payment method
    * @return paymentMethodId
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_PAYMENT_METHOD_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -144,21 +149,20 @@ public class MandateResponse {
 
   @JsonProperty(JSON_PROPERTY_PAYMENT_METHOD_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setPaymentMethodId(String paymentMethodId) {
+  public void setPaymentMethodId(@javax.annotation.Nonnull String paymentMethodId) {
     this.paymentMethodId = paymentMethodId;
   }
 
-
-  public MandateResponse paymentMethod(String paymentMethod) {
+  public MandateResponse paymentMethod(@javax.annotation.Nonnull String paymentMethod) {
     
     this.paymentMethod = paymentMethod;
     return this;
   }
 
-   /**
+  /**
    * The payment method
    * @return paymentMethod
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_PAYMENT_METHOD)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -170,21 +174,20 @@ public class MandateResponse {
 
   @JsonProperty(JSON_PROPERTY_PAYMENT_METHOD)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setPaymentMethod(String paymentMethod) {
+  public void setPaymentMethod(@javax.annotation.Nonnull String paymentMethod) {
     this.paymentMethod = paymentMethod;
   }
 
-
-  public MandateResponse paymentMethodType(String paymentMethodType) {
+  public MandateResponse paymentMethodType(@javax.annotation.Nullable String paymentMethodType) {
     this.paymentMethodType = JsonNullable.<String>of(paymentMethodType);
     
     return this;
   }
 
-   /**
+  /**
    * The payment method type
    * @return paymentMethodType
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -204,21 +207,20 @@ public class MandateResponse {
     this.paymentMethodType = paymentMethodType;
   }
 
-  public void setPaymentMethodType(String paymentMethodType) {
+  public void setPaymentMethodType(@javax.annotation.Nullable String paymentMethodType) {
     this.paymentMethodType = JsonNullable.<String>of(paymentMethodType);
   }
 
-
-  public MandateResponse card(MandateCardDetails card) {
+  public MandateResponse card(@javax.annotation.Nullable MandateCardDetails card) {
     this.card = JsonNullable.<MandateCardDetails>of(card);
     
     return this;
   }
 
-   /**
+  /**
    * Get card
    * @return card
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -238,21 +240,20 @@ public class MandateResponse {
     this.card = card;
   }
 
-  public void setCard(MandateCardDetails card) {
+  public void setCard(@javax.annotation.Nullable MandateCardDetails card) {
     this.card = JsonNullable.<MandateCardDetails>of(card);
   }
 
-
-  public MandateResponse customerAcceptance(CustomerAcceptance customerAcceptance) {
+  public MandateResponse customerAcceptance(@javax.annotation.Nullable CustomerAcceptance customerAcceptance) {
     this.customerAcceptance = JsonNullable.<CustomerAcceptance>of(customerAcceptance);
     
     return this;
   }
 
-   /**
+  /**
    * Get customerAcceptance
    * @return customerAcceptance
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -272,7 +273,7 @@ public class MandateResponse {
     this.customerAcceptance = customerAcceptance;
   }
 
-  public void setCustomerAcceptance(CustomerAcceptance customerAcceptance) {
+  public void setCustomerAcceptance(@javax.annotation.Nullable CustomerAcceptance customerAcceptance) {
     this.customerAcceptance = JsonNullable.<CustomerAcceptance>of(customerAcceptance);
   }
 

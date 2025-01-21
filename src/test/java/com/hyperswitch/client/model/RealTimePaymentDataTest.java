@@ -22,22 +22,21 @@ import com.hyperswitch.client.model.RealTimePaymentDataOneOf;
 import com.hyperswitch.client.model.RealTimePaymentDataOneOf1;
 import com.hyperswitch.client.model.RealTimePaymentDataOneOf2;
 import com.hyperswitch.client.model.RealTimePaymentDataOneOf3;
-import org.junit.Assert;
-import org.junit.Ignore;
-import org.junit.Test;
-
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Test;
 
 /**
  * Model tests for RealTimePaymentData
  */
-public class RealTimePaymentDataTest {
+class RealTimePaymentDataTest {
     private final RealTimePaymentData model = new RealTimePaymentData();
 
     /**
      * Model tests for RealTimePaymentData
      */
     @Test
-    public void testRealTimePaymentData() {
+    void testRealTimePaymentData() {
         // TODO: test RealTimePaymentData
     }
 
@@ -45,7 +44,7 @@ public class RealTimePaymentDataTest {
      * Test the property 'fps'
      */
     @Test
-    public void fpsTest() {
+    void fpsTest() {
         // TODO: test fps
     }
 
@@ -53,7 +52,7 @@ public class RealTimePaymentDataTest {
      * Test the property 'duitNow'
      */
     @Test
-    public void duitNowTest() {
+    void duitNowTest() {
         // TODO: test duitNow
     }
 
@@ -61,7 +60,7 @@ public class RealTimePaymentDataTest {
      * Test the property 'promptPay'
      */
     @Test
-    public void promptPayTest() {
+    void promptPayTest() {
         // TODO: test promptPay
     }
 
@@ -69,7 +68,7 @@ public class RealTimePaymentDataTest {
      * Test the property 'vietQr'
      */
     @Test
-    public void vietQrTest() {
+    void vietQrTest() {
         // TODO: test vietQr
     }
 

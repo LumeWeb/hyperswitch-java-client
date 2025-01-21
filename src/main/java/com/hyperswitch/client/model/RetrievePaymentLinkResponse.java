@@ -48,51 +48,61 @@ import java.util.StringJoiner;
   RetrievePaymentLinkResponse.JSON_PROPERTY_CURRENCY,
   RetrievePaymentLinkResponse.JSON_PROPERTY_SECURE_LINK
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class RetrievePaymentLinkResponse {
   public static final String JSON_PROPERTY_PAYMENT_LINK_ID = "payment_link_id";
+  @javax.annotation.Nonnull
   private String paymentLinkId;
 
   public static final String JSON_PROPERTY_MERCHANT_ID = "merchant_id";
+  @javax.annotation.Nonnull
   private String merchantId;
 
   public static final String JSON_PROPERTY_LINK_TO_PAY = "link_to_pay";
+  @javax.annotation.Nonnull
   private String linkToPay;
 
   public static final String JSON_PROPERTY_AMOUNT = "amount";
+  @javax.annotation.Nonnull
   private Long amount;
 
   public static final String JSON_PROPERTY_CREATED_AT = "created_at";
+  @javax.annotation.Nonnull
   private OffsetDateTime createdAt;
 
   public static final String JSON_PROPERTY_EXPIRY = "expiry";
+  @javax.annotation.Nullable
   private JsonNullable<OffsetDateTime> expiry = JsonNullable.<OffsetDateTime>undefined();
 
   public static final String JSON_PROPERTY_DESCRIPTION = "description";
+  @javax.annotation.Nullable
   private JsonNullable<String> description = JsonNullable.<String>undefined();
 
   public static final String JSON_PROPERTY_STATUS = "status";
+  @javax.annotation.Nonnull
   private PaymentLinkStatus status;
 
   public static final String JSON_PROPERTY_CURRENCY = "currency";
+  @javax.annotation.Nullable
   private JsonNullable<Currency> currency = JsonNullable.<Currency>undefined();
 
   public static final String JSON_PROPERTY_SECURE_LINK = "secure_link";
+  @javax.annotation.Nullable
   private JsonNullable<String> secureLink = JsonNullable.<String>undefined();
 
   public RetrievePaymentLinkResponse() {
   }
 
-  public RetrievePaymentLinkResponse paymentLinkId(String paymentLinkId) {
+  public RetrievePaymentLinkResponse paymentLinkId(@javax.annotation.Nonnull String paymentLinkId) {
     
     this.paymentLinkId = paymentLinkId;
     return this;
   }
 
-   /**
+  /**
    * Identifier for Payment Link
    * @return paymentLinkId
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_PAYMENT_LINK_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -104,21 +114,20 @@ public class RetrievePaymentLinkResponse {
 
   @JsonProperty(JSON_PROPERTY_PAYMENT_LINK_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setPaymentLinkId(String paymentLinkId) {
+  public void setPaymentLinkId(@javax.annotation.Nonnull String paymentLinkId) {
     this.paymentLinkId = paymentLinkId;
   }
 
-
-  public RetrievePaymentLinkResponse merchantId(String merchantId) {
+  public RetrievePaymentLinkResponse merchantId(@javax.annotation.Nonnull String merchantId) {
     
     this.merchantId = merchantId;
     return this;
   }
 
-   /**
+  /**
    * Identifier for Merchant
    * @return merchantId
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_MERCHANT_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -130,21 +139,20 @@ public class RetrievePaymentLinkResponse {
 
   @JsonProperty(JSON_PROPERTY_MERCHANT_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setMerchantId(String merchantId) {
+  public void setMerchantId(@javax.annotation.Nonnull String merchantId) {
     this.merchantId = merchantId;
   }
 
-
-  public RetrievePaymentLinkResponse linkToPay(String linkToPay) {
+  public RetrievePaymentLinkResponse linkToPay(@javax.annotation.Nonnull String linkToPay) {
     
     this.linkToPay = linkToPay;
     return this;
   }
 
-   /**
+  /**
    * Open payment link (without any security checks and listing SPMs)
    * @return linkToPay
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_LINK_TO_PAY)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -156,21 +164,20 @@ public class RetrievePaymentLinkResponse {
 
   @JsonProperty(JSON_PROPERTY_LINK_TO_PAY)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setLinkToPay(String linkToPay) {
+  public void setLinkToPay(@javax.annotation.Nonnull String linkToPay) {
     this.linkToPay = linkToPay;
   }
 
-
-  public RetrievePaymentLinkResponse amount(Long amount) {
+  public RetrievePaymentLinkResponse amount(@javax.annotation.Nonnull Long amount) {
     
     this.amount = amount;
     return this;
   }
 
-   /**
+  /**
    * The payment amount. Amount for the payment in the lowest denomination of the currency
    * @return amount
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_AMOUNT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -182,21 +189,20 @@ public class RetrievePaymentLinkResponse {
 
   @JsonProperty(JSON_PROPERTY_AMOUNT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setAmount(Long amount) {
+  public void setAmount(@javax.annotation.Nonnull Long amount) {
     this.amount = amount;
   }
 
-
-  public RetrievePaymentLinkResponse createdAt(OffsetDateTime createdAt) {
+  public RetrievePaymentLinkResponse createdAt(@javax.annotation.Nonnull OffsetDateTime createdAt) {
     
     this.createdAt = createdAt;
     return this;
   }
 
-   /**
+  /**
    * Date and time of Payment Link creation
    * @return createdAt
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_CREATED_AT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -208,21 +214,20 @@ public class RetrievePaymentLinkResponse {
 
   @JsonProperty(JSON_PROPERTY_CREATED_AT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setCreatedAt(OffsetDateTime createdAt) {
+  public void setCreatedAt(@javax.annotation.Nonnull OffsetDateTime createdAt) {
     this.createdAt = createdAt;
   }
 
-
-  public RetrievePaymentLinkResponse expiry(OffsetDateTime expiry) {
+  public RetrievePaymentLinkResponse expiry(@javax.annotation.Nullable OffsetDateTime expiry) {
     this.expiry = JsonNullable.<OffsetDateTime>of(expiry);
     
     return this;
   }
 
-   /**
+  /**
    * Date and time of Expiration for Payment Link
    * @return expiry
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -242,21 +247,20 @@ public class RetrievePaymentLinkResponse {
     this.expiry = expiry;
   }
 
-  public void setExpiry(OffsetDateTime expiry) {
+  public void setExpiry(@javax.annotation.Nullable OffsetDateTime expiry) {
     this.expiry = JsonNullable.<OffsetDateTime>of(expiry);
   }
 
-
-  public RetrievePaymentLinkResponse description(String description) {
+  public RetrievePaymentLinkResponse description(@javax.annotation.Nullable String description) {
     this.description = JsonNullable.<String>of(description);
     
     return this;
   }
 
-   /**
+  /**
    * Description for Payment Link
    * @return description
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -276,21 +280,20 @@ public class RetrievePaymentLinkResponse {
     this.description = description;
   }
 
-  public void setDescription(String description) {
+  public void setDescription(@javax.annotation.Nullable String description) {
     this.description = JsonNullable.<String>of(description);
   }
 
-
-  public RetrievePaymentLinkResponse status(PaymentLinkStatus status) {
+  public RetrievePaymentLinkResponse status(@javax.annotation.Nonnull PaymentLinkStatus status) {
     
     this.status = status;
     return this;
   }
 
-   /**
+  /**
    * Get status
    * @return status
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_STATUS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -302,21 +305,20 @@ public class RetrievePaymentLinkResponse {
 
   @JsonProperty(JSON_PROPERTY_STATUS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setStatus(PaymentLinkStatus status) {
+  public void setStatus(@javax.annotation.Nonnull PaymentLinkStatus status) {
     this.status = status;
   }
 
-
-  public RetrievePaymentLinkResponse currency(Currency currency) {
+  public RetrievePaymentLinkResponse currency(@javax.annotation.Nullable Currency currency) {
     this.currency = JsonNullable.<Currency>of(currency);
     
     return this;
   }
 
-   /**
+  /**
    * Get currency
    * @return currency
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -336,21 +338,20 @@ public class RetrievePaymentLinkResponse {
     this.currency = currency;
   }
 
-  public void setCurrency(Currency currency) {
+  public void setCurrency(@javax.annotation.Nullable Currency currency) {
     this.currency = JsonNullable.<Currency>of(currency);
   }
 
-
-  public RetrievePaymentLinkResponse secureLink(String secureLink) {
+  public RetrievePaymentLinkResponse secureLink(@javax.annotation.Nullable String secureLink) {
     this.secureLink = JsonNullable.<String>of(secureLink);
     
     return this;
   }
 
-   /**
+  /**
    * Secure payment link (with security checks and listing saved payment methods)
    * @return secureLink
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -370,7 +371,7 @@ public class RetrievePaymentLinkResponse {
     this.secureLink = secureLink;
   }
 
-  public void setSecureLink(String secureLink) {
+  public void setSecureLink(@javax.annotation.Nullable String secureLink) {
     this.secureLink = JsonNullable.<String>of(secureLink);
   }
 

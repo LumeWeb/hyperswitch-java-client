@@ -22,6 +22,7 @@ import com.fasterxml.jackson.annotation.JsonTypeName;
 import com.fasterxml.jackson.annotation.JsonValue;
 import com.hyperswitch.client.model.RoutableConnectorChoice;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 import com.fasterxml.jackson.annotation.JsonTypeName;
@@ -36,27 +37,29 @@ import java.util.StringJoiner;
   ProfileDefaultRoutingConfig.JSON_PROPERTY_PROFILE_ID,
   ProfileDefaultRoutingConfig.JSON_PROPERTY_CONNECTORS
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class ProfileDefaultRoutingConfig {
   public static final String JSON_PROPERTY_PROFILE_ID = "profile_id";
+  @javax.annotation.Nonnull
   private String profileId;
 
   public static final String JSON_PROPERTY_CONNECTORS = "connectors";
+  @javax.annotation.Nonnull
   private List<RoutableConnectorChoice> connectors = new ArrayList<>();
 
   public ProfileDefaultRoutingConfig() {
   }
 
-  public ProfileDefaultRoutingConfig profileId(String profileId) {
+  public ProfileDefaultRoutingConfig profileId(@javax.annotation.Nonnull String profileId) {
     
     this.profileId = profileId;
     return this;
   }
 
-   /**
+  /**
    * Get profileId
    * @return profileId
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_PROFILE_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -68,12 +71,11 @@ public class ProfileDefaultRoutingConfig {
 
   @JsonProperty(JSON_PROPERTY_PROFILE_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setProfileId(String profileId) {
+  public void setProfileId(@javax.annotation.Nonnull String profileId) {
     this.profileId = profileId;
   }
 
-
-  public ProfileDefaultRoutingConfig connectors(List<RoutableConnectorChoice> connectors) {
+  public ProfileDefaultRoutingConfig connectors(@javax.annotation.Nonnull List<RoutableConnectorChoice> connectors) {
     
     this.connectors = connectors;
     return this;
@@ -87,10 +89,10 @@ public class ProfileDefaultRoutingConfig {
     return this;
   }
 
-   /**
+  /**
    * Get connectors
    * @return connectors
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_CONNECTORS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -102,7 +104,7 @@ public class ProfileDefaultRoutingConfig {
 
   @JsonProperty(JSON_PROPERTY_CONNECTORS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setConnectors(List<RoutableConnectorChoice> connectors) {
+  public void setConnectors(@javax.annotation.Nonnull List<RoutableConnectorChoice> connectors) {
     this.connectors = connectors;
   }
 

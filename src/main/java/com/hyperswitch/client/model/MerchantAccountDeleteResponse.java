@@ -33,27 +33,29 @@ import java.util.StringJoiner;
   MerchantAccountDeleteResponse.JSON_PROPERTY_MERCHANT_ID,
   MerchantAccountDeleteResponse.JSON_PROPERTY_DELETED
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class MerchantAccountDeleteResponse {
   public static final String JSON_PROPERTY_MERCHANT_ID = "merchant_id";
+  @javax.annotation.Nonnull
   private String merchantId;
 
   public static final String JSON_PROPERTY_DELETED = "deleted";
+  @javax.annotation.Nonnull
   private Boolean deleted;
 
   public MerchantAccountDeleteResponse() {
   }
 
-  public MerchantAccountDeleteResponse merchantId(String merchantId) {
+  public MerchantAccountDeleteResponse merchantId(@javax.annotation.Nonnull String merchantId) {
     
     this.merchantId = merchantId;
     return this;
   }
 
-   /**
+  /**
    * The identifier for the Merchant Account
    * @return merchantId
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_MERCHANT_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -65,21 +67,20 @@ public class MerchantAccountDeleteResponse {
 
   @JsonProperty(JSON_PROPERTY_MERCHANT_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setMerchantId(String merchantId) {
+  public void setMerchantId(@javax.annotation.Nonnull String merchantId) {
     this.merchantId = merchantId;
   }
 
-
-  public MerchantAccountDeleteResponse deleted(Boolean deleted) {
+  public MerchantAccountDeleteResponse deleted(@javax.annotation.Nonnull Boolean deleted) {
     
     this.deleted = deleted;
     return this;
   }
 
-   /**
+  /**
    * If the connector is deleted or not
    * @return deleted
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_DELETED)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -91,7 +92,7 @@ public class MerchantAccountDeleteResponse {
 
   @JsonProperty(JSON_PROPERTY_DELETED)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setDeleted(Boolean deleted) {
+  public void setDeleted(@javax.annotation.Nonnull Boolean deleted) {
     this.deleted = deleted;
   }
 

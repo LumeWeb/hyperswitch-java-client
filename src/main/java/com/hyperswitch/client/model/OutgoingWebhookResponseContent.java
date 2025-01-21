@@ -22,6 +22,7 @@ import com.fasterxml.jackson.annotation.JsonTypeName;
 import com.fasterxml.jackson.annotation.JsonValue;
 import com.hyperswitch.client.model.OutgoingWebhookRequestContentHeadersInnerInner;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import org.openapitools.jackson.nullable.JsonNullable;
 import com.fasterxml.jackson.annotation.JsonIgnore;
@@ -42,33 +43,37 @@ import java.util.StringJoiner;
   OutgoingWebhookResponseContent.JSON_PROPERTY_STATUS_CODE,
   OutgoingWebhookResponseContent.JSON_PROPERTY_ERROR_MESSAGE
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class OutgoingWebhookResponseContent {
   public static final String JSON_PROPERTY_BODY = "body";
+  @javax.annotation.Nullable
   private JsonNullable<String> body = JsonNullable.<String>undefined();
 
   public static final String JSON_PROPERTY_HEADERS = "headers";
+  @javax.annotation.Nullable
   private JsonNullable<List<List<OutgoingWebhookRequestContentHeadersInnerInner>>> headers = JsonNullable.<List<List<OutgoingWebhookRequestContentHeadersInnerInner>>>undefined();
 
   public static final String JSON_PROPERTY_STATUS_CODE = "status_code";
+  @javax.annotation.Nullable
   private JsonNullable<Integer> statusCode = JsonNullable.<Integer>undefined();
 
   public static final String JSON_PROPERTY_ERROR_MESSAGE = "error_message";
+  @javax.annotation.Nullable
   private JsonNullable<String> errorMessage = JsonNullable.<String>undefined();
 
   public OutgoingWebhookResponseContent() {
   }
 
-  public OutgoingWebhookResponseContent body(String body) {
+  public OutgoingWebhookResponseContent body(@javax.annotation.Nullable String body) {
     this.body = JsonNullable.<String>of(body);
     
     return this;
   }
 
-   /**
+  /**
    * The response body received for the webhook sent.
    * @return body
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -88,12 +93,11 @@ public class OutgoingWebhookResponseContent {
     this.body = body;
   }
 
-  public void setBody(String body) {
+  public void setBody(@javax.annotation.Nullable String body) {
     this.body = JsonNullable.<String>of(body);
   }
 
-
-  public OutgoingWebhookResponseContent headers(List<List<OutgoingWebhookRequestContentHeadersInnerInner>> headers) {
+  public OutgoingWebhookResponseContent headers(@javax.annotation.Nullable List<List<OutgoingWebhookRequestContentHeadersInnerInner>> headers) {
     this.headers = JsonNullable.<List<List<OutgoingWebhookRequestContentHeadersInnerInner>>>of(headers);
     
     return this;
@@ -111,10 +115,10 @@ public class OutgoingWebhookResponseContent {
     return this;
   }
 
-   /**
+  /**
    * The response headers received for the webhook sent.
    * @return headers
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -134,22 +138,21 @@ public class OutgoingWebhookResponseContent {
     this.headers = headers;
   }
 
-  public void setHeaders(List<List<OutgoingWebhookRequestContentHeadersInnerInner>> headers) {
+  public void setHeaders(@javax.annotation.Nullable List<List<OutgoingWebhookRequestContentHeadersInnerInner>> headers) {
     this.headers = JsonNullable.<List<List<OutgoingWebhookRequestContentHeadersInnerInner>>>of(headers);
   }
 
-
-  public OutgoingWebhookResponseContent statusCode(Integer statusCode) {
+  public OutgoingWebhookResponseContent statusCode(@javax.annotation.Nullable Integer statusCode) {
     this.statusCode = JsonNullable.<Integer>of(statusCode);
     
     return this;
   }
 
-   /**
+  /**
    * The HTTP status code for the webhook sent.
    * minimum: 0
    * @return statusCode
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -169,21 +172,20 @@ public class OutgoingWebhookResponseContent {
     this.statusCode = statusCode;
   }
 
-  public void setStatusCode(Integer statusCode) {
+  public void setStatusCode(@javax.annotation.Nullable Integer statusCode) {
     this.statusCode = JsonNullable.<Integer>of(statusCode);
   }
 
-
-  public OutgoingWebhookResponseContent errorMessage(String errorMessage) {
+  public OutgoingWebhookResponseContent errorMessage(@javax.annotation.Nullable String errorMessage) {
     this.errorMessage = JsonNullable.<String>of(errorMessage);
     
     return this;
   }
 
-   /**
+  /**
    * Error message in case any error occurred when trying to deliver the webhook.
    * @return errorMessage
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -203,7 +205,7 @@ public class OutgoingWebhookResponseContent {
     this.errorMessage = errorMessage;
   }
 
-  public void setErrorMessage(String errorMessage) {
+  public void setErrorMessage(@javax.annotation.Nullable String errorMessage) {
     this.errorMessage = JsonNullable.<String>of(errorMessage);
   }
 

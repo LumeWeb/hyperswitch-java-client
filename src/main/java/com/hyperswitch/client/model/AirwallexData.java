@@ -36,24 +36,25 @@ import java.util.StringJoiner;
 @JsonPropertyOrder({
   AirwallexData.JSON_PROPERTY_PAYLOAD
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class AirwallexData {
   public static final String JSON_PROPERTY_PAYLOAD = "payload";
+  @javax.annotation.Nullable
   private JsonNullable<String> payload = JsonNullable.<String>undefined();
 
   public AirwallexData() {
   }
 
-  public AirwallexData payload(String payload) {
+  public AirwallexData payload(@javax.annotation.Nullable String payload) {
     this.payload = JsonNullable.<String>of(payload);
     
     return this;
   }
 
-   /**
+  /**
    * payload required by airwallex
    * @return payload
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -73,7 +74,7 @@ public class AirwallexData {
     this.payload = payload;
   }
 
-  public void setPayload(String payload) {
+  public void setPayload(@javax.annotation.Nullable String payload) {
     this.payload = JsonNullable.<String>of(payload);
   }
 

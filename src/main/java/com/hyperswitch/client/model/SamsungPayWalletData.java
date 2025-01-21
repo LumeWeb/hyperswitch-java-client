@@ -33,24 +33,25 @@ import java.util.StringJoiner;
 @JsonPropertyOrder({
   SamsungPayWalletData.JSON_PROPERTY_PAYMENT_CREDENTIAL
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class SamsungPayWalletData {
   public static final String JSON_PROPERTY_PAYMENT_CREDENTIAL = "payment_credential";
+  @javax.annotation.Nonnull
   private SamsungPayWalletCredentials paymentCredential;
 
   public SamsungPayWalletData() {
   }
 
-  public SamsungPayWalletData paymentCredential(SamsungPayWalletCredentials paymentCredential) {
+  public SamsungPayWalletData paymentCredential(@javax.annotation.Nonnull SamsungPayWalletCredentials paymentCredential) {
     
     this.paymentCredential = paymentCredential;
     return this;
   }
 
-   /**
+  /**
    * Get paymentCredential
    * @return paymentCredential
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_PAYMENT_CREDENTIAL)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -62,7 +63,7 @@ public class SamsungPayWalletData {
 
   @JsonProperty(JSON_PROPERTY_PAYMENT_CREDENTIAL)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setPaymentCredential(SamsungPayWalletCredentials paymentCredential) {
+  public void setPaymentCredential(@javax.annotation.Nonnull SamsungPayWalletCredentials paymentCredential) {
     this.paymentCredential = paymentCredential;
   }
 

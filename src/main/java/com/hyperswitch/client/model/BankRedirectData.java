@@ -78,75 +78,93 @@ import java.util.StringJoiner;
   BankRedirectData.JSON_PROPERTY_ONLINE_BANKING_THAILAND,
   BankRedirectData.JSON_PROPERTY_LOCAL_BANK_REDIRECT
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class BankRedirectData {
   public static final String JSON_PROPERTY_BANCONTACT_CARD = "bancontact_card";
+  @javax.annotation.Nonnull
   private BankRedirectDataOneOfBancontactCard bancontactCard;
 
   public static final String JSON_PROPERTY_BIZUM = "bizum";
+  @javax.annotation.Nonnull
   private Object bizum;
 
   public static final String JSON_PROPERTY_BLIK = "blik";
+  @javax.annotation.Nonnull
   private BankRedirectDataOneOf2Blik blik;
 
   public static final String JSON_PROPERTY_EPS = "eps";
+  @javax.annotation.Nonnull
   private BankRedirectDataOneOf3Eps eps;
 
   public static final String JSON_PROPERTY_GIROPAY = "giropay";
+  @javax.annotation.Nonnull
   private BankRedirectDataOneOf4Giropay giropay;
 
   public static final String JSON_PROPERTY_IDEAL = "ideal";
+  @javax.annotation.Nonnull
   private BankRedirectDataOneOf3Eps ideal;
 
   public static final String JSON_PROPERTY_INTERAC = "interac";
+  @javax.annotation.Nonnull
   private BankRedirectDataOneOf6Interac interac;
 
   public static final String JSON_PROPERTY_ONLINE_BANKING_CZECH_REPUBLIC = "online_banking_czech_republic";
+  @javax.annotation.Nonnull
   private BankRedirectDataOneOf7OnlineBankingCzechRepublic onlineBankingCzechRepublic;
 
   public static final String JSON_PROPERTY_ONLINE_BANKING_FINLAND = "online_banking_finland";
+  @javax.annotation.Nonnull
   private BankRedirectDataOneOf8OnlineBankingFinland onlineBankingFinland;
 
   public static final String JSON_PROPERTY_ONLINE_BANKING_POLAND = "online_banking_poland";
+  @javax.annotation.Nonnull
   private BankRedirectDataOneOf7OnlineBankingCzechRepublic onlineBankingPoland;
 
   public static final String JSON_PROPERTY_ONLINE_BANKING_SLOVAKIA = "online_banking_slovakia";
+  @javax.annotation.Nonnull
   private BankRedirectDataOneOf7OnlineBankingCzechRepublic onlineBankingSlovakia;
 
   public static final String JSON_PROPERTY_OPEN_BANKING_UK = "open_banking_uk";
+  @javax.annotation.Nonnull
   private BankRedirectDataOneOf11OpenBankingUk openBankingUk;
 
   public static final String JSON_PROPERTY_PRZELEWY24 = "przelewy24";
+  @javax.annotation.Nonnull
   private BankRedirectDataOneOf12Przelewy24 przelewy24;
 
   public static final String JSON_PROPERTY_SOFORT = "sofort";
+  @javax.annotation.Nonnull
   private BankRedirectDataOneOf13Sofort sofort;
 
   public static final String JSON_PROPERTY_TRUSTLY = "trustly";
+  @javax.annotation.Nonnull
   private BankRedirectDataOneOf14Trustly trustly;
 
   public static final String JSON_PROPERTY_ONLINE_BANKING_FPX = "online_banking_fpx";
+  @javax.annotation.Nonnull
   private BankRedirectDataOneOf7OnlineBankingCzechRepublic onlineBankingFpx;
 
   public static final String JSON_PROPERTY_ONLINE_BANKING_THAILAND = "online_banking_thailand";
+  @javax.annotation.Nonnull
   private BankRedirectDataOneOf7OnlineBankingCzechRepublic onlineBankingThailand;
 
   public static final String JSON_PROPERTY_LOCAL_BANK_REDIRECT = "local_bank_redirect";
+  @javax.annotation.Nonnull
   private Object localBankRedirect;
 
   public BankRedirectData() {
   }
 
-  public BankRedirectData bancontactCard(BankRedirectDataOneOfBancontactCard bancontactCard) {
+  public BankRedirectData bancontactCard(@javax.annotation.Nonnull BankRedirectDataOneOfBancontactCard bancontactCard) {
     
     this.bancontactCard = bancontactCard;
     return this;
   }
 
-   /**
+  /**
    * Get bancontactCard
    * @return bancontactCard
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_BANCONTACT_CARD)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -158,21 +176,20 @@ public class BankRedirectData {
 
   @JsonProperty(JSON_PROPERTY_BANCONTACT_CARD)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setBancontactCard(BankRedirectDataOneOfBancontactCard bancontactCard) {
+  public void setBancontactCard(@javax.annotation.Nonnull BankRedirectDataOneOfBancontactCard bancontactCard) {
     this.bancontactCard = bancontactCard;
   }
 
-
-  public BankRedirectData bizum(Object bizum) {
+  public BankRedirectData bizum(@javax.annotation.Nonnull Object bizum) {
     
     this.bizum = bizum;
     return this;
   }
 
-   /**
+  /**
    * Get bizum
    * @return bizum
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_BIZUM)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -184,21 +201,20 @@ public class BankRedirectData {
 
   @JsonProperty(JSON_PROPERTY_BIZUM)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setBizum(Object bizum) {
+  public void setBizum(@javax.annotation.Nonnull Object bizum) {
     this.bizum = bizum;
   }
 
-
-  public BankRedirectData blik(BankRedirectDataOneOf2Blik blik) {
+  public BankRedirectData blik(@javax.annotation.Nonnull BankRedirectDataOneOf2Blik blik) {
     
     this.blik = blik;
     return this;
   }
 
-   /**
+  /**
    * Get blik
    * @return blik
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_BLIK)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -210,21 +226,20 @@ public class BankRedirectData {
 
   @JsonProperty(JSON_PROPERTY_BLIK)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setBlik(BankRedirectDataOneOf2Blik blik) {
+  public void setBlik(@javax.annotation.Nonnull BankRedirectDataOneOf2Blik blik) {
     this.blik = blik;
   }
 
-
-  public BankRedirectData eps(BankRedirectDataOneOf3Eps eps) {
+  public BankRedirectData eps(@javax.annotation.Nonnull BankRedirectDataOneOf3Eps eps) {
     
     this.eps = eps;
     return this;
   }
 
-   /**
+  /**
    * Get eps
    * @return eps
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_EPS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -236,21 +251,20 @@ public class BankRedirectData {
 
   @JsonProperty(JSON_PROPERTY_EPS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setEps(BankRedirectDataOneOf3Eps eps) {
+  public void setEps(@javax.annotation.Nonnull BankRedirectDataOneOf3Eps eps) {
     this.eps = eps;
   }
 
-
-  public BankRedirectData giropay(BankRedirectDataOneOf4Giropay giropay) {
+  public BankRedirectData giropay(@javax.annotation.Nonnull BankRedirectDataOneOf4Giropay giropay) {
     
     this.giropay = giropay;
     return this;
   }
 
-   /**
+  /**
    * Get giropay
    * @return giropay
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_GIROPAY)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -262,21 +276,20 @@ public class BankRedirectData {
 
   @JsonProperty(JSON_PROPERTY_GIROPAY)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setGiropay(BankRedirectDataOneOf4Giropay giropay) {
+  public void setGiropay(@javax.annotation.Nonnull BankRedirectDataOneOf4Giropay giropay) {
     this.giropay = giropay;
   }
 
-
-  public BankRedirectData ideal(BankRedirectDataOneOf3Eps ideal) {
+  public BankRedirectData ideal(@javax.annotation.Nonnull BankRedirectDataOneOf3Eps ideal) {
     
     this.ideal = ideal;
     return this;
   }
 
-   /**
+  /**
    * Get ideal
    * @return ideal
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_IDEAL)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -288,21 +301,20 @@ public class BankRedirectData {
 
   @JsonProperty(JSON_PROPERTY_IDEAL)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setIdeal(BankRedirectDataOneOf3Eps ideal) {
+  public void setIdeal(@javax.annotation.Nonnull BankRedirectDataOneOf3Eps ideal) {
     this.ideal = ideal;
   }
 
-
-  public BankRedirectData interac(BankRedirectDataOneOf6Interac interac) {
+  public BankRedirectData interac(@javax.annotation.Nonnull BankRedirectDataOneOf6Interac interac) {
     
     this.interac = interac;
     return this;
   }
 
-   /**
+  /**
    * Get interac
    * @return interac
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_INTERAC)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -314,21 +326,20 @@ public class BankRedirectData {
 
   @JsonProperty(JSON_PROPERTY_INTERAC)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setInterac(BankRedirectDataOneOf6Interac interac) {
+  public void setInterac(@javax.annotation.Nonnull BankRedirectDataOneOf6Interac interac) {
     this.interac = interac;
   }
 
-
-  public BankRedirectData onlineBankingCzechRepublic(BankRedirectDataOneOf7OnlineBankingCzechRepublic onlineBankingCzechRepublic) {
+  public BankRedirectData onlineBankingCzechRepublic(@javax.annotation.Nonnull BankRedirectDataOneOf7OnlineBankingCzechRepublic onlineBankingCzechRepublic) {
     
     this.onlineBankingCzechRepublic = onlineBankingCzechRepublic;
     return this;
   }
 
-   /**
+  /**
    * Get onlineBankingCzechRepublic
    * @return onlineBankingCzechRepublic
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_ONLINE_BANKING_CZECH_REPUBLIC)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -340,21 +351,20 @@ public class BankRedirectData {
 
   @JsonProperty(JSON_PROPERTY_ONLINE_BANKING_CZECH_REPUBLIC)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setOnlineBankingCzechRepublic(BankRedirectDataOneOf7OnlineBankingCzechRepublic onlineBankingCzechRepublic) {
+  public void setOnlineBankingCzechRepublic(@javax.annotation.Nonnull BankRedirectDataOneOf7OnlineBankingCzechRepublic onlineBankingCzechRepublic) {
     this.onlineBankingCzechRepublic = onlineBankingCzechRepublic;
   }
 
-
-  public BankRedirectData onlineBankingFinland(BankRedirectDataOneOf8OnlineBankingFinland onlineBankingFinland) {
+  public BankRedirectData onlineBankingFinland(@javax.annotation.Nonnull BankRedirectDataOneOf8OnlineBankingFinland onlineBankingFinland) {
     
     this.onlineBankingFinland = onlineBankingFinland;
     return this;
   }
 
-   /**
+  /**
    * Get onlineBankingFinland
    * @return onlineBankingFinland
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_ONLINE_BANKING_FINLAND)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -366,21 +376,20 @@ public class BankRedirectData {
 
   @JsonProperty(JSON_PROPERTY_ONLINE_BANKING_FINLAND)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setOnlineBankingFinland(BankRedirectDataOneOf8OnlineBankingFinland onlineBankingFinland) {
+  public void setOnlineBankingFinland(@javax.annotation.Nonnull BankRedirectDataOneOf8OnlineBankingFinland onlineBankingFinland) {
     this.onlineBankingFinland = onlineBankingFinland;
   }
 
-
-  public BankRedirectData onlineBankingPoland(BankRedirectDataOneOf7OnlineBankingCzechRepublic onlineBankingPoland) {
+  public BankRedirectData onlineBankingPoland(@javax.annotation.Nonnull BankRedirectDataOneOf7OnlineBankingCzechRepublic onlineBankingPoland) {
     
     this.onlineBankingPoland = onlineBankingPoland;
     return this;
   }
 
-   /**
+  /**
    * Get onlineBankingPoland
    * @return onlineBankingPoland
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_ONLINE_BANKING_POLAND)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -392,21 +401,20 @@ public class BankRedirectData {
 
   @JsonProperty(JSON_PROPERTY_ONLINE_BANKING_POLAND)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setOnlineBankingPoland(BankRedirectDataOneOf7OnlineBankingCzechRepublic onlineBankingPoland) {
+  public void setOnlineBankingPoland(@javax.annotation.Nonnull BankRedirectDataOneOf7OnlineBankingCzechRepublic onlineBankingPoland) {
     this.onlineBankingPoland = onlineBankingPoland;
   }
 
-
-  public BankRedirectData onlineBankingSlovakia(BankRedirectDataOneOf7OnlineBankingCzechRepublic onlineBankingSlovakia) {
+  public BankRedirectData onlineBankingSlovakia(@javax.annotation.Nonnull BankRedirectDataOneOf7OnlineBankingCzechRepublic onlineBankingSlovakia) {
     
     this.onlineBankingSlovakia = onlineBankingSlovakia;
     return this;
   }
 
-   /**
+  /**
    * Get onlineBankingSlovakia
    * @return onlineBankingSlovakia
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_ONLINE_BANKING_SLOVAKIA)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -418,21 +426,20 @@ public class BankRedirectData {
 
   @JsonProperty(JSON_PROPERTY_ONLINE_BANKING_SLOVAKIA)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setOnlineBankingSlovakia(BankRedirectDataOneOf7OnlineBankingCzechRepublic onlineBankingSlovakia) {
+  public void setOnlineBankingSlovakia(@javax.annotation.Nonnull BankRedirectDataOneOf7OnlineBankingCzechRepublic onlineBankingSlovakia) {
     this.onlineBankingSlovakia = onlineBankingSlovakia;
   }
 
-
-  public BankRedirectData openBankingUk(BankRedirectDataOneOf11OpenBankingUk openBankingUk) {
+  public BankRedirectData openBankingUk(@javax.annotation.Nonnull BankRedirectDataOneOf11OpenBankingUk openBankingUk) {
     
     this.openBankingUk = openBankingUk;
     return this;
   }
 
-   /**
+  /**
    * Get openBankingUk
    * @return openBankingUk
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_OPEN_BANKING_UK)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -444,21 +451,20 @@ public class BankRedirectData {
 
   @JsonProperty(JSON_PROPERTY_OPEN_BANKING_UK)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setOpenBankingUk(BankRedirectDataOneOf11OpenBankingUk openBankingUk) {
+  public void setOpenBankingUk(@javax.annotation.Nonnull BankRedirectDataOneOf11OpenBankingUk openBankingUk) {
     this.openBankingUk = openBankingUk;
   }
 
-
-  public BankRedirectData przelewy24(BankRedirectDataOneOf12Przelewy24 przelewy24) {
+  public BankRedirectData przelewy24(@javax.annotation.Nonnull BankRedirectDataOneOf12Przelewy24 przelewy24) {
     
     this.przelewy24 = przelewy24;
     return this;
   }
 
-   /**
+  /**
    * Get przelewy24
    * @return przelewy24
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_PRZELEWY24)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -470,21 +476,20 @@ public class BankRedirectData {
 
   @JsonProperty(JSON_PROPERTY_PRZELEWY24)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setPrzelewy24(BankRedirectDataOneOf12Przelewy24 przelewy24) {
+  public void setPrzelewy24(@javax.annotation.Nonnull BankRedirectDataOneOf12Przelewy24 przelewy24) {
     this.przelewy24 = przelewy24;
   }
 
-
-  public BankRedirectData sofort(BankRedirectDataOneOf13Sofort sofort) {
+  public BankRedirectData sofort(@javax.annotation.Nonnull BankRedirectDataOneOf13Sofort sofort) {
     
     this.sofort = sofort;
     return this;
   }
 
-   /**
+  /**
    * Get sofort
    * @return sofort
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_SOFORT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -496,21 +501,20 @@ public class BankRedirectData {
 
   @JsonProperty(JSON_PROPERTY_SOFORT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setSofort(BankRedirectDataOneOf13Sofort sofort) {
+  public void setSofort(@javax.annotation.Nonnull BankRedirectDataOneOf13Sofort sofort) {
     this.sofort = sofort;
   }
 
-
-  public BankRedirectData trustly(BankRedirectDataOneOf14Trustly trustly) {
+  public BankRedirectData trustly(@javax.annotation.Nonnull BankRedirectDataOneOf14Trustly trustly) {
     
     this.trustly = trustly;
     return this;
   }
 
-   /**
+  /**
    * Get trustly
    * @return trustly
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_TRUSTLY)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -522,21 +526,20 @@ public class BankRedirectData {
 
   @JsonProperty(JSON_PROPERTY_TRUSTLY)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setTrustly(BankRedirectDataOneOf14Trustly trustly) {
+  public void setTrustly(@javax.annotation.Nonnull BankRedirectDataOneOf14Trustly trustly) {
     this.trustly = trustly;
   }
 
-
-  public BankRedirectData onlineBankingFpx(BankRedirectDataOneOf7OnlineBankingCzechRepublic onlineBankingFpx) {
+  public BankRedirectData onlineBankingFpx(@javax.annotation.Nonnull BankRedirectDataOneOf7OnlineBankingCzechRepublic onlineBankingFpx) {
     
     this.onlineBankingFpx = onlineBankingFpx;
     return this;
   }
 
-   /**
+  /**
    * Get onlineBankingFpx
    * @return onlineBankingFpx
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_ONLINE_BANKING_FPX)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -548,21 +551,20 @@ public class BankRedirectData {
 
   @JsonProperty(JSON_PROPERTY_ONLINE_BANKING_FPX)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setOnlineBankingFpx(BankRedirectDataOneOf7OnlineBankingCzechRepublic onlineBankingFpx) {
+  public void setOnlineBankingFpx(@javax.annotation.Nonnull BankRedirectDataOneOf7OnlineBankingCzechRepublic onlineBankingFpx) {
     this.onlineBankingFpx = onlineBankingFpx;
   }
 
-
-  public BankRedirectData onlineBankingThailand(BankRedirectDataOneOf7OnlineBankingCzechRepublic onlineBankingThailand) {
+  public BankRedirectData onlineBankingThailand(@javax.annotation.Nonnull BankRedirectDataOneOf7OnlineBankingCzechRepublic onlineBankingThailand) {
     
     this.onlineBankingThailand = onlineBankingThailand;
     return this;
   }
 
-   /**
+  /**
    * Get onlineBankingThailand
    * @return onlineBankingThailand
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_ONLINE_BANKING_THAILAND)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -574,21 +576,20 @@ public class BankRedirectData {
 
   @JsonProperty(JSON_PROPERTY_ONLINE_BANKING_THAILAND)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setOnlineBankingThailand(BankRedirectDataOneOf7OnlineBankingCzechRepublic onlineBankingThailand) {
+  public void setOnlineBankingThailand(@javax.annotation.Nonnull BankRedirectDataOneOf7OnlineBankingCzechRepublic onlineBankingThailand) {
     this.onlineBankingThailand = onlineBankingThailand;
   }
 
-
-  public BankRedirectData localBankRedirect(Object localBankRedirect) {
+  public BankRedirectData localBankRedirect(@javax.annotation.Nonnull Object localBankRedirect) {
     
     this.localBankRedirect = localBankRedirect;
     return this;
   }
 
-   /**
+  /**
    * Get localBankRedirect
    * @return localBankRedirect
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_LOCAL_BANK_REDIRECT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -600,7 +601,7 @@ public class BankRedirectData {
 
   @JsonProperty(JSON_PROPERTY_LOCAL_BANK_REDIRECT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setLocalBankRedirect(Object localBankRedirect) {
+  public void setLocalBankRedirect(@javax.annotation.Nonnull Object localBankRedirect) {
     this.localBankRedirect = localBankRedirect;
   }
 

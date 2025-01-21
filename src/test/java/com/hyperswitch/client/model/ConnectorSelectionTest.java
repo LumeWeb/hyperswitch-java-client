@@ -25,23 +25,23 @@ import com.hyperswitch.client.model.ConnectorSelectionOneOf;
 import com.hyperswitch.client.model.ConnectorSelectionOneOf1;
 import com.hyperswitch.client.model.ConnectorVolumeSplit;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
-import org.junit.Assert;
-import org.junit.Ignore;
-import org.junit.Test;
-
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Test;
 
 /**
  * Model tests for ConnectorSelection
  */
-public class ConnectorSelectionTest {
+class ConnectorSelectionTest {
     private final ConnectorSelection model = new ConnectorSelection();
 
     /**
      * Model tests for ConnectorSelection
      */
     @Test
-    public void testConnectorSelection() {
+    void testConnectorSelection() {
         // TODO: test ConnectorSelection
     }
 
@@ -49,7 +49,7 @@ public class ConnectorSelectionTest {
      * Test the property 'type'
      */
     @Test
-    public void typeTest() {
+    void typeTest() {
         // TODO: test type
     }
 
@@ -57,7 +57,7 @@ public class ConnectorSelectionTest {
      * Test the property 'data'
      */
     @Test
-    public void dataTest() {
+    void dataTest() {
         // TODO: test data
     }
 

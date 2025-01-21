@@ -38,30 +38,33 @@ import java.util.StringJoiner;
   ReceiverDetails.JSON_PROPERTY_AMOUNT_CHARGED,
   ReceiverDetails.JSON_PROPERTY_AMOUNT_REMAINING
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class ReceiverDetails {
   public static final String JSON_PROPERTY_AMOUNT_RECEIVED = "amount_received";
+  @javax.annotation.Nonnull
   private Long amountReceived;
 
   public static final String JSON_PROPERTY_AMOUNT_CHARGED = "amount_charged";
+  @javax.annotation.Nullable
   private JsonNullable<Long> amountCharged = JsonNullable.<Long>undefined();
 
   public static final String JSON_PROPERTY_AMOUNT_REMAINING = "amount_remaining";
+  @javax.annotation.Nullable
   private JsonNullable<Long> amountRemaining = JsonNullable.<Long>undefined();
 
   public ReceiverDetails() {
   }
 
-  public ReceiverDetails amountReceived(Long amountReceived) {
+  public ReceiverDetails amountReceived(@javax.annotation.Nonnull Long amountReceived) {
     
     this.amountReceived = amountReceived;
     return this;
   }
 
-   /**
+  /**
    * The amount received by receiver
    * @return amountReceived
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_AMOUNT_RECEIVED)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -73,21 +76,20 @@ public class ReceiverDetails {
 
   @JsonProperty(JSON_PROPERTY_AMOUNT_RECEIVED)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setAmountReceived(Long amountReceived) {
+  public void setAmountReceived(@javax.annotation.Nonnull Long amountReceived) {
     this.amountReceived = amountReceived;
   }
 
-
-  public ReceiverDetails amountCharged(Long amountCharged) {
+  public ReceiverDetails amountCharged(@javax.annotation.Nullable Long amountCharged) {
     this.amountCharged = JsonNullable.<Long>of(amountCharged);
     
     return this;
   }
 
-   /**
+  /**
    * The amount charged by ACH
    * @return amountCharged
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -107,21 +109,20 @@ public class ReceiverDetails {
     this.amountCharged = amountCharged;
   }
 
-  public void setAmountCharged(Long amountCharged) {
+  public void setAmountCharged(@javax.annotation.Nullable Long amountCharged) {
     this.amountCharged = JsonNullable.<Long>of(amountCharged);
   }
 
-
-  public ReceiverDetails amountRemaining(Long amountRemaining) {
+  public ReceiverDetails amountRemaining(@javax.annotation.Nullable Long amountRemaining) {
     this.amountRemaining = JsonNullable.<Long>of(amountRemaining);
     
     return this;
   }
 
-   /**
+  /**
    * The amount remaining to be sent via ACH
    * @return amountRemaining
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -141,7 +142,7 @@ public class ReceiverDetails {
     this.amountRemaining = amountRemaining;
   }
 
-  public void setAmountRemaining(Long amountRemaining) {
+  public void setAmountRemaining(@javax.annotation.Nullable Long amountRemaining) {
     this.amountRemaining = JsonNullable.<Long>of(amountRemaining);
   }
 

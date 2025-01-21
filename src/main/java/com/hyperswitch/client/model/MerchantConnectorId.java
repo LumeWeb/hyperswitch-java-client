@@ -33,27 +33,29 @@ import java.util.StringJoiner;
   MerchantConnectorId.JSON_PROPERTY_MERCHANT_ID,
   MerchantConnectorId.JSON_PROPERTY_MERCHANT_CONNECTOR_ID
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class MerchantConnectorId {
   public static final String JSON_PROPERTY_MERCHANT_ID = "merchant_id";
+  @javax.annotation.Nonnull
   private String merchantId;
 
   public static final String JSON_PROPERTY_MERCHANT_CONNECTOR_ID = "merchant_connector_id";
+  @javax.annotation.Nonnull
   private String merchantConnectorId;
 
   public MerchantConnectorId() {
   }
 
-  public MerchantConnectorId merchantId(String merchantId) {
+  public MerchantConnectorId merchantId(@javax.annotation.Nonnull String merchantId) {
     
     this.merchantId = merchantId;
     return this;
   }
 
-   /**
+  /**
    * Get merchantId
    * @return merchantId
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_MERCHANT_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -65,21 +67,20 @@ public class MerchantConnectorId {
 
   @JsonProperty(JSON_PROPERTY_MERCHANT_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setMerchantId(String merchantId) {
+  public void setMerchantId(@javax.annotation.Nonnull String merchantId) {
     this.merchantId = merchantId;
   }
 
-
-  public MerchantConnectorId merchantConnectorId(String merchantConnectorId) {
+  public MerchantConnectorId merchantConnectorId(@javax.annotation.Nonnull String merchantConnectorId) {
     
     this.merchantConnectorId = merchantConnectorId;
     return this;
   }
 
-   /**
+  /**
    * Get merchantConnectorId
    * @return merchantConnectorId
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_MERCHANT_CONNECTOR_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -91,7 +92,7 @@ public class MerchantConnectorId {
 
   @JsonProperty(JSON_PROPERTY_MERCHANT_CONNECTOR_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setMerchantConnectorId(String merchantConnectorId) {
+  public void setMerchantConnectorId(@javax.annotation.Nonnull String merchantConnectorId) {
     this.merchantConnectorId = merchantConnectorId;
   }
 

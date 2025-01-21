@@ -41,30 +41,33 @@ import java.util.StringJoiner;
   ConnectorMetadata.JSON_PROPERTY_AIRWALLEX,
   ConnectorMetadata.JSON_PROPERTY_NOON
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class ConnectorMetadata {
   public static final String JSON_PROPERTY_APPLE_PAY = "apple_pay";
+  @javax.annotation.Nullable
   private JsonNullable<ApplepayConnectorMetadataRequest> applePay = JsonNullable.<ApplepayConnectorMetadataRequest>undefined();
 
   public static final String JSON_PROPERTY_AIRWALLEX = "airwallex";
+  @javax.annotation.Nullable
   private JsonNullable<AirwallexData> airwallex = JsonNullable.<AirwallexData>undefined();
 
   public static final String JSON_PROPERTY_NOON = "noon";
+  @javax.annotation.Nullable
   private JsonNullable<NoonData> noon = JsonNullable.<NoonData>undefined();
 
   public ConnectorMetadata() {
   }
 
-  public ConnectorMetadata applePay(ApplepayConnectorMetadataRequest applePay) {
+  public ConnectorMetadata applePay(@javax.annotation.Nullable ApplepayConnectorMetadataRequest applePay) {
     this.applePay = JsonNullable.<ApplepayConnectorMetadataRequest>of(applePay);
     
     return this;
   }
 
-   /**
+  /**
    * Get applePay
    * @return applePay
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -84,21 +87,20 @@ public class ConnectorMetadata {
     this.applePay = applePay;
   }
 
-  public void setApplePay(ApplepayConnectorMetadataRequest applePay) {
+  public void setApplePay(@javax.annotation.Nullable ApplepayConnectorMetadataRequest applePay) {
     this.applePay = JsonNullable.<ApplepayConnectorMetadataRequest>of(applePay);
   }
 
-
-  public ConnectorMetadata airwallex(AirwallexData airwallex) {
+  public ConnectorMetadata airwallex(@javax.annotation.Nullable AirwallexData airwallex) {
     this.airwallex = JsonNullable.<AirwallexData>of(airwallex);
     
     return this;
   }
 
-   /**
+  /**
    * Get airwallex
    * @return airwallex
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -118,21 +120,20 @@ public class ConnectorMetadata {
     this.airwallex = airwallex;
   }
 
-  public void setAirwallex(AirwallexData airwallex) {
+  public void setAirwallex(@javax.annotation.Nullable AirwallexData airwallex) {
     this.airwallex = JsonNullable.<AirwallexData>of(airwallex);
   }
 
-
-  public ConnectorMetadata noon(NoonData noon) {
+  public ConnectorMetadata noon(@javax.annotation.Nullable NoonData noon) {
     this.noon = JsonNullable.<NoonData>of(noon);
     
     return this;
   }
 
-   /**
+  /**
    * Get noon
    * @return noon
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -152,7 +153,7 @@ public class ConnectorMetadata {
     this.noon = noon;
   }
 
-  public void setNoon(NoonData noon) {
+  public void setNoon(@javax.annotation.Nullable NoonData noon) {
     this.noon = JsonNullable.<NoonData>of(noon);
   }
 

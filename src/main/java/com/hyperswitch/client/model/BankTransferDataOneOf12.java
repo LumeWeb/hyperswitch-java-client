@@ -34,24 +34,25 @@ import java.util.StringJoiner;
   BankTransferDataOneOf12.JSON_PROPERTY_LOCAL_BANK_TRANSFER
 })
 @JsonTypeName("BankTransferData_oneOf_12")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class BankTransferDataOneOf12 {
   public static final String JSON_PROPERTY_LOCAL_BANK_TRANSFER = "local_bank_transfer";
+  @javax.annotation.Nonnull
   private BankTransferDataOneOf12LocalBankTransfer localBankTransfer;
 
   public BankTransferDataOneOf12() {
   }
 
-  public BankTransferDataOneOf12 localBankTransfer(BankTransferDataOneOf12LocalBankTransfer localBankTransfer) {
+  public BankTransferDataOneOf12 localBankTransfer(@javax.annotation.Nonnull BankTransferDataOneOf12LocalBankTransfer localBankTransfer) {
     
     this.localBankTransfer = localBankTransfer;
     return this;
   }
 
-   /**
+  /**
    * Get localBankTransfer
    * @return localBankTransfer
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_LOCAL_BANK_TRANSFER)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -63,7 +64,7 @@ public class BankTransferDataOneOf12 {
 
   @JsonProperty(JSON_PROPERTY_LOCAL_BANK_TRANSFER)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setLocalBankTransfer(BankTransferDataOneOf12LocalBankTransfer localBankTransfer) {
+  public void setLocalBankTransfer(@javax.annotation.Nonnull BankTransferDataOneOf12LocalBankTransfer localBankTransfer) {
     this.localBankTransfer = localBankTransfer;
   }
 

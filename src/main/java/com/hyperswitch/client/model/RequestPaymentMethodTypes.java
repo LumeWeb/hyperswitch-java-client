@@ -26,6 +26,7 @@ import com.hyperswitch.client.model.CardNetwork;
 import com.hyperswitch.client.model.PaymentExperience;
 import com.hyperswitch.client.model.PaymentMethodType;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import org.openapitools.jackson.nullable.JsonNullable;
 import com.fasterxml.jackson.annotation.JsonIgnore;
@@ -51,48 +52,57 @@ import java.util.StringJoiner;
   RequestPaymentMethodTypes.JSON_PROPERTY_RECURRING_ENABLED,
   RequestPaymentMethodTypes.JSON_PROPERTY_INSTALLMENT_PAYMENT_ENABLED
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class RequestPaymentMethodTypes {
   public static final String JSON_PROPERTY_PAYMENT_METHOD_TYPE = "payment_method_type";
+  @javax.annotation.Nonnull
   private PaymentMethodType paymentMethodType;
 
   public static final String JSON_PROPERTY_PAYMENT_EXPERIENCE = "payment_experience";
+  @javax.annotation.Nullable
   private JsonNullable<PaymentExperience> paymentExperience = JsonNullable.<PaymentExperience>undefined();
 
   public static final String JSON_PROPERTY_CARD_NETWORKS = "card_networks";
+  @javax.annotation.Nullable
   private JsonNullable<List<CardNetwork>> cardNetworks = JsonNullable.<List<CardNetwork>>undefined();
 
   public static final String JSON_PROPERTY_ACCEPTED_CURRENCIES = "accepted_currencies";
+  @javax.annotation.Nullable
   private JsonNullable<AcceptedCurrencies> acceptedCurrencies = JsonNullable.<AcceptedCurrencies>undefined();
 
   public static final String JSON_PROPERTY_ACCEPTED_COUNTRIES = "accepted_countries";
+  @javax.annotation.Nullable
   private JsonNullable<AcceptedCountries> acceptedCountries = JsonNullable.<AcceptedCountries>undefined();
 
   public static final String JSON_PROPERTY_MINIMUM_AMOUNT = "minimum_amount";
+  @javax.annotation.Nullable
   private JsonNullable<Long> minimumAmount = JsonNullable.<Long>undefined();
 
   public static final String JSON_PROPERTY_MAXIMUM_AMOUNT = "maximum_amount";
+  @javax.annotation.Nullable
   private JsonNullable<Long> maximumAmount = JsonNullable.<Long>undefined();
 
   public static final String JSON_PROPERTY_RECURRING_ENABLED = "recurring_enabled";
+  @javax.annotation.Nonnull
   private Boolean recurringEnabled = true;
 
   public static final String JSON_PROPERTY_INSTALLMENT_PAYMENT_ENABLED = "installment_payment_enabled";
+  @javax.annotation.Nonnull
   private Boolean installmentPaymentEnabled = true;
 
   public RequestPaymentMethodTypes() {
   }
 
-  public RequestPaymentMethodTypes paymentMethodType(PaymentMethodType paymentMethodType) {
+  public RequestPaymentMethodTypes paymentMethodType(@javax.annotation.Nonnull PaymentMethodType paymentMethodType) {
     
     this.paymentMethodType = paymentMethodType;
     return this;
   }
 
-   /**
+  /**
    * Get paymentMethodType
    * @return paymentMethodType
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_PAYMENT_METHOD_TYPE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -104,21 +114,20 @@ public class RequestPaymentMethodTypes {
 
   @JsonProperty(JSON_PROPERTY_PAYMENT_METHOD_TYPE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setPaymentMethodType(PaymentMethodType paymentMethodType) {
+  public void setPaymentMethodType(@javax.annotation.Nonnull PaymentMethodType paymentMethodType) {
     this.paymentMethodType = paymentMethodType;
   }
 
-
-  public RequestPaymentMethodTypes paymentExperience(PaymentExperience paymentExperience) {
+  public RequestPaymentMethodTypes paymentExperience(@javax.annotation.Nullable PaymentExperience paymentExperience) {
     this.paymentExperience = JsonNullable.<PaymentExperience>of(paymentExperience);
     
     return this;
   }
 
-   /**
+  /**
    * Get paymentExperience
    * @return paymentExperience
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -138,12 +147,11 @@ public class RequestPaymentMethodTypes {
     this.paymentExperience = paymentExperience;
   }
 
-  public void setPaymentExperience(PaymentExperience paymentExperience) {
+  public void setPaymentExperience(@javax.annotation.Nullable PaymentExperience paymentExperience) {
     this.paymentExperience = JsonNullable.<PaymentExperience>of(paymentExperience);
   }
 
-
-  public RequestPaymentMethodTypes cardNetworks(List<CardNetwork> cardNetworks) {
+  public RequestPaymentMethodTypes cardNetworks(@javax.annotation.Nullable List<CardNetwork> cardNetworks) {
     this.cardNetworks = JsonNullable.<List<CardNetwork>>of(cardNetworks);
     
     return this;
@@ -161,10 +169,10 @@ public class RequestPaymentMethodTypes {
     return this;
   }
 
-   /**
+  /**
    * Get cardNetworks
    * @return cardNetworks
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -184,21 +192,20 @@ public class RequestPaymentMethodTypes {
     this.cardNetworks = cardNetworks;
   }
 
-  public void setCardNetworks(List<CardNetwork> cardNetworks) {
+  public void setCardNetworks(@javax.annotation.Nullable List<CardNetwork> cardNetworks) {
     this.cardNetworks = JsonNullable.<List<CardNetwork>>of(cardNetworks);
   }
 
-
-  public RequestPaymentMethodTypes acceptedCurrencies(AcceptedCurrencies acceptedCurrencies) {
+  public RequestPaymentMethodTypes acceptedCurrencies(@javax.annotation.Nullable AcceptedCurrencies acceptedCurrencies) {
     this.acceptedCurrencies = JsonNullable.<AcceptedCurrencies>of(acceptedCurrencies);
     
     return this;
   }
 
-   /**
+  /**
    * Get acceptedCurrencies
    * @return acceptedCurrencies
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -218,21 +225,20 @@ public class RequestPaymentMethodTypes {
     this.acceptedCurrencies = acceptedCurrencies;
   }
 
-  public void setAcceptedCurrencies(AcceptedCurrencies acceptedCurrencies) {
+  public void setAcceptedCurrencies(@javax.annotation.Nullable AcceptedCurrencies acceptedCurrencies) {
     this.acceptedCurrencies = JsonNullable.<AcceptedCurrencies>of(acceptedCurrencies);
   }
 
-
-  public RequestPaymentMethodTypes acceptedCountries(AcceptedCountries acceptedCountries) {
+  public RequestPaymentMethodTypes acceptedCountries(@javax.annotation.Nullable AcceptedCountries acceptedCountries) {
     this.acceptedCountries = JsonNullable.<AcceptedCountries>of(acceptedCountries);
     
     return this;
   }
 
-   /**
+  /**
    * Get acceptedCountries
    * @return acceptedCountries
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -252,21 +258,20 @@ public class RequestPaymentMethodTypes {
     this.acceptedCountries = acceptedCountries;
   }
 
-  public void setAcceptedCountries(AcceptedCountries acceptedCountries) {
+  public void setAcceptedCountries(@javax.annotation.Nullable AcceptedCountries acceptedCountries) {
     this.acceptedCountries = JsonNullable.<AcceptedCountries>of(acceptedCountries);
   }
 
-
-  public RequestPaymentMethodTypes minimumAmount(Long minimumAmount) {
+  public RequestPaymentMethodTypes minimumAmount(@javax.annotation.Nullable Long minimumAmount) {
     this.minimumAmount = JsonNullable.<Long>of(minimumAmount);
     
     return this;
   }
 
-   /**
+  /**
    * This Unit struct represents MinorUnit in which core amount works
    * @return minimumAmount
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -286,21 +291,20 @@ public class RequestPaymentMethodTypes {
     this.minimumAmount = minimumAmount;
   }
 
-  public void setMinimumAmount(Long minimumAmount) {
+  public void setMinimumAmount(@javax.annotation.Nullable Long minimumAmount) {
     this.minimumAmount = JsonNullable.<Long>of(minimumAmount);
   }
 
-
-  public RequestPaymentMethodTypes maximumAmount(Long maximumAmount) {
+  public RequestPaymentMethodTypes maximumAmount(@javax.annotation.Nullable Long maximumAmount) {
     this.maximumAmount = JsonNullable.<Long>of(maximumAmount);
     
     return this;
   }
 
-   /**
+  /**
    * This Unit struct represents MinorUnit in which core amount works
    * @return maximumAmount
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -320,21 +324,20 @@ public class RequestPaymentMethodTypes {
     this.maximumAmount = maximumAmount;
   }
 
-  public void setMaximumAmount(Long maximumAmount) {
+  public void setMaximumAmount(@javax.annotation.Nullable Long maximumAmount) {
     this.maximumAmount = JsonNullable.<Long>of(maximumAmount);
   }
 
-
-  public RequestPaymentMethodTypes recurringEnabled(Boolean recurringEnabled) {
+  public RequestPaymentMethodTypes recurringEnabled(@javax.annotation.Nonnull Boolean recurringEnabled) {
     
     this.recurringEnabled = recurringEnabled;
     return this;
   }
 
-   /**
+  /**
    * Boolean to enable recurring payments / mandates. Default is true.
    * @return recurringEnabled
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_RECURRING_ENABLED)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -346,21 +349,20 @@ public class RequestPaymentMethodTypes {
 
   @JsonProperty(JSON_PROPERTY_RECURRING_ENABLED)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setRecurringEnabled(Boolean recurringEnabled) {
+  public void setRecurringEnabled(@javax.annotation.Nonnull Boolean recurringEnabled) {
     this.recurringEnabled = recurringEnabled;
   }
 
-
-  public RequestPaymentMethodTypes installmentPaymentEnabled(Boolean installmentPaymentEnabled) {
+  public RequestPaymentMethodTypes installmentPaymentEnabled(@javax.annotation.Nonnull Boolean installmentPaymentEnabled) {
     
     this.installmentPaymentEnabled = installmentPaymentEnabled;
     return this;
   }
 
-   /**
+  /**
    * Boolean to enable installment / EMI / BNPL payments. Default is true.
    * @return installmentPaymentEnabled
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_INSTALLMENT_PAYMENT_ENABLED)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -372,7 +374,7 @@ public class RequestPaymentMethodTypes {
 
   @JsonProperty(JSON_PROPERTY_INSTALLMENT_PAYMENT_ENABLED)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setInstallmentPaymentEnabled(Boolean installmentPaymentEnabled) {
+  public void setInstallmentPaymentEnabled(@javax.annotation.Nonnull Boolean installmentPaymentEnabled) {
     this.installmentPaymentEnabled = installmentPaymentEnabled;
   }
 

@@ -44,42 +44,49 @@ import java.util.StringJoiner;
   CreateApiKeyResponse.JSON_PROPERTY_CREATED,
   CreateApiKeyResponse.JSON_PROPERTY_EXPIRATION
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class CreateApiKeyResponse {
   public static final String JSON_PROPERTY_KEY_ID = "key_id";
+  @javax.annotation.Nonnull
   private String keyId;
 
   public static final String JSON_PROPERTY_MERCHANT_ID = "merchant_id";
+  @javax.annotation.Nonnull
   private String merchantId;
 
   public static final String JSON_PROPERTY_NAME = "name";
+  @javax.annotation.Nonnull
   private String name;
 
   public static final String JSON_PROPERTY_DESCRIPTION = "description";
+  @javax.annotation.Nullable
   private JsonNullable<String> description = JsonNullable.<String>undefined();
 
   public static final String JSON_PROPERTY_API_KEY = "api_key";
+  @javax.annotation.Nonnull
   private String apiKey;
 
   public static final String JSON_PROPERTY_CREATED = "created";
+  @javax.annotation.Nonnull
   private OffsetDateTime created;
 
   public static final String JSON_PROPERTY_EXPIRATION = "expiration";
+  @javax.annotation.Nonnull
   private ApiKeyExpiration expiration;
 
   public CreateApiKeyResponse() {
   }
 
-  public CreateApiKeyResponse keyId(String keyId) {
+  public CreateApiKeyResponse keyId(@javax.annotation.Nonnull String keyId) {
     
     this.keyId = keyId;
     return this;
   }
 
-   /**
+  /**
    * The identifier for the API Key.
    * @return keyId
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_KEY_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -91,21 +98,20 @@ public class CreateApiKeyResponse {
 
   @JsonProperty(JSON_PROPERTY_KEY_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setKeyId(String keyId) {
+  public void setKeyId(@javax.annotation.Nonnull String keyId) {
     this.keyId = keyId;
   }
 
-
-  public CreateApiKeyResponse merchantId(String merchantId) {
+  public CreateApiKeyResponse merchantId(@javax.annotation.Nonnull String merchantId) {
     
     this.merchantId = merchantId;
     return this;
   }
 
-   /**
+  /**
    * The identifier for the Merchant Account.
    * @return merchantId
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_MERCHANT_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -117,21 +123,20 @@ public class CreateApiKeyResponse {
 
   @JsonProperty(JSON_PROPERTY_MERCHANT_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setMerchantId(String merchantId) {
+  public void setMerchantId(@javax.annotation.Nonnull String merchantId) {
     this.merchantId = merchantId;
   }
 
-
-  public CreateApiKeyResponse name(String name) {
+  public CreateApiKeyResponse name(@javax.annotation.Nonnull String name) {
     
     this.name = name;
     return this;
   }
 
-   /**
+  /**
    * The unique name for the API Key to help you identify it.
    * @return name
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_NAME)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -143,21 +148,20 @@ public class CreateApiKeyResponse {
 
   @JsonProperty(JSON_PROPERTY_NAME)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setName(String name) {
+  public void setName(@javax.annotation.Nonnull String name) {
     this.name = name;
   }
 
-
-  public CreateApiKeyResponse description(String description) {
+  public CreateApiKeyResponse description(@javax.annotation.Nullable String description) {
     this.description = JsonNullable.<String>of(description);
     
     return this;
   }
 
-   /**
+  /**
    * The description to provide more context about the API Key.
    * @return description
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -177,21 +181,20 @@ public class CreateApiKeyResponse {
     this.description = description;
   }
 
-  public void setDescription(String description) {
+  public void setDescription(@javax.annotation.Nullable String description) {
     this.description = JsonNullable.<String>of(description);
   }
 
-
-  public CreateApiKeyResponse apiKey(String apiKey) {
+  public CreateApiKeyResponse apiKey(@javax.annotation.Nonnull String apiKey) {
     
     this.apiKey = apiKey;
     return this;
   }
 
-   /**
+  /**
    * The plaintext API Key used for server-side API access. Ensure you store the API Key securely as you will not be able to see it again.
    * @return apiKey
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_API_KEY)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -203,21 +206,20 @@ public class CreateApiKeyResponse {
 
   @JsonProperty(JSON_PROPERTY_API_KEY)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setApiKey(String apiKey) {
+  public void setApiKey(@javax.annotation.Nonnull String apiKey) {
     this.apiKey = apiKey;
   }
 
-
-  public CreateApiKeyResponse created(OffsetDateTime created) {
+  public CreateApiKeyResponse created(@javax.annotation.Nonnull OffsetDateTime created) {
     
     this.created = created;
     return this;
   }
 
-   /**
+  /**
    * The time at which the API Key was created.
    * @return created
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_CREATED)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -229,21 +231,20 @@ public class CreateApiKeyResponse {
 
   @JsonProperty(JSON_PROPERTY_CREATED)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setCreated(OffsetDateTime created) {
+  public void setCreated(@javax.annotation.Nonnull OffsetDateTime created) {
     this.created = created;
   }
 
-
-  public CreateApiKeyResponse expiration(ApiKeyExpiration expiration) {
+  public CreateApiKeyResponse expiration(@javax.annotation.Nonnull ApiKeyExpiration expiration) {
     
     this.expiration = expiration;
     return this;
   }
 
-   /**
+  /**
    * Get expiration
    * @return expiration
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_EXPIRATION)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -255,7 +256,7 @@ public class CreateApiKeyResponse {
 
   @JsonProperty(JSON_PROPERTY_EXPIRATION)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setExpiration(ApiKeyExpiration expiration) {
+  public void setExpiration(@javax.annotation.Nonnull ApiKeyExpiration expiration) {
     this.expiration = expiration;
   }
 

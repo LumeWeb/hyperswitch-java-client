@@ -33,27 +33,29 @@ import java.util.StringJoiner;
   PayoutLinkInitiateRequest.JSON_PROPERTY_MERCHANT_ID,
   PayoutLinkInitiateRequest.JSON_PROPERTY_PAYOUT_ID
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class PayoutLinkInitiateRequest {
   public static final String JSON_PROPERTY_MERCHANT_ID = "merchant_id";
+  @javax.annotation.Nonnull
   private String merchantId;
 
   public static final String JSON_PROPERTY_PAYOUT_ID = "payout_id";
+  @javax.annotation.Nonnull
   private String payoutId;
 
   public PayoutLinkInitiateRequest() {
   }
 
-  public PayoutLinkInitiateRequest merchantId(String merchantId) {
+  public PayoutLinkInitiateRequest merchantId(@javax.annotation.Nonnull String merchantId) {
     
     this.merchantId = merchantId;
     return this;
   }
 
-   /**
+  /**
    * Get merchantId
    * @return merchantId
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_MERCHANT_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -65,21 +67,20 @@ public class PayoutLinkInitiateRequest {
 
   @JsonProperty(JSON_PROPERTY_MERCHANT_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setMerchantId(String merchantId) {
+  public void setMerchantId(@javax.annotation.Nonnull String merchantId) {
     this.merchantId = merchantId;
   }
 
-
-  public PayoutLinkInitiateRequest payoutId(String payoutId) {
+  public PayoutLinkInitiateRequest payoutId(@javax.annotation.Nonnull String payoutId) {
     
     this.payoutId = payoutId;
     return this;
   }
 
-   /**
+  /**
    * Get payoutId
    * @return payoutId
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_PAYOUT_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -91,7 +92,7 @@ public class PayoutLinkInitiateRequest {
 
   @JsonProperty(JSON_PROPERTY_PAYOUT_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setPayoutId(String payoutId) {
+  public void setPayoutId(@javax.annotation.Nonnull String payoutId) {
     this.payoutId = payoutId;
   }
 

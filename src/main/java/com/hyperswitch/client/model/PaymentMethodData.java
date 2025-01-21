@@ -76,66 +76,81 @@ import java.util.StringJoiner;
   PaymentMethodData.JSON_PROPERTY_OPEN_BANKING,
   PaymentMethodData.JSON_PROPERTY_MOBILE_PAYMENT
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class PaymentMethodData {
   public static final String JSON_PROPERTY_CARD = "card";
+  @javax.annotation.Nonnull
   private Card card;
 
   public static final String JSON_PROPERTY_CARD_REDIRECT = "card_redirect";
+  @javax.annotation.Nonnull
   private CardRedirectData cardRedirect;
 
   public static final String JSON_PROPERTY_WALLET = "wallet";
+  @javax.annotation.Nonnull
   private WalletData wallet;
 
   public static final String JSON_PROPERTY_PAY_LATER = "pay_later";
+  @javax.annotation.Nonnull
   private PayLaterData payLater;
 
   public static final String JSON_PROPERTY_BANK_REDIRECT = "bank_redirect";
+  @javax.annotation.Nonnull
   private BankRedirectData bankRedirect;
 
   public static final String JSON_PROPERTY_BANK_DEBIT = "bank_debit";
+  @javax.annotation.Nonnull
   private BankDebitData bankDebit;
 
   public static final String JSON_PROPERTY_BANK_TRANSFER = "bank_transfer";
+  @javax.annotation.Nonnull
   private BankTransferData bankTransfer;
 
   public static final String JSON_PROPERTY_REAL_TIME_PAYMENT = "real_time_payment";
+  @javax.annotation.Nonnull
   private RealTimePaymentData realTimePayment;
 
   public static final String JSON_PROPERTY_CRYPTO = "crypto";
+  @javax.annotation.Nonnull
   private CryptoData crypto;
 
   public static final String JSON_PROPERTY_UPI = "upi";
+  @javax.annotation.Nonnull
   private UpiData upi;
 
   public static final String JSON_PROPERTY_VOUCHER = "voucher";
+  @javax.annotation.Nonnull
   private VoucherData voucher;
 
   public static final String JSON_PROPERTY_GIFT_CARD = "gift_card";
+  @javax.annotation.Nonnull
   private GiftCardData giftCard;
 
   public static final String JSON_PROPERTY_CARD_TOKEN = "card_token";
+  @javax.annotation.Nonnull
   private CardToken cardToken;
 
   public static final String JSON_PROPERTY_OPEN_BANKING = "open_banking";
+  @javax.annotation.Nonnull
   private OpenBankingData openBanking;
 
   public static final String JSON_PROPERTY_MOBILE_PAYMENT = "mobile_payment";
+  @javax.annotation.Nonnull
   private MobilePaymentData mobilePayment;
 
   public PaymentMethodData() {
   }
 
-  public PaymentMethodData card(Card card) {
+  public PaymentMethodData card(@javax.annotation.Nonnull Card card) {
     
     this.card = card;
     return this;
   }
 
-   /**
+  /**
    * Get card
    * @return card
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_CARD)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -147,21 +162,20 @@ public class PaymentMethodData {
 
   @JsonProperty(JSON_PROPERTY_CARD)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setCard(Card card) {
+  public void setCard(@javax.annotation.Nonnull Card card) {
     this.card = card;
   }
 
-
-  public PaymentMethodData cardRedirect(CardRedirectData cardRedirect) {
+  public PaymentMethodData cardRedirect(@javax.annotation.Nonnull CardRedirectData cardRedirect) {
     
     this.cardRedirect = cardRedirect;
     return this;
   }
 
-   /**
+  /**
    * Get cardRedirect
    * @return cardRedirect
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_CARD_REDIRECT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -173,21 +187,20 @@ public class PaymentMethodData {
 
   @JsonProperty(JSON_PROPERTY_CARD_REDIRECT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setCardRedirect(CardRedirectData cardRedirect) {
+  public void setCardRedirect(@javax.annotation.Nonnull CardRedirectData cardRedirect) {
     this.cardRedirect = cardRedirect;
   }
 
-
-  public PaymentMethodData wallet(WalletData wallet) {
+  public PaymentMethodData wallet(@javax.annotation.Nonnull WalletData wallet) {
     
     this.wallet = wallet;
     return this;
   }
 
-   /**
+  /**
    * Get wallet
    * @return wallet
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_WALLET)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -199,21 +212,20 @@ public class PaymentMethodData {
 
   @JsonProperty(JSON_PROPERTY_WALLET)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setWallet(WalletData wallet) {
+  public void setWallet(@javax.annotation.Nonnull WalletData wallet) {
     this.wallet = wallet;
   }
 
-
-  public PaymentMethodData payLater(PayLaterData payLater) {
+  public PaymentMethodData payLater(@javax.annotation.Nonnull PayLaterData payLater) {
     
     this.payLater = payLater;
     return this;
   }
 
-   /**
+  /**
    * Get payLater
    * @return payLater
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_PAY_LATER)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -225,21 +237,20 @@ public class PaymentMethodData {
 
   @JsonProperty(JSON_PROPERTY_PAY_LATER)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setPayLater(PayLaterData payLater) {
+  public void setPayLater(@javax.annotation.Nonnull PayLaterData payLater) {
     this.payLater = payLater;
   }
 
-
-  public PaymentMethodData bankRedirect(BankRedirectData bankRedirect) {
+  public PaymentMethodData bankRedirect(@javax.annotation.Nonnull BankRedirectData bankRedirect) {
     
     this.bankRedirect = bankRedirect;
     return this;
   }
 
-   /**
+  /**
    * Get bankRedirect
    * @return bankRedirect
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_BANK_REDIRECT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -251,21 +262,20 @@ public class PaymentMethodData {
 
   @JsonProperty(JSON_PROPERTY_BANK_REDIRECT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setBankRedirect(BankRedirectData bankRedirect) {
+  public void setBankRedirect(@javax.annotation.Nonnull BankRedirectData bankRedirect) {
     this.bankRedirect = bankRedirect;
   }
 
-
-  public PaymentMethodData bankDebit(BankDebitData bankDebit) {
+  public PaymentMethodData bankDebit(@javax.annotation.Nonnull BankDebitData bankDebit) {
     
     this.bankDebit = bankDebit;
     return this;
   }
 
-   /**
+  /**
    * Get bankDebit
    * @return bankDebit
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_BANK_DEBIT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -277,21 +287,20 @@ public class PaymentMethodData {
 
   @JsonProperty(JSON_PROPERTY_BANK_DEBIT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setBankDebit(BankDebitData bankDebit) {
+  public void setBankDebit(@javax.annotation.Nonnull BankDebitData bankDebit) {
     this.bankDebit = bankDebit;
   }
 
-
-  public PaymentMethodData bankTransfer(BankTransferData bankTransfer) {
+  public PaymentMethodData bankTransfer(@javax.annotation.Nonnull BankTransferData bankTransfer) {
     
     this.bankTransfer = bankTransfer;
     return this;
   }
 
-   /**
+  /**
    * Get bankTransfer
    * @return bankTransfer
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_BANK_TRANSFER)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -303,21 +312,20 @@ public class PaymentMethodData {
 
   @JsonProperty(JSON_PROPERTY_BANK_TRANSFER)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setBankTransfer(BankTransferData bankTransfer) {
+  public void setBankTransfer(@javax.annotation.Nonnull BankTransferData bankTransfer) {
     this.bankTransfer = bankTransfer;
   }
 
-
-  public PaymentMethodData realTimePayment(RealTimePaymentData realTimePayment) {
+  public PaymentMethodData realTimePayment(@javax.annotation.Nonnull RealTimePaymentData realTimePayment) {
     
     this.realTimePayment = realTimePayment;
     return this;
   }
 
-   /**
+  /**
    * Get realTimePayment
    * @return realTimePayment
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_REAL_TIME_PAYMENT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -329,21 +337,20 @@ public class PaymentMethodData {
 
   @JsonProperty(JSON_PROPERTY_REAL_TIME_PAYMENT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setRealTimePayment(RealTimePaymentData realTimePayment) {
+  public void setRealTimePayment(@javax.annotation.Nonnull RealTimePaymentData realTimePayment) {
     this.realTimePayment = realTimePayment;
   }
 
-
-  public PaymentMethodData crypto(CryptoData crypto) {
+  public PaymentMethodData crypto(@javax.annotation.Nonnull CryptoData crypto) {
     
     this.crypto = crypto;
     return this;
   }
 
-   /**
+  /**
    * Get crypto
    * @return crypto
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_CRYPTO)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -355,21 +362,20 @@ public class PaymentMethodData {
 
   @JsonProperty(JSON_PROPERTY_CRYPTO)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setCrypto(CryptoData crypto) {
+  public void setCrypto(@javax.annotation.Nonnull CryptoData crypto) {
     this.crypto = crypto;
   }
 
-
-  public PaymentMethodData upi(UpiData upi) {
+  public PaymentMethodData upi(@javax.annotation.Nonnull UpiData upi) {
     
     this.upi = upi;
     return this;
   }
 
-   /**
+  /**
    * Get upi
    * @return upi
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_UPI)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -381,21 +387,20 @@ public class PaymentMethodData {
 
   @JsonProperty(JSON_PROPERTY_UPI)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setUpi(UpiData upi) {
+  public void setUpi(@javax.annotation.Nonnull UpiData upi) {
     this.upi = upi;
   }
 
-
-  public PaymentMethodData voucher(VoucherData voucher) {
+  public PaymentMethodData voucher(@javax.annotation.Nonnull VoucherData voucher) {
     
     this.voucher = voucher;
     return this;
   }
 
-   /**
+  /**
    * Get voucher
    * @return voucher
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_VOUCHER)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -407,21 +412,20 @@ public class PaymentMethodData {
 
   @JsonProperty(JSON_PROPERTY_VOUCHER)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setVoucher(VoucherData voucher) {
+  public void setVoucher(@javax.annotation.Nonnull VoucherData voucher) {
     this.voucher = voucher;
   }
 
-
-  public PaymentMethodData giftCard(GiftCardData giftCard) {
+  public PaymentMethodData giftCard(@javax.annotation.Nonnull GiftCardData giftCard) {
     
     this.giftCard = giftCard;
     return this;
   }
 
-   /**
+  /**
    * Get giftCard
    * @return giftCard
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_GIFT_CARD)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -433,21 +437,20 @@ public class PaymentMethodData {
 
   @JsonProperty(JSON_PROPERTY_GIFT_CARD)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setGiftCard(GiftCardData giftCard) {
+  public void setGiftCard(@javax.annotation.Nonnull GiftCardData giftCard) {
     this.giftCard = giftCard;
   }
 
-
-  public PaymentMethodData cardToken(CardToken cardToken) {
+  public PaymentMethodData cardToken(@javax.annotation.Nonnull CardToken cardToken) {
     
     this.cardToken = cardToken;
     return this;
   }
 
-   /**
+  /**
    * Get cardToken
    * @return cardToken
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_CARD_TOKEN)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -459,21 +462,20 @@ public class PaymentMethodData {
 
   @JsonProperty(JSON_PROPERTY_CARD_TOKEN)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setCardToken(CardToken cardToken) {
+  public void setCardToken(@javax.annotation.Nonnull CardToken cardToken) {
     this.cardToken = cardToken;
   }
 
-
-  public PaymentMethodData openBanking(OpenBankingData openBanking) {
+  public PaymentMethodData openBanking(@javax.annotation.Nonnull OpenBankingData openBanking) {
     
     this.openBanking = openBanking;
     return this;
   }
 
-   /**
+  /**
    * Get openBanking
    * @return openBanking
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_OPEN_BANKING)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -485,21 +487,20 @@ public class PaymentMethodData {
 
   @JsonProperty(JSON_PROPERTY_OPEN_BANKING)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setOpenBanking(OpenBankingData openBanking) {
+  public void setOpenBanking(@javax.annotation.Nonnull OpenBankingData openBanking) {
     this.openBanking = openBanking;
   }
 
-
-  public PaymentMethodData mobilePayment(MobilePaymentData mobilePayment) {
+  public PaymentMethodData mobilePayment(@javax.annotation.Nonnull MobilePaymentData mobilePayment) {
     
     this.mobilePayment = mobilePayment;
     return this;
   }
 
-   /**
+  /**
    * Get mobilePayment
    * @return mobilePayment
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_MOBILE_PAYMENT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -511,7 +512,7 @@ public class PaymentMethodData {
 
   @JsonProperty(JSON_PROPERTY_MOBILE_PAYMENT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setMobilePayment(MobilePaymentData mobilePayment) {
+  public void setMobilePayment(@javax.annotation.Nonnull MobilePaymentData mobilePayment) {
     this.mobilePayment = mobilePayment;
   }
 

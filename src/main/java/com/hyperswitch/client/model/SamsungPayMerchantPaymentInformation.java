@@ -39,30 +39,33 @@ import java.util.StringJoiner;
   SamsungPayMerchantPaymentInformation.JSON_PROPERTY_URL,
   SamsungPayMerchantPaymentInformation.JSON_PROPERTY_COUNTRY_CODE
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class SamsungPayMerchantPaymentInformation {
   public static final String JSON_PROPERTY_NAME = "name";
+  @javax.annotation.Nonnull
   private String name;
 
   public static final String JSON_PROPERTY_URL = "url";
+  @javax.annotation.Nullable
   private JsonNullable<String> url = JsonNullable.<String>undefined();
 
   public static final String JSON_PROPERTY_COUNTRY_CODE = "country_code";
+  @javax.annotation.Nonnull
   private CountryAlpha2 countryCode;
 
   public SamsungPayMerchantPaymentInformation() {
   }
 
-  public SamsungPayMerchantPaymentInformation name(String name) {
+  public SamsungPayMerchantPaymentInformation name(@javax.annotation.Nonnull String name) {
     
     this.name = name;
     return this;
   }
 
-   /**
+  /**
    * Merchant name, this will be displayed on the Samsung Pay screen
    * @return name
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_NAME)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -74,21 +77,20 @@ public class SamsungPayMerchantPaymentInformation {
 
   @JsonProperty(JSON_PROPERTY_NAME)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setName(String name) {
+  public void setName(@javax.annotation.Nonnull String name) {
     this.name = name;
   }
 
-
-  public SamsungPayMerchantPaymentInformation url(String url) {
+  public SamsungPayMerchantPaymentInformation url(@javax.annotation.Nullable String url) {
     this.url = JsonNullable.<String>of(url);
     
     return this;
   }
 
-   /**
+  /**
    * Merchant domain that process payments, required for web payments
    * @return url
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -108,21 +110,20 @@ public class SamsungPayMerchantPaymentInformation {
     this.url = url;
   }
 
-  public void setUrl(String url) {
+  public void setUrl(@javax.annotation.Nullable String url) {
     this.url = JsonNullable.<String>of(url);
   }
 
-
-  public SamsungPayMerchantPaymentInformation countryCode(CountryAlpha2 countryCode) {
+  public SamsungPayMerchantPaymentInformation countryCode(@javax.annotation.Nonnull CountryAlpha2 countryCode) {
     
     this.countryCode = countryCode;
     return this;
   }
 
-   /**
+  /**
    * Get countryCode
    * @return countryCode
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_COUNTRY_CODE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -134,7 +135,7 @@ public class SamsungPayMerchantPaymentInformation {
 
   @JsonProperty(JSON_PROPERTY_COUNTRY_CODE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setCountryCode(CountryAlpha2 countryCode) {
+  public void setCountryCode(@javax.annotation.Nonnull CountryAlpha2 countryCode) {
     this.countryCode = countryCode;
   }
 

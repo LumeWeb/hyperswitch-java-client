@@ -33,24 +33,25 @@ import java.util.StringJoiner;
   BankRedirectDataOneOf1.JSON_PROPERTY_BIZUM
 })
 @JsonTypeName("BankRedirectData_oneOf_1")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class BankRedirectDataOneOf1 {
   public static final String JSON_PROPERTY_BIZUM = "bizum";
+  @javax.annotation.Nonnull
   private Object bizum;
 
   public BankRedirectDataOneOf1() {
   }
 
-  public BankRedirectDataOneOf1 bizum(Object bizum) {
+  public BankRedirectDataOneOf1 bizum(@javax.annotation.Nonnull Object bizum) {
     
     this.bizum = bizum;
     return this;
   }
 
-   /**
+  /**
    * Get bizum
    * @return bizum
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_BIZUM)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -62,7 +63,7 @@ public class BankRedirectDataOneOf1 {
 
   @JsonProperty(JSON_PROPERTY_BIZUM)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setBizum(Object bizum) {
+  public void setBizum(@javax.annotation.Nonnull Object bizum) {
     this.bizum = bizum;
   }
 

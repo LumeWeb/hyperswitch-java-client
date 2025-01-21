@@ -34,24 +34,25 @@ import java.util.StringJoiner;
   PayLaterDataOneOf3.JSON_PROPERTY_AFTERPAY_CLEARPAY_REDIRECT
 })
 @JsonTypeName("PayLaterData_oneOf_3")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class PayLaterDataOneOf3 {
   public static final String JSON_PROPERTY_AFTERPAY_CLEARPAY_REDIRECT = "afterpay_clearpay_redirect";
+  @javax.annotation.Nonnull
   private PayLaterDataOneOf3AfterpayClearpayRedirect afterpayClearpayRedirect;
 
   public PayLaterDataOneOf3() {
   }
 
-  public PayLaterDataOneOf3 afterpayClearpayRedirect(PayLaterDataOneOf3AfterpayClearpayRedirect afterpayClearpayRedirect) {
+  public PayLaterDataOneOf3 afterpayClearpayRedirect(@javax.annotation.Nonnull PayLaterDataOneOf3AfterpayClearpayRedirect afterpayClearpayRedirect) {
     
     this.afterpayClearpayRedirect = afterpayClearpayRedirect;
     return this;
   }
 
-   /**
+  /**
    * Get afterpayClearpayRedirect
    * @return afterpayClearpayRedirect
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_AFTERPAY_CLEARPAY_REDIRECT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -63,7 +64,7 @@ public class PayLaterDataOneOf3 {
 
   @JsonProperty(JSON_PROPERTY_AFTERPAY_CLEARPAY_REDIRECT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setAfterpayClearpayRedirect(PayLaterDataOneOf3AfterpayClearpayRedirect afterpayClearpayRedirect) {
+  public void setAfterpayClearpayRedirect(@javax.annotation.Nonnull PayLaterDataOneOf3AfterpayClearpayRedirect afterpayClearpayRedirect) {
     this.afterpayClearpayRedirect = afterpayClearpayRedirect;
   }
 

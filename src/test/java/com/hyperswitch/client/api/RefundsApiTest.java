@@ -19,9 +19,9 @@ import com.hyperswitch.client.model.RefundListResponse;
 import com.hyperswitch.client.model.RefundRequest;
 import com.hyperswitch.client.model.RefundResponse;
 import com.hyperswitch.client.model.RefundUpdateRequest;
-import org.junit.Test;
-import org.junit.Ignore;
-import org.junit.Assert;
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Test;
 
 import java.time.LocalDate;
 import java.time.OffsetDateTime;
@@ -33,7 +33,7 @@ import java.util.Map;
 /**
  * API tests for RefundsApi
  */
-@Ignore
+@Disabled
 public class RefundsApiTest {
 
     private final RefundsApi api = new RefundsApi();

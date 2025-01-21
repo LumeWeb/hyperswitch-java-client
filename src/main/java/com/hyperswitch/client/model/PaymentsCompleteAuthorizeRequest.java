@@ -38,27 +38,29 @@ import java.util.StringJoiner;
   PaymentsCompleteAuthorizeRequest.JSON_PROPERTY_SHIPPING,
   PaymentsCompleteAuthorizeRequest.JSON_PROPERTY_CLIENT_SECRET
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class PaymentsCompleteAuthorizeRequest {
   public static final String JSON_PROPERTY_SHIPPING = "shipping";
+  @javax.annotation.Nullable
   private JsonNullable<Address> shipping = JsonNullable.<Address>undefined();
 
   public static final String JSON_PROPERTY_CLIENT_SECRET = "client_secret";
+  @javax.annotation.Nonnull
   private String clientSecret;
 
   public PaymentsCompleteAuthorizeRequest() {
   }
 
-  public PaymentsCompleteAuthorizeRequest shipping(Address shipping) {
+  public PaymentsCompleteAuthorizeRequest shipping(@javax.annotation.Nullable Address shipping) {
     this.shipping = JsonNullable.<Address>of(shipping);
     
     return this;
   }
 
-   /**
+  /**
    * Get shipping
    * @return shipping
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -78,21 +80,20 @@ public class PaymentsCompleteAuthorizeRequest {
     this.shipping = shipping;
   }
 
-  public void setShipping(Address shipping) {
+  public void setShipping(@javax.annotation.Nullable Address shipping) {
     this.shipping = JsonNullable.<Address>of(shipping);
   }
 
-
-  public PaymentsCompleteAuthorizeRequest clientSecret(String clientSecret) {
+  public PaymentsCompleteAuthorizeRequest clientSecret(@javax.annotation.Nonnull String clientSecret) {
     
     this.clientSecret = clientSecret;
     return this;
   }
 
-   /**
+  /**
    * Client Secret
    * @return clientSecret
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_CLIENT_SECRET)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -104,7 +105,7 @@ public class PaymentsCompleteAuthorizeRequest {
 
   @JsonProperty(JSON_PROPERTY_CLIENT_SECRET)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setClientSecret(String clientSecret) {
+  public void setClientSecret(@javax.annotation.Nonnull String clientSecret) {
     this.clientSecret = clientSecret;
   }
 

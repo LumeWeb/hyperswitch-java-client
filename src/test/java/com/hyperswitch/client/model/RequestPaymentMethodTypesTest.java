@@ -24,27 +24,27 @@ import com.hyperswitch.client.model.CardNetwork;
 import com.hyperswitch.client.model.PaymentExperience;
 import com.hyperswitch.client.model.PaymentMethodType;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import org.openapitools.jackson.nullable.JsonNullable;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.openapitools.jackson.nullable.JsonNullable;
 import java.util.NoSuchElementException;
-import org.junit.Assert;
-import org.junit.Ignore;
-import org.junit.Test;
-
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Test;
 
 /**
  * Model tests for RequestPaymentMethodTypes
  */
-public class RequestPaymentMethodTypesTest {
+class RequestPaymentMethodTypesTest {
     private final RequestPaymentMethodTypes model = new RequestPaymentMethodTypes();
 
     /**
      * Model tests for RequestPaymentMethodTypes
      */
     @Test
-    public void testRequestPaymentMethodTypes() {
+    void testRequestPaymentMethodTypes() {
         // TODO: test RequestPaymentMethodTypes
     }
 
@@ -52,7 +52,7 @@ public class RequestPaymentMethodTypesTest {
      * Test the property 'paymentMethodType'
      */
     @Test
-    public void paymentMethodTypeTest() {
+    void paymentMethodTypeTest() {
         // TODO: test paymentMethodType
     }
 
@@ -60,7 +60,7 @@ public class RequestPaymentMethodTypesTest {
      * Test the property 'paymentExperience'
      */
     @Test
-    public void paymentExperienceTest() {
+    void paymentExperienceTest() {
         // TODO: test paymentExperience
     }
 
@@ -68,7 +68,7 @@ public class RequestPaymentMethodTypesTest {
      * Test the property 'cardNetworks'
      */
     @Test
-    public void cardNetworksTest() {
+    void cardNetworksTest() {
         // TODO: test cardNetworks
     }
 
@@ -76,7 +76,7 @@ public class RequestPaymentMethodTypesTest {
      * Test the property 'acceptedCurrencies'
      */
     @Test
-    public void acceptedCurrenciesTest() {
+    void acceptedCurrenciesTest() {
         // TODO: test acceptedCurrencies
     }
 
@@ -84,7 +84,7 @@ public class RequestPaymentMethodTypesTest {
      * Test the property 'acceptedCountries'
      */
     @Test
-    public void acceptedCountriesTest() {
+    void acceptedCountriesTest() {
         // TODO: test acceptedCountries
     }
 
@@ -92,7 +92,7 @@ public class RequestPaymentMethodTypesTest {
      * Test the property 'minimumAmount'
      */
     @Test
-    public void minimumAmountTest() {
+    void minimumAmountTest() {
         // TODO: test minimumAmount
     }
 
@@ -100,7 +100,7 @@ public class RequestPaymentMethodTypesTest {
      * Test the property 'maximumAmount'
      */
     @Test
-    public void maximumAmountTest() {
+    void maximumAmountTest() {
         // TODO: test maximumAmount
     }
 
@@ -108,7 +108,7 @@ public class RequestPaymentMethodTypesTest {
      * Test the property 'recurringEnabled'
      */
     @Test
-    public void recurringEnabledTest() {
+    void recurringEnabledTest() {
         // TODO: test recurringEnabled
     }
 
@@ -116,7 +116,7 @@ public class RequestPaymentMethodTypesTest {
      * Test the property 'installmentPaymentEnabled'
      */
     @Test
-    public void installmentPaymentEnabledTest() {
+    void installmentPaymentEnabledTest() {
         // TODO: test installmentPaymentEnabled
     }
 

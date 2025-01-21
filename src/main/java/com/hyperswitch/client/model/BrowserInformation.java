@@ -45,52 +45,62 @@ import java.util.StringJoiner;
   BrowserInformation.JSON_PROPERTY_ACCEPT_HEADER,
   BrowserInformation.JSON_PROPERTY_USER_AGENT
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class BrowserInformation {
   public static final String JSON_PROPERTY_COLOR_DEPTH = "color_depth";
+  @javax.annotation.Nullable
   private JsonNullable<Integer> colorDepth = JsonNullable.<Integer>undefined();
 
   public static final String JSON_PROPERTY_JAVA_ENABLED = "java_enabled";
+  @javax.annotation.Nullable
   private JsonNullable<Boolean> javaEnabled = JsonNullable.<Boolean>undefined();
 
   public static final String JSON_PROPERTY_JAVA_SCRIPT_ENABLED = "java_script_enabled";
+  @javax.annotation.Nullable
   private JsonNullable<Boolean> javaScriptEnabled = JsonNullable.<Boolean>undefined();
 
   public static final String JSON_PROPERTY_LANGUAGE = "language";
+  @javax.annotation.Nullable
   private JsonNullable<String> language = JsonNullable.<String>undefined();
 
   public static final String JSON_PROPERTY_SCREEN_HEIGHT = "screen_height";
+  @javax.annotation.Nullable
   private JsonNullable<Integer> screenHeight = JsonNullable.<Integer>undefined();
 
   public static final String JSON_PROPERTY_SCREEN_WIDTH = "screen_width";
+  @javax.annotation.Nullable
   private JsonNullable<Integer> screenWidth = JsonNullable.<Integer>undefined();
 
   public static final String JSON_PROPERTY_TIME_ZONE = "time_zone";
+  @javax.annotation.Nullable
   private JsonNullable<Integer> timeZone = JsonNullable.<Integer>undefined();
 
   public static final String JSON_PROPERTY_IP_ADDRESS = "ip_address";
+  @javax.annotation.Nullable
   private JsonNullable<String> ipAddress = JsonNullable.<String>undefined();
 
   public static final String JSON_PROPERTY_ACCEPT_HEADER = "accept_header";
+  @javax.annotation.Nullable
   private JsonNullable<String> acceptHeader = JsonNullable.<String>undefined();
 
   public static final String JSON_PROPERTY_USER_AGENT = "user_agent";
+  @javax.annotation.Nullable
   private JsonNullable<String> userAgent = JsonNullable.<String>undefined();
 
   public BrowserInformation() {
   }
 
-  public BrowserInformation colorDepth(Integer colorDepth) {
+  public BrowserInformation colorDepth(@javax.annotation.Nullable Integer colorDepth) {
     this.colorDepth = JsonNullable.<Integer>of(colorDepth);
     
     return this;
   }
 
-   /**
+  /**
    * Color depth supported by the browser
    * minimum: 0
    * @return colorDepth
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -110,21 +120,20 @@ public class BrowserInformation {
     this.colorDepth = colorDepth;
   }
 
-  public void setColorDepth(Integer colorDepth) {
+  public void setColorDepth(@javax.annotation.Nullable Integer colorDepth) {
     this.colorDepth = JsonNullable.<Integer>of(colorDepth);
   }
 
-
-  public BrowserInformation javaEnabled(Boolean javaEnabled) {
+  public BrowserInformation javaEnabled(@javax.annotation.Nullable Boolean javaEnabled) {
     this.javaEnabled = JsonNullable.<Boolean>of(javaEnabled);
     
     return this;
   }
 
-   /**
+  /**
    * Whether java is enabled in the browser
    * @return javaEnabled
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -144,21 +153,20 @@ public class BrowserInformation {
     this.javaEnabled = javaEnabled;
   }
 
-  public void setJavaEnabled(Boolean javaEnabled) {
+  public void setJavaEnabled(@javax.annotation.Nullable Boolean javaEnabled) {
     this.javaEnabled = JsonNullable.<Boolean>of(javaEnabled);
   }
 
-
-  public BrowserInformation javaScriptEnabled(Boolean javaScriptEnabled) {
+  public BrowserInformation javaScriptEnabled(@javax.annotation.Nullable Boolean javaScriptEnabled) {
     this.javaScriptEnabled = JsonNullable.<Boolean>of(javaScriptEnabled);
     
     return this;
   }
 
-   /**
+  /**
    * Whether javascript is enabled in the browser
    * @return javaScriptEnabled
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -178,21 +186,20 @@ public class BrowserInformation {
     this.javaScriptEnabled = javaScriptEnabled;
   }
 
-  public void setJavaScriptEnabled(Boolean javaScriptEnabled) {
+  public void setJavaScriptEnabled(@javax.annotation.Nullable Boolean javaScriptEnabled) {
     this.javaScriptEnabled = JsonNullable.<Boolean>of(javaScriptEnabled);
   }
 
-
-  public BrowserInformation language(String language) {
+  public BrowserInformation language(@javax.annotation.Nullable String language) {
     this.language = JsonNullable.<String>of(language);
     
     return this;
   }
 
-   /**
+  /**
    * Language supported
    * @return language
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -212,22 +219,21 @@ public class BrowserInformation {
     this.language = language;
   }
 
-  public void setLanguage(String language) {
+  public void setLanguage(@javax.annotation.Nullable String language) {
     this.language = JsonNullable.<String>of(language);
   }
 
-
-  public BrowserInformation screenHeight(Integer screenHeight) {
+  public BrowserInformation screenHeight(@javax.annotation.Nullable Integer screenHeight) {
     this.screenHeight = JsonNullable.<Integer>of(screenHeight);
     
     return this;
   }
 
-   /**
+  /**
    * The screen height in pixels
    * minimum: 0
    * @return screenHeight
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -247,22 +253,21 @@ public class BrowserInformation {
     this.screenHeight = screenHeight;
   }
 
-  public void setScreenHeight(Integer screenHeight) {
+  public void setScreenHeight(@javax.annotation.Nullable Integer screenHeight) {
     this.screenHeight = JsonNullable.<Integer>of(screenHeight);
   }
 
-
-  public BrowserInformation screenWidth(Integer screenWidth) {
+  public BrowserInformation screenWidth(@javax.annotation.Nullable Integer screenWidth) {
     this.screenWidth = JsonNullable.<Integer>of(screenWidth);
     
     return this;
   }
 
-   /**
+  /**
    * The screen width in pixels
    * minimum: 0
    * @return screenWidth
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -282,21 +287,20 @@ public class BrowserInformation {
     this.screenWidth = screenWidth;
   }
 
-  public void setScreenWidth(Integer screenWidth) {
+  public void setScreenWidth(@javax.annotation.Nullable Integer screenWidth) {
     this.screenWidth = JsonNullable.<Integer>of(screenWidth);
   }
 
-
-  public BrowserInformation timeZone(Integer timeZone) {
+  public BrowserInformation timeZone(@javax.annotation.Nullable Integer timeZone) {
     this.timeZone = JsonNullable.<Integer>of(timeZone);
     
     return this;
   }
 
-   /**
+  /**
    * Time zone of the client
    * @return timeZone
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -316,21 +320,20 @@ public class BrowserInformation {
     this.timeZone = timeZone;
   }
 
-  public void setTimeZone(Integer timeZone) {
+  public void setTimeZone(@javax.annotation.Nullable Integer timeZone) {
     this.timeZone = JsonNullable.<Integer>of(timeZone);
   }
 
-
-  public BrowserInformation ipAddress(String ipAddress) {
+  public BrowserInformation ipAddress(@javax.annotation.Nullable String ipAddress) {
     this.ipAddress = JsonNullable.<String>of(ipAddress);
     
     return this;
   }
 
-   /**
+  /**
    * Ip address of the client
    * @return ipAddress
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -350,21 +353,20 @@ public class BrowserInformation {
     this.ipAddress = ipAddress;
   }
 
-  public void setIpAddress(String ipAddress) {
+  public void setIpAddress(@javax.annotation.Nullable String ipAddress) {
     this.ipAddress = JsonNullable.<String>of(ipAddress);
   }
 
-
-  public BrowserInformation acceptHeader(String acceptHeader) {
+  public BrowserInformation acceptHeader(@javax.annotation.Nullable String acceptHeader) {
     this.acceptHeader = JsonNullable.<String>of(acceptHeader);
     
     return this;
   }
 
-   /**
+  /**
    * List of headers that are accepted
    * @return acceptHeader
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -384,21 +386,20 @@ public class BrowserInformation {
     this.acceptHeader = acceptHeader;
   }
 
-  public void setAcceptHeader(String acceptHeader) {
+  public void setAcceptHeader(@javax.annotation.Nullable String acceptHeader) {
     this.acceptHeader = JsonNullable.<String>of(acceptHeader);
   }
 
-
-  public BrowserInformation userAgent(String userAgent) {
+  public BrowserInformation userAgent(@javax.annotation.Nullable String userAgent) {
     this.userAgent = JsonNullable.<String>of(userAgent);
     
     return this;
   }
 
-   /**
+  /**
    * User-agent of the browser
    * @return userAgent
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -418,7 +419,7 @@ public class BrowserInformation {
     this.userAgent = userAgent;
   }
 
-  public void setUserAgent(String userAgent) {
+  public void setUserAgent(@javax.annotation.Nullable String userAgent) {
     this.userAgent = JsonNullable.<String>of(userAgent);
   }
 

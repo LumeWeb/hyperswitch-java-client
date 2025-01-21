@@ -37,27 +37,29 @@ import java.util.StringJoiner;
   CryptoData.JSON_PROPERTY_PAY_CURRENCY,
   CryptoData.JSON_PROPERTY_NETWORK
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class CryptoData {
   public static final String JSON_PROPERTY_PAY_CURRENCY = "pay_currency";
+  @javax.annotation.Nullable
   private JsonNullable<String> payCurrency = JsonNullable.<String>undefined();
 
   public static final String JSON_PROPERTY_NETWORK = "network";
+  @javax.annotation.Nullable
   private JsonNullable<String> network = JsonNullable.<String>undefined();
 
   public CryptoData() {
   }
 
-  public CryptoData payCurrency(String payCurrency) {
+  public CryptoData payCurrency(@javax.annotation.Nullable String payCurrency) {
     this.payCurrency = JsonNullable.<String>of(payCurrency);
     
     return this;
   }
 
-   /**
+  /**
    * Get payCurrency
    * @return payCurrency
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -77,21 +79,20 @@ public class CryptoData {
     this.payCurrency = payCurrency;
   }
 
-  public void setPayCurrency(String payCurrency) {
+  public void setPayCurrency(@javax.annotation.Nullable String payCurrency) {
     this.payCurrency = JsonNullable.<String>of(payCurrency);
   }
 
-
-  public CryptoData network(String network) {
+  public CryptoData network(@javax.annotation.Nullable String network) {
     this.network = JsonNullable.<String>of(network);
     
     return this;
   }
 
-   /**
+  /**
    * Get network
    * @return network
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -111,7 +112,7 @@ public class CryptoData {
     this.network = network;
   }
 
-  public void setNetwork(String network) {
+  public void setNetwork(@javax.annotation.Nullable String network) {
     this.network = JsonNullable.<String>of(network);
   }
 

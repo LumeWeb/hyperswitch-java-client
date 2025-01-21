@@ -34,24 +34,25 @@ import java.util.StringJoiner;
   PaymentMethodDataResponseOneOf14.JSON_PROPERTY_CARD_TOKEN
 })
 @JsonTypeName("PaymentMethodDataResponse_oneOf_14")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class PaymentMethodDataResponseOneOf14 {
   public static final String JSON_PROPERTY_CARD_TOKEN = "card_token";
+  @javax.annotation.Nonnull
   private CardTokenResponse cardToken;
 
   public PaymentMethodDataResponseOneOf14() {
   }
 
-  public PaymentMethodDataResponseOneOf14 cardToken(CardTokenResponse cardToken) {
+  public PaymentMethodDataResponseOneOf14 cardToken(@javax.annotation.Nonnull CardTokenResponse cardToken) {
     
     this.cardToken = cardToken;
     return this;
   }
 
-   /**
+  /**
    * Get cardToken
    * @return cardToken
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_CARD_TOKEN)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -63,7 +64,7 @@ public class PaymentMethodDataResponseOneOf14 {
 
   @JsonProperty(JSON_PROPERTY_CARD_TOKEN)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setCardToken(CardTokenResponse cardToken) {
+  public void setCardToken(@javax.annotation.Nonnull CardTokenResponse cardToken) {
     this.cardToken = cardToken;
   }
 

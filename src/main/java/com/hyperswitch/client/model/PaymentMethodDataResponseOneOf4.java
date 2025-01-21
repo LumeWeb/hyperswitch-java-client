@@ -34,24 +34,25 @@ import java.util.StringJoiner;
   PaymentMethodDataResponseOneOf4.JSON_PROPERTY_BANK_REDIRECT
 })
 @JsonTypeName("PaymentMethodDataResponse_oneOf_4")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class PaymentMethodDataResponseOneOf4 {
   public static final String JSON_PROPERTY_BANK_REDIRECT = "bank_redirect";
+  @javax.annotation.Nonnull
   private BankRedirectResponse bankRedirect;
 
   public PaymentMethodDataResponseOneOf4() {
   }
 
-  public PaymentMethodDataResponseOneOf4 bankRedirect(BankRedirectResponse bankRedirect) {
+  public PaymentMethodDataResponseOneOf4 bankRedirect(@javax.annotation.Nonnull BankRedirectResponse bankRedirect) {
     
     this.bankRedirect = bankRedirect;
     return this;
   }
 
-   /**
+  /**
    * Get bankRedirect
    * @return bankRedirect
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_BANK_REDIRECT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -63,7 +64,7 @@ public class PaymentMethodDataResponseOneOf4 {
 
   @JsonProperty(JSON_PROPERTY_BANK_REDIRECT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setBankRedirect(BankRedirectResponse bankRedirect) {
+  public void setBankRedirect(@javax.annotation.Nonnull BankRedirectResponse bankRedirect) {
     this.bankRedirect = bankRedirect;
   }
 

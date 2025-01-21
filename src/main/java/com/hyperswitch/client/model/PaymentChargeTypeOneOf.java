@@ -34,24 +34,25 @@ import java.util.StringJoiner;
   PaymentChargeTypeOneOf.JSON_PROPERTY_STRIPE
 })
 @JsonTypeName("PaymentChargeType_oneOf")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class PaymentChargeTypeOneOf {
   public static final String JSON_PROPERTY_STRIPE = "Stripe";
+  @javax.annotation.Nonnull
   private StripeChargeType stripe;
 
   public PaymentChargeTypeOneOf() {
   }
 
-  public PaymentChargeTypeOneOf stripe(StripeChargeType stripe) {
+  public PaymentChargeTypeOneOf stripe(@javax.annotation.Nonnull StripeChargeType stripe) {
     
     this.stripe = stripe;
     return this;
   }
 
-   /**
+  /**
    * Get stripe
    * @return stripe
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_STRIPE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -63,7 +64,7 @@ public class PaymentChargeTypeOneOf {
 
   @JsonProperty(JSON_PROPERTY_STRIPE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setStripe(StripeChargeType stripe) {
+  public void setStripe(@javax.annotation.Nonnull StripeChargeType stripe) {
     this.stripe = stripe;
   }
 

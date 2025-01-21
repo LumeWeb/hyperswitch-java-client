@@ -33,25 +33,26 @@ import java.util.StringJoiner;
   ElementSizeOneOf1.JSON_PROPERTY_PERCENTAGE
 })
 @JsonTypeName("ElementSize_oneOf_1")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class ElementSizeOneOf1 {
   public static final String JSON_PROPERTY_PERCENTAGE = "Percentage";
+  @javax.annotation.Nonnull
   private Integer percentage;
 
   public ElementSizeOneOf1() {
   }
 
-  public ElementSizeOneOf1 percentage(Integer percentage) {
+  public ElementSizeOneOf1 percentage(@javax.annotation.Nonnull Integer percentage) {
     
     this.percentage = percentage;
     return this;
   }
 
-   /**
+  /**
    * Get percentage
    * minimum: 0
    * @return percentage
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_PERCENTAGE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -63,7 +64,7 @@ public class ElementSizeOneOf1 {
 
   @JsonProperty(JSON_PROPERTY_PERCENTAGE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setPercentage(Integer percentage) {
+  public void setPercentage(@javax.annotation.Nonnull Integer percentage) {
     this.percentage = percentage;
   }
 

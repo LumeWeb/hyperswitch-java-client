@@ -42,27 +42,27 @@ import com.hyperswitch.client.model.SessionTokenOneOf5;
 import com.hyperswitch.client.model.SessionTokenOneOf6;
 import com.hyperswitch.client.model.SessionTokenOneOf7;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import org.openapitools.jackson.nullable.JsonNullable;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.openapitools.jackson.nullable.JsonNullable;
 import java.util.NoSuchElementException;
-import org.junit.Assert;
-import org.junit.Ignore;
-import org.junit.Test;
-
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Test;
 
 /**
  * Model tests for SessionToken
  */
-public class SessionTokenTest {
+class SessionTokenTest {
     private final SessionToken model = new SessionToken();
 
     /**
      * Model tests for SessionToken
      */
     @Test
-    public void testSessionToken() {
+    void testSessionToken() {
         // TODO: test SessionToken
     }
 
@@ -70,7 +70,7 @@ public class SessionTokenTest {
      * Test the property 'delayedSessionToken'
      */
     @Test
-    public void delayedSessionTokenTest() {
+    void delayedSessionTokenTest() {
         // TODO: test delayedSessionToken
     }
 
@@ -78,7 +78,7 @@ public class SessionTokenTest {
      * Test the property 'connector'
      */
     @Test
-    public void connectorTest() {
+    void connectorTest() {
         // TODO: test connector
     }
 
@@ -86,7 +86,7 @@ public class SessionTokenTest {
      * Test the property 'sdkNextAction'
      */
     @Test
-    public void sdkNextActionTest() {
+    void sdkNextActionTest() {
         // TODO: test sdkNextAction
     }
 
@@ -94,7 +94,7 @@ public class SessionTokenTest {
      * Test the property 'merchantInfo'
      */
     @Test
-    public void merchantInfoTest() {
+    void merchantInfoTest() {
         // TODO: test merchantInfo
     }
 
@@ -102,7 +102,7 @@ public class SessionTokenTest {
      * Test the property 'shippingAddressRequired'
      */
     @Test
-    public void shippingAddressRequiredTest() {
+    void shippingAddressRequiredTest() {
         // TODO: test shippingAddressRequired
     }
 
@@ -110,7 +110,7 @@ public class SessionTokenTest {
      * Test the property 'emailRequired'
      */
     @Test
-    public void emailRequiredTest() {
+    void emailRequiredTest() {
         // TODO: test emailRequired
     }
 
@@ -118,7 +118,7 @@ public class SessionTokenTest {
      * Test the property 'shippingAddressParameters'
      */
     @Test
-    public void shippingAddressParametersTest() {
+    void shippingAddressParametersTest() {
         // TODO: test shippingAddressParameters
     }
 
@@ -126,7 +126,7 @@ public class SessionTokenTest {
      * Test the property 'allowedPaymentMethods'
      */
     @Test
-    public void allowedPaymentMethodsTest() {
+    void allowedPaymentMethodsTest() {
         // TODO: test allowedPaymentMethods
     }
 
@@ -134,7 +134,7 @@ public class SessionTokenTest {
      * Test the property 'transactionInfo'
      */
     @Test
-    public void transactionInfoTest() {
+    void transactionInfoTest() {
         // TODO: test transactionInfo
     }
 
@@ -142,7 +142,7 @@ public class SessionTokenTest {
      * Test the property 'secrets'
      */
     @Test
-    public void secretsTest() {
+    void secretsTest() {
         // TODO: test secrets
     }
 
@@ -150,7 +150,7 @@ public class SessionTokenTest {
      * Test the property 'walletName'
      */
     @Test
-    public void walletNameTest() {
+    void walletNameTest() {
         // TODO: test walletName
     }
 
@@ -158,7 +158,7 @@ public class SessionTokenTest {
      * Test the property 'version'
      */
     @Test
-    public void versionTest() {
+    void versionTest() {
         // TODO: test version
     }
 
@@ -166,7 +166,7 @@ public class SessionTokenTest {
      * Test the property 'serviceId'
      */
     @Test
-    public void serviceIdTest() {
+    void serviceIdTest() {
         // TODO: test serviceId
     }
 
@@ -174,7 +174,7 @@ public class SessionTokenTest {
      * Test the property 'orderNumber'
      */
     @Test
-    public void orderNumberTest() {
+    void orderNumberTest() {
         // TODO: test orderNumber
     }
 
@@ -182,7 +182,7 @@ public class SessionTokenTest {
      * Test the property 'merchant'
      */
     @Test
-    public void merchantTest() {
+    void merchantTest() {
         // TODO: test merchant
     }
 
@@ -190,7 +190,7 @@ public class SessionTokenTest {
      * Test the property 'amount'
      */
     @Test
-    public void amountTest() {
+    void amountTest() {
         // TODO: test amount
     }
 
@@ -198,7 +198,7 @@ public class SessionTokenTest {
      * Test the property 'protocol'
      */
     @Test
-    public void protocolTest() {
+    void protocolTest() {
         // TODO: test protocol
     }
 
@@ -206,7 +206,7 @@ public class SessionTokenTest {
      * Test the property 'allowedBrands'
      */
     @Test
-    public void allowedBrandsTest() {
+    void allowedBrandsTest() {
         // TODO: test allowedBrands
     }
 
@@ -214,7 +214,7 @@ public class SessionTokenTest {
      * Test the property 'sessionToken'
      */
     @Test
-    public void sessionTokenTest() {
+    void sessionTokenTest() {
         // TODO: test sessionToken
     }
 
@@ -222,7 +222,7 @@ public class SessionTokenTest {
      * Test the property 'sessionId'
      */
     @Test
-    public void sessionIdTest() {
+    void sessionIdTest() {
         // TODO: test sessionId
     }
 
@@ -230,7 +230,7 @@ public class SessionTokenTest {
      * Test the property 'sessionTokenData'
      */
     @Test
-    public void sessionTokenDataTest() {
+    void sessionTokenDataTest() {
         // TODO: test sessionTokenData
     }
 
@@ -238,7 +238,7 @@ public class SessionTokenTest {
      * Test the property 'paymentRequestData'
      */
     @Test
-    public void paymentRequestDataTest() {
+    void paymentRequestDataTest() {
         // TODO: test paymentRequestData
     }
 
@@ -246,7 +246,7 @@ public class SessionTokenTest {
      * Test the property 'connectorReferenceId'
      */
     @Test
-    public void connectorReferenceIdTest() {
+    void connectorReferenceIdTest() {
         // TODO: test connectorReferenceId
     }
 
@@ -254,7 +254,7 @@ public class SessionTokenTest {
      * Test the property 'connectorSdkPublicKey'
      */
     @Test
-    public void connectorSdkPublicKeyTest() {
+    void connectorSdkPublicKeyTest() {
         // TODO: test connectorSdkPublicKey
     }
 
@@ -262,7 +262,7 @@ public class SessionTokenTest {
      * Test the property 'connectorMerchantId'
      */
     @Test
-    public void connectorMerchantIdTest() {
+    void connectorMerchantIdTest() {
         // TODO: test connectorMerchantId
     }
 
@@ -270,7 +270,7 @@ public class SessionTokenTest {
      * Test the property 'openBankingSessionToken'
      */
     @Test
-    public void openBankingSessionTokenTest() {
+    void openBankingSessionTokenTest() {
         // TODO: test openBankingSessionToken
     }
 
@@ -278,7 +278,7 @@ public class SessionTokenTest {
      * Test the property 'clientId'
      */
     @Test
-    public void clientIdTest() {
+    void clientIdTest() {
         // TODO: test clientId
     }
 
@@ -286,7 +286,7 @@ public class SessionTokenTest {
      * Test the property 'clientName'
      */
     @Test
-    public void clientNameTest() {
+    void clientNameTest() {
         // TODO: test clientName
     }
 
@@ -294,7 +294,7 @@ public class SessionTokenTest {
      * Test the property 'clientProfileId'
      */
     @Test
-    public void clientProfileIdTest() {
+    void clientProfileIdTest() {
         // TODO: test clientProfileId
     }
 
@@ -302,7 +302,7 @@ public class SessionTokenTest {
      * Test the property 'transactionCurrencyCode'
      */
     @Test
-    public void transactionCurrencyCodeTest() {
+    void transactionCurrencyCodeTest() {
         // TODO: test transactionCurrencyCode
     }
 
@@ -310,7 +310,7 @@ public class SessionTokenTest {
      * Test the property 'transactionAmount'
      */
     @Test
-    public void transactionAmountTest() {
+    void transactionAmountTest() {
         // TODO: test transactionAmount
     }
 
@@ -318,7 +318,7 @@ public class SessionTokenTest {
      * Test the property 'emailAddress'
      */
     @Test
-    public void emailAddressTest() {
+    void emailAddressTest() {
         // TODO: test emailAddress
     }
 

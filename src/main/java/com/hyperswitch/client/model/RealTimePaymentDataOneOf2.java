@@ -33,24 +33,25 @@ import java.util.StringJoiner;
   RealTimePaymentDataOneOf2.JSON_PROPERTY_PROMPT_PAY
 })
 @JsonTypeName("RealTimePaymentData_oneOf_2")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class RealTimePaymentDataOneOf2 {
   public static final String JSON_PROPERTY_PROMPT_PAY = "prompt_pay";
+  @javax.annotation.Nonnull
   private Object promptPay;
 
   public RealTimePaymentDataOneOf2() {
   }
 
-  public RealTimePaymentDataOneOf2 promptPay(Object promptPay) {
+  public RealTimePaymentDataOneOf2 promptPay(@javax.annotation.Nonnull Object promptPay) {
     
     this.promptPay = promptPay;
     return this;
   }
 
-   /**
+  /**
    * Get promptPay
    * @return promptPay
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_PROMPT_PAY)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -62,7 +63,7 @@ public class RealTimePaymentDataOneOf2 {
 
   @JsonProperty(JSON_PROPERTY_PROMPT_PAY)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setPromptPay(Object promptPay) {
+  public void setPromptPay(@javax.annotation.Nonnull Object promptPay) {
     this.promptPay = promptPay;
   }
 

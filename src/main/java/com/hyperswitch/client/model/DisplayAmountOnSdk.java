@@ -34,30 +34,33 @@ import java.util.StringJoiner;
   DisplayAmountOnSdk.JSON_PROPERTY_ORDER_TAX_AMOUNT,
   DisplayAmountOnSdk.JSON_PROPERTY_SHIPPING_COST
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class DisplayAmountOnSdk {
   public static final String JSON_PROPERTY_NET_AMOUNT = "net_amount";
+  @javax.annotation.Nonnull
   private String netAmount;
 
   public static final String JSON_PROPERTY_ORDER_TAX_AMOUNT = "order_tax_amount";
+  @javax.annotation.Nonnull
   private String orderTaxAmount;
 
   public static final String JSON_PROPERTY_SHIPPING_COST = "shipping_cost";
+  @javax.annotation.Nonnull
   private String shippingCost;
 
   public DisplayAmountOnSdk() {
   }
 
-  public DisplayAmountOnSdk netAmount(String netAmount) {
+  public DisplayAmountOnSdk netAmount(@javax.annotation.Nonnull String netAmount) {
     
     this.netAmount = netAmount;
     return this;
   }
 
-   /**
+  /**
    * net amount &#x3D; amount + order_tax_amount + shipping_cost
    * @return netAmount
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_NET_AMOUNT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -69,21 +72,20 @@ public class DisplayAmountOnSdk {
 
   @JsonProperty(JSON_PROPERTY_NET_AMOUNT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setNetAmount(String netAmount) {
+  public void setNetAmount(@javax.annotation.Nonnull String netAmount) {
     this.netAmount = netAmount;
   }
 
-
-  public DisplayAmountOnSdk orderTaxAmount(String orderTaxAmount) {
+  public DisplayAmountOnSdk orderTaxAmount(@javax.annotation.Nonnull String orderTaxAmount) {
     
     this.orderTaxAmount = orderTaxAmount;
     return this;
   }
 
-   /**
+  /**
    * order tax amount calculated by tax connectors
    * @return orderTaxAmount
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_ORDER_TAX_AMOUNT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -95,21 +97,20 @@ public class DisplayAmountOnSdk {
 
   @JsonProperty(JSON_PROPERTY_ORDER_TAX_AMOUNT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setOrderTaxAmount(String orderTaxAmount) {
+  public void setOrderTaxAmount(@javax.annotation.Nonnull String orderTaxAmount) {
     this.orderTaxAmount = orderTaxAmount;
   }
 
-
-  public DisplayAmountOnSdk shippingCost(String shippingCost) {
+  public DisplayAmountOnSdk shippingCost(@javax.annotation.Nonnull String shippingCost) {
     
     this.shippingCost = shippingCost;
     return this;
   }
 
-   /**
+  /**
    * shipping cost for the order
    * @return shippingCost
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_SHIPPING_COST)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -121,7 +122,7 @@ public class DisplayAmountOnSdk {
 
   @JsonProperty(JSON_PROPERTY_SHIPPING_COST)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setShippingCost(String shippingCost) {
+  public void setShippingCost(@javax.annotation.Nonnull String shippingCost) {
     this.shippingCost = shippingCost;
   }
 

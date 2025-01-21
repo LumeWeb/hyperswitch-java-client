@@ -36,27 +36,29 @@ import java.util.StringJoiner;
   GiftCardData.JSON_PROPERTY_GIVEX,
   GiftCardData.JSON_PROPERTY_PAY_SAFE_CARD
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class GiftCardData {
   public static final String JSON_PROPERTY_GIVEX = "givex";
+  @javax.annotation.Nonnull
   private GiftCardDetails givex;
 
   public static final String JSON_PROPERTY_PAY_SAFE_CARD = "pay_safe_card";
+  @javax.annotation.Nonnull
   private Object paySafeCard;
 
   public GiftCardData() {
   }
 
-  public GiftCardData givex(GiftCardDetails givex) {
+  public GiftCardData givex(@javax.annotation.Nonnull GiftCardDetails givex) {
     
     this.givex = givex;
     return this;
   }
 
-   /**
+  /**
    * Get givex
    * @return givex
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_GIVEX)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -68,21 +70,20 @@ public class GiftCardData {
 
   @JsonProperty(JSON_PROPERTY_GIVEX)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setGivex(GiftCardDetails givex) {
+  public void setGivex(@javax.annotation.Nonnull GiftCardDetails givex) {
     this.givex = givex;
   }
 
-
-  public GiftCardData paySafeCard(Object paySafeCard) {
+  public GiftCardData paySafeCard(@javax.annotation.Nonnull Object paySafeCard) {
     
     this.paySafeCard = paySafeCard;
     return this;
   }
 
-   /**
+  /**
    * Get paySafeCard
    * @return paySafeCard
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_PAY_SAFE_CARD)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -94,7 +95,7 @@ public class GiftCardData {
 
   @JsonProperty(JSON_PROPERTY_PAY_SAFE_CARD)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setPaySafeCard(Object paySafeCard) {
+  public void setPaySafeCard(@javax.annotation.Nonnull Object paySafeCard) {
     this.paySafeCard = paySafeCard;
   }
 

@@ -33,24 +33,25 @@ import java.util.StringJoiner;
   CardRedirectDataOneOf.JSON_PROPERTY_KNET
 })
 @JsonTypeName("CardRedirectData_oneOf")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class CardRedirectDataOneOf {
   public static final String JSON_PROPERTY_KNET = "knet";
+  @javax.annotation.Nonnull
   private Object knet;
 
   public CardRedirectDataOneOf() {
   }
 
-  public CardRedirectDataOneOf knet(Object knet) {
+  public CardRedirectDataOneOf knet(@javax.annotation.Nonnull Object knet) {
     
     this.knet = knet;
     return this;
   }
 
-   /**
+  /**
    * Get knet
    * @return knet
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_KNET)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -62,7 +63,7 @@ public class CardRedirectDataOneOf {
 
   @JsonProperty(JSON_PROPERTY_KNET)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setKnet(Object knet) {
+  public void setKnet(@javax.annotation.Nonnull Object knet) {
     this.knet = knet;
   }
 

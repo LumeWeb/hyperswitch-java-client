@@ -20,27 +20,27 @@ import com.fasterxml.jackson.annotation.JsonTypeName;
 import com.fasterxml.jackson.annotation.JsonValue;
 import com.hyperswitch.client.model.PaymentExperience;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import org.openapitools.jackson.nullable.JsonNullable;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.openapitools.jackson.nullable.JsonNullable;
 import java.util.NoSuchElementException;
-import org.junit.Assert;
-import org.junit.Ignore;
-import org.junit.Test;
-
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Test;
 
 /**
  * Model tests for PaymentExperienceTypes
  */
-public class PaymentExperienceTypesTest {
+class PaymentExperienceTypesTest {
     private final PaymentExperienceTypes model = new PaymentExperienceTypes();
 
     /**
      * Model tests for PaymentExperienceTypes
      */
     @Test
-    public void testPaymentExperienceTypes() {
+    void testPaymentExperienceTypes() {
         // TODO: test PaymentExperienceTypes
     }
 
@@ -48,7 +48,7 @@ public class PaymentExperienceTypesTest {
      * Test the property 'paymentExperienceType'
      */
     @Test
-    public void paymentExperienceTypeTest() {
+    void paymentExperienceTypeTest() {
         // TODO: test paymentExperienceType
     }
 
@@ -56,7 +56,7 @@ public class PaymentExperienceTypesTest {
      * Test the property 'eligibleConnectors'
      */
     @Test
-    public void eligibleConnectorsTest() {
+    void eligibleConnectorsTest() {
         // TODO: test eligibleConnectors
     }
 

@@ -42,42 +42,49 @@ import java.util.StringJoiner;
   FrmMessage.JSON_PROPERTY_FRM_REASON,
   FrmMessage.JSON_PROPERTY_FRM_ERROR
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class FrmMessage {
   public static final String JSON_PROPERTY_FRM_NAME = "frm_name";
+  @javax.annotation.Nonnull
   private String frmName;
 
   public static final String JSON_PROPERTY_FRM_TRANSACTION_ID = "frm_transaction_id";
+  @javax.annotation.Nullable
   private JsonNullable<String> frmTransactionId = JsonNullable.<String>undefined();
 
   public static final String JSON_PROPERTY_FRM_TRANSACTION_TYPE = "frm_transaction_type";
+  @javax.annotation.Nullable
   private JsonNullable<String> frmTransactionType = JsonNullable.<String>undefined();
 
   public static final String JSON_PROPERTY_FRM_STATUS = "frm_status";
+  @javax.annotation.Nullable
   private JsonNullable<String> frmStatus = JsonNullable.<String>undefined();
 
   public static final String JSON_PROPERTY_FRM_SCORE = "frm_score";
+  @javax.annotation.Nullable
   private JsonNullable<Integer> frmScore = JsonNullable.<Integer>undefined();
 
   public static final String JSON_PROPERTY_FRM_REASON = "frm_reason";
+  @javax.annotation.Nullable
   private JsonNullable<Object> frmReason = JsonNullable.<Object>of(null);
 
   public static final String JSON_PROPERTY_FRM_ERROR = "frm_error";
+  @javax.annotation.Nullable
   private JsonNullable<String> frmError = JsonNullable.<String>undefined();
 
   public FrmMessage() {
   }
 
-  public FrmMessage frmName(String frmName) {
+  public FrmMessage frmName(@javax.annotation.Nonnull String frmName) {
     
     this.frmName = frmName;
     return this;
   }
 
-   /**
+  /**
    * Get frmName
    * @return frmName
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_FRM_NAME)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -89,21 +96,20 @@ public class FrmMessage {
 
   @JsonProperty(JSON_PROPERTY_FRM_NAME)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setFrmName(String frmName) {
+  public void setFrmName(@javax.annotation.Nonnull String frmName) {
     this.frmName = frmName;
   }
 
-
-  public FrmMessage frmTransactionId(String frmTransactionId) {
+  public FrmMessage frmTransactionId(@javax.annotation.Nullable String frmTransactionId) {
     this.frmTransactionId = JsonNullable.<String>of(frmTransactionId);
     
     return this;
   }
 
-   /**
+  /**
    * Get frmTransactionId
    * @return frmTransactionId
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -123,21 +129,20 @@ public class FrmMessage {
     this.frmTransactionId = frmTransactionId;
   }
 
-  public void setFrmTransactionId(String frmTransactionId) {
+  public void setFrmTransactionId(@javax.annotation.Nullable String frmTransactionId) {
     this.frmTransactionId = JsonNullable.<String>of(frmTransactionId);
   }
 
-
-  public FrmMessage frmTransactionType(String frmTransactionType) {
+  public FrmMessage frmTransactionType(@javax.annotation.Nullable String frmTransactionType) {
     this.frmTransactionType = JsonNullable.<String>of(frmTransactionType);
     
     return this;
   }
 
-   /**
+  /**
    * Get frmTransactionType
    * @return frmTransactionType
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -157,21 +162,20 @@ public class FrmMessage {
     this.frmTransactionType = frmTransactionType;
   }
 
-  public void setFrmTransactionType(String frmTransactionType) {
+  public void setFrmTransactionType(@javax.annotation.Nullable String frmTransactionType) {
     this.frmTransactionType = JsonNullable.<String>of(frmTransactionType);
   }
 
-
-  public FrmMessage frmStatus(String frmStatus) {
+  public FrmMessage frmStatus(@javax.annotation.Nullable String frmStatus) {
     this.frmStatus = JsonNullable.<String>of(frmStatus);
     
     return this;
   }
 
-   /**
+  /**
    * Get frmStatus
    * @return frmStatus
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -191,21 +195,20 @@ public class FrmMessage {
     this.frmStatus = frmStatus;
   }
 
-  public void setFrmStatus(String frmStatus) {
+  public void setFrmStatus(@javax.annotation.Nullable String frmStatus) {
     this.frmStatus = JsonNullable.<String>of(frmStatus);
   }
 
-
-  public FrmMessage frmScore(Integer frmScore) {
+  public FrmMessage frmScore(@javax.annotation.Nullable Integer frmScore) {
     this.frmScore = JsonNullable.<Integer>of(frmScore);
     
     return this;
   }
 
-   /**
+  /**
    * Get frmScore
    * @return frmScore
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -225,21 +228,20 @@ public class FrmMessage {
     this.frmScore = frmScore;
   }
 
-  public void setFrmScore(Integer frmScore) {
+  public void setFrmScore(@javax.annotation.Nullable Integer frmScore) {
     this.frmScore = JsonNullable.<Integer>of(frmScore);
   }
 
-
-  public FrmMessage frmReason(Object frmReason) {
+  public FrmMessage frmReason(@javax.annotation.Nullable Object frmReason) {
     this.frmReason = JsonNullable.<Object>of(frmReason);
     
     return this;
   }
 
-   /**
+  /**
    * Get frmReason
    * @return frmReason
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -259,21 +261,20 @@ public class FrmMessage {
     this.frmReason = frmReason;
   }
 
-  public void setFrmReason(Object frmReason) {
+  public void setFrmReason(@javax.annotation.Nullable Object frmReason) {
     this.frmReason = JsonNullable.<Object>of(frmReason);
   }
 
-
-  public FrmMessage frmError(String frmError) {
+  public FrmMessage frmError(@javax.annotation.Nullable String frmError) {
     this.frmError = JsonNullable.<String>of(frmError);
     
     return this;
   }
 
-   /**
+  /**
    * Get frmError
    * @return frmError
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -293,7 +294,7 @@ public class FrmMessage {
     this.frmError = frmError;
   }
 
-  public void setFrmError(String frmError) {
+  public void setFrmError(@javax.annotation.Nullable String frmError) {
     this.frmError = JsonNullable.<String>of(frmError);
   }
 

@@ -33,27 +33,29 @@ import java.util.StringJoiner;
   SecretInfoToInitiateSdk.JSON_PROPERTY_DISPLAY,
   SecretInfoToInitiateSdk.JSON_PROPERTY_PAYMENT
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class SecretInfoToInitiateSdk {
   public static final String JSON_PROPERTY_DISPLAY = "display";
+  @javax.annotation.Nonnull
   private String display;
 
   public static final String JSON_PROPERTY_PAYMENT = "payment";
+  @javax.annotation.Nonnull
   private String payment;
 
   public SecretInfoToInitiateSdk() {
   }
 
-  public SecretInfoToInitiateSdk display(String display) {
+  public SecretInfoToInitiateSdk display(@javax.annotation.Nonnull String display) {
     
     this.display = display;
     return this;
   }
 
-   /**
+  /**
    * Get display
    * @return display
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_DISPLAY)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -65,21 +67,20 @@ public class SecretInfoToInitiateSdk {
 
   @JsonProperty(JSON_PROPERTY_DISPLAY)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setDisplay(String display) {
+  public void setDisplay(@javax.annotation.Nonnull String display) {
     this.display = display;
   }
 
-
-  public SecretInfoToInitiateSdk payment(String payment) {
+  public SecretInfoToInitiateSdk payment(@javax.annotation.Nonnull String payment) {
     
     this.payment = payment;
     return this;
   }
 
-   /**
+  /**
    * Get payment
    * @return payment
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_PAYMENT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -91,7 +92,7 @@ public class SecretInfoToInitiateSdk {
 
   @JsonProperty(JSON_PROPERTY_PAYMENT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setPayment(String payment) {
+  public void setPayment(@javax.annotation.Nonnull String payment) {
     this.payment = payment;
   }
 

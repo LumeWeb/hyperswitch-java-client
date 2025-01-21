@@ -22,6 +22,7 @@ import com.fasterxml.jackson.annotation.JsonTypeName;
 import com.fasterxml.jackson.annotation.JsonValue;
 import com.hyperswitch.client.model.Comparison;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import org.openapitools.jackson.nullable.JsonNullable;
 import com.fasterxml.jackson.annotation.JsonIgnore;
@@ -40,18 +41,20 @@ import java.util.StringJoiner;
   IfStatement.JSON_PROPERTY_CONDITION,
   IfStatement.JSON_PROPERTY_NESTED
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class IfStatement {
   public static final String JSON_PROPERTY_CONDITION = "condition";
+  @javax.annotation.Nonnull
   private List<Comparison> condition = new ArrayList<>();
 
   public static final String JSON_PROPERTY_NESTED = "nested";
+  @javax.annotation.Nullable
   private JsonNullable<List<IfStatement>> nested = JsonNullable.<List<IfStatement>>undefined();
 
   public IfStatement() {
   }
 
-  public IfStatement condition(List<Comparison> condition) {
+  public IfStatement condition(@javax.annotation.Nonnull List<Comparison> condition) {
     
     this.condition = condition;
     return this;
@@ -65,10 +68,10 @@ public class IfStatement {
     return this;
   }
 
-   /**
+  /**
    * Get condition
    * @return condition
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_CONDITION)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -80,12 +83,11 @@ public class IfStatement {
 
   @JsonProperty(JSON_PROPERTY_CONDITION)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setCondition(List<Comparison> condition) {
+  public void setCondition(@javax.annotation.Nonnull List<Comparison> condition) {
     this.condition = condition;
   }
 
-
-  public IfStatement nested(List<IfStatement> nested) {
+  public IfStatement nested(@javax.annotation.Nullable List<IfStatement> nested) {
     this.nested = JsonNullable.<List<IfStatement>>of(nested);
     
     return this;
@@ -103,10 +105,10 @@ public class IfStatement {
     return this;
   }
 
-   /**
+  /**
    * Get nested
    * @return nested
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -126,7 +128,7 @@ public class IfStatement {
     this.nested = nested;
   }
 
-  public void setNested(List<IfStatement> nested) {
+  public void setNested(@javax.annotation.Nullable List<IfStatement> nested) {
     this.nested = JsonNullable.<List<IfStatement>>of(nested);
   }
 

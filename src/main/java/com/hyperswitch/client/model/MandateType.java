@@ -36,27 +36,29 @@ import java.util.StringJoiner;
   MandateType.JSON_PROPERTY_SINGLE_USE,
   MandateType.JSON_PROPERTY_MULTI_USE
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class MandateType {
   public static final String JSON_PROPERTY_SINGLE_USE = "single_use";
+  @javax.annotation.Nonnull
   private MandateAmountData singleUse;
 
   public static final String JSON_PROPERTY_MULTI_USE = "multi_use";
+  @javax.annotation.Nullable
   private MandateAmountData multiUse;
 
   public MandateType() {
   }
 
-  public MandateType singleUse(MandateAmountData singleUse) {
+  public MandateType singleUse(@javax.annotation.Nonnull MandateAmountData singleUse) {
     
     this.singleUse = singleUse;
     return this;
   }
 
-   /**
+  /**
    * Get singleUse
    * @return singleUse
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_SINGLE_USE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -68,21 +70,20 @@ public class MandateType {
 
   @JsonProperty(JSON_PROPERTY_SINGLE_USE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setSingleUse(MandateAmountData singleUse) {
+  public void setSingleUse(@javax.annotation.Nonnull MandateAmountData singleUse) {
     this.singleUse = singleUse;
   }
 
-
-  public MandateType multiUse(MandateAmountData multiUse) {
+  public MandateType multiUse(@javax.annotation.Nullable MandateAmountData multiUse) {
     
     this.multiUse = multiUse;
     return this;
   }
 
-   /**
+  /**
    * Get multiUse
    * @return multiUse
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_MULTI_USE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -94,7 +95,7 @@ public class MandateType {
 
   @JsonProperty(JSON_PROPERTY_MULTI_USE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setMultiUse(MandateAmountData multiUse) {
+  public void setMultiUse(@javax.annotation.Nullable MandateAmountData multiUse) {
     this.multiUse = multiUse;
   }
 

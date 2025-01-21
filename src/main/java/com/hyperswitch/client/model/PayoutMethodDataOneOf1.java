@@ -34,24 +34,25 @@ import java.util.StringJoiner;
   PayoutMethodDataOneOf1.JSON_PROPERTY_BANK
 })
 @JsonTypeName("PayoutMethodData_oneOf_1")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class PayoutMethodDataOneOf1 {
   public static final String JSON_PROPERTY_BANK = "bank";
+  @javax.annotation.Nonnull
   private Bank bank;
 
   public PayoutMethodDataOneOf1() {
   }
 
-  public PayoutMethodDataOneOf1 bank(Bank bank) {
+  public PayoutMethodDataOneOf1 bank(@javax.annotation.Nonnull Bank bank) {
     
     this.bank = bank;
     return this;
   }
 
-   /**
+  /**
    * Get bank
    * @return bank
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_BANK)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -63,7 +64,7 @@ public class PayoutMethodDataOneOf1 {
 
   @JsonProperty(JSON_PROPERTY_BANK)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setBank(Bank bank) {
+  public void setBank(@javax.annotation.Nonnull Bank bank) {
     this.bank = bank;
   }
 

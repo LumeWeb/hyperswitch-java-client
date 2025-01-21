@@ -32,24 +32,25 @@ import java.util.StringJoiner;
 @JsonPropertyOrder({
   OpenBankingResponse.JSON_PROPERTY_OPEN_BANKING_PIS
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class OpenBankingResponse {
   public static final String JSON_PROPERTY_OPEN_BANKING_PIS = "open_banking_pis";
+  @javax.annotation.Nonnull
   private Object openBankingPis;
 
   public OpenBankingResponse() {
   }
 
-  public OpenBankingResponse openBankingPis(Object openBankingPis) {
+  public OpenBankingResponse openBankingPis(@javax.annotation.Nonnull Object openBankingPis) {
     
     this.openBankingPis = openBankingPis;
     return this;
   }
 
-   /**
+  /**
    * Get openBankingPis
    * @return openBankingPis
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_OPEN_BANKING_PIS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -61,7 +62,7 @@ public class OpenBankingResponse {
 
   @JsonProperty(JSON_PROPERTY_OPEN_BANKING_PIS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setOpenBankingPis(Object openBankingPis) {
+  public void setOpenBankingPis(@javax.annotation.Nonnull Object openBankingPis) {
     this.openBankingPis = openBankingPis;
   }
 

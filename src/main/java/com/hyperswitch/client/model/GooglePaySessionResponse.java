@@ -27,6 +27,7 @@ import com.hyperswitch.client.model.GpayTransactionInfo;
 import com.hyperswitch.client.model.SdkNextAction;
 import com.hyperswitch.client.model.SecretInfoToInitiateSdk;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import org.openapitools.jackson.nullable.JsonNullable;
 import com.fasterxml.jackson.annotation.JsonIgnore;
@@ -53,51 +54,61 @@ import java.util.StringJoiner;
   GooglePaySessionResponse.JSON_PROPERTY_SDK_NEXT_ACTION,
   GooglePaySessionResponse.JSON_PROPERTY_SECRETS
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class GooglePaySessionResponse {
   public static final String JSON_PROPERTY_MERCHANT_INFO = "merchant_info";
+  @javax.annotation.Nonnull
   private GpayMerchantInfo merchantInfo;
 
   public static final String JSON_PROPERTY_SHIPPING_ADDRESS_REQUIRED = "shipping_address_required";
+  @javax.annotation.Nonnull
   private Boolean shippingAddressRequired;
 
   public static final String JSON_PROPERTY_EMAIL_REQUIRED = "email_required";
+  @javax.annotation.Nonnull
   private Boolean emailRequired;
 
   public static final String JSON_PROPERTY_SHIPPING_ADDRESS_PARAMETERS = "shipping_address_parameters";
+  @javax.annotation.Nonnull
   private GpayShippingAddressParameters shippingAddressParameters;
 
   public static final String JSON_PROPERTY_ALLOWED_PAYMENT_METHODS = "allowed_payment_methods";
+  @javax.annotation.Nonnull
   private List<GpayAllowedPaymentMethods> allowedPaymentMethods = new ArrayList<>();
 
   public static final String JSON_PROPERTY_TRANSACTION_INFO = "transaction_info";
+  @javax.annotation.Nonnull
   private GpayTransactionInfo transactionInfo;
 
   public static final String JSON_PROPERTY_DELAYED_SESSION_TOKEN = "delayed_session_token";
+  @javax.annotation.Nonnull
   private Boolean delayedSessionToken;
 
   public static final String JSON_PROPERTY_CONNECTOR = "connector";
+  @javax.annotation.Nonnull
   private String connector;
 
   public static final String JSON_PROPERTY_SDK_NEXT_ACTION = "sdk_next_action";
+  @javax.annotation.Nonnull
   private SdkNextAction sdkNextAction;
 
   public static final String JSON_PROPERTY_SECRETS = "secrets";
+  @javax.annotation.Nullable
   private JsonNullable<SecretInfoToInitiateSdk> secrets = JsonNullable.<SecretInfoToInitiateSdk>undefined();
 
   public GooglePaySessionResponse() {
   }
 
-  public GooglePaySessionResponse merchantInfo(GpayMerchantInfo merchantInfo) {
+  public GooglePaySessionResponse merchantInfo(@javax.annotation.Nonnull GpayMerchantInfo merchantInfo) {
     
     this.merchantInfo = merchantInfo;
     return this;
   }
 
-   /**
+  /**
    * Get merchantInfo
    * @return merchantInfo
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_MERCHANT_INFO)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -109,21 +120,20 @@ public class GooglePaySessionResponse {
 
   @JsonProperty(JSON_PROPERTY_MERCHANT_INFO)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setMerchantInfo(GpayMerchantInfo merchantInfo) {
+  public void setMerchantInfo(@javax.annotation.Nonnull GpayMerchantInfo merchantInfo) {
     this.merchantInfo = merchantInfo;
   }
 
-
-  public GooglePaySessionResponse shippingAddressRequired(Boolean shippingAddressRequired) {
+  public GooglePaySessionResponse shippingAddressRequired(@javax.annotation.Nonnull Boolean shippingAddressRequired) {
     
     this.shippingAddressRequired = shippingAddressRequired;
     return this;
   }
 
-   /**
+  /**
    * Is shipping address required
    * @return shippingAddressRequired
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_SHIPPING_ADDRESS_REQUIRED)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -135,21 +145,20 @@ public class GooglePaySessionResponse {
 
   @JsonProperty(JSON_PROPERTY_SHIPPING_ADDRESS_REQUIRED)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setShippingAddressRequired(Boolean shippingAddressRequired) {
+  public void setShippingAddressRequired(@javax.annotation.Nonnull Boolean shippingAddressRequired) {
     this.shippingAddressRequired = shippingAddressRequired;
   }
 
-
-  public GooglePaySessionResponse emailRequired(Boolean emailRequired) {
+  public GooglePaySessionResponse emailRequired(@javax.annotation.Nonnull Boolean emailRequired) {
     
     this.emailRequired = emailRequired;
     return this;
   }
 
-   /**
+  /**
    * Is email required
    * @return emailRequired
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_EMAIL_REQUIRED)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -161,21 +170,20 @@ public class GooglePaySessionResponse {
 
   @JsonProperty(JSON_PROPERTY_EMAIL_REQUIRED)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setEmailRequired(Boolean emailRequired) {
+  public void setEmailRequired(@javax.annotation.Nonnull Boolean emailRequired) {
     this.emailRequired = emailRequired;
   }
 
-
-  public GooglePaySessionResponse shippingAddressParameters(GpayShippingAddressParameters shippingAddressParameters) {
+  public GooglePaySessionResponse shippingAddressParameters(@javax.annotation.Nonnull GpayShippingAddressParameters shippingAddressParameters) {
     
     this.shippingAddressParameters = shippingAddressParameters;
     return this;
   }
 
-   /**
+  /**
    * Get shippingAddressParameters
    * @return shippingAddressParameters
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_SHIPPING_ADDRESS_PARAMETERS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -187,12 +195,11 @@ public class GooglePaySessionResponse {
 
   @JsonProperty(JSON_PROPERTY_SHIPPING_ADDRESS_PARAMETERS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setShippingAddressParameters(GpayShippingAddressParameters shippingAddressParameters) {
+  public void setShippingAddressParameters(@javax.annotation.Nonnull GpayShippingAddressParameters shippingAddressParameters) {
     this.shippingAddressParameters = shippingAddressParameters;
   }
 
-
-  public GooglePaySessionResponse allowedPaymentMethods(List<GpayAllowedPaymentMethods> allowedPaymentMethods) {
+  public GooglePaySessionResponse allowedPaymentMethods(@javax.annotation.Nonnull List<GpayAllowedPaymentMethods> allowedPaymentMethods) {
     
     this.allowedPaymentMethods = allowedPaymentMethods;
     return this;
@@ -206,10 +213,10 @@ public class GooglePaySessionResponse {
     return this;
   }
 
-   /**
+  /**
    * List of the allowed payment meythods
    * @return allowedPaymentMethods
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_ALLOWED_PAYMENT_METHODS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -221,21 +228,20 @@ public class GooglePaySessionResponse {
 
   @JsonProperty(JSON_PROPERTY_ALLOWED_PAYMENT_METHODS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setAllowedPaymentMethods(List<GpayAllowedPaymentMethods> allowedPaymentMethods) {
+  public void setAllowedPaymentMethods(@javax.annotation.Nonnull List<GpayAllowedPaymentMethods> allowedPaymentMethods) {
     this.allowedPaymentMethods = allowedPaymentMethods;
   }
 
-
-  public GooglePaySessionResponse transactionInfo(GpayTransactionInfo transactionInfo) {
+  public GooglePaySessionResponse transactionInfo(@javax.annotation.Nonnull GpayTransactionInfo transactionInfo) {
     
     this.transactionInfo = transactionInfo;
     return this;
   }
 
-   /**
+  /**
    * Get transactionInfo
    * @return transactionInfo
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_TRANSACTION_INFO)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -247,21 +253,20 @@ public class GooglePaySessionResponse {
 
   @JsonProperty(JSON_PROPERTY_TRANSACTION_INFO)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setTransactionInfo(GpayTransactionInfo transactionInfo) {
+  public void setTransactionInfo(@javax.annotation.Nonnull GpayTransactionInfo transactionInfo) {
     this.transactionInfo = transactionInfo;
   }
 
-
-  public GooglePaySessionResponse delayedSessionToken(Boolean delayedSessionToken) {
+  public GooglePaySessionResponse delayedSessionToken(@javax.annotation.Nonnull Boolean delayedSessionToken) {
     
     this.delayedSessionToken = delayedSessionToken;
     return this;
   }
 
-   /**
+  /**
    * Identifier for the delayed session response
    * @return delayedSessionToken
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_DELAYED_SESSION_TOKEN)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -273,21 +278,20 @@ public class GooglePaySessionResponse {
 
   @JsonProperty(JSON_PROPERTY_DELAYED_SESSION_TOKEN)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setDelayedSessionToken(Boolean delayedSessionToken) {
+  public void setDelayedSessionToken(@javax.annotation.Nonnull Boolean delayedSessionToken) {
     this.delayedSessionToken = delayedSessionToken;
   }
 
-
-  public GooglePaySessionResponse connector(String connector) {
+  public GooglePaySessionResponse connector(@javax.annotation.Nonnull String connector) {
     
     this.connector = connector;
     return this;
   }
 
-   /**
+  /**
    * The name of the connector
    * @return connector
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_CONNECTOR)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -299,21 +303,20 @@ public class GooglePaySessionResponse {
 
   @JsonProperty(JSON_PROPERTY_CONNECTOR)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setConnector(String connector) {
+  public void setConnector(@javax.annotation.Nonnull String connector) {
     this.connector = connector;
   }
 
-
-  public GooglePaySessionResponse sdkNextAction(SdkNextAction sdkNextAction) {
+  public GooglePaySessionResponse sdkNextAction(@javax.annotation.Nonnull SdkNextAction sdkNextAction) {
     
     this.sdkNextAction = sdkNextAction;
     return this;
   }
 
-   /**
+  /**
    * Get sdkNextAction
    * @return sdkNextAction
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_SDK_NEXT_ACTION)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -325,21 +328,20 @@ public class GooglePaySessionResponse {
 
   @JsonProperty(JSON_PROPERTY_SDK_NEXT_ACTION)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setSdkNextAction(SdkNextAction sdkNextAction) {
+  public void setSdkNextAction(@javax.annotation.Nonnull SdkNextAction sdkNextAction) {
     this.sdkNextAction = sdkNextAction;
   }
 
-
-  public GooglePaySessionResponse secrets(SecretInfoToInitiateSdk secrets) {
+  public GooglePaySessionResponse secrets(@javax.annotation.Nullable SecretInfoToInitiateSdk secrets) {
     this.secrets = JsonNullable.<SecretInfoToInitiateSdk>of(secrets);
     
     return this;
   }
 
-   /**
+  /**
    * Get secrets
    * @return secrets
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -359,7 +361,7 @@ public class GooglePaySessionResponse {
     this.secrets = secrets;
   }
 
-  public void setSecrets(SecretInfoToInitiateSdk secrets) {
+  public void setSecrets(@javax.annotation.Nullable SecretInfoToInitiateSdk secrets) {
     this.secrets = JsonNullable.<SecretInfoToInitiateSdk>of(secrets);
   }
 

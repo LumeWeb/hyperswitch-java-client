@@ -41,36 +41,41 @@ import java.util.StringJoiner;
   SepaBankTransferAdditionalData.JSON_PROPERTY_BANK_CITY,
   SepaBankTransferAdditionalData.JSON_PROPERTY_BIC
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class SepaBankTransferAdditionalData {
   public static final String JSON_PROPERTY_IBAN = "iban";
+  @javax.annotation.Nonnull
   private String iban;
 
   public static final String JSON_PROPERTY_BANK_NAME = "bank_name";
+  @javax.annotation.Nullable
   private JsonNullable<String> bankName = JsonNullable.<String>undefined();
 
   public static final String JSON_PROPERTY_BANK_COUNTRY_CODE = "bank_country_code";
+  @javax.annotation.Nullable
   private JsonNullable<CountryAlpha2> bankCountryCode = JsonNullable.<CountryAlpha2>undefined();
 
   public static final String JSON_PROPERTY_BANK_CITY = "bank_city";
+  @javax.annotation.Nullable
   private JsonNullable<String> bankCity = JsonNullable.<String>undefined();
 
   public static final String JSON_PROPERTY_BIC = "bic";
+  @javax.annotation.Nullable
   private JsonNullable<String> bic = JsonNullable.<String>undefined();
 
   public SepaBankTransferAdditionalData() {
   }
 
-  public SepaBankTransferAdditionalData iban(String iban) {
+  public SepaBankTransferAdditionalData iban(@javax.annotation.Nonnull String iban) {
     
     this.iban = iban;
     return this;
   }
 
-   /**
+  /**
    * Partially masked international bank account number (iban) for SEPA
    * @return iban
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_IBAN)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -82,21 +87,20 @@ public class SepaBankTransferAdditionalData {
 
   @JsonProperty(JSON_PROPERTY_IBAN)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setIban(String iban) {
+  public void setIban(@javax.annotation.Nonnull String iban) {
     this.iban = iban;
   }
 
-
-  public SepaBankTransferAdditionalData bankName(String bankName) {
+  public SepaBankTransferAdditionalData bankName(@javax.annotation.Nullable String bankName) {
     this.bankName = JsonNullable.<String>of(bankName);
     
     return this;
   }
 
-   /**
+  /**
    * Bank name
    * @return bankName
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -116,21 +120,20 @@ public class SepaBankTransferAdditionalData {
     this.bankName = bankName;
   }
 
-  public void setBankName(String bankName) {
+  public void setBankName(@javax.annotation.Nullable String bankName) {
     this.bankName = JsonNullable.<String>of(bankName);
   }
 
-
-  public SepaBankTransferAdditionalData bankCountryCode(CountryAlpha2 bankCountryCode) {
+  public SepaBankTransferAdditionalData bankCountryCode(@javax.annotation.Nullable CountryAlpha2 bankCountryCode) {
     this.bankCountryCode = JsonNullable.<CountryAlpha2>of(bankCountryCode);
     
     return this;
   }
 
-   /**
+  /**
    * Get bankCountryCode
    * @return bankCountryCode
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -150,21 +153,20 @@ public class SepaBankTransferAdditionalData {
     this.bankCountryCode = bankCountryCode;
   }
 
-  public void setBankCountryCode(CountryAlpha2 bankCountryCode) {
+  public void setBankCountryCode(@javax.annotation.Nullable CountryAlpha2 bankCountryCode) {
     this.bankCountryCode = JsonNullable.<CountryAlpha2>of(bankCountryCode);
   }
 
-
-  public SepaBankTransferAdditionalData bankCity(String bankCity) {
+  public SepaBankTransferAdditionalData bankCity(@javax.annotation.Nullable String bankCity) {
     this.bankCity = JsonNullable.<String>of(bankCity);
     
     return this;
   }
 
-   /**
+  /**
    * Bank city
    * @return bankCity
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -184,21 +186,20 @@ public class SepaBankTransferAdditionalData {
     this.bankCity = bankCity;
   }
 
-  public void setBankCity(String bankCity) {
+  public void setBankCity(@javax.annotation.Nullable String bankCity) {
     this.bankCity = JsonNullable.<String>of(bankCity);
   }
 
-
-  public SepaBankTransferAdditionalData bic(String bic) {
+  public SepaBankTransferAdditionalData bic(@javax.annotation.Nullable String bic) {
     this.bic = JsonNullable.<String>of(bic);
     
     return this;
   }
 
-   /**
+  /**
    * [8 / 11 digits] Bank Identifier Code (bic) / Swift Code - used in many countries for identifying a bank and it&#39;s branches
    * @return bic
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -218,7 +219,7 @@ public class SepaBankTransferAdditionalData {
     this.bic = bic;
   }
 
-  public void setBic(String bic) {
+  public void setBic(@javax.annotation.Nullable String bic) {
     this.bic = JsonNullable.<String>of(bic);
   }
 

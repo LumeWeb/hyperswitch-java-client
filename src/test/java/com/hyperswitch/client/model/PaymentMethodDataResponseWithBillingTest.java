@@ -38,38 +38,29 @@ import org.openapitools.jackson.nullable.JsonNullable;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.openapitools.jackson.nullable.JsonNullable;
 import java.util.NoSuchElementException;
-import org.junit.Assert;
-import org.junit.Ignore;
-import org.junit.Test;
-
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Test;
 
 /**
  * Model tests for PaymentMethodDataResponseWithBilling
  */
-public class PaymentMethodDataResponseWithBillingTest {
+class PaymentMethodDataResponseWithBillingTest {
     private final PaymentMethodDataResponseWithBilling model = new PaymentMethodDataResponseWithBilling();
 
     /**
      * Model tests for PaymentMethodDataResponseWithBilling
      */
     @Test
-    public void testPaymentMethodDataResponseWithBilling() {
+    void testPaymentMethodDataResponseWithBilling() {
         // TODO: test PaymentMethodDataResponseWithBilling
-    }
-
-    /**
-     * Test the property 'billing'
-     */
-    @Test
-    public void billingTest() {
-        // TODO: test billing
     }
 
     /**
      * Test the property 'card'
      */
     @Test
-    public void cardTest() {
+    void cardTest() {
         // TODO: test card
     }
 
@@ -77,7 +68,7 @@ public class PaymentMethodDataResponseWithBillingTest {
      * Test the property 'bankTransfer'
      */
     @Test
-    public void bankTransferTest() {
+    void bankTransferTest() {
         // TODO: test bankTransfer
     }
 
@@ -85,7 +76,7 @@ public class PaymentMethodDataResponseWithBillingTest {
      * Test the property 'wallet'
      */
     @Test
-    public void walletTest() {
+    void walletTest() {
         // TODO: test wallet
     }
 
@@ -93,7 +84,7 @@ public class PaymentMethodDataResponseWithBillingTest {
      * Test the property 'payLater'
      */
     @Test
-    public void payLaterTest() {
+    void payLaterTest() {
         // TODO: test payLater
     }
 
@@ -101,7 +92,7 @@ public class PaymentMethodDataResponseWithBillingTest {
      * Test the property 'bankRedirect'
      */
     @Test
-    public void bankRedirectTest() {
+    void bankRedirectTest() {
         // TODO: test bankRedirect
     }
 
@@ -109,7 +100,7 @@ public class PaymentMethodDataResponseWithBillingTest {
      * Test the property 'crypto'
      */
     @Test
-    public void cryptoTest() {
+    void cryptoTest() {
         // TODO: test crypto
     }
 
@@ -117,7 +108,7 @@ public class PaymentMethodDataResponseWithBillingTest {
      * Test the property 'bankDebit'
      */
     @Test
-    public void bankDebitTest() {
+    void bankDebitTest() {
         // TODO: test bankDebit
     }
 
@@ -125,7 +116,7 @@ public class PaymentMethodDataResponseWithBillingTest {
      * Test the property 'mandatePayment'
      */
     @Test
-    public void mandatePaymentTest() {
+    void mandatePaymentTest() {
         // TODO: test mandatePayment
     }
 
@@ -133,7 +124,7 @@ public class PaymentMethodDataResponseWithBillingTest {
      * Test the property 'reward'
      */
     @Test
-    public void rewardTest() {
+    void rewardTest() {
         // TODO: test reward
     }
 
@@ -141,7 +132,7 @@ public class PaymentMethodDataResponseWithBillingTest {
      * Test the property 'realTimePayment'
      */
     @Test
-    public void realTimePaymentTest() {
+    void realTimePaymentTest() {
         // TODO: test realTimePayment
     }
 
@@ -149,7 +140,7 @@ public class PaymentMethodDataResponseWithBillingTest {
      * Test the property 'upi'
      */
     @Test
-    public void upiTest() {
+    void upiTest() {
         // TODO: test upi
     }
 
@@ -157,7 +148,7 @@ public class PaymentMethodDataResponseWithBillingTest {
      * Test the property 'voucher'
      */
     @Test
-    public void voucherTest() {
+    void voucherTest() {
         // TODO: test voucher
     }
 
@@ -165,7 +156,7 @@ public class PaymentMethodDataResponseWithBillingTest {
      * Test the property 'giftCard'
      */
     @Test
-    public void giftCardTest() {
+    void giftCardTest() {
         // TODO: test giftCard
     }
 
@@ -173,7 +164,7 @@ public class PaymentMethodDataResponseWithBillingTest {
      * Test the property 'cardRedirect'
      */
     @Test
-    public void cardRedirectTest() {
+    void cardRedirectTest() {
         // TODO: test cardRedirect
     }
 
@@ -181,7 +172,7 @@ public class PaymentMethodDataResponseWithBillingTest {
      * Test the property 'cardToken'
      */
     @Test
-    public void cardTokenTest() {
+    void cardTokenTest() {
         // TODO: test cardToken
     }
 
@@ -189,7 +180,7 @@ public class PaymentMethodDataResponseWithBillingTest {
      * Test the property 'openBanking'
      */
     @Test
-    public void openBankingTest() {
+    void openBankingTest() {
         // TODO: test openBanking
     }
 
@@ -197,8 +188,16 @@ public class PaymentMethodDataResponseWithBillingTest {
      * Test the property 'mobilePayment'
      */
     @Test
-    public void mobilePaymentTest() {
+    void mobilePaymentTest() {
         // TODO: test mobilePayment
+    }
+
+    /**
+     * Test the property 'billing'
+     */
+    @Test
+    void billingTest() {
+        // TODO: test billing
     }
 
 }

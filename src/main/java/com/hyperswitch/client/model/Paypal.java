@@ -34,30 +34,33 @@ import java.util.StringJoiner;
   Paypal.JSON_PROPERTY_TELEPHONE_NUMBER,
   Paypal.JSON_PROPERTY_PAYPAL_ID
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class Paypal {
   public static final String JSON_PROPERTY_EMAIL = "email";
+  @javax.annotation.Nonnull
   private String email;
 
   public static final String JSON_PROPERTY_TELEPHONE_NUMBER = "telephone_number";
+  @javax.annotation.Nonnull
   private String telephoneNumber;
 
   public static final String JSON_PROPERTY_PAYPAL_ID = "paypal_id";
+  @javax.annotation.Nonnull
   private String paypalId;
 
   public Paypal() {
   }
 
-  public Paypal email(String email) {
+  public Paypal email(@javax.annotation.Nonnull String email) {
     
     this.email = email;
     return this;
   }
 
-   /**
+  /**
    * Email linked with paypal account
    * @return email
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_EMAIL)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -69,21 +72,20 @@ public class Paypal {
 
   @JsonProperty(JSON_PROPERTY_EMAIL)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setEmail(String email) {
+  public void setEmail(@javax.annotation.Nonnull String email) {
     this.email = email;
   }
 
-
-  public Paypal telephoneNumber(String telephoneNumber) {
+  public Paypal telephoneNumber(@javax.annotation.Nonnull String telephoneNumber) {
     
     this.telephoneNumber = telephoneNumber;
     return this;
   }
 
-   /**
+  /**
    * mobile number linked to paypal account
    * @return telephoneNumber
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_TELEPHONE_NUMBER)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -95,21 +97,20 @@ public class Paypal {
 
   @JsonProperty(JSON_PROPERTY_TELEPHONE_NUMBER)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setTelephoneNumber(String telephoneNumber) {
+  public void setTelephoneNumber(@javax.annotation.Nonnull String telephoneNumber) {
     this.telephoneNumber = telephoneNumber;
   }
 
-
-  public Paypal paypalId(String paypalId) {
+  public Paypal paypalId(@javax.annotation.Nonnull String paypalId) {
     
     this.paypalId = paypalId;
     return this;
   }
 
-   /**
+  /**
    * id of the paypal account
    * @return paypalId
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_PAYPAL_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -121,7 +122,7 @@ public class Paypal {
 
   @JsonProperty(JSON_PROPERTY_PAYPAL_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setPaypalId(String paypalId) {
+  public void setPaypalId(@javax.annotation.Nonnull String paypalId) {
     this.paypalId = paypalId;
   }
 

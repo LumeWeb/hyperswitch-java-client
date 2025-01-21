@@ -23,22 +23,21 @@ import org.openapitools.jackson.nullable.JsonNullable;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.openapitools.jackson.nullable.JsonNullable;
 import java.util.NoSuchElementException;
-import org.junit.Assert;
-import org.junit.Ignore;
-import org.junit.Test;
-
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Test;
 
 /**
  * Model tests for OrganizationResponse
  */
-public class OrganizationResponseTest {
+class OrganizationResponseTest {
     private final OrganizationResponse model = new OrganizationResponse();
 
     /**
      * Model tests for OrganizationResponse
      */
     @Test
-    public void testOrganizationResponse() {
+    void testOrganizationResponse() {
         // TODO: test OrganizationResponse
     }
 
@@ -46,7 +45,7 @@ public class OrganizationResponseTest {
      * Test the property 'organizationId'
      */
     @Test
-    public void organizationIdTest() {
+    void organizationIdTest() {
         // TODO: test organizationId
     }
 
@@ -54,7 +53,7 @@ public class OrganizationResponseTest {
      * Test the property 'organizationName'
      */
     @Test
-    public void organizationNameTest() {
+    void organizationNameTest() {
         // TODO: test organizationName
     }
 
@@ -62,7 +61,7 @@ public class OrganizationResponseTest {
      * Test the property 'organizationDetails'
      */
     @Test
-    public void organizationDetailsTest() {
+    void organizationDetailsTest() {
         // TODO: test organizationDetails
     }
 
@@ -70,7 +69,7 @@ public class OrganizationResponseTest {
      * Test the property 'metadata'
      */
     @Test
-    public void metadataTest() {
+    void metadataTest() {
         // TODO: test metadata
     }
 
@@ -78,7 +77,7 @@ public class OrganizationResponseTest {
      * Test the property 'modifiedAt'
      */
     @Test
-    public void modifiedAtTest() {
+    void modifiedAtTest() {
         // TODO: test modifiedAt
     }
 
@@ -86,7 +85,7 @@ public class OrganizationResponseTest {
      * Test the property 'createdAt'
      */
     @Test
-    public void createdAtTest() {
+    void createdAtTest() {
         // TODO: test createdAt
     }
 

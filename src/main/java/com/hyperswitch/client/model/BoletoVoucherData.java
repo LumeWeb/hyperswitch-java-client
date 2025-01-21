@@ -36,24 +36,25 @@ import java.util.StringJoiner;
 @JsonPropertyOrder({
   BoletoVoucherData.JSON_PROPERTY_SOCIAL_SECURITY_NUMBER
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class BoletoVoucherData {
   public static final String JSON_PROPERTY_SOCIAL_SECURITY_NUMBER = "social_security_number";
+  @javax.annotation.Nullable
   private JsonNullable<String> socialSecurityNumber = JsonNullable.<String>undefined();
 
   public BoletoVoucherData() {
   }
 
-  public BoletoVoucherData socialSecurityNumber(String socialSecurityNumber) {
+  public BoletoVoucherData socialSecurityNumber(@javax.annotation.Nullable String socialSecurityNumber) {
     this.socialSecurityNumber = JsonNullable.<String>of(socialSecurityNumber);
     
     return this;
   }
 
-   /**
+  /**
    * The shopper&#39;s social security number
    * @return socialSecurityNumber
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -73,7 +74,7 @@ public class BoletoVoucherData {
     this.socialSecurityNumber = socialSecurityNumber;
   }
 
-  public void setSocialSecurityNumber(String socialSecurityNumber) {
+  public void setSocialSecurityNumber(@javax.annotation.Nullable String socialSecurityNumber) {
     this.socialSecurityNumber = JsonNullable.<String>of(socialSecurityNumber);
   }
 

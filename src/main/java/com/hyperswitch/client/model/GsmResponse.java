@@ -46,54 +46,65 @@ import java.util.StringJoiner;
   GsmResponse.JSON_PROPERTY_UNIFIED_CODE,
   GsmResponse.JSON_PROPERTY_UNIFIED_MESSAGE
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class GsmResponse {
   public static final String JSON_PROPERTY_CONNECTOR = "connector";
+  @javax.annotation.Nonnull
   private String connector;
 
   public static final String JSON_PROPERTY_FLOW = "flow";
+  @javax.annotation.Nonnull
   private String flow;
 
   public static final String JSON_PROPERTY_SUB_FLOW = "sub_flow";
+  @javax.annotation.Nonnull
   private String subFlow;
 
   public static final String JSON_PROPERTY_CODE = "code";
+  @javax.annotation.Nonnull
   private String code;
 
   public static final String JSON_PROPERTY_MESSAGE = "message";
+  @javax.annotation.Nonnull
   private String message;
 
   public static final String JSON_PROPERTY_STATUS = "status";
+  @javax.annotation.Nonnull
   private String status;
 
   public static final String JSON_PROPERTY_ROUTER_ERROR = "router_error";
+  @javax.annotation.Nullable
   private JsonNullable<String> routerError = JsonNullable.<String>undefined();
 
   public static final String JSON_PROPERTY_DECISION = "decision";
+  @javax.annotation.Nonnull
   private String decision;
 
   public static final String JSON_PROPERTY_STEP_UP_POSSIBLE = "step_up_possible";
+  @javax.annotation.Nonnull
   private Boolean stepUpPossible;
 
   public static final String JSON_PROPERTY_UNIFIED_CODE = "unified_code";
+  @javax.annotation.Nullable
   private JsonNullable<String> unifiedCode = JsonNullable.<String>undefined();
 
   public static final String JSON_PROPERTY_UNIFIED_MESSAGE = "unified_message";
+  @javax.annotation.Nullable
   private JsonNullable<String> unifiedMessage = JsonNullable.<String>undefined();
 
   public GsmResponse() {
   }
 
-  public GsmResponse connector(String connector) {
+  public GsmResponse connector(@javax.annotation.Nonnull String connector) {
     
     this.connector = connector;
     return this;
   }
 
-   /**
+  /**
    * The connector through which payment has gone through
    * @return connector
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_CONNECTOR)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -105,21 +116,20 @@ public class GsmResponse {
 
   @JsonProperty(JSON_PROPERTY_CONNECTOR)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setConnector(String connector) {
+  public void setConnector(@javax.annotation.Nonnull String connector) {
     this.connector = connector;
   }
 
-
-  public GsmResponse flow(String flow) {
+  public GsmResponse flow(@javax.annotation.Nonnull String flow) {
     
     this.flow = flow;
     return this;
   }
 
-   /**
+  /**
    * The flow in which the code and message occurred for a connector
    * @return flow
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_FLOW)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -131,21 +141,20 @@ public class GsmResponse {
 
   @JsonProperty(JSON_PROPERTY_FLOW)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setFlow(String flow) {
+  public void setFlow(@javax.annotation.Nonnull String flow) {
     this.flow = flow;
   }
 
-
-  public GsmResponse subFlow(String subFlow) {
+  public GsmResponse subFlow(@javax.annotation.Nonnull String subFlow) {
     
     this.subFlow = subFlow;
     return this;
   }
 
-   /**
+  /**
    * The sub_flow in which the code and message occurred  for a connector
    * @return subFlow
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_SUB_FLOW)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -157,21 +166,20 @@ public class GsmResponse {
 
   @JsonProperty(JSON_PROPERTY_SUB_FLOW)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setSubFlow(String subFlow) {
+  public void setSubFlow(@javax.annotation.Nonnull String subFlow) {
     this.subFlow = subFlow;
   }
 
-
-  public GsmResponse code(String code) {
+  public GsmResponse code(@javax.annotation.Nonnull String code) {
     
     this.code = code;
     return this;
   }
 
-   /**
+  /**
    * code received from the connector
    * @return code
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_CODE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -183,21 +191,20 @@ public class GsmResponse {
 
   @JsonProperty(JSON_PROPERTY_CODE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setCode(String code) {
+  public void setCode(@javax.annotation.Nonnull String code) {
     this.code = code;
   }
 
-
-  public GsmResponse message(String message) {
+  public GsmResponse message(@javax.annotation.Nonnull String message) {
     
     this.message = message;
     return this;
   }
 
-   /**
+  /**
    * message received from the connector
    * @return message
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_MESSAGE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -209,21 +216,20 @@ public class GsmResponse {
 
   @JsonProperty(JSON_PROPERTY_MESSAGE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setMessage(String message) {
+  public void setMessage(@javax.annotation.Nonnull String message) {
     this.message = message;
   }
 
-
-  public GsmResponse status(String status) {
+  public GsmResponse status(@javax.annotation.Nonnull String status) {
     
     this.status = status;
     return this;
   }
 
-   /**
+  /**
    * status provided by the router
    * @return status
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_STATUS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -235,21 +241,20 @@ public class GsmResponse {
 
   @JsonProperty(JSON_PROPERTY_STATUS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setStatus(String status) {
+  public void setStatus(@javax.annotation.Nonnull String status) {
     this.status = status;
   }
 
-
-  public GsmResponse routerError(String routerError) {
+  public GsmResponse routerError(@javax.annotation.Nullable String routerError) {
     this.routerError = JsonNullable.<String>of(routerError);
     
     return this;
   }
 
-   /**
+  /**
    * optional error provided by the router
    * @return routerError
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -269,21 +274,20 @@ public class GsmResponse {
     this.routerError = routerError;
   }
 
-  public void setRouterError(String routerError) {
+  public void setRouterError(@javax.annotation.Nullable String routerError) {
     this.routerError = JsonNullable.<String>of(routerError);
   }
 
-
-  public GsmResponse decision(String decision) {
+  public GsmResponse decision(@javax.annotation.Nonnull String decision) {
     
     this.decision = decision;
     return this;
   }
 
-   /**
+  /**
    * decision to be taken for auto retries flow
    * @return decision
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_DECISION)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -295,21 +299,20 @@ public class GsmResponse {
 
   @JsonProperty(JSON_PROPERTY_DECISION)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setDecision(String decision) {
+  public void setDecision(@javax.annotation.Nonnull String decision) {
     this.decision = decision;
   }
 
-
-  public GsmResponse stepUpPossible(Boolean stepUpPossible) {
+  public GsmResponse stepUpPossible(@javax.annotation.Nonnull Boolean stepUpPossible) {
     
     this.stepUpPossible = stepUpPossible;
     return this;
   }
 
-   /**
+  /**
    * indicates if step_up retry is possible
    * @return stepUpPossible
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_STEP_UP_POSSIBLE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -321,21 +324,20 @@ public class GsmResponse {
 
   @JsonProperty(JSON_PROPERTY_STEP_UP_POSSIBLE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setStepUpPossible(Boolean stepUpPossible) {
+  public void setStepUpPossible(@javax.annotation.Nonnull Boolean stepUpPossible) {
     this.stepUpPossible = stepUpPossible;
   }
 
-
-  public GsmResponse unifiedCode(String unifiedCode) {
+  public GsmResponse unifiedCode(@javax.annotation.Nullable String unifiedCode) {
     this.unifiedCode = JsonNullable.<String>of(unifiedCode);
     
     return this;
   }
 
-   /**
+  /**
    * error code unified across the connectors
    * @return unifiedCode
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -355,21 +357,20 @@ public class GsmResponse {
     this.unifiedCode = unifiedCode;
   }
 
-  public void setUnifiedCode(String unifiedCode) {
+  public void setUnifiedCode(@javax.annotation.Nullable String unifiedCode) {
     this.unifiedCode = JsonNullable.<String>of(unifiedCode);
   }
 
-
-  public GsmResponse unifiedMessage(String unifiedMessage) {
+  public GsmResponse unifiedMessage(@javax.annotation.Nullable String unifiedMessage) {
     this.unifiedMessage = JsonNullable.<String>of(unifiedMessage);
     
     return this;
   }
 
-   /**
+  /**
    * error message unified across the connectors
    * @return unifiedMessage
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -389,7 +390,7 @@ public class GsmResponse {
     this.unifiedMessage = unifiedMessage;
   }
 
-  public void setUnifiedMessage(String unifiedMessage) {
+  public void setUnifiedMessage(@javax.annotation.Nullable String unifiedMessage) {
     this.unifiedMessage = JsonNullable.<String>of(unifiedMessage);
   }
 

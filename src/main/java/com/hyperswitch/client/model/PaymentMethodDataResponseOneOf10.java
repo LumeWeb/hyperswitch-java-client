@@ -34,24 +34,25 @@ import java.util.StringJoiner;
   PaymentMethodDataResponseOneOf10.JSON_PROPERTY_UPI
 })
 @JsonTypeName("PaymentMethodDataResponse_oneOf_10")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class PaymentMethodDataResponseOneOf10 {
   public static final String JSON_PROPERTY_UPI = "upi";
+  @javax.annotation.Nonnull
   private UpiResponse upi;
 
   public PaymentMethodDataResponseOneOf10() {
   }
 
-  public PaymentMethodDataResponseOneOf10 upi(UpiResponse upi) {
+  public PaymentMethodDataResponseOneOf10 upi(@javax.annotation.Nonnull UpiResponse upi) {
     
     this.upi = upi;
     return this;
   }
 
-   /**
+  /**
    * Get upi
    * @return upi
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_UPI)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -63,7 +64,7 @@ public class PaymentMethodDataResponseOneOf10 {
 
   @JsonProperty(JSON_PROPERTY_UPI)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setUpi(UpiResponse upi) {
+  public void setUpi(@javax.annotation.Nonnull UpiResponse upi) {
     this.upi = upi;
   }
 

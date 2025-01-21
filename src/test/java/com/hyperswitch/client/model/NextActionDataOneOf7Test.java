@@ -19,22 +19,21 @@ import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonTypeName;
 import com.fasterxml.jackson.annotation.JsonValue;
 import com.hyperswitch.client.model.ThreeDsData;
-import org.junit.Assert;
-import org.junit.Ignore;
-import org.junit.Test;
-
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Test;
 
 /**
  * Model tests for NextActionDataOneOf7
  */
-public class NextActionDataOneOf7Test {
+class NextActionDataOneOf7Test {
     private final NextActionDataOneOf7 model = new NextActionDataOneOf7();
 
     /**
      * Model tests for NextActionDataOneOf7
      */
     @Test
-    public void testNextActionDataOneOf7() {
+    void testNextActionDataOneOf7() {
         // TODO: test NextActionDataOneOf7
     }
 
@@ -42,7 +41,7 @@ public class NextActionDataOneOf7Test {
      * Test the property 'threeDsData'
      */
     @Test
-    public void threeDsDataTest() {
+    void threeDsDataTest() {
         // TODO: test threeDsData
     }
 
@@ -50,7 +49,7 @@ public class NextActionDataOneOf7Test {
      * Test the property 'type'
      */
     @Test
-    public void typeTest() {
+    void typeTest() {
         // TODO: test type
     }
 

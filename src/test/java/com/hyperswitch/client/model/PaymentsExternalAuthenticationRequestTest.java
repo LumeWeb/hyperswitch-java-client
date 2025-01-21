@@ -25,22 +25,21 @@ import org.openapitools.jackson.nullable.JsonNullable;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.openapitools.jackson.nullable.JsonNullable;
 import java.util.NoSuchElementException;
-import org.junit.Assert;
-import org.junit.Ignore;
-import org.junit.Test;
-
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Test;
 
 /**
  * Model tests for PaymentsExternalAuthenticationRequest
  */
-public class PaymentsExternalAuthenticationRequestTest {
+class PaymentsExternalAuthenticationRequestTest {
     private final PaymentsExternalAuthenticationRequest model = new PaymentsExternalAuthenticationRequest();
 
     /**
      * Model tests for PaymentsExternalAuthenticationRequest
      */
     @Test
-    public void testPaymentsExternalAuthenticationRequest() {
+    void testPaymentsExternalAuthenticationRequest() {
         // TODO: test PaymentsExternalAuthenticationRequest
     }
 
@@ -48,7 +47,7 @@ public class PaymentsExternalAuthenticationRequestTest {
      * Test the property 'clientSecret'
      */
     @Test
-    public void clientSecretTest() {
+    void clientSecretTest() {
         // TODO: test clientSecret
     }
 
@@ -56,7 +55,7 @@ public class PaymentsExternalAuthenticationRequestTest {
      * Test the property 'sdkInformation'
      */
     @Test
-    public void sdkInformationTest() {
+    void sdkInformationTest() {
         // TODO: test sdkInformation
     }
 
@@ -64,7 +63,7 @@ public class PaymentsExternalAuthenticationRequestTest {
      * Test the property 'deviceChannel'
      */
     @Test
-    public void deviceChannelTest() {
+    void deviceChannelTest() {
         // TODO: test deviceChannel
     }
 
@@ -72,7 +71,7 @@ public class PaymentsExternalAuthenticationRequestTest {
      * Test the property 'threedsMethodCompInd'
      */
     @Test
-    public void threedsMethodCompIndTest() {
+    void threedsMethodCompIndTest() {
         // TODO: test threedsMethodCompInd
     }
 

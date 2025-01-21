@@ -33,24 +33,25 @@ import java.util.StringJoiner;
 @JsonPropertyOrder({
   SdkNextAction.JSON_PROPERTY_NEXT_ACTION
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class SdkNextAction {
   public static final String JSON_PROPERTY_NEXT_ACTION = "next_action";
+  @javax.annotation.Nonnull
   private NextActionCall nextAction;
 
   public SdkNextAction() {
   }
 
-  public SdkNextAction nextAction(NextActionCall nextAction) {
+  public SdkNextAction nextAction(@javax.annotation.Nonnull NextActionCall nextAction) {
     
     this.nextAction = nextAction;
     return this;
   }
 
-   /**
+  /**
    * Get nextAction
    * @return nextAction
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_NEXT_ACTION)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -62,7 +63,7 @@ public class SdkNextAction {
 
   @JsonProperty(JSON_PROPERTY_NEXT_ACTION)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setNextAction(NextActionCall nextAction) {
+  public void setNextAction(@javax.annotation.Nonnull NextActionCall nextAction) {
     this.nextAction = nextAction;
   }
 

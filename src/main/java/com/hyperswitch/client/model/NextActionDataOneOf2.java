@@ -39,16 +39,17 @@ import java.util.StringJoiner;
   NextActionDataOneOf2.JSON_PROPERTY_TYPE
 })
 @JsonTypeName("NextActionData_oneOf_2")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class NextActionDataOneOf2 {
   public static final String JSON_PROPERTY_SESSION_TOKEN = "session_token";
+  @javax.annotation.Nullable
   private JsonNullable<SessionToken> sessionToken = JsonNullable.<SessionToken>undefined();
 
   /**
    * Gets or Sets type
    */
   public enum TypeEnum {
-    THIRD_PARTY_SDK_SESSION_TOKEN("third_party_sdk_session_token");
+    THIRD_PARTY_SDK_SESSION_TOKEN(String.valueOf("third_party_sdk_session_token"));
 
     private String value;
 
@@ -78,21 +79,22 @@ public class NextActionDataOneOf2 {
   }
 
   public static final String JSON_PROPERTY_TYPE = "type";
+  @javax.annotation.Nonnull
   private TypeEnum type;
 
   public NextActionDataOneOf2() {
   }
 
-  public NextActionDataOneOf2 sessionToken(SessionToken sessionToken) {
+  public NextActionDataOneOf2 sessionToken(@javax.annotation.Nullable SessionToken sessionToken) {
     this.sessionToken = JsonNullable.<SessionToken>of(sessionToken);
     
     return this;
   }
 
-   /**
+  /**
    * Get sessionToken
    * @return sessionToken
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -112,21 +114,20 @@ public class NextActionDataOneOf2 {
     this.sessionToken = sessionToken;
   }
 
-  public void setSessionToken(SessionToken sessionToken) {
+  public void setSessionToken(@javax.annotation.Nullable SessionToken sessionToken) {
     this.sessionToken = JsonNullable.<SessionToken>of(sessionToken);
   }
 
-
-  public NextActionDataOneOf2 type(TypeEnum type) {
+  public NextActionDataOneOf2 type(@javax.annotation.Nonnull TypeEnum type) {
     
     this.type = type;
     return this;
   }
 
-   /**
+  /**
    * Get type
    * @return type
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_TYPE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -138,7 +139,7 @@ public class NextActionDataOneOf2 {
 
   @JsonProperty(JSON_PROPERTY_TYPE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setType(TypeEnum type) {
+  public void setType(@javax.annotation.Nonnull TypeEnum type) {
     this.type = type;
   }
 

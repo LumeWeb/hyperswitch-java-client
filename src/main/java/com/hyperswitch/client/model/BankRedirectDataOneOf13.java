@@ -34,24 +34,25 @@ import java.util.StringJoiner;
   BankRedirectDataOneOf13.JSON_PROPERTY_SOFORT
 })
 @JsonTypeName("BankRedirectData_oneOf_13")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class BankRedirectDataOneOf13 {
   public static final String JSON_PROPERTY_SOFORT = "sofort";
+  @javax.annotation.Nonnull
   private BankRedirectDataOneOf13Sofort sofort;
 
   public BankRedirectDataOneOf13() {
   }
 
-  public BankRedirectDataOneOf13 sofort(BankRedirectDataOneOf13Sofort sofort) {
+  public BankRedirectDataOneOf13 sofort(@javax.annotation.Nonnull BankRedirectDataOneOf13Sofort sofort) {
     
     this.sofort = sofort;
     return this;
   }
 
-   /**
+  /**
    * Get sofort
    * @return sofort
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_SOFORT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -63,7 +64,7 @@ public class BankRedirectDataOneOf13 {
 
   @JsonProperty(JSON_PROPERTY_SOFORT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setSofort(BankRedirectDataOneOf13Sofort sofort) {
+  public void setSofort(@javax.annotation.Nonnull BankRedirectDataOneOf13Sofort sofort) {
     this.sofort = sofort;
   }
 

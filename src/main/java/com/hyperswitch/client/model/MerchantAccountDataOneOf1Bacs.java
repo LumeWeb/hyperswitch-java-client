@@ -40,33 +40,37 @@ import java.util.StringJoiner;
   MerchantAccountDataOneOf1Bacs.JSON_PROPERTY_CONNECTOR_RECIPIENT_ID
 })
 @JsonTypeName("MerchantAccountData_oneOf_1_bacs")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class MerchantAccountDataOneOf1Bacs {
   public static final String JSON_PROPERTY_ACCOUNT_NUMBER = "account_number";
+  @javax.annotation.Nonnull
   private String accountNumber;
 
   public static final String JSON_PROPERTY_SORT_CODE = "sort_code";
+  @javax.annotation.Nonnull
   private String sortCode;
 
   public static final String JSON_PROPERTY_NAME = "name";
+  @javax.annotation.Nonnull
   private String name;
 
   public static final String JSON_PROPERTY_CONNECTOR_RECIPIENT_ID = "connector_recipient_id";
+  @javax.annotation.Nullable
   private JsonNullable<String> connectorRecipientId = JsonNullable.<String>undefined();
 
   public MerchantAccountDataOneOf1Bacs() {
   }
 
-  public MerchantAccountDataOneOf1Bacs accountNumber(String accountNumber) {
+  public MerchantAccountDataOneOf1Bacs accountNumber(@javax.annotation.Nonnull String accountNumber) {
     
     this.accountNumber = accountNumber;
     return this;
   }
 
-   /**
+  /**
    * Get accountNumber
    * @return accountNumber
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_ACCOUNT_NUMBER)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -78,21 +82,20 @@ public class MerchantAccountDataOneOf1Bacs {
 
   @JsonProperty(JSON_PROPERTY_ACCOUNT_NUMBER)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setAccountNumber(String accountNumber) {
+  public void setAccountNumber(@javax.annotation.Nonnull String accountNumber) {
     this.accountNumber = accountNumber;
   }
 
-
-  public MerchantAccountDataOneOf1Bacs sortCode(String sortCode) {
+  public MerchantAccountDataOneOf1Bacs sortCode(@javax.annotation.Nonnull String sortCode) {
     
     this.sortCode = sortCode;
     return this;
   }
 
-   /**
+  /**
    * Get sortCode
    * @return sortCode
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_SORT_CODE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -104,21 +107,20 @@ public class MerchantAccountDataOneOf1Bacs {
 
   @JsonProperty(JSON_PROPERTY_SORT_CODE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setSortCode(String sortCode) {
+  public void setSortCode(@javax.annotation.Nonnull String sortCode) {
     this.sortCode = sortCode;
   }
 
-
-  public MerchantAccountDataOneOf1Bacs name(String name) {
+  public MerchantAccountDataOneOf1Bacs name(@javax.annotation.Nonnull String name) {
     
     this.name = name;
     return this;
   }
 
-   /**
+  /**
    * Get name
    * @return name
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_NAME)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -130,21 +132,20 @@ public class MerchantAccountDataOneOf1Bacs {
 
   @JsonProperty(JSON_PROPERTY_NAME)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setName(String name) {
+  public void setName(@javax.annotation.Nonnull String name) {
     this.name = name;
   }
 
-
-  public MerchantAccountDataOneOf1Bacs connectorRecipientId(String connectorRecipientId) {
+  public MerchantAccountDataOneOf1Bacs connectorRecipientId(@javax.annotation.Nullable String connectorRecipientId) {
     this.connectorRecipientId = JsonNullable.<String>of(connectorRecipientId);
     
     return this;
   }
 
-   /**
+  /**
    * Get connectorRecipientId
    * @return connectorRecipientId
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -164,7 +165,7 @@ public class MerchantAccountDataOneOf1Bacs {
     this.connectorRecipientId = connectorRecipientId;
   }
 
-  public void setConnectorRecipientId(String connectorRecipientId) {
+  public void setConnectorRecipientId(@javax.annotation.Nullable String connectorRecipientId) {
     this.connectorRecipientId = JsonNullable.<String>of(connectorRecipientId);
   }
 

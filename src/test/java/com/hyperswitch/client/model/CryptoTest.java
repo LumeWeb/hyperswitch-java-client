@@ -19,22 +19,21 @@ import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonTypeName;
 import com.fasterxml.jackson.annotation.JsonValue;
 import com.hyperswitch.client.model.CryptoData;
-import org.junit.Assert;
-import org.junit.Ignore;
-import org.junit.Test;
-
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Test;
 
 /**
  * Model tests for Crypto
  */
-public class CryptoTest {
+class CryptoTest {
     private final Crypto model = new Crypto();
 
     /**
      * Model tests for Crypto
      */
     @Test
-    public void testCrypto() {
+    void testCrypto() {
         // TODO: test Crypto
     }
 
@@ -42,7 +41,7 @@ public class CryptoTest {
      * Test the property 'crypto'
      */
     @Test
-    public void cryptoTest() {
+    void cryptoTest() {
         // TODO: test crypto
     }
 

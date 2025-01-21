@@ -34,13 +34,13 @@ import java.util.StringJoiner;
   ValueTypeOneOf.JSON_PROPERTY_VALUE
 })
 @JsonTypeName("ValueType_oneOf")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class ValueTypeOneOf {
   /**
    * Gets or Sets type
    */
   public enum TypeEnum {
-    NUMBER("number");
+    NUMBER(String.valueOf("number"));
 
     private String value;
 
@@ -70,24 +70,26 @@ public class ValueTypeOneOf {
   }
 
   public static final String JSON_PROPERTY_TYPE = "type";
+  @javax.annotation.Nonnull
   private TypeEnum type;
 
   public static final String JSON_PROPERTY_VALUE = "value";
+  @javax.annotation.Nonnull
   private Long value;
 
   public ValueTypeOneOf() {
   }
 
-  public ValueTypeOneOf type(TypeEnum type) {
+  public ValueTypeOneOf type(@javax.annotation.Nonnull TypeEnum type) {
     
     this.type = type;
     return this;
   }
 
-   /**
+  /**
    * Get type
    * @return type
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_TYPE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -99,21 +101,20 @@ public class ValueTypeOneOf {
 
   @JsonProperty(JSON_PROPERTY_TYPE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setType(TypeEnum type) {
+  public void setType(@javax.annotation.Nonnull TypeEnum type) {
     this.type = type;
   }
 
-
-  public ValueTypeOneOf value(Long value) {
+  public ValueTypeOneOf value(@javax.annotation.Nonnull Long value) {
     
     this.value = value;
     return this;
   }
 
-   /**
+  /**
    * This Unit struct represents MinorUnit in which core amount works
    * @return value
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_VALUE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -125,7 +126,7 @@ public class ValueTypeOneOf {
 
   @JsonProperty(JSON_PROPERTY_VALUE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setValue(Long value) {
+  public void setValue(@javax.annotation.Nonnull Long value) {
     this.value = value;
   }
 

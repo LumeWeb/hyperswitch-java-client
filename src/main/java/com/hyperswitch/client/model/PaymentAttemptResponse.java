@@ -67,93 +67,117 @@ import java.util.StringJoiner;
   PaymentAttemptResponse.JSON_PROPERTY_CLIENT_SOURCE,
   PaymentAttemptResponse.JSON_PROPERTY_CLIENT_VERSION
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class PaymentAttemptResponse {
   public static final String JSON_PROPERTY_ATTEMPT_ID = "attempt_id";
+  @javax.annotation.Nonnull
   private String attemptId;
 
   public static final String JSON_PROPERTY_STATUS = "status";
+  @javax.annotation.Nonnull
   private AttemptStatus status;
 
   public static final String JSON_PROPERTY_AMOUNT = "amount";
+  @javax.annotation.Nonnull
   private Long amount;
 
   public static final String JSON_PROPERTY_CURRENCY = "currency";
+  @javax.annotation.Nullable
   private JsonNullable<Currency> currency = JsonNullable.<Currency>undefined();
 
   public static final String JSON_PROPERTY_CONNECTOR = "connector";
+  @javax.annotation.Nullable
   private JsonNullable<String> connector = JsonNullable.<String>undefined();
 
   public static final String JSON_PROPERTY_ERROR_MESSAGE = "error_message";
+  @javax.annotation.Nullable
   private JsonNullable<String> errorMessage = JsonNullable.<String>undefined();
 
   public static final String JSON_PROPERTY_PAYMENT_METHOD = "payment_method";
+  @javax.annotation.Nullable
   private JsonNullable<PaymentMethod> paymentMethod = JsonNullable.<PaymentMethod>undefined();
 
   public static final String JSON_PROPERTY_CONNECTOR_TRANSACTION_ID = "connector_transaction_id";
+  @javax.annotation.Nullable
   private JsonNullable<String> connectorTransactionId = JsonNullable.<String>undefined();
 
   public static final String JSON_PROPERTY_CAPTURE_METHOD = "capture_method";
+  @javax.annotation.Nullable
   private JsonNullable<CaptureMethod> captureMethod = JsonNullable.<CaptureMethod>undefined();
 
   public static final String JSON_PROPERTY_AUTHENTICATION_TYPE = "authentication_type";
+  @javax.annotation.Nullable
   private JsonNullable<AuthenticationType> authenticationType = JsonNullable.<AuthenticationType>of(AuthenticationType.THREE_DS);
 
   public static final String JSON_PROPERTY_CREATED_AT = "created_at";
+  @javax.annotation.Nonnull
   private OffsetDateTime createdAt;
 
   public static final String JSON_PROPERTY_MODIFIED_AT = "modified_at";
+  @javax.annotation.Nonnull
   private OffsetDateTime modifiedAt;
 
   public static final String JSON_PROPERTY_CANCELLATION_REASON = "cancellation_reason";
+  @javax.annotation.Nullable
   private JsonNullable<String> cancellationReason = JsonNullable.<String>undefined();
 
   public static final String JSON_PROPERTY_MANDATE_ID = "mandate_id";
+  @javax.annotation.Nullable
   private JsonNullable<String> mandateId = JsonNullable.<String>undefined();
 
   public static final String JSON_PROPERTY_ERROR_CODE = "error_code";
+  @javax.annotation.Nullable
   private JsonNullable<String> errorCode = JsonNullable.<String>undefined();
 
   public static final String JSON_PROPERTY_PAYMENT_TOKEN = "payment_token";
+  @javax.annotation.Nullable
   private JsonNullable<String> paymentToken = JsonNullable.<String>undefined();
 
   public static final String JSON_PROPERTY_CONNECTOR_METADATA = "connector_metadata";
+  @javax.annotation.Nullable
   private JsonNullable<Object> connectorMetadata = JsonNullable.<Object>of(null);
 
   public static final String JSON_PROPERTY_PAYMENT_EXPERIENCE = "payment_experience";
+  @javax.annotation.Nullable
   private JsonNullable<PaymentExperience> paymentExperience = JsonNullable.<PaymentExperience>undefined();
 
   public static final String JSON_PROPERTY_PAYMENT_METHOD_TYPE = "payment_method_type";
+  @javax.annotation.Nullable
   private JsonNullable<PaymentMethodType> paymentMethodType = JsonNullable.<PaymentMethodType>undefined();
 
   public static final String JSON_PROPERTY_REFERENCE_ID = "reference_id";
+  @javax.annotation.Nullable
   private JsonNullable<String> referenceId = JsonNullable.<String>undefined();
 
   public static final String JSON_PROPERTY_UNIFIED_CODE = "unified_code";
+  @javax.annotation.Nullable
   private JsonNullable<String> unifiedCode = JsonNullable.<String>undefined();
 
   public static final String JSON_PROPERTY_UNIFIED_MESSAGE = "unified_message";
+  @javax.annotation.Nullable
   private JsonNullable<String> unifiedMessage = JsonNullable.<String>undefined();
 
   public static final String JSON_PROPERTY_CLIENT_SOURCE = "client_source";
+  @javax.annotation.Nullable
   private JsonNullable<String> clientSource = JsonNullable.<String>undefined();
 
   public static final String JSON_PROPERTY_CLIENT_VERSION = "client_version";
+  @javax.annotation.Nullable
   private JsonNullable<String> clientVersion = JsonNullable.<String>undefined();
 
   public PaymentAttemptResponse() {
   }
 
-  public PaymentAttemptResponse attemptId(String attemptId) {
+  public PaymentAttemptResponse attemptId(@javax.annotation.Nonnull String attemptId) {
     
     this.attemptId = attemptId;
     return this;
   }
 
-   /**
+  /**
    * Unique identifier for the attempt
    * @return attemptId
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_ATTEMPT_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -165,21 +189,20 @@ public class PaymentAttemptResponse {
 
   @JsonProperty(JSON_PROPERTY_ATTEMPT_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setAttemptId(String attemptId) {
+  public void setAttemptId(@javax.annotation.Nonnull String attemptId) {
     this.attemptId = attemptId;
   }
 
-
-  public PaymentAttemptResponse status(AttemptStatus status) {
+  public PaymentAttemptResponse status(@javax.annotation.Nonnull AttemptStatus status) {
     
     this.status = status;
     return this;
   }
 
-   /**
+  /**
    * Get status
    * @return status
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_STATUS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -191,21 +214,20 @@ public class PaymentAttemptResponse {
 
   @JsonProperty(JSON_PROPERTY_STATUS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setStatus(AttemptStatus status) {
+  public void setStatus(@javax.annotation.Nonnull AttemptStatus status) {
     this.status = status;
   }
 
-
-  public PaymentAttemptResponse amount(Long amount) {
+  public PaymentAttemptResponse amount(@javax.annotation.Nonnull Long amount) {
     
     this.amount = amount;
     return this;
   }
 
-   /**
+  /**
    * The payment attempt amount. Amount for the payment in lowest denomination of the currency. (i.e) in cents for USD denomination, in paisa for INR denomination etc.,
    * @return amount
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_AMOUNT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -217,21 +239,20 @@ public class PaymentAttemptResponse {
 
   @JsonProperty(JSON_PROPERTY_AMOUNT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setAmount(Long amount) {
+  public void setAmount(@javax.annotation.Nonnull Long amount) {
     this.amount = amount;
   }
 
-
-  public PaymentAttemptResponse currency(Currency currency) {
+  public PaymentAttemptResponse currency(@javax.annotation.Nullable Currency currency) {
     this.currency = JsonNullable.<Currency>of(currency);
     
     return this;
   }
 
-   /**
+  /**
    * Get currency
    * @return currency
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -251,21 +272,20 @@ public class PaymentAttemptResponse {
     this.currency = currency;
   }
 
-  public void setCurrency(Currency currency) {
+  public void setCurrency(@javax.annotation.Nullable Currency currency) {
     this.currency = JsonNullable.<Currency>of(currency);
   }
 
-
-  public PaymentAttemptResponse connector(String connector) {
+  public PaymentAttemptResponse connector(@javax.annotation.Nullable String connector) {
     this.connector = JsonNullable.<String>of(connector);
     
     return this;
   }
 
-   /**
+  /**
    * The connector used for the payment
    * @return connector
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -285,21 +305,20 @@ public class PaymentAttemptResponse {
     this.connector = connector;
   }
 
-  public void setConnector(String connector) {
+  public void setConnector(@javax.annotation.Nullable String connector) {
     this.connector = JsonNullable.<String>of(connector);
   }
 
-
-  public PaymentAttemptResponse errorMessage(String errorMessage) {
+  public PaymentAttemptResponse errorMessage(@javax.annotation.Nullable String errorMessage) {
     this.errorMessage = JsonNullable.<String>of(errorMessage);
     
     return this;
   }
 
-   /**
+  /**
    * If there was an error while calling the connector, the error message is received here
    * @return errorMessage
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -319,21 +338,20 @@ public class PaymentAttemptResponse {
     this.errorMessage = errorMessage;
   }
 
-  public void setErrorMessage(String errorMessage) {
+  public void setErrorMessage(@javax.annotation.Nullable String errorMessage) {
     this.errorMessage = JsonNullable.<String>of(errorMessage);
   }
 
-
-  public PaymentAttemptResponse paymentMethod(PaymentMethod paymentMethod) {
+  public PaymentAttemptResponse paymentMethod(@javax.annotation.Nullable PaymentMethod paymentMethod) {
     this.paymentMethod = JsonNullable.<PaymentMethod>of(paymentMethod);
     
     return this;
   }
 
-   /**
+  /**
    * Get paymentMethod
    * @return paymentMethod
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -353,21 +371,20 @@ public class PaymentAttemptResponse {
     this.paymentMethod = paymentMethod;
   }
 
-  public void setPaymentMethod(PaymentMethod paymentMethod) {
+  public void setPaymentMethod(@javax.annotation.Nullable PaymentMethod paymentMethod) {
     this.paymentMethod = JsonNullable.<PaymentMethod>of(paymentMethod);
   }
 
-
-  public PaymentAttemptResponse connectorTransactionId(String connectorTransactionId) {
+  public PaymentAttemptResponse connectorTransactionId(@javax.annotation.Nullable String connectorTransactionId) {
     this.connectorTransactionId = JsonNullable.<String>of(connectorTransactionId);
     
     return this;
   }
 
-   /**
+  /**
    * A unique identifier for a payment provided by the connector
    * @return connectorTransactionId
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -387,21 +404,20 @@ public class PaymentAttemptResponse {
     this.connectorTransactionId = connectorTransactionId;
   }
 
-  public void setConnectorTransactionId(String connectorTransactionId) {
+  public void setConnectorTransactionId(@javax.annotation.Nullable String connectorTransactionId) {
     this.connectorTransactionId = JsonNullable.<String>of(connectorTransactionId);
   }
 
-
-  public PaymentAttemptResponse captureMethod(CaptureMethod captureMethod) {
+  public PaymentAttemptResponse captureMethod(@javax.annotation.Nullable CaptureMethod captureMethod) {
     this.captureMethod = JsonNullable.<CaptureMethod>of(captureMethod);
     
     return this;
   }
 
-   /**
+  /**
    * Get captureMethod
    * @return captureMethod
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -421,21 +437,20 @@ public class PaymentAttemptResponse {
     this.captureMethod = captureMethod;
   }
 
-  public void setCaptureMethod(CaptureMethod captureMethod) {
+  public void setCaptureMethod(@javax.annotation.Nullable CaptureMethod captureMethod) {
     this.captureMethod = JsonNullable.<CaptureMethod>of(captureMethod);
   }
 
-
-  public PaymentAttemptResponse authenticationType(AuthenticationType authenticationType) {
+  public PaymentAttemptResponse authenticationType(@javax.annotation.Nullable AuthenticationType authenticationType) {
     this.authenticationType = JsonNullable.<AuthenticationType>of(authenticationType);
     
     return this;
   }
 
-   /**
+  /**
    * Get authenticationType
    * @return authenticationType
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -455,21 +470,20 @@ public class PaymentAttemptResponse {
     this.authenticationType = authenticationType;
   }
 
-  public void setAuthenticationType(AuthenticationType authenticationType) {
+  public void setAuthenticationType(@javax.annotation.Nullable AuthenticationType authenticationType) {
     this.authenticationType = JsonNullable.<AuthenticationType>of(authenticationType);
   }
 
-
-  public PaymentAttemptResponse createdAt(OffsetDateTime createdAt) {
+  public PaymentAttemptResponse createdAt(@javax.annotation.Nonnull OffsetDateTime createdAt) {
     
     this.createdAt = createdAt;
     return this;
   }
 
-   /**
+  /**
    * Time at which the payment attempt was created
    * @return createdAt
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_CREATED_AT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -481,21 +495,20 @@ public class PaymentAttemptResponse {
 
   @JsonProperty(JSON_PROPERTY_CREATED_AT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setCreatedAt(OffsetDateTime createdAt) {
+  public void setCreatedAt(@javax.annotation.Nonnull OffsetDateTime createdAt) {
     this.createdAt = createdAt;
   }
 
-
-  public PaymentAttemptResponse modifiedAt(OffsetDateTime modifiedAt) {
+  public PaymentAttemptResponse modifiedAt(@javax.annotation.Nonnull OffsetDateTime modifiedAt) {
     
     this.modifiedAt = modifiedAt;
     return this;
   }
 
-   /**
+  /**
    * Time at which the payment attempt was last modified
    * @return modifiedAt
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_MODIFIED_AT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -507,21 +520,20 @@ public class PaymentAttemptResponse {
 
   @JsonProperty(JSON_PROPERTY_MODIFIED_AT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setModifiedAt(OffsetDateTime modifiedAt) {
+  public void setModifiedAt(@javax.annotation.Nonnull OffsetDateTime modifiedAt) {
     this.modifiedAt = modifiedAt;
   }
 
-
-  public PaymentAttemptResponse cancellationReason(String cancellationReason) {
+  public PaymentAttemptResponse cancellationReason(@javax.annotation.Nullable String cancellationReason) {
     this.cancellationReason = JsonNullable.<String>of(cancellationReason);
     
     return this;
   }
 
-   /**
+  /**
    * If the payment was cancelled the reason will be provided here
    * @return cancellationReason
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -541,21 +553,20 @@ public class PaymentAttemptResponse {
     this.cancellationReason = cancellationReason;
   }
 
-  public void setCancellationReason(String cancellationReason) {
+  public void setCancellationReason(@javax.annotation.Nullable String cancellationReason) {
     this.cancellationReason = JsonNullable.<String>of(cancellationReason);
   }
 
-
-  public PaymentAttemptResponse mandateId(String mandateId) {
+  public PaymentAttemptResponse mandateId(@javax.annotation.Nullable String mandateId) {
     this.mandateId = JsonNullable.<String>of(mandateId);
     
     return this;
   }
 
-   /**
+  /**
    * A unique identifier to link the payment to a mandate, can be use instead of payment_method_data
    * @return mandateId
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -575,21 +586,20 @@ public class PaymentAttemptResponse {
     this.mandateId = mandateId;
   }
 
-  public void setMandateId(String mandateId) {
+  public void setMandateId(@javax.annotation.Nullable String mandateId) {
     this.mandateId = JsonNullable.<String>of(mandateId);
   }
 
-
-  public PaymentAttemptResponse errorCode(String errorCode) {
+  public PaymentAttemptResponse errorCode(@javax.annotation.Nullable String errorCode) {
     this.errorCode = JsonNullable.<String>of(errorCode);
     
     return this;
   }
 
-   /**
+  /**
    * If there was an error while calling the connectors the error code is received here
    * @return errorCode
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -609,21 +619,20 @@ public class PaymentAttemptResponse {
     this.errorCode = errorCode;
   }
 
-  public void setErrorCode(String errorCode) {
+  public void setErrorCode(@javax.annotation.Nullable String errorCode) {
     this.errorCode = JsonNullable.<String>of(errorCode);
   }
 
-
-  public PaymentAttemptResponse paymentToken(String paymentToken) {
+  public PaymentAttemptResponse paymentToken(@javax.annotation.Nullable String paymentToken) {
     this.paymentToken = JsonNullable.<String>of(paymentToken);
     
     return this;
   }
 
-   /**
+  /**
    * Provide a reference to a stored payment method
    * @return paymentToken
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -643,21 +652,20 @@ public class PaymentAttemptResponse {
     this.paymentToken = paymentToken;
   }
 
-  public void setPaymentToken(String paymentToken) {
+  public void setPaymentToken(@javax.annotation.Nullable String paymentToken) {
     this.paymentToken = JsonNullable.<String>of(paymentToken);
   }
 
-
-  public PaymentAttemptResponse connectorMetadata(Object connectorMetadata) {
+  public PaymentAttemptResponse connectorMetadata(@javax.annotation.Nullable Object connectorMetadata) {
     this.connectorMetadata = JsonNullable.<Object>of(connectorMetadata);
     
     return this;
   }
 
-   /**
+  /**
    * Additional data related to some connectors
    * @return connectorMetadata
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -677,21 +685,20 @@ public class PaymentAttemptResponse {
     this.connectorMetadata = connectorMetadata;
   }
 
-  public void setConnectorMetadata(Object connectorMetadata) {
+  public void setConnectorMetadata(@javax.annotation.Nullable Object connectorMetadata) {
     this.connectorMetadata = JsonNullable.<Object>of(connectorMetadata);
   }
 
-
-  public PaymentAttemptResponse paymentExperience(PaymentExperience paymentExperience) {
+  public PaymentAttemptResponse paymentExperience(@javax.annotation.Nullable PaymentExperience paymentExperience) {
     this.paymentExperience = JsonNullable.<PaymentExperience>of(paymentExperience);
     
     return this;
   }
 
-   /**
+  /**
    * Get paymentExperience
    * @return paymentExperience
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -711,21 +718,20 @@ public class PaymentAttemptResponse {
     this.paymentExperience = paymentExperience;
   }
 
-  public void setPaymentExperience(PaymentExperience paymentExperience) {
+  public void setPaymentExperience(@javax.annotation.Nullable PaymentExperience paymentExperience) {
     this.paymentExperience = JsonNullable.<PaymentExperience>of(paymentExperience);
   }
 
-
-  public PaymentAttemptResponse paymentMethodType(PaymentMethodType paymentMethodType) {
+  public PaymentAttemptResponse paymentMethodType(@javax.annotation.Nullable PaymentMethodType paymentMethodType) {
     this.paymentMethodType = JsonNullable.<PaymentMethodType>of(paymentMethodType);
     
     return this;
   }
 
-   /**
+  /**
    * Get paymentMethodType
    * @return paymentMethodType
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -745,21 +751,20 @@ public class PaymentAttemptResponse {
     this.paymentMethodType = paymentMethodType;
   }
 
-  public void setPaymentMethodType(PaymentMethodType paymentMethodType) {
+  public void setPaymentMethodType(@javax.annotation.Nullable PaymentMethodType paymentMethodType) {
     this.paymentMethodType = JsonNullable.<PaymentMethodType>of(paymentMethodType);
   }
 
-
-  public PaymentAttemptResponse referenceId(String referenceId) {
+  public PaymentAttemptResponse referenceId(@javax.annotation.Nullable String referenceId) {
     this.referenceId = JsonNullable.<String>of(referenceId);
     
     return this;
   }
 
-   /**
+  /**
    * Reference to the payment at connector side
    * @return referenceId
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -779,21 +784,20 @@ public class PaymentAttemptResponse {
     this.referenceId = referenceId;
   }
 
-  public void setReferenceId(String referenceId) {
+  public void setReferenceId(@javax.annotation.Nullable String referenceId) {
     this.referenceId = JsonNullable.<String>of(referenceId);
   }
 
-
-  public PaymentAttemptResponse unifiedCode(String unifiedCode) {
+  public PaymentAttemptResponse unifiedCode(@javax.annotation.Nullable String unifiedCode) {
     this.unifiedCode = JsonNullable.<String>of(unifiedCode);
     
     return this;
   }
 
-   /**
+  /**
    * (This field is not live yet)Error code unified across the connectors is received here if there was an error while calling connector
    * @return unifiedCode
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -813,21 +817,20 @@ public class PaymentAttemptResponse {
     this.unifiedCode = unifiedCode;
   }
 
-  public void setUnifiedCode(String unifiedCode) {
+  public void setUnifiedCode(@javax.annotation.Nullable String unifiedCode) {
     this.unifiedCode = JsonNullable.<String>of(unifiedCode);
   }
 
-
-  public PaymentAttemptResponse unifiedMessage(String unifiedMessage) {
+  public PaymentAttemptResponse unifiedMessage(@javax.annotation.Nullable String unifiedMessage) {
     this.unifiedMessage = JsonNullable.<String>of(unifiedMessage);
     
     return this;
   }
 
-   /**
+  /**
    * (This field is not live yet)Error message unified across the connectors is received here if there was an error while calling connector
    * @return unifiedMessage
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -847,21 +850,20 @@ public class PaymentAttemptResponse {
     this.unifiedMessage = unifiedMessage;
   }
 
-  public void setUnifiedMessage(String unifiedMessage) {
+  public void setUnifiedMessage(@javax.annotation.Nullable String unifiedMessage) {
     this.unifiedMessage = JsonNullable.<String>of(unifiedMessage);
   }
 
-
-  public PaymentAttemptResponse clientSource(String clientSource) {
+  public PaymentAttemptResponse clientSource(@javax.annotation.Nullable String clientSource) {
     this.clientSource = JsonNullable.<String>of(clientSource);
     
     return this;
   }
 
-   /**
+  /**
    * Value passed in X-CLIENT-SOURCE header during payments confirm request by the client
    * @return clientSource
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -881,21 +883,20 @@ public class PaymentAttemptResponse {
     this.clientSource = clientSource;
   }
 
-  public void setClientSource(String clientSource) {
+  public void setClientSource(@javax.annotation.Nullable String clientSource) {
     this.clientSource = JsonNullable.<String>of(clientSource);
   }
 
-
-  public PaymentAttemptResponse clientVersion(String clientVersion) {
+  public PaymentAttemptResponse clientVersion(@javax.annotation.Nullable String clientVersion) {
     this.clientVersion = JsonNullable.<String>of(clientVersion);
     
     return this;
   }
 
-   /**
+  /**
    * Value passed in X-CLIENT-VERSION header during payments confirm request by the client
    * @return clientVersion
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -915,7 +916,7 @@ public class PaymentAttemptResponse {
     this.clientVersion = clientVersion;
   }
 
-  public void setClientVersion(String clientVersion) {
+  public void setClientVersion(@javax.annotation.Nullable String clientVersion) {
     this.clientVersion = JsonNullable.<String>of(clientVersion);
   }
 

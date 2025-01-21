@@ -31,6 +31,7 @@ import com.hyperswitch.client.model.MerchantConnectorDetails;
 import com.hyperswitch.client.model.MerchantConnectorWebhookDetails;
 import com.hyperswitch.client.model.PaymentMethodsEnabled;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import org.openapitools.jackson.nullable.JsonNullable;
 import com.fasterxml.jackson.annotation.JsonIgnore;
@@ -67,81 +68,101 @@ import java.util.StringJoiner;
   MerchantConnectorResponse.JSON_PROPERTY_ADDITIONAL_MERCHANT_DATA,
   MerchantConnectorResponse.JSON_PROPERTY_CONNECTOR_WALLETS_DETAILS
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class MerchantConnectorResponse {
   public static final String JSON_PROPERTY_CONNECTOR_TYPE = "connector_type";
+  @javax.annotation.Nonnull
   private ConnectorType connectorType;
 
   public static final String JSON_PROPERTY_CONNECTOR_NAME = "connector_name";
+  @javax.annotation.Nonnull
   private Connector connectorName;
 
   public static final String JSON_PROPERTY_CONNECTOR_LABEL = "connector_label";
+  @javax.annotation.Nullable
   private JsonNullable<String> connectorLabel = JsonNullable.<String>undefined();
 
   public static final String JSON_PROPERTY_MERCHANT_CONNECTOR_ID = "merchant_connector_id";
+  @javax.annotation.Nonnull
   private String merchantConnectorId;
 
   public static final String JSON_PROPERTY_PROFILE_ID = "profile_id";
+  @javax.annotation.Nonnull
   private String profileId;
 
   public static final String JSON_PROPERTY_CONNECTOR_ACCOUNT_DETAILS = "connector_account_details";
+  @javax.annotation.Nullable
   private JsonNullable<MerchantConnectorDetails> connectorAccountDetails = JsonNullable.<MerchantConnectorDetails>undefined();
 
   public static final String JSON_PROPERTY_PAYMENT_METHODS_ENABLED = "payment_methods_enabled";
+  @javax.annotation.Nullable
   private JsonNullable<List<PaymentMethodsEnabled>> paymentMethodsEnabled = JsonNullable.<List<PaymentMethodsEnabled>>undefined();
 
   public static final String JSON_PROPERTY_CONNECTOR_WEBHOOK_DETAILS = "connector_webhook_details";
+  @javax.annotation.Nullable
   private JsonNullable<MerchantConnectorWebhookDetails> connectorWebhookDetails = JsonNullable.<MerchantConnectorWebhookDetails>undefined();
 
   public static final String JSON_PROPERTY_METADATA = "metadata";
+  @javax.annotation.Nullable
   private JsonNullable<Object> metadata = JsonNullable.<Object>undefined();
 
   public static final String JSON_PROPERTY_TEST_MODE = "test_mode";
+  @javax.annotation.Nullable
   private JsonNullable<Boolean> testMode = JsonNullable.<Boolean>of(false);
 
   public static final String JSON_PROPERTY_DISABLED = "disabled";
+  @javax.annotation.Nullable
   private JsonNullable<Boolean> disabled = JsonNullable.<Boolean>of(false);
 
   public static final String JSON_PROPERTY_FRM_CONFIGS = "frm_configs";
+  @javax.annotation.Nullable
   private JsonNullable<List<FrmConfigs>> frmConfigs = JsonNullable.<List<FrmConfigs>>undefined();
 
   public static final String JSON_PROPERTY_BUSINESS_COUNTRY = "business_country";
+  @javax.annotation.Nullable
   private JsonNullable<CountryAlpha2> businessCountry = JsonNullable.<CountryAlpha2>undefined();
 
   public static final String JSON_PROPERTY_BUSINESS_LABEL = "business_label";
+  @javax.annotation.Nullable
   private JsonNullable<String> businessLabel = JsonNullable.<String>undefined();
 
   public static final String JSON_PROPERTY_BUSINESS_SUB_LABEL = "business_sub_label";
+  @javax.annotation.Nullable
   private JsonNullable<String> businessSubLabel = JsonNullable.<String>undefined();
 
   public static final String JSON_PROPERTY_APPLEPAY_VERIFIED_DOMAINS = "applepay_verified_domains";
+  @javax.annotation.Nullable
   private JsonNullable<List<String>> applepayVerifiedDomains = JsonNullable.<List<String>>undefined();
 
   public static final String JSON_PROPERTY_PM_AUTH_CONFIG = "pm_auth_config";
+  @javax.annotation.Nullable
   private JsonNullable<Object> pmAuthConfig = JsonNullable.<Object>undefined();
 
   public static final String JSON_PROPERTY_STATUS = "status";
+  @javax.annotation.Nonnull
   private ConnectorStatus status;
 
   public static final String JSON_PROPERTY_ADDITIONAL_MERCHANT_DATA = "additional_merchant_data";
+  @javax.annotation.Nullable
   private JsonNullable<AdditionalMerchantData> additionalMerchantData = JsonNullable.<AdditionalMerchantData>undefined();
 
   public static final String JSON_PROPERTY_CONNECTOR_WALLETS_DETAILS = "connector_wallets_details";
+  @javax.annotation.Nullable
   private JsonNullable<ConnectorWalletDetails> connectorWalletsDetails = JsonNullable.<ConnectorWalletDetails>undefined();
 
   public MerchantConnectorResponse() {
   }
 
-  public MerchantConnectorResponse connectorType(ConnectorType connectorType) {
+  public MerchantConnectorResponse connectorType(@javax.annotation.Nonnull ConnectorType connectorType) {
     
     this.connectorType = connectorType;
     return this;
   }
 
-   /**
+  /**
    * Get connectorType
    * @return connectorType
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_CONNECTOR_TYPE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -153,21 +174,20 @@ public class MerchantConnectorResponse {
 
   @JsonProperty(JSON_PROPERTY_CONNECTOR_TYPE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setConnectorType(ConnectorType connectorType) {
+  public void setConnectorType(@javax.annotation.Nonnull ConnectorType connectorType) {
     this.connectorType = connectorType;
   }
 
-
-  public MerchantConnectorResponse connectorName(Connector connectorName) {
+  public MerchantConnectorResponse connectorName(@javax.annotation.Nonnull Connector connectorName) {
     
     this.connectorName = connectorName;
     return this;
   }
 
-   /**
+  /**
    * Get connectorName
    * @return connectorName
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_CONNECTOR_NAME)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -179,21 +199,20 @@ public class MerchantConnectorResponse {
 
   @JsonProperty(JSON_PROPERTY_CONNECTOR_NAME)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setConnectorName(Connector connectorName) {
+  public void setConnectorName(@javax.annotation.Nonnull Connector connectorName) {
     this.connectorName = connectorName;
   }
 
-
-  public MerchantConnectorResponse connectorLabel(String connectorLabel) {
+  public MerchantConnectorResponse connectorLabel(@javax.annotation.Nullable String connectorLabel) {
     this.connectorLabel = JsonNullable.<String>of(connectorLabel);
     
     return this;
   }
 
-   /**
+  /**
    * A unique label to identify the connector account created under a profile
    * @return connectorLabel
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -213,21 +232,20 @@ public class MerchantConnectorResponse {
     this.connectorLabel = connectorLabel;
   }
 
-  public void setConnectorLabel(String connectorLabel) {
+  public void setConnectorLabel(@javax.annotation.Nullable String connectorLabel) {
     this.connectorLabel = JsonNullable.<String>of(connectorLabel);
   }
 
-
-  public MerchantConnectorResponse merchantConnectorId(String merchantConnectorId) {
+  public MerchantConnectorResponse merchantConnectorId(@javax.annotation.Nonnull String merchantConnectorId) {
     
     this.merchantConnectorId = merchantConnectorId;
     return this;
   }
 
-   /**
+  /**
    * Unique ID of the merchant connector account
    * @return merchantConnectorId
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_MERCHANT_CONNECTOR_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -239,21 +257,20 @@ public class MerchantConnectorResponse {
 
   @JsonProperty(JSON_PROPERTY_MERCHANT_CONNECTOR_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setMerchantConnectorId(String merchantConnectorId) {
+  public void setMerchantConnectorId(@javax.annotation.Nonnull String merchantConnectorId) {
     this.merchantConnectorId = merchantConnectorId;
   }
 
-
-  public MerchantConnectorResponse profileId(String profileId) {
+  public MerchantConnectorResponse profileId(@javax.annotation.Nonnull String profileId) {
     
     this.profileId = profileId;
     return this;
   }
 
-   /**
+  /**
    * Identifier for the profile, if not provided default will be chosen from merchant account
    * @return profileId
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_PROFILE_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -265,21 +282,20 @@ public class MerchantConnectorResponse {
 
   @JsonProperty(JSON_PROPERTY_PROFILE_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setProfileId(String profileId) {
+  public void setProfileId(@javax.annotation.Nonnull String profileId) {
     this.profileId = profileId;
   }
 
-
-  public MerchantConnectorResponse connectorAccountDetails(MerchantConnectorDetails connectorAccountDetails) {
+  public MerchantConnectorResponse connectorAccountDetails(@javax.annotation.Nullable MerchantConnectorDetails connectorAccountDetails) {
     this.connectorAccountDetails = JsonNullable.<MerchantConnectorDetails>of(connectorAccountDetails);
     
     return this;
   }
 
-   /**
+  /**
    * Get connectorAccountDetails
    * @return connectorAccountDetails
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -299,12 +315,11 @@ public class MerchantConnectorResponse {
     this.connectorAccountDetails = connectorAccountDetails;
   }
 
-  public void setConnectorAccountDetails(MerchantConnectorDetails connectorAccountDetails) {
+  public void setConnectorAccountDetails(@javax.annotation.Nullable MerchantConnectorDetails connectorAccountDetails) {
     this.connectorAccountDetails = JsonNullable.<MerchantConnectorDetails>of(connectorAccountDetails);
   }
 
-
-  public MerchantConnectorResponse paymentMethodsEnabled(List<PaymentMethodsEnabled> paymentMethodsEnabled) {
+  public MerchantConnectorResponse paymentMethodsEnabled(@javax.annotation.Nullable List<PaymentMethodsEnabled> paymentMethodsEnabled) {
     this.paymentMethodsEnabled = JsonNullable.<List<PaymentMethodsEnabled>>of(paymentMethodsEnabled);
     
     return this;
@@ -322,10 +337,10 @@ public class MerchantConnectorResponse {
     return this;
   }
 
-   /**
+  /**
    * An object containing the details about the payment methods that need to be enabled under this merchant connector account
    * @return paymentMethodsEnabled
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -345,21 +360,20 @@ public class MerchantConnectorResponse {
     this.paymentMethodsEnabled = paymentMethodsEnabled;
   }
 
-  public void setPaymentMethodsEnabled(List<PaymentMethodsEnabled> paymentMethodsEnabled) {
+  public void setPaymentMethodsEnabled(@javax.annotation.Nullable List<PaymentMethodsEnabled> paymentMethodsEnabled) {
     this.paymentMethodsEnabled = JsonNullable.<List<PaymentMethodsEnabled>>of(paymentMethodsEnabled);
   }
 
-
-  public MerchantConnectorResponse connectorWebhookDetails(MerchantConnectorWebhookDetails connectorWebhookDetails) {
+  public MerchantConnectorResponse connectorWebhookDetails(@javax.annotation.Nullable MerchantConnectorWebhookDetails connectorWebhookDetails) {
     this.connectorWebhookDetails = JsonNullable.<MerchantConnectorWebhookDetails>of(connectorWebhookDetails);
     
     return this;
   }
 
-   /**
+  /**
    * Get connectorWebhookDetails
    * @return connectorWebhookDetails
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -379,21 +393,20 @@ public class MerchantConnectorResponse {
     this.connectorWebhookDetails = connectorWebhookDetails;
   }
 
-  public void setConnectorWebhookDetails(MerchantConnectorWebhookDetails connectorWebhookDetails) {
+  public void setConnectorWebhookDetails(@javax.annotation.Nullable MerchantConnectorWebhookDetails connectorWebhookDetails) {
     this.connectorWebhookDetails = JsonNullable.<MerchantConnectorWebhookDetails>of(connectorWebhookDetails);
   }
 
-
-  public MerchantConnectorResponse metadata(Object metadata) {
+  public MerchantConnectorResponse metadata(@javax.annotation.Nullable Object metadata) {
     this.metadata = JsonNullable.<Object>of(metadata);
     
     return this;
   }
 
-   /**
+  /**
    * Metadata is useful for storing additional, unstructured information on an object.
    * @return metadata
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -413,21 +426,20 @@ public class MerchantConnectorResponse {
     this.metadata = metadata;
   }
 
-  public void setMetadata(Object metadata) {
+  public void setMetadata(@javax.annotation.Nullable Object metadata) {
     this.metadata = JsonNullable.<Object>of(metadata);
   }
 
-
-  public MerchantConnectorResponse testMode(Boolean testMode) {
+  public MerchantConnectorResponse testMode(@javax.annotation.Nullable Boolean testMode) {
     this.testMode = JsonNullable.<Boolean>of(testMode);
     
     return this;
   }
 
-   /**
+  /**
    * A boolean value to indicate if the connector is in Test mode. By default, its value is false.
    * @return testMode
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -447,21 +459,20 @@ public class MerchantConnectorResponse {
     this.testMode = testMode;
   }
 
-  public void setTestMode(Boolean testMode) {
+  public void setTestMode(@javax.annotation.Nullable Boolean testMode) {
     this.testMode = JsonNullable.<Boolean>of(testMode);
   }
 
-
-  public MerchantConnectorResponse disabled(Boolean disabled) {
+  public MerchantConnectorResponse disabled(@javax.annotation.Nullable Boolean disabled) {
     this.disabled = JsonNullable.<Boolean>of(disabled);
     
     return this;
   }
 
-   /**
+  /**
    * A boolean value to indicate if the connector is disabled. By default, its value is false.
    * @return disabled
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -481,12 +492,11 @@ public class MerchantConnectorResponse {
     this.disabled = disabled;
   }
 
-  public void setDisabled(Boolean disabled) {
+  public void setDisabled(@javax.annotation.Nullable Boolean disabled) {
     this.disabled = JsonNullable.<Boolean>of(disabled);
   }
 
-
-  public MerchantConnectorResponse frmConfigs(List<FrmConfigs> frmConfigs) {
+  public MerchantConnectorResponse frmConfigs(@javax.annotation.Nullable List<FrmConfigs> frmConfigs) {
     this.frmConfigs = JsonNullable.<List<FrmConfigs>>of(frmConfigs);
     
     return this;
@@ -504,10 +514,10 @@ public class MerchantConnectorResponse {
     return this;
   }
 
-   /**
+  /**
    * Contains the frm configs for the merchant connector
    * @return frmConfigs
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -527,21 +537,20 @@ public class MerchantConnectorResponse {
     this.frmConfigs = frmConfigs;
   }
 
-  public void setFrmConfigs(List<FrmConfigs> frmConfigs) {
+  public void setFrmConfigs(@javax.annotation.Nullable List<FrmConfigs> frmConfigs) {
     this.frmConfigs = JsonNullable.<List<FrmConfigs>>of(frmConfigs);
   }
 
-
-  public MerchantConnectorResponse businessCountry(CountryAlpha2 businessCountry) {
+  public MerchantConnectorResponse businessCountry(@javax.annotation.Nullable CountryAlpha2 businessCountry) {
     this.businessCountry = JsonNullable.<CountryAlpha2>of(businessCountry);
     
     return this;
   }
 
-   /**
+  /**
    * Get businessCountry
    * @return businessCountry
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -561,21 +570,20 @@ public class MerchantConnectorResponse {
     this.businessCountry = businessCountry;
   }
 
-  public void setBusinessCountry(CountryAlpha2 businessCountry) {
+  public void setBusinessCountry(@javax.annotation.Nullable CountryAlpha2 businessCountry) {
     this.businessCountry = JsonNullable.<CountryAlpha2>of(businessCountry);
   }
 
-
-  public MerchantConnectorResponse businessLabel(String businessLabel) {
+  public MerchantConnectorResponse businessLabel(@javax.annotation.Nullable String businessLabel) {
     this.businessLabel = JsonNullable.<String>of(businessLabel);
     
     return this;
   }
 
-   /**
+  /**
    * The business label to which the connector account is attached. To be deprecated soon. Use the &#39;profile_id&#39; instead
    * @return businessLabel
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -595,21 +603,20 @@ public class MerchantConnectorResponse {
     this.businessLabel = businessLabel;
   }
 
-  public void setBusinessLabel(String businessLabel) {
+  public void setBusinessLabel(@javax.annotation.Nullable String businessLabel) {
     this.businessLabel = JsonNullable.<String>of(businessLabel);
   }
 
-
-  public MerchantConnectorResponse businessSubLabel(String businessSubLabel) {
+  public MerchantConnectorResponse businessSubLabel(@javax.annotation.Nullable String businessSubLabel) {
     this.businessSubLabel = JsonNullable.<String>of(businessSubLabel);
     
     return this;
   }
 
-   /**
+  /**
    * The business sublabel to which the connector account is attached. To be deprecated soon. Use the &#39;profile_id&#39; instead
    * @return businessSubLabel
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -629,12 +636,11 @@ public class MerchantConnectorResponse {
     this.businessSubLabel = businessSubLabel;
   }
 
-  public void setBusinessSubLabel(String businessSubLabel) {
+  public void setBusinessSubLabel(@javax.annotation.Nullable String businessSubLabel) {
     this.businessSubLabel = JsonNullable.<String>of(businessSubLabel);
   }
 
-
-  public MerchantConnectorResponse applepayVerifiedDomains(List<String> applepayVerifiedDomains) {
+  public MerchantConnectorResponse applepayVerifiedDomains(@javax.annotation.Nullable List<String> applepayVerifiedDomains) {
     this.applepayVerifiedDomains = JsonNullable.<List<String>>of(applepayVerifiedDomains);
     
     return this;
@@ -652,10 +658,10 @@ public class MerchantConnectorResponse {
     return this;
   }
 
-   /**
+  /**
    * identifier for the verified domains of a particular connector account
    * @return applepayVerifiedDomains
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -675,21 +681,20 @@ public class MerchantConnectorResponse {
     this.applepayVerifiedDomains = applepayVerifiedDomains;
   }
 
-  public void setApplepayVerifiedDomains(List<String> applepayVerifiedDomains) {
+  public void setApplepayVerifiedDomains(@javax.annotation.Nullable List<String> applepayVerifiedDomains) {
     this.applepayVerifiedDomains = JsonNullable.<List<String>>of(applepayVerifiedDomains);
   }
 
-
-  public MerchantConnectorResponse pmAuthConfig(Object pmAuthConfig) {
+  public MerchantConnectorResponse pmAuthConfig(@javax.annotation.Nullable Object pmAuthConfig) {
     this.pmAuthConfig = JsonNullable.<Object>of(pmAuthConfig);
     
     return this;
   }
 
-   /**
+  /**
    * Get pmAuthConfig
    * @return pmAuthConfig
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -709,21 +714,20 @@ public class MerchantConnectorResponse {
     this.pmAuthConfig = pmAuthConfig;
   }
 
-  public void setPmAuthConfig(Object pmAuthConfig) {
+  public void setPmAuthConfig(@javax.annotation.Nullable Object pmAuthConfig) {
     this.pmAuthConfig = JsonNullable.<Object>of(pmAuthConfig);
   }
 
-
-  public MerchantConnectorResponse status(ConnectorStatus status) {
+  public MerchantConnectorResponse status(@javax.annotation.Nonnull ConnectorStatus status) {
     
     this.status = status;
     return this;
   }
 
-   /**
+  /**
    * Get status
    * @return status
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_STATUS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -735,21 +739,20 @@ public class MerchantConnectorResponse {
 
   @JsonProperty(JSON_PROPERTY_STATUS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setStatus(ConnectorStatus status) {
+  public void setStatus(@javax.annotation.Nonnull ConnectorStatus status) {
     this.status = status;
   }
 
-
-  public MerchantConnectorResponse additionalMerchantData(AdditionalMerchantData additionalMerchantData) {
+  public MerchantConnectorResponse additionalMerchantData(@javax.annotation.Nullable AdditionalMerchantData additionalMerchantData) {
     this.additionalMerchantData = JsonNullable.<AdditionalMerchantData>of(additionalMerchantData);
     
     return this;
   }
 
-   /**
+  /**
    * Get additionalMerchantData
    * @return additionalMerchantData
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -769,21 +772,20 @@ public class MerchantConnectorResponse {
     this.additionalMerchantData = additionalMerchantData;
   }
 
-  public void setAdditionalMerchantData(AdditionalMerchantData additionalMerchantData) {
+  public void setAdditionalMerchantData(@javax.annotation.Nullable AdditionalMerchantData additionalMerchantData) {
     this.additionalMerchantData = JsonNullable.<AdditionalMerchantData>of(additionalMerchantData);
   }
 
-
-  public MerchantConnectorResponse connectorWalletsDetails(ConnectorWalletDetails connectorWalletsDetails) {
+  public MerchantConnectorResponse connectorWalletsDetails(@javax.annotation.Nullable ConnectorWalletDetails connectorWalletsDetails) {
     this.connectorWalletsDetails = JsonNullable.<ConnectorWalletDetails>of(connectorWalletsDetails);
     
     return this;
   }
 
-   /**
+  /**
    * Get connectorWalletsDetails
    * @return connectorWalletsDetails
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -803,7 +805,7 @@ public class MerchantConnectorResponse {
     this.connectorWalletsDetails = connectorWalletsDetails;
   }
 
-  public void setConnectorWalletsDetails(ConnectorWalletDetails connectorWalletsDetails) {
+  public void setConnectorWalletsDetails(@javax.annotation.Nullable ConnectorWalletDetails connectorWalletsDetails) {
     this.connectorWalletsDetails = JsonNullable.<ConnectorWalletDetails>of(connectorWalletsDetails);
   }
 

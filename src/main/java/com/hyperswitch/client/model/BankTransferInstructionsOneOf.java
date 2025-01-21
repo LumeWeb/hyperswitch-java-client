@@ -34,24 +34,25 @@ import java.util.StringJoiner;
   BankTransferInstructionsOneOf.JSON_PROPERTY_DOKU_BANK_TRANSFER_INSTRUCTIONS
 })
 @JsonTypeName("BankTransferInstructions_oneOf")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class BankTransferInstructionsOneOf {
   public static final String JSON_PROPERTY_DOKU_BANK_TRANSFER_INSTRUCTIONS = "doku_bank_transfer_instructions";
+  @javax.annotation.Nonnull
   private DokuBankTransferInstructions dokuBankTransferInstructions;
 
   public BankTransferInstructionsOneOf() {
   }
 
-  public BankTransferInstructionsOneOf dokuBankTransferInstructions(DokuBankTransferInstructions dokuBankTransferInstructions) {
+  public BankTransferInstructionsOneOf dokuBankTransferInstructions(@javax.annotation.Nonnull DokuBankTransferInstructions dokuBankTransferInstructions) {
     
     this.dokuBankTransferInstructions = dokuBankTransferInstructions;
     return this;
   }
 
-   /**
+  /**
    * Get dokuBankTransferInstructions
    * @return dokuBankTransferInstructions
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_DOKU_BANK_TRANSFER_INSTRUCTIONS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -63,7 +64,7 @@ public class BankTransferInstructionsOneOf {
 
   @JsonProperty(JSON_PROPERTY_DOKU_BANK_TRANSFER_INSTRUCTIONS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setDokuBankTransferInstructions(DokuBankTransferInstructions dokuBankTransferInstructions) {
+  public void setDokuBankTransferInstructions(@javax.annotation.Nonnull DokuBankTransferInstructions dokuBankTransferInstructions) {
     this.dokuBankTransferInstructions = dokuBankTransferInstructions;
   }
 

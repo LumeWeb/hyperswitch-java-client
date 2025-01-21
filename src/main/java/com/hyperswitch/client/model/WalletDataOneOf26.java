@@ -33,24 +33,25 @@ import java.util.StringJoiner;
   WalletDataOneOf26.JSON_PROPERTY_SWISH_QR
 })
 @JsonTypeName("WalletData_oneOf_26")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class WalletDataOneOf26 {
   public static final String JSON_PROPERTY_SWISH_QR = "swish_qr";
+  @javax.annotation.Nonnull
   private Object swishQr;
 
   public WalletDataOneOf26() {
   }
 
-  public WalletDataOneOf26 swishQr(Object swishQr) {
+  public WalletDataOneOf26 swishQr(@javax.annotation.Nonnull Object swishQr) {
     
     this.swishQr = swishQr;
     return this;
   }
 
-   /**
+  /**
    * Get swishQr
    * @return swishQr
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_SWISH_QR)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -62,7 +63,7 @@ public class WalletDataOneOf26 {
 
   @JsonProperty(JSON_PROPERTY_SWISH_QR)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setSwishQr(Object swishQr) {
+  public void setSwishQr(@javax.annotation.Nonnull Object swishQr) {
     this.swishQr = swishQr;
   }
 

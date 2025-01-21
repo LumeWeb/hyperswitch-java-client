@@ -22,22 +22,21 @@ import org.openapitools.jackson.nullable.JsonNullable;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.openapitools.jackson.nullable.JsonNullable;
 import java.util.NoSuchElementException;
-import org.junit.Assert;
-import org.junit.Ignore;
-import org.junit.Test;
-
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Test;
 
 /**
  * Model tests for FrmMessage
  */
-public class FrmMessageTest {
+class FrmMessageTest {
     private final FrmMessage model = new FrmMessage();
 
     /**
      * Model tests for FrmMessage
      */
     @Test
-    public void testFrmMessage() {
+    void testFrmMessage() {
         // TODO: test FrmMessage
     }
 
@@ -45,7 +44,7 @@ public class FrmMessageTest {
      * Test the property 'frmName'
      */
     @Test
-    public void frmNameTest() {
+    void frmNameTest() {
         // TODO: test frmName
     }
 
@@ -53,7 +52,7 @@ public class FrmMessageTest {
      * Test the property 'frmTransactionId'
      */
     @Test
-    public void frmTransactionIdTest() {
+    void frmTransactionIdTest() {
         // TODO: test frmTransactionId
     }
 
@@ -61,7 +60,7 @@ public class FrmMessageTest {
      * Test the property 'frmTransactionType'
      */
     @Test
-    public void frmTransactionTypeTest() {
+    void frmTransactionTypeTest() {
         // TODO: test frmTransactionType
     }
 
@@ -69,7 +68,7 @@ public class FrmMessageTest {
      * Test the property 'frmStatus'
      */
     @Test
-    public void frmStatusTest() {
+    void frmStatusTest() {
         // TODO: test frmStatus
     }
 
@@ -77,7 +76,7 @@ public class FrmMessageTest {
      * Test the property 'frmScore'
      */
     @Test
-    public void frmScoreTest() {
+    void frmScoreTest() {
         // TODO: test frmScore
     }
 
@@ -85,7 +84,7 @@ public class FrmMessageTest {
      * Test the property 'frmReason'
      */
     @Test
-    public void frmReasonTest() {
+    void frmReasonTest() {
         // TODO: test frmReason
     }
 
@@ -93,7 +92,7 @@ public class FrmMessageTest {
      * Test the property 'frmError'
      */
     @Test
-    public void frmErrorTest() {
+    void frmErrorTest() {
         // TODO: test frmError
     }
 

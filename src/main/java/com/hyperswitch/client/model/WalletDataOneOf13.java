@@ -33,24 +33,25 @@ import java.util.StringJoiner;
   WalletDataOneOf13.JSON_PROPERTY_GOOGLE_PAY_THIRD_PARTY_SDK
 })
 @JsonTypeName("WalletData_oneOf_13")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class WalletDataOneOf13 {
   public static final String JSON_PROPERTY_GOOGLE_PAY_THIRD_PARTY_SDK = "google_pay_third_party_sdk";
+  @javax.annotation.Nonnull
   private Object googlePayThirdPartySdk;
 
   public WalletDataOneOf13() {
   }
 
-  public WalletDataOneOf13 googlePayThirdPartySdk(Object googlePayThirdPartySdk) {
+  public WalletDataOneOf13 googlePayThirdPartySdk(@javax.annotation.Nonnull Object googlePayThirdPartySdk) {
     
     this.googlePayThirdPartySdk = googlePayThirdPartySdk;
     return this;
   }
 
-   /**
+  /**
    * Get googlePayThirdPartySdk
    * @return googlePayThirdPartySdk
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_GOOGLE_PAY_THIRD_PARTY_SDK)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -62,7 +63,7 @@ public class WalletDataOneOf13 {
 
   @JsonProperty(JSON_PROPERTY_GOOGLE_PAY_THIRD_PARTY_SDK)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setGooglePayThirdPartySdk(Object googlePayThirdPartySdk) {
+  public void setGooglePayThirdPartySdk(@javax.annotation.Nonnull Object googlePayThirdPartySdk) {
     this.googlePayThirdPartySdk = googlePayThirdPartySdk;
   }
 

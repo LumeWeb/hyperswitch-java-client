@@ -49,57 +49,69 @@ import java.util.StringJoiner;
   CaptureResponse.JSON_PROPERTY_ERROR_REASON,
   CaptureResponse.JSON_PROPERTY_REFERENCE_ID
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class CaptureResponse {
   public static final String JSON_PROPERTY_CAPTURE_ID = "capture_id";
+  @javax.annotation.Nonnull
   private String captureId;
 
   public static final String JSON_PROPERTY_STATUS = "status";
+  @javax.annotation.Nonnull
   private CaptureStatus status;
 
   public static final String JSON_PROPERTY_AMOUNT = "amount";
+  @javax.annotation.Nonnull
   private Long amount;
 
   public static final String JSON_PROPERTY_CURRENCY = "currency";
+  @javax.annotation.Nullable
   private JsonNullable<Currency> currency = JsonNullable.<Currency>undefined();
 
   public static final String JSON_PROPERTY_CONNECTOR = "connector";
+  @javax.annotation.Nonnull
   private String connector;
 
   public static final String JSON_PROPERTY_AUTHORIZED_ATTEMPT_ID = "authorized_attempt_id";
+  @javax.annotation.Nonnull
   private String authorizedAttemptId;
 
   public static final String JSON_PROPERTY_CONNECTOR_CAPTURE_ID = "connector_capture_id";
+  @javax.annotation.Nullable
   private JsonNullable<String> connectorCaptureId = JsonNullable.<String>undefined();
 
   public static final String JSON_PROPERTY_CAPTURE_SEQUENCE = "capture_sequence";
+  @javax.annotation.Nonnull
   private Integer captureSequence;
 
   public static final String JSON_PROPERTY_ERROR_MESSAGE = "error_message";
+  @javax.annotation.Nullable
   private JsonNullable<String> errorMessage = JsonNullable.<String>undefined();
 
   public static final String JSON_PROPERTY_ERROR_CODE = "error_code";
+  @javax.annotation.Nullable
   private JsonNullable<String> errorCode = JsonNullable.<String>undefined();
 
   public static final String JSON_PROPERTY_ERROR_REASON = "error_reason";
+  @javax.annotation.Nullable
   private JsonNullable<String> errorReason = JsonNullable.<String>undefined();
 
   public static final String JSON_PROPERTY_REFERENCE_ID = "reference_id";
+  @javax.annotation.Nullable
   private JsonNullable<String> referenceId = JsonNullable.<String>undefined();
 
   public CaptureResponse() {
   }
 
-  public CaptureResponse captureId(String captureId) {
+  public CaptureResponse captureId(@javax.annotation.Nonnull String captureId) {
     
     this.captureId = captureId;
     return this;
   }
 
-   /**
+  /**
    * Unique identifier for the capture
    * @return captureId
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_CAPTURE_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -111,21 +123,20 @@ public class CaptureResponse {
 
   @JsonProperty(JSON_PROPERTY_CAPTURE_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setCaptureId(String captureId) {
+  public void setCaptureId(@javax.annotation.Nonnull String captureId) {
     this.captureId = captureId;
   }
 
-
-  public CaptureResponse status(CaptureStatus status) {
+  public CaptureResponse status(@javax.annotation.Nonnull CaptureStatus status) {
     
     this.status = status;
     return this;
   }
 
-   /**
+  /**
    * Get status
    * @return status
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_STATUS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -137,21 +148,20 @@ public class CaptureResponse {
 
   @JsonProperty(JSON_PROPERTY_STATUS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setStatus(CaptureStatus status) {
+  public void setStatus(@javax.annotation.Nonnull CaptureStatus status) {
     this.status = status;
   }
 
-
-  public CaptureResponse amount(Long amount) {
+  public CaptureResponse amount(@javax.annotation.Nonnull Long amount) {
     
     this.amount = amount;
     return this;
   }
 
-   /**
+  /**
    * The capture amount. Amount for the payment in lowest denomination of the currency. (i.e) in cents for USD denomination, in paisa for INR denomination etc.,
    * @return amount
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_AMOUNT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -163,21 +173,20 @@ public class CaptureResponse {
 
   @JsonProperty(JSON_PROPERTY_AMOUNT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setAmount(Long amount) {
+  public void setAmount(@javax.annotation.Nonnull Long amount) {
     this.amount = amount;
   }
 
-
-  public CaptureResponse currency(Currency currency) {
+  public CaptureResponse currency(@javax.annotation.Nullable Currency currency) {
     this.currency = JsonNullable.<Currency>of(currency);
     
     return this;
   }
 
-   /**
+  /**
    * Get currency
    * @return currency
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -197,21 +206,20 @@ public class CaptureResponse {
     this.currency = currency;
   }
 
-  public void setCurrency(Currency currency) {
+  public void setCurrency(@javax.annotation.Nullable Currency currency) {
     this.currency = JsonNullable.<Currency>of(currency);
   }
 
-
-  public CaptureResponse connector(String connector) {
+  public CaptureResponse connector(@javax.annotation.Nonnull String connector) {
     
     this.connector = connector;
     return this;
   }
 
-   /**
+  /**
    * The connector used for the payment
    * @return connector
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_CONNECTOR)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -223,21 +231,20 @@ public class CaptureResponse {
 
   @JsonProperty(JSON_PROPERTY_CONNECTOR)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setConnector(String connector) {
+  public void setConnector(@javax.annotation.Nonnull String connector) {
     this.connector = connector;
   }
 
-
-  public CaptureResponse authorizedAttemptId(String authorizedAttemptId) {
+  public CaptureResponse authorizedAttemptId(@javax.annotation.Nonnull String authorizedAttemptId) {
     
     this.authorizedAttemptId = authorizedAttemptId;
     return this;
   }
 
-   /**
+  /**
    * Unique identifier for the parent attempt on which this capture is made
    * @return authorizedAttemptId
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_AUTHORIZED_ATTEMPT_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -249,21 +256,20 @@ public class CaptureResponse {
 
   @JsonProperty(JSON_PROPERTY_AUTHORIZED_ATTEMPT_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setAuthorizedAttemptId(String authorizedAttemptId) {
+  public void setAuthorizedAttemptId(@javax.annotation.Nonnull String authorizedAttemptId) {
     this.authorizedAttemptId = authorizedAttemptId;
   }
 
-
-  public CaptureResponse connectorCaptureId(String connectorCaptureId) {
+  public CaptureResponse connectorCaptureId(@javax.annotation.Nullable String connectorCaptureId) {
     this.connectorCaptureId = JsonNullable.<String>of(connectorCaptureId);
     
     return this;
   }
 
-   /**
+  /**
    * A unique identifier for this capture provided by the connector
    * @return connectorCaptureId
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -283,21 +289,20 @@ public class CaptureResponse {
     this.connectorCaptureId = connectorCaptureId;
   }
 
-  public void setConnectorCaptureId(String connectorCaptureId) {
+  public void setConnectorCaptureId(@javax.annotation.Nullable String connectorCaptureId) {
     this.connectorCaptureId = JsonNullable.<String>of(connectorCaptureId);
   }
 
-
-  public CaptureResponse captureSequence(Integer captureSequence) {
+  public CaptureResponse captureSequence(@javax.annotation.Nonnull Integer captureSequence) {
     
     this.captureSequence = captureSequence;
     return this;
   }
 
-   /**
+  /**
    * Sequence number of this capture, in the series of captures made for the parent attempt
    * @return captureSequence
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_CAPTURE_SEQUENCE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -309,21 +314,20 @@ public class CaptureResponse {
 
   @JsonProperty(JSON_PROPERTY_CAPTURE_SEQUENCE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setCaptureSequence(Integer captureSequence) {
+  public void setCaptureSequence(@javax.annotation.Nonnull Integer captureSequence) {
     this.captureSequence = captureSequence;
   }
 
-
-  public CaptureResponse errorMessage(String errorMessage) {
+  public CaptureResponse errorMessage(@javax.annotation.Nullable String errorMessage) {
     this.errorMessage = JsonNullable.<String>of(errorMessage);
     
     return this;
   }
 
-   /**
+  /**
    * If there was an error while calling the connector the error message is received here
    * @return errorMessage
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -343,21 +347,20 @@ public class CaptureResponse {
     this.errorMessage = errorMessage;
   }
 
-  public void setErrorMessage(String errorMessage) {
+  public void setErrorMessage(@javax.annotation.Nullable String errorMessage) {
     this.errorMessage = JsonNullable.<String>of(errorMessage);
   }
 
-
-  public CaptureResponse errorCode(String errorCode) {
+  public CaptureResponse errorCode(@javax.annotation.Nullable String errorCode) {
     this.errorCode = JsonNullable.<String>of(errorCode);
     
     return this;
   }
 
-   /**
+  /**
    * If there was an error while calling the connectors the code is received here
    * @return errorCode
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -377,21 +380,20 @@ public class CaptureResponse {
     this.errorCode = errorCode;
   }
 
-  public void setErrorCode(String errorCode) {
+  public void setErrorCode(@javax.annotation.Nullable String errorCode) {
     this.errorCode = JsonNullable.<String>of(errorCode);
   }
 
-
-  public CaptureResponse errorReason(String errorReason) {
+  public CaptureResponse errorReason(@javax.annotation.Nullable String errorReason) {
     this.errorReason = JsonNullable.<String>of(errorReason);
     
     return this;
   }
 
-   /**
+  /**
    * If there was an error while calling the connectors the reason is received here
    * @return errorReason
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -411,21 +413,20 @@ public class CaptureResponse {
     this.errorReason = errorReason;
   }
 
-  public void setErrorReason(String errorReason) {
+  public void setErrorReason(@javax.annotation.Nullable String errorReason) {
     this.errorReason = JsonNullable.<String>of(errorReason);
   }
 
-
-  public CaptureResponse referenceId(String referenceId) {
+  public CaptureResponse referenceId(@javax.annotation.Nullable String referenceId) {
     this.referenceId = JsonNullable.<String>of(referenceId);
     
     return this;
   }
 
-   /**
+  /**
    * Reference to the capture at connector side
    * @return referenceId
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -445,7 +446,7 @@ public class CaptureResponse {
     this.referenceId = referenceId;
   }
 
-  public void setReferenceId(String referenceId) {
+  public void setReferenceId(@javax.annotation.Nullable String referenceId) {
     this.referenceId = JsonNullable.<String>of(referenceId);
   }
 

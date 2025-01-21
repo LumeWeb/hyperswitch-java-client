@@ -34,24 +34,25 @@ import java.util.StringJoiner;
   BankTransferDataOneOf4.JSON_PROPERTY_PERMATA_BANK_TRANSFER
 })
 @JsonTypeName("BankTransferData_oneOf_4")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class BankTransferDataOneOf4 {
   public static final String JSON_PROPERTY_PERMATA_BANK_TRANSFER = "permata_bank_transfer";
+  @javax.annotation.Nonnull
   private BankTransferDataOneOf4PermataBankTransfer permataBankTransfer;
 
   public BankTransferDataOneOf4() {
   }
 
-  public BankTransferDataOneOf4 permataBankTransfer(BankTransferDataOneOf4PermataBankTransfer permataBankTransfer) {
+  public BankTransferDataOneOf4 permataBankTransfer(@javax.annotation.Nonnull BankTransferDataOneOf4PermataBankTransfer permataBankTransfer) {
     
     this.permataBankTransfer = permataBankTransfer;
     return this;
   }
 
-   /**
+  /**
    * Get permataBankTransfer
    * @return permataBankTransfer
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_PERMATA_BANK_TRANSFER)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -63,7 +64,7 @@ public class BankTransferDataOneOf4 {
 
   @JsonProperty(JSON_PROPERTY_PERMATA_BANK_TRANSFER)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setPermataBankTransfer(BankTransferDataOneOf4PermataBankTransfer permataBankTransfer) {
+  public void setPermataBankTransfer(@javax.annotation.Nonnull BankTransferDataOneOf4PermataBankTransfer permataBankTransfer) {
     this.permataBankTransfer = permataBankTransfer;
   }
 

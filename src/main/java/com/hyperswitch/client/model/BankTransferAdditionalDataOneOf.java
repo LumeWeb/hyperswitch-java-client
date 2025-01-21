@@ -33,24 +33,25 @@ import java.util.StringJoiner;
   BankTransferAdditionalDataOneOf.JSON_PROPERTY_ACH
 })
 @JsonTypeName("BankTransferAdditionalData_oneOf")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class BankTransferAdditionalDataOneOf {
   public static final String JSON_PROPERTY_ACH = "ach";
+  @javax.annotation.Nonnull
   private Object ach;
 
   public BankTransferAdditionalDataOneOf() {
   }
 
-  public BankTransferAdditionalDataOneOf ach(Object ach) {
+  public BankTransferAdditionalDataOneOf ach(@javax.annotation.Nonnull Object ach) {
     
     this.ach = ach;
     return this;
   }
 
-   /**
+  /**
    * Get ach
    * @return ach
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_ACH)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -62,7 +63,7 @@ public class BankTransferAdditionalDataOneOf {
 
   @JsonProperty(JSON_PROPERTY_ACH)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setAch(Object ach) {
+  public void setAch(@javax.annotation.Nonnull Object ach) {
     this.ach = ach;
   }
 

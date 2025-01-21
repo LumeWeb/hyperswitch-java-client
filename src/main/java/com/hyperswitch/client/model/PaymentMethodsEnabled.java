@@ -23,6 +23,7 @@ import com.fasterxml.jackson.annotation.JsonValue;
 import com.hyperswitch.client.model.PaymentMethod;
 import com.hyperswitch.client.model.RequestPaymentMethodTypes;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import org.openapitools.jackson.nullable.JsonNullable;
 import com.fasterxml.jackson.annotation.JsonIgnore;
@@ -41,27 +42,29 @@ import java.util.StringJoiner;
   PaymentMethodsEnabled.JSON_PROPERTY_PAYMENT_METHOD,
   PaymentMethodsEnabled.JSON_PROPERTY_PAYMENT_METHOD_TYPES
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class PaymentMethodsEnabled {
   public static final String JSON_PROPERTY_PAYMENT_METHOD = "payment_method";
+  @javax.annotation.Nonnull
   private PaymentMethod paymentMethod;
 
   public static final String JSON_PROPERTY_PAYMENT_METHOD_TYPES = "payment_method_types";
+  @javax.annotation.Nullable
   private JsonNullable<List<RequestPaymentMethodTypes>> paymentMethodTypes = JsonNullable.<List<RequestPaymentMethodTypes>>undefined();
 
   public PaymentMethodsEnabled() {
   }
 
-  public PaymentMethodsEnabled paymentMethod(PaymentMethod paymentMethod) {
+  public PaymentMethodsEnabled paymentMethod(@javax.annotation.Nonnull PaymentMethod paymentMethod) {
     
     this.paymentMethod = paymentMethod;
     return this;
   }
 
-   /**
+  /**
    * Get paymentMethod
    * @return paymentMethod
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_PAYMENT_METHOD)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -73,12 +76,11 @@ public class PaymentMethodsEnabled {
 
   @JsonProperty(JSON_PROPERTY_PAYMENT_METHOD)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setPaymentMethod(PaymentMethod paymentMethod) {
+  public void setPaymentMethod(@javax.annotation.Nonnull PaymentMethod paymentMethod) {
     this.paymentMethod = paymentMethod;
   }
 
-
-  public PaymentMethodsEnabled paymentMethodTypes(List<RequestPaymentMethodTypes> paymentMethodTypes) {
+  public PaymentMethodsEnabled paymentMethodTypes(@javax.annotation.Nullable List<RequestPaymentMethodTypes> paymentMethodTypes) {
     this.paymentMethodTypes = JsonNullable.<List<RequestPaymentMethodTypes>>of(paymentMethodTypes);
     
     return this;
@@ -96,10 +98,10 @@ public class PaymentMethodsEnabled {
     return this;
   }
 
-   /**
+  /**
    * Subtype of payment method
    * @return paymentMethodTypes
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -119,7 +121,7 @@ public class PaymentMethodsEnabled {
     this.paymentMethodTypes = paymentMethodTypes;
   }
 
-  public void setPaymentMethodTypes(List<RequestPaymentMethodTypes> paymentMethodTypes) {
+  public void setPaymentMethodTypes(@javax.annotation.Nullable List<RequestPaymentMethodTypes> paymentMethodTypes) {
     this.paymentMethodTypes = JsonNullable.<List<RequestPaymentMethodTypes>>of(paymentMethodTypes);
   }
 

@@ -20,23 +20,23 @@ import com.fasterxml.jackson.annotation.JsonTypeName;
 import com.fasterxml.jackson.annotation.JsonValue;
 import com.hyperswitch.client.model.NumberComparison;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
-import org.junit.Assert;
-import org.junit.Ignore;
-import org.junit.Test;
-
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Test;
 
 /**
  * Model tests for ValueTypeOneOf6
  */
-public class ValueTypeOneOf6Test {
+class ValueTypeOneOf6Test {
     private final ValueTypeOneOf6 model = new ValueTypeOneOf6();
 
     /**
      * Model tests for ValueTypeOneOf6
      */
     @Test
-    public void testValueTypeOneOf6() {
+    void testValueTypeOneOf6() {
         // TODO: test ValueTypeOneOf6
     }
 
@@ -44,7 +44,7 @@ public class ValueTypeOneOf6Test {
      * Test the property 'type'
      */
     @Test
-    public void typeTest() {
+    void typeTest() {
         // TODO: test type
     }
 
@@ -52,7 +52,7 @@ public class ValueTypeOneOf6Test {
      * Test the property 'value'
      */
     @Test
-    public void valueTest() {
+    void valueTest() {
         // TODO: test value
     }
 

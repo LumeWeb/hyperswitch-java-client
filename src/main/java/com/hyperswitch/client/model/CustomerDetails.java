@@ -40,36 +40,41 @@ import java.util.StringJoiner;
   CustomerDetails.JSON_PROPERTY_PHONE,
   CustomerDetails.JSON_PROPERTY_PHONE_COUNTRY_CODE
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class CustomerDetails {
   public static final String JSON_PROPERTY_ID = "id";
+  @javax.annotation.Nonnull
   private String id;
 
   public static final String JSON_PROPERTY_NAME = "name";
+  @javax.annotation.Nullable
   private JsonNullable<String> name = JsonNullable.<String>undefined();
 
   public static final String JSON_PROPERTY_EMAIL = "email";
+  @javax.annotation.Nullable
   private JsonNullable<String> email = JsonNullable.<String>undefined();
 
   public static final String JSON_PROPERTY_PHONE = "phone";
+  @javax.annotation.Nullable
   private JsonNullable<String> phone = JsonNullable.<String>undefined();
 
   public static final String JSON_PROPERTY_PHONE_COUNTRY_CODE = "phone_country_code";
+  @javax.annotation.Nullable
   private JsonNullable<String> phoneCountryCode = JsonNullable.<String>undefined();
 
   public CustomerDetails() {
   }
 
-  public CustomerDetails id(String id) {
+  public CustomerDetails id(@javax.annotation.Nonnull String id) {
     
     this.id = id;
     return this;
   }
 
-   /**
+  /**
    * The identifier for the customer.
    * @return id
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -81,21 +86,20 @@ public class CustomerDetails {
 
   @JsonProperty(JSON_PROPERTY_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setId(String id) {
+  public void setId(@javax.annotation.Nonnull String id) {
     this.id = id;
   }
 
-
-  public CustomerDetails name(String name) {
+  public CustomerDetails name(@javax.annotation.Nullable String name) {
     this.name = JsonNullable.<String>of(name);
     
     return this;
   }
 
-   /**
+  /**
    * The customer&#39;s name
    * @return name
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -115,21 +119,20 @@ public class CustomerDetails {
     this.name = name;
   }
 
-  public void setName(String name) {
+  public void setName(@javax.annotation.Nullable String name) {
     this.name = JsonNullable.<String>of(name);
   }
 
-
-  public CustomerDetails email(String email) {
+  public CustomerDetails email(@javax.annotation.Nullable String email) {
     this.email = JsonNullable.<String>of(email);
     
     return this;
   }
 
-   /**
+  /**
    * The customer&#39;s email address
    * @return email
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -149,21 +152,20 @@ public class CustomerDetails {
     this.email = email;
   }
 
-  public void setEmail(String email) {
+  public void setEmail(@javax.annotation.Nullable String email) {
     this.email = JsonNullable.<String>of(email);
   }
 
-
-  public CustomerDetails phone(String phone) {
+  public CustomerDetails phone(@javax.annotation.Nullable String phone) {
     this.phone = JsonNullable.<String>of(phone);
     
     return this;
   }
 
-   /**
+  /**
    * The customer&#39;s phone number
    * @return phone
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -183,21 +185,20 @@ public class CustomerDetails {
     this.phone = phone;
   }
 
-  public void setPhone(String phone) {
+  public void setPhone(@javax.annotation.Nullable String phone) {
     this.phone = JsonNullable.<String>of(phone);
   }
 
-
-  public CustomerDetails phoneCountryCode(String phoneCountryCode) {
+  public CustomerDetails phoneCountryCode(@javax.annotation.Nullable String phoneCountryCode) {
     this.phoneCountryCode = JsonNullable.<String>of(phoneCountryCode);
     
     return this;
   }
 
-   /**
+  /**
    * The country code for the customer&#39;s phone number
    * @return phoneCountryCode
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -217,7 +218,7 @@ public class CustomerDetails {
     this.phoneCountryCode = phoneCountryCode;
   }
 
-  public void setPhoneCountryCode(String phoneCountryCode) {
+  public void setPhoneCountryCode(@javax.annotation.Nullable String phoneCountryCode) {
     this.phoneCountryCode = JsonNullable.<String>of(phoneCountryCode);
   }
 

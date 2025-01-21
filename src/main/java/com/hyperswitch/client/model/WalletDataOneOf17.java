@@ -34,24 +34,25 @@ import java.util.StringJoiner;
   WalletDataOneOf17.JSON_PROPERTY_PAYPAL_SDK
 })
 @JsonTypeName("WalletData_oneOf_17")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class WalletDataOneOf17 {
   public static final String JSON_PROPERTY_PAYPAL_SDK = "paypal_sdk";
+  @javax.annotation.Nonnull
   private PayPalWalletData paypalSdk;
 
   public WalletDataOneOf17() {
   }
 
-  public WalletDataOneOf17 paypalSdk(PayPalWalletData paypalSdk) {
+  public WalletDataOneOf17 paypalSdk(@javax.annotation.Nonnull PayPalWalletData paypalSdk) {
     
     this.paypalSdk = paypalSdk;
     return this;
   }
 
-   /**
+  /**
    * Get paypalSdk
    * @return paypalSdk
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_PAYPAL_SDK)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -63,7 +64,7 @@ public class WalletDataOneOf17 {
 
   @JsonProperty(JSON_PROPERTY_PAYPAL_SDK)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setPaypalSdk(PayPalWalletData paypalSdk) {
+  public void setPaypalSdk(@javax.annotation.Nonnull PayPalWalletData paypalSdk) {
     this.paypalSdk = paypalSdk;
   }
 

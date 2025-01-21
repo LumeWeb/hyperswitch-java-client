@@ -34,24 +34,25 @@ import java.util.StringJoiner;
   VoucherDataOneOf.JSON_PROPERTY_BOLETO
 })
 @JsonTypeName("VoucherData_oneOf")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class VoucherDataOneOf {
   public static final String JSON_PROPERTY_BOLETO = "boleto";
+  @javax.annotation.Nonnull
   private BoletoVoucherData boleto;
 
   public VoucherDataOneOf() {
   }
 
-  public VoucherDataOneOf boleto(BoletoVoucherData boleto) {
+  public VoucherDataOneOf boleto(@javax.annotation.Nonnull BoletoVoucherData boleto) {
     
     this.boleto = boleto;
     return this;
   }
 
-   /**
+  /**
    * Get boleto
    * @return boleto
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_BOLETO)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -63,7 +64,7 @@ public class VoucherDataOneOf {
 
   @JsonProperty(JSON_PROPERTY_BOLETO)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setBoleto(BoletoVoucherData boleto) {
+  public void setBoleto(@javax.annotation.Nonnull BoletoVoucherData boleto) {
     this.boleto = boleto;
   }
 

@@ -38,30 +38,33 @@ import java.util.StringJoiner;
   AlfamartVoucherData.JSON_PROPERTY_LAST_NAME,
   AlfamartVoucherData.JSON_PROPERTY_EMAIL
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class AlfamartVoucherData {
   public static final String JSON_PROPERTY_FIRST_NAME = "first_name";
+  @javax.annotation.Nullable
   private JsonNullable<String> firstName = JsonNullable.<String>undefined();
 
   public static final String JSON_PROPERTY_LAST_NAME = "last_name";
+  @javax.annotation.Nullable
   private JsonNullable<String> lastName = JsonNullable.<String>undefined();
 
   public static final String JSON_PROPERTY_EMAIL = "email";
+  @javax.annotation.Nullable
   private JsonNullable<String> email = JsonNullable.<String>undefined();
 
   public AlfamartVoucherData() {
   }
 
-  public AlfamartVoucherData firstName(String firstName) {
+  public AlfamartVoucherData firstName(@javax.annotation.Nullable String firstName) {
     this.firstName = JsonNullable.<String>of(firstName);
     
     return this;
   }
 
-   /**
+  /**
    * The billing first name for Alfamart
    * @return firstName
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -81,21 +84,20 @@ public class AlfamartVoucherData {
     this.firstName = firstName;
   }
 
-  public void setFirstName(String firstName) {
+  public void setFirstName(@javax.annotation.Nullable String firstName) {
     this.firstName = JsonNullable.<String>of(firstName);
   }
 
-
-  public AlfamartVoucherData lastName(String lastName) {
+  public AlfamartVoucherData lastName(@javax.annotation.Nullable String lastName) {
     this.lastName = JsonNullable.<String>of(lastName);
     
     return this;
   }
 
-   /**
+  /**
    * The billing second name for Alfamart
    * @return lastName
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -115,21 +117,20 @@ public class AlfamartVoucherData {
     this.lastName = lastName;
   }
 
-  public void setLastName(String lastName) {
+  public void setLastName(@javax.annotation.Nullable String lastName) {
     this.lastName = JsonNullable.<String>of(lastName);
   }
 
-
-  public AlfamartVoucherData email(String email) {
+  public AlfamartVoucherData email(@javax.annotation.Nullable String email) {
     this.email = JsonNullable.<String>of(email);
     
     return this;
   }
 
-   /**
+  /**
    * The Email ID for Alfamart
    * @return email
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -149,7 +150,7 @@ public class AlfamartVoucherData {
     this.email = email;
   }
 
-  public void setEmail(String email) {
+  public void setEmail(@javax.annotation.Nullable String email) {
     this.email = JsonNullable.<String>of(email);
   }
 

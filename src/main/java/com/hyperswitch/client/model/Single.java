@@ -34,13 +34,13 @@ import java.util.StringJoiner;
   Single.JSON_PROPERTY_TYPE,
   Single.JSON_PROPERTY_DATA
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class Single {
   /**
    * Gets or Sets type
    */
   public enum TypeEnum {
-    SINGLE("single");
+    SINGLE(String.valueOf("single"));
 
     private String value;
 
@@ -70,24 +70,26 @@ public class Single {
   }
 
   public static final String JSON_PROPERTY_TYPE = "type";
+  @javax.annotation.Nonnull
   private TypeEnum type;
 
   public static final String JSON_PROPERTY_DATA = "data";
+  @javax.annotation.Nonnull
   private RoutableConnectorChoice data;
 
   public Single() {
   }
 
-  public Single type(TypeEnum type) {
+  public Single type(@javax.annotation.Nonnull TypeEnum type) {
     
     this.type = type;
     return this;
   }
 
-   /**
+  /**
    * Get type
    * @return type
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_TYPE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -99,21 +101,20 @@ public class Single {
 
   @JsonProperty(JSON_PROPERTY_TYPE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setType(TypeEnum type) {
+  public void setType(@javax.annotation.Nonnull TypeEnum type) {
     this.type = type;
   }
 
-
-  public Single data(RoutableConnectorChoice data) {
+  public Single data(@javax.annotation.Nonnull RoutableConnectorChoice data) {
     
     this.data = data;
     return this;
   }
 
-   /**
+  /**
    * Get data
    * @return data
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_DATA)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -125,7 +126,7 @@ public class Single {
 
   @JsonProperty(JSON_PROPERTY_DATA)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setData(RoutableConnectorChoice data) {
+  public void setData(@javax.annotation.Nonnull RoutableConnectorChoice data) {
     this.data = data;
   }
 

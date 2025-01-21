@@ -18,22 +18,21 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonTypeName;
 import com.fasterxml.jackson.annotation.JsonValue;
-import org.junit.Assert;
-import org.junit.Ignore;
-import org.junit.Test;
-
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Test;
 
 /**
  * Model tests for PayLaterDataOneOf4
  */
-public class PayLaterDataOneOf4Test {
+class PayLaterDataOneOf4Test {
     private final PayLaterDataOneOf4 model = new PayLaterDataOneOf4();
 
     /**
      * Model tests for PayLaterDataOneOf4
      */
     @Test
-    public void testPayLaterDataOneOf4() {
+    void testPayLaterDataOneOf4() {
         // TODO: test PayLaterDataOneOf4
     }
 
@@ -41,7 +40,7 @@ public class PayLaterDataOneOf4Test {
      * Test the property 'payBrightRedirect'
      */
     @Test
-    public void payBrightRedirectTest() {
+    void payBrightRedirectTest() {
         // TODO: test payBrightRedirect
     }
 

@@ -24,6 +24,7 @@ import com.hyperswitch.client.model.SamsungPayAmountDetails;
 import com.hyperswitch.client.model.SamsungPayMerchantPaymentInformation;
 import com.hyperswitch.client.model.SamsungPayProtocolType;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 import com.fasterxml.jackson.annotation.JsonTypeName;
@@ -45,34 +46,41 @@ import java.util.StringJoiner;
   SessionTokenOneOf1.JSON_PROPERTY_WALLET_NAME
 })
 @JsonTypeName("SessionToken_oneOf_1")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class SessionTokenOneOf1 {
   public static final String JSON_PROPERTY_VERSION = "version";
+  @javax.annotation.Nonnull
   private String version;
 
   public static final String JSON_PROPERTY_SERVICE_ID = "service_id";
+  @javax.annotation.Nonnull
   private String serviceId;
 
   public static final String JSON_PROPERTY_ORDER_NUMBER = "order_number";
+  @javax.annotation.Nonnull
   private String orderNumber;
 
   public static final String JSON_PROPERTY_MERCHANT = "merchant";
+  @javax.annotation.Nonnull
   private SamsungPayMerchantPaymentInformation merchant;
 
   public static final String JSON_PROPERTY_AMOUNT = "amount";
+  @javax.annotation.Nonnull
   private SamsungPayAmountDetails amount;
 
   public static final String JSON_PROPERTY_PROTOCOL = "protocol";
+  @javax.annotation.Nonnull
   private SamsungPayProtocolType protocol;
 
   public static final String JSON_PROPERTY_ALLOWED_BRANDS = "allowed_brands";
+  @javax.annotation.Nonnull
   private List<String> allowedBrands = new ArrayList<>();
 
   /**
    * Gets or Sets walletName
    */
   public enum WalletNameEnum {
-    SAMSUNG_PAY("samsung_pay");
+    SAMSUNG_PAY(String.valueOf("samsung_pay"));
 
     private String value;
 
@@ -102,21 +110,22 @@ public class SessionTokenOneOf1 {
   }
 
   public static final String JSON_PROPERTY_WALLET_NAME = "wallet_name";
+  @javax.annotation.Nonnull
   private WalletNameEnum walletName;
 
   public SessionTokenOneOf1() {
   }
 
-  public SessionTokenOneOf1 version(String version) {
+  public SessionTokenOneOf1 version(@javax.annotation.Nonnull String version) {
     
     this.version = version;
     return this;
   }
 
-   /**
+  /**
    * Samsung Pay API version
    * @return version
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_VERSION)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -128,21 +137,20 @@ public class SessionTokenOneOf1 {
 
   @JsonProperty(JSON_PROPERTY_VERSION)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setVersion(String version) {
+  public void setVersion(@javax.annotation.Nonnull String version) {
     this.version = version;
   }
 
-
-  public SessionTokenOneOf1 serviceId(String serviceId) {
+  public SessionTokenOneOf1 serviceId(@javax.annotation.Nonnull String serviceId) {
     
     this.serviceId = serviceId;
     return this;
   }
 
-   /**
+  /**
    * Samsung Pay service ID to which session call needs to be made
    * @return serviceId
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_SERVICE_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -154,21 +162,20 @@ public class SessionTokenOneOf1 {
 
   @JsonProperty(JSON_PROPERTY_SERVICE_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setServiceId(String serviceId) {
+  public void setServiceId(@javax.annotation.Nonnull String serviceId) {
     this.serviceId = serviceId;
   }
 
-
-  public SessionTokenOneOf1 orderNumber(String orderNumber) {
+  public SessionTokenOneOf1 orderNumber(@javax.annotation.Nonnull String orderNumber) {
     
     this.orderNumber = orderNumber;
     return this;
   }
 
-   /**
+  /**
    * Order number of the transaction
    * @return orderNumber
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_ORDER_NUMBER)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -180,21 +187,20 @@ public class SessionTokenOneOf1 {
 
   @JsonProperty(JSON_PROPERTY_ORDER_NUMBER)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setOrderNumber(String orderNumber) {
+  public void setOrderNumber(@javax.annotation.Nonnull String orderNumber) {
     this.orderNumber = orderNumber;
   }
 
-
-  public SessionTokenOneOf1 merchant(SamsungPayMerchantPaymentInformation merchant) {
+  public SessionTokenOneOf1 merchant(@javax.annotation.Nonnull SamsungPayMerchantPaymentInformation merchant) {
     
     this.merchant = merchant;
     return this;
   }
 
-   /**
+  /**
    * Get merchant
    * @return merchant
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_MERCHANT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -206,21 +212,20 @@ public class SessionTokenOneOf1 {
 
   @JsonProperty(JSON_PROPERTY_MERCHANT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setMerchant(SamsungPayMerchantPaymentInformation merchant) {
+  public void setMerchant(@javax.annotation.Nonnull SamsungPayMerchantPaymentInformation merchant) {
     this.merchant = merchant;
   }
 
-
-  public SessionTokenOneOf1 amount(SamsungPayAmountDetails amount) {
+  public SessionTokenOneOf1 amount(@javax.annotation.Nonnull SamsungPayAmountDetails amount) {
     
     this.amount = amount;
     return this;
   }
 
-   /**
+  /**
    * Get amount
    * @return amount
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_AMOUNT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -232,21 +237,20 @@ public class SessionTokenOneOf1 {
 
   @JsonProperty(JSON_PROPERTY_AMOUNT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setAmount(SamsungPayAmountDetails amount) {
+  public void setAmount(@javax.annotation.Nonnull SamsungPayAmountDetails amount) {
     this.amount = amount;
   }
 
-
-  public SessionTokenOneOf1 protocol(SamsungPayProtocolType protocol) {
+  public SessionTokenOneOf1 protocol(@javax.annotation.Nonnull SamsungPayProtocolType protocol) {
     
     this.protocol = protocol;
     return this;
   }
 
-   /**
+  /**
    * Get protocol
    * @return protocol
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_PROTOCOL)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -258,12 +262,11 @@ public class SessionTokenOneOf1 {
 
   @JsonProperty(JSON_PROPERTY_PROTOCOL)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setProtocol(SamsungPayProtocolType protocol) {
+  public void setProtocol(@javax.annotation.Nonnull SamsungPayProtocolType protocol) {
     this.protocol = protocol;
   }
 
-
-  public SessionTokenOneOf1 allowedBrands(List<String> allowedBrands) {
+  public SessionTokenOneOf1 allowedBrands(@javax.annotation.Nonnull List<String> allowedBrands) {
     
     this.allowedBrands = allowedBrands;
     return this;
@@ -277,10 +280,10 @@ public class SessionTokenOneOf1 {
     return this;
   }
 
-   /**
+  /**
    * List of supported card brands
    * @return allowedBrands
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_ALLOWED_BRANDS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -292,21 +295,20 @@ public class SessionTokenOneOf1 {
 
   @JsonProperty(JSON_PROPERTY_ALLOWED_BRANDS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setAllowedBrands(List<String> allowedBrands) {
+  public void setAllowedBrands(@javax.annotation.Nonnull List<String> allowedBrands) {
     this.allowedBrands = allowedBrands;
   }
 
-
-  public SessionTokenOneOf1 walletName(WalletNameEnum walletName) {
+  public SessionTokenOneOf1 walletName(@javax.annotation.Nonnull WalletNameEnum walletName) {
     
     this.walletName = walletName;
     return this;
   }
 
-   /**
+  /**
    * Get walletName
    * @return walletName
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_WALLET_NAME)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -318,7 +320,7 @@ public class SessionTokenOneOf1 {
 
   @JsonProperty(JSON_PROPERTY_WALLET_NAME)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setWalletName(WalletNameEnum walletName) {
+  public void setWalletName(@javax.annotation.Nonnull WalletNameEnum walletName) {
     this.walletName = walletName;
   }
 

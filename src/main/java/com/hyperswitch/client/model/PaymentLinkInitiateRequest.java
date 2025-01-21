@@ -33,27 +33,29 @@ import java.util.StringJoiner;
   PaymentLinkInitiateRequest.JSON_PROPERTY_MERCHANT_ID,
   PaymentLinkInitiateRequest.JSON_PROPERTY_PAYMENT_ID
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class PaymentLinkInitiateRequest {
   public static final String JSON_PROPERTY_MERCHANT_ID = "merchant_id";
+  @javax.annotation.Nonnull
   private String merchantId;
 
   public static final String JSON_PROPERTY_PAYMENT_ID = "payment_id";
+  @javax.annotation.Nonnull
   private String paymentId;
 
   public PaymentLinkInitiateRequest() {
   }
 
-  public PaymentLinkInitiateRequest merchantId(String merchantId) {
+  public PaymentLinkInitiateRequest merchantId(@javax.annotation.Nonnull String merchantId) {
     
     this.merchantId = merchantId;
     return this;
   }
 
-   /**
+  /**
    * Get merchantId
    * @return merchantId
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_MERCHANT_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -65,21 +67,20 @@ public class PaymentLinkInitiateRequest {
 
   @JsonProperty(JSON_PROPERTY_MERCHANT_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setMerchantId(String merchantId) {
+  public void setMerchantId(@javax.annotation.Nonnull String merchantId) {
     this.merchantId = merchantId;
   }
 
-
-  public PaymentLinkInitiateRequest paymentId(String paymentId) {
+  public PaymentLinkInitiateRequest paymentId(@javax.annotation.Nonnull String paymentId) {
     
     this.paymentId = paymentId;
     return this;
   }
 
-   /**
+  /**
    * Get paymentId
    * @return paymentId
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_PAYMENT_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -91,7 +92,7 @@ public class PaymentLinkInitiateRequest {
 
   @JsonProperty(JSON_PROPERTY_PAYMENT_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setPaymentId(String paymentId) {
+  public void setPaymentId(@javax.annotation.Nonnull String paymentId) {
     this.paymentId = paymentId;
   }
 

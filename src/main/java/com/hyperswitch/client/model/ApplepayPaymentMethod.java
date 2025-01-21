@@ -34,30 +34,33 @@ import java.util.StringJoiner;
   ApplepayPaymentMethod.JSON_PROPERTY_NETWORK,
   ApplepayPaymentMethod.JSON_PROPERTY_TYPE
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class ApplepayPaymentMethod {
   public static final String JSON_PROPERTY_DISPLAY_NAME = "display_name";
+  @javax.annotation.Nonnull
   private String displayName;
 
   public static final String JSON_PROPERTY_NETWORK = "network";
+  @javax.annotation.Nonnull
   private String network;
 
   public static final String JSON_PROPERTY_TYPE = "type";
+  @javax.annotation.Nonnull
   private String type;
 
   public ApplepayPaymentMethod() {
   }
 
-  public ApplepayPaymentMethod displayName(String displayName) {
+  public ApplepayPaymentMethod displayName(@javax.annotation.Nonnull String displayName) {
     
     this.displayName = displayName;
     return this;
   }
 
-   /**
+  /**
    * The name to be displayed on Apple Pay button
    * @return displayName
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_DISPLAY_NAME)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -69,21 +72,20 @@ public class ApplepayPaymentMethod {
 
   @JsonProperty(JSON_PROPERTY_DISPLAY_NAME)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setDisplayName(String displayName) {
+  public void setDisplayName(@javax.annotation.Nonnull String displayName) {
     this.displayName = displayName;
   }
 
-
-  public ApplepayPaymentMethod network(String network) {
+  public ApplepayPaymentMethod network(@javax.annotation.Nonnull String network) {
     
     this.network = network;
     return this;
   }
 
-   /**
+  /**
    * The network of the Apple pay payment method
    * @return network
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_NETWORK)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -95,21 +97,20 @@ public class ApplepayPaymentMethod {
 
   @JsonProperty(JSON_PROPERTY_NETWORK)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setNetwork(String network) {
+  public void setNetwork(@javax.annotation.Nonnull String network) {
     this.network = network;
   }
 
-
-  public ApplepayPaymentMethod type(String type) {
+  public ApplepayPaymentMethod type(@javax.annotation.Nonnull String type) {
     
     this.type = type;
     return this;
   }
 
-   /**
+  /**
    * The type of the payment method
    * @return type
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_TYPE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -121,7 +122,7 @@ public class ApplepayPaymentMethod {
 
   @JsonProperty(JSON_PROPERTY_TYPE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setType(String type) {
+  public void setType(@javax.annotation.Nonnull String type) {
     this.type = type;
   }
 

@@ -34,13 +34,13 @@ import java.util.StringJoiner;
   SurchargeResponseOneOf.JSON_PROPERTY_VALUE
 })
 @JsonTypeName("SurchargeResponse_oneOf")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class SurchargeResponseOneOf {
   /**
    * Gets or Sets type
    */
   public enum TypeEnum {
-    FIXED("fixed");
+    FIXED(String.valueOf("fixed"));
 
     private String value;
 
@@ -70,24 +70,26 @@ public class SurchargeResponseOneOf {
   }
 
   public static final String JSON_PROPERTY_TYPE = "type";
+  @javax.annotation.Nonnull
   private TypeEnum type;
 
   public static final String JSON_PROPERTY_VALUE = "value";
+  @javax.annotation.Nonnull
   private Long value;
 
   public SurchargeResponseOneOf() {
   }
 
-  public SurchargeResponseOneOf type(TypeEnum type) {
+  public SurchargeResponseOneOf type(@javax.annotation.Nonnull TypeEnum type) {
     
     this.type = type;
     return this;
   }
 
-   /**
+  /**
    * Get type
    * @return type
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_TYPE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -99,21 +101,20 @@ public class SurchargeResponseOneOf {
 
   @JsonProperty(JSON_PROPERTY_TYPE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setType(TypeEnum type) {
+  public void setType(@javax.annotation.Nonnull TypeEnum type) {
     this.type = type;
   }
 
-
-  public SurchargeResponseOneOf value(Long value) {
+  public SurchargeResponseOneOf value(@javax.annotation.Nonnull Long value) {
     
     this.value = value;
     return this;
   }
 
-   /**
+  /**
    * This Unit struct represents MinorUnit in which core amount works
    * @return value
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_VALUE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -125,7 +126,7 @@ public class SurchargeResponseOneOf {
 
   @JsonProperty(JSON_PROPERTY_VALUE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setValue(Long value) {
+  public void setValue(@javax.annotation.Nonnull Long value) {
     this.value = value;
   }
 

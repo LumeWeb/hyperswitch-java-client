@@ -34,24 +34,25 @@ import java.util.StringJoiner;
   WalletDataOneOf16.JSON_PROPERTY_PAYPAL_REDIRECT
 })
 @JsonTypeName("WalletData_oneOf_16")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class WalletDataOneOf16 {
   public static final String JSON_PROPERTY_PAYPAL_REDIRECT = "paypal_redirect";
+  @javax.annotation.Nonnull
   private PaypalRedirection paypalRedirect;
 
   public WalletDataOneOf16() {
   }
 
-  public WalletDataOneOf16 paypalRedirect(PaypalRedirection paypalRedirect) {
+  public WalletDataOneOf16 paypalRedirect(@javax.annotation.Nonnull PaypalRedirection paypalRedirect) {
     
     this.paypalRedirect = paypalRedirect;
     return this;
   }
 
-   /**
+  /**
    * Get paypalRedirect
    * @return paypalRedirect
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_PAYPAL_REDIRECT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -63,7 +64,7 @@ public class WalletDataOneOf16 {
 
   @JsonProperty(JSON_PROPERTY_PAYPAL_REDIRECT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setPaypalRedirect(PaypalRedirection paypalRedirect) {
+  public void setPaypalRedirect(@javax.annotation.Nonnull PaypalRedirection paypalRedirect) {
     this.paypalRedirect = paypalRedirect;
   }
 

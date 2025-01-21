@@ -34,27 +34,29 @@ import java.util.StringJoiner;
   UpiResponse.JSON_PROPERTY_UPI_COLLECT,
   UpiResponse.JSON_PROPERTY_UPI_INTENT
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class UpiResponse {
   public static final String JSON_PROPERTY_UPI_COLLECT = "upi_collect";
+  @javax.annotation.Nonnull
   private UpiCollectAdditionalData upiCollect;
 
   public static final String JSON_PROPERTY_UPI_INTENT = "upi_intent";
+  @javax.annotation.Nonnull
   private Object upiIntent;
 
   public UpiResponse() {
   }
 
-  public UpiResponse upiCollect(UpiCollectAdditionalData upiCollect) {
+  public UpiResponse upiCollect(@javax.annotation.Nonnull UpiCollectAdditionalData upiCollect) {
     
     this.upiCollect = upiCollect;
     return this;
   }
 
-   /**
+  /**
    * Get upiCollect
    * @return upiCollect
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_UPI_COLLECT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -66,21 +68,20 @@ public class UpiResponse {
 
   @JsonProperty(JSON_PROPERTY_UPI_COLLECT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setUpiCollect(UpiCollectAdditionalData upiCollect) {
+  public void setUpiCollect(@javax.annotation.Nonnull UpiCollectAdditionalData upiCollect) {
     this.upiCollect = upiCollect;
   }
 
-
-  public UpiResponse upiIntent(Object upiIntent) {
+  public UpiResponse upiIntent(@javax.annotation.Nonnull Object upiIntent) {
     
     this.upiIntent = upiIntent;
     return this;
   }
 
-   /**
+  /**
    * Get upiIntent
    * @return upiIntent
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_UPI_INTENT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -92,7 +93,7 @@ public class UpiResponse {
 
   @JsonProperty(JSON_PROPERTY_UPI_INTENT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setUpiIntent(Object upiIntent) {
+  public void setUpiIntent(@javax.annotation.Nonnull Object upiIntent) {
     this.upiIntent = upiIntent;
   }
 

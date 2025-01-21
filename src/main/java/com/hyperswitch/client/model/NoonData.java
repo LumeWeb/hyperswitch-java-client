@@ -36,24 +36,25 @@ import java.util.StringJoiner;
 @JsonPropertyOrder({
   NoonData.JSON_PROPERTY_ORDER_CATEGORY
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class NoonData {
   public static final String JSON_PROPERTY_ORDER_CATEGORY = "order_category";
+  @javax.annotation.Nullable
   private JsonNullable<String> orderCategory = JsonNullable.<String>undefined();
 
   public NoonData() {
   }
 
-  public NoonData orderCategory(String orderCategory) {
+  public NoonData orderCategory(@javax.annotation.Nullable String orderCategory) {
     this.orderCategory = JsonNullable.<String>of(orderCategory);
     
     return this;
   }
 
-   /**
+  /**
    * Information about the order category that merchant wants to specify at connector level. (e.g. In Noon Payments it can take values like \&quot;pay\&quot;, \&quot;food\&quot;, or any other custom string set by the merchant in Noon&#39;s Dashboard)
    * @return orderCategory
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -73,7 +74,7 @@ public class NoonData {
     this.orderCategory = orderCategory;
   }
 
-  public void setOrderCategory(String orderCategory) {
+  public void setOrderCategory(@javax.annotation.Nullable String orderCategory) {
     this.orderCategory = JsonNullable.<String>of(orderCategory);
   }
 

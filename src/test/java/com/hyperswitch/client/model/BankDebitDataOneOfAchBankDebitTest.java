@@ -23,22 +23,21 @@ import org.openapitools.jackson.nullable.JsonNullable;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.openapitools.jackson.nullable.JsonNullable;
 import java.util.NoSuchElementException;
-import org.junit.Assert;
-import org.junit.Ignore;
-import org.junit.Test;
-
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Test;
 
 /**
  * Model tests for BankDebitDataOneOfAchBankDebit
  */
-public class BankDebitDataOneOfAchBankDebitTest {
+class BankDebitDataOneOfAchBankDebitTest {
     private final BankDebitDataOneOfAchBankDebit model = new BankDebitDataOneOfAchBankDebit();
 
     /**
      * Model tests for BankDebitDataOneOfAchBankDebit
      */
     @Test
-    public void testBankDebitDataOneOfAchBankDebit() {
+    void testBankDebitDataOneOfAchBankDebit() {
         // TODO: test BankDebitDataOneOfAchBankDebit
     }
 
@@ -46,7 +45,7 @@ public class BankDebitDataOneOfAchBankDebitTest {
      * Test the property 'billingDetails'
      */
     @Test
-    public void billingDetailsTest() {
+    void billingDetailsTest() {
         // TODO: test billingDetails
     }
 
@@ -54,7 +53,7 @@ public class BankDebitDataOneOfAchBankDebitTest {
      * Test the property 'accountNumber'
      */
     @Test
-    public void accountNumberTest() {
+    void accountNumberTest() {
         // TODO: test accountNumber
     }
 
@@ -62,7 +61,7 @@ public class BankDebitDataOneOfAchBankDebitTest {
      * Test the property 'routingNumber'
      */
     @Test
-    public void routingNumberTest() {
+    void routingNumberTest() {
         // TODO: test routingNumber
     }
 
@@ -70,7 +69,7 @@ public class BankDebitDataOneOfAchBankDebitTest {
      * Test the property 'cardHolderName'
      */
     @Test
-    public void cardHolderNameTest() {
+    void cardHolderNameTest() {
         // TODO: test cardHolderName
     }
 
@@ -78,7 +77,7 @@ public class BankDebitDataOneOfAchBankDebitTest {
      * Test the property 'bankAccountHolderName'
      */
     @Test
-    public void bankAccountHolderNameTest() {
+    void bankAccountHolderNameTest() {
         // TODO: test bankAccountHolderName
     }
 
@@ -86,7 +85,7 @@ public class BankDebitDataOneOfAchBankDebitTest {
      * Test the property 'bankName'
      */
     @Test
-    public void bankNameTest() {
+    void bankNameTest() {
         // TODO: test bankName
     }
 
@@ -94,7 +93,7 @@ public class BankDebitDataOneOfAchBankDebitTest {
      * Test the property 'bankType'
      */
     @Test
-    public void bankTypeTest() {
+    void bankTypeTest() {
         // TODO: test bankType
     }
 
@@ -102,7 +101,7 @@ public class BankDebitDataOneOfAchBankDebitTest {
      * Test the property 'bankHolderType'
      */
     @Test
-    public void bankHolderTypeTest() {
+    void bankHolderTypeTest() {
         // TODO: test bankHolderType
     }
 

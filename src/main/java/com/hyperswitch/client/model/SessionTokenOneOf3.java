@@ -37,22 +37,25 @@ import java.util.StringJoiner;
   SessionTokenOneOf3.JSON_PROPERTY_WALLET_NAME
 })
 @JsonTypeName("SessionToken_oneOf_3")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class SessionTokenOneOf3 {
   public static final String JSON_PROPERTY_CONNECTOR = "connector";
+  @javax.annotation.Nonnull
   private String connector;
 
   public static final String JSON_PROPERTY_SESSION_TOKEN = "session_token";
+  @javax.annotation.Nonnull
   private String sessionToken;
 
   public static final String JSON_PROPERTY_SDK_NEXT_ACTION = "sdk_next_action";
+  @javax.annotation.Nonnull
   private SdkNextAction sdkNextAction;
 
   /**
    * Gets or Sets walletName
    */
   public enum WalletNameEnum {
-    PAYPAL("paypal");
+    PAYPAL(String.valueOf("paypal"));
 
     private String value;
 
@@ -82,21 +85,22 @@ public class SessionTokenOneOf3 {
   }
 
   public static final String JSON_PROPERTY_WALLET_NAME = "wallet_name";
+  @javax.annotation.Nonnull
   private WalletNameEnum walletName;
 
   public SessionTokenOneOf3() {
   }
 
-  public SessionTokenOneOf3 connector(String connector) {
+  public SessionTokenOneOf3 connector(@javax.annotation.Nonnull String connector) {
     
     this.connector = connector;
     return this;
   }
 
-   /**
+  /**
    * Name of the connector
    * @return connector
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_CONNECTOR)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -108,21 +112,20 @@ public class SessionTokenOneOf3 {
 
   @JsonProperty(JSON_PROPERTY_CONNECTOR)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setConnector(String connector) {
+  public void setConnector(@javax.annotation.Nonnull String connector) {
     this.connector = connector;
   }
 
-
-  public SessionTokenOneOf3 sessionToken(String sessionToken) {
+  public SessionTokenOneOf3 sessionToken(@javax.annotation.Nonnull String sessionToken) {
     
     this.sessionToken = sessionToken;
     return this;
   }
 
-   /**
+  /**
    * The session token for PayPal
    * @return sessionToken
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_SESSION_TOKEN)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -134,21 +137,20 @@ public class SessionTokenOneOf3 {
 
   @JsonProperty(JSON_PROPERTY_SESSION_TOKEN)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setSessionToken(String sessionToken) {
+  public void setSessionToken(@javax.annotation.Nonnull String sessionToken) {
     this.sessionToken = sessionToken;
   }
 
-
-  public SessionTokenOneOf3 sdkNextAction(SdkNextAction sdkNextAction) {
+  public SessionTokenOneOf3 sdkNextAction(@javax.annotation.Nonnull SdkNextAction sdkNextAction) {
     
     this.sdkNextAction = sdkNextAction;
     return this;
   }
 
-   /**
+  /**
    * Get sdkNextAction
    * @return sdkNextAction
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_SDK_NEXT_ACTION)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -160,21 +162,20 @@ public class SessionTokenOneOf3 {
 
   @JsonProperty(JSON_PROPERTY_SDK_NEXT_ACTION)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setSdkNextAction(SdkNextAction sdkNextAction) {
+  public void setSdkNextAction(@javax.annotation.Nonnull SdkNextAction sdkNextAction) {
     this.sdkNextAction = sdkNextAction;
   }
 
-
-  public SessionTokenOneOf3 walletName(WalletNameEnum walletName) {
+  public SessionTokenOneOf3 walletName(@javax.annotation.Nonnull WalletNameEnum walletName) {
     
     this.walletName = walletName;
     return this;
   }
 
-   /**
+  /**
    * Get walletName
    * @return walletName
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_WALLET_NAME)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -186,7 +187,7 @@ public class SessionTokenOneOf3 {
 
   @JsonProperty(JSON_PROPERTY_WALLET_NAME)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setWalletName(WalletNameEnum walletName) {
+  public void setWalletName(@javax.annotation.Nonnull WalletNameEnum walletName) {
     this.walletName = walletName;
   }
 

@@ -35,33 +35,37 @@ import java.util.StringJoiner;
   EphemeralKeyCreateResponse.JSON_PROPERTY_EXPIRES,
   EphemeralKeyCreateResponse.JSON_PROPERTY_SECRET
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class EphemeralKeyCreateResponse {
   public static final String JSON_PROPERTY_CUSTOMER_ID = "customer_id";
+  @javax.annotation.Nonnull
   private String customerId;
 
   public static final String JSON_PROPERTY_CREATED_AT = "created_at";
+  @javax.annotation.Nonnull
   private Long createdAt;
 
   public static final String JSON_PROPERTY_EXPIRES = "expires";
+  @javax.annotation.Nonnull
   private Long expires;
 
   public static final String JSON_PROPERTY_SECRET = "secret";
+  @javax.annotation.Nonnull
   private String secret;
 
   public EphemeralKeyCreateResponse() {
   }
 
-  public EphemeralKeyCreateResponse customerId(String customerId) {
+  public EphemeralKeyCreateResponse customerId(@javax.annotation.Nonnull String customerId) {
     
     this.customerId = customerId;
     return this;
   }
 
-   /**
+  /**
    * customer_id to which this ephemeral key belongs to
    * @return customerId
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_CUSTOMER_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -73,21 +77,20 @@ public class EphemeralKeyCreateResponse {
 
   @JsonProperty(JSON_PROPERTY_CUSTOMER_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setCustomerId(String customerId) {
+  public void setCustomerId(@javax.annotation.Nonnull String customerId) {
     this.customerId = customerId;
   }
 
-
-  public EphemeralKeyCreateResponse createdAt(Long createdAt) {
+  public EphemeralKeyCreateResponse createdAt(@javax.annotation.Nonnull Long createdAt) {
     
     this.createdAt = createdAt;
     return this;
   }
 
-   /**
+  /**
    * time at which this ephemeral key was created
    * @return createdAt
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_CREATED_AT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -99,21 +102,20 @@ public class EphemeralKeyCreateResponse {
 
   @JsonProperty(JSON_PROPERTY_CREATED_AT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setCreatedAt(Long createdAt) {
+  public void setCreatedAt(@javax.annotation.Nonnull Long createdAt) {
     this.createdAt = createdAt;
   }
 
-
-  public EphemeralKeyCreateResponse expires(Long expires) {
+  public EphemeralKeyCreateResponse expires(@javax.annotation.Nonnull Long expires) {
     
     this.expires = expires;
     return this;
   }
 
-   /**
+  /**
    * time at which this ephemeral key would expire
    * @return expires
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_EXPIRES)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -125,21 +127,20 @@ public class EphemeralKeyCreateResponse {
 
   @JsonProperty(JSON_PROPERTY_EXPIRES)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setExpires(Long expires) {
+  public void setExpires(@javax.annotation.Nonnull Long expires) {
     this.expires = expires;
   }
 
-
-  public EphemeralKeyCreateResponse secret(String secret) {
+  public EphemeralKeyCreateResponse secret(@javax.annotation.Nonnull String secret) {
     
     this.secret = secret;
     return this;
   }
 
-   /**
+  /**
    * ephemeral key
    * @return secret
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_SECRET)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -151,7 +152,7 @@ public class EphemeralKeyCreateResponse {
 
   @JsonProperty(JSON_PROPERTY_SECRET)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setSecret(String secret) {
+  public void setSecret(@javax.annotation.Nonnull String secret) {
     this.secret = secret;
   }
 

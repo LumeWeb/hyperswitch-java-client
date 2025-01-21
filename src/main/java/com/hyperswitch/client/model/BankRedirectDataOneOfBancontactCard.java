@@ -42,36 +42,41 @@ import java.util.StringJoiner;
   BankRedirectDataOneOfBancontactCard.JSON_PROPERTY_BILLING_DETAILS
 })
 @JsonTypeName("BankRedirectData_oneOf_bancontact_card")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class BankRedirectDataOneOfBancontactCard {
   public static final String JSON_PROPERTY_CARD_NUMBER = "card_number";
+  @javax.annotation.Nonnull
   private String cardNumber;
 
   public static final String JSON_PROPERTY_CARD_EXP_MONTH = "card_exp_month";
+  @javax.annotation.Nonnull
   private String cardExpMonth;
 
   public static final String JSON_PROPERTY_CARD_EXP_YEAR = "card_exp_year";
+  @javax.annotation.Nonnull
   private String cardExpYear;
 
   public static final String JSON_PROPERTY_CARD_HOLDER_NAME = "card_holder_name";
+  @javax.annotation.Nonnull
   private String cardHolderName;
 
   public static final String JSON_PROPERTY_BILLING_DETAILS = "billing_details";
+  @javax.annotation.Nullable
   private JsonNullable<BankRedirectBilling> billingDetails = JsonNullable.<BankRedirectBilling>undefined();
 
   public BankRedirectDataOneOfBancontactCard() {
   }
 
-  public BankRedirectDataOneOfBancontactCard cardNumber(String cardNumber) {
+  public BankRedirectDataOneOfBancontactCard cardNumber(@javax.annotation.Nonnull String cardNumber) {
     
     this.cardNumber = cardNumber;
     return this;
   }
 
-   /**
+  /**
    * The card number
    * @return cardNumber
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_CARD_NUMBER)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -83,21 +88,20 @@ public class BankRedirectDataOneOfBancontactCard {
 
   @JsonProperty(JSON_PROPERTY_CARD_NUMBER)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setCardNumber(String cardNumber) {
+  public void setCardNumber(@javax.annotation.Nonnull String cardNumber) {
     this.cardNumber = cardNumber;
   }
 
-
-  public BankRedirectDataOneOfBancontactCard cardExpMonth(String cardExpMonth) {
+  public BankRedirectDataOneOfBancontactCard cardExpMonth(@javax.annotation.Nonnull String cardExpMonth) {
     
     this.cardExpMonth = cardExpMonth;
     return this;
   }
 
-   /**
+  /**
    * The card&#39;s expiry month
    * @return cardExpMonth
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_CARD_EXP_MONTH)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -109,21 +113,20 @@ public class BankRedirectDataOneOfBancontactCard {
 
   @JsonProperty(JSON_PROPERTY_CARD_EXP_MONTH)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setCardExpMonth(String cardExpMonth) {
+  public void setCardExpMonth(@javax.annotation.Nonnull String cardExpMonth) {
     this.cardExpMonth = cardExpMonth;
   }
 
-
-  public BankRedirectDataOneOfBancontactCard cardExpYear(String cardExpYear) {
+  public BankRedirectDataOneOfBancontactCard cardExpYear(@javax.annotation.Nonnull String cardExpYear) {
     
     this.cardExpYear = cardExpYear;
     return this;
   }
 
-   /**
+  /**
    * The card&#39;s expiry year
    * @return cardExpYear
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_CARD_EXP_YEAR)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -135,21 +138,20 @@ public class BankRedirectDataOneOfBancontactCard {
 
   @JsonProperty(JSON_PROPERTY_CARD_EXP_YEAR)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setCardExpYear(String cardExpYear) {
+  public void setCardExpYear(@javax.annotation.Nonnull String cardExpYear) {
     this.cardExpYear = cardExpYear;
   }
 
-
-  public BankRedirectDataOneOfBancontactCard cardHolderName(String cardHolderName) {
+  public BankRedirectDataOneOfBancontactCard cardHolderName(@javax.annotation.Nonnull String cardHolderName) {
     
     this.cardHolderName = cardHolderName;
     return this;
   }
 
-   /**
+  /**
    * The card holder&#39;s name
    * @return cardHolderName
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_CARD_HOLDER_NAME)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -161,21 +163,20 @@ public class BankRedirectDataOneOfBancontactCard {
 
   @JsonProperty(JSON_PROPERTY_CARD_HOLDER_NAME)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setCardHolderName(String cardHolderName) {
+  public void setCardHolderName(@javax.annotation.Nonnull String cardHolderName) {
     this.cardHolderName = cardHolderName;
   }
 
-
-  public BankRedirectDataOneOfBancontactCard billingDetails(BankRedirectBilling billingDetails) {
+  public BankRedirectDataOneOfBancontactCard billingDetails(@javax.annotation.Nullable BankRedirectBilling billingDetails) {
     this.billingDetails = JsonNullable.<BankRedirectBilling>of(billingDetails);
     
     return this;
   }
 
-   /**
+  /**
    * Get billingDetails
    * @return billingDetails
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -195,7 +196,7 @@ public class BankRedirectDataOneOfBancontactCard {
     this.billingDetails = billingDetails;
   }
 
-  public void setBillingDetails(BankRedirectBilling billingDetails) {
+  public void setBillingDetails(@javax.annotation.Nullable BankRedirectBilling billingDetails) {
     this.billingDetails = JsonNullable.<BankRedirectBilling>of(billingDetails);
   }
 

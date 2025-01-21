@@ -20,22 +20,21 @@ import com.fasterxml.jackson.annotation.JsonTypeName;
 import com.fasterxml.jackson.annotation.JsonValue;
 import com.hyperswitch.client.model.GpayAllowedMethodsParameters;
 import com.hyperswitch.client.model.GpayTokenizationSpecification;
-import org.junit.Assert;
-import org.junit.Ignore;
-import org.junit.Test;
-
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Test;
 
 /**
  * Model tests for GpayAllowedPaymentMethods
  */
-public class GpayAllowedPaymentMethodsTest {
+class GpayAllowedPaymentMethodsTest {
     private final GpayAllowedPaymentMethods model = new GpayAllowedPaymentMethods();
 
     /**
      * Model tests for GpayAllowedPaymentMethods
      */
     @Test
-    public void testGpayAllowedPaymentMethods() {
+    void testGpayAllowedPaymentMethods() {
         // TODO: test GpayAllowedPaymentMethods
     }
 
@@ -43,7 +42,7 @@ public class GpayAllowedPaymentMethodsTest {
      * Test the property 'type'
      */
     @Test
-    public void typeTest() {
+    void typeTest() {
         // TODO: test type
     }
 
@@ -51,7 +50,7 @@ public class GpayAllowedPaymentMethodsTest {
      * Test the property 'parameters'
      */
     @Test
-    public void parametersTest() {
+    void parametersTest() {
         // TODO: test parameters
     }
 
@@ -59,7 +58,7 @@ public class GpayAllowedPaymentMethodsTest {
      * Test the property 'tokenizationSpecification'
      */
     @Test
-    public void tokenizationSpecificationTest() {
+    void tokenizationSpecificationTest() {
         // TODO: test tokenizationSpecification
     }
 

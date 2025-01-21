@@ -22,6 +22,7 @@ import com.fasterxml.jackson.annotation.JsonTypeName;
 import com.fasterxml.jackson.annotation.JsonValue;
 import com.hyperswitch.client.model.RefundResponse;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 import com.fasterxml.jackson.annotation.JsonTypeName;
@@ -37,31 +38,34 @@ import java.util.StringJoiner;
   RefundListResponse.JSON_PROPERTY_TOTAL_COUNT,
   RefundListResponse.JSON_PROPERTY_DATA
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class RefundListResponse {
   public static final String JSON_PROPERTY_COUNT = "count";
+  @javax.annotation.Nonnull
   private Integer count;
 
   public static final String JSON_PROPERTY_TOTAL_COUNT = "total_count";
+  @javax.annotation.Nonnull
   private Long totalCount;
 
   public static final String JSON_PROPERTY_DATA = "data";
+  @javax.annotation.Nonnull
   private List<RefundResponse> data = new ArrayList<>();
 
   public RefundListResponse() {
   }
 
-  public RefundListResponse count(Integer count) {
+  public RefundListResponse count(@javax.annotation.Nonnull Integer count) {
     
     this.count = count;
     return this;
   }
 
-   /**
+  /**
    * The number of refunds included in the list
    * minimum: 0
    * @return count
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_COUNT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -73,21 +77,20 @@ public class RefundListResponse {
 
   @JsonProperty(JSON_PROPERTY_COUNT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setCount(Integer count) {
+  public void setCount(@javax.annotation.Nonnull Integer count) {
     this.count = count;
   }
 
-
-  public RefundListResponse totalCount(Long totalCount) {
+  public RefundListResponse totalCount(@javax.annotation.Nonnull Long totalCount) {
     
     this.totalCount = totalCount;
     return this;
   }
 
-   /**
+  /**
    * The total number of refunds in the list
    * @return totalCount
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_TOTAL_COUNT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -99,12 +102,11 @@ public class RefundListResponse {
 
   @JsonProperty(JSON_PROPERTY_TOTAL_COUNT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setTotalCount(Long totalCount) {
+  public void setTotalCount(@javax.annotation.Nonnull Long totalCount) {
     this.totalCount = totalCount;
   }
 
-
-  public RefundListResponse data(List<RefundResponse> data) {
+  public RefundListResponse data(@javax.annotation.Nonnull List<RefundResponse> data) {
     
     this.data = data;
     return this;
@@ -118,10 +120,10 @@ public class RefundListResponse {
     return this;
   }
 
-   /**
+  /**
    * The List of refund response object
    * @return data
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_DATA)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -133,7 +135,7 @@ public class RefundListResponse {
 
   @JsonProperty(JSON_PROPERTY_DATA)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setData(List<RefundResponse> data) {
+  public void setData(@javax.annotation.Nonnull List<RefundResponse> data) {
     this.data = data;
   }
 

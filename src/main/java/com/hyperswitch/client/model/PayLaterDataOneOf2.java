@@ -33,24 +33,25 @@ import java.util.StringJoiner;
   PayLaterDataOneOf2.JSON_PROPERTY_AFFIRM_REDIRECT
 })
 @JsonTypeName("PayLaterData_oneOf_2")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class PayLaterDataOneOf2 {
   public static final String JSON_PROPERTY_AFFIRM_REDIRECT = "affirm_redirect";
+  @javax.annotation.Nonnull
   private Object affirmRedirect;
 
   public PayLaterDataOneOf2() {
   }
 
-  public PayLaterDataOneOf2 affirmRedirect(Object affirmRedirect) {
+  public PayLaterDataOneOf2 affirmRedirect(@javax.annotation.Nonnull Object affirmRedirect) {
     
     this.affirmRedirect = affirmRedirect;
     return this;
   }
 
-   /**
+  /**
    * For Affirm redirect as PayLater Option
    * @return affirmRedirect
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_AFFIRM_REDIRECT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -62,7 +63,7 @@ public class PayLaterDataOneOf2 {
 
   @JsonProperty(JSON_PROPERTY_AFFIRM_REDIRECT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setAffirmRedirect(Object affirmRedirect) {
+  public void setAffirmRedirect(@javax.annotation.Nonnull Object affirmRedirect) {
     this.affirmRedirect = affirmRedirect;
   }
 

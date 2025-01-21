@@ -33,24 +33,25 @@ import java.util.StringJoiner;
   PayLaterDataOneOf7.JSON_PROPERTY_ATOME_REDIRECT
 })
 @JsonTypeName("PayLaterData_oneOf_7")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class PayLaterDataOneOf7 {
   public static final String JSON_PROPERTY_ATOME_REDIRECT = "atome_redirect";
+  @javax.annotation.Nonnull
   private Object atomeRedirect;
 
   public PayLaterDataOneOf7() {
   }
 
-  public PayLaterDataOneOf7 atomeRedirect(Object atomeRedirect) {
+  public PayLaterDataOneOf7 atomeRedirect(@javax.annotation.Nonnull Object atomeRedirect) {
     
     this.atomeRedirect = atomeRedirect;
     return this;
   }
 
-   /**
+  /**
    * Get atomeRedirect
    * @return atomeRedirect
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_ATOME_REDIRECT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -62,7 +63,7 @@ public class PayLaterDataOneOf7 {
 
   @JsonProperty(JSON_PROPERTY_ATOME_REDIRECT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setAtomeRedirect(Object atomeRedirect) {
+  public void setAtomeRedirect(@javax.annotation.Nonnull Object atomeRedirect) {
     this.atomeRedirect = atomeRedirect;
   }
 

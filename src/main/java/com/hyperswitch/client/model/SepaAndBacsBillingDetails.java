@@ -37,27 +37,29 @@ import java.util.StringJoiner;
   SepaAndBacsBillingDetails.JSON_PROPERTY_EMAIL,
   SepaAndBacsBillingDetails.JSON_PROPERTY_NAME
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class SepaAndBacsBillingDetails {
   public static final String JSON_PROPERTY_EMAIL = "email";
+  @javax.annotation.Nullable
   private JsonNullable<String> email = JsonNullable.<String>undefined();
 
   public static final String JSON_PROPERTY_NAME = "name";
+  @javax.annotation.Nullable
   private JsonNullable<String> name = JsonNullable.<String>undefined();
 
   public SepaAndBacsBillingDetails() {
   }
 
-  public SepaAndBacsBillingDetails email(String email) {
+  public SepaAndBacsBillingDetails email(@javax.annotation.Nullable String email) {
     this.email = JsonNullable.<String>of(email);
     
     return this;
   }
 
-   /**
+  /**
    * The Email ID for SEPA and BACS billing
    * @return email
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -77,21 +79,20 @@ public class SepaAndBacsBillingDetails {
     this.email = email;
   }
 
-  public void setEmail(String email) {
+  public void setEmail(@javax.annotation.Nullable String email) {
     this.email = JsonNullable.<String>of(email);
   }
 
-
-  public SepaAndBacsBillingDetails name(String name) {
+  public SepaAndBacsBillingDetails name(@javax.annotation.Nullable String name) {
     this.name = JsonNullable.<String>of(name);
     
     return this;
   }
 
-   /**
+  /**
    * The billing name for SEPA and BACS billing
    * @return name
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -111,7 +112,7 @@ public class SepaAndBacsBillingDetails {
     this.name = name;
   }
 
-  public void setName(String name) {
+  public void setName(@javax.annotation.Nullable String name) {
     this.name = JsonNullable.<String>of(name);
   }
 

@@ -37,27 +37,29 @@ import java.util.StringJoiner;
   Wallet.JSON_PROPERTY_PAYPAL,
   Wallet.JSON_PROPERTY_VENMO
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class Wallet {
   public static final String JSON_PROPERTY_PAYPAL = "paypal";
+  @javax.annotation.Nonnull
   private Paypal paypal;
 
   public static final String JSON_PROPERTY_VENMO = "venmo";
+  @javax.annotation.Nonnull
   private Venmo venmo;
 
   public Wallet() {
   }
 
-  public Wallet paypal(Paypal paypal) {
+  public Wallet paypal(@javax.annotation.Nonnull Paypal paypal) {
     
     this.paypal = paypal;
     return this;
   }
 
-   /**
+  /**
    * Get paypal
    * @return paypal
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_PAYPAL)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -69,21 +71,20 @@ public class Wallet {
 
   @JsonProperty(JSON_PROPERTY_PAYPAL)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setPaypal(Paypal paypal) {
+  public void setPaypal(@javax.annotation.Nonnull Paypal paypal) {
     this.paypal = paypal;
   }
 
-
-  public Wallet venmo(Venmo venmo) {
+  public Wallet venmo(@javax.annotation.Nonnull Venmo venmo) {
     
     this.venmo = venmo;
     return this;
   }
 
-   /**
+  /**
    * Get venmo
    * @return venmo
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_VENMO)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -95,7 +96,7 @@ public class Wallet {
 
   @JsonProperty(JSON_PROPERTY_VENMO)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setVenmo(Venmo venmo) {
+  public void setVenmo(@javax.annotation.Nonnull Venmo venmo) {
     this.venmo = venmo;
   }
 

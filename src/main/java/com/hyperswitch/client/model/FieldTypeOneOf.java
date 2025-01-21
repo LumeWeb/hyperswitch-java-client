@@ -34,24 +34,25 @@ import java.util.StringJoiner;
   FieldTypeOneOf.JSON_PROPERTY_USER_COUNTRY
 })
 @JsonTypeName("FieldType_oneOf")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class FieldTypeOneOf {
   public static final String JSON_PROPERTY_USER_COUNTRY = "user_country";
+  @javax.annotation.Nonnull
   private FieldTypeOneOfUserCountry userCountry;
 
   public FieldTypeOneOf() {
   }
 
-  public FieldTypeOneOf userCountry(FieldTypeOneOfUserCountry userCountry) {
+  public FieldTypeOneOf userCountry(@javax.annotation.Nonnull FieldTypeOneOfUserCountry userCountry) {
     
     this.userCountry = userCountry;
     return this;
   }
 
-   /**
+  /**
    * Get userCountry
    * @return userCountry
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_USER_COUNTRY)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -63,7 +64,7 @@ public class FieldTypeOneOf {
 
   @JsonProperty(JSON_PROPERTY_USER_COUNTRY)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setUserCountry(FieldTypeOneOfUserCountry userCountry) {
+  public void setUserCountry(@javax.annotation.Nonnull FieldTypeOneOfUserCountry userCountry) {
     this.userCountry = userCountry;
   }
 

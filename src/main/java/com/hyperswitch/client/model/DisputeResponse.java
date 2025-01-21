@@ -57,75 +57,93 @@ import java.util.StringJoiner;
   DisputeResponse.JSON_PROPERTY_PROFILE_ID,
   DisputeResponse.JSON_PROPERTY_MERCHANT_CONNECTOR_ID
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class DisputeResponse {
   public static final String JSON_PROPERTY_DISPUTE_ID = "dispute_id";
+  @javax.annotation.Nonnull
   private String disputeId;
 
   public static final String JSON_PROPERTY_PAYMENT_ID = "payment_id";
+  @javax.annotation.Nonnull
   private String paymentId;
 
   public static final String JSON_PROPERTY_ATTEMPT_ID = "attempt_id";
+  @javax.annotation.Nonnull
   private String attemptId;
 
   public static final String JSON_PROPERTY_AMOUNT = "amount";
+  @javax.annotation.Nonnull
   private String amount;
 
   public static final String JSON_PROPERTY_CURRENCY = "currency";
+  @javax.annotation.Nonnull
   private Currency currency;
 
   public static final String JSON_PROPERTY_DISPUTE_STAGE = "dispute_stage";
+  @javax.annotation.Nonnull
   private DisputeStage disputeStage;
 
   public static final String JSON_PROPERTY_DISPUTE_STATUS = "dispute_status";
+  @javax.annotation.Nonnull
   private DisputeStatus disputeStatus;
 
   public static final String JSON_PROPERTY_CONNECTOR = "connector";
+  @javax.annotation.Nonnull
   private String connector;
 
   public static final String JSON_PROPERTY_CONNECTOR_STATUS = "connector_status";
+  @javax.annotation.Nonnull
   private String connectorStatus;
 
   public static final String JSON_PROPERTY_CONNECTOR_DISPUTE_ID = "connector_dispute_id";
+  @javax.annotation.Nonnull
   private String connectorDisputeId;
 
   public static final String JSON_PROPERTY_CONNECTOR_REASON = "connector_reason";
+  @javax.annotation.Nullable
   private JsonNullable<String> connectorReason = JsonNullable.<String>undefined();
 
   public static final String JSON_PROPERTY_CONNECTOR_REASON_CODE = "connector_reason_code";
+  @javax.annotation.Nullable
   private JsonNullable<String> connectorReasonCode = JsonNullable.<String>undefined();
 
   public static final String JSON_PROPERTY_CHALLENGE_REQUIRED_BY = "challenge_required_by";
+  @javax.annotation.Nullable
   private JsonNullable<OffsetDateTime> challengeRequiredBy = JsonNullable.<OffsetDateTime>undefined();
 
   public static final String JSON_PROPERTY_CONNECTOR_CREATED_AT = "connector_created_at";
+  @javax.annotation.Nullable
   private JsonNullable<OffsetDateTime> connectorCreatedAt = JsonNullable.<OffsetDateTime>undefined();
 
   public static final String JSON_PROPERTY_CONNECTOR_UPDATED_AT = "connector_updated_at";
+  @javax.annotation.Nullable
   private JsonNullable<OffsetDateTime> connectorUpdatedAt = JsonNullable.<OffsetDateTime>undefined();
 
   public static final String JSON_PROPERTY_CREATED_AT = "created_at";
+  @javax.annotation.Nonnull
   private OffsetDateTime createdAt;
 
   public static final String JSON_PROPERTY_PROFILE_ID = "profile_id";
+  @javax.annotation.Nullable
   private JsonNullable<String> profileId = JsonNullable.<String>undefined();
 
   public static final String JSON_PROPERTY_MERCHANT_CONNECTOR_ID = "merchant_connector_id";
+  @javax.annotation.Nullable
   private JsonNullable<String> merchantConnectorId = JsonNullable.<String>undefined();
 
   public DisputeResponse() {
   }
 
-  public DisputeResponse disputeId(String disputeId) {
+  public DisputeResponse disputeId(@javax.annotation.Nonnull String disputeId) {
     
     this.disputeId = disputeId;
     return this;
   }
 
-   /**
+  /**
    * The identifier for dispute
    * @return disputeId
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_DISPUTE_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -137,21 +155,20 @@ public class DisputeResponse {
 
   @JsonProperty(JSON_PROPERTY_DISPUTE_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setDisputeId(String disputeId) {
+  public void setDisputeId(@javax.annotation.Nonnull String disputeId) {
     this.disputeId = disputeId;
   }
 
-
-  public DisputeResponse paymentId(String paymentId) {
+  public DisputeResponse paymentId(@javax.annotation.Nonnull String paymentId) {
     
     this.paymentId = paymentId;
     return this;
   }
 
-   /**
+  /**
    * The identifier for payment_intent
    * @return paymentId
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_PAYMENT_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -163,21 +180,20 @@ public class DisputeResponse {
 
   @JsonProperty(JSON_PROPERTY_PAYMENT_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setPaymentId(String paymentId) {
+  public void setPaymentId(@javax.annotation.Nonnull String paymentId) {
     this.paymentId = paymentId;
   }
 
-
-  public DisputeResponse attemptId(String attemptId) {
+  public DisputeResponse attemptId(@javax.annotation.Nonnull String attemptId) {
     
     this.attemptId = attemptId;
     return this;
   }
 
-   /**
+  /**
    * The identifier for payment_attempt
    * @return attemptId
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_ATTEMPT_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -189,21 +205,20 @@ public class DisputeResponse {
 
   @JsonProperty(JSON_PROPERTY_ATTEMPT_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setAttemptId(String attemptId) {
+  public void setAttemptId(@javax.annotation.Nonnull String attemptId) {
     this.attemptId = attemptId;
   }
 
-
-  public DisputeResponse amount(String amount) {
+  public DisputeResponse amount(@javax.annotation.Nonnull String amount) {
     
     this.amount = amount;
     return this;
   }
 
-   /**
+  /**
    * The dispute amount
    * @return amount
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_AMOUNT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -215,21 +230,20 @@ public class DisputeResponse {
 
   @JsonProperty(JSON_PROPERTY_AMOUNT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setAmount(String amount) {
+  public void setAmount(@javax.annotation.Nonnull String amount) {
     this.amount = amount;
   }
 
-
-  public DisputeResponse currency(Currency currency) {
+  public DisputeResponse currency(@javax.annotation.Nonnull Currency currency) {
     
     this.currency = currency;
     return this;
   }
 
-   /**
+  /**
    * Get currency
    * @return currency
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_CURRENCY)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -241,21 +255,20 @@ public class DisputeResponse {
 
   @JsonProperty(JSON_PROPERTY_CURRENCY)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setCurrency(Currency currency) {
+  public void setCurrency(@javax.annotation.Nonnull Currency currency) {
     this.currency = currency;
   }
 
-
-  public DisputeResponse disputeStage(DisputeStage disputeStage) {
+  public DisputeResponse disputeStage(@javax.annotation.Nonnull DisputeStage disputeStage) {
     
     this.disputeStage = disputeStage;
     return this;
   }
 
-   /**
+  /**
    * Get disputeStage
    * @return disputeStage
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_DISPUTE_STAGE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -267,21 +280,20 @@ public class DisputeResponse {
 
   @JsonProperty(JSON_PROPERTY_DISPUTE_STAGE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setDisputeStage(DisputeStage disputeStage) {
+  public void setDisputeStage(@javax.annotation.Nonnull DisputeStage disputeStage) {
     this.disputeStage = disputeStage;
   }
 
-
-  public DisputeResponse disputeStatus(DisputeStatus disputeStatus) {
+  public DisputeResponse disputeStatus(@javax.annotation.Nonnull DisputeStatus disputeStatus) {
     
     this.disputeStatus = disputeStatus;
     return this;
   }
 
-   /**
+  /**
    * Get disputeStatus
    * @return disputeStatus
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_DISPUTE_STATUS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -293,21 +305,20 @@ public class DisputeResponse {
 
   @JsonProperty(JSON_PROPERTY_DISPUTE_STATUS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setDisputeStatus(DisputeStatus disputeStatus) {
+  public void setDisputeStatus(@javax.annotation.Nonnull DisputeStatus disputeStatus) {
     this.disputeStatus = disputeStatus;
   }
 
-
-  public DisputeResponse connector(String connector) {
+  public DisputeResponse connector(@javax.annotation.Nonnull String connector) {
     
     this.connector = connector;
     return this;
   }
 
-   /**
+  /**
    * connector to which dispute is associated with
    * @return connector
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_CONNECTOR)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -319,21 +330,20 @@ public class DisputeResponse {
 
   @JsonProperty(JSON_PROPERTY_CONNECTOR)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setConnector(String connector) {
+  public void setConnector(@javax.annotation.Nonnull String connector) {
     this.connector = connector;
   }
 
-
-  public DisputeResponse connectorStatus(String connectorStatus) {
+  public DisputeResponse connectorStatus(@javax.annotation.Nonnull String connectorStatus) {
     
     this.connectorStatus = connectorStatus;
     return this;
   }
 
-   /**
+  /**
    * Status of the dispute sent by connector
    * @return connectorStatus
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_CONNECTOR_STATUS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -345,21 +355,20 @@ public class DisputeResponse {
 
   @JsonProperty(JSON_PROPERTY_CONNECTOR_STATUS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setConnectorStatus(String connectorStatus) {
+  public void setConnectorStatus(@javax.annotation.Nonnull String connectorStatus) {
     this.connectorStatus = connectorStatus;
   }
 
-
-  public DisputeResponse connectorDisputeId(String connectorDisputeId) {
+  public DisputeResponse connectorDisputeId(@javax.annotation.Nonnull String connectorDisputeId) {
     
     this.connectorDisputeId = connectorDisputeId;
     return this;
   }
 
-   /**
+  /**
    * Dispute id sent by connector
    * @return connectorDisputeId
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_CONNECTOR_DISPUTE_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -371,21 +380,20 @@ public class DisputeResponse {
 
   @JsonProperty(JSON_PROPERTY_CONNECTOR_DISPUTE_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setConnectorDisputeId(String connectorDisputeId) {
+  public void setConnectorDisputeId(@javax.annotation.Nonnull String connectorDisputeId) {
     this.connectorDisputeId = connectorDisputeId;
   }
 
-
-  public DisputeResponse connectorReason(String connectorReason) {
+  public DisputeResponse connectorReason(@javax.annotation.Nullable String connectorReason) {
     this.connectorReason = JsonNullable.<String>of(connectorReason);
     
     return this;
   }
 
-   /**
+  /**
    * Reason of dispute sent by connector
    * @return connectorReason
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -405,21 +413,20 @@ public class DisputeResponse {
     this.connectorReason = connectorReason;
   }
 
-  public void setConnectorReason(String connectorReason) {
+  public void setConnectorReason(@javax.annotation.Nullable String connectorReason) {
     this.connectorReason = JsonNullable.<String>of(connectorReason);
   }
 
-
-  public DisputeResponse connectorReasonCode(String connectorReasonCode) {
+  public DisputeResponse connectorReasonCode(@javax.annotation.Nullable String connectorReasonCode) {
     this.connectorReasonCode = JsonNullable.<String>of(connectorReasonCode);
     
     return this;
   }
 
-   /**
+  /**
    * Reason code of dispute sent by connector
    * @return connectorReasonCode
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -439,21 +446,20 @@ public class DisputeResponse {
     this.connectorReasonCode = connectorReasonCode;
   }
 
-  public void setConnectorReasonCode(String connectorReasonCode) {
+  public void setConnectorReasonCode(@javax.annotation.Nullable String connectorReasonCode) {
     this.connectorReasonCode = JsonNullable.<String>of(connectorReasonCode);
   }
 
-
-  public DisputeResponse challengeRequiredBy(OffsetDateTime challengeRequiredBy) {
+  public DisputeResponse challengeRequiredBy(@javax.annotation.Nullable OffsetDateTime challengeRequiredBy) {
     this.challengeRequiredBy = JsonNullable.<OffsetDateTime>of(challengeRequiredBy);
     
     return this;
   }
 
-   /**
+  /**
    * Evidence deadline of dispute sent by connector
    * @return challengeRequiredBy
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -473,21 +479,20 @@ public class DisputeResponse {
     this.challengeRequiredBy = challengeRequiredBy;
   }
 
-  public void setChallengeRequiredBy(OffsetDateTime challengeRequiredBy) {
+  public void setChallengeRequiredBy(@javax.annotation.Nullable OffsetDateTime challengeRequiredBy) {
     this.challengeRequiredBy = JsonNullable.<OffsetDateTime>of(challengeRequiredBy);
   }
 
-
-  public DisputeResponse connectorCreatedAt(OffsetDateTime connectorCreatedAt) {
+  public DisputeResponse connectorCreatedAt(@javax.annotation.Nullable OffsetDateTime connectorCreatedAt) {
     this.connectorCreatedAt = JsonNullable.<OffsetDateTime>of(connectorCreatedAt);
     
     return this;
   }
 
-   /**
+  /**
    * Dispute created time sent by connector
    * @return connectorCreatedAt
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -507,21 +512,20 @@ public class DisputeResponse {
     this.connectorCreatedAt = connectorCreatedAt;
   }
 
-  public void setConnectorCreatedAt(OffsetDateTime connectorCreatedAt) {
+  public void setConnectorCreatedAt(@javax.annotation.Nullable OffsetDateTime connectorCreatedAt) {
     this.connectorCreatedAt = JsonNullable.<OffsetDateTime>of(connectorCreatedAt);
   }
 
-
-  public DisputeResponse connectorUpdatedAt(OffsetDateTime connectorUpdatedAt) {
+  public DisputeResponse connectorUpdatedAt(@javax.annotation.Nullable OffsetDateTime connectorUpdatedAt) {
     this.connectorUpdatedAt = JsonNullable.<OffsetDateTime>of(connectorUpdatedAt);
     
     return this;
   }
 
-   /**
+  /**
    * Dispute updated time sent by connector
    * @return connectorUpdatedAt
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -541,21 +545,20 @@ public class DisputeResponse {
     this.connectorUpdatedAt = connectorUpdatedAt;
   }
 
-  public void setConnectorUpdatedAt(OffsetDateTime connectorUpdatedAt) {
+  public void setConnectorUpdatedAt(@javax.annotation.Nullable OffsetDateTime connectorUpdatedAt) {
     this.connectorUpdatedAt = JsonNullable.<OffsetDateTime>of(connectorUpdatedAt);
   }
 
-
-  public DisputeResponse createdAt(OffsetDateTime createdAt) {
+  public DisputeResponse createdAt(@javax.annotation.Nonnull OffsetDateTime createdAt) {
     
     this.createdAt = createdAt;
     return this;
   }
 
-   /**
+  /**
    * Time at which dispute is received
    * @return createdAt
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_CREATED_AT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -567,21 +570,20 @@ public class DisputeResponse {
 
   @JsonProperty(JSON_PROPERTY_CREATED_AT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setCreatedAt(OffsetDateTime createdAt) {
+  public void setCreatedAt(@javax.annotation.Nonnull OffsetDateTime createdAt) {
     this.createdAt = createdAt;
   }
 
-
-  public DisputeResponse profileId(String profileId) {
+  public DisputeResponse profileId(@javax.annotation.Nullable String profileId) {
     this.profileId = JsonNullable.<String>of(profileId);
     
     return this;
   }
 
-   /**
+  /**
    * The &#x60;profile_id&#x60; associated with the dispute
    * @return profileId
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -601,21 +603,20 @@ public class DisputeResponse {
     this.profileId = profileId;
   }
 
-  public void setProfileId(String profileId) {
+  public void setProfileId(@javax.annotation.Nullable String profileId) {
     this.profileId = JsonNullable.<String>of(profileId);
   }
 
-
-  public DisputeResponse merchantConnectorId(String merchantConnectorId) {
+  public DisputeResponse merchantConnectorId(@javax.annotation.Nullable String merchantConnectorId) {
     this.merchantConnectorId = JsonNullable.<String>of(merchantConnectorId);
     
     return this;
   }
 
-   /**
+  /**
    * The &#x60;merchant_connector_id&#x60; of the connector / processor through which the dispute was processed
    * @return merchantConnectorId
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -635,7 +636,7 @@ public class DisputeResponse {
     this.merchantConnectorId = merchantConnectorId;
   }
 
-  public void setMerchantConnectorId(String merchantConnectorId) {
+  public void setMerchantConnectorId(@javax.annotation.Nullable String merchantConnectorId) {
     this.merchantConnectorId = JsonNullable.<String>of(merchantConnectorId);
   }
 

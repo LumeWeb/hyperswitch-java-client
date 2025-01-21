@@ -22,6 +22,7 @@ import com.fasterxml.jackson.annotation.JsonTypeName;
 import com.fasterxml.jackson.annotation.JsonValue;
 import com.hyperswitch.client.model.RedirectResponse;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import org.openapitools.jackson.nullable.JsonNullable;
 import com.fasterxml.jackson.annotation.JsonIgnore;
@@ -40,27 +41,29 @@ import java.util.StringJoiner;
   FeatureMetadata.JSON_PROPERTY_REDIRECT_RESPONSE,
   FeatureMetadata.JSON_PROPERTY_SEARCH_TAGS
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class FeatureMetadata {
   public static final String JSON_PROPERTY_REDIRECT_RESPONSE = "redirect_response";
+  @javax.annotation.Nullable
   private JsonNullable<RedirectResponse> redirectResponse = JsonNullable.<RedirectResponse>undefined();
 
   public static final String JSON_PROPERTY_SEARCH_TAGS = "search_tags";
+  @javax.annotation.Nullable
   private JsonNullable<List<String>> searchTags = JsonNullable.<List<String>>undefined();
 
   public FeatureMetadata() {
   }
 
-  public FeatureMetadata redirectResponse(RedirectResponse redirectResponse) {
+  public FeatureMetadata redirectResponse(@javax.annotation.Nullable RedirectResponse redirectResponse) {
     this.redirectResponse = JsonNullable.<RedirectResponse>of(redirectResponse);
     
     return this;
   }
 
-   /**
+  /**
    * Get redirectResponse
    * @return redirectResponse
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -80,12 +83,11 @@ public class FeatureMetadata {
     this.redirectResponse = redirectResponse;
   }
 
-  public void setRedirectResponse(RedirectResponse redirectResponse) {
+  public void setRedirectResponse(@javax.annotation.Nullable RedirectResponse redirectResponse) {
     this.redirectResponse = JsonNullable.<RedirectResponse>of(redirectResponse);
   }
 
-
-  public FeatureMetadata searchTags(List<String> searchTags) {
+  public FeatureMetadata searchTags(@javax.annotation.Nullable List<String> searchTags) {
     this.searchTags = JsonNullable.<List<String>>of(searchTags);
     
     return this;
@@ -103,10 +105,10 @@ public class FeatureMetadata {
     return this;
   }
 
-   /**
+  /**
    * Additional tags to be used for global search
    * @return searchTags
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -126,7 +128,7 @@ public class FeatureMetadata {
     this.searchTags = searchTags;
   }
 
-  public void setSearchTags(List<String> searchTags) {
+  public void setSearchTags(@javax.annotation.Nullable List<String> searchTags) {
     this.searchTags = JsonNullable.<List<String>>of(searchTags);
   }
 

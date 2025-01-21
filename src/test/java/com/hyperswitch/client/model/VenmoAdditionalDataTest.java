@@ -22,22 +22,21 @@ import org.openapitools.jackson.nullable.JsonNullable;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.openapitools.jackson.nullable.JsonNullable;
 import java.util.NoSuchElementException;
-import org.junit.Assert;
-import org.junit.Ignore;
-import org.junit.Test;
-
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Test;
 
 /**
  * Model tests for VenmoAdditionalData
  */
-public class VenmoAdditionalDataTest {
+class VenmoAdditionalDataTest {
     private final VenmoAdditionalData model = new VenmoAdditionalData();
 
     /**
      * Model tests for VenmoAdditionalData
      */
     @Test
-    public void testVenmoAdditionalData() {
+    void testVenmoAdditionalData() {
         // TODO: test VenmoAdditionalData
     }
 
@@ -45,7 +44,7 @@ public class VenmoAdditionalDataTest {
      * Test the property 'telephoneNumber'
      */
     @Test
-    public void telephoneNumberTest() {
+    void telephoneNumberTest() {
         // TODO: test telephoneNumber
     }
 

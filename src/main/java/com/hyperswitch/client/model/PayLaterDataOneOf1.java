@@ -34,24 +34,25 @@ import java.util.StringJoiner;
   PayLaterDataOneOf1.JSON_PROPERTY_KLARNA_SDK
 })
 @JsonTypeName("PayLaterData_oneOf_1")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class PayLaterDataOneOf1 {
   public static final String JSON_PROPERTY_KLARNA_SDK = "klarna_sdk";
+  @javax.annotation.Nonnull
   private PayLaterDataOneOf1KlarnaSdk klarnaSdk;
 
   public PayLaterDataOneOf1() {
   }
 
-  public PayLaterDataOneOf1 klarnaSdk(PayLaterDataOneOf1KlarnaSdk klarnaSdk) {
+  public PayLaterDataOneOf1 klarnaSdk(@javax.annotation.Nonnull PayLaterDataOneOf1KlarnaSdk klarnaSdk) {
     
     this.klarnaSdk = klarnaSdk;
     return this;
   }
 
-   /**
+  /**
    * Get klarnaSdk
    * @return klarnaSdk
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_KLARNA_SDK)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -63,7 +64,7 @@ public class PayLaterDataOneOf1 {
 
   @JsonProperty(JSON_PROPERTY_KLARNA_SDK)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setKlarnaSdk(PayLaterDataOneOf1KlarnaSdk klarnaSdk) {
+  public void setKlarnaSdk(@javax.annotation.Nonnull PayLaterDataOneOf1KlarnaSdk klarnaSdk) {
     this.klarnaSdk = klarnaSdk;
   }
 

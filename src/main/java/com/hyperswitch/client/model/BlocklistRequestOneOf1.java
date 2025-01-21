@@ -34,13 +34,13 @@ import java.util.StringJoiner;
   BlocklistRequestOneOf1.JSON_PROPERTY_DATA
 })
 @JsonTypeName("BlocklistRequest_oneOf_1")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class BlocklistRequestOneOf1 {
   /**
    * Gets or Sets type
    */
   public enum TypeEnum {
-    FINGERPRINT("fingerprint");
+    FINGERPRINT(String.valueOf("fingerprint"));
 
     private String value;
 
@@ -70,24 +70,26 @@ public class BlocklistRequestOneOf1 {
   }
 
   public static final String JSON_PROPERTY_TYPE = "type";
+  @javax.annotation.Nonnull
   private TypeEnum type;
 
   public static final String JSON_PROPERTY_DATA = "data";
+  @javax.annotation.Nonnull
   private String data;
 
   public BlocklistRequestOneOf1() {
   }
 
-  public BlocklistRequestOneOf1 type(TypeEnum type) {
+  public BlocklistRequestOneOf1 type(@javax.annotation.Nonnull TypeEnum type) {
     
     this.type = type;
     return this;
   }
 
-   /**
+  /**
    * Get type
    * @return type
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_TYPE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -99,21 +101,20 @@ public class BlocklistRequestOneOf1 {
 
   @JsonProperty(JSON_PROPERTY_TYPE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setType(TypeEnum type) {
+  public void setType(@javax.annotation.Nonnull TypeEnum type) {
     this.type = type;
   }
 
-
-  public BlocklistRequestOneOf1 data(String data) {
+  public BlocklistRequestOneOf1 data(@javax.annotation.Nonnull String data) {
     
     this.data = data;
     return this;
   }
 
-   /**
+  /**
    * Get data
    * @return data
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_DATA)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -125,7 +126,7 @@ public class BlocklistRequestOneOf1 {
 
   @JsonProperty(JSON_PROPERTY_DATA)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setData(String data) {
+  public void setData(@javax.annotation.Nonnull String data) {
     this.data = data;
   }
 

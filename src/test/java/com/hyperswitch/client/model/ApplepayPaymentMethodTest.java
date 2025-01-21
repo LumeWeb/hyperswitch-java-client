@@ -18,22 +18,21 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonTypeName;
 import com.fasterxml.jackson.annotation.JsonValue;
-import org.junit.Assert;
-import org.junit.Ignore;
-import org.junit.Test;
-
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Test;
 
 /**
  * Model tests for ApplepayPaymentMethod
  */
-public class ApplepayPaymentMethodTest {
+class ApplepayPaymentMethodTest {
     private final ApplepayPaymentMethod model = new ApplepayPaymentMethod();
 
     /**
      * Model tests for ApplepayPaymentMethod
      */
     @Test
-    public void testApplepayPaymentMethod() {
+    void testApplepayPaymentMethod() {
         // TODO: test ApplepayPaymentMethod
     }
 
@@ -41,7 +40,7 @@ public class ApplepayPaymentMethodTest {
      * Test the property 'displayName'
      */
     @Test
-    public void displayNameTest() {
+    void displayNameTest() {
         // TODO: test displayName
     }
 
@@ -49,7 +48,7 @@ public class ApplepayPaymentMethodTest {
      * Test the property 'network'
      */
     @Test
-    public void networkTest() {
+    void networkTest() {
         // TODO: test network
     }
 
@@ -57,7 +56,7 @@ public class ApplepayPaymentMethodTest {
      * Test the property 'type'
      */
     @Test
-    public void typeTest() {
+    void typeTest() {
         // TODO: test type
     }
 

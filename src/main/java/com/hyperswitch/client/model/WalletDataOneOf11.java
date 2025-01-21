@@ -34,24 +34,25 @@ import java.util.StringJoiner;
   WalletDataOneOf11.JSON_PROPERTY_GOOGLE_PAY
 })
 @JsonTypeName("WalletData_oneOf_11")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class WalletDataOneOf11 {
   public static final String JSON_PROPERTY_GOOGLE_PAY = "google_pay";
+  @javax.annotation.Nonnull
   private GooglePayWalletData googlePay;
 
   public WalletDataOneOf11() {
   }
 
-  public WalletDataOneOf11 googlePay(GooglePayWalletData googlePay) {
+  public WalletDataOneOf11 googlePay(@javax.annotation.Nonnull GooglePayWalletData googlePay) {
     
     this.googlePay = googlePay;
     return this;
   }
 
-   /**
+  /**
    * Get googlePay
    * @return googlePay
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_GOOGLE_PAY)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -63,7 +64,7 @@ public class WalletDataOneOf11 {
 
   @JsonProperty(JSON_PROPERTY_GOOGLE_PAY)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setGooglePay(GooglePayWalletData googlePay) {
+  public void setGooglePay(@javax.annotation.Nonnull GooglePayWalletData googlePay) {
     this.googlePay = googlePay;
   }
 

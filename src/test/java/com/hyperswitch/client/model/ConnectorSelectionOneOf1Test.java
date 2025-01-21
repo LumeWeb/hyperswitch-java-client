@@ -20,23 +20,23 @@ import com.fasterxml.jackson.annotation.JsonTypeName;
 import com.fasterxml.jackson.annotation.JsonValue;
 import com.hyperswitch.client.model.ConnectorVolumeSplit;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
-import org.junit.Assert;
-import org.junit.Ignore;
-import org.junit.Test;
-
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Test;
 
 /**
  * Model tests for ConnectorSelectionOneOf1
  */
-public class ConnectorSelectionOneOf1Test {
+class ConnectorSelectionOneOf1Test {
     private final ConnectorSelectionOneOf1 model = new ConnectorSelectionOneOf1();
 
     /**
      * Model tests for ConnectorSelectionOneOf1
      */
     @Test
-    public void testConnectorSelectionOneOf1() {
+    void testConnectorSelectionOneOf1() {
         // TODO: test ConnectorSelectionOneOf1
     }
 
@@ -44,7 +44,7 @@ public class ConnectorSelectionOneOf1Test {
      * Test the property 'type'
      */
     @Test
-    public void typeTest() {
+    void typeTest() {
         // TODO: test type
     }
 
@@ -52,7 +52,7 @@ public class ConnectorSelectionOneOf1Test {
      * Test the property 'data'
      */
     @Test
-    public void dataTest() {
+    void dataTest() {
         // TODO: test data
     }
 

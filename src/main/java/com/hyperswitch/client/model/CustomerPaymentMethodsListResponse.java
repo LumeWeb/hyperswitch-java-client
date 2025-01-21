@@ -22,6 +22,7 @@ import com.fasterxml.jackson.annotation.JsonTypeName;
 import com.fasterxml.jackson.annotation.JsonValue;
 import com.hyperswitch.client.model.CustomerPaymentMethod;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import org.openapitools.jackson.nullable.JsonNullable;
 import com.fasterxml.jackson.annotation.JsonIgnore;
@@ -40,18 +41,20 @@ import java.util.StringJoiner;
   CustomerPaymentMethodsListResponse.JSON_PROPERTY_CUSTOMER_PAYMENT_METHODS,
   CustomerPaymentMethodsListResponse.JSON_PROPERTY_IS_GUEST_CUSTOMER
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class CustomerPaymentMethodsListResponse {
   public static final String JSON_PROPERTY_CUSTOMER_PAYMENT_METHODS = "customer_payment_methods";
+  @javax.annotation.Nonnull
   private List<CustomerPaymentMethod> customerPaymentMethods = new ArrayList<>();
 
   public static final String JSON_PROPERTY_IS_GUEST_CUSTOMER = "is_guest_customer";
+  @javax.annotation.Nullable
   private JsonNullable<Boolean> isGuestCustomer = JsonNullable.<Boolean>undefined();
 
   public CustomerPaymentMethodsListResponse() {
   }
 
-  public CustomerPaymentMethodsListResponse customerPaymentMethods(List<CustomerPaymentMethod> customerPaymentMethods) {
+  public CustomerPaymentMethodsListResponse customerPaymentMethods(@javax.annotation.Nonnull List<CustomerPaymentMethod> customerPaymentMethods) {
     
     this.customerPaymentMethods = customerPaymentMethods;
     return this;
@@ -65,10 +68,10 @@ public class CustomerPaymentMethodsListResponse {
     return this;
   }
 
-   /**
+  /**
    * List of payment methods for customer
    * @return customerPaymentMethods
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_CUSTOMER_PAYMENT_METHODS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -80,21 +83,20 @@ public class CustomerPaymentMethodsListResponse {
 
   @JsonProperty(JSON_PROPERTY_CUSTOMER_PAYMENT_METHODS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setCustomerPaymentMethods(List<CustomerPaymentMethod> customerPaymentMethods) {
+  public void setCustomerPaymentMethods(@javax.annotation.Nonnull List<CustomerPaymentMethod> customerPaymentMethods) {
     this.customerPaymentMethods = customerPaymentMethods;
   }
 
-
-  public CustomerPaymentMethodsListResponse isGuestCustomer(Boolean isGuestCustomer) {
+  public CustomerPaymentMethodsListResponse isGuestCustomer(@javax.annotation.Nullable Boolean isGuestCustomer) {
     this.isGuestCustomer = JsonNullable.<Boolean>of(isGuestCustomer);
     
     return this;
   }
 
-   /**
+  /**
    * Returns whether a customer id is not tied to a payment intent (only when the request is made against a client secret)
    * @return isGuestCustomer
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -114,7 +116,7 @@ public class CustomerPaymentMethodsListResponse {
     this.isGuestCustomer = isGuestCustomer;
   }
 
-  public void setIsGuestCustomer(Boolean isGuestCustomer) {
+  public void setIsGuestCustomer(@javax.annotation.Nullable Boolean isGuestCustomer) {
     this.isGuestCustomer = JsonNullable.<Boolean>of(isGuestCustomer);
   }
 

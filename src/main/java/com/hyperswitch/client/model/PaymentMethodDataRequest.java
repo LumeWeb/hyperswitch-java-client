@@ -50,7 +50,6 @@ import java.util.StringJoiner;
  * The payment method information provided for making a payment
  */
 @JsonPropertyOrder({
-  PaymentMethodDataRequest.JSON_PROPERTY_BILLING,
   PaymentMethodDataRequest.JSON_PROPERTY_CARD,
   PaymentMethodDataRequest.JSON_PROPERTY_CARD_REDIRECT,
   PaymentMethodDataRequest.JSON_PROPERTY_WALLET,
@@ -65,71 +64,463 @@ import java.util.StringJoiner;
   PaymentMethodDataRequest.JSON_PROPERTY_GIFT_CARD,
   PaymentMethodDataRequest.JSON_PROPERTY_CARD_TOKEN,
   PaymentMethodDataRequest.JSON_PROPERTY_OPEN_BANKING,
-  PaymentMethodDataRequest.JSON_PROPERTY_MOBILE_PAYMENT
+  PaymentMethodDataRequest.JSON_PROPERTY_MOBILE_PAYMENT,
+  PaymentMethodDataRequest.JSON_PROPERTY_BILLING
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class PaymentMethodDataRequest {
-  public static final String JSON_PROPERTY_BILLING = "billing";
-  private JsonNullable<Address> billing = JsonNullable.<Address>undefined();
-
   public static final String JSON_PROPERTY_CARD = "card";
+  @javax.annotation.Nonnull
   private Card card;
 
   public static final String JSON_PROPERTY_CARD_REDIRECT = "card_redirect";
+  @javax.annotation.Nonnull
   private CardRedirectData cardRedirect;
 
   public static final String JSON_PROPERTY_WALLET = "wallet";
+  @javax.annotation.Nonnull
   private WalletData wallet;
 
   public static final String JSON_PROPERTY_PAY_LATER = "pay_later";
+  @javax.annotation.Nonnull
   private PayLaterData payLater;
 
   public static final String JSON_PROPERTY_BANK_REDIRECT = "bank_redirect";
+  @javax.annotation.Nonnull
   private BankRedirectData bankRedirect;
 
   public static final String JSON_PROPERTY_BANK_DEBIT = "bank_debit";
+  @javax.annotation.Nonnull
   private BankDebitData bankDebit;
 
   public static final String JSON_PROPERTY_BANK_TRANSFER = "bank_transfer";
+  @javax.annotation.Nonnull
   private BankTransferData bankTransfer;
 
   public static final String JSON_PROPERTY_REAL_TIME_PAYMENT = "real_time_payment";
+  @javax.annotation.Nonnull
   private RealTimePaymentData realTimePayment;
 
   public static final String JSON_PROPERTY_CRYPTO = "crypto";
+  @javax.annotation.Nonnull
   private CryptoData crypto;
 
   public static final String JSON_PROPERTY_UPI = "upi";
+  @javax.annotation.Nonnull
   private UpiData upi;
 
   public static final String JSON_PROPERTY_VOUCHER = "voucher";
+  @javax.annotation.Nonnull
   private VoucherData voucher;
 
   public static final String JSON_PROPERTY_GIFT_CARD = "gift_card";
+  @javax.annotation.Nonnull
   private GiftCardData giftCard;
 
   public static final String JSON_PROPERTY_CARD_TOKEN = "card_token";
+  @javax.annotation.Nonnull
   private CardToken cardToken;
 
   public static final String JSON_PROPERTY_OPEN_BANKING = "open_banking";
+  @javax.annotation.Nonnull
   private OpenBankingData openBanking;
 
   public static final String JSON_PROPERTY_MOBILE_PAYMENT = "mobile_payment";
+  @javax.annotation.Nonnull
   private MobilePaymentData mobilePayment;
+
+  public static final String JSON_PROPERTY_BILLING = "billing";
+  @javax.annotation.Nullable
+  private JsonNullable<Address> billing = JsonNullable.<Address>undefined();
 
   public PaymentMethodDataRequest() {
   }
 
-  public PaymentMethodDataRequest billing(Address billing) {
+  public PaymentMethodDataRequest card(@javax.annotation.Nonnull Card card) {
+    
+    this.card = card;
+    return this;
+  }
+
+  /**
+   * Get card
+   * @return card
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_CARD)
+  @JsonInclude(value = JsonInclude.Include.ALWAYS)
+
+  public Card getCard() {
+    return card;
+  }
+
+
+  @JsonProperty(JSON_PROPERTY_CARD)
+  @JsonInclude(value = JsonInclude.Include.ALWAYS)
+  public void setCard(@javax.annotation.Nonnull Card card) {
+    this.card = card;
+  }
+
+  public PaymentMethodDataRequest cardRedirect(@javax.annotation.Nonnull CardRedirectData cardRedirect) {
+    
+    this.cardRedirect = cardRedirect;
+    return this;
+  }
+
+  /**
+   * Get cardRedirect
+   * @return cardRedirect
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_CARD_REDIRECT)
+  @JsonInclude(value = JsonInclude.Include.ALWAYS)
+
+  public CardRedirectData getCardRedirect() {
+    return cardRedirect;
+  }
+
+
+  @JsonProperty(JSON_PROPERTY_CARD_REDIRECT)
+  @JsonInclude(value = JsonInclude.Include.ALWAYS)
+  public void setCardRedirect(@javax.annotation.Nonnull CardRedirectData cardRedirect) {
+    this.cardRedirect = cardRedirect;
+  }
+
+  public PaymentMethodDataRequest wallet(@javax.annotation.Nonnull WalletData wallet) {
+    
+    this.wallet = wallet;
+    return this;
+  }
+
+  /**
+   * Get wallet
+   * @return wallet
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_WALLET)
+  @JsonInclude(value = JsonInclude.Include.ALWAYS)
+
+  public WalletData getWallet() {
+    return wallet;
+  }
+
+
+  @JsonProperty(JSON_PROPERTY_WALLET)
+  @JsonInclude(value = JsonInclude.Include.ALWAYS)
+  public void setWallet(@javax.annotation.Nonnull WalletData wallet) {
+    this.wallet = wallet;
+  }
+
+  public PaymentMethodDataRequest payLater(@javax.annotation.Nonnull PayLaterData payLater) {
+    
+    this.payLater = payLater;
+    return this;
+  }
+
+  /**
+   * Get payLater
+   * @return payLater
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_PAY_LATER)
+  @JsonInclude(value = JsonInclude.Include.ALWAYS)
+
+  public PayLaterData getPayLater() {
+    return payLater;
+  }
+
+
+  @JsonProperty(JSON_PROPERTY_PAY_LATER)
+  @JsonInclude(value = JsonInclude.Include.ALWAYS)
+  public void setPayLater(@javax.annotation.Nonnull PayLaterData payLater) {
+    this.payLater = payLater;
+  }
+
+  public PaymentMethodDataRequest bankRedirect(@javax.annotation.Nonnull BankRedirectData bankRedirect) {
+    
+    this.bankRedirect = bankRedirect;
+    return this;
+  }
+
+  /**
+   * Get bankRedirect
+   * @return bankRedirect
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_BANK_REDIRECT)
+  @JsonInclude(value = JsonInclude.Include.ALWAYS)
+
+  public BankRedirectData getBankRedirect() {
+    return bankRedirect;
+  }
+
+
+  @JsonProperty(JSON_PROPERTY_BANK_REDIRECT)
+  @JsonInclude(value = JsonInclude.Include.ALWAYS)
+  public void setBankRedirect(@javax.annotation.Nonnull BankRedirectData bankRedirect) {
+    this.bankRedirect = bankRedirect;
+  }
+
+  public PaymentMethodDataRequest bankDebit(@javax.annotation.Nonnull BankDebitData bankDebit) {
+    
+    this.bankDebit = bankDebit;
+    return this;
+  }
+
+  /**
+   * Get bankDebit
+   * @return bankDebit
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_BANK_DEBIT)
+  @JsonInclude(value = JsonInclude.Include.ALWAYS)
+
+  public BankDebitData getBankDebit() {
+    return bankDebit;
+  }
+
+
+  @JsonProperty(JSON_PROPERTY_BANK_DEBIT)
+  @JsonInclude(value = JsonInclude.Include.ALWAYS)
+  public void setBankDebit(@javax.annotation.Nonnull BankDebitData bankDebit) {
+    this.bankDebit = bankDebit;
+  }
+
+  public PaymentMethodDataRequest bankTransfer(@javax.annotation.Nonnull BankTransferData bankTransfer) {
+    
+    this.bankTransfer = bankTransfer;
+    return this;
+  }
+
+  /**
+   * Get bankTransfer
+   * @return bankTransfer
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_BANK_TRANSFER)
+  @JsonInclude(value = JsonInclude.Include.ALWAYS)
+
+  public BankTransferData getBankTransfer() {
+    return bankTransfer;
+  }
+
+
+  @JsonProperty(JSON_PROPERTY_BANK_TRANSFER)
+  @JsonInclude(value = JsonInclude.Include.ALWAYS)
+  public void setBankTransfer(@javax.annotation.Nonnull BankTransferData bankTransfer) {
+    this.bankTransfer = bankTransfer;
+  }
+
+  public PaymentMethodDataRequest realTimePayment(@javax.annotation.Nonnull RealTimePaymentData realTimePayment) {
+    
+    this.realTimePayment = realTimePayment;
+    return this;
+  }
+
+  /**
+   * Get realTimePayment
+   * @return realTimePayment
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_REAL_TIME_PAYMENT)
+  @JsonInclude(value = JsonInclude.Include.ALWAYS)
+
+  public RealTimePaymentData getRealTimePayment() {
+    return realTimePayment;
+  }
+
+
+  @JsonProperty(JSON_PROPERTY_REAL_TIME_PAYMENT)
+  @JsonInclude(value = JsonInclude.Include.ALWAYS)
+  public void setRealTimePayment(@javax.annotation.Nonnull RealTimePaymentData realTimePayment) {
+    this.realTimePayment = realTimePayment;
+  }
+
+  public PaymentMethodDataRequest crypto(@javax.annotation.Nonnull CryptoData crypto) {
+    
+    this.crypto = crypto;
+    return this;
+  }
+
+  /**
+   * Get crypto
+   * @return crypto
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_CRYPTO)
+  @JsonInclude(value = JsonInclude.Include.ALWAYS)
+
+  public CryptoData getCrypto() {
+    return crypto;
+  }
+
+
+  @JsonProperty(JSON_PROPERTY_CRYPTO)
+  @JsonInclude(value = JsonInclude.Include.ALWAYS)
+  public void setCrypto(@javax.annotation.Nonnull CryptoData crypto) {
+    this.crypto = crypto;
+  }
+
+  public PaymentMethodDataRequest upi(@javax.annotation.Nonnull UpiData upi) {
+    
+    this.upi = upi;
+    return this;
+  }
+
+  /**
+   * Get upi
+   * @return upi
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_UPI)
+  @JsonInclude(value = JsonInclude.Include.ALWAYS)
+
+  public UpiData getUpi() {
+    return upi;
+  }
+
+
+  @JsonProperty(JSON_PROPERTY_UPI)
+  @JsonInclude(value = JsonInclude.Include.ALWAYS)
+  public void setUpi(@javax.annotation.Nonnull UpiData upi) {
+    this.upi = upi;
+  }
+
+  public PaymentMethodDataRequest voucher(@javax.annotation.Nonnull VoucherData voucher) {
+    
+    this.voucher = voucher;
+    return this;
+  }
+
+  /**
+   * Get voucher
+   * @return voucher
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_VOUCHER)
+  @JsonInclude(value = JsonInclude.Include.ALWAYS)
+
+  public VoucherData getVoucher() {
+    return voucher;
+  }
+
+
+  @JsonProperty(JSON_PROPERTY_VOUCHER)
+  @JsonInclude(value = JsonInclude.Include.ALWAYS)
+  public void setVoucher(@javax.annotation.Nonnull VoucherData voucher) {
+    this.voucher = voucher;
+  }
+
+  public PaymentMethodDataRequest giftCard(@javax.annotation.Nonnull GiftCardData giftCard) {
+    
+    this.giftCard = giftCard;
+    return this;
+  }
+
+  /**
+   * Get giftCard
+   * @return giftCard
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_GIFT_CARD)
+  @JsonInclude(value = JsonInclude.Include.ALWAYS)
+
+  public GiftCardData getGiftCard() {
+    return giftCard;
+  }
+
+
+  @JsonProperty(JSON_PROPERTY_GIFT_CARD)
+  @JsonInclude(value = JsonInclude.Include.ALWAYS)
+  public void setGiftCard(@javax.annotation.Nonnull GiftCardData giftCard) {
+    this.giftCard = giftCard;
+  }
+
+  public PaymentMethodDataRequest cardToken(@javax.annotation.Nonnull CardToken cardToken) {
+    
+    this.cardToken = cardToken;
+    return this;
+  }
+
+  /**
+   * Get cardToken
+   * @return cardToken
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_CARD_TOKEN)
+  @JsonInclude(value = JsonInclude.Include.ALWAYS)
+
+  public CardToken getCardToken() {
+    return cardToken;
+  }
+
+
+  @JsonProperty(JSON_PROPERTY_CARD_TOKEN)
+  @JsonInclude(value = JsonInclude.Include.ALWAYS)
+  public void setCardToken(@javax.annotation.Nonnull CardToken cardToken) {
+    this.cardToken = cardToken;
+  }
+
+  public PaymentMethodDataRequest openBanking(@javax.annotation.Nonnull OpenBankingData openBanking) {
+    
+    this.openBanking = openBanking;
+    return this;
+  }
+
+  /**
+   * Get openBanking
+   * @return openBanking
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_OPEN_BANKING)
+  @JsonInclude(value = JsonInclude.Include.ALWAYS)
+
+  public OpenBankingData getOpenBanking() {
+    return openBanking;
+  }
+
+
+  @JsonProperty(JSON_PROPERTY_OPEN_BANKING)
+  @JsonInclude(value = JsonInclude.Include.ALWAYS)
+  public void setOpenBanking(@javax.annotation.Nonnull OpenBankingData openBanking) {
+    this.openBanking = openBanking;
+  }
+
+  public PaymentMethodDataRequest mobilePayment(@javax.annotation.Nonnull MobilePaymentData mobilePayment) {
+    
+    this.mobilePayment = mobilePayment;
+    return this;
+  }
+
+  /**
+   * Get mobilePayment
+   * @return mobilePayment
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_MOBILE_PAYMENT)
+  @JsonInclude(value = JsonInclude.Include.ALWAYS)
+
+  public MobilePaymentData getMobilePayment() {
+    return mobilePayment;
+  }
+
+
+  @JsonProperty(JSON_PROPERTY_MOBILE_PAYMENT)
+  @JsonInclude(value = JsonInclude.Include.ALWAYS)
+  public void setMobilePayment(@javax.annotation.Nonnull MobilePaymentData mobilePayment) {
+    this.mobilePayment = mobilePayment;
+  }
+
+  public PaymentMethodDataRequest billing(@javax.annotation.Nullable Address billing) {
     this.billing = JsonNullable.<Address>of(billing);
     
     return this;
   }
 
-   /**
+  /**
    * Get billing
    * @return billing
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -149,398 +540,8 @@ public class PaymentMethodDataRequest {
     this.billing = billing;
   }
 
-  public void setBilling(Address billing) {
+  public void setBilling(@javax.annotation.Nullable Address billing) {
     this.billing = JsonNullable.<Address>of(billing);
-  }
-
-
-  public PaymentMethodDataRequest card(Card card) {
-    
-    this.card = card;
-    return this;
-  }
-
-   /**
-   * Get card
-   * @return card
-  **/
-  @javax.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_CARD)
-  @JsonInclude(value = JsonInclude.Include.ALWAYS)
-
-  public Card getCard() {
-    return card;
-  }
-
-
-  @JsonProperty(JSON_PROPERTY_CARD)
-  @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setCard(Card card) {
-    this.card = card;
-  }
-
-
-  public PaymentMethodDataRequest cardRedirect(CardRedirectData cardRedirect) {
-    
-    this.cardRedirect = cardRedirect;
-    return this;
-  }
-
-   /**
-   * Get cardRedirect
-   * @return cardRedirect
-  **/
-  @javax.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_CARD_REDIRECT)
-  @JsonInclude(value = JsonInclude.Include.ALWAYS)
-
-  public CardRedirectData getCardRedirect() {
-    return cardRedirect;
-  }
-
-
-  @JsonProperty(JSON_PROPERTY_CARD_REDIRECT)
-  @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setCardRedirect(CardRedirectData cardRedirect) {
-    this.cardRedirect = cardRedirect;
-  }
-
-
-  public PaymentMethodDataRequest wallet(WalletData wallet) {
-    
-    this.wallet = wallet;
-    return this;
-  }
-
-   /**
-   * Get wallet
-   * @return wallet
-  **/
-  @javax.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_WALLET)
-  @JsonInclude(value = JsonInclude.Include.ALWAYS)
-
-  public WalletData getWallet() {
-    return wallet;
-  }
-
-
-  @JsonProperty(JSON_PROPERTY_WALLET)
-  @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setWallet(WalletData wallet) {
-    this.wallet = wallet;
-  }
-
-
-  public PaymentMethodDataRequest payLater(PayLaterData payLater) {
-    
-    this.payLater = payLater;
-    return this;
-  }
-
-   /**
-   * Get payLater
-   * @return payLater
-  **/
-  @javax.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_PAY_LATER)
-  @JsonInclude(value = JsonInclude.Include.ALWAYS)
-
-  public PayLaterData getPayLater() {
-    return payLater;
-  }
-
-
-  @JsonProperty(JSON_PROPERTY_PAY_LATER)
-  @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setPayLater(PayLaterData payLater) {
-    this.payLater = payLater;
-  }
-
-
-  public PaymentMethodDataRequest bankRedirect(BankRedirectData bankRedirect) {
-    
-    this.bankRedirect = bankRedirect;
-    return this;
-  }
-
-   /**
-   * Get bankRedirect
-   * @return bankRedirect
-  **/
-  @javax.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_BANK_REDIRECT)
-  @JsonInclude(value = JsonInclude.Include.ALWAYS)
-
-  public BankRedirectData getBankRedirect() {
-    return bankRedirect;
-  }
-
-
-  @JsonProperty(JSON_PROPERTY_BANK_REDIRECT)
-  @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setBankRedirect(BankRedirectData bankRedirect) {
-    this.bankRedirect = bankRedirect;
-  }
-
-
-  public PaymentMethodDataRequest bankDebit(BankDebitData bankDebit) {
-    
-    this.bankDebit = bankDebit;
-    return this;
-  }
-
-   /**
-   * Get bankDebit
-   * @return bankDebit
-  **/
-  @javax.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_BANK_DEBIT)
-  @JsonInclude(value = JsonInclude.Include.ALWAYS)
-
-  public BankDebitData getBankDebit() {
-    return bankDebit;
-  }
-
-
-  @JsonProperty(JSON_PROPERTY_BANK_DEBIT)
-  @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setBankDebit(BankDebitData bankDebit) {
-    this.bankDebit = bankDebit;
-  }
-
-
-  public PaymentMethodDataRequest bankTransfer(BankTransferData bankTransfer) {
-    
-    this.bankTransfer = bankTransfer;
-    return this;
-  }
-
-   /**
-   * Get bankTransfer
-   * @return bankTransfer
-  **/
-  @javax.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_BANK_TRANSFER)
-  @JsonInclude(value = JsonInclude.Include.ALWAYS)
-
-  public BankTransferData getBankTransfer() {
-    return bankTransfer;
-  }
-
-
-  @JsonProperty(JSON_PROPERTY_BANK_TRANSFER)
-  @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setBankTransfer(BankTransferData bankTransfer) {
-    this.bankTransfer = bankTransfer;
-  }
-
-
-  public PaymentMethodDataRequest realTimePayment(RealTimePaymentData realTimePayment) {
-    
-    this.realTimePayment = realTimePayment;
-    return this;
-  }
-
-   /**
-   * Get realTimePayment
-   * @return realTimePayment
-  **/
-  @javax.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_REAL_TIME_PAYMENT)
-  @JsonInclude(value = JsonInclude.Include.ALWAYS)
-
-  public RealTimePaymentData getRealTimePayment() {
-    return realTimePayment;
-  }
-
-
-  @JsonProperty(JSON_PROPERTY_REAL_TIME_PAYMENT)
-  @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setRealTimePayment(RealTimePaymentData realTimePayment) {
-    this.realTimePayment = realTimePayment;
-  }
-
-
-  public PaymentMethodDataRequest crypto(CryptoData crypto) {
-    
-    this.crypto = crypto;
-    return this;
-  }
-
-   /**
-   * Get crypto
-   * @return crypto
-  **/
-  @javax.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_CRYPTO)
-  @JsonInclude(value = JsonInclude.Include.ALWAYS)
-
-  public CryptoData getCrypto() {
-    return crypto;
-  }
-
-
-  @JsonProperty(JSON_PROPERTY_CRYPTO)
-  @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setCrypto(CryptoData crypto) {
-    this.crypto = crypto;
-  }
-
-
-  public PaymentMethodDataRequest upi(UpiData upi) {
-    
-    this.upi = upi;
-    return this;
-  }
-
-   /**
-   * Get upi
-   * @return upi
-  **/
-  @javax.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_UPI)
-  @JsonInclude(value = JsonInclude.Include.ALWAYS)
-
-  public UpiData getUpi() {
-    return upi;
-  }
-
-
-  @JsonProperty(JSON_PROPERTY_UPI)
-  @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setUpi(UpiData upi) {
-    this.upi = upi;
-  }
-
-
-  public PaymentMethodDataRequest voucher(VoucherData voucher) {
-    
-    this.voucher = voucher;
-    return this;
-  }
-
-   /**
-   * Get voucher
-   * @return voucher
-  **/
-  @javax.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_VOUCHER)
-  @JsonInclude(value = JsonInclude.Include.ALWAYS)
-
-  public VoucherData getVoucher() {
-    return voucher;
-  }
-
-
-  @JsonProperty(JSON_PROPERTY_VOUCHER)
-  @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setVoucher(VoucherData voucher) {
-    this.voucher = voucher;
-  }
-
-
-  public PaymentMethodDataRequest giftCard(GiftCardData giftCard) {
-    
-    this.giftCard = giftCard;
-    return this;
-  }
-
-   /**
-   * Get giftCard
-   * @return giftCard
-  **/
-  @javax.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_GIFT_CARD)
-  @JsonInclude(value = JsonInclude.Include.ALWAYS)
-
-  public GiftCardData getGiftCard() {
-    return giftCard;
-  }
-
-
-  @JsonProperty(JSON_PROPERTY_GIFT_CARD)
-  @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setGiftCard(GiftCardData giftCard) {
-    this.giftCard = giftCard;
-  }
-
-
-  public PaymentMethodDataRequest cardToken(CardToken cardToken) {
-    
-    this.cardToken = cardToken;
-    return this;
-  }
-
-   /**
-   * Get cardToken
-   * @return cardToken
-  **/
-  @javax.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_CARD_TOKEN)
-  @JsonInclude(value = JsonInclude.Include.ALWAYS)
-
-  public CardToken getCardToken() {
-    return cardToken;
-  }
-
-
-  @JsonProperty(JSON_PROPERTY_CARD_TOKEN)
-  @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setCardToken(CardToken cardToken) {
-    this.cardToken = cardToken;
-  }
-
-
-  public PaymentMethodDataRequest openBanking(OpenBankingData openBanking) {
-    
-    this.openBanking = openBanking;
-    return this;
-  }
-
-   /**
-   * Get openBanking
-   * @return openBanking
-  **/
-  @javax.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_OPEN_BANKING)
-  @JsonInclude(value = JsonInclude.Include.ALWAYS)
-
-  public OpenBankingData getOpenBanking() {
-    return openBanking;
-  }
-
-
-  @JsonProperty(JSON_PROPERTY_OPEN_BANKING)
-  @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setOpenBanking(OpenBankingData openBanking) {
-    this.openBanking = openBanking;
-  }
-
-
-  public PaymentMethodDataRequest mobilePayment(MobilePaymentData mobilePayment) {
-    
-    this.mobilePayment = mobilePayment;
-    return this;
-  }
-
-   /**
-   * Get mobilePayment
-   * @return mobilePayment
-  **/
-  @javax.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_MOBILE_PAYMENT)
-  @JsonInclude(value = JsonInclude.Include.ALWAYS)
-
-  public MobilePaymentData getMobilePayment() {
-    return mobilePayment;
-  }
-
-
-  @JsonProperty(JSON_PROPERTY_MOBILE_PAYMENT)
-  @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setMobilePayment(MobilePaymentData mobilePayment) {
-    this.mobilePayment = mobilePayment;
   }
 
   @Override
@@ -552,8 +553,7 @@ public class PaymentMethodDataRequest {
       return false;
     }
     PaymentMethodDataRequest paymentMethodDataRequest = (PaymentMethodDataRequest) o;
-    return equalsNullable(this.billing, paymentMethodDataRequest.billing) &&
-        Objects.equals(this.card, paymentMethodDataRequest.card) &&
+    return Objects.equals(this.card, paymentMethodDataRequest.card) &&
         Objects.equals(this.cardRedirect, paymentMethodDataRequest.cardRedirect) &&
         Objects.equals(this.wallet, paymentMethodDataRequest.wallet) &&
         Objects.equals(this.payLater, paymentMethodDataRequest.payLater) &&
@@ -567,7 +567,8 @@ public class PaymentMethodDataRequest {
         Objects.equals(this.giftCard, paymentMethodDataRequest.giftCard) &&
         Objects.equals(this.cardToken, paymentMethodDataRequest.cardToken) &&
         Objects.equals(this.openBanking, paymentMethodDataRequest.openBanking) &&
-        Objects.equals(this.mobilePayment, paymentMethodDataRequest.mobilePayment);
+        Objects.equals(this.mobilePayment, paymentMethodDataRequest.mobilePayment) &&
+        equalsNullable(this.billing, paymentMethodDataRequest.billing);
   }
 
   private static <T> boolean equalsNullable(JsonNullable<T> a, JsonNullable<T> b) {
@@ -576,7 +577,7 @@ public class PaymentMethodDataRequest {
 
   @Override
   public int hashCode() {
-    return Objects.hash(hashCodeNullable(billing), card, cardRedirect, wallet, payLater, bankRedirect, bankDebit, bankTransfer, realTimePayment, crypto, upi, voucher, giftCard, cardToken, openBanking, mobilePayment);
+    return Objects.hash(card, cardRedirect, wallet, payLater, bankRedirect, bankDebit, bankTransfer, realTimePayment, crypto, upi, voucher, giftCard, cardToken, openBanking, mobilePayment, hashCodeNullable(billing));
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -590,7 +591,6 @@ public class PaymentMethodDataRequest {
   public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class PaymentMethodDataRequest {\n");
-    sb.append("    billing: ").append(toIndentedString(billing)).append("\n");
     sb.append("    card: ").append(toIndentedString(card)).append("\n");
     sb.append("    cardRedirect: ").append(toIndentedString(cardRedirect)).append("\n");
     sb.append("    wallet: ").append(toIndentedString(wallet)).append("\n");
@@ -606,6 +606,7 @@ public class PaymentMethodDataRequest {
     sb.append("    cardToken: ").append(toIndentedString(cardToken)).append("\n");
     sb.append("    openBanking: ").append(toIndentedString(openBanking)).append("\n");
     sb.append("    mobilePayment: ").append(toIndentedString(mobilePayment)).append("\n");
+    sb.append("    billing: ").append(toIndentedString(billing)).append("\n");
     sb.append("}");
     return sb.toString();
   }
@@ -652,11 +653,6 @@ public class PaymentMethodDataRequest {
     }
 
     StringJoiner joiner = new StringJoiner("&");
-
-    // add `billing` to the URL query string
-    if (getBilling() != null) {
-      joiner.add(getBilling().toUrlQueryString(prefix + "billing" + suffix));
-    }
 
     // add `card` to the URL query string
     if (getCard() != null) {
@@ -731,6 +727,11 @@ public class PaymentMethodDataRequest {
     // add `mobile_payment` to the URL query string
     if (getMobilePayment() != null) {
       joiner.add(getMobilePayment().toUrlQueryString(prefix + "mobile_payment" + suffix));
+    }
+
+    // add `billing` to the URL query string
+    if (getBilling() != null) {
+      joiner.add(getBilling().toUrlQueryString(prefix + "billing" + suffix));
     }
 
     return joiner.toString();

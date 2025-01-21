@@ -23,22 +23,21 @@ import org.openapitools.jackson.nullable.JsonNullable;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.openapitools.jackson.nullable.JsonNullable;
 import java.util.NoSuchElementException;
-import org.junit.Assert;
-import org.junit.Ignore;
-import org.junit.Test;
-
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Test;
 
 /**
  * Model tests for IncrementalAuthorizationResponse
  */
-public class IncrementalAuthorizationResponseTest {
+class IncrementalAuthorizationResponseTest {
     private final IncrementalAuthorizationResponse model = new IncrementalAuthorizationResponse();
 
     /**
      * Model tests for IncrementalAuthorizationResponse
      */
     @Test
-    public void testIncrementalAuthorizationResponse() {
+    void testIncrementalAuthorizationResponse() {
         // TODO: test IncrementalAuthorizationResponse
     }
 
@@ -46,7 +45,7 @@ public class IncrementalAuthorizationResponseTest {
      * Test the property 'authorizationId'
      */
     @Test
-    public void authorizationIdTest() {
+    void authorizationIdTest() {
         // TODO: test authorizationId
     }
 
@@ -54,7 +53,7 @@ public class IncrementalAuthorizationResponseTest {
      * Test the property 'amount'
      */
     @Test
-    public void amountTest() {
+    void amountTest() {
         // TODO: test amount
     }
 
@@ -62,7 +61,7 @@ public class IncrementalAuthorizationResponseTest {
      * Test the property 'status'
      */
     @Test
-    public void statusTest() {
+    void statusTest() {
         // TODO: test status
     }
 
@@ -70,7 +69,7 @@ public class IncrementalAuthorizationResponseTest {
      * Test the property 'errorCode'
      */
     @Test
-    public void errorCodeTest() {
+    void errorCodeTest() {
         // TODO: test errorCode
     }
 
@@ -78,7 +77,7 @@ public class IncrementalAuthorizationResponseTest {
      * Test the property 'errorMessage'
      */
     @Test
-    public void errorMessageTest() {
+    void errorMessageTest() {
         // TODO: test errorMessage
     }
 
@@ -86,7 +85,7 @@ public class IncrementalAuthorizationResponseTest {
      * Test the property 'previouslyAuthorizedAmount'
      */
     @Test
-    public void previouslyAuthorizedAmountTest() {
+    void previouslyAuthorizedAmountTest() {
         // TODO: test previouslyAuthorizedAmount
     }
 

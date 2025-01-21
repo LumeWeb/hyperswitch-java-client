@@ -23,6 +23,7 @@ import com.fasterxml.jackson.annotation.JsonValue;
 import com.hyperswitch.client.model.MerchantConnectorDetailsWrap;
 import com.hyperswitch.client.model.PaymentMethodType;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import org.openapitools.jackson.nullable.JsonNullable;
 import com.fasterxml.jackson.annotation.JsonIgnore;
@@ -43,33 +44,37 @@ import java.util.StringJoiner;
   PaymentsSessionRequest.JSON_PROPERTY_WALLETS,
   PaymentsSessionRequest.JSON_PROPERTY_MERCHANT_CONNECTOR_DETAILS
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class PaymentsSessionRequest {
   public static final String JSON_PROPERTY_PAYMENT_ID = "payment_id";
+  @javax.annotation.Nonnull
   private String paymentId;
 
   public static final String JSON_PROPERTY_CLIENT_SECRET = "client_secret";
+  @javax.annotation.Nonnull
   private String clientSecret;
 
   public static final String JSON_PROPERTY_WALLETS = "wallets";
+  @javax.annotation.Nonnull
   private List<PaymentMethodType> wallets = new ArrayList<>();
 
   public static final String JSON_PROPERTY_MERCHANT_CONNECTOR_DETAILS = "merchant_connector_details";
+  @javax.annotation.Nullable
   private JsonNullable<MerchantConnectorDetailsWrap> merchantConnectorDetails = JsonNullable.<MerchantConnectorDetailsWrap>undefined();
 
   public PaymentsSessionRequest() {
   }
 
-  public PaymentsSessionRequest paymentId(String paymentId) {
+  public PaymentsSessionRequest paymentId(@javax.annotation.Nonnull String paymentId) {
     
     this.paymentId = paymentId;
     return this;
   }
 
-   /**
+  /**
    * The identifier for the payment
    * @return paymentId
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_PAYMENT_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -81,21 +86,20 @@ public class PaymentsSessionRequest {
 
   @JsonProperty(JSON_PROPERTY_PAYMENT_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setPaymentId(String paymentId) {
+  public void setPaymentId(@javax.annotation.Nonnull String paymentId) {
     this.paymentId = paymentId;
   }
 
-
-  public PaymentsSessionRequest clientSecret(String clientSecret) {
+  public PaymentsSessionRequest clientSecret(@javax.annotation.Nonnull String clientSecret) {
     
     this.clientSecret = clientSecret;
     return this;
   }
 
-   /**
+  /**
    * This is a token which expires after 15 minutes, used from the client to authenticate and create sessions from the SDK
    * @return clientSecret
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_CLIENT_SECRET)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -107,12 +111,11 @@ public class PaymentsSessionRequest {
 
   @JsonProperty(JSON_PROPERTY_CLIENT_SECRET)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setClientSecret(String clientSecret) {
+  public void setClientSecret(@javax.annotation.Nonnull String clientSecret) {
     this.clientSecret = clientSecret;
   }
 
-
-  public PaymentsSessionRequest wallets(List<PaymentMethodType> wallets) {
+  public PaymentsSessionRequest wallets(@javax.annotation.Nonnull List<PaymentMethodType> wallets) {
     
     this.wallets = wallets;
     return this;
@@ -126,10 +129,10 @@ public class PaymentsSessionRequest {
     return this;
   }
 
-   /**
+  /**
    * The list of the supported wallets
    * @return wallets
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_WALLETS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -141,21 +144,20 @@ public class PaymentsSessionRequest {
 
   @JsonProperty(JSON_PROPERTY_WALLETS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setWallets(List<PaymentMethodType> wallets) {
+  public void setWallets(@javax.annotation.Nonnull List<PaymentMethodType> wallets) {
     this.wallets = wallets;
   }
 
-
-  public PaymentsSessionRequest merchantConnectorDetails(MerchantConnectorDetailsWrap merchantConnectorDetails) {
+  public PaymentsSessionRequest merchantConnectorDetails(@javax.annotation.Nullable MerchantConnectorDetailsWrap merchantConnectorDetails) {
     this.merchantConnectorDetails = JsonNullable.<MerchantConnectorDetailsWrap>of(merchantConnectorDetails);
     
     return this;
   }
 
-   /**
+  /**
    * Get merchantConnectorDetails
    * @return merchantConnectorDetails
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -175,7 +177,7 @@ public class PaymentsSessionRequest {
     this.merchantConnectorDetails = merchantConnectorDetails;
   }
 
-  public void setMerchantConnectorDetails(MerchantConnectorDetailsWrap merchantConnectorDetails) {
+  public void setMerchantConnectorDetails(@javax.annotation.Nullable MerchantConnectorDetailsWrap merchantConnectorDetails) {
     this.merchantConnectorDetails = JsonNullable.<MerchantConnectorDetailsWrap>of(merchantConnectorDetails);
   }
 

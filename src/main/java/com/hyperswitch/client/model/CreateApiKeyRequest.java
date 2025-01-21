@@ -39,30 +39,33 @@ import java.util.StringJoiner;
   CreateApiKeyRequest.JSON_PROPERTY_DESCRIPTION,
   CreateApiKeyRequest.JSON_PROPERTY_EXPIRATION
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class CreateApiKeyRequest {
   public static final String JSON_PROPERTY_NAME = "name";
+  @javax.annotation.Nonnull
   private String name;
 
   public static final String JSON_PROPERTY_DESCRIPTION = "description";
+  @javax.annotation.Nullable
   private JsonNullable<String> description = JsonNullable.<String>undefined();
 
   public static final String JSON_PROPERTY_EXPIRATION = "expiration";
+  @javax.annotation.Nonnull
   private ApiKeyExpiration expiration;
 
   public CreateApiKeyRequest() {
   }
 
-  public CreateApiKeyRequest name(String name) {
+  public CreateApiKeyRequest name(@javax.annotation.Nonnull String name) {
     
     this.name = name;
     return this;
   }
 
-   /**
+  /**
    * A unique name for the API Key to help you identify it.
    * @return name
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_NAME)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -74,21 +77,20 @@ public class CreateApiKeyRequest {
 
   @JsonProperty(JSON_PROPERTY_NAME)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setName(String name) {
+  public void setName(@javax.annotation.Nonnull String name) {
     this.name = name;
   }
 
-
-  public CreateApiKeyRequest description(String description) {
+  public CreateApiKeyRequest description(@javax.annotation.Nullable String description) {
     this.description = JsonNullable.<String>of(description);
     
     return this;
   }
 
-   /**
+  /**
    * A description to provide more context about the API Key.
    * @return description
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -108,21 +110,20 @@ public class CreateApiKeyRequest {
     this.description = description;
   }
 
-  public void setDescription(String description) {
+  public void setDescription(@javax.annotation.Nullable String description) {
     this.description = JsonNullable.<String>of(description);
   }
 
-
-  public CreateApiKeyRequest expiration(ApiKeyExpiration expiration) {
+  public CreateApiKeyRequest expiration(@javax.annotation.Nonnull ApiKeyExpiration expiration) {
     
     this.expiration = expiration;
     return this;
   }
 
-   /**
+  /**
    * Get expiration
    * @return expiration
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_EXPIRATION)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -134,7 +135,7 @@ public class CreateApiKeyRequest {
 
   @JsonProperty(JSON_PROPERTY_EXPIRATION)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setExpiration(ApiKeyExpiration expiration) {
+  public void setExpiration(@javax.annotation.Nonnull ApiKeyExpiration expiration) {
     this.expiration = expiration;
   }
 

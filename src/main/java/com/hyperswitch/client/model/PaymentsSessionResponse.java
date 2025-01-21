@@ -22,6 +22,7 @@ import com.fasterxml.jackson.annotation.JsonTypeName;
 import com.fasterxml.jackson.annotation.JsonValue;
 import com.hyperswitch.client.model.SessionToken;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 import com.fasterxml.jackson.annotation.JsonTypeName;
@@ -37,30 +38,33 @@ import java.util.StringJoiner;
   PaymentsSessionResponse.JSON_PROPERTY_CLIENT_SECRET,
   PaymentsSessionResponse.JSON_PROPERTY_SESSION_TOKEN
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class PaymentsSessionResponse {
   public static final String JSON_PROPERTY_PAYMENT_ID = "payment_id";
+  @javax.annotation.Nonnull
   private String paymentId;
 
   public static final String JSON_PROPERTY_CLIENT_SECRET = "client_secret";
+  @javax.annotation.Nonnull
   private String clientSecret;
 
   public static final String JSON_PROPERTY_SESSION_TOKEN = "session_token";
+  @javax.annotation.Nonnull
   private List<SessionToken> sessionToken = new ArrayList<>();
 
   public PaymentsSessionResponse() {
   }
 
-  public PaymentsSessionResponse paymentId(String paymentId) {
+  public PaymentsSessionResponse paymentId(@javax.annotation.Nonnull String paymentId) {
     
     this.paymentId = paymentId;
     return this;
   }
 
-   /**
+  /**
    * The identifier for the payment
    * @return paymentId
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_PAYMENT_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -72,21 +76,20 @@ public class PaymentsSessionResponse {
 
   @JsonProperty(JSON_PROPERTY_PAYMENT_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setPaymentId(String paymentId) {
+  public void setPaymentId(@javax.annotation.Nonnull String paymentId) {
     this.paymentId = paymentId;
   }
 
-
-  public PaymentsSessionResponse clientSecret(String clientSecret) {
+  public PaymentsSessionResponse clientSecret(@javax.annotation.Nonnull String clientSecret) {
     
     this.clientSecret = clientSecret;
     return this;
   }
 
-   /**
+  /**
    * This is a token which expires after 15 minutes, used from the client to authenticate and create sessions from the SDK
    * @return clientSecret
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_CLIENT_SECRET)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -98,12 +101,11 @@ public class PaymentsSessionResponse {
 
   @JsonProperty(JSON_PROPERTY_CLIENT_SECRET)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setClientSecret(String clientSecret) {
+  public void setClientSecret(@javax.annotation.Nonnull String clientSecret) {
     this.clientSecret = clientSecret;
   }
 
-
-  public PaymentsSessionResponse sessionToken(List<SessionToken> sessionToken) {
+  public PaymentsSessionResponse sessionToken(@javax.annotation.Nonnull List<SessionToken> sessionToken) {
     
     this.sessionToken = sessionToken;
     return this;
@@ -117,10 +119,10 @@ public class PaymentsSessionResponse {
     return this;
   }
 
-   /**
+  /**
    * The list of session token object
    * @return sessionToken
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_SESSION_TOKEN)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -132,7 +134,7 @@ public class PaymentsSessionResponse {
 
   @JsonProperty(JSON_PROPERTY_SESSION_TOKEN)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setSessionToken(List<SessionToken> sessionToken) {
+  public void setSessionToken(@javax.annotation.Nonnull List<SessionToken> sessionToken) {
     this.sessionToken = sessionToken;
   }
 

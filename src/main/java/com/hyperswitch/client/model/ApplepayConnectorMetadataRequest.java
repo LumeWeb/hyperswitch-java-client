@@ -37,24 +37,25 @@ import java.util.StringJoiner;
 @JsonPropertyOrder({
   ApplepayConnectorMetadataRequest.JSON_PROPERTY_SESSION_TOKEN_DATA
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class ApplepayConnectorMetadataRequest {
   public static final String JSON_PROPERTY_SESSION_TOKEN_DATA = "session_token_data";
+  @javax.annotation.Nullable
   private JsonNullable<SessionTokenInfo> sessionTokenData = JsonNullable.<SessionTokenInfo>undefined();
 
   public ApplepayConnectorMetadataRequest() {
   }
 
-  public ApplepayConnectorMetadataRequest sessionTokenData(SessionTokenInfo sessionTokenData) {
+  public ApplepayConnectorMetadataRequest sessionTokenData(@javax.annotation.Nullable SessionTokenInfo sessionTokenData) {
     this.sessionTokenData = JsonNullable.<SessionTokenInfo>of(sessionTokenData);
     
     return this;
   }
 
-   /**
+  /**
    * Get sessionTokenData
    * @return sessionTokenData
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -74,7 +75,7 @@ public class ApplepayConnectorMetadataRequest {
     this.sessionTokenData = sessionTokenData;
   }
 
-  public void setSessionTokenData(SessionTokenInfo sessionTokenData) {
+  public void setSessionTokenData(@javax.annotation.Nullable SessionTokenInfo sessionTokenData) {
     this.sessionTokenData = JsonNullable.<SessionTokenInfo>of(sessionTokenData);
   }
 

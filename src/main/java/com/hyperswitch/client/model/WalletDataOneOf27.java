@@ -34,24 +34,25 @@ import java.util.StringJoiner;
   WalletDataOneOf27.JSON_PROPERTY_MIFINITY
 })
 @JsonTypeName("WalletData_oneOf_27")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class WalletDataOneOf27 {
   public static final String JSON_PROPERTY_MIFINITY = "mifinity";
+  @javax.annotation.Nonnull
   private MifinityData mifinity;
 
   public WalletDataOneOf27() {
   }
 
-  public WalletDataOneOf27 mifinity(MifinityData mifinity) {
+  public WalletDataOneOf27 mifinity(@javax.annotation.Nonnull MifinityData mifinity) {
     
     this.mifinity = mifinity;
     return this;
   }
 
-   /**
+  /**
    * Get mifinity
    * @return mifinity
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_MIFINITY)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -63,7 +64,7 @@ public class WalletDataOneOf27 {
 
   @JsonProperty(JSON_PROPERTY_MIFINITY)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setMifinity(MifinityData mifinity) {
+  public void setMifinity(@javax.annotation.Nonnull MifinityData mifinity) {
     this.mifinity = mifinity;
   }
 

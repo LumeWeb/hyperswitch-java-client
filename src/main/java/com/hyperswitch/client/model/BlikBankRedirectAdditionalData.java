@@ -36,24 +36,25 @@ import java.util.StringJoiner;
 @JsonPropertyOrder({
   BlikBankRedirectAdditionalData.JSON_PROPERTY_BLIK_CODE
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class BlikBankRedirectAdditionalData {
   public static final String JSON_PROPERTY_BLIK_CODE = "blik_code";
+  @javax.annotation.Nullable
   private JsonNullable<String> blikCode = JsonNullable.<String>undefined();
 
   public BlikBankRedirectAdditionalData() {
   }
 
-  public BlikBankRedirectAdditionalData blikCode(String blikCode) {
+  public BlikBankRedirectAdditionalData blikCode(@javax.annotation.Nullable String blikCode) {
     this.blikCode = JsonNullable.<String>of(blikCode);
     
     return this;
   }
 
-   /**
+  /**
    * Get blikCode
    * @return blikCode
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -73,7 +74,7 @@ public class BlikBankRedirectAdditionalData {
     this.blikCode = blikCode;
   }
 
-  public void setBlikCode(String blikCode) {
+  public void setBlikCode(@javax.annotation.Nullable String blikCode) {
     this.blikCode = JsonNullable.<String>of(blikCode);
   }
 

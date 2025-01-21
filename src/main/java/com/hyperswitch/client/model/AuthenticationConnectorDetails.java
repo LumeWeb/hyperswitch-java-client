@@ -22,6 +22,7 @@ import com.fasterxml.jackson.annotation.JsonTypeName;
 import com.fasterxml.jackson.annotation.JsonValue;
 import com.hyperswitch.client.model.AuthenticationConnectors;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 import com.fasterxml.jackson.annotation.JsonTypeName;
@@ -36,18 +37,20 @@ import java.util.StringJoiner;
   AuthenticationConnectorDetails.JSON_PROPERTY_AUTHENTICATION_CONNECTORS,
   AuthenticationConnectorDetails.JSON_PROPERTY_THREE_DS_REQUESTOR_URL
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class AuthenticationConnectorDetails {
   public static final String JSON_PROPERTY_AUTHENTICATION_CONNECTORS = "authentication_connectors";
+  @javax.annotation.Nonnull
   private List<AuthenticationConnectors> authenticationConnectors = new ArrayList<>();
 
   public static final String JSON_PROPERTY_THREE_DS_REQUESTOR_URL = "three_ds_requestor_url";
+  @javax.annotation.Nonnull
   private String threeDsRequestorUrl;
 
   public AuthenticationConnectorDetails() {
   }
 
-  public AuthenticationConnectorDetails authenticationConnectors(List<AuthenticationConnectors> authenticationConnectors) {
+  public AuthenticationConnectorDetails authenticationConnectors(@javax.annotation.Nonnull List<AuthenticationConnectors> authenticationConnectors) {
     
     this.authenticationConnectors = authenticationConnectors;
     return this;
@@ -61,10 +64,10 @@ public class AuthenticationConnectorDetails {
     return this;
   }
 
-   /**
+  /**
    * List of authentication connectors
    * @return authenticationConnectors
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_AUTHENTICATION_CONNECTORS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -76,21 +79,20 @@ public class AuthenticationConnectorDetails {
 
   @JsonProperty(JSON_PROPERTY_AUTHENTICATION_CONNECTORS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setAuthenticationConnectors(List<AuthenticationConnectors> authenticationConnectors) {
+  public void setAuthenticationConnectors(@javax.annotation.Nonnull List<AuthenticationConnectors> authenticationConnectors) {
     this.authenticationConnectors = authenticationConnectors;
   }
 
-
-  public AuthenticationConnectorDetails threeDsRequestorUrl(String threeDsRequestorUrl) {
+  public AuthenticationConnectorDetails threeDsRequestorUrl(@javax.annotation.Nonnull String threeDsRequestorUrl) {
     
     this.threeDsRequestorUrl = threeDsRequestorUrl;
     return this;
   }
 
-   /**
+  /**
    * URL of the (customer service) website that will be shown to the shopper in case of technical errors during the 3D Secure 2 process.
    * @return threeDsRequestorUrl
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_THREE_DS_REQUESTOR_URL)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -102,7 +104,7 @@ public class AuthenticationConnectorDetails {
 
   @JsonProperty(JSON_PROPERTY_THREE_DS_REQUESTOR_URL)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setThreeDsRequestorUrl(String threeDsRequestorUrl) {
+  public void setThreeDsRequestorUrl(@javax.annotation.Nonnull String threeDsRequestorUrl) {
     this.threeDsRequestorUrl = threeDsRequestorUrl;
   }
 

@@ -34,24 +34,25 @@ import java.util.StringJoiner;
   FieldTypeOneOf5.JSON_PROPERTY_LANGUAGE_PREFERENCE
 })
 @JsonTypeName("FieldType_oneOf_5")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class FieldTypeOneOf5 {
   public static final String JSON_PROPERTY_LANGUAGE_PREFERENCE = "language_preference";
+  @javax.annotation.Nonnull
   private FieldTypeOneOfUserCountry languagePreference;
 
   public FieldTypeOneOf5() {
   }
 
-  public FieldTypeOneOf5 languagePreference(FieldTypeOneOfUserCountry languagePreference) {
+  public FieldTypeOneOf5 languagePreference(@javax.annotation.Nonnull FieldTypeOneOfUserCountry languagePreference) {
     
     this.languagePreference = languagePreference;
     return this;
   }
 
-   /**
+  /**
    * Get languagePreference
    * @return languagePreference
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_LANGUAGE_PREFERENCE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -63,7 +64,7 @@ public class FieldTypeOneOf5 {
 
   @JsonProperty(JSON_PROPERTY_LANGUAGE_PREFERENCE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setLanguagePreference(FieldTypeOneOfUserCountry languagePreference) {
+  public void setLanguagePreference(@javax.annotation.Nonnull FieldTypeOneOfUserCountry languagePreference) {
     this.languagePreference = languagePreference;
   }
 

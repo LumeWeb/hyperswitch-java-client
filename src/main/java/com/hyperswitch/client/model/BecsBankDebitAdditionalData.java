@@ -38,30 +38,33 @@ import java.util.StringJoiner;
   BecsBankDebitAdditionalData.JSON_PROPERTY_BSB_NUMBER,
   BecsBankDebitAdditionalData.JSON_PROPERTY_BANK_ACCOUNT_HOLDER_NAME
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class BecsBankDebitAdditionalData {
   public static final String JSON_PROPERTY_ACCOUNT_NUMBER = "account_number";
+  @javax.annotation.Nonnull
   private String accountNumber;
 
   public static final String JSON_PROPERTY_BSB_NUMBER = "bsb_number";
+  @javax.annotation.Nonnull
   private String bsbNumber;
 
   public static final String JSON_PROPERTY_BANK_ACCOUNT_HOLDER_NAME = "bank_account_holder_name";
+  @javax.annotation.Nullable
   private JsonNullable<String> bankAccountHolderName = JsonNullable.<String>undefined();
 
   public BecsBankDebitAdditionalData() {
   }
 
-  public BecsBankDebitAdditionalData accountNumber(String accountNumber) {
+  public BecsBankDebitAdditionalData accountNumber(@javax.annotation.Nonnull String accountNumber) {
     
     this.accountNumber = accountNumber;
     return this;
   }
 
-   /**
+  /**
    * Partially masked account number for Becs payment method
    * @return accountNumber
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_ACCOUNT_NUMBER)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -73,21 +76,20 @@ public class BecsBankDebitAdditionalData {
 
   @JsonProperty(JSON_PROPERTY_ACCOUNT_NUMBER)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setAccountNumber(String accountNumber) {
+  public void setAccountNumber(@javax.annotation.Nonnull String accountNumber) {
     this.accountNumber = accountNumber;
   }
 
-
-  public BecsBankDebitAdditionalData bsbNumber(String bsbNumber) {
+  public BecsBankDebitAdditionalData bsbNumber(@javax.annotation.Nonnull String bsbNumber) {
     
     this.bsbNumber = bsbNumber;
     return this;
   }
 
-   /**
+  /**
    * Bank-State-Branch (bsb) number
    * @return bsbNumber
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_BSB_NUMBER)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -99,21 +101,20 @@ public class BecsBankDebitAdditionalData {
 
   @JsonProperty(JSON_PROPERTY_BSB_NUMBER)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setBsbNumber(String bsbNumber) {
+  public void setBsbNumber(@javax.annotation.Nonnull String bsbNumber) {
     this.bsbNumber = bsbNumber;
   }
 
-
-  public BecsBankDebitAdditionalData bankAccountHolderName(String bankAccountHolderName) {
+  public BecsBankDebitAdditionalData bankAccountHolderName(@javax.annotation.Nullable String bankAccountHolderName) {
     this.bankAccountHolderName = JsonNullable.<String>of(bankAccountHolderName);
     
     return this;
   }
 
-   /**
+  /**
    * Bank account&#39;s owner name
    * @return bankAccountHolderName
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -133,7 +134,7 @@ public class BecsBankDebitAdditionalData {
     this.bankAccountHolderName = bankAccountHolderName;
   }
 
-  public void setBankAccountHolderName(String bankAccountHolderName) {
+  public void setBankAccountHolderName(@javax.annotation.Nullable String bankAccountHolderName) {
     this.bankAccountHolderName = JsonNullable.<String>of(bankAccountHolderName);
   }
 

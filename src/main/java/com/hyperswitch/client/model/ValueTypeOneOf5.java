@@ -21,6 +21,7 @@ import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonTypeName;
 import com.fasterxml.jackson.annotation.JsonValue;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 import com.fasterxml.jackson.annotation.JsonTypeName;
@@ -36,13 +37,13 @@ import java.util.StringJoiner;
   ValueTypeOneOf5.JSON_PROPERTY_VALUE
 })
 @JsonTypeName("ValueType_oneOf_5")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class ValueTypeOneOf5 {
   /**
    * Gets or Sets type
    */
   public enum TypeEnum {
-    ENUM_VARIANT_ARRAY("enum_variant_array");
+    ENUM_VARIANT_ARRAY(String.valueOf("enum_variant_array"));
 
     private String value;
 
@@ -72,24 +73,26 @@ public class ValueTypeOneOf5 {
   }
 
   public static final String JSON_PROPERTY_TYPE = "type";
+  @javax.annotation.Nonnull
   private TypeEnum type;
 
   public static final String JSON_PROPERTY_VALUE = "value";
+  @javax.annotation.Nonnull
   private List<String> value = new ArrayList<>();
 
   public ValueTypeOneOf5() {
   }
 
-  public ValueTypeOneOf5 type(TypeEnum type) {
+  public ValueTypeOneOf5 type(@javax.annotation.Nonnull TypeEnum type) {
     
     this.type = type;
     return this;
   }
 
-   /**
+  /**
    * Get type
    * @return type
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_TYPE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -101,12 +104,11 @@ public class ValueTypeOneOf5 {
 
   @JsonProperty(JSON_PROPERTY_TYPE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setType(TypeEnum type) {
+  public void setType(@javax.annotation.Nonnull TypeEnum type) {
     this.type = type;
   }
 
-
-  public ValueTypeOneOf5 value(List<String> value) {
+  public ValueTypeOneOf5 value(@javax.annotation.Nonnull List<String> value) {
     
     this.value = value;
     return this;
@@ -120,10 +122,10 @@ public class ValueTypeOneOf5 {
     return this;
   }
 
-   /**
+  /**
    * Similar to NumberArray but for enum variants eg: payment.method.cardtype &#x3D; (debit, credit)
    * @return value
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_VALUE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -135,7 +137,7 @@ public class ValueTypeOneOf5 {
 
   @JsonProperty(JSON_PROPERTY_VALUE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setValue(List<String> value) {
+  public void setValue(@javax.annotation.Nonnull List<String> value) {
     this.value = value;
   }
 

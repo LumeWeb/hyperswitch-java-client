@@ -34,24 +34,25 @@ import java.util.StringJoiner;
   BankRedirectDataOneOf14Trustly.JSON_PROPERTY_COUNTRY
 })
 @JsonTypeName("BankRedirectData_oneOf_14_trustly")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class BankRedirectDataOneOf14Trustly {
   public static final String JSON_PROPERTY_COUNTRY = "country";
+  @javax.annotation.Nonnull
   private CountryAlpha2 country;
 
   public BankRedirectDataOneOf14Trustly() {
   }
 
-  public BankRedirectDataOneOf14Trustly country(CountryAlpha2 country) {
+  public BankRedirectDataOneOf14Trustly country(@javax.annotation.Nonnull CountryAlpha2 country) {
     
     this.country = country;
     return this;
   }
 
-   /**
+  /**
    * Get country
    * @return country
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_COUNTRY)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -63,7 +64,7 @@ public class BankRedirectDataOneOf14Trustly {
 
   @JsonProperty(JSON_PROPERTY_COUNTRY)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setCountry(CountryAlpha2 country) {
+  public void setCountry(@javax.annotation.Nonnull CountryAlpha2 country) {
     this.country = country;
   }
 

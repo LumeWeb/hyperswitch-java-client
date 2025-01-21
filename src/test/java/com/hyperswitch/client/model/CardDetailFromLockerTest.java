@@ -23,22 +23,21 @@ import org.openapitools.jackson.nullable.JsonNullable;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.openapitools.jackson.nullable.JsonNullable;
 import java.util.NoSuchElementException;
-import org.junit.Assert;
-import org.junit.Ignore;
-import org.junit.Test;
-
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Test;
 
 /**
  * Model tests for CardDetailFromLocker
  */
-public class CardDetailFromLockerTest {
+class CardDetailFromLockerTest {
     private final CardDetailFromLocker model = new CardDetailFromLocker();
 
     /**
      * Model tests for CardDetailFromLocker
      */
     @Test
-    public void testCardDetailFromLocker() {
+    void testCardDetailFromLocker() {
         // TODO: test CardDetailFromLocker
     }
 
@@ -46,7 +45,7 @@ public class CardDetailFromLockerTest {
      * Test the property 'scheme'
      */
     @Test
-    public void schemeTest() {
+    void schemeTest() {
         // TODO: test scheme
     }
 
@@ -54,7 +53,7 @@ public class CardDetailFromLockerTest {
      * Test the property 'issuerCountry'
      */
     @Test
-    public void issuerCountryTest() {
+    void issuerCountryTest() {
         // TODO: test issuerCountry
     }
 
@@ -62,7 +61,7 @@ public class CardDetailFromLockerTest {
      * Test the property 'last4Digits'
      */
     @Test
-    public void last4DigitsTest() {
+    void last4DigitsTest() {
         // TODO: test last4Digits
     }
 
@@ -70,7 +69,7 @@ public class CardDetailFromLockerTest {
      * Test the property 'expiryMonth'
      */
     @Test
-    public void expiryMonthTest() {
+    void expiryMonthTest() {
         // TODO: test expiryMonth
     }
 
@@ -78,7 +77,7 @@ public class CardDetailFromLockerTest {
      * Test the property 'expiryYear'
      */
     @Test
-    public void expiryYearTest() {
+    void expiryYearTest() {
         // TODO: test expiryYear
     }
 
@@ -86,7 +85,7 @@ public class CardDetailFromLockerTest {
      * Test the property 'cardToken'
      */
     @Test
-    public void cardTokenTest() {
+    void cardTokenTest() {
         // TODO: test cardToken
     }
 
@@ -94,7 +93,7 @@ public class CardDetailFromLockerTest {
      * Test the property 'cardHolderName'
      */
     @Test
-    public void cardHolderNameTest() {
+    void cardHolderNameTest() {
         // TODO: test cardHolderName
     }
 
@@ -102,7 +101,7 @@ public class CardDetailFromLockerTest {
      * Test the property 'cardFingerprint'
      */
     @Test
-    public void cardFingerprintTest() {
+    void cardFingerprintTest() {
         // TODO: test cardFingerprint
     }
 
@@ -110,7 +109,7 @@ public class CardDetailFromLockerTest {
      * Test the property 'nickName'
      */
     @Test
-    public void nickNameTest() {
+    void nickNameTest() {
         // TODO: test nickName
     }
 
@@ -118,7 +117,7 @@ public class CardDetailFromLockerTest {
      * Test the property 'cardNetwork'
      */
     @Test
-    public void cardNetworkTest() {
+    void cardNetworkTest() {
         // TODO: test cardNetwork
     }
 
@@ -126,7 +125,7 @@ public class CardDetailFromLockerTest {
      * Test the property 'cardIsin'
      */
     @Test
-    public void cardIsinTest() {
+    void cardIsinTest() {
         // TODO: test cardIsin
     }
 
@@ -134,7 +133,7 @@ public class CardDetailFromLockerTest {
      * Test the property 'cardIssuer'
      */
     @Test
-    public void cardIssuerTest() {
+    void cardIssuerTest() {
         // TODO: test cardIssuer
     }
 
@@ -142,7 +141,7 @@ public class CardDetailFromLockerTest {
      * Test the property 'cardType'
      */
     @Test
-    public void cardTypeTest() {
+    void cardTypeTest() {
         // TODO: test cardType
     }
 
@@ -150,7 +149,7 @@ public class CardDetailFromLockerTest {
      * Test the property 'savedToLocker'
      */
     @Test
-    public void savedToLockerTest() {
+    void savedToLockerTest() {
         // TODO: test savedToLocker
     }
 

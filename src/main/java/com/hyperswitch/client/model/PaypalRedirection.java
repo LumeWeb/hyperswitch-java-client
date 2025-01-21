@@ -36,24 +36,25 @@ import java.util.StringJoiner;
 @JsonPropertyOrder({
   PaypalRedirection.JSON_PROPERTY_EMAIL
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class PaypalRedirection {
   public static final String JSON_PROPERTY_EMAIL = "email";
+  @javax.annotation.Nullable
   private JsonNullable<String> email = JsonNullable.<String>undefined();
 
   public PaypalRedirection() {
   }
 
-  public PaypalRedirection email(String email) {
+  public PaypalRedirection email(@javax.annotation.Nullable String email) {
     this.email = JsonNullable.<String>of(email);
     
     return this;
   }
 
-   /**
+  /**
    * paypal&#39;s email address
    * @return email
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -73,7 +74,7 @@ public class PaypalRedirection {
     this.email = email;
   }
 
-  public void setEmail(String email) {
+  public void setEmail(@javax.annotation.Nullable String email) {
     this.email = JsonNullable.<String>of(email);
   }
 

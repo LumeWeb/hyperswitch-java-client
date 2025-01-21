@@ -23,22 +23,21 @@ import org.openapitools.jackson.nullable.JsonNullable;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.openapitools.jackson.nullable.JsonNullable;
 import java.util.NoSuchElementException;
-import org.junit.Assert;
-import org.junit.Ignore;
-import org.junit.Test;
-
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Test;
 
 /**
  * Model tests for PaylaterResponse
  */
-public class PaylaterResponseTest {
+class PaylaterResponseTest {
     private final PaylaterResponse model = new PaylaterResponse();
 
     /**
      * Model tests for PaylaterResponse
      */
     @Test
-    public void testPaylaterResponse() {
+    void testPaylaterResponse() {
         // TODO: test PaylaterResponse
     }
 
@@ -46,7 +45,7 @@ public class PaylaterResponseTest {
      * Test the property 'klarnaSdk'
      */
     @Test
-    public void klarnaSdkTest() {
+    void klarnaSdkTest() {
         // TODO: test klarnaSdk
     }
 

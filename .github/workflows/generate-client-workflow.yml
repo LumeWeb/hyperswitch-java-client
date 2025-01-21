@@ -43,7 +43,7 @@ jobs:
               uses: openapi-generators/openapitools-generator-action@v1
               with:
                   generator: java
-                  generator-tag: 'v6.5.0'
+                  generator-tag: 'v7.11.0'
                   config-file: openai-generator.yml
                   openapi-file: openapi_spec.json
                   command-args: --library apache-httpclient -t ./.openapi-generator/templates

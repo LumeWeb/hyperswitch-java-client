@@ -38,27 +38,29 @@ import java.util.StringJoiner;
   PaymentMethodUpdate.JSON_PROPERTY_CARD,
   PaymentMethodUpdate.JSON_PROPERTY_CLIENT_SECRET
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class PaymentMethodUpdate {
   public static final String JSON_PROPERTY_CARD = "card";
+  @javax.annotation.Nullable
   private JsonNullable<CardDetailUpdate> card = JsonNullable.<CardDetailUpdate>undefined();
 
   public static final String JSON_PROPERTY_CLIENT_SECRET = "client_secret";
+  @javax.annotation.Nullable
   private JsonNullable<String> clientSecret = JsonNullable.<String>undefined();
 
   public PaymentMethodUpdate() {
   }
 
-  public PaymentMethodUpdate card(CardDetailUpdate card) {
+  public PaymentMethodUpdate card(@javax.annotation.Nullable CardDetailUpdate card) {
     this.card = JsonNullable.<CardDetailUpdate>of(card);
     
     return this;
   }
 
-   /**
+  /**
    * Get card
    * @return card
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -78,21 +80,20 @@ public class PaymentMethodUpdate {
     this.card = card;
   }
 
-  public void setCard(CardDetailUpdate card) {
+  public void setCard(@javax.annotation.Nullable CardDetailUpdate card) {
     this.card = JsonNullable.<CardDetailUpdate>of(card);
   }
 
-
-  public PaymentMethodUpdate clientSecret(String clientSecret) {
+  public PaymentMethodUpdate clientSecret(@javax.annotation.Nullable String clientSecret) {
     this.clientSecret = JsonNullable.<String>of(clientSecret);
     
     return this;
   }
 
-   /**
+  /**
    * This is a 15 minute expiry token which shall be used from the client to authenticate and perform sessions from the SDK
    * @return clientSecret
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -112,7 +113,7 @@ public class PaymentMethodUpdate {
     this.clientSecret = clientSecret;
   }
 
-  public void setClientSecret(String clientSecret) {
+  public void setClientSecret(@javax.annotation.Nullable String clientSecret) {
     this.clientSecret = JsonNullable.<String>of(clientSecret);
   }
 

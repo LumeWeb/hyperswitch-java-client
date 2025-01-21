@@ -32,24 +32,25 @@ import java.util.StringJoiner;
 @JsonPropertyOrder({
   MbWayRedirection.JSON_PROPERTY_TELEPHONE_NUMBER
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class MbWayRedirection {
   public static final String JSON_PROPERTY_TELEPHONE_NUMBER = "telephone_number";
+  @javax.annotation.Nonnull
   private String telephoneNumber;
 
   public MbWayRedirection() {
   }
 
-  public MbWayRedirection telephoneNumber(String telephoneNumber) {
+  public MbWayRedirection telephoneNumber(@javax.annotation.Nonnull String telephoneNumber) {
     
     this.telephoneNumber = telephoneNumber;
     return this;
   }
 
-   /**
+  /**
    * Telephone number of the shopper. Should be Portuguese phone number.
    * @return telephoneNumber
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_TELEPHONE_NUMBER)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -61,7 +62,7 @@ public class MbWayRedirection {
 
   @JsonProperty(JSON_PROPERTY_TELEPHONE_NUMBER)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setTelephoneNumber(String telephoneNumber) {
+  public void setTelephoneNumber(@javax.annotation.Nonnull String telephoneNumber) {
     this.telephoneNumber = telephoneNumber;
   }
 

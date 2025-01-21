@@ -33,24 +33,25 @@ import java.util.StringJoiner;
   PayLaterDataOneOf4.JSON_PROPERTY_PAY_BRIGHT_REDIRECT
 })
 @JsonTypeName("PayLaterData_oneOf_4")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class PayLaterDataOneOf4 {
   public static final String JSON_PROPERTY_PAY_BRIGHT_REDIRECT = "pay_bright_redirect";
+  @javax.annotation.Nonnull
   private Object payBrightRedirect;
 
   public PayLaterDataOneOf4() {
   }
 
-  public PayLaterDataOneOf4 payBrightRedirect(Object payBrightRedirect) {
+  public PayLaterDataOneOf4 payBrightRedirect(@javax.annotation.Nonnull Object payBrightRedirect) {
     
     this.payBrightRedirect = payBrightRedirect;
     return this;
   }
 
-   /**
+  /**
    * For PayBright Redirect as PayLater Option
    * @return payBrightRedirect
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_PAY_BRIGHT_REDIRECT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -62,7 +63,7 @@ public class PayLaterDataOneOf4 {
 
   @JsonProperty(JSON_PROPERTY_PAY_BRIGHT_REDIRECT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setPayBrightRedirect(Object payBrightRedirect) {
+  public void setPayBrightRedirect(@javax.annotation.Nonnull Object payBrightRedirect) {
     this.payBrightRedirect = payBrightRedirect;
   }
 

@@ -38,30 +38,33 @@ import java.util.StringJoiner;
   ElementSize.JSON_PROPERTY_PERCENTAGE,
   ElementSize.JSON_PROPERTY_PIXELS
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class ElementSize {
   public static final String JSON_PROPERTY_VARIANTS = "Variants";
+  @javax.annotation.Nonnull
   private SizeVariants variants;
 
   public static final String JSON_PROPERTY_PERCENTAGE = "Percentage";
+  @javax.annotation.Nonnull
   private Integer percentage;
 
   public static final String JSON_PROPERTY_PIXELS = "Pixels";
+  @javax.annotation.Nonnull
   private Integer pixels;
 
   public ElementSize() {
   }
 
-  public ElementSize variants(SizeVariants variants) {
+  public ElementSize variants(@javax.annotation.Nonnull SizeVariants variants) {
     
     this.variants = variants;
     return this;
   }
 
-   /**
+  /**
    * Get variants
    * @return variants
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_VARIANTS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -73,22 +76,21 @@ public class ElementSize {
 
   @JsonProperty(JSON_PROPERTY_VARIANTS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setVariants(SizeVariants variants) {
+  public void setVariants(@javax.annotation.Nonnull SizeVariants variants) {
     this.variants = variants;
   }
 
-
-  public ElementSize percentage(Integer percentage) {
+  public ElementSize percentage(@javax.annotation.Nonnull Integer percentage) {
     
     this.percentage = percentage;
     return this;
   }
 
-   /**
+  /**
    * Get percentage
    * minimum: 0
    * @return percentage
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_PERCENTAGE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -100,22 +102,21 @@ public class ElementSize {
 
   @JsonProperty(JSON_PROPERTY_PERCENTAGE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setPercentage(Integer percentage) {
+  public void setPercentage(@javax.annotation.Nonnull Integer percentage) {
     this.percentage = percentage;
   }
 
-
-  public ElementSize pixels(Integer pixels) {
+  public ElementSize pixels(@javax.annotation.Nonnull Integer pixels) {
     
     this.pixels = pixels;
     return this;
   }
 
-   /**
+  /**
    * Get pixels
    * minimum: 0
    * @return pixels
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_PIXELS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -127,7 +128,7 @@ public class ElementSize {
 
   @JsonProperty(JSON_PROPERTY_PIXELS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setPixels(Integer pixels) {
+  public void setPixels(@javax.annotation.Nonnull Integer pixels) {
     this.pixels = pixels;
   }
 

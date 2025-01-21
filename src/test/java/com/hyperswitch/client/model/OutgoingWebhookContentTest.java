@@ -27,22 +27,21 @@ import com.hyperswitch.client.model.PaymentsResponse1;
 import com.hyperswitch.client.model.PayoutCreateResponse;
 import com.hyperswitch.client.model.PayoutCreateResponse1;
 import com.hyperswitch.client.model.RefundResponse1;
-import org.junit.Assert;
-import org.junit.Ignore;
-import org.junit.Test;
-
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Test;
 
 /**
  * Model tests for OutgoingWebhookContent
  */
-public class OutgoingWebhookContentTest {
+class OutgoingWebhookContentTest {
     private final OutgoingWebhookContent model = new OutgoingWebhookContent();
 
     /**
      * Model tests for OutgoingWebhookContent
      */
     @Test
-    public void testOutgoingWebhookContent() {
+    void testOutgoingWebhookContent() {
         // TODO: test OutgoingWebhookContent
     }
 
@@ -50,7 +49,7 @@ public class OutgoingWebhookContentTest {
      * Test the property 'type'
      */
     @Test
-    public void typeTest() {
+    void typeTest() {
         // TODO: test type
     }
 
@@ -58,7 +57,7 @@ public class OutgoingWebhookContentTest {
      * Test the property '_object'
      */
     @Test
-    public void _objectTest() {
+    void _objectTest() {
         // TODO: test _object
     }
 

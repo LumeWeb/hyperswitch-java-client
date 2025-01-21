@@ -23,22 +23,21 @@ import org.openapitools.jackson.nullable.JsonNullable;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.openapitools.jackson.nullable.JsonNullable;
 import java.util.NoSuchElementException;
-import org.junit.Assert;
-import org.junit.Ignore;
-import org.junit.Test;
-
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Test;
 
 /**
  * Model tests for MerchantConnectorDetailsWrap
  */
-public class MerchantConnectorDetailsWrapTest {
+class MerchantConnectorDetailsWrapTest {
     private final MerchantConnectorDetailsWrap model = new MerchantConnectorDetailsWrap();
 
     /**
      * Model tests for MerchantConnectorDetailsWrap
      */
     @Test
-    public void testMerchantConnectorDetailsWrap() {
+    void testMerchantConnectorDetailsWrap() {
         // TODO: test MerchantConnectorDetailsWrap
     }
 
@@ -46,7 +45,7 @@ public class MerchantConnectorDetailsWrapTest {
      * Test the property 'credsIdentifier'
      */
     @Test
-    public void credsIdentifierTest() {
+    void credsIdentifierTest() {
         // TODO: test credsIdentifier
     }
 
@@ -54,7 +53,7 @@ public class MerchantConnectorDetailsWrapTest {
      * Test the property 'encodedData'
      */
     @Test
-    public void encodedDataTest() {
+    void encodedDataTest() {
         // TODO: test encodedData
     }
 

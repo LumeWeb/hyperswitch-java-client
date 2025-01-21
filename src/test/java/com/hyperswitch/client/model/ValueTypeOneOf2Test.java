@@ -19,22 +19,21 @@ import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonTypeName;
 import com.fasterxml.jackson.annotation.JsonValue;
 import com.hyperswitch.client.model.MetadataValue;
-import org.junit.Assert;
-import org.junit.Ignore;
-import org.junit.Test;
-
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Test;
 
 /**
  * Model tests for ValueTypeOneOf2
  */
-public class ValueTypeOneOf2Test {
+class ValueTypeOneOf2Test {
     private final ValueTypeOneOf2 model = new ValueTypeOneOf2();
 
     /**
      * Model tests for ValueTypeOneOf2
      */
     @Test
-    public void testValueTypeOneOf2() {
+    void testValueTypeOneOf2() {
         // TODO: test ValueTypeOneOf2
     }
 
@@ -42,7 +41,7 @@ public class ValueTypeOneOf2Test {
      * Test the property 'type'
      */
     @Test
-    public void typeTest() {
+    void typeTest() {
         // TODO: test type
     }
 
@@ -50,7 +49,7 @@ public class ValueTypeOneOf2Test {
      * Test the property 'value'
      */
     @Test
-    public void valueTest() {
+    void valueTest() {
         // TODO: test value
     }
 

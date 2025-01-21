@@ -22,6 +22,7 @@ import com.fasterxml.jackson.annotation.JsonTypeName;
 import com.fasterxml.jackson.annotation.JsonValue;
 import com.hyperswitch.client.model.OutgoingWebhookRequestContentHeadersInnerInner;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 import com.fasterxml.jackson.annotation.JsonTypeName;
@@ -36,27 +37,29 @@ import java.util.StringJoiner;
   OutgoingWebhookRequestContent.JSON_PROPERTY_BODY,
   OutgoingWebhookRequestContent.JSON_PROPERTY_HEADERS
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class OutgoingWebhookRequestContent {
   public static final String JSON_PROPERTY_BODY = "body";
+  @javax.annotation.Nonnull
   private String body;
 
   public static final String JSON_PROPERTY_HEADERS = "headers";
+  @javax.annotation.Nonnull
   private List<List<OutgoingWebhookRequestContentHeadersInnerInner>> headers = new ArrayList<>();
 
   public OutgoingWebhookRequestContent() {
   }
 
-  public OutgoingWebhookRequestContent body(String body) {
+  public OutgoingWebhookRequestContent body(@javax.annotation.Nonnull String body) {
     
     this.body = body;
     return this;
   }
 
-   /**
+  /**
    * The request body sent in the webhook.
    * @return body
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_BODY)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -68,12 +71,11 @@ public class OutgoingWebhookRequestContent {
 
   @JsonProperty(JSON_PROPERTY_BODY)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setBody(String body) {
+  public void setBody(@javax.annotation.Nonnull String body) {
     this.body = body;
   }
 
-
-  public OutgoingWebhookRequestContent headers(List<List<OutgoingWebhookRequestContentHeadersInnerInner>> headers) {
+  public OutgoingWebhookRequestContent headers(@javax.annotation.Nonnull List<List<OutgoingWebhookRequestContentHeadersInnerInner>> headers) {
     
     this.headers = headers;
     return this;
@@ -87,10 +89,10 @@ public class OutgoingWebhookRequestContent {
     return this;
   }
 
-   /**
+  /**
    * The request headers sent in the webhook.
    * @return headers
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_HEADERS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -102,7 +104,7 @@ public class OutgoingWebhookRequestContent {
 
   @JsonProperty(JSON_PROPERTY_HEADERS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setHeaders(List<List<OutgoingWebhookRequestContentHeadersInnerInner>> headers) {
+  public void setHeaders(@javax.annotation.Nonnull List<List<OutgoingWebhookRequestContentHeadersInnerInner>> headers) {
     this.headers = headers;
   }
 

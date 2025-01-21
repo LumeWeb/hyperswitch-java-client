@@ -19,22 +19,21 @@ import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonTypeName;
 import com.fasterxml.jackson.annotation.JsonValue;
 import com.hyperswitch.client.model.PaymentChargeType;
-import org.junit.Assert;
-import org.junit.Ignore;
-import org.junit.Test;
-
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Test;
 
 /**
  * Model tests for PaymentChargeRequest
  */
-public class PaymentChargeRequestTest {
+class PaymentChargeRequestTest {
     private final PaymentChargeRequest model = new PaymentChargeRequest();
 
     /**
      * Model tests for PaymentChargeRequest
      */
     @Test
-    public void testPaymentChargeRequest() {
+    void testPaymentChargeRequest() {
         // TODO: test PaymentChargeRequest
     }
 
@@ -42,7 +41,7 @@ public class PaymentChargeRequestTest {
      * Test the property 'chargeType'
      */
     @Test
-    public void chargeTypeTest() {
+    void chargeTypeTest() {
         // TODO: test chargeType
     }
 
@@ -50,7 +49,7 @@ public class PaymentChargeRequestTest {
      * Test the property 'fees'
      */
     @Test
-    public void feesTest() {
+    void feesTest() {
         // TODO: test fees
     }
 
@@ -58,7 +57,7 @@ public class PaymentChargeRequestTest {
      * Test the property 'transferAccountId'
      */
     @Test
-    public void transferAccountIdTest() {
+    void transferAccountIdTest() {
         // TODO: test transferAccountId
     }
 

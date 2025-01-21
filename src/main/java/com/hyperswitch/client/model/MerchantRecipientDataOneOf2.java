@@ -34,24 +34,25 @@ import java.util.StringJoiner;
   MerchantRecipientDataOneOf2.JSON_PROPERTY_ACCOUNT_DATA
 })
 @JsonTypeName("MerchantRecipientData_oneOf_2")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class MerchantRecipientDataOneOf2 {
   public static final String JSON_PROPERTY_ACCOUNT_DATA = "account_data";
+  @javax.annotation.Nonnull
   private MerchantAccountData accountData;
 
   public MerchantRecipientDataOneOf2() {
   }
 
-  public MerchantRecipientDataOneOf2 accountData(MerchantAccountData accountData) {
+  public MerchantRecipientDataOneOf2 accountData(@javax.annotation.Nonnull MerchantAccountData accountData) {
     
     this.accountData = accountData;
     return this;
   }
 
-   /**
+  /**
    * Get accountData
    * @return accountData
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_ACCOUNT_DATA)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -63,7 +64,7 @@ public class MerchantRecipientDataOneOf2 {
 
   @JsonProperty(JSON_PROPERTY_ACCOUNT_DATA)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setAccountData(MerchantAccountData accountData) {
+  public void setAccountData(@javax.annotation.Nonnull MerchantAccountData accountData) {
     this.accountData = accountData;
   }
 

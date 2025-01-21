@@ -33,27 +33,29 @@ import java.util.StringJoiner;
   DefaultPaymentMethod.JSON_PROPERTY_CUSTOMER_ID,
   DefaultPaymentMethod.JSON_PROPERTY_PAYMENT_METHOD_ID
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class DefaultPaymentMethod {
   public static final String JSON_PROPERTY_CUSTOMER_ID = "customer_id";
+  @javax.annotation.Nonnull
   private String customerId;
 
   public static final String JSON_PROPERTY_PAYMENT_METHOD_ID = "payment_method_id";
+  @javax.annotation.Nonnull
   private String paymentMethodId;
 
   public DefaultPaymentMethod() {
   }
 
-  public DefaultPaymentMethod customerId(String customerId) {
+  public DefaultPaymentMethod customerId(@javax.annotation.Nonnull String customerId) {
     
     this.customerId = customerId;
     return this;
   }
 
-   /**
+  /**
    * Get customerId
    * @return customerId
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_CUSTOMER_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -65,21 +67,20 @@ public class DefaultPaymentMethod {
 
   @JsonProperty(JSON_PROPERTY_CUSTOMER_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setCustomerId(String customerId) {
+  public void setCustomerId(@javax.annotation.Nonnull String customerId) {
     this.customerId = customerId;
   }
 
-
-  public DefaultPaymentMethod paymentMethodId(String paymentMethodId) {
+  public DefaultPaymentMethod paymentMethodId(@javax.annotation.Nonnull String paymentMethodId) {
     
     this.paymentMethodId = paymentMethodId;
     return this;
   }
 
-   /**
+  /**
    * Get paymentMethodId
    * @return paymentMethodId
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_PAYMENT_METHOD_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -91,7 +92,7 @@ public class DefaultPaymentMethod {
 
   @JsonProperty(JSON_PROPERTY_PAYMENT_METHOD_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setPaymentMethodId(String paymentMethodId) {
+  public void setPaymentMethodId(@javax.annotation.Nonnull String paymentMethodId) {
     this.paymentMethodId = paymentMethodId;
   }
 

@@ -33,25 +33,26 @@ import java.util.StringJoiner;
   ElementSizeOneOf2.JSON_PROPERTY_PIXELS
 })
 @JsonTypeName("ElementSize_oneOf_2")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class ElementSizeOneOf2 {
   public static final String JSON_PROPERTY_PIXELS = "Pixels";
+  @javax.annotation.Nonnull
   private Integer pixels;
 
   public ElementSizeOneOf2() {
   }
 
-  public ElementSizeOneOf2 pixels(Integer pixels) {
+  public ElementSizeOneOf2 pixels(@javax.annotation.Nonnull Integer pixels) {
     
     this.pixels = pixels;
     return this;
   }
 
-   /**
+  /**
    * Get pixels
    * minimum: 0
    * @return pixels
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_PIXELS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -63,7 +64,7 @@ public class ElementSizeOneOf2 {
 
   @JsonProperty(JSON_PROPERTY_PIXELS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setPixels(Integer pixels) {
+  public void setPixels(@javax.annotation.Nonnull Integer pixels) {
     this.pixels = pixels;
   }
 

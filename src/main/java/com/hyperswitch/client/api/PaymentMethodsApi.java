@@ -16,8 +16,8 @@ import com.fasterxml.jackson.core.type.TypeReference;
 
 import com.hyperswitch.client.ApiException;
 import com.hyperswitch.client.ApiClient;
+import com.hyperswitch.client.BaseApi;
 import com.hyperswitch.client.Configuration;
-import com.hyperswitch.client.model.*;
 import com.hyperswitch.client.Pair;
 
 import com.hyperswitch.client.model.Currency;
@@ -37,26 +37,15 @@ import java.util.List;
 import java.util.Map;
 import java.util.StringJoiner;
 
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
-public class PaymentMethodsApi {
-
-
-  private ApiClient apiClient;
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
+public class PaymentMethodsApi extends BaseApi {
 
   public PaymentMethodsApi() {
-    this(Configuration.getDefaultApiClient());
+    super(Configuration.getDefaultApiClient());
   }
 
   public PaymentMethodsApi(ApiClient apiClient) {
-    this.apiClient = apiClient;
-  }
-
-  public ApiClient getApiClient() {
-    return apiClient;
-  }
-
-  public void setApiClient(ApiClient apiClient) {
-    this.apiClient = apiClient;
+    super(apiClient);
   }
 
   /**
@@ -163,7 +152,7 @@ public class PaymentMethodsApi {
     
     // create path and map variables
     String localVarPath = "/payment_methods/{method_id}"
-      .replaceAll("\\{" + "method_id" + "\\}", apiClient.escapeString(methodId.toString()));
+      .replaceAll("\\{" + "method_id" + "\\}", apiClient.escapeString(apiClient.parameterToString(methodId)));
 
     StringJoiner localVarQueryStringJoiner = new StringJoiner("&");
     String localVarQueryParameterBaseName;
@@ -280,8 +269,8 @@ public class PaymentMethodsApi {
     
     // create path and map variables
     String localVarPath = "/customers/{customer_id}/payment_methods"
-      .replaceAll("\\{" + "customer_id" + "\\}", apiClient.escapeString(customerId.toString()))
-      .replaceAll("\\{" + "accepted_currency" + "\\}", apiClient.escapeString(acceptedCurrency.toString()));
+      .replaceAll("\\{" + "customer_id" + "\\}", apiClient.escapeString(apiClient.parameterToString(customerId)))
+      .replaceAll("\\{" + "accepted_currency" + "\\}", apiClient.escapeString(apiClient.parameterToString(acceptedCurrency)));
 
     StringJoiner localVarQueryStringJoiner = new StringJoiner("&");
     String localVarQueryParameterBaseName;
@@ -403,8 +392,8 @@ public class PaymentMethodsApi {
     
     // create path and map variables
     String localVarPath = "/account/payment_methods"
-      .replaceAll("\\{" + "account_id" + "\\}", apiClient.escapeString(accountId.toString()))
-      .replaceAll("\\{" + "accepted_currency" + "\\}", apiClient.escapeString(acceptedCurrency.toString()));
+      .replaceAll("\\{" + "account_id" + "\\}", apiClient.escapeString(apiClient.parameterToString(accountId)))
+      .replaceAll("\\{" + "accepted_currency" + "\\}", apiClient.escapeString(apiClient.parameterToString(acceptedCurrency)));
 
     StringJoiner localVarQueryStringJoiner = new StringJoiner("&");
     String localVarQueryParameterBaseName;
@@ -533,9 +522,9 @@ public class PaymentMethodsApi {
     
     // create path and map variables
     String localVarPath = "/customers/payment_methods"
-      .replaceAll("\\{" + "client-secret" + "\\}", apiClient.escapeString(clientSecret.toString()))
-      .replaceAll("\\{" + "customer_id" + "\\}", apiClient.escapeString(customerId.toString()))
-      .replaceAll("\\{" + "accepted_currency" + "\\}", apiClient.escapeString(acceptedCurrency.toString()));
+      .replaceAll("\\{" + "client-secret" + "\\}", apiClient.escapeString(apiClient.parameterToString(clientSecret)))
+      .replaceAll("\\{" + "customer_id" + "\\}", apiClient.escapeString(apiClient.parameterToString(customerId)))
+      .replaceAll("\\{" + "accepted_currency" + "\\}", apiClient.escapeString(apiClient.parameterToString(acceptedCurrency)));
 
     StringJoiner localVarQueryStringJoiner = new StringJoiner("&");
     String localVarQueryParameterBaseName;
@@ -615,7 +604,7 @@ public class PaymentMethodsApi {
     
     // create path and map variables
     String localVarPath = "/payment_methods/{method_id}"
-      .replaceAll("\\{" + "method_id" + "\\}", apiClient.escapeString(methodId.toString()));
+      .replaceAll("\\{" + "method_id" + "\\}", apiClient.escapeString(apiClient.parameterToString(methodId)));
 
     StringJoiner localVarQueryStringJoiner = new StringJoiner("&");
     String localVarQueryParameterBaseName;
@@ -697,8 +686,8 @@ public class PaymentMethodsApi {
     
     // create path and map variables
     String localVarPath = "/{customer_id}/payment_methods/{payment_method_id}/default"
-      .replaceAll("\\{" + "customer_id" + "\\}", apiClient.escapeString(customerId.toString()))
-      .replaceAll("\\{" + "payment_method_id" + "\\}", apiClient.escapeString(paymentMethodId.toString()));
+      .replaceAll("\\{" + "customer_id" + "\\}", apiClient.escapeString(apiClient.parameterToString(customerId)))
+      .replaceAll("\\{" + "payment_method_id" + "\\}", apiClient.escapeString(apiClient.parameterToString(paymentMethodId)));
 
     StringJoiner localVarQueryStringJoiner = new StringJoiner("&");
     String localVarQueryParameterBaseName;
@@ -780,7 +769,7 @@ public class PaymentMethodsApi {
     
     // create path and map variables
     String localVarPath = "/payment_methods/{method_id}/update"
-      .replaceAll("\\{" + "method_id" + "\\}", apiClient.escapeString(methodId.toString()));
+      .replaceAll("\\{" + "method_id" + "\\}", apiClient.escapeString(apiClient.parameterToString(methodId)));
 
     StringJoiner localVarQueryStringJoiner = new StringJoiner("&");
     String localVarQueryParameterBaseName;
@@ -825,4 +814,44 @@ public class PaymentMethodsApi {
     );
   }
 
+  @Override
+  public <T> T invokeAPI(String url, String method, Object request, TypeReference<T> returnType, Map<String, String> additionalHeaders) throws ApiException {
+    String localVarPath = url.replace(apiClient.getBaseURL(), "");
+    StringJoiner localVarQueryStringJoiner = new StringJoiner("&");
+    List<Pair> localVarQueryParams = new ArrayList<Pair>();
+    List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
+    Map<String, String> localVarHeaderParams = new HashMap<String, String>();
+    Map<String, String> localVarCookieParams = new HashMap<String, String>();
+    Map<String, Object> localVarFormParams = new HashMap<String, Object>();
+
+    localVarHeaderParams.putAll(additionalHeaders);
+
+    final String[] localVarAccepts = {
+      "application/json"
+    };
+    final String localVarAccept = apiClient.selectHeaderAccept(localVarAccepts);
+
+    final String[] localVarContentTypes = {
+      "application/json"
+    };
+    final String localVarContentType = apiClient.selectHeaderContentType(localVarContentTypes);
+
+    String[] localVarAuthNames = new String[] { "publishable_key", "api_key" };
+
+    return apiClient.invokeAPI(
+      localVarPath,
+        method,
+        localVarQueryParams,
+        localVarCollectionQueryParams,
+        localVarQueryStringJoiner.toString(),
+        request,
+        localVarHeaderParams,
+        localVarCookieParams,
+        localVarFormParams,
+        localVarAccept,
+        localVarContentType,
+        localVarAuthNames,
+        returnType
+    );
+  }
 }

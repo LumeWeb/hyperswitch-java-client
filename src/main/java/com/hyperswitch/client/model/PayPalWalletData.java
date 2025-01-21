@@ -32,24 +32,25 @@ import java.util.StringJoiner;
 @JsonPropertyOrder({
   PayPalWalletData.JSON_PROPERTY_TOKEN
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class PayPalWalletData {
   public static final String JSON_PROPERTY_TOKEN = "token";
+  @javax.annotation.Nonnull
   private String token;
 
   public PayPalWalletData() {
   }
 
-  public PayPalWalletData token(String token) {
+  public PayPalWalletData token(@javax.annotation.Nonnull String token) {
     
     this.token = token;
     return this;
   }
 
-   /**
+  /**
    * Token generated for the Apple pay
    * @return token
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_TOKEN)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -61,7 +62,7 @@ public class PayPalWalletData {
 
   @JsonProperty(JSON_PROPERTY_TOKEN)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setToken(String token) {
+  public void setToken(@javax.annotation.Nonnull String token) {
     this.token = token;
   }
 

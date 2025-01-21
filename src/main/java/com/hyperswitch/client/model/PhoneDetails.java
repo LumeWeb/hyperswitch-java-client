@@ -37,27 +37,29 @@ import java.util.StringJoiner;
   PhoneDetails.JSON_PROPERTY_NUMBER,
   PhoneDetails.JSON_PROPERTY_COUNTRY_CODE
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class PhoneDetails {
   public static final String JSON_PROPERTY_NUMBER = "number";
+  @javax.annotation.Nullable
   private JsonNullable<String> number = JsonNullable.<String>undefined();
 
   public static final String JSON_PROPERTY_COUNTRY_CODE = "country_code";
+  @javax.annotation.Nullable
   private JsonNullable<String> countryCode = JsonNullable.<String>undefined();
 
   public PhoneDetails() {
   }
 
-  public PhoneDetails number(String number) {
+  public PhoneDetails number(@javax.annotation.Nullable String number) {
     this.number = JsonNullable.<String>of(number);
     
     return this;
   }
 
-   /**
+  /**
    * The contact number
    * @return number
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -77,21 +79,20 @@ public class PhoneDetails {
     this.number = number;
   }
 
-  public void setNumber(String number) {
+  public void setNumber(@javax.annotation.Nullable String number) {
     this.number = JsonNullable.<String>of(number);
   }
 
-
-  public PhoneDetails countryCode(String countryCode) {
+  public PhoneDetails countryCode(@javax.annotation.Nullable String countryCode) {
     this.countryCode = JsonNullable.<String>of(countryCode);
     
     return this;
   }
 
-   /**
+  /**
    * The country code attached to the number
    * @return countryCode
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -111,7 +112,7 @@ public class PhoneDetails {
     this.countryCode = countryCode;
   }
 
-  public void setCountryCode(String countryCode) {
+  public void setCountryCode(@javax.annotation.Nullable String countryCode) {
     this.countryCode = JsonNullable.<String>of(countryCode);
   }
 

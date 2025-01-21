@@ -20,23 +20,23 @@ import com.fasterxml.jackson.annotation.JsonTypeName;
 import com.fasterxml.jackson.annotation.JsonValue;
 import com.hyperswitch.client.model.ConnectorVolumeSplit;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
-import org.junit.Assert;
-import org.junit.Ignore;
-import org.junit.Test;
-
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Test;
 
 /**
  * Model tests for VolumeSplit
  */
-public class VolumeSplitTest {
+class VolumeSplitTest {
     private final VolumeSplit model = new VolumeSplit();
 
     /**
      * Model tests for VolumeSplit
      */
     @Test
-    public void testVolumeSplit() {
+    void testVolumeSplit() {
         // TODO: test VolumeSplit
     }
 
@@ -44,7 +44,7 @@ public class VolumeSplitTest {
      * Test the property 'type'
      */
     @Test
-    public void typeTest() {
+    void typeTest() {
         // TODO: test type
     }
 
@@ -52,7 +52,7 @@ public class VolumeSplitTest {
      * Test the property 'data'
      */
     @Test
-    public void dataTest() {
+    void dataTest() {
         // TODO: test data
     }
 

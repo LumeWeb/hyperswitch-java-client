@@ -40,27 +40,29 @@ import java.util.StringJoiner;
   BankRedirectDataOneOf12Przelewy24.JSON_PROPERTY_BILLING_DETAILS
 })
 @JsonTypeName("BankRedirectData_oneOf_12_przelewy24")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class BankRedirectDataOneOf12Przelewy24 {
   public static final String JSON_PROPERTY_BANK_NAME = "bank_name";
+  @javax.annotation.Nullable
   private JsonNullable<BankNames> bankName = JsonNullable.<BankNames>undefined();
 
   public static final String JSON_PROPERTY_BILLING_DETAILS = "billing_details";
+  @javax.annotation.Nullable
   private JsonNullable<BankRedirectBilling> billingDetails = JsonNullable.<BankRedirectBilling>undefined();
 
   public BankRedirectDataOneOf12Przelewy24() {
   }
 
-  public BankRedirectDataOneOf12Przelewy24 bankName(BankNames bankName) {
+  public BankRedirectDataOneOf12Przelewy24 bankName(@javax.annotation.Nullable BankNames bankName) {
     this.bankName = JsonNullable.<BankNames>of(bankName);
     
     return this;
   }
 
-   /**
+  /**
    * Get bankName
    * @return bankName
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -80,21 +82,20 @@ public class BankRedirectDataOneOf12Przelewy24 {
     this.bankName = bankName;
   }
 
-  public void setBankName(BankNames bankName) {
+  public void setBankName(@javax.annotation.Nullable BankNames bankName) {
     this.bankName = JsonNullable.<BankNames>of(bankName);
   }
 
-
-  public BankRedirectDataOneOf12Przelewy24 billingDetails(BankRedirectBilling billingDetails) {
+  public BankRedirectDataOneOf12Przelewy24 billingDetails(@javax.annotation.Nullable BankRedirectBilling billingDetails) {
     this.billingDetails = JsonNullable.<BankRedirectBilling>of(billingDetails);
     
     return this;
   }
 
-   /**
+  /**
    * Get billingDetails
    * @return billingDetails
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -114,7 +115,7 @@ public class BankRedirectDataOneOf12Przelewy24 {
     this.billingDetails = billingDetails;
   }
 
-  public void setBillingDetails(BankRedirectBilling billingDetails) {
+  public void setBillingDetails(@javax.annotation.Nullable BankRedirectBilling billingDetails) {
     this.billingDetails = JsonNullable.<BankRedirectBilling>of(billingDetails);
   }
 

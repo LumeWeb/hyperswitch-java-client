@@ -50,63 +50,77 @@ import java.util.StringJoiner;
   CardDetailFromLocker.JSON_PROPERTY_CARD_TYPE,
   CardDetailFromLocker.JSON_PROPERTY_SAVED_TO_LOCKER
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class CardDetailFromLocker {
   public static final String JSON_PROPERTY_SCHEME = "scheme";
+  @javax.annotation.Nullable
   private JsonNullable<String> scheme = JsonNullable.<String>undefined();
 
   public static final String JSON_PROPERTY_ISSUER_COUNTRY = "issuer_country";
+  @javax.annotation.Nullable
   private JsonNullable<String> issuerCountry = JsonNullable.<String>undefined();
 
   public static final String JSON_PROPERTY_LAST4_DIGITS = "last4_digits";
+  @javax.annotation.Nullable
   private JsonNullable<String> last4Digits = JsonNullable.<String>undefined();
 
   public static final String JSON_PROPERTY_EXPIRY_MONTH = "expiry_month";
+  @javax.annotation.Nullable
   private JsonNullable<String> expiryMonth = JsonNullable.<String>undefined();
 
   public static final String JSON_PROPERTY_EXPIRY_YEAR = "expiry_year";
+  @javax.annotation.Nullable
   private JsonNullable<String> expiryYear = JsonNullable.<String>undefined();
 
   public static final String JSON_PROPERTY_CARD_TOKEN = "card_token";
+  @javax.annotation.Nullable
   private JsonNullable<String> cardToken = JsonNullable.<String>undefined();
 
   public static final String JSON_PROPERTY_CARD_HOLDER_NAME = "card_holder_name";
+  @javax.annotation.Nullable
   private JsonNullable<String> cardHolderName = JsonNullable.<String>undefined();
 
   public static final String JSON_PROPERTY_CARD_FINGERPRINT = "card_fingerprint";
+  @javax.annotation.Nullable
   private JsonNullable<String> cardFingerprint = JsonNullable.<String>undefined();
 
   public static final String JSON_PROPERTY_NICK_NAME = "nick_name";
+  @javax.annotation.Nullable
   private JsonNullable<String> nickName = JsonNullable.<String>undefined();
 
   public static final String JSON_PROPERTY_CARD_NETWORK = "card_network";
+  @javax.annotation.Nullable
   private JsonNullable<CardNetwork> cardNetwork = JsonNullable.<CardNetwork>undefined();
 
   public static final String JSON_PROPERTY_CARD_ISIN = "card_isin";
+  @javax.annotation.Nullable
   private JsonNullable<String> cardIsin = JsonNullable.<String>undefined();
 
   public static final String JSON_PROPERTY_CARD_ISSUER = "card_issuer";
+  @javax.annotation.Nullable
   private JsonNullable<String> cardIssuer = JsonNullable.<String>undefined();
 
   public static final String JSON_PROPERTY_CARD_TYPE = "card_type";
+  @javax.annotation.Nullable
   private JsonNullable<String> cardType = JsonNullable.<String>undefined();
 
   public static final String JSON_PROPERTY_SAVED_TO_LOCKER = "saved_to_locker";
+  @javax.annotation.Nonnull
   private Boolean savedToLocker;
 
   public CardDetailFromLocker() {
   }
 
-  public CardDetailFromLocker scheme(String scheme) {
+  public CardDetailFromLocker scheme(@javax.annotation.Nullable String scheme) {
     this.scheme = JsonNullable.<String>of(scheme);
     
     return this;
   }
 
-   /**
+  /**
    * Get scheme
    * @return scheme
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -126,21 +140,20 @@ public class CardDetailFromLocker {
     this.scheme = scheme;
   }
 
-  public void setScheme(String scheme) {
+  public void setScheme(@javax.annotation.Nullable String scheme) {
     this.scheme = JsonNullable.<String>of(scheme);
   }
 
-
-  public CardDetailFromLocker issuerCountry(String issuerCountry) {
+  public CardDetailFromLocker issuerCountry(@javax.annotation.Nullable String issuerCountry) {
     this.issuerCountry = JsonNullable.<String>of(issuerCountry);
     
     return this;
   }
 
-   /**
+  /**
    * Get issuerCountry
    * @return issuerCountry
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -160,21 +173,20 @@ public class CardDetailFromLocker {
     this.issuerCountry = issuerCountry;
   }
 
-  public void setIssuerCountry(String issuerCountry) {
+  public void setIssuerCountry(@javax.annotation.Nullable String issuerCountry) {
     this.issuerCountry = JsonNullable.<String>of(issuerCountry);
   }
 
-
-  public CardDetailFromLocker last4Digits(String last4Digits) {
+  public CardDetailFromLocker last4Digits(@javax.annotation.Nullable String last4Digits) {
     this.last4Digits = JsonNullable.<String>of(last4Digits);
     
     return this;
   }
 
-   /**
+  /**
    * Get last4Digits
    * @return last4Digits
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -194,21 +206,20 @@ public class CardDetailFromLocker {
     this.last4Digits = last4Digits;
   }
 
-  public void setLast4Digits(String last4Digits) {
+  public void setLast4Digits(@javax.annotation.Nullable String last4Digits) {
     this.last4Digits = JsonNullable.<String>of(last4Digits);
   }
 
-
-  public CardDetailFromLocker expiryMonth(String expiryMonth) {
+  public CardDetailFromLocker expiryMonth(@javax.annotation.Nullable String expiryMonth) {
     this.expiryMonth = JsonNullable.<String>of(expiryMonth);
     
     return this;
   }
 
-   /**
+  /**
    * Get expiryMonth
    * @return expiryMonth
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -228,21 +239,20 @@ public class CardDetailFromLocker {
     this.expiryMonth = expiryMonth;
   }
 
-  public void setExpiryMonth(String expiryMonth) {
+  public void setExpiryMonth(@javax.annotation.Nullable String expiryMonth) {
     this.expiryMonth = JsonNullable.<String>of(expiryMonth);
   }
 
-
-  public CardDetailFromLocker expiryYear(String expiryYear) {
+  public CardDetailFromLocker expiryYear(@javax.annotation.Nullable String expiryYear) {
     this.expiryYear = JsonNullable.<String>of(expiryYear);
     
     return this;
   }
 
-   /**
+  /**
    * Get expiryYear
    * @return expiryYear
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -262,21 +272,20 @@ public class CardDetailFromLocker {
     this.expiryYear = expiryYear;
   }
 
-  public void setExpiryYear(String expiryYear) {
+  public void setExpiryYear(@javax.annotation.Nullable String expiryYear) {
     this.expiryYear = JsonNullable.<String>of(expiryYear);
   }
 
-
-  public CardDetailFromLocker cardToken(String cardToken) {
+  public CardDetailFromLocker cardToken(@javax.annotation.Nullable String cardToken) {
     this.cardToken = JsonNullable.<String>of(cardToken);
     
     return this;
   }
 
-   /**
+  /**
    * Get cardToken
    * @return cardToken
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -296,21 +305,20 @@ public class CardDetailFromLocker {
     this.cardToken = cardToken;
   }
 
-  public void setCardToken(String cardToken) {
+  public void setCardToken(@javax.annotation.Nullable String cardToken) {
     this.cardToken = JsonNullable.<String>of(cardToken);
   }
 
-
-  public CardDetailFromLocker cardHolderName(String cardHolderName) {
+  public CardDetailFromLocker cardHolderName(@javax.annotation.Nullable String cardHolderName) {
     this.cardHolderName = JsonNullable.<String>of(cardHolderName);
     
     return this;
   }
 
-   /**
+  /**
    * Get cardHolderName
    * @return cardHolderName
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -330,21 +338,20 @@ public class CardDetailFromLocker {
     this.cardHolderName = cardHolderName;
   }
 
-  public void setCardHolderName(String cardHolderName) {
+  public void setCardHolderName(@javax.annotation.Nullable String cardHolderName) {
     this.cardHolderName = JsonNullable.<String>of(cardHolderName);
   }
 
-
-  public CardDetailFromLocker cardFingerprint(String cardFingerprint) {
+  public CardDetailFromLocker cardFingerprint(@javax.annotation.Nullable String cardFingerprint) {
     this.cardFingerprint = JsonNullable.<String>of(cardFingerprint);
     
     return this;
   }
 
-   /**
+  /**
    * Get cardFingerprint
    * @return cardFingerprint
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -364,21 +371,20 @@ public class CardDetailFromLocker {
     this.cardFingerprint = cardFingerprint;
   }
 
-  public void setCardFingerprint(String cardFingerprint) {
+  public void setCardFingerprint(@javax.annotation.Nullable String cardFingerprint) {
     this.cardFingerprint = JsonNullable.<String>of(cardFingerprint);
   }
 
-
-  public CardDetailFromLocker nickName(String nickName) {
+  public CardDetailFromLocker nickName(@javax.annotation.Nullable String nickName) {
     this.nickName = JsonNullable.<String>of(nickName);
     
     return this;
   }
 
-   /**
+  /**
    * Get nickName
    * @return nickName
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -398,21 +404,20 @@ public class CardDetailFromLocker {
     this.nickName = nickName;
   }
 
-  public void setNickName(String nickName) {
+  public void setNickName(@javax.annotation.Nullable String nickName) {
     this.nickName = JsonNullable.<String>of(nickName);
   }
 
-
-  public CardDetailFromLocker cardNetwork(CardNetwork cardNetwork) {
+  public CardDetailFromLocker cardNetwork(@javax.annotation.Nullable CardNetwork cardNetwork) {
     this.cardNetwork = JsonNullable.<CardNetwork>of(cardNetwork);
     
     return this;
   }
 
-   /**
+  /**
    * Get cardNetwork
    * @return cardNetwork
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -432,21 +437,20 @@ public class CardDetailFromLocker {
     this.cardNetwork = cardNetwork;
   }
 
-  public void setCardNetwork(CardNetwork cardNetwork) {
+  public void setCardNetwork(@javax.annotation.Nullable CardNetwork cardNetwork) {
     this.cardNetwork = JsonNullable.<CardNetwork>of(cardNetwork);
   }
 
-
-  public CardDetailFromLocker cardIsin(String cardIsin) {
+  public CardDetailFromLocker cardIsin(@javax.annotation.Nullable String cardIsin) {
     this.cardIsin = JsonNullable.<String>of(cardIsin);
     
     return this;
   }
 
-   /**
+  /**
    * Get cardIsin
    * @return cardIsin
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -466,21 +470,20 @@ public class CardDetailFromLocker {
     this.cardIsin = cardIsin;
   }
 
-  public void setCardIsin(String cardIsin) {
+  public void setCardIsin(@javax.annotation.Nullable String cardIsin) {
     this.cardIsin = JsonNullable.<String>of(cardIsin);
   }
 
-
-  public CardDetailFromLocker cardIssuer(String cardIssuer) {
+  public CardDetailFromLocker cardIssuer(@javax.annotation.Nullable String cardIssuer) {
     this.cardIssuer = JsonNullable.<String>of(cardIssuer);
     
     return this;
   }
 
-   /**
+  /**
    * Get cardIssuer
    * @return cardIssuer
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -500,21 +503,20 @@ public class CardDetailFromLocker {
     this.cardIssuer = cardIssuer;
   }
 
-  public void setCardIssuer(String cardIssuer) {
+  public void setCardIssuer(@javax.annotation.Nullable String cardIssuer) {
     this.cardIssuer = JsonNullable.<String>of(cardIssuer);
   }
 
-
-  public CardDetailFromLocker cardType(String cardType) {
+  public CardDetailFromLocker cardType(@javax.annotation.Nullable String cardType) {
     this.cardType = JsonNullable.<String>of(cardType);
     
     return this;
   }
 
-   /**
+  /**
    * Get cardType
    * @return cardType
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -534,21 +536,20 @@ public class CardDetailFromLocker {
     this.cardType = cardType;
   }
 
-  public void setCardType(String cardType) {
+  public void setCardType(@javax.annotation.Nullable String cardType) {
     this.cardType = JsonNullable.<String>of(cardType);
   }
 
-
-  public CardDetailFromLocker savedToLocker(Boolean savedToLocker) {
+  public CardDetailFromLocker savedToLocker(@javax.annotation.Nonnull Boolean savedToLocker) {
     
     this.savedToLocker = savedToLocker;
     return this;
   }
 
-   /**
+  /**
    * Get savedToLocker
    * @return savedToLocker
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_SAVED_TO_LOCKER)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -560,7 +561,7 @@ public class CardDetailFromLocker {
 
   @JsonProperty(JSON_PROPERTY_SAVED_TO_LOCKER)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setSavedToLocker(Boolean savedToLocker) {
+  public void setSavedToLocker(@javax.annotation.Nonnull Boolean savedToLocker) {
     this.savedToLocker = savedToLocker;
   }
 

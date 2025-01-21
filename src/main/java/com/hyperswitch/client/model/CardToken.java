@@ -37,27 +37,29 @@ import java.util.StringJoiner;
   CardToken.JSON_PROPERTY_CARD_HOLDER_NAME,
   CardToken.JSON_PROPERTY_CARD_CVC
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class CardToken {
   public static final String JSON_PROPERTY_CARD_HOLDER_NAME = "card_holder_name";
+  @javax.annotation.Nonnull
   private String cardHolderName;
 
   public static final String JSON_PROPERTY_CARD_CVC = "card_cvc";
+  @javax.annotation.Nullable
   private JsonNullable<String> cardCvc = JsonNullable.<String>undefined();
 
   public CardToken() {
   }
 
-  public CardToken cardHolderName(String cardHolderName) {
+  public CardToken cardHolderName(@javax.annotation.Nonnull String cardHolderName) {
     
     this.cardHolderName = cardHolderName;
     return this;
   }
 
-   /**
+  /**
    * The card holder&#39;s name
    * @return cardHolderName
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_CARD_HOLDER_NAME)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -69,21 +71,20 @@ public class CardToken {
 
   @JsonProperty(JSON_PROPERTY_CARD_HOLDER_NAME)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setCardHolderName(String cardHolderName) {
+  public void setCardHolderName(@javax.annotation.Nonnull String cardHolderName) {
     this.cardHolderName = cardHolderName;
   }
 
-
-  public CardToken cardCvc(String cardCvc) {
+  public CardToken cardCvc(@javax.annotation.Nullable String cardCvc) {
     this.cardCvc = JsonNullable.<String>of(cardCvc);
     
     return this;
   }
 
-   /**
+  /**
    * The CVC number for the card
    * @return cardCvc
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -103,7 +104,7 @@ public class CardToken {
     this.cardCvc = cardCvc;
   }
 
-  public void setCardCvc(String cardCvc) {
+  public void setCardCvc(@javax.annotation.Nullable String cardCvc) {
     this.cardCvc = JsonNullable.<String>of(cardCvc);
   }
 

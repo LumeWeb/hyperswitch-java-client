@@ -51,54 +51,65 @@ import java.util.StringJoiner;
   Bank.JSON_PROPERTY_PIX_KEY,
   Bank.JSON_PROPERTY_TAX_ID
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class Bank {
   public static final String JSON_PROPERTY_BANK_NAME = "bank_name";
+  @javax.annotation.Nullable
   private JsonNullable<String> bankName = JsonNullable.<String>undefined();
 
   public static final String JSON_PROPERTY_BANK_COUNTRY_CODE = "bank_country_code";
+  @javax.annotation.Nullable
   private JsonNullable<CountryAlpha2> bankCountryCode = JsonNullable.<CountryAlpha2>undefined();
 
   public static final String JSON_PROPERTY_BANK_CITY = "bank_city";
+  @javax.annotation.Nullable
   private JsonNullable<String> bankCity = JsonNullable.<String>undefined();
 
   public static final String JSON_PROPERTY_BANK_ACCOUNT_NUMBER = "bank_account_number";
+  @javax.annotation.Nonnull
   private String bankAccountNumber;
 
   public static final String JSON_PROPERTY_BANK_ROUTING_NUMBER = "bank_routing_number";
+  @javax.annotation.Nonnull
   private String bankRoutingNumber;
 
   public static final String JSON_PROPERTY_BANK_SORT_CODE = "bank_sort_code";
+  @javax.annotation.Nonnull
   private String bankSortCode;
 
   public static final String JSON_PROPERTY_IBAN = "iban";
+  @javax.annotation.Nonnull
   private String iban;
 
   public static final String JSON_PROPERTY_BIC = "bic";
+  @javax.annotation.Nonnull
   private String bic;
 
   public static final String JSON_PROPERTY_BANK_BRANCH = "bank_branch";
+  @javax.annotation.Nullable
   private JsonNullable<String> bankBranch = JsonNullable.<String>undefined();
 
   public static final String JSON_PROPERTY_PIX_KEY = "pix_key";
+  @javax.annotation.Nonnull
   private String pixKey;
 
   public static final String JSON_PROPERTY_TAX_ID = "tax_id";
+  @javax.annotation.Nullable
   private JsonNullable<String> taxId = JsonNullable.<String>undefined();
 
   public Bank() {
   }
 
-  public Bank bankName(String bankName) {
+  public Bank bankName(@javax.annotation.Nullable String bankName) {
     this.bankName = JsonNullable.<String>of(bankName);
     
     return this;
   }
 
-   /**
+  /**
    * Bank name
    * @return bankName
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -118,21 +129,20 @@ public class Bank {
     this.bankName = bankName;
   }
 
-  public void setBankName(String bankName) {
+  public void setBankName(@javax.annotation.Nullable String bankName) {
     this.bankName = JsonNullable.<String>of(bankName);
   }
 
-
-  public Bank bankCountryCode(CountryAlpha2 bankCountryCode) {
+  public Bank bankCountryCode(@javax.annotation.Nullable CountryAlpha2 bankCountryCode) {
     this.bankCountryCode = JsonNullable.<CountryAlpha2>of(bankCountryCode);
     
     return this;
   }
 
-   /**
+  /**
    * Get bankCountryCode
    * @return bankCountryCode
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -152,21 +162,20 @@ public class Bank {
     this.bankCountryCode = bankCountryCode;
   }
 
-  public void setBankCountryCode(CountryAlpha2 bankCountryCode) {
+  public void setBankCountryCode(@javax.annotation.Nullable CountryAlpha2 bankCountryCode) {
     this.bankCountryCode = JsonNullable.<CountryAlpha2>of(bankCountryCode);
   }
 
-
-  public Bank bankCity(String bankCity) {
+  public Bank bankCity(@javax.annotation.Nullable String bankCity) {
     this.bankCity = JsonNullable.<String>of(bankCity);
     
     return this;
   }
 
-   /**
+  /**
    * Bank city
    * @return bankCity
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -186,21 +195,20 @@ public class Bank {
     this.bankCity = bankCity;
   }
 
-  public void setBankCity(String bankCity) {
+  public void setBankCity(@javax.annotation.Nullable String bankCity) {
     this.bankCity = JsonNullable.<String>of(bankCity);
   }
 
-
-  public Bank bankAccountNumber(String bankAccountNumber) {
+  public Bank bankAccountNumber(@javax.annotation.Nonnull String bankAccountNumber) {
     
     this.bankAccountNumber = bankAccountNumber;
     return this;
   }
 
-   /**
+  /**
    * Bank account number is an unique identifier assigned by a bank to a customer.
    * @return bankAccountNumber
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_BANK_ACCOUNT_NUMBER)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -212,21 +220,20 @@ public class Bank {
 
   @JsonProperty(JSON_PROPERTY_BANK_ACCOUNT_NUMBER)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setBankAccountNumber(String bankAccountNumber) {
+  public void setBankAccountNumber(@javax.annotation.Nonnull String bankAccountNumber) {
     this.bankAccountNumber = bankAccountNumber;
   }
 
-
-  public Bank bankRoutingNumber(String bankRoutingNumber) {
+  public Bank bankRoutingNumber(@javax.annotation.Nonnull String bankRoutingNumber) {
     
     this.bankRoutingNumber = bankRoutingNumber;
     return this;
   }
 
-   /**
+  /**
    * [9 digits] Routing number - used in USA for identifying a specific bank.
    * @return bankRoutingNumber
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_BANK_ROUTING_NUMBER)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -238,21 +245,20 @@ public class Bank {
 
   @JsonProperty(JSON_PROPERTY_BANK_ROUTING_NUMBER)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setBankRoutingNumber(String bankRoutingNumber) {
+  public void setBankRoutingNumber(@javax.annotation.Nonnull String bankRoutingNumber) {
     this.bankRoutingNumber = bankRoutingNumber;
   }
 
-
-  public Bank bankSortCode(String bankSortCode) {
+  public Bank bankSortCode(@javax.annotation.Nonnull String bankSortCode) {
     
     this.bankSortCode = bankSortCode;
     return this;
   }
 
-   /**
+  /**
    * [6 digits] Sort Code - used in UK and Ireland for identifying a bank and it&#39;s branches.
    * @return bankSortCode
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_BANK_SORT_CODE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -264,21 +270,20 @@ public class Bank {
 
   @JsonProperty(JSON_PROPERTY_BANK_SORT_CODE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setBankSortCode(String bankSortCode) {
+  public void setBankSortCode(@javax.annotation.Nonnull String bankSortCode) {
     this.bankSortCode = bankSortCode;
   }
 
-
-  public Bank iban(String iban) {
+  public Bank iban(@javax.annotation.Nonnull String iban) {
     
     this.iban = iban;
     return this;
   }
 
-   /**
+  /**
    * International Bank Account Number (iban) - used in many countries for identifying a bank along with it&#39;s customer.
    * @return iban
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_IBAN)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -290,21 +295,20 @@ public class Bank {
 
   @JsonProperty(JSON_PROPERTY_IBAN)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setIban(String iban) {
+  public void setIban(@javax.annotation.Nonnull String iban) {
     this.iban = iban;
   }
 
-
-  public Bank bic(String bic) {
+  public Bank bic(@javax.annotation.Nonnull String bic) {
     
     this.bic = bic;
     return this;
   }
 
-   /**
+  /**
    * [8 / 11 digits] Bank Identifier Code (bic) / Swift Code - used in many countries for identifying a bank and it&#39;s branches
    * @return bic
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_BIC)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -316,21 +320,20 @@ public class Bank {
 
   @JsonProperty(JSON_PROPERTY_BIC)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setBic(String bic) {
+  public void setBic(@javax.annotation.Nonnull String bic) {
     this.bic = bic;
   }
 
-
-  public Bank bankBranch(String bankBranch) {
+  public Bank bankBranch(@javax.annotation.Nullable String bankBranch) {
     this.bankBranch = JsonNullable.<String>of(bankBranch);
     
     return this;
   }
 
-   /**
+  /**
    * Bank branch
    * @return bankBranch
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -350,21 +353,20 @@ public class Bank {
     this.bankBranch = bankBranch;
   }
 
-  public void setBankBranch(String bankBranch) {
+  public void setBankBranch(@javax.annotation.Nullable String bankBranch) {
     this.bankBranch = JsonNullable.<String>of(bankBranch);
   }
 
-
-  public Bank pixKey(String pixKey) {
+  public Bank pixKey(@javax.annotation.Nonnull String pixKey) {
     
     this.pixKey = pixKey;
     return this;
   }
 
-   /**
+  /**
    * Unique key for pix customer
    * @return pixKey
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_PIX_KEY)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -376,21 +378,20 @@ public class Bank {
 
   @JsonProperty(JSON_PROPERTY_PIX_KEY)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setPixKey(String pixKey) {
+  public void setPixKey(@javax.annotation.Nonnull String pixKey) {
     this.pixKey = pixKey;
   }
 
-
-  public Bank taxId(String taxId) {
+  public Bank taxId(@javax.annotation.Nullable String taxId) {
     this.taxId = JsonNullable.<String>of(taxId);
     
     return this;
   }
 
-   /**
+  /**
    * Individual taxpayer identification number
    * @return taxId
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -410,7 +411,7 @@ public class Bank {
     this.taxId = taxId;
   }
 
-  public void setTaxId(String taxId) {
+  public void setTaxId(@javax.annotation.Nullable String taxId) {
     this.taxId = JsonNullable.<String>of(taxId);
   }
 

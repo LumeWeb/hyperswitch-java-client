@@ -38,27 +38,29 @@ import java.util.StringJoiner;
   EnabledPaymentMethod.JSON_PROPERTY_PAYMENT_METHOD,
   EnabledPaymentMethod.JSON_PROPERTY_PAYMENT_METHOD_TYPES
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class EnabledPaymentMethod {
   public static final String JSON_PROPERTY_PAYMENT_METHOD = "payment_method";
+  @javax.annotation.Nonnull
   private PaymentMethod paymentMethod;
 
   public static final String JSON_PROPERTY_PAYMENT_METHOD_TYPES = "payment_method_types";
+  @javax.annotation.Nonnull
   private Set<PaymentMethodType> paymentMethodTypes = new LinkedHashSet<>();
 
   public EnabledPaymentMethod() {
   }
 
-  public EnabledPaymentMethod paymentMethod(PaymentMethod paymentMethod) {
+  public EnabledPaymentMethod paymentMethod(@javax.annotation.Nonnull PaymentMethod paymentMethod) {
     
     this.paymentMethod = paymentMethod;
     return this;
   }
 
-   /**
+  /**
    * Get paymentMethod
    * @return paymentMethod
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_PAYMENT_METHOD)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -70,12 +72,11 @@ public class EnabledPaymentMethod {
 
   @JsonProperty(JSON_PROPERTY_PAYMENT_METHOD)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setPaymentMethod(PaymentMethod paymentMethod) {
+  public void setPaymentMethod(@javax.annotation.Nonnull PaymentMethod paymentMethod) {
     this.paymentMethod = paymentMethod;
   }
 
-
-  public EnabledPaymentMethod paymentMethodTypes(Set<PaymentMethodType> paymentMethodTypes) {
+  public EnabledPaymentMethod paymentMethodTypes(@javax.annotation.Nonnull Set<PaymentMethodType> paymentMethodTypes) {
     
     this.paymentMethodTypes = paymentMethodTypes;
     return this;
@@ -89,10 +90,10 @@ public class EnabledPaymentMethod {
     return this;
   }
 
-   /**
+  /**
    * An array of associated payment method types
    * @return paymentMethodTypes
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_PAYMENT_METHOD_TYPES)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -105,7 +106,7 @@ public class EnabledPaymentMethod {
   @JsonDeserialize(as = LinkedHashSet.class)
   @JsonProperty(JSON_PROPERTY_PAYMENT_METHOD_TYPES)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setPaymentMethodTypes(Set<PaymentMethodType> paymentMethodTypes) {
+  public void setPaymentMethodTypes(@javax.annotation.Nonnull Set<PaymentMethodType> paymentMethodTypes) {
     this.paymentMethodTypes = paymentMethodTypes;
   }
 

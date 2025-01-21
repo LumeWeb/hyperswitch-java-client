@@ -28,22 +28,21 @@ import com.hyperswitch.client.model.BankTransferInstructionsOneOf4;
 import com.hyperswitch.client.model.DokuBankTransferInstructions;
 import com.hyperswitch.client.model.MultibancoTransferInstructions;
 import com.hyperswitch.client.model.SepaBankTransferInstructions;
-import org.junit.Assert;
-import org.junit.Ignore;
-import org.junit.Test;
-
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Test;
 
 /**
  * Model tests for BankTransferInstructions
  */
-public class BankTransferInstructionsTest {
+class BankTransferInstructionsTest {
     private final BankTransferInstructions model = new BankTransferInstructions();
 
     /**
      * Model tests for BankTransferInstructions
      */
     @Test
-    public void testBankTransferInstructions() {
+    void testBankTransferInstructions() {
         // TODO: test BankTransferInstructions
     }
 
@@ -51,7 +50,7 @@ public class BankTransferInstructionsTest {
      * Test the property 'dokuBankTransferInstructions'
      */
     @Test
-    public void dokuBankTransferInstructionsTest() {
+    void dokuBankTransferInstructionsTest() {
         // TODO: test dokuBankTransferInstructions
     }
 
@@ -59,7 +58,7 @@ public class BankTransferInstructionsTest {
      * Test the property 'achCreditTransfer'
      */
     @Test
-    public void achCreditTransferTest() {
+    void achCreditTransferTest() {
         // TODO: test achCreditTransfer
     }
 
@@ -67,7 +66,7 @@ public class BankTransferInstructionsTest {
      * Test the property 'sepaBankInstructions'
      */
     @Test
-    public void sepaBankInstructionsTest() {
+    void sepaBankInstructionsTest() {
         // TODO: test sepaBankInstructions
     }
 
@@ -75,7 +74,7 @@ public class BankTransferInstructionsTest {
      * Test the property 'bacsBankInstructions'
      */
     @Test
-    public void bacsBankInstructionsTest() {
+    void bacsBankInstructionsTest() {
         // TODO: test bacsBankInstructions
     }
 
@@ -83,7 +82,7 @@ public class BankTransferInstructionsTest {
      * Test the property 'multibanco'
      */
     @Test
-    public void multibancoTest() {
+    void multibancoTest() {
         // TODO: test multibanco
     }
 

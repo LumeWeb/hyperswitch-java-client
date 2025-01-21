@@ -21,6 +21,7 @@ import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonTypeName;
 import com.fasterxml.jackson.annotation.JsonValue;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 import com.fasterxml.jackson.annotation.JsonTypeName;
@@ -36,13 +37,13 @@ import java.util.StringJoiner;
   ValueTypeOneOf4.JSON_PROPERTY_VALUE
 })
 @JsonTypeName("ValueType_oneOf_4")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class ValueTypeOneOf4 {
   /**
    * Gets or Sets type
    */
   public enum TypeEnum {
-    NUMBER_ARRAY("number_array");
+    NUMBER_ARRAY(String.valueOf("number_array"));
 
     private String value;
 
@@ -72,24 +73,26 @@ public class ValueTypeOneOf4 {
   }
 
   public static final String JSON_PROPERTY_TYPE = "type";
+  @javax.annotation.Nonnull
   private TypeEnum type;
 
   public static final String JSON_PROPERTY_VALUE = "value";
+  @javax.annotation.Nonnull
   private List<Long> value = new ArrayList<>();
 
   public ValueTypeOneOf4() {
   }
 
-  public ValueTypeOneOf4 type(TypeEnum type) {
+  public ValueTypeOneOf4 type(@javax.annotation.Nonnull TypeEnum type) {
     
     this.type = type;
     return this;
   }
 
-   /**
+  /**
    * Get type
    * @return type
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_TYPE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -101,12 +104,11 @@ public class ValueTypeOneOf4 {
 
   @JsonProperty(JSON_PROPERTY_TYPE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setType(TypeEnum type) {
+  public void setType(@javax.annotation.Nonnull TypeEnum type) {
     this.type = type;
   }
 
-
-  public ValueTypeOneOf4 value(List<Long> value) {
+  public ValueTypeOneOf4 value(@javax.annotation.Nonnull List<Long> value) {
     
     this.value = value;
     return this;
@@ -120,10 +122,10 @@ public class ValueTypeOneOf4 {
     return this;
   }
 
-   /**
+  /**
    * Represents an array of numbers. This is basically used for \&quot;one of the given numbers\&quot; operations eg: payment.method.amount &#x3D; (1, 2, 3)
    * @return value
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_VALUE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -135,7 +137,7 @@ public class ValueTypeOneOf4 {
 
   @JsonProperty(JSON_PROPERTY_VALUE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setValue(List<Long> value) {
+  public void setValue(@javax.annotation.Nonnull List<Long> value) {
     this.value = value;
   }
 

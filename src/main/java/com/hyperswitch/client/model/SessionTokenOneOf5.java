@@ -34,16 +34,17 @@ import java.util.StringJoiner;
   SessionTokenOneOf5.JSON_PROPERTY_WALLET_NAME
 })
 @JsonTypeName("SessionToken_oneOf_5")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class SessionTokenOneOf5 {
   public static final String JSON_PROPERTY_OPEN_BANKING_SESSION_TOKEN = "open_banking_session_token";
+  @javax.annotation.Nonnull
   private String openBankingSessionToken;
 
   /**
    * Gets or Sets walletName
    */
   public enum WalletNameEnum {
-    OPEN_BANKING("open_banking");
+    OPEN_BANKING(String.valueOf("open_banking"));
 
     private String value;
 
@@ -73,21 +74,22 @@ public class SessionTokenOneOf5 {
   }
 
   public static final String JSON_PROPERTY_WALLET_NAME = "wallet_name";
+  @javax.annotation.Nonnull
   private WalletNameEnum walletName;
 
   public SessionTokenOneOf5() {
   }
 
-  public SessionTokenOneOf5 openBankingSessionToken(String openBankingSessionToken) {
+  public SessionTokenOneOf5 openBankingSessionToken(@javax.annotation.Nonnull String openBankingSessionToken) {
     
     this.openBankingSessionToken = openBankingSessionToken;
     return this;
   }
 
-   /**
+  /**
    * The session token for OpenBanking Connectors
    * @return openBankingSessionToken
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_OPEN_BANKING_SESSION_TOKEN)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -99,21 +101,20 @@ public class SessionTokenOneOf5 {
 
   @JsonProperty(JSON_PROPERTY_OPEN_BANKING_SESSION_TOKEN)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setOpenBankingSessionToken(String openBankingSessionToken) {
+  public void setOpenBankingSessionToken(@javax.annotation.Nonnull String openBankingSessionToken) {
     this.openBankingSessionToken = openBankingSessionToken;
   }
 
-
-  public SessionTokenOneOf5 walletName(WalletNameEnum walletName) {
+  public SessionTokenOneOf5 walletName(@javax.annotation.Nonnull WalletNameEnum walletName) {
     
     this.walletName = walletName;
     return this;
   }
 
-   /**
+  /**
    * Get walletName
    * @return walletName
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_WALLET_NAME)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -125,7 +126,7 @@ public class SessionTokenOneOf5 {
 
   @JsonProperty(JSON_PROPERTY_WALLET_NAME)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setWalletName(WalletNameEnum walletName) {
+  public void setWalletName(@javax.annotation.Nonnull WalletNameEnum walletName) {
     this.walletName = walletName;
   }
 

@@ -25,6 +25,7 @@ import com.hyperswitch.client.model.ApplePayAddressParameters;
 import com.hyperswitch.client.model.CountryAlpha2;
 import com.hyperswitch.client.model.Currency;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import org.openapitools.jackson.nullable.JsonNullable;
 import com.fasterxml.jackson.annotation.JsonIgnore;
@@ -49,45 +50,53 @@ import java.util.StringJoiner;
   ApplePayPaymentRequest.JSON_PROPERTY_REQUIRED_BILLING_CONTACT_FIELDS,
   ApplePayPaymentRequest.JSON_PROPERTY_REQUIRED_SHIPPING_CONTACT_FIELDS
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class ApplePayPaymentRequest {
   public static final String JSON_PROPERTY_COUNTRY_CODE = "country_code";
+  @javax.annotation.Nonnull
   private CountryAlpha2 countryCode;
 
   public static final String JSON_PROPERTY_CURRENCY_CODE = "currency_code";
+  @javax.annotation.Nonnull
   private Currency currencyCode;
 
   public static final String JSON_PROPERTY_TOTAL = "total";
+  @javax.annotation.Nonnull
   private AmountInfo total;
 
   public static final String JSON_PROPERTY_MERCHANT_CAPABILITIES = "merchant_capabilities";
+  @javax.annotation.Nullable
   private JsonNullable<List<String>> merchantCapabilities = JsonNullable.<List<String>>undefined();
 
   public static final String JSON_PROPERTY_SUPPORTED_NETWORKS = "supported_networks";
+  @javax.annotation.Nullable
   private JsonNullable<List<String>> supportedNetworks = JsonNullable.<List<String>>undefined();
 
   public static final String JSON_PROPERTY_MERCHANT_IDENTIFIER = "merchant_identifier";
+  @javax.annotation.Nullable
   private JsonNullable<String> merchantIdentifier = JsonNullable.<String>undefined();
 
   public static final String JSON_PROPERTY_REQUIRED_BILLING_CONTACT_FIELDS = "required_billing_contact_fields";
+  @javax.annotation.Nullable
   private JsonNullable<List<ApplePayAddressParameters>> requiredBillingContactFields = JsonNullable.<List<ApplePayAddressParameters>>undefined();
 
   public static final String JSON_PROPERTY_REQUIRED_SHIPPING_CONTACT_FIELDS = "required_shipping_contact_fields";
+  @javax.annotation.Nullable
   private JsonNullable<List<ApplePayAddressParameters>> requiredShippingContactFields = JsonNullable.<List<ApplePayAddressParameters>>undefined();
 
   public ApplePayPaymentRequest() {
   }
 
-  public ApplePayPaymentRequest countryCode(CountryAlpha2 countryCode) {
+  public ApplePayPaymentRequest countryCode(@javax.annotation.Nonnull CountryAlpha2 countryCode) {
     
     this.countryCode = countryCode;
     return this;
   }
 
-   /**
+  /**
    * Get countryCode
    * @return countryCode
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_COUNTRY_CODE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -99,21 +108,20 @@ public class ApplePayPaymentRequest {
 
   @JsonProperty(JSON_PROPERTY_COUNTRY_CODE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setCountryCode(CountryAlpha2 countryCode) {
+  public void setCountryCode(@javax.annotation.Nonnull CountryAlpha2 countryCode) {
     this.countryCode = countryCode;
   }
 
-
-  public ApplePayPaymentRequest currencyCode(Currency currencyCode) {
+  public ApplePayPaymentRequest currencyCode(@javax.annotation.Nonnull Currency currencyCode) {
     
     this.currencyCode = currencyCode;
     return this;
   }
 
-   /**
+  /**
    * Get currencyCode
    * @return currencyCode
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_CURRENCY_CODE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -125,21 +133,20 @@ public class ApplePayPaymentRequest {
 
   @JsonProperty(JSON_PROPERTY_CURRENCY_CODE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setCurrencyCode(Currency currencyCode) {
+  public void setCurrencyCode(@javax.annotation.Nonnull Currency currencyCode) {
     this.currencyCode = currencyCode;
   }
 
-
-  public ApplePayPaymentRequest total(AmountInfo total) {
+  public ApplePayPaymentRequest total(@javax.annotation.Nonnull AmountInfo total) {
     
     this.total = total;
     return this;
   }
 
-   /**
+  /**
    * Get total
    * @return total
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_TOTAL)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -151,12 +158,11 @@ public class ApplePayPaymentRequest {
 
   @JsonProperty(JSON_PROPERTY_TOTAL)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setTotal(AmountInfo total) {
+  public void setTotal(@javax.annotation.Nonnull AmountInfo total) {
     this.total = total;
   }
 
-
-  public ApplePayPaymentRequest merchantCapabilities(List<String> merchantCapabilities) {
+  public ApplePayPaymentRequest merchantCapabilities(@javax.annotation.Nullable List<String> merchantCapabilities) {
     this.merchantCapabilities = JsonNullable.<List<String>>of(merchantCapabilities);
     
     return this;
@@ -174,10 +180,10 @@ public class ApplePayPaymentRequest {
     return this;
   }
 
-   /**
+  /**
    * The list of merchant capabilities(ex: whether capable of 3ds or no-3ds)
    * @return merchantCapabilities
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -197,12 +203,11 @@ public class ApplePayPaymentRequest {
     this.merchantCapabilities = merchantCapabilities;
   }
 
-  public void setMerchantCapabilities(List<String> merchantCapabilities) {
+  public void setMerchantCapabilities(@javax.annotation.Nullable List<String> merchantCapabilities) {
     this.merchantCapabilities = JsonNullable.<List<String>>of(merchantCapabilities);
   }
 
-
-  public ApplePayPaymentRequest supportedNetworks(List<String> supportedNetworks) {
+  public ApplePayPaymentRequest supportedNetworks(@javax.annotation.Nullable List<String> supportedNetworks) {
     this.supportedNetworks = JsonNullable.<List<String>>of(supportedNetworks);
     
     return this;
@@ -220,10 +225,10 @@ public class ApplePayPaymentRequest {
     return this;
   }
 
-   /**
+  /**
    * The list of supported networks
    * @return supportedNetworks
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -243,21 +248,20 @@ public class ApplePayPaymentRequest {
     this.supportedNetworks = supportedNetworks;
   }
 
-  public void setSupportedNetworks(List<String> supportedNetworks) {
+  public void setSupportedNetworks(@javax.annotation.Nullable List<String> supportedNetworks) {
     this.supportedNetworks = JsonNullable.<List<String>>of(supportedNetworks);
   }
 
-
-  public ApplePayPaymentRequest merchantIdentifier(String merchantIdentifier) {
+  public ApplePayPaymentRequest merchantIdentifier(@javax.annotation.Nullable String merchantIdentifier) {
     this.merchantIdentifier = JsonNullable.<String>of(merchantIdentifier);
     
     return this;
   }
 
-   /**
+  /**
    * Get merchantIdentifier
    * @return merchantIdentifier
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -277,12 +281,11 @@ public class ApplePayPaymentRequest {
     this.merchantIdentifier = merchantIdentifier;
   }
 
-  public void setMerchantIdentifier(String merchantIdentifier) {
+  public void setMerchantIdentifier(@javax.annotation.Nullable String merchantIdentifier) {
     this.merchantIdentifier = JsonNullable.<String>of(merchantIdentifier);
   }
 
-
-  public ApplePayPaymentRequest requiredBillingContactFields(List<ApplePayAddressParameters> requiredBillingContactFields) {
+  public ApplePayPaymentRequest requiredBillingContactFields(@javax.annotation.Nullable List<ApplePayAddressParameters> requiredBillingContactFields) {
     this.requiredBillingContactFields = JsonNullable.<List<ApplePayAddressParameters>>of(requiredBillingContactFields);
     
     return this;
@@ -300,10 +303,10 @@ public class ApplePayPaymentRequest {
     return this;
   }
 
-   /**
+  /**
    * Get requiredBillingContactFields
    * @return requiredBillingContactFields
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -323,12 +326,11 @@ public class ApplePayPaymentRequest {
     this.requiredBillingContactFields = requiredBillingContactFields;
   }
 
-  public void setRequiredBillingContactFields(List<ApplePayAddressParameters> requiredBillingContactFields) {
+  public void setRequiredBillingContactFields(@javax.annotation.Nullable List<ApplePayAddressParameters> requiredBillingContactFields) {
     this.requiredBillingContactFields = JsonNullable.<List<ApplePayAddressParameters>>of(requiredBillingContactFields);
   }
 
-
-  public ApplePayPaymentRequest requiredShippingContactFields(List<ApplePayAddressParameters> requiredShippingContactFields) {
+  public ApplePayPaymentRequest requiredShippingContactFields(@javax.annotation.Nullable List<ApplePayAddressParameters> requiredShippingContactFields) {
     this.requiredShippingContactFields = JsonNullable.<List<ApplePayAddressParameters>>of(requiredShippingContactFields);
     
     return this;
@@ -346,10 +348,10 @@ public class ApplePayPaymentRequest {
     return this;
   }
 
-   /**
+  /**
    * Get requiredShippingContactFields
    * @return requiredShippingContactFields
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -369,7 +371,7 @@ public class ApplePayPaymentRequest {
     this.requiredShippingContactFields = requiredShippingContactFields;
   }
 
-  public void setRequiredShippingContactFields(List<ApplePayAddressParameters> requiredShippingContactFields) {
+  public void setRequiredShippingContactFields(@javax.annotation.Nullable List<ApplePayAddressParameters> requiredShippingContactFields) {
     this.requiredShippingContactFields = JsonNullable.<List<ApplePayAddressParameters>>of(requiredShippingContactFields);
   }
 

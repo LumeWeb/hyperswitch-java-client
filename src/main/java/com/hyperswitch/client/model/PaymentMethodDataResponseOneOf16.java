@@ -34,24 +34,25 @@ import java.util.StringJoiner;
   PaymentMethodDataResponseOneOf16.JSON_PROPERTY_MOBILE_PAYMENT
 })
 @JsonTypeName("PaymentMethodDataResponse_oneOf_16")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class PaymentMethodDataResponseOneOf16 {
   public static final String JSON_PROPERTY_MOBILE_PAYMENT = "mobile_payment";
+  @javax.annotation.Nonnull
   private MobilePaymentResponse mobilePayment;
 
   public PaymentMethodDataResponseOneOf16() {
   }
 
-  public PaymentMethodDataResponseOneOf16 mobilePayment(MobilePaymentResponse mobilePayment) {
+  public PaymentMethodDataResponseOneOf16 mobilePayment(@javax.annotation.Nonnull MobilePaymentResponse mobilePayment) {
     
     this.mobilePayment = mobilePayment;
     return this;
   }
 
-   /**
+  /**
    * Get mobilePayment
    * @return mobilePayment
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_MOBILE_PAYMENT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -63,7 +64,7 @@ public class PaymentMethodDataResponseOneOf16 {
 
   @JsonProperty(JSON_PROPERTY_MOBILE_PAYMENT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setMobilePayment(MobilePaymentResponse mobilePayment) {
+  public void setMobilePayment(@javax.annotation.Nonnull MobilePaymentResponse mobilePayment) {
     this.mobilePayment = mobilePayment;
   }
 

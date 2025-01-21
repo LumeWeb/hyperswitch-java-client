@@ -40,30 +40,33 @@ import java.util.StringJoiner;
   Address.JSON_PROPERTY_PHONE,
   Address.JSON_PROPERTY_EMAIL
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class Address {
   public static final String JSON_PROPERTY_ADDRESS = "address";
+  @javax.annotation.Nullable
   private JsonNullable<AddressDetails> address = JsonNullable.<AddressDetails>undefined();
 
   public static final String JSON_PROPERTY_PHONE = "phone";
+  @javax.annotation.Nullable
   private JsonNullable<PhoneDetails> phone = JsonNullable.<PhoneDetails>undefined();
 
   public static final String JSON_PROPERTY_EMAIL = "email";
+  @javax.annotation.Nullable
   private JsonNullable<String> email = JsonNullable.<String>undefined();
 
   public Address() {
   }
 
-  public Address address(AddressDetails address) {
+  public Address address(@javax.annotation.Nullable AddressDetails address) {
     this.address = JsonNullable.<AddressDetails>of(address);
     
     return this;
   }
 
-   /**
+  /**
    * Get address
    * @return address
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -83,21 +86,20 @@ public class Address {
     this.address = address;
   }
 
-  public void setAddress(AddressDetails address) {
+  public void setAddress(@javax.annotation.Nullable AddressDetails address) {
     this.address = JsonNullable.<AddressDetails>of(address);
   }
 
-
-  public Address phone(PhoneDetails phone) {
+  public Address phone(@javax.annotation.Nullable PhoneDetails phone) {
     this.phone = JsonNullable.<PhoneDetails>of(phone);
     
     return this;
   }
 
-   /**
+  /**
    * Get phone
    * @return phone
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -117,21 +119,20 @@ public class Address {
     this.phone = phone;
   }
 
-  public void setPhone(PhoneDetails phone) {
+  public void setPhone(@javax.annotation.Nullable PhoneDetails phone) {
     this.phone = JsonNullable.<PhoneDetails>of(phone);
   }
 
-
-  public Address email(String email) {
+  public Address email(@javax.annotation.Nullable String email) {
     this.email = JsonNullable.<String>of(email);
     
     return this;
   }
 
-   /**
+  /**
    * Get email
    * @return email
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -151,7 +152,7 @@ public class Address {
     this.email = email;
   }
 
-  public void setEmail(String email) {
+  public void setEmail(@javax.annotation.Nullable String email) {
     this.email = JsonNullable.<String>of(email);
   }
 

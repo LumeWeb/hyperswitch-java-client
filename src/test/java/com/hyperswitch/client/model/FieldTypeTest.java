@@ -25,22 +25,21 @@ import com.hyperswitch.client.model.FieldTypeOneOf3;
 import com.hyperswitch.client.model.FieldTypeOneOf4;
 import com.hyperswitch.client.model.FieldTypeOneOf5;
 import com.hyperswitch.client.model.FieldTypeOneOfUserCountry;
-import org.junit.Assert;
-import org.junit.Ignore;
-import org.junit.Test;
-
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Test;
 
 /**
  * Model tests for FieldType
  */
-public class FieldTypeTest {
+class FieldTypeTest {
     private final FieldType model = new FieldType();
 
     /**
      * Model tests for FieldType
      */
     @Test
-    public void testFieldType() {
+    void testFieldType() {
         // TODO: test FieldType
     }
 
@@ -48,7 +47,7 @@ public class FieldTypeTest {
      * Test the property 'userCountry'
      */
     @Test
-    public void userCountryTest() {
+    void userCountryTest() {
         // TODO: test userCountry
     }
 
@@ -56,7 +55,7 @@ public class FieldTypeTest {
      * Test the property 'userCurrency'
      */
     @Test
-    public void userCurrencyTest() {
+    void userCurrencyTest() {
         // TODO: test userCurrency
     }
 
@@ -64,7 +63,7 @@ public class FieldTypeTest {
      * Test the property 'userAddressCountry'
      */
     @Test
-    public void userAddressCountryTest() {
+    void userAddressCountryTest() {
         // TODO: test userAddressCountry
     }
 
@@ -72,7 +71,7 @@ public class FieldTypeTest {
      * Test the property 'userShippingAddressCountry'
      */
     @Test
-    public void userShippingAddressCountryTest() {
+    void userShippingAddressCountryTest() {
         // TODO: test userShippingAddressCountry
     }
 
@@ -80,7 +79,7 @@ public class FieldTypeTest {
      * Test the property 'dropDown'
      */
     @Test
-    public void dropDownTest() {
+    void dropDownTest() {
         // TODO: test dropDown
     }
 
@@ -88,7 +87,7 @@ public class FieldTypeTest {
      * Test the property 'languagePreference'
      */
     @Test
-    public void languagePreferenceTest() {
+    void languagePreferenceTest() {
         // TODO: test languagePreference
     }
 

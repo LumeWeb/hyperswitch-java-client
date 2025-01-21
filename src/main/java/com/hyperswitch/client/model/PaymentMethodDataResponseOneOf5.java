@@ -34,24 +34,25 @@ import java.util.StringJoiner;
   PaymentMethodDataResponseOneOf5.JSON_PROPERTY_CRYPTO
 })
 @JsonTypeName("PaymentMethodDataResponse_oneOf_5")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class PaymentMethodDataResponseOneOf5 {
   public static final String JSON_PROPERTY_CRYPTO = "crypto";
+  @javax.annotation.Nonnull
   private CryptoResponse crypto;
 
   public PaymentMethodDataResponseOneOf5() {
   }
 
-  public PaymentMethodDataResponseOneOf5 crypto(CryptoResponse crypto) {
+  public PaymentMethodDataResponseOneOf5 crypto(@javax.annotation.Nonnull CryptoResponse crypto) {
     
     this.crypto = crypto;
     return this;
   }
 
-   /**
+  /**
    * Get crypto
    * @return crypto
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_CRYPTO)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -63,7 +64,7 @@ public class PaymentMethodDataResponseOneOf5 {
 
   @JsonProperty(JSON_PROPERTY_CRYPTO)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setCrypto(CryptoResponse crypto) {
+  public void setCrypto(@javax.annotation.Nonnull CryptoResponse crypto) {
     this.crypto = crypto;
   }
 

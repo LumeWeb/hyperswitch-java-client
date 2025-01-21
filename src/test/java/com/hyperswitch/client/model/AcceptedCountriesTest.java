@@ -26,23 +26,23 @@ import com.hyperswitch.client.model.AcceptedCountriesOneOf1;
 import com.hyperswitch.client.model.AcceptedCountriesOneOf2;
 import com.hyperswitch.client.model.CountryAlpha2;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
-import org.junit.Assert;
-import org.junit.Ignore;
-import org.junit.Test;
-
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Test;
 
 /**
  * Model tests for AcceptedCountries
  */
-public class AcceptedCountriesTest {
+class AcceptedCountriesTest {
     private final AcceptedCountries model = new AcceptedCountries();
 
     /**
      * Model tests for AcceptedCountries
      */
     @Test
-    public void testAcceptedCountries() {
+    void testAcceptedCountries() {
         // TODO: test AcceptedCountries
     }
 
@@ -50,7 +50,7 @@ public class AcceptedCountriesTest {
      * Test the property 'type'
      */
     @Test
-    public void typeTest() {
+    void typeTest() {
         // TODO: test type
     }
 
@@ -58,7 +58,7 @@ public class AcceptedCountriesTest {
      * Test the property '_list'
      */
     @Test
-    public void _listTest() {
+    void _listTest() {
         // TODO: test _list
     }
 

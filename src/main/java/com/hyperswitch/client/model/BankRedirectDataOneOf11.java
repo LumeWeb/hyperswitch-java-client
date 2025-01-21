@@ -34,24 +34,25 @@ import java.util.StringJoiner;
   BankRedirectDataOneOf11.JSON_PROPERTY_OPEN_BANKING_UK
 })
 @JsonTypeName("BankRedirectData_oneOf_11")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class BankRedirectDataOneOf11 {
   public static final String JSON_PROPERTY_OPEN_BANKING_UK = "open_banking_uk";
+  @javax.annotation.Nonnull
   private BankRedirectDataOneOf11OpenBankingUk openBankingUk;
 
   public BankRedirectDataOneOf11() {
   }
 
-  public BankRedirectDataOneOf11 openBankingUk(BankRedirectDataOneOf11OpenBankingUk openBankingUk) {
+  public BankRedirectDataOneOf11 openBankingUk(@javax.annotation.Nonnull BankRedirectDataOneOf11OpenBankingUk openBankingUk) {
     
     this.openBankingUk = openBankingUk;
     return this;
   }
 
-   /**
+  /**
    * Get openBankingUk
    * @return openBankingUk
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_OPEN_BANKING_UK)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -63,7 +64,7 @@ public class BankRedirectDataOneOf11 {
 
   @JsonProperty(JSON_PROPERTY_OPEN_BANKING_UK)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setOpenBankingUk(BankRedirectDataOneOf11OpenBankingUk openBankingUk) {
+  public void setOpenBankingUk(@javax.annotation.Nonnull BankRedirectDataOneOf11OpenBankingUk openBankingUk) {
     this.openBankingUk = openBankingUk;
   }
 

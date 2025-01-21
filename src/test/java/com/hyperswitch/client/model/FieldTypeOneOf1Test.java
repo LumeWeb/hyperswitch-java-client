@@ -19,22 +19,21 @@ import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonTypeName;
 import com.fasterxml.jackson.annotation.JsonValue;
 import com.hyperswitch.client.model.FieldTypeOneOfUserCountry;
-import org.junit.Assert;
-import org.junit.Ignore;
-import org.junit.Test;
-
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Test;
 
 /**
  * Model tests for FieldTypeOneOf1
  */
-public class FieldTypeOneOf1Test {
+class FieldTypeOneOf1Test {
     private final FieldTypeOneOf1 model = new FieldTypeOneOf1();
 
     /**
      * Model tests for FieldTypeOneOf1
      */
     @Test
-    public void testFieldTypeOneOf1() {
+    void testFieldTypeOneOf1() {
         // TODO: test FieldTypeOneOf1
     }
 
@@ -42,7 +41,7 @@ public class FieldTypeOneOf1Test {
      * Test the property 'userCurrency'
      */
     @Test
-    public void userCurrencyTest() {
+    void userCurrencyTest() {
         // TODO: test userCurrency
     }
 

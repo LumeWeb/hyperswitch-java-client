@@ -33,27 +33,29 @@ import java.util.StringJoiner;
   ExtendedCardInfoConfig.JSON_PROPERTY_PUBLIC_KEY,
   ExtendedCardInfoConfig.JSON_PROPERTY_TTL_IN_SECS
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class ExtendedCardInfoConfig {
   public static final String JSON_PROPERTY_PUBLIC_KEY = "public_key";
+  @javax.annotation.Nonnull
   private String publicKey;
 
   public static final String JSON_PROPERTY_TTL_IN_SECS = "ttl_in_secs";
+  @javax.annotation.Nullable
   private Integer ttlInSecs = 900;
 
   public ExtendedCardInfoConfig() {
   }
 
-  public ExtendedCardInfoConfig publicKey(String publicKey) {
+  public ExtendedCardInfoConfig publicKey(@javax.annotation.Nonnull String publicKey) {
     
     this.publicKey = publicKey;
     return this;
   }
 
-   /**
+  /**
    * Merchant public key
    * @return publicKey
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_PUBLIC_KEY)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -65,23 +67,22 @@ public class ExtendedCardInfoConfig {
 
   @JsonProperty(JSON_PROPERTY_PUBLIC_KEY)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setPublicKey(String publicKey) {
+  public void setPublicKey(@javax.annotation.Nonnull String publicKey) {
     this.publicKey = publicKey;
   }
 
-
-  public ExtendedCardInfoConfig ttlInSecs(Integer ttlInSecs) {
+  public ExtendedCardInfoConfig ttlInSecs(@javax.annotation.Nullable Integer ttlInSecs) {
     
     this.ttlInSecs = ttlInSecs;
     return this;
   }
 
-   /**
+  /**
    * TTL for extended card info
    * minimum: 0
    * maximum: 7200
    * @return ttlInSecs
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_TTL_IN_SECS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -93,7 +94,7 @@ public class ExtendedCardInfoConfig {
 
   @JsonProperty(JSON_PROPERTY_TTL_IN_SECS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setTtlInSecs(Integer ttlInSecs) {
+  public void setTtlInSecs(@javax.annotation.Nullable Integer ttlInSecs) {
     this.ttlInSecs = ttlInSecs;
   }
 

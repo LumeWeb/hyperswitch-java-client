@@ -20,75 +20,35 @@ import com.fasterxml.jackson.annotation.JsonTypeName;
 import com.fasterxml.jackson.annotation.JsonValue;
 import com.hyperswitch.client.model.EnabledPaymentMethod;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import org.openapitools.jackson.nullable.JsonNullable;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.openapitools.jackson.nullable.JsonNullable;
 import java.util.NoSuchElementException;
-import org.junit.Assert;
-import org.junit.Ignore;
-import org.junit.Test;
-
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Test;
 
 /**
  * Model tests for PaymentMethodCollectLinkRequest
  */
-public class PaymentMethodCollectLinkRequestTest {
+class PaymentMethodCollectLinkRequestTest {
     private final PaymentMethodCollectLinkRequest model = new PaymentMethodCollectLinkRequest();
 
     /**
      * Model tests for PaymentMethodCollectLinkRequest
      */
     @Test
-    public void testPaymentMethodCollectLinkRequest() {
+    void testPaymentMethodCollectLinkRequest() {
         // TODO: test PaymentMethodCollectLinkRequest
-    }
-
-    /**
-     * Test the property 'pmCollectLinkId'
-     */
-    @Test
-    public void pmCollectLinkIdTest() {
-        // TODO: test pmCollectLinkId
-    }
-
-    /**
-     * Test the property 'customerId'
-     */
-    @Test
-    public void customerIdTest() {
-        // TODO: test customerId
-    }
-
-    /**
-     * Test the property 'sessionExpiry'
-     */
-    @Test
-    public void sessionExpiryTest() {
-        // TODO: test sessionExpiry
-    }
-
-    /**
-     * Test the property 'returnUrl'
-     */
-    @Test
-    public void returnUrlTest() {
-        // TODO: test returnUrl
-    }
-
-    /**
-     * Test the property 'enabledPaymentMethods'
-     */
-    @Test
-    public void enabledPaymentMethodsTest() {
-        // TODO: test enabledPaymentMethods
     }
 
     /**
      * Test the property 'logo'
      */
     @Test
-    public void logoTest() {
+    void logoTest() {
         // TODO: test logo
     }
 
@@ -96,7 +56,7 @@ public class PaymentMethodCollectLinkRequestTest {
      * Test the property 'merchantName'
      */
     @Test
-    public void merchantNameTest() {
+    void merchantNameTest() {
         // TODO: test merchantName
     }
 
@@ -104,8 +64,48 @@ public class PaymentMethodCollectLinkRequestTest {
      * Test the property 'theme'
      */
     @Test
-    public void themeTest() {
+    void themeTest() {
         // TODO: test theme
+    }
+
+    /**
+     * Test the property 'pmCollectLinkId'
+     */
+    @Test
+    void pmCollectLinkIdTest() {
+        // TODO: test pmCollectLinkId
+    }
+
+    /**
+     * Test the property 'customerId'
+     */
+    @Test
+    void customerIdTest() {
+        // TODO: test customerId
+    }
+
+    /**
+     * Test the property 'sessionExpiry'
+     */
+    @Test
+    void sessionExpiryTest() {
+        // TODO: test sessionExpiry
+    }
+
+    /**
+     * Test the property 'returnUrl'
+     */
+    @Test
+    void returnUrlTest() {
+        // TODO: test returnUrl
+    }
+
+    /**
+     * Test the property 'enabledPaymentMethods'
+     */
+    @Test
+    void enabledPaymentMethodsTest() {
+        // TODO: test enabledPaymentMethods
     }
 
 }

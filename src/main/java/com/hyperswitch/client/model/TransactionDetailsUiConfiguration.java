@@ -38,30 +38,33 @@ import java.util.StringJoiner;
   TransactionDetailsUiConfiguration.JSON_PROPERTY_IS_KEY_BOLD,
   TransactionDetailsUiConfiguration.JSON_PROPERTY_IS_VALUE_BOLD
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class TransactionDetailsUiConfiguration {
   public static final String JSON_PROPERTY_POSITION = "position";
+  @javax.annotation.Nullable
   private JsonNullable<Integer> position = JsonNullable.<Integer>undefined();
 
   public static final String JSON_PROPERTY_IS_KEY_BOLD = "is_key_bold";
+  @javax.annotation.Nullable
   private JsonNullable<Boolean> isKeyBold = JsonNullable.<Boolean>of(false);
 
   public static final String JSON_PROPERTY_IS_VALUE_BOLD = "is_value_bold";
+  @javax.annotation.Nullable
   private JsonNullable<Boolean> isValueBold = JsonNullable.<Boolean>of(false);
 
   public TransactionDetailsUiConfiguration() {
   }
 
-  public TransactionDetailsUiConfiguration position(Integer position) {
+  public TransactionDetailsUiConfiguration position(@javax.annotation.Nullable Integer position) {
     this.position = JsonNullable.<Integer>of(position);
     
     return this;
   }
 
-   /**
+  /**
    * Position of the key-value pair in the UI
    * @return position
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -81,21 +84,20 @@ public class TransactionDetailsUiConfiguration {
     this.position = position;
   }
 
-  public void setPosition(Integer position) {
+  public void setPosition(@javax.annotation.Nullable Integer position) {
     this.position = JsonNullable.<Integer>of(position);
   }
 
-
-  public TransactionDetailsUiConfiguration isKeyBold(Boolean isKeyBold) {
+  public TransactionDetailsUiConfiguration isKeyBold(@javax.annotation.Nullable Boolean isKeyBold) {
     this.isKeyBold = JsonNullable.<Boolean>of(isKeyBold);
     
     return this;
   }
 
-   /**
+  /**
    * Whether the key should be bold
    * @return isKeyBold
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -115,21 +117,20 @@ public class TransactionDetailsUiConfiguration {
     this.isKeyBold = isKeyBold;
   }
 
-  public void setIsKeyBold(Boolean isKeyBold) {
+  public void setIsKeyBold(@javax.annotation.Nullable Boolean isKeyBold) {
     this.isKeyBold = JsonNullable.<Boolean>of(isKeyBold);
   }
 
-
-  public TransactionDetailsUiConfiguration isValueBold(Boolean isValueBold) {
+  public TransactionDetailsUiConfiguration isValueBold(@javax.annotation.Nullable Boolean isValueBold) {
     this.isValueBold = JsonNullable.<Boolean>of(isValueBold);
     
     return this;
   }
 
-   /**
+  /**
    * Whether the value should be bold
    * @return isValueBold
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -149,7 +150,7 @@ public class TransactionDetailsUiConfiguration {
     this.isValueBold = isValueBold;
   }
 
-  public void setIsValueBold(Boolean isValueBold) {
+  public void setIsValueBold(@javax.annotation.Nullable Boolean isValueBold) {
     this.isValueBold = JsonNullable.<Boolean>of(isValueBold);
   }
 

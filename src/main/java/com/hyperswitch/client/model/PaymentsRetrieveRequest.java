@@ -45,48 +45,57 @@ import java.util.StringJoiner;
   PaymentsRetrieveRequest.JSON_PROPERTY_EXPAND_CAPTURES,
   PaymentsRetrieveRequest.JSON_PROPERTY_EXPAND_ATTEMPTS
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class PaymentsRetrieveRequest {
   public static final String JSON_PROPERTY_RESOURCE_ID = "resource_id";
+  @javax.annotation.Nonnull
   private String resourceId;
 
   public static final String JSON_PROPERTY_MERCHANT_ID = "merchant_id";
+  @javax.annotation.Nullable
   private JsonNullable<String> merchantId = JsonNullable.<String>undefined();
 
   public static final String JSON_PROPERTY_FORCE_SYNC = "force_sync";
+  @javax.annotation.Nonnull
   private Boolean forceSync;
 
   public static final String JSON_PROPERTY_PARAM = "param";
+  @javax.annotation.Nullable
   private JsonNullable<String> param = JsonNullable.<String>undefined();
 
   public static final String JSON_PROPERTY_CONNECTOR = "connector";
+  @javax.annotation.Nullable
   private JsonNullable<String> connector = JsonNullable.<String>undefined();
 
   public static final String JSON_PROPERTY_MERCHANT_CONNECTOR_DETAILS = "merchant_connector_details";
+  @javax.annotation.Nullable
   private JsonNullable<MerchantConnectorDetailsWrap> merchantConnectorDetails = JsonNullable.<MerchantConnectorDetailsWrap>undefined();
 
   public static final String JSON_PROPERTY_CLIENT_SECRET = "client_secret";
+  @javax.annotation.Nullable
   private JsonNullable<String> clientSecret = JsonNullable.<String>undefined();
 
   public static final String JSON_PROPERTY_EXPAND_CAPTURES = "expand_captures";
+  @javax.annotation.Nullable
   private JsonNullable<Boolean> expandCaptures = JsonNullable.<Boolean>undefined();
 
   public static final String JSON_PROPERTY_EXPAND_ATTEMPTS = "expand_attempts";
+  @javax.annotation.Nullable
   private JsonNullable<Boolean> expandAttempts = JsonNullable.<Boolean>undefined();
 
   public PaymentsRetrieveRequest() {
   }
 
-  public PaymentsRetrieveRequest resourceId(String resourceId) {
+  public PaymentsRetrieveRequest resourceId(@javax.annotation.Nonnull String resourceId) {
     
     this.resourceId = resourceId;
     return this;
   }
 
-   /**
+  /**
    * The type of ID (ex: payment intent id, payment attempt id or connector txn id)
    * @return resourceId
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_RESOURCE_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -98,21 +107,20 @@ public class PaymentsRetrieveRequest {
 
   @JsonProperty(JSON_PROPERTY_RESOURCE_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setResourceId(String resourceId) {
+  public void setResourceId(@javax.annotation.Nonnull String resourceId) {
     this.resourceId = resourceId;
   }
 
-
-  public PaymentsRetrieveRequest merchantId(String merchantId) {
+  public PaymentsRetrieveRequest merchantId(@javax.annotation.Nullable String merchantId) {
     this.merchantId = JsonNullable.<String>of(merchantId);
     
     return this;
   }
 
-   /**
+  /**
    * The identifier for the Merchant Account.
    * @return merchantId
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -132,21 +140,20 @@ public class PaymentsRetrieveRequest {
     this.merchantId = merchantId;
   }
 
-  public void setMerchantId(String merchantId) {
+  public void setMerchantId(@javax.annotation.Nullable String merchantId) {
     this.merchantId = JsonNullable.<String>of(merchantId);
   }
 
-
-  public PaymentsRetrieveRequest forceSync(Boolean forceSync) {
+  public PaymentsRetrieveRequest forceSync(@javax.annotation.Nonnull Boolean forceSync) {
     
     this.forceSync = forceSync;
     return this;
   }
 
-   /**
+  /**
    * Decider to enable or disable the connector call for retrieve request
    * @return forceSync
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_FORCE_SYNC)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -158,21 +165,20 @@ public class PaymentsRetrieveRequest {
 
   @JsonProperty(JSON_PROPERTY_FORCE_SYNC)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setForceSync(Boolean forceSync) {
+  public void setForceSync(@javax.annotation.Nonnull Boolean forceSync) {
     this.forceSync = forceSync;
   }
 
-
-  public PaymentsRetrieveRequest param(String param) {
+  public PaymentsRetrieveRequest param(@javax.annotation.Nullable String param) {
     this.param = JsonNullable.<String>of(param);
     
     return this;
   }
 
-   /**
+  /**
    * The parameters passed to a retrieve request
    * @return param
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -192,21 +198,20 @@ public class PaymentsRetrieveRequest {
     this.param = param;
   }
 
-  public void setParam(String param) {
+  public void setParam(@javax.annotation.Nullable String param) {
     this.param = JsonNullable.<String>of(param);
   }
 
-
-  public PaymentsRetrieveRequest connector(String connector) {
+  public PaymentsRetrieveRequest connector(@javax.annotation.Nullable String connector) {
     this.connector = JsonNullable.<String>of(connector);
     
     return this;
   }
 
-   /**
+  /**
    * The name of the connector
    * @return connector
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -226,21 +231,20 @@ public class PaymentsRetrieveRequest {
     this.connector = connector;
   }
 
-  public void setConnector(String connector) {
+  public void setConnector(@javax.annotation.Nullable String connector) {
     this.connector = JsonNullable.<String>of(connector);
   }
 
-
-  public PaymentsRetrieveRequest merchantConnectorDetails(MerchantConnectorDetailsWrap merchantConnectorDetails) {
+  public PaymentsRetrieveRequest merchantConnectorDetails(@javax.annotation.Nullable MerchantConnectorDetailsWrap merchantConnectorDetails) {
     this.merchantConnectorDetails = JsonNullable.<MerchantConnectorDetailsWrap>of(merchantConnectorDetails);
     
     return this;
   }
 
-   /**
+  /**
    * Get merchantConnectorDetails
    * @return merchantConnectorDetails
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -260,21 +264,20 @@ public class PaymentsRetrieveRequest {
     this.merchantConnectorDetails = merchantConnectorDetails;
   }
 
-  public void setMerchantConnectorDetails(MerchantConnectorDetailsWrap merchantConnectorDetails) {
+  public void setMerchantConnectorDetails(@javax.annotation.Nullable MerchantConnectorDetailsWrap merchantConnectorDetails) {
     this.merchantConnectorDetails = JsonNullable.<MerchantConnectorDetailsWrap>of(merchantConnectorDetails);
   }
 
-
-  public PaymentsRetrieveRequest clientSecret(String clientSecret) {
+  public PaymentsRetrieveRequest clientSecret(@javax.annotation.Nullable String clientSecret) {
     this.clientSecret = JsonNullable.<String>of(clientSecret);
     
     return this;
   }
 
-   /**
+  /**
    * This is a token which expires after 15 minutes, used from the client to authenticate and create sessions from the SDK
    * @return clientSecret
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -294,21 +297,20 @@ public class PaymentsRetrieveRequest {
     this.clientSecret = clientSecret;
   }
 
-  public void setClientSecret(String clientSecret) {
+  public void setClientSecret(@javax.annotation.Nullable String clientSecret) {
     this.clientSecret = JsonNullable.<String>of(clientSecret);
   }
 
-
-  public PaymentsRetrieveRequest expandCaptures(Boolean expandCaptures) {
+  public PaymentsRetrieveRequest expandCaptures(@javax.annotation.Nullable Boolean expandCaptures) {
     this.expandCaptures = JsonNullable.<Boolean>of(expandCaptures);
     
     return this;
   }
 
-   /**
+  /**
    * If enabled provides list of captures linked to latest attempt
    * @return expandCaptures
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -328,21 +330,20 @@ public class PaymentsRetrieveRequest {
     this.expandCaptures = expandCaptures;
   }
 
-  public void setExpandCaptures(Boolean expandCaptures) {
+  public void setExpandCaptures(@javax.annotation.Nullable Boolean expandCaptures) {
     this.expandCaptures = JsonNullable.<Boolean>of(expandCaptures);
   }
 
-
-  public PaymentsRetrieveRequest expandAttempts(Boolean expandAttempts) {
+  public PaymentsRetrieveRequest expandAttempts(@javax.annotation.Nullable Boolean expandAttempts) {
     this.expandAttempts = JsonNullable.<Boolean>of(expandAttempts);
     
     return this;
   }
 
-   /**
+  /**
    * If enabled provides list of attempts linked to payment intent
    * @return expandAttempts
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -362,7 +363,7 @@ public class PaymentsRetrieveRequest {
     this.expandAttempts = expandAttempts;
   }
 
-  public void setExpandAttempts(Boolean expandAttempts) {
+  public void setExpandAttempts(@javax.annotation.Nullable Boolean expandAttempts) {
     this.expandAttempts = JsonNullable.<Boolean>of(expandAttempts);
   }
 

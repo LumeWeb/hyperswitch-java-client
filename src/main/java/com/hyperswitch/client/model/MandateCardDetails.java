@@ -49,60 +49,73 @@ import java.util.StringJoiner;
   MandateCardDetails.JSON_PROPERTY_CARD_TYPE,
   MandateCardDetails.JSON_PROPERTY_NICK_NAME
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class MandateCardDetails {
   public static final String JSON_PROPERTY_LAST4_DIGITS = "last4_digits";
+  @javax.annotation.Nullable
   private JsonNullable<String> last4Digits = JsonNullable.<String>undefined();
 
   public static final String JSON_PROPERTY_CARD_EXP_MONTH = "card_exp_month";
+  @javax.annotation.Nullable
   private JsonNullable<String> cardExpMonth = JsonNullable.<String>undefined();
 
   public static final String JSON_PROPERTY_CARD_EXP_YEAR = "card_exp_year";
+  @javax.annotation.Nullable
   private JsonNullable<String> cardExpYear = JsonNullable.<String>undefined();
 
   public static final String JSON_PROPERTY_CARD_HOLDER_NAME = "card_holder_name";
+  @javax.annotation.Nullable
   private JsonNullable<String> cardHolderName = JsonNullable.<String>undefined();
 
   public static final String JSON_PROPERTY_CARD_TOKEN = "card_token";
+  @javax.annotation.Nullable
   private JsonNullable<String> cardToken = JsonNullable.<String>undefined();
 
   public static final String JSON_PROPERTY_SCHEME = "scheme";
+  @javax.annotation.Nullable
   private JsonNullable<String> scheme = JsonNullable.<String>undefined();
 
   public static final String JSON_PROPERTY_ISSUER_COUNTRY = "issuer_country";
+  @javax.annotation.Nullable
   private JsonNullable<String> issuerCountry = JsonNullable.<String>undefined();
 
   public static final String JSON_PROPERTY_CARD_FINGERPRINT = "card_fingerprint";
+  @javax.annotation.Nullable
   private JsonNullable<String> cardFingerprint = JsonNullable.<String>undefined();
 
   public static final String JSON_PROPERTY_CARD_ISIN = "card_isin";
+  @javax.annotation.Nullable
   private JsonNullable<String> cardIsin = JsonNullable.<String>undefined();
 
   public static final String JSON_PROPERTY_CARD_ISSUER = "card_issuer";
+  @javax.annotation.Nullable
   private JsonNullable<String> cardIssuer = JsonNullable.<String>undefined();
 
   public static final String JSON_PROPERTY_CARD_NETWORK = "card_network";
+  @javax.annotation.Nullable
   private JsonNullable<CardNetwork> cardNetwork = JsonNullable.<CardNetwork>undefined();
 
   public static final String JSON_PROPERTY_CARD_TYPE = "card_type";
+  @javax.annotation.Nullable
   private JsonNullable<String> cardType = JsonNullable.<String>undefined();
 
   public static final String JSON_PROPERTY_NICK_NAME = "nick_name";
+  @javax.annotation.Nullable
   private JsonNullable<String> nickName = JsonNullable.<String>undefined();
 
   public MandateCardDetails() {
   }
 
-  public MandateCardDetails last4Digits(String last4Digits) {
+  public MandateCardDetails last4Digits(@javax.annotation.Nullable String last4Digits) {
     this.last4Digits = JsonNullable.<String>of(last4Digits);
     
     return this;
   }
 
-   /**
+  /**
    * The last 4 digits of card
    * @return last4Digits
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -122,21 +135,20 @@ public class MandateCardDetails {
     this.last4Digits = last4Digits;
   }
 
-  public void setLast4Digits(String last4Digits) {
+  public void setLast4Digits(@javax.annotation.Nullable String last4Digits) {
     this.last4Digits = JsonNullable.<String>of(last4Digits);
   }
 
-
-  public MandateCardDetails cardExpMonth(String cardExpMonth) {
+  public MandateCardDetails cardExpMonth(@javax.annotation.Nullable String cardExpMonth) {
     this.cardExpMonth = JsonNullable.<String>of(cardExpMonth);
     
     return this;
   }
 
-   /**
+  /**
    * The expiry month of card
    * @return cardExpMonth
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -156,21 +168,20 @@ public class MandateCardDetails {
     this.cardExpMonth = cardExpMonth;
   }
 
-  public void setCardExpMonth(String cardExpMonth) {
+  public void setCardExpMonth(@javax.annotation.Nullable String cardExpMonth) {
     this.cardExpMonth = JsonNullable.<String>of(cardExpMonth);
   }
 
-
-  public MandateCardDetails cardExpYear(String cardExpYear) {
+  public MandateCardDetails cardExpYear(@javax.annotation.Nullable String cardExpYear) {
     this.cardExpYear = JsonNullable.<String>of(cardExpYear);
     
     return this;
   }
 
-   /**
+  /**
    * The expiry year of card
    * @return cardExpYear
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -190,21 +201,20 @@ public class MandateCardDetails {
     this.cardExpYear = cardExpYear;
   }
 
-  public void setCardExpYear(String cardExpYear) {
+  public void setCardExpYear(@javax.annotation.Nullable String cardExpYear) {
     this.cardExpYear = JsonNullable.<String>of(cardExpYear);
   }
 
-
-  public MandateCardDetails cardHolderName(String cardHolderName) {
+  public MandateCardDetails cardHolderName(@javax.annotation.Nullable String cardHolderName) {
     this.cardHolderName = JsonNullable.<String>of(cardHolderName);
     
     return this;
   }
 
-   /**
+  /**
    * The card holder name
    * @return cardHolderName
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -224,21 +234,20 @@ public class MandateCardDetails {
     this.cardHolderName = cardHolderName;
   }
 
-  public void setCardHolderName(String cardHolderName) {
+  public void setCardHolderName(@javax.annotation.Nullable String cardHolderName) {
     this.cardHolderName = JsonNullable.<String>of(cardHolderName);
   }
 
-
-  public MandateCardDetails cardToken(String cardToken) {
+  public MandateCardDetails cardToken(@javax.annotation.Nullable String cardToken) {
     this.cardToken = JsonNullable.<String>of(cardToken);
     
     return this;
   }
 
-   /**
+  /**
    * The token from card locker
    * @return cardToken
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -258,21 +267,20 @@ public class MandateCardDetails {
     this.cardToken = cardToken;
   }
 
-  public void setCardToken(String cardToken) {
+  public void setCardToken(@javax.annotation.Nullable String cardToken) {
     this.cardToken = JsonNullable.<String>of(cardToken);
   }
 
-
-  public MandateCardDetails scheme(String scheme) {
+  public MandateCardDetails scheme(@javax.annotation.Nullable String scheme) {
     this.scheme = JsonNullable.<String>of(scheme);
     
     return this;
   }
 
-   /**
+  /**
    * The card scheme network for the particular card
    * @return scheme
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -292,21 +300,20 @@ public class MandateCardDetails {
     this.scheme = scheme;
   }
 
-  public void setScheme(String scheme) {
+  public void setScheme(@javax.annotation.Nullable String scheme) {
     this.scheme = JsonNullable.<String>of(scheme);
   }
 
-
-  public MandateCardDetails issuerCountry(String issuerCountry) {
+  public MandateCardDetails issuerCountry(@javax.annotation.Nullable String issuerCountry) {
     this.issuerCountry = JsonNullable.<String>of(issuerCountry);
     
     return this;
   }
 
-   /**
+  /**
    * The country code in in which the card was issued
    * @return issuerCountry
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -326,21 +333,20 @@ public class MandateCardDetails {
     this.issuerCountry = issuerCountry;
   }
 
-  public void setIssuerCountry(String issuerCountry) {
+  public void setIssuerCountry(@javax.annotation.Nullable String issuerCountry) {
     this.issuerCountry = JsonNullable.<String>of(issuerCountry);
   }
 
-
-  public MandateCardDetails cardFingerprint(String cardFingerprint) {
+  public MandateCardDetails cardFingerprint(@javax.annotation.Nullable String cardFingerprint) {
     this.cardFingerprint = JsonNullable.<String>of(cardFingerprint);
     
     return this;
   }
 
-   /**
+  /**
    * A unique identifier alias to identify a particular card
    * @return cardFingerprint
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -360,21 +366,20 @@ public class MandateCardDetails {
     this.cardFingerprint = cardFingerprint;
   }
 
-  public void setCardFingerprint(String cardFingerprint) {
+  public void setCardFingerprint(@javax.annotation.Nullable String cardFingerprint) {
     this.cardFingerprint = JsonNullable.<String>of(cardFingerprint);
   }
 
-
-  public MandateCardDetails cardIsin(String cardIsin) {
+  public MandateCardDetails cardIsin(@javax.annotation.Nullable String cardIsin) {
     this.cardIsin = JsonNullable.<String>of(cardIsin);
     
     return this;
   }
 
-   /**
+  /**
    * The first 6 digits of card
    * @return cardIsin
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -394,21 +399,20 @@ public class MandateCardDetails {
     this.cardIsin = cardIsin;
   }
 
-  public void setCardIsin(String cardIsin) {
+  public void setCardIsin(@javax.annotation.Nullable String cardIsin) {
     this.cardIsin = JsonNullable.<String>of(cardIsin);
   }
 
-
-  public MandateCardDetails cardIssuer(String cardIssuer) {
+  public MandateCardDetails cardIssuer(@javax.annotation.Nullable String cardIssuer) {
     this.cardIssuer = JsonNullable.<String>of(cardIssuer);
     
     return this;
   }
 
-   /**
+  /**
    * The bank that issued the card
    * @return cardIssuer
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -428,21 +432,20 @@ public class MandateCardDetails {
     this.cardIssuer = cardIssuer;
   }
 
-  public void setCardIssuer(String cardIssuer) {
+  public void setCardIssuer(@javax.annotation.Nullable String cardIssuer) {
     this.cardIssuer = JsonNullable.<String>of(cardIssuer);
   }
 
-
-  public MandateCardDetails cardNetwork(CardNetwork cardNetwork) {
+  public MandateCardDetails cardNetwork(@javax.annotation.Nullable CardNetwork cardNetwork) {
     this.cardNetwork = JsonNullable.<CardNetwork>of(cardNetwork);
     
     return this;
   }
 
-   /**
+  /**
    * Get cardNetwork
    * @return cardNetwork
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -462,21 +465,20 @@ public class MandateCardDetails {
     this.cardNetwork = cardNetwork;
   }
 
-  public void setCardNetwork(CardNetwork cardNetwork) {
+  public void setCardNetwork(@javax.annotation.Nullable CardNetwork cardNetwork) {
     this.cardNetwork = JsonNullable.<CardNetwork>of(cardNetwork);
   }
 
-
-  public MandateCardDetails cardType(String cardType) {
+  public MandateCardDetails cardType(@javax.annotation.Nullable String cardType) {
     this.cardType = JsonNullable.<String>of(cardType);
     
     return this;
   }
 
-   /**
+  /**
    * The type of the payment card
    * @return cardType
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -496,21 +498,20 @@ public class MandateCardDetails {
     this.cardType = cardType;
   }
 
-  public void setCardType(String cardType) {
+  public void setCardType(@javax.annotation.Nullable String cardType) {
     this.cardType = JsonNullable.<String>of(cardType);
   }
 
-
-  public MandateCardDetails nickName(String nickName) {
+  public MandateCardDetails nickName(@javax.annotation.Nullable String nickName) {
     this.nickName = JsonNullable.<String>of(nickName);
     
     return this;
   }
 
-   /**
+  /**
    * The nick_name of the card holder
    * @return nickName
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -530,7 +531,7 @@ public class MandateCardDetails {
     this.nickName = nickName;
   }
 
-  public void setNickName(String nickName) {
+  public void setNickName(@javax.annotation.Nullable String nickName) {
     this.nickName = JsonNullable.<String>of(nickName);
   }
 

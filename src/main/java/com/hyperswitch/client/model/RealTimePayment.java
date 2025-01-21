@@ -33,24 +33,25 @@ import java.util.StringJoiner;
 @JsonPropertyOrder({
   RealTimePayment.JSON_PROPERTY_REAL_TIME_PAYMENT
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class RealTimePayment {
   public static final String JSON_PROPERTY_REAL_TIME_PAYMENT = "real_time_payment";
+  @javax.annotation.Nonnull
   private RealTimePaymentData realTimePayment;
 
   public RealTimePayment() {
   }
 
-  public RealTimePayment realTimePayment(RealTimePaymentData realTimePayment) {
+  public RealTimePayment realTimePayment(@javax.annotation.Nonnull RealTimePaymentData realTimePayment) {
     
     this.realTimePayment = realTimePayment;
     return this;
   }
 
-   /**
+  /**
    * Get realTimePayment
    * @return realTimePayment
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_REAL_TIME_PAYMENT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -62,7 +63,7 @@ public class RealTimePayment {
 
   @JsonProperty(JSON_PROPERTY_REAL_TIME_PAYMENT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setRealTimePayment(RealTimePaymentData realTimePayment) {
+  public void setRealTimePayment(@javax.annotation.Nonnull RealTimePaymentData realTimePayment) {
     this.realTimePayment = realTimePayment;
   }
 

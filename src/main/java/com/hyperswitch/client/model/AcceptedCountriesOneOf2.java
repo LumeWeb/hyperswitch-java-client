@@ -33,13 +33,13 @@ import java.util.StringJoiner;
   AcceptedCountriesOneOf2.JSON_PROPERTY_TYPE
 })
 @JsonTypeName("AcceptedCountries_oneOf_2")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class AcceptedCountriesOneOf2 {
   /**
    * Gets or Sets type
    */
   public enum TypeEnum {
-    ALL_ACCEPTED("all_accepted");
+    ALL_ACCEPTED(String.valueOf("all_accepted"));
 
     private String value;
 
@@ -69,21 +69,22 @@ public class AcceptedCountriesOneOf2 {
   }
 
   public static final String JSON_PROPERTY_TYPE = "type";
+  @javax.annotation.Nonnull
   private TypeEnum type;
 
   public AcceptedCountriesOneOf2() {
   }
 
-  public AcceptedCountriesOneOf2 type(TypeEnum type) {
+  public AcceptedCountriesOneOf2 type(@javax.annotation.Nonnull TypeEnum type) {
     
     this.type = type;
     return this;
   }
 
-   /**
+  /**
    * Get type
    * @return type
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_TYPE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -95,7 +96,7 @@ public class AcceptedCountriesOneOf2 {
 
   @JsonProperty(JSON_PROPERTY_TYPE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setType(TypeEnum type) {
+  public void setType(@javax.annotation.Nonnull TypeEnum type) {
     this.type = type;
   }
 

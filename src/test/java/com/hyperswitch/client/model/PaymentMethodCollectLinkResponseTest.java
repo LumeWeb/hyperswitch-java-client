@@ -21,27 +21,27 @@ import com.fasterxml.jackson.annotation.JsonValue;
 import com.hyperswitch.client.model.EnabledPaymentMethod;
 import java.time.OffsetDateTime;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import org.openapitools.jackson.nullable.JsonNullable;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.openapitools.jackson.nullable.JsonNullable;
 import java.util.NoSuchElementException;
-import org.junit.Assert;
-import org.junit.Ignore;
-import org.junit.Test;
-
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Test;
 
 /**
  * Model tests for PaymentMethodCollectLinkResponse
  */
-public class PaymentMethodCollectLinkResponseTest {
+class PaymentMethodCollectLinkResponseTest {
     private final PaymentMethodCollectLinkResponse model = new PaymentMethodCollectLinkResponse();
 
     /**
      * Model tests for PaymentMethodCollectLinkResponse
      */
     @Test
-    public void testPaymentMethodCollectLinkResponse() {
+    void testPaymentMethodCollectLinkResponse() {
         // TODO: test PaymentMethodCollectLinkResponse
     }
 
@@ -49,7 +49,7 @@ public class PaymentMethodCollectLinkResponseTest {
      * Test the property 'logo'
      */
     @Test
-    public void logoTest() {
+    void logoTest() {
         // TODO: test logo
     }
 
@@ -57,7 +57,7 @@ public class PaymentMethodCollectLinkResponseTest {
      * Test the property 'merchantName'
      */
     @Test
-    public void merchantNameTest() {
+    void merchantNameTest() {
         // TODO: test merchantName
     }
 
@@ -65,7 +65,7 @@ public class PaymentMethodCollectLinkResponseTest {
      * Test the property 'theme'
      */
     @Test
-    public void themeTest() {
+    void themeTest() {
         // TODO: test theme
     }
 
@@ -73,7 +73,7 @@ public class PaymentMethodCollectLinkResponseTest {
      * Test the property 'pmCollectLinkId'
      */
     @Test
-    public void pmCollectLinkIdTest() {
+    void pmCollectLinkIdTest() {
         // TODO: test pmCollectLinkId
     }
 
@@ -81,7 +81,7 @@ public class PaymentMethodCollectLinkResponseTest {
      * Test the property 'customerId'
      */
     @Test
-    public void customerIdTest() {
+    void customerIdTest() {
         // TODO: test customerId
     }
 
@@ -89,7 +89,7 @@ public class PaymentMethodCollectLinkResponseTest {
      * Test the property 'expiry'
      */
     @Test
-    public void expiryTest() {
+    void expiryTest() {
         // TODO: test expiry
     }
 
@@ -97,7 +97,7 @@ public class PaymentMethodCollectLinkResponseTest {
      * Test the property 'link'
      */
     @Test
-    public void linkTest() {
+    void linkTest() {
         // TODO: test link
     }
 
@@ -105,7 +105,7 @@ public class PaymentMethodCollectLinkResponseTest {
      * Test the property 'returnUrl'
      */
     @Test
-    public void returnUrlTest() {
+    void returnUrlTest() {
         // TODO: test returnUrl
     }
 
@@ -113,7 +113,7 @@ public class PaymentMethodCollectLinkResponseTest {
      * Test the property 'enabledPaymentMethods'
      */
     @Test
-    public void enabledPaymentMethodsTest() {
+    void enabledPaymentMethodsTest() {
         // TODO: test enabledPaymentMethods
     }
 

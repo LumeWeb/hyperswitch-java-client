@@ -23,27 +23,27 @@ import com.hyperswitch.client.model.MandateType;
 import com.hyperswitch.client.model.PaymentType;
 import com.hyperswitch.client.model.ResponsePaymentMethodsEnabled;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import org.openapitools.jackson.nullable.JsonNullable;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.openapitools.jackson.nullable.JsonNullable;
 import java.util.NoSuchElementException;
-import org.junit.Assert;
-import org.junit.Ignore;
-import org.junit.Test;
-
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Test;
 
 /**
  * Model tests for PaymentMethodListResponse
  */
-public class PaymentMethodListResponseTest {
+class PaymentMethodListResponseTest {
     private final PaymentMethodListResponse model = new PaymentMethodListResponse();
 
     /**
      * Model tests for PaymentMethodListResponse
      */
     @Test
-    public void testPaymentMethodListResponse() {
+    void testPaymentMethodListResponse() {
         // TODO: test PaymentMethodListResponse
     }
 
@@ -51,7 +51,7 @@ public class PaymentMethodListResponseTest {
      * Test the property 'redirectUrl'
      */
     @Test
-    public void redirectUrlTest() {
+    void redirectUrlTest() {
         // TODO: test redirectUrl
     }
 
@@ -59,7 +59,7 @@ public class PaymentMethodListResponseTest {
      * Test the property 'currency'
      */
     @Test
-    public void currencyTest() {
+    void currencyTest() {
         // TODO: test currency
     }
 
@@ -67,7 +67,7 @@ public class PaymentMethodListResponseTest {
      * Test the property 'paymentMethods'
      */
     @Test
-    public void paymentMethodsTest() {
+    void paymentMethodsTest() {
         // TODO: test paymentMethods
     }
 
@@ -75,7 +75,7 @@ public class PaymentMethodListResponseTest {
      * Test the property 'mandatePayment'
      */
     @Test
-    public void mandatePaymentTest() {
+    void mandatePaymentTest() {
         // TODO: test mandatePayment
     }
 
@@ -83,7 +83,7 @@ public class PaymentMethodListResponseTest {
      * Test the property 'merchantName'
      */
     @Test
-    public void merchantNameTest() {
+    void merchantNameTest() {
         // TODO: test merchantName
     }
 
@@ -91,7 +91,7 @@ public class PaymentMethodListResponseTest {
      * Test the property 'showSurchargeBreakupScreen'
      */
     @Test
-    public void showSurchargeBreakupScreenTest() {
+    void showSurchargeBreakupScreenTest() {
         // TODO: test showSurchargeBreakupScreen
     }
 
@@ -99,7 +99,7 @@ public class PaymentMethodListResponseTest {
      * Test the property 'paymentType'
      */
     @Test
-    public void paymentTypeTest() {
+    void paymentTypeTest() {
         // TODO: test paymentType
     }
 
@@ -107,7 +107,7 @@ public class PaymentMethodListResponseTest {
      * Test the property 'requestExternalThreeDsAuthentication'
      */
     @Test
-    public void requestExternalThreeDsAuthenticationTest() {
+    void requestExternalThreeDsAuthenticationTest() {
         // TODO: test requestExternalThreeDsAuthentication
     }
 
@@ -115,7 +115,7 @@ public class PaymentMethodListResponseTest {
      * Test the property 'collectShippingDetailsFromWallets'
      */
     @Test
-    public void collectShippingDetailsFromWalletsTest() {
+    void collectShippingDetailsFromWalletsTest() {
         // TODO: test collectShippingDetailsFromWallets
     }
 
@@ -123,7 +123,7 @@ public class PaymentMethodListResponseTest {
      * Test the property 'collectBillingDetailsFromWallets'
      */
     @Test
-    public void collectBillingDetailsFromWalletsTest() {
+    void collectBillingDetailsFromWalletsTest() {
         // TODO: test collectBillingDetailsFromWallets
     }
 
@@ -131,7 +131,7 @@ public class PaymentMethodListResponseTest {
      * Test the property 'isTaxCalculationEnabled'
      */
     @Test
-    public void isTaxCalculationEnabledTest() {
+    void isTaxCalculationEnabledTest() {
         // TODO: test isTaxCalculationEnabled
     }
 

@@ -38,24 +38,25 @@ import java.util.StringJoiner;
   BankTransferDataOneOfAchBankTransfer.JSON_PROPERTY_BILLING_DETAILS
 })
 @JsonTypeName("BankTransferData_oneOf_ach_bank_transfer")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class BankTransferDataOneOfAchBankTransfer {
   public static final String JSON_PROPERTY_BILLING_DETAILS = "billing_details";
+  @javax.annotation.Nullable
   private JsonNullable<AchBillingDetails> billingDetails = JsonNullable.<AchBillingDetails>undefined();
 
   public BankTransferDataOneOfAchBankTransfer() {
   }
 
-  public BankTransferDataOneOfAchBankTransfer billingDetails(AchBillingDetails billingDetails) {
+  public BankTransferDataOneOfAchBankTransfer billingDetails(@javax.annotation.Nullable AchBillingDetails billingDetails) {
     this.billingDetails = JsonNullable.<AchBillingDetails>of(billingDetails);
     
     return this;
   }
 
-   /**
+  /**
    * Get billingDetails
    * @return billingDetails
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -75,7 +76,7 @@ public class BankTransferDataOneOfAchBankTransfer {
     this.billingDetails = billingDetails;
   }
 
-  public void setBillingDetails(AchBillingDetails billingDetails) {
+  public void setBillingDetails(@javax.annotation.Nullable AchBillingDetails billingDetails) {
     this.billingDetails = JsonNullable.<AchBillingDetails>of(billingDetails);
   }
 

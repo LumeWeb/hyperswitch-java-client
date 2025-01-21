@@ -61,63 +61,77 @@ import java.util.StringJoiner;
   BankTransferAdditionalData.JSON_PROPERTY_PSE,
   BankTransferAdditionalData.JSON_PROPERTY_LOCAL_BANK_TRANSFER
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class BankTransferAdditionalData {
   public static final String JSON_PROPERTY_ACH = "ach";
+  @javax.annotation.Nonnull
   private Object ach;
 
   public static final String JSON_PROPERTY_SEPA = "sepa";
+  @javax.annotation.Nonnull
   private Object sepa;
 
   public static final String JSON_PROPERTY_BACS = "bacs";
+  @javax.annotation.Nonnull
   private Object bacs;
 
   public static final String JSON_PROPERTY_MULTIBANCO = "multibanco";
+  @javax.annotation.Nonnull
   private Object multibanco;
 
   public static final String JSON_PROPERTY_PERMATA = "permata";
+  @javax.annotation.Nonnull
   private Object permata;
 
   public static final String JSON_PROPERTY_BCA = "bca";
+  @javax.annotation.Nonnull
   private Object bca;
 
   public static final String JSON_PROPERTY_BNI_VA = "bni_va";
+  @javax.annotation.Nonnull
   private Object bniVa;
 
   public static final String JSON_PROPERTY_BRI_VA = "bri_va";
+  @javax.annotation.Nonnull
   private Object briVa;
 
   public static final String JSON_PROPERTY_CIMB_VA = "cimb_va";
+  @javax.annotation.Nonnull
   private Object cimbVa;
 
   public static final String JSON_PROPERTY_DANAMON_VA = "danamon_va";
+  @javax.annotation.Nonnull
   private Object danamonVa;
 
   public static final String JSON_PROPERTY_MANDIRI_VA = "mandiri_va";
+  @javax.annotation.Nonnull
   private Object mandiriVa;
 
   public static final String JSON_PROPERTY_PIX = "pix";
+  @javax.annotation.Nonnull
   private PixBankTransferAdditionalData pix;
 
   public static final String JSON_PROPERTY_PSE = "pse";
+  @javax.annotation.Nonnull
   private Object pse;
 
   public static final String JSON_PROPERTY_LOCAL_BANK_TRANSFER = "local_bank_transfer";
+  @javax.annotation.Nonnull
   private LocalBankTransferAdditionalData localBankTransfer;
 
   public BankTransferAdditionalData() {
   }
 
-  public BankTransferAdditionalData ach(Object ach) {
+  public BankTransferAdditionalData ach(@javax.annotation.Nonnull Object ach) {
     
     this.ach = ach;
     return this;
   }
 
-   /**
+  /**
    * Get ach
    * @return ach
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_ACH)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -129,21 +143,20 @@ public class BankTransferAdditionalData {
 
   @JsonProperty(JSON_PROPERTY_ACH)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setAch(Object ach) {
+  public void setAch(@javax.annotation.Nonnull Object ach) {
     this.ach = ach;
   }
 
-
-  public BankTransferAdditionalData sepa(Object sepa) {
+  public BankTransferAdditionalData sepa(@javax.annotation.Nonnull Object sepa) {
     
     this.sepa = sepa;
     return this;
   }
 
-   /**
+  /**
    * Get sepa
    * @return sepa
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_SEPA)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -155,21 +168,20 @@ public class BankTransferAdditionalData {
 
   @JsonProperty(JSON_PROPERTY_SEPA)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setSepa(Object sepa) {
+  public void setSepa(@javax.annotation.Nonnull Object sepa) {
     this.sepa = sepa;
   }
 
-
-  public BankTransferAdditionalData bacs(Object bacs) {
+  public BankTransferAdditionalData bacs(@javax.annotation.Nonnull Object bacs) {
     
     this.bacs = bacs;
     return this;
   }
 
-   /**
+  /**
    * Get bacs
    * @return bacs
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_BACS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -181,21 +193,20 @@ public class BankTransferAdditionalData {
 
   @JsonProperty(JSON_PROPERTY_BACS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setBacs(Object bacs) {
+  public void setBacs(@javax.annotation.Nonnull Object bacs) {
     this.bacs = bacs;
   }
 
-
-  public BankTransferAdditionalData multibanco(Object multibanco) {
+  public BankTransferAdditionalData multibanco(@javax.annotation.Nonnull Object multibanco) {
     
     this.multibanco = multibanco;
     return this;
   }
 
-   /**
+  /**
    * Get multibanco
    * @return multibanco
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_MULTIBANCO)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -207,21 +218,20 @@ public class BankTransferAdditionalData {
 
   @JsonProperty(JSON_PROPERTY_MULTIBANCO)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setMultibanco(Object multibanco) {
+  public void setMultibanco(@javax.annotation.Nonnull Object multibanco) {
     this.multibanco = multibanco;
   }
 
-
-  public BankTransferAdditionalData permata(Object permata) {
+  public BankTransferAdditionalData permata(@javax.annotation.Nonnull Object permata) {
     
     this.permata = permata;
     return this;
   }
 
-   /**
+  /**
    * Get permata
    * @return permata
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_PERMATA)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -233,21 +243,20 @@ public class BankTransferAdditionalData {
 
   @JsonProperty(JSON_PROPERTY_PERMATA)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setPermata(Object permata) {
+  public void setPermata(@javax.annotation.Nonnull Object permata) {
     this.permata = permata;
   }
 
-
-  public BankTransferAdditionalData bca(Object bca) {
+  public BankTransferAdditionalData bca(@javax.annotation.Nonnull Object bca) {
     
     this.bca = bca;
     return this;
   }
 
-   /**
+  /**
    * Get bca
    * @return bca
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_BCA)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -259,21 +268,20 @@ public class BankTransferAdditionalData {
 
   @JsonProperty(JSON_PROPERTY_BCA)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setBca(Object bca) {
+  public void setBca(@javax.annotation.Nonnull Object bca) {
     this.bca = bca;
   }
 
-
-  public BankTransferAdditionalData bniVa(Object bniVa) {
+  public BankTransferAdditionalData bniVa(@javax.annotation.Nonnull Object bniVa) {
     
     this.bniVa = bniVa;
     return this;
   }
 
-   /**
+  /**
    * Get bniVa
    * @return bniVa
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_BNI_VA)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -285,21 +293,20 @@ public class BankTransferAdditionalData {
 
   @JsonProperty(JSON_PROPERTY_BNI_VA)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setBniVa(Object bniVa) {
+  public void setBniVa(@javax.annotation.Nonnull Object bniVa) {
     this.bniVa = bniVa;
   }
 
-
-  public BankTransferAdditionalData briVa(Object briVa) {
+  public BankTransferAdditionalData briVa(@javax.annotation.Nonnull Object briVa) {
     
     this.briVa = briVa;
     return this;
   }
 
-   /**
+  /**
    * Get briVa
    * @return briVa
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_BRI_VA)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -311,21 +318,20 @@ public class BankTransferAdditionalData {
 
   @JsonProperty(JSON_PROPERTY_BRI_VA)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setBriVa(Object briVa) {
+  public void setBriVa(@javax.annotation.Nonnull Object briVa) {
     this.briVa = briVa;
   }
 
-
-  public BankTransferAdditionalData cimbVa(Object cimbVa) {
+  public BankTransferAdditionalData cimbVa(@javax.annotation.Nonnull Object cimbVa) {
     
     this.cimbVa = cimbVa;
     return this;
   }
 
-   /**
+  /**
    * Get cimbVa
    * @return cimbVa
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_CIMB_VA)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -337,21 +343,20 @@ public class BankTransferAdditionalData {
 
   @JsonProperty(JSON_PROPERTY_CIMB_VA)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setCimbVa(Object cimbVa) {
+  public void setCimbVa(@javax.annotation.Nonnull Object cimbVa) {
     this.cimbVa = cimbVa;
   }
 
-
-  public BankTransferAdditionalData danamonVa(Object danamonVa) {
+  public BankTransferAdditionalData danamonVa(@javax.annotation.Nonnull Object danamonVa) {
     
     this.danamonVa = danamonVa;
     return this;
   }
 
-   /**
+  /**
    * Get danamonVa
    * @return danamonVa
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_DANAMON_VA)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -363,21 +368,20 @@ public class BankTransferAdditionalData {
 
   @JsonProperty(JSON_PROPERTY_DANAMON_VA)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setDanamonVa(Object danamonVa) {
+  public void setDanamonVa(@javax.annotation.Nonnull Object danamonVa) {
     this.danamonVa = danamonVa;
   }
 
-
-  public BankTransferAdditionalData mandiriVa(Object mandiriVa) {
+  public BankTransferAdditionalData mandiriVa(@javax.annotation.Nonnull Object mandiriVa) {
     
     this.mandiriVa = mandiriVa;
     return this;
   }
 
-   /**
+  /**
    * Get mandiriVa
    * @return mandiriVa
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_MANDIRI_VA)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -389,21 +393,20 @@ public class BankTransferAdditionalData {
 
   @JsonProperty(JSON_PROPERTY_MANDIRI_VA)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setMandiriVa(Object mandiriVa) {
+  public void setMandiriVa(@javax.annotation.Nonnull Object mandiriVa) {
     this.mandiriVa = mandiriVa;
   }
 
-
-  public BankTransferAdditionalData pix(PixBankTransferAdditionalData pix) {
+  public BankTransferAdditionalData pix(@javax.annotation.Nonnull PixBankTransferAdditionalData pix) {
     
     this.pix = pix;
     return this;
   }
 
-   /**
+  /**
    * Get pix
    * @return pix
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_PIX)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -415,21 +418,20 @@ public class BankTransferAdditionalData {
 
   @JsonProperty(JSON_PROPERTY_PIX)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setPix(PixBankTransferAdditionalData pix) {
+  public void setPix(@javax.annotation.Nonnull PixBankTransferAdditionalData pix) {
     this.pix = pix;
   }
 
-
-  public BankTransferAdditionalData pse(Object pse) {
+  public BankTransferAdditionalData pse(@javax.annotation.Nonnull Object pse) {
     
     this.pse = pse;
     return this;
   }
 
-   /**
+  /**
    * Get pse
    * @return pse
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_PSE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -441,21 +443,20 @@ public class BankTransferAdditionalData {
 
   @JsonProperty(JSON_PROPERTY_PSE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setPse(Object pse) {
+  public void setPse(@javax.annotation.Nonnull Object pse) {
     this.pse = pse;
   }
 
-
-  public BankTransferAdditionalData localBankTransfer(LocalBankTransferAdditionalData localBankTransfer) {
+  public BankTransferAdditionalData localBankTransfer(@javax.annotation.Nonnull LocalBankTransferAdditionalData localBankTransfer) {
     
     this.localBankTransfer = localBankTransfer;
     return this;
   }
 
-   /**
+  /**
    * Get localBankTransfer
    * @return localBankTransfer
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_LOCAL_BANK_TRANSFER)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -467,7 +468,7 @@ public class BankTransferAdditionalData {
 
   @JsonProperty(JSON_PROPERTY_LOCAL_BANK_TRANSFER)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setLocalBankTransfer(LocalBankTransferAdditionalData localBankTransfer) {
+  public void setLocalBankTransfer(@javax.annotation.Nonnull LocalBankTransferAdditionalData localBankTransfer) {
     this.localBankTransfer = localBankTransfer;
   }
 

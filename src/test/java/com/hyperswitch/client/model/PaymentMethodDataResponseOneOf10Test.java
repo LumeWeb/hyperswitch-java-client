@@ -19,22 +19,21 @@ import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonTypeName;
 import com.fasterxml.jackson.annotation.JsonValue;
 import com.hyperswitch.client.model.UpiResponse;
-import org.junit.Assert;
-import org.junit.Ignore;
-import org.junit.Test;
-
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Test;
 
 /**
  * Model tests for PaymentMethodDataResponseOneOf10
  */
-public class PaymentMethodDataResponseOneOf10Test {
+class PaymentMethodDataResponseOneOf10Test {
     private final PaymentMethodDataResponseOneOf10 model = new PaymentMethodDataResponseOneOf10();
 
     /**
      * Model tests for PaymentMethodDataResponseOneOf10
      */
     @Test
-    public void testPaymentMethodDataResponseOneOf10() {
+    void testPaymentMethodDataResponseOneOf10() {
         // TODO: test PaymentMethodDataResponseOneOf10
     }
 
@@ -42,7 +41,7 @@ public class PaymentMethodDataResponseOneOf10Test {
      * Test the property 'upi'
      */
     @Test
-    public void upiTest() {
+    void upiTest() {
         // TODO: test upi
     }
 

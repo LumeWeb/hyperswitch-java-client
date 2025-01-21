@@ -22,6 +22,7 @@ import com.fasterxml.jackson.annotation.JsonTypeName;
 import com.fasterxml.jackson.annotation.JsonValue;
 import com.hyperswitch.client.model.ConnectorVolumeSplit;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 import com.fasterxml.jackson.annotation.JsonTypeName;
@@ -36,13 +37,13 @@ import java.util.StringJoiner;
   VolumeSplit.JSON_PROPERTY_TYPE,
   VolumeSplit.JSON_PROPERTY_DATA
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class VolumeSplit {
   /**
    * Gets or Sets type
    */
   public enum TypeEnum {
-    VOLUME_SPLIT("volume_split");
+    VOLUME_SPLIT(String.valueOf("volume_split"));
 
     private String value;
 
@@ -72,24 +73,26 @@ public class VolumeSplit {
   }
 
   public static final String JSON_PROPERTY_TYPE = "type";
+  @javax.annotation.Nonnull
   private TypeEnum type;
 
   public static final String JSON_PROPERTY_DATA = "data";
+  @javax.annotation.Nonnull
   private List<ConnectorVolumeSplit> data = new ArrayList<>();
 
   public VolumeSplit() {
   }
 
-  public VolumeSplit type(TypeEnum type) {
+  public VolumeSplit type(@javax.annotation.Nonnull TypeEnum type) {
     
     this.type = type;
     return this;
   }
 
-   /**
+  /**
    * Get type
    * @return type
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_TYPE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -101,12 +104,11 @@ public class VolumeSplit {
 
   @JsonProperty(JSON_PROPERTY_TYPE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setType(TypeEnum type) {
+  public void setType(@javax.annotation.Nonnull TypeEnum type) {
     this.type = type;
   }
 
-
-  public VolumeSplit data(List<ConnectorVolumeSplit> data) {
+  public VolumeSplit data(@javax.annotation.Nonnull List<ConnectorVolumeSplit> data) {
     
     this.data = data;
     return this;
@@ -120,10 +122,10 @@ public class VolumeSplit {
     return this;
   }
 
-   /**
+  /**
    * Get data
    * @return data
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_DATA)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -135,7 +137,7 @@ public class VolumeSplit {
 
   @JsonProperty(JSON_PROPERTY_DATA)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setData(List<ConnectorVolumeSplit> data) {
+  public void setData(@javax.annotation.Nonnull List<ConnectorVolumeSplit> data) {
     this.data = data;
   }
 

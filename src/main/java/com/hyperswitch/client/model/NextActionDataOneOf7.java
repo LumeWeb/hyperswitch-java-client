@@ -35,16 +35,17 @@ import java.util.StringJoiner;
   NextActionDataOneOf7.JSON_PROPERTY_TYPE
 })
 @JsonTypeName("NextActionData_oneOf_7")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class NextActionDataOneOf7 {
   public static final String JSON_PROPERTY_THREE_DS_DATA = "three_ds_data";
+  @javax.annotation.Nonnull
   private ThreeDsData threeDsData;
 
   /**
    * Gets or Sets type
    */
   public enum TypeEnum {
-    THREE_DS_INVOKE("three_ds_invoke");
+    THREE_DS_INVOKE(String.valueOf("three_ds_invoke"));
 
     private String value;
 
@@ -74,21 +75,22 @@ public class NextActionDataOneOf7 {
   }
 
   public static final String JSON_PROPERTY_TYPE = "type";
+  @javax.annotation.Nonnull
   private TypeEnum type;
 
   public NextActionDataOneOf7() {
   }
 
-  public NextActionDataOneOf7 threeDsData(ThreeDsData threeDsData) {
+  public NextActionDataOneOf7 threeDsData(@javax.annotation.Nonnull ThreeDsData threeDsData) {
     
     this.threeDsData = threeDsData;
     return this;
   }
 
-   /**
+  /**
    * Get threeDsData
    * @return threeDsData
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_THREE_DS_DATA)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -100,21 +102,20 @@ public class NextActionDataOneOf7 {
 
   @JsonProperty(JSON_PROPERTY_THREE_DS_DATA)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setThreeDsData(ThreeDsData threeDsData) {
+  public void setThreeDsData(@javax.annotation.Nonnull ThreeDsData threeDsData) {
     this.threeDsData = threeDsData;
   }
 
-
-  public NextActionDataOneOf7 type(TypeEnum type) {
+  public NextActionDataOneOf7 type(@javax.annotation.Nonnull TypeEnum type) {
     
     this.type = type;
     return this;
   }
 
-   /**
+  /**
    * Get type
    * @return type
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_TYPE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -126,7 +127,7 @@ public class NextActionDataOneOf7 {
 
   @JsonProperty(JSON_PROPERTY_TYPE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setType(TypeEnum type) {
+  public void setType(@javax.annotation.Nonnull TypeEnum type) {
     this.type = type;
   }
 

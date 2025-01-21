@@ -36,30 +36,33 @@ import java.util.StringJoiner;
   PaymentsPostSessionTokensRequest.JSON_PROPERTY_PAYMENT_METHOD_TYPE,
   PaymentsPostSessionTokensRequest.JSON_PROPERTY_PAYMENT_METHOD
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class PaymentsPostSessionTokensRequest {
   public static final String JSON_PROPERTY_CLIENT_SECRET = "client_secret";
+  @javax.annotation.Nonnull
   private String clientSecret;
 
   public static final String JSON_PROPERTY_PAYMENT_METHOD_TYPE = "payment_method_type";
+  @javax.annotation.Nonnull
   private PaymentMethodType paymentMethodType;
 
   public static final String JSON_PROPERTY_PAYMENT_METHOD = "payment_method";
+  @javax.annotation.Nonnull
   private PaymentMethod paymentMethod;
 
   public PaymentsPostSessionTokensRequest() {
   }
 
-  public PaymentsPostSessionTokensRequest clientSecret(String clientSecret) {
+  public PaymentsPostSessionTokensRequest clientSecret(@javax.annotation.Nonnull String clientSecret) {
     
     this.clientSecret = clientSecret;
     return this;
   }
 
-   /**
+  /**
    * It&#39;s a token used for client side verification.
    * @return clientSecret
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_CLIENT_SECRET)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -71,21 +74,20 @@ public class PaymentsPostSessionTokensRequest {
 
   @JsonProperty(JSON_PROPERTY_CLIENT_SECRET)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setClientSecret(String clientSecret) {
+  public void setClientSecret(@javax.annotation.Nonnull String clientSecret) {
     this.clientSecret = clientSecret;
   }
 
-
-  public PaymentsPostSessionTokensRequest paymentMethodType(PaymentMethodType paymentMethodType) {
+  public PaymentsPostSessionTokensRequest paymentMethodType(@javax.annotation.Nonnull PaymentMethodType paymentMethodType) {
     
     this.paymentMethodType = paymentMethodType;
     return this;
   }
 
-   /**
+  /**
    * Get paymentMethodType
    * @return paymentMethodType
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_PAYMENT_METHOD_TYPE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -97,21 +99,20 @@ public class PaymentsPostSessionTokensRequest {
 
   @JsonProperty(JSON_PROPERTY_PAYMENT_METHOD_TYPE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setPaymentMethodType(PaymentMethodType paymentMethodType) {
+  public void setPaymentMethodType(@javax.annotation.Nonnull PaymentMethodType paymentMethodType) {
     this.paymentMethodType = paymentMethodType;
   }
 
-
-  public PaymentsPostSessionTokensRequest paymentMethod(PaymentMethod paymentMethod) {
+  public PaymentsPostSessionTokensRequest paymentMethod(@javax.annotation.Nonnull PaymentMethod paymentMethod) {
     
     this.paymentMethod = paymentMethod;
     return this;
   }
 
-   /**
+  /**
    * Get paymentMethod
    * @return paymentMethod
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_PAYMENT_METHOD)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -123,7 +124,7 @@ public class PaymentsPostSessionTokensRequest {
 
   @JsonProperty(JSON_PROPERTY_PAYMENT_METHOD)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setPaymentMethod(PaymentMethod paymentMethod) {
+  public void setPaymentMethod(@javax.annotation.Nonnull PaymentMethod paymentMethod) {
     this.paymentMethod = paymentMethod;
   }
 

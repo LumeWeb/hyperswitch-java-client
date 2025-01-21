@@ -36,27 +36,29 @@ import java.util.StringJoiner;
   GiftCardAdditionalData.JSON_PROPERTY_GIVEX,
   GiftCardAdditionalData.JSON_PROPERTY_PAY_SAFE_CARD
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class GiftCardAdditionalData {
   public static final String JSON_PROPERTY_GIVEX = "givex";
+  @javax.annotation.Nonnull
   private GivexGiftCardAdditionalData givex;
 
   public static final String JSON_PROPERTY_PAY_SAFE_CARD = "pay_safe_card";
+  @javax.annotation.Nonnull
   private Object paySafeCard;
 
   public GiftCardAdditionalData() {
   }
 
-  public GiftCardAdditionalData givex(GivexGiftCardAdditionalData givex) {
+  public GiftCardAdditionalData givex(@javax.annotation.Nonnull GivexGiftCardAdditionalData givex) {
     
     this.givex = givex;
     return this;
   }
 
-   /**
+  /**
    * Get givex
    * @return givex
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_GIVEX)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -68,21 +70,20 @@ public class GiftCardAdditionalData {
 
   @JsonProperty(JSON_PROPERTY_GIVEX)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setGivex(GivexGiftCardAdditionalData givex) {
+  public void setGivex(@javax.annotation.Nonnull GivexGiftCardAdditionalData givex) {
     this.givex = givex;
   }
 
-
-  public GiftCardAdditionalData paySafeCard(Object paySafeCard) {
+  public GiftCardAdditionalData paySafeCard(@javax.annotation.Nonnull Object paySafeCard) {
     
     this.paySafeCard = paySafeCard;
     return this;
   }
 
-   /**
+  /**
    * Get paySafeCard
    * @return paySafeCard
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_PAY_SAFE_CARD)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -94,7 +95,7 @@ public class GiftCardAdditionalData {
 
   @JsonProperty(JSON_PROPERTY_PAY_SAFE_CARD)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setPaySafeCard(Object paySafeCard) {
+  public void setPaySafeCard(@javax.annotation.Nonnull Object paySafeCard) {
     this.paySafeCard = paySafeCard;
   }
 

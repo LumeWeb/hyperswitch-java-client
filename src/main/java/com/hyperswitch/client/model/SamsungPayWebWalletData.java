@@ -42,36 +42,41 @@ import java.util.StringJoiner;
   SamsungPayWebWalletData.JSON_PROPERTY_CARD_LAST4DIGITS,
   SamsungPayWebWalletData.JSON_PROPERTY_3D_S
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class SamsungPayWebWalletData {
   public static final String JSON_PROPERTY_METHOD = "method";
+  @javax.annotation.Nullable
   private JsonNullable<String> method = JsonNullable.<String>undefined();
 
   public static final String JSON_PROPERTY_RECURRING_PAYMENT = "recurring_payment";
+  @javax.annotation.Nullable
   private JsonNullable<Boolean> recurringPayment = JsonNullable.<Boolean>undefined();
 
   public static final String JSON_PROPERTY_CARD_BRAND = "card_brand";
+  @javax.annotation.Nonnull
   private SamsungPayCardBrand cardBrand;
 
   public static final String JSON_PROPERTY_CARD_LAST4DIGITS = "card_last4digits";
+  @javax.annotation.Nonnull
   private String cardLast4digits;
 
   public static final String JSON_PROPERTY_3D_S = "3_d_s";
+  @javax.annotation.Nonnull
   private SamsungPayTokenData _3dS;
 
   public SamsungPayWebWalletData() {
   }
 
-  public SamsungPayWebWalletData method(String method) {
+  public SamsungPayWebWalletData method(@javax.annotation.Nullable String method) {
     this.method = JsonNullable.<String>of(method);
     
     return this;
   }
 
-   /**
+  /**
    * Specifies authentication method used
    * @return method
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -91,21 +96,20 @@ public class SamsungPayWebWalletData {
     this.method = method;
   }
 
-  public void setMethod(String method) {
+  public void setMethod(@javax.annotation.Nullable String method) {
     this.method = JsonNullable.<String>of(method);
   }
 
-
-  public SamsungPayWebWalletData recurringPayment(Boolean recurringPayment) {
+  public SamsungPayWebWalletData recurringPayment(@javax.annotation.Nullable Boolean recurringPayment) {
     this.recurringPayment = JsonNullable.<Boolean>of(recurringPayment);
     
     return this;
   }
 
-   /**
+  /**
    * Value if credential is enabled for recurring payment
    * @return recurringPayment
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -125,21 +129,20 @@ public class SamsungPayWebWalletData {
     this.recurringPayment = recurringPayment;
   }
 
-  public void setRecurringPayment(Boolean recurringPayment) {
+  public void setRecurringPayment(@javax.annotation.Nullable Boolean recurringPayment) {
     this.recurringPayment = JsonNullable.<Boolean>of(recurringPayment);
   }
 
-
-  public SamsungPayWebWalletData cardBrand(SamsungPayCardBrand cardBrand) {
+  public SamsungPayWebWalletData cardBrand(@javax.annotation.Nonnull SamsungPayCardBrand cardBrand) {
     
     this.cardBrand = cardBrand;
     return this;
   }
 
-   /**
+  /**
    * Get cardBrand
    * @return cardBrand
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_CARD_BRAND)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -151,21 +154,20 @@ public class SamsungPayWebWalletData {
 
   @JsonProperty(JSON_PROPERTY_CARD_BRAND)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setCardBrand(SamsungPayCardBrand cardBrand) {
+  public void setCardBrand(@javax.annotation.Nonnull SamsungPayCardBrand cardBrand) {
     this.cardBrand = cardBrand;
   }
 
-
-  public SamsungPayWebWalletData cardLast4digits(String cardLast4digits) {
+  public SamsungPayWebWalletData cardLast4digits(@javax.annotation.Nonnull String cardLast4digits) {
     
     this.cardLast4digits = cardLast4digits;
     return this;
   }
 
-   /**
+  /**
    * Last 4 digits of the card number
    * @return cardLast4digits
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_CARD_LAST4DIGITS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -177,21 +179,20 @@ public class SamsungPayWebWalletData {
 
   @JsonProperty(JSON_PROPERTY_CARD_LAST4DIGITS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setCardLast4digits(String cardLast4digits) {
+  public void setCardLast4digits(@javax.annotation.Nonnull String cardLast4digits) {
     this.cardLast4digits = cardLast4digits;
   }
 
-
-  public SamsungPayWebWalletData _3dS(SamsungPayTokenData _3dS) {
+  public SamsungPayWebWalletData _3dS(@javax.annotation.Nonnull SamsungPayTokenData _3dS) {
     
     this._3dS = _3dS;
     return this;
   }
 
-   /**
+  /**
    * Get _3dS
    * @return _3dS
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_3D_S)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -203,7 +204,7 @@ public class SamsungPayWebWalletData {
 
   @JsonProperty(JSON_PROPERTY_3D_S)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void set3dS(SamsungPayTokenData _3dS) {
+  public void set3dS(@javax.annotation.Nonnull SamsungPayTokenData _3dS) {
     this._3dS = _3dS;
   }
 

@@ -32,6 +32,7 @@ import com.hyperswitch.client.model.PayoutSendPriority;
 import com.hyperswitch.client.model.PayoutType;
 import com.hyperswitch.client.model.RoutingAlgorithm;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import org.openapitools.jackson.nullable.JsonNullable;
 import com.fasterxml.jackson.annotation.JsonIgnore;
@@ -76,106 +77,134 @@ import java.util.StringJoiner;
   PayoutConfirmRequest.JSON_PROPERTY_PHONE,
   PayoutConfirmRequest.JSON_PROPERTY_PHONE_COUNTRY_CODE
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class PayoutConfirmRequest {
   public static final String JSON_PROPERTY_AMOUNT = "amount";
+  @javax.annotation.Nullable
   private JsonNullable<Long> amount = JsonNullable.<Long>undefined();
 
   public static final String JSON_PROPERTY_CURRENCY = "currency";
+  @javax.annotation.Nullable
   private JsonNullable<Currency> currency = JsonNullable.<Currency>undefined();
 
   public static final String JSON_PROPERTY_ROUTING = "routing";
+  @javax.annotation.Nullable
   private JsonNullable<RoutingAlgorithm> routing = JsonNullable.<RoutingAlgorithm>undefined();
 
   public static final String JSON_PROPERTY_CONNECTOR = "connector";
+  @javax.annotation.Nullable
   private JsonNullable<List<PayoutConnectors>> connector = JsonNullable.<List<PayoutConnectors>>undefined();
 
   public static final String JSON_PROPERTY_PAYOUT_TYPE = "payout_type";
+  @javax.annotation.Nullable
   private JsonNullable<PayoutType> payoutType = JsonNullable.<PayoutType>undefined();
 
   public static final String JSON_PROPERTY_PAYOUT_METHOD_DATA = "payout_method_data";
+  @javax.annotation.Nullable
   private JsonNullable<PayoutMethodData> payoutMethodData = JsonNullable.<PayoutMethodData>undefined();
 
   public static final String JSON_PROPERTY_BILLING = "billing";
+  @javax.annotation.Nullable
   private JsonNullable<Address> billing = JsonNullable.<Address>undefined();
 
   public static final String JSON_PROPERTY_AUTO_FULFILL = "auto_fulfill";
+  @javax.annotation.Nullable
   private JsonNullable<Boolean> autoFulfill = JsonNullable.<Boolean>of(false);
 
   public static final String JSON_PROPERTY_CUSTOMER_ID = "customer_id";
+  @javax.annotation.Nullable
   private JsonNullable<String> customerId = JsonNullable.<String>undefined();
 
   public static final String JSON_PROPERTY_CUSTOMER = "customer";
+  @javax.annotation.Nullable
   private JsonNullable<CustomerDetails> customer = JsonNullable.<CustomerDetails>undefined();
 
   public static final String JSON_PROPERTY_CLIENT_SECRET = "client_secret";
+  @javax.annotation.Nonnull
   private String clientSecret;
 
   public static final String JSON_PROPERTY_RETURN_URL = "return_url";
+  @javax.annotation.Nullable
   private JsonNullable<String> returnUrl = JsonNullable.<String>undefined();
 
   public static final String JSON_PROPERTY_BUSINESS_COUNTRY = "business_country";
+  @javax.annotation.Nullable
   private JsonNullable<CountryAlpha2> businessCountry = JsonNullable.<CountryAlpha2>undefined();
 
   public static final String JSON_PROPERTY_BUSINESS_LABEL = "business_label";
+  @javax.annotation.Nullable
   private JsonNullable<String> businessLabel = JsonNullable.<String>undefined();
 
   public static final String JSON_PROPERTY_DESCRIPTION = "description";
+  @javax.annotation.Nullable
   private JsonNullable<String> description = JsonNullable.<String>undefined();
 
   public static final String JSON_PROPERTY_ENTITY_TYPE = "entity_type";
+  @javax.annotation.Nullable
   private JsonNullable<PayoutEntityType> entityType = JsonNullable.<PayoutEntityType>undefined();
 
   public static final String JSON_PROPERTY_RECURRING = "recurring";
+  @javax.annotation.Nullable
   private JsonNullable<Boolean> recurring = JsonNullable.<Boolean>of(false);
 
   public static final String JSON_PROPERTY_METADATA = "metadata";
+  @javax.annotation.Nullable
   private JsonNullable<Object> metadata = JsonNullable.<Object>undefined();
 
   public static final String JSON_PROPERTY_PAYOUT_TOKEN = "payout_token";
+  @javax.annotation.Nullable
   private JsonNullable<String> payoutToken = JsonNullable.<String>undefined();
 
   public static final String JSON_PROPERTY_PROFILE_ID = "profile_id";
+  @javax.annotation.Nullable
   private JsonNullable<String> profileId = JsonNullable.<String>undefined();
 
   public static final String JSON_PROPERTY_PRIORITY = "priority";
+  @javax.annotation.Nullable
   private JsonNullable<PayoutSendPriority> priority = JsonNullable.<PayoutSendPriority>undefined();
 
   public static final String JSON_PROPERTY_PAYOUT_LINK = "payout_link";
+  @javax.annotation.Nullable
   private JsonNullable<Boolean> payoutLink = JsonNullable.<Boolean>of(false);
 
   public static final String JSON_PROPERTY_PAYOUT_LINK_CONFIG = "payout_link_config";
+  @javax.annotation.Nullable
   private JsonNullable<PayoutCreatePayoutLinkConfig> payoutLinkConfig = JsonNullable.<PayoutCreatePayoutLinkConfig>undefined();
 
   public static final String JSON_PROPERTY_SESSION_EXPIRY = "session_expiry";
+  @javax.annotation.Nullable
   private JsonNullable<Integer> sessionExpiry = JsonNullable.<Integer>undefined();
 
   public static final String JSON_PROPERTY_EMAIL = "email";
+  @javax.annotation.Nullable
   private JsonNullable<String> email = JsonNullable.<String>undefined();
 
   public static final String JSON_PROPERTY_NAME = "name";
+  @javax.annotation.Nullable
   private JsonNullable<String> name = JsonNullable.<String>undefined();
 
   public static final String JSON_PROPERTY_PHONE = "phone";
+  @javax.annotation.Nullable
   private JsonNullable<String> phone = JsonNullable.<String>undefined();
 
   public static final String JSON_PROPERTY_PHONE_COUNTRY_CODE = "phone_country_code";
+  @javax.annotation.Nullable
   private JsonNullable<String> phoneCountryCode = JsonNullable.<String>undefined();
 
   public PayoutConfirmRequest() {
   }
 
-  public PayoutConfirmRequest amount(Long amount) {
+  public PayoutConfirmRequest amount(@javax.annotation.Nullable Long amount) {
     this.amount = JsonNullable.<Long>of(amount);
     
     return this;
   }
 
-   /**
+  /**
    * The payout amount. Amount for the payout in lowest denomination of the currency. (i.e) in cents for USD denomination, in paisa for INR denomination etc.,
    * minimum: 0
    * @return amount
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -195,21 +224,20 @@ public class PayoutConfirmRequest {
     this.amount = amount;
   }
 
-  public void setAmount(Long amount) {
+  public void setAmount(@javax.annotation.Nullable Long amount) {
     this.amount = JsonNullable.<Long>of(amount);
   }
 
-
-  public PayoutConfirmRequest currency(Currency currency) {
+  public PayoutConfirmRequest currency(@javax.annotation.Nullable Currency currency) {
     this.currency = JsonNullable.<Currency>of(currency);
     
     return this;
   }
 
-   /**
+  /**
    * Get currency
    * @return currency
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -229,21 +257,20 @@ public class PayoutConfirmRequest {
     this.currency = currency;
   }
 
-  public void setCurrency(Currency currency) {
+  public void setCurrency(@javax.annotation.Nullable Currency currency) {
     this.currency = JsonNullable.<Currency>of(currency);
   }
 
-
-  public PayoutConfirmRequest routing(RoutingAlgorithm routing) {
+  public PayoutConfirmRequest routing(@javax.annotation.Nullable RoutingAlgorithm routing) {
     this.routing = JsonNullable.<RoutingAlgorithm>of(routing);
     
     return this;
   }
 
-   /**
+  /**
    * Get routing
    * @return routing
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -263,12 +290,11 @@ public class PayoutConfirmRequest {
     this.routing = routing;
   }
 
-  public void setRouting(RoutingAlgorithm routing) {
+  public void setRouting(@javax.annotation.Nullable RoutingAlgorithm routing) {
     this.routing = JsonNullable.<RoutingAlgorithm>of(routing);
   }
 
-
-  public PayoutConfirmRequest connector(List<PayoutConnectors> connector) {
+  public PayoutConfirmRequest connector(@javax.annotation.Nullable List<PayoutConnectors> connector) {
     this.connector = JsonNullable.<List<PayoutConnectors>>of(connector);
     
     return this;
@@ -286,10 +312,10 @@ public class PayoutConfirmRequest {
     return this;
   }
 
-   /**
+  /**
    * This field allows the merchant to manually select a connector with which the payout can go through.
    * @return connector
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -309,21 +335,20 @@ public class PayoutConfirmRequest {
     this.connector = connector;
   }
 
-  public void setConnector(List<PayoutConnectors> connector) {
+  public void setConnector(@javax.annotation.Nullable List<PayoutConnectors> connector) {
     this.connector = JsonNullable.<List<PayoutConnectors>>of(connector);
   }
 
-
-  public PayoutConfirmRequest payoutType(PayoutType payoutType) {
+  public PayoutConfirmRequest payoutType(@javax.annotation.Nullable PayoutType payoutType) {
     this.payoutType = JsonNullable.<PayoutType>of(payoutType);
     
     return this;
   }
 
-   /**
+  /**
    * Get payoutType
    * @return payoutType
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -343,21 +368,20 @@ public class PayoutConfirmRequest {
     this.payoutType = payoutType;
   }
 
-  public void setPayoutType(PayoutType payoutType) {
+  public void setPayoutType(@javax.annotation.Nullable PayoutType payoutType) {
     this.payoutType = JsonNullable.<PayoutType>of(payoutType);
   }
 
-
-  public PayoutConfirmRequest payoutMethodData(PayoutMethodData payoutMethodData) {
+  public PayoutConfirmRequest payoutMethodData(@javax.annotation.Nullable PayoutMethodData payoutMethodData) {
     this.payoutMethodData = JsonNullable.<PayoutMethodData>of(payoutMethodData);
     
     return this;
   }
 
-   /**
+  /**
    * Get payoutMethodData
    * @return payoutMethodData
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -377,21 +401,20 @@ public class PayoutConfirmRequest {
     this.payoutMethodData = payoutMethodData;
   }
 
-  public void setPayoutMethodData(PayoutMethodData payoutMethodData) {
+  public void setPayoutMethodData(@javax.annotation.Nullable PayoutMethodData payoutMethodData) {
     this.payoutMethodData = JsonNullable.<PayoutMethodData>of(payoutMethodData);
   }
 
-
-  public PayoutConfirmRequest billing(Address billing) {
+  public PayoutConfirmRequest billing(@javax.annotation.Nullable Address billing) {
     this.billing = JsonNullable.<Address>of(billing);
     
     return this;
   }
 
-   /**
+  /**
    * Get billing
    * @return billing
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -411,21 +434,20 @@ public class PayoutConfirmRequest {
     this.billing = billing;
   }
 
-  public void setBilling(Address billing) {
+  public void setBilling(@javax.annotation.Nullable Address billing) {
     this.billing = JsonNullable.<Address>of(billing);
   }
 
-
-  public PayoutConfirmRequest autoFulfill(Boolean autoFulfill) {
+  public PayoutConfirmRequest autoFulfill(@javax.annotation.Nullable Boolean autoFulfill) {
     this.autoFulfill = JsonNullable.<Boolean>of(autoFulfill);
     
     return this;
   }
 
-   /**
+  /**
    * Set to true to confirm the payout without review, no further action required
    * @return autoFulfill
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -445,22 +467,21 @@ public class PayoutConfirmRequest {
     this.autoFulfill = autoFulfill;
   }
 
-  public void setAutoFulfill(Boolean autoFulfill) {
+  public void setAutoFulfill(@javax.annotation.Nullable Boolean autoFulfill) {
     this.autoFulfill = JsonNullable.<Boolean>of(autoFulfill);
   }
 
-
-  public PayoutConfirmRequest customerId(String customerId) {
+  public PayoutConfirmRequest customerId(@javax.annotation.Nullable String customerId) {
     this.customerId = JsonNullable.<String>of(customerId);
     
     return this;
   }
 
-   /**
+  /**
    * The identifier for the customer object. If not provided the customer ID will be autogenerated. _Deprecated: Use customer_id instead._
    * @return customerId
    * @deprecated
-  **/
+   */
   @Deprecated
   @javax.annotation.Nullable
   @JsonIgnore
@@ -481,21 +502,20 @@ public class PayoutConfirmRequest {
     this.customerId = customerId;
   }
 
-  public void setCustomerId(String customerId) {
+  public void setCustomerId(@javax.annotation.Nullable String customerId) {
     this.customerId = JsonNullable.<String>of(customerId);
   }
 
-
-  public PayoutConfirmRequest customer(CustomerDetails customer) {
+  public PayoutConfirmRequest customer(@javax.annotation.Nullable CustomerDetails customer) {
     this.customer = JsonNullable.<CustomerDetails>of(customer);
     
     return this;
   }
 
-   /**
+  /**
    * Get customer
    * @return customer
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -515,21 +535,20 @@ public class PayoutConfirmRequest {
     this.customer = customer;
   }
 
-  public void setCustomer(CustomerDetails customer) {
+  public void setCustomer(@javax.annotation.Nullable CustomerDetails customer) {
     this.customer = JsonNullable.<CustomerDetails>of(customer);
   }
 
-
-  public PayoutConfirmRequest clientSecret(String clientSecret) {
+  public PayoutConfirmRequest clientSecret(@javax.annotation.Nonnull String clientSecret) {
     
     this.clientSecret = clientSecret;
     return this;
   }
 
-   /**
+  /**
    * It&#39;s a token used for client side verification.
    * @return clientSecret
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_CLIENT_SECRET)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -541,21 +560,20 @@ public class PayoutConfirmRequest {
 
   @JsonProperty(JSON_PROPERTY_CLIENT_SECRET)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setClientSecret(String clientSecret) {
+  public void setClientSecret(@javax.annotation.Nonnull String clientSecret) {
     this.clientSecret = clientSecret;
   }
 
-
-  public PayoutConfirmRequest returnUrl(String returnUrl) {
+  public PayoutConfirmRequest returnUrl(@javax.annotation.Nullable String returnUrl) {
     this.returnUrl = JsonNullable.<String>of(returnUrl);
     
     return this;
   }
 
-   /**
+  /**
    * The URL to redirect after the completion of the operation
    * @return returnUrl
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -575,21 +593,20 @@ public class PayoutConfirmRequest {
     this.returnUrl = returnUrl;
   }
 
-  public void setReturnUrl(String returnUrl) {
+  public void setReturnUrl(@javax.annotation.Nullable String returnUrl) {
     this.returnUrl = JsonNullable.<String>of(returnUrl);
   }
 
-
-  public PayoutConfirmRequest businessCountry(CountryAlpha2 businessCountry) {
+  public PayoutConfirmRequest businessCountry(@javax.annotation.Nullable CountryAlpha2 businessCountry) {
     this.businessCountry = JsonNullable.<CountryAlpha2>of(businessCountry);
     
     return this;
   }
 
-   /**
+  /**
    * Get businessCountry
    * @return businessCountry
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -609,22 +626,21 @@ public class PayoutConfirmRequest {
     this.businessCountry = businessCountry;
   }
 
-  public void setBusinessCountry(CountryAlpha2 businessCountry) {
+  public void setBusinessCountry(@javax.annotation.Nullable CountryAlpha2 businessCountry) {
     this.businessCountry = JsonNullable.<CountryAlpha2>of(businessCountry);
   }
 
-
-  public PayoutConfirmRequest businessLabel(String businessLabel) {
+  public PayoutConfirmRequest businessLabel(@javax.annotation.Nullable String businessLabel) {
     this.businessLabel = JsonNullable.<String>of(businessLabel);
     
     return this;
   }
 
-   /**
+  /**
    * Business label of the merchant for this payout. _Deprecated: Use profile_id instead._
    * @return businessLabel
    * @deprecated
-  **/
+   */
   @Deprecated
   @javax.annotation.Nullable
   @JsonIgnore
@@ -645,21 +661,20 @@ public class PayoutConfirmRequest {
     this.businessLabel = businessLabel;
   }
 
-  public void setBusinessLabel(String businessLabel) {
+  public void setBusinessLabel(@javax.annotation.Nullable String businessLabel) {
     this.businessLabel = JsonNullable.<String>of(businessLabel);
   }
 
-
-  public PayoutConfirmRequest description(String description) {
+  public PayoutConfirmRequest description(@javax.annotation.Nullable String description) {
     this.description = JsonNullable.<String>of(description);
     
     return this;
   }
 
-   /**
+  /**
    * A description of the payout
    * @return description
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -679,21 +694,20 @@ public class PayoutConfirmRequest {
     this.description = description;
   }
 
-  public void setDescription(String description) {
+  public void setDescription(@javax.annotation.Nullable String description) {
     this.description = JsonNullable.<String>of(description);
   }
 
-
-  public PayoutConfirmRequest entityType(PayoutEntityType entityType) {
+  public PayoutConfirmRequest entityType(@javax.annotation.Nullable PayoutEntityType entityType) {
     this.entityType = JsonNullable.<PayoutEntityType>of(entityType);
     
     return this;
   }
 
-   /**
+  /**
    * Get entityType
    * @return entityType
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -713,21 +727,20 @@ public class PayoutConfirmRequest {
     this.entityType = entityType;
   }
 
-  public void setEntityType(PayoutEntityType entityType) {
+  public void setEntityType(@javax.annotation.Nullable PayoutEntityType entityType) {
     this.entityType = JsonNullable.<PayoutEntityType>of(entityType);
   }
 
-
-  public PayoutConfirmRequest recurring(Boolean recurring) {
+  public PayoutConfirmRequest recurring(@javax.annotation.Nullable Boolean recurring) {
     this.recurring = JsonNullable.<Boolean>of(recurring);
     
     return this;
   }
 
-   /**
+  /**
    * Specifies whether or not the payout request is recurring
    * @return recurring
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -747,21 +760,20 @@ public class PayoutConfirmRequest {
     this.recurring = recurring;
   }
 
-  public void setRecurring(Boolean recurring) {
+  public void setRecurring(@javax.annotation.Nullable Boolean recurring) {
     this.recurring = JsonNullable.<Boolean>of(recurring);
   }
 
-
-  public PayoutConfirmRequest metadata(Object metadata) {
+  public PayoutConfirmRequest metadata(@javax.annotation.Nullable Object metadata) {
     this.metadata = JsonNullable.<Object>of(metadata);
     
     return this;
   }
 
-   /**
+  /**
    * You can specify up to 50 keys, with key names up to 40 characters long and values up to 500 characters long. Metadata is useful for storing additional, structured information on an object.
    * @return metadata
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -781,21 +793,20 @@ public class PayoutConfirmRequest {
     this.metadata = metadata;
   }
 
-  public void setMetadata(Object metadata) {
+  public void setMetadata(@javax.annotation.Nullable Object metadata) {
     this.metadata = JsonNullable.<Object>of(metadata);
   }
 
-
-  public PayoutConfirmRequest payoutToken(String payoutToken) {
+  public PayoutConfirmRequest payoutToken(@javax.annotation.Nullable String payoutToken) {
     this.payoutToken = JsonNullable.<String>of(payoutToken);
     
     return this;
   }
 
-   /**
+  /**
    * Provide a reference to a stored payout method, used to process the payout.
    * @return payoutToken
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -815,21 +826,20 @@ public class PayoutConfirmRequest {
     this.payoutToken = payoutToken;
   }
 
-  public void setPayoutToken(String payoutToken) {
+  public void setPayoutToken(@javax.annotation.Nullable String payoutToken) {
     this.payoutToken = JsonNullable.<String>of(payoutToken);
   }
 
-
-  public PayoutConfirmRequest profileId(String profileId) {
+  public PayoutConfirmRequest profileId(@javax.annotation.Nullable String profileId) {
     this.profileId = JsonNullable.<String>of(profileId);
     
     return this;
   }
 
-   /**
+  /**
    * The business profile to use for this payout, especially if there are multiple business profiles associated with the account, otherwise default business profile associated with the merchant account will be used.
    * @return profileId
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -849,21 +859,20 @@ public class PayoutConfirmRequest {
     this.profileId = profileId;
   }
 
-  public void setProfileId(String profileId) {
+  public void setProfileId(@javax.annotation.Nullable String profileId) {
     this.profileId = JsonNullable.<String>of(profileId);
   }
 
-
-  public PayoutConfirmRequest priority(PayoutSendPriority priority) {
+  public PayoutConfirmRequest priority(@javax.annotation.Nullable PayoutSendPriority priority) {
     this.priority = JsonNullable.<PayoutSendPriority>of(priority);
     
     return this;
   }
 
-   /**
+  /**
    * Get priority
    * @return priority
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -883,21 +892,20 @@ public class PayoutConfirmRequest {
     this.priority = priority;
   }
 
-  public void setPriority(PayoutSendPriority priority) {
+  public void setPriority(@javax.annotation.Nullable PayoutSendPriority priority) {
     this.priority = JsonNullable.<PayoutSendPriority>of(priority);
   }
 
-
-  public PayoutConfirmRequest payoutLink(Boolean payoutLink) {
+  public PayoutConfirmRequest payoutLink(@javax.annotation.Nullable Boolean payoutLink) {
     this.payoutLink = JsonNullable.<Boolean>of(payoutLink);
     
     return this;
   }
 
-   /**
+  /**
    * Whether to get the payout link (if applicable). Merchant need to specify this during the Payout _Create_, this field can not be updated during Payout _Update_.
    * @return payoutLink
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -917,21 +925,20 @@ public class PayoutConfirmRequest {
     this.payoutLink = payoutLink;
   }
 
-  public void setPayoutLink(Boolean payoutLink) {
+  public void setPayoutLink(@javax.annotation.Nullable Boolean payoutLink) {
     this.payoutLink = JsonNullable.<Boolean>of(payoutLink);
   }
 
-
-  public PayoutConfirmRequest payoutLinkConfig(PayoutCreatePayoutLinkConfig payoutLinkConfig) {
+  public PayoutConfirmRequest payoutLinkConfig(@javax.annotation.Nullable PayoutCreatePayoutLinkConfig payoutLinkConfig) {
     this.payoutLinkConfig = JsonNullable.<PayoutCreatePayoutLinkConfig>of(payoutLinkConfig);
     
     return this;
   }
 
-   /**
+  /**
    * Get payoutLinkConfig
    * @return payoutLinkConfig
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -951,22 +958,21 @@ public class PayoutConfirmRequest {
     this.payoutLinkConfig = payoutLinkConfig;
   }
 
-  public void setPayoutLinkConfig(PayoutCreatePayoutLinkConfig payoutLinkConfig) {
+  public void setPayoutLinkConfig(@javax.annotation.Nullable PayoutCreatePayoutLinkConfig payoutLinkConfig) {
     this.payoutLinkConfig = JsonNullable.<PayoutCreatePayoutLinkConfig>of(payoutLinkConfig);
   }
 
-
-  public PayoutConfirmRequest sessionExpiry(Integer sessionExpiry) {
+  public PayoutConfirmRequest sessionExpiry(@javax.annotation.Nullable Integer sessionExpiry) {
     this.sessionExpiry = JsonNullable.<Integer>of(sessionExpiry);
     
     return this;
   }
 
-   /**
+  /**
    * Will be used to expire client secret after certain amount of time to be supplied in seconds (900) for 15 mins
    * minimum: 0
    * @return sessionExpiry
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -986,22 +992,21 @@ public class PayoutConfirmRequest {
     this.sessionExpiry = sessionExpiry;
   }
 
-  public void setSessionExpiry(Integer sessionExpiry) {
+  public void setSessionExpiry(@javax.annotation.Nullable Integer sessionExpiry) {
     this.sessionExpiry = JsonNullable.<Integer>of(sessionExpiry);
   }
 
-
-  public PayoutConfirmRequest email(String email) {
+  public PayoutConfirmRequest email(@javax.annotation.Nullable String email) {
     this.email = JsonNullable.<String>of(email);
     
     return this;
   }
 
-   /**
+  /**
    * Customer&#39;s email. _Deprecated: Use customer object instead._
    * @return email
    * @deprecated
-  **/
+   */
   @Deprecated
   @javax.annotation.Nullable
   @JsonIgnore
@@ -1022,22 +1027,21 @@ public class PayoutConfirmRequest {
     this.email = email;
   }
 
-  public void setEmail(String email) {
+  public void setEmail(@javax.annotation.Nullable String email) {
     this.email = JsonNullable.<String>of(email);
   }
 
-
-  public PayoutConfirmRequest name(String name) {
+  public PayoutConfirmRequest name(@javax.annotation.Nullable String name) {
     this.name = JsonNullable.<String>of(name);
     
     return this;
   }
 
-   /**
+  /**
    * Customer&#39;s name. _Deprecated: Use customer object instead._
    * @return name
    * @deprecated
-  **/
+   */
   @Deprecated
   @javax.annotation.Nullable
   @JsonIgnore
@@ -1058,22 +1062,21 @@ public class PayoutConfirmRequest {
     this.name = name;
   }
 
-  public void setName(String name) {
+  public void setName(@javax.annotation.Nullable String name) {
     this.name = JsonNullable.<String>of(name);
   }
 
-
-  public PayoutConfirmRequest phone(String phone) {
+  public PayoutConfirmRequest phone(@javax.annotation.Nullable String phone) {
     this.phone = JsonNullable.<String>of(phone);
     
     return this;
   }
 
-   /**
+  /**
    * Customer&#39;s phone. _Deprecated: Use customer object instead._
    * @return phone
    * @deprecated
-  **/
+   */
   @Deprecated
   @javax.annotation.Nullable
   @JsonIgnore
@@ -1094,22 +1097,21 @@ public class PayoutConfirmRequest {
     this.phone = phone;
   }
 
-  public void setPhone(String phone) {
+  public void setPhone(@javax.annotation.Nullable String phone) {
     this.phone = JsonNullable.<String>of(phone);
   }
 
-
-  public PayoutConfirmRequest phoneCountryCode(String phoneCountryCode) {
+  public PayoutConfirmRequest phoneCountryCode(@javax.annotation.Nullable String phoneCountryCode) {
     this.phoneCountryCode = JsonNullable.<String>of(phoneCountryCode);
     
     return this;
   }
 
-   /**
+  /**
    * Customer&#39;s phone country code. _Deprecated: Use customer object instead._
    * @return phoneCountryCode
    * @deprecated
-  **/
+   */
   @Deprecated
   @javax.annotation.Nullable
   @JsonIgnore
@@ -1130,7 +1132,7 @@ public class PayoutConfirmRequest {
     this.phoneCountryCode = phoneCountryCode;
   }
 
-  public void setPhoneCountryCode(String phoneCountryCode) {
+  public void setPhoneCountryCode(@javax.annotation.Nullable String phoneCountryCode) {
     this.phoneCountryCode = JsonNullable.<String>of(phoneCountryCode);
   }
 

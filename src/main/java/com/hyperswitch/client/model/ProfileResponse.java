@@ -27,6 +27,7 @@ import com.hyperswitch.client.model.ExtendedCardInfoConfig;
 import com.hyperswitch.client.model.RoutingAlgorithm;
 import com.hyperswitch.client.model.WebhookDetails;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import org.openapitools.jackson.nullable.JsonNullable;
 import com.fasterxml.jackson.annotation.JsonIgnore;
@@ -74,114 +75,145 @@ import java.util.StringJoiner;
   ProfileResponse.JSON_PROPERTY_IS_AUTO_RETRIES_ENABLED,
   ProfileResponse.JSON_PROPERTY_MAX_AUTO_RETRIES_ENABLED
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class ProfileResponse {
   public static final String JSON_PROPERTY_MERCHANT_ID = "merchant_id";
+  @javax.annotation.Nonnull
   private String merchantId;
 
   public static final String JSON_PROPERTY_PROFILE_ID = "profile_id";
+  @javax.annotation.Nonnull
   private String profileId;
 
   public static final String JSON_PROPERTY_PROFILE_NAME = "profile_name";
+  @javax.annotation.Nonnull
   private String profileName;
 
   public static final String JSON_PROPERTY_RETURN_URL = "return_url";
+  @javax.annotation.Nullable
   private JsonNullable<String> returnUrl = JsonNullable.<String>undefined();
 
   public static final String JSON_PROPERTY_ENABLE_PAYMENT_RESPONSE_HASH = "enable_payment_response_hash";
+  @javax.annotation.Nonnull
   private Boolean enablePaymentResponseHash = true;
 
   public static final String JSON_PROPERTY_PAYMENT_RESPONSE_HASH_KEY = "payment_response_hash_key";
+  @javax.annotation.Nullable
   private JsonNullable<String> paymentResponseHashKey = JsonNullable.<String>undefined();
 
   public static final String JSON_PROPERTY_REDIRECT_TO_MERCHANT_WITH_HTTP_POST = "redirect_to_merchant_with_http_post";
+  @javax.annotation.Nonnull
   private Boolean redirectToMerchantWithHttpPost = false;
 
   public static final String JSON_PROPERTY_WEBHOOK_DETAILS = "webhook_details";
+  @javax.annotation.Nullable
   private JsonNullable<WebhookDetails> webhookDetails = JsonNullable.<WebhookDetails>undefined();
 
   public static final String JSON_PROPERTY_METADATA = "metadata";
+  @javax.annotation.Nullable
   private JsonNullable<Object> metadata = JsonNullable.<Object>undefined();
 
   public static final String JSON_PROPERTY_ROUTING_ALGORITHM = "routing_algorithm";
+  @javax.annotation.Nullable
   private JsonNullable<Object> routingAlgorithm = JsonNullable.<Object>undefined();
 
   public static final String JSON_PROPERTY_INTENT_FULFILLMENT_TIME = "intent_fulfillment_time";
+  @javax.annotation.Nullable
   private JsonNullable<Long> intentFulfillmentTime = JsonNullable.<Long>undefined();
 
   public static final String JSON_PROPERTY_FRM_ROUTING_ALGORITHM = "frm_routing_algorithm";
+  @javax.annotation.Nullable
   private JsonNullable<Object> frmRoutingAlgorithm = JsonNullable.<Object>undefined();
 
   public static final String JSON_PROPERTY_PAYOUT_ROUTING_ALGORITHM = "payout_routing_algorithm";
+  @javax.annotation.Nullable
   private JsonNullable<RoutingAlgorithm> payoutRoutingAlgorithm = JsonNullable.<RoutingAlgorithm>undefined();
 
   public static final String JSON_PROPERTY_APPLEPAY_VERIFIED_DOMAINS = "applepay_verified_domains";
+  @javax.annotation.Nullable
   private JsonNullable<List<String>> applepayVerifiedDomains = JsonNullable.<List<String>>undefined();
 
   public static final String JSON_PROPERTY_SESSION_EXPIRY = "session_expiry";
+  @javax.annotation.Nullable
   private JsonNullable<Long> sessionExpiry = JsonNullable.<Long>undefined();
 
   public static final String JSON_PROPERTY_PAYMENT_LINK_CONFIG = "payment_link_config";
+  @javax.annotation.Nullable
   private JsonNullable<BusinessPaymentLinkConfig> paymentLinkConfig = JsonNullable.<BusinessPaymentLinkConfig>undefined();
 
   public static final String JSON_PROPERTY_AUTHENTICATION_CONNECTOR_DETAILS = "authentication_connector_details";
+  @javax.annotation.Nullable
   private JsonNullable<AuthenticationConnectorDetails> authenticationConnectorDetails = JsonNullable.<AuthenticationConnectorDetails>undefined();
 
   public static final String JSON_PROPERTY_USE_BILLING_AS_PAYMENT_METHOD_BILLING = "use_billing_as_payment_method_billing";
+  @javax.annotation.Nullable
   private JsonNullable<Boolean> useBillingAsPaymentMethodBilling = JsonNullable.<Boolean>undefined();
 
   public static final String JSON_PROPERTY_EXTENDED_CARD_INFO_CONFIG = "extended_card_info_config";
+  @javax.annotation.Nullable
   private JsonNullable<ExtendedCardInfoConfig> extendedCardInfoConfig = JsonNullable.<ExtendedCardInfoConfig>undefined();
 
   public static final String JSON_PROPERTY_COLLECT_SHIPPING_DETAILS_FROM_WALLET_CONNECTOR = "collect_shipping_details_from_wallet_connector";
+  @javax.annotation.Nullable
   private JsonNullable<Boolean> collectShippingDetailsFromWalletConnector = JsonNullable.<Boolean>of(false);
 
   public static final String JSON_PROPERTY_COLLECT_BILLING_DETAILS_FROM_WALLET_CONNECTOR = "collect_billing_details_from_wallet_connector";
+  @javax.annotation.Nullable
   private JsonNullable<Boolean> collectBillingDetailsFromWalletConnector = JsonNullable.<Boolean>of(false);
 
   public static final String JSON_PROPERTY_ALWAYS_COLLECT_SHIPPING_DETAILS_FROM_WALLET_CONNECTOR = "always_collect_shipping_details_from_wallet_connector";
+  @javax.annotation.Nullable
   private JsonNullable<Boolean> alwaysCollectShippingDetailsFromWalletConnector = JsonNullable.<Boolean>of(false);
 
   public static final String JSON_PROPERTY_ALWAYS_COLLECT_BILLING_DETAILS_FROM_WALLET_CONNECTOR = "always_collect_billing_details_from_wallet_connector";
+  @javax.annotation.Nullable
   private JsonNullable<Boolean> alwaysCollectBillingDetailsFromWalletConnector = JsonNullable.<Boolean>of(false);
 
   public static final String JSON_PROPERTY_IS_CONNECTOR_AGNOSTIC_MIT_ENABLED = "is_connector_agnostic_mit_enabled";
+  @javax.annotation.Nullable
   private JsonNullable<Boolean> isConnectorAgnosticMitEnabled = JsonNullable.<Boolean>undefined();
 
   public static final String JSON_PROPERTY_PAYOUT_LINK_CONFIG = "payout_link_config";
+  @javax.annotation.Nullable
   private JsonNullable<BusinessPayoutLinkConfig> payoutLinkConfig = JsonNullable.<BusinessPayoutLinkConfig>undefined();
 
   public static final String JSON_PROPERTY_OUTGOING_WEBHOOK_CUSTOM_HTTP_HEADERS = "outgoing_webhook_custom_http_headers";
+  @javax.annotation.Nullable
   private JsonNullable<Object> outgoingWebhookCustomHttpHeaders = JsonNullable.<Object>undefined();
 
   public static final String JSON_PROPERTY_TAX_CONNECTOR_ID = "tax_connector_id";
+  @javax.annotation.Nullable
   private JsonNullable<String> taxConnectorId = JsonNullable.<String>undefined();
 
   public static final String JSON_PROPERTY_IS_TAX_CONNECTOR_ENABLED = "is_tax_connector_enabled";
+  @javax.annotation.Nonnull
   private Boolean isTaxConnectorEnabled;
 
   public static final String JSON_PROPERTY_IS_NETWORK_TOKENIZATION_ENABLED = "is_network_tokenization_enabled";
+  @javax.annotation.Nonnull
   private Boolean isNetworkTokenizationEnabled = false;
 
   public static final String JSON_PROPERTY_IS_AUTO_RETRIES_ENABLED = "is_auto_retries_enabled";
+  @javax.annotation.Nonnull
   private Boolean isAutoRetriesEnabled = false;
 
   public static final String JSON_PROPERTY_MAX_AUTO_RETRIES_ENABLED = "max_auto_retries_enabled";
+  @javax.annotation.Nullable
   private JsonNullable<Integer> maxAutoRetriesEnabled = JsonNullable.<Integer>undefined();
 
   public ProfileResponse() {
   }
 
-  public ProfileResponse merchantId(String merchantId) {
+  public ProfileResponse merchantId(@javax.annotation.Nonnull String merchantId) {
     
     this.merchantId = merchantId;
     return this;
   }
 
-   /**
+  /**
    * The identifier for Merchant Account
    * @return merchantId
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_MERCHANT_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -193,21 +225,20 @@ public class ProfileResponse {
 
   @JsonProperty(JSON_PROPERTY_MERCHANT_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setMerchantId(String merchantId) {
+  public void setMerchantId(@javax.annotation.Nonnull String merchantId) {
     this.merchantId = merchantId;
   }
 
-
-  public ProfileResponse profileId(String profileId) {
+  public ProfileResponse profileId(@javax.annotation.Nonnull String profileId) {
     
     this.profileId = profileId;
     return this;
   }
 
-   /**
+  /**
    * The identifier for profile. This must be used for creating merchant accounts, payments and payouts
    * @return profileId
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_PROFILE_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -219,21 +250,20 @@ public class ProfileResponse {
 
   @JsonProperty(JSON_PROPERTY_PROFILE_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setProfileId(String profileId) {
+  public void setProfileId(@javax.annotation.Nonnull String profileId) {
     this.profileId = profileId;
   }
 
-
-  public ProfileResponse profileName(String profileName) {
+  public ProfileResponse profileName(@javax.annotation.Nonnull String profileName) {
     
     this.profileName = profileName;
     return this;
   }
 
-   /**
+  /**
    * Name of the profile
    * @return profileName
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_PROFILE_NAME)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -245,21 +275,20 @@ public class ProfileResponse {
 
   @JsonProperty(JSON_PROPERTY_PROFILE_NAME)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setProfileName(String profileName) {
+  public void setProfileName(@javax.annotation.Nonnull String profileName) {
     this.profileName = profileName;
   }
 
-
-  public ProfileResponse returnUrl(String returnUrl) {
+  public ProfileResponse returnUrl(@javax.annotation.Nullable String returnUrl) {
     this.returnUrl = JsonNullable.<String>of(returnUrl);
     
     return this;
   }
 
-   /**
+  /**
    * The URL to redirect after the completion of the operation
    * @return returnUrl
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -279,21 +308,20 @@ public class ProfileResponse {
     this.returnUrl = returnUrl;
   }
 
-  public void setReturnUrl(String returnUrl) {
+  public void setReturnUrl(@javax.annotation.Nullable String returnUrl) {
     this.returnUrl = JsonNullable.<String>of(returnUrl);
   }
 
-
-  public ProfileResponse enablePaymentResponseHash(Boolean enablePaymentResponseHash) {
+  public ProfileResponse enablePaymentResponseHash(@javax.annotation.Nonnull Boolean enablePaymentResponseHash) {
     
     this.enablePaymentResponseHash = enablePaymentResponseHash;
     return this;
   }
 
-   /**
+  /**
    * A boolean value to indicate if payment response hash needs to be enabled
    * @return enablePaymentResponseHash
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_ENABLE_PAYMENT_RESPONSE_HASH)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -305,21 +333,20 @@ public class ProfileResponse {
 
   @JsonProperty(JSON_PROPERTY_ENABLE_PAYMENT_RESPONSE_HASH)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setEnablePaymentResponseHash(Boolean enablePaymentResponseHash) {
+  public void setEnablePaymentResponseHash(@javax.annotation.Nonnull Boolean enablePaymentResponseHash) {
     this.enablePaymentResponseHash = enablePaymentResponseHash;
   }
 
-
-  public ProfileResponse paymentResponseHashKey(String paymentResponseHashKey) {
+  public ProfileResponse paymentResponseHashKey(@javax.annotation.Nullable String paymentResponseHashKey) {
     this.paymentResponseHashKey = JsonNullable.<String>of(paymentResponseHashKey);
     
     return this;
   }
 
-   /**
+  /**
    * Refers to the hash key used for calculating the signature for webhooks and redirect response. If the value is not provided, a value is automatically generated.
    * @return paymentResponseHashKey
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -339,21 +366,20 @@ public class ProfileResponse {
     this.paymentResponseHashKey = paymentResponseHashKey;
   }
 
-  public void setPaymentResponseHashKey(String paymentResponseHashKey) {
+  public void setPaymentResponseHashKey(@javax.annotation.Nullable String paymentResponseHashKey) {
     this.paymentResponseHashKey = JsonNullable.<String>of(paymentResponseHashKey);
   }
 
-
-  public ProfileResponse redirectToMerchantWithHttpPost(Boolean redirectToMerchantWithHttpPost) {
+  public ProfileResponse redirectToMerchantWithHttpPost(@javax.annotation.Nonnull Boolean redirectToMerchantWithHttpPost) {
     
     this.redirectToMerchantWithHttpPost = redirectToMerchantWithHttpPost;
     return this;
   }
 
-   /**
+  /**
    * A boolean value to indicate if redirect to merchant with http post needs to be enabled
    * @return redirectToMerchantWithHttpPost
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_REDIRECT_TO_MERCHANT_WITH_HTTP_POST)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -365,21 +391,20 @@ public class ProfileResponse {
 
   @JsonProperty(JSON_PROPERTY_REDIRECT_TO_MERCHANT_WITH_HTTP_POST)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setRedirectToMerchantWithHttpPost(Boolean redirectToMerchantWithHttpPost) {
+  public void setRedirectToMerchantWithHttpPost(@javax.annotation.Nonnull Boolean redirectToMerchantWithHttpPost) {
     this.redirectToMerchantWithHttpPost = redirectToMerchantWithHttpPost;
   }
 
-
-  public ProfileResponse webhookDetails(WebhookDetails webhookDetails) {
+  public ProfileResponse webhookDetails(@javax.annotation.Nullable WebhookDetails webhookDetails) {
     this.webhookDetails = JsonNullable.<WebhookDetails>of(webhookDetails);
     
     return this;
   }
 
-   /**
+  /**
    * Get webhookDetails
    * @return webhookDetails
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -399,21 +424,20 @@ public class ProfileResponse {
     this.webhookDetails = webhookDetails;
   }
 
-  public void setWebhookDetails(WebhookDetails webhookDetails) {
+  public void setWebhookDetails(@javax.annotation.Nullable WebhookDetails webhookDetails) {
     this.webhookDetails = JsonNullable.<WebhookDetails>of(webhookDetails);
   }
 
-
-  public ProfileResponse metadata(Object metadata) {
+  public ProfileResponse metadata(@javax.annotation.Nullable Object metadata) {
     this.metadata = JsonNullable.<Object>of(metadata);
     
     return this;
   }
 
-   /**
+  /**
    * Metadata is useful for storing additional, unstructured information on an object.
    * @return metadata
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -433,21 +457,20 @@ public class ProfileResponse {
     this.metadata = metadata;
   }
 
-  public void setMetadata(Object metadata) {
+  public void setMetadata(@javax.annotation.Nullable Object metadata) {
     this.metadata = JsonNullable.<Object>of(metadata);
   }
 
-
-  public ProfileResponse routingAlgorithm(Object routingAlgorithm) {
+  public ProfileResponse routingAlgorithm(@javax.annotation.Nullable Object routingAlgorithm) {
     this.routingAlgorithm = JsonNullable.<Object>of(routingAlgorithm);
     
     return this;
   }
 
-   /**
+  /**
    * The routing algorithm to be used for routing payments to desired connectors
    * @return routingAlgorithm
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -467,21 +490,20 @@ public class ProfileResponse {
     this.routingAlgorithm = routingAlgorithm;
   }
 
-  public void setRoutingAlgorithm(Object routingAlgorithm) {
+  public void setRoutingAlgorithm(@javax.annotation.Nullable Object routingAlgorithm) {
     this.routingAlgorithm = JsonNullable.<Object>of(routingAlgorithm);
   }
 
-
-  public ProfileResponse intentFulfillmentTime(Long intentFulfillmentTime) {
+  public ProfileResponse intentFulfillmentTime(@javax.annotation.Nullable Long intentFulfillmentTime) {
     this.intentFulfillmentTime = JsonNullable.<Long>of(intentFulfillmentTime);
     
     return this;
   }
 
-   /**
+  /**
    * Will be used to determine the time till which your payment will be active once the payment session starts
    * @return intentFulfillmentTime
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -501,21 +523,20 @@ public class ProfileResponse {
     this.intentFulfillmentTime = intentFulfillmentTime;
   }
 
-  public void setIntentFulfillmentTime(Long intentFulfillmentTime) {
+  public void setIntentFulfillmentTime(@javax.annotation.Nullable Long intentFulfillmentTime) {
     this.intentFulfillmentTime = JsonNullable.<Long>of(intentFulfillmentTime);
   }
 
-
-  public ProfileResponse frmRoutingAlgorithm(Object frmRoutingAlgorithm) {
+  public ProfileResponse frmRoutingAlgorithm(@javax.annotation.Nullable Object frmRoutingAlgorithm) {
     this.frmRoutingAlgorithm = JsonNullable.<Object>of(frmRoutingAlgorithm);
     
     return this;
   }
 
-   /**
+  /**
    * The routing algorithm to be used to process the incoming request from merchant to outgoing payment processor or payment method. The default is &#39;Custom&#39;
    * @return frmRoutingAlgorithm
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -535,21 +556,20 @@ public class ProfileResponse {
     this.frmRoutingAlgorithm = frmRoutingAlgorithm;
   }
 
-  public void setFrmRoutingAlgorithm(Object frmRoutingAlgorithm) {
+  public void setFrmRoutingAlgorithm(@javax.annotation.Nullable Object frmRoutingAlgorithm) {
     this.frmRoutingAlgorithm = JsonNullable.<Object>of(frmRoutingAlgorithm);
   }
 
-
-  public ProfileResponse payoutRoutingAlgorithm(RoutingAlgorithm payoutRoutingAlgorithm) {
+  public ProfileResponse payoutRoutingAlgorithm(@javax.annotation.Nullable RoutingAlgorithm payoutRoutingAlgorithm) {
     this.payoutRoutingAlgorithm = JsonNullable.<RoutingAlgorithm>of(payoutRoutingAlgorithm);
     
     return this;
   }
 
-   /**
+  /**
    * Get payoutRoutingAlgorithm
    * @return payoutRoutingAlgorithm
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -569,12 +589,11 @@ public class ProfileResponse {
     this.payoutRoutingAlgorithm = payoutRoutingAlgorithm;
   }
 
-  public void setPayoutRoutingAlgorithm(RoutingAlgorithm payoutRoutingAlgorithm) {
+  public void setPayoutRoutingAlgorithm(@javax.annotation.Nullable RoutingAlgorithm payoutRoutingAlgorithm) {
     this.payoutRoutingAlgorithm = JsonNullable.<RoutingAlgorithm>of(payoutRoutingAlgorithm);
   }
 
-
-  public ProfileResponse applepayVerifiedDomains(List<String> applepayVerifiedDomains) {
+  public ProfileResponse applepayVerifiedDomains(@javax.annotation.Nullable List<String> applepayVerifiedDomains) {
     this.applepayVerifiedDomains = JsonNullable.<List<String>>of(applepayVerifiedDomains);
     
     return this;
@@ -592,10 +611,10 @@ public class ProfileResponse {
     return this;
   }
 
-   /**
+  /**
    * Verified Apple Pay domains for a particular profile
    * @return applepayVerifiedDomains
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -615,21 +634,20 @@ public class ProfileResponse {
     this.applepayVerifiedDomains = applepayVerifiedDomains;
   }
 
-  public void setApplepayVerifiedDomains(List<String> applepayVerifiedDomains) {
+  public void setApplepayVerifiedDomains(@javax.annotation.Nullable List<String> applepayVerifiedDomains) {
     this.applepayVerifiedDomains = JsonNullable.<List<String>>of(applepayVerifiedDomains);
   }
 
-
-  public ProfileResponse sessionExpiry(Long sessionExpiry) {
+  public ProfileResponse sessionExpiry(@javax.annotation.Nullable Long sessionExpiry) {
     this.sessionExpiry = JsonNullable.<Long>of(sessionExpiry);
     
     return this;
   }
 
-   /**
+  /**
    * Client Secret Default expiry for all payments created under this profile
    * @return sessionExpiry
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -649,21 +667,20 @@ public class ProfileResponse {
     this.sessionExpiry = sessionExpiry;
   }
 
-  public void setSessionExpiry(Long sessionExpiry) {
+  public void setSessionExpiry(@javax.annotation.Nullable Long sessionExpiry) {
     this.sessionExpiry = JsonNullable.<Long>of(sessionExpiry);
   }
 
-
-  public ProfileResponse paymentLinkConfig(BusinessPaymentLinkConfig paymentLinkConfig) {
+  public ProfileResponse paymentLinkConfig(@javax.annotation.Nullable BusinessPaymentLinkConfig paymentLinkConfig) {
     this.paymentLinkConfig = JsonNullable.<BusinessPaymentLinkConfig>of(paymentLinkConfig);
     
     return this;
   }
 
-   /**
+  /**
    * Get paymentLinkConfig
    * @return paymentLinkConfig
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -683,21 +700,20 @@ public class ProfileResponse {
     this.paymentLinkConfig = paymentLinkConfig;
   }
 
-  public void setPaymentLinkConfig(BusinessPaymentLinkConfig paymentLinkConfig) {
+  public void setPaymentLinkConfig(@javax.annotation.Nullable BusinessPaymentLinkConfig paymentLinkConfig) {
     this.paymentLinkConfig = JsonNullable.<BusinessPaymentLinkConfig>of(paymentLinkConfig);
   }
 
-
-  public ProfileResponse authenticationConnectorDetails(AuthenticationConnectorDetails authenticationConnectorDetails) {
+  public ProfileResponse authenticationConnectorDetails(@javax.annotation.Nullable AuthenticationConnectorDetails authenticationConnectorDetails) {
     this.authenticationConnectorDetails = JsonNullable.<AuthenticationConnectorDetails>of(authenticationConnectorDetails);
     
     return this;
   }
 
-   /**
+  /**
    * Get authenticationConnectorDetails
    * @return authenticationConnectorDetails
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -717,21 +733,20 @@ public class ProfileResponse {
     this.authenticationConnectorDetails = authenticationConnectorDetails;
   }
 
-  public void setAuthenticationConnectorDetails(AuthenticationConnectorDetails authenticationConnectorDetails) {
+  public void setAuthenticationConnectorDetails(@javax.annotation.Nullable AuthenticationConnectorDetails authenticationConnectorDetails) {
     this.authenticationConnectorDetails = JsonNullable.<AuthenticationConnectorDetails>of(authenticationConnectorDetails);
   }
 
-
-  public ProfileResponse useBillingAsPaymentMethodBilling(Boolean useBillingAsPaymentMethodBilling) {
+  public ProfileResponse useBillingAsPaymentMethodBilling(@javax.annotation.Nullable Boolean useBillingAsPaymentMethodBilling) {
     this.useBillingAsPaymentMethodBilling = JsonNullable.<Boolean>of(useBillingAsPaymentMethodBilling);
     
     return this;
   }
 
-   /**
+  /**
    * Get useBillingAsPaymentMethodBilling
    * @return useBillingAsPaymentMethodBilling
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -751,21 +766,20 @@ public class ProfileResponse {
     this.useBillingAsPaymentMethodBilling = useBillingAsPaymentMethodBilling;
   }
 
-  public void setUseBillingAsPaymentMethodBilling(Boolean useBillingAsPaymentMethodBilling) {
+  public void setUseBillingAsPaymentMethodBilling(@javax.annotation.Nullable Boolean useBillingAsPaymentMethodBilling) {
     this.useBillingAsPaymentMethodBilling = JsonNullable.<Boolean>of(useBillingAsPaymentMethodBilling);
   }
 
-
-  public ProfileResponse extendedCardInfoConfig(ExtendedCardInfoConfig extendedCardInfoConfig) {
+  public ProfileResponse extendedCardInfoConfig(@javax.annotation.Nullable ExtendedCardInfoConfig extendedCardInfoConfig) {
     this.extendedCardInfoConfig = JsonNullable.<ExtendedCardInfoConfig>of(extendedCardInfoConfig);
     
     return this;
   }
 
-   /**
+  /**
    * Get extendedCardInfoConfig
    * @return extendedCardInfoConfig
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -785,21 +799,20 @@ public class ProfileResponse {
     this.extendedCardInfoConfig = extendedCardInfoConfig;
   }
 
-  public void setExtendedCardInfoConfig(ExtendedCardInfoConfig extendedCardInfoConfig) {
+  public void setExtendedCardInfoConfig(@javax.annotation.Nullable ExtendedCardInfoConfig extendedCardInfoConfig) {
     this.extendedCardInfoConfig = JsonNullable.<ExtendedCardInfoConfig>of(extendedCardInfoConfig);
   }
 
-
-  public ProfileResponse collectShippingDetailsFromWalletConnector(Boolean collectShippingDetailsFromWalletConnector) {
+  public ProfileResponse collectShippingDetailsFromWalletConnector(@javax.annotation.Nullable Boolean collectShippingDetailsFromWalletConnector) {
     this.collectShippingDetailsFromWalletConnector = JsonNullable.<Boolean>of(collectShippingDetailsFromWalletConnector);
     
     return this;
   }
 
-   /**
+  /**
    * A boolean value to indicate if customer shipping details needs to be collected from wallet connector only if it is required field for connector (Eg. Apple Pay, Google Pay etc)
    * @return collectShippingDetailsFromWalletConnector
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -819,21 +832,20 @@ public class ProfileResponse {
     this.collectShippingDetailsFromWalletConnector = collectShippingDetailsFromWalletConnector;
   }
 
-  public void setCollectShippingDetailsFromWalletConnector(Boolean collectShippingDetailsFromWalletConnector) {
+  public void setCollectShippingDetailsFromWalletConnector(@javax.annotation.Nullable Boolean collectShippingDetailsFromWalletConnector) {
     this.collectShippingDetailsFromWalletConnector = JsonNullable.<Boolean>of(collectShippingDetailsFromWalletConnector);
   }
 
-
-  public ProfileResponse collectBillingDetailsFromWalletConnector(Boolean collectBillingDetailsFromWalletConnector) {
+  public ProfileResponse collectBillingDetailsFromWalletConnector(@javax.annotation.Nullable Boolean collectBillingDetailsFromWalletConnector) {
     this.collectBillingDetailsFromWalletConnector = JsonNullable.<Boolean>of(collectBillingDetailsFromWalletConnector);
     
     return this;
   }
 
-   /**
+  /**
    * A boolean value to indicate if customer billing details needs to be collected from wallet connector only if it is required field for connector (Eg. Apple Pay, Google Pay etc)
    * @return collectBillingDetailsFromWalletConnector
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -853,21 +865,20 @@ public class ProfileResponse {
     this.collectBillingDetailsFromWalletConnector = collectBillingDetailsFromWalletConnector;
   }
 
-  public void setCollectBillingDetailsFromWalletConnector(Boolean collectBillingDetailsFromWalletConnector) {
+  public void setCollectBillingDetailsFromWalletConnector(@javax.annotation.Nullable Boolean collectBillingDetailsFromWalletConnector) {
     this.collectBillingDetailsFromWalletConnector = JsonNullable.<Boolean>of(collectBillingDetailsFromWalletConnector);
   }
 
-
-  public ProfileResponse alwaysCollectShippingDetailsFromWalletConnector(Boolean alwaysCollectShippingDetailsFromWalletConnector) {
+  public ProfileResponse alwaysCollectShippingDetailsFromWalletConnector(@javax.annotation.Nullable Boolean alwaysCollectShippingDetailsFromWalletConnector) {
     this.alwaysCollectShippingDetailsFromWalletConnector = JsonNullable.<Boolean>of(alwaysCollectShippingDetailsFromWalletConnector);
     
     return this;
   }
 
-   /**
+  /**
    * A boolean value to indicate if customer shipping details needs to be collected from wallet connector irrespective of connector required fields (Eg. Apple pay, Google pay etc)
    * @return alwaysCollectShippingDetailsFromWalletConnector
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -887,21 +898,20 @@ public class ProfileResponse {
     this.alwaysCollectShippingDetailsFromWalletConnector = alwaysCollectShippingDetailsFromWalletConnector;
   }
 
-  public void setAlwaysCollectShippingDetailsFromWalletConnector(Boolean alwaysCollectShippingDetailsFromWalletConnector) {
+  public void setAlwaysCollectShippingDetailsFromWalletConnector(@javax.annotation.Nullable Boolean alwaysCollectShippingDetailsFromWalletConnector) {
     this.alwaysCollectShippingDetailsFromWalletConnector = JsonNullable.<Boolean>of(alwaysCollectShippingDetailsFromWalletConnector);
   }
 
-
-  public ProfileResponse alwaysCollectBillingDetailsFromWalletConnector(Boolean alwaysCollectBillingDetailsFromWalletConnector) {
+  public ProfileResponse alwaysCollectBillingDetailsFromWalletConnector(@javax.annotation.Nullable Boolean alwaysCollectBillingDetailsFromWalletConnector) {
     this.alwaysCollectBillingDetailsFromWalletConnector = JsonNullable.<Boolean>of(alwaysCollectBillingDetailsFromWalletConnector);
     
     return this;
   }
 
-   /**
+  /**
    * A boolean value to indicate if customer billing details needs to be collected from wallet connector irrespective of connector required fields (Eg. Apple pay, Google pay etc)
    * @return alwaysCollectBillingDetailsFromWalletConnector
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -921,21 +931,20 @@ public class ProfileResponse {
     this.alwaysCollectBillingDetailsFromWalletConnector = alwaysCollectBillingDetailsFromWalletConnector;
   }
 
-  public void setAlwaysCollectBillingDetailsFromWalletConnector(Boolean alwaysCollectBillingDetailsFromWalletConnector) {
+  public void setAlwaysCollectBillingDetailsFromWalletConnector(@javax.annotation.Nullable Boolean alwaysCollectBillingDetailsFromWalletConnector) {
     this.alwaysCollectBillingDetailsFromWalletConnector = JsonNullable.<Boolean>of(alwaysCollectBillingDetailsFromWalletConnector);
   }
 
-
-  public ProfileResponse isConnectorAgnosticMitEnabled(Boolean isConnectorAgnosticMitEnabled) {
+  public ProfileResponse isConnectorAgnosticMitEnabled(@javax.annotation.Nullable Boolean isConnectorAgnosticMitEnabled) {
     this.isConnectorAgnosticMitEnabled = JsonNullable.<Boolean>of(isConnectorAgnosticMitEnabled);
     
     return this;
   }
 
-   /**
+  /**
    * Indicates if the MIT (merchant initiated transaction) payments can be made connector agnostic, i.e., MITs may be processed through different connector than CIT (customer initiated transaction) based on the routing rules. If set to &#x60;false&#x60;, MIT will go through the same connector as the CIT.
    * @return isConnectorAgnosticMitEnabled
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -955,21 +964,20 @@ public class ProfileResponse {
     this.isConnectorAgnosticMitEnabled = isConnectorAgnosticMitEnabled;
   }
 
-  public void setIsConnectorAgnosticMitEnabled(Boolean isConnectorAgnosticMitEnabled) {
+  public void setIsConnectorAgnosticMitEnabled(@javax.annotation.Nullable Boolean isConnectorAgnosticMitEnabled) {
     this.isConnectorAgnosticMitEnabled = JsonNullable.<Boolean>of(isConnectorAgnosticMitEnabled);
   }
 
-
-  public ProfileResponse payoutLinkConfig(BusinessPayoutLinkConfig payoutLinkConfig) {
+  public ProfileResponse payoutLinkConfig(@javax.annotation.Nullable BusinessPayoutLinkConfig payoutLinkConfig) {
     this.payoutLinkConfig = JsonNullable.<BusinessPayoutLinkConfig>of(payoutLinkConfig);
     
     return this;
   }
 
-   /**
+  /**
    * Get payoutLinkConfig
    * @return payoutLinkConfig
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -989,21 +997,20 @@ public class ProfileResponse {
     this.payoutLinkConfig = payoutLinkConfig;
   }
 
-  public void setPayoutLinkConfig(BusinessPayoutLinkConfig payoutLinkConfig) {
+  public void setPayoutLinkConfig(@javax.annotation.Nullable BusinessPayoutLinkConfig payoutLinkConfig) {
     this.payoutLinkConfig = JsonNullable.<BusinessPayoutLinkConfig>of(payoutLinkConfig);
   }
 
-
-  public ProfileResponse outgoingWebhookCustomHttpHeaders(Object outgoingWebhookCustomHttpHeaders) {
+  public ProfileResponse outgoingWebhookCustomHttpHeaders(@javax.annotation.Nullable Object outgoingWebhookCustomHttpHeaders) {
     this.outgoingWebhookCustomHttpHeaders = JsonNullable.<Object>of(outgoingWebhookCustomHttpHeaders);
     
     return this;
   }
 
-   /**
+  /**
    * These key-value pairs are sent as additional custom headers in the outgoing webhook request.
    * @return outgoingWebhookCustomHttpHeaders
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -1023,21 +1030,20 @@ public class ProfileResponse {
     this.outgoingWebhookCustomHttpHeaders = outgoingWebhookCustomHttpHeaders;
   }
 
-  public void setOutgoingWebhookCustomHttpHeaders(Object outgoingWebhookCustomHttpHeaders) {
+  public void setOutgoingWebhookCustomHttpHeaders(@javax.annotation.Nullable Object outgoingWebhookCustomHttpHeaders) {
     this.outgoingWebhookCustomHttpHeaders = JsonNullable.<Object>of(outgoingWebhookCustomHttpHeaders);
   }
 
-
-  public ProfileResponse taxConnectorId(String taxConnectorId) {
+  public ProfileResponse taxConnectorId(@javax.annotation.Nullable String taxConnectorId) {
     this.taxConnectorId = JsonNullable.<String>of(taxConnectorId);
     
     return this;
   }
 
-   /**
+  /**
    * Merchant Connector id to be stored for tax_calculator connector
    * @return taxConnectorId
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -1057,21 +1063,20 @@ public class ProfileResponse {
     this.taxConnectorId = taxConnectorId;
   }
 
-  public void setTaxConnectorId(String taxConnectorId) {
+  public void setTaxConnectorId(@javax.annotation.Nullable String taxConnectorId) {
     this.taxConnectorId = JsonNullable.<String>of(taxConnectorId);
   }
 
-
-  public ProfileResponse isTaxConnectorEnabled(Boolean isTaxConnectorEnabled) {
+  public ProfileResponse isTaxConnectorEnabled(@javax.annotation.Nonnull Boolean isTaxConnectorEnabled) {
     
     this.isTaxConnectorEnabled = isTaxConnectorEnabled;
     return this;
   }
 
-   /**
+  /**
    * Indicates if tax_calculator connector is enabled or not. If set to &#x60;true&#x60; tax_connector_id will be checked.
    * @return isTaxConnectorEnabled
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_IS_TAX_CONNECTOR_ENABLED)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -1083,21 +1088,20 @@ public class ProfileResponse {
 
   @JsonProperty(JSON_PROPERTY_IS_TAX_CONNECTOR_ENABLED)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setIsTaxConnectorEnabled(Boolean isTaxConnectorEnabled) {
+  public void setIsTaxConnectorEnabled(@javax.annotation.Nonnull Boolean isTaxConnectorEnabled) {
     this.isTaxConnectorEnabled = isTaxConnectorEnabled;
   }
 
-
-  public ProfileResponse isNetworkTokenizationEnabled(Boolean isNetworkTokenizationEnabled) {
+  public ProfileResponse isNetworkTokenizationEnabled(@javax.annotation.Nonnull Boolean isNetworkTokenizationEnabled) {
     
     this.isNetworkTokenizationEnabled = isNetworkTokenizationEnabled;
     return this;
   }
 
-   /**
+  /**
    * Indicates if network tokenization is enabled or not.
    * @return isNetworkTokenizationEnabled
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_IS_NETWORK_TOKENIZATION_ENABLED)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -1109,21 +1113,20 @@ public class ProfileResponse {
 
   @JsonProperty(JSON_PROPERTY_IS_NETWORK_TOKENIZATION_ENABLED)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setIsNetworkTokenizationEnabled(Boolean isNetworkTokenizationEnabled) {
+  public void setIsNetworkTokenizationEnabled(@javax.annotation.Nonnull Boolean isNetworkTokenizationEnabled) {
     this.isNetworkTokenizationEnabled = isNetworkTokenizationEnabled;
   }
 
-
-  public ProfileResponse isAutoRetriesEnabled(Boolean isAutoRetriesEnabled) {
+  public ProfileResponse isAutoRetriesEnabled(@javax.annotation.Nonnull Boolean isAutoRetriesEnabled) {
     
     this.isAutoRetriesEnabled = isAutoRetriesEnabled;
     return this;
   }
 
-   /**
+  /**
    * Indicates if is_auto_retries_enabled is enabled or not.
    * @return isAutoRetriesEnabled
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_IS_AUTO_RETRIES_ENABLED)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -1135,21 +1138,20 @@ public class ProfileResponse {
 
   @JsonProperty(JSON_PROPERTY_IS_AUTO_RETRIES_ENABLED)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setIsAutoRetriesEnabled(Boolean isAutoRetriesEnabled) {
+  public void setIsAutoRetriesEnabled(@javax.annotation.Nonnull Boolean isAutoRetriesEnabled) {
     this.isAutoRetriesEnabled = isAutoRetriesEnabled;
   }
 
-
-  public ProfileResponse maxAutoRetriesEnabled(Integer maxAutoRetriesEnabled) {
+  public ProfileResponse maxAutoRetriesEnabled(@javax.annotation.Nullable Integer maxAutoRetriesEnabled) {
     this.maxAutoRetriesEnabled = JsonNullable.<Integer>of(maxAutoRetriesEnabled);
     
     return this;
   }
 
-   /**
+  /**
    * Maximum number of auto retries allowed for a payment
    * @return maxAutoRetriesEnabled
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -1169,7 +1171,7 @@ public class ProfileResponse {
     this.maxAutoRetriesEnabled = maxAutoRetriesEnabled;
   }
 
-  public void setMaxAutoRetriesEnabled(Integer maxAutoRetriesEnabled) {
+  public void setMaxAutoRetriesEnabled(@javax.annotation.Nullable Integer maxAutoRetriesEnabled) {
     this.maxAutoRetriesEnabled = JsonNullable.<Integer>of(maxAutoRetriesEnabled);
   }
 

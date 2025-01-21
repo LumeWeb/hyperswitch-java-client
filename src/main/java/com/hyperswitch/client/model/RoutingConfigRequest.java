@@ -40,33 +40,37 @@ import java.util.StringJoiner;
   RoutingConfigRequest.JSON_PROPERTY_ALGORITHM,
   RoutingConfigRequest.JSON_PROPERTY_PROFILE_ID
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class RoutingConfigRequest {
   public static final String JSON_PROPERTY_NAME = "name";
+  @javax.annotation.Nullable
   private JsonNullable<String> name = JsonNullable.<String>undefined();
 
   public static final String JSON_PROPERTY_DESCRIPTION = "description";
+  @javax.annotation.Nullable
   private JsonNullable<String> description = JsonNullable.<String>undefined();
 
   public static final String JSON_PROPERTY_ALGORITHM = "algorithm";
+  @javax.annotation.Nullable
   private JsonNullable<RoutingAlgorithm> algorithm = JsonNullable.<RoutingAlgorithm>undefined();
 
   public static final String JSON_PROPERTY_PROFILE_ID = "profile_id";
+  @javax.annotation.Nullable
   private JsonNullable<String> profileId = JsonNullable.<String>undefined();
 
   public RoutingConfigRequest() {
   }
 
-  public RoutingConfigRequest name(String name) {
+  public RoutingConfigRequest name(@javax.annotation.Nullable String name) {
     this.name = JsonNullable.<String>of(name);
     
     return this;
   }
 
-   /**
+  /**
    * Get name
    * @return name
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -86,21 +90,20 @@ public class RoutingConfigRequest {
     this.name = name;
   }
 
-  public void setName(String name) {
+  public void setName(@javax.annotation.Nullable String name) {
     this.name = JsonNullable.<String>of(name);
   }
 
-
-  public RoutingConfigRequest description(String description) {
+  public RoutingConfigRequest description(@javax.annotation.Nullable String description) {
     this.description = JsonNullable.<String>of(description);
     
     return this;
   }
 
-   /**
+  /**
    * Get description
    * @return description
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -120,21 +123,20 @@ public class RoutingConfigRequest {
     this.description = description;
   }
 
-  public void setDescription(String description) {
+  public void setDescription(@javax.annotation.Nullable String description) {
     this.description = JsonNullable.<String>of(description);
   }
 
-
-  public RoutingConfigRequest algorithm(RoutingAlgorithm algorithm) {
+  public RoutingConfigRequest algorithm(@javax.annotation.Nullable RoutingAlgorithm algorithm) {
     this.algorithm = JsonNullable.<RoutingAlgorithm>of(algorithm);
     
     return this;
   }
 
-   /**
+  /**
    * Get algorithm
    * @return algorithm
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -154,21 +156,20 @@ public class RoutingConfigRequest {
     this.algorithm = algorithm;
   }
 
-  public void setAlgorithm(RoutingAlgorithm algorithm) {
+  public void setAlgorithm(@javax.annotation.Nullable RoutingAlgorithm algorithm) {
     this.algorithm = JsonNullable.<RoutingAlgorithm>of(algorithm);
   }
 
-
-  public RoutingConfigRequest profileId(String profileId) {
+  public RoutingConfigRequest profileId(@javax.annotation.Nullable String profileId) {
     this.profileId = JsonNullable.<String>of(profileId);
     
     return this;
   }
 
-   /**
+  /**
    * Get profileId
    * @return profileId
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -188,7 +189,7 @@ public class RoutingConfigRequest {
     this.profileId = profileId;
   }
 
-  public void setProfileId(String profileId) {
+  public void setProfileId(@javax.annotation.Nullable String profileId) {
     this.profileId = JsonNullable.<String>of(profileId);
   }
 

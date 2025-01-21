@@ -36,36 +36,41 @@ import java.util.StringJoiner;
   SepaBankTransferInstructions.JSON_PROPERTY_IBAN,
   SepaBankTransferInstructions.JSON_PROPERTY_REFERENCE
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class SepaBankTransferInstructions {
   public static final String JSON_PROPERTY_ACCOUNT_HOLDER_NAME = "account_holder_name";
+  @javax.annotation.Nonnull
   private String accountHolderName;
 
   public static final String JSON_PROPERTY_BIC = "bic";
+  @javax.annotation.Nonnull
   private String bic;
 
   public static final String JSON_PROPERTY_COUNTRY = "country";
+  @javax.annotation.Nonnull
   private String country;
 
   public static final String JSON_PROPERTY_IBAN = "iban";
+  @javax.annotation.Nonnull
   private String iban;
 
   public static final String JSON_PROPERTY_REFERENCE = "reference";
+  @javax.annotation.Nonnull
   private String reference;
 
   public SepaBankTransferInstructions() {
   }
 
-  public SepaBankTransferInstructions accountHolderName(String accountHolderName) {
+  public SepaBankTransferInstructions accountHolderName(@javax.annotation.Nonnull String accountHolderName) {
     
     this.accountHolderName = accountHolderName;
     return this;
   }
 
-   /**
+  /**
    * Get accountHolderName
    * @return accountHolderName
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_ACCOUNT_HOLDER_NAME)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -77,21 +82,20 @@ public class SepaBankTransferInstructions {
 
   @JsonProperty(JSON_PROPERTY_ACCOUNT_HOLDER_NAME)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setAccountHolderName(String accountHolderName) {
+  public void setAccountHolderName(@javax.annotation.Nonnull String accountHolderName) {
     this.accountHolderName = accountHolderName;
   }
 
-
-  public SepaBankTransferInstructions bic(String bic) {
+  public SepaBankTransferInstructions bic(@javax.annotation.Nonnull String bic) {
     
     this.bic = bic;
     return this;
   }
 
-   /**
+  /**
    * Get bic
    * @return bic
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_BIC)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -103,21 +107,20 @@ public class SepaBankTransferInstructions {
 
   @JsonProperty(JSON_PROPERTY_BIC)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setBic(String bic) {
+  public void setBic(@javax.annotation.Nonnull String bic) {
     this.bic = bic;
   }
 
-
-  public SepaBankTransferInstructions country(String country) {
+  public SepaBankTransferInstructions country(@javax.annotation.Nonnull String country) {
     
     this.country = country;
     return this;
   }
 
-   /**
+  /**
    * Get country
    * @return country
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_COUNTRY)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -129,21 +132,20 @@ public class SepaBankTransferInstructions {
 
   @JsonProperty(JSON_PROPERTY_COUNTRY)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setCountry(String country) {
+  public void setCountry(@javax.annotation.Nonnull String country) {
     this.country = country;
   }
 
-
-  public SepaBankTransferInstructions iban(String iban) {
+  public SepaBankTransferInstructions iban(@javax.annotation.Nonnull String iban) {
     
     this.iban = iban;
     return this;
   }
 
-   /**
+  /**
    * Get iban
    * @return iban
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_IBAN)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -155,21 +157,20 @@ public class SepaBankTransferInstructions {
 
   @JsonProperty(JSON_PROPERTY_IBAN)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setIban(String iban) {
+  public void setIban(@javax.annotation.Nonnull String iban) {
     this.iban = iban;
   }
 
-
-  public SepaBankTransferInstructions reference(String reference) {
+  public SepaBankTransferInstructions reference(@javax.annotation.Nonnull String reference) {
     
     this.reference = reference;
     return this;
   }
 
-   /**
+  /**
    * Get reference
    * @return reference
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_REFERENCE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -181,7 +182,7 @@ public class SepaBankTransferInstructions {
 
   @JsonProperty(JSON_PROPERTY_REFERENCE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setReference(String reference) {
+  public void setReference(@javax.annotation.Nonnull String reference) {
     this.reference = reference;
   }
 

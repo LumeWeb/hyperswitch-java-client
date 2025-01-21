@@ -33,24 +33,25 @@ import java.util.StringJoiner;
   CardRedirectDataOneOf3.JSON_PROPERTY_CARD_REDIRECT
 })
 @JsonTypeName("CardRedirectData_oneOf_3")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class CardRedirectDataOneOf3 {
   public static final String JSON_PROPERTY_CARD_REDIRECT = "card_redirect";
+  @javax.annotation.Nonnull
   private Object cardRedirect;
 
   public CardRedirectDataOneOf3() {
   }
 
-  public CardRedirectDataOneOf3 cardRedirect(Object cardRedirect) {
+  public CardRedirectDataOneOf3 cardRedirect(@javax.annotation.Nonnull Object cardRedirect) {
     
     this.cardRedirect = cardRedirect;
     return this;
   }
 
-   /**
+  /**
    * Get cardRedirect
    * @return cardRedirect
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_CARD_REDIRECT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -62,7 +63,7 @@ public class CardRedirectDataOneOf3 {
 
   @JsonProperty(JSON_PROPERTY_CARD_REDIRECT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setCardRedirect(Object cardRedirect) {
+  public void setCardRedirect(@javax.annotation.Nonnull Object cardRedirect) {
     this.cardRedirect = cardRedirect;
   }
 

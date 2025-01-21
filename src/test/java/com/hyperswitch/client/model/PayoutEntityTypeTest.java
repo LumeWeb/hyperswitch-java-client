@@ -13,20 +13,19 @@
 
 package com.hyperswitch.client.model;
 
-import org.junit.Assert;
-import org.junit.Ignore;
-import org.junit.Test;
-
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Test;
 
 /**
  * Model tests for PayoutEntityType
  */
-public class PayoutEntityTypeTest {
+class PayoutEntityTypeTest {
     /**
      * Model tests for PayoutEntityType
      */
     @Test
-    public void testPayoutEntityType() {
+    void testPayoutEntityType() {
         // TODO: test PayoutEntityType
     }
 

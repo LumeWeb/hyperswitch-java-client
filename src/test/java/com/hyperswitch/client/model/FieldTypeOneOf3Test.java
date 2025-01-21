@@ -19,22 +19,21 @@ import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonTypeName;
 import com.fasterxml.jackson.annotation.JsonValue;
 import com.hyperswitch.client.model.FieldTypeOneOfUserCountry;
-import org.junit.Assert;
-import org.junit.Ignore;
-import org.junit.Test;
-
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Test;
 
 /**
  * Model tests for FieldTypeOneOf3
  */
-public class FieldTypeOneOf3Test {
+class FieldTypeOneOf3Test {
     private final FieldTypeOneOf3 model = new FieldTypeOneOf3();
 
     /**
      * Model tests for FieldTypeOneOf3
      */
     @Test
-    public void testFieldTypeOneOf3() {
+    void testFieldTypeOneOf3() {
         // TODO: test FieldTypeOneOf3
     }
 
@@ -42,7 +41,7 @@ public class FieldTypeOneOf3Test {
      * Test the property 'userShippingAddressCountry'
      */
     @Test
-    public void userShippingAddressCountryTest() {
+    void userShippingAddressCountryTest() {
         // TODO: test userShippingAddressCountry
     }
 

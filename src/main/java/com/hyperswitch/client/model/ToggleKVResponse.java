@@ -33,27 +33,29 @@ import java.util.StringJoiner;
   ToggleKVResponse.JSON_PROPERTY_MERCHANT_ID,
   ToggleKVResponse.JSON_PROPERTY_KV_ENABLED
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class ToggleKVResponse {
   public static final String JSON_PROPERTY_MERCHANT_ID = "merchant_id";
+  @javax.annotation.Nonnull
   private String merchantId;
 
   public static final String JSON_PROPERTY_KV_ENABLED = "kv_enabled";
+  @javax.annotation.Nonnull
   private Boolean kvEnabled;
 
   public ToggleKVResponse() {
   }
 
-  public ToggleKVResponse merchantId(String merchantId) {
+  public ToggleKVResponse merchantId(@javax.annotation.Nonnull String merchantId) {
     
     this.merchantId = merchantId;
     return this;
   }
 
-   /**
+  /**
    * The identifier for the Merchant Account
    * @return merchantId
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_MERCHANT_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -65,21 +67,20 @@ public class ToggleKVResponse {
 
   @JsonProperty(JSON_PROPERTY_MERCHANT_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setMerchantId(String merchantId) {
+  public void setMerchantId(@javax.annotation.Nonnull String merchantId) {
     this.merchantId = merchantId;
   }
 
-
-  public ToggleKVResponse kvEnabled(Boolean kvEnabled) {
+  public ToggleKVResponse kvEnabled(@javax.annotation.Nonnull Boolean kvEnabled) {
     
     this.kvEnabled = kvEnabled;
     return this;
   }
 
-   /**
+  /**
    * Status of KV for the specific merchant
    * @return kvEnabled
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_KV_ENABLED)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -91,7 +92,7 @@ public class ToggleKVResponse {
 
   @JsonProperty(JSON_PROPERTY_KV_ENABLED)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setKvEnabled(Boolean kvEnabled) {
+  public void setKvEnabled(@javax.annotation.Nonnull Boolean kvEnabled) {
     this.kvEnabled = kvEnabled;
   }
 

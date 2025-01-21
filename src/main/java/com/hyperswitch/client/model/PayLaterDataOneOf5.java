@@ -33,24 +33,25 @@ import java.util.StringJoiner;
   PayLaterDataOneOf5.JSON_PROPERTY_WALLEY_REDIRECT
 })
 @JsonTypeName("PayLaterData_oneOf_5")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class PayLaterDataOneOf5 {
   public static final String JSON_PROPERTY_WALLEY_REDIRECT = "walley_redirect";
+  @javax.annotation.Nonnull
   private Object walleyRedirect;
 
   public PayLaterDataOneOf5() {
   }
 
-  public PayLaterDataOneOf5 walleyRedirect(Object walleyRedirect) {
+  public PayLaterDataOneOf5 walleyRedirect(@javax.annotation.Nonnull Object walleyRedirect) {
     
     this.walleyRedirect = walleyRedirect;
     return this;
   }
 
-   /**
+  /**
    * For WalleyRedirect as PayLater Option
    * @return walleyRedirect
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_WALLEY_REDIRECT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -62,7 +63,7 @@ public class PayLaterDataOneOf5 {
 
   @JsonProperty(JSON_PROPERTY_WALLEY_REDIRECT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setWalleyRedirect(Object walleyRedirect) {
+  public void setWalleyRedirect(@javax.annotation.Nonnull Object walleyRedirect) {
     this.walleyRedirect = walleyRedirect;
   }
 

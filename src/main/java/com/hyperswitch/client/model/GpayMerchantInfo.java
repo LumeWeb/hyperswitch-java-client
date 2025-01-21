@@ -37,27 +37,29 @@ import java.util.StringJoiner;
   GpayMerchantInfo.JSON_PROPERTY_MERCHANT_ID,
   GpayMerchantInfo.JSON_PROPERTY_MERCHANT_NAME
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class GpayMerchantInfo {
   public static final String JSON_PROPERTY_MERCHANT_ID = "merchant_id";
+  @javax.annotation.Nullable
   private JsonNullable<String> merchantId = JsonNullable.<String>undefined();
 
   public static final String JSON_PROPERTY_MERCHANT_NAME = "merchant_name";
+  @javax.annotation.Nonnull
   private String merchantName;
 
   public GpayMerchantInfo() {
   }
 
-  public GpayMerchantInfo merchantId(String merchantId) {
+  public GpayMerchantInfo merchantId(@javax.annotation.Nullable String merchantId) {
     this.merchantId = JsonNullable.<String>of(merchantId);
     
     return this;
   }
 
-   /**
+  /**
    * The merchant Identifier that needs to be passed while invoking Gpay SDK
    * @return merchantId
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -77,21 +79,20 @@ public class GpayMerchantInfo {
     this.merchantId = merchantId;
   }
 
-  public void setMerchantId(String merchantId) {
+  public void setMerchantId(@javax.annotation.Nullable String merchantId) {
     this.merchantId = JsonNullable.<String>of(merchantId);
   }
 
-
-  public GpayMerchantInfo merchantName(String merchantName) {
+  public GpayMerchantInfo merchantName(@javax.annotation.Nonnull String merchantName) {
     
     this.merchantName = merchantName;
     return this;
   }
 
-   /**
+  /**
    * The name of the merchant that needs to be displayed on Gpay PopUp
    * @return merchantName
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_MERCHANT_NAME)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -103,7 +104,7 @@ public class GpayMerchantInfo {
 
   @JsonProperty(JSON_PROPERTY_MERCHANT_NAME)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setMerchantName(String merchantName) {
+  public void setMerchantName(@javax.annotation.Nonnull String merchantName) {
     this.merchantName = merchantName;
   }
 

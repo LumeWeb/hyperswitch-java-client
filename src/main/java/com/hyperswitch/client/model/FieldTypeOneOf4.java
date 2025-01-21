@@ -34,24 +34,25 @@ import java.util.StringJoiner;
   FieldTypeOneOf4.JSON_PROPERTY_DROP_DOWN
 })
 @JsonTypeName("FieldType_oneOf_4")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class FieldTypeOneOf4 {
   public static final String JSON_PROPERTY_DROP_DOWN = "drop_down";
+  @javax.annotation.Nonnull
   private FieldTypeOneOfUserCountry dropDown;
 
   public FieldTypeOneOf4() {
   }
 
-  public FieldTypeOneOf4 dropDown(FieldTypeOneOfUserCountry dropDown) {
+  public FieldTypeOneOf4 dropDown(@javax.annotation.Nonnull FieldTypeOneOfUserCountry dropDown) {
     
     this.dropDown = dropDown;
     return this;
   }
 
-   /**
+  /**
    * Get dropDown
    * @return dropDown
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_DROP_DOWN)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -63,7 +64,7 @@ public class FieldTypeOneOf4 {
 
   @JsonProperty(JSON_PROPERTY_DROP_DOWN)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setDropDown(FieldTypeOneOfUserCountry dropDown) {
+  public void setDropDown(@javax.annotation.Nonnull FieldTypeOneOfUserCountry dropDown) {
     this.dropDown = dropDown;
   }
 

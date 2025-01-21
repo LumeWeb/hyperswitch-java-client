@@ -43,39 +43,45 @@ import java.util.StringJoiner;
   ThreeDsData.JSON_PROPERTY_MESSAGE_VERSION,
   ThreeDsData.JSON_PROPERTY_DIRECTORY_SERVER_ID
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class ThreeDsData {
   public static final String JSON_PROPERTY_THREE_DS_AUTHENTICATION_URL = "three_ds_authentication_url";
+  @javax.annotation.Nonnull
   private String threeDsAuthenticationUrl;
 
   public static final String JSON_PROPERTY_THREE_DS_AUTHORIZE_URL = "three_ds_authorize_url";
+  @javax.annotation.Nonnull
   private String threeDsAuthorizeUrl;
 
   public static final String JSON_PROPERTY_THREE_DS_METHOD_DETAILS = "three_ds_method_details";
+  @javax.annotation.Nonnull
   private ThreeDsMethodData threeDsMethodDetails;
 
   public static final String JSON_PROPERTY_POLL_CONFIG = "poll_config";
+  @javax.annotation.Nonnull
   private PollConfigResponse pollConfig;
 
   public static final String JSON_PROPERTY_MESSAGE_VERSION = "message_version";
+  @javax.annotation.Nullable
   private JsonNullable<String> messageVersion = JsonNullable.<String>undefined();
 
   public static final String JSON_PROPERTY_DIRECTORY_SERVER_ID = "directory_server_id";
+  @javax.annotation.Nullable
   private JsonNullable<String> directoryServerId = JsonNullable.<String>undefined();
 
   public ThreeDsData() {
   }
 
-  public ThreeDsData threeDsAuthenticationUrl(String threeDsAuthenticationUrl) {
+  public ThreeDsData threeDsAuthenticationUrl(@javax.annotation.Nonnull String threeDsAuthenticationUrl) {
     
     this.threeDsAuthenticationUrl = threeDsAuthenticationUrl;
     return this;
   }
 
-   /**
+  /**
    * ThreeDS authentication url - to initiate authentication
    * @return threeDsAuthenticationUrl
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_THREE_DS_AUTHENTICATION_URL)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -87,21 +93,20 @@ public class ThreeDsData {
 
   @JsonProperty(JSON_PROPERTY_THREE_DS_AUTHENTICATION_URL)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setThreeDsAuthenticationUrl(String threeDsAuthenticationUrl) {
+  public void setThreeDsAuthenticationUrl(@javax.annotation.Nonnull String threeDsAuthenticationUrl) {
     this.threeDsAuthenticationUrl = threeDsAuthenticationUrl;
   }
 
-
-  public ThreeDsData threeDsAuthorizeUrl(String threeDsAuthorizeUrl) {
+  public ThreeDsData threeDsAuthorizeUrl(@javax.annotation.Nonnull String threeDsAuthorizeUrl) {
     
     this.threeDsAuthorizeUrl = threeDsAuthorizeUrl;
     return this;
   }
 
-   /**
+  /**
    * ThreeDS authorize url - to complete the payment authorization after authentication
    * @return threeDsAuthorizeUrl
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_THREE_DS_AUTHORIZE_URL)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -113,21 +118,20 @@ public class ThreeDsData {
 
   @JsonProperty(JSON_PROPERTY_THREE_DS_AUTHORIZE_URL)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setThreeDsAuthorizeUrl(String threeDsAuthorizeUrl) {
+  public void setThreeDsAuthorizeUrl(@javax.annotation.Nonnull String threeDsAuthorizeUrl) {
     this.threeDsAuthorizeUrl = threeDsAuthorizeUrl;
   }
 
-
-  public ThreeDsData threeDsMethodDetails(ThreeDsMethodData threeDsMethodDetails) {
+  public ThreeDsData threeDsMethodDetails(@javax.annotation.Nonnull ThreeDsMethodData threeDsMethodDetails) {
     
     this.threeDsMethodDetails = threeDsMethodDetails;
     return this;
   }
 
-   /**
+  /**
    * Get threeDsMethodDetails
    * @return threeDsMethodDetails
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_THREE_DS_METHOD_DETAILS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -139,21 +143,20 @@ public class ThreeDsData {
 
   @JsonProperty(JSON_PROPERTY_THREE_DS_METHOD_DETAILS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setThreeDsMethodDetails(ThreeDsMethodData threeDsMethodDetails) {
+  public void setThreeDsMethodDetails(@javax.annotation.Nonnull ThreeDsMethodData threeDsMethodDetails) {
     this.threeDsMethodDetails = threeDsMethodDetails;
   }
 
-
-  public ThreeDsData pollConfig(PollConfigResponse pollConfig) {
+  public ThreeDsData pollConfig(@javax.annotation.Nonnull PollConfigResponse pollConfig) {
     
     this.pollConfig = pollConfig;
     return this;
   }
 
-   /**
+  /**
    * Get pollConfig
    * @return pollConfig
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_POLL_CONFIG)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -165,21 +168,20 @@ public class ThreeDsData {
 
   @JsonProperty(JSON_PROPERTY_POLL_CONFIG)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setPollConfig(PollConfigResponse pollConfig) {
+  public void setPollConfig(@javax.annotation.Nonnull PollConfigResponse pollConfig) {
     this.pollConfig = pollConfig;
   }
 
-
-  public ThreeDsData messageVersion(String messageVersion) {
+  public ThreeDsData messageVersion(@javax.annotation.Nullable String messageVersion) {
     this.messageVersion = JsonNullable.<String>of(messageVersion);
     
     return this;
   }
 
-   /**
+  /**
    * Message Version
    * @return messageVersion
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -199,21 +201,20 @@ public class ThreeDsData {
     this.messageVersion = messageVersion;
   }
 
-  public void setMessageVersion(String messageVersion) {
+  public void setMessageVersion(@javax.annotation.Nullable String messageVersion) {
     this.messageVersion = JsonNullable.<String>of(messageVersion);
   }
 
-
-  public ThreeDsData directoryServerId(String directoryServerId) {
+  public ThreeDsData directoryServerId(@javax.annotation.Nullable String directoryServerId) {
     this.directoryServerId = JsonNullable.<String>of(directoryServerId);
     
     return this;
   }
 
-   /**
+  /**
    * Directory Server ID
    * @return directoryServerId
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -233,7 +234,7 @@ public class ThreeDsData {
     this.directoryServerId = directoryServerId;
   }
 
-  public void setDirectoryServerId(String directoryServerId) {
+  public void setDirectoryServerId(@javax.annotation.Nullable String directoryServerId) {
     this.directoryServerId = JsonNullable.<String>of(directoryServerId);
   }
 

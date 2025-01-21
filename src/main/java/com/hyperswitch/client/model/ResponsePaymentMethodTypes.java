@@ -29,6 +29,7 @@ import com.hyperswitch.client.model.PaymentMethodType;
 import com.hyperswitch.client.model.RequiredFieldInfo;
 import com.hyperswitch.client.model.SurchargeDetailsResponse;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -56,48 +57,57 @@ import java.util.StringJoiner;
   ResponsePaymentMethodTypes.JSON_PROPERTY_SURCHARGE_DETAILS,
   ResponsePaymentMethodTypes.JSON_PROPERTY_PM_AUTH_CONNECTOR
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class ResponsePaymentMethodTypes {
   public static final String JSON_PROPERTY_PAYMENT_METHOD_TYPE = "payment_method_type";
+  @javax.annotation.Nonnull
   private PaymentMethodType paymentMethodType;
 
   public static final String JSON_PROPERTY_PAYMENT_EXPERIENCE = "payment_experience";
+  @javax.annotation.Nullable
   private JsonNullable<List<PaymentExperienceTypes>> paymentExperience = JsonNullable.<List<PaymentExperienceTypes>>undefined();
 
   public static final String JSON_PROPERTY_CARD_NETWORKS = "card_networks";
+  @javax.annotation.Nullable
   private JsonNullable<List<CardNetworkTypes>> cardNetworks = JsonNullable.<List<CardNetworkTypes>>undefined();
 
   public static final String JSON_PROPERTY_BANK_NAMES = "bank_names";
+  @javax.annotation.Nullable
   private JsonNullable<List<BankCodeResponse>> bankNames = JsonNullable.<List<BankCodeResponse>>undefined();
 
   public static final String JSON_PROPERTY_BANK_DEBITS = "bank_debits";
+  @javax.annotation.Nullable
   private JsonNullable<BankDebitTypes> bankDebits = JsonNullable.<BankDebitTypes>undefined();
 
   public static final String JSON_PROPERTY_BANK_TRANSFERS = "bank_transfers";
+  @javax.annotation.Nullable
   private JsonNullable<BankTransferTypes> bankTransfers = JsonNullable.<BankTransferTypes>undefined();
 
   public static final String JSON_PROPERTY_REQUIRED_FIELDS = "required_fields";
+  @javax.annotation.Nullable
   private JsonNullable<Map<String, RequiredFieldInfo>> requiredFields = JsonNullable.<Map<String, RequiredFieldInfo>>undefined();
 
   public static final String JSON_PROPERTY_SURCHARGE_DETAILS = "surcharge_details";
+  @javax.annotation.Nullable
   private JsonNullable<SurchargeDetailsResponse> surchargeDetails = JsonNullable.<SurchargeDetailsResponse>undefined();
 
   public static final String JSON_PROPERTY_PM_AUTH_CONNECTOR = "pm_auth_connector";
+  @javax.annotation.Nullable
   private JsonNullable<String> pmAuthConnector = JsonNullable.<String>undefined();
 
   public ResponsePaymentMethodTypes() {
   }
 
-  public ResponsePaymentMethodTypes paymentMethodType(PaymentMethodType paymentMethodType) {
+  public ResponsePaymentMethodTypes paymentMethodType(@javax.annotation.Nonnull PaymentMethodType paymentMethodType) {
     
     this.paymentMethodType = paymentMethodType;
     return this;
   }
 
-   /**
+  /**
    * Get paymentMethodType
    * @return paymentMethodType
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_PAYMENT_METHOD_TYPE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -109,12 +119,11 @@ public class ResponsePaymentMethodTypes {
 
   @JsonProperty(JSON_PROPERTY_PAYMENT_METHOD_TYPE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setPaymentMethodType(PaymentMethodType paymentMethodType) {
+  public void setPaymentMethodType(@javax.annotation.Nonnull PaymentMethodType paymentMethodType) {
     this.paymentMethodType = paymentMethodType;
   }
 
-
-  public ResponsePaymentMethodTypes paymentExperience(List<PaymentExperienceTypes> paymentExperience) {
+  public ResponsePaymentMethodTypes paymentExperience(@javax.annotation.Nullable List<PaymentExperienceTypes> paymentExperience) {
     this.paymentExperience = JsonNullable.<List<PaymentExperienceTypes>>of(paymentExperience);
     
     return this;
@@ -132,10 +141,10 @@ public class ResponsePaymentMethodTypes {
     return this;
   }
 
-   /**
+  /**
    * The list of payment experiences enabled, if applicable for a payment method type
    * @return paymentExperience
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -155,12 +164,11 @@ public class ResponsePaymentMethodTypes {
     this.paymentExperience = paymentExperience;
   }
 
-  public void setPaymentExperience(List<PaymentExperienceTypes> paymentExperience) {
+  public void setPaymentExperience(@javax.annotation.Nullable List<PaymentExperienceTypes> paymentExperience) {
     this.paymentExperience = JsonNullable.<List<PaymentExperienceTypes>>of(paymentExperience);
   }
 
-
-  public ResponsePaymentMethodTypes cardNetworks(List<CardNetworkTypes> cardNetworks) {
+  public ResponsePaymentMethodTypes cardNetworks(@javax.annotation.Nullable List<CardNetworkTypes> cardNetworks) {
     this.cardNetworks = JsonNullable.<List<CardNetworkTypes>>of(cardNetworks);
     
     return this;
@@ -178,10 +186,10 @@ public class ResponsePaymentMethodTypes {
     return this;
   }
 
-   /**
+  /**
    * The list of card networks enabled, if applicable for a payment method type
    * @return cardNetworks
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -201,12 +209,11 @@ public class ResponsePaymentMethodTypes {
     this.cardNetworks = cardNetworks;
   }
 
-  public void setCardNetworks(List<CardNetworkTypes> cardNetworks) {
+  public void setCardNetworks(@javax.annotation.Nullable List<CardNetworkTypes> cardNetworks) {
     this.cardNetworks = JsonNullable.<List<CardNetworkTypes>>of(cardNetworks);
   }
 
-
-  public ResponsePaymentMethodTypes bankNames(List<BankCodeResponse> bankNames) {
+  public ResponsePaymentMethodTypes bankNames(@javax.annotation.Nullable List<BankCodeResponse> bankNames) {
     this.bankNames = JsonNullable.<List<BankCodeResponse>>of(bankNames);
     
     return this;
@@ -224,10 +231,10 @@ public class ResponsePaymentMethodTypes {
     return this;
   }
 
-   /**
+  /**
    * The list of banks enabled, if applicable for a payment method type
    * @return bankNames
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -247,21 +254,20 @@ public class ResponsePaymentMethodTypes {
     this.bankNames = bankNames;
   }
 
-  public void setBankNames(List<BankCodeResponse> bankNames) {
+  public void setBankNames(@javax.annotation.Nullable List<BankCodeResponse> bankNames) {
     this.bankNames = JsonNullable.<List<BankCodeResponse>>of(bankNames);
   }
 
-
-  public ResponsePaymentMethodTypes bankDebits(BankDebitTypes bankDebits) {
+  public ResponsePaymentMethodTypes bankDebits(@javax.annotation.Nullable BankDebitTypes bankDebits) {
     this.bankDebits = JsonNullable.<BankDebitTypes>of(bankDebits);
     
     return this;
   }
 
-   /**
+  /**
    * Get bankDebits
    * @return bankDebits
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -281,21 +287,20 @@ public class ResponsePaymentMethodTypes {
     this.bankDebits = bankDebits;
   }
 
-  public void setBankDebits(BankDebitTypes bankDebits) {
+  public void setBankDebits(@javax.annotation.Nullable BankDebitTypes bankDebits) {
     this.bankDebits = JsonNullable.<BankDebitTypes>of(bankDebits);
   }
 
-
-  public ResponsePaymentMethodTypes bankTransfers(BankTransferTypes bankTransfers) {
+  public ResponsePaymentMethodTypes bankTransfers(@javax.annotation.Nullable BankTransferTypes bankTransfers) {
     this.bankTransfers = JsonNullable.<BankTransferTypes>of(bankTransfers);
     
     return this;
   }
 
-   /**
+  /**
    * Get bankTransfers
    * @return bankTransfers
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -315,12 +320,11 @@ public class ResponsePaymentMethodTypes {
     this.bankTransfers = bankTransfers;
   }
 
-  public void setBankTransfers(BankTransferTypes bankTransfers) {
+  public void setBankTransfers(@javax.annotation.Nullable BankTransferTypes bankTransfers) {
     this.bankTransfers = JsonNullable.<BankTransferTypes>of(bankTransfers);
   }
 
-
-  public ResponsePaymentMethodTypes requiredFields(Map<String, RequiredFieldInfo> requiredFields) {
+  public ResponsePaymentMethodTypes requiredFields(@javax.annotation.Nullable Map<String, RequiredFieldInfo> requiredFields) {
     this.requiredFields = JsonNullable.<Map<String, RequiredFieldInfo>>of(requiredFields);
     
     return this;
@@ -338,10 +342,10 @@ public class ResponsePaymentMethodTypes {
     return this;
   }
 
-   /**
+  /**
    * Required fields for the payment_method_type.
    * @return requiredFields
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -361,21 +365,20 @@ public class ResponsePaymentMethodTypes {
     this.requiredFields = requiredFields;
   }
 
-  public void setRequiredFields(Map<String, RequiredFieldInfo> requiredFields) {
+  public void setRequiredFields(@javax.annotation.Nullable Map<String, RequiredFieldInfo> requiredFields) {
     this.requiredFields = JsonNullable.<Map<String, RequiredFieldInfo>>of(requiredFields);
   }
 
-
-  public ResponsePaymentMethodTypes surchargeDetails(SurchargeDetailsResponse surchargeDetails) {
+  public ResponsePaymentMethodTypes surchargeDetails(@javax.annotation.Nullable SurchargeDetailsResponse surchargeDetails) {
     this.surchargeDetails = JsonNullable.<SurchargeDetailsResponse>of(surchargeDetails);
     
     return this;
   }
 
-   /**
+  /**
    * Get surchargeDetails
    * @return surchargeDetails
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -395,21 +398,20 @@ public class ResponsePaymentMethodTypes {
     this.surchargeDetails = surchargeDetails;
   }
 
-  public void setSurchargeDetails(SurchargeDetailsResponse surchargeDetails) {
+  public void setSurchargeDetails(@javax.annotation.Nullable SurchargeDetailsResponse surchargeDetails) {
     this.surchargeDetails = JsonNullable.<SurchargeDetailsResponse>of(surchargeDetails);
   }
 
-
-  public ResponsePaymentMethodTypes pmAuthConnector(String pmAuthConnector) {
+  public ResponsePaymentMethodTypes pmAuthConnector(@javax.annotation.Nullable String pmAuthConnector) {
     this.pmAuthConnector = JsonNullable.<String>of(pmAuthConnector);
     
     return this;
   }
 
-   /**
+  /**
    * auth service connector label for this payment method type, if exists
    * @return pmAuthConnector
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -429,7 +431,7 @@ public class ResponsePaymentMethodTypes {
     this.pmAuthConnector = pmAuthConnector;
   }
 
-  public void setPmAuthConnector(String pmAuthConnector) {
+  public void setPmAuthConnector(@javax.annotation.Nullable String pmAuthConnector) {
     this.pmAuthConnector = JsonNullable.<String>of(pmAuthConnector);
   }
 

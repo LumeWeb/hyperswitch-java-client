@@ -50,27 +50,27 @@ import com.hyperswitch.client.model.RefundResponse;
 import com.hyperswitch.client.model.RequestSurchargeDetails;
 import java.time.OffsetDateTime;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import org.openapitools.jackson.nullable.JsonNullable;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.openapitools.jackson.nullable.JsonNullable;
 import java.util.NoSuchElementException;
-import org.junit.Assert;
-import org.junit.Ignore;
-import org.junit.Test;
-
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Test;
 
 /**
  * Model tests for PaymentsResponse
  */
-public class PaymentsResponseTest {
+class PaymentsResponseTest {
     private final PaymentsResponse model = new PaymentsResponse();
 
     /**
      * Model tests for PaymentsResponse
      */
     @Test
-    public void testPaymentsResponse() {
+    void testPaymentsResponse() {
         // TODO: test PaymentsResponse
     }
 
@@ -78,7 +78,7 @@ public class PaymentsResponseTest {
      * Test the property 'paymentId'
      */
     @Test
-    public void paymentIdTest() {
+    void paymentIdTest() {
         // TODO: test paymentId
     }
 
@@ -86,7 +86,7 @@ public class PaymentsResponseTest {
      * Test the property 'merchantId'
      */
     @Test
-    public void merchantIdTest() {
+    void merchantIdTest() {
         // TODO: test merchantId
     }
 
@@ -94,7 +94,7 @@ public class PaymentsResponseTest {
      * Test the property 'status'
      */
     @Test
-    public void statusTest() {
+    void statusTest() {
         // TODO: test status
     }
 
@@ -102,7 +102,7 @@ public class PaymentsResponseTest {
      * Test the property 'amount'
      */
     @Test
-    public void amountTest() {
+    void amountTest() {
         // TODO: test amount
     }
 
@@ -110,7 +110,7 @@ public class PaymentsResponseTest {
      * Test the property 'netAmount'
      */
     @Test
-    public void netAmountTest() {
+    void netAmountTest() {
         // TODO: test netAmount
     }
 
@@ -118,7 +118,7 @@ public class PaymentsResponseTest {
      * Test the property 'shippingCost'
      */
     @Test
-    public void shippingCostTest() {
+    void shippingCostTest() {
         // TODO: test shippingCost
     }
 
@@ -126,7 +126,7 @@ public class PaymentsResponseTest {
      * Test the property 'amountCapturable'
      */
     @Test
-    public void amountCapturableTest() {
+    void amountCapturableTest() {
         // TODO: test amountCapturable
     }
 
@@ -134,7 +134,7 @@ public class PaymentsResponseTest {
      * Test the property 'amountReceived'
      */
     @Test
-    public void amountReceivedTest() {
+    void amountReceivedTest() {
         // TODO: test amountReceived
     }
 
@@ -142,7 +142,7 @@ public class PaymentsResponseTest {
      * Test the property 'connector'
      */
     @Test
-    public void connectorTest() {
+    void connectorTest() {
         // TODO: test connector
     }
 
@@ -150,7 +150,7 @@ public class PaymentsResponseTest {
      * Test the property 'clientSecret'
      */
     @Test
-    public void clientSecretTest() {
+    void clientSecretTest() {
         // TODO: test clientSecret
     }
 
@@ -158,7 +158,7 @@ public class PaymentsResponseTest {
      * Test the property 'created'
      */
     @Test
-    public void createdTest() {
+    void createdTest() {
         // TODO: test created
     }
 
@@ -166,7 +166,7 @@ public class PaymentsResponseTest {
      * Test the property 'currency'
      */
     @Test
-    public void currencyTest() {
+    void currencyTest() {
         // TODO: test currency
     }
 
@@ -174,7 +174,7 @@ public class PaymentsResponseTest {
      * Test the property 'customerId'
      */
     @Test
-    public void customerIdTest() {
+    void customerIdTest() {
         // TODO: test customerId
     }
 
@@ -182,7 +182,7 @@ public class PaymentsResponseTest {
      * Test the property 'customer'
      */
     @Test
-    public void customerTest() {
+    void customerTest() {
         // TODO: test customer
     }
 
@@ -190,7 +190,7 @@ public class PaymentsResponseTest {
      * Test the property 'description'
      */
     @Test
-    public void descriptionTest() {
+    void descriptionTest() {
         // TODO: test description
     }
 
@@ -198,7 +198,7 @@ public class PaymentsResponseTest {
      * Test the property 'refunds'
      */
     @Test
-    public void refundsTest() {
+    void refundsTest() {
         // TODO: test refunds
     }
 
@@ -206,7 +206,7 @@ public class PaymentsResponseTest {
      * Test the property 'disputes'
      */
     @Test
-    public void disputesTest() {
+    void disputesTest() {
         // TODO: test disputes
     }
 
@@ -214,7 +214,7 @@ public class PaymentsResponseTest {
      * Test the property 'attempts'
      */
     @Test
-    public void attemptsTest() {
+    void attemptsTest() {
         // TODO: test attempts
     }
 
@@ -222,7 +222,7 @@ public class PaymentsResponseTest {
      * Test the property 'captures'
      */
     @Test
-    public void capturesTest() {
+    void capturesTest() {
         // TODO: test captures
     }
 
@@ -230,7 +230,7 @@ public class PaymentsResponseTest {
      * Test the property 'mandateId'
      */
     @Test
-    public void mandateIdTest() {
+    void mandateIdTest() {
         // TODO: test mandateId
     }
 
@@ -238,7 +238,7 @@ public class PaymentsResponseTest {
      * Test the property 'mandateData'
      */
     @Test
-    public void mandateDataTest() {
+    void mandateDataTest() {
         // TODO: test mandateData
     }
 
@@ -246,7 +246,7 @@ public class PaymentsResponseTest {
      * Test the property 'setupFutureUsage'
      */
     @Test
-    public void setupFutureUsageTest() {
+    void setupFutureUsageTest() {
         // TODO: test setupFutureUsage
     }
 
@@ -254,7 +254,7 @@ public class PaymentsResponseTest {
      * Test the property 'offSession'
      */
     @Test
-    public void offSessionTest() {
+    void offSessionTest() {
         // TODO: test offSession
     }
 
@@ -262,7 +262,7 @@ public class PaymentsResponseTest {
      * Test the property 'captureOn'
      */
     @Test
-    public void captureOnTest() {
+    void captureOnTest() {
         // TODO: test captureOn
     }
 
@@ -270,7 +270,7 @@ public class PaymentsResponseTest {
      * Test the property 'captureMethod'
      */
     @Test
-    public void captureMethodTest() {
+    void captureMethodTest() {
         // TODO: test captureMethod
     }
 
@@ -278,7 +278,7 @@ public class PaymentsResponseTest {
      * Test the property 'paymentMethod'
      */
     @Test
-    public void paymentMethodTest() {
+    void paymentMethodTest() {
         // TODO: test paymentMethod
     }
 
@@ -286,7 +286,7 @@ public class PaymentsResponseTest {
      * Test the property 'paymentMethodData'
      */
     @Test
-    public void paymentMethodDataTest() {
+    void paymentMethodDataTest() {
         // TODO: test paymentMethodData
     }
 
@@ -294,7 +294,7 @@ public class PaymentsResponseTest {
      * Test the property 'paymentToken'
      */
     @Test
-    public void paymentTokenTest() {
+    void paymentTokenTest() {
         // TODO: test paymentToken
     }
 
@@ -302,7 +302,7 @@ public class PaymentsResponseTest {
      * Test the property 'shipping'
      */
     @Test
-    public void shippingTest() {
+    void shippingTest() {
         // TODO: test shipping
     }
 
@@ -310,7 +310,7 @@ public class PaymentsResponseTest {
      * Test the property 'billing'
      */
     @Test
-    public void billingTest() {
+    void billingTest() {
         // TODO: test billing
     }
 
@@ -318,7 +318,7 @@ public class PaymentsResponseTest {
      * Test the property 'orderDetails'
      */
     @Test
-    public void orderDetailsTest() {
+    void orderDetailsTest() {
         // TODO: test orderDetails
     }
 
@@ -326,7 +326,7 @@ public class PaymentsResponseTest {
      * Test the property 'email'
      */
     @Test
-    public void emailTest() {
+    void emailTest() {
         // TODO: test email
     }
 
@@ -334,7 +334,7 @@ public class PaymentsResponseTest {
      * Test the property 'name'
      */
     @Test
-    public void nameTest() {
+    void nameTest() {
         // TODO: test name
     }
 
@@ -342,7 +342,7 @@ public class PaymentsResponseTest {
      * Test the property 'phone'
      */
     @Test
-    public void phoneTest() {
+    void phoneTest() {
         // TODO: test phone
     }
 
@@ -350,7 +350,7 @@ public class PaymentsResponseTest {
      * Test the property 'returnUrl'
      */
     @Test
-    public void returnUrlTest() {
+    void returnUrlTest() {
         // TODO: test returnUrl
     }
 
@@ -358,7 +358,7 @@ public class PaymentsResponseTest {
      * Test the property 'authenticationType'
      */
     @Test
-    public void authenticationTypeTest() {
+    void authenticationTypeTest() {
         // TODO: test authenticationType
     }
 
@@ -366,7 +366,7 @@ public class PaymentsResponseTest {
      * Test the property 'statementDescriptorName'
      */
     @Test
-    public void statementDescriptorNameTest() {
+    void statementDescriptorNameTest() {
         // TODO: test statementDescriptorName
     }
 
@@ -374,7 +374,7 @@ public class PaymentsResponseTest {
      * Test the property 'statementDescriptorSuffix'
      */
     @Test
-    public void statementDescriptorSuffixTest() {
+    void statementDescriptorSuffixTest() {
         // TODO: test statementDescriptorSuffix
     }
 
@@ -382,7 +382,7 @@ public class PaymentsResponseTest {
      * Test the property 'nextAction'
      */
     @Test
-    public void nextActionTest() {
+    void nextActionTest() {
         // TODO: test nextAction
     }
 
@@ -390,7 +390,7 @@ public class PaymentsResponseTest {
      * Test the property 'cancellationReason'
      */
     @Test
-    public void cancellationReasonTest() {
+    void cancellationReasonTest() {
         // TODO: test cancellationReason
     }
 
@@ -398,7 +398,7 @@ public class PaymentsResponseTest {
      * Test the property 'errorCode'
      */
     @Test
-    public void errorCodeTest() {
+    void errorCodeTest() {
         // TODO: test errorCode
     }
 
@@ -406,7 +406,7 @@ public class PaymentsResponseTest {
      * Test the property 'errorMessage'
      */
     @Test
-    public void errorMessageTest() {
+    void errorMessageTest() {
         // TODO: test errorMessage
     }
 
@@ -414,7 +414,7 @@ public class PaymentsResponseTest {
      * Test the property 'unifiedCode'
      */
     @Test
-    public void unifiedCodeTest() {
+    void unifiedCodeTest() {
         // TODO: test unifiedCode
     }
 
@@ -422,7 +422,7 @@ public class PaymentsResponseTest {
      * Test the property 'unifiedMessage'
      */
     @Test
-    public void unifiedMessageTest() {
+    void unifiedMessageTest() {
         // TODO: test unifiedMessage
     }
 
@@ -430,7 +430,7 @@ public class PaymentsResponseTest {
      * Test the property 'paymentExperience'
      */
     @Test
-    public void paymentExperienceTest() {
+    void paymentExperienceTest() {
         // TODO: test paymentExperience
     }
 
@@ -438,7 +438,7 @@ public class PaymentsResponseTest {
      * Test the property 'paymentMethodType'
      */
     @Test
-    public void paymentMethodTypeTest() {
+    void paymentMethodTypeTest() {
         // TODO: test paymentMethodType
     }
 
@@ -446,7 +446,7 @@ public class PaymentsResponseTest {
      * Test the property 'connectorLabel'
      */
     @Test
-    public void connectorLabelTest() {
+    void connectorLabelTest() {
         // TODO: test connectorLabel
     }
 
@@ -454,7 +454,7 @@ public class PaymentsResponseTest {
      * Test the property 'businessCountry'
      */
     @Test
-    public void businessCountryTest() {
+    void businessCountryTest() {
         // TODO: test businessCountry
     }
 
@@ -462,7 +462,7 @@ public class PaymentsResponseTest {
      * Test the property 'businessLabel'
      */
     @Test
-    public void businessLabelTest() {
+    void businessLabelTest() {
         // TODO: test businessLabel
     }
 
@@ -470,7 +470,7 @@ public class PaymentsResponseTest {
      * Test the property 'businessSubLabel'
      */
     @Test
-    public void businessSubLabelTest() {
+    void businessSubLabelTest() {
         // TODO: test businessSubLabel
     }
 
@@ -478,7 +478,7 @@ public class PaymentsResponseTest {
      * Test the property 'allowedPaymentMethodTypes'
      */
     @Test
-    public void allowedPaymentMethodTypesTest() {
+    void allowedPaymentMethodTypesTest() {
         // TODO: test allowedPaymentMethodTypes
     }
 
@@ -486,7 +486,7 @@ public class PaymentsResponseTest {
      * Test the property 'ephemeralKey'
      */
     @Test
-    public void ephemeralKeyTest() {
+    void ephemeralKeyTest() {
         // TODO: test ephemeralKey
     }
 
@@ -494,7 +494,7 @@ public class PaymentsResponseTest {
      * Test the property 'manualRetryAllowed'
      */
     @Test
-    public void manualRetryAllowedTest() {
+    void manualRetryAllowedTest() {
         // TODO: test manualRetryAllowed
     }
 
@@ -502,7 +502,7 @@ public class PaymentsResponseTest {
      * Test the property 'connectorTransactionId'
      */
     @Test
-    public void connectorTransactionIdTest() {
+    void connectorTransactionIdTest() {
         // TODO: test connectorTransactionId
     }
 
@@ -510,7 +510,7 @@ public class PaymentsResponseTest {
      * Test the property 'frmMessage'
      */
     @Test
-    public void frmMessageTest() {
+    void frmMessageTest() {
         // TODO: test frmMessage
     }
 
@@ -518,7 +518,7 @@ public class PaymentsResponseTest {
      * Test the property 'metadata'
      */
     @Test
-    public void metadataTest() {
+    void metadataTest() {
         // TODO: test metadata
     }
 
@@ -526,7 +526,7 @@ public class PaymentsResponseTest {
      * Test the property 'connectorMetadata'
      */
     @Test
-    public void connectorMetadataTest() {
+    void connectorMetadataTest() {
         // TODO: test connectorMetadata
     }
 
@@ -534,7 +534,7 @@ public class PaymentsResponseTest {
      * Test the property 'featureMetadata'
      */
     @Test
-    public void featureMetadataTest() {
+    void featureMetadataTest() {
         // TODO: test featureMetadata
     }
 
@@ -542,7 +542,7 @@ public class PaymentsResponseTest {
      * Test the property 'referenceId'
      */
     @Test
-    public void referenceIdTest() {
+    void referenceIdTest() {
         // TODO: test referenceId
     }
 
@@ -550,7 +550,7 @@ public class PaymentsResponseTest {
      * Test the property 'paymentLink'
      */
     @Test
-    public void paymentLinkTest() {
+    void paymentLinkTest() {
         // TODO: test paymentLink
     }
 
@@ -558,7 +558,7 @@ public class PaymentsResponseTest {
      * Test the property 'profileId'
      */
     @Test
-    public void profileIdTest() {
+    void profileIdTest() {
         // TODO: test profileId
     }
 
@@ -566,7 +566,7 @@ public class PaymentsResponseTest {
      * Test the property 'surchargeDetails'
      */
     @Test
-    public void surchargeDetailsTest() {
+    void surchargeDetailsTest() {
         // TODO: test surchargeDetails
     }
 
@@ -574,7 +574,7 @@ public class PaymentsResponseTest {
      * Test the property 'attemptCount'
      */
     @Test
-    public void attemptCountTest() {
+    void attemptCountTest() {
         // TODO: test attemptCount
     }
 
@@ -582,7 +582,7 @@ public class PaymentsResponseTest {
      * Test the property 'merchantDecision'
      */
     @Test
-    public void merchantDecisionTest() {
+    void merchantDecisionTest() {
         // TODO: test merchantDecision
     }
 
@@ -590,7 +590,7 @@ public class PaymentsResponseTest {
      * Test the property 'merchantConnectorId'
      */
     @Test
-    public void merchantConnectorIdTest() {
+    void merchantConnectorIdTest() {
         // TODO: test merchantConnectorId
     }
 
@@ -598,7 +598,7 @@ public class PaymentsResponseTest {
      * Test the property 'incrementalAuthorizationAllowed'
      */
     @Test
-    public void incrementalAuthorizationAllowedTest() {
+    void incrementalAuthorizationAllowedTest() {
         // TODO: test incrementalAuthorizationAllowed
     }
 
@@ -606,7 +606,7 @@ public class PaymentsResponseTest {
      * Test the property 'authorizationCount'
      */
     @Test
-    public void authorizationCountTest() {
+    void authorizationCountTest() {
         // TODO: test authorizationCount
     }
 
@@ -614,7 +614,7 @@ public class PaymentsResponseTest {
      * Test the property 'incrementalAuthorizations'
      */
     @Test
-    public void incrementalAuthorizationsTest() {
+    void incrementalAuthorizationsTest() {
         // TODO: test incrementalAuthorizations
     }
 
@@ -622,7 +622,7 @@ public class PaymentsResponseTest {
      * Test the property 'externalAuthenticationDetails'
      */
     @Test
-    public void externalAuthenticationDetailsTest() {
+    void externalAuthenticationDetailsTest() {
         // TODO: test externalAuthenticationDetails
     }
 
@@ -630,7 +630,7 @@ public class PaymentsResponseTest {
      * Test the property 'external3dsAuthenticationAttempted'
      */
     @Test
-    public void external3dsAuthenticationAttemptedTest() {
+    void external3dsAuthenticationAttemptedTest() {
         // TODO: test external3dsAuthenticationAttempted
     }
 
@@ -638,7 +638,7 @@ public class PaymentsResponseTest {
      * Test the property 'expiresOn'
      */
     @Test
-    public void expiresOnTest() {
+    void expiresOnTest() {
         // TODO: test expiresOn
     }
 
@@ -646,7 +646,7 @@ public class PaymentsResponseTest {
      * Test the property 'fingerprint'
      */
     @Test
-    public void fingerprintTest() {
+    void fingerprintTest() {
         // TODO: test fingerprint
     }
 
@@ -654,7 +654,7 @@ public class PaymentsResponseTest {
      * Test the property 'browserInfo'
      */
     @Test
-    public void browserInfoTest() {
+    void browserInfoTest() {
         // TODO: test browserInfo
     }
 
@@ -662,7 +662,7 @@ public class PaymentsResponseTest {
      * Test the property 'paymentMethodId'
      */
     @Test
-    public void paymentMethodIdTest() {
+    void paymentMethodIdTest() {
         // TODO: test paymentMethodId
     }
 
@@ -670,7 +670,7 @@ public class PaymentsResponseTest {
      * Test the property 'paymentMethodStatus'
      */
     @Test
-    public void paymentMethodStatusTest() {
+    void paymentMethodStatusTest() {
         // TODO: test paymentMethodStatus
     }
 
@@ -678,7 +678,7 @@ public class PaymentsResponseTest {
      * Test the property 'updated'
      */
     @Test
-    public void updatedTest() {
+    void updatedTest() {
         // TODO: test updated
     }
 
@@ -686,7 +686,7 @@ public class PaymentsResponseTest {
      * Test the property 'charges'
      */
     @Test
-    public void chargesTest() {
+    void chargesTest() {
         // TODO: test charges
     }
 
@@ -694,7 +694,7 @@ public class PaymentsResponseTest {
      * Test the property 'frmMetadata'
      */
     @Test
-    public void frmMetadataTest() {
+    void frmMetadataTest() {
         // TODO: test frmMetadata
     }
 
@@ -702,7 +702,7 @@ public class PaymentsResponseTest {
      * Test the property 'merchantOrderReferenceId'
      */
     @Test
-    public void merchantOrderReferenceIdTest() {
+    void merchantOrderReferenceIdTest() {
         // TODO: test merchantOrderReferenceId
     }
 
@@ -710,7 +710,7 @@ public class PaymentsResponseTest {
      * Test the property 'orderTaxAmount'
      */
     @Test
-    public void orderTaxAmountTest() {
+    void orderTaxAmountTest() {
         // TODO: test orderTaxAmount
     }
 
@@ -718,7 +718,7 @@ public class PaymentsResponseTest {
      * Test the property 'connectorMandateId'
      */
     @Test
-    public void connectorMandateIdTest() {
+    void connectorMandateIdTest() {
         // TODO: test connectorMandateId
     }
 

@@ -18,22 +18,21 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonTypeName;
 import com.fasterxml.jackson.annotation.JsonValue;
-import org.junit.Assert;
-import org.junit.Ignore;
-import org.junit.Test;
-
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Test;
 
 /**
  * Model tests for ElementSizeOneOf1
  */
-public class ElementSizeOneOf1Test {
+class ElementSizeOneOf1Test {
     private final ElementSizeOneOf1 model = new ElementSizeOneOf1();
 
     /**
      * Model tests for ElementSizeOneOf1
      */
     @Test
-    public void testElementSizeOneOf1() {
+    void testElementSizeOneOf1() {
         // TODO: test ElementSizeOneOf1
     }
 
@@ -41,7 +40,7 @@ public class ElementSizeOneOf1Test {
      * Test the property 'percentage'
      */
     @Test
-    public void percentageTest() {
+    void percentageTest() {
         // TODO: test percentage
     }
 

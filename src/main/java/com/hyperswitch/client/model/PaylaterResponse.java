@@ -37,24 +37,25 @@ import java.util.StringJoiner;
 @JsonPropertyOrder({
   PaylaterResponse.JSON_PROPERTY_KLARNA_SDK
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class PaylaterResponse {
   public static final String JSON_PROPERTY_KLARNA_SDK = "klarna_sdk";
+  @javax.annotation.Nullable
   private JsonNullable<KlarnaSdkPaymentMethodResponse> klarnaSdk = JsonNullable.<KlarnaSdkPaymentMethodResponse>undefined();
 
   public PaylaterResponse() {
   }
 
-  public PaylaterResponse klarnaSdk(KlarnaSdkPaymentMethodResponse klarnaSdk) {
+  public PaylaterResponse klarnaSdk(@javax.annotation.Nullable KlarnaSdkPaymentMethodResponse klarnaSdk) {
     this.klarnaSdk = JsonNullable.<KlarnaSdkPaymentMethodResponse>of(klarnaSdk);
     
     return this;
   }
 
-   /**
+  /**
    * Get klarnaSdk
    * @return klarnaSdk
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -74,7 +75,7 @@ public class PaylaterResponse {
     this.klarnaSdk = klarnaSdk;
   }
 
-  public void setKlarnaSdk(KlarnaSdkPaymentMethodResponse klarnaSdk) {
+  public void setKlarnaSdk(@javax.annotation.Nullable KlarnaSdkPaymentMethodResponse klarnaSdk) {
     this.klarnaSdk = JsonNullable.<KlarnaSdkPaymentMethodResponse>of(klarnaSdk);
   }
 

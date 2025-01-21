@@ -34,24 +34,25 @@ import java.util.StringJoiner;
   MandateTypeOneOf1.JSON_PROPERTY_MULTI_USE
 })
 @JsonTypeName("MandateType_oneOf_1")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class MandateTypeOneOf1 {
   public static final String JSON_PROPERTY_MULTI_USE = "multi_use";
+  @javax.annotation.Nullable
   private MandateAmountData multiUse;
 
   public MandateTypeOneOf1() {
   }
 
-  public MandateTypeOneOf1 multiUse(MandateAmountData multiUse) {
+  public MandateTypeOneOf1 multiUse(@javax.annotation.Nullable MandateAmountData multiUse) {
     
     this.multiUse = multiUse;
     return this;
   }
 
-   /**
+  /**
    * Get multiUse
    * @return multiUse
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_MULTI_USE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -63,7 +64,7 @@ public class MandateTypeOneOf1 {
 
   @JsonProperty(JSON_PROPERTY_MULTI_USE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setMultiUse(MandateAmountData multiUse) {
+  public void setMultiUse(@javax.annotation.Nullable MandateAmountData multiUse) {
     this.multiUse = multiUse;
   }
 

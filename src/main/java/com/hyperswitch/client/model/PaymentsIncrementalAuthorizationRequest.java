@@ -37,27 +37,29 @@ import java.util.StringJoiner;
   PaymentsIncrementalAuthorizationRequest.JSON_PROPERTY_AMOUNT,
   PaymentsIncrementalAuthorizationRequest.JSON_PROPERTY_REASON
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class PaymentsIncrementalAuthorizationRequest {
   public static final String JSON_PROPERTY_AMOUNT = "amount";
+  @javax.annotation.Nonnull
   private Long amount;
 
   public static final String JSON_PROPERTY_REASON = "reason";
+  @javax.annotation.Nullable
   private JsonNullable<String> reason = JsonNullable.<String>undefined();
 
   public PaymentsIncrementalAuthorizationRequest() {
   }
 
-  public PaymentsIncrementalAuthorizationRequest amount(Long amount) {
+  public PaymentsIncrementalAuthorizationRequest amount(@javax.annotation.Nonnull Long amount) {
     
     this.amount = amount;
     return this;
   }
 
-   /**
+  /**
    * The total amount including previously authorized amount and additional amount
    * @return amount
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_AMOUNT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -69,21 +71,20 @@ public class PaymentsIncrementalAuthorizationRequest {
 
   @JsonProperty(JSON_PROPERTY_AMOUNT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setAmount(Long amount) {
+  public void setAmount(@javax.annotation.Nonnull Long amount) {
     this.amount = amount;
   }
 
-
-  public PaymentsIncrementalAuthorizationRequest reason(String reason) {
+  public PaymentsIncrementalAuthorizationRequest reason(@javax.annotation.Nullable String reason) {
     this.reason = JsonNullable.<String>of(reason);
     
     return this;
   }
 
-   /**
+  /**
    * Reason for incremental authorization
    * @return reason
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -103,7 +104,7 @@ public class PaymentsIncrementalAuthorizationRequest {
     this.reason = reason;
   }
 
-  public void setReason(String reason) {
+  public void setReason(@javax.annotation.Nullable String reason) {
     this.reason = JsonNullable.<String>of(reason);
   }
 

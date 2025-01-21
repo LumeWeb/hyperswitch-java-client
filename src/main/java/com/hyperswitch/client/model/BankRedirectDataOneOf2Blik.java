@@ -37,24 +37,25 @@ import java.util.StringJoiner;
   BankRedirectDataOneOf2Blik.JSON_PROPERTY_BLIK_CODE
 })
 @JsonTypeName("BankRedirectData_oneOf_2_blik")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class BankRedirectDataOneOf2Blik {
   public static final String JSON_PROPERTY_BLIK_CODE = "blik_code";
+  @javax.annotation.Nullable
   private JsonNullable<String> blikCode = JsonNullable.<String>undefined();
 
   public BankRedirectDataOneOf2Blik() {
   }
 
-  public BankRedirectDataOneOf2Blik blikCode(String blikCode) {
+  public BankRedirectDataOneOf2Blik blikCode(@javax.annotation.Nullable String blikCode) {
     this.blikCode = JsonNullable.<String>of(blikCode);
     
     return this;
   }
 
-   /**
+  /**
    * Get blikCode
    * @return blikCode
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -74,7 +75,7 @@ public class BankRedirectDataOneOf2Blik {
     this.blikCode = blikCode;
   }
 
-  public void setBlikCode(String blikCode) {
+  public void setBlikCode(@javax.annotation.Nullable String blikCode) {
     this.blikCode = JsonNullable.<String>of(blikCode);
   }
 

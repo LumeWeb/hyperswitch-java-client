@@ -24,22 +24,21 @@ import org.openapitools.jackson.nullable.JsonNullable;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.openapitools.jackson.nullable.JsonNullable;
 import java.util.NoSuchElementException;
-import org.junit.Assert;
-import org.junit.Ignore;
-import org.junit.Test;
-
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Test;
 
 /**
  * Model tests for SurchargeDetailsResponse
  */
-public class SurchargeDetailsResponseTest {
+class SurchargeDetailsResponseTest {
     private final SurchargeDetailsResponse model = new SurchargeDetailsResponse();
 
     /**
      * Model tests for SurchargeDetailsResponse
      */
     @Test
-    public void testSurchargeDetailsResponse() {
+    void testSurchargeDetailsResponse() {
         // TODO: test SurchargeDetailsResponse
     }
 
@@ -47,7 +46,7 @@ public class SurchargeDetailsResponseTest {
      * Test the property 'surcharge'
      */
     @Test
-    public void surchargeTest() {
+    void surchargeTest() {
         // TODO: test surcharge
     }
 
@@ -55,7 +54,7 @@ public class SurchargeDetailsResponseTest {
      * Test the property 'taxOnSurcharge'
      */
     @Test
-    public void taxOnSurchargeTest() {
+    void taxOnSurchargeTest() {
         // TODO: test taxOnSurcharge
     }
 
@@ -63,7 +62,7 @@ public class SurchargeDetailsResponseTest {
      * Test the property 'displaySurchargeAmount'
      */
     @Test
-    public void displaySurchargeAmountTest() {
+    void displaySurchargeAmountTest() {
         // TODO: test displaySurchargeAmount
     }
 
@@ -71,7 +70,7 @@ public class SurchargeDetailsResponseTest {
      * Test the property 'displayTaxOnSurchargeAmount'
      */
     @Test
-    public void displayTaxOnSurchargeAmountTest() {
+    void displayTaxOnSurchargeAmountTest() {
         // TODO: test displayTaxOnSurchargeAmount
     }
 
@@ -79,7 +78,7 @@ public class SurchargeDetailsResponseTest {
      * Test the property 'displayTotalSurchargeAmount'
      */
     @Test
-    public void displayTotalSurchargeAmountTest() {
+    void displayTotalSurchargeAmountTest() {
         // TODO: test displayTotalSurchargeAmount
     }
 

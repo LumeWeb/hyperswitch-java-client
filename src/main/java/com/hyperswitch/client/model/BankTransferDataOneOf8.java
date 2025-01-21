@@ -34,24 +34,25 @@ import java.util.StringJoiner;
   BankTransferDataOneOf8.JSON_PROPERTY_CIMB_VA_BANK_TRANSFER
 })
 @JsonTypeName("BankTransferData_oneOf_8")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class BankTransferDataOneOf8 {
   public static final String JSON_PROPERTY_CIMB_VA_BANK_TRANSFER = "cimb_va_bank_transfer";
+  @javax.annotation.Nonnull
   private BankTransferDataOneOf4PermataBankTransfer cimbVaBankTransfer;
 
   public BankTransferDataOneOf8() {
   }
 
-  public BankTransferDataOneOf8 cimbVaBankTransfer(BankTransferDataOneOf4PermataBankTransfer cimbVaBankTransfer) {
+  public BankTransferDataOneOf8 cimbVaBankTransfer(@javax.annotation.Nonnull BankTransferDataOneOf4PermataBankTransfer cimbVaBankTransfer) {
     
     this.cimbVaBankTransfer = cimbVaBankTransfer;
     return this;
   }
 
-   /**
+  /**
    * Get cimbVaBankTransfer
    * @return cimbVaBankTransfer
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_CIMB_VA_BANK_TRANSFER)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -63,7 +64,7 @@ public class BankTransferDataOneOf8 {
 
   @JsonProperty(JSON_PROPERTY_CIMB_VA_BANK_TRANSFER)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setCimbVaBankTransfer(BankTransferDataOneOf4PermataBankTransfer cimbVaBankTransfer) {
+  public void setCimbVaBankTransfer(@javax.annotation.Nonnull BankTransferDataOneOf4PermataBankTransfer cimbVaBankTransfer) {
     this.cimbVaBankTransfer = cimbVaBankTransfer;
   }
 

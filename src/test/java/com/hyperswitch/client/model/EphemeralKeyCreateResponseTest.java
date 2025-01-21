@@ -18,22 +18,21 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonTypeName;
 import com.fasterxml.jackson.annotation.JsonValue;
-import org.junit.Assert;
-import org.junit.Ignore;
-import org.junit.Test;
-
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Test;
 
 /**
  * Model tests for EphemeralKeyCreateResponse
  */
-public class EphemeralKeyCreateResponseTest {
+class EphemeralKeyCreateResponseTest {
     private final EphemeralKeyCreateResponse model = new EphemeralKeyCreateResponse();
 
     /**
      * Model tests for EphemeralKeyCreateResponse
      */
     @Test
-    public void testEphemeralKeyCreateResponse() {
+    void testEphemeralKeyCreateResponse() {
         // TODO: test EphemeralKeyCreateResponse
     }
 
@@ -41,7 +40,7 @@ public class EphemeralKeyCreateResponseTest {
      * Test the property 'customerId'
      */
     @Test
-    public void customerIdTest() {
+    void customerIdTest() {
         // TODO: test customerId
     }
 
@@ -49,7 +48,7 @@ public class EphemeralKeyCreateResponseTest {
      * Test the property 'createdAt'
      */
     @Test
-    public void createdAtTest() {
+    void createdAtTest() {
         // TODO: test createdAt
     }
 
@@ -57,7 +56,7 @@ public class EphemeralKeyCreateResponseTest {
      * Test the property 'expires'
      */
     @Test
-    public void expiresTest() {
+    void expiresTest() {
         // TODO: test expires
     }
 
@@ -65,7 +64,7 @@ public class EphemeralKeyCreateResponseTest {
      * Test the property 'secret'
      */
     @Test
-    public void secretTest() {
+    void secretTest() {
         // TODO: test secret
     }
 

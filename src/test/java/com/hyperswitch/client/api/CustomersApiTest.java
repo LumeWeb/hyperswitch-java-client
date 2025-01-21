@@ -17,9 +17,9 @@ import com.hyperswitch.client.ApiException;
 import com.hyperswitch.client.model.CustomerDeleteResponse;
 import com.hyperswitch.client.model.CustomerRequest;
 import com.hyperswitch.client.model.CustomerResponse;
-import org.junit.Test;
-import org.junit.Ignore;
-import org.junit.Assert;
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Test;
 
 import java.time.LocalDate;
 import java.time.OffsetDateTime;
@@ -31,7 +31,7 @@ import java.util.Map;
 /**
  * API tests for CustomersApi
  */
-@Ignore
+@Disabled
 public class CustomersApiTest {
 
     private final CustomersApi api = new CustomersApi();

@@ -24,22 +24,21 @@ import org.openapitools.jackson.nullable.JsonNullable;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.openapitools.jackson.nullable.JsonNullable;
 import java.util.NoSuchElementException;
-import org.junit.Assert;
-import org.junit.Ignore;
-import org.junit.Test;
-
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Test;
 
 /**
  * Model tests for Address
  */
-public class AddressTest {
+class AddressTest {
     private final Address model = new Address();
 
     /**
      * Model tests for Address
      */
     @Test
-    public void testAddress() {
+    void testAddress() {
         // TODO: test Address
     }
 
@@ -47,7 +46,7 @@ public class AddressTest {
      * Test the property 'address'
      */
     @Test
-    public void addressTest() {
+    void addressTest() {
         // TODO: test address
     }
 
@@ -55,7 +54,7 @@ public class AddressTest {
      * Test the property 'phone'
      */
     @Test
-    public void phoneTest() {
+    void phoneTest() {
         // TODO: test phone
     }
 
@@ -63,7 +62,7 @@ public class AddressTest {
      * Test the property 'email'
      */
     @Test
-    public void emailTest() {
+    void emailTest() {
         // TODO: test email
     }
 

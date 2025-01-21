@@ -25,22 +25,21 @@ import org.openapitools.jackson.nullable.JsonNullable;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.openapitools.jackson.nullable.JsonNullable;
 import java.util.NoSuchElementException;
-import org.junit.Assert;
-import org.junit.Ignore;
-import org.junit.Test;
-
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Test;
 
 /**
  * Model tests for DisputeResponsePaymentsRetrieve
  */
-public class DisputeResponsePaymentsRetrieveTest {
+class DisputeResponsePaymentsRetrieveTest {
     private final DisputeResponsePaymentsRetrieve model = new DisputeResponsePaymentsRetrieve();
 
     /**
      * Model tests for DisputeResponsePaymentsRetrieve
      */
     @Test
-    public void testDisputeResponsePaymentsRetrieve() {
+    void testDisputeResponsePaymentsRetrieve() {
         // TODO: test DisputeResponsePaymentsRetrieve
     }
 
@@ -48,7 +47,7 @@ public class DisputeResponsePaymentsRetrieveTest {
      * Test the property 'disputeId'
      */
     @Test
-    public void disputeIdTest() {
+    void disputeIdTest() {
         // TODO: test disputeId
     }
 
@@ -56,7 +55,7 @@ public class DisputeResponsePaymentsRetrieveTest {
      * Test the property 'disputeStage'
      */
     @Test
-    public void disputeStageTest() {
+    void disputeStageTest() {
         // TODO: test disputeStage
     }
 
@@ -64,7 +63,7 @@ public class DisputeResponsePaymentsRetrieveTest {
      * Test the property 'disputeStatus'
      */
     @Test
-    public void disputeStatusTest() {
+    void disputeStatusTest() {
         // TODO: test disputeStatus
     }
 
@@ -72,7 +71,7 @@ public class DisputeResponsePaymentsRetrieveTest {
      * Test the property 'connectorStatus'
      */
     @Test
-    public void connectorStatusTest() {
+    void connectorStatusTest() {
         // TODO: test connectorStatus
     }
 
@@ -80,7 +79,7 @@ public class DisputeResponsePaymentsRetrieveTest {
      * Test the property 'connectorDisputeId'
      */
     @Test
-    public void connectorDisputeIdTest() {
+    void connectorDisputeIdTest() {
         // TODO: test connectorDisputeId
     }
 
@@ -88,7 +87,7 @@ public class DisputeResponsePaymentsRetrieveTest {
      * Test the property 'connectorReason'
      */
     @Test
-    public void connectorReasonTest() {
+    void connectorReasonTest() {
         // TODO: test connectorReason
     }
 
@@ -96,7 +95,7 @@ public class DisputeResponsePaymentsRetrieveTest {
      * Test the property 'connectorReasonCode'
      */
     @Test
-    public void connectorReasonCodeTest() {
+    void connectorReasonCodeTest() {
         // TODO: test connectorReasonCode
     }
 
@@ -104,7 +103,7 @@ public class DisputeResponsePaymentsRetrieveTest {
      * Test the property 'challengeRequiredBy'
      */
     @Test
-    public void challengeRequiredByTest() {
+    void challengeRequiredByTest() {
         // TODO: test challengeRequiredBy
     }
 
@@ -112,7 +111,7 @@ public class DisputeResponsePaymentsRetrieveTest {
      * Test the property 'connectorCreatedAt'
      */
     @Test
-    public void connectorCreatedAtTest() {
+    void connectorCreatedAtTest() {
         // TODO: test connectorCreatedAt
     }
 
@@ -120,7 +119,7 @@ public class DisputeResponsePaymentsRetrieveTest {
      * Test the property 'connectorUpdatedAt'
      */
     @Test
-    public void connectorUpdatedAtTest() {
+    void connectorUpdatedAtTest() {
         // TODO: test connectorUpdatedAt
     }
 
@@ -128,7 +127,7 @@ public class DisputeResponsePaymentsRetrieveTest {
      * Test the property 'createdAt'
      */
     @Test
-    public void createdAtTest() {
+    void createdAtTest() {
         // TODO: test createdAt
     }
 

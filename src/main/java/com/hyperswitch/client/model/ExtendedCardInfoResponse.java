@@ -32,24 +32,25 @@ import java.util.StringJoiner;
 @JsonPropertyOrder({
   ExtendedCardInfoResponse.JSON_PROPERTY_PAYLOAD
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class ExtendedCardInfoResponse {
   public static final String JSON_PROPERTY_PAYLOAD = "payload";
+  @javax.annotation.Nonnull
   private String payload;
 
   public ExtendedCardInfoResponse() {
   }
 
-  public ExtendedCardInfoResponse payload(String payload) {
+  public ExtendedCardInfoResponse payload(@javax.annotation.Nonnull String payload) {
     
     this.payload = payload;
     return this;
   }
 
-   /**
+  /**
    * Get payload
    * @return payload
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_PAYLOAD)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -61,7 +62,7 @@ public class ExtendedCardInfoResponse {
 
   @JsonProperty(JSON_PROPERTY_PAYLOAD)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setPayload(String payload) {
+  public void setPayload(@javax.annotation.Nonnull String payload) {
     this.payload = payload;
   }
 

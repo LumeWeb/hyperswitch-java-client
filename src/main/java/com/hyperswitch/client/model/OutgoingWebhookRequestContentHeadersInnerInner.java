@@ -28,10 +28,11 @@ import java.util.StringJoiner;
 @JsonPropertyOrder({
 })
 @JsonTypeName("OutgoingWebhookRequestContent_headers_inner_inner")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class OutgoingWebhookRequestContentHeadersInnerInner {
   public OutgoingWebhookRequestContentHeadersInnerInner() {
   }
+
   @Override
   public boolean equals(Object o) {
     if (this == o) {

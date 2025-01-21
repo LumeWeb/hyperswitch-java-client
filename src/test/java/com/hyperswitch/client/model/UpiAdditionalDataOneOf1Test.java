@@ -18,22 +18,21 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonTypeName;
 import com.fasterxml.jackson.annotation.JsonValue;
-import org.junit.Assert;
-import org.junit.Ignore;
-import org.junit.Test;
-
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Test;
 
 /**
  * Model tests for UpiAdditionalDataOneOf1
  */
-public class UpiAdditionalDataOneOf1Test {
+class UpiAdditionalDataOneOf1Test {
     private final UpiAdditionalDataOneOf1 model = new UpiAdditionalDataOneOf1();
 
     /**
      * Model tests for UpiAdditionalDataOneOf1
      */
     @Test
-    public void testUpiAdditionalDataOneOf1() {
+    void testUpiAdditionalDataOneOf1() {
         // TODO: test UpiAdditionalDataOneOf1
     }
 
@@ -41,7 +40,7 @@ public class UpiAdditionalDataOneOf1Test {
      * Test the property 'upiIntent'
      */
     @Test
-    public void upiIntentTest() {
+    void upiIntentTest() {
         // TODO: test upiIntent
     }
 

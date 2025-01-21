@@ -33,27 +33,29 @@ import java.util.StringJoiner;
   PaymentProcessingDetails.JSON_PROPERTY_PAYMENT_PROCESSING_CERTIFICATE,
   PaymentProcessingDetails.JSON_PROPERTY_PAYMENT_PROCESSING_CERTIFICATE_KEY
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class PaymentProcessingDetails {
   public static final String JSON_PROPERTY_PAYMENT_PROCESSING_CERTIFICATE = "payment_processing_certificate";
+  @javax.annotation.Nonnull
   private String paymentProcessingCertificate;
 
   public static final String JSON_PROPERTY_PAYMENT_PROCESSING_CERTIFICATE_KEY = "payment_processing_certificate_key";
+  @javax.annotation.Nonnull
   private String paymentProcessingCertificateKey;
 
   public PaymentProcessingDetails() {
   }
 
-  public PaymentProcessingDetails paymentProcessingCertificate(String paymentProcessingCertificate) {
+  public PaymentProcessingDetails paymentProcessingCertificate(@javax.annotation.Nonnull String paymentProcessingCertificate) {
     
     this.paymentProcessingCertificate = paymentProcessingCertificate;
     return this;
   }
 
-   /**
+  /**
    * Get paymentProcessingCertificate
    * @return paymentProcessingCertificate
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_PAYMENT_PROCESSING_CERTIFICATE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -65,21 +67,20 @@ public class PaymentProcessingDetails {
 
   @JsonProperty(JSON_PROPERTY_PAYMENT_PROCESSING_CERTIFICATE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setPaymentProcessingCertificate(String paymentProcessingCertificate) {
+  public void setPaymentProcessingCertificate(@javax.annotation.Nonnull String paymentProcessingCertificate) {
     this.paymentProcessingCertificate = paymentProcessingCertificate;
   }
 
-
-  public PaymentProcessingDetails paymentProcessingCertificateKey(String paymentProcessingCertificateKey) {
+  public PaymentProcessingDetails paymentProcessingCertificateKey(@javax.annotation.Nonnull String paymentProcessingCertificateKey) {
     
     this.paymentProcessingCertificateKey = paymentProcessingCertificateKey;
     return this;
   }
 
-   /**
+  /**
    * Get paymentProcessingCertificateKey
    * @return paymentProcessingCertificateKey
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_PAYMENT_PROCESSING_CERTIFICATE_KEY)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -91,7 +92,7 @@ public class PaymentProcessingDetails {
 
   @JsonProperty(JSON_PROPERTY_PAYMENT_PROCESSING_CERTIFICATE_KEY)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setPaymentProcessingCertificateKey(String paymentProcessingCertificateKey) {
+  public void setPaymentProcessingCertificateKey(@javax.annotation.Nonnull String paymentProcessingCertificateKey) {
     this.paymentProcessingCertificateKey = paymentProcessingCertificateKey;
   }
 

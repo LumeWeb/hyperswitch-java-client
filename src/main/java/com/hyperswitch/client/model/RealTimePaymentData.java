@@ -39,33 +39,37 @@ import java.util.StringJoiner;
   RealTimePaymentData.JSON_PROPERTY_PROMPT_PAY,
   RealTimePaymentData.JSON_PROPERTY_VIET_QR
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class RealTimePaymentData {
   public static final String JSON_PROPERTY_FPS = "fps";
+  @javax.annotation.Nonnull
   private Object fps;
 
   public static final String JSON_PROPERTY_DUIT_NOW = "duit_now";
+  @javax.annotation.Nonnull
   private Object duitNow;
 
   public static final String JSON_PROPERTY_PROMPT_PAY = "prompt_pay";
+  @javax.annotation.Nonnull
   private Object promptPay;
 
   public static final String JSON_PROPERTY_VIET_QR = "viet_qr";
+  @javax.annotation.Nonnull
   private Object vietQr;
 
   public RealTimePaymentData() {
   }
 
-  public RealTimePaymentData fps(Object fps) {
+  public RealTimePaymentData fps(@javax.annotation.Nonnull Object fps) {
     
     this.fps = fps;
     return this;
   }
 
-   /**
+  /**
    * Get fps
    * @return fps
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_FPS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -77,21 +81,20 @@ public class RealTimePaymentData {
 
   @JsonProperty(JSON_PROPERTY_FPS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setFps(Object fps) {
+  public void setFps(@javax.annotation.Nonnull Object fps) {
     this.fps = fps;
   }
 
-
-  public RealTimePaymentData duitNow(Object duitNow) {
+  public RealTimePaymentData duitNow(@javax.annotation.Nonnull Object duitNow) {
     
     this.duitNow = duitNow;
     return this;
   }
 
-   /**
+  /**
    * Get duitNow
    * @return duitNow
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_DUIT_NOW)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -103,21 +106,20 @@ public class RealTimePaymentData {
 
   @JsonProperty(JSON_PROPERTY_DUIT_NOW)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setDuitNow(Object duitNow) {
+  public void setDuitNow(@javax.annotation.Nonnull Object duitNow) {
     this.duitNow = duitNow;
   }
 
-
-  public RealTimePaymentData promptPay(Object promptPay) {
+  public RealTimePaymentData promptPay(@javax.annotation.Nonnull Object promptPay) {
     
     this.promptPay = promptPay;
     return this;
   }
 
-   /**
+  /**
    * Get promptPay
    * @return promptPay
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_PROMPT_PAY)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -129,21 +131,20 @@ public class RealTimePaymentData {
 
   @JsonProperty(JSON_PROPERTY_PROMPT_PAY)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setPromptPay(Object promptPay) {
+  public void setPromptPay(@javax.annotation.Nonnull Object promptPay) {
     this.promptPay = promptPay;
   }
 
-
-  public RealTimePaymentData vietQr(Object vietQr) {
+  public RealTimePaymentData vietQr(@javax.annotation.Nonnull Object vietQr) {
     
     this.vietQr = vietQr;
     return this;
   }
 
-   /**
+  /**
    * Get vietQr
    * @return vietQr
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_VIET_QR)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -155,7 +156,7 @@ public class RealTimePaymentData {
 
   @JsonProperty(JSON_PROPERTY_VIET_QR)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setVietQr(Object vietQr) {
+  public void setVietQr(@javax.annotation.Nonnull Object vietQr) {
     this.vietQr = vietQr;
   }
 

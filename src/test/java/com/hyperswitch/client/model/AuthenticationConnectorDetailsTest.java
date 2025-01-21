@@ -20,23 +20,23 @@ import com.fasterxml.jackson.annotation.JsonTypeName;
 import com.fasterxml.jackson.annotation.JsonValue;
 import com.hyperswitch.client.model.AuthenticationConnectors;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
-import org.junit.Assert;
-import org.junit.Ignore;
-import org.junit.Test;
-
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Test;
 
 /**
  * Model tests for AuthenticationConnectorDetails
  */
-public class AuthenticationConnectorDetailsTest {
+class AuthenticationConnectorDetailsTest {
     private final AuthenticationConnectorDetails model = new AuthenticationConnectorDetails();
 
     /**
      * Model tests for AuthenticationConnectorDetails
      */
     @Test
-    public void testAuthenticationConnectorDetails() {
+    void testAuthenticationConnectorDetails() {
         // TODO: test AuthenticationConnectorDetails
     }
 
@@ -44,7 +44,7 @@ public class AuthenticationConnectorDetailsTest {
      * Test the property 'authenticationConnectors'
      */
     @Test
-    public void authenticationConnectorsTest() {
+    void authenticationConnectorsTest() {
         // TODO: test authenticationConnectors
     }
 
@@ -52,7 +52,7 @@ public class AuthenticationConnectorDetailsTest {
      * Test the property 'threeDsRequestorUrl'
      */
     @Test
-    public void threeDsRequestorUrlTest() {
+    void threeDsRequestorUrlTest() {
         // TODO: test threeDsRequestorUrl
     }
 

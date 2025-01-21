@@ -45,48 +45,57 @@ import java.util.StringJoiner;
   PaymentListConstraints.JSON_PROPERTY_CREATED_LTE,
   PaymentListConstraints.JSON_PROPERTY_CREATED_GTE
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class PaymentListConstraints {
   public static final String JSON_PROPERTY_CUSTOMER_ID = "customer_id";
+  @javax.annotation.Nullable
   private JsonNullable<String> customerId = JsonNullable.<String>undefined();
 
   public static final String JSON_PROPERTY_STARTING_AFTER = "starting_after";
+  @javax.annotation.Nullable
   private JsonNullable<String> startingAfter = JsonNullable.<String>undefined();
 
   public static final String JSON_PROPERTY_ENDING_BEFORE = "ending_before";
+  @javax.annotation.Nullable
   private JsonNullable<String> endingBefore = JsonNullable.<String>undefined();
 
   public static final String JSON_PROPERTY_LIMIT = "limit";
+  @javax.annotation.Nullable
   private Integer limit = 10;
 
   public static final String JSON_PROPERTY_CREATED = "created";
+  @javax.annotation.Nullable
   private JsonNullable<OffsetDateTime> created = JsonNullable.<OffsetDateTime>undefined();
 
   public static final String JSON_PROPERTY_CREATED_LT = "created.lt";
+  @javax.annotation.Nullable
   private JsonNullable<OffsetDateTime> createdLt = JsonNullable.<OffsetDateTime>undefined();
 
   public static final String JSON_PROPERTY_CREATED_GT = "created.gt";
+  @javax.annotation.Nullable
   private JsonNullable<OffsetDateTime> createdGt = JsonNullable.<OffsetDateTime>undefined();
 
   public static final String JSON_PROPERTY_CREATED_LTE = "created.lte";
+  @javax.annotation.Nullable
   private JsonNullable<OffsetDateTime> createdLte = JsonNullable.<OffsetDateTime>undefined();
 
   public static final String JSON_PROPERTY_CREATED_GTE = "created.gte";
+  @javax.annotation.Nullable
   private JsonNullable<OffsetDateTime> createdGte = JsonNullable.<OffsetDateTime>undefined();
 
   public PaymentListConstraints() {
   }
 
-  public PaymentListConstraints customerId(String customerId) {
+  public PaymentListConstraints customerId(@javax.annotation.Nullable String customerId) {
     this.customerId = JsonNullable.<String>of(customerId);
     
     return this;
   }
 
-   /**
+  /**
    * The identifier for customer
    * @return customerId
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -106,21 +115,20 @@ public class PaymentListConstraints {
     this.customerId = customerId;
   }
 
-  public void setCustomerId(String customerId) {
+  public void setCustomerId(@javax.annotation.Nullable String customerId) {
     this.customerId = JsonNullable.<String>of(customerId);
   }
 
-
-  public PaymentListConstraints startingAfter(String startingAfter) {
+  public PaymentListConstraints startingAfter(@javax.annotation.Nullable String startingAfter) {
     this.startingAfter = JsonNullable.<String>of(startingAfter);
     
     return this;
   }
 
-   /**
+  /**
    * A cursor for use in pagination, fetch the next list after some object
    * @return startingAfter
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -140,21 +148,20 @@ public class PaymentListConstraints {
     this.startingAfter = startingAfter;
   }
 
-  public void setStartingAfter(String startingAfter) {
+  public void setStartingAfter(@javax.annotation.Nullable String startingAfter) {
     this.startingAfter = JsonNullable.<String>of(startingAfter);
   }
 
-
-  public PaymentListConstraints endingBefore(String endingBefore) {
+  public PaymentListConstraints endingBefore(@javax.annotation.Nullable String endingBefore) {
     this.endingBefore = JsonNullable.<String>of(endingBefore);
     
     return this;
   }
 
-   /**
+  /**
    * A cursor for use in pagination, fetch the previous list before some object
    * @return endingBefore
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -174,23 +181,22 @@ public class PaymentListConstraints {
     this.endingBefore = endingBefore;
   }
 
-  public void setEndingBefore(String endingBefore) {
+  public void setEndingBefore(@javax.annotation.Nullable String endingBefore) {
     this.endingBefore = JsonNullable.<String>of(endingBefore);
   }
 
-
-  public PaymentListConstraints limit(Integer limit) {
+  public PaymentListConstraints limit(@javax.annotation.Nullable Integer limit) {
     
     this.limit = limit;
     return this;
   }
 
-   /**
+  /**
    * limit on the number of objects to return
    * minimum: 0
    * maximum: 100
    * @return limit
-  **/
+   */
   @javax.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_LIMIT)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -202,21 +208,20 @@ public class PaymentListConstraints {
 
   @JsonProperty(JSON_PROPERTY_LIMIT)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setLimit(Integer limit) {
+  public void setLimit(@javax.annotation.Nullable Integer limit) {
     this.limit = limit;
   }
 
-
-  public PaymentListConstraints created(OffsetDateTime created) {
+  public PaymentListConstraints created(@javax.annotation.Nullable OffsetDateTime created) {
     this.created = JsonNullable.<OffsetDateTime>of(created);
     
     return this;
   }
 
-   /**
+  /**
    * The time at which payment is created
    * @return created
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -236,21 +241,20 @@ public class PaymentListConstraints {
     this.created = created;
   }
 
-  public void setCreated(OffsetDateTime created) {
+  public void setCreated(@javax.annotation.Nullable OffsetDateTime created) {
     this.created = JsonNullable.<OffsetDateTime>of(created);
   }
 
-
-  public PaymentListConstraints createdLt(OffsetDateTime createdLt) {
+  public PaymentListConstraints createdLt(@javax.annotation.Nullable OffsetDateTime createdLt) {
     this.createdLt = JsonNullable.<OffsetDateTime>of(createdLt);
     
     return this;
   }
 
-   /**
+  /**
    * Time less than the payment created time
    * @return createdLt
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -270,21 +274,20 @@ public class PaymentListConstraints {
     this.createdLt = createdLt;
   }
 
-  public void setCreatedLt(OffsetDateTime createdLt) {
+  public void setCreatedLt(@javax.annotation.Nullable OffsetDateTime createdLt) {
     this.createdLt = JsonNullable.<OffsetDateTime>of(createdLt);
   }
 
-
-  public PaymentListConstraints createdGt(OffsetDateTime createdGt) {
+  public PaymentListConstraints createdGt(@javax.annotation.Nullable OffsetDateTime createdGt) {
     this.createdGt = JsonNullable.<OffsetDateTime>of(createdGt);
     
     return this;
   }
 
-   /**
+  /**
    * Time greater than the payment created time
    * @return createdGt
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -304,21 +307,20 @@ public class PaymentListConstraints {
     this.createdGt = createdGt;
   }
 
-  public void setCreatedGt(OffsetDateTime createdGt) {
+  public void setCreatedGt(@javax.annotation.Nullable OffsetDateTime createdGt) {
     this.createdGt = JsonNullable.<OffsetDateTime>of(createdGt);
   }
 
-
-  public PaymentListConstraints createdLte(OffsetDateTime createdLte) {
+  public PaymentListConstraints createdLte(@javax.annotation.Nullable OffsetDateTime createdLte) {
     this.createdLte = JsonNullable.<OffsetDateTime>of(createdLte);
     
     return this;
   }
 
-   /**
+  /**
    * Time less than or equals to the payment created time
    * @return createdLte
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -338,21 +340,20 @@ public class PaymentListConstraints {
     this.createdLte = createdLte;
   }
 
-  public void setCreatedLte(OffsetDateTime createdLte) {
+  public void setCreatedLte(@javax.annotation.Nullable OffsetDateTime createdLte) {
     this.createdLte = JsonNullable.<OffsetDateTime>of(createdLte);
   }
 
-
-  public PaymentListConstraints createdGte(OffsetDateTime createdGte) {
+  public PaymentListConstraints createdGte(@javax.annotation.Nullable OffsetDateTime createdGte) {
     this.createdGte = JsonNullable.<OffsetDateTime>of(createdGte);
     
     return this;
   }
 
-   /**
+  /**
    * Time greater than or equals to the payment created time
    * @return createdGte
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -372,7 +373,7 @@ public class PaymentListConstraints {
     this.createdGte = createdGte;
   }
 
-  public void setCreatedGte(OffsetDateTime createdGte) {
+  public void setCreatedGte(@javax.annotation.Nullable OffsetDateTime createdGte) {
     this.createdGte = JsonNullable.<OffsetDateTime>of(createdGte);
   }
 

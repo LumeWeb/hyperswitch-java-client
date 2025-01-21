@@ -33,24 +33,25 @@ import java.util.StringJoiner;
   PayLaterDataOneOf1KlarnaSdk.JSON_PROPERTY_TOKEN
 })
 @JsonTypeName("PayLaterData_oneOf_1_klarna_sdk")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class PayLaterDataOneOf1KlarnaSdk {
   public static final String JSON_PROPERTY_TOKEN = "token";
+  @javax.annotation.Nonnull
   private String token;
 
   public PayLaterDataOneOf1KlarnaSdk() {
   }
 
-  public PayLaterDataOneOf1KlarnaSdk token(String token) {
+  public PayLaterDataOneOf1KlarnaSdk token(@javax.annotation.Nonnull String token) {
     
     this.token = token;
     return this;
   }
 
-   /**
+  /**
    * The token for the sdk workflow
    * @return token
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_TOKEN)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -62,7 +63,7 @@ public class PayLaterDataOneOf1KlarnaSdk {
 
   @JsonProperty(JSON_PROPERTY_TOKEN)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setToken(String token) {
+  public void setToken(@javax.annotation.Nonnull String token) {
     this.token = token;
   }
 

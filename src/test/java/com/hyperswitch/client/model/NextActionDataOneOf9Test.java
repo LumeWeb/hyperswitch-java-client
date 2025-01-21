@@ -19,22 +19,21 @@ import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonTypeName;
 import com.fasterxml.jackson.annotation.JsonValue;
 import com.hyperswitch.client.model.MobilePaymentConsent;
-import org.junit.Assert;
-import org.junit.Ignore;
-import org.junit.Test;
-
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Test;
 
 /**
  * Model tests for NextActionDataOneOf9
  */
-public class NextActionDataOneOf9Test {
+class NextActionDataOneOf9Test {
     private final NextActionDataOneOf9 model = new NextActionDataOneOf9();
 
     /**
      * Model tests for NextActionDataOneOf9
      */
     @Test
-    public void testNextActionDataOneOf9() {
+    void testNextActionDataOneOf9() {
         // TODO: test NextActionDataOneOf9
     }
 
@@ -42,7 +41,7 @@ public class NextActionDataOneOf9Test {
      * Test the property 'consentDataRequired'
      */
     @Test
-    public void consentDataRequiredTest() {
+    void consentDataRequiredTest() {
         // TODO: test consentDataRequired
     }
 
@@ -50,7 +49,7 @@ public class NextActionDataOneOf9Test {
      * Test the property 'type'
      */
     @Test
-    public void typeTest() {
+    void typeTest() {
         // TODO: test type
     }
 

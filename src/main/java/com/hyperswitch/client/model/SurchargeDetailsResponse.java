@@ -42,36 +42,41 @@ import java.util.StringJoiner;
   SurchargeDetailsResponse.JSON_PROPERTY_DISPLAY_TAX_ON_SURCHARGE_AMOUNT,
   SurchargeDetailsResponse.JSON_PROPERTY_DISPLAY_TOTAL_SURCHARGE_AMOUNT
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class SurchargeDetailsResponse {
   public static final String JSON_PROPERTY_SURCHARGE = "surcharge";
+  @javax.annotation.Nonnull
   private SurchargeResponse surcharge;
 
   public static final String JSON_PROPERTY_TAX_ON_SURCHARGE = "tax_on_surcharge";
+  @javax.annotation.Nullable
   private JsonNullable<SurchargePercentage> taxOnSurcharge = JsonNullable.<SurchargePercentage>undefined();
 
   public static final String JSON_PROPERTY_DISPLAY_SURCHARGE_AMOUNT = "display_surcharge_amount";
+  @javax.annotation.Nonnull
   private Double displaySurchargeAmount;
 
   public static final String JSON_PROPERTY_DISPLAY_TAX_ON_SURCHARGE_AMOUNT = "display_tax_on_surcharge_amount";
+  @javax.annotation.Nonnull
   private Double displayTaxOnSurchargeAmount;
 
   public static final String JSON_PROPERTY_DISPLAY_TOTAL_SURCHARGE_AMOUNT = "display_total_surcharge_amount";
+  @javax.annotation.Nonnull
   private Double displayTotalSurchargeAmount;
 
   public SurchargeDetailsResponse() {
   }
 
-  public SurchargeDetailsResponse surcharge(SurchargeResponse surcharge) {
+  public SurchargeDetailsResponse surcharge(@javax.annotation.Nonnull SurchargeResponse surcharge) {
     
     this.surcharge = surcharge;
     return this;
   }
 
-   /**
+  /**
    * Get surcharge
    * @return surcharge
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_SURCHARGE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -83,21 +88,20 @@ public class SurchargeDetailsResponse {
 
   @JsonProperty(JSON_PROPERTY_SURCHARGE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setSurcharge(SurchargeResponse surcharge) {
+  public void setSurcharge(@javax.annotation.Nonnull SurchargeResponse surcharge) {
     this.surcharge = surcharge;
   }
 
-
-  public SurchargeDetailsResponse taxOnSurcharge(SurchargePercentage taxOnSurcharge) {
+  public SurchargeDetailsResponse taxOnSurcharge(@javax.annotation.Nullable SurchargePercentage taxOnSurcharge) {
     this.taxOnSurcharge = JsonNullable.<SurchargePercentage>of(taxOnSurcharge);
     
     return this;
   }
 
-   /**
+  /**
    * Get taxOnSurcharge
    * @return taxOnSurcharge
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -117,21 +121,20 @@ public class SurchargeDetailsResponse {
     this.taxOnSurcharge = taxOnSurcharge;
   }
 
-  public void setTaxOnSurcharge(SurchargePercentage taxOnSurcharge) {
+  public void setTaxOnSurcharge(@javax.annotation.Nullable SurchargePercentage taxOnSurcharge) {
     this.taxOnSurcharge = JsonNullable.<SurchargePercentage>of(taxOnSurcharge);
   }
 
-
-  public SurchargeDetailsResponse displaySurchargeAmount(Double displaySurchargeAmount) {
+  public SurchargeDetailsResponse displaySurchargeAmount(@javax.annotation.Nonnull Double displaySurchargeAmount) {
     
     this.displaySurchargeAmount = displaySurchargeAmount;
     return this;
   }
 
-   /**
+  /**
    * surcharge amount for this payment
    * @return displaySurchargeAmount
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_DISPLAY_SURCHARGE_AMOUNT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -143,21 +146,20 @@ public class SurchargeDetailsResponse {
 
   @JsonProperty(JSON_PROPERTY_DISPLAY_SURCHARGE_AMOUNT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setDisplaySurchargeAmount(Double displaySurchargeAmount) {
+  public void setDisplaySurchargeAmount(@javax.annotation.Nonnull Double displaySurchargeAmount) {
     this.displaySurchargeAmount = displaySurchargeAmount;
   }
 
-
-  public SurchargeDetailsResponse displayTaxOnSurchargeAmount(Double displayTaxOnSurchargeAmount) {
+  public SurchargeDetailsResponse displayTaxOnSurchargeAmount(@javax.annotation.Nonnull Double displayTaxOnSurchargeAmount) {
     
     this.displayTaxOnSurchargeAmount = displayTaxOnSurchargeAmount;
     return this;
   }
 
-   /**
+  /**
    * tax on surcharge amount for this payment
    * @return displayTaxOnSurchargeAmount
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_DISPLAY_TAX_ON_SURCHARGE_AMOUNT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -169,21 +171,20 @@ public class SurchargeDetailsResponse {
 
   @JsonProperty(JSON_PROPERTY_DISPLAY_TAX_ON_SURCHARGE_AMOUNT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setDisplayTaxOnSurchargeAmount(Double displayTaxOnSurchargeAmount) {
+  public void setDisplayTaxOnSurchargeAmount(@javax.annotation.Nonnull Double displayTaxOnSurchargeAmount) {
     this.displayTaxOnSurchargeAmount = displayTaxOnSurchargeAmount;
   }
 
-
-  public SurchargeDetailsResponse displayTotalSurchargeAmount(Double displayTotalSurchargeAmount) {
+  public SurchargeDetailsResponse displayTotalSurchargeAmount(@javax.annotation.Nonnull Double displayTotalSurchargeAmount) {
     
     this.displayTotalSurchargeAmount = displayTotalSurchargeAmount;
     return this;
   }
 
-   /**
+  /**
    * sum of display_surcharge_amount and display_tax_on_surcharge_amount
    * @return displayTotalSurchargeAmount
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_DISPLAY_TOTAL_SURCHARGE_AMOUNT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -195,7 +196,7 @@ public class SurchargeDetailsResponse {
 
   @JsonProperty(JSON_PROPERTY_DISPLAY_TOTAL_SURCHARGE_AMOUNT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setDisplayTotalSurchargeAmount(Double displayTotalSurchargeAmount) {
+  public void setDisplayTotalSurchargeAmount(@javax.annotation.Nonnull Double displayTotalSurchargeAmount) {
     this.displayTotalSurchargeAmount = displayTotalSurchargeAmount;
   }
 

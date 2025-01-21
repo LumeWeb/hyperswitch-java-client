@@ -34,24 +34,25 @@ import java.util.StringJoiner;
   VoucherDataOneOf8.JSON_PROPERTY_PAY_EASY
 })
 @JsonTypeName("VoucherData_oneOf_8")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class VoucherDataOneOf8 {
   public static final String JSON_PROPERTY_PAY_EASY = "pay_easy";
+  @javax.annotation.Nonnull
   private JCSVoucherData payEasy;
 
   public VoucherDataOneOf8() {
   }
 
-  public VoucherDataOneOf8 payEasy(JCSVoucherData payEasy) {
+  public VoucherDataOneOf8 payEasy(@javax.annotation.Nonnull JCSVoucherData payEasy) {
     
     this.payEasy = payEasy;
     return this;
   }
 
-   /**
+  /**
    * Get payEasy
    * @return payEasy
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_PAY_EASY)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -63,7 +64,7 @@ public class VoucherDataOneOf8 {
 
   @JsonProperty(JSON_PROPERTY_PAY_EASY)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setPayEasy(JCSVoucherData payEasy) {
+  public void setPayEasy(@javax.annotation.Nonnull JCSVoucherData payEasy) {
     this.payEasy = payEasy;
   }
 

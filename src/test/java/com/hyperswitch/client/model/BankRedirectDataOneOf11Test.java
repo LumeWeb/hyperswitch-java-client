@@ -19,22 +19,21 @@ import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonTypeName;
 import com.fasterxml.jackson.annotation.JsonValue;
 import com.hyperswitch.client.model.BankRedirectDataOneOf11OpenBankingUk;
-import org.junit.Assert;
-import org.junit.Ignore;
-import org.junit.Test;
-
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Test;
 
 /**
  * Model tests for BankRedirectDataOneOf11
  */
-public class BankRedirectDataOneOf11Test {
+class BankRedirectDataOneOf11Test {
     private final BankRedirectDataOneOf11 model = new BankRedirectDataOneOf11();
 
     /**
      * Model tests for BankRedirectDataOneOf11
      */
     @Test
-    public void testBankRedirectDataOneOf11() {
+    void testBankRedirectDataOneOf11() {
         // TODO: test BankRedirectDataOneOf11
     }
 
@@ -42,7 +41,7 @@ public class BankRedirectDataOneOf11Test {
      * Test the property 'openBankingUk'
      */
     @Test
-    public void openBankingUkTest() {
+    void openBankingUkTest() {
         // TODO: test openBankingUk
     }
 

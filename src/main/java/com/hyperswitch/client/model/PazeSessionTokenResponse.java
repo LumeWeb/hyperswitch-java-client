@@ -42,39 +42,45 @@ import java.util.StringJoiner;
   PazeSessionTokenResponse.JSON_PROPERTY_TRANSACTION_AMOUNT,
   PazeSessionTokenResponse.JSON_PROPERTY_EMAIL_ADDRESS
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class PazeSessionTokenResponse {
   public static final String JSON_PROPERTY_CLIENT_ID = "client_id";
+  @javax.annotation.Nonnull
   private String clientId;
 
   public static final String JSON_PROPERTY_CLIENT_NAME = "client_name";
+  @javax.annotation.Nonnull
   private String clientName;
 
   public static final String JSON_PROPERTY_CLIENT_PROFILE_ID = "client_profile_id";
+  @javax.annotation.Nonnull
   private String clientProfileId;
 
   public static final String JSON_PROPERTY_TRANSACTION_CURRENCY_CODE = "transaction_currency_code";
+  @javax.annotation.Nonnull
   private Currency transactionCurrencyCode;
 
   public static final String JSON_PROPERTY_TRANSACTION_AMOUNT = "transaction_amount";
+  @javax.annotation.Nonnull
   private String transactionAmount;
 
   public static final String JSON_PROPERTY_EMAIL_ADDRESS = "email_address";
+  @javax.annotation.Nullable
   private JsonNullable<String> emailAddress = JsonNullable.<String>undefined();
 
   public PazeSessionTokenResponse() {
   }
 
-  public PazeSessionTokenResponse clientId(String clientId) {
+  public PazeSessionTokenResponse clientId(@javax.annotation.Nonnull String clientId) {
     
     this.clientId = clientId;
     return this;
   }
 
-   /**
+  /**
    * Paze Client ID
    * @return clientId
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_CLIENT_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -86,21 +92,20 @@ public class PazeSessionTokenResponse {
 
   @JsonProperty(JSON_PROPERTY_CLIENT_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setClientId(String clientId) {
+  public void setClientId(@javax.annotation.Nonnull String clientId) {
     this.clientId = clientId;
   }
 
-
-  public PazeSessionTokenResponse clientName(String clientName) {
+  public PazeSessionTokenResponse clientName(@javax.annotation.Nonnull String clientName) {
     
     this.clientName = clientName;
     return this;
   }
 
-   /**
+  /**
    * Client Name to be displayed on the Paze screen
    * @return clientName
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_CLIENT_NAME)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -112,21 +117,20 @@ public class PazeSessionTokenResponse {
 
   @JsonProperty(JSON_PROPERTY_CLIENT_NAME)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setClientName(String clientName) {
+  public void setClientName(@javax.annotation.Nonnull String clientName) {
     this.clientName = clientName;
   }
 
-
-  public PazeSessionTokenResponse clientProfileId(String clientProfileId) {
+  public PazeSessionTokenResponse clientProfileId(@javax.annotation.Nonnull String clientProfileId) {
     
     this.clientProfileId = clientProfileId;
     return this;
   }
 
-   /**
+  /**
    * Paze Client Profile ID
    * @return clientProfileId
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_CLIENT_PROFILE_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -138,21 +142,20 @@ public class PazeSessionTokenResponse {
 
   @JsonProperty(JSON_PROPERTY_CLIENT_PROFILE_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setClientProfileId(String clientProfileId) {
+  public void setClientProfileId(@javax.annotation.Nonnull String clientProfileId) {
     this.clientProfileId = clientProfileId;
   }
 
-
-  public PazeSessionTokenResponse transactionCurrencyCode(Currency transactionCurrencyCode) {
+  public PazeSessionTokenResponse transactionCurrencyCode(@javax.annotation.Nonnull Currency transactionCurrencyCode) {
     
     this.transactionCurrencyCode = transactionCurrencyCode;
     return this;
   }
 
-   /**
+  /**
    * Get transactionCurrencyCode
    * @return transactionCurrencyCode
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_TRANSACTION_CURRENCY_CODE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -164,21 +167,20 @@ public class PazeSessionTokenResponse {
 
   @JsonProperty(JSON_PROPERTY_TRANSACTION_CURRENCY_CODE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setTransactionCurrencyCode(Currency transactionCurrencyCode) {
+  public void setTransactionCurrencyCode(@javax.annotation.Nonnull Currency transactionCurrencyCode) {
     this.transactionCurrencyCode = transactionCurrencyCode;
   }
 
-
-  public PazeSessionTokenResponse transactionAmount(String transactionAmount) {
+  public PazeSessionTokenResponse transactionAmount(@javax.annotation.Nonnull String transactionAmount) {
     
     this.transactionAmount = transactionAmount;
     return this;
   }
 
-   /**
+  /**
    * The transaction amount
    * @return transactionAmount
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_TRANSACTION_AMOUNT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -190,21 +192,20 @@ public class PazeSessionTokenResponse {
 
   @JsonProperty(JSON_PROPERTY_TRANSACTION_AMOUNT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setTransactionAmount(String transactionAmount) {
+  public void setTransactionAmount(@javax.annotation.Nonnull String transactionAmount) {
     this.transactionAmount = transactionAmount;
   }
 
-
-  public PazeSessionTokenResponse emailAddress(String emailAddress) {
+  public PazeSessionTokenResponse emailAddress(@javax.annotation.Nullable String emailAddress) {
     this.emailAddress = JsonNullable.<String>of(emailAddress);
     
     return this;
   }
 
-   /**
+  /**
    * Email Address
    * @return emailAddress
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -224,7 +225,7 @@ public class PazeSessionTokenResponse {
     this.emailAddress = emailAddress;
   }
 
-  public void setEmailAddress(String emailAddress) {
+  public void setEmailAddress(@javax.annotation.Nullable String emailAddress) {
     this.emailAddress = JsonNullable.<String>of(emailAddress);
   }
 

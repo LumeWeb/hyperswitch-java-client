@@ -34,24 +34,25 @@ import java.util.StringJoiner;
   GiftCardAdditionalDataOneOf.JSON_PROPERTY_GIVEX
 })
 @JsonTypeName("GiftCardAdditionalData_oneOf")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class GiftCardAdditionalDataOneOf {
   public static final String JSON_PROPERTY_GIVEX = "givex";
+  @javax.annotation.Nonnull
   private GivexGiftCardAdditionalData givex;
 
   public GiftCardAdditionalDataOneOf() {
   }
 
-  public GiftCardAdditionalDataOneOf givex(GivexGiftCardAdditionalData givex) {
+  public GiftCardAdditionalDataOneOf givex(@javax.annotation.Nonnull GivexGiftCardAdditionalData givex) {
     
     this.givex = givex;
     return this;
   }
 
-   /**
+  /**
    * Get givex
    * @return givex
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_GIVEX)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -63,7 +64,7 @@ public class GiftCardAdditionalDataOneOf {
 
   @JsonProperty(JSON_PROPERTY_GIVEX)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setGivex(GivexGiftCardAdditionalData givex) {
+  public void setGivex(@javax.annotation.Nonnull GivexGiftCardAdditionalData givex) {
     this.givex = givex;
   }
 

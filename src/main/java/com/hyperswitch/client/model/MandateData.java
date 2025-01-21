@@ -40,30 +40,33 @@ import java.util.StringJoiner;
   MandateData.JSON_PROPERTY_CUSTOMER_ACCEPTANCE,
   MandateData.JSON_PROPERTY_MANDATE_TYPE
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class MandateData {
   public static final String JSON_PROPERTY_UPDATE_MANDATE_ID = "update_mandate_id";
+  @javax.annotation.Nullable
   private JsonNullable<String> updateMandateId = JsonNullable.<String>undefined();
 
   public static final String JSON_PROPERTY_CUSTOMER_ACCEPTANCE = "customer_acceptance";
+  @javax.annotation.Nullable
   private JsonNullable<CustomerAcceptance> customerAcceptance = JsonNullable.<CustomerAcceptance>undefined();
 
   public static final String JSON_PROPERTY_MANDATE_TYPE = "mandate_type";
+  @javax.annotation.Nullable
   private JsonNullable<MandateType> mandateType = JsonNullable.<MandateType>undefined();
 
   public MandateData() {
   }
 
-  public MandateData updateMandateId(String updateMandateId) {
+  public MandateData updateMandateId(@javax.annotation.Nullable String updateMandateId) {
     this.updateMandateId = JsonNullable.<String>of(updateMandateId);
     
     return this;
   }
 
-   /**
+  /**
    * A way to update the mandate&#39;s payment method details
    * @return updateMandateId
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -83,21 +86,20 @@ public class MandateData {
     this.updateMandateId = updateMandateId;
   }
 
-  public void setUpdateMandateId(String updateMandateId) {
+  public void setUpdateMandateId(@javax.annotation.Nullable String updateMandateId) {
     this.updateMandateId = JsonNullable.<String>of(updateMandateId);
   }
 
-
-  public MandateData customerAcceptance(CustomerAcceptance customerAcceptance) {
+  public MandateData customerAcceptance(@javax.annotation.Nullable CustomerAcceptance customerAcceptance) {
     this.customerAcceptance = JsonNullable.<CustomerAcceptance>of(customerAcceptance);
     
     return this;
   }
 
-   /**
+  /**
    * Get customerAcceptance
    * @return customerAcceptance
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -117,21 +119,20 @@ public class MandateData {
     this.customerAcceptance = customerAcceptance;
   }
 
-  public void setCustomerAcceptance(CustomerAcceptance customerAcceptance) {
+  public void setCustomerAcceptance(@javax.annotation.Nullable CustomerAcceptance customerAcceptance) {
     this.customerAcceptance = JsonNullable.<CustomerAcceptance>of(customerAcceptance);
   }
 
-
-  public MandateData mandateType(MandateType mandateType) {
+  public MandateData mandateType(@javax.annotation.Nullable MandateType mandateType) {
     this.mandateType = JsonNullable.<MandateType>of(mandateType);
     
     return this;
   }
 
-   /**
+  /**
    * Get mandateType
    * @return mandateType
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -151,7 +152,7 @@ public class MandateData {
     this.mandateType = mandateType;
   }
 
-  public void setMandateType(MandateType mandateType) {
+  public void setMandateType(@javax.annotation.Nullable MandateType mandateType) {
     this.mandateType = JsonNullable.<MandateType>of(mandateType);
   }
 

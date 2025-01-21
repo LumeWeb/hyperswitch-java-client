@@ -34,24 +34,25 @@ import java.util.StringJoiner;
   FieldTypeOneOf1.JSON_PROPERTY_USER_CURRENCY
 })
 @JsonTypeName("FieldType_oneOf_1")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class FieldTypeOneOf1 {
   public static final String JSON_PROPERTY_USER_CURRENCY = "user_currency";
+  @javax.annotation.Nonnull
   private FieldTypeOneOfUserCountry userCurrency;
 
   public FieldTypeOneOf1() {
   }
 
-  public FieldTypeOneOf1 userCurrency(FieldTypeOneOfUserCountry userCurrency) {
+  public FieldTypeOneOf1 userCurrency(@javax.annotation.Nonnull FieldTypeOneOfUserCountry userCurrency) {
     
     this.userCurrency = userCurrency;
     return this;
   }
 
-   /**
+  /**
    * Get userCurrency
    * @return userCurrency
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_USER_CURRENCY)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -63,7 +64,7 @@ public class FieldTypeOneOf1 {
 
   @JsonProperty(JSON_PROPERTY_USER_CURRENCY)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setUserCurrency(FieldTypeOneOfUserCountry userCurrency) {
+  public void setUserCurrency(@javax.annotation.Nonnull FieldTypeOneOfUserCountry userCurrency) {
     this.userCurrency = userCurrency;
   }
 

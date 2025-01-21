@@ -33,27 +33,29 @@ import java.util.StringJoiner;
   BankRedirectBilling.JSON_PROPERTY_BILLING_NAME,
   BankRedirectBilling.JSON_PROPERTY_EMAIL
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class BankRedirectBilling {
   public static final String JSON_PROPERTY_BILLING_NAME = "billing_name";
+  @javax.annotation.Nonnull
   private String billingName;
 
   public static final String JSON_PROPERTY_EMAIL = "email";
+  @javax.annotation.Nonnull
   private String email;
 
   public BankRedirectBilling() {
   }
 
-  public BankRedirectBilling billingName(String billingName) {
+  public BankRedirectBilling billingName(@javax.annotation.Nonnull String billingName) {
     
     this.billingName = billingName;
     return this;
   }
 
-   /**
+  /**
    * The name for which billing is issued
    * @return billingName
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_BILLING_NAME)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -65,21 +67,20 @@ public class BankRedirectBilling {
 
   @JsonProperty(JSON_PROPERTY_BILLING_NAME)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setBillingName(String billingName) {
+  public void setBillingName(@javax.annotation.Nonnull String billingName) {
     this.billingName = billingName;
   }
 
-
-  public BankRedirectBilling email(String email) {
+  public BankRedirectBilling email(@javax.annotation.Nonnull String email) {
     
     this.email = email;
     return this;
   }
 
-   /**
+  /**
    * The billing email for bank redirect
    * @return email
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_EMAIL)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -91,7 +92,7 @@ public class BankRedirectBilling {
 
   @JsonProperty(JSON_PROPERTY_EMAIL)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setEmail(String email) {
+  public void setEmail(@javax.annotation.Nonnull String email) {
     this.email = email;
   }
 

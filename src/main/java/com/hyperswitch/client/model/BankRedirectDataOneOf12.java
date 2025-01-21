@@ -34,24 +34,25 @@ import java.util.StringJoiner;
   BankRedirectDataOneOf12.JSON_PROPERTY_PRZELEWY24
 })
 @JsonTypeName("BankRedirectData_oneOf_12")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class BankRedirectDataOneOf12 {
   public static final String JSON_PROPERTY_PRZELEWY24 = "przelewy24";
+  @javax.annotation.Nonnull
   private BankRedirectDataOneOf12Przelewy24 przelewy24;
 
   public BankRedirectDataOneOf12() {
   }
 
-  public BankRedirectDataOneOf12 przelewy24(BankRedirectDataOneOf12Przelewy24 przelewy24) {
+  public BankRedirectDataOneOf12 przelewy24(@javax.annotation.Nonnull BankRedirectDataOneOf12Przelewy24 przelewy24) {
     
     this.przelewy24 = przelewy24;
     return this;
   }
 
-   /**
+  /**
    * Get przelewy24
    * @return przelewy24
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_PRZELEWY24)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -63,7 +64,7 @@ public class BankRedirectDataOneOf12 {
 
   @JsonProperty(JSON_PROPERTY_PRZELEWY24)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setPrzelewy24(BankRedirectDataOneOf12Przelewy24 przelewy24) {
+  public void setPrzelewy24(@javax.annotation.Nonnull BankRedirectDataOneOf12Przelewy24 przelewy24) {
     this.przelewy24 = przelewy24;
   }
 

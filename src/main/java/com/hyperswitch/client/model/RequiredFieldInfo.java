@@ -40,33 +40,37 @@ import java.util.StringJoiner;
   RequiredFieldInfo.JSON_PROPERTY_FIELD_TYPE,
   RequiredFieldInfo.JSON_PROPERTY_VALUE
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class RequiredFieldInfo {
   public static final String JSON_PROPERTY_REQUIRED_FIELD = "required_field";
+  @javax.annotation.Nonnull
   private String requiredField;
 
   public static final String JSON_PROPERTY_DISPLAY_NAME = "display_name";
+  @javax.annotation.Nonnull
   private String displayName;
 
   public static final String JSON_PROPERTY_FIELD_TYPE = "field_type";
+  @javax.annotation.Nonnull
   private FieldType fieldType;
 
   public static final String JSON_PROPERTY_VALUE = "value";
+  @javax.annotation.Nullable
   private JsonNullable<String> value = JsonNullable.<String>undefined();
 
   public RequiredFieldInfo() {
   }
 
-  public RequiredFieldInfo requiredField(String requiredField) {
+  public RequiredFieldInfo requiredField(@javax.annotation.Nonnull String requiredField) {
     
     this.requiredField = requiredField;
     return this;
   }
 
-   /**
+  /**
    * Required field for a payment_method through a payment_method_type
    * @return requiredField
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_REQUIRED_FIELD)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -78,21 +82,20 @@ public class RequiredFieldInfo {
 
   @JsonProperty(JSON_PROPERTY_REQUIRED_FIELD)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setRequiredField(String requiredField) {
+  public void setRequiredField(@javax.annotation.Nonnull String requiredField) {
     this.requiredField = requiredField;
   }
 
-
-  public RequiredFieldInfo displayName(String displayName) {
+  public RequiredFieldInfo displayName(@javax.annotation.Nonnull String displayName) {
     
     this.displayName = displayName;
     return this;
   }
 
-   /**
+  /**
    * Display name of the required field in the front-end
    * @return displayName
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_DISPLAY_NAME)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -104,21 +107,20 @@ public class RequiredFieldInfo {
 
   @JsonProperty(JSON_PROPERTY_DISPLAY_NAME)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setDisplayName(String displayName) {
+  public void setDisplayName(@javax.annotation.Nonnull String displayName) {
     this.displayName = displayName;
   }
 
-
-  public RequiredFieldInfo fieldType(FieldType fieldType) {
+  public RequiredFieldInfo fieldType(@javax.annotation.Nonnull FieldType fieldType) {
     
     this.fieldType = fieldType;
     return this;
   }
 
-   /**
+  /**
    * Get fieldType
    * @return fieldType
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_FIELD_TYPE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -130,21 +132,20 @@ public class RequiredFieldInfo {
 
   @JsonProperty(JSON_PROPERTY_FIELD_TYPE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setFieldType(FieldType fieldType) {
+  public void setFieldType(@javax.annotation.Nonnull FieldType fieldType) {
     this.fieldType = fieldType;
   }
 
-
-  public RequiredFieldInfo value(String value) {
+  public RequiredFieldInfo value(@javax.annotation.Nullable String value) {
     this.value = JsonNullable.<String>of(value);
     
     return this;
   }
 
-   /**
+  /**
    * Get value
    * @return value
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -164,7 +165,7 @@ public class RequiredFieldInfo {
     this.value = value;
   }
 
-  public void setValue(String value) {
+  public void setValue(@javax.annotation.Nullable String value) {
     this.value = JsonNullable.<String>of(value);
   }
 

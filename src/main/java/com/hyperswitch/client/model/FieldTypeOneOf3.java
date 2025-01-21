@@ -34,24 +34,25 @@ import java.util.StringJoiner;
   FieldTypeOneOf3.JSON_PROPERTY_USER_SHIPPING_ADDRESS_COUNTRY
 })
 @JsonTypeName("FieldType_oneOf_3")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class FieldTypeOneOf3 {
   public static final String JSON_PROPERTY_USER_SHIPPING_ADDRESS_COUNTRY = "user_shipping_address_country";
+  @javax.annotation.Nonnull
   private FieldTypeOneOfUserCountry userShippingAddressCountry;
 
   public FieldTypeOneOf3() {
   }
 
-  public FieldTypeOneOf3 userShippingAddressCountry(FieldTypeOneOfUserCountry userShippingAddressCountry) {
+  public FieldTypeOneOf3 userShippingAddressCountry(@javax.annotation.Nonnull FieldTypeOneOfUserCountry userShippingAddressCountry) {
     
     this.userShippingAddressCountry = userShippingAddressCountry;
     return this;
   }
 
-   /**
+  /**
    * Get userShippingAddressCountry
    * @return userShippingAddressCountry
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_USER_SHIPPING_ADDRESS_COUNTRY)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -63,7 +64,7 @@ public class FieldTypeOneOf3 {
 
   @JsonProperty(JSON_PROPERTY_USER_SHIPPING_ADDRESS_COUNTRY)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setUserShippingAddressCountry(FieldTypeOneOfUserCountry userShippingAddressCountry) {
+  public void setUserShippingAddressCountry(@javax.annotation.Nonnull FieldTypeOneOfUserCountry userShippingAddressCountry) {
     this.userShippingAddressCountry = userShippingAddressCountry;
   }
 

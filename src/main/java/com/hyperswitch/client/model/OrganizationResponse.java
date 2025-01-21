@@ -42,39 +42,45 @@ import java.util.StringJoiner;
   OrganizationResponse.JSON_PROPERTY_MODIFIED_AT,
   OrganizationResponse.JSON_PROPERTY_CREATED_AT
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class OrganizationResponse {
   public static final String JSON_PROPERTY_ORGANIZATION_ID = "organization_id";
+  @javax.annotation.Nonnull
   private String organizationId;
 
   public static final String JSON_PROPERTY_ORGANIZATION_NAME = "organization_name";
+  @javax.annotation.Nullable
   private JsonNullable<String> organizationName = JsonNullable.<String>undefined();
 
   public static final String JSON_PROPERTY_ORGANIZATION_DETAILS = "organization_details";
+  @javax.annotation.Nullable
   private JsonNullable<Object> organizationDetails = JsonNullable.<Object>undefined();
 
   public static final String JSON_PROPERTY_METADATA = "metadata";
+  @javax.annotation.Nullable
   private JsonNullable<Object> metadata = JsonNullable.<Object>undefined();
 
   public static final String JSON_PROPERTY_MODIFIED_AT = "modified_at";
+  @javax.annotation.Nonnull
   private OffsetDateTime modifiedAt;
 
   public static final String JSON_PROPERTY_CREATED_AT = "created_at";
+  @javax.annotation.Nonnull
   private OffsetDateTime createdAt;
 
   public OrganizationResponse() {
   }
 
-  public OrganizationResponse organizationId(String organizationId) {
+  public OrganizationResponse organizationId(@javax.annotation.Nonnull String organizationId) {
     
     this.organizationId = organizationId;
     return this;
   }
 
-   /**
+  /**
    * The unique identifier for the Organization
    * @return organizationId
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_ORGANIZATION_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -86,21 +92,20 @@ public class OrganizationResponse {
 
   @JsonProperty(JSON_PROPERTY_ORGANIZATION_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setOrganizationId(String organizationId) {
+  public void setOrganizationId(@javax.annotation.Nonnull String organizationId) {
     this.organizationId = organizationId;
   }
 
-
-  public OrganizationResponse organizationName(String organizationName) {
+  public OrganizationResponse organizationName(@javax.annotation.Nullable String organizationName) {
     this.organizationName = JsonNullable.<String>of(organizationName);
     
     return this;
   }
 
-   /**
+  /**
    * Name of the Organization
    * @return organizationName
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -120,21 +125,20 @@ public class OrganizationResponse {
     this.organizationName = organizationName;
   }
 
-  public void setOrganizationName(String organizationName) {
+  public void setOrganizationName(@javax.annotation.Nullable String organizationName) {
     this.organizationName = JsonNullable.<String>of(organizationName);
   }
 
-
-  public OrganizationResponse organizationDetails(Object organizationDetails) {
+  public OrganizationResponse organizationDetails(@javax.annotation.Nullable Object organizationDetails) {
     this.organizationDetails = JsonNullable.<Object>of(organizationDetails);
     
     return this;
   }
 
-   /**
+  /**
    * Details about the organization
    * @return organizationDetails
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -154,21 +158,20 @@ public class OrganizationResponse {
     this.organizationDetails = organizationDetails;
   }
 
-  public void setOrganizationDetails(Object organizationDetails) {
+  public void setOrganizationDetails(@javax.annotation.Nullable Object organizationDetails) {
     this.organizationDetails = JsonNullable.<Object>of(organizationDetails);
   }
 
-
-  public OrganizationResponse metadata(Object metadata) {
+  public OrganizationResponse metadata(@javax.annotation.Nullable Object metadata) {
     this.metadata = JsonNullable.<Object>of(metadata);
     
     return this;
   }
 
-   /**
+  /**
    * Metadata is useful for storing additional, unstructured information on an object.
    * @return metadata
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -188,21 +191,20 @@ public class OrganizationResponse {
     this.metadata = metadata;
   }
 
-  public void setMetadata(Object metadata) {
+  public void setMetadata(@javax.annotation.Nullable Object metadata) {
     this.metadata = JsonNullable.<Object>of(metadata);
   }
 
-
-  public OrganizationResponse modifiedAt(OffsetDateTime modifiedAt) {
+  public OrganizationResponse modifiedAt(@javax.annotation.Nonnull OffsetDateTime modifiedAt) {
     
     this.modifiedAt = modifiedAt;
     return this;
   }
 
-   /**
+  /**
    * Get modifiedAt
    * @return modifiedAt
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_MODIFIED_AT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -214,21 +216,20 @@ public class OrganizationResponse {
 
   @JsonProperty(JSON_PROPERTY_MODIFIED_AT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setModifiedAt(OffsetDateTime modifiedAt) {
+  public void setModifiedAt(@javax.annotation.Nonnull OffsetDateTime modifiedAt) {
     this.modifiedAt = modifiedAt;
   }
 
-
-  public OrganizationResponse createdAt(OffsetDateTime createdAt) {
+  public OrganizationResponse createdAt(@javax.annotation.Nonnull OffsetDateTime createdAt) {
     
     this.createdAt = createdAt;
     return this;
   }
 
-   /**
+  /**
    * Get createdAt
    * @return createdAt
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_CREATED_AT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -240,7 +241,7 @@ public class OrganizationResponse {
 
   @JsonProperty(JSON_PROPERTY_CREATED_AT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setCreatedAt(OffsetDateTime createdAt) {
+  public void setCreatedAt(@javax.annotation.Nonnull OffsetDateTime createdAt) {
     this.createdAt = createdAt;
   }
 

@@ -33,27 +33,29 @@ import java.util.StringJoiner;
   PaymentMethodDeleteResponse.JSON_PROPERTY_PAYMENT_METHOD_ID,
   PaymentMethodDeleteResponse.JSON_PROPERTY_DELETED
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class PaymentMethodDeleteResponse {
   public static final String JSON_PROPERTY_PAYMENT_METHOD_ID = "payment_method_id";
+  @javax.annotation.Nonnull
   private String paymentMethodId;
 
   public static final String JSON_PROPERTY_DELETED = "deleted";
+  @javax.annotation.Nonnull
   private Boolean deleted;
 
   public PaymentMethodDeleteResponse() {
   }
 
-  public PaymentMethodDeleteResponse paymentMethodId(String paymentMethodId) {
+  public PaymentMethodDeleteResponse paymentMethodId(@javax.annotation.Nonnull String paymentMethodId) {
     
     this.paymentMethodId = paymentMethodId;
     return this;
   }
 
-   /**
+  /**
    * The unique identifier of the Payment method
    * @return paymentMethodId
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_PAYMENT_METHOD_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -65,21 +67,20 @@ public class PaymentMethodDeleteResponse {
 
   @JsonProperty(JSON_PROPERTY_PAYMENT_METHOD_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setPaymentMethodId(String paymentMethodId) {
+  public void setPaymentMethodId(@javax.annotation.Nonnull String paymentMethodId) {
     this.paymentMethodId = paymentMethodId;
   }
 
-
-  public PaymentMethodDeleteResponse deleted(Boolean deleted) {
+  public PaymentMethodDeleteResponse deleted(@javax.annotation.Nonnull Boolean deleted) {
     
     this.deleted = deleted;
     return this;
   }
 
-   /**
+  /**
    * Whether payment method was deleted or not
    * @return deleted
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_DELETED)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -91,7 +92,7 @@ public class PaymentMethodDeleteResponse {
 
   @JsonProperty(JSON_PROPERTY_DELETED)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setDeleted(Boolean deleted) {
+  public void setDeleted(@javax.annotation.Nonnull Boolean deleted) {
     this.deleted = deleted;
   }
 

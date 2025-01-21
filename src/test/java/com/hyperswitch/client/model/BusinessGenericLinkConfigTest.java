@@ -25,22 +25,21 @@ import org.openapitools.jackson.nullable.JsonNullable;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.openapitools.jackson.nullable.JsonNullable;
 import java.util.NoSuchElementException;
-import org.junit.Assert;
-import org.junit.Ignore;
-import org.junit.Test;
-
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Test;
 
 /**
  * Model tests for BusinessGenericLinkConfig
  */
-public class BusinessGenericLinkConfigTest {
+class BusinessGenericLinkConfigTest {
     private final BusinessGenericLinkConfig model = new BusinessGenericLinkConfig();
 
     /**
      * Model tests for BusinessGenericLinkConfig
      */
     @Test
-    public void testBusinessGenericLinkConfig() {
+    void testBusinessGenericLinkConfig() {
         // TODO: test BusinessGenericLinkConfig
     }
 
@@ -48,7 +47,7 @@ public class BusinessGenericLinkConfigTest {
      * Test the property 'logo'
      */
     @Test
-    public void logoTest() {
+    void logoTest() {
         // TODO: test logo
     }
 
@@ -56,7 +55,7 @@ public class BusinessGenericLinkConfigTest {
      * Test the property 'merchantName'
      */
     @Test
-    public void merchantNameTest() {
+    void merchantNameTest() {
         // TODO: test merchantName
     }
 
@@ -64,7 +63,7 @@ public class BusinessGenericLinkConfigTest {
      * Test the property 'theme'
      */
     @Test
-    public void themeTest() {
+    void themeTest() {
         // TODO: test theme
     }
 
@@ -72,7 +71,7 @@ public class BusinessGenericLinkConfigTest {
      * Test the property 'domainName'
      */
     @Test
-    public void domainNameTest() {
+    void domainNameTest() {
         // TODO: test domainName
     }
 
@@ -80,7 +79,7 @@ public class BusinessGenericLinkConfigTest {
      * Test the property 'allowedDomains'
      */
     @Test
-    public void allowedDomainsTest() {
+    void allowedDomainsTest() {
         // TODO: test allowedDomains
     }
 

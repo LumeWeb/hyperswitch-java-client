@@ -33,24 +33,25 @@ import java.util.StringJoiner;
   RealTimePaymentDataOneOf3.JSON_PROPERTY_VIET_QR
 })
 @JsonTypeName("RealTimePaymentData_oneOf_3")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class RealTimePaymentDataOneOf3 {
   public static final String JSON_PROPERTY_VIET_QR = "viet_qr";
+  @javax.annotation.Nonnull
   private Object vietQr;
 
   public RealTimePaymentDataOneOf3() {
   }
 
-  public RealTimePaymentDataOneOf3 vietQr(Object vietQr) {
+  public RealTimePaymentDataOneOf3 vietQr(@javax.annotation.Nonnull Object vietQr) {
     
     this.vietQr = vietQr;
     return this;
   }
 
-   /**
+  /**
    * Get vietQr
    * @return vietQr
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_VIET_QR)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -62,7 +63,7 @@ public class RealTimePaymentDataOneOf3 {
 
   @JsonProperty(JSON_PROPERTY_VIET_QR)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setVietQr(Object vietQr) {
+  public void setVietQr(@javax.annotation.Nonnull Object vietQr) {
     this.vietQr = vietQr;
   }
 

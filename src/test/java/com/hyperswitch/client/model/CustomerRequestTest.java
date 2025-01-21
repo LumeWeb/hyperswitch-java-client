@@ -23,22 +23,21 @@ import org.openapitools.jackson.nullable.JsonNullable;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.openapitools.jackson.nullable.JsonNullable;
 import java.util.NoSuchElementException;
-import org.junit.Assert;
-import org.junit.Ignore;
-import org.junit.Test;
-
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Test;
 
 /**
  * Model tests for CustomerRequest
  */
-public class CustomerRequestTest {
+class CustomerRequestTest {
     private final CustomerRequest model = new CustomerRequest();
 
     /**
      * Model tests for CustomerRequest
      */
     @Test
-    public void testCustomerRequest() {
+    void testCustomerRequest() {
         // TODO: test CustomerRequest
     }
 
@@ -46,7 +45,7 @@ public class CustomerRequestTest {
      * Test the property 'customerId'
      */
     @Test
-    public void customerIdTest() {
+    void customerIdTest() {
         // TODO: test customerId
     }
 
@@ -54,7 +53,7 @@ public class CustomerRequestTest {
      * Test the property 'name'
      */
     @Test
-    public void nameTest() {
+    void nameTest() {
         // TODO: test name
     }
 
@@ -62,7 +61,7 @@ public class CustomerRequestTest {
      * Test the property 'email'
      */
     @Test
-    public void emailTest() {
+    void emailTest() {
         // TODO: test email
     }
 
@@ -70,7 +69,7 @@ public class CustomerRequestTest {
      * Test the property 'phone'
      */
     @Test
-    public void phoneTest() {
+    void phoneTest() {
         // TODO: test phone
     }
 
@@ -78,7 +77,7 @@ public class CustomerRequestTest {
      * Test the property 'description'
      */
     @Test
-    public void descriptionTest() {
+    void descriptionTest() {
         // TODO: test description
     }
 
@@ -86,7 +85,7 @@ public class CustomerRequestTest {
      * Test the property 'phoneCountryCode'
      */
     @Test
-    public void phoneCountryCodeTest() {
+    void phoneCountryCodeTest() {
         // TODO: test phoneCountryCode
     }
 
@@ -94,7 +93,7 @@ public class CustomerRequestTest {
      * Test the property 'address'
      */
     @Test
-    public void addressTest() {
+    void addressTest() {
         // TODO: test address
     }
 
@@ -102,7 +101,7 @@ public class CustomerRequestTest {
      * Test the property 'metadata'
      */
     @Test
-    public void metadataTest() {
+    void metadataTest() {
         // TODO: test metadata
     }
 

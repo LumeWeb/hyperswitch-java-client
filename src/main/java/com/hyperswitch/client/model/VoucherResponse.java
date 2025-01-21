@@ -44,48 +44,57 @@ import java.util.StringJoiner;
   VoucherResponse.JSON_PROPERTY_SEICOMART,
   VoucherResponse.JSON_PROPERTY_PAY_EASY
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class VoucherResponse {
   public static final String JSON_PROPERTY_BOLETO = "boleto";
+  @javax.annotation.Nonnull
   private BoletoVoucherData boleto;
 
   public static final String JSON_PROPERTY_ALFAMART = "alfamart";
+  @javax.annotation.Nonnull
   private AlfamartVoucherData alfamart;
 
   public static final String JSON_PROPERTY_INDOMARET = "indomaret";
+  @javax.annotation.Nonnull
   private IndomaretVoucherData indomaret;
 
   public static final String JSON_PROPERTY_SEVEN_ELEVEN = "seven_eleven";
+  @javax.annotation.Nonnull
   private JCSVoucherData sevenEleven;
 
   public static final String JSON_PROPERTY_LAWSON = "lawson";
+  @javax.annotation.Nonnull
   private JCSVoucherData lawson;
 
   public static final String JSON_PROPERTY_MINI_STOP = "mini_stop";
+  @javax.annotation.Nonnull
   private JCSVoucherData miniStop;
 
   public static final String JSON_PROPERTY_FAMILY_MART = "family_mart";
+  @javax.annotation.Nonnull
   private JCSVoucherData familyMart;
 
   public static final String JSON_PROPERTY_SEICOMART = "seicomart";
+  @javax.annotation.Nonnull
   private JCSVoucherData seicomart;
 
   public static final String JSON_PROPERTY_PAY_EASY = "pay_easy";
+  @javax.annotation.Nonnull
   private JCSVoucherData payEasy;
 
   public VoucherResponse() {
   }
 
-  public VoucherResponse boleto(BoletoVoucherData boleto) {
+  public VoucherResponse boleto(@javax.annotation.Nonnull BoletoVoucherData boleto) {
     
     this.boleto = boleto;
     return this;
   }
 
-   /**
+  /**
    * Get boleto
    * @return boleto
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_BOLETO)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -97,21 +106,20 @@ public class VoucherResponse {
 
   @JsonProperty(JSON_PROPERTY_BOLETO)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setBoleto(BoletoVoucherData boleto) {
+  public void setBoleto(@javax.annotation.Nonnull BoletoVoucherData boleto) {
     this.boleto = boleto;
   }
 
-
-  public VoucherResponse alfamart(AlfamartVoucherData alfamart) {
+  public VoucherResponse alfamart(@javax.annotation.Nonnull AlfamartVoucherData alfamart) {
     
     this.alfamart = alfamart;
     return this;
   }
 
-   /**
+  /**
    * Get alfamart
    * @return alfamart
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_ALFAMART)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -123,21 +131,20 @@ public class VoucherResponse {
 
   @JsonProperty(JSON_PROPERTY_ALFAMART)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setAlfamart(AlfamartVoucherData alfamart) {
+  public void setAlfamart(@javax.annotation.Nonnull AlfamartVoucherData alfamart) {
     this.alfamart = alfamart;
   }
 
-
-  public VoucherResponse indomaret(IndomaretVoucherData indomaret) {
+  public VoucherResponse indomaret(@javax.annotation.Nonnull IndomaretVoucherData indomaret) {
     
     this.indomaret = indomaret;
     return this;
   }
 
-   /**
+  /**
    * Get indomaret
    * @return indomaret
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_INDOMARET)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -149,21 +156,20 @@ public class VoucherResponse {
 
   @JsonProperty(JSON_PROPERTY_INDOMARET)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setIndomaret(IndomaretVoucherData indomaret) {
+  public void setIndomaret(@javax.annotation.Nonnull IndomaretVoucherData indomaret) {
     this.indomaret = indomaret;
   }
 
-
-  public VoucherResponse sevenEleven(JCSVoucherData sevenEleven) {
+  public VoucherResponse sevenEleven(@javax.annotation.Nonnull JCSVoucherData sevenEleven) {
     
     this.sevenEleven = sevenEleven;
     return this;
   }
 
-   /**
+  /**
    * Get sevenEleven
    * @return sevenEleven
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_SEVEN_ELEVEN)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -175,21 +181,20 @@ public class VoucherResponse {
 
   @JsonProperty(JSON_PROPERTY_SEVEN_ELEVEN)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setSevenEleven(JCSVoucherData sevenEleven) {
+  public void setSevenEleven(@javax.annotation.Nonnull JCSVoucherData sevenEleven) {
     this.sevenEleven = sevenEleven;
   }
 
-
-  public VoucherResponse lawson(JCSVoucherData lawson) {
+  public VoucherResponse lawson(@javax.annotation.Nonnull JCSVoucherData lawson) {
     
     this.lawson = lawson;
     return this;
   }
 
-   /**
+  /**
    * Get lawson
    * @return lawson
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_LAWSON)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -201,21 +206,20 @@ public class VoucherResponse {
 
   @JsonProperty(JSON_PROPERTY_LAWSON)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setLawson(JCSVoucherData lawson) {
+  public void setLawson(@javax.annotation.Nonnull JCSVoucherData lawson) {
     this.lawson = lawson;
   }
 
-
-  public VoucherResponse miniStop(JCSVoucherData miniStop) {
+  public VoucherResponse miniStop(@javax.annotation.Nonnull JCSVoucherData miniStop) {
     
     this.miniStop = miniStop;
     return this;
   }
 
-   /**
+  /**
    * Get miniStop
    * @return miniStop
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_MINI_STOP)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -227,21 +231,20 @@ public class VoucherResponse {
 
   @JsonProperty(JSON_PROPERTY_MINI_STOP)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setMiniStop(JCSVoucherData miniStop) {
+  public void setMiniStop(@javax.annotation.Nonnull JCSVoucherData miniStop) {
     this.miniStop = miniStop;
   }
 
-
-  public VoucherResponse familyMart(JCSVoucherData familyMart) {
+  public VoucherResponse familyMart(@javax.annotation.Nonnull JCSVoucherData familyMart) {
     
     this.familyMart = familyMart;
     return this;
   }
 
-   /**
+  /**
    * Get familyMart
    * @return familyMart
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_FAMILY_MART)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -253,21 +256,20 @@ public class VoucherResponse {
 
   @JsonProperty(JSON_PROPERTY_FAMILY_MART)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setFamilyMart(JCSVoucherData familyMart) {
+  public void setFamilyMart(@javax.annotation.Nonnull JCSVoucherData familyMart) {
     this.familyMart = familyMart;
   }
 
-
-  public VoucherResponse seicomart(JCSVoucherData seicomart) {
+  public VoucherResponse seicomart(@javax.annotation.Nonnull JCSVoucherData seicomart) {
     
     this.seicomart = seicomart;
     return this;
   }
 
-   /**
+  /**
    * Get seicomart
    * @return seicomart
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_SEICOMART)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -279,21 +281,20 @@ public class VoucherResponse {
 
   @JsonProperty(JSON_PROPERTY_SEICOMART)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setSeicomart(JCSVoucherData seicomart) {
+  public void setSeicomart(@javax.annotation.Nonnull JCSVoucherData seicomart) {
     this.seicomart = seicomart;
   }
 
-
-  public VoucherResponse payEasy(JCSVoucherData payEasy) {
+  public VoucherResponse payEasy(@javax.annotation.Nonnull JCSVoucherData payEasy) {
     
     this.payEasy = payEasy;
     return this;
   }
 
-   /**
+  /**
    * Get payEasy
    * @return payEasy
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_PAY_EASY)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -305,7 +306,7 @@ public class VoucherResponse {
 
   @JsonProperty(JSON_PROPERTY_PAY_EASY)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setPayEasy(JCSVoucherData payEasy) {
+  public void setPayEasy(@javax.annotation.Nonnull JCSVoucherData payEasy) {
     this.payEasy = payEasy;
   }
 

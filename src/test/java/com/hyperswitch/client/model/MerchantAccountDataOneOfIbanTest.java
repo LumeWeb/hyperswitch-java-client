@@ -22,22 +22,21 @@ import org.openapitools.jackson.nullable.JsonNullable;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.openapitools.jackson.nullable.JsonNullable;
 import java.util.NoSuchElementException;
-import org.junit.Assert;
-import org.junit.Ignore;
-import org.junit.Test;
-
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Test;
 
 /**
  * Model tests for MerchantAccountDataOneOfIban
  */
-public class MerchantAccountDataOneOfIbanTest {
+class MerchantAccountDataOneOfIbanTest {
     private final MerchantAccountDataOneOfIban model = new MerchantAccountDataOneOfIban();
 
     /**
      * Model tests for MerchantAccountDataOneOfIban
      */
     @Test
-    public void testMerchantAccountDataOneOfIban() {
+    void testMerchantAccountDataOneOfIban() {
         // TODO: test MerchantAccountDataOneOfIban
     }
 
@@ -45,7 +44,7 @@ public class MerchantAccountDataOneOfIbanTest {
      * Test the property 'iban'
      */
     @Test
-    public void ibanTest() {
+    void ibanTest() {
         // TODO: test iban
     }
 
@@ -53,7 +52,7 @@ public class MerchantAccountDataOneOfIbanTest {
      * Test the property 'name'
      */
     @Test
-    public void nameTest() {
+    void nameTest() {
         // TODO: test name
     }
 
@@ -61,7 +60,7 @@ public class MerchantAccountDataOneOfIbanTest {
      * Test the property 'connectorRecipientId'
      */
     @Test
-    public void connectorRecipientIdTest() {
+    void connectorRecipientIdTest() {
         // TODO: test connectorRecipientId
     }
 

@@ -39,27 +39,29 @@ import java.util.StringJoiner;
   BankRedirectDataOneOf6Interac.JSON_PROPERTY_EMAIL
 })
 @JsonTypeName("BankRedirectData_oneOf_6_interac")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class BankRedirectDataOneOf6Interac {
   public static final String JSON_PROPERTY_COUNTRY = "country";
+  @javax.annotation.Nullable
   private JsonNullable<CountryAlpha2> country = JsonNullable.<CountryAlpha2>undefined();
 
   public static final String JSON_PROPERTY_EMAIL = "email";
+  @javax.annotation.Nullable
   private JsonNullable<String> email = JsonNullable.<String>undefined();
 
   public BankRedirectDataOneOf6Interac() {
   }
 
-  public BankRedirectDataOneOf6Interac country(CountryAlpha2 country) {
+  public BankRedirectDataOneOf6Interac country(@javax.annotation.Nullable CountryAlpha2 country) {
     this.country = JsonNullable.<CountryAlpha2>of(country);
     
     return this;
   }
 
-   /**
+  /**
    * Get country
    * @return country
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -79,21 +81,20 @@ public class BankRedirectDataOneOf6Interac {
     this.country = country;
   }
 
-  public void setCountry(CountryAlpha2 country) {
+  public void setCountry(@javax.annotation.Nullable CountryAlpha2 country) {
     this.country = JsonNullable.<CountryAlpha2>of(country);
   }
 
-
-  public BankRedirectDataOneOf6Interac email(String email) {
+  public BankRedirectDataOneOf6Interac email(@javax.annotation.Nullable String email) {
     this.email = JsonNullable.<String>of(email);
     
     return this;
   }
 
-   /**
+  /**
    * Get email
    * @return email
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -113,7 +114,7 @@ public class BankRedirectDataOneOf6Interac {
     this.email = email;
   }
 
-  public void setEmail(String email) {
+  public void setEmail(@javax.annotation.Nullable String email) {
     this.email = JsonNullable.<String>of(email);
   }
 

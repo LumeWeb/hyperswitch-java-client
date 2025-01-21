@@ -46,51 +46,61 @@ import java.util.StringJoiner;
   OrderDetails.JSON_PROPERTY_PRODUCT_TYPE,
   OrderDetails.JSON_PROPERTY_PRODUCT_TAX_CODE
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class OrderDetails {
   public static final String JSON_PROPERTY_PRODUCT_NAME = "product_name";
+  @javax.annotation.Nonnull
   private String productName;
 
   public static final String JSON_PROPERTY_QUANTITY = "quantity";
+  @javax.annotation.Nonnull
   private Integer quantity;
 
   public static final String JSON_PROPERTY_REQUIRES_SHIPPING = "requires_shipping";
+  @javax.annotation.Nullable
   private JsonNullable<Boolean> requiresShipping = JsonNullable.<Boolean>undefined();
 
   public static final String JSON_PROPERTY_PRODUCT_IMG_LINK = "product_img_link";
+  @javax.annotation.Nullable
   private JsonNullable<String> productImgLink = JsonNullable.<String>undefined();
 
   public static final String JSON_PROPERTY_PRODUCT_ID = "product_id";
+  @javax.annotation.Nullable
   private JsonNullable<String> productId = JsonNullable.<String>undefined();
 
   public static final String JSON_PROPERTY_CATEGORY = "category";
+  @javax.annotation.Nullable
   private JsonNullable<String> category = JsonNullable.<String>undefined();
 
   public static final String JSON_PROPERTY_SUB_CATEGORY = "sub_category";
+  @javax.annotation.Nullable
   private JsonNullable<String> subCategory = JsonNullable.<String>undefined();
 
   public static final String JSON_PROPERTY_BRAND = "brand";
+  @javax.annotation.Nullable
   private JsonNullable<String> brand = JsonNullable.<String>undefined();
 
   public static final String JSON_PROPERTY_PRODUCT_TYPE = "product_type";
+  @javax.annotation.Nullable
   private JsonNullable<ProductType> productType = JsonNullable.<ProductType>undefined();
 
   public static final String JSON_PROPERTY_PRODUCT_TAX_CODE = "product_tax_code";
+  @javax.annotation.Nullable
   private JsonNullable<String> productTaxCode = JsonNullable.<String>undefined();
 
   public OrderDetails() {
   }
 
-  public OrderDetails productName(String productName) {
+  public OrderDetails productName(@javax.annotation.Nonnull String productName) {
     
     this.productName = productName;
     return this;
   }
 
-   /**
+  /**
    * Name of the product that is being purchased
    * @return productName
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_PRODUCT_NAME)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -102,22 +112,21 @@ public class OrderDetails {
 
   @JsonProperty(JSON_PROPERTY_PRODUCT_NAME)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setProductName(String productName) {
+  public void setProductName(@javax.annotation.Nonnull String productName) {
     this.productName = productName;
   }
 
-
-  public OrderDetails quantity(Integer quantity) {
+  public OrderDetails quantity(@javax.annotation.Nonnull Integer quantity) {
     
     this.quantity = quantity;
     return this;
   }
 
-   /**
+  /**
    * The quantity of the product to be purchased
    * minimum: 0
    * @return quantity
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_QUANTITY)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -129,21 +138,20 @@ public class OrderDetails {
 
   @JsonProperty(JSON_PROPERTY_QUANTITY)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setQuantity(Integer quantity) {
+  public void setQuantity(@javax.annotation.Nonnull Integer quantity) {
     this.quantity = quantity;
   }
 
-
-  public OrderDetails requiresShipping(Boolean requiresShipping) {
+  public OrderDetails requiresShipping(@javax.annotation.Nullable Boolean requiresShipping) {
     this.requiresShipping = JsonNullable.<Boolean>of(requiresShipping);
     
     return this;
   }
 
-   /**
+  /**
    * Get requiresShipping
    * @return requiresShipping
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -163,21 +171,20 @@ public class OrderDetails {
     this.requiresShipping = requiresShipping;
   }
 
-  public void setRequiresShipping(Boolean requiresShipping) {
+  public void setRequiresShipping(@javax.annotation.Nullable Boolean requiresShipping) {
     this.requiresShipping = JsonNullable.<Boolean>of(requiresShipping);
   }
 
-
-  public OrderDetails productImgLink(String productImgLink) {
+  public OrderDetails productImgLink(@javax.annotation.Nullable String productImgLink) {
     this.productImgLink = JsonNullable.<String>of(productImgLink);
     
     return this;
   }
 
-   /**
+  /**
    * The image URL of the product
    * @return productImgLink
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -197,21 +204,20 @@ public class OrderDetails {
     this.productImgLink = productImgLink;
   }
 
-  public void setProductImgLink(String productImgLink) {
+  public void setProductImgLink(@javax.annotation.Nullable String productImgLink) {
     this.productImgLink = JsonNullable.<String>of(productImgLink);
   }
 
-
-  public OrderDetails productId(String productId) {
+  public OrderDetails productId(@javax.annotation.Nullable String productId) {
     this.productId = JsonNullable.<String>of(productId);
     
     return this;
   }
 
-   /**
+  /**
    * ID of the product that is being purchased
    * @return productId
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -231,21 +237,20 @@ public class OrderDetails {
     this.productId = productId;
   }
 
-  public void setProductId(String productId) {
+  public void setProductId(@javax.annotation.Nullable String productId) {
     this.productId = JsonNullable.<String>of(productId);
   }
 
-
-  public OrderDetails category(String category) {
+  public OrderDetails category(@javax.annotation.Nullable String category) {
     this.category = JsonNullable.<String>of(category);
     
     return this;
   }
 
-   /**
+  /**
    * Category of the product that is being purchased
    * @return category
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -265,21 +270,20 @@ public class OrderDetails {
     this.category = category;
   }
 
-  public void setCategory(String category) {
+  public void setCategory(@javax.annotation.Nullable String category) {
     this.category = JsonNullable.<String>of(category);
   }
 
-
-  public OrderDetails subCategory(String subCategory) {
+  public OrderDetails subCategory(@javax.annotation.Nullable String subCategory) {
     this.subCategory = JsonNullable.<String>of(subCategory);
     
     return this;
   }
 
-   /**
+  /**
    * Sub category of the product that is being purchased
    * @return subCategory
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -299,21 +303,20 @@ public class OrderDetails {
     this.subCategory = subCategory;
   }
 
-  public void setSubCategory(String subCategory) {
+  public void setSubCategory(@javax.annotation.Nullable String subCategory) {
     this.subCategory = JsonNullable.<String>of(subCategory);
   }
 
-
-  public OrderDetails brand(String brand) {
+  public OrderDetails brand(@javax.annotation.Nullable String brand) {
     this.brand = JsonNullable.<String>of(brand);
     
     return this;
   }
 
-   /**
+  /**
    * Brand of the product that is being purchased
    * @return brand
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -333,21 +336,20 @@ public class OrderDetails {
     this.brand = brand;
   }
 
-  public void setBrand(String brand) {
+  public void setBrand(@javax.annotation.Nullable String brand) {
     this.brand = JsonNullable.<String>of(brand);
   }
 
-
-  public OrderDetails productType(ProductType productType) {
+  public OrderDetails productType(@javax.annotation.Nullable ProductType productType) {
     this.productType = JsonNullable.<ProductType>of(productType);
     
     return this;
   }
 
-   /**
+  /**
    * Get productType
    * @return productType
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -367,21 +369,20 @@ public class OrderDetails {
     this.productType = productType;
   }
 
-  public void setProductType(ProductType productType) {
+  public void setProductType(@javax.annotation.Nullable ProductType productType) {
     this.productType = JsonNullable.<ProductType>of(productType);
   }
 
-
-  public OrderDetails productTaxCode(String productTaxCode) {
+  public OrderDetails productTaxCode(@javax.annotation.Nullable String productTaxCode) {
     this.productTaxCode = JsonNullable.<String>of(productTaxCode);
     
     return this;
   }
 
-   /**
+  /**
    * The tax code for the product
    * @return productTaxCode
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -401,7 +402,7 @@ public class OrderDetails {
     this.productTaxCode = productTaxCode;
   }
 
-  public void setProductTaxCode(String productTaxCode) {
+  public void setProductTaxCode(@javax.annotation.Nullable String productTaxCode) {
     this.productTaxCode = JsonNullable.<String>of(productTaxCode);
   }
 

@@ -35,33 +35,37 @@ import java.util.StringJoiner;
   CardPayout.JSON_PROPERTY_EXPIRY_YEAR,
   CardPayout.JSON_PROPERTY_CARD_HOLDER_NAME
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class CardPayout {
   public static final String JSON_PROPERTY_CARD_NUMBER = "card_number";
+  @javax.annotation.Nonnull
   private String cardNumber;
 
   public static final String JSON_PROPERTY_EXPIRY_MONTH = "expiry_month";
+  @javax.annotation.Nonnull
   private String expiryMonth;
 
   public static final String JSON_PROPERTY_EXPIRY_YEAR = "expiry_year";
+  @javax.annotation.Nonnull
   private String expiryYear;
 
   public static final String JSON_PROPERTY_CARD_HOLDER_NAME = "card_holder_name";
+  @javax.annotation.Nonnull
   private String cardHolderName;
 
   public CardPayout() {
   }
 
-  public CardPayout cardNumber(String cardNumber) {
+  public CardPayout cardNumber(@javax.annotation.Nonnull String cardNumber) {
     
     this.cardNumber = cardNumber;
     return this;
   }
 
-   /**
+  /**
    * The card number
    * @return cardNumber
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_CARD_NUMBER)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -73,21 +77,20 @@ public class CardPayout {
 
   @JsonProperty(JSON_PROPERTY_CARD_NUMBER)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setCardNumber(String cardNumber) {
+  public void setCardNumber(@javax.annotation.Nonnull String cardNumber) {
     this.cardNumber = cardNumber;
   }
 
-
-  public CardPayout expiryMonth(String expiryMonth) {
+  public CardPayout expiryMonth(@javax.annotation.Nonnull String expiryMonth) {
     
     this.expiryMonth = expiryMonth;
     return this;
   }
 
-   /**
+  /**
    * The card&#39;s expiry month
    * @return expiryMonth
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_EXPIRY_MONTH)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -99,21 +102,20 @@ public class CardPayout {
 
   @JsonProperty(JSON_PROPERTY_EXPIRY_MONTH)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setExpiryMonth(String expiryMonth) {
+  public void setExpiryMonth(@javax.annotation.Nonnull String expiryMonth) {
     this.expiryMonth = expiryMonth;
   }
 
-
-  public CardPayout expiryYear(String expiryYear) {
+  public CardPayout expiryYear(@javax.annotation.Nonnull String expiryYear) {
     
     this.expiryYear = expiryYear;
     return this;
   }
 
-   /**
+  /**
    * The card&#39;s expiry year
    * @return expiryYear
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_EXPIRY_YEAR)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -125,21 +127,20 @@ public class CardPayout {
 
   @JsonProperty(JSON_PROPERTY_EXPIRY_YEAR)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setExpiryYear(String expiryYear) {
+  public void setExpiryYear(@javax.annotation.Nonnull String expiryYear) {
     this.expiryYear = expiryYear;
   }
 
-
-  public CardPayout cardHolderName(String cardHolderName) {
+  public CardPayout cardHolderName(@javax.annotation.Nonnull String cardHolderName) {
     
     this.cardHolderName = cardHolderName;
     return this;
   }
 
-   /**
+  /**
    * The card holder&#39;s name
    * @return cardHolderName
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_CARD_HOLDER_NAME)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -151,7 +152,7 @@ public class CardPayout {
 
   @JsonProperty(JSON_PROPERTY_CARD_HOLDER_NAME)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setCardHolderName(String cardHolderName) {
+  public void setCardHolderName(@javax.annotation.Nonnull String cardHolderName) {
     this.cardHolderName = cardHolderName;
   }
 

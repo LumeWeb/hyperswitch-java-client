@@ -22,22 +22,21 @@ import org.openapitools.jackson.nullable.JsonNullable;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.openapitools.jackson.nullable.JsonNullable;
 import java.util.NoSuchElementException;
-import org.junit.Assert;
-import org.junit.Ignore;
-import org.junit.Test;
-
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Test;
 
 /**
  * Model tests for RequestSurchargeDetails
  */
-public class RequestSurchargeDetailsTest {
+class RequestSurchargeDetailsTest {
     private final RequestSurchargeDetails model = new RequestSurchargeDetails();
 
     /**
      * Model tests for RequestSurchargeDetails
      */
     @Test
-    public void testRequestSurchargeDetails() {
+    void testRequestSurchargeDetails() {
         // TODO: test RequestSurchargeDetails
     }
 
@@ -45,7 +44,7 @@ public class RequestSurchargeDetailsTest {
      * Test the property 'surchargeAmount'
      */
     @Test
-    public void surchargeAmountTest() {
+    void surchargeAmountTest() {
         // TODO: test surchargeAmount
     }
 
@@ -53,7 +52,7 @@ public class RequestSurchargeDetailsTest {
      * Test the property 'taxAmount'
      */
     @Test
-    public void taxAmountTest() {
+    void taxAmountTest() {
         // TODO: test taxAmount
     }
 

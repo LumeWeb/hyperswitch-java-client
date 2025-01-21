@@ -22,22 +22,21 @@ import org.openapitools.jackson.nullable.JsonNullable;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.openapitools.jackson.nullable.JsonNullable;
 import java.util.NoSuchElementException;
-import org.junit.Assert;
-import org.junit.Ignore;
-import org.junit.Test;
-
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Test;
 
 /**
  * Model tests for PayoutRetrieveBody
  */
-public class PayoutRetrieveBodyTest {
+class PayoutRetrieveBodyTest {
     private final PayoutRetrieveBody model = new PayoutRetrieveBody();
 
     /**
      * Model tests for PayoutRetrieveBody
      */
     @Test
-    public void testPayoutRetrieveBody() {
+    void testPayoutRetrieveBody() {
         // TODO: test PayoutRetrieveBody
     }
 
@@ -45,7 +44,7 @@ public class PayoutRetrieveBodyTest {
      * Test the property 'forceSync'
      */
     @Test
-    public void forceSyncTest() {
+    void forceSyncTest() {
         // TODO: test forceSync
     }
 
@@ -53,7 +52,7 @@ public class PayoutRetrieveBodyTest {
      * Test the property 'merchantId'
      */
     @Test
-    public void merchantIdTest() {
+    void merchantIdTest() {
         // TODO: test merchantId
     }
 

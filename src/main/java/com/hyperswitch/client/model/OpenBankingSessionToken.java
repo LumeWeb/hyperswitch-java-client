@@ -32,24 +32,25 @@ import java.util.StringJoiner;
 @JsonPropertyOrder({
   OpenBankingSessionToken.JSON_PROPERTY_OPEN_BANKING_SESSION_TOKEN
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class OpenBankingSessionToken {
   public static final String JSON_PROPERTY_OPEN_BANKING_SESSION_TOKEN = "open_banking_session_token";
+  @javax.annotation.Nonnull
   private String openBankingSessionToken;
 
   public OpenBankingSessionToken() {
   }
 
-  public OpenBankingSessionToken openBankingSessionToken(String openBankingSessionToken) {
+  public OpenBankingSessionToken openBankingSessionToken(@javax.annotation.Nonnull String openBankingSessionToken) {
     
     this.openBankingSessionToken = openBankingSessionToken;
     return this;
   }
 
-   /**
+  /**
    * The session token for OpenBanking Connectors
    * @return openBankingSessionToken
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_OPEN_BANKING_SESSION_TOKEN)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -61,7 +62,7 @@ public class OpenBankingSessionToken {
 
   @JsonProperty(JSON_PROPERTY_OPEN_BANKING_SESSION_TOKEN)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setOpenBankingSessionToken(String openBankingSessionToken) {
+  public void setOpenBankingSessionToken(@javax.annotation.Nonnull String openBankingSessionToken) {
     this.openBankingSessionToken = openBankingSessionToken;
   }
 

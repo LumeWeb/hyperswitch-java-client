@@ -20,23 +20,23 @@ import com.fasterxml.jackson.annotation.JsonTypeName;
 import com.fasterxml.jackson.annotation.JsonValue;
 import com.hyperswitch.client.model.CountryAlpha2;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
-import org.junit.Assert;
-import org.junit.Ignore;
-import org.junit.Test;
-
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Test;
 
 /**
  * Model tests for AcceptedCountriesOneOf
  */
-public class AcceptedCountriesOneOfTest {
+class AcceptedCountriesOneOfTest {
     private final AcceptedCountriesOneOf model = new AcceptedCountriesOneOf();
 
     /**
      * Model tests for AcceptedCountriesOneOf
      */
     @Test
-    public void testAcceptedCountriesOneOf() {
+    void testAcceptedCountriesOneOf() {
         // TODO: test AcceptedCountriesOneOf
     }
 
@@ -44,7 +44,7 @@ public class AcceptedCountriesOneOfTest {
      * Test the property 'type'
      */
     @Test
-    public void typeTest() {
+    void typeTest() {
         // TODO: test type
     }
 
@@ -52,7 +52,7 @@ public class AcceptedCountriesOneOfTest {
      * Test the property '_list'
      */
     @Test
-    public void _listTest() {
+    void _listTest() {
         // TODO: test _list
     }
 

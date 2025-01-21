@@ -29,11 +29,11 @@ import com.fasterxml.jackson.annotation.JsonValue;
  */
 public enum MobilePaymentConsent {
   
-  REQUIRED("consent_required"),
+  CONSENT_REQUIRED("consent_required"),
   
-  NOT_REQUIRED("consent_not_required"),
+  CONSENT_NOT_REQUIRED("consent_not_required"),
   
-  OPTIONAL("consent_optional");
+  CONSENT_OPTIONAL("consent_optional");
 
   private String value;
 

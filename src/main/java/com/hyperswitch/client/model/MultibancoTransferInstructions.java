@@ -33,27 +33,29 @@ import java.util.StringJoiner;
   MultibancoTransferInstructions.JSON_PROPERTY_REFERENCE,
   MultibancoTransferInstructions.JSON_PROPERTY_ENTITY
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class MultibancoTransferInstructions {
   public static final String JSON_PROPERTY_REFERENCE = "reference";
+  @javax.annotation.Nonnull
   private String reference;
 
   public static final String JSON_PROPERTY_ENTITY = "entity";
+  @javax.annotation.Nonnull
   private String entity;
 
   public MultibancoTransferInstructions() {
   }
 
-  public MultibancoTransferInstructions reference(String reference) {
+  public MultibancoTransferInstructions reference(@javax.annotation.Nonnull String reference) {
     
     this.reference = reference;
     return this;
   }
 
-   /**
+  /**
    * Get reference
    * @return reference
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_REFERENCE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -65,21 +67,20 @@ public class MultibancoTransferInstructions {
 
   @JsonProperty(JSON_PROPERTY_REFERENCE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setReference(String reference) {
+  public void setReference(@javax.annotation.Nonnull String reference) {
     this.reference = reference;
   }
 
-
-  public MultibancoTransferInstructions entity(String entity) {
+  public MultibancoTransferInstructions entity(@javax.annotation.Nonnull String entity) {
     
     this.entity = entity;
     return this;
   }
 
-   /**
+  /**
    * Get entity
    * @return entity
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_ENTITY)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -91,7 +92,7 @@ public class MultibancoTransferInstructions {
 
   @JsonProperty(JSON_PROPERTY_ENTITY)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setEntity(String entity) {
+  public void setEntity(@javax.annotation.Nonnull String entity) {
     this.entity = entity;
   }
 

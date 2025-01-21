@@ -23,6 +23,7 @@ import com.fasterxml.jackson.annotation.JsonValue;
 import com.hyperswitch.client.model.ConnectorSelection;
 import com.hyperswitch.client.model.IfStatement;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 import com.fasterxml.jackson.annotation.JsonTypeName;
@@ -38,30 +39,33 @@ import java.util.StringJoiner;
   RuleConnectorSelection.JSON_PROPERTY_CONNECTOR_SELECTION,
   RuleConnectorSelection.JSON_PROPERTY_STATEMENTS
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class RuleConnectorSelection {
   public static final String JSON_PROPERTY_NAME = "name";
+  @javax.annotation.Nonnull
   private String name;
 
   public static final String JSON_PROPERTY_CONNECTOR_SELECTION = "connectorSelection";
+  @javax.annotation.Nonnull
   private ConnectorSelection connectorSelection;
 
   public static final String JSON_PROPERTY_STATEMENTS = "statements";
+  @javax.annotation.Nonnull
   private List<IfStatement> statements = new ArrayList<>();
 
   public RuleConnectorSelection() {
   }
 
-  public RuleConnectorSelection name(String name) {
+  public RuleConnectorSelection name(@javax.annotation.Nonnull String name) {
     
     this.name = name;
     return this;
   }
 
-   /**
+  /**
    * Get name
    * @return name
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_NAME)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -73,21 +77,20 @@ public class RuleConnectorSelection {
 
   @JsonProperty(JSON_PROPERTY_NAME)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setName(String name) {
+  public void setName(@javax.annotation.Nonnull String name) {
     this.name = name;
   }
 
-
-  public RuleConnectorSelection connectorSelection(ConnectorSelection connectorSelection) {
+  public RuleConnectorSelection connectorSelection(@javax.annotation.Nonnull ConnectorSelection connectorSelection) {
     
     this.connectorSelection = connectorSelection;
     return this;
   }
 
-   /**
+  /**
    * Get connectorSelection
    * @return connectorSelection
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_CONNECTOR_SELECTION)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -99,12 +102,11 @@ public class RuleConnectorSelection {
 
   @JsonProperty(JSON_PROPERTY_CONNECTOR_SELECTION)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setConnectorSelection(ConnectorSelection connectorSelection) {
+  public void setConnectorSelection(@javax.annotation.Nonnull ConnectorSelection connectorSelection) {
     this.connectorSelection = connectorSelection;
   }
 
-
-  public RuleConnectorSelection statements(List<IfStatement> statements) {
+  public RuleConnectorSelection statements(@javax.annotation.Nonnull List<IfStatement> statements) {
     
     this.statements = statements;
     return this;
@@ -118,10 +120,10 @@ public class RuleConnectorSelection {
     return this;
   }
 
-   /**
+  /**
    * Get statements
    * @return statements
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_STATEMENTS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -133,7 +135,7 @@ public class RuleConnectorSelection {
 
   @JsonProperty(JSON_PROPERTY_STATEMENTS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setStatements(List<IfStatement> statements) {
+  public void setStatements(@javax.annotation.Nonnull List<IfStatement> statements) {
     this.statements = statements;
   }
 

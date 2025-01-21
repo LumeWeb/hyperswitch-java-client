@@ -18,22 +18,21 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonTypeName;
 import com.fasterxml.jackson.annotation.JsonValue;
-import org.junit.Assert;
-import org.junit.Ignore;
-import org.junit.Test;
-
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Test;
 
 /**
  * Model tests for GooglePayAssuranceDetails
  */
-public class GooglePayAssuranceDetailsTest {
+class GooglePayAssuranceDetailsTest {
     private final GooglePayAssuranceDetails model = new GooglePayAssuranceDetails();
 
     /**
      * Model tests for GooglePayAssuranceDetails
      */
     @Test
-    public void testGooglePayAssuranceDetails() {
+    void testGooglePayAssuranceDetails() {
         // TODO: test GooglePayAssuranceDetails
     }
 
@@ -41,7 +40,7 @@ public class GooglePayAssuranceDetailsTest {
      * Test the property 'cardHolderAuthenticated'
      */
     @Test
-    public void cardHolderAuthenticatedTest() {
+    void cardHolderAuthenticatedTest() {
         // TODO: test cardHolderAuthenticated
     }
 
@@ -49,7 +48,7 @@ public class GooglePayAssuranceDetailsTest {
      * Test the property 'accountVerified'
      */
     @Test
-    public void accountVerifiedTest() {
+    void accountVerifiedTest() {
         // TODO: test accountVerified
     }
 

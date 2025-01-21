@@ -33,27 +33,29 @@ import java.util.StringJoiner;
   OnlineMandate.JSON_PROPERTY_IP_ADDRESS,
   OnlineMandate.JSON_PROPERTY_USER_AGENT
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class OnlineMandate {
   public static final String JSON_PROPERTY_IP_ADDRESS = "ip_address";
+  @javax.annotation.Nonnull
   private String ipAddress;
 
   public static final String JSON_PROPERTY_USER_AGENT = "user_agent";
+  @javax.annotation.Nonnull
   private String userAgent;
 
   public OnlineMandate() {
   }
 
-  public OnlineMandate ipAddress(String ipAddress) {
+  public OnlineMandate ipAddress(@javax.annotation.Nonnull String ipAddress) {
     
     this.ipAddress = ipAddress;
     return this;
   }
 
-   /**
+  /**
    * Ip address of the customer machine from which the mandate was created
    * @return ipAddress
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_IP_ADDRESS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -65,21 +67,20 @@ public class OnlineMandate {
 
   @JsonProperty(JSON_PROPERTY_IP_ADDRESS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setIpAddress(String ipAddress) {
+  public void setIpAddress(@javax.annotation.Nonnull String ipAddress) {
     this.ipAddress = ipAddress;
   }
 
-
-  public OnlineMandate userAgent(String userAgent) {
+  public OnlineMandate userAgent(@javax.annotation.Nonnull String userAgent) {
     
     this.userAgent = userAgent;
     return this;
   }
 
-   /**
+  /**
    * The user-agent of the customer&#39;s browser
    * @return userAgent
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_USER_AGENT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -91,7 +92,7 @@ public class OnlineMandate {
 
   @JsonProperty(JSON_PROPERTY_USER_AGENT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setUserAgent(String userAgent) {
+  public void setUserAgent(@javax.annotation.Nonnull String userAgent) {
     this.userAgent = userAgent;
   }
 

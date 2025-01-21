@@ -44,45 +44,53 @@ import java.util.StringJoiner;
   PaymentsExternalAuthenticationResponse.JSON_PROPERTY_ACS_SIGNED_CONTENT,
   PaymentsExternalAuthenticationResponse.JSON_PROPERTY_THREE_DS_REQUESTOR_URL
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class PaymentsExternalAuthenticationResponse {
   public static final String JSON_PROPERTY_TRANS_STATUS = "trans_status";
+  @javax.annotation.Nonnull
   private TransactionStatus transStatus;
 
   public static final String JSON_PROPERTY_ACS_URL = "acs_url";
+  @javax.annotation.Nullable
   private JsonNullable<String> acsUrl = JsonNullable.<String>undefined();
 
   public static final String JSON_PROPERTY_CHALLENGE_REQUEST = "challenge_request";
+  @javax.annotation.Nullable
   private JsonNullable<String> challengeRequest = JsonNullable.<String>undefined();
 
   public static final String JSON_PROPERTY_ACS_REFERENCE_NUMBER = "acs_reference_number";
+  @javax.annotation.Nullable
   private JsonNullable<String> acsReferenceNumber = JsonNullable.<String>undefined();
 
   public static final String JSON_PROPERTY_ACS_TRANS_ID = "acs_trans_id";
+  @javax.annotation.Nullable
   private JsonNullable<String> acsTransId = JsonNullable.<String>undefined();
 
   public static final String JSON_PROPERTY_THREE_DSSERVER_TRANS_ID = "three_dsserver_trans_id";
+  @javax.annotation.Nullable
   private JsonNullable<String> threeDsserverTransId = JsonNullable.<String>undefined();
 
   public static final String JSON_PROPERTY_ACS_SIGNED_CONTENT = "acs_signed_content";
+  @javax.annotation.Nullable
   private JsonNullable<String> acsSignedContent = JsonNullable.<String>undefined();
 
   public static final String JSON_PROPERTY_THREE_DS_REQUESTOR_URL = "three_ds_requestor_url";
+  @javax.annotation.Nonnull
   private String threeDsRequestorUrl;
 
   public PaymentsExternalAuthenticationResponse() {
   }
 
-  public PaymentsExternalAuthenticationResponse transStatus(TransactionStatus transStatus) {
+  public PaymentsExternalAuthenticationResponse transStatus(@javax.annotation.Nonnull TransactionStatus transStatus) {
     
     this.transStatus = transStatus;
     return this;
   }
 
-   /**
+  /**
    * Get transStatus
    * @return transStatus
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_TRANS_STATUS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -94,21 +102,20 @@ public class PaymentsExternalAuthenticationResponse {
 
   @JsonProperty(JSON_PROPERTY_TRANS_STATUS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setTransStatus(TransactionStatus transStatus) {
+  public void setTransStatus(@javax.annotation.Nonnull TransactionStatus transStatus) {
     this.transStatus = transStatus;
   }
 
-
-  public PaymentsExternalAuthenticationResponse acsUrl(String acsUrl) {
+  public PaymentsExternalAuthenticationResponse acsUrl(@javax.annotation.Nullable String acsUrl) {
     this.acsUrl = JsonNullable.<String>of(acsUrl);
     
     return this;
   }
 
-   /**
+  /**
    * Access Server URL to be used for challenge submission
    * @return acsUrl
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -128,21 +135,20 @@ public class PaymentsExternalAuthenticationResponse {
     this.acsUrl = acsUrl;
   }
 
-  public void setAcsUrl(String acsUrl) {
+  public void setAcsUrl(@javax.annotation.Nullable String acsUrl) {
     this.acsUrl = JsonNullable.<String>of(acsUrl);
   }
 
-
-  public PaymentsExternalAuthenticationResponse challengeRequest(String challengeRequest) {
+  public PaymentsExternalAuthenticationResponse challengeRequest(@javax.annotation.Nullable String challengeRequest) {
     this.challengeRequest = JsonNullable.<String>of(challengeRequest);
     
     return this;
   }
 
-   /**
+  /**
    * Challenge request which should be sent to acs_url
    * @return challengeRequest
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -162,21 +168,20 @@ public class PaymentsExternalAuthenticationResponse {
     this.challengeRequest = challengeRequest;
   }
 
-  public void setChallengeRequest(String challengeRequest) {
+  public void setChallengeRequest(@javax.annotation.Nullable String challengeRequest) {
     this.challengeRequest = JsonNullable.<String>of(challengeRequest);
   }
 
-
-  public PaymentsExternalAuthenticationResponse acsReferenceNumber(String acsReferenceNumber) {
+  public PaymentsExternalAuthenticationResponse acsReferenceNumber(@javax.annotation.Nullable String acsReferenceNumber) {
     this.acsReferenceNumber = JsonNullable.<String>of(acsReferenceNumber);
     
     return this;
   }
 
-   /**
+  /**
    * Unique identifier assigned by the EMVCo(Europay, Mastercard and Visa)
    * @return acsReferenceNumber
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -196,21 +201,20 @@ public class PaymentsExternalAuthenticationResponse {
     this.acsReferenceNumber = acsReferenceNumber;
   }
 
-  public void setAcsReferenceNumber(String acsReferenceNumber) {
+  public void setAcsReferenceNumber(@javax.annotation.Nullable String acsReferenceNumber) {
     this.acsReferenceNumber = JsonNullable.<String>of(acsReferenceNumber);
   }
 
-
-  public PaymentsExternalAuthenticationResponse acsTransId(String acsTransId) {
+  public PaymentsExternalAuthenticationResponse acsTransId(@javax.annotation.Nullable String acsTransId) {
     this.acsTransId = JsonNullable.<String>of(acsTransId);
     
     return this;
   }
 
-   /**
+  /**
    * Unique identifier assigned by the ACS to identify a single transaction
    * @return acsTransId
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -230,21 +234,20 @@ public class PaymentsExternalAuthenticationResponse {
     this.acsTransId = acsTransId;
   }
 
-  public void setAcsTransId(String acsTransId) {
+  public void setAcsTransId(@javax.annotation.Nullable String acsTransId) {
     this.acsTransId = JsonNullable.<String>of(acsTransId);
   }
 
-
-  public PaymentsExternalAuthenticationResponse threeDsserverTransId(String threeDsserverTransId) {
+  public PaymentsExternalAuthenticationResponse threeDsserverTransId(@javax.annotation.Nullable String threeDsserverTransId) {
     this.threeDsserverTransId = JsonNullable.<String>of(threeDsserverTransId);
     
     return this;
   }
 
-   /**
+  /**
    * Unique identifier assigned by the 3DS Server to identify a single transaction
    * @return threeDsserverTransId
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -264,21 +267,20 @@ public class PaymentsExternalAuthenticationResponse {
     this.threeDsserverTransId = threeDsserverTransId;
   }
 
-  public void setThreeDsserverTransId(String threeDsserverTransId) {
+  public void setThreeDsserverTransId(@javax.annotation.Nullable String threeDsserverTransId) {
     this.threeDsserverTransId = JsonNullable.<String>of(threeDsserverTransId);
   }
 
-
-  public PaymentsExternalAuthenticationResponse acsSignedContent(String acsSignedContent) {
+  public PaymentsExternalAuthenticationResponse acsSignedContent(@javax.annotation.Nullable String acsSignedContent) {
     this.acsSignedContent = JsonNullable.<String>of(acsSignedContent);
     
     return this;
   }
 
-   /**
+  /**
    * Contains the JWS object created by the ACS for the ARes(Authentication Response) message
    * @return acsSignedContent
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -298,21 +300,20 @@ public class PaymentsExternalAuthenticationResponse {
     this.acsSignedContent = acsSignedContent;
   }
 
-  public void setAcsSignedContent(String acsSignedContent) {
+  public void setAcsSignedContent(@javax.annotation.Nullable String acsSignedContent) {
     this.acsSignedContent = JsonNullable.<String>of(acsSignedContent);
   }
 
-
-  public PaymentsExternalAuthenticationResponse threeDsRequestorUrl(String threeDsRequestorUrl) {
+  public PaymentsExternalAuthenticationResponse threeDsRequestorUrl(@javax.annotation.Nonnull String threeDsRequestorUrl) {
     
     this.threeDsRequestorUrl = threeDsRequestorUrl;
     return this;
   }
 
-   /**
+  /**
    * Three DS Requestor URL
    * @return threeDsRequestorUrl
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_THREE_DS_REQUESTOR_URL)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -324,7 +325,7 @@ public class PaymentsExternalAuthenticationResponse {
 
   @JsonProperty(JSON_PROPERTY_THREE_DS_REQUESTOR_URL)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setThreeDsRequestorUrl(String threeDsRequestorUrl) {
+  public void setThreeDsRequestorUrl(@javax.annotation.Nonnull String threeDsRequestorUrl) {
     this.threeDsRequestorUrl = threeDsRequestorUrl;
   }
 

@@ -26,22 +26,21 @@ import org.openapitools.jackson.nullable.JsonNullable;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.openapitools.jackson.nullable.JsonNullable;
 import java.util.NoSuchElementException;
-import org.junit.Assert;
-import org.junit.Ignore;
-import org.junit.Test;
-
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Test;
 
 /**
  * Model tests for PayoutAttemptResponse
  */
-public class PayoutAttemptResponseTest {
+class PayoutAttemptResponseTest {
     private final PayoutAttemptResponse model = new PayoutAttemptResponse();
 
     /**
      * Model tests for PayoutAttemptResponse
      */
     @Test
-    public void testPayoutAttemptResponse() {
+    void testPayoutAttemptResponse() {
         // TODO: test PayoutAttemptResponse
     }
 
@@ -49,7 +48,7 @@ public class PayoutAttemptResponseTest {
      * Test the property 'attemptId'
      */
     @Test
-    public void attemptIdTest() {
+    void attemptIdTest() {
         // TODO: test attemptId
     }
 
@@ -57,7 +56,7 @@ public class PayoutAttemptResponseTest {
      * Test the property 'status'
      */
     @Test
-    public void statusTest() {
+    void statusTest() {
         // TODO: test status
     }
 
@@ -65,7 +64,7 @@ public class PayoutAttemptResponseTest {
      * Test the property 'amount'
      */
     @Test
-    public void amountTest() {
+    void amountTest() {
         // TODO: test amount
     }
 
@@ -73,7 +72,7 @@ public class PayoutAttemptResponseTest {
      * Test the property 'currency'
      */
     @Test
-    public void currencyTest() {
+    void currencyTest() {
         // TODO: test currency
     }
 
@@ -81,7 +80,7 @@ public class PayoutAttemptResponseTest {
      * Test the property 'connector'
      */
     @Test
-    public void connectorTest() {
+    void connectorTest() {
         // TODO: test connector
     }
 
@@ -89,7 +88,7 @@ public class PayoutAttemptResponseTest {
      * Test the property 'errorCode'
      */
     @Test
-    public void errorCodeTest() {
+    void errorCodeTest() {
         // TODO: test errorCode
     }
 
@@ -97,7 +96,7 @@ public class PayoutAttemptResponseTest {
      * Test the property 'errorMessage'
      */
     @Test
-    public void errorMessageTest() {
+    void errorMessageTest() {
         // TODO: test errorMessage
     }
 
@@ -105,7 +104,7 @@ public class PayoutAttemptResponseTest {
      * Test the property 'paymentMethod'
      */
     @Test
-    public void paymentMethodTest() {
+    void paymentMethodTest() {
         // TODO: test paymentMethod
     }
 
@@ -113,7 +112,7 @@ public class PayoutAttemptResponseTest {
      * Test the property 'payoutMethodType'
      */
     @Test
-    public void payoutMethodTypeTest() {
+    void payoutMethodTypeTest() {
         // TODO: test payoutMethodType
     }
 
@@ -121,7 +120,7 @@ public class PayoutAttemptResponseTest {
      * Test the property 'connectorTransactionId'
      */
     @Test
-    public void connectorTransactionIdTest() {
+    void connectorTransactionIdTest() {
         // TODO: test connectorTransactionId
     }
 
@@ -129,7 +128,7 @@ public class PayoutAttemptResponseTest {
      * Test the property 'cancellationReason'
      */
     @Test
-    public void cancellationReasonTest() {
+    void cancellationReasonTest() {
         // TODO: test cancellationReason
     }
 
@@ -137,7 +136,7 @@ public class PayoutAttemptResponseTest {
      * Test the property 'unifiedCode'
      */
     @Test
-    public void unifiedCodeTest() {
+    void unifiedCodeTest() {
         // TODO: test unifiedCode
     }
 
@@ -145,7 +144,7 @@ public class PayoutAttemptResponseTest {
      * Test the property 'unifiedMessage'
      */
     @Test
-    public void unifiedMessageTest() {
+    void unifiedMessageTest() {
         // TODO: test unifiedMessage
     }
 

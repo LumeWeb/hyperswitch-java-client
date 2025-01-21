@@ -43,33 +43,37 @@ import java.util.StringJoiner;
   BankDebitAdditionalData.JSON_PROPERTY_BECS,
   BankDebitAdditionalData.JSON_PROPERTY_SEPA
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class BankDebitAdditionalData {
   public static final String JSON_PROPERTY_ACH = "ach";
+  @javax.annotation.Nonnull
   private AchBankDebitAdditionalData ach;
 
   public static final String JSON_PROPERTY_BACS = "bacs";
+  @javax.annotation.Nonnull
   private BacsBankDebitAdditionalData bacs;
 
   public static final String JSON_PROPERTY_BECS = "becs";
+  @javax.annotation.Nonnull
   private BecsBankDebitAdditionalData becs;
 
   public static final String JSON_PROPERTY_SEPA = "sepa";
+  @javax.annotation.Nonnull
   private SepaBankDebitAdditionalData sepa;
 
   public BankDebitAdditionalData() {
   }
 
-  public BankDebitAdditionalData ach(AchBankDebitAdditionalData ach) {
+  public BankDebitAdditionalData ach(@javax.annotation.Nonnull AchBankDebitAdditionalData ach) {
     
     this.ach = ach;
     return this;
   }
 
-   /**
+  /**
    * Get ach
    * @return ach
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_ACH)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -81,21 +85,20 @@ public class BankDebitAdditionalData {
 
   @JsonProperty(JSON_PROPERTY_ACH)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setAch(AchBankDebitAdditionalData ach) {
+  public void setAch(@javax.annotation.Nonnull AchBankDebitAdditionalData ach) {
     this.ach = ach;
   }
 
-
-  public BankDebitAdditionalData bacs(BacsBankDebitAdditionalData bacs) {
+  public BankDebitAdditionalData bacs(@javax.annotation.Nonnull BacsBankDebitAdditionalData bacs) {
     
     this.bacs = bacs;
     return this;
   }
 
-   /**
+  /**
    * Get bacs
    * @return bacs
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_BACS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -107,21 +110,20 @@ public class BankDebitAdditionalData {
 
   @JsonProperty(JSON_PROPERTY_BACS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setBacs(BacsBankDebitAdditionalData bacs) {
+  public void setBacs(@javax.annotation.Nonnull BacsBankDebitAdditionalData bacs) {
     this.bacs = bacs;
   }
 
-
-  public BankDebitAdditionalData becs(BecsBankDebitAdditionalData becs) {
+  public BankDebitAdditionalData becs(@javax.annotation.Nonnull BecsBankDebitAdditionalData becs) {
     
     this.becs = becs;
     return this;
   }
 
-   /**
+  /**
    * Get becs
    * @return becs
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_BECS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -133,21 +135,20 @@ public class BankDebitAdditionalData {
 
   @JsonProperty(JSON_PROPERTY_BECS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setBecs(BecsBankDebitAdditionalData becs) {
+  public void setBecs(@javax.annotation.Nonnull BecsBankDebitAdditionalData becs) {
     this.becs = becs;
   }
 
-
-  public BankDebitAdditionalData sepa(SepaBankDebitAdditionalData sepa) {
+  public BankDebitAdditionalData sepa(@javax.annotation.Nonnull SepaBankDebitAdditionalData sepa) {
     
     this.sepa = sepa;
     return this;
   }
 
-   /**
+  /**
    * Get sepa
    * @return sepa
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_SEPA)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -159,7 +160,7 @@ public class BankDebitAdditionalData {
 
   @JsonProperty(JSON_PROPERTY_SEPA)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setSepa(SepaBankDebitAdditionalData sepa) {
+  public void setSepa(@javax.annotation.Nonnull SepaBankDebitAdditionalData sepa) {
     this.sepa = sepa;
   }
 

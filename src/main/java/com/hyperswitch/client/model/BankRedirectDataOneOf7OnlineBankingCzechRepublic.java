@@ -34,24 +34,25 @@ import java.util.StringJoiner;
   BankRedirectDataOneOf7OnlineBankingCzechRepublic.JSON_PROPERTY_ISSUER
 })
 @JsonTypeName("BankRedirectData_oneOf_7_online_banking_czech_republic")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class BankRedirectDataOneOf7OnlineBankingCzechRepublic {
   public static final String JSON_PROPERTY_ISSUER = "issuer";
+  @javax.annotation.Nonnull
   private BankNames issuer;
 
   public BankRedirectDataOneOf7OnlineBankingCzechRepublic() {
   }
 
-  public BankRedirectDataOneOf7OnlineBankingCzechRepublic issuer(BankNames issuer) {
+  public BankRedirectDataOneOf7OnlineBankingCzechRepublic issuer(@javax.annotation.Nonnull BankNames issuer) {
     
     this.issuer = issuer;
     return this;
   }
 
-   /**
+  /**
    * Get issuer
    * @return issuer
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_ISSUER)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -63,7 +64,7 @@ public class BankRedirectDataOneOf7OnlineBankingCzechRepublic {
 
   @JsonProperty(JSON_PROPERTY_ISSUER)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setIssuer(BankNames issuer) {
+  public void setIssuer(@javax.annotation.Nonnull BankNames issuer) {
     this.issuer = issuer;
   }
 

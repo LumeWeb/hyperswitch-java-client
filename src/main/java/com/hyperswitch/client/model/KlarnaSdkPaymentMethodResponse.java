@@ -36,24 +36,25 @@ import java.util.StringJoiner;
 @JsonPropertyOrder({
   KlarnaSdkPaymentMethodResponse.JSON_PROPERTY_PAYMENT_TYPE
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class KlarnaSdkPaymentMethodResponse {
   public static final String JSON_PROPERTY_PAYMENT_TYPE = "payment_type";
+  @javax.annotation.Nullable
   private JsonNullable<String> paymentType = JsonNullable.<String>undefined();
 
   public KlarnaSdkPaymentMethodResponse() {
   }
 
-  public KlarnaSdkPaymentMethodResponse paymentType(String paymentType) {
+  public KlarnaSdkPaymentMethodResponse paymentType(@javax.annotation.Nullable String paymentType) {
     this.paymentType = JsonNullable.<String>of(paymentType);
     
     return this;
   }
 
-   /**
+  /**
    * Get paymentType
    * @return paymentType
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -73,7 +74,7 @@ public class KlarnaSdkPaymentMethodResponse {
     this.paymentType = paymentType;
   }
 
-  public void setPaymentType(String paymentType) {
+  public void setPaymentType(@javax.annotation.Nullable String paymentType) {
     this.paymentType = JsonNullable.<String>of(paymentType);
   }
 

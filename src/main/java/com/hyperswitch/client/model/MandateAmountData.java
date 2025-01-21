@@ -42,36 +42,41 @@ import java.util.StringJoiner;
   MandateAmountData.JSON_PROPERTY_END_DATE,
   MandateAmountData.JSON_PROPERTY_METADATA
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class MandateAmountData {
   public static final String JSON_PROPERTY_AMOUNT = "amount";
+  @javax.annotation.Nonnull
   private Long amount;
 
   public static final String JSON_PROPERTY_CURRENCY = "currency";
+  @javax.annotation.Nonnull
   private Currency currency;
 
   public static final String JSON_PROPERTY_START_DATE = "start_date";
+  @javax.annotation.Nullable
   private JsonNullable<OffsetDateTime> startDate = JsonNullable.<OffsetDateTime>undefined();
 
   public static final String JSON_PROPERTY_END_DATE = "end_date";
+  @javax.annotation.Nullable
   private JsonNullable<OffsetDateTime> endDate = JsonNullable.<OffsetDateTime>undefined();
 
   public static final String JSON_PROPERTY_METADATA = "metadata";
+  @javax.annotation.Nullable
   private JsonNullable<Object> metadata = JsonNullable.<Object>undefined();
 
   public MandateAmountData() {
   }
 
-  public MandateAmountData amount(Long amount) {
+  public MandateAmountData amount(@javax.annotation.Nonnull Long amount) {
     
     this.amount = amount;
     return this;
   }
 
-   /**
+  /**
    * The maximum amount to be debited for the mandate transaction
    * @return amount
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_AMOUNT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -83,21 +88,20 @@ public class MandateAmountData {
 
   @JsonProperty(JSON_PROPERTY_AMOUNT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setAmount(Long amount) {
+  public void setAmount(@javax.annotation.Nonnull Long amount) {
     this.amount = amount;
   }
 
-
-  public MandateAmountData currency(Currency currency) {
+  public MandateAmountData currency(@javax.annotation.Nonnull Currency currency) {
     
     this.currency = currency;
     return this;
   }
 
-   /**
+  /**
    * Get currency
    * @return currency
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_CURRENCY)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -109,21 +113,20 @@ public class MandateAmountData {
 
   @JsonProperty(JSON_PROPERTY_CURRENCY)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setCurrency(Currency currency) {
+  public void setCurrency(@javax.annotation.Nonnull Currency currency) {
     this.currency = currency;
   }
 
-
-  public MandateAmountData startDate(OffsetDateTime startDate) {
+  public MandateAmountData startDate(@javax.annotation.Nullable OffsetDateTime startDate) {
     this.startDate = JsonNullable.<OffsetDateTime>of(startDate);
     
     return this;
   }
 
-   /**
+  /**
    * Specifying start date of the mandate
    * @return startDate
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -143,21 +146,20 @@ public class MandateAmountData {
     this.startDate = startDate;
   }
 
-  public void setStartDate(OffsetDateTime startDate) {
+  public void setStartDate(@javax.annotation.Nullable OffsetDateTime startDate) {
     this.startDate = JsonNullable.<OffsetDateTime>of(startDate);
   }
 
-
-  public MandateAmountData endDate(OffsetDateTime endDate) {
+  public MandateAmountData endDate(@javax.annotation.Nullable OffsetDateTime endDate) {
     this.endDate = JsonNullable.<OffsetDateTime>of(endDate);
     
     return this;
   }
 
-   /**
+  /**
    * Specifying end date of the mandate
    * @return endDate
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -177,21 +179,20 @@ public class MandateAmountData {
     this.endDate = endDate;
   }
 
-  public void setEndDate(OffsetDateTime endDate) {
+  public void setEndDate(@javax.annotation.Nullable OffsetDateTime endDate) {
     this.endDate = JsonNullable.<OffsetDateTime>of(endDate);
   }
 
-
-  public MandateAmountData metadata(Object metadata) {
+  public MandateAmountData metadata(@javax.annotation.Nullable Object metadata) {
     this.metadata = JsonNullable.<Object>of(metadata);
     
     return this;
   }
 
-   /**
+  /**
    * Additional details required by mandate
    * @return metadata
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -211,7 +212,7 @@ public class MandateAmountData {
     this.metadata = metadata;
   }
 
-  public void setMetadata(Object metadata) {
+  public void setMetadata(@javax.annotation.Nullable Object metadata) {
     this.metadata = JsonNullable.<Object>of(metadata);
   }
 

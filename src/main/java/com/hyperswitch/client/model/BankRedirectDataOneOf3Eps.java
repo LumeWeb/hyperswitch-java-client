@@ -42,30 +42,33 @@ import java.util.StringJoiner;
   BankRedirectDataOneOf3Eps.JSON_PROPERTY_COUNTRY
 })
 @JsonTypeName("BankRedirectData_oneOf_3_eps")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class BankRedirectDataOneOf3Eps {
   public static final String JSON_PROPERTY_BILLING_DETAILS = "billing_details";
+  @javax.annotation.Nullable
   private JsonNullable<BankRedirectBilling> billingDetails = JsonNullable.<BankRedirectBilling>undefined();
 
   public static final String JSON_PROPERTY_BANK_NAME = "bank_name";
+  @javax.annotation.Nonnull
   private BankNames bankName;
 
   public static final String JSON_PROPERTY_COUNTRY = "country";
+  @javax.annotation.Nonnull
   private CountryAlpha2 country;
 
   public BankRedirectDataOneOf3Eps() {
   }
 
-  public BankRedirectDataOneOf3Eps billingDetails(BankRedirectBilling billingDetails) {
+  public BankRedirectDataOneOf3Eps billingDetails(@javax.annotation.Nullable BankRedirectBilling billingDetails) {
     this.billingDetails = JsonNullable.<BankRedirectBilling>of(billingDetails);
     
     return this;
   }
 
-   /**
+  /**
    * Get billingDetails
    * @return billingDetails
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -85,21 +88,20 @@ public class BankRedirectDataOneOf3Eps {
     this.billingDetails = billingDetails;
   }
 
-  public void setBillingDetails(BankRedirectBilling billingDetails) {
+  public void setBillingDetails(@javax.annotation.Nullable BankRedirectBilling billingDetails) {
     this.billingDetails = JsonNullable.<BankRedirectBilling>of(billingDetails);
   }
 
-
-  public BankRedirectDataOneOf3Eps bankName(BankNames bankName) {
+  public BankRedirectDataOneOf3Eps bankName(@javax.annotation.Nonnull BankNames bankName) {
     
     this.bankName = bankName;
     return this;
   }
 
-   /**
+  /**
    * Get bankName
    * @return bankName
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_BANK_NAME)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -111,21 +113,20 @@ public class BankRedirectDataOneOf3Eps {
 
   @JsonProperty(JSON_PROPERTY_BANK_NAME)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setBankName(BankNames bankName) {
+  public void setBankName(@javax.annotation.Nonnull BankNames bankName) {
     this.bankName = bankName;
   }
 
-
-  public BankRedirectDataOneOf3Eps country(CountryAlpha2 country) {
+  public BankRedirectDataOneOf3Eps country(@javax.annotation.Nonnull CountryAlpha2 country) {
     
     this.country = country;
     return this;
   }
 
-   /**
+  /**
    * Get country
    * @return country
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_COUNTRY)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -137,7 +138,7 @@ public class BankRedirectDataOneOf3Eps {
 
   @JsonProperty(JSON_PROPERTY_COUNTRY)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setCountry(CountryAlpha2 country) {
+  public void setCountry(@javax.annotation.Nonnull CountryAlpha2 country) {
     this.country = country;
   }
 

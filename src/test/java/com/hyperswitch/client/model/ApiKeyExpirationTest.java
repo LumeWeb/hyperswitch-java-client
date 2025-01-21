@@ -14,22 +14,21 @@
 package com.hyperswitch.client.model;
 
 import java.time.OffsetDateTime;
-import org.junit.Assert;
-import org.junit.Ignore;
-import org.junit.Test;
-
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Test;
 
 /**
  * Model tests for ApiKeyExpiration
  */
-public class ApiKeyExpirationTest {
+class ApiKeyExpirationTest {
     private final ApiKeyExpiration model = new ApiKeyExpiration();
 
     /**
      * Model tests for ApiKeyExpiration
      */
     @Test
-    public void testApiKeyExpiration() {
+    void testApiKeyExpiration() {
         // TODO: test ApiKeyExpiration
     }
 

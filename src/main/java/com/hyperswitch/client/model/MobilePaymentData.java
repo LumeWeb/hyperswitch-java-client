@@ -34,24 +34,25 @@ import java.util.StringJoiner;
 @JsonPropertyOrder({
   MobilePaymentData.JSON_PROPERTY_DIRECT_CARRIER_BILLING
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class MobilePaymentData {
   public static final String JSON_PROPERTY_DIRECT_CARRIER_BILLING = "direct_carrier_billing";
+  @javax.annotation.Nonnull
   private MobilePaymentDataOneOfDirectCarrierBilling directCarrierBilling;
 
   public MobilePaymentData() {
   }
 
-  public MobilePaymentData directCarrierBilling(MobilePaymentDataOneOfDirectCarrierBilling directCarrierBilling) {
+  public MobilePaymentData directCarrierBilling(@javax.annotation.Nonnull MobilePaymentDataOneOfDirectCarrierBilling directCarrierBilling) {
     
     this.directCarrierBilling = directCarrierBilling;
     return this;
   }
 
-   /**
+  /**
    * Get directCarrierBilling
    * @return directCarrierBilling
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_DIRECT_CARRIER_BILLING)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -63,7 +64,7 @@ public class MobilePaymentData {
 
   @JsonProperty(JSON_PROPERTY_DIRECT_CARRIER_BILLING)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setDirectCarrierBilling(MobilePaymentDataOneOfDirectCarrierBilling directCarrierBilling) {
+  public void setDirectCarrierBilling(@javax.annotation.Nonnull MobilePaymentDataOneOfDirectCarrierBilling directCarrierBilling) {
     this.directCarrierBilling = directCarrierBilling;
   }
 

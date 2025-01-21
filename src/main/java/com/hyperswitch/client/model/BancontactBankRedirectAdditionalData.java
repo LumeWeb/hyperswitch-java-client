@@ -39,33 +39,37 @@ import java.util.StringJoiner;
   BancontactBankRedirectAdditionalData.JSON_PROPERTY_CARD_EXP_YEAR,
   BancontactBankRedirectAdditionalData.JSON_PROPERTY_CARD_HOLDER_NAME
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class BancontactBankRedirectAdditionalData {
   public static final String JSON_PROPERTY_LAST4 = "last4";
+  @javax.annotation.Nullable
   private JsonNullable<String> last4 = JsonNullable.<String>undefined();
 
   public static final String JSON_PROPERTY_CARD_EXP_MONTH = "card_exp_month";
+  @javax.annotation.Nullable
   private JsonNullable<String> cardExpMonth = JsonNullable.<String>undefined();
 
   public static final String JSON_PROPERTY_CARD_EXP_YEAR = "card_exp_year";
+  @javax.annotation.Nullable
   private JsonNullable<String> cardExpYear = JsonNullable.<String>undefined();
 
   public static final String JSON_PROPERTY_CARD_HOLDER_NAME = "card_holder_name";
+  @javax.annotation.Nullable
   private JsonNullable<String> cardHolderName = JsonNullable.<String>undefined();
 
   public BancontactBankRedirectAdditionalData() {
   }
 
-  public BancontactBankRedirectAdditionalData last4(String last4) {
+  public BancontactBankRedirectAdditionalData last4(@javax.annotation.Nullable String last4) {
     this.last4 = JsonNullable.<String>of(last4);
     
     return this;
   }
 
-   /**
+  /**
    * Last 4 digits of the card number
    * @return last4
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -85,21 +89,20 @@ public class BancontactBankRedirectAdditionalData {
     this.last4 = last4;
   }
 
-  public void setLast4(String last4) {
+  public void setLast4(@javax.annotation.Nullable String last4) {
     this.last4 = JsonNullable.<String>of(last4);
   }
 
-
-  public BancontactBankRedirectAdditionalData cardExpMonth(String cardExpMonth) {
+  public BancontactBankRedirectAdditionalData cardExpMonth(@javax.annotation.Nullable String cardExpMonth) {
     this.cardExpMonth = JsonNullable.<String>of(cardExpMonth);
     
     return this;
   }
 
-   /**
+  /**
    * The card&#39;s expiry month
    * @return cardExpMonth
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -119,21 +122,20 @@ public class BancontactBankRedirectAdditionalData {
     this.cardExpMonth = cardExpMonth;
   }
 
-  public void setCardExpMonth(String cardExpMonth) {
+  public void setCardExpMonth(@javax.annotation.Nullable String cardExpMonth) {
     this.cardExpMonth = JsonNullable.<String>of(cardExpMonth);
   }
 
-
-  public BancontactBankRedirectAdditionalData cardExpYear(String cardExpYear) {
+  public BancontactBankRedirectAdditionalData cardExpYear(@javax.annotation.Nullable String cardExpYear) {
     this.cardExpYear = JsonNullable.<String>of(cardExpYear);
     
     return this;
   }
 
-   /**
+  /**
    * The card&#39;s expiry year
    * @return cardExpYear
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -153,21 +155,20 @@ public class BancontactBankRedirectAdditionalData {
     this.cardExpYear = cardExpYear;
   }
 
-  public void setCardExpYear(String cardExpYear) {
+  public void setCardExpYear(@javax.annotation.Nullable String cardExpYear) {
     this.cardExpYear = JsonNullable.<String>of(cardExpYear);
   }
 
-
-  public BancontactBankRedirectAdditionalData cardHolderName(String cardHolderName) {
+  public BancontactBankRedirectAdditionalData cardHolderName(@javax.annotation.Nullable String cardHolderName) {
     this.cardHolderName = JsonNullable.<String>of(cardHolderName);
     
     return this;
   }
 
-   /**
+  /**
    * The card holder&#39;s name
    * @return cardHolderName
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -187,7 +188,7 @@ public class BancontactBankRedirectAdditionalData {
     this.cardHolderName = cardHolderName;
   }
 
-  public void setCardHolderName(String cardHolderName) {
+  public void setCardHolderName(@javax.annotation.Nullable String cardHolderName) {
     this.cardHolderName = JsonNullable.<String>of(cardHolderName);
   }
 

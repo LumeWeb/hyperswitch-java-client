@@ -34,24 +34,25 @@ import java.util.StringJoiner;
   BankRedirectDataOneOf14.JSON_PROPERTY_TRUSTLY
 })
 @JsonTypeName("BankRedirectData_oneOf_14")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class BankRedirectDataOneOf14 {
   public static final String JSON_PROPERTY_TRUSTLY = "trustly";
+  @javax.annotation.Nonnull
   private BankRedirectDataOneOf14Trustly trustly;
 
   public BankRedirectDataOneOf14() {
   }
 
-  public BankRedirectDataOneOf14 trustly(BankRedirectDataOneOf14Trustly trustly) {
+  public BankRedirectDataOneOf14 trustly(@javax.annotation.Nonnull BankRedirectDataOneOf14Trustly trustly) {
     
     this.trustly = trustly;
     return this;
   }
 
-   /**
+  /**
    * Get trustly
    * @return trustly
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_TRUSTLY)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -63,7 +64,7 @@ public class BankRedirectDataOneOf14 {
 
   @JsonProperty(JSON_PROPERTY_TRUSTLY)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setTrustly(BankRedirectDataOneOf14Trustly trustly) {
+  public void setTrustly(@javax.annotation.Nonnull BankRedirectDataOneOf14Trustly trustly) {
     this.trustly = trustly;
   }
 

@@ -44,42 +44,49 @@ import java.util.StringJoiner;
   ExternalAuthenticationDetailsResponse.JSON_PROPERTY_ERROR_CODE,
   ExternalAuthenticationDetailsResponse.JSON_PROPERTY_ERROR_MESSAGE
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class ExternalAuthenticationDetailsResponse {
   public static final String JSON_PROPERTY_AUTHENTICATION_FLOW = "authentication_flow";
+  @javax.annotation.Nullable
   private JsonNullable<DecoupledAuthenticationType> authenticationFlow = JsonNullable.<DecoupledAuthenticationType>undefined();
 
   public static final String JSON_PROPERTY_ELECTRONIC_COMMERCE_INDICATOR = "electronic_commerce_indicator";
+  @javax.annotation.Nullable
   private JsonNullable<String> electronicCommerceIndicator = JsonNullable.<String>undefined();
 
   public static final String JSON_PROPERTY_STATUS = "status";
+  @javax.annotation.Nonnull
   private AuthenticationStatus status;
 
   public static final String JSON_PROPERTY_DS_TRANSACTION_ID = "ds_transaction_id";
+  @javax.annotation.Nullable
   private JsonNullable<String> dsTransactionId = JsonNullable.<String>undefined();
 
   public static final String JSON_PROPERTY_VERSION = "version";
+  @javax.annotation.Nullable
   private JsonNullable<String> version = JsonNullable.<String>undefined();
 
   public static final String JSON_PROPERTY_ERROR_CODE = "error_code";
+  @javax.annotation.Nullable
   private JsonNullable<String> errorCode = JsonNullable.<String>undefined();
 
   public static final String JSON_PROPERTY_ERROR_MESSAGE = "error_message";
+  @javax.annotation.Nullable
   private JsonNullable<String> errorMessage = JsonNullable.<String>undefined();
 
   public ExternalAuthenticationDetailsResponse() {
   }
 
-  public ExternalAuthenticationDetailsResponse authenticationFlow(DecoupledAuthenticationType authenticationFlow) {
+  public ExternalAuthenticationDetailsResponse authenticationFlow(@javax.annotation.Nullable DecoupledAuthenticationType authenticationFlow) {
     this.authenticationFlow = JsonNullable.<DecoupledAuthenticationType>of(authenticationFlow);
     
     return this;
   }
 
-   /**
+  /**
    * Get authenticationFlow
    * @return authenticationFlow
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -99,21 +106,20 @@ public class ExternalAuthenticationDetailsResponse {
     this.authenticationFlow = authenticationFlow;
   }
 
-  public void setAuthenticationFlow(DecoupledAuthenticationType authenticationFlow) {
+  public void setAuthenticationFlow(@javax.annotation.Nullable DecoupledAuthenticationType authenticationFlow) {
     this.authenticationFlow = JsonNullable.<DecoupledAuthenticationType>of(authenticationFlow);
   }
 
-
-  public ExternalAuthenticationDetailsResponse electronicCommerceIndicator(String electronicCommerceIndicator) {
+  public ExternalAuthenticationDetailsResponse electronicCommerceIndicator(@javax.annotation.Nullable String electronicCommerceIndicator) {
     this.electronicCommerceIndicator = JsonNullable.<String>of(electronicCommerceIndicator);
     
     return this;
   }
 
-   /**
+  /**
    * Electronic Commerce Indicator (eci)
    * @return electronicCommerceIndicator
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -133,21 +139,20 @@ public class ExternalAuthenticationDetailsResponse {
     this.electronicCommerceIndicator = electronicCommerceIndicator;
   }
 
-  public void setElectronicCommerceIndicator(String electronicCommerceIndicator) {
+  public void setElectronicCommerceIndicator(@javax.annotation.Nullable String electronicCommerceIndicator) {
     this.electronicCommerceIndicator = JsonNullable.<String>of(electronicCommerceIndicator);
   }
 
-
-  public ExternalAuthenticationDetailsResponse status(AuthenticationStatus status) {
+  public ExternalAuthenticationDetailsResponse status(@javax.annotation.Nonnull AuthenticationStatus status) {
     
     this.status = status;
     return this;
   }
 
-   /**
+  /**
    * Get status
    * @return status
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_STATUS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -159,21 +164,20 @@ public class ExternalAuthenticationDetailsResponse {
 
   @JsonProperty(JSON_PROPERTY_STATUS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setStatus(AuthenticationStatus status) {
+  public void setStatus(@javax.annotation.Nonnull AuthenticationStatus status) {
     this.status = status;
   }
 
-
-  public ExternalAuthenticationDetailsResponse dsTransactionId(String dsTransactionId) {
+  public ExternalAuthenticationDetailsResponse dsTransactionId(@javax.annotation.Nullable String dsTransactionId) {
     this.dsTransactionId = JsonNullable.<String>of(dsTransactionId);
     
     return this;
   }
 
-   /**
+  /**
    * DS Transaction ID
    * @return dsTransactionId
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -193,21 +197,20 @@ public class ExternalAuthenticationDetailsResponse {
     this.dsTransactionId = dsTransactionId;
   }
 
-  public void setDsTransactionId(String dsTransactionId) {
+  public void setDsTransactionId(@javax.annotation.Nullable String dsTransactionId) {
     this.dsTransactionId = JsonNullable.<String>of(dsTransactionId);
   }
 
-
-  public ExternalAuthenticationDetailsResponse version(String version) {
+  public ExternalAuthenticationDetailsResponse version(@javax.annotation.Nullable String version) {
     this.version = JsonNullable.<String>of(version);
     
     return this;
   }
 
-   /**
+  /**
    * Message Version
    * @return version
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -227,21 +230,20 @@ public class ExternalAuthenticationDetailsResponse {
     this.version = version;
   }
 
-  public void setVersion(String version) {
+  public void setVersion(@javax.annotation.Nullable String version) {
     this.version = JsonNullable.<String>of(version);
   }
 
-
-  public ExternalAuthenticationDetailsResponse errorCode(String errorCode) {
+  public ExternalAuthenticationDetailsResponse errorCode(@javax.annotation.Nullable String errorCode) {
     this.errorCode = JsonNullable.<String>of(errorCode);
     
     return this;
   }
 
-   /**
+  /**
    * Error Code
    * @return errorCode
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -261,21 +263,20 @@ public class ExternalAuthenticationDetailsResponse {
     this.errorCode = errorCode;
   }
 
-  public void setErrorCode(String errorCode) {
+  public void setErrorCode(@javax.annotation.Nullable String errorCode) {
     this.errorCode = JsonNullable.<String>of(errorCode);
   }
 
-
-  public ExternalAuthenticationDetailsResponse errorMessage(String errorMessage) {
+  public ExternalAuthenticationDetailsResponse errorMessage(@javax.annotation.Nullable String errorMessage) {
     this.errorMessage = JsonNullable.<String>of(errorMessage);
     
     return this;
   }
 
-   /**
+  /**
    * Error Message
    * @return errorMessage
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -295,7 +296,7 @@ public class ExternalAuthenticationDetailsResponse {
     this.errorMessage = errorMessage;
   }
 
-  public void setErrorMessage(String errorMessage) {
+  public void setErrorMessage(@javax.annotation.Nullable String errorMessage) {
     this.errorMessage = JsonNullable.<String>of(errorMessage);
   }
 

@@ -39,33 +39,37 @@ import java.util.StringJoiner;
   Comparison.JSON_PROPERTY_VALUE,
   Comparison.JSON_PROPERTY_METADATA
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class Comparison {
   public static final String JSON_PROPERTY_LHS = "lhs";
+  @javax.annotation.Nonnull
   private String lhs;
 
   public static final String JSON_PROPERTY_COMPARISON = "comparison";
+  @javax.annotation.Nonnull
   private ComparisonType comparison;
 
   public static final String JSON_PROPERTY_VALUE = "value";
+  @javax.annotation.Nonnull
   private ValueType value;
 
   public static final String JSON_PROPERTY_METADATA = "metadata";
+  @javax.annotation.Nonnull
   private Map<String, Object> metadata = new HashMap<>();
 
   public Comparison() {
   }
 
-  public Comparison lhs(String lhs) {
+  public Comparison lhs(@javax.annotation.Nonnull String lhs) {
     
     this.lhs = lhs;
     return this;
   }
 
-   /**
+  /**
    * The left hand side which will always be a domain input identifier like \&quot;payment.method.cardtype\&quot;
    * @return lhs
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_LHS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -77,21 +81,20 @@ public class Comparison {
 
   @JsonProperty(JSON_PROPERTY_LHS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setLhs(String lhs) {
+  public void setLhs(@javax.annotation.Nonnull String lhs) {
     this.lhs = lhs;
   }
 
-
-  public Comparison comparison(ComparisonType comparison) {
+  public Comparison comparison(@javax.annotation.Nonnull ComparisonType comparison) {
     
     this.comparison = comparison;
     return this;
   }
 
-   /**
+  /**
    * Get comparison
    * @return comparison
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_COMPARISON)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -103,21 +106,20 @@ public class Comparison {
 
   @JsonProperty(JSON_PROPERTY_COMPARISON)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setComparison(ComparisonType comparison) {
+  public void setComparison(@javax.annotation.Nonnull ComparisonType comparison) {
     this.comparison = comparison;
   }
 
-
-  public Comparison value(ValueType value) {
+  public Comparison value(@javax.annotation.Nonnull ValueType value) {
     
     this.value = value;
     return this;
   }
 
-   /**
+  /**
    * Get value
    * @return value
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_VALUE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -129,12 +131,11 @@ public class Comparison {
 
   @JsonProperty(JSON_PROPERTY_VALUE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setValue(ValueType value) {
+  public void setValue(@javax.annotation.Nonnull ValueType value) {
     this.value = value;
   }
 
-
-  public Comparison metadata(Map<String, Object> metadata) {
+  public Comparison metadata(@javax.annotation.Nonnull Map<String, Object> metadata) {
     
     this.metadata = metadata;
     return this;
@@ -145,10 +146,10 @@ public class Comparison {
     return this;
   }
 
-   /**
+  /**
    * Additional metadata that the Static Analyzer and Backend does not touch. This can be used to store useful information for the frontend and is required for communication between the static analyzer and the frontend.
    * @return metadata
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_METADATA)
   @JsonInclude(content = JsonInclude.Include.ALWAYS, value = JsonInclude.Include.ALWAYS)
@@ -160,7 +161,7 @@ public class Comparison {
 
   @JsonProperty(JSON_PROPERTY_METADATA)
   @JsonInclude(content = JsonInclude.Include.ALWAYS, value = JsonInclude.Include.ALWAYS)
-  public void setMetadata(Map<String, Object> metadata) {
+  public void setMetadata(@javax.annotation.Nonnull Map<String, Object> metadata) {
     this.metadata = metadata;
   }
 

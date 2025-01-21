@@ -22,22 +22,21 @@ import org.openapitools.jackson.nullable.JsonNullable;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.openapitools.jackson.nullable.JsonNullable;
 import java.util.NoSuchElementException;
-import org.junit.Assert;
-import org.junit.Ignore;
-import org.junit.Test;
-
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Test;
 
 /**
  * Model tests for CardToken
  */
-public class CardTokenTest {
+class CardTokenTest {
     private final CardToken model = new CardToken();
 
     /**
      * Model tests for CardToken
      */
     @Test
-    public void testCardToken() {
+    void testCardToken() {
         // TODO: test CardToken
     }
 
@@ -45,7 +44,7 @@ public class CardTokenTest {
      * Test the property 'cardHolderName'
      */
     @Test
-    public void cardHolderNameTest() {
+    void cardHolderNameTest() {
         // TODO: test cardHolderName
     }
 
@@ -53,7 +52,7 @@ public class CardTokenTest {
      * Test the property 'cardCvc'
      */
     @Test
-    public void cardCvcTest() {
+    void cardCvcTest() {
         // TODO: test cardCvc
     }
 

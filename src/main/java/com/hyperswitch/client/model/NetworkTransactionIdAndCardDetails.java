@@ -47,54 +47,65 @@ import java.util.StringJoiner;
   NetworkTransactionIdAndCardDetails.JSON_PROPERTY_NICK_NAME,
   NetworkTransactionIdAndCardDetails.JSON_PROPERTY_NETWORK_TRANSACTION_ID
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class NetworkTransactionIdAndCardDetails {
   public static final String JSON_PROPERTY_CARD_NUMBER = "card_number";
+  @javax.annotation.Nonnull
   private String cardNumber;
 
   public static final String JSON_PROPERTY_CARD_EXP_MONTH = "card_exp_month";
+  @javax.annotation.Nonnull
   private String cardExpMonth;
 
   public static final String JSON_PROPERTY_CARD_EXP_YEAR = "card_exp_year";
+  @javax.annotation.Nonnull
   private String cardExpYear;
 
   public static final String JSON_PROPERTY_CARD_HOLDER_NAME = "card_holder_name";
+  @javax.annotation.Nonnull
   private String cardHolderName;
 
   public static final String JSON_PROPERTY_CARD_ISSUER = "card_issuer";
+  @javax.annotation.Nullable
   private JsonNullable<String> cardIssuer = JsonNullable.<String>undefined();
 
   public static final String JSON_PROPERTY_CARD_NETWORK = "card_network";
+  @javax.annotation.Nullable
   private JsonNullable<CardNetwork> cardNetwork = JsonNullable.<CardNetwork>undefined();
 
   public static final String JSON_PROPERTY_CARD_TYPE = "card_type";
+  @javax.annotation.Nullable
   private JsonNullable<String> cardType = JsonNullable.<String>undefined();
 
   public static final String JSON_PROPERTY_CARD_ISSUING_COUNTRY = "card_issuing_country";
+  @javax.annotation.Nullable
   private JsonNullable<String> cardIssuingCountry = JsonNullable.<String>undefined();
 
   public static final String JSON_PROPERTY_BANK_CODE = "bank_code";
+  @javax.annotation.Nullable
   private JsonNullable<String> bankCode = JsonNullable.<String>undefined();
 
   public static final String JSON_PROPERTY_NICK_NAME = "nick_name";
+  @javax.annotation.Nullable
   private JsonNullable<String> nickName = JsonNullable.<String>undefined();
 
   public static final String JSON_PROPERTY_NETWORK_TRANSACTION_ID = "network_transaction_id";
+  @javax.annotation.Nonnull
   private String networkTransactionId;
 
   public NetworkTransactionIdAndCardDetails() {
   }
 
-  public NetworkTransactionIdAndCardDetails cardNumber(String cardNumber) {
+  public NetworkTransactionIdAndCardDetails cardNumber(@javax.annotation.Nonnull String cardNumber) {
     
     this.cardNumber = cardNumber;
     return this;
   }
 
-   /**
+  /**
    * The card number
    * @return cardNumber
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_CARD_NUMBER)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -106,21 +117,20 @@ public class NetworkTransactionIdAndCardDetails {
 
   @JsonProperty(JSON_PROPERTY_CARD_NUMBER)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setCardNumber(String cardNumber) {
+  public void setCardNumber(@javax.annotation.Nonnull String cardNumber) {
     this.cardNumber = cardNumber;
   }
 
-
-  public NetworkTransactionIdAndCardDetails cardExpMonth(String cardExpMonth) {
+  public NetworkTransactionIdAndCardDetails cardExpMonth(@javax.annotation.Nonnull String cardExpMonth) {
     
     this.cardExpMonth = cardExpMonth;
     return this;
   }
 
-   /**
+  /**
    * The card&#39;s expiry month
    * @return cardExpMonth
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_CARD_EXP_MONTH)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -132,21 +142,20 @@ public class NetworkTransactionIdAndCardDetails {
 
   @JsonProperty(JSON_PROPERTY_CARD_EXP_MONTH)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setCardExpMonth(String cardExpMonth) {
+  public void setCardExpMonth(@javax.annotation.Nonnull String cardExpMonth) {
     this.cardExpMonth = cardExpMonth;
   }
 
-
-  public NetworkTransactionIdAndCardDetails cardExpYear(String cardExpYear) {
+  public NetworkTransactionIdAndCardDetails cardExpYear(@javax.annotation.Nonnull String cardExpYear) {
     
     this.cardExpYear = cardExpYear;
     return this;
   }
 
-   /**
+  /**
    * The card&#39;s expiry year
    * @return cardExpYear
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_CARD_EXP_YEAR)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -158,21 +167,20 @@ public class NetworkTransactionIdAndCardDetails {
 
   @JsonProperty(JSON_PROPERTY_CARD_EXP_YEAR)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setCardExpYear(String cardExpYear) {
+  public void setCardExpYear(@javax.annotation.Nonnull String cardExpYear) {
     this.cardExpYear = cardExpYear;
   }
 
-
-  public NetworkTransactionIdAndCardDetails cardHolderName(String cardHolderName) {
+  public NetworkTransactionIdAndCardDetails cardHolderName(@javax.annotation.Nonnull String cardHolderName) {
     
     this.cardHolderName = cardHolderName;
     return this;
   }
 
-   /**
+  /**
    * The card holder&#39;s name
    * @return cardHolderName
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_CARD_HOLDER_NAME)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -184,21 +192,20 @@ public class NetworkTransactionIdAndCardDetails {
 
   @JsonProperty(JSON_PROPERTY_CARD_HOLDER_NAME)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setCardHolderName(String cardHolderName) {
+  public void setCardHolderName(@javax.annotation.Nonnull String cardHolderName) {
     this.cardHolderName = cardHolderName;
   }
 
-
-  public NetworkTransactionIdAndCardDetails cardIssuer(String cardIssuer) {
+  public NetworkTransactionIdAndCardDetails cardIssuer(@javax.annotation.Nullable String cardIssuer) {
     this.cardIssuer = JsonNullable.<String>of(cardIssuer);
     
     return this;
   }
 
-   /**
+  /**
    * The name of the issuer of card
    * @return cardIssuer
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -218,21 +225,20 @@ public class NetworkTransactionIdAndCardDetails {
     this.cardIssuer = cardIssuer;
   }
 
-  public void setCardIssuer(String cardIssuer) {
+  public void setCardIssuer(@javax.annotation.Nullable String cardIssuer) {
     this.cardIssuer = JsonNullable.<String>of(cardIssuer);
   }
 
-
-  public NetworkTransactionIdAndCardDetails cardNetwork(CardNetwork cardNetwork) {
+  public NetworkTransactionIdAndCardDetails cardNetwork(@javax.annotation.Nullable CardNetwork cardNetwork) {
     this.cardNetwork = JsonNullable.<CardNetwork>of(cardNetwork);
     
     return this;
   }
 
-   /**
+  /**
    * Get cardNetwork
    * @return cardNetwork
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -252,21 +258,20 @@ public class NetworkTransactionIdAndCardDetails {
     this.cardNetwork = cardNetwork;
   }
 
-  public void setCardNetwork(CardNetwork cardNetwork) {
+  public void setCardNetwork(@javax.annotation.Nullable CardNetwork cardNetwork) {
     this.cardNetwork = JsonNullable.<CardNetwork>of(cardNetwork);
   }
 
-
-  public NetworkTransactionIdAndCardDetails cardType(String cardType) {
+  public NetworkTransactionIdAndCardDetails cardType(@javax.annotation.Nullable String cardType) {
     this.cardType = JsonNullable.<String>of(cardType);
     
     return this;
   }
 
-   /**
+  /**
    * Get cardType
    * @return cardType
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -286,21 +291,20 @@ public class NetworkTransactionIdAndCardDetails {
     this.cardType = cardType;
   }
 
-  public void setCardType(String cardType) {
+  public void setCardType(@javax.annotation.Nullable String cardType) {
     this.cardType = JsonNullable.<String>of(cardType);
   }
 
-
-  public NetworkTransactionIdAndCardDetails cardIssuingCountry(String cardIssuingCountry) {
+  public NetworkTransactionIdAndCardDetails cardIssuingCountry(@javax.annotation.Nullable String cardIssuingCountry) {
     this.cardIssuingCountry = JsonNullable.<String>of(cardIssuingCountry);
     
     return this;
   }
 
-   /**
+  /**
    * Get cardIssuingCountry
    * @return cardIssuingCountry
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -320,21 +324,20 @@ public class NetworkTransactionIdAndCardDetails {
     this.cardIssuingCountry = cardIssuingCountry;
   }
 
-  public void setCardIssuingCountry(String cardIssuingCountry) {
+  public void setCardIssuingCountry(@javax.annotation.Nullable String cardIssuingCountry) {
     this.cardIssuingCountry = JsonNullable.<String>of(cardIssuingCountry);
   }
 
-
-  public NetworkTransactionIdAndCardDetails bankCode(String bankCode) {
+  public NetworkTransactionIdAndCardDetails bankCode(@javax.annotation.Nullable String bankCode) {
     this.bankCode = JsonNullable.<String>of(bankCode);
     
     return this;
   }
 
-   /**
+  /**
    * Get bankCode
    * @return bankCode
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -354,21 +357,20 @@ public class NetworkTransactionIdAndCardDetails {
     this.bankCode = bankCode;
   }
 
-  public void setBankCode(String bankCode) {
+  public void setBankCode(@javax.annotation.Nullable String bankCode) {
     this.bankCode = JsonNullable.<String>of(bankCode);
   }
 
-
-  public NetworkTransactionIdAndCardDetails nickName(String nickName) {
+  public NetworkTransactionIdAndCardDetails nickName(@javax.annotation.Nullable String nickName) {
     this.nickName = JsonNullable.<String>of(nickName);
     
     return this;
   }
 
-   /**
+  /**
    * The card holder&#39;s nick name
    * @return nickName
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -388,21 +390,20 @@ public class NetworkTransactionIdAndCardDetails {
     this.nickName = nickName;
   }
 
-  public void setNickName(String nickName) {
+  public void setNickName(@javax.annotation.Nullable String nickName) {
     this.nickName = JsonNullable.<String>of(nickName);
   }
 
-
-  public NetworkTransactionIdAndCardDetails networkTransactionId(String networkTransactionId) {
+  public NetworkTransactionIdAndCardDetails networkTransactionId(@javax.annotation.Nonnull String networkTransactionId) {
     
     this.networkTransactionId = networkTransactionId;
     return this;
   }
 
-   /**
+  /**
    * The network transaction ID provided by the card network during a CIT (Customer Initiated Transaction), where &#x60;setup_future_usage&#x60; is set to &#x60;off_session&#x60;.
    * @return networkTransactionId
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_NETWORK_TRANSACTION_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -414,7 +415,7 @@ public class NetworkTransactionIdAndCardDetails {
 
   @JsonProperty(JSON_PROPERTY_NETWORK_TRANSACTION_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setNetworkTransactionId(String networkTransactionId) {
+  public void setNetworkTransactionId(@javax.annotation.Nonnull String networkTransactionId) {
     this.networkTransactionId = networkTransactionId;
   }
 

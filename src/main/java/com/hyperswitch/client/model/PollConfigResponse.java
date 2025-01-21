@@ -34,30 +34,33 @@ import java.util.StringJoiner;
   PollConfigResponse.JSON_PROPERTY_DELAY_IN_SECS,
   PollConfigResponse.JSON_PROPERTY_FREQUENCY
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class PollConfigResponse {
   public static final String JSON_PROPERTY_POLL_ID = "poll_id";
+  @javax.annotation.Nonnull
   private String pollId;
 
   public static final String JSON_PROPERTY_DELAY_IN_SECS = "delay_in_secs";
+  @javax.annotation.Nonnull
   private Integer delayInSecs;
 
   public static final String JSON_PROPERTY_FREQUENCY = "frequency";
+  @javax.annotation.Nonnull
   private Integer frequency;
 
   public PollConfigResponse() {
   }
 
-  public PollConfigResponse pollId(String pollId) {
+  public PollConfigResponse pollId(@javax.annotation.Nonnull String pollId) {
     
     this.pollId = pollId;
     return this;
   }
 
-   /**
+  /**
    * Poll Id
    * @return pollId
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_POLL_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -69,21 +72,20 @@ public class PollConfigResponse {
 
   @JsonProperty(JSON_PROPERTY_POLL_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setPollId(String pollId) {
+  public void setPollId(@javax.annotation.Nonnull String pollId) {
     this.pollId = pollId;
   }
 
-
-  public PollConfigResponse delayInSecs(Integer delayInSecs) {
+  public PollConfigResponse delayInSecs(@javax.annotation.Nonnull Integer delayInSecs) {
     
     this.delayInSecs = delayInSecs;
     return this;
   }
 
-   /**
+  /**
    * Interval of the poll
    * @return delayInSecs
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_DELAY_IN_SECS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -95,21 +97,20 @@ public class PollConfigResponse {
 
   @JsonProperty(JSON_PROPERTY_DELAY_IN_SECS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setDelayInSecs(Integer delayInSecs) {
+  public void setDelayInSecs(@javax.annotation.Nonnull Integer delayInSecs) {
     this.delayInSecs = delayInSecs;
   }
 
-
-  public PollConfigResponse frequency(Integer frequency) {
+  public PollConfigResponse frequency(@javax.annotation.Nonnull Integer frequency) {
     
     this.frequency = frequency;
     return this;
   }
 
-   /**
+  /**
    * Frequency of the poll
    * @return frequency
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_FREQUENCY)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -121,7 +122,7 @@ public class PollConfigResponse {
 
   @JsonProperty(JSON_PROPERTY_FREQUENCY)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setFrequency(Integer frequency) {
+  public void setFrequency(@javax.annotation.Nonnull Integer frequency) {
     this.frequency = frequency;
   }
 

@@ -19,22 +19,21 @@ import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonTypeName;
 import com.fasterxml.jackson.annotation.JsonValue;
 import com.hyperswitch.client.model.PollStatus;
-import org.junit.Assert;
-import org.junit.Ignore;
-import org.junit.Test;
-
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Test;
 
 /**
  * Model tests for PollResponse
  */
-public class PollResponseTest {
+class PollResponseTest {
     private final PollResponse model = new PollResponse();
 
     /**
      * Model tests for PollResponse
      */
     @Test
-    public void testPollResponse() {
+    void testPollResponse() {
         // TODO: test PollResponse
     }
 
@@ -42,7 +41,7 @@ public class PollResponseTest {
      * Test the property 'pollId'
      */
     @Test
-    public void pollIdTest() {
+    void pollIdTest() {
         // TODO: test pollId
     }
 
@@ -50,7 +49,7 @@ public class PollResponseTest {
      * Test the property 'status'
      */
     @Test
-    public void statusTest() {
+    void statusTest() {
         // TODO: test status
     }
 

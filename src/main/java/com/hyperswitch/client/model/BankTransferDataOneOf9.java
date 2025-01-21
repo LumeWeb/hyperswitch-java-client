@@ -34,24 +34,25 @@ import java.util.StringJoiner;
   BankTransferDataOneOf9.JSON_PROPERTY_DANAMON_VA_BANK_TRANSFER
 })
 @JsonTypeName("BankTransferData_oneOf_9")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class BankTransferDataOneOf9 {
   public static final String JSON_PROPERTY_DANAMON_VA_BANK_TRANSFER = "danamon_va_bank_transfer";
+  @javax.annotation.Nonnull
   private BankTransferDataOneOf4PermataBankTransfer danamonVaBankTransfer;
 
   public BankTransferDataOneOf9() {
   }
 
-  public BankTransferDataOneOf9 danamonVaBankTransfer(BankTransferDataOneOf4PermataBankTransfer danamonVaBankTransfer) {
+  public BankTransferDataOneOf9 danamonVaBankTransfer(@javax.annotation.Nonnull BankTransferDataOneOf4PermataBankTransfer danamonVaBankTransfer) {
     
     this.danamonVaBankTransfer = danamonVaBankTransfer;
     return this;
   }
 
-   /**
+  /**
    * Get danamonVaBankTransfer
    * @return danamonVaBankTransfer
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_DANAMON_VA_BANK_TRANSFER)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -63,7 +64,7 @@ public class BankTransferDataOneOf9 {
 
   @JsonProperty(JSON_PROPERTY_DANAMON_VA_BANK_TRANSFER)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setDanamonVaBankTransfer(BankTransferDataOneOf4PermataBankTransfer danamonVaBankTransfer) {
+  public void setDanamonVaBankTransfer(@javax.annotation.Nonnull BankTransferDataOneOf4PermataBankTransfer danamonVaBankTransfer) {
     this.danamonVaBankTransfer = danamonVaBankTransfer;
   }
 

@@ -47,51 +47,61 @@ import java.util.StringJoiner;
   CustomerResponse.JSON_PROPERTY_METADATA,
   CustomerResponse.JSON_PROPERTY_DEFAULT_PAYMENT_METHOD_ID
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class CustomerResponse {
   public static final String JSON_PROPERTY_CUSTOMER_ID = "customer_id";
+  @javax.annotation.Nonnull
   private String customerId;
 
   public static final String JSON_PROPERTY_NAME = "name";
+  @javax.annotation.Nullable
   private JsonNullable<String> name = JsonNullable.<String>undefined();
 
   public static final String JSON_PROPERTY_EMAIL = "email";
+  @javax.annotation.Nullable
   private JsonNullable<String> email = JsonNullable.<String>undefined();
 
   public static final String JSON_PROPERTY_PHONE = "phone";
+  @javax.annotation.Nullable
   private JsonNullable<String> phone = JsonNullable.<String>undefined();
 
   public static final String JSON_PROPERTY_PHONE_COUNTRY_CODE = "phone_country_code";
+  @javax.annotation.Nullable
   private JsonNullable<String> phoneCountryCode = JsonNullable.<String>undefined();
 
   public static final String JSON_PROPERTY_DESCRIPTION = "description";
+  @javax.annotation.Nullable
   private JsonNullable<String> description = JsonNullable.<String>undefined();
 
   public static final String JSON_PROPERTY_ADDRESS = "address";
+  @javax.annotation.Nullable
   private JsonNullable<AddressDetails> address = JsonNullable.<AddressDetails>undefined();
 
   public static final String JSON_PROPERTY_CREATED_AT = "created_at";
+  @javax.annotation.Nonnull
   private OffsetDateTime createdAt;
 
   public static final String JSON_PROPERTY_METADATA = "metadata";
+  @javax.annotation.Nullable
   private JsonNullable<Object> metadata = JsonNullable.<Object>undefined();
 
   public static final String JSON_PROPERTY_DEFAULT_PAYMENT_METHOD_ID = "default_payment_method_id";
+  @javax.annotation.Nullable
   private JsonNullable<String> defaultPaymentMethodId = JsonNullable.<String>undefined();
 
   public CustomerResponse() {
   }
 
-  public CustomerResponse customerId(String customerId) {
+  public CustomerResponse customerId(@javax.annotation.Nonnull String customerId) {
     
     this.customerId = customerId;
     return this;
   }
 
-   /**
+  /**
    * The identifier for the customer object
    * @return customerId
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_CUSTOMER_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -103,21 +113,20 @@ public class CustomerResponse {
 
   @JsonProperty(JSON_PROPERTY_CUSTOMER_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setCustomerId(String customerId) {
+  public void setCustomerId(@javax.annotation.Nonnull String customerId) {
     this.customerId = customerId;
   }
 
-
-  public CustomerResponse name(String name) {
+  public CustomerResponse name(@javax.annotation.Nullable String name) {
     this.name = JsonNullable.<String>of(name);
     
     return this;
   }
 
-   /**
+  /**
    * The customer&#39;s name
    * @return name
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -137,21 +146,20 @@ public class CustomerResponse {
     this.name = name;
   }
 
-  public void setName(String name) {
+  public void setName(@javax.annotation.Nullable String name) {
     this.name = JsonNullable.<String>of(name);
   }
 
-
-  public CustomerResponse email(String email) {
+  public CustomerResponse email(@javax.annotation.Nullable String email) {
     this.email = JsonNullable.<String>of(email);
     
     return this;
   }
 
-   /**
+  /**
    * The customer&#39;s email address
    * @return email
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -171,21 +179,20 @@ public class CustomerResponse {
     this.email = email;
   }
 
-  public void setEmail(String email) {
+  public void setEmail(@javax.annotation.Nullable String email) {
     this.email = JsonNullable.<String>of(email);
   }
 
-
-  public CustomerResponse phone(String phone) {
+  public CustomerResponse phone(@javax.annotation.Nullable String phone) {
     this.phone = JsonNullable.<String>of(phone);
     
     return this;
   }
 
-   /**
+  /**
    * The customer&#39;s phone number
    * @return phone
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -205,21 +212,20 @@ public class CustomerResponse {
     this.phone = phone;
   }
 
-  public void setPhone(String phone) {
+  public void setPhone(@javax.annotation.Nullable String phone) {
     this.phone = JsonNullable.<String>of(phone);
   }
 
-
-  public CustomerResponse phoneCountryCode(String phoneCountryCode) {
+  public CustomerResponse phoneCountryCode(@javax.annotation.Nullable String phoneCountryCode) {
     this.phoneCountryCode = JsonNullable.<String>of(phoneCountryCode);
     
     return this;
   }
 
-   /**
+  /**
    * The country code for the customer phone number
    * @return phoneCountryCode
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -239,21 +245,20 @@ public class CustomerResponse {
     this.phoneCountryCode = phoneCountryCode;
   }
 
-  public void setPhoneCountryCode(String phoneCountryCode) {
+  public void setPhoneCountryCode(@javax.annotation.Nullable String phoneCountryCode) {
     this.phoneCountryCode = JsonNullable.<String>of(phoneCountryCode);
   }
 
-
-  public CustomerResponse description(String description) {
+  public CustomerResponse description(@javax.annotation.Nullable String description) {
     this.description = JsonNullable.<String>of(description);
     
     return this;
   }
 
-   /**
+  /**
    * An arbitrary string that you can attach to a customer object.
    * @return description
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -273,21 +278,20 @@ public class CustomerResponse {
     this.description = description;
   }
 
-  public void setDescription(String description) {
+  public void setDescription(@javax.annotation.Nullable String description) {
     this.description = JsonNullable.<String>of(description);
   }
 
-
-  public CustomerResponse address(AddressDetails address) {
+  public CustomerResponse address(@javax.annotation.Nullable AddressDetails address) {
     this.address = JsonNullable.<AddressDetails>of(address);
     
     return this;
   }
 
-   /**
+  /**
    * Get address
    * @return address
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -307,21 +311,20 @@ public class CustomerResponse {
     this.address = address;
   }
 
-  public void setAddress(AddressDetails address) {
+  public void setAddress(@javax.annotation.Nullable AddressDetails address) {
     this.address = JsonNullable.<AddressDetails>of(address);
   }
 
-
-  public CustomerResponse createdAt(OffsetDateTime createdAt) {
+  public CustomerResponse createdAt(@javax.annotation.Nonnull OffsetDateTime createdAt) {
     
     this.createdAt = createdAt;
     return this;
   }
 
-   /**
+  /**
    * A timestamp (ISO 8601 code) that determines when the customer was created
    * @return createdAt
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_CREATED_AT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -333,21 +336,20 @@ public class CustomerResponse {
 
   @JsonProperty(JSON_PROPERTY_CREATED_AT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setCreatedAt(OffsetDateTime createdAt) {
+  public void setCreatedAt(@javax.annotation.Nonnull OffsetDateTime createdAt) {
     this.createdAt = createdAt;
   }
 
-
-  public CustomerResponse metadata(Object metadata) {
+  public CustomerResponse metadata(@javax.annotation.Nullable Object metadata) {
     this.metadata = JsonNullable.<Object>of(metadata);
     
     return this;
   }
 
-   /**
+  /**
    * You can specify up to 50 keys, with key names up to 40 characters long and values up to 500 characters long. Metadata is useful for storing additional, structured information on an object.
    * @return metadata
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -367,21 +369,20 @@ public class CustomerResponse {
     this.metadata = metadata;
   }
 
-  public void setMetadata(Object metadata) {
+  public void setMetadata(@javax.annotation.Nullable Object metadata) {
     this.metadata = JsonNullable.<Object>of(metadata);
   }
 
-
-  public CustomerResponse defaultPaymentMethodId(String defaultPaymentMethodId) {
+  public CustomerResponse defaultPaymentMethodId(@javax.annotation.Nullable String defaultPaymentMethodId) {
     this.defaultPaymentMethodId = JsonNullable.<String>of(defaultPaymentMethodId);
     
     return this;
   }
 
-   /**
+  /**
    * The identifier for the default payment method.
    * @return defaultPaymentMethodId
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -401,7 +402,7 @@ public class CustomerResponse {
     this.defaultPaymentMethodId = defaultPaymentMethodId;
   }
 
-  public void setDefaultPaymentMethodId(String defaultPaymentMethodId) {
+  public void setDefaultPaymentMethodId(@javax.annotation.Nullable String defaultPaymentMethodId) {
     this.defaultPaymentMethodId = JsonNullable.<String>of(defaultPaymentMethodId);
   }
 

@@ -34,24 +34,25 @@ import java.util.StringJoiner;
   Card1.JSON_PROPERTY_CARD
 })
 @JsonTypeName("Card_1")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class Card1 {
   public static final String JSON_PROPERTY_CARD = "card";
+  @javax.annotation.Nonnull
   private Card card;
 
   public Card1() {
   }
 
-  public Card1 card(Card card) {
+  public Card1 card(@javax.annotation.Nonnull Card card) {
     
     this.card = card;
     return this;
   }
 
-   /**
+  /**
    * Get card
    * @return card
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_CARD)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -63,7 +64,7 @@ public class Card1 {
 
   @JsonProperty(JSON_PROPERTY_CARD)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setCard(Card card) {
+  public void setCard(@javax.annotation.Nonnull Card card) {
     this.card = card;
   }
 

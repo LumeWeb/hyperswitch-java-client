@@ -37,27 +37,29 @@ import java.util.StringJoiner;
   RedirectResponse.JSON_PROPERTY_PARAM,
   RedirectResponse.JSON_PROPERTY_JSON_PAYLOAD
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class RedirectResponse {
   public static final String JSON_PROPERTY_PARAM = "param";
+  @javax.annotation.Nullable
   private JsonNullable<String> param = JsonNullable.<String>undefined();
 
   public static final String JSON_PROPERTY_JSON_PAYLOAD = "json_payload";
+  @javax.annotation.Nullable
   private JsonNullable<Object> jsonPayload = JsonNullable.<Object>undefined();
 
   public RedirectResponse() {
   }
 
-  public RedirectResponse param(String param) {
+  public RedirectResponse param(@javax.annotation.Nullable String param) {
     this.param = JsonNullable.<String>of(param);
     
     return this;
   }
 
-   /**
+  /**
    * Get param
    * @return param
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -77,21 +79,20 @@ public class RedirectResponse {
     this.param = param;
   }
 
-  public void setParam(String param) {
+  public void setParam(@javax.annotation.Nullable String param) {
     this.param = JsonNullable.<String>of(param);
   }
 
-
-  public RedirectResponse jsonPayload(Object jsonPayload) {
+  public RedirectResponse jsonPayload(@javax.annotation.Nullable Object jsonPayload) {
     this.jsonPayload = JsonNullable.<Object>of(jsonPayload);
     
     return this;
   }
 
-   /**
+  /**
    * Get jsonPayload
    * @return jsonPayload
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -111,7 +112,7 @@ public class RedirectResponse {
     this.jsonPayload = jsonPayload;
   }
 
-  public void setJsonPayload(Object jsonPayload) {
+  public void setJsonPayload(@javax.annotation.Nullable Object jsonPayload) {
     this.jsonPayload = JsonNullable.<Object>of(jsonPayload);
   }
 

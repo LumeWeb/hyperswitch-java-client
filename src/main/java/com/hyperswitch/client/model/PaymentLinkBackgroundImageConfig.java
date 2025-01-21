@@ -40,30 +40,33 @@ import java.util.StringJoiner;
   PaymentLinkBackgroundImageConfig.JSON_PROPERTY_POSITION,
   PaymentLinkBackgroundImageConfig.JSON_PROPERTY_SIZE
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class PaymentLinkBackgroundImageConfig {
   public static final String JSON_PROPERTY_URL = "url";
+  @javax.annotation.Nonnull
   private String url;
 
   public static final String JSON_PROPERTY_POSITION = "position";
+  @javax.annotation.Nullable
   private JsonNullable<ElementPosition> position = JsonNullable.<ElementPosition>undefined();
 
   public static final String JSON_PROPERTY_SIZE = "size";
+  @javax.annotation.Nullable
   private JsonNullable<ElementSize> size = JsonNullable.<ElementSize>undefined();
 
   public PaymentLinkBackgroundImageConfig() {
   }
 
-  public PaymentLinkBackgroundImageConfig url(String url) {
+  public PaymentLinkBackgroundImageConfig url(@javax.annotation.Nonnull String url) {
     
     this.url = url;
     return this;
   }
 
-   /**
+  /**
    * URL of the image
    * @return url
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_URL)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -75,21 +78,20 @@ public class PaymentLinkBackgroundImageConfig {
 
   @JsonProperty(JSON_PROPERTY_URL)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setUrl(String url) {
+  public void setUrl(@javax.annotation.Nonnull String url) {
     this.url = url;
   }
 
-
-  public PaymentLinkBackgroundImageConfig position(ElementPosition position) {
+  public PaymentLinkBackgroundImageConfig position(@javax.annotation.Nullable ElementPosition position) {
     this.position = JsonNullable.<ElementPosition>of(position);
     
     return this;
   }
 
-   /**
+  /**
    * Get position
    * @return position
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -109,21 +111,20 @@ public class PaymentLinkBackgroundImageConfig {
     this.position = position;
   }
 
-  public void setPosition(ElementPosition position) {
+  public void setPosition(@javax.annotation.Nullable ElementPosition position) {
     this.position = JsonNullable.<ElementPosition>of(position);
   }
 
-
-  public PaymentLinkBackgroundImageConfig size(ElementSize size) {
+  public PaymentLinkBackgroundImageConfig size(@javax.annotation.Nullable ElementSize size) {
     this.size = JsonNullable.<ElementSize>of(size);
     
     return this;
   }
 
-   /**
+  /**
    * Get size
    * @return size
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -143,7 +144,7 @@ public class PaymentLinkBackgroundImageConfig {
     this.size = size;
   }
 
-  public void setSize(ElementSize size) {
+  public void setSize(@javax.annotation.Nullable ElementSize size) {
     this.size = JsonNullable.<ElementSize>of(size);
   }
 

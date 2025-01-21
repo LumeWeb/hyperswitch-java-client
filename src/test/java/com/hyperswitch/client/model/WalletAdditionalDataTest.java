@@ -24,22 +24,21 @@ import org.openapitools.jackson.nullable.JsonNullable;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.openapitools.jackson.nullable.JsonNullable;
 import java.util.NoSuchElementException;
-import org.junit.Assert;
-import org.junit.Ignore;
-import org.junit.Test;
-
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Test;
 
 /**
  * Model tests for WalletAdditionalData
  */
-public class WalletAdditionalDataTest {
+class WalletAdditionalDataTest {
     private final WalletAdditionalData model = new WalletAdditionalData();
 
     /**
      * Model tests for WalletAdditionalData
      */
     @Test
-    public void testWalletAdditionalData() {
+    void testWalletAdditionalData() {
         // TODO: test WalletAdditionalData
     }
 
@@ -47,7 +46,7 @@ public class WalletAdditionalDataTest {
      * Test the property 'email'
      */
     @Test
-    public void emailTest() {
+    void emailTest() {
         // TODO: test email
     }
 
@@ -55,7 +54,7 @@ public class WalletAdditionalDataTest {
      * Test the property 'telephoneNumber'
      */
     @Test
-    public void telephoneNumberTest() {
+    void telephoneNumberTest() {
         // TODO: test telephoneNumber
     }
 
@@ -63,7 +62,7 @@ public class WalletAdditionalDataTest {
      * Test the property 'paypalId'
      */
     @Test
-    public void paypalIdTest() {
+    void paypalIdTest() {
         // TODO: test paypalId
     }
 

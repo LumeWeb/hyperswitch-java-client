@@ -37,24 +37,25 @@ import java.util.StringJoiner;
   BankTransferDataOneOf12LocalBankTransfer.JSON_PROPERTY_BANK_CODE
 })
 @JsonTypeName("BankTransferData_oneOf_12_local_bank_transfer")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class BankTransferDataOneOf12LocalBankTransfer {
   public static final String JSON_PROPERTY_BANK_CODE = "bank_code";
+  @javax.annotation.Nullable
   private JsonNullable<String> bankCode = JsonNullable.<String>undefined();
 
   public BankTransferDataOneOf12LocalBankTransfer() {
   }
 
-  public BankTransferDataOneOf12LocalBankTransfer bankCode(String bankCode) {
+  public BankTransferDataOneOf12LocalBankTransfer bankCode(@javax.annotation.Nullable String bankCode) {
     this.bankCode = JsonNullable.<String>of(bankCode);
     
     return this;
   }
 
-   /**
+  /**
    * Get bankCode
    * @return bankCode
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -74,7 +75,7 @@ public class BankTransferDataOneOf12LocalBankTransfer {
     this.bankCode = bankCode;
   }
 
-  public void setBankCode(String bankCode) {
+  public void setBankCode(@javax.annotation.Nullable String bankCode) {
     this.bankCode = JsonNullable.<String>of(bankCode);
   }
 

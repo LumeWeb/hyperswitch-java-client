@@ -33,24 +33,25 @@ import java.util.StringJoiner;
   BankTransferAdditionalDataOneOf2.JSON_PROPERTY_BACS
 })
 @JsonTypeName("BankTransferAdditionalData_oneOf_2")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class BankTransferAdditionalDataOneOf2 {
   public static final String JSON_PROPERTY_BACS = "bacs";
+  @javax.annotation.Nonnull
   private Object bacs;
 
   public BankTransferAdditionalDataOneOf2() {
   }
 
-  public BankTransferAdditionalDataOneOf2 bacs(Object bacs) {
+  public BankTransferAdditionalDataOneOf2 bacs(@javax.annotation.Nonnull Object bacs) {
     
     this.bacs = bacs;
     return this;
   }
 
-   /**
+  /**
    * Get bacs
    * @return bacs
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_BACS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -62,7 +63,7 @@ public class BankTransferAdditionalDataOneOf2 {
 
   @JsonProperty(JSON_PROPERTY_BACS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setBacs(Object bacs) {
+  public void setBacs(@javax.annotation.Nonnull Object bacs) {
     this.bacs = bacs;
   }
 

@@ -34,24 +34,25 @@ import java.util.StringJoiner;
   ElementSizeOneOf.JSON_PROPERTY_VARIANTS
 })
 @JsonTypeName("ElementSize_oneOf")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class ElementSizeOneOf {
   public static final String JSON_PROPERTY_VARIANTS = "Variants";
+  @javax.annotation.Nonnull
   private SizeVariants variants;
 
   public ElementSizeOneOf() {
   }
 
-  public ElementSizeOneOf variants(SizeVariants variants) {
+  public ElementSizeOneOf variants(@javax.annotation.Nonnull SizeVariants variants) {
     
     this.variants = variants;
     return this;
   }
 
-   /**
+  /**
    * Get variants
    * @return variants
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_VARIANTS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -63,7 +64,7 @@ public class ElementSizeOneOf {
 
   @JsonProperty(JSON_PROPERTY_VARIANTS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setVariants(SizeVariants variants) {
+  public void setVariants(@javax.annotation.Nonnull SizeVariants variants) {
     this.variants = variants;
   }
 

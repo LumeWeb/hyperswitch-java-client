@@ -37,27 +37,29 @@ import java.util.StringJoiner;
   PayoutRetrieveBody.JSON_PROPERTY_FORCE_SYNC,
   PayoutRetrieveBody.JSON_PROPERTY_MERCHANT_ID
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class PayoutRetrieveBody {
   public static final String JSON_PROPERTY_FORCE_SYNC = "force_sync";
+  @javax.annotation.Nullable
   private JsonNullable<Boolean> forceSync = JsonNullable.<Boolean>undefined();
 
   public static final String JSON_PROPERTY_MERCHANT_ID = "merchant_id";
+  @javax.annotation.Nullable
   private JsonNullable<String> merchantId = JsonNullable.<String>undefined();
 
   public PayoutRetrieveBody() {
   }
 
-  public PayoutRetrieveBody forceSync(Boolean forceSync) {
+  public PayoutRetrieveBody forceSync(@javax.annotation.Nullable Boolean forceSync) {
     this.forceSync = JsonNullable.<Boolean>of(forceSync);
     
     return this;
   }
 
-   /**
+  /**
    * Get forceSync
    * @return forceSync
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -77,21 +79,20 @@ public class PayoutRetrieveBody {
     this.forceSync = forceSync;
   }
 
-  public void setForceSync(Boolean forceSync) {
+  public void setForceSync(@javax.annotation.Nullable Boolean forceSync) {
     this.forceSync = JsonNullable.<Boolean>of(forceSync);
   }
 
-
-  public PayoutRetrieveBody merchantId(String merchantId) {
+  public PayoutRetrieveBody merchantId(@javax.annotation.Nullable String merchantId) {
     this.merchantId = JsonNullable.<String>of(merchantId);
     
     return this;
   }
 
-   /**
+  /**
    * Get merchantId
    * @return merchantId
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -111,7 +112,7 @@ public class PayoutRetrieveBody {
     this.merchantId = merchantId;
   }
 
-  public void setMerchantId(String merchantId) {
+  public void setMerchantId(@javax.annotation.Nullable String merchantId) {
     this.merchantId = JsonNullable.<String>of(merchantId);
   }
 

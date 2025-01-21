@@ -23,22 +23,21 @@ import org.openapitools.jackson.nullable.JsonNullable;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.openapitools.jackson.nullable.JsonNullable;
 import java.util.NoSuchElementException;
-import org.junit.Assert;
-import org.junit.Ignore;
-import org.junit.Test;
-
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Test;
 
 /**
  * Model tests for SepaBankTransferAdditionalData
  */
-public class SepaBankTransferAdditionalDataTest {
+class SepaBankTransferAdditionalDataTest {
     private final SepaBankTransferAdditionalData model = new SepaBankTransferAdditionalData();
 
     /**
      * Model tests for SepaBankTransferAdditionalData
      */
     @Test
-    public void testSepaBankTransferAdditionalData() {
+    void testSepaBankTransferAdditionalData() {
         // TODO: test SepaBankTransferAdditionalData
     }
 
@@ -46,7 +45,7 @@ public class SepaBankTransferAdditionalDataTest {
      * Test the property 'iban'
      */
     @Test
-    public void ibanTest() {
+    void ibanTest() {
         // TODO: test iban
     }
 
@@ -54,7 +53,7 @@ public class SepaBankTransferAdditionalDataTest {
      * Test the property 'bankName'
      */
     @Test
-    public void bankNameTest() {
+    void bankNameTest() {
         // TODO: test bankName
     }
 
@@ -62,7 +61,7 @@ public class SepaBankTransferAdditionalDataTest {
      * Test the property 'bankCountryCode'
      */
     @Test
-    public void bankCountryCodeTest() {
+    void bankCountryCodeTest() {
         // TODO: test bankCountryCode
     }
 
@@ -70,7 +69,7 @@ public class SepaBankTransferAdditionalDataTest {
      * Test the property 'bankCity'
      */
     @Test
-    public void bankCityTest() {
+    void bankCityTest() {
         // TODO: test bankCity
     }
 
@@ -78,7 +77,7 @@ public class SepaBankTransferAdditionalDataTest {
      * Test the property 'bic'
      */
     @Test
-    public void bicTest() {
+    void bicTest() {
         // TODO: test bic
     }
 

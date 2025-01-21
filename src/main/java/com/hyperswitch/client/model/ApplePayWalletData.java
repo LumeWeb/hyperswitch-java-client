@@ -35,30 +35,33 @@ import java.util.StringJoiner;
   ApplePayWalletData.JSON_PROPERTY_PAYMENT_METHOD,
   ApplePayWalletData.JSON_PROPERTY_TRANSACTION_IDENTIFIER
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class ApplePayWalletData {
   public static final String JSON_PROPERTY_PAYMENT_DATA = "payment_data";
+  @javax.annotation.Nonnull
   private String paymentData;
 
   public static final String JSON_PROPERTY_PAYMENT_METHOD = "payment_method";
+  @javax.annotation.Nonnull
   private ApplepayPaymentMethod paymentMethod;
 
   public static final String JSON_PROPERTY_TRANSACTION_IDENTIFIER = "transaction_identifier";
+  @javax.annotation.Nonnull
   private String transactionIdentifier;
 
   public ApplePayWalletData() {
   }
 
-  public ApplePayWalletData paymentData(String paymentData) {
+  public ApplePayWalletData paymentData(@javax.annotation.Nonnull String paymentData) {
     
     this.paymentData = paymentData;
     return this;
   }
 
-   /**
+  /**
    * The payment data of Apple pay
    * @return paymentData
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_PAYMENT_DATA)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -70,21 +73,20 @@ public class ApplePayWalletData {
 
   @JsonProperty(JSON_PROPERTY_PAYMENT_DATA)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setPaymentData(String paymentData) {
+  public void setPaymentData(@javax.annotation.Nonnull String paymentData) {
     this.paymentData = paymentData;
   }
 
-
-  public ApplePayWalletData paymentMethod(ApplepayPaymentMethod paymentMethod) {
+  public ApplePayWalletData paymentMethod(@javax.annotation.Nonnull ApplepayPaymentMethod paymentMethod) {
     
     this.paymentMethod = paymentMethod;
     return this;
   }
 
-   /**
+  /**
    * Get paymentMethod
    * @return paymentMethod
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_PAYMENT_METHOD)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -96,21 +98,20 @@ public class ApplePayWalletData {
 
   @JsonProperty(JSON_PROPERTY_PAYMENT_METHOD)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setPaymentMethod(ApplepayPaymentMethod paymentMethod) {
+  public void setPaymentMethod(@javax.annotation.Nonnull ApplepayPaymentMethod paymentMethod) {
     this.paymentMethod = paymentMethod;
   }
 
-
-  public ApplePayWalletData transactionIdentifier(String transactionIdentifier) {
+  public ApplePayWalletData transactionIdentifier(@javax.annotation.Nonnull String transactionIdentifier) {
     
     this.transactionIdentifier = transactionIdentifier;
     return this;
   }
 
-   /**
+  /**
    * The unique identifier for the transaction
    * @return transactionIdentifier
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_TRANSACTION_IDENTIFIER)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -122,7 +123,7 @@ public class ApplePayWalletData {
 
   @JsonProperty(JSON_PROPERTY_TRANSACTION_IDENTIFIER)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setTransactionIdentifier(String transactionIdentifier) {
+  public void setTransactionIdentifier(@javax.annotation.Nonnull String transactionIdentifier) {
     this.transactionIdentifier = transactionIdentifier;
   }
 

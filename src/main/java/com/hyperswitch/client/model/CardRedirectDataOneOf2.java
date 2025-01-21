@@ -33,24 +33,25 @@ import java.util.StringJoiner;
   CardRedirectDataOneOf2.JSON_PROPERTY_MOMO_ATM
 })
 @JsonTypeName("CardRedirectData_oneOf_2")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class CardRedirectDataOneOf2 {
   public static final String JSON_PROPERTY_MOMO_ATM = "momo_atm";
+  @javax.annotation.Nonnull
   private Object momoAtm;
 
   public CardRedirectDataOneOf2() {
   }
 
-  public CardRedirectDataOneOf2 momoAtm(Object momoAtm) {
+  public CardRedirectDataOneOf2 momoAtm(@javax.annotation.Nonnull Object momoAtm) {
     
     this.momoAtm = momoAtm;
     return this;
   }
 
-   /**
+  /**
    * Get momoAtm
    * @return momoAtm
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_MOMO_ATM)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -62,7 +63,7 @@ public class CardRedirectDataOneOf2 {
 
   @JsonProperty(JSON_PROPERTY_MOMO_ATM)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setMomoAtm(Object momoAtm) {
+  public void setMomoAtm(@javax.annotation.Nonnull Object momoAtm) {
     this.momoAtm = momoAtm;
   }
 

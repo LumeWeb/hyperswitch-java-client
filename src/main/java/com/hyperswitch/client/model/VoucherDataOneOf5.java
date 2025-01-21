@@ -34,24 +34,25 @@ import java.util.StringJoiner;
   VoucherDataOneOf5.JSON_PROPERTY_MINI_STOP
 })
 @JsonTypeName("VoucherData_oneOf_5")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class VoucherDataOneOf5 {
   public static final String JSON_PROPERTY_MINI_STOP = "mini_stop";
+  @javax.annotation.Nonnull
   private JCSVoucherData miniStop;
 
   public VoucherDataOneOf5() {
   }
 
-  public VoucherDataOneOf5 miniStop(JCSVoucherData miniStop) {
+  public VoucherDataOneOf5 miniStop(@javax.annotation.Nonnull JCSVoucherData miniStop) {
     
     this.miniStop = miniStop;
     return this;
   }
 
-   /**
+  /**
    * Get miniStop
    * @return miniStop
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_MINI_STOP)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -63,7 +64,7 @@ public class VoucherDataOneOf5 {
 
   @JsonProperty(JSON_PROPERTY_MINI_STOP)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setMiniStop(JCSVoucherData miniStop) {
+  public void setMiniStop(@javax.annotation.Nonnull JCSVoucherData miniStop) {
     this.miniStop = miniStop;
   }
 

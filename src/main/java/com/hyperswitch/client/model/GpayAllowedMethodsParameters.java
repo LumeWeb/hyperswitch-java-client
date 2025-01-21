@@ -22,6 +22,7 @@ import com.fasterxml.jackson.annotation.JsonTypeName;
 import com.fasterxml.jackson.annotation.JsonValue;
 import com.hyperswitch.client.model.GpayBillingAddressParameters;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import org.openapitools.jackson.nullable.JsonNullable;
 import com.fasterxml.jackson.annotation.JsonIgnore;
@@ -43,27 +44,32 @@ import java.util.StringJoiner;
   GpayAllowedMethodsParameters.JSON_PROPERTY_BILLING_ADDRESS_PARAMETERS,
   GpayAllowedMethodsParameters.JSON_PROPERTY_ASSURANCE_DETAILS_REQUIRED
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class GpayAllowedMethodsParameters {
   public static final String JSON_PROPERTY_ALLOWED_AUTH_METHODS = "allowed_auth_methods";
+  @javax.annotation.Nonnull
   private List<String> allowedAuthMethods = new ArrayList<>();
 
   public static final String JSON_PROPERTY_ALLOWED_CARD_NETWORKS = "allowed_card_networks";
+  @javax.annotation.Nonnull
   private List<String> allowedCardNetworks = new ArrayList<>();
 
   public static final String JSON_PROPERTY_BILLING_ADDRESS_REQUIRED = "billing_address_required";
+  @javax.annotation.Nullable
   private JsonNullable<Boolean> billingAddressRequired = JsonNullable.<Boolean>undefined();
 
   public static final String JSON_PROPERTY_BILLING_ADDRESS_PARAMETERS = "billing_address_parameters";
+  @javax.annotation.Nullable
   private JsonNullable<GpayBillingAddressParameters> billingAddressParameters = JsonNullable.<GpayBillingAddressParameters>undefined();
 
   public static final String JSON_PROPERTY_ASSURANCE_DETAILS_REQUIRED = "assurance_details_required";
+  @javax.annotation.Nullable
   private JsonNullable<Boolean> assuranceDetailsRequired = JsonNullable.<Boolean>undefined();
 
   public GpayAllowedMethodsParameters() {
   }
 
-  public GpayAllowedMethodsParameters allowedAuthMethods(List<String> allowedAuthMethods) {
+  public GpayAllowedMethodsParameters allowedAuthMethods(@javax.annotation.Nonnull List<String> allowedAuthMethods) {
     
     this.allowedAuthMethods = allowedAuthMethods;
     return this;
@@ -77,10 +83,10 @@ public class GpayAllowedMethodsParameters {
     return this;
   }
 
-   /**
+  /**
    * The list of allowed auth methods (ex: 3DS, No3DS, PAN_ONLY etc)
    * @return allowedAuthMethods
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_ALLOWED_AUTH_METHODS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -92,12 +98,11 @@ public class GpayAllowedMethodsParameters {
 
   @JsonProperty(JSON_PROPERTY_ALLOWED_AUTH_METHODS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setAllowedAuthMethods(List<String> allowedAuthMethods) {
+  public void setAllowedAuthMethods(@javax.annotation.Nonnull List<String> allowedAuthMethods) {
     this.allowedAuthMethods = allowedAuthMethods;
   }
 
-
-  public GpayAllowedMethodsParameters allowedCardNetworks(List<String> allowedCardNetworks) {
+  public GpayAllowedMethodsParameters allowedCardNetworks(@javax.annotation.Nonnull List<String> allowedCardNetworks) {
     
     this.allowedCardNetworks = allowedCardNetworks;
     return this;
@@ -111,10 +116,10 @@ public class GpayAllowedMethodsParameters {
     return this;
   }
 
-   /**
+  /**
    * The list of allowed card networks (ex: AMEX,JCB etc)
    * @return allowedCardNetworks
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_ALLOWED_CARD_NETWORKS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -126,21 +131,20 @@ public class GpayAllowedMethodsParameters {
 
   @JsonProperty(JSON_PROPERTY_ALLOWED_CARD_NETWORKS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setAllowedCardNetworks(List<String> allowedCardNetworks) {
+  public void setAllowedCardNetworks(@javax.annotation.Nonnull List<String> allowedCardNetworks) {
     this.allowedCardNetworks = allowedCardNetworks;
   }
 
-
-  public GpayAllowedMethodsParameters billingAddressRequired(Boolean billingAddressRequired) {
+  public GpayAllowedMethodsParameters billingAddressRequired(@javax.annotation.Nullable Boolean billingAddressRequired) {
     this.billingAddressRequired = JsonNullable.<Boolean>of(billingAddressRequired);
     
     return this;
   }
 
-   /**
+  /**
    * Is billing address required
    * @return billingAddressRequired
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -160,21 +164,20 @@ public class GpayAllowedMethodsParameters {
     this.billingAddressRequired = billingAddressRequired;
   }
 
-  public void setBillingAddressRequired(Boolean billingAddressRequired) {
+  public void setBillingAddressRequired(@javax.annotation.Nullable Boolean billingAddressRequired) {
     this.billingAddressRequired = JsonNullable.<Boolean>of(billingAddressRequired);
   }
 
-
-  public GpayAllowedMethodsParameters billingAddressParameters(GpayBillingAddressParameters billingAddressParameters) {
+  public GpayAllowedMethodsParameters billingAddressParameters(@javax.annotation.Nullable GpayBillingAddressParameters billingAddressParameters) {
     this.billingAddressParameters = JsonNullable.<GpayBillingAddressParameters>of(billingAddressParameters);
     
     return this;
   }
 
-   /**
+  /**
    * Get billingAddressParameters
    * @return billingAddressParameters
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -194,21 +197,20 @@ public class GpayAllowedMethodsParameters {
     this.billingAddressParameters = billingAddressParameters;
   }
 
-  public void setBillingAddressParameters(GpayBillingAddressParameters billingAddressParameters) {
+  public void setBillingAddressParameters(@javax.annotation.Nullable GpayBillingAddressParameters billingAddressParameters) {
     this.billingAddressParameters = JsonNullable.<GpayBillingAddressParameters>of(billingAddressParameters);
   }
 
-
-  public GpayAllowedMethodsParameters assuranceDetailsRequired(Boolean assuranceDetailsRequired) {
+  public GpayAllowedMethodsParameters assuranceDetailsRequired(@javax.annotation.Nullable Boolean assuranceDetailsRequired) {
     this.assuranceDetailsRequired = JsonNullable.<Boolean>of(assuranceDetailsRequired);
     
     return this;
   }
 
-   /**
+  /**
    * Whether assurance details are required
    * @return assuranceDetailsRequired
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -228,7 +230,7 @@ public class GpayAllowedMethodsParameters {
     this.assuranceDetailsRequired = assuranceDetailsRequired;
   }
 
-  public void setAssuranceDetailsRequired(Boolean assuranceDetailsRequired) {
+  public void setAssuranceDetailsRequired(@javax.annotation.Nullable Boolean assuranceDetailsRequired) {
     this.assuranceDetailsRequired = JsonNullable.<Boolean>of(assuranceDetailsRequired);
   }
 

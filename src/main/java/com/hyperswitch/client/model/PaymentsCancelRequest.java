@@ -38,27 +38,29 @@ import java.util.StringJoiner;
   PaymentsCancelRequest.JSON_PROPERTY_CANCELLATION_REASON,
   PaymentsCancelRequest.JSON_PROPERTY_MERCHANT_CONNECTOR_DETAILS
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class PaymentsCancelRequest {
   public static final String JSON_PROPERTY_CANCELLATION_REASON = "cancellation_reason";
+  @javax.annotation.Nullable
   private JsonNullable<String> cancellationReason = JsonNullable.<String>undefined();
 
   public static final String JSON_PROPERTY_MERCHANT_CONNECTOR_DETAILS = "merchant_connector_details";
+  @javax.annotation.Nullable
   private JsonNullable<MerchantConnectorDetailsWrap> merchantConnectorDetails = JsonNullable.<MerchantConnectorDetailsWrap>undefined();
 
   public PaymentsCancelRequest() {
   }
 
-  public PaymentsCancelRequest cancellationReason(String cancellationReason) {
+  public PaymentsCancelRequest cancellationReason(@javax.annotation.Nullable String cancellationReason) {
     this.cancellationReason = JsonNullable.<String>of(cancellationReason);
     
     return this;
   }
 
-   /**
+  /**
    * The reason for the payment cancel
    * @return cancellationReason
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -78,21 +80,20 @@ public class PaymentsCancelRequest {
     this.cancellationReason = cancellationReason;
   }
 
-  public void setCancellationReason(String cancellationReason) {
+  public void setCancellationReason(@javax.annotation.Nullable String cancellationReason) {
     this.cancellationReason = JsonNullable.<String>of(cancellationReason);
   }
 
-
-  public PaymentsCancelRequest merchantConnectorDetails(MerchantConnectorDetailsWrap merchantConnectorDetails) {
+  public PaymentsCancelRequest merchantConnectorDetails(@javax.annotation.Nullable MerchantConnectorDetailsWrap merchantConnectorDetails) {
     this.merchantConnectorDetails = JsonNullable.<MerchantConnectorDetailsWrap>of(merchantConnectorDetails);
     
     return this;
   }
 
-   /**
+  /**
    * Get merchantConnectorDetails
    * @return merchantConnectorDetails
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -112,7 +113,7 @@ public class PaymentsCancelRequest {
     this.merchantConnectorDetails = merchantConnectorDetails;
   }
 
-  public void setMerchantConnectorDetails(MerchantConnectorDetailsWrap merchantConnectorDetails) {
+  public void setMerchantConnectorDetails(@javax.annotation.Nullable MerchantConnectorDetailsWrap merchantConnectorDetails) {
     this.merchantConnectorDetails = JsonNullable.<MerchantConnectorDetailsWrap>of(merchantConnectorDetails);
   }
 

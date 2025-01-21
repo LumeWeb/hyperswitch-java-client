@@ -23,6 +23,7 @@ import com.fasterxml.jackson.annotation.JsonValue;
 import com.hyperswitch.client.model.EnabledPaymentMethod;
 import java.time.OffsetDateTime;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import org.openapitools.jackson.nullable.JsonNullable;
 import com.fasterxml.jackson.annotation.JsonIgnore;
@@ -48,48 +49,57 @@ import java.util.StringJoiner;
   PaymentMethodCollectLinkResponse.JSON_PROPERTY_RETURN_URL,
   PaymentMethodCollectLinkResponse.JSON_PROPERTY_ENABLED_PAYMENT_METHODS
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class PaymentMethodCollectLinkResponse {
   public static final String JSON_PROPERTY_LOGO = "logo";
+  @javax.annotation.Nullable
   private JsonNullable<String> logo = JsonNullable.<String>undefined();
 
   public static final String JSON_PROPERTY_MERCHANT_NAME = "merchant_name";
+  @javax.annotation.Nullable
   private JsonNullable<String> merchantName = JsonNullable.<String>undefined();
 
   public static final String JSON_PROPERTY_THEME = "theme";
+  @javax.annotation.Nullable
   private JsonNullable<String> theme = JsonNullable.<String>undefined();
 
   public static final String JSON_PROPERTY_PM_COLLECT_LINK_ID = "pm_collect_link_id";
+  @javax.annotation.Nonnull
   private String pmCollectLinkId;
 
   public static final String JSON_PROPERTY_CUSTOMER_ID = "customer_id";
+  @javax.annotation.Nonnull
   private String customerId;
 
   public static final String JSON_PROPERTY_EXPIRY = "expiry";
+  @javax.annotation.Nonnull
   private OffsetDateTime expiry;
 
   public static final String JSON_PROPERTY_LINK = "link";
+  @javax.annotation.Nonnull
   private String link;
 
   public static final String JSON_PROPERTY_RETURN_URL = "return_url";
+  @javax.annotation.Nullable
   private JsonNullable<String> returnUrl = JsonNullable.<String>undefined();
 
   public static final String JSON_PROPERTY_ENABLED_PAYMENT_METHODS = "enabled_payment_methods";
+  @javax.annotation.Nullable
   private JsonNullable<List<EnabledPaymentMethod>> enabledPaymentMethods = JsonNullable.<List<EnabledPaymentMethod>>undefined();
 
   public PaymentMethodCollectLinkResponse() {
   }
 
-  public PaymentMethodCollectLinkResponse logo(String logo) {
+  public PaymentMethodCollectLinkResponse logo(@javax.annotation.Nullable String logo) {
     this.logo = JsonNullable.<String>of(logo);
     
     return this;
   }
 
-   /**
+  /**
    * Merchant&#39;s display logo
    * @return logo
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -109,21 +119,20 @@ public class PaymentMethodCollectLinkResponse {
     this.logo = logo;
   }
 
-  public void setLogo(String logo) {
+  public void setLogo(@javax.annotation.Nullable String logo) {
     this.logo = JsonNullable.<String>of(logo);
   }
 
-
-  public PaymentMethodCollectLinkResponse merchantName(String merchantName) {
+  public PaymentMethodCollectLinkResponse merchantName(@javax.annotation.Nullable String merchantName) {
     this.merchantName = JsonNullable.<String>of(merchantName);
     
     return this;
   }
 
-   /**
+  /**
    * Custom merchant name for the link
    * @return merchantName
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -143,21 +152,20 @@ public class PaymentMethodCollectLinkResponse {
     this.merchantName = merchantName;
   }
 
-  public void setMerchantName(String merchantName) {
+  public void setMerchantName(@javax.annotation.Nullable String merchantName) {
     this.merchantName = JsonNullable.<String>of(merchantName);
   }
 
-
-  public PaymentMethodCollectLinkResponse theme(String theme) {
+  public PaymentMethodCollectLinkResponse theme(@javax.annotation.Nullable String theme) {
     this.theme = JsonNullable.<String>of(theme);
     
     return this;
   }
 
-   /**
+  /**
    * Primary color to be used in the form represented in hex format
    * @return theme
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -177,21 +185,20 @@ public class PaymentMethodCollectLinkResponse {
     this.theme = theme;
   }
 
-  public void setTheme(String theme) {
+  public void setTheme(@javax.annotation.Nullable String theme) {
     this.theme = JsonNullable.<String>of(theme);
   }
 
-
-  public PaymentMethodCollectLinkResponse pmCollectLinkId(String pmCollectLinkId) {
+  public PaymentMethodCollectLinkResponse pmCollectLinkId(@javax.annotation.Nonnull String pmCollectLinkId) {
     
     this.pmCollectLinkId = pmCollectLinkId;
     return this;
   }
 
-   /**
+  /**
    * The unique identifier for the collect link.
    * @return pmCollectLinkId
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_PM_COLLECT_LINK_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -203,21 +210,20 @@ public class PaymentMethodCollectLinkResponse {
 
   @JsonProperty(JSON_PROPERTY_PM_COLLECT_LINK_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setPmCollectLinkId(String pmCollectLinkId) {
+  public void setPmCollectLinkId(@javax.annotation.Nonnull String pmCollectLinkId) {
     this.pmCollectLinkId = pmCollectLinkId;
   }
 
-
-  public PaymentMethodCollectLinkResponse customerId(String customerId) {
+  public PaymentMethodCollectLinkResponse customerId(@javax.annotation.Nonnull String customerId) {
     
     this.customerId = customerId;
     return this;
   }
 
-   /**
+  /**
    * The unique identifier of the customer.
    * @return customerId
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_CUSTOMER_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -229,21 +235,20 @@ public class PaymentMethodCollectLinkResponse {
 
   @JsonProperty(JSON_PROPERTY_CUSTOMER_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setCustomerId(String customerId) {
+  public void setCustomerId(@javax.annotation.Nonnull String customerId) {
     this.customerId = customerId;
   }
 
-
-  public PaymentMethodCollectLinkResponse expiry(OffsetDateTime expiry) {
+  public PaymentMethodCollectLinkResponse expiry(@javax.annotation.Nonnull OffsetDateTime expiry) {
     
     this.expiry = expiry;
     return this;
   }
 
-   /**
+  /**
    * Time when this link will be expired in ISO8601 format
    * @return expiry
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_EXPIRY)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -255,21 +260,20 @@ public class PaymentMethodCollectLinkResponse {
 
   @JsonProperty(JSON_PROPERTY_EXPIRY)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setExpiry(OffsetDateTime expiry) {
+  public void setExpiry(@javax.annotation.Nonnull OffsetDateTime expiry) {
     this.expiry = expiry;
   }
 
-
-  public PaymentMethodCollectLinkResponse link(String link) {
+  public PaymentMethodCollectLinkResponse link(@javax.annotation.Nonnull String link) {
     
     this.link = link;
     return this;
   }
 
-   /**
+  /**
    * URL to the form&#39;s link generated for collecting payment method details.
    * @return link
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_LINK)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -281,21 +285,20 @@ public class PaymentMethodCollectLinkResponse {
 
   @JsonProperty(JSON_PROPERTY_LINK)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setLink(String link) {
+  public void setLink(@javax.annotation.Nonnull String link) {
     this.link = link;
   }
 
-
-  public PaymentMethodCollectLinkResponse returnUrl(String returnUrl) {
+  public PaymentMethodCollectLinkResponse returnUrl(@javax.annotation.Nullable String returnUrl) {
     this.returnUrl = JsonNullable.<String>of(returnUrl);
     
     return this;
   }
 
-   /**
+  /**
    * Redirect to this URL post completion
    * @return returnUrl
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -315,12 +318,11 @@ public class PaymentMethodCollectLinkResponse {
     this.returnUrl = returnUrl;
   }
 
-  public void setReturnUrl(String returnUrl) {
+  public void setReturnUrl(@javax.annotation.Nullable String returnUrl) {
     this.returnUrl = JsonNullable.<String>of(returnUrl);
   }
 
-
-  public PaymentMethodCollectLinkResponse enabledPaymentMethods(List<EnabledPaymentMethod> enabledPaymentMethods) {
+  public PaymentMethodCollectLinkResponse enabledPaymentMethods(@javax.annotation.Nullable List<EnabledPaymentMethod> enabledPaymentMethods) {
     this.enabledPaymentMethods = JsonNullable.<List<EnabledPaymentMethod>>of(enabledPaymentMethods);
     
     return this;
@@ -338,10 +340,10 @@ public class PaymentMethodCollectLinkResponse {
     return this;
   }
 
-   /**
+  /**
    * List of payment methods shown on collect UI
    * @return enabledPaymentMethods
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -361,7 +363,7 @@ public class PaymentMethodCollectLinkResponse {
     this.enabledPaymentMethods = enabledPaymentMethods;
   }
 
-  public void setEnabledPaymentMethods(List<EnabledPaymentMethod> enabledPaymentMethods) {
+  public void setEnabledPaymentMethods(@javax.annotation.Nullable List<EnabledPaymentMethod> enabledPaymentMethods) {
     this.enabledPaymentMethods = JsonNullable.<List<EnabledPaymentMethod>>of(enabledPaymentMethods);
   }
 

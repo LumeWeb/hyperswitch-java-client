@@ -34,24 +34,25 @@ import java.util.StringJoiner;
   BankTransferInstructionsOneOf4.JSON_PROPERTY_MULTIBANCO
 })
 @JsonTypeName("BankTransferInstructions_oneOf_4")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class BankTransferInstructionsOneOf4 {
   public static final String JSON_PROPERTY_MULTIBANCO = "multibanco";
+  @javax.annotation.Nonnull
   private MultibancoTransferInstructions multibanco;
 
   public BankTransferInstructionsOneOf4() {
   }
 
-  public BankTransferInstructionsOneOf4 multibanco(MultibancoTransferInstructions multibanco) {
+  public BankTransferInstructionsOneOf4 multibanco(@javax.annotation.Nonnull MultibancoTransferInstructions multibanco) {
     
     this.multibanco = multibanco;
     return this;
   }
 
-   /**
+  /**
    * Get multibanco
    * @return multibanco
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_MULTIBANCO)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -63,7 +64,7 @@ public class BankTransferInstructionsOneOf4 {
 
   @JsonProperty(JSON_PROPERTY_MULTIBANCO)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setMultibanco(MultibancoTransferInstructions multibanco) {
+  public void setMultibanco(@javax.annotation.Nonnull MultibancoTransferInstructions multibanco) {
     this.multibanco = multibanco;
   }
 

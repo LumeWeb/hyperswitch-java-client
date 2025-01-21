@@ -25,22 +25,21 @@ import org.openapitools.jackson.nullable.JsonNullable;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.openapitools.jackson.nullable.JsonNullable;
 import java.util.NoSuchElementException;
-import org.junit.Assert;
-import org.junit.Ignore;
-import org.junit.Test;
-
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Test;
 
 /**
  * Model tests for RefundRequest
  */
-public class RefundRequestTest {
+class RefundRequestTest {
     private final RefundRequest model = new RefundRequest();
 
     /**
      * Model tests for RefundRequest
      */
     @Test
-    public void testRefundRequest() {
+    void testRefundRequest() {
         // TODO: test RefundRequest
     }
 
@@ -48,7 +47,7 @@ public class RefundRequestTest {
      * Test the property 'paymentId'
      */
     @Test
-    public void paymentIdTest() {
+    void paymentIdTest() {
         // TODO: test paymentId
     }
 
@@ -56,7 +55,7 @@ public class RefundRequestTest {
      * Test the property 'refundId'
      */
     @Test
-    public void refundIdTest() {
+    void refundIdTest() {
         // TODO: test refundId
     }
 
@@ -64,7 +63,7 @@ public class RefundRequestTest {
      * Test the property 'merchantId'
      */
     @Test
-    public void merchantIdTest() {
+    void merchantIdTest() {
         // TODO: test merchantId
     }
 
@@ -72,7 +71,7 @@ public class RefundRequestTest {
      * Test the property 'amount'
      */
     @Test
-    public void amountTest() {
+    void amountTest() {
         // TODO: test amount
     }
 
@@ -80,7 +79,7 @@ public class RefundRequestTest {
      * Test the property 'reason'
      */
     @Test
-    public void reasonTest() {
+    void reasonTest() {
         // TODO: test reason
     }
 
@@ -88,7 +87,7 @@ public class RefundRequestTest {
      * Test the property 'refundType'
      */
     @Test
-    public void refundTypeTest() {
+    void refundTypeTest() {
         // TODO: test refundType
     }
 
@@ -96,7 +95,7 @@ public class RefundRequestTest {
      * Test the property 'metadata'
      */
     @Test
-    public void metadataTest() {
+    void metadataTest() {
         // TODO: test metadata
     }
 
@@ -104,7 +103,7 @@ public class RefundRequestTest {
      * Test the property 'merchantConnectorDetails'
      */
     @Test
-    public void merchantConnectorDetailsTest() {
+    void merchantConnectorDetailsTest() {
         // TODO: test merchantConnectorDetails
     }
 
@@ -112,7 +111,7 @@ public class RefundRequestTest {
      * Test the property 'charges'
      */
     @Test
-    public void chargesTest() {
+    void chargesTest() {
         // TODO: test charges
     }
 

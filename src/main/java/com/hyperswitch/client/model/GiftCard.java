@@ -33,24 +33,25 @@ import java.util.StringJoiner;
 @JsonPropertyOrder({
   GiftCard.JSON_PROPERTY_GIFT_CARD
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class GiftCard {
   public static final String JSON_PROPERTY_GIFT_CARD = "gift_card";
+  @javax.annotation.Nonnull
   private GiftCardData giftCard;
 
   public GiftCard() {
   }
 
-  public GiftCard giftCard(GiftCardData giftCard) {
+  public GiftCard giftCard(@javax.annotation.Nonnull GiftCardData giftCard) {
     
     this.giftCard = giftCard;
     return this;
   }
 
-   /**
+  /**
    * Get giftCard
    * @return giftCard
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_GIFT_CARD)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -62,7 +63,7 @@ public class GiftCard {
 
   @JsonProperty(JSON_PROPERTY_GIFT_CARD)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setGiftCard(GiftCardData giftCard) {
+  public void setGiftCard(@javax.annotation.Nonnull GiftCardData giftCard) {
     this.giftCard = giftCard;
   }
 

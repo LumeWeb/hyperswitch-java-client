@@ -33,24 +33,25 @@ import java.util.StringJoiner;
   WalletDataOneOf20.JSON_PROPERTY_TWINT_REDIRECT
 })
 @JsonTypeName("WalletData_oneOf_20")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class WalletDataOneOf20 {
   public static final String JSON_PROPERTY_TWINT_REDIRECT = "twint_redirect";
+  @javax.annotation.Nonnull
   private Object twintRedirect;
 
   public WalletDataOneOf20() {
   }
 
-  public WalletDataOneOf20 twintRedirect(Object twintRedirect) {
+  public WalletDataOneOf20 twintRedirect(@javax.annotation.Nonnull Object twintRedirect) {
     
     this.twintRedirect = twintRedirect;
     return this;
   }
 
-   /**
+  /**
    * Wallet data for Twint Redirection
    * @return twintRedirect
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_TWINT_REDIRECT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -62,7 +63,7 @@ public class WalletDataOneOf20 {
 
   @JsonProperty(JSON_PROPERTY_TWINT_REDIRECT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setTwintRedirect(Object twintRedirect) {
+  public void setTwintRedirect(@javax.annotation.Nonnull Object twintRedirect) {
     this.twintRedirect = twintRedirect;
   }
 

@@ -38,30 +38,33 @@ import java.util.StringJoiner;
   SamsungPayTokenData.JSON_PROPERTY_VERSION,
   SamsungPayTokenData.JSON_PROPERTY_DATA
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class SamsungPayTokenData {
   public static final String JSON_PROPERTY_TYPE = "type";
+  @javax.annotation.Nullable
   private JsonNullable<String> type = JsonNullable.<String>undefined();
 
   public static final String JSON_PROPERTY_VERSION = "version";
+  @javax.annotation.Nonnull
   private String version;
 
   public static final String JSON_PROPERTY_DATA = "data";
+  @javax.annotation.Nonnull
   private String data;
 
   public SamsungPayTokenData() {
   }
 
-  public SamsungPayTokenData type(String type) {
+  public SamsungPayTokenData type(@javax.annotation.Nullable String type) {
     this.type = JsonNullable.<String>of(type);
     
     return this;
   }
 
-   /**
+  /**
    * 3DS type used by Samsung Pay
    * @return type
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -81,21 +84,20 @@ public class SamsungPayTokenData {
     this.type = type;
   }
 
-  public void setType(String type) {
+  public void setType(@javax.annotation.Nullable String type) {
     this.type = JsonNullable.<String>of(type);
   }
 
-
-  public SamsungPayTokenData version(String version) {
+  public SamsungPayTokenData version(@javax.annotation.Nonnull String version) {
     
     this.version = version;
     return this;
   }
 
-   /**
+  /**
    * 3DS version used by Samsung Pay
    * @return version
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_VERSION)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -107,21 +109,20 @@ public class SamsungPayTokenData {
 
   @JsonProperty(JSON_PROPERTY_VERSION)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setVersion(String version) {
+  public void setVersion(@javax.annotation.Nonnull String version) {
     this.version = version;
   }
 
-
-  public SamsungPayTokenData data(String data) {
+  public SamsungPayTokenData data(@javax.annotation.Nonnull String data) {
     
     this.data = data;
     return this;
   }
 
-   /**
+  /**
    * Samsung Pay encrypted payment credential data
    * @return data
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_DATA)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -133,7 +134,7 @@ public class SamsungPayTokenData {
 
   @JsonProperty(JSON_PROPERTY_DATA)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setData(String data) {
+  public void setData(@javax.annotation.Nonnull String data) {
     this.data = data;
   }
 

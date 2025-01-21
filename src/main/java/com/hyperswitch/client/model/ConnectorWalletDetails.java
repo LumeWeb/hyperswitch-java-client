@@ -39,33 +39,37 @@ import java.util.StringJoiner;
   ConnectorWalletDetails.JSON_PROPERTY_SAMSUNG_PAY,
   ConnectorWalletDetails.JSON_PROPERTY_PAZE
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class ConnectorWalletDetails {
   public static final String JSON_PROPERTY_APPLE_PAY_COMBINED = "apple_pay_combined";
+  @javax.annotation.Nullable
   private JsonNullable<Object> applePayCombined = JsonNullable.<Object>undefined();
 
   public static final String JSON_PROPERTY_APPLE_PAY = "apple_pay";
+  @javax.annotation.Nullable
   private JsonNullable<Object> applePay = JsonNullable.<Object>undefined();
 
   public static final String JSON_PROPERTY_SAMSUNG_PAY = "samsung_pay";
+  @javax.annotation.Nullable
   private JsonNullable<Object> samsungPay = JsonNullable.<Object>undefined();
 
   public static final String JSON_PROPERTY_PAZE = "paze";
+  @javax.annotation.Nullable
   private JsonNullable<Object> paze = JsonNullable.<Object>undefined();
 
   public ConnectorWalletDetails() {
   }
 
-  public ConnectorWalletDetails applePayCombined(Object applePayCombined) {
+  public ConnectorWalletDetails applePayCombined(@javax.annotation.Nullable Object applePayCombined) {
     this.applePayCombined = JsonNullable.<Object>of(applePayCombined);
     
     return this;
   }
 
-   /**
+  /**
    * This field contains the Apple Pay certificates and credentials for iOS and Web Apple Pay flow
    * @return applePayCombined
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -85,21 +89,20 @@ public class ConnectorWalletDetails {
     this.applePayCombined = applePayCombined;
   }
 
-  public void setApplePayCombined(Object applePayCombined) {
+  public void setApplePayCombined(@javax.annotation.Nullable Object applePayCombined) {
     this.applePayCombined = JsonNullable.<Object>of(applePayCombined);
   }
 
-
-  public ConnectorWalletDetails applePay(Object applePay) {
+  public ConnectorWalletDetails applePay(@javax.annotation.Nullable Object applePay) {
     this.applePay = JsonNullable.<Object>of(applePay);
     
     return this;
   }
 
-   /**
+  /**
    * This field is for our legacy Apple Pay flow that contains the Apple Pay certificates and credentials for only iOS Apple Pay flow
    * @return applePay
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -119,21 +122,20 @@ public class ConnectorWalletDetails {
     this.applePay = applePay;
   }
 
-  public void setApplePay(Object applePay) {
+  public void setApplePay(@javax.annotation.Nullable Object applePay) {
     this.applePay = JsonNullable.<Object>of(applePay);
   }
 
-
-  public ConnectorWalletDetails samsungPay(Object samsungPay) {
+  public ConnectorWalletDetails samsungPay(@javax.annotation.Nullable Object samsungPay) {
     this.samsungPay = JsonNullable.<Object>of(samsungPay);
     
     return this;
   }
 
-   /**
+  /**
    * This field contains the Samsung Pay certificates and credentials
    * @return samsungPay
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -153,21 +155,20 @@ public class ConnectorWalletDetails {
     this.samsungPay = samsungPay;
   }
 
-  public void setSamsungPay(Object samsungPay) {
+  public void setSamsungPay(@javax.annotation.Nullable Object samsungPay) {
     this.samsungPay = JsonNullable.<Object>of(samsungPay);
   }
 
-
-  public ConnectorWalletDetails paze(Object paze) {
+  public ConnectorWalletDetails paze(@javax.annotation.Nullable Object paze) {
     this.paze = JsonNullable.<Object>of(paze);
     
     return this;
   }
 
-   /**
+  /**
    * This field contains the Paze certificates and credentials
    * @return paze
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -187,7 +188,7 @@ public class ConnectorWalletDetails {
     this.paze = paze;
   }
 
-  public void setPaze(Object paze) {
+  public void setPaze(@javax.annotation.Nullable Object paze) {
     this.paze = JsonNullable.<Object>of(paze);
   }
 

@@ -40,30 +40,33 @@ import java.util.StringJoiner;
   PayoutMethodData.JSON_PROPERTY_BANK,
   PayoutMethodData.JSON_PROPERTY_WALLET
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class PayoutMethodData {
   public static final String JSON_PROPERTY_CARD = "card";
+  @javax.annotation.Nonnull
   private CardPayout card;
 
   public static final String JSON_PROPERTY_BANK = "bank";
+  @javax.annotation.Nonnull
   private Bank bank;
 
   public static final String JSON_PROPERTY_WALLET = "wallet";
+  @javax.annotation.Nonnull
   private Wallet wallet;
 
   public PayoutMethodData() {
   }
 
-  public PayoutMethodData card(CardPayout card) {
+  public PayoutMethodData card(@javax.annotation.Nonnull CardPayout card) {
     
     this.card = card;
     return this;
   }
 
-   /**
+  /**
    * Get card
    * @return card
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_CARD)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -75,21 +78,20 @@ public class PayoutMethodData {
 
   @JsonProperty(JSON_PROPERTY_CARD)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setCard(CardPayout card) {
+  public void setCard(@javax.annotation.Nonnull CardPayout card) {
     this.card = card;
   }
 
-
-  public PayoutMethodData bank(Bank bank) {
+  public PayoutMethodData bank(@javax.annotation.Nonnull Bank bank) {
     
     this.bank = bank;
     return this;
   }
 
-   /**
+  /**
    * Get bank
    * @return bank
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_BANK)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -101,21 +103,20 @@ public class PayoutMethodData {
 
   @JsonProperty(JSON_PROPERTY_BANK)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setBank(Bank bank) {
+  public void setBank(@javax.annotation.Nonnull Bank bank) {
     this.bank = bank;
   }
 
-
-  public PayoutMethodData wallet(Wallet wallet) {
+  public PayoutMethodData wallet(@javax.annotation.Nonnull Wallet wallet) {
     
     this.wallet = wallet;
     return this;
   }
 
-   /**
+  /**
    * Get wallet
    * @return wallet
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_WALLET)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -127,7 +128,7 @@ public class PayoutMethodData {
 
   @JsonProperty(JSON_PROPERTY_WALLET)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setWallet(Wallet wallet) {
+  public void setWallet(@javax.annotation.Nonnull Wallet wallet) {
     this.wallet = wallet;
   }
 

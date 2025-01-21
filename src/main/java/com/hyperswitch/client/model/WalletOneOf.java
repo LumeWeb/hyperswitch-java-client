@@ -34,24 +34,25 @@ import java.util.StringJoiner;
   WalletOneOf.JSON_PROPERTY_PAYPAL
 })
 @JsonTypeName("Wallet_oneOf")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class WalletOneOf {
   public static final String JSON_PROPERTY_PAYPAL = "paypal";
+  @javax.annotation.Nonnull
   private Paypal paypal;
 
   public WalletOneOf() {
   }
 
-  public WalletOneOf paypal(Paypal paypal) {
+  public WalletOneOf paypal(@javax.annotation.Nonnull Paypal paypal) {
     
     this.paypal = paypal;
     return this;
   }
 
-   /**
+  /**
    * Get paypal
    * @return paypal
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_PAYPAL)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -63,7 +64,7 @@ public class WalletOneOf {
 
   @JsonProperty(JSON_PROPERTY_PAYPAL)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setPaypal(Paypal paypal) {
+  public void setPaypal(@javax.annotation.Nonnull Paypal paypal) {
     this.paypal = paypal;
   }
 

@@ -34,30 +34,33 @@ import java.util.StringJoiner;
   BacsBankTransferInstructions.JSON_PROPERTY_ACCOUNT_NUMBER,
   BacsBankTransferInstructions.JSON_PROPERTY_SORT_CODE
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class BacsBankTransferInstructions {
   public static final String JSON_PROPERTY_ACCOUNT_HOLDER_NAME = "account_holder_name";
+  @javax.annotation.Nonnull
   private String accountHolderName;
 
   public static final String JSON_PROPERTY_ACCOUNT_NUMBER = "account_number";
+  @javax.annotation.Nonnull
   private String accountNumber;
 
   public static final String JSON_PROPERTY_SORT_CODE = "sort_code";
+  @javax.annotation.Nonnull
   private String sortCode;
 
   public BacsBankTransferInstructions() {
   }
 
-  public BacsBankTransferInstructions accountHolderName(String accountHolderName) {
+  public BacsBankTransferInstructions accountHolderName(@javax.annotation.Nonnull String accountHolderName) {
     
     this.accountHolderName = accountHolderName;
     return this;
   }
 
-   /**
+  /**
    * Get accountHolderName
    * @return accountHolderName
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_ACCOUNT_HOLDER_NAME)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -69,21 +72,20 @@ public class BacsBankTransferInstructions {
 
   @JsonProperty(JSON_PROPERTY_ACCOUNT_HOLDER_NAME)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setAccountHolderName(String accountHolderName) {
+  public void setAccountHolderName(@javax.annotation.Nonnull String accountHolderName) {
     this.accountHolderName = accountHolderName;
   }
 
-
-  public BacsBankTransferInstructions accountNumber(String accountNumber) {
+  public BacsBankTransferInstructions accountNumber(@javax.annotation.Nonnull String accountNumber) {
     
     this.accountNumber = accountNumber;
     return this;
   }
 
-   /**
+  /**
    * Get accountNumber
    * @return accountNumber
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_ACCOUNT_NUMBER)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -95,21 +97,20 @@ public class BacsBankTransferInstructions {
 
   @JsonProperty(JSON_PROPERTY_ACCOUNT_NUMBER)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setAccountNumber(String accountNumber) {
+  public void setAccountNumber(@javax.annotation.Nonnull String accountNumber) {
     this.accountNumber = accountNumber;
   }
 
-
-  public BacsBankTransferInstructions sortCode(String sortCode) {
+  public BacsBankTransferInstructions sortCode(@javax.annotation.Nonnull String sortCode) {
     
     this.sortCode = sortCode;
     return this;
   }
 
-   /**
+  /**
    * Get sortCode
    * @return sortCode
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_SORT_CODE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -121,7 +122,7 @@ public class BacsBankTransferInstructions {
 
   @JsonProperty(JSON_PROPERTY_SORT_CODE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setSortCode(String sortCode) {
+  public void setSortCode(@javax.annotation.Nonnull String sortCode) {
     this.sortCode = sortCode;
   }
 

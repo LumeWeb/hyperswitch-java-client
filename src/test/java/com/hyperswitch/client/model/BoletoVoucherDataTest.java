@@ -22,22 +22,21 @@ import org.openapitools.jackson.nullable.JsonNullable;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.openapitools.jackson.nullable.JsonNullable;
 import java.util.NoSuchElementException;
-import org.junit.Assert;
-import org.junit.Ignore;
-import org.junit.Test;
-
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Test;
 
 /**
  * Model tests for BoletoVoucherData
  */
-public class BoletoVoucherDataTest {
+class BoletoVoucherDataTest {
     private final BoletoVoucherData model = new BoletoVoucherData();
 
     /**
      * Model tests for BoletoVoucherData
      */
     @Test
-    public void testBoletoVoucherData() {
+    void testBoletoVoucherData() {
         // TODO: test BoletoVoucherData
     }
 
@@ -45,7 +44,7 @@ public class BoletoVoucherDataTest {
      * Test the property 'socialSecurityNumber'
      */
     @Test
-    public void socialSecurityNumberTest() {
+    void socialSecurityNumberTest() {
         // TODO: test socialSecurityNumber
     }
 

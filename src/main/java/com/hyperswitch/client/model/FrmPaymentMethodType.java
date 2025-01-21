@@ -39,33 +39,37 @@ import java.util.StringJoiner;
   FrmPaymentMethodType.JSON_PROPERTY_FLOW,
   FrmPaymentMethodType.JSON_PROPERTY_ACTION
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class FrmPaymentMethodType {
   public static final String JSON_PROPERTY_PAYMENT_METHOD_TYPE = "payment_method_type";
+  @javax.annotation.Nonnull
   private PaymentMethodType paymentMethodType;
 
   public static final String JSON_PROPERTY_CARD_NETWORKS = "card_networks";
+  @javax.annotation.Nonnull
   private CardNetwork cardNetworks;
 
   public static final String JSON_PROPERTY_FLOW = "flow";
+  @javax.annotation.Nonnull
   private FrmPreferredFlowTypes flow;
 
   public static final String JSON_PROPERTY_ACTION = "action";
+  @javax.annotation.Nonnull
   private FrmAction action;
 
   public FrmPaymentMethodType() {
   }
 
-  public FrmPaymentMethodType paymentMethodType(PaymentMethodType paymentMethodType) {
+  public FrmPaymentMethodType paymentMethodType(@javax.annotation.Nonnull PaymentMethodType paymentMethodType) {
     
     this.paymentMethodType = paymentMethodType;
     return this;
   }
 
-   /**
+  /**
    * Get paymentMethodType
    * @return paymentMethodType
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_PAYMENT_METHOD_TYPE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -77,21 +81,20 @@ public class FrmPaymentMethodType {
 
   @JsonProperty(JSON_PROPERTY_PAYMENT_METHOD_TYPE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setPaymentMethodType(PaymentMethodType paymentMethodType) {
+  public void setPaymentMethodType(@javax.annotation.Nonnull PaymentMethodType paymentMethodType) {
     this.paymentMethodType = paymentMethodType;
   }
 
-
-  public FrmPaymentMethodType cardNetworks(CardNetwork cardNetworks) {
+  public FrmPaymentMethodType cardNetworks(@javax.annotation.Nonnull CardNetwork cardNetworks) {
     
     this.cardNetworks = cardNetworks;
     return this;
   }
 
-   /**
+  /**
    * Get cardNetworks
    * @return cardNetworks
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_CARD_NETWORKS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -103,21 +106,20 @@ public class FrmPaymentMethodType {
 
   @JsonProperty(JSON_PROPERTY_CARD_NETWORKS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setCardNetworks(CardNetwork cardNetworks) {
+  public void setCardNetworks(@javax.annotation.Nonnull CardNetwork cardNetworks) {
     this.cardNetworks = cardNetworks;
   }
 
-
-  public FrmPaymentMethodType flow(FrmPreferredFlowTypes flow) {
+  public FrmPaymentMethodType flow(@javax.annotation.Nonnull FrmPreferredFlowTypes flow) {
     
     this.flow = flow;
     return this;
   }
 
-   /**
+  /**
    * Get flow
    * @return flow
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_FLOW)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -129,21 +131,20 @@ public class FrmPaymentMethodType {
 
   @JsonProperty(JSON_PROPERTY_FLOW)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setFlow(FrmPreferredFlowTypes flow) {
+  public void setFlow(@javax.annotation.Nonnull FrmPreferredFlowTypes flow) {
     this.flow = flow;
   }
 
-
-  public FrmPaymentMethodType action(FrmAction action) {
+  public FrmPaymentMethodType action(@javax.annotation.Nonnull FrmAction action) {
     
     this.action = action;
     return this;
   }
 
-   /**
+  /**
    * Get action
    * @return action
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_ACTION)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -155,7 +156,7 @@ public class FrmPaymentMethodType {
 
   @JsonProperty(JSON_PROPERTY_ACTION)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setAction(FrmAction action) {
+  public void setAction(@javax.annotation.Nonnull FrmAction action) {
     this.action = action;
   }
 

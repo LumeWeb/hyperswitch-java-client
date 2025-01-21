@@ -35,30 +35,33 @@ import java.util.StringJoiner;
   GooglePayThirdPartySdk.JSON_PROPERTY_CONNECTOR,
   GooglePayThirdPartySdk.JSON_PROPERTY_SDK_NEXT_ACTION
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class GooglePayThirdPartySdk {
   public static final String JSON_PROPERTY_DELAYED_SESSION_TOKEN = "delayed_session_token";
+  @javax.annotation.Nonnull
   private Boolean delayedSessionToken;
 
   public static final String JSON_PROPERTY_CONNECTOR = "connector";
+  @javax.annotation.Nonnull
   private String connector;
 
   public static final String JSON_PROPERTY_SDK_NEXT_ACTION = "sdk_next_action";
+  @javax.annotation.Nonnull
   private SdkNextAction sdkNextAction;
 
   public GooglePayThirdPartySdk() {
   }
 
-  public GooglePayThirdPartySdk delayedSessionToken(Boolean delayedSessionToken) {
+  public GooglePayThirdPartySdk delayedSessionToken(@javax.annotation.Nonnull Boolean delayedSessionToken) {
     
     this.delayedSessionToken = delayedSessionToken;
     return this;
   }
 
-   /**
+  /**
    * Identifier for the delayed session response
    * @return delayedSessionToken
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_DELAYED_SESSION_TOKEN)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -70,21 +73,20 @@ public class GooglePayThirdPartySdk {
 
   @JsonProperty(JSON_PROPERTY_DELAYED_SESSION_TOKEN)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setDelayedSessionToken(Boolean delayedSessionToken) {
+  public void setDelayedSessionToken(@javax.annotation.Nonnull Boolean delayedSessionToken) {
     this.delayedSessionToken = delayedSessionToken;
   }
 
-
-  public GooglePayThirdPartySdk connector(String connector) {
+  public GooglePayThirdPartySdk connector(@javax.annotation.Nonnull String connector) {
     
     this.connector = connector;
     return this;
   }
 
-   /**
+  /**
    * The name of the connector
    * @return connector
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_CONNECTOR)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -96,21 +98,20 @@ public class GooglePayThirdPartySdk {
 
   @JsonProperty(JSON_PROPERTY_CONNECTOR)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setConnector(String connector) {
+  public void setConnector(@javax.annotation.Nonnull String connector) {
     this.connector = connector;
   }
 
-
-  public GooglePayThirdPartySdk sdkNextAction(SdkNextAction sdkNextAction) {
+  public GooglePayThirdPartySdk sdkNextAction(@javax.annotation.Nonnull SdkNextAction sdkNextAction) {
     
     this.sdkNextAction = sdkNextAction;
     return this;
   }
 
-   /**
+  /**
    * Get sdkNextAction
    * @return sdkNextAction
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_SDK_NEXT_ACTION)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -122,7 +123,7 @@ public class GooglePayThirdPartySdk {
 
   @JsonProperty(JSON_PROPERTY_SDK_NEXT_ACTION)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setSdkNextAction(SdkNextAction sdkNextAction) {
+  public void setSdkNextAction(@javax.annotation.Nonnull SdkNextAction sdkNextAction) {
     this.sdkNextAction = sdkNextAction;
   }
 

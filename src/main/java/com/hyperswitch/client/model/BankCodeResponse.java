@@ -22,6 +22,7 @@ import com.fasterxml.jackson.annotation.JsonTypeName;
 import com.fasterxml.jackson.annotation.JsonValue;
 import com.hyperswitch.client.model.BankNames;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 import com.fasterxml.jackson.annotation.JsonTypeName;
@@ -36,18 +37,20 @@ import java.util.StringJoiner;
   BankCodeResponse.JSON_PROPERTY_BANK_NAME,
   BankCodeResponse.JSON_PROPERTY_ELIGIBLE_CONNECTORS
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class BankCodeResponse {
   public static final String JSON_PROPERTY_BANK_NAME = "bank_name";
+  @javax.annotation.Nonnull
   private List<BankNames> bankName = new ArrayList<>();
 
   public static final String JSON_PROPERTY_ELIGIBLE_CONNECTORS = "eligible_connectors";
+  @javax.annotation.Nonnull
   private List<String> eligibleConnectors = new ArrayList<>();
 
   public BankCodeResponse() {
   }
 
-  public BankCodeResponse bankName(List<BankNames> bankName) {
+  public BankCodeResponse bankName(@javax.annotation.Nonnull List<BankNames> bankName) {
     
     this.bankName = bankName;
     return this;
@@ -61,10 +64,10 @@ public class BankCodeResponse {
     return this;
   }
 
-   /**
+  /**
    * Get bankName
    * @return bankName
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_BANK_NAME)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -76,12 +79,11 @@ public class BankCodeResponse {
 
   @JsonProperty(JSON_PROPERTY_BANK_NAME)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setBankName(List<BankNames> bankName) {
+  public void setBankName(@javax.annotation.Nonnull List<BankNames> bankName) {
     this.bankName = bankName;
   }
 
-
-  public BankCodeResponse eligibleConnectors(List<String> eligibleConnectors) {
+  public BankCodeResponse eligibleConnectors(@javax.annotation.Nonnull List<String> eligibleConnectors) {
     
     this.eligibleConnectors = eligibleConnectors;
     return this;
@@ -95,10 +97,10 @@ public class BankCodeResponse {
     return this;
   }
 
-   /**
+  /**
    * Get eligibleConnectors
    * @return eligibleConnectors
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_ELIGIBLE_CONNECTORS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -110,7 +112,7 @@ public class BankCodeResponse {
 
   @JsonProperty(JSON_PROPERTY_ELIGIBLE_CONNECTORS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setEligibleConnectors(List<String> eligibleConnectors) {
+  public void setEligibleConnectors(@javax.annotation.Nonnull List<String> eligibleConnectors) {
     this.eligibleConnectors = eligibleConnectors;
   }
 

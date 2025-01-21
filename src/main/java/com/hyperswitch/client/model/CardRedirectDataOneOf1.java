@@ -33,24 +33,25 @@ import java.util.StringJoiner;
   CardRedirectDataOneOf1.JSON_PROPERTY_BENEFIT
 })
 @JsonTypeName("CardRedirectData_oneOf_1")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class CardRedirectDataOneOf1 {
   public static final String JSON_PROPERTY_BENEFIT = "benefit";
+  @javax.annotation.Nonnull
   private Object benefit;
 
   public CardRedirectDataOneOf1() {
   }
 
-  public CardRedirectDataOneOf1 benefit(Object benefit) {
+  public CardRedirectDataOneOf1 benefit(@javax.annotation.Nonnull Object benefit) {
     
     this.benefit = benefit;
     return this;
   }
 
-   /**
+  /**
    * Get benefit
    * @return benefit
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_BENEFIT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -62,7 +63,7 @@ public class CardRedirectDataOneOf1 {
 
   @JsonProperty(JSON_PROPERTY_BENEFIT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setBenefit(Object benefit) {
+  public void setBenefit(@javax.annotation.Nonnull Object benefit) {
     this.benefit = benefit;
   }
 

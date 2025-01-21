@@ -52,6 +52,7 @@ import com.hyperswitch.client.model.RefundResponse;
 import com.hyperswitch.client.model.RequestSurchargeDetails;
 import java.time.OffsetDateTime;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import org.openapitools.jackson.nullable.JsonNullable;
 import com.fasterxml.jackson.annotation.JsonIgnore;
@@ -149,264 +150,345 @@ import java.util.StringJoiner;
   PaymentsResponse.JSON_PROPERTY_ORDER_TAX_AMOUNT,
   PaymentsResponse.JSON_PROPERTY_CONNECTOR_MANDATE_ID
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class PaymentsResponse {
   public static final String JSON_PROPERTY_PAYMENT_ID = "payment_id";
+  @javax.annotation.Nonnull
   private String paymentId;
 
   public static final String JSON_PROPERTY_MERCHANT_ID = "merchant_id";
+  @javax.annotation.Nonnull
   private String merchantId;
 
   public static final String JSON_PROPERTY_STATUS = "status";
+  @javax.annotation.Nonnull
   private IntentStatus status = IntentStatus.REQUIRES_CONFIRMATION;
 
   public static final String JSON_PROPERTY_AMOUNT = "amount";
+  @javax.annotation.Nonnull
   private Long amount;
 
   public static final String JSON_PROPERTY_NET_AMOUNT = "net_amount";
+  @javax.annotation.Nonnull
   private Long netAmount;
 
   public static final String JSON_PROPERTY_SHIPPING_COST = "shipping_cost";
+  @javax.annotation.Nullable
   private JsonNullable<Long> shippingCost = JsonNullable.<Long>undefined();
 
   public static final String JSON_PROPERTY_AMOUNT_CAPTURABLE = "amount_capturable";
+  @javax.annotation.Nonnull
   private Long amountCapturable;
 
   public static final String JSON_PROPERTY_AMOUNT_RECEIVED = "amount_received";
+  @javax.annotation.Nullable
   private JsonNullable<Long> amountReceived = JsonNullable.<Long>undefined();
 
   public static final String JSON_PROPERTY_CONNECTOR = "connector";
+  @javax.annotation.Nullable
   private JsonNullable<String> connector = JsonNullable.<String>undefined();
 
   public static final String JSON_PROPERTY_CLIENT_SECRET = "client_secret";
+  @javax.annotation.Nullable
   private JsonNullable<String> clientSecret = JsonNullable.<String>undefined();
 
   public static final String JSON_PROPERTY_CREATED = "created";
+  @javax.annotation.Nullable
   private JsonNullable<OffsetDateTime> created = JsonNullable.<OffsetDateTime>undefined();
 
   public static final String JSON_PROPERTY_CURRENCY = "currency";
+  @javax.annotation.Nonnull
   private Currency currency;
 
   public static final String JSON_PROPERTY_CUSTOMER_ID = "customer_id";
+  @javax.annotation.Nullable
   private JsonNullable<String> customerId = JsonNullable.<String>undefined();
 
   public static final String JSON_PROPERTY_CUSTOMER = "customer";
+  @javax.annotation.Nullable
   private JsonNullable<CustomerDetailsResponse> customer = JsonNullable.<CustomerDetailsResponse>undefined();
 
   public static final String JSON_PROPERTY_DESCRIPTION = "description";
+  @javax.annotation.Nullable
   private JsonNullable<String> description = JsonNullable.<String>undefined();
 
   public static final String JSON_PROPERTY_REFUNDS = "refunds";
+  @javax.annotation.Nullable
   private JsonNullable<List<RefundResponse>> refunds = JsonNullable.<List<RefundResponse>>undefined();
 
   public static final String JSON_PROPERTY_DISPUTES = "disputes";
+  @javax.annotation.Nullable
   private JsonNullable<List<DisputeResponsePaymentsRetrieve>> disputes = JsonNullable.<List<DisputeResponsePaymentsRetrieve>>undefined();
 
   public static final String JSON_PROPERTY_ATTEMPTS = "attempts";
+  @javax.annotation.Nullable
   private JsonNullable<List<PaymentAttemptResponse>> attempts = JsonNullable.<List<PaymentAttemptResponse>>undefined();
 
   public static final String JSON_PROPERTY_CAPTURES = "captures";
+  @javax.annotation.Nullable
   private JsonNullable<List<CaptureResponse>> captures = JsonNullable.<List<CaptureResponse>>undefined();
 
   public static final String JSON_PROPERTY_MANDATE_ID = "mandate_id";
+  @javax.annotation.Nullable
   private JsonNullable<String> mandateId = JsonNullable.<String>undefined();
 
   public static final String JSON_PROPERTY_MANDATE_DATA = "mandate_data";
+  @javax.annotation.Nullable
   private JsonNullable<MandateData> mandateData = JsonNullable.<MandateData>undefined();
 
   public static final String JSON_PROPERTY_SETUP_FUTURE_USAGE = "setup_future_usage";
+  @javax.annotation.Nullable
   private JsonNullable<FutureUsage> setupFutureUsage = JsonNullable.<FutureUsage>undefined();
 
   public static final String JSON_PROPERTY_OFF_SESSION = "off_session";
+  @javax.annotation.Nullable
   private JsonNullable<Boolean> offSession = JsonNullable.<Boolean>undefined();
 
   public static final String JSON_PROPERTY_CAPTURE_ON = "capture_on";
+  @javax.annotation.Nullable
   private JsonNullable<OffsetDateTime> captureOn = JsonNullable.<OffsetDateTime>undefined();
 
   public static final String JSON_PROPERTY_CAPTURE_METHOD = "capture_method";
+  @javax.annotation.Nullable
   private JsonNullable<CaptureMethod> captureMethod = JsonNullable.<CaptureMethod>undefined();
 
   public static final String JSON_PROPERTY_PAYMENT_METHOD = "payment_method";
+  @javax.annotation.Nonnull
   private PaymentMethod paymentMethod;
 
   public static final String JSON_PROPERTY_PAYMENT_METHOD_DATA = "payment_method_data";
+  @javax.annotation.Nullable
   private JsonNullable<PaymentMethodDataResponseWithBilling> paymentMethodData = JsonNullable.<PaymentMethodDataResponseWithBilling>undefined();
 
   public static final String JSON_PROPERTY_PAYMENT_TOKEN = "payment_token";
+  @javax.annotation.Nullable
   private JsonNullable<String> paymentToken = JsonNullable.<String>undefined();
 
   public static final String JSON_PROPERTY_SHIPPING = "shipping";
+  @javax.annotation.Nullable
   private JsonNullable<Address> shipping = JsonNullable.<Address>undefined();
 
   public static final String JSON_PROPERTY_BILLING = "billing";
+  @javax.annotation.Nullable
   private JsonNullable<Address> billing = JsonNullable.<Address>undefined();
 
   public static final String JSON_PROPERTY_ORDER_DETAILS = "order_details";
+  @javax.annotation.Nullable
   private JsonNullable<List<OrderDetailsWithAmount>> orderDetails = JsonNullable.<List<OrderDetailsWithAmount>>undefined();
 
   public static final String JSON_PROPERTY_EMAIL = "email";
+  @javax.annotation.Nullable
   private JsonNullable<String> email = JsonNullable.<String>undefined();
 
   public static final String JSON_PROPERTY_NAME = "name";
+  @javax.annotation.Nullable
   private JsonNullable<String> name = JsonNullable.<String>undefined();
 
   public static final String JSON_PROPERTY_PHONE = "phone";
+  @javax.annotation.Nullable
   private JsonNullable<String> phone = JsonNullable.<String>undefined();
 
   public static final String JSON_PROPERTY_RETURN_URL = "return_url";
+  @javax.annotation.Nullable
   private JsonNullable<String> returnUrl = JsonNullable.<String>undefined();
 
   public static final String JSON_PROPERTY_AUTHENTICATION_TYPE = "authentication_type";
+  @javax.annotation.Nullable
   private JsonNullable<AuthenticationType> authenticationType = JsonNullable.<AuthenticationType>of(AuthenticationType.THREE_DS);
 
   public static final String JSON_PROPERTY_STATEMENT_DESCRIPTOR_NAME = "statement_descriptor_name";
+  @javax.annotation.Nullable
   private JsonNullable<String> statementDescriptorName = JsonNullable.<String>undefined();
 
   public static final String JSON_PROPERTY_STATEMENT_DESCRIPTOR_SUFFIX = "statement_descriptor_suffix";
+  @javax.annotation.Nullable
   private JsonNullable<String> statementDescriptorSuffix = JsonNullable.<String>undefined();
 
   public static final String JSON_PROPERTY_NEXT_ACTION = "next_action";
+  @javax.annotation.Nullable
   private JsonNullable<NextActionData> nextAction = JsonNullable.<NextActionData>undefined();
 
   public static final String JSON_PROPERTY_CANCELLATION_REASON = "cancellation_reason";
+  @javax.annotation.Nullable
   private JsonNullable<String> cancellationReason = JsonNullable.<String>undefined();
 
   public static final String JSON_PROPERTY_ERROR_CODE = "error_code";
+  @javax.annotation.Nullable
   private JsonNullable<String> errorCode = JsonNullable.<String>undefined();
 
   public static final String JSON_PROPERTY_ERROR_MESSAGE = "error_message";
+  @javax.annotation.Nullable
   private JsonNullable<String> errorMessage = JsonNullable.<String>undefined();
 
   public static final String JSON_PROPERTY_UNIFIED_CODE = "unified_code";
+  @javax.annotation.Nullable
   private JsonNullable<String> unifiedCode = JsonNullable.<String>undefined();
 
   public static final String JSON_PROPERTY_UNIFIED_MESSAGE = "unified_message";
+  @javax.annotation.Nullable
   private JsonNullable<String> unifiedMessage = JsonNullable.<String>undefined();
 
   public static final String JSON_PROPERTY_PAYMENT_EXPERIENCE = "payment_experience";
+  @javax.annotation.Nullable
   private JsonNullable<PaymentExperience> paymentExperience = JsonNullable.<PaymentExperience>undefined();
 
   public static final String JSON_PROPERTY_PAYMENT_METHOD_TYPE = "payment_method_type";
+  @javax.annotation.Nullable
   private JsonNullable<PaymentMethodType> paymentMethodType = JsonNullable.<PaymentMethodType>undefined();
 
   public static final String JSON_PROPERTY_CONNECTOR_LABEL = "connector_label";
+  @javax.annotation.Nullable
   private JsonNullable<String> connectorLabel = JsonNullable.<String>undefined();
 
   public static final String JSON_PROPERTY_BUSINESS_COUNTRY = "business_country";
+  @javax.annotation.Nullable
   private JsonNullable<CountryAlpha2> businessCountry = JsonNullable.<CountryAlpha2>undefined();
 
   public static final String JSON_PROPERTY_BUSINESS_LABEL = "business_label";
+  @javax.annotation.Nullable
   private JsonNullable<String> businessLabel = JsonNullable.<String>undefined();
 
   public static final String JSON_PROPERTY_BUSINESS_SUB_LABEL = "business_sub_label";
+  @javax.annotation.Nullable
   private JsonNullable<String> businessSubLabel = JsonNullable.<String>undefined();
 
   public static final String JSON_PROPERTY_ALLOWED_PAYMENT_METHOD_TYPES = "allowed_payment_method_types";
+  @javax.annotation.Nullable
   private JsonNullable<List<PaymentMethodType>> allowedPaymentMethodTypes = JsonNullable.<List<PaymentMethodType>>undefined();
 
   public static final String JSON_PROPERTY_EPHEMERAL_KEY = "ephemeral_key";
+  @javax.annotation.Nullable
   private JsonNullable<EphemeralKeyCreateResponse> ephemeralKey = JsonNullable.<EphemeralKeyCreateResponse>undefined();
 
   public static final String JSON_PROPERTY_MANUAL_RETRY_ALLOWED = "manual_retry_allowed";
+  @javax.annotation.Nullable
   private JsonNullable<Boolean> manualRetryAllowed = JsonNullable.<Boolean>undefined();
 
   public static final String JSON_PROPERTY_CONNECTOR_TRANSACTION_ID = "connector_transaction_id";
+  @javax.annotation.Nullable
   private JsonNullable<String> connectorTransactionId = JsonNullable.<String>undefined();
 
   public static final String JSON_PROPERTY_FRM_MESSAGE = "frm_message";
+  @javax.annotation.Nullable
   private JsonNullable<FrmMessage> frmMessage = JsonNullable.<FrmMessage>undefined();
 
   public static final String JSON_PROPERTY_METADATA = "metadata";
+  @javax.annotation.Nullable
   private JsonNullable<Object> metadata = JsonNullable.<Object>undefined();
 
   public static final String JSON_PROPERTY_CONNECTOR_METADATA = "connector_metadata";
+  @javax.annotation.Nullable
   private JsonNullable<ConnectorMetadata> connectorMetadata = JsonNullable.<ConnectorMetadata>undefined();
 
   public static final String JSON_PROPERTY_FEATURE_METADATA = "feature_metadata";
+  @javax.annotation.Nullable
   private JsonNullable<FeatureMetadata> featureMetadata = JsonNullable.<FeatureMetadata>undefined();
 
   public static final String JSON_PROPERTY_REFERENCE_ID = "reference_id";
+  @javax.annotation.Nullable
   private JsonNullable<String> referenceId = JsonNullable.<String>undefined();
 
   public static final String JSON_PROPERTY_PAYMENT_LINK = "payment_link";
+  @javax.annotation.Nullable
   private JsonNullable<PaymentLinkResponse> paymentLink = JsonNullable.<PaymentLinkResponse>undefined();
 
   public static final String JSON_PROPERTY_PROFILE_ID = "profile_id";
+  @javax.annotation.Nullable
   private JsonNullable<String> profileId = JsonNullable.<String>undefined();
 
   public static final String JSON_PROPERTY_SURCHARGE_DETAILS = "surcharge_details";
+  @javax.annotation.Nullable
   private JsonNullable<RequestSurchargeDetails> surchargeDetails = JsonNullable.<RequestSurchargeDetails>undefined();
 
   public static final String JSON_PROPERTY_ATTEMPT_COUNT = "attempt_count";
+  @javax.annotation.Nonnull
   private Integer attemptCount;
 
   public static final String JSON_PROPERTY_MERCHANT_DECISION = "merchant_decision";
+  @javax.annotation.Nullable
   private JsonNullable<String> merchantDecision = JsonNullable.<String>undefined();
 
   public static final String JSON_PROPERTY_MERCHANT_CONNECTOR_ID = "merchant_connector_id";
+  @javax.annotation.Nullable
   private JsonNullable<String> merchantConnectorId = JsonNullable.<String>undefined();
 
   public static final String JSON_PROPERTY_INCREMENTAL_AUTHORIZATION_ALLOWED = "incremental_authorization_allowed";
+  @javax.annotation.Nullable
   private JsonNullable<Boolean> incrementalAuthorizationAllowed = JsonNullable.<Boolean>undefined();
 
   public static final String JSON_PROPERTY_AUTHORIZATION_COUNT = "authorization_count";
+  @javax.annotation.Nullable
   private JsonNullable<Integer> authorizationCount = JsonNullable.<Integer>undefined();
 
   public static final String JSON_PROPERTY_INCREMENTAL_AUTHORIZATIONS = "incremental_authorizations";
+  @javax.annotation.Nullable
   private JsonNullable<List<IncrementalAuthorizationResponse>> incrementalAuthorizations = JsonNullable.<List<IncrementalAuthorizationResponse>>undefined();
 
   public static final String JSON_PROPERTY_EXTERNAL_AUTHENTICATION_DETAILS = "external_authentication_details";
+  @javax.annotation.Nullable
   private JsonNullable<ExternalAuthenticationDetailsResponse> externalAuthenticationDetails = JsonNullable.<ExternalAuthenticationDetailsResponse>undefined();
 
   public static final String JSON_PROPERTY_EXTERNAL3DS_AUTHENTICATION_ATTEMPTED = "external_3ds_authentication_attempted";
+  @javax.annotation.Nullable
   private JsonNullable<Boolean> external3dsAuthenticationAttempted = JsonNullable.<Boolean>undefined();
 
   public static final String JSON_PROPERTY_EXPIRES_ON = "expires_on";
+  @javax.annotation.Nullable
   private JsonNullable<OffsetDateTime> expiresOn = JsonNullable.<OffsetDateTime>undefined();
 
   public static final String JSON_PROPERTY_FINGERPRINT = "fingerprint";
+  @javax.annotation.Nullable
   private JsonNullable<String> fingerprint = JsonNullable.<String>undefined();
 
   public static final String JSON_PROPERTY_BROWSER_INFO = "browser_info";
+  @javax.annotation.Nullable
   private JsonNullable<BrowserInformation> browserInfo = JsonNullable.<BrowserInformation>undefined();
 
   public static final String JSON_PROPERTY_PAYMENT_METHOD_ID = "payment_method_id";
+  @javax.annotation.Nullable
   private JsonNullable<String> paymentMethodId = JsonNullable.<String>undefined();
 
   public static final String JSON_PROPERTY_PAYMENT_METHOD_STATUS = "payment_method_status";
+  @javax.annotation.Nullable
   private JsonNullable<PaymentMethodStatus> paymentMethodStatus = JsonNullable.<PaymentMethodStatus>undefined();
 
   public static final String JSON_PROPERTY_UPDATED = "updated";
+  @javax.annotation.Nullable
   private JsonNullable<OffsetDateTime> updated = JsonNullable.<OffsetDateTime>undefined();
 
   public static final String JSON_PROPERTY_CHARGES = "charges";
+  @javax.annotation.Nullable
   private JsonNullable<PaymentChargeResponse> charges = JsonNullable.<PaymentChargeResponse>undefined();
 
   public static final String JSON_PROPERTY_FRM_METADATA = "frm_metadata";
+  @javax.annotation.Nullable
   private JsonNullable<Object> frmMetadata = JsonNullable.<Object>undefined();
 
   public static final String JSON_PROPERTY_MERCHANT_ORDER_REFERENCE_ID = "merchant_order_reference_id";
+  @javax.annotation.Nullable
   private JsonNullable<String> merchantOrderReferenceId = JsonNullable.<String>undefined();
 
   public static final String JSON_PROPERTY_ORDER_TAX_AMOUNT = "order_tax_amount";
+  @javax.annotation.Nullable
   private JsonNullable<Long> orderTaxAmount = JsonNullable.<Long>undefined();
 
   public static final String JSON_PROPERTY_CONNECTOR_MANDATE_ID = "connector_mandate_id";
+  @javax.annotation.Nullable
   private JsonNullable<String> connectorMandateId = JsonNullable.<String>undefined();
 
   public PaymentsResponse() {
   }
 
-  public PaymentsResponse paymentId(String paymentId) {
+  public PaymentsResponse paymentId(@javax.annotation.Nonnull String paymentId) {
     
     this.paymentId = paymentId;
     return this;
   }
 
-   /**
+  /**
    * Unique identifier for the payment. This ensures idempotency for multiple payments that have been done by a single merchant.
    * @return paymentId
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_PAYMENT_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -418,21 +500,20 @@ public class PaymentsResponse {
 
   @JsonProperty(JSON_PROPERTY_PAYMENT_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setPaymentId(String paymentId) {
+  public void setPaymentId(@javax.annotation.Nonnull String paymentId) {
     this.paymentId = paymentId;
   }
 
-
-  public PaymentsResponse merchantId(String merchantId) {
+  public PaymentsResponse merchantId(@javax.annotation.Nonnull String merchantId) {
     
     this.merchantId = merchantId;
     return this;
   }
 
-   /**
+  /**
    * This is an identifier for the merchant account. This is inferred from the API key provided during the request
    * @return merchantId
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_MERCHANT_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -444,21 +525,20 @@ public class PaymentsResponse {
 
   @JsonProperty(JSON_PROPERTY_MERCHANT_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setMerchantId(String merchantId) {
+  public void setMerchantId(@javax.annotation.Nonnull String merchantId) {
     this.merchantId = merchantId;
   }
 
-
-  public PaymentsResponse status(IntentStatus status) {
+  public PaymentsResponse status(@javax.annotation.Nonnull IntentStatus status) {
     
     this.status = status;
     return this;
   }
 
-   /**
+  /**
    * Get status
    * @return status
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_STATUS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -470,21 +550,20 @@ public class PaymentsResponse {
 
   @JsonProperty(JSON_PROPERTY_STATUS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setStatus(IntentStatus status) {
+  public void setStatus(@javax.annotation.Nonnull IntentStatus status) {
     this.status = status;
   }
 
-
-  public PaymentsResponse amount(Long amount) {
+  public PaymentsResponse amount(@javax.annotation.Nonnull Long amount) {
     
     this.amount = amount;
     return this;
   }
 
-   /**
+  /**
    * The payment amount. Amount for the payment in lowest denomination of the currency. (i.e) in cents for USD denomination, in paisa for INR denomination etc.,
    * @return amount
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_AMOUNT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -496,21 +575,20 @@ public class PaymentsResponse {
 
   @JsonProperty(JSON_PROPERTY_AMOUNT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setAmount(Long amount) {
+  public void setAmount(@javax.annotation.Nonnull Long amount) {
     this.amount = amount;
   }
 
-
-  public PaymentsResponse netAmount(Long netAmount) {
+  public PaymentsResponse netAmount(@javax.annotation.Nonnull Long netAmount) {
     
     this.netAmount = netAmount;
     return this;
   }
 
-   /**
+  /**
    * The payment net amount. net_amount &#x3D; amount + surcharge_details.surcharge_amount + surcharge_details.tax_amount + shipping_cost + order_tax_amount, If no surcharge_details, shipping_cost, order_tax_amount, net_amount &#x3D; amount
    * @return netAmount
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_NET_AMOUNT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -522,21 +600,20 @@ public class PaymentsResponse {
 
   @JsonProperty(JSON_PROPERTY_NET_AMOUNT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setNetAmount(Long netAmount) {
+  public void setNetAmount(@javax.annotation.Nonnull Long netAmount) {
     this.netAmount = netAmount;
   }
 
-
-  public PaymentsResponse shippingCost(Long shippingCost) {
+  public PaymentsResponse shippingCost(@javax.annotation.Nullable Long shippingCost) {
     this.shippingCost = JsonNullable.<Long>of(shippingCost);
     
     return this;
   }
 
-   /**
+  /**
    * The shipping cost for the payment.
    * @return shippingCost
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -556,22 +633,21 @@ public class PaymentsResponse {
     this.shippingCost = shippingCost;
   }
 
-  public void setShippingCost(Long shippingCost) {
+  public void setShippingCost(@javax.annotation.Nullable Long shippingCost) {
     this.shippingCost = JsonNullable.<Long>of(shippingCost);
   }
 
-
-  public PaymentsResponse amountCapturable(Long amountCapturable) {
+  public PaymentsResponse amountCapturable(@javax.annotation.Nonnull Long amountCapturable) {
     
     this.amountCapturable = amountCapturable;
     return this;
   }
 
-   /**
+  /**
    * The maximum amount that could be captured from the payment
    * minimum: 100
    * @return amountCapturable
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_AMOUNT_CAPTURABLE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -583,21 +659,20 @@ public class PaymentsResponse {
 
   @JsonProperty(JSON_PROPERTY_AMOUNT_CAPTURABLE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setAmountCapturable(Long amountCapturable) {
+  public void setAmountCapturable(@javax.annotation.Nonnull Long amountCapturable) {
     this.amountCapturable = amountCapturable;
   }
 
-
-  public PaymentsResponse amountReceived(Long amountReceived) {
+  public PaymentsResponse amountReceived(@javax.annotation.Nullable Long amountReceived) {
     this.amountReceived = JsonNullable.<Long>of(amountReceived);
     
     return this;
   }
 
-   /**
+  /**
    * The amount which is already captured from the payment, this helps in the cases where merchants can&#39;t capture all capturable amount at once.
    * @return amountReceived
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -617,21 +692,20 @@ public class PaymentsResponse {
     this.amountReceived = amountReceived;
   }
 
-  public void setAmountReceived(Long amountReceived) {
+  public void setAmountReceived(@javax.annotation.Nullable Long amountReceived) {
     this.amountReceived = JsonNullable.<Long>of(amountReceived);
   }
 
-
-  public PaymentsResponse connector(String connector) {
+  public PaymentsResponse connector(@javax.annotation.Nullable String connector) {
     this.connector = JsonNullable.<String>of(connector);
     
     return this;
   }
 
-   /**
+  /**
    * The connector used for the payment
    * @return connector
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -651,21 +725,20 @@ public class PaymentsResponse {
     this.connector = connector;
   }
 
-  public void setConnector(String connector) {
+  public void setConnector(@javax.annotation.Nullable String connector) {
     this.connector = JsonNullable.<String>of(connector);
   }
 
-
-  public PaymentsResponse clientSecret(String clientSecret) {
+  public PaymentsResponse clientSecret(@javax.annotation.Nullable String clientSecret) {
     this.clientSecret = JsonNullable.<String>of(clientSecret);
     
     return this;
   }
 
-   /**
+  /**
    * It&#39;s a token used for client side verification.
    * @return clientSecret
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -685,21 +758,20 @@ public class PaymentsResponse {
     this.clientSecret = clientSecret;
   }
 
-  public void setClientSecret(String clientSecret) {
+  public void setClientSecret(@javax.annotation.Nullable String clientSecret) {
     this.clientSecret = JsonNullable.<String>of(clientSecret);
   }
 
-
-  public PaymentsResponse created(OffsetDateTime created) {
+  public PaymentsResponse created(@javax.annotation.Nullable OffsetDateTime created) {
     this.created = JsonNullable.<OffsetDateTime>of(created);
     
     return this;
   }
 
-   /**
+  /**
    * Time when the payment was created
    * @return created
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -719,21 +791,20 @@ public class PaymentsResponse {
     this.created = created;
   }
 
-  public void setCreated(OffsetDateTime created) {
+  public void setCreated(@javax.annotation.Nullable OffsetDateTime created) {
     this.created = JsonNullable.<OffsetDateTime>of(created);
   }
 
-
-  public PaymentsResponse currency(Currency currency) {
+  public PaymentsResponse currency(@javax.annotation.Nonnull Currency currency) {
     
     this.currency = currency;
     return this;
   }
 
-   /**
+  /**
    * Get currency
    * @return currency
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_CURRENCY)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -745,22 +816,21 @@ public class PaymentsResponse {
 
   @JsonProperty(JSON_PROPERTY_CURRENCY)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setCurrency(Currency currency) {
+  public void setCurrency(@javax.annotation.Nonnull Currency currency) {
     this.currency = currency;
   }
 
-
-  public PaymentsResponse customerId(String customerId) {
+  public PaymentsResponse customerId(@javax.annotation.Nullable String customerId) {
     this.customerId = JsonNullable.<String>of(customerId);
     
     return this;
   }
 
-   /**
+  /**
    * The identifier for the customer object. If not provided the customer ID will be autogenerated. This field will be deprecated soon. Please refer to &#x60;customer.id&#x60;
    * @return customerId
    * @deprecated
-  **/
+   */
   @Deprecated
   @javax.annotation.Nullable
   @JsonIgnore
@@ -781,21 +851,20 @@ public class PaymentsResponse {
     this.customerId = customerId;
   }
 
-  public void setCustomerId(String customerId) {
+  public void setCustomerId(@javax.annotation.Nullable String customerId) {
     this.customerId = JsonNullable.<String>of(customerId);
   }
 
-
-  public PaymentsResponse customer(CustomerDetailsResponse customer) {
+  public PaymentsResponse customer(@javax.annotation.Nullable CustomerDetailsResponse customer) {
     this.customer = JsonNullable.<CustomerDetailsResponse>of(customer);
     
     return this;
   }
 
-   /**
+  /**
    * Get customer
    * @return customer
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -815,21 +884,20 @@ public class PaymentsResponse {
     this.customer = customer;
   }
 
-  public void setCustomer(CustomerDetailsResponse customer) {
+  public void setCustomer(@javax.annotation.Nullable CustomerDetailsResponse customer) {
     this.customer = JsonNullable.<CustomerDetailsResponse>of(customer);
   }
 
-
-  public PaymentsResponse description(String description) {
+  public PaymentsResponse description(@javax.annotation.Nullable String description) {
     this.description = JsonNullable.<String>of(description);
     
     return this;
   }
 
-   /**
+  /**
    * A description of the payment
    * @return description
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -849,12 +917,11 @@ public class PaymentsResponse {
     this.description = description;
   }
 
-  public void setDescription(String description) {
+  public void setDescription(@javax.annotation.Nullable String description) {
     this.description = JsonNullable.<String>of(description);
   }
 
-
-  public PaymentsResponse refunds(List<RefundResponse> refunds) {
+  public PaymentsResponse refunds(@javax.annotation.Nullable List<RefundResponse> refunds) {
     this.refunds = JsonNullable.<List<RefundResponse>>of(refunds);
     
     return this;
@@ -872,10 +939,10 @@ public class PaymentsResponse {
     return this;
   }
 
-   /**
+  /**
    * List of refunds that happened on this intent, as same payment intent can have multiple refund requests depending on the nature of order
    * @return refunds
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -895,12 +962,11 @@ public class PaymentsResponse {
     this.refunds = refunds;
   }
 
-  public void setRefunds(List<RefundResponse> refunds) {
+  public void setRefunds(@javax.annotation.Nullable List<RefundResponse> refunds) {
     this.refunds = JsonNullable.<List<RefundResponse>>of(refunds);
   }
 
-
-  public PaymentsResponse disputes(List<DisputeResponsePaymentsRetrieve> disputes) {
+  public PaymentsResponse disputes(@javax.annotation.Nullable List<DisputeResponsePaymentsRetrieve> disputes) {
     this.disputes = JsonNullable.<List<DisputeResponsePaymentsRetrieve>>of(disputes);
     
     return this;
@@ -918,10 +984,10 @@ public class PaymentsResponse {
     return this;
   }
 
-   /**
+  /**
    * List of disputes that happened on this intent
    * @return disputes
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -941,12 +1007,11 @@ public class PaymentsResponse {
     this.disputes = disputes;
   }
 
-  public void setDisputes(List<DisputeResponsePaymentsRetrieve> disputes) {
+  public void setDisputes(@javax.annotation.Nullable List<DisputeResponsePaymentsRetrieve> disputes) {
     this.disputes = JsonNullable.<List<DisputeResponsePaymentsRetrieve>>of(disputes);
   }
 
-
-  public PaymentsResponse attempts(List<PaymentAttemptResponse> attempts) {
+  public PaymentsResponse attempts(@javax.annotation.Nullable List<PaymentAttemptResponse> attempts) {
     this.attempts = JsonNullable.<List<PaymentAttemptResponse>>of(attempts);
     
     return this;
@@ -964,10 +1029,10 @@ public class PaymentsResponse {
     return this;
   }
 
-   /**
+  /**
    * List of attempts that happened on this intent
    * @return attempts
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -987,12 +1052,11 @@ public class PaymentsResponse {
     this.attempts = attempts;
   }
 
-  public void setAttempts(List<PaymentAttemptResponse> attempts) {
+  public void setAttempts(@javax.annotation.Nullable List<PaymentAttemptResponse> attempts) {
     this.attempts = JsonNullable.<List<PaymentAttemptResponse>>of(attempts);
   }
 
-
-  public PaymentsResponse captures(List<CaptureResponse> captures) {
+  public PaymentsResponse captures(@javax.annotation.Nullable List<CaptureResponse> captures) {
     this.captures = JsonNullable.<List<CaptureResponse>>of(captures);
     
     return this;
@@ -1010,10 +1074,10 @@ public class PaymentsResponse {
     return this;
   }
 
-   /**
+  /**
    * List of captures done on latest attempt
    * @return captures
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -1033,21 +1097,20 @@ public class PaymentsResponse {
     this.captures = captures;
   }
 
-  public void setCaptures(List<CaptureResponse> captures) {
+  public void setCaptures(@javax.annotation.Nullable List<CaptureResponse> captures) {
     this.captures = JsonNullable.<List<CaptureResponse>>of(captures);
   }
 
-
-  public PaymentsResponse mandateId(String mandateId) {
+  public PaymentsResponse mandateId(@javax.annotation.Nullable String mandateId) {
     this.mandateId = JsonNullable.<String>of(mandateId);
     
     return this;
   }
 
-   /**
+  /**
    * A unique identifier to link the payment to a mandate, can be used instead of payment_method_data, in case of setting up recurring payments
    * @return mandateId
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -1067,21 +1130,20 @@ public class PaymentsResponse {
     this.mandateId = mandateId;
   }
 
-  public void setMandateId(String mandateId) {
+  public void setMandateId(@javax.annotation.Nullable String mandateId) {
     this.mandateId = JsonNullable.<String>of(mandateId);
   }
 
-
-  public PaymentsResponse mandateData(MandateData mandateData) {
+  public PaymentsResponse mandateData(@javax.annotation.Nullable MandateData mandateData) {
     this.mandateData = JsonNullable.<MandateData>of(mandateData);
     
     return this;
   }
 
-   /**
+  /**
    * Get mandateData
    * @return mandateData
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -1101,21 +1163,20 @@ public class PaymentsResponse {
     this.mandateData = mandateData;
   }
 
-  public void setMandateData(MandateData mandateData) {
+  public void setMandateData(@javax.annotation.Nullable MandateData mandateData) {
     this.mandateData = JsonNullable.<MandateData>of(mandateData);
   }
 
-
-  public PaymentsResponse setupFutureUsage(FutureUsage setupFutureUsage) {
+  public PaymentsResponse setupFutureUsage(@javax.annotation.Nullable FutureUsage setupFutureUsage) {
     this.setupFutureUsage = JsonNullable.<FutureUsage>of(setupFutureUsage);
     
     return this;
   }
 
-   /**
+  /**
    * Get setupFutureUsage
    * @return setupFutureUsage
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -1135,21 +1196,20 @@ public class PaymentsResponse {
     this.setupFutureUsage = setupFutureUsage;
   }
 
-  public void setSetupFutureUsage(FutureUsage setupFutureUsage) {
+  public void setSetupFutureUsage(@javax.annotation.Nullable FutureUsage setupFutureUsage) {
     this.setupFutureUsage = JsonNullable.<FutureUsage>of(setupFutureUsage);
   }
 
-
-  public PaymentsResponse offSession(Boolean offSession) {
+  public PaymentsResponse offSession(@javax.annotation.Nullable Boolean offSession) {
     this.offSession = JsonNullable.<Boolean>of(offSession);
     
     return this;
   }
 
-   /**
+  /**
    * Set to true to indicate that the customer is not in your checkout flow during this payment, and therefore is unable to authenticate. This parameter is intended for scenarios where you collect card details and charge them later. This parameter can only be used with confirm&#x3D;true.
    * @return offSession
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -1169,21 +1229,20 @@ public class PaymentsResponse {
     this.offSession = offSession;
   }
 
-  public void setOffSession(Boolean offSession) {
+  public void setOffSession(@javax.annotation.Nullable Boolean offSession) {
     this.offSession = JsonNullable.<Boolean>of(offSession);
   }
 
-
-  public PaymentsResponse captureOn(OffsetDateTime captureOn) {
+  public PaymentsResponse captureOn(@javax.annotation.Nullable OffsetDateTime captureOn) {
     this.captureOn = JsonNullable.<OffsetDateTime>of(captureOn);
     
     return this;
   }
 
-   /**
+  /**
    * A timestamp (ISO 8601 code) that determines when the payment should be captured. Providing this field will automatically set &#x60;capture&#x60; to true
    * @return captureOn
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -1203,21 +1262,20 @@ public class PaymentsResponse {
     this.captureOn = captureOn;
   }
 
-  public void setCaptureOn(OffsetDateTime captureOn) {
+  public void setCaptureOn(@javax.annotation.Nullable OffsetDateTime captureOn) {
     this.captureOn = JsonNullable.<OffsetDateTime>of(captureOn);
   }
 
-
-  public PaymentsResponse captureMethod(CaptureMethod captureMethod) {
+  public PaymentsResponse captureMethod(@javax.annotation.Nullable CaptureMethod captureMethod) {
     this.captureMethod = JsonNullable.<CaptureMethod>of(captureMethod);
     
     return this;
   }
 
-   /**
+  /**
    * Get captureMethod
    * @return captureMethod
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -1237,21 +1295,20 @@ public class PaymentsResponse {
     this.captureMethod = captureMethod;
   }
 
-  public void setCaptureMethod(CaptureMethod captureMethod) {
+  public void setCaptureMethod(@javax.annotation.Nullable CaptureMethod captureMethod) {
     this.captureMethod = JsonNullable.<CaptureMethod>of(captureMethod);
   }
 
-
-  public PaymentsResponse paymentMethod(PaymentMethod paymentMethod) {
+  public PaymentsResponse paymentMethod(@javax.annotation.Nonnull PaymentMethod paymentMethod) {
     
     this.paymentMethod = paymentMethod;
     return this;
   }
 
-   /**
+  /**
    * Get paymentMethod
    * @return paymentMethod
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_PAYMENT_METHOD)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -1263,21 +1320,20 @@ public class PaymentsResponse {
 
   @JsonProperty(JSON_PROPERTY_PAYMENT_METHOD)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setPaymentMethod(PaymentMethod paymentMethod) {
+  public void setPaymentMethod(@javax.annotation.Nonnull PaymentMethod paymentMethod) {
     this.paymentMethod = paymentMethod;
   }
 
-
-  public PaymentsResponse paymentMethodData(PaymentMethodDataResponseWithBilling paymentMethodData) {
+  public PaymentsResponse paymentMethodData(@javax.annotation.Nullable PaymentMethodDataResponseWithBilling paymentMethodData) {
     this.paymentMethodData = JsonNullable.<PaymentMethodDataResponseWithBilling>of(paymentMethodData);
     
     return this;
   }
 
-   /**
+  /**
    * Get paymentMethodData
    * @return paymentMethodData
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -1297,21 +1353,20 @@ public class PaymentsResponse {
     this.paymentMethodData = paymentMethodData;
   }
 
-  public void setPaymentMethodData(PaymentMethodDataResponseWithBilling paymentMethodData) {
+  public void setPaymentMethodData(@javax.annotation.Nullable PaymentMethodDataResponseWithBilling paymentMethodData) {
     this.paymentMethodData = JsonNullable.<PaymentMethodDataResponseWithBilling>of(paymentMethodData);
   }
 
-
-  public PaymentsResponse paymentToken(String paymentToken) {
+  public PaymentsResponse paymentToken(@javax.annotation.Nullable String paymentToken) {
     this.paymentToken = JsonNullable.<String>of(paymentToken);
     
     return this;
   }
 
-   /**
+  /**
    * Provide a reference to a stored payment method
    * @return paymentToken
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -1331,21 +1386,20 @@ public class PaymentsResponse {
     this.paymentToken = paymentToken;
   }
 
-  public void setPaymentToken(String paymentToken) {
+  public void setPaymentToken(@javax.annotation.Nullable String paymentToken) {
     this.paymentToken = JsonNullable.<String>of(paymentToken);
   }
 
-
-  public PaymentsResponse shipping(Address shipping) {
+  public PaymentsResponse shipping(@javax.annotation.Nullable Address shipping) {
     this.shipping = JsonNullable.<Address>of(shipping);
     
     return this;
   }
 
-   /**
+  /**
    * Get shipping
    * @return shipping
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -1365,21 +1419,20 @@ public class PaymentsResponse {
     this.shipping = shipping;
   }
 
-  public void setShipping(Address shipping) {
+  public void setShipping(@javax.annotation.Nullable Address shipping) {
     this.shipping = JsonNullable.<Address>of(shipping);
   }
 
-
-  public PaymentsResponse billing(Address billing) {
+  public PaymentsResponse billing(@javax.annotation.Nullable Address billing) {
     this.billing = JsonNullable.<Address>of(billing);
     
     return this;
   }
 
-   /**
+  /**
    * Get billing
    * @return billing
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -1399,12 +1452,11 @@ public class PaymentsResponse {
     this.billing = billing;
   }
 
-  public void setBilling(Address billing) {
+  public void setBilling(@javax.annotation.Nullable Address billing) {
     this.billing = JsonNullable.<Address>of(billing);
   }
 
-
-  public PaymentsResponse orderDetails(List<OrderDetailsWithAmount> orderDetails) {
+  public PaymentsResponse orderDetails(@javax.annotation.Nullable List<OrderDetailsWithAmount> orderDetails) {
     this.orderDetails = JsonNullable.<List<OrderDetailsWithAmount>>of(orderDetails);
     
     return this;
@@ -1422,10 +1474,10 @@ public class PaymentsResponse {
     return this;
   }
 
-   /**
+  /**
    * Information about the product , quantity and amount for connectors. (e.g. Klarna)
    * @return orderDetails
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -1445,22 +1497,21 @@ public class PaymentsResponse {
     this.orderDetails = orderDetails;
   }
 
-  public void setOrderDetails(List<OrderDetailsWithAmount> orderDetails) {
+  public void setOrderDetails(@javax.annotation.Nullable List<OrderDetailsWithAmount> orderDetails) {
     this.orderDetails = JsonNullable.<List<OrderDetailsWithAmount>>of(orderDetails);
   }
 
-
-  public PaymentsResponse email(String email) {
+  public PaymentsResponse email(@javax.annotation.Nullable String email) {
     this.email = JsonNullable.<String>of(email);
     
     return this;
   }
 
-   /**
+  /**
    * description: The customer&#39;s email address This field will be deprecated soon. Please refer to &#x60;customer.email&#x60; object
    * @return email
    * @deprecated
-  **/
+   */
   @Deprecated
   @javax.annotation.Nullable
   @JsonIgnore
@@ -1481,22 +1532,21 @@ public class PaymentsResponse {
     this.email = email;
   }
 
-  public void setEmail(String email) {
+  public void setEmail(@javax.annotation.Nullable String email) {
     this.email = JsonNullable.<String>of(email);
   }
 
-
-  public PaymentsResponse name(String name) {
+  public PaymentsResponse name(@javax.annotation.Nullable String name) {
     this.name = JsonNullable.<String>of(name);
     
     return this;
   }
 
-   /**
+  /**
    * description: The customer&#39;s name This field will be deprecated soon. Please refer to &#x60;customer.name&#x60; object
    * @return name
    * @deprecated
-  **/
+   */
   @Deprecated
   @javax.annotation.Nullable
   @JsonIgnore
@@ -1517,22 +1567,21 @@ public class PaymentsResponse {
     this.name = name;
   }
 
-  public void setName(String name) {
+  public void setName(@javax.annotation.Nullable String name) {
     this.name = JsonNullable.<String>of(name);
   }
 
-
-  public PaymentsResponse phone(String phone) {
+  public PaymentsResponse phone(@javax.annotation.Nullable String phone) {
     this.phone = JsonNullable.<String>of(phone);
     
     return this;
   }
 
-   /**
+  /**
    * The customer&#39;s phone number This field will be deprecated soon. Please refer to &#x60;customer.phone&#x60; object
    * @return phone
    * @deprecated
-  **/
+   */
   @Deprecated
   @javax.annotation.Nullable
   @JsonIgnore
@@ -1553,21 +1602,20 @@ public class PaymentsResponse {
     this.phone = phone;
   }
 
-  public void setPhone(String phone) {
+  public void setPhone(@javax.annotation.Nullable String phone) {
     this.phone = JsonNullable.<String>of(phone);
   }
 
-
-  public PaymentsResponse returnUrl(String returnUrl) {
+  public PaymentsResponse returnUrl(@javax.annotation.Nullable String returnUrl) {
     this.returnUrl = JsonNullable.<String>of(returnUrl);
     
     return this;
   }
 
-   /**
+  /**
    * The URL to redirect after the completion of the operation
    * @return returnUrl
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -1587,21 +1635,20 @@ public class PaymentsResponse {
     this.returnUrl = returnUrl;
   }
 
-  public void setReturnUrl(String returnUrl) {
+  public void setReturnUrl(@javax.annotation.Nullable String returnUrl) {
     this.returnUrl = JsonNullable.<String>of(returnUrl);
   }
 
-
-  public PaymentsResponse authenticationType(AuthenticationType authenticationType) {
+  public PaymentsResponse authenticationType(@javax.annotation.Nullable AuthenticationType authenticationType) {
     this.authenticationType = JsonNullable.<AuthenticationType>of(authenticationType);
     
     return this;
   }
 
-   /**
+  /**
    * Get authenticationType
    * @return authenticationType
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -1621,21 +1668,20 @@ public class PaymentsResponse {
     this.authenticationType = authenticationType;
   }
 
-  public void setAuthenticationType(AuthenticationType authenticationType) {
+  public void setAuthenticationType(@javax.annotation.Nullable AuthenticationType authenticationType) {
     this.authenticationType = JsonNullable.<AuthenticationType>of(authenticationType);
   }
 
-
-  public PaymentsResponse statementDescriptorName(String statementDescriptorName) {
+  public PaymentsResponse statementDescriptorName(@javax.annotation.Nullable String statementDescriptorName) {
     this.statementDescriptorName = JsonNullable.<String>of(statementDescriptorName);
     
     return this;
   }
 
-   /**
+  /**
    * For non-card charges, you can use this value as the complete description that appears on your customers’ statements. Must contain at least one letter, maximum 22 characters.
    * @return statementDescriptorName
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -1655,21 +1701,20 @@ public class PaymentsResponse {
     this.statementDescriptorName = statementDescriptorName;
   }
 
-  public void setStatementDescriptorName(String statementDescriptorName) {
+  public void setStatementDescriptorName(@javax.annotation.Nullable String statementDescriptorName) {
     this.statementDescriptorName = JsonNullable.<String>of(statementDescriptorName);
   }
 
-
-  public PaymentsResponse statementDescriptorSuffix(String statementDescriptorSuffix) {
+  public PaymentsResponse statementDescriptorSuffix(@javax.annotation.Nullable String statementDescriptorSuffix) {
     this.statementDescriptorSuffix = JsonNullable.<String>of(statementDescriptorSuffix);
     
     return this;
   }
 
-   /**
+  /**
    * Provides information about a card payment that customers see on their statements. Concatenated with the prefix (shortened descriptor) or statement descriptor that’s set on the account to form the complete statement descriptor. Maximum 255 characters for the concatenated descriptor.
    * @return statementDescriptorSuffix
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -1689,21 +1734,20 @@ public class PaymentsResponse {
     this.statementDescriptorSuffix = statementDescriptorSuffix;
   }
 
-  public void setStatementDescriptorSuffix(String statementDescriptorSuffix) {
+  public void setStatementDescriptorSuffix(@javax.annotation.Nullable String statementDescriptorSuffix) {
     this.statementDescriptorSuffix = JsonNullable.<String>of(statementDescriptorSuffix);
   }
 
-
-  public PaymentsResponse nextAction(NextActionData nextAction) {
+  public PaymentsResponse nextAction(@javax.annotation.Nullable NextActionData nextAction) {
     this.nextAction = JsonNullable.<NextActionData>of(nextAction);
     
     return this;
   }
 
-   /**
+  /**
    * Get nextAction
    * @return nextAction
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -1723,21 +1767,20 @@ public class PaymentsResponse {
     this.nextAction = nextAction;
   }
 
-  public void setNextAction(NextActionData nextAction) {
+  public void setNextAction(@javax.annotation.Nullable NextActionData nextAction) {
     this.nextAction = JsonNullable.<NextActionData>of(nextAction);
   }
 
-
-  public PaymentsResponse cancellationReason(String cancellationReason) {
+  public PaymentsResponse cancellationReason(@javax.annotation.Nullable String cancellationReason) {
     this.cancellationReason = JsonNullable.<String>of(cancellationReason);
     
     return this;
   }
 
-   /**
+  /**
    * If the payment was cancelled the reason will be provided here
    * @return cancellationReason
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -1757,21 +1800,20 @@ public class PaymentsResponse {
     this.cancellationReason = cancellationReason;
   }
 
-  public void setCancellationReason(String cancellationReason) {
+  public void setCancellationReason(@javax.annotation.Nullable String cancellationReason) {
     this.cancellationReason = JsonNullable.<String>of(cancellationReason);
   }
 
-
-  public PaymentsResponse errorCode(String errorCode) {
+  public PaymentsResponse errorCode(@javax.annotation.Nullable String errorCode) {
     this.errorCode = JsonNullable.<String>of(errorCode);
     
     return this;
   }
 
-   /**
+  /**
    * If there was an error while calling the connectors the code is received here
    * @return errorCode
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -1791,21 +1833,20 @@ public class PaymentsResponse {
     this.errorCode = errorCode;
   }
 
-  public void setErrorCode(String errorCode) {
+  public void setErrorCode(@javax.annotation.Nullable String errorCode) {
     this.errorCode = JsonNullable.<String>of(errorCode);
   }
 
-
-  public PaymentsResponse errorMessage(String errorMessage) {
+  public PaymentsResponse errorMessage(@javax.annotation.Nullable String errorMessage) {
     this.errorMessage = JsonNullable.<String>of(errorMessage);
     
     return this;
   }
 
-   /**
+  /**
    * If there was an error while calling the connector the error message is received here
    * @return errorMessage
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -1825,21 +1866,20 @@ public class PaymentsResponse {
     this.errorMessage = errorMessage;
   }
 
-  public void setErrorMessage(String errorMessage) {
+  public void setErrorMessage(@javax.annotation.Nullable String errorMessage) {
     this.errorMessage = JsonNullable.<String>of(errorMessage);
   }
 
-
-  public PaymentsResponse unifiedCode(String unifiedCode) {
+  public PaymentsResponse unifiedCode(@javax.annotation.Nullable String unifiedCode) {
     this.unifiedCode = JsonNullable.<String>of(unifiedCode);
     
     return this;
   }
 
-   /**
+  /**
    * error code unified across the connectors is received here if there was an error while calling connector
    * @return unifiedCode
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -1859,21 +1899,20 @@ public class PaymentsResponse {
     this.unifiedCode = unifiedCode;
   }
 
-  public void setUnifiedCode(String unifiedCode) {
+  public void setUnifiedCode(@javax.annotation.Nullable String unifiedCode) {
     this.unifiedCode = JsonNullable.<String>of(unifiedCode);
   }
 
-
-  public PaymentsResponse unifiedMessage(String unifiedMessage) {
+  public PaymentsResponse unifiedMessage(@javax.annotation.Nullable String unifiedMessage) {
     this.unifiedMessage = JsonNullable.<String>of(unifiedMessage);
     
     return this;
   }
 
-   /**
+  /**
    * error message unified across the connectors is received here if there was an error while calling connector
    * @return unifiedMessage
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -1893,21 +1932,20 @@ public class PaymentsResponse {
     this.unifiedMessage = unifiedMessage;
   }
 
-  public void setUnifiedMessage(String unifiedMessage) {
+  public void setUnifiedMessage(@javax.annotation.Nullable String unifiedMessage) {
     this.unifiedMessage = JsonNullable.<String>of(unifiedMessage);
   }
 
-
-  public PaymentsResponse paymentExperience(PaymentExperience paymentExperience) {
+  public PaymentsResponse paymentExperience(@javax.annotation.Nullable PaymentExperience paymentExperience) {
     this.paymentExperience = JsonNullable.<PaymentExperience>of(paymentExperience);
     
     return this;
   }
 
-   /**
+  /**
    * Get paymentExperience
    * @return paymentExperience
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -1927,21 +1965,20 @@ public class PaymentsResponse {
     this.paymentExperience = paymentExperience;
   }
 
-  public void setPaymentExperience(PaymentExperience paymentExperience) {
+  public void setPaymentExperience(@javax.annotation.Nullable PaymentExperience paymentExperience) {
     this.paymentExperience = JsonNullable.<PaymentExperience>of(paymentExperience);
   }
 
-
-  public PaymentsResponse paymentMethodType(PaymentMethodType paymentMethodType) {
+  public PaymentsResponse paymentMethodType(@javax.annotation.Nullable PaymentMethodType paymentMethodType) {
     this.paymentMethodType = JsonNullable.<PaymentMethodType>of(paymentMethodType);
     
     return this;
   }
 
-   /**
+  /**
    * Get paymentMethodType
    * @return paymentMethodType
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -1961,21 +1998,20 @@ public class PaymentsResponse {
     this.paymentMethodType = paymentMethodType;
   }
 
-  public void setPaymentMethodType(PaymentMethodType paymentMethodType) {
+  public void setPaymentMethodType(@javax.annotation.Nullable PaymentMethodType paymentMethodType) {
     this.paymentMethodType = JsonNullable.<PaymentMethodType>of(paymentMethodType);
   }
 
-
-  public PaymentsResponse connectorLabel(String connectorLabel) {
+  public PaymentsResponse connectorLabel(@javax.annotation.Nullable String connectorLabel) {
     this.connectorLabel = JsonNullable.<String>of(connectorLabel);
     
     return this;
   }
 
-   /**
+  /**
    * The connector used for this payment along with the country and business details
    * @return connectorLabel
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -1995,21 +2031,20 @@ public class PaymentsResponse {
     this.connectorLabel = connectorLabel;
   }
 
-  public void setConnectorLabel(String connectorLabel) {
+  public void setConnectorLabel(@javax.annotation.Nullable String connectorLabel) {
     this.connectorLabel = JsonNullable.<String>of(connectorLabel);
   }
 
-
-  public PaymentsResponse businessCountry(CountryAlpha2 businessCountry) {
+  public PaymentsResponse businessCountry(@javax.annotation.Nullable CountryAlpha2 businessCountry) {
     this.businessCountry = JsonNullable.<CountryAlpha2>of(businessCountry);
     
     return this;
   }
 
-   /**
+  /**
    * Get businessCountry
    * @return businessCountry
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -2029,21 +2064,20 @@ public class PaymentsResponse {
     this.businessCountry = businessCountry;
   }
 
-  public void setBusinessCountry(CountryAlpha2 businessCountry) {
+  public void setBusinessCountry(@javax.annotation.Nullable CountryAlpha2 businessCountry) {
     this.businessCountry = JsonNullable.<CountryAlpha2>of(businessCountry);
   }
 
-
-  public PaymentsResponse businessLabel(String businessLabel) {
+  public PaymentsResponse businessLabel(@javax.annotation.Nullable String businessLabel) {
     this.businessLabel = JsonNullable.<String>of(businessLabel);
     
     return this;
   }
 
-   /**
+  /**
    * The business label of merchant for this payment
    * @return businessLabel
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -2063,21 +2097,20 @@ public class PaymentsResponse {
     this.businessLabel = businessLabel;
   }
 
-  public void setBusinessLabel(String businessLabel) {
+  public void setBusinessLabel(@javax.annotation.Nullable String businessLabel) {
     this.businessLabel = JsonNullable.<String>of(businessLabel);
   }
 
-
-  public PaymentsResponse businessSubLabel(String businessSubLabel) {
+  public PaymentsResponse businessSubLabel(@javax.annotation.Nullable String businessSubLabel) {
     this.businessSubLabel = JsonNullable.<String>of(businessSubLabel);
     
     return this;
   }
 
-   /**
+  /**
    * The business_sub_label for this payment
    * @return businessSubLabel
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -2097,12 +2130,11 @@ public class PaymentsResponse {
     this.businessSubLabel = businessSubLabel;
   }
 
-  public void setBusinessSubLabel(String businessSubLabel) {
+  public void setBusinessSubLabel(@javax.annotation.Nullable String businessSubLabel) {
     this.businessSubLabel = JsonNullable.<String>of(businessSubLabel);
   }
 
-
-  public PaymentsResponse allowedPaymentMethodTypes(List<PaymentMethodType> allowedPaymentMethodTypes) {
+  public PaymentsResponse allowedPaymentMethodTypes(@javax.annotation.Nullable List<PaymentMethodType> allowedPaymentMethodTypes) {
     this.allowedPaymentMethodTypes = JsonNullable.<List<PaymentMethodType>>of(allowedPaymentMethodTypes);
     
     return this;
@@ -2120,10 +2152,10 @@ public class PaymentsResponse {
     return this;
   }
 
-   /**
+  /**
    * Allowed Payment Method Types for a given PaymentIntent
    * @return allowedPaymentMethodTypes
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -2143,21 +2175,20 @@ public class PaymentsResponse {
     this.allowedPaymentMethodTypes = allowedPaymentMethodTypes;
   }
 
-  public void setAllowedPaymentMethodTypes(List<PaymentMethodType> allowedPaymentMethodTypes) {
+  public void setAllowedPaymentMethodTypes(@javax.annotation.Nullable List<PaymentMethodType> allowedPaymentMethodTypes) {
     this.allowedPaymentMethodTypes = JsonNullable.<List<PaymentMethodType>>of(allowedPaymentMethodTypes);
   }
 
-
-  public PaymentsResponse ephemeralKey(EphemeralKeyCreateResponse ephemeralKey) {
+  public PaymentsResponse ephemeralKey(@javax.annotation.Nullable EphemeralKeyCreateResponse ephemeralKey) {
     this.ephemeralKey = JsonNullable.<EphemeralKeyCreateResponse>of(ephemeralKey);
     
     return this;
   }
 
-   /**
+  /**
    * Get ephemeralKey
    * @return ephemeralKey
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -2177,21 +2208,20 @@ public class PaymentsResponse {
     this.ephemeralKey = ephemeralKey;
   }
 
-  public void setEphemeralKey(EphemeralKeyCreateResponse ephemeralKey) {
+  public void setEphemeralKey(@javax.annotation.Nullable EphemeralKeyCreateResponse ephemeralKey) {
     this.ephemeralKey = JsonNullable.<EphemeralKeyCreateResponse>of(ephemeralKey);
   }
 
-
-  public PaymentsResponse manualRetryAllowed(Boolean manualRetryAllowed) {
+  public PaymentsResponse manualRetryAllowed(@javax.annotation.Nullable Boolean manualRetryAllowed) {
     this.manualRetryAllowed = JsonNullable.<Boolean>of(manualRetryAllowed);
     
     return this;
   }
 
-   /**
+  /**
    * If true the payment can be retried with same or different payment method which means the confirm call can be made again.
    * @return manualRetryAllowed
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -2211,21 +2241,20 @@ public class PaymentsResponse {
     this.manualRetryAllowed = manualRetryAllowed;
   }
 
-  public void setManualRetryAllowed(Boolean manualRetryAllowed) {
+  public void setManualRetryAllowed(@javax.annotation.Nullable Boolean manualRetryAllowed) {
     this.manualRetryAllowed = JsonNullable.<Boolean>of(manualRetryAllowed);
   }
 
-
-  public PaymentsResponse connectorTransactionId(String connectorTransactionId) {
+  public PaymentsResponse connectorTransactionId(@javax.annotation.Nullable String connectorTransactionId) {
     this.connectorTransactionId = JsonNullable.<String>of(connectorTransactionId);
     
     return this;
   }
 
-   /**
+  /**
    * A unique identifier for a payment provided by the connector
    * @return connectorTransactionId
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -2245,21 +2274,20 @@ public class PaymentsResponse {
     this.connectorTransactionId = connectorTransactionId;
   }
 
-  public void setConnectorTransactionId(String connectorTransactionId) {
+  public void setConnectorTransactionId(@javax.annotation.Nullable String connectorTransactionId) {
     this.connectorTransactionId = JsonNullable.<String>of(connectorTransactionId);
   }
 
-
-  public PaymentsResponse frmMessage(FrmMessage frmMessage) {
+  public PaymentsResponse frmMessage(@javax.annotation.Nullable FrmMessage frmMessage) {
     this.frmMessage = JsonNullable.<FrmMessage>of(frmMessage);
     
     return this;
   }
 
-   /**
+  /**
    * Get frmMessage
    * @return frmMessage
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -2279,21 +2307,20 @@ public class PaymentsResponse {
     this.frmMessage = frmMessage;
   }
 
-  public void setFrmMessage(FrmMessage frmMessage) {
+  public void setFrmMessage(@javax.annotation.Nullable FrmMessage frmMessage) {
     this.frmMessage = JsonNullable.<FrmMessage>of(frmMessage);
   }
 
-
-  public PaymentsResponse metadata(Object metadata) {
+  public PaymentsResponse metadata(@javax.annotation.Nullable Object metadata) {
     this.metadata = JsonNullable.<Object>of(metadata);
     
     return this;
   }
 
-   /**
+  /**
    * You can specify up to 50 keys, with key names up to 40 characters long and values up to 500 characters long. Metadata is useful for storing additional, structured information on an object.
    * @return metadata
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -2313,21 +2340,20 @@ public class PaymentsResponse {
     this.metadata = metadata;
   }
 
-  public void setMetadata(Object metadata) {
+  public void setMetadata(@javax.annotation.Nullable Object metadata) {
     this.metadata = JsonNullable.<Object>of(metadata);
   }
 
-
-  public PaymentsResponse connectorMetadata(ConnectorMetadata connectorMetadata) {
+  public PaymentsResponse connectorMetadata(@javax.annotation.Nullable ConnectorMetadata connectorMetadata) {
     this.connectorMetadata = JsonNullable.<ConnectorMetadata>of(connectorMetadata);
     
     return this;
   }
 
-   /**
+  /**
    * Get connectorMetadata
    * @return connectorMetadata
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -2347,21 +2373,20 @@ public class PaymentsResponse {
     this.connectorMetadata = connectorMetadata;
   }
 
-  public void setConnectorMetadata(ConnectorMetadata connectorMetadata) {
+  public void setConnectorMetadata(@javax.annotation.Nullable ConnectorMetadata connectorMetadata) {
     this.connectorMetadata = JsonNullable.<ConnectorMetadata>of(connectorMetadata);
   }
 
-
-  public PaymentsResponse featureMetadata(FeatureMetadata featureMetadata) {
+  public PaymentsResponse featureMetadata(@javax.annotation.Nullable FeatureMetadata featureMetadata) {
     this.featureMetadata = JsonNullable.<FeatureMetadata>of(featureMetadata);
     
     return this;
   }
 
-   /**
+  /**
    * Get featureMetadata
    * @return featureMetadata
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -2381,21 +2406,20 @@ public class PaymentsResponse {
     this.featureMetadata = featureMetadata;
   }
 
-  public void setFeatureMetadata(FeatureMetadata featureMetadata) {
+  public void setFeatureMetadata(@javax.annotation.Nullable FeatureMetadata featureMetadata) {
     this.featureMetadata = JsonNullable.<FeatureMetadata>of(featureMetadata);
   }
 
-
-  public PaymentsResponse referenceId(String referenceId) {
+  public PaymentsResponse referenceId(@javax.annotation.Nullable String referenceId) {
     this.referenceId = JsonNullable.<String>of(referenceId);
     
     return this;
   }
 
-   /**
+  /**
    * reference(Identifier) to the payment at connector side
    * @return referenceId
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -2415,21 +2439,20 @@ public class PaymentsResponse {
     this.referenceId = referenceId;
   }
 
-  public void setReferenceId(String referenceId) {
+  public void setReferenceId(@javax.annotation.Nullable String referenceId) {
     this.referenceId = JsonNullable.<String>of(referenceId);
   }
 
-
-  public PaymentsResponse paymentLink(PaymentLinkResponse paymentLink) {
+  public PaymentsResponse paymentLink(@javax.annotation.Nullable PaymentLinkResponse paymentLink) {
     this.paymentLink = JsonNullable.<PaymentLinkResponse>of(paymentLink);
     
     return this;
   }
 
-   /**
+  /**
    * Get paymentLink
    * @return paymentLink
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -2449,21 +2472,20 @@ public class PaymentsResponse {
     this.paymentLink = paymentLink;
   }
 
-  public void setPaymentLink(PaymentLinkResponse paymentLink) {
+  public void setPaymentLink(@javax.annotation.Nullable PaymentLinkResponse paymentLink) {
     this.paymentLink = JsonNullable.<PaymentLinkResponse>of(paymentLink);
   }
 
-
-  public PaymentsResponse profileId(String profileId) {
+  public PaymentsResponse profileId(@javax.annotation.Nullable String profileId) {
     this.profileId = JsonNullable.<String>of(profileId);
     
     return this;
   }
 
-   /**
+  /**
    * The business profile that is associated with this payment
    * @return profileId
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -2483,21 +2505,20 @@ public class PaymentsResponse {
     this.profileId = profileId;
   }
 
-  public void setProfileId(String profileId) {
+  public void setProfileId(@javax.annotation.Nullable String profileId) {
     this.profileId = JsonNullable.<String>of(profileId);
   }
 
-
-  public PaymentsResponse surchargeDetails(RequestSurchargeDetails surchargeDetails) {
+  public PaymentsResponse surchargeDetails(@javax.annotation.Nullable RequestSurchargeDetails surchargeDetails) {
     this.surchargeDetails = JsonNullable.<RequestSurchargeDetails>of(surchargeDetails);
     
     return this;
   }
 
-   /**
+  /**
    * Get surchargeDetails
    * @return surchargeDetails
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -2517,21 +2538,20 @@ public class PaymentsResponse {
     this.surchargeDetails = surchargeDetails;
   }
 
-  public void setSurchargeDetails(RequestSurchargeDetails surchargeDetails) {
+  public void setSurchargeDetails(@javax.annotation.Nullable RequestSurchargeDetails surchargeDetails) {
     this.surchargeDetails = JsonNullable.<RequestSurchargeDetails>of(surchargeDetails);
   }
 
-
-  public PaymentsResponse attemptCount(Integer attemptCount) {
+  public PaymentsResponse attemptCount(@javax.annotation.Nonnull Integer attemptCount) {
     
     this.attemptCount = attemptCount;
     return this;
   }
 
-   /**
+  /**
    * Total number of attempts associated with this payment
    * @return attemptCount
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_ATTEMPT_COUNT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -2543,21 +2563,20 @@ public class PaymentsResponse {
 
   @JsonProperty(JSON_PROPERTY_ATTEMPT_COUNT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setAttemptCount(Integer attemptCount) {
+  public void setAttemptCount(@javax.annotation.Nonnull Integer attemptCount) {
     this.attemptCount = attemptCount;
   }
 
-
-  public PaymentsResponse merchantDecision(String merchantDecision) {
+  public PaymentsResponse merchantDecision(@javax.annotation.Nullable String merchantDecision) {
     this.merchantDecision = JsonNullable.<String>of(merchantDecision);
     
     return this;
   }
 
-   /**
+  /**
    * Denotes the action(approve or reject) taken by merchant in case of manual review. Manual review can occur when the transaction is marked as risky by the frm_processor, payment processor or when there is underpayment/over payment incase of crypto payment
    * @return merchantDecision
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -2577,21 +2596,20 @@ public class PaymentsResponse {
     this.merchantDecision = merchantDecision;
   }
 
-  public void setMerchantDecision(String merchantDecision) {
+  public void setMerchantDecision(@javax.annotation.Nullable String merchantDecision) {
     this.merchantDecision = JsonNullable.<String>of(merchantDecision);
   }
 
-
-  public PaymentsResponse merchantConnectorId(String merchantConnectorId) {
+  public PaymentsResponse merchantConnectorId(@javax.annotation.Nullable String merchantConnectorId) {
     this.merchantConnectorId = JsonNullable.<String>of(merchantConnectorId);
     
     return this;
   }
 
-   /**
+  /**
    * Identifier of the connector ( merchant connector account ) which was chosen to make the payment
    * @return merchantConnectorId
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -2611,21 +2629,20 @@ public class PaymentsResponse {
     this.merchantConnectorId = merchantConnectorId;
   }
 
-  public void setMerchantConnectorId(String merchantConnectorId) {
+  public void setMerchantConnectorId(@javax.annotation.Nullable String merchantConnectorId) {
     this.merchantConnectorId = JsonNullable.<String>of(merchantConnectorId);
   }
 
-
-  public PaymentsResponse incrementalAuthorizationAllowed(Boolean incrementalAuthorizationAllowed) {
+  public PaymentsResponse incrementalAuthorizationAllowed(@javax.annotation.Nullable Boolean incrementalAuthorizationAllowed) {
     this.incrementalAuthorizationAllowed = JsonNullable.<Boolean>of(incrementalAuthorizationAllowed);
     
     return this;
   }
 
-   /**
+  /**
    * If true, incremental authorization can be performed on this payment, in case the funds authorized initially fall short.
    * @return incrementalAuthorizationAllowed
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -2645,21 +2662,20 @@ public class PaymentsResponse {
     this.incrementalAuthorizationAllowed = incrementalAuthorizationAllowed;
   }
 
-  public void setIncrementalAuthorizationAllowed(Boolean incrementalAuthorizationAllowed) {
+  public void setIncrementalAuthorizationAllowed(@javax.annotation.Nullable Boolean incrementalAuthorizationAllowed) {
     this.incrementalAuthorizationAllowed = JsonNullable.<Boolean>of(incrementalAuthorizationAllowed);
   }
 
-
-  public PaymentsResponse authorizationCount(Integer authorizationCount) {
+  public PaymentsResponse authorizationCount(@javax.annotation.Nullable Integer authorizationCount) {
     this.authorizationCount = JsonNullable.<Integer>of(authorizationCount);
     
     return this;
   }
 
-   /**
+  /**
    * Total number of authorizations happened in an incremental_authorization payment
    * @return authorizationCount
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -2679,12 +2695,11 @@ public class PaymentsResponse {
     this.authorizationCount = authorizationCount;
   }
 
-  public void setAuthorizationCount(Integer authorizationCount) {
+  public void setAuthorizationCount(@javax.annotation.Nullable Integer authorizationCount) {
     this.authorizationCount = JsonNullable.<Integer>of(authorizationCount);
   }
 
-
-  public PaymentsResponse incrementalAuthorizations(List<IncrementalAuthorizationResponse> incrementalAuthorizations) {
+  public PaymentsResponse incrementalAuthorizations(@javax.annotation.Nullable List<IncrementalAuthorizationResponse> incrementalAuthorizations) {
     this.incrementalAuthorizations = JsonNullable.<List<IncrementalAuthorizationResponse>>of(incrementalAuthorizations);
     
     return this;
@@ -2702,10 +2717,10 @@ public class PaymentsResponse {
     return this;
   }
 
-   /**
+  /**
    * List of incremental authorizations happened to the payment
    * @return incrementalAuthorizations
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -2725,21 +2740,20 @@ public class PaymentsResponse {
     this.incrementalAuthorizations = incrementalAuthorizations;
   }
 
-  public void setIncrementalAuthorizations(List<IncrementalAuthorizationResponse> incrementalAuthorizations) {
+  public void setIncrementalAuthorizations(@javax.annotation.Nullable List<IncrementalAuthorizationResponse> incrementalAuthorizations) {
     this.incrementalAuthorizations = JsonNullable.<List<IncrementalAuthorizationResponse>>of(incrementalAuthorizations);
   }
 
-
-  public PaymentsResponse externalAuthenticationDetails(ExternalAuthenticationDetailsResponse externalAuthenticationDetails) {
+  public PaymentsResponse externalAuthenticationDetails(@javax.annotation.Nullable ExternalAuthenticationDetailsResponse externalAuthenticationDetails) {
     this.externalAuthenticationDetails = JsonNullable.<ExternalAuthenticationDetailsResponse>of(externalAuthenticationDetails);
     
     return this;
   }
 
-   /**
+  /**
    * Get externalAuthenticationDetails
    * @return externalAuthenticationDetails
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -2759,21 +2773,20 @@ public class PaymentsResponse {
     this.externalAuthenticationDetails = externalAuthenticationDetails;
   }
 
-  public void setExternalAuthenticationDetails(ExternalAuthenticationDetailsResponse externalAuthenticationDetails) {
+  public void setExternalAuthenticationDetails(@javax.annotation.Nullable ExternalAuthenticationDetailsResponse externalAuthenticationDetails) {
     this.externalAuthenticationDetails = JsonNullable.<ExternalAuthenticationDetailsResponse>of(externalAuthenticationDetails);
   }
 
-
-  public PaymentsResponse external3dsAuthenticationAttempted(Boolean external3dsAuthenticationAttempted) {
+  public PaymentsResponse external3dsAuthenticationAttempted(@javax.annotation.Nullable Boolean external3dsAuthenticationAttempted) {
     this.external3dsAuthenticationAttempted = JsonNullable.<Boolean>of(external3dsAuthenticationAttempted);
     
     return this;
   }
 
-   /**
+  /**
    * Flag indicating if external 3ds authentication is made or not
    * @return external3dsAuthenticationAttempted
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -2793,21 +2806,20 @@ public class PaymentsResponse {
     this.external3dsAuthenticationAttempted = external3dsAuthenticationAttempted;
   }
 
-  public void setExternal3dsAuthenticationAttempted(Boolean external3dsAuthenticationAttempted) {
+  public void setExternal3dsAuthenticationAttempted(@javax.annotation.Nullable Boolean external3dsAuthenticationAttempted) {
     this.external3dsAuthenticationAttempted = JsonNullable.<Boolean>of(external3dsAuthenticationAttempted);
   }
 
-
-  public PaymentsResponse expiresOn(OffsetDateTime expiresOn) {
+  public PaymentsResponse expiresOn(@javax.annotation.Nullable OffsetDateTime expiresOn) {
     this.expiresOn = JsonNullable.<OffsetDateTime>of(expiresOn);
     
     return this;
   }
 
-   /**
+  /**
    * Date Time for expiry of the payment
    * @return expiresOn
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -2827,21 +2839,20 @@ public class PaymentsResponse {
     this.expiresOn = expiresOn;
   }
 
-  public void setExpiresOn(OffsetDateTime expiresOn) {
+  public void setExpiresOn(@javax.annotation.Nullable OffsetDateTime expiresOn) {
     this.expiresOn = JsonNullable.<OffsetDateTime>of(expiresOn);
   }
 
-
-  public PaymentsResponse fingerprint(String fingerprint) {
+  public PaymentsResponse fingerprint(@javax.annotation.Nullable String fingerprint) {
     this.fingerprint = JsonNullable.<String>of(fingerprint);
     
     return this;
   }
 
-   /**
+  /**
    * Payment Fingerprint, to identify a particular card. It is a 20 character long alphanumeric code.
    * @return fingerprint
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -2861,21 +2872,20 @@ public class PaymentsResponse {
     this.fingerprint = fingerprint;
   }
 
-  public void setFingerprint(String fingerprint) {
+  public void setFingerprint(@javax.annotation.Nullable String fingerprint) {
     this.fingerprint = JsonNullable.<String>of(fingerprint);
   }
 
-
-  public PaymentsResponse browserInfo(BrowserInformation browserInfo) {
+  public PaymentsResponse browserInfo(@javax.annotation.Nullable BrowserInformation browserInfo) {
     this.browserInfo = JsonNullable.<BrowserInformation>of(browserInfo);
     
     return this;
   }
 
-   /**
+  /**
    * Get browserInfo
    * @return browserInfo
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -2895,21 +2905,20 @@ public class PaymentsResponse {
     this.browserInfo = browserInfo;
   }
 
-  public void setBrowserInfo(BrowserInformation browserInfo) {
+  public void setBrowserInfo(@javax.annotation.Nullable BrowserInformation browserInfo) {
     this.browserInfo = JsonNullable.<BrowserInformation>of(browserInfo);
   }
 
-
-  public PaymentsResponse paymentMethodId(String paymentMethodId) {
+  public PaymentsResponse paymentMethodId(@javax.annotation.Nullable String paymentMethodId) {
     this.paymentMethodId = JsonNullable.<String>of(paymentMethodId);
     
     return this;
   }
 
-   /**
+  /**
    * Identifier for Payment Method used for the payment
    * @return paymentMethodId
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -2929,21 +2938,20 @@ public class PaymentsResponse {
     this.paymentMethodId = paymentMethodId;
   }
 
-  public void setPaymentMethodId(String paymentMethodId) {
+  public void setPaymentMethodId(@javax.annotation.Nullable String paymentMethodId) {
     this.paymentMethodId = JsonNullable.<String>of(paymentMethodId);
   }
 
-
-  public PaymentsResponse paymentMethodStatus(PaymentMethodStatus paymentMethodStatus) {
+  public PaymentsResponse paymentMethodStatus(@javax.annotation.Nullable PaymentMethodStatus paymentMethodStatus) {
     this.paymentMethodStatus = JsonNullable.<PaymentMethodStatus>of(paymentMethodStatus);
     
     return this;
   }
 
-   /**
+  /**
    * Get paymentMethodStatus
    * @return paymentMethodStatus
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -2963,21 +2971,20 @@ public class PaymentsResponse {
     this.paymentMethodStatus = paymentMethodStatus;
   }
 
-  public void setPaymentMethodStatus(PaymentMethodStatus paymentMethodStatus) {
+  public void setPaymentMethodStatus(@javax.annotation.Nullable PaymentMethodStatus paymentMethodStatus) {
     this.paymentMethodStatus = JsonNullable.<PaymentMethodStatus>of(paymentMethodStatus);
   }
 
-
-  public PaymentsResponse updated(OffsetDateTime updated) {
+  public PaymentsResponse updated(@javax.annotation.Nullable OffsetDateTime updated) {
     this.updated = JsonNullable.<OffsetDateTime>of(updated);
     
     return this;
   }
 
-   /**
+  /**
    * Date time at which payment was updated
    * @return updated
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -2997,21 +3004,20 @@ public class PaymentsResponse {
     this.updated = updated;
   }
 
-  public void setUpdated(OffsetDateTime updated) {
+  public void setUpdated(@javax.annotation.Nullable OffsetDateTime updated) {
     this.updated = JsonNullable.<OffsetDateTime>of(updated);
   }
 
-
-  public PaymentsResponse charges(PaymentChargeResponse charges) {
+  public PaymentsResponse charges(@javax.annotation.Nullable PaymentChargeResponse charges) {
     this.charges = JsonNullable.<PaymentChargeResponse>of(charges);
     
     return this;
   }
 
-   /**
+  /**
    * Get charges
    * @return charges
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -3031,21 +3037,20 @@ public class PaymentsResponse {
     this.charges = charges;
   }
 
-  public void setCharges(PaymentChargeResponse charges) {
+  public void setCharges(@javax.annotation.Nullable PaymentChargeResponse charges) {
     this.charges = JsonNullable.<PaymentChargeResponse>of(charges);
   }
 
-
-  public PaymentsResponse frmMetadata(Object frmMetadata) {
+  public PaymentsResponse frmMetadata(@javax.annotation.Nullable Object frmMetadata) {
     this.frmMetadata = JsonNullable.<Object>of(frmMetadata);
     
     return this;
   }
 
-   /**
+  /**
    * You can specify up to 50 keys, with key names up to 40 characters long and values up to 500 characters long. FRM Metadata is useful for storing additional, structured information on an object related to FRM.
    * @return frmMetadata
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -3065,21 +3070,20 @@ public class PaymentsResponse {
     this.frmMetadata = frmMetadata;
   }
 
-  public void setFrmMetadata(Object frmMetadata) {
+  public void setFrmMetadata(@javax.annotation.Nullable Object frmMetadata) {
     this.frmMetadata = JsonNullable.<Object>of(frmMetadata);
   }
 
-
-  public PaymentsResponse merchantOrderReferenceId(String merchantOrderReferenceId) {
+  public PaymentsResponse merchantOrderReferenceId(@javax.annotation.Nullable String merchantOrderReferenceId) {
     this.merchantOrderReferenceId = JsonNullable.<String>of(merchantOrderReferenceId);
     
     return this;
   }
 
-   /**
+  /**
    * Merchant&#39;s identifier for the payment/invoice. This will be sent to the connector if the connector provides support to accept multiple reference ids. In case the connector supports only one reference id, Hyperswitch&#39;s Payment ID will be sent as reference.
    * @return merchantOrderReferenceId
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -3099,21 +3103,20 @@ public class PaymentsResponse {
     this.merchantOrderReferenceId = merchantOrderReferenceId;
   }
 
-  public void setMerchantOrderReferenceId(String merchantOrderReferenceId) {
+  public void setMerchantOrderReferenceId(@javax.annotation.Nullable String merchantOrderReferenceId) {
     this.merchantOrderReferenceId = JsonNullable.<String>of(merchantOrderReferenceId);
   }
 
-
-  public PaymentsResponse orderTaxAmount(Long orderTaxAmount) {
+  public PaymentsResponse orderTaxAmount(@javax.annotation.Nullable Long orderTaxAmount) {
     this.orderTaxAmount = JsonNullable.<Long>of(orderTaxAmount);
     
     return this;
   }
 
-   /**
+  /**
    * This Unit struct represents MinorUnit in which core amount works
    * @return orderTaxAmount
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -3133,21 +3136,20 @@ public class PaymentsResponse {
     this.orderTaxAmount = orderTaxAmount;
   }
 
-  public void setOrderTaxAmount(Long orderTaxAmount) {
+  public void setOrderTaxAmount(@javax.annotation.Nullable Long orderTaxAmount) {
     this.orderTaxAmount = JsonNullable.<Long>of(orderTaxAmount);
   }
 
-
-  public PaymentsResponse connectorMandateId(String connectorMandateId) {
+  public PaymentsResponse connectorMandateId(@javax.annotation.Nullable String connectorMandateId) {
     this.connectorMandateId = JsonNullable.<String>of(connectorMandateId);
     
     return this;
   }
 
-   /**
+  /**
    * Connector Identifier for the payment method
    * @return connectorMandateId
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -3167,7 +3169,7 @@ public class PaymentsResponse {
     this.connectorMandateId = connectorMandateId;
   }
 
-  public void setConnectorMandateId(String connectorMandateId) {
+  public void setConnectorMandateId(@javax.annotation.Nullable String connectorMandateId) {
     this.connectorMandateId = JsonNullable.<String>of(connectorMandateId);
   }
 

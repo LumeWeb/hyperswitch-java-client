@@ -34,24 +34,25 @@ import java.util.StringJoiner;
   WalletDataOneOf7.JSON_PROPERTY_APPLE_PAY
 })
 @JsonTypeName("WalletData_oneOf_7")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class WalletDataOneOf7 {
   public static final String JSON_PROPERTY_APPLE_PAY = "apple_pay";
+  @javax.annotation.Nonnull
   private ApplePayWalletData applePay;
 
   public WalletDataOneOf7() {
   }
 
-  public WalletDataOneOf7 applePay(ApplePayWalletData applePay) {
+  public WalletDataOneOf7 applePay(@javax.annotation.Nonnull ApplePayWalletData applePay) {
     
     this.applePay = applePay;
     return this;
   }
 
-   /**
+  /**
    * Get applePay
    * @return applePay
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_APPLE_PAY)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -63,7 +64,7 @@ public class WalletDataOneOf7 {
 
   @JsonProperty(JSON_PROPERTY_APPLE_PAY)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setApplePay(ApplePayWalletData applePay) {
+  public void setApplePay(@javax.annotation.Nonnull ApplePayWalletData applePay) {
     this.applePay = applePay;
   }
 

@@ -95,105 +95,133 @@ import java.util.StringJoiner;
   WalletData.JSON_PROPERTY_SWISH_QR,
   WalletData.JSON_PROPERTY_MIFINITY
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class WalletData {
   public static final String JSON_PROPERTY_ALI_PAY_QR = "ali_pay_qr";
+  @javax.annotation.Nonnull
   private Object aliPayQr;
 
   public static final String JSON_PROPERTY_ALI_PAY_REDIRECT = "ali_pay_redirect";
+  @javax.annotation.Nonnull
   private Object aliPayRedirect;
 
   public static final String JSON_PROPERTY_ALI_PAY_HK_REDIRECT = "ali_pay_hk_redirect";
+  @javax.annotation.Nonnull
   private Object aliPayHkRedirect;
 
   public static final String JSON_PROPERTY_MOMO_REDIRECT = "momo_redirect";
+  @javax.annotation.Nonnull
   private Object momoRedirect;
 
   public static final String JSON_PROPERTY_KAKAO_PAY_REDIRECT = "kakao_pay_redirect";
+  @javax.annotation.Nonnull
   private Object kakaoPayRedirect;
 
   public static final String JSON_PROPERTY_GO_PAY_REDIRECT = "go_pay_redirect";
+  @javax.annotation.Nonnull
   private Object goPayRedirect;
 
   public static final String JSON_PROPERTY_GCASH_REDIRECT = "gcash_redirect";
+  @javax.annotation.Nonnull
   private Object gcashRedirect;
 
   public static final String JSON_PROPERTY_APPLE_PAY = "apple_pay";
+  @javax.annotation.Nonnull
   private ApplePayWalletData applePay;
 
   public static final String JSON_PROPERTY_APPLE_PAY_REDIRECT = "apple_pay_redirect";
+  @javax.annotation.Nonnull
   private Object applePayRedirect;
 
   public static final String JSON_PROPERTY_APPLE_PAY_THIRD_PARTY_SDK = "apple_pay_third_party_sdk";
+  @javax.annotation.Nonnull
   private Object applePayThirdPartySdk;
 
   public static final String JSON_PROPERTY_DANA_REDIRECT = "dana_redirect";
+  @javax.annotation.Nonnull
   private Object danaRedirect;
 
   public static final String JSON_PROPERTY_GOOGLE_PAY = "google_pay";
+  @javax.annotation.Nonnull
   private GooglePayWalletData googlePay;
 
   public static final String JSON_PROPERTY_GOOGLE_PAY_REDIRECT = "google_pay_redirect";
+  @javax.annotation.Nonnull
   private Object googlePayRedirect;
 
   public static final String JSON_PROPERTY_GOOGLE_PAY_THIRD_PARTY_SDK = "google_pay_third_party_sdk";
+  @javax.annotation.Nonnull
   private Object googlePayThirdPartySdk;
 
   public static final String JSON_PROPERTY_MB_WAY_REDIRECT = "mb_way_redirect";
+  @javax.annotation.Nonnull
   private MbWayRedirection mbWayRedirect;
 
   public static final String JSON_PROPERTY_MOBILE_PAY_REDIRECT = "mobile_pay_redirect";
+  @javax.annotation.Nonnull
   private Object mobilePayRedirect;
 
   public static final String JSON_PROPERTY_PAYPAL_REDIRECT = "paypal_redirect";
+  @javax.annotation.Nonnull
   private PaypalRedirection paypalRedirect;
 
   public static final String JSON_PROPERTY_PAYPAL_SDK = "paypal_sdk";
+  @javax.annotation.Nonnull
   private PayPalWalletData paypalSdk;
 
   public static final String JSON_PROPERTY_PAZE = "paze";
+  @javax.annotation.Nonnull
   private PazeWalletData paze;
 
   public static final String JSON_PROPERTY_SAMSUNG_PAY = "samsung_pay";
+  @javax.annotation.Nonnull
   private SamsungPayWalletData samsungPay;
 
   public static final String JSON_PROPERTY_TWINT_REDIRECT = "twint_redirect";
+  @javax.annotation.Nonnull
   private Object twintRedirect;
 
   public static final String JSON_PROPERTY_VIPPS_REDIRECT = "vipps_redirect";
+  @javax.annotation.Nonnull
   private Object vippsRedirect;
 
   public static final String JSON_PROPERTY_TOUCH_N_GO_REDIRECT = "touch_n_go_redirect";
+  @javax.annotation.Nonnull
   private Object touchNGoRedirect;
 
   public static final String JSON_PROPERTY_WE_CHAT_PAY_REDIRECT = "we_chat_pay_redirect";
+  @javax.annotation.Nonnull
   private Object weChatPayRedirect;
 
   public static final String JSON_PROPERTY_WE_CHAT_PAY_QR = "we_chat_pay_qr";
+  @javax.annotation.Nonnull
   private Object weChatPayQr;
 
   public static final String JSON_PROPERTY_CASHAPP_QR = "cashapp_qr";
+  @javax.annotation.Nonnull
   private Object cashappQr;
 
   public static final String JSON_PROPERTY_SWISH_QR = "swish_qr";
+  @javax.annotation.Nonnull
   private Object swishQr;
 
   public static final String JSON_PROPERTY_MIFINITY = "mifinity";
+  @javax.annotation.Nonnull
   private MifinityData mifinity;
 
   public WalletData() {
   }
 
-  public WalletData aliPayQr(Object aliPayQr) {
+  public WalletData aliPayQr(@javax.annotation.Nonnull Object aliPayQr) {
     
     this.aliPayQr = aliPayQr;
     return this;
   }
 
-   /**
+  /**
    * Get aliPayQr
    * @return aliPayQr
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_ALI_PAY_QR)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -205,21 +233,20 @@ public class WalletData {
 
   @JsonProperty(JSON_PROPERTY_ALI_PAY_QR)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setAliPayQr(Object aliPayQr) {
+  public void setAliPayQr(@javax.annotation.Nonnull Object aliPayQr) {
     this.aliPayQr = aliPayQr;
   }
 
-
-  public WalletData aliPayRedirect(Object aliPayRedirect) {
+  public WalletData aliPayRedirect(@javax.annotation.Nonnull Object aliPayRedirect) {
     
     this.aliPayRedirect = aliPayRedirect;
     return this;
   }
 
-   /**
+  /**
    * Get aliPayRedirect
    * @return aliPayRedirect
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_ALI_PAY_REDIRECT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -231,21 +258,20 @@ public class WalletData {
 
   @JsonProperty(JSON_PROPERTY_ALI_PAY_REDIRECT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setAliPayRedirect(Object aliPayRedirect) {
+  public void setAliPayRedirect(@javax.annotation.Nonnull Object aliPayRedirect) {
     this.aliPayRedirect = aliPayRedirect;
   }
 
-
-  public WalletData aliPayHkRedirect(Object aliPayHkRedirect) {
+  public WalletData aliPayHkRedirect(@javax.annotation.Nonnull Object aliPayHkRedirect) {
     
     this.aliPayHkRedirect = aliPayHkRedirect;
     return this;
   }
 
-   /**
+  /**
    * Get aliPayHkRedirect
    * @return aliPayHkRedirect
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_ALI_PAY_HK_REDIRECT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -257,21 +283,20 @@ public class WalletData {
 
   @JsonProperty(JSON_PROPERTY_ALI_PAY_HK_REDIRECT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setAliPayHkRedirect(Object aliPayHkRedirect) {
+  public void setAliPayHkRedirect(@javax.annotation.Nonnull Object aliPayHkRedirect) {
     this.aliPayHkRedirect = aliPayHkRedirect;
   }
 
-
-  public WalletData momoRedirect(Object momoRedirect) {
+  public WalletData momoRedirect(@javax.annotation.Nonnull Object momoRedirect) {
     
     this.momoRedirect = momoRedirect;
     return this;
   }
 
-   /**
+  /**
    * Get momoRedirect
    * @return momoRedirect
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_MOMO_REDIRECT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -283,21 +308,20 @@ public class WalletData {
 
   @JsonProperty(JSON_PROPERTY_MOMO_REDIRECT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setMomoRedirect(Object momoRedirect) {
+  public void setMomoRedirect(@javax.annotation.Nonnull Object momoRedirect) {
     this.momoRedirect = momoRedirect;
   }
 
-
-  public WalletData kakaoPayRedirect(Object kakaoPayRedirect) {
+  public WalletData kakaoPayRedirect(@javax.annotation.Nonnull Object kakaoPayRedirect) {
     
     this.kakaoPayRedirect = kakaoPayRedirect;
     return this;
   }
 
-   /**
+  /**
    * Get kakaoPayRedirect
    * @return kakaoPayRedirect
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_KAKAO_PAY_REDIRECT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -309,21 +333,20 @@ public class WalletData {
 
   @JsonProperty(JSON_PROPERTY_KAKAO_PAY_REDIRECT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setKakaoPayRedirect(Object kakaoPayRedirect) {
+  public void setKakaoPayRedirect(@javax.annotation.Nonnull Object kakaoPayRedirect) {
     this.kakaoPayRedirect = kakaoPayRedirect;
   }
 
-
-  public WalletData goPayRedirect(Object goPayRedirect) {
+  public WalletData goPayRedirect(@javax.annotation.Nonnull Object goPayRedirect) {
     
     this.goPayRedirect = goPayRedirect;
     return this;
   }
 
-   /**
+  /**
    * Get goPayRedirect
    * @return goPayRedirect
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_GO_PAY_REDIRECT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -335,21 +358,20 @@ public class WalletData {
 
   @JsonProperty(JSON_PROPERTY_GO_PAY_REDIRECT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setGoPayRedirect(Object goPayRedirect) {
+  public void setGoPayRedirect(@javax.annotation.Nonnull Object goPayRedirect) {
     this.goPayRedirect = goPayRedirect;
   }
 
-
-  public WalletData gcashRedirect(Object gcashRedirect) {
+  public WalletData gcashRedirect(@javax.annotation.Nonnull Object gcashRedirect) {
     
     this.gcashRedirect = gcashRedirect;
     return this;
   }
 
-   /**
+  /**
    * Get gcashRedirect
    * @return gcashRedirect
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_GCASH_REDIRECT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -361,21 +383,20 @@ public class WalletData {
 
   @JsonProperty(JSON_PROPERTY_GCASH_REDIRECT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setGcashRedirect(Object gcashRedirect) {
+  public void setGcashRedirect(@javax.annotation.Nonnull Object gcashRedirect) {
     this.gcashRedirect = gcashRedirect;
   }
 
-
-  public WalletData applePay(ApplePayWalletData applePay) {
+  public WalletData applePay(@javax.annotation.Nonnull ApplePayWalletData applePay) {
     
     this.applePay = applePay;
     return this;
   }
 
-   /**
+  /**
    * Get applePay
    * @return applePay
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_APPLE_PAY)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -387,21 +408,20 @@ public class WalletData {
 
   @JsonProperty(JSON_PROPERTY_APPLE_PAY)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setApplePay(ApplePayWalletData applePay) {
+  public void setApplePay(@javax.annotation.Nonnull ApplePayWalletData applePay) {
     this.applePay = applePay;
   }
 
-
-  public WalletData applePayRedirect(Object applePayRedirect) {
+  public WalletData applePayRedirect(@javax.annotation.Nonnull Object applePayRedirect) {
     
     this.applePayRedirect = applePayRedirect;
     return this;
   }
 
-   /**
+  /**
    * Get applePayRedirect
    * @return applePayRedirect
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_APPLE_PAY_REDIRECT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -413,21 +433,20 @@ public class WalletData {
 
   @JsonProperty(JSON_PROPERTY_APPLE_PAY_REDIRECT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setApplePayRedirect(Object applePayRedirect) {
+  public void setApplePayRedirect(@javax.annotation.Nonnull Object applePayRedirect) {
     this.applePayRedirect = applePayRedirect;
   }
 
-
-  public WalletData applePayThirdPartySdk(Object applePayThirdPartySdk) {
+  public WalletData applePayThirdPartySdk(@javax.annotation.Nonnull Object applePayThirdPartySdk) {
     
     this.applePayThirdPartySdk = applePayThirdPartySdk;
     return this;
   }
 
-   /**
+  /**
    * Get applePayThirdPartySdk
    * @return applePayThirdPartySdk
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_APPLE_PAY_THIRD_PARTY_SDK)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -439,21 +458,20 @@ public class WalletData {
 
   @JsonProperty(JSON_PROPERTY_APPLE_PAY_THIRD_PARTY_SDK)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setApplePayThirdPartySdk(Object applePayThirdPartySdk) {
+  public void setApplePayThirdPartySdk(@javax.annotation.Nonnull Object applePayThirdPartySdk) {
     this.applePayThirdPartySdk = applePayThirdPartySdk;
   }
 
-
-  public WalletData danaRedirect(Object danaRedirect) {
+  public WalletData danaRedirect(@javax.annotation.Nonnull Object danaRedirect) {
     
     this.danaRedirect = danaRedirect;
     return this;
   }
 
-   /**
+  /**
    * Wallet data for DANA redirect flow
    * @return danaRedirect
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_DANA_REDIRECT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -465,21 +483,20 @@ public class WalletData {
 
   @JsonProperty(JSON_PROPERTY_DANA_REDIRECT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setDanaRedirect(Object danaRedirect) {
+  public void setDanaRedirect(@javax.annotation.Nonnull Object danaRedirect) {
     this.danaRedirect = danaRedirect;
   }
 
-
-  public WalletData googlePay(GooglePayWalletData googlePay) {
+  public WalletData googlePay(@javax.annotation.Nonnull GooglePayWalletData googlePay) {
     
     this.googlePay = googlePay;
     return this;
   }
 
-   /**
+  /**
    * Get googlePay
    * @return googlePay
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_GOOGLE_PAY)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -491,21 +508,20 @@ public class WalletData {
 
   @JsonProperty(JSON_PROPERTY_GOOGLE_PAY)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setGooglePay(GooglePayWalletData googlePay) {
+  public void setGooglePay(@javax.annotation.Nonnull GooglePayWalletData googlePay) {
     this.googlePay = googlePay;
   }
 
-
-  public WalletData googlePayRedirect(Object googlePayRedirect) {
+  public WalletData googlePayRedirect(@javax.annotation.Nonnull Object googlePayRedirect) {
     
     this.googlePayRedirect = googlePayRedirect;
     return this;
   }
 
-   /**
+  /**
    * Get googlePayRedirect
    * @return googlePayRedirect
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_GOOGLE_PAY_REDIRECT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -517,21 +533,20 @@ public class WalletData {
 
   @JsonProperty(JSON_PROPERTY_GOOGLE_PAY_REDIRECT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setGooglePayRedirect(Object googlePayRedirect) {
+  public void setGooglePayRedirect(@javax.annotation.Nonnull Object googlePayRedirect) {
     this.googlePayRedirect = googlePayRedirect;
   }
 
-
-  public WalletData googlePayThirdPartySdk(Object googlePayThirdPartySdk) {
+  public WalletData googlePayThirdPartySdk(@javax.annotation.Nonnull Object googlePayThirdPartySdk) {
     
     this.googlePayThirdPartySdk = googlePayThirdPartySdk;
     return this;
   }
 
-   /**
+  /**
    * Get googlePayThirdPartySdk
    * @return googlePayThirdPartySdk
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_GOOGLE_PAY_THIRD_PARTY_SDK)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -543,21 +558,20 @@ public class WalletData {
 
   @JsonProperty(JSON_PROPERTY_GOOGLE_PAY_THIRD_PARTY_SDK)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setGooglePayThirdPartySdk(Object googlePayThirdPartySdk) {
+  public void setGooglePayThirdPartySdk(@javax.annotation.Nonnull Object googlePayThirdPartySdk) {
     this.googlePayThirdPartySdk = googlePayThirdPartySdk;
   }
 
-
-  public WalletData mbWayRedirect(MbWayRedirection mbWayRedirect) {
+  public WalletData mbWayRedirect(@javax.annotation.Nonnull MbWayRedirection mbWayRedirect) {
     
     this.mbWayRedirect = mbWayRedirect;
     return this;
   }
 
-   /**
+  /**
    * Get mbWayRedirect
    * @return mbWayRedirect
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_MB_WAY_REDIRECT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -569,21 +583,20 @@ public class WalletData {
 
   @JsonProperty(JSON_PROPERTY_MB_WAY_REDIRECT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setMbWayRedirect(MbWayRedirection mbWayRedirect) {
+  public void setMbWayRedirect(@javax.annotation.Nonnull MbWayRedirection mbWayRedirect) {
     this.mbWayRedirect = mbWayRedirect;
   }
 
-
-  public WalletData mobilePayRedirect(Object mobilePayRedirect) {
+  public WalletData mobilePayRedirect(@javax.annotation.Nonnull Object mobilePayRedirect) {
     
     this.mobilePayRedirect = mobilePayRedirect;
     return this;
   }
 
-   /**
+  /**
    * Get mobilePayRedirect
    * @return mobilePayRedirect
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_MOBILE_PAY_REDIRECT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -595,21 +608,20 @@ public class WalletData {
 
   @JsonProperty(JSON_PROPERTY_MOBILE_PAY_REDIRECT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setMobilePayRedirect(Object mobilePayRedirect) {
+  public void setMobilePayRedirect(@javax.annotation.Nonnull Object mobilePayRedirect) {
     this.mobilePayRedirect = mobilePayRedirect;
   }
 
-
-  public WalletData paypalRedirect(PaypalRedirection paypalRedirect) {
+  public WalletData paypalRedirect(@javax.annotation.Nonnull PaypalRedirection paypalRedirect) {
     
     this.paypalRedirect = paypalRedirect;
     return this;
   }
 
-   /**
+  /**
    * Get paypalRedirect
    * @return paypalRedirect
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_PAYPAL_REDIRECT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -621,21 +633,20 @@ public class WalletData {
 
   @JsonProperty(JSON_PROPERTY_PAYPAL_REDIRECT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setPaypalRedirect(PaypalRedirection paypalRedirect) {
+  public void setPaypalRedirect(@javax.annotation.Nonnull PaypalRedirection paypalRedirect) {
     this.paypalRedirect = paypalRedirect;
   }
 
-
-  public WalletData paypalSdk(PayPalWalletData paypalSdk) {
+  public WalletData paypalSdk(@javax.annotation.Nonnull PayPalWalletData paypalSdk) {
     
     this.paypalSdk = paypalSdk;
     return this;
   }
 
-   /**
+  /**
    * Get paypalSdk
    * @return paypalSdk
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_PAYPAL_SDK)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -647,21 +658,20 @@ public class WalletData {
 
   @JsonProperty(JSON_PROPERTY_PAYPAL_SDK)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setPaypalSdk(PayPalWalletData paypalSdk) {
+  public void setPaypalSdk(@javax.annotation.Nonnull PayPalWalletData paypalSdk) {
     this.paypalSdk = paypalSdk;
   }
 
-
-  public WalletData paze(PazeWalletData paze) {
+  public WalletData paze(@javax.annotation.Nonnull PazeWalletData paze) {
     
     this.paze = paze;
     return this;
   }
 
-   /**
+  /**
    * Get paze
    * @return paze
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_PAZE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -673,21 +683,20 @@ public class WalletData {
 
   @JsonProperty(JSON_PROPERTY_PAZE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setPaze(PazeWalletData paze) {
+  public void setPaze(@javax.annotation.Nonnull PazeWalletData paze) {
     this.paze = paze;
   }
 
-
-  public WalletData samsungPay(SamsungPayWalletData samsungPay) {
+  public WalletData samsungPay(@javax.annotation.Nonnull SamsungPayWalletData samsungPay) {
     
     this.samsungPay = samsungPay;
     return this;
   }
 
-   /**
+  /**
    * Get samsungPay
    * @return samsungPay
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_SAMSUNG_PAY)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -699,21 +708,20 @@ public class WalletData {
 
   @JsonProperty(JSON_PROPERTY_SAMSUNG_PAY)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setSamsungPay(SamsungPayWalletData samsungPay) {
+  public void setSamsungPay(@javax.annotation.Nonnull SamsungPayWalletData samsungPay) {
     this.samsungPay = samsungPay;
   }
 
-
-  public WalletData twintRedirect(Object twintRedirect) {
+  public WalletData twintRedirect(@javax.annotation.Nonnull Object twintRedirect) {
     
     this.twintRedirect = twintRedirect;
     return this;
   }
 
-   /**
+  /**
    * Wallet data for Twint Redirection
    * @return twintRedirect
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_TWINT_REDIRECT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -725,21 +733,20 @@ public class WalletData {
 
   @JsonProperty(JSON_PROPERTY_TWINT_REDIRECT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setTwintRedirect(Object twintRedirect) {
+  public void setTwintRedirect(@javax.annotation.Nonnull Object twintRedirect) {
     this.twintRedirect = twintRedirect;
   }
 
-
-  public WalletData vippsRedirect(Object vippsRedirect) {
+  public WalletData vippsRedirect(@javax.annotation.Nonnull Object vippsRedirect) {
     
     this.vippsRedirect = vippsRedirect;
     return this;
   }
 
-   /**
+  /**
    * Wallet data for Vipps Redirection
    * @return vippsRedirect
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_VIPPS_REDIRECT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -751,21 +758,20 @@ public class WalletData {
 
   @JsonProperty(JSON_PROPERTY_VIPPS_REDIRECT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setVippsRedirect(Object vippsRedirect) {
+  public void setVippsRedirect(@javax.annotation.Nonnull Object vippsRedirect) {
     this.vippsRedirect = vippsRedirect;
   }
 
-
-  public WalletData touchNGoRedirect(Object touchNGoRedirect) {
+  public WalletData touchNGoRedirect(@javax.annotation.Nonnull Object touchNGoRedirect) {
     
     this.touchNGoRedirect = touchNGoRedirect;
     return this;
   }
 
-   /**
+  /**
    * Get touchNGoRedirect
    * @return touchNGoRedirect
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_TOUCH_N_GO_REDIRECT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -777,21 +783,20 @@ public class WalletData {
 
   @JsonProperty(JSON_PROPERTY_TOUCH_N_GO_REDIRECT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setTouchNGoRedirect(Object touchNGoRedirect) {
+  public void setTouchNGoRedirect(@javax.annotation.Nonnull Object touchNGoRedirect) {
     this.touchNGoRedirect = touchNGoRedirect;
   }
 
-
-  public WalletData weChatPayRedirect(Object weChatPayRedirect) {
+  public WalletData weChatPayRedirect(@javax.annotation.Nonnull Object weChatPayRedirect) {
     
     this.weChatPayRedirect = weChatPayRedirect;
     return this;
   }
 
-   /**
+  /**
    * Get weChatPayRedirect
    * @return weChatPayRedirect
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_WE_CHAT_PAY_REDIRECT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -803,21 +808,20 @@ public class WalletData {
 
   @JsonProperty(JSON_PROPERTY_WE_CHAT_PAY_REDIRECT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setWeChatPayRedirect(Object weChatPayRedirect) {
+  public void setWeChatPayRedirect(@javax.annotation.Nonnull Object weChatPayRedirect) {
     this.weChatPayRedirect = weChatPayRedirect;
   }
 
-
-  public WalletData weChatPayQr(Object weChatPayQr) {
+  public WalletData weChatPayQr(@javax.annotation.Nonnull Object weChatPayQr) {
     
     this.weChatPayQr = weChatPayQr;
     return this;
   }
 
-   /**
+  /**
    * Get weChatPayQr
    * @return weChatPayQr
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_WE_CHAT_PAY_QR)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -829,21 +833,20 @@ public class WalletData {
 
   @JsonProperty(JSON_PROPERTY_WE_CHAT_PAY_QR)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setWeChatPayQr(Object weChatPayQr) {
+  public void setWeChatPayQr(@javax.annotation.Nonnull Object weChatPayQr) {
     this.weChatPayQr = weChatPayQr;
   }
 
-
-  public WalletData cashappQr(Object cashappQr) {
+  public WalletData cashappQr(@javax.annotation.Nonnull Object cashappQr) {
     
     this.cashappQr = cashappQr;
     return this;
   }
 
-   /**
+  /**
    * Get cashappQr
    * @return cashappQr
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_CASHAPP_QR)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -855,21 +858,20 @@ public class WalletData {
 
   @JsonProperty(JSON_PROPERTY_CASHAPP_QR)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setCashappQr(Object cashappQr) {
+  public void setCashappQr(@javax.annotation.Nonnull Object cashappQr) {
     this.cashappQr = cashappQr;
   }
 
-
-  public WalletData swishQr(Object swishQr) {
+  public WalletData swishQr(@javax.annotation.Nonnull Object swishQr) {
     
     this.swishQr = swishQr;
     return this;
   }
 
-   /**
+  /**
    * Get swishQr
    * @return swishQr
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_SWISH_QR)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -881,21 +883,20 @@ public class WalletData {
 
   @JsonProperty(JSON_PROPERTY_SWISH_QR)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setSwishQr(Object swishQr) {
+  public void setSwishQr(@javax.annotation.Nonnull Object swishQr) {
     this.swishQr = swishQr;
   }
 
-
-  public WalletData mifinity(MifinityData mifinity) {
+  public WalletData mifinity(@javax.annotation.Nonnull MifinityData mifinity) {
     
     this.mifinity = mifinity;
     return this;
   }
 
-   /**
+  /**
    * Get mifinity
    * @return mifinity
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_MIFINITY)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -907,7 +908,7 @@ public class WalletData {
 
   @JsonProperty(JSON_PROPERTY_MIFINITY)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setMifinity(MifinityData mifinity) {
+  public void setMifinity(@javax.annotation.Nonnull MifinityData mifinity) {
     this.mifinity = mifinity;
   }
 

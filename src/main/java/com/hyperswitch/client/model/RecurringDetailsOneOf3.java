@@ -35,13 +35,13 @@ import java.util.StringJoiner;
   RecurringDetailsOneOf3.JSON_PROPERTY_DATA
 })
 @JsonTypeName("RecurringDetails_oneOf_3")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class RecurringDetailsOneOf3 {
   /**
    * Gets or Sets type
    */
   public enum TypeEnum {
-    NETWORK_TRANSACTION_ID_AND_CARD_DETAILS("network_transaction_id_and_card_details");
+    NETWORK_TRANSACTION_ID_AND_CARD_DETAILS(String.valueOf("network_transaction_id_and_card_details"));
 
     private String value;
 
@@ -71,24 +71,26 @@ public class RecurringDetailsOneOf3 {
   }
 
   public static final String JSON_PROPERTY_TYPE = "type";
+  @javax.annotation.Nonnull
   private TypeEnum type;
 
   public static final String JSON_PROPERTY_DATA = "data";
+  @javax.annotation.Nonnull
   private NetworkTransactionIdAndCardDetails data;
 
   public RecurringDetailsOneOf3() {
   }
 
-  public RecurringDetailsOneOf3 type(TypeEnum type) {
+  public RecurringDetailsOneOf3 type(@javax.annotation.Nonnull TypeEnum type) {
     
     this.type = type;
     return this;
   }
 
-   /**
+  /**
    * Get type
    * @return type
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_TYPE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -100,21 +102,20 @@ public class RecurringDetailsOneOf3 {
 
   @JsonProperty(JSON_PROPERTY_TYPE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setType(TypeEnum type) {
+  public void setType(@javax.annotation.Nonnull TypeEnum type) {
     this.type = type;
   }
 
-
-  public RecurringDetailsOneOf3 data(NetworkTransactionIdAndCardDetails data) {
+  public RecurringDetailsOneOf3 data(@javax.annotation.Nonnull NetworkTransactionIdAndCardDetails data) {
     
     this.data = data;
     return this;
   }
 
-   /**
+  /**
    * Get data
    * @return data
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_DATA)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -126,7 +127,7 @@ public class RecurringDetailsOneOf3 {
 
   @JsonProperty(JSON_PROPERTY_DATA)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setData(NetworkTransactionIdAndCardDetails data) {
+  public void setData(@javax.annotation.Nonnull NetworkTransactionIdAndCardDetails data) {
     this.data = data;
   }
 

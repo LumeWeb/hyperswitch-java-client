@@ -33,24 +33,25 @@ import java.util.StringJoiner;
   OpenBankingDataOneOf.JSON_PROPERTY_OPEN_BANKING_PIS
 })
 @JsonTypeName("OpenBankingData_oneOf")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class OpenBankingDataOneOf {
   public static final String JSON_PROPERTY_OPEN_BANKING_PIS = "open_banking_pis";
+  @javax.annotation.Nonnull
   private Object openBankingPis;
 
   public OpenBankingDataOneOf() {
   }
 
-  public OpenBankingDataOneOf openBankingPis(Object openBankingPis) {
+  public OpenBankingDataOneOf openBankingPis(@javax.annotation.Nonnull Object openBankingPis) {
     
     this.openBankingPis = openBankingPis;
     return this;
   }
 
-   /**
+  /**
    * Get openBankingPis
    * @return openBankingPis
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_OPEN_BANKING_PIS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -62,7 +63,7 @@ public class OpenBankingDataOneOf {
 
   @JsonProperty(JSON_PROPERTY_OPEN_BANKING_PIS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setOpenBankingPis(Object openBankingPis) {
+  public void setOpenBankingPis(@javax.annotation.Nonnull Object openBankingPis) {
     this.openBankingPis = openBankingPis;
   }
 

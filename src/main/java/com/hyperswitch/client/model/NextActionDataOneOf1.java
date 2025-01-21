@@ -35,16 +35,17 @@ import java.util.StringJoiner;
   NextActionDataOneOf1.JSON_PROPERTY_TYPE
 })
 @JsonTypeName("NextActionData_oneOf_1")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class NextActionDataOneOf1 {
   public static final String JSON_PROPERTY_BANK_TRANSFER_STEPS_AND_CHARGES_DETAILS = "bank_transfer_steps_and_charges_details";
+  @javax.annotation.Nonnull
   private BankTransferNextStepsData bankTransferStepsAndChargesDetails;
 
   /**
    * Gets or Sets type
    */
   public enum TypeEnum {
-    DISPLAY_BANK_TRANSFER_INFORMATION("display_bank_transfer_information");
+    DISPLAY_BANK_TRANSFER_INFORMATION(String.valueOf("display_bank_transfer_information"));
 
     private String value;
 
@@ -74,21 +75,22 @@ public class NextActionDataOneOf1 {
   }
 
   public static final String JSON_PROPERTY_TYPE = "type";
+  @javax.annotation.Nonnull
   private TypeEnum type;
 
   public NextActionDataOneOf1() {
   }
 
-  public NextActionDataOneOf1 bankTransferStepsAndChargesDetails(BankTransferNextStepsData bankTransferStepsAndChargesDetails) {
+  public NextActionDataOneOf1 bankTransferStepsAndChargesDetails(@javax.annotation.Nonnull BankTransferNextStepsData bankTransferStepsAndChargesDetails) {
     
     this.bankTransferStepsAndChargesDetails = bankTransferStepsAndChargesDetails;
     return this;
   }
 
-   /**
+  /**
    * Get bankTransferStepsAndChargesDetails
    * @return bankTransferStepsAndChargesDetails
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_BANK_TRANSFER_STEPS_AND_CHARGES_DETAILS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -100,21 +102,20 @@ public class NextActionDataOneOf1 {
 
   @JsonProperty(JSON_PROPERTY_BANK_TRANSFER_STEPS_AND_CHARGES_DETAILS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setBankTransferStepsAndChargesDetails(BankTransferNextStepsData bankTransferStepsAndChargesDetails) {
+  public void setBankTransferStepsAndChargesDetails(@javax.annotation.Nonnull BankTransferNextStepsData bankTransferStepsAndChargesDetails) {
     this.bankTransferStepsAndChargesDetails = bankTransferStepsAndChargesDetails;
   }
 
-
-  public NextActionDataOneOf1 type(TypeEnum type) {
+  public NextActionDataOneOf1 type(@javax.annotation.Nonnull TypeEnum type) {
     
     this.type = type;
     return this;
   }
 
-   /**
+  /**
    * Get type
    * @return type
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_TYPE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -126,7 +127,7 @@ public class NextActionDataOneOf1 {
 
   @JsonProperty(JSON_PROPERTY_TYPE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setType(TypeEnum type) {
+  public void setType(@javax.annotation.Nonnull TypeEnum type) {
     this.type = type;
   }
 

@@ -39,30 +39,33 @@ import java.util.StringJoiner;
   BankTransferDataOneOf11Pix.JSON_PROPERTY_CNPJ
 })
 @JsonTypeName("BankTransferData_oneOf_11_pix")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class BankTransferDataOneOf11Pix {
   public static final String JSON_PROPERTY_PIX_KEY = "pix_key";
+  @javax.annotation.Nullable
   private JsonNullable<String> pixKey = JsonNullable.<String>undefined();
 
   public static final String JSON_PROPERTY_CPF = "cpf";
+  @javax.annotation.Nullable
   private JsonNullable<String> cpf = JsonNullable.<String>undefined();
 
   public static final String JSON_PROPERTY_CNPJ = "cnpj";
+  @javax.annotation.Nullable
   private JsonNullable<String> cnpj = JsonNullable.<String>undefined();
 
   public BankTransferDataOneOf11Pix() {
   }
 
-  public BankTransferDataOneOf11Pix pixKey(String pixKey) {
+  public BankTransferDataOneOf11Pix pixKey(@javax.annotation.Nullable String pixKey) {
     this.pixKey = JsonNullable.<String>of(pixKey);
     
     return this;
   }
 
-   /**
+  /**
    * Unique key for pix transfer
    * @return pixKey
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -82,21 +85,20 @@ public class BankTransferDataOneOf11Pix {
     this.pixKey = pixKey;
   }
 
-  public void setPixKey(String pixKey) {
+  public void setPixKey(@javax.annotation.Nullable String pixKey) {
     this.pixKey = JsonNullable.<String>of(pixKey);
   }
 
-
-  public BankTransferDataOneOf11Pix cpf(String cpf) {
+  public BankTransferDataOneOf11Pix cpf(@javax.annotation.Nullable String cpf) {
     this.cpf = JsonNullable.<String>of(cpf);
     
     return this;
   }
 
-   /**
+  /**
    * CPF is a Brazilian tax identification number
    * @return cpf
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -116,21 +118,20 @@ public class BankTransferDataOneOf11Pix {
     this.cpf = cpf;
   }
 
-  public void setCpf(String cpf) {
+  public void setCpf(@javax.annotation.Nullable String cpf) {
     this.cpf = JsonNullable.<String>of(cpf);
   }
 
-
-  public BankTransferDataOneOf11Pix cnpj(String cnpj) {
+  public BankTransferDataOneOf11Pix cnpj(@javax.annotation.Nullable String cnpj) {
     this.cnpj = JsonNullable.<String>of(cnpj);
     
     return this;
   }
 
-   /**
+  /**
    * CNPJ is a Brazilian company tax identification number
    * @return cnpj
-  **/
+   */
   @javax.annotation.Nullable
   @JsonIgnore
 
@@ -150,7 +151,7 @@ public class BankTransferDataOneOf11Pix {
     this.cnpj = cnpj;
   }
 
-  public void setCnpj(String cnpj) {
+  public void setCnpj(@javax.annotation.Nullable String cnpj) {
     this.cnpj = JsonNullable.<String>of(cnpj);
   }
 

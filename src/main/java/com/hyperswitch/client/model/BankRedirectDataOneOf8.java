@@ -34,24 +34,25 @@ import java.util.StringJoiner;
   BankRedirectDataOneOf8.JSON_PROPERTY_ONLINE_BANKING_FINLAND
 })
 @JsonTypeName("BankRedirectData_oneOf_8")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class BankRedirectDataOneOf8 {
   public static final String JSON_PROPERTY_ONLINE_BANKING_FINLAND = "online_banking_finland";
+  @javax.annotation.Nonnull
   private BankRedirectDataOneOf8OnlineBankingFinland onlineBankingFinland;
 
   public BankRedirectDataOneOf8() {
   }
 
-  public BankRedirectDataOneOf8 onlineBankingFinland(BankRedirectDataOneOf8OnlineBankingFinland onlineBankingFinland) {
+  public BankRedirectDataOneOf8 onlineBankingFinland(@javax.annotation.Nonnull BankRedirectDataOneOf8OnlineBankingFinland onlineBankingFinland) {
     
     this.onlineBankingFinland = onlineBankingFinland;
     return this;
   }
 
-   /**
+  /**
    * Get onlineBankingFinland
    * @return onlineBankingFinland
-  **/
+   */
   @javax.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_ONLINE_BANKING_FINLAND)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -63,7 +64,7 @@ public class BankRedirectDataOneOf8 {
 
   @JsonProperty(JSON_PROPERTY_ONLINE_BANKING_FINLAND)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setOnlineBankingFinland(BankRedirectDataOneOf8OnlineBankingFinland onlineBankingFinland) {
+  public void setOnlineBankingFinland(@javax.annotation.Nonnull BankRedirectDataOneOf8OnlineBankingFinland onlineBankingFinland) {
     this.onlineBankingFinland = onlineBankingFinland;
   }
 

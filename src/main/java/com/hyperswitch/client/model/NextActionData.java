@@ -85,34 +85,7 @@ import java.util.StringJoiner;
   @JsonSubTypes.Type(value = NextActionDataOneOf9.class, name = "NextActionData_oneOf_9"),
 })
 
-    public static NextActionDataOneOf1 paymentMethodId(String paymentMethodId) {
-        NextActionDataOneOf1 result = new NextActionDataOneOf1();
-        result.setType(NextActionDataOneOf1.TypeEnum.PAYMENT_METHOD_ID);
-        result.setData(paymentMethodId);
-        return result;
-    }
-
-    public static NextActionDataOneOf mandateId(String mandateId) {
-        NextActionDataOneOf result = new NextActionDataOneOf();
-        result.setType(NextActionDataOneOf.TypeEnum.MANDATE_ID);
-        result.setData(mandateId);
-        return result;
-    }
-
-    public static NextActionDataOneOf2 processorPaymentToken(ProcessorPaymentToken token) {
-        NextActionDataOneOf2 result = new NextActionDataOneOf2();
-        result.setType(NextActionDataOneOf2.TypeEnum.PROCESSOR_PAYMENT_TOKEN);
-        result.setData(token);
-        return result;
-    }
-
-    public static NextActionDataOneOf3 networkTransactionIdAndCardDetails(NetworkTransactionIdAndCardDetails details) {
-        NextActionDataOneOf3 result = new NextActionDataOneOf3();
-        result.setType(NextActionDataOneOf3.TypeEnum.NETWORK_TRANSACTION_ID_AND_CARD_DETAILS);
-        result.setData(details);
-        return result;
-    }
-public class NextActionData extends NextActionData {
+public class NextActionData {
         public static final String JSON_PROPERTY_REDIRECT_TO_URL = "redirect_to_url";
     @javax.annotation.Nonnull
             private String redirectToUrl;

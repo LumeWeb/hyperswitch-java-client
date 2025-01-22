@@ -53,34 +53,7 @@ import java.util.StringJoiner;
   @JsonSubTypes.Type(value = ThreeDsMethodDataOneOf.class, name = "ThreeDsMethodData_oneOf"),
 })
 
-    public static ThreeDsMethodDataOneOf1 paymentMethodId(String paymentMethodId) {
-        ThreeDsMethodDataOneOf1 result = new ThreeDsMethodDataOneOf1();
-        result.setType(ThreeDsMethodDataOneOf1.TypeEnum.PAYMENT_METHOD_ID);
-        result.setData(paymentMethodId);
-        return result;
-    }
-
-    public static ThreeDsMethodDataOneOf mandateId(String mandateId) {
-        ThreeDsMethodDataOneOf result = new ThreeDsMethodDataOneOf();
-        result.setType(ThreeDsMethodDataOneOf.TypeEnum.MANDATE_ID);
-        result.setData(mandateId);
-        return result;
-    }
-
-    public static ThreeDsMethodDataOneOf2 processorPaymentToken(ProcessorPaymentToken token) {
-        ThreeDsMethodDataOneOf2 result = new ThreeDsMethodDataOneOf2();
-        result.setType(ThreeDsMethodDataOneOf2.TypeEnum.PROCESSOR_PAYMENT_TOKEN);
-        result.setData(token);
-        return result;
-    }
-
-    public static ThreeDsMethodDataOneOf3 networkTransactionIdAndCardDetails(NetworkTransactionIdAndCardDetails details) {
-        ThreeDsMethodDataOneOf3 result = new ThreeDsMethodDataOneOf3();
-        result.setType(ThreeDsMethodDataOneOf3.TypeEnum.NETWORK_TRANSACTION_ID_AND_CARD_DETAILS);
-        result.setData(details);
-        return result;
-    }
-public class ThreeDsMethodData extends ThreeDsMethodData {
+public class ThreeDsMethodData {
         public static final String JSON_PROPERTY_THREE_DS_METHOD_DATA_SUBMISSION = "three_ds_method_data_submission";
     @javax.annotation.Nonnull
             private Boolean threeDsMethodDataSubmission;

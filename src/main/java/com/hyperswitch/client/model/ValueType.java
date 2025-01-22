@@ -63,34 +63,7 @@ import java.util.StringJoiner;
   @JsonSubTypes.Type(value = ValueTypeOneOf6.class, name = "ValueType_oneOf_6"),
 })
 
-    public static ValueTypeOneOf1 paymentMethodId(String paymentMethodId) {
-        ValueTypeOneOf1 result = new ValueTypeOneOf1();
-        result.setType(ValueTypeOneOf1.TypeEnum.PAYMENT_METHOD_ID);
-        result.setData(paymentMethodId);
-        return result;
-    }
-
-    public static ValueTypeOneOf mandateId(String mandateId) {
-        ValueTypeOneOf result = new ValueTypeOneOf();
-        result.setType(ValueTypeOneOf.TypeEnum.MANDATE_ID);
-        result.setData(mandateId);
-        return result;
-    }
-
-    public static ValueTypeOneOf2 processorPaymentToken(ProcessorPaymentToken token) {
-        ValueTypeOneOf2 result = new ValueTypeOneOf2();
-        result.setType(ValueTypeOneOf2.TypeEnum.PROCESSOR_PAYMENT_TOKEN);
-        result.setData(token);
-        return result;
-    }
-
-    public static ValueTypeOneOf3 networkTransactionIdAndCardDetails(NetworkTransactionIdAndCardDetails details) {
-        ValueTypeOneOf3 result = new ValueTypeOneOf3();
-        result.setType(ValueTypeOneOf3.TypeEnum.NETWORK_TRANSACTION_ID_AND_CARD_DETAILS);
-        result.setData(details);
-        return result;
-    }
-public class ValueType extends ValueType {
+public class ValueType {
               /**
    * Gets or Sets type
    */

@@ -54,34 +54,7 @@ import java.util.StringJoiner;
   @JsonSubTypes.Type(value = RoutingAlgorithmOneOf1.class, name = "RoutingAlgorithm_oneOf_1"),
 })
 
-    public static RoutingAlgorithmOneOf1 paymentMethodId(String paymentMethodId) {
-        RoutingAlgorithmOneOf1 result = new RoutingAlgorithmOneOf1();
-        result.setType(RoutingAlgorithmOneOf1.TypeEnum.PAYMENT_METHOD_ID);
-        result.setData(paymentMethodId);
-        return result;
-    }
-
-    public static RoutingAlgorithmOneOf mandateId(String mandateId) {
-        RoutingAlgorithmOneOf result = new RoutingAlgorithmOneOf();
-        result.setType(RoutingAlgorithmOneOf.TypeEnum.MANDATE_ID);
-        result.setData(mandateId);
-        return result;
-    }
-
-    public static RoutingAlgorithmOneOf2 processorPaymentToken(ProcessorPaymentToken token) {
-        RoutingAlgorithmOneOf2 result = new RoutingAlgorithmOneOf2();
-        result.setType(RoutingAlgorithmOneOf2.TypeEnum.PROCESSOR_PAYMENT_TOKEN);
-        result.setData(token);
-        return result;
-    }
-
-    public static RoutingAlgorithmOneOf3 networkTransactionIdAndCardDetails(NetworkTransactionIdAndCardDetails details) {
-        RoutingAlgorithmOneOf3 result = new RoutingAlgorithmOneOf3();
-        result.setType(RoutingAlgorithmOneOf3.TypeEnum.NETWORK_TRANSACTION_ID_AND_CARD_DETAILS);
-        result.setData(details);
-        return result;
-    }
-public class RoutingAlgorithm extends RoutingAlgorithm {
+public class RoutingAlgorithm {
               /**
    * Gets or Sets type
    */

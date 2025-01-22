@@ -56,34 +56,7 @@ import java.util.StringJoiner;
   @JsonSubTypes.Type(value = RefundResponse1.class, name = "RefundResponse_1"),
 })
 
-    public static OutgoingWebhookContentOneOf1 paymentMethodId(String paymentMethodId) {
-        OutgoingWebhookContentOneOf1 result = new OutgoingWebhookContentOneOf1();
-        result.setType(OutgoingWebhookContentOneOf1.TypeEnum.PAYMENT_METHOD_ID);
-        result.setData(paymentMethodId);
-        return result;
-    }
-
-    public static OutgoingWebhookContentOneOf mandateId(String mandateId) {
-        OutgoingWebhookContentOneOf result = new OutgoingWebhookContentOneOf();
-        result.setType(OutgoingWebhookContentOneOf.TypeEnum.MANDATE_ID);
-        result.setData(mandateId);
-        return result;
-    }
-
-    public static OutgoingWebhookContentOneOf2 processorPaymentToken(ProcessorPaymentToken token) {
-        OutgoingWebhookContentOneOf2 result = new OutgoingWebhookContentOneOf2();
-        result.setType(OutgoingWebhookContentOneOf2.TypeEnum.PROCESSOR_PAYMENT_TOKEN);
-        result.setData(token);
-        return result;
-    }
-
-    public static OutgoingWebhookContentOneOf3 networkTransactionIdAndCardDetails(NetworkTransactionIdAndCardDetails details) {
-        OutgoingWebhookContentOneOf3 result = new OutgoingWebhookContentOneOf3();
-        result.setType(OutgoingWebhookContentOneOf3.TypeEnum.NETWORK_TRANSACTION_ID_AND_CARD_DETAILS);
-        result.setData(details);
-        return result;
-    }
-public class OutgoingWebhookContent extends OutgoingWebhookContent {
+public class OutgoingWebhookContent {
               /**
    * Gets or Sets type
    */

@@ -50,34 +50,7 @@ import java.util.StringJoiner;
   @JsonSubTypes.Type(value = PaymentProcessingDetailsAtOneOf1.class, name = "PaymentProcessingDetailsAt_oneOf_1"),
 })
 
-    public static PaymentProcessingDetailsAtOneOf1 paymentMethodId(String paymentMethodId) {
-        PaymentProcessingDetailsAtOneOf1 result = new PaymentProcessingDetailsAtOneOf1();
-        result.setType(PaymentProcessingDetailsAtOneOf1.TypeEnum.PAYMENT_METHOD_ID);
-        result.setData(paymentMethodId);
-        return result;
-    }
-
-    public static PaymentProcessingDetailsAtOneOf mandateId(String mandateId) {
-        PaymentProcessingDetailsAtOneOf result = new PaymentProcessingDetailsAtOneOf();
-        result.setType(PaymentProcessingDetailsAtOneOf.TypeEnum.MANDATE_ID);
-        result.setData(mandateId);
-        return result;
-    }
-
-    public static PaymentProcessingDetailsAtOneOf2 processorPaymentToken(ProcessorPaymentToken token) {
-        PaymentProcessingDetailsAtOneOf2 result = new PaymentProcessingDetailsAtOneOf2();
-        result.setType(PaymentProcessingDetailsAtOneOf2.TypeEnum.PROCESSOR_PAYMENT_TOKEN);
-        result.setData(token);
-        return result;
-    }
-
-    public static PaymentProcessingDetailsAtOneOf3 networkTransactionIdAndCardDetails(NetworkTransactionIdAndCardDetails details) {
-        PaymentProcessingDetailsAtOneOf3 result = new PaymentProcessingDetailsAtOneOf3();
-        result.setType(PaymentProcessingDetailsAtOneOf3.TypeEnum.NETWORK_TRANSACTION_ID_AND_CARD_DETAILS);
-        result.setData(details);
-        return result;
-    }
-public class PaymentProcessingDetailsAt extends PaymentProcessingDetailsAt {
+public class PaymentProcessingDetailsAt {
         public static final String JSON_PROPERTY_PAYMENT_PROCESSING_CERTIFICATE = "payment_processing_certificate";
     @javax.annotation.Nonnull
             private String paymentProcessingCertificate;

@@ -57,34 +57,7 @@ import java.util.StringJoiner;
 )
 @JsonTypeInfo(use = JsonTypeInfo.Id.NAME, include = JsonTypeInfo.As.PROPERTY, property = "payment_processing_details_at", visible = true)
 
-    public static SessionTokenInfoOneOf1 paymentMethodId(String paymentMethodId) {
-        SessionTokenInfoOneOf1 result = new SessionTokenInfoOneOf1();
-        result.setType(SessionTokenInfoOneOf1.TypeEnum.PAYMENT_METHOD_ID);
-        result.setData(paymentMethodId);
-        return result;
-    }
-
-    public static SessionTokenInfoOneOf mandateId(String mandateId) {
-        SessionTokenInfoOneOf result = new SessionTokenInfoOneOf();
-        result.setType(SessionTokenInfoOneOf.TypeEnum.MANDATE_ID);
-        result.setData(mandateId);
-        return result;
-    }
-
-    public static SessionTokenInfoOneOf2 processorPaymentToken(ProcessorPaymentToken token) {
-        SessionTokenInfoOneOf2 result = new SessionTokenInfoOneOf2();
-        result.setType(SessionTokenInfoOneOf2.TypeEnum.PROCESSOR_PAYMENT_TOKEN);
-        result.setData(token);
-        return result;
-    }
-
-    public static SessionTokenInfoOneOf3 networkTransactionIdAndCardDetails(NetworkTransactionIdAndCardDetails details) {
-        SessionTokenInfoOneOf3 result = new SessionTokenInfoOneOf3();
-        result.setType(SessionTokenInfoOneOf3.TypeEnum.NETWORK_TRANSACTION_ID_AND_CARD_DETAILS);
-        result.setData(details);
-        return result;
-    }
-public class SessionTokenInfo extends SessionTokenInfo {
+public class SessionTokenInfo {
         public static final String JSON_PROPERTY_PAYMENT_PROCESSING_CERTIFICATE = "payment_processing_certificate";
     @javax.annotation.Nonnull
             private String paymentProcessingCertificate;

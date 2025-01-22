@@ -55,34 +55,7 @@ import java.util.StringJoiner;
   @JsonSubTypes.Type(value = AcceptedCurrenciesOneOf1.class, name = "AcceptedCurrencies_oneOf_1"),
 })
 
-    public static AcceptedCurrenciesOneOf1 paymentMethodId(String paymentMethodId) {
-        AcceptedCurrenciesOneOf1 result = new AcceptedCurrenciesOneOf1();
-        result.setType(AcceptedCurrenciesOneOf1.TypeEnum.PAYMENT_METHOD_ID);
-        result.setData(paymentMethodId);
-        return result;
-    }
-
-    public static AcceptedCurrenciesOneOf mandateId(String mandateId) {
-        AcceptedCurrenciesOneOf result = new AcceptedCurrenciesOneOf();
-        result.setType(AcceptedCurrenciesOneOf.TypeEnum.MANDATE_ID);
-        result.setData(mandateId);
-        return result;
-    }
-
-    public static AcceptedCurrenciesOneOf2 processorPaymentToken(ProcessorPaymentToken token) {
-        AcceptedCurrenciesOneOf2 result = new AcceptedCurrenciesOneOf2();
-        result.setType(AcceptedCurrenciesOneOf2.TypeEnum.PROCESSOR_PAYMENT_TOKEN);
-        result.setData(token);
-        return result;
-    }
-
-    public static AcceptedCurrenciesOneOf3 networkTransactionIdAndCardDetails(NetworkTransactionIdAndCardDetails details) {
-        AcceptedCurrenciesOneOf3 result = new AcceptedCurrenciesOneOf3();
-        result.setType(AcceptedCurrenciesOneOf3.TypeEnum.NETWORK_TRANSACTION_ID_AND_CARD_DETAILS);
-        result.setData(details);
-        return result;
-    }
-public class AcceptedCurrencies extends AcceptedCurrencies {
+public class AcceptedCurrencies {
               /**
    * Gets or Sets type
    */

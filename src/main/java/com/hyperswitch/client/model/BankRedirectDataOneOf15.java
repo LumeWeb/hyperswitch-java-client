@@ -28,121 +28,122 @@ import java.net.URLEncoder;
 import java.util.StringJoiner;
 
 /**
- * BankRedirectDataOneOf15
- */
-@JsonPropertyOrder({
-  BankRedirectDataOneOf15.JSON_PROPERTY_ONLINE_BANKING_FPX
-})
-@JsonTypeName("BankRedirectData_oneOf_15")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+* BankRedirectDataOneOf15
+*/
+    @JsonPropertyOrder({
+        BankRedirectDataOneOf15.JSON_PROPERTY_ONLINE_BANKING_FPX
+    })
+            @JsonTypeName("BankRedirectData_oneOf_15")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class BankRedirectDataOneOf15 {
-  public static final String JSON_PROPERTY_ONLINE_BANKING_FPX = "online_banking_fpx";
-  private BankRedirectDataOneOf7OnlineBankingCzechRepublic onlineBankingFpx;
+        public static final String JSON_PROPERTY_ONLINE_BANKING_FPX = "online_banking_fpx";
+    @javax.annotation.Nonnull
+            private BankRedirectDataOneOf7OnlineBankingCzechRepublic onlineBankingFpx;
 
-  public BankRedirectDataOneOf15() {
-  }
+public BankRedirectDataOneOf15() {
+}
 
-  public BankRedirectDataOneOf15 onlineBankingFpx(BankRedirectDataOneOf7OnlineBankingCzechRepublic onlineBankingFpx) {
-    
-    this.onlineBankingFpx = onlineBankingFpx;
-    return this;
-  }
+        public BankRedirectDataOneOf15 onlineBankingFpx(@javax.annotation.Nonnull BankRedirectDataOneOf7OnlineBankingCzechRepublic onlineBankingFpx) {
+        
+        this.onlineBankingFpx = onlineBankingFpx;
+        return this;
+        }
 
-   /**
-   * Get onlineBankingFpx
-   * @return onlineBankingFpx
-  **/
-  @javax.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_ONLINE_BANKING_FPX)
+    /**
+        * Get onlineBankingFpx
+    * @return onlineBankingFpx
+    */
+    @javax.annotation.Nonnull
+      @JsonProperty(JSON_PROPERTY_ONLINE_BANKING_FPX)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-  public BankRedirectDataOneOf7OnlineBankingCzechRepublic getOnlineBankingFpx() {
-    return onlineBankingFpx;
-  }
+    public BankRedirectDataOneOf7OnlineBankingCzechRepublic getOnlineBankingFpx() {
+        return onlineBankingFpx;
+    }
 
 
-  @JsonProperty(JSON_PROPERTY_ONLINE_BANKING_FPX)
+          @JsonProperty(JSON_PROPERTY_ONLINE_BANKING_FPX)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setOnlineBankingFpx(BankRedirectDataOneOf7OnlineBankingCzechRepublic onlineBankingFpx) {
-    this.onlineBankingFpx = onlineBankingFpx;
-  }
+  public void setOnlineBankingFpx(@javax.annotation.Nonnull BankRedirectDataOneOf7OnlineBankingCzechRepublic onlineBankingFpx) {
+            this.onlineBankingFpx = onlineBankingFpx;
+        }
 
-  @Override
-  public boolean equals(Object o) {
+@Override
+public boolean equals(Object o) {
     if (this == o) {
-      return true;
+    return true;
     }
     if (o == null || getClass() != o.getClass()) {
-      return false;
+    return false;
     }
-    BankRedirectDataOneOf15 bankRedirectDataOneOf15 = (BankRedirectDataOneOf15) o;
-    return Objects.equals(this.onlineBankingFpx, bankRedirectDataOneOf15.onlineBankingFpx);
-  }
+        BankRedirectDataOneOf15 bankRedirectDataOneOf15 = (BankRedirectDataOneOf15) o;
+        return Objects.equals(this.onlineBankingFpx, bankRedirectDataOneOf15.onlineBankingFpx);
+}
 
-  @Override
-  public int hashCode() {
-    return Objects.hash(onlineBankingFpx);
-  }
+    @Override
+    public int hashCode() {
+        return Objects.hash(onlineBankingFpx);
+    }
 
-  @Override
-  public String toString() {
+    @Override
+    public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class BankRedirectDataOneOf15 {\n");
-    sb.append("    onlineBankingFpx: ").append(toIndentedString(onlineBankingFpx)).append("\n");
+        sb.append("    onlineBankingFpx: ").append(toIndentedString(onlineBankingFpx)).append("\n");
     sb.append("}");
     return sb.toString();
-  }
+    }
 
-  /**
-   * Convert the given object to string with each line indented by 4 spaces
-   * (except the first line).
-   */
-  private String toIndentedString(Object o) {
+    /**
+    * Convert the given object to string with each line indented by 4 spaces
+    * (except the first line).
+    */
+    private String toIndentedString(Object o) {
     if (o == null) {
-      return "null";
+    return "null";
     }
     return o.toString().replace("\n", "\n    ");
-  }
-
-  /**
-   * Convert the instance into URL query string.
-   *
-   * @return URL query string
-   */
-  public String toUrlQueryString() {
-    return toUrlQueryString(null);
-  }
-
-  /**
-   * Convert the instance into URL query string.
-   *
-   * @param prefix prefix of the query string
-   * @return URL query string
-   */
-  public String toUrlQueryString(String prefix) {
-    String suffix = "";
-    String containerSuffix = "";
-    String containerPrefix = "";
-    if (prefix == null) {
-      // style=form, explode=true, e.g. /pet?name=cat&type=manx
-      prefix = "";
-    } else {
-      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
-      prefix = prefix + "[";
-      suffix = "]";
-      containerSuffix = "]";
-      containerPrefix = "[";
     }
 
-    StringJoiner joiner = new StringJoiner("&");
+        /**
+        * Convert the instance into URL query string.
+        *
+        * @return URL query string
+        */
+        public String toUrlQueryString() {
+        return toUrlQueryString(null);
+        }
 
-    // add `online_banking_fpx` to the URL query string
-    if (getOnlineBankingFpx() != null) {
-      joiner.add(getOnlineBankingFpx().toUrlQueryString(prefix + "online_banking_fpx" + suffix));
+        /**
+        * Convert the instance into URL query string.
+        *
+        * @param prefix prefix of the query string
+        * @return URL query string
+        */
+        public String toUrlQueryString(String prefix) {
+        String suffix = "";
+        String containerSuffix = "";
+        String containerPrefix = "";
+        if (prefix == null) {
+        // style=form, explode=true, e.g. /pet?name=cat&type=manx
+        prefix = "";
+        } else {
+        // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+        prefix = prefix + "[";
+        suffix = "]";
+        containerSuffix = "]";
+        containerPrefix = "[";
+        }
+
+        StringJoiner joiner = new StringJoiner("&");
+
+            // add `online_banking_fpx` to the URL query string
+                            if (getOnlineBankingFpx() != null) {
+                            joiner.add(getOnlineBankingFpx().toUrlQueryString(prefix + "online_banking_fpx" + suffix));
+                            }
+
+        return joiner.toString();
+        }
+
     }
-
-    return joiner.toString();
-  }
-
-}
 

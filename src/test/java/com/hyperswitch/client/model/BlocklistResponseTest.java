@@ -20,22 +20,21 @@ import com.fasterxml.jackson.annotation.JsonTypeName;
 import com.fasterxml.jackson.annotation.JsonValue;
 import com.hyperswitch.client.model.BlocklistDataKind;
 import java.time.OffsetDateTime;
-import org.junit.Assert;
-import org.junit.Ignore;
-import org.junit.Test;
-
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Test;
 
 /**
  * Model tests for BlocklistResponse
  */
-public class BlocklistResponseTest {
+class BlocklistResponseTest {
     private final BlocklistResponse model = new BlocklistResponse();
 
     /**
      * Model tests for BlocklistResponse
      */
     @Test
-    public void testBlocklistResponse() {
+    void testBlocklistResponse() {
         // TODO: test BlocklistResponse
     }
 
@@ -43,7 +42,7 @@ public class BlocklistResponseTest {
      * Test the property 'fingerprintId'
      */
     @Test
-    public void fingerprintIdTest() {
+    void fingerprintIdTest() {
         // TODO: test fingerprintId
     }
 
@@ -51,7 +50,7 @@ public class BlocklistResponseTest {
      * Test the property 'dataKind'
      */
     @Test
-    public void dataKindTest() {
+    void dataKindTest() {
         // TODO: test dataKind
     }
 
@@ -59,7 +58,7 @@ public class BlocklistResponseTest {
      * Test the property 'createdAt'
      */
     @Test
-    public void createdAtTest() {
+    void createdAtTest() {
         // TODO: test createdAt
     }
 

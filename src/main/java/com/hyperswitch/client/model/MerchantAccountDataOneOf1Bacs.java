@@ -31,271 +31,272 @@ import java.net.URLEncoder;
 import java.util.StringJoiner;
 
 /**
- * MerchantAccountDataOneOf1Bacs
- */
-@JsonPropertyOrder({
-  MerchantAccountDataOneOf1Bacs.JSON_PROPERTY_ACCOUNT_NUMBER,
-  MerchantAccountDataOneOf1Bacs.JSON_PROPERTY_SORT_CODE,
-  MerchantAccountDataOneOf1Bacs.JSON_PROPERTY_NAME,
-  MerchantAccountDataOneOf1Bacs.JSON_PROPERTY_CONNECTOR_RECIPIENT_ID
-})
-@JsonTypeName("MerchantAccountData_oneOf_1_bacs")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+* MerchantAccountDataOneOf1Bacs
+*/
+    @JsonPropertyOrder({
+        MerchantAccountDataOneOf1Bacs.JSON_PROPERTY_ACCOUNT_NUMBER,
+        MerchantAccountDataOneOf1Bacs.JSON_PROPERTY_SORT_CODE,
+        MerchantAccountDataOneOf1Bacs.JSON_PROPERTY_NAME,
+        MerchantAccountDataOneOf1Bacs.JSON_PROPERTY_CONNECTOR_RECIPIENT_ID
+    })
+            @JsonTypeName("MerchantAccountData_oneOf_1_bacs")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class MerchantAccountDataOneOf1Bacs {
-  public static final String JSON_PROPERTY_ACCOUNT_NUMBER = "account_number";
-  private String accountNumber;
+        public static final String JSON_PROPERTY_ACCOUNT_NUMBER = "account_number";
+    @javax.annotation.Nonnull
+            private String accountNumber;
 
-  public static final String JSON_PROPERTY_SORT_CODE = "sort_code";
-  private String sortCode;
+        public static final String JSON_PROPERTY_SORT_CODE = "sort_code";
+    @javax.annotation.Nonnull
+            private String sortCode;
 
-  public static final String JSON_PROPERTY_NAME = "name";
-  private String name;
+        public static final String JSON_PROPERTY_NAME = "name";
+    @javax.annotation.Nonnull
+            private String name;
 
-  public static final String JSON_PROPERTY_CONNECTOR_RECIPIENT_ID = "connector_recipient_id";
-  private JsonNullable<String> connectorRecipientId = JsonNullable.<String>undefined();
+        public static final String JSON_PROPERTY_CONNECTOR_RECIPIENT_ID = "connector_recipient_id";
+    @javax.annotation.Nullable
+            private JsonNullable<String> connectorRecipientId = JsonNullable.<String>undefined();
 
-  public MerchantAccountDataOneOf1Bacs() {
-  }
+public MerchantAccountDataOneOf1Bacs() {
+}
 
-  public MerchantAccountDataOneOf1Bacs accountNumber(String accountNumber) {
+        public MerchantAccountDataOneOf1Bacs accountNumber(@javax.annotation.Nonnull String accountNumber) {
+        
+        this.accountNumber = accountNumber;
+        return this;
+        }
+
+    /**
+        * Get accountNumber
+    * @return accountNumber
+    */
+    @javax.annotation.Nonnull
+      @JsonProperty(JSON_PROPERTY_ACCOUNT_NUMBER)
+  @JsonInclude(value = JsonInclude.Include.ALWAYS)
+
+    public String getAccountNumber() {
+        return accountNumber;
+    }
+
+
+          @JsonProperty(JSON_PROPERTY_ACCOUNT_NUMBER)
+  @JsonInclude(value = JsonInclude.Include.ALWAYS)
+  public void setAccountNumber(@javax.annotation.Nonnull String accountNumber) {
+            this.accountNumber = accountNumber;
+        }
+
+        public MerchantAccountDataOneOf1Bacs sortCode(@javax.annotation.Nonnull String sortCode) {
+        
+        this.sortCode = sortCode;
+        return this;
+        }
+
+    /**
+        * Get sortCode
+    * @return sortCode
+    */
+    @javax.annotation.Nonnull
+      @JsonProperty(JSON_PROPERTY_SORT_CODE)
+  @JsonInclude(value = JsonInclude.Include.ALWAYS)
+
+    public String getSortCode() {
+        return sortCode;
+    }
+
+
+          @JsonProperty(JSON_PROPERTY_SORT_CODE)
+  @JsonInclude(value = JsonInclude.Include.ALWAYS)
+  public void setSortCode(@javax.annotation.Nonnull String sortCode) {
+            this.sortCode = sortCode;
+        }
+
+        public MerchantAccountDataOneOf1Bacs name(@javax.annotation.Nonnull String name) {
+        
+        this.name = name;
+        return this;
+        }
+
+    /**
+        * Get name
+    * @return name
+    */
+    @javax.annotation.Nonnull
+      @JsonProperty(JSON_PROPERTY_NAME)
+  @JsonInclude(value = JsonInclude.Include.ALWAYS)
+
+    public String getName() {
+        return name;
+    }
+
+
+          @JsonProperty(JSON_PROPERTY_NAME)
+  @JsonInclude(value = JsonInclude.Include.ALWAYS)
+  public void setName(@javax.annotation.Nonnull String name) {
+            this.name = name;
+        }
+
+        public MerchantAccountDataOneOf1Bacs connectorRecipientId(@javax.annotation.Nullable String connectorRecipientId) {
+        this.connectorRecipientId = JsonNullable.<String>of(connectorRecipientId);
+        
+        return this;
+        }
+
+    /**
+        * Get connectorRecipientId
+    * @return connectorRecipientId
+    */
+    @javax.annotation.Nullable
+        @JsonIgnore
     
-    this.accountNumber = accountNumber;
-    return this;
-  }
+    public String getConnectorRecipientId() {
+                return connectorRecipientId.orElse(null);
+    }
 
-   /**
-   * Get accountNumber
-   * @return accountNumber
-  **/
-  @javax.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_ACCOUNT_NUMBER)
-  @JsonInclude(value = JsonInclude.Include.ALWAYS)
-
-  public String getAccountNumber() {
-    return accountNumber;
-  }
-
-
-  @JsonProperty(JSON_PROPERTY_ACCOUNT_NUMBER)
-  @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setAccountNumber(String accountNumber) {
-    this.accountNumber = accountNumber;
-  }
-
-
-  public MerchantAccountDataOneOf1Bacs sortCode(String sortCode) {
-    
-    this.sortCode = sortCode;
-    return this;
-  }
-
-   /**
-   * Get sortCode
-   * @return sortCode
-  **/
-  @javax.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_SORT_CODE)
-  @JsonInclude(value = JsonInclude.Include.ALWAYS)
-
-  public String getSortCode() {
-    return sortCode;
-  }
-
-
-  @JsonProperty(JSON_PROPERTY_SORT_CODE)
-  @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setSortCode(String sortCode) {
-    this.sortCode = sortCode;
-  }
-
-
-  public MerchantAccountDataOneOf1Bacs name(String name) {
-    
-    this.name = name;
-    return this;
-  }
-
-   /**
-   * Get name
-   * @return name
-  **/
-  @javax.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_NAME)
-  @JsonInclude(value = JsonInclude.Include.ALWAYS)
-
-  public String getName() {
-    return name;
-  }
-
-
-  @JsonProperty(JSON_PROPERTY_NAME)
-  @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setName(String name) {
-    this.name = name;
-  }
-
-
-  public MerchantAccountDataOneOf1Bacs connectorRecipientId(String connectorRecipientId) {
-    this.connectorRecipientId = JsonNullable.<String>of(connectorRecipientId);
-    
-    return this;
-  }
-
-   /**
-   * Get connectorRecipientId
-   * @return connectorRecipientId
-  **/
-  @javax.annotation.Nullable
-  @JsonIgnore
-
-  public String getConnectorRecipientId() {
-        return connectorRecipientId.orElse(null);
-  }
-
-  @JsonProperty(JSON_PROPERTY_CONNECTOR_RECIPIENT_ID)
+          @JsonProperty(JSON_PROPERTY_CONNECTOR_RECIPIENT_ID)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-  public JsonNullable<String> getConnectorRecipientId_JsonNullable() {
-    return connectorRecipientId;
-  }
-  
-  @JsonProperty(JSON_PROPERTY_CONNECTOR_RECIPIENT_ID)
-  public void setConnectorRecipientId_JsonNullable(JsonNullable<String> connectorRecipientId) {
-    this.connectorRecipientId = connectorRecipientId;
-  }
+        public JsonNullable<String> getConnectorRecipientId_JsonNullable() {
+        return connectorRecipientId;
+        }
+    
+        @JsonProperty(JSON_PROPERTY_CONNECTOR_RECIPIENT_ID)
+        public void setConnectorRecipientId_JsonNullable(JsonNullable<String> connectorRecipientId) {
+        this.connectorRecipientId = connectorRecipientId;
+        }
 
-  public void setConnectorRecipientId(String connectorRecipientId) {
-    this.connectorRecipientId = JsonNullable.<String>of(connectorRecipientId);
-  }
+          public void setConnectorRecipientId(@javax.annotation.Nullable String connectorRecipientId) {
+            this.connectorRecipientId = JsonNullable.<String>of(connectorRecipientId);
+        }
 
-  @Override
-  public boolean equals(Object o) {
+@Override
+public boolean equals(Object o) {
     if (this == o) {
-      return true;
+    return true;
     }
     if (o == null || getClass() != o.getClass()) {
-      return false;
+    return false;
     }
-    MerchantAccountDataOneOf1Bacs merchantAccountDataOneOf1Bacs = (MerchantAccountDataOneOf1Bacs) o;
-    return Objects.equals(this.accountNumber, merchantAccountDataOneOf1Bacs.accountNumber) &&
+        MerchantAccountDataOneOf1Bacs merchantAccountDataOneOf1Bacs = (MerchantAccountDataOneOf1Bacs) o;
+        return Objects.equals(this.accountNumber, merchantAccountDataOneOf1Bacs.accountNumber) &&
         Objects.equals(this.sortCode, merchantAccountDataOneOf1Bacs.sortCode) &&
         Objects.equals(this.name, merchantAccountDataOneOf1Bacs.name) &&
         equalsNullable(this.connectorRecipientId, merchantAccountDataOneOf1Bacs.connectorRecipientId);
-  }
+}
 
-  private static <T> boolean equalsNullable(JsonNullable<T> a, JsonNullable<T> b) {
-    return a == b || (a != null && b != null && a.isPresent() && b.isPresent() && Objects.deepEquals(a.get(), b.get()));
-  }
+    private static <T> boolean equalsNullable(JsonNullable<T> a, JsonNullable<T> b) {
+        return a == b || (a != null && b != null && a.isPresent() && b.isPresent() && Objects.deepEquals(a.get(), b.get()));
+        }
 
-  @Override
-  public int hashCode() {
-    return Objects.hash(accountNumber, sortCode, name, hashCodeNullable(connectorRecipientId));
-  }
-
-  private static <T> int hashCodeNullable(JsonNullable<T> a) {
-    if (a == null) {
-      return 1;
+    @Override
+    public int hashCode() {
+        return Objects.hash(accountNumber, sortCode, name, hashCodeNullable(connectorRecipientId));
     }
-    return a.isPresent() ? Arrays.deepHashCode(new Object[]{a.get()}) : 31;
-  }
 
-  @Override
-  public String toString() {
+        private static <T> int hashCodeNullable(JsonNullable<T> a) {
+        if (a == null) {
+        return 1;
+        }
+        return a.isPresent() ? Arrays.deepHashCode(new Object[]{a.get()}) : 31;
+        }
+
+    @Override
+    public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class MerchantAccountDataOneOf1Bacs {\n");
-    sb.append("    accountNumber: ").append(toIndentedString(accountNumber)).append("\n");
-    sb.append("    sortCode: ").append(toIndentedString(sortCode)).append("\n");
-    sb.append("    name: ").append(toIndentedString(name)).append("\n");
-    sb.append("    connectorRecipientId: ").append(toIndentedString(connectorRecipientId)).append("\n");
+        sb.append("    accountNumber: ").append(toIndentedString(accountNumber)).append("\n");
+        sb.append("    sortCode: ").append(toIndentedString(sortCode)).append("\n");
+        sb.append("    name: ").append(toIndentedString(name)).append("\n");
+        sb.append("    connectorRecipientId: ").append(toIndentedString(connectorRecipientId)).append("\n");
     sb.append("}");
     return sb.toString();
-  }
+    }
 
-  /**
-   * Convert the given object to string with each line indented by 4 spaces
-   * (except the first line).
-   */
-  private String toIndentedString(Object o) {
+    /**
+    * Convert the given object to string with each line indented by 4 spaces
+    * (except the first line).
+    */
+    private String toIndentedString(Object o) {
     if (o == null) {
-      return "null";
+    return "null";
     }
     return o.toString().replace("\n", "\n    ");
-  }
-
-  /**
-   * Convert the instance into URL query string.
-   *
-   * @return URL query string
-   */
-  public String toUrlQueryString() {
-    return toUrlQueryString(null);
-  }
-
-  /**
-   * Convert the instance into URL query string.
-   *
-   * @param prefix prefix of the query string
-   * @return URL query string
-   */
-  public String toUrlQueryString(String prefix) {
-    String suffix = "";
-    String containerSuffix = "";
-    String containerPrefix = "";
-    if (prefix == null) {
-      // style=form, explode=true, e.g. /pet?name=cat&type=manx
-      prefix = "";
-    } else {
-      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
-      prefix = prefix + "[";
-      suffix = "]";
-      containerSuffix = "]";
-      containerPrefix = "[";
     }
 
-    StringJoiner joiner = new StringJoiner("&");
+        /**
+        * Convert the instance into URL query string.
+        *
+        * @return URL query string
+        */
+        public String toUrlQueryString() {
+        return toUrlQueryString(null);
+        }
 
-    // add `account_number` to the URL query string
-    if (getAccountNumber() != null) {
-      try {
-        joiner.add(String.format("%saccount_number%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getAccountNumber()), "UTF-8").replaceAll("\\+", "%20")));
-      } catch (UnsupportedEncodingException e) {
-        // Should never happen, UTF-8 is always supported
-        throw new RuntimeException(e);
-      }
+        /**
+        * Convert the instance into URL query string.
+        *
+        * @param prefix prefix of the query string
+        * @return URL query string
+        */
+        public String toUrlQueryString(String prefix) {
+        String suffix = "";
+        String containerSuffix = "";
+        String containerPrefix = "";
+        if (prefix == null) {
+        // style=form, explode=true, e.g. /pet?name=cat&type=manx
+        prefix = "";
+        } else {
+        // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+        prefix = prefix + "[";
+        suffix = "]";
+        containerSuffix = "]";
+        containerPrefix = "[";
+        }
+
+        StringJoiner joiner = new StringJoiner("&");
+
+            // add `account_number` to the URL query string
+                        if (getAccountNumber() != null) {
+                        try {
+                        joiner.add(String.format("%saccount_number%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getAccountNumber()), "UTF-8").replaceAll("\\+", "%20")));
+                        } catch (UnsupportedEncodingException e) {
+                        // Should never happen, UTF-8 is always supported
+                        throw new RuntimeException(e);
+                        }
+                        }
+
+            // add `sort_code` to the URL query string
+                        if (getSortCode() != null) {
+                        try {
+                        joiner.add(String.format("%ssort_code%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getSortCode()), "UTF-8").replaceAll("\\+", "%20")));
+                        } catch (UnsupportedEncodingException e) {
+                        // Should never happen, UTF-8 is always supported
+                        throw new RuntimeException(e);
+                        }
+                        }
+
+            // add `name` to the URL query string
+                        if (getName() != null) {
+                        try {
+                        joiner.add(String.format("%sname%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getName()), "UTF-8").replaceAll("\\+", "%20")));
+                        } catch (UnsupportedEncodingException e) {
+                        // Should never happen, UTF-8 is always supported
+                        throw new RuntimeException(e);
+                        }
+                        }
+
+            // add `connector_recipient_id` to the URL query string
+                        if (getConnectorRecipientId() != null) {
+                        try {
+                        joiner.add(String.format("%sconnector_recipient_id%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getConnectorRecipientId()), "UTF-8").replaceAll("\\+", "%20")));
+                        } catch (UnsupportedEncodingException e) {
+                        // Should never happen, UTF-8 is always supported
+                        throw new RuntimeException(e);
+                        }
+                        }
+
+        return joiner.toString();
+        }
+
     }
-
-    // add `sort_code` to the URL query string
-    if (getSortCode() != null) {
-      try {
-        joiner.add(String.format("%ssort_code%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getSortCode()), "UTF-8").replaceAll("\\+", "%20")));
-      } catch (UnsupportedEncodingException e) {
-        // Should never happen, UTF-8 is always supported
-        throw new RuntimeException(e);
-      }
-    }
-
-    // add `name` to the URL query string
-    if (getName() != null) {
-      try {
-        joiner.add(String.format("%sname%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getName()), "UTF-8").replaceAll("\\+", "%20")));
-      } catch (UnsupportedEncodingException e) {
-        // Should never happen, UTF-8 is always supported
-        throw new RuntimeException(e);
-      }
-    }
-
-    // add `connector_recipient_id` to the URL query string
-    if (getConnectorRecipientId() != null) {
-      try {
-        joiner.add(String.format("%sconnector_recipient_id%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getConnectorRecipientId()), "UTF-8").replaceAll("\\+", "%20")));
-      } catch (UnsupportedEncodingException e) {
-        // Should never happen, UTF-8 is always supported
-        throw new RuntimeException(e);
-      }
-    }
-
-    return joiner.toString();
-  }
-
-}
 

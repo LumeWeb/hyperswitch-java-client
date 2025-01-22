@@ -29,209 +29,210 @@ import java.net.URLEncoder;
 import java.util.StringJoiner;
 
 /**
- * SamsungPayAmountDetails
- */
-@JsonPropertyOrder({
-  SamsungPayAmountDetails.JSON_PROPERTY_OPTION,
-  SamsungPayAmountDetails.JSON_PROPERTY_CURRENCY_CODE,
-  SamsungPayAmountDetails.JSON_PROPERTY_TOTAL
-})
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+* SamsungPayAmountDetails
+*/
+    @JsonPropertyOrder({
+        SamsungPayAmountDetails.JSON_PROPERTY_OPTION,
+        SamsungPayAmountDetails.JSON_PROPERTY_CURRENCY_CODE,
+        SamsungPayAmountDetails.JSON_PROPERTY_TOTAL
+    })
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class SamsungPayAmountDetails {
-  public static final String JSON_PROPERTY_OPTION = "option";
-  private SamsungPayAmountFormat option;
+        public static final String JSON_PROPERTY_OPTION = "option";
+    @javax.annotation.Nonnull
+            private SamsungPayAmountFormat option;
 
-  public static final String JSON_PROPERTY_CURRENCY_CODE = "currency_code";
-  private Currency currencyCode;
+        public static final String JSON_PROPERTY_CURRENCY_CODE = "currency_code";
+    @javax.annotation.Nonnull
+            private Currency currencyCode;
 
-  public static final String JSON_PROPERTY_TOTAL = "total";
-  private String total;
+        public static final String JSON_PROPERTY_TOTAL = "total";
+    @javax.annotation.Nonnull
+            private String total;
 
-  public SamsungPayAmountDetails() {
-  }
+public SamsungPayAmountDetails() {
+}
 
-  public SamsungPayAmountDetails option(SamsungPayAmountFormat option) {
-    
-    this.option = option;
-    return this;
-  }
+        public SamsungPayAmountDetails option(@javax.annotation.Nonnull SamsungPayAmountFormat option) {
+        
+        this.option = option;
+        return this;
+        }
 
-   /**
-   * Get option
-   * @return option
-  **/
-  @javax.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_OPTION)
+    /**
+        * Get option
+    * @return option
+    */
+    @javax.annotation.Nonnull
+      @JsonProperty(JSON_PROPERTY_OPTION)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-  public SamsungPayAmountFormat getOption() {
-    return option;
-  }
+    public SamsungPayAmountFormat getOption() {
+        return option;
+    }
 
 
-  @JsonProperty(JSON_PROPERTY_OPTION)
+          @JsonProperty(JSON_PROPERTY_OPTION)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setOption(SamsungPayAmountFormat option) {
-    this.option = option;
-  }
+  public void setOption(@javax.annotation.Nonnull SamsungPayAmountFormat option) {
+            this.option = option;
+        }
 
+        public SamsungPayAmountDetails currencyCode(@javax.annotation.Nonnull Currency currencyCode) {
+        
+        this.currencyCode = currencyCode;
+        return this;
+        }
 
-  public SamsungPayAmountDetails currencyCode(Currency currencyCode) {
-    
-    this.currencyCode = currencyCode;
-    return this;
-  }
-
-   /**
-   * Get currencyCode
-   * @return currencyCode
-  **/
-  @javax.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_CURRENCY_CODE)
-  @JsonInclude(value = JsonInclude.Include.ALWAYS)
-
-  public Currency getCurrencyCode() {
-    return currencyCode;
-  }
-
-
-  @JsonProperty(JSON_PROPERTY_CURRENCY_CODE)
-  @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setCurrencyCode(Currency currencyCode) {
-    this.currencyCode = currencyCode;
-  }
-
-
-  public SamsungPayAmountDetails total(String total) {
-    
-    this.total = total;
-    return this;
-  }
-
-   /**
-   * The total amount of the transaction
-   * @return total
-  **/
-  @javax.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_TOTAL)
+    /**
+        * Get currencyCode
+    * @return currencyCode
+    */
+    @javax.annotation.Nonnull
+      @JsonProperty(JSON_PROPERTY_CURRENCY_CODE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-  public String getTotal() {
-    return total;
-  }
+    public Currency getCurrencyCode() {
+        return currencyCode;
+    }
 
 
-  @JsonProperty(JSON_PROPERTY_TOTAL)
+          @JsonProperty(JSON_PROPERTY_CURRENCY_CODE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setTotal(String total) {
-    this.total = total;
-  }
+  public void setCurrencyCode(@javax.annotation.Nonnull Currency currencyCode) {
+            this.currencyCode = currencyCode;
+        }
 
-  @Override
-  public boolean equals(Object o) {
+        public SamsungPayAmountDetails total(@javax.annotation.Nonnull String total) {
+        
+        this.total = total;
+        return this;
+        }
+
+    /**
+        * The total amount of the transaction
+    * @return total
+    */
+    @javax.annotation.Nonnull
+      @JsonProperty(JSON_PROPERTY_TOTAL)
+  @JsonInclude(value = JsonInclude.Include.ALWAYS)
+
+    public String getTotal() {
+        return total;
+    }
+
+
+          @JsonProperty(JSON_PROPERTY_TOTAL)
+  @JsonInclude(value = JsonInclude.Include.ALWAYS)
+  public void setTotal(@javax.annotation.Nonnull String total) {
+            this.total = total;
+        }
+
+@Override
+public boolean equals(Object o) {
     if (this == o) {
-      return true;
+    return true;
     }
     if (o == null || getClass() != o.getClass()) {
-      return false;
+    return false;
     }
-    SamsungPayAmountDetails samsungPayAmountDetails = (SamsungPayAmountDetails) o;
-    return Objects.equals(this.option, samsungPayAmountDetails.option) &&
+        SamsungPayAmountDetails samsungPayAmountDetails = (SamsungPayAmountDetails) o;
+        return Objects.equals(this.option, samsungPayAmountDetails.option) &&
         Objects.equals(this.currencyCode, samsungPayAmountDetails.currencyCode) &&
         Objects.equals(this.total, samsungPayAmountDetails.total);
-  }
+}
 
-  @Override
-  public int hashCode() {
-    return Objects.hash(option, currencyCode, total);
-  }
+    @Override
+    public int hashCode() {
+        return Objects.hash(option, currencyCode, total);
+    }
 
-  @Override
-  public String toString() {
+    @Override
+    public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class SamsungPayAmountDetails {\n");
-    sb.append("    option: ").append(toIndentedString(option)).append("\n");
-    sb.append("    currencyCode: ").append(toIndentedString(currencyCode)).append("\n");
-    sb.append("    total: ").append(toIndentedString(total)).append("\n");
+        sb.append("    option: ").append(toIndentedString(option)).append("\n");
+        sb.append("    currencyCode: ").append(toIndentedString(currencyCode)).append("\n");
+        sb.append("    total: ").append(toIndentedString(total)).append("\n");
     sb.append("}");
     return sb.toString();
-  }
+    }
 
-  /**
-   * Convert the given object to string with each line indented by 4 spaces
-   * (except the first line).
-   */
-  private String toIndentedString(Object o) {
+    /**
+    * Convert the given object to string with each line indented by 4 spaces
+    * (except the first line).
+    */
+    private String toIndentedString(Object o) {
     if (o == null) {
-      return "null";
+    return "null";
     }
     return o.toString().replace("\n", "\n    ");
-  }
-
-  /**
-   * Convert the instance into URL query string.
-   *
-   * @return URL query string
-   */
-  public String toUrlQueryString() {
-    return toUrlQueryString(null);
-  }
-
-  /**
-   * Convert the instance into URL query string.
-   *
-   * @param prefix prefix of the query string
-   * @return URL query string
-   */
-  public String toUrlQueryString(String prefix) {
-    String suffix = "";
-    String containerSuffix = "";
-    String containerPrefix = "";
-    if (prefix == null) {
-      // style=form, explode=true, e.g. /pet?name=cat&type=manx
-      prefix = "";
-    } else {
-      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
-      prefix = prefix + "[";
-      suffix = "]";
-      containerSuffix = "]";
-      containerPrefix = "[";
     }
 
-    StringJoiner joiner = new StringJoiner("&");
+        /**
+        * Convert the instance into URL query string.
+        *
+        * @return URL query string
+        */
+        public String toUrlQueryString() {
+        return toUrlQueryString(null);
+        }
 
-    // add `option` to the URL query string
-    if (getOption() != null) {
-      try {
-        joiner.add(String.format("%soption%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getOption()), "UTF-8").replaceAll("\\+", "%20")));
-      } catch (UnsupportedEncodingException e) {
-        // Should never happen, UTF-8 is always supported
-        throw new RuntimeException(e);
-      }
+        /**
+        * Convert the instance into URL query string.
+        *
+        * @param prefix prefix of the query string
+        * @return URL query string
+        */
+        public String toUrlQueryString(String prefix) {
+        String suffix = "";
+        String containerSuffix = "";
+        String containerPrefix = "";
+        if (prefix == null) {
+        // style=form, explode=true, e.g. /pet?name=cat&type=manx
+        prefix = "";
+        } else {
+        // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+        prefix = prefix + "[";
+        suffix = "]";
+        containerSuffix = "]";
+        containerPrefix = "[";
+        }
+
+        StringJoiner joiner = new StringJoiner("&");
+
+            // add `option` to the URL query string
+                            if (getOption() != null) {
+                            try {
+                            joiner.add(String.format("%soption%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getOption()), "UTF-8").replaceAll("\\+", "%20")));
+                            } catch (UnsupportedEncodingException e) {
+                            // Should never happen, UTF-8 is always supported
+                            throw new RuntimeException(e);
+                            }
+                            }
+
+            // add `currency_code` to the URL query string
+                            if (getCurrencyCode() != null) {
+                            try {
+                            joiner.add(String.format("%scurrency_code%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCurrencyCode()), "UTF-8").replaceAll("\\+", "%20")));
+                            } catch (UnsupportedEncodingException e) {
+                            // Should never happen, UTF-8 is always supported
+                            throw new RuntimeException(e);
+                            }
+                            }
+
+            // add `total` to the URL query string
+                        if (getTotal() != null) {
+                        try {
+                        joiner.add(String.format("%stotal%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getTotal()), "UTF-8").replaceAll("\\+", "%20")));
+                        } catch (UnsupportedEncodingException e) {
+                        // Should never happen, UTF-8 is always supported
+                        throw new RuntimeException(e);
+                        }
+                        }
+
+        return joiner.toString();
+        }
+
     }
-
-    // add `currency_code` to the URL query string
-    if (getCurrencyCode() != null) {
-      try {
-        joiner.add(String.format("%scurrency_code%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCurrencyCode()), "UTF-8").replaceAll("\\+", "%20")));
-      } catch (UnsupportedEncodingException e) {
-        // Should never happen, UTF-8 is always supported
-        throw new RuntimeException(e);
-      }
-    }
-
-    // add `total` to the URL query string
-    if (getTotal() != null) {
-      try {
-        joiner.add(String.format("%stotal%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getTotal()), "UTF-8").replaceAll("\\+", "%20")));
-      } catch (UnsupportedEncodingException e) {
-        // Should never happen, UTF-8 is always supported
-        throw new RuntimeException(e);
-      }
-    }
-
-    return joiner.toString();
-  }
-
-}
 

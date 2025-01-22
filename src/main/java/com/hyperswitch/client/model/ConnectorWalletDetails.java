@@ -31,294 +31,295 @@ import java.net.URLEncoder;
 import java.util.StringJoiner;
 
 /**
- * ConnectorWalletDetails
- */
-@JsonPropertyOrder({
-  ConnectorWalletDetails.JSON_PROPERTY_APPLE_PAY_COMBINED,
-  ConnectorWalletDetails.JSON_PROPERTY_APPLE_PAY,
-  ConnectorWalletDetails.JSON_PROPERTY_SAMSUNG_PAY,
-  ConnectorWalletDetails.JSON_PROPERTY_PAZE
-})
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+* ConnectorWalletDetails
+*/
+    @JsonPropertyOrder({
+        ConnectorWalletDetails.JSON_PROPERTY_APPLE_PAY_COMBINED,
+        ConnectorWalletDetails.JSON_PROPERTY_APPLE_PAY,
+        ConnectorWalletDetails.JSON_PROPERTY_SAMSUNG_PAY,
+        ConnectorWalletDetails.JSON_PROPERTY_PAZE
+    })
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class ConnectorWalletDetails {
-  public static final String JSON_PROPERTY_APPLE_PAY_COMBINED = "apple_pay_combined";
-  private JsonNullable<Object> applePayCombined = JsonNullable.<Object>undefined();
+        public static final String JSON_PROPERTY_APPLE_PAY_COMBINED = "apple_pay_combined";
+    @javax.annotation.Nullable
+            private JsonNullable<Object> applePayCombined = JsonNullable.<Object>undefined();
 
-  public static final String JSON_PROPERTY_APPLE_PAY = "apple_pay";
-  private JsonNullable<Object> applePay = JsonNullable.<Object>undefined();
+        public static final String JSON_PROPERTY_APPLE_PAY = "apple_pay";
+    @javax.annotation.Nullable
+            private JsonNullable<Object> applePay = JsonNullable.<Object>undefined();
 
-  public static final String JSON_PROPERTY_SAMSUNG_PAY = "samsung_pay";
-  private JsonNullable<Object> samsungPay = JsonNullable.<Object>undefined();
+        public static final String JSON_PROPERTY_SAMSUNG_PAY = "samsung_pay";
+    @javax.annotation.Nullable
+            private JsonNullable<Object> samsungPay = JsonNullable.<Object>undefined();
 
-  public static final String JSON_PROPERTY_PAZE = "paze";
-  private JsonNullable<Object> paze = JsonNullable.<Object>undefined();
+        public static final String JSON_PROPERTY_PAZE = "paze";
+    @javax.annotation.Nullable
+            private JsonNullable<Object> paze = JsonNullable.<Object>undefined();
 
-  public ConnectorWalletDetails() {
-  }
+public ConnectorWalletDetails() {
+}
 
-  public ConnectorWalletDetails applePayCombined(Object applePayCombined) {
-    this.applePayCombined = JsonNullable.<Object>of(applePayCombined);
+        public ConnectorWalletDetails applePayCombined(@javax.annotation.Nullable Object applePayCombined) {
+        this.applePayCombined = JsonNullable.<Object>of(applePayCombined);
+        
+        return this;
+        }
+
+    /**
+        * This field contains the Apple Pay certificates and credentials for iOS and Web Apple Pay flow
+    * @return applePayCombined
+    */
+    @javax.annotation.Nullable
+        @JsonIgnore
     
-    return this;
-  }
+    public Object getApplePayCombined() {
+                return applePayCombined.orElse(null);
+    }
 
-   /**
-   * This field contains the Apple Pay certificates and credentials for iOS and Web Apple Pay flow
-   * @return applePayCombined
-  **/
-  @javax.annotation.Nullable
-  @JsonIgnore
-
-  public Object getApplePayCombined() {
-        return applePayCombined.orElse(null);
-  }
-
-  @JsonProperty(JSON_PROPERTY_APPLE_PAY_COMBINED)
+          @JsonProperty(JSON_PROPERTY_APPLE_PAY_COMBINED)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-  public JsonNullable<Object> getApplePayCombined_JsonNullable() {
-    return applePayCombined;
-  }
-  
-  @JsonProperty(JSON_PROPERTY_APPLE_PAY_COMBINED)
-  public void setApplePayCombined_JsonNullable(JsonNullable<Object> applePayCombined) {
-    this.applePayCombined = applePayCombined;
-  }
-
-  public void setApplePayCombined(Object applePayCombined) {
-    this.applePayCombined = JsonNullable.<Object>of(applePayCombined);
-  }
-
-
-  public ConnectorWalletDetails applePay(Object applePay) {
-    this.applePay = JsonNullable.<Object>of(applePay);
+        public JsonNullable<Object> getApplePayCombined_JsonNullable() {
+        return applePayCombined;
+        }
     
-    return this;
-  }
+        @JsonProperty(JSON_PROPERTY_APPLE_PAY_COMBINED)
+        public void setApplePayCombined_JsonNullable(JsonNullable<Object> applePayCombined) {
+        this.applePayCombined = applePayCombined;
+        }
 
-   /**
-   * This field is for our legacy Apple Pay flow that contains the Apple Pay certificates and credentials for only iOS Apple Pay flow
-   * @return applePay
-  **/
-  @javax.annotation.Nullable
-  @JsonIgnore
+          public void setApplePayCombined(@javax.annotation.Nullable Object applePayCombined) {
+            this.applePayCombined = JsonNullable.<Object>of(applePayCombined);
+        }
 
-  public Object getApplePay() {
-        return applePay.orElse(null);
-  }
+        public ConnectorWalletDetails applePay(@javax.annotation.Nullable Object applePay) {
+        this.applePay = JsonNullable.<Object>of(applePay);
+        
+        return this;
+        }
 
-  @JsonProperty(JSON_PROPERTY_APPLE_PAY)
+    /**
+        * This field is for our legacy Apple Pay flow that contains the Apple Pay certificates and credentials for only iOS Apple Pay flow
+    * @return applePay
+    */
+    @javax.annotation.Nullable
+        @JsonIgnore
+    
+    public Object getApplePay() {
+                return applePay.orElse(null);
+    }
+
+          @JsonProperty(JSON_PROPERTY_APPLE_PAY)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-  public JsonNullable<Object> getApplePay_JsonNullable() {
-    return applePay;
-  }
-  
-  @JsonProperty(JSON_PROPERTY_APPLE_PAY)
-  public void setApplePay_JsonNullable(JsonNullable<Object> applePay) {
-    this.applePay = applePay;
-  }
-
-  public void setApplePay(Object applePay) {
-    this.applePay = JsonNullable.<Object>of(applePay);
-  }
-
-
-  public ConnectorWalletDetails samsungPay(Object samsungPay) {
-    this.samsungPay = JsonNullable.<Object>of(samsungPay);
+        public JsonNullable<Object> getApplePay_JsonNullable() {
+        return applePay;
+        }
     
-    return this;
-  }
+        @JsonProperty(JSON_PROPERTY_APPLE_PAY)
+        public void setApplePay_JsonNullable(JsonNullable<Object> applePay) {
+        this.applePay = applePay;
+        }
 
-   /**
-   * This field contains the Samsung Pay certificates and credentials
-   * @return samsungPay
-  **/
-  @javax.annotation.Nullable
-  @JsonIgnore
+          public void setApplePay(@javax.annotation.Nullable Object applePay) {
+            this.applePay = JsonNullable.<Object>of(applePay);
+        }
 
-  public Object getSamsungPay() {
-        return samsungPay.orElse(null);
-  }
+        public ConnectorWalletDetails samsungPay(@javax.annotation.Nullable Object samsungPay) {
+        this.samsungPay = JsonNullable.<Object>of(samsungPay);
+        
+        return this;
+        }
 
-  @JsonProperty(JSON_PROPERTY_SAMSUNG_PAY)
+    /**
+        * This field contains the Samsung Pay certificates and credentials
+    * @return samsungPay
+    */
+    @javax.annotation.Nullable
+        @JsonIgnore
+    
+    public Object getSamsungPay() {
+                return samsungPay.orElse(null);
+    }
+
+          @JsonProperty(JSON_PROPERTY_SAMSUNG_PAY)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-  public JsonNullable<Object> getSamsungPay_JsonNullable() {
-    return samsungPay;
-  }
-  
-  @JsonProperty(JSON_PROPERTY_SAMSUNG_PAY)
-  public void setSamsungPay_JsonNullable(JsonNullable<Object> samsungPay) {
-    this.samsungPay = samsungPay;
-  }
-
-  public void setSamsungPay(Object samsungPay) {
-    this.samsungPay = JsonNullable.<Object>of(samsungPay);
-  }
-
-
-  public ConnectorWalletDetails paze(Object paze) {
-    this.paze = JsonNullable.<Object>of(paze);
+        public JsonNullable<Object> getSamsungPay_JsonNullable() {
+        return samsungPay;
+        }
     
-    return this;
-  }
+        @JsonProperty(JSON_PROPERTY_SAMSUNG_PAY)
+        public void setSamsungPay_JsonNullable(JsonNullable<Object> samsungPay) {
+        this.samsungPay = samsungPay;
+        }
 
-   /**
-   * This field contains the Paze certificates and credentials
-   * @return paze
-  **/
-  @javax.annotation.Nullable
-  @JsonIgnore
+          public void setSamsungPay(@javax.annotation.Nullable Object samsungPay) {
+            this.samsungPay = JsonNullable.<Object>of(samsungPay);
+        }
 
-  public Object getPaze() {
-        return paze.orElse(null);
-  }
+        public ConnectorWalletDetails paze(@javax.annotation.Nullable Object paze) {
+        this.paze = JsonNullable.<Object>of(paze);
+        
+        return this;
+        }
 
-  @JsonProperty(JSON_PROPERTY_PAZE)
+    /**
+        * This field contains the Paze certificates and credentials
+    * @return paze
+    */
+    @javax.annotation.Nullable
+        @JsonIgnore
+    
+    public Object getPaze() {
+                return paze.orElse(null);
+    }
+
+          @JsonProperty(JSON_PROPERTY_PAZE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-  public JsonNullable<Object> getPaze_JsonNullable() {
-    return paze;
-  }
-  
-  @JsonProperty(JSON_PROPERTY_PAZE)
-  public void setPaze_JsonNullable(JsonNullable<Object> paze) {
-    this.paze = paze;
-  }
+        public JsonNullable<Object> getPaze_JsonNullable() {
+        return paze;
+        }
+    
+        @JsonProperty(JSON_PROPERTY_PAZE)
+        public void setPaze_JsonNullable(JsonNullable<Object> paze) {
+        this.paze = paze;
+        }
 
-  public void setPaze(Object paze) {
-    this.paze = JsonNullable.<Object>of(paze);
-  }
+          public void setPaze(@javax.annotation.Nullable Object paze) {
+            this.paze = JsonNullable.<Object>of(paze);
+        }
 
-  @Override
-  public boolean equals(Object o) {
+@Override
+public boolean equals(Object o) {
     if (this == o) {
-      return true;
+    return true;
     }
     if (o == null || getClass() != o.getClass()) {
-      return false;
+    return false;
     }
-    ConnectorWalletDetails connectorWalletDetails = (ConnectorWalletDetails) o;
-    return equalsNullable(this.applePayCombined, connectorWalletDetails.applePayCombined) &&
+        ConnectorWalletDetails connectorWalletDetails = (ConnectorWalletDetails) o;
+        return equalsNullable(this.applePayCombined, connectorWalletDetails.applePayCombined) &&
         equalsNullable(this.applePay, connectorWalletDetails.applePay) &&
         equalsNullable(this.samsungPay, connectorWalletDetails.samsungPay) &&
         equalsNullable(this.paze, connectorWalletDetails.paze);
-  }
+}
 
-  private static <T> boolean equalsNullable(JsonNullable<T> a, JsonNullable<T> b) {
-    return a == b || (a != null && b != null && a.isPresent() && b.isPresent() && Objects.deepEquals(a.get(), b.get()));
-  }
+    private static <T> boolean equalsNullable(JsonNullable<T> a, JsonNullable<T> b) {
+        return a == b || (a != null && b != null && a.isPresent() && b.isPresent() && Objects.deepEquals(a.get(), b.get()));
+        }
 
-  @Override
-  public int hashCode() {
-    return Objects.hash(hashCodeNullable(applePayCombined), hashCodeNullable(applePay), hashCodeNullable(samsungPay), hashCodeNullable(paze));
-  }
-
-  private static <T> int hashCodeNullable(JsonNullable<T> a) {
-    if (a == null) {
-      return 1;
+    @Override
+    public int hashCode() {
+        return Objects.hash(hashCodeNullable(applePayCombined), hashCodeNullable(applePay), hashCodeNullable(samsungPay), hashCodeNullable(paze));
     }
-    return a.isPresent() ? Arrays.deepHashCode(new Object[]{a.get()}) : 31;
-  }
 
-  @Override
-  public String toString() {
+        private static <T> int hashCodeNullable(JsonNullable<T> a) {
+        if (a == null) {
+        return 1;
+        }
+        return a.isPresent() ? Arrays.deepHashCode(new Object[]{a.get()}) : 31;
+        }
+
+    @Override
+    public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class ConnectorWalletDetails {\n");
-    sb.append("    applePayCombined: ").append(toIndentedString(applePayCombined)).append("\n");
-    sb.append("    applePay: ").append(toIndentedString(applePay)).append("\n");
-    sb.append("    samsungPay: ").append(toIndentedString(samsungPay)).append("\n");
-    sb.append("    paze: ").append(toIndentedString(paze)).append("\n");
+        sb.append("    applePayCombined: ").append(toIndentedString(applePayCombined)).append("\n");
+        sb.append("    applePay: ").append(toIndentedString(applePay)).append("\n");
+        sb.append("    samsungPay: ").append(toIndentedString(samsungPay)).append("\n");
+        sb.append("    paze: ").append(toIndentedString(paze)).append("\n");
     sb.append("}");
     return sb.toString();
-  }
+    }
 
-  /**
-   * Convert the given object to string with each line indented by 4 spaces
-   * (except the first line).
-   */
-  private String toIndentedString(Object o) {
+    /**
+    * Convert the given object to string with each line indented by 4 spaces
+    * (except the first line).
+    */
+    private String toIndentedString(Object o) {
     if (o == null) {
-      return "null";
+    return "null";
     }
     return o.toString().replace("\n", "\n    ");
-  }
-
-  /**
-   * Convert the instance into URL query string.
-   *
-   * @return URL query string
-   */
-  public String toUrlQueryString() {
-    return toUrlQueryString(null);
-  }
-
-  /**
-   * Convert the instance into URL query string.
-   *
-   * @param prefix prefix of the query string
-   * @return URL query string
-   */
-  public String toUrlQueryString(String prefix) {
-    String suffix = "";
-    String containerSuffix = "";
-    String containerPrefix = "";
-    if (prefix == null) {
-      // style=form, explode=true, e.g. /pet?name=cat&type=manx
-      prefix = "";
-    } else {
-      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
-      prefix = prefix + "[";
-      suffix = "]";
-      containerSuffix = "]";
-      containerPrefix = "[";
     }
 
-    StringJoiner joiner = new StringJoiner("&");
+        /**
+        * Convert the instance into URL query string.
+        *
+        * @return URL query string
+        */
+        public String toUrlQueryString() {
+        return toUrlQueryString(null);
+        }
 
-    // add `apple_pay_combined` to the URL query string
-    if (getApplePayCombined() != null) {
-      try {
-        joiner.add(String.format("%sapple_pay_combined%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getApplePayCombined()), "UTF-8").replaceAll("\\+", "%20")));
-      } catch (UnsupportedEncodingException e) {
-        // Should never happen, UTF-8 is always supported
-        throw new RuntimeException(e);
-      }
+        /**
+        * Convert the instance into URL query string.
+        *
+        * @param prefix prefix of the query string
+        * @return URL query string
+        */
+        public String toUrlQueryString(String prefix) {
+        String suffix = "";
+        String containerSuffix = "";
+        String containerPrefix = "";
+        if (prefix == null) {
+        // style=form, explode=true, e.g. /pet?name=cat&type=manx
+        prefix = "";
+        } else {
+        // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+        prefix = prefix + "[";
+        suffix = "]";
+        containerSuffix = "]";
+        containerPrefix = "[";
+        }
+
+        StringJoiner joiner = new StringJoiner("&");
+
+            // add `apple_pay_combined` to the URL query string
+                        if (getApplePayCombined() != null) {
+                        try {
+                        joiner.add(String.format("%sapple_pay_combined%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getApplePayCombined()), "UTF-8").replaceAll("\\+", "%20")));
+                        } catch (UnsupportedEncodingException e) {
+                        // Should never happen, UTF-8 is always supported
+                        throw new RuntimeException(e);
+                        }
+                        }
+
+            // add `apple_pay` to the URL query string
+                        if (getApplePay() != null) {
+                        try {
+                        joiner.add(String.format("%sapple_pay%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getApplePay()), "UTF-8").replaceAll("\\+", "%20")));
+                        } catch (UnsupportedEncodingException e) {
+                        // Should never happen, UTF-8 is always supported
+                        throw new RuntimeException(e);
+                        }
+                        }
+
+            // add `samsung_pay` to the URL query string
+                        if (getSamsungPay() != null) {
+                        try {
+                        joiner.add(String.format("%ssamsung_pay%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getSamsungPay()), "UTF-8").replaceAll("\\+", "%20")));
+                        } catch (UnsupportedEncodingException e) {
+                        // Should never happen, UTF-8 is always supported
+                        throw new RuntimeException(e);
+                        }
+                        }
+
+            // add `paze` to the URL query string
+                        if (getPaze() != null) {
+                        try {
+                        joiner.add(String.format("%spaze%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getPaze()), "UTF-8").replaceAll("\\+", "%20")));
+                        } catch (UnsupportedEncodingException e) {
+                        // Should never happen, UTF-8 is always supported
+                        throw new RuntimeException(e);
+                        }
+                        }
+
+        return joiner.toString();
+        }
+
     }
-
-    // add `apple_pay` to the URL query string
-    if (getApplePay() != null) {
-      try {
-        joiner.add(String.format("%sapple_pay%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getApplePay()), "UTF-8").replaceAll("\\+", "%20")));
-      } catch (UnsupportedEncodingException e) {
-        // Should never happen, UTF-8 is always supported
-        throw new RuntimeException(e);
-      }
-    }
-
-    // add `samsung_pay` to the URL query string
-    if (getSamsungPay() != null) {
-      try {
-        joiner.add(String.format("%ssamsung_pay%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getSamsungPay()), "UTF-8").replaceAll("\\+", "%20")));
-      } catch (UnsupportedEncodingException e) {
-        // Should never happen, UTF-8 is always supported
-        throw new RuntimeException(e);
-      }
-    }
-
-    // add `paze` to the URL query string
-    if (getPaze() != null) {
-      try {
-        joiner.add(String.format("%spaze%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getPaze()), "UTF-8").replaceAll("\\+", "%20")));
-      } catch (UnsupportedEncodingException e) {
-        // Should never happen, UTF-8 is always supported
-        throw new RuntimeException(e);
-      }
-    }
-
-    return joiner.toString();
-  }
-
-}
 

@@ -28,121 +28,122 @@ import java.net.URLEncoder;
 import java.util.StringJoiner;
 
 /**
- * BankRedirectDetailsOneOf
- */
-@JsonPropertyOrder({
-  BankRedirectDetailsOneOf.JSON_PROPERTY_BANCONTACT_CARD
-})
-@JsonTypeName("BankRedirectDetails_oneOf")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+* BankRedirectDetailsOneOf
+*/
+    @JsonPropertyOrder({
+        BankRedirectDetailsOneOf.JSON_PROPERTY_BANCONTACT_CARD
+    })
+            @JsonTypeName("BankRedirectDetails_oneOf")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class BankRedirectDetailsOneOf {
-  public static final String JSON_PROPERTY_BANCONTACT_CARD = "BancontactCard";
-  private BancontactBankRedirectAdditionalData bancontactCard;
+        public static final String JSON_PROPERTY_BANCONTACT_CARD = "BancontactCard";
+    @javax.annotation.Nonnull
+            private BancontactBankRedirectAdditionalData bancontactCard;
 
-  public BankRedirectDetailsOneOf() {
-  }
+public BankRedirectDetailsOneOf() {
+}
 
-  public BankRedirectDetailsOneOf bancontactCard(BancontactBankRedirectAdditionalData bancontactCard) {
-    
-    this.bancontactCard = bancontactCard;
-    return this;
-  }
+        public BankRedirectDetailsOneOf bancontactCard(@javax.annotation.Nonnull BancontactBankRedirectAdditionalData bancontactCard) {
+        
+        this.bancontactCard = bancontactCard;
+        return this;
+        }
 
-   /**
-   * Get bancontactCard
-   * @return bancontactCard
-  **/
-  @javax.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_BANCONTACT_CARD)
+    /**
+        * Get bancontactCard
+    * @return bancontactCard
+    */
+    @javax.annotation.Nonnull
+      @JsonProperty(JSON_PROPERTY_BANCONTACT_CARD)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-  public BancontactBankRedirectAdditionalData getBancontactCard() {
-    return bancontactCard;
-  }
+    public BancontactBankRedirectAdditionalData getBancontactCard() {
+        return bancontactCard;
+    }
 
 
-  @JsonProperty(JSON_PROPERTY_BANCONTACT_CARD)
+          @JsonProperty(JSON_PROPERTY_BANCONTACT_CARD)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setBancontactCard(BancontactBankRedirectAdditionalData bancontactCard) {
-    this.bancontactCard = bancontactCard;
-  }
+  public void setBancontactCard(@javax.annotation.Nonnull BancontactBankRedirectAdditionalData bancontactCard) {
+            this.bancontactCard = bancontactCard;
+        }
 
-  @Override
-  public boolean equals(Object o) {
+@Override
+public boolean equals(Object o) {
     if (this == o) {
-      return true;
+    return true;
     }
     if (o == null || getClass() != o.getClass()) {
-      return false;
+    return false;
     }
-    BankRedirectDetailsOneOf bankRedirectDetailsOneOf = (BankRedirectDetailsOneOf) o;
-    return Objects.equals(this.bancontactCard, bankRedirectDetailsOneOf.bancontactCard);
-  }
+        BankRedirectDetailsOneOf bankRedirectDetailsOneOf = (BankRedirectDetailsOneOf) o;
+        return Objects.equals(this.bancontactCard, bankRedirectDetailsOneOf.bancontactCard);
+}
 
-  @Override
-  public int hashCode() {
-    return Objects.hash(bancontactCard);
-  }
+    @Override
+    public int hashCode() {
+        return Objects.hash(bancontactCard);
+    }
 
-  @Override
-  public String toString() {
+    @Override
+    public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class BankRedirectDetailsOneOf {\n");
-    sb.append("    bancontactCard: ").append(toIndentedString(bancontactCard)).append("\n");
+        sb.append("    bancontactCard: ").append(toIndentedString(bancontactCard)).append("\n");
     sb.append("}");
     return sb.toString();
-  }
+    }
 
-  /**
-   * Convert the given object to string with each line indented by 4 spaces
-   * (except the first line).
-   */
-  private String toIndentedString(Object o) {
+    /**
+    * Convert the given object to string with each line indented by 4 spaces
+    * (except the first line).
+    */
+    private String toIndentedString(Object o) {
     if (o == null) {
-      return "null";
+    return "null";
     }
     return o.toString().replace("\n", "\n    ");
-  }
-
-  /**
-   * Convert the instance into URL query string.
-   *
-   * @return URL query string
-   */
-  public String toUrlQueryString() {
-    return toUrlQueryString(null);
-  }
-
-  /**
-   * Convert the instance into URL query string.
-   *
-   * @param prefix prefix of the query string
-   * @return URL query string
-   */
-  public String toUrlQueryString(String prefix) {
-    String suffix = "";
-    String containerSuffix = "";
-    String containerPrefix = "";
-    if (prefix == null) {
-      // style=form, explode=true, e.g. /pet?name=cat&type=manx
-      prefix = "";
-    } else {
-      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
-      prefix = prefix + "[";
-      suffix = "]";
-      containerSuffix = "]";
-      containerPrefix = "[";
     }
 
-    StringJoiner joiner = new StringJoiner("&");
+        /**
+        * Convert the instance into URL query string.
+        *
+        * @return URL query string
+        */
+        public String toUrlQueryString() {
+        return toUrlQueryString(null);
+        }
 
-    // add `BancontactCard` to the URL query string
-    if (getBancontactCard() != null) {
-      joiner.add(getBancontactCard().toUrlQueryString(prefix + "BancontactCard" + suffix));
+        /**
+        * Convert the instance into URL query string.
+        *
+        * @param prefix prefix of the query string
+        * @return URL query string
+        */
+        public String toUrlQueryString(String prefix) {
+        String suffix = "";
+        String containerSuffix = "";
+        String containerPrefix = "";
+        if (prefix == null) {
+        // style=form, explode=true, e.g. /pet?name=cat&type=manx
+        prefix = "";
+        } else {
+        // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+        prefix = prefix + "[";
+        suffix = "]";
+        containerSuffix = "]";
+        containerPrefix = "[";
+        }
+
+        StringJoiner joiner = new StringJoiner("&");
+
+            // add `BancontactCard` to the URL query string
+                            if (getBancontactCard() != null) {
+                            joiner.add(getBancontactCard().toUrlQueryString(prefix + "BancontactCard" + suffix));
+                            }
+
+        return joiner.toString();
+        }
+
     }
-
-    return joiner.toString();
-  }
-
-}
 

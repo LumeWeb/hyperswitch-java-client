@@ -20,22 +20,21 @@ import com.fasterxml.jackson.annotation.JsonTypeName;
 import com.fasterxml.jackson.annotation.JsonValue;
 import com.hyperswitch.client.model.PaymentMethod;
 import com.hyperswitch.client.model.PaymentMethodType;
-import org.junit.Assert;
-import org.junit.Ignore;
-import org.junit.Test;
-
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Test;
 
 /**
  * Model tests for PaymentsPostSessionTokensRequest
  */
-public class PaymentsPostSessionTokensRequestTest {
+class PaymentsPostSessionTokensRequestTest {
     private final PaymentsPostSessionTokensRequest model = new PaymentsPostSessionTokensRequest();
 
     /**
      * Model tests for PaymentsPostSessionTokensRequest
      */
     @Test
-    public void testPaymentsPostSessionTokensRequest() {
+    void testPaymentsPostSessionTokensRequest() {
         // TODO: test PaymentsPostSessionTokensRequest
     }
 
@@ -43,7 +42,7 @@ public class PaymentsPostSessionTokensRequestTest {
      * Test the property 'clientSecret'
      */
     @Test
-    public void clientSecretTest() {
+    void clientSecretTest() {
         // TODO: test clientSecret
     }
 
@@ -51,7 +50,7 @@ public class PaymentsPostSessionTokensRequestTest {
      * Test the property 'paymentMethodType'
      */
     @Test
-    public void paymentMethodTypeTest() {
+    void paymentMethodTypeTest() {
         // TODO: test paymentMethodType
     }
 
@@ -59,7 +58,7 @@ public class PaymentsPostSessionTokensRequestTest {
      * Test the property 'paymentMethod'
      */
     @Test
-    public void paymentMethodTest() {
+    void paymentMethodTest() {
         // TODO: test paymentMethod
     }
 

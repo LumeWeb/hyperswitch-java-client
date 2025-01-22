@@ -22,6 +22,7 @@ import com.fasterxml.jackson.annotation.JsonTypeName;
 import com.fasterxml.jackson.annotation.JsonValue;
 import com.hyperswitch.client.model.PaymentsResponse;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 import com.fasterxml.jackson.annotation.JsonTypeName;
@@ -30,176 +31,177 @@ import java.net.URLEncoder;
 import java.util.StringJoiner;
 
 /**
- * PaymentListResponse
- */
-@JsonPropertyOrder({
-  PaymentListResponse.JSON_PROPERTY_SIZE,
-  PaymentListResponse.JSON_PROPERTY_DATA
-})
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+* PaymentListResponse
+*/
+    @JsonPropertyOrder({
+        PaymentListResponse.JSON_PROPERTY_SIZE,
+        PaymentListResponse.JSON_PROPERTY_DATA
+    })
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class PaymentListResponse {
-  public static final String JSON_PROPERTY_SIZE = "size";
-  private Integer size;
+        public static final String JSON_PROPERTY_SIZE = "size";
+    @javax.annotation.Nonnull
+            private Integer size;
 
-  public static final String JSON_PROPERTY_DATA = "data";
-  private List<PaymentsResponse> data = new ArrayList<>();
+        public static final String JSON_PROPERTY_DATA = "data";
+    @javax.annotation.Nonnull
+            private List<PaymentsResponse> data = new ArrayList<>();
 
-  public PaymentListResponse() {
-  }
+public PaymentListResponse() {
+}
 
-  public PaymentListResponse size(Integer size) {
-    
-    this.size = size;
-    return this;
-  }
+        public PaymentListResponse size(@javax.annotation.Nonnull Integer size) {
+        
+        this.size = size;
+        return this;
+        }
 
-   /**
-   * The number of payments included in the list
-   * minimum: 0
-   * @return size
-  **/
-  @javax.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_SIZE)
+    /**
+        * The number of payments included in the list
+        * minimum: 0
+    * @return size
+    */
+    @javax.annotation.Nonnull
+      @JsonProperty(JSON_PROPERTY_SIZE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-  public Integer getSize() {
-    return size;
-  }
-
-
-  @JsonProperty(JSON_PROPERTY_SIZE)
-  @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setSize(Integer size) {
-    this.size = size;
-  }
-
-
-  public PaymentListResponse data(List<PaymentsResponse> data) {
-    
-    this.data = data;
-    return this;
-  }
-
-  public PaymentListResponse addDataItem(PaymentsResponse dataItem) {
-    if (this.data == null) {
-      this.data = new ArrayList<>();
+    public Integer getSize() {
+        return size;
     }
-    this.data.add(dataItem);
-    return this;
-  }
 
-   /**
-   * Get data
-   * @return data
-  **/
-  @javax.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_DATA)
+
+          @JsonProperty(JSON_PROPERTY_SIZE)
+  @JsonInclude(value = JsonInclude.Include.ALWAYS)
+  public void setSize(@javax.annotation.Nonnull Integer size) {
+            this.size = size;
+        }
+
+        public PaymentListResponse data(@javax.annotation.Nonnull List<PaymentsResponse> data) {
+        
+        this.data = data;
+        return this;
+        }
+
+            public PaymentListResponse addDataItem(PaymentsResponse dataItem) {
+                if (this.data == null) {
+                this.data = new ArrayList<>();
+                }
+                this.data.add(dataItem);
+                return this;
+            }
+
+    /**
+        * Get data
+    * @return data
+    */
+    @javax.annotation.Nonnull
+      @JsonProperty(JSON_PROPERTY_DATA)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-  public List<PaymentsResponse> getData() {
-    return data;
-  }
+    public List<PaymentsResponse> getData() {
+        return data;
+    }
 
 
-  @JsonProperty(JSON_PROPERTY_DATA)
+          @JsonProperty(JSON_PROPERTY_DATA)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setData(List<PaymentsResponse> data) {
-    this.data = data;
-  }
+  public void setData(@javax.annotation.Nonnull List<PaymentsResponse> data) {
+            this.data = data;
+        }
 
-  @Override
-  public boolean equals(Object o) {
+@Override
+public boolean equals(Object o) {
     if (this == o) {
-      return true;
+    return true;
     }
     if (o == null || getClass() != o.getClass()) {
-      return false;
+    return false;
     }
-    PaymentListResponse paymentListResponse = (PaymentListResponse) o;
-    return Objects.equals(this.size, paymentListResponse.size) &&
+        PaymentListResponse paymentListResponse = (PaymentListResponse) o;
+        return Objects.equals(this.size, paymentListResponse.size) &&
         Objects.equals(this.data, paymentListResponse.data);
-  }
+}
 
-  @Override
-  public int hashCode() {
-    return Objects.hash(size, data);
-  }
+    @Override
+    public int hashCode() {
+        return Objects.hash(size, data);
+    }
 
-  @Override
-  public String toString() {
+    @Override
+    public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class PaymentListResponse {\n");
-    sb.append("    size: ").append(toIndentedString(size)).append("\n");
-    sb.append("    data: ").append(toIndentedString(data)).append("\n");
+        sb.append("    size: ").append(toIndentedString(size)).append("\n");
+        sb.append("    data: ").append(toIndentedString(data)).append("\n");
     sb.append("}");
     return sb.toString();
-  }
+    }
 
-  /**
-   * Convert the given object to string with each line indented by 4 spaces
-   * (except the first line).
-   */
-  private String toIndentedString(Object o) {
+    /**
+    * Convert the given object to string with each line indented by 4 spaces
+    * (except the first line).
+    */
+    private String toIndentedString(Object o) {
     if (o == null) {
-      return "null";
+    return "null";
     }
     return o.toString().replace("\n", "\n    ");
-  }
-
-  /**
-   * Convert the instance into URL query string.
-   *
-   * @return URL query string
-   */
-  public String toUrlQueryString() {
-    return toUrlQueryString(null);
-  }
-
-  /**
-   * Convert the instance into URL query string.
-   *
-   * @param prefix prefix of the query string
-   * @return URL query string
-   */
-  public String toUrlQueryString(String prefix) {
-    String suffix = "";
-    String containerSuffix = "";
-    String containerPrefix = "";
-    if (prefix == null) {
-      // style=form, explode=true, e.g. /pet?name=cat&type=manx
-      prefix = "";
-    } else {
-      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
-      prefix = prefix + "[";
-      suffix = "]";
-      containerSuffix = "]";
-      containerPrefix = "[";
     }
 
-    StringJoiner joiner = new StringJoiner("&");
-
-    // add `size` to the URL query string
-    if (getSize() != null) {
-      try {
-        joiner.add(String.format("%ssize%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getSize()), "UTF-8").replaceAll("\\+", "%20")));
-      } catch (UnsupportedEncodingException e) {
-        // Should never happen, UTF-8 is always supported
-        throw new RuntimeException(e);
-      }
-    }
-
-    // add `data` to the URL query string
-    if (getData() != null) {
-      for (int i = 0; i < getData().size(); i++) {
-        if (getData().get(i) != null) {
-          joiner.add(getData().get(i).toUrlQueryString(String.format("%sdata%s%s", prefix, suffix,
-              "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix))));
+        /**
+        * Convert the instance into URL query string.
+        *
+        * @return URL query string
+        */
+        public String toUrlQueryString() {
+        return toUrlQueryString(null);
         }
-      }
+
+        /**
+        * Convert the instance into URL query string.
+        *
+        * @param prefix prefix of the query string
+        * @return URL query string
+        */
+        public String toUrlQueryString(String prefix) {
+        String suffix = "";
+        String containerSuffix = "";
+        String containerPrefix = "";
+        if (prefix == null) {
+        // style=form, explode=true, e.g. /pet?name=cat&type=manx
+        prefix = "";
+        } else {
+        // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+        prefix = prefix + "[";
+        suffix = "]";
+        containerSuffix = "]";
+        containerPrefix = "[";
+        }
+
+        StringJoiner joiner = new StringJoiner("&");
+
+            // add `size` to the URL query string
+                        if (getSize() != null) {
+                        try {
+                        joiner.add(String.format("%ssize%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getSize()), "UTF-8").replaceAll("\\+", "%20")));
+                        } catch (UnsupportedEncodingException e) {
+                        // Should never happen, UTF-8 is always supported
+                        throw new RuntimeException(e);
+                        }
+                        }
+
+            // add `data` to the URL query string
+                            if (getData() != null) {
+                            for (int i = 0; i < getData().size(); i++) {
+                            if (getData().get(i) != null) {
+                            joiner.add(getData().get(i).toUrlQueryString(String.format("%sdata%s%s", prefix, suffix,
+                            "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix))));
+                            }
+                            }
+                            }
+
+        return joiner.toString();
+        }
+
     }
-
-    return joiner.toString();
-  }
-
-}
 

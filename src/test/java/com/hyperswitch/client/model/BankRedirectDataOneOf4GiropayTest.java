@@ -24,22 +24,21 @@ import org.openapitools.jackson.nullable.JsonNullable;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.openapitools.jackson.nullable.JsonNullable;
 import java.util.NoSuchElementException;
-import org.junit.Assert;
-import org.junit.Ignore;
-import org.junit.Test;
-
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Test;
 
 /**
  * Model tests for BankRedirectDataOneOf4Giropay
  */
-public class BankRedirectDataOneOf4GiropayTest {
+class BankRedirectDataOneOf4GiropayTest {
     private final BankRedirectDataOneOf4Giropay model = new BankRedirectDataOneOf4Giropay();
 
     /**
      * Model tests for BankRedirectDataOneOf4Giropay
      */
     @Test
-    public void testBankRedirectDataOneOf4Giropay() {
+    void testBankRedirectDataOneOf4Giropay() {
         // TODO: test BankRedirectDataOneOf4Giropay
     }
 
@@ -47,7 +46,7 @@ public class BankRedirectDataOneOf4GiropayTest {
      * Test the property 'billingDetails'
      */
     @Test
-    public void billingDetailsTest() {
+    void billingDetailsTest() {
         // TODO: test billingDetails
     }
 
@@ -55,7 +54,7 @@ public class BankRedirectDataOneOf4GiropayTest {
      * Test the property 'bankAccountBic'
      */
     @Test
-    public void bankAccountBicTest() {
+    void bankAccountBicTest() {
         // TODO: test bankAccountBic
     }
 
@@ -63,7 +62,7 @@ public class BankRedirectDataOneOf4GiropayTest {
      * Test the property 'bankAccountIban'
      */
     @Test
-    public void bankAccountIbanTest() {
+    void bankAccountIbanTest() {
         // TODO: test bankAccountIban
     }
 
@@ -71,7 +70,7 @@ public class BankRedirectDataOneOf4GiropayTest {
      * Test the property 'country'
      */
     @Test
-    public void countryTest() {
+    void countryTest() {
         // TODO: test country
     }
 

@@ -28,121 +28,122 @@ import java.net.URLEncoder;
 import java.util.StringJoiner;
 
 /**
- * MerchantRecipientDataOneOf2
- */
-@JsonPropertyOrder({
-  MerchantRecipientDataOneOf2.JSON_PROPERTY_ACCOUNT_DATA
-})
-@JsonTypeName("MerchantRecipientData_oneOf_2")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+* MerchantRecipientDataOneOf2
+*/
+    @JsonPropertyOrder({
+        MerchantRecipientDataOneOf2.JSON_PROPERTY_ACCOUNT_DATA
+    })
+            @JsonTypeName("MerchantRecipientData_oneOf_2")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class MerchantRecipientDataOneOf2 {
-  public static final String JSON_PROPERTY_ACCOUNT_DATA = "account_data";
-  private MerchantAccountData accountData;
+        public static final String JSON_PROPERTY_ACCOUNT_DATA = "account_data";
+    @javax.annotation.Nonnull
+            private MerchantAccountData accountData;
 
-  public MerchantRecipientDataOneOf2() {
-  }
+public MerchantRecipientDataOneOf2() {
+}
 
-  public MerchantRecipientDataOneOf2 accountData(MerchantAccountData accountData) {
-    
-    this.accountData = accountData;
-    return this;
-  }
+        public MerchantRecipientDataOneOf2 accountData(@javax.annotation.Nonnull MerchantAccountData accountData) {
+        
+        this.accountData = accountData;
+        return this;
+        }
 
-   /**
-   * Get accountData
-   * @return accountData
-  **/
-  @javax.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_ACCOUNT_DATA)
+    /**
+        * Get accountData
+    * @return accountData
+    */
+    @javax.annotation.Nonnull
+      @JsonProperty(JSON_PROPERTY_ACCOUNT_DATA)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-  public MerchantAccountData getAccountData() {
-    return accountData;
-  }
+    public MerchantAccountData getAccountData() {
+        return accountData;
+    }
 
 
-  @JsonProperty(JSON_PROPERTY_ACCOUNT_DATA)
+          @JsonProperty(JSON_PROPERTY_ACCOUNT_DATA)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setAccountData(MerchantAccountData accountData) {
-    this.accountData = accountData;
-  }
+  public void setAccountData(@javax.annotation.Nonnull MerchantAccountData accountData) {
+            this.accountData = accountData;
+        }
 
-  @Override
-  public boolean equals(Object o) {
+@Override
+public boolean equals(Object o) {
     if (this == o) {
-      return true;
+    return true;
     }
     if (o == null || getClass() != o.getClass()) {
-      return false;
+    return false;
     }
-    MerchantRecipientDataOneOf2 merchantRecipientDataOneOf2 = (MerchantRecipientDataOneOf2) o;
-    return Objects.equals(this.accountData, merchantRecipientDataOneOf2.accountData);
-  }
+        MerchantRecipientDataOneOf2 merchantRecipientDataOneOf2 = (MerchantRecipientDataOneOf2) o;
+        return Objects.equals(this.accountData, merchantRecipientDataOneOf2.accountData);
+}
 
-  @Override
-  public int hashCode() {
-    return Objects.hash(accountData);
-  }
+    @Override
+    public int hashCode() {
+        return Objects.hash(accountData);
+    }
 
-  @Override
-  public String toString() {
+    @Override
+    public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class MerchantRecipientDataOneOf2 {\n");
-    sb.append("    accountData: ").append(toIndentedString(accountData)).append("\n");
+        sb.append("    accountData: ").append(toIndentedString(accountData)).append("\n");
     sb.append("}");
     return sb.toString();
-  }
+    }
 
-  /**
-   * Convert the given object to string with each line indented by 4 spaces
-   * (except the first line).
-   */
-  private String toIndentedString(Object o) {
+    /**
+    * Convert the given object to string with each line indented by 4 spaces
+    * (except the first line).
+    */
+    private String toIndentedString(Object o) {
     if (o == null) {
-      return "null";
+    return "null";
     }
     return o.toString().replace("\n", "\n    ");
-  }
-
-  /**
-   * Convert the instance into URL query string.
-   *
-   * @return URL query string
-   */
-  public String toUrlQueryString() {
-    return toUrlQueryString(null);
-  }
-
-  /**
-   * Convert the instance into URL query string.
-   *
-   * @param prefix prefix of the query string
-   * @return URL query string
-   */
-  public String toUrlQueryString(String prefix) {
-    String suffix = "";
-    String containerSuffix = "";
-    String containerPrefix = "";
-    if (prefix == null) {
-      // style=form, explode=true, e.g. /pet?name=cat&type=manx
-      prefix = "";
-    } else {
-      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
-      prefix = prefix + "[";
-      suffix = "]";
-      containerSuffix = "]";
-      containerPrefix = "[";
     }
 
-    StringJoiner joiner = new StringJoiner("&");
+        /**
+        * Convert the instance into URL query string.
+        *
+        * @return URL query string
+        */
+        public String toUrlQueryString() {
+        return toUrlQueryString(null);
+        }
 
-    // add `account_data` to the URL query string
-    if (getAccountData() != null) {
-      joiner.add(getAccountData().toUrlQueryString(prefix + "account_data" + suffix));
+        /**
+        * Convert the instance into URL query string.
+        *
+        * @param prefix prefix of the query string
+        * @return URL query string
+        */
+        public String toUrlQueryString(String prefix) {
+        String suffix = "";
+        String containerSuffix = "";
+        String containerPrefix = "";
+        if (prefix == null) {
+        // style=form, explode=true, e.g. /pet?name=cat&type=manx
+        prefix = "";
+        } else {
+        // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+        prefix = prefix + "[";
+        suffix = "]";
+        containerSuffix = "]";
+        containerPrefix = "[";
+        }
+
+        StringJoiner joiner = new StringJoiner("&");
+
+            // add `account_data` to the URL query string
+                            if (getAccountData() != null) {
+                            joiner.add(getAccountData().toUrlQueryString(prefix + "account_data" + suffix));
+                            }
+
+        return joiner.toString();
+        }
+
     }
-
-    return joiner.toString();
-  }
-
-}
 

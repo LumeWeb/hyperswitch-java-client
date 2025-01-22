@@ -22,22 +22,21 @@ import org.openapitools.jackson.nullable.JsonNullable;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.openapitools.jackson.nullable.JsonNullable;
 import java.util.NoSuchElementException;
-import org.junit.Assert;
-import org.junit.Ignore;
-import org.junit.Test;
-
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Test;
 
 /**
  * Model tests for RefundUpdateRequest
  */
-public class RefundUpdateRequestTest {
+class RefundUpdateRequestTest {
     private final RefundUpdateRequest model = new RefundUpdateRequest();
 
     /**
      * Model tests for RefundUpdateRequest
      */
     @Test
-    public void testRefundUpdateRequest() {
+    void testRefundUpdateRequest() {
         // TODO: test RefundUpdateRequest
     }
 
@@ -45,7 +44,7 @@ public class RefundUpdateRequestTest {
      * Test the property 'reason'
      */
     @Test
-    public void reasonTest() {
+    void reasonTest() {
         // TODO: test reason
     }
 
@@ -53,7 +52,7 @@ public class RefundUpdateRequestTest {
      * Test the property 'metadata'
      */
     @Test
-    public void metadataTest() {
+    void metadataTest() {
         // TODO: test metadata
     }
 

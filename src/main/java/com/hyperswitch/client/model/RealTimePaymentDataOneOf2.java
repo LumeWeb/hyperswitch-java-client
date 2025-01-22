@@ -27,126 +27,127 @@ import java.net.URLEncoder;
 import java.util.StringJoiner;
 
 /**
- * RealTimePaymentDataOneOf2
- */
-@JsonPropertyOrder({
-  RealTimePaymentDataOneOf2.JSON_PROPERTY_PROMPT_PAY
-})
-@JsonTypeName("RealTimePaymentData_oneOf_2")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+* RealTimePaymentDataOneOf2
+*/
+    @JsonPropertyOrder({
+        RealTimePaymentDataOneOf2.JSON_PROPERTY_PROMPT_PAY
+    })
+            @JsonTypeName("RealTimePaymentData_oneOf_2")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class RealTimePaymentDataOneOf2 {
-  public static final String JSON_PROPERTY_PROMPT_PAY = "prompt_pay";
-  private Object promptPay;
+        public static final String JSON_PROPERTY_PROMPT_PAY = "prompt_pay";
+    @javax.annotation.Nonnull
+            private Object promptPay;
 
-  public RealTimePaymentDataOneOf2() {
-  }
+public RealTimePaymentDataOneOf2() {
+}
 
-  public RealTimePaymentDataOneOf2 promptPay(Object promptPay) {
-    
-    this.promptPay = promptPay;
-    return this;
-  }
+        public RealTimePaymentDataOneOf2 promptPay(@javax.annotation.Nonnull Object promptPay) {
+        
+        this.promptPay = promptPay;
+        return this;
+        }
 
-   /**
-   * Get promptPay
-   * @return promptPay
-  **/
-  @javax.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_PROMPT_PAY)
+    /**
+        * Get promptPay
+    * @return promptPay
+    */
+    @javax.annotation.Nonnull
+      @JsonProperty(JSON_PROPERTY_PROMPT_PAY)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-  public Object getPromptPay() {
-    return promptPay;
-  }
+    public Object getPromptPay() {
+        return promptPay;
+    }
 
 
-  @JsonProperty(JSON_PROPERTY_PROMPT_PAY)
+          @JsonProperty(JSON_PROPERTY_PROMPT_PAY)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setPromptPay(Object promptPay) {
-    this.promptPay = promptPay;
-  }
+  public void setPromptPay(@javax.annotation.Nonnull Object promptPay) {
+            this.promptPay = promptPay;
+        }
 
-  @Override
-  public boolean equals(Object o) {
+@Override
+public boolean equals(Object o) {
     if (this == o) {
-      return true;
+    return true;
     }
     if (o == null || getClass() != o.getClass()) {
-      return false;
+    return false;
     }
-    RealTimePaymentDataOneOf2 realTimePaymentDataOneOf2 = (RealTimePaymentDataOneOf2) o;
-    return Objects.equals(this.promptPay, realTimePaymentDataOneOf2.promptPay);
-  }
+        RealTimePaymentDataOneOf2 realTimePaymentDataOneOf2 = (RealTimePaymentDataOneOf2) o;
+        return Objects.equals(this.promptPay, realTimePaymentDataOneOf2.promptPay);
+}
 
-  @Override
-  public int hashCode() {
-    return Objects.hash(promptPay);
-  }
+    @Override
+    public int hashCode() {
+        return Objects.hash(promptPay);
+    }
 
-  @Override
-  public String toString() {
+    @Override
+    public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class RealTimePaymentDataOneOf2 {\n");
-    sb.append("    promptPay: ").append(toIndentedString(promptPay)).append("\n");
+        sb.append("    promptPay: ").append(toIndentedString(promptPay)).append("\n");
     sb.append("}");
     return sb.toString();
-  }
+    }
 
-  /**
-   * Convert the given object to string with each line indented by 4 spaces
-   * (except the first line).
-   */
-  private String toIndentedString(Object o) {
+    /**
+    * Convert the given object to string with each line indented by 4 spaces
+    * (except the first line).
+    */
+    private String toIndentedString(Object o) {
     if (o == null) {
-      return "null";
+    return "null";
     }
     return o.toString().replace("\n", "\n    ");
-  }
-
-  /**
-   * Convert the instance into URL query string.
-   *
-   * @return URL query string
-   */
-  public String toUrlQueryString() {
-    return toUrlQueryString(null);
-  }
-
-  /**
-   * Convert the instance into URL query string.
-   *
-   * @param prefix prefix of the query string
-   * @return URL query string
-   */
-  public String toUrlQueryString(String prefix) {
-    String suffix = "";
-    String containerSuffix = "";
-    String containerPrefix = "";
-    if (prefix == null) {
-      // style=form, explode=true, e.g. /pet?name=cat&type=manx
-      prefix = "";
-    } else {
-      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
-      prefix = prefix + "[";
-      suffix = "]";
-      containerSuffix = "]";
-      containerPrefix = "[";
     }
 
-    StringJoiner joiner = new StringJoiner("&");
+        /**
+        * Convert the instance into URL query string.
+        *
+        * @return URL query string
+        */
+        public String toUrlQueryString() {
+        return toUrlQueryString(null);
+        }
 
-    // add `prompt_pay` to the URL query string
-    if (getPromptPay() != null) {
-      try {
-        joiner.add(String.format("%sprompt_pay%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getPromptPay()), "UTF-8").replaceAll("\\+", "%20")));
-      } catch (UnsupportedEncodingException e) {
-        // Should never happen, UTF-8 is always supported
-        throw new RuntimeException(e);
-      }
+        /**
+        * Convert the instance into URL query string.
+        *
+        * @param prefix prefix of the query string
+        * @return URL query string
+        */
+        public String toUrlQueryString(String prefix) {
+        String suffix = "";
+        String containerSuffix = "";
+        String containerPrefix = "";
+        if (prefix == null) {
+        // style=form, explode=true, e.g. /pet?name=cat&type=manx
+        prefix = "";
+        } else {
+        // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+        prefix = prefix + "[";
+        suffix = "]";
+        containerSuffix = "]";
+        containerPrefix = "[";
+        }
+
+        StringJoiner joiner = new StringJoiner("&");
+
+            // add `prompt_pay` to the URL query string
+                        if (getPromptPay() != null) {
+                        try {
+                        joiner.add(String.format("%sprompt_pay%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getPromptPay()), "UTF-8").replaceAll("\\+", "%20")));
+                        } catch (UnsupportedEncodingException e) {
+                        // Should never happen, UTF-8 is always supported
+                        throw new RuntimeException(e);
+                        }
+                        }
+
+        return joiner.toString();
+        }
+
     }
-
-    return joiner.toString();
-  }
-
-}
 

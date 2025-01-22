@@ -27,251 +27,252 @@ import java.net.URLEncoder;
 import java.util.StringJoiner;
 
 /**
- * ephemeral_key for the customer_id mentioned
- */
-@JsonPropertyOrder({
-  EphemeralKeyCreateResponse.JSON_PROPERTY_CUSTOMER_ID,
-  EphemeralKeyCreateResponse.JSON_PROPERTY_CREATED_AT,
-  EphemeralKeyCreateResponse.JSON_PROPERTY_EXPIRES,
-  EphemeralKeyCreateResponse.JSON_PROPERTY_SECRET
-})
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+* ephemeral_key for the customer_id mentioned
+*/
+    @JsonPropertyOrder({
+        EphemeralKeyCreateResponse.JSON_PROPERTY_CUSTOMER_ID,
+        EphemeralKeyCreateResponse.JSON_PROPERTY_CREATED_AT,
+        EphemeralKeyCreateResponse.JSON_PROPERTY_EXPIRES,
+        EphemeralKeyCreateResponse.JSON_PROPERTY_SECRET
+    })
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class EphemeralKeyCreateResponse {
-  public static final String JSON_PROPERTY_CUSTOMER_ID = "customer_id";
-  private String customerId;
+        public static final String JSON_PROPERTY_CUSTOMER_ID = "customer_id";
+    @javax.annotation.Nonnull
+            private String customerId;
 
-  public static final String JSON_PROPERTY_CREATED_AT = "created_at";
-  private Long createdAt;
+        public static final String JSON_PROPERTY_CREATED_AT = "created_at";
+    @javax.annotation.Nonnull
+            private Long createdAt;
 
-  public static final String JSON_PROPERTY_EXPIRES = "expires";
-  private Long expires;
+        public static final String JSON_PROPERTY_EXPIRES = "expires";
+    @javax.annotation.Nonnull
+            private Long expires;
 
-  public static final String JSON_PROPERTY_SECRET = "secret";
-  private String secret;
+        public static final String JSON_PROPERTY_SECRET = "secret";
+    @javax.annotation.Nonnull
+            private String secret;
 
-  public EphemeralKeyCreateResponse() {
-  }
+public EphemeralKeyCreateResponse() {
+}
 
-  public EphemeralKeyCreateResponse customerId(String customerId) {
-    
-    this.customerId = customerId;
-    return this;
-  }
+        public EphemeralKeyCreateResponse customerId(@javax.annotation.Nonnull String customerId) {
+        
+        this.customerId = customerId;
+        return this;
+        }
 
-   /**
-   * customer_id to which this ephemeral key belongs to
-   * @return customerId
-  **/
-  @javax.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_CUSTOMER_ID)
+    /**
+        * customer_id to which this ephemeral key belongs to
+    * @return customerId
+    */
+    @javax.annotation.Nonnull
+      @JsonProperty(JSON_PROPERTY_CUSTOMER_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-  public String getCustomerId() {
-    return customerId;
-  }
+    public String getCustomerId() {
+        return customerId;
+    }
 
 
-  @JsonProperty(JSON_PROPERTY_CUSTOMER_ID)
+          @JsonProperty(JSON_PROPERTY_CUSTOMER_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setCustomerId(String customerId) {
-    this.customerId = customerId;
-  }
+  public void setCustomerId(@javax.annotation.Nonnull String customerId) {
+            this.customerId = customerId;
+        }
 
+        public EphemeralKeyCreateResponse createdAt(@javax.annotation.Nonnull Long createdAt) {
+        
+        this.createdAt = createdAt;
+        return this;
+        }
 
-  public EphemeralKeyCreateResponse createdAt(Long createdAt) {
-    
-    this.createdAt = createdAt;
-    return this;
-  }
-
-   /**
-   * time at which this ephemeral key was created
-   * @return createdAt
-  **/
-  @javax.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_CREATED_AT)
-  @JsonInclude(value = JsonInclude.Include.ALWAYS)
-
-  public Long getCreatedAt() {
-    return createdAt;
-  }
-
-
-  @JsonProperty(JSON_PROPERTY_CREATED_AT)
-  @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setCreatedAt(Long createdAt) {
-    this.createdAt = createdAt;
-  }
-
-
-  public EphemeralKeyCreateResponse expires(Long expires) {
-    
-    this.expires = expires;
-    return this;
-  }
-
-   /**
-   * time at which this ephemeral key would expire
-   * @return expires
-  **/
-  @javax.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_EXPIRES)
+    /**
+        * time at which this ephemeral key was created
+    * @return createdAt
+    */
+    @javax.annotation.Nonnull
+      @JsonProperty(JSON_PROPERTY_CREATED_AT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-  public Long getExpires() {
-    return expires;
-  }
+    public Long getCreatedAt() {
+        return createdAt;
+    }
 
 
-  @JsonProperty(JSON_PROPERTY_EXPIRES)
+          @JsonProperty(JSON_PROPERTY_CREATED_AT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setExpires(Long expires) {
-    this.expires = expires;
-  }
+  public void setCreatedAt(@javax.annotation.Nonnull Long createdAt) {
+            this.createdAt = createdAt;
+        }
 
+        public EphemeralKeyCreateResponse expires(@javax.annotation.Nonnull Long expires) {
+        
+        this.expires = expires;
+        return this;
+        }
 
-  public EphemeralKeyCreateResponse secret(String secret) {
-    
-    this.secret = secret;
-    return this;
-  }
-
-   /**
-   * ephemeral key
-   * @return secret
-  **/
-  @javax.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_SECRET)
+    /**
+        * time at which this ephemeral key would expire
+    * @return expires
+    */
+    @javax.annotation.Nonnull
+      @JsonProperty(JSON_PROPERTY_EXPIRES)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-  public String getSecret() {
-    return secret;
-  }
+    public Long getExpires() {
+        return expires;
+    }
 
 
-  @JsonProperty(JSON_PROPERTY_SECRET)
+          @JsonProperty(JSON_PROPERTY_EXPIRES)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setSecret(String secret) {
-    this.secret = secret;
-  }
+  public void setExpires(@javax.annotation.Nonnull Long expires) {
+            this.expires = expires;
+        }
 
-  @Override
-  public boolean equals(Object o) {
+        public EphemeralKeyCreateResponse secret(@javax.annotation.Nonnull String secret) {
+        
+        this.secret = secret;
+        return this;
+        }
+
+    /**
+        * ephemeral key
+    * @return secret
+    */
+    @javax.annotation.Nonnull
+      @JsonProperty(JSON_PROPERTY_SECRET)
+  @JsonInclude(value = JsonInclude.Include.ALWAYS)
+
+    public String getSecret() {
+        return secret;
+    }
+
+
+          @JsonProperty(JSON_PROPERTY_SECRET)
+  @JsonInclude(value = JsonInclude.Include.ALWAYS)
+  public void setSecret(@javax.annotation.Nonnull String secret) {
+            this.secret = secret;
+        }
+
+@Override
+public boolean equals(Object o) {
     if (this == o) {
-      return true;
+    return true;
     }
     if (o == null || getClass() != o.getClass()) {
-      return false;
+    return false;
     }
-    EphemeralKeyCreateResponse ephemeralKeyCreateResponse = (EphemeralKeyCreateResponse) o;
-    return Objects.equals(this.customerId, ephemeralKeyCreateResponse.customerId) &&
+        EphemeralKeyCreateResponse ephemeralKeyCreateResponse = (EphemeralKeyCreateResponse) o;
+        return Objects.equals(this.customerId, ephemeralKeyCreateResponse.customerId) &&
         Objects.equals(this.createdAt, ephemeralKeyCreateResponse.createdAt) &&
         Objects.equals(this.expires, ephemeralKeyCreateResponse.expires) &&
         Objects.equals(this.secret, ephemeralKeyCreateResponse.secret);
-  }
+}
 
-  @Override
-  public int hashCode() {
-    return Objects.hash(customerId, createdAt, expires, secret);
-  }
+    @Override
+    public int hashCode() {
+        return Objects.hash(customerId, createdAt, expires, secret);
+    }
 
-  @Override
-  public String toString() {
+    @Override
+    public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class EphemeralKeyCreateResponse {\n");
-    sb.append("    customerId: ").append(toIndentedString(customerId)).append("\n");
-    sb.append("    createdAt: ").append(toIndentedString(createdAt)).append("\n");
-    sb.append("    expires: ").append(toIndentedString(expires)).append("\n");
-    sb.append("    secret: ").append(toIndentedString(secret)).append("\n");
+        sb.append("    customerId: ").append(toIndentedString(customerId)).append("\n");
+        sb.append("    createdAt: ").append(toIndentedString(createdAt)).append("\n");
+        sb.append("    expires: ").append(toIndentedString(expires)).append("\n");
+        sb.append("    secret: ").append(toIndentedString(secret)).append("\n");
     sb.append("}");
     return sb.toString();
-  }
+    }
 
-  /**
-   * Convert the given object to string with each line indented by 4 spaces
-   * (except the first line).
-   */
-  private String toIndentedString(Object o) {
+    /**
+    * Convert the given object to string with each line indented by 4 spaces
+    * (except the first line).
+    */
+    private String toIndentedString(Object o) {
     if (o == null) {
-      return "null";
+    return "null";
     }
     return o.toString().replace("\n", "\n    ");
-  }
-
-  /**
-   * Convert the instance into URL query string.
-   *
-   * @return URL query string
-   */
-  public String toUrlQueryString() {
-    return toUrlQueryString(null);
-  }
-
-  /**
-   * Convert the instance into URL query string.
-   *
-   * @param prefix prefix of the query string
-   * @return URL query string
-   */
-  public String toUrlQueryString(String prefix) {
-    String suffix = "";
-    String containerSuffix = "";
-    String containerPrefix = "";
-    if (prefix == null) {
-      // style=form, explode=true, e.g. /pet?name=cat&type=manx
-      prefix = "";
-    } else {
-      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
-      prefix = prefix + "[";
-      suffix = "]";
-      containerSuffix = "]";
-      containerPrefix = "[";
     }
 
-    StringJoiner joiner = new StringJoiner("&");
+        /**
+        * Convert the instance into URL query string.
+        *
+        * @return URL query string
+        */
+        public String toUrlQueryString() {
+        return toUrlQueryString(null);
+        }
 
-    // add `customer_id` to the URL query string
-    if (getCustomerId() != null) {
-      try {
-        joiner.add(String.format("%scustomer_id%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCustomerId()), "UTF-8").replaceAll("\\+", "%20")));
-      } catch (UnsupportedEncodingException e) {
-        // Should never happen, UTF-8 is always supported
-        throw new RuntimeException(e);
-      }
+        /**
+        * Convert the instance into URL query string.
+        *
+        * @param prefix prefix of the query string
+        * @return URL query string
+        */
+        public String toUrlQueryString(String prefix) {
+        String suffix = "";
+        String containerSuffix = "";
+        String containerPrefix = "";
+        if (prefix == null) {
+        // style=form, explode=true, e.g. /pet?name=cat&type=manx
+        prefix = "";
+        } else {
+        // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+        prefix = prefix + "[";
+        suffix = "]";
+        containerSuffix = "]";
+        containerPrefix = "[";
+        }
+
+        StringJoiner joiner = new StringJoiner("&");
+
+            // add `customer_id` to the URL query string
+                        if (getCustomerId() != null) {
+                        try {
+                        joiner.add(String.format("%scustomer_id%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCustomerId()), "UTF-8").replaceAll("\\+", "%20")));
+                        } catch (UnsupportedEncodingException e) {
+                        // Should never happen, UTF-8 is always supported
+                        throw new RuntimeException(e);
+                        }
+                        }
+
+            // add `created_at` to the URL query string
+                        if (getCreatedAt() != null) {
+                        try {
+                        joiner.add(String.format("%screated_at%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCreatedAt()), "UTF-8").replaceAll("\\+", "%20")));
+                        } catch (UnsupportedEncodingException e) {
+                        // Should never happen, UTF-8 is always supported
+                        throw new RuntimeException(e);
+                        }
+                        }
+
+            // add `expires` to the URL query string
+                        if (getExpires() != null) {
+                        try {
+                        joiner.add(String.format("%sexpires%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getExpires()), "UTF-8").replaceAll("\\+", "%20")));
+                        } catch (UnsupportedEncodingException e) {
+                        // Should never happen, UTF-8 is always supported
+                        throw new RuntimeException(e);
+                        }
+                        }
+
+            // add `secret` to the URL query string
+                        if (getSecret() != null) {
+                        try {
+                        joiner.add(String.format("%ssecret%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getSecret()), "UTF-8").replaceAll("\\+", "%20")));
+                        } catch (UnsupportedEncodingException e) {
+                        // Should never happen, UTF-8 is always supported
+                        throw new RuntimeException(e);
+                        }
+                        }
+
+        return joiner.toString();
+        }
+
     }
-
-    // add `created_at` to the URL query string
-    if (getCreatedAt() != null) {
-      try {
-        joiner.add(String.format("%screated_at%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCreatedAt()), "UTF-8").replaceAll("\\+", "%20")));
-      } catch (UnsupportedEncodingException e) {
-        // Should never happen, UTF-8 is always supported
-        throw new RuntimeException(e);
-      }
-    }
-
-    // add `expires` to the URL query string
-    if (getExpires() != null) {
-      try {
-        joiner.add(String.format("%sexpires%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getExpires()), "UTF-8").replaceAll("\\+", "%20")));
-      } catch (UnsupportedEncodingException e) {
-        // Should never happen, UTF-8 is always supported
-        throw new RuntimeException(e);
-      }
-    }
-
-    // add `secret` to the URL query string
-    if (getSecret() != null) {
-      try {
-        joiner.add(String.format("%ssecret%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getSecret()), "UTF-8").replaceAll("\\+", "%20")));
-      } catch (UnsupportedEncodingException e) {
-        // Should never happen, UTF-8 is always supported
-        throw new RuntimeException(e);
-      }
-    }
-
-    return joiner.toString();
-  }
-
-}
 

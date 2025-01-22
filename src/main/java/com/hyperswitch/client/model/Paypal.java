@@ -27,209 +27,210 @@ import java.net.URLEncoder;
 import java.util.StringJoiner;
 
 /**
- * Paypal
- */
-@JsonPropertyOrder({
-  Paypal.JSON_PROPERTY_EMAIL,
-  Paypal.JSON_PROPERTY_TELEPHONE_NUMBER,
-  Paypal.JSON_PROPERTY_PAYPAL_ID
-})
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+* Paypal
+*/
+    @JsonPropertyOrder({
+        Paypal.JSON_PROPERTY_EMAIL,
+        Paypal.JSON_PROPERTY_TELEPHONE_NUMBER,
+        Paypal.JSON_PROPERTY_PAYPAL_ID
+    })
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class Paypal {
-  public static final String JSON_PROPERTY_EMAIL = "email";
-  private String email;
+        public static final String JSON_PROPERTY_EMAIL = "email";
+    @javax.annotation.Nonnull
+            private String email;
 
-  public static final String JSON_PROPERTY_TELEPHONE_NUMBER = "telephone_number";
-  private String telephoneNumber;
+        public static final String JSON_PROPERTY_TELEPHONE_NUMBER = "telephone_number";
+    @javax.annotation.Nonnull
+            private String telephoneNumber;
 
-  public static final String JSON_PROPERTY_PAYPAL_ID = "paypal_id";
-  private String paypalId;
+        public static final String JSON_PROPERTY_PAYPAL_ID = "paypal_id";
+    @javax.annotation.Nonnull
+            private String paypalId;
 
-  public Paypal() {
-  }
+public Paypal() {
+}
 
-  public Paypal email(String email) {
-    
-    this.email = email;
-    return this;
-  }
+        public Paypal email(@javax.annotation.Nonnull String email) {
+        
+        this.email = email;
+        return this;
+        }
 
-   /**
-   * Email linked with paypal account
-   * @return email
-  **/
-  @javax.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_EMAIL)
+    /**
+        * Email linked with paypal account
+    * @return email
+    */
+    @javax.annotation.Nonnull
+      @JsonProperty(JSON_PROPERTY_EMAIL)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-  public String getEmail() {
-    return email;
-  }
+    public String getEmail() {
+        return email;
+    }
 
 
-  @JsonProperty(JSON_PROPERTY_EMAIL)
+          @JsonProperty(JSON_PROPERTY_EMAIL)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setEmail(String email) {
-    this.email = email;
-  }
+  public void setEmail(@javax.annotation.Nonnull String email) {
+            this.email = email;
+        }
 
+        public Paypal telephoneNumber(@javax.annotation.Nonnull String telephoneNumber) {
+        
+        this.telephoneNumber = telephoneNumber;
+        return this;
+        }
 
-  public Paypal telephoneNumber(String telephoneNumber) {
-    
-    this.telephoneNumber = telephoneNumber;
-    return this;
-  }
-
-   /**
-   * mobile number linked to paypal account
-   * @return telephoneNumber
-  **/
-  @javax.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_TELEPHONE_NUMBER)
-  @JsonInclude(value = JsonInclude.Include.ALWAYS)
-
-  public String getTelephoneNumber() {
-    return telephoneNumber;
-  }
-
-
-  @JsonProperty(JSON_PROPERTY_TELEPHONE_NUMBER)
-  @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setTelephoneNumber(String telephoneNumber) {
-    this.telephoneNumber = telephoneNumber;
-  }
-
-
-  public Paypal paypalId(String paypalId) {
-    
-    this.paypalId = paypalId;
-    return this;
-  }
-
-   /**
-   * id of the paypal account
-   * @return paypalId
-  **/
-  @javax.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_PAYPAL_ID)
+    /**
+        * mobile number linked to paypal account
+    * @return telephoneNumber
+    */
+    @javax.annotation.Nonnull
+      @JsonProperty(JSON_PROPERTY_TELEPHONE_NUMBER)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-  public String getPaypalId() {
-    return paypalId;
-  }
+    public String getTelephoneNumber() {
+        return telephoneNumber;
+    }
 
 
-  @JsonProperty(JSON_PROPERTY_PAYPAL_ID)
+          @JsonProperty(JSON_PROPERTY_TELEPHONE_NUMBER)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setPaypalId(String paypalId) {
-    this.paypalId = paypalId;
-  }
+  public void setTelephoneNumber(@javax.annotation.Nonnull String telephoneNumber) {
+            this.telephoneNumber = telephoneNumber;
+        }
 
-  @Override
-  public boolean equals(Object o) {
+        public Paypal paypalId(@javax.annotation.Nonnull String paypalId) {
+        
+        this.paypalId = paypalId;
+        return this;
+        }
+
+    /**
+        * id of the paypal account
+    * @return paypalId
+    */
+    @javax.annotation.Nonnull
+      @JsonProperty(JSON_PROPERTY_PAYPAL_ID)
+  @JsonInclude(value = JsonInclude.Include.ALWAYS)
+
+    public String getPaypalId() {
+        return paypalId;
+    }
+
+
+          @JsonProperty(JSON_PROPERTY_PAYPAL_ID)
+  @JsonInclude(value = JsonInclude.Include.ALWAYS)
+  public void setPaypalId(@javax.annotation.Nonnull String paypalId) {
+            this.paypalId = paypalId;
+        }
+
+@Override
+public boolean equals(Object o) {
     if (this == o) {
-      return true;
+    return true;
     }
     if (o == null || getClass() != o.getClass()) {
-      return false;
+    return false;
     }
-    Paypal paypal = (Paypal) o;
-    return Objects.equals(this.email, paypal.email) &&
+        Paypal paypal = (Paypal) o;
+        return Objects.equals(this.email, paypal.email) &&
         Objects.equals(this.telephoneNumber, paypal.telephoneNumber) &&
         Objects.equals(this.paypalId, paypal.paypalId);
-  }
+}
 
-  @Override
-  public int hashCode() {
-    return Objects.hash(email, telephoneNumber, paypalId);
-  }
+    @Override
+    public int hashCode() {
+        return Objects.hash(email, telephoneNumber, paypalId);
+    }
 
-  @Override
-  public String toString() {
+    @Override
+    public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class Paypal {\n");
-    sb.append("    email: ").append(toIndentedString(email)).append("\n");
-    sb.append("    telephoneNumber: ").append(toIndentedString(telephoneNumber)).append("\n");
-    sb.append("    paypalId: ").append(toIndentedString(paypalId)).append("\n");
+        sb.append("    email: ").append(toIndentedString(email)).append("\n");
+        sb.append("    telephoneNumber: ").append(toIndentedString(telephoneNumber)).append("\n");
+        sb.append("    paypalId: ").append(toIndentedString(paypalId)).append("\n");
     sb.append("}");
     return sb.toString();
-  }
+    }
 
-  /**
-   * Convert the given object to string with each line indented by 4 spaces
-   * (except the first line).
-   */
-  private String toIndentedString(Object o) {
+    /**
+    * Convert the given object to string with each line indented by 4 spaces
+    * (except the first line).
+    */
+    private String toIndentedString(Object o) {
     if (o == null) {
-      return "null";
+    return "null";
     }
     return o.toString().replace("\n", "\n    ");
-  }
-
-  /**
-   * Convert the instance into URL query string.
-   *
-   * @return URL query string
-   */
-  public String toUrlQueryString() {
-    return toUrlQueryString(null);
-  }
-
-  /**
-   * Convert the instance into URL query string.
-   *
-   * @param prefix prefix of the query string
-   * @return URL query string
-   */
-  public String toUrlQueryString(String prefix) {
-    String suffix = "";
-    String containerSuffix = "";
-    String containerPrefix = "";
-    if (prefix == null) {
-      // style=form, explode=true, e.g. /pet?name=cat&type=manx
-      prefix = "";
-    } else {
-      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
-      prefix = prefix + "[";
-      suffix = "]";
-      containerSuffix = "]";
-      containerPrefix = "[";
     }
 
-    StringJoiner joiner = new StringJoiner("&");
+        /**
+        * Convert the instance into URL query string.
+        *
+        * @return URL query string
+        */
+        public String toUrlQueryString() {
+        return toUrlQueryString(null);
+        }
 
-    // add `email` to the URL query string
-    if (getEmail() != null) {
-      try {
-        joiner.add(String.format("%semail%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getEmail()), "UTF-8").replaceAll("\\+", "%20")));
-      } catch (UnsupportedEncodingException e) {
-        // Should never happen, UTF-8 is always supported
-        throw new RuntimeException(e);
-      }
+        /**
+        * Convert the instance into URL query string.
+        *
+        * @param prefix prefix of the query string
+        * @return URL query string
+        */
+        public String toUrlQueryString(String prefix) {
+        String suffix = "";
+        String containerSuffix = "";
+        String containerPrefix = "";
+        if (prefix == null) {
+        // style=form, explode=true, e.g. /pet?name=cat&type=manx
+        prefix = "";
+        } else {
+        // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+        prefix = prefix + "[";
+        suffix = "]";
+        containerSuffix = "]";
+        containerPrefix = "[";
+        }
+
+        StringJoiner joiner = new StringJoiner("&");
+
+            // add `email` to the URL query string
+                        if (getEmail() != null) {
+                        try {
+                        joiner.add(String.format("%semail%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getEmail()), "UTF-8").replaceAll("\\+", "%20")));
+                        } catch (UnsupportedEncodingException e) {
+                        // Should never happen, UTF-8 is always supported
+                        throw new RuntimeException(e);
+                        }
+                        }
+
+            // add `telephone_number` to the URL query string
+                        if (getTelephoneNumber() != null) {
+                        try {
+                        joiner.add(String.format("%stelephone_number%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getTelephoneNumber()), "UTF-8").replaceAll("\\+", "%20")));
+                        } catch (UnsupportedEncodingException e) {
+                        // Should never happen, UTF-8 is always supported
+                        throw new RuntimeException(e);
+                        }
+                        }
+
+            // add `paypal_id` to the URL query string
+                        if (getPaypalId() != null) {
+                        try {
+                        joiner.add(String.format("%spaypal_id%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getPaypalId()), "UTF-8").replaceAll("\\+", "%20")));
+                        } catch (UnsupportedEncodingException e) {
+                        // Should never happen, UTF-8 is always supported
+                        throw new RuntimeException(e);
+                        }
+                        }
+
+        return joiner.toString();
+        }
+
     }
-
-    // add `telephone_number` to the URL query string
-    if (getTelephoneNumber() != null) {
-      try {
-        joiner.add(String.format("%stelephone_number%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getTelephoneNumber()), "UTF-8").replaceAll("\\+", "%20")));
-      } catch (UnsupportedEncodingException e) {
-        // Should never happen, UTF-8 is always supported
-        throw new RuntimeException(e);
-      }
-    }
-
-    // add `paypal_id` to the URL query string
-    if (getPaypalId() != null) {
-      try {
-        joiner.add(String.format("%spaypal_id%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getPaypalId()), "UTF-8").replaceAll("\\+", "%20")));
-      } catch (UnsupportedEncodingException e) {
-        // Should never happen, UTF-8 is always supported
-        throw new RuntimeException(e);
-      }
-    }
-
-    return joiner.toString();
-  }
-
-}
 

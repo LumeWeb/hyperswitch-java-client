@@ -27,209 +27,210 @@ import java.net.URLEncoder;
 import java.util.StringJoiner;
 
 /**
- * PollConfigResponse
- */
-@JsonPropertyOrder({
-  PollConfigResponse.JSON_PROPERTY_POLL_ID,
-  PollConfigResponse.JSON_PROPERTY_DELAY_IN_SECS,
-  PollConfigResponse.JSON_PROPERTY_FREQUENCY
-})
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+* PollConfigResponse
+*/
+    @JsonPropertyOrder({
+        PollConfigResponse.JSON_PROPERTY_POLL_ID,
+        PollConfigResponse.JSON_PROPERTY_DELAY_IN_SECS,
+        PollConfigResponse.JSON_PROPERTY_FREQUENCY
+    })
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class PollConfigResponse {
-  public static final String JSON_PROPERTY_POLL_ID = "poll_id";
-  private String pollId;
+        public static final String JSON_PROPERTY_POLL_ID = "poll_id";
+    @javax.annotation.Nonnull
+            private String pollId;
 
-  public static final String JSON_PROPERTY_DELAY_IN_SECS = "delay_in_secs";
-  private Integer delayInSecs;
+        public static final String JSON_PROPERTY_DELAY_IN_SECS = "delay_in_secs";
+    @javax.annotation.Nonnull
+            private Integer delayInSecs;
 
-  public static final String JSON_PROPERTY_FREQUENCY = "frequency";
-  private Integer frequency;
+        public static final String JSON_PROPERTY_FREQUENCY = "frequency";
+    @javax.annotation.Nonnull
+            private Integer frequency;
 
-  public PollConfigResponse() {
-  }
+public PollConfigResponse() {
+}
 
-  public PollConfigResponse pollId(String pollId) {
-    
-    this.pollId = pollId;
-    return this;
-  }
+        public PollConfigResponse pollId(@javax.annotation.Nonnull String pollId) {
+        
+        this.pollId = pollId;
+        return this;
+        }
 
-   /**
-   * Poll Id
-   * @return pollId
-  **/
-  @javax.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_POLL_ID)
+    /**
+        * Poll Id
+    * @return pollId
+    */
+    @javax.annotation.Nonnull
+      @JsonProperty(JSON_PROPERTY_POLL_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-  public String getPollId() {
-    return pollId;
-  }
+    public String getPollId() {
+        return pollId;
+    }
 
 
-  @JsonProperty(JSON_PROPERTY_POLL_ID)
+          @JsonProperty(JSON_PROPERTY_POLL_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setPollId(String pollId) {
-    this.pollId = pollId;
-  }
+  public void setPollId(@javax.annotation.Nonnull String pollId) {
+            this.pollId = pollId;
+        }
 
+        public PollConfigResponse delayInSecs(@javax.annotation.Nonnull Integer delayInSecs) {
+        
+        this.delayInSecs = delayInSecs;
+        return this;
+        }
 
-  public PollConfigResponse delayInSecs(Integer delayInSecs) {
-    
-    this.delayInSecs = delayInSecs;
-    return this;
-  }
-
-   /**
-   * Interval of the poll
-   * @return delayInSecs
-  **/
-  @javax.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_DELAY_IN_SECS)
-  @JsonInclude(value = JsonInclude.Include.ALWAYS)
-
-  public Integer getDelayInSecs() {
-    return delayInSecs;
-  }
-
-
-  @JsonProperty(JSON_PROPERTY_DELAY_IN_SECS)
-  @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setDelayInSecs(Integer delayInSecs) {
-    this.delayInSecs = delayInSecs;
-  }
-
-
-  public PollConfigResponse frequency(Integer frequency) {
-    
-    this.frequency = frequency;
-    return this;
-  }
-
-   /**
-   * Frequency of the poll
-   * @return frequency
-  **/
-  @javax.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_FREQUENCY)
+    /**
+        * Interval of the poll
+    * @return delayInSecs
+    */
+    @javax.annotation.Nonnull
+      @JsonProperty(JSON_PROPERTY_DELAY_IN_SECS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-  public Integer getFrequency() {
-    return frequency;
-  }
+    public Integer getDelayInSecs() {
+        return delayInSecs;
+    }
 
 
-  @JsonProperty(JSON_PROPERTY_FREQUENCY)
+          @JsonProperty(JSON_PROPERTY_DELAY_IN_SECS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setFrequency(Integer frequency) {
-    this.frequency = frequency;
-  }
+  public void setDelayInSecs(@javax.annotation.Nonnull Integer delayInSecs) {
+            this.delayInSecs = delayInSecs;
+        }
 
-  @Override
-  public boolean equals(Object o) {
+        public PollConfigResponse frequency(@javax.annotation.Nonnull Integer frequency) {
+        
+        this.frequency = frequency;
+        return this;
+        }
+
+    /**
+        * Frequency of the poll
+    * @return frequency
+    */
+    @javax.annotation.Nonnull
+      @JsonProperty(JSON_PROPERTY_FREQUENCY)
+  @JsonInclude(value = JsonInclude.Include.ALWAYS)
+
+    public Integer getFrequency() {
+        return frequency;
+    }
+
+
+          @JsonProperty(JSON_PROPERTY_FREQUENCY)
+  @JsonInclude(value = JsonInclude.Include.ALWAYS)
+  public void setFrequency(@javax.annotation.Nonnull Integer frequency) {
+            this.frequency = frequency;
+        }
+
+@Override
+public boolean equals(Object o) {
     if (this == o) {
-      return true;
+    return true;
     }
     if (o == null || getClass() != o.getClass()) {
-      return false;
+    return false;
     }
-    PollConfigResponse pollConfigResponse = (PollConfigResponse) o;
-    return Objects.equals(this.pollId, pollConfigResponse.pollId) &&
+        PollConfigResponse pollConfigResponse = (PollConfigResponse) o;
+        return Objects.equals(this.pollId, pollConfigResponse.pollId) &&
         Objects.equals(this.delayInSecs, pollConfigResponse.delayInSecs) &&
         Objects.equals(this.frequency, pollConfigResponse.frequency);
-  }
+}
 
-  @Override
-  public int hashCode() {
-    return Objects.hash(pollId, delayInSecs, frequency);
-  }
+    @Override
+    public int hashCode() {
+        return Objects.hash(pollId, delayInSecs, frequency);
+    }
 
-  @Override
-  public String toString() {
+    @Override
+    public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class PollConfigResponse {\n");
-    sb.append("    pollId: ").append(toIndentedString(pollId)).append("\n");
-    sb.append("    delayInSecs: ").append(toIndentedString(delayInSecs)).append("\n");
-    sb.append("    frequency: ").append(toIndentedString(frequency)).append("\n");
+        sb.append("    pollId: ").append(toIndentedString(pollId)).append("\n");
+        sb.append("    delayInSecs: ").append(toIndentedString(delayInSecs)).append("\n");
+        sb.append("    frequency: ").append(toIndentedString(frequency)).append("\n");
     sb.append("}");
     return sb.toString();
-  }
+    }
 
-  /**
-   * Convert the given object to string with each line indented by 4 spaces
-   * (except the first line).
-   */
-  private String toIndentedString(Object o) {
+    /**
+    * Convert the given object to string with each line indented by 4 spaces
+    * (except the first line).
+    */
+    private String toIndentedString(Object o) {
     if (o == null) {
-      return "null";
+    return "null";
     }
     return o.toString().replace("\n", "\n    ");
-  }
-
-  /**
-   * Convert the instance into URL query string.
-   *
-   * @return URL query string
-   */
-  public String toUrlQueryString() {
-    return toUrlQueryString(null);
-  }
-
-  /**
-   * Convert the instance into URL query string.
-   *
-   * @param prefix prefix of the query string
-   * @return URL query string
-   */
-  public String toUrlQueryString(String prefix) {
-    String suffix = "";
-    String containerSuffix = "";
-    String containerPrefix = "";
-    if (prefix == null) {
-      // style=form, explode=true, e.g. /pet?name=cat&type=manx
-      prefix = "";
-    } else {
-      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
-      prefix = prefix + "[";
-      suffix = "]";
-      containerSuffix = "]";
-      containerPrefix = "[";
     }
 
-    StringJoiner joiner = new StringJoiner("&");
+        /**
+        * Convert the instance into URL query string.
+        *
+        * @return URL query string
+        */
+        public String toUrlQueryString() {
+        return toUrlQueryString(null);
+        }
 
-    // add `poll_id` to the URL query string
-    if (getPollId() != null) {
-      try {
-        joiner.add(String.format("%spoll_id%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getPollId()), "UTF-8").replaceAll("\\+", "%20")));
-      } catch (UnsupportedEncodingException e) {
-        // Should never happen, UTF-8 is always supported
-        throw new RuntimeException(e);
-      }
+        /**
+        * Convert the instance into URL query string.
+        *
+        * @param prefix prefix of the query string
+        * @return URL query string
+        */
+        public String toUrlQueryString(String prefix) {
+        String suffix = "";
+        String containerSuffix = "";
+        String containerPrefix = "";
+        if (prefix == null) {
+        // style=form, explode=true, e.g. /pet?name=cat&type=manx
+        prefix = "";
+        } else {
+        // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+        prefix = prefix + "[";
+        suffix = "]";
+        containerSuffix = "]";
+        containerPrefix = "[";
+        }
+
+        StringJoiner joiner = new StringJoiner("&");
+
+            // add `poll_id` to the URL query string
+                        if (getPollId() != null) {
+                        try {
+                        joiner.add(String.format("%spoll_id%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getPollId()), "UTF-8").replaceAll("\\+", "%20")));
+                        } catch (UnsupportedEncodingException e) {
+                        // Should never happen, UTF-8 is always supported
+                        throw new RuntimeException(e);
+                        }
+                        }
+
+            // add `delay_in_secs` to the URL query string
+                        if (getDelayInSecs() != null) {
+                        try {
+                        joiner.add(String.format("%sdelay_in_secs%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getDelayInSecs()), "UTF-8").replaceAll("\\+", "%20")));
+                        } catch (UnsupportedEncodingException e) {
+                        // Should never happen, UTF-8 is always supported
+                        throw new RuntimeException(e);
+                        }
+                        }
+
+            // add `frequency` to the URL query string
+                        if (getFrequency() != null) {
+                        try {
+                        joiner.add(String.format("%sfrequency%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getFrequency()), "UTF-8").replaceAll("\\+", "%20")));
+                        } catch (UnsupportedEncodingException e) {
+                        // Should never happen, UTF-8 is always supported
+                        throw new RuntimeException(e);
+                        }
+                        }
+
+        return joiner.toString();
+        }
+
     }
-
-    // add `delay_in_secs` to the URL query string
-    if (getDelayInSecs() != null) {
-      try {
-        joiner.add(String.format("%sdelay_in_secs%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getDelayInSecs()), "UTF-8").replaceAll("\\+", "%20")));
-      } catch (UnsupportedEncodingException e) {
-        // Should never happen, UTF-8 is always supported
-        throw new RuntimeException(e);
-      }
-    }
-
-    // add `frequency` to the URL query string
-    if (getFrequency() != null) {
-      try {
-        joiner.add(String.format("%sfrequency%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getFrequency()), "UTF-8").replaceAll("\\+", "%20")));
-      } catch (UnsupportedEncodingException e) {
-        // Should never happen, UTF-8 is always supported
-        throw new RuntimeException(e);
-      }
-    }
-
-    return joiner.toString();
-  }
-
-}
 

@@ -31,194 +31,195 @@ import java.net.URLEncoder;
 import java.util.StringJoiner;
 
 /**
- * CryptoData
- */
-@JsonPropertyOrder({
-  CryptoData.JSON_PROPERTY_PAY_CURRENCY,
-  CryptoData.JSON_PROPERTY_NETWORK
-})
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+* CryptoData
+*/
+    @JsonPropertyOrder({
+        CryptoData.JSON_PROPERTY_PAY_CURRENCY,
+        CryptoData.JSON_PROPERTY_NETWORK
+    })
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class CryptoData {
-  public static final String JSON_PROPERTY_PAY_CURRENCY = "pay_currency";
-  private JsonNullable<String> payCurrency = JsonNullable.<String>undefined();
+        public static final String JSON_PROPERTY_PAY_CURRENCY = "pay_currency";
+    @javax.annotation.Nullable
+            private JsonNullable<String> payCurrency = JsonNullable.<String>undefined();
 
-  public static final String JSON_PROPERTY_NETWORK = "network";
-  private JsonNullable<String> network = JsonNullable.<String>undefined();
+        public static final String JSON_PROPERTY_NETWORK = "network";
+    @javax.annotation.Nullable
+            private JsonNullable<String> network = JsonNullable.<String>undefined();
 
-  public CryptoData() {
-  }
+public CryptoData() {
+}
 
-  public CryptoData payCurrency(String payCurrency) {
-    this.payCurrency = JsonNullable.<String>of(payCurrency);
+        public CryptoData payCurrency(@javax.annotation.Nullable String payCurrency) {
+        this.payCurrency = JsonNullable.<String>of(payCurrency);
+        
+        return this;
+        }
+
+    /**
+        * Get payCurrency
+    * @return payCurrency
+    */
+    @javax.annotation.Nullable
+        @JsonIgnore
     
-    return this;
-  }
+    public String getPayCurrency() {
+                return payCurrency.orElse(null);
+    }
 
-   /**
-   * Get payCurrency
-   * @return payCurrency
-  **/
-  @javax.annotation.Nullable
-  @JsonIgnore
-
-  public String getPayCurrency() {
-        return payCurrency.orElse(null);
-  }
-
-  @JsonProperty(JSON_PROPERTY_PAY_CURRENCY)
+          @JsonProperty(JSON_PROPERTY_PAY_CURRENCY)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-  public JsonNullable<String> getPayCurrency_JsonNullable() {
-    return payCurrency;
-  }
-  
-  @JsonProperty(JSON_PROPERTY_PAY_CURRENCY)
-  public void setPayCurrency_JsonNullable(JsonNullable<String> payCurrency) {
-    this.payCurrency = payCurrency;
-  }
-
-  public void setPayCurrency(String payCurrency) {
-    this.payCurrency = JsonNullable.<String>of(payCurrency);
-  }
-
-
-  public CryptoData network(String network) {
-    this.network = JsonNullable.<String>of(network);
+        public JsonNullable<String> getPayCurrency_JsonNullable() {
+        return payCurrency;
+        }
     
-    return this;
-  }
+        @JsonProperty(JSON_PROPERTY_PAY_CURRENCY)
+        public void setPayCurrency_JsonNullable(JsonNullable<String> payCurrency) {
+        this.payCurrency = payCurrency;
+        }
 
-   /**
-   * Get network
-   * @return network
-  **/
-  @javax.annotation.Nullable
-  @JsonIgnore
+          public void setPayCurrency(@javax.annotation.Nullable String payCurrency) {
+            this.payCurrency = JsonNullable.<String>of(payCurrency);
+        }
 
-  public String getNetwork() {
-        return network.orElse(null);
-  }
+        public CryptoData network(@javax.annotation.Nullable String network) {
+        this.network = JsonNullable.<String>of(network);
+        
+        return this;
+        }
 
-  @JsonProperty(JSON_PROPERTY_NETWORK)
+    /**
+        * Get network
+    * @return network
+    */
+    @javax.annotation.Nullable
+        @JsonIgnore
+    
+    public String getNetwork() {
+                return network.orElse(null);
+    }
+
+          @JsonProperty(JSON_PROPERTY_NETWORK)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-  public JsonNullable<String> getNetwork_JsonNullable() {
-    return network;
-  }
-  
-  @JsonProperty(JSON_PROPERTY_NETWORK)
-  public void setNetwork_JsonNullable(JsonNullable<String> network) {
-    this.network = network;
-  }
+        public JsonNullable<String> getNetwork_JsonNullable() {
+        return network;
+        }
+    
+        @JsonProperty(JSON_PROPERTY_NETWORK)
+        public void setNetwork_JsonNullable(JsonNullable<String> network) {
+        this.network = network;
+        }
 
-  public void setNetwork(String network) {
-    this.network = JsonNullable.<String>of(network);
-  }
+          public void setNetwork(@javax.annotation.Nullable String network) {
+            this.network = JsonNullable.<String>of(network);
+        }
 
-  @Override
-  public boolean equals(Object o) {
+@Override
+public boolean equals(Object o) {
     if (this == o) {
-      return true;
+    return true;
     }
     if (o == null || getClass() != o.getClass()) {
-      return false;
+    return false;
     }
-    CryptoData cryptoData = (CryptoData) o;
-    return equalsNullable(this.payCurrency, cryptoData.payCurrency) &&
+        CryptoData cryptoData = (CryptoData) o;
+        return equalsNullable(this.payCurrency, cryptoData.payCurrency) &&
         equalsNullable(this.network, cryptoData.network);
-  }
+}
 
-  private static <T> boolean equalsNullable(JsonNullable<T> a, JsonNullable<T> b) {
-    return a == b || (a != null && b != null && a.isPresent() && b.isPresent() && Objects.deepEquals(a.get(), b.get()));
-  }
+    private static <T> boolean equalsNullable(JsonNullable<T> a, JsonNullable<T> b) {
+        return a == b || (a != null && b != null && a.isPresent() && b.isPresent() && Objects.deepEquals(a.get(), b.get()));
+        }
 
-  @Override
-  public int hashCode() {
-    return Objects.hash(hashCodeNullable(payCurrency), hashCodeNullable(network));
-  }
-
-  private static <T> int hashCodeNullable(JsonNullable<T> a) {
-    if (a == null) {
-      return 1;
+    @Override
+    public int hashCode() {
+        return Objects.hash(hashCodeNullable(payCurrency), hashCodeNullable(network));
     }
-    return a.isPresent() ? Arrays.deepHashCode(new Object[]{a.get()}) : 31;
-  }
 
-  @Override
-  public String toString() {
+        private static <T> int hashCodeNullable(JsonNullable<T> a) {
+        if (a == null) {
+        return 1;
+        }
+        return a.isPresent() ? Arrays.deepHashCode(new Object[]{a.get()}) : 31;
+        }
+
+    @Override
+    public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class CryptoData {\n");
-    sb.append("    payCurrency: ").append(toIndentedString(payCurrency)).append("\n");
-    sb.append("    network: ").append(toIndentedString(network)).append("\n");
+        sb.append("    payCurrency: ").append(toIndentedString(payCurrency)).append("\n");
+        sb.append("    network: ").append(toIndentedString(network)).append("\n");
     sb.append("}");
     return sb.toString();
-  }
+    }
 
-  /**
-   * Convert the given object to string with each line indented by 4 spaces
-   * (except the first line).
-   */
-  private String toIndentedString(Object o) {
+    /**
+    * Convert the given object to string with each line indented by 4 spaces
+    * (except the first line).
+    */
+    private String toIndentedString(Object o) {
     if (o == null) {
-      return "null";
+    return "null";
     }
     return o.toString().replace("\n", "\n    ");
-  }
-
-  /**
-   * Convert the instance into URL query string.
-   *
-   * @return URL query string
-   */
-  public String toUrlQueryString() {
-    return toUrlQueryString(null);
-  }
-
-  /**
-   * Convert the instance into URL query string.
-   *
-   * @param prefix prefix of the query string
-   * @return URL query string
-   */
-  public String toUrlQueryString(String prefix) {
-    String suffix = "";
-    String containerSuffix = "";
-    String containerPrefix = "";
-    if (prefix == null) {
-      // style=form, explode=true, e.g. /pet?name=cat&type=manx
-      prefix = "";
-    } else {
-      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
-      prefix = prefix + "[";
-      suffix = "]";
-      containerSuffix = "]";
-      containerPrefix = "[";
     }
 
-    StringJoiner joiner = new StringJoiner("&");
+        /**
+        * Convert the instance into URL query string.
+        *
+        * @return URL query string
+        */
+        public String toUrlQueryString() {
+        return toUrlQueryString(null);
+        }
 
-    // add `pay_currency` to the URL query string
-    if (getPayCurrency() != null) {
-      try {
-        joiner.add(String.format("%spay_currency%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getPayCurrency()), "UTF-8").replaceAll("\\+", "%20")));
-      } catch (UnsupportedEncodingException e) {
-        // Should never happen, UTF-8 is always supported
-        throw new RuntimeException(e);
-      }
+        /**
+        * Convert the instance into URL query string.
+        *
+        * @param prefix prefix of the query string
+        * @return URL query string
+        */
+        public String toUrlQueryString(String prefix) {
+        String suffix = "";
+        String containerSuffix = "";
+        String containerPrefix = "";
+        if (prefix == null) {
+        // style=form, explode=true, e.g. /pet?name=cat&type=manx
+        prefix = "";
+        } else {
+        // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+        prefix = prefix + "[";
+        suffix = "]";
+        containerSuffix = "]";
+        containerPrefix = "[";
+        }
+
+        StringJoiner joiner = new StringJoiner("&");
+
+            // add `pay_currency` to the URL query string
+                        if (getPayCurrency() != null) {
+                        try {
+                        joiner.add(String.format("%spay_currency%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getPayCurrency()), "UTF-8").replaceAll("\\+", "%20")));
+                        } catch (UnsupportedEncodingException e) {
+                        // Should never happen, UTF-8 is always supported
+                        throw new RuntimeException(e);
+                        }
+                        }
+
+            // add `network` to the URL query string
+                        if (getNetwork() != null) {
+                        try {
+                        joiner.add(String.format("%snetwork%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getNetwork()), "UTF-8").replaceAll("\\+", "%20")));
+                        } catch (UnsupportedEncodingException e) {
+                        // Should never happen, UTF-8 is always supported
+                        throw new RuntimeException(e);
+                        }
+                        }
+
+        return joiner.toString();
+        }
+
     }
-
-    // add `network` to the URL query string
-    if (getNetwork() != null) {
-      try {
-        joiner.add(String.format("%snetwork%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getNetwork()), "UTF-8").replaceAll("\\+", "%20")));
-      } catch (UnsupportedEncodingException e) {
-        // Should never happen, UTF-8 is always supported
-        throw new RuntimeException(e);
-      }
-    }
-
-    return joiner.toString();
-  }
-
-}
 

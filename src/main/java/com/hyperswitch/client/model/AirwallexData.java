@@ -31,144 +31,145 @@ import java.net.URLEncoder;
 import java.util.StringJoiner;
 
 /**
- * AirwallexData
- */
-@JsonPropertyOrder({
-  AirwallexData.JSON_PROPERTY_PAYLOAD
-})
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+* AirwallexData
+*/
+    @JsonPropertyOrder({
+        AirwallexData.JSON_PROPERTY_PAYLOAD
+    })
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class AirwallexData {
-  public static final String JSON_PROPERTY_PAYLOAD = "payload";
-  private JsonNullable<String> payload = JsonNullable.<String>undefined();
+        public static final String JSON_PROPERTY_PAYLOAD = "payload";
+    @javax.annotation.Nullable
+            private JsonNullable<String> payload = JsonNullable.<String>undefined();
 
-  public AirwallexData() {
-  }
+public AirwallexData() {
+}
 
-  public AirwallexData payload(String payload) {
-    this.payload = JsonNullable.<String>of(payload);
+        public AirwallexData payload(@javax.annotation.Nullable String payload) {
+        this.payload = JsonNullable.<String>of(payload);
+        
+        return this;
+        }
+
+    /**
+        * payload required by airwallex
+    * @return payload
+    */
+    @javax.annotation.Nullable
+        @JsonIgnore
     
-    return this;
-  }
+    public String getPayload() {
+                return payload.orElse(null);
+    }
 
-   /**
-   * payload required by airwallex
-   * @return payload
-  **/
-  @javax.annotation.Nullable
-  @JsonIgnore
-
-  public String getPayload() {
-        return payload.orElse(null);
-  }
-
-  @JsonProperty(JSON_PROPERTY_PAYLOAD)
+          @JsonProperty(JSON_PROPERTY_PAYLOAD)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-  public JsonNullable<String> getPayload_JsonNullable() {
-    return payload;
-  }
-  
-  @JsonProperty(JSON_PROPERTY_PAYLOAD)
-  public void setPayload_JsonNullable(JsonNullable<String> payload) {
-    this.payload = payload;
-  }
+        public JsonNullable<String> getPayload_JsonNullable() {
+        return payload;
+        }
+    
+        @JsonProperty(JSON_PROPERTY_PAYLOAD)
+        public void setPayload_JsonNullable(JsonNullable<String> payload) {
+        this.payload = payload;
+        }
 
-  public void setPayload(String payload) {
-    this.payload = JsonNullable.<String>of(payload);
-  }
+          public void setPayload(@javax.annotation.Nullable String payload) {
+            this.payload = JsonNullable.<String>of(payload);
+        }
 
-  @Override
-  public boolean equals(Object o) {
+@Override
+public boolean equals(Object o) {
     if (this == o) {
-      return true;
+    return true;
     }
     if (o == null || getClass() != o.getClass()) {
-      return false;
+    return false;
     }
-    AirwallexData airwallexData = (AirwallexData) o;
-    return equalsNullable(this.payload, airwallexData.payload);
-  }
+        AirwallexData airwallexData = (AirwallexData) o;
+        return equalsNullable(this.payload, airwallexData.payload);
+}
 
-  private static <T> boolean equalsNullable(JsonNullable<T> a, JsonNullable<T> b) {
-    return a == b || (a != null && b != null && a.isPresent() && b.isPresent() && Objects.deepEquals(a.get(), b.get()));
-  }
+    private static <T> boolean equalsNullable(JsonNullable<T> a, JsonNullable<T> b) {
+        return a == b || (a != null && b != null && a.isPresent() && b.isPresent() && Objects.deepEquals(a.get(), b.get()));
+        }
 
-  @Override
-  public int hashCode() {
-    return Objects.hash(hashCodeNullable(payload));
-  }
-
-  private static <T> int hashCodeNullable(JsonNullable<T> a) {
-    if (a == null) {
-      return 1;
+    @Override
+    public int hashCode() {
+        return Objects.hash(hashCodeNullable(payload));
     }
-    return a.isPresent() ? Arrays.deepHashCode(new Object[]{a.get()}) : 31;
-  }
 
-  @Override
-  public String toString() {
+        private static <T> int hashCodeNullable(JsonNullable<T> a) {
+        if (a == null) {
+        return 1;
+        }
+        return a.isPresent() ? Arrays.deepHashCode(new Object[]{a.get()}) : 31;
+        }
+
+    @Override
+    public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class AirwallexData {\n");
-    sb.append("    payload: ").append(toIndentedString(payload)).append("\n");
+        sb.append("    payload: ").append(toIndentedString(payload)).append("\n");
     sb.append("}");
     return sb.toString();
-  }
+    }
 
-  /**
-   * Convert the given object to string with each line indented by 4 spaces
-   * (except the first line).
-   */
-  private String toIndentedString(Object o) {
+    /**
+    * Convert the given object to string with each line indented by 4 spaces
+    * (except the first line).
+    */
+    private String toIndentedString(Object o) {
     if (o == null) {
-      return "null";
+    return "null";
     }
     return o.toString().replace("\n", "\n    ");
-  }
-
-  /**
-   * Convert the instance into URL query string.
-   *
-   * @return URL query string
-   */
-  public String toUrlQueryString() {
-    return toUrlQueryString(null);
-  }
-
-  /**
-   * Convert the instance into URL query string.
-   *
-   * @param prefix prefix of the query string
-   * @return URL query string
-   */
-  public String toUrlQueryString(String prefix) {
-    String suffix = "";
-    String containerSuffix = "";
-    String containerPrefix = "";
-    if (prefix == null) {
-      // style=form, explode=true, e.g. /pet?name=cat&type=manx
-      prefix = "";
-    } else {
-      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
-      prefix = prefix + "[";
-      suffix = "]";
-      containerSuffix = "]";
-      containerPrefix = "[";
     }
 
-    StringJoiner joiner = new StringJoiner("&");
+        /**
+        * Convert the instance into URL query string.
+        *
+        * @return URL query string
+        */
+        public String toUrlQueryString() {
+        return toUrlQueryString(null);
+        }
 
-    // add `payload` to the URL query string
-    if (getPayload() != null) {
-      try {
-        joiner.add(String.format("%spayload%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getPayload()), "UTF-8").replaceAll("\\+", "%20")));
-      } catch (UnsupportedEncodingException e) {
-        // Should never happen, UTF-8 is always supported
-        throw new RuntimeException(e);
-      }
+        /**
+        * Convert the instance into URL query string.
+        *
+        * @param prefix prefix of the query string
+        * @return URL query string
+        */
+        public String toUrlQueryString(String prefix) {
+        String suffix = "";
+        String containerSuffix = "";
+        String containerPrefix = "";
+        if (prefix == null) {
+        // style=form, explode=true, e.g. /pet?name=cat&type=manx
+        prefix = "";
+        } else {
+        // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+        prefix = prefix + "[";
+        suffix = "]";
+        containerSuffix = "]";
+        containerPrefix = "[";
+        }
+
+        StringJoiner joiner = new StringJoiner("&");
+
+            // add `payload` to the URL query string
+                        if (getPayload() != null) {
+                        try {
+                        joiner.add(String.format("%spayload%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getPayload()), "UTF-8").replaceAll("\\+", "%20")));
+                        } catch (UnsupportedEncodingException e) {
+                        // Should never happen, UTF-8 is always supported
+                        throw new RuntimeException(e);
+                        }
+                        }
+
+        return joiner.toString();
+        }
+
     }
-
-    return joiner.toString();
-  }
-
-}
 

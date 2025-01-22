@@ -13,20 +13,19 @@
 
 package com.hyperswitch.client.model;
 
-import org.junit.Assert;
-import org.junit.Ignore;
-import org.junit.Test;
-
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Test;
 
 /**
  * Model tests for RetryAction
  */
-public class RetryActionTest {
+class RetryActionTest {
     /**
      * Model tests for RetryAction
      */
     @Test
-    public void testRetryAction() {
+    void testRetryAction() {
         // TODO: test RetryAction
     }
 

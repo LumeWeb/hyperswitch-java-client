@@ -27,126 +27,127 @@ import java.net.URLEncoder;
 import java.util.StringJoiner;
 
 /**
- * BankTransferAdditionalDataOneOf8
- */
-@JsonPropertyOrder({
-  BankTransferAdditionalDataOneOf8.JSON_PROPERTY_CIMB_VA
-})
-@JsonTypeName("BankTransferAdditionalData_oneOf_8")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+* BankTransferAdditionalDataOneOf8
+*/
+    @JsonPropertyOrder({
+        BankTransferAdditionalDataOneOf8.JSON_PROPERTY_CIMB_VA
+    })
+            @JsonTypeName("BankTransferAdditionalData_oneOf_8")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class BankTransferAdditionalDataOneOf8 {
-  public static final String JSON_PROPERTY_CIMB_VA = "cimb_va";
-  private Object cimbVa;
+        public static final String JSON_PROPERTY_CIMB_VA = "cimb_va";
+    @javax.annotation.Nonnull
+            private Object cimbVa;
 
-  public BankTransferAdditionalDataOneOf8() {
-  }
+public BankTransferAdditionalDataOneOf8() {
+}
 
-  public BankTransferAdditionalDataOneOf8 cimbVa(Object cimbVa) {
-    
-    this.cimbVa = cimbVa;
-    return this;
-  }
+        public BankTransferAdditionalDataOneOf8 cimbVa(@javax.annotation.Nonnull Object cimbVa) {
+        
+        this.cimbVa = cimbVa;
+        return this;
+        }
 
-   /**
-   * Get cimbVa
-   * @return cimbVa
-  **/
-  @javax.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_CIMB_VA)
+    /**
+        * Get cimbVa
+    * @return cimbVa
+    */
+    @javax.annotation.Nonnull
+      @JsonProperty(JSON_PROPERTY_CIMB_VA)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-  public Object getCimbVa() {
-    return cimbVa;
-  }
+    public Object getCimbVa() {
+        return cimbVa;
+    }
 
 
-  @JsonProperty(JSON_PROPERTY_CIMB_VA)
+          @JsonProperty(JSON_PROPERTY_CIMB_VA)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setCimbVa(Object cimbVa) {
-    this.cimbVa = cimbVa;
-  }
+  public void setCimbVa(@javax.annotation.Nonnull Object cimbVa) {
+            this.cimbVa = cimbVa;
+        }
 
-  @Override
-  public boolean equals(Object o) {
+@Override
+public boolean equals(Object o) {
     if (this == o) {
-      return true;
+    return true;
     }
     if (o == null || getClass() != o.getClass()) {
-      return false;
+    return false;
     }
-    BankTransferAdditionalDataOneOf8 bankTransferAdditionalDataOneOf8 = (BankTransferAdditionalDataOneOf8) o;
-    return Objects.equals(this.cimbVa, bankTransferAdditionalDataOneOf8.cimbVa);
-  }
+        BankTransferAdditionalDataOneOf8 bankTransferAdditionalDataOneOf8 = (BankTransferAdditionalDataOneOf8) o;
+        return Objects.equals(this.cimbVa, bankTransferAdditionalDataOneOf8.cimbVa);
+}
 
-  @Override
-  public int hashCode() {
-    return Objects.hash(cimbVa);
-  }
+    @Override
+    public int hashCode() {
+        return Objects.hash(cimbVa);
+    }
 
-  @Override
-  public String toString() {
+    @Override
+    public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class BankTransferAdditionalDataOneOf8 {\n");
-    sb.append("    cimbVa: ").append(toIndentedString(cimbVa)).append("\n");
+        sb.append("    cimbVa: ").append(toIndentedString(cimbVa)).append("\n");
     sb.append("}");
     return sb.toString();
-  }
+    }
 
-  /**
-   * Convert the given object to string with each line indented by 4 spaces
-   * (except the first line).
-   */
-  private String toIndentedString(Object o) {
+    /**
+    * Convert the given object to string with each line indented by 4 spaces
+    * (except the first line).
+    */
+    private String toIndentedString(Object o) {
     if (o == null) {
-      return "null";
+    return "null";
     }
     return o.toString().replace("\n", "\n    ");
-  }
-
-  /**
-   * Convert the instance into URL query string.
-   *
-   * @return URL query string
-   */
-  public String toUrlQueryString() {
-    return toUrlQueryString(null);
-  }
-
-  /**
-   * Convert the instance into URL query string.
-   *
-   * @param prefix prefix of the query string
-   * @return URL query string
-   */
-  public String toUrlQueryString(String prefix) {
-    String suffix = "";
-    String containerSuffix = "";
-    String containerPrefix = "";
-    if (prefix == null) {
-      // style=form, explode=true, e.g. /pet?name=cat&type=manx
-      prefix = "";
-    } else {
-      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
-      prefix = prefix + "[";
-      suffix = "]";
-      containerSuffix = "]";
-      containerPrefix = "[";
     }
 
-    StringJoiner joiner = new StringJoiner("&");
+        /**
+        * Convert the instance into URL query string.
+        *
+        * @return URL query string
+        */
+        public String toUrlQueryString() {
+        return toUrlQueryString(null);
+        }
 
-    // add `cimb_va` to the URL query string
-    if (getCimbVa() != null) {
-      try {
-        joiner.add(String.format("%scimb_va%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCimbVa()), "UTF-8").replaceAll("\\+", "%20")));
-      } catch (UnsupportedEncodingException e) {
-        // Should never happen, UTF-8 is always supported
-        throw new RuntimeException(e);
-      }
+        /**
+        * Convert the instance into URL query string.
+        *
+        * @param prefix prefix of the query string
+        * @return URL query string
+        */
+        public String toUrlQueryString(String prefix) {
+        String suffix = "";
+        String containerSuffix = "";
+        String containerPrefix = "";
+        if (prefix == null) {
+        // style=form, explode=true, e.g. /pet?name=cat&type=manx
+        prefix = "";
+        } else {
+        // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+        prefix = prefix + "[";
+        suffix = "]";
+        containerSuffix = "]";
+        containerPrefix = "[";
+        }
+
+        StringJoiner joiner = new StringJoiner("&");
+
+            // add `cimb_va` to the URL query string
+                        if (getCimbVa() != null) {
+                        try {
+                        joiner.add(String.format("%scimb_va%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCimbVa()), "UTF-8").replaceAll("\\+", "%20")));
+                        } catch (UnsupportedEncodingException e) {
+                        // Should never happen, UTF-8 is always supported
+                        throw new RuntimeException(e);
+                        }
+                        }
+
+        return joiner.toString();
+        }
+
     }
-
-    return joiner.toString();
-  }
-
-}
 

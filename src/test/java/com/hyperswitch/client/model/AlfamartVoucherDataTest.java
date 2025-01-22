@@ -22,22 +22,21 @@ import org.openapitools.jackson.nullable.JsonNullable;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.openapitools.jackson.nullable.JsonNullable;
 import java.util.NoSuchElementException;
-import org.junit.Assert;
-import org.junit.Ignore;
-import org.junit.Test;
-
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Test;
 
 /**
  * Model tests for AlfamartVoucherData
  */
-public class AlfamartVoucherDataTest {
+class AlfamartVoucherDataTest {
     private final AlfamartVoucherData model = new AlfamartVoucherData();
 
     /**
      * Model tests for AlfamartVoucherData
      */
     @Test
-    public void testAlfamartVoucherData() {
+    void testAlfamartVoucherData() {
         // TODO: test AlfamartVoucherData
     }
 
@@ -45,7 +44,7 @@ public class AlfamartVoucherDataTest {
      * Test the property 'firstName'
      */
     @Test
-    public void firstNameTest() {
+    void firstNameTest() {
         // TODO: test firstName
     }
 
@@ -53,7 +52,7 @@ public class AlfamartVoucherDataTest {
      * Test the property 'lastName'
      */
     @Test
-    public void lastNameTest() {
+    void lastNameTest() {
         // TODO: test lastName
     }
 
@@ -61,7 +60,7 @@ public class AlfamartVoucherDataTest {
      * Test the property 'email'
      */
     @Test
-    public void emailTest() {
+    void emailTest() {
         // TODO: test email
     }
 

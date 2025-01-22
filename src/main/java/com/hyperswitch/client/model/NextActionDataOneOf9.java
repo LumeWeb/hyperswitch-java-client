@@ -28,23 +28,24 @@ import java.net.URLEncoder;
 import java.util.StringJoiner;
 
 /**
- * Contains consent to collect otp for mobile payment
- */
-@JsonPropertyOrder({
-  NextActionDataOneOf9.JSON_PROPERTY_CONSENT_DATA_REQUIRED,
-  NextActionDataOneOf9.JSON_PROPERTY_TYPE
-})
-@JsonTypeName("NextActionData_oneOf_9")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+* Contains consent to collect otp for mobile payment
+*/
+    @JsonPropertyOrder({
+        NextActionDataOneOf9.JSON_PROPERTY_CONSENT_DATA_REQUIRED,
+        NextActionDataOneOf9.JSON_PROPERTY_TYPE
+    })
+            @JsonTypeName("NextActionData_oneOf_9")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class NextActionDataOneOf9 {
-  public static final String JSON_PROPERTY_CONSENT_DATA_REQUIRED = "consent_data_required";
-  private MobilePaymentConsent consentDataRequired;
+        public static final String JSON_PROPERTY_CONSENT_DATA_REQUIRED = "consent_data_required";
+    @javax.annotation.Nonnull
+            private MobilePaymentConsent consentDataRequired;
 
-  /**
+              /**
    * Gets or Sets type
    */
   public enum TypeEnum {
-    COLLECT_OTP("collect_otp");
+    COLLECT_OTP(String.valueOf("collect_otp"));
 
     private String value;
 
@@ -73,156 +74,156 @@ public class NextActionDataOneOf9 {
     }
   }
 
-  public static final String JSON_PROPERTY_TYPE = "type";
-  private TypeEnum type;
+        public static final String JSON_PROPERTY_TYPE = "type";
+    @javax.annotation.Nonnull
+            private TypeEnum type;
 
-  public NextActionDataOneOf9() {
-  }
+public NextActionDataOneOf9() {
+}
 
-  public NextActionDataOneOf9 consentDataRequired(MobilePaymentConsent consentDataRequired) {
-    
-    this.consentDataRequired = consentDataRequired;
-    return this;
-  }
+        public NextActionDataOneOf9 consentDataRequired(@javax.annotation.Nonnull MobilePaymentConsent consentDataRequired) {
+        
+        this.consentDataRequired = consentDataRequired;
+        return this;
+        }
 
-   /**
-   * Get consentDataRequired
-   * @return consentDataRequired
-  **/
-  @javax.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_CONSENT_DATA_REQUIRED)
+    /**
+        * Get consentDataRequired
+    * @return consentDataRequired
+    */
+    @javax.annotation.Nonnull
+      @JsonProperty(JSON_PROPERTY_CONSENT_DATA_REQUIRED)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-  public MobilePaymentConsent getConsentDataRequired() {
-    return consentDataRequired;
-  }
+    public MobilePaymentConsent getConsentDataRequired() {
+        return consentDataRequired;
+    }
 
 
-  @JsonProperty(JSON_PROPERTY_CONSENT_DATA_REQUIRED)
+          @JsonProperty(JSON_PROPERTY_CONSENT_DATA_REQUIRED)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setConsentDataRequired(MobilePaymentConsent consentDataRequired) {
-    this.consentDataRequired = consentDataRequired;
-  }
+  public void setConsentDataRequired(@javax.annotation.Nonnull MobilePaymentConsent consentDataRequired) {
+            this.consentDataRequired = consentDataRequired;
+        }
 
+        public NextActionDataOneOf9 type(@javax.annotation.Nonnull TypeEnum type) {
+        
+        this.type = type;
+        return this;
+        }
 
-  public NextActionDataOneOf9 type(TypeEnum type) {
-    
-    this.type = type;
-    return this;
-  }
-
-   /**
-   * Get type
-   * @return type
-  **/
-  @javax.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_TYPE)
+    /**
+        * Get type
+    * @return type
+    */
+    @javax.annotation.Nonnull
+      @JsonProperty(JSON_PROPERTY_TYPE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-  public TypeEnum getType() {
-    return type;
-  }
+    public TypeEnum getType() {
+        return type;
+    }
 
 
-  @JsonProperty(JSON_PROPERTY_TYPE)
+          @JsonProperty(JSON_PROPERTY_TYPE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setType(TypeEnum type) {
-    this.type = type;
-  }
+  public void setType(@javax.annotation.Nonnull TypeEnum type) {
+            this.type = type;
+        }
 
-  @Override
-  public boolean equals(Object o) {
+@Override
+public boolean equals(Object o) {
     if (this == o) {
-      return true;
+    return true;
     }
     if (o == null || getClass() != o.getClass()) {
-      return false;
+    return false;
     }
-    NextActionDataOneOf9 nextActionDataOneOf9 = (NextActionDataOneOf9) o;
-    return Objects.equals(this.consentDataRequired, nextActionDataOneOf9.consentDataRequired) &&
+        NextActionDataOneOf9 nextActionDataOneOf9 = (NextActionDataOneOf9) o;
+        return Objects.equals(this.consentDataRequired, nextActionDataOneOf9.consentDataRequired) &&
         Objects.equals(this.type, nextActionDataOneOf9.type);
-  }
+}
 
-  @Override
-  public int hashCode() {
-    return Objects.hash(consentDataRequired, type);
-  }
+    @Override
+    public int hashCode() {
+        return Objects.hash(consentDataRequired, type);
+    }
 
-  @Override
-  public String toString() {
+    @Override
+    public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class NextActionDataOneOf9 {\n");
-    sb.append("    consentDataRequired: ").append(toIndentedString(consentDataRequired)).append("\n");
-    sb.append("    type: ").append(toIndentedString(type)).append("\n");
+        sb.append("    consentDataRequired: ").append(toIndentedString(consentDataRequired)).append("\n");
+        sb.append("    type: ").append(toIndentedString(type)).append("\n");
     sb.append("}");
     return sb.toString();
-  }
+    }
 
-  /**
-   * Convert the given object to string with each line indented by 4 spaces
-   * (except the first line).
-   */
-  private String toIndentedString(Object o) {
+    /**
+    * Convert the given object to string with each line indented by 4 spaces
+    * (except the first line).
+    */
+    private String toIndentedString(Object o) {
     if (o == null) {
-      return "null";
+    return "null";
     }
     return o.toString().replace("\n", "\n    ");
-  }
-
-  /**
-   * Convert the instance into URL query string.
-   *
-   * @return URL query string
-   */
-  public String toUrlQueryString() {
-    return toUrlQueryString(null);
-  }
-
-  /**
-   * Convert the instance into URL query string.
-   *
-   * @param prefix prefix of the query string
-   * @return URL query string
-   */
-  public String toUrlQueryString(String prefix) {
-    String suffix = "";
-    String containerSuffix = "";
-    String containerPrefix = "";
-    if (prefix == null) {
-      // style=form, explode=true, e.g. /pet?name=cat&type=manx
-      prefix = "";
-    } else {
-      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
-      prefix = prefix + "[";
-      suffix = "]";
-      containerSuffix = "]";
-      containerPrefix = "[";
     }
 
-    StringJoiner joiner = new StringJoiner("&");
+        /**
+        * Convert the instance into URL query string.
+        *
+        * @return URL query string
+        */
+        public String toUrlQueryString() {
+        return toUrlQueryString(null);
+        }
 
-    // add `consent_data_required` to the URL query string
-    if (getConsentDataRequired() != null) {
-      try {
-        joiner.add(String.format("%sconsent_data_required%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getConsentDataRequired()), "UTF-8").replaceAll("\\+", "%20")));
-      } catch (UnsupportedEncodingException e) {
-        // Should never happen, UTF-8 is always supported
-        throw new RuntimeException(e);
-      }
+        /**
+        * Convert the instance into URL query string.
+        *
+        * @param prefix prefix of the query string
+        * @return URL query string
+        */
+        public String toUrlQueryString(String prefix) {
+        String suffix = "";
+        String containerSuffix = "";
+        String containerPrefix = "";
+        if (prefix == null) {
+        // style=form, explode=true, e.g. /pet?name=cat&type=manx
+        prefix = "";
+        } else {
+        // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+        prefix = prefix + "[";
+        suffix = "]";
+        containerSuffix = "]";
+        containerPrefix = "[";
+        }
+
+        StringJoiner joiner = new StringJoiner("&");
+
+            // add `consent_data_required` to the URL query string
+                            if (getConsentDataRequired() != null) {
+                            try {
+                            joiner.add(String.format("%sconsent_data_required%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getConsentDataRequired()), "UTF-8").replaceAll("\\+", "%20")));
+                            } catch (UnsupportedEncodingException e) {
+                            // Should never happen, UTF-8 is always supported
+                            throw new RuntimeException(e);
+                            }
+                            }
+
+            // add `type` to the URL query string
+                        if (getType() != null) {
+                        try {
+                        joiner.add(String.format("%stype%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getType()), "UTF-8").replaceAll("\\+", "%20")));
+                        } catch (UnsupportedEncodingException e) {
+                        // Should never happen, UTF-8 is always supported
+                        throw new RuntimeException(e);
+                        }
+                        }
+
+        return joiner.toString();
+        }
+
     }
-
-    // add `type` to the URL query string
-    if (getType() != null) {
-      try {
-        joiner.add(String.format("%stype%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getType()), "UTF-8").replaceAll("\\+", "%20")));
-      } catch (UnsupportedEncodingException e) {
-        // Should never happen, UTF-8 is always supported
-        throw new RuntimeException(e);
-      }
-    }
-
-    return joiner.toString();
-  }
-
-}
 

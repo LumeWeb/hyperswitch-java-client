@@ -31,407 +31,408 @@ import java.net.URLEncoder;
 import java.util.StringJoiner;
 
 /**
- * Browser information to be used for 3DS 2.0
- */
-@JsonPropertyOrder({
-  BrowserInformation.JSON_PROPERTY_COLOR_DEPTH,
-  BrowserInformation.JSON_PROPERTY_JAVA_ENABLED,
-  BrowserInformation.JSON_PROPERTY_JAVA_SCRIPT_ENABLED,
-  BrowserInformation.JSON_PROPERTY_LANGUAGE,
-  BrowserInformation.JSON_PROPERTY_SCREEN_HEIGHT,
-  BrowserInformation.JSON_PROPERTY_SCREEN_WIDTH,
-  BrowserInformation.JSON_PROPERTY_TIME_ZONE,
-  BrowserInformation.JSON_PROPERTY_IP_ADDRESS,
-  BrowserInformation.JSON_PROPERTY_ACCEPT_HEADER,
-  BrowserInformation.JSON_PROPERTY_USER_AGENT
-})
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+* Browser information to be used for 3DS 2.0
+*/
+    @JsonPropertyOrder({
+        BrowserInformation.JSON_PROPERTY_COLOR_DEPTH,
+        BrowserInformation.JSON_PROPERTY_JAVA_ENABLED,
+        BrowserInformation.JSON_PROPERTY_JAVA_SCRIPT_ENABLED,
+        BrowserInformation.JSON_PROPERTY_LANGUAGE,
+        BrowserInformation.JSON_PROPERTY_SCREEN_HEIGHT,
+        BrowserInformation.JSON_PROPERTY_SCREEN_WIDTH,
+        BrowserInformation.JSON_PROPERTY_TIME_ZONE,
+        BrowserInformation.JSON_PROPERTY_IP_ADDRESS,
+        BrowserInformation.JSON_PROPERTY_ACCEPT_HEADER,
+        BrowserInformation.JSON_PROPERTY_USER_AGENT
+    })
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class BrowserInformation {
-  public static final String JSON_PROPERTY_COLOR_DEPTH = "color_depth";
-  private JsonNullable<Integer> colorDepth = JsonNullable.<Integer>undefined();
+        public static final String JSON_PROPERTY_COLOR_DEPTH = "color_depth";
+    @javax.annotation.Nullable
+            private JsonNullable<Integer> colorDepth = JsonNullable.<Integer>undefined();
 
-  public static final String JSON_PROPERTY_JAVA_ENABLED = "java_enabled";
-  private JsonNullable<Boolean> javaEnabled = JsonNullable.<Boolean>undefined();
+        public static final String JSON_PROPERTY_JAVA_ENABLED = "java_enabled";
+    @javax.annotation.Nullable
+            private JsonNullable<Boolean> javaEnabled = JsonNullable.<Boolean>undefined();
 
-  public static final String JSON_PROPERTY_JAVA_SCRIPT_ENABLED = "java_script_enabled";
-  private JsonNullable<Boolean> javaScriptEnabled = JsonNullable.<Boolean>undefined();
+        public static final String JSON_PROPERTY_JAVA_SCRIPT_ENABLED = "java_script_enabled";
+    @javax.annotation.Nullable
+            private JsonNullable<Boolean> javaScriptEnabled = JsonNullable.<Boolean>undefined();
 
-  public static final String JSON_PROPERTY_LANGUAGE = "language";
-  private JsonNullable<String> language = JsonNullable.<String>undefined();
+        public static final String JSON_PROPERTY_LANGUAGE = "language";
+    @javax.annotation.Nullable
+            private JsonNullable<String> language = JsonNullable.<String>undefined();
 
-  public static final String JSON_PROPERTY_SCREEN_HEIGHT = "screen_height";
-  private JsonNullable<Integer> screenHeight = JsonNullable.<Integer>undefined();
+        public static final String JSON_PROPERTY_SCREEN_HEIGHT = "screen_height";
+    @javax.annotation.Nullable
+            private JsonNullable<Integer> screenHeight = JsonNullable.<Integer>undefined();
 
-  public static final String JSON_PROPERTY_SCREEN_WIDTH = "screen_width";
-  private JsonNullable<Integer> screenWidth = JsonNullable.<Integer>undefined();
+        public static final String JSON_PROPERTY_SCREEN_WIDTH = "screen_width";
+    @javax.annotation.Nullable
+            private JsonNullable<Integer> screenWidth = JsonNullable.<Integer>undefined();
 
-  public static final String JSON_PROPERTY_TIME_ZONE = "time_zone";
-  private JsonNullable<Integer> timeZone = JsonNullable.<Integer>undefined();
+        public static final String JSON_PROPERTY_TIME_ZONE = "time_zone";
+    @javax.annotation.Nullable
+            private JsonNullable<Integer> timeZone = JsonNullable.<Integer>undefined();
 
-  public static final String JSON_PROPERTY_IP_ADDRESS = "ip_address";
-  private JsonNullable<String> ipAddress = JsonNullable.<String>undefined();
+        public static final String JSON_PROPERTY_IP_ADDRESS = "ip_address";
+    @javax.annotation.Nullable
+            private JsonNullable<String> ipAddress = JsonNullable.<String>undefined();
 
-  public static final String JSON_PROPERTY_ACCEPT_HEADER = "accept_header";
-  private JsonNullable<String> acceptHeader = JsonNullable.<String>undefined();
+        public static final String JSON_PROPERTY_ACCEPT_HEADER = "accept_header";
+    @javax.annotation.Nullable
+            private JsonNullable<String> acceptHeader = JsonNullable.<String>undefined();
 
-  public static final String JSON_PROPERTY_USER_AGENT = "user_agent";
-  private JsonNullable<String> userAgent = JsonNullable.<String>undefined();
+        public static final String JSON_PROPERTY_USER_AGENT = "user_agent";
+    @javax.annotation.Nullable
+            private JsonNullable<String> userAgent = JsonNullable.<String>undefined();
 
-  public BrowserInformation() {
-  }
+public BrowserInformation() {
+}
 
-  public BrowserInformation colorDepth(Integer colorDepth) {
-    this.colorDepth = JsonNullable.<Integer>of(colorDepth);
+        public BrowserInformation colorDepth(@javax.annotation.Nullable Integer colorDepth) {
+        this.colorDepth = JsonNullable.<Integer>of(colorDepth);
+        
+        return this;
+        }
+
+    /**
+        * Color depth supported by the browser
+        * minimum: 0
+    * @return colorDepth
+    */
+    @javax.annotation.Nullable
+        @JsonIgnore
     
-    return this;
-  }
+    public Integer getColorDepth() {
+                return colorDepth.orElse(null);
+    }
 
-   /**
-   * Color depth supported by the browser
-   * minimum: 0
-   * @return colorDepth
-  **/
-  @javax.annotation.Nullable
-  @JsonIgnore
-
-  public Integer getColorDepth() {
-        return colorDepth.orElse(null);
-  }
-
-  @JsonProperty(JSON_PROPERTY_COLOR_DEPTH)
+          @JsonProperty(JSON_PROPERTY_COLOR_DEPTH)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-  public JsonNullable<Integer> getColorDepth_JsonNullable() {
-    return colorDepth;
-  }
-  
-  @JsonProperty(JSON_PROPERTY_COLOR_DEPTH)
-  public void setColorDepth_JsonNullable(JsonNullable<Integer> colorDepth) {
-    this.colorDepth = colorDepth;
-  }
-
-  public void setColorDepth(Integer colorDepth) {
-    this.colorDepth = JsonNullable.<Integer>of(colorDepth);
-  }
-
-
-  public BrowserInformation javaEnabled(Boolean javaEnabled) {
-    this.javaEnabled = JsonNullable.<Boolean>of(javaEnabled);
+        public JsonNullable<Integer> getColorDepth_JsonNullable() {
+        return colorDepth;
+        }
     
-    return this;
-  }
+        @JsonProperty(JSON_PROPERTY_COLOR_DEPTH)
+        public void setColorDepth_JsonNullable(JsonNullable<Integer> colorDepth) {
+        this.colorDepth = colorDepth;
+        }
 
-   /**
-   * Whether java is enabled in the browser
-   * @return javaEnabled
-  **/
-  @javax.annotation.Nullable
-  @JsonIgnore
+          public void setColorDepth(@javax.annotation.Nullable Integer colorDepth) {
+            this.colorDepth = JsonNullable.<Integer>of(colorDepth);
+        }
 
-  public Boolean getJavaEnabled() {
-        return javaEnabled.orElse(null);
-  }
+        public BrowserInformation javaEnabled(@javax.annotation.Nullable Boolean javaEnabled) {
+        this.javaEnabled = JsonNullable.<Boolean>of(javaEnabled);
+        
+        return this;
+        }
 
-  @JsonProperty(JSON_PROPERTY_JAVA_ENABLED)
+    /**
+        * Whether java is enabled in the browser
+    * @return javaEnabled
+    */
+    @javax.annotation.Nullable
+        @JsonIgnore
+    
+    public Boolean getJavaEnabled() {
+                return javaEnabled.orElse(null);
+    }
+
+          @JsonProperty(JSON_PROPERTY_JAVA_ENABLED)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-  public JsonNullable<Boolean> getJavaEnabled_JsonNullable() {
-    return javaEnabled;
-  }
-  
-  @JsonProperty(JSON_PROPERTY_JAVA_ENABLED)
-  public void setJavaEnabled_JsonNullable(JsonNullable<Boolean> javaEnabled) {
-    this.javaEnabled = javaEnabled;
-  }
-
-  public void setJavaEnabled(Boolean javaEnabled) {
-    this.javaEnabled = JsonNullable.<Boolean>of(javaEnabled);
-  }
-
-
-  public BrowserInformation javaScriptEnabled(Boolean javaScriptEnabled) {
-    this.javaScriptEnabled = JsonNullable.<Boolean>of(javaScriptEnabled);
+        public JsonNullable<Boolean> getJavaEnabled_JsonNullable() {
+        return javaEnabled;
+        }
     
-    return this;
-  }
+        @JsonProperty(JSON_PROPERTY_JAVA_ENABLED)
+        public void setJavaEnabled_JsonNullable(JsonNullable<Boolean> javaEnabled) {
+        this.javaEnabled = javaEnabled;
+        }
 
-   /**
-   * Whether javascript is enabled in the browser
-   * @return javaScriptEnabled
-  **/
-  @javax.annotation.Nullable
-  @JsonIgnore
+          public void setJavaEnabled(@javax.annotation.Nullable Boolean javaEnabled) {
+            this.javaEnabled = JsonNullable.<Boolean>of(javaEnabled);
+        }
 
-  public Boolean getJavaScriptEnabled() {
-        return javaScriptEnabled.orElse(null);
-  }
+        public BrowserInformation javaScriptEnabled(@javax.annotation.Nullable Boolean javaScriptEnabled) {
+        this.javaScriptEnabled = JsonNullable.<Boolean>of(javaScriptEnabled);
+        
+        return this;
+        }
 
-  @JsonProperty(JSON_PROPERTY_JAVA_SCRIPT_ENABLED)
+    /**
+        * Whether javascript is enabled in the browser
+    * @return javaScriptEnabled
+    */
+    @javax.annotation.Nullable
+        @JsonIgnore
+    
+    public Boolean getJavaScriptEnabled() {
+                return javaScriptEnabled.orElse(null);
+    }
+
+          @JsonProperty(JSON_PROPERTY_JAVA_SCRIPT_ENABLED)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-  public JsonNullable<Boolean> getJavaScriptEnabled_JsonNullable() {
-    return javaScriptEnabled;
-  }
-  
-  @JsonProperty(JSON_PROPERTY_JAVA_SCRIPT_ENABLED)
-  public void setJavaScriptEnabled_JsonNullable(JsonNullable<Boolean> javaScriptEnabled) {
-    this.javaScriptEnabled = javaScriptEnabled;
-  }
-
-  public void setJavaScriptEnabled(Boolean javaScriptEnabled) {
-    this.javaScriptEnabled = JsonNullable.<Boolean>of(javaScriptEnabled);
-  }
-
-
-  public BrowserInformation language(String language) {
-    this.language = JsonNullable.<String>of(language);
+        public JsonNullable<Boolean> getJavaScriptEnabled_JsonNullable() {
+        return javaScriptEnabled;
+        }
     
-    return this;
-  }
+        @JsonProperty(JSON_PROPERTY_JAVA_SCRIPT_ENABLED)
+        public void setJavaScriptEnabled_JsonNullable(JsonNullable<Boolean> javaScriptEnabled) {
+        this.javaScriptEnabled = javaScriptEnabled;
+        }
 
-   /**
-   * Language supported
-   * @return language
-  **/
-  @javax.annotation.Nullable
-  @JsonIgnore
+          public void setJavaScriptEnabled(@javax.annotation.Nullable Boolean javaScriptEnabled) {
+            this.javaScriptEnabled = JsonNullable.<Boolean>of(javaScriptEnabled);
+        }
 
-  public String getLanguage() {
-        return language.orElse(null);
-  }
+        public BrowserInformation language(@javax.annotation.Nullable String language) {
+        this.language = JsonNullable.<String>of(language);
+        
+        return this;
+        }
 
-  @JsonProperty(JSON_PROPERTY_LANGUAGE)
+    /**
+        * Language supported
+    * @return language
+    */
+    @javax.annotation.Nullable
+        @JsonIgnore
+    
+    public String getLanguage() {
+                return language.orElse(null);
+    }
+
+          @JsonProperty(JSON_PROPERTY_LANGUAGE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-  public JsonNullable<String> getLanguage_JsonNullable() {
-    return language;
-  }
-  
-  @JsonProperty(JSON_PROPERTY_LANGUAGE)
-  public void setLanguage_JsonNullable(JsonNullable<String> language) {
-    this.language = language;
-  }
-
-  public void setLanguage(String language) {
-    this.language = JsonNullable.<String>of(language);
-  }
-
-
-  public BrowserInformation screenHeight(Integer screenHeight) {
-    this.screenHeight = JsonNullable.<Integer>of(screenHeight);
+        public JsonNullable<String> getLanguage_JsonNullable() {
+        return language;
+        }
     
-    return this;
-  }
+        @JsonProperty(JSON_PROPERTY_LANGUAGE)
+        public void setLanguage_JsonNullable(JsonNullable<String> language) {
+        this.language = language;
+        }
 
-   /**
-   * The screen height in pixels
-   * minimum: 0
-   * @return screenHeight
-  **/
-  @javax.annotation.Nullable
-  @JsonIgnore
+          public void setLanguage(@javax.annotation.Nullable String language) {
+            this.language = JsonNullable.<String>of(language);
+        }
 
-  public Integer getScreenHeight() {
-        return screenHeight.orElse(null);
-  }
+        public BrowserInformation screenHeight(@javax.annotation.Nullable Integer screenHeight) {
+        this.screenHeight = JsonNullable.<Integer>of(screenHeight);
+        
+        return this;
+        }
 
-  @JsonProperty(JSON_PROPERTY_SCREEN_HEIGHT)
+    /**
+        * The screen height in pixels
+        * minimum: 0
+    * @return screenHeight
+    */
+    @javax.annotation.Nullable
+        @JsonIgnore
+    
+    public Integer getScreenHeight() {
+                return screenHeight.orElse(null);
+    }
+
+          @JsonProperty(JSON_PROPERTY_SCREEN_HEIGHT)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-  public JsonNullable<Integer> getScreenHeight_JsonNullable() {
-    return screenHeight;
-  }
-  
-  @JsonProperty(JSON_PROPERTY_SCREEN_HEIGHT)
-  public void setScreenHeight_JsonNullable(JsonNullable<Integer> screenHeight) {
-    this.screenHeight = screenHeight;
-  }
-
-  public void setScreenHeight(Integer screenHeight) {
-    this.screenHeight = JsonNullable.<Integer>of(screenHeight);
-  }
-
-
-  public BrowserInformation screenWidth(Integer screenWidth) {
-    this.screenWidth = JsonNullable.<Integer>of(screenWidth);
+        public JsonNullable<Integer> getScreenHeight_JsonNullable() {
+        return screenHeight;
+        }
     
-    return this;
-  }
+        @JsonProperty(JSON_PROPERTY_SCREEN_HEIGHT)
+        public void setScreenHeight_JsonNullable(JsonNullable<Integer> screenHeight) {
+        this.screenHeight = screenHeight;
+        }
 
-   /**
-   * The screen width in pixels
-   * minimum: 0
-   * @return screenWidth
-  **/
-  @javax.annotation.Nullable
-  @JsonIgnore
+          public void setScreenHeight(@javax.annotation.Nullable Integer screenHeight) {
+            this.screenHeight = JsonNullable.<Integer>of(screenHeight);
+        }
 
-  public Integer getScreenWidth() {
-        return screenWidth.orElse(null);
-  }
+        public BrowserInformation screenWidth(@javax.annotation.Nullable Integer screenWidth) {
+        this.screenWidth = JsonNullable.<Integer>of(screenWidth);
+        
+        return this;
+        }
 
-  @JsonProperty(JSON_PROPERTY_SCREEN_WIDTH)
+    /**
+        * The screen width in pixels
+        * minimum: 0
+    * @return screenWidth
+    */
+    @javax.annotation.Nullable
+        @JsonIgnore
+    
+    public Integer getScreenWidth() {
+                return screenWidth.orElse(null);
+    }
+
+          @JsonProperty(JSON_PROPERTY_SCREEN_WIDTH)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-  public JsonNullable<Integer> getScreenWidth_JsonNullable() {
-    return screenWidth;
-  }
-  
-  @JsonProperty(JSON_PROPERTY_SCREEN_WIDTH)
-  public void setScreenWidth_JsonNullable(JsonNullable<Integer> screenWidth) {
-    this.screenWidth = screenWidth;
-  }
-
-  public void setScreenWidth(Integer screenWidth) {
-    this.screenWidth = JsonNullable.<Integer>of(screenWidth);
-  }
-
-
-  public BrowserInformation timeZone(Integer timeZone) {
-    this.timeZone = JsonNullable.<Integer>of(timeZone);
+        public JsonNullable<Integer> getScreenWidth_JsonNullable() {
+        return screenWidth;
+        }
     
-    return this;
-  }
+        @JsonProperty(JSON_PROPERTY_SCREEN_WIDTH)
+        public void setScreenWidth_JsonNullable(JsonNullable<Integer> screenWidth) {
+        this.screenWidth = screenWidth;
+        }
 
-   /**
-   * Time zone of the client
-   * @return timeZone
-  **/
-  @javax.annotation.Nullable
-  @JsonIgnore
+          public void setScreenWidth(@javax.annotation.Nullable Integer screenWidth) {
+            this.screenWidth = JsonNullable.<Integer>of(screenWidth);
+        }
 
-  public Integer getTimeZone() {
-        return timeZone.orElse(null);
-  }
+        public BrowserInformation timeZone(@javax.annotation.Nullable Integer timeZone) {
+        this.timeZone = JsonNullable.<Integer>of(timeZone);
+        
+        return this;
+        }
 
-  @JsonProperty(JSON_PROPERTY_TIME_ZONE)
+    /**
+        * Time zone of the client
+    * @return timeZone
+    */
+    @javax.annotation.Nullable
+        @JsonIgnore
+    
+    public Integer getTimeZone() {
+                return timeZone.orElse(null);
+    }
+
+          @JsonProperty(JSON_PROPERTY_TIME_ZONE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-  public JsonNullable<Integer> getTimeZone_JsonNullable() {
-    return timeZone;
-  }
-  
-  @JsonProperty(JSON_PROPERTY_TIME_ZONE)
-  public void setTimeZone_JsonNullable(JsonNullable<Integer> timeZone) {
-    this.timeZone = timeZone;
-  }
-
-  public void setTimeZone(Integer timeZone) {
-    this.timeZone = JsonNullable.<Integer>of(timeZone);
-  }
-
-
-  public BrowserInformation ipAddress(String ipAddress) {
-    this.ipAddress = JsonNullable.<String>of(ipAddress);
+        public JsonNullable<Integer> getTimeZone_JsonNullable() {
+        return timeZone;
+        }
     
-    return this;
-  }
+        @JsonProperty(JSON_PROPERTY_TIME_ZONE)
+        public void setTimeZone_JsonNullable(JsonNullable<Integer> timeZone) {
+        this.timeZone = timeZone;
+        }
 
-   /**
-   * Ip address of the client
-   * @return ipAddress
-  **/
-  @javax.annotation.Nullable
-  @JsonIgnore
+          public void setTimeZone(@javax.annotation.Nullable Integer timeZone) {
+            this.timeZone = JsonNullable.<Integer>of(timeZone);
+        }
 
-  public String getIpAddress() {
-        return ipAddress.orElse(null);
-  }
+        public BrowserInformation ipAddress(@javax.annotation.Nullable String ipAddress) {
+        this.ipAddress = JsonNullable.<String>of(ipAddress);
+        
+        return this;
+        }
 
-  @JsonProperty(JSON_PROPERTY_IP_ADDRESS)
+    /**
+        * Ip address of the client
+    * @return ipAddress
+    */
+    @javax.annotation.Nullable
+        @JsonIgnore
+    
+    public String getIpAddress() {
+                return ipAddress.orElse(null);
+    }
+
+          @JsonProperty(JSON_PROPERTY_IP_ADDRESS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-  public JsonNullable<String> getIpAddress_JsonNullable() {
-    return ipAddress;
-  }
-  
-  @JsonProperty(JSON_PROPERTY_IP_ADDRESS)
-  public void setIpAddress_JsonNullable(JsonNullable<String> ipAddress) {
-    this.ipAddress = ipAddress;
-  }
-
-  public void setIpAddress(String ipAddress) {
-    this.ipAddress = JsonNullable.<String>of(ipAddress);
-  }
-
-
-  public BrowserInformation acceptHeader(String acceptHeader) {
-    this.acceptHeader = JsonNullable.<String>of(acceptHeader);
+        public JsonNullable<String> getIpAddress_JsonNullable() {
+        return ipAddress;
+        }
     
-    return this;
-  }
+        @JsonProperty(JSON_PROPERTY_IP_ADDRESS)
+        public void setIpAddress_JsonNullable(JsonNullable<String> ipAddress) {
+        this.ipAddress = ipAddress;
+        }
 
-   /**
-   * List of headers that are accepted
-   * @return acceptHeader
-  **/
-  @javax.annotation.Nullable
-  @JsonIgnore
+          public void setIpAddress(@javax.annotation.Nullable String ipAddress) {
+            this.ipAddress = JsonNullable.<String>of(ipAddress);
+        }
 
-  public String getAcceptHeader() {
-        return acceptHeader.orElse(null);
-  }
+        public BrowserInformation acceptHeader(@javax.annotation.Nullable String acceptHeader) {
+        this.acceptHeader = JsonNullable.<String>of(acceptHeader);
+        
+        return this;
+        }
 
-  @JsonProperty(JSON_PROPERTY_ACCEPT_HEADER)
+    /**
+        * List of headers that are accepted
+    * @return acceptHeader
+    */
+    @javax.annotation.Nullable
+        @JsonIgnore
+    
+    public String getAcceptHeader() {
+                return acceptHeader.orElse(null);
+    }
+
+          @JsonProperty(JSON_PROPERTY_ACCEPT_HEADER)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-  public JsonNullable<String> getAcceptHeader_JsonNullable() {
-    return acceptHeader;
-  }
-  
-  @JsonProperty(JSON_PROPERTY_ACCEPT_HEADER)
-  public void setAcceptHeader_JsonNullable(JsonNullable<String> acceptHeader) {
-    this.acceptHeader = acceptHeader;
-  }
-
-  public void setAcceptHeader(String acceptHeader) {
-    this.acceptHeader = JsonNullable.<String>of(acceptHeader);
-  }
-
-
-  public BrowserInformation userAgent(String userAgent) {
-    this.userAgent = JsonNullable.<String>of(userAgent);
+        public JsonNullable<String> getAcceptHeader_JsonNullable() {
+        return acceptHeader;
+        }
     
-    return this;
-  }
+        @JsonProperty(JSON_PROPERTY_ACCEPT_HEADER)
+        public void setAcceptHeader_JsonNullable(JsonNullable<String> acceptHeader) {
+        this.acceptHeader = acceptHeader;
+        }
 
-   /**
-   * User-agent of the browser
-   * @return userAgent
-  **/
-  @javax.annotation.Nullable
-  @JsonIgnore
+          public void setAcceptHeader(@javax.annotation.Nullable String acceptHeader) {
+            this.acceptHeader = JsonNullable.<String>of(acceptHeader);
+        }
 
-  public String getUserAgent() {
-        return userAgent.orElse(null);
-  }
+        public BrowserInformation userAgent(@javax.annotation.Nullable String userAgent) {
+        this.userAgent = JsonNullable.<String>of(userAgent);
+        
+        return this;
+        }
 
-  @JsonProperty(JSON_PROPERTY_USER_AGENT)
+    /**
+        * User-agent of the browser
+    * @return userAgent
+    */
+    @javax.annotation.Nullable
+        @JsonIgnore
+    
+    public String getUserAgent() {
+                return userAgent.orElse(null);
+    }
+
+          @JsonProperty(JSON_PROPERTY_USER_AGENT)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-  public JsonNullable<String> getUserAgent_JsonNullable() {
-    return userAgent;
-  }
-  
-  @JsonProperty(JSON_PROPERTY_USER_AGENT)
-  public void setUserAgent_JsonNullable(JsonNullable<String> userAgent) {
-    this.userAgent = userAgent;
-  }
+        public JsonNullable<String> getUserAgent_JsonNullable() {
+        return userAgent;
+        }
+    
+        @JsonProperty(JSON_PROPERTY_USER_AGENT)
+        public void setUserAgent_JsonNullable(JsonNullable<String> userAgent) {
+        this.userAgent = userAgent;
+        }
 
-  public void setUserAgent(String userAgent) {
-    this.userAgent = JsonNullable.<String>of(userAgent);
-  }
+          public void setUserAgent(@javax.annotation.Nullable String userAgent) {
+            this.userAgent = JsonNullable.<String>of(userAgent);
+        }
 
-  @Override
-  public boolean equals(Object o) {
+@Override
+public boolean equals(Object o) {
     if (this == o) {
-      return true;
+    return true;
     }
     if (o == null || getClass() != o.getClass()) {
-      return false;
+    return false;
     }
-    BrowserInformation browserInformation = (BrowserInformation) o;
-    return equalsNullable(this.colorDepth, browserInformation.colorDepth) &&
+        BrowserInformation browserInformation = (BrowserInformation) o;
+        return equalsNullable(this.colorDepth, browserInformation.colorDepth) &&
         equalsNullable(this.javaEnabled, browserInformation.javaEnabled) &&
         equalsNullable(this.javaScriptEnabled, browserInformation.javaScriptEnabled) &&
         equalsNullable(this.language, browserInformation.language) &&
@@ -441,187 +442,187 @@ public class BrowserInformation {
         equalsNullable(this.ipAddress, browserInformation.ipAddress) &&
         equalsNullable(this.acceptHeader, browserInformation.acceptHeader) &&
         equalsNullable(this.userAgent, browserInformation.userAgent);
-  }
+}
 
-  private static <T> boolean equalsNullable(JsonNullable<T> a, JsonNullable<T> b) {
-    return a == b || (a != null && b != null && a.isPresent() && b.isPresent() && Objects.deepEquals(a.get(), b.get()));
-  }
+    private static <T> boolean equalsNullable(JsonNullable<T> a, JsonNullable<T> b) {
+        return a == b || (a != null && b != null && a.isPresent() && b.isPresent() && Objects.deepEquals(a.get(), b.get()));
+        }
 
-  @Override
-  public int hashCode() {
-    return Objects.hash(hashCodeNullable(colorDepth), hashCodeNullable(javaEnabled), hashCodeNullable(javaScriptEnabled), hashCodeNullable(language), hashCodeNullable(screenHeight), hashCodeNullable(screenWidth), hashCodeNullable(timeZone), hashCodeNullable(ipAddress), hashCodeNullable(acceptHeader), hashCodeNullable(userAgent));
-  }
-
-  private static <T> int hashCodeNullable(JsonNullable<T> a) {
-    if (a == null) {
-      return 1;
+    @Override
+    public int hashCode() {
+        return Objects.hash(hashCodeNullable(colorDepth), hashCodeNullable(javaEnabled), hashCodeNullable(javaScriptEnabled), hashCodeNullable(language), hashCodeNullable(screenHeight), hashCodeNullable(screenWidth), hashCodeNullable(timeZone), hashCodeNullable(ipAddress), hashCodeNullable(acceptHeader), hashCodeNullable(userAgent));
     }
-    return a.isPresent() ? Arrays.deepHashCode(new Object[]{a.get()}) : 31;
-  }
 
-  @Override
-  public String toString() {
+        private static <T> int hashCodeNullable(JsonNullable<T> a) {
+        if (a == null) {
+        return 1;
+        }
+        return a.isPresent() ? Arrays.deepHashCode(new Object[]{a.get()}) : 31;
+        }
+
+    @Override
+    public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class BrowserInformation {\n");
-    sb.append("    colorDepth: ").append(toIndentedString(colorDepth)).append("\n");
-    sb.append("    javaEnabled: ").append(toIndentedString(javaEnabled)).append("\n");
-    sb.append("    javaScriptEnabled: ").append(toIndentedString(javaScriptEnabled)).append("\n");
-    sb.append("    language: ").append(toIndentedString(language)).append("\n");
-    sb.append("    screenHeight: ").append(toIndentedString(screenHeight)).append("\n");
-    sb.append("    screenWidth: ").append(toIndentedString(screenWidth)).append("\n");
-    sb.append("    timeZone: ").append(toIndentedString(timeZone)).append("\n");
-    sb.append("    ipAddress: ").append(toIndentedString(ipAddress)).append("\n");
-    sb.append("    acceptHeader: ").append(toIndentedString(acceptHeader)).append("\n");
-    sb.append("    userAgent: ").append(toIndentedString(userAgent)).append("\n");
+        sb.append("    colorDepth: ").append(toIndentedString(colorDepth)).append("\n");
+        sb.append("    javaEnabled: ").append(toIndentedString(javaEnabled)).append("\n");
+        sb.append("    javaScriptEnabled: ").append(toIndentedString(javaScriptEnabled)).append("\n");
+        sb.append("    language: ").append(toIndentedString(language)).append("\n");
+        sb.append("    screenHeight: ").append(toIndentedString(screenHeight)).append("\n");
+        sb.append("    screenWidth: ").append(toIndentedString(screenWidth)).append("\n");
+        sb.append("    timeZone: ").append(toIndentedString(timeZone)).append("\n");
+        sb.append("    ipAddress: ").append(toIndentedString(ipAddress)).append("\n");
+        sb.append("    acceptHeader: ").append(toIndentedString(acceptHeader)).append("\n");
+        sb.append("    userAgent: ").append(toIndentedString(userAgent)).append("\n");
     sb.append("}");
     return sb.toString();
-  }
+    }
 
-  /**
-   * Convert the given object to string with each line indented by 4 spaces
-   * (except the first line).
-   */
-  private String toIndentedString(Object o) {
+    /**
+    * Convert the given object to string with each line indented by 4 spaces
+    * (except the first line).
+    */
+    private String toIndentedString(Object o) {
     if (o == null) {
-      return "null";
+    return "null";
     }
     return o.toString().replace("\n", "\n    ");
-  }
-
-  /**
-   * Convert the instance into URL query string.
-   *
-   * @return URL query string
-   */
-  public String toUrlQueryString() {
-    return toUrlQueryString(null);
-  }
-
-  /**
-   * Convert the instance into URL query string.
-   *
-   * @param prefix prefix of the query string
-   * @return URL query string
-   */
-  public String toUrlQueryString(String prefix) {
-    String suffix = "";
-    String containerSuffix = "";
-    String containerPrefix = "";
-    if (prefix == null) {
-      // style=form, explode=true, e.g. /pet?name=cat&type=manx
-      prefix = "";
-    } else {
-      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
-      prefix = prefix + "[";
-      suffix = "]";
-      containerSuffix = "]";
-      containerPrefix = "[";
     }
 
-    StringJoiner joiner = new StringJoiner("&");
+        /**
+        * Convert the instance into URL query string.
+        *
+        * @return URL query string
+        */
+        public String toUrlQueryString() {
+        return toUrlQueryString(null);
+        }
 
-    // add `color_depth` to the URL query string
-    if (getColorDepth() != null) {
-      try {
-        joiner.add(String.format("%scolor_depth%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getColorDepth()), "UTF-8").replaceAll("\\+", "%20")));
-      } catch (UnsupportedEncodingException e) {
-        // Should never happen, UTF-8 is always supported
-        throw new RuntimeException(e);
-      }
+        /**
+        * Convert the instance into URL query string.
+        *
+        * @param prefix prefix of the query string
+        * @return URL query string
+        */
+        public String toUrlQueryString(String prefix) {
+        String suffix = "";
+        String containerSuffix = "";
+        String containerPrefix = "";
+        if (prefix == null) {
+        // style=form, explode=true, e.g. /pet?name=cat&type=manx
+        prefix = "";
+        } else {
+        // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+        prefix = prefix + "[";
+        suffix = "]";
+        containerSuffix = "]";
+        containerPrefix = "[";
+        }
+
+        StringJoiner joiner = new StringJoiner("&");
+
+            // add `color_depth` to the URL query string
+                        if (getColorDepth() != null) {
+                        try {
+                        joiner.add(String.format("%scolor_depth%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getColorDepth()), "UTF-8").replaceAll("\\+", "%20")));
+                        } catch (UnsupportedEncodingException e) {
+                        // Should never happen, UTF-8 is always supported
+                        throw new RuntimeException(e);
+                        }
+                        }
+
+            // add `java_enabled` to the URL query string
+                        if (getJavaEnabled() != null) {
+                        try {
+                        joiner.add(String.format("%sjava_enabled%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getJavaEnabled()), "UTF-8").replaceAll("\\+", "%20")));
+                        } catch (UnsupportedEncodingException e) {
+                        // Should never happen, UTF-8 is always supported
+                        throw new RuntimeException(e);
+                        }
+                        }
+
+            // add `java_script_enabled` to the URL query string
+                        if (getJavaScriptEnabled() != null) {
+                        try {
+                        joiner.add(String.format("%sjava_script_enabled%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getJavaScriptEnabled()), "UTF-8").replaceAll("\\+", "%20")));
+                        } catch (UnsupportedEncodingException e) {
+                        // Should never happen, UTF-8 is always supported
+                        throw new RuntimeException(e);
+                        }
+                        }
+
+            // add `language` to the URL query string
+                        if (getLanguage() != null) {
+                        try {
+                        joiner.add(String.format("%slanguage%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getLanguage()), "UTF-8").replaceAll("\\+", "%20")));
+                        } catch (UnsupportedEncodingException e) {
+                        // Should never happen, UTF-8 is always supported
+                        throw new RuntimeException(e);
+                        }
+                        }
+
+            // add `screen_height` to the URL query string
+                        if (getScreenHeight() != null) {
+                        try {
+                        joiner.add(String.format("%sscreen_height%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getScreenHeight()), "UTF-8").replaceAll("\\+", "%20")));
+                        } catch (UnsupportedEncodingException e) {
+                        // Should never happen, UTF-8 is always supported
+                        throw new RuntimeException(e);
+                        }
+                        }
+
+            // add `screen_width` to the URL query string
+                        if (getScreenWidth() != null) {
+                        try {
+                        joiner.add(String.format("%sscreen_width%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getScreenWidth()), "UTF-8").replaceAll("\\+", "%20")));
+                        } catch (UnsupportedEncodingException e) {
+                        // Should never happen, UTF-8 is always supported
+                        throw new RuntimeException(e);
+                        }
+                        }
+
+            // add `time_zone` to the URL query string
+                        if (getTimeZone() != null) {
+                        try {
+                        joiner.add(String.format("%stime_zone%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getTimeZone()), "UTF-8").replaceAll("\\+", "%20")));
+                        } catch (UnsupportedEncodingException e) {
+                        // Should never happen, UTF-8 is always supported
+                        throw new RuntimeException(e);
+                        }
+                        }
+
+            // add `ip_address` to the URL query string
+                        if (getIpAddress() != null) {
+                        try {
+                        joiner.add(String.format("%sip_address%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getIpAddress()), "UTF-8").replaceAll("\\+", "%20")));
+                        } catch (UnsupportedEncodingException e) {
+                        // Should never happen, UTF-8 is always supported
+                        throw new RuntimeException(e);
+                        }
+                        }
+
+            // add `accept_header` to the URL query string
+                        if (getAcceptHeader() != null) {
+                        try {
+                        joiner.add(String.format("%saccept_header%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getAcceptHeader()), "UTF-8").replaceAll("\\+", "%20")));
+                        } catch (UnsupportedEncodingException e) {
+                        // Should never happen, UTF-8 is always supported
+                        throw new RuntimeException(e);
+                        }
+                        }
+
+            // add `user_agent` to the URL query string
+                        if (getUserAgent() != null) {
+                        try {
+                        joiner.add(String.format("%suser_agent%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getUserAgent()), "UTF-8").replaceAll("\\+", "%20")));
+                        } catch (UnsupportedEncodingException e) {
+                        // Should never happen, UTF-8 is always supported
+                        throw new RuntimeException(e);
+                        }
+                        }
+
+        return joiner.toString();
+        }
+
     }
-
-    // add `java_enabled` to the URL query string
-    if (getJavaEnabled() != null) {
-      try {
-        joiner.add(String.format("%sjava_enabled%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getJavaEnabled()), "UTF-8").replaceAll("\\+", "%20")));
-      } catch (UnsupportedEncodingException e) {
-        // Should never happen, UTF-8 is always supported
-        throw new RuntimeException(e);
-      }
-    }
-
-    // add `java_script_enabled` to the URL query string
-    if (getJavaScriptEnabled() != null) {
-      try {
-        joiner.add(String.format("%sjava_script_enabled%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getJavaScriptEnabled()), "UTF-8").replaceAll("\\+", "%20")));
-      } catch (UnsupportedEncodingException e) {
-        // Should never happen, UTF-8 is always supported
-        throw new RuntimeException(e);
-      }
-    }
-
-    // add `language` to the URL query string
-    if (getLanguage() != null) {
-      try {
-        joiner.add(String.format("%slanguage%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getLanguage()), "UTF-8").replaceAll("\\+", "%20")));
-      } catch (UnsupportedEncodingException e) {
-        // Should never happen, UTF-8 is always supported
-        throw new RuntimeException(e);
-      }
-    }
-
-    // add `screen_height` to the URL query string
-    if (getScreenHeight() != null) {
-      try {
-        joiner.add(String.format("%sscreen_height%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getScreenHeight()), "UTF-8").replaceAll("\\+", "%20")));
-      } catch (UnsupportedEncodingException e) {
-        // Should never happen, UTF-8 is always supported
-        throw new RuntimeException(e);
-      }
-    }
-
-    // add `screen_width` to the URL query string
-    if (getScreenWidth() != null) {
-      try {
-        joiner.add(String.format("%sscreen_width%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getScreenWidth()), "UTF-8").replaceAll("\\+", "%20")));
-      } catch (UnsupportedEncodingException e) {
-        // Should never happen, UTF-8 is always supported
-        throw new RuntimeException(e);
-      }
-    }
-
-    // add `time_zone` to the URL query string
-    if (getTimeZone() != null) {
-      try {
-        joiner.add(String.format("%stime_zone%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getTimeZone()), "UTF-8").replaceAll("\\+", "%20")));
-      } catch (UnsupportedEncodingException e) {
-        // Should never happen, UTF-8 is always supported
-        throw new RuntimeException(e);
-      }
-    }
-
-    // add `ip_address` to the URL query string
-    if (getIpAddress() != null) {
-      try {
-        joiner.add(String.format("%sip_address%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getIpAddress()), "UTF-8").replaceAll("\\+", "%20")));
-      } catch (UnsupportedEncodingException e) {
-        // Should never happen, UTF-8 is always supported
-        throw new RuntimeException(e);
-      }
-    }
-
-    // add `accept_header` to the URL query string
-    if (getAcceptHeader() != null) {
-      try {
-        joiner.add(String.format("%saccept_header%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getAcceptHeader()), "UTF-8").replaceAll("\\+", "%20")));
-      } catch (UnsupportedEncodingException e) {
-        // Should never happen, UTF-8 is always supported
-        throw new RuntimeException(e);
-      }
-    }
-
-    // add `user_agent` to the URL query string
-    if (getUserAgent() != null) {
-      try {
-        joiner.add(String.format("%suser_agent%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getUserAgent()), "UTF-8").replaceAll("\\+", "%20")));
-      } catch (UnsupportedEncodingException e) {
-        // Should never happen, UTF-8 is always supported
-        throw new RuntimeException(e);
-      }
-    }
-
-    return joiner.toString();
-  }
-
-}
 

@@ -31,255 +31,256 @@ import java.net.URLEncoder;
 import java.util.StringJoiner;
 
 /**
- * Represents a single comparison condition.
- */
-@JsonPropertyOrder({
-  Comparison.JSON_PROPERTY_LHS,
-  Comparison.JSON_PROPERTY_COMPARISON,
-  Comparison.JSON_PROPERTY_VALUE,
-  Comparison.JSON_PROPERTY_METADATA
-})
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+* Represents a single comparison condition.
+*/
+    @JsonPropertyOrder({
+        Comparison.JSON_PROPERTY_LHS,
+        Comparison.JSON_PROPERTY_COMPARISON,
+        Comparison.JSON_PROPERTY_VALUE,
+        Comparison.JSON_PROPERTY_METADATA
+    })
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class Comparison {
-  public static final String JSON_PROPERTY_LHS = "lhs";
-  private String lhs;
+        public static final String JSON_PROPERTY_LHS = "lhs";
+    @javax.annotation.Nonnull
+            private String lhs;
 
-  public static final String JSON_PROPERTY_COMPARISON = "comparison";
-  private ComparisonType comparison;
+        public static final String JSON_PROPERTY_COMPARISON = "comparison";
+    @javax.annotation.Nonnull
+            private ComparisonType comparison;
 
-  public static final String JSON_PROPERTY_VALUE = "value";
-  private ValueType value;
+        public static final String JSON_PROPERTY_VALUE = "value";
+    @javax.annotation.Nonnull
+            private ValueType value;
 
-  public static final String JSON_PROPERTY_METADATA = "metadata";
-  private Map<String, Object> metadata = new HashMap<>();
+        public static final String JSON_PROPERTY_METADATA = "metadata";
+    @javax.annotation.Nonnull
+            private Map<String, Object> metadata = new HashMap<>();
 
-  public Comparison() {
-  }
+public Comparison() {
+}
 
-  public Comparison lhs(String lhs) {
-    
-    this.lhs = lhs;
-    return this;
-  }
+        public Comparison lhs(@javax.annotation.Nonnull String lhs) {
+        
+        this.lhs = lhs;
+        return this;
+        }
 
-   /**
-   * The left hand side which will always be a domain input identifier like \&quot;payment.method.cardtype\&quot;
-   * @return lhs
-  **/
-  @javax.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_LHS)
+    /**
+        * The left hand side which will always be a domain input identifier like \&quot;payment.method.cardtype\&quot;
+    * @return lhs
+    */
+    @javax.annotation.Nonnull
+      @JsonProperty(JSON_PROPERTY_LHS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-  public String getLhs() {
-    return lhs;
-  }
+    public String getLhs() {
+        return lhs;
+    }
 
 
-  @JsonProperty(JSON_PROPERTY_LHS)
+          @JsonProperty(JSON_PROPERTY_LHS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setLhs(String lhs) {
-    this.lhs = lhs;
-  }
+  public void setLhs(@javax.annotation.Nonnull String lhs) {
+            this.lhs = lhs;
+        }
 
+        public Comparison comparison(@javax.annotation.Nonnull ComparisonType comparison) {
+        
+        this.comparison = comparison;
+        return this;
+        }
 
-  public Comparison comparison(ComparisonType comparison) {
-    
-    this.comparison = comparison;
-    return this;
-  }
-
-   /**
-   * Get comparison
-   * @return comparison
-  **/
-  @javax.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_COMPARISON)
-  @JsonInclude(value = JsonInclude.Include.ALWAYS)
-
-  public ComparisonType getComparison() {
-    return comparison;
-  }
-
-
-  @JsonProperty(JSON_PROPERTY_COMPARISON)
-  @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setComparison(ComparisonType comparison) {
-    this.comparison = comparison;
-  }
-
-
-  public Comparison value(ValueType value) {
-    
-    this.value = value;
-    return this;
-  }
-
-   /**
-   * Get value
-   * @return value
-  **/
-  @javax.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_VALUE)
+    /**
+        * Get comparison
+    * @return comparison
+    */
+    @javax.annotation.Nonnull
+      @JsonProperty(JSON_PROPERTY_COMPARISON)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-  public ValueType getValue() {
-    return value;
-  }
+    public ComparisonType getComparison() {
+        return comparison;
+    }
 
 
-  @JsonProperty(JSON_PROPERTY_VALUE)
+          @JsonProperty(JSON_PROPERTY_COMPARISON)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setValue(ValueType value) {
-    this.value = value;
-  }
+  public void setComparison(@javax.annotation.Nonnull ComparisonType comparison) {
+            this.comparison = comparison;
+        }
+
+        public Comparison value(@javax.annotation.Nonnull ValueType value) {
+        
+        this.value = value;
+        return this;
+        }
+
+    /**
+        * Get value
+    * @return value
+    */
+    @javax.annotation.Nonnull
+      @JsonProperty(JSON_PROPERTY_VALUE)
+  @JsonInclude(value = JsonInclude.Include.ALWAYS)
+
+    public ValueType getValue() {
+        return value;
+    }
 
 
-  public Comparison metadata(Map<String, Object> metadata) {
-    
-    this.metadata = metadata;
-    return this;
-  }
+          @JsonProperty(JSON_PROPERTY_VALUE)
+  @JsonInclude(value = JsonInclude.Include.ALWAYS)
+  public void setValue(@javax.annotation.Nonnull ValueType value) {
+            this.value = value;
+        }
 
-  public Comparison putMetadataItem(String key, Object metadataItem) {
-    this.metadata.put(key, metadataItem);
-    return this;
-  }
+        public Comparison metadata(@javax.annotation.Nonnull Map<String, Object> metadata) {
+        
+        this.metadata = metadata;
+        return this;
+        }
 
-   /**
-   * Additional metadata that the Static Analyzer and Backend does not touch. This can be used to store useful information for the frontend and is required for communication between the static analyzer and the frontend.
-   * @return metadata
-  **/
-  @javax.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_METADATA)
+            public Comparison putMetadataItem(String key, Object metadataItem) {
+                this.metadata.put(key, metadataItem);
+                return this;
+            }
+
+    /**
+        * Additional metadata that the Static Analyzer and Backend does not touch. This can be used to store useful information for the frontend and is required for communication between the static analyzer and the frontend.
+    * @return metadata
+    */
+    @javax.annotation.Nonnull
+      @JsonProperty(JSON_PROPERTY_METADATA)
   @JsonInclude(content = JsonInclude.Include.ALWAYS, value = JsonInclude.Include.ALWAYS)
 
-  public Map<String, Object> getMetadata() {
-    return metadata;
-  }
+    public Map<String, Object> getMetadata() {
+        return metadata;
+    }
 
 
-  @JsonProperty(JSON_PROPERTY_METADATA)
+          @JsonProperty(JSON_PROPERTY_METADATA)
   @JsonInclude(content = JsonInclude.Include.ALWAYS, value = JsonInclude.Include.ALWAYS)
-  public void setMetadata(Map<String, Object> metadata) {
-    this.metadata = metadata;
-  }
+  public void setMetadata(@javax.annotation.Nonnull Map<String, Object> metadata) {
+            this.metadata = metadata;
+        }
 
-  @Override
-  public boolean equals(Object o) {
+@Override
+public boolean equals(Object o) {
     if (this == o) {
-      return true;
+    return true;
     }
     if (o == null || getClass() != o.getClass()) {
-      return false;
+    return false;
     }
-    Comparison comparison = (Comparison) o;
-    return Objects.equals(this.lhs, comparison.lhs) &&
+        Comparison comparison = (Comparison) o;
+        return Objects.equals(this.lhs, comparison.lhs) &&
         Objects.equals(this.comparison, comparison.comparison) &&
         Objects.equals(this.value, comparison.value) &&
         Objects.equals(this.metadata, comparison.metadata);
-  }
+}
 
-  @Override
-  public int hashCode() {
-    return Objects.hash(lhs, comparison, value, metadata);
-  }
+    @Override
+    public int hashCode() {
+        return Objects.hash(lhs, comparison, value, metadata);
+    }
 
-  @Override
-  public String toString() {
+    @Override
+    public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class Comparison {\n");
-    sb.append("    lhs: ").append(toIndentedString(lhs)).append("\n");
-    sb.append("    comparison: ").append(toIndentedString(comparison)).append("\n");
-    sb.append("    value: ").append(toIndentedString(value)).append("\n");
-    sb.append("    metadata: ").append(toIndentedString(metadata)).append("\n");
+        sb.append("    lhs: ").append(toIndentedString(lhs)).append("\n");
+        sb.append("    comparison: ").append(toIndentedString(comparison)).append("\n");
+        sb.append("    value: ").append(toIndentedString(value)).append("\n");
+        sb.append("    metadata: ").append(toIndentedString(metadata)).append("\n");
     sb.append("}");
     return sb.toString();
-  }
+    }
 
-  /**
-   * Convert the given object to string with each line indented by 4 spaces
-   * (except the first line).
-   */
-  private String toIndentedString(Object o) {
+    /**
+    * Convert the given object to string with each line indented by 4 spaces
+    * (except the first line).
+    */
+    private String toIndentedString(Object o) {
     if (o == null) {
-      return "null";
+    return "null";
     }
     return o.toString().replace("\n", "\n    ");
-  }
-
-  /**
-   * Convert the instance into URL query string.
-   *
-   * @return URL query string
-   */
-  public String toUrlQueryString() {
-    return toUrlQueryString(null);
-  }
-
-  /**
-   * Convert the instance into URL query string.
-   *
-   * @param prefix prefix of the query string
-   * @return URL query string
-   */
-  public String toUrlQueryString(String prefix) {
-    String suffix = "";
-    String containerSuffix = "";
-    String containerPrefix = "";
-    if (prefix == null) {
-      // style=form, explode=true, e.g. /pet?name=cat&type=manx
-      prefix = "";
-    } else {
-      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
-      prefix = prefix + "[";
-      suffix = "]";
-      containerSuffix = "]";
-      containerPrefix = "[";
     }
 
-    StringJoiner joiner = new StringJoiner("&");
-
-    // add `lhs` to the URL query string
-    if (getLhs() != null) {
-      try {
-        joiner.add(String.format("%slhs%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getLhs()), "UTF-8").replaceAll("\\+", "%20")));
-      } catch (UnsupportedEncodingException e) {
-        // Should never happen, UTF-8 is always supported
-        throw new RuntimeException(e);
-      }
-    }
-
-    // add `comparison` to the URL query string
-    if (getComparison() != null) {
-      try {
-        joiner.add(String.format("%scomparison%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getComparison()), "UTF-8").replaceAll("\\+", "%20")));
-      } catch (UnsupportedEncodingException e) {
-        // Should never happen, UTF-8 is always supported
-        throw new RuntimeException(e);
-      }
-    }
-
-    // add `value` to the URL query string
-    if (getValue() != null) {
-      joiner.add(getValue().toUrlQueryString(prefix + "value" + suffix));
-    }
-
-    // add `metadata` to the URL query string
-    if (getMetadata() != null) {
-      for (String _key : getMetadata().keySet()) {
-        try {
-          joiner.add(String.format("%smetadata%s%s=%s", prefix, suffix,
-              "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, _key, containerSuffix),
-              getMetadata().get(_key), URLEncoder.encode(String.valueOf(getMetadata().get(_key)), "UTF-8").replaceAll("\\+", "%20")));
-        } catch (UnsupportedEncodingException e) {
-          // Should never happen, UTF-8 is always supported
-          throw new RuntimeException(e);
+        /**
+        * Convert the instance into URL query string.
+        *
+        * @return URL query string
+        */
+        public String toUrlQueryString() {
+        return toUrlQueryString(null);
         }
-      }
+
+        /**
+        * Convert the instance into URL query string.
+        *
+        * @param prefix prefix of the query string
+        * @return URL query string
+        */
+        public String toUrlQueryString(String prefix) {
+        String suffix = "";
+        String containerSuffix = "";
+        String containerPrefix = "";
+        if (prefix == null) {
+        // style=form, explode=true, e.g. /pet?name=cat&type=manx
+        prefix = "";
+        } else {
+        // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+        prefix = prefix + "[";
+        suffix = "]";
+        containerSuffix = "]";
+        containerPrefix = "[";
+        }
+
+        StringJoiner joiner = new StringJoiner("&");
+
+            // add `lhs` to the URL query string
+                        if (getLhs() != null) {
+                        try {
+                        joiner.add(String.format("%slhs%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getLhs()), "UTF-8").replaceAll("\\+", "%20")));
+                        } catch (UnsupportedEncodingException e) {
+                        // Should never happen, UTF-8 is always supported
+                        throw new RuntimeException(e);
+                        }
+                        }
+
+            // add `comparison` to the URL query string
+                            if (getComparison() != null) {
+                            try {
+                            joiner.add(String.format("%scomparison%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getComparison()), "UTF-8").replaceAll("\\+", "%20")));
+                            } catch (UnsupportedEncodingException e) {
+                            // Should never happen, UTF-8 is always supported
+                            throw new RuntimeException(e);
+                            }
+                            }
+
+            // add `value` to the URL query string
+                            if (getValue() != null) {
+                            joiner.add(getValue().toUrlQueryString(prefix + "value" + suffix));
+                            }
+
+            // add `metadata` to the URL query string
+                        if (getMetadata() != null) {
+                        for (String _key : getMetadata().keySet()) {
+                        try {
+                        joiner.add(String.format("%smetadata%s%s=%s", prefix, suffix,
+                        "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, _key, containerSuffix),
+                    getMetadata().get(_key), URLEncoder.encode(String.valueOf(getMetadata().get(_key)), "UTF-8").replaceAll("\\+", "%20")));
+                        } catch (UnsupportedEncodingException e) {
+                        // Should never happen, UTF-8 is always supported
+                        throw new RuntimeException(e);
+                        }
+                        }
+                        }
+
+        return joiner.toString();
+        }
+
     }
-
-    return joiner.toString();
-  }
-
-}
 

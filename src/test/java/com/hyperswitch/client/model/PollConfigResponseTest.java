@@ -18,22 +18,21 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonTypeName;
 import com.fasterxml.jackson.annotation.JsonValue;
-import org.junit.Assert;
-import org.junit.Ignore;
-import org.junit.Test;
-
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Test;
 
 /**
  * Model tests for PollConfigResponse
  */
-public class PollConfigResponseTest {
+class PollConfigResponseTest {
     private final PollConfigResponse model = new PollConfigResponse();
 
     /**
      * Model tests for PollConfigResponse
      */
     @Test
-    public void testPollConfigResponse() {
+    void testPollConfigResponse() {
         // TODO: test PollConfigResponse
     }
 
@@ -41,7 +40,7 @@ public class PollConfigResponseTest {
      * Test the property 'pollId'
      */
     @Test
-    public void pollIdTest() {
+    void pollIdTest() {
         // TODO: test pollId
     }
 
@@ -49,7 +48,7 @@ public class PollConfigResponseTest {
      * Test the property 'delayInSecs'
      */
     @Test
-    public void delayInSecsTest() {
+    void delayInSecsTest() {
         // TODO: test delayInSecs
     }
 
@@ -57,7 +56,7 @@ public class PollConfigResponseTest {
      * Test the property 'frequency'
      */
     @Test
-    public void frequencyTest() {
+    void frequencyTest() {
         // TODO: test frequency
     }
 

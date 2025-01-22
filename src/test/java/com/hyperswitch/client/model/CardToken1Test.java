@@ -19,22 +19,21 @@ import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonTypeName;
 import com.fasterxml.jackson.annotation.JsonValue;
 import com.hyperswitch.client.model.CardToken;
-import org.junit.Assert;
-import org.junit.Ignore;
-import org.junit.Test;
-
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Test;
 
 /**
  * Model tests for CardToken1
  */
-public class CardToken1Test {
+class CardToken1Test {
     private final CardToken1 model = new CardToken1();
 
     /**
      * Model tests for CardToken1
      */
     @Test
-    public void testCardToken1() {
+    void testCardToken1() {
         // TODO: test CardToken1
     }
 
@@ -42,7 +41,7 @@ public class CardToken1Test {
      * Test the property 'cardToken'
      */
     @Test
-    public void cardTokenTest() {
+    void cardTokenTest() {
         // TODO: test cardToken
     }
 

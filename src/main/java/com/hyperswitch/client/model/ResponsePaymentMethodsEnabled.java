@@ -23,6 +23,7 @@ import com.fasterxml.jackson.annotation.JsonValue;
 import com.hyperswitch.client.model.PaymentMethod;
 import com.hyperswitch.client.model.ResponsePaymentMethodTypes;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 import com.fasterxml.jackson.annotation.JsonTypeName;
@@ -31,175 +32,176 @@ import java.net.URLEncoder;
 import java.util.StringJoiner;
 
 /**
- * ResponsePaymentMethodsEnabled
- */
-@JsonPropertyOrder({
-  ResponsePaymentMethodsEnabled.JSON_PROPERTY_PAYMENT_METHOD,
-  ResponsePaymentMethodsEnabled.JSON_PROPERTY_PAYMENT_METHOD_TYPES
-})
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+* ResponsePaymentMethodsEnabled
+*/
+    @JsonPropertyOrder({
+        ResponsePaymentMethodsEnabled.JSON_PROPERTY_PAYMENT_METHOD,
+        ResponsePaymentMethodsEnabled.JSON_PROPERTY_PAYMENT_METHOD_TYPES
+    })
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class ResponsePaymentMethodsEnabled {
-  public static final String JSON_PROPERTY_PAYMENT_METHOD = "payment_method";
-  private PaymentMethod paymentMethod;
+        public static final String JSON_PROPERTY_PAYMENT_METHOD = "payment_method";
+    @javax.annotation.Nonnull
+            private PaymentMethod paymentMethod;
 
-  public static final String JSON_PROPERTY_PAYMENT_METHOD_TYPES = "payment_method_types";
-  private List<ResponsePaymentMethodTypes> paymentMethodTypes = new ArrayList<>();
+        public static final String JSON_PROPERTY_PAYMENT_METHOD_TYPES = "payment_method_types";
+    @javax.annotation.Nonnull
+            private List<ResponsePaymentMethodTypes> paymentMethodTypes = new ArrayList<>();
 
-  public ResponsePaymentMethodsEnabled() {
-  }
+public ResponsePaymentMethodsEnabled() {
+}
 
-  public ResponsePaymentMethodsEnabled paymentMethod(PaymentMethod paymentMethod) {
-    
-    this.paymentMethod = paymentMethod;
-    return this;
-  }
+        public ResponsePaymentMethodsEnabled paymentMethod(@javax.annotation.Nonnull PaymentMethod paymentMethod) {
+        
+        this.paymentMethod = paymentMethod;
+        return this;
+        }
 
-   /**
-   * Get paymentMethod
-   * @return paymentMethod
-  **/
-  @javax.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_PAYMENT_METHOD)
+    /**
+        * Get paymentMethod
+    * @return paymentMethod
+    */
+    @javax.annotation.Nonnull
+      @JsonProperty(JSON_PROPERTY_PAYMENT_METHOD)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-  public PaymentMethod getPaymentMethod() {
-    return paymentMethod;
-  }
-
-
-  @JsonProperty(JSON_PROPERTY_PAYMENT_METHOD)
-  @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setPaymentMethod(PaymentMethod paymentMethod) {
-    this.paymentMethod = paymentMethod;
-  }
-
-
-  public ResponsePaymentMethodsEnabled paymentMethodTypes(List<ResponsePaymentMethodTypes> paymentMethodTypes) {
-    
-    this.paymentMethodTypes = paymentMethodTypes;
-    return this;
-  }
-
-  public ResponsePaymentMethodsEnabled addPaymentMethodTypesItem(ResponsePaymentMethodTypes paymentMethodTypesItem) {
-    if (this.paymentMethodTypes == null) {
-      this.paymentMethodTypes = new ArrayList<>();
+    public PaymentMethod getPaymentMethod() {
+        return paymentMethod;
     }
-    this.paymentMethodTypes.add(paymentMethodTypesItem);
-    return this;
-  }
 
-   /**
-   * The list of payment method types enabled for a connector account
-   * @return paymentMethodTypes
-  **/
-  @javax.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_PAYMENT_METHOD_TYPES)
+
+          @JsonProperty(JSON_PROPERTY_PAYMENT_METHOD)
+  @JsonInclude(value = JsonInclude.Include.ALWAYS)
+  public void setPaymentMethod(@javax.annotation.Nonnull PaymentMethod paymentMethod) {
+            this.paymentMethod = paymentMethod;
+        }
+
+        public ResponsePaymentMethodsEnabled paymentMethodTypes(@javax.annotation.Nonnull List<ResponsePaymentMethodTypes> paymentMethodTypes) {
+        
+        this.paymentMethodTypes = paymentMethodTypes;
+        return this;
+        }
+
+            public ResponsePaymentMethodsEnabled addPaymentMethodTypesItem(ResponsePaymentMethodTypes paymentMethodTypesItem) {
+                if (this.paymentMethodTypes == null) {
+                this.paymentMethodTypes = new ArrayList<>();
+                }
+                this.paymentMethodTypes.add(paymentMethodTypesItem);
+                return this;
+            }
+
+    /**
+        * The list of payment method types enabled for a connector account
+    * @return paymentMethodTypes
+    */
+    @javax.annotation.Nonnull
+      @JsonProperty(JSON_PROPERTY_PAYMENT_METHOD_TYPES)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-  public List<ResponsePaymentMethodTypes> getPaymentMethodTypes() {
-    return paymentMethodTypes;
-  }
+    public List<ResponsePaymentMethodTypes> getPaymentMethodTypes() {
+        return paymentMethodTypes;
+    }
 
 
-  @JsonProperty(JSON_PROPERTY_PAYMENT_METHOD_TYPES)
+          @JsonProperty(JSON_PROPERTY_PAYMENT_METHOD_TYPES)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setPaymentMethodTypes(List<ResponsePaymentMethodTypes> paymentMethodTypes) {
-    this.paymentMethodTypes = paymentMethodTypes;
-  }
+  public void setPaymentMethodTypes(@javax.annotation.Nonnull List<ResponsePaymentMethodTypes> paymentMethodTypes) {
+            this.paymentMethodTypes = paymentMethodTypes;
+        }
 
-  @Override
-  public boolean equals(Object o) {
+@Override
+public boolean equals(Object o) {
     if (this == o) {
-      return true;
+    return true;
     }
     if (o == null || getClass() != o.getClass()) {
-      return false;
+    return false;
     }
-    ResponsePaymentMethodsEnabled responsePaymentMethodsEnabled = (ResponsePaymentMethodsEnabled) o;
-    return Objects.equals(this.paymentMethod, responsePaymentMethodsEnabled.paymentMethod) &&
+        ResponsePaymentMethodsEnabled responsePaymentMethodsEnabled = (ResponsePaymentMethodsEnabled) o;
+        return Objects.equals(this.paymentMethod, responsePaymentMethodsEnabled.paymentMethod) &&
         Objects.equals(this.paymentMethodTypes, responsePaymentMethodsEnabled.paymentMethodTypes);
-  }
+}
 
-  @Override
-  public int hashCode() {
-    return Objects.hash(paymentMethod, paymentMethodTypes);
-  }
+    @Override
+    public int hashCode() {
+        return Objects.hash(paymentMethod, paymentMethodTypes);
+    }
 
-  @Override
-  public String toString() {
+    @Override
+    public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class ResponsePaymentMethodsEnabled {\n");
-    sb.append("    paymentMethod: ").append(toIndentedString(paymentMethod)).append("\n");
-    sb.append("    paymentMethodTypes: ").append(toIndentedString(paymentMethodTypes)).append("\n");
+        sb.append("    paymentMethod: ").append(toIndentedString(paymentMethod)).append("\n");
+        sb.append("    paymentMethodTypes: ").append(toIndentedString(paymentMethodTypes)).append("\n");
     sb.append("}");
     return sb.toString();
-  }
+    }
 
-  /**
-   * Convert the given object to string with each line indented by 4 spaces
-   * (except the first line).
-   */
-  private String toIndentedString(Object o) {
+    /**
+    * Convert the given object to string with each line indented by 4 spaces
+    * (except the first line).
+    */
+    private String toIndentedString(Object o) {
     if (o == null) {
-      return "null";
+    return "null";
     }
     return o.toString().replace("\n", "\n    ");
-  }
-
-  /**
-   * Convert the instance into URL query string.
-   *
-   * @return URL query string
-   */
-  public String toUrlQueryString() {
-    return toUrlQueryString(null);
-  }
-
-  /**
-   * Convert the instance into URL query string.
-   *
-   * @param prefix prefix of the query string
-   * @return URL query string
-   */
-  public String toUrlQueryString(String prefix) {
-    String suffix = "";
-    String containerSuffix = "";
-    String containerPrefix = "";
-    if (prefix == null) {
-      // style=form, explode=true, e.g. /pet?name=cat&type=manx
-      prefix = "";
-    } else {
-      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
-      prefix = prefix + "[";
-      suffix = "]";
-      containerSuffix = "]";
-      containerPrefix = "[";
     }
 
-    StringJoiner joiner = new StringJoiner("&");
-
-    // add `payment_method` to the URL query string
-    if (getPaymentMethod() != null) {
-      try {
-        joiner.add(String.format("%spayment_method%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getPaymentMethod()), "UTF-8").replaceAll("\\+", "%20")));
-      } catch (UnsupportedEncodingException e) {
-        // Should never happen, UTF-8 is always supported
-        throw new RuntimeException(e);
-      }
-    }
-
-    // add `payment_method_types` to the URL query string
-    if (getPaymentMethodTypes() != null) {
-      for (int i = 0; i < getPaymentMethodTypes().size(); i++) {
-        if (getPaymentMethodTypes().get(i) != null) {
-          joiner.add(getPaymentMethodTypes().get(i).toUrlQueryString(String.format("%spayment_method_types%s%s", prefix, suffix,
-              "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix))));
+        /**
+        * Convert the instance into URL query string.
+        *
+        * @return URL query string
+        */
+        public String toUrlQueryString() {
+        return toUrlQueryString(null);
         }
-      }
+
+        /**
+        * Convert the instance into URL query string.
+        *
+        * @param prefix prefix of the query string
+        * @return URL query string
+        */
+        public String toUrlQueryString(String prefix) {
+        String suffix = "";
+        String containerSuffix = "";
+        String containerPrefix = "";
+        if (prefix == null) {
+        // style=form, explode=true, e.g. /pet?name=cat&type=manx
+        prefix = "";
+        } else {
+        // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+        prefix = prefix + "[";
+        suffix = "]";
+        containerSuffix = "]";
+        containerPrefix = "[";
+        }
+
+        StringJoiner joiner = new StringJoiner("&");
+
+            // add `payment_method` to the URL query string
+                            if (getPaymentMethod() != null) {
+                            try {
+                            joiner.add(String.format("%spayment_method%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getPaymentMethod()), "UTF-8").replaceAll("\\+", "%20")));
+                            } catch (UnsupportedEncodingException e) {
+                            // Should never happen, UTF-8 is always supported
+                            throw new RuntimeException(e);
+                            }
+                            }
+
+            // add `payment_method_types` to the URL query string
+                            if (getPaymentMethodTypes() != null) {
+                            for (int i = 0; i < getPaymentMethodTypes().size(); i++) {
+                            if (getPaymentMethodTypes().get(i) != null) {
+                            joiner.add(getPaymentMethodTypes().get(i).toUrlQueryString(String.format("%spayment_method_types%s%s", prefix, suffix,
+                            "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix))));
+                            }
+                            }
+                            }
+
+        return joiner.toString();
+        }
+
     }
-
-    return joiner.toString();
-  }
-
-}
 

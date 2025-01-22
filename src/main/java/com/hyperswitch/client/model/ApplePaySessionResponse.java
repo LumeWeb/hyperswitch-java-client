@@ -30,387 +30,388 @@ import java.net.URLEncoder;
 import java.util.StringJoiner;
 
 /**
- * ApplePaySessionResponse
- */
-@JsonPropertyOrder({
-  ApplePaySessionResponse.JSON_PROPERTY_SECRETS,
-  ApplePaySessionResponse.JSON_PROPERTY_EPOCH_TIMESTAMP,
-  ApplePaySessionResponse.JSON_PROPERTY_EXPIRES_AT,
-  ApplePaySessionResponse.JSON_PROPERTY_MERCHANT_SESSION_IDENTIFIER,
-  ApplePaySessionResponse.JSON_PROPERTY_NONCE,
-  ApplePaySessionResponse.JSON_PROPERTY_MERCHANT_IDENTIFIER,
-  ApplePaySessionResponse.JSON_PROPERTY_DOMAIN_NAME,
-  ApplePaySessionResponse.JSON_PROPERTY_DISPLAY_NAME,
-  ApplePaySessionResponse.JSON_PROPERTY_SIGNATURE,
-  ApplePaySessionResponse.JSON_PROPERTY_OPERATIONAL_ANALYTICS_IDENTIFIER,
-  ApplePaySessionResponse.JSON_PROPERTY_RETRIES,
-  ApplePaySessionResponse.JSON_PROPERTY_PSP_ID
-})
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+* ApplePaySessionResponse
+*/
+    @JsonPropertyOrder({
+        ApplePaySessionResponse.JSON_PROPERTY_SECRETS,
+        ApplePaySessionResponse.JSON_PROPERTY_EPOCH_TIMESTAMP,
+        ApplePaySessionResponse.JSON_PROPERTY_EXPIRES_AT,
+        ApplePaySessionResponse.JSON_PROPERTY_MERCHANT_SESSION_IDENTIFIER,
+        ApplePaySessionResponse.JSON_PROPERTY_NONCE,
+        ApplePaySessionResponse.JSON_PROPERTY_MERCHANT_IDENTIFIER,
+        ApplePaySessionResponse.JSON_PROPERTY_DOMAIN_NAME,
+        ApplePaySessionResponse.JSON_PROPERTY_DISPLAY_NAME,
+        ApplePaySessionResponse.JSON_PROPERTY_SIGNATURE,
+        ApplePaySessionResponse.JSON_PROPERTY_OPERATIONAL_ANALYTICS_IDENTIFIER,
+        ApplePaySessionResponse.JSON_PROPERTY_RETRIES,
+        ApplePaySessionResponse.JSON_PROPERTY_PSP_ID
+    })
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class ApplePaySessionResponse {
-  public static final String JSON_PROPERTY_SECRETS = "secrets";
-  private SecretInfoToInitiateSdk secrets;
+        public static final String JSON_PROPERTY_SECRETS = "secrets";
+    @javax.annotation.Nonnull
+            private SecretInfoToInitiateSdk secrets;
 
-  public static final String JSON_PROPERTY_EPOCH_TIMESTAMP = "epoch_timestamp";
-  private Long epochTimestamp;
+        public static final String JSON_PROPERTY_EPOCH_TIMESTAMP = "epoch_timestamp";
+    @javax.annotation.Nonnull
+            private Long epochTimestamp;
 
-  public static final String JSON_PROPERTY_EXPIRES_AT = "expires_at";
-  private Long expiresAt;
+        public static final String JSON_PROPERTY_EXPIRES_AT = "expires_at";
+    @javax.annotation.Nonnull
+            private Long expiresAt;
 
-  public static final String JSON_PROPERTY_MERCHANT_SESSION_IDENTIFIER = "merchant_session_identifier";
-  private String merchantSessionIdentifier;
+        public static final String JSON_PROPERTY_MERCHANT_SESSION_IDENTIFIER = "merchant_session_identifier";
+    @javax.annotation.Nonnull
+            private String merchantSessionIdentifier;
 
-  public static final String JSON_PROPERTY_NONCE = "nonce";
-  private String nonce;
+        public static final String JSON_PROPERTY_NONCE = "nonce";
+    @javax.annotation.Nonnull
+            private String nonce;
 
-  public static final String JSON_PROPERTY_MERCHANT_IDENTIFIER = "merchant_identifier";
-  private String merchantIdentifier;
+        public static final String JSON_PROPERTY_MERCHANT_IDENTIFIER = "merchant_identifier";
+    @javax.annotation.Nonnull
+            private String merchantIdentifier;
 
-  public static final String JSON_PROPERTY_DOMAIN_NAME = "domain_name";
-  private String domainName;
+        public static final String JSON_PROPERTY_DOMAIN_NAME = "domain_name";
+    @javax.annotation.Nonnull
+            private String domainName;
 
-  public static final String JSON_PROPERTY_DISPLAY_NAME = "display_name";
-  private String displayName;
+        public static final String JSON_PROPERTY_DISPLAY_NAME = "display_name";
+    @javax.annotation.Nonnull
+            private String displayName;
 
-  public static final String JSON_PROPERTY_SIGNATURE = "signature";
-  private String signature;
+        public static final String JSON_PROPERTY_SIGNATURE = "signature";
+    @javax.annotation.Nonnull
+            private String signature;
 
-  public static final String JSON_PROPERTY_OPERATIONAL_ANALYTICS_IDENTIFIER = "operational_analytics_identifier";
-  private String operationalAnalyticsIdentifier;
+        public static final String JSON_PROPERTY_OPERATIONAL_ANALYTICS_IDENTIFIER = "operational_analytics_identifier";
+    @javax.annotation.Nonnull
+            private String operationalAnalyticsIdentifier;
 
-  public static final String JSON_PROPERTY_RETRIES = "retries";
-  private Integer retries;
+        public static final String JSON_PROPERTY_RETRIES = "retries";
+    @javax.annotation.Nonnull
+            private Integer retries;
 
-  public static final String JSON_PROPERTY_PSP_ID = "psp_id";
-  private String pspId;
+        public static final String JSON_PROPERTY_PSP_ID = "psp_id";
+    @javax.annotation.Nonnull
+            private String pspId;
 
-  public ApplePaySessionResponse() {
-  }
+public ApplePaySessionResponse() {
+}
 
-  public ApplePaySessionResponse secrets(SecretInfoToInitiateSdk secrets) {
-    
-    this.secrets = secrets;
-    return this;
-  }
+        public ApplePaySessionResponse secrets(@javax.annotation.Nonnull SecretInfoToInitiateSdk secrets) {
+        
+        this.secrets = secrets;
+        return this;
+        }
 
-   /**
-   * Get secrets
-   * @return secrets
-  **/
-  @javax.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_SECRETS)
+    /**
+        * Get secrets
+    * @return secrets
+    */
+    @javax.annotation.Nonnull
+      @JsonProperty(JSON_PROPERTY_SECRETS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-  public SecretInfoToInitiateSdk getSecrets() {
-    return secrets;
-  }
+    public SecretInfoToInitiateSdk getSecrets() {
+        return secrets;
+    }
 
 
-  @JsonProperty(JSON_PROPERTY_SECRETS)
+          @JsonProperty(JSON_PROPERTY_SECRETS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setSecrets(SecretInfoToInitiateSdk secrets) {
-    this.secrets = secrets;
-  }
+  public void setSecrets(@javax.annotation.Nonnull SecretInfoToInitiateSdk secrets) {
+            this.secrets = secrets;
+        }
 
+        public ApplePaySessionResponse epochTimestamp(@javax.annotation.Nonnull Long epochTimestamp) {
+        
+        this.epochTimestamp = epochTimestamp;
+        return this;
+        }
 
-  public ApplePaySessionResponse epochTimestamp(Long epochTimestamp) {
-    
-    this.epochTimestamp = epochTimestamp;
-    return this;
-  }
-
-   /**
-   * Timestamp at which session is requested
-   * minimum: 0
-   * @return epochTimestamp
-  **/
-  @javax.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_EPOCH_TIMESTAMP)
-  @JsonInclude(value = JsonInclude.Include.ALWAYS)
-
-  public Long getEpochTimestamp() {
-    return epochTimestamp;
-  }
-
-
-  @JsonProperty(JSON_PROPERTY_EPOCH_TIMESTAMP)
-  @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setEpochTimestamp(Long epochTimestamp) {
-    this.epochTimestamp = epochTimestamp;
-  }
-
-
-  public ApplePaySessionResponse expiresAt(Long expiresAt) {
-    
-    this.expiresAt = expiresAt;
-    return this;
-  }
-
-   /**
-   * Timestamp at which session expires
-   * minimum: 0
-   * @return expiresAt
-  **/
-  @javax.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_EXPIRES_AT)
+    /**
+        * Timestamp at which session is requested
+        * minimum: 0
+    * @return epochTimestamp
+    */
+    @javax.annotation.Nonnull
+      @JsonProperty(JSON_PROPERTY_EPOCH_TIMESTAMP)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-  public Long getExpiresAt() {
-    return expiresAt;
-  }
+    public Long getEpochTimestamp() {
+        return epochTimestamp;
+    }
 
 
-  @JsonProperty(JSON_PROPERTY_EXPIRES_AT)
+          @JsonProperty(JSON_PROPERTY_EPOCH_TIMESTAMP)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setExpiresAt(Long expiresAt) {
-    this.expiresAt = expiresAt;
-  }
+  public void setEpochTimestamp(@javax.annotation.Nonnull Long epochTimestamp) {
+            this.epochTimestamp = epochTimestamp;
+        }
 
+        public ApplePaySessionResponse expiresAt(@javax.annotation.Nonnull Long expiresAt) {
+        
+        this.expiresAt = expiresAt;
+        return this;
+        }
 
-  public ApplePaySessionResponse merchantSessionIdentifier(String merchantSessionIdentifier) {
-    
-    this.merchantSessionIdentifier = merchantSessionIdentifier;
-    return this;
-  }
-
-   /**
-   * The identifier for the merchant session
-   * @return merchantSessionIdentifier
-  **/
-  @javax.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_MERCHANT_SESSION_IDENTIFIER)
-  @JsonInclude(value = JsonInclude.Include.ALWAYS)
-
-  public String getMerchantSessionIdentifier() {
-    return merchantSessionIdentifier;
-  }
-
-
-  @JsonProperty(JSON_PROPERTY_MERCHANT_SESSION_IDENTIFIER)
-  @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setMerchantSessionIdentifier(String merchantSessionIdentifier) {
-    this.merchantSessionIdentifier = merchantSessionIdentifier;
-  }
-
-
-  public ApplePaySessionResponse nonce(String nonce) {
-    
-    this.nonce = nonce;
-    return this;
-  }
-
-   /**
-   * Apple pay generated unique ID (UUID) value
-   * @return nonce
-  **/
-  @javax.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_NONCE)
+    /**
+        * Timestamp at which session expires
+        * minimum: 0
+    * @return expiresAt
+    */
+    @javax.annotation.Nonnull
+      @JsonProperty(JSON_PROPERTY_EXPIRES_AT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-  public String getNonce() {
-    return nonce;
-  }
+    public Long getExpiresAt() {
+        return expiresAt;
+    }
 
 
-  @JsonProperty(JSON_PROPERTY_NONCE)
+          @JsonProperty(JSON_PROPERTY_EXPIRES_AT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setNonce(String nonce) {
-    this.nonce = nonce;
-  }
+  public void setExpiresAt(@javax.annotation.Nonnull Long expiresAt) {
+            this.expiresAt = expiresAt;
+        }
 
+        public ApplePaySessionResponse merchantSessionIdentifier(@javax.annotation.Nonnull String merchantSessionIdentifier) {
+        
+        this.merchantSessionIdentifier = merchantSessionIdentifier;
+        return this;
+        }
 
-  public ApplePaySessionResponse merchantIdentifier(String merchantIdentifier) {
-    
-    this.merchantIdentifier = merchantIdentifier;
-    return this;
-  }
-
-   /**
-   * The identifier for the merchant
-   * @return merchantIdentifier
-  **/
-  @javax.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_MERCHANT_IDENTIFIER)
-  @JsonInclude(value = JsonInclude.Include.ALWAYS)
-
-  public String getMerchantIdentifier() {
-    return merchantIdentifier;
-  }
-
-
-  @JsonProperty(JSON_PROPERTY_MERCHANT_IDENTIFIER)
-  @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setMerchantIdentifier(String merchantIdentifier) {
-    this.merchantIdentifier = merchantIdentifier;
-  }
-
-
-  public ApplePaySessionResponse domainName(String domainName) {
-    
-    this.domainName = domainName;
-    return this;
-  }
-
-   /**
-   * The domain name of the merchant which is registered in Apple Pay
-   * @return domainName
-  **/
-  @javax.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_DOMAIN_NAME)
+    /**
+        * The identifier for the merchant session
+    * @return merchantSessionIdentifier
+    */
+    @javax.annotation.Nonnull
+      @JsonProperty(JSON_PROPERTY_MERCHANT_SESSION_IDENTIFIER)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-  public String getDomainName() {
-    return domainName;
-  }
+    public String getMerchantSessionIdentifier() {
+        return merchantSessionIdentifier;
+    }
 
 
-  @JsonProperty(JSON_PROPERTY_DOMAIN_NAME)
+          @JsonProperty(JSON_PROPERTY_MERCHANT_SESSION_IDENTIFIER)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setDomainName(String domainName) {
-    this.domainName = domainName;
-  }
+  public void setMerchantSessionIdentifier(@javax.annotation.Nonnull String merchantSessionIdentifier) {
+            this.merchantSessionIdentifier = merchantSessionIdentifier;
+        }
 
+        public ApplePaySessionResponse nonce(@javax.annotation.Nonnull String nonce) {
+        
+        this.nonce = nonce;
+        return this;
+        }
 
-  public ApplePaySessionResponse displayName(String displayName) {
-    
-    this.displayName = displayName;
-    return this;
-  }
-
-   /**
-   * The name to be displayed on Apple Pay button
-   * @return displayName
-  **/
-  @javax.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_DISPLAY_NAME)
-  @JsonInclude(value = JsonInclude.Include.ALWAYS)
-
-  public String getDisplayName() {
-    return displayName;
-  }
-
-
-  @JsonProperty(JSON_PROPERTY_DISPLAY_NAME)
-  @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setDisplayName(String displayName) {
-    this.displayName = displayName;
-  }
-
-
-  public ApplePaySessionResponse signature(String signature) {
-    
-    this.signature = signature;
-    return this;
-  }
-
-   /**
-   * A string which represents the properties of a payment
-   * @return signature
-  **/
-  @javax.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_SIGNATURE)
+    /**
+        * Apple pay generated unique ID (UUID) value
+    * @return nonce
+    */
+    @javax.annotation.Nonnull
+      @JsonProperty(JSON_PROPERTY_NONCE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-  public String getSignature() {
-    return signature;
-  }
+    public String getNonce() {
+        return nonce;
+    }
 
 
-  @JsonProperty(JSON_PROPERTY_SIGNATURE)
+          @JsonProperty(JSON_PROPERTY_NONCE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setSignature(String signature) {
-    this.signature = signature;
-  }
+  public void setNonce(@javax.annotation.Nonnull String nonce) {
+            this.nonce = nonce;
+        }
 
+        public ApplePaySessionResponse merchantIdentifier(@javax.annotation.Nonnull String merchantIdentifier) {
+        
+        this.merchantIdentifier = merchantIdentifier;
+        return this;
+        }
 
-  public ApplePaySessionResponse operationalAnalyticsIdentifier(String operationalAnalyticsIdentifier) {
-    
-    this.operationalAnalyticsIdentifier = operationalAnalyticsIdentifier;
-    return this;
-  }
-
-   /**
-   * The identifier for the operational analytics
-   * @return operationalAnalyticsIdentifier
-  **/
-  @javax.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_OPERATIONAL_ANALYTICS_IDENTIFIER)
-  @JsonInclude(value = JsonInclude.Include.ALWAYS)
-
-  public String getOperationalAnalyticsIdentifier() {
-    return operationalAnalyticsIdentifier;
-  }
-
-
-  @JsonProperty(JSON_PROPERTY_OPERATIONAL_ANALYTICS_IDENTIFIER)
-  @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setOperationalAnalyticsIdentifier(String operationalAnalyticsIdentifier) {
-    this.operationalAnalyticsIdentifier = operationalAnalyticsIdentifier;
-  }
-
-
-  public ApplePaySessionResponse retries(Integer retries) {
-    
-    this.retries = retries;
-    return this;
-  }
-
-   /**
-   * The number of retries to get the session response
-   * minimum: 0
-   * @return retries
-  **/
-  @javax.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_RETRIES)
+    /**
+        * The identifier for the merchant
+    * @return merchantIdentifier
+    */
+    @javax.annotation.Nonnull
+      @JsonProperty(JSON_PROPERTY_MERCHANT_IDENTIFIER)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-  public Integer getRetries() {
-    return retries;
-  }
+    public String getMerchantIdentifier() {
+        return merchantIdentifier;
+    }
 
 
-  @JsonProperty(JSON_PROPERTY_RETRIES)
+          @JsonProperty(JSON_PROPERTY_MERCHANT_IDENTIFIER)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setRetries(Integer retries) {
-    this.retries = retries;
-  }
+  public void setMerchantIdentifier(@javax.annotation.Nonnull String merchantIdentifier) {
+            this.merchantIdentifier = merchantIdentifier;
+        }
 
+        public ApplePaySessionResponse domainName(@javax.annotation.Nonnull String domainName) {
+        
+        this.domainName = domainName;
+        return this;
+        }
 
-  public ApplePaySessionResponse pspId(String pspId) {
-    
-    this.pspId = pspId;
-    return this;
-  }
-
-   /**
-   * The identifier for the connector transaction
-   * @return pspId
-  **/
-  @javax.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_PSP_ID)
+    /**
+        * The domain name of the merchant which is registered in Apple Pay
+    * @return domainName
+    */
+    @javax.annotation.Nonnull
+      @JsonProperty(JSON_PROPERTY_DOMAIN_NAME)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-  public String getPspId() {
-    return pspId;
-  }
+    public String getDomainName() {
+        return domainName;
+    }
 
 
-  @JsonProperty(JSON_PROPERTY_PSP_ID)
+          @JsonProperty(JSON_PROPERTY_DOMAIN_NAME)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setPspId(String pspId) {
-    this.pspId = pspId;
-  }
+  public void setDomainName(@javax.annotation.Nonnull String domainName) {
+            this.domainName = domainName;
+        }
 
-  @Override
-  public boolean equals(Object o) {
+        public ApplePaySessionResponse displayName(@javax.annotation.Nonnull String displayName) {
+        
+        this.displayName = displayName;
+        return this;
+        }
+
+    /**
+        * The name to be displayed on Apple Pay button
+    * @return displayName
+    */
+    @javax.annotation.Nonnull
+      @JsonProperty(JSON_PROPERTY_DISPLAY_NAME)
+  @JsonInclude(value = JsonInclude.Include.ALWAYS)
+
+    public String getDisplayName() {
+        return displayName;
+    }
+
+
+          @JsonProperty(JSON_PROPERTY_DISPLAY_NAME)
+  @JsonInclude(value = JsonInclude.Include.ALWAYS)
+  public void setDisplayName(@javax.annotation.Nonnull String displayName) {
+            this.displayName = displayName;
+        }
+
+        public ApplePaySessionResponse signature(@javax.annotation.Nonnull String signature) {
+        
+        this.signature = signature;
+        return this;
+        }
+
+    /**
+        * A string which represents the properties of a payment
+    * @return signature
+    */
+    @javax.annotation.Nonnull
+      @JsonProperty(JSON_PROPERTY_SIGNATURE)
+  @JsonInclude(value = JsonInclude.Include.ALWAYS)
+
+    public String getSignature() {
+        return signature;
+    }
+
+
+          @JsonProperty(JSON_PROPERTY_SIGNATURE)
+  @JsonInclude(value = JsonInclude.Include.ALWAYS)
+  public void setSignature(@javax.annotation.Nonnull String signature) {
+            this.signature = signature;
+        }
+
+        public ApplePaySessionResponse operationalAnalyticsIdentifier(@javax.annotation.Nonnull String operationalAnalyticsIdentifier) {
+        
+        this.operationalAnalyticsIdentifier = operationalAnalyticsIdentifier;
+        return this;
+        }
+
+    /**
+        * The identifier for the operational analytics
+    * @return operationalAnalyticsIdentifier
+    */
+    @javax.annotation.Nonnull
+      @JsonProperty(JSON_PROPERTY_OPERATIONAL_ANALYTICS_IDENTIFIER)
+  @JsonInclude(value = JsonInclude.Include.ALWAYS)
+
+    public String getOperationalAnalyticsIdentifier() {
+        return operationalAnalyticsIdentifier;
+    }
+
+
+          @JsonProperty(JSON_PROPERTY_OPERATIONAL_ANALYTICS_IDENTIFIER)
+  @JsonInclude(value = JsonInclude.Include.ALWAYS)
+  public void setOperationalAnalyticsIdentifier(@javax.annotation.Nonnull String operationalAnalyticsIdentifier) {
+            this.operationalAnalyticsIdentifier = operationalAnalyticsIdentifier;
+        }
+
+        public ApplePaySessionResponse retries(@javax.annotation.Nonnull Integer retries) {
+        
+        this.retries = retries;
+        return this;
+        }
+
+    /**
+        * The number of retries to get the session response
+        * minimum: 0
+    * @return retries
+    */
+    @javax.annotation.Nonnull
+      @JsonProperty(JSON_PROPERTY_RETRIES)
+  @JsonInclude(value = JsonInclude.Include.ALWAYS)
+
+    public Integer getRetries() {
+        return retries;
+    }
+
+
+          @JsonProperty(JSON_PROPERTY_RETRIES)
+  @JsonInclude(value = JsonInclude.Include.ALWAYS)
+  public void setRetries(@javax.annotation.Nonnull Integer retries) {
+            this.retries = retries;
+        }
+
+        public ApplePaySessionResponse pspId(@javax.annotation.Nonnull String pspId) {
+        
+        this.pspId = pspId;
+        return this;
+        }
+
+    /**
+        * The identifier for the connector transaction
+    * @return pspId
+    */
+    @javax.annotation.Nonnull
+      @JsonProperty(JSON_PROPERTY_PSP_ID)
+  @JsonInclude(value = JsonInclude.Include.ALWAYS)
+
+    public String getPspId() {
+        return pspId;
+    }
+
+
+          @JsonProperty(JSON_PROPERTY_PSP_ID)
+  @JsonInclude(value = JsonInclude.Include.ALWAYS)
+  public void setPspId(@javax.annotation.Nonnull String pspId) {
+            this.pspId = pspId;
+        }
+
+@Override
+public boolean equals(Object o) {
     if (this == o) {
-      return true;
+    return true;
     }
     if (o == null || getClass() != o.getClass()) {
-      return false;
+    return false;
     }
-    ApplePaySessionResponse applePaySessionResponse = (ApplePaySessionResponse) o;
-    return Objects.equals(this.secrets, applePaySessionResponse.secrets) &&
+        ApplePaySessionResponse applePaySessionResponse = (ApplePaySessionResponse) o;
+        return Objects.equals(this.secrets, applePaySessionResponse.secrets) &&
         Objects.equals(this.epochTimestamp, applePaySessionResponse.epochTimestamp) &&
         Objects.equals(this.expiresAt, applePaySessionResponse.expiresAt) &&
         Objects.equals(this.merchantSessionIdentifier, applePaySessionResponse.merchantSessionIdentifier) &&
@@ -422,193 +423,193 @@ public class ApplePaySessionResponse {
         Objects.equals(this.operationalAnalyticsIdentifier, applePaySessionResponse.operationalAnalyticsIdentifier) &&
         Objects.equals(this.retries, applePaySessionResponse.retries) &&
         Objects.equals(this.pspId, applePaySessionResponse.pspId);
-  }
+}
 
-  @Override
-  public int hashCode() {
-    return Objects.hash(secrets, epochTimestamp, expiresAt, merchantSessionIdentifier, nonce, merchantIdentifier, domainName, displayName, signature, operationalAnalyticsIdentifier, retries, pspId);
-  }
+    @Override
+    public int hashCode() {
+        return Objects.hash(secrets, epochTimestamp, expiresAt, merchantSessionIdentifier, nonce, merchantIdentifier, domainName, displayName, signature, operationalAnalyticsIdentifier, retries, pspId);
+    }
 
-  @Override
-  public String toString() {
+    @Override
+    public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class ApplePaySessionResponse {\n");
-    sb.append("    secrets: ").append(toIndentedString(secrets)).append("\n");
-    sb.append("    epochTimestamp: ").append(toIndentedString(epochTimestamp)).append("\n");
-    sb.append("    expiresAt: ").append(toIndentedString(expiresAt)).append("\n");
-    sb.append("    merchantSessionIdentifier: ").append(toIndentedString(merchantSessionIdentifier)).append("\n");
-    sb.append("    nonce: ").append(toIndentedString(nonce)).append("\n");
-    sb.append("    merchantIdentifier: ").append(toIndentedString(merchantIdentifier)).append("\n");
-    sb.append("    domainName: ").append(toIndentedString(domainName)).append("\n");
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    signature: ").append(toIndentedString(signature)).append("\n");
-    sb.append("    operationalAnalyticsIdentifier: ").append(toIndentedString(operationalAnalyticsIdentifier)).append("\n");
-    sb.append("    retries: ").append(toIndentedString(retries)).append("\n");
-    sb.append("    pspId: ").append(toIndentedString(pspId)).append("\n");
+        sb.append("    secrets: ").append(toIndentedString(secrets)).append("\n");
+        sb.append("    epochTimestamp: ").append(toIndentedString(epochTimestamp)).append("\n");
+        sb.append("    expiresAt: ").append(toIndentedString(expiresAt)).append("\n");
+        sb.append("    merchantSessionIdentifier: ").append(toIndentedString(merchantSessionIdentifier)).append("\n");
+        sb.append("    nonce: ").append(toIndentedString(nonce)).append("\n");
+        sb.append("    merchantIdentifier: ").append(toIndentedString(merchantIdentifier)).append("\n");
+        sb.append("    domainName: ").append(toIndentedString(domainName)).append("\n");
+        sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
+        sb.append("    signature: ").append(toIndentedString(signature)).append("\n");
+        sb.append("    operationalAnalyticsIdentifier: ").append(toIndentedString(operationalAnalyticsIdentifier)).append("\n");
+        sb.append("    retries: ").append(toIndentedString(retries)).append("\n");
+        sb.append("    pspId: ").append(toIndentedString(pspId)).append("\n");
     sb.append("}");
     return sb.toString();
-  }
+    }
 
-  /**
-   * Convert the given object to string with each line indented by 4 spaces
-   * (except the first line).
-   */
-  private String toIndentedString(Object o) {
+    /**
+    * Convert the given object to string with each line indented by 4 spaces
+    * (except the first line).
+    */
+    private String toIndentedString(Object o) {
     if (o == null) {
-      return "null";
+    return "null";
     }
     return o.toString().replace("\n", "\n    ");
-  }
-
-  /**
-   * Convert the instance into URL query string.
-   *
-   * @return URL query string
-   */
-  public String toUrlQueryString() {
-    return toUrlQueryString(null);
-  }
-
-  /**
-   * Convert the instance into URL query string.
-   *
-   * @param prefix prefix of the query string
-   * @return URL query string
-   */
-  public String toUrlQueryString(String prefix) {
-    String suffix = "";
-    String containerSuffix = "";
-    String containerPrefix = "";
-    if (prefix == null) {
-      // style=form, explode=true, e.g. /pet?name=cat&type=manx
-      prefix = "";
-    } else {
-      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
-      prefix = prefix + "[";
-      suffix = "]";
-      containerSuffix = "]";
-      containerPrefix = "[";
     }
 
-    StringJoiner joiner = new StringJoiner("&");
+        /**
+        * Convert the instance into URL query string.
+        *
+        * @return URL query string
+        */
+        public String toUrlQueryString() {
+        return toUrlQueryString(null);
+        }
 
-    // add `secrets` to the URL query string
-    if (getSecrets() != null) {
-      joiner.add(getSecrets().toUrlQueryString(prefix + "secrets" + suffix));
+        /**
+        * Convert the instance into URL query string.
+        *
+        * @param prefix prefix of the query string
+        * @return URL query string
+        */
+        public String toUrlQueryString(String prefix) {
+        String suffix = "";
+        String containerSuffix = "";
+        String containerPrefix = "";
+        if (prefix == null) {
+        // style=form, explode=true, e.g. /pet?name=cat&type=manx
+        prefix = "";
+        } else {
+        // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+        prefix = prefix + "[";
+        suffix = "]";
+        containerSuffix = "]";
+        containerPrefix = "[";
+        }
+
+        StringJoiner joiner = new StringJoiner("&");
+
+            // add `secrets` to the URL query string
+                            if (getSecrets() != null) {
+                            joiner.add(getSecrets().toUrlQueryString(prefix + "secrets" + suffix));
+                            }
+
+            // add `epoch_timestamp` to the URL query string
+                        if (getEpochTimestamp() != null) {
+                        try {
+                        joiner.add(String.format("%sepoch_timestamp%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getEpochTimestamp()), "UTF-8").replaceAll("\\+", "%20")));
+                        } catch (UnsupportedEncodingException e) {
+                        // Should never happen, UTF-8 is always supported
+                        throw new RuntimeException(e);
+                        }
+                        }
+
+            // add `expires_at` to the URL query string
+                        if (getExpiresAt() != null) {
+                        try {
+                        joiner.add(String.format("%sexpires_at%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getExpiresAt()), "UTF-8").replaceAll("\\+", "%20")));
+                        } catch (UnsupportedEncodingException e) {
+                        // Should never happen, UTF-8 is always supported
+                        throw new RuntimeException(e);
+                        }
+                        }
+
+            // add `merchant_session_identifier` to the URL query string
+                        if (getMerchantSessionIdentifier() != null) {
+                        try {
+                        joiner.add(String.format("%smerchant_session_identifier%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getMerchantSessionIdentifier()), "UTF-8").replaceAll("\\+", "%20")));
+                        } catch (UnsupportedEncodingException e) {
+                        // Should never happen, UTF-8 is always supported
+                        throw new RuntimeException(e);
+                        }
+                        }
+
+            // add `nonce` to the URL query string
+                        if (getNonce() != null) {
+                        try {
+                        joiner.add(String.format("%snonce%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getNonce()), "UTF-8").replaceAll("\\+", "%20")));
+                        } catch (UnsupportedEncodingException e) {
+                        // Should never happen, UTF-8 is always supported
+                        throw new RuntimeException(e);
+                        }
+                        }
+
+            // add `merchant_identifier` to the URL query string
+                        if (getMerchantIdentifier() != null) {
+                        try {
+                        joiner.add(String.format("%smerchant_identifier%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getMerchantIdentifier()), "UTF-8").replaceAll("\\+", "%20")));
+                        } catch (UnsupportedEncodingException e) {
+                        // Should never happen, UTF-8 is always supported
+                        throw new RuntimeException(e);
+                        }
+                        }
+
+            // add `domain_name` to the URL query string
+                        if (getDomainName() != null) {
+                        try {
+                        joiner.add(String.format("%sdomain_name%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getDomainName()), "UTF-8").replaceAll("\\+", "%20")));
+                        } catch (UnsupportedEncodingException e) {
+                        // Should never happen, UTF-8 is always supported
+                        throw new RuntimeException(e);
+                        }
+                        }
+
+            // add `display_name` to the URL query string
+                        if (getDisplayName() != null) {
+                        try {
+                        joiner.add(String.format("%sdisplay_name%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getDisplayName()), "UTF-8").replaceAll("\\+", "%20")));
+                        } catch (UnsupportedEncodingException e) {
+                        // Should never happen, UTF-8 is always supported
+                        throw new RuntimeException(e);
+                        }
+                        }
+
+            // add `signature` to the URL query string
+                        if (getSignature() != null) {
+                        try {
+                        joiner.add(String.format("%ssignature%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getSignature()), "UTF-8").replaceAll("\\+", "%20")));
+                        } catch (UnsupportedEncodingException e) {
+                        // Should never happen, UTF-8 is always supported
+                        throw new RuntimeException(e);
+                        }
+                        }
+
+            // add `operational_analytics_identifier` to the URL query string
+                        if (getOperationalAnalyticsIdentifier() != null) {
+                        try {
+                        joiner.add(String.format("%soperational_analytics_identifier%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getOperationalAnalyticsIdentifier()), "UTF-8").replaceAll("\\+", "%20")));
+                        } catch (UnsupportedEncodingException e) {
+                        // Should never happen, UTF-8 is always supported
+                        throw new RuntimeException(e);
+                        }
+                        }
+
+            // add `retries` to the URL query string
+                        if (getRetries() != null) {
+                        try {
+                        joiner.add(String.format("%sretries%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getRetries()), "UTF-8").replaceAll("\\+", "%20")));
+                        } catch (UnsupportedEncodingException e) {
+                        // Should never happen, UTF-8 is always supported
+                        throw new RuntimeException(e);
+                        }
+                        }
+
+            // add `psp_id` to the URL query string
+                        if (getPspId() != null) {
+                        try {
+                        joiner.add(String.format("%spsp_id%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getPspId()), "UTF-8").replaceAll("\\+", "%20")));
+                        } catch (UnsupportedEncodingException e) {
+                        // Should never happen, UTF-8 is always supported
+                        throw new RuntimeException(e);
+                        }
+                        }
+
+        return joiner.toString();
+        }
+
     }
-
-    // add `epoch_timestamp` to the URL query string
-    if (getEpochTimestamp() != null) {
-      try {
-        joiner.add(String.format("%sepoch_timestamp%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getEpochTimestamp()), "UTF-8").replaceAll("\\+", "%20")));
-      } catch (UnsupportedEncodingException e) {
-        // Should never happen, UTF-8 is always supported
-        throw new RuntimeException(e);
-      }
-    }
-
-    // add `expires_at` to the URL query string
-    if (getExpiresAt() != null) {
-      try {
-        joiner.add(String.format("%sexpires_at%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getExpiresAt()), "UTF-8").replaceAll("\\+", "%20")));
-      } catch (UnsupportedEncodingException e) {
-        // Should never happen, UTF-8 is always supported
-        throw new RuntimeException(e);
-      }
-    }
-
-    // add `merchant_session_identifier` to the URL query string
-    if (getMerchantSessionIdentifier() != null) {
-      try {
-        joiner.add(String.format("%smerchant_session_identifier%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getMerchantSessionIdentifier()), "UTF-8").replaceAll("\\+", "%20")));
-      } catch (UnsupportedEncodingException e) {
-        // Should never happen, UTF-8 is always supported
-        throw new RuntimeException(e);
-      }
-    }
-
-    // add `nonce` to the URL query string
-    if (getNonce() != null) {
-      try {
-        joiner.add(String.format("%snonce%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getNonce()), "UTF-8").replaceAll("\\+", "%20")));
-      } catch (UnsupportedEncodingException e) {
-        // Should never happen, UTF-8 is always supported
-        throw new RuntimeException(e);
-      }
-    }
-
-    // add `merchant_identifier` to the URL query string
-    if (getMerchantIdentifier() != null) {
-      try {
-        joiner.add(String.format("%smerchant_identifier%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getMerchantIdentifier()), "UTF-8").replaceAll("\\+", "%20")));
-      } catch (UnsupportedEncodingException e) {
-        // Should never happen, UTF-8 is always supported
-        throw new RuntimeException(e);
-      }
-    }
-
-    // add `domain_name` to the URL query string
-    if (getDomainName() != null) {
-      try {
-        joiner.add(String.format("%sdomain_name%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getDomainName()), "UTF-8").replaceAll("\\+", "%20")));
-      } catch (UnsupportedEncodingException e) {
-        // Should never happen, UTF-8 is always supported
-        throw new RuntimeException(e);
-      }
-    }
-
-    // add `display_name` to the URL query string
-    if (getDisplayName() != null) {
-      try {
-        joiner.add(String.format("%sdisplay_name%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getDisplayName()), "UTF-8").replaceAll("\\+", "%20")));
-      } catch (UnsupportedEncodingException e) {
-        // Should never happen, UTF-8 is always supported
-        throw new RuntimeException(e);
-      }
-    }
-
-    // add `signature` to the URL query string
-    if (getSignature() != null) {
-      try {
-        joiner.add(String.format("%ssignature%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getSignature()), "UTF-8").replaceAll("\\+", "%20")));
-      } catch (UnsupportedEncodingException e) {
-        // Should never happen, UTF-8 is always supported
-        throw new RuntimeException(e);
-      }
-    }
-
-    // add `operational_analytics_identifier` to the URL query string
-    if (getOperationalAnalyticsIdentifier() != null) {
-      try {
-        joiner.add(String.format("%soperational_analytics_identifier%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getOperationalAnalyticsIdentifier()), "UTF-8").replaceAll("\\+", "%20")));
-      } catch (UnsupportedEncodingException e) {
-        // Should never happen, UTF-8 is always supported
-        throw new RuntimeException(e);
-      }
-    }
-
-    // add `retries` to the URL query string
-    if (getRetries() != null) {
-      try {
-        joiner.add(String.format("%sretries%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getRetries()), "UTF-8").replaceAll("\\+", "%20")));
-      } catch (UnsupportedEncodingException e) {
-        // Should never happen, UTF-8 is always supported
-        throw new RuntimeException(e);
-      }
-    }
-
-    // add `psp_id` to the URL query string
-    if (getPspId() != null) {
-      try {
-        joiner.add(String.format("%spsp_id%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getPspId()), "UTF-8").replaceAll("\\+", "%20")));
-      } catch (UnsupportedEncodingException e) {
-        // Should never happen, UTF-8 is always supported
-        throw new RuntimeException(e);
-      }
-    }
-
-    return joiner.toString();
-  }
-
-}
 

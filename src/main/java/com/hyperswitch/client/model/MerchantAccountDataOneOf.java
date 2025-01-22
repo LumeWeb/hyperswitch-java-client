@@ -28,121 +28,122 @@ import java.net.URLEncoder;
 import java.util.StringJoiner;
 
 /**
- * MerchantAccountDataOneOf
- */
-@JsonPropertyOrder({
-  MerchantAccountDataOneOf.JSON_PROPERTY_IBAN
-})
-@JsonTypeName("MerchantAccountData_oneOf")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+* MerchantAccountDataOneOf
+*/
+    @JsonPropertyOrder({
+        MerchantAccountDataOneOf.JSON_PROPERTY_IBAN
+    })
+            @JsonTypeName("MerchantAccountData_oneOf")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class MerchantAccountDataOneOf {
-  public static final String JSON_PROPERTY_IBAN = "iban";
-  private MerchantAccountDataOneOfIban iban;
+        public static final String JSON_PROPERTY_IBAN = "iban";
+    @javax.annotation.Nonnull
+            private MerchantAccountDataOneOfIban iban;
 
-  public MerchantAccountDataOneOf() {
-  }
+public MerchantAccountDataOneOf() {
+}
 
-  public MerchantAccountDataOneOf iban(MerchantAccountDataOneOfIban iban) {
-    
-    this.iban = iban;
-    return this;
-  }
+        public MerchantAccountDataOneOf iban(@javax.annotation.Nonnull MerchantAccountDataOneOfIban iban) {
+        
+        this.iban = iban;
+        return this;
+        }
 
-   /**
-   * Get iban
-   * @return iban
-  **/
-  @javax.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_IBAN)
+    /**
+        * Get iban
+    * @return iban
+    */
+    @javax.annotation.Nonnull
+      @JsonProperty(JSON_PROPERTY_IBAN)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-  public MerchantAccountDataOneOfIban getIban() {
-    return iban;
-  }
+    public MerchantAccountDataOneOfIban getIban() {
+        return iban;
+    }
 
 
-  @JsonProperty(JSON_PROPERTY_IBAN)
+          @JsonProperty(JSON_PROPERTY_IBAN)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setIban(MerchantAccountDataOneOfIban iban) {
-    this.iban = iban;
-  }
+  public void setIban(@javax.annotation.Nonnull MerchantAccountDataOneOfIban iban) {
+            this.iban = iban;
+        }
 
-  @Override
-  public boolean equals(Object o) {
+@Override
+public boolean equals(Object o) {
     if (this == o) {
-      return true;
+    return true;
     }
     if (o == null || getClass() != o.getClass()) {
-      return false;
+    return false;
     }
-    MerchantAccountDataOneOf merchantAccountDataOneOf = (MerchantAccountDataOneOf) o;
-    return Objects.equals(this.iban, merchantAccountDataOneOf.iban);
-  }
+        MerchantAccountDataOneOf merchantAccountDataOneOf = (MerchantAccountDataOneOf) o;
+        return Objects.equals(this.iban, merchantAccountDataOneOf.iban);
+}
 
-  @Override
-  public int hashCode() {
-    return Objects.hash(iban);
-  }
+    @Override
+    public int hashCode() {
+        return Objects.hash(iban);
+    }
 
-  @Override
-  public String toString() {
+    @Override
+    public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class MerchantAccountDataOneOf {\n");
-    sb.append("    iban: ").append(toIndentedString(iban)).append("\n");
+        sb.append("    iban: ").append(toIndentedString(iban)).append("\n");
     sb.append("}");
     return sb.toString();
-  }
+    }
 
-  /**
-   * Convert the given object to string with each line indented by 4 spaces
-   * (except the first line).
-   */
-  private String toIndentedString(Object o) {
+    /**
+    * Convert the given object to string with each line indented by 4 spaces
+    * (except the first line).
+    */
+    private String toIndentedString(Object o) {
     if (o == null) {
-      return "null";
+    return "null";
     }
     return o.toString().replace("\n", "\n    ");
-  }
-
-  /**
-   * Convert the instance into URL query string.
-   *
-   * @return URL query string
-   */
-  public String toUrlQueryString() {
-    return toUrlQueryString(null);
-  }
-
-  /**
-   * Convert the instance into URL query string.
-   *
-   * @param prefix prefix of the query string
-   * @return URL query string
-   */
-  public String toUrlQueryString(String prefix) {
-    String suffix = "";
-    String containerSuffix = "";
-    String containerPrefix = "";
-    if (prefix == null) {
-      // style=form, explode=true, e.g. /pet?name=cat&type=manx
-      prefix = "";
-    } else {
-      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
-      prefix = prefix + "[";
-      suffix = "]";
-      containerSuffix = "]";
-      containerPrefix = "[";
     }
 
-    StringJoiner joiner = new StringJoiner("&");
+        /**
+        * Convert the instance into URL query string.
+        *
+        * @return URL query string
+        */
+        public String toUrlQueryString() {
+        return toUrlQueryString(null);
+        }
 
-    // add `iban` to the URL query string
-    if (getIban() != null) {
-      joiner.add(getIban().toUrlQueryString(prefix + "iban" + suffix));
+        /**
+        * Convert the instance into URL query string.
+        *
+        * @param prefix prefix of the query string
+        * @return URL query string
+        */
+        public String toUrlQueryString(String prefix) {
+        String suffix = "";
+        String containerSuffix = "";
+        String containerPrefix = "";
+        if (prefix == null) {
+        // style=form, explode=true, e.g. /pet?name=cat&type=manx
+        prefix = "";
+        } else {
+        // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+        prefix = prefix + "[";
+        suffix = "]";
+        containerSuffix = "]";
+        containerPrefix = "[";
+        }
+
+        StringJoiner joiner = new StringJoiner("&");
+
+            // add `iban` to the URL query string
+                            if (getIban() != null) {
+                            joiner.add(getIban().toUrlQueryString(prefix + "iban" + suffix));
+                            }
+
+        return joiner.toString();
+        }
+
     }
-
-    return joiner.toString();
-  }
-
-}
 

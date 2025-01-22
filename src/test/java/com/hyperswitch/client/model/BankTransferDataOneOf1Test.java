@@ -19,22 +19,21 @@ import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonTypeName;
 import com.fasterxml.jackson.annotation.JsonValue;
 import com.hyperswitch.client.model.BankTransferDataOneOf1SepaBankTransfer;
-import org.junit.Assert;
-import org.junit.Ignore;
-import org.junit.Test;
-
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Test;
 
 /**
  * Model tests for BankTransferDataOneOf1
  */
-public class BankTransferDataOneOf1Test {
+class BankTransferDataOneOf1Test {
     private final BankTransferDataOneOf1 model = new BankTransferDataOneOf1();
 
     /**
      * Model tests for BankTransferDataOneOf1
      */
     @Test
-    public void testBankTransferDataOneOf1() {
+    void testBankTransferDataOneOf1() {
         // TODO: test BankTransferDataOneOf1
     }
 
@@ -42,7 +41,7 @@ public class BankTransferDataOneOf1Test {
      * Test the property 'sepaBankTransfer'
      */
     @Test
-    public void sepaBankTransferTest() {
+    void sepaBankTransferTest() {
         // TODO: test sepaBankTransfer
     }
 

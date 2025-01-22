@@ -28,121 +28,122 @@ import java.net.URLEncoder;
 import java.util.StringJoiner;
 
 /**
- * FieldTypeOneOf3
- */
-@JsonPropertyOrder({
-  FieldTypeOneOf3.JSON_PROPERTY_USER_SHIPPING_ADDRESS_COUNTRY
-})
-@JsonTypeName("FieldType_oneOf_3")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+* FieldTypeOneOf3
+*/
+    @JsonPropertyOrder({
+        FieldTypeOneOf3.JSON_PROPERTY_USER_SHIPPING_ADDRESS_COUNTRY
+    })
+            @JsonTypeName("FieldType_oneOf_3")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class FieldTypeOneOf3 {
-  public static final String JSON_PROPERTY_USER_SHIPPING_ADDRESS_COUNTRY = "user_shipping_address_country";
-  private FieldTypeOneOfUserCountry userShippingAddressCountry;
+        public static final String JSON_PROPERTY_USER_SHIPPING_ADDRESS_COUNTRY = "user_shipping_address_country";
+    @javax.annotation.Nonnull
+            private FieldTypeOneOfUserCountry userShippingAddressCountry;
 
-  public FieldTypeOneOf3() {
-  }
+public FieldTypeOneOf3() {
+}
 
-  public FieldTypeOneOf3 userShippingAddressCountry(FieldTypeOneOfUserCountry userShippingAddressCountry) {
-    
-    this.userShippingAddressCountry = userShippingAddressCountry;
-    return this;
-  }
+        public FieldTypeOneOf3 userShippingAddressCountry(@javax.annotation.Nonnull FieldTypeOneOfUserCountry userShippingAddressCountry) {
+        
+        this.userShippingAddressCountry = userShippingAddressCountry;
+        return this;
+        }
 
-   /**
-   * Get userShippingAddressCountry
-   * @return userShippingAddressCountry
-  **/
-  @javax.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_USER_SHIPPING_ADDRESS_COUNTRY)
+    /**
+        * Get userShippingAddressCountry
+    * @return userShippingAddressCountry
+    */
+    @javax.annotation.Nonnull
+      @JsonProperty(JSON_PROPERTY_USER_SHIPPING_ADDRESS_COUNTRY)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-  public FieldTypeOneOfUserCountry getUserShippingAddressCountry() {
-    return userShippingAddressCountry;
-  }
+    public FieldTypeOneOfUserCountry getUserShippingAddressCountry() {
+        return userShippingAddressCountry;
+    }
 
 
-  @JsonProperty(JSON_PROPERTY_USER_SHIPPING_ADDRESS_COUNTRY)
+          @JsonProperty(JSON_PROPERTY_USER_SHIPPING_ADDRESS_COUNTRY)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setUserShippingAddressCountry(FieldTypeOneOfUserCountry userShippingAddressCountry) {
-    this.userShippingAddressCountry = userShippingAddressCountry;
-  }
+  public void setUserShippingAddressCountry(@javax.annotation.Nonnull FieldTypeOneOfUserCountry userShippingAddressCountry) {
+            this.userShippingAddressCountry = userShippingAddressCountry;
+        }
 
-  @Override
-  public boolean equals(Object o) {
+@Override
+public boolean equals(Object o) {
     if (this == o) {
-      return true;
+    return true;
     }
     if (o == null || getClass() != o.getClass()) {
-      return false;
+    return false;
     }
-    FieldTypeOneOf3 fieldTypeOneOf3 = (FieldTypeOneOf3) o;
-    return Objects.equals(this.userShippingAddressCountry, fieldTypeOneOf3.userShippingAddressCountry);
-  }
+        FieldTypeOneOf3 fieldTypeOneOf3 = (FieldTypeOneOf3) o;
+        return Objects.equals(this.userShippingAddressCountry, fieldTypeOneOf3.userShippingAddressCountry);
+}
 
-  @Override
-  public int hashCode() {
-    return Objects.hash(userShippingAddressCountry);
-  }
+    @Override
+    public int hashCode() {
+        return Objects.hash(userShippingAddressCountry);
+    }
 
-  @Override
-  public String toString() {
+    @Override
+    public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class FieldTypeOneOf3 {\n");
-    sb.append("    userShippingAddressCountry: ").append(toIndentedString(userShippingAddressCountry)).append("\n");
+        sb.append("    userShippingAddressCountry: ").append(toIndentedString(userShippingAddressCountry)).append("\n");
     sb.append("}");
     return sb.toString();
-  }
+    }
 
-  /**
-   * Convert the given object to string with each line indented by 4 spaces
-   * (except the first line).
-   */
-  private String toIndentedString(Object o) {
+    /**
+    * Convert the given object to string with each line indented by 4 spaces
+    * (except the first line).
+    */
+    private String toIndentedString(Object o) {
     if (o == null) {
-      return "null";
+    return "null";
     }
     return o.toString().replace("\n", "\n    ");
-  }
-
-  /**
-   * Convert the instance into URL query string.
-   *
-   * @return URL query string
-   */
-  public String toUrlQueryString() {
-    return toUrlQueryString(null);
-  }
-
-  /**
-   * Convert the instance into URL query string.
-   *
-   * @param prefix prefix of the query string
-   * @return URL query string
-   */
-  public String toUrlQueryString(String prefix) {
-    String suffix = "";
-    String containerSuffix = "";
-    String containerPrefix = "";
-    if (prefix == null) {
-      // style=form, explode=true, e.g. /pet?name=cat&type=manx
-      prefix = "";
-    } else {
-      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
-      prefix = prefix + "[";
-      suffix = "]";
-      containerSuffix = "]";
-      containerPrefix = "[";
     }
 
-    StringJoiner joiner = new StringJoiner("&");
+        /**
+        * Convert the instance into URL query string.
+        *
+        * @return URL query string
+        */
+        public String toUrlQueryString() {
+        return toUrlQueryString(null);
+        }
 
-    // add `user_shipping_address_country` to the URL query string
-    if (getUserShippingAddressCountry() != null) {
-      joiner.add(getUserShippingAddressCountry().toUrlQueryString(prefix + "user_shipping_address_country" + suffix));
+        /**
+        * Convert the instance into URL query string.
+        *
+        * @param prefix prefix of the query string
+        * @return URL query string
+        */
+        public String toUrlQueryString(String prefix) {
+        String suffix = "";
+        String containerSuffix = "";
+        String containerPrefix = "";
+        if (prefix == null) {
+        // style=form, explode=true, e.g. /pet?name=cat&type=manx
+        prefix = "";
+        } else {
+        // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+        prefix = prefix + "[";
+        suffix = "]";
+        containerSuffix = "]";
+        containerPrefix = "[";
+        }
+
+        StringJoiner joiner = new StringJoiner("&");
+
+            // add `user_shipping_address_country` to the URL query string
+                            if (getUserShippingAddressCountry() != null) {
+                            joiner.add(getUserShippingAddressCountry().toUrlQueryString(prefix + "user_shipping_address_country" + suffix));
+                            }
+
+        return joiner.toString();
+        }
+
     }
-
-    return joiner.toString();
-  }
-
-}
 

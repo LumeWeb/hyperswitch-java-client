@@ -19,22 +19,21 @@ import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonTypeName;
 import com.fasterxml.jackson.annotation.JsonValue;
 import com.hyperswitch.client.model.PayPalWalletData;
-import org.junit.Assert;
-import org.junit.Ignore;
-import org.junit.Test;
-
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Test;
 
 /**
  * Model tests for WalletDataOneOf17
  */
-public class WalletDataOneOf17Test {
+class WalletDataOneOf17Test {
     private final WalletDataOneOf17 model = new WalletDataOneOf17();
 
     /**
      * Model tests for WalletDataOneOf17
      */
     @Test
-    public void testWalletDataOneOf17() {
+    void testWalletDataOneOf17() {
         // TODO: test WalletDataOneOf17
     }
 
@@ -42,7 +41,7 @@ public class WalletDataOneOf17Test {
      * Test the property 'paypalSdk'
      */
     @Test
-    public void paypalSdkTest() {
+    void paypalSdkTest() {
         // TODO: test paypalSdk
     }
 

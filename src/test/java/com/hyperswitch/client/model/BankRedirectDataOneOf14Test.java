@@ -19,22 +19,21 @@ import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonTypeName;
 import com.fasterxml.jackson.annotation.JsonValue;
 import com.hyperswitch.client.model.BankRedirectDataOneOf14Trustly;
-import org.junit.Assert;
-import org.junit.Ignore;
-import org.junit.Test;
-
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Test;
 
 /**
  * Model tests for BankRedirectDataOneOf14
  */
-public class BankRedirectDataOneOf14Test {
+class BankRedirectDataOneOf14Test {
     private final BankRedirectDataOneOf14 model = new BankRedirectDataOneOf14();
 
     /**
      * Model tests for BankRedirectDataOneOf14
      */
     @Test
-    public void testBankRedirectDataOneOf14() {
+    void testBankRedirectDataOneOf14() {
         // TODO: test BankRedirectDataOneOf14
     }
 
@@ -42,7 +41,7 @@ public class BankRedirectDataOneOf14Test {
      * Test the property 'trustly'
      */
     @Test
-    public void trustlyTest() {
+    void trustlyTest() {
         // TODO: test trustly
     }
 

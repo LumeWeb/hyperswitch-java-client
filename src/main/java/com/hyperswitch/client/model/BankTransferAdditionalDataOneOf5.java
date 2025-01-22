@@ -27,126 +27,127 @@ import java.net.URLEncoder;
 import java.util.StringJoiner;
 
 /**
- * BankTransferAdditionalDataOneOf5
- */
-@JsonPropertyOrder({
-  BankTransferAdditionalDataOneOf5.JSON_PROPERTY_BCA
-})
-@JsonTypeName("BankTransferAdditionalData_oneOf_5")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+* BankTransferAdditionalDataOneOf5
+*/
+    @JsonPropertyOrder({
+        BankTransferAdditionalDataOneOf5.JSON_PROPERTY_BCA
+    })
+            @JsonTypeName("BankTransferAdditionalData_oneOf_5")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class BankTransferAdditionalDataOneOf5 {
-  public static final String JSON_PROPERTY_BCA = "bca";
-  private Object bca;
+        public static final String JSON_PROPERTY_BCA = "bca";
+    @javax.annotation.Nonnull
+            private Object bca;
 
-  public BankTransferAdditionalDataOneOf5() {
-  }
+public BankTransferAdditionalDataOneOf5() {
+}
 
-  public BankTransferAdditionalDataOneOf5 bca(Object bca) {
-    
-    this.bca = bca;
-    return this;
-  }
+        public BankTransferAdditionalDataOneOf5 bca(@javax.annotation.Nonnull Object bca) {
+        
+        this.bca = bca;
+        return this;
+        }
 
-   /**
-   * Get bca
-   * @return bca
-  **/
-  @javax.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_BCA)
+    /**
+        * Get bca
+    * @return bca
+    */
+    @javax.annotation.Nonnull
+      @JsonProperty(JSON_PROPERTY_BCA)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-  public Object getBca() {
-    return bca;
-  }
+    public Object getBca() {
+        return bca;
+    }
 
 
-  @JsonProperty(JSON_PROPERTY_BCA)
+          @JsonProperty(JSON_PROPERTY_BCA)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setBca(Object bca) {
-    this.bca = bca;
-  }
+  public void setBca(@javax.annotation.Nonnull Object bca) {
+            this.bca = bca;
+        }
 
-  @Override
-  public boolean equals(Object o) {
+@Override
+public boolean equals(Object o) {
     if (this == o) {
-      return true;
+    return true;
     }
     if (o == null || getClass() != o.getClass()) {
-      return false;
+    return false;
     }
-    BankTransferAdditionalDataOneOf5 bankTransferAdditionalDataOneOf5 = (BankTransferAdditionalDataOneOf5) o;
-    return Objects.equals(this.bca, bankTransferAdditionalDataOneOf5.bca);
-  }
+        BankTransferAdditionalDataOneOf5 bankTransferAdditionalDataOneOf5 = (BankTransferAdditionalDataOneOf5) o;
+        return Objects.equals(this.bca, bankTransferAdditionalDataOneOf5.bca);
+}
 
-  @Override
-  public int hashCode() {
-    return Objects.hash(bca);
-  }
+    @Override
+    public int hashCode() {
+        return Objects.hash(bca);
+    }
 
-  @Override
-  public String toString() {
+    @Override
+    public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class BankTransferAdditionalDataOneOf5 {\n");
-    sb.append("    bca: ").append(toIndentedString(bca)).append("\n");
+        sb.append("    bca: ").append(toIndentedString(bca)).append("\n");
     sb.append("}");
     return sb.toString();
-  }
+    }
 
-  /**
-   * Convert the given object to string with each line indented by 4 spaces
-   * (except the first line).
-   */
-  private String toIndentedString(Object o) {
+    /**
+    * Convert the given object to string with each line indented by 4 spaces
+    * (except the first line).
+    */
+    private String toIndentedString(Object o) {
     if (o == null) {
-      return "null";
+    return "null";
     }
     return o.toString().replace("\n", "\n    ");
-  }
-
-  /**
-   * Convert the instance into URL query string.
-   *
-   * @return URL query string
-   */
-  public String toUrlQueryString() {
-    return toUrlQueryString(null);
-  }
-
-  /**
-   * Convert the instance into URL query string.
-   *
-   * @param prefix prefix of the query string
-   * @return URL query string
-   */
-  public String toUrlQueryString(String prefix) {
-    String suffix = "";
-    String containerSuffix = "";
-    String containerPrefix = "";
-    if (prefix == null) {
-      // style=form, explode=true, e.g. /pet?name=cat&type=manx
-      prefix = "";
-    } else {
-      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
-      prefix = prefix + "[";
-      suffix = "]";
-      containerSuffix = "]";
-      containerPrefix = "[";
     }
 
-    StringJoiner joiner = new StringJoiner("&");
+        /**
+        * Convert the instance into URL query string.
+        *
+        * @return URL query string
+        */
+        public String toUrlQueryString() {
+        return toUrlQueryString(null);
+        }
 
-    // add `bca` to the URL query string
-    if (getBca() != null) {
-      try {
-        joiner.add(String.format("%sbca%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getBca()), "UTF-8").replaceAll("\\+", "%20")));
-      } catch (UnsupportedEncodingException e) {
-        // Should never happen, UTF-8 is always supported
-        throw new RuntimeException(e);
-      }
+        /**
+        * Convert the instance into URL query string.
+        *
+        * @param prefix prefix of the query string
+        * @return URL query string
+        */
+        public String toUrlQueryString(String prefix) {
+        String suffix = "";
+        String containerSuffix = "";
+        String containerPrefix = "";
+        if (prefix == null) {
+        // style=form, explode=true, e.g. /pet?name=cat&type=manx
+        prefix = "";
+        } else {
+        // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+        prefix = prefix + "[";
+        suffix = "]";
+        containerSuffix = "]";
+        containerPrefix = "[";
+        }
+
+        StringJoiner joiner = new StringJoiner("&");
+
+            // add `bca` to the URL query string
+                        if (getBca() != null) {
+                        try {
+                        joiner.add(String.format("%sbca%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getBca()), "UTF-8").replaceAll("\\+", "%20")));
+                        } catch (UnsupportedEncodingException e) {
+                        // Should never happen, UTF-8 is always supported
+                        throw new RuntimeException(e);
+                        }
+                        }
+
+        return joiner.toString();
+        }
+
     }
-
-    return joiner.toString();
-  }
-
-}
 

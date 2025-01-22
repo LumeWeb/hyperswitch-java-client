@@ -31,194 +31,195 @@ import java.net.URLEncoder;
 import java.util.StringJoiner;
 
 /**
- * AmountFilter
- */
-@JsonPropertyOrder({
-  AmountFilter.JSON_PROPERTY_START_AMOUNT,
-  AmountFilter.JSON_PROPERTY_END_AMOUNT
-})
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+* AmountFilter
+*/
+    @JsonPropertyOrder({
+        AmountFilter.JSON_PROPERTY_START_AMOUNT,
+        AmountFilter.JSON_PROPERTY_END_AMOUNT
+    })
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class AmountFilter {
-  public static final String JSON_PROPERTY_START_AMOUNT = "start_amount";
-  private JsonNullable<Long> startAmount = JsonNullable.<Long>undefined();
+        public static final String JSON_PROPERTY_START_AMOUNT = "start_amount";
+    @javax.annotation.Nullable
+            private JsonNullable<Long> startAmount = JsonNullable.<Long>undefined();
 
-  public static final String JSON_PROPERTY_END_AMOUNT = "end_amount";
-  private JsonNullable<Long> endAmount = JsonNullable.<Long>undefined();
+        public static final String JSON_PROPERTY_END_AMOUNT = "end_amount";
+    @javax.annotation.Nullable
+            private JsonNullable<Long> endAmount = JsonNullable.<Long>undefined();
 
-  public AmountFilter() {
-  }
+public AmountFilter() {
+}
 
-  public AmountFilter startAmount(Long startAmount) {
-    this.startAmount = JsonNullable.<Long>of(startAmount);
+        public AmountFilter startAmount(@javax.annotation.Nullable Long startAmount) {
+        this.startAmount = JsonNullable.<Long>of(startAmount);
+        
+        return this;
+        }
+
+    /**
+        * The start amount to filter list of transactions which are greater than or equal to the start amount
+    * @return startAmount
+    */
+    @javax.annotation.Nullable
+        @JsonIgnore
     
-    return this;
-  }
+    public Long getStartAmount() {
+                return startAmount.orElse(null);
+    }
 
-   /**
-   * The start amount to filter list of transactions which are greater than or equal to the start amount
-   * @return startAmount
-  **/
-  @javax.annotation.Nullable
-  @JsonIgnore
-
-  public Long getStartAmount() {
-        return startAmount.orElse(null);
-  }
-
-  @JsonProperty(JSON_PROPERTY_START_AMOUNT)
+          @JsonProperty(JSON_PROPERTY_START_AMOUNT)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-  public JsonNullable<Long> getStartAmount_JsonNullable() {
-    return startAmount;
-  }
-  
-  @JsonProperty(JSON_PROPERTY_START_AMOUNT)
-  public void setStartAmount_JsonNullable(JsonNullable<Long> startAmount) {
-    this.startAmount = startAmount;
-  }
-
-  public void setStartAmount(Long startAmount) {
-    this.startAmount = JsonNullable.<Long>of(startAmount);
-  }
-
-
-  public AmountFilter endAmount(Long endAmount) {
-    this.endAmount = JsonNullable.<Long>of(endAmount);
+        public JsonNullable<Long> getStartAmount_JsonNullable() {
+        return startAmount;
+        }
     
-    return this;
-  }
+        @JsonProperty(JSON_PROPERTY_START_AMOUNT)
+        public void setStartAmount_JsonNullable(JsonNullable<Long> startAmount) {
+        this.startAmount = startAmount;
+        }
 
-   /**
-   * The end amount to filter list of transactions which are less than or equal to the end amount
-   * @return endAmount
-  **/
-  @javax.annotation.Nullable
-  @JsonIgnore
+          public void setStartAmount(@javax.annotation.Nullable Long startAmount) {
+            this.startAmount = JsonNullable.<Long>of(startAmount);
+        }
 
-  public Long getEndAmount() {
-        return endAmount.orElse(null);
-  }
+        public AmountFilter endAmount(@javax.annotation.Nullable Long endAmount) {
+        this.endAmount = JsonNullable.<Long>of(endAmount);
+        
+        return this;
+        }
 
-  @JsonProperty(JSON_PROPERTY_END_AMOUNT)
+    /**
+        * The end amount to filter list of transactions which are less than or equal to the end amount
+    * @return endAmount
+    */
+    @javax.annotation.Nullable
+        @JsonIgnore
+    
+    public Long getEndAmount() {
+                return endAmount.orElse(null);
+    }
+
+          @JsonProperty(JSON_PROPERTY_END_AMOUNT)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-  public JsonNullable<Long> getEndAmount_JsonNullable() {
-    return endAmount;
-  }
-  
-  @JsonProperty(JSON_PROPERTY_END_AMOUNT)
-  public void setEndAmount_JsonNullable(JsonNullable<Long> endAmount) {
-    this.endAmount = endAmount;
-  }
+        public JsonNullable<Long> getEndAmount_JsonNullable() {
+        return endAmount;
+        }
+    
+        @JsonProperty(JSON_PROPERTY_END_AMOUNT)
+        public void setEndAmount_JsonNullable(JsonNullable<Long> endAmount) {
+        this.endAmount = endAmount;
+        }
 
-  public void setEndAmount(Long endAmount) {
-    this.endAmount = JsonNullable.<Long>of(endAmount);
-  }
+          public void setEndAmount(@javax.annotation.Nullable Long endAmount) {
+            this.endAmount = JsonNullable.<Long>of(endAmount);
+        }
 
-  @Override
-  public boolean equals(Object o) {
+@Override
+public boolean equals(Object o) {
     if (this == o) {
-      return true;
+    return true;
     }
     if (o == null || getClass() != o.getClass()) {
-      return false;
+    return false;
     }
-    AmountFilter amountFilter = (AmountFilter) o;
-    return equalsNullable(this.startAmount, amountFilter.startAmount) &&
+        AmountFilter amountFilter = (AmountFilter) o;
+        return equalsNullable(this.startAmount, amountFilter.startAmount) &&
         equalsNullable(this.endAmount, amountFilter.endAmount);
-  }
+}
 
-  private static <T> boolean equalsNullable(JsonNullable<T> a, JsonNullable<T> b) {
-    return a == b || (a != null && b != null && a.isPresent() && b.isPresent() && Objects.deepEquals(a.get(), b.get()));
-  }
+    private static <T> boolean equalsNullable(JsonNullable<T> a, JsonNullable<T> b) {
+        return a == b || (a != null && b != null && a.isPresent() && b.isPresent() && Objects.deepEquals(a.get(), b.get()));
+        }
 
-  @Override
-  public int hashCode() {
-    return Objects.hash(hashCodeNullable(startAmount), hashCodeNullable(endAmount));
-  }
-
-  private static <T> int hashCodeNullable(JsonNullable<T> a) {
-    if (a == null) {
-      return 1;
+    @Override
+    public int hashCode() {
+        return Objects.hash(hashCodeNullable(startAmount), hashCodeNullable(endAmount));
     }
-    return a.isPresent() ? Arrays.deepHashCode(new Object[]{a.get()}) : 31;
-  }
 
-  @Override
-  public String toString() {
+        private static <T> int hashCodeNullable(JsonNullable<T> a) {
+        if (a == null) {
+        return 1;
+        }
+        return a.isPresent() ? Arrays.deepHashCode(new Object[]{a.get()}) : 31;
+        }
+
+    @Override
+    public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class AmountFilter {\n");
-    sb.append("    startAmount: ").append(toIndentedString(startAmount)).append("\n");
-    sb.append("    endAmount: ").append(toIndentedString(endAmount)).append("\n");
+        sb.append("    startAmount: ").append(toIndentedString(startAmount)).append("\n");
+        sb.append("    endAmount: ").append(toIndentedString(endAmount)).append("\n");
     sb.append("}");
     return sb.toString();
-  }
+    }
 
-  /**
-   * Convert the given object to string with each line indented by 4 spaces
-   * (except the first line).
-   */
-  private String toIndentedString(Object o) {
+    /**
+    * Convert the given object to string with each line indented by 4 spaces
+    * (except the first line).
+    */
+    private String toIndentedString(Object o) {
     if (o == null) {
-      return "null";
+    return "null";
     }
     return o.toString().replace("\n", "\n    ");
-  }
-
-  /**
-   * Convert the instance into URL query string.
-   *
-   * @return URL query string
-   */
-  public String toUrlQueryString() {
-    return toUrlQueryString(null);
-  }
-
-  /**
-   * Convert the instance into URL query string.
-   *
-   * @param prefix prefix of the query string
-   * @return URL query string
-   */
-  public String toUrlQueryString(String prefix) {
-    String suffix = "";
-    String containerSuffix = "";
-    String containerPrefix = "";
-    if (prefix == null) {
-      // style=form, explode=true, e.g. /pet?name=cat&type=manx
-      prefix = "";
-    } else {
-      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
-      prefix = prefix + "[";
-      suffix = "]";
-      containerSuffix = "]";
-      containerPrefix = "[";
     }
 
-    StringJoiner joiner = new StringJoiner("&");
+        /**
+        * Convert the instance into URL query string.
+        *
+        * @return URL query string
+        */
+        public String toUrlQueryString() {
+        return toUrlQueryString(null);
+        }
 
-    // add `start_amount` to the URL query string
-    if (getStartAmount() != null) {
-      try {
-        joiner.add(String.format("%sstart_amount%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getStartAmount()), "UTF-8").replaceAll("\\+", "%20")));
-      } catch (UnsupportedEncodingException e) {
-        // Should never happen, UTF-8 is always supported
-        throw new RuntimeException(e);
-      }
+        /**
+        * Convert the instance into URL query string.
+        *
+        * @param prefix prefix of the query string
+        * @return URL query string
+        */
+        public String toUrlQueryString(String prefix) {
+        String suffix = "";
+        String containerSuffix = "";
+        String containerPrefix = "";
+        if (prefix == null) {
+        // style=form, explode=true, e.g. /pet?name=cat&type=manx
+        prefix = "";
+        } else {
+        // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+        prefix = prefix + "[";
+        suffix = "]";
+        containerSuffix = "]";
+        containerPrefix = "[";
+        }
+
+        StringJoiner joiner = new StringJoiner("&");
+
+            // add `start_amount` to the URL query string
+                        if (getStartAmount() != null) {
+                        try {
+                        joiner.add(String.format("%sstart_amount%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getStartAmount()), "UTF-8").replaceAll("\\+", "%20")));
+                        } catch (UnsupportedEncodingException e) {
+                        // Should never happen, UTF-8 is always supported
+                        throw new RuntimeException(e);
+                        }
+                        }
+
+            // add `end_amount` to the URL query string
+                        if (getEndAmount() != null) {
+                        try {
+                        joiner.add(String.format("%send_amount%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getEndAmount()), "UTF-8").replaceAll("\\+", "%20")));
+                        } catch (UnsupportedEncodingException e) {
+                        // Should never happen, UTF-8 is always supported
+                        throw new RuntimeException(e);
+                        }
+                        }
+
+        return joiner.toString();
+        }
+
     }
-
-    // add `end_amount` to the URL query string
-    if (getEndAmount() != null) {
-      try {
-        joiner.add(String.format("%send_amount%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getEndAmount()), "UTF-8").replaceAll("\\+", "%20")));
-      } catch (UnsupportedEncodingException e) {
-        // Should never happen, UTF-8 is always supported
-        throw new RuntimeException(e);
-      }
-    }
-
-    return joiner.toString();
-  }
-
-}
 

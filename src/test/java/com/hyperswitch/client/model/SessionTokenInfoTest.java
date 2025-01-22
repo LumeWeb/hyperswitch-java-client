@@ -27,86 +27,29 @@ import org.openapitools.jackson.nullable.JsonNullable;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.openapitools.jackson.nullable.JsonNullable;
 import java.util.NoSuchElementException;
-import org.junit.Assert;
-import org.junit.Ignore;
-import org.junit.Test;
-
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Test;
 
 /**
  * Model tests for SessionTokenInfo
  */
-public class SessionTokenInfoTest {
+class SessionTokenInfoTest {
     private final SessionTokenInfo model = new SessionTokenInfo();
 
     /**
      * Model tests for SessionTokenInfo
      */
     @Test
-    public void testSessionTokenInfo() {
+    void testSessionTokenInfo() {
         // TODO: test SessionTokenInfo
-    }
-
-    /**
-     * Test the property 'certificate'
-     */
-    @Test
-    public void certificateTest() {
-        // TODO: test certificate
-    }
-
-    /**
-     * Test the property 'certificateKeys'
-     */
-    @Test
-    public void certificateKeysTest() {
-        // TODO: test certificateKeys
-    }
-
-    /**
-     * Test the property 'merchantIdentifier'
-     */
-    @Test
-    public void merchantIdentifierTest() {
-        // TODO: test merchantIdentifier
-    }
-
-    /**
-     * Test the property 'displayName'
-     */
-    @Test
-    public void displayNameTest() {
-        // TODO: test displayName
-    }
-
-    /**
-     * Test the property 'initiative'
-     */
-    @Test
-    public void initiativeTest() {
-        // TODO: test initiative
-    }
-
-    /**
-     * Test the property 'initiativeContext'
-     */
-    @Test
-    public void initiativeContextTest() {
-        // TODO: test initiativeContext
-    }
-
-    /**
-     * Test the property 'merchantBusinessCountry'
-     */
-    @Test
-    public void merchantBusinessCountryTest() {
-        // TODO: test merchantBusinessCountry
     }
 
     /**
      * Test the property 'paymentProcessingCertificate'
      */
     @Test
-    public void paymentProcessingCertificateTest() {
+    void paymentProcessingCertificateTest() {
         // TODO: test paymentProcessingCertificate
     }
 
@@ -114,7 +57,7 @@ public class SessionTokenInfoTest {
      * Test the property 'paymentProcessingCertificateKey'
      */
     @Test
-    public void paymentProcessingCertificateKeyTest() {
+    void paymentProcessingCertificateKeyTest() {
         // TODO: test paymentProcessingCertificateKey
     }
 
@@ -122,8 +65,64 @@ public class SessionTokenInfoTest {
      * Test the property 'paymentProcessingDetailsAt'
      */
     @Test
-    public void paymentProcessingDetailsAtTest() {
+    void paymentProcessingDetailsAtTest() {
         // TODO: test paymentProcessingDetailsAt
+    }
+
+    /**
+     * Test the property 'certificate'
+     */
+    @Test
+    void certificateTest() {
+        // TODO: test certificate
+    }
+
+    /**
+     * Test the property 'certificateKeys'
+     */
+    @Test
+    void certificateKeysTest() {
+        // TODO: test certificateKeys
+    }
+
+    /**
+     * Test the property 'merchantIdentifier'
+     */
+    @Test
+    void merchantIdentifierTest() {
+        // TODO: test merchantIdentifier
+    }
+
+    /**
+     * Test the property 'displayName'
+     */
+    @Test
+    void displayNameTest() {
+        // TODO: test displayName
+    }
+
+    /**
+     * Test the property 'initiative'
+     */
+    @Test
+    void initiativeTest() {
+        // TODO: test initiative
+    }
+
+    /**
+     * Test the property 'initiativeContext'
+     */
+    @Test
+    void initiativeContextTest() {
+        // TODO: test initiativeContext
+    }
+
+    /**
+     * Test the property 'merchantBusinessCountry'
+     */
+    @Test
+    void merchantBusinessCountryTest() {
+        // TODO: test merchantBusinessCountry
     }
 
 }

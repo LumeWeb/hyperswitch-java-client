@@ -30,157 +30,158 @@ import java.net.URLEncoder;
 import java.util.StringJoiner;
 
 /**
- * MandateType
- */
-@JsonPropertyOrder({
-  MandateType.JSON_PROPERTY_SINGLE_USE,
-  MandateType.JSON_PROPERTY_MULTI_USE
-})
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+* MandateType
+*/
+    @JsonPropertyOrder({
+        MandateType.JSON_PROPERTY_SINGLE_USE,
+        MandateType.JSON_PROPERTY_MULTI_USE
+    })
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class MandateType {
-  public static final String JSON_PROPERTY_SINGLE_USE = "single_use";
-  private MandateAmountData singleUse;
+        public static final String JSON_PROPERTY_SINGLE_USE = "single_use";
+    @javax.annotation.Nonnull
+            private MandateAmountData singleUse;
 
-  public static final String JSON_PROPERTY_MULTI_USE = "multi_use";
-  private MandateAmountData multiUse;
+        public static final String JSON_PROPERTY_MULTI_USE = "multi_use";
+    @javax.annotation.Nullable
+            private MandateAmountData multiUse;
 
-  public MandateType() {
-  }
+public MandateType() {
+}
 
-  public MandateType singleUse(MandateAmountData singleUse) {
-    
-    this.singleUse = singleUse;
-    return this;
-  }
+        public MandateType singleUse(@javax.annotation.Nonnull MandateAmountData singleUse) {
+        
+        this.singleUse = singleUse;
+        return this;
+        }
 
-   /**
-   * Get singleUse
-   * @return singleUse
-  **/
-  @javax.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_SINGLE_USE)
+    /**
+        * Get singleUse
+    * @return singleUse
+    */
+    @javax.annotation.Nonnull
+      @JsonProperty(JSON_PROPERTY_SINGLE_USE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-  public MandateAmountData getSingleUse() {
-    return singleUse;
-  }
+    public MandateAmountData getSingleUse() {
+        return singleUse;
+    }
 
 
-  @JsonProperty(JSON_PROPERTY_SINGLE_USE)
+          @JsonProperty(JSON_PROPERTY_SINGLE_USE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setSingleUse(MandateAmountData singleUse) {
-    this.singleUse = singleUse;
-  }
+  public void setSingleUse(@javax.annotation.Nonnull MandateAmountData singleUse) {
+            this.singleUse = singleUse;
+        }
 
+        public MandateType multiUse(@javax.annotation.Nullable MandateAmountData multiUse) {
+        
+        this.multiUse = multiUse;
+        return this;
+        }
 
-  public MandateType multiUse(MandateAmountData multiUse) {
-    
-    this.multiUse = multiUse;
-    return this;
-  }
-
-   /**
-   * Get multiUse
-   * @return multiUse
-  **/
-  @javax.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_MULTI_USE)
+    /**
+        * Get multiUse
+    * @return multiUse
+    */
+    @javax.annotation.Nullable
+      @JsonProperty(JSON_PROPERTY_MULTI_USE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-  public MandateAmountData getMultiUse() {
-    return multiUse;
-  }
+    public MandateAmountData getMultiUse() {
+        return multiUse;
+    }
 
 
-  @JsonProperty(JSON_PROPERTY_MULTI_USE)
+          @JsonProperty(JSON_PROPERTY_MULTI_USE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setMultiUse(MandateAmountData multiUse) {
-    this.multiUse = multiUse;
-  }
+  public void setMultiUse(@javax.annotation.Nullable MandateAmountData multiUse) {
+            this.multiUse = multiUse;
+        }
 
-  @Override
-  public boolean equals(Object o) {
+@Override
+public boolean equals(Object o) {
     if (this == o) {
-      return true;
+    return true;
     }
     if (o == null || getClass() != o.getClass()) {
-      return false;
+    return false;
     }
-    MandateType mandateType = (MandateType) o;
-    return Objects.equals(this.singleUse, mandateType.singleUse) &&
+        MandateType mandateType = (MandateType) o;
+        return Objects.equals(this.singleUse, mandateType.singleUse) &&
         Objects.equals(this.multiUse, mandateType.multiUse);
-  }
+}
 
-  @Override
-  public int hashCode() {
-    return Objects.hash(singleUse, multiUse);
-  }
+    @Override
+    public int hashCode() {
+        return Objects.hash(singleUse, multiUse);
+    }
 
-  @Override
-  public String toString() {
+    @Override
+    public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class MandateType {\n");
-    sb.append("    singleUse: ").append(toIndentedString(singleUse)).append("\n");
-    sb.append("    multiUse: ").append(toIndentedString(multiUse)).append("\n");
+        sb.append("    singleUse: ").append(toIndentedString(singleUse)).append("\n");
+        sb.append("    multiUse: ").append(toIndentedString(multiUse)).append("\n");
     sb.append("}");
     return sb.toString();
-  }
+    }
 
-  /**
-   * Convert the given object to string with each line indented by 4 spaces
-   * (except the first line).
-   */
-  private String toIndentedString(Object o) {
+    /**
+    * Convert the given object to string with each line indented by 4 spaces
+    * (except the first line).
+    */
+    private String toIndentedString(Object o) {
     if (o == null) {
-      return "null";
+    return "null";
     }
     return o.toString().replace("\n", "\n    ");
-  }
-
-  /**
-   * Convert the instance into URL query string.
-   *
-   * @return URL query string
-   */
-  public String toUrlQueryString() {
-    return toUrlQueryString(null);
-  }
-
-  /**
-   * Convert the instance into URL query string.
-   *
-   * @param prefix prefix of the query string
-   * @return URL query string
-   */
-  public String toUrlQueryString(String prefix) {
-    String suffix = "";
-    String containerSuffix = "";
-    String containerPrefix = "";
-    if (prefix == null) {
-      // style=form, explode=true, e.g. /pet?name=cat&type=manx
-      prefix = "";
-    } else {
-      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
-      prefix = prefix + "[";
-      suffix = "]";
-      containerSuffix = "]";
-      containerPrefix = "[";
     }
 
-    StringJoiner joiner = new StringJoiner("&");
+        /**
+        * Convert the instance into URL query string.
+        *
+        * @return URL query string
+        */
+        public String toUrlQueryString() {
+        return toUrlQueryString(null);
+        }
 
-    // add `single_use` to the URL query string
-    if (getSingleUse() != null) {
-      joiner.add(getSingleUse().toUrlQueryString(prefix + "single_use" + suffix));
+        /**
+        * Convert the instance into URL query string.
+        *
+        * @param prefix prefix of the query string
+        * @return URL query string
+        */
+        public String toUrlQueryString(String prefix) {
+        String suffix = "";
+        String containerSuffix = "";
+        String containerPrefix = "";
+        if (prefix == null) {
+        // style=form, explode=true, e.g. /pet?name=cat&type=manx
+        prefix = "";
+        } else {
+        // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+        prefix = prefix + "[";
+        suffix = "]";
+        containerSuffix = "]";
+        containerPrefix = "[";
+        }
+
+        StringJoiner joiner = new StringJoiner("&");
+
+            // add `single_use` to the URL query string
+                            if (getSingleUse() != null) {
+                            joiner.add(getSingleUse().toUrlQueryString(prefix + "single_use" + suffix));
+                            }
+
+            // add `multi_use` to the URL query string
+                            if (getMultiUse() != null) {
+                            joiner.add(getMultiUse().toUrlQueryString(prefix + "multi_use" + suffix));
+                            }
+
+        return joiner.toString();
+        }
+
     }
-
-    // add `multi_use` to the URL query string
-    if (getMultiUse() != null) {
-      joiner.add(getMultiUse().toUrlQueryString(prefix + "multi_use" + suffix));
-    }
-
-    return joiner.toString();
-  }
-
-}
 

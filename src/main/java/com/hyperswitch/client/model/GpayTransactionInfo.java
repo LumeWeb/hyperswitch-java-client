@@ -29,251 +29,252 @@ import java.net.URLEncoder;
 import java.util.StringJoiner;
 
 /**
- * GpayTransactionInfo
- */
-@JsonPropertyOrder({
-  GpayTransactionInfo.JSON_PROPERTY_COUNTRY_CODE,
-  GpayTransactionInfo.JSON_PROPERTY_CURRENCY_CODE,
-  GpayTransactionInfo.JSON_PROPERTY_TOTAL_PRICE_STATUS,
-  GpayTransactionInfo.JSON_PROPERTY_TOTAL_PRICE
-})
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+* GpayTransactionInfo
+*/
+    @JsonPropertyOrder({
+        GpayTransactionInfo.JSON_PROPERTY_COUNTRY_CODE,
+        GpayTransactionInfo.JSON_PROPERTY_CURRENCY_CODE,
+        GpayTransactionInfo.JSON_PROPERTY_TOTAL_PRICE_STATUS,
+        GpayTransactionInfo.JSON_PROPERTY_TOTAL_PRICE
+    })
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class GpayTransactionInfo {
-  public static final String JSON_PROPERTY_COUNTRY_CODE = "country_code";
-  private CountryAlpha2 countryCode;
+        public static final String JSON_PROPERTY_COUNTRY_CODE = "country_code";
+    @javax.annotation.Nonnull
+            private CountryAlpha2 countryCode;
 
-  public static final String JSON_PROPERTY_CURRENCY_CODE = "currency_code";
-  private Currency currencyCode;
+        public static final String JSON_PROPERTY_CURRENCY_CODE = "currency_code";
+    @javax.annotation.Nonnull
+            private Currency currencyCode;
 
-  public static final String JSON_PROPERTY_TOTAL_PRICE_STATUS = "total_price_status";
-  private String totalPriceStatus;
+        public static final String JSON_PROPERTY_TOTAL_PRICE_STATUS = "total_price_status";
+    @javax.annotation.Nonnull
+            private String totalPriceStatus;
 
-  public static final String JSON_PROPERTY_TOTAL_PRICE = "total_price";
-  private String totalPrice;
+        public static final String JSON_PROPERTY_TOTAL_PRICE = "total_price";
+    @javax.annotation.Nonnull
+            private String totalPrice;
 
-  public GpayTransactionInfo() {
-  }
+public GpayTransactionInfo() {
+}
 
-  public GpayTransactionInfo countryCode(CountryAlpha2 countryCode) {
-    
-    this.countryCode = countryCode;
-    return this;
-  }
+        public GpayTransactionInfo countryCode(@javax.annotation.Nonnull CountryAlpha2 countryCode) {
+        
+        this.countryCode = countryCode;
+        return this;
+        }
 
-   /**
-   * Get countryCode
-   * @return countryCode
-  **/
-  @javax.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_COUNTRY_CODE)
+    /**
+        * Get countryCode
+    * @return countryCode
+    */
+    @javax.annotation.Nonnull
+      @JsonProperty(JSON_PROPERTY_COUNTRY_CODE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-  public CountryAlpha2 getCountryCode() {
-    return countryCode;
-  }
+    public CountryAlpha2 getCountryCode() {
+        return countryCode;
+    }
 
 
-  @JsonProperty(JSON_PROPERTY_COUNTRY_CODE)
+          @JsonProperty(JSON_PROPERTY_COUNTRY_CODE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setCountryCode(CountryAlpha2 countryCode) {
-    this.countryCode = countryCode;
-  }
+  public void setCountryCode(@javax.annotation.Nonnull CountryAlpha2 countryCode) {
+            this.countryCode = countryCode;
+        }
 
+        public GpayTransactionInfo currencyCode(@javax.annotation.Nonnull Currency currencyCode) {
+        
+        this.currencyCode = currencyCode;
+        return this;
+        }
 
-  public GpayTransactionInfo currencyCode(Currency currencyCode) {
-    
-    this.currencyCode = currencyCode;
-    return this;
-  }
-
-   /**
-   * Get currencyCode
-   * @return currencyCode
-  **/
-  @javax.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_CURRENCY_CODE)
-  @JsonInclude(value = JsonInclude.Include.ALWAYS)
-
-  public Currency getCurrencyCode() {
-    return currencyCode;
-  }
-
-
-  @JsonProperty(JSON_PROPERTY_CURRENCY_CODE)
-  @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setCurrencyCode(Currency currencyCode) {
-    this.currencyCode = currencyCode;
-  }
-
-
-  public GpayTransactionInfo totalPriceStatus(String totalPriceStatus) {
-    
-    this.totalPriceStatus = totalPriceStatus;
-    return this;
-  }
-
-   /**
-   * The total price status (ex: &#39;FINAL&#39;)
-   * @return totalPriceStatus
-  **/
-  @javax.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_TOTAL_PRICE_STATUS)
+    /**
+        * Get currencyCode
+    * @return currencyCode
+    */
+    @javax.annotation.Nonnull
+      @JsonProperty(JSON_PROPERTY_CURRENCY_CODE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-  public String getTotalPriceStatus() {
-    return totalPriceStatus;
-  }
+    public Currency getCurrencyCode() {
+        return currencyCode;
+    }
 
 
-  @JsonProperty(JSON_PROPERTY_TOTAL_PRICE_STATUS)
+          @JsonProperty(JSON_PROPERTY_CURRENCY_CODE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setTotalPriceStatus(String totalPriceStatus) {
-    this.totalPriceStatus = totalPriceStatus;
-  }
+  public void setCurrencyCode(@javax.annotation.Nonnull Currency currencyCode) {
+            this.currencyCode = currencyCode;
+        }
 
+        public GpayTransactionInfo totalPriceStatus(@javax.annotation.Nonnull String totalPriceStatus) {
+        
+        this.totalPriceStatus = totalPriceStatus;
+        return this;
+        }
 
-  public GpayTransactionInfo totalPrice(String totalPrice) {
-    
-    this.totalPrice = totalPrice;
-    return this;
-  }
-
-   /**
-   * The total price
-   * @return totalPrice
-  **/
-  @javax.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_TOTAL_PRICE)
+    /**
+        * The total price status (ex: &#39;FINAL&#39;)
+    * @return totalPriceStatus
+    */
+    @javax.annotation.Nonnull
+      @JsonProperty(JSON_PROPERTY_TOTAL_PRICE_STATUS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-  public String getTotalPrice() {
-    return totalPrice;
-  }
+    public String getTotalPriceStatus() {
+        return totalPriceStatus;
+    }
 
 
-  @JsonProperty(JSON_PROPERTY_TOTAL_PRICE)
+          @JsonProperty(JSON_PROPERTY_TOTAL_PRICE_STATUS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setTotalPrice(String totalPrice) {
-    this.totalPrice = totalPrice;
-  }
+  public void setTotalPriceStatus(@javax.annotation.Nonnull String totalPriceStatus) {
+            this.totalPriceStatus = totalPriceStatus;
+        }
 
-  @Override
-  public boolean equals(Object o) {
+        public GpayTransactionInfo totalPrice(@javax.annotation.Nonnull String totalPrice) {
+        
+        this.totalPrice = totalPrice;
+        return this;
+        }
+
+    /**
+        * The total price
+    * @return totalPrice
+    */
+    @javax.annotation.Nonnull
+      @JsonProperty(JSON_PROPERTY_TOTAL_PRICE)
+  @JsonInclude(value = JsonInclude.Include.ALWAYS)
+
+    public String getTotalPrice() {
+        return totalPrice;
+    }
+
+
+          @JsonProperty(JSON_PROPERTY_TOTAL_PRICE)
+  @JsonInclude(value = JsonInclude.Include.ALWAYS)
+  public void setTotalPrice(@javax.annotation.Nonnull String totalPrice) {
+            this.totalPrice = totalPrice;
+        }
+
+@Override
+public boolean equals(Object o) {
     if (this == o) {
-      return true;
+    return true;
     }
     if (o == null || getClass() != o.getClass()) {
-      return false;
+    return false;
     }
-    GpayTransactionInfo gpayTransactionInfo = (GpayTransactionInfo) o;
-    return Objects.equals(this.countryCode, gpayTransactionInfo.countryCode) &&
+        GpayTransactionInfo gpayTransactionInfo = (GpayTransactionInfo) o;
+        return Objects.equals(this.countryCode, gpayTransactionInfo.countryCode) &&
         Objects.equals(this.currencyCode, gpayTransactionInfo.currencyCode) &&
         Objects.equals(this.totalPriceStatus, gpayTransactionInfo.totalPriceStatus) &&
         Objects.equals(this.totalPrice, gpayTransactionInfo.totalPrice);
-  }
+}
 
-  @Override
-  public int hashCode() {
-    return Objects.hash(countryCode, currencyCode, totalPriceStatus, totalPrice);
-  }
+    @Override
+    public int hashCode() {
+        return Objects.hash(countryCode, currencyCode, totalPriceStatus, totalPrice);
+    }
 
-  @Override
-  public String toString() {
+    @Override
+    public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class GpayTransactionInfo {\n");
-    sb.append("    countryCode: ").append(toIndentedString(countryCode)).append("\n");
-    sb.append("    currencyCode: ").append(toIndentedString(currencyCode)).append("\n");
-    sb.append("    totalPriceStatus: ").append(toIndentedString(totalPriceStatus)).append("\n");
-    sb.append("    totalPrice: ").append(toIndentedString(totalPrice)).append("\n");
+        sb.append("    countryCode: ").append(toIndentedString(countryCode)).append("\n");
+        sb.append("    currencyCode: ").append(toIndentedString(currencyCode)).append("\n");
+        sb.append("    totalPriceStatus: ").append(toIndentedString(totalPriceStatus)).append("\n");
+        sb.append("    totalPrice: ").append(toIndentedString(totalPrice)).append("\n");
     sb.append("}");
     return sb.toString();
-  }
+    }
 
-  /**
-   * Convert the given object to string with each line indented by 4 spaces
-   * (except the first line).
-   */
-  private String toIndentedString(Object o) {
+    /**
+    * Convert the given object to string with each line indented by 4 spaces
+    * (except the first line).
+    */
+    private String toIndentedString(Object o) {
     if (o == null) {
-      return "null";
+    return "null";
     }
     return o.toString().replace("\n", "\n    ");
-  }
-
-  /**
-   * Convert the instance into URL query string.
-   *
-   * @return URL query string
-   */
-  public String toUrlQueryString() {
-    return toUrlQueryString(null);
-  }
-
-  /**
-   * Convert the instance into URL query string.
-   *
-   * @param prefix prefix of the query string
-   * @return URL query string
-   */
-  public String toUrlQueryString(String prefix) {
-    String suffix = "";
-    String containerSuffix = "";
-    String containerPrefix = "";
-    if (prefix == null) {
-      // style=form, explode=true, e.g. /pet?name=cat&type=manx
-      prefix = "";
-    } else {
-      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
-      prefix = prefix + "[";
-      suffix = "]";
-      containerSuffix = "]";
-      containerPrefix = "[";
     }
 
-    StringJoiner joiner = new StringJoiner("&");
+        /**
+        * Convert the instance into URL query string.
+        *
+        * @return URL query string
+        */
+        public String toUrlQueryString() {
+        return toUrlQueryString(null);
+        }
 
-    // add `country_code` to the URL query string
-    if (getCountryCode() != null) {
-      try {
-        joiner.add(String.format("%scountry_code%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCountryCode()), "UTF-8").replaceAll("\\+", "%20")));
-      } catch (UnsupportedEncodingException e) {
-        // Should never happen, UTF-8 is always supported
-        throw new RuntimeException(e);
-      }
+        /**
+        * Convert the instance into URL query string.
+        *
+        * @param prefix prefix of the query string
+        * @return URL query string
+        */
+        public String toUrlQueryString(String prefix) {
+        String suffix = "";
+        String containerSuffix = "";
+        String containerPrefix = "";
+        if (prefix == null) {
+        // style=form, explode=true, e.g. /pet?name=cat&type=manx
+        prefix = "";
+        } else {
+        // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+        prefix = prefix + "[";
+        suffix = "]";
+        containerSuffix = "]";
+        containerPrefix = "[";
+        }
+
+        StringJoiner joiner = new StringJoiner("&");
+
+            // add `country_code` to the URL query string
+                            if (getCountryCode() != null) {
+                            try {
+                            joiner.add(String.format("%scountry_code%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCountryCode()), "UTF-8").replaceAll("\\+", "%20")));
+                            } catch (UnsupportedEncodingException e) {
+                            // Should never happen, UTF-8 is always supported
+                            throw new RuntimeException(e);
+                            }
+                            }
+
+            // add `currency_code` to the URL query string
+                            if (getCurrencyCode() != null) {
+                            try {
+                            joiner.add(String.format("%scurrency_code%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCurrencyCode()), "UTF-8").replaceAll("\\+", "%20")));
+                            } catch (UnsupportedEncodingException e) {
+                            // Should never happen, UTF-8 is always supported
+                            throw new RuntimeException(e);
+                            }
+                            }
+
+            // add `total_price_status` to the URL query string
+                        if (getTotalPriceStatus() != null) {
+                        try {
+                        joiner.add(String.format("%stotal_price_status%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getTotalPriceStatus()), "UTF-8").replaceAll("\\+", "%20")));
+                        } catch (UnsupportedEncodingException e) {
+                        // Should never happen, UTF-8 is always supported
+                        throw new RuntimeException(e);
+                        }
+                        }
+
+            // add `total_price` to the URL query string
+                        if (getTotalPrice() != null) {
+                        try {
+                        joiner.add(String.format("%stotal_price%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getTotalPrice()), "UTF-8").replaceAll("\\+", "%20")));
+                        } catch (UnsupportedEncodingException e) {
+                        // Should never happen, UTF-8 is always supported
+                        throw new RuntimeException(e);
+                        }
+                        }
+
+        return joiner.toString();
+        }
+
     }
-
-    // add `currency_code` to the URL query string
-    if (getCurrencyCode() != null) {
-      try {
-        joiner.add(String.format("%scurrency_code%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCurrencyCode()), "UTF-8").replaceAll("\\+", "%20")));
-      } catch (UnsupportedEncodingException e) {
-        // Should never happen, UTF-8 is always supported
-        throw new RuntimeException(e);
-      }
-    }
-
-    // add `total_price_status` to the URL query string
-    if (getTotalPriceStatus() != null) {
-      try {
-        joiner.add(String.format("%stotal_price_status%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getTotalPriceStatus()), "UTF-8").replaceAll("\\+", "%20")));
-      } catch (UnsupportedEncodingException e) {
-        // Should never happen, UTF-8 is always supported
-        throw new RuntimeException(e);
-      }
-    }
-
-    // add `total_price` to the URL query string
-    if (getTotalPrice() != null) {
-      try {
-        joiner.add(String.format("%stotal_price%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getTotalPrice()), "UTF-8").replaceAll("\\+", "%20")));
-      } catch (UnsupportedEncodingException e) {
-        // Should never happen, UTF-8 is always supported
-        throw new RuntimeException(e);
-      }
-    }
-
-    return joiner.toString();
-  }
-
-}
 

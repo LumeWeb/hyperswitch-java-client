@@ -22,22 +22,21 @@ import org.openapitools.jackson.nullable.JsonNullable;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.openapitools.jackson.nullable.JsonNullable;
 import java.util.NoSuchElementException;
-import org.junit.Assert;
-import org.junit.Ignore;
-import org.junit.Test;
-
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Test;
 
 /**
  * Model tests for NoonData
  */
-public class NoonDataTest {
+class NoonDataTest {
     private final NoonData model = new NoonData();
 
     /**
      * Model tests for NoonData
      */
     @Test
-    public void testNoonData() {
+    void testNoonData() {
         // TODO: test NoonData
     }
 
@@ -45,7 +44,7 @@ public class NoonDataTest {
      * Test the property 'orderCategory'
      */
     @Test
-    public void orderCategoryTest() {
+    void orderCategoryTest() {
         // TODO: test orderCategory
     }
 

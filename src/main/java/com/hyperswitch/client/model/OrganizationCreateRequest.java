@@ -31,236 +31,237 @@ import java.net.URLEncoder;
 import java.util.StringJoiner;
 
 /**
- * OrganizationCreateRequest
- */
-@JsonPropertyOrder({
-  OrganizationCreateRequest.JSON_PROPERTY_ORGANIZATION_NAME,
-  OrganizationCreateRequest.JSON_PROPERTY_ORGANIZATION_DETAILS,
-  OrganizationCreateRequest.JSON_PROPERTY_METADATA
-})
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+* OrganizationCreateRequest
+*/
+    @JsonPropertyOrder({
+        OrganizationCreateRequest.JSON_PROPERTY_ORGANIZATION_NAME,
+        OrganizationCreateRequest.JSON_PROPERTY_ORGANIZATION_DETAILS,
+        OrganizationCreateRequest.JSON_PROPERTY_METADATA
+    })
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class OrganizationCreateRequest {
-  public static final String JSON_PROPERTY_ORGANIZATION_NAME = "organization_name";
-  private String organizationName;
+        public static final String JSON_PROPERTY_ORGANIZATION_NAME = "organization_name";
+    @javax.annotation.Nonnull
+            private String organizationName;
 
-  public static final String JSON_PROPERTY_ORGANIZATION_DETAILS = "organization_details";
-  private JsonNullable<Object> organizationDetails = JsonNullable.<Object>undefined();
+        public static final String JSON_PROPERTY_ORGANIZATION_DETAILS = "organization_details";
+    @javax.annotation.Nullable
+            private JsonNullable<Object> organizationDetails = JsonNullable.<Object>undefined();
 
-  public static final String JSON_PROPERTY_METADATA = "metadata";
-  private JsonNullable<Object> metadata = JsonNullable.<Object>undefined();
+        public static final String JSON_PROPERTY_METADATA = "metadata";
+    @javax.annotation.Nullable
+            private JsonNullable<Object> metadata = JsonNullable.<Object>undefined();
 
-  public OrganizationCreateRequest() {
-  }
+public OrganizationCreateRequest() {
+}
 
-  public OrganizationCreateRequest organizationName(String organizationName) {
-    
-    this.organizationName = organizationName;
-    return this;
-  }
+        public OrganizationCreateRequest organizationName(@javax.annotation.Nonnull String organizationName) {
+        
+        this.organizationName = organizationName;
+        return this;
+        }
 
-   /**
-   * Name of the organization
-   * @return organizationName
-  **/
-  @javax.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_ORGANIZATION_NAME)
+    /**
+        * Name of the organization
+    * @return organizationName
+    */
+    @javax.annotation.Nonnull
+      @JsonProperty(JSON_PROPERTY_ORGANIZATION_NAME)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-  public String getOrganizationName() {
-    return organizationName;
-  }
+    public String getOrganizationName() {
+        return organizationName;
+    }
 
 
-  @JsonProperty(JSON_PROPERTY_ORGANIZATION_NAME)
+          @JsonProperty(JSON_PROPERTY_ORGANIZATION_NAME)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setOrganizationName(String organizationName) {
-    this.organizationName = organizationName;
-  }
+  public void setOrganizationName(@javax.annotation.Nonnull String organizationName) {
+            this.organizationName = organizationName;
+        }
 
+        public OrganizationCreateRequest organizationDetails(@javax.annotation.Nullable Object organizationDetails) {
+        this.organizationDetails = JsonNullable.<Object>of(organizationDetails);
+        
+        return this;
+        }
 
-  public OrganizationCreateRequest organizationDetails(Object organizationDetails) {
-    this.organizationDetails = JsonNullable.<Object>of(organizationDetails);
+    /**
+        * Details about the organization
+    * @return organizationDetails
+    */
+    @javax.annotation.Nullable
+        @JsonIgnore
     
-    return this;
-  }
+    public Object getOrganizationDetails() {
+                return organizationDetails.orElse(null);
+    }
 
-   /**
-   * Details about the organization
-   * @return organizationDetails
-  **/
-  @javax.annotation.Nullable
-  @JsonIgnore
-
-  public Object getOrganizationDetails() {
-        return organizationDetails.orElse(null);
-  }
-
-  @JsonProperty(JSON_PROPERTY_ORGANIZATION_DETAILS)
+          @JsonProperty(JSON_PROPERTY_ORGANIZATION_DETAILS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-  public JsonNullable<Object> getOrganizationDetails_JsonNullable() {
-    return organizationDetails;
-  }
-  
-  @JsonProperty(JSON_PROPERTY_ORGANIZATION_DETAILS)
-  public void setOrganizationDetails_JsonNullable(JsonNullable<Object> organizationDetails) {
-    this.organizationDetails = organizationDetails;
-  }
-
-  public void setOrganizationDetails(Object organizationDetails) {
-    this.organizationDetails = JsonNullable.<Object>of(organizationDetails);
-  }
-
-
-  public OrganizationCreateRequest metadata(Object metadata) {
-    this.metadata = JsonNullable.<Object>of(metadata);
+        public JsonNullable<Object> getOrganizationDetails_JsonNullable() {
+        return organizationDetails;
+        }
     
-    return this;
-  }
+        @JsonProperty(JSON_PROPERTY_ORGANIZATION_DETAILS)
+        public void setOrganizationDetails_JsonNullable(JsonNullable<Object> organizationDetails) {
+        this.organizationDetails = organizationDetails;
+        }
 
-   /**
-   * Metadata is useful for storing additional, unstructured information on an object.
-   * @return metadata
-  **/
-  @javax.annotation.Nullable
-  @JsonIgnore
+          public void setOrganizationDetails(@javax.annotation.Nullable Object organizationDetails) {
+            this.organizationDetails = JsonNullable.<Object>of(organizationDetails);
+        }
 
-  public Object getMetadata() {
-        return metadata.orElse(null);
-  }
+        public OrganizationCreateRequest metadata(@javax.annotation.Nullable Object metadata) {
+        this.metadata = JsonNullable.<Object>of(metadata);
+        
+        return this;
+        }
 
-  @JsonProperty(JSON_PROPERTY_METADATA)
+    /**
+        * Metadata is useful for storing additional, unstructured information on an object.
+    * @return metadata
+    */
+    @javax.annotation.Nullable
+        @JsonIgnore
+    
+    public Object getMetadata() {
+                return metadata.orElse(null);
+    }
+
+          @JsonProperty(JSON_PROPERTY_METADATA)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-  public JsonNullable<Object> getMetadata_JsonNullable() {
-    return metadata;
-  }
-  
-  @JsonProperty(JSON_PROPERTY_METADATA)
-  public void setMetadata_JsonNullable(JsonNullable<Object> metadata) {
-    this.metadata = metadata;
-  }
+        public JsonNullable<Object> getMetadata_JsonNullable() {
+        return metadata;
+        }
+    
+        @JsonProperty(JSON_PROPERTY_METADATA)
+        public void setMetadata_JsonNullable(JsonNullable<Object> metadata) {
+        this.metadata = metadata;
+        }
 
-  public void setMetadata(Object metadata) {
-    this.metadata = JsonNullable.<Object>of(metadata);
-  }
+          public void setMetadata(@javax.annotation.Nullable Object metadata) {
+            this.metadata = JsonNullable.<Object>of(metadata);
+        }
 
-  @Override
-  public boolean equals(Object o) {
+@Override
+public boolean equals(Object o) {
     if (this == o) {
-      return true;
+    return true;
     }
     if (o == null || getClass() != o.getClass()) {
-      return false;
+    return false;
     }
-    OrganizationCreateRequest organizationCreateRequest = (OrganizationCreateRequest) o;
-    return Objects.equals(this.organizationName, organizationCreateRequest.organizationName) &&
+        OrganizationCreateRequest organizationCreateRequest = (OrganizationCreateRequest) o;
+        return Objects.equals(this.organizationName, organizationCreateRequest.organizationName) &&
         equalsNullable(this.organizationDetails, organizationCreateRequest.organizationDetails) &&
         equalsNullable(this.metadata, organizationCreateRequest.metadata);
-  }
+}
 
-  private static <T> boolean equalsNullable(JsonNullable<T> a, JsonNullable<T> b) {
-    return a == b || (a != null && b != null && a.isPresent() && b.isPresent() && Objects.deepEquals(a.get(), b.get()));
-  }
+    private static <T> boolean equalsNullable(JsonNullable<T> a, JsonNullable<T> b) {
+        return a == b || (a != null && b != null && a.isPresent() && b.isPresent() && Objects.deepEquals(a.get(), b.get()));
+        }
 
-  @Override
-  public int hashCode() {
-    return Objects.hash(organizationName, hashCodeNullable(organizationDetails), hashCodeNullable(metadata));
-  }
-
-  private static <T> int hashCodeNullable(JsonNullable<T> a) {
-    if (a == null) {
-      return 1;
+    @Override
+    public int hashCode() {
+        return Objects.hash(organizationName, hashCodeNullable(organizationDetails), hashCodeNullable(metadata));
     }
-    return a.isPresent() ? Arrays.deepHashCode(new Object[]{a.get()}) : 31;
-  }
 
-  @Override
-  public String toString() {
+        private static <T> int hashCodeNullable(JsonNullable<T> a) {
+        if (a == null) {
+        return 1;
+        }
+        return a.isPresent() ? Arrays.deepHashCode(new Object[]{a.get()}) : 31;
+        }
+
+    @Override
+    public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class OrganizationCreateRequest {\n");
-    sb.append("    organizationName: ").append(toIndentedString(organizationName)).append("\n");
-    sb.append("    organizationDetails: ").append(toIndentedString(organizationDetails)).append("\n");
-    sb.append("    metadata: ").append(toIndentedString(metadata)).append("\n");
+        sb.append("    organizationName: ").append(toIndentedString(organizationName)).append("\n");
+        sb.append("    organizationDetails: ").append(toIndentedString(organizationDetails)).append("\n");
+        sb.append("    metadata: ").append(toIndentedString(metadata)).append("\n");
     sb.append("}");
     return sb.toString();
-  }
+    }
 
-  /**
-   * Convert the given object to string with each line indented by 4 spaces
-   * (except the first line).
-   */
-  private String toIndentedString(Object o) {
+    /**
+    * Convert the given object to string with each line indented by 4 spaces
+    * (except the first line).
+    */
+    private String toIndentedString(Object o) {
     if (o == null) {
-      return "null";
+    return "null";
     }
     return o.toString().replace("\n", "\n    ");
-  }
-
-  /**
-   * Convert the instance into URL query string.
-   *
-   * @return URL query string
-   */
-  public String toUrlQueryString() {
-    return toUrlQueryString(null);
-  }
-
-  /**
-   * Convert the instance into URL query string.
-   *
-   * @param prefix prefix of the query string
-   * @return URL query string
-   */
-  public String toUrlQueryString(String prefix) {
-    String suffix = "";
-    String containerSuffix = "";
-    String containerPrefix = "";
-    if (prefix == null) {
-      // style=form, explode=true, e.g. /pet?name=cat&type=manx
-      prefix = "";
-    } else {
-      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
-      prefix = prefix + "[";
-      suffix = "]";
-      containerSuffix = "]";
-      containerPrefix = "[";
     }
 
-    StringJoiner joiner = new StringJoiner("&");
+        /**
+        * Convert the instance into URL query string.
+        *
+        * @return URL query string
+        */
+        public String toUrlQueryString() {
+        return toUrlQueryString(null);
+        }
 
-    // add `organization_name` to the URL query string
-    if (getOrganizationName() != null) {
-      try {
-        joiner.add(String.format("%sorganization_name%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getOrganizationName()), "UTF-8").replaceAll("\\+", "%20")));
-      } catch (UnsupportedEncodingException e) {
-        // Should never happen, UTF-8 is always supported
-        throw new RuntimeException(e);
-      }
+        /**
+        * Convert the instance into URL query string.
+        *
+        * @param prefix prefix of the query string
+        * @return URL query string
+        */
+        public String toUrlQueryString(String prefix) {
+        String suffix = "";
+        String containerSuffix = "";
+        String containerPrefix = "";
+        if (prefix == null) {
+        // style=form, explode=true, e.g. /pet?name=cat&type=manx
+        prefix = "";
+        } else {
+        // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+        prefix = prefix + "[";
+        suffix = "]";
+        containerSuffix = "]";
+        containerPrefix = "[";
+        }
+
+        StringJoiner joiner = new StringJoiner("&");
+
+            // add `organization_name` to the URL query string
+                        if (getOrganizationName() != null) {
+                        try {
+                        joiner.add(String.format("%sorganization_name%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getOrganizationName()), "UTF-8").replaceAll("\\+", "%20")));
+                        } catch (UnsupportedEncodingException e) {
+                        // Should never happen, UTF-8 is always supported
+                        throw new RuntimeException(e);
+                        }
+                        }
+
+            // add `organization_details` to the URL query string
+                        if (getOrganizationDetails() != null) {
+                        try {
+                        joiner.add(String.format("%sorganization_details%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getOrganizationDetails()), "UTF-8").replaceAll("\\+", "%20")));
+                        } catch (UnsupportedEncodingException e) {
+                        // Should never happen, UTF-8 is always supported
+                        throw new RuntimeException(e);
+                        }
+                        }
+
+            // add `metadata` to the URL query string
+                        if (getMetadata() != null) {
+                        try {
+                        joiner.add(String.format("%smetadata%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getMetadata()), "UTF-8").replaceAll("\\+", "%20")));
+                        } catch (UnsupportedEncodingException e) {
+                        // Should never happen, UTF-8 is always supported
+                        throw new RuntimeException(e);
+                        }
+                        }
+
+        return joiner.toString();
+        }
+
     }
-
-    // add `organization_details` to the URL query string
-    if (getOrganizationDetails() != null) {
-      try {
-        joiner.add(String.format("%sorganization_details%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getOrganizationDetails()), "UTF-8").replaceAll("\\+", "%20")));
-      } catch (UnsupportedEncodingException e) {
-        // Should never happen, UTF-8 is always supported
-        throw new RuntimeException(e);
-      }
-    }
-
-    // add `metadata` to the URL query string
-    if (getMetadata() != null) {
-      try {
-        joiner.add(String.format("%smetadata%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getMetadata()), "UTF-8").replaceAll("\\+", "%20")));
-      } catch (UnsupportedEncodingException e) {
-        // Should never happen, UTF-8 is always supported
-        throw new RuntimeException(e);
-      }
-    }
-
-    return joiner.toString();
-  }
-
-}
 

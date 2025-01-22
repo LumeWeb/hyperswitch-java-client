@@ -32,186 +32,187 @@ import java.net.URLEncoder;
 import java.util.StringJoiner;
 
 /**
- * MifinityData
- */
-@JsonPropertyOrder({
-  MifinityData.JSON_PROPERTY_DATE_OF_BIRTH,
-  MifinityData.JSON_PROPERTY_LANGUAGE_PREFERENCE
-})
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+* MifinityData
+*/
+    @JsonPropertyOrder({
+        MifinityData.JSON_PROPERTY_DATE_OF_BIRTH,
+        MifinityData.JSON_PROPERTY_LANGUAGE_PREFERENCE
+    })
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class MifinityData {
-  public static final String JSON_PROPERTY_DATE_OF_BIRTH = "date_of_birth";
-  private LocalDate dateOfBirth;
+        public static final String JSON_PROPERTY_DATE_OF_BIRTH = "date_of_birth";
+    @javax.annotation.Nonnull
+            private LocalDate dateOfBirth;
 
-  public static final String JSON_PROPERTY_LANGUAGE_PREFERENCE = "language_preference";
-  private JsonNullable<String> languagePreference = JsonNullable.<String>undefined();
+        public static final String JSON_PROPERTY_LANGUAGE_PREFERENCE = "language_preference";
+    @javax.annotation.Nullable
+            private JsonNullable<String> languagePreference = JsonNullable.<String>undefined();
 
-  public MifinityData() {
-  }
+public MifinityData() {
+}
 
-  public MifinityData dateOfBirth(LocalDate dateOfBirth) {
-    
-    this.dateOfBirth = dateOfBirth;
-    return this;
-  }
+        public MifinityData dateOfBirth(@javax.annotation.Nonnull LocalDate dateOfBirth) {
+        
+        this.dateOfBirth = dateOfBirth;
+        return this;
+        }
 
-   /**
-   * Get dateOfBirth
-   * @return dateOfBirth
-  **/
-  @javax.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_DATE_OF_BIRTH)
+    /**
+        * Get dateOfBirth
+    * @return dateOfBirth
+    */
+    @javax.annotation.Nonnull
+      @JsonProperty(JSON_PROPERTY_DATE_OF_BIRTH)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-  public LocalDate getDateOfBirth() {
-    return dateOfBirth;
-  }
+    public LocalDate getDateOfBirth() {
+        return dateOfBirth;
+    }
 
 
-  @JsonProperty(JSON_PROPERTY_DATE_OF_BIRTH)
+          @JsonProperty(JSON_PROPERTY_DATE_OF_BIRTH)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setDateOfBirth(LocalDate dateOfBirth) {
-    this.dateOfBirth = dateOfBirth;
-  }
+  public void setDateOfBirth(@javax.annotation.Nonnull LocalDate dateOfBirth) {
+            this.dateOfBirth = dateOfBirth;
+        }
 
+        public MifinityData languagePreference(@javax.annotation.Nullable String languagePreference) {
+        this.languagePreference = JsonNullable.<String>of(languagePreference);
+        
+        return this;
+        }
 
-  public MifinityData languagePreference(String languagePreference) {
-    this.languagePreference = JsonNullable.<String>of(languagePreference);
+    /**
+        * Get languagePreference
+    * @return languagePreference
+    */
+    @javax.annotation.Nullable
+        @JsonIgnore
     
-    return this;
-  }
+    public String getLanguagePreference() {
+                return languagePreference.orElse(null);
+    }
 
-   /**
-   * Get languagePreference
-   * @return languagePreference
-  **/
-  @javax.annotation.Nullable
-  @JsonIgnore
-
-  public String getLanguagePreference() {
-        return languagePreference.orElse(null);
-  }
-
-  @JsonProperty(JSON_PROPERTY_LANGUAGE_PREFERENCE)
+          @JsonProperty(JSON_PROPERTY_LANGUAGE_PREFERENCE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-  public JsonNullable<String> getLanguagePreference_JsonNullable() {
-    return languagePreference;
-  }
-  
-  @JsonProperty(JSON_PROPERTY_LANGUAGE_PREFERENCE)
-  public void setLanguagePreference_JsonNullable(JsonNullable<String> languagePreference) {
-    this.languagePreference = languagePreference;
-  }
+        public JsonNullable<String> getLanguagePreference_JsonNullable() {
+        return languagePreference;
+        }
+    
+        @JsonProperty(JSON_PROPERTY_LANGUAGE_PREFERENCE)
+        public void setLanguagePreference_JsonNullable(JsonNullable<String> languagePreference) {
+        this.languagePreference = languagePreference;
+        }
 
-  public void setLanguagePreference(String languagePreference) {
-    this.languagePreference = JsonNullable.<String>of(languagePreference);
-  }
+          public void setLanguagePreference(@javax.annotation.Nullable String languagePreference) {
+            this.languagePreference = JsonNullable.<String>of(languagePreference);
+        }
 
-  @Override
-  public boolean equals(Object o) {
+@Override
+public boolean equals(Object o) {
     if (this == o) {
-      return true;
+    return true;
     }
     if (o == null || getClass() != o.getClass()) {
-      return false;
+    return false;
     }
-    MifinityData mifinityData = (MifinityData) o;
-    return Objects.equals(this.dateOfBirth, mifinityData.dateOfBirth) &&
+        MifinityData mifinityData = (MifinityData) o;
+        return Objects.equals(this.dateOfBirth, mifinityData.dateOfBirth) &&
         equalsNullable(this.languagePreference, mifinityData.languagePreference);
-  }
+}
 
-  private static <T> boolean equalsNullable(JsonNullable<T> a, JsonNullable<T> b) {
-    return a == b || (a != null && b != null && a.isPresent() && b.isPresent() && Objects.deepEquals(a.get(), b.get()));
-  }
+    private static <T> boolean equalsNullable(JsonNullable<T> a, JsonNullable<T> b) {
+        return a == b || (a != null && b != null && a.isPresent() && b.isPresent() && Objects.deepEquals(a.get(), b.get()));
+        }
 
-  @Override
-  public int hashCode() {
-    return Objects.hash(dateOfBirth, hashCodeNullable(languagePreference));
-  }
-
-  private static <T> int hashCodeNullable(JsonNullable<T> a) {
-    if (a == null) {
-      return 1;
+    @Override
+    public int hashCode() {
+        return Objects.hash(dateOfBirth, hashCodeNullable(languagePreference));
     }
-    return a.isPresent() ? Arrays.deepHashCode(new Object[]{a.get()}) : 31;
-  }
 
-  @Override
-  public String toString() {
+        private static <T> int hashCodeNullable(JsonNullable<T> a) {
+        if (a == null) {
+        return 1;
+        }
+        return a.isPresent() ? Arrays.deepHashCode(new Object[]{a.get()}) : 31;
+        }
+
+    @Override
+    public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class MifinityData {\n");
-    sb.append("    dateOfBirth: ").append(toIndentedString(dateOfBirth)).append("\n");
-    sb.append("    languagePreference: ").append(toIndentedString(languagePreference)).append("\n");
+        sb.append("    dateOfBirth: ").append(toIndentedString(dateOfBirth)).append("\n");
+        sb.append("    languagePreference: ").append(toIndentedString(languagePreference)).append("\n");
     sb.append("}");
     return sb.toString();
-  }
+    }
 
-  /**
-   * Convert the given object to string with each line indented by 4 spaces
-   * (except the first line).
-   */
-  private String toIndentedString(Object o) {
+    /**
+    * Convert the given object to string with each line indented by 4 spaces
+    * (except the first line).
+    */
+    private String toIndentedString(Object o) {
     if (o == null) {
-      return "null";
+    return "null";
     }
     return o.toString().replace("\n", "\n    ");
-  }
-
-  /**
-   * Convert the instance into URL query string.
-   *
-   * @return URL query string
-   */
-  public String toUrlQueryString() {
-    return toUrlQueryString(null);
-  }
-
-  /**
-   * Convert the instance into URL query string.
-   *
-   * @param prefix prefix of the query string
-   * @return URL query string
-   */
-  public String toUrlQueryString(String prefix) {
-    String suffix = "";
-    String containerSuffix = "";
-    String containerPrefix = "";
-    if (prefix == null) {
-      // style=form, explode=true, e.g. /pet?name=cat&type=manx
-      prefix = "";
-    } else {
-      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
-      prefix = prefix + "[";
-      suffix = "]";
-      containerSuffix = "]";
-      containerPrefix = "[";
     }
 
-    StringJoiner joiner = new StringJoiner("&");
+        /**
+        * Convert the instance into URL query string.
+        *
+        * @return URL query string
+        */
+        public String toUrlQueryString() {
+        return toUrlQueryString(null);
+        }
 
-    // add `date_of_birth` to the URL query string
-    if (getDateOfBirth() != null) {
-      try {
-        joiner.add(String.format("%sdate_of_birth%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getDateOfBirth()), "UTF-8").replaceAll("\\+", "%20")));
-      } catch (UnsupportedEncodingException e) {
-        // Should never happen, UTF-8 is always supported
-        throw new RuntimeException(e);
-      }
+        /**
+        * Convert the instance into URL query string.
+        *
+        * @param prefix prefix of the query string
+        * @return URL query string
+        */
+        public String toUrlQueryString(String prefix) {
+        String suffix = "";
+        String containerSuffix = "";
+        String containerPrefix = "";
+        if (prefix == null) {
+        // style=form, explode=true, e.g. /pet?name=cat&type=manx
+        prefix = "";
+        } else {
+        // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+        prefix = prefix + "[";
+        suffix = "]";
+        containerSuffix = "]";
+        containerPrefix = "[";
+        }
+
+        StringJoiner joiner = new StringJoiner("&");
+
+            // add `date_of_birth` to the URL query string
+                            if (getDateOfBirth() != null) {
+                            try {
+                            joiner.add(String.format("%sdate_of_birth%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getDateOfBirth()), "UTF-8").replaceAll("\\+", "%20")));
+                            } catch (UnsupportedEncodingException e) {
+                            // Should never happen, UTF-8 is always supported
+                            throw new RuntimeException(e);
+                            }
+                            }
+
+            // add `language_preference` to the URL query string
+                        if (getLanguagePreference() != null) {
+                        try {
+                        joiner.add(String.format("%slanguage_preference%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getLanguagePreference()), "UTF-8").replaceAll("\\+", "%20")));
+                        } catch (UnsupportedEncodingException e) {
+                        // Should never happen, UTF-8 is always supported
+                        throw new RuntimeException(e);
+                        }
+                        }
+
+        return joiner.toString();
+        }
+
     }
-
-    // add `language_preference` to the URL query string
-    if (getLanguagePreference() != null) {
-      try {
-        joiner.add(String.format("%slanguage_preference%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getLanguagePreference()), "UTF-8").replaceAll("\\+", "%20")));
-      } catch (UnsupportedEncodingException e) {
-        // Should never happen, UTF-8 is always supported
-        throw new RuntimeException(e);
-      }
-    }
-
-    return joiner.toString();
-  }
-
-}
 

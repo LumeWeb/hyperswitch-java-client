@@ -15,9 +15,9 @@ package com.hyperswitch.client.api;
 
 import com.hyperswitch.client.ApiException;
 import com.hyperswitch.client.model.PollResponse;
-import org.junit.Test;
-import org.junit.Ignore;
-import org.junit.Assert;
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Test;
 
 import java.time.LocalDate;
 import java.time.OffsetDateTime;
@@ -29,7 +29,7 @@ import java.util.Map;
 /**
  * API tests for PollApi
  */
-@Ignore
+@Disabled
 public class PollApiTest {
 
     private final PollApi api = new PollApi();

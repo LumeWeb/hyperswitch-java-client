@@ -22,22 +22,21 @@ import org.openapitools.jackson.nullable.JsonNullable;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.openapitools.jackson.nullable.JsonNullable;
 import java.util.NoSuchElementException;
-import org.junit.Assert;
-import org.junit.Ignore;
-import org.junit.Test;
-
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Test;
 
 /**
  * Model tests for GpayMerchantInfo
  */
-public class GpayMerchantInfoTest {
+class GpayMerchantInfoTest {
     private final GpayMerchantInfo model = new GpayMerchantInfo();
 
     /**
      * Model tests for GpayMerchantInfo
      */
     @Test
-    public void testGpayMerchantInfo() {
+    void testGpayMerchantInfo() {
         // TODO: test GpayMerchantInfo
     }
 
@@ -45,7 +44,7 @@ public class GpayMerchantInfoTest {
      * Test the property 'merchantId'
      */
     @Test
-    public void merchantIdTest() {
+    void merchantIdTest() {
         // TODO: test merchantId
     }
 
@@ -53,7 +52,7 @@ public class GpayMerchantInfoTest {
      * Test the property 'merchantName'
      */
     @Test
-    public void merchantNameTest() {
+    void merchantNameTest() {
         // TODO: test merchantName
     }
 

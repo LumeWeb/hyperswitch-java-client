@@ -37,324 +37,325 @@ import java.net.URLEncoder;
 import java.util.StringJoiner;
 
 /**
- * BankTransferNextStepsData
- */
-@JsonPropertyOrder({
-  BankTransferNextStepsData.JSON_PROPERTY_DOKU_BANK_TRANSFER_INSTRUCTIONS,
-  BankTransferNextStepsData.JSON_PROPERTY_ACH_CREDIT_TRANSFER,
-  BankTransferNextStepsData.JSON_PROPERTY_SEPA_BANK_INSTRUCTIONS,
-  BankTransferNextStepsData.JSON_PROPERTY_BACS_BANK_INSTRUCTIONS,
-  BankTransferNextStepsData.JSON_PROPERTY_MULTIBANCO,
-  BankTransferNextStepsData.JSON_PROPERTY_RECEIVER
-})
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+* BankTransferNextStepsData
+*/
+    @JsonPropertyOrder({
+        BankTransferNextStepsData.JSON_PROPERTY_DOKU_BANK_TRANSFER_INSTRUCTIONS,
+        BankTransferNextStepsData.JSON_PROPERTY_ACH_CREDIT_TRANSFER,
+        BankTransferNextStepsData.JSON_PROPERTY_SEPA_BANK_INSTRUCTIONS,
+        BankTransferNextStepsData.JSON_PROPERTY_BACS_BANK_INSTRUCTIONS,
+        BankTransferNextStepsData.JSON_PROPERTY_MULTIBANCO,
+        BankTransferNextStepsData.JSON_PROPERTY_RECEIVER
+    })
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class BankTransferNextStepsData {
-  public static final String JSON_PROPERTY_DOKU_BANK_TRANSFER_INSTRUCTIONS = "doku_bank_transfer_instructions";
-  private DokuBankTransferInstructions dokuBankTransferInstructions;
+        public static final String JSON_PROPERTY_DOKU_BANK_TRANSFER_INSTRUCTIONS = "doku_bank_transfer_instructions";
+    @javax.annotation.Nonnull
+            private DokuBankTransferInstructions dokuBankTransferInstructions;
 
-  public static final String JSON_PROPERTY_ACH_CREDIT_TRANSFER = "ach_credit_transfer";
-  private AchTransfer achCreditTransfer;
+        public static final String JSON_PROPERTY_ACH_CREDIT_TRANSFER = "ach_credit_transfer";
+    @javax.annotation.Nonnull
+            private AchTransfer achCreditTransfer;
 
-  public static final String JSON_PROPERTY_SEPA_BANK_INSTRUCTIONS = "sepa_bank_instructions";
-  private SepaBankTransferInstructions sepaBankInstructions;
+        public static final String JSON_PROPERTY_SEPA_BANK_INSTRUCTIONS = "sepa_bank_instructions";
+    @javax.annotation.Nonnull
+            private SepaBankTransferInstructions sepaBankInstructions;
 
-  public static final String JSON_PROPERTY_BACS_BANK_INSTRUCTIONS = "bacs_bank_instructions";
-  private BacsBankTransferInstructions bacsBankInstructions;
+        public static final String JSON_PROPERTY_BACS_BANK_INSTRUCTIONS = "bacs_bank_instructions";
+    @javax.annotation.Nonnull
+            private BacsBankTransferInstructions bacsBankInstructions;
 
-  public static final String JSON_PROPERTY_MULTIBANCO = "multibanco";
-  private MultibancoTransferInstructions multibanco;
+        public static final String JSON_PROPERTY_MULTIBANCO = "multibanco";
+    @javax.annotation.Nonnull
+            private MultibancoTransferInstructions multibanco;
 
-  public static final String JSON_PROPERTY_RECEIVER = "receiver";
-  private JsonNullable<ReceiverDetails> receiver = JsonNullable.<ReceiverDetails>undefined();
+        public static final String JSON_PROPERTY_RECEIVER = "receiver";
+    @javax.annotation.Nullable
+            private JsonNullable<ReceiverDetails> receiver = JsonNullable.<ReceiverDetails>undefined();
 
-  public BankTransferNextStepsData() {
-  }
+public BankTransferNextStepsData() {
+}
 
-  public BankTransferNextStepsData dokuBankTransferInstructions(DokuBankTransferInstructions dokuBankTransferInstructions) {
+        public BankTransferNextStepsData dokuBankTransferInstructions(@javax.annotation.Nonnull DokuBankTransferInstructions dokuBankTransferInstructions) {
+        
+        this.dokuBankTransferInstructions = dokuBankTransferInstructions;
+        return this;
+        }
+
+    /**
+        * Get dokuBankTransferInstructions
+    * @return dokuBankTransferInstructions
+    */
+    @javax.annotation.Nonnull
+      @JsonProperty(JSON_PROPERTY_DOKU_BANK_TRANSFER_INSTRUCTIONS)
+  @JsonInclude(value = JsonInclude.Include.ALWAYS)
+
+    public DokuBankTransferInstructions getDokuBankTransferInstructions() {
+        return dokuBankTransferInstructions;
+    }
+
+
+          @JsonProperty(JSON_PROPERTY_DOKU_BANK_TRANSFER_INSTRUCTIONS)
+  @JsonInclude(value = JsonInclude.Include.ALWAYS)
+  public void setDokuBankTransferInstructions(@javax.annotation.Nonnull DokuBankTransferInstructions dokuBankTransferInstructions) {
+            this.dokuBankTransferInstructions = dokuBankTransferInstructions;
+        }
+
+        public BankTransferNextStepsData achCreditTransfer(@javax.annotation.Nonnull AchTransfer achCreditTransfer) {
+        
+        this.achCreditTransfer = achCreditTransfer;
+        return this;
+        }
+
+    /**
+        * Get achCreditTransfer
+    * @return achCreditTransfer
+    */
+    @javax.annotation.Nonnull
+      @JsonProperty(JSON_PROPERTY_ACH_CREDIT_TRANSFER)
+  @JsonInclude(value = JsonInclude.Include.ALWAYS)
+
+    public AchTransfer getAchCreditTransfer() {
+        return achCreditTransfer;
+    }
+
+
+          @JsonProperty(JSON_PROPERTY_ACH_CREDIT_TRANSFER)
+  @JsonInclude(value = JsonInclude.Include.ALWAYS)
+  public void setAchCreditTransfer(@javax.annotation.Nonnull AchTransfer achCreditTransfer) {
+            this.achCreditTransfer = achCreditTransfer;
+        }
+
+        public BankTransferNextStepsData sepaBankInstructions(@javax.annotation.Nonnull SepaBankTransferInstructions sepaBankInstructions) {
+        
+        this.sepaBankInstructions = sepaBankInstructions;
+        return this;
+        }
+
+    /**
+        * Get sepaBankInstructions
+    * @return sepaBankInstructions
+    */
+    @javax.annotation.Nonnull
+      @JsonProperty(JSON_PROPERTY_SEPA_BANK_INSTRUCTIONS)
+  @JsonInclude(value = JsonInclude.Include.ALWAYS)
+
+    public SepaBankTransferInstructions getSepaBankInstructions() {
+        return sepaBankInstructions;
+    }
+
+
+          @JsonProperty(JSON_PROPERTY_SEPA_BANK_INSTRUCTIONS)
+  @JsonInclude(value = JsonInclude.Include.ALWAYS)
+  public void setSepaBankInstructions(@javax.annotation.Nonnull SepaBankTransferInstructions sepaBankInstructions) {
+            this.sepaBankInstructions = sepaBankInstructions;
+        }
+
+        public BankTransferNextStepsData bacsBankInstructions(@javax.annotation.Nonnull BacsBankTransferInstructions bacsBankInstructions) {
+        
+        this.bacsBankInstructions = bacsBankInstructions;
+        return this;
+        }
+
+    /**
+        * Get bacsBankInstructions
+    * @return bacsBankInstructions
+    */
+    @javax.annotation.Nonnull
+      @JsonProperty(JSON_PROPERTY_BACS_BANK_INSTRUCTIONS)
+  @JsonInclude(value = JsonInclude.Include.ALWAYS)
+
+    public BacsBankTransferInstructions getBacsBankInstructions() {
+        return bacsBankInstructions;
+    }
+
+
+          @JsonProperty(JSON_PROPERTY_BACS_BANK_INSTRUCTIONS)
+  @JsonInclude(value = JsonInclude.Include.ALWAYS)
+  public void setBacsBankInstructions(@javax.annotation.Nonnull BacsBankTransferInstructions bacsBankInstructions) {
+            this.bacsBankInstructions = bacsBankInstructions;
+        }
+
+        public BankTransferNextStepsData multibanco(@javax.annotation.Nonnull MultibancoTransferInstructions multibanco) {
+        
+        this.multibanco = multibanco;
+        return this;
+        }
+
+    /**
+        * Get multibanco
+    * @return multibanco
+    */
+    @javax.annotation.Nonnull
+      @JsonProperty(JSON_PROPERTY_MULTIBANCO)
+  @JsonInclude(value = JsonInclude.Include.ALWAYS)
+
+    public MultibancoTransferInstructions getMultibanco() {
+        return multibanco;
+    }
+
+
+          @JsonProperty(JSON_PROPERTY_MULTIBANCO)
+  @JsonInclude(value = JsonInclude.Include.ALWAYS)
+  public void setMultibanco(@javax.annotation.Nonnull MultibancoTransferInstructions multibanco) {
+            this.multibanco = multibanco;
+        }
+
+        public BankTransferNextStepsData receiver(@javax.annotation.Nullable ReceiverDetails receiver) {
+        this.receiver = JsonNullable.<ReceiverDetails>of(receiver);
+        
+        return this;
+        }
+
+    /**
+        * Get receiver
+    * @return receiver
+    */
+    @javax.annotation.Nullable
+        @JsonIgnore
     
-    this.dokuBankTransferInstructions = dokuBankTransferInstructions;
-    return this;
-  }
+    public ReceiverDetails getReceiver() {
+                return receiver.orElse(null);
+    }
 
-   /**
-   * Get dokuBankTransferInstructions
-   * @return dokuBankTransferInstructions
-  **/
-  @javax.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_DOKU_BANK_TRANSFER_INSTRUCTIONS)
-  @JsonInclude(value = JsonInclude.Include.ALWAYS)
-
-  public DokuBankTransferInstructions getDokuBankTransferInstructions() {
-    return dokuBankTransferInstructions;
-  }
-
-
-  @JsonProperty(JSON_PROPERTY_DOKU_BANK_TRANSFER_INSTRUCTIONS)
-  @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setDokuBankTransferInstructions(DokuBankTransferInstructions dokuBankTransferInstructions) {
-    this.dokuBankTransferInstructions = dokuBankTransferInstructions;
-  }
-
-
-  public BankTransferNextStepsData achCreditTransfer(AchTransfer achCreditTransfer) {
-    
-    this.achCreditTransfer = achCreditTransfer;
-    return this;
-  }
-
-   /**
-   * Get achCreditTransfer
-   * @return achCreditTransfer
-  **/
-  @javax.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_ACH_CREDIT_TRANSFER)
-  @JsonInclude(value = JsonInclude.Include.ALWAYS)
-
-  public AchTransfer getAchCreditTransfer() {
-    return achCreditTransfer;
-  }
-
-
-  @JsonProperty(JSON_PROPERTY_ACH_CREDIT_TRANSFER)
-  @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setAchCreditTransfer(AchTransfer achCreditTransfer) {
-    this.achCreditTransfer = achCreditTransfer;
-  }
-
-
-  public BankTransferNextStepsData sepaBankInstructions(SepaBankTransferInstructions sepaBankInstructions) {
-    
-    this.sepaBankInstructions = sepaBankInstructions;
-    return this;
-  }
-
-   /**
-   * Get sepaBankInstructions
-   * @return sepaBankInstructions
-  **/
-  @javax.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_SEPA_BANK_INSTRUCTIONS)
-  @JsonInclude(value = JsonInclude.Include.ALWAYS)
-
-  public SepaBankTransferInstructions getSepaBankInstructions() {
-    return sepaBankInstructions;
-  }
-
-
-  @JsonProperty(JSON_PROPERTY_SEPA_BANK_INSTRUCTIONS)
-  @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setSepaBankInstructions(SepaBankTransferInstructions sepaBankInstructions) {
-    this.sepaBankInstructions = sepaBankInstructions;
-  }
-
-
-  public BankTransferNextStepsData bacsBankInstructions(BacsBankTransferInstructions bacsBankInstructions) {
-    
-    this.bacsBankInstructions = bacsBankInstructions;
-    return this;
-  }
-
-   /**
-   * Get bacsBankInstructions
-   * @return bacsBankInstructions
-  **/
-  @javax.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_BACS_BANK_INSTRUCTIONS)
-  @JsonInclude(value = JsonInclude.Include.ALWAYS)
-
-  public BacsBankTransferInstructions getBacsBankInstructions() {
-    return bacsBankInstructions;
-  }
-
-
-  @JsonProperty(JSON_PROPERTY_BACS_BANK_INSTRUCTIONS)
-  @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setBacsBankInstructions(BacsBankTransferInstructions bacsBankInstructions) {
-    this.bacsBankInstructions = bacsBankInstructions;
-  }
-
-
-  public BankTransferNextStepsData multibanco(MultibancoTransferInstructions multibanco) {
-    
-    this.multibanco = multibanco;
-    return this;
-  }
-
-   /**
-   * Get multibanco
-   * @return multibanco
-  **/
-  @javax.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_MULTIBANCO)
-  @JsonInclude(value = JsonInclude.Include.ALWAYS)
-
-  public MultibancoTransferInstructions getMultibanco() {
-    return multibanco;
-  }
-
-
-  @JsonProperty(JSON_PROPERTY_MULTIBANCO)
-  @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setMultibanco(MultibancoTransferInstructions multibanco) {
-    this.multibanco = multibanco;
-  }
-
-
-  public BankTransferNextStepsData receiver(ReceiverDetails receiver) {
-    this.receiver = JsonNullable.<ReceiverDetails>of(receiver);
-    
-    return this;
-  }
-
-   /**
-   * Get receiver
-   * @return receiver
-  **/
-  @javax.annotation.Nullable
-  @JsonIgnore
-
-  public ReceiverDetails getReceiver() {
-        return receiver.orElse(null);
-  }
-
-  @JsonProperty(JSON_PROPERTY_RECEIVER)
+          @JsonProperty(JSON_PROPERTY_RECEIVER)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-  public JsonNullable<ReceiverDetails> getReceiver_JsonNullable() {
-    return receiver;
-  }
-  
-  @JsonProperty(JSON_PROPERTY_RECEIVER)
-  public void setReceiver_JsonNullable(JsonNullable<ReceiverDetails> receiver) {
-    this.receiver = receiver;
-  }
+        public JsonNullable<ReceiverDetails> getReceiver_JsonNullable() {
+        return receiver;
+        }
+    
+        @JsonProperty(JSON_PROPERTY_RECEIVER)
+        public void setReceiver_JsonNullable(JsonNullable<ReceiverDetails> receiver) {
+        this.receiver = receiver;
+        }
 
-  public void setReceiver(ReceiverDetails receiver) {
-    this.receiver = JsonNullable.<ReceiverDetails>of(receiver);
-  }
+          public void setReceiver(@javax.annotation.Nullable ReceiverDetails receiver) {
+            this.receiver = JsonNullable.<ReceiverDetails>of(receiver);
+        }
 
-  @Override
-  public boolean equals(Object o) {
+@Override
+public boolean equals(Object o) {
     if (this == o) {
-      return true;
+    return true;
     }
     if (o == null || getClass() != o.getClass()) {
-      return false;
+    return false;
     }
-    BankTransferNextStepsData bankTransferNextStepsData = (BankTransferNextStepsData) o;
-    return Objects.equals(this.dokuBankTransferInstructions, bankTransferNextStepsData.dokuBankTransferInstructions) &&
+        BankTransferNextStepsData bankTransferNextStepsData = (BankTransferNextStepsData) o;
+        return Objects.equals(this.dokuBankTransferInstructions, bankTransferNextStepsData.dokuBankTransferInstructions) &&
         Objects.equals(this.achCreditTransfer, bankTransferNextStepsData.achCreditTransfer) &&
         Objects.equals(this.sepaBankInstructions, bankTransferNextStepsData.sepaBankInstructions) &&
         Objects.equals(this.bacsBankInstructions, bankTransferNextStepsData.bacsBankInstructions) &&
         Objects.equals(this.multibanco, bankTransferNextStepsData.multibanco) &&
         equalsNullable(this.receiver, bankTransferNextStepsData.receiver);
-  }
+}
 
-  private static <T> boolean equalsNullable(JsonNullable<T> a, JsonNullable<T> b) {
-    return a == b || (a != null && b != null && a.isPresent() && b.isPresent() && Objects.deepEquals(a.get(), b.get()));
-  }
+    private static <T> boolean equalsNullable(JsonNullable<T> a, JsonNullable<T> b) {
+        return a == b || (a != null && b != null && a.isPresent() && b.isPresent() && Objects.deepEquals(a.get(), b.get()));
+        }
 
-  @Override
-  public int hashCode() {
-    return Objects.hash(dokuBankTransferInstructions, achCreditTransfer, sepaBankInstructions, bacsBankInstructions, multibanco, hashCodeNullable(receiver));
-  }
-
-  private static <T> int hashCodeNullable(JsonNullable<T> a) {
-    if (a == null) {
-      return 1;
+    @Override
+    public int hashCode() {
+        return Objects.hash(dokuBankTransferInstructions, achCreditTransfer, sepaBankInstructions, bacsBankInstructions, multibanco, hashCodeNullable(receiver));
     }
-    return a.isPresent() ? Arrays.deepHashCode(new Object[]{a.get()}) : 31;
-  }
 
-  @Override
-  public String toString() {
+        private static <T> int hashCodeNullable(JsonNullable<T> a) {
+        if (a == null) {
+        return 1;
+        }
+        return a.isPresent() ? Arrays.deepHashCode(new Object[]{a.get()}) : 31;
+        }
+
+    @Override
+    public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class BankTransferNextStepsData {\n");
-    sb.append("    dokuBankTransferInstructions: ").append(toIndentedString(dokuBankTransferInstructions)).append("\n");
-    sb.append("    achCreditTransfer: ").append(toIndentedString(achCreditTransfer)).append("\n");
-    sb.append("    sepaBankInstructions: ").append(toIndentedString(sepaBankInstructions)).append("\n");
-    sb.append("    bacsBankInstructions: ").append(toIndentedString(bacsBankInstructions)).append("\n");
-    sb.append("    multibanco: ").append(toIndentedString(multibanco)).append("\n");
-    sb.append("    receiver: ").append(toIndentedString(receiver)).append("\n");
+        sb.append("    dokuBankTransferInstructions: ").append(toIndentedString(dokuBankTransferInstructions)).append("\n");
+        sb.append("    achCreditTransfer: ").append(toIndentedString(achCreditTransfer)).append("\n");
+        sb.append("    sepaBankInstructions: ").append(toIndentedString(sepaBankInstructions)).append("\n");
+        sb.append("    bacsBankInstructions: ").append(toIndentedString(bacsBankInstructions)).append("\n");
+        sb.append("    multibanco: ").append(toIndentedString(multibanco)).append("\n");
+        sb.append("    receiver: ").append(toIndentedString(receiver)).append("\n");
     sb.append("}");
     return sb.toString();
-  }
+    }
 
-  /**
-   * Convert the given object to string with each line indented by 4 spaces
-   * (except the first line).
-   */
-  private String toIndentedString(Object o) {
+    /**
+    * Convert the given object to string with each line indented by 4 spaces
+    * (except the first line).
+    */
+    private String toIndentedString(Object o) {
     if (o == null) {
-      return "null";
+    return "null";
     }
     return o.toString().replace("\n", "\n    ");
-  }
-
-  /**
-   * Convert the instance into URL query string.
-   *
-   * @return URL query string
-   */
-  public String toUrlQueryString() {
-    return toUrlQueryString(null);
-  }
-
-  /**
-   * Convert the instance into URL query string.
-   *
-   * @param prefix prefix of the query string
-   * @return URL query string
-   */
-  public String toUrlQueryString(String prefix) {
-    String suffix = "";
-    String containerSuffix = "";
-    String containerPrefix = "";
-    if (prefix == null) {
-      // style=form, explode=true, e.g. /pet?name=cat&type=manx
-      prefix = "";
-    } else {
-      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
-      prefix = prefix + "[";
-      suffix = "]";
-      containerSuffix = "]";
-      containerPrefix = "[";
     }
 
-    StringJoiner joiner = new StringJoiner("&");
+        /**
+        * Convert the instance into URL query string.
+        *
+        * @return URL query string
+        */
+        public String toUrlQueryString() {
+        return toUrlQueryString(null);
+        }
 
-    // add `doku_bank_transfer_instructions` to the URL query string
-    if (getDokuBankTransferInstructions() != null) {
-      joiner.add(getDokuBankTransferInstructions().toUrlQueryString(prefix + "doku_bank_transfer_instructions" + suffix));
+        /**
+        * Convert the instance into URL query string.
+        *
+        * @param prefix prefix of the query string
+        * @return URL query string
+        */
+        public String toUrlQueryString(String prefix) {
+        String suffix = "";
+        String containerSuffix = "";
+        String containerPrefix = "";
+        if (prefix == null) {
+        // style=form, explode=true, e.g. /pet?name=cat&type=manx
+        prefix = "";
+        } else {
+        // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+        prefix = prefix + "[";
+        suffix = "]";
+        containerSuffix = "]";
+        containerPrefix = "[";
+        }
+
+        StringJoiner joiner = new StringJoiner("&");
+
+            // add `doku_bank_transfer_instructions` to the URL query string
+                            if (getDokuBankTransferInstructions() != null) {
+                            joiner.add(getDokuBankTransferInstructions().toUrlQueryString(prefix + "doku_bank_transfer_instructions" + suffix));
+                            }
+
+            // add `ach_credit_transfer` to the URL query string
+                            if (getAchCreditTransfer() != null) {
+                            joiner.add(getAchCreditTransfer().toUrlQueryString(prefix + "ach_credit_transfer" + suffix));
+                            }
+
+            // add `sepa_bank_instructions` to the URL query string
+                            if (getSepaBankInstructions() != null) {
+                            joiner.add(getSepaBankInstructions().toUrlQueryString(prefix + "sepa_bank_instructions" + suffix));
+                            }
+
+            // add `bacs_bank_instructions` to the URL query string
+                            if (getBacsBankInstructions() != null) {
+                            joiner.add(getBacsBankInstructions().toUrlQueryString(prefix + "bacs_bank_instructions" + suffix));
+                            }
+
+            // add `multibanco` to the URL query string
+                            if (getMultibanco() != null) {
+                            joiner.add(getMultibanco().toUrlQueryString(prefix + "multibanco" + suffix));
+                            }
+
+            // add `receiver` to the URL query string
+                            if (getReceiver() != null) {
+                            joiner.add(getReceiver().toUrlQueryString(prefix + "receiver" + suffix));
+                            }
+
+        return joiner.toString();
+        }
+
     }
-
-    // add `ach_credit_transfer` to the URL query string
-    if (getAchCreditTransfer() != null) {
-      joiner.add(getAchCreditTransfer().toUrlQueryString(prefix + "ach_credit_transfer" + suffix));
-    }
-
-    // add `sepa_bank_instructions` to the URL query string
-    if (getSepaBankInstructions() != null) {
-      joiner.add(getSepaBankInstructions().toUrlQueryString(prefix + "sepa_bank_instructions" + suffix));
-    }
-
-    // add `bacs_bank_instructions` to the URL query string
-    if (getBacsBankInstructions() != null) {
-      joiner.add(getBacsBankInstructions().toUrlQueryString(prefix + "bacs_bank_instructions" + suffix));
-    }
-
-    // add `multibanco` to the URL query string
-    if (getMultibanco() != null) {
-      joiner.add(getMultibanco().toUrlQueryString(prefix + "multibanco" + suffix));
-    }
-
-    // add `receiver` to the URL query string
-    if (getReceiver() != null) {
-      joiner.add(getReceiver().toUrlQueryString(prefix + "receiver" + suffix));
-    }
-
-    return joiner.toString();
-  }
-
-}
 

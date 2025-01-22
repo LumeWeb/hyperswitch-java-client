@@ -28,121 +28,122 @@ import java.net.URLEncoder;
 import java.util.StringJoiner;
 
 /**
- * VoucherDataOneOf1
- */
-@JsonPropertyOrder({
-  VoucherDataOneOf1.JSON_PROPERTY_ALFAMART
-})
-@JsonTypeName("VoucherData_oneOf_1")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+* VoucherDataOneOf1
+*/
+    @JsonPropertyOrder({
+        VoucherDataOneOf1.JSON_PROPERTY_ALFAMART
+    })
+            @JsonTypeName("VoucherData_oneOf_1")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class VoucherDataOneOf1 {
-  public static final String JSON_PROPERTY_ALFAMART = "alfamart";
-  private AlfamartVoucherData alfamart;
+        public static final String JSON_PROPERTY_ALFAMART = "alfamart";
+    @javax.annotation.Nonnull
+            private AlfamartVoucherData alfamart;
 
-  public VoucherDataOneOf1() {
-  }
+public VoucherDataOneOf1() {
+}
 
-  public VoucherDataOneOf1 alfamart(AlfamartVoucherData alfamart) {
-    
-    this.alfamart = alfamart;
-    return this;
-  }
+        public VoucherDataOneOf1 alfamart(@javax.annotation.Nonnull AlfamartVoucherData alfamart) {
+        
+        this.alfamart = alfamart;
+        return this;
+        }
 
-   /**
-   * Get alfamart
-   * @return alfamart
-  **/
-  @javax.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_ALFAMART)
+    /**
+        * Get alfamart
+    * @return alfamart
+    */
+    @javax.annotation.Nonnull
+      @JsonProperty(JSON_PROPERTY_ALFAMART)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-  public AlfamartVoucherData getAlfamart() {
-    return alfamart;
-  }
+    public AlfamartVoucherData getAlfamart() {
+        return alfamart;
+    }
 
 
-  @JsonProperty(JSON_PROPERTY_ALFAMART)
+          @JsonProperty(JSON_PROPERTY_ALFAMART)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setAlfamart(AlfamartVoucherData alfamart) {
-    this.alfamart = alfamart;
-  }
+  public void setAlfamart(@javax.annotation.Nonnull AlfamartVoucherData alfamart) {
+            this.alfamart = alfamart;
+        }
 
-  @Override
-  public boolean equals(Object o) {
+@Override
+public boolean equals(Object o) {
     if (this == o) {
-      return true;
+    return true;
     }
     if (o == null || getClass() != o.getClass()) {
-      return false;
+    return false;
     }
-    VoucherDataOneOf1 voucherDataOneOf1 = (VoucherDataOneOf1) o;
-    return Objects.equals(this.alfamart, voucherDataOneOf1.alfamart);
-  }
+        VoucherDataOneOf1 voucherDataOneOf1 = (VoucherDataOneOf1) o;
+        return Objects.equals(this.alfamart, voucherDataOneOf1.alfamart);
+}
 
-  @Override
-  public int hashCode() {
-    return Objects.hash(alfamart);
-  }
+    @Override
+    public int hashCode() {
+        return Objects.hash(alfamart);
+    }
 
-  @Override
-  public String toString() {
+    @Override
+    public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class VoucherDataOneOf1 {\n");
-    sb.append("    alfamart: ").append(toIndentedString(alfamart)).append("\n");
+        sb.append("    alfamart: ").append(toIndentedString(alfamart)).append("\n");
     sb.append("}");
     return sb.toString();
-  }
+    }
 
-  /**
-   * Convert the given object to string with each line indented by 4 spaces
-   * (except the first line).
-   */
-  private String toIndentedString(Object o) {
+    /**
+    * Convert the given object to string with each line indented by 4 spaces
+    * (except the first line).
+    */
+    private String toIndentedString(Object o) {
     if (o == null) {
-      return "null";
+    return "null";
     }
     return o.toString().replace("\n", "\n    ");
-  }
-
-  /**
-   * Convert the instance into URL query string.
-   *
-   * @return URL query string
-   */
-  public String toUrlQueryString() {
-    return toUrlQueryString(null);
-  }
-
-  /**
-   * Convert the instance into URL query string.
-   *
-   * @param prefix prefix of the query string
-   * @return URL query string
-   */
-  public String toUrlQueryString(String prefix) {
-    String suffix = "";
-    String containerSuffix = "";
-    String containerPrefix = "";
-    if (prefix == null) {
-      // style=form, explode=true, e.g. /pet?name=cat&type=manx
-      prefix = "";
-    } else {
-      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
-      prefix = prefix + "[";
-      suffix = "]";
-      containerSuffix = "]";
-      containerPrefix = "[";
     }
 
-    StringJoiner joiner = new StringJoiner("&");
+        /**
+        * Convert the instance into URL query string.
+        *
+        * @return URL query string
+        */
+        public String toUrlQueryString() {
+        return toUrlQueryString(null);
+        }
 
-    // add `alfamart` to the URL query string
-    if (getAlfamart() != null) {
-      joiner.add(getAlfamart().toUrlQueryString(prefix + "alfamart" + suffix));
+        /**
+        * Convert the instance into URL query string.
+        *
+        * @param prefix prefix of the query string
+        * @return URL query string
+        */
+        public String toUrlQueryString(String prefix) {
+        String suffix = "";
+        String containerSuffix = "";
+        String containerPrefix = "";
+        if (prefix == null) {
+        // style=form, explode=true, e.g. /pet?name=cat&type=manx
+        prefix = "";
+        } else {
+        // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+        prefix = prefix + "[";
+        suffix = "]";
+        containerSuffix = "]";
+        containerPrefix = "[";
+        }
+
+        StringJoiner joiner = new StringJoiner("&");
+
+            // add `alfamart` to the URL query string
+                            if (getAlfamart() != null) {
+                            joiner.add(getAlfamart().toUrlQueryString(prefix + "alfamart" + suffix));
+                            }
+
+        return joiner.toString();
+        }
+
     }
-
-    return joiner.toString();
-  }
-
-}
 

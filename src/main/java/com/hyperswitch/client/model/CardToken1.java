@@ -28,121 +28,122 @@ import java.net.URLEncoder;
 import java.util.StringJoiner;
 
 /**
- * CardToken1
- */
-@JsonPropertyOrder({
-  CardToken1.JSON_PROPERTY_CARD_TOKEN
-})
-@JsonTypeName("CardToken_1")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+* CardToken1
+*/
+    @JsonPropertyOrder({
+        CardToken1.JSON_PROPERTY_CARD_TOKEN
+    })
+            @JsonTypeName("CardToken_1")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class CardToken1 {
-  public static final String JSON_PROPERTY_CARD_TOKEN = "card_token";
-  private CardToken cardToken;
+        public static final String JSON_PROPERTY_CARD_TOKEN = "card_token";
+    @javax.annotation.Nonnull
+            private CardToken cardToken;
 
-  public CardToken1() {
-  }
+public CardToken1() {
+}
 
-  public CardToken1 cardToken(CardToken cardToken) {
-    
-    this.cardToken = cardToken;
-    return this;
-  }
+        public CardToken1 cardToken(@javax.annotation.Nonnull CardToken cardToken) {
+        
+        this.cardToken = cardToken;
+        return this;
+        }
 
-   /**
-   * Get cardToken
-   * @return cardToken
-  **/
-  @javax.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_CARD_TOKEN)
+    /**
+        * Get cardToken
+    * @return cardToken
+    */
+    @javax.annotation.Nonnull
+      @JsonProperty(JSON_PROPERTY_CARD_TOKEN)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-  public CardToken getCardToken() {
-    return cardToken;
-  }
+    public CardToken getCardToken() {
+        return cardToken;
+    }
 
 
-  @JsonProperty(JSON_PROPERTY_CARD_TOKEN)
+          @JsonProperty(JSON_PROPERTY_CARD_TOKEN)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setCardToken(CardToken cardToken) {
-    this.cardToken = cardToken;
-  }
+  public void setCardToken(@javax.annotation.Nonnull CardToken cardToken) {
+            this.cardToken = cardToken;
+        }
 
-  @Override
-  public boolean equals(Object o) {
+@Override
+public boolean equals(Object o) {
     if (this == o) {
-      return true;
+    return true;
     }
     if (o == null || getClass() != o.getClass()) {
-      return false;
+    return false;
     }
-    CardToken1 cardToken1 = (CardToken1) o;
-    return Objects.equals(this.cardToken, cardToken1.cardToken);
-  }
+        CardToken1 cardToken1 = (CardToken1) o;
+        return Objects.equals(this.cardToken, cardToken1.cardToken);
+}
 
-  @Override
-  public int hashCode() {
-    return Objects.hash(cardToken);
-  }
+    @Override
+    public int hashCode() {
+        return Objects.hash(cardToken);
+    }
 
-  @Override
-  public String toString() {
+    @Override
+    public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class CardToken1 {\n");
-    sb.append("    cardToken: ").append(toIndentedString(cardToken)).append("\n");
+        sb.append("    cardToken: ").append(toIndentedString(cardToken)).append("\n");
     sb.append("}");
     return sb.toString();
-  }
+    }
 
-  /**
-   * Convert the given object to string with each line indented by 4 spaces
-   * (except the first line).
-   */
-  private String toIndentedString(Object o) {
+    /**
+    * Convert the given object to string with each line indented by 4 spaces
+    * (except the first line).
+    */
+    private String toIndentedString(Object o) {
     if (o == null) {
-      return "null";
+    return "null";
     }
     return o.toString().replace("\n", "\n    ");
-  }
-
-  /**
-   * Convert the instance into URL query string.
-   *
-   * @return URL query string
-   */
-  public String toUrlQueryString() {
-    return toUrlQueryString(null);
-  }
-
-  /**
-   * Convert the instance into URL query string.
-   *
-   * @param prefix prefix of the query string
-   * @return URL query string
-   */
-  public String toUrlQueryString(String prefix) {
-    String suffix = "";
-    String containerSuffix = "";
-    String containerPrefix = "";
-    if (prefix == null) {
-      // style=form, explode=true, e.g. /pet?name=cat&type=manx
-      prefix = "";
-    } else {
-      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
-      prefix = prefix + "[";
-      suffix = "]";
-      containerSuffix = "]";
-      containerPrefix = "[";
     }
 
-    StringJoiner joiner = new StringJoiner("&");
+        /**
+        * Convert the instance into URL query string.
+        *
+        * @return URL query string
+        */
+        public String toUrlQueryString() {
+        return toUrlQueryString(null);
+        }
 
-    // add `card_token` to the URL query string
-    if (getCardToken() != null) {
-      joiner.add(getCardToken().toUrlQueryString(prefix + "card_token" + suffix));
+        /**
+        * Convert the instance into URL query string.
+        *
+        * @param prefix prefix of the query string
+        * @return URL query string
+        */
+        public String toUrlQueryString(String prefix) {
+        String suffix = "";
+        String containerSuffix = "";
+        String containerPrefix = "";
+        if (prefix == null) {
+        // style=form, explode=true, e.g. /pet?name=cat&type=manx
+        prefix = "";
+        } else {
+        // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+        prefix = prefix + "[";
+        suffix = "]";
+        containerSuffix = "]";
+        containerPrefix = "[";
+        }
+
+        StringJoiner joiner = new StringJoiner("&");
+
+            // add `card_token` to the URL query string
+                            if (getCardToken() != null) {
+                            joiner.add(getCardToken().toUrlQueryString(prefix + "card_token" + suffix));
+                            }
+
+        return joiner.toString();
+        }
+
     }
-
-    return joiner.toString();
-  }
-
-}
 

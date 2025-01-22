@@ -23,22 +23,21 @@ import org.openapitools.jackson.nullable.JsonNullable;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.openapitools.jackson.nullable.JsonNullable;
 import java.util.NoSuchElementException;
-import org.junit.Assert;
-import org.junit.Ignore;
-import org.junit.Test;
-
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Test;
 
 /**
  * Model tests for PaymentsCaptureRequest
  */
-public class PaymentsCaptureRequestTest {
+class PaymentsCaptureRequestTest {
     private final PaymentsCaptureRequest model = new PaymentsCaptureRequest();
 
     /**
      * Model tests for PaymentsCaptureRequest
      */
     @Test
-    public void testPaymentsCaptureRequest() {
+    void testPaymentsCaptureRequest() {
         // TODO: test PaymentsCaptureRequest
     }
 
@@ -46,7 +45,7 @@ public class PaymentsCaptureRequestTest {
      * Test the property 'merchantId'
      */
     @Test
-    public void merchantIdTest() {
+    void merchantIdTest() {
         // TODO: test merchantId
     }
 
@@ -54,7 +53,7 @@ public class PaymentsCaptureRequestTest {
      * Test the property 'amountToCapture'
      */
     @Test
-    public void amountToCaptureTest() {
+    void amountToCaptureTest() {
         // TODO: test amountToCapture
     }
 
@@ -62,7 +61,7 @@ public class PaymentsCaptureRequestTest {
      * Test the property 'refundUncapturedAmount'
      */
     @Test
-    public void refundUncapturedAmountTest() {
+    void refundUncapturedAmountTest() {
         // TODO: test refundUncapturedAmount
     }
 
@@ -70,7 +69,7 @@ public class PaymentsCaptureRequestTest {
      * Test the property 'statementDescriptorSuffix'
      */
     @Test
-    public void statementDescriptorSuffixTest() {
+    void statementDescriptorSuffixTest() {
         // TODO: test statementDescriptorSuffix
     }
 
@@ -78,7 +77,7 @@ public class PaymentsCaptureRequestTest {
      * Test the property 'statementDescriptorPrefix'
      */
     @Test
-    public void statementDescriptorPrefixTest() {
+    void statementDescriptorPrefixTest() {
         // TODO: test statementDescriptorPrefix
     }
 
@@ -86,7 +85,7 @@ public class PaymentsCaptureRequestTest {
      * Test the property 'merchantConnectorDetails'
      */
     @Test
-    public void merchantConnectorDetailsTest() {
+    void merchantConnectorDetailsTest() {
         // TODO: test merchantConnectorDetails
     }
 

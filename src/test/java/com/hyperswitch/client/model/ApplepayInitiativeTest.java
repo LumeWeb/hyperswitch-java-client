@@ -13,20 +13,19 @@
 
 package com.hyperswitch.client.model;
 
-import org.junit.Assert;
-import org.junit.Ignore;
-import org.junit.Test;
-
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Test;
 
 /**
  * Model tests for ApplepayInitiative
  */
-public class ApplepayInitiativeTest {
+class ApplepayInitiativeTest {
     /**
      * Model tests for ApplepayInitiative
      */
     @Test
-    public void testApplepayInitiative() {
+    void testApplepayInitiative() {
         // TODO: test ApplepayInitiative
     }
 

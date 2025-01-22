@@ -20,27 +20,27 @@ import com.fasterxml.jackson.annotation.JsonTypeName;
 import com.fasterxml.jackson.annotation.JsonValue;
 import com.hyperswitch.client.model.Comparison;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import org.openapitools.jackson.nullable.JsonNullable;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.openapitools.jackson.nullable.JsonNullable;
 import java.util.NoSuchElementException;
-import org.junit.Assert;
-import org.junit.Ignore;
-import org.junit.Test;
-
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Test;
 
 /**
  * Model tests for IfStatement
  */
-public class IfStatementTest {
+class IfStatementTest {
     private final IfStatement model = new IfStatement();
 
     /**
      * Model tests for IfStatement
      */
     @Test
-    public void testIfStatement() {
+    void testIfStatement() {
         // TODO: test IfStatement
     }
 
@@ -48,7 +48,7 @@ public class IfStatementTest {
      * Test the property 'condition'
      */
     @Test
-    public void conditionTest() {
+    void conditionTest() {
         // TODO: test condition
     }
 
@@ -56,7 +56,7 @@ public class IfStatementTest {
      * Test the property 'nested'
      */
     @Test
-    public void nestedTest() {
+    void nestedTest() {
         // TODO: test nested
     }
 

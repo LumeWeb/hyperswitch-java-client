@@ -19,22 +19,21 @@ import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonTypeName;
 import com.fasterxml.jackson.annotation.JsonValue;
 import com.hyperswitch.client.model.Connector;
-import org.junit.Assert;
-import org.junit.Ignore;
-import org.junit.Test;
-
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Test;
 
 /**
  * Model tests for GsmRetrieveRequest
  */
-public class GsmRetrieveRequestTest {
+class GsmRetrieveRequestTest {
     private final GsmRetrieveRequest model = new GsmRetrieveRequest();
 
     /**
      * Model tests for GsmRetrieveRequest
      */
     @Test
-    public void testGsmRetrieveRequest() {
+    void testGsmRetrieveRequest() {
         // TODO: test GsmRetrieveRequest
     }
 
@@ -42,7 +41,7 @@ public class GsmRetrieveRequestTest {
      * Test the property 'connector'
      */
     @Test
-    public void connectorTest() {
+    void connectorTest() {
         // TODO: test connector
     }
 
@@ -50,7 +49,7 @@ public class GsmRetrieveRequestTest {
      * Test the property 'flow'
      */
     @Test
-    public void flowTest() {
+    void flowTest() {
         // TODO: test flow
     }
 
@@ -58,7 +57,7 @@ public class GsmRetrieveRequestTest {
      * Test the property 'subFlow'
      */
     @Test
-    public void subFlowTest() {
+    void subFlowTest() {
         // TODO: test subFlow
     }
 
@@ -66,7 +65,7 @@ public class GsmRetrieveRequestTest {
      * Test the property 'code'
      */
     @Test
-    public void codeTest() {
+    void codeTest() {
         // TODO: test code
     }
 
@@ -74,7 +73,7 @@ public class GsmRetrieveRequestTest {
      * Test the property 'message'
      */
     @Test
-    public void messageTest() {
+    void messageTest() {
         // TODO: test message
     }
 

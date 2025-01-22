@@ -30,288 +30,289 @@ import java.net.URLEncoder;
 import java.util.StringJoiner;
 
 /**
- * OutgoingWebhook
- */
-@JsonPropertyOrder({
-  OutgoingWebhook.JSON_PROPERTY_MERCHANT_ID,
-  OutgoingWebhook.JSON_PROPERTY_EVENT_ID,
-  OutgoingWebhook.JSON_PROPERTY_EVENT_TYPE,
-  OutgoingWebhook.JSON_PROPERTY_CONTENT,
-  OutgoingWebhook.JSON_PROPERTY_TIMESTAMP
-})
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+* OutgoingWebhook
+*/
+    @JsonPropertyOrder({
+        OutgoingWebhook.JSON_PROPERTY_MERCHANT_ID,
+        OutgoingWebhook.JSON_PROPERTY_EVENT_ID,
+        OutgoingWebhook.JSON_PROPERTY_EVENT_TYPE,
+        OutgoingWebhook.JSON_PROPERTY_CONTENT,
+        OutgoingWebhook.JSON_PROPERTY_TIMESTAMP
+    })
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class OutgoingWebhook {
-  public static final String JSON_PROPERTY_MERCHANT_ID = "merchant_id";
-  private String merchantId;
+        public static final String JSON_PROPERTY_MERCHANT_ID = "merchant_id";
+    @javax.annotation.Nonnull
+            private String merchantId;
 
-  public static final String JSON_PROPERTY_EVENT_ID = "event_id";
-  private String eventId;
+        public static final String JSON_PROPERTY_EVENT_ID = "event_id";
+    @javax.annotation.Nonnull
+            private String eventId;
 
-  public static final String JSON_PROPERTY_EVENT_TYPE = "event_type";
-  private EventType eventType;
+        public static final String JSON_PROPERTY_EVENT_TYPE = "event_type";
+    @javax.annotation.Nonnull
+            private EventType eventType;
 
-  public static final String JSON_PROPERTY_CONTENT = "content";
-  private OutgoingWebhookContent content;
+        public static final String JSON_PROPERTY_CONTENT = "content";
+    @javax.annotation.Nonnull
+            private OutgoingWebhookContent content;
 
-  public static final String JSON_PROPERTY_TIMESTAMP = "timestamp";
-  private OffsetDateTime timestamp;
+        public static final String JSON_PROPERTY_TIMESTAMP = "timestamp";
+    @javax.annotation.Nullable
+            private OffsetDateTime timestamp;
 
-  public OutgoingWebhook() {
-  }
+public OutgoingWebhook() {
+}
 
-  public OutgoingWebhook merchantId(String merchantId) {
-    
-    this.merchantId = merchantId;
-    return this;
-  }
+        public OutgoingWebhook merchantId(@javax.annotation.Nonnull String merchantId) {
+        
+        this.merchantId = merchantId;
+        return this;
+        }
 
-   /**
-   * The merchant id of the merchant
-   * @return merchantId
-  **/
-  @javax.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_MERCHANT_ID)
+    /**
+        * The merchant id of the merchant
+    * @return merchantId
+    */
+    @javax.annotation.Nonnull
+      @JsonProperty(JSON_PROPERTY_MERCHANT_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-  public String getMerchantId() {
-    return merchantId;
-  }
+    public String getMerchantId() {
+        return merchantId;
+    }
 
 
-  @JsonProperty(JSON_PROPERTY_MERCHANT_ID)
+          @JsonProperty(JSON_PROPERTY_MERCHANT_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setMerchantId(String merchantId) {
-    this.merchantId = merchantId;
-  }
+  public void setMerchantId(@javax.annotation.Nonnull String merchantId) {
+            this.merchantId = merchantId;
+        }
 
+        public OutgoingWebhook eventId(@javax.annotation.Nonnull String eventId) {
+        
+        this.eventId = eventId;
+        return this;
+        }
 
-  public OutgoingWebhook eventId(String eventId) {
-    
-    this.eventId = eventId;
-    return this;
-  }
-
-   /**
-   * The unique event id for each webhook
-   * @return eventId
-  **/
-  @javax.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_EVENT_ID)
-  @JsonInclude(value = JsonInclude.Include.ALWAYS)
-
-  public String getEventId() {
-    return eventId;
-  }
-
-
-  @JsonProperty(JSON_PROPERTY_EVENT_ID)
-  @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setEventId(String eventId) {
-    this.eventId = eventId;
-  }
-
-
-  public OutgoingWebhook eventType(EventType eventType) {
-    
-    this.eventType = eventType;
-    return this;
-  }
-
-   /**
-   * Get eventType
-   * @return eventType
-  **/
-  @javax.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_EVENT_TYPE)
+    /**
+        * The unique event id for each webhook
+    * @return eventId
+    */
+    @javax.annotation.Nonnull
+      @JsonProperty(JSON_PROPERTY_EVENT_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-  public EventType getEventType() {
-    return eventType;
-  }
+    public String getEventId() {
+        return eventId;
+    }
 
 
-  @JsonProperty(JSON_PROPERTY_EVENT_TYPE)
+          @JsonProperty(JSON_PROPERTY_EVENT_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setEventType(EventType eventType) {
-    this.eventType = eventType;
-  }
+  public void setEventId(@javax.annotation.Nonnull String eventId) {
+            this.eventId = eventId;
+        }
 
+        public OutgoingWebhook eventType(@javax.annotation.Nonnull EventType eventType) {
+        
+        this.eventType = eventType;
+        return this;
+        }
 
-  public OutgoingWebhook content(OutgoingWebhookContent content) {
-    
-    this.content = content;
-    return this;
-  }
-
-   /**
-   * Get content
-   * @return content
-  **/
-  @javax.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_CONTENT)
+    /**
+        * Get eventType
+    * @return eventType
+    */
+    @javax.annotation.Nonnull
+      @JsonProperty(JSON_PROPERTY_EVENT_TYPE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-  public OutgoingWebhookContent getContent() {
-    return content;
-  }
+    public EventType getEventType() {
+        return eventType;
+    }
 
 
-  @JsonProperty(JSON_PROPERTY_CONTENT)
+          @JsonProperty(JSON_PROPERTY_EVENT_TYPE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setContent(OutgoingWebhookContent content) {
-    this.content = content;
-  }
+  public void setEventType(@javax.annotation.Nonnull EventType eventType) {
+            this.eventType = eventType;
+        }
+
+        public OutgoingWebhook content(@javax.annotation.Nonnull OutgoingWebhookContent content) {
+        
+        this.content = content;
+        return this;
+        }
+
+    /**
+        * Get content
+    * @return content
+    */
+    @javax.annotation.Nonnull
+      @JsonProperty(JSON_PROPERTY_CONTENT)
+  @JsonInclude(value = JsonInclude.Include.ALWAYS)
+
+    public OutgoingWebhookContent getContent() {
+        return content;
+    }
 
 
-  public OutgoingWebhook timestamp(OffsetDateTime timestamp) {
-    
-    this.timestamp = timestamp;
-    return this;
-  }
+          @JsonProperty(JSON_PROPERTY_CONTENT)
+  @JsonInclude(value = JsonInclude.Include.ALWAYS)
+  public void setContent(@javax.annotation.Nonnull OutgoingWebhookContent content) {
+            this.content = content;
+        }
 
-   /**
-   * The time at which webhook was sent
-   * @return timestamp
-  **/
-  @javax.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_TIMESTAMP)
+        public OutgoingWebhook timestamp(@javax.annotation.Nullable OffsetDateTime timestamp) {
+        
+        this.timestamp = timestamp;
+        return this;
+        }
+
+    /**
+        * The time at which webhook was sent
+    * @return timestamp
+    */
+    @javax.annotation.Nullable
+      @JsonProperty(JSON_PROPERTY_TIMESTAMP)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-  public OffsetDateTime getTimestamp() {
-    return timestamp;
-  }
+    public OffsetDateTime getTimestamp() {
+        return timestamp;
+    }
 
 
-  @JsonProperty(JSON_PROPERTY_TIMESTAMP)
+          @JsonProperty(JSON_PROPERTY_TIMESTAMP)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setTimestamp(OffsetDateTime timestamp) {
-    this.timestamp = timestamp;
-  }
+  public void setTimestamp(@javax.annotation.Nullable OffsetDateTime timestamp) {
+            this.timestamp = timestamp;
+        }
 
-  @Override
-  public boolean equals(Object o) {
+@Override
+public boolean equals(Object o) {
     if (this == o) {
-      return true;
+    return true;
     }
     if (o == null || getClass() != o.getClass()) {
-      return false;
+    return false;
     }
-    OutgoingWebhook outgoingWebhook = (OutgoingWebhook) o;
-    return Objects.equals(this.merchantId, outgoingWebhook.merchantId) &&
+        OutgoingWebhook outgoingWebhook = (OutgoingWebhook) o;
+        return Objects.equals(this.merchantId, outgoingWebhook.merchantId) &&
         Objects.equals(this.eventId, outgoingWebhook.eventId) &&
         Objects.equals(this.eventType, outgoingWebhook.eventType) &&
         Objects.equals(this.content, outgoingWebhook.content) &&
         Objects.equals(this.timestamp, outgoingWebhook.timestamp);
-  }
+}
 
-  @Override
-  public int hashCode() {
-    return Objects.hash(merchantId, eventId, eventType, content, timestamp);
-  }
+    @Override
+    public int hashCode() {
+        return Objects.hash(merchantId, eventId, eventType, content, timestamp);
+    }
 
-  @Override
-  public String toString() {
+    @Override
+    public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class OutgoingWebhook {\n");
-    sb.append("    merchantId: ").append(toIndentedString(merchantId)).append("\n");
-    sb.append("    eventId: ").append(toIndentedString(eventId)).append("\n");
-    sb.append("    eventType: ").append(toIndentedString(eventType)).append("\n");
-    sb.append("    content: ").append(toIndentedString(content)).append("\n");
-    sb.append("    timestamp: ").append(toIndentedString(timestamp)).append("\n");
+        sb.append("    merchantId: ").append(toIndentedString(merchantId)).append("\n");
+        sb.append("    eventId: ").append(toIndentedString(eventId)).append("\n");
+        sb.append("    eventType: ").append(toIndentedString(eventType)).append("\n");
+        sb.append("    content: ").append(toIndentedString(content)).append("\n");
+        sb.append("    timestamp: ").append(toIndentedString(timestamp)).append("\n");
     sb.append("}");
     return sb.toString();
-  }
+    }
 
-  /**
-   * Convert the given object to string with each line indented by 4 spaces
-   * (except the first line).
-   */
-  private String toIndentedString(Object o) {
+    /**
+    * Convert the given object to string with each line indented by 4 spaces
+    * (except the first line).
+    */
+    private String toIndentedString(Object o) {
     if (o == null) {
-      return "null";
+    return "null";
     }
     return o.toString().replace("\n", "\n    ");
-  }
-
-  /**
-   * Convert the instance into URL query string.
-   *
-   * @return URL query string
-   */
-  public String toUrlQueryString() {
-    return toUrlQueryString(null);
-  }
-
-  /**
-   * Convert the instance into URL query string.
-   *
-   * @param prefix prefix of the query string
-   * @return URL query string
-   */
-  public String toUrlQueryString(String prefix) {
-    String suffix = "";
-    String containerSuffix = "";
-    String containerPrefix = "";
-    if (prefix == null) {
-      // style=form, explode=true, e.g. /pet?name=cat&type=manx
-      prefix = "";
-    } else {
-      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
-      prefix = prefix + "[";
-      suffix = "]";
-      containerSuffix = "]";
-      containerPrefix = "[";
     }
 
-    StringJoiner joiner = new StringJoiner("&");
+        /**
+        * Convert the instance into URL query string.
+        *
+        * @return URL query string
+        */
+        public String toUrlQueryString() {
+        return toUrlQueryString(null);
+        }
 
-    // add `merchant_id` to the URL query string
-    if (getMerchantId() != null) {
-      try {
-        joiner.add(String.format("%smerchant_id%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getMerchantId()), "UTF-8").replaceAll("\\+", "%20")));
-      } catch (UnsupportedEncodingException e) {
-        // Should never happen, UTF-8 is always supported
-        throw new RuntimeException(e);
-      }
+        /**
+        * Convert the instance into URL query string.
+        *
+        * @param prefix prefix of the query string
+        * @return URL query string
+        */
+        public String toUrlQueryString(String prefix) {
+        String suffix = "";
+        String containerSuffix = "";
+        String containerPrefix = "";
+        if (prefix == null) {
+        // style=form, explode=true, e.g. /pet?name=cat&type=manx
+        prefix = "";
+        } else {
+        // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+        prefix = prefix + "[";
+        suffix = "]";
+        containerSuffix = "]";
+        containerPrefix = "[";
+        }
+
+        StringJoiner joiner = new StringJoiner("&");
+
+            // add `merchant_id` to the URL query string
+                        if (getMerchantId() != null) {
+                        try {
+                        joiner.add(String.format("%smerchant_id%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getMerchantId()), "UTF-8").replaceAll("\\+", "%20")));
+                        } catch (UnsupportedEncodingException e) {
+                        // Should never happen, UTF-8 is always supported
+                        throw new RuntimeException(e);
+                        }
+                        }
+
+            // add `event_id` to the URL query string
+                        if (getEventId() != null) {
+                        try {
+                        joiner.add(String.format("%sevent_id%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getEventId()), "UTF-8").replaceAll("\\+", "%20")));
+                        } catch (UnsupportedEncodingException e) {
+                        // Should never happen, UTF-8 is always supported
+                        throw new RuntimeException(e);
+                        }
+                        }
+
+            // add `event_type` to the URL query string
+                            if (getEventType() != null) {
+                            try {
+                            joiner.add(String.format("%sevent_type%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getEventType()), "UTF-8").replaceAll("\\+", "%20")));
+                            } catch (UnsupportedEncodingException e) {
+                            // Should never happen, UTF-8 is always supported
+                            throw new RuntimeException(e);
+                            }
+                            }
+
+            // add `content` to the URL query string
+                            if (getContent() != null) {
+                            joiner.add(getContent().toUrlQueryString(prefix + "content" + suffix));
+                            }
+
+            // add `timestamp` to the URL query string
+                            if (getTimestamp() != null) {
+                            try {
+                            joiner.add(String.format("%stimestamp%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getTimestamp()), "UTF-8").replaceAll("\\+", "%20")));
+                            } catch (UnsupportedEncodingException e) {
+                            // Should never happen, UTF-8 is always supported
+                            throw new RuntimeException(e);
+                            }
+                            }
+
+        return joiner.toString();
+        }
+
     }
-
-    // add `event_id` to the URL query string
-    if (getEventId() != null) {
-      try {
-        joiner.add(String.format("%sevent_id%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getEventId()), "UTF-8").replaceAll("\\+", "%20")));
-      } catch (UnsupportedEncodingException e) {
-        // Should never happen, UTF-8 is always supported
-        throw new RuntimeException(e);
-      }
-    }
-
-    // add `event_type` to the URL query string
-    if (getEventType() != null) {
-      try {
-        joiner.add(String.format("%sevent_type%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getEventType()), "UTF-8").replaceAll("\\+", "%20")));
-      } catch (UnsupportedEncodingException e) {
-        // Should never happen, UTF-8 is always supported
-        throw new RuntimeException(e);
-      }
-    }
-
-    // add `content` to the URL query string
-    if (getContent() != null) {
-      joiner.add(getContent().toUrlQueryString(prefix + "content" + suffix));
-    }
-
-    // add `timestamp` to the URL query string
-    if (getTimestamp() != null) {
-      try {
-        joiner.add(String.format("%stimestamp%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getTimestamp()), "UTF-8").replaceAll("\\+", "%20")));
-      } catch (UnsupportedEncodingException e) {
-        // Should never happen, UTF-8 is always supported
-        throw new RuntimeException(e);
-      }
-    }
-
-    return joiner.toString();
-  }
-
-}
 

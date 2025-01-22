@@ -19,22 +19,21 @@ import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonTypeName;
 import com.fasterxml.jackson.annotation.JsonValue;
 import com.hyperswitch.client.model.MandateResponse;
-import org.junit.Assert;
-import org.junit.Ignore;
-import org.junit.Test;
-
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Test;
 
 /**
  * Model tests for MandateResponse1
  */
-public class MandateResponse1Test {
+class MandateResponse1Test {
     private final MandateResponse1 model = new MandateResponse1();
 
     /**
      * Model tests for MandateResponse1
      */
     @Test
-    public void testMandateResponse1() {
+    void testMandateResponse1() {
         // TODO: test MandateResponse1
     }
 
@@ -42,7 +41,7 @@ public class MandateResponse1Test {
      * Test the property 'type'
      */
     @Test
-    public void typeTest() {
+    void typeTest() {
         // TODO: test type
     }
 
@@ -50,7 +49,7 @@ public class MandateResponse1Test {
      * Test the property '_object'
      */
     @Test
-    public void _objectTest() {
+    void _objectTest() {
         // TODO: test _object
     }
 

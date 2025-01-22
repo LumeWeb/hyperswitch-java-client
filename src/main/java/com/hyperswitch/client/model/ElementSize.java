@@ -31,211 +31,212 @@ import java.net.URLEncoder;
 import java.util.StringJoiner;
 
 /**
- * ElementSize
- */
-@JsonPropertyOrder({
-  ElementSize.JSON_PROPERTY_VARIANTS,
-  ElementSize.JSON_PROPERTY_PERCENTAGE,
-  ElementSize.JSON_PROPERTY_PIXELS
-})
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+* ElementSize
+*/
+    @JsonPropertyOrder({
+        ElementSize.JSON_PROPERTY_VARIANTS,
+        ElementSize.JSON_PROPERTY_PERCENTAGE,
+        ElementSize.JSON_PROPERTY_PIXELS
+    })
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class ElementSize {
-  public static final String JSON_PROPERTY_VARIANTS = "Variants";
-  private SizeVariants variants;
+        public static final String JSON_PROPERTY_VARIANTS = "Variants";
+    @javax.annotation.Nonnull
+            private SizeVariants variants;
 
-  public static final String JSON_PROPERTY_PERCENTAGE = "Percentage";
-  private Integer percentage;
+        public static final String JSON_PROPERTY_PERCENTAGE = "Percentage";
+    @javax.annotation.Nonnull
+            private Integer percentage;
 
-  public static final String JSON_PROPERTY_PIXELS = "Pixels";
-  private Integer pixels;
+        public static final String JSON_PROPERTY_PIXELS = "Pixels";
+    @javax.annotation.Nonnull
+            private Integer pixels;
 
-  public ElementSize() {
-  }
+public ElementSize() {
+}
 
-  public ElementSize variants(SizeVariants variants) {
-    
-    this.variants = variants;
-    return this;
-  }
+        public ElementSize variants(@javax.annotation.Nonnull SizeVariants variants) {
+        
+        this.variants = variants;
+        return this;
+        }
 
-   /**
-   * Get variants
-   * @return variants
-  **/
-  @javax.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_VARIANTS)
+    /**
+        * Get variants
+    * @return variants
+    */
+    @javax.annotation.Nonnull
+      @JsonProperty(JSON_PROPERTY_VARIANTS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-  public SizeVariants getVariants() {
-    return variants;
-  }
+    public SizeVariants getVariants() {
+        return variants;
+    }
 
 
-  @JsonProperty(JSON_PROPERTY_VARIANTS)
+          @JsonProperty(JSON_PROPERTY_VARIANTS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setVariants(SizeVariants variants) {
-    this.variants = variants;
-  }
+  public void setVariants(@javax.annotation.Nonnull SizeVariants variants) {
+            this.variants = variants;
+        }
 
+        public ElementSize percentage(@javax.annotation.Nonnull Integer percentage) {
+        
+        this.percentage = percentage;
+        return this;
+        }
 
-  public ElementSize percentage(Integer percentage) {
-    
-    this.percentage = percentage;
-    return this;
-  }
-
-   /**
-   * Get percentage
-   * minimum: 0
-   * @return percentage
-  **/
-  @javax.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_PERCENTAGE)
-  @JsonInclude(value = JsonInclude.Include.ALWAYS)
-
-  public Integer getPercentage() {
-    return percentage;
-  }
-
-
-  @JsonProperty(JSON_PROPERTY_PERCENTAGE)
-  @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setPercentage(Integer percentage) {
-    this.percentage = percentage;
-  }
-
-
-  public ElementSize pixels(Integer pixels) {
-    
-    this.pixels = pixels;
-    return this;
-  }
-
-   /**
-   * Get pixels
-   * minimum: 0
-   * @return pixels
-  **/
-  @javax.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_PIXELS)
+    /**
+        * Get percentage
+        * minimum: 0
+    * @return percentage
+    */
+    @javax.annotation.Nonnull
+      @JsonProperty(JSON_PROPERTY_PERCENTAGE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-  public Integer getPixels() {
-    return pixels;
-  }
+    public Integer getPercentage() {
+        return percentage;
+    }
 
 
-  @JsonProperty(JSON_PROPERTY_PIXELS)
+          @JsonProperty(JSON_PROPERTY_PERCENTAGE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setPixels(Integer pixels) {
-    this.pixels = pixels;
-  }
+  public void setPercentage(@javax.annotation.Nonnull Integer percentage) {
+            this.percentage = percentage;
+        }
 
-  @Override
-  public boolean equals(Object o) {
+        public ElementSize pixels(@javax.annotation.Nonnull Integer pixels) {
+        
+        this.pixels = pixels;
+        return this;
+        }
+
+    /**
+        * Get pixels
+        * minimum: 0
+    * @return pixels
+    */
+    @javax.annotation.Nonnull
+      @JsonProperty(JSON_PROPERTY_PIXELS)
+  @JsonInclude(value = JsonInclude.Include.ALWAYS)
+
+    public Integer getPixels() {
+        return pixels;
+    }
+
+
+          @JsonProperty(JSON_PROPERTY_PIXELS)
+  @JsonInclude(value = JsonInclude.Include.ALWAYS)
+  public void setPixels(@javax.annotation.Nonnull Integer pixels) {
+            this.pixels = pixels;
+        }
+
+@Override
+public boolean equals(Object o) {
     if (this == o) {
-      return true;
+    return true;
     }
     if (o == null || getClass() != o.getClass()) {
-      return false;
+    return false;
     }
-    ElementSize elementSize = (ElementSize) o;
-    return Objects.equals(this.variants, elementSize.variants) &&
+        ElementSize elementSize = (ElementSize) o;
+        return Objects.equals(this.variants, elementSize.variants) &&
         Objects.equals(this.percentage, elementSize.percentage) &&
         Objects.equals(this.pixels, elementSize.pixels);
-  }
+}
 
-  @Override
-  public int hashCode() {
-    return Objects.hash(variants, percentage, pixels);
-  }
+    @Override
+    public int hashCode() {
+        return Objects.hash(variants, percentage, pixels);
+    }
 
-  @Override
-  public String toString() {
+    @Override
+    public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class ElementSize {\n");
-    sb.append("    variants: ").append(toIndentedString(variants)).append("\n");
-    sb.append("    percentage: ").append(toIndentedString(percentage)).append("\n");
-    sb.append("    pixels: ").append(toIndentedString(pixels)).append("\n");
+        sb.append("    variants: ").append(toIndentedString(variants)).append("\n");
+        sb.append("    percentage: ").append(toIndentedString(percentage)).append("\n");
+        sb.append("    pixels: ").append(toIndentedString(pixels)).append("\n");
     sb.append("}");
     return sb.toString();
-  }
+    }
 
-  /**
-   * Convert the given object to string with each line indented by 4 spaces
-   * (except the first line).
-   */
-  private String toIndentedString(Object o) {
+    /**
+    * Convert the given object to string with each line indented by 4 spaces
+    * (except the first line).
+    */
+    private String toIndentedString(Object o) {
     if (o == null) {
-      return "null";
+    return "null";
     }
     return o.toString().replace("\n", "\n    ");
-  }
-
-  /**
-   * Convert the instance into URL query string.
-   *
-   * @return URL query string
-   */
-  public String toUrlQueryString() {
-    return toUrlQueryString(null);
-  }
-
-  /**
-   * Convert the instance into URL query string.
-   *
-   * @param prefix prefix of the query string
-   * @return URL query string
-   */
-  public String toUrlQueryString(String prefix) {
-    String suffix = "";
-    String containerSuffix = "";
-    String containerPrefix = "";
-    if (prefix == null) {
-      // style=form, explode=true, e.g. /pet?name=cat&type=manx
-      prefix = "";
-    } else {
-      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
-      prefix = prefix + "[";
-      suffix = "]";
-      containerSuffix = "]";
-      containerPrefix = "[";
     }
 
-    StringJoiner joiner = new StringJoiner("&");
+        /**
+        * Convert the instance into URL query string.
+        *
+        * @return URL query string
+        */
+        public String toUrlQueryString() {
+        return toUrlQueryString(null);
+        }
 
-    // add `Variants` to the URL query string
-    if (getVariants() != null) {
-      try {
-        joiner.add(String.format("%sVariants%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getVariants()), "UTF-8").replaceAll("\\+", "%20")));
-      } catch (UnsupportedEncodingException e) {
-        // Should never happen, UTF-8 is always supported
-        throw new RuntimeException(e);
-      }
+        /**
+        * Convert the instance into URL query string.
+        *
+        * @param prefix prefix of the query string
+        * @return URL query string
+        */
+        public String toUrlQueryString(String prefix) {
+        String suffix = "";
+        String containerSuffix = "";
+        String containerPrefix = "";
+        if (prefix == null) {
+        // style=form, explode=true, e.g. /pet?name=cat&type=manx
+        prefix = "";
+        } else {
+        // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+        prefix = prefix + "[";
+        suffix = "]";
+        containerSuffix = "]";
+        containerPrefix = "[";
+        }
+
+        StringJoiner joiner = new StringJoiner("&");
+
+            // add `Variants` to the URL query string
+                            if (getVariants() != null) {
+                            try {
+                            joiner.add(String.format("%sVariants%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getVariants()), "UTF-8").replaceAll("\\+", "%20")));
+                            } catch (UnsupportedEncodingException e) {
+                            // Should never happen, UTF-8 is always supported
+                            throw new RuntimeException(e);
+                            }
+                            }
+
+            // add `Percentage` to the URL query string
+                        if (getPercentage() != null) {
+                        try {
+                        joiner.add(String.format("%sPercentage%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getPercentage()), "UTF-8").replaceAll("\\+", "%20")));
+                        } catch (UnsupportedEncodingException e) {
+                        // Should never happen, UTF-8 is always supported
+                        throw new RuntimeException(e);
+                        }
+                        }
+
+            // add `Pixels` to the URL query string
+                        if (getPixels() != null) {
+                        try {
+                        joiner.add(String.format("%sPixels%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getPixels()), "UTF-8").replaceAll("\\+", "%20")));
+                        } catch (UnsupportedEncodingException e) {
+                        // Should never happen, UTF-8 is always supported
+                        throw new RuntimeException(e);
+                        }
+                        }
+
+        return joiner.toString();
+        }
+
     }
-
-    // add `Percentage` to the URL query string
-    if (getPercentage() != null) {
-      try {
-        joiner.add(String.format("%sPercentage%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getPercentage()), "UTF-8").replaceAll("\\+", "%20")));
-      } catch (UnsupportedEncodingException e) {
-        // Should never happen, UTF-8 is always supported
-        throw new RuntimeException(e);
-      }
-    }
-
-    // add `Pixels` to the URL query string
-    if (getPixels() != null) {
-      try {
-        joiner.add(String.format("%sPixels%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getPixels()), "UTF-8").replaceAll("\\+", "%20")));
-      } catch (UnsupportedEncodingException e) {
-        // Should never happen, UTF-8 is always supported
-        throw new RuntimeException(e);
-      }
-    }
-
-    return joiner.toString();
-  }
-
-}
 

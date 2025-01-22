@@ -28,121 +28,122 @@ import java.net.URLEncoder;
 import java.util.StringJoiner;
 
 /**
- * WalletOneOf
- */
-@JsonPropertyOrder({
-  WalletOneOf.JSON_PROPERTY_PAYPAL
-})
-@JsonTypeName("Wallet_oneOf")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+* WalletOneOf
+*/
+    @JsonPropertyOrder({
+        WalletOneOf.JSON_PROPERTY_PAYPAL
+    })
+            @JsonTypeName("Wallet_oneOf")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class WalletOneOf {
-  public static final String JSON_PROPERTY_PAYPAL = "paypal";
-  private Paypal paypal;
+        public static final String JSON_PROPERTY_PAYPAL = "paypal";
+    @javax.annotation.Nonnull
+            private Paypal paypal;
 
-  public WalletOneOf() {
-  }
+public WalletOneOf() {
+}
 
-  public WalletOneOf paypal(Paypal paypal) {
-    
-    this.paypal = paypal;
-    return this;
-  }
+        public WalletOneOf paypal(@javax.annotation.Nonnull Paypal paypal) {
+        
+        this.paypal = paypal;
+        return this;
+        }
 
-   /**
-   * Get paypal
-   * @return paypal
-  **/
-  @javax.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_PAYPAL)
+    /**
+        * Get paypal
+    * @return paypal
+    */
+    @javax.annotation.Nonnull
+      @JsonProperty(JSON_PROPERTY_PAYPAL)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-  public Paypal getPaypal() {
-    return paypal;
-  }
+    public Paypal getPaypal() {
+        return paypal;
+    }
 
 
-  @JsonProperty(JSON_PROPERTY_PAYPAL)
+          @JsonProperty(JSON_PROPERTY_PAYPAL)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setPaypal(Paypal paypal) {
-    this.paypal = paypal;
-  }
+  public void setPaypal(@javax.annotation.Nonnull Paypal paypal) {
+            this.paypal = paypal;
+        }
 
-  @Override
-  public boolean equals(Object o) {
+@Override
+public boolean equals(Object o) {
     if (this == o) {
-      return true;
+    return true;
     }
     if (o == null || getClass() != o.getClass()) {
-      return false;
+    return false;
     }
-    WalletOneOf walletOneOf = (WalletOneOf) o;
-    return Objects.equals(this.paypal, walletOneOf.paypal);
-  }
+        WalletOneOf walletOneOf = (WalletOneOf) o;
+        return Objects.equals(this.paypal, walletOneOf.paypal);
+}
 
-  @Override
-  public int hashCode() {
-    return Objects.hash(paypal);
-  }
+    @Override
+    public int hashCode() {
+        return Objects.hash(paypal);
+    }
 
-  @Override
-  public String toString() {
+    @Override
+    public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class WalletOneOf {\n");
-    sb.append("    paypal: ").append(toIndentedString(paypal)).append("\n");
+        sb.append("    paypal: ").append(toIndentedString(paypal)).append("\n");
     sb.append("}");
     return sb.toString();
-  }
+    }
 
-  /**
-   * Convert the given object to string with each line indented by 4 spaces
-   * (except the first line).
-   */
-  private String toIndentedString(Object o) {
+    /**
+    * Convert the given object to string with each line indented by 4 spaces
+    * (except the first line).
+    */
+    private String toIndentedString(Object o) {
     if (o == null) {
-      return "null";
+    return "null";
     }
     return o.toString().replace("\n", "\n    ");
-  }
-
-  /**
-   * Convert the instance into URL query string.
-   *
-   * @return URL query string
-   */
-  public String toUrlQueryString() {
-    return toUrlQueryString(null);
-  }
-
-  /**
-   * Convert the instance into URL query string.
-   *
-   * @param prefix prefix of the query string
-   * @return URL query string
-   */
-  public String toUrlQueryString(String prefix) {
-    String suffix = "";
-    String containerSuffix = "";
-    String containerPrefix = "";
-    if (prefix == null) {
-      // style=form, explode=true, e.g. /pet?name=cat&type=manx
-      prefix = "";
-    } else {
-      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
-      prefix = prefix + "[";
-      suffix = "]";
-      containerSuffix = "]";
-      containerPrefix = "[";
     }
 
-    StringJoiner joiner = new StringJoiner("&");
+        /**
+        * Convert the instance into URL query string.
+        *
+        * @return URL query string
+        */
+        public String toUrlQueryString() {
+        return toUrlQueryString(null);
+        }
 
-    // add `paypal` to the URL query string
-    if (getPaypal() != null) {
-      joiner.add(getPaypal().toUrlQueryString(prefix + "paypal" + suffix));
+        /**
+        * Convert the instance into URL query string.
+        *
+        * @param prefix prefix of the query string
+        * @return URL query string
+        */
+        public String toUrlQueryString(String prefix) {
+        String suffix = "";
+        String containerSuffix = "";
+        String containerPrefix = "";
+        if (prefix == null) {
+        // style=form, explode=true, e.g. /pet?name=cat&type=manx
+        prefix = "";
+        } else {
+        // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+        prefix = prefix + "[";
+        suffix = "]";
+        containerSuffix = "]";
+        containerPrefix = "[";
+        }
+
+        StringJoiner joiner = new StringJoiner("&");
+
+            // add `paypal` to the URL query string
+                            if (getPaypal() != null) {
+                            joiner.add(getPaypal().toUrlQueryString(prefix + "paypal" + suffix));
+                            }
+
+        return joiner.toString();
+        }
+
     }
-
-    return joiner.toString();
-  }
-
-}
 

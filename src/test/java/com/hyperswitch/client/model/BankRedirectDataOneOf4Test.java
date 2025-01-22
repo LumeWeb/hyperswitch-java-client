@@ -19,22 +19,21 @@ import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonTypeName;
 import com.fasterxml.jackson.annotation.JsonValue;
 import com.hyperswitch.client.model.BankRedirectDataOneOf4Giropay;
-import org.junit.Assert;
-import org.junit.Ignore;
-import org.junit.Test;
-
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Test;
 
 /**
  * Model tests for BankRedirectDataOneOf4
  */
-public class BankRedirectDataOneOf4Test {
+class BankRedirectDataOneOf4Test {
     private final BankRedirectDataOneOf4 model = new BankRedirectDataOneOf4();
 
     /**
      * Model tests for BankRedirectDataOneOf4
      */
     @Test
-    public void testBankRedirectDataOneOf4() {
+    void testBankRedirectDataOneOf4() {
         // TODO: test BankRedirectDataOneOf4
     }
 
@@ -42,7 +41,7 @@ public class BankRedirectDataOneOf4Test {
      * Test the property 'giropay'
      */
     @Test
-    public void giropayTest() {
+    void giropayTest() {
         // TODO: test giropay
     }
 

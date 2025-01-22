@@ -22,22 +22,21 @@ import org.openapitools.jackson.nullable.JsonNullable;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.openapitools.jackson.nullable.JsonNullable;
 import java.util.NoSuchElementException;
-import org.junit.Assert;
-import org.junit.Ignore;
-import org.junit.Test;
-
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Test;
 
 /**
  * Model tests for UpiCollectData
  */
-public class UpiCollectDataTest {
+class UpiCollectDataTest {
     private final UpiCollectData model = new UpiCollectData();
 
     /**
      * Model tests for UpiCollectData
      */
     @Test
-    public void testUpiCollectData() {
+    void testUpiCollectData() {
         // TODO: test UpiCollectData
     }
 
@@ -45,7 +44,7 @@ public class UpiCollectDataTest {
      * Test the property 'vpaId'
      */
     @Test
-    public void vpaIdTest() {
+    void vpaIdTest() {
         // TODO: test vpaId
     }
 

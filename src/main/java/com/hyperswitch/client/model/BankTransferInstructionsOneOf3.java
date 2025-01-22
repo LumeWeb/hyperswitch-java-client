@@ -28,121 +28,122 @@ import java.net.URLEncoder;
 import java.util.StringJoiner;
 
 /**
- * BankTransferInstructionsOneOf3
- */
-@JsonPropertyOrder({
-  BankTransferInstructionsOneOf3.JSON_PROPERTY_BACS_BANK_INSTRUCTIONS
-})
-@JsonTypeName("BankTransferInstructions_oneOf_3")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+* BankTransferInstructionsOneOf3
+*/
+    @JsonPropertyOrder({
+        BankTransferInstructionsOneOf3.JSON_PROPERTY_BACS_BANK_INSTRUCTIONS
+    })
+            @JsonTypeName("BankTransferInstructions_oneOf_3")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class BankTransferInstructionsOneOf3 {
-  public static final String JSON_PROPERTY_BACS_BANK_INSTRUCTIONS = "bacs_bank_instructions";
-  private BacsBankTransferInstructions bacsBankInstructions;
+        public static final String JSON_PROPERTY_BACS_BANK_INSTRUCTIONS = "bacs_bank_instructions";
+    @javax.annotation.Nonnull
+            private BacsBankTransferInstructions bacsBankInstructions;
 
-  public BankTransferInstructionsOneOf3() {
-  }
+public BankTransferInstructionsOneOf3() {
+}
 
-  public BankTransferInstructionsOneOf3 bacsBankInstructions(BacsBankTransferInstructions bacsBankInstructions) {
-    
-    this.bacsBankInstructions = bacsBankInstructions;
-    return this;
-  }
+        public BankTransferInstructionsOneOf3 bacsBankInstructions(@javax.annotation.Nonnull BacsBankTransferInstructions bacsBankInstructions) {
+        
+        this.bacsBankInstructions = bacsBankInstructions;
+        return this;
+        }
 
-   /**
-   * Get bacsBankInstructions
-   * @return bacsBankInstructions
-  **/
-  @javax.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_BACS_BANK_INSTRUCTIONS)
+    /**
+        * Get bacsBankInstructions
+    * @return bacsBankInstructions
+    */
+    @javax.annotation.Nonnull
+      @JsonProperty(JSON_PROPERTY_BACS_BANK_INSTRUCTIONS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-  public BacsBankTransferInstructions getBacsBankInstructions() {
-    return bacsBankInstructions;
-  }
+    public BacsBankTransferInstructions getBacsBankInstructions() {
+        return bacsBankInstructions;
+    }
 
 
-  @JsonProperty(JSON_PROPERTY_BACS_BANK_INSTRUCTIONS)
+          @JsonProperty(JSON_PROPERTY_BACS_BANK_INSTRUCTIONS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setBacsBankInstructions(BacsBankTransferInstructions bacsBankInstructions) {
-    this.bacsBankInstructions = bacsBankInstructions;
-  }
+  public void setBacsBankInstructions(@javax.annotation.Nonnull BacsBankTransferInstructions bacsBankInstructions) {
+            this.bacsBankInstructions = bacsBankInstructions;
+        }
 
-  @Override
-  public boolean equals(Object o) {
+@Override
+public boolean equals(Object o) {
     if (this == o) {
-      return true;
+    return true;
     }
     if (o == null || getClass() != o.getClass()) {
-      return false;
+    return false;
     }
-    BankTransferInstructionsOneOf3 bankTransferInstructionsOneOf3 = (BankTransferInstructionsOneOf3) o;
-    return Objects.equals(this.bacsBankInstructions, bankTransferInstructionsOneOf3.bacsBankInstructions);
-  }
+        BankTransferInstructionsOneOf3 bankTransferInstructionsOneOf3 = (BankTransferInstructionsOneOf3) o;
+        return Objects.equals(this.bacsBankInstructions, bankTransferInstructionsOneOf3.bacsBankInstructions);
+}
 
-  @Override
-  public int hashCode() {
-    return Objects.hash(bacsBankInstructions);
-  }
+    @Override
+    public int hashCode() {
+        return Objects.hash(bacsBankInstructions);
+    }
 
-  @Override
-  public String toString() {
+    @Override
+    public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class BankTransferInstructionsOneOf3 {\n");
-    sb.append("    bacsBankInstructions: ").append(toIndentedString(bacsBankInstructions)).append("\n");
+        sb.append("    bacsBankInstructions: ").append(toIndentedString(bacsBankInstructions)).append("\n");
     sb.append("}");
     return sb.toString();
-  }
+    }
 
-  /**
-   * Convert the given object to string with each line indented by 4 spaces
-   * (except the first line).
-   */
-  private String toIndentedString(Object o) {
+    /**
+    * Convert the given object to string with each line indented by 4 spaces
+    * (except the first line).
+    */
+    private String toIndentedString(Object o) {
     if (o == null) {
-      return "null";
+    return "null";
     }
     return o.toString().replace("\n", "\n    ");
-  }
-
-  /**
-   * Convert the instance into URL query string.
-   *
-   * @return URL query string
-   */
-  public String toUrlQueryString() {
-    return toUrlQueryString(null);
-  }
-
-  /**
-   * Convert the instance into URL query string.
-   *
-   * @param prefix prefix of the query string
-   * @return URL query string
-   */
-  public String toUrlQueryString(String prefix) {
-    String suffix = "";
-    String containerSuffix = "";
-    String containerPrefix = "";
-    if (prefix == null) {
-      // style=form, explode=true, e.g. /pet?name=cat&type=manx
-      prefix = "";
-    } else {
-      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
-      prefix = prefix + "[";
-      suffix = "]";
-      containerSuffix = "]";
-      containerPrefix = "[";
     }
 
-    StringJoiner joiner = new StringJoiner("&");
+        /**
+        * Convert the instance into URL query string.
+        *
+        * @return URL query string
+        */
+        public String toUrlQueryString() {
+        return toUrlQueryString(null);
+        }
 
-    // add `bacs_bank_instructions` to the URL query string
-    if (getBacsBankInstructions() != null) {
-      joiner.add(getBacsBankInstructions().toUrlQueryString(prefix + "bacs_bank_instructions" + suffix));
+        /**
+        * Convert the instance into URL query string.
+        *
+        * @param prefix prefix of the query string
+        * @return URL query string
+        */
+        public String toUrlQueryString(String prefix) {
+        String suffix = "";
+        String containerSuffix = "";
+        String containerPrefix = "";
+        if (prefix == null) {
+        // style=form, explode=true, e.g. /pet?name=cat&type=manx
+        prefix = "";
+        } else {
+        // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+        prefix = prefix + "[";
+        suffix = "]";
+        containerSuffix = "]";
+        containerPrefix = "[";
+        }
+
+        StringJoiner joiner = new StringJoiner("&");
+
+            // add `bacs_bank_instructions` to the URL query string
+                            if (getBacsBankInstructions() != null) {
+                            joiner.add(getBacsBankInstructions().toUrlQueryString(prefix + "bacs_bank_instructions" + suffix));
+                            }
+
+        return joiner.toString();
+        }
+
     }
-
-    return joiner.toString();
-  }
-
-}
 

@@ -27,126 +27,127 @@ import java.net.URLEncoder;
 import java.util.StringJoiner;
 
 /**
- * WalletDataOneOf24
- */
-@JsonPropertyOrder({
-  WalletDataOneOf24.JSON_PROPERTY_WE_CHAT_PAY_QR
-})
-@JsonTypeName("WalletData_oneOf_24")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+* WalletDataOneOf24
+*/
+    @JsonPropertyOrder({
+        WalletDataOneOf24.JSON_PROPERTY_WE_CHAT_PAY_QR
+    })
+            @JsonTypeName("WalletData_oneOf_24")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class WalletDataOneOf24 {
-  public static final String JSON_PROPERTY_WE_CHAT_PAY_QR = "we_chat_pay_qr";
-  private Object weChatPayQr;
+        public static final String JSON_PROPERTY_WE_CHAT_PAY_QR = "we_chat_pay_qr";
+    @javax.annotation.Nonnull
+            private Object weChatPayQr;
 
-  public WalletDataOneOf24() {
-  }
+public WalletDataOneOf24() {
+}
 
-  public WalletDataOneOf24 weChatPayQr(Object weChatPayQr) {
-    
-    this.weChatPayQr = weChatPayQr;
-    return this;
-  }
+        public WalletDataOneOf24 weChatPayQr(@javax.annotation.Nonnull Object weChatPayQr) {
+        
+        this.weChatPayQr = weChatPayQr;
+        return this;
+        }
 
-   /**
-   * Get weChatPayQr
-   * @return weChatPayQr
-  **/
-  @javax.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_WE_CHAT_PAY_QR)
+    /**
+        * Get weChatPayQr
+    * @return weChatPayQr
+    */
+    @javax.annotation.Nonnull
+      @JsonProperty(JSON_PROPERTY_WE_CHAT_PAY_QR)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-  public Object getWeChatPayQr() {
-    return weChatPayQr;
-  }
+    public Object getWeChatPayQr() {
+        return weChatPayQr;
+    }
 
 
-  @JsonProperty(JSON_PROPERTY_WE_CHAT_PAY_QR)
+          @JsonProperty(JSON_PROPERTY_WE_CHAT_PAY_QR)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setWeChatPayQr(Object weChatPayQr) {
-    this.weChatPayQr = weChatPayQr;
-  }
+  public void setWeChatPayQr(@javax.annotation.Nonnull Object weChatPayQr) {
+            this.weChatPayQr = weChatPayQr;
+        }
 
-  @Override
-  public boolean equals(Object o) {
+@Override
+public boolean equals(Object o) {
     if (this == o) {
-      return true;
+    return true;
     }
     if (o == null || getClass() != o.getClass()) {
-      return false;
+    return false;
     }
-    WalletDataOneOf24 walletDataOneOf24 = (WalletDataOneOf24) o;
-    return Objects.equals(this.weChatPayQr, walletDataOneOf24.weChatPayQr);
-  }
+        WalletDataOneOf24 walletDataOneOf24 = (WalletDataOneOf24) o;
+        return Objects.equals(this.weChatPayQr, walletDataOneOf24.weChatPayQr);
+}
 
-  @Override
-  public int hashCode() {
-    return Objects.hash(weChatPayQr);
-  }
+    @Override
+    public int hashCode() {
+        return Objects.hash(weChatPayQr);
+    }
 
-  @Override
-  public String toString() {
+    @Override
+    public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class WalletDataOneOf24 {\n");
-    sb.append("    weChatPayQr: ").append(toIndentedString(weChatPayQr)).append("\n");
+        sb.append("    weChatPayQr: ").append(toIndentedString(weChatPayQr)).append("\n");
     sb.append("}");
     return sb.toString();
-  }
+    }
 
-  /**
-   * Convert the given object to string with each line indented by 4 spaces
-   * (except the first line).
-   */
-  private String toIndentedString(Object o) {
+    /**
+    * Convert the given object to string with each line indented by 4 spaces
+    * (except the first line).
+    */
+    private String toIndentedString(Object o) {
     if (o == null) {
-      return "null";
+    return "null";
     }
     return o.toString().replace("\n", "\n    ");
-  }
-
-  /**
-   * Convert the instance into URL query string.
-   *
-   * @return URL query string
-   */
-  public String toUrlQueryString() {
-    return toUrlQueryString(null);
-  }
-
-  /**
-   * Convert the instance into URL query string.
-   *
-   * @param prefix prefix of the query string
-   * @return URL query string
-   */
-  public String toUrlQueryString(String prefix) {
-    String suffix = "";
-    String containerSuffix = "";
-    String containerPrefix = "";
-    if (prefix == null) {
-      // style=form, explode=true, e.g. /pet?name=cat&type=manx
-      prefix = "";
-    } else {
-      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
-      prefix = prefix + "[";
-      suffix = "]";
-      containerSuffix = "]";
-      containerPrefix = "[";
     }
 
-    StringJoiner joiner = new StringJoiner("&");
+        /**
+        * Convert the instance into URL query string.
+        *
+        * @return URL query string
+        */
+        public String toUrlQueryString() {
+        return toUrlQueryString(null);
+        }
 
-    // add `we_chat_pay_qr` to the URL query string
-    if (getWeChatPayQr() != null) {
-      try {
-        joiner.add(String.format("%swe_chat_pay_qr%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getWeChatPayQr()), "UTF-8").replaceAll("\\+", "%20")));
-      } catch (UnsupportedEncodingException e) {
-        // Should never happen, UTF-8 is always supported
-        throw new RuntimeException(e);
-      }
+        /**
+        * Convert the instance into URL query string.
+        *
+        * @param prefix prefix of the query string
+        * @return URL query string
+        */
+        public String toUrlQueryString(String prefix) {
+        String suffix = "";
+        String containerSuffix = "";
+        String containerPrefix = "";
+        if (prefix == null) {
+        // style=form, explode=true, e.g. /pet?name=cat&type=manx
+        prefix = "";
+        } else {
+        // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+        prefix = prefix + "[";
+        suffix = "]";
+        containerSuffix = "]";
+        containerPrefix = "[";
+        }
+
+        StringJoiner joiner = new StringJoiner("&");
+
+            // add `we_chat_pay_qr` to the URL query string
+                        if (getWeChatPayQr() != null) {
+                        try {
+                        joiner.add(String.format("%swe_chat_pay_qr%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getWeChatPayQr()), "UTF-8").replaceAll("\\+", "%20")));
+                        } catch (UnsupportedEncodingException e) {
+                        // Should never happen, UTF-8 is always supported
+                        throw new RuntimeException(e);
+                        }
+                        }
+
+        return joiner.toString();
+        }
+
     }
-
-    return joiner.toString();
-  }
-
-}
 

@@ -27,125 +27,126 @@ import java.net.URLEncoder;
 import java.util.StringJoiner;
 
 /**
- * ToggleKVRequest
- */
-@JsonPropertyOrder({
-  ToggleKVRequest.JSON_PROPERTY_KV_ENABLED
-})
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+* ToggleKVRequest
+*/
+    @JsonPropertyOrder({
+        ToggleKVRequest.JSON_PROPERTY_KV_ENABLED
+    })
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class ToggleKVRequest {
-  public static final String JSON_PROPERTY_KV_ENABLED = "kv_enabled";
-  private Boolean kvEnabled;
+        public static final String JSON_PROPERTY_KV_ENABLED = "kv_enabled";
+    @javax.annotation.Nonnull
+            private Boolean kvEnabled;
 
-  public ToggleKVRequest() {
-  }
+public ToggleKVRequest() {
+}
 
-  public ToggleKVRequest kvEnabled(Boolean kvEnabled) {
-    
-    this.kvEnabled = kvEnabled;
-    return this;
-  }
+        public ToggleKVRequest kvEnabled(@javax.annotation.Nonnull Boolean kvEnabled) {
+        
+        this.kvEnabled = kvEnabled;
+        return this;
+        }
 
-   /**
-   * Status of KV for the specific merchant
-   * @return kvEnabled
-  **/
-  @javax.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_KV_ENABLED)
+    /**
+        * Status of KV for the specific merchant
+    * @return kvEnabled
+    */
+    @javax.annotation.Nonnull
+      @JsonProperty(JSON_PROPERTY_KV_ENABLED)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-  public Boolean getKvEnabled() {
-    return kvEnabled;
-  }
+    public Boolean getKvEnabled() {
+        return kvEnabled;
+    }
 
 
-  @JsonProperty(JSON_PROPERTY_KV_ENABLED)
+          @JsonProperty(JSON_PROPERTY_KV_ENABLED)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setKvEnabled(Boolean kvEnabled) {
-    this.kvEnabled = kvEnabled;
-  }
+  public void setKvEnabled(@javax.annotation.Nonnull Boolean kvEnabled) {
+            this.kvEnabled = kvEnabled;
+        }
 
-  @Override
-  public boolean equals(Object o) {
+@Override
+public boolean equals(Object o) {
     if (this == o) {
-      return true;
+    return true;
     }
     if (o == null || getClass() != o.getClass()) {
-      return false;
+    return false;
     }
-    ToggleKVRequest toggleKVRequest = (ToggleKVRequest) o;
-    return Objects.equals(this.kvEnabled, toggleKVRequest.kvEnabled);
-  }
+        ToggleKVRequest toggleKVRequest = (ToggleKVRequest) o;
+        return Objects.equals(this.kvEnabled, toggleKVRequest.kvEnabled);
+}
 
-  @Override
-  public int hashCode() {
-    return Objects.hash(kvEnabled);
-  }
+    @Override
+    public int hashCode() {
+        return Objects.hash(kvEnabled);
+    }
 
-  @Override
-  public String toString() {
+    @Override
+    public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class ToggleKVRequest {\n");
-    sb.append("    kvEnabled: ").append(toIndentedString(kvEnabled)).append("\n");
+        sb.append("    kvEnabled: ").append(toIndentedString(kvEnabled)).append("\n");
     sb.append("}");
     return sb.toString();
-  }
+    }
 
-  /**
-   * Convert the given object to string with each line indented by 4 spaces
-   * (except the first line).
-   */
-  private String toIndentedString(Object o) {
+    /**
+    * Convert the given object to string with each line indented by 4 spaces
+    * (except the first line).
+    */
+    private String toIndentedString(Object o) {
     if (o == null) {
-      return "null";
+    return "null";
     }
     return o.toString().replace("\n", "\n    ");
-  }
-
-  /**
-   * Convert the instance into URL query string.
-   *
-   * @return URL query string
-   */
-  public String toUrlQueryString() {
-    return toUrlQueryString(null);
-  }
-
-  /**
-   * Convert the instance into URL query string.
-   *
-   * @param prefix prefix of the query string
-   * @return URL query string
-   */
-  public String toUrlQueryString(String prefix) {
-    String suffix = "";
-    String containerSuffix = "";
-    String containerPrefix = "";
-    if (prefix == null) {
-      // style=form, explode=true, e.g. /pet?name=cat&type=manx
-      prefix = "";
-    } else {
-      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
-      prefix = prefix + "[";
-      suffix = "]";
-      containerSuffix = "]";
-      containerPrefix = "[";
     }
 
-    StringJoiner joiner = new StringJoiner("&");
+        /**
+        * Convert the instance into URL query string.
+        *
+        * @return URL query string
+        */
+        public String toUrlQueryString() {
+        return toUrlQueryString(null);
+        }
 
-    // add `kv_enabled` to the URL query string
-    if (getKvEnabled() != null) {
-      try {
-        joiner.add(String.format("%skv_enabled%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getKvEnabled()), "UTF-8").replaceAll("\\+", "%20")));
-      } catch (UnsupportedEncodingException e) {
-        // Should never happen, UTF-8 is always supported
-        throw new RuntimeException(e);
-      }
+        /**
+        * Convert the instance into URL query string.
+        *
+        * @param prefix prefix of the query string
+        * @return URL query string
+        */
+        public String toUrlQueryString(String prefix) {
+        String suffix = "";
+        String containerSuffix = "";
+        String containerPrefix = "";
+        if (prefix == null) {
+        // style=form, explode=true, e.g. /pet?name=cat&type=manx
+        prefix = "";
+        } else {
+        // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+        prefix = prefix + "[";
+        suffix = "]";
+        containerSuffix = "]";
+        containerPrefix = "[";
+        }
+
+        StringJoiner joiner = new StringJoiner("&");
+
+            // add `kv_enabled` to the URL query string
+                        if (getKvEnabled() != null) {
+                        try {
+                        joiner.add(String.format("%skv_enabled%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getKvEnabled()), "UTF-8").replaceAll("\\+", "%20")));
+                        } catch (UnsupportedEncodingException e) {
+                        // Should never happen, UTF-8 is always supported
+                        throw new RuntimeException(e);
+                        }
+                        }
+
+        return joiner.toString();
+        }
+
     }
-
-    return joiner.toString();
-  }
-
-}
 

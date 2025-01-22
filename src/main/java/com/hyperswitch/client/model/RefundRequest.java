@@ -34,359 +34,360 @@ import java.net.URLEncoder;
 import java.util.StringJoiner;
 
 /**
- * RefundRequest
- */
-@JsonPropertyOrder({
-  RefundRequest.JSON_PROPERTY_PAYMENT_ID,
-  RefundRequest.JSON_PROPERTY_REFUND_ID,
-  RefundRequest.JSON_PROPERTY_MERCHANT_ID,
-  RefundRequest.JSON_PROPERTY_AMOUNT,
-  RefundRequest.JSON_PROPERTY_REASON,
-  RefundRequest.JSON_PROPERTY_REFUND_TYPE,
-  RefundRequest.JSON_PROPERTY_METADATA,
-  RefundRequest.JSON_PROPERTY_MERCHANT_CONNECTOR_DETAILS,
-  RefundRequest.JSON_PROPERTY_CHARGES
-})
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+* RefundRequest
+*/
+    @JsonPropertyOrder({
+        RefundRequest.JSON_PROPERTY_PAYMENT_ID,
+        RefundRequest.JSON_PROPERTY_REFUND_ID,
+        RefundRequest.JSON_PROPERTY_MERCHANT_ID,
+        RefundRequest.JSON_PROPERTY_AMOUNT,
+        RefundRequest.JSON_PROPERTY_REASON,
+        RefundRequest.JSON_PROPERTY_REFUND_TYPE,
+        RefundRequest.JSON_PROPERTY_METADATA,
+        RefundRequest.JSON_PROPERTY_MERCHANT_CONNECTOR_DETAILS,
+        RefundRequest.JSON_PROPERTY_CHARGES
+    })
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class RefundRequest {
-  public static final String JSON_PROPERTY_PAYMENT_ID = "payment_id";
-  private String paymentId;
+        public static final String JSON_PROPERTY_PAYMENT_ID = "payment_id";
+    @javax.annotation.Nonnull
+            private String paymentId;
 
-  public static final String JSON_PROPERTY_REFUND_ID = "refund_id";
-  private JsonNullable<String> refundId = JsonNullable.<String>undefined();
+        public static final String JSON_PROPERTY_REFUND_ID = "refund_id";
+    @javax.annotation.Nullable
+            private JsonNullable<String> refundId = JsonNullable.<String>undefined();
 
-  public static final String JSON_PROPERTY_MERCHANT_ID = "merchant_id";
-  private JsonNullable<String> merchantId = JsonNullable.<String>undefined();
+        public static final String JSON_PROPERTY_MERCHANT_ID = "merchant_id";
+    @javax.annotation.Nullable
+            private JsonNullable<String> merchantId = JsonNullable.<String>undefined();
 
-  public static final String JSON_PROPERTY_AMOUNT = "amount";
-  private JsonNullable<Long> amount = JsonNullable.<Long>undefined();
+        public static final String JSON_PROPERTY_AMOUNT = "amount";
+    @javax.annotation.Nullable
+            private JsonNullable<Long> amount = JsonNullable.<Long>undefined();
 
-  public static final String JSON_PROPERTY_REASON = "reason";
-  private JsonNullable<String> reason = JsonNullable.<String>undefined();
+        public static final String JSON_PROPERTY_REASON = "reason";
+    @javax.annotation.Nullable
+            private JsonNullable<String> reason = JsonNullable.<String>undefined();
 
-  public static final String JSON_PROPERTY_REFUND_TYPE = "refund_type";
-  private JsonNullable<RefundType> refundType = JsonNullable.<RefundType>of(RefundType.INSTANT);
+        public static final String JSON_PROPERTY_REFUND_TYPE = "refund_type";
+    @javax.annotation.Nullable
+            private JsonNullable<RefundType> refundType = JsonNullable.<RefundType>of(RefundType.INSTANT);
 
-  public static final String JSON_PROPERTY_METADATA = "metadata";
-  private JsonNullable<Object> metadata = JsonNullable.<Object>undefined();
+        public static final String JSON_PROPERTY_METADATA = "metadata";
+    @javax.annotation.Nullable
+            private JsonNullable<Object> metadata = JsonNullable.<Object>undefined();
 
-  public static final String JSON_PROPERTY_MERCHANT_CONNECTOR_DETAILS = "merchant_connector_details";
-  private JsonNullable<MerchantConnectorDetailsWrap> merchantConnectorDetails = JsonNullable.<MerchantConnectorDetailsWrap>undefined();
+        public static final String JSON_PROPERTY_MERCHANT_CONNECTOR_DETAILS = "merchant_connector_details";
+    @javax.annotation.Nullable
+            private JsonNullable<MerchantConnectorDetailsWrap> merchantConnectorDetails = JsonNullable.<MerchantConnectorDetailsWrap>undefined();
 
-  public static final String JSON_PROPERTY_CHARGES = "charges";
-  private JsonNullable<ChargeRefunds> charges = JsonNullable.<ChargeRefunds>undefined();
+        public static final String JSON_PROPERTY_CHARGES = "charges";
+    @javax.annotation.Nullable
+            private JsonNullable<ChargeRefunds> charges = JsonNullable.<ChargeRefunds>undefined();
 
-  public RefundRequest() {
-  }
+public RefundRequest() {
+}
 
-  public RefundRequest paymentId(String paymentId) {
-    
-    this.paymentId = paymentId;
-    return this;
-  }
+        public RefundRequest paymentId(@javax.annotation.Nonnull String paymentId) {
+        
+        this.paymentId = paymentId;
+        return this;
+        }
 
-   /**
-   * The payment id against which refund is to be initiated
-   * @return paymentId
-  **/
-  @javax.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_PAYMENT_ID)
+    /**
+        * The payment id against which refund is to be initiated
+    * @return paymentId
+    */
+    @javax.annotation.Nonnull
+      @JsonProperty(JSON_PROPERTY_PAYMENT_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-  public String getPaymentId() {
-    return paymentId;
-  }
+    public String getPaymentId() {
+        return paymentId;
+    }
 
 
-  @JsonProperty(JSON_PROPERTY_PAYMENT_ID)
+          @JsonProperty(JSON_PROPERTY_PAYMENT_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setPaymentId(String paymentId) {
-    this.paymentId = paymentId;
-  }
+  public void setPaymentId(@javax.annotation.Nonnull String paymentId) {
+            this.paymentId = paymentId;
+        }
 
+        public RefundRequest refundId(@javax.annotation.Nullable String refundId) {
+        this.refundId = JsonNullable.<String>of(refundId);
+        
+        return this;
+        }
 
-  public RefundRequest refundId(String refundId) {
-    this.refundId = JsonNullable.<String>of(refundId);
+    /**
+        * Unique Identifier for the Refund. This is to ensure idempotency for multiple partial refunds initiated against the same payment. If this is not passed by the merchant, this field shall be auto generated and provided in the API response. It is recommended to generate uuid(v4) as the refund_id.
+    * @return refundId
+    */
+    @javax.annotation.Nullable
+        @JsonIgnore
     
-    return this;
-  }
+    public String getRefundId() {
+                return refundId.orElse(null);
+    }
 
-   /**
-   * Unique Identifier for the Refund. This is to ensure idempotency for multiple partial refunds initiated against the same payment. If this is not passed by the merchant, this field shall be auto generated and provided in the API response. It is recommended to generate uuid(v4) as the refund_id.
-   * @return refundId
-  **/
-  @javax.annotation.Nullable
-  @JsonIgnore
-
-  public String getRefundId() {
-        return refundId.orElse(null);
-  }
-
-  @JsonProperty(JSON_PROPERTY_REFUND_ID)
+          @JsonProperty(JSON_PROPERTY_REFUND_ID)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-  public JsonNullable<String> getRefundId_JsonNullable() {
-    return refundId;
-  }
-  
-  @JsonProperty(JSON_PROPERTY_REFUND_ID)
-  public void setRefundId_JsonNullable(JsonNullable<String> refundId) {
-    this.refundId = refundId;
-  }
-
-  public void setRefundId(String refundId) {
-    this.refundId = JsonNullable.<String>of(refundId);
-  }
-
-
-  public RefundRequest merchantId(String merchantId) {
-    this.merchantId = JsonNullable.<String>of(merchantId);
+        public JsonNullable<String> getRefundId_JsonNullable() {
+        return refundId;
+        }
     
-    return this;
-  }
+        @JsonProperty(JSON_PROPERTY_REFUND_ID)
+        public void setRefundId_JsonNullable(JsonNullable<String> refundId) {
+        this.refundId = refundId;
+        }
 
-   /**
-   * The identifier for the Merchant Account
-   * @return merchantId
-  **/
-  @javax.annotation.Nullable
-  @JsonIgnore
+          public void setRefundId(@javax.annotation.Nullable String refundId) {
+            this.refundId = JsonNullable.<String>of(refundId);
+        }
 
-  public String getMerchantId() {
-        return merchantId.orElse(null);
-  }
+        public RefundRequest merchantId(@javax.annotation.Nullable String merchantId) {
+        this.merchantId = JsonNullable.<String>of(merchantId);
+        
+        return this;
+        }
 
-  @JsonProperty(JSON_PROPERTY_MERCHANT_ID)
+    /**
+        * The identifier for the Merchant Account
+    * @return merchantId
+    */
+    @javax.annotation.Nullable
+        @JsonIgnore
+    
+    public String getMerchantId() {
+                return merchantId.orElse(null);
+    }
+
+          @JsonProperty(JSON_PROPERTY_MERCHANT_ID)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-  public JsonNullable<String> getMerchantId_JsonNullable() {
-    return merchantId;
-  }
-  
-  @JsonProperty(JSON_PROPERTY_MERCHANT_ID)
-  public void setMerchantId_JsonNullable(JsonNullable<String> merchantId) {
-    this.merchantId = merchantId;
-  }
-
-  public void setMerchantId(String merchantId) {
-    this.merchantId = JsonNullable.<String>of(merchantId);
-  }
-
-
-  public RefundRequest amount(Long amount) {
-    this.amount = JsonNullable.<Long>of(amount);
+        public JsonNullable<String> getMerchantId_JsonNullable() {
+        return merchantId;
+        }
     
-    return this;
-  }
+        @JsonProperty(JSON_PROPERTY_MERCHANT_ID)
+        public void setMerchantId_JsonNullable(JsonNullable<String> merchantId) {
+        this.merchantId = merchantId;
+        }
 
-   /**
-   * Total amount for which the refund is to be initiated. Amount for the payment in lowest denomination of the currency. (i.e) in cents for USD denomination, in paisa for INR denomination etc., If not provided, this will default to the full payment amount
-   * minimum: 100
-   * @return amount
-  **/
-  @javax.annotation.Nullable
-  @JsonIgnore
+          public void setMerchantId(@javax.annotation.Nullable String merchantId) {
+            this.merchantId = JsonNullable.<String>of(merchantId);
+        }
 
-  public Long getAmount() {
-        return amount.orElse(null);
-  }
+        public RefundRequest amount(@javax.annotation.Nullable Long amount) {
+        this.amount = JsonNullable.<Long>of(amount);
+        
+        return this;
+        }
 
-  @JsonProperty(JSON_PROPERTY_AMOUNT)
+    /**
+        * Total amount for which the refund is to be initiated. Amount for the payment in lowest denomination of the currency. (i.e) in cents for USD denomination, in paisa for INR denomination etc., If not provided, this will default to the full payment amount
+        * minimum: 100
+    * @return amount
+    */
+    @javax.annotation.Nullable
+        @JsonIgnore
+    
+    public Long getAmount() {
+                return amount.orElse(null);
+    }
+
+          @JsonProperty(JSON_PROPERTY_AMOUNT)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-  public JsonNullable<Long> getAmount_JsonNullable() {
-    return amount;
-  }
-  
-  @JsonProperty(JSON_PROPERTY_AMOUNT)
-  public void setAmount_JsonNullable(JsonNullable<Long> amount) {
-    this.amount = amount;
-  }
-
-  public void setAmount(Long amount) {
-    this.amount = JsonNullable.<Long>of(amount);
-  }
-
-
-  public RefundRequest reason(String reason) {
-    this.reason = JsonNullable.<String>of(reason);
+        public JsonNullable<Long> getAmount_JsonNullable() {
+        return amount;
+        }
     
-    return this;
-  }
+        @JsonProperty(JSON_PROPERTY_AMOUNT)
+        public void setAmount_JsonNullable(JsonNullable<Long> amount) {
+        this.amount = amount;
+        }
 
-   /**
-   * Reason for the refund. Often useful for displaying to users and your customer support executive. In case the payment went through Stripe, this field needs to be passed with one of these enums: &#x60;duplicate&#x60;, &#x60;fraudulent&#x60;, or &#x60;requested_by_customer&#x60;
-   * @return reason
-  **/
-  @javax.annotation.Nullable
-  @JsonIgnore
+          public void setAmount(@javax.annotation.Nullable Long amount) {
+            this.amount = JsonNullable.<Long>of(amount);
+        }
 
-  public String getReason() {
-        return reason.orElse(null);
-  }
+        public RefundRequest reason(@javax.annotation.Nullable String reason) {
+        this.reason = JsonNullable.<String>of(reason);
+        
+        return this;
+        }
 
-  @JsonProperty(JSON_PROPERTY_REASON)
+    /**
+        * Reason for the refund. Often useful for displaying to users and your customer support executive. In case the payment went through Stripe, this field needs to be passed with one of these enums: &#x60;duplicate&#x60;, &#x60;fraudulent&#x60;, or &#x60;requested_by_customer&#x60;
+    * @return reason
+    */
+    @javax.annotation.Nullable
+        @JsonIgnore
+    
+    public String getReason() {
+                return reason.orElse(null);
+    }
+
+          @JsonProperty(JSON_PROPERTY_REASON)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-  public JsonNullable<String> getReason_JsonNullable() {
-    return reason;
-  }
-  
-  @JsonProperty(JSON_PROPERTY_REASON)
-  public void setReason_JsonNullable(JsonNullable<String> reason) {
-    this.reason = reason;
-  }
-
-  public void setReason(String reason) {
-    this.reason = JsonNullable.<String>of(reason);
-  }
-
-
-  public RefundRequest refundType(RefundType refundType) {
-    this.refundType = JsonNullable.<RefundType>of(refundType);
+        public JsonNullable<String> getReason_JsonNullable() {
+        return reason;
+        }
     
-    return this;
-  }
+        @JsonProperty(JSON_PROPERTY_REASON)
+        public void setReason_JsonNullable(JsonNullable<String> reason) {
+        this.reason = reason;
+        }
 
-   /**
-   * Get refundType
-   * @return refundType
-  **/
-  @javax.annotation.Nullable
-  @JsonIgnore
+          public void setReason(@javax.annotation.Nullable String reason) {
+            this.reason = JsonNullable.<String>of(reason);
+        }
 
-  public RefundType getRefundType() {
-        return refundType.orElse(null);
-  }
+        public RefundRequest refundType(@javax.annotation.Nullable RefundType refundType) {
+        this.refundType = JsonNullable.<RefundType>of(refundType);
+        
+        return this;
+        }
 
-  @JsonProperty(JSON_PROPERTY_REFUND_TYPE)
+    /**
+        * Get refundType
+    * @return refundType
+    */
+    @javax.annotation.Nullable
+        @JsonIgnore
+    
+    public RefundType getRefundType() {
+                return refundType.orElse(null);
+    }
+
+          @JsonProperty(JSON_PROPERTY_REFUND_TYPE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-  public JsonNullable<RefundType> getRefundType_JsonNullable() {
-    return refundType;
-  }
-  
-  @JsonProperty(JSON_PROPERTY_REFUND_TYPE)
-  public void setRefundType_JsonNullable(JsonNullable<RefundType> refundType) {
-    this.refundType = refundType;
-  }
-
-  public void setRefundType(RefundType refundType) {
-    this.refundType = JsonNullable.<RefundType>of(refundType);
-  }
-
-
-  public RefundRequest metadata(Object metadata) {
-    this.metadata = JsonNullable.<Object>of(metadata);
+        public JsonNullable<RefundType> getRefundType_JsonNullable() {
+        return refundType;
+        }
     
-    return this;
-  }
+        @JsonProperty(JSON_PROPERTY_REFUND_TYPE)
+        public void setRefundType_JsonNullable(JsonNullable<RefundType> refundType) {
+        this.refundType = refundType;
+        }
 
-   /**
-   * You can specify up to 50 keys, with key names up to 40 characters long and values up to 500 characters long. Metadata is useful for storing additional, structured information on an object.
-   * @return metadata
-  **/
-  @javax.annotation.Nullable
-  @JsonIgnore
+          public void setRefundType(@javax.annotation.Nullable RefundType refundType) {
+            this.refundType = JsonNullable.<RefundType>of(refundType);
+        }
 
-  public Object getMetadata() {
-        return metadata.orElse(null);
-  }
+        public RefundRequest metadata(@javax.annotation.Nullable Object metadata) {
+        this.metadata = JsonNullable.<Object>of(metadata);
+        
+        return this;
+        }
 
-  @JsonProperty(JSON_PROPERTY_METADATA)
+    /**
+        * You can specify up to 50 keys, with key names up to 40 characters long and values up to 500 characters long. Metadata is useful for storing additional, structured information on an object.
+    * @return metadata
+    */
+    @javax.annotation.Nullable
+        @JsonIgnore
+    
+    public Object getMetadata() {
+                return metadata.orElse(null);
+    }
+
+          @JsonProperty(JSON_PROPERTY_METADATA)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-  public JsonNullable<Object> getMetadata_JsonNullable() {
-    return metadata;
-  }
-  
-  @JsonProperty(JSON_PROPERTY_METADATA)
-  public void setMetadata_JsonNullable(JsonNullable<Object> metadata) {
-    this.metadata = metadata;
-  }
-
-  public void setMetadata(Object metadata) {
-    this.metadata = JsonNullable.<Object>of(metadata);
-  }
-
-
-  public RefundRequest merchantConnectorDetails(MerchantConnectorDetailsWrap merchantConnectorDetails) {
-    this.merchantConnectorDetails = JsonNullable.<MerchantConnectorDetailsWrap>of(merchantConnectorDetails);
+        public JsonNullable<Object> getMetadata_JsonNullable() {
+        return metadata;
+        }
     
-    return this;
-  }
+        @JsonProperty(JSON_PROPERTY_METADATA)
+        public void setMetadata_JsonNullable(JsonNullable<Object> metadata) {
+        this.metadata = metadata;
+        }
 
-   /**
-   * Get merchantConnectorDetails
-   * @return merchantConnectorDetails
-  **/
-  @javax.annotation.Nullable
-  @JsonIgnore
+          public void setMetadata(@javax.annotation.Nullable Object metadata) {
+            this.metadata = JsonNullable.<Object>of(metadata);
+        }
 
-  public MerchantConnectorDetailsWrap getMerchantConnectorDetails() {
-        return merchantConnectorDetails.orElse(null);
-  }
+        public RefundRequest merchantConnectorDetails(@javax.annotation.Nullable MerchantConnectorDetailsWrap merchantConnectorDetails) {
+        this.merchantConnectorDetails = JsonNullable.<MerchantConnectorDetailsWrap>of(merchantConnectorDetails);
+        
+        return this;
+        }
 
-  @JsonProperty(JSON_PROPERTY_MERCHANT_CONNECTOR_DETAILS)
+    /**
+        * Get merchantConnectorDetails
+    * @return merchantConnectorDetails
+    */
+    @javax.annotation.Nullable
+        @JsonIgnore
+    
+    public MerchantConnectorDetailsWrap getMerchantConnectorDetails() {
+                return merchantConnectorDetails.orElse(null);
+    }
+
+          @JsonProperty(JSON_PROPERTY_MERCHANT_CONNECTOR_DETAILS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-  public JsonNullable<MerchantConnectorDetailsWrap> getMerchantConnectorDetails_JsonNullable() {
-    return merchantConnectorDetails;
-  }
-  
-  @JsonProperty(JSON_PROPERTY_MERCHANT_CONNECTOR_DETAILS)
-  public void setMerchantConnectorDetails_JsonNullable(JsonNullable<MerchantConnectorDetailsWrap> merchantConnectorDetails) {
-    this.merchantConnectorDetails = merchantConnectorDetails;
-  }
-
-  public void setMerchantConnectorDetails(MerchantConnectorDetailsWrap merchantConnectorDetails) {
-    this.merchantConnectorDetails = JsonNullable.<MerchantConnectorDetailsWrap>of(merchantConnectorDetails);
-  }
-
-
-  public RefundRequest charges(ChargeRefunds charges) {
-    this.charges = JsonNullable.<ChargeRefunds>of(charges);
+        public JsonNullable<MerchantConnectorDetailsWrap> getMerchantConnectorDetails_JsonNullable() {
+        return merchantConnectorDetails;
+        }
     
-    return this;
-  }
+        @JsonProperty(JSON_PROPERTY_MERCHANT_CONNECTOR_DETAILS)
+        public void setMerchantConnectorDetails_JsonNullable(JsonNullable<MerchantConnectorDetailsWrap> merchantConnectorDetails) {
+        this.merchantConnectorDetails = merchantConnectorDetails;
+        }
 
-   /**
-   * Get charges
-   * @return charges
-  **/
-  @javax.annotation.Nullable
-  @JsonIgnore
+          public void setMerchantConnectorDetails(@javax.annotation.Nullable MerchantConnectorDetailsWrap merchantConnectorDetails) {
+            this.merchantConnectorDetails = JsonNullable.<MerchantConnectorDetailsWrap>of(merchantConnectorDetails);
+        }
 
-  public ChargeRefunds getCharges() {
-        return charges.orElse(null);
-  }
+        public RefundRequest charges(@javax.annotation.Nullable ChargeRefunds charges) {
+        this.charges = JsonNullable.<ChargeRefunds>of(charges);
+        
+        return this;
+        }
 
-  @JsonProperty(JSON_PROPERTY_CHARGES)
+    /**
+        * Get charges
+    * @return charges
+    */
+    @javax.annotation.Nullable
+        @JsonIgnore
+    
+    public ChargeRefunds getCharges() {
+                return charges.orElse(null);
+    }
+
+          @JsonProperty(JSON_PROPERTY_CHARGES)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-  public JsonNullable<ChargeRefunds> getCharges_JsonNullable() {
-    return charges;
-  }
-  
-  @JsonProperty(JSON_PROPERTY_CHARGES)
-  public void setCharges_JsonNullable(JsonNullable<ChargeRefunds> charges) {
-    this.charges = charges;
-  }
+        public JsonNullable<ChargeRefunds> getCharges_JsonNullable() {
+        return charges;
+        }
+    
+        @JsonProperty(JSON_PROPERTY_CHARGES)
+        public void setCharges_JsonNullable(JsonNullable<ChargeRefunds> charges) {
+        this.charges = charges;
+        }
 
-  public void setCharges(ChargeRefunds charges) {
-    this.charges = JsonNullable.<ChargeRefunds>of(charges);
-  }
+          public void setCharges(@javax.annotation.Nullable ChargeRefunds charges) {
+            this.charges = JsonNullable.<ChargeRefunds>of(charges);
+        }
 
-  @Override
-  public boolean equals(Object o) {
+@Override
+public boolean equals(Object o) {
     if (this == o) {
-      return true;
+    return true;
     }
     if (o == null || getClass() != o.getClass()) {
-      return false;
+    return false;
     }
-    RefundRequest refundRequest = (RefundRequest) o;
-    return Objects.equals(this.paymentId, refundRequest.paymentId) &&
+        RefundRequest refundRequest = (RefundRequest) o;
+        return Objects.equals(this.paymentId, refundRequest.paymentId) &&
         equalsNullable(this.refundId, refundRequest.refundId) &&
         equalsNullable(this.merchantId, refundRequest.merchantId) &&
         equalsNullable(this.amount, refundRequest.amount) &&
@@ -395,166 +396,166 @@ public class RefundRequest {
         equalsNullable(this.metadata, refundRequest.metadata) &&
         equalsNullable(this.merchantConnectorDetails, refundRequest.merchantConnectorDetails) &&
         equalsNullable(this.charges, refundRequest.charges);
-  }
+}
 
-  private static <T> boolean equalsNullable(JsonNullable<T> a, JsonNullable<T> b) {
-    return a == b || (a != null && b != null && a.isPresent() && b.isPresent() && Objects.deepEquals(a.get(), b.get()));
-  }
+    private static <T> boolean equalsNullable(JsonNullable<T> a, JsonNullable<T> b) {
+        return a == b || (a != null && b != null && a.isPresent() && b.isPresent() && Objects.deepEquals(a.get(), b.get()));
+        }
 
-  @Override
-  public int hashCode() {
-    return Objects.hash(paymentId, hashCodeNullable(refundId), hashCodeNullable(merchantId), hashCodeNullable(amount), hashCodeNullable(reason), hashCodeNullable(refundType), hashCodeNullable(metadata), hashCodeNullable(merchantConnectorDetails), hashCodeNullable(charges));
-  }
-
-  private static <T> int hashCodeNullable(JsonNullable<T> a) {
-    if (a == null) {
-      return 1;
+    @Override
+    public int hashCode() {
+        return Objects.hash(paymentId, hashCodeNullable(refundId), hashCodeNullable(merchantId), hashCodeNullable(amount), hashCodeNullable(reason), hashCodeNullable(refundType), hashCodeNullable(metadata), hashCodeNullable(merchantConnectorDetails), hashCodeNullable(charges));
     }
-    return a.isPresent() ? Arrays.deepHashCode(new Object[]{a.get()}) : 31;
-  }
 
-  @Override
-  public String toString() {
+        private static <T> int hashCodeNullable(JsonNullable<T> a) {
+        if (a == null) {
+        return 1;
+        }
+        return a.isPresent() ? Arrays.deepHashCode(new Object[]{a.get()}) : 31;
+        }
+
+    @Override
+    public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class RefundRequest {\n");
-    sb.append("    paymentId: ").append(toIndentedString(paymentId)).append("\n");
-    sb.append("    refundId: ").append(toIndentedString(refundId)).append("\n");
-    sb.append("    merchantId: ").append(toIndentedString(merchantId)).append("\n");
-    sb.append("    amount: ").append(toIndentedString(amount)).append("\n");
-    sb.append("    reason: ").append(toIndentedString(reason)).append("\n");
-    sb.append("    refundType: ").append(toIndentedString(refundType)).append("\n");
-    sb.append("    metadata: ").append(toIndentedString(metadata)).append("\n");
-    sb.append("    merchantConnectorDetails: ").append(toIndentedString(merchantConnectorDetails)).append("\n");
-    sb.append("    charges: ").append(toIndentedString(charges)).append("\n");
+        sb.append("    paymentId: ").append(toIndentedString(paymentId)).append("\n");
+        sb.append("    refundId: ").append(toIndentedString(refundId)).append("\n");
+        sb.append("    merchantId: ").append(toIndentedString(merchantId)).append("\n");
+        sb.append("    amount: ").append(toIndentedString(amount)).append("\n");
+        sb.append("    reason: ").append(toIndentedString(reason)).append("\n");
+        sb.append("    refundType: ").append(toIndentedString(refundType)).append("\n");
+        sb.append("    metadata: ").append(toIndentedString(metadata)).append("\n");
+        sb.append("    merchantConnectorDetails: ").append(toIndentedString(merchantConnectorDetails)).append("\n");
+        sb.append("    charges: ").append(toIndentedString(charges)).append("\n");
     sb.append("}");
     return sb.toString();
-  }
+    }
 
-  /**
-   * Convert the given object to string with each line indented by 4 spaces
-   * (except the first line).
-   */
-  private String toIndentedString(Object o) {
+    /**
+    * Convert the given object to string with each line indented by 4 spaces
+    * (except the first line).
+    */
+    private String toIndentedString(Object o) {
     if (o == null) {
-      return "null";
+    return "null";
     }
     return o.toString().replace("\n", "\n    ");
-  }
-
-  /**
-   * Convert the instance into URL query string.
-   *
-   * @return URL query string
-   */
-  public String toUrlQueryString() {
-    return toUrlQueryString(null);
-  }
-
-  /**
-   * Convert the instance into URL query string.
-   *
-   * @param prefix prefix of the query string
-   * @return URL query string
-   */
-  public String toUrlQueryString(String prefix) {
-    String suffix = "";
-    String containerSuffix = "";
-    String containerPrefix = "";
-    if (prefix == null) {
-      // style=form, explode=true, e.g. /pet?name=cat&type=manx
-      prefix = "";
-    } else {
-      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
-      prefix = prefix + "[";
-      suffix = "]";
-      containerSuffix = "]";
-      containerPrefix = "[";
     }
 
-    StringJoiner joiner = new StringJoiner("&");
+        /**
+        * Convert the instance into URL query string.
+        *
+        * @return URL query string
+        */
+        public String toUrlQueryString() {
+        return toUrlQueryString(null);
+        }
 
-    // add `payment_id` to the URL query string
-    if (getPaymentId() != null) {
-      try {
-        joiner.add(String.format("%spayment_id%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getPaymentId()), "UTF-8").replaceAll("\\+", "%20")));
-      } catch (UnsupportedEncodingException e) {
-        // Should never happen, UTF-8 is always supported
-        throw new RuntimeException(e);
-      }
+        /**
+        * Convert the instance into URL query string.
+        *
+        * @param prefix prefix of the query string
+        * @return URL query string
+        */
+        public String toUrlQueryString(String prefix) {
+        String suffix = "";
+        String containerSuffix = "";
+        String containerPrefix = "";
+        if (prefix == null) {
+        // style=form, explode=true, e.g. /pet?name=cat&type=manx
+        prefix = "";
+        } else {
+        // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+        prefix = prefix + "[";
+        suffix = "]";
+        containerSuffix = "]";
+        containerPrefix = "[";
+        }
+
+        StringJoiner joiner = new StringJoiner("&");
+
+            // add `payment_id` to the URL query string
+                        if (getPaymentId() != null) {
+                        try {
+                        joiner.add(String.format("%spayment_id%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getPaymentId()), "UTF-8").replaceAll("\\+", "%20")));
+                        } catch (UnsupportedEncodingException e) {
+                        // Should never happen, UTF-8 is always supported
+                        throw new RuntimeException(e);
+                        }
+                        }
+
+            // add `refund_id` to the URL query string
+                        if (getRefundId() != null) {
+                        try {
+                        joiner.add(String.format("%srefund_id%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getRefundId()), "UTF-8").replaceAll("\\+", "%20")));
+                        } catch (UnsupportedEncodingException e) {
+                        // Should never happen, UTF-8 is always supported
+                        throw new RuntimeException(e);
+                        }
+                        }
+
+            // add `merchant_id` to the URL query string
+                        if (getMerchantId() != null) {
+                        try {
+                        joiner.add(String.format("%smerchant_id%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getMerchantId()), "UTF-8").replaceAll("\\+", "%20")));
+                        } catch (UnsupportedEncodingException e) {
+                        // Should never happen, UTF-8 is always supported
+                        throw new RuntimeException(e);
+                        }
+                        }
+
+            // add `amount` to the URL query string
+                        if (getAmount() != null) {
+                        try {
+                        joiner.add(String.format("%samount%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getAmount()), "UTF-8").replaceAll("\\+", "%20")));
+                        } catch (UnsupportedEncodingException e) {
+                        // Should never happen, UTF-8 is always supported
+                        throw new RuntimeException(e);
+                        }
+                        }
+
+            // add `reason` to the URL query string
+                        if (getReason() != null) {
+                        try {
+                        joiner.add(String.format("%sreason%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getReason()), "UTF-8").replaceAll("\\+", "%20")));
+                        } catch (UnsupportedEncodingException e) {
+                        // Should never happen, UTF-8 is always supported
+                        throw new RuntimeException(e);
+                        }
+                        }
+
+            // add `refund_type` to the URL query string
+                            if (getRefundType() != null) {
+                            try {
+                            joiner.add(String.format("%srefund_type%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getRefundType()), "UTF-8").replaceAll("\\+", "%20")));
+                            } catch (UnsupportedEncodingException e) {
+                            // Should never happen, UTF-8 is always supported
+                            throw new RuntimeException(e);
+                            }
+                            }
+
+            // add `metadata` to the URL query string
+                        if (getMetadata() != null) {
+                        try {
+                        joiner.add(String.format("%smetadata%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getMetadata()), "UTF-8").replaceAll("\\+", "%20")));
+                        } catch (UnsupportedEncodingException e) {
+                        // Should never happen, UTF-8 is always supported
+                        throw new RuntimeException(e);
+                        }
+                        }
+
+            // add `merchant_connector_details` to the URL query string
+                            if (getMerchantConnectorDetails() != null) {
+                            joiner.add(getMerchantConnectorDetails().toUrlQueryString(prefix + "merchant_connector_details" + suffix));
+                            }
+
+            // add `charges` to the URL query string
+                            if (getCharges() != null) {
+                            joiner.add(getCharges().toUrlQueryString(prefix + "charges" + suffix));
+                            }
+
+        return joiner.toString();
+        }
+
     }
-
-    // add `refund_id` to the URL query string
-    if (getRefundId() != null) {
-      try {
-        joiner.add(String.format("%srefund_id%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getRefundId()), "UTF-8").replaceAll("\\+", "%20")));
-      } catch (UnsupportedEncodingException e) {
-        // Should never happen, UTF-8 is always supported
-        throw new RuntimeException(e);
-      }
-    }
-
-    // add `merchant_id` to the URL query string
-    if (getMerchantId() != null) {
-      try {
-        joiner.add(String.format("%smerchant_id%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getMerchantId()), "UTF-8").replaceAll("\\+", "%20")));
-      } catch (UnsupportedEncodingException e) {
-        // Should never happen, UTF-8 is always supported
-        throw new RuntimeException(e);
-      }
-    }
-
-    // add `amount` to the URL query string
-    if (getAmount() != null) {
-      try {
-        joiner.add(String.format("%samount%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getAmount()), "UTF-8").replaceAll("\\+", "%20")));
-      } catch (UnsupportedEncodingException e) {
-        // Should never happen, UTF-8 is always supported
-        throw new RuntimeException(e);
-      }
-    }
-
-    // add `reason` to the URL query string
-    if (getReason() != null) {
-      try {
-        joiner.add(String.format("%sreason%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getReason()), "UTF-8").replaceAll("\\+", "%20")));
-      } catch (UnsupportedEncodingException e) {
-        // Should never happen, UTF-8 is always supported
-        throw new RuntimeException(e);
-      }
-    }
-
-    // add `refund_type` to the URL query string
-    if (getRefundType() != null) {
-      try {
-        joiner.add(String.format("%srefund_type%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getRefundType()), "UTF-8").replaceAll("\\+", "%20")));
-      } catch (UnsupportedEncodingException e) {
-        // Should never happen, UTF-8 is always supported
-        throw new RuntimeException(e);
-      }
-    }
-
-    // add `metadata` to the URL query string
-    if (getMetadata() != null) {
-      try {
-        joiner.add(String.format("%smetadata%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getMetadata()), "UTF-8").replaceAll("\\+", "%20")));
-      } catch (UnsupportedEncodingException e) {
-        // Should never happen, UTF-8 is always supported
-        throw new RuntimeException(e);
-      }
-    }
-
-    // add `merchant_connector_details` to the URL query string
-    if (getMerchantConnectorDetails() != null) {
-      joiner.add(getMerchantConnectorDetails().toUrlQueryString(prefix + "merchant_connector_details" + suffix));
-    }
-
-    // add `charges` to the URL query string
-    if (getCharges() != null) {
-      joiner.add(getCharges().toUrlQueryString(prefix + "charges" + suffix));
-    }
-
-    return joiner.toString();
-  }
-
-}
 

@@ -31,245 +31,246 @@ import java.net.URLEncoder;
 import java.util.StringJoiner;
 
 /**
- * BankTransferDataOneOf11Pix
- */
-@JsonPropertyOrder({
-  BankTransferDataOneOf11Pix.JSON_PROPERTY_PIX_KEY,
-  BankTransferDataOneOf11Pix.JSON_PROPERTY_CPF,
-  BankTransferDataOneOf11Pix.JSON_PROPERTY_CNPJ
-})
-@JsonTypeName("BankTransferData_oneOf_11_pix")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+* BankTransferDataOneOf11Pix
+*/
+    @JsonPropertyOrder({
+        BankTransferDataOneOf11Pix.JSON_PROPERTY_PIX_KEY,
+        BankTransferDataOneOf11Pix.JSON_PROPERTY_CPF,
+        BankTransferDataOneOf11Pix.JSON_PROPERTY_CNPJ
+    })
+            @JsonTypeName("BankTransferData_oneOf_11_pix")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class BankTransferDataOneOf11Pix {
-  public static final String JSON_PROPERTY_PIX_KEY = "pix_key";
-  private JsonNullable<String> pixKey = JsonNullable.<String>undefined();
+        public static final String JSON_PROPERTY_PIX_KEY = "pix_key";
+    @javax.annotation.Nullable
+            private JsonNullable<String> pixKey = JsonNullable.<String>undefined();
 
-  public static final String JSON_PROPERTY_CPF = "cpf";
-  private JsonNullable<String> cpf = JsonNullable.<String>undefined();
+        public static final String JSON_PROPERTY_CPF = "cpf";
+    @javax.annotation.Nullable
+            private JsonNullable<String> cpf = JsonNullable.<String>undefined();
 
-  public static final String JSON_PROPERTY_CNPJ = "cnpj";
-  private JsonNullable<String> cnpj = JsonNullable.<String>undefined();
+        public static final String JSON_PROPERTY_CNPJ = "cnpj";
+    @javax.annotation.Nullable
+            private JsonNullable<String> cnpj = JsonNullable.<String>undefined();
 
-  public BankTransferDataOneOf11Pix() {
-  }
+public BankTransferDataOneOf11Pix() {
+}
 
-  public BankTransferDataOneOf11Pix pixKey(String pixKey) {
-    this.pixKey = JsonNullable.<String>of(pixKey);
+        public BankTransferDataOneOf11Pix pixKey(@javax.annotation.Nullable String pixKey) {
+        this.pixKey = JsonNullable.<String>of(pixKey);
+        
+        return this;
+        }
+
+    /**
+        * Unique key for pix transfer
+    * @return pixKey
+    */
+    @javax.annotation.Nullable
+        @JsonIgnore
     
-    return this;
-  }
+    public String getPixKey() {
+                return pixKey.orElse(null);
+    }
 
-   /**
-   * Unique key for pix transfer
-   * @return pixKey
-  **/
-  @javax.annotation.Nullable
-  @JsonIgnore
-
-  public String getPixKey() {
-        return pixKey.orElse(null);
-  }
-
-  @JsonProperty(JSON_PROPERTY_PIX_KEY)
+          @JsonProperty(JSON_PROPERTY_PIX_KEY)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-  public JsonNullable<String> getPixKey_JsonNullable() {
-    return pixKey;
-  }
-  
-  @JsonProperty(JSON_PROPERTY_PIX_KEY)
-  public void setPixKey_JsonNullable(JsonNullable<String> pixKey) {
-    this.pixKey = pixKey;
-  }
-
-  public void setPixKey(String pixKey) {
-    this.pixKey = JsonNullable.<String>of(pixKey);
-  }
-
-
-  public BankTransferDataOneOf11Pix cpf(String cpf) {
-    this.cpf = JsonNullable.<String>of(cpf);
+        public JsonNullable<String> getPixKey_JsonNullable() {
+        return pixKey;
+        }
     
-    return this;
-  }
+        @JsonProperty(JSON_PROPERTY_PIX_KEY)
+        public void setPixKey_JsonNullable(JsonNullable<String> pixKey) {
+        this.pixKey = pixKey;
+        }
 
-   /**
-   * CPF is a Brazilian tax identification number
-   * @return cpf
-  **/
-  @javax.annotation.Nullable
-  @JsonIgnore
+          public void setPixKey(@javax.annotation.Nullable String pixKey) {
+            this.pixKey = JsonNullable.<String>of(pixKey);
+        }
 
-  public String getCpf() {
-        return cpf.orElse(null);
-  }
+        public BankTransferDataOneOf11Pix cpf(@javax.annotation.Nullable String cpf) {
+        this.cpf = JsonNullable.<String>of(cpf);
+        
+        return this;
+        }
 
-  @JsonProperty(JSON_PROPERTY_CPF)
+    /**
+        * CPF is a Brazilian tax identification number
+    * @return cpf
+    */
+    @javax.annotation.Nullable
+        @JsonIgnore
+    
+    public String getCpf() {
+                return cpf.orElse(null);
+    }
+
+          @JsonProperty(JSON_PROPERTY_CPF)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-  public JsonNullable<String> getCpf_JsonNullable() {
-    return cpf;
-  }
-  
-  @JsonProperty(JSON_PROPERTY_CPF)
-  public void setCpf_JsonNullable(JsonNullable<String> cpf) {
-    this.cpf = cpf;
-  }
-
-  public void setCpf(String cpf) {
-    this.cpf = JsonNullable.<String>of(cpf);
-  }
-
-
-  public BankTransferDataOneOf11Pix cnpj(String cnpj) {
-    this.cnpj = JsonNullable.<String>of(cnpj);
+        public JsonNullable<String> getCpf_JsonNullable() {
+        return cpf;
+        }
     
-    return this;
-  }
+        @JsonProperty(JSON_PROPERTY_CPF)
+        public void setCpf_JsonNullable(JsonNullable<String> cpf) {
+        this.cpf = cpf;
+        }
 
-   /**
-   * CNPJ is a Brazilian company tax identification number
-   * @return cnpj
-  **/
-  @javax.annotation.Nullable
-  @JsonIgnore
+          public void setCpf(@javax.annotation.Nullable String cpf) {
+            this.cpf = JsonNullable.<String>of(cpf);
+        }
 
-  public String getCnpj() {
-        return cnpj.orElse(null);
-  }
+        public BankTransferDataOneOf11Pix cnpj(@javax.annotation.Nullable String cnpj) {
+        this.cnpj = JsonNullable.<String>of(cnpj);
+        
+        return this;
+        }
 
-  @JsonProperty(JSON_PROPERTY_CNPJ)
+    /**
+        * CNPJ is a Brazilian company tax identification number
+    * @return cnpj
+    */
+    @javax.annotation.Nullable
+        @JsonIgnore
+    
+    public String getCnpj() {
+                return cnpj.orElse(null);
+    }
+
+          @JsonProperty(JSON_PROPERTY_CNPJ)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-  public JsonNullable<String> getCnpj_JsonNullable() {
-    return cnpj;
-  }
-  
-  @JsonProperty(JSON_PROPERTY_CNPJ)
-  public void setCnpj_JsonNullable(JsonNullable<String> cnpj) {
-    this.cnpj = cnpj;
-  }
+        public JsonNullable<String> getCnpj_JsonNullable() {
+        return cnpj;
+        }
+    
+        @JsonProperty(JSON_PROPERTY_CNPJ)
+        public void setCnpj_JsonNullable(JsonNullable<String> cnpj) {
+        this.cnpj = cnpj;
+        }
 
-  public void setCnpj(String cnpj) {
-    this.cnpj = JsonNullable.<String>of(cnpj);
-  }
+          public void setCnpj(@javax.annotation.Nullable String cnpj) {
+            this.cnpj = JsonNullable.<String>of(cnpj);
+        }
 
-  @Override
-  public boolean equals(Object o) {
+@Override
+public boolean equals(Object o) {
     if (this == o) {
-      return true;
+    return true;
     }
     if (o == null || getClass() != o.getClass()) {
-      return false;
+    return false;
     }
-    BankTransferDataOneOf11Pix bankTransferDataOneOf11Pix = (BankTransferDataOneOf11Pix) o;
-    return equalsNullable(this.pixKey, bankTransferDataOneOf11Pix.pixKey) &&
+        BankTransferDataOneOf11Pix bankTransferDataOneOf11Pix = (BankTransferDataOneOf11Pix) o;
+        return equalsNullable(this.pixKey, bankTransferDataOneOf11Pix.pixKey) &&
         equalsNullable(this.cpf, bankTransferDataOneOf11Pix.cpf) &&
         equalsNullable(this.cnpj, bankTransferDataOneOf11Pix.cnpj);
-  }
+}
 
-  private static <T> boolean equalsNullable(JsonNullable<T> a, JsonNullable<T> b) {
-    return a == b || (a != null && b != null && a.isPresent() && b.isPresent() && Objects.deepEquals(a.get(), b.get()));
-  }
+    private static <T> boolean equalsNullable(JsonNullable<T> a, JsonNullable<T> b) {
+        return a == b || (a != null && b != null && a.isPresent() && b.isPresent() && Objects.deepEquals(a.get(), b.get()));
+        }
 
-  @Override
-  public int hashCode() {
-    return Objects.hash(hashCodeNullable(pixKey), hashCodeNullable(cpf), hashCodeNullable(cnpj));
-  }
-
-  private static <T> int hashCodeNullable(JsonNullable<T> a) {
-    if (a == null) {
-      return 1;
+    @Override
+    public int hashCode() {
+        return Objects.hash(hashCodeNullable(pixKey), hashCodeNullable(cpf), hashCodeNullable(cnpj));
     }
-    return a.isPresent() ? Arrays.deepHashCode(new Object[]{a.get()}) : 31;
-  }
 
-  @Override
-  public String toString() {
+        private static <T> int hashCodeNullable(JsonNullable<T> a) {
+        if (a == null) {
+        return 1;
+        }
+        return a.isPresent() ? Arrays.deepHashCode(new Object[]{a.get()}) : 31;
+        }
+
+    @Override
+    public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class BankTransferDataOneOf11Pix {\n");
-    sb.append("    pixKey: ").append(toIndentedString(pixKey)).append("\n");
-    sb.append("    cpf: ").append(toIndentedString(cpf)).append("\n");
-    sb.append("    cnpj: ").append(toIndentedString(cnpj)).append("\n");
+        sb.append("    pixKey: ").append(toIndentedString(pixKey)).append("\n");
+        sb.append("    cpf: ").append(toIndentedString(cpf)).append("\n");
+        sb.append("    cnpj: ").append(toIndentedString(cnpj)).append("\n");
     sb.append("}");
     return sb.toString();
-  }
+    }
 
-  /**
-   * Convert the given object to string with each line indented by 4 spaces
-   * (except the first line).
-   */
-  private String toIndentedString(Object o) {
+    /**
+    * Convert the given object to string with each line indented by 4 spaces
+    * (except the first line).
+    */
+    private String toIndentedString(Object o) {
     if (o == null) {
-      return "null";
+    return "null";
     }
     return o.toString().replace("\n", "\n    ");
-  }
-
-  /**
-   * Convert the instance into URL query string.
-   *
-   * @return URL query string
-   */
-  public String toUrlQueryString() {
-    return toUrlQueryString(null);
-  }
-
-  /**
-   * Convert the instance into URL query string.
-   *
-   * @param prefix prefix of the query string
-   * @return URL query string
-   */
-  public String toUrlQueryString(String prefix) {
-    String suffix = "";
-    String containerSuffix = "";
-    String containerPrefix = "";
-    if (prefix == null) {
-      // style=form, explode=true, e.g. /pet?name=cat&type=manx
-      prefix = "";
-    } else {
-      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
-      prefix = prefix + "[";
-      suffix = "]";
-      containerSuffix = "]";
-      containerPrefix = "[";
     }
 
-    StringJoiner joiner = new StringJoiner("&");
+        /**
+        * Convert the instance into URL query string.
+        *
+        * @return URL query string
+        */
+        public String toUrlQueryString() {
+        return toUrlQueryString(null);
+        }
 
-    // add `pix_key` to the URL query string
-    if (getPixKey() != null) {
-      try {
-        joiner.add(String.format("%spix_key%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getPixKey()), "UTF-8").replaceAll("\\+", "%20")));
-      } catch (UnsupportedEncodingException e) {
-        // Should never happen, UTF-8 is always supported
-        throw new RuntimeException(e);
-      }
+        /**
+        * Convert the instance into URL query string.
+        *
+        * @param prefix prefix of the query string
+        * @return URL query string
+        */
+        public String toUrlQueryString(String prefix) {
+        String suffix = "";
+        String containerSuffix = "";
+        String containerPrefix = "";
+        if (prefix == null) {
+        // style=form, explode=true, e.g. /pet?name=cat&type=manx
+        prefix = "";
+        } else {
+        // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+        prefix = prefix + "[";
+        suffix = "]";
+        containerSuffix = "]";
+        containerPrefix = "[";
+        }
+
+        StringJoiner joiner = new StringJoiner("&");
+
+            // add `pix_key` to the URL query string
+                        if (getPixKey() != null) {
+                        try {
+                        joiner.add(String.format("%spix_key%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getPixKey()), "UTF-8").replaceAll("\\+", "%20")));
+                        } catch (UnsupportedEncodingException e) {
+                        // Should never happen, UTF-8 is always supported
+                        throw new RuntimeException(e);
+                        }
+                        }
+
+            // add `cpf` to the URL query string
+                        if (getCpf() != null) {
+                        try {
+                        joiner.add(String.format("%scpf%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCpf()), "UTF-8").replaceAll("\\+", "%20")));
+                        } catch (UnsupportedEncodingException e) {
+                        // Should never happen, UTF-8 is always supported
+                        throw new RuntimeException(e);
+                        }
+                        }
+
+            // add `cnpj` to the URL query string
+                        if (getCnpj() != null) {
+                        try {
+                        joiner.add(String.format("%scnpj%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCnpj()), "UTF-8").replaceAll("\\+", "%20")));
+                        } catch (UnsupportedEncodingException e) {
+                        // Should never happen, UTF-8 is always supported
+                        throw new RuntimeException(e);
+                        }
+                        }
+
+        return joiner.toString();
+        }
+
     }
-
-    // add `cpf` to the URL query string
-    if (getCpf() != null) {
-      try {
-        joiner.add(String.format("%scpf%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCpf()), "UTF-8").replaceAll("\\+", "%20")));
-      } catch (UnsupportedEncodingException e) {
-        // Should never happen, UTF-8 is always supported
-        throw new RuntimeException(e);
-      }
-    }
-
-    // add `cnpj` to the URL query string
-    if (getCnpj() != null) {
-      try {
-        joiner.add(String.format("%scnpj%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCnpj()), "UTF-8").replaceAll("\\+", "%20")));
-      } catch (UnsupportedEncodingException e) {
-        // Should never happen, UTF-8 is always supported
-        throw new RuntimeException(e);
-      }
-    }
-
-    return joiner.toString();
-  }
-
-}
 

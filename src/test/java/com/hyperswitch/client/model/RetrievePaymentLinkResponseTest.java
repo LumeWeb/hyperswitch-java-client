@@ -25,22 +25,21 @@ import org.openapitools.jackson.nullable.JsonNullable;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.openapitools.jackson.nullable.JsonNullable;
 import java.util.NoSuchElementException;
-import org.junit.Assert;
-import org.junit.Ignore;
-import org.junit.Test;
-
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Test;
 
 /**
  * Model tests for RetrievePaymentLinkResponse
  */
-public class RetrievePaymentLinkResponseTest {
+class RetrievePaymentLinkResponseTest {
     private final RetrievePaymentLinkResponse model = new RetrievePaymentLinkResponse();
 
     /**
      * Model tests for RetrievePaymentLinkResponse
      */
     @Test
-    public void testRetrievePaymentLinkResponse() {
+    void testRetrievePaymentLinkResponse() {
         // TODO: test RetrievePaymentLinkResponse
     }
 
@@ -48,7 +47,7 @@ public class RetrievePaymentLinkResponseTest {
      * Test the property 'paymentLinkId'
      */
     @Test
-    public void paymentLinkIdTest() {
+    void paymentLinkIdTest() {
         // TODO: test paymentLinkId
     }
 
@@ -56,7 +55,7 @@ public class RetrievePaymentLinkResponseTest {
      * Test the property 'merchantId'
      */
     @Test
-    public void merchantIdTest() {
+    void merchantIdTest() {
         // TODO: test merchantId
     }
 
@@ -64,7 +63,7 @@ public class RetrievePaymentLinkResponseTest {
      * Test the property 'linkToPay'
      */
     @Test
-    public void linkToPayTest() {
+    void linkToPayTest() {
         // TODO: test linkToPay
     }
 
@@ -72,7 +71,7 @@ public class RetrievePaymentLinkResponseTest {
      * Test the property 'amount'
      */
     @Test
-    public void amountTest() {
+    void amountTest() {
         // TODO: test amount
     }
 
@@ -80,7 +79,7 @@ public class RetrievePaymentLinkResponseTest {
      * Test the property 'createdAt'
      */
     @Test
-    public void createdAtTest() {
+    void createdAtTest() {
         // TODO: test createdAt
     }
 
@@ -88,7 +87,7 @@ public class RetrievePaymentLinkResponseTest {
      * Test the property 'expiry'
      */
     @Test
-    public void expiryTest() {
+    void expiryTest() {
         // TODO: test expiry
     }
 
@@ -96,7 +95,7 @@ public class RetrievePaymentLinkResponseTest {
      * Test the property 'description'
      */
     @Test
-    public void descriptionTest() {
+    void descriptionTest() {
         // TODO: test description
     }
 
@@ -104,7 +103,7 @@ public class RetrievePaymentLinkResponseTest {
      * Test the property 'status'
      */
     @Test
-    public void statusTest() {
+    void statusTest() {
         // TODO: test status
     }
 
@@ -112,7 +111,7 @@ public class RetrievePaymentLinkResponseTest {
      * Test the property 'currency'
      */
     @Test
-    public void currencyTest() {
+    void currencyTest() {
         // TODO: test currency
     }
 
@@ -120,7 +119,7 @@ public class RetrievePaymentLinkResponseTest {
      * Test the property 'secureLink'
      */
     @Test
-    public void secureLinkTest() {
+    void secureLinkTest() {
         // TODO: test secureLink
     }
 

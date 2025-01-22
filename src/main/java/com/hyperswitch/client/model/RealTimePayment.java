@@ -28,120 +28,121 @@ import java.net.URLEncoder;
 import java.util.StringJoiner;
 
 /**
- * RealTimePayment
- */
-@JsonPropertyOrder({
-  RealTimePayment.JSON_PROPERTY_REAL_TIME_PAYMENT
-})
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+* RealTimePayment
+*/
+    @JsonPropertyOrder({
+        RealTimePayment.JSON_PROPERTY_REAL_TIME_PAYMENT
+    })
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class RealTimePayment {
-  public static final String JSON_PROPERTY_REAL_TIME_PAYMENT = "real_time_payment";
-  private RealTimePaymentData realTimePayment;
+        public static final String JSON_PROPERTY_REAL_TIME_PAYMENT = "real_time_payment";
+    @javax.annotation.Nonnull
+            private RealTimePaymentData realTimePayment;
 
-  public RealTimePayment() {
-  }
+public RealTimePayment() {
+}
 
-  public RealTimePayment realTimePayment(RealTimePaymentData realTimePayment) {
-    
-    this.realTimePayment = realTimePayment;
-    return this;
-  }
+        public RealTimePayment realTimePayment(@javax.annotation.Nonnull RealTimePaymentData realTimePayment) {
+        
+        this.realTimePayment = realTimePayment;
+        return this;
+        }
 
-   /**
-   * Get realTimePayment
-   * @return realTimePayment
-  **/
-  @javax.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_REAL_TIME_PAYMENT)
+    /**
+        * Get realTimePayment
+    * @return realTimePayment
+    */
+    @javax.annotation.Nonnull
+      @JsonProperty(JSON_PROPERTY_REAL_TIME_PAYMENT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-  public RealTimePaymentData getRealTimePayment() {
-    return realTimePayment;
-  }
+    public RealTimePaymentData getRealTimePayment() {
+        return realTimePayment;
+    }
 
 
-  @JsonProperty(JSON_PROPERTY_REAL_TIME_PAYMENT)
+          @JsonProperty(JSON_PROPERTY_REAL_TIME_PAYMENT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setRealTimePayment(RealTimePaymentData realTimePayment) {
-    this.realTimePayment = realTimePayment;
-  }
+  public void setRealTimePayment(@javax.annotation.Nonnull RealTimePaymentData realTimePayment) {
+            this.realTimePayment = realTimePayment;
+        }
 
-  @Override
-  public boolean equals(Object o) {
+@Override
+public boolean equals(Object o) {
     if (this == o) {
-      return true;
+    return true;
     }
     if (o == null || getClass() != o.getClass()) {
-      return false;
+    return false;
     }
-    RealTimePayment realTimePayment = (RealTimePayment) o;
-    return Objects.equals(this.realTimePayment, realTimePayment.realTimePayment);
-  }
+        RealTimePayment realTimePayment = (RealTimePayment) o;
+        return Objects.equals(this.realTimePayment, realTimePayment.realTimePayment);
+}
 
-  @Override
-  public int hashCode() {
-    return Objects.hash(realTimePayment);
-  }
+    @Override
+    public int hashCode() {
+        return Objects.hash(realTimePayment);
+    }
 
-  @Override
-  public String toString() {
+    @Override
+    public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class RealTimePayment {\n");
-    sb.append("    realTimePayment: ").append(toIndentedString(realTimePayment)).append("\n");
+        sb.append("    realTimePayment: ").append(toIndentedString(realTimePayment)).append("\n");
     sb.append("}");
     return sb.toString();
-  }
+    }
 
-  /**
-   * Convert the given object to string with each line indented by 4 spaces
-   * (except the first line).
-   */
-  private String toIndentedString(Object o) {
+    /**
+    * Convert the given object to string with each line indented by 4 spaces
+    * (except the first line).
+    */
+    private String toIndentedString(Object o) {
     if (o == null) {
-      return "null";
+    return "null";
     }
     return o.toString().replace("\n", "\n    ");
-  }
-
-  /**
-   * Convert the instance into URL query string.
-   *
-   * @return URL query string
-   */
-  public String toUrlQueryString() {
-    return toUrlQueryString(null);
-  }
-
-  /**
-   * Convert the instance into URL query string.
-   *
-   * @param prefix prefix of the query string
-   * @return URL query string
-   */
-  public String toUrlQueryString(String prefix) {
-    String suffix = "";
-    String containerSuffix = "";
-    String containerPrefix = "";
-    if (prefix == null) {
-      // style=form, explode=true, e.g. /pet?name=cat&type=manx
-      prefix = "";
-    } else {
-      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
-      prefix = prefix + "[";
-      suffix = "]";
-      containerSuffix = "]";
-      containerPrefix = "[";
     }
 
-    StringJoiner joiner = new StringJoiner("&");
+        /**
+        * Convert the instance into URL query string.
+        *
+        * @return URL query string
+        */
+        public String toUrlQueryString() {
+        return toUrlQueryString(null);
+        }
 
-    // add `real_time_payment` to the URL query string
-    if (getRealTimePayment() != null) {
-      joiner.add(getRealTimePayment().toUrlQueryString(prefix + "real_time_payment" + suffix));
+        /**
+        * Convert the instance into URL query string.
+        *
+        * @param prefix prefix of the query string
+        * @return URL query string
+        */
+        public String toUrlQueryString(String prefix) {
+        String suffix = "";
+        String containerSuffix = "";
+        String containerPrefix = "";
+        if (prefix == null) {
+        // style=form, explode=true, e.g. /pet?name=cat&type=manx
+        prefix = "";
+        } else {
+        // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+        prefix = prefix + "[";
+        suffix = "]";
+        containerSuffix = "]";
+        containerPrefix = "[";
+        }
+
+        StringJoiner joiner = new StringJoiner("&");
+
+            // add `real_time_payment` to the URL query string
+                            if (getRealTimePayment() != null) {
+                            joiner.add(getRealTimePayment().toUrlQueryString(prefix + "real_time_payment" + suffix));
+                            }
+
+        return joiner.toString();
+        }
+
     }
-
-    return joiner.toString();
-  }
-
-}
 

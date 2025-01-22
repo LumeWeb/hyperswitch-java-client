@@ -31,251 +31,252 @@ import java.net.URLEncoder;
 import java.util.StringJoiner;
 
 /**
- * CardRedirectData
- */
-@JsonPropertyOrder({
-  CardRedirectData.JSON_PROPERTY_KNET,
-  CardRedirectData.JSON_PROPERTY_BENEFIT,
-  CardRedirectData.JSON_PROPERTY_MOMO_ATM,
-  CardRedirectData.JSON_PROPERTY_CARD_REDIRECT
-})
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+* CardRedirectData
+*/
+    @JsonPropertyOrder({
+        CardRedirectData.JSON_PROPERTY_KNET,
+        CardRedirectData.JSON_PROPERTY_BENEFIT,
+        CardRedirectData.JSON_PROPERTY_MOMO_ATM,
+        CardRedirectData.JSON_PROPERTY_CARD_REDIRECT
+    })
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class CardRedirectData {
-  public static final String JSON_PROPERTY_KNET = "knet";
-  private Object knet;
+        public static final String JSON_PROPERTY_KNET = "knet";
+    @javax.annotation.Nonnull
+            private Object knet;
 
-  public static final String JSON_PROPERTY_BENEFIT = "benefit";
-  private Object benefit;
+        public static final String JSON_PROPERTY_BENEFIT = "benefit";
+    @javax.annotation.Nonnull
+            private Object benefit;
 
-  public static final String JSON_PROPERTY_MOMO_ATM = "momo_atm";
-  private Object momoAtm;
+        public static final String JSON_PROPERTY_MOMO_ATM = "momo_atm";
+    @javax.annotation.Nonnull
+            private Object momoAtm;
 
-  public static final String JSON_PROPERTY_CARD_REDIRECT = "card_redirect";
-  private Object cardRedirect;
+        public static final String JSON_PROPERTY_CARD_REDIRECT = "card_redirect";
+    @javax.annotation.Nonnull
+            private Object cardRedirect;
 
-  public CardRedirectData() {
-  }
+public CardRedirectData() {
+}
 
-  public CardRedirectData knet(Object knet) {
-    
-    this.knet = knet;
-    return this;
-  }
+        public CardRedirectData knet(@javax.annotation.Nonnull Object knet) {
+        
+        this.knet = knet;
+        return this;
+        }
 
-   /**
-   * Get knet
-   * @return knet
-  **/
-  @javax.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_KNET)
+    /**
+        * Get knet
+    * @return knet
+    */
+    @javax.annotation.Nonnull
+      @JsonProperty(JSON_PROPERTY_KNET)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-  public Object getKnet() {
-    return knet;
-  }
+    public Object getKnet() {
+        return knet;
+    }
 
 
-  @JsonProperty(JSON_PROPERTY_KNET)
+          @JsonProperty(JSON_PROPERTY_KNET)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setKnet(Object knet) {
-    this.knet = knet;
-  }
+  public void setKnet(@javax.annotation.Nonnull Object knet) {
+            this.knet = knet;
+        }
 
+        public CardRedirectData benefit(@javax.annotation.Nonnull Object benefit) {
+        
+        this.benefit = benefit;
+        return this;
+        }
 
-  public CardRedirectData benefit(Object benefit) {
-    
-    this.benefit = benefit;
-    return this;
-  }
-
-   /**
-   * Get benefit
-   * @return benefit
-  **/
-  @javax.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_BENEFIT)
-  @JsonInclude(value = JsonInclude.Include.ALWAYS)
-
-  public Object getBenefit() {
-    return benefit;
-  }
-
-
-  @JsonProperty(JSON_PROPERTY_BENEFIT)
-  @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setBenefit(Object benefit) {
-    this.benefit = benefit;
-  }
-
-
-  public CardRedirectData momoAtm(Object momoAtm) {
-    
-    this.momoAtm = momoAtm;
-    return this;
-  }
-
-   /**
-   * Get momoAtm
-   * @return momoAtm
-  **/
-  @javax.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_MOMO_ATM)
+    /**
+        * Get benefit
+    * @return benefit
+    */
+    @javax.annotation.Nonnull
+      @JsonProperty(JSON_PROPERTY_BENEFIT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-  public Object getMomoAtm() {
-    return momoAtm;
-  }
+    public Object getBenefit() {
+        return benefit;
+    }
 
 
-  @JsonProperty(JSON_PROPERTY_MOMO_ATM)
+          @JsonProperty(JSON_PROPERTY_BENEFIT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setMomoAtm(Object momoAtm) {
-    this.momoAtm = momoAtm;
-  }
+  public void setBenefit(@javax.annotation.Nonnull Object benefit) {
+            this.benefit = benefit;
+        }
 
+        public CardRedirectData momoAtm(@javax.annotation.Nonnull Object momoAtm) {
+        
+        this.momoAtm = momoAtm;
+        return this;
+        }
 
-  public CardRedirectData cardRedirect(Object cardRedirect) {
-    
-    this.cardRedirect = cardRedirect;
-    return this;
-  }
-
-   /**
-   * Get cardRedirect
-   * @return cardRedirect
-  **/
-  @javax.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_CARD_REDIRECT)
+    /**
+        * Get momoAtm
+    * @return momoAtm
+    */
+    @javax.annotation.Nonnull
+      @JsonProperty(JSON_PROPERTY_MOMO_ATM)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-  public Object getCardRedirect() {
-    return cardRedirect;
-  }
+    public Object getMomoAtm() {
+        return momoAtm;
+    }
 
 
-  @JsonProperty(JSON_PROPERTY_CARD_REDIRECT)
+          @JsonProperty(JSON_PROPERTY_MOMO_ATM)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setCardRedirect(Object cardRedirect) {
-    this.cardRedirect = cardRedirect;
-  }
+  public void setMomoAtm(@javax.annotation.Nonnull Object momoAtm) {
+            this.momoAtm = momoAtm;
+        }
 
-  @Override
-  public boolean equals(Object o) {
+        public CardRedirectData cardRedirect(@javax.annotation.Nonnull Object cardRedirect) {
+        
+        this.cardRedirect = cardRedirect;
+        return this;
+        }
+
+    /**
+        * Get cardRedirect
+    * @return cardRedirect
+    */
+    @javax.annotation.Nonnull
+      @JsonProperty(JSON_PROPERTY_CARD_REDIRECT)
+  @JsonInclude(value = JsonInclude.Include.ALWAYS)
+
+    public Object getCardRedirect() {
+        return cardRedirect;
+    }
+
+
+          @JsonProperty(JSON_PROPERTY_CARD_REDIRECT)
+  @JsonInclude(value = JsonInclude.Include.ALWAYS)
+  public void setCardRedirect(@javax.annotation.Nonnull Object cardRedirect) {
+            this.cardRedirect = cardRedirect;
+        }
+
+@Override
+public boolean equals(Object o) {
     if (this == o) {
-      return true;
+    return true;
     }
     if (o == null || getClass() != o.getClass()) {
-      return false;
+    return false;
     }
-    CardRedirectData cardRedirectData = (CardRedirectData) o;
-    return Objects.equals(this.knet, cardRedirectData.knet) &&
+        CardRedirectData cardRedirectData = (CardRedirectData) o;
+        return Objects.equals(this.knet, cardRedirectData.knet) &&
         Objects.equals(this.benefit, cardRedirectData.benefit) &&
         Objects.equals(this.momoAtm, cardRedirectData.momoAtm) &&
         Objects.equals(this.cardRedirect, cardRedirectData.cardRedirect);
-  }
+}
 
-  @Override
-  public int hashCode() {
-    return Objects.hash(knet, benefit, momoAtm, cardRedirect);
-  }
+    @Override
+    public int hashCode() {
+        return Objects.hash(knet, benefit, momoAtm, cardRedirect);
+    }
 
-  @Override
-  public String toString() {
+    @Override
+    public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class CardRedirectData {\n");
-    sb.append("    knet: ").append(toIndentedString(knet)).append("\n");
-    sb.append("    benefit: ").append(toIndentedString(benefit)).append("\n");
-    sb.append("    momoAtm: ").append(toIndentedString(momoAtm)).append("\n");
-    sb.append("    cardRedirect: ").append(toIndentedString(cardRedirect)).append("\n");
+        sb.append("    knet: ").append(toIndentedString(knet)).append("\n");
+        sb.append("    benefit: ").append(toIndentedString(benefit)).append("\n");
+        sb.append("    momoAtm: ").append(toIndentedString(momoAtm)).append("\n");
+        sb.append("    cardRedirect: ").append(toIndentedString(cardRedirect)).append("\n");
     sb.append("}");
     return sb.toString();
-  }
+    }
 
-  /**
-   * Convert the given object to string with each line indented by 4 spaces
-   * (except the first line).
-   */
-  private String toIndentedString(Object o) {
+    /**
+    * Convert the given object to string with each line indented by 4 spaces
+    * (except the first line).
+    */
+    private String toIndentedString(Object o) {
     if (o == null) {
-      return "null";
+    return "null";
     }
     return o.toString().replace("\n", "\n    ");
-  }
-
-  /**
-   * Convert the instance into URL query string.
-   *
-   * @return URL query string
-   */
-  public String toUrlQueryString() {
-    return toUrlQueryString(null);
-  }
-
-  /**
-   * Convert the instance into URL query string.
-   *
-   * @param prefix prefix of the query string
-   * @return URL query string
-   */
-  public String toUrlQueryString(String prefix) {
-    String suffix = "";
-    String containerSuffix = "";
-    String containerPrefix = "";
-    if (prefix == null) {
-      // style=form, explode=true, e.g. /pet?name=cat&type=manx
-      prefix = "";
-    } else {
-      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
-      prefix = prefix + "[";
-      suffix = "]";
-      containerSuffix = "]";
-      containerPrefix = "[";
     }
 
-    StringJoiner joiner = new StringJoiner("&");
+        /**
+        * Convert the instance into URL query string.
+        *
+        * @return URL query string
+        */
+        public String toUrlQueryString() {
+        return toUrlQueryString(null);
+        }
 
-    // add `knet` to the URL query string
-    if (getKnet() != null) {
-      try {
-        joiner.add(String.format("%sknet%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getKnet()), "UTF-8").replaceAll("\\+", "%20")));
-      } catch (UnsupportedEncodingException e) {
-        // Should never happen, UTF-8 is always supported
-        throw new RuntimeException(e);
-      }
+        /**
+        * Convert the instance into URL query string.
+        *
+        * @param prefix prefix of the query string
+        * @return URL query string
+        */
+        public String toUrlQueryString(String prefix) {
+        String suffix = "";
+        String containerSuffix = "";
+        String containerPrefix = "";
+        if (prefix == null) {
+        // style=form, explode=true, e.g. /pet?name=cat&type=manx
+        prefix = "";
+        } else {
+        // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+        prefix = prefix + "[";
+        suffix = "]";
+        containerSuffix = "]";
+        containerPrefix = "[";
+        }
+
+        StringJoiner joiner = new StringJoiner("&");
+
+            // add `knet` to the URL query string
+                        if (getKnet() != null) {
+                        try {
+                        joiner.add(String.format("%sknet%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getKnet()), "UTF-8").replaceAll("\\+", "%20")));
+                        } catch (UnsupportedEncodingException e) {
+                        // Should never happen, UTF-8 is always supported
+                        throw new RuntimeException(e);
+                        }
+                        }
+
+            // add `benefit` to the URL query string
+                        if (getBenefit() != null) {
+                        try {
+                        joiner.add(String.format("%sbenefit%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getBenefit()), "UTF-8").replaceAll("\\+", "%20")));
+                        } catch (UnsupportedEncodingException e) {
+                        // Should never happen, UTF-8 is always supported
+                        throw new RuntimeException(e);
+                        }
+                        }
+
+            // add `momo_atm` to the URL query string
+                        if (getMomoAtm() != null) {
+                        try {
+                        joiner.add(String.format("%smomo_atm%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getMomoAtm()), "UTF-8").replaceAll("\\+", "%20")));
+                        } catch (UnsupportedEncodingException e) {
+                        // Should never happen, UTF-8 is always supported
+                        throw new RuntimeException(e);
+                        }
+                        }
+
+            // add `card_redirect` to the URL query string
+                        if (getCardRedirect() != null) {
+                        try {
+                        joiner.add(String.format("%scard_redirect%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCardRedirect()), "UTF-8").replaceAll("\\+", "%20")));
+                        } catch (UnsupportedEncodingException e) {
+                        // Should never happen, UTF-8 is always supported
+                        throw new RuntimeException(e);
+                        }
+                        }
+
+        return joiner.toString();
+        }
+
     }
-
-    // add `benefit` to the URL query string
-    if (getBenefit() != null) {
-      try {
-        joiner.add(String.format("%sbenefit%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getBenefit()), "UTF-8").replaceAll("\\+", "%20")));
-      } catch (UnsupportedEncodingException e) {
-        // Should never happen, UTF-8 is always supported
-        throw new RuntimeException(e);
-      }
-    }
-
-    // add `momo_atm` to the URL query string
-    if (getMomoAtm() != null) {
-      try {
-        joiner.add(String.format("%smomo_atm%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getMomoAtm()), "UTF-8").replaceAll("\\+", "%20")));
-      } catch (UnsupportedEncodingException e) {
-        // Should never happen, UTF-8 is always supported
-        throw new RuntimeException(e);
-      }
-    }
-
-    // add `card_redirect` to the URL query string
-    if (getCardRedirect() != null) {
-      try {
-        joiner.add(String.format("%scard_redirect%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCardRedirect()), "UTF-8").replaceAll("\\+", "%20")));
-      } catch (UnsupportedEncodingException e) {
-        // Should never happen, UTF-8 is always supported
-        throw new RuntimeException(e);
-      }
-    }
-
-    return joiner.toString();
-  }
-
-}
 

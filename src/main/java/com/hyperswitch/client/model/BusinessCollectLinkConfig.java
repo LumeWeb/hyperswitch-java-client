@@ -23,6 +23,7 @@ import com.fasterxml.jackson.annotation.JsonValue;
 import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
 import com.hyperswitch.client.model.EnabledPaymentMethod;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.LinkedHashSet;
 import java.util.List;
 import java.util.Set;
@@ -37,401 +38,402 @@ import java.net.URLEncoder;
 import java.util.StringJoiner;
 
 /**
- * BusinessCollectLinkConfig
- */
-@JsonPropertyOrder({
-  BusinessCollectLinkConfig.JSON_PROPERTY_LOGO,
-  BusinessCollectLinkConfig.JSON_PROPERTY_MERCHANT_NAME,
-  BusinessCollectLinkConfig.JSON_PROPERTY_THEME,
-  BusinessCollectLinkConfig.JSON_PROPERTY_DOMAIN_NAME,
-  BusinessCollectLinkConfig.JSON_PROPERTY_ALLOWED_DOMAINS,
-  BusinessCollectLinkConfig.JSON_PROPERTY_ENABLED_PAYMENT_METHODS
-})
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+* BusinessCollectLinkConfig
+*/
+    @JsonPropertyOrder({
+        BusinessCollectLinkConfig.JSON_PROPERTY_LOGO,
+        BusinessCollectLinkConfig.JSON_PROPERTY_MERCHANT_NAME,
+        BusinessCollectLinkConfig.JSON_PROPERTY_THEME,
+        BusinessCollectLinkConfig.JSON_PROPERTY_DOMAIN_NAME,
+        BusinessCollectLinkConfig.JSON_PROPERTY_ALLOWED_DOMAINS,
+        BusinessCollectLinkConfig.JSON_PROPERTY_ENABLED_PAYMENT_METHODS
+    })
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class BusinessCollectLinkConfig {
-  public static final String JSON_PROPERTY_LOGO = "logo";
-  private JsonNullable<String> logo = JsonNullable.<String>undefined();
+        public static final String JSON_PROPERTY_LOGO = "logo";
+    @javax.annotation.Nullable
+            private JsonNullable<String> logo = JsonNullable.<String>undefined();
 
-  public static final String JSON_PROPERTY_MERCHANT_NAME = "merchant_name";
-  private JsonNullable<String> merchantName = JsonNullable.<String>undefined();
+        public static final String JSON_PROPERTY_MERCHANT_NAME = "merchant_name";
+    @javax.annotation.Nullable
+            private JsonNullable<String> merchantName = JsonNullable.<String>undefined();
 
-  public static final String JSON_PROPERTY_THEME = "theme";
-  private JsonNullable<String> theme = JsonNullable.<String>undefined();
+        public static final String JSON_PROPERTY_THEME = "theme";
+    @javax.annotation.Nullable
+            private JsonNullable<String> theme = JsonNullable.<String>undefined();
 
-  public static final String JSON_PROPERTY_DOMAIN_NAME = "domain_name";
-  private JsonNullable<String> domainName = JsonNullable.<String>undefined();
+        public static final String JSON_PROPERTY_DOMAIN_NAME = "domain_name";
+    @javax.annotation.Nullable
+            private JsonNullable<String> domainName = JsonNullable.<String>undefined();
 
-  public static final String JSON_PROPERTY_ALLOWED_DOMAINS = "allowed_domains";
-  private Set<String> allowedDomains = new LinkedHashSet<>();
+        public static final String JSON_PROPERTY_ALLOWED_DOMAINS = "allowed_domains";
+    @javax.annotation.Nonnull
+            private Set<String> allowedDomains = new LinkedHashSet<>();
 
-  public static final String JSON_PROPERTY_ENABLED_PAYMENT_METHODS = "enabled_payment_methods";
-  private List<EnabledPaymentMethod> enabledPaymentMethods = new ArrayList<>();
+        public static final String JSON_PROPERTY_ENABLED_PAYMENT_METHODS = "enabled_payment_methods";
+    @javax.annotation.Nonnull
+            private List<EnabledPaymentMethod> enabledPaymentMethods = new ArrayList<>();
 
-  public BusinessCollectLinkConfig() {
-  }
+public BusinessCollectLinkConfig() {
+}
 
-  public BusinessCollectLinkConfig logo(String logo) {
-    this.logo = JsonNullable.<String>of(logo);
+        public BusinessCollectLinkConfig logo(@javax.annotation.Nullable String logo) {
+        this.logo = JsonNullable.<String>of(logo);
+        
+        return this;
+        }
+
+    /**
+        * Merchant&#39;s display logo
+    * @return logo
+    */
+    @javax.annotation.Nullable
+        @JsonIgnore
     
-    return this;
-  }
-
-   /**
-   * Merchant&#39;s display logo
-   * @return logo
-  **/
-  @javax.annotation.Nullable
-  @JsonIgnore
-
-  public String getLogo() {
-        return logo.orElse(null);
-  }
-
-  @JsonProperty(JSON_PROPERTY_LOGO)
-  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
-  public JsonNullable<String> getLogo_JsonNullable() {
-    return logo;
-  }
-  
-  @JsonProperty(JSON_PROPERTY_LOGO)
-  public void setLogo_JsonNullable(JsonNullable<String> logo) {
-    this.logo = logo;
-  }
-
-  public void setLogo(String logo) {
-    this.logo = JsonNullable.<String>of(logo);
-  }
-
-
-  public BusinessCollectLinkConfig merchantName(String merchantName) {
-    this.merchantName = JsonNullable.<String>of(merchantName);
-    
-    return this;
-  }
-
-   /**
-   * Custom merchant name for the link
-   * @return merchantName
-  **/
-  @javax.annotation.Nullable
-  @JsonIgnore
-
-  public String getMerchantName() {
-        return merchantName.orElse(null);
-  }
-
-  @JsonProperty(JSON_PROPERTY_MERCHANT_NAME)
-  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
-  public JsonNullable<String> getMerchantName_JsonNullable() {
-    return merchantName;
-  }
-  
-  @JsonProperty(JSON_PROPERTY_MERCHANT_NAME)
-  public void setMerchantName_JsonNullable(JsonNullable<String> merchantName) {
-    this.merchantName = merchantName;
-  }
-
-  public void setMerchantName(String merchantName) {
-    this.merchantName = JsonNullable.<String>of(merchantName);
-  }
-
-
-  public BusinessCollectLinkConfig theme(String theme) {
-    this.theme = JsonNullable.<String>of(theme);
-    
-    return this;
-  }
-
-   /**
-   * Primary color to be used in the form represented in hex format
-   * @return theme
-  **/
-  @javax.annotation.Nullable
-  @JsonIgnore
-
-  public String getTheme() {
-        return theme.orElse(null);
-  }
-
-  @JsonProperty(JSON_PROPERTY_THEME)
-  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
-  public JsonNullable<String> getTheme_JsonNullable() {
-    return theme;
-  }
-  
-  @JsonProperty(JSON_PROPERTY_THEME)
-  public void setTheme_JsonNullable(JsonNullable<String> theme) {
-    this.theme = theme;
-  }
-
-  public void setTheme(String theme) {
-    this.theme = JsonNullable.<String>of(theme);
-  }
-
-
-  public BusinessCollectLinkConfig domainName(String domainName) {
-    this.domainName = JsonNullable.<String>of(domainName);
-    
-    return this;
-  }
-
-   /**
-   * Custom domain name to be used for hosting the link
-   * @return domainName
-  **/
-  @javax.annotation.Nullable
-  @JsonIgnore
-
-  public String getDomainName() {
-        return domainName.orElse(null);
-  }
-
-  @JsonProperty(JSON_PROPERTY_DOMAIN_NAME)
-  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
-  public JsonNullable<String> getDomainName_JsonNullable() {
-    return domainName;
-  }
-  
-  @JsonProperty(JSON_PROPERTY_DOMAIN_NAME)
-  public void setDomainName_JsonNullable(JsonNullable<String> domainName) {
-    this.domainName = domainName;
-  }
-
-  public void setDomainName(String domainName) {
-    this.domainName = JsonNullable.<String>of(domainName);
-  }
-
-
-  public BusinessCollectLinkConfig allowedDomains(Set<String> allowedDomains) {
-    
-    this.allowedDomains = allowedDomains;
-    return this;
-  }
-
-  public BusinessCollectLinkConfig addAllowedDomainsItem(String allowedDomainsItem) {
-    if (this.allowedDomains == null) {
-      this.allowedDomains = new LinkedHashSet<>();
+    public String getLogo() {
+                return logo.orElse(null);
     }
-    this.allowedDomains.add(allowedDomainsItem);
-    return this;
-  }
 
-   /**
-   * A list of allowed domains (glob patterns) where this link can be embedded / opened from
-   * @return allowedDomains
-  **/
-  @javax.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_ALLOWED_DOMAINS)
-  @JsonInclude(value = JsonInclude.Include.ALWAYS)
+          @JsonProperty(JSON_PROPERTY_LOGO)
+  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-  public Set<String> getAllowedDomains() {
-    return allowedDomains;
-  }
-
-
-  @JsonDeserialize(as = LinkedHashSet.class)
-  @JsonProperty(JSON_PROPERTY_ALLOWED_DOMAINS)
-  @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setAllowedDomains(Set<String> allowedDomains) {
-    this.allowedDomains = allowedDomains;
-  }
-
-
-  public BusinessCollectLinkConfig enabledPaymentMethods(List<EnabledPaymentMethod> enabledPaymentMethods) {
+        public JsonNullable<String> getLogo_JsonNullable() {
+        return logo;
+        }
     
-    this.enabledPaymentMethods = enabledPaymentMethods;
-    return this;
-  }
+        @JsonProperty(JSON_PROPERTY_LOGO)
+        public void setLogo_JsonNullable(JsonNullable<String> logo) {
+        this.logo = logo;
+        }
 
-  public BusinessCollectLinkConfig addEnabledPaymentMethodsItem(EnabledPaymentMethod enabledPaymentMethodsItem) {
-    if (this.enabledPaymentMethods == null) {
-      this.enabledPaymentMethods = new ArrayList<>();
+          public void setLogo(@javax.annotation.Nullable String logo) {
+            this.logo = JsonNullable.<String>of(logo);
+        }
+
+        public BusinessCollectLinkConfig merchantName(@javax.annotation.Nullable String merchantName) {
+        this.merchantName = JsonNullable.<String>of(merchantName);
+        
+        return this;
+        }
+
+    /**
+        * Custom merchant name for the link
+    * @return merchantName
+    */
+    @javax.annotation.Nullable
+        @JsonIgnore
+    
+    public String getMerchantName() {
+                return merchantName.orElse(null);
     }
-    this.enabledPaymentMethods.add(enabledPaymentMethodsItem);
-    return this;
-  }
 
-   /**
-   * List of payment methods shown on collect UI
-   * @return enabledPaymentMethods
-  **/
-  @javax.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_ENABLED_PAYMENT_METHODS)
+          @JsonProperty(JSON_PROPERTY_MERCHANT_NAME)
+  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
+
+        public JsonNullable<String> getMerchantName_JsonNullable() {
+        return merchantName;
+        }
+    
+        @JsonProperty(JSON_PROPERTY_MERCHANT_NAME)
+        public void setMerchantName_JsonNullable(JsonNullable<String> merchantName) {
+        this.merchantName = merchantName;
+        }
+
+          public void setMerchantName(@javax.annotation.Nullable String merchantName) {
+            this.merchantName = JsonNullable.<String>of(merchantName);
+        }
+
+        public BusinessCollectLinkConfig theme(@javax.annotation.Nullable String theme) {
+        this.theme = JsonNullable.<String>of(theme);
+        
+        return this;
+        }
+
+    /**
+        * Primary color to be used in the form represented in hex format
+    * @return theme
+    */
+    @javax.annotation.Nullable
+        @JsonIgnore
+    
+    public String getTheme() {
+                return theme.orElse(null);
+    }
+
+          @JsonProperty(JSON_PROPERTY_THEME)
+  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
+
+        public JsonNullable<String> getTheme_JsonNullable() {
+        return theme;
+        }
+    
+        @JsonProperty(JSON_PROPERTY_THEME)
+        public void setTheme_JsonNullable(JsonNullable<String> theme) {
+        this.theme = theme;
+        }
+
+          public void setTheme(@javax.annotation.Nullable String theme) {
+            this.theme = JsonNullable.<String>of(theme);
+        }
+
+        public BusinessCollectLinkConfig domainName(@javax.annotation.Nullable String domainName) {
+        this.domainName = JsonNullable.<String>of(domainName);
+        
+        return this;
+        }
+
+    /**
+        * Custom domain name to be used for hosting the link
+    * @return domainName
+    */
+    @javax.annotation.Nullable
+        @JsonIgnore
+    
+    public String getDomainName() {
+                return domainName.orElse(null);
+    }
+
+          @JsonProperty(JSON_PROPERTY_DOMAIN_NAME)
+  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
+
+        public JsonNullable<String> getDomainName_JsonNullable() {
+        return domainName;
+        }
+    
+        @JsonProperty(JSON_PROPERTY_DOMAIN_NAME)
+        public void setDomainName_JsonNullable(JsonNullable<String> domainName) {
+        this.domainName = domainName;
+        }
+
+          public void setDomainName(@javax.annotation.Nullable String domainName) {
+            this.domainName = JsonNullable.<String>of(domainName);
+        }
+
+        public BusinessCollectLinkConfig allowedDomains(@javax.annotation.Nonnull Set<String> allowedDomains) {
+        
+        this.allowedDomains = allowedDomains;
+        return this;
+        }
+
+            public BusinessCollectLinkConfig addAllowedDomainsItem(String allowedDomainsItem) {
+                if (this.allowedDomains == null) {
+                this.allowedDomains = new LinkedHashSet<>();
+                }
+                this.allowedDomains.add(allowedDomainsItem);
+                return this;
+            }
+
+    /**
+        * A list of allowed domains (glob patterns) where this link can be embedded / opened from
+    * @return allowedDomains
+    */
+    @javax.annotation.Nonnull
+      @JsonProperty(JSON_PROPERTY_ALLOWED_DOMAINS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-  public List<EnabledPaymentMethod> getEnabledPaymentMethods() {
-    return enabledPaymentMethods;
-  }
+    public Set<String> getAllowedDomains() {
+        return allowedDomains;
+    }
 
 
-  @JsonProperty(JSON_PROPERTY_ENABLED_PAYMENT_METHODS)
+          @JsonDeserialize(as = LinkedHashSet.class)
+          @JsonProperty(JSON_PROPERTY_ALLOWED_DOMAINS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setEnabledPaymentMethods(List<EnabledPaymentMethod> enabledPaymentMethods) {
-    this.enabledPaymentMethods = enabledPaymentMethods;
-  }
+  public void setAllowedDomains(@javax.annotation.Nonnull Set<String> allowedDomains) {
+            this.allowedDomains = allowedDomains;
+        }
 
-  @Override
-  public boolean equals(Object o) {
+        public BusinessCollectLinkConfig enabledPaymentMethods(@javax.annotation.Nonnull List<EnabledPaymentMethod> enabledPaymentMethods) {
+        
+        this.enabledPaymentMethods = enabledPaymentMethods;
+        return this;
+        }
+
+            public BusinessCollectLinkConfig addEnabledPaymentMethodsItem(EnabledPaymentMethod enabledPaymentMethodsItem) {
+                if (this.enabledPaymentMethods == null) {
+                this.enabledPaymentMethods = new ArrayList<>();
+                }
+                this.enabledPaymentMethods.add(enabledPaymentMethodsItem);
+                return this;
+            }
+
+    /**
+        * List of payment methods shown on collect UI
+    * @return enabledPaymentMethods
+    */
+    @javax.annotation.Nonnull
+      @JsonProperty(JSON_PROPERTY_ENABLED_PAYMENT_METHODS)
+  @JsonInclude(value = JsonInclude.Include.ALWAYS)
+
+    public List<EnabledPaymentMethod> getEnabledPaymentMethods() {
+        return enabledPaymentMethods;
+    }
+
+
+          @JsonProperty(JSON_PROPERTY_ENABLED_PAYMENT_METHODS)
+  @JsonInclude(value = JsonInclude.Include.ALWAYS)
+  public void setEnabledPaymentMethods(@javax.annotation.Nonnull List<EnabledPaymentMethod> enabledPaymentMethods) {
+            this.enabledPaymentMethods = enabledPaymentMethods;
+        }
+
+@Override
+public boolean equals(Object o) {
     if (this == o) {
-      return true;
+    return true;
     }
     if (o == null || getClass() != o.getClass()) {
-      return false;
+    return false;
     }
-    BusinessCollectLinkConfig businessCollectLinkConfig = (BusinessCollectLinkConfig) o;
-    return equalsNullable(this.logo, businessCollectLinkConfig.logo) &&
+        BusinessCollectLinkConfig businessCollectLinkConfig = (BusinessCollectLinkConfig) o;
+        return equalsNullable(this.logo, businessCollectLinkConfig.logo) &&
         equalsNullable(this.merchantName, businessCollectLinkConfig.merchantName) &&
         equalsNullable(this.theme, businessCollectLinkConfig.theme) &&
         equalsNullable(this.domainName, businessCollectLinkConfig.domainName) &&
         Objects.equals(this.allowedDomains, businessCollectLinkConfig.allowedDomains) &&
         Objects.equals(this.enabledPaymentMethods, businessCollectLinkConfig.enabledPaymentMethods);
-  }
+}
 
-  private static <T> boolean equalsNullable(JsonNullable<T> a, JsonNullable<T> b) {
-    return a == b || (a != null && b != null && a.isPresent() && b.isPresent() && Objects.deepEquals(a.get(), b.get()));
-  }
+    private static <T> boolean equalsNullable(JsonNullable<T> a, JsonNullable<T> b) {
+        return a == b || (a != null && b != null && a.isPresent() && b.isPresent() && Objects.deepEquals(a.get(), b.get()));
+        }
 
-  @Override
-  public int hashCode() {
-    return Objects.hash(hashCodeNullable(logo), hashCodeNullable(merchantName), hashCodeNullable(theme), hashCodeNullable(domainName), allowedDomains, enabledPaymentMethods);
-  }
-
-  private static <T> int hashCodeNullable(JsonNullable<T> a) {
-    if (a == null) {
-      return 1;
+    @Override
+    public int hashCode() {
+        return Objects.hash(hashCodeNullable(logo), hashCodeNullable(merchantName), hashCodeNullable(theme), hashCodeNullable(domainName), allowedDomains, enabledPaymentMethods);
     }
-    return a.isPresent() ? Arrays.deepHashCode(new Object[]{a.get()}) : 31;
-  }
 
-  @Override
-  public String toString() {
+        private static <T> int hashCodeNullable(JsonNullable<T> a) {
+        if (a == null) {
+        return 1;
+        }
+        return a.isPresent() ? Arrays.deepHashCode(new Object[]{a.get()}) : 31;
+        }
+
+    @Override
+    public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class BusinessCollectLinkConfig {\n");
-    sb.append("    logo: ").append(toIndentedString(logo)).append("\n");
-    sb.append("    merchantName: ").append(toIndentedString(merchantName)).append("\n");
-    sb.append("    theme: ").append(toIndentedString(theme)).append("\n");
-    sb.append("    domainName: ").append(toIndentedString(domainName)).append("\n");
-    sb.append("    allowedDomains: ").append(toIndentedString(allowedDomains)).append("\n");
-    sb.append("    enabledPaymentMethods: ").append(toIndentedString(enabledPaymentMethods)).append("\n");
+        sb.append("    logo: ").append(toIndentedString(logo)).append("\n");
+        sb.append("    merchantName: ").append(toIndentedString(merchantName)).append("\n");
+        sb.append("    theme: ").append(toIndentedString(theme)).append("\n");
+        sb.append("    domainName: ").append(toIndentedString(domainName)).append("\n");
+        sb.append("    allowedDomains: ").append(toIndentedString(allowedDomains)).append("\n");
+        sb.append("    enabledPaymentMethods: ").append(toIndentedString(enabledPaymentMethods)).append("\n");
     sb.append("}");
     return sb.toString();
-  }
+    }
 
-  /**
-   * Convert the given object to string with each line indented by 4 spaces
-   * (except the first line).
-   */
-  private String toIndentedString(Object o) {
+    /**
+    * Convert the given object to string with each line indented by 4 spaces
+    * (except the first line).
+    */
+    private String toIndentedString(Object o) {
     if (o == null) {
-      return "null";
+    return "null";
     }
     return o.toString().replace("\n", "\n    ");
-  }
-
-  /**
-   * Convert the instance into URL query string.
-   *
-   * @return URL query string
-   */
-  public String toUrlQueryString() {
-    return toUrlQueryString(null);
-  }
-
-  /**
-   * Convert the instance into URL query string.
-   *
-   * @param prefix prefix of the query string
-   * @return URL query string
-   */
-  public String toUrlQueryString(String prefix) {
-    String suffix = "";
-    String containerSuffix = "";
-    String containerPrefix = "";
-    if (prefix == null) {
-      // style=form, explode=true, e.g. /pet?name=cat&type=manx
-      prefix = "";
-    } else {
-      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
-      prefix = prefix + "[";
-      suffix = "]";
-      containerSuffix = "]";
-      containerPrefix = "[";
     }
 
-    StringJoiner joiner = new StringJoiner("&");
-
-    // add `logo` to the URL query string
-    if (getLogo() != null) {
-      try {
-        joiner.add(String.format("%slogo%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getLogo()), "UTF-8").replaceAll("\\+", "%20")));
-      } catch (UnsupportedEncodingException e) {
-        // Should never happen, UTF-8 is always supported
-        throw new RuntimeException(e);
-      }
-    }
-
-    // add `merchant_name` to the URL query string
-    if (getMerchantName() != null) {
-      try {
-        joiner.add(String.format("%smerchant_name%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getMerchantName()), "UTF-8").replaceAll("\\+", "%20")));
-      } catch (UnsupportedEncodingException e) {
-        // Should never happen, UTF-8 is always supported
-        throw new RuntimeException(e);
-      }
-    }
-
-    // add `theme` to the URL query string
-    if (getTheme() != null) {
-      try {
-        joiner.add(String.format("%stheme%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getTheme()), "UTF-8").replaceAll("\\+", "%20")));
-      } catch (UnsupportedEncodingException e) {
-        // Should never happen, UTF-8 is always supported
-        throw new RuntimeException(e);
-      }
-    }
-
-    // add `domain_name` to the URL query string
-    if (getDomainName() != null) {
-      try {
-        joiner.add(String.format("%sdomain_name%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getDomainName()), "UTF-8").replaceAll("\\+", "%20")));
-      } catch (UnsupportedEncodingException e) {
-        // Should never happen, UTF-8 is always supported
-        throw new RuntimeException(e);
-      }
-    }
-
-    // add `allowed_domains` to the URL query string
-    if (getAllowedDomains() != null) {
-      int i = 0;
-      for (String _item : getAllowedDomains()) {
-        try {
-          joiner.add(String.format("%sallowed_domains%s%s=%s", prefix, suffix,
-              "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix),
-              URLEncoder.encode(String.valueOf(_item), "UTF-8").replaceAll("\\+", "%20")));
-        } catch (UnsupportedEncodingException e) {
-          // Should never happen, UTF-8 is always supported
-          throw new RuntimeException(e);
+        /**
+        * Convert the instance into URL query string.
+        *
+        * @return URL query string
+        */
+        public String toUrlQueryString() {
+        return toUrlQueryString(null);
         }
-      }
-      i++;
-    }
 
-    // add `enabled_payment_methods` to the URL query string
-    if (getEnabledPaymentMethods() != null) {
-      for (int i = 0; i < getEnabledPaymentMethods().size(); i++) {
-        if (getEnabledPaymentMethods().get(i) != null) {
-          joiner.add(getEnabledPaymentMethods().get(i).toUrlQueryString(String.format("%senabled_payment_methods%s%s", prefix, suffix,
-              "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix))));
+        /**
+        * Convert the instance into URL query string.
+        *
+        * @param prefix prefix of the query string
+        * @return URL query string
+        */
+        public String toUrlQueryString(String prefix) {
+        String suffix = "";
+        String containerSuffix = "";
+        String containerPrefix = "";
+        if (prefix == null) {
+        // style=form, explode=true, e.g. /pet?name=cat&type=manx
+        prefix = "";
+        } else {
+        // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+        prefix = prefix + "[";
+        suffix = "]";
+        containerSuffix = "]";
+        containerPrefix = "[";
         }
-      }
+
+        StringJoiner joiner = new StringJoiner("&");
+
+            // add `logo` to the URL query string
+                        if (getLogo() != null) {
+                        try {
+                        joiner.add(String.format("%slogo%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getLogo()), "UTF-8").replaceAll("\\+", "%20")));
+                        } catch (UnsupportedEncodingException e) {
+                        // Should never happen, UTF-8 is always supported
+                        throw new RuntimeException(e);
+                        }
+                        }
+
+            // add `merchant_name` to the URL query string
+                        if (getMerchantName() != null) {
+                        try {
+                        joiner.add(String.format("%smerchant_name%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getMerchantName()), "UTF-8").replaceAll("\\+", "%20")));
+                        } catch (UnsupportedEncodingException e) {
+                        // Should never happen, UTF-8 is always supported
+                        throw new RuntimeException(e);
+                        }
+                        }
+
+            // add `theme` to the URL query string
+                        if (getTheme() != null) {
+                        try {
+                        joiner.add(String.format("%stheme%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getTheme()), "UTF-8").replaceAll("\\+", "%20")));
+                        } catch (UnsupportedEncodingException e) {
+                        // Should never happen, UTF-8 is always supported
+                        throw new RuntimeException(e);
+                        }
+                        }
+
+            // add `domain_name` to the URL query string
+                        if (getDomainName() != null) {
+                        try {
+                        joiner.add(String.format("%sdomain_name%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getDomainName()), "UTF-8").replaceAll("\\+", "%20")));
+                        } catch (UnsupportedEncodingException e) {
+                        // Should never happen, UTF-8 is always supported
+                        throw new RuntimeException(e);
+                        }
+                        }
+
+            // add `allowed_domains` to the URL query string
+                        if (getAllowedDomains() != null) {
+                        int i = 0;
+                        for (String _item : getAllowedDomains()) {
+                        try {
+                        joiner.add(String.format("%sallowed_domains%s%s=%s", prefix, suffix,
+                        "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix),
+                        URLEncoder.encode(String.valueOf(_item), "UTF-8").replaceAll("\\+", "%20")));
+                        } catch (UnsupportedEncodingException e) {
+                        // Should never happen, UTF-8 is always supported
+                        throw new RuntimeException(e);
+                        }
+                        }
+                        i++;
+                        }
+
+            // add `enabled_payment_methods` to the URL query string
+                            if (getEnabledPaymentMethods() != null) {
+                            for (int i = 0; i < getEnabledPaymentMethods().size(); i++) {
+                            if (getEnabledPaymentMethods().get(i) != null) {
+                            joiner.add(getEnabledPaymentMethods().get(i).toUrlQueryString(String.format("%senabled_payment_methods%s%s", prefix, suffix,
+                            "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix))));
+                            }
+                            }
+                            }
+
+        return joiner.toString();
+        }
+
     }
-
-    return joiner.toString();
-  }
-
-}
 

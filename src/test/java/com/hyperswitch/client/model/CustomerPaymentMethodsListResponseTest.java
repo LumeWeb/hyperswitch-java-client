@@ -20,27 +20,27 @@ import com.fasterxml.jackson.annotation.JsonTypeName;
 import com.fasterxml.jackson.annotation.JsonValue;
 import com.hyperswitch.client.model.CustomerPaymentMethod;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import org.openapitools.jackson.nullable.JsonNullable;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.openapitools.jackson.nullable.JsonNullable;
 import java.util.NoSuchElementException;
-import org.junit.Assert;
-import org.junit.Ignore;
-import org.junit.Test;
-
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Test;
 
 /**
  * Model tests for CustomerPaymentMethodsListResponse
  */
-public class CustomerPaymentMethodsListResponseTest {
+class CustomerPaymentMethodsListResponseTest {
     private final CustomerPaymentMethodsListResponse model = new CustomerPaymentMethodsListResponse();
 
     /**
      * Model tests for CustomerPaymentMethodsListResponse
      */
     @Test
-    public void testCustomerPaymentMethodsListResponse() {
+    void testCustomerPaymentMethodsListResponse() {
         // TODO: test CustomerPaymentMethodsListResponse
     }
 
@@ -48,7 +48,7 @@ public class CustomerPaymentMethodsListResponseTest {
      * Test the property 'customerPaymentMethods'
      */
     @Test
-    public void customerPaymentMethodsTest() {
+    void customerPaymentMethodsTest() {
         // TODO: test customerPaymentMethods
     }
 
@@ -56,7 +56,7 @@ public class CustomerPaymentMethodsListResponseTest {
      * Test the property 'isGuestCustomer'
      */
     @Test
-    public void isGuestCustomerTest() {
+    void isGuestCustomerTest() {
         // TODO: test isGuestCustomer
     }
 

@@ -31,228 +31,229 @@ import java.net.URLEncoder;
 import java.util.StringJoiner;
 
 /**
- * SamsungPayTokenData
- */
-@JsonPropertyOrder({
-  SamsungPayTokenData.JSON_PROPERTY_TYPE,
-  SamsungPayTokenData.JSON_PROPERTY_VERSION,
-  SamsungPayTokenData.JSON_PROPERTY_DATA
-})
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+* SamsungPayTokenData
+*/
+    @JsonPropertyOrder({
+        SamsungPayTokenData.JSON_PROPERTY_TYPE,
+        SamsungPayTokenData.JSON_PROPERTY_VERSION,
+        SamsungPayTokenData.JSON_PROPERTY_DATA
+    })
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class SamsungPayTokenData {
-  public static final String JSON_PROPERTY_TYPE = "type";
-  private JsonNullable<String> type = JsonNullable.<String>undefined();
+        public static final String JSON_PROPERTY_TYPE = "type";
+    @javax.annotation.Nullable
+            private JsonNullable<String> type = JsonNullable.<String>undefined();
 
-  public static final String JSON_PROPERTY_VERSION = "version";
-  private String version;
+        public static final String JSON_PROPERTY_VERSION = "version";
+    @javax.annotation.Nonnull
+            private String version;
 
-  public static final String JSON_PROPERTY_DATA = "data";
-  private String data;
+        public static final String JSON_PROPERTY_DATA = "data";
+    @javax.annotation.Nonnull
+            private String data;
 
-  public SamsungPayTokenData() {
-  }
+public SamsungPayTokenData() {
+}
 
-  public SamsungPayTokenData type(String type) {
-    this.type = JsonNullable.<String>of(type);
+        public SamsungPayTokenData type(@javax.annotation.Nullable String type) {
+        this.type = JsonNullable.<String>of(type);
+        
+        return this;
+        }
+
+    /**
+        * 3DS type used by Samsung Pay
+    * @return type
+    */
+    @javax.annotation.Nullable
+        @JsonIgnore
     
-    return this;
-  }
+    public String getType() {
+                return type.orElse(null);
+    }
 
-   /**
-   * 3DS type used by Samsung Pay
-   * @return type
-  **/
-  @javax.annotation.Nullable
-  @JsonIgnore
-
-  public String getType() {
-        return type.orElse(null);
-  }
-
-  @JsonProperty(JSON_PROPERTY_TYPE)
+          @JsonProperty(JSON_PROPERTY_TYPE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-  public JsonNullable<String> getType_JsonNullable() {
-    return type;
-  }
-  
-  @JsonProperty(JSON_PROPERTY_TYPE)
-  public void setType_JsonNullable(JsonNullable<String> type) {
-    this.type = type;
-  }
-
-  public void setType(String type) {
-    this.type = JsonNullable.<String>of(type);
-  }
-
-
-  public SamsungPayTokenData version(String version) {
+        public JsonNullable<String> getType_JsonNullable() {
+        return type;
+        }
     
-    this.version = version;
-    return this;
-  }
+        @JsonProperty(JSON_PROPERTY_TYPE)
+        public void setType_JsonNullable(JsonNullable<String> type) {
+        this.type = type;
+        }
 
-   /**
-   * 3DS version used by Samsung Pay
-   * @return version
-  **/
-  @javax.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_VERSION)
+          public void setType(@javax.annotation.Nullable String type) {
+            this.type = JsonNullable.<String>of(type);
+        }
+
+        public SamsungPayTokenData version(@javax.annotation.Nonnull String version) {
+        
+        this.version = version;
+        return this;
+        }
+
+    /**
+        * 3DS version used by Samsung Pay
+    * @return version
+    */
+    @javax.annotation.Nonnull
+      @JsonProperty(JSON_PROPERTY_VERSION)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-  public String getVersion() {
-    return version;
-  }
+    public String getVersion() {
+        return version;
+    }
 
 
-  @JsonProperty(JSON_PROPERTY_VERSION)
+          @JsonProperty(JSON_PROPERTY_VERSION)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setVersion(String version) {
-    this.version = version;
-  }
+  public void setVersion(@javax.annotation.Nonnull String version) {
+            this.version = version;
+        }
 
+        public SamsungPayTokenData data(@javax.annotation.Nonnull String data) {
+        
+        this.data = data;
+        return this;
+        }
 
-  public SamsungPayTokenData data(String data) {
-    
-    this.data = data;
-    return this;
-  }
-
-   /**
-   * Samsung Pay encrypted payment credential data
-   * @return data
-  **/
-  @javax.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_DATA)
+    /**
+        * Samsung Pay encrypted payment credential data
+    * @return data
+    */
+    @javax.annotation.Nonnull
+      @JsonProperty(JSON_PROPERTY_DATA)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-  public String getData() {
-    return data;
-  }
+    public String getData() {
+        return data;
+    }
 
 
-  @JsonProperty(JSON_PROPERTY_DATA)
+          @JsonProperty(JSON_PROPERTY_DATA)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setData(String data) {
-    this.data = data;
-  }
+  public void setData(@javax.annotation.Nonnull String data) {
+            this.data = data;
+        }
 
-  @Override
-  public boolean equals(Object o) {
+@Override
+public boolean equals(Object o) {
     if (this == o) {
-      return true;
+    return true;
     }
     if (o == null || getClass() != o.getClass()) {
-      return false;
+    return false;
     }
-    SamsungPayTokenData samsungPayTokenData = (SamsungPayTokenData) o;
-    return equalsNullable(this.type, samsungPayTokenData.type) &&
+        SamsungPayTokenData samsungPayTokenData = (SamsungPayTokenData) o;
+        return equalsNullable(this.type, samsungPayTokenData.type) &&
         Objects.equals(this.version, samsungPayTokenData.version) &&
         Objects.equals(this.data, samsungPayTokenData.data);
-  }
+}
 
-  private static <T> boolean equalsNullable(JsonNullable<T> a, JsonNullable<T> b) {
-    return a == b || (a != null && b != null && a.isPresent() && b.isPresent() && Objects.deepEquals(a.get(), b.get()));
-  }
+    private static <T> boolean equalsNullable(JsonNullable<T> a, JsonNullable<T> b) {
+        return a == b || (a != null && b != null && a.isPresent() && b.isPresent() && Objects.deepEquals(a.get(), b.get()));
+        }
 
-  @Override
-  public int hashCode() {
-    return Objects.hash(hashCodeNullable(type), version, data);
-  }
-
-  private static <T> int hashCodeNullable(JsonNullable<T> a) {
-    if (a == null) {
-      return 1;
+    @Override
+    public int hashCode() {
+        return Objects.hash(hashCodeNullable(type), version, data);
     }
-    return a.isPresent() ? Arrays.deepHashCode(new Object[]{a.get()}) : 31;
-  }
 
-  @Override
-  public String toString() {
+        private static <T> int hashCodeNullable(JsonNullable<T> a) {
+        if (a == null) {
+        return 1;
+        }
+        return a.isPresent() ? Arrays.deepHashCode(new Object[]{a.get()}) : 31;
+        }
+
+    @Override
+    public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class SamsungPayTokenData {\n");
-    sb.append("    type: ").append(toIndentedString(type)).append("\n");
-    sb.append("    version: ").append(toIndentedString(version)).append("\n");
-    sb.append("    data: ").append(toIndentedString(data)).append("\n");
+        sb.append("    type: ").append(toIndentedString(type)).append("\n");
+        sb.append("    version: ").append(toIndentedString(version)).append("\n");
+        sb.append("    data: ").append(toIndentedString(data)).append("\n");
     sb.append("}");
     return sb.toString();
-  }
+    }
 
-  /**
-   * Convert the given object to string with each line indented by 4 spaces
-   * (except the first line).
-   */
-  private String toIndentedString(Object o) {
+    /**
+    * Convert the given object to string with each line indented by 4 spaces
+    * (except the first line).
+    */
+    private String toIndentedString(Object o) {
     if (o == null) {
-      return "null";
+    return "null";
     }
     return o.toString().replace("\n", "\n    ");
-  }
-
-  /**
-   * Convert the instance into URL query string.
-   *
-   * @return URL query string
-   */
-  public String toUrlQueryString() {
-    return toUrlQueryString(null);
-  }
-
-  /**
-   * Convert the instance into URL query string.
-   *
-   * @param prefix prefix of the query string
-   * @return URL query string
-   */
-  public String toUrlQueryString(String prefix) {
-    String suffix = "";
-    String containerSuffix = "";
-    String containerPrefix = "";
-    if (prefix == null) {
-      // style=form, explode=true, e.g. /pet?name=cat&type=manx
-      prefix = "";
-    } else {
-      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
-      prefix = prefix + "[";
-      suffix = "]";
-      containerSuffix = "]";
-      containerPrefix = "[";
     }
 
-    StringJoiner joiner = new StringJoiner("&");
+        /**
+        * Convert the instance into URL query string.
+        *
+        * @return URL query string
+        */
+        public String toUrlQueryString() {
+        return toUrlQueryString(null);
+        }
 
-    // add `type` to the URL query string
-    if (getType() != null) {
-      try {
-        joiner.add(String.format("%stype%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getType()), "UTF-8").replaceAll("\\+", "%20")));
-      } catch (UnsupportedEncodingException e) {
-        // Should never happen, UTF-8 is always supported
-        throw new RuntimeException(e);
-      }
+        /**
+        * Convert the instance into URL query string.
+        *
+        * @param prefix prefix of the query string
+        * @return URL query string
+        */
+        public String toUrlQueryString(String prefix) {
+        String suffix = "";
+        String containerSuffix = "";
+        String containerPrefix = "";
+        if (prefix == null) {
+        // style=form, explode=true, e.g. /pet?name=cat&type=manx
+        prefix = "";
+        } else {
+        // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+        prefix = prefix + "[";
+        suffix = "]";
+        containerSuffix = "]";
+        containerPrefix = "[";
+        }
+
+        StringJoiner joiner = new StringJoiner("&");
+
+            // add `type` to the URL query string
+                        if (getType() != null) {
+                        try {
+                        joiner.add(String.format("%stype%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getType()), "UTF-8").replaceAll("\\+", "%20")));
+                        } catch (UnsupportedEncodingException e) {
+                        // Should never happen, UTF-8 is always supported
+                        throw new RuntimeException(e);
+                        }
+                        }
+
+            // add `version` to the URL query string
+                        if (getVersion() != null) {
+                        try {
+                        joiner.add(String.format("%sversion%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getVersion()), "UTF-8").replaceAll("\\+", "%20")));
+                        } catch (UnsupportedEncodingException e) {
+                        // Should never happen, UTF-8 is always supported
+                        throw new RuntimeException(e);
+                        }
+                        }
+
+            // add `data` to the URL query string
+                        if (getData() != null) {
+                        try {
+                        joiner.add(String.format("%sdata%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getData()), "UTF-8").replaceAll("\\+", "%20")));
+                        } catch (UnsupportedEncodingException e) {
+                        // Should never happen, UTF-8 is always supported
+                        throw new RuntimeException(e);
+                        }
+                        }
+
+        return joiner.toString();
+        }
+
     }
-
-    // add `version` to the URL query string
-    if (getVersion() != null) {
-      try {
-        joiner.add(String.format("%sversion%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getVersion()), "UTF-8").replaceAll("\\+", "%20")));
-      } catch (UnsupportedEncodingException e) {
-        // Should never happen, UTF-8 is always supported
-        throw new RuntimeException(e);
-      }
-    }
-
-    // add `data` to the URL query string
-    if (getData() != null) {
-      try {
-        joiner.add(String.format("%sdata%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getData()), "UTF-8").replaceAll("\\+", "%20")));
-      } catch (UnsupportedEncodingException e) {
-        // Should never happen, UTF-8 is always supported
-        throw new RuntimeException(e);
-      }
-    }
-
-    return joiner.toString();
-  }
-
-}
 

@@ -21,6 +21,7 @@ import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonTypeName;
 import com.fasterxml.jackson.annotation.JsonValue;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 import com.fasterxml.jackson.annotation.JsonTypeName;
@@ -29,20 +30,20 @@ import java.net.URLEncoder;
 import java.util.StringJoiner;
 
 /**
- * ValueTypeOneOf4
- */
-@JsonPropertyOrder({
-  ValueTypeOneOf4.JSON_PROPERTY_TYPE,
-  ValueTypeOneOf4.JSON_PROPERTY_VALUE
-})
-@JsonTypeName("ValueType_oneOf_4")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+* ValueTypeOneOf4
+*/
+    @JsonPropertyOrder({
+        ValueTypeOneOf4.JSON_PROPERTY_TYPE,
+        ValueTypeOneOf4.JSON_PROPERTY_VALUE
+    })
+            @JsonTypeName("ValueType_oneOf_4")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class ValueTypeOneOf4 {
-  /**
+              /**
    * Gets or Sets type
    */
   public enum TypeEnum {
-    NUMBER_ARRAY("number_array");
+    NUMBER_ARRAY(String.valueOf("number_array"));
 
     private String value;
 
@@ -71,171 +72,172 @@ public class ValueTypeOneOf4 {
     }
   }
 
-  public static final String JSON_PROPERTY_TYPE = "type";
-  private TypeEnum type;
+        public static final String JSON_PROPERTY_TYPE = "type";
+    @javax.annotation.Nonnull
+            private TypeEnum type;
 
-  public static final String JSON_PROPERTY_VALUE = "value";
-  private List<Long> value = new ArrayList<>();
+        public static final String JSON_PROPERTY_VALUE = "value";
+    @javax.annotation.Nonnull
+            private List<Long> value = new ArrayList<>();
 
-  public ValueTypeOneOf4() {
-  }
+public ValueTypeOneOf4() {
+}
 
-  public ValueTypeOneOf4 type(TypeEnum type) {
-    
-    this.type = type;
-    return this;
-  }
+        public ValueTypeOneOf4 type(@javax.annotation.Nonnull TypeEnum type) {
+        
+        this.type = type;
+        return this;
+        }
 
-   /**
-   * Get type
-   * @return type
-  **/
-  @javax.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_TYPE)
+    /**
+        * Get type
+    * @return type
+    */
+    @javax.annotation.Nonnull
+      @JsonProperty(JSON_PROPERTY_TYPE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-  public TypeEnum getType() {
-    return type;
-  }
-
-
-  @JsonProperty(JSON_PROPERTY_TYPE)
-  @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setType(TypeEnum type) {
-    this.type = type;
-  }
-
-
-  public ValueTypeOneOf4 value(List<Long> value) {
-    
-    this.value = value;
-    return this;
-  }
-
-  public ValueTypeOneOf4 addValueItem(Long valueItem) {
-    if (this.value == null) {
-      this.value = new ArrayList<>();
+    public TypeEnum getType() {
+        return type;
     }
-    this.value.add(valueItem);
-    return this;
-  }
 
-   /**
-   * Represents an array of numbers. This is basically used for \&quot;one of the given numbers\&quot; operations eg: payment.method.amount &#x3D; (1, 2, 3)
-   * @return value
-  **/
-  @javax.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_VALUE)
+
+          @JsonProperty(JSON_PROPERTY_TYPE)
+  @JsonInclude(value = JsonInclude.Include.ALWAYS)
+  public void setType(@javax.annotation.Nonnull TypeEnum type) {
+            this.type = type;
+        }
+
+        public ValueTypeOneOf4 value(@javax.annotation.Nonnull List<Long> value) {
+        
+        this.value = value;
+        return this;
+        }
+
+            public ValueTypeOneOf4 addValueItem(Long valueItem) {
+                if (this.value == null) {
+                this.value = new ArrayList<>();
+                }
+                this.value.add(valueItem);
+                return this;
+            }
+
+    /**
+        * Represents an array of numbers. This is basically used for \&quot;one of the given numbers\&quot; operations eg: payment.method.amount &#x3D; (1, 2, 3)
+    * @return value
+    */
+    @javax.annotation.Nonnull
+      @JsonProperty(JSON_PROPERTY_VALUE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-  public List<Long> getValue() {
-    return value;
-  }
+    public List<Long> getValue() {
+        return value;
+    }
 
 
-  @JsonProperty(JSON_PROPERTY_VALUE)
+          @JsonProperty(JSON_PROPERTY_VALUE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setValue(List<Long> value) {
-    this.value = value;
-  }
+  public void setValue(@javax.annotation.Nonnull List<Long> value) {
+            this.value = value;
+        }
 
-  @Override
-  public boolean equals(Object o) {
+@Override
+public boolean equals(Object o) {
     if (this == o) {
-      return true;
+    return true;
     }
     if (o == null || getClass() != o.getClass()) {
-      return false;
+    return false;
     }
-    ValueTypeOneOf4 valueTypeOneOf4 = (ValueTypeOneOf4) o;
-    return Objects.equals(this.type, valueTypeOneOf4.type) &&
+        ValueTypeOneOf4 valueTypeOneOf4 = (ValueTypeOneOf4) o;
+        return Objects.equals(this.type, valueTypeOneOf4.type) &&
         Objects.equals(this.value, valueTypeOneOf4.value);
-  }
+}
 
-  @Override
-  public int hashCode() {
-    return Objects.hash(type, value);
-  }
+    @Override
+    public int hashCode() {
+        return Objects.hash(type, value);
+    }
 
-  @Override
-  public String toString() {
+    @Override
+    public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class ValueTypeOneOf4 {\n");
-    sb.append("    type: ").append(toIndentedString(type)).append("\n");
-    sb.append("    value: ").append(toIndentedString(value)).append("\n");
+        sb.append("    type: ").append(toIndentedString(type)).append("\n");
+        sb.append("    value: ").append(toIndentedString(value)).append("\n");
     sb.append("}");
     return sb.toString();
-  }
+    }
 
-  /**
-   * Convert the given object to string with each line indented by 4 spaces
-   * (except the first line).
-   */
-  private String toIndentedString(Object o) {
+    /**
+    * Convert the given object to string with each line indented by 4 spaces
+    * (except the first line).
+    */
+    private String toIndentedString(Object o) {
     if (o == null) {
-      return "null";
+    return "null";
     }
     return o.toString().replace("\n", "\n    ");
-  }
-
-  /**
-   * Convert the instance into URL query string.
-   *
-   * @return URL query string
-   */
-  public String toUrlQueryString() {
-    return toUrlQueryString(null);
-  }
-
-  /**
-   * Convert the instance into URL query string.
-   *
-   * @param prefix prefix of the query string
-   * @return URL query string
-   */
-  public String toUrlQueryString(String prefix) {
-    String suffix = "";
-    String containerSuffix = "";
-    String containerPrefix = "";
-    if (prefix == null) {
-      // style=form, explode=true, e.g. /pet?name=cat&type=manx
-      prefix = "";
-    } else {
-      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
-      prefix = prefix + "[";
-      suffix = "]";
-      containerSuffix = "]";
-      containerPrefix = "[";
     }
 
-    StringJoiner joiner = new StringJoiner("&");
-
-    // add `type` to the URL query string
-    if (getType() != null) {
-      try {
-        joiner.add(String.format("%stype%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getType()), "UTF-8").replaceAll("\\+", "%20")));
-      } catch (UnsupportedEncodingException e) {
-        // Should never happen, UTF-8 is always supported
-        throw new RuntimeException(e);
-      }
-    }
-
-    // add `value` to the URL query string
-    if (getValue() != null) {
-      for (int i = 0; i < getValue().size(); i++) {
-        try {
-          joiner.add(String.format("%svalue%s%s=%s", prefix, suffix,
-              "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix),
-              URLEncoder.encode(String.valueOf(getValue().get(i)), "UTF-8").replaceAll("\\+", "%20")));
-        } catch (UnsupportedEncodingException e) {
-          // Should never happen, UTF-8 is always supported
-          throw new RuntimeException(e);
+        /**
+        * Convert the instance into URL query string.
+        *
+        * @return URL query string
+        */
+        public String toUrlQueryString() {
+        return toUrlQueryString(null);
         }
-      }
+
+        /**
+        * Convert the instance into URL query string.
+        *
+        * @param prefix prefix of the query string
+        * @return URL query string
+        */
+        public String toUrlQueryString(String prefix) {
+        String suffix = "";
+        String containerSuffix = "";
+        String containerPrefix = "";
+        if (prefix == null) {
+        // style=form, explode=true, e.g. /pet?name=cat&type=manx
+        prefix = "";
+        } else {
+        // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+        prefix = prefix + "[";
+        suffix = "]";
+        containerSuffix = "]";
+        containerPrefix = "[";
+        }
+
+        StringJoiner joiner = new StringJoiner("&");
+
+            // add `type` to the URL query string
+                        if (getType() != null) {
+                        try {
+                        joiner.add(String.format("%stype%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getType()), "UTF-8").replaceAll("\\+", "%20")));
+                        } catch (UnsupportedEncodingException e) {
+                        // Should never happen, UTF-8 is always supported
+                        throw new RuntimeException(e);
+                        }
+                        }
+
+            // add `value` to the URL query string
+                        if (getValue() != null) {
+                        for (int i = 0; i < getValue().size(); i++) {
+                        try {
+                        joiner.add(String.format("%svalue%s%s=%s", prefix, suffix,
+                        "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix),
+                        URLEncoder.encode(String.valueOf(getValue().get(i)), "UTF-8").replaceAll("\\+", "%20")));
+                        } catch (UnsupportedEncodingException e) {
+                        // Should never happen, UTF-8 is always supported
+                        throw new RuntimeException(e);
+                        }
+                        }
+                        }
+
+        return joiner.toString();
+        }
+
     }
-
-    return joiner.toString();
-  }
-
-}
 

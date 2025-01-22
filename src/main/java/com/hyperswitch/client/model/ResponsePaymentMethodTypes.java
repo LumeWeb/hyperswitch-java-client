@@ -29,6 +29,7 @@ import com.hyperswitch.client.model.PaymentMethodType;
 import com.hyperswitch.client.model.RequiredFieldInfo;
 import com.hyperswitch.client.model.SurchargeDetailsResponse;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -43,406 +44,407 @@ import java.net.URLEncoder;
 import java.util.StringJoiner;
 
 /**
- * ResponsePaymentMethodTypes
- */
-@JsonPropertyOrder({
-  ResponsePaymentMethodTypes.JSON_PROPERTY_PAYMENT_METHOD_TYPE,
-  ResponsePaymentMethodTypes.JSON_PROPERTY_PAYMENT_EXPERIENCE,
-  ResponsePaymentMethodTypes.JSON_PROPERTY_CARD_NETWORKS,
-  ResponsePaymentMethodTypes.JSON_PROPERTY_BANK_NAMES,
-  ResponsePaymentMethodTypes.JSON_PROPERTY_BANK_DEBITS,
-  ResponsePaymentMethodTypes.JSON_PROPERTY_BANK_TRANSFERS,
-  ResponsePaymentMethodTypes.JSON_PROPERTY_REQUIRED_FIELDS,
-  ResponsePaymentMethodTypes.JSON_PROPERTY_SURCHARGE_DETAILS,
-  ResponsePaymentMethodTypes.JSON_PROPERTY_PM_AUTH_CONNECTOR
-})
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+* ResponsePaymentMethodTypes
+*/
+    @JsonPropertyOrder({
+        ResponsePaymentMethodTypes.JSON_PROPERTY_PAYMENT_METHOD_TYPE,
+        ResponsePaymentMethodTypes.JSON_PROPERTY_PAYMENT_EXPERIENCE,
+        ResponsePaymentMethodTypes.JSON_PROPERTY_CARD_NETWORKS,
+        ResponsePaymentMethodTypes.JSON_PROPERTY_BANK_NAMES,
+        ResponsePaymentMethodTypes.JSON_PROPERTY_BANK_DEBITS,
+        ResponsePaymentMethodTypes.JSON_PROPERTY_BANK_TRANSFERS,
+        ResponsePaymentMethodTypes.JSON_PROPERTY_REQUIRED_FIELDS,
+        ResponsePaymentMethodTypes.JSON_PROPERTY_SURCHARGE_DETAILS,
+        ResponsePaymentMethodTypes.JSON_PROPERTY_PM_AUTH_CONNECTOR
+    })
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class ResponsePaymentMethodTypes {
-  public static final String JSON_PROPERTY_PAYMENT_METHOD_TYPE = "payment_method_type";
-  private PaymentMethodType paymentMethodType;
+        public static final String JSON_PROPERTY_PAYMENT_METHOD_TYPE = "payment_method_type";
+    @javax.annotation.Nonnull
+            private PaymentMethodType paymentMethodType;
 
-  public static final String JSON_PROPERTY_PAYMENT_EXPERIENCE = "payment_experience";
-  private JsonNullable<List<PaymentExperienceTypes>> paymentExperience = JsonNullable.<List<PaymentExperienceTypes>>undefined();
+        public static final String JSON_PROPERTY_PAYMENT_EXPERIENCE = "payment_experience";
+    @javax.annotation.Nullable
+            private JsonNullable<List<PaymentExperienceTypes>> paymentExperience = JsonNullable.<List<PaymentExperienceTypes>>undefined();
 
-  public static final String JSON_PROPERTY_CARD_NETWORKS = "card_networks";
-  private JsonNullable<List<CardNetworkTypes>> cardNetworks = JsonNullable.<List<CardNetworkTypes>>undefined();
+        public static final String JSON_PROPERTY_CARD_NETWORKS = "card_networks";
+    @javax.annotation.Nullable
+            private JsonNullable<List<CardNetworkTypes>> cardNetworks = JsonNullable.<List<CardNetworkTypes>>undefined();
 
-  public static final String JSON_PROPERTY_BANK_NAMES = "bank_names";
-  private JsonNullable<List<BankCodeResponse>> bankNames = JsonNullable.<List<BankCodeResponse>>undefined();
+        public static final String JSON_PROPERTY_BANK_NAMES = "bank_names";
+    @javax.annotation.Nullable
+            private JsonNullable<List<BankCodeResponse>> bankNames = JsonNullable.<List<BankCodeResponse>>undefined();
 
-  public static final String JSON_PROPERTY_BANK_DEBITS = "bank_debits";
-  private JsonNullable<BankDebitTypes> bankDebits = JsonNullable.<BankDebitTypes>undefined();
+        public static final String JSON_PROPERTY_BANK_DEBITS = "bank_debits";
+    @javax.annotation.Nullable
+            private JsonNullable<BankDebitTypes> bankDebits = JsonNullable.<BankDebitTypes>undefined();
 
-  public static final String JSON_PROPERTY_BANK_TRANSFERS = "bank_transfers";
-  private JsonNullable<BankTransferTypes> bankTransfers = JsonNullable.<BankTransferTypes>undefined();
+        public static final String JSON_PROPERTY_BANK_TRANSFERS = "bank_transfers";
+    @javax.annotation.Nullable
+            private JsonNullable<BankTransferTypes> bankTransfers = JsonNullable.<BankTransferTypes>undefined();
 
-  public static final String JSON_PROPERTY_REQUIRED_FIELDS = "required_fields";
-  private JsonNullable<Map<String, RequiredFieldInfo>> requiredFields = JsonNullable.<Map<String, RequiredFieldInfo>>undefined();
+        public static final String JSON_PROPERTY_REQUIRED_FIELDS = "required_fields";
+    @javax.annotation.Nullable
+            private JsonNullable<Map<String, RequiredFieldInfo>> requiredFields = JsonNullable.<Map<String, RequiredFieldInfo>>undefined();
 
-  public static final String JSON_PROPERTY_SURCHARGE_DETAILS = "surcharge_details";
-  private JsonNullable<SurchargeDetailsResponse> surchargeDetails = JsonNullable.<SurchargeDetailsResponse>undefined();
+        public static final String JSON_PROPERTY_SURCHARGE_DETAILS = "surcharge_details";
+    @javax.annotation.Nullable
+            private JsonNullable<SurchargeDetailsResponse> surchargeDetails = JsonNullable.<SurchargeDetailsResponse>undefined();
 
-  public static final String JSON_PROPERTY_PM_AUTH_CONNECTOR = "pm_auth_connector";
-  private JsonNullable<String> pmAuthConnector = JsonNullable.<String>undefined();
+        public static final String JSON_PROPERTY_PM_AUTH_CONNECTOR = "pm_auth_connector";
+    @javax.annotation.Nullable
+            private JsonNullable<String> pmAuthConnector = JsonNullable.<String>undefined();
 
-  public ResponsePaymentMethodTypes() {
-  }
+public ResponsePaymentMethodTypes() {
+}
 
-  public ResponsePaymentMethodTypes paymentMethodType(PaymentMethodType paymentMethodType) {
-    
-    this.paymentMethodType = paymentMethodType;
-    return this;
-  }
+        public ResponsePaymentMethodTypes paymentMethodType(@javax.annotation.Nonnull PaymentMethodType paymentMethodType) {
+        
+        this.paymentMethodType = paymentMethodType;
+        return this;
+        }
 
-   /**
-   * Get paymentMethodType
-   * @return paymentMethodType
-  **/
-  @javax.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_PAYMENT_METHOD_TYPE)
+    /**
+        * Get paymentMethodType
+    * @return paymentMethodType
+    */
+    @javax.annotation.Nonnull
+      @JsonProperty(JSON_PROPERTY_PAYMENT_METHOD_TYPE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-  public PaymentMethodType getPaymentMethodType() {
-    return paymentMethodType;
-  }
+    public PaymentMethodType getPaymentMethodType() {
+        return paymentMethodType;
+    }
 
 
-  @JsonProperty(JSON_PROPERTY_PAYMENT_METHOD_TYPE)
+          @JsonProperty(JSON_PROPERTY_PAYMENT_METHOD_TYPE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setPaymentMethodType(PaymentMethodType paymentMethodType) {
-    this.paymentMethodType = paymentMethodType;
-  }
+  public void setPaymentMethodType(@javax.annotation.Nonnull PaymentMethodType paymentMethodType) {
+            this.paymentMethodType = paymentMethodType;
+        }
 
+        public ResponsePaymentMethodTypes paymentExperience(@javax.annotation.Nullable List<PaymentExperienceTypes> paymentExperience) {
+        this.paymentExperience = JsonNullable.<List<PaymentExperienceTypes>>of(paymentExperience);
+        
+        return this;
+        }
 
-  public ResponsePaymentMethodTypes paymentExperience(List<PaymentExperienceTypes> paymentExperience) {
-    this.paymentExperience = JsonNullable.<List<PaymentExperienceTypes>>of(paymentExperience);
+            public ResponsePaymentMethodTypes addPaymentExperienceItem(PaymentExperienceTypes paymentExperienceItem) {
+                if (this.paymentExperience == null || !this.paymentExperience.isPresent()) {
+                this.paymentExperience = JsonNullable.<List<PaymentExperienceTypes>>of(new ArrayList<>());
+                }
+                try {
+                this.paymentExperience.get().add(paymentExperienceItem);
+                } catch (java.util.NoSuchElementException e) {
+                // this can never happen, as we make sure above that the value is present
+                }
+                return this;
+            }
+
+    /**
+        * The list of payment experiences enabled, if applicable for a payment method type
+    * @return paymentExperience
+    */
+    @javax.annotation.Nullable
+        @JsonIgnore
     
-    return this;
-  }
-
-  public ResponsePaymentMethodTypes addPaymentExperienceItem(PaymentExperienceTypes paymentExperienceItem) {
-    if (this.paymentExperience == null || !this.paymentExperience.isPresent()) {
-      this.paymentExperience = JsonNullable.<List<PaymentExperienceTypes>>of(new ArrayList<>());
+    public List<PaymentExperienceTypes> getPaymentExperience() {
+                return paymentExperience.orElse(null);
     }
-    try {
-      this.paymentExperience.get().add(paymentExperienceItem);
-    } catch (java.util.NoSuchElementException e) {
-      // this can never happen, as we make sure above that the value is present
-    }
-    return this;
-  }
 
-   /**
-   * The list of payment experiences enabled, if applicable for a payment method type
-   * @return paymentExperience
-  **/
-  @javax.annotation.Nullable
-  @JsonIgnore
-
-  public List<PaymentExperienceTypes> getPaymentExperience() {
-        return paymentExperience.orElse(null);
-  }
-
-  @JsonProperty(JSON_PROPERTY_PAYMENT_EXPERIENCE)
+          @JsonProperty(JSON_PROPERTY_PAYMENT_EXPERIENCE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-  public JsonNullable<List<PaymentExperienceTypes>> getPaymentExperience_JsonNullable() {
-    return paymentExperience;
-  }
-  
-  @JsonProperty(JSON_PROPERTY_PAYMENT_EXPERIENCE)
-  public void setPaymentExperience_JsonNullable(JsonNullable<List<PaymentExperienceTypes>> paymentExperience) {
-    this.paymentExperience = paymentExperience;
-  }
-
-  public void setPaymentExperience(List<PaymentExperienceTypes> paymentExperience) {
-    this.paymentExperience = JsonNullable.<List<PaymentExperienceTypes>>of(paymentExperience);
-  }
-
-
-  public ResponsePaymentMethodTypes cardNetworks(List<CardNetworkTypes> cardNetworks) {
-    this.cardNetworks = JsonNullable.<List<CardNetworkTypes>>of(cardNetworks);
+        public JsonNullable<List<PaymentExperienceTypes>> getPaymentExperience_JsonNullable() {
+        return paymentExperience;
+        }
     
-    return this;
-  }
+        @JsonProperty(JSON_PROPERTY_PAYMENT_EXPERIENCE)
+        public void setPaymentExperience_JsonNullable(JsonNullable<List<PaymentExperienceTypes>> paymentExperience) {
+        this.paymentExperience = paymentExperience;
+        }
 
-  public ResponsePaymentMethodTypes addCardNetworksItem(CardNetworkTypes cardNetworksItem) {
-    if (this.cardNetworks == null || !this.cardNetworks.isPresent()) {
-      this.cardNetworks = JsonNullable.<List<CardNetworkTypes>>of(new ArrayList<>());
+          public void setPaymentExperience(@javax.annotation.Nullable List<PaymentExperienceTypes> paymentExperience) {
+            this.paymentExperience = JsonNullable.<List<PaymentExperienceTypes>>of(paymentExperience);
+        }
+
+        public ResponsePaymentMethodTypes cardNetworks(@javax.annotation.Nullable List<CardNetworkTypes> cardNetworks) {
+        this.cardNetworks = JsonNullable.<List<CardNetworkTypes>>of(cardNetworks);
+        
+        return this;
+        }
+
+            public ResponsePaymentMethodTypes addCardNetworksItem(CardNetworkTypes cardNetworksItem) {
+                if (this.cardNetworks == null || !this.cardNetworks.isPresent()) {
+                this.cardNetworks = JsonNullable.<List<CardNetworkTypes>>of(new ArrayList<>());
+                }
+                try {
+                this.cardNetworks.get().add(cardNetworksItem);
+                } catch (java.util.NoSuchElementException e) {
+                // this can never happen, as we make sure above that the value is present
+                }
+                return this;
+            }
+
+    /**
+        * The list of card networks enabled, if applicable for a payment method type
+    * @return cardNetworks
+    */
+    @javax.annotation.Nullable
+        @JsonIgnore
+    
+    public List<CardNetworkTypes> getCardNetworks() {
+                return cardNetworks.orElse(null);
     }
-    try {
-      this.cardNetworks.get().add(cardNetworksItem);
-    } catch (java.util.NoSuchElementException e) {
-      // this can never happen, as we make sure above that the value is present
+
+          @JsonProperty(JSON_PROPERTY_CARD_NETWORKS)
+  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
+
+        public JsonNullable<List<CardNetworkTypes>> getCardNetworks_JsonNullable() {
+        return cardNetworks;
+        }
+    
+        @JsonProperty(JSON_PROPERTY_CARD_NETWORKS)
+        public void setCardNetworks_JsonNullable(JsonNullable<List<CardNetworkTypes>> cardNetworks) {
+        this.cardNetworks = cardNetworks;
+        }
+
+          public void setCardNetworks(@javax.annotation.Nullable List<CardNetworkTypes> cardNetworks) {
+            this.cardNetworks = JsonNullable.<List<CardNetworkTypes>>of(cardNetworks);
+        }
+
+        public ResponsePaymentMethodTypes bankNames(@javax.annotation.Nullable List<BankCodeResponse> bankNames) {
+        this.bankNames = JsonNullable.<List<BankCodeResponse>>of(bankNames);
+        
+        return this;
+        }
+
+            public ResponsePaymentMethodTypes addBankNamesItem(BankCodeResponse bankNamesItem) {
+                if (this.bankNames == null || !this.bankNames.isPresent()) {
+                this.bankNames = JsonNullable.<List<BankCodeResponse>>of(new ArrayList<>());
+                }
+                try {
+                this.bankNames.get().add(bankNamesItem);
+                } catch (java.util.NoSuchElementException e) {
+                // this can never happen, as we make sure above that the value is present
+                }
+                return this;
+            }
+
+    /**
+        * The list of banks enabled, if applicable for a payment method type
+    * @return bankNames
+    */
+    @javax.annotation.Nullable
+        @JsonIgnore
+    
+    public List<BankCodeResponse> getBankNames() {
+                return bankNames.orElse(null);
     }
-    return this;
-  }
 
-   /**
-   * The list of card networks enabled, if applicable for a payment method type
-   * @return cardNetworks
-  **/
-  @javax.annotation.Nullable
-  @JsonIgnore
-
-  public List<CardNetworkTypes> getCardNetworks() {
-        return cardNetworks.orElse(null);
-  }
-
-  @JsonProperty(JSON_PROPERTY_CARD_NETWORKS)
+          @JsonProperty(JSON_PROPERTY_BANK_NAMES)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-  public JsonNullable<List<CardNetworkTypes>> getCardNetworks_JsonNullable() {
-    return cardNetworks;
-  }
-  
-  @JsonProperty(JSON_PROPERTY_CARD_NETWORKS)
-  public void setCardNetworks_JsonNullable(JsonNullable<List<CardNetworkTypes>> cardNetworks) {
-    this.cardNetworks = cardNetworks;
-  }
-
-  public void setCardNetworks(List<CardNetworkTypes> cardNetworks) {
-    this.cardNetworks = JsonNullable.<List<CardNetworkTypes>>of(cardNetworks);
-  }
-
-
-  public ResponsePaymentMethodTypes bankNames(List<BankCodeResponse> bankNames) {
-    this.bankNames = JsonNullable.<List<BankCodeResponse>>of(bankNames);
+        public JsonNullable<List<BankCodeResponse>> getBankNames_JsonNullable() {
+        return bankNames;
+        }
     
-    return this;
-  }
+        @JsonProperty(JSON_PROPERTY_BANK_NAMES)
+        public void setBankNames_JsonNullable(JsonNullable<List<BankCodeResponse>> bankNames) {
+        this.bankNames = bankNames;
+        }
 
-  public ResponsePaymentMethodTypes addBankNamesItem(BankCodeResponse bankNamesItem) {
-    if (this.bankNames == null || !this.bankNames.isPresent()) {
-      this.bankNames = JsonNullable.<List<BankCodeResponse>>of(new ArrayList<>());
+          public void setBankNames(@javax.annotation.Nullable List<BankCodeResponse> bankNames) {
+            this.bankNames = JsonNullable.<List<BankCodeResponse>>of(bankNames);
+        }
+
+        public ResponsePaymentMethodTypes bankDebits(@javax.annotation.Nullable BankDebitTypes bankDebits) {
+        this.bankDebits = JsonNullable.<BankDebitTypes>of(bankDebits);
+        
+        return this;
+        }
+
+    /**
+        * Get bankDebits
+    * @return bankDebits
+    */
+    @javax.annotation.Nullable
+        @JsonIgnore
+    
+    public BankDebitTypes getBankDebits() {
+                return bankDebits.orElse(null);
     }
-    try {
-      this.bankNames.get().add(bankNamesItem);
-    } catch (java.util.NoSuchElementException e) {
-      // this can never happen, as we make sure above that the value is present
+
+          @JsonProperty(JSON_PROPERTY_BANK_DEBITS)
+  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
+
+        public JsonNullable<BankDebitTypes> getBankDebits_JsonNullable() {
+        return bankDebits;
+        }
+    
+        @JsonProperty(JSON_PROPERTY_BANK_DEBITS)
+        public void setBankDebits_JsonNullable(JsonNullable<BankDebitTypes> bankDebits) {
+        this.bankDebits = bankDebits;
+        }
+
+          public void setBankDebits(@javax.annotation.Nullable BankDebitTypes bankDebits) {
+            this.bankDebits = JsonNullable.<BankDebitTypes>of(bankDebits);
+        }
+
+        public ResponsePaymentMethodTypes bankTransfers(@javax.annotation.Nullable BankTransferTypes bankTransfers) {
+        this.bankTransfers = JsonNullable.<BankTransferTypes>of(bankTransfers);
+        
+        return this;
+        }
+
+    /**
+        * Get bankTransfers
+    * @return bankTransfers
+    */
+    @javax.annotation.Nullable
+        @JsonIgnore
+    
+    public BankTransferTypes getBankTransfers() {
+                return bankTransfers.orElse(null);
     }
-    return this;
-  }
 
-   /**
-   * The list of banks enabled, if applicable for a payment method type
-   * @return bankNames
-  **/
-  @javax.annotation.Nullable
-  @JsonIgnore
-
-  public List<BankCodeResponse> getBankNames() {
-        return bankNames.orElse(null);
-  }
-
-  @JsonProperty(JSON_PROPERTY_BANK_NAMES)
+          @JsonProperty(JSON_PROPERTY_BANK_TRANSFERS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-  public JsonNullable<List<BankCodeResponse>> getBankNames_JsonNullable() {
-    return bankNames;
-  }
-  
-  @JsonProperty(JSON_PROPERTY_BANK_NAMES)
-  public void setBankNames_JsonNullable(JsonNullable<List<BankCodeResponse>> bankNames) {
-    this.bankNames = bankNames;
-  }
-
-  public void setBankNames(List<BankCodeResponse> bankNames) {
-    this.bankNames = JsonNullable.<List<BankCodeResponse>>of(bankNames);
-  }
-
-
-  public ResponsePaymentMethodTypes bankDebits(BankDebitTypes bankDebits) {
-    this.bankDebits = JsonNullable.<BankDebitTypes>of(bankDebits);
+        public JsonNullable<BankTransferTypes> getBankTransfers_JsonNullable() {
+        return bankTransfers;
+        }
     
-    return this;
-  }
+        @JsonProperty(JSON_PROPERTY_BANK_TRANSFERS)
+        public void setBankTransfers_JsonNullable(JsonNullable<BankTransferTypes> bankTransfers) {
+        this.bankTransfers = bankTransfers;
+        }
 
-   /**
-   * Get bankDebits
-   * @return bankDebits
-  **/
-  @javax.annotation.Nullable
-  @JsonIgnore
+          public void setBankTransfers(@javax.annotation.Nullable BankTransferTypes bankTransfers) {
+            this.bankTransfers = JsonNullable.<BankTransferTypes>of(bankTransfers);
+        }
 
-  public BankDebitTypes getBankDebits() {
-        return bankDebits.orElse(null);
-  }
+        public ResponsePaymentMethodTypes requiredFields(@javax.annotation.Nullable Map<String, RequiredFieldInfo> requiredFields) {
+        this.requiredFields = JsonNullable.<Map<String, RequiredFieldInfo>>of(requiredFields);
+        
+        return this;
+        }
 
-  @JsonProperty(JSON_PROPERTY_BANK_DEBITS)
-  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
+            public ResponsePaymentMethodTypes putRequiredFieldsItem(String key, RequiredFieldInfo requiredFieldsItem) {
+                if (this.requiredFields == null || !this.requiredFields.isPresent()) {
+                this.requiredFields = JsonNullable.<Map<String, RequiredFieldInfo>>of(new HashMap<>());
+                }
+                try {
+                this.requiredFields.get().put(key, requiredFieldsItem);
+                } catch (java.util.NoSuchElementException e) {
+                // this can never happen, as we make sure above that the value is present
+                }
+                return this;
+            }
 
-  public JsonNullable<BankDebitTypes> getBankDebits_JsonNullable() {
-    return bankDebits;
-  }
-  
-  @JsonProperty(JSON_PROPERTY_BANK_DEBITS)
-  public void setBankDebits_JsonNullable(JsonNullable<BankDebitTypes> bankDebits) {
-    this.bankDebits = bankDebits;
-  }
-
-  public void setBankDebits(BankDebitTypes bankDebits) {
-    this.bankDebits = JsonNullable.<BankDebitTypes>of(bankDebits);
-  }
-
-
-  public ResponsePaymentMethodTypes bankTransfers(BankTransferTypes bankTransfers) {
-    this.bankTransfers = JsonNullable.<BankTransferTypes>of(bankTransfers);
+    /**
+        * Required fields for the payment_method_type.
+    * @return requiredFields
+    */
+    @javax.annotation.Nullable
+        @JsonIgnore
     
-    return this;
-  }
-
-   /**
-   * Get bankTransfers
-   * @return bankTransfers
-  **/
-  @javax.annotation.Nullable
-  @JsonIgnore
-
-  public BankTransferTypes getBankTransfers() {
-        return bankTransfers.orElse(null);
-  }
-
-  @JsonProperty(JSON_PROPERTY_BANK_TRANSFERS)
-  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
-  public JsonNullable<BankTransferTypes> getBankTransfers_JsonNullable() {
-    return bankTransfers;
-  }
-  
-  @JsonProperty(JSON_PROPERTY_BANK_TRANSFERS)
-  public void setBankTransfers_JsonNullable(JsonNullable<BankTransferTypes> bankTransfers) {
-    this.bankTransfers = bankTransfers;
-  }
-
-  public void setBankTransfers(BankTransferTypes bankTransfers) {
-    this.bankTransfers = JsonNullable.<BankTransferTypes>of(bankTransfers);
-  }
-
-
-  public ResponsePaymentMethodTypes requiredFields(Map<String, RequiredFieldInfo> requiredFields) {
-    this.requiredFields = JsonNullable.<Map<String, RequiredFieldInfo>>of(requiredFields);
-    
-    return this;
-  }
-
-  public ResponsePaymentMethodTypes putRequiredFieldsItem(String key, RequiredFieldInfo requiredFieldsItem) {
-    if (this.requiredFields == null || !this.requiredFields.isPresent()) {
-      this.requiredFields = JsonNullable.<Map<String, RequiredFieldInfo>>of(new HashMap<>());
+    public Map<String, RequiredFieldInfo> getRequiredFields() {
+                return requiredFields.orElse(null);
     }
-    try {
-      this.requiredFields.get().put(key, requiredFieldsItem);
-    } catch (java.util.NoSuchElementException e) {
-      // this can never happen, as we make sure above that the value is present
+
+          @JsonProperty(JSON_PROPERTY_REQUIRED_FIELDS)
+  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
+
+        public JsonNullable<Map<String, RequiredFieldInfo>> getRequiredFields_JsonNullable() {
+        return requiredFields;
+        }
+    
+        @JsonProperty(JSON_PROPERTY_REQUIRED_FIELDS)
+        public void setRequiredFields_JsonNullable(JsonNullable<Map<String, RequiredFieldInfo>> requiredFields) {
+        this.requiredFields = requiredFields;
+        }
+
+          public void setRequiredFields(@javax.annotation.Nullable Map<String, RequiredFieldInfo> requiredFields) {
+            this.requiredFields = JsonNullable.<Map<String, RequiredFieldInfo>>of(requiredFields);
+        }
+
+        public ResponsePaymentMethodTypes surchargeDetails(@javax.annotation.Nullable SurchargeDetailsResponse surchargeDetails) {
+        this.surchargeDetails = JsonNullable.<SurchargeDetailsResponse>of(surchargeDetails);
+        
+        return this;
+        }
+
+    /**
+        * Get surchargeDetails
+    * @return surchargeDetails
+    */
+    @javax.annotation.Nullable
+        @JsonIgnore
+    
+    public SurchargeDetailsResponse getSurchargeDetails() {
+                return surchargeDetails.orElse(null);
     }
-    return this;
-  }
 
-   /**
-   * Required fields for the payment_method_type.
-   * @return requiredFields
-  **/
-  @javax.annotation.Nullable
-  @JsonIgnore
-
-  public Map<String, RequiredFieldInfo> getRequiredFields() {
-        return requiredFields.orElse(null);
-  }
-
-  @JsonProperty(JSON_PROPERTY_REQUIRED_FIELDS)
+          @JsonProperty(JSON_PROPERTY_SURCHARGE_DETAILS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-  public JsonNullable<Map<String, RequiredFieldInfo>> getRequiredFields_JsonNullable() {
-    return requiredFields;
-  }
-  
-  @JsonProperty(JSON_PROPERTY_REQUIRED_FIELDS)
-  public void setRequiredFields_JsonNullable(JsonNullable<Map<String, RequiredFieldInfo>> requiredFields) {
-    this.requiredFields = requiredFields;
-  }
-
-  public void setRequiredFields(Map<String, RequiredFieldInfo> requiredFields) {
-    this.requiredFields = JsonNullable.<Map<String, RequiredFieldInfo>>of(requiredFields);
-  }
-
-
-  public ResponsePaymentMethodTypes surchargeDetails(SurchargeDetailsResponse surchargeDetails) {
-    this.surchargeDetails = JsonNullable.<SurchargeDetailsResponse>of(surchargeDetails);
+        public JsonNullable<SurchargeDetailsResponse> getSurchargeDetails_JsonNullable() {
+        return surchargeDetails;
+        }
     
-    return this;
-  }
+        @JsonProperty(JSON_PROPERTY_SURCHARGE_DETAILS)
+        public void setSurchargeDetails_JsonNullable(JsonNullable<SurchargeDetailsResponse> surchargeDetails) {
+        this.surchargeDetails = surchargeDetails;
+        }
 
-   /**
-   * Get surchargeDetails
-   * @return surchargeDetails
-  **/
-  @javax.annotation.Nullable
-  @JsonIgnore
+          public void setSurchargeDetails(@javax.annotation.Nullable SurchargeDetailsResponse surchargeDetails) {
+            this.surchargeDetails = JsonNullable.<SurchargeDetailsResponse>of(surchargeDetails);
+        }
 
-  public SurchargeDetailsResponse getSurchargeDetails() {
-        return surchargeDetails.orElse(null);
-  }
+        public ResponsePaymentMethodTypes pmAuthConnector(@javax.annotation.Nullable String pmAuthConnector) {
+        this.pmAuthConnector = JsonNullable.<String>of(pmAuthConnector);
+        
+        return this;
+        }
 
-  @JsonProperty(JSON_PROPERTY_SURCHARGE_DETAILS)
-  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
-  public JsonNullable<SurchargeDetailsResponse> getSurchargeDetails_JsonNullable() {
-    return surchargeDetails;
-  }
-  
-  @JsonProperty(JSON_PROPERTY_SURCHARGE_DETAILS)
-  public void setSurchargeDetails_JsonNullable(JsonNullable<SurchargeDetailsResponse> surchargeDetails) {
-    this.surchargeDetails = surchargeDetails;
-  }
-
-  public void setSurchargeDetails(SurchargeDetailsResponse surchargeDetails) {
-    this.surchargeDetails = JsonNullable.<SurchargeDetailsResponse>of(surchargeDetails);
-  }
-
-
-  public ResponsePaymentMethodTypes pmAuthConnector(String pmAuthConnector) {
-    this.pmAuthConnector = JsonNullable.<String>of(pmAuthConnector);
+    /**
+        * auth service connector label for this payment method type, if exists
+    * @return pmAuthConnector
+    */
+    @javax.annotation.Nullable
+        @JsonIgnore
     
-    return this;
-  }
+    public String getPmAuthConnector() {
+                return pmAuthConnector.orElse(null);
+    }
 
-   /**
-   * auth service connector label for this payment method type, if exists
-   * @return pmAuthConnector
-  **/
-  @javax.annotation.Nullable
-  @JsonIgnore
-
-  public String getPmAuthConnector() {
-        return pmAuthConnector.orElse(null);
-  }
-
-  @JsonProperty(JSON_PROPERTY_PM_AUTH_CONNECTOR)
+          @JsonProperty(JSON_PROPERTY_PM_AUTH_CONNECTOR)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-  public JsonNullable<String> getPmAuthConnector_JsonNullable() {
-    return pmAuthConnector;
-  }
-  
-  @JsonProperty(JSON_PROPERTY_PM_AUTH_CONNECTOR)
-  public void setPmAuthConnector_JsonNullable(JsonNullable<String> pmAuthConnector) {
-    this.pmAuthConnector = pmAuthConnector;
-  }
+        public JsonNullable<String> getPmAuthConnector_JsonNullable() {
+        return pmAuthConnector;
+        }
+    
+        @JsonProperty(JSON_PROPERTY_PM_AUTH_CONNECTOR)
+        public void setPmAuthConnector_JsonNullable(JsonNullable<String> pmAuthConnector) {
+        this.pmAuthConnector = pmAuthConnector;
+        }
 
-  public void setPmAuthConnector(String pmAuthConnector) {
-    this.pmAuthConnector = JsonNullable.<String>of(pmAuthConnector);
-  }
+          public void setPmAuthConnector(@javax.annotation.Nullable String pmAuthConnector) {
+            this.pmAuthConnector = JsonNullable.<String>of(pmAuthConnector);
+        }
 
-  @Override
-  public boolean equals(Object o) {
+@Override
+public boolean equals(Object o) {
     if (this == o) {
-      return true;
+    return true;
     }
     if (o == null || getClass() != o.getClass()) {
-      return false;
+    return false;
     }
-    ResponsePaymentMethodTypes responsePaymentMethodTypes = (ResponsePaymentMethodTypes) o;
-    return Objects.equals(this.paymentMethodType, responsePaymentMethodTypes.paymentMethodType) &&
+        ResponsePaymentMethodTypes responsePaymentMethodTypes = (ResponsePaymentMethodTypes) o;
+        return Objects.equals(this.paymentMethodType, responsePaymentMethodTypes.paymentMethodType) &&
         equalsNullable(this.paymentExperience, responsePaymentMethodTypes.paymentExperience) &&
         equalsNullable(this.cardNetworks, responsePaymentMethodTypes.cardNetworks) &&
         equalsNullable(this.bankNames, responsePaymentMethodTypes.bankNames) &&
@@ -451,161 +453,161 @@ public class ResponsePaymentMethodTypes {
         equalsNullable(this.requiredFields, responsePaymentMethodTypes.requiredFields) &&
         equalsNullable(this.surchargeDetails, responsePaymentMethodTypes.surchargeDetails) &&
         equalsNullable(this.pmAuthConnector, responsePaymentMethodTypes.pmAuthConnector);
-  }
+}
 
-  private static <T> boolean equalsNullable(JsonNullable<T> a, JsonNullable<T> b) {
-    return a == b || (a != null && b != null && a.isPresent() && b.isPresent() && Objects.deepEquals(a.get(), b.get()));
-  }
+    private static <T> boolean equalsNullable(JsonNullable<T> a, JsonNullable<T> b) {
+        return a == b || (a != null && b != null && a.isPresent() && b.isPresent() && Objects.deepEquals(a.get(), b.get()));
+        }
 
-  @Override
-  public int hashCode() {
-    return Objects.hash(paymentMethodType, hashCodeNullable(paymentExperience), hashCodeNullable(cardNetworks), hashCodeNullable(bankNames), hashCodeNullable(bankDebits), hashCodeNullable(bankTransfers), hashCodeNullable(requiredFields), hashCodeNullable(surchargeDetails), hashCodeNullable(pmAuthConnector));
-  }
-
-  private static <T> int hashCodeNullable(JsonNullable<T> a) {
-    if (a == null) {
-      return 1;
+    @Override
+    public int hashCode() {
+        return Objects.hash(paymentMethodType, hashCodeNullable(paymentExperience), hashCodeNullable(cardNetworks), hashCodeNullable(bankNames), hashCodeNullable(bankDebits), hashCodeNullable(bankTransfers), hashCodeNullable(requiredFields), hashCodeNullable(surchargeDetails), hashCodeNullable(pmAuthConnector));
     }
-    return a.isPresent() ? Arrays.deepHashCode(new Object[]{a.get()}) : 31;
-  }
 
-  @Override
-  public String toString() {
+        private static <T> int hashCodeNullable(JsonNullable<T> a) {
+        if (a == null) {
+        return 1;
+        }
+        return a.isPresent() ? Arrays.deepHashCode(new Object[]{a.get()}) : 31;
+        }
+
+    @Override
+    public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class ResponsePaymentMethodTypes {\n");
-    sb.append("    paymentMethodType: ").append(toIndentedString(paymentMethodType)).append("\n");
-    sb.append("    paymentExperience: ").append(toIndentedString(paymentExperience)).append("\n");
-    sb.append("    cardNetworks: ").append(toIndentedString(cardNetworks)).append("\n");
-    sb.append("    bankNames: ").append(toIndentedString(bankNames)).append("\n");
-    sb.append("    bankDebits: ").append(toIndentedString(bankDebits)).append("\n");
-    sb.append("    bankTransfers: ").append(toIndentedString(bankTransfers)).append("\n");
-    sb.append("    requiredFields: ").append(toIndentedString(requiredFields)).append("\n");
-    sb.append("    surchargeDetails: ").append(toIndentedString(surchargeDetails)).append("\n");
-    sb.append("    pmAuthConnector: ").append(toIndentedString(pmAuthConnector)).append("\n");
+        sb.append("    paymentMethodType: ").append(toIndentedString(paymentMethodType)).append("\n");
+        sb.append("    paymentExperience: ").append(toIndentedString(paymentExperience)).append("\n");
+        sb.append("    cardNetworks: ").append(toIndentedString(cardNetworks)).append("\n");
+        sb.append("    bankNames: ").append(toIndentedString(bankNames)).append("\n");
+        sb.append("    bankDebits: ").append(toIndentedString(bankDebits)).append("\n");
+        sb.append("    bankTransfers: ").append(toIndentedString(bankTransfers)).append("\n");
+        sb.append("    requiredFields: ").append(toIndentedString(requiredFields)).append("\n");
+        sb.append("    surchargeDetails: ").append(toIndentedString(surchargeDetails)).append("\n");
+        sb.append("    pmAuthConnector: ").append(toIndentedString(pmAuthConnector)).append("\n");
     sb.append("}");
     return sb.toString();
-  }
+    }
 
-  /**
-   * Convert the given object to string with each line indented by 4 spaces
-   * (except the first line).
-   */
-  private String toIndentedString(Object o) {
+    /**
+    * Convert the given object to string with each line indented by 4 spaces
+    * (except the first line).
+    */
+    private String toIndentedString(Object o) {
     if (o == null) {
-      return "null";
+    return "null";
     }
     return o.toString().replace("\n", "\n    ");
-  }
-
-  /**
-   * Convert the instance into URL query string.
-   *
-   * @return URL query string
-   */
-  public String toUrlQueryString() {
-    return toUrlQueryString(null);
-  }
-
-  /**
-   * Convert the instance into URL query string.
-   *
-   * @param prefix prefix of the query string
-   * @return URL query string
-   */
-  public String toUrlQueryString(String prefix) {
-    String suffix = "";
-    String containerSuffix = "";
-    String containerPrefix = "";
-    if (prefix == null) {
-      // style=form, explode=true, e.g. /pet?name=cat&type=manx
-      prefix = "";
-    } else {
-      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
-      prefix = prefix + "[";
-      suffix = "]";
-      containerSuffix = "]";
-      containerPrefix = "[";
     }
 
-    StringJoiner joiner = new StringJoiner("&");
-
-    // add `payment_method_type` to the URL query string
-    if (getPaymentMethodType() != null) {
-      try {
-        joiner.add(String.format("%spayment_method_type%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getPaymentMethodType()), "UTF-8").replaceAll("\\+", "%20")));
-      } catch (UnsupportedEncodingException e) {
-        // Should never happen, UTF-8 is always supported
-        throw new RuntimeException(e);
-      }
-    }
-
-    // add `payment_experience` to the URL query string
-    if (getPaymentExperience() != null) {
-      for (int i = 0; i < getPaymentExperience().size(); i++) {
-        if (getPaymentExperience().get(i) != null) {
-          joiner.add(getPaymentExperience().get(i).toUrlQueryString(String.format("%spayment_experience%s%s", prefix, suffix,
-              "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix))));
+        /**
+        * Convert the instance into URL query string.
+        *
+        * @return URL query string
+        */
+        public String toUrlQueryString() {
+        return toUrlQueryString(null);
         }
-      }
-    }
 
-    // add `card_networks` to the URL query string
-    if (getCardNetworks() != null) {
-      for (int i = 0; i < getCardNetworks().size(); i++) {
-        if (getCardNetworks().get(i) != null) {
-          joiner.add(getCardNetworks().get(i).toUrlQueryString(String.format("%scard_networks%s%s", prefix, suffix,
-              "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix))));
+        /**
+        * Convert the instance into URL query string.
+        *
+        * @param prefix prefix of the query string
+        * @return URL query string
+        */
+        public String toUrlQueryString(String prefix) {
+        String suffix = "";
+        String containerSuffix = "";
+        String containerPrefix = "";
+        if (prefix == null) {
+        // style=form, explode=true, e.g. /pet?name=cat&type=manx
+        prefix = "";
+        } else {
+        // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+        prefix = prefix + "[";
+        suffix = "]";
+        containerSuffix = "]";
+        containerPrefix = "[";
         }
-      }
-    }
 
-    // add `bank_names` to the URL query string
-    if (getBankNames() != null) {
-      for (int i = 0; i < getBankNames().size(); i++) {
-        if (getBankNames().get(i) != null) {
-          joiner.add(getBankNames().get(i).toUrlQueryString(String.format("%sbank_names%s%s", prefix, suffix,
-              "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix))));
+        StringJoiner joiner = new StringJoiner("&");
+
+            // add `payment_method_type` to the URL query string
+                            if (getPaymentMethodType() != null) {
+                            try {
+                            joiner.add(String.format("%spayment_method_type%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getPaymentMethodType()), "UTF-8").replaceAll("\\+", "%20")));
+                            } catch (UnsupportedEncodingException e) {
+                            // Should never happen, UTF-8 is always supported
+                            throw new RuntimeException(e);
+                            }
+                            }
+
+            // add `payment_experience` to the URL query string
+                            if (getPaymentExperience() != null) {
+                            for (int i = 0; i < getPaymentExperience().size(); i++) {
+                            if (getPaymentExperience().get(i) != null) {
+                            joiner.add(getPaymentExperience().get(i).toUrlQueryString(String.format("%spayment_experience%s%s", prefix, suffix,
+                            "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix))));
+                            }
+                            }
+                            }
+
+            // add `card_networks` to the URL query string
+                            if (getCardNetworks() != null) {
+                            for (int i = 0; i < getCardNetworks().size(); i++) {
+                            if (getCardNetworks().get(i) != null) {
+                            joiner.add(getCardNetworks().get(i).toUrlQueryString(String.format("%scard_networks%s%s", prefix, suffix,
+                            "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix))));
+                            }
+                            }
+                            }
+
+            // add `bank_names` to the URL query string
+                            if (getBankNames() != null) {
+                            for (int i = 0; i < getBankNames().size(); i++) {
+                            if (getBankNames().get(i) != null) {
+                            joiner.add(getBankNames().get(i).toUrlQueryString(String.format("%sbank_names%s%s", prefix, suffix,
+                            "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix))));
+                            }
+                            }
+                            }
+
+            // add `bank_debits` to the URL query string
+                            if (getBankDebits() != null) {
+                            joiner.add(getBankDebits().toUrlQueryString(prefix + "bank_debits" + suffix));
+                            }
+
+            // add `bank_transfers` to the URL query string
+                            if (getBankTransfers() != null) {
+                            joiner.add(getBankTransfers().toUrlQueryString(prefix + "bank_transfers" + suffix));
+                            }
+
+            // add `required_fields` to the URL query string
+                        if (getRequiredFields() != null) {
+                        for (String _key : getRequiredFields().keySet()) {
+                        if (getRequiredFields().get(_key) != null) {
+                        joiner.add(getRequiredFields().get(_key).toUrlQueryString(String.format("%srequired_fields%s%s", prefix, suffix,
+                        "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, _key, containerSuffix))));
+                        }
+                        }
+                        }
+
+            // add `surcharge_details` to the URL query string
+                            if (getSurchargeDetails() != null) {
+                            joiner.add(getSurchargeDetails().toUrlQueryString(prefix + "surcharge_details" + suffix));
+                            }
+
+            // add `pm_auth_connector` to the URL query string
+                        if (getPmAuthConnector() != null) {
+                        try {
+                        joiner.add(String.format("%spm_auth_connector%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getPmAuthConnector()), "UTF-8").replaceAll("\\+", "%20")));
+                        } catch (UnsupportedEncodingException e) {
+                        // Should never happen, UTF-8 is always supported
+                        throw new RuntimeException(e);
+                        }
+                        }
+
+        return joiner.toString();
         }
-      }
+
     }
-
-    // add `bank_debits` to the URL query string
-    if (getBankDebits() != null) {
-      joiner.add(getBankDebits().toUrlQueryString(prefix + "bank_debits" + suffix));
-    }
-
-    // add `bank_transfers` to the URL query string
-    if (getBankTransfers() != null) {
-      joiner.add(getBankTransfers().toUrlQueryString(prefix + "bank_transfers" + suffix));
-    }
-
-    // add `required_fields` to the URL query string
-    if (getRequiredFields() != null) {
-      for (String _key : getRequiredFields().keySet()) {
-        if (getRequiredFields().get(_key) != null) {
-          joiner.add(getRequiredFields().get(_key).toUrlQueryString(String.format("%srequired_fields%s%s", prefix, suffix,
-              "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, _key, containerSuffix))));
-        }
-      }
-    }
-
-    // add `surcharge_details` to the URL query string
-    if (getSurchargeDetails() != null) {
-      joiner.add(getSurchargeDetails().toUrlQueryString(prefix + "surcharge_details" + suffix));
-    }
-
-    // add `pm_auth_connector` to the URL query string
-    if (getPmAuthConnector() != null) {
-      try {
-        joiner.add(String.format("%spm_auth_connector%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getPmAuthConnector()), "UTF-8").replaceAll("\\+", "%20")));
-      } catch (UnsupportedEncodingException e) {
-        // Should never happen, UTF-8 is always supported
-        throw new RuntimeException(e);
-      }
-    }
-
-    return joiner.toString();
-  }
-
-}
 

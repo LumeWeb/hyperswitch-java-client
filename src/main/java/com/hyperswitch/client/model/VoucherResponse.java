@@ -31,294 +31,295 @@ import java.net.URLEncoder;
 import java.util.StringJoiner;
 
 /**
- * VoucherResponse
- */
-@JsonPropertyOrder({
-  VoucherResponse.JSON_PROPERTY_BOLETO,
-  VoucherResponse.JSON_PROPERTY_ALFAMART,
-  VoucherResponse.JSON_PROPERTY_INDOMARET,
-  VoucherResponse.JSON_PROPERTY_SEVEN_ELEVEN,
-  VoucherResponse.JSON_PROPERTY_LAWSON,
-  VoucherResponse.JSON_PROPERTY_MINI_STOP,
-  VoucherResponse.JSON_PROPERTY_FAMILY_MART,
-  VoucherResponse.JSON_PROPERTY_SEICOMART,
-  VoucherResponse.JSON_PROPERTY_PAY_EASY
-})
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+* VoucherResponse
+*/
+    @JsonPropertyOrder({
+        VoucherResponse.JSON_PROPERTY_BOLETO,
+        VoucherResponse.JSON_PROPERTY_ALFAMART,
+        VoucherResponse.JSON_PROPERTY_INDOMARET,
+        VoucherResponse.JSON_PROPERTY_SEVEN_ELEVEN,
+        VoucherResponse.JSON_PROPERTY_LAWSON,
+        VoucherResponse.JSON_PROPERTY_MINI_STOP,
+        VoucherResponse.JSON_PROPERTY_FAMILY_MART,
+        VoucherResponse.JSON_PROPERTY_SEICOMART,
+        VoucherResponse.JSON_PROPERTY_PAY_EASY
+    })
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class VoucherResponse {
-  public static final String JSON_PROPERTY_BOLETO = "boleto";
-  private BoletoVoucherData boleto;
+        public static final String JSON_PROPERTY_BOLETO = "boleto";
+    @javax.annotation.Nonnull
+            private BoletoVoucherData boleto;
 
-  public static final String JSON_PROPERTY_ALFAMART = "alfamart";
-  private AlfamartVoucherData alfamart;
+        public static final String JSON_PROPERTY_ALFAMART = "alfamart";
+    @javax.annotation.Nonnull
+            private AlfamartVoucherData alfamart;
 
-  public static final String JSON_PROPERTY_INDOMARET = "indomaret";
-  private IndomaretVoucherData indomaret;
+        public static final String JSON_PROPERTY_INDOMARET = "indomaret";
+    @javax.annotation.Nonnull
+            private IndomaretVoucherData indomaret;
 
-  public static final String JSON_PROPERTY_SEVEN_ELEVEN = "seven_eleven";
-  private JCSVoucherData sevenEleven;
+        public static final String JSON_PROPERTY_SEVEN_ELEVEN = "seven_eleven";
+    @javax.annotation.Nonnull
+            private JCSVoucherData sevenEleven;
 
-  public static final String JSON_PROPERTY_LAWSON = "lawson";
-  private JCSVoucherData lawson;
+        public static final String JSON_PROPERTY_LAWSON = "lawson";
+    @javax.annotation.Nonnull
+            private JCSVoucherData lawson;
 
-  public static final String JSON_PROPERTY_MINI_STOP = "mini_stop";
-  private JCSVoucherData miniStop;
+        public static final String JSON_PROPERTY_MINI_STOP = "mini_stop";
+    @javax.annotation.Nonnull
+            private JCSVoucherData miniStop;
 
-  public static final String JSON_PROPERTY_FAMILY_MART = "family_mart";
-  private JCSVoucherData familyMart;
+        public static final String JSON_PROPERTY_FAMILY_MART = "family_mart";
+    @javax.annotation.Nonnull
+            private JCSVoucherData familyMart;
 
-  public static final String JSON_PROPERTY_SEICOMART = "seicomart";
-  private JCSVoucherData seicomart;
+        public static final String JSON_PROPERTY_SEICOMART = "seicomart";
+    @javax.annotation.Nonnull
+            private JCSVoucherData seicomart;
 
-  public static final String JSON_PROPERTY_PAY_EASY = "pay_easy";
-  private JCSVoucherData payEasy;
+        public static final String JSON_PROPERTY_PAY_EASY = "pay_easy";
+    @javax.annotation.Nonnull
+            private JCSVoucherData payEasy;
 
-  public VoucherResponse() {
-  }
+public VoucherResponse() {
+}
 
-  public VoucherResponse boleto(BoletoVoucherData boleto) {
-    
-    this.boleto = boleto;
-    return this;
-  }
+        public VoucherResponse boleto(@javax.annotation.Nonnull BoletoVoucherData boleto) {
+        
+        this.boleto = boleto;
+        return this;
+        }
 
-   /**
-   * Get boleto
-   * @return boleto
-  **/
-  @javax.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_BOLETO)
+    /**
+        * Get boleto
+    * @return boleto
+    */
+    @javax.annotation.Nonnull
+      @JsonProperty(JSON_PROPERTY_BOLETO)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-  public BoletoVoucherData getBoleto() {
-    return boleto;
-  }
+    public BoletoVoucherData getBoleto() {
+        return boleto;
+    }
 
 
-  @JsonProperty(JSON_PROPERTY_BOLETO)
+          @JsonProperty(JSON_PROPERTY_BOLETO)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setBoleto(BoletoVoucherData boleto) {
-    this.boleto = boleto;
-  }
+  public void setBoleto(@javax.annotation.Nonnull BoletoVoucherData boleto) {
+            this.boleto = boleto;
+        }
 
+        public VoucherResponse alfamart(@javax.annotation.Nonnull AlfamartVoucherData alfamart) {
+        
+        this.alfamart = alfamart;
+        return this;
+        }
 
-  public VoucherResponse alfamart(AlfamartVoucherData alfamart) {
-    
-    this.alfamart = alfamart;
-    return this;
-  }
-
-   /**
-   * Get alfamart
-   * @return alfamart
-  **/
-  @javax.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_ALFAMART)
-  @JsonInclude(value = JsonInclude.Include.ALWAYS)
-
-  public AlfamartVoucherData getAlfamart() {
-    return alfamart;
-  }
-
-
-  @JsonProperty(JSON_PROPERTY_ALFAMART)
-  @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setAlfamart(AlfamartVoucherData alfamart) {
-    this.alfamart = alfamart;
-  }
-
-
-  public VoucherResponse indomaret(IndomaretVoucherData indomaret) {
-    
-    this.indomaret = indomaret;
-    return this;
-  }
-
-   /**
-   * Get indomaret
-   * @return indomaret
-  **/
-  @javax.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_INDOMARET)
+    /**
+        * Get alfamart
+    * @return alfamart
+    */
+    @javax.annotation.Nonnull
+      @JsonProperty(JSON_PROPERTY_ALFAMART)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-  public IndomaretVoucherData getIndomaret() {
-    return indomaret;
-  }
+    public AlfamartVoucherData getAlfamart() {
+        return alfamart;
+    }
 
 
-  @JsonProperty(JSON_PROPERTY_INDOMARET)
+          @JsonProperty(JSON_PROPERTY_ALFAMART)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setIndomaret(IndomaretVoucherData indomaret) {
-    this.indomaret = indomaret;
-  }
+  public void setAlfamart(@javax.annotation.Nonnull AlfamartVoucherData alfamart) {
+            this.alfamart = alfamart;
+        }
 
+        public VoucherResponse indomaret(@javax.annotation.Nonnull IndomaretVoucherData indomaret) {
+        
+        this.indomaret = indomaret;
+        return this;
+        }
 
-  public VoucherResponse sevenEleven(JCSVoucherData sevenEleven) {
-    
-    this.sevenEleven = sevenEleven;
-    return this;
-  }
-
-   /**
-   * Get sevenEleven
-   * @return sevenEleven
-  **/
-  @javax.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_SEVEN_ELEVEN)
-  @JsonInclude(value = JsonInclude.Include.ALWAYS)
-
-  public JCSVoucherData getSevenEleven() {
-    return sevenEleven;
-  }
-
-
-  @JsonProperty(JSON_PROPERTY_SEVEN_ELEVEN)
-  @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setSevenEleven(JCSVoucherData sevenEleven) {
-    this.sevenEleven = sevenEleven;
-  }
-
-
-  public VoucherResponse lawson(JCSVoucherData lawson) {
-    
-    this.lawson = lawson;
-    return this;
-  }
-
-   /**
-   * Get lawson
-   * @return lawson
-  **/
-  @javax.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_LAWSON)
+    /**
+        * Get indomaret
+    * @return indomaret
+    */
+    @javax.annotation.Nonnull
+      @JsonProperty(JSON_PROPERTY_INDOMARET)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-  public JCSVoucherData getLawson() {
-    return lawson;
-  }
+    public IndomaretVoucherData getIndomaret() {
+        return indomaret;
+    }
 
 
-  @JsonProperty(JSON_PROPERTY_LAWSON)
+          @JsonProperty(JSON_PROPERTY_INDOMARET)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setLawson(JCSVoucherData lawson) {
-    this.lawson = lawson;
-  }
+  public void setIndomaret(@javax.annotation.Nonnull IndomaretVoucherData indomaret) {
+            this.indomaret = indomaret;
+        }
 
+        public VoucherResponse sevenEleven(@javax.annotation.Nonnull JCSVoucherData sevenEleven) {
+        
+        this.sevenEleven = sevenEleven;
+        return this;
+        }
 
-  public VoucherResponse miniStop(JCSVoucherData miniStop) {
-    
-    this.miniStop = miniStop;
-    return this;
-  }
-
-   /**
-   * Get miniStop
-   * @return miniStop
-  **/
-  @javax.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_MINI_STOP)
-  @JsonInclude(value = JsonInclude.Include.ALWAYS)
-
-  public JCSVoucherData getMiniStop() {
-    return miniStop;
-  }
-
-
-  @JsonProperty(JSON_PROPERTY_MINI_STOP)
-  @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setMiniStop(JCSVoucherData miniStop) {
-    this.miniStop = miniStop;
-  }
-
-
-  public VoucherResponse familyMart(JCSVoucherData familyMart) {
-    
-    this.familyMart = familyMart;
-    return this;
-  }
-
-   /**
-   * Get familyMart
-   * @return familyMart
-  **/
-  @javax.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_FAMILY_MART)
+    /**
+        * Get sevenEleven
+    * @return sevenEleven
+    */
+    @javax.annotation.Nonnull
+      @JsonProperty(JSON_PROPERTY_SEVEN_ELEVEN)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-  public JCSVoucherData getFamilyMart() {
-    return familyMart;
-  }
+    public JCSVoucherData getSevenEleven() {
+        return sevenEleven;
+    }
 
 
-  @JsonProperty(JSON_PROPERTY_FAMILY_MART)
+          @JsonProperty(JSON_PROPERTY_SEVEN_ELEVEN)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setFamilyMart(JCSVoucherData familyMart) {
-    this.familyMart = familyMart;
-  }
+  public void setSevenEleven(@javax.annotation.Nonnull JCSVoucherData sevenEleven) {
+            this.sevenEleven = sevenEleven;
+        }
 
+        public VoucherResponse lawson(@javax.annotation.Nonnull JCSVoucherData lawson) {
+        
+        this.lawson = lawson;
+        return this;
+        }
 
-  public VoucherResponse seicomart(JCSVoucherData seicomart) {
-    
-    this.seicomart = seicomart;
-    return this;
-  }
-
-   /**
-   * Get seicomart
-   * @return seicomart
-  **/
-  @javax.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_SEICOMART)
-  @JsonInclude(value = JsonInclude.Include.ALWAYS)
-
-  public JCSVoucherData getSeicomart() {
-    return seicomart;
-  }
-
-
-  @JsonProperty(JSON_PROPERTY_SEICOMART)
-  @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setSeicomart(JCSVoucherData seicomart) {
-    this.seicomart = seicomart;
-  }
-
-
-  public VoucherResponse payEasy(JCSVoucherData payEasy) {
-    
-    this.payEasy = payEasy;
-    return this;
-  }
-
-   /**
-   * Get payEasy
-   * @return payEasy
-  **/
-  @javax.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_PAY_EASY)
+    /**
+        * Get lawson
+    * @return lawson
+    */
+    @javax.annotation.Nonnull
+      @JsonProperty(JSON_PROPERTY_LAWSON)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-  public JCSVoucherData getPayEasy() {
-    return payEasy;
-  }
+    public JCSVoucherData getLawson() {
+        return lawson;
+    }
 
 
-  @JsonProperty(JSON_PROPERTY_PAY_EASY)
+          @JsonProperty(JSON_PROPERTY_LAWSON)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setPayEasy(JCSVoucherData payEasy) {
-    this.payEasy = payEasy;
-  }
+  public void setLawson(@javax.annotation.Nonnull JCSVoucherData lawson) {
+            this.lawson = lawson;
+        }
 
-  @Override
-  public boolean equals(Object o) {
+        public VoucherResponse miniStop(@javax.annotation.Nonnull JCSVoucherData miniStop) {
+        
+        this.miniStop = miniStop;
+        return this;
+        }
+
+    /**
+        * Get miniStop
+    * @return miniStop
+    */
+    @javax.annotation.Nonnull
+      @JsonProperty(JSON_PROPERTY_MINI_STOP)
+  @JsonInclude(value = JsonInclude.Include.ALWAYS)
+
+    public JCSVoucherData getMiniStop() {
+        return miniStop;
+    }
+
+
+          @JsonProperty(JSON_PROPERTY_MINI_STOP)
+  @JsonInclude(value = JsonInclude.Include.ALWAYS)
+  public void setMiniStop(@javax.annotation.Nonnull JCSVoucherData miniStop) {
+            this.miniStop = miniStop;
+        }
+
+        public VoucherResponse familyMart(@javax.annotation.Nonnull JCSVoucherData familyMart) {
+        
+        this.familyMart = familyMart;
+        return this;
+        }
+
+    /**
+        * Get familyMart
+    * @return familyMart
+    */
+    @javax.annotation.Nonnull
+      @JsonProperty(JSON_PROPERTY_FAMILY_MART)
+  @JsonInclude(value = JsonInclude.Include.ALWAYS)
+
+    public JCSVoucherData getFamilyMart() {
+        return familyMart;
+    }
+
+
+          @JsonProperty(JSON_PROPERTY_FAMILY_MART)
+  @JsonInclude(value = JsonInclude.Include.ALWAYS)
+  public void setFamilyMart(@javax.annotation.Nonnull JCSVoucherData familyMart) {
+            this.familyMart = familyMart;
+        }
+
+        public VoucherResponse seicomart(@javax.annotation.Nonnull JCSVoucherData seicomart) {
+        
+        this.seicomart = seicomart;
+        return this;
+        }
+
+    /**
+        * Get seicomart
+    * @return seicomart
+    */
+    @javax.annotation.Nonnull
+      @JsonProperty(JSON_PROPERTY_SEICOMART)
+  @JsonInclude(value = JsonInclude.Include.ALWAYS)
+
+    public JCSVoucherData getSeicomart() {
+        return seicomart;
+    }
+
+
+          @JsonProperty(JSON_PROPERTY_SEICOMART)
+  @JsonInclude(value = JsonInclude.Include.ALWAYS)
+  public void setSeicomart(@javax.annotation.Nonnull JCSVoucherData seicomart) {
+            this.seicomart = seicomart;
+        }
+
+        public VoucherResponse payEasy(@javax.annotation.Nonnull JCSVoucherData payEasy) {
+        
+        this.payEasy = payEasy;
+        return this;
+        }
+
+    /**
+        * Get payEasy
+    * @return payEasy
+    */
+    @javax.annotation.Nonnull
+      @JsonProperty(JSON_PROPERTY_PAY_EASY)
+  @JsonInclude(value = JsonInclude.Include.ALWAYS)
+
+    public JCSVoucherData getPayEasy() {
+        return payEasy;
+    }
+
+
+          @JsonProperty(JSON_PROPERTY_PAY_EASY)
+  @JsonInclude(value = JsonInclude.Include.ALWAYS)
+  public void setPayEasy(@javax.annotation.Nonnull JCSVoucherData payEasy) {
+            this.payEasy = payEasy;
+        }
+
+@Override
+public boolean equals(Object o) {
     if (this == o) {
-      return true;
+    return true;
     }
     if (o == null || getClass() != o.getClass()) {
-      return false;
+    return false;
     }
-    VoucherResponse voucherResponse = (VoucherResponse) o;
-    return Objects.equals(this.boleto, voucherResponse.boleto) &&
+        VoucherResponse voucherResponse = (VoucherResponse) o;
+        return Objects.equals(this.boleto, voucherResponse.boleto) &&
         Objects.equals(this.alfamart, voucherResponse.alfamart) &&
         Objects.equals(this.indomaret, voucherResponse.indomaret) &&
         Objects.equals(this.sevenEleven, voucherResponse.sevenEleven) &&
@@ -327,120 +328,120 @@ public class VoucherResponse {
         Objects.equals(this.familyMart, voucherResponse.familyMart) &&
         Objects.equals(this.seicomart, voucherResponse.seicomart) &&
         Objects.equals(this.payEasy, voucherResponse.payEasy);
-  }
+}
 
-  @Override
-  public int hashCode() {
-    return Objects.hash(boleto, alfamart, indomaret, sevenEleven, lawson, miniStop, familyMart, seicomart, payEasy);
-  }
+    @Override
+    public int hashCode() {
+        return Objects.hash(boleto, alfamart, indomaret, sevenEleven, lawson, miniStop, familyMart, seicomart, payEasy);
+    }
 
-  @Override
-  public String toString() {
+    @Override
+    public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class VoucherResponse {\n");
-    sb.append("    boleto: ").append(toIndentedString(boleto)).append("\n");
-    sb.append("    alfamart: ").append(toIndentedString(alfamart)).append("\n");
-    sb.append("    indomaret: ").append(toIndentedString(indomaret)).append("\n");
-    sb.append("    sevenEleven: ").append(toIndentedString(sevenEleven)).append("\n");
-    sb.append("    lawson: ").append(toIndentedString(lawson)).append("\n");
-    sb.append("    miniStop: ").append(toIndentedString(miniStop)).append("\n");
-    sb.append("    familyMart: ").append(toIndentedString(familyMart)).append("\n");
-    sb.append("    seicomart: ").append(toIndentedString(seicomart)).append("\n");
-    sb.append("    payEasy: ").append(toIndentedString(payEasy)).append("\n");
+        sb.append("    boleto: ").append(toIndentedString(boleto)).append("\n");
+        sb.append("    alfamart: ").append(toIndentedString(alfamart)).append("\n");
+        sb.append("    indomaret: ").append(toIndentedString(indomaret)).append("\n");
+        sb.append("    sevenEleven: ").append(toIndentedString(sevenEleven)).append("\n");
+        sb.append("    lawson: ").append(toIndentedString(lawson)).append("\n");
+        sb.append("    miniStop: ").append(toIndentedString(miniStop)).append("\n");
+        sb.append("    familyMart: ").append(toIndentedString(familyMart)).append("\n");
+        sb.append("    seicomart: ").append(toIndentedString(seicomart)).append("\n");
+        sb.append("    payEasy: ").append(toIndentedString(payEasy)).append("\n");
     sb.append("}");
     return sb.toString();
-  }
+    }
 
-  /**
-   * Convert the given object to string with each line indented by 4 spaces
-   * (except the first line).
-   */
-  private String toIndentedString(Object o) {
+    /**
+    * Convert the given object to string with each line indented by 4 spaces
+    * (except the first line).
+    */
+    private String toIndentedString(Object o) {
     if (o == null) {
-      return "null";
+    return "null";
     }
     return o.toString().replace("\n", "\n    ");
-  }
-
-  /**
-   * Convert the instance into URL query string.
-   *
-   * @return URL query string
-   */
-  public String toUrlQueryString() {
-    return toUrlQueryString(null);
-  }
-
-  /**
-   * Convert the instance into URL query string.
-   *
-   * @param prefix prefix of the query string
-   * @return URL query string
-   */
-  public String toUrlQueryString(String prefix) {
-    String suffix = "";
-    String containerSuffix = "";
-    String containerPrefix = "";
-    if (prefix == null) {
-      // style=form, explode=true, e.g. /pet?name=cat&type=manx
-      prefix = "";
-    } else {
-      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
-      prefix = prefix + "[";
-      suffix = "]";
-      containerSuffix = "]";
-      containerPrefix = "[";
     }
 
-    StringJoiner joiner = new StringJoiner("&");
+        /**
+        * Convert the instance into URL query string.
+        *
+        * @return URL query string
+        */
+        public String toUrlQueryString() {
+        return toUrlQueryString(null);
+        }
 
-    // add `boleto` to the URL query string
-    if (getBoleto() != null) {
-      joiner.add(getBoleto().toUrlQueryString(prefix + "boleto" + suffix));
+        /**
+        * Convert the instance into URL query string.
+        *
+        * @param prefix prefix of the query string
+        * @return URL query string
+        */
+        public String toUrlQueryString(String prefix) {
+        String suffix = "";
+        String containerSuffix = "";
+        String containerPrefix = "";
+        if (prefix == null) {
+        // style=form, explode=true, e.g. /pet?name=cat&type=manx
+        prefix = "";
+        } else {
+        // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+        prefix = prefix + "[";
+        suffix = "]";
+        containerSuffix = "]";
+        containerPrefix = "[";
+        }
+
+        StringJoiner joiner = new StringJoiner("&");
+
+            // add `boleto` to the URL query string
+                            if (getBoleto() != null) {
+                            joiner.add(getBoleto().toUrlQueryString(prefix + "boleto" + suffix));
+                            }
+
+            // add `alfamart` to the URL query string
+                            if (getAlfamart() != null) {
+                            joiner.add(getAlfamart().toUrlQueryString(prefix + "alfamart" + suffix));
+                            }
+
+            // add `indomaret` to the URL query string
+                            if (getIndomaret() != null) {
+                            joiner.add(getIndomaret().toUrlQueryString(prefix + "indomaret" + suffix));
+                            }
+
+            // add `seven_eleven` to the URL query string
+                            if (getSevenEleven() != null) {
+                            joiner.add(getSevenEleven().toUrlQueryString(prefix + "seven_eleven" + suffix));
+                            }
+
+            // add `lawson` to the URL query string
+                            if (getLawson() != null) {
+                            joiner.add(getLawson().toUrlQueryString(prefix + "lawson" + suffix));
+                            }
+
+            // add `mini_stop` to the URL query string
+                            if (getMiniStop() != null) {
+                            joiner.add(getMiniStop().toUrlQueryString(prefix + "mini_stop" + suffix));
+                            }
+
+            // add `family_mart` to the URL query string
+                            if (getFamilyMart() != null) {
+                            joiner.add(getFamilyMart().toUrlQueryString(prefix + "family_mart" + suffix));
+                            }
+
+            // add `seicomart` to the URL query string
+                            if (getSeicomart() != null) {
+                            joiner.add(getSeicomart().toUrlQueryString(prefix + "seicomart" + suffix));
+                            }
+
+            // add `pay_easy` to the URL query string
+                            if (getPayEasy() != null) {
+                            joiner.add(getPayEasy().toUrlQueryString(prefix + "pay_easy" + suffix));
+                            }
+
+        return joiner.toString();
+        }
+
     }
-
-    // add `alfamart` to the URL query string
-    if (getAlfamart() != null) {
-      joiner.add(getAlfamart().toUrlQueryString(prefix + "alfamart" + suffix));
-    }
-
-    // add `indomaret` to the URL query string
-    if (getIndomaret() != null) {
-      joiner.add(getIndomaret().toUrlQueryString(prefix + "indomaret" + suffix));
-    }
-
-    // add `seven_eleven` to the URL query string
-    if (getSevenEleven() != null) {
-      joiner.add(getSevenEleven().toUrlQueryString(prefix + "seven_eleven" + suffix));
-    }
-
-    // add `lawson` to the URL query string
-    if (getLawson() != null) {
-      joiner.add(getLawson().toUrlQueryString(prefix + "lawson" + suffix));
-    }
-
-    // add `mini_stop` to the URL query string
-    if (getMiniStop() != null) {
-      joiner.add(getMiniStop().toUrlQueryString(prefix + "mini_stop" + suffix));
-    }
-
-    // add `family_mart` to the URL query string
-    if (getFamilyMart() != null) {
-      joiner.add(getFamilyMart().toUrlQueryString(prefix + "family_mart" + suffix));
-    }
-
-    // add `seicomart` to the URL query string
-    if (getSeicomart() != null) {
-      joiner.add(getSeicomart().toUrlQueryString(prefix + "seicomart" + suffix));
-    }
-
-    // add `pay_easy` to the URL query string
-    if (getPayEasy() != null) {
-      joiner.add(getPayEasy().toUrlQueryString(prefix + "pay_easy" + suffix));
-    }
-
-    return joiner.toString();
-  }
-
-}
 

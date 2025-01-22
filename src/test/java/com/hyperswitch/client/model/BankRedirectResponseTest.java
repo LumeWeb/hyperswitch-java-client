@@ -26,38 +26,29 @@ import org.openapitools.jackson.nullable.JsonNullable;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.openapitools.jackson.nullable.JsonNullable;
 import java.util.NoSuchElementException;
-import org.junit.Assert;
-import org.junit.Ignore;
-import org.junit.Test;
-
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Test;
 
 /**
  * Model tests for BankRedirectResponse
  */
-public class BankRedirectResponseTest {
+class BankRedirectResponseTest {
     private final BankRedirectResponse model = new BankRedirectResponse();
 
     /**
      * Model tests for BankRedirectResponse
      */
     @Test
-    public void testBankRedirectResponse() {
+    void testBankRedirectResponse() {
         // TODO: test BankRedirectResponse
-    }
-
-    /**
-     * Test the property 'bankName'
-     */
-    @Test
-    public void bankNameTest() {
-        // TODO: test bankName
     }
 
     /**
      * Test the property 'bancontactCard'
      */
     @Test
-    public void bancontactCardTest() {
+    void bancontactCardTest() {
         // TODO: test bancontactCard
     }
 
@@ -65,7 +56,7 @@ public class BankRedirectResponseTest {
      * Test the property 'blik'
      */
     @Test
-    public void blikTest() {
+    void blikTest() {
         // TODO: test blik
     }
 
@@ -73,8 +64,16 @@ public class BankRedirectResponseTest {
      * Test the property 'giropay'
      */
     @Test
-    public void giropayTest() {
+    void giropayTest() {
         // TODO: test giropay
+    }
+
+    /**
+     * Test the property 'bankName'
+     */
+    @Test
+    void bankNameTest() {
+        // TODO: test bankName
     }
 
 }

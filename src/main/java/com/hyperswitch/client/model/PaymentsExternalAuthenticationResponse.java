@@ -32,312 +32,313 @@ import java.net.URLEncoder;
 import java.util.StringJoiner;
 
 /**
- * PaymentsExternalAuthenticationResponse
- */
-@JsonPropertyOrder({
-  PaymentsExternalAuthenticationResponse.JSON_PROPERTY_TRANS_STATUS,
-  PaymentsExternalAuthenticationResponse.JSON_PROPERTY_ACS_URL,
-  PaymentsExternalAuthenticationResponse.JSON_PROPERTY_CHALLENGE_REQUEST,
-  PaymentsExternalAuthenticationResponse.JSON_PROPERTY_ACS_REFERENCE_NUMBER,
-  PaymentsExternalAuthenticationResponse.JSON_PROPERTY_ACS_TRANS_ID,
-  PaymentsExternalAuthenticationResponse.JSON_PROPERTY_THREE_DSSERVER_TRANS_ID,
-  PaymentsExternalAuthenticationResponse.JSON_PROPERTY_ACS_SIGNED_CONTENT,
-  PaymentsExternalAuthenticationResponse.JSON_PROPERTY_THREE_DS_REQUESTOR_URL
-})
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+* PaymentsExternalAuthenticationResponse
+*/
+    @JsonPropertyOrder({
+        PaymentsExternalAuthenticationResponse.JSON_PROPERTY_TRANS_STATUS,
+        PaymentsExternalAuthenticationResponse.JSON_PROPERTY_ACS_URL,
+        PaymentsExternalAuthenticationResponse.JSON_PROPERTY_CHALLENGE_REQUEST,
+        PaymentsExternalAuthenticationResponse.JSON_PROPERTY_ACS_REFERENCE_NUMBER,
+        PaymentsExternalAuthenticationResponse.JSON_PROPERTY_ACS_TRANS_ID,
+        PaymentsExternalAuthenticationResponse.JSON_PROPERTY_THREE_DSSERVER_TRANS_ID,
+        PaymentsExternalAuthenticationResponse.JSON_PROPERTY_ACS_SIGNED_CONTENT,
+        PaymentsExternalAuthenticationResponse.JSON_PROPERTY_THREE_DS_REQUESTOR_URL
+    })
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class PaymentsExternalAuthenticationResponse {
-  public static final String JSON_PROPERTY_TRANS_STATUS = "trans_status";
-  private TransactionStatus transStatus;
+        public static final String JSON_PROPERTY_TRANS_STATUS = "trans_status";
+    @javax.annotation.Nonnull
+            private TransactionStatus transStatus;
 
-  public static final String JSON_PROPERTY_ACS_URL = "acs_url";
-  private JsonNullable<String> acsUrl = JsonNullable.<String>undefined();
+        public static final String JSON_PROPERTY_ACS_URL = "acs_url";
+    @javax.annotation.Nullable
+            private JsonNullable<String> acsUrl = JsonNullable.<String>undefined();
 
-  public static final String JSON_PROPERTY_CHALLENGE_REQUEST = "challenge_request";
-  private JsonNullable<String> challengeRequest = JsonNullable.<String>undefined();
+        public static final String JSON_PROPERTY_CHALLENGE_REQUEST = "challenge_request";
+    @javax.annotation.Nullable
+            private JsonNullable<String> challengeRequest = JsonNullable.<String>undefined();
 
-  public static final String JSON_PROPERTY_ACS_REFERENCE_NUMBER = "acs_reference_number";
-  private JsonNullable<String> acsReferenceNumber = JsonNullable.<String>undefined();
+        public static final String JSON_PROPERTY_ACS_REFERENCE_NUMBER = "acs_reference_number";
+    @javax.annotation.Nullable
+            private JsonNullable<String> acsReferenceNumber = JsonNullable.<String>undefined();
 
-  public static final String JSON_PROPERTY_ACS_TRANS_ID = "acs_trans_id";
-  private JsonNullable<String> acsTransId = JsonNullable.<String>undefined();
+        public static final String JSON_PROPERTY_ACS_TRANS_ID = "acs_trans_id";
+    @javax.annotation.Nullable
+            private JsonNullable<String> acsTransId = JsonNullable.<String>undefined();
 
-  public static final String JSON_PROPERTY_THREE_DSSERVER_TRANS_ID = "three_dsserver_trans_id";
-  private JsonNullable<String> threeDsserverTransId = JsonNullable.<String>undefined();
+        public static final String JSON_PROPERTY_THREE_DSSERVER_TRANS_ID = "three_dsserver_trans_id";
+    @javax.annotation.Nullable
+            private JsonNullable<String> threeDsserverTransId = JsonNullable.<String>undefined();
 
-  public static final String JSON_PROPERTY_ACS_SIGNED_CONTENT = "acs_signed_content";
-  private JsonNullable<String> acsSignedContent = JsonNullable.<String>undefined();
+        public static final String JSON_PROPERTY_ACS_SIGNED_CONTENT = "acs_signed_content";
+    @javax.annotation.Nullable
+            private JsonNullable<String> acsSignedContent = JsonNullable.<String>undefined();
 
-  public static final String JSON_PROPERTY_THREE_DS_REQUESTOR_URL = "three_ds_requestor_url";
-  private String threeDsRequestorUrl;
+        public static final String JSON_PROPERTY_THREE_DS_REQUESTOR_URL = "three_ds_requestor_url";
+    @javax.annotation.Nonnull
+            private String threeDsRequestorUrl;
 
-  public PaymentsExternalAuthenticationResponse() {
-  }
+public PaymentsExternalAuthenticationResponse() {
+}
 
-  public PaymentsExternalAuthenticationResponse transStatus(TransactionStatus transStatus) {
-    
-    this.transStatus = transStatus;
-    return this;
-  }
+        public PaymentsExternalAuthenticationResponse transStatus(@javax.annotation.Nonnull TransactionStatus transStatus) {
+        
+        this.transStatus = transStatus;
+        return this;
+        }
 
-   /**
-   * Get transStatus
-   * @return transStatus
-  **/
-  @javax.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_TRANS_STATUS)
+    /**
+        * Get transStatus
+    * @return transStatus
+    */
+    @javax.annotation.Nonnull
+      @JsonProperty(JSON_PROPERTY_TRANS_STATUS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-  public TransactionStatus getTransStatus() {
-    return transStatus;
-  }
+    public TransactionStatus getTransStatus() {
+        return transStatus;
+    }
 
 
-  @JsonProperty(JSON_PROPERTY_TRANS_STATUS)
+          @JsonProperty(JSON_PROPERTY_TRANS_STATUS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setTransStatus(TransactionStatus transStatus) {
-    this.transStatus = transStatus;
-  }
+  public void setTransStatus(@javax.annotation.Nonnull TransactionStatus transStatus) {
+            this.transStatus = transStatus;
+        }
 
+        public PaymentsExternalAuthenticationResponse acsUrl(@javax.annotation.Nullable String acsUrl) {
+        this.acsUrl = JsonNullable.<String>of(acsUrl);
+        
+        return this;
+        }
 
-  public PaymentsExternalAuthenticationResponse acsUrl(String acsUrl) {
-    this.acsUrl = JsonNullable.<String>of(acsUrl);
+    /**
+        * Access Server URL to be used for challenge submission
+    * @return acsUrl
+    */
+    @javax.annotation.Nullable
+        @JsonIgnore
     
-    return this;
-  }
+    public String getAcsUrl() {
+                return acsUrl.orElse(null);
+    }
 
-   /**
-   * Access Server URL to be used for challenge submission
-   * @return acsUrl
-  **/
-  @javax.annotation.Nullable
-  @JsonIgnore
-
-  public String getAcsUrl() {
-        return acsUrl.orElse(null);
-  }
-
-  @JsonProperty(JSON_PROPERTY_ACS_URL)
+          @JsonProperty(JSON_PROPERTY_ACS_URL)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-  public JsonNullable<String> getAcsUrl_JsonNullable() {
-    return acsUrl;
-  }
-  
-  @JsonProperty(JSON_PROPERTY_ACS_URL)
-  public void setAcsUrl_JsonNullable(JsonNullable<String> acsUrl) {
-    this.acsUrl = acsUrl;
-  }
-
-  public void setAcsUrl(String acsUrl) {
-    this.acsUrl = JsonNullable.<String>of(acsUrl);
-  }
-
-
-  public PaymentsExternalAuthenticationResponse challengeRequest(String challengeRequest) {
-    this.challengeRequest = JsonNullable.<String>of(challengeRequest);
+        public JsonNullable<String> getAcsUrl_JsonNullable() {
+        return acsUrl;
+        }
     
-    return this;
-  }
+        @JsonProperty(JSON_PROPERTY_ACS_URL)
+        public void setAcsUrl_JsonNullable(JsonNullable<String> acsUrl) {
+        this.acsUrl = acsUrl;
+        }
 
-   /**
-   * Challenge request which should be sent to acs_url
-   * @return challengeRequest
-  **/
-  @javax.annotation.Nullable
-  @JsonIgnore
+          public void setAcsUrl(@javax.annotation.Nullable String acsUrl) {
+            this.acsUrl = JsonNullable.<String>of(acsUrl);
+        }
 
-  public String getChallengeRequest() {
-        return challengeRequest.orElse(null);
-  }
+        public PaymentsExternalAuthenticationResponse challengeRequest(@javax.annotation.Nullable String challengeRequest) {
+        this.challengeRequest = JsonNullable.<String>of(challengeRequest);
+        
+        return this;
+        }
 
-  @JsonProperty(JSON_PROPERTY_CHALLENGE_REQUEST)
+    /**
+        * Challenge request which should be sent to acs_url
+    * @return challengeRequest
+    */
+    @javax.annotation.Nullable
+        @JsonIgnore
+    
+    public String getChallengeRequest() {
+                return challengeRequest.orElse(null);
+    }
+
+          @JsonProperty(JSON_PROPERTY_CHALLENGE_REQUEST)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-  public JsonNullable<String> getChallengeRequest_JsonNullable() {
-    return challengeRequest;
-  }
-  
-  @JsonProperty(JSON_PROPERTY_CHALLENGE_REQUEST)
-  public void setChallengeRequest_JsonNullable(JsonNullable<String> challengeRequest) {
-    this.challengeRequest = challengeRequest;
-  }
-
-  public void setChallengeRequest(String challengeRequest) {
-    this.challengeRequest = JsonNullable.<String>of(challengeRequest);
-  }
-
-
-  public PaymentsExternalAuthenticationResponse acsReferenceNumber(String acsReferenceNumber) {
-    this.acsReferenceNumber = JsonNullable.<String>of(acsReferenceNumber);
+        public JsonNullable<String> getChallengeRequest_JsonNullable() {
+        return challengeRequest;
+        }
     
-    return this;
-  }
+        @JsonProperty(JSON_PROPERTY_CHALLENGE_REQUEST)
+        public void setChallengeRequest_JsonNullable(JsonNullable<String> challengeRequest) {
+        this.challengeRequest = challengeRequest;
+        }
 
-   /**
-   * Unique identifier assigned by the EMVCo(Europay, Mastercard and Visa)
-   * @return acsReferenceNumber
-  **/
-  @javax.annotation.Nullable
-  @JsonIgnore
+          public void setChallengeRequest(@javax.annotation.Nullable String challengeRequest) {
+            this.challengeRequest = JsonNullable.<String>of(challengeRequest);
+        }
 
-  public String getAcsReferenceNumber() {
-        return acsReferenceNumber.orElse(null);
-  }
+        public PaymentsExternalAuthenticationResponse acsReferenceNumber(@javax.annotation.Nullable String acsReferenceNumber) {
+        this.acsReferenceNumber = JsonNullable.<String>of(acsReferenceNumber);
+        
+        return this;
+        }
 
-  @JsonProperty(JSON_PROPERTY_ACS_REFERENCE_NUMBER)
+    /**
+        * Unique identifier assigned by the EMVCo(Europay, Mastercard and Visa)
+    * @return acsReferenceNumber
+    */
+    @javax.annotation.Nullable
+        @JsonIgnore
+    
+    public String getAcsReferenceNumber() {
+                return acsReferenceNumber.orElse(null);
+    }
+
+          @JsonProperty(JSON_PROPERTY_ACS_REFERENCE_NUMBER)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-  public JsonNullable<String> getAcsReferenceNumber_JsonNullable() {
-    return acsReferenceNumber;
-  }
-  
-  @JsonProperty(JSON_PROPERTY_ACS_REFERENCE_NUMBER)
-  public void setAcsReferenceNumber_JsonNullable(JsonNullable<String> acsReferenceNumber) {
-    this.acsReferenceNumber = acsReferenceNumber;
-  }
-
-  public void setAcsReferenceNumber(String acsReferenceNumber) {
-    this.acsReferenceNumber = JsonNullable.<String>of(acsReferenceNumber);
-  }
-
-
-  public PaymentsExternalAuthenticationResponse acsTransId(String acsTransId) {
-    this.acsTransId = JsonNullable.<String>of(acsTransId);
+        public JsonNullable<String> getAcsReferenceNumber_JsonNullable() {
+        return acsReferenceNumber;
+        }
     
-    return this;
-  }
+        @JsonProperty(JSON_PROPERTY_ACS_REFERENCE_NUMBER)
+        public void setAcsReferenceNumber_JsonNullable(JsonNullable<String> acsReferenceNumber) {
+        this.acsReferenceNumber = acsReferenceNumber;
+        }
 
-   /**
-   * Unique identifier assigned by the ACS to identify a single transaction
-   * @return acsTransId
-  **/
-  @javax.annotation.Nullable
-  @JsonIgnore
+          public void setAcsReferenceNumber(@javax.annotation.Nullable String acsReferenceNumber) {
+            this.acsReferenceNumber = JsonNullable.<String>of(acsReferenceNumber);
+        }
 
-  public String getAcsTransId() {
-        return acsTransId.orElse(null);
-  }
+        public PaymentsExternalAuthenticationResponse acsTransId(@javax.annotation.Nullable String acsTransId) {
+        this.acsTransId = JsonNullable.<String>of(acsTransId);
+        
+        return this;
+        }
 
-  @JsonProperty(JSON_PROPERTY_ACS_TRANS_ID)
+    /**
+        * Unique identifier assigned by the ACS to identify a single transaction
+    * @return acsTransId
+    */
+    @javax.annotation.Nullable
+        @JsonIgnore
+    
+    public String getAcsTransId() {
+                return acsTransId.orElse(null);
+    }
+
+          @JsonProperty(JSON_PROPERTY_ACS_TRANS_ID)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-  public JsonNullable<String> getAcsTransId_JsonNullable() {
-    return acsTransId;
-  }
-  
-  @JsonProperty(JSON_PROPERTY_ACS_TRANS_ID)
-  public void setAcsTransId_JsonNullable(JsonNullable<String> acsTransId) {
-    this.acsTransId = acsTransId;
-  }
-
-  public void setAcsTransId(String acsTransId) {
-    this.acsTransId = JsonNullable.<String>of(acsTransId);
-  }
-
-
-  public PaymentsExternalAuthenticationResponse threeDsserverTransId(String threeDsserverTransId) {
-    this.threeDsserverTransId = JsonNullable.<String>of(threeDsserverTransId);
+        public JsonNullable<String> getAcsTransId_JsonNullable() {
+        return acsTransId;
+        }
     
-    return this;
-  }
+        @JsonProperty(JSON_PROPERTY_ACS_TRANS_ID)
+        public void setAcsTransId_JsonNullable(JsonNullable<String> acsTransId) {
+        this.acsTransId = acsTransId;
+        }
 
-   /**
-   * Unique identifier assigned by the 3DS Server to identify a single transaction
-   * @return threeDsserverTransId
-  **/
-  @javax.annotation.Nullable
-  @JsonIgnore
+          public void setAcsTransId(@javax.annotation.Nullable String acsTransId) {
+            this.acsTransId = JsonNullable.<String>of(acsTransId);
+        }
 
-  public String getThreeDsserverTransId() {
-        return threeDsserverTransId.orElse(null);
-  }
+        public PaymentsExternalAuthenticationResponse threeDsserverTransId(@javax.annotation.Nullable String threeDsserverTransId) {
+        this.threeDsserverTransId = JsonNullable.<String>of(threeDsserverTransId);
+        
+        return this;
+        }
 
-  @JsonProperty(JSON_PROPERTY_THREE_DSSERVER_TRANS_ID)
+    /**
+        * Unique identifier assigned by the 3DS Server to identify a single transaction
+    * @return threeDsserverTransId
+    */
+    @javax.annotation.Nullable
+        @JsonIgnore
+    
+    public String getThreeDsserverTransId() {
+                return threeDsserverTransId.orElse(null);
+    }
+
+          @JsonProperty(JSON_PROPERTY_THREE_DSSERVER_TRANS_ID)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-  public JsonNullable<String> getThreeDsserverTransId_JsonNullable() {
-    return threeDsserverTransId;
-  }
-  
-  @JsonProperty(JSON_PROPERTY_THREE_DSSERVER_TRANS_ID)
-  public void setThreeDsserverTransId_JsonNullable(JsonNullable<String> threeDsserverTransId) {
-    this.threeDsserverTransId = threeDsserverTransId;
-  }
-
-  public void setThreeDsserverTransId(String threeDsserverTransId) {
-    this.threeDsserverTransId = JsonNullable.<String>of(threeDsserverTransId);
-  }
-
-
-  public PaymentsExternalAuthenticationResponse acsSignedContent(String acsSignedContent) {
-    this.acsSignedContent = JsonNullable.<String>of(acsSignedContent);
+        public JsonNullable<String> getThreeDsserverTransId_JsonNullable() {
+        return threeDsserverTransId;
+        }
     
-    return this;
-  }
+        @JsonProperty(JSON_PROPERTY_THREE_DSSERVER_TRANS_ID)
+        public void setThreeDsserverTransId_JsonNullable(JsonNullable<String> threeDsserverTransId) {
+        this.threeDsserverTransId = threeDsserverTransId;
+        }
 
-   /**
-   * Contains the JWS object created by the ACS for the ARes(Authentication Response) message
-   * @return acsSignedContent
-  **/
-  @javax.annotation.Nullable
-  @JsonIgnore
+          public void setThreeDsserverTransId(@javax.annotation.Nullable String threeDsserverTransId) {
+            this.threeDsserverTransId = JsonNullable.<String>of(threeDsserverTransId);
+        }
 
-  public String getAcsSignedContent() {
-        return acsSignedContent.orElse(null);
-  }
+        public PaymentsExternalAuthenticationResponse acsSignedContent(@javax.annotation.Nullable String acsSignedContent) {
+        this.acsSignedContent = JsonNullable.<String>of(acsSignedContent);
+        
+        return this;
+        }
 
-  @JsonProperty(JSON_PROPERTY_ACS_SIGNED_CONTENT)
+    /**
+        * Contains the JWS object created by the ACS for the ARes(Authentication Response) message
+    * @return acsSignedContent
+    */
+    @javax.annotation.Nullable
+        @JsonIgnore
+    
+    public String getAcsSignedContent() {
+                return acsSignedContent.orElse(null);
+    }
+
+          @JsonProperty(JSON_PROPERTY_ACS_SIGNED_CONTENT)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-  public JsonNullable<String> getAcsSignedContent_JsonNullable() {
-    return acsSignedContent;
-  }
-  
-  @JsonProperty(JSON_PROPERTY_ACS_SIGNED_CONTENT)
-  public void setAcsSignedContent_JsonNullable(JsonNullable<String> acsSignedContent) {
-    this.acsSignedContent = acsSignedContent;
-  }
-
-  public void setAcsSignedContent(String acsSignedContent) {
-    this.acsSignedContent = JsonNullable.<String>of(acsSignedContent);
-  }
-
-
-  public PaymentsExternalAuthenticationResponse threeDsRequestorUrl(String threeDsRequestorUrl) {
+        public JsonNullable<String> getAcsSignedContent_JsonNullable() {
+        return acsSignedContent;
+        }
     
-    this.threeDsRequestorUrl = threeDsRequestorUrl;
-    return this;
-  }
+        @JsonProperty(JSON_PROPERTY_ACS_SIGNED_CONTENT)
+        public void setAcsSignedContent_JsonNullable(JsonNullable<String> acsSignedContent) {
+        this.acsSignedContent = acsSignedContent;
+        }
 
-   /**
-   * Three DS Requestor URL
-   * @return threeDsRequestorUrl
-  **/
-  @javax.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_THREE_DS_REQUESTOR_URL)
+          public void setAcsSignedContent(@javax.annotation.Nullable String acsSignedContent) {
+            this.acsSignedContent = JsonNullable.<String>of(acsSignedContent);
+        }
+
+        public PaymentsExternalAuthenticationResponse threeDsRequestorUrl(@javax.annotation.Nonnull String threeDsRequestorUrl) {
+        
+        this.threeDsRequestorUrl = threeDsRequestorUrl;
+        return this;
+        }
+
+    /**
+        * Three DS Requestor URL
+    * @return threeDsRequestorUrl
+    */
+    @javax.annotation.Nonnull
+      @JsonProperty(JSON_PROPERTY_THREE_DS_REQUESTOR_URL)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-  public String getThreeDsRequestorUrl() {
-    return threeDsRequestorUrl;
-  }
+    public String getThreeDsRequestorUrl() {
+        return threeDsRequestorUrl;
+    }
 
 
-  @JsonProperty(JSON_PROPERTY_THREE_DS_REQUESTOR_URL)
+          @JsonProperty(JSON_PROPERTY_THREE_DS_REQUESTOR_URL)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setThreeDsRequestorUrl(String threeDsRequestorUrl) {
-    this.threeDsRequestorUrl = threeDsRequestorUrl;
-  }
+  public void setThreeDsRequestorUrl(@javax.annotation.Nonnull String threeDsRequestorUrl) {
+            this.threeDsRequestorUrl = threeDsRequestorUrl;
+        }
 
-  @Override
-  public boolean equals(Object o) {
+@Override
+public boolean equals(Object o) {
     if (this == o) {
-      return true;
+    return true;
     }
     if (o == null || getClass() != o.getClass()) {
-      return false;
+    return false;
     }
-    PaymentsExternalAuthenticationResponse paymentsExternalAuthenticationResponse = (PaymentsExternalAuthenticationResponse) o;
-    return Objects.equals(this.transStatus, paymentsExternalAuthenticationResponse.transStatus) &&
+        PaymentsExternalAuthenticationResponse paymentsExternalAuthenticationResponse = (PaymentsExternalAuthenticationResponse) o;
+        return Objects.equals(this.transStatus, paymentsExternalAuthenticationResponse.transStatus) &&
         equalsNullable(this.acsUrl, paymentsExternalAuthenticationResponse.acsUrl) &&
         equalsNullable(this.challengeRequest, paymentsExternalAuthenticationResponse.challengeRequest) &&
         equalsNullable(this.acsReferenceNumber, paymentsExternalAuthenticationResponse.acsReferenceNumber) &&
@@ -345,165 +346,165 @@ public class PaymentsExternalAuthenticationResponse {
         equalsNullable(this.threeDsserverTransId, paymentsExternalAuthenticationResponse.threeDsserverTransId) &&
         equalsNullable(this.acsSignedContent, paymentsExternalAuthenticationResponse.acsSignedContent) &&
         Objects.equals(this.threeDsRequestorUrl, paymentsExternalAuthenticationResponse.threeDsRequestorUrl);
-  }
+}
 
-  private static <T> boolean equalsNullable(JsonNullable<T> a, JsonNullable<T> b) {
-    return a == b || (a != null && b != null && a.isPresent() && b.isPresent() && Objects.deepEquals(a.get(), b.get()));
-  }
+    private static <T> boolean equalsNullable(JsonNullable<T> a, JsonNullable<T> b) {
+        return a == b || (a != null && b != null && a.isPresent() && b.isPresent() && Objects.deepEquals(a.get(), b.get()));
+        }
 
-  @Override
-  public int hashCode() {
-    return Objects.hash(transStatus, hashCodeNullable(acsUrl), hashCodeNullable(challengeRequest), hashCodeNullable(acsReferenceNumber), hashCodeNullable(acsTransId), hashCodeNullable(threeDsserverTransId), hashCodeNullable(acsSignedContent), threeDsRequestorUrl);
-  }
-
-  private static <T> int hashCodeNullable(JsonNullable<T> a) {
-    if (a == null) {
-      return 1;
+    @Override
+    public int hashCode() {
+        return Objects.hash(transStatus, hashCodeNullable(acsUrl), hashCodeNullable(challengeRequest), hashCodeNullable(acsReferenceNumber), hashCodeNullable(acsTransId), hashCodeNullable(threeDsserverTransId), hashCodeNullable(acsSignedContent), threeDsRequestorUrl);
     }
-    return a.isPresent() ? Arrays.deepHashCode(new Object[]{a.get()}) : 31;
-  }
 
-  @Override
-  public String toString() {
+        private static <T> int hashCodeNullable(JsonNullable<T> a) {
+        if (a == null) {
+        return 1;
+        }
+        return a.isPresent() ? Arrays.deepHashCode(new Object[]{a.get()}) : 31;
+        }
+
+    @Override
+    public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class PaymentsExternalAuthenticationResponse {\n");
-    sb.append("    transStatus: ").append(toIndentedString(transStatus)).append("\n");
-    sb.append("    acsUrl: ").append(toIndentedString(acsUrl)).append("\n");
-    sb.append("    challengeRequest: ").append(toIndentedString(challengeRequest)).append("\n");
-    sb.append("    acsReferenceNumber: ").append(toIndentedString(acsReferenceNumber)).append("\n");
-    sb.append("    acsTransId: ").append(toIndentedString(acsTransId)).append("\n");
-    sb.append("    threeDsserverTransId: ").append(toIndentedString(threeDsserverTransId)).append("\n");
-    sb.append("    acsSignedContent: ").append(toIndentedString(acsSignedContent)).append("\n");
-    sb.append("    threeDsRequestorUrl: ").append(toIndentedString(threeDsRequestorUrl)).append("\n");
+        sb.append("    transStatus: ").append(toIndentedString(transStatus)).append("\n");
+        sb.append("    acsUrl: ").append(toIndentedString(acsUrl)).append("\n");
+        sb.append("    challengeRequest: ").append(toIndentedString(challengeRequest)).append("\n");
+        sb.append("    acsReferenceNumber: ").append(toIndentedString(acsReferenceNumber)).append("\n");
+        sb.append("    acsTransId: ").append(toIndentedString(acsTransId)).append("\n");
+        sb.append("    threeDsserverTransId: ").append(toIndentedString(threeDsserverTransId)).append("\n");
+        sb.append("    acsSignedContent: ").append(toIndentedString(acsSignedContent)).append("\n");
+        sb.append("    threeDsRequestorUrl: ").append(toIndentedString(threeDsRequestorUrl)).append("\n");
     sb.append("}");
     return sb.toString();
-  }
+    }
 
-  /**
-   * Convert the given object to string with each line indented by 4 spaces
-   * (except the first line).
-   */
-  private String toIndentedString(Object o) {
+    /**
+    * Convert the given object to string with each line indented by 4 spaces
+    * (except the first line).
+    */
+    private String toIndentedString(Object o) {
     if (o == null) {
-      return "null";
+    return "null";
     }
     return o.toString().replace("\n", "\n    ");
-  }
-
-  /**
-   * Convert the instance into URL query string.
-   *
-   * @return URL query string
-   */
-  public String toUrlQueryString() {
-    return toUrlQueryString(null);
-  }
-
-  /**
-   * Convert the instance into URL query string.
-   *
-   * @param prefix prefix of the query string
-   * @return URL query string
-   */
-  public String toUrlQueryString(String prefix) {
-    String suffix = "";
-    String containerSuffix = "";
-    String containerPrefix = "";
-    if (prefix == null) {
-      // style=form, explode=true, e.g. /pet?name=cat&type=manx
-      prefix = "";
-    } else {
-      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
-      prefix = prefix + "[";
-      suffix = "]";
-      containerSuffix = "]";
-      containerPrefix = "[";
     }
 
-    StringJoiner joiner = new StringJoiner("&");
+        /**
+        * Convert the instance into URL query string.
+        *
+        * @return URL query string
+        */
+        public String toUrlQueryString() {
+        return toUrlQueryString(null);
+        }
 
-    // add `trans_status` to the URL query string
-    if (getTransStatus() != null) {
-      try {
-        joiner.add(String.format("%strans_status%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getTransStatus()), "UTF-8").replaceAll("\\+", "%20")));
-      } catch (UnsupportedEncodingException e) {
-        // Should never happen, UTF-8 is always supported
-        throw new RuntimeException(e);
-      }
+        /**
+        * Convert the instance into URL query string.
+        *
+        * @param prefix prefix of the query string
+        * @return URL query string
+        */
+        public String toUrlQueryString(String prefix) {
+        String suffix = "";
+        String containerSuffix = "";
+        String containerPrefix = "";
+        if (prefix == null) {
+        // style=form, explode=true, e.g. /pet?name=cat&type=manx
+        prefix = "";
+        } else {
+        // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+        prefix = prefix + "[";
+        suffix = "]";
+        containerSuffix = "]";
+        containerPrefix = "[";
+        }
+
+        StringJoiner joiner = new StringJoiner("&");
+
+            // add `trans_status` to the URL query string
+                            if (getTransStatus() != null) {
+                            try {
+                            joiner.add(String.format("%strans_status%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getTransStatus()), "UTF-8").replaceAll("\\+", "%20")));
+                            } catch (UnsupportedEncodingException e) {
+                            // Should never happen, UTF-8 is always supported
+                            throw new RuntimeException(e);
+                            }
+                            }
+
+            // add `acs_url` to the URL query string
+                        if (getAcsUrl() != null) {
+                        try {
+                        joiner.add(String.format("%sacs_url%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getAcsUrl()), "UTF-8").replaceAll("\\+", "%20")));
+                        } catch (UnsupportedEncodingException e) {
+                        // Should never happen, UTF-8 is always supported
+                        throw new RuntimeException(e);
+                        }
+                        }
+
+            // add `challenge_request` to the URL query string
+                        if (getChallengeRequest() != null) {
+                        try {
+                        joiner.add(String.format("%schallenge_request%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getChallengeRequest()), "UTF-8").replaceAll("\\+", "%20")));
+                        } catch (UnsupportedEncodingException e) {
+                        // Should never happen, UTF-8 is always supported
+                        throw new RuntimeException(e);
+                        }
+                        }
+
+            // add `acs_reference_number` to the URL query string
+                        if (getAcsReferenceNumber() != null) {
+                        try {
+                        joiner.add(String.format("%sacs_reference_number%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getAcsReferenceNumber()), "UTF-8").replaceAll("\\+", "%20")));
+                        } catch (UnsupportedEncodingException e) {
+                        // Should never happen, UTF-8 is always supported
+                        throw new RuntimeException(e);
+                        }
+                        }
+
+            // add `acs_trans_id` to the URL query string
+                        if (getAcsTransId() != null) {
+                        try {
+                        joiner.add(String.format("%sacs_trans_id%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getAcsTransId()), "UTF-8").replaceAll("\\+", "%20")));
+                        } catch (UnsupportedEncodingException e) {
+                        // Should never happen, UTF-8 is always supported
+                        throw new RuntimeException(e);
+                        }
+                        }
+
+            // add `three_dsserver_trans_id` to the URL query string
+                        if (getThreeDsserverTransId() != null) {
+                        try {
+                        joiner.add(String.format("%sthree_dsserver_trans_id%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getThreeDsserverTransId()), "UTF-8").replaceAll("\\+", "%20")));
+                        } catch (UnsupportedEncodingException e) {
+                        // Should never happen, UTF-8 is always supported
+                        throw new RuntimeException(e);
+                        }
+                        }
+
+            // add `acs_signed_content` to the URL query string
+                        if (getAcsSignedContent() != null) {
+                        try {
+                        joiner.add(String.format("%sacs_signed_content%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getAcsSignedContent()), "UTF-8").replaceAll("\\+", "%20")));
+                        } catch (UnsupportedEncodingException e) {
+                        // Should never happen, UTF-8 is always supported
+                        throw new RuntimeException(e);
+                        }
+                        }
+
+            // add `three_ds_requestor_url` to the URL query string
+                        if (getThreeDsRequestorUrl() != null) {
+                        try {
+                        joiner.add(String.format("%sthree_ds_requestor_url%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getThreeDsRequestorUrl()), "UTF-8").replaceAll("\\+", "%20")));
+                        } catch (UnsupportedEncodingException e) {
+                        // Should never happen, UTF-8 is always supported
+                        throw new RuntimeException(e);
+                        }
+                        }
+
+        return joiner.toString();
+        }
+
     }
-
-    // add `acs_url` to the URL query string
-    if (getAcsUrl() != null) {
-      try {
-        joiner.add(String.format("%sacs_url%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getAcsUrl()), "UTF-8").replaceAll("\\+", "%20")));
-      } catch (UnsupportedEncodingException e) {
-        // Should never happen, UTF-8 is always supported
-        throw new RuntimeException(e);
-      }
-    }
-
-    // add `challenge_request` to the URL query string
-    if (getChallengeRequest() != null) {
-      try {
-        joiner.add(String.format("%schallenge_request%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getChallengeRequest()), "UTF-8").replaceAll("\\+", "%20")));
-      } catch (UnsupportedEncodingException e) {
-        // Should never happen, UTF-8 is always supported
-        throw new RuntimeException(e);
-      }
-    }
-
-    // add `acs_reference_number` to the URL query string
-    if (getAcsReferenceNumber() != null) {
-      try {
-        joiner.add(String.format("%sacs_reference_number%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getAcsReferenceNumber()), "UTF-8").replaceAll("\\+", "%20")));
-      } catch (UnsupportedEncodingException e) {
-        // Should never happen, UTF-8 is always supported
-        throw new RuntimeException(e);
-      }
-    }
-
-    // add `acs_trans_id` to the URL query string
-    if (getAcsTransId() != null) {
-      try {
-        joiner.add(String.format("%sacs_trans_id%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getAcsTransId()), "UTF-8").replaceAll("\\+", "%20")));
-      } catch (UnsupportedEncodingException e) {
-        // Should never happen, UTF-8 is always supported
-        throw new RuntimeException(e);
-      }
-    }
-
-    // add `three_dsserver_trans_id` to the URL query string
-    if (getThreeDsserverTransId() != null) {
-      try {
-        joiner.add(String.format("%sthree_dsserver_trans_id%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getThreeDsserverTransId()), "UTF-8").replaceAll("\\+", "%20")));
-      } catch (UnsupportedEncodingException e) {
-        // Should never happen, UTF-8 is always supported
-        throw new RuntimeException(e);
-      }
-    }
-
-    // add `acs_signed_content` to the URL query string
-    if (getAcsSignedContent() != null) {
-      try {
-        joiner.add(String.format("%sacs_signed_content%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getAcsSignedContent()), "UTF-8").replaceAll("\\+", "%20")));
-      } catch (UnsupportedEncodingException e) {
-        // Should never happen, UTF-8 is always supported
-        throw new RuntimeException(e);
-      }
-    }
-
-    // add `three_ds_requestor_url` to the URL query string
-    if (getThreeDsRequestorUrl() != null) {
-      try {
-        joiner.add(String.format("%sthree_ds_requestor_url%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getThreeDsRequestorUrl()), "UTF-8").replaceAll("\\+", "%20")));
-      } catch (UnsupportedEncodingException e) {
-        // Should never happen, UTF-8 is always supported
-        throw new RuntimeException(e);
-      }
-    }
-
-    return joiner.toString();
-  }
-
-}
 

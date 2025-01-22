@@ -31,31 +31,34 @@ import java.net.URLEncoder;
 import java.util.StringJoiner;
 
 /**
- * Contains url for Qr code image, this qr code has to be shown in sdk
- */
-@JsonPropertyOrder({
-  NextActionDataOneOf3.JSON_PROPERTY_IMAGE_DATA_URL,
-  NextActionDataOneOf3.JSON_PROPERTY_DISPLAY_TO_TIMESTAMP,
-  NextActionDataOneOf3.JSON_PROPERTY_QR_CODE_URL,
-  NextActionDataOneOf3.JSON_PROPERTY_TYPE
-})
-@JsonTypeName("NextActionData_oneOf_3")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+* Contains url for Qr code image, this qr code has to be shown in sdk
+*/
+    @JsonPropertyOrder({
+        NextActionDataOneOf3.JSON_PROPERTY_IMAGE_DATA_URL,
+        NextActionDataOneOf3.JSON_PROPERTY_DISPLAY_TO_TIMESTAMP,
+        NextActionDataOneOf3.JSON_PROPERTY_QR_CODE_URL,
+        NextActionDataOneOf3.JSON_PROPERTY_TYPE
+    })
+            @JsonTypeName("NextActionData_oneOf_3")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class NextActionDataOneOf3 {
-  public static final String JSON_PROPERTY_IMAGE_DATA_URL = "image_data_url";
-  private String imageDataUrl;
+        public static final String JSON_PROPERTY_IMAGE_DATA_URL = "image_data_url";
+    @javax.annotation.Nonnull
+            private String imageDataUrl;
 
-  public static final String JSON_PROPERTY_DISPLAY_TO_TIMESTAMP = "display_to_timestamp";
-  private JsonNullable<Long> displayToTimestamp = JsonNullable.<Long>undefined();
+        public static final String JSON_PROPERTY_DISPLAY_TO_TIMESTAMP = "display_to_timestamp";
+    @javax.annotation.Nullable
+            private JsonNullable<Long> displayToTimestamp = JsonNullable.<Long>undefined();
 
-  public static final String JSON_PROPERTY_QR_CODE_URL = "qr_code_url";
-  private String qrCodeUrl;
+        public static final String JSON_PROPERTY_QR_CODE_URL = "qr_code_url";
+    @javax.annotation.Nonnull
+            private String qrCodeUrl;
 
-  /**
+              /**
    * Gets or Sets type
    */
   public enum TypeEnum {
-    QR_CODE_INFORMATION("qr_code_information");
+    QR_CODE_INFORMATION(String.valueOf("qr_code_information"));
 
     private String value;
 
@@ -84,251 +87,249 @@ public class NextActionDataOneOf3 {
     }
   }
 
-  public static final String JSON_PROPERTY_TYPE = "type";
-  private TypeEnum type;
+        public static final String JSON_PROPERTY_TYPE = "type";
+    @javax.annotation.Nonnull
+            private TypeEnum type;
 
-  public NextActionDataOneOf3() {
-  }
+public NextActionDataOneOf3() {
+}
 
-  public NextActionDataOneOf3 imageDataUrl(String imageDataUrl) {
-    
-    this.imageDataUrl = imageDataUrl;
-    return this;
-  }
+        public NextActionDataOneOf3 imageDataUrl(@javax.annotation.Nonnull String imageDataUrl) {
+        
+        this.imageDataUrl = imageDataUrl;
+        return this;
+        }
 
-   /**
-   * Hyperswitch generated image data source url
-   * @return imageDataUrl
-  **/
-  @javax.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_IMAGE_DATA_URL)
+    /**
+        * Hyperswitch generated image data source url
+    * @return imageDataUrl
+    */
+    @javax.annotation.Nonnull
+      @JsonProperty(JSON_PROPERTY_IMAGE_DATA_URL)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-  public String getImageDataUrl() {
-    return imageDataUrl;
-  }
+    public String getImageDataUrl() {
+        return imageDataUrl;
+    }
 
 
-  @JsonProperty(JSON_PROPERTY_IMAGE_DATA_URL)
+          @JsonProperty(JSON_PROPERTY_IMAGE_DATA_URL)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setImageDataUrl(String imageDataUrl) {
-    this.imageDataUrl = imageDataUrl;
-  }
+  public void setImageDataUrl(@javax.annotation.Nonnull String imageDataUrl) {
+            this.imageDataUrl = imageDataUrl;
+        }
 
+        public NextActionDataOneOf3 displayToTimestamp(@javax.annotation.Nullable Long displayToTimestamp) {
+        this.displayToTimestamp = JsonNullable.<Long>of(displayToTimestamp);
+        
+        return this;
+        }
 
-  public NextActionDataOneOf3 displayToTimestamp(Long displayToTimestamp) {
-    this.displayToTimestamp = JsonNullable.<Long>of(displayToTimestamp);
+    /**
+        * Get displayToTimestamp
+    * @return displayToTimestamp
+    */
+    @javax.annotation.Nullable
+        @JsonIgnore
     
-    return this;
-  }
+    public Long getDisplayToTimestamp() {
+                return displayToTimestamp.orElse(null);
+    }
 
-   /**
-   * Get displayToTimestamp
-   * @return displayToTimestamp
-  **/
-  @javax.annotation.Nullable
-  @JsonIgnore
-
-  public Long getDisplayToTimestamp() {
-        return displayToTimestamp.orElse(null);
-  }
-
-  @JsonProperty(JSON_PROPERTY_DISPLAY_TO_TIMESTAMP)
+          @JsonProperty(JSON_PROPERTY_DISPLAY_TO_TIMESTAMP)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-  public JsonNullable<Long> getDisplayToTimestamp_JsonNullable() {
-    return displayToTimestamp;
-  }
-  
-  @JsonProperty(JSON_PROPERTY_DISPLAY_TO_TIMESTAMP)
-  public void setDisplayToTimestamp_JsonNullable(JsonNullable<Long> displayToTimestamp) {
-    this.displayToTimestamp = displayToTimestamp;
-  }
-
-  public void setDisplayToTimestamp(Long displayToTimestamp) {
-    this.displayToTimestamp = JsonNullable.<Long>of(displayToTimestamp);
-  }
-
-
-  public NextActionDataOneOf3 qrCodeUrl(String qrCodeUrl) {
+        public JsonNullable<Long> getDisplayToTimestamp_JsonNullable() {
+        return displayToTimestamp;
+        }
     
-    this.qrCodeUrl = qrCodeUrl;
-    return this;
-  }
+        @JsonProperty(JSON_PROPERTY_DISPLAY_TO_TIMESTAMP)
+        public void setDisplayToTimestamp_JsonNullable(JsonNullable<Long> displayToTimestamp) {
+        this.displayToTimestamp = displayToTimestamp;
+        }
 
-   /**
-   * The url for Qr code given by the connector
-   * @return qrCodeUrl
-  **/
-  @javax.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_QR_CODE_URL)
+          public void setDisplayToTimestamp(@javax.annotation.Nullable Long displayToTimestamp) {
+            this.displayToTimestamp = JsonNullable.<Long>of(displayToTimestamp);
+        }
+
+        public NextActionDataOneOf3 qrCodeUrl(@javax.annotation.Nonnull String qrCodeUrl) {
+        
+        this.qrCodeUrl = qrCodeUrl;
+        return this;
+        }
+
+    /**
+        * The url for Qr code given by the connector
+    * @return qrCodeUrl
+    */
+    @javax.annotation.Nonnull
+      @JsonProperty(JSON_PROPERTY_QR_CODE_URL)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-  public String getQrCodeUrl() {
-    return qrCodeUrl;
-  }
+    public String getQrCodeUrl() {
+        return qrCodeUrl;
+    }
 
 
-  @JsonProperty(JSON_PROPERTY_QR_CODE_URL)
+          @JsonProperty(JSON_PROPERTY_QR_CODE_URL)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setQrCodeUrl(String qrCodeUrl) {
-    this.qrCodeUrl = qrCodeUrl;
-  }
+  public void setQrCodeUrl(@javax.annotation.Nonnull String qrCodeUrl) {
+            this.qrCodeUrl = qrCodeUrl;
+        }
 
+        public NextActionDataOneOf3 type(@javax.annotation.Nonnull TypeEnum type) {
+        
+        this.type = type;
+        return this;
+        }
 
-  public NextActionDataOneOf3 type(TypeEnum type) {
-    
-    this.type = type;
-    return this;
-  }
-
-   /**
-   * Get type
-   * @return type
-  **/
-  @javax.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_TYPE)
+    /**
+        * Get type
+    * @return type
+    */
+    @javax.annotation.Nonnull
+      @JsonProperty(JSON_PROPERTY_TYPE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-  public TypeEnum getType() {
-    return type;
-  }
+    public TypeEnum getType() {
+        return type;
+    }
 
 
-  @JsonProperty(JSON_PROPERTY_TYPE)
+          @JsonProperty(JSON_PROPERTY_TYPE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setType(TypeEnum type) {
-    this.type = type;
-  }
+  public void setType(@javax.annotation.Nonnull TypeEnum type) {
+            this.type = type;
+        }
 
-  @Override
-  public boolean equals(Object o) {
+@Override
+public boolean equals(Object o) {
     if (this == o) {
-      return true;
+    return true;
     }
     if (o == null || getClass() != o.getClass()) {
-      return false;
+    return false;
     }
-    NextActionDataOneOf3 nextActionDataOneOf3 = (NextActionDataOneOf3) o;
-    return Objects.equals(this.imageDataUrl, nextActionDataOneOf3.imageDataUrl) &&
+        NextActionDataOneOf3 nextActionDataOneOf3 = (NextActionDataOneOf3) o;
+        return Objects.equals(this.imageDataUrl, nextActionDataOneOf3.imageDataUrl) &&
         equalsNullable(this.displayToTimestamp, nextActionDataOneOf3.displayToTimestamp) &&
         Objects.equals(this.qrCodeUrl, nextActionDataOneOf3.qrCodeUrl) &&
         Objects.equals(this.type, nextActionDataOneOf3.type);
-  }
+}
 
-  private static <T> boolean equalsNullable(JsonNullable<T> a, JsonNullable<T> b) {
-    return a == b || (a != null && b != null && a.isPresent() && b.isPresent() && Objects.deepEquals(a.get(), b.get()));
-  }
+    private static <T> boolean equalsNullable(JsonNullable<T> a, JsonNullable<T> b) {
+        return a == b || (a != null && b != null && a.isPresent() && b.isPresent() && Objects.deepEquals(a.get(), b.get()));
+        }
 
-  @Override
-  public int hashCode() {
-    return Objects.hash(imageDataUrl, hashCodeNullable(displayToTimestamp), qrCodeUrl, type);
-  }
-
-  private static <T> int hashCodeNullable(JsonNullable<T> a) {
-    if (a == null) {
-      return 1;
+    @Override
+    public int hashCode() {
+        return Objects.hash(imageDataUrl, hashCodeNullable(displayToTimestamp), qrCodeUrl, type);
     }
-    return a.isPresent() ? Arrays.deepHashCode(new Object[]{a.get()}) : 31;
-  }
 
-  @Override
-  public String toString() {
+        private static <T> int hashCodeNullable(JsonNullable<T> a) {
+        if (a == null) {
+        return 1;
+        }
+        return a.isPresent() ? Arrays.deepHashCode(new Object[]{a.get()}) : 31;
+        }
+
+    @Override
+    public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class NextActionDataOneOf3 {\n");
-    sb.append("    imageDataUrl: ").append(toIndentedString(imageDataUrl)).append("\n");
-    sb.append("    displayToTimestamp: ").append(toIndentedString(displayToTimestamp)).append("\n");
-    sb.append("    qrCodeUrl: ").append(toIndentedString(qrCodeUrl)).append("\n");
-    sb.append("    type: ").append(toIndentedString(type)).append("\n");
+        sb.append("    imageDataUrl: ").append(toIndentedString(imageDataUrl)).append("\n");
+        sb.append("    displayToTimestamp: ").append(toIndentedString(displayToTimestamp)).append("\n");
+        sb.append("    qrCodeUrl: ").append(toIndentedString(qrCodeUrl)).append("\n");
+        sb.append("    type: ").append(toIndentedString(type)).append("\n");
     sb.append("}");
     return sb.toString();
-  }
+    }
 
-  /**
-   * Convert the given object to string with each line indented by 4 spaces
-   * (except the first line).
-   */
-  private String toIndentedString(Object o) {
+    /**
+    * Convert the given object to string with each line indented by 4 spaces
+    * (except the first line).
+    */
+    private String toIndentedString(Object o) {
     if (o == null) {
-      return "null";
+    return "null";
     }
     return o.toString().replace("\n", "\n    ");
-  }
-
-  /**
-   * Convert the instance into URL query string.
-   *
-   * @return URL query string
-   */
-  public String toUrlQueryString() {
-    return toUrlQueryString(null);
-  }
-
-  /**
-   * Convert the instance into URL query string.
-   *
-   * @param prefix prefix of the query string
-   * @return URL query string
-   */
-  public String toUrlQueryString(String prefix) {
-    String suffix = "";
-    String containerSuffix = "";
-    String containerPrefix = "";
-    if (prefix == null) {
-      // style=form, explode=true, e.g. /pet?name=cat&type=manx
-      prefix = "";
-    } else {
-      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
-      prefix = prefix + "[";
-      suffix = "]";
-      containerSuffix = "]";
-      containerPrefix = "[";
     }
 
-    StringJoiner joiner = new StringJoiner("&");
+        /**
+        * Convert the instance into URL query string.
+        *
+        * @return URL query string
+        */
+        public String toUrlQueryString() {
+        return toUrlQueryString(null);
+        }
 
-    // add `image_data_url` to the URL query string
-    if (getImageDataUrl() != null) {
-      try {
-        joiner.add(String.format("%simage_data_url%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getImageDataUrl()), "UTF-8").replaceAll("\\+", "%20")));
-      } catch (UnsupportedEncodingException e) {
-        // Should never happen, UTF-8 is always supported
-        throw new RuntimeException(e);
-      }
+        /**
+        * Convert the instance into URL query string.
+        *
+        * @param prefix prefix of the query string
+        * @return URL query string
+        */
+        public String toUrlQueryString(String prefix) {
+        String suffix = "";
+        String containerSuffix = "";
+        String containerPrefix = "";
+        if (prefix == null) {
+        // style=form, explode=true, e.g. /pet?name=cat&type=manx
+        prefix = "";
+        } else {
+        // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+        prefix = prefix + "[";
+        suffix = "]";
+        containerSuffix = "]";
+        containerPrefix = "[";
+        }
+
+        StringJoiner joiner = new StringJoiner("&");
+
+            // add `image_data_url` to the URL query string
+                        if (getImageDataUrl() != null) {
+                        try {
+                        joiner.add(String.format("%simage_data_url%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getImageDataUrl()), "UTF-8").replaceAll("\\+", "%20")));
+                        } catch (UnsupportedEncodingException e) {
+                        // Should never happen, UTF-8 is always supported
+                        throw new RuntimeException(e);
+                        }
+                        }
+
+            // add `display_to_timestamp` to the URL query string
+                        if (getDisplayToTimestamp() != null) {
+                        try {
+                        joiner.add(String.format("%sdisplay_to_timestamp%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getDisplayToTimestamp()), "UTF-8").replaceAll("\\+", "%20")));
+                        } catch (UnsupportedEncodingException e) {
+                        // Should never happen, UTF-8 is always supported
+                        throw new RuntimeException(e);
+                        }
+                        }
+
+            // add `qr_code_url` to the URL query string
+                        if (getQrCodeUrl() != null) {
+                        try {
+                        joiner.add(String.format("%sqr_code_url%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getQrCodeUrl()), "UTF-8").replaceAll("\\+", "%20")));
+                        } catch (UnsupportedEncodingException e) {
+                        // Should never happen, UTF-8 is always supported
+                        throw new RuntimeException(e);
+                        }
+                        }
+
+            // add `type` to the URL query string
+                        if (getType() != null) {
+                        try {
+                        joiner.add(String.format("%stype%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getType()), "UTF-8").replaceAll("\\+", "%20")));
+                        } catch (UnsupportedEncodingException e) {
+                        // Should never happen, UTF-8 is always supported
+                        throw new RuntimeException(e);
+                        }
+                        }
+
+        return joiner.toString();
+        }
+
     }
-
-    // add `display_to_timestamp` to the URL query string
-    if (getDisplayToTimestamp() != null) {
-      try {
-        joiner.add(String.format("%sdisplay_to_timestamp%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getDisplayToTimestamp()), "UTF-8").replaceAll("\\+", "%20")));
-      } catch (UnsupportedEncodingException e) {
-        // Should never happen, UTF-8 is always supported
-        throw new RuntimeException(e);
-      }
-    }
-
-    // add `qr_code_url` to the URL query string
-    if (getQrCodeUrl() != null) {
-      try {
-        joiner.add(String.format("%sqr_code_url%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getQrCodeUrl()), "UTF-8").replaceAll("\\+", "%20")));
-      } catch (UnsupportedEncodingException e) {
-        // Should never happen, UTF-8 is always supported
-        throw new RuntimeException(e);
-      }
-    }
-
-    // add `type` to the URL query string
-    if (getType() != null) {
-      try {
-        joiner.add(String.format("%stype%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getType()), "UTF-8").replaceAll("\\+", "%20")));
-      } catch (UnsupportedEncodingException e) {
-        // Should never happen, UTF-8 is always supported
-        throw new RuntimeException(e);
-      }
-    }
-
-    return joiner.toString();
-  }
-
-}
 

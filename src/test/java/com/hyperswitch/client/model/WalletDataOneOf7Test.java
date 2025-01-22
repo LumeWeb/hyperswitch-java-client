@@ -19,22 +19,21 @@ import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonTypeName;
 import com.fasterxml.jackson.annotation.JsonValue;
 import com.hyperswitch.client.model.ApplePayWalletData;
-import org.junit.Assert;
-import org.junit.Ignore;
-import org.junit.Test;
-
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Test;
 
 /**
  * Model tests for WalletDataOneOf7
  */
-public class WalletDataOneOf7Test {
+class WalletDataOneOf7Test {
     private final WalletDataOneOf7 model = new WalletDataOneOf7();
 
     /**
      * Model tests for WalletDataOneOf7
      */
     @Test
-    public void testWalletDataOneOf7() {
+    void testWalletDataOneOf7() {
         // TODO: test WalletDataOneOf7
     }
 
@@ -42,7 +41,7 @@ public class WalletDataOneOf7Test {
      * Test the property 'applePay'
      */
     @Test
-    public void applePayTest() {
+    void applePayTest() {
         // TODO: test applePay
     }
 

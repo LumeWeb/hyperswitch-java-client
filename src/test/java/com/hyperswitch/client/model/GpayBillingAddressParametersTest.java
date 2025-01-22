@@ -19,22 +19,21 @@ import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonTypeName;
 import com.fasterxml.jackson.annotation.JsonValue;
 import com.hyperswitch.client.model.GpayBillingAddressFormat;
-import org.junit.Assert;
-import org.junit.Ignore;
-import org.junit.Test;
-
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Test;
 
 /**
  * Model tests for GpayBillingAddressParameters
  */
-public class GpayBillingAddressParametersTest {
+class GpayBillingAddressParametersTest {
     private final GpayBillingAddressParameters model = new GpayBillingAddressParameters();
 
     /**
      * Model tests for GpayBillingAddressParameters
      */
     @Test
-    public void testGpayBillingAddressParameters() {
+    void testGpayBillingAddressParameters() {
         // TODO: test GpayBillingAddressParameters
     }
 
@@ -42,7 +41,7 @@ public class GpayBillingAddressParametersTest {
      * Test the property 'phoneNumberRequired'
      */
     @Test
-    public void phoneNumberRequiredTest() {
+    void phoneNumberRequiredTest() {
         // TODO: test phoneNumberRequired
     }
 
@@ -50,7 +49,7 @@ public class GpayBillingAddressParametersTest {
      * Test the property 'format'
      */
     @Test
-    public void formatTest() {
+    void formatTest() {
         // TODO: test format
     }
 

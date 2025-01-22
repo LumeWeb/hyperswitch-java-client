@@ -22,22 +22,21 @@ import org.openapitools.jackson.nullable.JsonNullable;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.openapitools.jackson.nullable.JsonNullable;
 import java.util.NoSuchElementException;
-import org.junit.Assert;
-import org.junit.Ignore;
-import org.junit.Test;
-
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Test;
 
 /**
  * Model tests for AchBillingDetails
  */
-public class AchBillingDetailsTest {
+class AchBillingDetailsTest {
     private final AchBillingDetails model = new AchBillingDetails();
 
     /**
      * Model tests for AchBillingDetails
      */
     @Test
-    public void testAchBillingDetails() {
+    void testAchBillingDetails() {
         // TODO: test AchBillingDetails
     }
 
@@ -45,7 +44,7 @@ public class AchBillingDetailsTest {
      * Test the property 'email'
      */
     @Test
-    public void emailTest() {
+    void emailTest() {
         // TODO: test email
     }
 

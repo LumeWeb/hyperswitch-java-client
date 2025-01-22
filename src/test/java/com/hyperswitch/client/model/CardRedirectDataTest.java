@@ -22,22 +22,21 @@ import com.hyperswitch.client.model.CardRedirectDataOneOf;
 import com.hyperswitch.client.model.CardRedirectDataOneOf1;
 import com.hyperswitch.client.model.CardRedirectDataOneOf2;
 import com.hyperswitch.client.model.CardRedirectDataOneOf3;
-import org.junit.Assert;
-import org.junit.Ignore;
-import org.junit.Test;
-
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Test;
 
 /**
  * Model tests for CardRedirectData
  */
-public class CardRedirectDataTest {
+class CardRedirectDataTest {
     private final CardRedirectData model = new CardRedirectData();
 
     /**
      * Model tests for CardRedirectData
      */
     @Test
-    public void testCardRedirectData() {
+    void testCardRedirectData() {
         // TODO: test CardRedirectData
     }
 
@@ -45,7 +44,7 @@ public class CardRedirectDataTest {
      * Test the property 'knet'
      */
     @Test
-    public void knetTest() {
+    void knetTest() {
         // TODO: test knet
     }
 
@@ -53,7 +52,7 @@ public class CardRedirectDataTest {
      * Test the property 'benefit'
      */
     @Test
-    public void benefitTest() {
+    void benefitTest() {
         // TODO: test benefit
     }
 
@@ -61,7 +60,7 @@ public class CardRedirectDataTest {
      * Test the property 'momoAtm'
      */
     @Test
-    public void momoAtmTest() {
+    void momoAtmTest() {
         // TODO: test momoAtm
     }
 
@@ -69,7 +68,7 @@ public class CardRedirectDataTest {
      * Test the property 'cardRedirect'
      */
     @Test
-    public void cardRedirectTest() {
+    void cardRedirectTest() {
         // TODO: test cardRedirect
     }
 

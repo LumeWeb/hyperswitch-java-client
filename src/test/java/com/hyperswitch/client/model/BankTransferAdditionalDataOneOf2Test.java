@@ -18,22 +18,21 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonTypeName;
 import com.fasterxml.jackson.annotation.JsonValue;
-import org.junit.Assert;
-import org.junit.Ignore;
-import org.junit.Test;
-
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Test;
 
 /**
  * Model tests for BankTransferAdditionalDataOneOf2
  */
-public class BankTransferAdditionalDataOneOf2Test {
+class BankTransferAdditionalDataOneOf2Test {
     private final BankTransferAdditionalDataOneOf2 model = new BankTransferAdditionalDataOneOf2();
 
     /**
      * Model tests for BankTransferAdditionalDataOneOf2
      */
     @Test
-    public void testBankTransferAdditionalDataOneOf2() {
+    void testBankTransferAdditionalDataOneOf2() {
         // TODO: test BankTransferAdditionalDataOneOf2
     }
 
@@ -41,7 +40,7 @@ public class BankTransferAdditionalDataOneOf2Test {
      * Test the property 'bacs'
      */
     @Test
-    public void bacsTest() {
+    void bacsTest() {
         // TODO: test bacs
     }
 

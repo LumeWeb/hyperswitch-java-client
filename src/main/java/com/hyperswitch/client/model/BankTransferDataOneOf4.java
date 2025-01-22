@@ -28,121 +28,122 @@ import java.net.URLEncoder;
 import java.util.StringJoiner;
 
 /**
- * BankTransferDataOneOf4
- */
-@JsonPropertyOrder({
-  BankTransferDataOneOf4.JSON_PROPERTY_PERMATA_BANK_TRANSFER
-})
-@JsonTypeName("BankTransferData_oneOf_4")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+* BankTransferDataOneOf4
+*/
+    @JsonPropertyOrder({
+        BankTransferDataOneOf4.JSON_PROPERTY_PERMATA_BANK_TRANSFER
+    })
+            @JsonTypeName("BankTransferData_oneOf_4")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class BankTransferDataOneOf4 {
-  public static final String JSON_PROPERTY_PERMATA_BANK_TRANSFER = "permata_bank_transfer";
-  private BankTransferDataOneOf4PermataBankTransfer permataBankTransfer;
+        public static final String JSON_PROPERTY_PERMATA_BANK_TRANSFER = "permata_bank_transfer";
+    @javax.annotation.Nonnull
+            private BankTransferDataOneOf4PermataBankTransfer permataBankTransfer;
 
-  public BankTransferDataOneOf4() {
-  }
+public BankTransferDataOneOf4() {
+}
 
-  public BankTransferDataOneOf4 permataBankTransfer(BankTransferDataOneOf4PermataBankTransfer permataBankTransfer) {
-    
-    this.permataBankTransfer = permataBankTransfer;
-    return this;
-  }
+        public BankTransferDataOneOf4 permataBankTransfer(@javax.annotation.Nonnull BankTransferDataOneOf4PermataBankTransfer permataBankTransfer) {
+        
+        this.permataBankTransfer = permataBankTransfer;
+        return this;
+        }
 
-   /**
-   * Get permataBankTransfer
-   * @return permataBankTransfer
-  **/
-  @javax.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_PERMATA_BANK_TRANSFER)
+    /**
+        * Get permataBankTransfer
+    * @return permataBankTransfer
+    */
+    @javax.annotation.Nonnull
+      @JsonProperty(JSON_PROPERTY_PERMATA_BANK_TRANSFER)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-  public BankTransferDataOneOf4PermataBankTransfer getPermataBankTransfer() {
-    return permataBankTransfer;
-  }
+    public BankTransferDataOneOf4PermataBankTransfer getPermataBankTransfer() {
+        return permataBankTransfer;
+    }
 
 
-  @JsonProperty(JSON_PROPERTY_PERMATA_BANK_TRANSFER)
+          @JsonProperty(JSON_PROPERTY_PERMATA_BANK_TRANSFER)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setPermataBankTransfer(BankTransferDataOneOf4PermataBankTransfer permataBankTransfer) {
-    this.permataBankTransfer = permataBankTransfer;
-  }
+  public void setPermataBankTransfer(@javax.annotation.Nonnull BankTransferDataOneOf4PermataBankTransfer permataBankTransfer) {
+            this.permataBankTransfer = permataBankTransfer;
+        }
 
-  @Override
-  public boolean equals(Object o) {
+@Override
+public boolean equals(Object o) {
     if (this == o) {
-      return true;
+    return true;
     }
     if (o == null || getClass() != o.getClass()) {
-      return false;
+    return false;
     }
-    BankTransferDataOneOf4 bankTransferDataOneOf4 = (BankTransferDataOneOf4) o;
-    return Objects.equals(this.permataBankTransfer, bankTransferDataOneOf4.permataBankTransfer);
-  }
+        BankTransferDataOneOf4 bankTransferDataOneOf4 = (BankTransferDataOneOf4) o;
+        return Objects.equals(this.permataBankTransfer, bankTransferDataOneOf4.permataBankTransfer);
+}
 
-  @Override
-  public int hashCode() {
-    return Objects.hash(permataBankTransfer);
-  }
+    @Override
+    public int hashCode() {
+        return Objects.hash(permataBankTransfer);
+    }
 
-  @Override
-  public String toString() {
+    @Override
+    public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class BankTransferDataOneOf4 {\n");
-    sb.append("    permataBankTransfer: ").append(toIndentedString(permataBankTransfer)).append("\n");
+        sb.append("    permataBankTransfer: ").append(toIndentedString(permataBankTransfer)).append("\n");
     sb.append("}");
     return sb.toString();
-  }
+    }
 
-  /**
-   * Convert the given object to string with each line indented by 4 spaces
-   * (except the first line).
-   */
-  private String toIndentedString(Object o) {
+    /**
+    * Convert the given object to string with each line indented by 4 spaces
+    * (except the first line).
+    */
+    private String toIndentedString(Object o) {
     if (o == null) {
-      return "null";
+    return "null";
     }
     return o.toString().replace("\n", "\n    ");
-  }
-
-  /**
-   * Convert the instance into URL query string.
-   *
-   * @return URL query string
-   */
-  public String toUrlQueryString() {
-    return toUrlQueryString(null);
-  }
-
-  /**
-   * Convert the instance into URL query string.
-   *
-   * @param prefix prefix of the query string
-   * @return URL query string
-   */
-  public String toUrlQueryString(String prefix) {
-    String suffix = "";
-    String containerSuffix = "";
-    String containerPrefix = "";
-    if (prefix == null) {
-      // style=form, explode=true, e.g. /pet?name=cat&type=manx
-      prefix = "";
-    } else {
-      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
-      prefix = prefix + "[";
-      suffix = "]";
-      containerSuffix = "]";
-      containerPrefix = "[";
     }
 
-    StringJoiner joiner = new StringJoiner("&");
+        /**
+        * Convert the instance into URL query string.
+        *
+        * @return URL query string
+        */
+        public String toUrlQueryString() {
+        return toUrlQueryString(null);
+        }
 
-    // add `permata_bank_transfer` to the URL query string
-    if (getPermataBankTransfer() != null) {
-      joiner.add(getPermataBankTransfer().toUrlQueryString(prefix + "permata_bank_transfer" + suffix));
+        /**
+        * Convert the instance into URL query string.
+        *
+        * @param prefix prefix of the query string
+        * @return URL query string
+        */
+        public String toUrlQueryString(String prefix) {
+        String suffix = "";
+        String containerSuffix = "";
+        String containerPrefix = "";
+        if (prefix == null) {
+        // style=form, explode=true, e.g. /pet?name=cat&type=manx
+        prefix = "";
+        } else {
+        // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+        prefix = prefix + "[";
+        suffix = "]";
+        containerSuffix = "]";
+        containerPrefix = "[";
+        }
+
+        StringJoiner joiner = new StringJoiner("&");
+
+            // add `permata_bank_transfer` to the URL query string
+                            if (getPermataBankTransfer() != null) {
+                            joiner.add(getPermataBankTransfer().toUrlQueryString(prefix + "permata_bank_transfer" + suffix));
+                            }
+
+        return joiner.toString();
+        }
+
     }
-
-    return joiner.toString();
-  }
-
-}
 

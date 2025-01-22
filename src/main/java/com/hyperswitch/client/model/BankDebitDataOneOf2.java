@@ -28,121 +28,122 @@ import java.net.URLEncoder;
 import java.util.StringJoiner;
 
 /**
- * BankDebitDataOneOf2
- */
-@JsonPropertyOrder({
-  BankDebitDataOneOf2.JSON_PROPERTY_BECS_BANK_DEBIT
-})
-@JsonTypeName("BankDebitData_oneOf_2")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+* BankDebitDataOneOf2
+*/
+    @JsonPropertyOrder({
+        BankDebitDataOneOf2.JSON_PROPERTY_BECS_BANK_DEBIT
+    })
+            @JsonTypeName("BankDebitData_oneOf_2")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class BankDebitDataOneOf2 {
-  public static final String JSON_PROPERTY_BECS_BANK_DEBIT = "becs_bank_debit";
-  private BankDebitDataOneOf2BecsBankDebit becsBankDebit;
+        public static final String JSON_PROPERTY_BECS_BANK_DEBIT = "becs_bank_debit";
+    @javax.annotation.Nonnull
+            private BankDebitDataOneOf2BecsBankDebit becsBankDebit;
 
-  public BankDebitDataOneOf2() {
-  }
+public BankDebitDataOneOf2() {
+}
 
-  public BankDebitDataOneOf2 becsBankDebit(BankDebitDataOneOf2BecsBankDebit becsBankDebit) {
-    
-    this.becsBankDebit = becsBankDebit;
-    return this;
-  }
+        public BankDebitDataOneOf2 becsBankDebit(@javax.annotation.Nonnull BankDebitDataOneOf2BecsBankDebit becsBankDebit) {
+        
+        this.becsBankDebit = becsBankDebit;
+        return this;
+        }
 
-   /**
-   * Get becsBankDebit
-   * @return becsBankDebit
-  **/
-  @javax.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_BECS_BANK_DEBIT)
+    /**
+        * Get becsBankDebit
+    * @return becsBankDebit
+    */
+    @javax.annotation.Nonnull
+      @JsonProperty(JSON_PROPERTY_BECS_BANK_DEBIT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-  public BankDebitDataOneOf2BecsBankDebit getBecsBankDebit() {
-    return becsBankDebit;
-  }
+    public BankDebitDataOneOf2BecsBankDebit getBecsBankDebit() {
+        return becsBankDebit;
+    }
 
 
-  @JsonProperty(JSON_PROPERTY_BECS_BANK_DEBIT)
+          @JsonProperty(JSON_PROPERTY_BECS_BANK_DEBIT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setBecsBankDebit(BankDebitDataOneOf2BecsBankDebit becsBankDebit) {
-    this.becsBankDebit = becsBankDebit;
-  }
+  public void setBecsBankDebit(@javax.annotation.Nonnull BankDebitDataOneOf2BecsBankDebit becsBankDebit) {
+            this.becsBankDebit = becsBankDebit;
+        }
 
-  @Override
-  public boolean equals(Object o) {
+@Override
+public boolean equals(Object o) {
     if (this == o) {
-      return true;
+    return true;
     }
     if (o == null || getClass() != o.getClass()) {
-      return false;
+    return false;
     }
-    BankDebitDataOneOf2 bankDebitDataOneOf2 = (BankDebitDataOneOf2) o;
-    return Objects.equals(this.becsBankDebit, bankDebitDataOneOf2.becsBankDebit);
-  }
+        BankDebitDataOneOf2 bankDebitDataOneOf2 = (BankDebitDataOneOf2) o;
+        return Objects.equals(this.becsBankDebit, bankDebitDataOneOf2.becsBankDebit);
+}
 
-  @Override
-  public int hashCode() {
-    return Objects.hash(becsBankDebit);
-  }
+    @Override
+    public int hashCode() {
+        return Objects.hash(becsBankDebit);
+    }
 
-  @Override
-  public String toString() {
+    @Override
+    public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class BankDebitDataOneOf2 {\n");
-    sb.append("    becsBankDebit: ").append(toIndentedString(becsBankDebit)).append("\n");
+        sb.append("    becsBankDebit: ").append(toIndentedString(becsBankDebit)).append("\n");
     sb.append("}");
     return sb.toString();
-  }
+    }
 
-  /**
-   * Convert the given object to string with each line indented by 4 spaces
-   * (except the first line).
-   */
-  private String toIndentedString(Object o) {
+    /**
+    * Convert the given object to string with each line indented by 4 spaces
+    * (except the first line).
+    */
+    private String toIndentedString(Object o) {
     if (o == null) {
-      return "null";
+    return "null";
     }
     return o.toString().replace("\n", "\n    ");
-  }
-
-  /**
-   * Convert the instance into URL query string.
-   *
-   * @return URL query string
-   */
-  public String toUrlQueryString() {
-    return toUrlQueryString(null);
-  }
-
-  /**
-   * Convert the instance into URL query string.
-   *
-   * @param prefix prefix of the query string
-   * @return URL query string
-   */
-  public String toUrlQueryString(String prefix) {
-    String suffix = "";
-    String containerSuffix = "";
-    String containerPrefix = "";
-    if (prefix == null) {
-      // style=form, explode=true, e.g. /pet?name=cat&type=manx
-      prefix = "";
-    } else {
-      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
-      prefix = prefix + "[";
-      suffix = "]";
-      containerSuffix = "]";
-      containerPrefix = "[";
     }
 
-    StringJoiner joiner = new StringJoiner("&");
+        /**
+        * Convert the instance into URL query string.
+        *
+        * @return URL query string
+        */
+        public String toUrlQueryString() {
+        return toUrlQueryString(null);
+        }
 
-    // add `becs_bank_debit` to the URL query string
-    if (getBecsBankDebit() != null) {
-      joiner.add(getBecsBankDebit().toUrlQueryString(prefix + "becs_bank_debit" + suffix));
+        /**
+        * Convert the instance into URL query string.
+        *
+        * @param prefix prefix of the query string
+        * @return URL query string
+        */
+        public String toUrlQueryString(String prefix) {
+        String suffix = "";
+        String containerSuffix = "";
+        String containerPrefix = "";
+        if (prefix == null) {
+        // style=form, explode=true, e.g. /pet?name=cat&type=manx
+        prefix = "";
+        } else {
+        // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+        prefix = prefix + "[";
+        suffix = "]";
+        containerSuffix = "]";
+        containerPrefix = "[";
+        }
+
+        StringJoiner joiner = new StringJoiner("&");
+
+            // add `becs_bank_debit` to the URL query string
+                            if (getBecsBankDebit() != null) {
+                            joiner.add(getBecsBankDebit().toUrlQueryString(prefix + "becs_bank_debit" + suffix));
+                            }
+
+        return joiner.toString();
+        }
+
     }
-
-    return joiner.toString();
-  }
-
-}
 

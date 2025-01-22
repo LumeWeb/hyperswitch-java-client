@@ -18,22 +18,21 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonTypeName;
 import com.fasterxml.jackson.annotation.JsonValue;
-import org.junit.Assert;
-import org.junit.Ignore;
-import org.junit.Test;
-
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Test;
 
 /**
  * Model tests for CardPayout
  */
-public class CardPayoutTest {
+class CardPayoutTest {
     private final CardPayout model = new CardPayout();
 
     /**
      * Model tests for CardPayout
      */
     @Test
-    public void testCardPayout() {
+    void testCardPayout() {
         // TODO: test CardPayout
     }
 
@@ -41,7 +40,7 @@ public class CardPayoutTest {
      * Test the property 'cardNumber'
      */
     @Test
-    public void cardNumberTest() {
+    void cardNumberTest() {
         // TODO: test cardNumber
     }
 
@@ -49,7 +48,7 @@ public class CardPayoutTest {
      * Test the property 'expiryMonth'
      */
     @Test
-    public void expiryMonthTest() {
+    void expiryMonthTest() {
         // TODO: test expiryMonth
     }
 
@@ -57,7 +56,7 @@ public class CardPayoutTest {
      * Test the property 'expiryYear'
      */
     @Test
-    public void expiryYearTest() {
+    void expiryYearTest() {
         // TODO: test expiryYear
     }
 
@@ -65,7 +64,7 @@ public class CardPayoutTest {
      * Test the property 'cardHolderName'
      */
     @Test
-    public void cardHolderNameTest() {
+    void cardHolderNameTest() {
         // TODO: test cardHolderName
     }
 

@@ -19,22 +19,21 @@ import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonTypeName;
 import com.fasterxml.jackson.annotation.JsonValue;
 import com.hyperswitch.client.model.BacsBankTransferInstructions;
-import org.junit.Assert;
-import org.junit.Ignore;
-import org.junit.Test;
-
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Test;
 
 /**
  * Model tests for BankTransferInstructionsOneOf3
  */
-public class BankTransferInstructionsOneOf3Test {
+class BankTransferInstructionsOneOf3Test {
     private final BankTransferInstructionsOneOf3 model = new BankTransferInstructionsOneOf3();
 
     /**
      * Model tests for BankTransferInstructionsOneOf3
      */
     @Test
-    public void testBankTransferInstructionsOneOf3() {
+    void testBankTransferInstructionsOneOf3() {
         // TODO: test BankTransferInstructionsOneOf3
     }
 
@@ -42,7 +41,7 @@ public class BankTransferInstructionsOneOf3Test {
      * Test the property 'bacsBankInstructions'
      */
     @Test
-    public void bacsBankInstructionsTest() {
+    void bacsBankInstructionsTest() {
         // TODO: test bacsBankInstructions
     }
 

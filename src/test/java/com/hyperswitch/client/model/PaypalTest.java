@@ -18,22 +18,21 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonTypeName;
 import com.fasterxml.jackson.annotation.JsonValue;
-import org.junit.Assert;
-import org.junit.Ignore;
-import org.junit.Test;
-
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Test;
 
 /**
  * Model tests for Paypal
  */
-public class PaypalTest {
+class PaypalTest {
     private final Paypal model = new Paypal();
 
     /**
      * Model tests for Paypal
      */
     @Test
-    public void testPaypal() {
+    void testPaypal() {
         // TODO: test Paypal
     }
 
@@ -41,7 +40,7 @@ public class PaypalTest {
      * Test the property 'email'
      */
     @Test
-    public void emailTest() {
+    void emailTest() {
         // TODO: test email
     }
 
@@ -49,7 +48,7 @@ public class PaypalTest {
      * Test the property 'telephoneNumber'
      */
     @Test
-    public void telephoneNumberTest() {
+    void telephoneNumberTest() {
         // TODO: test telephoneNumber
     }
 
@@ -57,7 +56,7 @@ public class PaypalTest {
      * Test the property 'paypalId'
      */
     @Test
-    public void paypalIdTest() {
+    void paypalIdTest() {
         // TODO: test paypalId
     }
 

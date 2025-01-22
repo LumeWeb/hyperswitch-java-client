@@ -32,181 +32,182 @@ import java.net.URLEncoder;
 import java.util.StringJoiner;
 
 /**
- * Merchant connector details used to make payments.
- */
-@JsonPropertyOrder({
-  MerchantConnectorDetailsWrap.JSON_PROPERTY_CREDS_IDENTIFIER,
-  MerchantConnectorDetailsWrap.JSON_PROPERTY_ENCODED_DATA
-})
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+* Merchant connector details used to make payments.
+*/
+    @JsonPropertyOrder({
+        MerchantConnectorDetailsWrap.JSON_PROPERTY_CREDS_IDENTIFIER,
+        MerchantConnectorDetailsWrap.JSON_PROPERTY_ENCODED_DATA
+    })
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class MerchantConnectorDetailsWrap {
-  public static final String JSON_PROPERTY_CREDS_IDENTIFIER = "creds_identifier";
-  private String credsIdentifier;
+        public static final String JSON_PROPERTY_CREDS_IDENTIFIER = "creds_identifier";
+    @javax.annotation.Nonnull
+            private String credsIdentifier;
 
-  public static final String JSON_PROPERTY_ENCODED_DATA = "encoded_data";
-  private JsonNullable<MerchantConnectorDetails> encodedData = JsonNullable.<MerchantConnectorDetails>undefined();
+        public static final String JSON_PROPERTY_ENCODED_DATA = "encoded_data";
+    @javax.annotation.Nullable
+            private JsonNullable<MerchantConnectorDetails> encodedData = JsonNullable.<MerchantConnectorDetails>undefined();
 
-  public MerchantConnectorDetailsWrap() {
-  }
+public MerchantConnectorDetailsWrap() {
+}
 
-  public MerchantConnectorDetailsWrap credsIdentifier(String credsIdentifier) {
-    
-    this.credsIdentifier = credsIdentifier;
-    return this;
-  }
+        public MerchantConnectorDetailsWrap credsIdentifier(@javax.annotation.Nonnull String credsIdentifier) {
+        
+        this.credsIdentifier = credsIdentifier;
+        return this;
+        }
 
-   /**
-   * Creds Identifier is to uniquely identify the credentials. Do not send any sensitive info, like encoded_data in this field. And do not send the string \&quot;null\&quot;.
-   * @return credsIdentifier
-  **/
-  @javax.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_CREDS_IDENTIFIER)
+    /**
+        * Creds Identifier is to uniquely identify the credentials. Do not send any sensitive info, like encoded_data in this field. And do not send the string \&quot;null\&quot;.
+    * @return credsIdentifier
+    */
+    @javax.annotation.Nonnull
+      @JsonProperty(JSON_PROPERTY_CREDS_IDENTIFIER)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-  public String getCredsIdentifier() {
-    return credsIdentifier;
-  }
+    public String getCredsIdentifier() {
+        return credsIdentifier;
+    }
 
 
-  @JsonProperty(JSON_PROPERTY_CREDS_IDENTIFIER)
+          @JsonProperty(JSON_PROPERTY_CREDS_IDENTIFIER)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setCredsIdentifier(String credsIdentifier) {
-    this.credsIdentifier = credsIdentifier;
-  }
+  public void setCredsIdentifier(@javax.annotation.Nonnull String credsIdentifier) {
+            this.credsIdentifier = credsIdentifier;
+        }
 
+        public MerchantConnectorDetailsWrap encodedData(@javax.annotation.Nullable MerchantConnectorDetails encodedData) {
+        this.encodedData = JsonNullable.<MerchantConnectorDetails>of(encodedData);
+        
+        return this;
+        }
 
-  public MerchantConnectorDetailsWrap encodedData(MerchantConnectorDetails encodedData) {
-    this.encodedData = JsonNullable.<MerchantConnectorDetails>of(encodedData);
+    /**
+        * Get encodedData
+    * @return encodedData
+    */
+    @javax.annotation.Nullable
+        @JsonIgnore
     
-    return this;
-  }
+    public MerchantConnectorDetails getEncodedData() {
+                return encodedData.orElse(null);
+    }
 
-   /**
-   * Get encodedData
-   * @return encodedData
-  **/
-  @javax.annotation.Nullable
-  @JsonIgnore
-
-  public MerchantConnectorDetails getEncodedData() {
-        return encodedData.orElse(null);
-  }
-
-  @JsonProperty(JSON_PROPERTY_ENCODED_DATA)
+          @JsonProperty(JSON_PROPERTY_ENCODED_DATA)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-  public JsonNullable<MerchantConnectorDetails> getEncodedData_JsonNullable() {
-    return encodedData;
-  }
-  
-  @JsonProperty(JSON_PROPERTY_ENCODED_DATA)
-  public void setEncodedData_JsonNullable(JsonNullable<MerchantConnectorDetails> encodedData) {
-    this.encodedData = encodedData;
-  }
+        public JsonNullable<MerchantConnectorDetails> getEncodedData_JsonNullable() {
+        return encodedData;
+        }
+    
+        @JsonProperty(JSON_PROPERTY_ENCODED_DATA)
+        public void setEncodedData_JsonNullable(JsonNullable<MerchantConnectorDetails> encodedData) {
+        this.encodedData = encodedData;
+        }
 
-  public void setEncodedData(MerchantConnectorDetails encodedData) {
-    this.encodedData = JsonNullable.<MerchantConnectorDetails>of(encodedData);
-  }
+          public void setEncodedData(@javax.annotation.Nullable MerchantConnectorDetails encodedData) {
+            this.encodedData = JsonNullable.<MerchantConnectorDetails>of(encodedData);
+        }
 
-  @Override
-  public boolean equals(Object o) {
+@Override
+public boolean equals(Object o) {
     if (this == o) {
-      return true;
+    return true;
     }
     if (o == null || getClass() != o.getClass()) {
-      return false;
+    return false;
     }
-    MerchantConnectorDetailsWrap merchantConnectorDetailsWrap = (MerchantConnectorDetailsWrap) o;
-    return Objects.equals(this.credsIdentifier, merchantConnectorDetailsWrap.credsIdentifier) &&
+        MerchantConnectorDetailsWrap merchantConnectorDetailsWrap = (MerchantConnectorDetailsWrap) o;
+        return Objects.equals(this.credsIdentifier, merchantConnectorDetailsWrap.credsIdentifier) &&
         equalsNullable(this.encodedData, merchantConnectorDetailsWrap.encodedData);
-  }
+}
 
-  private static <T> boolean equalsNullable(JsonNullable<T> a, JsonNullable<T> b) {
-    return a == b || (a != null && b != null && a.isPresent() && b.isPresent() && Objects.deepEquals(a.get(), b.get()));
-  }
+    private static <T> boolean equalsNullable(JsonNullable<T> a, JsonNullable<T> b) {
+        return a == b || (a != null && b != null && a.isPresent() && b.isPresent() && Objects.deepEquals(a.get(), b.get()));
+        }
 
-  @Override
-  public int hashCode() {
-    return Objects.hash(credsIdentifier, hashCodeNullable(encodedData));
-  }
-
-  private static <T> int hashCodeNullable(JsonNullable<T> a) {
-    if (a == null) {
-      return 1;
+    @Override
+    public int hashCode() {
+        return Objects.hash(credsIdentifier, hashCodeNullable(encodedData));
     }
-    return a.isPresent() ? Arrays.deepHashCode(new Object[]{a.get()}) : 31;
-  }
 
-  @Override
-  public String toString() {
+        private static <T> int hashCodeNullable(JsonNullable<T> a) {
+        if (a == null) {
+        return 1;
+        }
+        return a.isPresent() ? Arrays.deepHashCode(new Object[]{a.get()}) : 31;
+        }
+
+    @Override
+    public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class MerchantConnectorDetailsWrap {\n");
-    sb.append("    credsIdentifier: ").append(toIndentedString(credsIdentifier)).append("\n");
-    sb.append("    encodedData: ").append(toIndentedString(encodedData)).append("\n");
+        sb.append("    credsIdentifier: ").append(toIndentedString(credsIdentifier)).append("\n");
+        sb.append("    encodedData: ").append(toIndentedString(encodedData)).append("\n");
     sb.append("}");
     return sb.toString();
-  }
+    }
 
-  /**
-   * Convert the given object to string with each line indented by 4 spaces
-   * (except the first line).
-   */
-  private String toIndentedString(Object o) {
+    /**
+    * Convert the given object to string with each line indented by 4 spaces
+    * (except the first line).
+    */
+    private String toIndentedString(Object o) {
     if (o == null) {
-      return "null";
+    return "null";
     }
     return o.toString().replace("\n", "\n    ");
-  }
-
-  /**
-   * Convert the instance into URL query string.
-   *
-   * @return URL query string
-   */
-  public String toUrlQueryString() {
-    return toUrlQueryString(null);
-  }
-
-  /**
-   * Convert the instance into URL query string.
-   *
-   * @param prefix prefix of the query string
-   * @return URL query string
-   */
-  public String toUrlQueryString(String prefix) {
-    String suffix = "";
-    String containerSuffix = "";
-    String containerPrefix = "";
-    if (prefix == null) {
-      // style=form, explode=true, e.g. /pet?name=cat&type=manx
-      prefix = "";
-    } else {
-      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
-      prefix = prefix + "[";
-      suffix = "]";
-      containerSuffix = "]";
-      containerPrefix = "[";
     }
 
-    StringJoiner joiner = new StringJoiner("&");
+        /**
+        * Convert the instance into URL query string.
+        *
+        * @return URL query string
+        */
+        public String toUrlQueryString() {
+        return toUrlQueryString(null);
+        }
 
-    // add `creds_identifier` to the URL query string
-    if (getCredsIdentifier() != null) {
-      try {
-        joiner.add(String.format("%screds_identifier%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCredsIdentifier()), "UTF-8").replaceAll("\\+", "%20")));
-      } catch (UnsupportedEncodingException e) {
-        // Should never happen, UTF-8 is always supported
-        throw new RuntimeException(e);
-      }
+        /**
+        * Convert the instance into URL query string.
+        *
+        * @param prefix prefix of the query string
+        * @return URL query string
+        */
+        public String toUrlQueryString(String prefix) {
+        String suffix = "";
+        String containerSuffix = "";
+        String containerPrefix = "";
+        if (prefix == null) {
+        // style=form, explode=true, e.g. /pet?name=cat&type=manx
+        prefix = "";
+        } else {
+        // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+        prefix = prefix + "[";
+        suffix = "]";
+        containerSuffix = "]";
+        containerPrefix = "[";
+        }
+
+        StringJoiner joiner = new StringJoiner("&");
+
+            // add `creds_identifier` to the URL query string
+                        if (getCredsIdentifier() != null) {
+                        try {
+                        joiner.add(String.format("%screds_identifier%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCredsIdentifier()), "UTF-8").replaceAll("\\+", "%20")));
+                        } catch (UnsupportedEncodingException e) {
+                        // Should never happen, UTF-8 is always supported
+                        throw new RuntimeException(e);
+                        }
+                        }
+
+            // add `encoded_data` to the URL query string
+                            if (getEncodedData() != null) {
+                            joiner.add(getEncodedData().toUrlQueryString(prefix + "encoded_data" + suffix));
+                            }
+
+        return joiner.toString();
+        }
+
     }
-
-    // add `encoded_data` to the URL query string
-    if (getEncodedData() != null) {
-      joiner.add(getEncodedData().toUrlQueryString(prefix + "encoded_data" + suffix));
-    }
-
-    return joiner.toString();
-  }
-
-}
 

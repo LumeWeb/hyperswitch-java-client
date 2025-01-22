@@ -28,121 +28,122 @@ import java.net.URLEncoder;
 import java.util.StringJoiner;
 
 /**
- * PaymentMethodDataResponseOneOf3
- */
-@JsonPropertyOrder({
-  PaymentMethodDataResponseOneOf3.JSON_PROPERTY_PAY_LATER
-})
-@JsonTypeName("PaymentMethodDataResponse_oneOf_3")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+* PaymentMethodDataResponseOneOf3
+*/
+    @JsonPropertyOrder({
+        PaymentMethodDataResponseOneOf3.JSON_PROPERTY_PAY_LATER
+    })
+            @JsonTypeName("PaymentMethodDataResponse_oneOf_3")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class PaymentMethodDataResponseOneOf3 {
-  public static final String JSON_PROPERTY_PAY_LATER = "pay_later";
-  private PaylaterResponse payLater;
+        public static final String JSON_PROPERTY_PAY_LATER = "pay_later";
+    @javax.annotation.Nonnull
+            private PaylaterResponse payLater;
 
-  public PaymentMethodDataResponseOneOf3() {
-  }
+public PaymentMethodDataResponseOneOf3() {
+}
 
-  public PaymentMethodDataResponseOneOf3 payLater(PaylaterResponse payLater) {
-    
-    this.payLater = payLater;
-    return this;
-  }
+        public PaymentMethodDataResponseOneOf3 payLater(@javax.annotation.Nonnull PaylaterResponse payLater) {
+        
+        this.payLater = payLater;
+        return this;
+        }
 
-   /**
-   * Get payLater
-   * @return payLater
-  **/
-  @javax.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_PAY_LATER)
+    /**
+        * Get payLater
+    * @return payLater
+    */
+    @javax.annotation.Nonnull
+      @JsonProperty(JSON_PROPERTY_PAY_LATER)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-  public PaylaterResponse getPayLater() {
-    return payLater;
-  }
+    public PaylaterResponse getPayLater() {
+        return payLater;
+    }
 
 
-  @JsonProperty(JSON_PROPERTY_PAY_LATER)
+          @JsonProperty(JSON_PROPERTY_PAY_LATER)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setPayLater(PaylaterResponse payLater) {
-    this.payLater = payLater;
-  }
+  public void setPayLater(@javax.annotation.Nonnull PaylaterResponse payLater) {
+            this.payLater = payLater;
+        }
 
-  @Override
-  public boolean equals(Object o) {
+@Override
+public boolean equals(Object o) {
     if (this == o) {
-      return true;
+    return true;
     }
     if (o == null || getClass() != o.getClass()) {
-      return false;
+    return false;
     }
-    PaymentMethodDataResponseOneOf3 paymentMethodDataResponseOneOf3 = (PaymentMethodDataResponseOneOf3) o;
-    return Objects.equals(this.payLater, paymentMethodDataResponseOneOf3.payLater);
-  }
+        PaymentMethodDataResponseOneOf3 paymentMethodDataResponseOneOf3 = (PaymentMethodDataResponseOneOf3) o;
+        return Objects.equals(this.payLater, paymentMethodDataResponseOneOf3.payLater);
+}
 
-  @Override
-  public int hashCode() {
-    return Objects.hash(payLater);
-  }
+    @Override
+    public int hashCode() {
+        return Objects.hash(payLater);
+    }
 
-  @Override
-  public String toString() {
+    @Override
+    public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class PaymentMethodDataResponseOneOf3 {\n");
-    sb.append("    payLater: ").append(toIndentedString(payLater)).append("\n");
+        sb.append("    payLater: ").append(toIndentedString(payLater)).append("\n");
     sb.append("}");
     return sb.toString();
-  }
+    }
 
-  /**
-   * Convert the given object to string with each line indented by 4 spaces
-   * (except the first line).
-   */
-  private String toIndentedString(Object o) {
+    /**
+    * Convert the given object to string with each line indented by 4 spaces
+    * (except the first line).
+    */
+    private String toIndentedString(Object o) {
     if (o == null) {
-      return "null";
+    return "null";
     }
     return o.toString().replace("\n", "\n    ");
-  }
-
-  /**
-   * Convert the instance into URL query string.
-   *
-   * @return URL query string
-   */
-  public String toUrlQueryString() {
-    return toUrlQueryString(null);
-  }
-
-  /**
-   * Convert the instance into URL query string.
-   *
-   * @param prefix prefix of the query string
-   * @return URL query string
-   */
-  public String toUrlQueryString(String prefix) {
-    String suffix = "";
-    String containerSuffix = "";
-    String containerPrefix = "";
-    if (prefix == null) {
-      // style=form, explode=true, e.g. /pet?name=cat&type=manx
-      prefix = "";
-    } else {
-      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
-      prefix = prefix + "[";
-      suffix = "]";
-      containerSuffix = "]";
-      containerPrefix = "[";
     }
 
-    StringJoiner joiner = new StringJoiner("&");
+        /**
+        * Convert the instance into URL query string.
+        *
+        * @return URL query string
+        */
+        public String toUrlQueryString() {
+        return toUrlQueryString(null);
+        }
 
-    // add `pay_later` to the URL query string
-    if (getPayLater() != null) {
-      joiner.add(getPayLater().toUrlQueryString(prefix + "pay_later" + suffix));
+        /**
+        * Convert the instance into URL query string.
+        *
+        * @param prefix prefix of the query string
+        * @return URL query string
+        */
+        public String toUrlQueryString(String prefix) {
+        String suffix = "";
+        String containerSuffix = "";
+        String containerPrefix = "";
+        if (prefix == null) {
+        // style=form, explode=true, e.g. /pet?name=cat&type=manx
+        prefix = "";
+        } else {
+        // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+        prefix = prefix + "[";
+        suffix = "]";
+        containerSuffix = "]";
+        containerPrefix = "[";
+        }
+
+        StringJoiner joiner = new StringJoiner("&");
+
+            // add `pay_later` to the URL query string
+                            if (getPayLater() != null) {
+                            joiner.add(getPayLater().toUrlQueryString(prefix + "pay_later" + suffix));
+                            }
+
+        return joiner.toString();
+        }
+
     }
-
-    return joiner.toString();
-  }
-
-}
 

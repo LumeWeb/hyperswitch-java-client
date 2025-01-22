@@ -18,22 +18,21 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonTypeName;
 import com.fasterxml.jackson.annotation.JsonValue;
-import org.junit.Assert;
-import org.junit.Ignore;
-import org.junit.Test;
-
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Test;
 
 /**
  * Model tests for WalletAdditionalDataForCard
  */
-public class WalletAdditionalDataForCardTest {
+class WalletAdditionalDataForCardTest {
     private final WalletAdditionalDataForCard model = new WalletAdditionalDataForCard();
 
     /**
      * Model tests for WalletAdditionalDataForCard
      */
     @Test
-    public void testWalletAdditionalDataForCard() {
+    void testWalletAdditionalDataForCard() {
         // TODO: test WalletAdditionalDataForCard
     }
 
@@ -41,7 +40,7 @@ public class WalletAdditionalDataForCardTest {
      * Test the property 'last4'
      */
     @Test
-    public void last4Test() {
+    void last4Test() {
         // TODO: test last4
     }
 
@@ -49,7 +48,7 @@ public class WalletAdditionalDataForCardTest {
      * Test the property 'cardNetwork'
      */
     @Test
-    public void cardNetworkTest() {
+    void cardNetworkTest() {
         // TODO: test cardNetwork
     }
 
@@ -57,7 +56,7 @@ public class WalletAdditionalDataForCardTest {
      * Test the property 'type'
      */
     @Test
-    public void typeTest() {
+    void typeTest() {
         // TODO: test type
     }
 

@@ -16,9 +16,9 @@ package com.hyperswitch.client.api;
 import com.hyperswitch.client.ApiException;
 import com.hyperswitch.client.model.ProfileCreate;
 import com.hyperswitch.client.model.ProfileResponse;
-import org.junit.Test;
-import org.junit.Ignore;
-import org.junit.Assert;
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Test;
 
 import java.time.LocalDate;
 import java.time.OffsetDateTime;
@@ -30,7 +30,7 @@ import java.util.Map;
 /**
  * API tests for ProfileApi
  */
-@Ignore
+@Disabled
 public class ProfileApiTest {
 
     private final ProfileApi api = new ProfileApi();

@@ -27,19 +27,19 @@ import java.net.URLEncoder;
 import java.util.StringJoiner;
 
 /**
- * SessionTokenOneOf7
- */
-@JsonPropertyOrder({
-  SessionTokenOneOf7.JSON_PROPERTY_WALLET_NAME
-})
-@JsonTypeName("SessionToken_oneOf_7")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+* SessionTokenOneOf7
+*/
+    @JsonPropertyOrder({
+        SessionTokenOneOf7.JSON_PROPERTY_WALLET_NAME
+    })
+            @JsonTypeName("SessionToken_oneOf_7")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class SessionTokenOneOf7 {
-  /**
+              /**
    * Gets or Sets walletName
    */
   public enum WalletNameEnum {
-    NO_SESSION_TOKEN_RECEIVED("no_session_token_received");
+    NO_SESSION_TOKEN_RECEIVED(String.valueOf("no_session_token_received"));
 
     private String value;
 
@@ -68,118 +68,119 @@ public class SessionTokenOneOf7 {
     }
   }
 
-  public static final String JSON_PROPERTY_WALLET_NAME = "wallet_name";
-  private WalletNameEnum walletName;
+        public static final String JSON_PROPERTY_WALLET_NAME = "wallet_name";
+    @javax.annotation.Nonnull
+            private WalletNameEnum walletName;
 
-  public SessionTokenOneOf7() {
-  }
+public SessionTokenOneOf7() {
+}
 
-  public SessionTokenOneOf7 walletName(WalletNameEnum walletName) {
-    
-    this.walletName = walletName;
-    return this;
-  }
+        public SessionTokenOneOf7 walletName(@javax.annotation.Nonnull WalletNameEnum walletName) {
+        
+        this.walletName = walletName;
+        return this;
+        }
 
-   /**
-   * Get walletName
-   * @return walletName
-  **/
-  @javax.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_WALLET_NAME)
+    /**
+        * Get walletName
+    * @return walletName
+    */
+    @javax.annotation.Nonnull
+      @JsonProperty(JSON_PROPERTY_WALLET_NAME)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-  public WalletNameEnum getWalletName() {
-    return walletName;
-  }
+    public WalletNameEnum getWalletName() {
+        return walletName;
+    }
 
 
-  @JsonProperty(JSON_PROPERTY_WALLET_NAME)
+          @JsonProperty(JSON_PROPERTY_WALLET_NAME)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setWalletName(WalletNameEnum walletName) {
-    this.walletName = walletName;
-  }
+  public void setWalletName(@javax.annotation.Nonnull WalletNameEnum walletName) {
+            this.walletName = walletName;
+        }
 
-  @Override
-  public boolean equals(Object o) {
+@Override
+public boolean equals(Object o) {
     if (this == o) {
-      return true;
+    return true;
     }
     if (o == null || getClass() != o.getClass()) {
-      return false;
+    return false;
     }
-    SessionTokenOneOf7 sessionTokenOneOf7 = (SessionTokenOneOf7) o;
-    return Objects.equals(this.walletName, sessionTokenOneOf7.walletName);
-  }
+        SessionTokenOneOf7 sessionTokenOneOf7 = (SessionTokenOneOf7) o;
+        return Objects.equals(this.walletName, sessionTokenOneOf7.walletName);
+}
 
-  @Override
-  public int hashCode() {
-    return Objects.hash(walletName);
-  }
+    @Override
+    public int hashCode() {
+        return Objects.hash(walletName);
+    }
 
-  @Override
-  public String toString() {
+    @Override
+    public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class SessionTokenOneOf7 {\n");
-    sb.append("    walletName: ").append(toIndentedString(walletName)).append("\n");
+        sb.append("    walletName: ").append(toIndentedString(walletName)).append("\n");
     sb.append("}");
     return sb.toString();
-  }
+    }
 
-  /**
-   * Convert the given object to string with each line indented by 4 spaces
-   * (except the first line).
-   */
-  private String toIndentedString(Object o) {
+    /**
+    * Convert the given object to string with each line indented by 4 spaces
+    * (except the first line).
+    */
+    private String toIndentedString(Object o) {
     if (o == null) {
-      return "null";
+    return "null";
     }
     return o.toString().replace("\n", "\n    ");
-  }
-
-  /**
-   * Convert the instance into URL query string.
-   *
-   * @return URL query string
-   */
-  public String toUrlQueryString() {
-    return toUrlQueryString(null);
-  }
-
-  /**
-   * Convert the instance into URL query string.
-   *
-   * @param prefix prefix of the query string
-   * @return URL query string
-   */
-  public String toUrlQueryString(String prefix) {
-    String suffix = "";
-    String containerSuffix = "";
-    String containerPrefix = "";
-    if (prefix == null) {
-      // style=form, explode=true, e.g. /pet?name=cat&type=manx
-      prefix = "";
-    } else {
-      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
-      prefix = prefix + "[";
-      suffix = "]";
-      containerSuffix = "]";
-      containerPrefix = "[";
     }
 
-    StringJoiner joiner = new StringJoiner("&");
+        /**
+        * Convert the instance into URL query string.
+        *
+        * @return URL query string
+        */
+        public String toUrlQueryString() {
+        return toUrlQueryString(null);
+        }
 
-    // add `wallet_name` to the URL query string
-    if (getWalletName() != null) {
-      try {
-        joiner.add(String.format("%swallet_name%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getWalletName()), "UTF-8").replaceAll("\\+", "%20")));
-      } catch (UnsupportedEncodingException e) {
-        // Should never happen, UTF-8 is always supported
-        throw new RuntimeException(e);
-      }
+        /**
+        * Convert the instance into URL query string.
+        *
+        * @param prefix prefix of the query string
+        * @return URL query string
+        */
+        public String toUrlQueryString(String prefix) {
+        String suffix = "";
+        String containerSuffix = "";
+        String containerPrefix = "";
+        if (prefix == null) {
+        // style=form, explode=true, e.g. /pet?name=cat&type=manx
+        prefix = "";
+        } else {
+        // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+        prefix = prefix + "[";
+        suffix = "]";
+        containerSuffix = "]";
+        containerPrefix = "[";
+        }
+
+        StringJoiner joiner = new StringJoiner("&");
+
+            // add `wallet_name` to the URL query string
+                        if (getWalletName() != null) {
+                        try {
+                        joiner.add(String.format("%swallet_name%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getWalletName()), "UTF-8").replaceAll("\\+", "%20")));
+                        } catch (UnsupportedEncodingException e) {
+                        // Should never happen, UTF-8 is always supported
+                        throw new RuntimeException(e);
+                        }
+                        }
+
+        return joiner.toString();
+        }
+
     }
-
-    return joiner.toString();
-  }
-
-}
 

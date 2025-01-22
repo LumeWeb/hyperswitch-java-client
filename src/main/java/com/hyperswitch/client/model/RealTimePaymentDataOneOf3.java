@@ -27,126 +27,127 @@ import java.net.URLEncoder;
 import java.util.StringJoiner;
 
 /**
- * RealTimePaymentDataOneOf3
- */
-@JsonPropertyOrder({
-  RealTimePaymentDataOneOf3.JSON_PROPERTY_VIET_QR
-})
-@JsonTypeName("RealTimePaymentData_oneOf_3")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+* RealTimePaymentDataOneOf3
+*/
+    @JsonPropertyOrder({
+        RealTimePaymentDataOneOf3.JSON_PROPERTY_VIET_QR
+    })
+            @JsonTypeName("RealTimePaymentData_oneOf_3")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class RealTimePaymentDataOneOf3 {
-  public static final String JSON_PROPERTY_VIET_QR = "viet_qr";
-  private Object vietQr;
+        public static final String JSON_PROPERTY_VIET_QR = "viet_qr";
+    @javax.annotation.Nonnull
+            private Object vietQr;
 
-  public RealTimePaymentDataOneOf3() {
-  }
+public RealTimePaymentDataOneOf3() {
+}
 
-  public RealTimePaymentDataOneOf3 vietQr(Object vietQr) {
-    
-    this.vietQr = vietQr;
-    return this;
-  }
+        public RealTimePaymentDataOneOf3 vietQr(@javax.annotation.Nonnull Object vietQr) {
+        
+        this.vietQr = vietQr;
+        return this;
+        }
 
-   /**
-   * Get vietQr
-   * @return vietQr
-  **/
-  @javax.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_VIET_QR)
+    /**
+        * Get vietQr
+    * @return vietQr
+    */
+    @javax.annotation.Nonnull
+      @JsonProperty(JSON_PROPERTY_VIET_QR)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-  public Object getVietQr() {
-    return vietQr;
-  }
+    public Object getVietQr() {
+        return vietQr;
+    }
 
 
-  @JsonProperty(JSON_PROPERTY_VIET_QR)
+          @JsonProperty(JSON_PROPERTY_VIET_QR)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setVietQr(Object vietQr) {
-    this.vietQr = vietQr;
-  }
+  public void setVietQr(@javax.annotation.Nonnull Object vietQr) {
+            this.vietQr = vietQr;
+        }
 
-  @Override
-  public boolean equals(Object o) {
+@Override
+public boolean equals(Object o) {
     if (this == o) {
-      return true;
+    return true;
     }
     if (o == null || getClass() != o.getClass()) {
-      return false;
+    return false;
     }
-    RealTimePaymentDataOneOf3 realTimePaymentDataOneOf3 = (RealTimePaymentDataOneOf3) o;
-    return Objects.equals(this.vietQr, realTimePaymentDataOneOf3.vietQr);
-  }
+        RealTimePaymentDataOneOf3 realTimePaymentDataOneOf3 = (RealTimePaymentDataOneOf3) o;
+        return Objects.equals(this.vietQr, realTimePaymentDataOneOf3.vietQr);
+}
 
-  @Override
-  public int hashCode() {
-    return Objects.hash(vietQr);
-  }
+    @Override
+    public int hashCode() {
+        return Objects.hash(vietQr);
+    }
 
-  @Override
-  public String toString() {
+    @Override
+    public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class RealTimePaymentDataOneOf3 {\n");
-    sb.append("    vietQr: ").append(toIndentedString(vietQr)).append("\n");
+        sb.append("    vietQr: ").append(toIndentedString(vietQr)).append("\n");
     sb.append("}");
     return sb.toString();
-  }
+    }
 
-  /**
-   * Convert the given object to string with each line indented by 4 spaces
-   * (except the first line).
-   */
-  private String toIndentedString(Object o) {
+    /**
+    * Convert the given object to string with each line indented by 4 spaces
+    * (except the first line).
+    */
+    private String toIndentedString(Object o) {
     if (o == null) {
-      return "null";
+    return "null";
     }
     return o.toString().replace("\n", "\n    ");
-  }
-
-  /**
-   * Convert the instance into URL query string.
-   *
-   * @return URL query string
-   */
-  public String toUrlQueryString() {
-    return toUrlQueryString(null);
-  }
-
-  /**
-   * Convert the instance into URL query string.
-   *
-   * @param prefix prefix of the query string
-   * @return URL query string
-   */
-  public String toUrlQueryString(String prefix) {
-    String suffix = "";
-    String containerSuffix = "";
-    String containerPrefix = "";
-    if (prefix == null) {
-      // style=form, explode=true, e.g. /pet?name=cat&type=manx
-      prefix = "";
-    } else {
-      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
-      prefix = prefix + "[";
-      suffix = "]";
-      containerSuffix = "]";
-      containerPrefix = "[";
     }
 
-    StringJoiner joiner = new StringJoiner("&");
+        /**
+        * Convert the instance into URL query string.
+        *
+        * @return URL query string
+        */
+        public String toUrlQueryString() {
+        return toUrlQueryString(null);
+        }
 
-    // add `viet_qr` to the URL query string
-    if (getVietQr() != null) {
-      try {
-        joiner.add(String.format("%sviet_qr%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getVietQr()), "UTF-8").replaceAll("\\+", "%20")));
-      } catch (UnsupportedEncodingException e) {
-        // Should never happen, UTF-8 is always supported
-        throw new RuntimeException(e);
-      }
+        /**
+        * Convert the instance into URL query string.
+        *
+        * @param prefix prefix of the query string
+        * @return URL query string
+        */
+        public String toUrlQueryString(String prefix) {
+        String suffix = "";
+        String containerSuffix = "";
+        String containerPrefix = "";
+        if (prefix == null) {
+        // style=form, explode=true, e.g. /pet?name=cat&type=manx
+        prefix = "";
+        } else {
+        // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+        prefix = prefix + "[";
+        suffix = "]";
+        containerSuffix = "]";
+        containerPrefix = "[";
+        }
+
+        StringJoiner joiner = new StringJoiner("&");
+
+            // add `viet_qr` to the URL query string
+                        if (getVietQr() != null) {
+                        try {
+                        joiner.add(String.format("%sviet_qr%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getVietQr()), "UTF-8").replaceAll("\\+", "%20")));
+                        } catch (UnsupportedEncodingException e) {
+                        // Should never happen, UTF-8 is always supported
+                        throw new RuntimeException(e);
+                        }
+                        }
+
+        return joiner.toString();
+        }
+
     }
-
-    return joiner.toString();
-  }
-
-}
 

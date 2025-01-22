@@ -24,22 +24,21 @@ import com.hyperswitch.client.model.PayoutMethodDataResponseOneOf;
 import com.hyperswitch.client.model.PayoutMethodDataResponseOneOf1;
 import com.hyperswitch.client.model.PayoutMethodDataResponseOneOf2;
 import com.hyperswitch.client.model.WalletAdditionalData;
-import org.junit.Assert;
-import org.junit.Ignore;
-import org.junit.Test;
-
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Test;
 
 /**
  * Model tests for PayoutMethodDataResponse
  */
-public class PayoutMethodDataResponseTest {
+class PayoutMethodDataResponseTest {
     private final PayoutMethodDataResponse model = new PayoutMethodDataResponse();
 
     /**
      * Model tests for PayoutMethodDataResponse
      */
     @Test
-    public void testPayoutMethodDataResponse() {
+    void testPayoutMethodDataResponse() {
         // TODO: test PayoutMethodDataResponse
     }
 
@@ -47,7 +46,7 @@ public class PayoutMethodDataResponseTest {
      * Test the property 'card'
      */
     @Test
-    public void cardTest() {
+    void cardTest() {
         // TODO: test card
     }
 
@@ -55,7 +54,7 @@ public class PayoutMethodDataResponseTest {
      * Test the property 'bank'
      */
     @Test
-    public void bankTest() {
+    void bankTest() {
         // TODO: test bank
     }
 
@@ -63,7 +62,7 @@ public class PayoutMethodDataResponseTest {
      * Test the property 'wallet'
      */
     @Test
-    public void walletTest() {
+    void walletTest() {
         // TODO: test wallet
     }
 

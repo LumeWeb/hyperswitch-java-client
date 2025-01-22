@@ -32,23 +32,24 @@ import java.net.URLEncoder;
 import java.util.StringJoiner;
 
 /**
- * Contains third party sdk session token response
- */
-@JsonPropertyOrder({
-  NextActionDataOneOf2.JSON_PROPERTY_SESSION_TOKEN,
-  NextActionDataOneOf2.JSON_PROPERTY_TYPE
-})
-@JsonTypeName("NextActionData_oneOf_2")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+* Contains third party sdk session token response
+*/
+    @JsonPropertyOrder({
+        NextActionDataOneOf2.JSON_PROPERTY_SESSION_TOKEN,
+        NextActionDataOneOf2.JSON_PROPERTY_TYPE
+    })
+            @JsonTypeName("NextActionData_oneOf_2")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class NextActionDataOneOf2 {
-  public static final String JSON_PROPERTY_SESSION_TOKEN = "session_token";
-  private JsonNullable<SessionToken> sessionToken = JsonNullable.<SessionToken>undefined();
+        public static final String JSON_PROPERTY_SESSION_TOKEN = "session_token";
+    @javax.annotation.Nullable
+            private JsonNullable<SessionToken> sessionToken = JsonNullable.<SessionToken>undefined();
 
-  /**
+              /**
    * Gets or Sets type
    */
   public enum TypeEnum {
-    THIRD_PARTY_SDK_SESSION_TOKEN("third_party_sdk_session_token");
+    THIRD_PARTY_SDK_SESSION_TOKEN(String.valueOf("third_party_sdk_session_token"));
 
     private String value;
 
@@ -77,170 +78,170 @@ public class NextActionDataOneOf2 {
     }
   }
 
-  public static final String JSON_PROPERTY_TYPE = "type";
-  private TypeEnum type;
+        public static final String JSON_PROPERTY_TYPE = "type";
+    @javax.annotation.Nonnull
+            private TypeEnum type;
 
-  public NextActionDataOneOf2() {
-  }
+public NextActionDataOneOf2() {
+}
 
-  public NextActionDataOneOf2 sessionToken(SessionToken sessionToken) {
-    this.sessionToken = JsonNullable.<SessionToken>of(sessionToken);
+        public NextActionDataOneOf2 sessionToken(@javax.annotation.Nullable SessionToken sessionToken) {
+        this.sessionToken = JsonNullable.<SessionToken>of(sessionToken);
+        
+        return this;
+        }
+
+    /**
+        * Get sessionToken
+    * @return sessionToken
+    */
+    @javax.annotation.Nullable
+        @JsonIgnore
     
-    return this;
-  }
+    public SessionToken getSessionToken() {
+                return sessionToken.orElse(null);
+    }
 
-   /**
-   * Get sessionToken
-   * @return sessionToken
-  **/
-  @javax.annotation.Nullable
-  @JsonIgnore
-
-  public SessionToken getSessionToken() {
-        return sessionToken.orElse(null);
-  }
-
-  @JsonProperty(JSON_PROPERTY_SESSION_TOKEN)
+          @JsonProperty(JSON_PROPERTY_SESSION_TOKEN)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-  public JsonNullable<SessionToken> getSessionToken_JsonNullable() {
-    return sessionToken;
-  }
-  
-  @JsonProperty(JSON_PROPERTY_SESSION_TOKEN)
-  public void setSessionToken_JsonNullable(JsonNullable<SessionToken> sessionToken) {
-    this.sessionToken = sessionToken;
-  }
-
-  public void setSessionToken(SessionToken sessionToken) {
-    this.sessionToken = JsonNullable.<SessionToken>of(sessionToken);
-  }
-
-
-  public NextActionDataOneOf2 type(TypeEnum type) {
+        public JsonNullable<SessionToken> getSessionToken_JsonNullable() {
+        return sessionToken;
+        }
     
-    this.type = type;
-    return this;
-  }
+        @JsonProperty(JSON_PROPERTY_SESSION_TOKEN)
+        public void setSessionToken_JsonNullable(JsonNullable<SessionToken> sessionToken) {
+        this.sessionToken = sessionToken;
+        }
 
-   /**
-   * Get type
-   * @return type
-  **/
-  @javax.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_TYPE)
+          public void setSessionToken(@javax.annotation.Nullable SessionToken sessionToken) {
+            this.sessionToken = JsonNullable.<SessionToken>of(sessionToken);
+        }
+
+        public NextActionDataOneOf2 type(@javax.annotation.Nonnull TypeEnum type) {
+        
+        this.type = type;
+        return this;
+        }
+
+    /**
+        * Get type
+    * @return type
+    */
+    @javax.annotation.Nonnull
+      @JsonProperty(JSON_PROPERTY_TYPE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-  public TypeEnum getType() {
-    return type;
-  }
+    public TypeEnum getType() {
+        return type;
+    }
 
 
-  @JsonProperty(JSON_PROPERTY_TYPE)
+          @JsonProperty(JSON_PROPERTY_TYPE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setType(TypeEnum type) {
-    this.type = type;
-  }
+  public void setType(@javax.annotation.Nonnull TypeEnum type) {
+            this.type = type;
+        }
 
-  @Override
-  public boolean equals(Object o) {
+@Override
+public boolean equals(Object o) {
     if (this == o) {
-      return true;
+    return true;
     }
     if (o == null || getClass() != o.getClass()) {
-      return false;
+    return false;
     }
-    NextActionDataOneOf2 nextActionDataOneOf2 = (NextActionDataOneOf2) o;
-    return equalsNullable(this.sessionToken, nextActionDataOneOf2.sessionToken) &&
+        NextActionDataOneOf2 nextActionDataOneOf2 = (NextActionDataOneOf2) o;
+        return equalsNullable(this.sessionToken, nextActionDataOneOf2.sessionToken) &&
         Objects.equals(this.type, nextActionDataOneOf2.type);
-  }
+}
 
-  private static <T> boolean equalsNullable(JsonNullable<T> a, JsonNullable<T> b) {
-    return a == b || (a != null && b != null && a.isPresent() && b.isPresent() && Objects.deepEquals(a.get(), b.get()));
-  }
+    private static <T> boolean equalsNullable(JsonNullable<T> a, JsonNullable<T> b) {
+        return a == b || (a != null && b != null && a.isPresent() && b.isPresent() && Objects.deepEquals(a.get(), b.get()));
+        }
 
-  @Override
-  public int hashCode() {
-    return Objects.hash(hashCodeNullable(sessionToken), type);
-  }
-
-  private static <T> int hashCodeNullable(JsonNullable<T> a) {
-    if (a == null) {
-      return 1;
+    @Override
+    public int hashCode() {
+        return Objects.hash(hashCodeNullable(sessionToken), type);
     }
-    return a.isPresent() ? Arrays.deepHashCode(new Object[]{a.get()}) : 31;
-  }
 
-  @Override
-  public String toString() {
+        private static <T> int hashCodeNullable(JsonNullable<T> a) {
+        if (a == null) {
+        return 1;
+        }
+        return a.isPresent() ? Arrays.deepHashCode(new Object[]{a.get()}) : 31;
+        }
+
+    @Override
+    public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class NextActionDataOneOf2 {\n");
-    sb.append("    sessionToken: ").append(toIndentedString(sessionToken)).append("\n");
-    sb.append("    type: ").append(toIndentedString(type)).append("\n");
+        sb.append("    sessionToken: ").append(toIndentedString(sessionToken)).append("\n");
+        sb.append("    type: ").append(toIndentedString(type)).append("\n");
     sb.append("}");
     return sb.toString();
-  }
+    }
 
-  /**
-   * Convert the given object to string with each line indented by 4 spaces
-   * (except the first line).
-   */
-  private String toIndentedString(Object o) {
+    /**
+    * Convert the given object to string with each line indented by 4 spaces
+    * (except the first line).
+    */
+    private String toIndentedString(Object o) {
     if (o == null) {
-      return "null";
+    return "null";
     }
     return o.toString().replace("\n", "\n    ");
-  }
-
-  /**
-   * Convert the instance into URL query string.
-   *
-   * @return URL query string
-   */
-  public String toUrlQueryString() {
-    return toUrlQueryString(null);
-  }
-
-  /**
-   * Convert the instance into URL query string.
-   *
-   * @param prefix prefix of the query string
-   * @return URL query string
-   */
-  public String toUrlQueryString(String prefix) {
-    String suffix = "";
-    String containerSuffix = "";
-    String containerPrefix = "";
-    if (prefix == null) {
-      // style=form, explode=true, e.g. /pet?name=cat&type=manx
-      prefix = "";
-    } else {
-      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
-      prefix = prefix + "[";
-      suffix = "]";
-      containerSuffix = "]";
-      containerPrefix = "[";
     }
 
-    StringJoiner joiner = new StringJoiner("&");
+        /**
+        * Convert the instance into URL query string.
+        *
+        * @return URL query string
+        */
+        public String toUrlQueryString() {
+        return toUrlQueryString(null);
+        }
 
-    // add `session_token` to the URL query string
-    if (getSessionToken() != null) {
-      joiner.add(getSessionToken().toUrlQueryString(prefix + "session_token" + suffix));
+        /**
+        * Convert the instance into URL query string.
+        *
+        * @param prefix prefix of the query string
+        * @return URL query string
+        */
+        public String toUrlQueryString(String prefix) {
+        String suffix = "";
+        String containerSuffix = "";
+        String containerPrefix = "";
+        if (prefix == null) {
+        // style=form, explode=true, e.g. /pet?name=cat&type=manx
+        prefix = "";
+        } else {
+        // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+        prefix = prefix + "[";
+        suffix = "]";
+        containerSuffix = "]";
+        containerPrefix = "[";
+        }
+
+        StringJoiner joiner = new StringJoiner("&");
+
+            // add `session_token` to the URL query string
+                            if (getSessionToken() != null) {
+                            joiner.add(getSessionToken().toUrlQueryString(prefix + "session_token" + suffix));
+                            }
+
+            // add `type` to the URL query string
+                        if (getType() != null) {
+                        try {
+                        joiner.add(String.format("%stype%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getType()), "UTF-8").replaceAll("\\+", "%20")));
+                        } catch (UnsupportedEncodingException e) {
+                        // Should never happen, UTF-8 is always supported
+                        throw new RuntimeException(e);
+                        }
+                        }
+
+        return joiner.toString();
+        }
+
     }
-
-    // add `type` to the URL query string
-    if (getType() != null) {
-      try {
-        joiner.add(String.format("%stype%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getType()), "UTF-8").replaceAll("\\+", "%20")));
-      } catch (UnsupportedEncodingException e) {
-        // Should never happen, UTF-8 is always supported
-        throw new RuntimeException(e);
-      }
-    }
-
-    return joiner.toString();
-  }
-
-}
 

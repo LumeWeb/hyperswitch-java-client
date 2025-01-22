@@ -39,22 +39,21 @@ import com.hyperswitch.client.model.BankTransferDataOneOf7;
 import com.hyperswitch.client.model.BankTransferDataOneOf8;
 import com.hyperswitch.client.model.BankTransferDataOneOf9;
 import com.hyperswitch.client.model.BankTransferDataOneOfAchBankTransfer;
-import org.junit.Assert;
-import org.junit.Ignore;
-import org.junit.Test;
-
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Test;
 
 /**
  * Model tests for BankTransferData
  */
-public class BankTransferDataTest {
+class BankTransferDataTest {
     private final BankTransferData model = new BankTransferData();
 
     /**
      * Model tests for BankTransferData
      */
     @Test
-    public void testBankTransferData() {
+    void testBankTransferData() {
         // TODO: test BankTransferData
     }
 
@@ -62,7 +61,7 @@ public class BankTransferDataTest {
      * Test the property 'achBankTransfer'
      */
     @Test
-    public void achBankTransferTest() {
+    void achBankTransferTest() {
         // TODO: test achBankTransfer
     }
 
@@ -70,7 +69,7 @@ public class BankTransferDataTest {
      * Test the property 'sepaBankTransfer'
      */
     @Test
-    public void sepaBankTransferTest() {
+    void sepaBankTransferTest() {
         // TODO: test sepaBankTransfer
     }
 
@@ -78,7 +77,7 @@ public class BankTransferDataTest {
      * Test the property 'bacsBankTransfer'
      */
     @Test
-    public void bacsBankTransferTest() {
+    void bacsBankTransferTest() {
         // TODO: test bacsBankTransfer
     }
 
@@ -86,7 +85,7 @@ public class BankTransferDataTest {
      * Test the property 'multibancoBankTransfer'
      */
     @Test
-    public void multibancoBankTransferTest() {
+    void multibancoBankTransferTest() {
         // TODO: test multibancoBankTransfer
     }
 
@@ -94,7 +93,7 @@ public class BankTransferDataTest {
      * Test the property 'permataBankTransfer'
      */
     @Test
-    public void permataBankTransferTest() {
+    void permataBankTransferTest() {
         // TODO: test permataBankTransfer
     }
 
@@ -102,7 +101,7 @@ public class BankTransferDataTest {
      * Test the property 'bcaBankTransfer'
      */
     @Test
-    public void bcaBankTransferTest() {
+    void bcaBankTransferTest() {
         // TODO: test bcaBankTransfer
     }
 
@@ -110,7 +109,7 @@ public class BankTransferDataTest {
      * Test the property 'bniVaBankTransfer'
      */
     @Test
-    public void bniVaBankTransferTest() {
+    void bniVaBankTransferTest() {
         // TODO: test bniVaBankTransfer
     }
 
@@ -118,7 +117,7 @@ public class BankTransferDataTest {
      * Test the property 'briVaBankTransfer'
      */
     @Test
-    public void briVaBankTransferTest() {
+    void briVaBankTransferTest() {
         // TODO: test briVaBankTransfer
     }
 
@@ -126,7 +125,7 @@ public class BankTransferDataTest {
      * Test the property 'cimbVaBankTransfer'
      */
     @Test
-    public void cimbVaBankTransferTest() {
+    void cimbVaBankTransferTest() {
         // TODO: test cimbVaBankTransfer
     }
 
@@ -134,7 +133,7 @@ public class BankTransferDataTest {
      * Test the property 'danamonVaBankTransfer'
      */
     @Test
-    public void danamonVaBankTransferTest() {
+    void danamonVaBankTransferTest() {
         // TODO: test danamonVaBankTransfer
     }
 
@@ -142,7 +141,7 @@ public class BankTransferDataTest {
      * Test the property 'mandiriVaBankTransfer'
      */
     @Test
-    public void mandiriVaBankTransferTest() {
+    void mandiriVaBankTransferTest() {
         // TODO: test mandiriVaBankTransfer
     }
 
@@ -150,7 +149,7 @@ public class BankTransferDataTest {
      * Test the property 'pix'
      */
     @Test
-    public void pixTest() {
+    void pixTest() {
         // TODO: test pix
     }
 
@@ -158,7 +157,7 @@ public class BankTransferDataTest {
      * Test the property 'pse'
      */
     @Test
-    public void pseTest() {
+    void pseTest() {
         // TODO: test pse
     }
 
@@ -166,7 +165,7 @@ public class BankTransferDataTest {
      * Test the property 'localBankTransfer'
      */
     @Test
-    public void localBankTransferTest() {
+    void localBankTransferTest() {
         // TODO: test localBankTransfer
     }
 

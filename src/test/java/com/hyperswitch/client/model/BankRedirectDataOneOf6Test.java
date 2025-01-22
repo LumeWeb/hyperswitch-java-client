@@ -19,22 +19,21 @@ import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonTypeName;
 import com.fasterxml.jackson.annotation.JsonValue;
 import com.hyperswitch.client.model.BankRedirectDataOneOf6Interac;
-import org.junit.Assert;
-import org.junit.Ignore;
-import org.junit.Test;
-
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Test;
 
 /**
  * Model tests for BankRedirectDataOneOf6
  */
-public class BankRedirectDataOneOf6Test {
+class BankRedirectDataOneOf6Test {
     private final BankRedirectDataOneOf6 model = new BankRedirectDataOneOf6();
 
     /**
      * Model tests for BankRedirectDataOneOf6
      */
     @Test
-    public void testBankRedirectDataOneOf6() {
+    void testBankRedirectDataOneOf6() {
         // TODO: test BankRedirectDataOneOf6
     }
 
@@ -42,7 +41,7 @@ public class BankRedirectDataOneOf6Test {
      * Test the property 'interac'
      */
     @Test
-    public void interacTest() {
+    void interacTest() {
         // TODO: test interac
     }
 

@@ -18,22 +18,21 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonTypeName;
 import com.fasterxml.jackson.annotation.JsonValue;
-import org.junit.Assert;
-import org.junit.Ignore;
-import org.junit.Test;
-
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Test;
 
 /**
  * Model tests for ElementSizeOneOf2
  */
-public class ElementSizeOneOf2Test {
+class ElementSizeOneOf2Test {
     private final ElementSizeOneOf2 model = new ElementSizeOneOf2();
 
     /**
      * Model tests for ElementSizeOneOf2
      */
     @Test
-    public void testElementSizeOneOf2() {
+    void testElementSizeOneOf2() {
         // TODO: test ElementSizeOneOf2
     }
 
@@ -41,7 +40,7 @@ public class ElementSizeOneOf2Test {
      * Test the property 'pixels'
      */
     @Test
-    public void pixelsTest() {
+    void pixelsTest() {
         // TODO: test pixels
     }
 

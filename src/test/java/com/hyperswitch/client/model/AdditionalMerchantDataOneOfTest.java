@@ -19,22 +19,21 @@ import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonTypeName;
 import com.fasterxml.jackson.annotation.JsonValue;
 import com.hyperswitch.client.model.MerchantRecipientData;
-import org.junit.Assert;
-import org.junit.Ignore;
-import org.junit.Test;
-
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Test;
 
 /**
  * Model tests for AdditionalMerchantDataOneOf
  */
-public class AdditionalMerchantDataOneOfTest {
+class AdditionalMerchantDataOneOfTest {
     private final AdditionalMerchantDataOneOf model = new AdditionalMerchantDataOneOf();
 
     /**
      * Model tests for AdditionalMerchantDataOneOf
      */
     @Test
-    public void testAdditionalMerchantDataOneOf() {
+    void testAdditionalMerchantDataOneOf() {
         // TODO: test AdditionalMerchantDataOneOf
     }
 
@@ -42,7 +41,7 @@ public class AdditionalMerchantDataOneOfTest {
      * Test the property 'openBankingRecipientData'
      */
     @Test
-    public void openBankingRecipientDataTest() {
+    void openBankingRecipientDataTest() {
         // TODO: test openBankingRecipientData
     }
 

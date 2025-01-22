@@ -13,20 +13,19 @@
 
 package com.hyperswitch.client.model;
 
-import org.junit.Assert;
-import org.junit.Ignore;
-import org.junit.Test;
-
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Test;
 
 /**
  * Model tests for Connector
  */
-public class ConnectorTest {
+class ConnectorTest {
     /**
      * Model tests for Connector
      */
     @Test
-    public void testConnector() {
+    void testConnector() {
         // TODO: test Connector
     }
 

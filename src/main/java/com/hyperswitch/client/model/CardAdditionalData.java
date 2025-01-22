@@ -32,418 +32,419 @@ import java.net.URLEncoder;
 import java.util.StringJoiner;
 
 /**
- * Masked payout method details for card payout method
- */
-@JsonPropertyOrder({
-  CardAdditionalData.JSON_PROPERTY_CARD_ISSUER,
-  CardAdditionalData.JSON_PROPERTY_CARD_NETWORK,
-  CardAdditionalData.JSON_PROPERTY_CARD_TYPE,
-  CardAdditionalData.JSON_PROPERTY_CARD_ISSUING_COUNTRY,
-  CardAdditionalData.JSON_PROPERTY_BANK_CODE,
-  CardAdditionalData.JSON_PROPERTY_LAST4,
-  CardAdditionalData.JSON_PROPERTY_CARD_ISIN,
-  CardAdditionalData.JSON_PROPERTY_CARD_EXTENDED_BIN,
-  CardAdditionalData.JSON_PROPERTY_CARD_EXP_MONTH,
-  CardAdditionalData.JSON_PROPERTY_CARD_EXP_YEAR,
-  CardAdditionalData.JSON_PROPERTY_CARD_HOLDER_NAME
-})
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+* Masked payout method details for card payout method
+*/
+    @JsonPropertyOrder({
+        CardAdditionalData.JSON_PROPERTY_CARD_ISSUER,
+        CardAdditionalData.JSON_PROPERTY_CARD_NETWORK,
+        CardAdditionalData.JSON_PROPERTY_CARD_TYPE,
+        CardAdditionalData.JSON_PROPERTY_CARD_ISSUING_COUNTRY,
+        CardAdditionalData.JSON_PROPERTY_BANK_CODE,
+        CardAdditionalData.JSON_PROPERTY_LAST4,
+        CardAdditionalData.JSON_PROPERTY_CARD_ISIN,
+        CardAdditionalData.JSON_PROPERTY_CARD_EXTENDED_BIN,
+        CardAdditionalData.JSON_PROPERTY_CARD_EXP_MONTH,
+        CardAdditionalData.JSON_PROPERTY_CARD_EXP_YEAR,
+        CardAdditionalData.JSON_PROPERTY_CARD_HOLDER_NAME
+    })
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class CardAdditionalData {
-  public static final String JSON_PROPERTY_CARD_ISSUER = "card_issuer";
-  private JsonNullable<String> cardIssuer = JsonNullable.<String>undefined();
+        public static final String JSON_PROPERTY_CARD_ISSUER = "card_issuer";
+    @javax.annotation.Nullable
+            private JsonNullable<String> cardIssuer = JsonNullable.<String>undefined();
 
-  public static final String JSON_PROPERTY_CARD_NETWORK = "card_network";
-  private JsonNullable<CardNetwork> cardNetwork = JsonNullable.<CardNetwork>undefined();
+        public static final String JSON_PROPERTY_CARD_NETWORK = "card_network";
+    @javax.annotation.Nullable
+            private JsonNullable<CardNetwork> cardNetwork = JsonNullable.<CardNetwork>undefined();
 
-  public static final String JSON_PROPERTY_CARD_TYPE = "card_type";
-  private JsonNullable<String> cardType = JsonNullable.<String>undefined();
+        public static final String JSON_PROPERTY_CARD_TYPE = "card_type";
+    @javax.annotation.Nullable
+            private JsonNullable<String> cardType = JsonNullable.<String>undefined();
 
-  public static final String JSON_PROPERTY_CARD_ISSUING_COUNTRY = "card_issuing_country";
-  private JsonNullable<String> cardIssuingCountry = JsonNullable.<String>undefined();
+        public static final String JSON_PROPERTY_CARD_ISSUING_COUNTRY = "card_issuing_country";
+    @javax.annotation.Nullable
+            private JsonNullable<String> cardIssuingCountry = JsonNullable.<String>undefined();
 
-  public static final String JSON_PROPERTY_BANK_CODE = "bank_code";
-  private JsonNullable<String> bankCode = JsonNullable.<String>undefined();
+        public static final String JSON_PROPERTY_BANK_CODE = "bank_code";
+    @javax.annotation.Nullable
+            private JsonNullable<String> bankCode = JsonNullable.<String>undefined();
 
-  public static final String JSON_PROPERTY_LAST4 = "last4";
-  private JsonNullable<String> last4 = JsonNullable.<String>undefined();
+        public static final String JSON_PROPERTY_LAST4 = "last4";
+    @javax.annotation.Nullable
+            private JsonNullable<String> last4 = JsonNullable.<String>undefined();
 
-  public static final String JSON_PROPERTY_CARD_ISIN = "card_isin";
-  private JsonNullable<String> cardIsin = JsonNullable.<String>undefined();
+        public static final String JSON_PROPERTY_CARD_ISIN = "card_isin";
+    @javax.annotation.Nullable
+            private JsonNullable<String> cardIsin = JsonNullable.<String>undefined();
 
-  public static final String JSON_PROPERTY_CARD_EXTENDED_BIN = "card_extended_bin";
-  private JsonNullable<String> cardExtendedBin = JsonNullable.<String>undefined();
+        public static final String JSON_PROPERTY_CARD_EXTENDED_BIN = "card_extended_bin";
+    @javax.annotation.Nullable
+            private JsonNullable<String> cardExtendedBin = JsonNullable.<String>undefined();
 
-  public static final String JSON_PROPERTY_CARD_EXP_MONTH = "card_exp_month";
-  private String cardExpMonth;
+        public static final String JSON_PROPERTY_CARD_EXP_MONTH = "card_exp_month";
+    @javax.annotation.Nonnull
+            private String cardExpMonth;
 
-  public static final String JSON_PROPERTY_CARD_EXP_YEAR = "card_exp_year";
-  private String cardExpYear;
+        public static final String JSON_PROPERTY_CARD_EXP_YEAR = "card_exp_year";
+    @javax.annotation.Nonnull
+            private String cardExpYear;
 
-  public static final String JSON_PROPERTY_CARD_HOLDER_NAME = "card_holder_name";
-  private String cardHolderName;
+        public static final String JSON_PROPERTY_CARD_HOLDER_NAME = "card_holder_name";
+    @javax.annotation.Nonnull
+            private String cardHolderName;
 
-  public CardAdditionalData() {
-  }
+public CardAdditionalData() {
+}
 
-  public CardAdditionalData cardIssuer(String cardIssuer) {
-    this.cardIssuer = JsonNullable.<String>of(cardIssuer);
+        public CardAdditionalData cardIssuer(@javax.annotation.Nullable String cardIssuer) {
+        this.cardIssuer = JsonNullable.<String>of(cardIssuer);
+        
+        return this;
+        }
+
+    /**
+        * Issuer of the card
+    * @return cardIssuer
+    */
+    @javax.annotation.Nullable
+        @JsonIgnore
     
-    return this;
-  }
+    public String getCardIssuer() {
+                return cardIssuer.orElse(null);
+    }
 
-   /**
-   * Issuer of the card
-   * @return cardIssuer
-  **/
-  @javax.annotation.Nullable
-  @JsonIgnore
-
-  public String getCardIssuer() {
-        return cardIssuer.orElse(null);
-  }
-
-  @JsonProperty(JSON_PROPERTY_CARD_ISSUER)
+          @JsonProperty(JSON_PROPERTY_CARD_ISSUER)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-  public JsonNullable<String> getCardIssuer_JsonNullable() {
-    return cardIssuer;
-  }
-  
-  @JsonProperty(JSON_PROPERTY_CARD_ISSUER)
-  public void setCardIssuer_JsonNullable(JsonNullable<String> cardIssuer) {
-    this.cardIssuer = cardIssuer;
-  }
-
-  public void setCardIssuer(String cardIssuer) {
-    this.cardIssuer = JsonNullable.<String>of(cardIssuer);
-  }
-
-
-  public CardAdditionalData cardNetwork(CardNetwork cardNetwork) {
-    this.cardNetwork = JsonNullable.<CardNetwork>of(cardNetwork);
+        public JsonNullable<String> getCardIssuer_JsonNullable() {
+        return cardIssuer;
+        }
     
-    return this;
-  }
+        @JsonProperty(JSON_PROPERTY_CARD_ISSUER)
+        public void setCardIssuer_JsonNullable(JsonNullable<String> cardIssuer) {
+        this.cardIssuer = cardIssuer;
+        }
 
-   /**
-   * Get cardNetwork
-   * @return cardNetwork
-  **/
-  @javax.annotation.Nullable
-  @JsonIgnore
+          public void setCardIssuer(@javax.annotation.Nullable String cardIssuer) {
+            this.cardIssuer = JsonNullable.<String>of(cardIssuer);
+        }
 
-  public CardNetwork getCardNetwork() {
-        return cardNetwork.orElse(null);
-  }
+        public CardAdditionalData cardNetwork(@javax.annotation.Nullable CardNetwork cardNetwork) {
+        this.cardNetwork = JsonNullable.<CardNetwork>of(cardNetwork);
+        
+        return this;
+        }
 
-  @JsonProperty(JSON_PROPERTY_CARD_NETWORK)
+    /**
+        * Get cardNetwork
+    * @return cardNetwork
+    */
+    @javax.annotation.Nullable
+        @JsonIgnore
+    
+    public CardNetwork getCardNetwork() {
+                return cardNetwork.orElse(null);
+    }
+
+          @JsonProperty(JSON_PROPERTY_CARD_NETWORK)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-  public JsonNullable<CardNetwork> getCardNetwork_JsonNullable() {
-    return cardNetwork;
-  }
-  
-  @JsonProperty(JSON_PROPERTY_CARD_NETWORK)
-  public void setCardNetwork_JsonNullable(JsonNullable<CardNetwork> cardNetwork) {
-    this.cardNetwork = cardNetwork;
-  }
-
-  public void setCardNetwork(CardNetwork cardNetwork) {
-    this.cardNetwork = JsonNullable.<CardNetwork>of(cardNetwork);
-  }
-
-
-  public CardAdditionalData cardType(String cardType) {
-    this.cardType = JsonNullable.<String>of(cardType);
+        public JsonNullable<CardNetwork> getCardNetwork_JsonNullable() {
+        return cardNetwork;
+        }
     
-    return this;
-  }
+        @JsonProperty(JSON_PROPERTY_CARD_NETWORK)
+        public void setCardNetwork_JsonNullable(JsonNullable<CardNetwork> cardNetwork) {
+        this.cardNetwork = cardNetwork;
+        }
 
-   /**
-   * Card type, can be either &#x60;credit&#x60; or &#x60;debit&#x60;
-   * @return cardType
-  **/
-  @javax.annotation.Nullable
-  @JsonIgnore
+          public void setCardNetwork(@javax.annotation.Nullable CardNetwork cardNetwork) {
+            this.cardNetwork = JsonNullable.<CardNetwork>of(cardNetwork);
+        }
 
-  public String getCardType() {
-        return cardType.orElse(null);
-  }
+        public CardAdditionalData cardType(@javax.annotation.Nullable String cardType) {
+        this.cardType = JsonNullable.<String>of(cardType);
+        
+        return this;
+        }
 
-  @JsonProperty(JSON_PROPERTY_CARD_TYPE)
+    /**
+        * Card type, can be either &#x60;credit&#x60; or &#x60;debit&#x60;
+    * @return cardType
+    */
+    @javax.annotation.Nullable
+        @JsonIgnore
+    
+    public String getCardType() {
+                return cardType.orElse(null);
+    }
+
+          @JsonProperty(JSON_PROPERTY_CARD_TYPE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-  public JsonNullable<String> getCardType_JsonNullable() {
-    return cardType;
-  }
-  
-  @JsonProperty(JSON_PROPERTY_CARD_TYPE)
-  public void setCardType_JsonNullable(JsonNullable<String> cardType) {
-    this.cardType = cardType;
-  }
-
-  public void setCardType(String cardType) {
-    this.cardType = JsonNullable.<String>of(cardType);
-  }
-
-
-  public CardAdditionalData cardIssuingCountry(String cardIssuingCountry) {
-    this.cardIssuingCountry = JsonNullable.<String>of(cardIssuingCountry);
+        public JsonNullable<String> getCardType_JsonNullable() {
+        return cardType;
+        }
     
-    return this;
-  }
+        @JsonProperty(JSON_PROPERTY_CARD_TYPE)
+        public void setCardType_JsonNullable(JsonNullable<String> cardType) {
+        this.cardType = cardType;
+        }
 
-   /**
-   * Card issuing country
-   * @return cardIssuingCountry
-  **/
-  @javax.annotation.Nullable
-  @JsonIgnore
+          public void setCardType(@javax.annotation.Nullable String cardType) {
+            this.cardType = JsonNullable.<String>of(cardType);
+        }
 
-  public String getCardIssuingCountry() {
-        return cardIssuingCountry.orElse(null);
-  }
+        public CardAdditionalData cardIssuingCountry(@javax.annotation.Nullable String cardIssuingCountry) {
+        this.cardIssuingCountry = JsonNullable.<String>of(cardIssuingCountry);
+        
+        return this;
+        }
 
-  @JsonProperty(JSON_PROPERTY_CARD_ISSUING_COUNTRY)
+    /**
+        * Card issuing country
+    * @return cardIssuingCountry
+    */
+    @javax.annotation.Nullable
+        @JsonIgnore
+    
+    public String getCardIssuingCountry() {
+                return cardIssuingCountry.orElse(null);
+    }
+
+          @JsonProperty(JSON_PROPERTY_CARD_ISSUING_COUNTRY)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-  public JsonNullable<String> getCardIssuingCountry_JsonNullable() {
-    return cardIssuingCountry;
-  }
-  
-  @JsonProperty(JSON_PROPERTY_CARD_ISSUING_COUNTRY)
-  public void setCardIssuingCountry_JsonNullable(JsonNullable<String> cardIssuingCountry) {
-    this.cardIssuingCountry = cardIssuingCountry;
-  }
-
-  public void setCardIssuingCountry(String cardIssuingCountry) {
-    this.cardIssuingCountry = JsonNullable.<String>of(cardIssuingCountry);
-  }
-
-
-  public CardAdditionalData bankCode(String bankCode) {
-    this.bankCode = JsonNullable.<String>of(bankCode);
+        public JsonNullable<String> getCardIssuingCountry_JsonNullable() {
+        return cardIssuingCountry;
+        }
     
-    return this;
-  }
+        @JsonProperty(JSON_PROPERTY_CARD_ISSUING_COUNTRY)
+        public void setCardIssuingCountry_JsonNullable(JsonNullable<String> cardIssuingCountry) {
+        this.cardIssuingCountry = cardIssuingCountry;
+        }
 
-   /**
-   * Code for Card issuing bank
-   * @return bankCode
-  **/
-  @javax.annotation.Nullable
-  @JsonIgnore
+          public void setCardIssuingCountry(@javax.annotation.Nullable String cardIssuingCountry) {
+            this.cardIssuingCountry = JsonNullable.<String>of(cardIssuingCountry);
+        }
 
-  public String getBankCode() {
-        return bankCode.orElse(null);
-  }
+        public CardAdditionalData bankCode(@javax.annotation.Nullable String bankCode) {
+        this.bankCode = JsonNullable.<String>of(bankCode);
+        
+        return this;
+        }
 
-  @JsonProperty(JSON_PROPERTY_BANK_CODE)
+    /**
+        * Code for Card issuing bank
+    * @return bankCode
+    */
+    @javax.annotation.Nullable
+        @JsonIgnore
+    
+    public String getBankCode() {
+                return bankCode.orElse(null);
+    }
+
+          @JsonProperty(JSON_PROPERTY_BANK_CODE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-  public JsonNullable<String> getBankCode_JsonNullable() {
-    return bankCode;
-  }
-  
-  @JsonProperty(JSON_PROPERTY_BANK_CODE)
-  public void setBankCode_JsonNullable(JsonNullable<String> bankCode) {
-    this.bankCode = bankCode;
-  }
-
-  public void setBankCode(String bankCode) {
-    this.bankCode = JsonNullable.<String>of(bankCode);
-  }
-
-
-  public CardAdditionalData last4(String last4) {
-    this.last4 = JsonNullable.<String>of(last4);
+        public JsonNullable<String> getBankCode_JsonNullable() {
+        return bankCode;
+        }
     
-    return this;
-  }
+        @JsonProperty(JSON_PROPERTY_BANK_CODE)
+        public void setBankCode_JsonNullable(JsonNullable<String> bankCode) {
+        this.bankCode = bankCode;
+        }
 
-   /**
-   * Last 4 digits of the card number
-   * @return last4
-  **/
-  @javax.annotation.Nullable
-  @JsonIgnore
+          public void setBankCode(@javax.annotation.Nullable String bankCode) {
+            this.bankCode = JsonNullable.<String>of(bankCode);
+        }
 
-  public String getLast4() {
-        return last4.orElse(null);
-  }
+        public CardAdditionalData last4(@javax.annotation.Nullable String last4) {
+        this.last4 = JsonNullable.<String>of(last4);
+        
+        return this;
+        }
 
-  @JsonProperty(JSON_PROPERTY_LAST4)
+    /**
+        * Last 4 digits of the card number
+    * @return last4
+    */
+    @javax.annotation.Nullable
+        @JsonIgnore
+    
+    public String getLast4() {
+                return last4.orElse(null);
+    }
+
+          @JsonProperty(JSON_PROPERTY_LAST4)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-  public JsonNullable<String> getLast4_JsonNullable() {
-    return last4;
-  }
-  
-  @JsonProperty(JSON_PROPERTY_LAST4)
-  public void setLast4_JsonNullable(JsonNullable<String> last4) {
-    this.last4 = last4;
-  }
-
-  public void setLast4(String last4) {
-    this.last4 = JsonNullable.<String>of(last4);
-  }
-
-
-  public CardAdditionalData cardIsin(String cardIsin) {
-    this.cardIsin = JsonNullable.<String>of(cardIsin);
+        public JsonNullable<String> getLast4_JsonNullable() {
+        return last4;
+        }
     
-    return this;
-  }
+        @JsonProperty(JSON_PROPERTY_LAST4)
+        public void setLast4_JsonNullable(JsonNullable<String> last4) {
+        this.last4 = last4;
+        }
 
-   /**
-   * The ISIN of the card
-   * @return cardIsin
-  **/
-  @javax.annotation.Nullable
-  @JsonIgnore
+          public void setLast4(@javax.annotation.Nullable String last4) {
+            this.last4 = JsonNullable.<String>of(last4);
+        }
 
-  public String getCardIsin() {
-        return cardIsin.orElse(null);
-  }
+        public CardAdditionalData cardIsin(@javax.annotation.Nullable String cardIsin) {
+        this.cardIsin = JsonNullable.<String>of(cardIsin);
+        
+        return this;
+        }
 
-  @JsonProperty(JSON_PROPERTY_CARD_ISIN)
+    /**
+        * The ISIN of the card
+    * @return cardIsin
+    */
+    @javax.annotation.Nullable
+        @JsonIgnore
+    
+    public String getCardIsin() {
+                return cardIsin.orElse(null);
+    }
+
+          @JsonProperty(JSON_PROPERTY_CARD_ISIN)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-  public JsonNullable<String> getCardIsin_JsonNullable() {
-    return cardIsin;
-  }
-  
-  @JsonProperty(JSON_PROPERTY_CARD_ISIN)
-  public void setCardIsin_JsonNullable(JsonNullable<String> cardIsin) {
-    this.cardIsin = cardIsin;
-  }
-
-  public void setCardIsin(String cardIsin) {
-    this.cardIsin = JsonNullable.<String>of(cardIsin);
-  }
-
-
-  public CardAdditionalData cardExtendedBin(String cardExtendedBin) {
-    this.cardExtendedBin = JsonNullable.<String>of(cardExtendedBin);
+        public JsonNullable<String> getCardIsin_JsonNullable() {
+        return cardIsin;
+        }
     
-    return this;
-  }
+        @JsonProperty(JSON_PROPERTY_CARD_ISIN)
+        public void setCardIsin_JsonNullable(JsonNullable<String> cardIsin) {
+        this.cardIsin = cardIsin;
+        }
 
-   /**
-   * Extended bin of card, contains the first 8 digits of card number
-   * @return cardExtendedBin
-  **/
-  @javax.annotation.Nullable
-  @JsonIgnore
+          public void setCardIsin(@javax.annotation.Nullable String cardIsin) {
+            this.cardIsin = JsonNullable.<String>of(cardIsin);
+        }
 
-  public String getCardExtendedBin() {
-        return cardExtendedBin.orElse(null);
-  }
+        public CardAdditionalData cardExtendedBin(@javax.annotation.Nullable String cardExtendedBin) {
+        this.cardExtendedBin = JsonNullable.<String>of(cardExtendedBin);
+        
+        return this;
+        }
 
-  @JsonProperty(JSON_PROPERTY_CARD_EXTENDED_BIN)
+    /**
+        * Extended bin of card, contains the first 8 digits of card number
+    * @return cardExtendedBin
+    */
+    @javax.annotation.Nullable
+        @JsonIgnore
+    
+    public String getCardExtendedBin() {
+                return cardExtendedBin.orElse(null);
+    }
+
+          @JsonProperty(JSON_PROPERTY_CARD_EXTENDED_BIN)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-  public JsonNullable<String> getCardExtendedBin_JsonNullable() {
-    return cardExtendedBin;
-  }
-  
-  @JsonProperty(JSON_PROPERTY_CARD_EXTENDED_BIN)
-  public void setCardExtendedBin_JsonNullable(JsonNullable<String> cardExtendedBin) {
-    this.cardExtendedBin = cardExtendedBin;
-  }
-
-  public void setCardExtendedBin(String cardExtendedBin) {
-    this.cardExtendedBin = JsonNullable.<String>of(cardExtendedBin);
-  }
-
-
-  public CardAdditionalData cardExpMonth(String cardExpMonth) {
+        public JsonNullable<String> getCardExtendedBin_JsonNullable() {
+        return cardExtendedBin;
+        }
     
-    this.cardExpMonth = cardExpMonth;
-    return this;
-  }
+        @JsonProperty(JSON_PROPERTY_CARD_EXTENDED_BIN)
+        public void setCardExtendedBin_JsonNullable(JsonNullable<String> cardExtendedBin) {
+        this.cardExtendedBin = cardExtendedBin;
+        }
 
-   /**
-   * Card expiry month
-   * @return cardExpMonth
-  **/
-  @javax.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_CARD_EXP_MONTH)
+          public void setCardExtendedBin(@javax.annotation.Nullable String cardExtendedBin) {
+            this.cardExtendedBin = JsonNullable.<String>of(cardExtendedBin);
+        }
+
+        public CardAdditionalData cardExpMonth(@javax.annotation.Nonnull String cardExpMonth) {
+        
+        this.cardExpMonth = cardExpMonth;
+        return this;
+        }
+
+    /**
+        * Card expiry month
+    * @return cardExpMonth
+    */
+    @javax.annotation.Nonnull
+      @JsonProperty(JSON_PROPERTY_CARD_EXP_MONTH)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-  public String getCardExpMonth() {
-    return cardExpMonth;
-  }
+    public String getCardExpMonth() {
+        return cardExpMonth;
+    }
 
 
-  @JsonProperty(JSON_PROPERTY_CARD_EXP_MONTH)
+          @JsonProperty(JSON_PROPERTY_CARD_EXP_MONTH)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setCardExpMonth(String cardExpMonth) {
-    this.cardExpMonth = cardExpMonth;
-  }
+  public void setCardExpMonth(@javax.annotation.Nonnull String cardExpMonth) {
+            this.cardExpMonth = cardExpMonth;
+        }
 
+        public CardAdditionalData cardExpYear(@javax.annotation.Nonnull String cardExpYear) {
+        
+        this.cardExpYear = cardExpYear;
+        return this;
+        }
 
-  public CardAdditionalData cardExpYear(String cardExpYear) {
-    
-    this.cardExpYear = cardExpYear;
-    return this;
-  }
-
-   /**
-   * Card expiry year
-   * @return cardExpYear
-  **/
-  @javax.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_CARD_EXP_YEAR)
-  @JsonInclude(value = JsonInclude.Include.ALWAYS)
-
-  public String getCardExpYear() {
-    return cardExpYear;
-  }
-
-
-  @JsonProperty(JSON_PROPERTY_CARD_EXP_YEAR)
-  @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setCardExpYear(String cardExpYear) {
-    this.cardExpYear = cardExpYear;
-  }
-
-
-  public CardAdditionalData cardHolderName(String cardHolderName) {
-    
-    this.cardHolderName = cardHolderName;
-    return this;
-  }
-
-   /**
-   * Card holder name
-   * @return cardHolderName
-  **/
-  @javax.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_CARD_HOLDER_NAME)
+    /**
+        * Card expiry year
+    * @return cardExpYear
+    */
+    @javax.annotation.Nonnull
+      @JsonProperty(JSON_PROPERTY_CARD_EXP_YEAR)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-  public String getCardHolderName() {
-    return cardHolderName;
-  }
+    public String getCardExpYear() {
+        return cardExpYear;
+    }
 
 
-  @JsonProperty(JSON_PROPERTY_CARD_HOLDER_NAME)
+          @JsonProperty(JSON_PROPERTY_CARD_EXP_YEAR)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setCardHolderName(String cardHolderName) {
-    this.cardHolderName = cardHolderName;
-  }
+  public void setCardExpYear(@javax.annotation.Nonnull String cardExpYear) {
+            this.cardExpYear = cardExpYear;
+        }
 
-  @Override
-  public boolean equals(Object o) {
+        public CardAdditionalData cardHolderName(@javax.annotation.Nonnull String cardHolderName) {
+        
+        this.cardHolderName = cardHolderName;
+        return this;
+        }
+
+    /**
+        * Card holder name
+    * @return cardHolderName
+    */
+    @javax.annotation.Nonnull
+      @JsonProperty(JSON_PROPERTY_CARD_HOLDER_NAME)
+  @JsonInclude(value = JsonInclude.Include.ALWAYS)
+
+    public String getCardHolderName() {
+        return cardHolderName;
+    }
+
+
+          @JsonProperty(JSON_PROPERTY_CARD_HOLDER_NAME)
+  @JsonInclude(value = JsonInclude.Include.ALWAYS)
+  public void setCardHolderName(@javax.annotation.Nonnull String cardHolderName) {
+            this.cardHolderName = cardHolderName;
+        }
+
+@Override
+public boolean equals(Object o) {
     if (this == o) {
-      return true;
+    return true;
     }
     if (o == null || getClass() != o.getClass()) {
-      return false;
+    return false;
     }
-    CardAdditionalData cardAdditionalData = (CardAdditionalData) o;
-    return equalsNullable(this.cardIssuer, cardAdditionalData.cardIssuer) &&
+        CardAdditionalData cardAdditionalData = (CardAdditionalData) o;
+        return equalsNullable(this.cardIssuer, cardAdditionalData.cardIssuer) &&
         equalsNullable(this.cardNetwork, cardAdditionalData.cardNetwork) &&
         equalsNullable(this.cardType, cardAdditionalData.cardType) &&
         equalsNullable(this.cardIssuingCountry, cardAdditionalData.cardIssuingCountry) &&
@@ -454,198 +455,198 @@ public class CardAdditionalData {
         Objects.equals(this.cardExpMonth, cardAdditionalData.cardExpMonth) &&
         Objects.equals(this.cardExpYear, cardAdditionalData.cardExpYear) &&
         Objects.equals(this.cardHolderName, cardAdditionalData.cardHolderName);
-  }
+}
 
-  private static <T> boolean equalsNullable(JsonNullable<T> a, JsonNullable<T> b) {
-    return a == b || (a != null && b != null && a.isPresent() && b.isPresent() && Objects.deepEquals(a.get(), b.get()));
-  }
+    private static <T> boolean equalsNullable(JsonNullable<T> a, JsonNullable<T> b) {
+        return a == b || (a != null && b != null && a.isPresent() && b.isPresent() && Objects.deepEquals(a.get(), b.get()));
+        }
 
-  @Override
-  public int hashCode() {
-    return Objects.hash(hashCodeNullable(cardIssuer), hashCodeNullable(cardNetwork), hashCodeNullable(cardType), hashCodeNullable(cardIssuingCountry), hashCodeNullable(bankCode), hashCodeNullable(last4), hashCodeNullable(cardIsin), hashCodeNullable(cardExtendedBin), cardExpMonth, cardExpYear, cardHolderName);
-  }
-
-  private static <T> int hashCodeNullable(JsonNullable<T> a) {
-    if (a == null) {
-      return 1;
+    @Override
+    public int hashCode() {
+        return Objects.hash(hashCodeNullable(cardIssuer), hashCodeNullable(cardNetwork), hashCodeNullable(cardType), hashCodeNullable(cardIssuingCountry), hashCodeNullable(bankCode), hashCodeNullable(last4), hashCodeNullable(cardIsin), hashCodeNullable(cardExtendedBin), cardExpMonth, cardExpYear, cardHolderName);
     }
-    return a.isPresent() ? Arrays.deepHashCode(new Object[]{a.get()}) : 31;
-  }
 
-  @Override
-  public String toString() {
+        private static <T> int hashCodeNullable(JsonNullable<T> a) {
+        if (a == null) {
+        return 1;
+        }
+        return a.isPresent() ? Arrays.deepHashCode(new Object[]{a.get()}) : 31;
+        }
+
+    @Override
+    public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class CardAdditionalData {\n");
-    sb.append("    cardIssuer: ").append(toIndentedString(cardIssuer)).append("\n");
-    sb.append("    cardNetwork: ").append(toIndentedString(cardNetwork)).append("\n");
-    sb.append("    cardType: ").append(toIndentedString(cardType)).append("\n");
-    sb.append("    cardIssuingCountry: ").append(toIndentedString(cardIssuingCountry)).append("\n");
-    sb.append("    bankCode: ").append(toIndentedString(bankCode)).append("\n");
-    sb.append("    last4: ").append(toIndentedString(last4)).append("\n");
-    sb.append("    cardIsin: ").append(toIndentedString(cardIsin)).append("\n");
-    sb.append("    cardExtendedBin: ").append(toIndentedString(cardExtendedBin)).append("\n");
-    sb.append("    cardExpMonth: ").append(toIndentedString(cardExpMonth)).append("\n");
-    sb.append("    cardExpYear: ").append(toIndentedString(cardExpYear)).append("\n");
-    sb.append("    cardHolderName: ").append(toIndentedString(cardHolderName)).append("\n");
+        sb.append("    cardIssuer: ").append(toIndentedString(cardIssuer)).append("\n");
+        sb.append("    cardNetwork: ").append(toIndentedString(cardNetwork)).append("\n");
+        sb.append("    cardType: ").append(toIndentedString(cardType)).append("\n");
+        sb.append("    cardIssuingCountry: ").append(toIndentedString(cardIssuingCountry)).append("\n");
+        sb.append("    bankCode: ").append(toIndentedString(bankCode)).append("\n");
+        sb.append("    last4: ").append(toIndentedString(last4)).append("\n");
+        sb.append("    cardIsin: ").append(toIndentedString(cardIsin)).append("\n");
+        sb.append("    cardExtendedBin: ").append(toIndentedString(cardExtendedBin)).append("\n");
+        sb.append("    cardExpMonth: ").append(toIndentedString(cardExpMonth)).append("\n");
+        sb.append("    cardExpYear: ").append(toIndentedString(cardExpYear)).append("\n");
+        sb.append("    cardHolderName: ").append(toIndentedString(cardHolderName)).append("\n");
     sb.append("}");
     return sb.toString();
-  }
+    }
 
-  /**
-   * Convert the given object to string with each line indented by 4 spaces
-   * (except the first line).
-   */
-  private String toIndentedString(Object o) {
+    /**
+    * Convert the given object to string with each line indented by 4 spaces
+    * (except the first line).
+    */
+    private String toIndentedString(Object o) {
     if (o == null) {
-      return "null";
+    return "null";
     }
     return o.toString().replace("\n", "\n    ");
-  }
-
-  /**
-   * Convert the instance into URL query string.
-   *
-   * @return URL query string
-   */
-  public String toUrlQueryString() {
-    return toUrlQueryString(null);
-  }
-
-  /**
-   * Convert the instance into URL query string.
-   *
-   * @param prefix prefix of the query string
-   * @return URL query string
-   */
-  public String toUrlQueryString(String prefix) {
-    String suffix = "";
-    String containerSuffix = "";
-    String containerPrefix = "";
-    if (prefix == null) {
-      // style=form, explode=true, e.g. /pet?name=cat&type=manx
-      prefix = "";
-    } else {
-      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
-      prefix = prefix + "[";
-      suffix = "]";
-      containerSuffix = "]";
-      containerPrefix = "[";
     }
 
-    StringJoiner joiner = new StringJoiner("&");
+        /**
+        * Convert the instance into URL query string.
+        *
+        * @return URL query string
+        */
+        public String toUrlQueryString() {
+        return toUrlQueryString(null);
+        }
 
-    // add `card_issuer` to the URL query string
-    if (getCardIssuer() != null) {
-      try {
-        joiner.add(String.format("%scard_issuer%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCardIssuer()), "UTF-8").replaceAll("\\+", "%20")));
-      } catch (UnsupportedEncodingException e) {
-        // Should never happen, UTF-8 is always supported
-        throw new RuntimeException(e);
-      }
+        /**
+        * Convert the instance into URL query string.
+        *
+        * @param prefix prefix of the query string
+        * @return URL query string
+        */
+        public String toUrlQueryString(String prefix) {
+        String suffix = "";
+        String containerSuffix = "";
+        String containerPrefix = "";
+        if (prefix == null) {
+        // style=form, explode=true, e.g. /pet?name=cat&type=manx
+        prefix = "";
+        } else {
+        // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+        prefix = prefix + "[";
+        suffix = "]";
+        containerSuffix = "]";
+        containerPrefix = "[";
+        }
+
+        StringJoiner joiner = new StringJoiner("&");
+
+            // add `card_issuer` to the URL query string
+                        if (getCardIssuer() != null) {
+                        try {
+                        joiner.add(String.format("%scard_issuer%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCardIssuer()), "UTF-8").replaceAll("\\+", "%20")));
+                        } catch (UnsupportedEncodingException e) {
+                        // Should never happen, UTF-8 is always supported
+                        throw new RuntimeException(e);
+                        }
+                        }
+
+            // add `card_network` to the URL query string
+                            if (getCardNetwork() != null) {
+                            try {
+                            joiner.add(String.format("%scard_network%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCardNetwork()), "UTF-8").replaceAll("\\+", "%20")));
+                            } catch (UnsupportedEncodingException e) {
+                            // Should never happen, UTF-8 is always supported
+                            throw new RuntimeException(e);
+                            }
+                            }
+
+            // add `card_type` to the URL query string
+                        if (getCardType() != null) {
+                        try {
+                        joiner.add(String.format("%scard_type%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCardType()), "UTF-8").replaceAll("\\+", "%20")));
+                        } catch (UnsupportedEncodingException e) {
+                        // Should never happen, UTF-8 is always supported
+                        throw new RuntimeException(e);
+                        }
+                        }
+
+            // add `card_issuing_country` to the URL query string
+                        if (getCardIssuingCountry() != null) {
+                        try {
+                        joiner.add(String.format("%scard_issuing_country%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCardIssuingCountry()), "UTF-8").replaceAll("\\+", "%20")));
+                        } catch (UnsupportedEncodingException e) {
+                        // Should never happen, UTF-8 is always supported
+                        throw new RuntimeException(e);
+                        }
+                        }
+
+            // add `bank_code` to the URL query string
+                        if (getBankCode() != null) {
+                        try {
+                        joiner.add(String.format("%sbank_code%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getBankCode()), "UTF-8").replaceAll("\\+", "%20")));
+                        } catch (UnsupportedEncodingException e) {
+                        // Should never happen, UTF-8 is always supported
+                        throw new RuntimeException(e);
+                        }
+                        }
+
+            // add `last4` to the URL query string
+                        if (getLast4() != null) {
+                        try {
+                        joiner.add(String.format("%slast4%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getLast4()), "UTF-8").replaceAll("\\+", "%20")));
+                        } catch (UnsupportedEncodingException e) {
+                        // Should never happen, UTF-8 is always supported
+                        throw new RuntimeException(e);
+                        }
+                        }
+
+            // add `card_isin` to the URL query string
+                        if (getCardIsin() != null) {
+                        try {
+                        joiner.add(String.format("%scard_isin%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCardIsin()), "UTF-8").replaceAll("\\+", "%20")));
+                        } catch (UnsupportedEncodingException e) {
+                        // Should never happen, UTF-8 is always supported
+                        throw new RuntimeException(e);
+                        }
+                        }
+
+            // add `card_extended_bin` to the URL query string
+                        if (getCardExtendedBin() != null) {
+                        try {
+                        joiner.add(String.format("%scard_extended_bin%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCardExtendedBin()), "UTF-8").replaceAll("\\+", "%20")));
+                        } catch (UnsupportedEncodingException e) {
+                        // Should never happen, UTF-8 is always supported
+                        throw new RuntimeException(e);
+                        }
+                        }
+
+            // add `card_exp_month` to the URL query string
+                        if (getCardExpMonth() != null) {
+                        try {
+                        joiner.add(String.format("%scard_exp_month%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCardExpMonth()), "UTF-8").replaceAll("\\+", "%20")));
+                        } catch (UnsupportedEncodingException e) {
+                        // Should never happen, UTF-8 is always supported
+                        throw new RuntimeException(e);
+                        }
+                        }
+
+            // add `card_exp_year` to the URL query string
+                        if (getCardExpYear() != null) {
+                        try {
+                        joiner.add(String.format("%scard_exp_year%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCardExpYear()), "UTF-8").replaceAll("\\+", "%20")));
+                        } catch (UnsupportedEncodingException e) {
+                        // Should never happen, UTF-8 is always supported
+                        throw new RuntimeException(e);
+                        }
+                        }
+
+            // add `card_holder_name` to the URL query string
+                        if (getCardHolderName() != null) {
+                        try {
+                        joiner.add(String.format("%scard_holder_name%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCardHolderName()), "UTF-8").replaceAll("\\+", "%20")));
+                        } catch (UnsupportedEncodingException e) {
+                        // Should never happen, UTF-8 is always supported
+                        throw new RuntimeException(e);
+                        }
+                        }
+
+        return joiner.toString();
+        }
+
     }
-
-    // add `card_network` to the URL query string
-    if (getCardNetwork() != null) {
-      try {
-        joiner.add(String.format("%scard_network%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCardNetwork()), "UTF-8").replaceAll("\\+", "%20")));
-      } catch (UnsupportedEncodingException e) {
-        // Should never happen, UTF-8 is always supported
-        throw new RuntimeException(e);
-      }
-    }
-
-    // add `card_type` to the URL query string
-    if (getCardType() != null) {
-      try {
-        joiner.add(String.format("%scard_type%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCardType()), "UTF-8").replaceAll("\\+", "%20")));
-      } catch (UnsupportedEncodingException e) {
-        // Should never happen, UTF-8 is always supported
-        throw new RuntimeException(e);
-      }
-    }
-
-    // add `card_issuing_country` to the URL query string
-    if (getCardIssuingCountry() != null) {
-      try {
-        joiner.add(String.format("%scard_issuing_country%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCardIssuingCountry()), "UTF-8").replaceAll("\\+", "%20")));
-      } catch (UnsupportedEncodingException e) {
-        // Should never happen, UTF-8 is always supported
-        throw new RuntimeException(e);
-      }
-    }
-
-    // add `bank_code` to the URL query string
-    if (getBankCode() != null) {
-      try {
-        joiner.add(String.format("%sbank_code%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getBankCode()), "UTF-8").replaceAll("\\+", "%20")));
-      } catch (UnsupportedEncodingException e) {
-        // Should never happen, UTF-8 is always supported
-        throw new RuntimeException(e);
-      }
-    }
-
-    // add `last4` to the URL query string
-    if (getLast4() != null) {
-      try {
-        joiner.add(String.format("%slast4%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getLast4()), "UTF-8").replaceAll("\\+", "%20")));
-      } catch (UnsupportedEncodingException e) {
-        // Should never happen, UTF-8 is always supported
-        throw new RuntimeException(e);
-      }
-    }
-
-    // add `card_isin` to the URL query string
-    if (getCardIsin() != null) {
-      try {
-        joiner.add(String.format("%scard_isin%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCardIsin()), "UTF-8").replaceAll("\\+", "%20")));
-      } catch (UnsupportedEncodingException e) {
-        // Should never happen, UTF-8 is always supported
-        throw new RuntimeException(e);
-      }
-    }
-
-    // add `card_extended_bin` to the URL query string
-    if (getCardExtendedBin() != null) {
-      try {
-        joiner.add(String.format("%scard_extended_bin%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCardExtendedBin()), "UTF-8").replaceAll("\\+", "%20")));
-      } catch (UnsupportedEncodingException e) {
-        // Should never happen, UTF-8 is always supported
-        throw new RuntimeException(e);
-      }
-    }
-
-    // add `card_exp_month` to the URL query string
-    if (getCardExpMonth() != null) {
-      try {
-        joiner.add(String.format("%scard_exp_month%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCardExpMonth()), "UTF-8").replaceAll("\\+", "%20")));
-      } catch (UnsupportedEncodingException e) {
-        // Should never happen, UTF-8 is always supported
-        throw new RuntimeException(e);
-      }
-    }
-
-    // add `card_exp_year` to the URL query string
-    if (getCardExpYear() != null) {
-      try {
-        joiner.add(String.format("%scard_exp_year%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCardExpYear()), "UTF-8").replaceAll("\\+", "%20")));
-      } catch (UnsupportedEncodingException e) {
-        // Should never happen, UTF-8 is always supported
-        throw new RuntimeException(e);
-      }
-    }
-
-    // add `card_holder_name` to the URL query string
-    if (getCardHolderName() != null) {
-      try {
-        joiner.add(String.format("%scard_holder_name%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCardHolderName()), "UTF-8").replaceAll("\\+", "%20")));
-      } catch (UnsupportedEncodingException e) {
-        // Should never happen, UTF-8 is always supported
-        throw new RuntimeException(e);
-      }
-    }
-
-    return joiner.toString();
-  }
-
-}
 

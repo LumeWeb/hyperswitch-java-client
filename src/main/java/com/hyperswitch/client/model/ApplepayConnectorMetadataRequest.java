@@ -32,139 +32,140 @@ import java.net.URLEncoder;
 import java.util.StringJoiner;
 
 /**
- * ApplepayConnectorMetadataRequest
- */
-@JsonPropertyOrder({
-  ApplepayConnectorMetadataRequest.JSON_PROPERTY_SESSION_TOKEN_DATA
-})
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+* ApplepayConnectorMetadataRequest
+*/
+    @JsonPropertyOrder({
+        ApplepayConnectorMetadataRequest.JSON_PROPERTY_SESSION_TOKEN_DATA
+    })
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class ApplepayConnectorMetadataRequest {
-  public static final String JSON_PROPERTY_SESSION_TOKEN_DATA = "session_token_data";
-  private JsonNullable<SessionTokenInfo> sessionTokenData = JsonNullable.<SessionTokenInfo>undefined();
+        public static final String JSON_PROPERTY_SESSION_TOKEN_DATA = "session_token_data";
+    @javax.annotation.Nullable
+            private JsonNullable<SessionTokenInfo> sessionTokenData = JsonNullable.<SessionTokenInfo>undefined();
 
-  public ApplepayConnectorMetadataRequest() {
-  }
+public ApplepayConnectorMetadataRequest() {
+}
 
-  public ApplepayConnectorMetadataRequest sessionTokenData(SessionTokenInfo sessionTokenData) {
-    this.sessionTokenData = JsonNullable.<SessionTokenInfo>of(sessionTokenData);
+        public ApplepayConnectorMetadataRequest sessionTokenData(@javax.annotation.Nullable SessionTokenInfo sessionTokenData) {
+        this.sessionTokenData = JsonNullable.<SessionTokenInfo>of(sessionTokenData);
+        
+        return this;
+        }
+
+    /**
+        * Get sessionTokenData
+    * @return sessionTokenData
+    */
+    @javax.annotation.Nullable
+        @JsonIgnore
     
-    return this;
-  }
+    public SessionTokenInfo getSessionTokenData() {
+                return sessionTokenData.orElse(null);
+    }
 
-   /**
-   * Get sessionTokenData
-   * @return sessionTokenData
-  **/
-  @javax.annotation.Nullable
-  @JsonIgnore
-
-  public SessionTokenInfo getSessionTokenData() {
-        return sessionTokenData.orElse(null);
-  }
-
-  @JsonProperty(JSON_PROPERTY_SESSION_TOKEN_DATA)
+          @JsonProperty(JSON_PROPERTY_SESSION_TOKEN_DATA)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-  public JsonNullable<SessionTokenInfo> getSessionTokenData_JsonNullable() {
-    return sessionTokenData;
-  }
-  
-  @JsonProperty(JSON_PROPERTY_SESSION_TOKEN_DATA)
-  public void setSessionTokenData_JsonNullable(JsonNullable<SessionTokenInfo> sessionTokenData) {
-    this.sessionTokenData = sessionTokenData;
-  }
+        public JsonNullable<SessionTokenInfo> getSessionTokenData_JsonNullable() {
+        return sessionTokenData;
+        }
+    
+        @JsonProperty(JSON_PROPERTY_SESSION_TOKEN_DATA)
+        public void setSessionTokenData_JsonNullable(JsonNullable<SessionTokenInfo> sessionTokenData) {
+        this.sessionTokenData = sessionTokenData;
+        }
 
-  public void setSessionTokenData(SessionTokenInfo sessionTokenData) {
-    this.sessionTokenData = JsonNullable.<SessionTokenInfo>of(sessionTokenData);
-  }
+          public void setSessionTokenData(@javax.annotation.Nullable SessionTokenInfo sessionTokenData) {
+            this.sessionTokenData = JsonNullable.<SessionTokenInfo>of(sessionTokenData);
+        }
 
-  @Override
-  public boolean equals(Object o) {
+@Override
+public boolean equals(Object o) {
     if (this == o) {
-      return true;
+    return true;
     }
     if (o == null || getClass() != o.getClass()) {
-      return false;
+    return false;
     }
-    ApplepayConnectorMetadataRequest applepayConnectorMetadataRequest = (ApplepayConnectorMetadataRequest) o;
-    return equalsNullable(this.sessionTokenData, applepayConnectorMetadataRequest.sessionTokenData);
-  }
+        ApplepayConnectorMetadataRequest applepayConnectorMetadataRequest = (ApplepayConnectorMetadataRequest) o;
+        return equalsNullable(this.sessionTokenData, applepayConnectorMetadataRequest.sessionTokenData);
+}
 
-  private static <T> boolean equalsNullable(JsonNullable<T> a, JsonNullable<T> b) {
-    return a == b || (a != null && b != null && a.isPresent() && b.isPresent() && Objects.deepEquals(a.get(), b.get()));
-  }
+    private static <T> boolean equalsNullable(JsonNullable<T> a, JsonNullable<T> b) {
+        return a == b || (a != null && b != null && a.isPresent() && b.isPresent() && Objects.deepEquals(a.get(), b.get()));
+        }
 
-  @Override
-  public int hashCode() {
-    return Objects.hash(hashCodeNullable(sessionTokenData));
-  }
-
-  private static <T> int hashCodeNullable(JsonNullable<T> a) {
-    if (a == null) {
-      return 1;
+    @Override
+    public int hashCode() {
+        return Objects.hash(hashCodeNullable(sessionTokenData));
     }
-    return a.isPresent() ? Arrays.deepHashCode(new Object[]{a.get()}) : 31;
-  }
 
-  @Override
-  public String toString() {
+        private static <T> int hashCodeNullable(JsonNullable<T> a) {
+        if (a == null) {
+        return 1;
+        }
+        return a.isPresent() ? Arrays.deepHashCode(new Object[]{a.get()}) : 31;
+        }
+
+    @Override
+    public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class ApplepayConnectorMetadataRequest {\n");
-    sb.append("    sessionTokenData: ").append(toIndentedString(sessionTokenData)).append("\n");
+        sb.append("    sessionTokenData: ").append(toIndentedString(sessionTokenData)).append("\n");
     sb.append("}");
     return sb.toString();
-  }
+    }
 
-  /**
-   * Convert the given object to string with each line indented by 4 spaces
-   * (except the first line).
-   */
-  private String toIndentedString(Object o) {
+    /**
+    * Convert the given object to string with each line indented by 4 spaces
+    * (except the first line).
+    */
+    private String toIndentedString(Object o) {
     if (o == null) {
-      return "null";
+    return "null";
     }
     return o.toString().replace("\n", "\n    ");
-  }
-
-  /**
-   * Convert the instance into URL query string.
-   *
-   * @return URL query string
-   */
-  public String toUrlQueryString() {
-    return toUrlQueryString(null);
-  }
-
-  /**
-   * Convert the instance into URL query string.
-   *
-   * @param prefix prefix of the query string
-   * @return URL query string
-   */
-  public String toUrlQueryString(String prefix) {
-    String suffix = "";
-    String containerSuffix = "";
-    String containerPrefix = "";
-    if (prefix == null) {
-      // style=form, explode=true, e.g. /pet?name=cat&type=manx
-      prefix = "";
-    } else {
-      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
-      prefix = prefix + "[";
-      suffix = "]";
-      containerSuffix = "]";
-      containerPrefix = "[";
     }
 
-    StringJoiner joiner = new StringJoiner("&");
+        /**
+        * Convert the instance into URL query string.
+        *
+        * @return URL query string
+        */
+        public String toUrlQueryString() {
+        return toUrlQueryString(null);
+        }
 
-    // add `session_token_data` to the URL query string
-    if (getSessionTokenData() != null) {
-      joiner.add(getSessionTokenData().toUrlQueryString(prefix + "session_token_data" + suffix));
+        /**
+        * Convert the instance into URL query string.
+        *
+        * @param prefix prefix of the query string
+        * @return URL query string
+        */
+        public String toUrlQueryString(String prefix) {
+        String suffix = "";
+        String containerSuffix = "";
+        String containerPrefix = "";
+        if (prefix == null) {
+        // style=form, explode=true, e.g. /pet?name=cat&type=manx
+        prefix = "";
+        } else {
+        // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+        prefix = prefix + "[";
+        suffix = "]";
+        containerSuffix = "]";
+        containerPrefix = "[";
+        }
+
+        StringJoiner joiner = new StringJoiner("&");
+
+            // add `session_token_data` to the URL query string
+                            if (getSessionTokenData() != null) {
+                            joiner.add(getSessionTokenData().toUrlQueryString(prefix + "session_token_data" + suffix));
+                            }
+
+        return joiner.toString();
+        }
+
     }
-
-    return joiner.toString();
-  }
-
-}
 

@@ -13,20 +13,19 @@
 
 package com.hyperswitch.client.model;
 
-import org.junit.Assert;
-import org.junit.Ignore;
-import org.junit.Test;
-
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Test;
 
 /**
  * Model tests for RoutingAlgorithmKind
  */
-public class RoutingAlgorithmKindTest {
+class RoutingAlgorithmKindTest {
     /**
      * Model tests for RoutingAlgorithmKind
      */
     @Test
-    public void testRoutingAlgorithmKind() {
+    void testRoutingAlgorithmKind() {
         // TODO: test RoutingAlgorithmKind
     }
 

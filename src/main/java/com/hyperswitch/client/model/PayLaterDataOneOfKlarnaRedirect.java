@@ -32,195 +32,196 @@ import java.net.URLEncoder;
 import java.util.StringJoiner;
 
 /**
- * For KlarnaRedirect as PayLater Option
- */
-@JsonPropertyOrder({
-  PayLaterDataOneOfKlarnaRedirect.JSON_PROPERTY_BILLING_EMAIL,
-  PayLaterDataOneOfKlarnaRedirect.JSON_PROPERTY_BILLING_COUNTRY
-})
-@JsonTypeName("PayLaterData_oneOf_klarna_redirect")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+* For KlarnaRedirect as PayLater Option
+*/
+    @JsonPropertyOrder({
+        PayLaterDataOneOfKlarnaRedirect.JSON_PROPERTY_BILLING_EMAIL,
+        PayLaterDataOneOfKlarnaRedirect.JSON_PROPERTY_BILLING_COUNTRY
+    })
+            @JsonTypeName("PayLaterData_oneOf_klarna_redirect")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class PayLaterDataOneOfKlarnaRedirect {
-  public static final String JSON_PROPERTY_BILLING_EMAIL = "billing_email";
-  private JsonNullable<String> billingEmail = JsonNullable.<String>undefined();
+        public static final String JSON_PROPERTY_BILLING_EMAIL = "billing_email";
+    @javax.annotation.Nullable
+            private JsonNullable<String> billingEmail = JsonNullable.<String>undefined();
 
-  public static final String JSON_PROPERTY_BILLING_COUNTRY = "billing_country";
-  private JsonNullable<CountryAlpha2> billingCountry = JsonNullable.<CountryAlpha2>undefined();
+        public static final String JSON_PROPERTY_BILLING_COUNTRY = "billing_country";
+    @javax.annotation.Nullable
+            private JsonNullable<CountryAlpha2> billingCountry = JsonNullable.<CountryAlpha2>undefined();
 
-  public PayLaterDataOneOfKlarnaRedirect() {
-  }
+public PayLaterDataOneOfKlarnaRedirect() {
+}
 
-  public PayLaterDataOneOfKlarnaRedirect billingEmail(String billingEmail) {
-    this.billingEmail = JsonNullable.<String>of(billingEmail);
+        public PayLaterDataOneOfKlarnaRedirect billingEmail(@javax.annotation.Nullable String billingEmail) {
+        this.billingEmail = JsonNullable.<String>of(billingEmail);
+        
+        return this;
+        }
+
+    /**
+        * The billing email
+    * @return billingEmail
+    */
+    @javax.annotation.Nullable
+        @JsonIgnore
     
-    return this;
-  }
+    public String getBillingEmail() {
+                return billingEmail.orElse(null);
+    }
 
-   /**
-   * The billing email
-   * @return billingEmail
-  **/
-  @javax.annotation.Nullable
-  @JsonIgnore
-
-  public String getBillingEmail() {
-        return billingEmail.orElse(null);
-  }
-
-  @JsonProperty(JSON_PROPERTY_BILLING_EMAIL)
+          @JsonProperty(JSON_PROPERTY_BILLING_EMAIL)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-  public JsonNullable<String> getBillingEmail_JsonNullable() {
-    return billingEmail;
-  }
-  
-  @JsonProperty(JSON_PROPERTY_BILLING_EMAIL)
-  public void setBillingEmail_JsonNullable(JsonNullable<String> billingEmail) {
-    this.billingEmail = billingEmail;
-  }
-
-  public void setBillingEmail(String billingEmail) {
-    this.billingEmail = JsonNullable.<String>of(billingEmail);
-  }
-
-
-  public PayLaterDataOneOfKlarnaRedirect billingCountry(CountryAlpha2 billingCountry) {
-    this.billingCountry = JsonNullable.<CountryAlpha2>of(billingCountry);
+        public JsonNullable<String> getBillingEmail_JsonNullable() {
+        return billingEmail;
+        }
     
-    return this;
-  }
+        @JsonProperty(JSON_PROPERTY_BILLING_EMAIL)
+        public void setBillingEmail_JsonNullable(JsonNullable<String> billingEmail) {
+        this.billingEmail = billingEmail;
+        }
 
-   /**
-   * Get billingCountry
-   * @return billingCountry
-  **/
-  @javax.annotation.Nullable
-  @JsonIgnore
+          public void setBillingEmail(@javax.annotation.Nullable String billingEmail) {
+            this.billingEmail = JsonNullable.<String>of(billingEmail);
+        }
 
-  public CountryAlpha2 getBillingCountry() {
-        return billingCountry.orElse(null);
-  }
+        public PayLaterDataOneOfKlarnaRedirect billingCountry(@javax.annotation.Nullable CountryAlpha2 billingCountry) {
+        this.billingCountry = JsonNullable.<CountryAlpha2>of(billingCountry);
+        
+        return this;
+        }
 
-  @JsonProperty(JSON_PROPERTY_BILLING_COUNTRY)
+    /**
+        * Get billingCountry
+    * @return billingCountry
+    */
+    @javax.annotation.Nullable
+        @JsonIgnore
+    
+    public CountryAlpha2 getBillingCountry() {
+                return billingCountry.orElse(null);
+    }
+
+          @JsonProperty(JSON_PROPERTY_BILLING_COUNTRY)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-  public JsonNullable<CountryAlpha2> getBillingCountry_JsonNullable() {
-    return billingCountry;
-  }
-  
-  @JsonProperty(JSON_PROPERTY_BILLING_COUNTRY)
-  public void setBillingCountry_JsonNullable(JsonNullable<CountryAlpha2> billingCountry) {
-    this.billingCountry = billingCountry;
-  }
+        public JsonNullable<CountryAlpha2> getBillingCountry_JsonNullable() {
+        return billingCountry;
+        }
+    
+        @JsonProperty(JSON_PROPERTY_BILLING_COUNTRY)
+        public void setBillingCountry_JsonNullable(JsonNullable<CountryAlpha2> billingCountry) {
+        this.billingCountry = billingCountry;
+        }
 
-  public void setBillingCountry(CountryAlpha2 billingCountry) {
-    this.billingCountry = JsonNullable.<CountryAlpha2>of(billingCountry);
-  }
+          public void setBillingCountry(@javax.annotation.Nullable CountryAlpha2 billingCountry) {
+            this.billingCountry = JsonNullable.<CountryAlpha2>of(billingCountry);
+        }
 
-  @Override
-  public boolean equals(Object o) {
+@Override
+public boolean equals(Object o) {
     if (this == o) {
-      return true;
+    return true;
     }
     if (o == null || getClass() != o.getClass()) {
-      return false;
+    return false;
     }
-    PayLaterDataOneOfKlarnaRedirect payLaterDataOneOfKlarnaRedirect = (PayLaterDataOneOfKlarnaRedirect) o;
-    return equalsNullable(this.billingEmail, payLaterDataOneOfKlarnaRedirect.billingEmail) &&
+        PayLaterDataOneOfKlarnaRedirect payLaterDataOneOfKlarnaRedirect = (PayLaterDataOneOfKlarnaRedirect) o;
+        return equalsNullable(this.billingEmail, payLaterDataOneOfKlarnaRedirect.billingEmail) &&
         equalsNullable(this.billingCountry, payLaterDataOneOfKlarnaRedirect.billingCountry);
-  }
+}
 
-  private static <T> boolean equalsNullable(JsonNullable<T> a, JsonNullable<T> b) {
-    return a == b || (a != null && b != null && a.isPresent() && b.isPresent() && Objects.deepEquals(a.get(), b.get()));
-  }
+    private static <T> boolean equalsNullable(JsonNullable<T> a, JsonNullable<T> b) {
+        return a == b || (a != null && b != null && a.isPresent() && b.isPresent() && Objects.deepEquals(a.get(), b.get()));
+        }
 
-  @Override
-  public int hashCode() {
-    return Objects.hash(hashCodeNullable(billingEmail), hashCodeNullable(billingCountry));
-  }
-
-  private static <T> int hashCodeNullable(JsonNullable<T> a) {
-    if (a == null) {
-      return 1;
+    @Override
+    public int hashCode() {
+        return Objects.hash(hashCodeNullable(billingEmail), hashCodeNullable(billingCountry));
     }
-    return a.isPresent() ? Arrays.deepHashCode(new Object[]{a.get()}) : 31;
-  }
 
-  @Override
-  public String toString() {
+        private static <T> int hashCodeNullable(JsonNullable<T> a) {
+        if (a == null) {
+        return 1;
+        }
+        return a.isPresent() ? Arrays.deepHashCode(new Object[]{a.get()}) : 31;
+        }
+
+    @Override
+    public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class PayLaterDataOneOfKlarnaRedirect {\n");
-    sb.append("    billingEmail: ").append(toIndentedString(billingEmail)).append("\n");
-    sb.append("    billingCountry: ").append(toIndentedString(billingCountry)).append("\n");
+        sb.append("    billingEmail: ").append(toIndentedString(billingEmail)).append("\n");
+        sb.append("    billingCountry: ").append(toIndentedString(billingCountry)).append("\n");
     sb.append("}");
     return sb.toString();
-  }
+    }
 
-  /**
-   * Convert the given object to string with each line indented by 4 spaces
-   * (except the first line).
-   */
-  private String toIndentedString(Object o) {
+    /**
+    * Convert the given object to string with each line indented by 4 spaces
+    * (except the first line).
+    */
+    private String toIndentedString(Object o) {
     if (o == null) {
-      return "null";
+    return "null";
     }
     return o.toString().replace("\n", "\n    ");
-  }
-
-  /**
-   * Convert the instance into URL query string.
-   *
-   * @return URL query string
-   */
-  public String toUrlQueryString() {
-    return toUrlQueryString(null);
-  }
-
-  /**
-   * Convert the instance into URL query string.
-   *
-   * @param prefix prefix of the query string
-   * @return URL query string
-   */
-  public String toUrlQueryString(String prefix) {
-    String suffix = "";
-    String containerSuffix = "";
-    String containerPrefix = "";
-    if (prefix == null) {
-      // style=form, explode=true, e.g. /pet?name=cat&type=manx
-      prefix = "";
-    } else {
-      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
-      prefix = prefix + "[";
-      suffix = "]";
-      containerSuffix = "]";
-      containerPrefix = "[";
     }
 
-    StringJoiner joiner = new StringJoiner("&");
+        /**
+        * Convert the instance into URL query string.
+        *
+        * @return URL query string
+        */
+        public String toUrlQueryString() {
+        return toUrlQueryString(null);
+        }
 
-    // add `billing_email` to the URL query string
-    if (getBillingEmail() != null) {
-      try {
-        joiner.add(String.format("%sbilling_email%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getBillingEmail()), "UTF-8").replaceAll("\\+", "%20")));
-      } catch (UnsupportedEncodingException e) {
-        // Should never happen, UTF-8 is always supported
-        throw new RuntimeException(e);
-      }
+        /**
+        * Convert the instance into URL query string.
+        *
+        * @param prefix prefix of the query string
+        * @return URL query string
+        */
+        public String toUrlQueryString(String prefix) {
+        String suffix = "";
+        String containerSuffix = "";
+        String containerPrefix = "";
+        if (prefix == null) {
+        // style=form, explode=true, e.g. /pet?name=cat&type=manx
+        prefix = "";
+        } else {
+        // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+        prefix = prefix + "[";
+        suffix = "]";
+        containerSuffix = "]";
+        containerPrefix = "[";
+        }
+
+        StringJoiner joiner = new StringJoiner("&");
+
+            // add `billing_email` to the URL query string
+                        if (getBillingEmail() != null) {
+                        try {
+                        joiner.add(String.format("%sbilling_email%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getBillingEmail()), "UTF-8").replaceAll("\\+", "%20")));
+                        } catch (UnsupportedEncodingException e) {
+                        // Should never happen, UTF-8 is always supported
+                        throw new RuntimeException(e);
+                        }
+                        }
+
+            // add `billing_country` to the URL query string
+                            if (getBillingCountry() != null) {
+                            try {
+                            joiner.add(String.format("%sbilling_country%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getBillingCountry()), "UTF-8").replaceAll("\\+", "%20")));
+                            } catch (UnsupportedEncodingException e) {
+                            // Should never happen, UTF-8 is always supported
+                            throw new RuntimeException(e);
+                            }
+                            }
+
+        return joiner.toString();
+        }
+
     }
-
-    // add `billing_country` to the URL query string
-    if (getBillingCountry() != null) {
-      try {
-        joiner.add(String.format("%sbilling_country%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getBillingCountry()), "UTF-8").replaceAll("\\+", "%20")));
-      } catch (UnsupportedEncodingException e) {
-        // Should never happen, UTF-8 is always supported
-        throw new RuntimeException(e);
-      }
-    }
-
-    return joiner.toString();
-  }
-
-}
 

@@ -31,286 +31,287 @@ import java.net.URLEncoder;
 import java.util.StringJoiner;
 
 /**
- * GpayTokenParameters
- */
-@JsonPropertyOrder({
-  GpayTokenParameters.JSON_PROPERTY_GATEWAY,
-  GpayTokenParameters.JSON_PROPERTY_GATEWAY_MERCHANT_ID,
-  GpayTokenParameters.JSON_PROPERTY_STRIPE_COLON_VERSION,
-  GpayTokenParameters.JSON_PROPERTY_STRIPE_COLON_PUBLISHABLE_KEY
-})
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+* GpayTokenParameters
+*/
+    @JsonPropertyOrder({
+        GpayTokenParameters.JSON_PROPERTY_GATEWAY,
+        GpayTokenParameters.JSON_PROPERTY_GATEWAY_MERCHANT_ID,
+        GpayTokenParameters.JSON_PROPERTY_STRIPE_VERSION,
+        GpayTokenParameters.JSON_PROPERTY_STRIPE_PUBLISHABLE_KEY
+    })
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class GpayTokenParameters {
-  public static final String JSON_PROPERTY_GATEWAY = "gateway";
-  private String gateway;
+        public static final String JSON_PROPERTY_GATEWAY = "gateway";
+    @javax.annotation.Nonnull
+            private String gateway;
 
-  public static final String JSON_PROPERTY_GATEWAY_MERCHANT_ID = "gateway_merchant_id";
-  private JsonNullable<String> gatewayMerchantId = JsonNullable.<String>undefined();
+        public static final String JSON_PROPERTY_GATEWAY_MERCHANT_ID = "gateway_merchant_id";
+    @javax.annotation.Nullable
+            private JsonNullable<String> gatewayMerchantId = JsonNullable.<String>undefined();
 
-  public static final String JSON_PROPERTY_STRIPE_COLON_VERSION = "stripe:version";
-  private JsonNullable<String> stripeColonVersion = JsonNullable.<String>undefined();
+        public static final String JSON_PROPERTY_STRIPE_VERSION = "stripe:version";
+    @javax.annotation.Nullable
+            private JsonNullable<String> stripeVersion = JsonNullable.<String>undefined();
 
-  public static final String JSON_PROPERTY_STRIPE_COLON_PUBLISHABLE_KEY = "stripe:publishableKey";
-  private JsonNullable<String> stripeColonPublishableKey = JsonNullable.<String>undefined();
+        public static final String JSON_PROPERTY_STRIPE_PUBLISHABLE_KEY = "stripe:publishableKey";
+    @javax.annotation.Nullable
+            private JsonNullable<String> stripePublishableKey = JsonNullable.<String>undefined();
 
-  public GpayTokenParameters() {
-  }
+public GpayTokenParameters() {
+}
 
-  public GpayTokenParameters gateway(String gateway) {
-    
-    this.gateway = gateway;
-    return this;
-  }
+        public GpayTokenParameters gateway(@javax.annotation.Nonnull String gateway) {
+        
+        this.gateway = gateway;
+        return this;
+        }
 
-   /**
-   * The name of the connector
-   * @return gateway
-  **/
-  @javax.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_GATEWAY)
+    /**
+        * The name of the connector
+    * @return gateway
+    */
+    @javax.annotation.Nonnull
+      @JsonProperty(JSON_PROPERTY_GATEWAY)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-  public String getGateway() {
-    return gateway;
-  }
+    public String getGateway() {
+        return gateway;
+    }
 
 
-  @JsonProperty(JSON_PROPERTY_GATEWAY)
+          @JsonProperty(JSON_PROPERTY_GATEWAY)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setGateway(String gateway) {
-    this.gateway = gateway;
-  }
+  public void setGateway(@javax.annotation.Nonnull String gateway) {
+            this.gateway = gateway;
+        }
 
+        public GpayTokenParameters gatewayMerchantId(@javax.annotation.Nullable String gatewayMerchantId) {
+        this.gatewayMerchantId = JsonNullable.<String>of(gatewayMerchantId);
+        
+        return this;
+        }
 
-  public GpayTokenParameters gatewayMerchantId(String gatewayMerchantId) {
-    this.gatewayMerchantId = JsonNullable.<String>of(gatewayMerchantId);
+    /**
+        * The merchant ID registered in the connector associated
+    * @return gatewayMerchantId
+    */
+    @javax.annotation.Nullable
+        @JsonIgnore
     
-    return this;
-  }
+    public String getGatewayMerchantId() {
+                return gatewayMerchantId.orElse(null);
+    }
 
-   /**
-   * The merchant ID registered in the connector associated
-   * @return gatewayMerchantId
-  **/
-  @javax.annotation.Nullable
-  @JsonIgnore
-
-  public String getGatewayMerchantId() {
-        return gatewayMerchantId.orElse(null);
-  }
-
-  @JsonProperty(JSON_PROPERTY_GATEWAY_MERCHANT_ID)
+          @JsonProperty(JSON_PROPERTY_GATEWAY_MERCHANT_ID)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-  public JsonNullable<String> getGatewayMerchantId_JsonNullable() {
-    return gatewayMerchantId;
-  }
-  
-  @JsonProperty(JSON_PROPERTY_GATEWAY_MERCHANT_ID)
-  public void setGatewayMerchantId_JsonNullable(JsonNullable<String> gatewayMerchantId) {
-    this.gatewayMerchantId = gatewayMerchantId;
-  }
-
-  public void setGatewayMerchantId(String gatewayMerchantId) {
-    this.gatewayMerchantId = JsonNullable.<String>of(gatewayMerchantId);
-  }
-
-
-  public GpayTokenParameters stripeColonVersion(String stripeColonVersion) {
-    this.stripeColonVersion = JsonNullable.<String>of(stripeColonVersion);
+        public JsonNullable<String> getGatewayMerchantId_JsonNullable() {
+        return gatewayMerchantId;
+        }
     
-    return this;
-  }
+        @JsonProperty(JSON_PROPERTY_GATEWAY_MERCHANT_ID)
+        public void setGatewayMerchantId_JsonNullable(JsonNullable<String> gatewayMerchantId) {
+        this.gatewayMerchantId = gatewayMerchantId;
+        }
 
-   /**
-   * Get stripeColonVersion
-   * @return stripeColonVersion
-  **/
-  @javax.annotation.Nullable
-  @JsonIgnore
+          public void setGatewayMerchantId(@javax.annotation.Nullable String gatewayMerchantId) {
+            this.gatewayMerchantId = JsonNullable.<String>of(gatewayMerchantId);
+        }
 
-  public String getStripeColonVersion() {
-        return stripeColonVersion.orElse(null);
-  }
+        public GpayTokenParameters stripeVersion(@javax.annotation.Nullable String stripeVersion) {
+        this.stripeVersion = JsonNullable.<String>of(stripeVersion);
+        
+        return this;
+        }
 
-  @JsonProperty(JSON_PROPERTY_STRIPE_COLON_VERSION)
+    /**
+        * Get stripeVersion
+    * @return stripeVersion
+    */
+    @javax.annotation.Nullable
+        @JsonIgnore
+    
+    public String getStripeVersion() {
+                return stripeVersion.orElse(null);
+    }
+
+          @JsonProperty(JSON_PROPERTY_STRIPE_VERSION)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-  public JsonNullable<String> getStripeColonVersion_JsonNullable() {
-    return stripeColonVersion;
-  }
-  
-  @JsonProperty(JSON_PROPERTY_STRIPE_COLON_VERSION)
-  public void setStripeColonVersion_JsonNullable(JsonNullable<String> stripeColonVersion) {
-    this.stripeColonVersion = stripeColonVersion;
-  }
-
-  public void setStripeColonVersion(String stripeColonVersion) {
-    this.stripeColonVersion = JsonNullable.<String>of(stripeColonVersion);
-  }
-
-
-  public GpayTokenParameters stripeColonPublishableKey(String stripeColonPublishableKey) {
-    this.stripeColonPublishableKey = JsonNullable.<String>of(stripeColonPublishableKey);
+        public JsonNullable<String> getStripeVersion_JsonNullable() {
+        return stripeVersion;
+        }
     
-    return this;
-  }
+        @JsonProperty(JSON_PROPERTY_STRIPE_VERSION)
+        public void setStripeVersion_JsonNullable(JsonNullable<String> stripeVersion) {
+        this.stripeVersion = stripeVersion;
+        }
 
-   /**
-   * Get stripeColonPublishableKey
-   * @return stripeColonPublishableKey
-  **/
-  @javax.annotation.Nullable
-  @JsonIgnore
+          public void setStripeVersion(@javax.annotation.Nullable String stripeVersion) {
+            this.stripeVersion = JsonNullable.<String>of(stripeVersion);
+        }
 
-  public String getStripeColonPublishableKey() {
-        return stripeColonPublishableKey.orElse(null);
-  }
+        public GpayTokenParameters stripePublishableKey(@javax.annotation.Nullable String stripePublishableKey) {
+        this.stripePublishableKey = JsonNullable.<String>of(stripePublishableKey);
+        
+        return this;
+        }
 
-  @JsonProperty(JSON_PROPERTY_STRIPE_COLON_PUBLISHABLE_KEY)
+    /**
+        * Get stripePublishableKey
+    * @return stripePublishableKey
+    */
+    @javax.annotation.Nullable
+        @JsonIgnore
+    
+    public String getStripePublishableKey() {
+                return stripePublishableKey.orElse(null);
+    }
+
+          @JsonProperty(JSON_PROPERTY_STRIPE_PUBLISHABLE_KEY)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-  public JsonNullable<String> getStripeColonPublishableKey_JsonNullable() {
-    return stripeColonPublishableKey;
-  }
-  
-  @JsonProperty(JSON_PROPERTY_STRIPE_COLON_PUBLISHABLE_KEY)
-  public void setStripeColonPublishableKey_JsonNullable(JsonNullable<String> stripeColonPublishableKey) {
-    this.stripeColonPublishableKey = stripeColonPublishableKey;
-  }
+        public JsonNullable<String> getStripePublishableKey_JsonNullable() {
+        return stripePublishableKey;
+        }
+    
+        @JsonProperty(JSON_PROPERTY_STRIPE_PUBLISHABLE_KEY)
+        public void setStripePublishableKey_JsonNullable(JsonNullable<String> stripePublishableKey) {
+        this.stripePublishableKey = stripePublishableKey;
+        }
 
-  public void setStripeColonPublishableKey(String stripeColonPublishableKey) {
-    this.stripeColonPublishableKey = JsonNullable.<String>of(stripeColonPublishableKey);
-  }
+          public void setStripePublishableKey(@javax.annotation.Nullable String stripePublishableKey) {
+            this.stripePublishableKey = JsonNullable.<String>of(stripePublishableKey);
+        }
 
-  @Override
-  public boolean equals(Object o) {
+@Override
+public boolean equals(Object o) {
     if (this == o) {
-      return true;
+    return true;
     }
     if (o == null || getClass() != o.getClass()) {
-      return false;
+    return false;
     }
-    GpayTokenParameters gpayTokenParameters = (GpayTokenParameters) o;
-    return Objects.equals(this.gateway, gpayTokenParameters.gateway) &&
+        GpayTokenParameters gpayTokenParameters = (GpayTokenParameters) o;
+        return Objects.equals(this.gateway, gpayTokenParameters.gateway) &&
         equalsNullable(this.gatewayMerchantId, gpayTokenParameters.gatewayMerchantId) &&
-        equalsNullable(this.stripeColonVersion, gpayTokenParameters.stripeColonVersion) &&
-        equalsNullable(this.stripeColonPublishableKey, gpayTokenParameters.stripeColonPublishableKey);
-  }
+        equalsNullable(this.stripeVersion, gpayTokenParameters.stripeVersion) &&
+        equalsNullable(this.stripePublishableKey, gpayTokenParameters.stripePublishableKey);
+}
 
-  private static <T> boolean equalsNullable(JsonNullable<T> a, JsonNullable<T> b) {
-    return a == b || (a != null && b != null && a.isPresent() && b.isPresent() && Objects.deepEquals(a.get(), b.get()));
-  }
+    private static <T> boolean equalsNullable(JsonNullable<T> a, JsonNullable<T> b) {
+        return a == b || (a != null && b != null && a.isPresent() && b.isPresent() && Objects.deepEquals(a.get(), b.get()));
+        }
 
-  @Override
-  public int hashCode() {
-    return Objects.hash(gateway, hashCodeNullable(gatewayMerchantId), hashCodeNullable(stripeColonVersion), hashCodeNullable(stripeColonPublishableKey));
-  }
-
-  private static <T> int hashCodeNullable(JsonNullable<T> a) {
-    if (a == null) {
-      return 1;
+    @Override
+    public int hashCode() {
+        return Objects.hash(gateway, hashCodeNullable(gatewayMerchantId), hashCodeNullable(stripeVersion), hashCodeNullable(stripePublishableKey));
     }
-    return a.isPresent() ? Arrays.deepHashCode(new Object[]{a.get()}) : 31;
-  }
 
-  @Override
-  public String toString() {
+        private static <T> int hashCodeNullable(JsonNullable<T> a) {
+        if (a == null) {
+        return 1;
+        }
+        return a.isPresent() ? Arrays.deepHashCode(new Object[]{a.get()}) : 31;
+        }
+
+    @Override
+    public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class GpayTokenParameters {\n");
-    sb.append("    gateway: ").append(toIndentedString(gateway)).append("\n");
-    sb.append("    gatewayMerchantId: ").append(toIndentedString(gatewayMerchantId)).append("\n");
-    sb.append("    stripeColonVersion: ").append(toIndentedString(stripeColonVersion)).append("\n");
-    sb.append("    stripeColonPublishableKey: ").append(toIndentedString(stripeColonPublishableKey)).append("\n");
+        sb.append("    gateway: ").append(toIndentedString(gateway)).append("\n");
+        sb.append("    gatewayMerchantId: ").append(toIndentedString(gatewayMerchantId)).append("\n");
+        sb.append("    stripeVersion: ").append(toIndentedString(stripeVersion)).append("\n");
+        sb.append("    stripePublishableKey: ").append(toIndentedString(stripePublishableKey)).append("\n");
     sb.append("}");
     return sb.toString();
-  }
+    }
 
-  /**
-   * Convert the given object to string with each line indented by 4 spaces
-   * (except the first line).
-   */
-  private String toIndentedString(Object o) {
+    /**
+    * Convert the given object to string with each line indented by 4 spaces
+    * (except the first line).
+    */
+    private String toIndentedString(Object o) {
     if (o == null) {
-      return "null";
+    return "null";
     }
     return o.toString().replace("\n", "\n    ");
-  }
-
-  /**
-   * Convert the instance into URL query string.
-   *
-   * @return URL query string
-   */
-  public String toUrlQueryString() {
-    return toUrlQueryString(null);
-  }
-
-  /**
-   * Convert the instance into URL query string.
-   *
-   * @param prefix prefix of the query string
-   * @return URL query string
-   */
-  public String toUrlQueryString(String prefix) {
-    String suffix = "";
-    String containerSuffix = "";
-    String containerPrefix = "";
-    if (prefix == null) {
-      // style=form, explode=true, e.g. /pet?name=cat&type=manx
-      prefix = "";
-    } else {
-      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
-      prefix = prefix + "[";
-      suffix = "]";
-      containerSuffix = "]";
-      containerPrefix = "[";
     }
 
-    StringJoiner joiner = new StringJoiner("&");
+        /**
+        * Convert the instance into URL query string.
+        *
+        * @return URL query string
+        */
+        public String toUrlQueryString() {
+        return toUrlQueryString(null);
+        }
 
-    // add `gateway` to the URL query string
-    if (getGateway() != null) {
-      try {
-        joiner.add(String.format("%sgateway%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getGateway()), "UTF-8").replaceAll("\\+", "%20")));
-      } catch (UnsupportedEncodingException e) {
-        // Should never happen, UTF-8 is always supported
-        throw new RuntimeException(e);
-      }
+        /**
+        * Convert the instance into URL query string.
+        *
+        * @param prefix prefix of the query string
+        * @return URL query string
+        */
+        public String toUrlQueryString(String prefix) {
+        String suffix = "";
+        String containerSuffix = "";
+        String containerPrefix = "";
+        if (prefix == null) {
+        // style=form, explode=true, e.g. /pet?name=cat&type=manx
+        prefix = "";
+        } else {
+        // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+        prefix = prefix + "[";
+        suffix = "]";
+        containerSuffix = "]";
+        containerPrefix = "[";
+        }
+
+        StringJoiner joiner = new StringJoiner("&");
+
+            // add `gateway` to the URL query string
+                        if (getGateway() != null) {
+                        try {
+                        joiner.add(String.format("%sgateway%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getGateway()), "UTF-8").replaceAll("\\+", "%20")));
+                        } catch (UnsupportedEncodingException e) {
+                        // Should never happen, UTF-8 is always supported
+                        throw new RuntimeException(e);
+                        }
+                        }
+
+            // add `gateway_merchant_id` to the URL query string
+                        if (getGatewayMerchantId() != null) {
+                        try {
+                        joiner.add(String.format("%sgateway_merchant_id%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getGatewayMerchantId()), "UTF-8").replaceAll("\\+", "%20")));
+                        } catch (UnsupportedEncodingException e) {
+                        // Should never happen, UTF-8 is always supported
+                        throw new RuntimeException(e);
+                        }
+                        }
+
+            // add `stripe:version` to the URL query string
+                        if (getStripeVersion() != null) {
+                        try {
+                        joiner.add(String.format("%sstripe:version%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getStripeVersion()), "UTF-8").replaceAll("\\+", "%20")));
+                        } catch (UnsupportedEncodingException e) {
+                        // Should never happen, UTF-8 is always supported
+                        throw new RuntimeException(e);
+                        }
+                        }
+
+            // add `stripe:publishableKey` to the URL query string
+                        if (getStripePublishableKey() != null) {
+                        try {
+                        joiner.add(String.format("%sstripe:publishableKey%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getStripePublishableKey()), "UTF-8").replaceAll("\\+", "%20")));
+                        } catch (UnsupportedEncodingException e) {
+                        // Should never happen, UTF-8 is always supported
+                        throw new RuntimeException(e);
+                        }
+                        }
+
+        return joiner.toString();
+        }
+
     }
-
-    // add `gateway_merchant_id` to the URL query string
-    if (getGatewayMerchantId() != null) {
-      try {
-        joiner.add(String.format("%sgateway_merchant_id%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getGatewayMerchantId()), "UTF-8").replaceAll("\\+", "%20")));
-      } catch (UnsupportedEncodingException e) {
-        // Should never happen, UTF-8 is always supported
-        throw new RuntimeException(e);
-      }
-    }
-
-    // add `stripe:version` to the URL query string
-    if (getStripeColonVersion() != null) {
-      try {
-        joiner.add(String.format("%sstripe:version%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getStripeColonVersion()), "UTF-8").replaceAll("\\+", "%20")));
-      } catch (UnsupportedEncodingException e) {
-        // Should never happen, UTF-8 is always supported
-        throw new RuntimeException(e);
-      }
-    }
-
-    // add `stripe:publishableKey` to the URL query string
-    if (getStripeColonPublishableKey() != null) {
-      try {
-        joiner.add(String.format("%sstripe:publishableKey%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getStripeColonPublishableKey()), "UTF-8").replaceAll("\\+", "%20")));
-      } catch (UnsupportedEncodingException e) {
-        // Should never happen, UTF-8 is always supported
-        throw new RuntimeException(e);
-      }
-    }
-
-    return joiner.toString();
-  }
-
-}
 

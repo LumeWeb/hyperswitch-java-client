@@ -32,139 +32,140 @@ import java.net.URLEncoder;
 import java.util.StringJoiner;
 
 /**
- * PaylaterResponse
- */
-@JsonPropertyOrder({
-  PaylaterResponse.JSON_PROPERTY_KLARNA_SDK
-})
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+* PaylaterResponse
+*/
+    @JsonPropertyOrder({
+        PaylaterResponse.JSON_PROPERTY_KLARNA_SDK
+    })
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class PaylaterResponse {
-  public static final String JSON_PROPERTY_KLARNA_SDK = "klarna_sdk";
-  private JsonNullable<KlarnaSdkPaymentMethodResponse> klarnaSdk = JsonNullable.<KlarnaSdkPaymentMethodResponse>undefined();
+        public static final String JSON_PROPERTY_KLARNA_SDK = "klarna_sdk";
+    @javax.annotation.Nullable
+            private JsonNullable<KlarnaSdkPaymentMethodResponse> klarnaSdk = JsonNullable.<KlarnaSdkPaymentMethodResponse>undefined();
 
-  public PaylaterResponse() {
-  }
+public PaylaterResponse() {
+}
 
-  public PaylaterResponse klarnaSdk(KlarnaSdkPaymentMethodResponse klarnaSdk) {
-    this.klarnaSdk = JsonNullable.<KlarnaSdkPaymentMethodResponse>of(klarnaSdk);
+        public PaylaterResponse klarnaSdk(@javax.annotation.Nullable KlarnaSdkPaymentMethodResponse klarnaSdk) {
+        this.klarnaSdk = JsonNullable.<KlarnaSdkPaymentMethodResponse>of(klarnaSdk);
+        
+        return this;
+        }
+
+    /**
+        * Get klarnaSdk
+    * @return klarnaSdk
+    */
+    @javax.annotation.Nullable
+        @JsonIgnore
     
-    return this;
-  }
+    public KlarnaSdkPaymentMethodResponse getKlarnaSdk() {
+                return klarnaSdk.orElse(null);
+    }
 
-   /**
-   * Get klarnaSdk
-   * @return klarnaSdk
-  **/
-  @javax.annotation.Nullable
-  @JsonIgnore
-
-  public KlarnaSdkPaymentMethodResponse getKlarnaSdk() {
-        return klarnaSdk.orElse(null);
-  }
-
-  @JsonProperty(JSON_PROPERTY_KLARNA_SDK)
+          @JsonProperty(JSON_PROPERTY_KLARNA_SDK)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-  public JsonNullable<KlarnaSdkPaymentMethodResponse> getKlarnaSdk_JsonNullable() {
-    return klarnaSdk;
-  }
-  
-  @JsonProperty(JSON_PROPERTY_KLARNA_SDK)
-  public void setKlarnaSdk_JsonNullable(JsonNullable<KlarnaSdkPaymentMethodResponse> klarnaSdk) {
-    this.klarnaSdk = klarnaSdk;
-  }
+        public JsonNullable<KlarnaSdkPaymentMethodResponse> getKlarnaSdk_JsonNullable() {
+        return klarnaSdk;
+        }
+    
+        @JsonProperty(JSON_PROPERTY_KLARNA_SDK)
+        public void setKlarnaSdk_JsonNullable(JsonNullable<KlarnaSdkPaymentMethodResponse> klarnaSdk) {
+        this.klarnaSdk = klarnaSdk;
+        }
 
-  public void setKlarnaSdk(KlarnaSdkPaymentMethodResponse klarnaSdk) {
-    this.klarnaSdk = JsonNullable.<KlarnaSdkPaymentMethodResponse>of(klarnaSdk);
-  }
+          public void setKlarnaSdk(@javax.annotation.Nullable KlarnaSdkPaymentMethodResponse klarnaSdk) {
+            this.klarnaSdk = JsonNullable.<KlarnaSdkPaymentMethodResponse>of(klarnaSdk);
+        }
 
-  @Override
-  public boolean equals(Object o) {
+@Override
+public boolean equals(Object o) {
     if (this == o) {
-      return true;
+    return true;
     }
     if (o == null || getClass() != o.getClass()) {
-      return false;
+    return false;
     }
-    PaylaterResponse paylaterResponse = (PaylaterResponse) o;
-    return equalsNullable(this.klarnaSdk, paylaterResponse.klarnaSdk);
-  }
+        PaylaterResponse paylaterResponse = (PaylaterResponse) o;
+        return equalsNullable(this.klarnaSdk, paylaterResponse.klarnaSdk);
+}
 
-  private static <T> boolean equalsNullable(JsonNullable<T> a, JsonNullable<T> b) {
-    return a == b || (a != null && b != null && a.isPresent() && b.isPresent() && Objects.deepEquals(a.get(), b.get()));
-  }
+    private static <T> boolean equalsNullable(JsonNullable<T> a, JsonNullable<T> b) {
+        return a == b || (a != null && b != null && a.isPresent() && b.isPresent() && Objects.deepEquals(a.get(), b.get()));
+        }
 
-  @Override
-  public int hashCode() {
-    return Objects.hash(hashCodeNullable(klarnaSdk));
-  }
-
-  private static <T> int hashCodeNullable(JsonNullable<T> a) {
-    if (a == null) {
-      return 1;
+    @Override
+    public int hashCode() {
+        return Objects.hash(hashCodeNullable(klarnaSdk));
     }
-    return a.isPresent() ? Arrays.deepHashCode(new Object[]{a.get()}) : 31;
-  }
 
-  @Override
-  public String toString() {
+        private static <T> int hashCodeNullable(JsonNullable<T> a) {
+        if (a == null) {
+        return 1;
+        }
+        return a.isPresent() ? Arrays.deepHashCode(new Object[]{a.get()}) : 31;
+        }
+
+    @Override
+    public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class PaylaterResponse {\n");
-    sb.append("    klarnaSdk: ").append(toIndentedString(klarnaSdk)).append("\n");
+        sb.append("    klarnaSdk: ").append(toIndentedString(klarnaSdk)).append("\n");
     sb.append("}");
     return sb.toString();
-  }
+    }
 
-  /**
-   * Convert the given object to string with each line indented by 4 spaces
-   * (except the first line).
-   */
-  private String toIndentedString(Object o) {
+    /**
+    * Convert the given object to string with each line indented by 4 spaces
+    * (except the first line).
+    */
+    private String toIndentedString(Object o) {
     if (o == null) {
-      return "null";
+    return "null";
     }
     return o.toString().replace("\n", "\n    ");
-  }
-
-  /**
-   * Convert the instance into URL query string.
-   *
-   * @return URL query string
-   */
-  public String toUrlQueryString() {
-    return toUrlQueryString(null);
-  }
-
-  /**
-   * Convert the instance into URL query string.
-   *
-   * @param prefix prefix of the query string
-   * @return URL query string
-   */
-  public String toUrlQueryString(String prefix) {
-    String suffix = "";
-    String containerSuffix = "";
-    String containerPrefix = "";
-    if (prefix == null) {
-      // style=form, explode=true, e.g. /pet?name=cat&type=manx
-      prefix = "";
-    } else {
-      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
-      prefix = prefix + "[";
-      suffix = "]";
-      containerSuffix = "]";
-      containerPrefix = "[";
     }
 
-    StringJoiner joiner = new StringJoiner("&");
+        /**
+        * Convert the instance into URL query string.
+        *
+        * @return URL query string
+        */
+        public String toUrlQueryString() {
+        return toUrlQueryString(null);
+        }
 
-    // add `klarna_sdk` to the URL query string
-    if (getKlarnaSdk() != null) {
-      joiner.add(getKlarnaSdk().toUrlQueryString(prefix + "klarna_sdk" + suffix));
+        /**
+        * Convert the instance into URL query string.
+        *
+        * @param prefix prefix of the query string
+        * @return URL query string
+        */
+        public String toUrlQueryString(String prefix) {
+        String suffix = "";
+        String containerSuffix = "";
+        String containerPrefix = "";
+        if (prefix == null) {
+        // style=form, explode=true, e.g. /pet?name=cat&type=manx
+        prefix = "";
+        } else {
+        // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+        prefix = prefix + "[";
+        suffix = "]";
+        containerSuffix = "]";
+        containerPrefix = "[";
+        }
+
+        StringJoiner joiner = new StringJoiner("&");
+
+            // add `klarna_sdk` to the URL query string
+                            if (getKlarnaSdk() != null) {
+                            joiner.add(getKlarnaSdk().toUrlQueryString(prefix + "klarna_sdk" + suffix));
+                            }
+
+        return joiner.toString();
+        }
+
     }
-
-    return joiner.toString();
-  }
-
-}
 

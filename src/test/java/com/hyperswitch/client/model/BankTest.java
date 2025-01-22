@@ -27,22 +27,21 @@ import org.openapitools.jackson.nullable.JsonNullable;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.openapitools.jackson.nullable.JsonNullable;
 import java.util.NoSuchElementException;
-import org.junit.Assert;
-import org.junit.Ignore;
-import org.junit.Test;
-
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Test;
 
 /**
  * Model tests for Bank
  */
-public class BankTest {
+class BankTest {
     private final Bank model = new Bank();
 
     /**
      * Model tests for Bank
      */
     @Test
-    public void testBank() {
+    void testBank() {
         // TODO: test Bank
     }
 
@@ -50,7 +49,7 @@ public class BankTest {
      * Test the property 'bankName'
      */
     @Test
-    public void bankNameTest() {
+    void bankNameTest() {
         // TODO: test bankName
     }
 
@@ -58,7 +57,7 @@ public class BankTest {
      * Test the property 'bankCountryCode'
      */
     @Test
-    public void bankCountryCodeTest() {
+    void bankCountryCodeTest() {
         // TODO: test bankCountryCode
     }
 
@@ -66,7 +65,7 @@ public class BankTest {
      * Test the property 'bankCity'
      */
     @Test
-    public void bankCityTest() {
+    void bankCityTest() {
         // TODO: test bankCity
     }
 
@@ -74,7 +73,7 @@ public class BankTest {
      * Test the property 'bankAccountNumber'
      */
     @Test
-    public void bankAccountNumberTest() {
+    void bankAccountNumberTest() {
         // TODO: test bankAccountNumber
     }
 
@@ -82,7 +81,7 @@ public class BankTest {
      * Test the property 'bankRoutingNumber'
      */
     @Test
-    public void bankRoutingNumberTest() {
+    void bankRoutingNumberTest() {
         // TODO: test bankRoutingNumber
     }
 
@@ -90,7 +89,7 @@ public class BankTest {
      * Test the property 'bankSortCode'
      */
     @Test
-    public void bankSortCodeTest() {
+    void bankSortCodeTest() {
         // TODO: test bankSortCode
     }
 
@@ -98,7 +97,7 @@ public class BankTest {
      * Test the property 'iban'
      */
     @Test
-    public void ibanTest() {
+    void ibanTest() {
         // TODO: test iban
     }
 
@@ -106,7 +105,7 @@ public class BankTest {
      * Test the property 'bic'
      */
     @Test
-    public void bicTest() {
+    void bicTest() {
         // TODO: test bic
     }
 
@@ -114,7 +113,7 @@ public class BankTest {
      * Test the property 'bankBranch'
      */
     @Test
-    public void bankBranchTest() {
+    void bankBranchTest() {
         // TODO: test bankBranch
     }
 
@@ -122,7 +121,7 @@ public class BankTest {
      * Test the property 'pixKey'
      */
     @Test
-    public void pixKeyTest() {
+    void pixKeyTest() {
         // TODO: test pixKey
     }
 
@@ -130,7 +129,7 @@ public class BankTest {
      * Test the property 'taxId'
      */
     @Test
-    public void taxIdTest() {
+    void taxIdTest() {
         // TODO: test taxId
     }
 

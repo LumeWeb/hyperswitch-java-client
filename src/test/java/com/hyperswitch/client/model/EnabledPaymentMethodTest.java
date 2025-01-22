@@ -23,22 +23,21 @@ import com.hyperswitch.client.model.PaymentMethod;
 import com.hyperswitch.client.model.PaymentMethodType;
 import java.util.LinkedHashSet;
 import java.util.Set;
-import org.junit.Assert;
-import org.junit.Ignore;
-import org.junit.Test;
-
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Test;
 
 /**
  * Model tests for EnabledPaymentMethod
  */
-public class EnabledPaymentMethodTest {
+class EnabledPaymentMethodTest {
     private final EnabledPaymentMethod model = new EnabledPaymentMethod();
 
     /**
      * Model tests for EnabledPaymentMethod
      */
     @Test
-    public void testEnabledPaymentMethod() {
+    void testEnabledPaymentMethod() {
         // TODO: test EnabledPaymentMethod
     }
 
@@ -46,7 +45,7 @@ public class EnabledPaymentMethodTest {
      * Test the property 'paymentMethod'
      */
     @Test
-    public void paymentMethodTest() {
+    void paymentMethodTest() {
         // TODO: test paymentMethod
     }
 
@@ -54,7 +53,7 @@ public class EnabledPaymentMethodTest {
      * Test the property 'paymentMethodTypes'
      */
     @Test
-    public void paymentMethodTypesTest() {
+    void paymentMethodTypesTest() {
         // TODO: test paymentMethodTypes
     }
 

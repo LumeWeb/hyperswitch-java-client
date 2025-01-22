@@ -28,22 +28,21 @@ import org.openapitools.jackson.nullable.JsonNullable;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.openapitools.jackson.nullable.JsonNullable;
 import java.util.NoSuchElementException;
-import org.junit.Assert;
-import org.junit.Ignore;
-import org.junit.Test;
-
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Test;
 
 /**
  * Model tests for BankTransferNextStepsData
  */
-public class BankTransferNextStepsDataTest {
+class BankTransferNextStepsDataTest {
     private final BankTransferNextStepsData model = new BankTransferNextStepsData();
 
     /**
      * Model tests for BankTransferNextStepsData
      */
     @Test
-    public void testBankTransferNextStepsData() {
+    void testBankTransferNextStepsData() {
         // TODO: test BankTransferNextStepsData
     }
 
@@ -51,7 +50,7 @@ public class BankTransferNextStepsDataTest {
      * Test the property 'dokuBankTransferInstructions'
      */
     @Test
-    public void dokuBankTransferInstructionsTest() {
+    void dokuBankTransferInstructionsTest() {
         // TODO: test dokuBankTransferInstructions
     }
 
@@ -59,7 +58,7 @@ public class BankTransferNextStepsDataTest {
      * Test the property 'achCreditTransfer'
      */
     @Test
-    public void achCreditTransferTest() {
+    void achCreditTransferTest() {
         // TODO: test achCreditTransfer
     }
 
@@ -67,7 +66,7 @@ public class BankTransferNextStepsDataTest {
      * Test the property 'sepaBankInstructions'
      */
     @Test
-    public void sepaBankInstructionsTest() {
+    void sepaBankInstructionsTest() {
         // TODO: test sepaBankInstructions
     }
 
@@ -75,7 +74,7 @@ public class BankTransferNextStepsDataTest {
      * Test the property 'bacsBankInstructions'
      */
     @Test
-    public void bacsBankInstructionsTest() {
+    void bacsBankInstructionsTest() {
         // TODO: test bacsBankInstructions
     }
 
@@ -83,7 +82,7 @@ public class BankTransferNextStepsDataTest {
      * Test the property 'multibanco'
      */
     @Test
-    public void multibancoTest() {
+    void multibancoTest() {
         // TODO: test multibanco
     }
 
@@ -91,7 +90,7 @@ public class BankTransferNextStepsDataTest {
      * Test the property 'receiver'
      */
     @Test
-    public void receiverTest() {
+    void receiverTest() {
         // TODO: test receiver
     }
 

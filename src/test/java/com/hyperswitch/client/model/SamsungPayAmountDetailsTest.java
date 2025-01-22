@@ -20,22 +20,21 @@ import com.fasterxml.jackson.annotation.JsonTypeName;
 import com.fasterxml.jackson.annotation.JsonValue;
 import com.hyperswitch.client.model.Currency;
 import com.hyperswitch.client.model.SamsungPayAmountFormat;
-import org.junit.Assert;
-import org.junit.Ignore;
-import org.junit.Test;
-
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Test;
 
 /**
  * Model tests for SamsungPayAmountDetails
  */
-public class SamsungPayAmountDetailsTest {
+class SamsungPayAmountDetailsTest {
     private final SamsungPayAmountDetails model = new SamsungPayAmountDetails();
 
     /**
      * Model tests for SamsungPayAmountDetails
      */
     @Test
-    public void testSamsungPayAmountDetails() {
+    void testSamsungPayAmountDetails() {
         // TODO: test SamsungPayAmountDetails
     }
 
@@ -43,7 +42,7 @@ public class SamsungPayAmountDetailsTest {
      * Test the property 'option'
      */
     @Test
-    public void optionTest() {
+    void optionTest() {
         // TODO: test option
     }
 
@@ -51,7 +50,7 @@ public class SamsungPayAmountDetailsTest {
      * Test the property 'currencyCode'
      */
     @Test
-    public void currencyCodeTest() {
+    void currencyCodeTest() {
         // TODO: test currencyCode
     }
 
@@ -59,7 +58,7 @@ public class SamsungPayAmountDetailsTest {
      * Test the property 'total'
      */
     @Test
-    public void totalTest() {
+    void totalTest() {
         // TODO: test total
     }
 

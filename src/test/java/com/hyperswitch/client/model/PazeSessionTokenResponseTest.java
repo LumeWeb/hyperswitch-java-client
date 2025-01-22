@@ -23,22 +23,21 @@ import org.openapitools.jackson.nullable.JsonNullable;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.openapitools.jackson.nullable.JsonNullable;
 import java.util.NoSuchElementException;
-import org.junit.Assert;
-import org.junit.Ignore;
-import org.junit.Test;
-
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Test;
 
 /**
  * Model tests for PazeSessionTokenResponse
  */
-public class PazeSessionTokenResponseTest {
+class PazeSessionTokenResponseTest {
     private final PazeSessionTokenResponse model = new PazeSessionTokenResponse();
 
     /**
      * Model tests for PazeSessionTokenResponse
      */
     @Test
-    public void testPazeSessionTokenResponse() {
+    void testPazeSessionTokenResponse() {
         // TODO: test PazeSessionTokenResponse
     }
 
@@ -46,7 +45,7 @@ public class PazeSessionTokenResponseTest {
      * Test the property 'clientId'
      */
     @Test
-    public void clientIdTest() {
+    void clientIdTest() {
         // TODO: test clientId
     }
 
@@ -54,7 +53,7 @@ public class PazeSessionTokenResponseTest {
      * Test the property 'clientName'
      */
     @Test
-    public void clientNameTest() {
+    void clientNameTest() {
         // TODO: test clientName
     }
 
@@ -62,7 +61,7 @@ public class PazeSessionTokenResponseTest {
      * Test the property 'clientProfileId'
      */
     @Test
-    public void clientProfileIdTest() {
+    void clientProfileIdTest() {
         // TODO: test clientProfileId
     }
 
@@ -70,7 +69,7 @@ public class PazeSessionTokenResponseTest {
      * Test the property 'transactionCurrencyCode'
      */
     @Test
-    public void transactionCurrencyCodeTest() {
+    void transactionCurrencyCodeTest() {
         // TODO: test transactionCurrencyCode
     }
 
@@ -78,7 +77,7 @@ public class PazeSessionTokenResponseTest {
      * Test the property 'transactionAmount'
      */
     @Test
-    public void transactionAmountTest() {
+    void transactionAmountTest() {
         // TODO: test transactionAmount
     }
 
@@ -86,7 +85,7 @@ public class PazeSessionTokenResponseTest {
      * Test the property 'emailAddress'
      */
     @Test
-    public void emailAddressTest() {
+    void emailAddressTest() {
         // TODO: test emailAddress
     }
 

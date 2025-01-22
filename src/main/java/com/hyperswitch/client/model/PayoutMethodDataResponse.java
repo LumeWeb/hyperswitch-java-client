@@ -33,194 +33,195 @@ import java.net.URLEncoder;
 import java.util.StringJoiner;
 
 /**
- * The payout method information for response
- */
-@JsonPropertyOrder({
-  PayoutMethodDataResponse.JSON_PROPERTY_CARD,
-  PayoutMethodDataResponse.JSON_PROPERTY_BANK,
-  PayoutMethodDataResponse.JSON_PROPERTY_WALLET
-})
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+* The payout method information for response
+*/
+    @JsonPropertyOrder({
+        PayoutMethodDataResponse.JSON_PROPERTY_CARD,
+        PayoutMethodDataResponse.JSON_PROPERTY_BANK,
+        PayoutMethodDataResponse.JSON_PROPERTY_WALLET
+    })
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class PayoutMethodDataResponse {
-  public static final String JSON_PROPERTY_CARD = "card";
-  private CardAdditionalData card;
+        public static final String JSON_PROPERTY_CARD = "card";
+    @javax.annotation.Nonnull
+            private CardAdditionalData card;
 
-  public static final String JSON_PROPERTY_BANK = "bank";
-  private BankAdditionalData bank;
+        public static final String JSON_PROPERTY_BANK = "bank";
+    @javax.annotation.Nonnull
+            private BankAdditionalData bank;
 
-  public static final String JSON_PROPERTY_WALLET = "wallet";
-  private WalletAdditionalData wallet;
+        public static final String JSON_PROPERTY_WALLET = "wallet";
+    @javax.annotation.Nonnull
+            private WalletAdditionalData wallet;
 
-  public PayoutMethodDataResponse() {
-  }
+public PayoutMethodDataResponse() {
+}
 
-  public PayoutMethodDataResponse card(CardAdditionalData card) {
-    
-    this.card = card;
-    return this;
-  }
+        public PayoutMethodDataResponse card(@javax.annotation.Nonnull CardAdditionalData card) {
+        
+        this.card = card;
+        return this;
+        }
 
-   /**
-   * Get card
-   * @return card
-  **/
-  @javax.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_CARD)
+    /**
+        * Get card
+    * @return card
+    */
+    @javax.annotation.Nonnull
+      @JsonProperty(JSON_PROPERTY_CARD)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-  public CardAdditionalData getCard() {
-    return card;
-  }
+    public CardAdditionalData getCard() {
+        return card;
+    }
 
 
-  @JsonProperty(JSON_PROPERTY_CARD)
+          @JsonProperty(JSON_PROPERTY_CARD)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setCard(CardAdditionalData card) {
-    this.card = card;
-  }
+  public void setCard(@javax.annotation.Nonnull CardAdditionalData card) {
+            this.card = card;
+        }
 
+        public PayoutMethodDataResponse bank(@javax.annotation.Nonnull BankAdditionalData bank) {
+        
+        this.bank = bank;
+        return this;
+        }
 
-  public PayoutMethodDataResponse bank(BankAdditionalData bank) {
-    
-    this.bank = bank;
-    return this;
-  }
-
-   /**
-   * Get bank
-   * @return bank
-  **/
-  @javax.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_BANK)
-  @JsonInclude(value = JsonInclude.Include.ALWAYS)
-
-  public BankAdditionalData getBank() {
-    return bank;
-  }
-
-
-  @JsonProperty(JSON_PROPERTY_BANK)
-  @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setBank(BankAdditionalData bank) {
-    this.bank = bank;
-  }
-
-
-  public PayoutMethodDataResponse wallet(WalletAdditionalData wallet) {
-    
-    this.wallet = wallet;
-    return this;
-  }
-
-   /**
-   * Get wallet
-   * @return wallet
-  **/
-  @javax.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_WALLET)
+    /**
+        * Get bank
+    * @return bank
+    */
+    @javax.annotation.Nonnull
+      @JsonProperty(JSON_PROPERTY_BANK)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-  public WalletAdditionalData getWallet() {
-    return wallet;
-  }
+    public BankAdditionalData getBank() {
+        return bank;
+    }
 
 
-  @JsonProperty(JSON_PROPERTY_WALLET)
+          @JsonProperty(JSON_PROPERTY_BANK)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setWallet(WalletAdditionalData wallet) {
-    this.wallet = wallet;
-  }
+  public void setBank(@javax.annotation.Nonnull BankAdditionalData bank) {
+            this.bank = bank;
+        }
 
-  @Override
-  public boolean equals(Object o) {
+        public PayoutMethodDataResponse wallet(@javax.annotation.Nonnull WalletAdditionalData wallet) {
+        
+        this.wallet = wallet;
+        return this;
+        }
+
+    /**
+        * Get wallet
+    * @return wallet
+    */
+    @javax.annotation.Nonnull
+      @JsonProperty(JSON_PROPERTY_WALLET)
+  @JsonInclude(value = JsonInclude.Include.ALWAYS)
+
+    public WalletAdditionalData getWallet() {
+        return wallet;
+    }
+
+
+          @JsonProperty(JSON_PROPERTY_WALLET)
+  @JsonInclude(value = JsonInclude.Include.ALWAYS)
+  public void setWallet(@javax.annotation.Nonnull WalletAdditionalData wallet) {
+            this.wallet = wallet;
+        }
+
+@Override
+public boolean equals(Object o) {
     if (this == o) {
-      return true;
+    return true;
     }
     if (o == null || getClass() != o.getClass()) {
-      return false;
+    return false;
     }
-    PayoutMethodDataResponse payoutMethodDataResponse = (PayoutMethodDataResponse) o;
-    return Objects.equals(this.card, payoutMethodDataResponse.card) &&
+        PayoutMethodDataResponse payoutMethodDataResponse = (PayoutMethodDataResponse) o;
+        return Objects.equals(this.card, payoutMethodDataResponse.card) &&
         Objects.equals(this.bank, payoutMethodDataResponse.bank) &&
         Objects.equals(this.wallet, payoutMethodDataResponse.wallet);
-  }
+}
 
-  @Override
-  public int hashCode() {
-    return Objects.hash(card, bank, wallet);
-  }
+    @Override
+    public int hashCode() {
+        return Objects.hash(card, bank, wallet);
+    }
 
-  @Override
-  public String toString() {
+    @Override
+    public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class PayoutMethodDataResponse {\n");
-    sb.append("    card: ").append(toIndentedString(card)).append("\n");
-    sb.append("    bank: ").append(toIndentedString(bank)).append("\n");
-    sb.append("    wallet: ").append(toIndentedString(wallet)).append("\n");
+        sb.append("    card: ").append(toIndentedString(card)).append("\n");
+        sb.append("    bank: ").append(toIndentedString(bank)).append("\n");
+        sb.append("    wallet: ").append(toIndentedString(wallet)).append("\n");
     sb.append("}");
     return sb.toString();
-  }
+    }
 
-  /**
-   * Convert the given object to string with each line indented by 4 spaces
-   * (except the first line).
-   */
-  private String toIndentedString(Object o) {
+    /**
+    * Convert the given object to string with each line indented by 4 spaces
+    * (except the first line).
+    */
+    private String toIndentedString(Object o) {
     if (o == null) {
-      return "null";
+    return "null";
     }
     return o.toString().replace("\n", "\n    ");
-  }
-
-  /**
-   * Convert the instance into URL query string.
-   *
-   * @return URL query string
-   */
-  public String toUrlQueryString() {
-    return toUrlQueryString(null);
-  }
-
-  /**
-   * Convert the instance into URL query string.
-   *
-   * @param prefix prefix of the query string
-   * @return URL query string
-   */
-  public String toUrlQueryString(String prefix) {
-    String suffix = "";
-    String containerSuffix = "";
-    String containerPrefix = "";
-    if (prefix == null) {
-      // style=form, explode=true, e.g. /pet?name=cat&type=manx
-      prefix = "";
-    } else {
-      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
-      prefix = prefix + "[";
-      suffix = "]";
-      containerSuffix = "]";
-      containerPrefix = "[";
     }
 
-    StringJoiner joiner = new StringJoiner("&");
+        /**
+        * Convert the instance into URL query string.
+        *
+        * @return URL query string
+        */
+        public String toUrlQueryString() {
+        return toUrlQueryString(null);
+        }
 
-    // add `card` to the URL query string
-    if (getCard() != null) {
-      joiner.add(getCard().toUrlQueryString(prefix + "card" + suffix));
+        /**
+        * Convert the instance into URL query string.
+        *
+        * @param prefix prefix of the query string
+        * @return URL query string
+        */
+        public String toUrlQueryString(String prefix) {
+        String suffix = "";
+        String containerSuffix = "";
+        String containerPrefix = "";
+        if (prefix == null) {
+        // style=form, explode=true, e.g. /pet?name=cat&type=manx
+        prefix = "";
+        } else {
+        // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+        prefix = prefix + "[";
+        suffix = "]";
+        containerSuffix = "]";
+        containerPrefix = "[";
+        }
+
+        StringJoiner joiner = new StringJoiner("&");
+
+            // add `card` to the URL query string
+                            if (getCard() != null) {
+                            joiner.add(getCard().toUrlQueryString(prefix + "card" + suffix));
+                            }
+
+            // add `bank` to the URL query string
+                            if (getBank() != null) {
+                            joiner.add(getBank().toUrlQueryString(prefix + "bank" + suffix));
+                            }
+
+            // add `wallet` to the URL query string
+                            if (getWallet() != null) {
+                            joiner.add(getWallet().toUrlQueryString(prefix + "wallet" + suffix));
+                            }
+
+        return joiner.toString();
+        }
+
     }
-
-    // add `bank` to the URL query string
-    if (getBank() != null) {
-      joiner.add(getBank().toUrlQueryString(prefix + "bank" + suffix));
-    }
-
-    // add `wallet` to the URL query string
-    if (getWallet() != null) {
-      joiner.add(getWallet().toUrlQueryString(prefix + "wallet" + suffix));
-    }
-
-    return joiner.toString();
-  }
-
-}
 

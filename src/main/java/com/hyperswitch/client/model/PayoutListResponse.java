@@ -22,6 +22,7 @@ import com.fasterxml.jackson.annotation.JsonTypeName;
 import com.fasterxml.jackson.annotation.JsonValue;
 import com.hyperswitch.client.model.PayoutCreateResponse;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import org.openapitools.jackson.nullable.JsonNullable;
 import com.fasterxml.jackson.annotation.JsonIgnore;
@@ -34,237 +35,238 @@ import java.net.URLEncoder;
 import java.util.StringJoiner;
 
 /**
- * PayoutListResponse
- */
-@JsonPropertyOrder({
-  PayoutListResponse.JSON_PROPERTY_SIZE,
-  PayoutListResponse.JSON_PROPERTY_DATA,
-  PayoutListResponse.JSON_PROPERTY_TOTAL_COUNT
-})
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+* PayoutListResponse
+*/
+    @JsonPropertyOrder({
+        PayoutListResponse.JSON_PROPERTY_SIZE,
+        PayoutListResponse.JSON_PROPERTY_DATA,
+        PayoutListResponse.JSON_PROPERTY_TOTAL_COUNT
+    })
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class PayoutListResponse {
-  public static final String JSON_PROPERTY_SIZE = "size";
-  private Integer size;
+        public static final String JSON_PROPERTY_SIZE = "size";
+    @javax.annotation.Nonnull
+            private Integer size;
 
-  public static final String JSON_PROPERTY_DATA = "data";
-  private List<PayoutCreateResponse> data = new ArrayList<>();
+        public static final String JSON_PROPERTY_DATA = "data";
+    @javax.annotation.Nonnull
+            private List<PayoutCreateResponse> data = new ArrayList<>();
 
-  public static final String JSON_PROPERTY_TOTAL_COUNT = "total_count";
-  private JsonNullable<Long> totalCount = JsonNullable.<Long>undefined();
+        public static final String JSON_PROPERTY_TOTAL_COUNT = "total_count";
+    @javax.annotation.Nullable
+            private JsonNullable<Long> totalCount = JsonNullable.<Long>undefined();
 
-  public PayoutListResponse() {
-  }
+public PayoutListResponse() {
+}
 
-  public PayoutListResponse size(Integer size) {
-    
-    this.size = size;
-    return this;
-  }
+        public PayoutListResponse size(@javax.annotation.Nonnull Integer size) {
+        
+        this.size = size;
+        return this;
+        }
 
-   /**
-   * The number of payouts included in the list
-   * minimum: 0
-   * @return size
-  **/
-  @javax.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_SIZE)
+    /**
+        * The number of payouts included in the list
+        * minimum: 0
+    * @return size
+    */
+    @javax.annotation.Nonnull
+      @JsonProperty(JSON_PROPERTY_SIZE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-  public Integer getSize() {
-    return size;
-  }
-
-
-  @JsonProperty(JSON_PROPERTY_SIZE)
-  @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setSize(Integer size) {
-    this.size = size;
-  }
-
-
-  public PayoutListResponse data(List<PayoutCreateResponse> data) {
-    
-    this.data = data;
-    return this;
-  }
-
-  public PayoutListResponse addDataItem(PayoutCreateResponse dataItem) {
-    if (this.data == null) {
-      this.data = new ArrayList<>();
+    public Integer getSize() {
+        return size;
     }
-    this.data.add(dataItem);
-    return this;
-  }
 
-   /**
-   * The list of payouts response objects
-   * @return data
-  **/
-  @javax.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_DATA)
+
+          @JsonProperty(JSON_PROPERTY_SIZE)
+  @JsonInclude(value = JsonInclude.Include.ALWAYS)
+  public void setSize(@javax.annotation.Nonnull Integer size) {
+            this.size = size;
+        }
+
+        public PayoutListResponse data(@javax.annotation.Nonnull List<PayoutCreateResponse> data) {
+        
+        this.data = data;
+        return this;
+        }
+
+            public PayoutListResponse addDataItem(PayoutCreateResponse dataItem) {
+                if (this.data == null) {
+                this.data = new ArrayList<>();
+                }
+                this.data.add(dataItem);
+                return this;
+            }
+
+    /**
+        * The list of payouts response objects
+    * @return data
+    */
+    @javax.annotation.Nonnull
+      @JsonProperty(JSON_PROPERTY_DATA)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-  public List<PayoutCreateResponse> getData() {
-    return data;
-  }
+    public List<PayoutCreateResponse> getData() {
+        return data;
+    }
 
 
-  @JsonProperty(JSON_PROPERTY_DATA)
+          @JsonProperty(JSON_PROPERTY_DATA)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setData(List<PayoutCreateResponse> data) {
-    this.data = data;
-  }
+  public void setData(@javax.annotation.Nonnull List<PayoutCreateResponse> data) {
+            this.data = data;
+        }
 
+        public PayoutListResponse totalCount(@javax.annotation.Nullable Long totalCount) {
+        this.totalCount = JsonNullable.<Long>of(totalCount);
+        
+        return this;
+        }
 
-  public PayoutListResponse totalCount(Long totalCount) {
-    this.totalCount = JsonNullable.<Long>of(totalCount);
+    /**
+        * The total number of available payouts for given constraints
+    * @return totalCount
+    */
+    @javax.annotation.Nullable
+        @JsonIgnore
     
-    return this;
-  }
+    public Long getTotalCount() {
+                return totalCount.orElse(null);
+    }
 
-   /**
-   * The total number of available payouts for given constraints
-   * @return totalCount
-  **/
-  @javax.annotation.Nullable
-  @JsonIgnore
-
-  public Long getTotalCount() {
-        return totalCount.orElse(null);
-  }
-
-  @JsonProperty(JSON_PROPERTY_TOTAL_COUNT)
+          @JsonProperty(JSON_PROPERTY_TOTAL_COUNT)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-  public JsonNullable<Long> getTotalCount_JsonNullable() {
-    return totalCount;
-  }
-  
-  @JsonProperty(JSON_PROPERTY_TOTAL_COUNT)
-  public void setTotalCount_JsonNullable(JsonNullable<Long> totalCount) {
-    this.totalCount = totalCount;
-  }
+        public JsonNullable<Long> getTotalCount_JsonNullable() {
+        return totalCount;
+        }
+    
+        @JsonProperty(JSON_PROPERTY_TOTAL_COUNT)
+        public void setTotalCount_JsonNullable(JsonNullable<Long> totalCount) {
+        this.totalCount = totalCount;
+        }
 
-  public void setTotalCount(Long totalCount) {
-    this.totalCount = JsonNullable.<Long>of(totalCount);
-  }
+          public void setTotalCount(@javax.annotation.Nullable Long totalCount) {
+            this.totalCount = JsonNullable.<Long>of(totalCount);
+        }
 
-  @Override
-  public boolean equals(Object o) {
+@Override
+public boolean equals(Object o) {
     if (this == o) {
-      return true;
+    return true;
     }
     if (o == null || getClass() != o.getClass()) {
-      return false;
+    return false;
     }
-    PayoutListResponse payoutListResponse = (PayoutListResponse) o;
-    return Objects.equals(this.size, payoutListResponse.size) &&
+        PayoutListResponse payoutListResponse = (PayoutListResponse) o;
+        return Objects.equals(this.size, payoutListResponse.size) &&
         Objects.equals(this.data, payoutListResponse.data) &&
         equalsNullable(this.totalCount, payoutListResponse.totalCount);
-  }
+}
 
-  private static <T> boolean equalsNullable(JsonNullable<T> a, JsonNullable<T> b) {
-    return a == b || (a != null && b != null && a.isPresent() && b.isPresent() && Objects.deepEquals(a.get(), b.get()));
-  }
+    private static <T> boolean equalsNullable(JsonNullable<T> a, JsonNullable<T> b) {
+        return a == b || (a != null && b != null && a.isPresent() && b.isPresent() && Objects.deepEquals(a.get(), b.get()));
+        }
 
-  @Override
-  public int hashCode() {
-    return Objects.hash(size, data, hashCodeNullable(totalCount));
-  }
-
-  private static <T> int hashCodeNullable(JsonNullable<T> a) {
-    if (a == null) {
-      return 1;
+    @Override
+    public int hashCode() {
+        return Objects.hash(size, data, hashCodeNullable(totalCount));
     }
-    return a.isPresent() ? Arrays.deepHashCode(new Object[]{a.get()}) : 31;
-  }
 
-  @Override
-  public String toString() {
+        private static <T> int hashCodeNullable(JsonNullable<T> a) {
+        if (a == null) {
+        return 1;
+        }
+        return a.isPresent() ? Arrays.deepHashCode(new Object[]{a.get()}) : 31;
+        }
+
+    @Override
+    public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class PayoutListResponse {\n");
-    sb.append("    size: ").append(toIndentedString(size)).append("\n");
-    sb.append("    data: ").append(toIndentedString(data)).append("\n");
-    sb.append("    totalCount: ").append(toIndentedString(totalCount)).append("\n");
+        sb.append("    size: ").append(toIndentedString(size)).append("\n");
+        sb.append("    data: ").append(toIndentedString(data)).append("\n");
+        sb.append("    totalCount: ").append(toIndentedString(totalCount)).append("\n");
     sb.append("}");
     return sb.toString();
-  }
+    }
 
-  /**
-   * Convert the given object to string with each line indented by 4 spaces
-   * (except the first line).
-   */
-  private String toIndentedString(Object o) {
+    /**
+    * Convert the given object to string with each line indented by 4 spaces
+    * (except the first line).
+    */
+    private String toIndentedString(Object o) {
     if (o == null) {
-      return "null";
+    return "null";
     }
     return o.toString().replace("\n", "\n    ");
-  }
-
-  /**
-   * Convert the instance into URL query string.
-   *
-   * @return URL query string
-   */
-  public String toUrlQueryString() {
-    return toUrlQueryString(null);
-  }
-
-  /**
-   * Convert the instance into URL query string.
-   *
-   * @param prefix prefix of the query string
-   * @return URL query string
-   */
-  public String toUrlQueryString(String prefix) {
-    String suffix = "";
-    String containerSuffix = "";
-    String containerPrefix = "";
-    if (prefix == null) {
-      // style=form, explode=true, e.g. /pet?name=cat&type=manx
-      prefix = "";
-    } else {
-      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
-      prefix = prefix + "[";
-      suffix = "]";
-      containerSuffix = "]";
-      containerPrefix = "[";
     }
 
-    StringJoiner joiner = new StringJoiner("&");
-
-    // add `size` to the URL query string
-    if (getSize() != null) {
-      try {
-        joiner.add(String.format("%ssize%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getSize()), "UTF-8").replaceAll("\\+", "%20")));
-      } catch (UnsupportedEncodingException e) {
-        // Should never happen, UTF-8 is always supported
-        throw new RuntimeException(e);
-      }
-    }
-
-    // add `data` to the URL query string
-    if (getData() != null) {
-      for (int i = 0; i < getData().size(); i++) {
-        if (getData().get(i) != null) {
-          joiner.add(getData().get(i).toUrlQueryString(String.format("%sdata%s%s", prefix, suffix,
-              "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix))));
+        /**
+        * Convert the instance into URL query string.
+        *
+        * @return URL query string
+        */
+        public String toUrlQueryString() {
+        return toUrlQueryString(null);
         }
-      }
+
+        /**
+        * Convert the instance into URL query string.
+        *
+        * @param prefix prefix of the query string
+        * @return URL query string
+        */
+        public String toUrlQueryString(String prefix) {
+        String suffix = "";
+        String containerSuffix = "";
+        String containerPrefix = "";
+        if (prefix == null) {
+        // style=form, explode=true, e.g. /pet?name=cat&type=manx
+        prefix = "";
+        } else {
+        // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+        prefix = prefix + "[";
+        suffix = "]";
+        containerSuffix = "]";
+        containerPrefix = "[";
+        }
+
+        StringJoiner joiner = new StringJoiner("&");
+
+            // add `size` to the URL query string
+                        if (getSize() != null) {
+                        try {
+                        joiner.add(String.format("%ssize%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getSize()), "UTF-8").replaceAll("\\+", "%20")));
+                        } catch (UnsupportedEncodingException e) {
+                        // Should never happen, UTF-8 is always supported
+                        throw new RuntimeException(e);
+                        }
+                        }
+
+            // add `data` to the URL query string
+                            if (getData() != null) {
+                            for (int i = 0; i < getData().size(); i++) {
+                            if (getData().get(i) != null) {
+                            joiner.add(getData().get(i).toUrlQueryString(String.format("%sdata%s%s", prefix, suffix,
+                            "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix))));
+                            }
+                            }
+                            }
+
+            // add `total_count` to the URL query string
+                        if (getTotalCount() != null) {
+                        try {
+                        joiner.add(String.format("%stotal_count%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getTotalCount()), "UTF-8").replaceAll("\\+", "%20")));
+                        } catch (UnsupportedEncodingException e) {
+                        // Should never happen, UTF-8 is always supported
+                        throw new RuntimeException(e);
+                        }
+                        }
+
+        return joiner.toString();
+        }
+
     }
-
-    // add `total_count` to the URL query string
-    if (getTotalCount() != null) {
-      try {
-        joiner.add(String.format("%stotal_count%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getTotalCount()), "UTF-8").replaceAll("\\+", "%20")));
-      } catch (UnsupportedEncodingException e) {
-        // Should never happen, UTF-8 is always supported
-        throw new RuntimeException(e);
-      }
-    }
-
-    return joiner.toString();
-  }
-
-}
 

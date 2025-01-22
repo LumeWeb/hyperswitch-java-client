@@ -23,22 +23,21 @@ import org.openapitools.jackson.nullable.JsonNullable;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.openapitools.jackson.nullable.JsonNullable;
 import java.util.NoSuchElementException;
-import org.junit.Assert;
-import org.junit.Ignore;
-import org.junit.Test;
-
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Test;
 
 /**
  * Model tests for BacsBankTransferAdditionalData
  */
-public class BacsBankTransferAdditionalDataTest {
+class BacsBankTransferAdditionalDataTest {
     private final BacsBankTransferAdditionalData model = new BacsBankTransferAdditionalData();
 
     /**
      * Model tests for BacsBankTransferAdditionalData
      */
     @Test
-    public void testBacsBankTransferAdditionalData() {
+    void testBacsBankTransferAdditionalData() {
         // TODO: test BacsBankTransferAdditionalData
     }
 
@@ -46,7 +45,7 @@ public class BacsBankTransferAdditionalDataTest {
      * Test the property 'bankSortCode'
      */
     @Test
-    public void bankSortCodeTest() {
+    void bankSortCodeTest() {
         // TODO: test bankSortCode
     }
 
@@ -54,7 +53,7 @@ public class BacsBankTransferAdditionalDataTest {
      * Test the property 'bankAccountNumber'
      */
     @Test
-    public void bankAccountNumberTest() {
+    void bankAccountNumberTest() {
         // TODO: test bankAccountNumber
     }
 
@@ -62,7 +61,7 @@ public class BacsBankTransferAdditionalDataTest {
      * Test the property 'bankName'
      */
     @Test
-    public void bankNameTest() {
+    void bankNameTest() {
         // TODO: test bankName
     }
 
@@ -70,7 +69,7 @@ public class BacsBankTransferAdditionalDataTest {
      * Test the property 'bankCountryCode'
      */
     @Test
-    public void bankCountryCodeTest() {
+    void bankCountryCodeTest() {
         // TODO: test bankCountryCode
     }
 
@@ -78,7 +77,7 @@ public class BacsBankTransferAdditionalDataTest {
      * Test the property 'bankCity'
      */
     @Test
-    public void bankCityTest() {
+    void bankCityTest() {
         // TODO: test bankCity
     }
 

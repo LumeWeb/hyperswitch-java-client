@@ -19,22 +19,21 @@ import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonTypeName;
 import com.fasterxml.jackson.annotation.JsonValue;
 import com.hyperswitch.client.model.LocalBankTransferAdditionalData;
-import org.junit.Assert;
-import org.junit.Ignore;
-import org.junit.Test;
-
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Test;
 
 /**
  * Model tests for BankTransferAdditionalDataOneOf13
  */
-public class BankTransferAdditionalDataOneOf13Test {
+class BankTransferAdditionalDataOneOf13Test {
     private final BankTransferAdditionalDataOneOf13 model = new BankTransferAdditionalDataOneOf13();
 
     /**
      * Model tests for BankTransferAdditionalDataOneOf13
      */
     @Test
-    public void testBankTransferAdditionalDataOneOf13() {
+    void testBankTransferAdditionalDataOneOf13() {
         // TODO: test BankTransferAdditionalDataOneOf13
     }
 
@@ -42,7 +41,7 @@ public class BankTransferAdditionalDataOneOf13Test {
      * Test the property 'localBankTransfer'
      */
     @Test
-    public void localBankTransferTest() {
+    void localBankTransferTest() {
         // TODO: test localBankTransfer
     }
 

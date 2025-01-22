@@ -22,6 +22,7 @@ import com.fasterxml.jackson.annotation.JsonTypeName;
 import com.fasterxml.jackson.annotation.JsonValue;
 import com.hyperswitch.client.model.RefundResponse;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 import com.fasterxml.jackson.annotation.JsonTypeName;
@@ -30,218 +31,219 @@ import java.net.URLEncoder;
 import java.util.StringJoiner;
 
 /**
- * RefundListResponse
- */
-@JsonPropertyOrder({
-  RefundListResponse.JSON_PROPERTY_COUNT,
-  RefundListResponse.JSON_PROPERTY_TOTAL_COUNT,
-  RefundListResponse.JSON_PROPERTY_DATA
-})
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+* RefundListResponse
+*/
+    @JsonPropertyOrder({
+        RefundListResponse.JSON_PROPERTY_COUNT,
+        RefundListResponse.JSON_PROPERTY_TOTAL_COUNT,
+        RefundListResponse.JSON_PROPERTY_DATA
+    })
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class RefundListResponse {
-  public static final String JSON_PROPERTY_COUNT = "count";
-  private Integer count;
+        public static final String JSON_PROPERTY_COUNT = "count";
+    @javax.annotation.Nonnull
+            private Integer count;
 
-  public static final String JSON_PROPERTY_TOTAL_COUNT = "total_count";
-  private Long totalCount;
+        public static final String JSON_PROPERTY_TOTAL_COUNT = "total_count";
+    @javax.annotation.Nonnull
+            private Long totalCount;
 
-  public static final String JSON_PROPERTY_DATA = "data";
-  private List<RefundResponse> data = new ArrayList<>();
+        public static final String JSON_PROPERTY_DATA = "data";
+    @javax.annotation.Nonnull
+            private List<RefundResponse> data = new ArrayList<>();
 
-  public RefundListResponse() {
-  }
+public RefundListResponse() {
+}
 
-  public RefundListResponse count(Integer count) {
-    
-    this.count = count;
-    return this;
-  }
+        public RefundListResponse count(@javax.annotation.Nonnull Integer count) {
+        
+        this.count = count;
+        return this;
+        }
 
-   /**
-   * The number of refunds included in the list
-   * minimum: 0
-   * @return count
-  **/
-  @javax.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_COUNT)
+    /**
+        * The number of refunds included in the list
+        * minimum: 0
+    * @return count
+    */
+    @javax.annotation.Nonnull
+      @JsonProperty(JSON_PROPERTY_COUNT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-  public Integer getCount() {
-    return count;
-  }
-
-
-  @JsonProperty(JSON_PROPERTY_COUNT)
-  @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setCount(Integer count) {
-    this.count = count;
-  }
-
-
-  public RefundListResponse totalCount(Long totalCount) {
-    
-    this.totalCount = totalCount;
-    return this;
-  }
-
-   /**
-   * The total number of refunds in the list
-   * @return totalCount
-  **/
-  @javax.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_TOTAL_COUNT)
-  @JsonInclude(value = JsonInclude.Include.ALWAYS)
-
-  public Long getTotalCount() {
-    return totalCount;
-  }
-
-
-  @JsonProperty(JSON_PROPERTY_TOTAL_COUNT)
-  @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setTotalCount(Long totalCount) {
-    this.totalCount = totalCount;
-  }
-
-
-  public RefundListResponse data(List<RefundResponse> data) {
-    
-    this.data = data;
-    return this;
-  }
-
-  public RefundListResponse addDataItem(RefundResponse dataItem) {
-    if (this.data == null) {
-      this.data = new ArrayList<>();
+    public Integer getCount() {
+        return count;
     }
-    this.data.add(dataItem);
-    return this;
-  }
 
-   /**
-   * The List of refund response object
-   * @return data
-  **/
-  @javax.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_DATA)
+
+          @JsonProperty(JSON_PROPERTY_COUNT)
+  @JsonInclude(value = JsonInclude.Include.ALWAYS)
+  public void setCount(@javax.annotation.Nonnull Integer count) {
+            this.count = count;
+        }
+
+        public RefundListResponse totalCount(@javax.annotation.Nonnull Long totalCount) {
+        
+        this.totalCount = totalCount;
+        return this;
+        }
+
+    /**
+        * The total number of refunds in the list
+    * @return totalCount
+    */
+    @javax.annotation.Nonnull
+      @JsonProperty(JSON_PROPERTY_TOTAL_COUNT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-  public List<RefundResponse> getData() {
-    return data;
-  }
+    public Long getTotalCount() {
+        return totalCount;
+    }
 
 
-  @JsonProperty(JSON_PROPERTY_DATA)
+          @JsonProperty(JSON_PROPERTY_TOTAL_COUNT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setData(List<RefundResponse> data) {
-    this.data = data;
-  }
+  public void setTotalCount(@javax.annotation.Nonnull Long totalCount) {
+            this.totalCount = totalCount;
+        }
 
-  @Override
-  public boolean equals(Object o) {
+        public RefundListResponse data(@javax.annotation.Nonnull List<RefundResponse> data) {
+        
+        this.data = data;
+        return this;
+        }
+
+            public RefundListResponse addDataItem(RefundResponse dataItem) {
+                if (this.data == null) {
+                this.data = new ArrayList<>();
+                }
+                this.data.add(dataItem);
+                return this;
+            }
+
+    /**
+        * The List of refund response object
+    * @return data
+    */
+    @javax.annotation.Nonnull
+      @JsonProperty(JSON_PROPERTY_DATA)
+  @JsonInclude(value = JsonInclude.Include.ALWAYS)
+
+    public List<RefundResponse> getData() {
+        return data;
+    }
+
+
+          @JsonProperty(JSON_PROPERTY_DATA)
+  @JsonInclude(value = JsonInclude.Include.ALWAYS)
+  public void setData(@javax.annotation.Nonnull List<RefundResponse> data) {
+            this.data = data;
+        }
+
+@Override
+public boolean equals(Object o) {
     if (this == o) {
-      return true;
+    return true;
     }
     if (o == null || getClass() != o.getClass()) {
-      return false;
+    return false;
     }
-    RefundListResponse refundListResponse = (RefundListResponse) o;
-    return Objects.equals(this.count, refundListResponse.count) &&
+        RefundListResponse refundListResponse = (RefundListResponse) o;
+        return Objects.equals(this.count, refundListResponse.count) &&
         Objects.equals(this.totalCount, refundListResponse.totalCount) &&
         Objects.equals(this.data, refundListResponse.data);
-  }
+}
 
-  @Override
-  public int hashCode() {
-    return Objects.hash(count, totalCount, data);
-  }
+    @Override
+    public int hashCode() {
+        return Objects.hash(count, totalCount, data);
+    }
 
-  @Override
-  public String toString() {
+    @Override
+    public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class RefundListResponse {\n");
-    sb.append("    count: ").append(toIndentedString(count)).append("\n");
-    sb.append("    totalCount: ").append(toIndentedString(totalCount)).append("\n");
-    sb.append("    data: ").append(toIndentedString(data)).append("\n");
+        sb.append("    count: ").append(toIndentedString(count)).append("\n");
+        sb.append("    totalCount: ").append(toIndentedString(totalCount)).append("\n");
+        sb.append("    data: ").append(toIndentedString(data)).append("\n");
     sb.append("}");
     return sb.toString();
-  }
+    }
 
-  /**
-   * Convert the given object to string with each line indented by 4 spaces
-   * (except the first line).
-   */
-  private String toIndentedString(Object o) {
+    /**
+    * Convert the given object to string with each line indented by 4 spaces
+    * (except the first line).
+    */
+    private String toIndentedString(Object o) {
     if (o == null) {
-      return "null";
+    return "null";
     }
     return o.toString().replace("\n", "\n    ");
-  }
-
-  /**
-   * Convert the instance into URL query string.
-   *
-   * @return URL query string
-   */
-  public String toUrlQueryString() {
-    return toUrlQueryString(null);
-  }
-
-  /**
-   * Convert the instance into URL query string.
-   *
-   * @param prefix prefix of the query string
-   * @return URL query string
-   */
-  public String toUrlQueryString(String prefix) {
-    String suffix = "";
-    String containerSuffix = "";
-    String containerPrefix = "";
-    if (prefix == null) {
-      // style=form, explode=true, e.g. /pet?name=cat&type=manx
-      prefix = "";
-    } else {
-      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
-      prefix = prefix + "[";
-      suffix = "]";
-      containerSuffix = "]";
-      containerPrefix = "[";
     }
 
-    StringJoiner joiner = new StringJoiner("&");
-
-    // add `count` to the URL query string
-    if (getCount() != null) {
-      try {
-        joiner.add(String.format("%scount%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCount()), "UTF-8").replaceAll("\\+", "%20")));
-      } catch (UnsupportedEncodingException e) {
-        // Should never happen, UTF-8 is always supported
-        throw new RuntimeException(e);
-      }
-    }
-
-    // add `total_count` to the URL query string
-    if (getTotalCount() != null) {
-      try {
-        joiner.add(String.format("%stotal_count%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getTotalCount()), "UTF-8").replaceAll("\\+", "%20")));
-      } catch (UnsupportedEncodingException e) {
-        // Should never happen, UTF-8 is always supported
-        throw new RuntimeException(e);
-      }
-    }
-
-    // add `data` to the URL query string
-    if (getData() != null) {
-      for (int i = 0; i < getData().size(); i++) {
-        if (getData().get(i) != null) {
-          joiner.add(getData().get(i).toUrlQueryString(String.format("%sdata%s%s", prefix, suffix,
-              "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix))));
+        /**
+        * Convert the instance into URL query string.
+        *
+        * @return URL query string
+        */
+        public String toUrlQueryString() {
+        return toUrlQueryString(null);
         }
-      }
+
+        /**
+        * Convert the instance into URL query string.
+        *
+        * @param prefix prefix of the query string
+        * @return URL query string
+        */
+        public String toUrlQueryString(String prefix) {
+        String suffix = "";
+        String containerSuffix = "";
+        String containerPrefix = "";
+        if (prefix == null) {
+        // style=form, explode=true, e.g. /pet?name=cat&type=manx
+        prefix = "";
+        } else {
+        // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+        prefix = prefix + "[";
+        suffix = "]";
+        containerSuffix = "]";
+        containerPrefix = "[";
+        }
+
+        StringJoiner joiner = new StringJoiner("&");
+
+            // add `count` to the URL query string
+                        if (getCount() != null) {
+                        try {
+                        joiner.add(String.format("%scount%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCount()), "UTF-8").replaceAll("\\+", "%20")));
+                        } catch (UnsupportedEncodingException e) {
+                        // Should never happen, UTF-8 is always supported
+                        throw new RuntimeException(e);
+                        }
+                        }
+
+            // add `total_count` to the URL query string
+                        if (getTotalCount() != null) {
+                        try {
+                        joiner.add(String.format("%stotal_count%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getTotalCount()), "UTF-8").replaceAll("\\+", "%20")));
+                        } catch (UnsupportedEncodingException e) {
+                        // Should never happen, UTF-8 is always supported
+                        throw new RuntimeException(e);
+                        }
+                        }
+
+            // add `data` to the URL query string
+                            if (getData() != null) {
+                            for (int i = 0; i < getData().size(); i++) {
+                            if (getData().get(i) != null) {
+                            joiner.add(getData().get(i).toUrlQueryString(String.format("%sdata%s%s", prefix, suffix,
+                            "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix))));
+                            }
+                            }
+                            }
+
+        return joiner.toString();
+        }
+
     }
-
-    return joiner.toString();
-  }
-
-}
 

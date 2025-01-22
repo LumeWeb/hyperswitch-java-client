@@ -22,22 +22,21 @@ import org.openapitools.jackson.nullable.JsonNullable;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.openapitools.jackson.nullable.JsonNullable;
 import java.util.NoSuchElementException;
-import org.junit.Assert;
-import org.junit.Ignore;
-import org.junit.Test;
-
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Test;
 
 /**
  * Model tests for WebhookDetails
  */
-public class WebhookDetailsTest {
+class WebhookDetailsTest {
     private final WebhookDetails model = new WebhookDetails();
 
     /**
      * Model tests for WebhookDetails
      */
     @Test
-    public void testWebhookDetails() {
+    void testWebhookDetails() {
         // TODO: test WebhookDetails
     }
 
@@ -45,7 +44,7 @@ public class WebhookDetailsTest {
      * Test the property 'webhookVersion'
      */
     @Test
-    public void webhookVersionTest() {
+    void webhookVersionTest() {
         // TODO: test webhookVersion
     }
 
@@ -53,7 +52,7 @@ public class WebhookDetailsTest {
      * Test the property 'webhookUsername'
      */
     @Test
-    public void webhookUsernameTest() {
+    void webhookUsernameTest() {
         // TODO: test webhookUsername
     }
 
@@ -61,7 +60,7 @@ public class WebhookDetailsTest {
      * Test the property 'webhookPassword'
      */
     @Test
-    public void webhookPasswordTest() {
+    void webhookPasswordTest() {
         // TODO: test webhookPassword
     }
 
@@ -69,7 +68,7 @@ public class WebhookDetailsTest {
      * Test the property 'webhookUrl'
      */
     @Test
-    public void webhookUrlTest() {
+    void webhookUrlTest() {
         // TODO: test webhookUrl
     }
 
@@ -77,7 +76,7 @@ public class WebhookDetailsTest {
      * Test the property 'paymentCreatedEnabled'
      */
     @Test
-    public void paymentCreatedEnabledTest() {
+    void paymentCreatedEnabledTest() {
         // TODO: test paymentCreatedEnabled
     }
 
@@ -85,7 +84,7 @@ public class WebhookDetailsTest {
      * Test the property 'paymentSucceededEnabled'
      */
     @Test
-    public void paymentSucceededEnabledTest() {
+    void paymentSucceededEnabledTest() {
         // TODO: test paymentSucceededEnabled
     }
 
@@ -93,7 +92,7 @@ public class WebhookDetailsTest {
      * Test the property 'paymentFailedEnabled'
      */
     @Test
-    public void paymentFailedEnabledTest() {
+    void paymentFailedEnabledTest() {
         // TODO: test paymentFailedEnabled
     }
 

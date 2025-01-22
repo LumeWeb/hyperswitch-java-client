@@ -28,121 +28,122 @@ import java.net.URLEncoder;
 import java.util.StringJoiner;
 
 /**
- * PaymentMethodDataResponseOneOf15
- */
-@JsonPropertyOrder({
-  PaymentMethodDataResponseOneOf15.JSON_PROPERTY_OPEN_BANKING
-})
-@JsonTypeName("PaymentMethodDataResponse_oneOf_15")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+* PaymentMethodDataResponseOneOf15
+*/
+    @JsonPropertyOrder({
+        PaymentMethodDataResponseOneOf15.JSON_PROPERTY_OPEN_BANKING
+    })
+            @JsonTypeName("PaymentMethodDataResponse_oneOf_15")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class PaymentMethodDataResponseOneOf15 {
-  public static final String JSON_PROPERTY_OPEN_BANKING = "open_banking";
-  private OpenBankingResponse openBanking;
+        public static final String JSON_PROPERTY_OPEN_BANKING = "open_banking";
+    @javax.annotation.Nonnull
+            private OpenBankingResponse openBanking;
 
-  public PaymentMethodDataResponseOneOf15() {
-  }
+public PaymentMethodDataResponseOneOf15() {
+}
 
-  public PaymentMethodDataResponseOneOf15 openBanking(OpenBankingResponse openBanking) {
-    
-    this.openBanking = openBanking;
-    return this;
-  }
+        public PaymentMethodDataResponseOneOf15 openBanking(@javax.annotation.Nonnull OpenBankingResponse openBanking) {
+        
+        this.openBanking = openBanking;
+        return this;
+        }
 
-   /**
-   * Get openBanking
-   * @return openBanking
-  **/
-  @javax.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_OPEN_BANKING)
+    /**
+        * Get openBanking
+    * @return openBanking
+    */
+    @javax.annotation.Nonnull
+      @JsonProperty(JSON_PROPERTY_OPEN_BANKING)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-  public OpenBankingResponse getOpenBanking() {
-    return openBanking;
-  }
+    public OpenBankingResponse getOpenBanking() {
+        return openBanking;
+    }
 
 
-  @JsonProperty(JSON_PROPERTY_OPEN_BANKING)
+          @JsonProperty(JSON_PROPERTY_OPEN_BANKING)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setOpenBanking(OpenBankingResponse openBanking) {
-    this.openBanking = openBanking;
-  }
+  public void setOpenBanking(@javax.annotation.Nonnull OpenBankingResponse openBanking) {
+            this.openBanking = openBanking;
+        }
 
-  @Override
-  public boolean equals(Object o) {
+@Override
+public boolean equals(Object o) {
     if (this == o) {
-      return true;
+    return true;
     }
     if (o == null || getClass() != o.getClass()) {
-      return false;
+    return false;
     }
-    PaymentMethodDataResponseOneOf15 paymentMethodDataResponseOneOf15 = (PaymentMethodDataResponseOneOf15) o;
-    return Objects.equals(this.openBanking, paymentMethodDataResponseOneOf15.openBanking);
-  }
+        PaymentMethodDataResponseOneOf15 paymentMethodDataResponseOneOf15 = (PaymentMethodDataResponseOneOf15) o;
+        return Objects.equals(this.openBanking, paymentMethodDataResponseOneOf15.openBanking);
+}
 
-  @Override
-  public int hashCode() {
-    return Objects.hash(openBanking);
-  }
+    @Override
+    public int hashCode() {
+        return Objects.hash(openBanking);
+    }
 
-  @Override
-  public String toString() {
+    @Override
+    public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class PaymentMethodDataResponseOneOf15 {\n");
-    sb.append("    openBanking: ").append(toIndentedString(openBanking)).append("\n");
+        sb.append("    openBanking: ").append(toIndentedString(openBanking)).append("\n");
     sb.append("}");
     return sb.toString();
-  }
+    }
 
-  /**
-   * Convert the given object to string with each line indented by 4 spaces
-   * (except the first line).
-   */
-  private String toIndentedString(Object o) {
+    /**
+    * Convert the given object to string with each line indented by 4 spaces
+    * (except the first line).
+    */
+    private String toIndentedString(Object o) {
     if (o == null) {
-      return "null";
+    return "null";
     }
     return o.toString().replace("\n", "\n    ");
-  }
-
-  /**
-   * Convert the instance into URL query string.
-   *
-   * @return URL query string
-   */
-  public String toUrlQueryString() {
-    return toUrlQueryString(null);
-  }
-
-  /**
-   * Convert the instance into URL query string.
-   *
-   * @param prefix prefix of the query string
-   * @return URL query string
-   */
-  public String toUrlQueryString(String prefix) {
-    String suffix = "";
-    String containerSuffix = "";
-    String containerPrefix = "";
-    if (prefix == null) {
-      // style=form, explode=true, e.g. /pet?name=cat&type=manx
-      prefix = "";
-    } else {
-      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
-      prefix = prefix + "[";
-      suffix = "]";
-      containerSuffix = "]";
-      containerPrefix = "[";
     }
 
-    StringJoiner joiner = new StringJoiner("&");
+        /**
+        * Convert the instance into URL query string.
+        *
+        * @return URL query string
+        */
+        public String toUrlQueryString() {
+        return toUrlQueryString(null);
+        }
 
-    // add `open_banking` to the URL query string
-    if (getOpenBanking() != null) {
-      joiner.add(getOpenBanking().toUrlQueryString(prefix + "open_banking" + suffix));
+        /**
+        * Convert the instance into URL query string.
+        *
+        * @param prefix prefix of the query string
+        * @return URL query string
+        */
+        public String toUrlQueryString(String prefix) {
+        String suffix = "";
+        String containerSuffix = "";
+        String containerPrefix = "";
+        if (prefix == null) {
+        // style=form, explode=true, e.g. /pet?name=cat&type=manx
+        prefix = "";
+        } else {
+        // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+        prefix = prefix + "[";
+        suffix = "]";
+        containerSuffix = "]";
+        containerPrefix = "[";
+        }
+
+        StringJoiner joiner = new StringJoiner("&");
+
+            // add `open_banking` to the URL query string
+                            if (getOpenBanking() != null) {
+                            joiner.add(getOpenBanking().toUrlQueryString(prefix + "open_banking" + suffix));
+                            }
+
+        return joiner.toString();
+        }
+
     }
-
-    return joiner.toString();
-  }
-
-}
 

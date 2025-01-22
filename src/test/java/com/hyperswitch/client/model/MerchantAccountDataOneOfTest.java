@@ -19,22 +19,21 @@ import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonTypeName;
 import com.fasterxml.jackson.annotation.JsonValue;
 import com.hyperswitch.client.model.MerchantAccountDataOneOfIban;
-import org.junit.Assert;
-import org.junit.Ignore;
-import org.junit.Test;
-
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Test;
 
 /**
  * Model tests for MerchantAccountDataOneOf
  */
-public class MerchantAccountDataOneOfTest {
+class MerchantAccountDataOneOfTest {
     private final MerchantAccountDataOneOf model = new MerchantAccountDataOneOf();
 
     /**
      * Model tests for MerchantAccountDataOneOf
      */
     @Test
-    public void testMerchantAccountDataOneOf() {
+    void testMerchantAccountDataOneOf() {
         // TODO: test MerchantAccountDataOneOf
     }
 
@@ -42,7 +41,7 @@ public class MerchantAccountDataOneOfTest {
      * Test the property 'iban'
      */
     @Test
-    public void ibanTest() {
+    void ibanTest() {
         // TODO: test iban
     }
 

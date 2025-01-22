@@ -27,23 +27,24 @@ import java.net.URLEncoder;
 import java.util.StringJoiner;
 
 /**
- * Contains the url for redirection flow
- */
-@JsonPropertyOrder({
-  NextActionDataOneOf.JSON_PROPERTY_REDIRECT_TO_URL,
-  NextActionDataOneOf.JSON_PROPERTY_TYPE
-})
-@JsonTypeName("NextActionData_oneOf")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+* Contains the url for redirection flow
+*/
+    @JsonPropertyOrder({
+        NextActionDataOneOf.JSON_PROPERTY_REDIRECT_TO_URL,
+        NextActionDataOneOf.JSON_PROPERTY_TYPE
+    })
+            @JsonTypeName("NextActionData_oneOf")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class NextActionDataOneOf {
-  public static final String JSON_PROPERTY_REDIRECT_TO_URL = "redirect_to_url";
-  private String redirectToUrl;
+        public static final String JSON_PROPERTY_REDIRECT_TO_URL = "redirect_to_url";
+    @javax.annotation.Nonnull
+            private String redirectToUrl;
 
-  /**
+              /**
    * Gets or Sets type
    */
   public enum TypeEnum {
-    REDIRECT_TO_URL("redirect_to_url");
+    REDIRECT_TO_URL(String.valueOf("redirect_to_url"));
 
     private String value;
 
@@ -72,156 +73,156 @@ public class NextActionDataOneOf {
     }
   }
 
-  public static final String JSON_PROPERTY_TYPE = "type";
-  private TypeEnum type;
+        public static final String JSON_PROPERTY_TYPE = "type";
+    @javax.annotation.Nonnull
+            private TypeEnum type;
 
-  public NextActionDataOneOf() {
-  }
+public NextActionDataOneOf() {
+}
 
-  public NextActionDataOneOf redirectToUrl(String redirectToUrl) {
-    
-    this.redirectToUrl = redirectToUrl;
-    return this;
-  }
+        public NextActionDataOneOf redirectToUrl(@javax.annotation.Nonnull String redirectToUrl) {
+        
+        this.redirectToUrl = redirectToUrl;
+        return this;
+        }
 
-   /**
-   * Get redirectToUrl
-   * @return redirectToUrl
-  **/
-  @javax.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_REDIRECT_TO_URL)
+    /**
+        * Get redirectToUrl
+    * @return redirectToUrl
+    */
+    @javax.annotation.Nonnull
+      @JsonProperty(JSON_PROPERTY_REDIRECT_TO_URL)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-  public String getRedirectToUrl() {
-    return redirectToUrl;
-  }
+    public String getRedirectToUrl() {
+        return redirectToUrl;
+    }
 
 
-  @JsonProperty(JSON_PROPERTY_REDIRECT_TO_URL)
+          @JsonProperty(JSON_PROPERTY_REDIRECT_TO_URL)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setRedirectToUrl(String redirectToUrl) {
-    this.redirectToUrl = redirectToUrl;
-  }
+  public void setRedirectToUrl(@javax.annotation.Nonnull String redirectToUrl) {
+            this.redirectToUrl = redirectToUrl;
+        }
 
+        public NextActionDataOneOf type(@javax.annotation.Nonnull TypeEnum type) {
+        
+        this.type = type;
+        return this;
+        }
 
-  public NextActionDataOneOf type(TypeEnum type) {
-    
-    this.type = type;
-    return this;
-  }
-
-   /**
-   * Get type
-   * @return type
-  **/
-  @javax.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_TYPE)
+    /**
+        * Get type
+    * @return type
+    */
+    @javax.annotation.Nonnull
+      @JsonProperty(JSON_PROPERTY_TYPE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-  public TypeEnum getType() {
-    return type;
-  }
+    public TypeEnum getType() {
+        return type;
+    }
 
 
-  @JsonProperty(JSON_PROPERTY_TYPE)
+          @JsonProperty(JSON_PROPERTY_TYPE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setType(TypeEnum type) {
-    this.type = type;
-  }
+  public void setType(@javax.annotation.Nonnull TypeEnum type) {
+            this.type = type;
+        }
 
-  @Override
-  public boolean equals(Object o) {
+@Override
+public boolean equals(Object o) {
     if (this == o) {
-      return true;
+    return true;
     }
     if (o == null || getClass() != o.getClass()) {
-      return false;
+    return false;
     }
-    NextActionDataOneOf nextActionDataOneOf = (NextActionDataOneOf) o;
-    return Objects.equals(this.redirectToUrl, nextActionDataOneOf.redirectToUrl) &&
+        NextActionDataOneOf nextActionDataOneOf = (NextActionDataOneOf) o;
+        return Objects.equals(this.redirectToUrl, nextActionDataOneOf.redirectToUrl) &&
         Objects.equals(this.type, nextActionDataOneOf.type);
-  }
+}
 
-  @Override
-  public int hashCode() {
-    return Objects.hash(redirectToUrl, type);
-  }
+    @Override
+    public int hashCode() {
+        return Objects.hash(redirectToUrl, type);
+    }
 
-  @Override
-  public String toString() {
+    @Override
+    public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class NextActionDataOneOf {\n");
-    sb.append("    redirectToUrl: ").append(toIndentedString(redirectToUrl)).append("\n");
-    sb.append("    type: ").append(toIndentedString(type)).append("\n");
+        sb.append("    redirectToUrl: ").append(toIndentedString(redirectToUrl)).append("\n");
+        sb.append("    type: ").append(toIndentedString(type)).append("\n");
     sb.append("}");
     return sb.toString();
-  }
+    }
 
-  /**
-   * Convert the given object to string with each line indented by 4 spaces
-   * (except the first line).
-   */
-  private String toIndentedString(Object o) {
+    /**
+    * Convert the given object to string with each line indented by 4 spaces
+    * (except the first line).
+    */
+    private String toIndentedString(Object o) {
     if (o == null) {
-      return "null";
+    return "null";
     }
     return o.toString().replace("\n", "\n    ");
-  }
-
-  /**
-   * Convert the instance into URL query string.
-   *
-   * @return URL query string
-   */
-  public String toUrlQueryString() {
-    return toUrlQueryString(null);
-  }
-
-  /**
-   * Convert the instance into URL query string.
-   *
-   * @param prefix prefix of the query string
-   * @return URL query string
-   */
-  public String toUrlQueryString(String prefix) {
-    String suffix = "";
-    String containerSuffix = "";
-    String containerPrefix = "";
-    if (prefix == null) {
-      // style=form, explode=true, e.g. /pet?name=cat&type=manx
-      prefix = "";
-    } else {
-      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
-      prefix = prefix + "[";
-      suffix = "]";
-      containerSuffix = "]";
-      containerPrefix = "[";
     }
 
-    StringJoiner joiner = new StringJoiner("&");
+        /**
+        * Convert the instance into URL query string.
+        *
+        * @return URL query string
+        */
+        public String toUrlQueryString() {
+        return toUrlQueryString(null);
+        }
 
-    // add `redirect_to_url` to the URL query string
-    if (getRedirectToUrl() != null) {
-      try {
-        joiner.add(String.format("%sredirect_to_url%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getRedirectToUrl()), "UTF-8").replaceAll("\\+", "%20")));
-      } catch (UnsupportedEncodingException e) {
-        // Should never happen, UTF-8 is always supported
-        throw new RuntimeException(e);
-      }
+        /**
+        * Convert the instance into URL query string.
+        *
+        * @param prefix prefix of the query string
+        * @return URL query string
+        */
+        public String toUrlQueryString(String prefix) {
+        String suffix = "";
+        String containerSuffix = "";
+        String containerPrefix = "";
+        if (prefix == null) {
+        // style=form, explode=true, e.g. /pet?name=cat&type=manx
+        prefix = "";
+        } else {
+        // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+        prefix = prefix + "[";
+        suffix = "]";
+        containerSuffix = "]";
+        containerPrefix = "[";
+        }
+
+        StringJoiner joiner = new StringJoiner("&");
+
+            // add `redirect_to_url` to the URL query string
+                        if (getRedirectToUrl() != null) {
+                        try {
+                        joiner.add(String.format("%sredirect_to_url%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getRedirectToUrl()), "UTF-8").replaceAll("\\+", "%20")));
+                        } catch (UnsupportedEncodingException e) {
+                        // Should never happen, UTF-8 is always supported
+                        throw new RuntimeException(e);
+                        }
+                        }
+
+            // add `type` to the URL query string
+                        if (getType() != null) {
+                        try {
+                        joiner.add(String.format("%stype%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getType()), "UTF-8").replaceAll("\\+", "%20")));
+                        } catch (UnsupportedEncodingException e) {
+                        // Should never happen, UTF-8 is always supported
+                        throw new RuntimeException(e);
+                        }
+                        }
+
+        return joiner.toString();
+        }
+
     }
-
-    // add `type` to the URL query string
-    if (getType() != null) {
-      try {
-        joiner.add(String.format("%stype%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getType()), "UTF-8").replaceAll("\\+", "%20")));
-      } catch (UnsupportedEncodingException e) {
-        // Should never happen, UTF-8 is always supported
-        throw new RuntimeException(e);
-      }
-    }
-
-    return joiner.toString();
-  }
-
-}
 

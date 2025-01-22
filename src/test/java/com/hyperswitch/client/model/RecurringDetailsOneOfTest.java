@@ -18,22 +18,21 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonTypeName;
 import com.fasterxml.jackson.annotation.JsonValue;
-import org.junit.Assert;
-import org.junit.Ignore;
-import org.junit.Test;
-
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Test;
 
 /**
  * Model tests for RecurringDetailsOneOf
  */
-public class RecurringDetailsOneOfTest {
+class RecurringDetailsOneOfTest {
     private final RecurringDetailsOneOf model = new RecurringDetailsOneOf();
 
     /**
      * Model tests for RecurringDetailsOneOf
      */
     @Test
-    public void testRecurringDetailsOneOf() {
+    void testRecurringDetailsOneOf() {
         // TODO: test RecurringDetailsOneOf
     }
 
@@ -41,7 +40,7 @@ public class RecurringDetailsOneOfTest {
      * Test the property 'type'
      */
     @Test
-    public void typeTest() {
+    void typeTest() {
         // TODO: test type
     }
 
@@ -49,7 +48,7 @@ public class RecurringDetailsOneOfTest {
      * Test the property 'data'
      */
     @Test
-    public void dataTest() {
+    void dataTest() {
         // TODO: test data
     }
 

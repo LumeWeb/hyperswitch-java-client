@@ -29,9 +29,9 @@ import com.fasterxml.jackson.annotation.JsonValue;
  */
 public enum RoutableChoiceKind {
   
-  ONLYCONNECTOR("OnlyConnector"),
+  ONLY_CONNECTOR("OnlyConnector"),
   
-  FULLSTRUCT("FullStruct");
+  FULL_STRUCT("FullStruct");
 
   private String value;
 

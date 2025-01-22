@@ -33,21 +33,21 @@ public enum CardNetwork {
   
   MASTERCARD("Mastercard"),
   
-  AMERICANEXPRESS("AmericanExpress"),
+  AMERICAN_EXPRESS("AmericanExpress"),
   
   JCB("JCB"),
   
-  DINERSCLUB("DinersClub"),
+  DINERS_CLUB("DinersClub"),
   
   DISCOVER("Discover"),
   
-  CARTESBANCAIRES("CartesBancaires"),
+  CARTES_BANCAIRES("CartesBancaires"),
   
-  UNIONPAY("UnionPay"),
+  UNION_PAY("UnionPay"),
   
   INTERAC("Interac"),
   
-  RUPAY("RuPay"),
+  RU_PAY("RuPay"),
   
   MAESTRO("Maestro");
 

@@ -19,22 +19,21 @@ import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonTypeName;
 import com.fasterxml.jackson.annotation.JsonValue;
 import com.hyperswitch.client.model.FieldTypeOneOfUserCountry;
-import org.junit.Assert;
-import org.junit.Ignore;
-import org.junit.Test;
-
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Test;
 
 /**
  * Model tests for FieldTypeOneOf4
  */
-public class FieldTypeOneOf4Test {
+class FieldTypeOneOf4Test {
     private final FieldTypeOneOf4 model = new FieldTypeOneOf4();
 
     /**
      * Model tests for FieldTypeOneOf4
      */
     @Test
-    public void testFieldTypeOneOf4() {
+    void testFieldTypeOneOf4() {
         // TODO: test FieldTypeOneOf4
     }
 
@@ -42,7 +41,7 @@ public class FieldTypeOneOf4Test {
      * Test the property 'dropDown'
      */
     @Test
-    public void dropDownTest() {
+    void dropDownTest() {
         // TODO: test dropDown
     }
 

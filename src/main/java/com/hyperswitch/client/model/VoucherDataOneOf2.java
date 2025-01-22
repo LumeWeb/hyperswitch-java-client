@@ -28,121 +28,122 @@ import java.net.URLEncoder;
 import java.util.StringJoiner;
 
 /**
- * VoucherDataOneOf2
- */
-@JsonPropertyOrder({
-  VoucherDataOneOf2.JSON_PROPERTY_INDOMARET
-})
-@JsonTypeName("VoucherData_oneOf_2")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+* VoucherDataOneOf2
+*/
+    @JsonPropertyOrder({
+        VoucherDataOneOf2.JSON_PROPERTY_INDOMARET
+    })
+            @JsonTypeName("VoucherData_oneOf_2")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class VoucherDataOneOf2 {
-  public static final String JSON_PROPERTY_INDOMARET = "indomaret";
-  private IndomaretVoucherData indomaret;
+        public static final String JSON_PROPERTY_INDOMARET = "indomaret";
+    @javax.annotation.Nonnull
+            private IndomaretVoucherData indomaret;
 
-  public VoucherDataOneOf2() {
-  }
+public VoucherDataOneOf2() {
+}
 
-  public VoucherDataOneOf2 indomaret(IndomaretVoucherData indomaret) {
-    
-    this.indomaret = indomaret;
-    return this;
-  }
+        public VoucherDataOneOf2 indomaret(@javax.annotation.Nonnull IndomaretVoucherData indomaret) {
+        
+        this.indomaret = indomaret;
+        return this;
+        }
 
-   /**
-   * Get indomaret
-   * @return indomaret
-  **/
-  @javax.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_INDOMARET)
+    /**
+        * Get indomaret
+    * @return indomaret
+    */
+    @javax.annotation.Nonnull
+      @JsonProperty(JSON_PROPERTY_INDOMARET)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-  public IndomaretVoucherData getIndomaret() {
-    return indomaret;
-  }
+    public IndomaretVoucherData getIndomaret() {
+        return indomaret;
+    }
 
 
-  @JsonProperty(JSON_PROPERTY_INDOMARET)
+          @JsonProperty(JSON_PROPERTY_INDOMARET)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setIndomaret(IndomaretVoucherData indomaret) {
-    this.indomaret = indomaret;
-  }
+  public void setIndomaret(@javax.annotation.Nonnull IndomaretVoucherData indomaret) {
+            this.indomaret = indomaret;
+        }
 
-  @Override
-  public boolean equals(Object o) {
+@Override
+public boolean equals(Object o) {
     if (this == o) {
-      return true;
+    return true;
     }
     if (o == null || getClass() != o.getClass()) {
-      return false;
+    return false;
     }
-    VoucherDataOneOf2 voucherDataOneOf2 = (VoucherDataOneOf2) o;
-    return Objects.equals(this.indomaret, voucherDataOneOf2.indomaret);
-  }
+        VoucherDataOneOf2 voucherDataOneOf2 = (VoucherDataOneOf2) o;
+        return Objects.equals(this.indomaret, voucherDataOneOf2.indomaret);
+}
 
-  @Override
-  public int hashCode() {
-    return Objects.hash(indomaret);
-  }
+    @Override
+    public int hashCode() {
+        return Objects.hash(indomaret);
+    }
 
-  @Override
-  public String toString() {
+    @Override
+    public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class VoucherDataOneOf2 {\n");
-    sb.append("    indomaret: ").append(toIndentedString(indomaret)).append("\n");
+        sb.append("    indomaret: ").append(toIndentedString(indomaret)).append("\n");
     sb.append("}");
     return sb.toString();
-  }
+    }
 
-  /**
-   * Convert the given object to string with each line indented by 4 spaces
-   * (except the first line).
-   */
-  private String toIndentedString(Object o) {
+    /**
+    * Convert the given object to string with each line indented by 4 spaces
+    * (except the first line).
+    */
+    private String toIndentedString(Object o) {
     if (o == null) {
-      return "null";
+    return "null";
     }
     return o.toString().replace("\n", "\n    ");
-  }
-
-  /**
-   * Convert the instance into URL query string.
-   *
-   * @return URL query string
-   */
-  public String toUrlQueryString() {
-    return toUrlQueryString(null);
-  }
-
-  /**
-   * Convert the instance into URL query string.
-   *
-   * @param prefix prefix of the query string
-   * @return URL query string
-   */
-  public String toUrlQueryString(String prefix) {
-    String suffix = "";
-    String containerSuffix = "";
-    String containerPrefix = "";
-    if (prefix == null) {
-      // style=form, explode=true, e.g. /pet?name=cat&type=manx
-      prefix = "";
-    } else {
-      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
-      prefix = prefix + "[";
-      suffix = "]";
-      containerSuffix = "]";
-      containerPrefix = "[";
     }
 
-    StringJoiner joiner = new StringJoiner("&");
+        /**
+        * Convert the instance into URL query string.
+        *
+        * @return URL query string
+        */
+        public String toUrlQueryString() {
+        return toUrlQueryString(null);
+        }
 
-    // add `indomaret` to the URL query string
-    if (getIndomaret() != null) {
-      joiner.add(getIndomaret().toUrlQueryString(prefix + "indomaret" + suffix));
+        /**
+        * Convert the instance into URL query string.
+        *
+        * @param prefix prefix of the query string
+        * @return URL query string
+        */
+        public String toUrlQueryString(String prefix) {
+        String suffix = "";
+        String containerSuffix = "";
+        String containerPrefix = "";
+        if (prefix == null) {
+        // style=form, explode=true, e.g. /pet?name=cat&type=manx
+        prefix = "";
+        } else {
+        // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+        prefix = prefix + "[";
+        suffix = "]";
+        containerSuffix = "]";
+        containerPrefix = "[";
+        }
+
+        StringJoiner joiner = new StringJoiner("&");
+
+            // add `indomaret` to the URL query string
+                            if (getIndomaret() != null) {
+                            joiner.add(getIndomaret().toUrlQueryString(prefix + "indomaret" + suffix));
+                            }
+
+        return joiner.toString();
+        }
+
     }
-
-    return joiner.toString();
-  }
-
-}
 

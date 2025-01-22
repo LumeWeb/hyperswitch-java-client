@@ -23,6 +23,7 @@ import com.fasterxml.jackson.annotation.JsonValue;
 import com.hyperswitch.client.model.RoutingDictionary;
 import com.hyperswitch.client.model.RoutingDictionaryRecord;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import org.openapitools.jackson.nullable.JsonNullable;
 import com.fasterxml.jackson.annotation.JsonIgnore;
@@ -35,236 +36,237 @@ import java.net.URLEncoder;
 import java.util.StringJoiner;
 
 /**
- * RoutingKind
- */
-@JsonPropertyOrder({
-  RoutingKind.JSON_PROPERTY_MERCHANT_ID,
-  RoutingKind.JSON_PROPERTY_ACTIVE_ID,
-  RoutingKind.JSON_PROPERTY_RECORDS
-})
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+* RoutingKind
+*/
+    @JsonPropertyOrder({
+        RoutingKind.JSON_PROPERTY_MERCHANT_ID,
+        RoutingKind.JSON_PROPERTY_ACTIVE_ID,
+        RoutingKind.JSON_PROPERTY_RECORDS
+    })
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class RoutingKind {
-  public static final String JSON_PROPERTY_MERCHANT_ID = "merchant_id";
-  private String merchantId;
+        public static final String JSON_PROPERTY_MERCHANT_ID = "merchant_id";
+    @javax.annotation.Nonnull
+            private String merchantId;
 
-  public static final String JSON_PROPERTY_ACTIVE_ID = "active_id";
-  private JsonNullable<String> activeId = JsonNullable.<String>undefined();
+        public static final String JSON_PROPERTY_ACTIVE_ID = "active_id";
+    @javax.annotation.Nullable
+            private JsonNullable<String> activeId = JsonNullable.<String>undefined();
 
-  public static final String JSON_PROPERTY_RECORDS = "records";
-  private List<RoutingDictionaryRecord> records = new ArrayList<>();
+        public static final String JSON_PROPERTY_RECORDS = "records";
+    @javax.annotation.Nonnull
+            private List<RoutingDictionaryRecord> records = new ArrayList<>();
 
-  public RoutingKind() {
-  }
+public RoutingKind() {
+}
 
-  public RoutingKind merchantId(String merchantId) {
-    
-    this.merchantId = merchantId;
-    return this;
-  }
+        public RoutingKind merchantId(@javax.annotation.Nonnull String merchantId) {
+        
+        this.merchantId = merchantId;
+        return this;
+        }
 
-   /**
-   * Get merchantId
-   * @return merchantId
-  **/
-  @javax.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_MERCHANT_ID)
+    /**
+        * Get merchantId
+    * @return merchantId
+    */
+    @javax.annotation.Nonnull
+      @JsonProperty(JSON_PROPERTY_MERCHANT_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-  public String getMerchantId() {
-    return merchantId;
-  }
+    public String getMerchantId() {
+        return merchantId;
+    }
 
 
-  @JsonProperty(JSON_PROPERTY_MERCHANT_ID)
+          @JsonProperty(JSON_PROPERTY_MERCHANT_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setMerchantId(String merchantId) {
-    this.merchantId = merchantId;
-  }
+  public void setMerchantId(@javax.annotation.Nonnull String merchantId) {
+            this.merchantId = merchantId;
+        }
 
+        public RoutingKind activeId(@javax.annotation.Nullable String activeId) {
+        this.activeId = JsonNullable.<String>of(activeId);
+        
+        return this;
+        }
 
-  public RoutingKind activeId(String activeId) {
-    this.activeId = JsonNullable.<String>of(activeId);
+    /**
+        * Get activeId
+    * @return activeId
+    */
+    @javax.annotation.Nullable
+        @JsonIgnore
     
-    return this;
-  }
+    public String getActiveId() {
+                return activeId.orElse(null);
+    }
 
-   /**
-   * Get activeId
-   * @return activeId
-  **/
-  @javax.annotation.Nullable
-  @JsonIgnore
-
-  public String getActiveId() {
-        return activeId.orElse(null);
-  }
-
-  @JsonProperty(JSON_PROPERTY_ACTIVE_ID)
+          @JsonProperty(JSON_PROPERTY_ACTIVE_ID)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-  public JsonNullable<String> getActiveId_JsonNullable() {
-    return activeId;
-  }
-  
-  @JsonProperty(JSON_PROPERTY_ACTIVE_ID)
-  public void setActiveId_JsonNullable(JsonNullable<String> activeId) {
-    this.activeId = activeId;
-  }
-
-  public void setActiveId(String activeId) {
-    this.activeId = JsonNullable.<String>of(activeId);
-  }
-
-
-  public RoutingKind records(List<RoutingDictionaryRecord> records) {
+        public JsonNullable<String> getActiveId_JsonNullable() {
+        return activeId;
+        }
     
-    this.records = records;
-    return this;
-  }
+        @JsonProperty(JSON_PROPERTY_ACTIVE_ID)
+        public void setActiveId_JsonNullable(JsonNullable<String> activeId) {
+        this.activeId = activeId;
+        }
 
-  public RoutingKind addRecordsItem(RoutingDictionaryRecord recordsItem) {
-    if (this.records == null) {
-      this.records = new ArrayList<>();
+          public void setActiveId(@javax.annotation.Nullable String activeId) {
+            this.activeId = JsonNullable.<String>of(activeId);
+        }
+
+        public RoutingKind records(@javax.annotation.Nonnull List<RoutingDictionaryRecord> records) {
+        
+        this.records = records;
+        return this;
+        }
+
+            public RoutingKind addRecordsItem(RoutingDictionaryRecord recordsItem) {
+                if (this.records == null) {
+                this.records = new ArrayList<>();
+                }
+                this.records.add(recordsItem);
+                return this;
+            }
+
+    /**
+        * Get records
+    * @return records
+    */
+    @javax.annotation.Nonnull
+      @JsonProperty(JSON_PROPERTY_RECORDS)
+  @JsonInclude(value = JsonInclude.Include.ALWAYS)
+
+    public List<RoutingDictionaryRecord> getRecords() {
+        return records;
     }
-    this.records.add(recordsItem);
-    return this;
-  }
 
-   /**
-   * Get records
-   * @return records
-  **/
-  @javax.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_RECORDS)
+
+          @JsonProperty(JSON_PROPERTY_RECORDS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
+  public void setRecords(@javax.annotation.Nonnull List<RoutingDictionaryRecord> records) {
+            this.records = records;
+        }
 
-  public List<RoutingDictionaryRecord> getRecords() {
-    return records;
-  }
-
-
-  @JsonProperty(JSON_PROPERTY_RECORDS)
-  @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setRecords(List<RoutingDictionaryRecord> records) {
-    this.records = records;
-  }
-
-  @Override
-  public boolean equals(Object o) {
+@Override
+public boolean equals(Object o) {
     if (this == o) {
-      return true;
+    return true;
     }
     if (o == null || getClass() != o.getClass()) {
-      return false;
+    return false;
     }
-    RoutingKind routingKind = (RoutingKind) o;
-    return Objects.equals(this.merchantId, routingKind.merchantId) &&
+        RoutingKind routingKind = (RoutingKind) o;
+        return Objects.equals(this.merchantId, routingKind.merchantId) &&
         equalsNullable(this.activeId, routingKind.activeId) &&
         Objects.equals(this.records, routingKind.records);
-  }
+}
 
-  private static <T> boolean equalsNullable(JsonNullable<T> a, JsonNullable<T> b) {
-    return a == b || (a != null && b != null && a.isPresent() && b.isPresent() && Objects.deepEquals(a.get(), b.get()));
-  }
+    private static <T> boolean equalsNullable(JsonNullable<T> a, JsonNullable<T> b) {
+        return a == b || (a != null && b != null && a.isPresent() && b.isPresent() && Objects.deepEquals(a.get(), b.get()));
+        }
 
-  @Override
-  public int hashCode() {
-    return Objects.hash(merchantId, hashCodeNullable(activeId), records);
-  }
-
-  private static <T> int hashCodeNullable(JsonNullable<T> a) {
-    if (a == null) {
-      return 1;
+    @Override
+    public int hashCode() {
+        return Objects.hash(merchantId, hashCodeNullable(activeId), records);
     }
-    return a.isPresent() ? Arrays.deepHashCode(new Object[]{a.get()}) : 31;
-  }
 
-  @Override
-  public String toString() {
+        private static <T> int hashCodeNullable(JsonNullable<T> a) {
+        if (a == null) {
+        return 1;
+        }
+        return a.isPresent() ? Arrays.deepHashCode(new Object[]{a.get()}) : 31;
+        }
+
+    @Override
+    public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class RoutingKind {\n");
-    sb.append("    merchantId: ").append(toIndentedString(merchantId)).append("\n");
-    sb.append("    activeId: ").append(toIndentedString(activeId)).append("\n");
-    sb.append("    records: ").append(toIndentedString(records)).append("\n");
+        sb.append("    merchantId: ").append(toIndentedString(merchantId)).append("\n");
+        sb.append("    activeId: ").append(toIndentedString(activeId)).append("\n");
+        sb.append("    records: ").append(toIndentedString(records)).append("\n");
     sb.append("}");
     return sb.toString();
-  }
+    }
 
-  /**
-   * Convert the given object to string with each line indented by 4 spaces
-   * (except the first line).
-   */
-  private String toIndentedString(Object o) {
+    /**
+    * Convert the given object to string with each line indented by 4 spaces
+    * (except the first line).
+    */
+    private String toIndentedString(Object o) {
     if (o == null) {
-      return "null";
+    return "null";
     }
     return o.toString().replace("\n", "\n    ");
-  }
-
-  /**
-   * Convert the instance into URL query string.
-   *
-   * @return URL query string
-   */
-  public String toUrlQueryString() {
-    return toUrlQueryString(null);
-  }
-
-  /**
-   * Convert the instance into URL query string.
-   *
-   * @param prefix prefix of the query string
-   * @return URL query string
-   */
-  public String toUrlQueryString(String prefix) {
-    String suffix = "";
-    String containerSuffix = "";
-    String containerPrefix = "";
-    if (prefix == null) {
-      // style=form, explode=true, e.g. /pet?name=cat&type=manx
-      prefix = "";
-    } else {
-      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
-      prefix = prefix + "[";
-      suffix = "]";
-      containerSuffix = "]";
-      containerPrefix = "[";
     }
 
-    StringJoiner joiner = new StringJoiner("&");
-
-    // add `merchant_id` to the URL query string
-    if (getMerchantId() != null) {
-      try {
-        joiner.add(String.format("%smerchant_id%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getMerchantId()), "UTF-8").replaceAll("\\+", "%20")));
-      } catch (UnsupportedEncodingException e) {
-        // Should never happen, UTF-8 is always supported
-        throw new RuntimeException(e);
-      }
-    }
-
-    // add `active_id` to the URL query string
-    if (getActiveId() != null) {
-      try {
-        joiner.add(String.format("%sactive_id%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getActiveId()), "UTF-8").replaceAll("\\+", "%20")));
-      } catch (UnsupportedEncodingException e) {
-        // Should never happen, UTF-8 is always supported
-        throw new RuntimeException(e);
-      }
-    }
-
-    // add `records` to the URL query string
-    if (getRecords() != null) {
-      for (int i = 0; i < getRecords().size(); i++) {
-        if (getRecords().get(i) != null) {
-          joiner.add(getRecords().get(i).toUrlQueryString(String.format("%srecords%s%s", prefix, suffix,
-              "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix))));
+        /**
+        * Convert the instance into URL query string.
+        *
+        * @return URL query string
+        */
+        public String toUrlQueryString() {
+        return toUrlQueryString(null);
         }
-      }
+
+        /**
+        * Convert the instance into URL query string.
+        *
+        * @param prefix prefix of the query string
+        * @return URL query string
+        */
+        public String toUrlQueryString(String prefix) {
+        String suffix = "";
+        String containerSuffix = "";
+        String containerPrefix = "";
+        if (prefix == null) {
+        // style=form, explode=true, e.g. /pet?name=cat&type=manx
+        prefix = "";
+        } else {
+        // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+        prefix = prefix + "[";
+        suffix = "]";
+        containerSuffix = "]";
+        containerPrefix = "[";
+        }
+
+        StringJoiner joiner = new StringJoiner("&");
+
+            // add `merchant_id` to the URL query string
+                        if (getMerchantId() != null) {
+                        try {
+                        joiner.add(String.format("%smerchant_id%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getMerchantId()), "UTF-8").replaceAll("\\+", "%20")));
+                        } catch (UnsupportedEncodingException e) {
+                        // Should never happen, UTF-8 is always supported
+                        throw new RuntimeException(e);
+                        }
+                        }
+
+            // add `active_id` to the URL query string
+                        if (getActiveId() != null) {
+                        try {
+                        joiner.add(String.format("%sactive_id%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getActiveId()), "UTF-8").replaceAll("\\+", "%20")));
+                        } catch (UnsupportedEncodingException e) {
+                        // Should never happen, UTF-8 is always supported
+                        throw new RuntimeException(e);
+                        }
+                        }
+
+            // add `records` to the URL query string
+                            if (getRecords() != null) {
+                            for (int i = 0; i < getRecords().size(); i++) {
+                            if (getRecords().get(i) != null) {
+                            joiner.add(getRecords().get(i).toUrlQueryString(String.format("%srecords%s%s", prefix, suffix,
+                            "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix))));
+                            }
+                            }
+                            }
+
+        return joiner.toString();
+        }
+
     }
-
-    return joiner.toString();
-  }
-
-}
 

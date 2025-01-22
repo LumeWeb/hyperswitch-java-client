@@ -28,121 +28,122 @@ import java.net.URLEncoder;
 import java.util.StringJoiner;
 
 /**
- * GiftCardDataOneOf
- */
-@JsonPropertyOrder({
-  GiftCardDataOneOf.JSON_PROPERTY_GIVEX
-})
-@JsonTypeName("GiftCardData_oneOf")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+* GiftCardDataOneOf
+*/
+    @JsonPropertyOrder({
+        GiftCardDataOneOf.JSON_PROPERTY_GIVEX
+    })
+            @JsonTypeName("GiftCardData_oneOf")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class GiftCardDataOneOf {
-  public static final String JSON_PROPERTY_GIVEX = "givex";
-  private GiftCardDetails givex;
+        public static final String JSON_PROPERTY_GIVEX = "givex";
+    @javax.annotation.Nonnull
+            private GiftCardDetails givex;
 
-  public GiftCardDataOneOf() {
-  }
+public GiftCardDataOneOf() {
+}
 
-  public GiftCardDataOneOf givex(GiftCardDetails givex) {
-    
-    this.givex = givex;
-    return this;
-  }
+        public GiftCardDataOneOf givex(@javax.annotation.Nonnull GiftCardDetails givex) {
+        
+        this.givex = givex;
+        return this;
+        }
 
-   /**
-   * Get givex
-   * @return givex
-  **/
-  @javax.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_GIVEX)
+    /**
+        * Get givex
+    * @return givex
+    */
+    @javax.annotation.Nonnull
+      @JsonProperty(JSON_PROPERTY_GIVEX)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-  public GiftCardDetails getGivex() {
-    return givex;
-  }
+    public GiftCardDetails getGivex() {
+        return givex;
+    }
 
 
-  @JsonProperty(JSON_PROPERTY_GIVEX)
+          @JsonProperty(JSON_PROPERTY_GIVEX)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setGivex(GiftCardDetails givex) {
-    this.givex = givex;
-  }
+  public void setGivex(@javax.annotation.Nonnull GiftCardDetails givex) {
+            this.givex = givex;
+        }
 
-  @Override
-  public boolean equals(Object o) {
+@Override
+public boolean equals(Object o) {
     if (this == o) {
-      return true;
+    return true;
     }
     if (o == null || getClass() != o.getClass()) {
-      return false;
+    return false;
     }
-    GiftCardDataOneOf giftCardDataOneOf = (GiftCardDataOneOf) o;
-    return Objects.equals(this.givex, giftCardDataOneOf.givex);
-  }
+        GiftCardDataOneOf giftCardDataOneOf = (GiftCardDataOneOf) o;
+        return Objects.equals(this.givex, giftCardDataOneOf.givex);
+}
 
-  @Override
-  public int hashCode() {
-    return Objects.hash(givex);
-  }
+    @Override
+    public int hashCode() {
+        return Objects.hash(givex);
+    }
 
-  @Override
-  public String toString() {
+    @Override
+    public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class GiftCardDataOneOf {\n");
-    sb.append("    givex: ").append(toIndentedString(givex)).append("\n");
+        sb.append("    givex: ").append(toIndentedString(givex)).append("\n");
     sb.append("}");
     return sb.toString();
-  }
+    }
 
-  /**
-   * Convert the given object to string with each line indented by 4 spaces
-   * (except the first line).
-   */
-  private String toIndentedString(Object o) {
+    /**
+    * Convert the given object to string with each line indented by 4 spaces
+    * (except the first line).
+    */
+    private String toIndentedString(Object o) {
     if (o == null) {
-      return "null";
+    return "null";
     }
     return o.toString().replace("\n", "\n    ");
-  }
-
-  /**
-   * Convert the instance into URL query string.
-   *
-   * @return URL query string
-   */
-  public String toUrlQueryString() {
-    return toUrlQueryString(null);
-  }
-
-  /**
-   * Convert the instance into URL query string.
-   *
-   * @param prefix prefix of the query string
-   * @return URL query string
-   */
-  public String toUrlQueryString(String prefix) {
-    String suffix = "";
-    String containerSuffix = "";
-    String containerPrefix = "";
-    if (prefix == null) {
-      // style=form, explode=true, e.g. /pet?name=cat&type=manx
-      prefix = "";
-    } else {
-      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
-      prefix = prefix + "[";
-      suffix = "]";
-      containerSuffix = "]";
-      containerPrefix = "[";
     }
 
-    StringJoiner joiner = new StringJoiner("&");
+        /**
+        * Convert the instance into URL query string.
+        *
+        * @return URL query string
+        */
+        public String toUrlQueryString() {
+        return toUrlQueryString(null);
+        }
 
-    // add `givex` to the URL query string
-    if (getGivex() != null) {
-      joiner.add(getGivex().toUrlQueryString(prefix + "givex" + suffix));
+        /**
+        * Convert the instance into URL query string.
+        *
+        * @param prefix prefix of the query string
+        * @return URL query string
+        */
+        public String toUrlQueryString(String prefix) {
+        String suffix = "";
+        String containerSuffix = "";
+        String containerPrefix = "";
+        if (prefix == null) {
+        // style=form, explode=true, e.g. /pet?name=cat&type=manx
+        prefix = "";
+        } else {
+        // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+        prefix = prefix + "[";
+        suffix = "]";
+        containerSuffix = "]";
+        containerPrefix = "[";
+        }
+
+        StringJoiner joiner = new StringJoiner("&");
+
+            // add `givex` to the URL query string
+                            if (getGivex() != null) {
+                            joiner.add(getGivex().toUrlQueryString(prefix + "givex" + suffix));
+                            }
+
+        return joiner.toString();
+        }
+
     }
-
-    return joiner.toString();
-  }
-
-}
 

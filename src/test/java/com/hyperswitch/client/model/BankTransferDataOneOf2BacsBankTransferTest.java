@@ -23,22 +23,21 @@ import org.openapitools.jackson.nullable.JsonNullable;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.openapitools.jackson.nullable.JsonNullable;
 import java.util.NoSuchElementException;
-import org.junit.Assert;
-import org.junit.Ignore;
-import org.junit.Test;
-
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Test;
 
 /**
  * Model tests for BankTransferDataOneOf2BacsBankTransfer
  */
-public class BankTransferDataOneOf2BacsBankTransferTest {
+class BankTransferDataOneOf2BacsBankTransferTest {
     private final BankTransferDataOneOf2BacsBankTransfer model = new BankTransferDataOneOf2BacsBankTransfer();
 
     /**
      * Model tests for BankTransferDataOneOf2BacsBankTransfer
      */
     @Test
-    public void testBankTransferDataOneOf2BacsBankTransfer() {
+    void testBankTransferDataOneOf2BacsBankTransfer() {
         // TODO: test BankTransferDataOneOf2BacsBankTransfer
     }
 
@@ -46,7 +45,7 @@ public class BankTransferDataOneOf2BacsBankTransferTest {
      * Test the property 'billingDetails'
      */
     @Test
-    public void billingDetailsTest() {
+    void billingDetailsTest() {
         // TODO: test billingDetails
     }
 

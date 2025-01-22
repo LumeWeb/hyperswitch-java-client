@@ -29,7 +29,7 @@ import com.fasterxml.jackson.annotation.JsonValue;
  */
 public enum SamsungPayProtocolType {
   
-  PROTOCOL3DS("PROTOCOL3DS");
+  PROTOCOL3_DS("PROTOCOL3DS");
 
   private String value;
 

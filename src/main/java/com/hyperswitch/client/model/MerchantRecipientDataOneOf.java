@@ -27,126 +27,127 @@ import java.net.URLEncoder;
 import java.util.StringJoiner;
 
 /**
- * MerchantRecipientDataOneOf
- */
-@JsonPropertyOrder({
-  MerchantRecipientDataOneOf.JSON_PROPERTY_CONNECTOR_RECIPIENT_ID
-})
-@JsonTypeName("MerchantRecipientData_oneOf")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+* MerchantRecipientDataOneOf
+*/
+    @JsonPropertyOrder({
+        MerchantRecipientDataOneOf.JSON_PROPERTY_CONNECTOR_RECIPIENT_ID
+    })
+            @JsonTypeName("MerchantRecipientData_oneOf")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class MerchantRecipientDataOneOf {
-  public static final String JSON_PROPERTY_CONNECTOR_RECIPIENT_ID = "connector_recipient_id";
-  private String connectorRecipientId;
+        public static final String JSON_PROPERTY_CONNECTOR_RECIPIENT_ID = "connector_recipient_id";
+    @javax.annotation.Nullable
+            private String connectorRecipientId;
 
-  public MerchantRecipientDataOneOf() {
-  }
+public MerchantRecipientDataOneOf() {
+}
 
-  public MerchantRecipientDataOneOf connectorRecipientId(String connectorRecipientId) {
-    
-    this.connectorRecipientId = connectorRecipientId;
-    return this;
-  }
+        public MerchantRecipientDataOneOf connectorRecipientId(@javax.annotation.Nullable String connectorRecipientId) {
+        
+        this.connectorRecipientId = connectorRecipientId;
+        return this;
+        }
 
-   /**
-   * Get connectorRecipientId
-   * @return connectorRecipientId
-  **/
-  @javax.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_CONNECTOR_RECIPIENT_ID)
+    /**
+        * Get connectorRecipientId
+    * @return connectorRecipientId
+    */
+    @javax.annotation.Nullable
+      @JsonProperty(JSON_PROPERTY_CONNECTOR_RECIPIENT_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-  public String getConnectorRecipientId() {
-    return connectorRecipientId;
-  }
+    public String getConnectorRecipientId() {
+        return connectorRecipientId;
+    }
 
 
-  @JsonProperty(JSON_PROPERTY_CONNECTOR_RECIPIENT_ID)
+          @JsonProperty(JSON_PROPERTY_CONNECTOR_RECIPIENT_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setConnectorRecipientId(String connectorRecipientId) {
-    this.connectorRecipientId = connectorRecipientId;
-  }
+  public void setConnectorRecipientId(@javax.annotation.Nullable String connectorRecipientId) {
+            this.connectorRecipientId = connectorRecipientId;
+        }
 
-  @Override
-  public boolean equals(Object o) {
+@Override
+public boolean equals(Object o) {
     if (this == o) {
-      return true;
+    return true;
     }
     if (o == null || getClass() != o.getClass()) {
-      return false;
+    return false;
     }
-    MerchantRecipientDataOneOf merchantRecipientDataOneOf = (MerchantRecipientDataOneOf) o;
-    return Objects.equals(this.connectorRecipientId, merchantRecipientDataOneOf.connectorRecipientId);
-  }
+        MerchantRecipientDataOneOf merchantRecipientDataOneOf = (MerchantRecipientDataOneOf) o;
+        return Objects.equals(this.connectorRecipientId, merchantRecipientDataOneOf.connectorRecipientId);
+}
 
-  @Override
-  public int hashCode() {
-    return Objects.hash(connectorRecipientId);
-  }
+    @Override
+    public int hashCode() {
+        return Objects.hash(connectorRecipientId);
+    }
 
-  @Override
-  public String toString() {
+    @Override
+    public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class MerchantRecipientDataOneOf {\n");
-    sb.append("    connectorRecipientId: ").append(toIndentedString(connectorRecipientId)).append("\n");
+        sb.append("    connectorRecipientId: ").append(toIndentedString(connectorRecipientId)).append("\n");
     sb.append("}");
     return sb.toString();
-  }
+    }
 
-  /**
-   * Convert the given object to string with each line indented by 4 spaces
-   * (except the first line).
-   */
-  private String toIndentedString(Object o) {
+    /**
+    * Convert the given object to string with each line indented by 4 spaces
+    * (except the first line).
+    */
+    private String toIndentedString(Object o) {
     if (o == null) {
-      return "null";
+    return "null";
     }
     return o.toString().replace("\n", "\n    ");
-  }
-
-  /**
-   * Convert the instance into URL query string.
-   *
-   * @return URL query string
-   */
-  public String toUrlQueryString() {
-    return toUrlQueryString(null);
-  }
-
-  /**
-   * Convert the instance into URL query string.
-   *
-   * @param prefix prefix of the query string
-   * @return URL query string
-   */
-  public String toUrlQueryString(String prefix) {
-    String suffix = "";
-    String containerSuffix = "";
-    String containerPrefix = "";
-    if (prefix == null) {
-      // style=form, explode=true, e.g. /pet?name=cat&type=manx
-      prefix = "";
-    } else {
-      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
-      prefix = prefix + "[";
-      suffix = "]";
-      containerSuffix = "]";
-      containerPrefix = "[";
     }
 
-    StringJoiner joiner = new StringJoiner("&");
+        /**
+        * Convert the instance into URL query string.
+        *
+        * @return URL query string
+        */
+        public String toUrlQueryString() {
+        return toUrlQueryString(null);
+        }
 
-    // add `connector_recipient_id` to the URL query string
-    if (getConnectorRecipientId() != null) {
-      try {
-        joiner.add(String.format("%sconnector_recipient_id%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getConnectorRecipientId()), "UTF-8").replaceAll("\\+", "%20")));
-      } catch (UnsupportedEncodingException e) {
-        // Should never happen, UTF-8 is always supported
-        throw new RuntimeException(e);
-      }
+        /**
+        * Convert the instance into URL query string.
+        *
+        * @param prefix prefix of the query string
+        * @return URL query string
+        */
+        public String toUrlQueryString(String prefix) {
+        String suffix = "";
+        String containerSuffix = "";
+        String containerPrefix = "";
+        if (prefix == null) {
+        // style=form, explode=true, e.g. /pet?name=cat&type=manx
+        prefix = "";
+        } else {
+        // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+        prefix = prefix + "[";
+        suffix = "]";
+        containerSuffix = "]";
+        containerPrefix = "[";
+        }
+
+        StringJoiner joiner = new StringJoiner("&");
+
+            // add `connector_recipient_id` to the URL query string
+                        if (getConnectorRecipientId() != null) {
+                        try {
+                        joiner.add(String.format("%sconnector_recipient_id%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getConnectorRecipientId()), "UTF-8").replaceAll("\\+", "%20")));
+                        } catch (UnsupportedEncodingException e) {
+                        // Should never happen, UTF-8 is always supported
+                        throw new RuntimeException(e);
+                        }
+                        }
+
+        return joiner.toString();
+        }
+
     }
-
-    return joiner.toString();
-  }
-
-}
 

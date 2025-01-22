@@ -20,23 +20,23 @@ import com.fasterxml.jackson.annotation.JsonTypeName;
 import com.fasterxml.jackson.annotation.JsonValue;
 import com.hyperswitch.client.model.OutgoingWebhookRequestContentHeadersInnerInner;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
-import org.junit.Assert;
-import org.junit.Ignore;
-import org.junit.Test;
-
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Test;
 
 /**
  * Model tests for OutgoingWebhookRequestContent
  */
-public class OutgoingWebhookRequestContentTest {
+class OutgoingWebhookRequestContentTest {
     private final OutgoingWebhookRequestContent model = new OutgoingWebhookRequestContent();
 
     /**
      * Model tests for OutgoingWebhookRequestContent
      */
     @Test
-    public void testOutgoingWebhookRequestContent() {
+    void testOutgoingWebhookRequestContent() {
         // TODO: test OutgoingWebhookRequestContent
     }
 
@@ -44,7 +44,7 @@ public class OutgoingWebhookRequestContentTest {
      * Test the property 'body'
      */
     @Test
-    public void bodyTest() {
+    void bodyTest() {
         // TODO: test body
     }
 
@@ -52,7 +52,7 @@ public class OutgoingWebhookRequestContentTest {
      * Test the property 'headers'
      */
     @Test
-    public void headersTest() {
+    void headersTest() {
         // TODO: test headers
     }
 

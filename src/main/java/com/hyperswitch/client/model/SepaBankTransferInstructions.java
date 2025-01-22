@@ -27,293 +27,294 @@ import java.net.URLEncoder;
 import java.util.StringJoiner;
 
 /**
- * SepaBankTransferInstructions
- */
-@JsonPropertyOrder({
-  SepaBankTransferInstructions.JSON_PROPERTY_ACCOUNT_HOLDER_NAME,
-  SepaBankTransferInstructions.JSON_PROPERTY_BIC,
-  SepaBankTransferInstructions.JSON_PROPERTY_COUNTRY,
-  SepaBankTransferInstructions.JSON_PROPERTY_IBAN,
-  SepaBankTransferInstructions.JSON_PROPERTY_REFERENCE
-})
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+* SepaBankTransferInstructions
+*/
+    @JsonPropertyOrder({
+        SepaBankTransferInstructions.JSON_PROPERTY_ACCOUNT_HOLDER_NAME,
+        SepaBankTransferInstructions.JSON_PROPERTY_BIC,
+        SepaBankTransferInstructions.JSON_PROPERTY_COUNTRY,
+        SepaBankTransferInstructions.JSON_PROPERTY_IBAN,
+        SepaBankTransferInstructions.JSON_PROPERTY_REFERENCE
+    })
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class SepaBankTransferInstructions {
-  public static final String JSON_PROPERTY_ACCOUNT_HOLDER_NAME = "account_holder_name";
-  private String accountHolderName;
+        public static final String JSON_PROPERTY_ACCOUNT_HOLDER_NAME = "account_holder_name";
+    @javax.annotation.Nonnull
+            private String accountHolderName;
 
-  public static final String JSON_PROPERTY_BIC = "bic";
-  private String bic;
+        public static final String JSON_PROPERTY_BIC = "bic";
+    @javax.annotation.Nonnull
+            private String bic;
 
-  public static final String JSON_PROPERTY_COUNTRY = "country";
-  private String country;
+        public static final String JSON_PROPERTY_COUNTRY = "country";
+    @javax.annotation.Nonnull
+            private String country;
 
-  public static final String JSON_PROPERTY_IBAN = "iban";
-  private String iban;
+        public static final String JSON_PROPERTY_IBAN = "iban";
+    @javax.annotation.Nonnull
+            private String iban;
 
-  public static final String JSON_PROPERTY_REFERENCE = "reference";
-  private String reference;
+        public static final String JSON_PROPERTY_REFERENCE = "reference";
+    @javax.annotation.Nonnull
+            private String reference;
 
-  public SepaBankTransferInstructions() {
-  }
+public SepaBankTransferInstructions() {
+}
 
-  public SepaBankTransferInstructions accountHolderName(String accountHolderName) {
-    
-    this.accountHolderName = accountHolderName;
-    return this;
-  }
+        public SepaBankTransferInstructions accountHolderName(@javax.annotation.Nonnull String accountHolderName) {
+        
+        this.accountHolderName = accountHolderName;
+        return this;
+        }
 
-   /**
-   * Get accountHolderName
-   * @return accountHolderName
-  **/
-  @javax.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_ACCOUNT_HOLDER_NAME)
+    /**
+        * Get accountHolderName
+    * @return accountHolderName
+    */
+    @javax.annotation.Nonnull
+      @JsonProperty(JSON_PROPERTY_ACCOUNT_HOLDER_NAME)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-  public String getAccountHolderName() {
-    return accountHolderName;
-  }
+    public String getAccountHolderName() {
+        return accountHolderName;
+    }
 
 
-  @JsonProperty(JSON_PROPERTY_ACCOUNT_HOLDER_NAME)
+          @JsonProperty(JSON_PROPERTY_ACCOUNT_HOLDER_NAME)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setAccountHolderName(String accountHolderName) {
-    this.accountHolderName = accountHolderName;
-  }
+  public void setAccountHolderName(@javax.annotation.Nonnull String accountHolderName) {
+            this.accountHolderName = accountHolderName;
+        }
 
+        public SepaBankTransferInstructions bic(@javax.annotation.Nonnull String bic) {
+        
+        this.bic = bic;
+        return this;
+        }
 
-  public SepaBankTransferInstructions bic(String bic) {
-    
-    this.bic = bic;
-    return this;
-  }
-
-   /**
-   * Get bic
-   * @return bic
-  **/
-  @javax.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_BIC)
-  @JsonInclude(value = JsonInclude.Include.ALWAYS)
-
-  public String getBic() {
-    return bic;
-  }
-
-
-  @JsonProperty(JSON_PROPERTY_BIC)
-  @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setBic(String bic) {
-    this.bic = bic;
-  }
-
-
-  public SepaBankTransferInstructions country(String country) {
-    
-    this.country = country;
-    return this;
-  }
-
-   /**
-   * Get country
-   * @return country
-  **/
-  @javax.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_COUNTRY)
+    /**
+        * Get bic
+    * @return bic
+    */
+    @javax.annotation.Nonnull
+      @JsonProperty(JSON_PROPERTY_BIC)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-  public String getCountry() {
-    return country;
-  }
+    public String getBic() {
+        return bic;
+    }
 
 
-  @JsonProperty(JSON_PROPERTY_COUNTRY)
+          @JsonProperty(JSON_PROPERTY_BIC)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setCountry(String country) {
-    this.country = country;
-  }
+  public void setBic(@javax.annotation.Nonnull String bic) {
+            this.bic = bic;
+        }
 
+        public SepaBankTransferInstructions country(@javax.annotation.Nonnull String country) {
+        
+        this.country = country;
+        return this;
+        }
 
-  public SepaBankTransferInstructions iban(String iban) {
-    
-    this.iban = iban;
-    return this;
-  }
-
-   /**
-   * Get iban
-   * @return iban
-  **/
-  @javax.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_IBAN)
-  @JsonInclude(value = JsonInclude.Include.ALWAYS)
-
-  public String getIban() {
-    return iban;
-  }
-
-
-  @JsonProperty(JSON_PROPERTY_IBAN)
-  @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setIban(String iban) {
-    this.iban = iban;
-  }
-
-
-  public SepaBankTransferInstructions reference(String reference) {
-    
-    this.reference = reference;
-    return this;
-  }
-
-   /**
-   * Get reference
-   * @return reference
-  **/
-  @javax.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_REFERENCE)
+    /**
+        * Get country
+    * @return country
+    */
+    @javax.annotation.Nonnull
+      @JsonProperty(JSON_PROPERTY_COUNTRY)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-  public String getReference() {
-    return reference;
-  }
+    public String getCountry() {
+        return country;
+    }
 
 
-  @JsonProperty(JSON_PROPERTY_REFERENCE)
+          @JsonProperty(JSON_PROPERTY_COUNTRY)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setReference(String reference) {
-    this.reference = reference;
-  }
+  public void setCountry(@javax.annotation.Nonnull String country) {
+            this.country = country;
+        }
 
-  @Override
-  public boolean equals(Object o) {
+        public SepaBankTransferInstructions iban(@javax.annotation.Nonnull String iban) {
+        
+        this.iban = iban;
+        return this;
+        }
+
+    /**
+        * Get iban
+    * @return iban
+    */
+    @javax.annotation.Nonnull
+      @JsonProperty(JSON_PROPERTY_IBAN)
+  @JsonInclude(value = JsonInclude.Include.ALWAYS)
+
+    public String getIban() {
+        return iban;
+    }
+
+
+          @JsonProperty(JSON_PROPERTY_IBAN)
+  @JsonInclude(value = JsonInclude.Include.ALWAYS)
+  public void setIban(@javax.annotation.Nonnull String iban) {
+            this.iban = iban;
+        }
+
+        public SepaBankTransferInstructions reference(@javax.annotation.Nonnull String reference) {
+        
+        this.reference = reference;
+        return this;
+        }
+
+    /**
+        * Get reference
+    * @return reference
+    */
+    @javax.annotation.Nonnull
+      @JsonProperty(JSON_PROPERTY_REFERENCE)
+  @JsonInclude(value = JsonInclude.Include.ALWAYS)
+
+    public String getReference() {
+        return reference;
+    }
+
+
+          @JsonProperty(JSON_PROPERTY_REFERENCE)
+  @JsonInclude(value = JsonInclude.Include.ALWAYS)
+  public void setReference(@javax.annotation.Nonnull String reference) {
+            this.reference = reference;
+        }
+
+@Override
+public boolean equals(Object o) {
     if (this == o) {
-      return true;
+    return true;
     }
     if (o == null || getClass() != o.getClass()) {
-      return false;
+    return false;
     }
-    SepaBankTransferInstructions sepaBankTransferInstructions = (SepaBankTransferInstructions) o;
-    return Objects.equals(this.accountHolderName, sepaBankTransferInstructions.accountHolderName) &&
+        SepaBankTransferInstructions sepaBankTransferInstructions = (SepaBankTransferInstructions) o;
+        return Objects.equals(this.accountHolderName, sepaBankTransferInstructions.accountHolderName) &&
         Objects.equals(this.bic, sepaBankTransferInstructions.bic) &&
         Objects.equals(this.country, sepaBankTransferInstructions.country) &&
         Objects.equals(this.iban, sepaBankTransferInstructions.iban) &&
         Objects.equals(this.reference, sepaBankTransferInstructions.reference);
-  }
+}
 
-  @Override
-  public int hashCode() {
-    return Objects.hash(accountHolderName, bic, country, iban, reference);
-  }
+    @Override
+    public int hashCode() {
+        return Objects.hash(accountHolderName, bic, country, iban, reference);
+    }
 
-  @Override
-  public String toString() {
+    @Override
+    public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class SepaBankTransferInstructions {\n");
-    sb.append("    accountHolderName: ").append(toIndentedString(accountHolderName)).append("\n");
-    sb.append("    bic: ").append(toIndentedString(bic)).append("\n");
-    sb.append("    country: ").append(toIndentedString(country)).append("\n");
-    sb.append("    iban: ").append(toIndentedString(iban)).append("\n");
-    sb.append("    reference: ").append(toIndentedString(reference)).append("\n");
+        sb.append("    accountHolderName: ").append(toIndentedString(accountHolderName)).append("\n");
+        sb.append("    bic: ").append(toIndentedString(bic)).append("\n");
+        sb.append("    country: ").append(toIndentedString(country)).append("\n");
+        sb.append("    iban: ").append(toIndentedString(iban)).append("\n");
+        sb.append("    reference: ").append(toIndentedString(reference)).append("\n");
     sb.append("}");
     return sb.toString();
-  }
+    }
 
-  /**
-   * Convert the given object to string with each line indented by 4 spaces
-   * (except the first line).
-   */
-  private String toIndentedString(Object o) {
+    /**
+    * Convert the given object to string with each line indented by 4 spaces
+    * (except the first line).
+    */
+    private String toIndentedString(Object o) {
     if (o == null) {
-      return "null";
+    return "null";
     }
     return o.toString().replace("\n", "\n    ");
-  }
-
-  /**
-   * Convert the instance into URL query string.
-   *
-   * @return URL query string
-   */
-  public String toUrlQueryString() {
-    return toUrlQueryString(null);
-  }
-
-  /**
-   * Convert the instance into URL query string.
-   *
-   * @param prefix prefix of the query string
-   * @return URL query string
-   */
-  public String toUrlQueryString(String prefix) {
-    String suffix = "";
-    String containerSuffix = "";
-    String containerPrefix = "";
-    if (prefix == null) {
-      // style=form, explode=true, e.g. /pet?name=cat&type=manx
-      prefix = "";
-    } else {
-      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
-      prefix = prefix + "[";
-      suffix = "]";
-      containerSuffix = "]";
-      containerPrefix = "[";
     }
 
-    StringJoiner joiner = new StringJoiner("&");
+        /**
+        * Convert the instance into URL query string.
+        *
+        * @return URL query string
+        */
+        public String toUrlQueryString() {
+        return toUrlQueryString(null);
+        }
 
-    // add `account_holder_name` to the URL query string
-    if (getAccountHolderName() != null) {
-      try {
-        joiner.add(String.format("%saccount_holder_name%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getAccountHolderName()), "UTF-8").replaceAll("\\+", "%20")));
-      } catch (UnsupportedEncodingException e) {
-        // Should never happen, UTF-8 is always supported
-        throw new RuntimeException(e);
-      }
+        /**
+        * Convert the instance into URL query string.
+        *
+        * @param prefix prefix of the query string
+        * @return URL query string
+        */
+        public String toUrlQueryString(String prefix) {
+        String suffix = "";
+        String containerSuffix = "";
+        String containerPrefix = "";
+        if (prefix == null) {
+        // style=form, explode=true, e.g. /pet?name=cat&type=manx
+        prefix = "";
+        } else {
+        // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+        prefix = prefix + "[";
+        suffix = "]";
+        containerSuffix = "]";
+        containerPrefix = "[";
+        }
+
+        StringJoiner joiner = new StringJoiner("&");
+
+            // add `account_holder_name` to the URL query string
+                        if (getAccountHolderName() != null) {
+                        try {
+                        joiner.add(String.format("%saccount_holder_name%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getAccountHolderName()), "UTF-8").replaceAll("\\+", "%20")));
+                        } catch (UnsupportedEncodingException e) {
+                        // Should never happen, UTF-8 is always supported
+                        throw new RuntimeException(e);
+                        }
+                        }
+
+            // add `bic` to the URL query string
+                        if (getBic() != null) {
+                        try {
+                        joiner.add(String.format("%sbic%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getBic()), "UTF-8").replaceAll("\\+", "%20")));
+                        } catch (UnsupportedEncodingException e) {
+                        // Should never happen, UTF-8 is always supported
+                        throw new RuntimeException(e);
+                        }
+                        }
+
+            // add `country` to the URL query string
+                        if (getCountry() != null) {
+                        try {
+                        joiner.add(String.format("%scountry%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCountry()), "UTF-8").replaceAll("\\+", "%20")));
+                        } catch (UnsupportedEncodingException e) {
+                        // Should never happen, UTF-8 is always supported
+                        throw new RuntimeException(e);
+                        }
+                        }
+
+            // add `iban` to the URL query string
+                        if (getIban() != null) {
+                        try {
+                        joiner.add(String.format("%siban%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getIban()), "UTF-8").replaceAll("\\+", "%20")));
+                        } catch (UnsupportedEncodingException e) {
+                        // Should never happen, UTF-8 is always supported
+                        throw new RuntimeException(e);
+                        }
+                        }
+
+            // add `reference` to the URL query string
+                        if (getReference() != null) {
+                        try {
+                        joiner.add(String.format("%sreference%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getReference()), "UTF-8").replaceAll("\\+", "%20")));
+                        } catch (UnsupportedEncodingException e) {
+                        // Should never happen, UTF-8 is always supported
+                        throw new RuntimeException(e);
+                        }
+                        }
+
+        return joiner.toString();
+        }
+
     }
-
-    // add `bic` to the URL query string
-    if (getBic() != null) {
-      try {
-        joiner.add(String.format("%sbic%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getBic()), "UTF-8").replaceAll("\\+", "%20")));
-      } catch (UnsupportedEncodingException e) {
-        // Should never happen, UTF-8 is always supported
-        throw new RuntimeException(e);
-      }
-    }
-
-    // add `country` to the URL query string
-    if (getCountry() != null) {
-      try {
-        joiner.add(String.format("%scountry%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCountry()), "UTF-8").replaceAll("\\+", "%20")));
-      } catch (UnsupportedEncodingException e) {
-        // Should never happen, UTF-8 is always supported
-        throw new RuntimeException(e);
-      }
-    }
-
-    // add `iban` to the URL query string
-    if (getIban() != null) {
-      try {
-        joiner.add(String.format("%siban%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getIban()), "UTF-8").replaceAll("\\+", "%20")));
-      } catch (UnsupportedEncodingException e) {
-        // Should never happen, UTF-8 is always supported
-        throw new RuntimeException(e);
-      }
-    }
-
-    // add `reference` to the URL query string
-    if (getReference() != null) {
-      try {
-        joiner.add(String.format("%sreference%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getReference()), "UTF-8").replaceAll("\\+", "%20")));
-      } catch (UnsupportedEncodingException e) {
-        // Should never happen, UTF-8 is always supported
-        throw new RuntimeException(e);
-      }
-    }
-
-    return joiner.toString();
-  }
-
-}
 

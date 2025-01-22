@@ -27,167 +27,168 @@ import java.net.URLEncoder;
 import java.util.StringJoiner;
 
 /**
- * MerchantConnectorWebhookDetails
- */
-@JsonPropertyOrder({
-  MerchantConnectorWebhookDetails.JSON_PROPERTY_MERCHANT_SECRET,
-  MerchantConnectorWebhookDetails.JSON_PROPERTY_ADDITIONAL_SECRET
-})
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+* MerchantConnectorWebhookDetails
+*/
+    @JsonPropertyOrder({
+        MerchantConnectorWebhookDetails.JSON_PROPERTY_MERCHANT_SECRET,
+        MerchantConnectorWebhookDetails.JSON_PROPERTY_ADDITIONAL_SECRET
+    })
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class MerchantConnectorWebhookDetails {
-  public static final String JSON_PROPERTY_MERCHANT_SECRET = "merchant_secret";
-  private String merchantSecret;
+        public static final String JSON_PROPERTY_MERCHANT_SECRET = "merchant_secret";
+    @javax.annotation.Nonnull
+            private String merchantSecret;
 
-  public static final String JSON_PROPERTY_ADDITIONAL_SECRET = "additional_secret";
-  private String additionalSecret;
+        public static final String JSON_PROPERTY_ADDITIONAL_SECRET = "additional_secret";
+    @javax.annotation.Nonnull
+            private String additionalSecret;
 
-  public MerchantConnectorWebhookDetails() {
-  }
+public MerchantConnectorWebhookDetails() {
+}
 
-  public MerchantConnectorWebhookDetails merchantSecret(String merchantSecret) {
-    
-    this.merchantSecret = merchantSecret;
-    return this;
-  }
+        public MerchantConnectorWebhookDetails merchantSecret(@javax.annotation.Nonnull String merchantSecret) {
+        
+        this.merchantSecret = merchantSecret;
+        return this;
+        }
 
-   /**
-   * Get merchantSecret
-   * @return merchantSecret
-  **/
-  @javax.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_MERCHANT_SECRET)
+    /**
+        * Get merchantSecret
+    * @return merchantSecret
+    */
+    @javax.annotation.Nonnull
+      @JsonProperty(JSON_PROPERTY_MERCHANT_SECRET)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-  public String getMerchantSecret() {
-    return merchantSecret;
-  }
+    public String getMerchantSecret() {
+        return merchantSecret;
+    }
 
 
-  @JsonProperty(JSON_PROPERTY_MERCHANT_SECRET)
+          @JsonProperty(JSON_PROPERTY_MERCHANT_SECRET)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setMerchantSecret(String merchantSecret) {
-    this.merchantSecret = merchantSecret;
-  }
+  public void setMerchantSecret(@javax.annotation.Nonnull String merchantSecret) {
+            this.merchantSecret = merchantSecret;
+        }
 
+        public MerchantConnectorWebhookDetails additionalSecret(@javax.annotation.Nonnull String additionalSecret) {
+        
+        this.additionalSecret = additionalSecret;
+        return this;
+        }
 
-  public MerchantConnectorWebhookDetails additionalSecret(String additionalSecret) {
-    
-    this.additionalSecret = additionalSecret;
-    return this;
-  }
-
-   /**
-   * Get additionalSecret
-   * @return additionalSecret
-  **/
-  @javax.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_ADDITIONAL_SECRET)
+    /**
+        * Get additionalSecret
+    * @return additionalSecret
+    */
+    @javax.annotation.Nonnull
+      @JsonProperty(JSON_PROPERTY_ADDITIONAL_SECRET)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-  public String getAdditionalSecret() {
-    return additionalSecret;
-  }
+    public String getAdditionalSecret() {
+        return additionalSecret;
+    }
 
 
-  @JsonProperty(JSON_PROPERTY_ADDITIONAL_SECRET)
+          @JsonProperty(JSON_PROPERTY_ADDITIONAL_SECRET)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setAdditionalSecret(String additionalSecret) {
-    this.additionalSecret = additionalSecret;
-  }
+  public void setAdditionalSecret(@javax.annotation.Nonnull String additionalSecret) {
+            this.additionalSecret = additionalSecret;
+        }
 
-  @Override
-  public boolean equals(Object o) {
+@Override
+public boolean equals(Object o) {
     if (this == o) {
-      return true;
+    return true;
     }
     if (o == null || getClass() != o.getClass()) {
-      return false;
+    return false;
     }
-    MerchantConnectorWebhookDetails merchantConnectorWebhookDetails = (MerchantConnectorWebhookDetails) o;
-    return Objects.equals(this.merchantSecret, merchantConnectorWebhookDetails.merchantSecret) &&
+        MerchantConnectorWebhookDetails merchantConnectorWebhookDetails = (MerchantConnectorWebhookDetails) o;
+        return Objects.equals(this.merchantSecret, merchantConnectorWebhookDetails.merchantSecret) &&
         Objects.equals(this.additionalSecret, merchantConnectorWebhookDetails.additionalSecret);
-  }
+}
 
-  @Override
-  public int hashCode() {
-    return Objects.hash(merchantSecret, additionalSecret);
-  }
+    @Override
+    public int hashCode() {
+        return Objects.hash(merchantSecret, additionalSecret);
+    }
 
-  @Override
-  public String toString() {
+    @Override
+    public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class MerchantConnectorWebhookDetails {\n");
-    sb.append("    merchantSecret: ").append(toIndentedString(merchantSecret)).append("\n");
-    sb.append("    additionalSecret: ").append(toIndentedString(additionalSecret)).append("\n");
+        sb.append("    merchantSecret: ").append(toIndentedString(merchantSecret)).append("\n");
+        sb.append("    additionalSecret: ").append(toIndentedString(additionalSecret)).append("\n");
     sb.append("}");
     return sb.toString();
-  }
+    }
 
-  /**
-   * Convert the given object to string with each line indented by 4 spaces
-   * (except the first line).
-   */
-  private String toIndentedString(Object o) {
+    /**
+    * Convert the given object to string with each line indented by 4 spaces
+    * (except the first line).
+    */
+    private String toIndentedString(Object o) {
     if (o == null) {
-      return "null";
+    return "null";
     }
     return o.toString().replace("\n", "\n    ");
-  }
-
-  /**
-   * Convert the instance into URL query string.
-   *
-   * @return URL query string
-   */
-  public String toUrlQueryString() {
-    return toUrlQueryString(null);
-  }
-
-  /**
-   * Convert the instance into URL query string.
-   *
-   * @param prefix prefix of the query string
-   * @return URL query string
-   */
-  public String toUrlQueryString(String prefix) {
-    String suffix = "";
-    String containerSuffix = "";
-    String containerPrefix = "";
-    if (prefix == null) {
-      // style=form, explode=true, e.g. /pet?name=cat&type=manx
-      prefix = "";
-    } else {
-      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
-      prefix = prefix + "[";
-      suffix = "]";
-      containerSuffix = "]";
-      containerPrefix = "[";
     }
 
-    StringJoiner joiner = new StringJoiner("&");
+        /**
+        * Convert the instance into URL query string.
+        *
+        * @return URL query string
+        */
+        public String toUrlQueryString() {
+        return toUrlQueryString(null);
+        }
 
-    // add `merchant_secret` to the URL query string
-    if (getMerchantSecret() != null) {
-      try {
-        joiner.add(String.format("%smerchant_secret%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getMerchantSecret()), "UTF-8").replaceAll("\\+", "%20")));
-      } catch (UnsupportedEncodingException e) {
-        // Should never happen, UTF-8 is always supported
-        throw new RuntimeException(e);
-      }
+        /**
+        * Convert the instance into URL query string.
+        *
+        * @param prefix prefix of the query string
+        * @return URL query string
+        */
+        public String toUrlQueryString(String prefix) {
+        String suffix = "";
+        String containerSuffix = "";
+        String containerPrefix = "";
+        if (prefix == null) {
+        // style=form, explode=true, e.g. /pet?name=cat&type=manx
+        prefix = "";
+        } else {
+        // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+        prefix = prefix + "[";
+        suffix = "]";
+        containerSuffix = "]";
+        containerPrefix = "[";
+        }
+
+        StringJoiner joiner = new StringJoiner("&");
+
+            // add `merchant_secret` to the URL query string
+                        if (getMerchantSecret() != null) {
+                        try {
+                        joiner.add(String.format("%smerchant_secret%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getMerchantSecret()), "UTF-8").replaceAll("\\+", "%20")));
+                        } catch (UnsupportedEncodingException e) {
+                        // Should never happen, UTF-8 is always supported
+                        throw new RuntimeException(e);
+                        }
+                        }
+
+            // add `additional_secret` to the URL query string
+                        if (getAdditionalSecret() != null) {
+                        try {
+                        joiner.add(String.format("%sadditional_secret%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getAdditionalSecret()), "UTF-8").replaceAll("\\+", "%20")));
+                        } catch (UnsupportedEncodingException e) {
+                        // Should never happen, UTF-8 is always supported
+                        throw new RuntimeException(e);
+                        }
+                        }
+
+        return joiner.toString();
+        }
+
     }
-
-    // add `additional_secret` to the URL query string
-    if (getAdditionalSecret() != null) {
-      try {
-        joiner.add(String.format("%sadditional_secret%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getAdditionalSecret()), "UTF-8").replaceAll("\\+", "%20")));
-      } catch (UnsupportedEncodingException e) {
-        // Should never happen, UTF-8 is always supported
-        throw new RuntimeException(e);
-      }
-    }
-
-    return joiner.toString();
-  }
-
-}
 

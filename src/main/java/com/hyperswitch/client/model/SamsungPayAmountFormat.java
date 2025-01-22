@@ -29,9 +29,9 @@ import com.fasterxml.jackson.annotation.JsonValue;
  */
 public enum SamsungPayAmountFormat {
   
-  PRICE_ONLY("FORMAT_TOTAL_PRICE_ONLY"),
+  FORMAT_TOTAL_PRICE_ONLY("FORMAT_TOTAL_PRICE_ONLY"),
   
-  ESTIMATED_AMOUNT("FORMAT_TOTAL_ESTIMATED_AMOUNT");
+  FORMAT_TOTAL_ESTIMATED_AMOUNT("FORMAT_TOTAL_ESTIMATED_AMOUNT");
 
   private String value;
 

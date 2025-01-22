@@ -19,22 +19,21 @@ import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonTypeName;
 import com.fasterxml.jackson.annotation.JsonValue;
 import com.hyperswitch.client.model.DynamicRoutingFeatures;
-import org.junit.Assert;
-import org.junit.Ignore;
-import org.junit.Test;
-
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Test;
 
 /**
  * Model tests for ToggleDynamicRoutingQuery
  */
-public class ToggleDynamicRoutingQueryTest {
+class ToggleDynamicRoutingQueryTest {
     private final ToggleDynamicRoutingQuery model = new ToggleDynamicRoutingQuery();
 
     /**
      * Model tests for ToggleDynamicRoutingQuery
      */
     @Test
-    public void testToggleDynamicRoutingQuery() {
+    void testToggleDynamicRoutingQuery() {
         // TODO: test ToggleDynamicRoutingQuery
     }
 
@@ -42,7 +41,7 @@ public class ToggleDynamicRoutingQueryTest {
      * Test the property 'enable'
      */
     @Test
-    public void enableTest() {
+    void enableTest() {
         // TODO: test enable
     }
 

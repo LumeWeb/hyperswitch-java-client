@@ -28,121 +28,122 @@ import java.net.URLEncoder;
 import java.util.StringJoiner;
 
 /**
- * BankRedirectDataOneOf11
- */
-@JsonPropertyOrder({
-  BankRedirectDataOneOf11.JSON_PROPERTY_OPEN_BANKING_UK
-})
-@JsonTypeName("BankRedirectData_oneOf_11")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+* BankRedirectDataOneOf11
+*/
+    @JsonPropertyOrder({
+        BankRedirectDataOneOf11.JSON_PROPERTY_OPEN_BANKING_UK
+    })
+            @JsonTypeName("BankRedirectData_oneOf_11")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class BankRedirectDataOneOf11 {
-  public static final String JSON_PROPERTY_OPEN_BANKING_UK = "open_banking_uk";
-  private BankRedirectDataOneOf11OpenBankingUk openBankingUk;
+        public static final String JSON_PROPERTY_OPEN_BANKING_UK = "open_banking_uk";
+    @javax.annotation.Nonnull
+            private BankRedirectDataOneOf11OpenBankingUk openBankingUk;
 
-  public BankRedirectDataOneOf11() {
-  }
+public BankRedirectDataOneOf11() {
+}
 
-  public BankRedirectDataOneOf11 openBankingUk(BankRedirectDataOneOf11OpenBankingUk openBankingUk) {
-    
-    this.openBankingUk = openBankingUk;
-    return this;
-  }
+        public BankRedirectDataOneOf11 openBankingUk(@javax.annotation.Nonnull BankRedirectDataOneOf11OpenBankingUk openBankingUk) {
+        
+        this.openBankingUk = openBankingUk;
+        return this;
+        }
 
-   /**
-   * Get openBankingUk
-   * @return openBankingUk
-  **/
-  @javax.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_OPEN_BANKING_UK)
+    /**
+        * Get openBankingUk
+    * @return openBankingUk
+    */
+    @javax.annotation.Nonnull
+      @JsonProperty(JSON_PROPERTY_OPEN_BANKING_UK)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-  public BankRedirectDataOneOf11OpenBankingUk getOpenBankingUk() {
-    return openBankingUk;
-  }
+    public BankRedirectDataOneOf11OpenBankingUk getOpenBankingUk() {
+        return openBankingUk;
+    }
 
 
-  @JsonProperty(JSON_PROPERTY_OPEN_BANKING_UK)
+          @JsonProperty(JSON_PROPERTY_OPEN_BANKING_UK)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setOpenBankingUk(BankRedirectDataOneOf11OpenBankingUk openBankingUk) {
-    this.openBankingUk = openBankingUk;
-  }
+  public void setOpenBankingUk(@javax.annotation.Nonnull BankRedirectDataOneOf11OpenBankingUk openBankingUk) {
+            this.openBankingUk = openBankingUk;
+        }
 
-  @Override
-  public boolean equals(Object o) {
+@Override
+public boolean equals(Object o) {
     if (this == o) {
-      return true;
+    return true;
     }
     if (o == null || getClass() != o.getClass()) {
-      return false;
+    return false;
     }
-    BankRedirectDataOneOf11 bankRedirectDataOneOf11 = (BankRedirectDataOneOf11) o;
-    return Objects.equals(this.openBankingUk, bankRedirectDataOneOf11.openBankingUk);
-  }
+        BankRedirectDataOneOf11 bankRedirectDataOneOf11 = (BankRedirectDataOneOf11) o;
+        return Objects.equals(this.openBankingUk, bankRedirectDataOneOf11.openBankingUk);
+}
 
-  @Override
-  public int hashCode() {
-    return Objects.hash(openBankingUk);
-  }
+    @Override
+    public int hashCode() {
+        return Objects.hash(openBankingUk);
+    }
 
-  @Override
-  public String toString() {
+    @Override
+    public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class BankRedirectDataOneOf11 {\n");
-    sb.append("    openBankingUk: ").append(toIndentedString(openBankingUk)).append("\n");
+        sb.append("    openBankingUk: ").append(toIndentedString(openBankingUk)).append("\n");
     sb.append("}");
     return sb.toString();
-  }
+    }
 
-  /**
-   * Convert the given object to string with each line indented by 4 spaces
-   * (except the first line).
-   */
-  private String toIndentedString(Object o) {
+    /**
+    * Convert the given object to string with each line indented by 4 spaces
+    * (except the first line).
+    */
+    private String toIndentedString(Object o) {
     if (o == null) {
-      return "null";
+    return "null";
     }
     return o.toString().replace("\n", "\n    ");
-  }
-
-  /**
-   * Convert the instance into URL query string.
-   *
-   * @return URL query string
-   */
-  public String toUrlQueryString() {
-    return toUrlQueryString(null);
-  }
-
-  /**
-   * Convert the instance into URL query string.
-   *
-   * @param prefix prefix of the query string
-   * @return URL query string
-   */
-  public String toUrlQueryString(String prefix) {
-    String suffix = "";
-    String containerSuffix = "";
-    String containerPrefix = "";
-    if (prefix == null) {
-      // style=form, explode=true, e.g. /pet?name=cat&type=manx
-      prefix = "";
-    } else {
-      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
-      prefix = prefix + "[";
-      suffix = "]";
-      containerSuffix = "]";
-      containerPrefix = "[";
     }
 
-    StringJoiner joiner = new StringJoiner("&");
+        /**
+        * Convert the instance into URL query string.
+        *
+        * @return URL query string
+        */
+        public String toUrlQueryString() {
+        return toUrlQueryString(null);
+        }
 
-    // add `open_banking_uk` to the URL query string
-    if (getOpenBankingUk() != null) {
-      joiner.add(getOpenBankingUk().toUrlQueryString(prefix + "open_banking_uk" + suffix));
+        /**
+        * Convert the instance into URL query string.
+        *
+        * @param prefix prefix of the query string
+        * @return URL query string
+        */
+        public String toUrlQueryString(String prefix) {
+        String suffix = "";
+        String containerSuffix = "";
+        String containerPrefix = "";
+        if (prefix == null) {
+        // style=form, explode=true, e.g. /pet?name=cat&type=manx
+        prefix = "";
+        } else {
+        // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+        prefix = prefix + "[";
+        suffix = "]";
+        containerSuffix = "]";
+        containerPrefix = "[";
+        }
+
+        StringJoiner joiner = new StringJoiner("&");
+
+            // add `open_banking_uk` to the URL query string
+                            if (getOpenBankingUk() != null) {
+                            joiner.add(getOpenBankingUk().toUrlQueryString(prefix + "open_banking_uk" + suffix));
+                            }
+
+        return joiner.toString();
+        }
+
     }
-
-    return joiner.toString();
-  }
-
-}
 

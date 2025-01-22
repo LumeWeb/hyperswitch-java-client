@@ -33,234 +33,235 @@ import java.net.URLEncoder;
 import java.util.StringJoiner;
 
 /**
- * Passing this object during payments creates a mandate. The mandate_type sub object is passed by the server.
- */
-@JsonPropertyOrder({
-  MandateData.JSON_PROPERTY_UPDATE_MANDATE_ID,
-  MandateData.JSON_PROPERTY_CUSTOMER_ACCEPTANCE,
-  MandateData.JSON_PROPERTY_MANDATE_TYPE
-})
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+* Passing this object during payments creates a mandate. The mandate_type sub object is passed by the server.
+*/
+    @JsonPropertyOrder({
+        MandateData.JSON_PROPERTY_UPDATE_MANDATE_ID,
+        MandateData.JSON_PROPERTY_CUSTOMER_ACCEPTANCE,
+        MandateData.JSON_PROPERTY_MANDATE_TYPE
+    })
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class MandateData {
-  public static final String JSON_PROPERTY_UPDATE_MANDATE_ID = "update_mandate_id";
-  private JsonNullable<String> updateMandateId = JsonNullable.<String>undefined();
+        public static final String JSON_PROPERTY_UPDATE_MANDATE_ID = "update_mandate_id";
+    @javax.annotation.Nullable
+            private JsonNullable<String> updateMandateId = JsonNullable.<String>undefined();
 
-  public static final String JSON_PROPERTY_CUSTOMER_ACCEPTANCE = "customer_acceptance";
-  private JsonNullable<CustomerAcceptance> customerAcceptance = JsonNullable.<CustomerAcceptance>undefined();
+        public static final String JSON_PROPERTY_CUSTOMER_ACCEPTANCE = "customer_acceptance";
+    @javax.annotation.Nullable
+            private JsonNullable<CustomerAcceptance> customerAcceptance = JsonNullable.<CustomerAcceptance>undefined();
 
-  public static final String JSON_PROPERTY_MANDATE_TYPE = "mandate_type";
-  private JsonNullable<MandateType> mandateType = JsonNullable.<MandateType>undefined();
+        public static final String JSON_PROPERTY_MANDATE_TYPE = "mandate_type";
+    @javax.annotation.Nullable
+            private JsonNullable<MandateType> mandateType = JsonNullable.<MandateType>undefined();
 
-  public MandateData() {
-  }
+public MandateData() {
+}
 
-  public MandateData updateMandateId(String updateMandateId) {
-    this.updateMandateId = JsonNullable.<String>of(updateMandateId);
+        public MandateData updateMandateId(@javax.annotation.Nullable String updateMandateId) {
+        this.updateMandateId = JsonNullable.<String>of(updateMandateId);
+        
+        return this;
+        }
+
+    /**
+        * A way to update the mandate&#39;s payment method details
+    * @return updateMandateId
+    */
+    @javax.annotation.Nullable
+        @JsonIgnore
     
-    return this;
-  }
+    public String getUpdateMandateId() {
+                return updateMandateId.orElse(null);
+    }
 
-   /**
-   * A way to update the mandate&#39;s payment method details
-   * @return updateMandateId
-  **/
-  @javax.annotation.Nullable
-  @JsonIgnore
-
-  public String getUpdateMandateId() {
-        return updateMandateId.orElse(null);
-  }
-
-  @JsonProperty(JSON_PROPERTY_UPDATE_MANDATE_ID)
+          @JsonProperty(JSON_PROPERTY_UPDATE_MANDATE_ID)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-  public JsonNullable<String> getUpdateMandateId_JsonNullable() {
-    return updateMandateId;
-  }
-  
-  @JsonProperty(JSON_PROPERTY_UPDATE_MANDATE_ID)
-  public void setUpdateMandateId_JsonNullable(JsonNullable<String> updateMandateId) {
-    this.updateMandateId = updateMandateId;
-  }
-
-  public void setUpdateMandateId(String updateMandateId) {
-    this.updateMandateId = JsonNullable.<String>of(updateMandateId);
-  }
-
-
-  public MandateData customerAcceptance(CustomerAcceptance customerAcceptance) {
-    this.customerAcceptance = JsonNullable.<CustomerAcceptance>of(customerAcceptance);
+        public JsonNullable<String> getUpdateMandateId_JsonNullable() {
+        return updateMandateId;
+        }
     
-    return this;
-  }
+        @JsonProperty(JSON_PROPERTY_UPDATE_MANDATE_ID)
+        public void setUpdateMandateId_JsonNullable(JsonNullable<String> updateMandateId) {
+        this.updateMandateId = updateMandateId;
+        }
 
-   /**
-   * Get customerAcceptance
-   * @return customerAcceptance
-  **/
-  @javax.annotation.Nullable
-  @JsonIgnore
+          public void setUpdateMandateId(@javax.annotation.Nullable String updateMandateId) {
+            this.updateMandateId = JsonNullable.<String>of(updateMandateId);
+        }
 
-  public CustomerAcceptance getCustomerAcceptance() {
-        return customerAcceptance.orElse(null);
-  }
+        public MandateData customerAcceptance(@javax.annotation.Nullable CustomerAcceptance customerAcceptance) {
+        this.customerAcceptance = JsonNullable.<CustomerAcceptance>of(customerAcceptance);
+        
+        return this;
+        }
 
-  @JsonProperty(JSON_PROPERTY_CUSTOMER_ACCEPTANCE)
+    /**
+        * Get customerAcceptance
+    * @return customerAcceptance
+    */
+    @javax.annotation.Nullable
+        @JsonIgnore
+    
+    public CustomerAcceptance getCustomerAcceptance() {
+                return customerAcceptance.orElse(null);
+    }
+
+          @JsonProperty(JSON_PROPERTY_CUSTOMER_ACCEPTANCE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-  public JsonNullable<CustomerAcceptance> getCustomerAcceptance_JsonNullable() {
-    return customerAcceptance;
-  }
-  
-  @JsonProperty(JSON_PROPERTY_CUSTOMER_ACCEPTANCE)
-  public void setCustomerAcceptance_JsonNullable(JsonNullable<CustomerAcceptance> customerAcceptance) {
-    this.customerAcceptance = customerAcceptance;
-  }
-
-  public void setCustomerAcceptance(CustomerAcceptance customerAcceptance) {
-    this.customerAcceptance = JsonNullable.<CustomerAcceptance>of(customerAcceptance);
-  }
-
-
-  public MandateData mandateType(MandateType mandateType) {
-    this.mandateType = JsonNullable.<MandateType>of(mandateType);
+        public JsonNullable<CustomerAcceptance> getCustomerAcceptance_JsonNullable() {
+        return customerAcceptance;
+        }
     
-    return this;
-  }
+        @JsonProperty(JSON_PROPERTY_CUSTOMER_ACCEPTANCE)
+        public void setCustomerAcceptance_JsonNullable(JsonNullable<CustomerAcceptance> customerAcceptance) {
+        this.customerAcceptance = customerAcceptance;
+        }
 
-   /**
-   * Get mandateType
-   * @return mandateType
-  **/
-  @javax.annotation.Nullable
-  @JsonIgnore
+          public void setCustomerAcceptance(@javax.annotation.Nullable CustomerAcceptance customerAcceptance) {
+            this.customerAcceptance = JsonNullable.<CustomerAcceptance>of(customerAcceptance);
+        }
 
-  public MandateType getMandateType() {
-        return mandateType.orElse(null);
-  }
+        public MandateData mandateType(@javax.annotation.Nullable MandateType mandateType) {
+        this.mandateType = JsonNullable.<MandateType>of(mandateType);
+        
+        return this;
+        }
 
-  @JsonProperty(JSON_PROPERTY_MANDATE_TYPE)
+    /**
+        * Get mandateType
+    * @return mandateType
+    */
+    @javax.annotation.Nullable
+        @JsonIgnore
+    
+    public MandateType getMandateType() {
+                return mandateType.orElse(null);
+    }
+
+          @JsonProperty(JSON_PROPERTY_MANDATE_TYPE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-  public JsonNullable<MandateType> getMandateType_JsonNullable() {
-    return mandateType;
-  }
-  
-  @JsonProperty(JSON_PROPERTY_MANDATE_TYPE)
-  public void setMandateType_JsonNullable(JsonNullable<MandateType> mandateType) {
-    this.mandateType = mandateType;
-  }
+        public JsonNullable<MandateType> getMandateType_JsonNullable() {
+        return mandateType;
+        }
+    
+        @JsonProperty(JSON_PROPERTY_MANDATE_TYPE)
+        public void setMandateType_JsonNullable(JsonNullable<MandateType> mandateType) {
+        this.mandateType = mandateType;
+        }
 
-  public void setMandateType(MandateType mandateType) {
-    this.mandateType = JsonNullable.<MandateType>of(mandateType);
-  }
+          public void setMandateType(@javax.annotation.Nullable MandateType mandateType) {
+            this.mandateType = JsonNullable.<MandateType>of(mandateType);
+        }
 
-  @Override
-  public boolean equals(Object o) {
+@Override
+public boolean equals(Object o) {
     if (this == o) {
-      return true;
+    return true;
     }
     if (o == null || getClass() != o.getClass()) {
-      return false;
+    return false;
     }
-    MandateData mandateData = (MandateData) o;
-    return equalsNullable(this.updateMandateId, mandateData.updateMandateId) &&
+        MandateData mandateData = (MandateData) o;
+        return equalsNullable(this.updateMandateId, mandateData.updateMandateId) &&
         equalsNullable(this.customerAcceptance, mandateData.customerAcceptance) &&
         equalsNullable(this.mandateType, mandateData.mandateType);
-  }
+}
 
-  private static <T> boolean equalsNullable(JsonNullable<T> a, JsonNullable<T> b) {
-    return a == b || (a != null && b != null && a.isPresent() && b.isPresent() && Objects.deepEquals(a.get(), b.get()));
-  }
+    private static <T> boolean equalsNullable(JsonNullable<T> a, JsonNullable<T> b) {
+        return a == b || (a != null && b != null && a.isPresent() && b.isPresent() && Objects.deepEquals(a.get(), b.get()));
+        }
 
-  @Override
-  public int hashCode() {
-    return Objects.hash(hashCodeNullable(updateMandateId), hashCodeNullable(customerAcceptance), hashCodeNullable(mandateType));
-  }
-
-  private static <T> int hashCodeNullable(JsonNullable<T> a) {
-    if (a == null) {
-      return 1;
+    @Override
+    public int hashCode() {
+        return Objects.hash(hashCodeNullable(updateMandateId), hashCodeNullable(customerAcceptance), hashCodeNullable(mandateType));
     }
-    return a.isPresent() ? Arrays.deepHashCode(new Object[]{a.get()}) : 31;
-  }
 
-  @Override
-  public String toString() {
+        private static <T> int hashCodeNullable(JsonNullable<T> a) {
+        if (a == null) {
+        return 1;
+        }
+        return a.isPresent() ? Arrays.deepHashCode(new Object[]{a.get()}) : 31;
+        }
+
+    @Override
+    public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class MandateData {\n");
-    sb.append("    updateMandateId: ").append(toIndentedString(updateMandateId)).append("\n");
-    sb.append("    customerAcceptance: ").append(toIndentedString(customerAcceptance)).append("\n");
-    sb.append("    mandateType: ").append(toIndentedString(mandateType)).append("\n");
+        sb.append("    updateMandateId: ").append(toIndentedString(updateMandateId)).append("\n");
+        sb.append("    customerAcceptance: ").append(toIndentedString(customerAcceptance)).append("\n");
+        sb.append("    mandateType: ").append(toIndentedString(mandateType)).append("\n");
     sb.append("}");
     return sb.toString();
-  }
+    }
 
-  /**
-   * Convert the given object to string with each line indented by 4 spaces
-   * (except the first line).
-   */
-  private String toIndentedString(Object o) {
+    /**
+    * Convert the given object to string with each line indented by 4 spaces
+    * (except the first line).
+    */
+    private String toIndentedString(Object o) {
     if (o == null) {
-      return "null";
+    return "null";
     }
     return o.toString().replace("\n", "\n    ");
-  }
-
-  /**
-   * Convert the instance into URL query string.
-   *
-   * @return URL query string
-   */
-  public String toUrlQueryString() {
-    return toUrlQueryString(null);
-  }
-
-  /**
-   * Convert the instance into URL query string.
-   *
-   * @param prefix prefix of the query string
-   * @return URL query string
-   */
-  public String toUrlQueryString(String prefix) {
-    String suffix = "";
-    String containerSuffix = "";
-    String containerPrefix = "";
-    if (prefix == null) {
-      // style=form, explode=true, e.g. /pet?name=cat&type=manx
-      prefix = "";
-    } else {
-      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
-      prefix = prefix + "[";
-      suffix = "]";
-      containerSuffix = "]";
-      containerPrefix = "[";
     }
 
-    StringJoiner joiner = new StringJoiner("&");
+        /**
+        * Convert the instance into URL query string.
+        *
+        * @return URL query string
+        */
+        public String toUrlQueryString() {
+        return toUrlQueryString(null);
+        }
 
-    // add `update_mandate_id` to the URL query string
-    if (getUpdateMandateId() != null) {
-      try {
-        joiner.add(String.format("%supdate_mandate_id%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getUpdateMandateId()), "UTF-8").replaceAll("\\+", "%20")));
-      } catch (UnsupportedEncodingException e) {
-        // Should never happen, UTF-8 is always supported
-        throw new RuntimeException(e);
-      }
+        /**
+        * Convert the instance into URL query string.
+        *
+        * @param prefix prefix of the query string
+        * @return URL query string
+        */
+        public String toUrlQueryString(String prefix) {
+        String suffix = "";
+        String containerSuffix = "";
+        String containerPrefix = "";
+        if (prefix == null) {
+        // style=form, explode=true, e.g. /pet?name=cat&type=manx
+        prefix = "";
+        } else {
+        // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+        prefix = prefix + "[";
+        suffix = "]";
+        containerSuffix = "]";
+        containerPrefix = "[";
+        }
+
+        StringJoiner joiner = new StringJoiner("&");
+
+            // add `update_mandate_id` to the URL query string
+                        if (getUpdateMandateId() != null) {
+                        try {
+                        joiner.add(String.format("%supdate_mandate_id%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getUpdateMandateId()), "UTF-8").replaceAll("\\+", "%20")));
+                        } catch (UnsupportedEncodingException e) {
+                        // Should never happen, UTF-8 is always supported
+                        throw new RuntimeException(e);
+                        }
+                        }
+
+            // add `customer_acceptance` to the URL query string
+                            if (getCustomerAcceptance() != null) {
+                            joiner.add(getCustomerAcceptance().toUrlQueryString(prefix + "customer_acceptance" + suffix));
+                            }
+
+            // add `mandate_type` to the URL query string
+                            if (getMandateType() != null) {
+                            joiner.add(getMandateType().toUrlQueryString(prefix + "mandate_type" + suffix));
+                            }
+
+        return joiner.toString();
+        }
+
     }
-
-    // add `customer_acceptance` to the URL query string
-    if (getCustomerAcceptance() != null) {
-      joiner.add(getCustomerAcceptance().toUrlQueryString(prefix + "customer_acceptance" + suffix));
-    }
-
-    // add `mandate_type` to the URL query string
-    if (getMandateType() != null) {
-      joiner.add(getMandateType().toUrlQueryString(prefix + "mandate_type" + suffix));
-    }
-
-    return joiner.toString();
-  }
-
-}
 

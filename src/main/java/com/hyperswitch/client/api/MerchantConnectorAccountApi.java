@@ -16,8 +16,8 @@ import com.fasterxml.jackson.core.type.TypeReference;
 
 import com.hyperswitch.client.ApiException;
 import com.hyperswitch.client.ApiClient;
+import com.hyperswitch.client.BaseApi;
 import com.hyperswitch.client.Configuration;
-import com.hyperswitch.client.model.*;
 import com.hyperswitch.client.Pair;
 
 import com.hyperswitch.client.model.MerchantConnectorCreate;
@@ -34,26 +34,15 @@ import java.util.List;
 import java.util.Map;
 import java.util.StringJoiner;
 
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
-public class MerchantConnectorAccountApi {
-
-
-  private ApiClient apiClient;
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
+public class MerchantConnectorAccountApi extends BaseApi {
 
   public MerchantConnectorAccountApi() {
-    this(Configuration.getDefaultApiClient());
+    super(Configuration.getDefaultApiClient());
   }
 
   public MerchantConnectorAccountApi(ApiClient apiClient) {
-    this.apiClient = apiClient;
-  }
-
-  public ApiClient getApiClient() {
-    return apiClient;
-  }
-
-  public void setApiClient(ApiClient apiClient) {
-    this.apiClient = apiClient;
+    super(apiClient);
   }
 
   /**
@@ -93,7 +82,7 @@ public class MerchantConnectorAccountApi {
     
     // create path and map variables
     String localVarPath = "/accounts/{account_id}/connectors"
-      .replaceAll("\\{" + "account_id" + "\\}", apiClient.escapeString(accountId.toString()));
+      .replaceAll("\\{" + "account_id" + "\\}", apiClient.escapeString(apiClient.parameterToString(accountId)));
 
     StringJoiner localVarQueryStringJoiner = new StringJoiner("&");
     String localVarQueryParameterBaseName;
@@ -175,8 +164,8 @@ public class MerchantConnectorAccountApi {
     
     // create path and map variables
     String localVarPath = "/accounts/{account_id}/connectors/{connector_id}"
-      .replaceAll("\\{" + "account_id" + "\\}", apiClient.escapeString(accountId.toString()))
-      .replaceAll("\\{" + "connector_id" + "\\}", apiClient.escapeString(connectorId.toString()));
+      .replaceAll("\\{" + "account_id" + "\\}", apiClient.escapeString(apiClient.parameterToString(accountId)))
+      .replaceAll("\\{" + "connector_id" + "\\}", apiClient.escapeString(apiClient.parameterToString(connectorId)));
 
     StringJoiner localVarQueryStringJoiner = new StringJoiner("&");
     String localVarQueryParameterBaseName;
@@ -251,7 +240,7 @@ public class MerchantConnectorAccountApi {
     
     // create path and map variables
     String localVarPath = "/accounts/{account_id}/connectors"
-      .replaceAll("\\{" + "account_id" + "\\}", apiClient.escapeString(accountId.toString()));
+      .replaceAll("\\{" + "account_id" + "\\}", apiClient.escapeString(apiClient.parameterToString(accountId)));
 
     StringJoiner localVarQueryStringJoiner = new StringJoiner("&");
     String localVarQueryParameterBaseName;
@@ -333,8 +322,8 @@ public class MerchantConnectorAccountApi {
     
     // create path and map variables
     String localVarPath = "/accounts/{account_id}/connectors/{connector_id}"
-      .replaceAll("\\{" + "account_id" + "\\}", apiClient.escapeString(accountId.toString()))
-      .replaceAll("\\{" + "connector_id" + "\\}", apiClient.escapeString(connectorId.toString()));
+      .replaceAll("\\{" + "account_id" + "\\}", apiClient.escapeString(apiClient.parameterToString(accountId)))
+      .replaceAll("\\{" + "connector_id" + "\\}", apiClient.escapeString(apiClient.parameterToString(connectorId)));
 
     StringJoiner localVarQueryStringJoiner = new StringJoiner("&");
     String localVarQueryParameterBaseName;
@@ -423,8 +412,8 @@ public class MerchantConnectorAccountApi {
     
     // create path and map variables
     String localVarPath = "/accounts/{account_id}/connectors/{connector_id}"
-      .replaceAll("\\{" + "account_id" + "\\}", apiClient.escapeString(accountId.toString()))
-      .replaceAll("\\{" + "connector_id" + "\\}", apiClient.escapeString(connectorId.toString()));
+      .replaceAll("\\{" + "account_id" + "\\}", apiClient.escapeString(apiClient.parameterToString(accountId)))
+      .replaceAll("\\{" + "connector_id" + "\\}", apiClient.escapeString(apiClient.parameterToString(connectorId)));
 
     StringJoiner localVarQueryStringJoiner = new StringJoiner("&");
     String localVarQueryParameterBaseName;
@@ -469,4 +458,44 @@ public class MerchantConnectorAccountApi {
     );
   }
 
+  @Override
+  public <T> T invokeAPI(String url, String method, Object request, TypeReference<T> returnType, Map<String, String> additionalHeaders) throws ApiException {
+    String localVarPath = url.replace(apiClient.getBaseURL(), "");
+    StringJoiner localVarQueryStringJoiner = new StringJoiner("&");
+    List<Pair> localVarQueryParams = new ArrayList<Pair>();
+    List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
+    Map<String, String> localVarHeaderParams = new HashMap<String, String>();
+    Map<String, String> localVarCookieParams = new HashMap<String, String>();
+    Map<String, Object> localVarFormParams = new HashMap<String, Object>();
+
+    localVarHeaderParams.putAll(additionalHeaders);
+
+    final String[] localVarAccepts = {
+      "application/json"
+    };
+    final String localVarAccept = apiClient.selectHeaderAccept(localVarAccepts);
+
+    final String[] localVarContentTypes = {
+      "application/json"
+    };
+    final String localVarContentType = apiClient.selectHeaderContentType(localVarContentTypes);
+
+    String[] localVarAuthNames = new String[] { "admin_api_key" };
+
+    return apiClient.invokeAPI(
+      localVarPath,
+        method,
+        localVarQueryParams,
+        localVarCollectionQueryParams,
+        localVarQueryStringJoiner.toString(),
+        request,
+        localVarHeaderParams,
+        localVarCookieParams,
+        localVarFormParams,
+        localVarAccept,
+        localVarContentType,
+        localVarAuthNames,
+        returnType
+    );
+  }
 }

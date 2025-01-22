@@ -22,22 +22,21 @@ import org.openapitools.jackson.nullable.JsonNullable;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.openapitools.jackson.nullable.JsonNullable;
 import java.util.NoSuchElementException;
-import org.junit.Assert;
-import org.junit.Ignore;
-import org.junit.Test;
-
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Test;
 
 /**
  * Model tests for PixBankTransfer
  */
-public class PixBankTransferTest {
+class PixBankTransferTest {
     private final PixBankTransfer model = new PixBankTransfer();
 
     /**
      * Model tests for PixBankTransfer
      */
     @Test
-    public void testPixBankTransfer() {
+    void testPixBankTransfer() {
         // TODO: test PixBankTransfer
     }
 
@@ -45,7 +44,7 @@ public class PixBankTransferTest {
      * Test the property 'bankName'
      */
     @Test
-    public void bankNameTest() {
+    void bankNameTest() {
         // TODO: test bankName
     }
 
@@ -53,7 +52,7 @@ public class PixBankTransferTest {
      * Test the property 'bankBranch'
      */
     @Test
-    public void bankBranchTest() {
+    void bankBranchTest() {
         // TODO: test bankBranch
     }
 
@@ -61,7 +60,7 @@ public class PixBankTransferTest {
      * Test the property 'bankAccountNumber'
      */
     @Test
-    public void bankAccountNumberTest() {
+    void bankAccountNumberTest() {
         // TODO: test bankAccountNumber
     }
 
@@ -69,7 +68,7 @@ public class PixBankTransferTest {
      * Test the property 'pixKey'
      */
     @Test
-    public void pixKeyTest() {
+    void pixKeyTest() {
         // TODO: test pixKey
     }
 
@@ -77,7 +76,7 @@ public class PixBankTransferTest {
      * Test the property 'taxId'
      */
     @Test
-    public void taxIdTest() {
+    void taxIdTest() {
         // TODO: test taxId
     }
 

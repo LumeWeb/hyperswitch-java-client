@@ -28,211 +28,212 @@ import java.net.URLEncoder;
 import java.util.StringJoiner;
 
 /**
- * ListBlocklistQuery
- */
-@JsonPropertyOrder({
-  ListBlocklistQuery.JSON_PROPERTY_DATA_KIND,
-  ListBlocklistQuery.JSON_PROPERTY_LIMIT,
-  ListBlocklistQuery.JSON_PROPERTY_OFFSET
-})
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+* ListBlocklistQuery
+*/
+    @JsonPropertyOrder({
+        ListBlocklistQuery.JSON_PROPERTY_DATA_KIND,
+        ListBlocklistQuery.JSON_PROPERTY_LIMIT,
+        ListBlocklistQuery.JSON_PROPERTY_OFFSET
+    })
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class ListBlocklistQuery {
-  public static final String JSON_PROPERTY_DATA_KIND = "data_kind";
-  private BlocklistDataKind dataKind;
+        public static final String JSON_PROPERTY_DATA_KIND = "data_kind";
+    @javax.annotation.Nonnull
+            private BlocklistDataKind dataKind;
 
-  public static final String JSON_PROPERTY_LIMIT = "limit";
-  private Integer limit;
+        public static final String JSON_PROPERTY_LIMIT = "limit";
+    @javax.annotation.Nullable
+            private Integer limit;
 
-  public static final String JSON_PROPERTY_OFFSET = "offset";
-  private Integer offset;
+        public static final String JSON_PROPERTY_OFFSET = "offset";
+    @javax.annotation.Nullable
+            private Integer offset;
 
-  public ListBlocklistQuery() {
-  }
+public ListBlocklistQuery() {
+}
 
-  public ListBlocklistQuery dataKind(BlocklistDataKind dataKind) {
-    
-    this.dataKind = dataKind;
-    return this;
-  }
+        public ListBlocklistQuery dataKind(@javax.annotation.Nonnull BlocklistDataKind dataKind) {
+        
+        this.dataKind = dataKind;
+        return this;
+        }
 
-   /**
-   * Get dataKind
-   * @return dataKind
-  **/
-  @javax.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_DATA_KIND)
+    /**
+        * Get dataKind
+    * @return dataKind
+    */
+    @javax.annotation.Nonnull
+      @JsonProperty(JSON_PROPERTY_DATA_KIND)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-  public BlocklistDataKind getDataKind() {
-    return dataKind;
-  }
+    public BlocklistDataKind getDataKind() {
+        return dataKind;
+    }
 
 
-  @JsonProperty(JSON_PROPERTY_DATA_KIND)
+          @JsonProperty(JSON_PROPERTY_DATA_KIND)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setDataKind(BlocklistDataKind dataKind) {
-    this.dataKind = dataKind;
-  }
+  public void setDataKind(@javax.annotation.Nonnull BlocklistDataKind dataKind) {
+            this.dataKind = dataKind;
+        }
 
+        public ListBlocklistQuery limit(@javax.annotation.Nullable Integer limit) {
+        
+        this.limit = limit;
+        return this;
+        }
 
-  public ListBlocklistQuery limit(Integer limit) {
-    
-    this.limit = limit;
-    return this;
-  }
-
-   /**
-   * Get limit
-   * minimum: 0
-   * @return limit
-  **/
-  @javax.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_LIMIT)
+    /**
+        * Get limit
+        * minimum: 0
+    * @return limit
+    */
+    @javax.annotation.Nullable
+      @JsonProperty(JSON_PROPERTY_LIMIT)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-  public Integer getLimit() {
-    return limit;
-  }
+    public Integer getLimit() {
+        return limit;
+    }
 
 
-  @JsonProperty(JSON_PROPERTY_LIMIT)
+          @JsonProperty(JSON_PROPERTY_LIMIT)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setLimit(Integer limit) {
-    this.limit = limit;
-  }
+  public void setLimit(@javax.annotation.Nullable Integer limit) {
+            this.limit = limit;
+        }
 
+        public ListBlocklistQuery offset(@javax.annotation.Nullable Integer offset) {
+        
+        this.offset = offset;
+        return this;
+        }
 
-  public ListBlocklistQuery offset(Integer offset) {
-    
-    this.offset = offset;
-    return this;
-  }
-
-   /**
-   * Get offset
-   * minimum: 0
-   * @return offset
-  **/
-  @javax.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_OFFSET)
+    /**
+        * Get offset
+        * minimum: 0
+    * @return offset
+    */
+    @javax.annotation.Nullable
+      @JsonProperty(JSON_PROPERTY_OFFSET)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-  public Integer getOffset() {
-    return offset;
-  }
+    public Integer getOffset() {
+        return offset;
+    }
 
 
-  @JsonProperty(JSON_PROPERTY_OFFSET)
+          @JsonProperty(JSON_PROPERTY_OFFSET)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setOffset(Integer offset) {
-    this.offset = offset;
-  }
+  public void setOffset(@javax.annotation.Nullable Integer offset) {
+            this.offset = offset;
+        }
 
-  @Override
-  public boolean equals(Object o) {
+@Override
+public boolean equals(Object o) {
     if (this == o) {
-      return true;
+    return true;
     }
     if (o == null || getClass() != o.getClass()) {
-      return false;
+    return false;
     }
-    ListBlocklistQuery listBlocklistQuery = (ListBlocklistQuery) o;
-    return Objects.equals(this.dataKind, listBlocklistQuery.dataKind) &&
+        ListBlocklistQuery listBlocklistQuery = (ListBlocklistQuery) o;
+        return Objects.equals(this.dataKind, listBlocklistQuery.dataKind) &&
         Objects.equals(this.limit, listBlocklistQuery.limit) &&
         Objects.equals(this.offset, listBlocklistQuery.offset);
-  }
+}
 
-  @Override
-  public int hashCode() {
-    return Objects.hash(dataKind, limit, offset);
-  }
+    @Override
+    public int hashCode() {
+        return Objects.hash(dataKind, limit, offset);
+    }
 
-  @Override
-  public String toString() {
+    @Override
+    public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class ListBlocklistQuery {\n");
-    sb.append("    dataKind: ").append(toIndentedString(dataKind)).append("\n");
-    sb.append("    limit: ").append(toIndentedString(limit)).append("\n");
-    sb.append("    offset: ").append(toIndentedString(offset)).append("\n");
+        sb.append("    dataKind: ").append(toIndentedString(dataKind)).append("\n");
+        sb.append("    limit: ").append(toIndentedString(limit)).append("\n");
+        sb.append("    offset: ").append(toIndentedString(offset)).append("\n");
     sb.append("}");
     return sb.toString();
-  }
+    }
 
-  /**
-   * Convert the given object to string with each line indented by 4 spaces
-   * (except the first line).
-   */
-  private String toIndentedString(Object o) {
+    /**
+    * Convert the given object to string with each line indented by 4 spaces
+    * (except the first line).
+    */
+    private String toIndentedString(Object o) {
     if (o == null) {
-      return "null";
+    return "null";
     }
     return o.toString().replace("\n", "\n    ");
-  }
-
-  /**
-   * Convert the instance into URL query string.
-   *
-   * @return URL query string
-   */
-  public String toUrlQueryString() {
-    return toUrlQueryString(null);
-  }
-
-  /**
-   * Convert the instance into URL query string.
-   *
-   * @param prefix prefix of the query string
-   * @return URL query string
-   */
-  public String toUrlQueryString(String prefix) {
-    String suffix = "";
-    String containerSuffix = "";
-    String containerPrefix = "";
-    if (prefix == null) {
-      // style=form, explode=true, e.g. /pet?name=cat&type=manx
-      prefix = "";
-    } else {
-      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
-      prefix = prefix + "[";
-      suffix = "]";
-      containerSuffix = "]";
-      containerPrefix = "[";
     }
 
-    StringJoiner joiner = new StringJoiner("&");
+        /**
+        * Convert the instance into URL query string.
+        *
+        * @return URL query string
+        */
+        public String toUrlQueryString() {
+        return toUrlQueryString(null);
+        }
 
-    // add `data_kind` to the URL query string
-    if (getDataKind() != null) {
-      try {
-        joiner.add(String.format("%sdata_kind%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getDataKind()), "UTF-8").replaceAll("\\+", "%20")));
-      } catch (UnsupportedEncodingException e) {
-        // Should never happen, UTF-8 is always supported
-        throw new RuntimeException(e);
-      }
+        /**
+        * Convert the instance into URL query string.
+        *
+        * @param prefix prefix of the query string
+        * @return URL query string
+        */
+        public String toUrlQueryString(String prefix) {
+        String suffix = "";
+        String containerSuffix = "";
+        String containerPrefix = "";
+        if (prefix == null) {
+        // style=form, explode=true, e.g. /pet?name=cat&type=manx
+        prefix = "";
+        } else {
+        // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+        prefix = prefix + "[";
+        suffix = "]";
+        containerSuffix = "]";
+        containerPrefix = "[";
+        }
+
+        StringJoiner joiner = new StringJoiner("&");
+
+            // add `data_kind` to the URL query string
+                            if (getDataKind() != null) {
+                            try {
+                            joiner.add(String.format("%sdata_kind%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getDataKind()), "UTF-8").replaceAll("\\+", "%20")));
+                            } catch (UnsupportedEncodingException e) {
+                            // Should never happen, UTF-8 is always supported
+                            throw new RuntimeException(e);
+                            }
+                            }
+
+            // add `limit` to the URL query string
+                        if (getLimit() != null) {
+                        try {
+                        joiner.add(String.format("%slimit%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getLimit()), "UTF-8").replaceAll("\\+", "%20")));
+                        } catch (UnsupportedEncodingException e) {
+                        // Should never happen, UTF-8 is always supported
+                        throw new RuntimeException(e);
+                        }
+                        }
+
+            // add `offset` to the URL query string
+                        if (getOffset() != null) {
+                        try {
+                        joiner.add(String.format("%soffset%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getOffset()), "UTF-8").replaceAll("\\+", "%20")));
+                        } catch (UnsupportedEncodingException e) {
+                        // Should never happen, UTF-8 is always supported
+                        throw new RuntimeException(e);
+                        }
+                        }
+
+        return joiner.toString();
+        }
+
     }
-
-    // add `limit` to the URL query string
-    if (getLimit() != null) {
-      try {
-        joiner.add(String.format("%slimit%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getLimit()), "UTF-8").replaceAll("\\+", "%20")));
-      } catch (UnsupportedEncodingException e) {
-        // Should never happen, UTF-8 is always supported
-        throw new RuntimeException(e);
-      }
-    }
-
-    // add `offset` to the URL query string
-    if (getOffset() != null) {
-      try {
-        joiner.add(String.format("%soffset%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getOffset()), "UTF-8").replaceAll("\\+", "%20")));
-      } catch (UnsupportedEncodingException e) {
-        // Should never happen, UTF-8 is always supported
-        throw new RuntimeException(e);
-      }
-    }
-
-    return joiner.toString();
-  }
-
-}
 

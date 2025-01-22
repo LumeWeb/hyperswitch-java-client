@@ -31,144 +31,145 @@ import java.net.URLEncoder;
 import java.util.StringJoiner;
 
 /**
- * LocalBankTransferAdditionalData
- */
-@JsonPropertyOrder({
-  LocalBankTransferAdditionalData.JSON_PROPERTY_BANK_CODE
-})
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+* LocalBankTransferAdditionalData
+*/
+    @JsonPropertyOrder({
+        LocalBankTransferAdditionalData.JSON_PROPERTY_BANK_CODE
+    })
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class LocalBankTransferAdditionalData {
-  public static final String JSON_PROPERTY_BANK_CODE = "bank_code";
-  private JsonNullable<String> bankCode = JsonNullable.<String>undefined();
+        public static final String JSON_PROPERTY_BANK_CODE = "bank_code";
+    @javax.annotation.Nullable
+            private JsonNullable<String> bankCode = JsonNullable.<String>undefined();
 
-  public LocalBankTransferAdditionalData() {
-  }
+public LocalBankTransferAdditionalData() {
+}
 
-  public LocalBankTransferAdditionalData bankCode(String bankCode) {
-    this.bankCode = JsonNullable.<String>of(bankCode);
+        public LocalBankTransferAdditionalData bankCode(@javax.annotation.Nullable String bankCode) {
+        this.bankCode = JsonNullable.<String>of(bankCode);
+        
+        return this;
+        }
+
+    /**
+        * Partially masked bank code
+    * @return bankCode
+    */
+    @javax.annotation.Nullable
+        @JsonIgnore
     
-    return this;
-  }
+    public String getBankCode() {
+                return bankCode.orElse(null);
+    }
 
-   /**
-   * Partially masked bank code
-   * @return bankCode
-  **/
-  @javax.annotation.Nullable
-  @JsonIgnore
-
-  public String getBankCode() {
-        return bankCode.orElse(null);
-  }
-
-  @JsonProperty(JSON_PROPERTY_BANK_CODE)
+          @JsonProperty(JSON_PROPERTY_BANK_CODE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-  public JsonNullable<String> getBankCode_JsonNullable() {
-    return bankCode;
-  }
-  
-  @JsonProperty(JSON_PROPERTY_BANK_CODE)
-  public void setBankCode_JsonNullable(JsonNullable<String> bankCode) {
-    this.bankCode = bankCode;
-  }
+        public JsonNullable<String> getBankCode_JsonNullable() {
+        return bankCode;
+        }
+    
+        @JsonProperty(JSON_PROPERTY_BANK_CODE)
+        public void setBankCode_JsonNullable(JsonNullable<String> bankCode) {
+        this.bankCode = bankCode;
+        }
 
-  public void setBankCode(String bankCode) {
-    this.bankCode = JsonNullable.<String>of(bankCode);
-  }
+          public void setBankCode(@javax.annotation.Nullable String bankCode) {
+            this.bankCode = JsonNullable.<String>of(bankCode);
+        }
 
-  @Override
-  public boolean equals(Object o) {
+@Override
+public boolean equals(Object o) {
     if (this == o) {
-      return true;
+    return true;
     }
     if (o == null || getClass() != o.getClass()) {
-      return false;
+    return false;
     }
-    LocalBankTransferAdditionalData localBankTransferAdditionalData = (LocalBankTransferAdditionalData) o;
-    return equalsNullable(this.bankCode, localBankTransferAdditionalData.bankCode);
-  }
+        LocalBankTransferAdditionalData localBankTransferAdditionalData = (LocalBankTransferAdditionalData) o;
+        return equalsNullable(this.bankCode, localBankTransferAdditionalData.bankCode);
+}
 
-  private static <T> boolean equalsNullable(JsonNullable<T> a, JsonNullable<T> b) {
-    return a == b || (a != null && b != null && a.isPresent() && b.isPresent() && Objects.deepEquals(a.get(), b.get()));
-  }
+    private static <T> boolean equalsNullable(JsonNullable<T> a, JsonNullable<T> b) {
+        return a == b || (a != null && b != null && a.isPresent() && b.isPresent() && Objects.deepEquals(a.get(), b.get()));
+        }
 
-  @Override
-  public int hashCode() {
-    return Objects.hash(hashCodeNullable(bankCode));
-  }
-
-  private static <T> int hashCodeNullable(JsonNullable<T> a) {
-    if (a == null) {
-      return 1;
+    @Override
+    public int hashCode() {
+        return Objects.hash(hashCodeNullable(bankCode));
     }
-    return a.isPresent() ? Arrays.deepHashCode(new Object[]{a.get()}) : 31;
-  }
 
-  @Override
-  public String toString() {
+        private static <T> int hashCodeNullable(JsonNullable<T> a) {
+        if (a == null) {
+        return 1;
+        }
+        return a.isPresent() ? Arrays.deepHashCode(new Object[]{a.get()}) : 31;
+        }
+
+    @Override
+    public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class LocalBankTransferAdditionalData {\n");
-    sb.append("    bankCode: ").append(toIndentedString(bankCode)).append("\n");
+        sb.append("    bankCode: ").append(toIndentedString(bankCode)).append("\n");
     sb.append("}");
     return sb.toString();
-  }
+    }
 
-  /**
-   * Convert the given object to string with each line indented by 4 spaces
-   * (except the first line).
-   */
-  private String toIndentedString(Object o) {
+    /**
+    * Convert the given object to string with each line indented by 4 spaces
+    * (except the first line).
+    */
+    private String toIndentedString(Object o) {
     if (o == null) {
-      return "null";
+    return "null";
     }
     return o.toString().replace("\n", "\n    ");
-  }
-
-  /**
-   * Convert the instance into URL query string.
-   *
-   * @return URL query string
-   */
-  public String toUrlQueryString() {
-    return toUrlQueryString(null);
-  }
-
-  /**
-   * Convert the instance into URL query string.
-   *
-   * @param prefix prefix of the query string
-   * @return URL query string
-   */
-  public String toUrlQueryString(String prefix) {
-    String suffix = "";
-    String containerSuffix = "";
-    String containerPrefix = "";
-    if (prefix == null) {
-      // style=form, explode=true, e.g. /pet?name=cat&type=manx
-      prefix = "";
-    } else {
-      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
-      prefix = prefix + "[";
-      suffix = "]";
-      containerSuffix = "]";
-      containerPrefix = "[";
     }
 
-    StringJoiner joiner = new StringJoiner("&");
+        /**
+        * Convert the instance into URL query string.
+        *
+        * @return URL query string
+        */
+        public String toUrlQueryString() {
+        return toUrlQueryString(null);
+        }
 
-    // add `bank_code` to the URL query string
-    if (getBankCode() != null) {
-      try {
-        joiner.add(String.format("%sbank_code%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getBankCode()), "UTF-8").replaceAll("\\+", "%20")));
-      } catch (UnsupportedEncodingException e) {
-        // Should never happen, UTF-8 is always supported
-        throw new RuntimeException(e);
-      }
+        /**
+        * Convert the instance into URL query string.
+        *
+        * @param prefix prefix of the query string
+        * @return URL query string
+        */
+        public String toUrlQueryString(String prefix) {
+        String suffix = "";
+        String containerSuffix = "";
+        String containerPrefix = "";
+        if (prefix == null) {
+        // style=form, explode=true, e.g. /pet?name=cat&type=manx
+        prefix = "";
+        } else {
+        // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+        prefix = prefix + "[";
+        suffix = "]";
+        containerSuffix = "]";
+        containerPrefix = "[";
+        }
+
+        StringJoiner joiner = new StringJoiner("&");
+
+            // add `bank_code` to the URL query string
+                        if (getBankCode() != null) {
+                        try {
+                        joiner.add(String.format("%sbank_code%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getBankCode()), "UTF-8").replaceAll("\\+", "%20")));
+                        } catch (UnsupportedEncodingException e) {
+                        // Should never happen, UTF-8 is always supported
+                        throw new RuntimeException(e);
+                        }
+                        }
+
+        return joiner.toString();
+        }
+
     }
-
-    return joiner.toString();
-  }
-
-}
 

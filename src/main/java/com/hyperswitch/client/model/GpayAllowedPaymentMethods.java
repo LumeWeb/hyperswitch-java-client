@@ -29,199 +29,200 @@ import java.net.URLEncoder;
 import java.util.StringJoiner;
 
 /**
- * GpayAllowedPaymentMethods
- */
-@JsonPropertyOrder({
-  GpayAllowedPaymentMethods.JSON_PROPERTY_TYPE,
-  GpayAllowedPaymentMethods.JSON_PROPERTY_PARAMETERS,
-  GpayAllowedPaymentMethods.JSON_PROPERTY_TOKENIZATION_SPECIFICATION
-})
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+* GpayAllowedPaymentMethods
+*/
+    @JsonPropertyOrder({
+        GpayAllowedPaymentMethods.JSON_PROPERTY_TYPE,
+        GpayAllowedPaymentMethods.JSON_PROPERTY_PARAMETERS,
+        GpayAllowedPaymentMethods.JSON_PROPERTY_TOKENIZATION_SPECIFICATION
+    })
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class GpayAllowedPaymentMethods {
-  public static final String JSON_PROPERTY_TYPE = "type";
-  private String type;
+        public static final String JSON_PROPERTY_TYPE = "type";
+    @javax.annotation.Nonnull
+            private String type;
 
-  public static final String JSON_PROPERTY_PARAMETERS = "parameters";
-  private GpayAllowedMethodsParameters parameters;
+        public static final String JSON_PROPERTY_PARAMETERS = "parameters";
+    @javax.annotation.Nonnull
+            private GpayAllowedMethodsParameters parameters;
 
-  public static final String JSON_PROPERTY_TOKENIZATION_SPECIFICATION = "tokenization_specification";
-  private GpayTokenizationSpecification tokenizationSpecification;
+        public static final String JSON_PROPERTY_TOKENIZATION_SPECIFICATION = "tokenization_specification";
+    @javax.annotation.Nonnull
+            private GpayTokenizationSpecification tokenizationSpecification;
 
-  public GpayAllowedPaymentMethods() {
-  }
+public GpayAllowedPaymentMethods() {
+}
 
-  public GpayAllowedPaymentMethods type(String type) {
-    
-    this.type = type;
-    return this;
-  }
+        public GpayAllowedPaymentMethods type(@javax.annotation.Nonnull String type) {
+        
+        this.type = type;
+        return this;
+        }
 
-   /**
-   * The type of payment method
-   * @return type
-  **/
-  @javax.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_TYPE)
+    /**
+        * The type of payment method
+    * @return type
+    */
+    @javax.annotation.Nonnull
+      @JsonProperty(JSON_PROPERTY_TYPE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-  public String getType() {
-    return type;
-  }
+    public String getType() {
+        return type;
+    }
 
 
-  @JsonProperty(JSON_PROPERTY_TYPE)
+          @JsonProperty(JSON_PROPERTY_TYPE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setType(String type) {
-    this.type = type;
-  }
+  public void setType(@javax.annotation.Nonnull String type) {
+            this.type = type;
+        }
 
+        public GpayAllowedPaymentMethods parameters(@javax.annotation.Nonnull GpayAllowedMethodsParameters parameters) {
+        
+        this.parameters = parameters;
+        return this;
+        }
 
-  public GpayAllowedPaymentMethods parameters(GpayAllowedMethodsParameters parameters) {
-    
-    this.parameters = parameters;
-    return this;
-  }
-
-   /**
-   * Get parameters
-   * @return parameters
-  **/
-  @javax.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_PARAMETERS)
-  @JsonInclude(value = JsonInclude.Include.ALWAYS)
-
-  public GpayAllowedMethodsParameters getParameters() {
-    return parameters;
-  }
-
-
-  @JsonProperty(JSON_PROPERTY_PARAMETERS)
-  @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setParameters(GpayAllowedMethodsParameters parameters) {
-    this.parameters = parameters;
-  }
-
-
-  public GpayAllowedPaymentMethods tokenizationSpecification(GpayTokenizationSpecification tokenizationSpecification) {
-    
-    this.tokenizationSpecification = tokenizationSpecification;
-    return this;
-  }
-
-   /**
-   * Get tokenizationSpecification
-   * @return tokenizationSpecification
-  **/
-  @javax.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_TOKENIZATION_SPECIFICATION)
+    /**
+        * Get parameters
+    * @return parameters
+    */
+    @javax.annotation.Nonnull
+      @JsonProperty(JSON_PROPERTY_PARAMETERS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-  public GpayTokenizationSpecification getTokenizationSpecification() {
-    return tokenizationSpecification;
-  }
+    public GpayAllowedMethodsParameters getParameters() {
+        return parameters;
+    }
 
 
-  @JsonProperty(JSON_PROPERTY_TOKENIZATION_SPECIFICATION)
+          @JsonProperty(JSON_PROPERTY_PARAMETERS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setTokenizationSpecification(GpayTokenizationSpecification tokenizationSpecification) {
-    this.tokenizationSpecification = tokenizationSpecification;
-  }
+  public void setParameters(@javax.annotation.Nonnull GpayAllowedMethodsParameters parameters) {
+            this.parameters = parameters;
+        }
 
-  @Override
-  public boolean equals(Object o) {
+        public GpayAllowedPaymentMethods tokenizationSpecification(@javax.annotation.Nonnull GpayTokenizationSpecification tokenizationSpecification) {
+        
+        this.tokenizationSpecification = tokenizationSpecification;
+        return this;
+        }
+
+    /**
+        * Get tokenizationSpecification
+    * @return tokenizationSpecification
+    */
+    @javax.annotation.Nonnull
+      @JsonProperty(JSON_PROPERTY_TOKENIZATION_SPECIFICATION)
+  @JsonInclude(value = JsonInclude.Include.ALWAYS)
+
+    public GpayTokenizationSpecification getTokenizationSpecification() {
+        return tokenizationSpecification;
+    }
+
+
+          @JsonProperty(JSON_PROPERTY_TOKENIZATION_SPECIFICATION)
+  @JsonInclude(value = JsonInclude.Include.ALWAYS)
+  public void setTokenizationSpecification(@javax.annotation.Nonnull GpayTokenizationSpecification tokenizationSpecification) {
+            this.tokenizationSpecification = tokenizationSpecification;
+        }
+
+@Override
+public boolean equals(Object o) {
     if (this == o) {
-      return true;
+    return true;
     }
     if (o == null || getClass() != o.getClass()) {
-      return false;
+    return false;
     }
-    GpayAllowedPaymentMethods gpayAllowedPaymentMethods = (GpayAllowedPaymentMethods) o;
-    return Objects.equals(this.type, gpayAllowedPaymentMethods.type) &&
+        GpayAllowedPaymentMethods gpayAllowedPaymentMethods = (GpayAllowedPaymentMethods) o;
+        return Objects.equals(this.type, gpayAllowedPaymentMethods.type) &&
         Objects.equals(this.parameters, gpayAllowedPaymentMethods.parameters) &&
         Objects.equals(this.tokenizationSpecification, gpayAllowedPaymentMethods.tokenizationSpecification);
-  }
+}
 
-  @Override
-  public int hashCode() {
-    return Objects.hash(type, parameters, tokenizationSpecification);
-  }
+    @Override
+    public int hashCode() {
+        return Objects.hash(type, parameters, tokenizationSpecification);
+    }
 
-  @Override
-  public String toString() {
+    @Override
+    public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class GpayAllowedPaymentMethods {\n");
-    sb.append("    type: ").append(toIndentedString(type)).append("\n");
-    sb.append("    parameters: ").append(toIndentedString(parameters)).append("\n");
-    sb.append("    tokenizationSpecification: ").append(toIndentedString(tokenizationSpecification)).append("\n");
+        sb.append("    type: ").append(toIndentedString(type)).append("\n");
+        sb.append("    parameters: ").append(toIndentedString(parameters)).append("\n");
+        sb.append("    tokenizationSpecification: ").append(toIndentedString(tokenizationSpecification)).append("\n");
     sb.append("}");
     return sb.toString();
-  }
+    }
 
-  /**
-   * Convert the given object to string with each line indented by 4 spaces
-   * (except the first line).
-   */
-  private String toIndentedString(Object o) {
+    /**
+    * Convert the given object to string with each line indented by 4 spaces
+    * (except the first line).
+    */
+    private String toIndentedString(Object o) {
     if (o == null) {
-      return "null";
+    return "null";
     }
     return o.toString().replace("\n", "\n    ");
-  }
-
-  /**
-   * Convert the instance into URL query string.
-   *
-   * @return URL query string
-   */
-  public String toUrlQueryString() {
-    return toUrlQueryString(null);
-  }
-
-  /**
-   * Convert the instance into URL query string.
-   *
-   * @param prefix prefix of the query string
-   * @return URL query string
-   */
-  public String toUrlQueryString(String prefix) {
-    String suffix = "";
-    String containerSuffix = "";
-    String containerPrefix = "";
-    if (prefix == null) {
-      // style=form, explode=true, e.g. /pet?name=cat&type=manx
-      prefix = "";
-    } else {
-      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
-      prefix = prefix + "[";
-      suffix = "]";
-      containerSuffix = "]";
-      containerPrefix = "[";
     }
 
-    StringJoiner joiner = new StringJoiner("&");
+        /**
+        * Convert the instance into URL query string.
+        *
+        * @return URL query string
+        */
+        public String toUrlQueryString() {
+        return toUrlQueryString(null);
+        }
 
-    // add `type` to the URL query string
-    if (getType() != null) {
-      try {
-        joiner.add(String.format("%stype%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getType()), "UTF-8").replaceAll("\\+", "%20")));
-      } catch (UnsupportedEncodingException e) {
-        // Should never happen, UTF-8 is always supported
-        throw new RuntimeException(e);
-      }
+        /**
+        * Convert the instance into URL query string.
+        *
+        * @param prefix prefix of the query string
+        * @return URL query string
+        */
+        public String toUrlQueryString(String prefix) {
+        String suffix = "";
+        String containerSuffix = "";
+        String containerPrefix = "";
+        if (prefix == null) {
+        // style=form, explode=true, e.g. /pet?name=cat&type=manx
+        prefix = "";
+        } else {
+        // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+        prefix = prefix + "[";
+        suffix = "]";
+        containerSuffix = "]";
+        containerPrefix = "[";
+        }
+
+        StringJoiner joiner = new StringJoiner("&");
+
+            // add `type` to the URL query string
+                        if (getType() != null) {
+                        try {
+                        joiner.add(String.format("%stype%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getType()), "UTF-8").replaceAll("\\+", "%20")));
+                        } catch (UnsupportedEncodingException e) {
+                        // Should never happen, UTF-8 is always supported
+                        throw new RuntimeException(e);
+                        }
+                        }
+
+            // add `parameters` to the URL query string
+                            if (getParameters() != null) {
+                            joiner.add(getParameters().toUrlQueryString(prefix + "parameters" + suffix));
+                            }
+
+            // add `tokenization_specification` to the URL query string
+                            if (getTokenizationSpecification() != null) {
+                            joiner.add(getTokenizationSpecification().toUrlQueryString(prefix + "tokenization_specification" + suffix));
+                            }
+
+        return joiner.toString();
+        }
+
     }
-
-    // add `parameters` to the URL query string
-    if (getParameters() != null) {
-      joiner.add(getParameters().toUrlQueryString(prefix + "parameters" + suffix));
-    }
-
-    // add `tokenization_specification` to the URL query string
-    if (getTokenizationSpecification() != null) {
-      joiner.add(getTokenizationSpecification().toUrlQueryString(prefix + "tokenization_specification" + suffix));
-    }
-
-    return joiner.toString();
-  }
-
-}
 

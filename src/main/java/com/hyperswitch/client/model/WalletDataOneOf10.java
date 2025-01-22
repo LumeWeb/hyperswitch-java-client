@@ -27,126 +27,127 @@ import java.net.URLEncoder;
 import java.util.StringJoiner;
 
 /**
- * WalletDataOneOf10
- */
-@JsonPropertyOrder({
-  WalletDataOneOf10.JSON_PROPERTY_DANA_REDIRECT
-})
-@JsonTypeName("WalletData_oneOf_10")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+* WalletDataOneOf10
+*/
+    @JsonPropertyOrder({
+        WalletDataOneOf10.JSON_PROPERTY_DANA_REDIRECT
+    })
+            @JsonTypeName("WalletData_oneOf_10")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class WalletDataOneOf10 {
-  public static final String JSON_PROPERTY_DANA_REDIRECT = "dana_redirect";
-  private Object danaRedirect;
+        public static final String JSON_PROPERTY_DANA_REDIRECT = "dana_redirect";
+    @javax.annotation.Nonnull
+            private Object danaRedirect;
 
-  public WalletDataOneOf10() {
-  }
+public WalletDataOneOf10() {
+}
 
-  public WalletDataOneOf10 danaRedirect(Object danaRedirect) {
-    
-    this.danaRedirect = danaRedirect;
-    return this;
-  }
+        public WalletDataOneOf10 danaRedirect(@javax.annotation.Nonnull Object danaRedirect) {
+        
+        this.danaRedirect = danaRedirect;
+        return this;
+        }
 
-   /**
-   * Wallet data for DANA redirect flow
-   * @return danaRedirect
-  **/
-  @javax.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_DANA_REDIRECT)
+    /**
+        * Wallet data for DANA redirect flow
+    * @return danaRedirect
+    */
+    @javax.annotation.Nonnull
+      @JsonProperty(JSON_PROPERTY_DANA_REDIRECT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-  public Object getDanaRedirect() {
-    return danaRedirect;
-  }
+    public Object getDanaRedirect() {
+        return danaRedirect;
+    }
 
 
-  @JsonProperty(JSON_PROPERTY_DANA_REDIRECT)
+          @JsonProperty(JSON_PROPERTY_DANA_REDIRECT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setDanaRedirect(Object danaRedirect) {
-    this.danaRedirect = danaRedirect;
-  }
+  public void setDanaRedirect(@javax.annotation.Nonnull Object danaRedirect) {
+            this.danaRedirect = danaRedirect;
+        }
 
-  @Override
-  public boolean equals(Object o) {
+@Override
+public boolean equals(Object o) {
     if (this == o) {
-      return true;
+    return true;
     }
     if (o == null || getClass() != o.getClass()) {
-      return false;
+    return false;
     }
-    WalletDataOneOf10 walletDataOneOf10 = (WalletDataOneOf10) o;
-    return Objects.equals(this.danaRedirect, walletDataOneOf10.danaRedirect);
-  }
+        WalletDataOneOf10 walletDataOneOf10 = (WalletDataOneOf10) o;
+        return Objects.equals(this.danaRedirect, walletDataOneOf10.danaRedirect);
+}
 
-  @Override
-  public int hashCode() {
-    return Objects.hash(danaRedirect);
-  }
+    @Override
+    public int hashCode() {
+        return Objects.hash(danaRedirect);
+    }
 
-  @Override
-  public String toString() {
+    @Override
+    public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class WalletDataOneOf10 {\n");
-    sb.append("    danaRedirect: ").append(toIndentedString(danaRedirect)).append("\n");
+        sb.append("    danaRedirect: ").append(toIndentedString(danaRedirect)).append("\n");
     sb.append("}");
     return sb.toString();
-  }
+    }
 
-  /**
-   * Convert the given object to string with each line indented by 4 spaces
-   * (except the first line).
-   */
-  private String toIndentedString(Object o) {
+    /**
+    * Convert the given object to string with each line indented by 4 spaces
+    * (except the first line).
+    */
+    private String toIndentedString(Object o) {
     if (o == null) {
-      return "null";
+    return "null";
     }
     return o.toString().replace("\n", "\n    ");
-  }
-
-  /**
-   * Convert the instance into URL query string.
-   *
-   * @return URL query string
-   */
-  public String toUrlQueryString() {
-    return toUrlQueryString(null);
-  }
-
-  /**
-   * Convert the instance into URL query string.
-   *
-   * @param prefix prefix of the query string
-   * @return URL query string
-   */
-  public String toUrlQueryString(String prefix) {
-    String suffix = "";
-    String containerSuffix = "";
-    String containerPrefix = "";
-    if (prefix == null) {
-      // style=form, explode=true, e.g. /pet?name=cat&type=manx
-      prefix = "";
-    } else {
-      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
-      prefix = prefix + "[";
-      suffix = "]";
-      containerSuffix = "]";
-      containerPrefix = "[";
     }
 
-    StringJoiner joiner = new StringJoiner("&");
+        /**
+        * Convert the instance into URL query string.
+        *
+        * @return URL query string
+        */
+        public String toUrlQueryString() {
+        return toUrlQueryString(null);
+        }
 
-    // add `dana_redirect` to the URL query string
-    if (getDanaRedirect() != null) {
-      try {
-        joiner.add(String.format("%sdana_redirect%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getDanaRedirect()), "UTF-8").replaceAll("\\+", "%20")));
-      } catch (UnsupportedEncodingException e) {
-        // Should never happen, UTF-8 is always supported
-        throw new RuntimeException(e);
-      }
+        /**
+        * Convert the instance into URL query string.
+        *
+        * @param prefix prefix of the query string
+        * @return URL query string
+        */
+        public String toUrlQueryString(String prefix) {
+        String suffix = "";
+        String containerSuffix = "";
+        String containerPrefix = "";
+        if (prefix == null) {
+        // style=form, explode=true, e.g. /pet?name=cat&type=manx
+        prefix = "";
+        } else {
+        // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+        prefix = prefix + "[";
+        suffix = "]";
+        containerSuffix = "]";
+        containerPrefix = "[";
+        }
+
+        StringJoiner joiner = new StringJoiner("&");
+
+            // add `dana_redirect` to the URL query string
+                        if (getDanaRedirect() != null) {
+                        try {
+                        joiner.add(String.format("%sdana_redirect%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getDanaRedirect()), "UTF-8").replaceAll("\\+", "%20")));
+                        } catch (UnsupportedEncodingException e) {
+                        // Should never happen, UTF-8 is always supported
+                        throw new RuntimeException(e);
+                        }
+                        }
+
+        return joiner.toString();
+        }
+
     }
-
-    return joiner.toString();
-  }
-
-}
 

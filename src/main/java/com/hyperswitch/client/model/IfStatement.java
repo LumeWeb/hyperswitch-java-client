@@ -22,6 +22,7 @@ import com.fasterxml.jackson.annotation.JsonTypeName;
 import com.fasterxml.jackson.annotation.JsonValue;
 import com.hyperswitch.client.model.Comparison;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import org.openapitools.jackson.nullable.JsonNullable;
 import com.fasterxml.jackson.annotation.JsonIgnore;
@@ -34,206 +35,207 @@ import java.net.URLEncoder;
 import java.util.StringJoiner;
 
 /**
- * Represents an IF statement with conditions and optional nested IF statements  &#x60;&#x60;&#x60;text payment.method &#x3D; card { payment.method.cardtype &#x3D; (credit, debit) { payment.method.network &#x3D; (amex, rupay, diners) } } &#x60;&#x60;&#x60;
- */
-@JsonPropertyOrder({
-  IfStatement.JSON_PROPERTY_CONDITION,
-  IfStatement.JSON_PROPERTY_NESTED
-})
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+* Represents an IF statement with conditions and optional nested IF statements  &#x60;&#x60;&#x60;text payment.method &#x3D; card { payment.method.cardtype &#x3D; (credit, debit) { payment.method.network &#x3D; (amex, rupay, diners) } } &#x60;&#x60;&#x60;
+*/
+    @JsonPropertyOrder({
+        IfStatement.JSON_PROPERTY_CONDITION,
+        IfStatement.JSON_PROPERTY_NESTED
+    })
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class IfStatement {
-  public static final String JSON_PROPERTY_CONDITION = "condition";
-  private List<Comparison> condition = new ArrayList<>();
+        public static final String JSON_PROPERTY_CONDITION = "condition";
+    @javax.annotation.Nonnull
+            private List<Comparison> condition = new ArrayList<>();
 
-  public static final String JSON_PROPERTY_NESTED = "nested";
-  private JsonNullable<List<IfStatement>> nested = JsonNullable.<List<IfStatement>>undefined();
+        public static final String JSON_PROPERTY_NESTED = "nested";
+    @javax.annotation.Nullable
+            private JsonNullable<List<IfStatement>> nested = JsonNullable.<List<IfStatement>>undefined();
 
-  public IfStatement() {
-  }
+public IfStatement() {
+}
 
-  public IfStatement condition(List<Comparison> condition) {
-    
-    this.condition = condition;
-    return this;
-  }
+        public IfStatement condition(@javax.annotation.Nonnull List<Comparison> condition) {
+        
+        this.condition = condition;
+        return this;
+        }
 
-  public IfStatement addConditionItem(Comparison conditionItem) {
-    if (this.condition == null) {
-      this.condition = new ArrayList<>();
-    }
-    this.condition.add(conditionItem);
-    return this;
-  }
+            public IfStatement addConditionItem(Comparison conditionItem) {
+                if (this.condition == null) {
+                this.condition = new ArrayList<>();
+                }
+                this.condition.add(conditionItem);
+                return this;
+            }
 
-   /**
-   * Get condition
-   * @return condition
-  **/
-  @javax.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_CONDITION)
+    /**
+        * Get condition
+    * @return condition
+    */
+    @javax.annotation.Nonnull
+      @JsonProperty(JSON_PROPERTY_CONDITION)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-  public List<Comparison> getCondition() {
-    return condition;
-  }
+    public List<Comparison> getCondition() {
+        return condition;
+    }
 
 
-  @JsonProperty(JSON_PROPERTY_CONDITION)
+          @JsonProperty(JSON_PROPERTY_CONDITION)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setCondition(List<Comparison> condition) {
-    this.condition = condition;
-  }
+  public void setCondition(@javax.annotation.Nonnull List<Comparison> condition) {
+            this.condition = condition;
+        }
 
+        public IfStatement nested(@javax.annotation.Nullable List<IfStatement> nested) {
+        this.nested = JsonNullable.<List<IfStatement>>of(nested);
+        
+        return this;
+        }
 
-  public IfStatement nested(List<IfStatement> nested) {
-    this.nested = JsonNullable.<List<IfStatement>>of(nested);
+            public IfStatement addNestedItem(IfStatement nestedItem) {
+                if (this.nested == null || !this.nested.isPresent()) {
+                this.nested = JsonNullable.<List<IfStatement>>of(new ArrayList<>());
+                }
+                try {
+                this.nested.get().add(nestedItem);
+                } catch (java.util.NoSuchElementException e) {
+                // this can never happen, as we make sure above that the value is present
+                }
+                return this;
+            }
+
+    /**
+        * Get nested
+    * @return nested
+    */
+    @javax.annotation.Nullable
+        @JsonIgnore
     
-    return this;
-  }
-
-  public IfStatement addNestedItem(IfStatement nestedItem) {
-    if (this.nested == null || !this.nested.isPresent()) {
-      this.nested = JsonNullable.<List<IfStatement>>of(new ArrayList<>());
+    public List<IfStatement> getNested() {
+                return nested.orElse(null);
     }
-    try {
-      this.nested.get().add(nestedItem);
-    } catch (java.util.NoSuchElementException e) {
-      // this can never happen, as we make sure above that the value is present
-    }
-    return this;
-  }
 
-   /**
-   * Get nested
-   * @return nested
-  **/
-  @javax.annotation.Nullable
-  @JsonIgnore
-
-  public List<IfStatement> getNested() {
-        return nested.orElse(null);
-  }
-
-  @JsonProperty(JSON_PROPERTY_NESTED)
+          @JsonProperty(JSON_PROPERTY_NESTED)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-  public JsonNullable<List<IfStatement>> getNested_JsonNullable() {
-    return nested;
-  }
-  
-  @JsonProperty(JSON_PROPERTY_NESTED)
-  public void setNested_JsonNullable(JsonNullable<List<IfStatement>> nested) {
-    this.nested = nested;
-  }
+        public JsonNullable<List<IfStatement>> getNested_JsonNullable() {
+        return nested;
+        }
+    
+        @JsonProperty(JSON_PROPERTY_NESTED)
+        public void setNested_JsonNullable(JsonNullable<List<IfStatement>> nested) {
+        this.nested = nested;
+        }
 
-  public void setNested(List<IfStatement> nested) {
-    this.nested = JsonNullable.<List<IfStatement>>of(nested);
-  }
+          public void setNested(@javax.annotation.Nullable List<IfStatement> nested) {
+            this.nested = JsonNullable.<List<IfStatement>>of(nested);
+        }
 
-  @Override
-  public boolean equals(Object o) {
+@Override
+public boolean equals(Object o) {
     if (this == o) {
-      return true;
+    return true;
     }
     if (o == null || getClass() != o.getClass()) {
-      return false;
+    return false;
     }
-    IfStatement ifStatement = (IfStatement) o;
-    return Objects.equals(this.condition, ifStatement.condition) &&
+        IfStatement ifStatement = (IfStatement) o;
+        return Objects.equals(this.condition, ifStatement.condition) &&
         equalsNullable(this.nested, ifStatement.nested);
-  }
+}
 
-  private static <T> boolean equalsNullable(JsonNullable<T> a, JsonNullable<T> b) {
-    return a == b || (a != null && b != null && a.isPresent() && b.isPresent() && Objects.deepEquals(a.get(), b.get()));
-  }
+    private static <T> boolean equalsNullable(JsonNullable<T> a, JsonNullable<T> b) {
+        return a == b || (a != null && b != null && a.isPresent() && b.isPresent() && Objects.deepEquals(a.get(), b.get()));
+        }
 
-  @Override
-  public int hashCode() {
-    return Objects.hash(condition, hashCodeNullable(nested));
-  }
-
-  private static <T> int hashCodeNullable(JsonNullable<T> a) {
-    if (a == null) {
-      return 1;
+    @Override
+    public int hashCode() {
+        return Objects.hash(condition, hashCodeNullable(nested));
     }
-    return a.isPresent() ? Arrays.deepHashCode(new Object[]{a.get()}) : 31;
-  }
 
-  @Override
-  public String toString() {
+        private static <T> int hashCodeNullable(JsonNullable<T> a) {
+        if (a == null) {
+        return 1;
+        }
+        return a.isPresent() ? Arrays.deepHashCode(new Object[]{a.get()}) : 31;
+        }
+
+    @Override
+    public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class IfStatement {\n");
-    sb.append("    condition: ").append(toIndentedString(condition)).append("\n");
-    sb.append("    nested: ").append(toIndentedString(nested)).append("\n");
+        sb.append("    condition: ").append(toIndentedString(condition)).append("\n");
+        sb.append("    nested: ").append(toIndentedString(nested)).append("\n");
     sb.append("}");
     return sb.toString();
-  }
+    }
 
-  /**
-   * Convert the given object to string with each line indented by 4 spaces
-   * (except the first line).
-   */
-  private String toIndentedString(Object o) {
+    /**
+    * Convert the given object to string with each line indented by 4 spaces
+    * (except the first line).
+    */
+    private String toIndentedString(Object o) {
     if (o == null) {
-      return "null";
+    return "null";
     }
     return o.toString().replace("\n", "\n    ");
-  }
-
-  /**
-   * Convert the instance into URL query string.
-   *
-   * @return URL query string
-   */
-  public String toUrlQueryString() {
-    return toUrlQueryString(null);
-  }
-
-  /**
-   * Convert the instance into URL query string.
-   *
-   * @param prefix prefix of the query string
-   * @return URL query string
-   */
-  public String toUrlQueryString(String prefix) {
-    String suffix = "";
-    String containerSuffix = "";
-    String containerPrefix = "";
-    if (prefix == null) {
-      // style=form, explode=true, e.g. /pet?name=cat&type=manx
-      prefix = "";
-    } else {
-      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
-      prefix = prefix + "[";
-      suffix = "]";
-      containerSuffix = "]";
-      containerPrefix = "[";
     }
 
-    StringJoiner joiner = new StringJoiner("&");
-
-    // add `condition` to the URL query string
-    if (getCondition() != null) {
-      for (int i = 0; i < getCondition().size(); i++) {
-        if (getCondition().get(i) != null) {
-          joiner.add(getCondition().get(i).toUrlQueryString(String.format("%scondition%s%s", prefix, suffix,
-              "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix))));
+        /**
+        * Convert the instance into URL query string.
+        *
+        * @return URL query string
+        */
+        public String toUrlQueryString() {
+        return toUrlQueryString(null);
         }
-      }
-    }
 
-    // add `nested` to the URL query string
-    if (getNested() != null) {
-      for (int i = 0; i < getNested().size(); i++) {
-        if (getNested().get(i) != null) {
-          joiner.add(getNested().get(i).toUrlQueryString(String.format("%snested%s%s", prefix, suffix,
-              "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix))));
+        /**
+        * Convert the instance into URL query string.
+        *
+        * @param prefix prefix of the query string
+        * @return URL query string
+        */
+        public String toUrlQueryString(String prefix) {
+        String suffix = "";
+        String containerSuffix = "";
+        String containerPrefix = "";
+        if (prefix == null) {
+        // style=form, explode=true, e.g. /pet?name=cat&type=manx
+        prefix = "";
+        } else {
+        // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+        prefix = prefix + "[";
+        suffix = "]";
+        containerSuffix = "]";
+        containerPrefix = "[";
         }
-      }
+
+        StringJoiner joiner = new StringJoiner("&");
+
+            // add `condition` to the URL query string
+                            if (getCondition() != null) {
+                            for (int i = 0; i < getCondition().size(); i++) {
+                            if (getCondition().get(i) != null) {
+                            joiner.add(getCondition().get(i).toUrlQueryString(String.format("%scondition%s%s", prefix, suffix,
+                            "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix))));
+                            }
+                            }
+                            }
+
+            // add `nested` to the URL query string
+                            if (getNested() != null) {
+                            for (int i = 0; i < getNested().size(); i++) {
+                            if (getNested().get(i) != null) {
+                            joiner.add(getNested().get(i).toUrlQueryString(String.format("%snested%s%s", prefix, suffix,
+                            "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix))));
+                            }
+                            }
+                            }
+
+        return joiner.toString();
+        }
+
     }
-
-    return joiner.toString();
-  }
-
-}
 

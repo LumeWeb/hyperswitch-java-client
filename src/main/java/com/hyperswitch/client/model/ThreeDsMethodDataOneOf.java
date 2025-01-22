@@ -31,31 +31,34 @@ import java.net.URLEncoder;
 import java.util.StringJoiner;
 
 /**
- * ThreeDsMethodDataOneOf
- */
-@JsonPropertyOrder({
-  ThreeDsMethodDataOneOf.JSON_PROPERTY_THREE_DS_METHOD_DATA_SUBMISSION,
-  ThreeDsMethodDataOneOf.JSON_PROPERTY_THREE_DS_METHOD_DATA,
-  ThreeDsMethodDataOneOf.JSON_PROPERTY_THREE_DS_METHOD_URL,
-  ThreeDsMethodDataOneOf.JSON_PROPERTY_THREE_DS_METHOD_KEY
-})
-@JsonTypeName("ThreeDsMethodData_oneOf")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+* ThreeDsMethodDataOneOf
+*/
+    @JsonPropertyOrder({
+        ThreeDsMethodDataOneOf.JSON_PROPERTY_THREE_DS_METHOD_DATA_SUBMISSION,
+        ThreeDsMethodDataOneOf.JSON_PROPERTY_THREE_DS_METHOD_DATA,
+        ThreeDsMethodDataOneOf.JSON_PROPERTY_THREE_DS_METHOD_URL,
+        ThreeDsMethodDataOneOf.JSON_PROPERTY_THREE_DS_METHOD_KEY
+    })
+            @JsonTypeName("ThreeDsMethodData_oneOf")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class ThreeDsMethodDataOneOf {
-  public static final String JSON_PROPERTY_THREE_DS_METHOD_DATA_SUBMISSION = "three_ds_method_data_submission";
-  private Boolean threeDsMethodDataSubmission;
+        public static final String JSON_PROPERTY_THREE_DS_METHOD_DATA_SUBMISSION = "three_ds_method_data_submission";
+    @javax.annotation.Nonnull
+            private Boolean threeDsMethodDataSubmission;
 
-  public static final String JSON_PROPERTY_THREE_DS_METHOD_DATA = "three_ds_method_data";
-  private JsonNullable<String> threeDsMethodData = JsonNullable.<String>undefined();
+        public static final String JSON_PROPERTY_THREE_DS_METHOD_DATA = "three_ds_method_data";
+    @javax.annotation.Nullable
+            private JsonNullable<String> threeDsMethodData = JsonNullable.<String>undefined();
 
-  public static final String JSON_PROPERTY_THREE_DS_METHOD_URL = "three_ds_method_url";
-  private JsonNullable<String> threeDsMethodUrl = JsonNullable.<String>undefined();
+        public static final String JSON_PROPERTY_THREE_DS_METHOD_URL = "three_ds_method_url";
+    @javax.annotation.Nullable
+            private JsonNullable<String> threeDsMethodUrl = JsonNullable.<String>undefined();
 
-  /**
+              /**
    * Gets or Sets threeDsMethodKey
    */
   public enum ThreeDsMethodKeyEnum {
-    THREEDSMETHODDATA("threeDSMethodData");
+    THREE_DS_METHOD_DATA(String.valueOf("threeDSMethodData"));
 
     private String value;
 
@@ -84,259 +87,257 @@ public class ThreeDsMethodDataOneOf {
     }
   }
 
-  public static final String JSON_PROPERTY_THREE_DS_METHOD_KEY = "three_ds_method_key";
-  private ThreeDsMethodKeyEnum threeDsMethodKey;
+        public static final String JSON_PROPERTY_THREE_DS_METHOD_KEY = "three_ds_method_key";
+    @javax.annotation.Nonnull
+            private ThreeDsMethodKeyEnum threeDsMethodKey;
 
-  public ThreeDsMethodDataOneOf() {
-  }
+public ThreeDsMethodDataOneOf() {
+}
 
-  public ThreeDsMethodDataOneOf threeDsMethodDataSubmission(Boolean threeDsMethodDataSubmission) {
-    
-    this.threeDsMethodDataSubmission = threeDsMethodDataSubmission;
-    return this;
-  }
+        public ThreeDsMethodDataOneOf threeDsMethodDataSubmission(@javax.annotation.Nonnull Boolean threeDsMethodDataSubmission) {
+        
+        this.threeDsMethodDataSubmission = threeDsMethodDataSubmission;
+        return this;
+        }
 
-   /**
-   * Whether ThreeDS method data submission is required
-   * @return threeDsMethodDataSubmission
-  **/
-  @javax.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_THREE_DS_METHOD_DATA_SUBMISSION)
+    /**
+        * Whether ThreeDS method data submission is required
+    * @return threeDsMethodDataSubmission
+    */
+    @javax.annotation.Nonnull
+      @JsonProperty(JSON_PROPERTY_THREE_DS_METHOD_DATA_SUBMISSION)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-  public Boolean getThreeDsMethodDataSubmission() {
-    return threeDsMethodDataSubmission;
-  }
+    public Boolean getThreeDsMethodDataSubmission() {
+        return threeDsMethodDataSubmission;
+    }
 
 
-  @JsonProperty(JSON_PROPERTY_THREE_DS_METHOD_DATA_SUBMISSION)
+          @JsonProperty(JSON_PROPERTY_THREE_DS_METHOD_DATA_SUBMISSION)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setThreeDsMethodDataSubmission(Boolean threeDsMethodDataSubmission) {
-    this.threeDsMethodDataSubmission = threeDsMethodDataSubmission;
-  }
+  public void setThreeDsMethodDataSubmission(@javax.annotation.Nonnull Boolean threeDsMethodDataSubmission) {
+            this.threeDsMethodDataSubmission = threeDsMethodDataSubmission;
+        }
 
+        public ThreeDsMethodDataOneOf threeDsMethodData(@javax.annotation.Nullable String threeDsMethodData) {
+        this.threeDsMethodData = JsonNullable.<String>of(threeDsMethodData);
+        
+        return this;
+        }
 
-  public ThreeDsMethodDataOneOf threeDsMethodData(String threeDsMethodData) {
-    this.threeDsMethodData = JsonNullable.<String>of(threeDsMethodData);
+    /**
+        * ThreeDS method data
+    * @return threeDsMethodData
+    */
+    @javax.annotation.Nullable
+        @JsonIgnore
     
-    return this;
-  }
+    public String getThreeDsMethodData() {
+                return threeDsMethodData.orElse(null);
+    }
 
-   /**
-   * ThreeDS method data
-   * @return threeDsMethodData
-  **/
-  @javax.annotation.Nullable
-  @JsonIgnore
-
-  public String getThreeDsMethodData() {
-        return threeDsMethodData.orElse(null);
-  }
-
-  @JsonProperty(JSON_PROPERTY_THREE_DS_METHOD_DATA)
+          @JsonProperty(JSON_PROPERTY_THREE_DS_METHOD_DATA)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-  public JsonNullable<String> getThreeDsMethodData_JsonNullable() {
-    return threeDsMethodData;
-  }
-  
-  @JsonProperty(JSON_PROPERTY_THREE_DS_METHOD_DATA)
-  public void setThreeDsMethodData_JsonNullable(JsonNullable<String> threeDsMethodData) {
-    this.threeDsMethodData = threeDsMethodData;
-  }
-
-  public void setThreeDsMethodData(String threeDsMethodData) {
-    this.threeDsMethodData = JsonNullable.<String>of(threeDsMethodData);
-  }
-
-
-  public ThreeDsMethodDataOneOf threeDsMethodUrl(String threeDsMethodUrl) {
-    this.threeDsMethodUrl = JsonNullable.<String>of(threeDsMethodUrl);
+        public JsonNullable<String> getThreeDsMethodData_JsonNullable() {
+        return threeDsMethodData;
+        }
     
-    return this;
-  }
+        @JsonProperty(JSON_PROPERTY_THREE_DS_METHOD_DATA)
+        public void setThreeDsMethodData_JsonNullable(JsonNullable<String> threeDsMethodData) {
+        this.threeDsMethodData = threeDsMethodData;
+        }
 
-   /**
-   * ThreeDS method url
-   * @return threeDsMethodUrl
-  **/
-  @javax.annotation.Nullable
-  @JsonIgnore
+          public void setThreeDsMethodData(@javax.annotation.Nullable String threeDsMethodData) {
+            this.threeDsMethodData = JsonNullable.<String>of(threeDsMethodData);
+        }
 
-  public String getThreeDsMethodUrl() {
-        return threeDsMethodUrl.orElse(null);
-  }
+        public ThreeDsMethodDataOneOf threeDsMethodUrl(@javax.annotation.Nullable String threeDsMethodUrl) {
+        this.threeDsMethodUrl = JsonNullable.<String>of(threeDsMethodUrl);
+        
+        return this;
+        }
 
-  @JsonProperty(JSON_PROPERTY_THREE_DS_METHOD_URL)
+    /**
+        * ThreeDS method url
+    * @return threeDsMethodUrl
+    */
+    @javax.annotation.Nullable
+        @JsonIgnore
+    
+    public String getThreeDsMethodUrl() {
+                return threeDsMethodUrl.orElse(null);
+    }
+
+          @JsonProperty(JSON_PROPERTY_THREE_DS_METHOD_URL)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-  public JsonNullable<String> getThreeDsMethodUrl_JsonNullable() {
-    return threeDsMethodUrl;
-  }
-  
-  @JsonProperty(JSON_PROPERTY_THREE_DS_METHOD_URL)
-  public void setThreeDsMethodUrl_JsonNullable(JsonNullable<String> threeDsMethodUrl) {
-    this.threeDsMethodUrl = threeDsMethodUrl;
-  }
-
-  public void setThreeDsMethodUrl(String threeDsMethodUrl) {
-    this.threeDsMethodUrl = JsonNullable.<String>of(threeDsMethodUrl);
-  }
-
-
-  public ThreeDsMethodDataOneOf threeDsMethodKey(ThreeDsMethodKeyEnum threeDsMethodKey) {
+        public JsonNullable<String> getThreeDsMethodUrl_JsonNullable() {
+        return threeDsMethodUrl;
+        }
     
-    this.threeDsMethodKey = threeDsMethodKey;
-    return this;
-  }
+        @JsonProperty(JSON_PROPERTY_THREE_DS_METHOD_URL)
+        public void setThreeDsMethodUrl_JsonNullable(JsonNullable<String> threeDsMethodUrl) {
+        this.threeDsMethodUrl = threeDsMethodUrl;
+        }
 
-   /**
-   * Get threeDsMethodKey
-   * @return threeDsMethodKey
-  **/
-  @javax.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_THREE_DS_METHOD_KEY)
+          public void setThreeDsMethodUrl(@javax.annotation.Nullable String threeDsMethodUrl) {
+            this.threeDsMethodUrl = JsonNullable.<String>of(threeDsMethodUrl);
+        }
+
+        public ThreeDsMethodDataOneOf threeDsMethodKey(@javax.annotation.Nonnull ThreeDsMethodKeyEnum threeDsMethodKey) {
+        
+        this.threeDsMethodKey = threeDsMethodKey;
+        return this;
+        }
+
+    /**
+        * Get threeDsMethodKey
+    * @return threeDsMethodKey
+    */
+    @javax.annotation.Nonnull
+      @JsonProperty(JSON_PROPERTY_THREE_DS_METHOD_KEY)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-  public ThreeDsMethodKeyEnum getThreeDsMethodKey() {
-    return threeDsMethodKey;
-  }
+    public ThreeDsMethodKeyEnum getThreeDsMethodKey() {
+        return threeDsMethodKey;
+    }
 
 
-  @JsonProperty(JSON_PROPERTY_THREE_DS_METHOD_KEY)
+          @JsonProperty(JSON_PROPERTY_THREE_DS_METHOD_KEY)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setThreeDsMethodKey(ThreeDsMethodKeyEnum threeDsMethodKey) {
-    this.threeDsMethodKey = threeDsMethodKey;
-  }
+  public void setThreeDsMethodKey(@javax.annotation.Nonnull ThreeDsMethodKeyEnum threeDsMethodKey) {
+            this.threeDsMethodKey = threeDsMethodKey;
+        }
 
-  @Override
-  public boolean equals(Object o) {
+@Override
+public boolean equals(Object o) {
     if (this == o) {
-      return true;
+    return true;
     }
     if (o == null || getClass() != o.getClass()) {
-      return false;
+    return false;
     }
-    ThreeDsMethodDataOneOf threeDsMethodDataOneOf = (ThreeDsMethodDataOneOf) o;
-    return Objects.equals(this.threeDsMethodDataSubmission, threeDsMethodDataOneOf.threeDsMethodDataSubmission) &&
+        ThreeDsMethodDataOneOf threeDsMethodDataOneOf = (ThreeDsMethodDataOneOf) o;
+        return Objects.equals(this.threeDsMethodDataSubmission, threeDsMethodDataOneOf.threeDsMethodDataSubmission) &&
         equalsNullable(this.threeDsMethodData, threeDsMethodDataOneOf.threeDsMethodData) &&
         equalsNullable(this.threeDsMethodUrl, threeDsMethodDataOneOf.threeDsMethodUrl) &&
         Objects.equals(this.threeDsMethodKey, threeDsMethodDataOneOf.threeDsMethodKey);
-  }
+}
 
-  private static <T> boolean equalsNullable(JsonNullable<T> a, JsonNullable<T> b) {
-    return a == b || (a != null && b != null && a.isPresent() && b.isPresent() && Objects.deepEquals(a.get(), b.get()));
-  }
+    private static <T> boolean equalsNullable(JsonNullable<T> a, JsonNullable<T> b) {
+        return a == b || (a != null && b != null && a.isPresent() && b.isPresent() && Objects.deepEquals(a.get(), b.get()));
+        }
 
-  @Override
-  public int hashCode() {
-    return Objects.hash(threeDsMethodDataSubmission, hashCodeNullable(threeDsMethodData), hashCodeNullable(threeDsMethodUrl), threeDsMethodKey);
-  }
-
-  private static <T> int hashCodeNullable(JsonNullable<T> a) {
-    if (a == null) {
-      return 1;
+    @Override
+    public int hashCode() {
+        return Objects.hash(threeDsMethodDataSubmission, hashCodeNullable(threeDsMethodData), hashCodeNullable(threeDsMethodUrl), threeDsMethodKey);
     }
-    return a.isPresent() ? Arrays.deepHashCode(new Object[]{a.get()}) : 31;
-  }
 
-  @Override
-  public String toString() {
+        private static <T> int hashCodeNullable(JsonNullable<T> a) {
+        if (a == null) {
+        return 1;
+        }
+        return a.isPresent() ? Arrays.deepHashCode(new Object[]{a.get()}) : 31;
+        }
+
+    @Override
+    public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class ThreeDsMethodDataOneOf {\n");
-    sb.append("    threeDsMethodDataSubmission: ").append(toIndentedString(threeDsMethodDataSubmission)).append("\n");
-    sb.append("    threeDsMethodData: ").append(toIndentedString(threeDsMethodData)).append("\n");
-    sb.append("    threeDsMethodUrl: ").append(toIndentedString(threeDsMethodUrl)).append("\n");
-    sb.append("    threeDsMethodKey: ").append(toIndentedString(threeDsMethodKey)).append("\n");
+        sb.append("    threeDsMethodDataSubmission: ").append(toIndentedString(threeDsMethodDataSubmission)).append("\n");
+        sb.append("    threeDsMethodData: ").append(toIndentedString(threeDsMethodData)).append("\n");
+        sb.append("    threeDsMethodUrl: ").append(toIndentedString(threeDsMethodUrl)).append("\n");
+        sb.append("    threeDsMethodKey: ").append(toIndentedString(threeDsMethodKey)).append("\n");
     sb.append("}");
     return sb.toString();
-  }
+    }
 
-  /**
-   * Convert the given object to string with each line indented by 4 spaces
-   * (except the first line).
-   */
-  private String toIndentedString(Object o) {
+    /**
+    * Convert the given object to string with each line indented by 4 spaces
+    * (except the first line).
+    */
+    private String toIndentedString(Object o) {
     if (o == null) {
-      return "null";
+    return "null";
     }
     return o.toString().replace("\n", "\n    ");
-  }
-
-  /**
-   * Convert the instance into URL query string.
-   *
-   * @return URL query string
-   */
-  public String toUrlQueryString() {
-    return toUrlQueryString(null);
-  }
-
-  /**
-   * Convert the instance into URL query string.
-   *
-   * @param prefix prefix of the query string
-   * @return URL query string
-   */
-  public String toUrlQueryString(String prefix) {
-    String suffix = "";
-    String containerSuffix = "";
-    String containerPrefix = "";
-    if (prefix == null) {
-      // style=form, explode=true, e.g. /pet?name=cat&type=manx
-      prefix = "";
-    } else {
-      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
-      prefix = prefix + "[";
-      suffix = "]";
-      containerSuffix = "]";
-      containerPrefix = "[";
     }
 
-    StringJoiner joiner = new StringJoiner("&");
+        /**
+        * Convert the instance into URL query string.
+        *
+        * @return URL query string
+        */
+        public String toUrlQueryString() {
+        return toUrlQueryString(null);
+        }
 
-    // add `three_ds_method_data_submission` to the URL query string
-    if (getThreeDsMethodDataSubmission() != null) {
-      try {
-        joiner.add(String.format("%sthree_ds_method_data_submission%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getThreeDsMethodDataSubmission()), "UTF-8").replaceAll("\\+", "%20")));
-      } catch (UnsupportedEncodingException e) {
-        // Should never happen, UTF-8 is always supported
-        throw new RuntimeException(e);
-      }
+        /**
+        * Convert the instance into URL query string.
+        *
+        * @param prefix prefix of the query string
+        * @return URL query string
+        */
+        public String toUrlQueryString(String prefix) {
+        String suffix = "";
+        String containerSuffix = "";
+        String containerPrefix = "";
+        if (prefix == null) {
+        // style=form, explode=true, e.g. /pet?name=cat&type=manx
+        prefix = "";
+        } else {
+        // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+        prefix = prefix + "[";
+        suffix = "]";
+        containerSuffix = "]";
+        containerPrefix = "[";
+        }
+
+        StringJoiner joiner = new StringJoiner("&");
+
+            // add `three_ds_method_data_submission` to the URL query string
+                        if (getThreeDsMethodDataSubmission() != null) {
+                        try {
+                        joiner.add(String.format("%sthree_ds_method_data_submission%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getThreeDsMethodDataSubmission()), "UTF-8").replaceAll("\\+", "%20")));
+                        } catch (UnsupportedEncodingException e) {
+                        // Should never happen, UTF-8 is always supported
+                        throw new RuntimeException(e);
+                        }
+                        }
+
+            // add `three_ds_method_data` to the URL query string
+                        if (getThreeDsMethodData() != null) {
+                        try {
+                        joiner.add(String.format("%sthree_ds_method_data%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getThreeDsMethodData()), "UTF-8").replaceAll("\\+", "%20")));
+                        } catch (UnsupportedEncodingException e) {
+                        // Should never happen, UTF-8 is always supported
+                        throw new RuntimeException(e);
+                        }
+                        }
+
+            // add `three_ds_method_url` to the URL query string
+                        if (getThreeDsMethodUrl() != null) {
+                        try {
+                        joiner.add(String.format("%sthree_ds_method_url%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getThreeDsMethodUrl()), "UTF-8").replaceAll("\\+", "%20")));
+                        } catch (UnsupportedEncodingException e) {
+                        // Should never happen, UTF-8 is always supported
+                        throw new RuntimeException(e);
+                        }
+                        }
+
+            // add `three_ds_method_key` to the URL query string
+                        if (getThreeDsMethodKey() != null) {
+                        try {
+                        joiner.add(String.format("%sthree_ds_method_key%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getThreeDsMethodKey()), "UTF-8").replaceAll("\\+", "%20")));
+                        } catch (UnsupportedEncodingException e) {
+                        // Should never happen, UTF-8 is always supported
+                        throw new RuntimeException(e);
+                        }
+                        }
+
+        return joiner.toString();
+        }
+
     }
-
-    // add `three_ds_method_data` to the URL query string
-    if (getThreeDsMethodData() != null) {
-      try {
-        joiner.add(String.format("%sthree_ds_method_data%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getThreeDsMethodData()), "UTF-8").replaceAll("\\+", "%20")));
-      } catch (UnsupportedEncodingException e) {
-        // Should never happen, UTF-8 is always supported
-        throw new RuntimeException(e);
-      }
-    }
-
-    // add `three_ds_method_url` to the URL query string
-    if (getThreeDsMethodUrl() != null) {
-      try {
-        joiner.add(String.format("%sthree_ds_method_url%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getThreeDsMethodUrl()), "UTF-8").replaceAll("\\+", "%20")));
-      } catch (UnsupportedEncodingException e) {
-        // Should never happen, UTF-8 is always supported
-        throw new RuntimeException(e);
-      }
-    }
-
-    // add `three_ds_method_key` to the URL query string
-    if (getThreeDsMethodKey() != null) {
-      try {
-        joiner.add(String.format("%sthree_ds_method_key%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getThreeDsMethodKey()), "UTF-8").replaceAll("\\+", "%20")));
-      } catch (UnsupportedEncodingException e) {
-        // Should never happen, UTF-8 is always supported
-        throw new RuntimeException(e);
-      }
-    }
-
-    return joiner.toString();
-  }
-
-}
 

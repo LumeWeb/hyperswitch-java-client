@@ -32,350 +32,351 @@ import java.net.URLEncoder;
 import java.util.StringJoiner;
 
 /**
- * PaymentsRetrieveRequest
- */
-@JsonPropertyOrder({
-  PaymentsRetrieveRequest.JSON_PROPERTY_RESOURCE_ID,
-  PaymentsRetrieveRequest.JSON_PROPERTY_MERCHANT_ID,
-  PaymentsRetrieveRequest.JSON_PROPERTY_FORCE_SYNC,
-  PaymentsRetrieveRequest.JSON_PROPERTY_PARAM,
-  PaymentsRetrieveRequest.JSON_PROPERTY_CONNECTOR,
-  PaymentsRetrieveRequest.JSON_PROPERTY_MERCHANT_CONNECTOR_DETAILS,
-  PaymentsRetrieveRequest.JSON_PROPERTY_CLIENT_SECRET,
-  PaymentsRetrieveRequest.JSON_PROPERTY_EXPAND_CAPTURES,
-  PaymentsRetrieveRequest.JSON_PROPERTY_EXPAND_ATTEMPTS
-})
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+* PaymentsRetrieveRequest
+*/
+    @JsonPropertyOrder({
+        PaymentsRetrieveRequest.JSON_PROPERTY_RESOURCE_ID,
+        PaymentsRetrieveRequest.JSON_PROPERTY_MERCHANT_ID,
+        PaymentsRetrieveRequest.JSON_PROPERTY_FORCE_SYNC,
+        PaymentsRetrieveRequest.JSON_PROPERTY_PARAM,
+        PaymentsRetrieveRequest.JSON_PROPERTY_CONNECTOR,
+        PaymentsRetrieveRequest.JSON_PROPERTY_MERCHANT_CONNECTOR_DETAILS,
+        PaymentsRetrieveRequest.JSON_PROPERTY_CLIENT_SECRET,
+        PaymentsRetrieveRequest.JSON_PROPERTY_EXPAND_CAPTURES,
+        PaymentsRetrieveRequest.JSON_PROPERTY_EXPAND_ATTEMPTS
+    })
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class PaymentsRetrieveRequest {
-  public static final String JSON_PROPERTY_RESOURCE_ID = "resource_id";
-  private String resourceId;
+        public static final String JSON_PROPERTY_RESOURCE_ID = "resource_id";
+    @javax.annotation.Nonnull
+            private String resourceId;
 
-  public static final String JSON_PROPERTY_MERCHANT_ID = "merchant_id";
-  private JsonNullable<String> merchantId = JsonNullable.<String>undefined();
+        public static final String JSON_PROPERTY_MERCHANT_ID = "merchant_id";
+    @javax.annotation.Nullable
+            private JsonNullable<String> merchantId = JsonNullable.<String>undefined();
 
-  public static final String JSON_PROPERTY_FORCE_SYNC = "force_sync";
-  private Boolean forceSync;
+        public static final String JSON_PROPERTY_FORCE_SYNC = "force_sync";
+    @javax.annotation.Nonnull
+            private Boolean forceSync;
 
-  public static final String JSON_PROPERTY_PARAM = "param";
-  private JsonNullable<String> param = JsonNullable.<String>undefined();
+        public static final String JSON_PROPERTY_PARAM = "param";
+    @javax.annotation.Nullable
+            private JsonNullable<String> param = JsonNullable.<String>undefined();
 
-  public static final String JSON_PROPERTY_CONNECTOR = "connector";
-  private JsonNullable<String> connector = JsonNullable.<String>undefined();
+        public static final String JSON_PROPERTY_CONNECTOR = "connector";
+    @javax.annotation.Nullable
+            private JsonNullable<String> connector = JsonNullable.<String>undefined();
 
-  public static final String JSON_PROPERTY_MERCHANT_CONNECTOR_DETAILS = "merchant_connector_details";
-  private JsonNullable<MerchantConnectorDetailsWrap> merchantConnectorDetails = JsonNullable.<MerchantConnectorDetailsWrap>undefined();
+        public static final String JSON_PROPERTY_MERCHANT_CONNECTOR_DETAILS = "merchant_connector_details";
+    @javax.annotation.Nullable
+            private JsonNullable<MerchantConnectorDetailsWrap> merchantConnectorDetails = JsonNullable.<MerchantConnectorDetailsWrap>undefined();
 
-  public static final String JSON_PROPERTY_CLIENT_SECRET = "client_secret";
-  private JsonNullable<String> clientSecret = JsonNullable.<String>undefined();
+        public static final String JSON_PROPERTY_CLIENT_SECRET = "client_secret";
+    @javax.annotation.Nullable
+            private JsonNullable<String> clientSecret = JsonNullable.<String>undefined();
 
-  public static final String JSON_PROPERTY_EXPAND_CAPTURES = "expand_captures";
-  private JsonNullable<Boolean> expandCaptures = JsonNullable.<Boolean>undefined();
+        public static final String JSON_PROPERTY_EXPAND_CAPTURES = "expand_captures";
+    @javax.annotation.Nullable
+            private JsonNullable<Boolean> expandCaptures = JsonNullable.<Boolean>undefined();
 
-  public static final String JSON_PROPERTY_EXPAND_ATTEMPTS = "expand_attempts";
-  private JsonNullable<Boolean> expandAttempts = JsonNullable.<Boolean>undefined();
+        public static final String JSON_PROPERTY_EXPAND_ATTEMPTS = "expand_attempts";
+    @javax.annotation.Nullable
+            private JsonNullable<Boolean> expandAttempts = JsonNullable.<Boolean>undefined();
 
-  public PaymentsRetrieveRequest() {
-  }
+public PaymentsRetrieveRequest() {
+}
 
-  public PaymentsRetrieveRequest resourceId(String resourceId) {
-    
-    this.resourceId = resourceId;
-    return this;
-  }
+        public PaymentsRetrieveRequest resourceId(@javax.annotation.Nonnull String resourceId) {
+        
+        this.resourceId = resourceId;
+        return this;
+        }
 
-   /**
-   * The type of ID (ex: payment intent id, payment attempt id or connector txn id)
-   * @return resourceId
-  **/
-  @javax.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_RESOURCE_ID)
+    /**
+        * The type of ID (ex: payment intent id, payment attempt id or connector txn id)
+    * @return resourceId
+    */
+    @javax.annotation.Nonnull
+      @JsonProperty(JSON_PROPERTY_RESOURCE_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-  public String getResourceId() {
-    return resourceId;
-  }
+    public String getResourceId() {
+        return resourceId;
+    }
 
 
-  @JsonProperty(JSON_PROPERTY_RESOURCE_ID)
+          @JsonProperty(JSON_PROPERTY_RESOURCE_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setResourceId(String resourceId) {
-    this.resourceId = resourceId;
-  }
+  public void setResourceId(@javax.annotation.Nonnull String resourceId) {
+            this.resourceId = resourceId;
+        }
 
+        public PaymentsRetrieveRequest merchantId(@javax.annotation.Nullable String merchantId) {
+        this.merchantId = JsonNullable.<String>of(merchantId);
+        
+        return this;
+        }
 
-  public PaymentsRetrieveRequest merchantId(String merchantId) {
-    this.merchantId = JsonNullable.<String>of(merchantId);
+    /**
+        * The identifier for the Merchant Account.
+    * @return merchantId
+    */
+    @javax.annotation.Nullable
+        @JsonIgnore
     
-    return this;
-  }
+    public String getMerchantId() {
+                return merchantId.orElse(null);
+    }
 
-   /**
-   * The identifier for the Merchant Account.
-   * @return merchantId
-  **/
-  @javax.annotation.Nullable
-  @JsonIgnore
-
-  public String getMerchantId() {
-        return merchantId.orElse(null);
-  }
-
-  @JsonProperty(JSON_PROPERTY_MERCHANT_ID)
+          @JsonProperty(JSON_PROPERTY_MERCHANT_ID)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-  public JsonNullable<String> getMerchantId_JsonNullable() {
-    return merchantId;
-  }
-  
-  @JsonProperty(JSON_PROPERTY_MERCHANT_ID)
-  public void setMerchantId_JsonNullable(JsonNullable<String> merchantId) {
-    this.merchantId = merchantId;
-  }
-
-  public void setMerchantId(String merchantId) {
-    this.merchantId = JsonNullable.<String>of(merchantId);
-  }
-
-
-  public PaymentsRetrieveRequest forceSync(Boolean forceSync) {
+        public JsonNullable<String> getMerchantId_JsonNullable() {
+        return merchantId;
+        }
     
-    this.forceSync = forceSync;
-    return this;
-  }
+        @JsonProperty(JSON_PROPERTY_MERCHANT_ID)
+        public void setMerchantId_JsonNullable(JsonNullable<String> merchantId) {
+        this.merchantId = merchantId;
+        }
 
-   /**
-   * Decider to enable or disable the connector call for retrieve request
-   * @return forceSync
-  **/
-  @javax.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_FORCE_SYNC)
+          public void setMerchantId(@javax.annotation.Nullable String merchantId) {
+            this.merchantId = JsonNullable.<String>of(merchantId);
+        }
+
+        public PaymentsRetrieveRequest forceSync(@javax.annotation.Nonnull Boolean forceSync) {
+        
+        this.forceSync = forceSync;
+        return this;
+        }
+
+    /**
+        * Decider to enable or disable the connector call for retrieve request
+    * @return forceSync
+    */
+    @javax.annotation.Nonnull
+      @JsonProperty(JSON_PROPERTY_FORCE_SYNC)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-  public Boolean getForceSync() {
-    return forceSync;
-  }
+    public Boolean getForceSync() {
+        return forceSync;
+    }
 
 
-  @JsonProperty(JSON_PROPERTY_FORCE_SYNC)
+          @JsonProperty(JSON_PROPERTY_FORCE_SYNC)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setForceSync(Boolean forceSync) {
-    this.forceSync = forceSync;
-  }
+  public void setForceSync(@javax.annotation.Nonnull Boolean forceSync) {
+            this.forceSync = forceSync;
+        }
 
+        public PaymentsRetrieveRequest param(@javax.annotation.Nullable String param) {
+        this.param = JsonNullable.<String>of(param);
+        
+        return this;
+        }
 
-  public PaymentsRetrieveRequest param(String param) {
-    this.param = JsonNullable.<String>of(param);
+    /**
+        * The parameters passed to a retrieve request
+    * @return param
+    */
+    @javax.annotation.Nullable
+        @JsonIgnore
     
-    return this;
-  }
+    public String getParam() {
+                return param.orElse(null);
+    }
 
-   /**
-   * The parameters passed to a retrieve request
-   * @return param
-  **/
-  @javax.annotation.Nullable
-  @JsonIgnore
-
-  public String getParam() {
-        return param.orElse(null);
-  }
-
-  @JsonProperty(JSON_PROPERTY_PARAM)
+          @JsonProperty(JSON_PROPERTY_PARAM)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-  public JsonNullable<String> getParam_JsonNullable() {
-    return param;
-  }
-  
-  @JsonProperty(JSON_PROPERTY_PARAM)
-  public void setParam_JsonNullable(JsonNullable<String> param) {
-    this.param = param;
-  }
-
-  public void setParam(String param) {
-    this.param = JsonNullable.<String>of(param);
-  }
-
-
-  public PaymentsRetrieveRequest connector(String connector) {
-    this.connector = JsonNullable.<String>of(connector);
+        public JsonNullable<String> getParam_JsonNullable() {
+        return param;
+        }
     
-    return this;
-  }
+        @JsonProperty(JSON_PROPERTY_PARAM)
+        public void setParam_JsonNullable(JsonNullable<String> param) {
+        this.param = param;
+        }
 
-   /**
-   * The name of the connector
-   * @return connector
-  **/
-  @javax.annotation.Nullable
-  @JsonIgnore
+          public void setParam(@javax.annotation.Nullable String param) {
+            this.param = JsonNullable.<String>of(param);
+        }
 
-  public String getConnector() {
-        return connector.orElse(null);
-  }
+        public PaymentsRetrieveRequest connector(@javax.annotation.Nullable String connector) {
+        this.connector = JsonNullable.<String>of(connector);
+        
+        return this;
+        }
 
-  @JsonProperty(JSON_PROPERTY_CONNECTOR)
+    /**
+        * The name of the connector
+    * @return connector
+    */
+    @javax.annotation.Nullable
+        @JsonIgnore
+    
+    public String getConnector() {
+                return connector.orElse(null);
+    }
+
+          @JsonProperty(JSON_PROPERTY_CONNECTOR)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-  public JsonNullable<String> getConnector_JsonNullable() {
-    return connector;
-  }
-  
-  @JsonProperty(JSON_PROPERTY_CONNECTOR)
-  public void setConnector_JsonNullable(JsonNullable<String> connector) {
-    this.connector = connector;
-  }
-
-  public void setConnector(String connector) {
-    this.connector = JsonNullable.<String>of(connector);
-  }
-
-
-  public PaymentsRetrieveRequest merchantConnectorDetails(MerchantConnectorDetailsWrap merchantConnectorDetails) {
-    this.merchantConnectorDetails = JsonNullable.<MerchantConnectorDetailsWrap>of(merchantConnectorDetails);
+        public JsonNullable<String> getConnector_JsonNullable() {
+        return connector;
+        }
     
-    return this;
-  }
+        @JsonProperty(JSON_PROPERTY_CONNECTOR)
+        public void setConnector_JsonNullable(JsonNullable<String> connector) {
+        this.connector = connector;
+        }
 
-   /**
-   * Get merchantConnectorDetails
-   * @return merchantConnectorDetails
-  **/
-  @javax.annotation.Nullable
-  @JsonIgnore
+          public void setConnector(@javax.annotation.Nullable String connector) {
+            this.connector = JsonNullable.<String>of(connector);
+        }
 
-  public MerchantConnectorDetailsWrap getMerchantConnectorDetails() {
-        return merchantConnectorDetails.orElse(null);
-  }
+        public PaymentsRetrieveRequest merchantConnectorDetails(@javax.annotation.Nullable MerchantConnectorDetailsWrap merchantConnectorDetails) {
+        this.merchantConnectorDetails = JsonNullable.<MerchantConnectorDetailsWrap>of(merchantConnectorDetails);
+        
+        return this;
+        }
 
-  @JsonProperty(JSON_PROPERTY_MERCHANT_CONNECTOR_DETAILS)
+    /**
+        * Get merchantConnectorDetails
+    * @return merchantConnectorDetails
+    */
+    @javax.annotation.Nullable
+        @JsonIgnore
+    
+    public MerchantConnectorDetailsWrap getMerchantConnectorDetails() {
+                return merchantConnectorDetails.orElse(null);
+    }
+
+          @JsonProperty(JSON_PROPERTY_MERCHANT_CONNECTOR_DETAILS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-  public JsonNullable<MerchantConnectorDetailsWrap> getMerchantConnectorDetails_JsonNullable() {
-    return merchantConnectorDetails;
-  }
-  
-  @JsonProperty(JSON_PROPERTY_MERCHANT_CONNECTOR_DETAILS)
-  public void setMerchantConnectorDetails_JsonNullable(JsonNullable<MerchantConnectorDetailsWrap> merchantConnectorDetails) {
-    this.merchantConnectorDetails = merchantConnectorDetails;
-  }
-
-  public void setMerchantConnectorDetails(MerchantConnectorDetailsWrap merchantConnectorDetails) {
-    this.merchantConnectorDetails = JsonNullable.<MerchantConnectorDetailsWrap>of(merchantConnectorDetails);
-  }
-
-
-  public PaymentsRetrieveRequest clientSecret(String clientSecret) {
-    this.clientSecret = JsonNullable.<String>of(clientSecret);
+        public JsonNullable<MerchantConnectorDetailsWrap> getMerchantConnectorDetails_JsonNullable() {
+        return merchantConnectorDetails;
+        }
     
-    return this;
-  }
+        @JsonProperty(JSON_PROPERTY_MERCHANT_CONNECTOR_DETAILS)
+        public void setMerchantConnectorDetails_JsonNullable(JsonNullable<MerchantConnectorDetailsWrap> merchantConnectorDetails) {
+        this.merchantConnectorDetails = merchantConnectorDetails;
+        }
 
-   /**
-   * This is a token which expires after 15 minutes, used from the client to authenticate and create sessions from the SDK
-   * @return clientSecret
-  **/
-  @javax.annotation.Nullable
-  @JsonIgnore
+          public void setMerchantConnectorDetails(@javax.annotation.Nullable MerchantConnectorDetailsWrap merchantConnectorDetails) {
+            this.merchantConnectorDetails = JsonNullable.<MerchantConnectorDetailsWrap>of(merchantConnectorDetails);
+        }
 
-  public String getClientSecret() {
-        return clientSecret.orElse(null);
-  }
+        public PaymentsRetrieveRequest clientSecret(@javax.annotation.Nullable String clientSecret) {
+        this.clientSecret = JsonNullable.<String>of(clientSecret);
+        
+        return this;
+        }
 
-  @JsonProperty(JSON_PROPERTY_CLIENT_SECRET)
+    /**
+        * This is a token which expires after 15 minutes, used from the client to authenticate and create sessions from the SDK
+    * @return clientSecret
+    */
+    @javax.annotation.Nullable
+        @JsonIgnore
+    
+    public String getClientSecret() {
+                return clientSecret.orElse(null);
+    }
+
+          @JsonProperty(JSON_PROPERTY_CLIENT_SECRET)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-  public JsonNullable<String> getClientSecret_JsonNullable() {
-    return clientSecret;
-  }
-  
-  @JsonProperty(JSON_PROPERTY_CLIENT_SECRET)
-  public void setClientSecret_JsonNullable(JsonNullable<String> clientSecret) {
-    this.clientSecret = clientSecret;
-  }
-
-  public void setClientSecret(String clientSecret) {
-    this.clientSecret = JsonNullable.<String>of(clientSecret);
-  }
-
-
-  public PaymentsRetrieveRequest expandCaptures(Boolean expandCaptures) {
-    this.expandCaptures = JsonNullable.<Boolean>of(expandCaptures);
+        public JsonNullable<String> getClientSecret_JsonNullable() {
+        return clientSecret;
+        }
     
-    return this;
-  }
+        @JsonProperty(JSON_PROPERTY_CLIENT_SECRET)
+        public void setClientSecret_JsonNullable(JsonNullable<String> clientSecret) {
+        this.clientSecret = clientSecret;
+        }
 
-   /**
-   * If enabled provides list of captures linked to latest attempt
-   * @return expandCaptures
-  **/
-  @javax.annotation.Nullable
-  @JsonIgnore
+          public void setClientSecret(@javax.annotation.Nullable String clientSecret) {
+            this.clientSecret = JsonNullable.<String>of(clientSecret);
+        }
 
-  public Boolean getExpandCaptures() {
-        return expandCaptures.orElse(null);
-  }
+        public PaymentsRetrieveRequest expandCaptures(@javax.annotation.Nullable Boolean expandCaptures) {
+        this.expandCaptures = JsonNullable.<Boolean>of(expandCaptures);
+        
+        return this;
+        }
 
-  @JsonProperty(JSON_PROPERTY_EXPAND_CAPTURES)
+    /**
+        * If enabled provides list of captures linked to latest attempt
+    * @return expandCaptures
+    */
+    @javax.annotation.Nullable
+        @JsonIgnore
+    
+    public Boolean getExpandCaptures() {
+                return expandCaptures.orElse(null);
+    }
+
+          @JsonProperty(JSON_PROPERTY_EXPAND_CAPTURES)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-  public JsonNullable<Boolean> getExpandCaptures_JsonNullable() {
-    return expandCaptures;
-  }
-  
-  @JsonProperty(JSON_PROPERTY_EXPAND_CAPTURES)
-  public void setExpandCaptures_JsonNullable(JsonNullable<Boolean> expandCaptures) {
-    this.expandCaptures = expandCaptures;
-  }
-
-  public void setExpandCaptures(Boolean expandCaptures) {
-    this.expandCaptures = JsonNullable.<Boolean>of(expandCaptures);
-  }
-
-
-  public PaymentsRetrieveRequest expandAttempts(Boolean expandAttempts) {
-    this.expandAttempts = JsonNullable.<Boolean>of(expandAttempts);
+        public JsonNullable<Boolean> getExpandCaptures_JsonNullable() {
+        return expandCaptures;
+        }
     
-    return this;
-  }
+        @JsonProperty(JSON_PROPERTY_EXPAND_CAPTURES)
+        public void setExpandCaptures_JsonNullable(JsonNullable<Boolean> expandCaptures) {
+        this.expandCaptures = expandCaptures;
+        }
 
-   /**
-   * If enabled provides list of attempts linked to payment intent
-   * @return expandAttempts
-  **/
-  @javax.annotation.Nullable
-  @JsonIgnore
+          public void setExpandCaptures(@javax.annotation.Nullable Boolean expandCaptures) {
+            this.expandCaptures = JsonNullable.<Boolean>of(expandCaptures);
+        }
 
-  public Boolean getExpandAttempts() {
-        return expandAttempts.orElse(null);
-  }
+        public PaymentsRetrieveRequest expandAttempts(@javax.annotation.Nullable Boolean expandAttempts) {
+        this.expandAttempts = JsonNullable.<Boolean>of(expandAttempts);
+        
+        return this;
+        }
 
-  @JsonProperty(JSON_PROPERTY_EXPAND_ATTEMPTS)
+    /**
+        * If enabled provides list of attempts linked to payment intent
+    * @return expandAttempts
+    */
+    @javax.annotation.Nullable
+        @JsonIgnore
+    
+    public Boolean getExpandAttempts() {
+                return expandAttempts.orElse(null);
+    }
+
+          @JsonProperty(JSON_PROPERTY_EXPAND_ATTEMPTS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-  public JsonNullable<Boolean> getExpandAttempts_JsonNullable() {
-    return expandAttempts;
-  }
-  
-  @JsonProperty(JSON_PROPERTY_EXPAND_ATTEMPTS)
-  public void setExpandAttempts_JsonNullable(JsonNullable<Boolean> expandAttempts) {
-    this.expandAttempts = expandAttempts;
-  }
+        public JsonNullable<Boolean> getExpandAttempts_JsonNullable() {
+        return expandAttempts;
+        }
+    
+        @JsonProperty(JSON_PROPERTY_EXPAND_ATTEMPTS)
+        public void setExpandAttempts_JsonNullable(JsonNullable<Boolean> expandAttempts) {
+        this.expandAttempts = expandAttempts;
+        }
 
-  public void setExpandAttempts(Boolean expandAttempts) {
-    this.expandAttempts = JsonNullable.<Boolean>of(expandAttempts);
-  }
+          public void setExpandAttempts(@javax.annotation.Nullable Boolean expandAttempts) {
+            this.expandAttempts = JsonNullable.<Boolean>of(expandAttempts);
+        }
 
-  @Override
-  public boolean equals(Object o) {
+@Override
+public boolean equals(Object o) {
     if (this == o) {
-      return true;
+    return true;
     }
     if (o == null || getClass() != o.getClass()) {
-      return false;
+    return false;
     }
-    PaymentsRetrieveRequest paymentsRetrieveRequest = (PaymentsRetrieveRequest) o;
-    return Objects.equals(this.resourceId, paymentsRetrieveRequest.resourceId) &&
+        PaymentsRetrieveRequest paymentsRetrieveRequest = (PaymentsRetrieveRequest) o;
+        return Objects.equals(this.resourceId, paymentsRetrieveRequest.resourceId) &&
         equalsNullable(this.merchantId, paymentsRetrieveRequest.merchantId) &&
         Objects.equals(this.forceSync, paymentsRetrieveRequest.forceSync) &&
         equalsNullable(this.param, paymentsRetrieveRequest.param) &&
@@ -384,171 +385,171 @@ public class PaymentsRetrieveRequest {
         equalsNullable(this.clientSecret, paymentsRetrieveRequest.clientSecret) &&
         equalsNullable(this.expandCaptures, paymentsRetrieveRequest.expandCaptures) &&
         equalsNullable(this.expandAttempts, paymentsRetrieveRequest.expandAttempts);
-  }
+}
 
-  private static <T> boolean equalsNullable(JsonNullable<T> a, JsonNullable<T> b) {
-    return a == b || (a != null && b != null && a.isPresent() && b.isPresent() && Objects.deepEquals(a.get(), b.get()));
-  }
+    private static <T> boolean equalsNullable(JsonNullable<T> a, JsonNullable<T> b) {
+        return a == b || (a != null && b != null && a.isPresent() && b.isPresent() && Objects.deepEquals(a.get(), b.get()));
+        }
 
-  @Override
-  public int hashCode() {
-    return Objects.hash(resourceId, hashCodeNullable(merchantId), forceSync, hashCodeNullable(param), hashCodeNullable(connector), hashCodeNullable(merchantConnectorDetails), hashCodeNullable(clientSecret), hashCodeNullable(expandCaptures), hashCodeNullable(expandAttempts));
-  }
-
-  private static <T> int hashCodeNullable(JsonNullable<T> a) {
-    if (a == null) {
-      return 1;
+    @Override
+    public int hashCode() {
+        return Objects.hash(resourceId, hashCodeNullable(merchantId), forceSync, hashCodeNullable(param), hashCodeNullable(connector), hashCodeNullable(merchantConnectorDetails), hashCodeNullable(clientSecret), hashCodeNullable(expandCaptures), hashCodeNullable(expandAttempts));
     }
-    return a.isPresent() ? Arrays.deepHashCode(new Object[]{a.get()}) : 31;
-  }
 
-  @Override
-  public String toString() {
+        private static <T> int hashCodeNullable(JsonNullable<T> a) {
+        if (a == null) {
+        return 1;
+        }
+        return a.isPresent() ? Arrays.deepHashCode(new Object[]{a.get()}) : 31;
+        }
+
+    @Override
+    public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class PaymentsRetrieveRequest {\n");
-    sb.append("    resourceId: ").append(toIndentedString(resourceId)).append("\n");
-    sb.append("    merchantId: ").append(toIndentedString(merchantId)).append("\n");
-    sb.append("    forceSync: ").append(toIndentedString(forceSync)).append("\n");
-    sb.append("    param: ").append(toIndentedString(param)).append("\n");
-    sb.append("    connector: ").append(toIndentedString(connector)).append("\n");
-    sb.append("    merchantConnectorDetails: ").append(toIndentedString(merchantConnectorDetails)).append("\n");
-    sb.append("    clientSecret: ").append(toIndentedString(clientSecret)).append("\n");
-    sb.append("    expandCaptures: ").append(toIndentedString(expandCaptures)).append("\n");
-    sb.append("    expandAttempts: ").append(toIndentedString(expandAttempts)).append("\n");
+        sb.append("    resourceId: ").append(toIndentedString(resourceId)).append("\n");
+        sb.append("    merchantId: ").append(toIndentedString(merchantId)).append("\n");
+        sb.append("    forceSync: ").append(toIndentedString(forceSync)).append("\n");
+        sb.append("    param: ").append(toIndentedString(param)).append("\n");
+        sb.append("    connector: ").append(toIndentedString(connector)).append("\n");
+        sb.append("    merchantConnectorDetails: ").append(toIndentedString(merchantConnectorDetails)).append("\n");
+        sb.append("    clientSecret: ").append(toIndentedString(clientSecret)).append("\n");
+        sb.append("    expandCaptures: ").append(toIndentedString(expandCaptures)).append("\n");
+        sb.append("    expandAttempts: ").append(toIndentedString(expandAttempts)).append("\n");
     sb.append("}");
     return sb.toString();
-  }
+    }
 
-  /**
-   * Convert the given object to string with each line indented by 4 spaces
-   * (except the first line).
-   */
-  private String toIndentedString(Object o) {
+    /**
+    * Convert the given object to string with each line indented by 4 spaces
+    * (except the first line).
+    */
+    private String toIndentedString(Object o) {
     if (o == null) {
-      return "null";
+    return "null";
     }
     return o.toString().replace("\n", "\n    ");
-  }
-
-  /**
-   * Convert the instance into URL query string.
-   *
-   * @return URL query string
-   */
-  public String toUrlQueryString() {
-    return toUrlQueryString(null);
-  }
-
-  /**
-   * Convert the instance into URL query string.
-   *
-   * @param prefix prefix of the query string
-   * @return URL query string
-   */
-  public String toUrlQueryString(String prefix) {
-    String suffix = "";
-    String containerSuffix = "";
-    String containerPrefix = "";
-    if (prefix == null) {
-      // style=form, explode=true, e.g. /pet?name=cat&type=manx
-      prefix = "";
-    } else {
-      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
-      prefix = prefix + "[";
-      suffix = "]";
-      containerSuffix = "]";
-      containerPrefix = "[";
     }
 
-    StringJoiner joiner = new StringJoiner("&");
+        /**
+        * Convert the instance into URL query string.
+        *
+        * @return URL query string
+        */
+        public String toUrlQueryString() {
+        return toUrlQueryString(null);
+        }
 
-    // add `resource_id` to the URL query string
-    if (getResourceId() != null) {
-      try {
-        joiner.add(String.format("%sresource_id%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getResourceId()), "UTF-8").replaceAll("\\+", "%20")));
-      } catch (UnsupportedEncodingException e) {
-        // Should never happen, UTF-8 is always supported
-        throw new RuntimeException(e);
-      }
+        /**
+        * Convert the instance into URL query string.
+        *
+        * @param prefix prefix of the query string
+        * @return URL query string
+        */
+        public String toUrlQueryString(String prefix) {
+        String suffix = "";
+        String containerSuffix = "";
+        String containerPrefix = "";
+        if (prefix == null) {
+        // style=form, explode=true, e.g. /pet?name=cat&type=manx
+        prefix = "";
+        } else {
+        // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+        prefix = prefix + "[";
+        suffix = "]";
+        containerSuffix = "]";
+        containerPrefix = "[";
+        }
+
+        StringJoiner joiner = new StringJoiner("&");
+
+            // add `resource_id` to the URL query string
+                        if (getResourceId() != null) {
+                        try {
+                        joiner.add(String.format("%sresource_id%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getResourceId()), "UTF-8").replaceAll("\\+", "%20")));
+                        } catch (UnsupportedEncodingException e) {
+                        // Should never happen, UTF-8 is always supported
+                        throw new RuntimeException(e);
+                        }
+                        }
+
+            // add `merchant_id` to the URL query string
+                        if (getMerchantId() != null) {
+                        try {
+                        joiner.add(String.format("%smerchant_id%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getMerchantId()), "UTF-8").replaceAll("\\+", "%20")));
+                        } catch (UnsupportedEncodingException e) {
+                        // Should never happen, UTF-8 is always supported
+                        throw new RuntimeException(e);
+                        }
+                        }
+
+            // add `force_sync` to the URL query string
+                        if (getForceSync() != null) {
+                        try {
+                        joiner.add(String.format("%sforce_sync%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getForceSync()), "UTF-8").replaceAll("\\+", "%20")));
+                        } catch (UnsupportedEncodingException e) {
+                        // Should never happen, UTF-8 is always supported
+                        throw new RuntimeException(e);
+                        }
+                        }
+
+            // add `param` to the URL query string
+                        if (getParam() != null) {
+                        try {
+                        joiner.add(String.format("%sparam%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getParam()), "UTF-8").replaceAll("\\+", "%20")));
+                        } catch (UnsupportedEncodingException e) {
+                        // Should never happen, UTF-8 is always supported
+                        throw new RuntimeException(e);
+                        }
+                        }
+
+            // add `connector` to the URL query string
+                        if (getConnector() != null) {
+                        try {
+                        joiner.add(String.format("%sconnector%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getConnector()), "UTF-8").replaceAll("\\+", "%20")));
+                        } catch (UnsupportedEncodingException e) {
+                        // Should never happen, UTF-8 is always supported
+                        throw new RuntimeException(e);
+                        }
+                        }
+
+            // add `merchant_connector_details` to the URL query string
+                            if (getMerchantConnectorDetails() != null) {
+                            joiner.add(getMerchantConnectorDetails().toUrlQueryString(prefix + "merchant_connector_details" + suffix));
+                            }
+
+            // add `client_secret` to the URL query string
+                        if (getClientSecret() != null) {
+                        try {
+                        joiner.add(String.format("%sclient_secret%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getClientSecret()), "UTF-8").replaceAll("\\+", "%20")));
+                        } catch (UnsupportedEncodingException e) {
+                        // Should never happen, UTF-8 is always supported
+                        throw new RuntimeException(e);
+                        }
+                        }
+
+            // add `expand_captures` to the URL query string
+                        if (getExpandCaptures() != null) {
+                        try {
+                        joiner.add(String.format("%sexpand_captures%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getExpandCaptures()), "UTF-8").replaceAll("\\+", "%20")));
+                        } catch (UnsupportedEncodingException e) {
+                        // Should never happen, UTF-8 is always supported
+                        throw new RuntimeException(e);
+                        }
+                        }
+
+            // add `expand_attempts` to the URL query string
+                        if (getExpandAttempts() != null) {
+                        try {
+                        joiner.add(String.format("%sexpand_attempts%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getExpandAttempts()), "UTF-8").replaceAll("\\+", "%20")));
+                        } catch (UnsupportedEncodingException e) {
+                        // Should never happen, UTF-8 is always supported
+                        throw new RuntimeException(e);
+                        }
+                        }
+
+        return joiner.toString();
+        }
+
     }
-
-    // add `merchant_id` to the URL query string
-    if (getMerchantId() != null) {
-      try {
-        joiner.add(String.format("%smerchant_id%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getMerchantId()), "UTF-8").replaceAll("\\+", "%20")));
-      } catch (UnsupportedEncodingException e) {
-        // Should never happen, UTF-8 is always supported
-        throw new RuntimeException(e);
-      }
-    }
-
-    // add `force_sync` to the URL query string
-    if (getForceSync() != null) {
-      try {
-        joiner.add(String.format("%sforce_sync%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getForceSync()), "UTF-8").replaceAll("\\+", "%20")));
-      } catch (UnsupportedEncodingException e) {
-        // Should never happen, UTF-8 is always supported
-        throw new RuntimeException(e);
-      }
-    }
-
-    // add `param` to the URL query string
-    if (getParam() != null) {
-      try {
-        joiner.add(String.format("%sparam%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getParam()), "UTF-8").replaceAll("\\+", "%20")));
-      } catch (UnsupportedEncodingException e) {
-        // Should never happen, UTF-8 is always supported
-        throw new RuntimeException(e);
-      }
-    }
-
-    // add `connector` to the URL query string
-    if (getConnector() != null) {
-      try {
-        joiner.add(String.format("%sconnector%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getConnector()), "UTF-8").replaceAll("\\+", "%20")));
-      } catch (UnsupportedEncodingException e) {
-        // Should never happen, UTF-8 is always supported
-        throw new RuntimeException(e);
-      }
-    }
-
-    // add `merchant_connector_details` to the URL query string
-    if (getMerchantConnectorDetails() != null) {
-      joiner.add(getMerchantConnectorDetails().toUrlQueryString(prefix + "merchant_connector_details" + suffix));
-    }
-
-    // add `client_secret` to the URL query string
-    if (getClientSecret() != null) {
-      try {
-        joiner.add(String.format("%sclient_secret%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getClientSecret()), "UTF-8").replaceAll("\\+", "%20")));
-      } catch (UnsupportedEncodingException e) {
-        // Should never happen, UTF-8 is always supported
-        throw new RuntimeException(e);
-      }
-    }
-
-    // add `expand_captures` to the URL query string
-    if (getExpandCaptures() != null) {
-      try {
-        joiner.add(String.format("%sexpand_captures%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getExpandCaptures()), "UTF-8").replaceAll("\\+", "%20")));
-      } catch (UnsupportedEncodingException e) {
-        // Should never happen, UTF-8 is always supported
-        throw new RuntimeException(e);
-      }
-    }
-
-    // add `expand_attempts` to the URL query string
-    if (getExpandAttempts() != null) {
-      try {
-        joiner.add(String.format("%sexpand_attempts%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getExpandAttempts()), "UTF-8").replaceAll("\\+", "%20")));
-      } catch (UnsupportedEncodingException e) {
-        // Should never happen, UTF-8 is always supported
-        throw new RuntimeException(e);
-      }
-    }
-
-    return joiner.toString();
-  }
-
-}
 

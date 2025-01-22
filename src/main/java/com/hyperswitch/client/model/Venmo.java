@@ -27,125 +27,126 @@ import java.net.URLEncoder;
 import java.util.StringJoiner;
 
 /**
- * Venmo
- */
-@JsonPropertyOrder({
-  Venmo.JSON_PROPERTY_TELEPHONE_NUMBER
-})
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+* Venmo
+*/
+    @JsonPropertyOrder({
+        Venmo.JSON_PROPERTY_TELEPHONE_NUMBER
+    })
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class Venmo {
-  public static final String JSON_PROPERTY_TELEPHONE_NUMBER = "telephone_number";
-  private String telephoneNumber;
+        public static final String JSON_PROPERTY_TELEPHONE_NUMBER = "telephone_number";
+    @javax.annotation.Nonnull
+            private String telephoneNumber;
 
-  public Venmo() {
-  }
+public Venmo() {
+}
 
-  public Venmo telephoneNumber(String telephoneNumber) {
-    
-    this.telephoneNumber = telephoneNumber;
-    return this;
-  }
+        public Venmo telephoneNumber(@javax.annotation.Nonnull String telephoneNumber) {
+        
+        this.telephoneNumber = telephoneNumber;
+        return this;
+        }
 
-   /**
-   * mobile number linked to venmo account
-   * @return telephoneNumber
-  **/
-  @javax.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_TELEPHONE_NUMBER)
+    /**
+        * mobile number linked to venmo account
+    * @return telephoneNumber
+    */
+    @javax.annotation.Nonnull
+      @JsonProperty(JSON_PROPERTY_TELEPHONE_NUMBER)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-  public String getTelephoneNumber() {
-    return telephoneNumber;
-  }
+    public String getTelephoneNumber() {
+        return telephoneNumber;
+    }
 
 
-  @JsonProperty(JSON_PROPERTY_TELEPHONE_NUMBER)
+          @JsonProperty(JSON_PROPERTY_TELEPHONE_NUMBER)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setTelephoneNumber(String telephoneNumber) {
-    this.telephoneNumber = telephoneNumber;
-  }
+  public void setTelephoneNumber(@javax.annotation.Nonnull String telephoneNumber) {
+            this.telephoneNumber = telephoneNumber;
+        }
 
-  @Override
-  public boolean equals(Object o) {
+@Override
+public boolean equals(Object o) {
     if (this == o) {
-      return true;
+    return true;
     }
     if (o == null || getClass() != o.getClass()) {
-      return false;
+    return false;
     }
-    Venmo venmo = (Venmo) o;
-    return Objects.equals(this.telephoneNumber, venmo.telephoneNumber);
-  }
+        Venmo venmo = (Venmo) o;
+        return Objects.equals(this.telephoneNumber, venmo.telephoneNumber);
+}
 
-  @Override
-  public int hashCode() {
-    return Objects.hash(telephoneNumber);
-  }
+    @Override
+    public int hashCode() {
+        return Objects.hash(telephoneNumber);
+    }
 
-  @Override
-  public String toString() {
+    @Override
+    public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class Venmo {\n");
-    sb.append("    telephoneNumber: ").append(toIndentedString(telephoneNumber)).append("\n");
+        sb.append("    telephoneNumber: ").append(toIndentedString(telephoneNumber)).append("\n");
     sb.append("}");
     return sb.toString();
-  }
+    }
 
-  /**
-   * Convert the given object to string with each line indented by 4 spaces
-   * (except the first line).
-   */
-  private String toIndentedString(Object o) {
+    /**
+    * Convert the given object to string with each line indented by 4 spaces
+    * (except the first line).
+    */
+    private String toIndentedString(Object o) {
     if (o == null) {
-      return "null";
+    return "null";
     }
     return o.toString().replace("\n", "\n    ");
-  }
-
-  /**
-   * Convert the instance into URL query string.
-   *
-   * @return URL query string
-   */
-  public String toUrlQueryString() {
-    return toUrlQueryString(null);
-  }
-
-  /**
-   * Convert the instance into URL query string.
-   *
-   * @param prefix prefix of the query string
-   * @return URL query string
-   */
-  public String toUrlQueryString(String prefix) {
-    String suffix = "";
-    String containerSuffix = "";
-    String containerPrefix = "";
-    if (prefix == null) {
-      // style=form, explode=true, e.g. /pet?name=cat&type=manx
-      prefix = "";
-    } else {
-      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
-      prefix = prefix + "[";
-      suffix = "]";
-      containerSuffix = "]";
-      containerPrefix = "[";
     }
 
-    StringJoiner joiner = new StringJoiner("&");
+        /**
+        * Convert the instance into URL query string.
+        *
+        * @return URL query string
+        */
+        public String toUrlQueryString() {
+        return toUrlQueryString(null);
+        }
 
-    // add `telephone_number` to the URL query string
-    if (getTelephoneNumber() != null) {
-      try {
-        joiner.add(String.format("%stelephone_number%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getTelephoneNumber()), "UTF-8").replaceAll("\\+", "%20")));
-      } catch (UnsupportedEncodingException e) {
-        // Should never happen, UTF-8 is always supported
-        throw new RuntimeException(e);
-      }
+        /**
+        * Convert the instance into URL query string.
+        *
+        * @param prefix prefix of the query string
+        * @return URL query string
+        */
+        public String toUrlQueryString(String prefix) {
+        String suffix = "";
+        String containerSuffix = "";
+        String containerPrefix = "";
+        if (prefix == null) {
+        // style=form, explode=true, e.g. /pet?name=cat&type=manx
+        prefix = "";
+        } else {
+        // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+        prefix = prefix + "[";
+        suffix = "]";
+        containerSuffix = "]";
+        containerPrefix = "[";
+        }
+
+        StringJoiner joiner = new StringJoiner("&");
+
+            // add `telephone_number` to the URL query string
+                        if (getTelephoneNumber() != null) {
+                        try {
+                        joiner.add(String.format("%stelephone_number%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getTelephoneNumber()), "UTF-8").replaceAll("\\+", "%20")));
+                        } catch (UnsupportedEncodingException e) {
+                        // Should never happen, UTF-8 is always supported
+                        throw new RuntimeException(e);
+                        }
+                        }
+
+        return joiner.toString();
+        }
+
     }
-
-    return joiner.toString();
-  }
-
-}
 

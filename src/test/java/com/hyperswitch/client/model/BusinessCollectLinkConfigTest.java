@@ -21,6 +21,7 @@ import com.fasterxml.jackson.annotation.JsonValue;
 import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
 import com.hyperswitch.client.model.EnabledPaymentMethod;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.LinkedHashSet;
 import java.util.List;
 import java.util.Set;
@@ -28,22 +29,21 @@ import org.openapitools.jackson.nullable.JsonNullable;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.openapitools.jackson.nullable.JsonNullable;
 import java.util.NoSuchElementException;
-import org.junit.Assert;
-import org.junit.Ignore;
-import org.junit.Test;
-
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Test;
 
 /**
  * Model tests for BusinessCollectLinkConfig
  */
-public class BusinessCollectLinkConfigTest {
+class BusinessCollectLinkConfigTest {
     private final BusinessCollectLinkConfig model = new BusinessCollectLinkConfig();
 
     /**
      * Model tests for BusinessCollectLinkConfig
      */
     @Test
-    public void testBusinessCollectLinkConfig() {
+    void testBusinessCollectLinkConfig() {
         // TODO: test BusinessCollectLinkConfig
     }
 
@@ -51,7 +51,7 @@ public class BusinessCollectLinkConfigTest {
      * Test the property 'logo'
      */
     @Test
-    public void logoTest() {
+    void logoTest() {
         // TODO: test logo
     }
 
@@ -59,7 +59,7 @@ public class BusinessCollectLinkConfigTest {
      * Test the property 'merchantName'
      */
     @Test
-    public void merchantNameTest() {
+    void merchantNameTest() {
         // TODO: test merchantName
     }
 
@@ -67,7 +67,7 @@ public class BusinessCollectLinkConfigTest {
      * Test the property 'theme'
      */
     @Test
-    public void themeTest() {
+    void themeTest() {
         // TODO: test theme
     }
 
@@ -75,7 +75,7 @@ public class BusinessCollectLinkConfigTest {
      * Test the property 'domainName'
      */
     @Test
-    public void domainNameTest() {
+    void domainNameTest() {
         // TODO: test domainName
     }
 
@@ -83,7 +83,7 @@ public class BusinessCollectLinkConfigTest {
      * Test the property 'allowedDomains'
      */
     @Test
-    public void allowedDomainsTest() {
+    void allowedDomainsTest() {
         // TODO: test allowedDomains
     }
 
@@ -91,7 +91,7 @@ public class BusinessCollectLinkConfigTest {
      * Test the property 'enabledPaymentMethods'
      */
     @Test
-    public void enabledPaymentMethodsTest() {
+    void enabledPaymentMethodsTest() {
         // TODO: test enabledPaymentMethods
     }
 

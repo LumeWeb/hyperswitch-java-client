@@ -22,6 +22,7 @@ import com.fasterxml.jackson.annotation.JsonTypeName;
 import com.fasterxml.jackson.annotation.JsonValue;
 import com.hyperswitch.client.model.RoutableConnectorChoice;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 import com.fasterxml.jackson.annotation.JsonTypeName;
@@ -30,175 +31,176 @@ import java.net.URLEncoder;
 import java.util.StringJoiner;
 
 /**
- * ProfileDefaultRoutingConfig
- */
-@JsonPropertyOrder({
-  ProfileDefaultRoutingConfig.JSON_PROPERTY_PROFILE_ID,
-  ProfileDefaultRoutingConfig.JSON_PROPERTY_CONNECTORS
-})
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+* ProfileDefaultRoutingConfig
+*/
+    @JsonPropertyOrder({
+        ProfileDefaultRoutingConfig.JSON_PROPERTY_PROFILE_ID,
+        ProfileDefaultRoutingConfig.JSON_PROPERTY_CONNECTORS
+    })
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class ProfileDefaultRoutingConfig {
-  public static final String JSON_PROPERTY_PROFILE_ID = "profile_id";
-  private String profileId;
+        public static final String JSON_PROPERTY_PROFILE_ID = "profile_id";
+    @javax.annotation.Nonnull
+            private String profileId;
 
-  public static final String JSON_PROPERTY_CONNECTORS = "connectors";
-  private List<RoutableConnectorChoice> connectors = new ArrayList<>();
+        public static final String JSON_PROPERTY_CONNECTORS = "connectors";
+    @javax.annotation.Nonnull
+            private List<RoutableConnectorChoice> connectors = new ArrayList<>();
 
-  public ProfileDefaultRoutingConfig() {
-  }
+public ProfileDefaultRoutingConfig() {
+}
 
-  public ProfileDefaultRoutingConfig profileId(String profileId) {
-    
-    this.profileId = profileId;
-    return this;
-  }
+        public ProfileDefaultRoutingConfig profileId(@javax.annotation.Nonnull String profileId) {
+        
+        this.profileId = profileId;
+        return this;
+        }
 
-   /**
-   * Get profileId
-   * @return profileId
-  **/
-  @javax.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_PROFILE_ID)
+    /**
+        * Get profileId
+    * @return profileId
+    */
+    @javax.annotation.Nonnull
+      @JsonProperty(JSON_PROPERTY_PROFILE_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-  public String getProfileId() {
-    return profileId;
-  }
-
-
-  @JsonProperty(JSON_PROPERTY_PROFILE_ID)
-  @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setProfileId(String profileId) {
-    this.profileId = profileId;
-  }
-
-
-  public ProfileDefaultRoutingConfig connectors(List<RoutableConnectorChoice> connectors) {
-    
-    this.connectors = connectors;
-    return this;
-  }
-
-  public ProfileDefaultRoutingConfig addConnectorsItem(RoutableConnectorChoice connectorsItem) {
-    if (this.connectors == null) {
-      this.connectors = new ArrayList<>();
+    public String getProfileId() {
+        return profileId;
     }
-    this.connectors.add(connectorsItem);
-    return this;
-  }
 
-   /**
-   * Get connectors
-   * @return connectors
-  **/
-  @javax.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_CONNECTORS)
+
+          @JsonProperty(JSON_PROPERTY_PROFILE_ID)
+  @JsonInclude(value = JsonInclude.Include.ALWAYS)
+  public void setProfileId(@javax.annotation.Nonnull String profileId) {
+            this.profileId = profileId;
+        }
+
+        public ProfileDefaultRoutingConfig connectors(@javax.annotation.Nonnull List<RoutableConnectorChoice> connectors) {
+        
+        this.connectors = connectors;
+        return this;
+        }
+
+            public ProfileDefaultRoutingConfig addConnectorsItem(RoutableConnectorChoice connectorsItem) {
+                if (this.connectors == null) {
+                this.connectors = new ArrayList<>();
+                }
+                this.connectors.add(connectorsItem);
+                return this;
+            }
+
+    /**
+        * Get connectors
+    * @return connectors
+    */
+    @javax.annotation.Nonnull
+      @JsonProperty(JSON_PROPERTY_CONNECTORS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-  public List<RoutableConnectorChoice> getConnectors() {
-    return connectors;
-  }
+    public List<RoutableConnectorChoice> getConnectors() {
+        return connectors;
+    }
 
 
-  @JsonProperty(JSON_PROPERTY_CONNECTORS)
+          @JsonProperty(JSON_PROPERTY_CONNECTORS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setConnectors(List<RoutableConnectorChoice> connectors) {
-    this.connectors = connectors;
-  }
+  public void setConnectors(@javax.annotation.Nonnull List<RoutableConnectorChoice> connectors) {
+            this.connectors = connectors;
+        }
 
-  @Override
-  public boolean equals(Object o) {
+@Override
+public boolean equals(Object o) {
     if (this == o) {
-      return true;
+    return true;
     }
     if (o == null || getClass() != o.getClass()) {
-      return false;
+    return false;
     }
-    ProfileDefaultRoutingConfig profileDefaultRoutingConfig = (ProfileDefaultRoutingConfig) o;
-    return Objects.equals(this.profileId, profileDefaultRoutingConfig.profileId) &&
+        ProfileDefaultRoutingConfig profileDefaultRoutingConfig = (ProfileDefaultRoutingConfig) o;
+        return Objects.equals(this.profileId, profileDefaultRoutingConfig.profileId) &&
         Objects.equals(this.connectors, profileDefaultRoutingConfig.connectors);
-  }
+}
 
-  @Override
-  public int hashCode() {
-    return Objects.hash(profileId, connectors);
-  }
+    @Override
+    public int hashCode() {
+        return Objects.hash(profileId, connectors);
+    }
 
-  @Override
-  public String toString() {
+    @Override
+    public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class ProfileDefaultRoutingConfig {\n");
-    sb.append("    profileId: ").append(toIndentedString(profileId)).append("\n");
-    sb.append("    connectors: ").append(toIndentedString(connectors)).append("\n");
+        sb.append("    profileId: ").append(toIndentedString(profileId)).append("\n");
+        sb.append("    connectors: ").append(toIndentedString(connectors)).append("\n");
     sb.append("}");
     return sb.toString();
-  }
+    }
 
-  /**
-   * Convert the given object to string with each line indented by 4 spaces
-   * (except the first line).
-   */
-  private String toIndentedString(Object o) {
+    /**
+    * Convert the given object to string with each line indented by 4 spaces
+    * (except the first line).
+    */
+    private String toIndentedString(Object o) {
     if (o == null) {
-      return "null";
+    return "null";
     }
     return o.toString().replace("\n", "\n    ");
-  }
-
-  /**
-   * Convert the instance into URL query string.
-   *
-   * @return URL query string
-   */
-  public String toUrlQueryString() {
-    return toUrlQueryString(null);
-  }
-
-  /**
-   * Convert the instance into URL query string.
-   *
-   * @param prefix prefix of the query string
-   * @return URL query string
-   */
-  public String toUrlQueryString(String prefix) {
-    String suffix = "";
-    String containerSuffix = "";
-    String containerPrefix = "";
-    if (prefix == null) {
-      // style=form, explode=true, e.g. /pet?name=cat&type=manx
-      prefix = "";
-    } else {
-      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
-      prefix = prefix + "[";
-      suffix = "]";
-      containerSuffix = "]";
-      containerPrefix = "[";
     }
 
-    StringJoiner joiner = new StringJoiner("&");
-
-    // add `profile_id` to the URL query string
-    if (getProfileId() != null) {
-      try {
-        joiner.add(String.format("%sprofile_id%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getProfileId()), "UTF-8").replaceAll("\\+", "%20")));
-      } catch (UnsupportedEncodingException e) {
-        // Should never happen, UTF-8 is always supported
-        throw new RuntimeException(e);
-      }
-    }
-
-    // add `connectors` to the URL query string
-    if (getConnectors() != null) {
-      for (int i = 0; i < getConnectors().size(); i++) {
-        if (getConnectors().get(i) != null) {
-          joiner.add(getConnectors().get(i).toUrlQueryString(String.format("%sconnectors%s%s", prefix, suffix,
-              "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix))));
+        /**
+        * Convert the instance into URL query string.
+        *
+        * @return URL query string
+        */
+        public String toUrlQueryString() {
+        return toUrlQueryString(null);
         }
-      }
+
+        /**
+        * Convert the instance into URL query string.
+        *
+        * @param prefix prefix of the query string
+        * @return URL query string
+        */
+        public String toUrlQueryString(String prefix) {
+        String suffix = "";
+        String containerSuffix = "";
+        String containerPrefix = "";
+        if (prefix == null) {
+        // style=form, explode=true, e.g. /pet?name=cat&type=manx
+        prefix = "";
+        } else {
+        // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+        prefix = prefix + "[";
+        suffix = "]";
+        containerSuffix = "]";
+        containerPrefix = "[";
+        }
+
+        StringJoiner joiner = new StringJoiner("&");
+
+            // add `profile_id` to the URL query string
+                        if (getProfileId() != null) {
+                        try {
+                        joiner.add(String.format("%sprofile_id%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getProfileId()), "UTF-8").replaceAll("\\+", "%20")));
+                        } catch (UnsupportedEncodingException e) {
+                        // Should never happen, UTF-8 is always supported
+                        throw new RuntimeException(e);
+                        }
+                        }
+
+            // add `connectors` to the URL query string
+                            if (getConnectors() != null) {
+                            for (int i = 0; i < getConnectors().size(); i++) {
+                            if (getConnectors().get(i) != null) {
+                            joiner.add(getConnectors().get(i).toUrlQueryString(String.format("%sconnectors%s%s", prefix, suffix,
+                            "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix))));
+                            }
+                            }
+                            }
+
+        return joiner.toString();
+        }
+
     }
-
-    return joiner.toString();
-  }
-
-}
 

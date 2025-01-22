@@ -28,121 +28,122 @@ import java.net.URLEncoder;
 import java.util.StringJoiner;
 
 /**
- * WalletDataOneOf19
- */
-@JsonPropertyOrder({
-  WalletDataOneOf19.JSON_PROPERTY_SAMSUNG_PAY
-})
-@JsonTypeName("WalletData_oneOf_19")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+* WalletDataOneOf19
+*/
+    @JsonPropertyOrder({
+        WalletDataOneOf19.JSON_PROPERTY_SAMSUNG_PAY
+    })
+            @JsonTypeName("WalletData_oneOf_19")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class WalletDataOneOf19 {
-  public static final String JSON_PROPERTY_SAMSUNG_PAY = "samsung_pay";
-  private SamsungPayWalletData samsungPay;
+        public static final String JSON_PROPERTY_SAMSUNG_PAY = "samsung_pay";
+    @javax.annotation.Nonnull
+            private SamsungPayWalletData samsungPay;
 
-  public WalletDataOneOf19() {
-  }
+public WalletDataOneOf19() {
+}
 
-  public WalletDataOneOf19 samsungPay(SamsungPayWalletData samsungPay) {
-    
-    this.samsungPay = samsungPay;
-    return this;
-  }
+        public WalletDataOneOf19 samsungPay(@javax.annotation.Nonnull SamsungPayWalletData samsungPay) {
+        
+        this.samsungPay = samsungPay;
+        return this;
+        }
 
-   /**
-   * Get samsungPay
-   * @return samsungPay
-  **/
-  @javax.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_SAMSUNG_PAY)
+    /**
+        * Get samsungPay
+    * @return samsungPay
+    */
+    @javax.annotation.Nonnull
+      @JsonProperty(JSON_PROPERTY_SAMSUNG_PAY)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-  public SamsungPayWalletData getSamsungPay() {
-    return samsungPay;
-  }
+    public SamsungPayWalletData getSamsungPay() {
+        return samsungPay;
+    }
 
 
-  @JsonProperty(JSON_PROPERTY_SAMSUNG_PAY)
+          @JsonProperty(JSON_PROPERTY_SAMSUNG_PAY)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setSamsungPay(SamsungPayWalletData samsungPay) {
-    this.samsungPay = samsungPay;
-  }
+  public void setSamsungPay(@javax.annotation.Nonnull SamsungPayWalletData samsungPay) {
+            this.samsungPay = samsungPay;
+        }
 
-  @Override
-  public boolean equals(Object o) {
+@Override
+public boolean equals(Object o) {
     if (this == o) {
-      return true;
+    return true;
     }
     if (o == null || getClass() != o.getClass()) {
-      return false;
+    return false;
     }
-    WalletDataOneOf19 walletDataOneOf19 = (WalletDataOneOf19) o;
-    return Objects.equals(this.samsungPay, walletDataOneOf19.samsungPay);
-  }
+        WalletDataOneOf19 walletDataOneOf19 = (WalletDataOneOf19) o;
+        return Objects.equals(this.samsungPay, walletDataOneOf19.samsungPay);
+}
 
-  @Override
-  public int hashCode() {
-    return Objects.hash(samsungPay);
-  }
+    @Override
+    public int hashCode() {
+        return Objects.hash(samsungPay);
+    }
 
-  @Override
-  public String toString() {
+    @Override
+    public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class WalletDataOneOf19 {\n");
-    sb.append("    samsungPay: ").append(toIndentedString(samsungPay)).append("\n");
+        sb.append("    samsungPay: ").append(toIndentedString(samsungPay)).append("\n");
     sb.append("}");
     return sb.toString();
-  }
+    }
 
-  /**
-   * Convert the given object to string with each line indented by 4 spaces
-   * (except the first line).
-   */
-  private String toIndentedString(Object o) {
+    /**
+    * Convert the given object to string with each line indented by 4 spaces
+    * (except the first line).
+    */
+    private String toIndentedString(Object o) {
     if (o == null) {
-      return "null";
+    return "null";
     }
     return o.toString().replace("\n", "\n    ");
-  }
-
-  /**
-   * Convert the instance into URL query string.
-   *
-   * @return URL query string
-   */
-  public String toUrlQueryString() {
-    return toUrlQueryString(null);
-  }
-
-  /**
-   * Convert the instance into URL query string.
-   *
-   * @param prefix prefix of the query string
-   * @return URL query string
-   */
-  public String toUrlQueryString(String prefix) {
-    String suffix = "";
-    String containerSuffix = "";
-    String containerPrefix = "";
-    if (prefix == null) {
-      // style=form, explode=true, e.g. /pet?name=cat&type=manx
-      prefix = "";
-    } else {
-      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
-      prefix = prefix + "[";
-      suffix = "]";
-      containerSuffix = "]";
-      containerPrefix = "[";
     }
 
-    StringJoiner joiner = new StringJoiner("&");
+        /**
+        * Convert the instance into URL query string.
+        *
+        * @return URL query string
+        */
+        public String toUrlQueryString() {
+        return toUrlQueryString(null);
+        }
 
-    // add `samsung_pay` to the URL query string
-    if (getSamsungPay() != null) {
-      joiner.add(getSamsungPay().toUrlQueryString(prefix + "samsung_pay" + suffix));
+        /**
+        * Convert the instance into URL query string.
+        *
+        * @param prefix prefix of the query string
+        * @return URL query string
+        */
+        public String toUrlQueryString(String prefix) {
+        String suffix = "";
+        String containerSuffix = "";
+        String containerPrefix = "";
+        if (prefix == null) {
+        // style=form, explode=true, e.g. /pet?name=cat&type=manx
+        prefix = "";
+        } else {
+        // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+        prefix = prefix + "[";
+        suffix = "]";
+        containerSuffix = "]";
+        containerPrefix = "[";
+        }
+
+        StringJoiner joiner = new StringJoiner("&");
+
+            // add `samsung_pay` to the URL query string
+                            if (getSamsungPay() != null) {
+                            joiner.add(getSamsungPay().toUrlQueryString(prefix + "samsung_pay" + suffix));
+                            }
+
+        return joiner.toString();
+        }
+
     }
-
-    return joiner.toString();
-  }
-
-}
 

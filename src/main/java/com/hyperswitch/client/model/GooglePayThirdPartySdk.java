@@ -28,204 +28,205 @@ import java.net.URLEncoder;
 import java.util.StringJoiner;
 
 /**
- * GooglePayThirdPartySdk
- */
-@JsonPropertyOrder({
-  GooglePayThirdPartySdk.JSON_PROPERTY_DELAYED_SESSION_TOKEN,
-  GooglePayThirdPartySdk.JSON_PROPERTY_CONNECTOR,
-  GooglePayThirdPartySdk.JSON_PROPERTY_SDK_NEXT_ACTION
-})
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+* GooglePayThirdPartySdk
+*/
+    @JsonPropertyOrder({
+        GooglePayThirdPartySdk.JSON_PROPERTY_DELAYED_SESSION_TOKEN,
+        GooglePayThirdPartySdk.JSON_PROPERTY_CONNECTOR,
+        GooglePayThirdPartySdk.JSON_PROPERTY_SDK_NEXT_ACTION
+    })
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class GooglePayThirdPartySdk {
-  public static final String JSON_PROPERTY_DELAYED_SESSION_TOKEN = "delayed_session_token";
-  private Boolean delayedSessionToken;
+        public static final String JSON_PROPERTY_DELAYED_SESSION_TOKEN = "delayed_session_token";
+    @javax.annotation.Nonnull
+            private Boolean delayedSessionToken;
 
-  public static final String JSON_PROPERTY_CONNECTOR = "connector";
-  private String connector;
+        public static final String JSON_PROPERTY_CONNECTOR = "connector";
+    @javax.annotation.Nonnull
+            private String connector;
 
-  public static final String JSON_PROPERTY_SDK_NEXT_ACTION = "sdk_next_action";
-  private SdkNextAction sdkNextAction;
+        public static final String JSON_PROPERTY_SDK_NEXT_ACTION = "sdk_next_action";
+    @javax.annotation.Nonnull
+            private SdkNextAction sdkNextAction;
 
-  public GooglePayThirdPartySdk() {
-  }
+public GooglePayThirdPartySdk() {
+}
 
-  public GooglePayThirdPartySdk delayedSessionToken(Boolean delayedSessionToken) {
-    
-    this.delayedSessionToken = delayedSessionToken;
-    return this;
-  }
+        public GooglePayThirdPartySdk delayedSessionToken(@javax.annotation.Nonnull Boolean delayedSessionToken) {
+        
+        this.delayedSessionToken = delayedSessionToken;
+        return this;
+        }
 
-   /**
-   * Identifier for the delayed session response
-   * @return delayedSessionToken
-  **/
-  @javax.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_DELAYED_SESSION_TOKEN)
+    /**
+        * Identifier for the delayed session response
+    * @return delayedSessionToken
+    */
+    @javax.annotation.Nonnull
+      @JsonProperty(JSON_PROPERTY_DELAYED_SESSION_TOKEN)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-  public Boolean getDelayedSessionToken() {
-    return delayedSessionToken;
-  }
+    public Boolean getDelayedSessionToken() {
+        return delayedSessionToken;
+    }
 
 
-  @JsonProperty(JSON_PROPERTY_DELAYED_SESSION_TOKEN)
+          @JsonProperty(JSON_PROPERTY_DELAYED_SESSION_TOKEN)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setDelayedSessionToken(Boolean delayedSessionToken) {
-    this.delayedSessionToken = delayedSessionToken;
-  }
+  public void setDelayedSessionToken(@javax.annotation.Nonnull Boolean delayedSessionToken) {
+            this.delayedSessionToken = delayedSessionToken;
+        }
 
+        public GooglePayThirdPartySdk connector(@javax.annotation.Nonnull String connector) {
+        
+        this.connector = connector;
+        return this;
+        }
 
-  public GooglePayThirdPartySdk connector(String connector) {
-    
-    this.connector = connector;
-    return this;
-  }
-
-   /**
-   * The name of the connector
-   * @return connector
-  **/
-  @javax.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_CONNECTOR)
-  @JsonInclude(value = JsonInclude.Include.ALWAYS)
-
-  public String getConnector() {
-    return connector;
-  }
-
-
-  @JsonProperty(JSON_PROPERTY_CONNECTOR)
-  @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setConnector(String connector) {
-    this.connector = connector;
-  }
-
-
-  public GooglePayThirdPartySdk sdkNextAction(SdkNextAction sdkNextAction) {
-    
-    this.sdkNextAction = sdkNextAction;
-    return this;
-  }
-
-   /**
-   * Get sdkNextAction
-   * @return sdkNextAction
-  **/
-  @javax.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_SDK_NEXT_ACTION)
+    /**
+        * The name of the connector
+    * @return connector
+    */
+    @javax.annotation.Nonnull
+      @JsonProperty(JSON_PROPERTY_CONNECTOR)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-  public SdkNextAction getSdkNextAction() {
-    return sdkNextAction;
-  }
+    public String getConnector() {
+        return connector;
+    }
 
 
-  @JsonProperty(JSON_PROPERTY_SDK_NEXT_ACTION)
+          @JsonProperty(JSON_PROPERTY_CONNECTOR)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setSdkNextAction(SdkNextAction sdkNextAction) {
-    this.sdkNextAction = sdkNextAction;
-  }
+  public void setConnector(@javax.annotation.Nonnull String connector) {
+            this.connector = connector;
+        }
 
-  @Override
-  public boolean equals(Object o) {
+        public GooglePayThirdPartySdk sdkNextAction(@javax.annotation.Nonnull SdkNextAction sdkNextAction) {
+        
+        this.sdkNextAction = sdkNextAction;
+        return this;
+        }
+
+    /**
+        * Get sdkNextAction
+    * @return sdkNextAction
+    */
+    @javax.annotation.Nonnull
+      @JsonProperty(JSON_PROPERTY_SDK_NEXT_ACTION)
+  @JsonInclude(value = JsonInclude.Include.ALWAYS)
+
+    public SdkNextAction getSdkNextAction() {
+        return sdkNextAction;
+    }
+
+
+          @JsonProperty(JSON_PROPERTY_SDK_NEXT_ACTION)
+  @JsonInclude(value = JsonInclude.Include.ALWAYS)
+  public void setSdkNextAction(@javax.annotation.Nonnull SdkNextAction sdkNextAction) {
+            this.sdkNextAction = sdkNextAction;
+        }
+
+@Override
+public boolean equals(Object o) {
     if (this == o) {
-      return true;
+    return true;
     }
     if (o == null || getClass() != o.getClass()) {
-      return false;
+    return false;
     }
-    GooglePayThirdPartySdk googlePayThirdPartySdk = (GooglePayThirdPartySdk) o;
-    return Objects.equals(this.delayedSessionToken, googlePayThirdPartySdk.delayedSessionToken) &&
+        GooglePayThirdPartySdk googlePayThirdPartySdk = (GooglePayThirdPartySdk) o;
+        return Objects.equals(this.delayedSessionToken, googlePayThirdPartySdk.delayedSessionToken) &&
         Objects.equals(this.connector, googlePayThirdPartySdk.connector) &&
         Objects.equals(this.sdkNextAction, googlePayThirdPartySdk.sdkNextAction);
-  }
+}
 
-  @Override
-  public int hashCode() {
-    return Objects.hash(delayedSessionToken, connector, sdkNextAction);
-  }
+    @Override
+    public int hashCode() {
+        return Objects.hash(delayedSessionToken, connector, sdkNextAction);
+    }
 
-  @Override
-  public String toString() {
+    @Override
+    public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class GooglePayThirdPartySdk {\n");
-    sb.append("    delayedSessionToken: ").append(toIndentedString(delayedSessionToken)).append("\n");
-    sb.append("    connector: ").append(toIndentedString(connector)).append("\n");
-    sb.append("    sdkNextAction: ").append(toIndentedString(sdkNextAction)).append("\n");
+        sb.append("    delayedSessionToken: ").append(toIndentedString(delayedSessionToken)).append("\n");
+        sb.append("    connector: ").append(toIndentedString(connector)).append("\n");
+        sb.append("    sdkNextAction: ").append(toIndentedString(sdkNextAction)).append("\n");
     sb.append("}");
     return sb.toString();
-  }
+    }
 
-  /**
-   * Convert the given object to string with each line indented by 4 spaces
-   * (except the first line).
-   */
-  private String toIndentedString(Object o) {
+    /**
+    * Convert the given object to string with each line indented by 4 spaces
+    * (except the first line).
+    */
+    private String toIndentedString(Object o) {
     if (o == null) {
-      return "null";
+    return "null";
     }
     return o.toString().replace("\n", "\n    ");
-  }
-
-  /**
-   * Convert the instance into URL query string.
-   *
-   * @return URL query string
-   */
-  public String toUrlQueryString() {
-    return toUrlQueryString(null);
-  }
-
-  /**
-   * Convert the instance into URL query string.
-   *
-   * @param prefix prefix of the query string
-   * @return URL query string
-   */
-  public String toUrlQueryString(String prefix) {
-    String suffix = "";
-    String containerSuffix = "";
-    String containerPrefix = "";
-    if (prefix == null) {
-      // style=form, explode=true, e.g. /pet?name=cat&type=manx
-      prefix = "";
-    } else {
-      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
-      prefix = prefix + "[";
-      suffix = "]";
-      containerSuffix = "]";
-      containerPrefix = "[";
     }
 
-    StringJoiner joiner = new StringJoiner("&");
+        /**
+        * Convert the instance into URL query string.
+        *
+        * @return URL query string
+        */
+        public String toUrlQueryString() {
+        return toUrlQueryString(null);
+        }
 
-    // add `delayed_session_token` to the URL query string
-    if (getDelayedSessionToken() != null) {
-      try {
-        joiner.add(String.format("%sdelayed_session_token%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getDelayedSessionToken()), "UTF-8").replaceAll("\\+", "%20")));
-      } catch (UnsupportedEncodingException e) {
-        // Should never happen, UTF-8 is always supported
-        throw new RuntimeException(e);
-      }
+        /**
+        * Convert the instance into URL query string.
+        *
+        * @param prefix prefix of the query string
+        * @return URL query string
+        */
+        public String toUrlQueryString(String prefix) {
+        String suffix = "";
+        String containerSuffix = "";
+        String containerPrefix = "";
+        if (prefix == null) {
+        // style=form, explode=true, e.g. /pet?name=cat&type=manx
+        prefix = "";
+        } else {
+        // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+        prefix = prefix + "[";
+        suffix = "]";
+        containerSuffix = "]";
+        containerPrefix = "[";
+        }
+
+        StringJoiner joiner = new StringJoiner("&");
+
+            // add `delayed_session_token` to the URL query string
+                        if (getDelayedSessionToken() != null) {
+                        try {
+                        joiner.add(String.format("%sdelayed_session_token%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getDelayedSessionToken()), "UTF-8").replaceAll("\\+", "%20")));
+                        } catch (UnsupportedEncodingException e) {
+                        // Should never happen, UTF-8 is always supported
+                        throw new RuntimeException(e);
+                        }
+                        }
+
+            // add `connector` to the URL query string
+                        if (getConnector() != null) {
+                        try {
+                        joiner.add(String.format("%sconnector%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getConnector()), "UTF-8").replaceAll("\\+", "%20")));
+                        } catch (UnsupportedEncodingException e) {
+                        // Should never happen, UTF-8 is always supported
+                        throw new RuntimeException(e);
+                        }
+                        }
+
+            // add `sdk_next_action` to the URL query string
+                            if (getSdkNextAction() != null) {
+                            joiner.add(getSdkNextAction().toUrlQueryString(prefix + "sdk_next_action" + suffix));
+                            }
+
+        return joiner.toString();
+        }
+
     }
-
-    // add `connector` to the URL query string
-    if (getConnector() != null) {
-      try {
-        joiner.add(String.format("%sconnector%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getConnector()), "UTF-8").replaceAll("\\+", "%20")));
-      } catch (UnsupportedEncodingException e) {
-        // Should never happen, UTF-8 is always supported
-        throw new RuntimeException(e);
-      }
-    }
-
-    // add `sdk_next_action` to the URL query string
-    if (getSdkNextAction() != null) {
-      joiner.add(getSdkNextAction().toUrlQueryString(prefix + "sdk_next_action" + suffix));
-    }
-
-    return joiner.toString();
-  }
-
-}
 

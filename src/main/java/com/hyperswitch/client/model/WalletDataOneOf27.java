@@ -28,121 +28,122 @@ import java.net.URLEncoder;
 import java.util.StringJoiner;
 
 /**
- * WalletDataOneOf27
- */
-@JsonPropertyOrder({
-  WalletDataOneOf27.JSON_PROPERTY_MIFINITY
-})
-@JsonTypeName("WalletData_oneOf_27")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+* WalletDataOneOf27
+*/
+    @JsonPropertyOrder({
+        WalletDataOneOf27.JSON_PROPERTY_MIFINITY
+    })
+            @JsonTypeName("WalletData_oneOf_27")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class WalletDataOneOf27 {
-  public static final String JSON_PROPERTY_MIFINITY = "mifinity";
-  private MifinityData mifinity;
+        public static final String JSON_PROPERTY_MIFINITY = "mifinity";
+    @javax.annotation.Nonnull
+            private MifinityData mifinity;
 
-  public WalletDataOneOf27() {
-  }
+public WalletDataOneOf27() {
+}
 
-  public WalletDataOneOf27 mifinity(MifinityData mifinity) {
-    
-    this.mifinity = mifinity;
-    return this;
-  }
+        public WalletDataOneOf27 mifinity(@javax.annotation.Nonnull MifinityData mifinity) {
+        
+        this.mifinity = mifinity;
+        return this;
+        }
 
-   /**
-   * Get mifinity
-   * @return mifinity
-  **/
-  @javax.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_MIFINITY)
+    /**
+        * Get mifinity
+    * @return mifinity
+    */
+    @javax.annotation.Nonnull
+      @JsonProperty(JSON_PROPERTY_MIFINITY)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-  public MifinityData getMifinity() {
-    return mifinity;
-  }
+    public MifinityData getMifinity() {
+        return mifinity;
+    }
 
 
-  @JsonProperty(JSON_PROPERTY_MIFINITY)
+          @JsonProperty(JSON_PROPERTY_MIFINITY)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setMifinity(MifinityData mifinity) {
-    this.mifinity = mifinity;
-  }
+  public void setMifinity(@javax.annotation.Nonnull MifinityData mifinity) {
+            this.mifinity = mifinity;
+        }
 
-  @Override
-  public boolean equals(Object o) {
+@Override
+public boolean equals(Object o) {
     if (this == o) {
-      return true;
+    return true;
     }
     if (o == null || getClass() != o.getClass()) {
-      return false;
+    return false;
     }
-    WalletDataOneOf27 walletDataOneOf27 = (WalletDataOneOf27) o;
-    return Objects.equals(this.mifinity, walletDataOneOf27.mifinity);
-  }
+        WalletDataOneOf27 walletDataOneOf27 = (WalletDataOneOf27) o;
+        return Objects.equals(this.mifinity, walletDataOneOf27.mifinity);
+}
 
-  @Override
-  public int hashCode() {
-    return Objects.hash(mifinity);
-  }
+    @Override
+    public int hashCode() {
+        return Objects.hash(mifinity);
+    }
 
-  @Override
-  public String toString() {
+    @Override
+    public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class WalletDataOneOf27 {\n");
-    sb.append("    mifinity: ").append(toIndentedString(mifinity)).append("\n");
+        sb.append("    mifinity: ").append(toIndentedString(mifinity)).append("\n");
     sb.append("}");
     return sb.toString();
-  }
+    }
 
-  /**
-   * Convert the given object to string with each line indented by 4 spaces
-   * (except the first line).
-   */
-  private String toIndentedString(Object o) {
+    /**
+    * Convert the given object to string with each line indented by 4 spaces
+    * (except the first line).
+    */
+    private String toIndentedString(Object o) {
     if (o == null) {
-      return "null";
+    return "null";
     }
     return o.toString().replace("\n", "\n    ");
-  }
-
-  /**
-   * Convert the instance into URL query string.
-   *
-   * @return URL query string
-   */
-  public String toUrlQueryString() {
-    return toUrlQueryString(null);
-  }
-
-  /**
-   * Convert the instance into URL query string.
-   *
-   * @param prefix prefix of the query string
-   * @return URL query string
-   */
-  public String toUrlQueryString(String prefix) {
-    String suffix = "";
-    String containerSuffix = "";
-    String containerPrefix = "";
-    if (prefix == null) {
-      // style=form, explode=true, e.g. /pet?name=cat&type=manx
-      prefix = "";
-    } else {
-      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
-      prefix = prefix + "[";
-      suffix = "]";
-      containerSuffix = "]";
-      containerPrefix = "[";
     }
 
-    StringJoiner joiner = new StringJoiner("&");
+        /**
+        * Convert the instance into URL query string.
+        *
+        * @return URL query string
+        */
+        public String toUrlQueryString() {
+        return toUrlQueryString(null);
+        }
 
-    // add `mifinity` to the URL query string
-    if (getMifinity() != null) {
-      joiner.add(getMifinity().toUrlQueryString(prefix + "mifinity" + suffix));
+        /**
+        * Convert the instance into URL query string.
+        *
+        * @param prefix prefix of the query string
+        * @return URL query string
+        */
+        public String toUrlQueryString(String prefix) {
+        String suffix = "";
+        String containerSuffix = "";
+        String containerPrefix = "";
+        if (prefix == null) {
+        // style=form, explode=true, e.g. /pet?name=cat&type=manx
+        prefix = "";
+        } else {
+        // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+        prefix = prefix + "[";
+        suffix = "]";
+        containerSuffix = "]";
+        containerPrefix = "[";
+        }
+
+        StringJoiner joiner = new StringJoiner("&");
+
+            // add `mifinity` to the URL query string
+                            if (getMifinity() != null) {
+                            joiner.add(getMifinity().toUrlQueryString(prefix + "mifinity" + suffix));
+                            }
+
+        return joiner.toString();
+        }
+
     }
-
-    return joiner.toString();
-  }
-
-}
 

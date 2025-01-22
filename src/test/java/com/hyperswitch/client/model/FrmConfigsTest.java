@@ -21,23 +21,23 @@ import com.fasterxml.jackson.annotation.JsonValue;
 import com.hyperswitch.client.model.ConnectorType;
 import com.hyperswitch.client.model.FrmPaymentMethod;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
-import org.junit.Assert;
-import org.junit.Ignore;
-import org.junit.Test;
-
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Test;
 
 /**
  * Model tests for FrmConfigs
  */
-public class FrmConfigsTest {
+class FrmConfigsTest {
     private final FrmConfigs model = new FrmConfigs();
 
     /**
      * Model tests for FrmConfigs
      */
     @Test
-    public void testFrmConfigs() {
+    void testFrmConfigs() {
         // TODO: test FrmConfigs
     }
 
@@ -45,7 +45,7 @@ public class FrmConfigsTest {
      * Test the property 'gateway'
      */
     @Test
-    public void gatewayTest() {
+    void gatewayTest() {
         // TODO: test gateway
     }
 
@@ -53,7 +53,7 @@ public class FrmConfigsTest {
      * Test the property 'paymentMethods'
      */
     @Test
-    public void paymentMethodsTest() {
+    void paymentMethodsTest() {
         // TODO: test paymentMethods
     }
 

@@ -20,9 +20,9 @@ import com.hyperswitch.client.model.MerchantAccountResponse;
 import com.hyperswitch.client.model.MerchantAccountUpdate;
 import com.hyperswitch.client.model.ToggleKVRequest;
 import com.hyperswitch.client.model.ToggleKVResponse;
-import org.junit.Test;
-import org.junit.Ignore;
-import org.junit.Assert;
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Test;
 
 import java.time.LocalDate;
 import java.time.OffsetDateTime;
@@ -34,7 +34,7 @@ import java.util.Map;
 /**
  * API tests for MerchantAccountApi
  */
-@Ignore
+@Disabled
 public class MerchantAccountApiTest {
 
     private final MerchantAccountApi api = new MerchantAccountApi();

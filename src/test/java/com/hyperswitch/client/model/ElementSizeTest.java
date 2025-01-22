@@ -22,22 +22,21 @@ import com.hyperswitch.client.model.ElementSizeOneOf;
 import com.hyperswitch.client.model.ElementSizeOneOf1;
 import com.hyperswitch.client.model.ElementSizeOneOf2;
 import com.hyperswitch.client.model.SizeVariants;
-import org.junit.Assert;
-import org.junit.Ignore;
-import org.junit.Test;
-
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Test;
 
 /**
  * Model tests for ElementSize
  */
-public class ElementSizeTest {
+class ElementSizeTest {
     private final ElementSize model = new ElementSize();
 
     /**
      * Model tests for ElementSize
      */
     @Test
-    public void testElementSize() {
+    void testElementSize() {
         // TODO: test ElementSize
     }
 
@@ -45,7 +44,7 @@ public class ElementSizeTest {
      * Test the property 'variants'
      */
     @Test
-    public void variantsTest() {
+    void variantsTest() {
         // TODO: test variants
     }
 
@@ -53,7 +52,7 @@ public class ElementSizeTest {
      * Test the property 'percentage'
      */
     @Test
-    public void percentageTest() {
+    void percentageTest() {
         // TODO: test percentage
     }
 
@@ -61,7 +60,7 @@ public class ElementSizeTest {
      * Test the property 'pixels'
      */
     @Test
-    public void pixelsTest() {
+    void pixelsTest() {
         // TODO: test pixels
     }
 

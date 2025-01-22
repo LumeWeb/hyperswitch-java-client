@@ -24,22 +24,21 @@ import org.openapitools.jackson.nullable.JsonNullable;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.openapitools.jackson.nullable.JsonNullable;
 import java.util.NoSuchElementException;
-import org.junit.Assert;
-import org.junit.Ignore;
-import org.junit.Test;
-
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Test;
 
 /**
  * Model tests for RetrieveApiKeyResponse
  */
-public class RetrieveApiKeyResponseTest {
+class RetrieveApiKeyResponseTest {
     private final RetrieveApiKeyResponse model = new RetrieveApiKeyResponse();
 
     /**
      * Model tests for RetrieveApiKeyResponse
      */
     @Test
-    public void testRetrieveApiKeyResponse() {
+    void testRetrieveApiKeyResponse() {
         // TODO: test RetrieveApiKeyResponse
     }
 
@@ -47,7 +46,7 @@ public class RetrieveApiKeyResponseTest {
      * Test the property 'keyId'
      */
     @Test
-    public void keyIdTest() {
+    void keyIdTest() {
         // TODO: test keyId
     }
 
@@ -55,7 +54,7 @@ public class RetrieveApiKeyResponseTest {
      * Test the property 'merchantId'
      */
     @Test
-    public void merchantIdTest() {
+    void merchantIdTest() {
         // TODO: test merchantId
     }
 
@@ -63,7 +62,7 @@ public class RetrieveApiKeyResponseTest {
      * Test the property 'name'
      */
     @Test
-    public void nameTest() {
+    void nameTest() {
         // TODO: test name
     }
 
@@ -71,7 +70,7 @@ public class RetrieveApiKeyResponseTest {
      * Test the property 'description'
      */
     @Test
-    public void descriptionTest() {
+    void descriptionTest() {
         // TODO: test description
     }
 
@@ -79,7 +78,7 @@ public class RetrieveApiKeyResponseTest {
      * Test the property 'prefix'
      */
     @Test
-    public void prefixTest() {
+    void prefixTest() {
         // TODO: test prefix
     }
 
@@ -87,7 +86,7 @@ public class RetrieveApiKeyResponseTest {
      * Test the property 'created'
      */
     @Test
-    public void createdTest() {
+    void createdTest() {
         // TODO: test created
     }
 
@@ -95,7 +94,7 @@ public class RetrieveApiKeyResponseTest {
      * Test the property 'expiration'
      */
     @Test
-    public void expirationTest() {
+    void expirationTest() {
         // TODO: test expiration
     }
 

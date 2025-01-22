@@ -54,22 +54,21 @@ import com.hyperswitch.client.model.WalletDataOneOf6;
 import com.hyperswitch.client.model.WalletDataOneOf7;
 import com.hyperswitch.client.model.WalletDataOneOf8;
 import com.hyperswitch.client.model.WalletDataOneOf9;
-import org.junit.Assert;
-import org.junit.Ignore;
-import org.junit.Test;
-
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Test;
 
 /**
  * Model tests for WalletData
  */
-public class WalletDataTest {
+class WalletDataTest {
     private final WalletData model = new WalletData();
 
     /**
      * Model tests for WalletData
      */
     @Test
-    public void testWalletData() {
+    void testWalletData() {
         // TODO: test WalletData
     }
 
@@ -77,7 +76,7 @@ public class WalletDataTest {
      * Test the property 'aliPayQr'
      */
     @Test
-    public void aliPayQrTest() {
+    void aliPayQrTest() {
         // TODO: test aliPayQr
     }
 
@@ -85,7 +84,7 @@ public class WalletDataTest {
      * Test the property 'aliPayRedirect'
      */
     @Test
-    public void aliPayRedirectTest() {
+    void aliPayRedirectTest() {
         // TODO: test aliPayRedirect
     }
 
@@ -93,7 +92,7 @@ public class WalletDataTest {
      * Test the property 'aliPayHkRedirect'
      */
     @Test
-    public void aliPayHkRedirectTest() {
+    void aliPayHkRedirectTest() {
         // TODO: test aliPayHkRedirect
     }
 
@@ -101,7 +100,7 @@ public class WalletDataTest {
      * Test the property 'momoRedirect'
      */
     @Test
-    public void momoRedirectTest() {
+    void momoRedirectTest() {
         // TODO: test momoRedirect
     }
 
@@ -109,7 +108,7 @@ public class WalletDataTest {
      * Test the property 'kakaoPayRedirect'
      */
     @Test
-    public void kakaoPayRedirectTest() {
+    void kakaoPayRedirectTest() {
         // TODO: test kakaoPayRedirect
     }
 
@@ -117,7 +116,7 @@ public class WalletDataTest {
      * Test the property 'goPayRedirect'
      */
     @Test
-    public void goPayRedirectTest() {
+    void goPayRedirectTest() {
         // TODO: test goPayRedirect
     }
 
@@ -125,7 +124,7 @@ public class WalletDataTest {
      * Test the property 'gcashRedirect'
      */
     @Test
-    public void gcashRedirectTest() {
+    void gcashRedirectTest() {
         // TODO: test gcashRedirect
     }
 
@@ -133,7 +132,7 @@ public class WalletDataTest {
      * Test the property 'applePay'
      */
     @Test
-    public void applePayTest() {
+    void applePayTest() {
         // TODO: test applePay
     }
 
@@ -141,7 +140,7 @@ public class WalletDataTest {
      * Test the property 'applePayRedirect'
      */
     @Test
-    public void applePayRedirectTest() {
+    void applePayRedirectTest() {
         // TODO: test applePayRedirect
     }
 
@@ -149,7 +148,7 @@ public class WalletDataTest {
      * Test the property 'applePayThirdPartySdk'
      */
     @Test
-    public void applePayThirdPartySdkTest() {
+    void applePayThirdPartySdkTest() {
         // TODO: test applePayThirdPartySdk
     }
 
@@ -157,7 +156,7 @@ public class WalletDataTest {
      * Test the property 'danaRedirect'
      */
     @Test
-    public void danaRedirectTest() {
+    void danaRedirectTest() {
         // TODO: test danaRedirect
     }
 
@@ -165,7 +164,7 @@ public class WalletDataTest {
      * Test the property 'googlePay'
      */
     @Test
-    public void googlePayTest() {
+    void googlePayTest() {
         // TODO: test googlePay
     }
 
@@ -173,7 +172,7 @@ public class WalletDataTest {
      * Test the property 'googlePayRedirect'
      */
     @Test
-    public void googlePayRedirectTest() {
+    void googlePayRedirectTest() {
         // TODO: test googlePayRedirect
     }
 
@@ -181,7 +180,7 @@ public class WalletDataTest {
      * Test the property 'googlePayThirdPartySdk'
      */
     @Test
-    public void googlePayThirdPartySdkTest() {
+    void googlePayThirdPartySdkTest() {
         // TODO: test googlePayThirdPartySdk
     }
 
@@ -189,7 +188,7 @@ public class WalletDataTest {
      * Test the property 'mbWayRedirect'
      */
     @Test
-    public void mbWayRedirectTest() {
+    void mbWayRedirectTest() {
         // TODO: test mbWayRedirect
     }
 
@@ -197,7 +196,7 @@ public class WalletDataTest {
      * Test the property 'mobilePayRedirect'
      */
     @Test
-    public void mobilePayRedirectTest() {
+    void mobilePayRedirectTest() {
         // TODO: test mobilePayRedirect
     }
 
@@ -205,7 +204,7 @@ public class WalletDataTest {
      * Test the property 'paypalRedirect'
      */
     @Test
-    public void paypalRedirectTest() {
+    void paypalRedirectTest() {
         // TODO: test paypalRedirect
     }
 
@@ -213,7 +212,7 @@ public class WalletDataTest {
      * Test the property 'paypalSdk'
      */
     @Test
-    public void paypalSdkTest() {
+    void paypalSdkTest() {
         // TODO: test paypalSdk
     }
 
@@ -221,7 +220,7 @@ public class WalletDataTest {
      * Test the property 'paze'
      */
     @Test
-    public void pazeTest() {
+    void pazeTest() {
         // TODO: test paze
     }
 
@@ -229,7 +228,7 @@ public class WalletDataTest {
      * Test the property 'samsungPay'
      */
     @Test
-    public void samsungPayTest() {
+    void samsungPayTest() {
         // TODO: test samsungPay
     }
 
@@ -237,7 +236,7 @@ public class WalletDataTest {
      * Test the property 'twintRedirect'
      */
     @Test
-    public void twintRedirectTest() {
+    void twintRedirectTest() {
         // TODO: test twintRedirect
     }
 
@@ -245,7 +244,7 @@ public class WalletDataTest {
      * Test the property 'vippsRedirect'
      */
     @Test
-    public void vippsRedirectTest() {
+    void vippsRedirectTest() {
         // TODO: test vippsRedirect
     }
 
@@ -253,7 +252,7 @@ public class WalletDataTest {
      * Test the property 'touchNGoRedirect'
      */
     @Test
-    public void touchNGoRedirectTest() {
+    void touchNGoRedirectTest() {
         // TODO: test touchNGoRedirect
     }
 
@@ -261,7 +260,7 @@ public class WalletDataTest {
      * Test the property 'weChatPayRedirect'
      */
     @Test
-    public void weChatPayRedirectTest() {
+    void weChatPayRedirectTest() {
         // TODO: test weChatPayRedirect
     }
 
@@ -269,7 +268,7 @@ public class WalletDataTest {
      * Test the property 'weChatPayQr'
      */
     @Test
-    public void weChatPayQrTest() {
+    void weChatPayQrTest() {
         // TODO: test weChatPayQr
     }
 
@@ -277,7 +276,7 @@ public class WalletDataTest {
      * Test the property 'cashappQr'
      */
     @Test
-    public void cashappQrTest() {
+    void cashappQrTest() {
         // TODO: test cashappQr
     }
 
@@ -285,7 +284,7 @@ public class WalletDataTest {
      * Test the property 'swishQr'
      */
     @Test
-    public void swishQrTest() {
+    void swishQrTest() {
         // TODO: test swishQr
     }
 
@@ -293,7 +292,7 @@ public class WalletDataTest {
      * Test the property 'mifinity'
      */
     @Test
-    public void mifinityTest() {
+    void mifinityTest() {
         // TODO: test mifinity
     }
 

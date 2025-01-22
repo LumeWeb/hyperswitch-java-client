@@ -23,27 +23,27 @@ import com.hyperswitch.client.model.ApplePayAddressParameters;
 import com.hyperswitch.client.model.CountryAlpha2;
 import com.hyperswitch.client.model.Currency;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import org.openapitools.jackson.nullable.JsonNullable;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.openapitools.jackson.nullable.JsonNullable;
 import java.util.NoSuchElementException;
-import org.junit.Assert;
-import org.junit.Ignore;
-import org.junit.Test;
-
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Test;
 
 /**
  * Model tests for ApplePayPaymentRequest
  */
-public class ApplePayPaymentRequestTest {
+class ApplePayPaymentRequestTest {
     private final ApplePayPaymentRequest model = new ApplePayPaymentRequest();
 
     /**
      * Model tests for ApplePayPaymentRequest
      */
     @Test
-    public void testApplePayPaymentRequest() {
+    void testApplePayPaymentRequest() {
         // TODO: test ApplePayPaymentRequest
     }
 
@@ -51,7 +51,7 @@ public class ApplePayPaymentRequestTest {
      * Test the property 'countryCode'
      */
     @Test
-    public void countryCodeTest() {
+    void countryCodeTest() {
         // TODO: test countryCode
     }
 
@@ -59,7 +59,7 @@ public class ApplePayPaymentRequestTest {
      * Test the property 'currencyCode'
      */
     @Test
-    public void currencyCodeTest() {
+    void currencyCodeTest() {
         // TODO: test currencyCode
     }
 
@@ -67,7 +67,7 @@ public class ApplePayPaymentRequestTest {
      * Test the property 'total'
      */
     @Test
-    public void totalTest() {
+    void totalTest() {
         // TODO: test total
     }
 
@@ -75,7 +75,7 @@ public class ApplePayPaymentRequestTest {
      * Test the property 'merchantCapabilities'
      */
     @Test
-    public void merchantCapabilitiesTest() {
+    void merchantCapabilitiesTest() {
         // TODO: test merchantCapabilities
     }
 
@@ -83,7 +83,7 @@ public class ApplePayPaymentRequestTest {
      * Test the property 'supportedNetworks'
      */
     @Test
-    public void supportedNetworksTest() {
+    void supportedNetworksTest() {
         // TODO: test supportedNetworks
     }
 
@@ -91,7 +91,7 @@ public class ApplePayPaymentRequestTest {
      * Test the property 'merchantIdentifier'
      */
     @Test
-    public void merchantIdentifierTest() {
+    void merchantIdentifierTest() {
         // TODO: test merchantIdentifier
     }
 
@@ -99,7 +99,7 @@ public class ApplePayPaymentRequestTest {
      * Test the property 'requiredBillingContactFields'
      */
     @Test
-    public void requiredBillingContactFieldsTest() {
+    void requiredBillingContactFieldsTest() {
         // TODO: test requiredBillingContactFields
     }
 
@@ -107,7 +107,7 @@ public class ApplePayPaymentRequestTest {
      * Test the property 'requiredShippingContactFields'
      */
     @Test
-    public void requiredShippingContactFieldsTest() {
+    void requiredShippingContactFieldsTest() {
         // TODO: test requiredShippingContactFields
     }
 

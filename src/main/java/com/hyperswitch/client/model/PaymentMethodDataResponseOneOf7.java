@@ -27,126 +27,127 @@ import java.net.URLEncoder;
 import java.util.StringJoiner;
 
 /**
- * PaymentMethodDataResponseOneOf7
- */
-@JsonPropertyOrder({
-  PaymentMethodDataResponseOneOf7.JSON_PROPERTY_MANDATE_PAYMENT
-})
-@JsonTypeName("PaymentMethodDataResponse_oneOf_7")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+* PaymentMethodDataResponseOneOf7
+*/
+    @JsonPropertyOrder({
+        PaymentMethodDataResponseOneOf7.JSON_PROPERTY_MANDATE_PAYMENT
+    })
+            @JsonTypeName("PaymentMethodDataResponse_oneOf_7")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class PaymentMethodDataResponseOneOf7 {
-  public static final String JSON_PROPERTY_MANDATE_PAYMENT = "mandate_payment";
-  private Object mandatePayment;
+        public static final String JSON_PROPERTY_MANDATE_PAYMENT = "mandate_payment";
+    @javax.annotation.Nonnull
+            private Object mandatePayment;
 
-  public PaymentMethodDataResponseOneOf7() {
-  }
+public PaymentMethodDataResponseOneOf7() {
+}
 
-  public PaymentMethodDataResponseOneOf7 mandatePayment(Object mandatePayment) {
-    
-    this.mandatePayment = mandatePayment;
-    return this;
-  }
+        public PaymentMethodDataResponseOneOf7 mandatePayment(@javax.annotation.Nonnull Object mandatePayment) {
+        
+        this.mandatePayment = mandatePayment;
+        return this;
+        }
 
-   /**
-   * Get mandatePayment
-   * @return mandatePayment
-  **/
-  @javax.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_MANDATE_PAYMENT)
+    /**
+        * Get mandatePayment
+    * @return mandatePayment
+    */
+    @javax.annotation.Nonnull
+      @JsonProperty(JSON_PROPERTY_MANDATE_PAYMENT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-  public Object getMandatePayment() {
-    return mandatePayment;
-  }
+    public Object getMandatePayment() {
+        return mandatePayment;
+    }
 
 
-  @JsonProperty(JSON_PROPERTY_MANDATE_PAYMENT)
+          @JsonProperty(JSON_PROPERTY_MANDATE_PAYMENT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setMandatePayment(Object mandatePayment) {
-    this.mandatePayment = mandatePayment;
-  }
+  public void setMandatePayment(@javax.annotation.Nonnull Object mandatePayment) {
+            this.mandatePayment = mandatePayment;
+        }
 
-  @Override
-  public boolean equals(Object o) {
+@Override
+public boolean equals(Object o) {
     if (this == o) {
-      return true;
+    return true;
     }
     if (o == null || getClass() != o.getClass()) {
-      return false;
+    return false;
     }
-    PaymentMethodDataResponseOneOf7 paymentMethodDataResponseOneOf7 = (PaymentMethodDataResponseOneOf7) o;
-    return Objects.equals(this.mandatePayment, paymentMethodDataResponseOneOf7.mandatePayment);
-  }
+        PaymentMethodDataResponseOneOf7 paymentMethodDataResponseOneOf7 = (PaymentMethodDataResponseOneOf7) o;
+        return Objects.equals(this.mandatePayment, paymentMethodDataResponseOneOf7.mandatePayment);
+}
 
-  @Override
-  public int hashCode() {
-    return Objects.hash(mandatePayment);
-  }
+    @Override
+    public int hashCode() {
+        return Objects.hash(mandatePayment);
+    }
 
-  @Override
-  public String toString() {
+    @Override
+    public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class PaymentMethodDataResponseOneOf7 {\n");
-    sb.append("    mandatePayment: ").append(toIndentedString(mandatePayment)).append("\n");
+        sb.append("    mandatePayment: ").append(toIndentedString(mandatePayment)).append("\n");
     sb.append("}");
     return sb.toString();
-  }
+    }
 
-  /**
-   * Convert the given object to string with each line indented by 4 spaces
-   * (except the first line).
-   */
-  private String toIndentedString(Object o) {
+    /**
+    * Convert the given object to string with each line indented by 4 spaces
+    * (except the first line).
+    */
+    private String toIndentedString(Object o) {
     if (o == null) {
-      return "null";
+    return "null";
     }
     return o.toString().replace("\n", "\n    ");
-  }
-
-  /**
-   * Convert the instance into URL query string.
-   *
-   * @return URL query string
-   */
-  public String toUrlQueryString() {
-    return toUrlQueryString(null);
-  }
-
-  /**
-   * Convert the instance into URL query string.
-   *
-   * @param prefix prefix of the query string
-   * @return URL query string
-   */
-  public String toUrlQueryString(String prefix) {
-    String suffix = "";
-    String containerSuffix = "";
-    String containerPrefix = "";
-    if (prefix == null) {
-      // style=form, explode=true, e.g. /pet?name=cat&type=manx
-      prefix = "";
-    } else {
-      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
-      prefix = prefix + "[";
-      suffix = "]";
-      containerSuffix = "]";
-      containerPrefix = "[";
     }
 
-    StringJoiner joiner = new StringJoiner("&");
+        /**
+        * Convert the instance into URL query string.
+        *
+        * @return URL query string
+        */
+        public String toUrlQueryString() {
+        return toUrlQueryString(null);
+        }
 
-    // add `mandate_payment` to the URL query string
-    if (getMandatePayment() != null) {
-      try {
-        joiner.add(String.format("%smandate_payment%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getMandatePayment()), "UTF-8").replaceAll("\\+", "%20")));
-      } catch (UnsupportedEncodingException e) {
-        // Should never happen, UTF-8 is always supported
-        throw new RuntimeException(e);
-      }
+        /**
+        * Convert the instance into URL query string.
+        *
+        * @param prefix prefix of the query string
+        * @return URL query string
+        */
+        public String toUrlQueryString(String prefix) {
+        String suffix = "";
+        String containerSuffix = "";
+        String containerPrefix = "";
+        if (prefix == null) {
+        // style=form, explode=true, e.g. /pet?name=cat&type=manx
+        prefix = "";
+        } else {
+        // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+        prefix = prefix + "[";
+        suffix = "]";
+        containerSuffix = "]";
+        containerPrefix = "[";
+        }
+
+        StringJoiner joiner = new StringJoiner("&");
+
+            // add `mandate_payment` to the URL query string
+                        if (getMandatePayment() != null) {
+                        try {
+                        joiner.add(String.format("%smandate_payment%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getMandatePayment()), "UTF-8").replaceAll("\\+", "%20")));
+                        } catch (UnsupportedEncodingException e) {
+                        // Should never happen, UTF-8 is always supported
+                        throw new RuntimeException(e);
+                        }
+                        }
+
+        return joiner.toString();
+        }
+
     }
-
-    return joiner.toString();
-  }
-
-}
 

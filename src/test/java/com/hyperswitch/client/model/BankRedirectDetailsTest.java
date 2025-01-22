@@ -24,22 +24,21 @@ import com.hyperswitch.client.model.BankRedirectDetailsOneOf1;
 import com.hyperswitch.client.model.BankRedirectDetailsOneOf2;
 import com.hyperswitch.client.model.BlikBankRedirectAdditionalData;
 import com.hyperswitch.client.model.GiropayBankRedirectAdditionalData;
-import org.junit.Assert;
-import org.junit.Ignore;
-import org.junit.Test;
-
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Test;
 
 /**
  * Model tests for BankRedirectDetails
  */
-public class BankRedirectDetailsTest {
+class BankRedirectDetailsTest {
     private final BankRedirectDetails model = new BankRedirectDetails();
 
     /**
      * Model tests for BankRedirectDetails
      */
     @Test
-    public void testBankRedirectDetails() {
+    void testBankRedirectDetails() {
         // TODO: test BankRedirectDetails
     }
 
@@ -47,7 +46,7 @@ public class BankRedirectDetailsTest {
      * Test the property 'bancontactCard'
      */
     @Test
-    public void bancontactCardTest() {
+    void bancontactCardTest() {
         // TODO: test bancontactCard
     }
 
@@ -55,7 +54,7 @@ public class BankRedirectDetailsTest {
      * Test the property 'blik'
      */
     @Test
-    public void blikTest() {
+    void blikTest() {
         // TODO: test blik
     }
 
@@ -63,7 +62,7 @@ public class BankRedirectDetailsTest {
      * Test the property 'giropay'
      */
     @Test
-    public void giropayTest() {
+    void giropayTest() {
         // TODO: test giropay
     }
 

@@ -17,9 +17,9 @@ import com.hyperswitch.client.ApiException;
 import com.hyperswitch.client.model.EventListItemResponse;
 import com.hyperswitch.client.model.EventRetrieveResponse;
 import java.time.OffsetDateTime;
-import org.junit.Test;
-import org.junit.Ignore;
-import org.junit.Assert;
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Test;
 
 import java.time.LocalDate;
 import java.time.OffsetDateTime;
@@ -31,7 +31,7 @@ import java.util.Map;
 /**
  * API tests for EventApi
  */
-@Ignore
+@Disabled
 public class EventApiTest {
 
     private final EventApi api = new EventApi();

@@ -22,22 +22,21 @@ import org.openapitools.jackson.nullable.JsonNullable;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.openapitools.jackson.nullable.JsonNullable;
 import java.util.NoSuchElementException;
-import org.junit.Assert;
-import org.junit.Ignore;
-import org.junit.Test;
-
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Test;
 
 /**
  * Model tests for AmountInfo
  */
-public class AmountInfoTest {
+class AmountInfoTest {
     private final AmountInfo model = new AmountInfo();
 
     /**
      * Model tests for AmountInfo
      */
     @Test
-    public void testAmountInfo() {
+    void testAmountInfo() {
         // TODO: test AmountInfo
     }
 
@@ -45,7 +44,7 @@ public class AmountInfoTest {
      * Test the property 'label'
      */
     @Test
-    public void labelTest() {
+    void labelTest() {
         // TODO: test label
     }
 
@@ -53,7 +52,7 @@ public class AmountInfoTest {
      * Test the property 'type'
      */
     @Test
-    public void typeTest() {
+    void typeTest() {
         // TODO: test type
     }
 
@@ -61,7 +60,7 @@ public class AmountInfoTest {
      * Test the property 'amount'
      */
     @Test
-    public void amountTest() {
+    void amountTest() {
         // TODO: test amount
     }
 

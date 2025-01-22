@@ -22,22 +22,21 @@ import org.openapitools.jackson.nullable.JsonNullable;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.openapitools.jackson.nullable.JsonNullable;
 import java.util.NoSuchElementException;
-import org.junit.Assert;
-import org.junit.Ignore;
-import org.junit.Test;
-
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Test;
 
 /**
  * Model tests for ProcessorPaymentToken
  */
-public class ProcessorPaymentTokenTest {
+class ProcessorPaymentTokenTest {
     private final ProcessorPaymentToken model = new ProcessorPaymentToken();
 
     /**
      * Model tests for ProcessorPaymentToken
      */
     @Test
-    public void testProcessorPaymentToken() {
+    void testProcessorPaymentToken() {
         // TODO: test ProcessorPaymentToken
     }
 
@@ -45,7 +44,7 @@ public class ProcessorPaymentTokenTest {
      * Test the property 'processorPaymentToken'
      */
     @Test
-    public void processorPaymentTokenTest() {
+    void processorPaymentTokenTest() {
         // TODO: test processorPaymentToken
     }
 
@@ -53,7 +52,7 @@ public class ProcessorPaymentTokenTest {
      * Test the property 'merchantConnectorId'
      */
     @Test
-    public void merchantConnectorIdTest() {
+    void merchantConnectorIdTest() {
         // TODO: test merchantConnectorId
     }
 

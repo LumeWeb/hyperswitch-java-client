@@ -28,163 +28,164 @@ import java.net.URLEncoder;
 import java.util.StringJoiner;
 
 /**
- * ConnectorVolumeSplit
- */
-@JsonPropertyOrder({
-  ConnectorVolumeSplit.JSON_PROPERTY_CONNECTOR,
-  ConnectorVolumeSplit.JSON_PROPERTY_SPLIT
-})
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+* ConnectorVolumeSplit
+*/
+    @JsonPropertyOrder({
+        ConnectorVolumeSplit.JSON_PROPERTY_CONNECTOR,
+        ConnectorVolumeSplit.JSON_PROPERTY_SPLIT
+    })
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class ConnectorVolumeSplit {
-  public static final String JSON_PROPERTY_CONNECTOR = "connector";
-  private RoutableConnectorChoice connector;
+        public static final String JSON_PROPERTY_CONNECTOR = "connector";
+    @javax.annotation.Nonnull
+            private RoutableConnectorChoice connector;
 
-  public static final String JSON_PROPERTY_SPLIT = "split";
-  private Integer split;
+        public static final String JSON_PROPERTY_SPLIT = "split";
+    @javax.annotation.Nonnull
+            private Integer split;
 
-  public ConnectorVolumeSplit() {
-  }
+public ConnectorVolumeSplit() {
+}
 
-  public ConnectorVolumeSplit connector(RoutableConnectorChoice connector) {
-    
-    this.connector = connector;
-    return this;
-  }
+        public ConnectorVolumeSplit connector(@javax.annotation.Nonnull RoutableConnectorChoice connector) {
+        
+        this.connector = connector;
+        return this;
+        }
 
-   /**
-   * Get connector
-   * @return connector
-  **/
-  @javax.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_CONNECTOR)
+    /**
+        * Get connector
+    * @return connector
+    */
+    @javax.annotation.Nonnull
+      @JsonProperty(JSON_PROPERTY_CONNECTOR)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-  public RoutableConnectorChoice getConnector() {
-    return connector;
-  }
+    public RoutableConnectorChoice getConnector() {
+        return connector;
+    }
 
 
-  @JsonProperty(JSON_PROPERTY_CONNECTOR)
+          @JsonProperty(JSON_PROPERTY_CONNECTOR)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setConnector(RoutableConnectorChoice connector) {
-    this.connector = connector;
-  }
+  public void setConnector(@javax.annotation.Nonnull RoutableConnectorChoice connector) {
+            this.connector = connector;
+        }
 
+        public ConnectorVolumeSplit split(@javax.annotation.Nonnull Integer split) {
+        
+        this.split = split;
+        return this;
+        }
 
-  public ConnectorVolumeSplit split(Integer split) {
-    
-    this.split = split;
-    return this;
-  }
-
-   /**
-   * Get split
-   * minimum: 0
-   * @return split
-  **/
-  @javax.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_SPLIT)
+    /**
+        * Get split
+        * minimum: 0
+    * @return split
+    */
+    @javax.annotation.Nonnull
+      @JsonProperty(JSON_PROPERTY_SPLIT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-  public Integer getSplit() {
-    return split;
-  }
+    public Integer getSplit() {
+        return split;
+    }
 
 
-  @JsonProperty(JSON_PROPERTY_SPLIT)
+          @JsonProperty(JSON_PROPERTY_SPLIT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setSplit(Integer split) {
-    this.split = split;
-  }
+  public void setSplit(@javax.annotation.Nonnull Integer split) {
+            this.split = split;
+        }
 
-  @Override
-  public boolean equals(Object o) {
+@Override
+public boolean equals(Object o) {
     if (this == o) {
-      return true;
+    return true;
     }
     if (o == null || getClass() != o.getClass()) {
-      return false;
+    return false;
     }
-    ConnectorVolumeSplit connectorVolumeSplit = (ConnectorVolumeSplit) o;
-    return Objects.equals(this.connector, connectorVolumeSplit.connector) &&
+        ConnectorVolumeSplit connectorVolumeSplit = (ConnectorVolumeSplit) o;
+        return Objects.equals(this.connector, connectorVolumeSplit.connector) &&
         Objects.equals(this.split, connectorVolumeSplit.split);
-  }
+}
 
-  @Override
-  public int hashCode() {
-    return Objects.hash(connector, split);
-  }
+    @Override
+    public int hashCode() {
+        return Objects.hash(connector, split);
+    }
 
-  @Override
-  public String toString() {
+    @Override
+    public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class ConnectorVolumeSplit {\n");
-    sb.append("    connector: ").append(toIndentedString(connector)).append("\n");
-    sb.append("    split: ").append(toIndentedString(split)).append("\n");
+        sb.append("    connector: ").append(toIndentedString(connector)).append("\n");
+        sb.append("    split: ").append(toIndentedString(split)).append("\n");
     sb.append("}");
     return sb.toString();
-  }
+    }
 
-  /**
-   * Convert the given object to string with each line indented by 4 spaces
-   * (except the first line).
-   */
-  private String toIndentedString(Object o) {
+    /**
+    * Convert the given object to string with each line indented by 4 spaces
+    * (except the first line).
+    */
+    private String toIndentedString(Object o) {
     if (o == null) {
-      return "null";
+    return "null";
     }
     return o.toString().replace("\n", "\n    ");
-  }
-
-  /**
-   * Convert the instance into URL query string.
-   *
-   * @return URL query string
-   */
-  public String toUrlQueryString() {
-    return toUrlQueryString(null);
-  }
-
-  /**
-   * Convert the instance into URL query string.
-   *
-   * @param prefix prefix of the query string
-   * @return URL query string
-   */
-  public String toUrlQueryString(String prefix) {
-    String suffix = "";
-    String containerSuffix = "";
-    String containerPrefix = "";
-    if (prefix == null) {
-      // style=form, explode=true, e.g. /pet?name=cat&type=manx
-      prefix = "";
-    } else {
-      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
-      prefix = prefix + "[";
-      suffix = "]";
-      containerSuffix = "]";
-      containerPrefix = "[";
     }
 
-    StringJoiner joiner = new StringJoiner("&");
+        /**
+        * Convert the instance into URL query string.
+        *
+        * @return URL query string
+        */
+        public String toUrlQueryString() {
+        return toUrlQueryString(null);
+        }
 
-    // add `connector` to the URL query string
-    if (getConnector() != null) {
-      joiner.add(getConnector().toUrlQueryString(prefix + "connector" + suffix));
+        /**
+        * Convert the instance into URL query string.
+        *
+        * @param prefix prefix of the query string
+        * @return URL query string
+        */
+        public String toUrlQueryString(String prefix) {
+        String suffix = "";
+        String containerSuffix = "";
+        String containerPrefix = "";
+        if (prefix == null) {
+        // style=form, explode=true, e.g. /pet?name=cat&type=manx
+        prefix = "";
+        } else {
+        // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+        prefix = prefix + "[";
+        suffix = "]";
+        containerSuffix = "]";
+        containerPrefix = "[";
+        }
+
+        StringJoiner joiner = new StringJoiner("&");
+
+            // add `connector` to the URL query string
+                            if (getConnector() != null) {
+                            joiner.add(getConnector().toUrlQueryString(prefix + "connector" + suffix));
+                            }
+
+            // add `split` to the URL query string
+                        if (getSplit() != null) {
+                        try {
+                        joiner.add(String.format("%ssplit%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getSplit()), "UTF-8").replaceAll("\\+", "%20")));
+                        } catch (UnsupportedEncodingException e) {
+                        // Should never happen, UTF-8 is always supported
+                        throw new RuntimeException(e);
+                        }
+                        }
+
+        return joiner.toString();
+        }
+
     }
-
-    // add `split` to the URL query string
-    if (getSplit() != null) {
-      try {
-        joiner.add(String.format("%ssplit%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getSplit()), "UTF-8").replaceAll("\\+", "%20")));
-      } catch (UnsupportedEncodingException e) {
-        // Should never happen, UTF-8 is always supported
-        throw new RuntimeException(e);
-      }
-    }
-
-    return joiner.toString();
-  }
-
-}
 

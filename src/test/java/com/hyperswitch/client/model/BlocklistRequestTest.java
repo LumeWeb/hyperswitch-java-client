@@ -24,22 +24,21 @@ import com.fasterxml.jackson.annotation.JsonValue;
 import com.hyperswitch.client.model.BlocklistRequestOneOf;
 import com.hyperswitch.client.model.BlocklistRequestOneOf1;
 import com.hyperswitch.client.model.BlocklistRequestOneOf2;
-import org.junit.Assert;
-import org.junit.Ignore;
-import org.junit.Test;
-
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Test;
 
 /**
  * Model tests for BlocklistRequest
  */
-public class BlocklistRequestTest {
+class BlocklistRequestTest {
     private final BlocklistRequest model = new BlocklistRequest();
 
     /**
      * Model tests for BlocklistRequest
      */
     @Test
-    public void testBlocklistRequest() {
+    void testBlocklistRequest() {
         // TODO: test BlocklistRequest
     }
 
@@ -47,7 +46,7 @@ public class BlocklistRequestTest {
      * Test the property 'type'
      */
     @Test
-    public void typeTest() {
+    void typeTest() {
         // TODO: test type
     }
 
@@ -55,7 +54,7 @@ public class BlocklistRequestTest {
      * Test the property 'data'
      */
     @Test
-    public void dataTest() {
+    void dataTest() {
         // TODO: test data
     }
 

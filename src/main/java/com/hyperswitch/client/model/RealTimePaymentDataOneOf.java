@@ -27,126 +27,127 @@ import java.net.URLEncoder;
 import java.util.StringJoiner;
 
 /**
- * RealTimePaymentDataOneOf
- */
-@JsonPropertyOrder({
-  RealTimePaymentDataOneOf.JSON_PROPERTY_FPS
-})
-@JsonTypeName("RealTimePaymentData_oneOf")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+* RealTimePaymentDataOneOf
+*/
+    @JsonPropertyOrder({
+        RealTimePaymentDataOneOf.JSON_PROPERTY_FPS
+    })
+            @JsonTypeName("RealTimePaymentData_oneOf")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class RealTimePaymentDataOneOf {
-  public static final String JSON_PROPERTY_FPS = "fps";
-  private Object fps;
+        public static final String JSON_PROPERTY_FPS = "fps";
+    @javax.annotation.Nonnull
+            private Object fps;
 
-  public RealTimePaymentDataOneOf() {
-  }
+public RealTimePaymentDataOneOf() {
+}
 
-  public RealTimePaymentDataOneOf fps(Object fps) {
-    
-    this.fps = fps;
-    return this;
-  }
+        public RealTimePaymentDataOneOf fps(@javax.annotation.Nonnull Object fps) {
+        
+        this.fps = fps;
+        return this;
+        }
 
-   /**
-   * Get fps
-   * @return fps
-  **/
-  @javax.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_FPS)
+    /**
+        * Get fps
+    * @return fps
+    */
+    @javax.annotation.Nonnull
+      @JsonProperty(JSON_PROPERTY_FPS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-  public Object getFps() {
-    return fps;
-  }
+    public Object getFps() {
+        return fps;
+    }
 
 
-  @JsonProperty(JSON_PROPERTY_FPS)
+          @JsonProperty(JSON_PROPERTY_FPS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setFps(Object fps) {
-    this.fps = fps;
-  }
+  public void setFps(@javax.annotation.Nonnull Object fps) {
+            this.fps = fps;
+        }
 
-  @Override
-  public boolean equals(Object o) {
+@Override
+public boolean equals(Object o) {
     if (this == o) {
-      return true;
+    return true;
     }
     if (o == null || getClass() != o.getClass()) {
-      return false;
+    return false;
     }
-    RealTimePaymentDataOneOf realTimePaymentDataOneOf = (RealTimePaymentDataOneOf) o;
-    return Objects.equals(this.fps, realTimePaymentDataOneOf.fps);
-  }
+        RealTimePaymentDataOneOf realTimePaymentDataOneOf = (RealTimePaymentDataOneOf) o;
+        return Objects.equals(this.fps, realTimePaymentDataOneOf.fps);
+}
 
-  @Override
-  public int hashCode() {
-    return Objects.hash(fps);
-  }
+    @Override
+    public int hashCode() {
+        return Objects.hash(fps);
+    }
 
-  @Override
-  public String toString() {
+    @Override
+    public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class RealTimePaymentDataOneOf {\n");
-    sb.append("    fps: ").append(toIndentedString(fps)).append("\n");
+        sb.append("    fps: ").append(toIndentedString(fps)).append("\n");
     sb.append("}");
     return sb.toString();
-  }
+    }
 
-  /**
-   * Convert the given object to string with each line indented by 4 spaces
-   * (except the first line).
-   */
-  private String toIndentedString(Object o) {
+    /**
+    * Convert the given object to string with each line indented by 4 spaces
+    * (except the first line).
+    */
+    private String toIndentedString(Object o) {
     if (o == null) {
-      return "null";
+    return "null";
     }
     return o.toString().replace("\n", "\n    ");
-  }
-
-  /**
-   * Convert the instance into URL query string.
-   *
-   * @return URL query string
-   */
-  public String toUrlQueryString() {
-    return toUrlQueryString(null);
-  }
-
-  /**
-   * Convert the instance into URL query string.
-   *
-   * @param prefix prefix of the query string
-   * @return URL query string
-   */
-  public String toUrlQueryString(String prefix) {
-    String suffix = "";
-    String containerSuffix = "";
-    String containerPrefix = "";
-    if (prefix == null) {
-      // style=form, explode=true, e.g. /pet?name=cat&type=manx
-      prefix = "";
-    } else {
-      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
-      prefix = prefix + "[";
-      suffix = "]";
-      containerSuffix = "]";
-      containerPrefix = "[";
     }
 
-    StringJoiner joiner = new StringJoiner("&");
+        /**
+        * Convert the instance into URL query string.
+        *
+        * @return URL query string
+        */
+        public String toUrlQueryString() {
+        return toUrlQueryString(null);
+        }
 
-    // add `fps` to the URL query string
-    if (getFps() != null) {
-      try {
-        joiner.add(String.format("%sfps%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getFps()), "UTF-8").replaceAll("\\+", "%20")));
-      } catch (UnsupportedEncodingException e) {
-        // Should never happen, UTF-8 is always supported
-        throw new RuntimeException(e);
-      }
+        /**
+        * Convert the instance into URL query string.
+        *
+        * @param prefix prefix of the query string
+        * @return URL query string
+        */
+        public String toUrlQueryString(String prefix) {
+        String suffix = "";
+        String containerSuffix = "";
+        String containerPrefix = "";
+        if (prefix == null) {
+        // style=form, explode=true, e.g. /pet?name=cat&type=manx
+        prefix = "";
+        } else {
+        // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+        prefix = prefix + "[";
+        suffix = "]";
+        containerSuffix = "]";
+        containerPrefix = "[";
+        }
+
+        StringJoiner joiner = new StringJoiner("&");
+
+            // add `fps` to the URL query string
+                        if (getFps() != null) {
+                        try {
+                        joiner.add(String.format("%sfps%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getFps()), "UTF-8").replaceAll("\\+", "%20")));
+                        } catch (UnsupportedEncodingException e) {
+                        // Should never happen, UTF-8 is always supported
+                        throw new RuntimeException(e);
+                        }
+                        }
+
+        return joiner.toString();
+        }
+
     }
-
-    return joiner.toString();
-  }
-
-}
 

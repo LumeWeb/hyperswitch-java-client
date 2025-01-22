@@ -22,22 +22,21 @@ import org.openapitools.jackson.nullable.JsonNullable;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.openapitools.jackson.nullable.JsonNullable;
 import java.util.NoSuchElementException;
-import org.junit.Assert;
-import org.junit.Ignore;
-import org.junit.Test;
-
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Test;
 
 /**
  * Model tests for SamsungPayTokenData
  */
-public class SamsungPayTokenDataTest {
+class SamsungPayTokenDataTest {
     private final SamsungPayTokenData model = new SamsungPayTokenData();
 
     /**
      * Model tests for SamsungPayTokenData
      */
     @Test
-    public void testSamsungPayTokenData() {
+    void testSamsungPayTokenData() {
         // TODO: test SamsungPayTokenData
     }
 
@@ -45,7 +44,7 @@ public class SamsungPayTokenDataTest {
      * Test the property 'type'
      */
     @Test
-    public void typeTest() {
+    void typeTest() {
         // TODO: test type
     }
 
@@ -53,7 +52,7 @@ public class SamsungPayTokenDataTest {
      * Test the property 'version'
      */
     @Test
-    public void versionTest() {
+    void versionTest() {
         // TODO: test version
     }
 
@@ -61,7 +60,7 @@ public class SamsungPayTokenDataTest {
      * Test the property 'data'
      */
     @Test
-    public void dataTest() {
+    void dataTest() {
         // TODO: test data
     }
 

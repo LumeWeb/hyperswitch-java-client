@@ -18,22 +18,21 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonTypeName;
 import com.fasterxml.jackson.annotation.JsonValue;
-import org.junit.Assert;
-import org.junit.Ignore;
-import org.junit.Test;
-
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Test;
 
 /**
  * Model tests for ExtendedCardInfoConfig
  */
-public class ExtendedCardInfoConfigTest {
+class ExtendedCardInfoConfigTest {
     private final ExtendedCardInfoConfig model = new ExtendedCardInfoConfig();
 
     /**
      * Model tests for ExtendedCardInfoConfig
      */
     @Test
-    public void testExtendedCardInfoConfig() {
+    void testExtendedCardInfoConfig() {
         // TODO: test ExtendedCardInfoConfig
     }
 
@@ -41,7 +40,7 @@ public class ExtendedCardInfoConfigTest {
      * Test the property 'publicKey'
      */
     @Test
-    public void publicKeyTest() {
+    void publicKeyTest() {
         // TODO: test publicKey
     }
 
@@ -49,7 +48,7 @@ public class ExtendedCardInfoConfigTest {
      * Test the property 'ttlInSecs'
      */
     @Test
-    public void ttlInSecsTest() {
+    void ttlInSecsTest() {
         // TODO: test ttlInSecs
     }
 

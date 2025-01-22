@@ -13,20 +13,19 @@
 
 package com.hyperswitch.client.model;
 
-import org.junit.Assert;
-import org.junit.Ignore;
-import org.junit.Test;
-
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Test;
 
 /**
  * Model tests for AuthorizationStatus
  */
-public class AuthorizationStatusTest {
+class AuthorizationStatusTest {
     /**
      * Model tests for AuthorizationStatus
      */
     @Test
-    public void testAuthorizationStatus() {
+    void testAuthorizationStatus() {
         // TODO: test AuthorizationStatus
     }
 

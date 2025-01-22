@@ -28,120 +28,121 @@ import java.net.URLEncoder;
 import java.util.StringJoiner;
 
 /**
- * BankTransfer
- */
-@JsonPropertyOrder({
-  BankTransfer.JSON_PROPERTY_BANK_TRANSFER
-})
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+* BankTransfer
+*/
+    @JsonPropertyOrder({
+        BankTransfer.JSON_PROPERTY_BANK_TRANSFER
+    })
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class BankTransfer {
-  public static final String JSON_PROPERTY_BANK_TRANSFER = "bank_transfer";
-  private BankTransferData bankTransfer;
+        public static final String JSON_PROPERTY_BANK_TRANSFER = "bank_transfer";
+    @javax.annotation.Nonnull
+            private BankTransferData bankTransfer;
 
-  public BankTransfer() {
-  }
+public BankTransfer() {
+}
 
-  public BankTransfer bankTransfer(BankTransferData bankTransfer) {
-    
-    this.bankTransfer = bankTransfer;
-    return this;
-  }
+        public BankTransfer bankTransfer(@javax.annotation.Nonnull BankTransferData bankTransfer) {
+        
+        this.bankTransfer = bankTransfer;
+        return this;
+        }
 
-   /**
-   * Get bankTransfer
-   * @return bankTransfer
-  **/
-  @javax.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_BANK_TRANSFER)
+    /**
+        * Get bankTransfer
+    * @return bankTransfer
+    */
+    @javax.annotation.Nonnull
+      @JsonProperty(JSON_PROPERTY_BANK_TRANSFER)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-  public BankTransferData getBankTransfer() {
-    return bankTransfer;
-  }
+    public BankTransferData getBankTransfer() {
+        return bankTransfer;
+    }
 
 
-  @JsonProperty(JSON_PROPERTY_BANK_TRANSFER)
+          @JsonProperty(JSON_PROPERTY_BANK_TRANSFER)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setBankTransfer(BankTransferData bankTransfer) {
-    this.bankTransfer = bankTransfer;
-  }
+  public void setBankTransfer(@javax.annotation.Nonnull BankTransferData bankTransfer) {
+            this.bankTransfer = bankTransfer;
+        }
 
-  @Override
-  public boolean equals(Object o) {
+@Override
+public boolean equals(Object o) {
     if (this == o) {
-      return true;
+    return true;
     }
     if (o == null || getClass() != o.getClass()) {
-      return false;
+    return false;
     }
-    BankTransfer bankTransfer = (BankTransfer) o;
-    return Objects.equals(this.bankTransfer, bankTransfer.bankTransfer);
-  }
+        BankTransfer bankTransfer = (BankTransfer) o;
+        return Objects.equals(this.bankTransfer, bankTransfer.bankTransfer);
+}
 
-  @Override
-  public int hashCode() {
-    return Objects.hash(bankTransfer);
-  }
+    @Override
+    public int hashCode() {
+        return Objects.hash(bankTransfer);
+    }
 
-  @Override
-  public String toString() {
+    @Override
+    public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class BankTransfer {\n");
-    sb.append("    bankTransfer: ").append(toIndentedString(bankTransfer)).append("\n");
+        sb.append("    bankTransfer: ").append(toIndentedString(bankTransfer)).append("\n");
     sb.append("}");
     return sb.toString();
-  }
+    }
 
-  /**
-   * Convert the given object to string with each line indented by 4 spaces
-   * (except the first line).
-   */
-  private String toIndentedString(Object o) {
+    /**
+    * Convert the given object to string with each line indented by 4 spaces
+    * (except the first line).
+    */
+    private String toIndentedString(Object o) {
     if (o == null) {
-      return "null";
+    return "null";
     }
     return o.toString().replace("\n", "\n    ");
-  }
-
-  /**
-   * Convert the instance into URL query string.
-   *
-   * @return URL query string
-   */
-  public String toUrlQueryString() {
-    return toUrlQueryString(null);
-  }
-
-  /**
-   * Convert the instance into URL query string.
-   *
-   * @param prefix prefix of the query string
-   * @return URL query string
-   */
-  public String toUrlQueryString(String prefix) {
-    String suffix = "";
-    String containerSuffix = "";
-    String containerPrefix = "";
-    if (prefix == null) {
-      // style=form, explode=true, e.g. /pet?name=cat&type=manx
-      prefix = "";
-    } else {
-      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
-      prefix = prefix + "[";
-      suffix = "]";
-      containerSuffix = "]";
-      containerPrefix = "[";
     }
 
-    StringJoiner joiner = new StringJoiner("&");
+        /**
+        * Convert the instance into URL query string.
+        *
+        * @return URL query string
+        */
+        public String toUrlQueryString() {
+        return toUrlQueryString(null);
+        }
 
-    // add `bank_transfer` to the URL query string
-    if (getBankTransfer() != null) {
-      joiner.add(getBankTransfer().toUrlQueryString(prefix + "bank_transfer" + suffix));
+        /**
+        * Convert the instance into URL query string.
+        *
+        * @param prefix prefix of the query string
+        * @return URL query string
+        */
+        public String toUrlQueryString(String prefix) {
+        String suffix = "";
+        String containerSuffix = "";
+        String containerPrefix = "";
+        if (prefix == null) {
+        // style=form, explode=true, e.g. /pet?name=cat&type=manx
+        prefix = "";
+        } else {
+        // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+        prefix = prefix + "[";
+        suffix = "]";
+        containerSuffix = "]";
+        containerPrefix = "[";
+        }
+
+        StringJoiner joiner = new StringJoiner("&");
+
+            // add `bank_transfer` to the URL query string
+                            if (getBankTransfer() != null) {
+                            joiner.add(getBankTransfer().toUrlQueryString(prefix + "bank_transfer" + suffix));
+                            }
+
+        return joiner.toString();
+        }
+
     }
-
-    return joiner.toString();
-  }
-
-}
 

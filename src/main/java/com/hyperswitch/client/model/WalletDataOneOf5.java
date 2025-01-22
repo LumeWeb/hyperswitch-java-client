@@ -27,126 +27,127 @@ import java.net.URLEncoder;
 import java.util.StringJoiner;
 
 /**
- * WalletDataOneOf5
- */
-@JsonPropertyOrder({
-  WalletDataOneOf5.JSON_PROPERTY_GO_PAY_REDIRECT
-})
-@JsonTypeName("WalletData_oneOf_5")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+* WalletDataOneOf5
+*/
+    @JsonPropertyOrder({
+        WalletDataOneOf5.JSON_PROPERTY_GO_PAY_REDIRECT
+    })
+            @JsonTypeName("WalletData_oneOf_5")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class WalletDataOneOf5 {
-  public static final String JSON_PROPERTY_GO_PAY_REDIRECT = "go_pay_redirect";
-  private Object goPayRedirect;
+        public static final String JSON_PROPERTY_GO_PAY_REDIRECT = "go_pay_redirect";
+    @javax.annotation.Nonnull
+            private Object goPayRedirect;
 
-  public WalletDataOneOf5() {
-  }
+public WalletDataOneOf5() {
+}
 
-  public WalletDataOneOf5 goPayRedirect(Object goPayRedirect) {
-    
-    this.goPayRedirect = goPayRedirect;
-    return this;
-  }
+        public WalletDataOneOf5 goPayRedirect(@javax.annotation.Nonnull Object goPayRedirect) {
+        
+        this.goPayRedirect = goPayRedirect;
+        return this;
+        }
 
-   /**
-   * Get goPayRedirect
-   * @return goPayRedirect
-  **/
-  @javax.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_GO_PAY_REDIRECT)
+    /**
+        * Get goPayRedirect
+    * @return goPayRedirect
+    */
+    @javax.annotation.Nonnull
+      @JsonProperty(JSON_PROPERTY_GO_PAY_REDIRECT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-  public Object getGoPayRedirect() {
-    return goPayRedirect;
-  }
+    public Object getGoPayRedirect() {
+        return goPayRedirect;
+    }
 
 
-  @JsonProperty(JSON_PROPERTY_GO_PAY_REDIRECT)
+          @JsonProperty(JSON_PROPERTY_GO_PAY_REDIRECT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setGoPayRedirect(Object goPayRedirect) {
-    this.goPayRedirect = goPayRedirect;
-  }
+  public void setGoPayRedirect(@javax.annotation.Nonnull Object goPayRedirect) {
+            this.goPayRedirect = goPayRedirect;
+        }
 
-  @Override
-  public boolean equals(Object o) {
+@Override
+public boolean equals(Object o) {
     if (this == o) {
-      return true;
+    return true;
     }
     if (o == null || getClass() != o.getClass()) {
-      return false;
+    return false;
     }
-    WalletDataOneOf5 walletDataOneOf5 = (WalletDataOneOf5) o;
-    return Objects.equals(this.goPayRedirect, walletDataOneOf5.goPayRedirect);
-  }
+        WalletDataOneOf5 walletDataOneOf5 = (WalletDataOneOf5) o;
+        return Objects.equals(this.goPayRedirect, walletDataOneOf5.goPayRedirect);
+}
 
-  @Override
-  public int hashCode() {
-    return Objects.hash(goPayRedirect);
-  }
+    @Override
+    public int hashCode() {
+        return Objects.hash(goPayRedirect);
+    }
 
-  @Override
-  public String toString() {
+    @Override
+    public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class WalletDataOneOf5 {\n");
-    sb.append("    goPayRedirect: ").append(toIndentedString(goPayRedirect)).append("\n");
+        sb.append("    goPayRedirect: ").append(toIndentedString(goPayRedirect)).append("\n");
     sb.append("}");
     return sb.toString();
-  }
+    }
 
-  /**
-   * Convert the given object to string with each line indented by 4 spaces
-   * (except the first line).
-   */
-  private String toIndentedString(Object o) {
+    /**
+    * Convert the given object to string with each line indented by 4 spaces
+    * (except the first line).
+    */
+    private String toIndentedString(Object o) {
     if (o == null) {
-      return "null";
+    return "null";
     }
     return o.toString().replace("\n", "\n    ");
-  }
-
-  /**
-   * Convert the instance into URL query string.
-   *
-   * @return URL query string
-   */
-  public String toUrlQueryString() {
-    return toUrlQueryString(null);
-  }
-
-  /**
-   * Convert the instance into URL query string.
-   *
-   * @param prefix prefix of the query string
-   * @return URL query string
-   */
-  public String toUrlQueryString(String prefix) {
-    String suffix = "";
-    String containerSuffix = "";
-    String containerPrefix = "";
-    if (prefix == null) {
-      // style=form, explode=true, e.g. /pet?name=cat&type=manx
-      prefix = "";
-    } else {
-      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
-      prefix = prefix + "[";
-      suffix = "]";
-      containerSuffix = "]";
-      containerPrefix = "[";
     }
 
-    StringJoiner joiner = new StringJoiner("&");
+        /**
+        * Convert the instance into URL query string.
+        *
+        * @return URL query string
+        */
+        public String toUrlQueryString() {
+        return toUrlQueryString(null);
+        }
 
-    // add `go_pay_redirect` to the URL query string
-    if (getGoPayRedirect() != null) {
-      try {
-        joiner.add(String.format("%sgo_pay_redirect%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getGoPayRedirect()), "UTF-8").replaceAll("\\+", "%20")));
-      } catch (UnsupportedEncodingException e) {
-        // Should never happen, UTF-8 is always supported
-        throw new RuntimeException(e);
-      }
+        /**
+        * Convert the instance into URL query string.
+        *
+        * @param prefix prefix of the query string
+        * @return URL query string
+        */
+        public String toUrlQueryString(String prefix) {
+        String suffix = "";
+        String containerSuffix = "";
+        String containerPrefix = "";
+        if (prefix == null) {
+        // style=form, explode=true, e.g. /pet?name=cat&type=manx
+        prefix = "";
+        } else {
+        // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+        prefix = prefix + "[";
+        suffix = "]";
+        containerSuffix = "]";
+        containerPrefix = "[";
+        }
+
+        StringJoiner joiner = new StringJoiner("&");
+
+            // add `go_pay_redirect` to the URL query string
+                        if (getGoPayRedirect() != null) {
+                        try {
+                        joiner.add(String.format("%sgo_pay_redirect%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getGoPayRedirect()), "UTF-8").replaceAll("\\+", "%20")));
+                        } catch (UnsupportedEncodingException e) {
+                        // Should never happen, UTF-8 is always supported
+                        throw new RuntimeException(e);
+                        }
+                        }
+
+        return joiner.toString();
+        }
+
     }
-
-    return joiner.toString();
-  }
-
-}
 

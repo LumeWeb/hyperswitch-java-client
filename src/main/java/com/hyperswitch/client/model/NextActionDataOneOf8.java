@@ -28,23 +28,24 @@ import java.net.URLEncoder;
 import java.util.StringJoiner;
 
 /**
- * NextActionDataOneOf8
- */
-@JsonPropertyOrder({
-  NextActionDataOneOf8.JSON_PROPERTY_NEXT_ACTION_DATA,
-  NextActionDataOneOf8.JSON_PROPERTY_TYPE
-})
-@JsonTypeName("NextActionData_oneOf_8")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+* NextActionDataOneOf8
+*/
+    @JsonPropertyOrder({
+        NextActionDataOneOf8.JSON_PROPERTY_NEXT_ACTION_DATA,
+        NextActionDataOneOf8.JSON_PROPERTY_TYPE
+    })
+            @JsonTypeName("NextActionData_oneOf_8")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class NextActionDataOneOf8 {
-  public static final String JSON_PROPERTY_NEXT_ACTION_DATA = "next_action_data";
-  private SdkNextActionData nextActionData;
+        public static final String JSON_PROPERTY_NEXT_ACTION_DATA = "next_action_data";
+    @javax.annotation.Nonnull
+            private SdkNextActionData nextActionData;
 
-  /**
+              /**
    * Gets or Sets type
    */
   public enum TypeEnum {
-    INVOKE_SDK_CLIENT("invoke_sdk_client");
+    INVOKE_SDK_CLIENT(String.valueOf("invoke_sdk_client"));
 
     private String value;
 
@@ -73,151 +74,151 @@ public class NextActionDataOneOf8 {
     }
   }
 
-  public static final String JSON_PROPERTY_TYPE = "type";
-  private TypeEnum type;
+        public static final String JSON_PROPERTY_TYPE = "type";
+    @javax.annotation.Nonnull
+            private TypeEnum type;
 
-  public NextActionDataOneOf8() {
-  }
+public NextActionDataOneOf8() {
+}
 
-  public NextActionDataOneOf8 nextActionData(SdkNextActionData nextActionData) {
-    
-    this.nextActionData = nextActionData;
-    return this;
-  }
+        public NextActionDataOneOf8 nextActionData(@javax.annotation.Nonnull SdkNextActionData nextActionData) {
+        
+        this.nextActionData = nextActionData;
+        return this;
+        }
 
-   /**
-   * Get nextActionData
-   * @return nextActionData
-  **/
-  @javax.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_NEXT_ACTION_DATA)
+    /**
+        * Get nextActionData
+    * @return nextActionData
+    */
+    @javax.annotation.Nonnull
+      @JsonProperty(JSON_PROPERTY_NEXT_ACTION_DATA)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-  public SdkNextActionData getNextActionData() {
-    return nextActionData;
-  }
+    public SdkNextActionData getNextActionData() {
+        return nextActionData;
+    }
 
 
-  @JsonProperty(JSON_PROPERTY_NEXT_ACTION_DATA)
+          @JsonProperty(JSON_PROPERTY_NEXT_ACTION_DATA)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setNextActionData(SdkNextActionData nextActionData) {
-    this.nextActionData = nextActionData;
-  }
+  public void setNextActionData(@javax.annotation.Nonnull SdkNextActionData nextActionData) {
+            this.nextActionData = nextActionData;
+        }
 
+        public NextActionDataOneOf8 type(@javax.annotation.Nonnull TypeEnum type) {
+        
+        this.type = type;
+        return this;
+        }
 
-  public NextActionDataOneOf8 type(TypeEnum type) {
-    
-    this.type = type;
-    return this;
-  }
-
-   /**
-   * Get type
-   * @return type
-  **/
-  @javax.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_TYPE)
+    /**
+        * Get type
+    * @return type
+    */
+    @javax.annotation.Nonnull
+      @JsonProperty(JSON_PROPERTY_TYPE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-  public TypeEnum getType() {
-    return type;
-  }
+    public TypeEnum getType() {
+        return type;
+    }
 
 
-  @JsonProperty(JSON_PROPERTY_TYPE)
+          @JsonProperty(JSON_PROPERTY_TYPE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setType(TypeEnum type) {
-    this.type = type;
-  }
+  public void setType(@javax.annotation.Nonnull TypeEnum type) {
+            this.type = type;
+        }
 
-  @Override
-  public boolean equals(Object o) {
+@Override
+public boolean equals(Object o) {
     if (this == o) {
-      return true;
+    return true;
     }
     if (o == null || getClass() != o.getClass()) {
-      return false;
+    return false;
     }
-    NextActionDataOneOf8 nextActionDataOneOf8 = (NextActionDataOneOf8) o;
-    return Objects.equals(this.nextActionData, nextActionDataOneOf8.nextActionData) &&
+        NextActionDataOneOf8 nextActionDataOneOf8 = (NextActionDataOneOf8) o;
+        return Objects.equals(this.nextActionData, nextActionDataOneOf8.nextActionData) &&
         Objects.equals(this.type, nextActionDataOneOf8.type);
-  }
+}
 
-  @Override
-  public int hashCode() {
-    return Objects.hash(nextActionData, type);
-  }
+    @Override
+    public int hashCode() {
+        return Objects.hash(nextActionData, type);
+    }
 
-  @Override
-  public String toString() {
+    @Override
+    public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class NextActionDataOneOf8 {\n");
-    sb.append("    nextActionData: ").append(toIndentedString(nextActionData)).append("\n");
-    sb.append("    type: ").append(toIndentedString(type)).append("\n");
+        sb.append("    nextActionData: ").append(toIndentedString(nextActionData)).append("\n");
+        sb.append("    type: ").append(toIndentedString(type)).append("\n");
     sb.append("}");
     return sb.toString();
-  }
+    }
 
-  /**
-   * Convert the given object to string with each line indented by 4 spaces
-   * (except the first line).
-   */
-  private String toIndentedString(Object o) {
+    /**
+    * Convert the given object to string with each line indented by 4 spaces
+    * (except the first line).
+    */
+    private String toIndentedString(Object o) {
     if (o == null) {
-      return "null";
+    return "null";
     }
     return o.toString().replace("\n", "\n    ");
-  }
-
-  /**
-   * Convert the instance into URL query string.
-   *
-   * @return URL query string
-   */
-  public String toUrlQueryString() {
-    return toUrlQueryString(null);
-  }
-
-  /**
-   * Convert the instance into URL query string.
-   *
-   * @param prefix prefix of the query string
-   * @return URL query string
-   */
-  public String toUrlQueryString(String prefix) {
-    String suffix = "";
-    String containerSuffix = "";
-    String containerPrefix = "";
-    if (prefix == null) {
-      // style=form, explode=true, e.g. /pet?name=cat&type=manx
-      prefix = "";
-    } else {
-      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
-      prefix = prefix + "[";
-      suffix = "]";
-      containerSuffix = "]";
-      containerPrefix = "[";
     }
 
-    StringJoiner joiner = new StringJoiner("&");
+        /**
+        * Convert the instance into URL query string.
+        *
+        * @return URL query string
+        */
+        public String toUrlQueryString() {
+        return toUrlQueryString(null);
+        }
 
-    // add `next_action_data` to the URL query string
-    if (getNextActionData() != null) {
-      joiner.add(getNextActionData().toUrlQueryString(prefix + "next_action_data" + suffix));
+        /**
+        * Convert the instance into URL query string.
+        *
+        * @param prefix prefix of the query string
+        * @return URL query string
+        */
+        public String toUrlQueryString(String prefix) {
+        String suffix = "";
+        String containerSuffix = "";
+        String containerPrefix = "";
+        if (prefix == null) {
+        // style=form, explode=true, e.g. /pet?name=cat&type=manx
+        prefix = "";
+        } else {
+        // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+        prefix = prefix + "[";
+        suffix = "]";
+        containerSuffix = "]";
+        containerPrefix = "[";
+        }
+
+        StringJoiner joiner = new StringJoiner("&");
+
+            // add `next_action_data` to the URL query string
+                            if (getNextActionData() != null) {
+                            joiner.add(getNextActionData().toUrlQueryString(prefix + "next_action_data" + suffix));
+                            }
+
+            // add `type` to the URL query string
+                        if (getType() != null) {
+                        try {
+                        joiner.add(String.format("%stype%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getType()), "UTF-8").replaceAll("\\+", "%20")));
+                        } catch (UnsupportedEncodingException e) {
+                        // Should never happen, UTF-8 is always supported
+                        throw new RuntimeException(e);
+                        }
+                        }
+
+        return joiner.toString();
+        }
+
     }
-
-    // add `type` to the URL query string
-    if (getType() != null) {
-      try {
-        joiner.add(String.format("%stype%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getType()), "UTF-8").replaceAll("\\+", "%20")));
-      } catch (UnsupportedEncodingException e) {
-        // Should never happen, UTF-8 is always supported
-        throw new RuntimeException(e);
-      }
-    }
-
-    return joiner.toString();
-  }
-
-}
 

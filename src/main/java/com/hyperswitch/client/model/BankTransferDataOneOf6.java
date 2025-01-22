@@ -28,121 +28,122 @@ import java.net.URLEncoder;
 import java.util.StringJoiner;
 
 /**
- * BankTransferDataOneOf6
- */
-@JsonPropertyOrder({
-  BankTransferDataOneOf6.JSON_PROPERTY_BNI_VA_BANK_TRANSFER
-})
-@JsonTypeName("BankTransferData_oneOf_6")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+* BankTransferDataOneOf6
+*/
+    @JsonPropertyOrder({
+        BankTransferDataOneOf6.JSON_PROPERTY_BNI_VA_BANK_TRANSFER
+    })
+            @JsonTypeName("BankTransferData_oneOf_6")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class BankTransferDataOneOf6 {
-  public static final String JSON_PROPERTY_BNI_VA_BANK_TRANSFER = "bni_va_bank_transfer";
-  private BankTransferDataOneOf4PermataBankTransfer bniVaBankTransfer;
+        public static final String JSON_PROPERTY_BNI_VA_BANK_TRANSFER = "bni_va_bank_transfer";
+    @javax.annotation.Nonnull
+            private BankTransferDataOneOf4PermataBankTransfer bniVaBankTransfer;
 
-  public BankTransferDataOneOf6() {
-  }
+public BankTransferDataOneOf6() {
+}
 
-  public BankTransferDataOneOf6 bniVaBankTransfer(BankTransferDataOneOf4PermataBankTransfer bniVaBankTransfer) {
-    
-    this.bniVaBankTransfer = bniVaBankTransfer;
-    return this;
-  }
+        public BankTransferDataOneOf6 bniVaBankTransfer(@javax.annotation.Nonnull BankTransferDataOneOf4PermataBankTransfer bniVaBankTransfer) {
+        
+        this.bniVaBankTransfer = bniVaBankTransfer;
+        return this;
+        }
 
-   /**
-   * Get bniVaBankTransfer
-   * @return bniVaBankTransfer
-  **/
-  @javax.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_BNI_VA_BANK_TRANSFER)
+    /**
+        * Get bniVaBankTransfer
+    * @return bniVaBankTransfer
+    */
+    @javax.annotation.Nonnull
+      @JsonProperty(JSON_PROPERTY_BNI_VA_BANK_TRANSFER)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-  public BankTransferDataOneOf4PermataBankTransfer getBniVaBankTransfer() {
-    return bniVaBankTransfer;
-  }
+    public BankTransferDataOneOf4PermataBankTransfer getBniVaBankTransfer() {
+        return bniVaBankTransfer;
+    }
 
 
-  @JsonProperty(JSON_PROPERTY_BNI_VA_BANK_TRANSFER)
+          @JsonProperty(JSON_PROPERTY_BNI_VA_BANK_TRANSFER)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setBniVaBankTransfer(BankTransferDataOneOf4PermataBankTransfer bniVaBankTransfer) {
-    this.bniVaBankTransfer = bniVaBankTransfer;
-  }
+  public void setBniVaBankTransfer(@javax.annotation.Nonnull BankTransferDataOneOf4PermataBankTransfer bniVaBankTransfer) {
+            this.bniVaBankTransfer = bniVaBankTransfer;
+        }
 
-  @Override
-  public boolean equals(Object o) {
+@Override
+public boolean equals(Object o) {
     if (this == o) {
-      return true;
+    return true;
     }
     if (o == null || getClass() != o.getClass()) {
-      return false;
+    return false;
     }
-    BankTransferDataOneOf6 bankTransferDataOneOf6 = (BankTransferDataOneOf6) o;
-    return Objects.equals(this.bniVaBankTransfer, bankTransferDataOneOf6.bniVaBankTransfer);
-  }
+        BankTransferDataOneOf6 bankTransferDataOneOf6 = (BankTransferDataOneOf6) o;
+        return Objects.equals(this.bniVaBankTransfer, bankTransferDataOneOf6.bniVaBankTransfer);
+}
 
-  @Override
-  public int hashCode() {
-    return Objects.hash(bniVaBankTransfer);
-  }
+    @Override
+    public int hashCode() {
+        return Objects.hash(bniVaBankTransfer);
+    }
 
-  @Override
-  public String toString() {
+    @Override
+    public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class BankTransferDataOneOf6 {\n");
-    sb.append("    bniVaBankTransfer: ").append(toIndentedString(bniVaBankTransfer)).append("\n");
+        sb.append("    bniVaBankTransfer: ").append(toIndentedString(bniVaBankTransfer)).append("\n");
     sb.append("}");
     return sb.toString();
-  }
+    }
 
-  /**
-   * Convert the given object to string with each line indented by 4 spaces
-   * (except the first line).
-   */
-  private String toIndentedString(Object o) {
+    /**
+    * Convert the given object to string with each line indented by 4 spaces
+    * (except the first line).
+    */
+    private String toIndentedString(Object o) {
     if (o == null) {
-      return "null";
+    return "null";
     }
     return o.toString().replace("\n", "\n    ");
-  }
-
-  /**
-   * Convert the instance into URL query string.
-   *
-   * @return URL query string
-   */
-  public String toUrlQueryString() {
-    return toUrlQueryString(null);
-  }
-
-  /**
-   * Convert the instance into URL query string.
-   *
-   * @param prefix prefix of the query string
-   * @return URL query string
-   */
-  public String toUrlQueryString(String prefix) {
-    String suffix = "";
-    String containerSuffix = "";
-    String containerPrefix = "";
-    if (prefix == null) {
-      // style=form, explode=true, e.g. /pet?name=cat&type=manx
-      prefix = "";
-    } else {
-      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
-      prefix = prefix + "[";
-      suffix = "]";
-      containerSuffix = "]";
-      containerPrefix = "[";
     }
 
-    StringJoiner joiner = new StringJoiner("&");
+        /**
+        * Convert the instance into URL query string.
+        *
+        * @return URL query string
+        */
+        public String toUrlQueryString() {
+        return toUrlQueryString(null);
+        }
 
-    // add `bni_va_bank_transfer` to the URL query string
-    if (getBniVaBankTransfer() != null) {
-      joiner.add(getBniVaBankTransfer().toUrlQueryString(prefix + "bni_va_bank_transfer" + suffix));
+        /**
+        * Convert the instance into URL query string.
+        *
+        * @param prefix prefix of the query string
+        * @return URL query string
+        */
+        public String toUrlQueryString(String prefix) {
+        String suffix = "";
+        String containerSuffix = "";
+        String containerPrefix = "";
+        if (prefix == null) {
+        // style=form, explode=true, e.g. /pet?name=cat&type=manx
+        prefix = "";
+        } else {
+        // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+        prefix = prefix + "[";
+        suffix = "]";
+        containerSuffix = "]";
+        containerPrefix = "[";
+        }
+
+        StringJoiner joiner = new StringJoiner("&");
+
+            // add `bni_va_bank_transfer` to the URL query string
+                            if (getBniVaBankTransfer() != null) {
+                            joiner.add(getBniVaBankTransfer().toUrlQueryString(prefix + "bni_va_bank_transfer" + suffix));
+                            }
+
+        return joiner.toString();
+        }
+
     }
-
-    return joiner.toString();
-  }
-
-}
 

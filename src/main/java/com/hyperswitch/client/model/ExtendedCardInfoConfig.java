@@ -27,169 +27,170 @@ import java.net.URLEncoder;
 import java.util.StringJoiner;
 
 /**
- * ExtendedCardInfoConfig
- */
-@JsonPropertyOrder({
-  ExtendedCardInfoConfig.JSON_PROPERTY_PUBLIC_KEY,
-  ExtendedCardInfoConfig.JSON_PROPERTY_TTL_IN_SECS
-})
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+* ExtendedCardInfoConfig
+*/
+    @JsonPropertyOrder({
+        ExtendedCardInfoConfig.JSON_PROPERTY_PUBLIC_KEY,
+        ExtendedCardInfoConfig.JSON_PROPERTY_TTL_IN_SECS
+    })
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class ExtendedCardInfoConfig {
-  public static final String JSON_PROPERTY_PUBLIC_KEY = "public_key";
-  private String publicKey;
+        public static final String JSON_PROPERTY_PUBLIC_KEY = "public_key";
+    @javax.annotation.Nonnull
+            private String publicKey;
 
-  public static final String JSON_PROPERTY_TTL_IN_SECS = "ttl_in_secs";
-  private Integer ttlInSecs = 900;
+        public static final String JSON_PROPERTY_TTL_IN_SECS = "ttl_in_secs";
+    @javax.annotation.Nullable
+            private Integer ttlInSecs = 900;
 
-  public ExtendedCardInfoConfig() {
-  }
+public ExtendedCardInfoConfig() {
+}
 
-  public ExtendedCardInfoConfig publicKey(String publicKey) {
-    
-    this.publicKey = publicKey;
-    return this;
-  }
+        public ExtendedCardInfoConfig publicKey(@javax.annotation.Nonnull String publicKey) {
+        
+        this.publicKey = publicKey;
+        return this;
+        }
 
-   /**
-   * Merchant public key
-   * @return publicKey
-  **/
-  @javax.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_PUBLIC_KEY)
+    /**
+        * Merchant public key
+    * @return publicKey
+    */
+    @javax.annotation.Nonnull
+      @JsonProperty(JSON_PROPERTY_PUBLIC_KEY)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-  public String getPublicKey() {
-    return publicKey;
-  }
+    public String getPublicKey() {
+        return publicKey;
+    }
 
 
-  @JsonProperty(JSON_PROPERTY_PUBLIC_KEY)
+          @JsonProperty(JSON_PROPERTY_PUBLIC_KEY)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setPublicKey(String publicKey) {
-    this.publicKey = publicKey;
-  }
+  public void setPublicKey(@javax.annotation.Nonnull String publicKey) {
+            this.publicKey = publicKey;
+        }
 
+        public ExtendedCardInfoConfig ttlInSecs(@javax.annotation.Nullable Integer ttlInSecs) {
+        
+        this.ttlInSecs = ttlInSecs;
+        return this;
+        }
 
-  public ExtendedCardInfoConfig ttlInSecs(Integer ttlInSecs) {
-    
-    this.ttlInSecs = ttlInSecs;
-    return this;
-  }
-
-   /**
-   * TTL for extended card info
-   * minimum: 0
-   * maximum: 7200
-   * @return ttlInSecs
-  **/
-  @javax.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_TTL_IN_SECS)
+    /**
+        * TTL for extended card info
+        * minimum: 0
+        * maximum: 7200
+    * @return ttlInSecs
+    */
+    @javax.annotation.Nullable
+      @JsonProperty(JSON_PROPERTY_TTL_IN_SECS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-  public Integer getTtlInSecs() {
-    return ttlInSecs;
-  }
+    public Integer getTtlInSecs() {
+        return ttlInSecs;
+    }
 
 
-  @JsonProperty(JSON_PROPERTY_TTL_IN_SECS)
+          @JsonProperty(JSON_PROPERTY_TTL_IN_SECS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setTtlInSecs(Integer ttlInSecs) {
-    this.ttlInSecs = ttlInSecs;
-  }
+  public void setTtlInSecs(@javax.annotation.Nullable Integer ttlInSecs) {
+            this.ttlInSecs = ttlInSecs;
+        }
 
-  @Override
-  public boolean equals(Object o) {
+@Override
+public boolean equals(Object o) {
     if (this == o) {
-      return true;
+    return true;
     }
     if (o == null || getClass() != o.getClass()) {
-      return false;
+    return false;
     }
-    ExtendedCardInfoConfig extendedCardInfoConfig = (ExtendedCardInfoConfig) o;
-    return Objects.equals(this.publicKey, extendedCardInfoConfig.publicKey) &&
+        ExtendedCardInfoConfig extendedCardInfoConfig = (ExtendedCardInfoConfig) o;
+        return Objects.equals(this.publicKey, extendedCardInfoConfig.publicKey) &&
         Objects.equals(this.ttlInSecs, extendedCardInfoConfig.ttlInSecs);
-  }
+}
 
-  @Override
-  public int hashCode() {
-    return Objects.hash(publicKey, ttlInSecs);
-  }
+    @Override
+    public int hashCode() {
+        return Objects.hash(publicKey, ttlInSecs);
+    }
 
-  @Override
-  public String toString() {
+    @Override
+    public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class ExtendedCardInfoConfig {\n");
-    sb.append("    publicKey: ").append(toIndentedString(publicKey)).append("\n");
-    sb.append("    ttlInSecs: ").append(toIndentedString(ttlInSecs)).append("\n");
+        sb.append("    publicKey: ").append(toIndentedString(publicKey)).append("\n");
+        sb.append("    ttlInSecs: ").append(toIndentedString(ttlInSecs)).append("\n");
     sb.append("}");
     return sb.toString();
-  }
+    }
 
-  /**
-   * Convert the given object to string with each line indented by 4 spaces
-   * (except the first line).
-   */
-  private String toIndentedString(Object o) {
+    /**
+    * Convert the given object to string with each line indented by 4 spaces
+    * (except the first line).
+    */
+    private String toIndentedString(Object o) {
     if (o == null) {
-      return "null";
+    return "null";
     }
     return o.toString().replace("\n", "\n    ");
-  }
-
-  /**
-   * Convert the instance into URL query string.
-   *
-   * @return URL query string
-   */
-  public String toUrlQueryString() {
-    return toUrlQueryString(null);
-  }
-
-  /**
-   * Convert the instance into URL query string.
-   *
-   * @param prefix prefix of the query string
-   * @return URL query string
-   */
-  public String toUrlQueryString(String prefix) {
-    String suffix = "";
-    String containerSuffix = "";
-    String containerPrefix = "";
-    if (prefix == null) {
-      // style=form, explode=true, e.g. /pet?name=cat&type=manx
-      prefix = "";
-    } else {
-      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
-      prefix = prefix + "[";
-      suffix = "]";
-      containerSuffix = "]";
-      containerPrefix = "[";
     }
 
-    StringJoiner joiner = new StringJoiner("&");
+        /**
+        * Convert the instance into URL query string.
+        *
+        * @return URL query string
+        */
+        public String toUrlQueryString() {
+        return toUrlQueryString(null);
+        }
 
-    // add `public_key` to the URL query string
-    if (getPublicKey() != null) {
-      try {
-        joiner.add(String.format("%spublic_key%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getPublicKey()), "UTF-8").replaceAll("\\+", "%20")));
-      } catch (UnsupportedEncodingException e) {
-        // Should never happen, UTF-8 is always supported
-        throw new RuntimeException(e);
-      }
+        /**
+        * Convert the instance into URL query string.
+        *
+        * @param prefix prefix of the query string
+        * @return URL query string
+        */
+        public String toUrlQueryString(String prefix) {
+        String suffix = "";
+        String containerSuffix = "";
+        String containerPrefix = "";
+        if (prefix == null) {
+        // style=form, explode=true, e.g. /pet?name=cat&type=manx
+        prefix = "";
+        } else {
+        // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+        prefix = prefix + "[";
+        suffix = "]";
+        containerSuffix = "]";
+        containerPrefix = "[";
+        }
+
+        StringJoiner joiner = new StringJoiner("&");
+
+            // add `public_key` to the URL query string
+                        if (getPublicKey() != null) {
+                        try {
+                        joiner.add(String.format("%spublic_key%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getPublicKey()), "UTF-8").replaceAll("\\+", "%20")));
+                        } catch (UnsupportedEncodingException e) {
+                        // Should never happen, UTF-8 is always supported
+                        throw new RuntimeException(e);
+                        }
+                        }
+
+            // add `ttl_in_secs` to the URL query string
+                        if (getTtlInSecs() != null) {
+                        try {
+                        joiner.add(String.format("%sttl_in_secs%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getTtlInSecs()), "UTF-8").replaceAll("\\+", "%20")));
+                        } catch (UnsupportedEncodingException e) {
+                        // Should never happen, UTF-8 is always supported
+                        throw new RuntimeException(e);
+                        }
+                        }
+
+        return joiner.toString();
+        }
+
     }
-
-    // add `ttl_in_secs` to the URL query string
-    if (getTtlInSecs() != null) {
-      try {
-        joiner.add(String.format("%sttl_in_secs%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getTtlInSecs()), "UTF-8").replaceAll("\\+", "%20")));
-      } catch (UnsupportedEncodingException e) {
-        // Should never happen, UTF-8 is always supported
-        throw new RuntimeException(e);
-      }
-    }
-
-    return joiner.toString();
-  }
-
-}
 

@@ -33,11 +33,11 @@ public enum PayoutEntityType {
   
   COMPANY("Company"),
   
-  NONPROFIT("NonProfit"),
+  NON_PROFIT("NonProfit"),
   
-  PUBLICSECTOR("PublicSector"),
+  PUBLIC_SECTOR("PublicSector"),
   
-  NATURALPERSON("NaturalPerson"),
+  NATURAL_PERSON("NaturalPerson"),
   
   LOWERCASE("lowercase"),
   

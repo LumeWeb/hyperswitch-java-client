@@ -28,121 +28,122 @@ import java.net.URLEncoder;
 import java.util.StringJoiner;
 
 /**
- * BankRedirectDataOneOf2
- */
-@JsonPropertyOrder({
-  BankRedirectDataOneOf2.JSON_PROPERTY_BLIK
-})
-@JsonTypeName("BankRedirectData_oneOf_2")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+* BankRedirectDataOneOf2
+*/
+    @JsonPropertyOrder({
+        BankRedirectDataOneOf2.JSON_PROPERTY_BLIK
+    })
+            @JsonTypeName("BankRedirectData_oneOf_2")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class BankRedirectDataOneOf2 {
-  public static final String JSON_PROPERTY_BLIK = "blik";
-  private BankRedirectDataOneOf2Blik blik;
+        public static final String JSON_PROPERTY_BLIK = "blik";
+    @javax.annotation.Nonnull
+            private BankRedirectDataOneOf2Blik blik;
 
-  public BankRedirectDataOneOf2() {
-  }
+public BankRedirectDataOneOf2() {
+}
 
-  public BankRedirectDataOneOf2 blik(BankRedirectDataOneOf2Blik blik) {
-    
-    this.blik = blik;
-    return this;
-  }
+        public BankRedirectDataOneOf2 blik(@javax.annotation.Nonnull BankRedirectDataOneOf2Blik blik) {
+        
+        this.blik = blik;
+        return this;
+        }
 
-   /**
-   * Get blik
-   * @return blik
-  **/
-  @javax.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_BLIK)
+    /**
+        * Get blik
+    * @return blik
+    */
+    @javax.annotation.Nonnull
+      @JsonProperty(JSON_PROPERTY_BLIK)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-  public BankRedirectDataOneOf2Blik getBlik() {
-    return blik;
-  }
+    public BankRedirectDataOneOf2Blik getBlik() {
+        return blik;
+    }
 
 
-  @JsonProperty(JSON_PROPERTY_BLIK)
+          @JsonProperty(JSON_PROPERTY_BLIK)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setBlik(BankRedirectDataOneOf2Blik blik) {
-    this.blik = blik;
-  }
+  public void setBlik(@javax.annotation.Nonnull BankRedirectDataOneOf2Blik blik) {
+            this.blik = blik;
+        }
 
-  @Override
-  public boolean equals(Object o) {
+@Override
+public boolean equals(Object o) {
     if (this == o) {
-      return true;
+    return true;
     }
     if (o == null || getClass() != o.getClass()) {
-      return false;
+    return false;
     }
-    BankRedirectDataOneOf2 bankRedirectDataOneOf2 = (BankRedirectDataOneOf2) o;
-    return Objects.equals(this.blik, bankRedirectDataOneOf2.blik);
-  }
+        BankRedirectDataOneOf2 bankRedirectDataOneOf2 = (BankRedirectDataOneOf2) o;
+        return Objects.equals(this.blik, bankRedirectDataOneOf2.blik);
+}
 
-  @Override
-  public int hashCode() {
-    return Objects.hash(blik);
-  }
+    @Override
+    public int hashCode() {
+        return Objects.hash(blik);
+    }
 
-  @Override
-  public String toString() {
+    @Override
+    public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class BankRedirectDataOneOf2 {\n");
-    sb.append("    blik: ").append(toIndentedString(blik)).append("\n");
+        sb.append("    blik: ").append(toIndentedString(blik)).append("\n");
     sb.append("}");
     return sb.toString();
-  }
+    }
 
-  /**
-   * Convert the given object to string with each line indented by 4 spaces
-   * (except the first line).
-   */
-  private String toIndentedString(Object o) {
+    /**
+    * Convert the given object to string with each line indented by 4 spaces
+    * (except the first line).
+    */
+    private String toIndentedString(Object o) {
     if (o == null) {
-      return "null";
+    return "null";
     }
     return o.toString().replace("\n", "\n    ");
-  }
-
-  /**
-   * Convert the instance into URL query string.
-   *
-   * @return URL query string
-   */
-  public String toUrlQueryString() {
-    return toUrlQueryString(null);
-  }
-
-  /**
-   * Convert the instance into URL query string.
-   *
-   * @param prefix prefix of the query string
-   * @return URL query string
-   */
-  public String toUrlQueryString(String prefix) {
-    String suffix = "";
-    String containerSuffix = "";
-    String containerPrefix = "";
-    if (prefix == null) {
-      // style=form, explode=true, e.g. /pet?name=cat&type=manx
-      prefix = "";
-    } else {
-      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
-      prefix = prefix + "[";
-      suffix = "]";
-      containerSuffix = "]";
-      containerPrefix = "[";
     }
 
-    StringJoiner joiner = new StringJoiner("&");
+        /**
+        * Convert the instance into URL query string.
+        *
+        * @return URL query string
+        */
+        public String toUrlQueryString() {
+        return toUrlQueryString(null);
+        }
 
-    // add `blik` to the URL query string
-    if (getBlik() != null) {
-      joiner.add(getBlik().toUrlQueryString(prefix + "blik" + suffix));
+        /**
+        * Convert the instance into URL query string.
+        *
+        * @param prefix prefix of the query string
+        * @return URL query string
+        */
+        public String toUrlQueryString(String prefix) {
+        String suffix = "";
+        String containerSuffix = "";
+        String containerPrefix = "";
+        if (prefix == null) {
+        // style=form, explode=true, e.g. /pet?name=cat&type=manx
+        prefix = "";
+        } else {
+        // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+        prefix = prefix + "[";
+        suffix = "]";
+        containerSuffix = "]";
+        containerPrefix = "[";
+        }
+
+        StringJoiner joiner = new StringJoiner("&");
+
+            // add `blik` to the URL query string
+                            if (getBlik() != null) {
+                            joiner.add(getBlik().toUrlQueryString(prefix + "blik" + suffix));
+                            }
+
+        return joiner.toString();
+        }
+
     }
-
-    return joiner.toString();
-  }
-
-}
 

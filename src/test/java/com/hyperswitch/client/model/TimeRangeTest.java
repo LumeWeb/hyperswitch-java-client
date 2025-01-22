@@ -23,22 +23,21 @@ import org.openapitools.jackson.nullable.JsonNullable;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.openapitools.jackson.nullable.JsonNullable;
 import java.util.NoSuchElementException;
-import org.junit.Assert;
-import org.junit.Ignore;
-import org.junit.Test;
-
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Test;
 
 /**
  * Model tests for TimeRange
  */
-public class TimeRangeTest {
+class TimeRangeTest {
     private final TimeRange model = new TimeRange();
 
     /**
      * Model tests for TimeRange
      */
     @Test
-    public void testTimeRange() {
+    void testTimeRange() {
         // TODO: test TimeRange
     }
 
@@ -46,7 +45,7 @@ public class TimeRangeTest {
      * Test the property 'startTime'
      */
     @Test
-    public void startTimeTest() {
+    void startTimeTest() {
         // TODO: test startTime
     }
 
@@ -54,7 +53,7 @@ public class TimeRangeTest {
      * Test the property 'endTime'
      */
     @Test
-    public void endTimeTest() {
+    void endTimeTest() {
         // TODO: test endTime
     }
 

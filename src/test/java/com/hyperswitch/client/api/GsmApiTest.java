@@ -20,9 +20,9 @@ import com.hyperswitch.client.model.GsmDeleteResponse;
 import com.hyperswitch.client.model.GsmResponse;
 import com.hyperswitch.client.model.GsmRetrieveRequest;
 import com.hyperswitch.client.model.GsmUpdateRequest;
-import org.junit.Test;
-import org.junit.Ignore;
-import org.junit.Assert;
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Test;
 
 import java.time.LocalDate;
 import java.time.OffsetDateTime;
@@ -34,7 +34,7 @@ import java.util.Map;
 /**
  * API tests for GsmApi
  */
-@Ignore
+@Disabled
 public class GsmApiTest {
 
     private final GsmApi api = new GsmApi();

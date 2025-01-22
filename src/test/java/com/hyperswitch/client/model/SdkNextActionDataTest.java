@@ -23,22 +23,21 @@ import org.openapitools.jackson.nullable.JsonNullable;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.openapitools.jackson.nullable.JsonNullable;
 import java.util.NoSuchElementException;
-import org.junit.Assert;
-import org.junit.Ignore;
-import org.junit.Test;
-
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Test;
 
 /**
  * Model tests for SdkNextActionData
  */
-public class SdkNextActionDataTest {
+class SdkNextActionDataTest {
     private final SdkNextActionData model = new SdkNextActionData();
 
     /**
      * Model tests for SdkNextActionData
      */
     @Test
-    public void testSdkNextActionData() {
+    void testSdkNextActionData() {
         // TODO: test SdkNextActionData
     }
 
@@ -46,7 +45,7 @@ public class SdkNextActionDataTest {
      * Test the property 'nextAction'
      */
     @Test
-    public void nextActionTest() {
+    void nextActionTest() {
         // TODO: test nextAction
     }
 
@@ -54,7 +53,7 @@ public class SdkNextActionDataTest {
      * Test the property 'orderId'
      */
     @Test
-    public void orderIdTest() {
+    void orderIdTest() {
         // TODO: test orderId
     }
 

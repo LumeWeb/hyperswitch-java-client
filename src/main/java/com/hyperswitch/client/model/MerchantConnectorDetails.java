@@ -31,194 +31,195 @@ import java.net.URLEncoder;
 import java.util.StringJoiner;
 
 /**
- * MerchantConnectorDetails
- */
-@JsonPropertyOrder({
-  MerchantConnectorDetails.JSON_PROPERTY_CONNECTOR_ACCOUNT_DETAILS,
-  MerchantConnectorDetails.JSON_PROPERTY_METADATA
-})
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+* MerchantConnectorDetails
+*/
+    @JsonPropertyOrder({
+        MerchantConnectorDetails.JSON_PROPERTY_CONNECTOR_ACCOUNT_DETAILS,
+        MerchantConnectorDetails.JSON_PROPERTY_METADATA
+    })
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class MerchantConnectorDetails {
-  public static final String JSON_PROPERTY_CONNECTOR_ACCOUNT_DETAILS = "connector_account_details";
-  private JsonNullable<Object> connectorAccountDetails = JsonNullable.<Object>undefined();
+        public static final String JSON_PROPERTY_CONNECTOR_ACCOUNT_DETAILS = "connector_account_details";
+    @javax.annotation.Nullable
+            private JsonNullable<Object> connectorAccountDetails = JsonNullable.<Object>undefined();
 
-  public static final String JSON_PROPERTY_METADATA = "metadata";
-  private JsonNullable<Object> metadata = JsonNullable.<Object>undefined();
+        public static final String JSON_PROPERTY_METADATA = "metadata";
+    @javax.annotation.Nullable
+            private JsonNullable<Object> metadata = JsonNullable.<Object>undefined();
 
-  public MerchantConnectorDetails() {
-  }
+public MerchantConnectorDetails() {
+}
 
-  public MerchantConnectorDetails connectorAccountDetails(Object connectorAccountDetails) {
-    this.connectorAccountDetails = JsonNullable.<Object>of(connectorAccountDetails);
+        public MerchantConnectorDetails connectorAccountDetails(@javax.annotation.Nullable Object connectorAccountDetails) {
+        this.connectorAccountDetails = JsonNullable.<Object>of(connectorAccountDetails);
+        
+        return this;
+        }
+
+    /**
+        * Account details of the Connector. You can specify up to 50 keys, with key names up to 40 characters long and values up to 500 characters long. Useful for storing additional, structured information on an object.
+    * @return connectorAccountDetails
+    */
+    @javax.annotation.Nullable
+        @JsonIgnore
     
-    return this;
-  }
+    public Object getConnectorAccountDetails() {
+                return connectorAccountDetails.orElse(null);
+    }
 
-   /**
-   * Account details of the Connector. You can specify up to 50 keys, with key names up to 40 characters long and values up to 500 characters long. Useful for storing additional, structured information on an object.
-   * @return connectorAccountDetails
-  **/
-  @javax.annotation.Nullable
-  @JsonIgnore
-
-  public Object getConnectorAccountDetails() {
-        return connectorAccountDetails.orElse(null);
-  }
-
-  @JsonProperty(JSON_PROPERTY_CONNECTOR_ACCOUNT_DETAILS)
+          @JsonProperty(JSON_PROPERTY_CONNECTOR_ACCOUNT_DETAILS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-  public JsonNullable<Object> getConnectorAccountDetails_JsonNullable() {
-    return connectorAccountDetails;
-  }
-  
-  @JsonProperty(JSON_PROPERTY_CONNECTOR_ACCOUNT_DETAILS)
-  public void setConnectorAccountDetails_JsonNullable(JsonNullable<Object> connectorAccountDetails) {
-    this.connectorAccountDetails = connectorAccountDetails;
-  }
-
-  public void setConnectorAccountDetails(Object connectorAccountDetails) {
-    this.connectorAccountDetails = JsonNullable.<Object>of(connectorAccountDetails);
-  }
-
-
-  public MerchantConnectorDetails metadata(Object metadata) {
-    this.metadata = JsonNullable.<Object>of(metadata);
+        public JsonNullable<Object> getConnectorAccountDetails_JsonNullable() {
+        return connectorAccountDetails;
+        }
     
-    return this;
-  }
+        @JsonProperty(JSON_PROPERTY_CONNECTOR_ACCOUNT_DETAILS)
+        public void setConnectorAccountDetails_JsonNullable(JsonNullable<Object> connectorAccountDetails) {
+        this.connectorAccountDetails = connectorAccountDetails;
+        }
 
-   /**
-   * Metadata is useful for storing additional, unstructured information on an object.
-   * @return metadata
-  **/
-  @javax.annotation.Nullable
-  @JsonIgnore
+          public void setConnectorAccountDetails(@javax.annotation.Nullable Object connectorAccountDetails) {
+            this.connectorAccountDetails = JsonNullable.<Object>of(connectorAccountDetails);
+        }
 
-  public Object getMetadata() {
-        return metadata.orElse(null);
-  }
+        public MerchantConnectorDetails metadata(@javax.annotation.Nullable Object metadata) {
+        this.metadata = JsonNullable.<Object>of(metadata);
+        
+        return this;
+        }
 
-  @JsonProperty(JSON_PROPERTY_METADATA)
+    /**
+        * Metadata is useful for storing additional, unstructured information on an object.
+    * @return metadata
+    */
+    @javax.annotation.Nullable
+        @JsonIgnore
+    
+    public Object getMetadata() {
+                return metadata.orElse(null);
+    }
+
+          @JsonProperty(JSON_PROPERTY_METADATA)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-  public JsonNullable<Object> getMetadata_JsonNullable() {
-    return metadata;
-  }
-  
-  @JsonProperty(JSON_PROPERTY_METADATA)
-  public void setMetadata_JsonNullable(JsonNullable<Object> metadata) {
-    this.metadata = metadata;
-  }
+        public JsonNullable<Object> getMetadata_JsonNullable() {
+        return metadata;
+        }
+    
+        @JsonProperty(JSON_PROPERTY_METADATA)
+        public void setMetadata_JsonNullable(JsonNullable<Object> metadata) {
+        this.metadata = metadata;
+        }
 
-  public void setMetadata(Object metadata) {
-    this.metadata = JsonNullable.<Object>of(metadata);
-  }
+          public void setMetadata(@javax.annotation.Nullable Object metadata) {
+            this.metadata = JsonNullable.<Object>of(metadata);
+        }
 
-  @Override
-  public boolean equals(Object o) {
+@Override
+public boolean equals(Object o) {
     if (this == o) {
-      return true;
+    return true;
     }
     if (o == null || getClass() != o.getClass()) {
-      return false;
+    return false;
     }
-    MerchantConnectorDetails merchantConnectorDetails = (MerchantConnectorDetails) o;
-    return equalsNullable(this.connectorAccountDetails, merchantConnectorDetails.connectorAccountDetails) &&
+        MerchantConnectorDetails merchantConnectorDetails = (MerchantConnectorDetails) o;
+        return equalsNullable(this.connectorAccountDetails, merchantConnectorDetails.connectorAccountDetails) &&
         equalsNullable(this.metadata, merchantConnectorDetails.metadata);
-  }
+}
 
-  private static <T> boolean equalsNullable(JsonNullable<T> a, JsonNullable<T> b) {
-    return a == b || (a != null && b != null && a.isPresent() && b.isPresent() && Objects.deepEquals(a.get(), b.get()));
-  }
+    private static <T> boolean equalsNullable(JsonNullable<T> a, JsonNullable<T> b) {
+        return a == b || (a != null && b != null && a.isPresent() && b.isPresent() && Objects.deepEquals(a.get(), b.get()));
+        }
 
-  @Override
-  public int hashCode() {
-    return Objects.hash(hashCodeNullable(connectorAccountDetails), hashCodeNullable(metadata));
-  }
-
-  private static <T> int hashCodeNullable(JsonNullable<T> a) {
-    if (a == null) {
-      return 1;
+    @Override
+    public int hashCode() {
+        return Objects.hash(hashCodeNullable(connectorAccountDetails), hashCodeNullable(metadata));
     }
-    return a.isPresent() ? Arrays.deepHashCode(new Object[]{a.get()}) : 31;
-  }
 
-  @Override
-  public String toString() {
+        private static <T> int hashCodeNullable(JsonNullable<T> a) {
+        if (a == null) {
+        return 1;
+        }
+        return a.isPresent() ? Arrays.deepHashCode(new Object[]{a.get()}) : 31;
+        }
+
+    @Override
+    public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class MerchantConnectorDetails {\n");
-    sb.append("    connectorAccountDetails: ").append(toIndentedString(connectorAccountDetails)).append("\n");
-    sb.append("    metadata: ").append(toIndentedString(metadata)).append("\n");
+        sb.append("    connectorAccountDetails: ").append(toIndentedString(connectorAccountDetails)).append("\n");
+        sb.append("    metadata: ").append(toIndentedString(metadata)).append("\n");
     sb.append("}");
     return sb.toString();
-  }
+    }
 
-  /**
-   * Convert the given object to string with each line indented by 4 spaces
-   * (except the first line).
-   */
-  private String toIndentedString(Object o) {
+    /**
+    * Convert the given object to string with each line indented by 4 spaces
+    * (except the first line).
+    */
+    private String toIndentedString(Object o) {
     if (o == null) {
-      return "null";
+    return "null";
     }
     return o.toString().replace("\n", "\n    ");
-  }
-
-  /**
-   * Convert the instance into URL query string.
-   *
-   * @return URL query string
-   */
-  public String toUrlQueryString() {
-    return toUrlQueryString(null);
-  }
-
-  /**
-   * Convert the instance into URL query string.
-   *
-   * @param prefix prefix of the query string
-   * @return URL query string
-   */
-  public String toUrlQueryString(String prefix) {
-    String suffix = "";
-    String containerSuffix = "";
-    String containerPrefix = "";
-    if (prefix == null) {
-      // style=form, explode=true, e.g. /pet?name=cat&type=manx
-      prefix = "";
-    } else {
-      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
-      prefix = prefix + "[";
-      suffix = "]";
-      containerSuffix = "]";
-      containerPrefix = "[";
     }
 
-    StringJoiner joiner = new StringJoiner("&");
+        /**
+        * Convert the instance into URL query string.
+        *
+        * @return URL query string
+        */
+        public String toUrlQueryString() {
+        return toUrlQueryString(null);
+        }
 
-    // add `connector_account_details` to the URL query string
-    if (getConnectorAccountDetails() != null) {
-      try {
-        joiner.add(String.format("%sconnector_account_details%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getConnectorAccountDetails()), "UTF-8").replaceAll("\\+", "%20")));
-      } catch (UnsupportedEncodingException e) {
-        // Should never happen, UTF-8 is always supported
-        throw new RuntimeException(e);
-      }
+        /**
+        * Convert the instance into URL query string.
+        *
+        * @param prefix prefix of the query string
+        * @return URL query string
+        */
+        public String toUrlQueryString(String prefix) {
+        String suffix = "";
+        String containerSuffix = "";
+        String containerPrefix = "";
+        if (prefix == null) {
+        // style=form, explode=true, e.g. /pet?name=cat&type=manx
+        prefix = "";
+        } else {
+        // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+        prefix = prefix + "[";
+        suffix = "]";
+        containerSuffix = "]";
+        containerPrefix = "[";
+        }
+
+        StringJoiner joiner = new StringJoiner("&");
+
+            // add `connector_account_details` to the URL query string
+                        if (getConnectorAccountDetails() != null) {
+                        try {
+                        joiner.add(String.format("%sconnector_account_details%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getConnectorAccountDetails()), "UTF-8").replaceAll("\\+", "%20")));
+                        } catch (UnsupportedEncodingException e) {
+                        // Should never happen, UTF-8 is always supported
+                        throw new RuntimeException(e);
+                        }
+                        }
+
+            // add `metadata` to the URL query string
+                        if (getMetadata() != null) {
+                        try {
+                        joiner.add(String.format("%smetadata%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getMetadata()), "UTF-8").replaceAll("\\+", "%20")));
+                        } catch (UnsupportedEncodingException e) {
+                        // Should never happen, UTF-8 is always supported
+                        throw new RuntimeException(e);
+                        }
+                        }
+
+        return joiner.toString();
+        }
+
     }
-
-    // add `metadata` to the URL query string
-    if (getMetadata() != null) {
-      try {
-        joiner.add(String.format("%smetadata%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getMetadata()), "UTF-8").replaceAll("\\+", "%20")));
-      } catch (UnsupportedEncodingException e) {
-        // Should never happen, UTF-8 is always supported
-        throw new RuntimeException(e);
-      }
-    }
-
-    return joiner.toString();
-  }
-
-}
 

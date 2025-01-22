@@ -28,121 +28,122 @@ import java.net.URLEncoder;
 import java.util.StringJoiner;
 
 /**
- * BankDebitDataOneOf1
- */
-@JsonPropertyOrder({
-  BankDebitDataOneOf1.JSON_PROPERTY_SEPA_BANK_DEBIT
-})
-@JsonTypeName("BankDebitData_oneOf_1")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+* BankDebitDataOneOf1
+*/
+    @JsonPropertyOrder({
+        BankDebitDataOneOf1.JSON_PROPERTY_SEPA_BANK_DEBIT
+    })
+            @JsonTypeName("BankDebitData_oneOf_1")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class BankDebitDataOneOf1 {
-  public static final String JSON_PROPERTY_SEPA_BANK_DEBIT = "sepa_bank_debit";
-  private BankDebitDataOneOf1SepaBankDebit sepaBankDebit;
+        public static final String JSON_PROPERTY_SEPA_BANK_DEBIT = "sepa_bank_debit";
+    @javax.annotation.Nonnull
+            private BankDebitDataOneOf1SepaBankDebit sepaBankDebit;
 
-  public BankDebitDataOneOf1() {
-  }
+public BankDebitDataOneOf1() {
+}
 
-  public BankDebitDataOneOf1 sepaBankDebit(BankDebitDataOneOf1SepaBankDebit sepaBankDebit) {
-    
-    this.sepaBankDebit = sepaBankDebit;
-    return this;
-  }
+        public BankDebitDataOneOf1 sepaBankDebit(@javax.annotation.Nonnull BankDebitDataOneOf1SepaBankDebit sepaBankDebit) {
+        
+        this.sepaBankDebit = sepaBankDebit;
+        return this;
+        }
 
-   /**
-   * Get sepaBankDebit
-   * @return sepaBankDebit
-  **/
-  @javax.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_SEPA_BANK_DEBIT)
+    /**
+        * Get sepaBankDebit
+    * @return sepaBankDebit
+    */
+    @javax.annotation.Nonnull
+      @JsonProperty(JSON_PROPERTY_SEPA_BANK_DEBIT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-  public BankDebitDataOneOf1SepaBankDebit getSepaBankDebit() {
-    return sepaBankDebit;
-  }
+    public BankDebitDataOneOf1SepaBankDebit getSepaBankDebit() {
+        return sepaBankDebit;
+    }
 
 
-  @JsonProperty(JSON_PROPERTY_SEPA_BANK_DEBIT)
+          @JsonProperty(JSON_PROPERTY_SEPA_BANK_DEBIT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setSepaBankDebit(BankDebitDataOneOf1SepaBankDebit sepaBankDebit) {
-    this.sepaBankDebit = sepaBankDebit;
-  }
+  public void setSepaBankDebit(@javax.annotation.Nonnull BankDebitDataOneOf1SepaBankDebit sepaBankDebit) {
+            this.sepaBankDebit = sepaBankDebit;
+        }
 
-  @Override
-  public boolean equals(Object o) {
+@Override
+public boolean equals(Object o) {
     if (this == o) {
-      return true;
+    return true;
     }
     if (o == null || getClass() != o.getClass()) {
-      return false;
+    return false;
     }
-    BankDebitDataOneOf1 bankDebitDataOneOf1 = (BankDebitDataOneOf1) o;
-    return Objects.equals(this.sepaBankDebit, bankDebitDataOneOf1.sepaBankDebit);
-  }
+        BankDebitDataOneOf1 bankDebitDataOneOf1 = (BankDebitDataOneOf1) o;
+        return Objects.equals(this.sepaBankDebit, bankDebitDataOneOf1.sepaBankDebit);
+}
 
-  @Override
-  public int hashCode() {
-    return Objects.hash(sepaBankDebit);
-  }
+    @Override
+    public int hashCode() {
+        return Objects.hash(sepaBankDebit);
+    }
 
-  @Override
-  public String toString() {
+    @Override
+    public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class BankDebitDataOneOf1 {\n");
-    sb.append("    sepaBankDebit: ").append(toIndentedString(sepaBankDebit)).append("\n");
+        sb.append("    sepaBankDebit: ").append(toIndentedString(sepaBankDebit)).append("\n");
     sb.append("}");
     return sb.toString();
-  }
+    }
 
-  /**
-   * Convert the given object to string with each line indented by 4 spaces
-   * (except the first line).
-   */
-  private String toIndentedString(Object o) {
+    /**
+    * Convert the given object to string with each line indented by 4 spaces
+    * (except the first line).
+    */
+    private String toIndentedString(Object o) {
     if (o == null) {
-      return "null";
+    return "null";
     }
     return o.toString().replace("\n", "\n    ");
-  }
-
-  /**
-   * Convert the instance into URL query string.
-   *
-   * @return URL query string
-   */
-  public String toUrlQueryString() {
-    return toUrlQueryString(null);
-  }
-
-  /**
-   * Convert the instance into URL query string.
-   *
-   * @param prefix prefix of the query string
-   * @return URL query string
-   */
-  public String toUrlQueryString(String prefix) {
-    String suffix = "";
-    String containerSuffix = "";
-    String containerPrefix = "";
-    if (prefix == null) {
-      // style=form, explode=true, e.g. /pet?name=cat&type=manx
-      prefix = "";
-    } else {
-      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
-      prefix = prefix + "[";
-      suffix = "]";
-      containerSuffix = "]";
-      containerPrefix = "[";
     }
 
-    StringJoiner joiner = new StringJoiner("&");
+        /**
+        * Convert the instance into URL query string.
+        *
+        * @return URL query string
+        */
+        public String toUrlQueryString() {
+        return toUrlQueryString(null);
+        }
 
-    // add `sepa_bank_debit` to the URL query string
-    if (getSepaBankDebit() != null) {
-      joiner.add(getSepaBankDebit().toUrlQueryString(prefix + "sepa_bank_debit" + suffix));
+        /**
+        * Convert the instance into URL query string.
+        *
+        * @param prefix prefix of the query string
+        * @return URL query string
+        */
+        public String toUrlQueryString(String prefix) {
+        String suffix = "";
+        String containerSuffix = "";
+        String containerPrefix = "";
+        if (prefix == null) {
+        // style=form, explode=true, e.g. /pet?name=cat&type=manx
+        prefix = "";
+        } else {
+        // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+        prefix = prefix + "[";
+        suffix = "]";
+        containerSuffix = "]";
+        containerPrefix = "[";
+        }
+
+        StringJoiner joiner = new StringJoiner("&");
+
+            // add `sepa_bank_debit` to the URL query string
+                            if (getSepaBankDebit() != null) {
+                            joiner.add(getSepaBankDebit().toUrlQueryString(prefix + "sepa_bank_debit" + suffix));
+                            }
+
+        return joiner.toString();
+        }
+
     }
-
-    return joiner.toString();
-  }
-
-}
 

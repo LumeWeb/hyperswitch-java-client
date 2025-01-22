@@ -23,70 +23,29 @@ import org.openapitools.jackson.nullable.JsonNullable;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.openapitools.jackson.nullable.JsonNullable;
 import java.util.NoSuchElementException;
-import org.junit.Assert;
-import org.junit.Ignore;
-import org.junit.Test;
-
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Test;
 
 /**
  * Model tests for PayoutListConstraints
  */
-public class PayoutListConstraintsTest {
+class PayoutListConstraintsTest {
     private final PayoutListConstraints model = new PayoutListConstraints();
 
     /**
      * Model tests for PayoutListConstraints
      */
     @Test
-    public void testPayoutListConstraints() {
+    void testPayoutListConstraints() {
         // TODO: test PayoutListConstraints
-    }
-
-    /**
-     * Test the property 'customerId'
-     */
-    @Test
-    public void customerIdTest() {
-        // TODO: test customerId
-    }
-
-    /**
-     * Test the property 'startingAfter'
-     */
-    @Test
-    public void startingAfterTest() {
-        // TODO: test startingAfter
-    }
-
-    /**
-     * Test the property 'endingBefore'
-     */
-    @Test
-    public void endingBeforeTest() {
-        // TODO: test endingBefore
-    }
-
-    /**
-     * Test the property 'limit'
-     */
-    @Test
-    public void limitTest() {
-        // TODO: test limit
-    }
-
-    /**
-     * Test the property 'created'
-     */
-    @Test
-    public void createdTest() {
-        // TODO: test created
     }
 
     /**
      * Test the property 'startTime'
      */
     @Test
-    public void startTimeTest() {
+    void startTimeTest() {
         // TODO: test startTime
     }
 
@@ -94,8 +53,48 @@ public class PayoutListConstraintsTest {
      * Test the property 'endTime'
      */
     @Test
-    public void endTimeTest() {
+    void endTimeTest() {
         // TODO: test endTime
+    }
+
+    /**
+     * Test the property 'customerId'
+     */
+    @Test
+    void customerIdTest() {
+        // TODO: test customerId
+    }
+
+    /**
+     * Test the property 'startingAfter'
+     */
+    @Test
+    void startingAfterTest() {
+        // TODO: test startingAfter
+    }
+
+    /**
+     * Test the property 'endingBefore'
+     */
+    @Test
+    void endingBeforeTest() {
+        // TODO: test endingBefore
+    }
+
+    /**
+     * Test the property 'limit'
+     */
+    @Test
+    void limitTest() {
+        // TODO: test limit
+    }
+
+    /**
+     * Test the property 'created'
+     */
+    @Test
+    void createdTest() {
+        // TODO: test created
     }
 
 }

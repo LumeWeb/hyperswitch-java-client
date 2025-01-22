@@ -32,366 +32,367 @@ import java.net.URLEncoder;
 import java.util.StringJoiner;
 
 /**
- * Address details
- */
-@JsonPropertyOrder({
-  AddressDetails.JSON_PROPERTY_CITY,
-  AddressDetails.JSON_PROPERTY_COUNTRY,
-  AddressDetails.JSON_PROPERTY_LINE1,
-  AddressDetails.JSON_PROPERTY_LINE2,
-  AddressDetails.JSON_PROPERTY_LINE3,
-  AddressDetails.JSON_PROPERTY_ZIP,
-  AddressDetails.JSON_PROPERTY_STATE,
-  AddressDetails.JSON_PROPERTY_FIRST_NAME,
-  AddressDetails.JSON_PROPERTY_LAST_NAME
-})
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+* Address details
+*/
+    @JsonPropertyOrder({
+        AddressDetails.JSON_PROPERTY_CITY,
+        AddressDetails.JSON_PROPERTY_COUNTRY,
+        AddressDetails.JSON_PROPERTY_LINE1,
+        AddressDetails.JSON_PROPERTY_LINE2,
+        AddressDetails.JSON_PROPERTY_LINE3,
+        AddressDetails.JSON_PROPERTY_ZIP,
+        AddressDetails.JSON_PROPERTY_STATE,
+        AddressDetails.JSON_PROPERTY_FIRST_NAME,
+        AddressDetails.JSON_PROPERTY_LAST_NAME
+    })
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class AddressDetails {
-  public static final String JSON_PROPERTY_CITY = "city";
-  private JsonNullable<String> city = JsonNullable.<String>undefined();
+        public static final String JSON_PROPERTY_CITY = "city";
+    @javax.annotation.Nullable
+            private JsonNullable<String> city = JsonNullable.<String>undefined();
 
-  public static final String JSON_PROPERTY_COUNTRY = "country";
-  private JsonNullable<CountryAlpha2> country = JsonNullable.<CountryAlpha2>undefined();
+        public static final String JSON_PROPERTY_COUNTRY = "country";
+    @javax.annotation.Nullable
+            private JsonNullable<CountryAlpha2> country = JsonNullable.<CountryAlpha2>undefined();
 
-  public static final String JSON_PROPERTY_LINE1 = "line1";
-  private JsonNullable<String> line1 = JsonNullable.<String>undefined();
+        public static final String JSON_PROPERTY_LINE1 = "line1";
+    @javax.annotation.Nullable
+            private JsonNullable<String> line1 = JsonNullable.<String>undefined();
 
-  public static final String JSON_PROPERTY_LINE2 = "line2";
-  private JsonNullable<String> line2 = JsonNullable.<String>undefined();
+        public static final String JSON_PROPERTY_LINE2 = "line2";
+    @javax.annotation.Nullable
+            private JsonNullable<String> line2 = JsonNullable.<String>undefined();
 
-  public static final String JSON_PROPERTY_LINE3 = "line3";
-  private JsonNullable<String> line3 = JsonNullable.<String>undefined();
+        public static final String JSON_PROPERTY_LINE3 = "line3";
+    @javax.annotation.Nullable
+            private JsonNullable<String> line3 = JsonNullable.<String>undefined();
 
-  public static final String JSON_PROPERTY_ZIP = "zip";
-  private JsonNullable<String> zip = JsonNullable.<String>undefined();
+        public static final String JSON_PROPERTY_ZIP = "zip";
+    @javax.annotation.Nullable
+            private JsonNullable<String> zip = JsonNullable.<String>undefined();
 
-  public static final String JSON_PROPERTY_STATE = "state";
-  private JsonNullable<String> state = JsonNullable.<String>undefined();
+        public static final String JSON_PROPERTY_STATE = "state";
+    @javax.annotation.Nullable
+            private JsonNullable<String> state = JsonNullable.<String>undefined();
 
-  public static final String JSON_PROPERTY_FIRST_NAME = "first_name";
-  private JsonNullable<String> firstName = JsonNullable.<String>undefined();
+        public static final String JSON_PROPERTY_FIRST_NAME = "first_name";
+    @javax.annotation.Nullable
+            private JsonNullable<String> firstName = JsonNullable.<String>undefined();
 
-  public static final String JSON_PROPERTY_LAST_NAME = "last_name";
-  private JsonNullable<String> lastName = JsonNullable.<String>undefined();
+        public static final String JSON_PROPERTY_LAST_NAME = "last_name";
+    @javax.annotation.Nullable
+            private JsonNullable<String> lastName = JsonNullable.<String>undefined();
 
-  public AddressDetails() {
-  }
+public AddressDetails() {
+}
 
-  public AddressDetails city(String city) {
-    this.city = JsonNullable.<String>of(city);
+        public AddressDetails city(@javax.annotation.Nullable String city) {
+        this.city = JsonNullable.<String>of(city);
+        
+        return this;
+        }
+
+    /**
+        * The address city
+    * @return city
+    */
+    @javax.annotation.Nullable
+        @JsonIgnore
     
-    return this;
-  }
+    public String getCity() {
+                return city.orElse(null);
+    }
 
-   /**
-   * The address city
-   * @return city
-  **/
-  @javax.annotation.Nullable
-  @JsonIgnore
-
-  public String getCity() {
-        return city.orElse(null);
-  }
-
-  @JsonProperty(JSON_PROPERTY_CITY)
+          @JsonProperty(JSON_PROPERTY_CITY)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-  public JsonNullable<String> getCity_JsonNullable() {
-    return city;
-  }
-  
-  @JsonProperty(JSON_PROPERTY_CITY)
-  public void setCity_JsonNullable(JsonNullable<String> city) {
-    this.city = city;
-  }
-
-  public void setCity(String city) {
-    this.city = JsonNullable.<String>of(city);
-  }
-
-
-  public AddressDetails country(CountryAlpha2 country) {
-    this.country = JsonNullable.<CountryAlpha2>of(country);
+        public JsonNullable<String> getCity_JsonNullable() {
+        return city;
+        }
     
-    return this;
-  }
+        @JsonProperty(JSON_PROPERTY_CITY)
+        public void setCity_JsonNullable(JsonNullable<String> city) {
+        this.city = city;
+        }
 
-   /**
-   * Get country
-   * @return country
-  **/
-  @javax.annotation.Nullable
-  @JsonIgnore
+          public void setCity(@javax.annotation.Nullable String city) {
+            this.city = JsonNullable.<String>of(city);
+        }
 
-  public CountryAlpha2 getCountry() {
-        return country.orElse(null);
-  }
+        public AddressDetails country(@javax.annotation.Nullable CountryAlpha2 country) {
+        this.country = JsonNullable.<CountryAlpha2>of(country);
+        
+        return this;
+        }
 
-  @JsonProperty(JSON_PROPERTY_COUNTRY)
+    /**
+        * Get country
+    * @return country
+    */
+    @javax.annotation.Nullable
+        @JsonIgnore
+    
+    public CountryAlpha2 getCountry() {
+                return country.orElse(null);
+    }
+
+          @JsonProperty(JSON_PROPERTY_COUNTRY)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-  public JsonNullable<CountryAlpha2> getCountry_JsonNullable() {
-    return country;
-  }
-  
-  @JsonProperty(JSON_PROPERTY_COUNTRY)
-  public void setCountry_JsonNullable(JsonNullable<CountryAlpha2> country) {
-    this.country = country;
-  }
-
-  public void setCountry(CountryAlpha2 country) {
-    this.country = JsonNullable.<CountryAlpha2>of(country);
-  }
-
-
-  public AddressDetails line1(String line1) {
-    this.line1 = JsonNullable.<String>of(line1);
+        public JsonNullable<CountryAlpha2> getCountry_JsonNullable() {
+        return country;
+        }
     
-    return this;
-  }
+        @JsonProperty(JSON_PROPERTY_COUNTRY)
+        public void setCountry_JsonNullable(JsonNullable<CountryAlpha2> country) {
+        this.country = country;
+        }
 
-   /**
-   * The first line of the address
-   * @return line1
-  **/
-  @javax.annotation.Nullable
-  @JsonIgnore
+          public void setCountry(@javax.annotation.Nullable CountryAlpha2 country) {
+            this.country = JsonNullable.<CountryAlpha2>of(country);
+        }
 
-  public String getLine1() {
-        return line1.orElse(null);
-  }
+        public AddressDetails line1(@javax.annotation.Nullable String line1) {
+        this.line1 = JsonNullable.<String>of(line1);
+        
+        return this;
+        }
 
-  @JsonProperty(JSON_PROPERTY_LINE1)
+    /**
+        * The first line of the address
+    * @return line1
+    */
+    @javax.annotation.Nullable
+        @JsonIgnore
+    
+    public String getLine1() {
+                return line1.orElse(null);
+    }
+
+          @JsonProperty(JSON_PROPERTY_LINE1)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-  public JsonNullable<String> getLine1_JsonNullable() {
-    return line1;
-  }
-  
-  @JsonProperty(JSON_PROPERTY_LINE1)
-  public void setLine1_JsonNullable(JsonNullable<String> line1) {
-    this.line1 = line1;
-  }
-
-  public void setLine1(String line1) {
-    this.line1 = JsonNullable.<String>of(line1);
-  }
-
-
-  public AddressDetails line2(String line2) {
-    this.line2 = JsonNullable.<String>of(line2);
+        public JsonNullable<String> getLine1_JsonNullable() {
+        return line1;
+        }
     
-    return this;
-  }
+        @JsonProperty(JSON_PROPERTY_LINE1)
+        public void setLine1_JsonNullable(JsonNullable<String> line1) {
+        this.line1 = line1;
+        }
 
-   /**
-   * The second line of the address
-   * @return line2
-  **/
-  @javax.annotation.Nullable
-  @JsonIgnore
+          public void setLine1(@javax.annotation.Nullable String line1) {
+            this.line1 = JsonNullable.<String>of(line1);
+        }
 
-  public String getLine2() {
-        return line2.orElse(null);
-  }
+        public AddressDetails line2(@javax.annotation.Nullable String line2) {
+        this.line2 = JsonNullable.<String>of(line2);
+        
+        return this;
+        }
 
-  @JsonProperty(JSON_PROPERTY_LINE2)
+    /**
+        * The second line of the address
+    * @return line2
+    */
+    @javax.annotation.Nullable
+        @JsonIgnore
+    
+    public String getLine2() {
+                return line2.orElse(null);
+    }
+
+          @JsonProperty(JSON_PROPERTY_LINE2)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-  public JsonNullable<String> getLine2_JsonNullable() {
-    return line2;
-  }
-  
-  @JsonProperty(JSON_PROPERTY_LINE2)
-  public void setLine2_JsonNullable(JsonNullable<String> line2) {
-    this.line2 = line2;
-  }
-
-  public void setLine2(String line2) {
-    this.line2 = JsonNullable.<String>of(line2);
-  }
-
-
-  public AddressDetails line3(String line3) {
-    this.line3 = JsonNullable.<String>of(line3);
+        public JsonNullable<String> getLine2_JsonNullable() {
+        return line2;
+        }
     
-    return this;
-  }
+        @JsonProperty(JSON_PROPERTY_LINE2)
+        public void setLine2_JsonNullable(JsonNullable<String> line2) {
+        this.line2 = line2;
+        }
 
-   /**
-   * The third line of the address
-   * @return line3
-  **/
-  @javax.annotation.Nullable
-  @JsonIgnore
+          public void setLine2(@javax.annotation.Nullable String line2) {
+            this.line2 = JsonNullable.<String>of(line2);
+        }
 
-  public String getLine3() {
-        return line3.orElse(null);
-  }
+        public AddressDetails line3(@javax.annotation.Nullable String line3) {
+        this.line3 = JsonNullable.<String>of(line3);
+        
+        return this;
+        }
 
-  @JsonProperty(JSON_PROPERTY_LINE3)
+    /**
+        * The third line of the address
+    * @return line3
+    */
+    @javax.annotation.Nullable
+        @JsonIgnore
+    
+    public String getLine3() {
+                return line3.orElse(null);
+    }
+
+          @JsonProperty(JSON_PROPERTY_LINE3)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-  public JsonNullable<String> getLine3_JsonNullable() {
-    return line3;
-  }
-  
-  @JsonProperty(JSON_PROPERTY_LINE3)
-  public void setLine3_JsonNullable(JsonNullable<String> line3) {
-    this.line3 = line3;
-  }
-
-  public void setLine3(String line3) {
-    this.line3 = JsonNullable.<String>of(line3);
-  }
-
-
-  public AddressDetails zip(String zip) {
-    this.zip = JsonNullable.<String>of(zip);
+        public JsonNullable<String> getLine3_JsonNullable() {
+        return line3;
+        }
     
-    return this;
-  }
+        @JsonProperty(JSON_PROPERTY_LINE3)
+        public void setLine3_JsonNullable(JsonNullable<String> line3) {
+        this.line3 = line3;
+        }
 
-   /**
-   * The zip/postal code for the address
-   * @return zip
-  **/
-  @javax.annotation.Nullable
-  @JsonIgnore
+          public void setLine3(@javax.annotation.Nullable String line3) {
+            this.line3 = JsonNullable.<String>of(line3);
+        }
 
-  public String getZip() {
-        return zip.orElse(null);
-  }
+        public AddressDetails zip(@javax.annotation.Nullable String zip) {
+        this.zip = JsonNullable.<String>of(zip);
+        
+        return this;
+        }
 
-  @JsonProperty(JSON_PROPERTY_ZIP)
+    /**
+        * The zip/postal code for the address
+    * @return zip
+    */
+    @javax.annotation.Nullable
+        @JsonIgnore
+    
+    public String getZip() {
+                return zip.orElse(null);
+    }
+
+          @JsonProperty(JSON_PROPERTY_ZIP)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-  public JsonNullable<String> getZip_JsonNullable() {
-    return zip;
-  }
-  
-  @JsonProperty(JSON_PROPERTY_ZIP)
-  public void setZip_JsonNullable(JsonNullable<String> zip) {
-    this.zip = zip;
-  }
-
-  public void setZip(String zip) {
-    this.zip = JsonNullable.<String>of(zip);
-  }
-
-
-  public AddressDetails state(String state) {
-    this.state = JsonNullable.<String>of(state);
+        public JsonNullable<String> getZip_JsonNullable() {
+        return zip;
+        }
     
-    return this;
-  }
+        @JsonProperty(JSON_PROPERTY_ZIP)
+        public void setZip_JsonNullable(JsonNullable<String> zip) {
+        this.zip = zip;
+        }
 
-   /**
-   * The address state
-   * @return state
-  **/
-  @javax.annotation.Nullable
-  @JsonIgnore
+          public void setZip(@javax.annotation.Nullable String zip) {
+            this.zip = JsonNullable.<String>of(zip);
+        }
 
-  public String getState() {
-        return state.orElse(null);
-  }
+        public AddressDetails state(@javax.annotation.Nullable String state) {
+        this.state = JsonNullable.<String>of(state);
+        
+        return this;
+        }
 
-  @JsonProperty(JSON_PROPERTY_STATE)
+    /**
+        * The address state
+    * @return state
+    */
+    @javax.annotation.Nullable
+        @JsonIgnore
+    
+    public String getState() {
+                return state.orElse(null);
+    }
+
+          @JsonProperty(JSON_PROPERTY_STATE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-  public JsonNullable<String> getState_JsonNullable() {
-    return state;
-  }
-  
-  @JsonProperty(JSON_PROPERTY_STATE)
-  public void setState_JsonNullable(JsonNullable<String> state) {
-    this.state = state;
-  }
-
-  public void setState(String state) {
-    this.state = JsonNullable.<String>of(state);
-  }
-
-
-  public AddressDetails firstName(String firstName) {
-    this.firstName = JsonNullable.<String>of(firstName);
+        public JsonNullable<String> getState_JsonNullable() {
+        return state;
+        }
     
-    return this;
-  }
+        @JsonProperty(JSON_PROPERTY_STATE)
+        public void setState_JsonNullable(JsonNullable<String> state) {
+        this.state = state;
+        }
 
-   /**
-   * The first name for the address
-   * @return firstName
-  **/
-  @javax.annotation.Nullable
-  @JsonIgnore
+          public void setState(@javax.annotation.Nullable String state) {
+            this.state = JsonNullable.<String>of(state);
+        }
 
-  public String getFirstName() {
-        return firstName.orElse(null);
-  }
+        public AddressDetails firstName(@javax.annotation.Nullable String firstName) {
+        this.firstName = JsonNullable.<String>of(firstName);
+        
+        return this;
+        }
 
-  @JsonProperty(JSON_PROPERTY_FIRST_NAME)
+    /**
+        * The first name for the address
+    * @return firstName
+    */
+    @javax.annotation.Nullable
+        @JsonIgnore
+    
+    public String getFirstName() {
+                return firstName.orElse(null);
+    }
+
+          @JsonProperty(JSON_PROPERTY_FIRST_NAME)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-  public JsonNullable<String> getFirstName_JsonNullable() {
-    return firstName;
-  }
-  
-  @JsonProperty(JSON_PROPERTY_FIRST_NAME)
-  public void setFirstName_JsonNullable(JsonNullable<String> firstName) {
-    this.firstName = firstName;
-  }
-
-  public void setFirstName(String firstName) {
-    this.firstName = JsonNullable.<String>of(firstName);
-  }
-
-
-  public AddressDetails lastName(String lastName) {
-    this.lastName = JsonNullable.<String>of(lastName);
+        public JsonNullable<String> getFirstName_JsonNullable() {
+        return firstName;
+        }
     
-    return this;
-  }
+        @JsonProperty(JSON_PROPERTY_FIRST_NAME)
+        public void setFirstName_JsonNullable(JsonNullable<String> firstName) {
+        this.firstName = firstName;
+        }
 
-   /**
-   * The last name for the address
-   * @return lastName
-  **/
-  @javax.annotation.Nullable
-  @JsonIgnore
+          public void setFirstName(@javax.annotation.Nullable String firstName) {
+            this.firstName = JsonNullable.<String>of(firstName);
+        }
 
-  public String getLastName() {
-        return lastName.orElse(null);
-  }
+        public AddressDetails lastName(@javax.annotation.Nullable String lastName) {
+        this.lastName = JsonNullable.<String>of(lastName);
+        
+        return this;
+        }
 
-  @JsonProperty(JSON_PROPERTY_LAST_NAME)
+    /**
+        * The last name for the address
+    * @return lastName
+    */
+    @javax.annotation.Nullable
+        @JsonIgnore
+    
+    public String getLastName() {
+                return lastName.orElse(null);
+    }
+
+          @JsonProperty(JSON_PROPERTY_LAST_NAME)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-  public JsonNullable<String> getLastName_JsonNullable() {
-    return lastName;
-  }
-  
-  @JsonProperty(JSON_PROPERTY_LAST_NAME)
-  public void setLastName_JsonNullable(JsonNullable<String> lastName) {
-    this.lastName = lastName;
-  }
+        public JsonNullable<String> getLastName_JsonNullable() {
+        return lastName;
+        }
+    
+        @JsonProperty(JSON_PROPERTY_LAST_NAME)
+        public void setLastName_JsonNullable(JsonNullable<String> lastName) {
+        this.lastName = lastName;
+        }
 
-  public void setLastName(String lastName) {
-    this.lastName = JsonNullable.<String>of(lastName);
-  }
+          public void setLastName(@javax.annotation.Nullable String lastName) {
+            this.lastName = JsonNullable.<String>of(lastName);
+        }
 
-  @Override
-  public boolean equals(Object o) {
+@Override
+public boolean equals(Object o) {
     if (this == o) {
-      return true;
+    return true;
     }
     if (o == null || getClass() != o.getClass()) {
-      return false;
+    return false;
     }
-    AddressDetails addressDetails = (AddressDetails) o;
-    return equalsNullable(this.city, addressDetails.city) &&
+        AddressDetails addressDetails = (AddressDetails) o;
+        return equalsNullable(this.city, addressDetails.city) &&
         equalsNullable(this.country, addressDetails.country) &&
         equalsNullable(this.line1, addressDetails.line1) &&
         equalsNullable(this.line2, addressDetails.line2) &&
@@ -400,176 +401,176 @@ public class AddressDetails {
         equalsNullable(this.state, addressDetails.state) &&
         equalsNullable(this.firstName, addressDetails.firstName) &&
         equalsNullable(this.lastName, addressDetails.lastName);
-  }
+}
 
-  private static <T> boolean equalsNullable(JsonNullable<T> a, JsonNullable<T> b) {
-    return a == b || (a != null && b != null && a.isPresent() && b.isPresent() && Objects.deepEquals(a.get(), b.get()));
-  }
+    private static <T> boolean equalsNullable(JsonNullable<T> a, JsonNullable<T> b) {
+        return a == b || (a != null && b != null && a.isPresent() && b.isPresent() && Objects.deepEquals(a.get(), b.get()));
+        }
 
-  @Override
-  public int hashCode() {
-    return Objects.hash(hashCodeNullable(city), hashCodeNullable(country), hashCodeNullable(line1), hashCodeNullable(line2), hashCodeNullable(line3), hashCodeNullable(zip), hashCodeNullable(state), hashCodeNullable(firstName), hashCodeNullable(lastName));
-  }
-
-  private static <T> int hashCodeNullable(JsonNullable<T> a) {
-    if (a == null) {
-      return 1;
+    @Override
+    public int hashCode() {
+        return Objects.hash(hashCodeNullable(city), hashCodeNullable(country), hashCodeNullable(line1), hashCodeNullable(line2), hashCodeNullable(line3), hashCodeNullable(zip), hashCodeNullable(state), hashCodeNullable(firstName), hashCodeNullable(lastName));
     }
-    return a.isPresent() ? Arrays.deepHashCode(new Object[]{a.get()}) : 31;
-  }
 
-  @Override
-  public String toString() {
+        private static <T> int hashCodeNullable(JsonNullable<T> a) {
+        if (a == null) {
+        return 1;
+        }
+        return a.isPresent() ? Arrays.deepHashCode(new Object[]{a.get()}) : 31;
+        }
+
+    @Override
+    public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class AddressDetails {\n");
-    sb.append("    city: ").append(toIndentedString(city)).append("\n");
-    sb.append("    country: ").append(toIndentedString(country)).append("\n");
-    sb.append("    line1: ").append(toIndentedString(line1)).append("\n");
-    sb.append("    line2: ").append(toIndentedString(line2)).append("\n");
-    sb.append("    line3: ").append(toIndentedString(line3)).append("\n");
-    sb.append("    zip: ").append(toIndentedString(zip)).append("\n");
-    sb.append("    state: ").append(toIndentedString(state)).append("\n");
-    sb.append("    firstName: ").append(toIndentedString(firstName)).append("\n");
-    sb.append("    lastName: ").append(toIndentedString(lastName)).append("\n");
+        sb.append("    city: ").append(toIndentedString(city)).append("\n");
+        sb.append("    country: ").append(toIndentedString(country)).append("\n");
+        sb.append("    line1: ").append(toIndentedString(line1)).append("\n");
+        sb.append("    line2: ").append(toIndentedString(line2)).append("\n");
+        sb.append("    line3: ").append(toIndentedString(line3)).append("\n");
+        sb.append("    zip: ").append(toIndentedString(zip)).append("\n");
+        sb.append("    state: ").append(toIndentedString(state)).append("\n");
+        sb.append("    firstName: ").append(toIndentedString(firstName)).append("\n");
+        sb.append("    lastName: ").append(toIndentedString(lastName)).append("\n");
     sb.append("}");
     return sb.toString();
-  }
+    }
 
-  /**
-   * Convert the given object to string with each line indented by 4 spaces
-   * (except the first line).
-   */
-  private String toIndentedString(Object o) {
+    /**
+    * Convert the given object to string with each line indented by 4 spaces
+    * (except the first line).
+    */
+    private String toIndentedString(Object o) {
     if (o == null) {
-      return "null";
+    return "null";
     }
     return o.toString().replace("\n", "\n    ");
-  }
-
-  /**
-   * Convert the instance into URL query string.
-   *
-   * @return URL query string
-   */
-  public String toUrlQueryString() {
-    return toUrlQueryString(null);
-  }
-
-  /**
-   * Convert the instance into URL query string.
-   *
-   * @param prefix prefix of the query string
-   * @return URL query string
-   */
-  public String toUrlQueryString(String prefix) {
-    String suffix = "";
-    String containerSuffix = "";
-    String containerPrefix = "";
-    if (prefix == null) {
-      // style=form, explode=true, e.g. /pet?name=cat&type=manx
-      prefix = "";
-    } else {
-      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
-      prefix = prefix + "[";
-      suffix = "]";
-      containerSuffix = "]";
-      containerPrefix = "[";
     }
 
-    StringJoiner joiner = new StringJoiner("&");
+        /**
+        * Convert the instance into URL query string.
+        *
+        * @return URL query string
+        */
+        public String toUrlQueryString() {
+        return toUrlQueryString(null);
+        }
 
-    // add `city` to the URL query string
-    if (getCity() != null) {
-      try {
-        joiner.add(String.format("%scity%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCity()), "UTF-8").replaceAll("\\+", "%20")));
-      } catch (UnsupportedEncodingException e) {
-        // Should never happen, UTF-8 is always supported
-        throw new RuntimeException(e);
-      }
+        /**
+        * Convert the instance into URL query string.
+        *
+        * @param prefix prefix of the query string
+        * @return URL query string
+        */
+        public String toUrlQueryString(String prefix) {
+        String suffix = "";
+        String containerSuffix = "";
+        String containerPrefix = "";
+        if (prefix == null) {
+        // style=form, explode=true, e.g. /pet?name=cat&type=manx
+        prefix = "";
+        } else {
+        // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+        prefix = prefix + "[";
+        suffix = "]";
+        containerSuffix = "]";
+        containerPrefix = "[";
+        }
+
+        StringJoiner joiner = new StringJoiner("&");
+
+            // add `city` to the URL query string
+                        if (getCity() != null) {
+                        try {
+                        joiner.add(String.format("%scity%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCity()), "UTF-8").replaceAll("\\+", "%20")));
+                        } catch (UnsupportedEncodingException e) {
+                        // Should never happen, UTF-8 is always supported
+                        throw new RuntimeException(e);
+                        }
+                        }
+
+            // add `country` to the URL query string
+                            if (getCountry() != null) {
+                            try {
+                            joiner.add(String.format("%scountry%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCountry()), "UTF-8").replaceAll("\\+", "%20")));
+                            } catch (UnsupportedEncodingException e) {
+                            // Should never happen, UTF-8 is always supported
+                            throw new RuntimeException(e);
+                            }
+                            }
+
+            // add `line1` to the URL query string
+                        if (getLine1() != null) {
+                        try {
+                        joiner.add(String.format("%sline1%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getLine1()), "UTF-8").replaceAll("\\+", "%20")));
+                        } catch (UnsupportedEncodingException e) {
+                        // Should never happen, UTF-8 is always supported
+                        throw new RuntimeException(e);
+                        }
+                        }
+
+            // add `line2` to the URL query string
+                        if (getLine2() != null) {
+                        try {
+                        joiner.add(String.format("%sline2%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getLine2()), "UTF-8").replaceAll("\\+", "%20")));
+                        } catch (UnsupportedEncodingException e) {
+                        // Should never happen, UTF-8 is always supported
+                        throw new RuntimeException(e);
+                        }
+                        }
+
+            // add `line3` to the URL query string
+                        if (getLine3() != null) {
+                        try {
+                        joiner.add(String.format("%sline3%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getLine3()), "UTF-8").replaceAll("\\+", "%20")));
+                        } catch (UnsupportedEncodingException e) {
+                        // Should never happen, UTF-8 is always supported
+                        throw new RuntimeException(e);
+                        }
+                        }
+
+            // add `zip` to the URL query string
+                        if (getZip() != null) {
+                        try {
+                        joiner.add(String.format("%szip%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getZip()), "UTF-8").replaceAll("\\+", "%20")));
+                        } catch (UnsupportedEncodingException e) {
+                        // Should never happen, UTF-8 is always supported
+                        throw new RuntimeException(e);
+                        }
+                        }
+
+            // add `state` to the URL query string
+                        if (getState() != null) {
+                        try {
+                        joiner.add(String.format("%sstate%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getState()), "UTF-8").replaceAll("\\+", "%20")));
+                        } catch (UnsupportedEncodingException e) {
+                        // Should never happen, UTF-8 is always supported
+                        throw new RuntimeException(e);
+                        }
+                        }
+
+            // add `first_name` to the URL query string
+                        if (getFirstName() != null) {
+                        try {
+                        joiner.add(String.format("%sfirst_name%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getFirstName()), "UTF-8").replaceAll("\\+", "%20")));
+                        } catch (UnsupportedEncodingException e) {
+                        // Should never happen, UTF-8 is always supported
+                        throw new RuntimeException(e);
+                        }
+                        }
+
+            // add `last_name` to the URL query string
+                        if (getLastName() != null) {
+                        try {
+                        joiner.add(String.format("%slast_name%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getLastName()), "UTF-8").replaceAll("\\+", "%20")));
+                        } catch (UnsupportedEncodingException e) {
+                        // Should never happen, UTF-8 is always supported
+                        throw new RuntimeException(e);
+                        }
+                        }
+
+        return joiner.toString();
+        }
+
     }
-
-    // add `country` to the URL query string
-    if (getCountry() != null) {
-      try {
-        joiner.add(String.format("%scountry%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCountry()), "UTF-8").replaceAll("\\+", "%20")));
-      } catch (UnsupportedEncodingException e) {
-        // Should never happen, UTF-8 is always supported
-        throw new RuntimeException(e);
-      }
-    }
-
-    // add `line1` to the URL query string
-    if (getLine1() != null) {
-      try {
-        joiner.add(String.format("%sline1%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getLine1()), "UTF-8").replaceAll("\\+", "%20")));
-      } catch (UnsupportedEncodingException e) {
-        // Should never happen, UTF-8 is always supported
-        throw new RuntimeException(e);
-      }
-    }
-
-    // add `line2` to the URL query string
-    if (getLine2() != null) {
-      try {
-        joiner.add(String.format("%sline2%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getLine2()), "UTF-8").replaceAll("\\+", "%20")));
-      } catch (UnsupportedEncodingException e) {
-        // Should never happen, UTF-8 is always supported
-        throw new RuntimeException(e);
-      }
-    }
-
-    // add `line3` to the URL query string
-    if (getLine3() != null) {
-      try {
-        joiner.add(String.format("%sline3%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getLine3()), "UTF-8").replaceAll("\\+", "%20")));
-      } catch (UnsupportedEncodingException e) {
-        // Should never happen, UTF-8 is always supported
-        throw new RuntimeException(e);
-      }
-    }
-
-    // add `zip` to the URL query string
-    if (getZip() != null) {
-      try {
-        joiner.add(String.format("%szip%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getZip()), "UTF-8").replaceAll("\\+", "%20")));
-      } catch (UnsupportedEncodingException e) {
-        // Should never happen, UTF-8 is always supported
-        throw new RuntimeException(e);
-      }
-    }
-
-    // add `state` to the URL query string
-    if (getState() != null) {
-      try {
-        joiner.add(String.format("%sstate%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getState()), "UTF-8").replaceAll("\\+", "%20")));
-      } catch (UnsupportedEncodingException e) {
-        // Should never happen, UTF-8 is always supported
-        throw new RuntimeException(e);
-      }
-    }
-
-    // add `first_name` to the URL query string
-    if (getFirstName() != null) {
-      try {
-        joiner.add(String.format("%sfirst_name%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getFirstName()), "UTF-8").replaceAll("\\+", "%20")));
-      } catch (UnsupportedEncodingException e) {
-        // Should never happen, UTF-8 is always supported
-        throw new RuntimeException(e);
-      }
-    }
-
-    // add `last_name` to the URL query string
-    if (getLastName() != null) {
-      try {
-        joiner.add(String.format("%slast_name%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getLastName()), "UTF-8").replaceAll("\\+", "%20")));
-      } catch (UnsupportedEncodingException e) {
-        // Should never happen, UTF-8 is always supported
-        throw new RuntimeException(e);
-      }
-    }
-
-    return joiner.toString();
-  }
-
-}
 

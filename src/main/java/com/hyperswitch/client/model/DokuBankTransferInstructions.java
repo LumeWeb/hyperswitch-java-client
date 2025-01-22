@@ -27,209 +27,210 @@ import java.net.URLEncoder;
 import java.util.StringJoiner;
 
 /**
- * DokuBankTransferInstructions
- */
-@JsonPropertyOrder({
-  DokuBankTransferInstructions.JSON_PROPERTY_EXPIRES_AT,
-  DokuBankTransferInstructions.JSON_PROPERTY_REFERENCE,
-  DokuBankTransferInstructions.JSON_PROPERTY_INSTRUCTIONS_URL
-})
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+* DokuBankTransferInstructions
+*/
+    @JsonPropertyOrder({
+        DokuBankTransferInstructions.JSON_PROPERTY_EXPIRES_AT,
+        DokuBankTransferInstructions.JSON_PROPERTY_REFERENCE,
+        DokuBankTransferInstructions.JSON_PROPERTY_INSTRUCTIONS_URL
+    })
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class DokuBankTransferInstructions {
-  public static final String JSON_PROPERTY_EXPIRES_AT = "expires_at";
-  private String expiresAt;
+        public static final String JSON_PROPERTY_EXPIRES_AT = "expires_at";
+    @javax.annotation.Nonnull
+            private String expiresAt;
 
-  public static final String JSON_PROPERTY_REFERENCE = "reference";
-  private String reference;
+        public static final String JSON_PROPERTY_REFERENCE = "reference";
+    @javax.annotation.Nonnull
+            private String reference;
 
-  public static final String JSON_PROPERTY_INSTRUCTIONS_URL = "instructions_url";
-  private String instructionsUrl;
+        public static final String JSON_PROPERTY_INSTRUCTIONS_URL = "instructions_url";
+    @javax.annotation.Nonnull
+            private String instructionsUrl;
 
-  public DokuBankTransferInstructions() {
-  }
+public DokuBankTransferInstructions() {
+}
 
-  public DokuBankTransferInstructions expiresAt(String expiresAt) {
-    
-    this.expiresAt = expiresAt;
-    return this;
-  }
+        public DokuBankTransferInstructions expiresAt(@javax.annotation.Nonnull String expiresAt) {
+        
+        this.expiresAt = expiresAt;
+        return this;
+        }
 
-   /**
-   * Get expiresAt
-   * @return expiresAt
-  **/
-  @javax.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_EXPIRES_AT)
+    /**
+        * Get expiresAt
+    * @return expiresAt
+    */
+    @javax.annotation.Nonnull
+      @JsonProperty(JSON_PROPERTY_EXPIRES_AT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-  public String getExpiresAt() {
-    return expiresAt;
-  }
+    public String getExpiresAt() {
+        return expiresAt;
+    }
 
 
-  @JsonProperty(JSON_PROPERTY_EXPIRES_AT)
+          @JsonProperty(JSON_PROPERTY_EXPIRES_AT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setExpiresAt(String expiresAt) {
-    this.expiresAt = expiresAt;
-  }
+  public void setExpiresAt(@javax.annotation.Nonnull String expiresAt) {
+            this.expiresAt = expiresAt;
+        }
 
+        public DokuBankTransferInstructions reference(@javax.annotation.Nonnull String reference) {
+        
+        this.reference = reference;
+        return this;
+        }
 
-  public DokuBankTransferInstructions reference(String reference) {
-    
-    this.reference = reference;
-    return this;
-  }
-
-   /**
-   * Get reference
-   * @return reference
-  **/
-  @javax.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_REFERENCE)
-  @JsonInclude(value = JsonInclude.Include.ALWAYS)
-
-  public String getReference() {
-    return reference;
-  }
-
-
-  @JsonProperty(JSON_PROPERTY_REFERENCE)
-  @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setReference(String reference) {
-    this.reference = reference;
-  }
-
-
-  public DokuBankTransferInstructions instructionsUrl(String instructionsUrl) {
-    
-    this.instructionsUrl = instructionsUrl;
-    return this;
-  }
-
-   /**
-   * Get instructionsUrl
-   * @return instructionsUrl
-  **/
-  @javax.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_INSTRUCTIONS_URL)
+    /**
+        * Get reference
+    * @return reference
+    */
+    @javax.annotation.Nonnull
+      @JsonProperty(JSON_PROPERTY_REFERENCE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-  public String getInstructionsUrl() {
-    return instructionsUrl;
-  }
+    public String getReference() {
+        return reference;
+    }
 
 
-  @JsonProperty(JSON_PROPERTY_INSTRUCTIONS_URL)
+          @JsonProperty(JSON_PROPERTY_REFERENCE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setInstructionsUrl(String instructionsUrl) {
-    this.instructionsUrl = instructionsUrl;
-  }
+  public void setReference(@javax.annotation.Nonnull String reference) {
+            this.reference = reference;
+        }
 
-  @Override
-  public boolean equals(Object o) {
+        public DokuBankTransferInstructions instructionsUrl(@javax.annotation.Nonnull String instructionsUrl) {
+        
+        this.instructionsUrl = instructionsUrl;
+        return this;
+        }
+
+    /**
+        * Get instructionsUrl
+    * @return instructionsUrl
+    */
+    @javax.annotation.Nonnull
+      @JsonProperty(JSON_PROPERTY_INSTRUCTIONS_URL)
+  @JsonInclude(value = JsonInclude.Include.ALWAYS)
+
+    public String getInstructionsUrl() {
+        return instructionsUrl;
+    }
+
+
+          @JsonProperty(JSON_PROPERTY_INSTRUCTIONS_URL)
+  @JsonInclude(value = JsonInclude.Include.ALWAYS)
+  public void setInstructionsUrl(@javax.annotation.Nonnull String instructionsUrl) {
+            this.instructionsUrl = instructionsUrl;
+        }
+
+@Override
+public boolean equals(Object o) {
     if (this == o) {
-      return true;
+    return true;
     }
     if (o == null || getClass() != o.getClass()) {
-      return false;
+    return false;
     }
-    DokuBankTransferInstructions dokuBankTransferInstructions = (DokuBankTransferInstructions) o;
-    return Objects.equals(this.expiresAt, dokuBankTransferInstructions.expiresAt) &&
+        DokuBankTransferInstructions dokuBankTransferInstructions = (DokuBankTransferInstructions) o;
+        return Objects.equals(this.expiresAt, dokuBankTransferInstructions.expiresAt) &&
         Objects.equals(this.reference, dokuBankTransferInstructions.reference) &&
         Objects.equals(this.instructionsUrl, dokuBankTransferInstructions.instructionsUrl);
-  }
+}
 
-  @Override
-  public int hashCode() {
-    return Objects.hash(expiresAt, reference, instructionsUrl);
-  }
+    @Override
+    public int hashCode() {
+        return Objects.hash(expiresAt, reference, instructionsUrl);
+    }
 
-  @Override
-  public String toString() {
+    @Override
+    public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class DokuBankTransferInstructions {\n");
-    sb.append("    expiresAt: ").append(toIndentedString(expiresAt)).append("\n");
-    sb.append("    reference: ").append(toIndentedString(reference)).append("\n");
-    sb.append("    instructionsUrl: ").append(toIndentedString(instructionsUrl)).append("\n");
+        sb.append("    expiresAt: ").append(toIndentedString(expiresAt)).append("\n");
+        sb.append("    reference: ").append(toIndentedString(reference)).append("\n");
+        sb.append("    instructionsUrl: ").append(toIndentedString(instructionsUrl)).append("\n");
     sb.append("}");
     return sb.toString();
-  }
+    }
 
-  /**
-   * Convert the given object to string with each line indented by 4 spaces
-   * (except the first line).
-   */
-  private String toIndentedString(Object o) {
+    /**
+    * Convert the given object to string with each line indented by 4 spaces
+    * (except the first line).
+    */
+    private String toIndentedString(Object o) {
     if (o == null) {
-      return "null";
+    return "null";
     }
     return o.toString().replace("\n", "\n    ");
-  }
-
-  /**
-   * Convert the instance into URL query string.
-   *
-   * @return URL query string
-   */
-  public String toUrlQueryString() {
-    return toUrlQueryString(null);
-  }
-
-  /**
-   * Convert the instance into URL query string.
-   *
-   * @param prefix prefix of the query string
-   * @return URL query string
-   */
-  public String toUrlQueryString(String prefix) {
-    String suffix = "";
-    String containerSuffix = "";
-    String containerPrefix = "";
-    if (prefix == null) {
-      // style=form, explode=true, e.g. /pet?name=cat&type=manx
-      prefix = "";
-    } else {
-      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
-      prefix = prefix + "[";
-      suffix = "]";
-      containerSuffix = "]";
-      containerPrefix = "[";
     }
 
-    StringJoiner joiner = new StringJoiner("&");
+        /**
+        * Convert the instance into URL query string.
+        *
+        * @return URL query string
+        */
+        public String toUrlQueryString() {
+        return toUrlQueryString(null);
+        }
 
-    // add `expires_at` to the URL query string
-    if (getExpiresAt() != null) {
-      try {
-        joiner.add(String.format("%sexpires_at%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getExpiresAt()), "UTF-8").replaceAll("\\+", "%20")));
-      } catch (UnsupportedEncodingException e) {
-        // Should never happen, UTF-8 is always supported
-        throw new RuntimeException(e);
-      }
+        /**
+        * Convert the instance into URL query string.
+        *
+        * @param prefix prefix of the query string
+        * @return URL query string
+        */
+        public String toUrlQueryString(String prefix) {
+        String suffix = "";
+        String containerSuffix = "";
+        String containerPrefix = "";
+        if (prefix == null) {
+        // style=form, explode=true, e.g. /pet?name=cat&type=manx
+        prefix = "";
+        } else {
+        // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+        prefix = prefix + "[";
+        suffix = "]";
+        containerSuffix = "]";
+        containerPrefix = "[";
+        }
+
+        StringJoiner joiner = new StringJoiner("&");
+
+            // add `expires_at` to the URL query string
+                        if (getExpiresAt() != null) {
+                        try {
+                        joiner.add(String.format("%sexpires_at%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getExpiresAt()), "UTF-8").replaceAll("\\+", "%20")));
+                        } catch (UnsupportedEncodingException e) {
+                        // Should never happen, UTF-8 is always supported
+                        throw new RuntimeException(e);
+                        }
+                        }
+
+            // add `reference` to the URL query string
+                        if (getReference() != null) {
+                        try {
+                        joiner.add(String.format("%sreference%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getReference()), "UTF-8").replaceAll("\\+", "%20")));
+                        } catch (UnsupportedEncodingException e) {
+                        // Should never happen, UTF-8 is always supported
+                        throw new RuntimeException(e);
+                        }
+                        }
+
+            // add `instructions_url` to the URL query string
+                        if (getInstructionsUrl() != null) {
+                        try {
+                        joiner.add(String.format("%sinstructions_url%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getInstructionsUrl()), "UTF-8").replaceAll("\\+", "%20")));
+                        } catch (UnsupportedEncodingException e) {
+                        // Should never happen, UTF-8 is always supported
+                        throw new RuntimeException(e);
+                        }
+                        }
+
+        return joiner.toString();
+        }
+
     }
-
-    // add `reference` to the URL query string
-    if (getReference() != null) {
-      try {
-        joiner.add(String.format("%sreference%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getReference()), "UTF-8").replaceAll("\\+", "%20")));
-      } catch (UnsupportedEncodingException e) {
-        // Should never happen, UTF-8 is always supported
-        throw new RuntimeException(e);
-      }
-    }
-
-    // add `instructions_url` to the URL query string
-    if (getInstructionsUrl() != null) {
-      try {
-        joiner.add(String.format("%sinstructions_url%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getInstructionsUrl()), "UTF-8").replaceAll("\\+", "%20")));
-      } catch (UnsupportedEncodingException e) {
-        // Should never happen, UTF-8 is always supported
-        throw new RuntimeException(e);
-      }
-    }
-
-    return joiner.toString();
-  }
-
-}
 

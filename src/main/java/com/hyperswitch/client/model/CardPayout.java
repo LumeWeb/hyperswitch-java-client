@@ -27,251 +27,252 @@ import java.net.URLEncoder;
 import java.util.StringJoiner;
 
 /**
- * CardPayout
- */
-@JsonPropertyOrder({
-  CardPayout.JSON_PROPERTY_CARD_NUMBER,
-  CardPayout.JSON_PROPERTY_EXPIRY_MONTH,
-  CardPayout.JSON_PROPERTY_EXPIRY_YEAR,
-  CardPayout.JSON_PROPERTY_CARD_HOLDER_NAME
-})
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+* CardPayout
+*/
+    @JsonPropertyOrder({
+        CardPayout.JSON_PROPERTY_CARD_NUMBER,
+        CardPayout.JSON_PROPERTY_EXPIRY_MONTH,
+        CardPayout.JSON_PROPERTY_EXPIRY_YEAR,
+        CardPayout.JSON_PROPERTY_CARD_HOLDER_NAME
+    })
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class CardPayout {
-  public static final String JSON_PROPERTY_CARD_NUMBER = "card_number";
-  private String cardNumber;
+        public static final String JSON_PROPERTY_CARD_NUMBER = "card_number";
+    @javax.annotation.Nonnull
+            private String cardNumber;
 
-  public static final String JSON_PROPERTY_EXPIRY_MONTH = "expiry_month";
-  private String expiryMonth;
+        public static final String JSON_PROPERTY_EXPIRY_MONTH = "expiry_month";
+    @javax.annotation.Nonnull
+            private String expiryMonth;
 
-  public static final String JSON_PROPERTY_EXPIRY_YEAR = "expiry_year";
-  private String expiryYear;
+        public static final String JSON_PROPERTY_EXPIRY_YEAR = "expiry_year";
+    @javax.annotation.Nonnull
+            private String expiryYear;
 
-  public static final String JSON_PROPERTY_CARD_HOLDER_NAME = "card_holder_name";
-  private String cardHolderName;
+        public static final String JSON_PROPERTY_CARD_HOLDER_NAME = "card_holder_name";
+    @javax.annotation.Nonnull
+            private String cardHolderName;
 
-  public CardPayout() {
-  }
+public CardPayout() {
+}
 
-  public CardPayout cardNumber(String cardNumber) {
-    
-    this.cardNumber = cardNumber;
-    return this;
-  }
+        public CardPayout cardNumber(@javax.annotation.Nonnull String cardNumber) {
+        
+        this.cardNumber = cardNumber;
+        return this;
+        }
 
-   /**
-   * The card number
-   * @return cardNumber
-  **/
-  @javax.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_CARD_NUMBER)
+    /**
+        * The card number
+    * @return cardNumber
+    */
+    @javax.annotation.Nonnull
+      @JsonProperty(JSON_PROPERTY_CARD_NUMBER)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-  public String getCardNumber() {
-    return cardNumber;
-  }
+    public String getCardNumber() {
+        return cardNumber;
+    }
 
 
-  @JsonProperty(JSON_PROPERTY_CARD_NUMBER)
+          @JsonProperty(JSON_PROPERTY_CARD_NUMBER)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setCardNumber(String cardNumber) {
-    this.cardNumber = cardNumber;
-  }
+  public void setCardNumber(@javax.annotation.Nonnull String cardNumber) {
+            this.cardNumber = cardNumber;
+        }
 
+        public CardPayout expiryMonth(@javax.annotation.Nonnull String expiryMonth) {
+        
+        this.expiryMonth = expiryMonth;
+        return this;
+        }
 
-  public CardPayout expiryMonth(String expiryMonth) {
-    
-    this.expiryMonth = expiryMonth;
-    return this;
-  }
-
-   /**
-   * The card&#39;s expiry month
-   * @return expiryMonth
-  **/
-  @javax.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_EXPIRY_MONTH)
-  @JsonInclude(value = JsonInclude.Include.ALWAYS)
-
-  public String getExpiryMonth() {
-    return expiryMonth;
-  }
-
-
-  @JsonProperty(JSON_PROPERTY_EXPIRY_MONTH)
-  @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setExpiryMonth(String expiryMonth) {
-    this.expiryMonth = expiryMonth;
-  }
-
-
-  public CardPayout expiryYear(String expiryYear) {
-    
-    this.expiryYear = expiryYear;
-    return this;
-  }
-
-   /**
-   * The card&#39;s expiry year
-   * @return expiryYear
-  **/
-  @javax.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_EXPIRY_YEAR)
+    /**
+        * The card&#39;s expiry month
+    * @return expiryMonth
+    */
+    @javax.annotation.Nonnull
+      @JsonProperty(JSON_PROPERTY_EXPIRY_MONTH)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-  public String getExpiryYear() {
-    return expiryYear;
-  }
+    public String getExpiryMonth() {
+        return expiryMonth;
+    }
 
 
-  @JsonProperty(JSON_PROPERTY_EXPIRY_YEAR)
+          @JsonProperty(JSON_PROPERTY_EXPIRY_MONTH)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setExpiryYear(String expiryYear) {
-    this.expiryYear = expiryYear;
-  }
+  public void setExpiryMonth(@javax.annotation.Nonnull String expiryMonth) {
+            this.expiryMonth = expiryMonth;
+        }
 
+        public CardPayout expiryYear(@javax.annotation.Nonnull String expiryYear) {
+        
+        this.expiryYear = expiryYear;
+        return this;
+        }
 
-  public CardPayout cardHolderName(String cardHolderName) {
-    
-    this.cardHolderName = cardHolderName;
-    return this;
-  }
-
-   /**
-   * The card holder&#39;s name
-   * @return cardHolderName
-  **/
-  @javax.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_CARD_HOLDER_NAME)
+    /**
+        * The card&#39;s expiry year
+    * @return expiryYear
+    */
+    @javax.annotation.Nonnull
+      @JsonProperty(JSON_PROPERTY_EXPIRY_YEAR)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-  public String getCardHolderName() {
-    return cardHolderName;
-  }
+    public String getExpiryYear() {
+        return expiryYear;
+    }
 
 
-  @JsonProperty(JSON_PROPERTY_CARD_HOLDER_NAME)
+          @JsonProperty(JSON_PROPERTY_EXPIRY_YEAR)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setCardHolderName(String cardHolderName) {
-    this.cardHolderName = cardHolderName;
-  }
+  public void setExpiryYear(@javax.annotation.Nonnull String expiryYear) {
+            this.expiryYear = expiryYear;
+        }
 
-  @Override
-  public boolean equals(Object o) {
+        public CardPayout cardHolderName(@javax.annotation.Nonnull String cardHolderName) {
+        
+        this.cardHolderName = cardHolderName;
+        return this;
+        }
+
+    /**
+        * The card holder&#39;s name
+    * @return cardHolderName
+    */
+    @javax.annotation.Nonnull
+      @JsonProperty(JSON_PROPERTY_CARD_HOLDER_NAME)
+  @JsonInclude(value = JsonInclude.Include.ALWAYS)
+
+    public String getCardHolderName() {
+        return cardHolderName;
+    }
+
+
+          @JsonProperty(JSON_PROPERTY_CARD_HOLDER_NAME)
+  @JsonInclude(value = JsonInclude.Include.ALWAYS)
+  public void setCardHolderName(@javax.annotation.Nonnull String cardHolderName) {
+            this.cardHolderName = cardHolderName;
+        }
+
+@Override
+public boolean equals(Object o) {
     if (this == o) {
-      return true;
+    return true;
     }
     if (o == null || getClass() != o.getClass()) {
-      return false;
+    return false;
     }
-    CardPayout cardPayout = (CardPayout) o;
-    return Objects.equals(this.cardNumber, cardPayout.cardNumber) &&
+        CardPayout cardPayout = (CardPayout) o;
+        return Objects.equals(this.cardNumber, cardPayout.cardNumber) &&
         Objects.equals(this.expiryMonth, cardPayout.expiryMonth) &&
         Objects.equals(this.expiryYear, cardPayout.expiryYear) &&
         Objects.equals(this.cardHolderName, cardPayout.cardHolderName);
-  }
+}
 
-  @Override
-  public int hashCode() {
-    return Objects.hash(cardNumber, expiryMonth, expiryYear, cardHolderName);
-  }
+    @Override
+    public int hashCode() {
+        return Objects.hash(cardNumber, expiryMonth, expiryYear, cardHolderName);
+    }
 
-  @Override
-  public String toString() {
+    @Override
+    public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class CardPayout {\n");
-    sb.append("    cardNumber: ").append(toIndentedString(cardNumber)).append("\n");
-    sb.append("    expiryMonth: ").append(toIndentedString(expiryMonth)).append("\n");
-    sb.append("    expiryYear: ").append(toIndentedString(expiryYear)).append("\n");
-    sb.append("    cardHolderName: ").append(toIndentedString(cardHolderName)).append("\n");
+        sb.append("    cardNumber: ").append(toIndentedString(cardNumber)).append("\n");
+        sb.append("    expiryMonth: ").append(toIndentedString(expiryMonth)).append("\n");
+        sb.append("    expiryYear: ").append(toIndentedString(expiryYear)).append("\n");
+        sb.append("    cardHolderName: ").append(toIndentedString(cardHolderName)).append("\n");
     sb.append("}");
     return sb.toString();
-  }
+    }
 
-  /**
-   * Convert the given object to string with each line indented by 4 spaces
-   * (except the first line).
-   */
-  private String toIndentedString(Object o) {
+    /**
+    * Convert the given object to string with each line indented by 4 spaces
+    * (except the first line).
+    */
+    private String toIndentedString(Object o) {
     if (o == null) {
-      return "null";
+    return "null";
     }
     return o.toString().replace("\n", "\n    ");
-  }
-
-  /**
-   * Convert the instance into URL query string.
-   *
-   * @return URL query string
-   */
-  public String toUrlQueryString() {
-    return toUrlQueryString(null);
-  }
-
-  /**
-   * Convert the instance into URL query string.
-   *
-   * @param prefix prefix of the query string
-   * @return URL query string
-   */
-  public String toUrlQueryString(String prefix) {
-    String suffix = "";
-    String containerSuffix = "";
-    String containerPrefix = "";
-    if (prefix == null) {
-      // style=form, explode=true, e.g. /pet?name=cat&type=manx
-      prefix = "";
-    } else {
-      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
-      prefix = prefix + "[";
-      suffix = "]";
-      containerSuffix = "]";
-      containerPrefix = "[";
     }
 
-    StringJoiner joiner = new StringJoiner("&");
+        /**
+        * Convert the instance into URL query string.
+        *
+        * @return URL query string
+        */
+        public String toUrlQueryString() {
+        return toUrlQueryString(null);
+        }
 
-    // add `card_number` to the URL query string
-    if (getCardNumber() != null) {
-      try {
-        joiner.add(String.format("%scard_number%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCardNumber()), "UTF-8").replaceAll("\\+", "%20")));
-      } catch (UnsupportedEncodingException e) {
-        // Should never happen, UTF-8 is always supported
-        throw new RuntimeException(e);
-      }
+        /**
+        * Convert the instance into URL query string.
+        *
+        * @param prefix prefix of the query string
+        * @return URL query string
+        */
+        public String toUrlQueryString(String prefix) {
+        String suffix = "";
+        String containerSuffix = "";
+        String containerPrefix = "";
+        if (prefix == null) {
+        // style=form, explode=true, e.g. /pet?name=cat&type=manx
+        prefix = "";
+        } else {
+        // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+        prefix = prefix + "[";
+        suffix = "]";
+        containerSuffix = "]";
+        containerPrefix = "[";
+        }
+
+        StringJoiner joiner = new StringJoiner("&");
+
+            // add `card_number` to the URL query string
+                        if (getCardNumber() != null) {
+                        try {
+                        joiner.add(String.format("%scard_number%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCardNumber()), "UTF-8").replaceAll("\\+", "%20")));
+                        } catch (UnsupportedEncodingException e) {
+                        // Should never happen, UTF-8 is always supported
+                        throw new RuntimeException(e);
+                        }
+                        }
+
+            // add `expiry_month` to the URL query string
+                        if (getExpiryMonth() != null) {
+                        try {
+                        joiner.add(String.format("%sexpiry_month%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getExpiryMonth()), "UTF-8").replaceAll("\\+", "%20")));
+                        } catch (UnsupportedEncodingException e) {
+                        // Should never happen, UTF-8 is always supported
+                        throw new RuntimeException(e);
+                        }
+                        }
+
+            // add `expiry_year` to the URL query string
+                        if (getExpiryYear() != null) {
+                        try {
+                        joiner.add(String.format("%sexpiry_year%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getExpiryYear()), "UTF-8").replaceAll("\\+", "%20")));
+                        } catch (UnsupportedEncodingException e) {
+                        // Should never happen, UTF-8 is always supported
+                        throw new RuntimeException(e);
+                        }
+                        }
+
+            // add `card_holder_name` to the URL query string
+                        if (getCardHolderName() != null) {
+                        try {
+                        joiner.add(String.format("%scard_holder_name%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCardHolderName()), "UTF-8").replaceAll("\\+", "%20")));
+                        } catch (UnsupportedEncodingException e) {
+                        // Should never happen, UTF-8 is always supported
+                        throw new RuntimeException(e);
+                        }
+                        }
+
+        return joiner.toString();
+        }
+
     }
-
-    // add `expiry_month` to the URL query string
-    if (getExpiryMonth() != null) {
-      try {
-        joiner.add(String.format("%sexpiry_month%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getExpiryMonth()), "UTF-8").replaceAll("\\+", "%20")));
-      } catch (UnsupportedEncodingException e) {
-        // Should never happen, UTF-8 is always supported
-        throw new RuntimeException(e);
-      }
-    }
-
-    // add `expiry_year` to the URL query string
-    if (getExpiryYear() != null) {
-      try {
-        joiner.add(String.format("%sexpiry_year%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getExpiryYear()), "UTF-8").replaceAll("\\+", "%20")));
-      } catch (UnsupportedEncodingException e) {
-        // Should never happen, UTF-8 is always supported
-        throw new RuntimeException(e);
-      }
-    }
-
-    // add `card_holder_name` to the URL query string
-    if (getCardHolderName() != null) {
-      try {
-        joiner.add(String.format("%scard_holder_name%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCardHolderName()), "UTF-8").replaceAll("\\+", "%20")));
-      } catch (UnsupportedEncodingException e) {
-        // Should never happen, UTF-8 is always supported
-        throw new RuntimeException(e);
-      }
-    }
-
-    return joiner.toString();
-  }
-
-}
 

@@ -27,167 +27,168 @@ import java.net.URLEncoder;
 import java.util.StringJoiner;
 
 /**
- * ToggleKVResponse
- */
-@JsonPropertyOrder({
-  ToggleKVResponse.JSON_PROPERTY_MERCHANT_ID,
-  ToggleKVResponse.JSON_PROPERTY_KV_ENABLED
-})
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+* ToggleKVResponse
+*/
+    @JsonPropertyOrder({
+        ToggleKVResponse.JSON_PROPERTY_MERCHANT_ID,
+        ToggleKVResponse.JSON_PROPERTY_KV_ENABLED
+    })
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class ToggleKVResponse {
-  public static final String JSON_PROPERTY_MERCHANT_ID = "merchant_id";
-  private String merchantId;
+        public static final String JSON_PROPERTY_MERCHANT_ID = "merchant_id";
+    @javax.annotation.Nonnull
+            private String merchantId;
 
-  public static final String JSON_PROPERTY_KV_ENABLED = "kv_enabled";
-  private Boolean kvEnabled;
+        public static final String JSON_PROPERTY_KV_ENABLED = "kv_enabled";
+    @javax.annotation.Nonnull
+            private Boolean kvEnabled;
 
-  public ToggleKVResponse() {
-  }
+public ToggleKVResponse() {
+}
 
-  public ToggleKVResponse merchantId(String merchantId) {
-    
-    this.merchantId = merchantId;
-    return this;
-  }
+        public ToggleKVResponse merchantId(@javax.annotation.Nonnull String merchantId) {
+        
+        this.merchantId = merchantId;
+        return this;
+        }
 
-   /**
-   * The identifier for the Merchant Account
-   * @return merchantId
-  **/
-  @javax.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_MERCHANT_ID)
+    /**
+        * The identifier for the Merchant Account
+    * @return merchantId
+    */
+    @javax.annotation.Nonnull
+      @JsonProperty(JSON_PROPERTY_MERCHANT_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-  public String getMerchantId() {
-    return merchantId;
-  }
+    public String getMerchantId() {
+        return merchantId;
+    }
 
 
-  @JsonProperty(JSON_PROPERTY_MERCHANT_ID)
+          @JsonProperty(JSON_PROPERTY_MERCHANT_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setMerchantId(String merchantId) {
-    this.merchantId = merchantId;
-  }
+  public void setMerchantId(@javax.annotation.Nonnull String merchantId) {
+            this.merchantId = merchantId;
+        }
 
+        public ToggleKVResponse kvEnabled(@javax.annotation.Nonnull Boolean kvEnabled) {
+        
+        this.kvEnabled = kvEnabled;
+        return this;
+        }
 
-  public ToggleKVResponse kvEnabled(Boolean kvEnabled) {
-    
-    this.kvEnabled = kvEnabled;
-    return this;
-  }
-
-   /**
-   * Status of KV for the specific merchant
-   * @return kvEnabled
-  **/
-  @javax.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_KV_ENABLED)
+    /**
+        * Status of KV for the specific merchant
+    * @return kvEnabled
+    */
+    @javax.annotation.Nonnull
+      @JsonProperty(JSON_PROPERTY_KV_ENABLED)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-  public Boolean getKvEnabled() {
-    return kvEnabled;
-  }
+    public Boolean getKvEnabled() {
+        return kvEnabled;
+    }
 
 
-  @JsonProperty(JSON_PROPERTY_KV_ENABLED)
+          @JsonProperty(JSON_PROPERTY_KV_ENABLED)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setKvEnabled(Boolean kvEnabled) {
-    this.kvEnabled = kvEnabled;
-  }
+  public void setKvEnabled(@javax.annotation.Nonnull Boolean kvEnabled) {
+            this.kvEnabled = kvEnabled;
+        }
 
-  @Override
-  public boolean equals(Object o) {
+@Override
+public boolean equals(Object o) {
     if (this == o) {
-      return true;
+    return true;
     }
     if (o == null || getClass() != o.getClass()) {
-      return false;
+    return false;
     }
-    ToggleKVResponse toggleKVResponse = (ToggleKVResponse) o;
-    return Objects.equals(this.merchantId, toggleKVResponse.merchantId) &&
+        ToggleKVResponse toggleKVResponse = (ToggleKVResponse) o;
+        return Objects.equals(this.merchantId, toggleKVResponse.merchantId) &&
         Objects.equals(this.kvEnabled, toggleKVResponse.kvEnabled);
-  }
+}
 
-  @Override
-  public int hashCode() {
-    return Objects.hash(merchantId, kvEnabled);
-  }
+    @Override
+    public int hashCode() {
+        return Objects.hash(merchantId, kvEnabled);
+    }
 
-  @Override
-  public String toString() {
+    @Override
+    public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class ToggleKVResponse {\n");
-    sb.append("    merchantId: ").append(toIndentedString(merchantId)).append("\n");
-    sb.append("    kvEnabled: ").append(toIndentedString(kvEnabled)).append("\n");
+        sb.append("    merchantId: ").append(toIndentedString(merchantId)).append("\n");
+        sb.append("    kvEnabled: ").append(toIndentedString(kvEnabled)).append("\n");
     sb.append("}");
     return sb.toString();
-  }
+    }
 
-  /**
-   * Convert the given object to string with each line indented by 4 spaces
-   * (except the first line).
-   */
-  private String toIndentedString(Object o) {
+    /**
+    * Convert the given object to string with each line indented by 4 spaces
+    * (except the first line).
+    */
+    private String toIndentedString(Object o) {
     if (o == null) {
-      return "null";
+    return "null";
     }
     return o.toString().replace("\n", "\n    ");
-  }
-
-  /**
-   * Convert the instance into URL query string.
-   *
-   * @return URL query string
-   */
-  public String toUrlQueryString() {
-    return toUrlQueryString(null);
-  }
-
-  /**
-   * Convert the instance into URL query string.
-   *
-   * @param prefix prefix of the query string
-   * @return URL query string
-   */
-  public String toUrlQueryString(String prefix) {
-    String suffix = "";
-    String containerSuffix = "";
-    String containerPrefix = "";
-    if (prefix == null) {
-      // style=form, explode=true, e.g. /pet?name=cat&type=manx
-      prefix = "";
-    } else {
-      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
-      prefix = prefix + "[";
-      suffix = "]";
-      containerSuffix = "]";
-      containerPrefix = "[";
     }
 
-    StringJoiner joiner = new StringJoiner("&");
+        /**
+        * Convert the instance into URL query string.
+        *
+        * @return URL query string
+        */
+        public String toUrlQueryString() {
+        return toUrlQueryString(null);
+        }
 
-    // add `merchant_id` to the URL query string
-    if (getMerchantId() != null) {
-      try {
-        joiner.add(String.format("%smerchant_id%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getMerchantId()), "UTF-8").replaceAll("\\+", "%20")));
-      } catch (UnsupportedEncodingException e) {
-        // Should never happen, UTF-8 is always supported
-        throw new RuntimeException(e);
-      }
+        /**
+        * Convert the instance into URL query string.
+        *
+        * @param prefix prefix of the query string
+        * @return URL query string
+        */
+        public String toUrlQueryString(String prefix) {
+        String suffix = "";
+        String containerSuffix = "";
+        String containerPrefix = "";
+        if (prefix == null) {
+        // style=form, explode=true, e.g. /pet?name=cat&type=manx
+        prefix = "";
+        } else {
+        // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+        prefix = prefix + "[";
+        suffix = "]";
+        containerSuffix = "]";
+        containerPrefix = "[";
+        }
+
+        StringJoiner joiner = new StringJoiner("&");
+
+            // add `merchant_id` to the URL query string
+                        if (getMerchantId() != null) {
+                        try {
+                        joiner.add(String.format("%smerchant_id%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getMerchantId()), "UTF-8").replaceAll("\\+", "%20")));
+                        } catch (UnsupportedEncodingException e) {
+                        // Should never happen, UTF-8 is always supported
+                        throw new RuntimeException(e);
+                        }
+                        }
+
+            // add `kv_enabled` to the URL query string
+                        if (getKvEnabled() != null) {
+                        try {
+                        joiner.add(String.format("%skv_enabled%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getKvEnabled()), "UTF-8").replaceAll("\\+", "%20")));
+                        } catch (UnsupportedEncodingException e) {
+                        // Should never happen, UTF-8 is always supported
+                        throw new RuntimeException(e);
+                        }
+                        }
+
+        return joiner.toString();
+        }
+
     }
-
-    // add `kv_enabled` to the URL query string
-    if (getKvEnabled() != null) {
-      try {
-        joiner.add(String.format("%skv_enabled%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getKvEnabled()), "UTF-8").replaceAll("\\+", "%20")));
-      } catch (UnsupportedEncodingException e) {
-        // Should never happen, UTF-8 is always supported
-        throw new RuntimeException(e);
-      }
-    }
-
-    return joiner.toString();
-  }
-
-}
 

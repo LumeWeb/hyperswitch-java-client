@@ -23,6 +23,7 @@ import com.fasterxml.jackson.annotation.JsonValue;
 import com.hyperswitch.client.model.MerchantConnectorDetailsWrap;
 import com.hyperswitch.client.model.PaymentMethodType;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import org.openapitools.jackson.nullable.JsonNullable;
 import com.fasterxml.jackson.annotation.JsonIgnore;
@@ -35,279 +36,280 @@ import java.net.URLEncoder;
 import java.util.StringJoiner;
 
 /**
- * PaymentsSessionRequest
- */
-@JsonPropertyOrder({
-  PaymentsSessionRequest.JSON_PROPERTY_PAYMENT_ID,
-  PaymentsSessionRequest.JSON_PROPERTY_CLIENT_SECRET,
-  PaymentsSessionRequest.JSON_PROPERTY_WALLETS,
-  PaymentsSessionRequest.JSON_PROPERTY_MERCHANT_CONNECTOR_DETAILS
-})
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+* PaymentsSessionRequest
+*/
+    @JsonPropertyOrder({
+        PaymentsSessionRequest.JSON_PROPERTY_PAYMENT_ID,
+        PaymentsSessionRequest.JSON_PROPERTY_CLIENT_SECRET,
+        PaymentsSessionRequest.JSON_PROPERTY_WALLETS,
+        PaymentsSessionRequest.JSON_PROPERTY_MERCHANT_CONNECTOR_DETAILS
+    })
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class PaymentsSessionRequest {
-  public static final String JSON_PROPERTY_PAYMENT_ID = "payment_id";
-  private String paymentId;
+        public static final String JSON_PROPERTY_PAYMENT_ID = "payment_id";
+    @javax.annotation.Nonnull
+            private String paymentId;
 
-  public static final String JSON_PROPERTY_CLIENT_SECRET = "client_secret";
-  private String clientSecret;
+        public static final String JSON_PROPERTY_CLIENT_SECRET = "client_secret";
+    @javax.annotation.Nonnull
+            private String clientSecret;
 
-  public static final String JSON_PROPERTY_WALLETS = "wallets";
-  private List<PaymentMethodType> wallets = new ArrayList<>();
+        public static final String JSON_PROPERTY_WALLETS = "wallets";
+    @javax.annotation.Nonnull
+            private List<PaymentMethodType> wallets = new ArrayList<>();
 
-  public static final String JSON_PROPERTY_MERCHANT_CONNECTOR_DETAILS = "merchant_connector_details";
-  private JsonNullable<MerchantConnectorDetailsWrap> merchantConnectorDetails = JsonNullable.<MerchantConnectorDetailsWrap>undefined();
+        public static final String JSON_PROPERTY_MERCHANT_CONNECTOR_DETAILS = "merchant_connector_details";
+    @javax.annotation.Nullable
+            private JsonNullable<MerchantConnectorDetailsWrap> merchantConnectorDetails = JsonNullable.<MerchantConnectorDetailsWrap>undefined();
 
-  public PaymentsSessionRequest() {
-  }
+public PaymentsSessionRequest() {
+}
 
-  public PaymentsSessionRequest paymentId(String paymentId) {
-    
-    this.paymentId = paymentId;
-    return this;
-  }
+        public PaymentsSessionRequest paymentId(@javax.annotation.Nonnull String paymentId) {
+        
+        this.paymentId = paymentId;
+        return this;
+        }
 
-   /**
-   * The identifier for the payment
-   * @return paymentId
-  **/
-  @javax.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_PAYMENT_ID)
+    /**
+        * The identifier for the payment
+    * @return paymentId
+    */
+    @javax.annotation.Nonnull
+      @JsonProperty(JSON_PROPERTY_PAYMENT_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-  public String getPaymentId() {
-    return paymentId;
-  }
-
-
-  @JsonProperty(JSON_PROPERTY_PAYMENT_ID)
-  @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setPaymentId(String paymentId) {
-    this.paymentId = paymentId;
-  }
-
-
-  public PaymentsSessionRequest clientSecret(String clientSecret) {
-    
-    this.clientSecret = clientSecret;
-    return this;
-  }
-
-   /**
-   * This is a token which expires after 15 minutes, used from the client to authenticate and create sessions from the SDK
-   * @return clientSecret
-  **/
-  @javax.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_CLIENT_SECRET)
-  @JsonInclude(value = JsonInclude.Include.ALWAYS)
-
-  public String getClientSecret() {
-    return clientSecret;
-  }
-
-
-  @JsonProperty(JSON_PROPERTY_CLIENT_SECRET)
-  @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setClientSecret(String clientSecret) {
-    this.clientSecret = clientSecret;
-  }
-
-
-  public PaymentsSessionRequest wallets(List<PaymentMethodType> wallets) {
-    
-    this.wallets = wallets;
-    return this;
-  }
-
-  public PaymentsSessionRequest addWalletsItem(PaymentMethodType walletsItem) {
-    if (this.wallets == null) {
-      this.wallets = new ArrayList<>();
+    public String getPaymentId() {
+        return paymentId;
     }
-    this.wallets.add(walletsItem);
-    return this;
-  }
 
-   /**
-   * The list of the supported wallets
-   * @return wallets
-  **/
-  @javax.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_WALLETS)
+
+          @JsonProperty(JSON_PROPERTY_PAYMENT_ID)
+  @JsonInclude(value = JsonInclude.Include.ALWAYS)
+  public void setPaymentId(@javax.annotation.Nonnull String paymentId) {
+            this.paymentId = paymentId;
+        }
+
+        public PaymentsSessionRequest clientSecret(@javax.annotation.Nonnull String clientSecret) {
+        
+        this.clientSecret = clientSecret;
+        return this;
+        }
+
+    /**
+        * This is a token which expires after 15 minutes, used from the client to authenticate and create sessions from the SDK
+    * @return clientSecret
+    */
+    @javax.annotation.Nonnull
+      @JsonProperty(JSON_PROPERTY_CLIENT_SECRET)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-  public List<PaymentMethodType> getWallets() {
-    return wallets;
-  }
+    public String getClientSecret() {
+        return clientSecret;
+    }
 
 
-  @JsonProperty(JSON_PROPERTY_WALLETS)
+          @JsonProperty(JSON_PROPERTY_CLIENT_SECRET)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setWallets(List<PaymentMethodType> wallets) {
-    this.wallets = wallets;
-  }
+  public void setClientSecret(@javax.annotation.Nonnull String clientSecret) {
+            this.clientSecret = clientSecret;
+        }
+
+        public PaymentsSessionRequest wallets(@javax.annotation.Nonnull List<PaymentMethodType> wallets) {
+        
+        this.wallets = wallets;
+        return this;
+        }
+
+            public PaymentsSessionRequest addWalletsItem(PaymentMethodType walletsItem) {
+                if (this.wallets == null) {
+                this.wallets = new ArrayList<>();
+                }
+                this.wallets.add(walletsItem);
+                return this;
+            }
+
+    /**
+        * The list of the supported wallets
+    * @return wallets
+    */
+    @javax.annotation.Nonnull
+      @JsonProperty(JSON_PROPERTY_WALLETS)
+  @JsonInclude(value = JsonInclude.Include.ALWAYS)
+
+    public List<PaymentMethodType> getWallets() {
+        return wallets;
+    }
 
 
-  public PaymentsSessionRequest merchantConnectorDetails(MerchantConnectorDetailsWrap merchantConnectorDetails) {
-    this.merchantConnectorDetails = JsonNullable.<MerchantConnectorDetailsWrap>of(merchantConnectorDetails);
+          @JsonProperty(JSON_PROPERTY_WALLETS)
+  @JsonInclude(value = JsonInclude.Include.ALWAYS)
+  public void setWallets(@javax.annotation.Nonnull List<PaymentMethodType> wallets) {
+            this.wallets = wallets;
+        }
+
+        public PaymentsSessionRequest merchantConnectorDetails(@javax.annotation.Nullable MerchantConnectorDetailsWrap merchantConnectorDetails) {
+        this.merchantConnectorDetails = JsonNullable.<MerchantConnectorDetailsWrap>of(merchantConnectorDetails);
+        
+        return this;
+        }
+
+    /**
+        * Get merchantConnectorDetails
+    * @return merchantConnectorDetails
+    */
+    @javax.annotation.Nullable
+        @JsonIgnore
     
-    return this;
-  }
+    public MerchantConnectorDetailsWrap getMerchantConnectorDetails() {
+                return merchantConnectorDetails.orElse(null);
+    }
 
-   /**
-   * Get merchantConnectorDetails
-   * @return merchantConnectorDetails
-  **/
-  @javax.annotation.Nullable
-  @JsonIgnore
-
-  public MerchantConnectorDetailsWrap getMerchantConnectorDetails() {
-        return merchantConnectorDetails.orElse(null);
-  }
-
-  @JsonProperty(JSON_PROPERTY_MERCHANT_CONNECTOR_DETAILS)
+          @JsonProperty(JSON_PROPERTY_MERCHANT_CONNECTOR_DETAILS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-  public JsonNullable<MerchantConnectorDetailsWrap> getMerchantConnectorDetails_JsonNullable() {
-    return merchantConnectorDetails;
-  }
-  
-  @JsonProperty(JSON_PROPERTY_MERCHANT_CONNECTOR_DETAILS)
-  public void setMerchantConnectorDetails_JsonNullable(JsonNullable<MerchantConnectorDetailsWrap> merchantConnectorDetails) {
-    this.merchantConnectorDetails = merchantConnectorDetails;
-  }
+        public JsonNullable<MerchantConnectorDetailsWrap> getMerchantConnectorDetails_JsonNullable() {
+        return merchantConnectorDetails;
+        }
+    
+        @JsonProperty(JSON_PROPERTY_MERCHANT_CONNECTOR_DETAILS)
+        public void setMerchantConnectorDetails_JsonNullable(JsonNullable<MerchantConnectorDetailsWrap> merchantConnectorDetails) {
+        this.merchantConnectorDetails = merchantConnectorDetails;
+        }
 
-  public void setMerchantConnectorDetails(MerchantConnectorDetailsWrap merchantConnectorDetails) {
-    this.merchantConnectorDetails = JsonNullable.<MerchantConnectorDetailsWrap>of(merchantConnectorDetails);
-  }
+          public void setMerchantConnectorDetails(@javax.annotation.Nullable MerchantConnectorDetailsWrap merchantConnectorDetails) {
+            this.merchantConnectorDetails = JsonNullable.<MerchantConnectorDetailsWrap>of(merchantConnectorDetails);
+        }
 
-  @Override
-  public boolean equals(Object o) {
+@Override
+public boolean equals(Object o) {
     if (this == o) {
-      return true;
+    return true;
     }
     if (o == null || getClass() != o.getClass()) {
-      return false;
+    return false;
     }
-    PaymentsSessionRequest paymentsSessionRequest = (PaymentsSessionRequest) o;
-    return Objects.equals(this.paymentId, paymentsSessionRequest.paymentId) &&
+        PaymentsSessionRequest paymentsSessionRequest = (PaymentsSessionRequest) o;
+        return Objects.equals(this.paymentId, paymentsSessionRequest.paymentId) &&
         Objects.equals(this.clientSecret, paymentsSessionRequest.clientSecret) &&
         Objects.equals(this.wallets, paymentsSessionRequest.wallets) &&
         equalsNullable(this.merchantConnectorDetails, paymentsSessionRequest.merchantConnectorDetails);
-  }
+}
 
-  private static <T> boolean equalsNullable(JsonNullable<T> a, JsonNullable<T> b) {
-    return a == b || (a != null && b != null && a.isPresent() && b.isPresent() && Objects.deepEquals(a.get(), b.get()));
-  }
+    private static <T> boolean equalsNullable(JsonNullable<T> a, JsonNullable<T> b) {
+        return a == b || (a != null && b != null && a.isPresent() && b.isPresent() && Objects.deepEquals(a.get(), b.get()));
+        }
 
-  @Override
-  public int hashCode() {
-    return Objects.hash(paymentId, clientSecret, wallets, hashCodeNullable(merchantConnectorDetails));
-  }
-
-  private static <T> int hashCodeNullable(JsonNullable<T> a) {
-    if (a == null) {
-      return 1;
+    @Override
+    public int hashCode() {
+        return Objects.hash(paymentId, clientSecret, wallets, hashCodeNullable(merchantConnectorDetails));
     }
-    return a.isPresent() ? Arrays.deepHashCode(new Object[]{a.get()}) : 31;
-  }
 
-  @Override
-  public String toString() {
+        private static <T> int hashCodeNullable(JsonNullable<T> a) {
+        if (a == null) {
+        return 1;
+        }
+        return a.isPresent() ? Arrays.deepHashCode(new Object[]{a.get()}) : 31;
+        }
+
+    @Override
+    public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class PaymentsSessionRequest {\n");
-    sb.append("    paymentId: ").append(toIndentedString(paymentId)).append("\n");
-    sb.append("    clientSecret: ").append(toIndentedString(clientSecret)).append("\n");
-    sb.append("    wallets: ").append(toIndentedString(wallets)).append("\n");
-    sb.append("    merchantConnectorDetails: ").append(toIndentedString(merchantConnectorDetails)).append("\n");
+        sb.append("    paymentId: ").append(toIndentedString(paymentId)).append("\n");
+        sb.append("    clientSecret: ").append(toIndentedString(clientSecret)).append("\n");
+        sb.append("    wallets: ").append(toIndentedString(wallets)).append("\n");
+        sb.append("    merchantConnectorDetails: ").append(toIndentedString(merchantConnectorDetails)).append("\n");
     sb.append("}");
     return sb.toString();
-  }
+    }
 
-  /**
-   * Convert the given object to string with each line indented by 4 spaces
-   * (except the first line).
-   */
-  private String toIndentedString(Object o) {
+    /**
+    * Convert the given object to string with each line indented by 4 spaces
+    * (except the first line).
+    */
+    private String toIndentedString(Object o) {
     if (o == null) {
-      return "null";
+    return "null";
     }
     return o.toString().replace("\n", "\n    ");
-  }
-
-  /**
-   * Convert the instance into URL query string.
-   *
-   * @return URL query string
-   */
-  public String toUrlQueryString() {
-    return toUrlQueryString(null);
-  }
-
-  /**
-   * Convert the instance into URL query string.
-   *
-   * @param prefix prefix of the query string
-   * @return URL query string
-   */
-  public String toUrlQueryString(String prefix) {
-    String suffix = "";
-    String containerSuffix = "";
-    String containerPrefix = "";
-    if (prefix == null) {
-      // style=form, explode=true, e.g. /pet?name=cat&type=manx
-      prefix = "";
-    } else {
-      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
-      prefix = prefix + "[";
-      suffix = "]";
-      containerSuffix = "]";
-      containerPrefix = "[";
     }
 
-    StringJoiner joiner = new StringJoiner("&");
-
-    // add `payment_id` to the URL query string
-    if (getPaymentId() != null) {
-      try {
-        joiner.add(String.format("%spayment_id%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getPaymentId()), "UTF-8").replaceAll("\\+", "%20")));
-      } catch (UnsupportedEncodingException e) {
-        // Should never happen, UTF-8 is always supported
-        throw new RuntimeException(e);
-      }
-    }
-
-    // add `client_secret` to the URL query string
-    if (getClientSecret() != null) {
-      try {
-        joiner.add(String.format("%sclient_secret%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getClientSecret()), "UTF-8").replaceAll("\\+", "%20")));
-      } catch (UnsupportedEncodingException e) {
-        // Should never happen, UTF-8 is always supported
-        throw new RuntimeException(e);
-      }
-    }
-
-    // add `wallets` to the URL query string
-    if (getWallets() != null) {
-      for (int i = 0; i < getWallets().size(); i++) {
-        if (getWallets().get(i) != null) {
-          try {
-            joiner.add(String.format("%swallets%s%s=%s", prefix, suffix,
-                "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix),
-                URLEncoder.encode(String.valueOf(getWallets().get(i)), "UTF-8").replaceAll("\\+", "%20")));
-          } catch (UnsupportedEncodingException e) {
-            // Should never happen, UTF-8 is always supported
-            throw new RuntimeException(e);
-          }
+        /**
+        * Convert the instance into URL query string.
+        *
+        * @return URL query string
+        */
+        public String toUrlQueryString() {
+        return toUrlQueryString(null);
         }
-      }
+
+        /**
+        * Convert the instance into URL query string.
+        *
+        * @param prefix prefix of the query string
+        * @return URL query string
+        */
+        public String toUrlQueryString(String prefix) {
+        String suffix = "";
+        String containerSuffix = "";
+        String containerPrefix = "";
+        if (prefix == null) {
+        // style=form, explode=true, e.g. /pet?name=cat&type=manx
+        prefix = "";
+        } else {
+        // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+        prefix = prefix + "[";
+        suffix = "]";
+        containerSuffix = "]";
+        containerPrefix = "[";
+        }
+
+        StringJoiner joiner = new StringJoiner("&");
+
+            // add `payment_id` to the URL query string
+                        if (getPaymentId() != null) {
+                        try {
+                        joiner.add(String.format("%spayment_id%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getPaymentId()), "UTF-8").replaceAll("\\+", "%20")));
+                        } catch (UnsupportedEncodingException e) {
+                        // Should never happen, UTF-8 is always supported
+                        throw new RuntimeException(e);
+                        }
+                        }
+
+            // add `client_secret` to the URL query string
+                        if (getClientSecret() != null) {
+                        try {
+                        joiner.add(String.format("%sclient_secret%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getClientSecret()), "UTF-8").replaceAll("\\+", "%20")));
+                        } catch (UnsupportedEncodingException e) {
+                        // Should never happen, UTF-8 is always supported
+                        throw new RuntimeException(e);
+                        }
+                        }
+
+            // add `wallets` to the URL query string
+                            if (getWallets() != null) {
+                            for (int i = 0; i < getWallets().size(); i++) {
+                            if (getWallets().get(i) != null) {
+                            try {
+                            joiner.add(String.format("%swallets%s%s=%s", prefix, suffix,
+                            "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix),
+                            URLEncoder.encode(String.valueOf(getWallets().get(i)), "UTF-8").replaceAll("\\+", "%20")));
+                            } catch (UnsupportedEncodingException e) {
+                            // Should never happen, UTF-8 is always supported
+                            throw new RuntimeException(e);
+                            }
+                            }
+                            }
+                            }
+
+            // add `merchant_connector_details` to the URL query string
+                            if (getMerchantConnectorDetails() != null) {
+                            joiner.add(getMerchantConnectorDetails().toUrlQueryString(prefix + "merchant_connector_details" + suffix));
+                            }
+
+        return joiner.toString();
+        }
+
     }
-
-    // add `merchant_connector_details` to the URL query string
-    if (getMerchantConnectorDetails() != null) {
-      joiner.add(getMerchantConnectorDetails().toUrlQueryString(prefix + "merchant_connector_details" + suffix));
-    }
-
-    return joiner.toString();
-  }
-
-}
 

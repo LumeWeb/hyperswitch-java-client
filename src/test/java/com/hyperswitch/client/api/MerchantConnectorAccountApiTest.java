@@ -19,9 +19,9 @@ import com.hyperswitch.client.model.MerchantConnectorDeleteResponse;
 import com.hyperswitch.client.model.MerchantConnectorListResponse;
 import com.hyperswitch.client.model.MerchantConnectorResponse;
 import com.hyperswitch.client.model.MerchantConnectorUpdate;
-import org.junit.Test;
-import org.junit.Ignore;
-import org.junit.Assert;
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Test;
 
 import java.time.LocalDate;
 import java.time.OffsetDateTime;
@@ -33,7 +33,7 @@ import java.util.Map;
 /**
  * API tests for MerchantConnectorAccountApi
  */
-@Ignore
+@Disabled
 public class MerchantConnectorAccountApiTest {
 
     private final MerchantConnectorAccountApi api = new MerchantConnectorAccountApi();

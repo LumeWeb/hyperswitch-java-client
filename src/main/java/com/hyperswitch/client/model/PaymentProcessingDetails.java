@@ -27,167 +27,168 @@ import java.net.URLEncoder;
 import java.util.StringJoiner;
 
 /**
- * PaymentProcessingDetails
- */
-@JsonPropertyOrder({
-  PaymentProcessingDetails.JSON_PROPERTY_PAYMENT_PROCESSING_CERTIFICATE,
-  PaymentProcessingDetails.JSON_PROPERTY_PAYMENT_PROCESSING_CERTIFICATE_KEY
-})
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+* PaymentProcessingDetails
+*/
+    @JsonPropertyOrder({
+        PaymentProcessingDetails.JSON_PROPERTY_PAYMENT_PROCESSING_CERTIFICATE,
+        PaymentProcessingDetails.JSON_PROPERTY_PAYMENT_PROCESSING_CERTIFICATE_KEY
+    })
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class PaymentProcessingDetails {
-  public static final String JSON_PROPERTY_PAYMENT_PROCESSING_CERTIFICATE = "payment_processing_certificate";
-  private String paymentProcessingCertificate;
+        public static final String JSON_PROPERTY_PAYMENT_PROCESSING_CERTIFICATE = "payment_processing_certificate";
+    @javax.annotation.Nonnull
+            private String paymentProcessingCertificate;
 
-  public static final String JSON_PROPERTY_PAYMENT_PROCESSING_CERTIFICATE_KEY = "payment_processing_certificate_key";
-  private String paymentProcessingCertificateKey;
+        public static final String JSON_PROPERTY_PAYMENT_PROCESSING_CERTIFICATE_KEY = "payment_processing_certificate_key";
+    @javax.annotation.Nonnull
+            private String paymentProcessingCertificateKey;
 
-  public PaymentProcessingDetails() {
-  }
+public PaymentProcessingDetails() {
+}
 
-  public PaymentProcessingDetails paymentProcessingCertificate(String paymentProcessingCertificate) {
-    
-    this.paymentProcessingCertificate = paymentProcessingCertificate;
-    return this;
-  }
+        public PaymentProcessingDetails paymentProcessingCertificate(@javax.annotation.Nonnull String paymentProcessingCertificate) {
+        
+        this.paymentProcessingCertificate = paymentProcessingCertificate;
+        return this;
+        }
 
-   /**
-   * Get paymentProcessingCertificate
-   * @return paymentProcessingCertificate
-  **/
-  @javax.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_PAYMENT_PROCESSING_CERTIFICATE)
+    /**
+        * Get paymentProcessingCertificate
+    * @return paymentProcessingCertificate
+    */
+    @javax.annotation.Nonnull
+      @JsonProperty(JSON_PROPERTY_PAYMENT_PROCESSING_CERTIFICATE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-  public String getPaymentProcessingCertificate() {
-    return paymentProcessingCertificate;
-  }
+    public String getPaymentProcessingCertificate() {
+        return paymentProcessingCertificate;
+    }
 
 
-  @JsonProperty(JSON_PROPERTY_PAYMENT_PROCESSING_CERTIFICATE)
+          @JsonProperty(JSON_PROPERTY_PAYMENT_PROCESSING_CERTIFICATE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setPaymentProcessingCertificate(String paymentProcessingCertificate) {
-    this.paymentProcessingCertificate = paymentProcessingCertificate;
-  }
+  public void setPaymentProcessingCertificate(@javax.annotation.Nonnull String paymentProcessingCertificate) {
+            this.paymentProcessingCertificate = paymentProcessingCertificate;
+        }
 
+        public PaymentProcessingDetails paymentProcessingCertificateKey(@javax.annotation.Nonnull String paymentProcessingCertificateKey) {
+        
+        this.paymentProcessingCertificateKey = paymentProcessingCertificateKey;
+        return this;
+        }
 
-  public PaymentProcessingDetails paymentProcessingCertificateKey(String paymentProcessingCertificateKey) {
-    
-    this.paymentProcessingCertificateKey = paymentProcessingCertificateKey;
-    return this;
-  }
-
-   /**
-   * Get paymentProcessingCertificateKey
-   * @return paymentProcessingCertificateKey
-  **/
-  @javax.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_PAYMENT_PROCESSING_CERTIFICATE_KEY)
+    /**
+        * Get paymentProcessingCertificateKey
+    * @return paymentProcessingCertificateKey
+    */
+    @javax.annotation.Nonnull
+      @JsonProperty(JSON_PROPERTY_PAYMENT_PROCESSING_CERTIFICATE_KEY)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-  public String getPaymentProcessingCertificateKey() {
-    return paymentProcessingCertificateKey;
-  }
+    public String getPaymentProcessingCertificateKey() {
+        return paymentProcessingCertificateKey;
+    }
 
 
-  @JsonProperty(JSON_PROPERTY_PAYMENT_PROCESSING_CERTIFICATE_KEY)
+          @JsonProperty(JSON_PROPERTY_PAYMENT_PROCESSING_CERTIFICATE_KEY)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setPaymentProcessingCertificateKey(String paymentProcessingCertificateKey) {
-    this.paymentProcessingCertificateKey = paymentProcessingCertificateKey;
-  }
+  public void setPaymentProcessingCertificateKey(@javax.annotation.Nonnull String paymentProcessingCertificateKey) {
+            this.paymentProcessingCertificateKey = paymentProcessingCertificateKey;
+        }
 
-  @Override
-  public boolean equals(Object o) {
+@Override
+public boolean equals(Object o) {
     if (this == o) {
-      return true;
+    return true;
     }
     if (o == null || getClass() != o.getClass()) {
-      return false;
+    return false;
     }
-    PaymentProcessingDetails paymentProcessingDetails = (PaymentProcessingDetails) o;
-    return Objects.equals(this.paymentProcessingCertificate, paymentProcessingDetails.paymentProcessingCertificate) &&
+        PaymentProcessingDetails paymentProcessingDetails = (PaymentProcessingDetails) o;
+        return Objects.equals(this.paymentProcessingCertificate, paymentProcessingDetails.paymentProcessingCertificate) &&
         Objects.equals(this.paymentProcessingCertificateKey, paymentProcessingDetails.paymentProcessingCertificateKey);
-  }
+}
 
-  @Override
-  public int hashCode() {
-    return Objects.hash(paymentProcessingCertificate, paymentProcessingCertificateKey);
-  }
+    @Override
+    public int hashCode() {
+        return Objects.hash(paymentProcessingCertificate, paymentProcessingCertificateKey);
+    }
 
-  @Override
-  public String toString() {
+    @Override
+    public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class PaymentProcessingDetails {\n");
-    sb.append("    paymentProcessingCertificate: ").append(toIndentedString(paymentProcessingCertificate)).append("\n");
-    sb.append("    paymentProcessingCertificateKey: ").append(toIndentedString(paymentProcessingCertificateKey)).append("\n");
+        sb.append("    paymentProcessingCertificate: ").append(toIndentedString(paymentProcessingCertificate)).append("\n");
+        sb.append("    paymentProcessingCertificateKey: ").append(toIndentedString(paymentProcessingCertificateKey)).append("\n");
     sb.append("}");
     return sb.toString();
-  }
+    }
 
-  /**
-   * Convert the given object to string with each line indented by 4 spaces
-   * (except the first line).
-   */
-  private String toIndentedString(Object o) {
+    /**
+    * Convert the given object to string with each line indented by 4 spaces
+    * (except the first line).
+    */
+    private String toIndentedString(Object o) {
     if (o == null) {
-      return "null";
+    return "null";
     }
     return o.toString().replace("\n", "\n    ");
-  }
-
-  /**
-   * Convert the instance into URL query string.
-   *
-   * @return URL query string
-   */
-  public String toUrlQueryString() {
-    return toUrlQueryString(null);
-  }
-
-  /**
-   * Convert the instance into URL query string.
-   *
-   * @param prefix prefix of the query string
-   * @return URL query string
-   */
-  public String toUrlQueryString(String prefix) {
-    String suffix = "";
-    String containerSuffix = "";
-    String containerPrefix = "";
-    if (prefix == null) {
-      // style=form, explode=true, e.g. /pet?name=cat&type=manx
-      prefix = "";
-    } else {
-      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
-      prefix = prefix + "[";
-      suffix = "]";
-      containerSuffix = "]";
-      containerPrefix = "[";
     }
 
-    StringJoiner joiner = new StringJoiner("&");
+        /**
+        * Convert the instance into URL query string.
+        *
+        * @return URL query string
+        */
+        public String toUrlQueryString() {
+        return toUrlQueryString(null);
+        }
 
-    // add `payment_processing_certificate` to the URL query string
-    if (getPaymentProcessingCertificate() != null) {
-      try {
-        joiner.add(String.format("%spayment_processing_certificate%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getPaymentProcessingCertificate()), "UTF-8").replaceAll("\\+", "%20")));
-      } catch (UnsupportedEncodingException e) {
-        // Should never happen, UTF-8 is always supported
-        throw new RuntimeException(e);
-      }
+        /**
+        * Convert the instance into URL query string.
+        *
+        * @param prefix prefix of the query string
+        * @return URL query string
+        */
+        public String toUrlQueryString(String prefix) {
+        String suffix = "";
+        String containerSuffix = "";
+        String containerPrefix = "";
+        if (prefix == null) {
+        // style=form, explode=true, e.g. /pet?name=cat&type=manx
+        prefix = "";
+        } else {
+        // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+        prefix = prefix + "[";
+        suffix = "]";
+        containerSuffix = "]";
+        containerPrefix = "[";
+        }
+
+        StringJoiner joiner = new StringJoiner("&");
+
+            // add `payment_processing_certificate` to the URL query string
+                        if (getPaymentProcessingCertificate() != null) {
+                        try {
+                        joiner.add(String.format("%spayment_processing_certificate%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getPaymentProcessingCertificate()), "UTF-8").replaceAll("\\+", "%20")));
+                        } catch (UnsupportedEncodingException e) {
+                        // Should never happen, UTF-8 is always supported
+                        throw new RuntimeException(e);
+                        }
+                        }
+
+            // add `payment_processing_certificate_key` to the URL query string
+                        if (getPaymentProcessingCertificateKey() != null) {
+                        try {
+                        joiner.add(String.format("%spayment_processing_certificate_key%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getPaymentProcessingCertificateKey()), "UTF-8").replaceAll("\\+", "%20")));
+                        } catch (UnsupportedEncodingException e) {
+                        // Should never happen, UTF-8 is always supported
+                        throw new RuntimeException(e);
+                        }
+                        }
+
+        return joiner.toString();
+        }
+
     }
-
-    // add `payment_processing_certificate_key` to the URL query string
-    if (getPaymentProcessingCertificateKey() != null) {
-      try {
-        joiner.add(String.format("%spayment_processing_certificate_key%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getPaymentProcessingCertificateKey()), "UTF-8").replaceAll("\\+", "%20")));
-      } catch (UnsupportedEncodingException e) {
-        // Should never happen, UTF-8 is always supported
-        throw new RuntimeException(e);
-      }
-    }
-
-    return joiner.toString();
-  }
-
-}
 

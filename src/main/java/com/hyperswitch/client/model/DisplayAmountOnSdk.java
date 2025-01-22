@@ -27,209 +27,210 @@ import java.net.URLEncoder;
 import java.util.StringJoiner;
 
 /**
- * DisplayAmountOnSdk
- */
-@JsonPropertyOrder({
-  DisplayAmountOnSdk.JSON_PROPERTY_NET_AMOUNT,
-  DisplayAmountOnSdk.JSON_PROPERTY_ORDER_TAX_AMOUNT,
-  DisplayAmountOnSdk.JSON_PROPERTY_SHIPPING_COST
-})
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+* DisplayAmountOnSdk
+*/
+    @JsonPropertyOrder({
+        DisplayAmountOnSdk.JSON_PROPERTY_NET_AMOUNT,
+        DisplayAmountOnSdk.JSON_PROPERTY_ORDER_TAX_AMOUNT,
+        DisplayAmountOnSdk.JSON_PROPERTY_SHIPPING_COST
+    })
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class DisplayAmountOnSdk {
-  public static final String JSON_PROPERTY_NET_AMOUNT = "net_amount";
-  private String netAmount;
+        public static final String JSON_PROPERTY_NET_AMOUNT = "net_amount";
+    @javax.annotation.Nonnull
+            private String netAmount;
 
-  public static final String JSON_PROPERTY_ORDER_TAX_AMOUNT = "order_tax_amount";
-  private String orderTaxAmount;
+        public static final String JSON_PROPERTY_ORDER_TAX_AMOUNT = "order_tax_amount";
+    @javax.annotation.Nonnull
+            private String orderTaxAmount;
 
-  public static final String JSON_PROPERTY_SHIPPING_COST = "shipping_cost";
-  private String shippingCost;
+        public static final String JSON_PROPERTY_SHIPPING_COST = "shipping_cost";
+    @javax.annotation.Nonnull
+            private String shippingCost;
 
-  public DisplayAmountOnSdk() {
-  }
+public DisplayAmountOnSdk() {
+}
 
-  public DisplayAmountOnSdk netAmount(String netAmount) {
-    
-    this.netAmount = netAmount;
-    return this;
-  }
+        public DisplayAmountOnSdk netAmount(@javax.annotation.Nonnull String netAmount) {
+        
+        this.netAmount = netAmount;
+        return this;
+        }
 
-   /**
-   * net amount &#x3D; amount + order_tax_amount + shipping_cost
-   * @return netAmount
-  **/
-  @javax.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_NET_AMOUNT)
+    /**
+        * net amount &#x3D; amount + order_tax_amount + shipping_cost
+    * @return netAmount
+    */
+    @javax.annotation.Nonnull
+      @JsonProperty(JSON_PROPERTY_NET_AMOUNT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-  public String getNetAmount() {
-    return netAmount;
-  }
+    public String getNetAmount() {
+        return netAmount;
+    }
 
 
-  @JsonProperty(JSON_PROPERTY_NET_AMOUNT)
+          @JsonProperty(JSON_PROPERTY_NET_AMOUNT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setNetAmount(String netAmount) {
-    this.netAmount = netAmount;
-  }
+  public void setNetAmount(@javax.annotation.Nonnull String netAmount) {
+            this.netAmount = netAmount;
+        }
 
+        public DisplayAmountOnSdk orderTaxAmount(@javax.annotation.Nonnull String orderTaxAmount) {
+        
+        this.orderTaxAmount = orderTaxAmount;
+        return this;
+        }
 
-  public DisplayAmountOnSdk orderTaxAmount(String orderTaxAmount) {
-    
-    this.orderTaxAmount = orderTaxAmount;
-    return this;
-  }
-
-   /**
-   * order tax amount calculated by tax connectors
-   * @return orderTaxAmount
-  **/
-  @javax.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_ORDER_TAX_AMOUNT)
-  @JsonInclude(value = JsonInclude.Include.ALWAYS)
-
-  public String getOrderTaxAmount() {
-    return orderTaxAmount;
-  }
-
-
-  @JsonProperty(JSON_PROPERTY_ORDER_TAX_AMOUNT)
-  @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setOrderTaxAmount(String orderTaxAmount) {
-    this.orderTaxAmount = orderTaxAmount;
-  }
-
-
-  public DisplayAmountOnSdk shippingCost(String shippingCost) {
-    
-    this.shippingCost = shippingCost;
-    return this;
-  }
-
-   /**
-   * shipping cost for the order
-   * @return shippingCost
-  **/
-  @javax.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_SHIPPING_COST)
+    /**
+        * order tax amount calculated by tax connectors
+    * @return orderTaxAmount
+    */
+    @javax.annotation.Nonnull
+      @JsonProperty(JSON_PROPERTY_ORDER_TAX_AMOUNT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-  public String getShippingCost() {
-    return shippingCost;
-  }
+    public String getOrderTaxAmount() {
+        return orderTaxAmount;
+    }
 
 
-  @JsonProperty(JSON_PROPERTY_SHIPPING_COST)
+          @JsonProperty(JSON_PROPERTY_ORDER_TAX_AMOUNT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setShippingCost(String shippingCost) {
-    this.shippingCost = shippingCost;
-  }
+  public void setOrderTaxAmount(@javax.annotation.Nonnull String orderTaxAmount) {
+            this.orderTaxAmount = orderTaxAmount;
+        }
 
-  @Override
-  public boolean equals(Object o) {
+        public DisplayAmountOnSdk shippingCost(@javax.annotation.Nonnull String shippingCost) {
+        
+        this.shippingCost = shippingCost;
+        return this;
+        }
+
+    /**
+        * shipping cost for the order
+    * @return shippingCost
+    */
+    @javax.annotation.Nonnull
+      @JsonProperty(JSON_PROPERTY_SHIPPING_COST)
+  @JsonInclude(value = JsonInclude.Include.ALWAYS)
+
+    public String getShippingCost() {
+        return shippingCost;
+    }
+
+
+          @JsonProperty(JSON_PROPERTY_SHIPPING_COST)
+  @JsonInclude(value = JsonInclude.Include.ALWAYS)
+  public void setShippingCost(@javax.annotation.Nonnull String shippingCost) {
+            this.shippingCost = shippingCost;
+        }
+
+@Override
+public boolean equals(Object o) {
     if (this == o) {
-      return true;
+    return true;
     }
     if (o == null || getClass() != o.getClass()) {
-      return false;
+    return false;
     }
-    DisplayAmountOnSdk displayAmountOnSdk = (DisplayAmountOnSdk) o;
-    return Objects.equals(this.netAmount, displayAmountOnSdk.netAmount) &&
+        DisplayAmountOnSdk displayAmountOnSdk = (DisplayAmountOnSdk) o;
+        return Objects.equals(this.netAmount, displayAmountOnSdk.netAmount) &&
         Objects.equals(this.orderTaxAmount, displayAmountOnSdk.orderTaxAmount) &&
         Objects.equals(this.shippingCost, displayAmountOnSdk.shippingCost);
-  }
+}
 
-  @Override
-  public int hashCode() {
-    return Objects.hash(netAmount, orderTaxAmount, shippingCost);
-  }
+    @Override
+    public int hashCode() {
+        return Objects.hash(netAmount, orderTaxAmount, shippingCost);
+    }
 
-  @Override
-  public String toString() {
+    @Override
+    public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class DisplayAmountOnSdk {\n");
-    sb.append("    netAmount: ").append(toIndentedString(netAmount)).append("\n");
-    sb.append("    orderTaxAmount: ").append(toIndentedString(orderTaxAmount)).append("\n");
-    sb.append("    shippingCost: ").append(toIndentedString(shippingCost)).append("\n");
+        sb.append("    netAmount: ").append(toIndentedString(netAmount)).append("\n");
+        sb.append("    orderTaxAmount: ").append(toIndentedString(orderTaxAmount)).append("\n");
+        sb.append("    shippingCost: ").append(toIndentedString(shippingCost)).append("\n");
     sb.append("}");
     return sb.toString();
-  }
+    }
 
-  /**
-   * Convert the given object to string with each line indented by 4 spaces
-   * (except the first line).
-   */
-  private String toIndentedString(Object o) {
+    /**
+    * Convert the given object to string with each line indented by 4 spaces
+    * (except the first line).
+    */
+    private String toIndentedString(Object o) {
     if (o == null) {
-      return "null";
+    return "null";
     }
     return o.toString().replace("\n", "\n    ");
-  }
-
-  /**
-   * Convert the instance into URL query string.
-   *
-   * @return URL query string
-   */
-  public String toUrlQueryString() {
-    return toUrlQueryString(null);
-  }
-
-  /**
-   * Convert the instance into URL query string.
-   *
-   * @param prefix prefix of the query string
-   * @return URL query string
-   */
-  public String toUrlQueryString(String prefix) {
-    String suffix = "";
-    String containerSuffix = "";
-    String containerPrefix = "";
-    if (prefix == null) {
-      // style=form, explode=true, e.g. /pet?name=cat&type=manx
-      prefix = "";
-    } else {
-      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
-      prefix = prefix + "[";
-      suffix = "]";
-      containerSuffix = "]";
-      containerPrefix = "[";
     }
 
-    StringJoiner joiner = new StringJoiner("&");
+        /**
+        * Convert the instance into URL query string.
+        *
+        * @return URL query string
+        */
+        public String toUrlQueryString() {
+        return toUrlQueryString(null);
+        }
 
-    // add `net_amount` to the URL query string
-    if (getNetAmount() != null) {
-      try {
-        joiner.add(String.format("%snet_amount%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getNetAmount()), "UTF-8").replaceAll("\\+", "%20")));
-      } catch (UnsupportedEncodingException e) {
-        // Should never happen, UTF-8 is always supported
-        throw new RuntimeException(e);
-      }
+        /**
+        * Convert the instance into URL query string.
+        *
+        * @param prefix prefix of the query string
+        * @return URL query string
+        */
+        public String toUrlQueryString(String prefix) {
+        String suffix = "";
+        String containerSuffix = "";
+        String containerPrefix = "";
+        if (prefix == null) {
+        // style=form, explode=true, e.g. /pet?name=cat&type=manx
+        prefix = "";
+        } else {
+        // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+        prefix = prefix + "[";
+        suffix = "]";
+        containerSuffix = "]";
+        containerPrefix = "[";
+        }
+
+        StringJoiner joiner = new StringJoiner("&");
+
+            // add `net_amount` to the URL query string
+                        if (getNetAmount() != null) {
+                        try {
+                        joiner.add(String.format("%snet_amount%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getNetAmount()), "UTF-8").replaceAll("\\+", "%20")));
+                        } catch (UnsupportedEncodingException e) {
+                        // Should never happen, UTF-8 is always supported
+                        throw new RuntimeException(e);
+                        }
+                        }
+
+            // add `order_tax_amount` to the URL query string
+                        if (getOrderTaxAmount() != null) {
+                        try {
+                        joiner.add(String.format("%sorder_tax_amount%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getOrderTaxAmount()), "UTF-8").replaceAll("\\+", "%20")));
+                        } catch (UnsupportedEncodingException e) {
+                        // Should never happen, UTF-8 is always supported
+                        throw new RuntimeException(e);
+                        }
+                        }
+
+            // add `shipping_cost` to the URL query string
+                        if (getShippingCost() != null) {
+                        try {
+                        joiner.add(String.format("%sshipping_cost%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getShippingCost()), "UTF-8").replaceAll("\\+", "%20")));
+                        } catch (UnsupportedEncodingException e) {
+                        // Should never happen, UTF-8 is always supported
+                        throw new RuntimeException(e);
+                        }
+                        }
+
+        return joiner.toString();
+        }
+
     }
-
-    // add `order_tax_amount` to the URL query string
-    if (getOrderTaxAmount() != null) {
-      try {
-        joiner.add(String.format("%sorder_tax_amount%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getOrderTaxAmount()), "UTF-8").replaceAll("\\+", "%20")));
-      } catch (UnsupportedEncodingException e) {
-        // Should never happen, UTF-8 is always supported
-        throw new RuntimeException(e);
-      }
-    }
-
-    // add `shipping_cost` to the URL query string
-    if (getShippingCost() != null) {
-      try {
-        joiner.add(String.format("%sshipping_cost%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getShippingCost()), "UTF-8").replaceAll("\\+", "%20")));
-      } catch (UnsupportedEncodingException e) {
-        // Should never happen, UTF-8 is always supported
-        throw new RuntimeException(e);
-      }
-    }
-
-    return joiner.toString();
-  }
-
-}
 

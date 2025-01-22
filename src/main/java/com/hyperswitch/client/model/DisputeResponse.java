@@ -35,620 +35,621 @@ import java.net.URLEncoder;
 import java.util.StringJoiner;
 
 /**
- * DisputeResponse
- */
-@JsonPropertyOrder({
-  DisputeResponse.JSON_PROPERTY_DISPUTE_ID,
-  DisputeResponse.JSON_PROPERTY_PAYMENT_ID,
-  DisputeResponse.JSON_PROPERTY_ATTEMPT_ID,
-  DisputeResponse.JSON_PROPERTY_AMOUNT,
-  DisputeResponse.JSON_PROPERTY_CURRENCY,
-  DisputeResponse.JSON_PROPERTY_DISPUTE_STAGE,
-  DisputeResponse.JSON_PROPERTY_DISPUTE_STATUS,
-  DisputeResponse.JSON_PROPERTY_CONNECTOR,
-  DisputeResponse.JSON_PROPERTY_CONNECTOR_STATUS,
-  DisputeResponse.JSON_PROPERTY_CONNECTOR_DISPUTE_ID,
-  DisputeResponse.JSON_PROPERTY_CONNECTOR_REASON,
-  DisputeResponse.JSON_PROPERTY_CONNECTOR_REASON_CODE,
-  DisputeResponse.JSON_PROPERTY_CHALLENGE_REQUIRED_BY,
-  DisputeResponse.JSON_PROPERTY_CONNECTOR_CREATED_AT,
-  DisputeResponse.JSON_PROPERTY_CONNECTOR_UPDATED_AT,
-  DisputeResponse.JSON_PROPERTY_CREATED_AT,
-  DisputeResponse.JSON_PROPERTY_PROFILE_ID,
-  DisputeResponse.JSON_PROPERTY_MERCHANT_CONNECTOR_ID
-})
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+* DisputeResponse
+*/
+    @JsonPropertyOrder({
+        DisputeResponse.JSON_PROPERTY_DISPUTE_ID,
+        DisputeResponse.JSON_PROPERTY_PAYMENT_ID,
+        DisputeResponse.JSON_PROPERTY_ATTEMPT_ID,
+        DisputeResponse.JSON_PROPERTY_AMOUNT,
+        DisputeResponse.JSON_PROPERTY_CURRENCY,
+        DisputeResponse.JSON_PROPERTY_DISPUTE_STAGE,
+        DisputeResponse.JSON_PROPERTY_DISPUTE_STATUS,
+        DisputeResponse.JSON_PROPERTY_CONNECTOR,
+        DisputeResponse.JSON_PROPERTY_CONNECTOR_STATUS,
+        DisputeResponse.JSON_PROPERTY_CONNECTOR_DISPUTE_ID,
+        DisputeResponse.JSON_PROPERTY_CONNECTOR_REASON,
+        DisputeResponse.JSON_PROPERTY_CONNECTOR_REASON_CODE,
+        DisputeResponse.JSON_PROPERTY_CHALLENGE_REQUIRED_BY,
+        DisputeResponse.JSON_PROPERTY_CONNECTOR_CREATED_AT,
+        DisputeResponse.JSON_PROPERTY_CONNECTOR_UPDATED_AT,
+        DisputeResponse.JSON_PROPERTY_CREATED_AT,
+        DisputeResponse.JSON_PROPERTY_PROFILE_ID,
+        DisputeResponse.JSON_PROPERTY_MERCHANT_CONNECTOR_ID
+    })
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class DisputeResponse {
-  public static final String JSON_PROPERTY_DISPUTE_ID = "dispute_id";
-  private String disputeId;
+        public static final String JSON_PROPERTY_DISPUTE_ID = "dispute_id";
+    @javax.annotation.Nonnull
+            private String disputeId;
 
-  public static final String JSON_PROPERTY_PAYMENT_ID = "payment_id";
-  private String paymentId;
+        public static final String JSON_PROPERTY_PAYMENT_ID = "payment_id";
+    @javax.annotation.Nonnull
+            private String paymentId;
 
-  public static final String JSON_PROPERTY_ATTEMPT_ID = "attempt_id";
-  private String attemptId;
+        public static final String JSON_PROPERTY_ATTEMPT_ID = "attempt_id";
+    @javax.annotation.Nonnull
+            private String attemptId;
 
-  public static final String JSON_PROPERTY_AMOUNT = "amount";
-  private String amount;
+        public static final String JSON_PROPERTY_AMOUNT = "amount";
+    @javax.annotation.Nonnull
+            private String amount;
 
-  public static final String JSON_PROPERTY_CURRENCY = "currency";
-  private Currency currency;
+        public static final String JSON_PROPERTY_CURRENCY = "currency";
+    @javax.annotation.Nonnull
+            private Currency currency;
 
-  public static final String JSON_PROPERTY_DISPUTE_STAGE = "dispute_stage";
-  private DisputeStage disputeStage;
+        public static final String JSON_PROPERTY_DISPUTE_STAGE = "dispute_stage";
+    @javax.annotation.Nonnull
+            private DisputeStage disputeStage;
 
-  public static final String JSON_PROPERTY_DISPUTE_STATUS = "dispute_status";
-  private DisputeStatus disputeStatus;
+        public static final String JSON_PROPERTY_DISPUTE_STATUS = "dispute_status";
+    @javax.annotation.Nonnull
+            private DisputeStatus disputeStatus;
 
-  public static final String JSON_PROPERTY_CONNECTOR = "connector";
-  private String connector;
+        public static final String JSON_PROPERTY_CONNECTOR = "connector";
+    @javax.annotation.Nonnull
+            private String connector;
 
-  public static final String JSON_PROPERTY_CONNECTOR_STATUS = "connector_status";
-  private String connectorStatus;
+        public static final String JSON_PROPERTY_CONNECTOR_STATUS = "connector_status";
+    @javax.annotation.Nonnull
+            private String connectorStatus;
 
-  public static final String JSON_PROPERTY_CONNECTOR_DISPUTE_ID = "connector_dispute_id";
-  private String connectorDisputeId;
+        public static final String JSON_PROPERTY_CONNECTOR_DISPUTE_ID = "connector_dispute_id";
+    @javax.annotation.Nonnull
+            private String connectorDisputeId;
 
-  public static final String JSON_PROPERTY_CONNECTOR_REASON = "connector_reason";
-  private JsonNullable<String> connectorReason = JsonNullable.<String>undefined();
+        public static final String JSON_PROPERTY_CONNECTOR_REASON = "connector_reason";
+    @javax.annotation.Nullable
+            private JsonNullable<String> connectorReason = JsonNullable.<String>undefined();
 
-  public static final String JSON_PROPERTY_CONNECTOR_REASON_CODE = "connector_reason_code";
-  private JsonNullable<String> connectorReasonCode = JsonNullable.<String>undefined();
+        public static final String JSON_PROPERTY_CONNECTOR_REASON_CODE = "connector_reason_code";
+    @javax.annotation.Nullable
+            private JsonNullable<String> connectorReasonCode = JsonNullable.<String>undefined();
 
-  public static final String JSON_PROPERTY_CHALLENGE_REQUIRED_BY = "challenge_required_by";
-  private JsonNullable<OffsetDateTime> challengeRequiredBy = JsonNullable.<OffsetDateTime>undefined();
+        public static final String JSON_PROPERTY_CHALLENGE_REQUIRED_BY = "challenge_required_by";
+    @javax.annotation.Nullable
+            private JsonNullable<OffsetDateTime> challengeRequiredBy = JsonNullable.<OffsetDateTime>undefined();
 
-  public static final String JSON_PROPERTY_CONNECTOR_CREATED_AT = "connector_created_at";
-  private JsonNullable<OffsetDateTime> connectorCreatedAt = JsonNullable.<OffsetDateTime>undefined();
+        public static final String JSON_PROPERTY_CONNECTOR_CREATED_AT = "connector_created_at";
+    @javax.annotation.Nullable
+            private JsonNullable<OffsetDateTime> connectorCreatedAt = JsonNullable.<OffsetDateTime>undefined();
 
-  public static final String JSON_PROPERTY_CONNECTOR_UPDATED_AT = "connector_updated_at";
-  private JsonNullable<OffsetDateTime> connectorUpdatedAt = JsonNullable.<OffsetDateTime>undefined();
+        public static final String JSON_PROPERTY_CONNECTOR_UPDATED_AT = "connector_updated_at";
+    @javax.annotation.Nullable
+            private JsonNullable<OffsetDateTime> connectorUpdatedAt = JsonNullable.<OffsetDateTime>undefined();
 
-  public static final String JSON_PROPERTY_CREATED_AT = "created_at";
-  private OffsetDateTime createdAt;
+        public static final String JSON_PROPERTY_CREATED_AT = "created_at";
+    @javax.annotation.Nonnull
+            private OffsetDateTime createdAt;
 
-  public static final String JSON_PROPERTY_PROFILE_ID = "profile_id";
-  private JsonNullable<String> profileId = JsonNullable.<String>undefined();
+        public static final String JSON_PROPERTY_PROFILE_ID = "profile_id";
+    @javax.annotation.Nullable
+            private JsonNullable<String> profileId = JsonNullable.<String>undefined();
 
-  public static final String JSON_PROPERTY_MERCHANT_CONNECTOR_ID = "merchant_connector_id";
-  private JsonNullable<String> merchantConnectorId = JsonNullable.<String>undefined();
+        public static final String JSON_PROPERTY_MERCHANT_CONNECTOR_ID = "merchant_connector_id";
+    @javax.annotation.Nullable
+            private JsonNullable<String> merchantConnectorId = JsonNullable.<String>undefined();
 
-  public DisputeResponse() {
-  }
+public DisputeResponse() {
+}
 
-  public DisputeResponse disputeId(String disputeId) {
+        public DisputeResponse disputeId(@javax.annotation.Nonnull String disputeId) {
+        
+        this.disputeId = disputeId;
+        return this;
+        }
+
+    /**
+        * The identifier for dispute
+    * @return disputeId
+    */
+    @javax.annotation.Nonnull
+      @JsonProperty(JSON_PROPERTY_DISPUTE_ID)
+  @JsonInclude(value = JsonInclude.Include.ALWAYS)
+
+    public String getDisputeId() {
+        return disputeId;
+    }
+
+
+          @JsonProperty(JSON_PROPERTY_DISPUTE_ID)
+  @JsonInclude(value = JsonInclude.Include.ALWAYS)
+  public void setDisputeId(@javax.annotation.Nonnull String disputeId) {
+            this.disputeId = disputeId;
+        }
+
+        public DisputeResponse paymentId(@javax.annotation.Nonnull String paymentId) {
+        
+        this.paymentId = paymentId;
+        return this;
+        }
+
+    /**
+        * The identifier for payment_intent
+    * @return paymentId
+    */
+    @javax.annotation.Nonnull
+      @JsonProperty(JSON_PROPERTY_PAYMENT_ID)
+  @JsonInclude(value = JsonInclude.Include.ALWAYS)
+
+    public String getPaymentId() {
+        return paymentId;
+    }
+
+
+          @JsonProperty(JSON_PROPERTY_PAYMENT_ID)
+  @JsonInclude(value = JsonInclude.Include.ALWAYS)
+  public void setPaymentId(@javax.annotation.Nonnull String paymentId) {
+            this.paymentId = paymentId;
+        }
+
+        public DisputeResponse attemptId(@javax.annotation.Nonnull String attemptId) {
+        
+        this.attemptId = attemptId;
+        return this;
+        }
+
+    /**
+        * The identifier for payment_attempt
+    * @return attemptId
+    */
+    @javax.annotation.Nonnull
+      @JsonProperty(JSON_PROPERTY_ATTEMPT_ID)
+  @JsonInclude(value = JsonInclude.Include.ALWAYS)
+
+    public String getAttemptId() {
+        return attemptId;
+    }
+
+
+          @JsonProperty(JSON_PROPERTY_ATTEMPT_ID)
+  @JsonInclude(value = JsonInclude.Include.ALWAYS)
+  public void setAttemptId(@javax.annotation.Nonnull String attemptId) {
+            this.attemptId = attemptId;
+        }
+
+        public DisputeResponse amount(@javax.annotation.Nonnull String amount) {
+        
+        this.amount = amount;
+        return this;
+        }
+
+    /**
+        * The dispute amount
+    * @return amount
+    */
+    @javax.annotation.Nonnull
+      @JsonProperty(JSON_PROPERTY_AMOUNT)
+  @JsonInclude(value = JsonInclude.Include.ALWAYS)
+
+    public String getAmount() {
+        return amount;
+    }
+
+
+          @JsonProperty(JSON_PROPERTY_AMOUNT)
+  @JsonInclude(value = JsonInclude.Include.ALWAYS)
+  public void setAmount(@javax.annotation.Nonnull String amount) {
+            this.amount = amount;
+        }
+
+        public DisputeResponse currency(@javax.annotation.Nonnull Currency currency) {
+        
+        this.currency = currency;
+        return this;
+        }
+
+    /**
+        * Get currency
+    * @return currency
+    */
+    @javax.annotation.Nonnull
+      @JsonProperty(JSON_PROPERTY_CURRENCY)
+  @JsonInclude(value = JsonInclude.Include.ALWAYS)
+
+    public Currency getCurrency() {
+        return currency;
+    }
+
+
+          @JsonProperty(JSON_PROPERTY_CURRENCY)
+  @JsonInclude(value = JsonInclude.Include.ALWAYS)
+  public void setCurrency(@javax.annotation.Nonnull Currency currency) {
+            this.currency = currency;
+        }
+
+        public DisputeResponse disputeStage(@javax.annotation.Nonnull DisputeStage disputeStage) {
+        
+        this.disputeStage = disputeStage;
+        return this;
+        }
+
+    /**
+        * Get disputeStage
+    * @return disputeStage
+    */
+    @javax.annotation.Nonnull
+      @JsonProperty(JSON_PROPERTY_DISPUTE_STAGE)
+  @JsonInclude(value = JsonInclude.Include.ALWAYS)
+
+    public DisputeStage getDisputeStage() {
+        return disputeStage;
+    }
+
+
+          @JsonProperty(JSON_PROPERTY_DISPUTE_STAGE)
+  @JsonInclude(value = JsonInclude.Include.ALWAYS)
+  public void setDisputeStage(@javax.annotation.Nonnull DisputeStage disputeStage) {
+            this.disputeStage = disputeStage;
+        }
+
+        public DisputeResponse disputeStatus(@javax.annotation.Nonnull DisputeStatus disputeStatus) {
+        
+        this.disputeStatus = disputeStatus;
+        return this;
+        }
+
+    /**
+        * Get disputeStatus
+    * @return disputeStatus
+    */
+    @javax.annotation.Nonnull
+      @JsonProperty(JSON_PROPERTY_DISPUTE_STATUS)
+  @JsonInclude(value = JsonInclude.Include.ALWAYS)
+
+    public DisputeStatus getDisputeStatus() {
+        return disputeStatus;
+    }
+
+
+          @JsonProperty(JSON_PROPERTY_DISPUTE_STATUS)
+  @JsonInclude(value = JsonInclude.Include.ALWAYS)
+  public void setDisputeStatus(@javax.annotation.Nonnull DisputeStatus disputeStatus) {
+            this.disputeStatus = disputeStatus;
+        }
+
+        public DisputeResponse connector(@javax.annotation.Nonnull String connector) {
+        
+        this.connector = connector;
+        return this;
+        }
+
+    /**
+        * connector to which dispute is associated with
+    * @return connector
+    */
+    @javax.annotation.Nonnull
+      @JsonProperty(JSON_PROPERTY_CONNECTOR)
+  @JsonInclude(value = JsonInclude.Include.ALWAYS)
+
+    public String getConnector() {
+        return connector;
+    }
+
+
+          @JsonProperty(JSON_PROPERTY_CONNECTOR)
+  @JsonInclude(value = JsonInclude.Include.ALWAYS)
+  public void setConnector(@javax.annotation.Nonnull String connector) {
+            this.connector = connector;
+        }
+
+        public DisputeResponse connectorStatus(@javax.annotation.Nonnull String connectorStatus) {
+        
+        this.connectorStatus = connectorStatus;
+        return this;
+        }
+
+    /**
+        * Status of the dispute sent by connector
+    * @return connectorStatus
+    */
+    @javax.annotation.Nonnull
+      @JsonProperty(JSON_PROPERTY_CONNECTOR_STATUS)
+  @JsonInclude(value = JsonInclude.Include.ALWAYS)
+
+    public String getConnectorStatus() {
+        return connectorStatus;
+    }
+
+
+          @JsonProperty(JSON_PROPERTY_CONNECTOR_STATUS)
+  @JsonInclude(value = JsonInclude.Include.ALWAYS)
+  public void setConnectorStatus(@javax.annotation.Nonnull String connectorStatus) {
+            this.connectorStatus = connectorStatus;
+        }
+
+        public DisputeResponse connectorDisputeId(@javax.annotation.Nonnull String connectorDisputeId) {
+        
+        this.connectorDisputeId = connectorDisputeId;
+        return this;
+        }
+
+    /**
+        * Dispute id sent by connector
+    * @return connectorDisputeId
+    */
+    @javax.annotation.Nonnull
+      @JsonProperty(JSON_PROPERTY_CONNECTOR_DISPUTE_ID)
+  @JsonInclude(value = JsonInclude.Include.ALWAYS)
+
+    public String getConnectorDisputeId() {
+        return connectorDisputeId;
+    }
+
+
+          @JsonProperty(JSON_PROPERTY_CONNECTOR_DISPUTE_ID)
+  @JsonInclude(value = JsonInclude.Include.ALWAYS)
+  public void setConnectorDisputeId(@javax.annotation.Nonnull String connectorDisputeId) {
+            this.connectorDisputeId = connectorDisputeId;
+        }
+
+        public DisputeResponse connectorReason(@javax.annotation.Nullable String connectorReason) {
+        this.connectorReason = JsonNullable.<String>of(connectorReason);
+        
+        return this;
+        }
+
+    /**
+        * Reason of dispute sent by connector
+    * @return connectorReason
+    */
+    @javax.annotation.Nullable
+        @JsonIgnore
     
-    this.disputeId = disputeId;
-    return this;
-  }
+    public String getConnectorReason() {
+                return connectorReason.orElse(null);
+    }
 
-   /**
-   * The identifier for dispute
-   * @return disputeId
-  **/
-  @javax.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_DISPUTE_ID)
-  @JsonInclude(value = JsonInclude.Include.ALWAYS)
-
-  public String getDisputeId() {
-    return disputeId;
-  }
-
-
-  @JsonProperty(JSON_PROPERTY_DISPUTE_ID)
-  @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setDisputeId(String disputeId) {
-    this.disputeId = disputeId;
-  }
-
-
-  public DisputeResponse paymentId(String paymentId) {
-    
-    this.paymentId = paymentId;
-    return this;
-  }
-
-   /**
-   * The identifier for payment_intent
-   * @return paymentId
-  **/
-  @javax.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_PAYMENT_ID)
-  @JsonInclude(value = JsonInclude.Include.ALWAYS)
-
-  public String getPaymentId() {
-    return paymentId;
-  }
-
-
-  @JsonProperty(JSON_PROPERTY_PAYMENT_ID)
-  @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setPaymentId(String paymentId) {
-    this.paymentId = paymentId;
-  }
-
-
-  public DisputeResponse attemptId(String attemptId) {
-    
-    this.attemptId = attemptId;
-    return this;
-  }
-
-   /**
-   * The identifier for payment_attempt
-   * @return attemptId
-  **/
-  @javax.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_ATTEMPT_ID)
-  @JsonInclude(value = JsonInclude.Include.ALWAYS)
-
-  public String getAttemptId() {
-    return attemptId;
-  }
-
-
-  @JsonProperty(JSON_PROPERTY_ATTEMPT_ID)
-  @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setAttemptId(String attemptId) {
-    this.attemptId = attemptId;
-  }
-
-
-  public DisputeResponse amount(String amount) {
-    
-    this.amount = amount;
-    return this;
-  }
-
-   /**
-   * The dispute amount
-   * @return amount
-  **/
-  @javax.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_AMOUNT)
-  @JsonInclude(value = JsonInclude.Include.ALWAYS)
-
-  public String getAmount() {
-    return amount;
-  }
-
-
-  @JsonProperty(JSON_PROPERTY_AMOUNT)
-  @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setAmount(String amount) {
-    this.amount = amount;
-  }
-
-
-  public DisputeResponse currency(Currency currency) {
-    
-    this.currency = currency;
-    return this;
-  }
-
-   /**
-   * Get currency
-   * @return currency
-  **/
-  @javax.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_CURRENCY)
-  @JsonInclude(value = JsonInclude.Include.ALWAYS)
-
-  public Currency getCurrency() {
-    return currency;
-  }
-
-
-  @JsonProperty(JSON_PROPERTY_CURRENCY)
-  @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setCurrency(Currency currency) {
-    this.currency = currency;
-  }
-
-
-  public DisputeResponse disputeStage(DisputeStage disputeStage) {
-    
-    this.disputeStage = disputeStage;
-    return this;
-  }
-
-   /**
-   * Get disputeStage
-   * @return disputeStage
-  **/
-  @javax.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_DISPUTE_STAGE)
-  @JsonInclude(value = JsonInclude.Include.ALWAYS)
-
-  public DisputeStage getDisputeStage() {
-    return disputeStage;
-  }
-
-
-  @JsonProperty(JSON_PROPERTY_DISPUTE_STAGE)
-  @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setDisputeStage(DisputeStage disputeStage) {
-    this.disputeStage = disputeStage;
-  }
-
-
-  public DisputeResponse disputeStatus(DisputeStatus disputeStatus) {
-    
-    this.disputeStatus = disputeStatus;
-    return this;
-  }
-
-   /**
-   * Get disputeStatus
-   * @return disputeStatus
-  **/
-  @javax.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_DISPUTE_STATUS)
-  @JsonInclude(value = JsonInclude.Include.ALWAYS)
-
-  public DisputeStatus getDisputeStatus() {
-    return disputeStatus;
-  }
-
-
-  @JsonProperty(JSON_PROPERTY_DISPUTE_STATUS)
-  @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setDisputeStatus(DisputeStatus disputeStatus) {
-    this.disputeStatus = disputeStatus;
-  }
-
-
-  public DisputeResponse connector(String connector) {
-    
-    this.connector = connector;
-    return this;
-  }
-
-   /**
-   * connector to which dispute is associated with
-   * @return connector
-  **/
-  @javax.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_CONNECTOR)
-  @JsonInclude(value = JsonInclude.Include.ALWAYS)
-
-  public String getConnector() {
-    return connector;
-  }
-
-
-  @JsonProperty(JSON_PROPERTY_CONNECTOR)
-  @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setConnector(String connector) {
-    this.connector = connector;
-  }
-
-
-  public DisputeResponse connectorStatus(String connectorStatus) {
-    
-    this.connectorStatus = connectorStatus;
-    return this;
-  }
-
-   /**
-   * Status of the dispute sent by connector
-   * @return connectorStatus
-  **/
-  @javax.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_CONNECTOR_STATUS)
-  @JsonInclude(value = JsonInclude.Include.ALWAYS)
-
-  public String getConnectorStatus() {
-    return connectorStatus;
-  }
-
-
-  @JsonProperty(JSON_PROPERTY_CONNECTOR_STATUS)
-  @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setConnectorStatus(String connectorStatus) {
-    this.connectorStatus = connectorStatus;
-  }
-
-
-  public DisputeResponse connectorDisputeId(String connectorDisputeId) {
-    
-    this.connectorDisputeId = connectorDisputeId;
-    return this;
-  }
-
-   /**
-   * Dispute id sent by connector
-   * @return connectorDisputeId
-  **/
-  @javax.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_CONNECTOR_DISPUTE_ID)
-  @JsonInclude(value = JsonInclude.Include.ALWAYS)
-
-  public String getConnectorDisputeId() {
-    return connectorDisputeId;
-  }
-
-
-  @JsonProperty(JSON_PROPERTY_CONNECTOR_DISPUTE_ID)
-  @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setConnectorDisputeId(String connectorDisputeId) {
-    this.connectorDisputeId = connectorDisputeId;
-  }
-
-
-  public DisputeResponse connectorReason(String connectorReason) {
-    this.connectorReason = JsonNullable.<String>of(connectorReason);
-    
-    return this;
-  }
-
-   /**
-   * Reason of dispute sent by connector
-   * @return connectorReason
-  **/
-  @javax.annotation.Nullable
-  @JsonIgnore
-
-  public String getConnectorReason() {
-        return connectorReason.orElse(null);
-  }
-
-  @JsonProperty(JSON_PROPERTY_CONNECTOR_REASON)
+          @JsonProperty(JSON_PROPERTY_CONNECTOR_REASON)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-  public JsonNullable<String> getConnectorReason_JsonNullable() {
-    return connectorReason;
-  }
-  
-  @JsonProperty(JSON_PROPERTY_CONNECTOR_REASON)
-  public void setConnectorReason_JsonNullable(JsonNullable<String> connectorReason) {
-    this.connectorReason = connectorReason;
-  }
-
-  public void setConnectorReason(String connectorReason) {
-    this.connectorReason = JsonNullable.<String>of(connectorReason);
-  }
-
-
-  public DisputeResponse connectorReasonCode(String connectorReasonCode) {
-    this.connectorReasonCode = JsonNullable.<String>of(connectorReasonCode);
+        public JsonNullable<String> getConnectorReason_JsonNullable() {
+        return connectorReason;
+        }
     
-    return this;
-  }
+        @JsonProperty(JSON_PROPERTY_CONNECTOR_REASON)
+        public void setConnectorReason_JsonNullable(JsonNullable<String> connectorReason) {
+        this.connectorReason = connectorReason;
+        }
 
-   /**
-   * Reason code of dispute sent by connector
-   * @return connectorReasonCode
-  **/
-  @javax.annotation.Nullable
-  @JsonIgnore
+          public void setConnectorReason(@javax.annotation.Nullable String connectorReason) {
+            this.connectorReason = JsonNullable.<String>of(connectorReason);
+        }
 
-  public String getConnectorReasonCode() {
-        return connectorReasonCode.orElse(null);
-  }
+        public DisputeResponse connectorReasonCode(@javax.annotation.Nullable String connectorReasonCode) {
+        this.connectorReasonCode = JsonNullable.<String>of(connectorReasonCode);
+        
+        return this;
+        }
 
-  @JsonProperty(JSON_PROPERTY_CONNECTOR_REASON_CODE)
+    /**
+        * Reason code of dispute sent by connector
+    * @return connectorReasonCode
+    */
+    @javax.annotation.Nullable
+        @JsonIgnore
+    
+    public String getConnectorReasonCode() {
+                return connectorReasonCode.orElse(null);
+    }
+
+          @JsonProperty(JSON_PROPERTY_CONNECTOR_REASON_CODE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-  public JsonNullable<String> getConnectorReasonCode_JsonNullable() {
-    return connectorReasonCode;
-  }
-  
-  @JsonProperty(JSON_PROPERTY_CONNECTOR_REASON_CODE)
-  public void setConnectorReasonCode_JsonNullable(JsonNullable<String> connectorReasonCode) {
-    this.connectorReasonCode = connectorReasonCode;
-  }
-
-  public void setConnectorReasonCode(String connectorReasonCode) {
-    this.connectorReasonCode = JsonNullable.<String>of(connectorReasonCode);
-  }
-
-
-  public DisputeResponse challengeRequiredBy(OffsetDateTime challengeRequiredBy) {
-    this.challengeRequiredBy = JsonNullable.<OffsetDateTime>of(challengeRequiredBy);
+        public JsonNullable<String> getConnectorReasonCode_JsonNullable() {
+        return connectorReasonCode;
+        }
     
-    return this;
-  }
+        @JsonProperty(JSON_PROPERTY_CONNECTOR_REASON_CODE)
+        public void setConnectorReasonCode_JsonNullable(JsonNullable<String> connectorReasonCode) {
+        this.connectorReasonCode = connectorReasonCode;
+        }
 
-   /**
-   * Evidence deadline of dispute sent by connector
-   * @return challengeRequiredBy
-  **/
-  @javax.annotation.Nullable
-  @JsonIgnore
+          public void setConnectorReasonCode(@javax.annotation.Nullable String connectorReasonCode) {
+            this.connectorReasonCode = JsonNullable.<String>of(connectorReasonCode);
+        }
 
-  public OffsetDateTime getChallengeRequiredBy() {
-        return challengeRequiredBy.orElse(null);
-  }
+        public DisputeResponse challengeRequiredBy(@javax.annotation.Nullable OffsetDateTime challengeRequiredBy) {
+        this.challengeRequiredBy = JsonNullable.<OffsetDateTime>of(challengeRequiredBy);
+        
+        return this;
+        }
 
-  @JsonProperty(JSON_PROPERTY_CHALLENGE_REQUIRED_BY)
+    /**
+        * Evidence deadline of dispute sent by connector
+    * @return challengeRequiredBy
+    */
+    @javax.annotation.Nullable
+        @JsonIgnore
+    
+    public OffsetDateTime getChallengeRequiredBy() {
+                return challengeRequiredBy.orElse(null);
+    }
+
+          @JsonProperty(JSON_PROPERTY_CHALLENGE_REQUIRED_BY)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-  public JsonNullable<OffsetDateTime> getChallengeRequiredBy_JsonNullable() {
-    return challengeRequiredBy;
-  }
-  
-  @JsonProperty(JSON_PROPERTY_CHALLENGE_REQUIRED_BY)
-  public void setChallengeRequiredBy_JsonNullable(JsonNullable<OffsetDateTime> challengeRequiredBy) {
-    this.challengeRequiredBy = challengeRequiredBy;
-  }
-
-  public void setChallengeRequiredBy(OffsetDateTime challengeRequiredBy) {
-    this.challengeRequiredBy = JsonNullable.<OffsetDateTime>of(challengeRequiredBy);
-  }
-
-
-  public DisputeResponse connectorCreatedAt(OffsetDateTime connectorCreatedAt) {
-    this.connectorCreatedAt = JsonNullable.<OffsetDateTime>of(connectorCreatedAt);
+        public JsonNullable<OffsetDateTime> getChallengeRequiredBy_JsonNullable() {
+        return challengeRequiredBy;
+        }
     
-    return this;
-  }
+        @JsonProperty(JSON_PROPERTY_CHALLENGE_REQUIRED_BY)
+        public void setChallengeRequiredBy_JsonNullable(JsonNullable<OffsetDateTime> challengeRequiredBy) {
+        this.challengeRequiredBy = challengeRequiredBy;
+        }
 
-   /**
-   * Dispute created time sent by connector
-   * @return connectorCreatedAt
-  **/
-  @javax.annotation.Nullable
-  @JsonIgnore
+          public void setChallengeRequiredBy(@javax.annotation.Nullable OffsetDateTime challengeRequiredBy) {
+            this.challengeRequiredBy = JsonNullable.<OffsetDateTime>of(challengeRequiredBy);
+        }
 
-  public OffsetDateTime getConnectorCreatedAt() {
-        return connectorCreatedAt.orElse(null);
-  }
+        public DisputeResponse connectorCreatedAt(@javax.annotation.Nullable OffsetDateTime connectorCreatedAt) {
+        this.connectorCreatedAt = JsonNullable.<OffsetDateTime>of(connectorCreatedAt);
+        
+        return this;
+        }
 
-  @JsonProperty(JSON_PROPERTY_CONNECTOR_CREATED_AT)
+    /**
+        * Dispute created time sent by connector
+    * @return connectorCreatedAt
+    */
+    @javax.annotation.Nullable
+        @JsonIgnore
+    
+    public OffsetDateTime getConnectorCreatedAt() {
+                return connectorCreatedAt.orElse(null);
+    }
+
+          @JsonProperty(JSON_PROPERTY_CONNECTOR_CREATED_AT)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-  public JsonNullable<OffsetDateTime> getConnectorCreatedAt_JsonNullable() {
-    return connectorCreatedAt;
-  }
-  
-  @JsonProperty(JSON_PROPERTY_CONNECTOR_CREATED_AT)
-  public void setConnectorCreatedAt_JsonNullable(JsonNullable<OffsetDateTime> connectorCreatedAt) {
-    this.connectorCreatedAt = connectorCreatedAt;
-  }
-
-  public void setConnectorCreatedAt(OffsetDateTime connectorCreatedAt) {
-    this.connectorCreatedAt = JsonNullable.<OffsetDateTime>of(connectorCreatedAt);
-  }
-
-
-  public DisputeResponse connectorUpdatedAt(OffsetDateTime connectorUpdatedAt) {
-    this.connectorUpdatedAt = JsonNullable.<OffsetDateTime>of(connectorUpdatedAt);
+        public JsonNullable<OffsetDateTime> getConnectorCreatedAt_JsonNullable() {
+        return connectorCreatedAt;
+        }
     
-    return this;
-  }
+        @JsonProperty(JSON_PROPERTY_CONNECTOR_CREATED_AT)
+        public void setConnectorCreatedAt_JsonNullable(JsonNullable<OffsetDateTime> connectorCreatedAt) {
+        this.connectorCreatedAt = connectorCreatedAt;
+        }
 
-   /**
-   * Dispute updated time sent by connector
-   * @return connectorUpdatedAt
-  **/
-  @javax.annotation.Nullable
-  @JsonIgnore
+          public void setConnectorCreatedAt(@javax.annotation.Nullable OffsetDateTime connectorCreatedAt) {
+            this.connectorCreatedAt = JsonNullable.<OffsetDateTime>of(connectorCreatedAt);
+        }
 
-  public OffsetDateTime getConnectorUpdatedAt() {
-        return connectorUpdatedAt.orElse(null);
-  }
+        public DisputeResponse connectorUpdatedAt(@javax.annotation.Nullable OffsetDateTime connectorUpdatedAt) {
+        this.connectorUpdatedAt = JsonNullable.<OffsetDateTime>of(connectorUpdatedAt);
+        
+        return this;
+        }
 
-  @JsonProperty(JSON_PROPERTY_CONNECTOR_UPDATED_AT)
+    /**
+        * Dispute updated time sent by connector
+    * @return connectorUpdatedAt
+    */
+    @javax.annotation.Nullable
+        @JsonIgnore
+    
+    public OffsetDateTime getConnectorUpdatedAt() {
+                return connectorUpdatedAt.orElse(null);
+    }
+
+          @JsonProperty(JSON_PROPERTY_CONNECTOR_UPDATED_AT)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-  public JsonNullable<OffsetDateTime> getConnectorUpdatedAt_JsonNullable() {
-    return connectorUpdatedAt;
-  }
-  
-  @JsonProperty(JSON_PROPERTY_CONNECTOR_UPDATED_AT)
-  public void setConnectorUpdatedAt_JsonNullable(JsonNullable<OffsetDateTime> connectorUpdatedAt) {
-    this.connectorUpdatedAt = connectorUpdatedAt;
-  }
-
-  public void setConnectorUpdatedAt(OffsetDateTime connectorUpdatedAt) {
-    this.connectorUpdatedAt = JsonNullable.<OffsetDateTime>of(connectorUpdatedAt);
-  }
-
-
-  public DisputeResponse createdAt(OffsetDateTime createdAt) {
+        public JsonNullable<OffsetDateTime> getConnectorUpdatedAt_JsonNullable() {
+        return connectorUpdatedAt;
+        }
     
-    this.createdAt = createdAt;
-    return this;
-  }
+        @JsonProperty(JSON_PROPERTY_CONNECTOR_UPDATED_AT)
+        public void setConnectorUpdatedAt_JsonNullable(JsonNullable<OffsetDateTime> connectorUpdatedAt) {
+        this.connectorUpdatedAt = connectorUpdatedAt;
+        }
 
-   /**
-   * Time at which dispute is received
-   * @return createdAt
-  **/
-  @javax.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_CREATED_AT)
+          public void setConnectorUpdatedAt(@javax.annotation.Nullable OffsetDateTime connectorUpdatedAt) {
+            this.connectorUpdatedAt = JsonNullable.<OffsetDateTime>of(connectorUpdatedAt);
+        }
+
+        public DisputeResponse createdAt(@javax.annotation.Nonnull OffsetDateTime createdAt) {
+        
+        this.createdAt = createdAt;
+        return this;
+        }
+
+    /**
+        * Time at which dispute is received
+    * @return createdAt
+    */
+    @javax.annotation.Nonnull
+      @JsonProperty(JSON_PROPERTY_CREATED_AT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-  public OffsetDateTime getCreatedAt() {
-    return createdAt;
-  }
+    public OffsetDateTime getCreatedAt() {
+        return createdAt;
+    }
 
 
-  @JsonProperty(JSON_PROPERTY_CREATED_AT)
+          @JsonProperty(JSON_PROPERTY_CREATED_AT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setCreatedAt(OffsetDateTime createdAt) {
-    this.createdAt = createdAt;
-  }
+  public void setCreatedAt(@javax.annotation.Nonnull OffsetDateTime createdAt) {
+            this.createdAt = createdAt;
+        }
 
+        public DisputeResponse profileId(@javax.annotation.Nullable String profileId) {
+        this.profileId = JsonNullable.<String>of(profileId);
+        
+        return this;
+        }
 
-  public DisputeResponse profileId(String profileId) {
-    this.profileId = JsonNullable.<String>of(profileId);
+    /**
+        * The &#x60;profile_id&#x60; associated with the dispute
+    * @return profileId
+    */
+    @javax.annotation.Nullable
+        @JsonIgnore
     
-    return this;
-  }
+    public String getProfileId() {
+                return profileId.orElse(null);
+    }
 
-   /**
-   * The &#x60;profile_id&#x60; associated with the dispute
-   * @return profileId
-  **/
-  @javax.annotation.Nullable
-  @JsonIgnore
-
-  public String getProfileId() {
-        return profileId.orElse(null);
-  }
-
-  @JsonProperty(JSON_PROPERTY_PROFILE_ID)
+          @JsonProperty(JSON_PROPERTY_PROFILE_ID)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-  public JsonNullable<String> getProfileId_JsonNullable() {
-    return profileId;
-  }
-  
-  @JsonProperty(JSON_PROPERTY_PROFILE_ID)
-  public void setProfileId_JsonNullable(JsonNullable<String> profileId) {
-    this.profileId = profileId;
-  }
-
-  public void setProfileId(String profileId) {
-    this.profileId = JsonNullable.<String>of(profileId);
-  }
-
-
-  public DisputeResponse merchantConnectorId(String merchantConnectorId) {
-    this.merchantConnectorId = JsonNullable.<String>of(merchantConnectorId);
+        public JsonNullable<String> getProfileId_JsonNullable() {
+        return profileId;
+        }
     
-    return this;
-  }
+        @JsonProperty(JSON_PROPERTY_PROFILE_ID)
+        public void setProfileId_JsonNullable(JsonNullable<String> profileId) {
+        this.profileId = profileId;
+        }
 
-   /**
-   * The &#x60;merchant_connector_id&#x60; of the connector / processor through which the dispute was processed
-   * @return merchantConnectorId
-  **/
-  @javax.annotation.Nullable
-  @JsonIgnore
+          public void setProfileId(@javax.annotation.Nullable String profileId) {
+            this.profileId = JsonNullable.<String>of(profileId);
+        }
 
-  public String getMerchantConnectorId() {
-        return merchantConnectorId.orElse(null);
-  }
+        public DisputeResponse merchantConnectorId(@javax.annotation.Nullable String merchantConnectorId) {
+        this.merchantConnectorId = JsonNullable.<String>of(merchantConnectorId);
+        
+        return this;
+        }
 
-  @JsonProperty(JSON_PROPERTY_MERCHANT_CONNECTOR_ID)
+    /**
+        * The &#x60;merchant_connector_id&#x60; of the connector / processor through which the dispute was processed
+    * @return merchantConnectorId
+    */
+    @javax.annotation.Nullable
+        @JsonIgnore
+    
+    public String getMerchantConnectorId() {
+                return merchantConnectorId.orElse(null);
+    }
+
+          @JsonProperty(JSON_PROPERTY_MERCHANT_CONNECTOR_ID)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-  public JsonNullable<String> getMerchantConnectorId_JsonNullable() {
-    return merchantConnectorId;
-  }
-  
-  @JsonProperty(JSON_PROPERTY_MERCHANT_CONNECTOR_ID)
-  public void setMerchantConnectorId_JsonNullable(JsonNullable<String> merchantConnectorId) {
-    this.merchantConnectorId = merchantConnectorId;
-  }
+        public JsonNullable<String> getMerchantConnectorId_JsonNullable() {
+        return merchantConnectorId;
+        }
+    
+        @JsonProperty(JSON_PROPERTY_MERCHANT_CONNECTOR_ID)
+        public void setMerchantConnectorId_JsonNullable(JsonNullable<String> merchantConnectorId) {
+        this.merchantConnectorId = merchantConnectorId;
+        }
 
-  public void setMerchantConnectorId(String merchantConnectorId) {
-    this.merchantConnectorId = JsonNullable.<String>of(merchantConnectorId);
-  }
+          public void setMerchantConnectorId(@javax.annotation.Nullable String merchantConnectorId) {
+            this.merchantConnectorId = JsonNullable.<String>of(merchantConnectorId);
+        }
 
-  @Override
-  public boolean equals(Object o) {
+@Override
+public boolean equals(Object o) {
     if (this == o) {
-      return true;
+    return true;
     }
     if (o == null || getClass() != o.getClass()) {
-      return false;
+    return false;
     }
-    DisputeResponse disputeResponse = (DisputeResponse) o;
-    return Objects.equals(this.disputeId, disputeResponse.disputeId) &&
+        DisputeResponse disputeResponse = (DisputeResponse) o;
+        return Objects.equals(this.disputeId, disputeResponse.disputeId) &&
         Objects.equals(this.paymentId, disputeResponse.paymentId) &&
         Objects.equals(this.attemptId, disputeResponse.attemptId) &&
         Objects.equals(this.amount, disputeResponse.amount) &&
@@ -666,275 +667,275 @@ public class DisputeResponse {
         Objects.equals(this.createdAt, disputeResponse.createdAt) &&
         equalsNullable(this.profileId, disputeResponse.profileId) &&
         equalsNullable(this.merchantConnectorId, disputeResponse.merchantConnectorId);
-  }
+}
 
-  private static <T> boolean equalsNullable(JsonNullable<T> a, JsonNullable<T> b) {
-    return a == b || (a != null && b != null && a.isPresent() && b.isPresent() && Objects.deepEquals(a.get(), b.get()));
-  }
+    private static <T> boolean equalsNullable(JsonNullable<T> a, JsonNullable<T> b) {
+        return a == b || (a != null && b != null && a.isPresent() && b.isPresent() && Objects.deepEquals(a.get(), b.get()));
+        }
 
-  @Override
-  public int hashCode() {
-    return Objects.hash(disputeId, paymentId, attemptId, amount, currency, disputeStage, disputeStatus, connector, connectorStatus, connectorDisputeId, hashCodeNullable(connectorReason), hashCodeNullable(connectorReasonCode), hashCodeNullable(challengeRequiredBy), hashCodeNullable(connectorCreatedAt), hashCodeNullable(connectorUpdatedAt), createdAt, hashCodeNullable(profileId), hashCodeNullable(merchantConnectorId));
-  }
-
-  private static <T> int hashCodeNullable(JsonNullable<T> a) {
-    if (a == null) {
-      return 1;
+    @Override
+    public int hashCode() {
+        return Objects.hash(disputeId, paymentId, attemptId, amount, currency, disputeStage, disputeStatus, connector, connectorStatus, connectorDisputeId, hashCodeNullable(connectorReason), hashCodeNullable(connectorReasonCode), hashCodeNullable(challengeRequiredBy), hashCodeNullable(connectorCreatedAt), hashCodeNullable(connectorUpdatedAt), createdAt, hashCodeNullable(profileId), hashCodeNullable(merchantConnectorId));
     }
-    return a.isPresent() ? Arrays.deepHashCode(new Object[]{a.get()}) : 31;
-  }
 
-  @Override
-  public String toString() {
+        private static <T> int hashCodeNullable(JsonNullable<T> a) {
+        if (a == null) {
+        return 1;
+        }
+        return a.isPresent() ? Arrays.deepHashCode(new Object[]{a.get()}) : 31;
+        }
+
+    @Override
+    public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class DisputeResponse {\n");
-    sb.append("    disputeId: ").append(toIndentedString(disputeId)).append("\n");
-    sb.append("    paymentId: ").append(toIndentedString(paymentId)).append("\n");
-    sb.append("    attemptId: ").append(toIndentedString(attemptId)).append("\n");
-    sb.append("    amount: ").append(toIndentedString(amount)).append("\n");
-    sb.append("    currency: ").append(toIndentedString(currency)).append("\n");
-    sb.append("    disputeStage: ").append(toIndentedString(disputeStage)).append("\n");
-    sb.append("    disputeStatus: ").append(toIndentedString(disputeStatus)).append("\n");
-    sb.append("    connector: ").append(toIndentedString(connector)).append("\n");
-    sb.append("    connectorStatus: ").append(toIndentedString(connectorStatus)).append("\n");
-    sb.append("    connectorDisputeId: ").append(toIndentedString(connectorDisputeId)).append("\n");
-    sb.append("    connectorReason: ").append(toIndentedString(connectorReason)).append("\n");
-    sb.append("    connectorReasonCode: ").append(toIndentedString(connectorReasonCode)).append("\n");
-    sb.append("    challengeRequiredBy: ").append(toIndentedString(challengeRequiredBy)).append("\n");
-    sb.append("    connectorCreatedAt: ").append(toIndentedString(connectorCreatedAt)).append("\n");
-    sb.append("    connectorUpdatedAt: ").append(toIndentedString(connectorUpdatedAt)).append("\n");
-    sb.append("    createdAt: ").append(toIndentedString(createdAt)).append("\n");
-    sb.append("    profileId: ").append(toIndentedString(profileId)).append("\n");
-    sb.append("    merchantConnectorId: ").append(toIndentedString(merchantConnectorId)).append("\n");
+        sb.append("    disputeId: ").append(toIndentedString(disputeId)).append("\n");
+        sb.append("    paymentId: ").append(toIndentedString(paymentId)).append("\n");
+        sb.append("    attemptId: ").append(toIndentedString(attemptId)).append("\n");
+        sb.append("    amount: ").append(toIndentedString(amount)).append("\n");
+        sb.append("    currency: ").append(toIndentedString(currency)).append("\n");
+        sb.append("    disputeStage: ").append(toIndentedString(disputeStage)).append("\n");
+        sb.append("    disputeStatus: ").append(toIndentedString(disputeStatus)).append("\n");
+        sb.append("    connector: ").append(toIndentedString(connector)).append("\n");
+        sb.append("    connectorStatus: ").append(toIndentedString(connectorStatus)).append("\n");
+        sb.append("    connectorDisputeId: ").append(toIndentedString(connectorDisputeId)).append("\n");
+        sb.append("    connectorReason: ").append(toIndentedString(connectorReason)).append("\n");
+        sb.append("    connectorReasonCode: ").append(toIndentedString(connectorReasonCode)).append("\n");
+        sb.append("    challengeRequiredBy: ").append(toIndentedString(challengeRequiredBy)).append("\n");
+        sb.append("    connectorCreatedAt: ").append(toIndentedString(connectorCreatedAt)).append("\n");
+        sb.append("    connectorUpdatedAt: ").append(toIndentedString(connectorUpdatedAt)).append("\n");
+        sb.append("    createdAt: ").append(toIndentedString(createdAt)).append("\n");
+        sb.append("    profileId: ").append(toIndentedString(profileId)).append("\n");
+        sb.append("    merchantConnectorId: ").append(toIndentedString(merchantConnectorId)).append("\n");
     sb.append("}");
     return sb.toString();
-  }
+    }
 
-  /**
-   * Convert the given object to string with each line indented by 4 spaces
-   * (except the first line).
-   */
-  private String toIndentedString(Object o) {
+    /**
+    * Convert the given object to string with each line indented by 4 spaces
+    * (except the first line).
+    */
+    private String toIndentedString(Object o) {
     if (o == null) {
-      return "null";
+    return "null";
     }
     return o.toString().replace("\n", "\n    ");
-  }
-
-  /**
-   * Convert the instance into URL query string.
-   *
-   * @return URL query string
-   */
-  public String toUrlQueryString() {
-    return toUrlQueryString(null);
-  }
-
-  /**
-   * Convert the instance into URL query string.
-   *
-   * @param prefix prefix of the query string
-   * @return URL query string
-   */
-  public String toUrlQueryString(String prefix) {
-    String suffix = "";
-    String containerSuffix = "";
-    String containerPrefix = "";
-    if (prefix == null) {
-      // style=form, explode=true, e.g. /pet?name=cat&type=manx
-      prefix = "";
-    } else {
-      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
-      prefix = prefix + "[";
-      suffix = "]";
-      containerSuffix = "]";
-      containerPrefix = "[";
     }
 
-    StringJoiner joiner = new StringJoiner("&");
+        /**
+        * Convert the instance into URL query string.
+        *
+        * @return URL query string
+        */
+        public String toUrlQueryString() {
+        return toUrlQueryString(null);
+        }
 
-    // add `dispute_id` to the URL query string
-    if (getDisputeId() != null) {
-      try {
-        joiner.add(String.format("%sdispute_id%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getDisputeId()), "UTF-8").replaceAll("\\+", "%20")));
-      } catch (UnsupportedEncodingException e) {
-        // Should never happen, UTF-8 is always supported
-        throw new RuntimeException(e);
-      }
+        /**
+        * Convert the instance into URL query string.
+        *
+        * @param prefix prefix of the query string
+        * @return URL query string
+        */
+        public String toUrlQueryString(String prefix) {
+        String suffix = "";
+        String containerSuffix = "";
+        String containerPrefix = "";
+        if (prefix == null) {
+        // style=form, explode=true, e.g. /pet?name=cat&type=manx
+        prefix = "";
+        } else {
+        // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+        prefix = prefix + "[";
+        suffix = "]";
+        containerSuffix = "]";
+        containerPrefix = "[";
+        }
+
+        StringJoiner joiner = new StringJoiner("&");
+
+            // add `dispute_id` to the URL query string
+                        if (getDisputeId() != null) {
+                        try {
+                        joiner.add(String.format("%sdispute_id%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getDisputeId()), "UTF-8").replaceAll("\\+", "%20")));
+                        } catch (UnsupportedEncodingException e) {
+                        // Should never happen, UTF-8 is always supported
+                        throw new RuntimeException(e);
+                        }
+                        }
+
+            // add `payment_id` to the URL query string
+                        if (getPaymentId() != null) {
+                        try {
+                        joiner.add(String.format("%spayment_id%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getPaymentId()), "UTF-8").replaceAll("\\+", "%20")));
+                        } catch (UnsupportedEncodingException e) {
+                        // Should never happen, UTF-8 is always supported
+                        throw new RuntimeException(e);
+                        }
+                        }
+
+            // add `attempt_id` to the URL query string
+                        if (getAttemptId() != null) {
+                        try {
+                        joiner.add(String.format("%sattempt_id%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getAttemptId()), "UTF-8").replaceAll("\\+", "%20")));
+                        } catch (UnsupportedEncodingException e) {
+                        // Should never happen, UTF-8 is always supported
+                        throw new RuntimeException(e);
+                        }
+                        }
+
+            // add `amount` to the URL query string
+                        if (getAmount() != null) {
+                        try {
+                        joiner.add(String.format("%samount%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getAmount()), "UTF-8").replaceAll("\\+", "%20")));
+                        } catch (UnsupportedEncodingException e) {
+                        // Should never happen, UTF-8 is always supported
+                        throw new RuntimeException(e);
+                        }
+                        }
+
+            // add `currency` to the URL query string
+                            if (getCurrency() != null) {
+                            try {
+                            joiner.add(String.format("%scurrency%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCurrency()), "UTF-8").replaceAll("\\+", "%20")));
+                            } catch (UnsupportedEncodingException e) {
+                            // Should never happen, UTF-8 is always supported
+                            throw new RuntimeException(e);
+                            }
+                            }
+
+            // add `dispute_stage` to the URL query string
+                            if (getDisputeStage() != null) {
+                            try {
+                            joiner.add(String.format("%sdispute_stage%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getDisputeStage()), "UTF-8").replaceAll("\\+", "%20")));
+                            } catch (UnsupportedEncodingException e) {
+                            // Should never happen, UTF-8 is always supported
+                            throw new RuntimeException(e);
+                            }
+                            }
+
+            // add `dispute_status` to the URL query string
+                            if (getDisputeStatus() != null) {
+                            try {
+                            joiner.add(String.format("%sdispute_status%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getDisputeStatus()), "UTF-8").replaceAll("\\+", "%20")));
+                            } catch (UnsupportedEncodingException e) {
+                            // Should never happen, UTF-8 is always supported
+                            throw new RuntimeException(e);
+                            }
+                            }
+
+            // add `connector` to the URL query string
+                        if (getConnector() != null) {
+                        try {
+                        joiner.add(String.format("%sconnector%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getConnector()), "UTF-8").replaceAll("\\+", "%20")));
+                        } catch (UnsupportedEncodingException e) {
+                        // Should never happen, UTF-8 is always supported
+                        throw new RuntimeException(e);
+                        }
+                        }
+
+            // add `connector_status` to the URL query string
+                        if (getConnectorStatus() != null) {
+                        try {
+                        joiner.add(String.format("%sconnector_status%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getConnectorStatus()), "UTF-8").replaceAll("\\+", "%20")));
+                        } catch (UnsupportedEncodingException e) {
+                        // Should never happen, UTF-8 is always supported
+                        throw new RuntimeException(e);
+                        }
+                        }
+
+            // add `connector_dispute_id` to the URL query string
+                        if (getConnectorDisputeId() != null) {
+                        try {
+                        joiner.add(String.format("%sconnector_dispute_id%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getConnectorDisputeId()), "UTF-8").replaceAll("\\+", "%20")));
+                        } catch (UnsupportedEncodingException e) {
+                        // Should never happen, UTF-8 is always supported
+                        throw new RuntimeException(e);
+                        }
+                        }
+
+            // add `connector_reason` to the URL query string
+                        if (getConnectorReason() != null) {
+                        try {
+                        joiner.add(String.format("%sconnector_reason%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getConnectorReason()), "UTF-8").replaceAll("\\+", "%20")));
+                        } catch (UnsupportedEncodingException e) {
+                        // Should never happen, UTF-8 is always supported
+                        throw new RuntimeException(e);
+                        }
+                        }
+
+            // add `connector_reason_code` to the URL query string
+                        if (getConnectorReasonCode() != null) {
+                        try {
+                        joiner.add(String.format("%sconnector_reason_code%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getConnectorReasonCode()), "UTF-8").replaceAll("\\+", "%20")));
+                        } catch (UnsupportedEncodingException e) {
+                        // Should never happen, UTF-8 is always supported
+                        throw new RuntimeException(e);
+                        }
+                        }
+
+            // add `challenge_required_by` to the URL query string
+                            if (getChallengeRequiredBy() != null) {
+                            try {
+                            joiner.add(String.format("%schallenge_required_by%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getChallengeRequiredBy()), "UTF-8").replaceAll("\\+", "%20")));
+                            } catch (UnsupportedEncodingException e) {
+                            // Should never happen, UTF-8 is always supported
+                            throw new RuntimeException(e);
+                            }
+                            }
+
+            // add `connector_created_at` to the URL query string
+                            if (getConnectorCreatedAt() != null) {
+                            try {
+                            joiner.add(String.format("%sconnector_created_at%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getConnectorCreatedAt()), "UTF-8").replaceAll("\\+", "%20")));
+                            } catch (UnsupportedEncodingException e) {
+                            // Should never happen, UTF-8 is always supported
+                            throw new RuntimeException(e);
+                            }
+                            }
+
+            // add `connector_updated_at` to the URL query string
+                            if (getConnectorUpdatedAt() != null) {
+                            try {
+                            joiner.add(String.format("%sconnector_updated_at%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getConnectorUpdatedAt()), "UTF-8").replaceAll("\\+", "%20")));
+                            } catch (UnsupportedEncodingException e) {
+                            // Should never happen, UTF-8 is always supported
+                            throw new RuntimeException(e);
+                            }
+                            }
+
+            // add `created_at` to the URL query string
+                            if (getCreatedAt() != null) {
+                            try {
+                            joiner.add(String.format("%screated_at%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCreatedAt()), "UTF-8").replaceAll("\\+", "%20")));
+                            } catch (UnsupportedEncodingException e) {
+                            // Should never happen, UTF-8 is always supported
+                            throw new RuntimeException(e);
+                            }
+                            }
+
+            // add `profile_id` to the URL query string
+                        if (getProfileId() != null) {
+                        try {
+                        joiner.add(String.format("%sprofile_id%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getProfileId()), "UTF-8").replaceAll("\\+", "%20")));
+                        } catch (UnsupportedEncodingException e) {
+                        // Should never happen, UTF-8 is always supported
+                        throw new RuntimeException(e);
+                        }
+                        }
+
+            // add `merchant_connector_id` to the URL query string
+                        if (getMerchantConnectorId() != null) {
+                        try {
+                        joiner.add(String.format("%smerchant_connector_id%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getMerchantConnectorId()), "UTF-8").replaceAll("\\+", "%20")));
+                        } catch (UnsupportedEncodingException e) {
+                        // Should never happen, UTF-8 is always supported
+                        throw new RuntimeException(e);
+                        }
+                        }
+
+        return joiner.toString();
+        }
+
     }
-
-    // add `payment_id` to the URL query string
-    if (getPaymentId() != null) {
-      try {
-        joiner.add(String.format("%spayment_id%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getPaymentId()), "UTF-8").replaceAll("\\+", "%20")));
-      } catch (UnsupportedEncodingException e) {
-        // Should never happen, UTF-8 is always supported
-        throw new RuntimeException(e);
-      }
-    }
-
-    // add `attempt_id` to the URL query string
-    if (getAttemptId() != null) {
-      try {
-        joiner.add(String.format("%sattempt_id%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getAttemptId()), "UTF-8").replaceAll("\\+", "%20")));
-      } catch (UnsupportedEncodingException e) {
-        // Should never happen, UTF-8 is always supported
-        throw new RuntimeException(e);
-      }
-    }
-
-    // add `amount` to the URL query string
-    if (getAmount() != null) {
-      try {
-        joiner.add(String.format("%samount%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getAmount()), "UTF-8").replaceAll("\\+", "%20")));
-      } catch (UnsupportedEncodingException e) {
-        // Should never happen, UTF-8 is always supported
-        throw new RuntimeException(e);
-      }
-    }
-
-    // add `currency` to the URL query string
-    if (getCurrency() != null) {
-      try {
-        joiner.add(String.format("%scurrency%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCurrency()), "UTF-8").replaceAll("\\+", "%20")));
-      } catch (UnsupportedEncodingException e) {
-        // Should never happen, UTF-8 is always supported
-        throw new RuntimeException(e);
-      }
-    }
-
-    // add `dispute_stage` to the URL query string
-    if (getDisputeStage() != null) {
-      try {
-        joiner.add(String.format("%sdispute_stage%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getDisputeStage()), "UTF-8").replaceAll("\\+", "%20")));
-      } catch (UnsupportedEncodingException e) {
-        // Should never happen, UTF-8 is always supported
-        throw new RuntimeException(e);
-      }
-    }
-
-    // add `dispute_status` to the URL query string
-    if (getDisputeStatus() != null) {
-      try {
-        joiner.add(String.format("%sdispute_status%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getDisputeStatus()), "UTF-8").replaceAll("\\+", "%20")));
-      } catch (UnsupportedEncodingException e) {
-        // Should never happen, UTF-8 is always supported
-        throw new RuntimeException(e);
-      }
-    }
-
-    // add `connector` to the URL query string
-    if (getConnector() != null) {
-      try {
-        joiner.add(String.format("%sconnector%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getConnector()), "UTF-8").replaceAll("\\+", "%20")));
-      } catch (UnsupportedEncodingException e) {
-        // Should never happen, UTF-8 is always supported
-        throw new RuntimeException(e);
-      }
-    }
-
-    // add `connector_status` to the URL query string
-    if (getConnectorStatus() != null) {
-      try {
-        joiner.add(String.format("%sconnector_status%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getConnectorStatus()), "UTF-8").replaceAll("\\+", "%20")));
-      } catch (UnsupportedEncodingException e) {
-        // Should never happen, UTF-8 is always supported
-        throw new RuntimeException(e);
-      }
-    }
-
-    // add `connector_dispute_id` to the URL query string
-    if (getConnectorDisputeId() != null) {
-      try {
-        joiner.add(String.format("%sconnector_dispute_id%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getConnectorDisputeId()), "UTF-8").replaceAll("\\+", "%20")));
-      } catch (UnsupportedEncodingException e) {
-        // Should never happen, UTF-8 is always supported
-        throw new RuntimeException(e);
-      }
-    }
-
-    // add `connector_reason` to the URL query string
-    if (getConnectorReason() != null) {
-      try {
-        joiner.add(String.format("%sconnector_reason%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getConnectorReason()), "UTF-8").replaceAll("\\+", "%20")));
-      } catch (UnsupportedEncodingException e) {
-        // Should never happen, UTF-8 is always supported
-        throw new RuntimeException(e);
-      }
-    }
-
-    // add `connector_reason_code` to the URL query string
-    if (getConnectorReasonCode() != null) {
-      try {
-        joiner.add(String.format("%sconnector_reason_code%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getConnectorReasonCode()), "UTF-8").replaceAll("\\+", "%20")));
-      } catch (UnsupportedEncodingException e) {
-        // Should never happen, UTF-8 is always supported
-        throw new RuntimeException(e);
-      }
-    }
-
-    // add `challenge_required_by` to the URL query string
-    if (getChallengeRequiredBy() != null) {
-      try {
-        joiner.add(String.format("%schallenge_required_by%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getChallengeRequiredBy()), "UTF-8").replaceAll("\\+", "%20")));
-      } catch (UnsupportedEncodingException e) {
-        // Should never happen, UTF-8 is always supported
-        throw new RuntimeException(e);
-      }
-    }
-
-    // add `connector_created_at` to the URL query string
-    if (getConnectorCreatedAt() != null) {
-      try {
-        joiner.add(String.format("%sconnector_created_at%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getConnectorCreatedAt()), "UTF-8").replaceAll("\\+", "%20")));
-      } catch (UnsupportedEncodingException e) {
-        // Should never happen, UTF-8 is always supported
-        throw new RuntimeException(e);
-      }
-    }
-
-    // add `connector_updated_at` to the URL query string
-    if (getConnectorUpdatedAt() != null) {
-      try {
-        joiner.add(String.format("%sconnector_updated_at%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getConnectorUpdatedAt()), "UTF-8").replaceAll("\\+", "%20")));
-      } catch (UnsupportedEncodingException e) {
-        // Should never happen, UTF-8 is always supported
-        throw new RuntimeException(e);
-      }
-    }
-
-    // add `created_at` to the URL query string
-    if (getCreatedAt() != null) {
-      try {
-        joiner.add(String.format("%screated_at%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCreatedAt()), "UTF-8").replaceAll("\\+", "%20")));
-      } catch (UnsupportedEncodingException e) {
-        // Should never happen, UTF-8 is always supported
-        throw new RuntimeException(e);
-      }
-    }
-
-    // add `profile_id` to the URL query string
-    if (getProfileId() != null) {
-      try {
-        joiner.add(String.format("%sprofile_id%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getProfileId()), "UTF-8").replaceAll("\\+", "%20")));
-      } catch (UnsupportedEncodingException e) {
-        // Should never happen, UTF-8 is always supported
-        throw new RuntimeException(e);
-      }
-    }
-
-    // add `merchant_connector_id` to the URL query string
-    if (getMerchantConnectorId() != null) {
-      try {
-        joiner.add(String.format("%smerchant_connector_id%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getMerchantConnectorId()), "UTF-8").replaceAll("\\+", "%20")));
-      } catch (UnsupportedEncodingException e) {
-        // Should never happen, UTF-8 is always supported
-        throw new RuntimeException(e);
-      }
-    }
-
-    return joiner.toString();
-  }
-
-}
 

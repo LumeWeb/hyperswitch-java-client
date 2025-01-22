@@ -22,22 +22,21 @@ import com.hyperswitch.client.model.CardNetwork;
 import com.hyperswitch.client.model.FrmAction;
 import com.hyperswitch.client.model.FrmPreferredFlowTypes;
 import com.hyperswitch.client.model.PaymentMethodType;
-import org.junit.Assert;
-import org.junit.Ignore;
-import org.junit.Test;
-
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Test;
 
 /**
  * Model tests for FrmPaymentMethodType
  */
-public class FrmPaymentMethodTypeTest {
+class FrmPaymentMethodTypeTest {
     private final FrmPaymentMethodType model = new FrmPaymentMethodType();
 
     /**
      * Model tests for FrmPaymentMethodType
      */
     @Test
-    public void testFrmPaymentMethodType() {
+    void testFrmPaymentMethodType() {
         // TODO: test FrmPaymentMethodType
     }
 
@@ -45,7 +44,7 @@ public class FrmPaymentMethodTypeTest {
      * Test the property 'paymentMethodType'
      */
     @Test
-    public void paymentMethodTypeTest() {
+    void paymentMethodTypeTest() {
         // TODO: test paymentMethodType
     }
 
@@ -53,7 +52,7 @@ public class FrmPaymentMethodTypeTest {
      * Test the property 'cardNetworks'
      */
     @Test
-    public void cardNetworksTest() {
+    void cardNetworksTest() {
         // TODO: test cardNetworks
     }
 
@@ -61,7 +60,7 @@ public class FrmPaymentMethodTypeTest {
      * Test the property 'flow'
      */
     @Test
-    public void flowTest() {
+    void flowTest() {
         // TODO: test flow
     }
 
@@ -69,7 +68,7 @@ public class FrmPaymentMethodTypeTest {
      * Test the property 'action'
      */
     @Test
-    public void actionTest() {
+    void actionTest() {
         // TODO: test action
     }
 

@@ -27,126 +27,127 @@ import java.net.URLEncoder;
 import java.util.StringJoiner;
 
 /**
- * CardRedirectDataOneOf2
- */
-@JsonPropertyOrder({
-  CardRedirectDataOneOf2.JSON_PROPERTY_MOMO_ATM
-})
-@JsonTypeName("CardRedirectData_oneOf_2")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+* CardRedirectDataOneOf2
+*/
+    @JsonPropertyOrder({
+        CardRedirectDataOneOf2.JSON_PROPERTY_MOMO_ATM
+    })
+            @JsonTypeName("CardRedirectData_oneOf_2")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class CardRedirectDataOneOf2 {
-  public static final String JSON_PROPERTY_MOMO_ATM = "momo_atm";
-  private Object momoAtm;
+        public static final String JSON_PROPERTY_MOMO_ATM = "momo_atm";
+    @javax.annotation.Nonnull
+            private Object momoAtm;
 
-  public CardRedirectDataOneOf2() {
-  }
+public CardRedirectDataOneOf2() {
+}
 
-  public CardRedirectDataOneOf2 momoAtm(Object momoAtm) {
-    
-    this.momoAtm = momoAtm;
-    return this;
-  }
+        public CardRedirectDataOneOf2 momoAtm(@javax.annotation.Nonnull Object momoAtm) {
+        
+        this.momoAtm = momoAtm;
+        return this;
+        }
 
-   /**
-   * Get momoAtm
-   * @return momoAtm
-  **/
-  @javax.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_MOMO_ATM)
+    /**
+        * Get momoAtm
+    * @return momoAtm
+    */
+    @javax.annotation.Nonnull
+      @JsonProperty(JSON_PROPERTY_MOMO_ATM)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-  public Object getMomoAtm() {
-    return momoAtm;
-  }
+    public Object getMomoAtm() {
+        return momoAtm;
+    }
 
 
-  @JsonProperty(JSON_PROPERTY_MOMO_ATM)
+          @JsonProperty(JSON_PROPERTY_MOMO_ATM)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setMomoAtm(Object momoAtm) {
-    this.momoAtm = momoAtm;
-  }
+  public void setMomoAtm(@javax.annotation.Nonnull Object momoAtm) {
+            this.momoAtm = momoAtm;
+        }
 
-  @Override
-  public boolean equals(Object o) {
+@Override
+public boolean equals(Object o) {
     if (this == o) {
-      return true;
+    return true;
     }
     if (o == null || getClass() != o.getClass()) {
-      return false;
+    return false;
     }
-    CardRedirectDataOneOf2 cardRedirectDataOneOf2 = (CardRedirectDataOneOf2) o;
-    return Objects.equals(this.momoAtm, cardRedirectDataOneOf2.momoAtm);
-  }
+        CardRedirectDataOneOf2 cardRedirectDataOneOf2 = (CardRedirectDataOneOf2) o;
+        return Objects.equals(this.momoAtm, cardRedirectDataOneOf2.momoAtm);
+}
 
-  @Override
-  public int hashCode() {
-    return Objects.hash(momoAtm);
-  }
+    @Override
+    public int hashCode() {
+        return Objects.hash(momoAtm);
+    }
 
-  @Override
-  public String toString() {
+    @Override
+    public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class CardRedirectDataOneOf2 {\n");
-    sb.append("    momoAtm: ").append(toIndentedString(momoAtm)).append("\n");
+        sb.append("    momoAtm: ").append(toIndentedString(momoAtm)).append("\n");
     sb.append("}");
     return sb.toString();
-  }
+    }
 
-  /**
-   * Convert the given object to string with each line indented by 4 spaces
-   * (except the first line).
-   */
-  private String toIndentedString(Object o) {
+    /**
+    * Convert the given object to string with each line indented by 4 spaces
+    * (except the first line).
+    */
+    private String toIndentedString(Object o) {
     if (o == null) {
-      return "null";
+    return "null";
     }
     return o.toString().replace("\n", "\n    ");
-  }
-
-  /**
-   * Convert the instance into URL query string.
-   *
-   * @return URL query string
-   */
-  public String toUrlQueryString() {
-    return toUrlQueryString(null);
-  }
-
-  /**
-   * Convert the instance into URL query string.
-   *
-   * @param prefix prefix of the query string
-   * @return URL query string
-   */
-  public String toUrlQueryString(String prefix) {
-    String suffix = "";
-    String containerSuffix = "";
-    String containerPrefix = "";
-    if (prefix == null) {
-      // style=form, explode=true, e.g. /pet?name=cat&type=manx
-      prefix = "";
-    } else {
-      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
-      prefix = prefix + "[";
-      suffix = "]";
-      containerSuffix = "]";
-      containerPrefix = "[";
     }
 
-    StringJoiner joiner = new StringJoiner("&");
+        /**
+        * Convert the instance into URL query string.
+        *
+        * @return URL query string
+        */
+        public String toUrlQueryString() {
+        return toUrlQueryString(null);
+        }
 
-    // add `momo_atm` to the URL query string
-    if (getMomoAtm() != null) {
-      try {
-        joiner.add(String.format("%smomo_atm%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getMomoAtm()), "UTF-8").replaceAll("\\+", "%20")));
-      } catch (UnsupportedEncodingException e) {
-        // Should never happen, UTF-8 is always supported
-        throw new RuntimeException(e);
-      }
+        /**
+        * Convert the instance into URL query string.
+        *
+        * @param prefix prefix of the query string
+        * @return URL query string
+        */
+        public String toUrlQueryString(String prefix) {
+        String suffix = "";
+        String containerSuffix = "";
+        String containerPrefix = "";
+        if (prefix == null) {
+        // style=form, explode=true, e.g. /pet?name=cat&type=manx
+        prefix = "";
+        } else {
+        // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+        prefix = prefix + "[";
+        suffix = "]";
+        containerSuffix = "]";
+        containerPrefix = "[";
+        }
+
+        StringJoiner joiner = new StringJoiner("&");
+
+            // add `momo_atm` to the URL query string
+                        if (getMomoAtm() != null) {
+                        try {
+                        joiner.add(String.format("%smomo_atm%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getMomoAtm()), "UTF-8").replaceAll("\\+", "%20")));
+                        } catch (UnsupportedEncodingException e) {
+                        // Should never happen, UTF-8 is always supported
+                        throw new RuntimeException(e);
+                        }
+                        }
+
+        return joiner.toString();
+        }
+
     }
-
-    return joiner.toString();
-  }
-
-}
 

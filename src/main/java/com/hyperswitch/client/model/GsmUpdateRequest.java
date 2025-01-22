@@ -32,402 +32,403 @@ import java.net.URLEncoder;
 import java.util.StringJoiner;
 
 /**
- * GsmUpdateRequest
- */
-@JsonPropertyOrder({
-  GsmUpdateRequest.JSON_PROPERTY_CONNECTOR,
-  GsmUpdateRequest.JSON_PROPERTY_FLOW,
-  GsmUpdateRequest.JSON_PROPERTY_SUB_FLOW,
-  GsmUpdateRequest.JSON_PROPERTY_CODE,
-  GsmUpdateRequest.JSON_PROPERTY_MESSAGE,
-  GsmUpdateRequest.JSON_PROPERTY_STATUS,
-  GsmUpdateRequest.JSON_PROPERTY_ROUTER_ERROR,
-  GsmUpdateRequest.JSON_PROPERTY_DECISION,
-  GsmUpdateRequest.JSON_PROPERTY_STEP_UP_POSSIBLE,
-  GsmUpdateRequest.JSON_PROPERTY_UNIFIED_CODE,
-  GsmUpdateRequest.JSON_PROPERTY_UNIFIED_MESSAGE
-})
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+* GsmUpdateRequest
+*/
+    @JsonPropertyOrder({
+        GsmUpdateRequest.JSON_PROPERTY_CONNECTOR,
+        GsmUpdateRequest.JSON_PROPERTY_FLOW,
+        GsmUpdateRequest.JSON_PROPERTY_SUB_FLOW,
+        GsmUpdateRequest.JSON_PROPERTY_CODE,
+        GsmUpdateRequest.JSON_PROPERTY_MESSAGE,
+        GsmUpdateRequest.JSON_PROPERTY_STATUS,
+        GsmUpdateRequest.JSON_PROPERTY_ROUTER_ERROR,
+        GsmUpdateRequest.JSON_PROPERTY_DECISION,
+        GsmUpdateRequest.JSON_PROPERTY_STEP_UP_POSSIBLE,
+        GsmUpdateRequest.JSON_PROPERTY_UNIFIED_CODE,
+        GsmUpdateRequest.JSON_PROPERTY_UNIFIED_MESSAGE
+    })
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class GsmUpdateRequest {
-  public static final String JSON_PROPERTY_CONNECTOR = "connector";
-  private String connector;
+        public static final String JSON_PROPERTY_CONNECTOR = "connector";
+    @javax.annotation.Nonnull
+            private String connector;
 
-  public static final String JSON_PROPERTY_FLOW = "flow";
-  private String flow;
+        public static final String JSON_PROPERTY_FLOW = "flow";
+    @javax.annotation.Nonnull
+            private String flow;
 
-  public static final String JSON_PROPERTY_SUB_FLOW = "sub_flow";
-  private String subFlow;
+        public static final String JSON_PROPERTY_SUB_FLOW = "sub_flow";
+    @javax.annotation.Nonnull
+            private String subFlow;
 
-  public static final String JSON_PROPERTY_CODE = "code";
-  private String code;
+        public static final String JSON_PROPERTY_CODE = "code";
+    @javax.annotation.Nonnull
+            private String code;
 
-  public static final String JSON_PROPERTY_MESSAGE = "message";
-  private String message;
+        public static final String JSON_PROPERTY_MESSAGE = "message";
+    @javax.annotation.Nonnull
+            private String message;
 
-  public static final String JSON_PROPERTY_STATUS = "status";
-  private JsonNullable<String> status = JsonNullable.<String>undefined();
+        public static final String JSON_PROPERTY_STATUS = "status";
+    @javax.annotation.Nullable
+            private JsonNullable<String> status = JsonNullable.<String>undefined();
 
-  public static final String JSON_PROPERTY_ROUTER_ERROR = "router_error";
-  private JsonNullable<String> routerError = JsonNullable.<String>undefined();
+        public static final String JSON_PROPERTY_ROUTER_ERROR = "router_error";
+    @javax.annotation.Nullable
+            private JsonNullable<String> routerError = JsonNullable.<String>undefined();
 
-  public static final String JSON_PROPERTY_DECISION = "decision";
-  private JsonNullable<GsmDecision> decision = JsonNullable.<GsmDecision>undefined();
+        public static final String JSON_PROPERTY_DECISION = "decision";
+    @javax.annotation.Nullable
+            private JsonNullable<GsmDecision> decision = JsonNullable.<GsmDecision>undefined();
 
-  public static final String JSON_PROPERTY_STEP_UP_POSSIBLE = "step_up_possible";
-  private JsonNullable<Boolean> stepUpPossible = JsonNullable.<Boolean>undefined();
+        public static final String JSON_PROPERTY_STEP_UP_POSSIBLE = "step_up_possible";
+    @javax.annotation.Nullable
+            private JsonNullable<Boolean> stepUpPossible = JsonNullable.<Boolean>undefined();
 
-  public static final String JSON_PROPERTY_UNIFIED_CODE = "unified_code";
-  private JsonNullable<String> unifiedCode = JsonNullable.<String>undefined();
+        public static final String JSON_PROPERTY_UNIFIED_CODE = "unified_code";
+    @javax.annotation.Nullable
+            private JsonNullable<String> unifiedCode = JsonNullable.<String>undefined();
 
-  public static final String JSON_PROPERTY_UNIFIED_MESSAGE = "unified_message";
-  private JsonNullable<String> unifiedMessage = JsonNullable.<String>undefined();
+        public static final String JSON_PROPERTY_UNIFIED_MESSAGE = "unified_message";
+    @javax.annotation.Nullable
+            private JsonNullable<String> unifiedMessage = JsonNullable.<String>undefined();
 
-  public GsmUpdateRequest() {
-  }
+public GsmUpdateRequest() {
+}
 
-  public GsmUpdateRequest connector(String connector) {
+        public GsmUpdateRequest connector(@javax.annotation.Nonnull String connector) {
+        
+        this.connector = connector;
+        return this;
+        }
+
+    /**
+        * The connector through which payment has gone through
+    * @return connector
+    */
+    @javax.annotation.Nonnull
+      @JsonProperty(JSON_PROPERTY_CONNECTOR)
+  @JsonInclude(value = JsonInclude.Include.ALWAYS)
+
+    public String getConnector() {
+        return connector;
+    }
+
+
+          @JsonProperty(JSON_PROPERTY_CONNECTOR)
+  @JsonInclude(value = JsonInclude.Include.ALWAYS)
+  public void setConnector(@javax.annotation.Nonnull String connector) {
+            this.connector = connector;
+        }
+
+        public GsmUpdateRequest flow(@javax.annotation.Nonnull String flow) {
+        
+        this.flow = flow;
+        return this;
+        }
+
+    /**
+        * The flow in which the code and message occurred for a connector
+    * @return flow
+    */
+    @javax.annotation.Nonnull
+      @JsonProperty(JSON_PROPERTY_FLOW)
+  @JsonInclude(value = JsonInclude.Include.ALWAYS)
+
+    public String getFlow() {
+        return flow;
+    }
+
+
+          @JsonProperty(JSON_PROPERTY_FLOW)
+  @JsonInclude(value = JsonInclude.Include.ALWAYS)
+  public void setFlow(@javax.annotation.Nonnull String flow) {
+            this.flow = flow;
+        }
+
+        public GsmUpdateRequest subFlow(@javax.annotation.Nonnull String subFlow) {
+        
+        this.subFlow = subFlow;
+        return this;
+        }
+
+    /**
+        * The sub_flow in which the code and message occurred  for a connector
+    * @return subFlow
+    */
+    @javax.annotation.Nonnull
+      @JsonProperty(JSON_PROPERTY_SUB_FLOW)
+  @JsonInclude(value = JsonInclude.Include.ALWAYS)
+
+    public String getSubFlow() {
+        return subFlow;
+    }
+
+
+          @JsonProperty(JSON_PROPERTY_SUB_FLOW)
+  @JsonInclude(value = JsonInclude.Include.ALWAYS)
+  public void setSubFlow(@javax.annotation.Nonnull String subFlow) {
+            this.subFlow = subFlow;
+        }
+
+        public GsmUpdateRequest code(@javax.annotation.Nonnull String code) {
+        
+        this.code = code;
+        return this;
+        }
+
+    /**
+        * code received from the connector
+    * @return code
+    */
+    @javax.annotation.Nonnull
+      @JsonProperty(JSON_PROPERTY_CODE)
+  @JsonInclude(value = JsonInclude.Include.ALWAYS)
+
+    public String getCode() {
+        return code;
+    }
+
+
+          @JsonProperty(JSON_PROPERTY_CODE)
+  @JsonInclude(value = JsonInclude.Include.ALWAYS)
+  public void setCode(@javax.annotation.Nonnull String code) {
+            this.code = code;
+        }
+
+        public GsmUpdateRequest message(@javax.annotation.Nonnull String message) {
+        
+        this.message = message;
+        return this;
+        }
+
+    /**
+        * message received from the connector
+    * @return message
+    */
+    @javax.annotation.Nonnull
+      @JsonProperty(JSON_PROPERTY_MESSAGE)
+  @JsonInclude(value = JsonInclude.Include.ALWAYS)
+
+    public String getMessage() {
+        return message;
+    }
+
+
+          @JsonProperty(JSON_PROPERTY_MESSAGE)
+  @JsonInclude(value = JsonInclude.Include.ALWAYS)
+  public void setMessage(@javax.annotation.Nonnull String message) {
+            this.message = message;
+        }
+
+        public GsmUpdateRequest status(@javax.annotation.Nullable String status) {
+        this.status = JsonNullable.<String>of(status);
+        
+        return this;
+        }
+
+    /**
+        * status provided by the router
+    * @return status
+    */
+    @javax.annotation.Nullable
+        @JsonIgnore
     
-    this.connector = connector;
-    return this;
-  }
+    public String getStatus() {
+                return status.orElse(null);
+    }
 
-   /**
-   * The connector through which payment has gone through
-   * @return connector
-  **/
-  @javax.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_CONNECTOR)
-  @JsonInclude(value = JsonInclude.Include.ALWAYS)
-
-  public String getConnector() {
-    return connector;
-  }
-
-
-  @JsonProperty(JSON_PROPERTY_CONNECTOR)
-  @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setConnector(String connector) {
-    this.connector = connector;
-  }
-
-
-  public GsmUpdateRequest flow(String flow) {
-    
-    this.flow = flow;
-    return this;
-  }
-
-   /**
-   * The flow in which the code and message occurred for a connector
-   * @return flow
-  **/
-  @javax.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_FLOW)
-  @JsonInclude(value = JsonInclude.Include.ALWAYS)
-
-  public String getFlow() {
-    return flow;
-  }
-
-
-  @JsonProperty(JSON_PROPERTY_FLOW)
-  @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setFlow(String flow) {
-    this.flow = flow;
-  }
-
-
-  public GsmUpdateRequest subFlow(String subFlow) {
-    
-    this.subFlow = subFlow;
-    return this;
-  }
-
-   /**
-   * The sub_flow in which the code and message occurred  for a connector
-   * @return subFlow
-  **/
-  @javax.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_SUB_FLOW)
-  @JsonInclude(value = JsonInclude.Include.ALWAYS)
-
-  public String getSubFlow() {
-    return subFlow;
-  }
-
-
-  @JsonProperty(JSON_PROPERTY_SUB_FLOW)
-  @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setSubFlow(String subFlow) {
-    this.subFlow = subFlow;
-  }
-
-
-  public GsmUpdateRequest code(String code) {
-    
-    this.code = code;
-    return this;
-  }
-
-   /**
-   * code received from the connector
-   * @return code
-  **/
-  @javax.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_CODE)
-  @JsonInclude(value = JsonInclude.Include.ALWAYS)
-
-  public String getCode() {
-    return code;
-  }
-
-
-  @JsonProperty(JSON_PROPERTY_CODE)
-  @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setCode(String code) {
-    this.code = code;
-  }
-
-
-  public GsmUpdateRequest message(String message) {
-    
-    this.message = message;
-    return this;
-  }
-
-   /**
-   * message received from the connector
-   * @return message
-  **/
-  @javax.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_MESSAGE)
-  @JsonInclude(value = JsonInclude.Include.ALWAYS)
-
-  public String getMessage() {
-    return message;
-  }
-
-
-  @JsonProperty(JSON_PROPERTY_MESSAGE)
-  @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setMessage(String message) {
-    this.message = message;
-  }
-
-
-  public GsmUpdateRequest status(String status) {
-    this.status = JsonNullable.<String>of(status);
-    
-    return this;
-  }
-
-   /**
-   * status provided by the router
-   * @return status
-  **/
-  @javax.annotation.Nullable
-  @JsonIgnore
-
-  public String getStatus() {
-        return status.orElse(null);
-  }
-
-  @JsonProperty(JSON_PROPERTY_STATUS)
+          @JsonProperty(JSON_PROPERTY_STATUS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-  public JsonNullable<String> getStatus_JsonNullable() {
-    return status;
-  }
-  
-  @JsonProperty(JSON_PROPERTY_STATUS)
-  public void setStatus_JsonNullable(JsonNullable<String> status) {
-    this.status = status;
-  }
-
-  public void setStatus(String status) {
-    this.status = JsonNullable.<String>of(status);
-  }
-
-
-  public GsmUpdateRequest routerError(String routerError) {
-    this.routerError = JsonNullable.<String>of(routerError);
+        public JsonNullable<String> getStatus_JsonNullable() {
+        return status;
+        }
     
-    return this;
-  }
+        @JsonProperty(JSON_PROPERTY_STATUS)
+        public void setStatus_JsonNullable(JsonNullable<String> status) {
+        this.status = status;
+        }
 
-   /**
-   * optional error provided by the router
-   * @return routerError
-  **/
-  @javax.annotation.Nullable
-  @JsonIgnore
+          public void setStatus(@javax.annotation.Nullable String status) {
+            this.status = JsonNullable.<String>of(status);
+        }
 
-  public String getRouterError() {
-        return routerError.orElse(null);
-  }
+        public GsmUpdateRequest routerError(@javax.annotation.Nullable String routerError) {
+        this.routerError = JsonNullable.<String>of(routerError);
+        
+        return this;
+        }
 
-  @JsonProperty(JSON_PROPERTY_ROUTER_ERROR)
+    /**
+        * optional error provided by the router
+    * @return routerError
+    */
+    @javax.annotation.Nullable
+        @JsonIgnore
+    
+    public String getRouterError() {
+                return routerError.orElse(null);
+    }
+
+          @JsonProperty(JSON_PROPERTY_ROUTER_ERROR)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-  public JsonNullable<String> getRouterError_JsonNullable() {
-    return routerError;
-  }
-  
-  @JsonProperty(JSON_PROPERTY_ROUTER_ERROR)
-  public void setRouterError_JsonNullable(JsonNullable<String> routerError) {
-    this.routerError = routerError;
-  }
-
-  public void setRouterError(String routerError) {
-    this.routerError = JsonNullable.<String>of(routerError);
-  }
-
-
-  public GsmUpdateRequest decision(GsmDecision decision) {
-    this.decision = JsonNullable.<GsmDecision>of(decision);
+        public JsonNullable<String> getRouterError_JsonNullable() {
+        return routerError;
+        }
     
-    return this;
-  }
+        @JsonProperty(JSON_PROPERTY_ROUTER_ERROR)
+        public void setRouterError_JsonNullable(JsonNullable<String> routerError) {
+        this.routerError = routerError;
+        }
 
-   /**
-   * Get decision
-   * @return decision
-  **/
-  @javax.annotation.Nullable
-  @JsonIgnore
+          public void setRouterError(@javax.annotation.Nullable String routerError) {
+            this.routerError = JsonNullable.<String>of(routerError);
+        }
 
-  public GsmDecision getDecision() {
-        return decision.orElse(null);
-  }
+        public GsmUpdateRequest decision(@javax.annotation.Nullable GsmDecision decision) {
+        this.decision = JsonNullable.<GsmDecision>of(decision);
+        
+        return this;
+        }
 
-  @JsonProperty(JSON_PROPERTY_DECISION)
+    /**
+        * Get decision
+    * @return decision
+    */
+    @javax.annotation.Nullable
+        @JsonIgnore
+    
+    public GsmDecision getDecision() {
+                return decision.orElse(null);
+    }
+
+          @JsonProperty(JSON_PROPERTY_DECISION)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-  public JsonNullable<GsmDecision> getDecision_JsonNullable() {
-    return decision;
-  }
-  
-  @JsonProperty(JSON_PROPERTY_DECISION)
-  public void setDecision_JsonNullable(JsonNullable<GsmDecision> decision) {
-    this.decision = decision;
-  }
-
-  public void setDecision(GsmDecision decision) {
-    this.decision = JsonNullable.<GsmDecision>of(decision);
-  }
-
-
-  public GsmUpdateRequest stepUpPossible(Boolean stepUpPossible) {
-    this.stepUpPossible = JsonNullable.<Boolean>of(stepUpPossible);
+        public JsonNullable<GsmDecision> getDecision_JsonNullable() {
+        return decision;
+        }
     
-    return this;
-  }
+        @JsonProperty(JSON_PROPERTY_DECISION)
+        public void setDecision_JsonNullable(JsonNullable<GsmDecision> decision) {
+        this.decision = decision;
+        }
 
-   /**
-   * indicates if step_up retry is possible
-   * @return stepUpPossible
-  **/
-  @javax.annotation.Nullable
-  @JsonIgnore
+          public void setDecision(@javax.annotation.Nullable GsmDecision decision) {
+            this.decision = JsonNullable.<GsmDecision>of(decision);
+        }
 
-  public Boolean getStepUpPossible() {
-        return stepUpPossible.orElse(null);
-  }
+        public GsmUpdateRequest stepUpPossible(@javax.annotation.Nullable Boolean stepUpPossible) {
+        this.stepUpPossible = JsonNullable.<Boolean>of(stepUpPossible);
+        
+        return this;
+        }
 
-  @JsonProperty(JSON_PROPERTY_STEP_UP_POSSIBLE)
+    /**
+        * indicates if step_up retry is possible
+    * @return stepUpPossible
+    */
+    @javax.annotation.Nullable
+        @JsonIgnore
+    
+    public Boolean getStepUpPossible() {
+                return stepUpPossible.orElse(null);
+    }
+
+          @JsonProperty(JSON_PROPERTY_STEP_UP_POSSIBLE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-  public JsonNullable<Boolean> getStepUpPossible_JsonNullable() {
-    return stepUpPossible;
-  }
-  
-  @JsonProperty(JSON_PROPERTY_STEP_UP_POSSIBLE)
-  public void setStepUpPossible_JsonNullable(JsonNullable<Boolean> stepUpPossible) {
-    this.stepUpPossible = stepUpPossible;
-  }
-
-  public void setStepUpPossible(Boolean stepUpPossible) {
-    this.stepUpPossible = JsonNullable.<Boolean>of(stepUpPossible);
-  }
-
-
-  public GsmUpdateRequest unifiedCode(String unifiedCode) {
-    this.unifiedCode = JsonNullable.<String>of(unifiedCode);
+        public JsonNullable<Boolean> getStepUpPossible_JsonNullable() {
+        return stepUpPossible;
+        }
     
-    return this;
-  }
+        @JsonProperty(JSON_PROPERTY_STEP_UP_POSSIBLE)
+        public void setStepUpPossible_JsonNullable(JsonNullable<Boolean> stepUpPossible) {
+        this.stepUpPossible = stepUpPossible;
+        }
 
-   /**
-   * error code unified across the connectors
-   * @return unifiedCode
-  **/
-  @javax.annotation.Nullable
-  @JsonIgnore
+          public void setStepUpPossible(@javax.annotation.Nullable Boolean stepUpPossible) {
+            this.stepUpPossible = JsonNullable.<Boolean>of(stepUpPossible);
+        }
 
-  public String getUnifiedCode() {
-        return unifiedCode.orElse(null);
-  }
+        public GsmUpdateRequest unifiedCode(@javax.annotation.Nullable String unifiedCode) {
+        this.unifiedCode = JsonNullable.<String>of(unifiedCode);
+        
+        return this;
+        }
 
-  @JsonProperty(JSON_PROPERTY_UNIFIED_CODE)
+    /**
+        * error code unified across the connectors
+    * @return unifiedCode
+    */
+    @javax.annotation.Nullable
+        @JsonIgnore
+    
+    public String getUnifiedCode() {
+                return unifiedCode.orElse(null);
+    }
+
+          @JsonProperty(JSON_PROPERTY_UNIFIED_CODE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-  public JsonNullable<String> getUnifiedCode_JsonNullable() {
-    return unifiedCode;
-  }
-  
-  @JsonProperty(JSON_PROPERTY_UNIFIED_CODE)
-  public void setUnifiedCode_JsonNullable(JsonNullable<String> unifiedCode) {
-    this.unifiedCode = unifiedCode;
-  }
-
-  public void setUnifiedCode(String unifiedCode) {
-    this.unifiedCode = JsonNullable.<String>of(unifiedCode);
-  }
-
-
-  public GsmUpdateRequest unifiedMessage(String unifiedMessage) {
-    this.unifiedMessage = JsonNullable.<String>of(unifiedMessage);
+        public JsonNullable<String> getUnifiedCode_JsonNullable() {
+        return unifiedCode;
+        }
     
-    return this;
-  }
+        @JsonProperty(JSON_PROPERTY_UNIFIED_CODE)
+        public void setUnifiedCode_JsonNullable(JsonNullable<String> unifiedCode) {
+        this.unifiedCode = unifiedCode;
+        }
 
-   /**
-   * error message unified across the connectors
-   * @return unifiedMessage
-  **/
-  @javax.annotation.Nullable
-  @JsonIgnore
+          public void setUnifiedCode(@javax.annotation.Nullable String unifiedCode) {
+            this.unifiedCode = JsonNullable.<String>of(unifiedCode);
+        }
 
-  public String getUnifiedMessage() {
-        return unifiedMessage.orElse(null);
-  }
+        public GsmUpdateRequest unifiedMessage(@javax.annotation.Nullable String unifiedMessage) {
+        this.unifiedMessage = JsonNullable.<String>of(unifiedMessage);
+        
+        return this;
+        }
 
-  @JsonProperty(JSON_PROPERTY_UNIFIED_MESSAGE)
+    /**
+        * error message unified across the connectors
+    * @return unifiedMessage
+    */
+    @javax.annotation.Nullable
+        @JsonIgnore
+    
+    public String getUnifiedMessage() {
+                return unifiedMessage.orElse(null);
+    }
+
+          @JsonProperty(JSON_PROPERTY_UNIFIED_MESSAGE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-  public JsonNullable<String> getUnifiedMessage_JsonNullable() {
-    return unifiedMessage;
-  }
-  
-  @JsonProperty(JSON_PROPERTY_UNIFIED_MESSAGE)
-  public void setUnifiedMessage_JsonNullable(JsonNullable<String> unifiedMessage) {
-    this.unifiedMessage = unifiedMessage;
-  }
+        public JsonNullable<String> getUnifiedMessage_JsonNullable() {
+        return unifiedMessage;
+        }
+    
+        @JsonProperty(JSON_PROPERTY_UNIFIED_MESSAGE)
+        public void setUnifiedMessage_JsonNullable(JsonNullable<String> unifiedMessage) {
+        this.unifiedMessage = unifiedMessage;
+        }
 
-  public void setUnifiedMessage(String unifiedMessage) {
-    this.unifiedMessage = JsonNullable.<String>of(unifiedMessage);
-  }
+          public void setUnifiedMessage(@javax.annotation.Nullable String unifiedMessage) {
+            this.unifiedMessage = JsonNullable.<String>of(unifiedMessage);
+        }
 
-  @Override
-  public boolean equals(Object o) {
+@Override
+public boolean equals(Object o) {
     if (this == o) {
-      return true;
+    return true;
     }
     if (o == null || getClass() != o.getClass()) {
-      return false;
+    return false;
     }
-    GsmUpdateRequest gsmUpdateRequest = (GsmUpdateRequest) o;
-    return Objects.equals(this.connector, gsmUpdateRequest.connector) &&
+        GsmUpdateRequest gsmUpdateRequest = (GsmUpdateRequest) o;
+        return Objects.equals(this.connector, gsmUpdateRequest.connector) &&
         Objects.equals(this.flow, gsmUpdateRequest.flow) &&
         Objects.equals(this.subFlow, gsmUpdateRequest.subFlow) &&
         Objects.equals(this.code, gsmUpdateRequest.code) &&
@@ -438,198 +439,198 @@ public class GsmUpdateRequest {
         equalsNullable(this.stepUpPossible, gsmUpdateRequest.stepUpPossible) &&
         equalsNullable(this.unifiedCode, gsmUpdateRequest.unifiedCode) &&
         equalsNullable(this.unifiedMessage, gsmUpdateRequest.unifiedMessage);
-  }
+}
 
-  private static <T> boolean equalsNullable(JsonNullable<T> a, JsonNullable<T> b) {
-    return a == b || (a != null && b != null && a.isPresent() && b.isPresent() && Objects.deepEquals(a.get(), b.get()));
-  }
+    private static <T> boolean equalsNullable(JsonNullable<T> a, JsonNullable<T> b) {
+        return a == b || (a != null && b != null && a.isPresent() && b.isPresent() && Objects.deepEquals(a.get(), b.get()));
+        }
 
-  @Override
-  public int hashCode() {
-    return Objects.hash(connector, flow, subFlow, code, message, hashCodeNullable(status), hashCodeNullable(routerError), hashCodeNullable(decision), hashCodeNullable(stepUpPossible), hashCodeNullable(unifiedCode), hashCodeNullable(unifiedMessage));
-  }
-
-  private static <T> int hashCodeNullable(JsonNullable<T> a) {
-    if (a == null) {
-      return 1;
+    @Override
+    public int hashCode() {
+        return Objects.hash(connector, flow, subFlow, code, message, hashCodeNullable(status), hashCodeNullable(routerError), hashCodeNullable(decision), hashCodeNullable(stepUpPossible), hashCodeNullable(unifiedCode), hashCodeNullable(unifiedMessage));
     }
-    return a.isPresent() ? Arrays.deepHashCode(new Object[]{a.get()}) : 31;
-  }
 
-  @Override
-  public String toString() {
+        private static <T> int hashCodeNullable(JsonNullable<T> a) {
+        if (a == null) {
+        return 1;
+        }
+        return a.isPresent() ? Arrays.deepHashCode(new Object[]{a.get()}) : 31;
+        }
+
+    @Override
+    public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class GsmUpdateRequest {\n");
-    sb.append("    connector: ").append(toIndentedString(connector)).append("\n");
-    sb.append("    flow: ").append(toIndentedString(flow)).append("\n");
-    sb.append("    subFlow: ").append(toIndentedString(subFlow)).append("\n");
-    sb.append("    code: ").append(toIndentedString(code)).append("\n");
-    sb.append("    message: ").append(toIndentedString(message)).append("\n");
-    sb.append("    status: ").append(toIndentedString(status)).append("\n");
-    sb.append("    routerError: ").append(toIndentedString(routerError)).append("\n");
-    sb.append("    decision: ").append(toIndentedString(decision)).append("\n");
-    sb.append("    stepUpPossible: ").append(toIndentedString(stepUpPossible)).append("\n");
-    sb.append("    unifiedCode: ").append(toIndentedString(unifiedCode)).append("\n");
-    sb.append("    unifiedMessage: ").append(toIndentedString(unifiedMessage)).append("\n");
+        sb.append("    connector: ").append(toIndentedString(connector)).append("\n");
+        sb.append("    flow: ").append(toIndentedString(flow)).append("\n");
+        sb.append("    subFlow: ").append(toIndentedString(subFlow)).append("\n");
+        sb.append("    code: ").append(toIndentedString(code)).append("\n");
+        sb.append("    message: ").append(toIndentedString(message)).append("\n");
+        sb.append("    status: ").append(toIndentedString(status)).append("\n");
+        sb.append("    routerError: ").append(toIndentedString(routerError)).append("\n");
+        sb.append("    decision: ").append(toIndentedString(decision)).append("\n");
+        sb.append("    stepUpPossible: ").append(toIndentedString(stepUpPossible)).append("\n");
+        sb.append("    unifiedCode: ").append(toIndentedString(unifiedCode)).append("\n");
+        sb.append("    unifiedMessage: ").append(toIndentedString(unifiedMessage)).append("\n");
     sb.append("}");
     return sb.toString();
-  }
+    }
 
-  /**
-   * Convert the given object to string with each line indented by 4 spaces
-   * (except the first line).
-   */
-  private String toIndentedString(Object o) {
+    /**
+    * Convert the given object to string with each line indented by 4 spaces
+    * (except the first line).
+    */
+    private String toIndentedString(Object o) {
     if (o == null) {
-      return "null";
+    return "null";
     }
     return o.toString().replace("\n", "\n    ");
-  }
-
-  /**
-   * Convert the instance into URL query string.
-   *
-   * @return URL query string
-   */
-  public String toUrlQueryString() {
-    return toUrlQueryString(null);
-  }
-
-  /**
-   * Convert the instance into URL query string.
-   *
-   * @param prefix prefix of the query string
-   * @return URL query string
-   */
-  public String toUrlQueryString(String prefix) {
-    String suffix = "";
-    String containerSuffix = "";
-    String containerPrefix = "";
-    if (prefix == null) {
-      // style=form, explode=true, e.g. /pet?name=cat&type=manx
-      prefix = "";
-    } else {
-      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
-      prefix = prefix + "[";
-      suffix = "]";
-      containerSuffix = "]";
-      containerPrefix = "[";
     }
 
-    StringJoiner joiner = new StringJoiner("&");
+        /**
+        * Convert the instance into URL query string.
+        *
+        * @return URL query string
+        */
+        public String toUrlQueryString() {
+        return toUrlQueryString(null);
+        }
 
-    // add `connector` to the URL query string
-    if (getConnector() != null) {
-      try {
-        joiner.add(String.format("%sconnector%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getConnector()), "UTF-8").replaceAll("\\+", "%20")));
-      } catch (UnsupportedEncodingException e) {
-        // Should never happen, UTF-8 is always supported
-        throw new RuntimeException(e);
-      }
+        /**
+        * Convert the instance into URL query string.
+        *
+        * @param prefix prefix of the query string
+        * @return URL query string
+        */
+        public String toUrlQueryString(String prefix) {
+        String suffix = "";
+        String containerSuffix = "";
+        String containerPrefix = "";
+        if (prefix == null) {
+        // style=form, explode=true, e.g. /pet?name=cat&type=manx
+        prefix = "";
+        } else {
+        // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+        prefix = prefix + "[";
+        suffix = "]";
+        containerSuffix = "]";
+        containerPrefix = "[";
+        }
+
+        StringJoiner joiner = new StringJoiner("&");
+
+            // add `connector` to the URL query string
+                        if (getConnector() != null) {
+                        try {
+                        joiner.add(String.format("%sconnector%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getConnector()), "UTF-8").replaceAll("\\+", "%20")));
+                        } catch (UnsupportedEncodingException e) {
+                        // Should never happen, UTF-8 is always supported
+                        throw new RuntimeException(e);
+                        }
+                        }
+
+            // add `flow` to the URL query string
+                        if (getFlow() != null) {
+                        try {
+                        joiner.add(String.format("%sflow%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getFlow()), "UTF-8").replaceAll("\\+", "%20")));
+                        } catch (UnsupportedEncodingException e) {
+                        // Should never happen, UTF-8 is always supported
+                        throw new RuntimeException(e);
+                        }
+                        }
+
+            // add `sub_flow` to the URL query string
+                        if (getSubFlow() != null) {
+                        try {
+                        joiner.add(String.format("%ssub_flow%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getSubFlow()), "UTF-8").replaceAll("\\+", "%20")));
+                        } catch (UnsupportedEncodingException e) {
+                        // Should never happen, UTF-8 is always supported
+                        throw new RuntimeException(e);
+                        }
+                        }
+
+            // add `code` to the URL query string
+                        if (getCode() != null) {
+                        try {
+                        joiner.add(String.format("%scode%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCode()), "UTF-8").replaceAll("\\+", "%20")));
+                        } catch (UnsupportedEncodingException e) {
+                        // Should never happen, UTF-8 is always supported
+                        throw new RuntimeException(e);
+                        }
+                        }
+
+            // add `message` to the URL query string
+                        if (getMessage() != null) {
+                        try {
+                        joiner.add(String.format("%smessage%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getMessage()), "UTF-8").replaceAll("\\+", "%20")));
+                        } catch (UnsupportedEncodingException e) {
+                        // Should never happen, UTF-8 is always supported
+                        throw new RuntimeException(e);
+                        }
+                        }
+
+            // add `status` to the URL query string
+                        if (getStatus() != null) {
+                        try {
+                        joiner.add(String.format("%sstatus%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getStatus()), "UTF-8").replaceAll("\\+", "%20")));
+                        } catch (UnsupportedEncodingException e) {
+                        // Should never happen, UTF-8 is always supported
+                        throw new RuntimeException(e);
+                        }
+                        }
+
+            // add `router_error` to the URL query string
+                        if (getRouterError() != null) {
+                        try {
+                        joiner.add(String.format("%srouter_error%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getRouterError()), "UTF-8").replaceAll("\\+", "%20")));
+                        } catch (UnsupportedEncodingException e) {
+                        // Should never happen, UTF-8 is always supported
+                        throw new RuntimeException(e);
+                        }
+                        }
+
+            // add `decision` to the URL query string
+                            if (getDecision() != null) {
+                            try {
+                            joiner.add(String.format("%sdecision%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getDecision()), "UTF-8").replaceAll("\\+", "%20")));
+                            } catch (UnsupportedEncodingException e) {
+                            // Should never happen, UTF-8 is always supported
+                            throw new RuntimeException(e);
+                            }
+                            }
+
+            // add `step_up_possible` to the URL query string
+                        if (getStepUpPossible() != null) {
+                        try {
+                        joiner.add(String.format("%sstep_up_possible%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getStepUpPossible()), "UTF-8").replaceAll("\\+", "%20")));
+                        } catch (UnsupportedEncodingException e) {
+                        // Should never happen, UTF-8 is always supported
+                        throw new RuntimeException(e);
+                        }
+                        }
+
+            // add `unified_code` to the URL query string
+                        if (getUnifiedCode() != null) {
+                        try {
+                        joiner.add(String.format("%sunified_code%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getUnifiedCode()), "UTF-8").replaceAll("\\+", "%20")));
+                        } catch (UnsupportedEncodingException e) {
+                        // Should never happen, UTF-8 is always supported
+                        throw new RuntimeException(e);
+                        }
+                        }
+
+            // add `unified_message` to the URL query string
+                        if (getUnifiedMessage() != null) {
+                        try {
+                        joiner.add(String.format("%sunified_message%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getUnifiedMessage()), "UTF-8").replaceAll("\\+", "%20")));
+                        } catch (UnsupportedEncodingException e) {
+                        // Should never happen, UTF-8 is always supported
+                        throw new RuntimeException(e);
+                        }
+                        }
+
+        return joiner.toString();
+        }
+
     }
-
-    // add `flow` to the URL query string
-    if (getFlow() != null) {
-      try {
-        joiner.add(String.format("%sflow%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getFlow()), "UTF-8").replaceAll("\\+", "%20")));
-      } catch (UnsupportedEncodingException e) {
-        // Should never happen, UTF-8 is always supported
-        throw new RuntimeException(e);
-      }
-    }
-
-    // add `sub_flow` to the URL query string
-    if (getSubFlow() != null) {
-      try {
-        joiner.add(String.format("%ssub_flow%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getSubFlow()), "UTF-8").replaceAll("\\+", "%20")));
-      } catch (UnsupportedEncodingException e) {
-        // Should never happen, UTF-8 is always supported
-        throw new RuntimeException(e);
-      }
-    }
-
-    // add `code` to the URL query string
-    if (getCode() != null) {
-      try {
-        joiner.add(String.format("%scode%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCode()), "UTF-8").replaceAll("\\+", "%20")));
-      } catch (UnsupportedEncodingException e) {
-        // Should never happen, UTF-8 is always supported
-        throw new RuntimeException(e);
-      }
-    }
-
-    // add `message` to the URL query string
-    if (getMessage() != null) {
-      try {
-        joiner.add(String.format("%smessage%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getMessage()), "UTF-8").replaceAll("\\+", "%20")));
-      } catch (UnsupportedEncodingException e) {
-        // Should never happen, UTF-8 is always supported
-        throw new RuntimeException(e);
-      }
-    }
-
-    // add `status` to the URL query string
-    if (getStatus() != null) {
-      try {
-        joiner.add(String.format("%sstatus%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getStatus()), "UTF-8").replaceAll("\\+", "%20")));
-      } catch (UnsupportedEncodingException e) {
-        // Should never happen, UTF-8 is always supported
-        throw new RuntimeException(e);
-      }
-    }
-
-    // add `router_error` to the URL query string
-    if (getRouterError() != null) {
-      try {
-        joiner.add(String.format("%srouter_error%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getRouterError()), "UTF-8").replaceAll("\\+", "%20")));
-      } catch (UnsupportedEncodingException e) {
-        // Should never happen, UTF-8 is always supported
-        throw new RuntimeException(e);
-      }
-    }
-
-    // add `decision` to the URL query string
-    if (getDecision() != null) {
-      try {
-        joiner.add(String.format("%sdecision%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getDecision()), "UTF-8").replaceAll("\\+", "%20")));
-      } catch (UnsupportedEncodingException e) {
-        // Should never happen, UTF-8 is always supported
-        throw new RuntimeException(e);
-      }
-    }
-
-    // add `step_up_possible` to the URL query string
-    if (getStepUpPossible() != null) {
-      try {
-        joiner.add(String.format("%sstep_up_possible%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getStepUpPossible()), "UTF-8").replaceAll("\\+", "%20")));
-      } catch (UnsupportedEncodingException e) {
-        // Should never happen, UTF-8 is always supported
-        throw new RuntimeException(e);
-      }
-    }
-
-    // add `unified_code` to the URL query string
-    if (getUnifiedCode() != null) {
-      try {
-        joiner.add(String.format("%sunified_code%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getUnifiedCode()), "UTF-8").replaceAll("\\+", "%20")));
-      } catch (UnsupportedEncodingException e) {
-        // Should never happen, UTF-8 is always supported
-        throw new RuntimeException(e);
-      }
-    }
-
-    // add `unified_message` to the URL query string
-    if (getUnifiedMessage() != null) {
-      try {
-        joiner.add(String.format("%sunified_message%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getUnifiedMessage()), "UTF-8").replaceAll("\\+", "%20")));
-      } catch (UnsupportedEncodingException e) {
-        // Should never happen, UTF-8 is always supported
-        throw new RuntimeException(e);
-      }
-    }
-
-    return joiner.toString();
-  }
-
-}
 

@@ -20,23 +20,23 @@ import com.fasterxml.jackson.annotation.JsonTypeName;
 import com.fasterxml.jackson.annotation.JsonValue;
 import com.hyperswitch.client.model.SessionToken;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
-import org.junit.Assert;
-import org.junit.Ignore;
-import org.junit.Test;
-
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Test;
 
 /**
  * Model tests for PaymentsSessionResponse
  */
-public class PaymentsSessionResponseTest {
+class PaymentsSessionResponseTest {
     private final PaymentsSessionResponse model = new PaymentsSessionResponse();
 
     /**
      * Model tests for PaymentsSessionResponse
      */
     @Test
-    public void testPaymentsSessionResponse() {
+    void testPaymentsSessionResponse() {
         // TODO: test PaymentsSessionResponse
     }
 
@@ -44,7 +44,7 @@ public class PaymentsSessionResponseTest {
      * Test the property 'paymentId'
      */
     @Test
-    public void paymentIdTest() {
+    void paymentIdTest() {
         // TODO: test paymentId
     }
 
@@ -52,7 +52,7 @@ public class PaymentsSessionResponseTest {
      * Test the property 'clientSecret'
      */
     @Test
-    public void clientSecretTest() {
+    void clientSecretTest() {
         // TODO: test clientSecret
     }
 
@@ -60,7 +60,7 @@ public class PaymentsSessionResponseTest {
      * Test the property 'sessionToken'
      */
     @Test
-    public void sessionTokenTest() {
+    void sessionTokenTest() {
         // TODO: test sessionToken
     }
 

@@ -27,125 +27,126 @@ import java.net.URLEncoder;
 import java.util.StringJoiner;
 
 /**
- * ExtendedCardInfoResponse
- */
-@JsonPropertyOrder({
-  ExtendedCardInfoResponse.JSON_PROPERTY_PAYLOAD
-})
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+* ExtendedCardInfoResponse
+*/
+    @JsonPropertyOrder({
+        ExtendedCardInfoResponse.JSON_PROPERTY_PAYLOAD
+    })
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class ExtendedCardInfoResponse {
-  public static final String JSON_PROPERTY_PAYLOAD = "payload";
-  private String payload;
+        public static final String JSON_PROPERTY_PAYLOAD = "payload";
+    @javax.annotation.Nonnull
+            private String payload;
 
-  public ExtendedCardInfoResponse() {
-  }
+public ExtendedCardInfoResponse() {
+}
 
-  public ExtendedCardInfoResponse payload(String payload) {
-    
-    this.payload = payload;
-    return this;
-  }
+        public ExtendedCardInfoResponse payload(@javax.annotation.Nonnull String payload) {
+        
+        this.payload = payload;
+        return this;
+        }
 
-   /**
-   * Get payload
-   * @return payload
-  **/
-  @javax.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_PAYLOAD)
+    /**
+        * Get payload
+    * @return payload
+    */
+    @javax.annotation.Nonnull
+      @JsonProperty(JSON_PROPERTY_PAYLOAD)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-  public String getPayload() {
-    return payload;
-  }
+    public String getPayload() {
+        return payload;
+    }
 
 
-  @JsonProperty(JSON_PROPERTY_PAYLOAD)
+          @JsonProperty(JSON_PROPERTY_PAYLOAD)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setPayload(String payload) {
-    this.payload = payload;
-  }
+  public void setPayload(@javax.annotation.Nonnull String payload) {
+            this.payload = payload;
+        }
 
-  @Override
-  public boolean equals(Object o) {
+@Override
+public boolean equals(Object o) {
     if (this == o) {
-      return true;
+    return true;
     }
     if (o == null || getClass() != o.getClass()) {
-      return false;
+    return false;
     }
-    ExtendedCardInfoResponse extendedCardInfoResponse = (ExtendedCardInfoResponse) o;
-    return Objects.equals(this.payload, extendedCardInfoResponse.payload);
-  }
+        ExtendedCardInfoResponse extendedCardInfoResponse = (ExtendedCardInfoResponse) o;
+        return Objects.equals(this.payload, extendedCardInfoResponse.payload);
+}
 
-  @Override
-  public int hashCode() {
-    return Objects.hash(payload);
-  }
+    @Override
+    public int hashCode() {
+        return Objects.hash(payload);
+    }
 
-  @Override
-  public String toString() {
+    @Override
+    public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class ExtendedCardInfoResponse {\n");
-    sb.append("    payload: ").append(toIndentedString(payload)).append("\n");
+        sb.append("    payload: ").append(toIndentedString(payload)).append("\n");
     sb.append("}");
     return sb.toString();
-  }
+    }
 
-  /**
-   * Convert the given object to string with each line indented by 4 spaces
-   * (except the first line).
-   */
-  private String toIndentedString(Object o) {
+    /**
+    * Convert the given object to string with each line indented by 4 spaces
+    * (except the first line).
+    */
+    private String toIndentedString(Object o) {
     if (o == null) {
-      return "null";
+    return "null";
     }
     return o.toString().replace("\n", "\n    ");
-  }
-
-  /**
-   * Convert the instance into URL query string.
-   *
-   * @return URL query string
-   */
-  public String toUrlQueryString() {
-    return toUrlQueryString(null);
-  }
-
-  /**
-   * Convert the instance into URL query string.
-   *
-   * @param prefix prefix of the query string
-   * @return URL query string
-   */
-  public String toUrlQueryString(String prefix) {
-    String suffix = "";
-    String containerSuffix = "";
-    String containerPrefix = "";
-    if (prefix == null) {
-      // style=form, explode=true, e.g. /pet?name=cat&type=manx
-      prefix = "";
-    } else {
-      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
-      prefix = prefix + "[";
-      suffix = "]";
-      containerSuffix = "]";
-      containerPrefix = "[";
     }
 
-    StringJoiner joiner = new StringJoiner("&");
+        /**
+        * Convert the instance into URL query string.
+        *
+        * @return URL query string
+        */
+        public String toUrlQueryString() {
+        return toUrlQueryString(null);
+        }
 
-    // add `payload` to the URL query string
-    if (getPayload() != null) {
-      try {
-        joiner.add(String.format("%spayload%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getPayload()), "UTF-8").replaceAll("\\+", "%20")));
-      } catch (UnsupportedEncodingException e) {
-        // Should never happen, UTF-8 is always supported
-        throw new RuntimeException(e);
-      }
+        /**
+        * Convert the instance into URL query string.
+        *
+        * @param prefix prefix of the query string
+        * @return URL query string
+        */
+        public String toUrlQueryString(String prefix) {
+        String suffix = "";
+        String containerSuffix = "";
+        String containerPrefix = "";
+        if (prefix == null) {
+        // style=form, explode=true, e.g. /pet?name=cat&type=manx
+        prefix = "";
+        } else {
+        // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+        prefix = prefix + "[";
+        suffix = "]";
+        containerSuffix = "]";
+        containerPrefix = "[";
+        }
+
+        StringJoiner joiner = new StringJoiner("&");
+
+            // add `payload` to the URL query string
+                        if (getPayload() != null) {
+                        try {
+                        joiner.add(String.format("%spayload%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getPayload()), "UTF-8").replaceAll("\\+", "%20")));
+                        } catch (UnsupportedEncodingException e) {
+                        // Should never happen, UTF-8 is always supported
+                        throw new RuntimeException(e);
+                        }
+                        }
+
+        return joiner.toString();
+        }
+
     }
-
-    return joiner.toString();
-  }
-
-}
 

@@ -32,278 +32,279 @@ import java.net.URLEncoder;
 import java.util.StringJoiner;
 
 /**
- * MandateRevokedResponse
- */
-@JsonPropertyOrder({
-  MandateRevokedResponse.JSON_PROPERTY_MANDATE_ID,
-  MandateRevokedResponse.JSON_PROPERTY_STATUS,
-  MandateRevokedResponse.JSON_PROPERTY_ERROR_CODE,
-  MandateRevokedResponse.JSON_PROPERTY_ERROR_MESSAGE
-})
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+* MandateRevokedResponse
+*/
+    @JsonPropertyOrder({
+        MandateRevokedResponse.JSON_PROPERTY_MANDATE_ID,
+        MandateRevokedResponse.JSON_PROPERTY_STATUS,
+        MandateRevokedResponse.JSON_PROPERTY_ERROR_CODE,
+        MandateRevokedResponse.JSON_PROPERTY_ERROR_MESSAGE
+    })
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class MandateRevokedResponse {
-  public static final String JSON_PROPERTY_MANDATE_ID = "mandate_id";
-  private String mandateId;
+        public static final String JSON_PROPERTY_MANDATE_ID = "mandate_id";
+    @javax.annotation.Nonnull
+            private String mandateId;
 
-  public static final String JSON_PROPERTY_STATUS = "status";
-  private MandateStatus status;
+        public static final String JSON_PROPERTY_STATUS = "status";
+    @javax.annotation.Nonnull
+            private MandateStatus status;
 
-  public static final String JSON_PROPERTY_ERROR_CODE = "error_code";
-  private JsonNullable<String> errorCode = JsonNullable.<String>undefined();
+        public static final String JSON_PROPERTY_ERROR_CODE = "error_code";
+    @javax.annotation.Nullable
+            private JsonNullable<String> errorCode = JsonNullable.<String>undefined();
 
-  public static final String JSON_PROPERTY_ERROR_MESSAGE = "error_message";
-  private JsonNullable<String> errorMessage = JsonNullable.<String>undefined();
+        public static final String JSON_PROPERTY_ERROR_MESSAGE = "error_message";
+    @javax.annotation.Nullable
+            private JsonNullable<String> errorMessage = JsonNullable.<String>undefined();
 
-  public MandateRevokedResponse() {
-  }
+public MandateRevokedResponse() {
+}
 
-  public MandateRevokedResponse mandateId(String mandateId) {
+        public MandateRevokedResponse mandateId(@javax.annotation.Nonnull String mandateId) {
+        
+        this.mandateId = mandateId;
+        return this;
+        }
+
+    /**
+        * The identifier for mandate
+    * @return mandateId
+    */
+    @javax.annotation.Nonnull
+      @JsonProperty(JSON_PROPERTY_MANDATE_ID)
+  @JsonInclude(value = JsonInclude.Include.ALWAYS)
+
+    public String getMandateId() {
+        return mandateId;
+    }
+
+
+          @JsonProperty(JSON_PROPERTY_MANDATE_ID)
+  @JsonInclude(value = JsonInclude.Include.ALWAYS)
+  public void setMandateId(@javax.annotation.Nonnull String mandateId) {
+            this.mandateId = mandateId;
+        }
+
+        public MandateRevokedResponse status(@javax.annotation.Nonnull MandateStatus status) {
+        
+        this.status = status;
+        return this;
+        }
+
+    /**
+        * Get status
+    * @return status
+    */
+    @javax.annotation.Nonnull
+      @JsonProperty(JSON_PROPERTY_STATUS)
+  @JsonInclude(value = JsonInclude.Include.ALWAYS)
+
+    public MandateStatus getStatus() {
+        return status;
+    }
+
+
+          @JsonProperty(JSON_PROPERTY_STATUS)
+  @JsonInclude(value = JsonInclude.Include.ALWAYS)
+  public void setStatus(@javax.annotation.Nonnull MandateStatus status) {
+            this.status = status;
+        }
+
+        public MandateRevokedResponse errorCode(@javax.annotation.Nullable String errorCode) {
+        this.errorCode = JsonNullable.<String>of(errorCode);
+        
+        return this;
+        }
+
+    /**
+        * If there was an error while calling the connectors the code is received here
+    * @return errorCode
+    */
+    @javax.annotation.Nullable
+        @JsonIgnore
     
-    this.mandateId = mandateId;
-    return this;
-  }
+    public String getErrorCode() {
+                return errorCode.orElse(null);
+    }
 
-   /**
-   * The identifier for mandate
-   * @return mandateId
-  **/
-  @javax.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_MANDATE_ID)
-  @JsonInclude(value = JsonInclude.Include.ALWAYS)
-
-  public String getMandateId() {
-    return mandateId;
-  }
-
-
-  @JsonProperty(JSON_PROPERTY_MANDATE_ID)
-  @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setMandateId(String mandateId) {
-    this.mandateId = mandateId;
-  }
-
-
-  public MandateRevokedResponse status(MandateStatus status) {
-    
-    this.status = status;
-    return this;
-  }
-
-   /**
-   * Get status
-   * @return status
-  **/
-  @javax.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_STATUS)
-  @JsonInclude(value = JsonInclude.Include.ALWAYS)
-
-  public MandateStatus getStatus() {
-    return status;
-  }
-
-
-  @JsonProperty(JSON_PROPERTY_STATUS)
-  @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setStatus(MandateStatus status) {
-    this.status = status;
-  }
-
-
-  public MandateRevokedResponse errorCode(String errorCode) {
-    this.errorCode = JsonNullable.<String>of(errorCode);
-    
-    return this;
-  }
-
-   /**
-   * If there was an error while calling the connectors the code is received here
-   * @return errorCode
-  **/
-  @javax.annotation.Nullable
-  @JsonIgnore
-
-  public String getErrorCode() {
-        return errorCode.orElse(null);
-  }
-
-  @JsonProperty(JSON_PROPERTY_ERROR_CODE)
+          @JsonProperty(JSON_PROPERTY_ERROR_CODE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-  public JsonNullable<String> getErrorCode_JsonNullable() {
-    return errorCode;
-  }
-  
-  @JsonProperty(JSON_PROPERTY_ERROR_CODE)
-  public void setErrorCode_JsonNullable(JsonNullable<String> errorCode) {
-    this.errorCode = errorCode;
-  }
-
-  public void setErrorCode(String errorCode) {
-    this.errorCode = JsonNullable.<String>of(errorCode);
-  }
-
-
-  public MandateRevokedResponse errorMessage(String errorMessage) {
-    this.errorMessage = JsonNullable.<String>of(errorMessage);
+        public JsonNullable<String> getErrorCode_JsonNullable() {
+        return errorCode;
+        }
     
-    return this;
-  }
+        @JsonProperty(JSON_PROPERTY_ERROR_CODE)
+        public void setErrorCode_JsonNullable(JsonNullable<String> errorCode) {
+        this.errorCode = errorCode;
+        }
 
-   /**
-   * If there was an error while calling the connector the error message is received here
-   * @return errorMessage
-  **/
-  @javax.annotation.Nullable
-  @JsonIgnore
+          public void setErrorCode(@javax.annotation.Nullable String errorCode) {
+            this.errorCode = JsonNullable.<String>of(errorCode);
+        }
 
-  public String getErrorMessage() {
-        return errorMessage.orElse(null);
-  }
+        public MandateRevokedResponse errorMessage(@javax.annotation.Nullable String errorMessage) {
+        this.errorMessage = JsonNullable.<String>of(errorMessage);
+        
+        return this;
+        }
 
-  @JsonProperty(JSON_PROPERTY_ERROR_MESSAGE)
+    /**
+        * If there was an error while calling the connector the error message is received here
+    * @return errorMessage
+    */
+    @javax.annotation.Nullable
+        @JsonIgnore
+    
+    public String getErrorMessage() {
+                return errorMessage.orElse(null);
+    }
+
+          @JsonProperty(JSON_PROPERTY_ERROR_MESSAGE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-  public JsonNullable<String> getErrorMessage_JsonNullable() {
-    return errorMessage;
-  }
-  
-  @JsonProperty(JSON_PROPERTY_ERROR_MESSAGE)
-  public void setErrorMessage_JsonNullable(JsonNullable<String> errorMessage) {
-    this.errorMessage = errorMessage;
-  }
+        public JsonNullable<String> getErrorMessage_JsonNullable() {
+        return errorMessage;
+        }
+    
+        @JsonProperty(JSON_PROPERTY_ERROR_MESSAGE)
+        public void setErrorMessage_JsonNullable(JsonNullable<String> errorMessage) {
+        this.errorMessage = errorMessage;
+        }
 
-  public void setErrorMessage(String errorMessage) {
-    this.errorMessage = JsonNullable.<String>of(errorMessage);
-  }
+          public void setErrorMessage(@javax.annotation.Nullable String errorMessage) {
+            this.errorMessage = JsonNullable.<String>of(errorMessage);
+        }
 
-  @Override
-  public boolean equals(Object o) {
+@Override
+public boolean equals(Object o) {
     if (this == o) {
-      return true;
+    return true;
     }
     if (o == null || getClass() != o.getClass()) {
-      return false;
+    return false;
     }
-    MandateRevokedResponse mandateRevokedResponse = (MandateRevokedResponse) o;
-    return Objects.equals(this.mandateId, mandateRevokedResponse.mandateId) &&
+        MandateRevokedResponse mandateRevokedResponse = (MandateRevokedResponse) o;
+        return Objects.equals(this.mandateId, mandateRevokedResponse.mandateId) &&
         Objects.equals(this.status, mandateRevokedResponse.status) &&
         equalsNullable(this.errorCode, mandateRevokedResponse.errorCode) &&
         equalsNullable(this.errorMessage, mandateRevokedResponse.errorMessage);
-  }
+}
 
-  private static <T> boolean equalsNullable(JsonNullable<T> a, JsonNullable<T> b) {
-    return a == b || (a != null && b != null && a.isPresent() && b.isPresent() && Objects.deepEquals(a.get(), b.get()));
-  }
+    private static <T> boolean equalsNullable(JsonNullable<T> a, JsonNullable<T> b) {
+        return a == b || (a != null && b != null && a.isPresent() && b.isPresent() && Objects.deepEquals(a.get(), b.get()));
+        }
 
-  @Override
-  public int hashCode() {
-    return Objects.hash(mandateId, status, hashCodeNullable(errorCode), hashCodeNullable(errorMessage));
-  }
-
-  private static <T> int hashCodeNullable(JsonNullable<T> a) {
-    if (a == null) {
-      return 1;
+    @Override
+    public int hashCode() {
+        return Objects.hash(mandateId, status, hashCodeNullable(errorCode), hashCodeNullable(errorMessage));
     }
-    return a.isPresent() ? Arrays.deepHashCode(new Object[]{a.get()}) : 31;
-  }
 
-  @Override
-  public String toString() {
+        private static <T> int hashCodeNullable(JsonNullable<T> a) {
+        if (a == null) {
+        return 1;
+        }
+        return a.isPresent() ? Arrays.deepHashCode(new Object[]{a.get()}) : 31;
+        }
+
+    @Override
+    public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class MandateRevokedResponse {\n");
-    sb.append("    mandateId: ").append(toIndentedString(mandateId)).append("\n");
-    sb.append("    status: ").append(toIndentedString(status)).append("\n");
-    sb.append("    errorCode: ").append(toIndentedString(errorCode)).append("\n");
-    sb.append("    errorMessage: ").append(toIndentedString(errorMessage)).append("\n");
+        sb.append("    mandateId: ").append(toIndentedString(mandateId)).append("\n");
+        sb.append("    status: ").append(toIndentedString(status)).append("\n");
+        sb.append("    errorCode: ").append(toIndentedString(errorCode)).append("\n");
+        sb.append("    errorMessage: ").append(toIndentedString(errorMessage)).append("\n");
     sb.append("}");
     return sb.toString();
-  }
+    }
 
-  /**
-   * Convert the given object to string with each line indented by 4 spaces
-   * (except the first line).
-   */
-  private String toIndentedString(Object o) {
+    /**
+    * Convert the given object to string with each line indented by 4 spaces
+    * (except the first line).
+    */
+    private String toIndentedString(Object o) {
     if (o == null) {
-      return "null";
+    return "null";
     }
     return o.toString().replace("\n", "\n    ");
-  }
-
-  /**
-   * Convert the instance into URL query string.
-   *
-   * @return URL query string
-   */
-  public String toUrlQueryString() {
-    return toUrlQueryString(null);
-  }
-
-  /**
-   * Convert the instance into URL query string.
-   *
-   * @param prefix prefix of the query string
-   * @return URL query string
-   */
-  public String toUrlQueryString(String prefix) {
-    String suffix = "";
-    String containerSuffix = "";
-    String containerPrefix = "";
-    if (prefix == null) {
-      // style=form, explode=true, e.g. /pet?name=cat&type=manx
-      prefix = "";
-    } else {
-      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
-      prefix = prefix + "[";
-      suffix = "]";
-      containerSuffix = "]";
-      containerPrefix = "[";
     }
 
-    StringJoiner joiner = new StringJoiner("&");
+        /**
+        * Convert the instance into URL query string.
+        *
+        * @return URL query string
+        */
+        public String toUrlQueryString() {
+        return toUrlQueryString(null);
+        }
 
-    // add `mandate_id` to the URL query string
-    if (getMandateId() != null) {
-      try {
-        joiner.add(String.format("%smandate_id%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getMandateId()), "UTF-8").replaceAll("\\+", "%20")));
-      } catch (UnsupportedEncodingException e) {
-        // Should never happen, UTF-8 is always supported
-        throw new RuntimeException(e);
-      }
+        /**
+        * Convert the instance into URL query string.
+        *
+        * @param prefix prefix of the query string
+        * @return URL query string
+        */
+        public String toUrlQueryString(String prefix) {
+        String suffix = "";
+        String containerSuffix = "";
+        String containerPrefix = "";
+        if (prefix == null) {
+        // style=form, explode=true, e.g. /pet?name=cat&type=manx
+        prefix = "";
+        } else {
+        // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+        prefix = prefix + "[";
+        suffix = "]";
+        containerSuffix = "]";
+        containerPrefix = "[";
+        }
+
+        StringJoiner joiner = new StringJoiner("&");
+
+            // add `mandate_id` to the URL query string
+                        if (getMandateId() != null) {
+                        try {
+                        joiner.add(String.format("%smandate_id%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getMandateId()), "UTF-8").replaceAll("\\+", "%20")));
+                        } catch (UnsupportedEncodingException e) {
+                        // Should never happen, UTF-8 is always supported
+                        throw new RuntimeException(e);
+                        }
+                        }
+
+            // add `status` to the URL query string
+                            if (getStatus() != null) {
+                            try {
+                            joiner.add(String.format("%sstatus%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getStatus()), "UTF-8").replaceAll("\\+", "%20")));
+                            } catch (UnsupportedEncodingException e) {
+                            // Should never happen, UTF-8 is always supported
+                            throw new RuntimeException(e);
+                            }
+                            }
+
+            // add `error_code` to the URL query string
+                        if (getErrorCode() != null) {
+                        try {
+                        joiner.add(String.format("%serror_code%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getErrorCode()), "UTF-8").replaceAll("\\+", "%20")));
+                        } catch (UnsupportedEncodingException e) {
+                        // Should never happen, UTF-8 is always supported
+                        throw new RuntimeException(e);
+                        }
+                        }
+
+            // add `error_message` to the URL query string
+                        if (getErrorMessage() != null) {
+                        try {
+                        joiner.add(String.format("%serror_message%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getErrorMessage()), "UTF-8").replaceAll("\\+", "%20")));
+                        } catch (UnsupportedEncodingException e) {
+                        // Should never happen, UTF-8 is always supported
+                        throw new RuntimeException(e);
+                        }
+                        }
+
+        return joiner.toString();
+        }
+
     }
-
-    // add `status` to the URL query string
-    if (getStatus() != null) {
-      try {
-        joiner.add(String.format("%sstatus%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getStatus()), "UTF-8").replaceAll("\\+", "%20")));
-      } catch (UnsupportedEncodingException e) {
-        // Should never happen, UTF-8 is always supported
-        throw new RuntimeException(e);
-      }
-    }
-
-    // add `error_code` to the URL query string
-    if (getErrorCode() != null) {
-      try {
-        joiner.add(String.format("%serror_code%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getErrorCode()), "UTF-8").replaceAll("\\+", "%20")));
-      } catch (UnsupportedEncodingException e) {
-        // Should never happen, UTF-8 is always supported
-        throw new RuntimeException(e);
-      }
-    }
-
-    // add `error_message` to the URL query string
-    if (getErrorMessage() != null) {
-      try {
-        joiner.add(String.format("%serror_message%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getErrorMessage()), "UTF-8").replaceAll("\\+", "%20")));
-      } catch (UnsupportedEncodingException e) {
-        // Should never happen, UTF-8 is always supported
-        throw new RuntimeException(e);
-      }
-    }
-
-    return joiner.toString();
-  }
-
-}
 

@@ -23,22 +23,21 @@ import org.openapitools.jackson.nullable.JsonNullable;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.openapitools.jackson.nullable.JsonNullable;
 import java.util.NoSuchElementException;
-import org.junit.Assert;
-import org.junit.Ignore;
-import org.junit.Test;
-
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Test;
 
 /**
  * Model tests for PaymentChargeResponse
  */
-public class PaymentChargeResponseTest {
+class PaymentChargeResponseTest {
     private final PaymentChargeResponse model = new PaymentChargeResponse();
 
     /**
      * Model tests for PaymentChargeResponse
      */
     @Test
-    public void testPaymentChargeResponse() {
+    void testPaymentChargeResponse() {
         // TODO: test PaymentChargeResponse
     }
 
@@ -46,7 +45,7 @@ public class PaymentChargeResponseTest {
      * Test the property 'chargeId'
      */
     @Test
-    public void chargeIdTest() {
+    void chargeIdTest() {
         // TODO: test chargeId
     }
 
@@ -54,7 +53,7 @@ public class PaymentChargeResponseTest {
      * Test the property 'chargeType'
      */
     @Test
-    public void chargeTypeTest() {
+    void chargeTypeTest() {
         // TODO: test chargeType
     }
 
@@ -62,7 +61,7 @@ public class PaymentChargeResponseTest {
      * Test the property 'applicationFees'
      */
     @Test
-    public void applicationFeesTest() {
+    void applicationFeesTest() {
         // TODO: test applicationFees
     }
 
@@ -70,7 +69,7 @@ public class PaymentChargeResponseTest {
      * Test the property 'transferAccountId'
      */
     @Test
-    public void transferAccountIdTest() {
+    void transferAccountIdTest() {
         // TODO: test transferAccountId
     }
 

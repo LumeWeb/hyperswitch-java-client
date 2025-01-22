@@ -33,231 +33,232 @@ import java.net.URLEncoder;
 import java.util.StringJoiner;
 
 /**
- * PaymentLinkBackgroundImageConfig
- */
-@JsonPropertyOrder({
-  PaymentLinkBackgroundImageConfig.JSON_PROPERTY_URL,
-  PaymentLinkBackgroundImageConfig.JSON_PROPERTY_POSITION,
-  PaymentLinkBackgroundImageConfig.JSON_PROPERTY_SIZE
-})
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+* PaymentLinkBackgroundImageConfig
+*/
+    @JsonPropertyOrder({
+        PaymentLinkBackgroundImageConfig.JSON_PROPERTY_URL,
+        PaymentLinkBackgroundImageConfig.JSON_PROPERTY_POSITION,
+        PaymentLinkBackgroundImageConfig.JSON_PROPERTY_SIZE
+    })
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class PaymentLinkBackgroundImageConfig {
-  public static final String JSON_PROPERTY_URL = "url";
-  private String url;
+        public static final String JSON_PROPERTY_URL = "url";
+    @javax.annotation.Nonnull
+            private String url;
 
-  public static final String JSON_PROPERTY_POSITION = "position";
-  private JsonNullable<ElementPosition> position = JsonNullable.<ElementPosition>undefined();
+        public static final String JSON_PROPERTY_POSITION = "position";
+    @javax.annotation.Nullable
+            private JsonNullable<ElementPosition> position = JsonNullable.<ElementPosition>undefined();
 
-  public static final String JSON_PROPERTY_SIZE = "size";
-  private JsonNullable<ElementSize> size = JsonNullable.<ElementSize>undefined();
+        public static final String JSON_PROPERTY_SIZE = "size";
+    @javax.annotation.Nullable
+            private JsonNullable<ElementSize> size = JsonNullable.<ElementSize>undefined();
 
-  public PaymentLinkBackgroundImageConfig() {
-  }
+public PaymentLinkBackgroundImageConfig() {
+}
 
-  public PaymentLinkBackgroundImageConfig url(String url) {
-    
-    this.url = url;
-    return this;
-  }
+        public PaymentLinkBackgroundImageConfig url(@javax.annotation.Nonnull String url) {
+        
+        this.url = url;
+        return this;
+        }
 
-   /**
-   * URL of the image
-   * @return url
-  **/
-  @javax.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_URL)
+    /**
+        * URL of the image
+    * @return url
+    */
+    @javax.annotation.Nonnull
+      @JsonProperty(JSON_PROPERTY_URL)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-  public String getUrl() {
-    return url;
-  }
+    public String getUrl() {
+        return url;
+    }
 
 
-  @JsonProperty(JSON_PROPERTY_URL)
+          @JsonProperty(JSON_PROPERTY_URL)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setUrl(String url) {
-    this.url = url;
-  }
+  public void setUrl(@javax.annotation.Nonnull String url) {
+            this.url = url;
+        }
 
+        public PaymentLinkBackgroundImageConfig position(@javax.annotation.Nullable ElementPosition position) {
+        this.position = JsonNullable.<ElementPosition>of(position);
+        
+        return this;
+        }
 
-  public PaymentLinkBackgroundImageConfig position(ElementPosition position) {
-    this.position = JsonNullable.<ElementPosition>of(position);
+    /**
+        * Get position
+    * @return position
+    */
+    @javax.annotation.Nullable
+        @JsonIgnore
     
-    return this;
-  }
+    public ElementPosition getPosition() {
+                return position.orElse(null);
+    }
 
-   /**
-   * Get position
-   * @return position
-  **/
-  @javax.annotation.Nullable
-  @JsonIgnore
-
-  public ElementPosition getPosition() {
-        return position.orElse(null);
-  }
-
-  @JsonProperty(JSON_PROPERTY_POSITION)
+          @JsonProperty(JSON_PROPERTY_POSITION)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-  public JsonNullable<ElementPosition> getPosition_JsonNullable() {
-    return position;
-  }
-  
-  @JsonProperty(JSON_PROPERTY_POSITION)
-  public void setPosition_JsonNullable(JsonNullable<ElementPosition> position) {
-    this.position = position;
-  }
-
-  public void setPosition(ElementPosition position) {
-    this.position = JsonNullable.<ElementPosition>of(position);
-  }
-
-
-  public PaymentLinkBackgroundImageConfig size(ElementSize size) {
-    this.size = JsonNullable.<ElementSize>of(size);
+        public JsonNullable<ElementPosition> getPosition_JsonNullable() {
+        return position;
+        }
     
-    return this;
-  }
+        @JsonProperty(JSON_PROPERTY_POSITION)
+        public void setPosition_JsonNullable(JsonNullable<ElementPosition> position) {
+        this.position = position;
+        }
 
-   /**
-   * Get size
-   * @return size
-  **/
-  @javax.annotation.Nullable
-  @JsonIgnore
+          public void setPosition(@javax.annotation.Nullable ElementPosition position) {
+            this.position = JsonNullable.<ElementPosition>of(position);
+        }
 
-  public ElementSize getSize() {
-        return size.orElse(null);
-  }
+        public PaymentLinkBackgroundImageConfig size(@javax.annotation.Nullable ElementSize size) {
+        this.size = JsonNullable.<ElementSize>of(size);
+        
+        return this;
+        }
 
-  @JsonProperty(JSON_PROPERTY_SIZE)
+    /**
+        * Get size
+    * @return size
+    */
+    @javax.annotation.Nullable
+        @JsonIgnore
+    
+    public ElementSize getSize() {
+                return size.orElse(null);
+    }
+
+          @JsonProperty(JSON_PROPERTY_SIZE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-  public JsonNullable<ElementSize> getSize_JsonNullable() {
-    return size;
-  }
-  
-  @JsonProperty(JSON_PROPERTY_SIZE)
-  public void setSize_JsonNullable(JsonNullable<ElementSize> size) {
-    this.size = size;
-  }
+        public JsonNullable<ElementSize> getSize_JsonNullable() {
+        return size;
+        }
+    
+        @JsonProperty(JSON_PROPERTY_SIZE)
+        public void setSize_JsonNullable(JsonNullable<ElementSize> size) {
+        this.size = size;
+        }
 
-  public void setSize(ElementSize size) {
-    this.size = JsonNullable.<ElementSize>of(size);
-  }
+          public void setSize(@javax.annotation.Nullable ElementSize size) {
+            this.size = JsonNullable.<ElementSize>of(size);
+        }
 
-  @Override
-  public boolean equals(Object o) {
+@Override
+public boolean equals(Object o) {
     if (this == o) {
-      return true;
+    return true;
     }
     if (o == null || getClass() != o.getClass()) {
-      return false;
+    return false;
     }
-    PaymentLinkBackgroundImageConfig paymentLinkBackgroundImageConfig = (PaymentLinkBackgroundImageConfig) o;
-    return Objects.equals(this.url, paymentLinkBackgroundImageConfig.url) &&
+        PaymentLinkBackgroundImageConfig paymentLinkBackgroundImageConfig = (PaymentLinkBackgroundImageConfig) o;
+        return Objects.equals(this.url, paymentLinkBackgroundImageConfig.url) &&
         equalsNullable(this.position, paymentLinkBackgroundImageConfig.position) &&
         equalsNullable(this.size, paymentLinkBackgroundImageConfig.size);
-  }
+}
 
-  private static <T> boolean equalsNullable(JsonNullable<T> a, JsonNullable<T> b) {
-    return a == b || (a != null && b != null && a.isPresent() && b.isPresent() && Objects.deepEquals(a.get(), b.get()));
-  }
+    private static <T> boolean equalsNullable(JsonNullable<T> a, JsonNullable<T> b) {
+        return a == b || (a != null && b != null && a.isPresent() && b.isPresent() && Objects.deepEquals(a.get(), b.get()));
+        }
 
-  @Override
-  public int hashCode() {
-    return Objects.hash(url, hashCodeNullable(position), hashCodeNullable(size));
-  }
-
-  private static <T> int hashCodeNullable(JsonNullable<T> a) {
-    if (a == null) {
-      return 1;
+    @Override
+    public int hashCode() {
+        return Objects.hash(url, hashCodeNullable(position), hashCodeNullable(size));
     }
-    return a.isPresent() ? Arrays.deepHashCode(new Object[]{a.get()}) : 31;
-  }
 
-  @Override
-  public String toString() {
+        private static <T> int hashCodeNullable(JsonNullable<T> a) {
+        if (a == null) {
+        return 1;
+        }
+        return a.isPresent() ? Arrays.deepHashCode(new Object[]{a.get()}) : 31;
+        }
+
+    @Override
+    public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class PaymentLinkBackgroundImageConfig {\n");
-    sb.append("    url: ").append(toIndentedString(url)).append("\n");
-    sb.append("    position: ").append(toIndentedString(position)).append("\n");
-    sb.append("    size: ").append(toIndentedString(size)).append("\n");
+        sb.append("    url: ").append(toIndentedString(url)).append("\n");
+        sb.append("    position: ").append(toIndentedString(position)).append("\n");
+        sb.append("    size: ").append(toIndentedString(size)).append("\n");
     sb.append("}");
     return sb.toString();
-  }
+    }
 
-  /**
-   * Convert the given object to string with each line indented by 4 spaces
-   * (except the first line).
-   */
-  private String toIndentedString(Object o) {
+    /**
+    * Convert the given object to string with each line indented by 4 spaces
+    * (except the first line).
+    */
+    private String toIndentedString(Object o) {
     if (o == null) {
-      return "null";
+    return "null";
     }
     return o.toString().replace("\n", "\n    ");
-  }
-
-  /**
-   * Convert the instance into URL query string.
-   *
-   * @return URL query string
-   */
-  public String toUrlQueryString() {
-    return toUrlQueryString(null);
-  }
-
-  /**
-   * Convert the instance into URL query string.
-   *
-   * @param prefix prefix of the query string
-   * @return URL query string
-   */
-  public String toUrlQueryString(String prefix) {
-    String suffix = "";
-    String containerSuffix = "";
-    String containerPrefix = "";
-    if (prefix == null) {
-      // style=form, explode=true, e.g. /pet?name=cat&type=manx
-      prefix = "";
-    } else {
-      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
-      prefix = prefix + "[";
-      suffix = "]";
-      containerSuffix = "]";
-      containerPrefix = "[";
     }
 
-    StringJoiner joiner = new StringJoiner("&");
+        /**
+        * Convert the instance into URL query string.
+        *
+        * @return URL query string
+        */
+        public String toUrlQueryString() {
+        return toUrlQueryString(null);
+        }
 
-    // add `url` to the URL query string
-    if (getUrl() != null) {
-      try {
-        joiner.add(String.format("%surl%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getUrl()), "UTF-8").replaceAll("\\+", "%20")));
-      } catch (UnsupportedEncodingException e) {
-        // Should never happen, UTF-8 is always supported
-        throw new RuntimeException(e);
-      }
+        /**
+        * Convert the instance into URL query string.
+        *
+        * @param prefix prefix of the query string
+        * @return URL query string
+        */
+        public String toUrlQueryString(String prefix) {
+        String suffix = "";
+        String containerSuffix = "";
+        String containerPrefix = "";
+        if (prefix == null) {
+        // style=form, explode=true, e.g. /pet?name=cat&type=manx
+        prefix = "";
+        } else {
+        // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+        prefix = prefix + "[";
+        suffix = "]";
+        containerSuffix = "]";
+        containerPrefix = "[";
+        }
+
+        StringJoiner joiner = new StringJoiner("&");
+
+            // add `url` to the URL query string
+                        if (getUrl() != null) {
+                        try {
+                        joiner.add(String.format("%surl%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getUrl()), "UTF-8").replaceAll("\\+", "%20")));
+                        } catch (UnsupportedEncodingException e) {
+                        // Should never happen, UTF-8 is always supported
+                        throw new RuntimeException(e);
+                        }
+                        }
+
+            // add `position` to the URL query string
+                            if (getPosition() != null) {
+                            try {
+                            joiner.add(String.format("%sposition%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getPosition()), "UTF-8").replaceAll("\\+", "%20")));
+                            } catch (UnsupportedEncodingException e) {
+                            // Should never happen, UTF-8 is always supported
+                            throw new RuntimeException(e);
+                            }
+                            }
+
+            // add `size` to the URL query string
+                            if (getSize() != null) {
+                            joiner.add(getSize().toUrlQueryString(prefix + "size" + suffix));
+                            }
+
+        return joiner.toString();
+        }
+
     }
-
-    // add `position` to the URL query string
-    if (getPosition() != null) {
-      try {
-        joiner.add(String.format("%sposition%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getPosition()), "UTF-8").replaceAll("\\+", "%20")));
-      } catch (UnsupportedEncodingException e) {
-        // Should never happen, UTF-8 is always supported
-        throw new RuntimeException(e);
-      }
-    }
-
-    // add `size` to the URL query string
-    if (getSize() != null) {
-      joiner.add(getSize().toUrlQueryString(prefix + "size" + suffix));
-    }
-
-    return joiner.toString();
-  }
-
-}
 

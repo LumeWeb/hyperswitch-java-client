@@ -32,195 +32,196 @@ import java.net.URLEncoder;
 import java.util.StringJoiner;
 
 /**
- * BankRedirectDataOneOf6Interac
- */
-@JsonPropertyOrder({
-  BankRedirectDataOneOf6Interac.JSON_PROPERTY_COUNTRY,
-  BankRedirectDataOneOf6Interac.JSON_PROPERTY_EMAIL
-})
-@JsonTypeName("BankRedirectData_oneOf_6_interac")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+* BankRedirectDataOneOf6Interac
+*/
+    @JsonPropertyOrder({
+        BankRedirectDataOneOf6Interac.JSON_PROPERTY_COUNTRY,
+        BankRedirectDataOneOf6Interac.JSON_PROPERTY_EMAIL
+    })
+            @JsonTypeName("BankRedirectData_oneOf_6_interac")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class BankRedirectDataOneOf6Interac {
-  public static final String JSON_PROPERTY_COUNTRY = "country";
-  private JsonNullable<CountryAlpha2> country = JsonNullable.<CountryAlpha2>undefined();
+        public static final String JSON_PROPERTY_COUNTRY = "country";
+    @javax.annotation.Nullable
+            private JsonNullable<CountryAlpha2> country = JsonNullable.<CountryAlpha2>undefined();
 
-  public static final String JSON_PROPERTY_EMAIL = "email";
-  private JsonNullable<String> email = JsonNullable.<String>undefined();
+        public static final String JSON_PROPERTY_EMAIL = "email";
+    @javax.annotation.Nullable
+            private JsonNullable<String> email = JsonNullable.<String>undefined();
 
-  public BankRedirectDataOneOf6Interac() {
-  }
+public BankRedirectDataOneOf6Interac() {
+}
 
-  public BankRedirectDataOneOf6Interac country(CountryAlpha2 country) {
-    this.country = JsonNullable.<CountryAlpha2>of(country);
+        public BankRedirectDataOneOf6Interac country(@javax.annotation.Nullable CountryAlpha2 country) {
+        this.country = JsonNullable.<CountryAlpha2>of(country);
+        
+        return this;
+        }
+
+    /**
+        * Get country
+    * @return country
+    */
+    @javax.annotation.Nullable
+        @JsonIgnore
     
-    return this;
-  }
+    public CountryAlpha2 getCountry() {
+                return country.orElse(null);
+    }
 
-   /**
-   * Get country
-   * @return country
-  **/
-  @javax.annotation.Nullable
-  @JsonIgnore
-
-  public CountryAlpha2 getCountry() {
-        return country.orElse(null);
-  }
-
-  @JsonProperty(JSON_PROPERTY_COUNTRY)
+          @JsonProperty(JSON_PROPERTY_COUNTRY)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-  public JsonNullable<CountryAlpha2> getCountry_JsonNullable() {
-    return country;
-  }
-  
-  @JsonProperty(JSON_PROPERTY_COUNTRY)
-  public void setCountry_JsonNullable(JsonNullable<CountryAlpha2> country) {
-    this.country = country;
-  }
-
-  public void setCountry(CountryAlpha2 country) {
-    this.country = JsonNullable.<CountryAlpha2>of(country);
-  }
-
-
-  public BankRedirectDataOneOf6Interac email(String email) {
-    this.email = JsonNullable.<String>of(email);
+        public JsonNullable<CountryAlpha2> getCountry_JsonNullable() {
+        return country;
+        }
     
-    return this;
-  }
+        @JsonProperty(JSON_PROPERTY_COUNTRY)
+        public void setCountry_JsonNullable(JsonNullable<CountryAlpha2> country) {
+        this.country = country;
+        }
 
-   /**
-   * Get email
-   * @return email
-  **/
-  @javax.annotation.Nullable
-  @JsonIgnore
+          public void setCountry(@javax.annotation.Nullable CountryAlpha2 country) {
+            this.country = JsonNullable.<CountryAlpha2>of(country);
+        }
 
-  public String getEmail() {
-        return email.orElse(null);
-  }
+        public BankRedirectDataOneOf6Interac email(@javax.annotation.Nullable String email) {
+        this.email = JsonNullable.<String>of(email);
+        
+        return this;
+        }
 
-  @JsonProperty(JSON_PROPERTY_EMAIL)
+    /**
+        * Get email
+    * @return email
+    */
+    @javax.annotation.Nullable
+        @JsonIgnore
+    
+    public String getEmail() {
+                return email.orElse(null);
+    }
+
+          @JsonProperty(JSON_PROPERTY_EMAIL)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-  public JsonNullable<String> getEmail_JsonNullable() {
-    return email;
-  }
-  
-  @JsonProperty(JSON_PROPERTY_EMAIL)
-  public void setEmail_JsonNullable(JsonNullable<String> email) {
-    this.email = email;
-  }
+        public JsonNullable<String> getEmail_JsonNullable() {
+        return email;
+        }
+    
+        @JsonProperty(JSON_PROPERTY_EMAIL)
+        public void setEmail_JsonNullable(JsonNullable<String> email) {
+        this.email = email;
+        }
 
-  public void setEmail(String email) {
-    this.email = JsonNullable.<String>of(email);
-  }
+          public void setEmail(@javax.annotation.Nullable String email) {
+            this.email = JsonNullable.<String>of(email);
+        }
 
-  @Override
-  public boolean equals(Object o) {
+@Override
+public boolean equals(Object o) {
     if (this == o) {
-      return true;
+    return true;
     }
     if (o == null || getClass() != o.getClass()) {
-      return false;
+    return false;
     }
-    BankRedirectDataOneOf6Interac bankRedirectDataOneOf6Interac = (BankRedirectDataOneOf6Interac) o;
-    return equalsNullable(this.country, bankRedirectDataOneOf6Interac.country) &&
+        BankRedirectDataOneOf6Interac bankRedirectDataOneOf6Interac = (BankRedirectDataOneOf6Interac) o;
+        return equalsNullable(this.country, bankRedirectDataOneOf6Interac.country) &&
         equalsNullable(this.email, bankRedirectDataOneOf6Interac.email);
-  }
+}
 
-  private static <T> boolean equalsNullable(JsonNullable<T> a, JsonNullable<T> b) {
-    return a == b || (a != null && b != null && a.isPresent() && b.isPresent() && Objects.deepEquals(a.get(), b.get()));
-  }
+    private static <T> boolean equalsNullable(JsonNullable<T> a, JsonNullable<T> b) {
+        return a == b || (a != null && b != null && a.isPresent() && b.isPresent() && Objects.deepEquals(a.get(), b.get()));
+        }
 
-  @Override
-  public int hashCode() {
-    return Objects.hash(hashCodeNullable(country), hashCodeNullable(email));
-  }
-
-  private static <T> int hashCodeNullable(JsonNullable<T> a) {
-    if (a == null) {
-      return 1;
+    @Override
+    public int hashCode() {
+        return Objects.hash(hashCodeNullable(country), hashCodeNullable(email));
     }
-    return a.isPresent() ? Arrays.deepHashCode(new Object[]{a.get()}) : 31;
-  }
 
-  @Override
-  public String toString() {
+        private static <T> int hashCodeNullable(JsonNullable<T> a) {
+        if (a == null) {
+        return 1;
+        }
+        return a.isPresent() ? Arrays.deepHashCode(new Object[]{a.get()}) : 31;
+        }
+
+    @Override
+    public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class BankRedirectDataOneOf6Interac {\n");
-    sb.append("    country: ").append(toIndentedString(country)).append("\n");
-    sb.append("    email: ").append(toIndentedString(email)).append("\n");
+        sb.append("    country: ").append(toIndentedString(country)).append("\n");
+        sb.append("    email: ").append(toIndentedString(email)).append("\n");
     sb.append("}");
     return sb.toString();
-  }
+    }
 
-  /**
-   * Convert the given object to string with each line indented by 4 spaces
-   * (except the first line).
-   */
-  private String toIndentedString(Object o) {
+    /**
+    * Convert the given object to string with each line indented by 4 spaces
+    * (except the first line).
+    */
+    private String toIndentedString(Object o) {
     if (o == null) {
-      return "null";
+    return "null";
     }
     return o.toString().replace("\n", "\n    ");
-  }
-
-  /**
-   * Convert the instance into URL query string.
-   *
-   * @return URL query string
-   */
-  public String toUrlQueryString() {
-    return toUrlQueryString(null);
-  }
-
-  /**
-   * Convert the instance into URL query string.
-   *
-   * @param prefix prefix of the query string
-   * @return URL query string
-   */
-  public String toUrlQueryString(String prefix) {
-    String suffix = "";
-    String containerSuffix = "";
-    String containerPrefix = "";
-    if (prefix == null) {
-      // style=form, explode=true, e.g. /pet?name=cat&type=manx
-      prefix = "";
-    } else {
-      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
-      prefix = prefix + "[";
-      suffix = "]";
-      containerSuffix = "]";
-      containerPrefix = "[";
     }
 
-    StringJoiner joiner = new StringJoiner("&");
+        /**
+        * Convert the instance into URL query string.
+        *
+        * @return URL query string
+        */
+        public String toUrlQueryString() {
+        return toUrlQueryString(null);
+        }
 
-    // add `country` to the URL query string
-    if (getCountry() != null) {
-      try {
-        joiner.add(String.format("%scountry%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCountry()), "UTF-8").replaceAll("\\+", "%20")));
-      } catch (UnsupportedEncodingException e) {
-        // Should never happen, UTF-8 is always supported
-        throw new RuntimeException(e);
-      }
+        /**
+        * Convert the instance into URL query string.
+        *
+        * @param prefix prefix of the query string
+        * @return URL query string
+        */
+        public String toUrlQueryString(String prefix) {
+        String suffix = "";
+        String containerSuffix = "";
+        String containerPrefix = "";
+        if (prefix == null) {
+        // style=form, explode=true, e.g. /pet?name=cat&type=manx
+        prefix = "";
+        } else {
+        // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+        prefix = prefix + "[";
+        suffix = "]";
+        containerSuffix = "]";
+        containerPrefix = "[";
+        }
+
+        StringJoiner joiner = new StringJoiner("&");
+
+            // add `country` to the URL query string
+                            if (getCountry() != null) {
+                            try {
+                            joiner.add(String.format("%scountry%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCountry()), "UTF-8").replaceAll("\\+", "%20")));
+                            } catch (UnsupportedEncodingException e) {
+                            // Should never happen, UTF-8 is always supported
+                            throw new RuntimeException(e);
+                            }
+                            }
+
+            // add `email` to the URL query string
+                        if (getEmail() != null) {
+                        try {
+                        joiner.add(String.format("%semail%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getEmail()), "UTF-8").replaceAll("\\+", "%20")));
+                        } catch (UnsupportedEncodingException e) {
+                        // Should never happen, UTF-8 is always supported
+                        throw new RuntimeException(e);
+                        }
+                        }
+
+        return joiner.toString();
+        }
+
     }
-
-    // add `email` to the URL query string
-    if (getEmail() != null) {
-      try {
-        joiner.add(String.format("%semail%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getEmail()), "UTF-8").replaceAll("\\+", "%20")));
-      } catch (UnsupportedEncodingException e) {
-        // Should never happen, UTF-8 is always supported
-        throw new RuntimeException(e);
-      }
-    }
-
-    return joiner.toString();
-  }
-
-}
 

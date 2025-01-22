@@ -28,125 +28,126 @@ import java.net.URLEncoder;
 import java.util.StringJoiner;
 
 /**
- * MobilePaymentNextStepData
- */
-@JsonPropertyOrder({
-  MobilePaymentNextStepData.JSON_PROPERTY_CONSENT_DATA_REQUIRED
-})
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+* MobilePaymentNextStepData
+*/
+    @JsonPropertyOrder({
+        MobilePaymentNextStepData.JSON_PROPERTY_CONSENT_DATA_REQUIRED
+    })
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class MobilePaymentNextStepData {
-  public static final String JSON_PROPERTY_CONSENT_DATA_REQUIRED = "consent_data_required";
-  private MobilePaymentConsent consentDataRequired;
+        public static final String JSON_PROPERTY_CONSENT_DATA_REQUIRED = "consent_data_required";
+    @javax.annotation.Nonnull
+            private MobilePaymentConsent consentDataRequired;
 
-  public MobilePaymentNextStepData() {
-  }
+public MobilePaymentNextStepData() {
+}
 
-  public MobilePaymentNextStepData consentDataRequired(MobilePaymentConsent consentDataRequired) {
-    
-    this.consentDataRequired = consentDataRequired;
-    return this;
-  }
+        public MobilePaymentNextStepData consentDataRequired(@javax.annotation.Nonnull MobilePaymentConsent consentDataRequired) {
+        
+        this.consentDataRequired = consentDataRequired;
+        return this;
+        }
 
-   /**
-   * Get consentDataRequired
-   * @return consentDataRequired
-  **/
-  @javax.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_CONSENT_DATA_REQUIRED)
+    /**
+        * Get consentDataRequired
+    * @return consentDataRequired
+    */
+    @javax.annotation.Nonnull
+      @JsonProperty(JSON_PROPERTY_CONSENT_DATA_REQUIRED)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-  public MobilePaymentConsent getConsentDataRequired() {
-    return consentDataRequired;
-  }
+    public MobilePaymentConsent getConsentDataRequired() {
+        return consentDataRequired;
+    }
 
 
-  @JsonProperty(JSON_PROPERTY_CONSENT_DATA_REQUIRED)
+          @JsonProperty(JSON_PROPERTY_CONSENT_DATA_REQUIRED)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setConsentDataRequired(MobilePaymentConsent consentDataRequired) {
-    this.consentDataRequired = consentDataRequired;
-  }
+  public void setConsentDataRequired(@javax.annotation.Nonnull MobilePaymentConsent consentDataRequired) {
+            this.consentDataRequired = consentDataRequired;
+        }
 
-  @Override
-  public boolean equals(Object o) {
+@Override
+public boolean equals(Object o) {
     if (this == o) {
-      return true;
+    return true;
     }
     if (o == null || getClass() != o.getClass()) {
-      return false;
+    return false;
     }
-    MobilePaymentNextStepData mobilePaymentNextStepData = (MobilePaymentNextStepData) o;
-    return Objects.equals(this.consentDataRequired, mobilePaymentNextStepData.consentDataRequired);
-  }
+        MobilePaymentNextStepData mobilePaymentNextStepData = (MobilePaymentNextStepData) o;
+        return Objects.equals(this.consentDataRequired, mobilePaymentNextStepData.consentDataRequired);
+}
 
-  @Override
-  public int hashCode() {
-    return Objects.hash(consentDataRequired);
-  }
+    @Override
+    public int hashCode() {
+        return Objects.hash(consentDataRequired);
+    }
 
-  @Override
-  public String toString() {
+    @Override
+    public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class MobilePaymentNextStepData {\n");
-    sb.append("    consentDataRequired: ").append(toIndentedString(consentDataRequired)).append("\n");
+        sb.append("    consentDataRequired: ").append(toIndentedString(consentDataRequired)).append("\n");
     sb.append("}");
     return sb.toString();
-  }
+    }
 
-  /**
-   * Convert the given object to string with each line indented by 4 spaces
-   * (except the first line).
-   */
-  private String toIndentedString(Object o) {
+    /**
+    * Convert the given object to string with each line indented by 4 spaces
+    * (except the first line).
+    */
+    private String toIndentedString(Object o) {
     if (o == null) {
-      return "null";
+    return "null";
     }
     return o.toString().replace("\n", "\n    ");
-  }
-
-  /**
-   * Convert the instance into URL query string.
-   *
-   * @return URL query string
-   */
-  public String toUrlQueryString() {
-    return toUrlQueryString(null);
-  }
-
-  /**
-   * Convert the instance into URL query string.
-   *
-   * @param prefix prefix of the query string
-   * @return URL query string
-   */
-  public String toUrlQueryString(String prefix) {
-    String suffix = "";
-    String containerSuffix = "";
-    String containerPrefix = "";
-    if (prefix == null) {
-      // style=form, explode=true, e.g. /pet?name=cat&type=manx
-      prefix = "";
-    } else {
-      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
-      prefix = prefix + "[";
-      suffix = "]";
-      containerSuffix = "]";
-      containerPrefix = "[";
     }
 
-    StringJoiner joiner = new StringJoiner("&");
+        /**
+        * Convert the instance into URL query string.
+        *
+        * @return URL query string
+        */
+        public String toUrlQueryString() {
+        return toUrlQueryString(null);
+        }
 
-    // add `consent_data_required` to the URL query string
-    if (getConsentDataRequired() != null) {
-      try {
-        joiner.add(String.format("%sconsent_data_required%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getConsentDataRequired()), "UTF-8").replaceAll("\\+", "%20")));
-      } catch (UnsupportedEncodingException e) {
-        // Should never happen, UTF-8 is always supported
-        throw new RuntimeException(e);
-      }
+        /**
+        * Convert the instance into URL query string.
+        *
+        * @param prefix prefix of the query string
+        * @return URL query string
+        */
+        public String toUrlQueryString(String prefix) {
+        String suffix = "";
+        String containerSuffix = "";
+        String containerPrefix = "";
+        if (prefix == null) {
+        // style=form, explode=true, e.g. /pet?name=cat&type=manx
+        prefix = "";
+        } else {
+        // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+        prefix = prefix + "[";
+        suffix = "]";
+        containerSuffix = "]";
+        containerPrefix = "[";
+        }
+
+        StringJoiner joiner = new StringJoiner("&");
+
+            // add `consent_data_required` to the URL query string
+                            if (getConsentDataRequired() != null) {
+                            try {
+                            joiner.add(String.format("%sconsent_data_required%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getConsentDataRequired()), "UTF-8").replaceAll("\\+", "%20")));
+                            } catch (UnsupportedEncodingException e) {
+                            // Should never happen, UTF-8 is always supported
+                            throw new RuntimeException(e);
+                            }
+                            }
+
+        return joiner.toString();
+        }
+
     }
-
-    return joiner.toString();
-  }
-
-}
 

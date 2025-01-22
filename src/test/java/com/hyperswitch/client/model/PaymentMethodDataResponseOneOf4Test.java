@@ -19,22 +19,21 @@ import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonTypeName;
 import com.fasterxml.jackson.annotation.JsonValue;
 import com.hyperswitch.client.model.BankRedirectResponse;
-import org.junit.Assert;
-import org.junit.Ignore;
-import org.junit.Test;
-
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Test;
 
 /**
  * Model tests for PaymentMethodDataResponseOneOf4
  */
-public class PaymentMethodDataResponseOneOf4Test {
+class PaymentMethodDataResponseOneOf4Test {
     private final PaymentMethodDataResponseOneOf4 model = new PaymentMethodDataResponseOneOf4();
 
     /**
      * Model tests for PaymentMethodDataResponseOneOf4
      */
     @Test
-    public void testPaymentMethodDataResponseOneOf4() {
+    void testPaymentMethodDataResponseOneOf4() {
         // TODO: test PaymentMethodDataResponseOneOf4
     }
 
@@ -42,7 +41,7 @@ public class PaymentMethodDataResponseOneOf4Test {
      * Test the property 'bankRedirect'
      */
     @Test
-    public void bankRedirectTest() {
+    void bankRedirectTest() {
         // TODO: test bankRedirect
     }
 

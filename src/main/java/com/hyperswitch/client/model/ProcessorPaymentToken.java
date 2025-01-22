@@ -31,186 +31,187 @@ import java.net.URLEncoder;
 import java.util.StringJoiner;
 
 /**
- * Processor payment token for MIT payments where payment_method_data is not available
- */
-@JsonPropertyOrder({
-  ProcessorPaymentToken.JSON_PROPERTY_PROCESSOR_PAYMENT_TOKEN,
-  ProcessorPaymentToken.JSON_PROPERTY_MERCHANT_CONNECTOR_ID
-})
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+* Processor payment token for MIT payments where payment_method_data is not available
+*/
+    @JsonPropertyOrder({
+        ProcessorPaymentToken.JSON_PROPERTY_PROCESSOR_PAYMENT_TOKEN,
+        ProcessorPaymentToken.JSON_PROPERTY_MERCHANT_CONNECTOR_ID
+    })
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class ProcessorPaymentToken {
-  public static final String JSON_PROPERTY_PROCESSOR_PAYMENT_TOKEN = "processor_payment_token";
-  private String processorPaymentToken;
+        public static final String JSON_PROPERTY_PROCESSOR_PAYMENT_TOKEN = "processor_payment_token";
+    @javax.annotation.Nonnull
+            private String processorPaymentToken;
 
-  public static final String JSON_PROPERTY_MERCHANT_CONNECTOR_ID = "merchant_connector_id";
-  private JsonNullable<String> merchantConnectorId = JsonNullable.<String>undefined();
+        public static final String JSON_PROPERTY_MERCHANT_CONNECTOR_ID = "merchant_connector_id";
+    @javax.annotation.Nullable
+            private JsonNullable<String> merchantConnectorId = JsonNullable.<String>undefined();
 
-  public ProcessorPaymentToken() {
-  }
+public ProcessorPaymentToken() {
+}
 
-  public ProcessorPaymentToken processorPaymentToken(String processorPaymentToken) {
-    
-    this.processorPaymentToken = processorPaymentToken;
-    return this;
-  }
+        public ProcessorPaymentToken processorPaymentToken(@javax.annotation.Nonnull String processorPaymentToken) {
+        
+        this.processorPaymentToken = processorPaymentToken;
+        return this;
+        }
 
-   /**
-   * Get processorPaymentToken
-   * @return processorPaymentToken
-  **/
-  @javax.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_PROCESSOR_PAYMENT_TOKEN)
+    /**
+        * Get processorPaymentToken
+    * @return processorPaymentToken
+    */
+    @javax.annotation.Nonnull
+      @JsonProperty(JSON_PROPERTY_PROCESSOR_PAYMENT_TOKEN)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-  public String getProcessorPaymentToken() {
-    return processorPaymentToken;
-  }
+    public String getProcessorPaymentToken() {
+        return processorPaymentToken;
+    }
 
 
-  @JsonProperty(JSON_PROPERTY_PROCESSOR_PAYMENT_TOKEN)
+          @JsonProperty(JSON_PROPERTY_PROCESSOR_PAYMENT_TOKEN)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setProcessorPaymentToken(String processorPaymentToken) {
-    this.processorPaymentToken = processorPaymentToken;
-  }
+  public void setProcessorPaymentToken(@javax.annotation.Nonnull String processorPaymentToken) {
+            this.processorPaymentToken = processorPaymentToken;
+        }
 
+        public ProcessorPaymentToken merchantConnectorId(@javax.annotation.Nullable String merchantConnectorId) {
+        this.merchantConnectorId = JsonNullable.<String>of(merchantConnectorId);
+        
+        return this;
+        }
 
-  public ProcessorPaymentToken merchantConnectorId(String merchantConnectorId) {
-    this.merchantConnectorId = JsonNullable.<String>of(merchantConnectorId);
+    /**
+        * Get merchantConnectorId
+    * @return merchantConnectorId
+    */
+    @javax.annotation.Nullable
+        @JsonIgnore
     
-    return this;
-  }
+    public String getMerchantConnectorId() {
+                return merchantConnectorId.orElse(null);
+    }
 
-   /**
-   * Get merchantConnectorId
-   * @return merchantConnectorId
-  **/
-  @javax.annotation.Nullable
-  @JsonIgnore
-
-  public String getMerchantConnectorId() {
-        return merchantConnectorId.orElse(null);
-  }
-
-  @JsonProperty(JSON_PROPERTY_MERCHANT_CONNECTOR_ID)
+          @JsonProperty(JSON_PROPERTY_MERCHANT_CONNECTOR_ID)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-  public JsonNullable<String> getMerchantConnectorId_JsonNullable() {
-    return merchantConnectorId;
-  }
-  
-  @JsonProperty(JSON_PROPERTY_MERCHANT_CONNECTOR_ID)
-  public void setMerchantConnectorId_JsonNullable(JsonNullable<String> merchantConnectorId) {
-    this.merchantConnectorId = merchantConnectorId;
-  }
+        public JsonNullable<String> getMerchantConnectorId_JsonNullable() {
+        return merchantConnectorId;
+        }
+    
+        @JsonProperty(JSON_PROPERTY_MERCHANT_CONNECTOR_ID)
+        public void setMerchantConnectorId_JsonNullable(JsonNullable<String> merchantConnectorId) {
+        this.merchantConnectorId = merchantConnectorId;
+        }
 
-  public void setMerchantConnectorId(String merchantConnectorId) {
-    this.merchantConnectorId = JsonNullable.<String>of(merchantConnectorId);
-  }
+          public void setMerchantConnectorId(@javax.annotation.Nullable String merchantConnectorId) {
+            this.merchantConnectorId = JsonNullable.<String>of(merchantConnectorId);
+        }
 
-  @Override
-  public boolean equals(Object o) {
+@Override
+public boolean equals(Object o) {
     if (this == o) {
-      return true;
+    return true;
     }
     if (o == null || getClass() != o.getClass()) {
-      return false;
+    return false;
     }
-    ProcessorPaymentToken processorPaymentToken = (ProcessorPaymentToken) o;
-    return Objects.equals(this.processorPaymentToken, processorPaymentToken.processorPaymentToken) &&
+        ProcessorPaymentToken processorPaymentToken = (ProcessorPaymentToken) o;
+        return Objects.equals(this.processorPaymentToken, processorPaymentToken.processorPaymentToken) &&
         equalsNullable(this.merchantConnectorId, processorPaymentToken.merchantConnectorId);
-  }
+}
 
-  private static <T> boolean equalsNullable(JsonNullable<T> a, JsonNullable<T> b) {
-    return a == b || (a != null && b != null && a.isPresent() && b.isPresent() && Objects.deepEquals(a.get(), b.get()));
-  }
+    private static <T> boolean equalsNullable(JsonNullable<T> a, JsonNullable<T> b) {
+        return a == b || (a != null && b != null && a.isPresent() && b.isPresent() && Objects.deepEquals(a.get(), b.get()));
+        }
 
-  @Override
-  public int hashCode() {
-    return Objects.hash(processorPaymentToken, hashCodeNullable(merchantConnectorId));
-  }
-
-  private static <T> int hashCodeNullable(JsonNullable<T> a) {
-    if (a == null) {
-      return 1;
+    @Override
+    public int hashCode() {
+        return Objects.hash(processorPaymentToken, hashCodeNullable(merchantConnectorId));
     }
-    return a.isPresent() ? Arrays.deepHashCode(new Object[]{a.get()}) : 31;
-  }
 
-  @Override
-  public String toString() {
+        private static <T> int hashCodeNullable(JsonNullable<T> a) {
+        if (a == null) {
+        return 1;
+        }
+        return a.isPresent() ? Arrays.deepHashCode(new Object[]{a.get()}) : 31;
+        }
+
+    @Override
+    public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class ProcessorPaymentToken {\n");
-    sb.append("    processorPaymentToken: ").append(toIndentedString(processorPaymentToken)).append("\n");
-    sb.append("    merchantConnectorId: ").append(toIndentedString(merchantConnectorId)).append("\n");
+        sb.append("    processorPaymentToken: ").append(toIndentedString(processorPaymentToken)).append("\n");
+        sb.append("    merchantConnectorId: ").append(toIndentedString(merchantConnectorId)).append("\n");
     sb.append("}");
     return sb.toString();
-  }
+    }
 
-  /**
-   * Convert the given object to string with each line indented by 4 spaces
-   * (except the first line).
-   */
-  private String toIndentedString(Object o) {
+    /**
+    * Convert the given object to string with each line indented by 4 spaces
+    * (except the first line).
+    */
+    private String toIndentedString(Object o) {
     if (o == null) {
-      return "null";
+    return "null";
     }
     return o.toString().replace("\n", "\n    ");
-  }
-
-  /**
-   * Convert the instance into URL query string.
-   *
-   * @return URL query string
-   */
-  public String toUrlQueryString() {
-    return toUrlQueryString(null);
-  }
-
-  /**
-   * Convert the instance into URL query string.
-   *
-   * @param prefix prefix of the query string
-   * @return URL query string
-   */
-  public String toUrlQueryString(String prefix) {
-    String suffix = "";
-    String containerSuffix = "";
-    String containerPrefix = "";
-    if (prefix == null) {
-      // style=form, explode=true, e.g. /pet?name=cat&type=manx
-      prefix = "";
-    } else {
-      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
-      prefix = prefix + "[";
-      suffix = "]";
-      containerSuffix = "]";
-      containerPrefix = "[";
     }
 
-    StringJoiner joiner = new StringJoiner("&");
+        /**
+        * Convert the instance into URL query string.
+        *
+        * @return URL query string
+        */
+        public String toUrlQueryString() {
+        return toUrlQueryString(null);
+        }
 
-    // add `processor_payment_token` to the URL query string
-    if (getProcessorPaymentToken() != null) {
-      try {
-        joiner.add(String.format("%sprocessor_payment_token%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getProcessorPaymentToken()), "UTF-8").replaceAll("\\+", "%20")));
-      } catch (UnsupportedEncodingException e) {
-        // Should never happen, UTF-8 is always supported
-        throw new RuntimeException(e);
-      }
+        /**
+        * Convert the instance into URL query string.
+        *
+        * @param prefix prefix of the query string
+        * @return URL query string
+        */
+        public String toUrlQueryString(String prefix) {
+        String suffix = "";
+        String containerSuffix = "";
+        String containerPrefix = "";
+        if (prefix == null) {
+        // style=form, explode=true, e.g. /pet?name=cat&type=manx
+        prefix = "";
+        } else {
+        // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+        prefix = prefix + "[";
+        suffix = "]";
+        containerSuffix = "]";
+        containerPrefix = "[";
+        }
+
+        StringJoiner joiner = new StringJoiner("&");
+
+            // add `processor_payment_token` to the URL query string
+                        if (getProcessorPaymentToken() != null) {
+                        try {
+                        joiner.add(String.format("%sprocessor_payment_token%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getProcessorPaymentToken()), "UTF-8").replaceAll("\\+", "%20")));
+                        } catch (UnsupportedEncodingException e) {
+                        // Should never happen, UTF-8 is always supported
+                        throw new RuntimeException(e);
+                        }
+                        }
+
+            // add `merchant_connector_id` to the URL query string
+                        if (getMerchantConnectorId() != null) {
+                        try {
+                        joiner.add(String.format("%smerchant_connector_id%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getMerchantConnectorId()), "UTF-8").replaceAll("\\+", "%20")));
+                        } catch (UnsupportedEncodingException e) {
+                        // Should never happen, UTF-8 is always supported
+                        throw new RuntimeException(e);
+                        }
+                        }
+
+        return joiner.toString();
+        }
+
     }
-
-    // add `merchant_connector_id` to the URL query string
-    if (getMerchantConnectorId() != null) {
-      try {
-        joiner.add(String.format("%smerchant_connector_id%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getMerchantConnectorId()), "UTF-8").replaceAll("\\+", "%20")));
-      } catch (UnsupportedEncodingException e) {
-        // Should never happen, UTF-8 is always supported
-        throw new RuntimeException(e);
-      }
-    }
-
-    return joiner.toString();
-  }
-
-}
 

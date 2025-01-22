@@ -22,6 +22,7 @@ import com.hyperswitch.client.model.PaymentLinkBackgroundImageConfig;
 import com.hyperswitch.client.model.PaymentLinkDetailsLayout;
 import com.hyperswitch.client.model.PaymentLinkTransactionDetails;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.LinkedHashSet;
 import java.util.List;
 import java.util.Set;
@@ -29,22 +30,21 @@ import org.openapitools.jackson.nullable.JsonNullable;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.openapitools.jackson.nullable.JsonNullable;
 import java.util.NoSuchElementException;
-import org.junit.Assert;
-import org.junit.Ignore;
-import org.junit.Test;
-
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Test;
 
 /**
  * Model tests for PaymentLinkConfig
  */
-public class PaymentLinkConfigTest {
+class PaymentLinkConfigTest {
     private final PaymentLinkConfig model = new PaymentLinkConfig();
 
     /**
      * Model tests for PaymentLinkConfig
      */
     @Test
-    public void testPaymentLinkConfig() {
+    void testPaymentLinkConfig() {
         // TODO: test PaymentLinkConfig
     }
 
@@ -52,7 +52,7 @@ public class PaymentLinkConfigTest {
      * Test the property 'theme'
      */
     @Test
-    public void themeTest() {
+    void themeTest() {
         // TODO: test theme
     }
 
@@ -60,7 +60,7 @@ public class PaymentLinkConfigTest {
      * Test the property 'logo'
      */
     @Test
-    public void logoTest() {
+    void logoTest() {
         // TODO: test logo
     }
 
@@ -68,7 +68,7 @@ public class PaymentLinkConfigTest {
      * Test the property 'sellerName'
      */
     @Test
-    public void sellerNameTest() {
+    void sellerNameTest() {
         // TODO: test sellerName
     }
 
@@ -76,7 +76,7 @@ public class PaymentLinkConfigTest {
      * Test the property 'sdkLayout'
      */
     @Test
-    public void sdkLayoutTest() {
+    void sdkLayoutTest() {
         // TODO: test sdkLayout
     }
 
@@ -84,7 +84,7 @@ public class PaymentLinkConfigTest {
      * Test the property 'displaySdkOnly'
      */
     @Test
-    public void displaySdkOnlyTest() {
+    void displaySdkOnlyTest() {
         // TODO: test displaySdkOnly
     }
 
@@ -92,7 +92,7 @@ public class PaymentLinkConfigTest {
      * Test the property 'enabledSavedPaymentMethod'
      */
     @Test
-    public void enabledSavedPaymentMethodTest() {
+    void enabledSavedPaymentMethodTest() {
         // TODO: test enabledSavedPaymentMethod
     }
 
@@ -100,7 +100,7 @@ public class PaymentLinkConfigTest {
      * Test the property 'hideCardNicknameField'
      */
     @Test
-    public void hideCardNicknameFieldTest() {
+    void hideCardNicknameFieldTest() {
         // TODO: test hideCardNicknameField
     }
 
@@ -108,7 +108,7 @@ public class PaymentLinkConfigTest {
      * Test the property 'showCardFormByDefault'
      */
     @Test
-    public void showCardFormByDefaultTest() {
+    void showCardFormByDefaultTest() {
         // TODO: test showCardFormByDefault
     }
 
@@ -116,7 +116,7 @@ public class PaymentLinkConfigTest {
      * Test the property 'allowedDomains'
      */
     @Test
-    public void allowedDomainsTest() {
+    void allowedDomainsTest() {
         // TODO: test allowedDomains
     }
 
@@ -124,7 +124,7 @@ public class PaymentLinkConfigTest {
      * Test the property 'transactionDetails'
      */
     @Test
-    public void transactionDetailsTest() {
+    void transactionDetailsTest() {
         // TODO: test transactionDetails
     }
 
@@ -132,7 +132,7 @@ public class PaymentLinkConfigTest {
      * Test the property 'backgroundImage'
      */
     @Test
-    public void backgroundImageTest() {
+    void backgroundImageTest() {
         // TODO: test backgroundImage
     }
 
@@ -140,7 +140,7 @@ public class PaymentLinkConfigTest {
      * Test the property 'detailsLayout'
      */
     @Test
-    public void detailsLayoutTest() {
+    void detailsLayoutTest() {
         // TODO: test detailsLayout
     }
 
@@ -148,7 +148,7 @@ public class PaymentLinkConfigTest {
      * Test the property 'brandingVisibility'
      */
     @Test
-    public void brandingVisibilityTest() {
+    void brandingVisibilityTest() {
         // TODO: test brandingVisibility
     }
 

@@ -27,167 +27,168 @@ import java.net.URLEncoder;
 import java.util.StringJoiner;
 
 /**
- * PaymentMethodDeleteResponse
- */
-@JsonPropertyOrder({
-  PaymentMethodDeleteResponse.JSON_PROPERTY_PAYMENT_METHOD_ID,
-  PaymentMethodDeleteResponse.JSON_PROPERTY_DELETED
-})
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+* PaymentMethodDeleteResponse
+*/
+    @JsonPropertyOrder({
+        PaymentMethodDeleteResponse.JSON_PROPERTY_PAYMENT_METHOD_ID,
+        PaymentMethodDeleteResponse.JSON_PROPERTY_DELETED
+    })
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class PaymentMethodDeleteResponse {
-  public static final String JSON_PROPERTY_PAYMENT_METHOD_ID = "payment_method_id";
-  private String paymentMethodId;
+        public static final String JSON_PROPERTY_PAYMENT_METHOD_ID = "payment_method_id";
+    @javax.annotation.Nonnull
+            private String paymentMethodId;
 
-  public static final String JSON_PROPERTY_DELETED = "deleted";
-  private Boolean deleted;
+        public static final String JSON_PROPERTY_DELETED = "deleted";
+    @javax.annotation.Nonnull
+            private Boolean deleted;
 
-  public PaymentMethodDeleteResponse() {
-  }
+public PaymentMethodDeleteResponse() {
+}
 
-  public PaymentMethodDeleteResponse paymentMethodId(String paymentMethodId) {
-    
-    this.paymentMethodId = paymentMethodId;
-    return this;
-  }
+        public PaymentMethodDeleteResponse paymentMethodId(@javax.annotation.Nonnull String paymentMethodId) {
+        
+        this.paymentMethodId = paymentMethodId;
+        return this;
+        }
 
-   /**
-   * The unique identifier of the Payment method
-   * @return paymentMethodId
-  **/
-  @javax.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_PAYMENT_METHOD_ID)
+    /**
+        * The unique identifier of the Payment method
+    * @return paymentMethodId
+    */
+    @javax.annotation.Nonnull
+      @JsonProperty(JSON_PROPERTY_PAYMENT_METHOD_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-  public String getPaymentMethodId() {
-    return paymentMethodId;
-  }
+    public String getPaymentMethodId() {
+        return paymentMethodId;
+    }
 
 
-  @JsonProperty(JSON_PROPERTY_PAYMENT_METHOD_ID)
+          @JsonProperty(JSON_PROPERTY_PAYMENT_METHOD_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setPaymentMethodId(String paymentMethodId) {
-    this.paymentMethodId = paymentMethodId;
-  }
+  public void setPaymentMethodId(@javax.annotation.Nonnull String paymentMethodId) {
+            this.paymentMethodId = paymentMethodId;
+        }
 
+        public PaymentMethodDeleteResponse deleted(@javax.annotation.Nonnull Boolean deleted) {
+        
+        this.deleted = deleted;
+        return this;
+        }
 
-  public PaymentMethodDeleteResponse deleted(Boolean deleted) {
-    
-    this.deleted = deleted;
-    return this;
-  }
-
-   /**
-   * Whether payment method was deleted or not
-   * @return deleted
-  **/
-  @javax.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_DELETED)
+    /**
+        * Whether payment method was deleted or not
+    * @return deleted
+    */
+    @javax.annotation.Nonnull
+      @JsonProperty(JSON_PROPERTY_DELETED)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-  public Boolean getDeleted() {
-    return deleted;
-  }
+    public Boolean getDeleted() {
+        return deleted;
+    }
 
 
-  @JsonProperty(JSON_PROPERTY_DELETED)
+          @JsonProperty(JSON_PROPERTY_DELETED)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setDeleted(Boolean deleted) {
-    this.deleted = deleted;
-  }
+  public void setDeleted(@javax.annotation.Nonnull Boolean deleted) {
+            this.deleted = deleted;
+        }
 
-  @Override
-  public boolean equals(Object o) {
+@Override
+public boolean equals(Object o) {
     if (this == o) {
-      return true;
+    return true;
     }
     if (o == null || getClass() != o.getClass()) {
-      return false;
+    return false;
     }
-    PaymentMethodDeleteResponse paymentMethodDeleteResponse = (PaymentMethodDeleteResponse) o;
-    return Objects.equals(this.paymentMethodId, paymentMethodDeleteResponse.paymentMethodId) &&
+        PaymentMethodDeleteResponse paymentMethodDeleteResponse = (PaymentMethodDeleteResponse) o;
+        return Objects.equals(this.paymentMethodId, paymentMethodDeleteResponse.paymentMethodId) &&
         Objects.equals(this.deleted, paymentMethodDeleteResponse.deleted);
-  }
+}
 
-  @Override
-  public int hashCode() {
-    return Objects.hash(paymentMethodId, deleted);
-  }
+    @Override
+    public int hashCode() {
+        return Objects.hash(paymentMethodId, deleted);
+    }
 
-  @Override
-  public String toString() {
+    @Override
+    public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class PaymentMethodDeleteResponse {\n");
-    sb.append("    paymentMethodId: ").append(toIndentedString(paymentMethodId)).append("\n");
-    sb.append("    deleted: ").append(toIndentedString(deleted)).append("\n");
+        sb.append("    paymentMethodId: ").append(toIndentedString(paymentMethodId)).append("\n");
+        sb.append("    deleted: ").append(toIndentedString(deleted)).append("\n");
     sb.append("}");
     return sb.toString();
-  }
+    }
 
-  /**
-   * Convert the given object to string with each line indented by 4 spaces
-   * (except the first line).
-   */
-  private String toIndentedString(Object o) {
+    /**
+    * Convert the given object to string with each line indented by 4 spaces
+    * (except the first line).
+    */
+    private String toIndentedString(Object o) {
     if (o == null) {
-      return "null";
+    return "null";
     }
     return o.toString().replace("\n", "\n    ");
-  }
-
-  /**
-   * Convert the instance into URL query string.
-   *
-   * @return URL query string
-   */
-  public String toUrlQueryString() {
-    return toUrlQueryString(null);
-  }
-
-  /**
-   * Convert the instance into URL query string.
-   *
-   * @param prefix prefix of the query string
-   * @return URL query string
-   */
-  public String toUrlQueryString(String prefix) {
-    String suffix = "";
-    String containerSuffix = "";
-    String containerPrefix = "";
-    if (prefix == null) {
-      // style=form, explode=true, e.g. /pet?name=cat&type=manx
-      prefix = "";
-    } else {
-      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
-      prefix = prefix + "[";
-      suffix = "]";
-      containerSuffix = "]";
-      containerPrefix = "[";
     }
 
-    StringJoiner joiner = new StringJoiner("&");
+        /**
+        * Convert the instance into URL query string.
+        *
+        * @return URL query string
+        */
+        public String toUrlQueryString() {
+        return toUrlQueryString(null);
+        }
 
-    // add `payment_method_id` to the URL query string
-    if (getPaymentMethodId() != null) {
-      try {
-        joiner.add(String.format("%spayment_method_id%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getPaymentMethodId()), "UTF-8").replaceAll("\\+", "%20")));
-      } catch (UnsupportedEncodingException e) {
-        // Should never happen, UTF-8 is always supported
-        throw new RuntimeException(e);
-      }
+        /**
+        * Convert the instance into URL query string.
+        *
+        * @param prefix prefix of the query string
+        * @return URL query string
+        */
+        public String toUrlQueryString(String prefix) {
+        String suffix = "";
+        String containerSuffix = "";
+        String containerPrefix = "";
+        if (prefix == null) {
+        // style=form, explode=true, e.g. /pet?name=cat&type=manx
+        prefix = "";
+        } else {
+        // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+        prefix = prefix + "[";
+        suffix = "]";
+        containerSuffix = "]";
+        containerPrefix = "[";
+        }
+
+        StringJoiner joiner = new StringJoiner("&");
+
+            // add `payment_method_id` to the URL query string
+                        if (getPaymentMethodId() != null) {
+                        try {
+                        joiner.add(String.format("%spayment_method_id%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getPaymentMethodId()), "UTF-8").replaceAll("\\+", "%20")));
+                        } catch (UnsupportedEncodingException e) {
+                        // Should never happen, UTF-8 is always supported
+                        throw new RuntimeException(e);
+                        }
+                        }
+
+            // add `deleted` to the URL query string
+                        if (getDeleted() != null) {
+                        try {
+                        joiner.add(String.format("%sdeleted%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getDeleted()), "UTF-8").replaceAll("\\+", "%20")));
+                        } catch (UnsupportedEncodingException e) {
+                        // Should never happen, UTF-8 is always supported
+                        throw new RuntimeException(e);
+                        }
+                        }
+
+        return joiner.toString();
+        }
+
     }
-
-    // add `deleted` to the URL query string
-    if (getDeleted() != null) {
-      try {
-        joiner.add(String.format("%sdeleted%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getDeleted()), "UTF-8").replaceAll("\\+", "%20")));
-      } catch (UnsupportedEncodingException e) {
-        // Should never happen, UTF-8 is always supported
-        throw new RuntimeException(e);
-      }
-    }
-
-    return joiner.toString();
-  }
-
-}
 

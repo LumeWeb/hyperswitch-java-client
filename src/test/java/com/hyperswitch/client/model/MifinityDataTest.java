@@ -23,22 +23,21 @@ import org.openapitools.jackson.nullable.JsonNullable;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.openapitools.jackson.nullable.JsonNullable;
 import java.util.NoSuchElementException;
-import org.junit.Assert;
-import org.junit.Ignore;
-import org.junit.Test;
-
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Test;
 
 /**
  * Model tests for MifinityData
  */
-public class MifinityDataTest {
+class MifinityDataTest {
     private final MifinityData model = new MifinityData();
 
     /**
      * Model tests for MifinityData
      */
     @Test
-    public void testMifinityData() {
+    void testMifinityData() {
         // TODO: test MifinityData
     }
 
@@ -46,7 +45,7 @@ public class MifinityDataTest {
      * Test the property 'dateOfBirth'
      */
     @Test
-    public void dateOfBirthTest() {
+    void dateOfBirthTest() {
         // TODO: test dateOfBirth
     }
 
@@ -54,7 +53,7 @@ public class MifinityDataTest {
      * Test the property 'languagePreference'
      */
     @Test
-    public void languagePreferenceTest() {
+    void languagePreferenceTest() {
         // TODO: test languagePreference
     }
 

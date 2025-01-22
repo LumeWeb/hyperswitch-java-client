@@ -34,231 +34,232 @@ import java.net.URLEncoder;
 import java.util.StringJoiner;
 
 /**
- * This \&quot;CustomerAcceptance\&quot; object is passed during Payments-Confirm request, it enlists the type, time, and mode of acceptance properties related to an acceptance done by the customer. The customer_acceptance sub object is usually passed by the SDK or client.
- */
-@JsonPropertyOrder({
-  CustomerAcceptance.JSON_PROPERTY_ACCEPTANCE_TYPE,
-  CustomerAcceptance.JSON_PROPERTY_ACCEPTED_AT,
-  CustomerAcceptance.JSON_PROPERTY_ONLINE
-})
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+* This \&quot;CustomerAcceptance\&quot; object is passed during Payments-Confirm request, it enlists the type, time, and mode of acceptance properties related to an acceptance done by the customer. The customer_acceptance sub object is usually passed by the SDK or client.
+*/
+    @JsonPropertyOrder({
+        CustomerAcceptance.JSON_PROPERTY_ACCEPTANCE_TYPE,
+        CustomerAcceptance.JSON_PROPERTY_ACCEPTED_AT,
+        CustomerAcceptance.JSON_PROPERTY_ONLINE
+    })
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class CustomerAcceptance {
-  public static final String JSON_PROPERTY_ACCEPTANCE_TYPE = "acceptance_type";
-  private AcceptanceType acceptanceType;
+        public static final String JSON_PROPERTY_ACCEPTANCE_TYPE = "acceptance_type";
+    @javax.annotation.Nonnull
+            private AcceptanceType acceptanceType;
 
-  public static final String JSON_PROPERTY_ACCEPTED_AT = "accepted_at";
-  private JsonNullable<OffsetDateTime> acceptedAt = JsonNullable.<OffsetDateTime>undefined();
+        public static final String JSON_PROPERTY_ACCEPTED_AT = "accepted_at";
+    @javax.annotation.Nullable
+            private JsonNullable<OffsetDateTime> acceptedAt = JsonNullable.<OffsetDateTime>undefined();
 
-  public static final String JSON_PROPERTY_ONLINE = "online";
-  private JsonNullable<OnlineMandate> online = JsonNullable.<OnlineMandate>undefined();
+        public static final String JSON_PROPERTY_ONLINE = "online";
+    @javax.annotation.Nullable
+            private JsonNullable<OnlineMandate> online = JsonNullable.<OnlineMandate>undefined();
 
-  public CustomerAcceptance() {
-  }
+public CustomerAcceptance() {
+}
 
-  public CustomerAcceptance acceptanceType(AcceptanceType acceptanceType) {
-    
-    this.acceptanceType = acceptanceType;
-    return this;
-  }
+        public CustomerAcceptance acceptanceType(@javax.annotation.Nonnull AcceptanceType acceptanceType) {
+        
+        this.acceptanceType = acceptanceType;
+        return this;
+        }
 
-   /**
-   * Get acceptanceType
-   * @return acceptanceType
-  **/
-  @javax.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_ACCEPTANCE_TYPE)
+    /**
+        * Get acceptanceType
+    * @return acceptanceType
+    */
+    @javax.annotation.Nonnull
+      @JsonProperty(JSON_PROPERTY_ACCEPTANCE_TYPE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-  public AcceptanceType getAcceptanceType() {
-    return acceptanceType;
-  }
+    public AcceptanceType getAcceptanceType() {
+        return acceptanceType;
+    }
 
 
-  @JsonProperty(JSON_PROPERTY_ACCEPTANCE_TYPE)
+          @JsonProperty(JSON_PROPERTY_ACCEPTANCE_TYPE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setAcceptanceType(AcceptanceType acceptanceType) {
-    this.acceptanceType = acceptanceType;
-  }
+  public void setAcceptanceType(@javax.annotation.Nonnull AcceptanceType acceptanceType) {
+            this.acceptanceType = acceptanceType;
+        }
 
+        public CustomerAcceptance acceptedAt(@javax.annotation.Nullable OffsetDateTime acceptedAt) {
+        this.acceptedAt = JsonNullable.<OffsetDateTime>of(acceptedAt);
+        
+        return this;
+        }
 
-  public CustomerAcceptance acceptedAt(OffsetDateTime acceptedAt) {
-    this.acceptedAt = JsonNullable.<OffsetDateTime>of(acceptedAt);
+    /**
+        * Specifying when the customer acceptance was provided
+    * @return acceptedAt
+    */
+    @javax.annotation.Nullable
+        @JsonIgnore
     
-    return this;
-  }
+    public OffsetDateTime getAcceptedAt() {
+                return acceptedAt.orElse(null);
+    }
 
-   /**
-   * Specifying when the customer acceptance was provided
-   * @return acceptedAt
-  **/
-  @javax.annotation.Nullable
-  @JsonIgnore
-
-  public OffsetDateTime getAcceptedAt() {
-        return acceptedAt.orElse(null);
-  }
-
-  @JsonProperty(JSON_PROPERTY_ACCEPTED_AT)
+          @JsonProperty(JSON_PROPERTY_ACCEPTED_AT)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-  public JsonNullable<OffsetDateTime> getAcceptedAt_JsonNullable() {
-    return acceptedAt;
-  }
-  
-  @JsonProperty(JSON_PROPERTY_ACCEPTED_AT)
-  public void setAcceptedAt_JsonNullable(JsonNullable<OffsetDateTime> acceptedAt) {
-    this.acceptedAt = acceptedAt;
-  }
-
-  public void setAcceptedAt(OffsetDateTime acceptedAt) {
-    this.acceptedAt = JsonNullable.<OffsetDateTime>of(acceptedAt);
-  }
-
-
-  public CustomerAcceptance online(OnlineMandate online) {
-    this.online = JsonNullable.<OnlineMandate>of(online);
+        public JsonNullable<OffsetDateTime> getAcceptedAt_JsonNullable() {
+        return acceptedAt;
+        }
     
-    return this;
-  }
+        @JsonProperty(JSON_PROPERTY_ACCEPTED_AT)
+        public void setAcceptedAt_JsonNullable(JsonNullable<OffsetDateTime> acceptedAt) {
+        this.acceptedAt = acceptedAt;
+        }
 
-   /**
-   * Get online
-   * @return online
-  **/
-  @javax.annotation.Nullable
-  @JsonIgnore
+          public void setAcceptedAt(@javax.annotation.Nullable OffsetDateTime acceptedAt) {
+            this.acceptedAt = JsonNullable.<OffsetDateTime>of(acceptedAt);
+        }
 
-  public OnlineMandate getOnline() {
-        return online.orElse(null);
-  }
+        public CustomerAcceptance online(@javax.annotation.Nullable OnlineMandate online) {
+        this.online = JsonNullable.<OnlineMandate>of(online);
+        
+        return this;
+        }
 
-  @JsonProperty(JSON_PROPERTY_ONLINE)
+    /**
+        * Get online
+    * @return online
+    */
+    @javax.annotation.Nullable
+        @JsonIgnore
+    
+    public OnlineMandate getOnline() {
+                return online.orElse(null);
+    }
+
+          @JsonProperty(JSON_PROPERTY_ONLINE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-  public JsonNullable<OnlineMandate> getOnline_JsonNullable() {
-    return online;
-  }
-  
-  @JsonProperty(JSON_PROPERTY_ONLINE)
-  public void setOnline_JsonNullable(JsonNullable<OnlineMandate> online) {
-    this.online = online;
-  }
+        public JsonNullable<OnlineMandate> getOnline_JsonNullable() {
+        return online;
+        }
+    
+        @JsonProperty(JSON_PROPERTY_ONLINE)
+        public void setOnline_JsonNullable(JsonNullable<OnlineMandate> online) {
+        this.online = online;
+        }
 
-  public void setOnline(OnlineMandate online) {
-    this.online = JsonNullable.<OnlineMandate>of(online);
-  }
+          public void setOnline(@javax.annotation.Nullable OnlineMandate online) {
+            this.online = JsonNullable.<OnlineMandate>of(online);
+        }
 
-  @Override
-  public boolean equals(Object o) {
+@Override
+public boolean equals(Object o) {
     if (this == o) {
-      return true;
+    return true;
     }
     if (o == null || getClass() != o.getClass()) {
-      return false;
+    return false;
     }
-    CustomerAcceptance customerAcceptance = (CustomerAcceptance) o;
-    return Objects.equals(this.acceptanceType, customerAcceptance.acceptanceType) &&
+        CustomerAcceptance customerAcceptance = (CustomerAcceptance) o;
+        return Objects.equals(this.acceptanceType, customerAcceptance.acceptanceType) &&
         equalsNullable(this.acceptedAt, customerAcceptance.acceptedAt) &&
         equalsNullable(this.online, customerAcceptance.online);
-  }
+}
 
-  private static <T> boolean equalsNullable(JsonNullable<T> a, JsonNullable<T> b) {
-    return a == b || (a != null && b != null && a.isPresent() && b.isPresent() && Objects.deepEquals(a.get(), b.get()));
-  }
+    private static <T> boolean equalsNullable(JsonNullable<T> a, JsonNullable<T> b) {
+        return a == b || (a != null && b != null && a.isPresent() && b.isPresent() && Objects.deepEquals(a.get(), b.get()));
+        }
 
-  @Override
-  public int hashCode() {
-    return Objects.hash(acceptanceType, hashCodeNullable(acceptedAt), hashCodeNullable(online));
-  }
-
-  private static <T> int hashCodeNullable(JsonNullable<T> a) {
-    if (a == null) {
-      return 1;
+    @Override
+    public int hashCode() {
+        return Objects.hash(acceptanceType, hashCodeNullable(acceptedAt), hashCodeNullable(online));
     }
-    return a.isPresent() ? Arrays.deepHashCode(new Object[]{a.get()}) : 31;
-  }
 
-  @Override
-  public String toString() {
+        private static <T> int hashCodeNullable(JsonNullable<T> a) {
+        if (a == null) {
+        return 1;
+        }
+        return a.isPresent() ? Arrays.deepHashCode(new Object[]{a.get()}) : 31;
+        }
+
+    @Override
+    public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class CustomerAcceptance {\n");
-    sb.append("    acceptanceType: ").append(toIndentedString(acceptanceType)).append("\n");
-    sb.append("    acceptedAt: ").append(toIndentedString(acceptedAt)).append("\n");
-    sb.append("    online: ").append(toIndentedString(online)).append("\n");
+        sb.append("    acceptanceType: ").append(toIndentedString(acceptanceType)).append("\n");
+        sb.append("    acceptedAt: ").append(toIndentedString(acceptedAt)).append("\n");
+        sb.append("    online: ").append(toIndentedString(online)).append("\n");
     sb.append("}");
     return sb.toString();
-  }
+    }
 
-  /**
-   * Convert the given object to string with each line indented by 4 spaces
-   * (except the first line).
-   */
-  private String toIndentedString(Object o) {
+    /**
+    * Convert the given object to string with each line indented by 4 spaces
+    * (except the first line).
+    */
+    private String toIndentedString(Object o) {
     if (o == null) {
-      return "null";
+    return "null";
     }
     return o.toString().replace("\n", "\n    ");
-  }
-
-  /**
-   * Convert the instance into URL query string.
-   *
-   * @return URL query string
-   */
-  public String toUrlQueryString() {
-    return toUrlQueryString(null);
-  }
-
-  /**
-   * Convert the instance into URL query string.
-   *
-   * @param prefix prefix of the query string
-   * @return URL query string
-   */
-  public String toUrlQueryString(String prefix) {
-    String suffix = "";
-    String containerSuffix = "";
-    String containerPrefix = "";
-    if (prefix == null) {
-      // style=form, explode=true, e.g. /pet?name=cat&type=manx
-      prefix = "";
-    } else {
-      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
-      prefix = prefix + "[";
-      suffix = "]";
-      containerSuffix = "]";
-      containerPrefix = "[";
     }
 
-    StringJoiner joiner = new StringJoiner("&");
+        /**
+        * Convert the instance into URL query string.
+        *
+        * @return URL query string
+        */
+        public String toUrlQueryString() {
+        return toUrlQueryString(null);
+        }
 
-    // add `acceptance_type` to the URL query string
-    if (getAcceptanceType() != null) {
-      try {
-        joiner.add(String.format("%sacceptance_type%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getAcceptanceType()), "UTF-8").replaceAll("\\+", "%20")));
-      } catch (UnsupportedEncodingException e) {
-        // Should never happen, UTF-8 is always supported
-        throw new RuntimeException(e);
-      }
+        /**
+        * Convert the instance into URL query string.
+        *
+        * @param prefix prefix of the query string
+        * @return URL query string
+        */
+        public String toUrlQueryString(String prefix) {
+        String suffix = "";
+        String containerSuffix = "";
+        String containerPrefix = "";
+        if (prefix == null) {
+        // style=form, explode=true, e.g. /pet?name=cat&type=manx
+        prefix = "";
+        } else {
+        // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+        prefix = prefix + "[";
+        suffix = "]";
+        containerSuffix = "]";
+        containerPrefix = "[";
+        }
+
+        StringJoiner joiner = new StringJoiner("&");
+
+            // add `acceptance_type` to the URL query string
+                            if (getAcceptanceType() != null) {
+                            try {
+                            joiner.add(String.format("%sacceptance_type%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getAcceptanceType()), "UTF-8").replaceAll("\\+", "%20")));
+                            } catch (UnsupportedEncodingException e) {
+                            // Should never happen, UTF-8 is always supported
+                            throw new RuntimeException(e);
+                            }
+                            }
+
+            // add `accepted_at` to the URL query string
+                            if (getAcceptedAt() != null) {
+                            try {
+                            joiner.add(String.format("%saccepted_at%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getAcceptedAt()), "UTF-8").replaceAll("\\+", "%20")));
+                            } catch (UnsupportedEncodingException e) {
+                            // Should never happen, UTF-8 is always supported
+                            throw new RuntimeException(e);
+                            }
+                            }
+
+            // add `online` to the URL query string
+                            if (getOnline() != null) {
+                            joiner.add(getOnline().toUrlQueryString(prefix + "online" + suffix));
+                            }
+
+        return joiner.toString();
+        }
+
     }
-
-    // add `accepted_at` to the URL query string
-    if (getAcceptedAt() != null) {
-      try {
-        joiner.add(String.format("%saccepted_at%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getAcceptedAt()), "UTF-8").replaceAll("\\+", "%20")));
-      } catch (UnsupportedEncodingException e) {
-        // Should never happen, UTF-8 is always supported
-        throw new RuntimeException(e);
-      }
-    }
-
-    // add `online` to the URL query string
-    if (getOnline() != null) {
-      joiner.add(getOnline().toUrlQueryString(prefix + "online" + suffix));
-    }
-
-    return joiner.toString();
-  }
-
-}
 

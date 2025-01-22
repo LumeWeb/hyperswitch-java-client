@@ -28,126 +28,127 @@ import java.net.URLEncoder;
 import java.util.StringJoiner;
 
 /**
- * BankRedirectDataOneOf7OnlineBankingCzechRepublic
- */
-@JsonPropertyOrder({
-  BankRedirectDataOneOf7OnlineBankingCzechRepublic.JSON_PROPERTY_ISSUER
-})
-@JsonTypeName("BankRedirectData_oneOf_7_online_banking_czech_republic")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+* BankRedirectDataOneOf7OnlineBankingCzechRepublic
+*/
+    @JsonPropertyOrder({
+        BankRedirectDataOneOf7OnlineBankingCzechRepublic.JSON_PROPERTY_ISSUER
+    })
+            @JsonTypeName("BankRedirectData_oneOf_7_online_banking_czech_republic")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class BankRedirectDataOneOf7OnlineBankingCzechRepublic {
-  public static final String JSON_PROPERTY_ISSUER = "issuer";
-  private BankNames issuer;
+        public static final String JSON_PROPERTY_ISSUER = "issuer";
+    @javax.annotation.Nonnull
+            private BankNames issuer;
 
-  public BankRedirectDataOneOf7OnlineBankingCzechRepublic() {
-  }
+public BankRedirectDataOneOf7OnlineBankingCzechRepublic() {
+}
 
-  public BankRedirectDataOneOf7OnlineBankingCzechRepublic issuer(BankNames issuer) {
-    
-    this.issuer = issuer;
-    return this;
-  }
+        public BankRedirectDataOneOf7OnlineBankingCzechRepublic issuer(@javax.annotation.Nonnull BankNames issuer) {
+        
+        this.issuer = issuer;
+        return this;
+        }
 
-   /**
-   * Get issuer
-   * @return issuer
-  **/
-  @javax.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_ISSUER)
+    /**
+        * Get issuer
+    * @return issuer
+    */
+    @javax.annotation.Nonnull
+      @JsonProperty(JSON_PROPERTY_ISSUER)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-  public BankNames getIssuer() {
-    return issuer;
-  }
+    public BankNames getIssuer() {
+        return issuer;
+    }
 
 
-  @JsonProperty(JSON_PROPERTY_ISSUER)
+          @JsonProperty(JSON_PROPERTY_ISSUER)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setIssuer(BankNames issuer) {
-    this.issuer = issuer;
-  }
+  public void setIssuer(@javax.annotation.Nonnull BankNames issuer) {
+            this.issuer = issuer;
+        }
 
-  @Override
-  public boolean equals(Object o) {
+@Override
+public boolean equals(Object o) {
     if (this == o) {
-      return true;
+    return true;
     }
     if (o == null || getClass() != o.getClass()) {
-      return false;
+    return false;
     }
-    BankRedirectDataOneOf7OnlineBankingCzechRepublic bankRedirectDataOneOf7OnlineBankingCzechRepublic = (BankRedirectDataOneOf7OnlineBankingCzechRepublic) o;
-    return Objects.equals(this.issuer, bankRedirectDataOneOf7OnlineBankingCzechRepublic.issuer);
-  }
+        BankRedirectDataOneOf7OnlineBankingCzechRepublic bankRedirectDataOneOf7OnlineBankingCzechRepublic = (BankRedirectDataOneOf7OnlineBankingCzechRepublic) o;
+        return Objects.equals(this.issuer, bankRedirectDataOneOf7OnlineBankingCzechRepublic.issuer);
+}
 
-  @Override
-  public int hashCode() {
-    return Objects.hash(issuer);
-  }
+    @Override
+    public int hashCode() {
+        return Objects.hash(issuer);
+    }
 
-  @Override
-  public String toString() {
+    @Override
+    public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class BankRedirectDataOneOf7OnlineBankingCzechRepublic {\n");
-    sb.append("    issuer: ").append(toIndentedString(issuer)).append("\n");
+        sb.append("    issuer: ").append(toIndentedString(issuer)).append("\n");
     sb.append("}");
     return sb.toString();
-  }
+    }
 
-  /**
-   * Convert the given object to string with each line indented by 4 spaces
-   * (except the first line).
-   */
-  private String toIndentedString(Object o) {
+    /**
+    * Convert the given object to string with each line indented by 4 spaces
+    * (except the first line).
+    */
+    private String toIndentedString(Object o) {
     if (o == null) {
-      return "null";
+    return "null";
     }
     return o.toString().replace("\n", "\n    ");
-  }
-
-  /**
-   * Convert the instance into URL query string.
-   *
-   * @return URL query string
-   */
-  public String toUrlQueryString() {
-    return toUrlQueryString(null);
-  }
-
-  /**
-   * Convert the instance into URL query string.
-   *
-   * @param prefix prefix of the query string
-   * @return URL query string
-   */
-  public String toUrlQueryString(String prefix) {
-    String suffix = "";
-    String containerSuffix = "";
-    String containerPrefix = "";
-    if (prefix == null) {
-      // style=form, explode=true, e.g. /pet?name=cat&type=manx
-      prefix = "";
-    } else {
-      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
-      prefix = prefix + "[";
-      suffix = "]";
-      containerSuffix = "]";
-      containerPrefix = "[";
     }
 
-    StringJoiner joiner = new StringJoiner("&");
+        /**
+        * Convert the instance into URL query string.
+        *
+        * @return URL query string
+        */
+        public String toUrlQueryString() {
+        return toUrlQueryString(null);
+        }
 
-    // add `issuer` to the URL query string
-    if (getIssuer() != null) {
-      try {
-        joiner.add(String.format("%sissuer%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getIssuer()), "UTF-8").replaceAll("\\+", "%20")));
-      } catch (UnsupportedEncodingException e) {
-        // Should never happen, UTF-8 is always supported
-        throw new RuntimeException(e);
-      }
+        /**
+        * Convert the instance into URL query string.
+        *
+        * @param prefix prefix of the query string
+        * @return URL query string
+        */
+        public String toUrlQueryString(String prefix) {
+        String suffix = "";
+        String containerSuffix = "";
+        String containerPrefix = "";
+        if (prefix == null) {
+        // style=form, explode=true, e.g. /pet?name=cat&type=manx
+        prefix = "";
+        } else {
+        // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+        prefix = prefix + "[";
+        suffix = "]";
+        containerSuffix = "]";
+        containerPrefix = "[";
+        }
+
+        StringJoiner joiner = new StringJoiner("&");
+
+            // add `issuer` to the URL query string
+                            if (getIssuer() != null) {
+                            try {
+                            joiner.add(String.format("%sissuer%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getIssuer()), "UTF-8").replaceAll("\\+", "%20")));
+                            } catch (UnsupportedEncodingException e) {
+                            // Should never happen, UTF-8 is always supported
+                            throw new RuntimeException(e);
+                            }
+                            }
+
+        return joiner.toString();
+        }
+
     }
-
-    return joiner.toString();
-  }
-
-}
 

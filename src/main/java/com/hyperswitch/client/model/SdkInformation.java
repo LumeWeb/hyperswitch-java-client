@@ -29,345 +29,346 @@ import java.net.URLEncoder;
 import java.util.StringJoiner;
 
 /**
- * SDK Information if request is from SDK
- */
-@JsonPropertyOrder({
-  SdkInformation.JSON_PROPERTY_SDK_APP_ID,
-  SdkInformation.JSON_PROPERTY_SDK_ENC_DATA,
-  SdkInformation.JSON_PROPERTY_SDK_EPHEM_PUB_KEY,
-  SdkInformation.JSON_PROPERTY_SDK_TRANS_ID,
-  SdkInformation.JSON_PROPERTY_SDK_REFERENCE_NUMBER,
-  SdkInformation.JSON_PROPERTY_SDK_MAX_TIMEOUT
-})
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+* SDK Information if request is from SDK
+*/
+    @JsonPropertyOrder({
+        SdkInformation.JSON_PROPERTY_SDK_APP_ID,
+        SdkInformation.JSON_PROPERTY_SDK_ENC_DATA,
+        SdkInformation.JSON_PROPERTY_SDK_EPHEM_PUB_KEY,
+        SdkInformation.JSON_PROPERTY_SDK_TRANS_ID,
+        SdkInformation.JSON_PROPERTY_SDK_REFERENCE_NUMBER,
+        SdkInformation.JSON_PROPERTY_SDK_MAX_TIMEOUT
+    })
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class SdkInformation {
-  public static final String JSON_PROPERTY_SDK_APP_ID = "sdk_app_id";
-  private String sdkAppId;
+        public static final String JSON_PROPERTY_SDK_APP_ID = "sdk_app_id";
+    @javax.annotation.Nonnull
+            private String sdkAppId;
 
-  public static final String JSON_PROPERTY_SDK_ENC_DATA = "sdk_enc_data";
-  private String sdkEncData;
+        public static final String JSON_PROPERTY_SDK_ENC_DATA = "sdk_enc_data";
+    @javax.annotation.Nonnull
+            private String sdkEncData;
 
-  public static final String JSON_PROPERTY_SDK_EPHEM_PUB_KEY = "sdk_ephem_pub_key";
-  private Map<String, String> sdkEphemPubKey = new HashMap<>();
+        public static final String JSON_PROPERTY_SDK_EPHEM_PUB_KEY = "sdk_ephem_pub_key";
+    @javax.annotation.Nonnull
+            private Map<String, String> sdkEphemPubKey = new HashMap<>();
 
-  public static final String JSON_PROPERTY_SDK_TRANS_ID = "sdk_trans_id";
-  private String sdkTransId;
+        public static final String JSON_PROPERTY_SDK_TRANS_ID = "sdk_trans_id";
+    @javax.annotation.Nonnull
+            private String sdkTransId;
 
-  public static final String JSON_PROPERTY_SDK_REFERENCE_NUMBER = "sdk_reference_number";
-  private String sdkReferenceNumber;
+        public static final String JSON_PROPERTY_SDK_REFERENCE_NUMBER = "sdk_reference_number";
+    @javax.annotation.Nonnull
+            private String sdkReferenceNumber;
 
-  public static final String JSON_PROPERTY_SDK_MAX_TIMEOUT = "sdk_max_timeout";
-  private Integer sdkMaxTimeout;
+        public static final String JSON_PROPERTY_SDK_MAX_TIMEOUT = "sdk_max_timeout";
+    @javax.annotation.Nonnull
+            private Integer sdkMaxTimeout;
 
-  public SdkInformation() {
-  }
+public SdkInformation() {
+}
 
-  public SdkInformation sdkAppId(String sdkAppId) {
-    
-    this.sdkAppId = sdkAppId;
-    return this;
-  }
+        public SdkInformation sdkAppId(@javax.annotation.Nonnull String sdkAppId) {
+        
+        this.sdkAppId = sdkAppId;
+        return this;
+        }
 
-   /**
-   * Unique ID created on installations of the 3DS Requestor App on a Consumer Device
-   * @return sdkAppId
-  **/
-  @javax.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_SDK_APP_ID)
+    /**
+        * Unique ID created on installations of the 3DS Requestor App on a Consumer Device
+    * @return sdkAppId
+    */
+    @javax.annotation.Nonnull
+      @JsonProperty(JSON_PROPERTY_SDK_APP_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-  public String getSdkAppId() {
-    return sdkAppId;
-  }
+    public String getSdkAppId() {
+        return sdkAppId;
+    }
 
 
-  @JsonProperty(JSON_PROPERTY_SDK_APP_ID)
+          @JsonProperty(JSON_PROPERTY_SDK_APP_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setSdkAppId(String sdkAppId) {
-    this.sdkAppId = sdkAppId;
-  }
+  public void setSdkAppId(@javax.annotation.Nonnull String sdkAppId) {
+            this.sdkAppId = sdkAppId;
+        }
 
+        public SdkInformation sdkEncData(@javax.annotation.Nonnull String sdkEncData) {
+        
+        this.sdkEncData = sdkEncData;
+        return this;
+        }
 
-  public SdkInformation sdkEncData(String sdkEncData) {
-    
-    this.sdkEncData = sdkEncData;
-    return this;
-  }
-
-   /**
-   * JWE Object containing data encrypted by the SDK for the DS to decrypt
-   * @return sdkEncData
-  **/
-  @javax.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_SDK_ENC_DATA)
-  @JsonInclude(value = JsonInclude.Include.ALWAYS)
-
-  public String getSdkEncData() {
-    return sdkEncData;
-  }
-
-
-  @JsonProperty(JSON_PROPERTY_SDK_ENC_DATA)
-  @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setSdkEncData(String sdkEncData) {
-    this.sdkEncData = sdkEncData;
-  }
-
-
-  public SdkInformation sdkEphemPubKey(Map<String, String> sdkEphemPubKey) {
-    
-    this.sdkEphemPubKey = sdkEphemPubKey;
-    return this;
-  }
-
-  public SdkInformation putSdkEphemPubKeyItem(String key, String sdkEphemPubKeyItem) {
-    this.sdkEphemPubKey.put(key, sdkEphemPubKeyItem);
-    return this;
-  }
-
-   /**
-   * Public key component of the ephemeral key pair generated by the 3DS SDK
-   * @return sdkEphemPubKey
-  **/
-  @javax.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_SDK_EPHEM_PUB_KEY)
+    /**
+        * JWE Object containing data encrypted by the SDK for the DS to decrypt
+    * @return sdkEncData
+    */
+    @javax.annotation.Nonnull
+      @JsonProperty(JSON_PROPERTY_SDK_ENC_DATA)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-  public Map<String, String> getSdkEphemPubKey() {
-    return sdkEphemPubKey;
-  }
+    public String getSdkEncData() {
+        return sdkEncData;
+    }
 
 
-  @JsonProperty(JSON_PROPERTY_SDK_EPHEM_PUB_KEY)
+          @JsonProperty(JSON_PROPERTY_SDK_ENC_DATA)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setSdkEphemPubKey(Map<String, String> sdkEphemPubKey) {
-    this.sdkEphemPubKey = sdkEphemPubKey;
-  }
+  public void setSdkEncData(@javax.annotation.Nonnull String sdkEncData) {
+            this.sdkEncData = sdkEncData;
+        }
 
+        public SdkInformation sdkEphemPubKey(@javax.annotation.Nonnull Map<String, String> sdkEphemPubKey) {
+        
+        this.sdkEphemPubKey = sdkEphemPubKey;
+        return this;
+        }
 
-  public SdkInformation sdkTransId(String sdkTransId) {
-    
-    this.sdkTransId = sdkTransId;
-    return this;
-  }
+            public SdkInformation putSdkEphemPubKeyItem(String key, String sdkEphemPubKeyItem) {
+                this.sdkEphemPubKey.put(key, sdkEphemPubKeyItem);
+                return this;
+            }
 
-   /**
-   * Unique transaction identifier assigned by the 3DS SDK
-   * @return sdkTransId
-  **/
-  @javax.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_SDK_TRANS_ID)
-  @JsonInclude(value = JsonInclude.Include.ALWAYS)
-
-  public String getSdkTransId() {
-    return sdkTransId;
-  }
-
-
-  @JsonProperty(JSON_PROPERTY_SDK_TRANS_ID)
-  @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setSdkTransId(String sdkTransId) {
-    this.sdkTransId = sdkTransId;
-  }
-
-
-  public SdkInformation sdkReferenceNumber(String sdkReferenceNumber) {
-    
-    this.sdkReferenceNumber = sdkReferenceNumber;
-    return this;
-  }
-
-   /**
-   * Identifies the vendor and version for the 3DS SDK that is integrated in a 3DS Requestor App
-   * @return sdkReferenceNumber
-  **/
-  @javax.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_SDK_REFERENCE_NUMBER)
+    /**
+        * Public key component of the ephemeral key pair generated by the 3DS SDK
+    * @return sdkEphemPubKey
+    */
+    @javax.annotation.Nonnull
+      @JsonProperty(JSON_PROPERTY_SDK_EPHEM_PUB_KEY)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-  public String getSdkReferenceNumber() {
-    return sdkReferenceNumber;
-  }
+    public Map<String, String> getSdkEphemPubKey() {
+        return sdkEphemPubKey;
+    }
 
 
-  @JsonProperty(JSON_PROPERTY_SDK_REFERENCE_NUMBER)
+          @JsonProperty(JSON_PROPERTY_SDK_EPHEM_PUB_KEY)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setSdkReferenceNumber(String sdkReferenceNumber) {
-    this.sdkReferenceNumber = sdkReferenceNumber;
-  }
+  public void setSdkEphemPubKey(@javax.annotation.Nonnull Map<String, String> sdkEphemPubKey) {
+            this.sdkEphemPubKey = sdkEphemPubKey;
+        }
 
+        public SdkInformation sdkTransId(@javax.annotation.Nonnull String sdkTransId) {
+        
+        this.sdkTransId = sdkTransId;
+        return this;
+        }
 
-  public SdkInformation sdkMaxTimeout(Integer sdkMaxTimeout) {
-    
-    this.sdkMaxTimeout = sdkMaxTimeout;
-    return this;
-  }
-
-   /**
-   * Indicates maximum amount of time in minutes
-   * minimum: 0
-   * @return sdkMaxTimeout
-  **/
-  @javax.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_SDK_MAX_TIMEOUT)
+    /**
+        * Unique transaction identifier assigned by the 3DS SDK
+    * @return sdkTransId
+    */
+    @javax.annotation.Nonnull
+      @JsonProperty(JSON_PROPERTY_SDK_TRANS_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-  public Integer getSdkMaxTimeout() {
-    return sdkMaxTimeout;
-  }
+    public String getSdkTransId() {
+        return sdkTransId;
+    }
 
 
-  @JsonProperty(JSON_PROPERTY_SDK_MAX_TIMEOUT)
+          @JsonProperty(JSON_PROPERTY_SDK_TRANS_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setSdkMaxTimeout(Integer sdkMaxTimeout) {
-    this.sdkMaxTimeout = sdkMaxTimeout;
-  }
+  public void setSdkTransId(@javax.annotation.Nonnull String sdkTransId) {
+            this.sdkTransId = sdkTransId;
+        }
 
-  @Override
-  public boolean equals(Object o) {
+        public SdkInformation sdkReferenceNumber(@javax.annotation.Nonnull String sdkReferenceNumber) {
+        
+        this.sdkReferenceNumber = sdkReferenceNumber;
+        return this;
+        }
+
+    /**
+        * Identifies the vendor and version for the 3DS SDK that is integrated in a 3DS Requestor App
+    * @return sdkReferenceNumber
+    */
+    @javax.annotation.Nonnull
+      @JsonProperty(JSON_PROPERTY_SDK_REFERENCE_NUMBER)
+  @JsonInclude(value = JsonInclude.Include.ALWAYS)
+
+    public String getSdkReferenceNumber() {
+        return sdkReferenceNumber;
+    }
+
+
+          @JsonProperty(JSON_PROPERTY_SDK_REFERENCE_NUMBER)
+  @JsonInclude(value = JsonInclude.Include.ALWAYS)
+  public void setSdkReferenceNumber(@javax.annotation.Nonnull String sdkReferenceNumber) {
+            this.sdkReferenceNumber = sdkReferenceNumber;
+        }
+
+        public SdkInformation sdkMaxTimeout(@javax.annotation.Nonnull Integer sdkMaxTimeout) {
+        
+        this.sdkMaxTimeout = sdkMaxTimeout;
+        return this;
+        }
+
+    /**
+        * Indicates maximum amount of time in minutes
+        * minimum: 0
+    * @return sdkMaxTimeout
+    */
+    @javax.annotation.Nonnull
+      @JsonProperty(JSON_PROPERTY_SDK_MAX_TIMEOUT)
+  @JsonInclude(value = JsonInclude.Include.ALWAYS)
+
+    public Integer getSdkMaxTimeout() {
+        return sdkMaxTimeout;
+    }
+
+
+          @JsonProperty(JSON_PROPERTY_SDK_MAX_TIMEOUT)
+  @JsonInclude(value = JsonInclude.Include.ALWAYS)
+  public void setSdkMaxTimeout(@javax.annotation.Nonnull Integer sdkMaxTimeout) {
+            this.sdkMaxTimeout = sdkMaxTimeout;
+        }
+
+@Override
+public boolean equals(Object o) {
     if (this == o) {
-      return true;
+    return true;
     }
     if (o == null || getClass() != o.getClass()) {
-      return false;
+    return false;
     }
-    SdkInformation sdkInformation = (SdkInformation) o;
-    return Objects.equals(this.sdkAppId, sdkInformation.sdkAppId) &&
+        SdkInformation sdkInformation = (SdkInformation) o;
+        return Objects.equals(this.sdkAppId, sdkInformation.sdkAppId) &&
         Objects.equals(this.sdkEncData, sdkInformation.sdkEncData) &&
         Objects.equals(this.sdkEphemPubKey, sdkInformation.sdkEphemPubKey) &&
         Objects.equals(this.sdkTransId, sdkInformation.sdkTransId) &&
         Objects.equals(this.sdkReferenceNumber, sdkInformation.sdkReferenceNumber) &&
         Objects.equals(this.sdkMaxTimeout, sdkInformation.sdkMaxTimeout);
-  }
+}
 
-  @Override
-  public int hashCode() {
-    return Objects.hash(sdkAppId, sdkEncData, sdkEphemPubKey, sdkTransId, sdkReferenceNumber, sdkMaxTimeout);
-  }
+    @Override
+    public int hashCode() {
+        return Objects.hash(sdkAppId, sdkEncData, sdkEphemPubKey, sdkTransId, sdkReferenceNumber, sdkMaxTimeout);
+    }
 
-  @Override
-  public String toString() {
+    @Override
+    public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class SdkInformation {\n");
-    sb.append("    sdkAppId: ").append(toIndentedString(sdkAppId)).append("\n");
-    sb.append("    sdkEncData: ").append(toIndentedString(sdkEncData)).append("\n");
-    sb.append("    sdkEphemPubKey: ").append(toIndentedString(sdkEphemPubKey)).append("\n");
-    sb.append("    sdkTransId: ").append(toIndentedString(sdkTransId)).append("\n");
-    sb.append("    sdkReferenceNumber: ").append(toIndentedString(sdkReferenceNumber)).append("\n");
-    sb.append("    sdkMaxTimeout: ").append(toIndentedString(sdkMaxTimeout)).append("\n");
+        sb.append("    sdkAppId: ").append(toIndentedString(sdkAppId)).append("\n");
+        sb.append("    sdkEncData: ").append(toIndentedString(sdkEncData)).append("\n");
+        sb.append("    sdkEphemPubKey: ").append(toIndentedString(sdkEphemPubKey)).append("\n");
+        sb.append("    sdkTransId: ").append(toIndentedString(sdkTransId)).append("\n");
+        sb.append("    sdkReferenceNumber: ").append(toIndentedString(sdkReferenceNumber)).append("\n");
+        sb.append("    sdkMaxTimeout: ").append(toIndentedString(sdkMaxTimeout)).append("\n");
     sb.append("}");
     return sb.toString();
-  }
+    }
 
-  /**
-   * Convert the given object to string with each line indented by 4 spaces
-   * (except the first line).
-   */
-  private String toIndentedString(Object o) {
+    /**
+    * Convert the given object to string with each line indented by 4 spaces
+    * (except the first line).
+    */
+    private String toIndentedString(Object o) {
     if (o == null) {
-      return "null";
+    return "null";
     }
     return o.toString().replace("\n", "\n    ");
-  }
-
-  /**
-   * Convert the instance into URL query string.
-   *
-   * @return URL query string
-   */
-  public String toUrlQueryString() {
-    return toUrlQueryString(null);
-  }
-
-  /**
-   * Convert the instance into URL query string.
-   *
-   * @param prefix prefix of the query string
-   * @return URL query string
-   */
-  public String toUrlQueryString(String prefix) {
-    String suffix = "";
-    String containerSuffix = "";
-    String containerPrefix = "";
-    if (prefix == null) {
-      // style=form, explode=true, e.g. /pet?name=cat&type=manx
-      prefix = "";
-    } else {
-      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
-      prefix = prefix + "[";
-      suffix = "]";
-      containerSuffix = "]";
-      containerPrefix = "[";
     }
 
-    StringJoiner joiner = new StringJoiner("&");
-
-    // add `sdk_app_id` to the URL query string
-    if (getSdkAppId() != null) {
-      try {
-        joiner.add(String.format("%ssdk_app_id%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getSdkAppId()), "UTF-8").replaceAll("\\+", "%20")));
-      } catch (UnsupportedEncodingException e) {
-        // Should never happen, UTF-8 is always supported
-        throw new RuntimeException(e);
-      }
-    }
-
-    // add `sdk_enc_data` to the URL query string
-    if (getSdkEncData() != null) {
-      try {
-        joiner.add(String.format("%ssdk_enc_data%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getSdkEncData()), "UTF-8").replaceAll("\\+", "%20")));
-      } catch (UnsupportedEncodingException e) {
-        // Should never happen, UTF-8 is always supported
-        throw new RuntimeException(e);
-      }
-    }
-
-    // add `sdk_ephem_pub_key` to the URL query string
-    if (getSdkEphemPubKey() != null) {
-      for (String _key : getSdkEphemPubKey().keySet()) {
-        try {
-          joiner.add(String.format("%ssdk_ephem_pub_key%s%s=%s", prefix, suffix,
-              "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, _key, containerSuffix),
-              getSdkEphemPubKey().get(_key), URLEncoder.encode(String.valueOf(getSdkEphemPubKey().get(_key)), "UTF-8").replaceAll("\\+", "%20")));
-        } catch (UnsupportedEncodingException e) {
-          // Should never happen, UTF-8 is always supported
-          throw new RuntimeException(e);
+        /**
+        * Convert the instance into URL query string.
+        *
+        * @return URL query string
+        */
+        public String toUrlQueryString() {
+        return toUrlQueryString(null);
         }
-      }
+
+        /**
+        * Convert the instance into URL query string.
+        *
+        * @param prefix prefix of the query string
+        * @return URL query string
+        */
+        public String toUrlQueryString(String prefix) {
+        String suffix = "";
+        String containerSuffix = "";
+        String containerPrefix = "";
+        if (prefix == null) {
+        // style=form, explode=true, e.g. /pet?name=cat&type=manx
+        prefix = "";
+        } else {
+        // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+        prefix = prefix + "[";
+        suffix = "]";
+        containerSuffix = "]";
+        containerPrefix = "[";
+        }
+
+        StringJoiner joiner = new StringJoiner("&");
+
+            // add `sdk_app_id` to the URL query string
+                        if (getSdkAppId() != null) {
+                        try {
+                        joiner.add(String.format("%ssdk_app_id%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getSdkAppId()), "UTF-8").replaceAll("\\+", "%20")));
+                        } catch (UnsupportedEncodingException e) {
+                        // Should never happen, UTF-8 is always supported
+                        throw new RuntimeException(e);
+                        }
+                        }
+
+            // add `sdk_enc_data` to the URL query string
+                        if (getSdkEncData() != null) {
+                        try {
+                        joiner.add(String.format("%ssdk_enc_data%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getSdkEncData()), "UTF-8").replaceAll("\\+", "%20")));
+                        } catch (UnsupportedEncodingException e) {
+                        // Should never happen, UTF-8 is always supported
+                        throw new RuntimeException(e);
+                        }
+                        }
+
+            // add `sdk_ephem_pub_key` to the URL query string
+                        if (getSdkEphemPubKey() != null) {
+                        for (String _key : getSdkEphemPubKey().keySet()) {
+                        try {
+                        joiner.add(String.format("%ssdk_ephem_pub_key%s%s=%s", prefix, suffix,
+                        "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, _key, containerSuffix),
+                    getSdkEphemPubKey().get(_key), URLEncoder.encode(String.valueOf(getSdkEphemPubKey().get(_key)), "UTF-8").replaceAll("\\+", "%20")));
+                        } catch (UnsupportedEncodingException e) {
+                        // Should never happen, UTF-8 is always supported
+                        throw new RuntimeException(e);
+                        }
+                        }
+                        }
+
+            // add `sdk_trans_id` to the URL query string
+                        if (getSdkTransId() != null) {
+                        try {
+                        joiner.add(String.format("%ssdk_trans_id%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getSdkTransId()), "UTF-8").replaceAll("\\+", "%20")));
+                        } catch (UnsupportedEncodingException e) {
+                        // Should never happen, UTF-8 is always supported
+                        throw new RuntimeException(e);
+                        }
+                        }
+
+            // add `sdk_reference_number` to the URL query string
+                        if (getSdkReferenceNumber() != null) {
+                        try {
+                        joiner.add(String.format("%ssdk_reference_number%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getSdkReferenceNumber()), "UTF-8").replaceAll("\\+", "%20")));
+                        } catch (UnsupportedEncodingException e) {
+                        // Should never happen, UTF-8 is always supported
+                        throw new RuntimeException(e);
+                        }
+                        }
+
+            // add `sdk_max_timeout` to the URL query string
+                        if (getSdkMaxTimeout() != null) {
+                        try {
+                        joiner.add(String.format("%ssdk_max_timeout%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getSdkMaxTimeout()), "UTF-8").replaceAll("\\+", "%20")));
+                        } catch (UnsupportedEncodingException e) {
+                        // Should never happen, UTF-8 is always supported
+                        throw new RuntimeException(e);
+                        }
+                        }
+
+        return joiner.toString();
+        }
+
     }
-
-    // add `sdk_trans_id` to the URL query string
-    if (getSdkTransId() != null) {
-      try {
-        joiner.add(String.format("%ssdk_trans_id%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getSdkTransId()), "UTF-8").replaceAll("\\+", "%20")));
-      } catch (UnsupportedEncodingException e) {
-        // Should never happen, UTF-8 is always supported
-        throw new RuntimeException(e);
-      }
-    }
-
-    // add `sdk_reference_number` to the URL query string
-    if (getSdkReferenceNumber() != null) {
-      try {
-        joiner.add(String.format("%ssdk_reference_number%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getSdkReferenceNumber()), "UTF-8").replaceAll("\\+", "%20")));
-      } catch (UnsupportedEncodingException e) {
-        // Should never happen, UTF-8 is always supported
-        throw new RuntimeException(e);
-      }
-    }
-
-    // add `sdk_max_timeout` to the URL query string
-    if (getSdkMaxTimeout() != null) {
-      try {
-        joiner.add(String.format("%ssdk_max_timeout%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getSdkMaxTimeout()), "UTF-8").replaceAll("\\+", "%20")));
-      } catch (UnsupportedEncodingException e) {
-        // Should never happen, UTF-8 is always supported
-        throw new RuntimeException(e);
-      }
-    }
-
-    return joiner.toString();
-  }
-
-}
 

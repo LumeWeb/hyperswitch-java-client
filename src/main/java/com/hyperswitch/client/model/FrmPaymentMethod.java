@@ -24,6 +24,7 @@ import com.hyperswitch.client.model.FrmPaymentMethodType;
 import com.hyperswitch.client.model.FrmPreferredFlowTypes;
 import com.hyperswitch.client.model.PaymentMethod;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import org.openapitools.jackson.nullable.JsonNullable;
 import com.fasterxml.jackson.annotation.JsonIgnore;
@@ -36,248 +37,249 @@ import java.net.URLEncoder;
 import java.util.StringJoiner;
 
 /**
- * Details of FrmPaymentMethod are mentioned here... it should be passed in payment connector create api call, and stored in merchant_connector_table
- */
-@JsonPropertyOrder({
-  FrmPaymentMethod.JSON_PROPERTY_PAYMENT_METHOD,
-  FrmPaymentMethod.JSON_PROPERTY_PAYMENT_METHOD_TYPES,
-  FrmPaymentMethod.JSON_PROPERTY_FLOW
-})
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+* Details of FrmPaymentMethod are mentioned here... it should be passed in payment connector create api call, and stored in merchant_connector_table
+*/
+    @JsonPropertyOrder({
+        FrmPaymentMethod.JSON_PROPERTY_PAYMENT_METHOD,
+        FrmPaymentMethod.JSON_PROPERTY_PAYMENT_METHOD_TYPES,
+        FrmPaymentMethod.JSON_PROPERTY_FLOW
+    })
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class FrmPaymentMethod {
-  public static final String JSON_PROPERTY_PAYMENT_METHOD = "payment_method";
-  private PaymentMethod paymentMethod;
+        public static final String JSON_PROPERTY_PAYMENT_METHOD = "payment_method";
+    @javax.annotation.Nonnull
+            private PaymentMethod paymentMethod;
 
-  public static final String JSON_PROPERTY_PAYMENT_METHOD_TYPES = "payment_method_types";
-  private JsonNullable<List<FrmPaymentMethodType>> paymentMethodTypes = JsonNullable.<List<FrmPaymentMethodType>>undefined();
+        public static final String JSON_PROPERTY_PAYMENT_METHOD_TYPES = "payment_method_types";
+    @javax.annotation.Nullable
+            private JsonNullable<List<FrmPaymentMethodType>> paymentMethodTypes = JsonNullable.<List<FrmPaymentMethodType>>undefined();
 
-  public static final String JSON_PROPERTY_FLOW = "flow";
-  private JsonNullable<FrmPreferredFlowTypes> flow = JsonNullable.<FrmPreferredFlowTypes>undefined();
+        public static final String JSON_PROPERTY_FLOW = "flow";
+    @javax.annotation.Nullable
+            private JsonNullable<FrmPreferredFlowTypes> flow = JsonNullable.<FrmPreferredFlowTypes>undefined();
 
-  public FrmPaymentMethod() {
-  }
+public FrmPaymentMethod() {
+}
 
-  public FrmPaymentMethod paymentMethod(PaymentMethod paymentMethod) {
-    
-    this.paymentMethod = paymentMethod;
-    return this;
-  }
+        public FrmPaymentMethod paymentMethod(@javax.annotation.Nonnull PaymentMethod paymentMethod) {
+        
+        this.paymentMethod = paymentMethod;
+        return this;
+        }
 
-   /**
-   * Get paymentMethod
-   * @return paymentMethod
-  **/
-  @javax.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_PAYMENT_METHOD)
+    /**
+        * Get paymentMethod
+    * @return paymentMethod
+    */
+    @javax.annotation.Nonnull
+      @JsonProperty(JSON_PROPERTY_PAYMENT_METHOD)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-  public PaymentMethod getPaymentMethod() {
-    return paymentMethod;
-  }
+    public PaymentMethod getPaymentMethod() {
+        return paymentMethod;
+    }
 
 
-  @JsonProperty(JSON_PROPERTY_PAYMENT_METHOD)
+          @JsonProperty(JSON_PROPERTY_PAYMENT_METHOD)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setPaymentMethod(PaymentMethod paymentMethod) {
-    this.paymentMethod = paymentMethod;
-  }
+  public void setPaymentMethod(@javax.annotation.Nonnull PaymentMethod paymentMethod) {
+            this.paymentMethod = paymentMethod;
+        }
 
+        public FrmPaymentMethod paymentMethodTypes(@javax.annotation.Nullable List<FrmPaymentMethodType> paymentMethodTypes) {
+        this.paymentMethodTypes = JsonNullable.<List<FrmPaymentMethodType>>of(paymentMethodTypes);
+        
+        return this;
+        }
 
-  public FrmPaymentMethod paymentMethodTypes(List<FrmPaymentMethodType> paymentMethodTypes) {
-    this.paymentMethodTypes = JsonNullable.<List<FrmPaymentMethodType>>of(paymentMethodTypes);
+            public FrmPaymentMethod addPaymentMethodTypesItem(FrmPaymentMethodType paymentMethodTypesItem) {
+                if (this.paymentMethodTypes == null || !this.paymentMethodTypes.isPresent()) {
+                this.paymentMethodTypes = JsonNullable.<List<FrmPaymentMethodType>>of(new ArrayList<>());
+                }
+                try {
+                this.paymentMethodTypes.get().add(paymentMethodTypesItem);
+                } catch (java.util.NoSuchElementException e) {
+                // this can never happen, as we make sure above that the value is present
+                }
+                return this;
+            }
+
+    /**
+        * payment method types(credit, debit) that can be used in the payment. This field is deprecated. It has not been removed to provide backward compatibility.
+    * @return paymentMethodTypes
+    */
+    @javax.annotation.Nullable
+        @JsonIgnore
     
-    return this;
-  }
-
-  public FrmPaymentMethod addPaymentMethodTypesItem(FrmPaymentMethodType paymentMethodTypesItem) {
-    if (this.paymentMethodTypes == null || !this.paymentMethodTypes.isPresent()) {
-      this.paymentMethodTypes = JsonNullable.<List<FrmPaymentMethodType>>of(new ArrayList<>());
+    public List<FrmPaymentMethodType> getPaymentMethodTypes() {
+                return paymentMethodTypes.orElse(null);
     }
-    try {
-      this.paymentMethodTypes.get().add(paymentMethodTypesItem);
-    } catch (java.util.NoSuchElementException e) {
-      // this can never happen, as we make sure above that the value is present
-    }
-    return this;
-  }
 
-   /**
-   * payment method types(credit, debit) that can be used in the payment. This field is deprecated. It has not been removed to provide backward compatibility.
-   * @return paymentMethodTypes
-  **/
-  @javax.annotation.Nullable
-  @JsonIgnore
-
-  public List<FrmPaymentMethodType> getPaymentMethodTypes() {
-        return paymentMethodTypes.orElse(null);
-  }
-
-  @JsonProperty(JSON_PROPERTY_PAYMENT_METHOD_TYPES)
+          @JsonProperty(JSON_PROPERTY_PAYMENT_METHOD_TYPES)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-  public JsonNullable<List<FrmPaymentMethodType>> getPaymentMethodTypes_JsonNullable() {
-    return paymentMethodTypes;
-  }
-  
-  @JsonProperty(JSON_PROPERTY_PAYMENT_METHOD_TYPES)
-  public void setPaymentMethodTypes_JsonNullable(JsonNullable<List<FrmPaymentMethodType>> paymentMethodTypes) {
-    this.paymentMethodTypes = paymentMethodTypes;
-  }
-
-  public void setPaymentMethodTypes(List<FrmPaymentMethodType> paymentMethodTypes) {
-    this.paymentMethodTypes = JsonNullable.<List<FrmPaymentMethodType>>of(paymentMethodTypes);
-  }
-
-
-  public FrmPaymentMethod flow(FrmPreferredFlowTypes flow) {
-    this.flow = JsonNullable.<FrmPreferredFlowTypes>of(flow);
+        public JsonNullable<List<FrmPaymentMethodType>> getPaymentMethodTypes_JsonNullable() {
+        return paymentMethodTypes;
+        }
     
-    return this;
-  }
+        @JsonProperty(JSON_PROPERTY_PAYMENT_METHOD_TYPES)
+        public void setPaymentMethodTypes_JsonNullable(JsonNullable<List<FrmPaymentMethodType>> paymentMethodTypes) {
+        this.paymentMethodTypes = paymentMethodTypes;
+        }
 
-   /**
-   * Get flow
-   * @return flow
-  **/
-  @javax.annotation.Nullable
-  @JsonIgnore
+          public void setPaymentMethodTypes(@javax.annotation.Nullable List<FrmPaymentMethodType> paymentMethodTypes) {
+            this.paymentMethodTypes = JsonNullable.<List<FrmPaymentMethodType>>of(paymentMethodTypes);
+        }
 
-  public FrmPreferredFlowTypes getFlow() {
-        return flow.orElse(null);
-  }
+        public FrmPaymentMethod flow(@javax.annotation.Nullable FrmPreferredFlowTypes flow) {
+        this.flow = JsonNullable.<FrmPreferredFlowTypes>of(flow);
+        
+        return this;
+        }
 
-  @JsonProperty(JSON_PROPERTY_FLOW)
+    /**
+        * Get flow
+    * @return flow
+    */
+    @javax.annotation.Nullable
+        @JsonIgnore
+    
+    public FrmPreferredFlowTypes getFlow() {
+                return flow.orElse(null);
+    }
+
+          @JsonProperty(JSON_PROPERTY_FLOW)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-  public JsonNullable<FrmPreferredFlowTypes> getFlow_JsonNullable() {
-    return flow;
-  }
-  
-  @JsonProperty(JSON_PROPERTY_FLOW)
-  public void setFlow_JsonNullable(JsonNullable<FrmPreferredFlowTypes> flow) {
-    this.flow = flow;
-  }
+        public JsonNullable<FrmPreferredFlowTypes> getFlow_JsonNullable() {
+        return flow;
+        }
+    
+        @JsonProperty(JSON_PROPERTY_FLOW)
+        public void setFlow_JsonNullable(JsonNullable<FrmPreferredFlowTypes> flow) {
+        this.flow = flow;
+        }
 
-  public void setFlow(FrmPreferredFlowTypes flow) {
-    this.flow = JsonNullable.<FrmPreferredFlowTypes>of(flow);
-  }
+          public void setFlow(@javax.annotation.Nullable FrmPreferredFlowTypes flow) {
+            this.flow = JsonNullable.<FrmPreferredFlowTypes>of(flow);
+        }
 
-  @Override
-  public boolean equals(Object o) {
+@Override
+public boolean equals(Object o) {
     if (this == o) {
-      return true;
+    return true;
     }
     if (o == null || getClass() != o.getClass()) {
-      return false;
+    return false;
     }
-    FrmPaymentMethod frmPaymentMethod = (FrmPaymentMethod) o;
-    return Objects.equals(this.paymentMethod, frmPaymentMethod.paymentMethod) &&
+        FrmPaymentMethod frmPaymentMethod = (FrmPaymentMethod) o;
+        return Objects.equals(this.paymentMethod, frmPaymentMethod.paymentMethod) &&
         equalsNullable(this.paymentMethodTypes, frmPaymentMethod.paymentMethodTypes) &&
         equalsNullable(this.flow, frmPaymentMethod.flow);
-  }
+}
 
-  private static <T> boolean equalsNullable(JsonNullable<T> a, JsonNullable<T> b) {
-    return a == b || (a != null && b != null && a.isPresent() && b.isPresent() && Objects.deepEquals(a.get(), b.get()));
-  }
+    private static <T> boolean equalsNullable(JsonNullable<T> a, JsonNullable<T> b) {
+        return a == b || (a != null && b != null && a.isPresent() && b.isPresent() && Objects.deepEquals(a.get(), b.get()));
+        }
 
-  @Override
-  public int hashCode() {
-    return Objects.hash(paymentMethod, hashCodeNullable(paymentMethodTypes), hashCodeNullable(flow));
-  }
-
-  private static <T> int hashCodeNullable(JsonNullable<T> a) {
-    if (a == null) {
-      return 1;
+    @Override
+    public int hashCode() {
+        return Objects.hash(paymentMethod, hashCodeNullable(paymentMethodTypes), hashCodeNullable(flow));
     }
-    return a.isPresent() ? Arrays.deepHashCode(new Object[]{a.get()}) : 31;
-  }
 
-  @Override
-  public String toString() {
+        private static <T> int hashCodeNullable(JsonNullable<T> a) {
+        if (a == null) {
+        return 1;
+        }
+        return a.isPresent() ? Arrays.deepHashCode(new Object[]{a.get()}) : 31;
+        }
+
+    @Override
+    public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class FrmPaymentMethod {\n");
-    sb.append("    paymentMethod: ").append(toIndentedString(paymentMethod)).append("\n");
-    sb.append("    paymentMethodTypes: ").append(toIndentedString(paymentMethodTypes)).append("\n");
-    sb.append("    flow: ").append(toIndentedString(flow)).append("\n");
+        sb.append("    paymentMethod: ").append(toIndentedString(paymentMethod)).append("\n");
+        sb.append("    paymentMethodTypes: ").append(toIndentedString(paymentMethodTypes)).append("\n");
+        sb.append("    flow: ").append(toIndentedString(flow)).append("\n");
     sb.append("}");
     return sb.toString();
-  }
+    }
 
-  /**
-   * Convert the given object to string with each line indented by 4 spaces
-   * (except the first line).
-   */
-  private String toIndentedString(Object o) {
+    /**
+    * Convert the given object to string with each line indented by 4 spaces
+    * (except the first line).
+    */
+    private String toIndentedString(Object o) {
     if (o == null) {
-      return "null";
+    return "null";
     }
     return o.toString().replace("\n", "\n    ");
-  }
-
-  /**
-   * Convert the instance into URL query string.
-   *
-   * @return URL query string
-   */
-  public String toUrlQueryString() {
-    return toUrlQueryString(null);
-  }
-
-  /**
-   * Convert the instance into URL query string.
-   *
-   * @param prefix prefix of the query string
-   * @return URL query string
-   */
-  public String toUrlQueryString(String prefix) {
-    String suffix = "";
-    String containerSuffix = "";
-    String containerPrefix = "";
-    if (prefix == null) {
-      // style=form, explode=true, e.g. /pet?name=cat&type=manx
-      prefix = "";
-    } else {
-      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
-      prefix = prefix + "[";
-      suffix = "]";
-      containerSuffix = "]";
-      containerPrefix = "[";
     }
 
-    StringJoiner joiner = new StringJoiner("&");
-
-    // add `payment_method` to the URL query string
-    if (getPaymentMethod() != null) {
-      try {
-        joiner.add(String.format("%spayment_method%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getPaymentMethod()), "UTF-8").replaceAll("\\+", "%20")));
-      } catch (UnsupportedEncodingException e) {
-        // Should never happen, UTF-8 is always supported
-        throw new RuntimeException(e);
-      }
-    }
-
-    // add `payment_method_types` to the URL query string
-    if (getPaymentMethodTypes() != null) {
-      for (int i = 0; i < getPaymentMethodTypes().size(); i++) {
-        if (getPaymentMethodTypes().get(i) != null) {
-          joiner.add(getPaymentMethodTypes().get(i).toUrlQueryString(String.format("%spayment_method_types%s%s", prefix, suffix,
-              "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix))));
+        /**
+        * Convert the instance into URL query string.
+        *
+        * @return URL query string
+        */
+        public String toUrlQueryString() {
+        return toUrlQueryString(null);
         }
-      }
+
+        /**
+        * Convert the instance into URL query string.
+        *
+        * @param prefix prefix of the query string
+        * @return URL query string
+        */
+        public String toUrlQueryString(String prefix) {
+        String suffix = "";
+        String containerSuffix = "";
+        String containerPrefix = "";
+        if (prefix == null) {
+        // style=form, explode=true, e.g. /pet?name=cat&type=manx
+        prefix = "";
+        } else {
+        // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+        prefix = prefix + "[";
+        suffix = "]";
+        containerSuffix = "]";
+        containerPrefix = "[";
+        }
+
+        StringJoiner joiner = new StringJoiner("&");
+
+            // add `payment_method` to the URL query string
+                            if (getPaymentMethod() != null) {
+                            try {
+                            joiner.add(String.format("%spayment_method%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getPaymentMethod()), "UTF-8").replaceAll("\\+", "%20")));
+                            } catch (UnsupportedEncodingException e) {
+                            // Should never happen, UTF-8 is always supported
+                            throw new RuntimeException(e);
+                            }
+                            }
+
+            // add `payment_method_types` to the URL query string
+                            if (getPaymentMethodTypes() != null) {
+                            for (int i = 0; i < getPaymentMethodTypes().size(); i++) {
+                            if (getPaymentMethodTypes().get(i) != null) {
+                            joiner.add(getPaymentMethodTypes().get(i).toUrlQueryString(String.format("%spayment_method_types%s%s", prefix, suffix,
+                            "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix))));
+                            }
+                            }
+                            }
+
+            // add `flow` to the URL query string
+                            if (getFlow() != null) {
+                            try {
+                            joiner.add(String.format("%sflow%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getFlow()), "UTF-8").replaceAll("\\+", "%20")));
+                            } catch (UnsupportedEncodingException e) {
+                            // Should never happen, UTF-8 is always supported
+                            throw new RuntimeException(e);
+                            }
+                            }
+
+        return joiner.toString();
+        }
+
     }
-
-    // add `flow` to the URL query string
-    if (getFlow() != null) {
-      try {
-        joiner.add(String.format("%sflow%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getFlow()), "UTF-8").replaceAll("\\+", "%20")));
-      } catch (UnsupportedEncodingException e) {
-        // Should never happen, UTF-8 is always supported
-        throw new RuntimeException(e);
-      }
-    }
-
-    return joiner.toString();
-  }
-
-}
 

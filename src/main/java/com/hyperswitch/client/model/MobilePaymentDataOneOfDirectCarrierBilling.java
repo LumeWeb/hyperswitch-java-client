@@ -31,187 +31,188 @@ import java.net.URLEncoder;
 import java.util.StringJoiner;
 
 /**
- * MobilePaymentDataOneOfDirectCarrierBilling
- */
-@JsonPropertyOrder({
-  MobilePaymentDataOneOfDirectCarrierBilling.JSON_PROPERTY_MSISDN,
-  MobilePaymentDataOneOfDirectCarrierBilling.JSON_PROPERTY_CLIENT_UID
-})
-@JsonTypeName("MobilePaymentData_oneOf_direct_carrier_billing")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+* MobilePaymentDataOneOfDirectCarrierBilling
+*/
+    @JsonPropertyOrder({
+        MobilePaymentDataOneOfDirectCarrierBilling.JSON_PROPERTY_MSISDN,
+        MobilePaymentDataOneOfDirectCarrierBilling.JSON_PROPERTY_CLIENT_UID
+    })
+            @JsonTypeName("MobilePaymentData_oneOf_direct_carrier_billing")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class MobilePaymentDataOneOfDirectCarrierBilling {
-  public static final String JSON_PROPERTY_MSISDN = "msisdn";
-  private String msisdn;
+        public static final String JSON_PROPERTY_MSISDN = "msisdn";
+    @javax.annotation.Nonnull
+            private String msisdn;
 
-  public static final String JSON_PROPERTY_CLIENT_UID = "client_uid";
-  private JsonNullable<String> clientUid = JsonNullable.<String>undefined();
+        public static final String JSON_PROPERTY_CLIENT_UID = "client_uid";
+    @javax.annotation.Nullable
+            private JsonNullable<String> clientUid = JsonNullable.<String>undefined();
 
-  public MobilePaymentDataOneOfDirectCarrierBilling() {
-  }
+public MobilePaymentDataOneOfDirectCarrierBilling() {
+}
 
-  public MobilePaymentDataOneOfDirectCarrierBilling msisdn(String msisdn) {
-    
-    this.msisdn = msisdn;
-    return this;
-  }
+        public MobilePaymentDataOneOfDirectCarrierBilling msisdn(@javax.annotation.Nonnull String msisdn) {
+        
+        this.msisdn = msisdn;
+        return this;
+        }
 
-   /**
-   * The phone number of the user
-   * @return msisdn
-  **/
-  @javax.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_MSISDN)
+    /**
+        * The phone number of the user
+    * @return msisdn
+    */
+    @javax.annotation.Nonnull
+      @JsonProperty(JSON_PROPERTY_MSISDN)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-  public String getMsisdn() {
-    return msisdn;
-  }
+    public String getMsisdn() {
+        return msisdn;
+    }
 
 
-  @JsonProperty(JSON_PROPERTY_MSISDN)
+          @JsonProperty(JSON_PROPERTY_MSISDN)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setMsisdn(String msisdn) {
-    this.msisdn = msisdn;
-  }
+  public void setMsisdn(@javax.annotation.Nonnull String msisdn) {
+            this.msisdn = msisdn;
+        }
 
+        public MobilePaymentDataOneOfDirectCarrierBilling clientUid(@javax.annotation.Nullable String clientUid) {
+        this.clientUid = JsonNullable.<String>of(clientUid);
+        
+        return this;
+        }
 
-  public MobilePaymentDataOneOfDirectCarrierBilling clientUid(String clientUid) {
-    this.clientUid = JsonNullable.<String>of(clientUid);
+    /**
+        * Unique user id
+    * @return clientUid
+    */
+    @javax.annotation.Nullable
+        @JsonIgnore
     
-    return this;
-  }
+    public String getClientUid() {
+                return clientUid.orElse(null);
+    }
 
-   /**
-   * Unique user id
-   * @return clientUid
-  **/
-  @javax.annotation.Nullable
-  @JsonIgnore
-
-  public String getClientUid() {
-        return clientUid.orElse(null);
-  }
-
-  @JsonProperty(JSON_PROPERTY_CLIENT_UID)
+          @JsonProperty(JSON_PROPERTY_CLIENT_UID)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-  public JsonNullable<String> getClientUid_JsonNullable() {
-    return clientUid;
-  }
-  
-  @JsonProperty(JSON_PROPERTY_CLIENT_UID)
-  public void setClientUid_JsonNullable(JsonNullable<String> clientUid) {
-    this.clientUid = clientUid;
-  }
+        public JsonNullable<String> getClientUid_JsonNullable() {
+        return clientUid;
+        }
+    
+        @JsonProperty(JSON_PROPERTY_CLIENT_UID)
+        public void setClientUid_JsonNullable(JsonNullable<String> clientUid) {
+        this.clientUid = clientUid;
+        }
 
-  public void setClientUid(String clientUid) {
-    this.clientUid = JsonNullable.<String>of(clientUid);
-  }
+          public void setClientUid(@javax.annotation.Nullable String clientUid) {
+            this.clientUid = JsonNullable.<String>of(clientUid);
+        }
 
-  @Override
-  public boolean equals(Object o) {
+@Override
+public boolean equals(Object o) {
     if (this == o) {
-      return true;
+    return true;
     }
     if (o == null || getClass() != o.getClass()) {
-      return false;
+    return false;
     }
-    MobilePaymentDataOneOfDirectCarrierBilling mobilePaymentDataOneOfDirectCarrierBilling = (MobilePaymentDataOneOfDirectCarrierBilling) o;
-    return Objects.equals(this.msisdn, mobilePaymentDataOneOfDirectCarrierBilling.msisdn) &&
+        MobilePaymentDataOneOfDirectCarrierBilling mobilePaymentDataOneOfDirectCarrierBilling = (MobilePaymentDataOneOfDirectCarrierBilling) o;
+        return Objects.equals(this.msisdn, mobilePaymentDataOneOfDirectCarrierBilling.msisdn) &&
         equalsNullable(this.clientUid, mobilePaymentDataOneOfDirectCarrierBilling.clientUid);
-  }
+}
 
-  private static <T> boolean equalsNullable(JsonNullable<T> a, JsonNullable<T> b) {
-    return a == b || (a != null && b != null && a.isPresent() && b.isPresent() && Objects.deepEquals(a.get(), b.get()));
-  }
+    private static <T> boolean equalsNullable(JsonNullable<T> a, JsonNullable<T> b) {
+        return a == b || (a != null && b != null && a.isPresent() && b.isPresent() && Objects.deepEquals(a.get(), b.get()));
+        }
 
-  @Override
-  public int hashCode() {
-    return Objects.hash(msisdn, hashCodeNullable(clientUid));
-  }
-
-  private static <T> int hashCodeNullable(JsonNullable<T> a) {
-    if (a == null) {
-      return 1;
+    @Override
+    public int hashCode() {
+        return Objects.hash(msisdn, hashCodeNullable(clientUid));
     }
-    return a.isPresent() ? Arrays.deepHashCode(new Object[]{a.get()}) : 31;
-  }
 
-  @Override
-  public String toString() {
+        private static <T> int hashCodeNullable(JsonNullable<T> a) {
+        if (a == null) {
+        return 1;
+        }
+        return a.isPresent() ? Arrays.deepHashCode(new Object[]{a.get()}) : 31;
+        }
+
+    @Override
+    public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class MobilePaymentDataOneOfDirectCarrierBilling {\n");
-    sb.append("    msisdn: ").append(toIndentedString(msisdn)).append("\n");
-    sb.append("    clientUid: ").append(toIndentedString(clientUid)).append("\n");
+        sb.append("    msisdn: ").append(toIndentedString(msisdn)).append("\n");
+        sb.append("    clientUid: ").append(toIndentedString(clientUid)).append("\n");
     sb.append("}");
     return sb.toString();
-  }
+    }
 
-  /**
-   * Convert the given object to string with each line indented by 4 spaces
-   * (except the first line).
-   */
-  private String toIndentedString(Object o) {
+    /**
+    * Convert the given object to string with each line indented by 4 spaces
+    * (except the first line).
+    */
+    private String toIndentedString(Object o) {
     if (o == null) {
-      return "null";
+    return "null";
     }
     return o.toString().replace("\n", "\n    ");
-  }
-
-  /**
-   * Convert the instance into URL query string.
-   *
-   * @return URL query string
-   */
-  public String toUrlQueryString() {
-    return toUrlQueryString(null);
-  }
-
-  /**
-   * Convert the instance into URL query string.
-   *
-   * @param prefix prefix of the query string
-   * @return URL query string
-   */
-  public String toUrlQueryString(String prefix) {
-    String suffix = "";
-    String containerSuffix = "";
-    String containerPrefix = "";
-    if (prefix == null) {
-      // style=form, explode=true, e.g. /pet?name=cat&type=manx
-      prefix = "";
-    } else {
-      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
-      prefix = prefix + "[";
-      suffix = "]";
-      containerSuffix = "]";
-      containerPrefix = "[";
     }
 
-    StringJoiner joiner = new StringJoiner("&");
+        /**
+        * Convert the instance into URL query string.
+        *
+        * @return URL query string
+        */
+        public String toUrlQueryString() {
+        return toUrlQueryString(null);
+        }
 
-    // add `msisdn` to the URL query string
-    if (getMsisdn() != null) {
-      try {
-        joiner.add(String.format("%smsisdn%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getMsisdn()), "UTF-8").replaceAll("\\+", "%20")));
-      } catch (UnsupportedEncodingException e) {
-        // Should never happen, UTF-8 is always supported
-        throw new RuntimeException(e);
-      }
+        /**
+        * Convert the instance into URL query string.
+        *
+        * @param prefix prefix of the query string
+        * @return URL query string
+        */
+        public String toUrlQueryString(String prefix) {
+        String suffix = "";
+        String containerSuffix = "";
+        String containerPrefix = "";
+        if (prefix == null) {
+        // style=form, explode=true, e.g. /pet?name=cat&type=manx
+        prefix = "";
+        } else {
+        // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+        prefix = prefix + "[";
+        suffix = "]";
+        containerSuffix = "]";
+        containerPrefix = "[";
+        }
+
+        StringJoiner joiner = new StringJoiner("&");
+
+            // add `msisdn` to the URL query string
+                        if (getMsisdn() != null) {
+                        try {
+                        joiner.add(String.format("%smsisdn%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getMsisdn()), "UTF-8").replaceAll("\\+", "%20")));
+                        } catch (UnsupportedEncodingException e) {
+                        // Should never happen, UTF-8 is always supported
+                        throw new RuntimeException(e);
+                        }
+                        }
+
+            // add `client_uid` to the URL query string
+                        if (getClientUid() != null) {
+                        try {
+                        joiner.add(String.format("%sclient_uid%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getClientUid()), "UTF-8").replaceAll("\\+", "%20")));
+                        } catch (UnsupportedEncodingException e) {
+                        // Should never happen, UTF-8 is always supported
+                        throw new RuntimeException(e);
+                        }
+                        }
+
+        return joiner.toString();
+        }
+
     }
-
-    // add `client_uid` to the URL query string
-    if (getClientUid() != null) {
-      try {
-        joiner.add(String.format("%sclient_uid%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getClientUid()), "UTF-8").replaceAll("\\+", "%20")));
-      } catch (UnsupportedEncodingException e) {
-        // Should never happen, UTF-8 is always supported
-        throw new RuntimeException(e);
-      }
-    }
-
-    return joiner.toString();
-  }
-
-}
 

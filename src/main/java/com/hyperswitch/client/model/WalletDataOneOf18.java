@@ -28,121 +28,122 @@ import java.net.URLEncoder;
 import java.util.StringJoiner;
 
 /**
- * WalletDataOneOf18
- */
-@JsonPropertyOrder({
-  WalletDataOneOf18.JSON_PROPERTY_PAZE
-})
-@JsonTypeName("WalletData_oneOf_18")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+* WalletDataOneOf18
+*/
+    @JsonPropertyOrder({
+        WalletDataOneOf18.JSON_PROPERTY_PAZE
+    })
+            @JsonTypeName("WalletData_oneOf_18")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class WalletDataOneOf18 {
-  public static final String JSON_PROPERTY_PAZE = "paze";
-  private PazeWalletData paze;
+        public static final String JSON_PROPERTY_PAZE = "paze";
+    @javax.annotation.Nonnull
+            private PazeWalletData paze;
 
-  public WalletDataOneOf18() {
-  }
+public WalletDataOneOf18() {
+}
 
-  public WalletDataOneOf18 paze(PazeWalletData paze) {
-    
-    this.paze = paze;
-    return this;
-  }
+        public WalletDataOneOf18 paze(@javax.annotation.Nonnull PazeWalletData paze) {
+        
+        this.paze = paze;
+        return this;
+        }
 
-   /**
-   * Get paze
-   * @return paze
-  **/
-  @javax.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_PAZE)
+    /**
+        * Get paze
+    * @return paze
+    */
+    @javax.annotation.Nonnull
+      @JsonProperty(JSON_PROPERTY_PAZE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-  public PazeWalletData getPaze() {
-    return paze;
-  }
+    public PazeWalletData getPaze() {
+        return paze;
+    }
 
 
-  @JsonProperty(JSON_PROPERTY_PAZE)
+          @JsonProperty(JSON_PROPERTY_PAZE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setPaze(PazeWalletData paze) {
-    this.paze = paze;
-  }
+  public void setPaze(@javax.annotation.Nonnull PazeWalletData paze) {
+            this.paze = paze;
+        }
 
-  @Override
-  public boolean equals(Object o) {
+@Override
+public boolean equals(Object o) {
     if (this == o) {
-      return true;
+    return true;
     }
     if (o == null || getClass() != o.getClass()) {
-      return false;
+    return false;
     }
-    WalletDataOneOf18 walletDataOneOf18 = (WalletDataOneOf18) o;
-    return Objects.equals(this.paze, walletDataOneOf18.paze);
-  }
+        WalletDataOneOf18 walletDataOneOf18 = (WalletDataOneOf18) o;
+        return Objects.equals(this.paze, walletDataOneOf18.paze);
+}
 
-  @Override
-  public int hashCode() {
-    return Objects.hash(paze);
-  }
+    @Override
+    public int hashCode() {
+        return Objects.hash(paze);
+    }
 
-  @Override
-  public String toString() {
+    @Override
+    public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class WalletDataOneOf18 {\n");
-    sb.append("    paze: ").append(toIndentedString(paze)).append("\n");
+        sb.append("    paze: ").append(toIndentedString(paze)).append("\n");
     sb.append("}");
     return sb.toString();
-  }
+    }
 
-  /**
-   * Convert the given object to string with each line indented by 4 spaces
-   * (except the first line).
-   */
-  private String toIndentedString(Object o) {
+    /**
+    * Convert the given object to string with each line indented by 4 spaces
+    * (except the first line).
+    */
+    private String toIndentedString(Object o) {
     if (o == null) {
-      return "null";
+    return "null";
     }
     return o.toString().replace("\n", "\n    ");
-  }
-
-  /**
-   * Convert the instance into URL query string.
-   *
-   * @return URL query string
-   */
-  public String toUrlQueryString() {
-    return toUrlQueryString(null);
-  }
-
-  /**
-   * Convert the instance into URL query string.
-   *
-   * @param prefix prefix of the query string
-   * @return URL query string
-   */
-  public String toUrlQueryString(String prefix) {
-    String suffix = "";
-    String containerSuffix = "";
-    String containerPrefix = "";
-    if (prefix == null) {
-      // style=form, explode=true, e.g. /pet?name=cat&type=manx
-      prefix = "";
-    } else {
-      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
-      prefix = prefix + "[";
-      suffix = "]";
-      containerSuffix = "]";
-      containerPrefix = "[";
     }
 
-    StringJoiner joiner = new StringJoiner("&");
+        /**
+        * Convert the instance into URL query string.
+        *
+        * @return URL query string
+        */
+        public String toUrlQueryString() {
+        return toUrlQueryString(null);
+        }
 
-    // add `paze` to the URL query string
-    if (getPaze() != null) {
-      joiner.add(getPaze().toUrlQueryString(prefix + "paze" + suffix));
+        /**
+        * Convert the instance into URL query string.
+        *
+        * @param prefix prefix of the query string
+        * @return URL query string
+        */
+        public String toUrlQueryString(String prefix) {
+        String suffix = "";
+        String containerSuffix = "";
+        String containerPrefix = "";
+        if (prefix == null) {
+        // style=form, explode=true, e.g. /pet?name=cat&type=manx
+        prefix = "";
+        } else {
+        // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+        prefix = prefix + "[";
+        suffix = "]";
+        containerSuffix = "]";
+        containerPrefix = "[";
+        }
+
+        StringJoiner joiner = new StringJoiner("&");
+
+            // add `paze` to the URL query string
+                            if (getPaze() != null) {
+                            joiner.add(getPaze().toUrlQueryString(prefix + "paze" + suffix));
+                            }
+
+        return joiner.toString();
+        }
+
     }
-
-    return joiner.toString();
-  }
-
-}
 

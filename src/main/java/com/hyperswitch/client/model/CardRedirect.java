@@ -28,120 +28,121 @@ import java.net.URLEncoder;
 import java.util.StringJoiner;
 
 /**
- * CardRedirect
- */
-@JsonPropertyOrder({
-  CardRedirect.JSON_PROPERTY_CARD_REDIRECT
-})
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+* CardRedirect
+*/
+    @JsonPropertyOrder({
+        CardRedirect.JSON_PROPERTY_CARD_REDIRECT
+    })
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class CardRedirect {
-  public static final String JSON_PROPERTY_CARD_REDIRECT = "card_redirect";
-  private CardRedirectData cardRedirect;
+        public static final String JSON_PROPERTY_CARD_REDIRECT = "card_redirect";
+    @javax.annotation.Nonnull
+            private CardRedirectData cardRedirect;
 
-  public CardRedirect() {
-  }
+public CardRedirect() {
+}
 
-  public CardRedirect cardRedirect(CardRedirectData cardRedirect) {
-    
-    this.cardRedirect = cardRedirect;
-    return this;
-  }
+        public CardRedirect cardRedirect(@javax.annotation.Nonnull CardRedirectData cardRedirect) {
+        
+        this.cardRedirect = cardRedirect;
+        return this;
+        }
 
-   /**
-   * Get cardRedirect
-   * @return cardRedirect
-  **/
-  @javax.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_CARD_REDIRECT)
+    /**
+        * Get cardRedirect
+    * @return cardRedirect
+    */
+    @javax.annotation.Nonnull
+      @JsonProperty(JSON_PROPERTY_CARD_REDIRECT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-  public CardRedirectData getCardRedirect() {
-    return cardRedirect;
-  }
+    public CardRedirectData getCardRedirect() {
+        return cardRedirect;
+    }
 
 
-  @JsonProperty(JSON_PROPERTY_CARD_REDIRECT)
+          @JsonProperty(JSON_PROPERTY_CARD_REDIRECT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setCardRedirect(CardRedirectData cardRedirect) {
-    this.cardRedirect = cardRedirect;
-  }
+  public void setCardRedirect(@javax.annotation.Nonnull CardRedirectData cardRedirect) {
+            this.cardRedirect = cardRedirect;
+        }
 
-  @Override
-  public boolean equals(Object o) {
+@Override
+public boolean equals(Object o) {
     if (this == o) {
-      return true;
+    return true;
     }
     if (o == null || getClass() != o.getClass()) {
-      return false;
+    return false;
     }
-    CardRedirect cardRedirect = (CardRedirect) o;
-    return Objects.equals(this.cardRedirect, cardRedirect.cardRedirect);
-  }
+        CardRedirect cardRedirect = (CardRedirect) o;
+        return Objects.equals(this.cardRedirect, cardRedirect.cardRedirect);
+}
 
-  @Override
-  public int hashCode() {
-    return Objects.hash(cardRedirect);
-  }
+    @Override
+    public int hashCode() {
+        return Objects.hash(cardRedirect);
+    }
 
-  @Override
-  public String toString() {
+    @Override
+    public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class CardRedirect {\n");
-    sb.append("    cardRedirect: ").append(toIndentedString(cardRedirect)).append("\n");
+        sb.append("    cardRedirect: ").append(toIndentedString(cardRedirect)).append("\n");
     sb.append("}");
     return sb.toString();
-  }
+    }
 
-  /**
-   * Convert the given object to string with each line indented by 4 spaces
-   * (except the first line).
-   */
-  private String toIndentedString(Object o) {
+    /**
+    * Convert the given object to string with each line indented by 4 spaces
+    * (except the first line).
+    */
+    private String toIndentedString(Object o) {
     if (o == null) {
-      return "null";
+    return "null";
     }
     return o.toString().replace("\n", "\n    ");
-  }
-
-  /**
-   * Convert the instance into URL query string.
-   *
-   * @return URL query string
-   */
-  public String toUrlQueryString() {
-    return toUrlQueryString(null);
-  }
-
-  /**
-   * Convert the instance into URL query string.
-   *
-   * @param prefix prefix of the query string
-   * @return URL query string
-   */
-  public String toUrlQueryString(String prefix) {
-    String suffix = "";
-    String containerSuffix = "";
-    String containerPrefix = "";
-    if (prefix == null) {
-      // style=form, explode=true, e.g. /pet?name=cat&type=manx
-      prefix = "";
-    } else {
-      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
-      prefix = prefix + "[";
-      suffix = "]";
-      containerSuffix = "]";
-      containerPrefix = "[";
     }
 
-    StringJoiner joiner = new StringJoiner("&");
+        /**
+        * Convert the instance into URL query string.
+        *
+        * @return URL query string
+        */
+        public String toUrlQueryString() {
+        return toUrlQueryString(null);
+        }
 
-    // add `card_redirect` to the URL query string
-    if (getCardRedirect() != null) {
-      joiner.add(getCardRedirect().toUrlQueryString(prefix + "card_redirect" + suffix));
+        /**
+        * Convert the instance into URL query string.
+        *
+        * @param prefix prefix of the query string
+        * @return URL query string
+        */
+        public String toUrlQueryString(String prefix) {
+        String suffix = "";
+        String containerSuffix = "";
+        String containerPrefix = "";
+        if (prefix == null) {
+        // style=form, explode=true, e.g. /pet?name=cat&type=manx
+        prefix = "";
+        } else {
+        // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+        prefix = prefix + "[";
+        suffix = "]";
+        containerSuffix = "]";
+        containerPrefix = "[";
+        }
+
+        StringJoiner joiner = new StringJoiner("&");
+
+            // add `card_redirect` to the URL query string
+                            if (getCardRedirect() != null) {
+                            joiner.add(getCardRedirect().toUrlQueryString(prefix + "card_redirect" + suffix));
+                            }
+
+        return joiner.toString();
+        }
+
     }
-
-    return joiner.toString();
-  }
-
-}
 

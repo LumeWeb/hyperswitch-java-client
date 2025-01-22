@@ -28,121 +28,122 @@ import java.net.URLEncoder;
 import java.util.StringJoiner;
 
 /**
- * VoucherDataOneOf4
- */
-@JsonPropertyOrder({
-  VoucherDataOneOf4.JSON_PROPERTY_LAWSON
-})
-@JsonTypeName("VoucherData_oneOf_4")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+* VoucherDataOneOf4
+*/
+    @JsonPropertyOrder({
+        VoucherDataOneOf4.JSON_PROPERTY_LAWSON
+    })
+            @JsonTypeName("VoucherData_oneOf_4")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class VoucherDataOneOf4 {
-  public static final String JSON_PROPERTY_LAWSON = "lawson";
-  private JCSVoucherData lawson;
+        public static final String JSON_PROPERTY_LAWSON = "lawson";
+    @javax.annotation.Nonnull
+            private JCSVoucherData lawson;
 
-  public VoucherDataOneOf4() {
-  }
+public VoucherDataOneOf4() {
+}
 
-  public VoucherDataOneOf4 lawson(JCSVoucherData lawson) {
-    
-    this.lawson = lawson;
-    return this;
-  }
+        public VoucherDataOneOf4 lawson(@javax.annotation.Nonnull JCSVoucherData lawson) {
+        
+        this.lawson = lawson;
+        return this;
+        }
 
-   /**
-   * Get lawson
-   * @return lawson
-  **/
-  @javax.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_LAWSON)
+    /**
+        * Get lawson
+    * @return lawson
+    */
+    @javax.annotation.Nonnull
+      @JsonProperty(JSON_PROPERTY_LAWSON)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-  public JCSVoucherData getLawson() {
-    return lawson;
-  }
+    public JCSVoucherData getLawson() {
+        return lawson;
+    }
 
 
-  @JsonProperty(JSON_PROPERTY_LAWSON)
+          @JsonProperty(JSON_PROPERTY_LAWSON)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setLawson(JCSVoucherData lawson) {
-    this.lawson = lawson;
-  }
+  public void setLawson(@javax.annotation.Nonnull JCSVoucherData lawson) {
+            this.lawson = lawson;
+        }
 
-  @Override
-  public boolean equals(Object o) {
+@Override
+public boolean equals(Object o) {
     if (this == o) {
-      return true;
+    return true;
     }
     if (o == null || getClass() != o.getClass()) {
-      return false;
+    return false;
     }
-    VoucherDataOneOf4 voucherDataOneOf4 = (VoucherDataOneOf4) o;
-    return Objects.equals(this.lawson, voucherDataOneOf4.lawson);
-  }
+        VoucherDataOneOf4 voucherDataOneOf4 = (VoucherDataOneOf4) o;
+        return Objects.equals(this.lawson, voucherDataOneOf4.lawson);
+}
 
-  @Override
-  public int hashCode() {
-    return Objects.hash(lawson);
-  }
+    @Override
+    public int hashCode() {
+        return Objects.hash(lawson);
+    }
 
-  @Override
-  public String toString() {
+    @Override
+    public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class VoucherDataOneOf4 {\n");
-    sb.append("    lawson: ").append(toIndentedString(lawson)).append("\n");
+        sb.append("    lawson: ").append(toIndentedString(lawson)).append("\n");
     sb.append("}");
     return sb.toString();
-  }
+    }
 
-  /**
-   * Convert the given object to string with each line indented by 4 spaces
-   * (except the first line).
-   */
-  private String toIndentedString(Object o) {
+    /**
+    * Convert the given object to string with each line indented by 4 spaces
+    * (except the first line).
+    */
+    private String toIndentedString(Object o) {
     if (o == null) {
-      return "null";
+    return "null";
     }
     return o.toString().replace("\n", "\n    ");
-  }
-
-  /**
-   * Convert the instance into URL query string.
-   *
-   * @return URL query string
-   */
-  public String toUrlQueryString() {
-    return toUrlQueryString(null);
-  }
-
-  /**
-   * Convert the instance into URL query string.
-   *
-   * @param prefix prefix of the query string
-   * @return URL query string
-   */
-  public String toUrlQueryString(String prefix) {
-    String suffix = "";
-    String containerSuffix = "";
-    String containerPrefix = "";
-    if (prefix == null) {
-      // style=form, explode=true, e.g. /pet?name=cat&type=manx
-      prefix = "";
-    } else {
-      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
-      prefix = prefix + "[";
-      suffix = "]";
-      containerSuffix = "]";
-      containerPrefix = "[";
     }
 
-    StringJoiner joiner = new StringJoiner("&");
+        /**
+        * Convert the instance into URL query string.
+        *
+        * @return URL query string
+        */
+        public String toUrlQueryString() {
+        return toUrlQueryString(null);
+        }
 
-    // add `lawson` to the URL query string
-    if (getLawson() != null) {
-      joiner.add(getLawson().toUrlQueryString(prefix + "lawson" + suffix));
+        /**
+        * Convert the instance into URL query string.
+        *
+        * @param prefix prefix of the query string
+        * @return URL query string
+        */
+        public String toUrlQueryString(String prefix) {
+        String suffix = "";
+        String containerSuffix = "";
+        String containerPrefix = "";
+        if (prefix == null) {
+        // style=form, explode=true, e.g. /pet?name=cat&type=manx
+        prefix = "";
+        } else {
+        // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+        prefix = prefix + "[";
+        suffix = "]";
+        containerSuffix = "]";
+        containerPrefix = "[";
+        }
+
+        StringJoiner joiner = new StringJoiner("&");
+
+            // add `lawson` to the URL query string
+                            if (getLawson() != null) {
+                            joiner.add(getLawson().toUrlQueryString(prefix + "lawson" + suffix));
+                            }
+
+        return joiner.toString();
+        }
+
     }
-
-    return joiner.toString();
-  }
-
-}
 

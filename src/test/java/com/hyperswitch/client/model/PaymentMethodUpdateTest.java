@@ -23,22 +23,21 @@ import org.openapitools.jackson.nullable.JsonNullable;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.openapitools.jackson.nullable.JsonNullable;
 import java.util.NoSuchElementException;
-import org.junit.Assert;
-import org.junit.Ignore;
-import org.junit.Test;
-
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Test;
 
 /**
  * Model tests for PaymentMethodUpdate
  */
-public class PaymentMethodUpdateTest {
+class PaymentMethodUpdateTest {
     private final PaymentMethodUpdate model = new PaymentMethodUpdate();
 
     /**
      * Model tests for PaymentMethodUpdate
      */
     @Test
-    public void testPaymentMethodUpdate() {
+    void testPaymentMethodUpdate() {
         // TODO: test PaymentMethodUpdate
     }
 
@@ -46,7 +45,7 @@ public class PaymentMethodUpdateTest {
      * Test the property 'card'
      */
     @Test
-    public void cardTest() {
+    void cardTest() {
         // TODO: test card
     }
 
@@ -54,7 +53,7 @@ public class PaymentMethodUpdateTest {
      * Test the property 'clientSecret'
      */
     @Test
-    public void clientSecretTest() {
+    void clientSecretTest() {
         // TODO: test clientSecret
     }
 

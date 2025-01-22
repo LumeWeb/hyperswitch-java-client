@@ -33,9 +33,9 @@ import com.hyperswitch.client.model.PaymentsSessionResponse;
 import com.hyperswitch.client.model.PaymentsUpdateRequest;
 import com.hyperswitch.client.model.RetrievePaymentLinkRequest;
 import com.hyperswitch.client.model.RetrievePaymentLinkResponse;
-import org.junit.Test;
-import org.junit.Ignore;
-import org.junit.Assert;
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Test;
 
 import java.time.LocalDate;
 import java.time.OffsetDateTime;
@@ -47,7 +47,7 @@ import java.util.Map;
 /**
  * API tests for PaymentsApi
  */
-@Ignore
+@Disabled
 public class PaymentsApiTest {
 
     private final PaymentsApi api = new PaymentsApi();

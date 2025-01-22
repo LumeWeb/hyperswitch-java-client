@@ -29,120 +29,121 @@ import java.net.URLEncoder;
 import java.util.StringJoiner;
 
 /**
- * AdditionalMerchantData
- */
-@JsonPropertyOrder({
-  AdditionalMerchantData.JSON_PROPERTY_OPEN_BANKING_RECIPIENT_DATA
-})
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+* AdditionalMerchantData
+*/
+    @JsonPropertyOrder({
+        AdditionalMerchantData.JSON_PROPERTY_OPEN_BANKING_RECIPIENT_DATA
+    })
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class AdditionalMerchantData {
-  public static final String JSON_PROPERTY_OPEN_BANKING_RECIPIENT_DATA = "open_banking_recipient_data";
-  private MerchantRecipientData openBankingRecipientData;
+        public static final String JSON_PROPERTY_OPEN_BANKING_RECIPIENT_DATA = "open_banking_recipient_data";
+    @javax.annotation.Nonnull
+            private MerchantRecipientData openBankingRecipientData;
 
-  public AdditionalMerchantData() {
-  }
+public AdditionalMerchantData() {
+}
 
-  public AdditionalMerchantData openBankingRecipientData(MerchantRecipientData openBankingRecipientData) {
-    
-    this.openBankingRecipientData = openBankingRecipientData;
-    return this;
-  }
+        public AdditionalMerchantData openBankingRecipientData(@javax.annotation.Nonnull MerchantRecipientData openBankingRecipientData) {
+        
+        this.openBankingRecipientData = openBankingRecipientData;
+        return this;
+        }
 
-   /**
-   * Get openBankingRecipientData
-   * @return openBankingRecipientData
-  **/
-  @javax.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_OPEN_BANKING_RECIPIENT_DATA)
+    /**
+        * Get openBankingRecipientData
+    * @return openBankingRecipientData
+    */
+    @javax.annotation.Nonnull
+      @JsonProperty(JSON_PROPERTY_OPEN_BANKING_RECIPIENT_DATA)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-  public MerchantRecipientData getOpenBankingRecipientData() {
-    return openBankingRecipientData;
-  }
+    public MerchantRecipientData getOpenBankingRecipientData() {
+        return openBankingRecipientData;
+    }
 
 
-  @JsonProperty(JSON_PROPERTY_OPEN_BANKING_RECIPIENT_DATA)
+          @JsonProperty(JSON_PROPERTY_OPEN_BANKING_RECIPIENT_DATA)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setOpenBankingRecipientData(MerchantRecipientData openBankingRecipientData) {
-    this.openBankingRecipientData = openBankingRecipientData;
-  }
+  public void setOpenBankingRecipientData(@javax.annotation.Nonnull MerchantRecipientData openBankingRecipientData) {
+            this.openBankingRecipientData = openBankingRecipientData;
+        }
 
-  @Override
-  public boolean equals(Object o) {
+@Override
+public boolean equals(Object o) {
     if (this == o) {
-      return true;
+    return true;
     }
     if (o == null || getClass() != o.getClass()) {
-      return false;
+    return false;
     }
-    AdditionalMerchantData additionalMerchantData = (AdditionalMerchantData) o;
-    return Objects.equals(this.openBankingRecipientData, additionalMerchantData.openBankingRecipientData);
-  }
+        AdditionalMerchantData additionalMerchantData = (AdditionalMerchantData) o;
+        return Objects.equals(this.openBankingRecipientData, additionalMerchantData.openBankingRecipientData);
+}
 
-  @Override
-  public int hashCode() {
-    return Objects.hash(openBankingRecipientData);
-  }
+    @Override
+    public int hashCode() {
+        return Objects.hash(openBankingRecipientData);
+    }
 
-  @Override
-  public String toString() {
+    @Override
+    public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class AdditionalMerchantData {\n");
-    sb.append("    openBankingRecipientData: ").append(toIndentedString(openBankingRecipientData)).append("\n");
+        sb.append("    openBankingRecipientData: ").append(toIndentedString(openBankingRecipientData)).append("\n");
     sb.append("}");
     return sb.toString();
-  }
+    }
 
-  /**
-   * Convert the given object to string with each line indented by 4 spaces
-   * (except the first line).
-   */
-  private String toIndentedString(Object o) {
+    /**
+    * Convert the given object to string with each line indented by 4 spaces
+    * (except the first line).
+    */
+    private String toIndentedString(Object o) {
     if (o == null) {
-      return "null";
+    return "null";
     }
     return o.toString().replace("\n", "\n    ");
-  }
-
-  /**
-   * Convert the instance into URL query string.
-   *
-   * @return URL query string
-   */
-  public String toUrlQueryString() {
-    return toUrlQueryString(null);
-  }
-
-  /**
-   * Convert the instance into URL query string.
-   *
-   * @param prefix prefix of the query string
-   * @return URL query string
-   */
-  public String toUrlQueryString(String prefix) {
-    String suffix = "";
-    String containerSuffix = "";
-    String containerPrefix = "";
-    if (prefix == null) {
-      // style=form, explode=true, e.g. /pet?name=cat&type=manx
-      prefix = "";
-    } else {
-      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
-      prefix = prefix + "[";
-      suffix = "]";
-      containerSuffix = "]";
-      containerPrefix = "[";
     }
 
-    StringJoiner joiner = new StringJoiner("&");
+        /**
+        * Convert the instance into URL query string.
+        *
+        * @return URL query string
+        */
+        public String toUrlQueryString() {
+        return toUrlQueryString(null);
+        }
 
-    // add `open_banking_recipient_data` to the URL query string
-    if (getOpenBankingRecipientData() != null) {
-      joiner.add(getOpenBankingRecipientData().toUrlQueryString(prefix + "open_banking_recipient_data" + suffix));
+        /**
+        * Convert the instance into URL query string.
+        *
+        * @param prefix prefix of the query string
+        * @return URL query string
+        */
+        public String toUrlQueryString(String prefix) {
+        String suffix = "";
+        String containerSuffix = "";
+        String containerPrefix = "";
+        if (prefix == null) {
+        // style=form, explode=true, e.g. /pet?name=cat&type=manx
+        prefix = "";
+        } else {
+        // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+        prefix = prefix + "[";
+        suffix = "]";
+        containerSuffix = "]";
+        containerPrefix = "[";
+        }
+
+        StringJoiner joiner = new StringJoiner("&");
+
+            // add `open_banking_recipient_data` to the URL query string
+                            if (getOpenBankingRecipientData() != null) {
+                            joiner.add(getOpenBankingRecipientData().toUrlQueryString(prefix + "open_banking_recipient_data" + suffix));
+                            }
+
+        return joiner.toString();
+        }
+
     }
-
-    return joiner.toString();
-  }
-
-}
 

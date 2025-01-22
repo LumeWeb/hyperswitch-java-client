@@ -31,244 +31,245 @@ import java.net.URLEncoder;
 import java.util.StringJoiner;
 
 /**
- * Object for GenericLinkUiConfig
- */
-@JsonPropertyOrder({
-  GenericLinkUiConfig.JSON_PROPERTY_LOGO,
-  GenericLinkUiConfig.JSON_PROPERTY_MERCHANT_NAME,
-  GenericLinkUiConfig.JSON_PROPERTY_THEME
-})
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+* Object for GenericLinkUiConfig
+*/
+    @JsonPropertyOrder({
+        GenericLinkUiConfig.JSON_PROPERTY_LOGO,
+        GenericLinkUiConfig.JSON_PROPERTY_MERCHANT_NAME,
+        GenericLinkUiConfig.JSON_PROPERTY_THEME
+    })
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class GenericLinkUiConfig {
-  public static final String JSON_PROPERTY_LOGO = "logo";
-  private JsonNullable<String> logo = JsonNullable.<String>undefined();
+        public static final String JSON_PROPERTY_LOGO = "logo";
+    @javax.annotation.Nullable
+            private JsonNullable<String> logo = JsonNullable.<String>undefined();
 
-  public static final String JSON_PROPERTY_MERCHANT_NAME = "merchant_name";
-  private JsonNullable<String> merchantName = JsonNullable.<String>undefined();
+        public static final String JSON_PROPERTY_MERCHANT_NAME = "merchant_name";
+    @javax.annotation.Nullable
+            private JsonNullable<String> merchantName = JsonNullable.<String>undefined();
 
-  public static final String JSON_PROPERTY_THEME = "theme";
-  private JsonNullable<String> theme = JsonNullable.<String>undefined();
+        public static final String JSON_PROPERTY_THEME = "theme";
+    @javax.annotation.Nullable
+            private JsonNullable<String> theme = JsonNullable.<String>undefined();
 
-  public GenericLinkUiConfig() {
-  }
+public GenericLinkUiConfig() {
+}
 
-  public GenericLinkUiConfig logo(String logo) {
-    this.logo = JsonNullable.<String>of(logo);
+        public GenericLinkUiConfig logo(@javax.annotation.Nullable String logo) {
+        this.logo = JsonNullable.<String>of(logo);
+        
+        return this;
+        }
+
+    /**
+        * Merchant&#39;s display logo
+    * @return logo
+    */
+    @javax.annotation.Nullable
+        @JsonIgnore
     
-    return this;
-  }
+    public String getLogo() {
+                return logo.orElse(null);
+    }
 
-   /**
-   * Merchant&#39;s display logo
-   * @return logo
-  **/
-  @javax.annotation.Nullable
-  @JsonIgnore
-
-  public String getLogo() {
-        return logo.orElse(null);
-  }
-
-  @JsonProperty(JSON_PROPERTY_LOGO)
+          @JsonProperty(JSON_PROPERTY_LOGO)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-  public JsonNullable<String> getLogo_JsonNullable() {
-    return logo;
-  }
-  
-  @JsonProperty(JSON_PROPERTY_LOGO)
-  public void setLogo_JsonNullable(JsonNullable<String> logo) {
-    this.logo = logo;
-  }
-
-  public void setLogo(String logo) {
-    this.logo = JsonNullable.<String>of(logo);
-  }
-
-
-  public GenericLinkUiConfig merchantName(String merchantName) {
-    this.merchantName = JsonNullable.<String>of(merchantName);
+        public JsonNullable<String> getLogo_JsonNullable() {
+        return logo;
+        }
     
-    return this;
-  }
+        @JsonProperty(JSON_PROPERTY_LOGO)
+        public void setLogo_JsonNullable(JsonNullable<String> logo) {
+        this.logo = logo;
+        }
 
-   /**
-   * Custom merchant name for the link
-   * @return merchantName
-  **/
-  @javax.annotation.Nullable
-  @JsonIgnore
+          public void setLogo(@javax.annotation.Nullable String logo) {
+            this.logo = JsonNullable.<String>of(logo);
+        }
 
-  public String getMerchantName() {
-        return merchantName.orElse(null);
-  }
+        public GenericLinkUiConfig merchantName(@javax.annotation.Nullable String merchantName) {
+        this.merchantName = JsonNullable.<String>of(merchantName);
+        
+        return this;
+        }
 
-  @JsonProperty(JSON_PROPERTY_MERCHANT_NAME)
+    /**
+        * Custom merchant name for the link
+    * @return merchantName
+    */
+    @javax.annotation.Nullable
+        @JsonIgnore
+    
+    public String getMerchantName() {
+                return merchantName.orElse(null);
+    }
+
+          @JsonProperty(JSON_PROPERTY_MERCHANT_NAME)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-  public JsonNullable<String> getMerchantName_JsonNullable() {
-    return merchantName;
-  }
-  
-  @JsonProperty(JSON_PROPERTY_MERCHANT_NAME)
-  public void setMerchantName_JsonNullable(JsonNullable<String> merchantName) {
-    this.merchantName = merchantName;
-  }
-
-  public void setMerchantName(String merchantName) {
-    this.merchantName = JsonNullable.<String>of(merchantName);
-  }
-
-
-  public GenericLinkUiConfig theme(String theme) {
-    this.theme = JsonNullable.<String>of(theme);
+        public JsonNullable<String> getMerchantName_JsonNullable() {
+        return merchantName;
+        }
     
-    return this;
-  }
+        @JsonProperty(JSON_PROPERTY_MERCHANT_NAME)
+        public void setMerchantName_JsonNullable(JsonNullable<String> merchantName) {
+        this.merchantName = merchantName;
+        }
 
-   /**
-   * Primary color to be used in the form represented in hex format
-   * @return theme
-  **/
-  @javax.annotation.Nullable
-  @JsonIgnore
+          public void setMerchantName(@javax.annotation.Nullable String merchantName) {
+            this.merchantName = JsonNullable.<String>of(merchantName);
+        }
 
-  public String getTheme() {
-        return theme.orElse(null);
-  }
+        public GenericLinkUiConfig theme(@javax.annotation.Nullable String theme) {
+        this.theme = JsonNullable.<String>of(theme);
+        
+        return this;
+        }
 
-  @JsonProperty(JSON_PROPERTY_THEME)
+    /**
+        * Primary color to be used in the form represented in hex format
+    * @return theme
+    */
+    @javax.annotation.Nullable
+        @JsonIgnore
+    
+    public String getTheme() {
+                return theme.orElse(null);
+    }
+
+          @JsonProperty(JSON_PROPERTY_THEME)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-  public JsonNullable<String> getTheme_JsonNullable() {
-    return theme;
-  }
-  
-  @JsonProperty(JSON_PROPERTY_THEME)
-  public void setTheme_JsonNullable(JsonNullable<String> theme) {
-    this.theme = theme;
-  }
+        public JsonNullable<String> getTheme_JsonNullable() {
+        return theme;
+        }
+    
+        @JsonProperty(JSON_PROPERTY_THEME)
+        public void setTheme_JsonNullable(JsonNullable<String> theme) {
+        this.theme = theme;
+        }
 
-  public void setTheme(String theme) {
-    this.theme = JsonNullable.<String>of(theme);
-  }
+          public void setTheme(@javax.annotation.Nullable String theme) {
+            this.theme = JsonNullable.<String>of(theme);
+        }
 
-  @Override
-  public boolean equals(Object o) {
+@Override
+public boolean equals(Object o) {
     if (this == o) {
-      return true;
+    return true;
     }
     if (o == null || getClass() != o.getClass()) {
-      return false;
+    return false;
     }
-    GenericLinkUiConfig genericLinkUiConfig = (GenericLinkUiConfig) o;
-    return equalsNullable(this.logo, genericLinkUiConfig.logo) &&
+        GenericLinkUiConfig genericLinkUiConfig = (GenericLinkUiConfig) o;
+        return equalsNullable(this.logo, genericLinkUiConfig.logo) &&
         equalsNullable(this.merchantName, genericLinkUiConfig.merchantName) &&
         equalsNullable(this.theme, genericLinkUiConfig.theme);
-  }
+}
 
-  private static <T> boolean equalsNullable(JsonNullable<T> a, JsonNullable<T> b) {
-    return a == b || (a != null && b != null && a.isPresent() && b.isPresent() && Objects.deepEquals(a.get(), b.get()));
-  }
+    private static <T> boolean equalsNullable(JsonNullable<T> a, JsonNullable<T> b) {
+        return a == b || (a != null && b != null && a.isPresent() && b.isPresent() && Objects.deepEquals(a.get(), b.get()));
+        }
 
-  @Override
-  public int hashCode() {
-    return Objects.hash(hashCodeNullable(logo), hashCodeNullable(merchantName), hashCodeNullable(theme));
-  }
-
-  private static <T> int hashCodeNullable(JsonNullable<T> a) {
-    if (a == null) {
-      return 1;
+    @Override
+    public int hashCode() {
+        return Objects.hash(hashCodeNullable(logo), hashCodeNullable(merchantName), hashCodeNullable(theme));
     }
-    return a.isPresent() ? Arrays.deepHashCode(new Object[]{a.get()}) : 31;
-  }
 
-  @Override
-  public String toString() {
+        private static <T> int hashCodeNullable(JsonNullable<T> a) {
+        if (a == null) {
+        return 1;
+        }
+        return a.isPresent() ? Arrays.deepHashCode(new Object[]{a.get()}) : 31;
+        }
+
+    @Override
+    public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class GenericLinkUiConfig {\n");
-    sb.append("    logo: ").append(toIndentedString(logo)).append("\n");
-    sb.append("    merchantName: ").append(toIndentedString(merchantName)).append("\n");
-    sb.append("    theme: ").append(toIndentedString(theme)).append("\n");
+        sb.append("    logo: ").append(toIndentedString(logo)).append("\n");
+        sb.append("    merchantName: ").append(toIndentedString(merchantName)).append("\n");
+        sb.append("    theme: ").append(toIndentedString(theme)).append("\n");
     sb.append("}");
     return sb.toString();
-  }
+    }
 
-  /**
-   * Convert the given object to string with each line indented by 4 spaces
-   * (except the first line).
-   */
-  private String toIndentedString(Object o) {
+    /**
+    * Convert the given object to string with each line indented by 4 spaces
+    * (except the first line).
+    */
+    private String toIndentedString(Object o) {
     if (o == null) {
-      return "null";
+    return "null";
     }
     return o.toString().replace("\n", "\n    ");
-  }
-
-  /**
-   * Convert the instance into URL query string.
-   *
-   * @return URL query string
-   */
-  public String toUrlQueryString() {
-    return toUrlQueryString(null);
-  }
-
-  /**
-   * Convert the instance into URL query string.
-   *
-   * @param prefix prefix of the query string
-   * @return URL query string
-   */
-  public String toUrlQueryString(String prefix) {
-    String suffix = "";
-    String containerSuffix = "";
-    String containerPrefix = "";
-    if (prefix == null) {
-      // style=form, explode=true, e.g. /pet?name=cat&type=manx
-      prefix = "";
-    } else {
-      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
-      prefix = prefix + "[";
-      suffix = "]";
-      containerSuffix = "]";
-      containerPrefix = "[";
     }
 
-    StringJoiner joiner = new StringJoiner("&");
+        /**
+        * Convert the instance into URL query string.
+        *
+        * @return URL query string
+        */
+        public String toUrlQueryString() {
+        return toUrlQueryString(null);
+        }
 
-    // add `logo` to the URL query string
-    if (getLogo() != null) {
-      try {
-        joiner.add(String.format("%slogo%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getLogo()), "UTF-8").replaceAll("\\+", "%20")));
-      } catch (UnsupportedEncodingException e) {
-        // Should never happen, UTF-8 is always supported
-        throw new RuntimeException(e);
-      }
+        /**
+        * Convert the instance into URL query string.
+        *
+        * @param prefix prefix of the query string
+        * @return URL query string
+        */
+        public String toUrlQueryString(String prefix) {
+        String suffix = "";
+        String containerSuffix = "";
+        String containerPrefix = "";
+        if (prefix == null) {
+        // style=form, explode=true, e.g. /pet?name=cat&type=manx
+        prefix = "";
+        } else {
+        // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+        prefix = prefix + "[";
+        suffix = "]";
+        containerSuffix = "]";
+        containerPrefix = "[";
+        }
+
+        StringJoiner joiner = new StringJoiner("&");
+
+            // add `logo` to the URL query string
+                        if (getLogo() != null) {
+                        try {
+                        joiner.add(String.format("%slogo%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getLogo()), "UTF-8").replaceAll("\\+", "%20")));
+                        } catch (UnsupportedEncodingException e) {
+                        // Should never happen, UTF-8 is always supported
+                        throw new RuntimeException(e);
+                        }
+                        }
+
+            // add `merchant_name` to the URL query string
+                        if (getMerchantName() != null) {
+                        try {
+                        joiner.add(String.format("%smerchant_name%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getMerchantName()), "UTF-8").replaceAll("\\+", "%20")));
+                        } catch (UnsupportedEncodingException e) {
+                        // Should never happen, UTF-8 is always supported
+                        throw new RuntimeException(e);
+                        }
+                        }
+
+            // add `theme` to the URL query string
+                        if (getTheme() != null) {
+                        try {
+                        joiner.add(String.format("%stheme%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getTheme()), "UTF-8").replaceAll("\\+", "%20")));
+                        } catch (UnsupportedEncodingException e) {
+                        // Should never happen, UTF-8 is always supported
+                        throw new RuntimeException(e);
+                        }
+                        }
+
+        return joiner.toString();
+        }
+
     }
-
-    // add `merchant_name` to the URL query string
-    if (getMerchantName() != null) {
-      try {
-        joiner.add(String.format("%smerchant_name%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getMerchantName()), "UTF-8").replaceAll("\\+", "%20")));
-      } catch (UnsupportedEncodingException e) {
-        // Should never happen, UTF-8 is always supported
-        throw new RuntimeException(e);
-      }
-    }
-
-    // add `theme` to the URL query string
-    if (getTheme() != null) {
-      try {
-        joiner.add(String.format("%stheme%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getTheme()), "UTF-8").replaceAll("\\+", "%20")));
-      } catch (UnsupportedEncodingException e) {
-        // Should never happen, UTF-8 is always supported
-        throw new RuntimeException(e);
-      }
-    }
-
-    return joiner.toString();
-  }
-
-}
 

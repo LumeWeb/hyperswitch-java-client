@@ -29,209 +29,210 @@ import java.net.URLEncoder;
 import java.util.StringJoiner;
 
 /**
- * BlocklistResponse
- */
-@JsonPropertyOrder({
-  BlocklistResponse.JSON_PROPERTY_FINGERPRINT_ID,
-  BlocklistResponse.JSON_PROPERTY_DATA_KIND,
-  BlocklistResponse.JSON_PROPERTY_CREATED_AT
-})
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+* BlocklistResponse
+*/
+    @JsonPropertyOrder({
+        BlocklistResponse.JSON_PROPERTY_FINGERPRINT_ID,
+        BlocklistResponse.JSON_PROPERTY_DATA_KIND,
+        BlocklistResponse.JSON_PROPERTY_CREATED_AT
+    })
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class BlocklistResponse {
-  public static final String JSON_PROPERTY_FINGERPRINT_ID = "fingerprint_id";
-  private String fingerprintId;
+        public static final String JSON_PROPERTY_FINGERPRINT_ID = "fingerprint_id";
+    @javax.annotation.Nonnull
+            private String fingerprintId;
 
-  public static final String JSON_PROPERTY_DATA_KIND = "data_kind";
-  private BlocklistDataKind dataKind;
+        public static final String JSON_PROPERTY_DATA_KIND = "data_kind";
+    @javax.annotation.Nonnull
+            private BlocklistDataKind dataKind;
 
-  public static final String JSON_PROPERTY_CREATED_AT = "created_at";
-  private OffsetDateTime createdAt;
+        public static final String JSON_PROPERTY_CREATED_AT = "created_at";
+    @javax.annotation.Nonnull
+            private OffsetDateTime createdAt;
 
-  public BlocklistResponse() {
-  }
+public BlocklistResponse() {
+}
 
-  public BlocklistResponse fingerprintId(String fingerprintId) {
-    
-    this.fingerprintId = fingerprintId;
-    return this;
-  }
+        public BlocklistResponse fingerprintId(@javax.annotation.Nonnull String fingerprintId) {
+        
+        this.fingerprintId = fingerprintId;
+        return this;
+        }
 
-   /**
-   * Get fingerprintId
-   * @return fingerprintId
-  **/
-  @javax.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_FINGERPRINT_ID)
+    /**
+        * Get fingerprintId
+    * @return fingerprintId
+    */
+    @javax.annotation.Nonnull
+      @JsonProperty(JSON_PROPERTY_FINGERPRINT_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-  public String getFingerprintId() {
-    return fingerprintId;
-  }
+    public String getFingerprintId() {
+        return fingerprintId;
+    }
 
 
-  @JsonProperty(JSON_PROPERTY_FINGERPRINT_ID)
+          @JsonProperty(JSON_PROPERTY_FINGERPRINT_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setFingerprintId(String fingerprintId) {
-    this.fingerprintId = fingerprintId;
-  }
+  public void setFingerprintId(@javax.annotation.Nonnull String fingerprintId) {
+            this.fingerprintId = fingerprintId;
+        }
 
+        public BlocklistResponse dataKind(@javax.annotation.Nonnull BlocklistDataKind dataKind) {
+        
+        this.dataKind = dataKind;
+        return this;
+        }
 
-  public BlocklistResponse dataKind(BlocklistDataKind dataKind) {
-    
-    this.dataKind = dataKind;
-    return this;
-  }
-
-   /**
-   * Get dataKind
-   * @return dataKind
-  **/
-  @javax.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_DATA_KIND)
-  @JsonInclude(value = JsonInclude.Include.ALWAYS)
-
-  public BlocklistDataKind getDataKind() {
-    return dataKind;
-  }
-
-
-  @JsonProperty(JSON_PROPERTY_DATA_KIND)
-  @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setDataKind(BlocklistDataKind dataKind) {
-    this.dataKind = dataKind;
-  }
-
-
-  public BlocklistResponse createdAt(OffsetDateTime createdAt) {
-    
-    this.createdAt = createdAt;
-    return this;
-  }
-
-   /**
-   * Get createdAt
-   * @return createdAt
-  **/
-  @javax.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_CREATED_AT)
+    /**
+        * Get dataKind
+    * @return dataKind
+    */
+    @javax.annotation.Nonnull
+      @JsonProperty(JSON_PROPERTY_DATA_KIND)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-  public OffsetDateTime getCreatedAt() {
-    return createdAt;
-  }
+    public BlocklistDataKind getDataKind() {
+        return dataKind;
+    }
 
 
-  @JsonProperty(JSON_PROPERTY_CREATED_AT)
+          @JsonProperty(JSON_PROPERTY_DATA_KIND)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setCreatedAt(OffsetDateTime createdAt) {
-    this.createdAt = createdAt;
-  }
+  public void setDataKind(@javax.annotation.Nonnull BlocklistDataKind dataKind) {
+            this.dataKind = dataKind;
+        }
 
-  @Override
-  public boolean equals(Object o) {
+        public BlocklistResponse createdAt(@javax.annotation.Nonnull OffsetDateTime createdAt) {
+        
+        this.createdAt = createdAt;
+        return this;
+        }
+
+    /**
+        * Get createdAt
+    * @return createdAt
+    */
+    @javax.annotation.Nonnull
+      @JsonProperty(JSON_PROPERTY_CREATED_AT)
+  @JsonInclude(value = JsonInclude.Include.ALWAYS)
+
+    public OffsetDateTime getCreatedAt() {
+        return createdAt;
+    }
+
+
+          @JsonProperty(JSON_PROPERTY_CREATED_AT)
+  @JsonInclude(value = JsonInclude.Include.ALWAYS)
+  public void setCreatedAt(@javax.annotation.Nonnull OffsetDateTime createdAt) {
+            this.createdAt = createdAt;
+        }
+
+@Override
+public boolean equals(Object o) {
     if (this == o) {
-      return true;
+    return true;
     }
     if (o == null || getClass() != o.getClass()) {
-      return false;
+    return false;
     }
-    BlocklistResponse blocklistResponse = (BlocklistResponse) o;
-    return Objects.equals(this.fingerprintId, blocklistResponse.fingerprintId) &&
+        BlocklistResponse blocklistResponse = (BlocklistResponse) o;
+        return Objects.equals(this.fingerprintId, blocklistResponse.fingerprintId) &&
         Objects.equals(this.dataKind, blocklistResponse.dataKind) &&
         Objects.equals(this.createdAt, blocklistResponse.createdAt);
-  }
+}
 
-  @Override
-  public int hashCode() {
-    return Objects.hash(fingerprintId, dataKind, createdAt);
-  }
+    @Override
+    public int hashCode() {
+        return Objects.hash(fingerprintId, dataKind, createdAt);
+    }
 
-  @Override
-  public String toString() {
+    @Override
+    public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class BlocklistResponse {\n");
-    sb.append("    fingerprintId: ").append(toIndentedString(fingerprintId)).append("\n");
-    sb.append("    dataKind: ").append(toIndentedString(dataKind)).append("\n");
-    sb.append("    createdAt: ").append(toIndentedString(createdAt)).append("\n");
+        sb.append("    fingerprintId: ").append(toIndentedString(fingerprintId)).append("\n");
+        sb.append("    dataKind: ").append(toIndentedString(dataKind)).append("\n");
+        sb.append("    createdAt: ").append(toIndentedString(createdAt)).append("\n");
     sb.append("}");
     return sb.toString();
-  }
+    }
 
-  /**
-   * Convert the given object to string with each line indented by 4 spaces
-   * (except the first line).
-   */
-  private String toIndentedString(Object o) {
+    /**
+    * Convert the given object to string with each line indented by 4 spaces
+    * (except the first line).
+    */
+    private String toIndentedString(Object o) {
     if (o == null) {
-      return "null";
+    return "null";
     }
     return o.toString().replace("\n", "\n    ");
-  }
-
-  /**
-   * Convert the instance into URL query string.
-   *
-   * @return URL query string
-   */
-  public String toUrlQueryString() {
-    return toUrlQueryString(null);
-  }
-
-  /**
-   * Convert the instance into URL query string.
-   *
-   * @param prefix prefix of the query string
-   * @return URL query string
-   */
-  public String toUrlQueryString(String prefix) {
-    String suffix = "";
-    String containerSuffix = "";
-    String containerPrefix = "";
-    if (prefix == null) {
-      // style=form, explode=true, e.g. /pet?name=cat&type=manx
-      prefix = "";
-    } else {
-      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
-      prefix = prefix + "[";
-      suffix = "]";
-      containerSuffix = "]";
-      containerPrefix = "[";
     }
 
-    StringJoiner joiner = new StringJoiner("&");
+        /**
+        * Convert the instance into URL query string.
+        *
+        * @return URL query string
+        */
+        public String toUrlQueryString() {
+        return toUrlQueryString(null);
+        }
 
-    // add `fingerprint_id` to the URL query string
-    if (getFingerprintId() != null) {
-      try {
-        joiner.add(String.format("%sfingerprint_id%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getFingerprintId()), "UTF-8").replaceAll("\\+", "%20")));
-      } catch (UnsupportedEncodingException e) {
-        // Should never happen, UTF-8 is always supported
-        throw new RuntimeException(e);
-      }
+        /**
+        * Convert the instance into URL query string.
+        *
+        * @param prefix prefix of the query string
+        * @return URL query string
+        */
+        public String toUrlQueryString(String prefix) {
+        String suffix = "";
+        String containerSuffix = "";
+        String containerPrefix = "";
+        if (prefix == null) {
+        // style=form, explode=true, e.g. /pet?name=cat&type=manx
+        prefix = "";
+        } else {
+        // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+        prefix = prefix + "[";
+        suffix = "]";
+        containerSuffix = "]";
+        containerPrefix = "[";
+        }
+
+        StringJoiner joiner = new StringJoiner("&");
+
+            // add `fingerprint_id` to the URL query string
+                        if (getFingerprintId() != null) {
+                        try {
+                        joiner.add(String.format("%sfingerprint_id%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getFingerprintId()), "UTF-8").replaceAll("\\+", "%20")));
+                        } catch (UnsupportedEncodingException e) {
+                        // Should never happen, UTF-8 is always supported
+                        throw new RuntimeException(e);
+                        }
+                        }
+
+            // add `data_kind` to the URL query string
+                            if (getDataKind() != null) {
+                            try {
+                            joiner.add(String.format("%sdata_kind%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getDataKind()), "UTF-8").replaceAll("\\+", "%20")));
+                            } catch (UnsupportedEncodingException e) {
+                            // Should never happen, UTF-8 is always supported
+                            throw new RuntimeException(e);
+                            }
+                            }
+
+            // add `created_at` to the URL query string
+                            if (getCreatedAt() != null) {
+                            try {
+                            joiner.add(String.format("%screated_at%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCreatedAt()), "UTF-8").replaceAll("\\+", "%20")));
+                            } catch (UnsupportedEncodingException e) {
+                            // Should never happen, UTF-8 is always supported
+                            throw new RuntimeException(e);
+                            }
+                            }
+
+        return joiner.toString();
+        }
+
     }
-
-    // add `data_kind` to the URL query string
-    if (getDataKind() != null) {
-      try {
-        joiner.add(String.format("%sdata_kind%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getDataKind()), "UTF-8").replaceAll("\\+", "%20")));
-      } catch (UnsupportedEncodingException e) {
-        // Should never happen, UTF-8 is always supported
-        throw new RuntimeException(e);
-      }
-    }
-
-    // add `created_at` to the URL query string
-    if (getCreatedAt() != null) {
-      try {
-        joiner.add(String.format("%screated_at%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCreatedAt()), "UTF-8").replaceAll("\\+", "%20")));
-      } catch (UnsupportedEncodingException e) {
-        // Should never happen, UTF-8 is always supported
-        throw new RuntimeException(e);
-      }
-    }
-
-    return joiner.toString();
-  }
-
-}
 

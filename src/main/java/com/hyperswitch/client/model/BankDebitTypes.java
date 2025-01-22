@@ -21,6 +21,7 @@ import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonTypeName;
 import com.fasterxml.jackson.annotation.JsonValue;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 import com.fasterxml.jackson.annotation.JsonTypeName;
@@ -29,137 +30,138 @@ import java.net.URLEncoder;
 import java.util.StringJoiner;
 
 /**
- * BankDebitTypes
- */
-@JsonPropertyOrder({
-  BankDebitTypes.JSON_PROPERTY_ELIGIBLE_CONNECTORS
-})
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+* BankDebitTypes
+*/
+    @JsonPropertyOrder({
+        BankDebitTypes.JSON_PROPERTY_ELIGIBLE_CONNECTORS
+    })
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class BankDebitTypes {
-  public static final String JSON_PROPERTY_ELIGIBLE_CONNECTORS = "eligible_connectors";
-  private List<String> eligibleConnectors = new ArrayList<>();
+        public static final String JSON_PROPERTY_ELIGIBLE_CONNECTORS = "eligible_connectors";
+    @javax.annotation.Nonnull
+            private List<String> eligibleConnectors = new ArrayList<>();
 
-  public BankDebitTypes() {
-  }
+public BankDebitTypes() {
+}
 
-  public BankDebitTypes eligibleConnectors(List<String> eligibleConnectors) {
-    
-    this.eligibleConnectors = eligibleConnectors;
-    return this;
-  }
+        public BankDebitTypes eligibleConnectors(@javax.annotation.Nonnull List<String> eligibleConnectors) {
+        
+        this.eligibleConnectors = eligibleConnectors;
+        return this;
+        }
 
-  public BankDebitTypes addEligibleConnectorsItem(String eligibleConnectorsItem) {
-    if (this.eligibleConnectors == null) {
-      this.eligibleConnectors = new ArrayList<>();
+            public BankDebitTypes addEligibleConnectorsItem(String eligibleConnectorsItem) {
+                if (this.eligibleConnectors == null) {
+                this.eligibleConnectors = new ArrayList<>();
+                }
+                this.eligibleConnectors.add(eligibleConnectorsItem);
+                return this;
+            }
+
+    /**
+        * Get eligibleConnectors
+    * @return eligibleConnectors
+    */
+    @javax.annotation.Nonnull
+      @JsonProperty(JSON_PROPERTY_ELIGIBLE_CONNECTORS)
+  @JsonInclude(value = JsonInclude.Include.ALWAYS)
+
+    public List<String> getEligibleConnectors() {
+        return eligibleConnectors;
     }
-    this.eligibleConnectors.add(eligibleConnectorsItem);
-    return this;
-  }
 
-   /**
-   * Get eligibleConnectors
-   * @return eligibleConnectors
-  **/
-  @javax.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_ELIGIBLE_CONNECTORS)
+
+          @JsonProperty(JSON_PROPERTY_ELIGIBLE_CONNECTORS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
+  public void setEligibleConnectors(@javax.annotation.Nonnull List<String> eligibleConnectors) {
+            this.eligibleConnectors = eligibleConnectors;
+        }
 
-  public List<String> getEligibleConnectors() {
-    return eligibleConnectors;
-  }
-
-
-  @JsonProperty(JSON_PROPERTY_ELIGIBLE_CONNECTORS)
-  @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setEligibleConnectors(List<String> eligibleConnectors) {
-    this.eligibleConnectors = eligibleConnectors;
-  }
-
-  @Override
-  public boolean equals(Object o) {
+@Override
+public boolean equals(Object o) {
     if (this == o) {
-      return true;
+    return true;
     }
     if (o == null || getClass() != o.getClass()) {
-      return false;
+    return false;
     }
-    BankDebitTypes bankDebitTypes = (BankDebitTypes) o;
-    return Objects.equals(this.eligibleConnectors, bankDebitTypes.eligibleConnectors);
-  }
+        BankDebitTypes bankDebitTypes = (BankDebitTypes) o;
+        return Objects.equals(this.eligibleConnectors, bankDebitTypes.eligibleConnectors);
+}
 
-  @Override
-  public int hashCode() {
-    return Objects.hash(eligibleConnectors);
-  }
+    @Override
+    public int hashCode() {
+        return Objects.hash(eligibleConnectors);
+    }
 
-  @Override
-  public String toString() {
+    @Override
+    public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class BankDebitTypes {\n");
-    sb.append("    eligibleConnectors: ").append(toIndentedString(eligibleConnectors)).append("\n");
+        sb.append("    eligibleConnectors: ").append(toIndentedString(eligibleConnectors)).append("\n");
     sb.append("}");
     return sb.toString();
-  }
+    }
 
-  /**
-   * Convert the given object to string with each line indented by 4 spaces
-   * (except the first line).
-   */
-  private String toIndentedString(Object o) {
+    /**
+    * Convert the given object to string with each line indented by 4 spaces
+    * (except the first line).
+    */
+    private String toIndentedString(Object o) {
     if (o == null) {
-      return "null";
+    return "null";
     }
     return o.toString().replace("\n", "\n    ");
-  }
-
-  /**
-   * Convert the instance into URL query string.
-   *
-   * @return URL query string
-   */
-  public String toUrlQueryString() {
-    return toUrlQueryString(null);
-  }
-
-  /**
-   * Convert the instance into URL query string.
-   *
-   * @param prefix prefix of the query string
-   * @return URL query string
-   */
-  public String toUrlQueryString(String prefix) {
-    String suffix = "";
-    String containerSuffix = "";
-    String containerPrefix = "";
-    if (prefix == null) {
-      // style=form, explode=true, e.g. /pet?name=cat&type=manx
-      prefix = "";
-    } else {
-      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
-      prefix = prefix + "[";
-      suffix = "]";
-      containerSuffix = "]";
-      containerPrefix = "[";
     }
 
-    StringJoiner joiner = new StringJoiner("&");
-
-    // add `eligible_connectors` to the URL query string
-    if (getEligibleConnectors() != null) {
-      for (int i = 0; i < getEligibleConnectors().size(); i++) {
-        try {
-          joiner.add(String.format("%seligible_connectors%s%s=%s", prefix, suffix,
-              "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix),
-              URLEncoder.encode(String.valueOf(getEligibleConnectors().get(i)), "UTF-8").replaceAll("\\+", "%20")));
-        } catch (UnsupportedEncodingException e) {
-          // Should never happen, UTF-8 is always supported
-          throw new RuntimeException(e);
+        /**
+        * Convert the instance into URL query string.
+        *
+        * @return URL query string
+        */
+        public String toUrlQueryString() {
+        return toUrlQueryString(null);
         }
-      }
+
+        /**
+        * Convert the instance into URL query string.
+        *
+        * @param prefix prefix of the query string
+        * @return URL query string
+        */
+        public String toUrlQueryString(String prefix) {
+        String suffix = "";
+        String containerSuffix = "";
+        String containerPrefix = "";
+        if (prefix == null) {
+        // style=form, explode=true, e.g. /pet?name=cat&type=manx
+        prefix = "";
+        } else {
+        // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+        prefix = prefix + "[";
+        suffix = "]";
+        containerSuffix = "]";
+        containerPrefix = "[";
+        }
+
+        StringJoiner joiner = new StringJoiner("&");
+
+            // add `eligible_connectors` to the URL query string
+                        if (getEligibleConnectors() != null) {
+                        for (int i = 0; i < getEligibleConnectors().size(); i++) {
+                        try {
+                        joiner.add(String.format("%seligible_connectors%s%s=%s", prefix, suffix,
+                        "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix),
+                        URLEncoder.encode(String.valueOf(getEligibleConnectors().get(i)), "UTF-8").replaceAll("\\+", "%20")));
+                        } catch (UnsupportedEncodingException e) {
+                        // Should never happen, UTF-8 is always supported
+                        throw new RuntimeException(e);
+                        }
+                        }
+                        }
+
+        return joiner.toString();
+        }
+
     }
-
-    return joiner.toString();
-  }
-
-}
 

@@ -23,22 +23,21 @@ import org.openapitools.jackson.nullable.JsonNullable;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.openapitools.jackson.nullable.JsonNullable;
 import java.util.NoSuchElementException;
-import org.junit.Assert;
-import org.junit.Ignore;
-import org.junit.Test;
-
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Test;
 
 /**
  * Model tests for MandateCardDetails
  */
-public class MandateCardDetailsTest {
+class MandateCardDetailsTest {
     private final MandateCardDetails model = new MandateCardDetails();
 
     /**
      * Model tests for MandateCardDetails
      */
     @Test
-    public void testMandateCardDetails() {
+    void testMandateCardDetails() {
         // TODO: test MandateCardDetails
     }
 
@@ -46,7 +45,7 @@ public class MandateCardDetailsTest {
      * Test the property 'last4Digits'
      */
     @Test
-    public void last4DigitsTest() {
+    void last4DigitsTest() {
         // TODO: test last4Digits
     }
 
@@ -54,7 +53,7 @@ public class MandateCardDetailsTest {
      * Test the property 'cardExpMonth'
      */
     @Test
-    public void cardExpMonthTest() {
+    void cardExpMonthTest() {
         // TODO: test cardExpMonth
     }
 
@@ -62,7 +61,7 @@ public class MandateCardDetailsTest {
      * Test the property 'cardExpYear'
      */
     @Test
-    public void cardExpYearTest() {
+    void cardExpYearTest() {
         // TODO: test cardExpYear
     }
 
@@ -70,7 +69,7 @@ public class MandateCardDetailsTest {
      * Test the property 'cardHolderName'
      */
     @Test
-    public void cardHolderNameTest() {
+    void cardHolderNameTest() {
         // TODO: test cardHolderName
     }
 
@@ -78,7 +77,7 @@ public class MandateCardDetailsTest {
      * Test the property 'cardToken'
      */
     @Test
-    public void cardTokenTest() {
+    void cardTokenTest() {
         // TODO: test cardToken
     }
 
@@ -86,7 +85,7 @@ public class MandateCardDetailsTest {
      * Test the property 'scheme'
      */
     @Test
-    public void schemeTest() {
+    void schemeTest() {
         // TODO: test scheme
     }
 
@@ -94,7 +93,7 @@ public class MandateCardDetailsTest {
      * Test the property 'issuerCountry'
      */
     @Test
-    public void issuerCountryTest() {
+    void issuerCountryTest() {
         // TODO: test issuerCountry
     }
 
@@ -102,7 +101,7 @@ public class MandateCardDetailsTest {
      * Test the property 'cardFingerprint'
      */
     @Test
-    public void cardFingerprintTest() {
+    void cardFingerprintTest() {
         // TODO: test cardFingerprint
     }
 
@@ -110,7 +109,7 @@ public class MandateCardDetailsTest {
      * Test the property 'cardIsin'
      */
     @Test
-    public void cardIsinTest() {
+    void cardIsinTest() {
         // TODO: test cardIsin
     }
 
@@ -118,7 +117,7 @@ public class MandateCardDetailsTest {
      * Test the property 'cardIssuer'
      */
     @Test
-    public void cardIssuerTest() {
+    void cardIssuerTest() {
         // TODO: test cardIssuer
     }
 
@@ -126,7 +125,7 @@ public class MandateCardDetailsTest {
      * Test the property 'cardNetwork'
      */
     @Test
-    public void cardNetworkTest() {
+    void cardNetworkTest() {
         // TODO: test cardNetwork
     }
 
@@ -134,7 +133,7 @@ public class MandateCardDetailsTest {
      * Test the property 'cardType'
      */
     @Test
-    public void cardTypeTest() {
+    void cardTypeTest() {
         // TODO: test cardType
     }
 
@@ -142,7 +141,7 @@ public class MandateCardDetailsTest {
      * Test the property 'nickName'
      */
     @Test
-    public void nickNameTest() {
+    void nickNameTest() {
         // TODO: test nickName
     }
 

@@ -26,22 +26,21 @@ import org.openapitools.jackson.nullable.JsonNullable;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.openapitools.jackson.nullable.JsonNullable;
 import java.util.NoSuchElementException;
-import org.junit.Assert;
-import org.junit.Ignore;
-import org.junit.Test;
-
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Test;
 
 /**
  * Model tests for SamsungPayWalletCredentials
  */
-public class SamsungPayWalletCredentialsTest {
+class SamsungPayWalletCredentialsTest {
     private final SamsungPayWalletCredentials model = new SamsungPayWalletCredentials();
 
     /**
      * Model tests for SamsungPayWalletCredentials
      */
     @Test
-    public void testSamsungPayWalletCredentials() {
+    void testSamsungPayWalletCredentials() {
         // TODO: test SamsungPayWalletCredentials
     }
 
@@ -49,7 +48,7 @@ public class SamsungPayWalletCredentialsTest {
      * Test the property 'method'
      */
     @Test
-    public void methodTest() {
+    void methodTest() {
         // TODO: test method
     }
 
@@ -57,7 +56,7 @@ public class SamsungPayWalletCredentialsTest {
      * Test the property 'recurringPayment'
      */
     @Test
-    public void recurringPaymentTest() {
+    void recurringPaymentTest() {
         // TODO: test recurringPayment
     }
 
@@ -65,7 +64,7 @@ public class SamsungPayWalletCredentialsTest {
      * Test the property 'cardBrand'
      */
     @Test
-    public void cardBrandTest() {
+    void cardBrandTest() {
         // TODO: test cardBrand
     }
 
@@ -73,7 +72,7 @@ public class SamsungPayWalletCredentialsTest {
      * Test the property 'cardLast4digits'
      */
     @Test
-    public void cardLast4digitsTest() {
+    void cardLast4digitsTest() {
         // TODO: test cardLast4digits
     }
 
@@ -81,7 +80,7 @@ public class SamsungPayWalletCredentialsTest {
      * Test the property '_3dS'
      */
     @Test
-    public void _3dSTest() {
+    void _3dSTest() {
         // TODO: test _3dS
     }
 
@@ -89,7 +88,7 @@ public class SamsungPayWalletCredentialsTest {
      * Test the property 'paymentCardBrand'
      */
     @Test
-    public void paymentCardBrandTest() {
+    void paymentCardBrandTest() {
         // TODO: test paymentCardBrand
     }
 
@@ -97,7 +96,7 @@ public class SamsungPayWalletCredentialsTest {
      * Test the property 'paymentCurrencyType'
      */
     @Test
-    public void paymentCurrencyTypeTest() {
+    void paymentCurrencyTypeTest() {
         // TODO: test paymentCurrencyType
     }
 
@@ -105,7 +104,7 @@ public class SamsungPayWalletCredentialsTest {
      * Test the property 'paymentLast4Dpan'
      */
     @Test
-    public void paymentLast4DpanTest() {
+    void paymentLast4DpanTest() {
         // TODO: test paymentLast4Dpan
     }
 
@@ -113,7 +112,7 @@ public class SamsungPayWalletCredentialsTest {
      * Test the property 'paymentLast4Fpan'
      */
     @Test
-    public void paymentLast4FpanTest() {
+    void paymentLast4FpanTest() {
         // TODO: test paymentLast4Fpan
     }
 
@@ -121,7 +120,7 @@ public class SamsungPayWalletCredentialsTest {
      * Test the property 'merchantRef'
      */
     @Test
-    public void merchantRefTest() {
+    void merchantRefTest() {
         // TODO: test merchantRef
     }
 

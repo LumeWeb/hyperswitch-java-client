@@ -19,22 +19,21 @@ import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonTypeName;
 import com.fasterxml.jackson.annotation.JsonValue;
 import com.hyperswitch.client.model.ProcessorPaymentToken;
-import org.junit.Assert;
-import org.junit.Ignore;
-import org.junit.Test;
-
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Test;
 
 /**
  * Model tests for RecurringDetailsOneOf2
  */
-public class RecurringDetailsOneOf2Test {
+class RecurringDetailsOneOf2Test {
     private final RecurringDetailsOneOf2 model = new RecurringDetailsOneOf2();
 
     /**
      * Model tests for RecurringDetailsOneOf2
      */
     @Test
-    public void testRecurringDetailsOneOf2() {
+    void testRecurringDetailsOneOf2() {
         // TODO: test RecurringDetailsOneOf2
     }
 
@@ -42,7 +41,7 @@ public class RecurringDetailsOneOf2Test {
      * Test the property 'type'
      */
     @Test
-    public void typeTest() {
+    void typeTest() {
         // TODO: test type
     }
 
@@ -50,7 +49,7 @@ public class RecurringDetailsOneOf2Test {
      * Test the property 'data'
      */
     @Test
-    public void dataTest() {
+    void dataTest() {
         // TODO: test data
     }
 

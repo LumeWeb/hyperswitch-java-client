@@ -27,126 +27,127 @@ import java.net.URLEncoder;
 import java.util.StringJoiner;
 
 /**
- * RealTimePaymentDataOneOf1
- */
-@JsonPropertyOrder({
-  RealTimePaymentDataOneOf1.JSON_PROPERTY_DUIT_NOW
-})
-@JsonTypeName("RealTimePaymentData_oneOf_1")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+* RealTimePaymentDataOneOf1
+*/
+    @JsonPropertyOrder({
+        RealTimePaymentDataOneOf1.JSON_PROPERTY_DUIT_NOW
+    })
+            @JsonTypeName("RealTimePaymentData_oneOf_1")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class RealTimePaymentDataOneOf1 {
-  public static final String JSON_PROPERTY_DUIT_NOW = "duit_now";
-  private Object duitNow;
+        public static final String JSON_PROPERTY_DUIT_NOW = "duit_now";
+    @javax.annotation.Nonnull
+            private Object duitNow;
 
-  public RealTimePaymentDataOneOf1() {
-  }
+public RealTimePaymentDataOneOf1() {
+}
 
-  public RealTimePaymentDataOneOf1 duitNow(Object duitNow) {
-    
-    this.duitNow = duitNow;
-    return this;
-  }
+        public RealTimePaymentDataOneOf1 duitNow(@javax.annotation.Nonnull Object duitNow) {
+        
+        this.duitNow = duitNow;
+        return this;
+        }
 
-   /**
-   * Get duitNow
-   * @return duitNow
-  **/
-  @javax.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_DUIT_NOW)
+    /**
+        * Get duitNow
+    * @return duitNow
+    */
+    @javax.annotation.Nonnull
+      @JsonProperty(JSON_PROPERTY_DUIT_NOW)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-  public Object getDuitNow() {
-    return duitNow;
-  }
+    public Object getDuitNow() {
+        return duitNow;
+    }
 
 
-  @JsonProperty(JSON_PROPERTY_DUIT_NOW)
+          @JsonProperty(JSON_PROPERTY_DUIT_NOW)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setDuitNow(Object duitNow) {
-    this.duitNow = duitNow;
-  }
+  public void setDuitNow(@javax.annotation.Nonnull Object duitNow) {
+            this.duitNow = duitNow;
+        }
 
-  @Override
-  public boolean equals(Object o) {
+@Override
+public boolean equals(Object o) {
     if (this == o) {
-      return true;
+    return true;
     }
     if (o == null || getClass() != o.getClass()) {
-      return false;
+    return false;
     }
-    RealTimePaymentDataOneOf1 realTimePaymentDataOneOf1 = (RealTimePaymentDataOneOf1) o;
-    return Objects.equals(this.duitNow, realTimePaymentDataOneOf1.duitNow);
-  }
+        RealTimePaymentDataOneOf1 realTimePaymentDataOneOf1 = (RealTimePaymentDataOneOf1) o;
+        return Objects.equals(this.duitNow, realTimePaymentDataOneOf1.duitNow);
+}
 
-  @Override
-  public int hashCode() {
-    return Objects.hash(duitNow);
-  }
+    @Override
+    public int hashCode() {
+        return Objects.hash(duitNow);
+    }
 
-  @Override
-  public String toString() {
+    @Override
+    public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class RealTimePaymentDataOneOf1 {\n");
-    sb.append("    duitNow: ").append(toIndentedString(duitNow)).append("\n");
+        sb.append("    duitNow: ").append(toIndentedString(duitNow)).append("\n");
     sb.append("}");
     return sb.toString();
-  }
+    }
 
-  /**
-   * Convert the given object to string with each line indented by 4 spaces
-   * (except the first line).
-   */
-  private String toIndentedString(Object o) {
+    /**
+    * Convert the given object to string with each line indented by 4 spaces
+    * (except the first line).
+    */
+    private String toIndentedString(Object o) {
     if (o == null) {
-      return "null";
+    return "null";
     }
     return o.toString().replace("\n", "\n    ");
-  }
-
-  /**
-   * Convert the instance into URL query string.
-   *
-   * @return URL query string
-   */
-  public String toUrlQueryString() {
-    return toUrlQueryString(null);
-  }
-
-  /**
-   * Convert the instance into URL query string.
-   *
-   * @param prefix prefix of the query string
-   * @return URL query string
-   */
-  public String toUrlQueryString(String prefix) {
-    String suffix = "";
-    String containerSuffix = "";
-    String containerPrefix = "";
-    if (prefix == null) {
-      // style=form, explode=true, e.g. /pet?name=cat&type=manx
-      prefix = "";
-    } else {
-      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
-      prefix = prefix + "[";
-      suffix = "]";
-      containerSuffix = "]";
-      containerPrefix = "[";
     }
 
-    StringJoiner joiner = new StringJoiner("&");
+        /**
+        * Convert the instance into URL query string.
+        *
+        * @return URL query string
+        */
+        public String toUrlQueryString() {
+        return toUrlQueryString(null);
+        }
 
-    // add `duit_now` to the URL query string
-    if (getDuitNow() != null) {
-      try {
-        joiner.add(String.format("%sduit_now%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getDuitNow()), "UTF-8").replaceAll("\\+", "%20")));
-      } catch (UnsupportedEncodingException e) {
-        // Should never happen, UTF-8 is always supported
-        throw new RuntimeException(e);
-      }
+        /**
+        * Convert the instance into URL query string.
+        *
+        * @param prefix prefix of the query string
+        * @return URL query string
+        */
+        public String toUrlQueryString(String prefix) {
+        String suffix = "";
+        String containerSuffix = "";
+        String containerPrefix = "";
+        if (prefix == null) {
+        // style=form, explode=true, e.g. /pet?name=cat&type=manx
+        prefix = "";
+        } else {
+        // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+        prefix = prefix + "[";
+        suffix = "]";
+        containerSuffix = "]";
+        containerPrefix = "[";
+        }
+
+        StringJoiner joiner = new StringJoiner("&");
+
+            // add `duit_now` to the URL query string
+                        if (getDuitNow() != null) {
+                        try {
+                        joiner.add(String.format("%sduit_now%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getDuitNow()), "UTF-8").replaceAll("\\+", "%20")));
+                        } catch (UnsupportedEncodingException e) {
+                        // Should never happen, UTF-8 is always supported
+                        throw new RuntimeException(e);
+                        }
+                        }
+
+        return joiner.toString();
+        }
+
     }
-
-    return joiner.toString();
-  }
-
-}
 

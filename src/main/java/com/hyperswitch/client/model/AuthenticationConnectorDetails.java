@@ -22,6 +22,7 @@ import com.fasterxml.jackson.annotation.JsonTypeName;
 import com.fasterxml.jackson.annotation.JsonValue;
 import com.hyperswitch.client.model.AuthenticationConnectors;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 import com.fasterxml.jackson.annotation.JsonTypeName;
@@ -30,181 +31,182 @@ import java.net.URLEncoder;
 import java.util.StringJoiner;
 
 /**
- * AuthenticationConnectorDetails
- */
-@JsonPropertyOrder({
-  AuthenticationConnectorDetails.JSON_PROPERTY_AUTHENTICATION_CONNECTORS,
-  AuthenticationConnectorDetails.JSON_PROPERTY_THREE_DS_REQUESTOR_URL
-})
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+* AuthenticationConnectorDetails
+*/
+    @JsonPropertyOrder({
+        AuthenticationConnectorDetails.JSON_PROPERTY_AUTHENTICATION_CONNECTORS,
+        AuthenticationConnectorDetails.JSON_PROPERTY_THREE_DS_REQUESTOR_URL
+    })
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class AuthenticationConnectorDetails {
-  public static final String JSON_PROPERTY_AUTHENTICATION_CONNECTORS = "authentication_connectors";
-  private List<AuthenticationConnectors> authenticationConnectors = new ArrayList<>();
+        public static final String JSON_PROPERTY_AUTHENTICATION_CONNECTORS = "authentication_connectors";
+    @javax.annotation.Nonnull
+            private List<AuthenticationConnectors> authenticationConnectors = new ArrayList<>();
 
-  public static final String JSON_PROPERTY_THREE_DS_REQUESTOR_URL = "three_ds_requestor_url";
-  private String threeDsRequestorUrl;
+        public static final String JSON_PROPERTY_THREE_DS_REQUESTOR_URL = "three_ds_requestor_url";
+    @javax.annotation.Nonnull
+            private String threeDsRequestorUrl;
 
-  public AuthenticationConnectorDetails() {
-  }
+public AuthenticationConnectorDetails() {
+}
 
-  public AuthenticationConnectorDetails authenticationConnectors(List<AuthenticationConnectors> authenticationConnectors) {
-    
-    this.authenticationConnectors = authenticationConnectors;
-    return this;
-  }
+        public AuthenticationConnectorDetails authenticationConnectors(@javax.annotation.Nonnull List<AuthenticationConnectors> authenticationConnectors) {
+        
+        this.authenticationConnectors = authenticationConnectors;
+        return this;
+        }
 
-  public AuthenticationConnectorDetails addAuthenticationConnectorsItem(AuthenticationConnectors authenticationConnectorsItem) {
-    if (this.authenticationConnectors == null) {
-      this.authenticationConnectors = new ArrayList<>();
+            public AuthenticationConnectorDetails addAuthenticationConnectorsItem(AuthenticationConnectors authenticationConnectorsItem) {
+                if (this.authenticationConnectors == null) {
+                this.authenticationConnectors = new ArrayList<>();
+                }
+                this.authenticationConnectors.add(authenticationConnectorsItem);
+                return this;
+            }
+
+    /**
+        * List of authentication connectors
+    * @return authenticationConnectors
+    */
+    @javax.annotation.Nonnull
+      @JsonProperty(JSON_PROPERTY_AUTHENTICATION_CONNECTORS)
+  @JsonInclude(value = JsonInclude.Include.ALWAYS)
+
+    public List<AuthenticationConnectors> getAuthenticationConnectors() {
+        return authenticationConnectors;
     }
-    this.authenticationConnectors.add(authenticationConnectorsItem);
-    return this;
-  }
 
-   /**
-   * List of authentication connectors
-   * @return authenticationConnectors
-  **/
-  @javax.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_AUTHENTICATION_CONNECTORS)
+
+          @JsonProperty(JSON_PROPERTY_AUTHENTICATION_CONNECTORS)
+  @JsonInclude(value = JsonInclude.Include.ALWAYS)
+  public void setAuthenticationConnectors(@javax.annotation.Nonnull List<AuthenticationConnectors> authenticationConnectors) {
+            this.authenticationConnectors = authenticationConnectors;
+        }
+
+        public AuthenticationConnectorDetails threeDsRequestorUrl(@javax.annotation.Nonnull String threeDsRequestorUrl) {
+        
+        this.threeDsRequestorUrl = threeDsRequestorUrl;
+        return this;
+        }
+
+    /**
+        * URL of the (customer service) website that will be shown to the shopper in case of technical errors during the 3D Secure 2 process.
+    * @return threeDsRequestorUrl
+    */
+    @javax.annotation.Nonnull
+      @JsonProperty(JSON_PROPERTY_THREE_DS_REQUESTOR_URL)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-  public List<AuthenticationConnectors> getAuthenticationConnectors() {
-    return authenticationConnectors;
-  }
+    public String getThreeDsRequestorUrl() {
+        return threeDsRequestorUrl;
+    }
 
 
-  @JsonProperty(JSON_PROPERTY_AUTHENTICATION_CONNECTORS)
+          @JsonProperty(JSON_PROPERTY_THREE_DS_REQUESTOR_URL)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setAuthenticationConnectors(List<AuthenticationConnectors> authenticationConnectors) {
-    this.authenticationConnectors = authenticationConnectors;
-  }
+  public void setThreeDsRequestorUrl(@javax.annotation.Nonnull String threeDsRequestorUrl) {
+            this.threeDsRequestorUrl = threeDsRequestorUrl;
+        }
 
-
-  public AuthenticationConnectorDetails threeDsRequestorUrl(String threeDsRequestorUrl) {
-    
-    this.threeDsRequestorUrl = threeDsRequestorUrl;
-    return this;
-  }
-
-   /**
-   * URL of the (customer service) website that will be shown to the shopper in case of technical errors during the 3D Secure 2 process.
-   * @return threeDsRequestorUrl
-  **/
-  @javax.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_THREE_DS_REQUESTOR_URL)
-  @JsonInclude(value = JsonInclude.Include.ALWAYS)
-
-  public String getThreeDsRequestorUrl() {
-    return threeDsRequestorUrl;
-  }
-
-
-  @JsonProperty(JSON_PROPERTY_THREE_DS_REQUESTOR_URL)
-  @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setThreeDsRequestorUrl(String threeDsRequestorUrl) {
-    this.threeDsRequestorUrl = threeDsRequestorUrl;
-  }
-
-  @Override
-  public boolean equals(Object o) {
+@Override
+public boolean equals(Object o) {
     if (this == o) {
-      return true;
+    return true;
     }
     if (o == null || getClass() != o.getClass()) {
-      return false;
+    return false;
     }
-    AuthenticationConnectorDetails authenticationConnectorDetails = (AuthenticationConnectorDetails) o;
-    return Objects.equals(this.authenticationConnectors, authenticationConnectorDetails.authenticationConnectors) &&
+        AuthenticationConnectorDetails authenticationConnectorDetails = (AuthenticationConnectorDetails) o;
+        return Objects.equals(this.authenticationConnectors, authenticationConnectorDetails.authenticationConnectors) &&
         Objects.equals(this.threeDsRequestorUrl, authenticationConnectorDetails.threeDsRequestorUrl);
-  }
+}
 
-  @Override
-  public int hashCode() {
-    return Objects.hash(authenticationConnectors, threeDsRequestorUrl);
-  }
+    @Override
+    public int hashCode() {
+        return Objects.hash(authenticationConnectors, threeDsRequestorUrl);
+    }
 
-  @Override
-  public String toString() {
+    @Override
+    public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class AuthenticationConnectorDetails {\n");
-    sb.append("    authenticationConnectors: ").append(toIndentedString(authenticationConnectors)).append("\n");
-    sb.append("    threeDsRequestorUrl: ").append(toIndentedString(threeDsRequestorUrl)).append("\n");
+        sb.append("    authenticationConnectors: ").append(toIndentedString(authenticationConnectors)).append("\n");
+        sb.append("    threeDsRequestorUrl: ").append(toIndentedString(threeDsRequestorUrl)).append("\n");
     sb.append("}");
     return sb.toString();
-  }
+    }
 
-  /**
-   * Convert the given object to string with each line indented by 4 spaces
-   * (except the first line).
-   */
-  private String toIndentedString(Object o) {
+    /**
+    * Convert the given object to string with each line indented by 4 spaces
+    * (except the first line).
+    */
+    private String toIndentedString(Object o) {
     if (o == null) {
-      return "null";
+    return "null";
     }
     return o.toString().replace("\n", "\n    ");
-  }
-
-  /**
-   * Convert the instance into URL query string.
-   *
-   * @return URL query string
-   */
-  public String toUrlQueryString() {
-    return toUrlQueryString(null);
-  }
-
-  /**
-   * Convert the instance into URL query string.
-   *
-   * @param prefix prefix of the query string
-   * @return URL query string
-   */
-  public String toUrlQueryString(String prefix) {
-    String suffix = "";
-    String containerSuffix = "";
-    String containerPrefix = "";
-    if (prefix == null) {
-      // style=form, explode=true, e.g. /pet?name=cat&type=manx
-      prefix = "";
-    } else {
-      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
-      prefix = prefix + "[";
-      suffix = "]";
-      containerSuffix = "]";
-      containerPrefix = "[";
     }
 
-    StringJoiner joiner = new StringJoiner("&");
-
-    // add `authentication_connectors` to the URL query string
-    if (getAuthenticationConnectors() != null) {
-      for (int i = 0; i < getAuthenticationConnectors().size(); i++) {
-        if (getAuthenticationConnectors().get(i) != null) {
-          try {
-            joiner.add(String.format("%sauthentication_connectors%s%s=%s", prefix, suffix,
-                "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix),
-                URLEncoder.encode(String.valueOf(getAuthenticationConnectors().get(i)), "UTF-8").replaceAll("\\+", "%20")));
-          } catch (UnsupportedEncodingException e) {
-            // Should never happen, UTF-8 is always supported
-            throw new RuntimeException(e);
-          }
+        /**
+        * Convert the instance into URL query string.
+        *
+        * @return URL query string
+        */
+        public String toUrlQueryString() {
+        return toUrlQueryString(null);
         }
-      }
+
+        /**
+        * Convert the instance into URL query string.
+        *
+        * @param prefix prefix of the query string
+        * @return URL query string
+        */
+        public String toUrlQueryString(String prefix) {
+        String suffix = "";
+        String containerSuffix = "";
+        String containerPrefix = "";
+        if (prefix == null) {
+        // style=form, explode=true, e.g. /pet?name=cat&type=manx
+        prefix = "";
+        } else {
+        // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+        prefix = prefix + "[";
+        suffix = "]";
+        containerSuffix = "]";
+        containerPrefix = "[";
+        }
+
+        StringJoiner joiner = new StringJoiner("&");
+
+            // add `authentication_connectors` to the URL query string
+                            if (getAuthenticationConnectors() != null) {
+                            for (int i = 0; i < getAuthenticationConnectors().size(); i++) {
+                            if (getAuthenticationConnectors().get(i) != null) {
+                            try {
+                            joiner.add(String.format("%sauthentication_connectors%s%s=%s", prefix, suffix,
+                            "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix),
+                            URLEncoder.encode(String.valueOf(getAuthenticationConnectors().get(i)), "UTF-8").replaceAll("\\+", "%20")));
+                            } catch (UnsupportedEncodingException e) {
+                            // Should never happen, UTF-8 is always supported
+                            throw new RuntimeException(e);
+                            }
+                            }
+                            }
+                            }
+
+            // add `three_ds_requestor_url` to the URL query string
+                        if (getThreeDsRequestorUrl() != null) {
+                        try {
+                        joiner.add(String.format("%sthree_ds_requestor_url%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getThreeDsRequestorUrl()), "UTF-8").replaceAll("\\+", "%20")));
+                        } catch (UnsupportedEncodingException e) {
+                        // Should never happen, UTF-8 is always supported
+                        throw new RuntimeException(e);
+                        }
+                        }
+
+        return joiner.toString();
+        }
+
     }
-
-    // add `three_ds_requestor_url` to the URL query string
-    if (getThreeDsRequestorUrl() != null) {
-      try {
-        joiner.add(String.format("%sthree_ds_requestor_url%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getThreeDsRequestorUrl()), "UTF-8").replaceAll("\\+", "%20")));
-      } catch (UnsupportedEncodingException e) {
-        // Should never happen, UTF-8 is always supported
-        throw new RuntimeException(e);
-      }
-    }
-
-    return joiner.toString();
-  }
-
-}
 

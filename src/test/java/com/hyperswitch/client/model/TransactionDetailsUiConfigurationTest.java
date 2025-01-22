@@ -22,22 +22,21 @@ import org.openapitools.jackson.nullable.JsonNullable;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.openapitools.jackson.nullable.JsonNullable;
 import java.util.NoSuchElementException;
-import org.junit.Assert;
-import org.junit.Ignore;
-import org.junit.Test;
-
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Test;
 
 /**
  * Model tests for TransactionDetailsUiConfiguration
  */
-public class TransactionDetailsUiConfigurationTest {
+class TransactionDetailsUiConfigurationTest {
     private final TransactionDetailsUiConfiguration model = new TransactionDetailsUiConfiguration();
 
     /**
      * Model tests for TransactionDetailsUiConfiguration
      */
     @Test
-    public void testTransactionDetailsUiConfiguration() {
+    void testTransactionDetailsUiConfiguration() {
         // TODO: test TransactionDetailsUiConfiguration
     }
 
@@ -45,7 +44,7 @@ public class TransactionDetailsUiConfigurationTest {
      * Test the property 'position'
      */
     @Test
-    public void positionTest() {
+    void positionTest() {
         // TODO: test position
     }
 
@@ -53,7 +52,7 @@ public class TransactionDetailsUiConfigurationTest {
      * Test the property 'isKeyBold'
      */
     @Test
-    public void isKeyBoldTest() {
+    void isKeyBoldTest() {
         // TODO: test isKeyBold
     }
 
@@ -61,7 +60,7 @@ public class TransactionDetailsUiConfigurationTest {
      * Test the property 'isValueBold'
      */
     @Test
-    public void isValueBoldTest() {
+    void isValueBoldTest() {
         // TODO: test isValueBold
     }
 

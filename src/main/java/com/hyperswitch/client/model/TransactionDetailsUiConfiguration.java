@@ -31,244 +31,245 @@ import java.net.URLEncoder;
 import java.util.StringJoiner;
 
 /**
- * TransactionDetailsUiConfiguration
- */
-@JsonPropertyOrder({
-  TransactionDetailsUiConfiguration.JSON_PROPERTY_POSITION,
-  TransactionDetailsUiConfiguration.JSON_PROPERTY_IS_KEY_BOLD,
-  TransactionDetailsUiConfiguration.JSON_PROPERTY_IS_VALUE_BOLD
-})
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+* TransactionDetailsUiConfiguration
+*/
+    @JsonPropertyOrder({
+        TransactionDetailsUiConfiguration.JSON_PROPERTY_POSITION,
+        TransactionDetailsUiConfiguration.JSON_PROPERTY_IS_KEY_BOLD,
+        TransactionDetailsUiConfiguration.JSON_PROPERTY_IS_VALUE_BOLD
+    })
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class TransactionDetailsUiConfiguration {
-  public static final String JSON_PROPERTY_POSITION = "position";
-  private JsonNullable<Integer> position = JsonNullable.<Integer>undefined();
+        public static final String JSON_PROPERTY_POSITION = "position";
+    @javax.annotation.Nullable
+            private JsonNullable<Integer> position = JsonNullable.<Integer>undefined();
 
-  public static final String JSON_PROPERTY_IS_KEY_BOLD = "is_key_bold";
-  private JsonNullable<Boolean> isKeyBold = JsonNullable.<Boolean>of(false);
+        public static final String JSON_PROPERTY_IS_KEY_BOLD = "is_key_bold";
+    @javax.annotation.Nullable
+            private JsonNullable<Boolean> isKeyBold = JsonNullable.<Boolean>of(false);
 
-  public static final String JSON_PROPERTY_IS_VALUE_BOLD = "is_value_bold";
-  private JsonNullable<Boolean> isValueBold = JsonNullable.<Boolean>of(false);
+        public static final String JSON_PROPERTY_IS_VALUE_BOLD = "is_value_bold";
+    @javax.annotation.Nullable
+            private JsonNullable<Boolean> isValueBold = JsonNullable.<Boolean>of(false);
 
-  public TransactionDetailsUiConfiguration() {
-  }
+public TransactionDetailsUiConfiguration() {
+}
 
-  public TransactionDetailsUiConfiguration position(Integer position) {
-    this.position = JsonNullable.<Integer>of(position);
+        public TransactionDetailsUiConfiguration position(@javax.annotation.Nullable Integer position) {
+        this.position = JsonNullable.<Integer>of(position);
+        
+        return this;
+        }
+
+    /**
+        * Position of the key-value pair in the UI
+    * @return position
+    */
+    @javax.annotation.Nullable
+        @JsonIgnore
     
-    return this;
-  }
+    public Integer getPosition() {
+                return position.orElse(null);
+    }
 
-   /**
-   * Position of the key-value pair in the UI
-   * @return position
-  **/
-  @javax.annotation.Nullable
-  @JsonIgnore
-
-  public Integer getPosition() {
-        return position.orElse(null);
-  }
-
-  @JsonProperty(JSON_PROPERTY_POSITION)
+          @JsonProperty(JSON_PROPERTY_POSITION)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-  public JsonNullable<Integer> getPosition_JsonNullable() {
-    return position;
-  }
-  
-  @JsonProperty(JSON_PROPERTY_POSITION)
-  public void setPosition_JsonNullable(JsonNullable<Integer> position) {
-    this.position = position;
-  }
-
-  public void setPosition(Integer position) {
-    this.position = JsonNullable.<Integer>of(position);
-  }
-
-
-  public TransactionDetailsUiConfiguration isKeyBold(Boolean isKeyBold) {
-    this.isKeyBold = JsonNullable.<Boolean>of(isKeyBold);
+        public JsonNullable<Integer> getPosition_JsonNullable() {
+        return position;
+        }
     
-    return this;
-  }
+        @JsonProperty(JSON_PROPERTY_POSITION)
+        public void setPosition_JsonNullable(JsonNullable<Integer> position) {
+        this.position = position;
+        }
 
-   /**
-   * Whether the key should be bold
-   * @return isKeyBold
-  **/
-  @javax.annotation.Nullable
-  @JsonIgnore
+          public void setPosition(@javax.annotation.Nullable Integer position) {
+            this.position = JsonNullable.<Integer>of(position);
+        }
 
-  public Boolean getIsKeyBold() {
-        return isKeyBold.orElse(null);
-  }
+        public TransactionDetailsUiConfiguration isKeyBold(@javax.annotation.Nullable Boolean isKeyBold) {
+        this.isKeyBold = JsonNullable.<Boolean>of(isKeyBold);
+        
+        return this;
+        }
 
-  @JsonProperty(JSON_PROPERTY_IS_KEY_BOLD)
+    /**
+        * Whether the key should be bold
+    * @return isKeyBold
+    */
+    @javax.annotation.Nullable
+        @JsonIgnore
+    
+    public Boolean getIsKeyBold() {
+                return isKeyBold.orElse(null);
+    }
+
+          @JsonProperty(JSON_PROPERTY_IS_KEY_BOLD)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-  public JsonNullable<Boolean> getIsKeyBold_JsonNullable() {
-    return isKeyBold;
-  }
-  
-  @JsonProperty(JSON_PROPERTY_IS_KEY_BOLD)
-  public void setIsKeyBold_JsonNullable(JsonNullable<Boolean> isKeyBold) {
-    this.isKeyBold = isKeyBold;
-  }
-
-  public void setIsKeyBold(Boolean isKeyBold) {
-    this.isKeyBold = JsonNullable.<Boolean>of(isKeyBold);
-  }
-
-
-  public TransactionDetailsUiConfiguration isValueBold(Boolean isValueBold) {
-    this.isValueBold = JsonNullable.<Boolean>of(isValueBold);
+        public JsonNullable<Boolean> getIsKeyBold_JsonNullable() {
+        return isKeyBold;
+        }
     
-    return this;
-  }
+        @JsonProperty(JSON_PROPERTY_IS_KEY_BOLD)
+        public void setIsKeyBold_JsonNullable(JsonNullable<Boolean> isKeyBold) {
+        this.isKeyBold = isKeyBold;
+        }
 
-   /**
-   * Whether the value should be bold
-   * @return isValueBold
-  **/
-  @javax.annotation.Nullable
-  @JsonIgnore
+          public void setIsKeyBold(@javax.annotation.Nullable Boolean isKeyBold) {
+            this.isKeyBold = JsonNullable.<Boolean>of(isKeyBold);
+        }
 
-  public Boolean getIsValueBold() {
-        return isValueBold.orElse(null);
-  }
+        public TransactionDetailsUiConfiguration isValueBold(@javax.annotation.Nullable Boolean isValueBold) {
+        this.isValueBold = JsonNullable.<Boolean>of(isValueBold);
+        
+        return this;
+        }
 
-  @JsonProperty(JSON_PROPERTY_IS_VALUE_BOLD)
+    /**
+        * Whether the value should be bold
+    * @return isValueBold
+    */
+    @javax.annotation.Nullable
+        @JsonIgnore
+    
+    public Boolean getIsValueBold() {
+                return isValueBold.orElse(null);
+    }
+
+          @JsonProperty(JSON_PROPERTY_IS_VALUE_BOLD)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-  public JsonNullable<Boolean> getIsValueBold_JsonNullable() {
-    return isValueBold;
-  }
-  
-  @JsonProperty(JSON_PROPERTY_IS_VALUE_BOLD)
-  public void setIsValueBold_JsonNullable(JsonNullable<Boolean> isValueBold) {
-    this.isValueBold = isValueBold;
-  }
+        public JsonNullable<Boolean> getIsValueBold_JsonNullable() {
+        return isValueBold;
+        }
+    
+        @JsonProperty(JSON_PROPERTY_IS_VALUE_BOLD)
+        public void setIsValueBold_JsonNullable(JsonNullable<Boolean> isValueBold) {
+        this.isValueBold = isValueBold;
+        }
 
-  public void setIsValueBold(Boolean isValueBold) {
-    this.isValueBold = JsonNullable.<Boolean>of(isValueBold);
-  }
+          public void setIsValueBold(@javax.annotation.Nullable Boolean isValueBold) {
+            this.isValueBold = JsonNullable.<Boolean>of(isValueBold);
+        }
 
-  @Override
-  public boolean equals(Object o) {
+@Override
+public boolean equals(Object o) {
     if (this == o) {
-      return true;
+    return true;
     }
     if (o == null || getClass() != o.getClass()) {
-      return false;
+    return false;
     }
-    TransactionDetailsUiConfiguration transactionDetailsUiConfiguration = (TransactionDetailsUiConfiguration) o;
-    return equalsNullable(this.position, transactionDetailsUiConfiguration.position) &&
+        TransactionDetailsUiConfiguration transactionDetailsUiConfiguration = (TransactionDetailsUiConfiguration) o;
+        return equalsNullable(this.position, transactionDetailsUiConfiguration.position) &&
         equalsNullable(this.isKeyBold, transactionDetailsUiConfiguration.isKeyBold) &&
         equalsNullable(this.isValueBold, transactionDetailsUiConfiguration.isValueBold);
-  }
+}
 
-  private static <T> boolean equalsNullable(JsonNullable<T> a, JsonNullable<T> b) {
-    return a == b || (a != null && b != null && a.isPresent() && b.isPresent() && Objects.deepEquals(a.get(), b.get()));
-  }
+    private static <T> boolean equalsNullable(JsonNullable<T> a, JsonNullable<T> b) {
+        return a == b || (a != null && b != null && a.isPresent() && b.isPresent() && Objects.deepEquals(a.get(), b.get()));
+        }
 
-  @Override
-  public int hashCode() {
-    return Objects.hash(hashCodeNullable(position), hashCodeNullable(isKeyBold), hashCodeNullable(isValueBold));
-  }
-
-  private static <T> int hashCodeNullable(JsonNullable<T> a) {
-    if (a == null) {
-      return 1;
+    @Override
+    public int hashCode() {
+        return Objects.hash(hashCodeNullable(position), hashCodeNullable(isKeyBold), hashCodeNullable(isValueBold));
     }
-    return a.isPresent() ? Arrays.deepHashCode(new Object[]{a.get()}) : 31;
-  }
 
-  @Override
-  public String toString() {
+        private static <T> int hashCodeNullable(JsonNullable<T> a) {
+        if (a == null) {
+        return 1;
+        }
+        return a.isPresent() ? Arrays.deepHashCode(new Object[]{a.get()}) : 31;
+        }
+
+    @Override
+    public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class TransactionDetailsUiConfiguration {\n");
-    sb.append("    position: ").append(toIndentedString(position)).append("\n");
-    sb.append("    isKeyBold: ").append(toIndentedString(isKeyBold)).append("\n");
-    sb.append("    isValueBold: ").append(toIndentedString(isValueBold)).append("\n");
+        sb.append("    position: ").append(toIndentedString(position)).append("\n");
+        sb.append("    isKeyBold: ").append(toIndentedString(isKeyBold)).append("\n");
+        sb.append("    isValueBold: ").append(toIndentedString(isValueBold)).append("\n");
     sb.append("}");
     return sb.toString();
-  }
+    }
 
-  /**
-   * Convert the given object to string with each line indented by 4 spaces
-   * (except the first line).
-   */
-  private String toIndentedString(Object o) {
+    /**
+    * Convert the given object to string with each line indented by 4 spaces
+    * (except the first line).
+    */
+    private String toIndentedString(Object o) {
     if (o == null) {
-      return "null";
+    return "null";
     }
     return o.toString().replace("\n", "\n    ");
-  }
-
-  /**
-   * Convert the instance into URL query string.
-   *
-   * @return URL query string
-   */
-  public String toUrlQueryString() {
-    return toUrlQueryString(null);
-  }
-
-  /**
-   * Convert the instance into URL query string.
-   *
-   * @param prefix prefix of the query string
-   * @return URL query string
-   */
-  public String toUrlQueryString(String prefix) {
-    String suffix = "";
-    String containerSuffix = "";
-    String containerPrefix = "";
-    if (prefix == null) {
-      // style=form, explode=true, e.g. /pet?name=cat&type=manx
-      prefix = "";
-    } else {
-      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
-      prefix = prefix + "[";
-      suffix = "]";
-      containerSuffix = "]";
-      containerPrefix = "[";
     }
 
-    StringJoiner joiner = new StringJoiner("&");
+        /**
+        * Convert the instance into URL query string.
+        *
+        * @return URL query string
+        */
+        public String toUrlQueryString() {
+        return toUrlQueryString(null);
+        }
 
-    // add `position` to the URL query string
-    if (getPosition() != null) {
-      try {
-        joiner.add(String.format("%sposition%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getPosition()), "UTF-8").replaceAll("\\+", "%20")));
-      } catch (UnsupportedEncodingException e) {
-        // Should never happen, UTF-8 is always supported
-        throw new RuntimeException(e);
-      }
+        /**
+        * Convert the instance into URL query string.
+        *
+        * @param prefix prefix of the query string
+        * @return URL query string
+        */
+        public String toUrlQueryString(String prefix) {
+        String suffix = "";
+        String containerSuffix = "";
+        String containerPrefix = "";
+        if (prefix == null) {
+        // style=form, explode=true, e.g. /pet?name=cat&type=manx
+        prefix = "";
+        } else {
+        // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+        prefix = prefix + "[";
+        suffix = "]";
+        containerSuffix = "]";
+        containerPrefix = "[";
+        }
+
+        StringJoiner joiner = new StringJoiner("&");
+
+            // add `position` to the URL query string
+                        if (getPosition() != null) {
+                        try {
+                        joiner.add(String.format("%sposition%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getPosition()), "UTF-8").replaceAll("\\+", "%20")));
+                        } catch (UnsupportedEncodingException e) {
+                        // Should never happen, UTF-8 is always supported
+                        throw new RuntimeException(e);
+                        }
+                        }
+
+            // add `is_key_bold` to the URL query string
+                        if (getIsKeyBold() != null) {
+                        try {
+                        joiner.add(String.format("%sis_key_bold%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getIsKeyBold()), "UTF-8").replaceAll("\\+", "%20")));
+                        } catch (UnsupportedEncodingException e) {
+                        // Should never happen, UTF-8 is always supported
+                        throw new RuntimeException(e);
+                        }
+                        }
+
+            // add `is_value_bold` to the URL query string
+                        if (getIsValueBold() != null) {
+                        try {
+                        joiner.add(String.format("%sis_value_bold%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getIsValueBold()), "UTF-8").replaceAll("\\+", "%20")));
+                        } catch (UnsupportedEncodingException e) {
+                        // Should never happen, UTF-8 is always supported
+                        throw new RuntimeException(e);
+                        }
+                        }
+
+        return joiner.toString();
+        }
+
     }
-
-    // add `is_key_bold` to the URL query string
-    if (getIsKeyBold() != null) {
-      try {
-        joiner.add(String.format("%sis_key_bold%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getIsKeyBold()), "UTF-8").replaceAll("\\+", "%20")));
-      } catch (UnsupportedEncodingException e) {
-        // Should never happen, UTF-8 is always supported
-        throw new RuntimeException(e);
-      }
-    }
-
-    // add `is_value_bold` to the URL query string
-    if (getIsValueBold() != null) {
-      try {
-        joiner.add(String.format("%sis_value_bold%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getIsValueBold()), "UTF-8").replaceAll("\\+", "%20")));
-      } catch (UnsupportedEncodingException e) {
-        // Should never happen, UTF-8 is always supported
-        throw new RuntimeException(e);
-      }
-    }
-
-    return joiner.toString();
-  }
-
-}
 

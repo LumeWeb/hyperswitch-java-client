@@ -29,25 +29,25 @@ import com.fasterxml.jackson.annotation.JsonValue;
  */
 public enum PaymentMethodIssuerCode {
   
-  HDFC("jp_hdfc"),
+  JP_HDFC("jp_hdfc"),
   
-  ICICI("jp_icici"),
+  JP_ICICI("jp_icici"),
   
-  GOOGLEPAY("jp_googlepay"),
+  JP_GOOGLEPAY("jp_googlepay"),
   
-  APPLEPAY("jp_applepay"),
+  JP_APPLEPAY("jp_applepay"),
   
-  PHONEPAY("jp_phonepay"),
+  JP_PHONEPAY("jp_phonepay"),
   
-  WECHAT("jp_wechat"),
+  JP_WECHAT("jp_wechat"),
   
-  SOFORT("jp_sofort"),
+  JP_SOFORT("jp_sofort"),
   
-  GIROPAY("jp_giropay"),
+  JP_GIROPAY("jp_giropay"),
   
-  SEPA("jp_sepa"),
+  JP_SEPA("jp_sepa"),
   
-  BACS("jp_bacs");
+  JP_BACS("jp_bacs");
 
   private String value;
 

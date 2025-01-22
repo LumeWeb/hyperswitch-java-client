@@ -26,23 +26,23 @@ import com.hyperswitch.client.model.Priority;
 import com.hyperswitch.client.model.Single;
 import com.hyperswitch.client.model.VolumeSplit;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
-import org.junit.Assert;
-import org.junit.Ignore;
-import org.junit.Test;
-
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Test;
 
 /**
  * Model tests for StraightThroughAlgorithm
  */
-public class StraightThroughAlgorithmTest {
+class StraightThroughAlgorithmTest {
     private final StraightThroughAlgorithm model = new StraightThroughAlgorithm();
 
     /**
      * Model tests for StraightThroughAlgorithm
      */
     @Test
-    public void testStraightThroughAlgorithm() {
+    void testStraightThroughAlgorithm() {
         // TODO: test StraightThroughAlgorithm
     }
 
@@ -50,7 +50,7 @@ public class StraightThroughAlgorithmTest {
      * Test the property 'type'
      */
     @Test
-    public void typeTest() {
+    void typeTest() {
         // TODO: test type
     }
 
@@ -58,7 +58,7 @@ public class StraightThroughAlgorithmTest {
      * Test the property 'data'
      */
     @Test
-    public void dataTest() {
+    void dataTest() {
         // TODO: test data
     }
 

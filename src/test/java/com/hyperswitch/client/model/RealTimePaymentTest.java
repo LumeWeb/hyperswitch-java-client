@@ -19,22 +19,21 @@ import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonTypeName;
 import com.fasterxml.jackson.annotation.JsonValue;
 import com.hyperswitch.client.model.RealTimePaymentData;
-import org.junit.Assert;
-import org.junit.Ignore;
-import org.junit.Test;
-
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Test;
 
 /**
  * Model tests for RealTimePayment
  */
-public class RealTimePaymentTest {
+class RealTimePaymentTest {
     private final RealTimePayment model = new RealTimePayment();
 
     /**
      * Model tests for RealTimePayment
      */
     @Test
-    public void testRealTimePayment() {
+    void testRealTimePayment() {
         // TODO: test RealTimePayment
     }
 
@@ -42,7 +41,7 @@ public class RealTimePaymentTest {
      * Test the property 'realTimePayment'
      */
     @Test
-    public void realTimePaymentTest() {
+    void realTimePaymentTest() {
         // TODO: test realTimePayment
     }
 

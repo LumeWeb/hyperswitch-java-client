@@ -22,22 +22,21 @@ import org.openapitools.jackson.nullable.JsonNullable;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.openapitools.jackson.nullable.JsonNullable;
 import java.util.NoSuchElementException;
-import org.junit.Assert;
-import org.junit.Ignore;
-import org.junit.Test;
-
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Test;
 
 /**
  * Model tests for PaymentsIncrementalAuthorizationRequest
  */
-public class PaymentsIncrementalAuthorizationRequestTest {
+class PaymentsIncrementalAuthorizationRequestTest {
     private final PaymentsIncrementalAuthorizationRequest model = new PaymentsIncrementalAuthorizationRequest();
 
     /**
      * Model tests for PaymentsIncrementalAuthorizationRequest
      */
     @Test
-    public void testPaymentsIncrementalAuthorizationRequest() {
+    void testPaymentsIncrementalAuthorizationRequest() {
         // TODO: test PaymentsIncrementalAuthorizationRequest
     }
 
@@ -45,7 +44,7 @@ public class PaymentsIncrementalAuthorizationRequestTest {
      * Test the property 'amount'
      */
     @Test
-    public void amountTest() {
+    void amountTest() {
         // TODO: test amount
     }
 
@@ -53,7 +52,7 @@ public class PaymentsIncrementalAuthorizationRequestTest {
      * Test the property 'reason'
      */
     @Test
-    public void reasonTest() {
+    void reasonTest() {
         // TODO: test reason
     }
 

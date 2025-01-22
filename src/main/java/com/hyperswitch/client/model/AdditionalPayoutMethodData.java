@@ -33,194 +33,195 @@ import java.net.URLEncoder;
 import java.util.StringJoiner;
 
 /**
- * Masked payout method details for storing in db
- */
-@JsonPropertyOrder({
-  AdditionalPayoutMethodData.JSON_PROPERTY_CARD,
-  AdditionalPayoutMethodData.JSON_PROPERTY_BANK,
-  AdditionalPayoutMethodData.JSON_PROPERTY_WALLET
-})
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+* Masked payout method details for storing in db
+*/
+    @JsonPropertyOrder({
+        AdditionalPayoutMethodData.JSON_PROPERTY_CARD,
+        AdditionalPayoutMethodData.JSON_PROPERTY_BANK,
+        AdditionalPayoutMethodData.JSON_PROPERTY_WALLET
+    })
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class AdditionalPayoutMethodData {
-  public static final String JSON_PROPERTY_CARD = "Card";
-  private CardAdditionalData card;
+        public static final String JSON_PROPERTY_CARD = "Card";
+    @javax.annotation.Nonnull
+            private CardAdditionalData card;
 
-  public static final String JSON_PROPERTY_BANK = "Bank";
-  private BankAdditionalData bank;
+        public static final String JSON_PROPERTY_BANK = "Bank";
+    @javax.annotation.Nonnull
+            private BankAdditionalData bank;
 
-  public static final String JSON_PROPERTY_WALLET = "Wallet";
-  private WalletAdditionalData wallet;
+        public static final String JSON_PROPERTY_WALLET = "Wallet";
+    @javax.annotation.Nonnull
+            private WalletAdditionalData wallet;
 
-  public AdditionalPayoutMethodData() {
-  }
+public AdditionalPayoutMethodData() {
+}
 
-  public AdditionalPayoutMethodData card(CardAdditionalData card) {
-    
-    this.card = card;
-    return this;
-  }
+        public AdditionalPayoutMethodData card(@javax.annotation.Nonnull CardAdditionalData card) {
+        
+        this.card = card;
+        return this;
+        }
 
-   /**
-   * Get card
-   * @return card
-  **/
-  @javax.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_CARD)
+    /**
+        * Get card
+    * @return card
+    */
+    @javax.annotation.Nonnull
+      @JsonProperty(JSON_PROPERTY_CARD)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-  public CardAdditionalData getCard() {
-    return card;
-  }
+    public CardAdditionalData getCard() {
+        return card;
+    }
 
 
-  @JsonProperty(JSON_PROPERTY_CARD)
+          @JsonProperty(JSON_PROPERTY_CARD)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setCard(CardAdditionalData card) {
-    this.card = card;
-  }
+  public void setCard(@javax.annotation.Nonnull CardAdditionalData card) {
+            this.card = card;
+        }
 
+        public AdditionalPayoutMethodData bank(@javax.annotation.Nonnull BankAdditionalData bank) {
+        
+        this.bank = bank;
+        return this;
+        }
 
-  public AdditionalPayoutMethodData bank(BankAdditionalData bank) {
-    
-    this.bank = bank;
-    return this;
-  }
-
-   /**
-   * Get bank
-   * @return bank
-  **/
-  @javax.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_BANK)
-  @JsonInclude(value = JsonInclude.Include.ALWAYS)
-
-  public BankAdditionalData getBank() {
-    return bank;
-  }
-
-
-  @JsonProperty(JSON_PROPERTY_BANK)
-  @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setBank(BankAdditionalData bank) {
-    this.bank = bank;
-  }
-
-
-  public AdditionalPayoutMethodData wallet(WalletAdditionalData wallet) {
-    
-    this.wallet = wallet;
-    return this;
-  }
-
-   /**
-   * Get wallet
-   * @return wallet
-  **/
-  @javax.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_WALLET)
+    /**
+        * Get bank
+    * @return bank
+    */
+    @javax.annotation.Nonnull
+      @JsonProperty(JSON_PROPERTY_BANK)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-  public WalletAdditionalData getWallet() {
-    return wallet;
-  }
+    public BankAdditionalData getBank() {
+        return bank;
+    }
 
 
-  @JsonProperty(JSON_PROPERTY_WALLET)
+          @JsonProperty(JSON_PROPERTY_BANK)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setWallet(WalletAdditionalData wallet) {
-    this.wallet = wallet;
-  }
+  public void setBank(@javax.annotation.Nonnull BankAdditionalData bank) {
+            this.bank = bank;
+        }
 
-  @Override
-  public boolean equals(Object o) {
+        public AdditionalPayoutMethodData wallet(@javax.annotation.Nonnull WalletAdditionalData wallet) {
+        
+        this.wallet = wallet;
+        return this;
+        }
+
+    /**
+        * Get wallet
+    * @return wallet
+    */
+    @javax.annotation.Nonnull
+      @JsonProperty(JSON_PROPERTY_WALLET)
+  @JsonInclude(value = JsonInclude.Include.ALWAYS)
+
+    public WalletAdditionalData getWallet() {
+        return wallet;
+    }
+
+
+          @JsonProperty(JSON_PROPERTY_WALLET)
+  @JsonInclude(value = JsonInclude.Include.ALWAYS)
+  public void setWallet(@javax.annotation.Nonnull WalletAdditionalData wallet) {
+            this.wallet = wallet;
+        }
+
+@Override
+public boolean equals(Object o) {
     if (this == o) {
-      return true;
+    return true;
     }
     if (o == null || getClass() != o.getClass()) {
-      return false;
+    return false;
     }
-    AdditionalPayoutMethodData additionalPayoutMethodData = (AdditionalPayoutMethodData) o;
-    return Objects.equals(this.card, additionalPayoutMethodData.card) &&
+        AdditionalPayoutMethodData additionalPayoutMethodData = (AdditionalPayoutMethodData) o;
+        return Objects.equals(this.card, additionalPayoutMethodData.card) &&
         Objects.equals(this.bank, additionalPayoutMethodData.bank) &&
         Objects.equals(this.wallet, additionalPayoutMethodData.wallet);
-  }
+}
 
-  @Override
-  public int hashCode() {
-    return Objects.hash(card, bank, wallet);
-  }
+    @Override
+    public int hashCode() {
+        return Objects.hash(card, bank, wallet);
+    }
 
-  @Override
-  public String toString() {
+    @Override
+    public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class AdditionalPayoutMethodData {\n");
-    sb.append("    card: ").append(toIndentedString(card)).append("\n");
-    sb.append("    bank: ").append(toIndentedString(bank)).append("\n");
-    sb.append("    wallet: ").append(toIndentedString(wallet)).append("\n");
+        sb.append("    card: ").append(toIndentedString(card)).append("\n");
+        sb.append("    bank: ").append(toIndentedString(bank)).append("\n");
+        sb.append("    wallet: ").append(toIndentedString(wallet)).append("\n");
     sb.append("}");
     return sb.toString();
-  }
+    }
 
-  /**
-   * Convert the given object to string with each line indented by 4 spaces
-   * (except the first line).
-   */
-  private String toIndentedString(Object o) {
+    /**
+    * Convert the given object to string with each line indented by 4 spaces
+    * (except the first line).
+    */
+    private String toIndentedString(Object o) {
     if (o == null) {
-      return "null";
+    return "null";
     }
     return o.toString().replace("\n", "\n    ");
-  }
-
-  /**
-   * Convert the instance into URL query string.
-   *
-   * @return URL query string
-   */
-  public String toUrlQueryString() {
-    return toUrlQueryString(null);
-  }
-
-  /**
-   * Convert the instance into URL query string.
-   *
-   * @param prefix prefix of the query string
-   * @return URL query string
-   */
-  public String toUrlQueryString(String prefix) {
-    String suffix = "";
-    String containerSuffix = "";
-    String containerPrefix = "";
-    if (prefix == null) {
-      // style=form, explode=true, e.g. /pet?name=cat&type=manx
-      prefix = "";
-    } else {
-      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
-      prefix = prefix + "[";
-      suffix = "]";
-      containerSuffix = "]";
-      containerPrefix = "[";
     }
 
-    StringJoiner joiner = new StringJoiner("&");
+        /**
+        * Convert the instance into URL query string.
+        *
+        * @return URL query string
+        */
+        public String toUrlQueryString() {
+        return toUrlQueryString(null);
+        }
 
-    // add `Card` to the URL query string
-    if (getCard() != null) {
-      joiner.add(getCard().toUrlQueryString(prefix + "Card" + suffix));
+        /**
+        * Convert the instance into URL query string.
+        *
+        * @param prefix prefix of the query string
+        * @return URL query string
+        */
+        public String toUrlQueryString(String prefix) {
+        String suffix = "";
+        String containerSuffix = "";
+        String containerPrefix = "";
+        if (prefix == null) {
+        // style=form, explode=true, e.g. /pet?name=cat&type=manx
+        prefix = "";
+        } else {
+        // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+        prefix = prefix + "[";
+        suffix = "]";
+        containerSuffix = "]";
+        containerPrefix = "[";
+        }
+
+        StringJoiner joiner = new StringJoiner("&");
+
+            // add `Card` to the URL query string
+                            if (getCard() != null) {
+                            joiner.add(getCard().toUrlQueryString(prefix + "Card" + suffix));
+                            }
+
+            // add `Bank` to the URL query string
+                            if (getBank() != null) {
+                            joiner.add(getBank().toUrlQueryString(prefix + "Bank" + suffix));
+                            }
+
+            // add `Wallet` to the URL query string
+                            if (getWallet() != null) {
+                            joiner.add(getWallet().toUrlQueryString(prefix + "Wallet" + suffix));
+                            }
+
+        return joiner.toString();
+        }
+
     }
-
-    // add `Bank` to the URL query string
-    if (getBank() != null) {
-      joiner.add(getBank().toUrlQueryString(prefix + "Bank" + suffix));
-    }
-
-    // add `Wallet` to the URL query string
-    if (getWallet() != null) {
-      joiner.add(getWallet().toUrlQueryString(prefix + "Wallet" + suffix));
-    }
-
-    return joiner.toString();
-  }
-
-}
 

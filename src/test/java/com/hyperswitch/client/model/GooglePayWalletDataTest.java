@@ -20,22 +20,21 @@ import com.fasterxml.jackson.annotation.JsonTypeName;
 import com.fasterxml.jackson.annotation.JsonValue;
 import com.hyperswitch.client.model.GooglePayPaymentMethodInfo;
 import com.hyperswitch.client.model.GpayTokenizationData;
-import org.junit.Assert;
-import org.junit.Ignore;
-import org.junit.Test;
-
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Test;
 
 /**
  * Model tests for GooglePayWalletData
  */
-public class GooglePayWalletDataTest {
+class GooglePayWalletDataTest {
     private final GooglePayWalletData model = new GooglePayWalletData();
 
     /**
      * Model tests for GooglePayWalletData
      */
     @Test
-    public void testGooglePayWalletData() {
+    void testGooglePayWalletData() {
         // TODO: test GooglePayWalletData
     }
 
@@ -43,7 +42,7 @@ public class GooglePayWalletDataTest {
      * Test the property 'type'
      */
     @Test
-    public void typeTest() {
+    void typeTest() {
         // TODO: test type
     }
 
@@ -51,7 +50,7 @@ public class GooglePayWalletDataTest {
      * Test the property 'description'
      */
     @Test
-    public void descriptionTest() {
+    void descriptionTest() {
         // TODO: test description
     }
 
@@ -59,7 +58,7 @@ public class GooglePayWalletDataTest {
      * Test the property 'info'
      */
     @Test
-    public void infoTest() {
+    void infoTest() {
         // TODO: test info
     }
 
@@ -67,7 +66,7 @@ public class GooglePayWalletDataTest {
      * Test the property 'tokenizationData'
      */
     @Test
-    public void tokenizationDataTest() {
+    void tokenizationDataTest() {
         // TODO: test tokenizationData
     }
 

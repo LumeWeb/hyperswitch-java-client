@@ -31,328 +31,329 @@ import java.net.URLEncoder;
 import java.util.StringJoiner;
 
 /**
- * PixBankTransfer
- */
-@JsonPropertyOrder({
-  PixBankTransfer.JSON_PROPERTY_BANK_NAME,
-  PixBankTransfer.JSON_PROPERTY_BANK_BRANCH,
-  PixBankTransfer.JSON_PROPERTY_BANK_ACCOUNT_NUMBER,
-  PixBankTransfer.JSON_PROPERTY_PIX_KEY,
-  PixBankTransfer.JSON_PROPERTY_TAX_ID
-})
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+* PixBankTransfer
+*/
+    @JsonPropertyOrder({
+        PixBankTransfer.JSON_PROPERTY_BANK_NAME,
+        PixBankTransfer.JSON_PROPERTY_BANK_BRANCH,
+        PixBankTransfer.JSON_PROPERTY_BANK_ACCOUNT_NUMBER,
+        PixBankTransfer.JSON_PROPERTY_PIX_KEY,
+        PixBankTransfer.JSON_PROPERTY_TAX_ID
+    })
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class PixBankTransfer {
-  public static final String JSON_PROPERTY_BANK_NAME = "bank_name";
-  private JsonNullable<String> bankName = JsonNullable.<String>undefined();
+        public static final String JSON_PROPERTY_BANK_NAME = "bank_name";
+    @javax.annotation.Nullable
+            private JsonNullable<String> bankName = JsonNullable.<String>undefined();
 
-  public static final String JSON_PROPERTY_BANK_BRANCH = "bank_branch";
-  private JsonNullable<String> bankBranch = JsonNullable.<String>undefined();
+        public static final String JSON_PROPERTY_BANK_BRANCH = "bank_branch";
+    @javax.annotation.Nullable
+            private JsonNullable<String> bankBranch = JsonNullable.<String>undefined();
 
-  public static final String JSON_PROPERTY_BANK_ACCOUNT_NUMBER = "bank_account_number";
-  private String bankAccountNumber;
+        public static final String JSON_PROPERTY_BANK_ACCOUNT_NUMBER = "bank_account_number";
+    @javax.annotation.Nonnull
+            private String bankAccountNumber;
 
-  public static final String JSON_PROPERTY_PIX_KEY = "pix_key";
-  private String pixKey;
+        public static final String JSON_PROPERTY_PIX_KEY = "pix_key";
+    @javax.annotation.Nonnull
+            private String pixKey;
 
-  public static final String JSON_PROPERTY_TAX_ID = "tax_id";
-  private JsonNullable<String> taxId = JsonNullable.<String>undefined();
+        public static final String JSON_PROPERTY_TAX_ID = "tax_id";
+    @javax.annotation.Nullable
+            private JsonNullable<String> taxId = JsonNullable.<String>undefined();
 
-  public PixBankTransfer() {
-  }
+public PixBankTransfer() {
+}
 
-  public PixBankTransfer bankName(String bankName) {
-    this.bankName = JsonNullable.<String>of(bankName);
+        public PixBankTransfer bankName(@javax.annotation.Nullable String bankName) {
+        this.bankName = JsonNullable.<String>of(bankName);
+        
+        return this;
+        }
+
+    /**
+        * Bank name
+    * @return bankName
+    */
+    @javax.annotation.Nullable
+        @JsonIgnore
     
-    return this;
-  }
+    public String getBankName() {
+                return bankName.orElse(null);
+    }
 
-   /**
-   * Bank name
-   * @return bankName
-  **/
-  @javax.annotation.Nullable
-  @JsonIgnore
-
-  public String getBankName() {
-        return bankName.orElse(null);
-  }
-
-  @JsonProperty(JSON_PROPERTY_BANK_NAME)
+          @JsonProperty(JSON_PROPERTY_BANK_NAME)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-  public JsonNullable<String> getBankName_JsonNullable() {
-    return bankName;
-  }
-  
-  @JsonProperty(JSON_PROPERTY_BANK_NAME)
-  public void setBankName_JsonNullable(JsonNullable<String> bankName) {
-    this.bankName = bankName;
-  }
-
-  public void setBankName(String bankName) {
-    this.bankName = JsonNullable.<String>of(bankName);
-  }
-
-
-  public PixBankTransfer bankBranch(String bankBranch) {
-    this.bankBranch = JsonNullable.<String>of(bankBranch);
+        public JsonNullable<String> getBankName_JsonNullable() {
+        return bankName;
+        }
     
-    return this;
-  }
+        @JsonProperty(JSON_PROPERTY_BANK_NAME)
+        public void setBankName_JsonNullable(JsonNullable<String> bankName) {
+        this.bankName = bankName;
+        }
 
-   /**
-   * Bank branch
-   * @return bankBranch
-  **/
-  @javax.annotation.Nullable
-  @JsonIgnore
+          public void setBankName(@javax.annotation.Nullable String bankName) {
+            this.bankName = JsonNullable.<String>of(bankName);
+        }
 
-  public String getBankBranch() {
-        return bankBranch.orElse(null);
-  }
+        public PixBankTransfer bankBranch(@javax.annotation.Nullable String bankBranch) {
+        this.bankBranch = JsonNullable.<String>of(bankBranch);
+        
+        return this;
+        }
 
-  @JsonProperty(JSON_PROPERTY_BANK_BRANCH)
+    /**
+        * Bank branch
+    * @return bankBranch
+    */
+    @javax.annotation.Nullable
+        @JsonIgnore
+    
+    public String getBankBranch() {
+                return bankBranch.orElse(null);
+    }
+
+          @JsonProperty(JSON_PROPERTY_BANK_BRANCH)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-  public JsonNullable<String> getBankBranch_JsonNullable() {
-    return bankBranch;
-  }
-  
-  @JsonProperty(JSON_PROPERTY_BANK_BRANCH)
-  public void setBankBranch_JsonNullable(JsonNullable<String> bankBranch) {
-    this.bankBranch = bankBranch;
-  }
-
-  public void setBankBranch(String bankBranch) {
-    this.bankBranch = JsonNullable.<String>of(bankBranch);
-  }
-
-
-  public PixBankTransfer bankAccountNumber(String bankAccountNumber) {
+        public JsonNullable<String> getBankBranch_JsonNullable() {
+        return bankBranch;
+        }
     
-    this.bankAccountNumber = bankAccountNumber;
-    return this;
-  }
+        @JsonProperty(JSON_PROPERTY_BANK_BRANCH)
+        public void setBankBranch_JsonNullable(JsonNullable<String> bankBranch) {
+        this.bankBranch = bankBranch;
+        }
 
-   /**
-   * Bank account number is an unique identifier assigned by a bank to a customer.
-   * @return bankAccountNumber
-  **/
-  @javax.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_BANK_ACCOUNT_NUMBER)
+          public void setBankBranch(@javax.annotation.Nullable String bankBranch) {
+            this.bankBranch = JsonNullable.<String>of(bankBranch);
+        }
+
+        public PixBankTransfer bankAccountNumber(@javax.annotation.Nonnull String bankAccountNumber) {
+        
+        this.bankAccountNumber = bankAccountNumber;
+        return this;
+        }
+
+    /**
+        * Bank account number is an unique identifier assigned by a bank to a customer.
+    * @return bankAccountNumber
+    */
+    @javax.annotation.Nonnull
+      @JsonProperty(JSON_PROPERTY_BANK_ACCOUNT_NUMBER)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-  public String getBankAccountNumber() {
-    return bankAccountNumber;
-  }
+    public String getBankAccountNumber() {
+        return bankAccountNumber;
+    }
 
 
-  @JsonProperty(JSON_PROPERTY_BANK_ACCOUNT_NUMBER)
+          @JsonProperty(JSON_PROPERTY_BANK_ACCOUNT_NUMBER)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setBankAccountNumber(String bankAccountNumber) {
-    this.bankAccountNumber = bankAccountNumber;
-  }
+  public void setBankAccountNumber(@javax.annotation.Nonnull String bankAccountNumber) {
+            this.bankAccountNumber = bankAccountNumber;
+        }
+
+        public PixBankTransfer pixKey(@javax.annotation.Nonnull String pixKey) {
+        
+        this.pixKey = pixKey;
+        return this;
+        }
+
+    /**
+        * Unique key for pix customer
+    * @return pixKey
+    */
+    @javax.annotation.Nonnull
+      @JsonProperty(JSON_PROPERTY_PIX_KEY)
+  @JsonInclude(value = JsonInclude.Include.ALWAYS)
+
+    public String getPixKey() {
+        return pixKey;
+    }
 
 
-  public PixBankTransfer pixKey(String pixKey) {
+          @JsonProperty(JSON_PROPERTY_PIX_KEY)
+  @JsonInclude(value = JsonInclude.Include.ALWAYS)
+  public void setPixKey(@javax.annotation.Nonnull String pixKey) {
+            this.pixKey = pixKey;
+        }
+
+        public PixBankTransfer taxId(@javax.annotation.Nullable String taxId) {
+        this.taxId = JsonNullable.<String>of(taxId);
+        
+        return this;
+        }
+
+    /**
+        * Individual taxpayer identification number
+    * @return taxId
+    */
+    @javax.annotation.Nullable
+        @JsonIgnore
     
-    this.pixKey = pixKey;
-    return this;
-  }
+    public String getTaxId() {
+                return taxId.orElse(null);
+    }
 
-   /**
-   * Unique key for pix customer
-   * @return pixKey
-  **/
-  @javax.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_PIX_KEY)
-  @JsonInclude(value = JsonInclude.Include.ALWAYS)
-
-  public String getPixKey() {
-    return pixKey;
-  }
-
-
-  @JsonProperty(JSON_PROPERTY_PIX_KEY)
-  @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setPixKey(String pixKey) {
-    this.pixKey = pixKey;
-  }
-
-
-  public PixBankTransfer taxId(String taxId) {
-    this.taxId = JsonNullable.<String>of(taxId);
-    
-    return this;
-  }
-
-   /**
-   * Individual taxpayer identification number
-   * @return taxId
-  **/
-  @javax.annotation.Nullable
-  @JsonIgnore
-
-  public String getTaxId() {
-        return taxId.orElse(null);
-  }
-
-  @JsonProperty(JSON_PROPERTY_TAX_ID)
+          @JsonProperty(JSON_PROPERTY_TAX_ID)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-  public JsonNullable<String> getTaxId_JsonNullable() {
-    return taxId;
-  }
-  
-  @JsonProperty(JSON_PROPERTY_TAX_ID)
-  public void setTaxId_JsonNullable(JsonNullable<String> taxId) {
-    this.taxId = taxId;
-  }
+        public JsonNullable<String> getTaxId_JsonNullable() {
+        return taxId;
+        }
+    
+        @JsonProperty(JSON_PROPERTY_TAX_ID)
+        public void setTaxId_JsonNullable(JsonNullable<String> taxId) {
+        this.taxId = taxId;
+        }
 
-  public void setTaxId(String taxId) {
-    this.taxId = JsonNullable.<String>of(taxId);
-  }
+          public void setTaxId(@javax.annotation.Nullable String taxId) {
+            this.taxId = JsonNullable.<String>of(taxId);
+        }
 
-  @Override
-  public boolean equals(Object o) {
+@Override
+public boolean equals(Object o) {
     if (this == o) {
-      return true;
+    return true;
     }
     if (o == null || getClass() != o.getClass()) {
-      return false;
+    return false;
     }
-    PixBankTransfer pixBankTransfer = (PixBankTransfer) o;
-    return equalsNullable(this.bankName, pixBankTransfer.bankName) &&
+        PixBankTransfer pixBankTransfer = (PixBankTransfer) o;
+        return equalsNullable(this.bankName, pixBankTransfer.bankName) &&
         equalsNullable(this.bankBranch, pixBankTransfer.bankBranch) &&
         Objects.equals(this.bankAccountNumber, pixBankTransfer.bankAccountNumber) &&
         Objects.equals(this.pixKey, pixBankTransfer.pixKey) &&
         equalsNullable(this.taxId, pixBankTransfer.taxId);
-  }
+}
 
-  private static <T> boolean equalsNullable(JsonNullable<T> a, JsonNullable<T> b) {
-    return a == b || (a != null && b != null && a.isPresent() && b.isPresent() && Objects.deepEquals(a.get(), b.get()));
-  }
+    private static <T> boolean equalsNullable(JsonNullable<T> a, JsonNullable<T> b) {
+        return a == b || (a != null && b != null && a.isPresent() && b.isPresent() && Objects.deepEquals(a.get(), b.get()));
+        }
 
-  @Override
-  public int hashCode() {
-    return Objects.hash(hashCodeNullable(bankName), hashCodeNullable(bankBranch), bankAccountNumber, pixKey, hashCodeNullable(taxId));
-  }
-
-  private static <T> int hashCodeNullable(JsonNullable<T> a) {
-    if (a == null) {
-      return 1;
+    @Override
+    public int hashCode() {
+        return Objects.hash(hashCodeNullable(bankName), hashCodeNullable(bankBranch), bankAccountNumber, pixKey, hashCodeNullable(taxId));
     }
-    return a.isPresent() ? Arrays.deepHashCode(new Object[]{a.get()}) : 31;
-  }
 
-  @Override
-  public String toString() {
+        private static <T> int hashCodeNullable(JsonNullable<T> a) {
+        if (a == null) {
+        return 1;
+        }
+        return a.isPresent() ? Arrays.deepHashCode(new Object[]{a.get()}) : 31;
+        }
+
+    @Override
+    public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class PixBankTransfer {\n");
-    sb.append("    bankName: ").append(toIndentedString(bankName)).append("\n");
-    sb.append("    bankBranch: ").append(toIndentedString(bankBranch)).append("\n");
-    sb.append("    bankAccountNumber: ").append(toIndentedString(bankAccountNumber)).append("\n");
-    sb.append("    pixKey: ").append(toIndentedString(pixKey)).append("\n");
-    sb.append("    taxId: ").append(toIndentedString(taxId)).append("\n");
+        sb.append("    bankName: ").append(toIndentedString(bankName)).append("\n");
+        sb.append("    bankBranch: ").append(toIndentedString(bankBranch)).append("\n");
+        sb.append("    bankAccountNumber: ").append(toIndentedString(bankAccountNumber)).append("\n");
+        sb.append("    pixKey: ").append(toIndentedString(pixKey)).append("\n");
+        sb.append("    taxId: ").append(toIndentedString(taxId)).append("\n");
     sb.append("}");
     return sb.toString();
-  }
+    }
 
-  /**
-   * Convert the given object to string with each line indented by 4 spaces
-   * (except the first line).
-   */
-  private String toIndentedString(Object o) {
+    /**
+    * Convert the given object to string with each line indented by 4 spaces
+    * (except the first line).
+    */
+    private String toIndentedString(Object o) {
     if (o == null) {
-      return "null";
+    return "null";
     }
     return o.toString().replace("\n", "\n    ");
-  }
-
-  /**
-   * Convert the instance into URL query string.
-   *
-   * @return URL query string
-   */
-  public String toUrlQueryString() {
-    return toUrlQueryString(null);
-  }
-
-  /**
-   * Convert the instance into URL query string.
-   *
-   * @param prefix prefix of the query string
-   * @return URL query string
-   */
-  public String toUrlQueryString(String prefix) {
-    String suffix = "";
-    String containerSuffix = "";
-    String containerPrefix = "";
-    if (prefix == null) {
-      // style=form, explode=true, e.g. /pet?name=cat&type=manx
-      prefix = "";
-    } else {
-      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
-      prefix = prefix + "[";
-      suffix = "]";
-      containerSuffix = "]";
-      containerPrefix = "[";
     }
 
-    StringJoiner joiner = new StringJoiner("&");
+        /**
+        * Convert the instance into URL query string.
+        *
+        * @return URL query string
+        */
+        public String toUrlQueryString() {
+        return toUrlQueryString(null);
+        }
 
-    // add `bank_name` to the URL query string
-    if (getBankName() != null) {
-      try {
-        joiner.add(String.format("%sbank_name%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getBankName()), "UTF-8").replaceAll("\\+", "%20")));
-      } catch (UnsupportedEncodingException e) {
-        // Should never happen, UTF-8 is always supported
-        throw new RuntimeException(e);
-      }
+        /**
+        * Convert the instance into URL query string.
+        *
+        * @param prefix prefix of the query string
+        * @return URL query string
+        */
+        public String toUrlQueryString(String prefix) {
+        String suffix = "";
+        String containerSuffix = "";
+        String containerPrefix = "";
+        if (prefix == null) {
+        // style=form, explode=true, e.g. /pet?name=cat&type=manx
+        prefix = "";
+        } else {
+        // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+        prefix = prefix + "[";
+        suffix = "]";
+        containerSuffix = "]";
+        containerPrefix = "[";
+        }
+
+        StringJoiner joiner = new StringJoiner("&");
+
+            // add `bank_name` to the URL query string
+                        if (getBankName() != null) {
+                        try {
+                        joiner.add(String.format("%sbank_name%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getBankName()), "UTF-8").replaceAll("\\+", "%20")));
+                        } catch (UnsupportedEncodingException e) {
+                        // Should never happen, UTF-8 is always supported
+                        throw new RuntimeException(e);
+                        }
+                        }
+
+            // add `bank_branch` to the URL query string
+                        if (getBankBranch() != null) {
+                        try {
+                        joiner.add(String.format("%sbank_branch%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getBankBranch()), "UTF-8").replaceAll("\\+", "%20")));
+                        } catch (UnsupportedEncodingException e) {
+                        // Should never happen, UTF-8 is always supported
+                        throw new RuntimeException(e);
+                        }
+                        }
+
+            // add `bank_account_number` to the URL query string
+                        if (getBankAccountNumber() != null) {
+                        try {
+                        joiner.add(String.format("%sbank_account_number%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getBankAccountNumber()), "UTF-8").replaceAll("\\+", "%20")));
+                        } catch (UnsupportedEncodingException e) {
+                        // Should never happen, UTF-8 is always supported
+                        throw new RuntimeException(e);
+                        }
+                        }
+
+            // add `pix_key` to the URL query string
+                        if (getPixKey() != null) {
+                        try {
+                        joiner.add(String.format("%spix_key%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getPixKey()), "UTF-8").replaceAll("\\+", "%20")));
+                        } catch (UnsupportedEncodingException e) {
+                        // Should never happen, UTF-8 is always supported
+                        throw new RuntimeException(e);
+                        }
+                        }
+
+            // add `tax_id` to the URL query string
+                        if (getTaxId() != null) {
+                        try {
+                        joiner.add(String.format("%stax_id%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getTaxId()), "UTF-8").replaceAll("\\+", "%20")));
+                        } catch (UnsupportedEncodingException e) {
+                        // Should never happen, UTF-8 is always supported
+                        throw new RuntimeException(e);
+                        }
+                        }
+
+        return joiner.toString();
+        }
+
     }
-
-    // add `bank_branch` to the URL query string
-    if (getBankBranch() != null) {
-      try {
-        joiner.add(String.format("%sbank_branch%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getBankBranch()), "UTF-8").replaceAll("\\+", "%20")));
-      } catch (UnsupportedEncodingException e) {
-        // Should never happen, UTF-8 is always supported
-        throw new RuntimeException(e);
-      }
-    }
-
-    // add `bank_account_number` to the URL query string
-    if (getBankAccountNumber() != null) {
-      try {
-        joiner.add(String.format("%sbank_account_number%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getBankAccountNumber()), "UTF-8").replaceAll("\\+", "%20")));
-      } catch (UnsupportedEncodingException e) {
-        // Should never happen, UTF-8 is always supported
-        throw new RuntimeException(e);
-      }
-    }
-
-    // add `pix_key` to the URL query string
-    if (getPixKey() != null) {
-      try {
-        joiner.add(String.format("%spix_key%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getPixKey()), "UTF-8").replaceAll("\\+", "%20")));
-      } catch (UnsupportedEncodingException e) {
-        // Should never happen, UTF-8 is always supported
-        throw new RuntimeException(e);
-      }
-    }
-
-    // add `tax_id` to the URL query string
-    if (getTaxId() != null) {
-      try {
-        joiner.add(String.format("%stax_id%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getTaxId()), "UTF-8").replaceAll("\\+", "%20")));
-      } catch (UnsupportedEncodingException e) {
-        // Should never happen, UTF-8 is always supported
-        throw new RuntimeException(e);
-      }
-    }
-
-    return joiner.toString();
-  }
-
-}
 

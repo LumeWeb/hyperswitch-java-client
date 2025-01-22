@@ -28,121 +28,122 @@ import java.net.URLEncoder;
 import java.util.StringJoiner;
 
 /**
- * PaymentMethodDataResponseOneOf6
- */
-@JsonPropertyOrder({
-  PaymentMethodDataResponseOneOf6.JSON_PROPERTY_BANK_DEBIT
-})
-@JsonTypeName("PaymentMethodDataResponse_oneOf_6")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
+* PaymentMethodDataResponseOneOf6
+*/
+    @JsonPropertyOrder({
+        PaymentMethodDataResponseOneOf6.JSON_PROPERTY_BANK_DEBIT
+    })
+            @JsonTypeName("PaymentMethodDataResponse_oneOf_6")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class PaymentMethodDataResponseOneOf6 {
-  public static final String JSON_PROPERTY_BANK_DEBIT = "bank_debit";
-  private BankDebitResponse bankDebit;
+        public static final String JSON_PROPERTY_BANK_DEBIT = "bank_debit";
+    @javax.annotation.Nonnull
+            private BankDebitResponse bankDebit;
 
-  public PaymentMethodDataResponseOneOf6() {
-  }
+public PaymentMethodDataResponseOneOf6() {
+}
 
-  public PaymentMethodDataResponseOneOf6 bankDebit(BankDebitResponse bankDebit) {
-    
-    this.bankDebit = bankDebit;
-    return this;
-  }
+        public PaymentMethodDataResponseOneOf6 bankDebit(@javax.annotation.Nonnull BankDebitResponse bankDebit) {
+        
+        this.bankDebit = bankDebit;
+        return this;
+        }
 
-   /**
-   * Get bankDebit
-   * @return bankDebit
-  **/
-  @javax.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_BANK_DEBIT)
+    /**
+        * Get bankDebit
+    * @return bankDebit
+    */
+    @javax.annotation.Nonnull
+      @JsonProperty(JSON_PROPERTY_BANK_DEBIT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-  public BankDebitResponse getBankDebit() {
-    return bankDebit;
-  }
+    public BankDebitResponse getBankDebit() {
+        return bankDebit;
+    }
 
 
-  @JsonProperty(JSON_PROPERTY_BANK_DEBIT)
+          @JsonProperty(JSON_PROPERTY_BANK_DEBIT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setBankDebit(BankDebitResponse bankDebit) {
-    this.bankDebit = bankDebit;
-  }
+  public void setBankDebit(@javax.annotation.Nonnull BankDebitResponse bankDebit) {
+            this.bankDebit = bankDebit;
+        }
 
-  @Override
-  public boolean equals(Object o) {
+@Override
+public boolean equals(Object o) {
     if (this == o) {
-      return true;
+    return true;
     }
     if (o == null || getClass() != o.getClass()) {
-      return false;
+    return false;
     }
-    PaymentMethodDataResponseOneOf6 paymentMethodDataResponseOneOf6 = (PaymentMethodDataResponseOneOf6) o;
-    return Objects.equals(this.bankDebit, paymentMethodDataResponseOneOf6.bankDebit);
-  }
+        PaymentMethodDataResponseOneOf6 paymentMethodDataResponseOneOf6 = (PaymentMethodDataResponseOneOf6) o;
+        return Objects.equals(this.bankDebit, paymentMethodDataResponseOneOf6.bankDebit);
+}
 
-  @Override
-  public int hashCode() {
-    return Objects.hash(bankDebit);
-  }
+    @Override
+    public int hashCode() {
+        return Objects.hash(bankDebit);
+    }
 
-  @Override
-  public String toString() {
+    @Override
+    public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class PaymentMethodDataResponseOneOf6 {\n");
-    sb.append("    bankDebit: ").append(toIndentedString(bankDebit)).append("\n");
+        sb.append("    bankDebit: ").append(toIndentedString(bankDebit)).append("\n");
     sb.append("}");
     return sb.toString();
-  }
+    }
 
-  /**
-   * Convert the given object to string with each line indented by 4 spaces
-   * (except the first line).
-   */
-  private String toIndentedString(Object o) {
+    /**
+    * Convert the given object to string with each line indented by 4 spaces
+    * (except the first line).
+    */
+    private String toIndentedString(Object o) {
     if (o == null) {
-      return "null";
+    return "null";
     }
     return o.toString().replace("\n", "\n    ");
-  }
-
-  /**
-   * Convert the instance into URL query string.
-   *
-   * @return URL query string
-   */
-  public String toUrlQueryString() {
-    return toUrlQueryString(null);
-  }
-
-  /**
-   * Convert the instance into URL query string.
-   *
-   * @param prefix prefix of the query string
-   * @return URL query string
-   */
-  public String toUrlQueryString(String prefix) {
-    String suffix = "";
-    String containerSuffix = "";
-    String containerPrefix = "";
-    if (prefix == null) {
-      // style=form, explode=true, e.g. /pet?name=cat&type=manx
-      prefix = "";
-    } else {
-      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
-      prefix = prefix + "[";
-      suffix = "]";
-      containerSuffix = "]";
-      containerPrefix = "[";
     }
 
-    StringJoiner joiner = new StringJoiner("&");
+        /**
+        * Convert the instance into URL query string.
+        *
+        * @return URL query string
+        */
+        public String toUrlQueryString() {
+        return toUrlQueryString(null);
+        }
 
-    // add `bank_debit` to the URL query string
-    if (getBankDebit() != null) {
-      joiner.add(getBankDebit().toUrlQueryString(prefix + "bank_debit" + suffix));
+        /**
+        * Convert the instance into URL query string.
+        *
+        * @param prefix prefix of the query string
+        * @return URL query string
+        */
+        public String toUrlQueryString(String prefix) {
+        String suffix = "";
+        String containerSuffix = "";
+        String containerPrefix = "";
+        if (prefix == null) {
+        // style=form, explode=true, e.g. /pet?name=cat&type=manx
+        prefix = "";
+        } else {
+        // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+        prefix = prefix + "[";
+        suffix = "]";
+        containerSuffix = "]";
+        containerPrefix = "[";
+        }
+
+        StringJoiner joiner = new StringJoiner("&");
+
+            // add `bank_debit` to the URL query string
+                            if (getBankDebit() != null) {
+                            joiner.add(getBankDebit().toUrlQueryString(prefix + "bank_debit" + suffix));
+                            }
+
+        return joiner.toString();
+        }
+
     }
-
-    return joiner.toString();
-  }
-
-}
 

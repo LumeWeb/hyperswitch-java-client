@@ -19,22 +19,21 @@ import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonTypeName;
 import com.fasterxml.jackson.annotation.JsonValue;
 import com.hyperswitch.client.model.SecretInfoToInitiateSdk;
-import org.junit.Assert;
-import org.junit.Ignore;
-import org.junit.Test;
-
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Test;
 
 /**
  * Model tests for ThirdPartySdkSessionResponse
  */
-public class ThirdPartySdkSessionResponseTest {
+class ThirdPartySdkSessionResponseTest {
     private final ThirdPartySdkSessionResponse model = new ThirdPartySdkSessionResponse();
 
     /**
      * Model tests for ThirdPartySdkSessionResponse
      */
     @Test
-    public void testThirdPartySdkSessionResponse() {
+    void testThirdPartySdkSessionResponse() {
         // TODO: test ThirdPartySdkSessionResponse
     }
 
@@ -42,7 +41,7 @@ public class ThirdPartySdkSessionResponseTest {
      * Test the property 'secrets'
      */
     @Test
-    public void secretsTest() {
+    void secretsTest() {
         // TODO: test secrets
     }
 

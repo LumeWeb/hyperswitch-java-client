@@ -29,36 +29,7 @@
 {{#vendorExtensions.x-class-extra-annotation}}
     {{{vendorExtensions.x-class-extra-annotation}}}
 {{/vendorExtensions.x-class-extra-annotation}}
-{{#discriminator}}
-    public static {{classname}}OneOf1 paymentMethodId(String paymentMethodId) {
-        {{classname}}OneOf1 result = new {{classname}}OneOf1();
-        result.setType({{classname}}OneOf1.TypeEnum.PAYMENT_METHOD_ID);
-        result.setData(paymentMethodId);
-        return result;
-    }
-
-    public static {{classname}}OneOf mandateId(String mandateId) {
-        {{classname}}OneOf result = new {{classname}}OneOf();
-        result.setType({{classname}}OneOf.TypeEnum.MANDATE_ID);
-        result.setData(mandateId);
-        return result;
-    }
-
-    public static {{classname}}OneOf2 processorPaymentToken(ProcessorPaymentToken token) {
-        {{classname}}OneOf2 result = new {{classname}}OneOf2();
-        result.setType({{classname}}OneOf2.TypeEnum.PROCESSOR_PAYMENT_TOKEN);
-        result.setData(token);
-        return result;
-    }
-
-    public static {{classname}}OneOf3 networkTransactionIdAndCardDetails(NetworkTransactionIdAndCardDetails details) {
-        {{classname}}OneOf3 result = new {{classname}}OneOf3();
-        result.setType({{classname}}OneOf3.TypeEnum.NETWORK_TRANSACTION_ID_AND_CARD_DETAILS);
-        result.setData(details);
-        return result;
-    }
-{{/discriminator}}
-public class {{classname}} {{#parent}}extends {{{.}}} {{/parent}}{{^parent}}{{#discriminator}}extends {{name}} {{/discriminator}}{{/parent}}{{#vendorExtensions.x-implements}}{{#-first}}implements {{{.}}}{{/-first}}{{^-first}}, {{{.}}}{{/-first}}{{#-last}} {{/-last}}{{/vendorExtensions.x-implements}}{
+public class {{classname}} {{#parent}}extends {{{.}}} {{/parent}}{{^parent}}{{#baseType}}extends {{{.}}} {{/baseType}}{{/parent}}{{#vendorExtensions.x-implements}}{{#-first}}implements {{{.}}}{{/-first}}{{^-first}}, {{{.}}}{{/-first}}{{#-last}} {{/-last}}{{/vendorExtensions.x-implements}}{
 {{#serializableModel}}
     private static final long serialVersionUID = 1L;
 

@@ -50,34 +50,7 @@ import java.util.StringJoiner;
   @JsonSubTypes.Type(value = SurchargeResponseOneOf1.class, name = "SurchargeResponse_oneOf_1"),
 })
 
-    public static SurchargeResponseOneOf1 paymentMethodId(String paymentMethodId) {
-        SurchargeResponseOneOf1 result = new SurchargeResponseOneOf1();
-        result.setType(SurchargeResponseOneOf1.TypeEnum.PAYMENT_METHOD_ID);
-        result.setData(paymentMethodId);
-        return result;
-    }
-
-    public static SurchargeResponseOneOf mandateId(String mandateId) {
-        SurchargeResponseOneOf result = new SurchargeResponseOneOf();
-        result.setType(SurchargeResponseOneOf.TypeEnum.MANDATE_ID);
-        result.setData(mandateId);
-        return result;
-    }
-
-    public static SurchargeResponseOneOf2 processorPaymentToken(ProcessorPaymentToken token) {
-        SurchargeResponseOneOf2 result = new SurchargeResponseOneOf2();
-        result.setType(SurchargeResponseOneOf2.TypeEnum.PROCESSOR_PAYMENT_TOKEN);
-        result.setData(token);
-        return result;
-    }
-
-    public static SurchargeResponseOneOf3 networkTransactionIdAndCardDetails(NetworkTransactionIdAndCardDetails details) {
-        SurchargeResponseOneOf3 result = new SurchargeResponseOneOf3();
-        result.setType(SurchargeResponseOneOf3.TypeEnum.NETWORK_TRANSACTION_ID_AND_CARD_DETAILS);
-        result.setData(details);
-        return result;
-    }
-public class SurchargeResponse extends SurchargeResponse {
+public class SurchargeResponse {
               /**
    * Gets or Sets type
    */

@@ -53,34 +53,7 @@ import java.util.StringJoiner;
   @JsonSubTypes.Type(value = ConnectorSelectionOneOf1.class, name = "ConnectorSelection_oneOf_1"),
 })
 
-    public static ConnectorSelectionOneOf1 paymentMethodId(String paymentMethodId) {
-        ConnectorSelectionOneOf1 result = new ConnectorSelectionOneOf1();
-        result.setType(ConnectorSelectionOneOf1.TypeEnum.PAYMENT_METHOD_ID);
-        result.setData(paymentMethodId);
-        return result;
-    }
-
-    public static ConnectorSelectionOneOf mandateId(String mandateId) {
-        ConnectorSelectionOneOf result = new ConnectorSelectionOneOf();
-        result.setType(ConnectorSelectionOneOf.TypeEnum.MANDATE_ID);
-        result.setData(mandateId);
-        return result;
-    }
-
-    public static ConnectorSelectionOneOf2 processorPaymentToken(ProcessorPaymentToken token) {
-        ConnectorSelectionOneOf2 result = new ConnectorSelectionOneOf2();
-        result.setType(ConnectorSelectionOneOf2.TypeEnum.PROCESSOR_PAYMENT_TOKEN);
-        result.setData(token);
-        return result;
-    }
-
-    public static ConnectorSelectionOneOf3 networkTransactionIdAndCardDetails(NetworkTransactionIdAndCardDetails details) {
-        ConnectorSelectionOneOf3 result = new ConnectorSelectionOneOf3();
-        result.setType(ConnectorSelectionOneOf3.TypeEnum.NETWORK_TRANSACTION_ID_AND_CARD_DETAILS);
-        result.setData(details);
-        return result;
-    }
-public class ConnectorSelection extends ConnectorSelection {
+public class ConnectorSelection {
               /**
    * Gets or Sets type
    */

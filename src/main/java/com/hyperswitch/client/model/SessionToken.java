@@ -110,34 +110,7 @@ import java.util.StringJoiner;
   @JsonSubTypes.Type(value = SessionTokenOneOf7.class, name = "SessionToken_oneOf_7"),
 })
 
-    public static SessionTokenOneOf1 paymentMethodId(String paymentMethodId) {
-        SessionTokenOneOf1 result = new SessionTokenOneOf1();
-        result.setType(SessionTokenOneOf1.TypeEnum.PAYMENT_METHOD_ID);
-        result.setData(paymentMethodId);
-        return result;
-    }
-
-    public static SessionTokenOneOf mandateId(String mandateId) {
-        SessionTokenOneOf result = new SessionTokenOneOf();
-        result.setType(SessionTokenOneOf.TypeEnum.MANDATE_ID);
-        result.setData(mandateId);
-        return result;
-    }
-
-    public static SessionTokenOneOf2 processorPaymentToken(ProcessorPaymentToken token) {
-        SessionTokenOneOf2 result = new SessionTokenOneOf2();
-        result.setType(SessionTokenOneOf2.TypeEnum.PROCESSOR_PAYMENT_TOKEN);
-        result.setData(token);
-        return result;
-    }
-
-    public static SessionTokenOneOf3 networkTransactionIdAndCardDetails(NetworkTransactionIdAndCardDetails details) {
-        SessionTokenOneOf3 result = new SessionTokenOneOf3();
-        result.setType(SessionTokenOneOf3.TypeEnum.NETWORK_TRANSACTION_ID_AND_CARD_DETAILS);
-        result.setData(details);
-        return result;
-    }
-public class SessionToken extends SessionToken {
+public class SessionToken {
         public static final String JSON_PROPERTY_DELAYED_SESSION_TOKEN = "delayed_session_token";
     @javax.annotation.Nonnull
             private Boolean delayedSessionToken;

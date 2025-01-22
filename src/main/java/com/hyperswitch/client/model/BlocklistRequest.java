@@ -51,34 +51,7 @@ import java.util.StringJoiner;
   @JsonSubTypes.Type(value = BlocklistRequestOneOf2.class, name = "BlocklistRequest_oneOf_2"),
 })
 
-    public static BlocklistRequestOneOf1 paymentMethodId(String paymentMethodId) {
-        BlocklistRequestOneOf1 result = new BlocklistRequestOneOf1();
-        result.setType(BlocklistRequestOneOf1.TypeEnum.PAYMENT_METHOD_ID);
-        result.setData(paymentMethodId);
-        return result;
-    }
-
-    public static BlocklistRequestOneOf mandateId(String mandateId) {
-        BlocklistRequestOneOf result = new BlocklistRequestOneOf();
-        result.setType(BlocklistRequestOneOf.TypeEnum.MANDATE_ID);
-        result.setData(mandateId);
-        return result;
-    }
-
-    public static BlocklistRequestOneOf2 processorPaymentToken(ProcessorPaymentToken token) {
-        BlocklistRequestOneOf2 result = new BlocklistRequestOneOf2();
-        result.setType(BlocklistRequestOneOf2.TypeEnum.PROCESSOR_PAYMENT_TOKEN);
-        result.setData(token);
-        return result;
-    }
-
-    public static BlocklistRequestOneOf3 networkTransactionIdAndCardDetails(NetworkTransactionIdAndCardDetails details) {
-        BlocklistRequestOneOf3 result = new BlocklistRequestOneOf3();
-        result.setType(BlocklistRequestOneOf3.TypeEnum.NETWORK_TRANSACTION_ID_AND_CARD_DETAILS);
-        result.setData(details);
-        return result;
-    }
-public class BlocklistRequest extends BlocklistRequest {
+public class BlocklistRequest {
               /**
    * Gets or Sets type
    */

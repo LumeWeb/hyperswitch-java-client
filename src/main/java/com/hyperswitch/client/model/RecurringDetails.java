@@ -54,34 +54,7 @@ import java.util.StringJoiner;
   @JsonSubTypes.Type(value = RecurringDetailsOneOf3.class, name = "RecurringDetails_oneOf_3"),
 })
 
-    public static RecurringDetailsOneOf1 paymentMethodId(String paymentMethodId) {
-        RecurringDetailsOneOf1 result = new RecurringDetailsOneOf1();
-        result.setType(RecurringDetailsOneOf1.TypeEnum.PAYMENT_METHOD_ID);
-        result.setData(paymentMethodId);
-        return result;
-    }
-
-    public static RecurringDetailsOneOf mandateId(String mandateId) {
-        RecurringDetailsOneOf result = new RecurringDetailsOneOf();
-        result.setType(RecurringDetailsOneOf.TypeEnum.MANDATE_ID);
-        result.setData(mandateId);
-        return result;
-    }
-
-    public static RecurringDetailsOneOf2 processorPaymentToken(ProcessorPaymentToken token) {
-        RecurringDetailsOneOf2 result = new RecurringDetailsOneOf2();
-        result.setType(RecurringDetailsOneOf2.TypeEnum.PROCESSOR_PAYMENT_TOKEN);
-        result.setData(token);
-        return result;
-    }
-
-    public static RecurringDetailsOneOf3 networkTransactionIdAndCardDetails(NetworkTransactionIdAndCardDetails details) {
-        RecurringDetailsOneOf3 result = new RecurringDetailsOneOf3();
-        result.setType(RecurringDetailsOneOf3.TypeEnum.NETWORK_TRANSACTION_ID_AND_CARD_DETAILS);
-        result.setData(details);
-        return result;
-    }
-public class RecurringDetails extends RecurringDetails {
+public class RecurringDetails {
               /**
    * Gets or Sets type
    */

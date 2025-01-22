@@ -55,34 +55,7 @@ import java.util.StringJoiner;
   @JsonSubTypes.Type(value = AcceptedCountriesOneOf2.class, name = "AcceptedCountries_oneOf_2"),
 })
 
-    public static AcceptedCountriesOneOf1 paymentMethodId(String paymentMethodId) {
-        AcceptedCountriesOneOf1 result = new AcceptedCountriesOneOf1();
-        result.setType(AcceptedCountriesOneOf1.TypeEnum.PAYMENT_METHOD_ID);
-        result.setData(paymentMethodId);
-        return result;
-    }
-
-    public static AcceptedCountriesOneOf mandateId(String mandateId) {
-        AcceptedCountriesOneOf result = new AcceptedCountriesOneOf();
-        result.setType(AcceptedCountriesOneOf.TypeEnum.MANDATE_ID);
-        result.setData(mandateId);
-        return result;
-    }
-
-    public static AcceptedCountriesOneOf2 processorPaymentToken(ProcessorPaymentToken token) {
-        AcceptedCountriesOneOf2 result = new AcceptedCountriesOneOf2();
-        result.setType(AcceptedCountriesOneOf2.TypeEnum.PROCESSOR_PAYMENT_TOKEN);
-        result.setData(token);
-        return result;
-    }
-
-    public static AcceptedCountriesOneOf3 networkTransactionIdAndCardDetails(NetworkTransactionIdAndCardDetails details) {
-        AcceptedCountriesOneOf3 result = new AcceptedCountriesOneOf3();
-        result.setType(AcceptedCountriesOneOf3.TypeEnum.NETWORK_TRANSACTION_ID_AND_CARD_DETAILS);
-        result.setData(details);
-        return result;
-    }
-public class AcceptedCountries extends AcceptedCountries {
+public class AcceptedCountries {
               /**
    * Gets or Sets type
    */

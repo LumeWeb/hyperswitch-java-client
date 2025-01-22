@@ -55,34 +55,7 @@ import java.util.StringJoiner;
   @JsonSubTypes.Type(value = VolumeSplit.class, name = "VolumeSplit"),
 })
 
-    public static StraightThroughAlgorithmOneOf1 paymentMethodId(String paymentMethodId) {
-        StraightThroughAlgorithmOneOf1 result = new StraightThroughAlgorithmOneOf1();
-        result.setType(StraightThroughAlgorithmOneOf1.TypeEnum.PAYMENT_METHOD_ID);
-        result.setData(paymentMethodId);
-        return result;
-    }
-
-    public static StraightThroughAlgorithmOneOf mandateId(String mandateId) {
-        StraightThroughAlgorithmOneOf result = new StraightThroughAlgorithmOneOf();
-        result.setType(StraightThroughAlgorithmOneOf.TypeEnum.MANDATE_ID);
-        result.setData(mandateId);
-        return result;
-    }
-
-    public static StraightThroughAlgorithmOneOf2 processorPaymentToken(ProcessorPaymentToken token) {
-        StraightThroughAlgorithmOneOf2 result = new StraightThroughAlgorithmOneOf2();
-        result.setType(StraightThroughAlgorithmOneOf2.TypeEnum.PROCESSOR_PAYMENT_TOKEN);
-        result.setData(token);
-        return result;
-    }
-
-    public static StraightThroughAlgorithmOneOf3 networkTransactionIdAndCardDetails(NetworkTransactionIdAndCardDetails details) {
-        StraightThroughAlgorithmOneOf3 result = new StraightThroughAlgorithmOneOf3();
-        result.setType(StraightThroughAlgorithmOneOf3.TypeEnum.NETWORK_TRANSACTION_ID_AND_CARD_DETAILS);
-        result.setData(details);
-        return result;
-    }
-public class StraightThroughAlgorithm extends StraightThroughAlgorithm {
+public class StraightThroughAlgorithm {
               /**
    * Gets or Sets type
    */

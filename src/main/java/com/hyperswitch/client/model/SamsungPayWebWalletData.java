@@ -33,316 +33,316 @@ import java.net.URLEncoder;
 import java.util.StringJoiner;
 
 /**
-* SamsungPayWebWalletData
-*/
-    @JsonPropertyOrder({
-        SamsungPayWebWalletData.JSON_PROPERTY_METHOD,
-        SamsungPayWebWalletData.JSON_PROPERTY_RECURRING_PAYMENT,
-        SamsungPayWebWalletData.JSON_PROPERTY_CARD_BRAND,
-        SamsungPayWebWalletData.JSON_PROPERTY_CARD_LAST4DIGITS,
-        SamsungPayWebWalletData.JSON_PROPERTY_3D_S
-    })
+ * SamsungPayWebWalletData
+ */
+@JsonPropertyOrder({
+  SamsungPayWebWalletData.JSON_PROPERTY_METHOD,
+  SamsungPayWebWalletData.JSON_PROPERTY_RECURRING_PAYMENT,
+  SamsungPayWebWalletData.JSON_PROPERTY_CARD_BRAND,
+  SamsungPayWebWalletData.JSON_PROPERTY_CARD_LAST4DIGITS,
+  SamsungPayWebWalletData.JSON_PROPERTY_3D_S
+})
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class SamsungPayWebWalletData {
-        public static final String JSON_PROPERTY_METHOD = "method";
-    @javax.annotation.Nullable
-            private JsonNullable<String> method = JsonNullable.<String>undefined();
+  public static final String JSON_PROPERTY_METHOD = "method";
+  @javax.annotation.Nullable
+  private JsonNullable<String> method = JsonNullable.<String>undefined();
 
-        public static final String JSON_PROPERTY_RECURRING_PAYMENT = "recurring_payment";
-    @javax.annotation.Nullable
-            private JsonNullable<Boolean> recurringPayment = JsonNullable.<Boolean>undefined();
+  public static final String JSON_PROPERTY_RECURRING_PAYMENT = "recurring_payment";
+  @javax.annotation.Nullable
+  private JsonNullable<Boolean> recurringPayment = JsonNullable.<Boolean>undefined();
 
-        public static final String JSON_PROPERTY_CARD_BRAND = "card_brand";
-    @javax.annotation.Nonnull
-            private SamsungPayCardBrand cardBrand;
+  public static final String JSON_PROPERTY_CARD_BRAND = "card_brand";
+  @javax.annotation.Nonnull
+  private SamsungPayCardBrand cardBrand;
 
-        public static final String JSON_PROPERTY_CARD_LAST4DIGITS = "card_last4digits";
-    @javax.annotation.Nonnull
-            private String cardLast4digits;
+  public static final String JSON_PROPERTY_CARD_LAST4DIGITS = "card_last4digits";
+  @javax.annotation.Nonnull
+  private String cardLast4digits;
 
-        public static final String JSON_PROPERTY_3D_S = "3_d_s";
-    @javax.annotation.Nonnull
-            private SamsungPayTokenData _3dS;
+  public static final String JSON_PROPERTY_3D_S = "3_d_s";
+  @javax.annotation.Nonnull
+  private SamsungPayTokenData _3dS;
 
-public SamsungPayWebWalletData() {
-}
+  public SamsungPayWebWalletData() {
+  }
 
-        public SamsungPayWebWalletData method(@javax.annotation.Nullable String method) {
-        this.method = JsonNullable.<String>of(method);
-        
-        return this;
-        }
-
-    /**
-        * Specifies authentication method used
-    * @return method
-    */
-    @javax.annotation.Nullable
-        @JsonIgnore
+  public SamsungPayWebWalletData method(@javax.annotation.Nullable String method) {
+    this.method = JsonNullable.<String>of(method);
     
-    public String getMethod() {
-                return method.orElse(null);
-    }
+    return this;
+  }
 
-          @JsonProperty(JSON_PROPERTY_METHOD)
+  /**
+   * Specifies authentication method used
+   * @return method
+   */
+  @javax.annotation.Nullable
+  @JsonIgnore
+
+  public String getMethod() {
+        return method.orElse(null);
+  }
+
+  @JsonProperty(JSON_PROPERTY_METHOD)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-        public JsonNullable<String> getMethod_JsonNullable() {
-        return method;
-        }
+  public JsonNullable<String> getMethod_JsonNullable() {
+    return method;
+  }
+  
+  @JsonProperty(JSON_PROPERTY_METHOD)
+  public void setMethod_JsonNullable(JsonNullable<String> method) {
+    this.method = method;
+  }
+
+  public void setMethod(@javax.annotation.Nullable String method) {
+    this.method = JsonNullable.<String>of(method);
+  }
+
+  public SamsungPayWebWalletData recurringPayment(@javax.annotation.Nullable Boolean recurringPayment) {
+    this.recurringPayment = JsonNullable.<Boolean>of(recurringPayment);
     
-        @JsonProperty(JSON_PROPERTY_METHOD)
-        public void setMethod_JsonNullable(JsonNullable<String> method) {
-        this.method = method;
-        }
+    return this;
+  }
 
-          public void setMethod(@javax.annotation.Nullable String method) {
-            this.method = JsonNullable.<String>of(method);
-        }
+  /**
+   * Value if credential is enabled for recurring payment
+   * @return recurringPayment
+   */
+  @javax.annotation.Nullable
+  @JsonIgnore
 
-        public SamsungPayWebWalletData recurringPayment(@javax.annotation.Nullable Boolean recurringPayment) {
-        this.recurringPayment = JsonNullable.<Boolean>of(recurringPayment);
-        
-        return this;
-        }
+  public Boolean getRecurringPayment() {
+        return recurringPayment.orElse(null);
+  }
 
-    /**
-        * Value if credential is enabled for recurring payment
-    * @return recurringPayment
-    */
-    @javax.annotation.Nullable
-        @JsonIgnore
-    
-    public Boolean getRecurringPayment() {
-                return recurringPayment.orElse(null);
-    }
-
-          @JsonProperty(JSON_PROPERTY_RECURRING_PAYMENT)
+  @JsonProperty(JSON_PROPERTY_RECURRING_PAYMENT)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-        public JsonNullable<Boolean> getRecurringPayment_JsonNullable() {
-        return recurringPayment;
-        }
+  public JsonNullable<Boolean> getRecurringPayment_JsonNullable() {
+    return recurringPayment;
+  }
+  
+  @JsonProperty(JSON_PROPERTY_RECURRING_PAYMENT)
+  public void setRecurringPayment_JsonNullable(JsonNullable<Boolean> recurringPayment) {
+    this.recurringPayment = recurringPayment;
+  }
+
+  public void setRecurringPayment(@javax.annotation.Nullable Boolean recurringPayment) {
+    this.recurringPayment = JsonNullable.<Boolean>of(recurringPayment);
+  }
+
+  public SamsungPayWebWalletData cardBrand(@javax.annotation.Nonnull SamsungPayCardBrand cardBrand) {
     
-        @JsonProperty(JSON_PROPERTY_RECURRING_PAYMENT)
-        public void setRecurringPayment_JsonNullable(JsonNullable<Boolean> recurringPayment) {
-        this.recurringPayment = recurringPayment;
-        }
+    this.cardBrand = cardBrand;
+    return this;
+  }
 
-          public void setRecurringPayment(@javax.annotation.Nullable Boolean recurringPayment) {
-            this.recurringPayment = JsonNullable.<Boolean>of(recurringPayment);
-        }
-
-        public SamsungPayWebWalletData cardBrand(@javax.annotation.Nonnull SamsungPayCardBrand cardBrand) {
-        
-        this.cardBrand = cardBrand;
-        return this;
-        }
-
-    /**
-        * Get cardBrand
-    * @return cardBrand
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_CARD_BRAND)
+  /**
+   * Get cardBrand
+   * @return cardBrand
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_CARD_BRAND)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public SamsungPayCardBrand getCardBrand() {
-        return cardBrand;
-    }
+  public SamsungPayCardBrand getCardBrand() {
+    return cardBrand;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_CARD_BRAND)
+  @JsonProperty(JSON_PROPERTY_CARD_BRAND)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setCardBrand(@javax.annotation.Nonnull SamsungPayCardBrand cardBrand) {
-            this.cardBrand = cardBrand;
-        }
+    this.cardBrand = cardBrand;
+  }
 
-        public SamsungPayWebWalletData cardLast4digits(@javax.annotation.Nonnull String cardLast4digits) {
-        
-        this.cardLast4digits = cardLast4digits;
-        return this;
-        }
+  public SamsungPayWebWalletData cardLast4digits(@javax.annotation.Nonnull String cardLast4digits) {
+    
+    this.cardLast4digits = cardLast4digits;
+    return this;
+  }
 
-    /**
-        * Last 4 digits of the card number
-    * @return cardLast4digits
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_CARD_LAST4DIGITS)
+  /**
+   * Last 4 digits of the card number
+   * @return cardLast4digits
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_CARD_LAST4DIGITS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public String getCardLast4digits() {
-        return cardLast4digits;
-    }
+  public String getCardLast4digits() {
+    return cardLast4digits;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_CARD_LAST4DIGITS)
+  @JsonProperty(JSON_PROPERTY_CARD_LAST4DIGITS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setCardLast4digits(@javax.annotation.Nonnull String cardLast4digits) {
-            this.cardLast4digits = cardLast4digits;
-        }
+    this.cardLast4digits = cardLast4digits;
+  }
 
-        public SamsungPayWebWalletData _3dS(@javax.annotation.Nonnull SamsungPayTokenData _3dS) {
-        
-        this._3dS = _3dS;
-        return this;
-        }
+  public SamsungPayWebWalletData _3dS(@javax.annotation.Nonnull SamsungPayTokenData _3dS) {
+    
+    this._3dS = _3dS;
+    return this;
+  }
 
-    /**
-        * Get _3dS
-    * @return _3dS
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_3D_S)
+  /**
+   * Get _3dS
+   * @return _3dS
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_3D_S)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public SamsungPayTokenData get3dS() {
-        return _3dS;
-    }
+  public SamsungPayTokenData get3dS() {
+    return _3dS;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_3D_S)
+  @JsonProperty(JSON_PROPERTY_3D_S)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void set3dS(@javax.annotation.Nonnull SamsungPayTokenData _3dS) {
-            this._3dS = _3dS;
-        }
+    this._3dS = _3dS;
+  }
 
-@Override
-public boolean equals(Object o) {
+  @Override
+  public boolean equals(Object o) {
     if (this == o) {
-    return true;
+      return true;
     }
     if (o == null || getClass() != o.getClass()) {
-    return false;
+      return false;
     }
-        SamsungPayWebWalletData samsungPayWebWalletData = (SamsungPayWebWalletData) o;
-        return equalsNullable(this.method, samsungPayWebWalletData.method) &&
+    SamsungPayWebWalletData samsungPayWebWalletData = (SamsungPayWebWalletData) o;
+    return equalsNullable(this.method, samsungPayWebWalletData.method) &&
         equalsNullable(this.recurringPayment, samsungPayWebWalletData.recurringPayment) &&
         Objects.equals(this.cardBrand, samsungPayWebWalletData.cardBrand) &&
         Objects.equals(this.cardLast4digits, samsungPayWebWalletData.cardLast4digits) &&
         Objects.equals(this._3dS, samsungPayWebWalletData._3dS);
-}
+  }
 
-    private static <T> boolean equalsNullable(JsonNullable<T> a, JsonNullable<T> b) {
-        return a == b || (a != null && b != null && a.isPresent() && b.isPresent() && Objects.deepEquals(a.get(), b.get()));
-        }
+  private static <T> boolean equalsNullable(JsonNullable<T> a, JsonNullable<T> b) {
+    return a == b || (a != null && b != null && a.isPresent() && b.isPresent() && Objects.deepEquals(a.get(), b.get()));
+  }
 
-    @Override
-    public int hashCode() {
-        return Objects.hash(hashCodeNullable(method), hashCodeNullable(recurringPayment), cardBrand, cardLast4digits, _3dS);
+  @Override
+  public int hashCode() {
+    return Objects.hash(hashCodeNullable(method), hashCodeNullable(recurringPayment), cardBrand, cardLast4digits, _3dS);
+  }
+
+  private static <T> int hashCodeNullable(JsonNullable<T> a) {
+    if (a == null) {
+      return 1;
     }
+    return a.isPresent() ? Arrays.deepHashCode(new Object[]{a.get()}) : 31;
+  }
 
-        private static <T> int hashCodeNullable(JsonNullable<T> a) {
-        if (a == null) {
-        return 1;
-        }
-        return a.isPresent() ? Arrays.deepHashCode(new Object[]{a.get()}) : 31;
-        }
-
-    @Override
-    public String toString() {
+  @Override
+  public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class SamsungPayWebWalletData {\n");
-        sb.append("    method: ").append(toIndentedString(method)).append("\n");
-        sb.append("    recurringPayment: ").append(toIndentedString(recurringPayment)).append("\n");
-        sb.append("    cardBrand: ").append(toIndentedString(cardBrand)).append("\n");
-        sb.append("    cardLast4digits: ").append(toIndentedString(cardLast4digits)).append("\n");
-        sb.append("    _3dS: ").append(toIndentedString(_3dS)).append("\n");
+    sb.append("    method: ").append(toIndentedString(method)).append("\n");
+    sb.append("    recurringPayment: ").append(toIndentedString(recurringPayment)).append("\n");
+    sb.append("    cardBrand: ").append(toIndentedString(cardBrand)).append("\n");
+    sb.append("    cardLast4digits: ").append(toIndentedString(cardLast4digits)).append("\n");
+    sb.append("    _3dS: ").append(toIndentedString(_3dS)).append("\n");
     sb.append("}");
     return sb.toString();
-    }
+  }
 
-    /**
-    * Convert the given object to string with each line indented by 4 spaces
-    * (except the first line).
-    */
-    private String toIndentedString(Object o) {
+  /**
+   * Convert the given object to string with each line indented by 4 spaces
+   * (except the first line).
+   */
+  private String toIndentedString(Object o) {
     if (o == null) {
-    return "null";
+      return "null";
     }
     return o.toString().replace("\n", "\n    ");
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @return URL query string
+   */
+  public String toUrlQueryString() {
+    return toUrlQueryString(null);
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @param prefix prefix of the query string
+   * @return URL query string
+   */
+  public String toUrlQueryString(String prefix) {
+    String suffix = "";
+    String containerSuffix = "";
+    String containerPrefix = "";
+    if (prefix == null) {
+      // style=form, explode=true, e.g. /pet?name=cat&type=manx
+      prefix = "";
+    } else {
+      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+      prefix = prefix + "[";
+      suffix = "]";
+      containerSuffix = "]";
+      containerPrefix = "[";
     }
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @return URL query string
-        */
-        public String toUrlQueryString() {
-        return toUrlQueryString(null);
-        }
+    StringJoiner joiner = new StringJoiner("&");
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @param prefix prefix of the query string
-        * @return URL query string
-        */
-        public String toUrlQueryString(String prefix) {
-        String suffix = "";
-        String containerSuffix = "";
-        String containerPrefix = "";
-        if (prefix == null) {
-        // style=form, explode=true, e.g. /pet?name=cat&type=manx
-        prefix = "";
-        } else {
-        // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
-        prefix = prefix + "[";
-        suffix = "]";
-        containerSuffix = "]";
-        containerPrefix = "[";
-        }
-
-        StringJoiner joiner = new StringJoiner("&");
-
-            // add `method` to the URL query string
-                        if (getMethod() != null) {
-                        try {
-                        joiner.add(String.format("%smethod%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getMethod()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-            // add `recurring_payment` to the URL query string
-                        if (getRecurringPayment() != null) {
-                        try {
-                        joiner.add(String.format("%srecurring_payment%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getRecurringPayment()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-            // add `card_brand` to the URL query string
-                            if (getCardBrand() != null) {
-                            try {
-                            joiner.add(String.format("%scard_brand%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCardBrand()), "UTF-8").replaceAll("\\+", "%20")));
-                            } catch (UnsupportedEncodingException e) {
-                            // Should never happen, UTF-8 is always supported
-                            throw new RuntimeException(e);
-                            }
-                            }
-
-            // add `card_last4digits` to the URL query string
-                        if (getCardLast4digits() != null) {
-                        try {
-                        joiner.add(String.format("%scard_last4digits%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCardLast4digits()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-            // add `3_d_s` to the URL query string
-                            if (get3dS() != null) {
-                            joiner.add(get3dS().toUrlQueryString(prefix + "3_d_s" + suffix));
-                            }
-
-        return joiner.toString();
-        }
-
+    // add `method` to the URL query string
+    if (getMethod() != null) {
+      try {
+        joiner.add(String.format("%smethod%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getMethod()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
     }
+
+    // add `recurring_payment` to the URL query string
+    if (getRecurringPayment() != null) {
+      try {
+        joiner.add(String.format("%srecurring_payment%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getRecurringPayment()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `card_brand` to the URL query string
+    if (getCardBrand() != null) {
+      try {
+        joiner.add(String.format("%scard_brand%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCardBrand()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `card_last4digits` to the URL query string
+    if (getCardLast4digits() != null) {
+      try {
+        joiner.add(String.format("%scard_last4digits%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCardLast4digits()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `3_d_s` to the URL query string
+    if (get3dS() != null) {
+      joiner.add(get3dS().toUrlQueryString(prefix + "3_d_s" + suffix));
+    }
+
+    return joiner.toString();
+  }
+
+}
 

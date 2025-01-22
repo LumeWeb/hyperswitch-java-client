@@ -28,122 +28,122 @@ import java.net.URLEncoder;
 import java.util.StringJoiner;
 
 /**
-* FieldTypeOneOf4
-*/
-    @JsonPropertyOrder({
-        FieldTypeOneOf4.JSON_PROPERTY_DROP_DOWN
-    })
-            @JsonTypeName("FieldType_oneOf_4")
+ * FieldTypeOneOf4
+ */
+@JsonPropertyOrder({
+  FieldTypeOneOf4.JSON_PROPERTY_DROP_DOWN
+})
+@JsonTypeName("FieldType_oneOf_4")
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class FieldTypeOneOf4 {
-        public static final String JSON_PROPERTY_DROP_DOWN = "drop_down";
-    @javax.annotation.Nonnull
-            private FieldTypeOneOfUserCountry dropDown;
+  public static final String JSON_PROPERTY_DROP_DOWN = "drop_down";
+  @javax.annotation.Nonnull
+  private FieldTypeOneOfUserCountry dropDown;
 
-public FieldTypeOneOf4() {
-}
+  public FieldTypeOneOf4() {
+  }
 
-        public FieldTypeOneOf4 dropDown(@javax.annotation.Nonnull FieldTypeOneOfUserCountry dropDown) {
-        
-        this.dropDown = dropDown;
-        return this;
-        }
+  public FieldTypeOneOf4 dropDown(@javax.annotation.Nonnull FieldTypeOneOfUserCountry dropDown) {
+    
+    this.dropDown = dropDown;
+    return this;
+  }
 
-    /**
-        * Get dropDown
-    * @return dropDown
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_DROP_DOWN)
+  /**
+   * Get dropDown
+   * @return dropDown
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_DROP_DOWN)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public FieldTypeOneOfUserCountry getDropDown() {
-        return dropDown;
-    }
+  public FieldTypeOneOfUserCountry getDropDown() {
+    return dropDown;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_DROP_DOWN)
+  @JsonProperty(JSON_PROPERTY_DROP_DOWN)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setDropDown(@javax.annotation.Nonnull FieldTypeOneOfUserCountry dropDown) {
-            this.dropDown = dropDown;
-        }
+    this.dropDown = dropDown;
+  }
 
-@Override
-public boolean equals(Object o) {
+  @Override
+  public boolean equals(Object o) {
     if (this == o) {
-    return true;
+      return true;
     }
     if (o == null || getClass() != o.getClass()) {
-    return false;
+      return false;
     }
-        FieldTypeOneOf4 fieldTypeOneOf4 = (FieldTypeOneOf4) o;
-        return Objects.equals(this.dropDown, fieldTypeOneOf4.dropDown);
-}
+    FieldTypeOneOf4 fieldTypeOneOf4 = (FieldTypeOneOf4) o;
+    return Objects.equals(this.dropDown, fieldTypeOneOf4.dropDown);
+  }
 
-    @Override
-    public int hashCode() {
-        return Objects.hash(dropDown);
-    }
+  @Override
+  public int hashCode() {
+    return Objects.hash(dropDown);
+  }
 
-    @Override
-    public String toString() {
+  @Override
+  public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class FieldTypeOneOf4 {\n");
-        sb.append("    dropDown: ").append(toIndentedString(dropDown)).append("\n");
+    sb.append("    dropDown: ").append(toIndentedString(dropDown)).append("\n");
     sb.append("}");
     return sb.toString();
-    }
+  }
 
-    /**
-    * Convert the given object to string with each line indented by 4 spaces
-    * (except the first line).
-    */
-    private String toIndentedString(Object o) {
+  /**
+   * Convert the given object to string with each line indented by 4 spaces
+   * (except the first line).
+   */
+  private String toIndentedString(Object o) {
     if (o == null) {
-    return "null";
+      return "null";
     }
     return o.toString().replace("\n", "\n    ");
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @return URL query string
+   */
+  public String toUrlQueryString() {
+    return toUrlQueryString(null);
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @param prefix prefix of the query string
+   * @return URL query string
+   */
+  public String toUrlQueryString(String prefix) {
+    String suffix = "";
+    String containerSuffix = "";
+    String containerPrefix = "";
+    if (prefix == null) {
+      // style=form, explode=true, e.g. /pet?name=cat&type=manx
+      prefix = "";
+    } else {
+      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+      prefix = prefix + "[";
+      suffix = "]";
+      containerSuffix = "]";
+      containerPrefix = "[";
     }
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @return URL query string
-        */
-        public String toUrlQueryString() {
-        return toUrlQueryString(null);
-        }
+    StringJoiner joiner = new StringJoiner("&");
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @param prefix prefix of the query string
-        * @return URL query string
-        */
-        public String toUrlQueryString(String prefix) {
-        String suffix = "";
-        String containerSuffix = "";
-        String containerPrefix = "";
-        if (prefix == null) {
-        // style=form, explode=true, e.g. /pet?name=cat&type=manx
-        prefix = "";
-        } else {
-        // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
-        prefix = prefix + "[";
-        suffix = "]";
-        containerSuffix = "]";
-        containerPrefix = "[";
-        }
-
-        StringJoiner joiner = new StringJoiner("&");
-
-            // add `drop_down` to the URL query string
-                            if (getDropDown() != null) {
-                            joiner.add(getDropDown().toUrlQueryString(prefix + "drop_down" + suffix));
-                            }
-
-        return joiner.toString();
-        }
-
+    // add `drop_down` to the URL query string
+    if (getDropDown() != null) {
+      joiner.add(getDropDown().toUrlQueryString(prefix + "drop_down" + suffix));
     }
+
+    return joiner.toString();
+  }
+
+}
 

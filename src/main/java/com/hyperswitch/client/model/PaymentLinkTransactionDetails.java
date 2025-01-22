@@ -32,224 +32,224 @@ import java.net.URLEncoder;
 import java.util.StringJoiner;
 
 /**
-* PaymentLinkTransactionDetails
-*/
-    @JsonPropertyOrder({
-        PaymentLinkTransactionDetails.JSON_PROPERTY_KEY,
-        PaymentLinkTransactionDetails.JSON_PROPERTY_VALUE,
-        PaymentLinkTransactionDetails.JSON_PROPERTY_UI_CONFIGURATION
-    })
+ * PaymentLinkTransactionDetails
+ */
+@JsonPropertyOrder({
+  PaymentLinkTransactionDetails.JSON_PROPERTY_KEY,
+  PaymentLinkTransactionDetails.JSON_PROPERTY_VALUE,
+  PaymentLinkTransactionDetails.JSON_PROPERTY_UI_CONFIGURATION
+})
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class PaymentLinkTransactionDetails {
-        public static final String JSON_PROPERTY_KEY = "key";
-    @javax.annotation.Nonnull
-            private String key;
+  public static final String JSON_PROPERTY_KEY = "key";
+  @javax.annotation.Nonnull
+  private String key;
 
-        public static final String JSON_PROPERTY_VALUE = "value";
-    @javax.annotation.Nonnull
-            private String value;
+  public static final String JSON_PROPERTY_VALUE = "value";
+  @javax.annotation.Nonnull
+  private String value;
 
-        public static final String JSON_PROPERTY_UI_CONFIGURATION = "ui_configuration";
-    @javax.annotation.Nullable
-            private JsonNullable<TransactionDetailsUiConfiguration> uiConfiguration = JsonNullable.<TransactionDetailsUiConfiguration>undefined();
+  public static final String JSON_PROPERTY_UI_CONFIGURATION = "ui_configuration";
+  @javax.annotation.Nullable
+  private JsonNullable<TransactionDetailsUiConfiguration> uiConfiguration = JsonNullable.<TransactionDetailsUiConfiguration>undefined();
 
-public PaymentLinkTransactionDetails() {
-}
+  public PaymentLinkTransactionDetails() {
+  }
 
-        public PaymentLinkTransactionDetails key(@javax.annotation.Nonnull String key) {
-        
-        this.key = key;
-        return this;
-        }
+  public PaymentLinkTransactionDetails key(@javax.annotation.Nonnull String key) {
+    
+    this.key = key;
+    return this;
+  }
 
-    /**
-        * Key for the transaction details
-    * @return key
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_KEY)
+  /**
+   * Key for the transaction details
+   * @return key
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_KEY)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public String getKey() {
-        return key;
-    }
+  public String getKey() {
+    return key;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_KEY)
+  @JsonProperty(JSON_PROPERTY_KEY)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setKey(@javax.annotation.Nonnull String key) {
-            this.key = key;
-        }
+    this.key = key;
+  }
 
-        public PaymentLinkTransactionDetails value(@javax.annotation.Nonnull String value) {
-        
-        this.value = value;
-        return this;
-        }
+  public PaymentLinkTransactionDetails value(@javax.annotation.Nonnull String value) {
+    
+    this.value = value;
+    return this;
+  }
 
-    /**
-        * Value for the transaction details
-    * @return value
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_VALUE)
+  /**
+   * Value for the transaction details
+   * @return value
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_VALUE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public String getValue() {
-        return value;
-    }
+  public String getValue() {
+    return value;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_VALUE)
+  @JsonProperty(JSON_PROPERTY_VALUE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setValue(@javax.annotation.Nonnull String value) {
-            this.value = value;
-        }
+    this.value = value;
+  }
 
-        public PaymentLinkTransactionDetails uiConfiguration(@javax.annotation.Nullable TransactionDetailsUiConfiguration uiConfiguration) {
-        this.uiConfiguration = JsonNullable.<TransactionDetailsUiConfiguration>of(uiConfiguration);
-        
-        return this;
-        }
-
-    /**
-        * Get uiConfiguration
-    * @return uiConfiguration
-    */
-    @javax.annotation.Nullable
-        @JsonIgnore
+  public PaymentLinkTransactionDetails uiConfiguration(@javax.annotation.Nullable TransactionDetailsUiConfiguration uiConfiguration) {
+    this.uiConfiguration = JsonNullable.<TransactionDetailsUiConfiguration>of(uiConfiguration);
     
-    public TransactionDetailsUiConfiguration getUiConfiguration() {
-                return uiConfiguration.orElse(null);
-    }
+    return this;
+  }
 
-          @JsonProperty(JSON_PROPERTY_UI_CONFIGURATION)
+  /**
+   * Get uiConfiguration
+   * @return uiConfiguration
+   */
+  @javax.annotation.Nullable
+  @JsonIgnore
+
+  public TransactionDetailsUiConfiguration getUiConfiguration() {
+        return uiConfiguration.orElse(null);
+  }
+
+  @JsonProperty(JSON_PROPERTY_UI_CONFIGURATION)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-        public JsonNullable<TransactionDetailsUiConfiguration> getUiConfiguration_JsonNullable() {
-        return uiConfiguration;
-        }
-    
-        @JsonProperty(JSON_PROPERTY_UI_CONFIGURATION)
-        public void setUiConfiguration_JsonNullable(JsonNullable<TransactionDetailsUiConfiguration> uiConfiguration) {
-        this.uiConfiguration = uiConfiguration;
-        }
+  public JsonNullable<TransactionDetailsUiConfiguration> getUiConfiguration_JsonNullable() {
+    return uiConfiguration;
+  }
+  
+  @JsonProperty(JSON_PROPERTY_UI_CONFIGURATION)
+  public void setUiConfiguration_JsonNullable(JsonNullable<TransactionDetailsUiConfiguration> uiConfiguration) {
+    this.uiConfiguration = uiConfiguration;
+  }
 
-          public void setUiConfiguration(@javax.annotation.Nullable TransactionDetailsUiConfiguration uiConfiguration) {
-            this.uiConfiguration = JsonNullable.<TransactionDetailsUiConfiguration>of(uiConfiguration);
-        }
+  public void setUiConfiguration(@javax.annotation.Nullable TransactionDetailsUiConfiguration uiConfiguration) {
+    this.uiConfiguration = JsonNullable.<TransactionDetailsUiConfiguration>of(uiConfiguration);
+  }
 
-@Override
-public boolean equals(Object o) {
+  @Override
+  public boolean equals(Object o) {
     if (this == o) {
-    return true;
+      return true;
     }
     if (o == null || getClass() != o.getClass()) {
-    return false;
+      return false;
     }
-        PaymentLinkTransactionDetails paymentLinkTransactionDetails = (PaymentLinkTransactionDetails) o;
-        return Objects.equals(this.key, paymentLinkTransactionDetails.key) &&
+    PaymentLinkTransactionDetails paymentLinkTransactionDetails = (PaymentLinkTransactionDetails) o;
+    return Objects.equals(this.key, paymentLinkTransactionDetails.key) &&
         Objects.equals(this.value, paymentLinkTransactionDetails.value) &&
         equalsNullable(this.uiConfiguration, paymentLinkTransactionDetails.uiConfiguration);
-}
+  }
 
-    private static <T> boolean equalsNullable(JsonNullable<T> a, JsonNullable<T> b) {
-        return a == b || (a != null && b != null && a.isPresent() && b.isPresent() && Objects.deepEquals(a.get(), b.get()));
-        }
+  private static <T> boolean equalsNullable(JsonNullable<T> a, JsonNullable<T> b) {
+    return a == b || (a != null && b != null && a.isPresent() && b.isPresent() && Objects.deepEquals(a.get(), b.get()));
+  }
 
-    @Override
-    public int hashCode() {
-        return Objects.hash(key, value, hashCodeNullable(uiConfiguration));
+  @Override
+  public int hashCode() {
+    return Objects.hash(key, value, hashCodeNullable(uiConfiguration));
+  }
+
+  private static <T> int hashCodeNullable(JsonNullable<T> a) {
+    if (a == null) {
+      return 1;
     }
+    return a.isPresent() ? Arrays.deepHashCode(new Object[]{a.get()}) : 31;
+  }
 
-        private static <T> int hashCodeNullable(JsonNullable<T> a) {
-        if (a == null) {
-        return 1;
-        }
-        return a.isPresent() ? Arrays.deepHashCode(new Object[]{a.get()}) : 31;
-        }
-
-    @Override
-    public String toString() {
+  @Override
+  public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class PaymentLinkTransactionDetails {\n");
-        sb.append("    key: ").append(toIndentedString(key)).append("\n");
-        sb.append("    value: ").append(toIndentedString(value)).append("\n");
-        sb.append("    uiConfiguration: ").append(toIndentedString(uiConfiguration)).append("\n");
+    sb.append("    key: ").append(toIndentedString(key)).append("\n");
+    sb.append("    value: ").append(toIndentedString(value)).append("\n");
+    sb.append("    uiConfiguration: ").append(toIndentedString(uiConfiguration)).append("\n");
     sb.append("}");
     return sb.toString();
-    }
+  }
 
-    /**
-    * Convert the given object to string with each line indented by 4 spaces
-    * (except the first line).
-    */
-    private String toIndentedString(Object o) {
+  /**
+   * Convert the given object to string with each line indented by 4 spaces
+   * (except the first line).
+   */
+  private String toIndentedString(Object o) {
     if (o == null) {
-    return "null";
+      return "null";
     }
     return o.toString().replace("\n", "\n    ");
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @return URL query string
+   */
+  public String toUrlQueryString() {
+    return toUrlQueryString(null);
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @param prefix prefix of the query string
+   * @return URL query string
+   */
+  public String toUrlQueryString(String prefix) {
+    String suffix = "";
+    String containerSuffix = "";
+    String containerPrefix = "";
+    if (prefix == null) {
+      // style=form, explode=true, e.g. /pet?name=cat&type=manx
+      prefix = "";
+    } else {
+      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+      prefix = prefix + "[";
+      suffix = "]";
+      containerSuffix = "]";
+      containerPrefix = "[";
     }
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @return URL query string
-        */
-        public String toUrlQueryString() {
-        return toUrlQueryString(null);
-        }
+    StringJoiner joiner = new StringJoiner("&");
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @param prefix prefix of the query string
-        * @return URL query string
-        */
-        public String toUrlQueryString(String prefix) {
-        String suffix = "";
-        String containerSuffix = "";
-        String containerPrefix = "";
-        if (prefix == null) {
-        // style=form, explode=true, e.g. /pet?name=cat&type=manx
-        prefix = "";
-        } else {
-        // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
-        prefix = prefix + "[";
-        suffix = "]";
-        containerSuffix = "]";
-        containerPrefix = "[";
-        }
-
-        StringJoiner joiner = new StringJoiner("&");
-
-            // add `key` to the URL query string
-                        if (getKey() != null) {
-                        try {
-                        joiner.add(String.format("%skey%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getKey()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-            // add `value` to the URL query string
-                        if (getValue() != null) {
-                        try {
-                        joiner.add(String.format("%svalue%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getValue()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-            // add `ui_configuration` to the URL query string
-                            if (getUiConfiguration() != null) {
-                            joiner.add(getUiConfiguration().toUrlQueryString(prefix + "ui_configuration" + suffix));
-                            }
-
-        return joiner.toString();
-        }
-
+    // add `key` to the URL query string
+    if (getKey() != null) {
+      try {
+        joiner.add(String.format("%skey%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getKey()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
     }
+
+    // add `value` to the URL query string
+    if (getValue() != null) {
+      try {
+        joiner.add(String.format("%svalue%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getValue()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `ui_configuration` to the URL query string
+    if (getUiConfiguration() != null) {
+      joiner.add(getUiConfiguration().toUrlQueryString(prefix + "ui_configuration" + suffix));
+    }
+
+    return joiner.toString();
+  }
+
+}
 

@@ -33,353 +33,353 @@ import java.net.URLEncoder;
 import java.util.StringJoiner;
 
 /**
-* ThreeDsData
-*/
-    @JsonPropertyOrder({
-        ThreeDsData.JSON_PROPERTY_THREE_DS_AUTHENTICATION_URL,
-        ThreeDsData.JSON_PROPERTY_THREE_DS_AUTHORIZE_URL,
-        ThreeDsData.JSON_PROPERTY_THREE_DS_METHOD_DETAILS,
-        ThreeDsData.JSON_PROPERTY_POLL_CONFIG,
-        ThreeDsData.JSON_PROPERTY_MESSAGE_VERSION,
-        ThreeDsData.JSON_PROPERTY_DIRECTORY_SERVER_ID
-    })
+ * ThreeDsData
+ */
+@JsonPropertyOrder({
+  ThreeDsData.JSON_PROPERTY_THREE_DS_AUTHENTICATION_URL,
+  ThreeDsData.JSON_PROPERTY_THREE_DS_AUTHORIZE_URL,
+  ThreeDsData.JSON_PROPERTY_THREE_DS_METHOD_DETAILS,
+  ThreeDsData.JSON_PROPERTY_POLL_CONFIG,
+  ThreeDsData.JSON_PROPERTY_MESSAGE_VERSION,
+  ThreeDsData.JSON_PROPERTY_DIRECTORY_SERVER_ID
+})
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class ThreeDsData {
-        public static final String JSON_PROPERTY_THREE_DS_AUTHENTICATION_URL = "three_ds_authentication_url";
-    @javax.annotation.Nonnull
-            private String threeDsAuthenticationUrl;
+  public static final String JSON_PROPERTY_THREE_DS_AUTHENTICATION_URL = "three_ds_authentication_url";
+  @javax.annotation.Nonnull
+  private String threeDsAuthenticationUrl;
 
-        public static final String JSON_PROPERTY_THREE_DS_AUTHORIZE_URL = "three_ds_authorize_url";
-    @javax.annotation.Nonnull
-            private String threeDsAuthorizeUrl;
+  public static final String JSON_PROPERTY_THREE_DS_AUTHORIZE_URL = "three_ds_authorize_url";
+  @javax.annotation.Nonnull
+  private String threeDsAuthorizeUrl;
 
-        public static final String JSON_PROPERTY_THREE_DS_METHOD_DETAILS = "three_ds_method_details";
-    @javax.annotation.Nonnull
-            private ThreeDsMethodData threeDsMethodDetails;
+  public static final String JSON_PROPERTY_THREE_DS_METHOD_DETAILS = "three_ds_method_details";
+  @javax.annotation.Nonnull
+  private ThreeDsMethodData threeDsMethodDetails;
 
-        public static final String JSON_PROPERTY_POLL_CONFIG = "poll_config";
-    @javax.annotation.Nonnull
-            private PollConfigResponse pollConfig;
+  public static final String JSON_PROPERTY_POLL_CONFIG = "poll_config";
+  @javax.annotation.Nonnull
+  private PollConfigResponse pollConfig;
 
-        public static final String JSON_PROPERTY_MESSAGE_VERSION = "message_version";
-    @javax.annotation.Nullable
-            private JsonNullable<String> messageVersion = JsonNullable.<String>undefined();
+  public static final String JSON_PROPERTY_MESSAGE_VERSION = "message_version";
+  @javax.annotation.Nullable
+  private JsonNullable<String> messageVersion = JsonNullable.<String>undefined();
 
-        public static final String JSON_PROPERTY_DIRECTORY_SERVER_ID = "directory_server_id";
-    @javax.annotation.Nullable
-            private JsonNullable<String> directoryServerId = JsonNullable.<String>undefined();
+  public static final String JSON_PROPERTY_DIRECTORY_SERVER_ID = "directory_server_id";
+  @javax.annotation.Nullable
+  private JsonNullable<String> directoryServerId = JsonNullable.<String>undefined();
 
-public ThreeDsData() {
-}
+  public ThreeDsData() {
+  }
 
-        public ThreeDsData threeDsAuthenticationUrl(@javax.annotation.Nonnull String threeDsAuthenticationUrl) {
-        
-        this.threeDsAuthenticationUrl = threeDsAuthenticationUrl;
-        return this;
-        }
+  public ThreeDsData threeDsAuthenticationUrl(@javax.annotation.Nonnull String threeDsAuthenticationUrl) {
+    
+    this.threeDsAuthenticationUrl = threeDsAuthenticationUrl;
+    return this;
+  }
 
-    /**
-        * ThreeDS authentication url - to initiate authentication
-    * @return threeDsAuthenticationUrl
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_THREE_DS_AUTHENTICATION_URL)
+  /**
+   * ThreeDS authentication url - to initiate authentication
+   * @return threeDsAuthenticationUrl
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_THREE_DS_AUTHENTICATION_URL)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public String getThreeDsAuthenticationUrl() {
-        return threeDsAuthenticationUrl;
-    }
+  public String getThreeDsAuthenticationUrl() {
+    return threeDsAuthenticationUrl;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_THREE_DS_AUTHENTICATION_URL)
+  @JsonProperty(JSON_PROPERTY_THREE_DS_AUTHENTICATION_URL)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setThreeDsAuthenticationUrl(@javax.annotation.Nonnull String threeDsAuthenticationUrl) {
-            this.threeDsAuthenticationUrl = threeDsAuthenticationUrl;
-        }
+    this.threeDsAuthenticationUrl = threeDsAuthenticationUrl;
+  }
 
-        public ThreeDsData threeDsAuthorizeUrl(@javax.annotation.Nonnull String threeDsAuthorizeUrl) {
-        
-        this.threeDsAuthorizeUrl = threeDsAuthorizeUrl;
-        return this;
-        }
+  public ThreeDsData threeDsAuthorizeUrl(@javax.annotation.Nonnull String threeDsAuthorizeUrl) {
+    
+    this.threeDsAuthorizeUrl = threeDsAuthorizeUrl;
+    return this;
+  }
 
-    /**
-        * ThreeDS authorize url - to complete the payment authorization after authentication
-    * @return threeDsAuthorizeUrl
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_THREE_DS_AUTHORIZE_URL)
+  /**
+   * ThreeDS authorize url - to complete the payment authorization after authentication
+   * @return threeDsAuthorizeUrl
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_THREE_DS_AUTHORIZE_URL)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public String getThreeDsAuthorizeUrl() {
-        return threeDsAuthorizeUrl;
-    }
+  public String getThreeDsAuthorizeUrl() {
+    return threeDsAuthorizeUrl;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_THREE_DS_AUTHORIZE_URL)
+  @JsonProperty(JSON_PROPERTY_THREE_DS_AUTHORIZE_URL)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setThreeDsAuthorizeUrl(@javax.annotation.Nonnull String threeDsAuthorizeUrl) {
-            this.threeDsAuthorizeUrl = threeDsAuthorizeUrl;
-        }
+    this.threeDsAuthorizeUrl = threeDsAuthorizeUrl;
+  }
 
-        public ThreeDsData threeDsMethodDetails(@javax.annotation.Nonnull ThreeDsMethodData threeDsMethodDetails) {
-        
-        this.threeDsMethodDetails = threeDsMethodDetails;
-        return this;
-        }
+  public ThreeDsData threeDsMethodDetails(@javax.annotation.Nonnull ThreeDsMethodData threeDsMethodDetails) {
+    
+    this.threeDsMethodDetails = threeDsMethodDetails;
+    return this;
+  }
 
-    /**
-        * Get threeDsMethodDetails
-    * @return threeDsMethodDetails
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_THREE_DS_METHOD_DETAILS)
+  /**
+   * Get threeDsMethodDetails
+   * @return threeDsMethodDetails
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_THREE_DS_METHOD_DETAILS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public ThreeDsMethodData getThreeDsMethodDetails() {
-        return threeDsMethodDetails;
-    }
+  public ThreeDsMethodData getThreeDsMethodDetails() {
+    return threeDsMethodDetails;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_THREE_DS_METHOD_DETAILS)
+  @JsonProperty(JSON_PROPERTY_THREE_DS_METHOD_DETAILS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setThreeDsMethodDetails(@javax.annotation.Nonnull ThreeDsMethodData threeDsMethodDetails) {
-            this.threeDsMethodDetails = threeDsMethodDetails;
-        }
+    this.threeDsMethodDetails = threeDsMethodDetails;
+  }
 
-        public ThreeDsData pollConfig(@javax.annotation.Nonnull PollConfigResponse pollConfig) {
-        
-        this.pollConfig = pollConfig;
-        return this;
-        }
+  public ThreeDsData pollConfig(@javax.annotation.Nonnull PollConfigResponse pollConfig) {
+    
+    this.pollConfig = pollConfig;
+    return this;
+  }
 
-    /**
-        * Get pollConfig
-    * @return pollConfig
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_POLL_CONFIG)
+  /**
+   * Get pollConfig
+   * @return pollConfig
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_POLL_CONFIG)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public PollConfigResponse getPollConfig() {
-        return pollConfig;
-    }
+  public PollConfigResponse getPollConfig() {
+    return pollConfig;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_POLL_CONFIG)
+  @JsonProperty(JSON_PROPERTY_POLL_CONFIG)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setPollConfig(@javax.annotation.Nonnull PollConfigResponse pollConfig) {
-            this.pollConfig = pollConfig;
-        }
+    this.pollConfig = pollConfig;
+  }
 
-        public ThreeDsData messageVersion(@javax.annotation.Nullable String messageVersion) {
-        this.messageVersion = JsonNullable.<String>of(messageVersion);
-        
-        return this;
-        }
-
-    /**
-        * Message Version
-    * @return messageVersion
-    */
-    @javax.annotation.Nullable
-        @JsonIgnore
+  public ThreeDsData messageVersion(@javax.annotation.Nullable String messageVersion) {
+    this.messageVersion = JsonNullable.<String>of(messageVersion);
     
-    public String getMessageVersion() {
-                return messageVersion.orElse(null);
-    }
+    return this;
+  }
 
-          @JsonProperty(JSON_PROPERTY_MESSAGE_VERSION)
+  /**
+   * Message Version
+   * @return messageVersion
+   */
+  @javax.annotation.Nullable
+  @JsonIgnore
+
+  public String getMessageVersion() {
+        return messageVersion.orElse(null);
+  }
+
+  @JsonProperty(JSON_PROPERTY_MESSAGE_VERSION)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-        public JsonNullable<String> getMessageVersion_JsonNullable() {
-        return messageVersion;
-        }
+  public JsonNullable<String> getMessageVersion_JsonNullable() {
+    return messageVersion;
+  }
+  
+  @JsonProperty(JSON_PROPERTY_MESSAGE_VERSION)
+  public void setMessageVersion_JsonNullable(JsonNullable<String> messageVersion) {
+    this.messageVersion = messageVersion;
+  }
+
+  public void setMessageVersion(@javax.annotation.Nullable String messageVersion) {
+    this.messageVersion = JsonNullable.<String>of(messageVersion);
+  }
+
+  public ThreeDsData directoryServerId(@javax.annotation.Nullable String directoryServerId) {
+    this.directoryServerId = JsonNullable.<String>of(directoryServerId);
     
-        @JsonProperty(JSON_PROPERTY_MESSAGE_VERSION)
-        public void setMessageVersion_JsonNullable(JsonNullable<String> messageVersion) {
-        this.messageVersion = messageVersion;
-        }
+    return this;
+  }
 
-          public void setMessageVersion(@javax.annotation.Nullable String messageVersion) {
-            this.messageVersion = JsonNullable.<String>of(messageVersion);
-        }
+  /**
+   * Directory Server ID
+   * @return directoryServerId
+   */
+  @javax.annotation.Nullable
+  @JsonIgnore
 
-        public ThreeDsData directoryServerId(@javax.annotation.Nullable String directoryServerId) {
-        this.directoryServerId = JsonNullable.<String>of(directoryServerId);
-        
-        return this;
-        }
+  public String getDirectoryServerId() {
+        return directoryServerId.orElse(null);
+  }
 
-    /**
-        * Directory Server ID
-    * @return directoryServerId
-    */
-    @javax.annotation.Nullable
-        @JsonIgnore
-    
-    public String getDirectoryServerId() {
-                return directoryServerId.orElse(null);
-    }
-
-          @JsonProperty(JSON_PROPERTY_DIRECTORY_SERVER_ID)
+  @JsonProperty(JSON_PROPERTY_DIRECTORY_SERVER_ID)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-        public JsonNullable<String> getDirectoryServerId_JsonNullable() {
-        return directoryServerId;
-        }
-    
-        @JsonProperty(JSON_PROPERTY_DIRECTORY_SERVER_ID)
-        public void setDirectoryServerId_JsonNullable(JsonNullable<String> directoryServerId) {
-        this.directoryServerId = directoryServerId;
-        }
+  public JsonNullable<String> getDirectoryServerId_JsonNullable() {
+    return directoryServerId;
+  }
+  
+  @JsonProperty(JSON_PROPERTY_DIRECTORY_SERVER_ID)
+  public void setDirectoryServerId_JsonNullable(JsonNullable<String> directoryServerId) {
+    this.directoryServerId = directoryServerId;
+  }
 
-          public void setDirectoryServerId(@javax.annotation.Nullable String directoryServerId) {
-            this.directoryServerId = JsonNullable.<String>of(directoryServerId);
-        }
+  public void setDirectoryServerId(@javax.annotation.Nullable String directoryServerId) {
+    this.directoryServerId = JsonNullable.<String>of(directoryServerId);
+  }
 
-@Override
-public boolean equals(Object o) {
+  @Override
+  public boolean equals(Object o) {
     if (this == o) {
-    return true;
+      return true;
     }
     if (o == null || getClass() != o.getClass()) {
-    return false;
+      return false;
     }
-        ThreeDsData threeDsData = (ThreeDsData) o;
-        return Objects.equals(this.threeDsAuthenticationUrl, threeDsData.threeDsAuthenticationUrl) &&
+    ThreeDsData threeDsData = (ThreeDsData) o;
+    return Objects.equals(this.threeDsAuthenticationUrl, threeDsData.threeDsAuthenticationUrl) &&
         Objects.equals(this.threeDsAuthorizeUrl, threeDsData.threeDsAuthorizeUrl) &&
         Objects.equals(this.threeDsMethodDetails, threeDsData.threeDsMethodDetails) &&
         Objects.equals(this.pollConfig, threeDsData.pollConfig) &&
         equalsNullable(this.messageVersion, threeDsData.messageVersion) &&
         equalsNullable(this.directoryServerId, threeDsData.directoryServerId);
-}
+  }
 
-    private static <T> boolean equalsNullable(JsonNullable<T> a, JsonNullable<T> b) {
-        return a == b || (a != null && b != null && a.isPresent() && b.isPresent() && Objects.deepEquals(a.get(), b.get()));
-        }
+  private static <T> boolean equalsNullable(JsonNullable<T> a, JsonNullable<T> b) {
+    return a == b || (a != null && b != null && a.isPresent() && b.isPresent() && Objects.deepEquals(a.get(), b.get()));
+  }
 
-    @Override
-    public int hashCode() {
-        return Objects.hash(threeDsAuthenticationUrl, threeDsAuthorizeUrl, threeDsMethodDetails, pollConfig, hashCodeNullable(messageVersion), hashCodeNullable(directoryServerId));
+  @Override
+  public int hashCode() {
+    return Objects.hash(threeDsAuthenticationUrl, threeDsAuthorizeUrl, threeDsMethodDetails, pollConfig, hashCodeNullable(messageVersion), hashCodeNullable(directoryServerId));
+  }
+
+  private static <T> int hashCodeNullable(JsonNullable<T> a) {
+    if (a == null) {
+      return 1;
     }
+    return a.isPresent() ? Arrays.deepHashCode(new Object[]{a.get()}) : 31;
+  }
 
-        private static <T> int hashCodeNullable(JsonNullable<T> a) {
-        if (a == null) {
-        return 1;
-        }
-        return a.isPresent() ? Arrays.deepHashCode(new Object[]{a.get()}) : 31;
-        }
-
-    @Override
-    public String toString() {
+  @Override
+  public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class ThreeDsData {\n");
-        sb.append("    threeDsAuthenticationUrl: ").append(toIndentedString(threeDsAuthenticationUrl)).append("\n");
-        sb.append("    threeDsAuthorizeUrl: ").append(toIndentedString(threeDsAuthorizeUrl)).append("\n");
-        sb.append("    threeDsMethodDetails: ").append(toIndentedString(threeDsMethodDetails)).append("\n");
-        sb.append("    pollConfig: ").append(toIndentedString(pollConfig)).append("\n");
-        sb.append("    messageVersion: ").append(toIndentedString(messageVersion)).append("\n");
-        sb.append("    directoryServerId: ").append(toIndentedString(directoryServerId)).append("\n");
+    sb.append("    threeDsAuthenticationUrl: ").append(toIndentedString(threeDsAuthenticationUrl)).append("\n");
+    sb.append("    threeDsAuthorizeUrl: ").append(toIndentedString(threeDsAuthorizeUrl)).append("\n");
+    sb.append("    threeDsMethodDetails: ").append(toIndentedString(threeDsMethodDetails)).append("\n");
+    sb.append("    pollConfig: ").append(toIndentedString(pollConfig)).append("\n");
+    sb.append("    messageVersion: ").append(toIndentedString(messageVersion)).append("\n");
+    sb.append("    directoryServerId: ").append(toIndentedString(directoryServerId)).append("\n");
     sb.append("}");
     return sb.toString();
-    }
+  }
 
-    /**
-    * Convert the given object to string with each line indented by 4 spaces
-    * (except the first line).
-    */
-    private String toIndentedString(Object o) {
+  /**
+   * Convert the given object to string with each line indented by 4 spaces
+   * (except the first line).
+   */
+  private String toIndentedString(Object o) {
     if (o == null) {
-    return "null";
+      return "null";
     }
     return o.toString().replace("\n", "\n    ");
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @return URL query string
+   */
+  public String toUrlQueryString() {
+    return toUrlQueryString(null);
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @param prefix prefix of the query string
+   * @return URL query string
+   */
+  public String toUrlQueryString(String prefix) {
+    String suffix = "";
+    String containerSuffix = "";
+    String containerPrefix = "";
+    if (prefix == null) {
+      // style=form, explode=true, e.g. /pet?name=cat&type=manx
+      prefix = "";
+    } else {
+      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+      prefix = prefix + "[";
+      suffix = "]";
+      containerSuffix = "]";
+      containerPrefix = "[";
     }
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @return URL query string
-        */
-        public String toUrlQueryString() {
-        return toUrlQueryString(null);
-        }
+    StringJoiner joiner = new StringJoiner("&");
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @param prefix prefix of the query string
-        * @return URL query string
-        */
-        public String toUrlQueryString(String prefix) {
-        String suffix = "";
-        String containerSuffix = "";
-        String containerPrefix = "";
-        if (prefix == null) {
-        // style=form, explode=true, e.g. /pet?name=cat&type=manx
-        prefix = "";
-        } else {
-        // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
-        prefix = prefix + "[";
-        suffix = "]";
-        containerSuffix = "]";
-        containerPrefix = "[";
-        }
-
-        StringJoiner joiner = new StringJoiner("&");
-
-            // add `three_ds_authentication_url` to the URL query string
-                        if (getThreeDsAuthenticationUrl() != null) {
-                        try {
-                        joiner.add(String.format("%sthree_ds_authentication_url%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getThreeDsAuthenticationUrl()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-            // add `three_ds_authorize_url` to the URL query string
-                        if (getThreeDsAuthorizeUrl() != null) {
-                        try {
-                        joiner.add(String.format("%sthree_ds_authorize_url%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getThreeDsAuthorizeUrl()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-            // add `three_ds_method_details` to the URL query string
-                            if (getThreeDsMethodDetails() != null) {
-                            joiner.add(getThreeDsMethodDetails().toUrlQueryString(prefix + "three_ds_method_details" + suffix));
-                            }
-
-            // add `poll_config` to the URL query string
-                            if (getPollConfig() != null) {
-                            joiner.add(getPollConfig().toUrlQueryString(prefix + "poll_config" + suffix));
-                            }
-
-            // add `message_version` to the URL query string
-                        if (getMessageVersion() != null) {
-                        try {
-                        joiner.add(String.format("%smessage_version%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getMessageVersion()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-            // add `directory_server_id` to the URL query string
-                        if (getDirectoryServerId() != null) {
-                        try {
-                        joiner.add(String.format("%sdirectory_server_id%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getDirectoryServerId()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-        return joiner.toString();
-        }
-
+    // add `three_ds_authentication_url` to the URL query string
+    if (getThreeDsAuthenticationUrl() != null) {
+      try {
+        joiner.add(String.format("%sthree_ds_authentication_url%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getThreeDsAuthenticationUrl()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
     }
+
+    // add `three_ds_authorize_url` to the URL query string
+    if (getThreeDsAuthorizeUrl() != null) {
+      try {
+        joiner.add(String.format("%sthree_ds_authorize_url%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getThreeDsAuthorizeUrl()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `three_ds_method_details` to the URL query string
+    if (getThreeDsMethodDetails() != null) {
+      joiner.add(getThreeDsMethodDetails().toUrlQueryString(prefix + "three_ds_method_details" + suffix));
+    }
+
+    // add `poll_config` to the URL query string
+    if (getPollConfig() != null) {
+      joiner.add(getPollConfig().toUrlQueryString(prefix + "poll_config" + suffix));
+    }
+
+    // add `message_version` to the URL query string
+    if (getMessageVersion() != null) {
+      try {
+        joiner.add(String.format("%smessage_version%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getMessageVersion()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `directory_server_id` to the URL query string
+    if (getDirectoryServerId() != null) {
+      try {
+        joiner.add(String.format("%sdirectory_server_id%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getDirectoryServerId()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    return joiner.toString();
+  }
+
+}
 

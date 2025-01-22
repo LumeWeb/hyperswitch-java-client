@@ -30,139 +30,139 @@ import java.net.URLEncoder;
 import java.util.StringJoiner;
 
 /**
-* FieldTypeOneOfUserCountry
-*/
-    @JsonPropertyOrder({
-        FieldTypeOneOfUserCountry.JSON_PROPERTY_OPTIONS
-    })
-            @JsonTypeName("FieldType_oneOf_user_country")
+ * FieldTypeOneOfUserCountry
+ */
+@JsonPropertyOrder({
+  FieldTypeOneOfUserCountry.JSON_PROPERTY_OPTIONS
+})
+@JsonTypeName("FieldType_oneOf_user_country")
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class FieldTypeOneOfUserCountry {
-        public static final String JSON_PROPERTY_OPTIONS = "options";
-    @javax.annotation.Nonnull
-            private List<String> options = new ArrayList<>();
+  public static final String JSON_PROPERTY_OPTIONS = "options";
+  @javax.annotation.Nonnull
+  private List<String> options = new ArrayList<>();
 
-public FieldTypeOneOfUserCountry() {
-}
+  public FieldTypeOneOfUserCountry() {
+  }
 
-        public FieldTypeOneOfUserCountry options(@javax.annotation.Nonnull List<String> options) {
-        
-        this.options = options;
-        return this;
-        }
+  public FieldTypeOneOfUserCountry options(@javax.annotation.Nonnull List<String> options) {
+    
+    this.options = options;
+    return this;
+  }
 
-            public FieldTypeOneOfUserCountry addOptionsItem(String optionsItem) {
-                if (this.options == null) {
-                this.options = new ArrayList<>();
-                }
-                this.options.add(optionsItem);
-                return this;
-            }
+  public FieldTypeOneOfUserCountry addOptionsItem(String optionsItem) {
+    if (this.options == null) {
+      this.options = new ArrayList<>();
+    }
+    this.options.add(optionsItem);
+    return this;
+  }
 
-    /**
-        * Get options
-    * @return options
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_OPTIONS)
+  /**
+   * Get options
+   * @return options
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_OPTIONS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public List<String> getOptions() {
-        return options;
-    }
+  public List<String> getOptions() {
+    return options;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_OPTIONS)
+  @JsonProperty(JSON_PROPERTY_OPTIONS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setOptions(@javax.annotation.Nonnull List<String> options) {
-            this.options = options;
-        }
+    this.options = options;
+  }
 
-@Override
-public boolean equals(Object o) {
+  @Override
+  public boolean equals(Object o) {
     if (this == o) {
-    return true;
+      return true;
     }
     if (o == null || getClass() != o.getClass()) {
-    return false;
+      return false;
     }
-        FieldTypeOneOfUserCountry fieldTypeOneOfUserCountry = (FieldTypeOneOfUserCountry) o;
-        return Objects.equals(this.options, fieldTypeOneOfUserCountry.options);
-}
+    FieldTypeOneOfUserCountry fieldTypeOneOfUserCountry = (FieldTypeOneOfUserCountry) o;
+    return Objects.equals(this.options, fieldTypeOneOfUserCountry.options);
+  }
 
-    @Override
-    public int hashCode() {
-        return Objects.hash(options);
-    }
+  @Override
+  public int hashCode() {
+    return Objects.hash(options);
+  }
 
-    @Override
-    public String toString() {
+  @Override
+  public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class FieldTypeOneOfUserCountry {\n");
-        sb.append("    options: ").append(toIndentedString(options)).append("\n");
+    sb.append("    options: ").append(toIndentedString(options)).append("\n");
     sb.append("}");
     return sb.toString();
-    }
+  }
 
-    /**
-    * Convert the given object to string with each line indented by 4 spaces
-    * (except the first line).
-    */
-    private String toIndentedString(Object o) {
+  /**
+   * Convert the given object to string with each line indented by 4 spaces
+   * (except the first line).
+   */
+  private String toIndentedString(Object o) {
     if (o == null) {
-    return "null";
+      return "null";
     }
     return o.toString().replace("\n", "\n    ");
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @return URL query string
+   */
+  public String toUrlQueryString() {
+    return toUrlQueryString(null);
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @param prefix prefix of the query string
+   * @return URL query string
+   */
+  public String toUrlQueryString(String prefix) {
+    String suffix = "";
+    String containerSuffix = "";
+    String containerPrefix = "";
+    if (prefix == null) {
+      // style=form, explode=true, e.g. /pet?name=cat&type=manx
+      prefix = "";
+    } else {
+      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+      prefix = prefix + "[";
+      suffix = "]";
+      containerSuffix = "]";
+      containerPrefix = "[";
     }
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @return URL query string
-        */
-        public String toUrlQueryString() {
-        return toUrlQueryString(null);
+    StringJoiner joiner = new StringJoiner("&");
+
+    // add `options` to the URL query string
+    if (getOptions() != null) {
+      for (int i = 0; i < getOptions().size(); i++) {
+        try {
+          joiner.add(String.format("%soptions%s%s=%s", prefix, suffix,
+              "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix),
+              URLEncoder.encode(String.valueOf(getOptions().get(i)), "UTF-8").replaceAll("\\+", "%20")));
+        } catch (UnsupportedEncodingException e) {
+          // Should never happen, UTF-8 is always supported
+          throw new RuntimeException(e);
         }
-
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @param prefix prefix of the query string
-        * @return URL query string
-        */
-        public String toUrlQueryString(String prefix) {
-        String suffix = "";
-        String containerSuffix = "";
-        String containerPrefix = "";
-        if (prefix == null) {
-        // style=form, explode=true, e.g. /pet?name=cat&type=manx
-        prefix = "";
-        } else {
-        // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
-        prefix = prefix + "[";
-        suffix = "]";
-        containerSuffix = "]";
-        containerPrefix = "[";
-        }
-
-        StringJoiner joiner = new StringJoiner("&");
-
-            // add `options` to the URL query string
-                        if (getOptions() != null) {
-                        for (int i = 0; i < getOptions().size(); i++) {
-                        try {
-                        joiner.add(String.format("%soptions%s%s=%s", prefix, suffix,
-                        "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix),
-                        URLEncoder.encode(String.valueOf(getOptions().get(i)), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-                        }
-
-        return joiner.toString();
-        }
-
+      }
     }
+
+    return joiner.toString();
+  }
+
+}
 

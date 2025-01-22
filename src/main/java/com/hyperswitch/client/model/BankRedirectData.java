@@ -56,565 +56,565 @@ import java.net.URLEncoder;
 import java.util.StringJoiner;
 
 /**
-* BankRedirectData
-*/
-    @JsonPropertyOrder({
-        BankRedirectData.JSON_PROPERTY_BANCONTACT_CARD,
-        BankRedirectData.JSON_PROPERTY_BIZUM,
-        BankRedirectData.JSON_PROPERTY_BLIK,
-        BankRedirectData.JSON_PROPERTY_EPS,
-        BankRedirectData.JSON_PROPERTY_GIROPAY,
-        BankRedirectData.JSON_PROPERTY_IDEAL,
-        BankRedirectData.JSON_PROPERTY_INTERAC,
-        BankRedirectData.JSON_PROPERTY_ONLINE_BANKING_CZECH_REPUBLIC,
-        BankRedirectData.JSON_PROPERTY_ONLINE_BANKING_FINLAND,
-        BankRedirectData.JSON_PROPERTY_ONLINE_BANKING_POLAND,
-        BankRedirectData.JSON_PROPERTY_ONLINE_BANKING_SLOVAKIA,
-        BankRedirectData.JSON_PROPERTY_OPEN_BANKING_UK,
-        BankRedirectData.JSON_PROPERTY_PRZELEWY24,
-        BankRedirectData.JSON_PROPERTY_SOFORT,
-        BankRedirectData.JSON_PROPERTY_TRUSTLY,
-        BankRedirectData.JSON_PROPERTY_ONLINE_BANKING_FPX,
-        BankRedirectData.JSON_PROPERTY_ONLINE_BANKING_THAILAND,
-        BankRedirectData.JSON_PROPERTY_LOCAL_BANK_REDIRECT
-    })
+ * BankRedirectData
+ */
+@JsonPropertyOrder({
+  BankRedirectData.JSON_PROPERTY_BANCONTACT_CARD,
+  BankRedirectData.JSON_PROPERTY_BIZUM,
+  BankRedirectData.JSON_PROPERTY_BLIK,
+  BankRedirectData.JSON_PROPERTY_EPS,
+  BankRedirectData.JSON_PROPERTY_GIROPAY,
+  BankRedirectData.JSON_PROPERTY_IDEAL,
+  BankRedirectData.JSON_PROPERTY_INTERAC,
+  BankRedirectData.JSON_PROPERTY_ONLINE_BANKING_CZECH_REPUBLIC,
+  BankRedirectData.JSON_PROPERTY_ONLINE_BANKING_FINLAND,
+  BankRedirectData.JSON_PROPERTY_ONLINE_BANKING_POLAND,
+  BankRedirectData.JSON_PROPERTY_ONLINE_BANKING_SLOVAKIA,
+  BankRedirectData.JSON_PROPERTY_OPEN_BANKING_UK,
+  BankRedirectData.JSON_PROPERTY_PRZELEWY24,
+  BankRedirectData.JSON_PROPERTY_SOFORT,
+  BankRedirectData.JSON_PROPERTY_TRUSTLY,
+  BankRedirectData.JSON_PROPERTY_ONLINE_BANKING_FPX,
+  BankRedirectData.JSON_PROPERTY_ONLINE_BANKING_THAILAND,
+  BankRedirectData.JSON_PROPERTY_LOCAL_BANK_REDIRECT
+})
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class BankRedirectData {
-        public static final String JSON_PROPERTY_BANCONTACT_CARD = "bancontact_card";
-    @javax.annotation.Nonnull
-            private BankRedirectDataOneOfBancontactCard bancontactCard;
+  public static final String JSON_PROPERTY_BANCONTACT_CARD = "bancontact_card";
+  @javax.annotation.Nonnull
+  private BankRedirectDataOneOfBancontactCard bancontactCard;
 
-        public static final String JSON_PROPERTY_BIZUM = "bizum";
-    @javax.annotation.Nonnull
-            private Object bizum;
+  public static final String JSON_PROPERTY_BIZUM = "bizum";
+  @javax.annotation.Nonnull
+  private Object bizum;
 
-        public static final String JSON_PROPERTY_BLIK = "blik";
-    @javax.annotation.Nonnull
-            private BankRedirectDataOneOf2Blik blik;
+  public static final String JSON_PROPERTY_BLIK = "blik";
+  @javax.annotation.Nonnull
+  private BankRedirectDataOneOf2Blik blik;
 
-        public static final String JSON_PROPERTY_EPS = "eps";
-    @javax.annotation.Nonnull
-            private BankRedirectDataOneOf3Eps eps;
+  public static final String JSON_PROPERTY_EPS = "eps";
+  @javax.annotation.Nonnull
+  private BankRedirectDataOneOf3Eps eps;
 
-        public static final String JSON_PROPERTY_GIROPAY = "giropay";
-    @javax.annotation.Nonnull
-            private BankRedirectDataOneOf4Giropay giropay;
+  public static final String JSON_PROPERTY_GIROPAY = "giropay";
+  @javax.annotation.Nonnull
+  private BankRedirectDataOneOf4Giropay giropay;
 
-        public static final String JSON_PROPERTY_IDEAL = "ideal";
-    @javax.annotation.Nonnull
-            private BankRedirectDataOneOf3Eps ideal;
+  public static final String JSON_PROPERTY_IDEAL = "ideal";
+  @javax.annotation.Nonnull
+  private BankRedirectDataOneOf3Eps ideal;
 
-        public static final String JSON_PROPERTY_INTERAC = "interac";
-    @javax.annotation.Nonnull
-            private BankRedirectDataOneOf6Interac interac;
+  public static final String JSON_PROPERTY_INTERAC = "interac";
+  @javax.annotation.Nonnull
+  private BankRedirectDataOneOf6Interac interac;
 
-        public static final String JSON_PROPERTY_ONLINE_BANKING_CZECH_REPUBLIC = "online_banking_czech_republic";
-    @javax.annotation.Nonnull
-            private BankRedirectDataOneOf7OnlineBankingCzechRepublic onlineBankingCzechRepublic;
+  public static final String JSON_PROPERTY_ONLINE_BANKING_CZECH_REPUBLIC = "online_banking_czech_republic";
+  @javax.annotation.Nonnull
+  private BankRedirectDataOneOf7OnlineBankingCzechRepublic onlineBankingCzechRepublic;
 
-        public static final String JSON_PROPERTY_ONLINE_BANKING_FINLAND = "online_banking_finland";
-    @javax.annotation.Nonnull
-            private BankRedirectDataOneOf8OnlineBankingFinland onlineBankingFinland;
+  public static final String JSON_PROPERTY_ONLINE_BANKING_FINLAND = "online_banking_finland";
+  @javax.annotation.Nonnull
+  private BankRedirectDataOneOf8OnlineBankingFinland onlineBankingFinland;
 
-        public static final String JSON_PROPERTY_ONLINE_BANKING_POLAND = "online_banking_poland";
-    @javax.annotation.Nonnull
-            private BankRedirectDataOneOf7OnlineBankingCzechRepublic onlineBankingPoland;
+  public static final String JSON_PROPERTY_ONLINE_BANKING_POLAND = "online_banking_poland";
+  @javax.annotation.Nonnull
+  private BankRedirectDataOneOf7OnlineBankingCzechRepublic onlineBankingPoland;
 
-        public static final String JSON_PROPERTY_ONLINE_BANKING_SLOVAKIA = "online_banking_slovakia";
-    @javax.annotation.Nonnull
-            private BankRedirectDataOneOf7OnlineBankingCzechRepublic onlineBankingSlovakia;
+  public static final String JSON_PROPERTY_ONLINE_BANKING_SLOVAKIA = "online_banking_slovakia";
+  @javax.annotation.Nonnull
+  private BankRedirectDataOneOf7OnlineBankingCzechRepublic onlineBankingSlovakia;
 
-        public static final String JSON_PROPERTY_OPEN_BANKING_UK = "open_banking_uk";
-    @javax.annotation.Nonnull
-            private BankRedirectDataOneOf11OpenBankingUk openBankingUk;
+  public static final String JSON_PROPERTY_OPEN_BANKING_UK = "open_banking_uk";
+  @javax.annotation.Nonnull
+  private BankRedirectDataOneOf11OpenBankingUk openBankingUk;
 
-        public static final String JSON_PROPERTY_PRZELEWY24 = "przelewy24";
-    @javax.annotation.Nonnull
-            private BankRedirectDataOneOf12Przelewy24 przelewy24;
+  public static final String JSON_PROPERTY_PRZELEWY24 = "przelewy24";
+  @javax.annotation.Nonnull
+  private BankRedirectDataOneOf12Przelewy24 przelewy24;
 
-        public static final String JSON_PROPERTY_SOFORT = "sofort";
-    @javax.annotation.Nonnull
-            private BankRedirectDataOneOf13Sofort sofort;
+  public static final String JSON_PROPERTY_SOFORT = "sofort";
+  @javax.annotation.Nonnull
+  private BankRedirectDataOneOf13Sofort sofort;
 
-        public static final String JSON_PROPERTY_TRUSTLY = "trustly";
-    @javax.annotation.Nonnull
-            private BankRedirectDataOneOf14Trustly trustly;
+  public static final String JSON_PROPERTY_TRUSTLY = "trustly";
+  @javax.annotation.Nonnull
+  private BankRedirectDataOneOf14Trustly trustly;
 
-        public static final String JSON_PROPERTY_ONLINE_BANKING_FPX = "online_banking_fpx";
-    @javax.annotation.Nonnull
-            private BankRedirectDataOneOf7OnlineBankingCzechRepublic onlineBankingFpx;
+  public static final String JSON_PROPERTY_ONLINE_BANKING_FPX = "online_banking_fpx";
+  @javax.annotation.Nonnull
+  private BankRedirectDataOneOf7OnlineBankingCzechRepublic onlineBankingFpx;
 
-        public static final String JSON_PROPERTY_ONLINE_BANKING_THAILAND = "online_banking_thailand";
-    @javax.annotation.Nonnull
-            private BankRedirectDataOneOf7OnlineBankingCzechRepublic onlineBankingThailand;
+  public static final String JSON_PROPERTY_ONLINE_BANKING_THAILAND = "online_banking_thailand";
+  @javax.annotation.Nonnull
+  private BankRedirectDataOneOf7OnlineBankingCzechRepublic onlineBankingThailand;
 
-        public static final String JSON_PROPERTY_LOCAL_BANK_REDIRECT = "local_bank_redirect";
-    @javax.annotation.Nonnull
-            private Object localBankRedirect;
+  public static final String JSON_PROPERTY_LOCAL_BANK_REDIRECT = "local_bank_redirect";
+  @javax.annotation.Nonnull
+  private Object localBankRedirect;
 
-public BankRedirectData() {
-}
+  public BankRedirectData() {
+  }
 
-        public BankRedirectData bancontactCard(@javax.annotation.Nonnull BankRedirectDataOneOfBancontactCard bancontactCard) {
-        
-        this.bancontactCard = bancontactCard;
-        return this;
-        }
+  public BankRedirectData bancontactCard(@javax.annotation.Nonnull BankRedirectDataOneOfBancontactCard bancontactCard) {
+    
+    this.bancontactCard = bancontactCard;
+    return this;
+  }
 
-    /**
-        * Get bancontactCard
-    * @return bancontactCard
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_BANCONTACT_CARD)
+  /**
+   * Get bancontactCard
+   * @return bancontactCard
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_BANCONTACT_CARD)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public BankRedirectDataOneOfBancontactCard getBancontactCard() {
-        return bancontactCard;
-    }
+  public BankRedirectDataOneOfBancontactCard getBancontactCard() {
+    return bancontactCard;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_BANCONTACT_CARD)
+  @JsonProperty(JSON_PROPERTY_BANCONTACT_CARD)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setBancontactCard(@javax.annotation.Nonnull BankRedirectDataOneOfBancontactCard bancontactCard) {
-            this.bancontactCard = bancontactCard;
-        }
+    this.bancontactCard = bancontactCard;
+  }
 
-        public BankRedirectData bizum(@javax.annotation.Nonnull Object bizum) {
-        
-        this.bizum = bizum;
-        return this;
-        }
+  public BankRedirectData bizum(@javax.annotation.Nonnull Object bizum) {
+    
+    this.bizum = bizum;
+    return this;
+  }
 
-    /**
-        * Get bizum
-    * @return bizum
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_BIZUM)
+  /**
+   * Get bizum
+   * @return bizum
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_BIZUM)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public Object getBizum() {
-        return bizum;
-    }
+  public Object getBizum() {
+    return bizum;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_BIZUM)
+  @JsonProperty(JSON_PROPERTY_BIZUM)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setBizum(@javax.annotation.Nonnull Object bizum) {
-            this.bizum = bizum;
-        }
+    this.bizum = bizum;
+  }
 
-        public BankRedirectData blik(@javax.annotation.Nonnull BankRedirectDataOneOf2Blik blik) {
-        
-        this.blik = blik;
-        return this;
-        }
+  public BankRedirectData blik(@javax.annotation.Nonnull BankRedirectDataOneOf2Blik blik) {
+    
+    this.blik = blik;
+    return this;
+  }
 
-    /**
-        * Get blik
-    * @return blik
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_BLIK)
+  /**
+   * Get blik
+   * @return blik
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_BLIK)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public BankRedirectDataOneOf2Blik getBlik() {
-        return blik;
-    }
+  public BankRedirectDataOneOf2Blik getBlik() {
+    return blik;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_BLIK)
+  @JsonProperty(JSON_PROPERTY_BLIK)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setBlik(@javax.annotation.Nonnull BankRedirectDataOneOf2Blik blik) {
-            this.blik = blik;
-        }
+    this.blik = blik;
+  }
 
-        public BankRedirectData eps(@javax.annotation.Nonnull BankRedirectDataOneOf3Eps eps) {
-        
-        this.eps = eps;
-        return this;
-        }
+  public BankRedirectData eps(@javax.annotation.Nonnull BankRedirectDataOneOf3Eps eps) {
+    
+    this.eps = eps;
+    return this;
+  }
 
-    /**
-        * Get eps
-    * @return eps
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_EPS)
+  /**
+   * Get eps
+   * @return eps
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_EPS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public BankRedirectDataOneOf3Eps getEps() {
-        return eps;
-    }
+  public BankRedirectDataOneOf3Eps getEps() {
+    return eps;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_EPS)
+  @JsonProperty(JSON_PROPERTY_EPS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setEps(@javax.annotation.Nonnull BankRedirectDataOneOf3Eps eps) {
-            this.eps = eps;
-        }
+    this.eps = eps;
+  }
 
-        public BankRedirectData giropay(@javax.annotation.Nonnull BankRedirectDataOneOf4Giropay giropay) {
-        
-        this.giropay = giropay;
-        return this;
-        }
+  public BankRedirectData giropay(@javax.annotation.Nonnull BankRedirectDataOneOf4Giropay giropay) {
+    
+    this.giropay = giropay;
+    return this;
+  }
 
-    /**
-        * Get giropay
-    * @return giropay
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_GIROPAY)
+  /**
+   * Get giropay
+   * @return giropay
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_GIROPAY)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public BankRedirectDataOneOf4Giropay getGiropay() {
-        return giropay;
-    }
+  public BankRedirectDataOneOf4Giropay getGiropay() {
+    return giropay;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_GIROPAY)
+  @JsonProperty(JSON_PROPERTY_GIROPAY)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setGiropay(@javax.annotation.Nonnull BankRedirectDataOneOf4Giropay giropay) {
-            this.giropay = giropay;
-        }
+    this.giropay = giropay;
+  }
 
-        public BankRedirectData ideal(@javax.annotation.Nonnull BankRedirectDataOneOf3Eps ideal) {
-        
-        this.ideal = ideal;
-        return this;
-        }
+  public BankRedirectData ideal(@javax.annotation.Nonnull BankRedirectDataOneOf3Eps ideal) {
+    
+    this.ideal = ideal;
+    return this;
+  }
 
-    /**
-        * Get ideal
-    * @return ideal
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_IDEAL)
+  /**
+   * Get ideal
+   * @return ideal
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_IDEAL)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public BankRedirectDataOneOf3Eps getIdeal() {
-        return ideal;
-    }
+  public BankRedirectDataOneOf3Eps getIdeal() {
+    return ideal;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_IDEAL)
+  @JsonProperty(JSON_PROPERTY_IDEAL)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setIdeal(@javax.annotation.Nonnull BankRedirectDataOneOf3Eps ideal) {
-            this.ideal = ideal;
-        }
+    this.ideal = ideal;
+  }
 
-        public BankRedirectData interac(@javax.annotation.Nonnull BankRedirectDataOneOf6Interac interac) {
-        
-        this.interac = interac;
-        return this;
-        }
+  public BankRedirectData interac(@javax.annotation.Nonnull BankRedirectDataOneOf6Interac interac) {
+    
+    this.interac = interac;
+    return this;
+  }
 
-    /**
-        * Get interac
-    * @return interac
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_INTERAC)
+  /**
+   * Get interac
+   * @return interac
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_INTERAC)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public BankRedirectDataOneOf6Interac getInterac() {
-        return interac;
-    }
+  public BankRedirectDataOneOf6Interac getInterac() {
+    return interac;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_INTERAC)
+  @JsonProperty(JSON_PROPERTY_INTERAC)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setInterac(@javax.annotation.Nonnull BankRedirectDataOneOf6Interac interac) {
-            this.interac = interac;
-        }
+    this.interac = interac;
+  }
 
-        public BankRedirectData onlineBankingCzechRepublic(@javax.annotation.Nonnull BankRedirectDataOneOf7OnlineBankingCzechRepublic onlineBankingCzechRepublic) {
-        
-        this.onlineBankingCzechRepublic = onlineBankingCzechRepublic;
-        return this;
-        }
+  public BankRedirectData onlineBankingCzechRepublic(@javax.annotation.Nonnull BankRedirectDataOneOf7OnlineBankingCzechRepublic onlineBankingCzechRepublic) {
+    
+    this.onlineBankingCzechRepublic = onlineBankingCzechRepublic;
+    return this;
+  }
 
-    /**
-        * Get onlineBankingCzechRepublic
-    * @return onlineBankingCzechRepublic
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_ONLINE_BANKING_CZECH_REPUBLIC)
+  /**
+   * Get onlineBankingCzechRepublic
+   * @return onlineBankingCzechRepublic
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_ONLINE_BANKING_CZECH_REPUBLIC)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public BankRedirectDataOneOf7OnlineBankingCzechRepublic getOnlineBankingCzechRepublic() {
-        return onlineBankingCzechRepublic;
-    }
+  public BankRedirectDataOneOf7OnlineBankingCzechRepublic getOnlineBankingCzechRepublic() {
+    return onlineBankingCzechRepublic;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_ONLINE_BANKING_CZECH_REPUBLIC)
+  @JsonProperty(JSON_PROPERTY_ONLINE_BANKING_CZECH_REPUBLIC)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setOnlineBankingCzechRepublic(@javax.annotation.Nonnull BankRedirectDataOneOf7OnlineBankingCzechRepublic onlineBankingCzechRepublic) {
-            this.onlineBankingCzechRepublic = onlineBankingCzechRepublic;
-        }
+    this.onlineBankingCzechRepublic = onlineBankingCzechRepublic;
+  }
 
-        public BankRedirectData onlineBankingFinland(@javax.annotation.Nonnull BankRedirectDataOneOf8OnlineBankingFinland onlineBankingFinland) {
-        
-        this.onlineBankingFinland = onlineBankingFinland;
-        return this;
-        }
+  public BankRedirectData onlineBankingFinland(@javax.annotation.Nonnull BankRedirectDataOneOf8OnlineBankingFinland onlineBankingFinland) {
+    
+    this.onlineBankingFinland = onlineBankingFinland;
+    return this;
+  }
 
-    /**
-        * Get onlineBankingFinland
-    * @return onlineBankingFinland
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_ONLINE_BANKING_FINLAND)
+  /**
+   * Get onlineBankingFinland
+   * @return onlineBankingFinland
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_ONLINE_BANKING_FINLAND)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public BankRedirectDataOneOf8OnlineBankingFinland getOnlineBankingFinland() {
-        return onlineBankingFinland;
-    }
+  public BankRedirectDataOneOf8OnlineBankingFinland getOnlineBankingFinland() {
+    return onlineBankingFinland;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_ONLINE_BANKING_FINLAND)
+  @JsonProperty(JSON_PROPERTY_ONLINE_BANKING_FINLAND)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setOnlineBankingFinland(@javax.annotation.Nonnull BankRedirectDataOneOf8OnlineBankingFinland onlineBankingFinland) {
-            this.onlineBankingFinland = onlineBankingFinland;
-        }
+    this.onlineBankingFinland = onlineBankingFinland;
+  }
 
-        public BankRedirectData onlineBankingPoland(@javax.annotation.Nonnull BankRedirectDataOneOf7OnlineBankingCzechRepublic onlineBankingPoland) {
-        
-        this.onlineBankingPoland = onlineBankingPoland;
-        return this;
-        }
+  public BankRedirectData onlineBankingPoland(@javax.annotation.Nonnull BankRedirectDataOneOf7OnlineBankingCzechRepublic onlineBankingPoland) {
+    
+    this.onlineBankingPoland = onlineBankingPoland;
+    return this;
+  }
 
-    /**
-        * Get onlineBankingPoland
-    * @return onlineBankingPoland
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_ONLINE_BANKING_POLAND)
+  /**
+   * Get onlineBankingPoland
+   * @return onlineBankingPoland
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_ONLINE_BANKING_POLAND)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public BankRedirectDataOneOf7OnlineBankingCzechRepublic getOnlineBankingPoland() {
-        return onlineBankingPoland;
-    }
+  public BankRedirectDataOneOf7OnlineBankingCzechRepublic getOnlineBankingPoland() {
+    return onlineBankingPoland;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_ONLINE_BANKING_POLAND)
+  @JsonProperty(JSON_PROPERTY_ONLINE_BANKING_POLAND)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setOnlineBankingPoland(@javax.annotation.Nonnull BankRedirectDataOneOf7OnlineBankingCzechRepublic onlineBankingPoland) {
-            this.onlineBankingPoland = onlineBankingPoland;
-        }
+    this.onlineBankingPoland = onlineBankingPoland;
+  }
 
-        public BankRedirectData onlineBankingSlovakia(@javax.annotation.Nonnull BankRedirectDataOneOf7OnlineBankingCzechRepublic onlineBankingSlovakia) {
-        
-        this.onlineBankingSlovakia = onlineBankingSlovakia;
-        return this;
-        }
+  public BankRedirectData onlineBankingSlovakia(@javax.annotation.Nonnull BankRedirectDataOneOf7OnlineBankingCzechRepublic onlineBankingSlovakia) {
+    
+    this.onlineBankingSlovakia = onlineBankingSlovakia;
+    return this;
+  }
 
-    /**
-        * Get onlineBankingSlovakia
-    * @return onlineBankingSlovakia
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_ONLINE_BANKING_SLOVAKIA)
+  /**
+   * Get onlineBankingSlovakia
+   * @return onlineBankingSlovakia
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_ONLINE_BANKING_SLOVAKIA)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public BankRedirectDataOneOf7OnlineBankingCzechRepublic getOnlineBankingSlovakia() {
-        return onlineBankingSlovakia;
-    }
+  public BankRedirectDataOneOf7OnlineBankingCzechRepublic getOnlineBankingSlovakia() {
+    return onlineBankingSlovakia;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_ONLINE_BANKING_SLOVAKIA)
+  @JsonProperty(JSON_PROPERTY_ONLINE_BANKING_SLOVAKIA)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setOnlineBankingSlovakia(@javax.annotation.Nonnull BankRedirectDataOneOf7OnlineBankingCzechRepublic onlineBankingSlovakia) {
-            this.onlineBankingSlovakia = onlineBankingSlovakia;
-        }
+    this.onlineBankingSlovakia = onlineBankingSlovakia;
+  }
 
-        public BankRedirectData openBankingUk(@javax.annotation.Nonnull BankRedirectDataOneOf11OpenBankingUk openBankingUk) {
-        
-        this.openBankingUk = openBankingUk;
-        return this;
-        }
+  public BankRedirectData openBankingUk(@javax.annotation.Nonnull BankRedirectDataOneOf11OpenBankingUk openBankingUk) {
+    
+    this.openBankingUk = openBankingUk;
+    return this;
+  }
 
-    /**
-        * Get openBankingUk
-    * @return openBankingUk
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_OPEN_BANKING_UK)
+  /**
+   * Get openBankingUk
+   * @return openBankingUk
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_OPEN_BANKING_UK)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public BankRedirectDataOneOf11OpenBankingUk getOpenBankingUk() {
-        return openBankingUk;
-    }
+  public BankRedirectDataOneOf11OpenBankingUk getOpenBankingUk() {
+    return openBankingUk;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_OPEN_BANKING_UK)
+  @JsonProperty(JSON_PROPERTY_OPEN_BANKING_UK)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setOpenBankingUk(@javax.annotation.Nonnull BankRedirectDataOneOf11OpenBankingUk openBankingUk) {
-            this.openBankingUk = openBankingUk;
-        }
+    this.openBankingUk = openBankingUk;
+  }
 
-        public BankRedirectData przelewy24(@javax.annotation.Nonnull BankRedirectDataOneOf12Przelewy24 przelewy24) {
-        
-        this.przelewy24 = przelewy24;
-        return this;
-        }
+  public BankRedirectData przelewy24(@javax.annotation.Nonnull BankRedirectDataOneOf12Przelewy24 przelewy24) {
+    
+    this.przelewy24 = przelewy24;
+    return this;
+  }
 
-    /**
-        * Get przelewy24
-    * @return przelewy24
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_PRZELEWY24)
+  /**
+   * Get przelewy24
+   * @return przelewy24
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_PRZELEWY24)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public BankRedirectDataOneOf12Przelewy24 getPrzelewy24() {
-        return przelewy24;
-    }
+  public BankRedirectDataOneOf12Przelewy24 getPrzelewy24() {
+    return przelewy24;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_PRZELEWY24)
+  @JsonProperty(JSON_PROPERTY_PRZELEWY24)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setPrzelewy24(@javax.annotation.Nonnull BankRedirectDataOneOf12Przelewy24 przelewy24) {
-            this.przelewy24 = przelewy24;
-        }
+    this.przelewy24 = przelewy24;
+  }
 
-        public BankRedirectData sofort(@javax.annotation.Nonnull BankRedirectDataOneOf13Sofort sofort) {
-        
-        this.sofort = sofort;
-        return this;
-        }
+  public BankRedirectData sofort(@javax.annotation.Nonnull BankRedirectDataOneOf13Sofort sofort) {
+    
+    this.sofort = sofort;
+    return this;
+  }
 
-    /**
-        * Get sofort
-    * @return sofort
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_SOFORT)
+  /**
+   * Get sofort
+   * @return sofort
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_SOFORT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public BankRedirectDataOneOf13Sofort getSofort() {
-        return sofort;
-    }
+  public BankRedirectDataOneOf13Sofort getSofort() {
+    return sofort;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_SOFORT)
+  @JsonProperty(JSON_PROPERTY_SOFORT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setSofort(@javax.annotation.Nonnull BankRedirectDataOneOf13Sofort sofort) {
-            this.sofort = sofort;
-        }
+    this.sofort = sofort;
+  }
 
-        public BankRedirectData trustly(@javax.annotation.Nonnull BankRedirectDataOneOf14Trustly trustly) {
-        
-        this.trustly = trustly;
-        return this;
-        }
+  public BankRedirectData trustly(@javax.annotation.Nonnull BankRedirectDataOneOf14Trustly trustly) {
+    
+    this.trustly = trustly;
+    return this;
+  }
 
-    /**
-        * Get trustly
-    * @return trustly
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_TRUSTLY)
+  /**
+   * Get trustly
+   * @return trustly
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_TRUSTLY)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public BankRedirectDataOneOf14Trustly getTrustly() {
-        return trustly;
-    }
+  public BankRedirectDataOneOf14Trustly getTrustly() {
+    return trustly;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_TRUSTLY)
+  @JsonProperty(JSON_PROPERTY_TRUSTLY)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setTrustly(@javax.annotation.Nonnull BankRedirectDataOneOf14Trustly trustly) {
-            this.trustly = trustly;
-        }
+    this.trustly = trustly;
+  }
 
-        public BankRedirectData onlineBankingFpx(@javax.annotation.Nonnull BankRedirectDataOneOf7OnlineBankingCzechRepublic onlineBankingFpx) {
-        
-        this.onlineBankingFpx = onlineBankingFpx;
-        return this;
-        }
+  public BankRedirectData onlineBankingFpx(@javax.annotation.Nonnull BankRedirectDataOneOf7OnlineBankingCzechRepublic onlineBankingFpx) {
+    
+    this.onlineBankingFpx = onlineBankingFpx;
+    return this;
+  }
 
-    /**
-        * Get onlineBankingFpx
-    * @return onlineBankingFpx
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_ONLINE_BANKING_FPX)
+  /**
+   * Get onlineBankingFpx
+   * @return onlineBankingFpx
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_ONLINE_BANKING_FPX)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public BankRedirectDataOneOf7OnlineBankingCzechRepublic getOnlineBankingFpx() {
-        return onlineBankingFpx;
-    }
+  public BankRedirectDataOneOf7OnlineBankingCzechRepublic getOnlineBankingFpx() {
+    return onlineBankingFpx;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_ONLINE_BANKING_FPX)
+  @JsonProperty(JSON_PROPERTY_ONLINE_BANKING_FPX)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setOnlineBankingFpx(@javax.annotation.Nonnull BankRedirectDataOneOf7OnlineBankingCzechRepublic onlineBankingFpx) {
-            this.onlineBankingFpx = onlineBankingFpx;
-        }
+    this.onlineBankingFpx = onlineBankingFpx;
+  }
 
-        public BankRedirectData onlineBankingThailand(@javax.annotation.Nonnull BankRedirectDataOneOf7OnlineBankingCzechRepublic onlineBankingThailand) {
-        
-        this.onlineBankingThailand = onlineBankingThailand;
-        return this;
-        }
+  public BankRedirectData onlineBankingThailand(@javax.annotation.Nonnull BankRedirectDataOneOf7OnlineBankingCzechRepublic onlineBankingThailand) {
+    
+    this.onlineBankingThailand = onlineBankingThailand;
+    return this;
+  }
 
-    /**
-        * Get onlineBankingThailand
-    * @return onlineBankingThailand
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_ONLINE_BANKING_THAILAND)
+  /**
+   * Get onlineBankingThailand
+   * @return onlineBankingThailand
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_ONLINE_BANKING_THAILAND)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public BankRedirectDataOneOf7OnlineBankingCzechRepublic getOnlineBankingThailand() {
-        return onlineBankingThailand;
-    }
+  public BankRedirectDataOneOf7OnlineBankingCzechRepublic getOnlineBankingThailand() {
+    return onlineBankingThailand;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_ONLINE_BANKING_THAILAND)
+  @JsonProperty(JSON_PROPERTY_ONLINE_BANKING_THAILAND)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setOnlineBankingThailand(@javax.annotation.Nonnull BankRedirectDataOneOf7OnlineBankingCzechRepublic onlineBankingThailand) {
-            this.onlineBankingThailand = onlineBankingThailand;
-        }
+    this.onlineBankingThailand = onlineBankingThailand;
+  }
 
-        public BankRedirectData localBankRedirect(@javax.annotation.Nonnull Object localBankRedirect) {
-        
-        this.localBankRedirect = localBankRedirect;
-        return this;
-        }
+  public BankRedirectData localBankRedirect(@javax.annotation.Nonnull Object localBankRedirect) {
+    
+    this.localBankRedirect = localBankRedirect;
+    return this;
+  }
 
-    /**
-        * Get localBankRedirect
-    * @return localBankRedirect
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_LOCAL_BANK_REDIRECT)
+  /**
+   * Get localBankRedirect
+   * @return localBankRedirect
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_LOCAL_BANK_REDIRECT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public Object getLocalBankRedirect() {
-        return localBankRedirect;
-    }
+  public Object getLocalBankRedirect() {
+    return localBankRedirect;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_LOCAL_BANK_REDIRECT)
+  @JsonProperty(JSON_PROPERTY_LOCAL_BANK_REDIRECT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setLocalBankRedirect(@javax.annotation.Nonnull Object localBankRedirect) {
-            this.localBankRedirect = localBankRedirect;
-        }
+    this.localBankRedirect = localBankRedirect;
+  }
 
-@Override
-public boolean equals(Object o) {
+  @Override
+  public boolean equals(Object o) {
     if (this == o) {
-    return true;
+      return true;
     }
     if (o == null || getClass() != o.getClass()) {
-    return false;
+      return false;
     }
-        BankRedirectData bankRedirectData = (BankRedirectData) o;
-        return Objects.equals(this.bancontactCard, bankRedirectData.bancontactCard) &&
+    BankRedirectData bankRedirectData = (BankRedirectData) o;
+    return Objects.equals(this.bancontactCard, bankRedirectData.bancontactCard) &&
         Objects.equals(this.bizum, bankRedirectData.bizum) &&
         Objects.equals(this.blik, bankRedirectData.blik) &&
         Objects.equals(this.eps, bankRedirectData.eps) &&
@@ -632,184 +632,184 @@ public boolean equals(Object o) {
         Objects.equals(this.onlineBankingFpx, bankRedirectData.onlineBankingFpx) &&
         Objects.equals(this.onlineBankingThailand, bankRedirectData.onlineBankingThailand) &&
         Objects.equals(this.localBankRedirect, bankRedirectData.localBankRedirect);
-}
+  }
 
-    @Override
-    public int hashCode() {
-        return Objects.hash(bancontactCard, bizum, blik, eps, giropay, ideal, interac, onlineBankingCzechRepublic, onlineBankingFinland, onlineBankingPoland, onlineBankingSlovakia, openBankingUk, przelewy24, sofort, trustly, onlineBankingFpx, onlineBankingThailand, localBankRedirect);
-    }
+  @Override
+  public int hashCode() {
+    return Objects.hash(bancontactCard, bizum, blik, eps, giropay, ideal, interac, onlineBankingCzechRepublic, onlineBankingFinland, onlineBankingPoland, onlineBankingSlovakia, openBankingUk, przelewy24, sofort, trustly, onlineBankingFpx, onlineBankingThailand, localBankRedirect);
+  }
 
-    @Override
-    public String toString() {
+  @Override
+  public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class BankRedirectData {\n");
-        sb.append("    bancontactCard: ").append(toIndentedString(bancontactCard)).append("\n");
-        sb.append("    bizum: ").append(toIndentedString(bizum)).append("\n");
-        sb.append("    blik: ").append(toIndentedString(blik)).append("\n");
-        sb.append("    eps: ").append(toIndentedString(eps)).append("\n");
-        sb.append("    giropay: ").append(toIndentedString(giropay)).append("\n");
-        sb.append("    ideal: ").append(toIndentedString(ideal)).append("\n");
-        sb.append("    interac: ").append(toIndentedString(interac)).append("\n");
-        sb.append("    onlineBankingCzechRepublic: ").append(toIndentedString(onlineBankingCzechRepublic)).append("\n");
-        sb.append("    onlineBankingFinland: ").append(toIndentedString(onlineBankingFinland)).append("\n");
-        sb.append("    onlineBankingPoland: ").append(toIndentedString(onlineBankingPoland)).append("\n");
-        sb.append("    onlineBankingSlovakia: ").append(toIndentedString(onlineBankingSlovakia)).append("\n");
-        sb.append("    openBankingUk: ").append(toIndentedString(openBankingUk)).append("\n");
-        sb.append("    przelewy24: ").append(toIndentedString(przelewy24)).append("\n");
-        sb.append("    sofort: ").append(toIndentedString(sofort)).append("\n");
-        sb.append("    trustly: ").append(toIndentedString(trustly)).append("\n");
-        sb.append("    onlineBankingFpx: ").append(toIndentedString(onlineBankingFpx)).append("\n");
-        sb.append("    onlineBankingThailand: ").append(toIndentedString(onlineBankingThailand)).append("\n");
-        sb.append("    localBankRedirect: ").append(toIndentedString(localBankRedirect)).append("\n");
+    sb.append("    bancontactCard: ").append(toIndentedString(bancontactCard)).append("\n");
+    sb.append("    bizum: ").append(toIndentedString(bizum)).append("\n");
+    sb.append("    blik: ").append(toIndentedString(blik)).append("\n");
+    sb.append("    eps: ").append(toIndentedString(eps)).append("\n");
+    sb.append("    giropay: ").append(toIndentedString(giropay)).append("\n");
+    sb.append("    ideal: ").append(toIndentedString(ideal)).append("\n");
+    sb.append("    interac: ").append(toIndentedString(interac)).append("\n");
+    sb.append("    onlineBankingCzechRepublic: ").append(toIndentedString(onlineBankingCzechRepublic)).append("\n");
+    sb.append("    onlineBankingFinland: ").append(toIndentedString(onlineBankingFinland)).append("\n");
+    sb.append("    onlineBankingPoland: ").append(toIndentedString(onlineBankingPoland)).append("\n");
+    sb.append("    onlineBankingSlovakia: ").append(toIndentedString(onlineBankingSlovakia)).append("\n");
+    sb.append("    openBankingUk: ").append(toIndentedString(openBankingUk)).append("\n");
+    sb.append("    przelewy24: ").append(toIndentedString(przelewy24)).append("\n");
+    sb.append("    sofort: ").append(toIndentedString(sofort)).append("\n");
+    sb.append("    trustly: ").append(toIndentedString(trustly)).append("\n");
+    sb.append("    onlineBankingFpx: ").append(toIndentedString(onlineBankingFpx)).append("\n");
+    sb.append("    onlineBankingThailand: ").append(toIndentedString(onlineBankingThailand)).append("\n");
+    sb.append("    localBankRedirect: ").append(toIndentedString(localBankRedirect)).append("\n");
     sb.append("}");
     return sb.toString();
-    }
+  }
 
-    /**
-    * Convert the given object to string with each line indented by 4 spaces
-    * (except the first line).
-    */
-    private String toIndentedString(Object o) {
+  /**
+   * Convert the given object to string with each line indented by 4 spaces
+   * (except the first line).
+   */
+  private String toIndentedString(Object o) {
     if (o == null) {
-    return "null";
+      return "null";
     }
     return o.toString().replace("\n", "\n    ");
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @return URL query string
+   */
+  public String toUrlQueryString() {
+    return toUrlQueryString(null);
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @param prefix prefix of the query string
+   * @return URL query string
+   */
+  public String toUrlQueryString(String prefix) {
+    String suffix = "";
+    String containerSuffix = "";
+    String containerPrefix = "";
+    if (prefix == null) {
+      // style=form, explode=true, e.g. /pet?name=cat&type=manx
+      prefix = "";
+    } else {
+      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+      prefix = prefix + "[";
+      suffix = "]";
+      containerSuffix = "]";
+      containerPrefix = "[";
     }
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @return URL query string
-        */
-        public String toUrlQueryString() {
-        return toUrlQueryString(null);
-        }
+    StringJoiner joiner = new StringJoiner("&");
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @param prefix prefix of the query string
-        * @return URL query string
-        */
-        public String toUrlQueryString(String prefix) {
-        String suffix = "";
-        String containerSuffix = "";
-        String containerPrefix = "";
-        if (prefix == null) {
-        // style=form, explode=true, e.g. /pet?name=cat&type=manx
-        prefix = "";
-        } else {
-        // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
-        prefix = prefix + "[";
-        suffix = "]";
-        containerSuffix = "]";
-        containerPrefix = "[";
-        }
-
-        StringJoiner joiner = new StringJoiner("&");
-
-            // add `bancontact_card` to the URL query string
-                            if (getBancontactCard() != null) {
-                            joiner.add(getBancontactCard().toUrlQueryString(prefix + "bancontact_card" + suffix));
-                            }
-
-            // add `bizum` to the URL query string
-                        if (getBizum() != null) {
-                        try {
-                        joiner.add(String.format("%sbizum%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getBizum()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-            // add `blik` to the URL query string
-                            if (getBlik() != null) {
-                            joiner.add(getBlik().toUrlQueryString(prefix + "blik" + suffix));
-                            }
-
-            // add `eps` to the URL query string
-                            if (getEps() != null) {
-                            joiner.add(getEps().toUrlQueryString(prefix + "eps" + suffix));
-                            }
-
-            // add `giropay` to the URL query string
-                            if (getGiropay() != null) {
-                            joiner.add(getGiropay().toUrlQueryString(prefix + "giropay" + suffix));
-                            }
-
-            // add `ideal` to the URL query string
-                            if (getIdeal() != null) {
-                            joiner.add(getIdeal().toUrlQueryString(prefix + "ideal" + suffix));
-                            }
-
-            // add `interac` to the URL query string
-                            if (getInterac() != null) {
-                            joiner.add(getInterac().toUrlQueryString(prefix + "interac" + suffix));
-                            }
-
-            // add `online_banking_czech_republic` to the URL query string
-                            if (getOnlineBankingCzechRepublic() != null) {
-                            joiner.add(getOnlineBankingCzechRepublic().toUrlQueryString(prefix + "online_banking_czech_republic" + suffix));
-                            }
-
-            // add `online_banking_finland` to the URL query string
-                            if (getOnlineBankingFinland() != null) {
-                            joiner.add(getOnlineBankingFinland().toUrlQueryString(prefix + "online_banking_finland" + suffix));
-                            }
-
-            // add `online_banking_poland` to the URL query string
-                            if (getOnlineBankingPoland() != null) {
-                            joiner.add(getOnlineBankingPoland().toUrlQueryString(prefix + "online_banking_poland" + suffix));
-                            }
-
-            // add `online_banking_slovakia` to the URL query string
-                            if (getOnlineBankingSlovakia() != null) {
-                            joiner.add(getOnlineBankingSlovakia().toUrlQueryString(prefix + "online_banking_slovakia" + suffix));
-                            }
-
-            // add `open_banking_uk` to the URL query string
-                            if (getOpenBankingUk() != null) {
-                            joiner.add(getOpenBankingUk().toUrlQueryString(prefix + "open_banking_uk" + suffix));
-                            }
-
-            // add `przelewy24` to the URL query string
-                            if (getPrzelewy24() != null) {
-                            joiner.add(getPrzelewy24().toUrlQueryString(prefix + "przelewy24" + suffix));
-                            }
-
-            // add `sofort` to the URL query string
-                            if (getSofort() != null) {
-                            joiner.add(getSofort().toUrlQueryString(prefix + "sofort" + suffix));
-                            }
-
-            // add `trustly` to the URL query string
-                            if (getTrustly() != null) {
-                            joiner.add(getTrustly().toUrlQueryString(prefix + "trustly" + suffix));
-                            }
-
-            // add `online_banking_fpx` to the URL query string
-                            if (getOnlineBankingFpx() != null) {
-                            joiner.add(getOnlineBankingFpx().toUrlQueryString(prefix + "online_banking_fpx" + suffix));
-                            }
-
-            // add `online_banking_thailand` to the URL query string
-                            if (getOnlineBankingThailand() != null) {
-                            joiner.add(getOnlineBankingThailand().toUrlQueryString(prefix + "online_banking_thailand" + suffix));
-                            }
-
-            // add `local_bank_redirect` to the URL query string
-                        if (getLocalBankRedirect() != null) {
-                        try {
-                        joiner.add(String.format("%slocal_bank_redirect%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getLocalBankRedirect()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-        return joiner.toString();
-        }
-
+    // add `bancontact_card` to the URL query string
+    if (getBancontactCard() != null) {
+      joiner.add(getBancontactCard().toUrlQueryString(prefix + "bancontact_card" + suffix));
     }
+
+    // add `bizum` to the URL query string
+    if (getBizum() != null) {
+      try {
+        joiner.add(String.format("%sbizum%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getBizum()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `blik` to the URL query string
+    if (getBlik() != null) {
+      joiner.add(getBlik().toUrlQueryString(prefix + "blik" + suffix));
+    }
+
+    // add `eps` to the URL query string
+    if (getEps() != null) {
+      joiner.add(getEps().toUrlQueryString(prefix + "eps" + suffix));
+    }
+
+    // add `giropay` to the URL query string
+    if (getGiropay() != null) {
+      joiner.add(getGiropay().toUrlQueryString(prefix + "giropay" + suffix));
+    }
+
+    // add `ideal` to the URL query string
+    if (getIdeal() != null) {
+      joiner.add(getIdeal().toUrlQueryString(prefix + "ideal" + suffix));
+    }
+
+    // add `interac` to the URL query string
+    if (getInterac() != null) {
+      joiner.add(getInterac().toUrlQueryString(prefix + "interac" + suffix));
+    }
+
+    // add `online_banking_czech_republic` to the URL query string
+    if (getOnlineBankingCzechRepublic() != null) {
+      joiner.add(getOnlineBankingCzechRepublic().toUrlQueryString(prefix + "online_banking_czech_republic" + suffix));
+    }
+
+    // add `online_banking_finland` to the URL query string
+    if (getOnlineBankingFinland() != null) {
+      joiner.add(getOnlineBankingFinland().toUrlQueryString(prefix + "online_banking_finland" + suffix));
+    }
+
+    // add `online_banking_poland` to the URL query string
+    if (getOnlineBankingPoland() != null) {
+      joiner.add(getOnlineBankingPoland().toUrlQueryString(prefix + "online_banking_poland" + suffix));
+    }
+
+    // add `online_banking_slovakia` to the URL query string
+    if (getOnlineBankingSlovakia() != null) {
+      joiner.add(getOnlineBankingSlovakia().toUrlQueryString(prefix + "online_banking_slovakia" + suffix));
+    }
+
+    // add `open_banking_uk` to the URL query string
+    if (getOpenBankingUk() != null) {
+      joiner.add(getOpenBankingUk().toUrlQueryString(prefix + "open_banking_uk" + suffix));
+    }
+
+    // add `przelewy24` to the URL query string
+    if (getPrzelewy24() != null) {
+      joiner.add(getPrzelewy24().toUrlQueryString(prefix + "przelewy24" + suffix));
+    }
+
+    // add `sofort` to the URL query string
+    if (getSofort() != null) {
+      joiner.add(getSofort().toUrlQueryString(prefix + "sofort" + suffix));
+    }
+
+    // add `trustly` to the URL query string
+    if (getTrustly() != null) {
+      joiner.add(getTrustly().toUrlQueryString(prefix + "trustly" + suffix));
+    }
+
+    // add `online_banking_fpx` to the URL query string
+    if (getOnlineBankingFpx() != null) {
+      joiner.add(getOnlineBankingFpx().toUrlQueryString(prefix + "online_banking_fpx" + suffix));
+    }
+
+    // add `online_banking_thailand` to the URL query string
+    if (getOnlineBankingThailand() != null) {
+      joiner.add(getOnlineBankingThailand().toUrlQueryString(prefix + "online_banking_thailand" + suffix));
+    }
+
+    // add `local_bank_redirect` to the URL query string
+    if (getLocalBankRedirect() != null) {
+      try {
+        joiner.add(String.format("%slocal_bank_redirect%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getLocalBankRedirect()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    return joiner.toString();
+  }
+
+}
 

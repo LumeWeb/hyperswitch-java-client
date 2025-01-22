@@ -27,168 +27,168 @@ import java.net.URLEncoder;
 import java.util.StringJoiner;
 
 /**
-* SecretInfoToInitiateSdk
-*/
-    @JsonPropertyOrder({
-        SecretInfoToInitiateSdk.JSON_PROPERTY_DISPLAY,
-        SecretInfoToInitiateSdk.JSON_PROPERTY_PAYMENT
-    })
+ * SecretInfoToInitiateSdk
+ */
+@JsonPropertyOrder({
+  SecretInfoToInitiateSdk.JSON_PROPERTY_DISPLAY,
+  SecretInfoToInitiateSdk.JSON_PROPERTY_PAYMENT
+})
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class SecretInfoToInitiateSdk {
-        public static final String JSON_PROPERTY_DISPLAY = "display";
-    @javax.annotation.Nonnull
-            private String display;
+  public static final String JSON_PROPERTY_DISPLAY = "display";
+  @javax.annotation.Nonnull
+  private String display;
 
-        public static final String JSON_PROPERTY_PAYMENT = "payment";
-    @javax.annotation.Nonnull
-            private String payment;
+  public static final String JSON_PROPERTY_PAYMENT = "payment";
+  @javax.annotation.Nonnull
+  private String payment;
 
-public SecretInfoToInitiateSdk() {
-}
+  public SecretInfoToInitiateSdk() {
+  }
 
-        public SecretInfoToInitiateSdk display(@javax.annotation.Nonnull String display) {
-        
-        this.display = display;
-        return this;
-        }
+  public SecretInfoToInitiateSdk display(@javax.annotation.Nonnull String display) {
+    
+    this.display = display;
+    return this;
+  }
 
-    /**
-        * Get display
-    * @return display
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_DISPLAY)
+  /**
+   * Get display
+   * @return display
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_DISPLAY)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public String getDisplay() {
-        return display;
-    }
+  public String getDisplay() {
+    return display;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_DISPLAY)
+  @JsonProperty(JSON_PROPERTY_DISPLAY)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setDisplay(@javax.annotation.Nonnull String display) {
-            this.display = display;
-        }
+    this.display = display;
+  }
 
-        public SecretInfoToInitiateSdk payment(@javax.annotation.Nonnull String payment) {
-        
-        this.payment = payment;
-        return this;
-        }
+  public SecretInfoToInitiateSdk payment(@javax.annotation.Nonnull String payment) {
+    
+    this.payment = payment;
+    return this;
+  }
 
-    /**
-        * Get payment
-    * @return payment
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_PAYMENT)
+  /**
+   * Get payment
+   * @return payment
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_PAYMENT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public String getPayment() {
-        return payment;
-    }
+  public String getPayment() {
+    return payment;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_PAYMENT)
+  @JsonProperty(JSON_PROPERTY_PAYMENT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setPayment(@javax.annotation.Nonnull String payment) {
-            this.payment = payment;
-        }
+    this.payment = payment;
+  }
 
-@Override
-public boolean equals(Object o) {
+  @Override
+  public boolean equals(Object o) {
     if (this == o) {
-    return true;
+      return true;
     }
     if (o == null || getClass() != o.getClass()) {
-    return false;
+      return false;
     }
-        SecretInfoToInitiateSdk secretInfoToInitiateSdk = (SecretInfoToInitiateSdk) o;
-        return Objects.equals(this.display, secretInfoToInitiateSdk.display) &&
+    SecretInfoToInitiateSdk secretInfoToInitiateSdk = (SecretInfoToInitiateSdk) o;
+    return Objects.equals(this.display, secretInfoToInitiateSdk.display) &&
         Objects.equals(this.payment, secretInfoToInitiateSdk.payment);
-}
+  }
 
-    @Override
-    public int hashCode() {
-        return Objects.hash(display, payment);
-    }
+  @Override
+  public int hashCode() {
+    return Objects.hash(display, payment);
+  }
 
-    @Override
-    public String toString() {
+  @Override
+  public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class SecretInfoToInitiateSdk {\n");
-        sb.append("    display: ").append(toIndentedString(display)).append("\n");
-        sb.append("    payment: ").append(toIndentedString(payment)).append("\n");
+    sb.append("    display: ").append(toIndentedString(display)).append("\n");
+    sb.append("    payment: ").append(toIndentedString(payment)).append("\n");
     sb.append("}");
     return sb.toString();
-    }
+  }
 
-    /**
-    * Convert the given object to string with each line indented by 4 spaces
-    * (except the first line).
-    */
-    private String toIndentedString(Object o) {
+  /**
+   * Convert the given object to string with each line indented by 4 spaces
+   * (except the first line).
+   */
+  private String toIndentedString(Object o) {
     if (o == null) {
-    return "null";
+      return "null";
     }
     return o.toString().replace("\n", "\n    ");
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @return URL query string
+   */
+  public String toUrlQueryString() {
+    return toUrlQueryString(null);
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @param prefix prefix of the query string
+   * @return URL query string
+   */
+  public String toUrlQueryString(String prefix) {
+    String suffix = "";
+    String containerSuffix = "";
+    String containerPrefix = "";
+    if (prefix == null) {
+      // style=form, explode=true, e.g. /pet?name=cat&type=manx
+      prefix = "";
+    } else {
+      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+      prefix = prefix + "[";
+      suffix = "]";
+      containerSuffix = "]";
+      containerPrefix = "[";
     }
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @return URL query string
-        */
-        public String toUrlQueryString() {
-        return toUrlQueryString(null);
-        }
+    StringJoiner joiner = new StringJoiner("&");
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @param prefix prefix of the query string
-        * @return URL query string
-        */
-        public String toUrlQueryString(String prefix) {
-        String suffix = "";
-        String containerSuffix = "";
-        String containerPrefix = "";
-        if (prefix == null) {
-        // style=form, explode=true, e.g. /pet?name=cat&type=manx
-        prefix = "";
-        } else {
-        // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
-        prefix = prefix + "[";
-        suffix = "]";
-        containerSuffix = "]";
-        containerPrefix = "[";
-        }
-
-        StringJoiner joiner = new StringJoiner("&");
-
-            // add `display` to the URL query string
-                        if (getDisplay() != null) {
-                        try {
-                        joiner.add(String.format("%sdisplay%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getDisplay()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-            // add `payment` to the URL query string
-                        if (getPayment() != null) {
-                        try {
-                        joiner.add(String.format("%spayment%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getPayment()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-        return joiner.toString();
-        }
-
+    // add `display` to the URL query string
+    if (getDisplay() != null) {
+      try {
+        joiner.add(String.format("%sdisplay%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getDisplay()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
     }
+
+    // add `payment` to the URL query string
+    if (getPayment() != null) {
+      try {
+        joiner.add(String.format("%spayment%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getPayment()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    return joiner.toString();
+  }
+
+}
 

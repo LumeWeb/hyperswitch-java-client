@@ -27,127 +27,127 @@ import java.net.URLEncoder;
 import java.util.StringJoiner;
 
 /**
-* BankRedirectDataOneOf17
-*/
-    @JsonPropertyOrder({
-        BankRedirectDataOneOf17.JSON_PROPERTY_LOCAL_BANK_REDIRECT
-    })
-            @JsonTypeName("BankRedirectData_oneOf_17")
+ * BankRedirectDataOneOf17
+ */
+@JsonPropertyOrder({
+  BankRedirectDataOneOf17.JSON_PROPERTY_LOCAL_BANK_REDIRECT
+})
+@JsonTypeName("BankRedirectData_oneOf_17")
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class BankRedirectDataOneOf17 {
-        public static final String JSON_PROPERTY_LOCAL_BANK_REDIRECT = "local_bank_redirect";
-    @javax.annotation.Nonnull
-            private Object localBankRedirect;
+  public static final String JSON_PROPERTY_LOCAL_BANK_REDIRECT = "local_bank_redirect";
+  @javax.annotation.Nonnull
+  private Object localBankRedirect;
 
-public BankRedirectDataOneOf17() {
-}
+  public BankRedirectDataOneOf17() {
+  }
 
-        public BankRedirectDataOneOf17 localBankRedirect(@javax.annotation.Nonnull Object localBankRedirect) {
-        
-        this.localBankRedirect = localBankRedirect;
-        return this;
-        }
+  public BankRedirectDataOneOf17 localBankRedirect(@javax.annotation.Nonnull Object localBankRedirect) {
+    
+    this.localBankRedirect = localBankRedirect;
+    return this;
+  }
 
-    /**
-        * Get localBankRedirect
-    * @return localBankRedirect
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_LOCAL_BANK_REDIRECT)
+  /**
+   * Get localBankRedirect
+   * @return localBankRedirect
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_LOCAL_BANK_REDIRECT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public Object getLocalBankRedirect() {
-        return localBankRedirect;
-    }
+  public Object getLocalBankRedirect() {
+    return localBankRedirect;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_LOCAL_BANK_REDIRECT)
+  @JsonProperty(JSON_PROPERTY_LOCAL_BANK_REDIRECT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setLocalBankRedirect(@javax.annotation.Nonnull Object localBankRedirect) {
-            this.localBankRedirect = localBankRedirect;
-        }
+    this.localBankRedirect = localBankRedirect;
+  }
 
-@Override
-public boolean equals(Object o) {
+  @Override
+  public boolean equals(Object o) {
     if (this == o) {
-    return true;
+      return true;
     }
     if (o == null || getClass() != o.getClass()) {
-    return false;
+      return false;
     }
-        BankRedirectDataOneOf17 bankRedirectDataOneOf17 = (BankRedirectDataOneOf17) o;
-        return Objects.equals(this.localBankRedirect, bankRedirectDataOneOf17.localBankRedirect);
-}
+    BankRedirectDataOneOf17 bankRedirectDataOneOf17 = (BankRedirectDataOneOf17) o;
+    return Objects.equals(this.localBankRedirect, bankRedirectDataOneOf17.localBankRedirect);
+  }
 
-    @Override
-    public int hashCode() {
-        return Objects.hash(localBankRedirect);
-    }
+  @Override
+  public int hashCode() {
+    return Objects.hash(localBankRedirect);
+  }
 
-    @Override
-    public String toString() {
+  @Override
+  public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class BankRedirectDataOneOf17 {\n");
-        sb.append("    localBankRedirect: ").append(toIndentedString(localBankRedirect)).append("\n");
+    sb.append("    localBankRedirect: ").append(toIndentedString(localBankRedirect)).append("\n");
     sb.append("}");
     return sb.toString();
-    }
+  }
 
-    /**
-    * Convert the given object to string with each line indented by 4 spaces
-    * (except the first line).
-    */
-    private String toIndentedString(Object o) {
+  /**
+   * Convert the given object to string with each line indented by 4 spaces
+   * (except the first line).
+   */
+  private String toIndentedString(Object o) {
     if (o == null) {
-    return "null";
+      return "null";
     }
     return o.toString().replace("\n", "\n    ");
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @return URL query string
+   */
+  public String toUrlQueryString() {
+    return toUrlQueryString(null);
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @param prefix prefix of the query string
+   * @return URL query string
+   */
+  public String toUrlQueryString(String prefix) {
+    String suffix = "";
+    String containerSuffix = "";
+    String containerPrefix = "";
+    if (prefix == null) {
+      // style=form, explode=true, e.g. /pet?name=cat&type=manx
+      prefix = "";
+    } else {
+      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+      prefix = prefix + "[";
+      suffix = "]";
+      containerSuffix = "]";
+      containerPrefix = "[";
     }
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @return URL query string
-        */
-        public String toUrlQueryString() {
-        return toUrlQueryString(null);
-        }
+    StringJoiner joiner = new StringJoiner("&");
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @param prefix prefix of the query string
-        * @return URL query string
-        */
-        public String toUrlQueryString(String prefix) {
-        String suffix = "";
-        String containerSuffix = "";
-        String containerPrefix = "";
-        if (prefix == null) {
-        // style=form, explode=true, e.g. /pet?name=cat&type=manx
-        prefix = "";
-        } else {
-        // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
-        prefix = prefix + "[";
-        suffix = "]";
-        containerSuffix = "]";
-        containerPrefix = "[";
-        }
-
-        StringJoiner joiner = new StringJoiner("&");
-
-            // add `local_bank_redirect` to the URL query string
-                        if (getLocalBankRedirect() != null) {
-                        try {
-                        joiner.add(String.format("%slocal_bank_redirect%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getLocalBankRedirect()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-        return joiner.toString();
-        }
-
+    // add `local_bank_redirect` to the URL query string
+    if (getLocalBankRedirect() != null) {
+      try {
+        joiner.add(String.format("%slocal_bank_redirect%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getLocalBankRedirect()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
     }
+
+    return joiner.toString();
+  }
+
+}
 

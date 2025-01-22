@@ -27,20 +27,20 @@ import java.net.URLEncoder;
 import java.util.StringJoiner;
 
 /**
-* Contains url to fetch Qr code data
-*/
-    @JsonPropertyOrder({
-        NextActionDataOneOf4.JSON_PROPERTY_QR_CODE_FETCH_URL,
-        NextActionDataOneOf4.JSON_PROPERTY_TYPE
-    })
-            @JsonTypeName("NextActionData_oneOf_4")
+ * Contains url to fetch Qr code data
+ */
+@JsonPropertyOrder({
+  NextActionDataOneOf4.JSON_PROPERTY_QR_CODE_FETCH_URL,
+  NextActionDataOneOf4.JSON_PROPERTY_TYPE
+})
+@JsonTypeName("NextActionData_oneOf_4")
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class NextActionDataOneOf4 {
-        public static final String JSON_PROPERTY_QR_CODE_FETCH_URL = "qr_code_fetch_url";
-    @javax.annotation.Nonnull
-            private String qrCodeFetchUrl;
+  public static final String JSON_PROPERTY_QR_CODE_FETCH_URL = "qr_code_fetch_url";
+  @javax.annotation.Nonnull
+  private String qrCodeFetchUrl;
 
-              /**
+  /**
    * Gets or Sets type
    */
   public enum TypeEnum {
@@ -73,156 +73,156 @@ public class NextActionDataOneOf4 {
     }
   }
 
-        public static final String JSON_PROPERTY_TYPE = "type";
-    @javax.annotation.Nonnull
-            private TypeEnum type;
+  public static final String JSON_PROPERTY_TYPE = "type";
+  @javax.annotation.Nonnull
+  private TypeEnum type;
 
-public NextActionDataOneOf4() {
-}
+  public NextActionDataOneOf4() {
+  }
 
-        public NextActionDataOneOf4 qrCodeFetchUrl(@javax.annotation.Nonnull String qrCodeFetchUrl) {
-        
-        this.qrCodeFetchUrl = qrCodeFetchUrl;
-        return this;
-        }
+  public NextActionDataOneOf4 qrCodeFetchUrl(@javax.annotation.Nonnull String qrCodeFetchUrl) {
+    
+    this.qrCodeFetchUrl = qrCodeFetchUrl;
+    return this;
+  }
 
-    /**
-        * Get qrCodeFetchUrl
-    * @return qrCodeFetchUrl
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_QR_CODE_FETCH_URL)
+  /**
+   * Get qrCodeFetchUrl
+   * @return qrCodeFetchUrl
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_QR_CODE_FETCH_URL)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public String getQrCodeFetchUrl() {
-        return qrCodeFetchUrl;
-    }
+  public String getQrCodeFetchUrl() {
+    return qrCodeFetchUrl;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_QR_CODE_FETCH_URL)
+  @JsonProperty(JSON_PROPERTY_QR_CODE_FETCH_URL)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setQrCodeFetchUrl(@javax.annotation.Nonnull String qrCodeFetchUrl) {
-            this.qrCodeFetchUrl = qrCodeFetchUrl;
-        }
+    this.qrCodeFetchUrl = qrCodeFetchUrl;
+  }
 
-        public NextActionDataOneOf4 type(@javax.annotation.Nonnull TypeEnum type) {
-        
-        this.type = type;
-        return this;
-        }
+  public NextActionDataOneOf4 type(@javax.annotation.Nonnull TypeEnum type) {
+    
+    this.type = type;
+    return this;
+  }
 
-    /**
-        * Get type
-    * @return type
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_TYPE)
+  /**
+   * Get type
+   * @return type
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_TYPE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public TypeEnum getType() {
-        return type;
-    }
+  public TypeEnum getType() {
+    return type;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_TYPE)
+  @JsonProperty(JSON_PROPERTY_TYPE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setType(@javax.annotation.Nonnull TypeEnum type) {
-            this.type = type;
-        }
+    this.type = type;
+  }
 
-@Override
-public boolean equals(Object o) {
+  @Override
+  public boolean equals(Object o) {
     if (this == o) {
-    return true;
+      return true;
     }
     if (o == null || getClass() != o.getClass()) {
-    return false;
+      return false;
     }
-        NextActionDataOneOf4 nextActionDataOneOf4 = (NextActionDataOneOf4) o;
-        return Objects.equals(this.qrCodeFetchUrl, nextActionDataOneOf4.qrCodeFetchUrl) &&
+    NextActionDataOneOf4 nextActionDataOneOf4 = (NextActionDataOneOf4) o;
+    return Objects.equals(this.qrCodeFetchUrl, nextActionDataOneOf4.qrCodeFetchUrl) &&
         Objects.equals(this.type, nextActionDataOneOf4.type);
-}
+  }
 
-    @Override
-    public int hashCode() {
-        return Objects.hash(qrCodeFetchUrl, type);
-    }
+  @Override
+  public int hashCode() {
+    return Objects.hash(qrCodeFetchUrl, type);
+  }
 
-    @Override
-    public String toString() {
+  @Override
+  public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class NextActionDataOneOf4 {\n");
-        sb.append("    qrCodeFetchUrl: ").append(toIndentedString(qrCodeFetchUrl)).append("\n");
-        sb.append("    type: ").append(toIndentedString(type)).append("\n");
+    sb.append("    qrCodeFetchUrl: ").append(toIndentedString(qrCodeFetchUrl)).append("\n");
+    sb.append("    type: ").append(toIndentedString(type)).append("\n");
     sb.append("}");
     return sb.toString();
-    }
+  }
 
-    /**
-    * Convert the given object to string with each line indented by 4 spaces
-    * (except the first line).
-    */
-    private String toIndentedString(Object o) {
+  /**
+   * Convert the given object to string with each line indented by 4 spaces
+   * (except the first line).
+   */
+  private String toIndentedString(Object o) {
     if (o == null) {
-    return "null";
+      return "null";
     }
     return o.toString().replace("\n", "\n    ");
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @return URL query string
+   */
+  public String toUrlQueryString() {
+    return toUrlQueryString(null);
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @param prefix prefix of the query string
+   * @return URL query string
+   */
+  public String toUrlQueryString(String prefix) {
+    String suffix = "";
+    String containerSuffix = "";
+    String containerPrefix = "";
+    if (prefix == null) {
+      // style=form, explode=true, e.g. /pet?name=cat&type=manx
+      prefix = "";
+    } else {
+      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+      prefix = prefix + "[";
+      suffix = "]";
+      containerSuffix = "]";
+      containerPrefix = "[";
     }
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @return URL query string
-        */
-        public String toUrlQueryString() {
-        return toUrlQueryString(null);
-        }
+    StringJoiner joiner = new StringJoiner("&");
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @param prefix prefix of the query string
-        * @return URL query string
-        */
-        public String toUrlQueryString(String prefix) {
-        String suffix = "";
-        String containerSuffix = "";
-        String containerPrefix = "";
-        if (prefix == null) {
-        // style=form, explode=true, e.g. /pet?name=cat&type=manx
-        prefix = "";
-        } else {
-        // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
-        prefix = prefix + "[";
-        suffix = "]";
-        containerSuffix = "]";
-        containerPrefix = "[";
-        }
-
-        StringJoiner joiner = new StringJoiner("&");
-
-            // add `qr_code_fetch_url` to the URL query string
-                        if (getQrCodeFetchUrl() != null) {
-                        try {
-                        joiner.add(String.format("%sqr_code_fetch_url%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getQrCodeFetchUrl()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-            // add `type` to the URL query string
-                        if (getType() != null) {
-                        try {
-                        joiner.add(String.format("%stype%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getType()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-        return joiner.toString();
-        }
-
+    // add `qr_code_fetch_url` to the URL query string
+    if (getQrCodeFetchUrl() != null) {
+      try {
+        joiner.add(String.format("%sqr_code_fetch_url%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getQrCodeFetchUrl()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
     }
+
+    // add `type` to the URL query string
+    if (getType() != null) {
+      try {
+        joiner.add(String.format("%stype%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getType()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    return joiner.toString();
+  }
+
+}
 

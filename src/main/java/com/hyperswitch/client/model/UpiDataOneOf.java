@@ -28,122 +28,122 @@ import java.net.URLEncoder;
 import java.util.StringJoiner;
 
 /**
-* UpiDataOneOf
-*/
-    @JsonPropertyOrder({
-        UpiDataOneOf.JSON_PROPERTY_UPI_COLLECT
-    })
-            @JsonTypeName("UpiData_oneOf")
+ * UpiDataOneOf
+ */
+@JsonPropertyOrder({
+  UpiDataOneOf.JSON_PROPERTY_UPI_COLLECT
+})
+@JsonTypeName("UpiData_oneOf")
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class UpiDataOneOf {
-        public static final String JSON_PROPERTY_UPI_COLLECT = "upi_collect";
-    @javax.annotation.Nonnull
-            private UpiCollectData upiCollect;
+  public static final String JSON_PROPERTY_UPI_COLLECT = "upi_collect";
+  @javax.annotation.Nonnull
+  private UpiCollectData upiCollect;
 
-public UpiDataOneOf() {
-}
+  public UpiDataOneOf() {
+  }
 
-        public UpiDataOneOf upiCollect(@javax.annotation.Nonnull UpiCollectData upiCollect) {
-        
-        this.upiCollect = upiCollect;
-        return this;
-        }
+  public UpiDataOneOf upiCollect(@javax.annotation.Nonnull UpiCollectData upiCollect) {
+    
+    this.upiCollect = upiCollect;
+    return this;
+  }
 
-    /**
-        * Get upiCollect
-    * @return upiCollect
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_UPI_COLLECT)
+  /**
+   * Get upiCollect
+   * @return upiCollect
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_UPI_COLLECT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public UpiCollectData getUpiCollect() {
-        return upiCollect;
-    }
+  public UpiCollectData getUpiCollect() {
+    return upiCollect;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_UPI_COLLECT)
+  @JsonProperty(JSON_PROPERTY_UPI_COLLECT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setUpiCollect(@javax.annotation.Nonnull UpiCollectData upiCollect) {
-            this.upiCollect = upiCollect;
-        }
+    this.upiCollect = upiCollect;
+  }
 
-@Override
-public boolean equals(Object o) {
+  @Override
+  public boolean equals(Object o) {
     if (this == o) {
-    return true;
+      return true;
     }
     if (o == null || getClass() != o.getClass()) {
-    return false;
+      return false;
     }
-        UpiDataOneOf upiDataOneOf = (UpiDataOneOf) o;
-        return Objects.equals(this.upiCollect, upiDataOneOf.upiCollect);
-}
+    UpiDataOneOf upiDataOneOf = (UpiDataOneOf) o;
+    return Objects.equals(this.upiCollect, upiDataOneOf.upiCollect);
+  }
 
-    @Override
-    public int hashCode() {
-        return Objects.hash(upiCollect);
-    }
+  @Override
+  public int hashCode() {
+    return Objects.hash(upiCollect);
+  }
 
-    @Override
-    public String toString() {
+  @Override
+  public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class UpiDataOneOf {\n");
-        sb.append("    upiCollect: ").append(toIndentedString(upiCollect)).append("\n");
+    sb.append("    upiCollect: ").append(toIndentedString(upiCollect)).append("\n");
     sb.append("}");
     return sb.toString();
-    }
+  }
 
-    /**
-    * Convert the given object to string with each line indented by 4 spaces
-    * (except the first line).
-    */
-    private String toIndentedString(Object o) {
+  /**
+   * Convert the given object to string with each line indented by 4 spaces
+   * (except the first line).
+   */
+  private String toIndentedString(Object o) {
     if (o == null) {
-    return "null";
+      return "null";
     }
     return o.toString().replace("\n", "\n    ");
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @return URL query string
+   */
+  public String toUrlQueryString() {
+    return toUrlQueryString(null);
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @param prefix prefix of the query string
+   * @return URL query string
+   */
+  public String toUrlQueryString(String prefix) {
+    String suffix = "";
+    String containerSuffix = "";
+    String containerPrefix = "";
+    if (prefix == null) {
+      // style=form, explode=true, e.g. /pet?name=cat&type=manx
+      prefix = "";
+    } else {
+      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+      prefix = prefix + "[";
+      suffix = "]";
+      containerSuffix = "]";
+      containerPrefix = "[";
     }
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @return URL query string
-        */
-        public String toUrlQueryString() {
-        return toUrlQueryString(null);
-        }
+    StringJoiner joiner = new StringJoiner("&");
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @param prefix prefix of the query string
-        * @return URL query string
-        */
-        public String toUrlQueryString(String prefix) {
-        String suffix = "";
-        String containerSuffix = "";
-        String containerPrefix = "";
-        if (prefix == null) {
-        // style=form, explode=true, e.g. /pet?name=cat&type=manx
-        prefix = "";
-        } else {
-        // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
-        prefix = prefix + "[";
-        suffix = "]";
-        containerSuffix = "]";
-        containerPrefix = "[";
-        }
-
-        StringJoiner joiner = new StringJoiner("&");
-
-            // add `upi_collect` to the URL query string
-                            if (getUpiCollect() != null) {
-                            joiner.add(getUpiCollect().toUrlQueryString(prefix + "upi_collect" + suffix));
-                            }
-
-        return joiner.toString();
-        }
-
+    // add `upi_collect` to the URL query string
+    if (getUpiCollect() != null) {
+      joiner.add(getUpiCollect().toUrlQueryString(prefix + "upi_collect" + suffix));
     }
+
+    return joiner.toString();
+  }
+
+}
 

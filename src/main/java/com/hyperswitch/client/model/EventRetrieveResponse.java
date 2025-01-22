@@ -37,393 +37,393 @@ import java.net.URLEncoder;
 import java.util.StringJoiner;
 
 /**
-* The response body for retrieving an event.
-*/
-    @JsonPropertyOrder({
-        EventRetrieveResponse.JSON_PROPERTY_EVENT_ID,
-        EventRetrieveResponse.JSON_PROPERTY_MERCHANT_ID,
-        EventRetrieveResponse.JSON_PROPERTY_PROFILE_ID,
-        EventRetrieveResponse.JSON_PROPERTY_OBJECT_ID,
-        EventRetrieveResponse.JSON_PROPERTY_EVENT_TYPE,
-        EventRetrieveResponse.JSON_PROPERTY_EVENT_CLASS,
-        EventRetrieveResponse.JSON_PROPERTY_IS_DELIVERY_SUCCESSFUL,
-        EventRetrieveResponse.JSON_PROPERTY_INITIAL_ATTEMPT_ID,
-        EventRetrieveResponse.JSON_PROPERTY_CREATED,
-        EventRetrieveResponse.JSON_PROPERTY_REQUEST,
-        EventRetrieveResponse.JSON_PROPERTY_RESPONSE,
-        EventRetrieveResponse.JSON_PROPERTY_DELIVERY_ATTEMPT
-    })
+ * The response body for retrieving an event.
+ */
+@JsonPropertyOrder({
+  EventRetrieveResponse.JSON_PROPERTY_EVENT_ID,
+  EventRetrieveResponse.JSON_PROPERTY_MERCHANT_ID,
+  EventRetrieveResponse.JSON_PROPERTY_PROFILE_ID,
+  EventRetrieveResponse.JSON_PROPERTY_OBJECT_ID,
+  EventRetrieveResponse.JSON_PROPERTY_EVENT_TYPE,
+  EventRetrieveResponse.JSON_PROPERTY_EVENT_CLASS,
+  EventRetrieveResponse.JSON_PROPERTY_IS_DELIVERY_SUCCESSFUL,
+  EventRetrieveResponse.JSON_PROPERTY_INITIAL_ATTEMPT_ID,
+  EventRetrieveResponse.JSON_PROPERTY_CREATED,
+  EventRetrieveResponse.JSON_PROPERTY_REQUEST,
+  EventRetrieveResponse.JSON_PROPERTY_RESPONSE,
+  EventRetrieveResponse.JSON_PROPERTY_DELIVERY_ATTEMPT
+})
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class EventRetrieveResponse {
-        public static final String JSON_PROPERTY_EVENT_ID = "event_id";
-    @javax.annotation.Nonnull
-            private String eventId;
+  public static final String JSON_PROPERTY_EVENT_ID = "event_id";
+  @javax.annotation.Nonnull
+  private String eventId;
 
-        public static final String JSON_PROPERTY_MERCHANT_ID = "merchant_id";
-    @javax.annotation.Nonnull
-            private String merchantId;
+  public static final String JSON_PROPERTY_MERCHANT_ID = "merchant_id";
+  @javax.annotation.Nonnull
+  private String merchantId;
 
-        public static final String JSON_PROPERTY_PROFILE_ID = "profile_id";
-    @javax.annotation.Nonnull
-            private String profileId;
+  public static final String JSON_PROPERTY_PROFILE_ID = "profile_id";
+  @javax.annotation.Nonnull
+  private String profileId;
 
-        public static final String JSON_PROPERTY_OBJECT_ID = "object_id";
-    @javax.annotation.Nonnull
-            private String objectId;
+  public static final String JSON_PROPERTY_OBJECT_ID = "object_id";
+  @javax.annotation.Nonnull
+  private String objectId;
 
-        public static final String JSON_PROPERTY_EVENT_TYPE = "event_type";
-    @javax.annotation.Nonnull
-            private EventType eventType;
+  public static final String JSON_PROPERTY_EVENT_TYPE = "event_type";
+  @javax.annotation.Nonnull
+  private EventType eventType;
 
-        public static final String JSON_PROPERTY_EVENT_CLASS = "event_class";
-    @javax.annotation.Nonnull
-            private EventClass eventClass;
+  public static final String JSON_PROPERTY_EVENT_CLASS = "event_class";
+  @javax.annotation.Nonnull
+  private EventClass eventClass;
 
-        public static final String JSON_PROPERTY_IS_DELIVERY_SUCCESSFUL = "is_delivery_successful";
-    @javax.annotation.Nonnull
-            private Boolean isDeliverySuccessful;
+  public static final String JSON_PROPERTY_IS_DELIVERY_SUCCESSFUL = "is_delivery_successful";
+  @javax.annotation.Nonnull
+  private Boolean isDeliverySuccessful;
 
-        public static final String JSON_PROPERTY_INITIAL_ATTEMPT_ID = "initial_attempt_id";
-    @javax.annotation.Nonnull
-            private String initialAttemptId;
+  public static final String JSON_PROPERTY_INITIAL_ATTEMPT_ID = "initial_attempt_id";
+  @javax.annotation.Nonnull
+  private String initialAttemptId;
 
-        public static final String JSON_PROPERTY_CREATED = "created";
-    @javax.annotation.Nonnull
-            private OffsetDateTime created;
+  public static final String JSON_PROPERTY_CREATED = "created";
+  @javax.annotation.Nonnull
+  private OffsetDateTime created;
 
-        public static final String JSON_PROPERTY_REQUEST = "request";
-    @javax.annotation.Nonnull
-            private OutgoingWebhookRequestContent request;
+  public static final String JSON_PROPERTY_REQUEST = "request";
+  @javax.annotation.Nonnull
+  private OutgoingWebhookRequestContent request;
 
-        public static final String JSON_PROPERTY_RESPONSE = "response";
-    @javax.annotation.Nonnull
-            private OutgoingWebhookResponseContent response;
+  public static final String JSON_PROPERTY_RESPONSE = "response";
+  @javax.annotation.Nonnull
+  private OutgoingWebhookResponseContent response;
 
-        public static final String JSON_PROPERTY_DELIVERY_ATTEMPT = "delivery_attempt";
-    @javax.annotation.Nullable
-            private JsonNullable<WebhookDeliveryAttempt> deliveryAttempt = JsonNullable.<WebhookDeliveryAttempt>undefined();
+  public static final String JSON_PROPERTY_DELIVERY_ATTEMPT = "delivery_attempt";
+  @javax.annotation.Nullable
+  private JsonNullable<WebhookDeliveryAttempt> deliveryAttempt = JsonNullable.<WebhookDeliveryAttempt>undefined();
 
-public EventRetrieveResponse() {
-}
+  public EventRetrieveResponse() {
+  }
 
-        public EventRetrieveResponse eventId(@javax.annotation.Nonnull String eventId) {
-        
-        this.eventId = eventId;
-        return this;
-        }
+  public EventRetrieveResponse eventId(@javax.annotation.Nonnull String eventId) {
+    
+    this.eventId = eventId;
+    return this;
+  }
 
-    /**
-        * The identifier for the Event.
-    * @return eventId
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_EVENT_ID)
+  /**
+   * The identifier for the Event.
+   * @return eventId
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_EVENT_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public String getEventId() {
-        return eventId;
-    }
+  public String getEventId() {
+    return eventId;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_EVENT_ID)
+  @JsonProperty(JSON_PROPERTY_EVENT_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setEventId(@javax.annotation.Nonnull String eventId) {
-            this.eventId = eventId;
-        }
+    this.eventId = eventId;
+  }
 
-        public EventRetrieveResponse merchantId(@javax.annotation.Nonnull String merchantId) {
-        
-        this.merchantId = merchantId;
-        return this;
-        }
+  public EventRetrieveResponse merchantId(@javax.annotation.Nonnull String merchantId) {
+    
+    this.merchantId = merchantId;
+    return this;
+  }
 
-    /**
-        * The identifier for the Merchant Account.
-    * @return merchantId
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_MERCHANT_ID)
+  /**
+   * The identifier for the Merchant Account.
+   * @return merchantId
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_MERCHANT_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public String getMerchantId() {
-        return merchantId;
-    }
+  public String getMerchantId() {
+    return merchantId;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_MERCHANT_ID)
+  @JsonProperty(JSON_PROPERTY_MERCHANT_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setMerchantId(@javax.annotation.Nonnull String merchantId) {
-            this.merchantId = merchantId;
-        }
+    this.merchantId = merchantId;
+  }
 
-        public EventRetrieveResponse profileId(@javax.annotation.Nonnull String profileId) {
-        
-        this.profileId = profileId;
-        return this;
-        }
+  public EventRetrieveResponse profileId(@javax.annotation.Nonnull String profileId) {
+    
+    this.profileId = profileId;
+    return this;
+  }
 
-    /**
-        * The identifier for the Business Profile.
-    * @return profileId
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_PROFILE_ID)
+  /**
+   * The identifier for the Business Profile.
+   * @return profileId
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_PROFILE_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public String getProfileId() {
-        return profileId;
-    }
+  public String getProfileId() {
+    return profileId;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_PROFILE_ID)
+  @JsonProperty(JSON_PROPERTY_PROFILE_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setProfileId(@javax.annotation.Nonnull String profileId) {
-            this.profileId = profileId;
-        }
+    this.profileId = profileId;
+  }
 
-        public EventRetrieveResponse objectId(@javax.annotation.Nonnull String objectId) {
-        
-        this.objectId = objectId;
-        return this;
-        }
+  public EventRetrieveResponse objectId(@javax.annotation.Nonnull String objectId) {
+    
+    this.objectId = objectId;
+    return this;
+  }
 
-    /**
-        * The identifier for the object (Payment Intent ID, Refund ID, etc.)
-    * @return objectId
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_OBJECT_ID)
+  /**
+   * The identifier for the object (Payment Intent ID, Refund ID, etc.)
+   * @return objectId
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_OBJECT_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public String getObjectId() {
-        return objectId;
-    }
+  public String getObjectId() {
+    return objectId;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_OBJECT_ID)
+  @JsonProperty(JSON_PROPERTY_OBJECT_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setObjectId(@javax.annotation.Nonnull String objectId) {
-            this.objectId = objectId;
-        }
+    this.objectId = objectId;
+  }
 
-        public EventRetrieveResponse eventType(@javax.annotation.Nonnull EventType eventType) {
-        
-        this.eventType = eventType;
-        return this;
-        }
+  public EventRetrieveResponse eventType(@javax.annotation.Nonnull EventType eventType) {
+    
+    this.eventType = eventType;
+    return this;
+  }
 
-    /**
-        * Get eventType
-    * @return eventType
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_EVENT_TYPE)
+  /**
+   * Get eventType
+   * @return eventType
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_EVENT_TYPE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public EventType getEventType() {
-        return eventType;
-    }
+  public EventType getEventType() {
+    return eventType;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_EVENT_TYPE)
+  @JsonProperty(JSON_PROPERTY_EVENT_TYPE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setEventType(@javax.annotation.Nonnull EventType eventType) {
-            this.eventType = eventType;
-        }
+    this.eventType = eventType;
+  }
 
-        public EventRetrieveResponse eventClass(@javax.annotation.Nonnull EventClass eventClass) {
-        
-        this.eventClass = eventClass;
-        return this;
-        }
+  public EventRetrieveResponse eventClass(@javax.annotation.Nonnull EventClass eventClass) {
+    
+    this.eventClass = eventClass;
+    return this;
+  }
 
-    /**
-        * Get eventClass
-    * @return eventClass
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_EVENT_CLASS)
+  /**
+   * Get eventClass
+   * @return eventClass
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_EVENT_CLASS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public EventClass getEventClass() {
-        return eventClass;
-    }
+  public EventClass getEventClass() {
+    return eventClass;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_EVENT_CLASS)
+  @JsonProperty(JSON_PROPERTY_EVENT_CLASS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setEventClass(@javax.annotation.Nonnull EventClass eventClass) {
-            this.eventClass = eventClass;
-        }
+    this.eventClass = eventClass;
+  }
 
-        public EventRetrieveResponse isDeliverySuccessful(@javax.annotation.Nonnull Boolean isDeliverySuccessful) {
-        
-        this.isDeliverySuccessful = isDeliverySuccessful;
-        return this;
-        }
+  public EventRetrieveResponse isDeliverySuccessful(@javax.annotation.Nonnull Boolean isDeliverySuccessful) {
+    
+    this.isDeliverySuccessful = isDeliverySuccessful;
+    return this;
+  }
 
-    /**
-        * Indicates whether the webhook delivery attempt was successful.
-    * @return isDeliverySuccessful
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_IS_DELIVERY_SUCCESSFUL)
+  /**
+   * Indicates whether the webhook delivery attempt was successful.
+   * @return isDeliverySuccessful
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_IS_DELIVERY_SUCCESSFUL)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public Boolean getIsDeliverySuccessful() {
-        return isDeliverySuccessful;
-    }
+  public Boolean getIsDeliverySuccessful() {
+    return isDeliverySuccessful;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_IS_DELIVERY_SUCCESSFUL)
+  @JsonProperty(JSON_PROPERTY_IS_DELIVERY_SUCCESSFUL)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setIsDeliverySuccessful(@javax.annotation.Nonnull Boolean isDeliverySuccessful) {
-            this.isDeliverySuccessful = isDeliverySuccessful;
-        }
+    this.isDeliverySuccessful = isDeliverySuccessful;
+  }
 
-        public EventRetrieveResponse initialAttemptId(@javax.annotation.Nonnull String initialAttemptId) {
-        
-        this.initialAttemptId = initialAttemptId;
-        return this;
-        }
+  public EventRetrieveResponse initialAttemptId(@javax.annotation.Nonnull String initialAttemptId) {
+    
+    this.initialAttemptId = initialAttemptId;
+    return this;
+  }
 
-    /**
-        * The identifier for the initial delivery attempt. This will be the same as &#x60;event_id&#x60; for the initial delivery attempt.
-    * @return initialAttemptId
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_INITIAL_ATTEMPT_ID)
+  /**
+   * The identifier for the initial delivery attempt. This will be the same as &#x60;event_id&#x60; for the initial delivery attempt.
+   * @return initialAttemptId
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_INITIAL_ATTEMPT_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public String getInitialAttemptId() {
-        return initialAttemptId;
-    }
+  public String getInitialAttemptId() {
+    return initialAttemptId;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_INITIAL_ATTEMPT_ID)
+  @JsonProperty(JSON_PROPERTY_INITIAL_ATTEMPT_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setInitialAttemptId(@javax.annotation.Nonnull String initialAttemptId) {
-            this.initialAttemptId = initialAttemptId;
-        }
+    this.initialAttemptId = initialAttemptId;
+  }
 
-        public EventRetrieveResponse created(@javax.annotation.Nonnull OffsetDateTime created) {
-        
-        this.created = created;
-        return this;
-        }
+  public EventRetrieveResponse created(@javax.annotation.Nonnull OffsetDateTime created) {
+    
+    this.created = created;
+    return this;
+  }
 
-    /**
-        * Time at which the event was created.
-    * @return created
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_CREATED)
+  /**
+   * Time at which the event was created.
+   * @return created
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_CREATED)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public OffsetDateTime getCreated() {
-        return created;
-    }
+  public OffsetDateTime getCreated() {
+    return created;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_CREATED)
+  @JsonProperty(JSON_PROPERTY_CREATED)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setCreated(@javax.annotation.Nonnull OffsetDateTime created) {
-            this.created = created;
-        }
+    this.created = created;
+  }
 
-        public EventRetrieveResponse request(@javax.annotation.Nonnull OutgoingWebhookRequestContent request) {
-        
-        this.request = request;
-        return this;
-        }
+  public EventRetrieveResponse request(@javax.annotation.Nonnull OutgoingWebhookRequestContent request) {
+    
+    this.request = request;
+    return this;
+  }
 
-    /**
-        * Get request
-    * @return request
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_REQUEST)
+  /**
+   * Get request
+   * @return request
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_REQUEST)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public OutgoingWebhookRequestContent getRequest() {
-        return request;
-    }
+  public OutgoingWebhookRequestContent getRequest() {
+    return request;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_REQUEST)
+  @JsonProperty(JSON_PROPERTY_REQUEST)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setRequest(@javax.annotation.Nonnull OutgoingWebhookRequestContent request) {
-            this.request = request;
-        }
+    this.request = request;
+  }
 
-        public EventRetrieveResponse response(@javax.annotation.Nonnull OutgoingWebhookResponseContent response) {
-        
-        this.response = response;
-        return this;
-        }
+  public EventRetrieveResponse response(@javax.annotation.Nonnull OutgoingWebhookResponseContent response) {
+    
+    this.response = response;
+    return this;
+  }
 
-    /**
-        * Get response
-    * @return response
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_RESPONSE)
+  /**
+   * Get response
+   * @return response
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_RESPONSE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public OutgoingWebhookResponseContent getResponse() {
-        return response;
-    }
+  public OutgoingWebhookResponseContent getResponse() {
+    return response;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_RESPONSE)
+  @JsonProperty(JSON_PROPERTY_RESPONSE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setResponse(@javax.annotation.Nonnull OutgoingWebhookResponseContent response) {
-            this.response = response;
-        }
+    this.response = response;
+  }
 
-        public EventRetrieveResponse deliveryAttempt(@javax.annotation.Nullable WebhookDeliveryAttempt deliveryAttempt) {
-        this.deliveryAttempt = JsonNullable.<WebhookDeliveryAttempt>of(deliveryAttempt);
-        
-        return this;
-        }
-
-    /**
-        * Get deliveryAttempt
-    * @return deliveryAttempt
-    */
-    @javax.annotation.Nullable
-        @JsonIgnore
+  public EventRetrieveResponse deliveryAttempt(@javax.annotation.Nullable WebhookDeliveryAttempt deliveryAttempt) {
+    this.deliveryAttempt = JsonNullable.<WebhookDeliveryAttempt>of(deliveryAttempt);
     
-    public WebhookDeliveryAttempt getDeliveryAttempt() {
-                return deliveryAttempt.orElse(null);
-    }
+    return this;
+  }
 
-          @JsonProperty(JSON_PROPERTY_DELIVERY_ATTEMPT)
+  /**
+   * Get deliveryAttempt
+   * @return deliveryAttempt
+   */
+  @javax.annotation.Nullable
+  @JsonIgnore
+
+  public WebhookDeliveryAttempt getDeliveryAttempt() {
+        return deliveryAttempt.orElse(null);
+  }
+
+  @JsonProperty(JSON_PROPERTY_DELIVERY_ATTEMPT)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-        public JsonNullable<WebhookDeliveryAttempt> getDeliveryAttempt_JsonNullable() {
-        return deliveryAttempt;
-        }
-    
-        @JsonProperty(JSON_PROPERTY_DELIVERY_ATTEMPT)
-        public void setDeliveryAttempt_JsonNullable(JsonNullable<WebhookDeliveryAttempt> deliveryAttempt) {
-        this.deliveryAttempt = deliveryAttempt;
-        }
+  public JsonNullable<WebhookDeliveryAttempt> getDeliveryAttempt_JsonNullable() {
+    return deliveryAttempt;
+  }
+  
+  @JsonProperty(JSON_PROPERTY_DELIVERY_ATTEMPT)
+  public void setDeliveryAttempt_JsonNullable(JsonNullable<WebhookDeliveryAttempt> deliveryAttempt) {
+    this.deliveryAttempt = deliveryAttempt;
+  }
 
-          public void setDeliveryAttempt(@javax.annotation.Nullable WebhookDeliveryAttempt deliveryAttempt) {
-            this.deliveryAttempt = JsonNullable.<WebhookDeliveryAttempt>of(deliveryAttempt);
-        }
+  public void setDeliveryAttempt(@javax.annotation.Nullable WebhookDeliveryAttempt deliveryAttempt) {
+    this.deliveryAttempt = JsonNullable.<WebhookDeliveryAttempt>of(deliveryAttempt);
+  }
 
-@Override
-public boolean equals(Object o) {
+  @Override
+  public boolean equals(Object o) {
     if (this == o) {
-    return true;
+      return true;
     }
     if (o == null || getClass() != o.getClass()) {
-    return false;
+      return false;
     }
-        EventRetrieveResponse eventRetrieveResponse = (EventRetrieveResponse) o;
-        return Objects.equals(this.eventId, eventRetrieveResponse.eventId) &&
+    EventRetrieveResponse eventRetrieveResponse = (EventRetrieveResponse) o;
+    return Objects.equals(this.eventId, eventRetrieveResponse.eventId) &&
         Objects.equals(this.merchantId, eventRetrieveResponse.merchantId) &&
         Objects.equals(this.profileId, eventRetrieveResponse.profileId) &&
         Objects.equals(this.objectId, eventRetrieveResponse.objectId) &&
@@ -435,199 +435,199 @@ public boolean equals(Object o) {
         Objects.equals(this.request, eventRetrieveResponse.request) &&
         Objects.equals(this.response, eventRetrieveResponse.response) &&
         equalsNullable(this.deliveryAttempt, eventRetrieveResponse.deliveryAttempt);
-}
+  }
 
-    private static <T> boolean equalsNullable(JsonNullable<T> a, JsonNullable<T> b) {
-        return a == b || (a != null && b != null && a.isPresent() && b.isPresent() && Objects.deepEquals(a.get(), b.get()));
-        }
+  private static <T> boolean equalsNullable(JsonNullable<T> a, JsonNullable<T> b) {
+    return a == b || (a != null && b != null && a.isPresent() && b.isPresent() && Objects.deepEquals(a.get(), b.get()));
+  }
 
-    @Override
-    public int hashCode() {
-        return Objects.hash(eventId, merchantId, profileId, objectId, eventType, eventClass, isDeliverySuccessful, initialAttemptId, created, request, response, hashCodeNullable(deliveryAttempt));
+  @Override
+  public int hashCode() {
+    return Objects.hash(eventId, merchantId, profileId, objectId, eventType, eventClass, isDeliverySuccessful, initialAttemptId, created, request, response, hashCodeNullable(deliveryAttempt));
+  }
+
+  private static <T> int hashCodeNullable(JsonNullable<T> a) {
+    if (a == null) {
+      return 1;
     }
+    return a.isPresent() ? Arrays.deepHashCode(new Object[]{a.get()}) : 31;
+  }
 
-        private static <T> int hashCodeNullable(JsonNullable<T> a) {
-        if (a == null) {
-        return 1;
-        }
-        return a.isPresent() ? Arrays.deepHashCode(new Object[]{a.get()}) : 31;
-        }
-
-    @Override
-    public String toString() {
+  @Override
+  public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class EventRetrieveResponse {\n");
-        sb.append("    eventId: ").append(toIndentedString(eventId)).append("\n");
-        sb.append("    merchantId: ").append(toIndentedString(merchantId)).append("\n");
-        sb.append("    profileId: ").append(toIndentedString(profileId)).append("\n");
-        sb.append("    objectId: ").append(toIndentedString(objectId)).append("\n");
-        sb.append("    eventType: ").append(toIndentedString(eventType)).append("\n");
-        sb.append("    eventClass: ").append(toIndentedString(eventClass)).append("\n");
-        sb.append("    isDeliverySuccessful: ").append(toIndentedString(isDeliverySuccessful)).append("\n");
-        sb.append("    initialAttemptId: ").append(toIndentedString(initialAttemptId)).append("\n");
-        sb.append("    created: ").append(toIndentedString(created)).append("\n");
-        sb.append("    request: ").append(toIndentedString(request)).append("\n");
-        sb.append("    response: ").append(toIndentedString(response)).append("\n");
-        sb.append("    deliveryAttempt: ").append(toIndentedString(deliveryAttempt)).append("\n");
+    sb.append("    eventId: ").append(toIndentedString(eventId)).append("\n");
+    sb.append("    merchantId: ").append(toIndentedString(merchantId)).append("\n");
+    sb.append("    profileId: ").append(toIndentedString(profileId)).append("\n");
+    sb.append("    objectId: ").append(toIndentedString(objectId)).append("\n");
+    sb.append("    eventType: ").append(toIndentedString(eventType)).append("\n");
+    sb.append("    eventClass: ").append(toIndentedString(eventClass)).append("\n");
+    sb.append("    isDeliverySuccessful: ").append(toIndentedString(isDeliverySuccessful)).append("\n");
+    sb.append("    initialAttemptId: ").append(toIndentedString(initialAttemptId)).append("\n");
+    sb.append("    created: ").append(toIndentedString(created)).append("\n");
+    sb.append("    request: ").append(toIndentedString(request)).append("\n");
+    sb.append("    response: ").append(toIndentedString(response)).append("\n");
+    sb.append("    deliveryAttempt: ").append(toIndentedString(deliveryAttempt)).append("\n");
     sb.append("}");
     return sb.toString();
-    }
+  }
 
-    /**
-    * Convert the given object to string with each line indented by 4 spaces
-    * (except the first line).
-    */
-    private String toIndentedString(Object o) {
+  /**
+   * Convert the given object to string with each line indented by 4 spaces
+   * (except the first line).
+   */
+  private String toIndentedString(Object o) {
     if (o == null) {
-    return "null";
+      return "null";
     }
     return o.toString().replace("\n", "\n    ");
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @return URL query string
+   */
+  public String toUrlQueryString() {
+    return toUrlQueryString(null);
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @param prefix prefix of the query string
+   * @return URL query string
+   */
+  public String toUrlQueryString(String prefix) {
+    String suffix = "";
+    String containerSuffix = "";
+    String containerPrefix = "";
+    if (prefix == null) {
+      // style=form, explode=true, e.g. /pet?name=cat&type=manx
+      prefix = "";
+    } else {
+      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+      prefix = prefix + "[";
+      suffix = "]";
+      containerSuffix = "]";
+      containerPrefix = "[";
     }
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @return URL query string
-        */
-        public String toUrlQueryString() {
-        return toUrlQueryString(null);
-        }
+    StringJoiner joiner = new StringJoiner("&");
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @param prefix prefix of the query string
-        * @return URL query string
-        */
-        public String toUrlQueryString(String prefix) {
-        String suffix = "";
-        String containerSuffix = "";
-        String containerPrefix = "";
-        if (prefix == null) {
-        // style=form, explode=true, e.g. /pet?name=cat&type=manx
-        prefix = "";
-        } else {
-        // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
-        prefix = prefix + "[";
-        suffix = "]";
-        containerSuffix = "]";
-        containerPrefix = "[";
-        }
-
-        StringJoiner joiner = new StringJoiner("&");
-
-            // add `event_id` to the URL query string
-                        if (getEventId() != null) {
-                        try {
-                        joiner.add(String.format("%sevent_id%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getEventId()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-            // add `merchant_id` to the URL query string
-                        if (getMerchantId() != null) {
-                        try {
-                        joiner.add(String.format("%smerchant_id%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getMerchantId()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-            // add `profile_id` to the URL query string
-                        if (getProfileId() != null) {
-                        try {
-                        joiner.add(String.format("%sprofile_id%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getProfileId()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-            // add `object_id` to the URL query string
-                        if (getObjectId() != null) {
-                        try {
-                        joiner.add(String.format("%sobject_id%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getObjectId()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-            // add `event_type` to the URL query string
-                            if (getEventType() != null) {
-                            try {
-                            joiner.add(String.format("%sevent_type%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getEventType()), "UTF-8").replaceAll("\\+", "%20")));
-                            } catch (UnsupportedEncodingException e) {
-                            // Should never happen, UTF-8 is always supported
-                            throw new RuntimeException(e);
-                            }
-                            }
-
-            // add `event_class` to the URL query string
-                            if (getEventClass() != null) {
-                            try {
-                            joiner.add(String.format("%sevent_class%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getEventClass()), "UTF-8").replaceAll("\\+", "%20")));
-                            } catch (UnsupportedEncodingException e) {
-                            // Should never happen, UTF-8 is always supported
-                            throw new RuntimeException(e);
-                            }
-                            }
-
-            // add `is_delivery_successful` to the URL query string
-                        if (getIsDeliverySuccessful() != null) {
-                        try {
-                        joiner.add(String.format("%sis_delivery_successful%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getIsDeliverySuccessful()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-            // add `initial_attempt_id` to the URL query string
-                        if (getInitialAttemptId() != null) {
-                        try {
-                        joiner.add(String.format("%sinitial_attempt_id%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getInitialAttemptId()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-            // add `created` to the URL query string
-                            if (getCreated() != null) {
-                            try {
-                            joiner.add(String.format("%screated%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCreated()), "UTF-8").replaceAll("\\+", "%20")));
-                            } catch (UnsupportedEncodingException e) {
-                            // Should never happen, UTF-8 is always supported
-                            throw new RuntimeException(e);
-                            }
-                            }
-
-            // add `request` to the URL query string
-                            if (getRequest() != null) {
-                            joiner.add(getRequest().toUrlQueryString(prefix + "request" + suffix));
-                            }
-
-            // add `response` to the URL query string
-                            if (getResponse() != null) {
-                            joiner.add(getResponse().toUrlQueryString(prefix + "response" + suffix));
-                            }
-
-            // add `delivery_attempt` to the URL query string
-                            if (getDeliveryAttempt() != null) {
-                            try {
-                            joiner.add(String.format("%sdelivery_attempt%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getDeliveryAttempt()), "UTF-8").replaceAll("\\+", "%20")));
-                            } catch (UnsupportedEncodingException e) {
-                            // Should never happen, UTF-8 is always supported
-                            throw new RuntimeException(e);
-                            }
-                            }
-
-        return joiner.toString();
-        }
-
+    // add `event_id` to the URL query string
+    if (getEventId() != null) {
+      try {
+        joiner.add(String.format("%sevent_id%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getEventId()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
     }
+
+    // add `merchant_id` to the URL query string
+    if (getMerchantId() != null) {
+      try {
+        joiner.add(String.format("%smerchant_id%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getMerchantId()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `profile_id` to the URL query string
+    if (getProfileId() != null) {
+      try {
+        joiner.add(String.format("%sprofile_id%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getProfileId()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `object_id` to the URL query string
+    if (getObjectId() != null) {
+      try {
+        joiner.add(String.format("%sobject_id%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getObjectId()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `event_type` to the URL query string
+    if (getEventType() != null) {
+      try {
+        joiner.add(String.format("%sevent_type%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getEventType()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `event_class` to the URL query string
+    if (getEventClass() != null) {
+      try {
+        joiner.add(String.format("%sevent_class%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getEventClass()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `is_delivery_successful` to the URL query string
+    if (getIsDeliverySuccessful() != null) {
+      try {
+        joiner.add(String.format("%sis_delivery_successful%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getIsDeliverySuccessful()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `initial_attempt_id` to the URL query string
+    if (getInitialAttemptId() != null) {
+      try {
+        joiner.add(String.format("%sinitial_attempt_id%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getInitialAttemptId()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `created` to the URL query string
+    if (getCreated() != null) {
+      try {
+        joiner.add(String.format("%screated%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCreated()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `request` to the URL query string
+    if (getRequest() != null) {
+      joiner.add(getRequest().toUrlQueryString(prefix + "request" + suffix));
+    }
+
+    // add `response` to the URL query string
+    if (getResponse() != null) {
+      joiner.add(getResponse().toUrlQueryString(prefix + "response" + suffix));
+    }
+
+    // add `delivery_attempt` to the URL query string
+    if (getDeliveryAttempt() != null) {
+      try {
+        joiner.add(String.format("%sdelivery_attempt%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getDeliveryAttempt()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    return joiner.toString();
+  }
+
+}
 

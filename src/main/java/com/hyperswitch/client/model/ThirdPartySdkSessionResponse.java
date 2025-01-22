@@ -28,121 +28,121 @@ import java.net.URLEncoder;
 import java.util.StringJoiner;
 
 /**
-* ThirdPartySdkSessionResponse
-*/
-    @JsonPropertyOrder({
-        ThirdPartySdkSessionResponse.JSON_PROPERTY_SECRETS
-    })
+ * ThirdPartySdkSessionResponse
+ */
+@JsonPropertyOrder({
+  ThirdPartySdkSessionResponse.JSON_PROPERTY_SECRETS
+})
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class ThirdPartySdkSessionResponse {
-        public static final String JSON_PROPERTY_SECRETS = "secrets";
-    @javax.annotation.Nonnull
-            private SecretInfoToInitiateSdk secrets;
+  public static final String JSON_PROPERTY_SECRETS = "secrets";
+  @javax.annotation.Nonnull
+  private SecretInfoToInitiateSdk secrets;
 
-public ThirdPartySdkSessionResponse() {
-}
+  public ThirdPartySdkSessionResponse() {
+  }
 
-        public ThirdPartySdkSessionResponse secrets(@javax.annotation.Nonnull SecretInfoToInitiateSdk secrets) {
-        
-        this.secrets = secrets;
-        return this;
-        }
+  public ThirdPartySdkSessionResponse secrets(@javax.annotation.Nonnull SecretInfoToInitiateSdk secrets) {
+    
+    this.secrets = secrets;
+    return this;
+  }
 
-    /**
-        * Get secrets
-    * @return secrets
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_SECRETS)
+  /**
+   * Get secrets
+   * @return secrets
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_SECRETS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public SecretInfoToInitiateSdk getSecrets() {
-        return secrets;
-    }
+  public SecretInfoToInitiateSdk getSecrets() {
+    return secrets;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_SECRETS)
+  @JsonProperty(JSON_PROPERTY_SECRETS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setSecrets(@javax.annotation.Nonnull SecretInfoToInitiateSdk secrets) {
-            this.secrets = secrets;
-        }
+    this.secrets = secrets;
+  }
 
-@Override
-public boolean equals(Object o) {
+  @Override
+  public boolean equals(Object o) {
     if (this == o) {
-    return true;
+      return true;
     }
     if (o == null || getClass() != o.getClass()) {
-    return false;
+      return false;
     }
-        ThirdPartySdkSessionResponse thirdPartySdkSessionResponse = (ThirdPartySdkSessionResponse) o;
-        return Objects.equals(this.secrets, thirdPartySdkSessionResponse.secrets);
-}
+    ThirdPartySdkSessionResponse thirdPartySdkSessionResponse = (ThirdPartySdkSessionResponse) o;
+    return Objects.equals(this.secrets, thirdPartySdkSessionResponse.secrets);
+  }
 
-    @Override
-    public int hashCode() {
-        return Objects.hash(secrets);
-    }
+  @Override
+  public int hashCode() {
+    return Objects.hash(secrets);
+  }
 
-    @Override
-    public String toString() {
+  @Override
+  public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class ThirdPartySdkSessionResponse {\n");
-        sb.append("    secrets: ").append(toIndentedString(secrets)).append("\n");
+    sb.append("    secrets: ").append(toIndentedString(secrets)).append("\n");
     sb.append("}");
     return sb.toString();
-    }
+  }
 
-    /**
-    * Convert the given object to string with each line indented by 4 spaces
-    * (except the first line).
-    */
-    private String toIndentedString(Object o) {
+  /**
+   * Convert the given object to string with each line indented by 4 spaces
+   * (except the first line).
+   */
+  private String toIndentedString(Object o) {
     if (o == null) {
-    return "null";
+      return "null";
     }
     return o.toString().replace("\n", "\n    ");
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @return URL query string
+   */
+  public String toUrlQueryString() {
+    return toUrlQueryString(null);
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @param prefix prefix of the query string
+   * @return URL query string
+   */
+  public String toUrlQueryString(String prefix) {
+    String suffix = "";
+    String containerSuffix = "";
+    String containerPrefix = "";
+    if (prefix == null) {
+      // style=form, explode=true, e.g. /pet?name=cat&type=manx
+      prefix = "";
+    } else {
+      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+      prefix = prefix + "[";
+      suffix = "]";
+      containerSuffix = "]";
+      containerPrefix = "[";
     }
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @return URL query string
-        */
-        public String toUrlQueryString() {
-        return toUrlQueryString(null);
-        }
+    StringJoiner joiner = new StringJoiner("&");
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @param prefix prefix of the query string
-        * @return URL query string
-        */
-        public String toUrlQueryString(String prefix) {
-        String suffix = "";
-        String containerSuffix = "";
-        String containerPrefix = "";
-        if (prefix == null) {
-        // style=form, explode=true, e.g. /pet?name=cat&type=manx
-        prefix = "";
-        } else {
-        // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
-        prefix = prefix + "[";
-        suffix = "]";
-        containerSuffix = "]";
-        containerPrefix = "[";
-        }
-
-        StringJoiner joiner = new StringJoiner("&");
-
-            // add `secrets` to the URL query string
-                            if (getSecrets() != null) {
-                            joiner.add(getSecrets().toUrlQueryString(prefix + "secrets" + suffix));
-                            }
-
-        return joiner.toString();
-        }
-
+    // add `secrets` to the URL query string
+    if (getSecrets() != null) {
+      joiner.add(getSecrets().toUrlQueryString(prefix + "secrets" + suffix));
     }
+
+    return joiner.toString();
+  }
+
+}
 

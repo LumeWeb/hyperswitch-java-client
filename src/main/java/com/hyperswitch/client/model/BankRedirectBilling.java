@@ -27,168 +27,168 @@ import java.net.URLEncoder;
 import java.util.StringJoiner;
 
 /**
-* BankRedirectBilling
-*/
-    @JsonPropertyOrder({
-        BankRedirectBilling.JSON_PROPERTY_BILLING_NAME,
-        BankRedirectBilling.JSON_PROPERTY_EMAIL
-    })
+ * BankRedirectBilling
+ */
+@JsonPropertyOrder({
+  BankRedirectBilling.JSON_PROPERTY_BILLING_NAME,
+  BankRedirectBilling.JSON_PROPERTY_EMAIL
+})
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class BankRedirectBilling {
-        public static final String JSON_PROPERTY_BILLING_NAME = "billing_name";
-    @javax.annotation.Nonnull
-            private String billingName;
+  public static final String JSON_PROPERTY_BILLING_NAME = "billing_name";
+  @javax.annotation.Nonnull
+  private String billingName;
 
-        public static final String JSON_PROPERTY_EMAIL = "email";
-    @javax.annotation.Nonnull
-            private String email;
+  public static final String JSON_PROPERTY_EMAIL = "email";
+  @javax.annotation.Nonnull
+  private String email;
 
-public BankRedirectBilling() {
-}
+  public BankRedirectBilling() {
+  }
 
-        public BankRedirectBilling billingName(@javax.annotation.Nonnull String billingName) {
-        
-        this.billingName = billingName;
-        return this;
-        }
+  public BankRedirectBilling billingName(@javax.annotation.Nonnull String billingName) {
+    
+    this.billingName = billingName;
+    return this;
+  }
 
-    /**
-        * The name for which billing is issued
-    * @return billingName
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_BILLING_NAME)
+  /**
+   * The name for which billing is issued
+   * @return billingName
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_BILLING_NAME)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public String getBillingName() {
-        return billingName;
-    }
+  public String getBillingName() {
+    return billingName;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_BILLING_NAME)
+  @JsonProperty(JSON_PROPERTY_BILLING_NAME)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setBillingName(@javax.annotation.Nonnull String billingName) {
-            this.billingName = billingName;
-        }
+    this.billingName = billingName;
+  }
 
-        public BankRedirectBilling email(@javax.annotation.Nonnull String email) {
-        
-        this.email = email;
-        return this;
-        }
+  public BankRedirectBilling email(@javax.annotation.Nonnull String email) {
+    
+    this.email = email;
+    return this;
+  }
 
-    /**
-        * The billing email for bank redirect
-    * @return email
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_EMAIL)
+  /**
+   * The billing email for bank redirect
+   * @return email
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_EMAIL)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public String getEmail() {
-        return email;
-    }
+  public String getEmail() {
+    return email;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_EMAIL)
+  @JsonProperty(JSON_PROPERTY_EMAIL)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setEmail(@javax.annotation.Nonnull String email) {
-            this.email = email;
-        }
+    this.email = email;
+  }
 
-@Override
-public boolean equals(Object o) {
+  @Override
+  public boolean equals(Object o) {
     if (this == o) {
-    return true;
+      return true;
     }
     if (o == null || getClass() != o.getClass()) {
-    return false;
+      return false;
     }
-        BankRedirectBilling bankRedirectBilling = (BankRedirectBilling) o;
-        return Objects.equals(this.billingName, bankRedirectBilling.billingName) &&
+    BankRedirectBilling bankRedirectBilling = (BankRedirectBilling) o;
+    return Objects.equals(this.billingName, bankRedirectBilling.billingName) &&
         Objects.equals(this.email, bankRedirectBilling.email);
-}
+  }
 
-    @Override
-    public int hashCode() {
-        return Objects.hash(billingName, email);
-    }
+  @Override
+  public int hashCode() {
+    return Objects.hash(billingName, email);
+  }
 
-    @Override
-    public String toString() {
+  @Override
+  public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class BankRedirectBilling {\n");
-        sb.append("    billingName: ").append(toIndentedString(billingName)).append("\n");
-        sb.append("    email: ").append(toIndentedString(email)).append("\n");
+    sb.append("    billingName: ").append(toIndentedString(billingName)).append("\n");
+    sb.append("    email: ").append(toIndentedString(email)).append("\n");
     sb.append("}");
     return sb.toString();
-    }
+  }
 
-    /**
-    * Convert the given object to string with each line indented by 4 spaces
-    * (except the first line).
-    */
-    private String toIndentedString(Object o) {
+  /**
+   * Convert the given object to string with each line indented by 4 spaces
+   * (except the first line).
+   */
+  private String toIndentedString(Object o) {
     if (o == null) {
-    return "null";
+      return "null";
     }
     return o.toString().replace("\n", "\n    ");
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @return URL query string
+   */
+  public String toUrlQueryString() {
+    return toUrlQueryString(null);
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @param prefix prefix of the query string
+   * @return URL query string
+   */
+  public String toUrlQueryString(String prefix) {
+    String suffix = "";
+    String containerSuffix = "";
+    String containerPrefix = "";
+    if (prefix == null) {
+      // style=form, explode=true, e.g. /pet?name=cat&type=manx
+      prefix = "";
+    } else {
+      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+      prefix = prefix + "[";
+      suffix = "]";
+      containerSuffix = "]";
+      containerPrefix = "[";
     }
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @return URL query string
-        */
-        public String toUrlQueryString() {
-        return toUrlQueryString(null);
-        }
+    StringJoiner joiner = new StringJoiner("&");
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @param prefix prefix of the query string
-        * @return URL query string
-        */
-        public String toUrlQueryString(String prefix) {
-        String suffix = "";
-        String containerSuffix = "";
-        String containerPrefix = "";
-        if (prefix == null) {
-        // style=form, explode=true, e.g. /pet?name=cat&type=manx
-        prefix = "";
-        } else {
-        // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
-        prefix = prefix + "[";
-        suffix = "]";
-        containerSuffix = "]";
-        containerPrefix = "[";
-        }
-
-        StringJoiner joiner = new StringJoiner("&");
-
-            // add `billing_name` to the URL query string
-                        if (getBillingName() != null) {
-                        try {
-                        joiner.add(String.format("%sbilling_name%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getBillingName()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-            // add `email` to the URL query string
-                        if (getEmail() != null) {
-                        try {
-                        joiner.add(String.format("%semail%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getEmail()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-        return joiner.toString();
-        }
-
+    // add `billing_name` to the URL query string
+    if (getBillingName() != null) {
+      try {
+        joiner.add(String.format("%sbilling_name%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getBillingName()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
     }
+
+    // add `email` to the URL query string
+    if (getEmail() != null) {
+      try {
+        joiner.add(String.format("%semail%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getEmail()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    return joiner.toString();
+  }
+
+}
 

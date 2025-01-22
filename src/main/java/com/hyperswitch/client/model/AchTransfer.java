@@ -27,252 +27,252 @@ import java.net.URLEncoder;
 import java.util.StringJoiner;
 
 /**
-* AchTransfer
-*/
-    @JsonPropertyOrder({
-        AchTransfer.JSON_PROPERTY_ACCOUNT_NUMBER,
-        AchTransfer.JSON_PROPERTY_BANK_NAME,
-        AchTransfer.JSON_PROPERTY_ROUTING_NUMBER,
-        AchTransfer.JSON_PROPERTY_SWIFT_CODE
-    })
+ * AchTransfer
+ */
+@JsonPropertyOrder({
+  AchTransfer.JSON_PROPERTY_ACCOUNT_NUMBER,
+  AchTransfer.JSON_PROPERTY_BANK_NAME,
+  AchTransfer.JSON_PROPERTY_ROUTING_NUMBER,
+  AchTransfer.JSON_PROPERTY_SWIFT_CODE
+})
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class AchTransfer {
-        public static final String JSON_PROPERTY_ACCOUNT_NUMBER = "account_number";
-    @javax.annotation.Nonnull
-            private String accountNumber;
+  public static final String JSON_PROPERTY_ACCOUNT_NUMBER = "account_number";
+  @javax.annotation.Nonnull
+  private String accountNumber;
 
-        public static final String JSON_PROPERTY_BANK_NAME = "bank_name";
-    @javax.annotation.Nonnull
-            private String bankName;
+  public static final String JSON_PROPERTY_BANK_NAME = "bank_name";
+  @javax.annotation.Nonnull
+  private String bankName;
 
-        public static final String JSON_PROPERTY_ROUTING_NUMBER = "routing_number";
-    @javax.annotation.Nonnull
-            private String routingNumber;
+  public static final String JSON_PROPERTY_ROUTING_NUMBER = "routing_number";
+  @javax.annotation.Nonnull
+  private String routingNumber;
 
-        public static final String JSON_PROPERTY_SWIFT_CODE = "swift_code";
-    @javax.annotation.Nonnull
-            private String swiftCode;
+  public static final String JSON_PROPERTY_SWIFT_CODE = "swift_code";
+  @javax.annotation.Nonnull
+  private String swiftCode;
 
-public AchTransfer() {
-}
+  public AchTransfer() {
+  }
 
-        public AchTransfer accountNumber(@javax.annotation.Nonnull String accountNumber) {
-        
-        this.accountNumber = accountNumber;
-        return this;
-        }
+  public AchTransfer accountNumber(@javax.annotation.Nonnull String accountNumber) {
+    
+    this.accountNumber = accountNumber;
+    return this;
+  }
 
-    /**
-        * Get accountNumber
-    * @return accountNumber
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_ACCOUNT_NUMBER)
+  /**
+   * Get accountNumber
+   * @return accountNumber
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_ACCOUNT_NUMBER)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public String getAccountNumber() {
-        return accountNumber;
-    }
+  public String getAccountNumber() {
+    return accountNumber;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_ACCOUNT_NUMBER)
+  @JsonProperty(JSON_PROPERTY_ACCOUNT_NUMBER)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setAccountNumber(@javax.annotation.Nonnull String accountNumber) {
-            this.accountNumber = accountNumber;
-        }
+    this.accountNumber = accountNumber;
+  }
 
-        public AchTransfer bankName(@javax.annotation.Nonnull String bankName) {
-        
-        this.bankName = bankName;
-        return this;
-        }
+  public AchTransfer bankName(@javax.annotation.Nonnull String bankName) {
+    
+    this.bankName = bankName;
+    return this;
+  }
 
-    /**
-        * Get bankName
-    * @return bankName
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_BANK_NAME)
+  /**
+   * Get bankName
+   * @return bankName
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_BANK_NAME)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public String getBankName() {
-        return bankName;
-    }
+  public String getBankName() {
+    return bankName;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_BANK_NAME)
+  @JsonProperty(JSON_PROPERTY_BANK_NAME)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setBankName(@javax.annotation.Nonnull String bankName) {
-            this.bankName = bankName;
-        }
+    this.bankName = bankName;
+  }
 
-        public AchTransfer routingNumber(@javax.annotation.Nonnull String routingNumber) {
-        
-        this.routingNumber = routingNumber;
-        return this;
-        }
+  public AchTransfer routingNumber(@javax.annotation.Nonnull String routingNumber) {
+    
+    this.routingNumber = routingNumber;
+    return this;
+  }
 
-    /**
-        * Get routingNumber
-    * @return routingNumber
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_ROUTING_NUMBER)
+  /**
+   * Get routingNumber
+   * @return routingNumber
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_ROUTING_NUMBER)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public String getRoutingNumber() {
-        return routingNumber;
-    }
+  public String getRoutingNumber() {
+    return routingNumber;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_ROUTING_NUMBER)
+  @JsonProperty(JSON_PROPERTY_ROUTING_NUMBER)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setRoutingNumber(@javax.annotation.Nonnull String routingNumber) {
-            this.routingNumber = routingNumber;
-        }
+    this.routingNumber = routingNumber;
+  }
 
-        public AchTransfer swiftCode(@javax.annotation.Nonnull String swiftCode) {
-        
-        this.swiftCode = swiftCode;
-        return this;
-        }
+  public AchTransfer swiftCode(@javax.annotation.Nonnull String swiftCode) {
+    
+    this.swiftCode = swiftCode;
+    return this;
+  }
 
-    /**
-        * Get swiftCode
-    * @return swiftCode
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_SWIFT_CODE)
+  /**
+   * Get swiftCode
+   * @return swiftCode
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_SWIFT_CODE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public String getSwiftCode() {
-        return swiftCode;
-    }
+  public String getSwiftCode() {
+    return swiftCode;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_SWIFT_CODE)
+  @JsonProperty(JSON_PROPERTY_SWIFT_CODE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setSwiftCode(@javax.annotation.Nonnull String swiftCode) {
-            this.swiftCode = swiftCode;
-        }
+    this.swiftCode = swiftCode;
+  }
 
-@Override
-public boolean equals(Object o) {
+  @Override
+  public boolean equals(Object o) {
     if (this == o) {
-    return true;
+      return true;
     }
     if (o == null || getClass() != o.getClass()) {
-    return false;
+      return false;
     }
-        AchTransfer achTransfer = (AchTransfer) o;
-        return Objects.equals(this.accountNumber, achTransfer.accountNumber) &&
+    AchTransfer achTransfer = (AchTransfer) o;
+    return Objects.equals(this.accountNumber, achTransfer.accountNumber) &&
         Objects.equals(this.bankName, achTransfer.bankName) &&
         Objects.equals(this.routingNumber, achTransfer.routingNumber) &&
         Objects.equals(this.swiftCode, achTransfer.swiftCode);
-}
+  }
 
-    @Override
-    public int hashCode() {
-        return Objects.hash(accountNumber, bankName, routingNumber, swiftCode);
-    }
+  @Override
+  public int hashCode() {
+    return Objects.hash(accountNumber, bankName, routingNumber, swiftCode);
+  }
 
-    @Override
-    public String toString() {
+  @Override
+  public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class AchTransfer {\n");
-        sb.append("    accountNumber: ").append(toIndentedString(accountNumber)).append("\n");
-        sb.append("    bankName: ").append(toIndentedString(bankName)).append("\n");
-        sb.append("    routingNumber: ").append(toIndentedString(routingNumber)).append("\n");
-        sb.append("    swiftCode: ").append(toIndentedString(swiftCode)).append("\n");
+    sb.append("    accountNumber: ").append(toIndentedString(accountNumber)).append("\n");
+    sb.append("    bankName: ").append(toIndentedString(bankName)).append("\n");
+    sb.append("    routingNumber: ").append(toIndentedString(routingNumber)).append("\n");
+    sb.append("    swiftCode: ").append(toIndentedString(swiftCode)).append("\n");
     sb.append("}");
     return sb.toString();
-    }
+  }
 
-    /**
-    * Convert the given object to string with each line indented by 4 spaces
-    * (except the first line).
-    */
-    private String toIndentedString(Object o) {
+  /**
+   * Convert the given object to string with each line indented by 4 spaces
+   * (except the first line).
+   */
+  private String toIndentedString(Object o) {
     if (o == null) {
-    return "null";
+      return "null";
     }
     return o.toString().replace("\n", "\n    ");
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @return URL query string
+   */
+  public String toUrlQueryString() {
+    return toUrlQueryString(null);
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @param prefix prefix of the query string
+   * @return URL query string
+   */
+  public String toUrlQueryString(String prefix) {
+    String suffix = "";
+    String containerSuffix = "";
+    String containerPrefix = "";
+    if (prefix == null) {
+      // style=form, explode=true, e.g. /pet?name=cat&type=manx
+      prefix = "";
+    } else {
+      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+      prefix = prefix + "[";
+      suffix = "]";
+      containerSuffix = "]";
+      containerPrefix = "[";
     }
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @return URL query string
-        */
-        public String toUrlQueryString() {
-        return toUrlQueryString(null);
-        }
+    StringJoiner joiner = new StringJoiner("&");
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @param prefix prefix of the query string
-        * @return URL query string
-        */
-        public String toUrlQueryString(String prefix) {
-        String suffix = "";
-        String containerSuffix = "";
-        String containerPrefix = "";
-        if (prefix == null) {
-        // style=form, explode=true, e.g. /pet?name=cat&type=manx
-        prefix = "";
-        } else {
-        // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
-        prefix = prefix + "[";
-        suffix = "]";
-        containerSuffix = "]";
-        containerPrefix = "[";
-        }
-
-        StringJoiner joiner = new StringJoiner("&");
-
-            // add `account_number` to the URL query string
-                        if (getAccountNumber() != null) {
-                        try {
-                        joiner.add(String.format("%saccount_number%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getAccountNumber()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-            // add `bank_name` to the URL query string
-                        if (getBankName() != null) {
-                        try {
-                        joiner.add(String.format("%sbank_name%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getBankName()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-            // add `routing_number` to the URL query string
-                        if (getRoutingNumber() != null) {
-                        try {
-                        joiner.add(String.format("%srouting_number%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getRoutingNumber()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-            // add `swift_code` to the URL query string
-                        if (getSwiftCode() != null) {
-                        try {
-                        joiner.add(String.format("%sswift_code%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getSwiftCode()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-        return joiner.toString();
-        }
-
+    // add `account_number` to the URL query string
+    if (getAccountNumber() != null) {
+      try {
+        joiner.add(String.format("%saccount_number%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getAccountNumber()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
     }
+
+    // add `bank_name` to the URL query string
+    if (getBankName() != null) {
+      try {
+        joiner.add(String.format("%sbank_name%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getBankName()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `routing_number` to the URL query string
+    if (getRoutingNumber() != null) {
+      try {
+        joiner.add(String.format("%srouting_number%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getRoutingNumber()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `swift_code` to the URL query string
+    if (getSwiftCode() != null) {
+      try {
+        joiner.add(String.format("%sswift_code%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getSwiftCode()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    return joiner.toString();
+  }
+
+}
 

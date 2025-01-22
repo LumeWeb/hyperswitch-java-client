@@ -38,353 +38,353 @@ import java.net.URLEncoder;
 import java.util.StringJoiner;
 
 /**
-* ApplePayPaymentRequest
-*/
-    @JsonPropertyOrder({
-        ApplePayPaymentRequest.JSON_PROPERTY_COUNTRY_CODE,
-        ApplePayPaymentRequest.JSON_PROPERTY_CURRENCY_CODE,
-        ApplePayPaymentRequest.JSON_PROPERTY_TOTAL,
-        ApplePayPaymentRequest.JSON_PROPERTY_MERCHANT_CAPABILITIES,
-        ApplePayPaymentRequest.JSON_PROPERTY_SUPPORTED_NETWORKS,
-        ApplePayPaymentRequest.JSON_PROPERTY_MERCHANT_IDENTIFIER,
-        ApplePayPaymentRequest.JSON_PROPERTY_REQUIRED_BILLING_CONTACT_FIELDS,
-        ApplePayPaymentRequest.JSON_PROPERTY_REQUIRED_SHIPPING_CONTACT_FIELDS
-    })
+ * ApplePayPaymentRequest
+ */
+@JsonPropertyOrder({
+  ApplePayPaymentRequest.JSON_PROPERTY_COUNTRY_CODE,
+  ApplePayPaymentRequest.JSON_PROPERTY_CURRENCY_CODE,
+  ApplePayPaymentRequest.JSON_PROPERTY_TOTAL,
+  ApplePayPaymentRequest.JSON_PROPERTY_MERCHANT_CAPABILITIES,
+  ApplePayPaymentRequest.JSON_PROPERTY_SUPPORTED_NETWORKS,
+  ApplePayPaymentRequest.JSON_PROPERTY_MERCHANT_IDENTIFIER,
+  ApplePayPaymentRequest.JSON_PROPERTY_REQUIRED_BILLING_CONTACT_FIELDS,
+  ApplePayPaymentRequest.JSON_PROPERTY_REQUIRED_SHIPPING_CONTACT_FIELDS
+})
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class ApplePayPaymentRequest {
-        public static final String JSON_PROPERTY_COUNTRY_CODE = "country_code";
-    @javax.annotation.Nonnull
-            private CountryAlpha2 countryCode;
+  public static final String JSON_PROPERTY_COUNTRY_CODE = "country_code";
+  @javax.annotation.Nonnull
+  private CountryAlpha2 countryCode;
 
-        public static final String JSON_PROPERTY_CURRENCY_CODE = "currency_code";
-    @javax.annotation.Nonnull
-            private Currency currencyCode;
+  public static final String JSON_PROPERTY_CURRENCY_CODE = "currency_code";
+  @javax.annotation.Nonnull
+  private Currency currencyCode;
 
-        public static final String JSON_PROPERTY_TOTAL = "total";
-    @javax.annotation.Nonnull
-            private AmountInfo total;
+  public static final String JSON_PROPERTY_TOTAL = "total";
+  @javax.annotation.Nonnull
+  private AmountInfo total;
 
-        public static final String JSON_PROPERTY_MERCHANT_CAPABILITIES = "merchant_capabilities";
-    @javax.annotation.Nullable
-            private JsonNullable<List<String>> merchantCapabilities = JsonNullable.<List<String>>undefined();
+  public static final String JSON_PROPERTY_MERCHANT_CAPABILITIES = "merchant_capabilities";
+  @javax.annotation.Nullable
+  private JsonNullable<List<String>> merchantCapabilities = JsonNullable.<List<String>>undefined();
 
-        public static final String JSON_PROPERTY_SUPPORTED_NETWORKS = "supported_networks";
-    @javax.annotation.Nullable
-            private JsonNullable<List<String>> supportedNetworks = JsonNullable.<List<String>>undefined();
+  public static final String JSON_PROPERTY_SUPPORTED_NETWORKS = "supported_networks";
+  @javax.annotation.Nullable
+  private JsonNullable<List<String>> supportedNetworks = JsonNullable.<List<String>>undefined();
 
-        public static final String JSON_PROPERTY_MERCHANT_IDENTIFIER = "merchant_identifier";
-    @javax.annotation.Nullable
-            private JsonNullable<String> merchantIdentifier = JsonNullable.<String>undefined();
+  public static final String JSON_PROPERTY_MERCHANT_IDENTIFIER = "merchant_identifier";
+  @javax.annotation.Nullable
+  private JsonNullable<String> merchantIdentifier = JsonNullable.<String>undefined();
 
-        public static final String JSON_PROPERTY_REQUIRED_BILLING_CONTACT_FIELDS = "required_billing_contact_fields";
-    @javax.annotation.Nullable
-            private JsonNullable<List<ApplePayAddressParameters>> requiredBillingContactFields = JsonNullable.<List<ApplePayAddressParameters>>undefined();
+  public static final String JSON_PROPERTY_REQUIRED_BILLING_CONTACT_FIELDS = "required_billing_contact_fields";
+  @javax.annotation.Nullable
+  private JsonNullable<List<ApplePayAddressParameters>> requiredBillingContactFields = JsonNullable.<List<ApplePayAddressParameters>>undefined();
 
-        public static final String JSON_PROPERTY_REQUIRED_SHIPPING_CONTACT_FIELDS = "required_shipping_contact_fields";
-    @javax.annotation.Nullable
-            private JsonNullable<List<ApplePayAddressParameters>> requiredShippingContactFields = JsonNullable.<List<ApplePayAddressParameters>>undefined();
+  public static final String JSON_PROPERTY_REQUIRED_SHIPPING_CONTACT_FIELDS = "required_shipping_contact_fields";
+  @javax.annotation.Nullable
+  private JsonNullable<List<ApplePayAddressParameters>> requiredShippingContactFields = JsonNullable.<List<ApplePayAddressParameters>>undefined();
 
-public ApplePayPaymentRequest() {
-}
+  public ApplePayPaymentRequest() {
+  }
 
-        public ApplePayPaymentRequest countryCode(@javax.annotation.Nonnull CountryAlpha2 countryCode) {
-        
-        this.countryCode = countryCode;
-        return this;
-        }
+  public ApplePayPaymentRequest countryCode(@javax.annotation.Nonnull CountryAlpha2 countryCode) {
+    
+    this.countryCode = countryCode;
+    return this;
+  }
 
-    /**
-        * Get countryCode
-    * @return countryCode
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_COUNTRY_CODE)
+  /**
+   * Get countryCode
+   * @return countryCode
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_COUNTRY_CODE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public CountryAlpha2 getCountryCode() {
-        return countryCode;
-    }
+  public CountryAlpha2 getCountryCode() {
+    return countryCode;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_COUNTRY_CODE)
+  @JsonProperty(JSON_PROPERTY_COUNTRY_CODE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setCountryCode(@javax.annotation.Nonnull CountryAlpha2 countryCode) {
-            this.countryCode = countryCode;
-        }
+    this.countryCode = countryCode;
+  }
 
-        public ApplePayPaymentRequest currencyCode(@javax.annotation.Nonnull Currency currencyCode) {
-        
-        this.currencyCode = currencyCode;
-        return this;
-        }
+  public ApplePayPaymentRequest currencyCode(@javax.annotation.Nonnull Currency currencyCode) {
+    
+    this.currencyCode = currencyCode;
+    return this;
+  }
 
-    /**
-        * Get currencyCode
-    * @return currencyCode
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_CURRENCY_CODE)
+  /**
+   * Get currencyCode
+   * @return currencyCode
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_CURRENCY_CODE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public Currency getCurrencyCode() {
-        return currencyCode;
-    }
+  public Currency getCurrencyCode() {
+    return currencyCode;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_CURRENCY_CODE)
+  @JsonProperty(JSON_PROPERTY_CURRENCY_CODE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setCurrencyCode(@javax.annotation.Nonnull Currency currencyCode) {
-            this.currencyCode = currencyCode;
-        }
+    this.currencyCode = currencyCode;
+  }
 
-        public ApplePayPaymentRequest total(@javax.annotation.Nonnull AmountInfo total) {
-        
-        this.total = total;
-        return this;
-        }
+  public ApplePayPaymentRequest total(@javax.annotation.Nonnull AmountInfo total) {
+    
+    this.total = total;
+    return this;
+  }
 
-    /**
-        * Get total
-    * @return total
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_TOTAL)
+  /**
+   * Get total
+   * @return total
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_TOTAL)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public AmountInfo getTotal() {
-        return total;
-    }
+  public AmountInfo getTotal() {
+    return total;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_TOTAL)
+  @JsonProperty(JSON_PROPERTY_TOTAL)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setTotal(@javax.annotation.Nonnull AmountInfo total) {
-            this.total = total;
-        }
+    this.total = total;
+  }
 
-        public ApplePayPaymentRequest merchantCapabilities(@javax.annotation.Nullable List<String> merchantCapabilities) {
-        this.merchantCapabilities = JsonNullable.<List<String>>of(merchantCapabilities);
-        
-        return this;
-        }
-
-            public ApplePayPaymentRequest addMerchantCapabilitiesItem(String merchantCapabilitiesItem) {
-                if (this.merchantCapabilities == null || !this.merchantCapabilities.isPresent()) {
-                this.merchantCapabilities = JsonNullable.<List<String>>of(new ArrayList<>());
-                }
-                try {
-                this.merchantCapabilities.get().add(merchantCapabilitiesItem);
-                } catch (java.util.NoSuchElementException e) {
-                // this can never happen, as we make sure above that the value is present
-                }
-                return this;
-            }
-
-    /**
-        * The list of merchant capabilities(ex: whether capable of 3ds or no-3ds)
-    * @return merchantCapabilities
-    */
-    @javax.annotation.Nullable
-        @JsonIgnore
+  public ApplePayPaymentRequest merchantCapabilities(@javax.annotation.Nullable List<String> merchantCapabilities) {
+    this.merchantCapabilities = JsonNullable.<List<String>>of(merchantCapabilities);
     
-    public List<String> getMerchantCapabilities() {
-                return merchantCapabilities.orElse(null);
-    }
+    return this;
+  }
 
-          @JsonProperty(JSON_PROPERTY_MERCHANT_CAPABILITIES)
+  public ApplePayPaymentRequest addMerchantCapabilitiesItem(String merchantCapabilitiesItem) {
+    if (this.merchantCapabilities == null || !this.merchantCapabilities.isPresent()) {
+      this.merchantCapabilities = JsonNullable.<List<String>>of(new ArrayList<>());
+    }
+    try {
+      this.merchantCapabilities.get().add(merchantCapabilitiesItem);
+    } catch (java.util.NoSuchElementException e) {
+      // this can never happen, as we make sure above that the value is present
+    }
+    return this;
+  }
+
+  /**
+   * The list of merchant capabilities(ex: whether capable of 3ds or no-3ds)
+   * @return merchantCapabilities
+   */
+  @javax.annotation.Nullable
+  @JsonIgnore
+
+  public List<String> getMerchantCapabilities() {
+        return merchantCapabilities.orElse(null);
+  }
+
+  @JsonProperty(JSON_PROPERTY_MERCHANT_CAPABILITIES)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-        public JsonNullable<List<String>> getMerchantCapabilities_JsonNullable() {
-        return merchantCapabilities;
-        }
+  public JsonNullable<List<String>> getMerchantCapabilities_JsonNullable() {
+    return merchantCapabilities;
+  }
+  
+  @JsonProperty(JSON_PROPERTY_MERCHANT_CAPABILITIES)
+  public void setMerchantCapabilities_JsonNullable(JsonNullable<List<String>> merchantCapabilities) {
+    this.merchantCapabilities = merchantCapabilities;
+  }
+
+  public void setMerchantCapabilities(@javax.annotation.Nullable List<String> merchantCapabilities) {
+    this.merchantCapabilities = JsonNullable.<List<String>>of(merchantCapabilities);
+  }
+
+  public ApplePayPaymentRequest supportedNetworks(@javax.annotation.Nullable List<String> supportedNetworks) {
+    this.supportedNetworks = JsonNullable.<List<String>>of(supportedNetworks);
     
-        @JsonProperty(JSON_PROPERTY_MERCHANT_CAPABILITIES)
-        public void setMerchantCapabilities_JsonNullable(JsonNullable<List<String>> merchantCapabilities) {
-        this.merchantCapabilities = merchantCapabilities;
-        }
+    return this;
+  }
 
-          public void setMerchantCapabilities(@javax.annotation.Nullable List<String> merchantCapabilities) {
-            this.merchantCapabilities = JsonNullable.<List<String>>of(merchantCapabilities);
-        }
-
-        public ApplePayPaymentRequest supportedNetworks(@javax.annotation.Nullable List<String> supportedNetworks) {
-        this.supportedNetworks = JsonNullable.<List<String>>of(supportedNetworks);
-        
-        return this;
-        }
-
-            public ApplePayPaymentRequest addSupportedNetworksItem(String supportedNetworksItem) {
-                if (this.supportedNetworks == null || !this.supportedNetworks.isPresent()) {
-                this.supportedNetworks = JsonNullable.<List<String>>of(new ArrayList<>());
-                }
-                try {
-                this.supportedNetworks.get().add(supportedNetworksItem);
-                } catch (java.util.NoSuchElementException e) {
-                // this can never happen, as we make sure above that the value is present
-                }
-                return this;
-            }
-
-    /**
-        * The list of supported networks
-    * @return supportedNetworks
-    */
-    @javax.annotation.Nullable
-        @JsonIgnore
-    
-    public List<String> getSupportedNetworks() {
-                return supportedNetworks.orElse(null);
+  public ApplePayPaymentRequest addSupportedNetworksItem(String supportedNetworksItem) {
+    if (this.supportedNetworks == null || !this.supportedNetworks.isPresent()) {
+      this.supportedNetworks = JsonNullable.<List<String>>of(new ArrayList<>());
     }
+    try {
+      this.supportedNetworks.get().add(supportedNetworksItem);
+    } catch (java.util.NoSuchElementException e) {
+      // this can never happen, as we make sure above that the value is present
+    }
+    return this;
+  }
 
-          @JsonProperty(JSON_PROPERTY_SUPPORTED_NETWORKS)
+  /**
+   * The list of supported networks
+   * @return supportedNetworks
+   */
+  @javax.annotation.Nullable
+  @JsonIgnore
+
+  public List<String> getSupportedNetworks() {
+        return supportedNetworks.orElse(null);
+  }
+
+  @JsonProperty(JSON_PROPERTY_SUPPORTED_NETWORKS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-        public JsonNullable<List<String>> getSupportedNetworks_JsonNullable() {
-        return supportedNetworks;
-        }
+  public JsonNullable<List<String>> getSupportedNetworks_JsonNullable() {
+    return supportedNetworks;
+  }
+  
+  @JsonProperty(JSON_PROPERTY_SUPPORTED_NETWORKS)
+  public void setSupportedNetworks_JsonNullable(JsonNullable<List<String>> supportedNetworks) {
+    this.supportedNetworks = supportedNetworks;
+  }
+
+  public void setSupportedNetworks(@javax.annotation.Nullable List<String> supportedNetworks) {
+    this.supportedNetworks = JsonNullable.<List<String>>of(supportedNetworks);
+  }
+
+  public ApplePayPaymentRequest merchantIdentifier(@javax.annotation.Nullable String merchantIdentifier) {
+    this.merchantIdentifier = JsonNullable.<String>of(merchantIdentifier);
     
-        @JsonProperty(JSON_PROPERTY_SUPPORTED_NETWORKS)
-        public void setSupportedNetworks_JsonNullable(JsonNullable<List<String>> supportedNetworks) {
-        this.supportedNetworks = supportedNetworks;
-        }
+    return this;
+  }
 
-          public void setSupportedNetworks(@javax.annotation.Nullable List<String> supportedNetworks) {
-            this.supportedNetworks = JsonNullable.<List<String>>of(supportedNetworks);
-        }
+  /**
+   * Get merchantIdentifier
+   * @return merchantIdentifier
+   */
+  @javax.annotation.Nullable
+  @JsonIgnore
 
-        public ApplePayPaymentRequest merchantIdentifier(@javax.annotation.Nullable String merchantIdentifier) {
-        this.merchantIdentifier = JsonNullable.<String>of(merchantIdentifier);
-        
-        return this;
-        }
+  public String getMerchantIdentifier() {
+        return merchantIdentifier.orElse(null);
+  }
 
-    /**
-        * Get merchantIdentifier
-    * @return merchantIdentifier
-    */
-    @javax.annotation.Nullable
-        @JsonIgnore
-    
-    public String getMerchantIdentifier() {
-                return merchantIdentifier.orElse(null);
-    }
-
-          @JsonProperty(JSON_PROPERTY_MERCHANT_IDENTIFIER)
+  @JsonProperty(JSON_PROPERTY_MERCHANT_IDENTIFIER)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-        public JsonNullable<String> getMerchantIdentifier_JsonNullable() {
-        return merchantIdentifier;
-        }
+  public JsonNullable<String> getMerchantIdentifier_JsonNullable() {
+    return merchantIdentifier;
+  }
+  
+  @JsonProperty(JSON_PROPERTY_MERCHANT_IDENTIFIER)
+  public void setMerchantIdentifier_JsonNullable(JsonNullable<String> merchantIdentifier) {
+    this.merchantIdentifier = merchantIdentifier;
+  }
+
+  public void setMerchantIdentifier(@javax.annotation.Nullable String merchantIdentifier) {
+    this.merchantIdentifier = JsonNullable.<String>of(merchantIdentifier);
+  }
+
+  public ApplePayPaymentRequest requiredBillingContactFields(@javax.annotation.Nullable List<ApplePayAddressParameters> requiredBillingContactFields) {
+    this.requiredBillingContactFields = JsonNullable.<List<ApplePayAddressParameters>>of(requiredBillingContactFields);
     
-        @JsonProperty(JSON_PROPERTY_MERCHANT_IDENTIFIER)
-        public void setMerchantIdentifier_JsonNullable(JsonNullable<String> merchantIdentifier) {
-        this.merchantIdentifier = merchantIdentifier;
-        }
+    return this;
+  }
 
-          public void setMerchantIdentifier(@javax.annotation.Nullable String merchantIdentifier) {
-            this.merchantIdentifier = JsonNullable.<String>of(merchantIdentifier);
-        }
-
-        public ApplePayPaymentRequest requiredBillingContactFields(@javax.annotation.Nullable List<ApplePayAddressParameters> requiredBillingContactFields) {
-        this.requiredBillingContactFields = JsonNullable.<List<ApplePayAddressParameters>>of(requiredBillingContactFields);
-        
-        return this;
-        }
-
-            public ApplePayPaymentRequest addRequiredBillingContactFieldsItem(ApplePayAddressParameters requiredBillingContactFieldsItem) {
-                if (this.requiredBillingContactFields == null || !this.requiredBillingContactFields.isPresent()) {
-                this.requiredBillingContactFields = JsonNullable.<List<ApplePayAddressParameters>>of(new ArrayList<>());
-                }
-                try {
-                this.requiredBillingContactFields.get().add(requiredBillingContactFieldsItem);
-                } catch (java.util.NoSuchElementException e) {
-                // this can never happen, as we make sure above that the value is present
-                }
-                return this;
-            }
-
-    /**
-        * Get requiredBillingContactFields
-    * @return requiredBillingContactFields
-    */
-    @javax.annotation.Nullable
-        @JsonIgnore
-    
-    public List<ApplePayAddressParameters> getRequiredBillingContactFields() {
-                return requiredBillingContactFields.orElse(null);
+  public ApplePayPaymentRequest addRequiredBillingContactFieldsItem(ApplePayAddressParameters requiredBillingContactFieldsItem) {
+    if (this.requiredBillingContactFields == null || !this.requiredBillingContactFields.isPresent()) {
+      this.requiredBillingContactFields = JsonNullable.<List<ApplePayAddressParameters>>of(new ArrayList<>());
     }
+    try {
+      this.requiredBillingContactFields.get().add(requiredBillingContactFieldsItem);
+    } catch (java.util.NoSuchElementException e) {
+      // this can never happen, as we make sure above that the value is present
+    }
+    return this;
+  }
 
-          @JsonProperty(JSON_PROPERTY_REQUIRED_BILLING_CONTACT_FIELDS)
+  /**
+   * Get requiredBillingContactFields
+   * @return requiredBillingContactFields
+   */
+  @javax.annotation.Nullable
+  @JsonIgnore
+
+  public List<ApplePayAddressParameters> getRequiredBillingContactFields() {
+        return requiredBillingContactFields.orElse(null);
+  }
+
+  @JsonProperty(JSON_PROPERTY_REQUIRED_BILLING_CONTACT_FIELDS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-        public JsonNullable<List<ApplePayAddressParameters>> getRequiredBillingContactFields_JsonNullable() {
-        return requiredBillingContactFields;
-        }
+  public JsonNullable<List<ApplePayAddressParameters>> getRequiredBillingContactFields_JsonNullable() {
+    return requiredBillingContactFields;
+  }
+  
+  @JsonProperty(JSON_PROPERTY_REQUIRED_BILLING_CONTACT_FIELDS)
+  public void setRequiredBillingContactFields_JsonNullable(JsonNullable<List<ApplePayAddressParameters>> requiredBillingContactFields) {
+    this.requiredBillingContactFields = requiredBillingContactFields;
+  }
+
+  public void setRequiredBillingContactFields(@javax.annotation.Nullable List<ApplePayAddressParameters> requiredBillingContactFields) {
+    this.requiredBillingContactFields = JsonNullable.<List<ApplePayAddressParameters>>of(requiredBillingContactFields);
+  }
+
+  public ApplePayPaymentRequest requiredShippingContactFields(@javax.annotation.Nullable List<ApplePayAddressParameters> requiredShippingContactFields) {
+    this.requiredShippingContactFields = JsonNullable.<List<ApplePayAddressParameters>>of(requiredShippingContactFields);
     
-        @JsonProperty(JSON_PROPERTY_REQUIRED_BILLING_CONTACT_FIELDS)
-        public void setRequiredBillingContactFields_JsonNullable(JsonNullable<List<ApplePayAddressParameters>> requiredBillingContactFields) {
-        this.requiredBillingContactFields = requiredBillingContactFields;
-        }
+    return this;
+  }
 
-          public void setRequiredBillingContactFields(@javax.annotation.Nullable List<ApplePayAddressParameters> requiredBillingContactFields) {
-            this.requiredBillingContactFields = JsonNullable.<List<ApplePayAddressParameters>>of(requiredBillingContactFields);
-        }
-
-        public ApplePayPaymentRequest requiredShippingContactFields(@javax.annotation.Nullable List<ApplePayAddressParameters> requiredShippingContactFields) {
-        this.requiredShippingContactFields = JsonNullable.<List<ApplePayAddressParameters>>of(requiredShippingContactFields);
-        
-        return this;
-        }
-
-            public ApplePayPaymentRequest addRequiredShippingContactFieldsItem(ApplePayAddressParameters requiredShippingContactFieldsItem) {
-                if (this.requiredShippingContactFields == null || !this.requiredShippingContactFields.isPresent()) {
-                this.requiredShippingContactFields = JsonNullable.<List<ApplePayAddressParameters>>of(new ArrayList<>());
-                }
-                try {
-                this.requiredShippingContactFields.get().add(requiredShippingContactFieldsItem);
-                } catch (java.util.NoSuchElementException e) {
-                // this can never happen, as we make sure above that the value is present
-                }
-                return this;
-            }
-
-    /**
-        * Get requiredShippingContactFields
-    * @return requiredShippingContactFields
-    */
-    @javax.annotation.Nullable
-        @JsonIgnore
-    
-    public List<ApplePayAddressParameters> getRequiredShippingContactFields() {
-                return requiredShippingContactFields.orElse(null);
+  public ApplePayPaymentRequest addRequiredShippingContactFieldsItem(ApplePayAddressParameters requiredShippingContactFieldsItem) {
+    if (this.requiredShippingContactFields == null || !this.requiredShippingContactFields.isPresent()) {
+      this.requiredShippingContactFields = JsonNullable.<List<ApplePayAddressParameters>>of(new ArrayList<>());
     }
+    try {
+      this.requiredShippingContactFields.get().add(requiredShippingContactFieldsItem);
+    } catch (java.util.NoSuchElementException e) {
+      // this can never happen, as we make sure above that the value is present
+    }
+    return this;
+  }
 
-          @JsonProperty(JSON_PROPERTY_REQUIRED_SHIPPING_CONTACT_FIELDS)
+  /**
+   * Get requiredShippingContactFields
+   * @return requiredShippingContactFields
+   */
+  @javax.annotation.Nullable
+  @JsonIgnore
+
+  public List<ApplePayAddressParameters> getRequiredShippingContactFields() {
+        return requiredShippingContactFields.orElse(null);
+  }
+
+  @JsonProperty(JSON_PROPERTY_REQUIRED_SHIPPING_CONTACT_FIELDS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-        public JsonNullable<List<ApplePayAddressParameters>> getRequiredShippingContactFields_JsonNullable() {
-        return requiredShippingContactFields;
-        }
-    
-        @JsonProperty(JSON_PROPERTY_REQUIRED_SHIPPING_CONTACT_FIELDS)
-        public void setRequiredShippingContactFields_JsonNullable(JsonNullable<List<ApplePayAddressParameters>> requiredShippingContactFields) {
-        this.requiredShippingContactFields = requiredShippingContactFields;
-        }
+  public JsonNullable<List<ApplePayAddressParameters>> getRequiredShippingContactFields_JsonNullable() {
+    return requiredShippingContactFields;
+  }
+  
+  @JsonProperty(JSON_PROPERTY_REQUIRED_SHIPPING_CONTACT_FIELDS)
+  public void setRequiredShippingContactFields_JsonNullable(JsonNullable<List<ApplePayAddressParameters>> requiredShippingContactFields) {
+    this.requiredShippingContactFields = requiredShippingContactFields;
+  }
 
-          public void setRequiredShippingContactFields(@javax.annotation.Nullable List<ApplePayAddressParameters> requiredShippingContactFields) {
-            this.requiredShippingContactFields = JsonNullable.<List<ApplePayAddressParameters>>of(requiredShippingContactFields);
-        }
+  public void setRequiredShippingContactFields(@javax.annotation.Nullable List<ApplePayAddressParameters> requiredShippingContactFields) {
+    this.requiredShippingContactFields = JsonNullable.<List<ApplePayAddressParameters>>of(requiredShippingContactFields);
+  }
 
-@Override
-public boolean equals(Object o) {
+  @Override
+  public boolean equals(Object o) {
     if (this == o) {
-    return true;
+      return true;
     }
     if (o == null || getClass() != o.getClass()) {
-    return false;
+      return false;
     }
-        ApplePayPaymentRequest applePayPaymentRequest = (ApplePayPaymentRequest) o;
-        return Objects.equals(this.countryCode, applePayPaymentRequest.countryCode) &&
+    ApplePayPaymentRequest applePayPaymentRequest = (ApplePayPaymentRequest) o;
+    return Objects.equals(this.countryCode, applePayPaymentRequest.countryCode) &&
         Objects.equals(this.currencyCode, applePayPaymentRequest.currencyCode) &&
         Objects.equals(this.total, applePayPaymentRequest.total) &&
         equalsNullable(this.merchantCapabilities, applePayPaymentRequest.merchantCapabilities) &&
@@ -392,180 +392,180 @@ public boolean equals(Object o) {
         equalsNullable(this.merchantIdentifier, applePayPaymentRequest.merchantIdentifier) &&
         equalsNullable(this.requiredBillingContactFields, applePayPaymentRequest.requiredBillingContactFields) &&
         equalsNullable(this.requiredShippingContactFields, applePayPaymentRequest.requiredShippingContactFields);
-}
+  }
 
-    private static <T> boolean equalsNullable(JsonNullable<T> a, JsonNullable<T> b) {
-        return a == b || (a != null && b != null && a.isPresent() && b.isPresent() && Objects.deepEquals(a.get(), b.get()));
-        }
+  private static <T> boolean equalsNullable(JsonNullable<T> a, JsonNullable<T> b) {
+    return a == b || (a != null && b != null && a.isPresent() && b.isPresent() && Objects.deepEquals(a.get(), b.get()));
+  }
 
-    @Override
-    public int hashCode() {
-        return Objects.hash(countryCode, currencyCode, total, hashCodeNullable(merchantCapabilities), hashCodeNullable(supportedNetworks), hashCodeNullable(merchantIdentifier), hashCodeNullable(requiredBillingContactFields), hashCodeNullable(requiredShippingContactFields));
+  @Override
+  public int hashCode() {
+    return Objects.hash(countryCode, currencyCode, total, hashCodeNullable(merchantCapabilities), hashCodeNullable(supportedNetworks), hashCodeNullable(merchantIdentifier), hashCodeNullable(requiredBillingContactFields), hashCodeNullable(requiredShippingContactFields));
+  }
+
+  private static <T> int hashCodeNullable(JsonNullable<T> a) {
+    if (a == null) {
+      return 1;
     }
+    return a.isPresent() ? Arrays.deepHashCode(new Object[]{a.get()}) : 31;
+  }
 
-        private static <T> int hashCodeNullable(JsonNullable<T> a) {
-        if (a == null) {
-        return 1;
-        }
-        return a.isPresent() ? Arrays.deepHashCode(new Object[]{a.get()}) : 31;
-        }
-
-    @Override
-    public String toString() {
+  @Override
+  public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class ApplePayPaymentRequest {\n");
-        sb.append("    countryCode: ").append(toIndentedString(countryCode)).append("\n");
-        sb.append("    currencyCode: ").append(toIndentedString(currencyCode)).append("\n");
-        sb.append("    total: ").append(toIndentedString(total)).append("\n");
-        sb.append("    merchantCapabilities: ").append(toIndentedString(merchantCapabilities)).append("\n");
-        sb.append("    supportedNetworks: ").append(toIndentedString(supportedNetworks)).append("\n");
-        sb.append("    merchantIdentifier: ").append(toIndentedString(merchantIdentifier)).append("\n");
-        sb.append("    requiredBillingContactFields: ").append(toIndentedString(requiredBillingContactFields)).append("\n");
-        sb.append("    requiredShippingContactFields: ").append(toIndentedString(requiredShippingContactFields)).append("\n");
+    sb.append("    countryCode: ").append(toIndentedString(countryCode)).append("\n");
+    sb.append("    currencyCode: ").append(toIndentedString(currencyCode)).append("\n");
+    sb.append("    total: ").append(toIndentedString(total)).append("\n");
+    sb.append("    merchantCapabilities: ").append(toIndentedString(merchantCapabilities)).append("\n");
+    sb.append("    supportedNetworks: ").append(toIndentedString(supportedNetworks)).append("\n");
+    sb.append("    merchantIdentifier: ").append(toIndentedString(merchantIdentifier)).append("\n");
+    sb.append("    requiredBillingContactFields: ").append(toIndentedString(requiredBillingContactFields)).append("\n");
+    sb.append("    requiredShippingContactFields: ").append(toIndentedString(requiredShippingContactFields)).append("\n");
     sb.append("}");
     return sb.toString();
-    }
+  }
 
-    /**
-    * Convert the given object to string with each line indented by 4 spaces
-    * (except the first line).
-    */
-    private String toIndentedString(Object o) {
+  /**
+   * Convert the given object to string with each line indented by 4 spaces
+   * (except the first line).
+   */
+  private String toIndentedString(Object o) {
     if (o == null) {
-    return "null";
+      return "null";
     }
     return o.toString().replace("\n", "\n    ");
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @return URL query string
+   */
+  public String toUrlQueryString() {
+    return toUrlQueryString(null);
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @param prefix prefix of the query string
+   * @return URL query string
+   */
+  public String toUrlQueryString(String prefix) {
+    String suffix = "";
+    String containerSuffix = "";
+    String containerPrefix = "";
+    if (prefix == null) {
+      // style=form, explode=true, e.g. /pet?name=cat&type=manx
+      prefix = "";
+    } else {
+      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+      prefix = prefix + "[";
+      suffix = "]";
+      containerSuffix = "]";
+      containerPrefix = "[";
     }
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @return URL query string
-        */
-        public String toUrlQueryString() {
-        return toUrlQueryString(null);
-        }
+    StringJoiner joiner = new StringJoiner("&");
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @param prefix prefix of the query string
-        * @return URL query string
-        */
-        public String toUrlQueryString(String prefix) {
-        String suffix = "";
-        String containerSuffix = "";
-        String containerPrefix = "";
-        if (prefix == null) {
-        // style=form, explode=true, e.g. /pet?name=cat&type=manx
-        prefix = "";
-        } else {
-        // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
-        prefix = prefix + "[";
-        suffix = "]";
-        containerSuffix = "]";
-        containerPrefix = "[";
-        }
-
-        StringJoiner joiner = new StringJoiner("&");
-
-            // add `country_code` to the URL query string
-                            if (getCountryCode() != null) {
-                            try {
-                            joiner.add(String.format("%scountry_code%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCountryCode()), "UTF-8").replaceAll("\\+", "%20")));
-                            } catch (UnsupportedEncodingException e) {
-                            // Should never happen, UTF-8 is always supported
-                            throw new RuntimeException(e);
-                            }
-                            }
-
-            // add `currency_code` to the URL query string
-                            if (getCurrencyCode() != null) {
-                            try {
-                            joiner.add(String.format("%scurrency_code%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCurrencyCode()), "UTF-8").replaceAll("\\+", "%20")));
-                            } catch (UnsupportedEncodingException e) {
-                            // Should never happen, UTF-8 is always supported
-                            throw new RuntimeException(e);
-                            }
-                            }
-
-            // add `total` to the URL query string
-                            if (getTotal() != null) {
-                            joiner.add(getTotal().toUrlQueryString(prefix + "total" + suffix));
-                            }
-
-            // add `merchant_capabilities` to the URL query string
-                        if (getMerchantCapabilities() != null) {
-                        for (int i = 0; i < getMerchantCapabilities().size(); i++) {
-                        try {
-                        joiner.add(String.format("%smerchant_capabilities%s%s=%s", prefix, suffix,
-                        "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix),
-                        URLEncoder.encode(String.valueOf(getMerchantCapabilities().get(i)), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-                        }
-
-            // add `supported_networks` to the URL query string
-                        if (getSupportedNetworks() != null) {
-                        for (int i = 0; i < getSupportedNetworks().size(); i++) {
-                        try {
-                        joiner.add(String.format("%ssupported_networks%s%s=%s", prefix, suffix,
-                        "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix),
-                        URLEncoder.encode(String.valueOf(getSupportedNetworks().get(i)), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-                        }
-
-            // add `merchant_identifier` to the URL query string
-                        if (getMerchantIdentifier() != null) {
-                        try {
-                        joiner.add(String.format("%smerchant_identifier%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getMerchantIdentifier()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-            // add `required_billing_contact_fields` to the URL query string
-                            if (getRequiredBillingContactFields() != null) {
-                            for (int i = 0; i < getRequiredBillingContactFields().size(); i++) {
-                            if (getRequiredBillingContactFields().get(i) != null) {
-                            try {
-                            joiner.add(String.format("%srequired_billing_contact_fields%s%s=%s", prefix, suffix,
-                            "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix),
-                            URLEncoder.encode(String.valueOf(getRequiredBillingContactFields().get(i)), "UTF-8").replaceAll("\\+", "%20")));
-                            } catch (UnsupportedEncodingException e) {
-                            // Should never happen, UTF-8 is always supported
-                            throw new RuntimeException(e);
-                            }
-                            }
-                            }
-                            }
-
-            // add `required_shipping_contact_fields` to the URL query string
-                            if (getRequiredShippingContactFields() != null) {
-                            for (int i = 0; i < getRequiredShippingContactFields().size(); i++) {
-                            if (getRequiredShippingContactFields().get(i) != null) {
-                            try {
-                            joiner.add(String.format("%srequired_shipping_contact_fields%s%s=%s", prefix, suffix,
-                            "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix),
-                            URLEncoder.encode(String.valueOf(getRequiredShippingContactFields().get(i)), "UTF-8").replaceAll("\\+", "%20")));
-                            } catch (UnsupportedEncodingException e) {
-                            // Should never happen, UTF-8 is always supported
-                            throw new RuntimeException(e);
-                            }
-                            }
-                            }
-                            }
-
-        return joiner.toString();
-        }
-
+    // add `country_code` to the URL query string
+    if (getCountryCode() != null) {
+      try {
+        joiner.add(String.format("%scountry_code%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCountryCode()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
     }
+
+    // add `currency_code` to the URL query string
+    if (getCurrencyCode() != null) {
+      try {
+        joiner.add(String.format("%scurrency_code%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCurrencyCode()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `total` to the URL query string
+    if (getTotal() != null) {
+      joiner.add(getTotal().toUrlQueryString(prefix + "total" + suffix));
+    }
+
+    // add `merchant_capabilities` to the URL query string
+    if (getMerchantCapabilities() != null) {
+      for (int i = 0; i < getMerchantCapabilities().size(); i++) {
+        try {
+          joiner.add(String.format("%smerchant_capabilities%s%s=%s", prefix, suffix,
+              "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix),
+              URLEncoder.encode(String.valueOf(getMerchantCapabilities().get(i)), "UTF-8").replaceAll("\\+", "%20")));
+        } catch (UnsupportedEncodingException e) {
+          // Should never happen, UTF-8 is always supported
+          throw new RuntimeException(e);
+        }
+      }
+    }
+
+    // add `supported_networks` to the URL query string
+    if (getSupportedNetworks() != null) {
+      for (int i = 0; i < getSupportedNetworks().size(); i++) {
+        try {
+          joiner.add(String.format("%ssupported_networks%s%s=%s", prefix, suffix,
+              "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix),
+              URLEncoder.encode(String.valueOf(getSupportedNetworks().get(i)), "UTF-8").replaceAll("\\+", "%20")));
+        } catch (UnsupportedEncodingException e) {
+          // Should never happen, UTF-8 is always supported
+          throw new RuntimeException(e);
+        }
+      }
+    }
+
+    // add `merchant_identifier` to the URL query string
+    if (getMerchantIdentifier() != null) {
+      try {
+        joiner.add(String.format("%smerchant_identifier%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getMerchantIdentifier()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `required_billing_contact_fields` to the URL query string
+    if (getRequiredBillingContactFields() != null) {
+      for (int i = 0; i < getRequiredBillingContactFields().size(); i++) {
+        if (getRequiredBillingContactFields().get(i) != null) {
+          try {
+            joiner.add(String.format("%srequired_billing_contact_fields%s%s=%s", prefix, suffix,
+                "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix),
+                URLEncoder.encode(String.valueOf(getRequiredBillingContactFields().get(i)), "UTF-8").replaceAll("\\+", "%20")));
+          } catch (UnsupportedEncodingException e) {
+            // Should never happen, UTF-8 is always supported
+            throw new RuntimeException(e);
+          }
+        }
+      }
+    }
+
+    // add `required_shipping_contact_fields` to the URL query string
+    if (getRequiredShippingContactFields() != null) {
+      for (int i = 0; i < getRequiredShippingContactFields().size(); i++) {
+        if (getRequiredShippingContactFields().get(i) != null) {
+          try {
+            joiner.add(String.format("%srequired_shipping_contact_fields%s%s=%s", prefix, suffix,
+                "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix),
+                URLEncoder.encode(String.valueOf(getRequiredShippingContactFields().get(i)), "UTF-8").replaceAll("\\+", "%20")));
+          } catch (UnsupportedEncodingException e) {
+            // Should never happen, UTF-8 is always supported
+            throw new RuntimeException(e);
+          }
+        }
+      }
+    }
+
+    return joiner.toString();
+  }
+
+}
 

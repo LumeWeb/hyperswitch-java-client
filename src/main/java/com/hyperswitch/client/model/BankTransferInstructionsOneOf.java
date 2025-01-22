@@ -28,122 +28,122 @@ import java.net.URLEncoder;
 import java.util.StringJoiner;
 
 /**
-* BankTransferInstructionsOneOf
-*/
-    @JsonPropertyOrder({
-        BankTransferInstructionsOneOf.JSON_PROPERTY_DOKU_BANK_TRANSFER_INSTRUCTIONS
-    })
-            @JsonTypeName("BankTransferInstructions_oneOf")
+ * BankTransferInstructionsOneOf
+ */
+@JsonPropertyOrder({
+  BankTransferInstructionsOneOf.JSON_PROPERTY_DOKU_BANK_TRANSFER_INSTRUCTIONS
+})
+@JsonTypeName("BankTransferInstructions_oneOf")
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class BankTransferInstructionsOneOf {
-        public static final String JSON_PROPERTY_DOKU_BANK_TRANSFER_INSTRUCTIONS = "doku_bank_transfer_instructions";
-    @javax.annotation.Nonnull
-            private DokuBankTransferInstructions dokuBankTransferInstructions;
+  public static final String JSON_PROPERTY_DOKU_BANK_TRANSFER_INSTRUCTIONS = "doku_bank_transfer_instructions";
+  @javax.annotation.Nonnull
+  private DokuBankTransferInstructions dokuBankTransferInstructions;
 
-public BankTransferInstructionsOneOf() {
-}
+  public BankTransferInstructionsOneOf() {
+  }
 
-        public BankTransferInstructionsOneOf dokuBankTransferInstructions(@javax.annotation.Nonnull DokuBankTransferInstructions dokuBankTransferInstructions) {
-        
-        this.dokuBankTransferInstructions = dokuBankTransferInstructions;
-        return this;
-        }
+  public BankTransferInstructionsOneOf dokuBankTransferInstructions(@javax.annotation.Nonnull DokuBankTransferInstructions dokuBankTransferInstructions) {
+    
+    this.dokuBankTransferInstructions = dokuBankTransferInstructions;
+    return this;
+  }
 
-    /**
-        * Get dokuBankTransferInstructions
-    * @return dokuBankTransferInstructions
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_DOKU_BANK_TRANSFER_INSTRUCTIONS)
+  /**
+   * Get dokuBankTransferInstructions
+   * @return dokuBankTransferInstructions
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_DOKU_BANK_TRANSFER_INSTRUCTIONS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public DokuBankTransferInstructions getDokuBankTransferInstructions() {
-        return dokuBankTransferInstructions;
-    }
+  public DokuBankTransferInstructions getDokuBankTransferInstructions() {
+    return dokuBankTransferInstructions;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_DOKU_BANK_TRANSFER_INSTRUCTIONS)
+  @JsonProperty(JSON_PROPERTY_DOKU_BANK_TRANSFER_INSTRUCTIONS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setDokuBankTransferInstructions(@javax.annotation.Nonnull DokuBankTransferInstructions dokuBankTransferInstructions) {
-            this.dokuBankTransferInstructions = dokuBankTransferInstructions;
-        }
+    this.dokuBankTransferInstructions = dokuBankTransferInstructions;
+  }
 
-@Override
-public boolean equals(Object o) {
+  @Override
+  public boolean equals(Object o) {
     if (this == o) {
-    return true;
+      return true;
     }
     if (o == null || getClass() != o.getClass()) {
-    return false;
+      return false;
     }
-        BankTransferInstructionsOneOf bankTransferInstructionsOneOf = (BankTransferInstructionsOneOf) o;
-        return Objects.equals(this.dokuBankTransferInstructions, bankTransferInstructionsOneOf.dokuBankTransferInstructions);
-}
+    BankTransferInstructionsOneOf bankTransferInstructionsOneOf = (BankTransferInstructionsOneOf) o;
+    return Objects.equals(this.dokuBankTransferInstructions, bankTransferInstructionsOneOf.dokuBankTransferInstructions);
+  }
 
-    @Override
-    public int hashCode() {
-        return Objects.hash(dokuBankTransferInstructions);
-    }
+  @Override
+  public int hashCode() {
+    return Objects.hash(dokuBankTransferInstructions);
+  }
 
-    @Override
-    public String toString() {
+  @Override
+  public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class BankTransferInstructionsOneOf {\n");
-        sb.append("    dokuBankTransferInstructions: ").append(toIndentedString(dokuBankTransferInstructions)).append("\n");
+    sb.append("    dokuBankTransferInstructions: ").append(toIndentedString(dokuBankTransferInstructions)).append("\n");
     sb.append("}");
     return sb.toString();
-    }
+  }
 
-    /**
-    * Convert the given object to string with each line indented by 4 spaces
-    * (except the first line).
-    */
-    private String toIndentedString(Object o) {
+  /**
+   * Convert the given object to string with each line indented by 4 spaces
+   * (except the first line).
+   */
+  private String toIndentedString(Object o) {
     if (o == null) {
-    return "null";
+      return "null";
     }
     return o.toString().replace("\n", "\n    ");
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @return URL query string
+   */
+  public String toUrlQueryString() {
+    return toUrlQueryString(null);
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @param prefix prefix of the query string
+   * @return URL query string
+   */
+  public String toUrlQueryString(String prefix) {
+    String suffix = "";
+    String containerSuffix = "";
+    String containerPrefix = "";
+    if (prefix == null) {
+      // style=form, explode=true, e.g. /pet?name=cat&type=manx
+      prefix = "";
+    } else {
+      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+      prefix = prefix + "[";
+      suffix = "]";
+      containerSuffix = "]";
+      containerPrefix = "[";
     }
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @return URL query string
-        */
-        public String toUrlQueryString() {
-        return toUrlQueryString(null);
-        }
+    StringJoiner joiner = new StringJoiner("&");
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @param prefix prefix of the query string
-        * @return URL query string
-        */
-        public String toUrlQueryString(String prefix) {
-        String suffix = "";
-        String containerSuffix = "";
-        String containerPrefix = "";
-        if (prefix == null) {
-        // style=form, explode=true, e.g. /pet?name=cat&type=manx
-        prefix = "";
-        } else {
-        // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
-        prefix = prefix + "[";
-        suffix = "]";
-        containerSuffix = "]";
-        containerPrefix = "[";
-        }
-
-        StringJoiner joiner = new StringJoiner("&");
-
-            // add `doku_bank_transfer_instructions` to the URL query string
-                            if (getDokuBankTransferInstructions() != null) {
-                            joiner.add(getDokuBankTransferInstructions().toUrlQueryString(prefix + "doku_bank_transfer_instructions" + suffix));
-                            }
-
-        return joiner.toString();
-        }
-
+    // add `doku_bank_transfer_instructions` to the URL query string
+    if (getDokuBankTransferInstructions() != null) {
+      joiner.add(getDokuBankTransferInstructions().toUrlQueryString(prefix + "doku_bank_transfer_instructions" + suffix));
     }
+
+    return joiner.toString();
+  }
+
+}
 

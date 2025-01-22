@@ -27,168 +27,168 @@ import java.net.URLEncoder;
 import java.util.StringJoiner;
 
 /**
-* MultibancoTransferInstructions
-*/
-    @JsonPropertyOrder({
-        MultibancoTransferInstructions.JSON_PROPERTY_REFERENCE,
-        MultibancoTransferInstructions.JSON_PROPERTY_ENTITY
-    })
+ * MultibancoTransferInstructions
+ */
+@JsonPropertyOrder({
+  MultibancoTransferInstructions.JSON_PROPERTY_REFERENCE,
+  MultibancoTransferInstructions.JSON_PROPERTY_ENTITY
+})
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class MultibancoTransferInstructions {
-        public static final String JSON_PROPERTY_REFERENCE = "reference";
-    @javax.annotation.Nonnull
-            private String reference;
+  public static final String JSON_PROPERTY_REFERENCE = "reference";
+  @javax.annotation.Nonnull
+  private String reference;
 
-        public static final String JSON_PROPERTY_ENTITY = "entity";
-    @javax.annotation.Nonnull
-            private String entity;
+  public static final String JSON_PROPERTY_ENTITY = "entity";
+  @javax.annotation.Nonnull
+  private String entity;
 
-public MultibancoTransferInstructions() {
-}
+  public MultibancoTransferInstructions() {
+  }
 
-        public MultibancoTransferInstructions reference(@javax.annotation.Nonnull String reference) {
-        
-        this.reference = reference;
-        return this;
-        }
+  public MultibancoTransferInstructions reference(@javax.annotation.Nonnull String reference) {
+    
+    this.reference = reference;
+    return this;
+  }
 
-    /**
-        * Get reference
-    * @return reference
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_REFERENCE)
+  /**
+   * Get reference
+   * @return reference
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_REFERENCE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public String getReference() {
-        return reference;
-    }
+  public String getReference() {
+    return reference;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_REFERENCE)
+  @JsonProperty(JSON_PROPERTY_REFERENCE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setReference(@javax.annotation.Nonnull String reference) {
-            this.reference = reference;
-        }
+    this.reference = reference;
+  }
 
-        public MultibancoTransferInstructions entity(@javax.annotation.Nonnull String entity) {
-        
-        this.entity = entity;
-        return this;
-        }
+  public MultibancoTransferInstructions entity(@javax.annotation.Nonnull String entity) {
+    
+    this.entity = entity;
+    return this;
+  }
 
-    /**
-        * Get entity
-    * @return entity
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_ENTITY)
+  /**
+   * Get entity
+   * @return entity
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_ENTITY)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public String getEntity() {
-        return entity;
-    }
+  public String getEntity() {
+    return entity;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_ENTITY)
+  @JsonProperty(JSON_PROPERTY_ENTITY)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setEntity(@javax.annotation.Nonnull String entity) {
-            this.entity = entity;
-        }
+    this.entity = entity;
+  }
 
-@Override
-public boolean equals(Object o) {
+  @Override
+  public boolean equals(Object o) {
     if (this == o) {
-    return true;
+      return true;
     }
     if (o == null || getClass() != o.getClass()) {
-    return false;
+      return false;
     }
-        MultibancoTransferInstructions multibancoTransferInstructions = (MultibancoTransferInstructions) o;
-        return Objects.equals(this.reference, multibancoTransferInstructions.reference) &&
+    MultibancoTransferInstructions multibancoTransferInstructions = (MultibancoTransferInstructions) o;
+    return Objects.equals(this.reference, multibancoTransferInstructions.reference) &&
         Objects.equals(this.entity, multibancoTransferInstructions.entity);
-}
+  }
 
-    @Override
-    public int hashCode() {
-        return Objects.hash(reference, entity);
-    }
+  @Override
+  public int hashCode() {
+    return Objects.hash(reference, entity);
+  }
 
-    @Override
-    public String toString() {
+  @Override
+  public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class MultibancoTransferInstructions {\n");
-        sb.append("    reference: ").append(toIndentedString(reference)).append("\n");
-        sb.append("    entity: ").append(toIndentedString(entity)).append("\n");
+    sb.append("    reference: ").append(toIndentedString(reference)).append("\n");
+    sb.append("    entity: ").append(toIndentedString(entity)).append("\n");
     sb.append("}");
     return sb.toString();
-    }
+  }
 
-    /**
-    * Convert the given object to string with each line indented by 4 spaces
-    * (except the first line).
-    */
-    private String toIndentedString(Object o) {
+  /**
+   * Convert the given object to string with each line indented by 4 spaces
+   * (except the first line).
+   */
+  private String toIndentedString(Object o) {
     if (o == null) {
-    return "null";
+      return "null";
     }
     return o.toString().replace("\n", "\n    ");
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @return URL query string
+   */
+  public String toUrlQueryString() {
+    return toUrlQueryString(null);
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @param prefix prefix of the query string
+   * @return URL query string
+   */
+  public String toUrlQueryString(String prefix) {
+    String suffix = "";
+    String containerSuffix = "";
+    String containerPrefix = "";
+    if (prefix == null) {
+      // style=form, explode=true, e.g. /pet?name=cat&type=manx
+      prefix = "";
+    } else {
+      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+      prefix = prefix + "[";
+      suffix = "]";
+      containerSuffix = "]";
+      containerPrefix = "[";
     }
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @return URL query string
-        */
-        public String toUrlQueryString() {
-        return toUrlQueryString(null);
-        }
+    StringJoiner joiner = new StringJoiner("&");
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @param prefix prefix of the query string
-        * @return URL query string
-        */
-        public String toUrlQueryString(String prefix) {
-        String suffix = "";
-        String containerSuffix = "";
-        String containerPrefix = "";
-        if (prefix == null) {
-        // style=form, explode=true, e.g. /pet?name=cat&type=manx
-        prefix = "";
-        } else {
-        // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
-        prefix = prefix + "[";
-        suffix = "]";
-        containerSuffix = "]";
-        containerPrefix = "[";
-        }
-
-        StringJoiner joiner = new StringJoiner("&");
-
-            // add `reference` to the URL query string
-                        if (getReference() != null) {
-                        try {
-                        joiner.add(String.format("%sreference%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getReference()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-            // add `entity` to the URL query string
-                        if (getEntity() != null) {
-                        try {
-                        joiner.add(String.format("%sentity%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getEntity()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-        return joiner.toString();
-        }
-
+    // add `reference` to the URL query string
+    if (getReference() != null) {
+      try {
+        joiner.add(String.format("%sreference%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getReference()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
     }
+
+    // add `entity` to the URL query string
+    if (getEntity() != null) {
+      try {
+        joiner.add(String.format("%sentity%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getEntity()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    return joiner.toString();
+  }
+
+}
 

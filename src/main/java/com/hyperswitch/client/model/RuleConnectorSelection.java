@@ -32,213 +32,213 @@ import java.net.URLEncoder;
 import java.util.StringJoiner;
 
 /**
-* Represents a rule  &#x60;&#x60;&#x60;text rule_name: [stripe, adyen, checkout] { payment.method &#x3D; card { payment.method.cardtype &#x3D; (credit, debit) { payment.method.network &#x3D; (amex, rupay, diners) }  payment.method.cardtype &#x3D; credit } } &#x60;&#x60;&#x60;
-*/
-    @JsonPropertyOrder({
-        RuleConnectorSelection.JSON_PROPERTY_NAME,
-        RuleConnectorSelection.JSON_PROPERTY_CONNECTOR_SELECTION,
-        RuleConnectorSelection.JSON_PROPERTY_STATEMENTS
-    })
+ * Represents a rule  &#x60;&#x60;&#x60;text rule_name: [stripe, adyen, checkout] { payment.method &#x3D; card { payment.method.cardtype &#x3D; (credit, debit) { payment.method.network &#x3D; (amex, rupay, diners) }  payment.method.cardtype &#x3D; credit } } &#x60;&#x60;&#x60;
+ */
+@JsonPropertyOrder({
+  RuleConnectorSelection.JSON_PROPERTY_NAME,
+  RuleConnectorSelection.JSON_PROPERTY_CONNECTOR_SELECTION,
+  RuleConnectorSelection.JSON_PROPERTY_STATEMENTS
+})
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class RuleConnectorSelection {
-        public static final String JSON_PROPERTY_NAME = "name";
-    @javax.annotation.Nonnull
-            private String name;
+  public static final String JSON_PROPERTY_NAME = "name";
+  @javax.annotation.Nonnull
+  private String name;
 
-        public static final String JSON_PROPERTY_CONNECTOR_SELECTION = "connectorSelection";
-    @javax.annotation.Nonnull
-            private ConnectorSelection connectorSelection;
+  public static final String JSON_PROPERTY_CONNECTOR_SELECTION = "connectorSelection";
+  @javax.annotation.Nonnull
+  private ConnectorSelection connectorSelection;
 
-        public static final String JSON_PROPERTY_STATEMENTS = "statements";
-    @javax.annotation.Nonnull
-            private List<IfStatement> statements = new ArrayList<>();
+  public static final String JSON_PROPERTY_STATEMENTS = "statements";
+  @javax.annotation.Nonnull
+  private List<IfStatement> statements = new ArrayList<>();
 
-public RuleConnectorSelection() {
-}
+  public RuleConnectorSelection() {
+  }
 
-        public RuleConnectorSelection name(@javax.annotation.Nonnull String name) {
-        
-        this.name = name;
-        return this;
-        }
+  public RuleConnectorSelection name(@javax.annotation.Nonnull String name) {
+    
+    this.name = name;
+    return this;
+  }
 
-    /**
-        * Get name
-    * @return name
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_NAME)
+  /**
+   * Get name
+   * @return name
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_NAME)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public String getName() {
-        return name;
-    }
+  public String getName() {
+    return name;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_NAME)
+  @JsonProperty(JSON_PROPERTY_NAME)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setName(@javax.annotation.Nonnull String name) {
-            this.name = name;
-        }
+    this.name = name;
+  }
 
-        public RuleConnectorSelection connectorSelection(@javax.annotation.Nonnull ConnectorSelection connectorSelection) {
-        
-        this.connectorSelection = connectorSelection;
-        return this;
-        }
+  public RuleConnectorSelection connectorSelection(@javax.annotation.Nonnull ConnectorSelection connectorSelection) {
+    
+    this.connectorSelection = connectorSelection;
+    return this;
+  }
 
-    /**
-        * Get connectorSelection
-    * @return connectorSelection
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_CONNECTOR_SELECTION)
+  /**
+   * Get connectorSelection
+   * @return connectorSelection
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_CONNECTOR_SELECTION)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public ConnectorSelection getConnectorSelection() {
-        return connectorSelection;
-    }
+  public ConnectorSelection getConnectorSelection() {
+    return connectorSelection;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_CONNECTOR_SELECTION)
+  @JsonProperty(JSON_PROPERTY_CONNECTOR_SELECTION)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setConnectorSelection(@javax.annotation.Nonnull ConnectorSelection connectorSelection) {
-            this.connectorSelection = connectorSelection;
-        }
+    this.connectorSelection = connectorSelection;
+  }
 
-        public RuleConnectorSelection statements(@javax.annotation.Nonnull List<IfStatement> statements) {
-        
-        this.statements = statements;
-        return this;
-        }
+  public RuleConnectorSelection statements(@javax.annotation.Nonnull List<IfStatement> statements) {
+    
+    this.statements = statements;
+    return this;
+  }
 
-            public RuleConnectorSelection addStatementsItem(IfStatement statementsItem) {
-                if (this.statements == null) {
-                this.statements = new ArrayList<>();
-                }
-                this.statements.add(statementsItem);
-                return this;
-            }
+  public RuleConnectorSelection addStatementsItem(IfStatement statementsItem) {
+    if (this.statements == null) {
+      this.statements = new ArrayList<>();
+    }
+    this.statements.add(statementsItem);
+    return this;
+  }
 
-    /**
-        * Get statements
-    * @return statements
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_STATEMENTS)
+  /**
+   * Get statements
+   * @return statements
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_STATEMENTS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public List<IfStatement> getStatements() {
-        return statements;
-    }
+  public List<IfStatement> getStatements() {
+    return statements;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_STATEMENTS)
+  @JsonProperty(JSON_PROPERTY_STATEMENTS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setStatements(@javax.annotation.Nonnull List<IfStatement> statements) {
-            this.statements = statements;
-        }
+    this.statements = statements;
+  }
 
-@Override
-public boolean equals(Object o) {
+  @Override
+  public boolean equals(Object o) {
     if (this == o) {
-    return true;
+      return true;
     }
     if (o == null || getClass() != o.getClass()) {
-    return false;
+      return false;
     }
-        RuleConnectorSelection ruleConnectorSelection = (RuleConnectorSelection) o;
-        return Objects.equals(this.name, ruleConnectorSelection.name) &&
+    RuleConnectorSelection ruleConnectorSelection = (RuleConnectorSelection) o;
+    return Objects.equals(this.name, ruleConnectorSelection.name) &&
         Objects.equals(this.connectorSelection, ruleConnectorSelection.connectorSelection) &&
         Objects.equals(this.statements, ruleConnectorSelection.statements);
-}
+  }
 
-    @Override
-    public int hashCode() {
-        return Objects.hash(name, connectorSelection, statements);
-    }
+  @Override
+  public int hashCode() {
+    return Objects.hash(name, connectorSelection, statements);
+  }
 
-    @Override
-    public String toString() {
+  @Override
+  public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class RuleConnectorSelection {\n");
-        sb.append("    name: ").append(toIndentedString(name)).append("\n");
-        sb.append("    connectorSelection: ").append(toIndentedString(connectorSelection)).append("\n");
-        sb.append("    statements: ").append(toIndentedString(statements)).append("\n");
+    sb.append("    name: ").append(toIndentedString(name)).append("\n");
+    sb.append("    connectorSelection: ").append(toIndentedString(connectorSelection)).append("\n");
+    sb.append("    statements: ").append(toIndentedString(statements)).append("\n");
     sb.append("}");
     return sb.toString();
-    }
+  }
 
-    /**
-    * Convert the given object to string with each line indented by 4 spaces
-    * (except the first line).
-    */
-    private String toIndentedString(Object o) {
+  /**
+   * Convert the given object to string with each line indented by 4 spaces
+   * (except the first line).
+   */
+  private String toIndentedString(Object o) {
     if (o == null) {
-    return "null";
+      return "null";
     }
     return o.toString().replace("\n", "\n    ");
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @return URL query string
+   */
+  public String toUrlQueryString() {
+    return toUrlQueryString(null);
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @param prefix prefix of the query string
+   * @return URL query string
+   */
+  public String toUrlQueryString(String prefix) {
+    String suffix = "";
+    String containerSuffix = "";
+    String containerPrefix = "";
+    if (prefix == null) {
+      // style=form, explode=true, e.g. /pet?name=cat&type=manx
+      prefix = "";
+    } else {
+      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+      prefix = prefix + "[";
+      suffix = "]";
+      containerSuffix = "]";
+      containerPrefix = "[";
     }
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @return URL query string
-        */
-        public String toUrlQueryString() {
-        return toUrlQueryString(null);
-        }
+    StringJoiner joiner = new StringJoiner("&");
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @param prefix prefix of the query string
-        * @return URL query string
-        */
-        public String toUrlQueryString(String prefix) {
-        String suffix = "";
-        String containerSuffix = "";
-        String containerPrefix = "";
-        if (prefix == null) {
-        // style=form, explode=true, e.g. /pet?name=cat&type=manx
-        prefix = "";
-        } else {
-        // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
-        prefix = prefix + "[";
-        suffix = "]";
-        containerSuffix = "]";
-        containerPrefix = "[";
-        }
-
-        StringJoiner joiner = new StringJoiner("&");
-
-            // add `name` to the URL query string
-                        if (getName() != null) {
-                        try {
-                        joiner.add(String.format("%sname%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getName()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-            // add `connectorSelection` to the URL query string
-                            if (getConnectorSelection() != null) {
-                            joiner.add(getConnectorSelection().toUrlQueryString(prefix + "connectorSelection" + suffix));
-                            }
-
-            // add `statements` to the URL query string
-                            if (getStatements() != null) {
-                            for (int i = 0; i < getStatements().size(); i++) {
-                            if (getStatements().get(i) != null) {
-                            joiner.add(getStatements().get(i).toUrlQueryString(String.format("%sstatements%s%s", prefix, suffix,
-                            "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix))));
-                            }
-                            }
-                            }
-
-        return joiner.toString();
-        }
-
+    // add `name` to the URL query string
+    if (getName() != null) {
+      try {
+        joiner.add(String.format("%sname%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getName()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
     }
+
+    // add `connectorSelection` to the URL query string
+    if (getConnectorSelection() != null) {
+      joiner.add(getConnectorSelection().toUrlQueryString(prefix + "connectorSelection" + suffix));
+    }
+
+    // add `statements` to the URL query string
+    if (getStatements() != null) {
+      for (int i = 0; i < getStatements().size(); i++) {
+        if (getStatements().get(i) != null) {
+          joiner.add(getStatements().get(i).toUrlQueryString(String.format("%sstatements%s%s", prefix, suffix,
+              "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix))));
+        }
+      }
+    }
+
+    return joiner.toString();
+  }
+
+}
 

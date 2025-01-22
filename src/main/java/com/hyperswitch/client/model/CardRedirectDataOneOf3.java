@@ -27,127 +27,127 @@ import java.net.URLEncoder;
 import java.util.StringJoiner;
 
 /**
-* CardRedirectDataOneOf3
-*/
-    @JsonPropertyOrder({
-        CardRedirectDataOneOf3.JSON_PROPERTY_CARD_REDIRECT
-    })
-            @JsonTypeName("CardRedirectData_oneOf_3")
+ * CardRedirectDataOneOf3
+ */
+@JsonPropertyOrder({
+  CardRedirectDataOneOf3.JSON_PROPERTY_CARD_REDIRECT
+})
+@JsonTypeName("CardRedirectData_oneOf_3")
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class CardRedirectDataOneOf3 {
-        public static final String JSON_PROPERTY_CARD_REDIRECT = "card_redirect";
-    @javax.annotation.Nonnull
-            private Object cardRedirect;
+  public static final String JSON_PROPERTY_CARD_REDIRECT = "card_redirect";
+  @javax.annotation.Nonnull
+  private Object cardRedirect;
 
-public CardRedirectDataOneOf3() {
-}
+  public CardRedirectDataOneOf3() {
+  }
 
-        public CardRedirectDataOneOf3 cardRedirect(@javax.annotation.Nonnull Object cardRedirect) {
-        
-        this.cardRedirect = cardRedirect;
-        return this;
-        }
+  public CardRedirectDataOneOf3 cardRedirect(@javax.annotation.Nonnull Object cardRedirect) {
+    
+    this.cardRedirect = cardRedirect;
+    return this;
+  }
 
-    /**
-        * Get cardRedirect
-    * @return cardRedirect
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_CARD_REDIRECT)
+  /**
+   * Get cardRedirect
+   * @return cardRedirect
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_CARD_REDIRECT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public Object getCardRedirect() {
-        return cardRedirect;
-    }
+  public Object getCardRedirect() {
+    return cardRedirect;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_CARD_REDIRECT)
+  @JsonProperty(JSON_PROPERTY_CARD_REDIRECT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setCardRedirect(@javax.annotation.Nonnull Object cardRedirect) {
-            this.cardRedirect = cardRedirect;
-        }
+    this.cardRedirect = cardRedirect;
+  }
 
-@Override
-public boolean equals(Object o) {
+  @Override
+  public boolean equals(Object o) {
     if (this == o) {
-    return true;
+      return true;
     }
     if (o == null || getClass() != o.getClass()) {
-    return false;
+      return false;
     }
-        CardRedirectDataOneOf3 cardRedirectDataOneOf3 = (CardRedirectDataOneOf3) o;
-        return Objects.equals(this.cardRedirect, cardRedirectDataOneOf3.cardRedirect);
-}
+    CardRedirectDataOneOf3 cardRedirectDataOneOf3 = (CardRedirectDataOneOf3) o;
+    return Objects.equals(this.cardRedirect, cardRedirectDataOneOf3.cardRedirect);
+  }
 
-    @Override
-    public int hashCode() {
-        return Objects.hash(cardRedirect);
-    }
+  @Override
+  public int hashCode() {
+    return Objects.hash(cardRedirect);
+  }
 
-    @Override
-    public String toString() {
+  @Override
+  public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class CardRedirectDataOneOf3 {\n");
-        sb.append("    cardRedirect: ").append(toIndentedString(cardRedirect)).append("\n");
+    sb.append("    cardRedirect: ").append(toIndentedString(cardRedirect)).append("\n");
     sb.append("}");
     return sb.toString();
-    }
+  }
 
-    /**
-    * Convert the given object to string with each line indented by 4 spaces
-    * (except the first line).
-    */
-    private String toIndentedString(Object o) {
+  /**
+   * Convert the given object to string with each line indented by 4 spaces
+   * (except the first line).
+   */
+  private String toIndentedString(Object o) {
     if (o == null) {
-    return "null";
+      return "null";
     }
     return o.toString().replace("\n", "\n    ");
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @return URL query string
+   */
+  public String toUrlQueryString() {
+    return toUrlQueryString(null);
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @param prefix prefix of the query string
+   * @return URL query string
+   */
+  public String toUrlQueryString(String prefix) {
+    String suffix = "";
+    String containerSuffix = "";
+    String containerPrefix = "";
+    if (prefix == null) {
+      // style=form, explode=true, e.g. /pet?name=cat&type=manx
+      prefix = "";
+    } else {
+      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+      prefix = prefix + "[";
+      suffix = "]";
+      containerSuffix = "]";
+      containerPrefix = "[";
     }
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @return URL query string
-        */
-        public String toUrlQueryString() {
-        return toUrlQueryString(null);
-        }
+    StringJoiner joiner = new StringJoiner("&");
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @param prefix prefix of the query string
-        * @return URL query string
-        */
-        public String toUrlQueryString(String prefix) {
-        String suffix = "";
-        String containerSuffix = "";
-        String containerPrefix = "";
-        if (prefix == null) {
-        // style=form, explode=true, e.g. /pet?name=cat&type=manx
-        prefix = "";
-        } else {
-        // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
-        prefix = prefix + "[";
-        suffix = "]";
-        containerSuffix = "]";
-        containerPrefix = "[";
-        }
-
-        StringJoiner joiner = new StringJoiner("&");
-
-            // add `card_redirect` to the URL query string
-                        if (getCardRedirect() != null) {
-                        try {
-                        joiner.add(String.format("%scard_redirect%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCardRedirect()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-        return joiner.toString();
-        }
-
+    // add `card_redirect` to the URL query string
+    if (getCardRedirect() != null) {
+      try {
+        joiner.add(String.format("%scard_redirect%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCardRedirect()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
     }
+
+    return joiner.toString();
+  }
+
+}
 

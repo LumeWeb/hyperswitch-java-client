@@ -28,122 +28,122 @@ import java.net.URLEncoder;
 import java.util.StringJoiner;
 
 /**
-* BankTransferDataOneOf3
-*/
-    @JsonPropertyOrder({
-        BankTransferDataOneOf3.JSON_PROPERTY_MULTIBANCO_BANK_TRANSFER
-    })
-            @JsonTypeName("BankTransferData_oneOf_3")
+ * BankTransferDataOneOf3
+ */
+@JsonPropertyOrder({
+  BankTransferDataOneOf3.JSON_PROPERTY_MULTIBANCO_BANK_TRANSFER
+})
+@JsonTypeName("BankTransferData_oneOf_3")
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class BankTransferDataOneOf3 {
-        public static final String JSON_PROPERTY_MULTIBANCO_BANK_TRANSFER = "multibanco_bank_transfer";
-    @javax.annotation.Nonnull
-            private BankTransferDataOneOf3MultibancoBankTransfer multibancoBankTransfer;
+  public static final String JSON_PROPERTY_MULTIBANCO_BANK_TRANSFER = "multibanco_bank_transfer";
+  @javax.annotation.Nonnull
+  private BankTransferDataOneOf3MultibancoBankTransfer multibancoBankTransfer;
 
-public BankTransferDataOneOf3() {
-}
+  public BankTransferDataOneOf3() {
+  }
 
-        public BankTransferDataOneOf3 multibancoBankTransfer(@javax.annotation.Nonnull BankTransferDataOneOf3MultibancoBankTransfer multibancoBankTransfer) {
-        
-        this.multibancoBankTransfer = multibancoBankTransfer;
-        return this;
-        }
+  public BankTransferDataOneOf3 multibancoBankTransfer(@javax.annotation.Nonnull BankTransferDataOneOf3MultibancoBankTransfer multibancoBankTransfer) {
+    
+    this.multibancoBankTransfer = multibancoBankTransfer;
+    return this;
+  }
 
-    /**
-        * Get multibancoBankTransfer
-    * @return multibancoBankTransfer
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_MULTIBANCO_BANK_TRANSFER)
+  /**
+   * Get multibancoBankTransfer
+   * @return multibancoBankTransfer
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_MULTIBANCO_BANK_TRANSFER)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public BankTransferDataOneOf3MultibancoBankTransfer getMultibancoBankTransfer() {
-        return multibancoBankTransfer;
-    }
+  public BankTransferDataOneOf3MultibancoBankTransfer getMultibancoBankTransfer() {
+    return multibancoBankTransfer;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_MULTIBANCO_BANK_TRANSFER)
+  @JsonProperty(JSON_PROPERTY_MULTIBANCO_BANK_TRANSFER)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setMultibancoBankTransfer(@javax.annotation.Nonnull BankTransferDataOneOf3MultibancoBankTransfer multibancoBankTransfer) {
-            this.multibancoBankTransfer = multibancoBankTransfer;
-        }
+    this.multibancoBankTransfer = multibancoBankTransfer;
+  }
 
-@Override
-public boolean equals(Object o) {
+  @Override
+  public boolean equals(Object o) {
     if (this == o) {
-    return true;
+      return true;
     }
     if (o == null || getClass() != o.getClass()) {
-    return false;
+      return false;
     }
-        BankTransferDataOneOf3 bankTransferDataOneOf3 = (BankTransferDataOneOf3) o;
-        return Objects.equals(this.multibancoBankTransfer, bankTransferDataOneOf3.multibancoBankTransfer);
-}
+    BankTransferDataOneOf3 bankTransferDataOneOf3 = (BankTransferDataOneOf3) o;
+    return Objects.equals(this.multibancoBankTransfer, bankTransferDataOneOf3.multibancoBankTransfer);
+  }
 
-    @Override
-    public int hashCode() {
-        return Objects.hash(multibancoBankTransfer);
-    }
+  @Override
+  public int hashCode() {
+    return Objects.hash(multibancoBankTransfer);
+  }
 
-    @Override
-    public String toString() {
+  @Override
+  public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class BankTransferDataOneOf3 {\n");
-        sb.append("    multibancoBankTransfer: ").append(toIndentedString(multibancoBankTransfer)).append("\n");
+    sb.append("    multibancoBankTransfer: ").append(toIndentedString(multibancoBankTransfer)).append("\n");
     sb.append("}");
     return sb.toString();
-    }
+  }
 
-    /**
-    * Convert the given object to string with each line indented by 4 spaces
-    * (except the first line).
-    */
-    private String toIndentedString(Object o) {
+  /**
+   * Convert the given object to string with each line indented by 4 spaces
+   * (except the first line).
+   */
+  private String toIndentedString(Object o) {
     if (o == null) {
-    return "null";
+      return "null";
     }
     return o.toString().replace("\n", "\n    ");
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @return URL query string
+   */
+  public String toUrlQueryString() {
+    return toUrlQueryString(null);
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @param prefix prefix of the query string
+   * @return URL query string
+   */
+  public String toUrlQueryString(String prefix) {
+    String suffix = "";
+    String containerSuffix = "";
+    String containerPrefix = "";
+    if (prefix == null) {
+      // style=form, explode=true, e.g. /pet?name=cat&type=manx
+      prefix = "";
+    } else {
+      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+      prefix = prefix + "[";
+      suffix = "]";
+      containerSuffix = "]";
+      containerPrefix = "[";
     }
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @return URL query string
-        */
-        public String toUrlQueryString() {
-        return toUrlQueryString(null);
-        }
+    StringJoiner joiner = new StringJoiner("&");
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @param prefix prefix of the query string
-        * @return URL query string
-        */
-        public String toUrlQueryString(String prefix) {
-        String suffix = "";
-        String containerSuffix = "";
-        String containerPrefix = "";
-        if (prefix == null) {
-        // style=form, explode=true, e.g. /pet?name=cat&type=manx
-        prefix = "";
-        } else {
-        // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
-        prefix = prefix + "[";
-        suffix = "]";
-        containerSuffix = "]";
-        containerPrefix = "[";
-        }
-
-        StringJoiner joiner = new StringJoiner("&");
-
-            // add `multibanco_bank_transfer` to the URL query string
-                            if (getMultibancoBankTransfer() != null) {
-                            joiner.add(getMultibancoBankTransfer().toUrlQueryString(prefix + "multibanco_bank_transfer" + suffix));
-                            }
-
-        return joiner.toString();
-        }
-
+    // add `multibanco_bank_transfer` to the URL query string
+    if (getMultibancoBankTransfer() != null) {
+      joiner.add(getMultibancoBankTransfer().toUrlQueryString(prefix + "multibanco_bank_transfer" + suffix));
     }
+
+    return joiner.toString();
+  }
+
+}
 

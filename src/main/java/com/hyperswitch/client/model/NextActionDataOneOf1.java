@@ -28,20 +28,20 @@ import java.net.URLEncoder;
 import java.util.StringJoiner;
 
 /**
-* Informs the next steps for bank transfer and also contains the charges details (ex: amount received, amount charged etc)
-*/
-    @JsonPropertyOrder({
-        NextActionDataOneOf1.JSON_PROPERTY_BANK_TRANSFER_STEPS_AND_CHARGES_DETAILS,
-        NextActionDataOneOf1.JSON_PROPERTY_TYPE
-    })
-            @JsonTypeName("NextActionData_oneOf_1")
+ * Informs the next steps for bank transfer and also contains the charges details (ex: amount received, amount charged etc)
+ */
+@JsonPropertyOrder({
+  NextActionDataOneOf1.JSON_PROPERTY_BANK_TRANSFER_STEPS_AND_CHARGES_DETAILS,
+  NextActionDataOneOf1.JSON_PROPERTY_TYPE
+})
+@JsonTypeName("NextActionData_oneOf_1")
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class NextActionDataOneOf1 {
-        public static final String JSON_PROPERTY_BANK_TRANSFER_STEPS_AND_CHARGES_DETAILS = "bank_transfer_steps_and_charges_details";
-    @javax.annotation.Nonnull
-            private BankTransferNextStepsData bankTransferStepsAndChargesDetails;
+  public static final String JSON_PROPERTY_BANK_TRANSFER_STEPS_AND_CHARGES_DETAILS = "bank_transfer_steps_and_charges_details";
+  @javax.annotation.Nonnull
+  private BankTransferNextStepsData bankTransferStepsAndChargesDetails;
 
-              /**
+  /**
    * Gets or Sets type
    */
   public enum TypeEnum {
@@ -74,151 +74,151 @@ public class NextActionDataOneOf1 {
     }
   }
 
-        public static final String JSON_PROPERTY_TYPE = "type";
-    @javax.annotation.Nonnull
-            private TypeEnum type;
+  public static final String JSON_PROPERTY_TYPE = "type";
+  @javax.annotation.Nonnull
+  private TypeEnum type;
 
-public NextActionDataOneOf1() {
-}
+  public NextActionDataOneOf1() {
+  }
 
-        public NextActionDataOneOf1 bankTransferStepsAndChargesDetails(@javax.annotation.Nonnull BankTransferNextStepsData bankTransferStepsAndChargesDetails) {
-        
-        this.bankTransferStepsAndChargesDetails = bankTransferStepsAndChargesDetails;
-        return this;
-        }
+  public NextActionDataOneOf1 bankTransferStepsAndChargesDetails(@javax.annotation.Nonnull BankTransferNextStepsData bankTransferStepsAndChargesDetails) {
+    
+    this.bankTransferStepsAndChargesDetails = bankTransferStepsAndChargesDetails;
+    return this;
+  }
 
-    /**
-        * Get bankTransferStepsAndChargesDetails
-    * @return bankTransferStepsAndChargesDetails
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_BANK_TRANSFER_STEPS_AND_CHARGES_DETAILS)
+  /**
+   * Get bankTransferStepsAndChargesDetails
+   * @return bankTransferStepsAndChargesDetails
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_BANK_TRANSFER_STEPS_AND_CHARGES_DETAILS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public BankTransferNextStepsData getBankTransferStepsAndChargesDetails() {
-        return bankTransferStepsAndChargesDetails;
-    }
+  public BankTransferNextStepsData getBankTransferStepsAndChargesDetails() {
+    return bankTransferStepsAndChargesDetails;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_BANK_TRANSFER_STEPS_AND_CHARGES_DETAILS)
+  @JsonProperty(JSON_PROPERTY_BANK_TRANSFER_STEPS_AND_CHARGES_DETAILS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setBankTransferStepsAndChargesDetails(@javax.annotation.Nonnull BankTransferNextStepsData bankTransferStepsAndChargesDetails) {
-            this.bankTransferStepsAndChargesDetails = bankTransferStepsAndChargesDetails;
-        }
+    this.bankTransferStepsAndChargesDetails = bankTransferStepsAndChargesDetails;
+  }
 
-        public NextActionDataOneOf1 type(@javax.annotation.Nonnull TypeEnum type) {
-        
-        this.type = type;
-        return this;
-        }
+  public NextActionDataOneOf1 type(@javax.annotation.Nonnull TypeEnum type) {
+    
+    this.type = type;
+    return this;
+  }
 
-    /**
-        * Get type
-    * @return type
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_TYPE)
+  /**
+   * Get type
+   * @return type
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_TYPE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public TypeEnum getType() {
-        return type;
-    }
+  public TypeEnum getType() {
+    return type;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_TYPE)
+  @JsonProperty(JSON_PROPERTY_TYPE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setType(@javax.annotation.Nonnull TypeEnum type) {
-            this.type = type;
-        }
+    this.type = type;
+  }
 
-@Override
-public boolean equals(Object o) {
+  @Override
+  public boolean equals(Object o) {
     if (this == o) {
-    return true;
+      return true;
     }
     if (o == null || getClass() != o.getClass()) {
-    return false;
+      return false;
     }
-        NextActionDataOneOf1 nextActionDataOneOf1 = (NextActionDataOneOf1) o;
-        return Objects.equals(this.bankTransferStepsAndChargesDetails, nextActionDataOneOf1.bankTransferStepsAndChargesDetails) &&
+    NextActionDataOneOf1 nextActionDataOneOf1 = (NextActionDataOneOf1) o;
+    return Objects.equals(this.bankTransferStepsAndChargesDetails, nextActionDataOneOf1.bankTransferStepsAndChargesDetails) &&
         Objects.equals(this.type, nextActionDataOneOf1.type);
-}
+  }
 
-    @Override
-    public int hashCode() {
-        return Objects.hash(bankTransferStepsAndChargesDetails, type);
-    }
+  @Override
+  public int hashCode() {
+    return Objects.hash(bankTransferStepsAndChargesDetails, type);
+  }
 
-    @Override
-    public String toString() {
+  @Override
+  public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class NextActionDataOneOf1 {\n");
-        sb.append("    bankTransferStepsAndChargesDetails: ").append(toIndentedString(bankTransferStepsAndChargesDetails)).append("\n");
-        sb.append("    type: ").append(toIndentedString(type)).append("\n");
+    sb.append("    bankTransferStepsAndChargesDetails: ").append(toIndentedString(bankTransferStepsAndChargesDetails)).append("\n");
+    sb.append("    type: ").append(toIndentedString(type)).append("\n");
     sb.append("}");
     return sb.toString();
-    }
+  }
 
-    /**
-    * Convert the given object to string with each line indented by 4 spaces
-    * (except the first line).
-    */
-    private String toIndentedString(Object o) {
+  /**
+   * Convert the given object to string with each line indented by 4 spaces
+   * (except the first line).
+   */
+  private String toIndentedString(Object o) {
     if (o == null) {
-    return "null";
+      return "null";
     }
     return o.toString().replace("\n", "\n    ");
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @return URL query string
+   */
+  public String toUrlQueryString() {
+    return toUrlQueryString(null);
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @param prefix prefix of the query string
+   * @return URL query string
+   */
+  public String toUrlQueryString(String prefix) {
+    String suffix = "";
+    String containerSuffix = "";
+    String containerPrefix = "";
+    if (prefix == null) {
+      // style=form, explode=true, e.g. /pet?name=cat&type=manx
+      prefix = "";
+    } else {
+      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+      prefix = prefix + "[";
+      suffix = "]";
+      containerSuffix = "]";
+      containerPrefix = "[";
     }
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @return URL query string
-        */
-        public String toUrlQueryString() {
-        return toUrlQueryString(null);
-        }
+    StringJoiner joiner = new StringJoiner("&");
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @param prefix prefix of the query string
-        * @return URL query string
-        */
-        public String toUrlQueryString(String prefix) {
-        String suffix = "";
-        String containerSuffix = "";
-        String containerPrefix = "";
-        if (prefix == null) {
-        // style=form, explode=true, e.g. /pet?name=cat&type=manx
-        prefix = "";
-        } else {
-        // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
-        prefix = prefix + "[";
-        suffix = "]";
-        containerSuffix = "]";
-        containerPrefix = "[";
-        }
-
-        StringJoiner joiner = new StringJoiner("&");
-
-            // add `bank_transfer_steps_and_charges_details` to the URL query string
-                            if (getBankTransferStepsAndChargesDetails() != null) {
-                            joiner.add(getBankTransferStepsAndChargesDetails().toUrlQueryString(prefix + "bank_transfer_steps_and_charges_details" + suffix));
-                            }
-
-            // add `type` to the URL query string
-                        if (getType() != null) {
-                        try {
-                        joiner.add(String.format("%stype%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getType()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-        return joiner.toString();
-        }
-
+    // add `bank_transfer_steps_and_charges_details` to the URL query string
+    if (getBankTransferStepsAndChargesDetails() != null) {
+      joiner.add(getBankTransferStepsAndChargesDetails().toUrlQueryString(prefix + "bank_transfer_steps_and_charges_details" + suffix));
     }
+
+    // add `type` to the URL query string
+    if (getType() != null) {
+      try {
+        joiner.add(String.format("%stype%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getType()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    return joiner.toString();
+  }
+
+}
 

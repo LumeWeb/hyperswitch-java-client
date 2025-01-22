@@ -33,283 +33,283 @@ import java.net.URLEncoder;
 import java.util.StringJoiner;
 
 /**
-* BankRedirectDataOneOf4Giropay
-*/
-    @JsonPropertyOrder({
-        BankRedirectDataOneOf4Giropay.JSON_PROPERTY_BILLING_DETAILS,
-        BankRedirectDataOneOf4Giropay.JSON_PROPERTY_BANK_ACCOUNT_BIC,
-        BankRedirectDataOneOf4Giropay.JSON_PROPERTY_BANK_ACCOUNT_IBAN,
-        BankRedirectDataOneOf4Giropay.JSON_PROPERTY_COUNTRY
-    })
-            @JsonTypeName("BankRedirectData_oneOf_4_giropay")
+ * BankRedirectDataOneOf4Giropay
+ */
+@JsonPropertyOrder({
+  BankRedirectDataOneOf4Giropay.JSON_PROPERTY_BILLING_DETAILS,
+  BankRedirectDataOneOf4Giropay.JSON_PROPERTY_BANK_ACCOUNT_BIC,
+  BankRedirectDataOneOf4Giropay.JSON_PROPERTY_BANK_ACCOUNT_IBAN,
+  BankRedirectDataOneOf4Giropay.JSON_PROPERTY_COUNTRY
+})
+@JsonTypeName("BankRedirectData_oneOf_4_giropay")
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class BankRedirectDataOneOf4Giropay {
-        public static final String JSON_PROPERTY_BILLING_DETAILS = "billing_details";
-    @javax.annotation.Nullable
-            private JsonNullable<BankRedirectBilling> billingDetails = JsonNullable.<BankRedirectBilling>undefined();
+  public static final String JSON_PROPERTY_BILLING_DETAILS = "billing_details";
+  @javax.annotation.Nullable
+  private JsonNullable<BankRedirectBilling> billingDetails = JsonNullable.<BankRedirectBilling>undefined();
 
-        public static final String JSON_PROPERTY_BANK_ACCOUNT_BIC = "bank_account_bic";
-    @javax.annotation.Nullable
-            private JsonNullable<String> bankAccountBic = JsonNullable.<String>undefined();
+  public static final String JSON_PROPERTY_BANK_ACCOUNT_BIC = "bank_account_bic";
+  @javax.annotation.Nullable
+  private JsonNullable<String> bankAccountBic = JsonNullable.<String>undefined();
 
-        public static final String JSON_PROPERTY_BANK_ACCOUNT_IBAN = "bank_account_iban";
-    @javax.annotation.Nullable
-            private JsonNullable<String> bankAccountIban = JsonNullable.<String>undefined();
+  public static final String JSON_PROPERTY_BANK_ACCOUNT_IBAN = "bank_account_iban";
+  @javax.annotation.Nullable
+  private JsonNullable<String> bankAccountIban = JsonNullable.<String>undefined();
 
-        public static final String JSON_PROPERTY_COUNTRY = "country";
-    @javax.annotation.Nonnull
-            private CountryAlpha2 country;
+  public static final String JSON_PROPERTY_COUNTRY = "country";
+  @javax.annotation.Nonnull
+  private CountryAlpha2 country;
 
-public BankRedirectDataOneOf4Giropay() {
-}
+  public BankRedirectDataOneOf4Giropay() {
+  }
 
-        public BankRedirectDataOneOf4Giropay billingDetails(@javax.annotation.Nullable BankRedirectBilling billingDetails) {
-        this.billingDetails = JsonNullable.<BankRedirectBilling>of(billingDetails);
-        
-        return this;
-        }
-
-    /**
-        * Get billingDetails
-    * @return billingDetails
-    */
-    @javax.annotation.Nullable
-        @JsonIgnore
+  public BankRedirectDataOneOf4Giropay billingDetails(@javax.annotation.Nullable BankRedirectBilling billingDetails) {
+    this.billingDetails = JsonNullable.<BankRedirectBilling>of(billingDetails);
     
-    public BankRedirectBilling getBillingDetails() {
-                return billingDetails.orElse(null);
-    }
+    return this;
+  }
 
-          @JsonProperty(JSON_PROPERTY_BILLING_DETAILS)
+  /**
+   * Get billingDetails
+   * @return billingDetails
+   */
+  @javax.annotation.Nullable
+  @JsonIgnore
+
+  public BankRedirectBilling getBillingDetails() {
+        return billingDetails.orElse(null);
+  }
+
+  @JsonProperty(JSON_PROPERTY_BILLING_DETAILS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-        public JsonNullable<BankRedirectBilling> getBillingDetails_JsonNullable() {
-        return billingDetails;
-        }
+  public JsonNullable<BankRedirectBilling> getBillingDetails_JsonNullable() {
+    return billingDetails;
+  }
+  
+  @JsonProperty(JSON_PROPERTY_BILLING_DETAILS)
+  public void setBillingDetails_JsonNullable(JsonNullable<BankRedirectBilling> billingDetails) {
+    this.billingDetails = billingDetails;
+  }
+
+  public void setBillingDetails(@javax.annotation.Nullable BankRedirectBilling billingDetails) {
+    this.billingDetails = JsonNullable.<BankRedirectBilling>of(billingDetails);
+  }
+
+  public BankRedirectDataOneOf4Giropay bankAccountBic(@javax.annotation.Nullable String bankAccountBic) {
+    this.bankAccountBic = JsonNullable.<String>of(bankAccountBic);
     
-        @JsonProperty(JSON_PROPERTY_BILLING_DETAILS)
-        public void setBillingDetails_JsonNullable(JsonNullable<BankRedirectBilling> billingDetails) {
-        this.billingDetails = billingDetails;
-        }
+    return this;
+  }
 
-          public void setBillingDetails(@javax.annotation.Nullable BankRedirectBilling billingDetails) {
-            this.billingDetails = JsonNullable.<BankRedirectBilling>of(billingDetails);
-        }
+  /**
+   * Bank account bic code
+   * @return bankAccountBic
+   */
+  @javax.annotation.Nullable
+  @JsonIgnore
 
-        public BankRedirectDataOneOf4Giropay bankAccountBic(@javax.annotation.Nullable String bankAccountBic) {
-        this.bankAccountBic = JsonNullable.<String>of(bankAccountBic);
-        
-        return this;
-        }
+  public String getBankAccountBic() {
+        return bankAccountBic.orElse(null);
+  }
 
-    /**
-        * Bank account bic code
-    * @return bankAccountBic
-    */
-    @javax.annotation.Nullable
-        @JsonIgnore
-    
-    public String getBankAccountBic() {
-                return bankAccountBic.orElse(null);
-    }
-
-          @JsonProperty(JSON_PROPERTY_BANK_ACCOUNT_BIC)
+  @JsonProperty(JSON_PROPERTY_BANK_ACCOUNT_BIC)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-        public JsonNullable<String> getBankAccountBic_JsonNullable() {
-        return bankAccountBic;
-        }
+  public JsonNullable<String> getBankAccountBic_JsonNullable() {
+    return bankAccountBic;
+  }
+  
+  @JsonProperty(JSON_PROPERTY_BANK_ACCOUNT_BIC)
+  public void setBankAccountBic_JsonNullable(JsonNullable<String> bankAccountBic) {
+    this.bankAccountBic = bankAccountBic;
+  }
+
+  public void setBankAccountBic(@javax.annotation.Nullable String bankAccountBic) {
+    this.bankAccountBic = JsonNullable.<String>of(bankAccountBic);
+  }
+
+  public BankRedirectDataOneOf4Giropay bankAccountIban(@javax.annotation.Nullable String bankAccountIban) {
+    this.bankAccountIban = JsonNullable.<String>of(bankAccountIban);
     
-        @JsonProperty(JSON_PROPERTY_BANK_ACCOUNT_BIC)
-        public void setBankAccountBic_JsonNullable(JsonNullable<String> bankAccountBic) {
-        this.bankAccountBic = bankAccountBic;
-        }
+    return this;
+  }
 
-          public void setBankAccountBic(@javax.annotation.Nullable String bankAccountBic) {
-            this.bankAccountBic = JsonNullable.<String>of(bankAccountBic);
-        }
+  /**
+   * Bank account iban
+   * @return bankAccountIban
+   */
+  @javax.annotation.Nullable
+  @JsonIgnore
 
-        public BankRedirectDataOneOf4Giropay bankAccountIban(@javax.annotation.Nullable String bankAccountIban) {
-        this.bankAccountIban = JsonNullable.<String>of(bankAccountIban);
-        
-        return this;
-        }
+  public String getBankAccountIban() {
+        return bankAccountIban.orElse(null);
+  }
 
-    /**
-        * Bank account iban
-    * @return bankAccountIban
-    */
-    @javax.annotation.Nullable
-        @JsonIgnore
-    
-    public String getBankAccountIban() {
-                return bankAccountIban.orElse(null);
-    }
-
-          @JsonProperty(JSON_PROPERTY_BANK_ACCOUNT_IBAN)
+  @JsonProperty(JSON_PROPERTY_BANK_ACCOUNT_IBAN)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-        public JsonNullable<String> getBankAccountIban_JsonNullable() {
-        return bankAccountIban;
-        }
+  public JsonNullable<String> getBankAccountIban_JsonNullable() {
+    return bankAccountIban;
+  }
+  
+  @JsonProperty(JSON_PROPERTY_BANK_ACCOUNT_IBAN)
+  public void setBankAccountIban_JsonNullable(JsonNullable<String> bankAccountIban) {
+    this.bankAccountIban = bankAccountIban;
+  }
+
+  public void setBankAccountIban(@javax.annotation.Nullable String bankAccountIban) {
+    this.bankAccountIban = JsonNullable.<String>of(bankAccountIban);
+  }
+
+  public BankRedirectDataOneOf4Giropay country(@javax.annotation.Nonnull CountryAlpha2 country) {
     
-        @JsonProperty(JSON_PROPERTY_BANK_ACCOUNT_IBAN)
-        public void setBankAccountIban_JsonNullable(JsonNullable<String> bankAccountIban) {
-        this.bankAccountIban = bankAccountIban;
-        }
+    this.country = country;
+    return this;
+  }
 
-          public void setBankAccountIban(@javax.annotation.Nullable String bankAccountIban) {
-            this.bankAccountIban = JsonNullable.<String>of(bankAccountIban);
-        }
-
-        public BankRedirectDataOneOf4Giropay country(@javax.annotation.Nonnull CountryAlpha2 country) {
-        
-        this.country = country;
-        return this;
-        }
-
-    /**
-        * Get country
-    * @return country
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_COUNTRY)
+  /**
+   * Get country
+   * @return country
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_COUNTRY)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public CountryAlpha2 getCountry() {
-        return country;
-    }
+  public CountryAlpha2 getCountry() {
+    return country;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_COUNTRY)
+  @JsonProperty(JSON_PROPERTY_COUNTRY)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setCountry(@javax.annotation.Nonnull CountryAlpha2 country) {
-            this.country = country;
-        }
+    this.country = country;
+  }
 
-@Override
-public boolean equals(Object o) {
+  @Override
+  public boolean equals(Object o) {
     if (this == o) {
-    return true;
+      return true;
     }
     if (o == null || getClass() != o.getClass()) {
-    return false;
+      return false;
     }
-        BankRedirectDataOneOf4Giropay bankRedirectDataOneOf4Giropay = (BankRedirectDataOneOf4Giropay) o;
-        return equalsNullable(this.billingDetails, bankRedirectDataOneOf4Giropay.billingDetails) &&
+    BankRedirectDataOneOf4Giropay bankRedirectDataOneOf4Giropay = (BankRedirectDataOneOf4Giropay) o;
+    return equalsNullable(this.billingDetails, bankRedirectDataOneOf4Giropay.billingDetails) &&
         equalsNullable(this.bankAccountBic, bankRedirectDataOneOf4Giropay.bankAccountBic) &&
         equalsNullable(this.bankAccountIban, bankRedirectDataOneOf4Giropay.bankAccountIban) &&
         Objects.equals(this.country, bankRedirectDataOneOf4Giropay.country);
-}
+  }
 
-    private static <T> boolean equalsNullable(JsonNullable<T> a, JsonNullable<T> b) {
-        return a == b || (a != null && b != null && a.isPresent() && b.isPresent() && Objects.deepEquals(a.get(), b.get()));
-        }
+  private static <T> boolean equalsNullable(JsonNullable<T> a, JsonNullable<T> b) {
+    return a == b || (a != null && b != null && a.isPresent() && b.isPresent() && Objects.deepEquals(a.get(), b.get()));
+  }
 
-    @Override
-    public int hashCode() {
-        return Objects.hash(hashCodeNullable(billingDetails), hashCodeNullable(bankAccountBic), hashCodeNullable(bankAccountIban), country);
+  @Override
+  public int hashCode() {
+    return Objects.hash(hashCodeNullable(billingDetails), hashCodeNullable(bankAccountBic), hashCodeNullable(bankAccountIban), country);
+  }
+
+  private static <T> int hashCodeNullable(JsonNullable<T> a) {
+    if (a == null) {
+      return 1;
     }
+    return a.isPresent() ? Arrays.deepHashCode(new Object[]{a.get()}) : 31;
+  }
 
-        private static <T> int hashCodeNullable(JsonNullable<T> a) {
-        if (a == null) {
-        return 1;
-        }
-        return a.isPresent() ? Arrays.deepHashCode(new Object[]{a.get()}) : 31;
-        }
-
-    @Override
-    public String toString() {
+  @Override
+  public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class BankRedirectDataOneOf4Giropay {\n");
-        sb.append("    billingDetails: ").append(toIndentedString(billingDetails)).append("\n");
-        sb.append("    bankAccountBic: ").append(toIndentedString(bankAccountBic)).append("\n");
-        sb.append("    bankAccountIban: ").append(toIndentedString(bankAccountIban)).append("\n");
-        sb.append("    country: ").append(toIndentedString(country)).append("\n");
+    sb.append("    billingDetails: ").append(toIndentedString(billingDetails)).append("\n");
+    sb.append("    bankAccountBic: ").append(toIndentedString(bankAccountBic)).append("\n");
+    sb.append("    bankAccountIban: ").append(toIndentedString(bankAccountIban)).append("\n");
+    sb.append("    country: ").append(toIndentedString(country)).append("\n");
     sb.append("}");
     return sb.toString();
-    }
+  }
 
-    /**
-    * Convert the given object to string with each line indented by 4 spaces
-    * (except the first line).
-    */
-    private String toIndentedString(Object o) {
+  /**
+   * Convert the given object to string with each line indented by 4 spaces
+   * (except the first line).
+   */
+  private String toIndentedString(Object o) {
     if (o == null) {
-    return "null";
+      return "null";
     }
     return o.toString().replace("\n", "\n    ");
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @return URL query string
+   */
+  public String toUrlQueryString() {
+    return toUrlQueryString(null);
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @param prefix prefix of the query string
+   * @return URL query string
+   */
+  public String toUrlQueryString(String prefix) {
+    String suffix = "";
+    String containerSuffix = "";
+    String containerPrefix = "";
+    if (prefix == null) {
+      // style=form, explode=true, e.g. /pet?name=cat&type=manx
+      prefix = "";
+    } else {
+      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+      prefix = prefix + "[";
+      suffix = "]";
+      containerSuffix = "]";
+      containerPrefix = "[";
     }
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @return URL query string
-        */
-        public String toUrlQueryString() {
-        return toUrlQueryString(null);
-        }
+    StringJoiner joiner = new StringJoiner("&");
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @param prefix prefix of the query string
-        * @return URL query string
-        */
-        public String toUrlQueryString(String prefix) {
-        String suffix = "";
-        String containerSuffix = "";
-        String containerPrefix = "";
-        if (prefix == null) {
-        // style=form, explode=true, e.g. /pet?name=cat&type=manx
-        prefix = "";
-        } else {
-        // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
-        prefix = prefix + "[";
-        suffix = "]";
-        containerSuffix = "]";
-        containerPrefix = "[";
-        }
-
-        StringJoiner joiner = new StringJoiner("&");
-
-            // add `billing_details` to the URL query string
-                            if (getBillingDetails() != null) {
-                            joiner.add(getBillingDetails().toUrlQueryString(prefix + "billing_details" + suffix));
-                            }
-
-            // add `bank_account_bic` to the URL query string
-                        if (getBankAccountBic() != null) {
-                        try {
-                        joiner.add(String.format("%sbank_account_bic%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getBankAccountBic()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-            // add `bank_account_iban` to the URL query string
-                        if (getBankAccountIban() != null) {
-                        try {
-                        joiner.add(String.format("%sbank_account_iban%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getBankAccountIban()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-            // add `country` to the URL query string
-                            if (getCountry() != null) {
-                            try {
-                            joiner.add(String.format("%scountry%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCountry()), "UTF-8").replaceAll("\\+", "%20")));
-                            } catch (UnsupportedEncodingException e) {
-                            // Should never happen, UTF-8 is always supported
-                            throw new RuntimeException(e);
-                            }
-                            }
-
-        return joiner.toString();
-        }
-
+    // add `billing_details` to the URL query string
+    if (getBillingDetails() != null) {
+      joiner.add(getBillingDetails().toUrlQueryString(prefix + "billing_details" + suffix));
     }
+
+    // add `bank_account_bic` to the URL query string
+    if (getBankAccountBic() != null) {
+      try {
+        joiner.add(String.format("%sbank_account_bic%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getBankAccountBic()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `bank_account_iban` to the URL query string
+    if (getBankAccountIban() != null) {
+      try {
+        joiner.add(String.format("%sbank_account_iban%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getBankAccountIban()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `country` to the URL query string
+    if (getCountry() != null) {
+      try {
+        joiner.add(String.format("%scountry%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCountry()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    return joiner.toString();
+  }
+
+}
 

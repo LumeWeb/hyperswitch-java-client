@@ -31,252 +31,252 @@ import java.net.URLEncoder;
 import java.util.StringJoiner;
 
 /**
-* RealTimePaymentData
-*/
-    @JsonPropertyOrder({
-        RealTimePaymentData.JSON_PROPERTY_FPS,
-        RealTimePaymentData.JSON_PROPERTY_DUIT_NOW,
-        RealTimePaymentData.JSON_PROPERTY_PROMPT_PAY,
-        RealTimePaymentData.JSON_PROPERTY_VIET_QR
-    })
+ * RealTimePaymentData
+ */
+@JsonPropertyOrder({
+  RealTimePaymentData.JSON_PROPERTY_FPS,
+  RealTimePaymentData.JSON_PROPERTY_DUIT_NOW,
+  RealTimePaymentData.JSON_PROPERTY_PROMPT_PAY,
+  RealTimePaymentData.JSON_PROPERTY_VIET_QR
+})
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class RealTimePaymentData {
-        public static final String JSON_PROPERTY_FPS = "fps";
-    @javax.annotation.Nonnull
-            private Object fps;
+  public static final String JSON_PROPERTY_FPS = "fps";
+  @javax.annotation.Nonnull
+  private Object fps;
 
-        public static final String JSON_PROPERTY_DUIT_NOW = "duit_now";
-    @javax.annotation.Nonnull
-            private Object duitNow;
+  public static final String JSON_PROPERTY_DUIT_NOW = "duit_now";
+  @javax.annotation.Nonnull
+  private Object duitNow;
 
-        public static final String JSON_PROPERTY_PROMPT_PAY = "prompt_pay";
-    @javax.annotation.Nonnull
-            private Object promptPay;
+  public static final String JSON_PROPERTY_PROMPT_PAY = "prompt_pay";
+  @javax.annotation.Nonnull
+  private Object promptPay;
 
-        public static final String JSON_PROPERTY_VIET_QR = "viet_qr";
-    @javax.annotation.Nonnull
-            private Object vietQr;
+  public static final String JSON_PROPERTY_VIET_QR = "viet_qr";
+  @javax.annotation.Nonnull
+  private Object vietQr;
 
-public RealTimePaymentData() {
-}
+  public RealTimePaymentData() {
+  }
 
-        public RealTimePaymentData fps(@javax.annotation.Nonnull Object fps) {
-        
-        this.fps = fps;
-        return this;
-        }
+  public RealTimePaymentData fps(@javax.annotation.Nonnull Object fps) {
+    
+    this.fps = fps;
+    return this;
+  }
 
-    /**
-        * Get fps
-    * @return fps
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_FPS)
+  /**
+   * Get fps
+   * @return fps
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_FPS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public Object getFps() {
-        return fps;
-    }
+  public Object getFps() {
+    return fps;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_FPS)
+  @JsonProperty(JSON_PROPERTY_FPS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setFps(@javax.annotation.Nonnull Object fps) {
-            this.fps = fps;
-        }
+    this.fps = fps;
+  }
 
-        public RealTimePaymentData duitNow(@javax.annotation.Nonnull Object duitNow) {
-        
-        this.duitNow = duitNow;
-        return this;
-        }
+  public RealTimePaymentData duitNow(@javax.annotation.Nonnull Object duitNow) {
+    
+    this.duitNow = duitNow;
+    return this;
+  }
 
-    /**
-        * Get duitNow
-    * @return duitNow
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_DUIT_NOW)
+  /**
+   * Get duitNow
+   * @return duitNow
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_DUIT_NOW)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public Object getDuitNow() {
-        return duitNow;
-    }
+  public Object getDuitNow() {
+    return duitNow;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_DUIT_NOW)
+  @JsonProperty(JSON_PROPERTY_DUIT_NOW)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setDuitNow(@javax.annotation.Nonnull Object duitNow) {
-            this.duitNow = duitNow;
-        }
+    this.duitNow = duitNow;
+  }
 
-        public RealTimePaymentData promptPay(@javax.annotation.Nonnull Object promptPay) {
-        
-        this.promptPay = promptPay;
-        return this;
-        }
+  public RealTimePaymentData promptPay(@javax.annotation.Nonnull Object promptPay) {
+    
+    this.promptPay = promptPay;
+    return this;
+  }
 
-    /**
-        * Get promptPay
-    * @return promptPay
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_PROMPT_PAY)
+  /**
+   * Get promptPay
+   * @return promptPay
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_PROMPT_PAY)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public Object getPromptPay() {
-        return promptPay;
-    }
+  public Object getPromptPay() {
+    return promptPay;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_PROMPT_PAY)
+  @JsonProperty(JSON_PROPERTY_PROMPT_PAY)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setPromptPay(@javax.annotation.Nonnull Object promptPay) {
-            this.promptPay = promptPay;
-        }
+    this.promptPay = promptPay;
+  }
 
-        public RealTimePaymentData vietQr(@javax.annotation.Nonnull Object vietQr) {
-        
-        this.vietQr = vietQr;
-        return this;
-        }
+  public RealTimePaymentData vietQr(@javax.annotation.Nonnull Object vietQr) {
+    
+    this.vietQr = vietQr;
+    return this;
+  }
 
-    /**
-        * Get vietQr
-    * @return vietQr
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_VIET_QR)
+  /**
+   * Get vietQr
+   * @return vietQr
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_VIET_QR)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public Object getVietQr() {
-        return vietQr;
-    }
+  public Object getVietQr() {
+    return vietQr;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_VIET_QR)
+  @JsonProperty(JSON_PROPERTY_VIET_QR)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setVietQr(@javax.annotation.Nonnull Object vietQr) {
-            this.vietQr = vietQr;
-        }
+    this.vietQr = vietQr;
+  }
 
-@Override
-public boolean equals(Object o) {
+  @Override
+  public boolean equals(Object o) {
     if (this == o) {
-    return true;
+      return true;
     }
     if (o == null || getClass() != o.getClass()) {
-    return false;
+      return false;
     }
-        RealTimePaymentData realTimePaymentData = (RealTimePaymentData) o;
-        return Objects.equals(this.fps, realTimePaymentData.fps) &&
+    RealTimePaymentData realTimePaymentData = (RealTimePaymentData) o;
+    return Objects.equals(this.fps, realTimePaymentData.fps) &&
         Objects.equals(this.duitNow, realTimePaymentData.duitNow) &&
         Objects.equals(this.promptPay, realTimePaymentData.promptPay) &&
         Objects.equals(this.vietQr, realTimePaymentData.vietQr);
-}
+  }
 
-    @Override
-    public int hashCode() {
-        return Objects.hash(fps, duitNow, promptPay, vietQr);
-    }
+  @Override
+  public int hashCode() {
+    return Objects.hash(fps, duitNow, promptPay, vietQr);
+  }
 
-    @Override
-    public String toString() {
+  @Override
+  public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class RealTimePaymentData {\n");
-        sb.append("    fps: ").append(toIndentedString(fps)).append("\n");
-        sb.append("    duitNow: ").append(toIndentedString(duitNow)).append("\n");
-        sb.append("    promptPay: ").append(toIndentedString(promptPay)).append("\n");
-        sb.append("    vietQr: ").append(toIndentedString(vietQr)).append("\n");
+    sb.append("    fps: ").append(toIndentedString(fps)).append("\n");
+    sb.append("    duitNow: ").append(toIndentedString(duitNow)).append("\n");
+    sb.append("    promptPay: ").append(toIndentedString(promptPay)).append("\n");
+    sb.append("    vietQr: ").append(toIndentedString(vietQr)).append("\n");
     sb.append("}");
     return sb.toString();
-    }
+  }
 
-    /**
-    * Convert the given object to string with each line indented by 4 spaces
-    * (except the first line).
-    */
-    private String toIndentedString(Object o) {
+  /**
+   * Convert the given object to string with each line indented by 4 spaces
+   * (except the first line).
+   */
+  private String toIndentedString(Object o) {
     if (o == null) {
-    return "null";
+      return "null";
     }
     return o.toString().replace("\n", "\n    ");
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @return URL query string
+   */
+  public String toUrlQueryString() {
+    return toUrlQueryString(null);
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @param prefix prefix of the query string
+   * @return URL query string
+   */
+  public String toUrlQueryString(String prefix) {
+    String suffix = "";
+    String containerSuffix = "";
+    String containerPrefix = "";
+    if (prefix == null) {
+      // style=form, explode=true, e.g. /pet?name=cat&type=manx
+      prefix = "";
+    } else {
+      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+      prefix = prefix + "[";
+      suffix = "]";
+      containerSuffix = "]";
+      containerPrefix = "[";
     }
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @return URL query string
-        */
-        public String toUrlQueryString() {
-        return toUrlQueryString(null);
-        }
+    StringJoiner joiner = new StringJoiner("&");
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @param prefix prefix of the query string
-        * @return URL query string
-        */
-        public String toUrlQueryString(String prefix) {
-        String suffix = "";
-        String containerSuffix = "";
-        String containerPrefix = "";
-        if (prefix == null) {
-        // style=form, explode=true, e.g. /pet?name=cat&type=manx
-        prefix = "";
-        } else {
-        // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
-        prefix = prefix + "[";
-        suffix = "]";
-        containerSuffix = "]";
-        containerPrefix = "[";
-        }
-
-        StringJoiner joiner = new StringJoiner("&");
-
-            // add `fps` to the URL query string
-                        if (getFps() != null) {
-                        try {
-                        joiner.add(String.format("%sfps%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getFps()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-            // add `duit_now` to the URL query string
-                        if (getDuitNow() != null) {
-                        try {
-                        joiner.add(String.format("%sduit_now%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getDuitNow()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-            // add `prompt_pay` to the URL query string
-                        if (getPromptPay() != null) {
-                        try {
-                        joiner.add(String.format("%sprompt_pay%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getPromptPay()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-            // add `viet_qr` to the URL query string
-                        if (getVietQr() != null) {
-                        try {
-                        joiner.add(String.format("%sviet_qr%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getVietQr()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-        return joiner.toString();
-        }
-
+    // add `fps` to the URL query string
+    if (getFps() != null) {
+      try {
+        joiner.add(String.format("%sfps%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getFps()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
     }
+
+    // add `duit_now` to the URL query string
+    if (getDuitNow() != null) {
+      try {
+        joiner.add(String.format("%sduit_now%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getDuitNow()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `prompt_pay` to the URL query string
+    if (getPromptPay() != null) {
+      try {
+        joiner.add(String.format("%sprompt_pay%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getPromptPay()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `viet_qr` to the URL query string
+    if (getVietQr() != null) {
+      try {
+        joiner.add(String.format("%sviet_qr%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getVietQr()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    return joiner.toString();
+  }
+
+}
 

@@ -27,168 +27,168 @@ import java.net.URLEncoder;
 import java.util.StringJoiner;
 
 /**
-* MetadataValue
-*/
-    @JsonPropertyOrder({
-        MetadataValue.JSON_PROPERTY_KEY,
-        MetadataValue.JSON_PROPERTY_VALUE
-    })
+ * MetadataValue
+ */
+@JsonPropertyOrder({
+  MetadataValue.JSON_PROPERTY_KEY,
+  MetadataValue.JSON_PROPERTY_VALUE
+})
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class MetadataValue {
-        public static final String JSON_PROPERTY_KEY = "key";
-    @javax.annotation.Nonnull
-            private String key;
+  public static final String JSON_PROPERTY_KEY = "key";
+  @javax.annotation.Nonnull
+  private String key;
 
-        public static final String JSON_PROPERTY_VALUE = "value";
-    @javax.annotation.Nonnull
-            private String value;
+  public static final String JSON_PROPERTY_VALUE = "value";
+  @javax.annotation.Nonnull
+  private String value;
 
-public MetadataValue() {
-}
+  public MetadataValue() {
+  }
 
-        public MetadataValue key(@javax.annotation.Nonnull String key) {
-        
-        this.key = key;
-        return this;
-        }
+  public MetadataValue key(@javax.annotation.Nonnull String key) {
+    
+    this.key = key;
+    return this;
+  }
 
-    /**
-        * Get key
-    * @return key
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_KEY)
+  /**
+   * Get key
+   * @return key
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_KEY)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public String getKey() {
-        return key;
-    }
+  public String getKey() {
+    return key;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_KEY)
+  @JsonProperty(JSON_PROPERTY_KEY)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setKey(@javax.annotation.Nonnull String key) {
-            this.key = key;
-        }
+    this.key = key;
+  }
 
-        public MetadataValue value(@javax.annotation.Nonnull String value) {
-        
-        this.value = value;
-        return this;
-        }
+  public MetadataValue value(@javax.annotation.Nonnull String value) {
+    
+    this.value = value;
+    return this;
+  }
 
-    /**
-        * Get value
-    * @return value
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_VALUE)
+  /**
+   * Get value
+   * @return value
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_VALUE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public String getValue() {
-        return value;
-    }
+  public String getValue() {
+    return value;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_VALUE)
+  @JsonProperty(JSON_PROPERTY_VALUE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setValue(@javax.annotation.Nonnull String value) {
-            this.value = value;
-        }
+    this.value = value;
+  }
 
-@Override
-public boolean equals(Object o) {
+  @Override
+  public boolean equals(Object o) {
     if (this == o) {
-    return true;
+      return true;
     }
     if (o == null || getClass() != o.getClass()) {
-    return false;
+      return false;
     }
-        MetadataValue metadataValue = (MetadataValue) o;
-        return Objects.equals(this.key, metadataValue.key) &&
+    MetadataValue metadataValue = (MetadataValue) o;
+    return Objects.equals(this.key, metadataValue.key) &&
         Objects.equals(this.value, metadataValue.value);
-}
+  }
 
-    @Override
-    public int hashCode() {
-        return Objects.hash(key, value);
-    }
+  @Override
+  public int hashCode() {
+    return Objects.hash(key, value);
+  }
 
-    @Override
-    public String toString() {
+  @Override
+  public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class MetadataValue {\n");
-        sb.append("    key: ").append(toIndentedString(key)).append("\n");
-        sb.append("    value: ").append(toIndentedString(value)).append("\n");
+    sb.append("    key: ").append(toIndentedString(key)).append("\n");
+    sb.append("    value: ").append(toIndentedString(value)).append("\n");
     sb.append("}");
     return sb.toString();
-    }
+  }
 
-    /**
-    * Convert the given object to string with each line indented by 4 spaces
-    * (except the first line).
-    */
-    private String toIndentedString(Object o) {
+  /**
+   * Convert the given object to string with each line indented by 4 spaces
+   * (except the first line).
+   */
+  private String toIndentedString(Object o) {
     if (o == null) {
-    return "null";
+      return "null";
     }
     return o.toString().replace("\n", "\n    ");
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @return URL query string
+   */
+  public String toUrlQueryString() {
+    return toUrlQueryString(null);
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @param prefix prefix of the query string
+   * @return URL query string
+   */
+  public String toUrlQueryString(String prefix) {
+    String suffix = "";
+    String containerSuffix = "";
+    String containerPrefix = "";
+    if (prefix == null) {
+      // style=form, explode=true, e.g. /pet?name=cat&type=manx
+      prefix = "";
+    } else {
+      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+      prefix = prefix + "[";
+      suffix = "]";
+      containerSuffix = "]";
+      containerPrefix = "[";
     }
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @return URL query string
-        */
-        public String toUrlQueryString() {
-        return toUrlQueryString(null);
-        }
+    StringJoiner joiner = new StringJoiner("&");
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @param prefix prefix of the query string
-        * @return URL query string
-        */
-        public String toUrlQueryString(String prefix) {
-        String suffix = "";
-        String containerSuffix = "";
-        String containerPrefix = "";
-        if (prefix == null) {
-        // style=form, explode=true, e.g. /pet?name=cat&type=manx
-        prefix = "";
-        } else {
-        // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
-        prefix = prefix + "[";
-        suffix = "]";
-        containerSuffix = "]";
-        containerPrefix = "[";
-        }
-
-        StringJoiner joiner = new StringJoiner("&");
-
-            // add `key` to the URL query string
-                        if (getKey() != null) {
-                        try {
-                        joiner.add(String.format("%skey%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getKey()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-            // add `value` to the URL query string
-                        if (getValue() != null) {
-                        try {
-                        joiner.add(String.format("%svalue%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getValue()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-        return joiner.toString();
-        }
-
+    // add `key` to the URL query string
+    if (getKey() != null) {
+      try {
+        joiner.add(String.format("%skey%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getKey()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
     }
+
+    // add `value` to the URL query string
+    if (getValue() != null) {
+      try {
+        joiner.add(String.format("%svalue%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getValue()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    return joiner.toString();
+  }
+
+}
 

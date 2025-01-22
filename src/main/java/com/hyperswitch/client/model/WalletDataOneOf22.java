@@ -27,127 +27,127 @@ import java.net.URLEncoder;
 import java.util.StringJoiner;
 
 /**
-* WalletDataOneOf22
-*/
-    @JsonPropertyOrder({
-        WalletDataOneOf22.JSON_PROPERTY_TOUCH_N_GO_REDIRECT
-    })
-            @JsonTypeName("WalletData_oneOf_22")
+ * WalletDataOneOf22
+ */
+@JsonPropertyOrder({
+  WalletDataOneOf22.JSON_PROPERTY_TOUCH_N_GO_REDIRECT
+})
+@JsonTypeName("WalletData_oneOf_22")
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class WalletDataOneOf22 {
-        public static final String JSON_PROPERTY_TOUCH_N_GO_REDIRECT = "touch_n_go_redirect";
-    @javax.annotation.Nonnull
-            private Object touchNGoRedirect;
+  public static final String JSON_PROPERTY_TOUCH_N_GO_REDIRECT = "touch_n_go_redirect";
+  @javax.annotation.Nonnull
+  private Object touchNGoRedirect;
 
-public WalletDataOneOf22() {
-}
+  public WalletDataOneOf22() {
+  }
 
-        public WalletDataOneOf22 touchNGoRedirect(@javax.annotation.Nonnull Object touchNGoRedirect) {
-        
-        this.touchNGoRedirect = touchNGoRedirect;
-        return this;
-        }
+  public WalletDataOneOf22 touchNGoRedirect(@javax.annotation.Nonnull Object touchNGoRedirect) {
+    
+    this.touchNGoRedirect = touchNGoRedirect;
+    return this;
+  }
 
-    /**
-        * Get touchNGoRedirect
-    * @return touchNGoRedirect
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_TOUCH_N_GO_REDIRECT)
+  /**
+   * Get touchNGoRedirect
+   * @return touchNGoRedirect
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_TOUCH_N_GO_REDIRECT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public Object getTouchNGoRedirect() {
-        return touchNGoRedirect;
-    }
+  public Object getTouchNGoRedirect() {
+    return touchNGoRedirect;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_TOUCH_N_GO_REDIRECT)
+  @JsonProperty(JSON_PROPERTY_TOUCH_N_GO_REDIRECT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setTouchNGoRedirect(@javax.annotation.Nonnull Object touchNGoRedirect) {
-            this.touchNGoRedirect = touchNGoRedirect;
-        }
+    this.touchNGoRedirect = touchNGoRedirect;
+  }
 
-@Override
-public boolean equals(Object o) {
+  @Override
+  public boolean equals(Object o) {
     if (this == o) {
-    return true;
+      return true;
     }
     if (o == null || getClass() != o.getClass()) {
-    return false;
+      return false;
     }
-        WalletDataOneOf22 walletDataOneOf22 = (WalletDataOneOf22) o;
-        return Objects.equals(this.touchNGoRedirect, walletDataOneOf22.touchNGoRedirect);
-}
+    WalletDataOneOf22 walletDataOneOf22 = (WalletDataOneOf22) o;
+    return Objects.equals(this.touchNGoRedirect, walletDataOneOf22.touchNGoRedirect);
+  }
 
-    @Override
-    public int hashCode() {
-        return Objects.hash(touchNGoRedirect);
-    }
+  @Override
+  public int hashCode() {
+    return Objects.hash(touchNGoRedirect);
+  }
 
-    @Override
-    public String toString() {
+  @Override
+  public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class WalletDataOneOf22 {\n");
-        sb.append("    touchNGoRedirect: ").append(toIndentedString(touchNGoRedirect)).append("\n");
+    sb.append("    touchNGoRedirect: ").append(toIndentedString(touchNGoRedirect)).append("\n");
     sb.append("}");
     return sb.toString();
-    }
+  }
 
-    /**
-    * Convert the given object to string with each line indented by 4 spaces
-    * (except the first line).
-    */
-    private String toIndentedString(Object o) {
+  /**
+   * Convert the given object to string with each line indented by 4 spaces
+   * (except the first line).
+   */
+  private String toIndentedString(Object o) {
     if (o == null) {
-    return "null";
+      return "null";
     }
     return o.toString().replace("\n", "\n    ");
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @return URL query string
+   */
+  public String toUrlQueryString() {
+    return toUrlQueryString(null);
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @param prefix prefix of the query string
+   * @return URL query string
+   */
+  public String toUrlQueryString(String prefix) {
+    String suffix = "";
+    String containerSuffix = "";
+    String containerPrefix = "";
+    if (prefix == null) {
+      // style=form, explode=true, e.g. /pet?name=cat&type=manx
+      prefix = "";
+    } else {
+      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+      prefix = prefix + "[";
+      suffix = "]";
+      containerSuffix = "]";
+      containerPrefix = "[";
     }
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @return URL query string
-        */
-        public String toUrlQueryString() {
-        return toUrlQueryString(null);
-        }
+    StringJoiner joiner = new StringJoiner("&");
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @param prefix prefix of the query string
-        * @return URL query string
-        */
-        public String toUrlQueryString(String prefix) {
-        String suffix = "";
-        String containerSuffix = "";
-        String containerPrefix = "";
-        if (prefix == null) {
-        // style=form, explode=true, e.g. /pet?name=cat&type=manx
-        prefix = "";
-        } else {
-        // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
-        prefix = prefix + "[";
-        suffix = "]";
-        containerSuffix = "]";
-        containerPrefix = "[";
-        }
-
-        StringJoiner joiner = new StringJoiner("&");
-
-            // add `touch_n_go_redirect` to the URL query string
-                        if (getTouchNGoRedirect() != null) {
-                        try {
-                        joiner.add(String.format("%stouch_n_go_redirect%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getTouchNGoRedirect()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-        return joiner.toString();
-        }
-
+    // add `touch_n_go_redirect` to the URL query string
+    if (getTouchNGoRedirect() != null) {
+      try {
+        joiner.add(String.format("%stouch_n_go_redirect%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getTouchNGoRedirect()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
     }
+
+    return joiner.toString();
+  }
+
+}
 

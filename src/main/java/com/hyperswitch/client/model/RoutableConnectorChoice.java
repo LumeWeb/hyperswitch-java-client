@@ -32,187 +32,187 @@ import java.net.URLEncoder;
 import java.util.StringJoiner;
 
 /**
-* Routable Connector chosen for a payment
-*/
-    @JsonPropertyOrder({
-        RoutableConnectorChoice.JSON_PROPERTY_CONNECTOR,
-        RoutableConnectorChoice.JSON_PROPERTY_MERCHANT_CONNECTOR_ID
-    })
+ * Routable Connector chosen for a payment
+ */
+@JsonPropertyOrder({
+  RoutableConnectorChoice.JSON_PROPERTY_CONNECTOR,
+  RoutableConnectorChoice.JSON_PROPERTY_MERCHANT_CONNECTOR_ID
+})
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class RoutableConnectorChoice {
-        public static final String JSON_PROPERTY_CONNECTOR = "connector";
-    @javax.annotation.Nonnull
-            private RoutableConnectors connector;
+  public static final String JSON_PROPERTY_CONNECTOR = "connector";
+  @javax.annotation.Nonnull
+  private RoutableConnectors connector;
 
-        public static final String JSON_PROPERTY_MERCHANT_CONNECTOR_ID = "merchant_connector_id";
-    @javax.annotation.Nullable
-            private JsonNullable<String> merchantConnectorId = JsonNullable.<String>undefined();
+  public static final String JSON_PROPERTY_MERCHANT_CONNECTOR_ID = "merchant_connector_id";
+  @javax.annotation.Nullable
+  private JsonNullable<String> merchantConnectorId = JsonNullable.<String>undefined();
 
-public RoutableConnectorChoice() {
-}
+  public RoutableConnectorChoice() {
+  }
 
-        public RoutableConnectorChoice connector(@javax.annotation.Nonnull RoutableConnectors connector) {
-        
-        this.connector = connector;
-        return this;
-        }
+  public RoutableConnectorChoice connector(@javax.annotation.Nonnull RoutableConnectors connector) {
+    
+    this.connector = connector;
+    return this;
+  }
 
-    /**
-        * Get connector
-    * @return connector
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_CONNECTOR)
+  /**
+   * Get connector
+   * @return connector
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_CONNECTOR)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public RoutableConnectors getConnector() {
-        return connector;
-    }
+  public RoutableConnectors getConnector() {
+    return connector;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_CONNECTOR)
+  @JsonProperty(JSON_PROPERTY_CONNECTOR)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setConnector(@javax.annotation.Nonnull RoutableConnectors connector) {
-            this.connector = connector;
-        }
+    this.connector = connector;
+  }
 
-        public RoutableConnectorChoice merchantConnectorId(@javax.annotation.Nullable String merchantConnectorId) {
-        this.merchantConnectorId = JsonNullable.<String>of(merchantConnectorId);
-        
-        return this;
-        }
-
-    /**
-        * Get merchantConnectorId
-    * @return merchantConnectorId
-    */
-    @javax.annotation.Nullable
-        @JsonIgnore
+  public RoutableConnectorChoice merchantConnectorId(@javax.annotation.Nullable String merchantConnectorId) {
+    this.merchantConnectorId = JsonNullable.<String>of(merchantConnectorId);
     
-    public String getMerchantConnectorId() {
-                return merchantConnectorId.orElse(null);
-    }
+    return this;
+  }
 
-          @JsonProperty(JSON_PROPERTY_MERCHANT_CONNECTOR_ID)
+  /**
+   * Get merchantConnectorId
+   * @return merchantConnectorId
+   */
+  @javax.annotation.Nullable
+  @JsonIgnore
+
+  public String getMerchantConnectorId() {
+        return merchantConnectorId.orElse(null);
+  }
+
+  @JsonProperty(JSON_PROPERTY_MERCHANT_CONNECTOR_ID)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-        public JsonNullable<String> getMerchantConnectorId_JsonNullable() {
-        return merchantConnectorId;
-        }
-    
-        @JsonProperty(JSON_PROPERTY_MERCHANT_CONNECTOR_ID)
-        public void setMerchantConnectorId_JsonNullable(JsonNullable<String> merchantConnectorId) {
-        this.merchantConnectorId = merchantConnectorId;
-        }
+  public JsonNullable<String> getMerchantConnectorId_JsonNullable() {
+    return merchantConnectorId;
+  }
+  
+  @JsonProperty(JSON_PROPERTY_MERCHANT_CONNECTOR_ID)
+  public void setMerchantConnectorId_JsonNullable(JsonNullable<String> merchantConnectorId) {
+    this.merchantConnectorId = merchantConnectorId;
+  }
 
-          public void setMerchantConnectorId(@javax.annotation.Nullable String merchantConnectorId) {
-            this.merchantConnectorId = JsonNullable.<String>of(merchantConnectorId);
-        }
+  public void setMerchantConnectorId(@javax.annotation.Nullable String merchantConnectorId) {
+    this.merchantConnectorId = JsonNullable.<String>of(merchantConnectorId);
+  }
 
-@Override
-public boolean equals(Object o) {
+  @Override
+  public boolean equals(Object o) {
     if (this == o) {
-    return true;
+      return true;
     }
     if (o == null || getClass() != o.getClass()) {
-    return false;
+      return false;
     }
-        RoutableConnectorChoice routableConnectorChoice = (RoutableConnectorChoice) o;
-        return Objects.equals(this.connector, routableConnectorChoice.connector) &&
+    RoutableConnectorChoice routableConnectorChoice = (RoutableConnectorChoice) o;
+    return Objects.equals(this.connector, routableConnectorChoice.connector) &&
         equalsNullable(this.merchantConnectorId, routableConnectorChoice.merchantConnectorId);
-}
+  }
 
-    private static <T> boolean equalsNullable(JsonNullable<T> a, JsonNullable<T> b) {
-        return a == b || (a != null && b != null && a.isPresent() && b.isPresent() && Objects.deepEquals(a.get(), b.get()));
-        }
+  private static <T> boolean equalsNullable(JsonNullable<T> a, JsonNullable<T> b) {
+    return a == b || (a != null && b != null && a.isPresent() && b.isPresent() && Objects.deepEquals(a.get(), b.get()));
+  }
 
-    @Override
-    public int hashCode() {
-        return Objects.hash(connector, hashCodeNullable(merchantConnectorId));
+  @Override
+  public int hashCode() {
+    return Objects.hash(connector, hashCodeNullable(merchantConnectorId));
+  }
+
+  private static <T> int hashCodeNullable(JsonNullable<T> a) {
+    if (a == null) {
+      return 1;
     }
+    return a.isPresent() ? Arrays.deepHashCode(new Object[]{a.get()}) : 31;
+  }
 
-        private static <T> int hashCodeNullable(JsonNullable<T> a) {
-        if (a == null) {
-        return 1;
-        }
-        return a.isPresent() ? Arrays.deepHashCode(new Object[]{a.get()}) : 31;
-        }
-
-    @Override
-    public String toString() {
+  @Override
+  public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class RoutableConnectorChoice {\n");
-        sb.append("    connector: ").append(toIndentedString(connector)).append("\n");
-        sb.append("    merchantConnectorId: ").append(toIndentedString(merchantConnectorId)).append("\n");
+    sb.append("    connector: ").append(toIndentedString(connector)).append("\n");
+    sb.append("    merchantConnectorId: ").append(toIndentedString(merchantConnectorId)).append("\n");
     sb.append("}");
     return sb.toString();
-    }
+  }
 
-    /**
-    * Convert the given object to string with each line indented by 4 spaces
-    * (except the first line).
-    */
-    private String toIndentedString(Object o) {
+  /**
+   * Convert the given object to string with each line indented by 4 spaces
+   * (except the first line).
+   */
+  private String toIndentedString(Object o) {
     if (o == null) {
-    return "null";
+      return "null";
     }
     return o.toString().replace("\n", "\n    ");
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @return URL query string
+   */
+  public String toUrlQueryString() {
+    return toUrlQueryString(null);
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @param prefix prefix of the query string
+   * @return URL query string
+   */
+  public String toUrlQueryString(String prefix) {
+    String suffix = "";
+    String containerSuffix = "";
+    String containerPrefix = "";
+    if (prefix == null) {
+      // style=form, explode=true, e.g. /pet?name=cat&type=manx
+      prefix = "";
+    } else {
+      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+      prefix = prefix + "[";
+      suffix = "]";
+      containerSuffix = "]";
+      containerPrefix = "[";
     }
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @return URL query string
-        */
-        public String toUrlQueryString() {
-        return toUrlQueryString(null);
-        }
+    StringJoiner joiner = new StringJoiner("&");
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @param prefix prefix of the query string
-        * @return URL query string
-        */
-        public String toUrlQueryString(String prefix) {
-        String suffix = "";
-        String containerSuffix = "";
-        String containerPrefix = "";
-        if (prefix == null) {
-        // style=form, explode=true, e.g. /pet?name=cat&type=manx
-        prefix = "";
-        } else {
-        // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
-        prefix = prefix + "[";
-        suffix = "]";
-        containerSuffix = "]";
-        containerPrefix = "[";
-        }
-
-        StringJoiner joiner = new StringJoiner("&");
-
-            // add `connector` to the URL query string
-                            if (getConnector() != null) {
-                            try {
-                            joiner.add(String.format("%sconnector%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getConnector()), "UTF-8").replaceAll("\\+", "%20")));
-                            } catch (UnsupportedEncodingException e) {
-                            // Should never happen, UTF-8 is always supported
-                            throw new RuntimeException(e);
-                            }
-                            }
-
-            // add `merchant_connector_id` to the URL query string
-                        if (getMerchantConnectorId() != null) {
-                        try {
-                        joiner.add(String.format("%smerchant_connector_id%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getMerchantConnectorId()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-        return joiner.toString();
-        }
-
+    // add `connector` to the URL query string
+    if (getConnector() != null) {
+      try {
+        joiner.add(String.format("%sconnector%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getConnector()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
     }
+
+    // add `merchant_connector_id` to the URL query string
+    if (getMerchantConnectorId() != null) {
+      try {
+        joiner.add(String.format("%smerchant_connector_id%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getMerchantConnectorId()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    return joiner.toString();
+  }
+
+}
 

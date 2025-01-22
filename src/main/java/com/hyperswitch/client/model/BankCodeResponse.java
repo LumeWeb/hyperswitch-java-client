@@ -31,194 +31,194 @@ import java.net.URLEncoder;
 import java.util.StringJoiner;
 
 /**
-* BankCodeResponse
-*/
-    @JsonPropertyOrder({
-        BankCodeResponse.JSON_PROPERTY_BANK_NAME,
-        BankCodeResponse.JSON_PROPERTY_ELIGIBLE_CONNECTORS
-    })
+ * BankCodeResponse
+ */
+@JsonPropertyOrder({
+  BankCodeResponse.JSON_PROPERTY_BANK_NAME,
+  BankCodeResponse.JSON_PROPERTY_ELIGIBLE_CONNECTORS
+})
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class BankCodeResponse {
-        public static final String JSON_PROPERTY_BANK_NAME = "bank_name";
-    @javax.annotation.Nonnull
-            private List<BankNames> bankName = new ArrayList<>();
+  public static final String JSON_PROPERTY_BANK_NAME = "bank_name";
+  @javax.annotation.Nonnull
+  private List<BankNames> bankName = new ArrayList<>();
 
-        public static final String JSON_PROPERTY_ELIGIBLE_CONNECTORS = "eligible_connectors";
-    @javax.annotation.Nonnull
-            private List<String> eligibleConnectors = new ArrayList<>();
+  public static final String JSON_PROPERTY_ELIGIBLE_CONNECTORS = "eligible_connectors";
+  @javax.annotation.Nonnull
+  private List<String> eligibleConnectors = new ArrayList<>();
 
-public BankCodeResponse() {
-}
+  public BankCodeResponse() {
+  }
 
-        public BankCodeResponse bankName(@javax.annotation.Nonnull List<BankNames> bankName) {
-        
-        this.bankName = bankName;
-        return this;
-        }
+  public BankCodeResponse bankName(@javax.annotation.Nonnull List<BankNames> bankName) {
+    
+    this.bankName = bankName;
+    return this;
+  }
 
-            public BankCodeResponse addBankNameItem(BankNames bankNameItem) {
-                if (this.bankName == null) {
-                this.bankName = new ArrayList<>();
-                }
-                this.bankName.add(bankNameItem);
-                return this;
-            }
+  public BankCodeResponse addBankNameItem(BankNames bankNameItem) {
+    if (this.bankName == null) {
+      this.bankName = new ArrayList<>();
+    }
+    this.bankName.add(bankNameItem);
+    return this;
+  }
 
-    /**
-        * Get bankName
-    * @return bankName
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_BANK_NAME)
+  /**
+   * Get bankName
+   * @return bankName
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_BANK_NAME)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public List<BankNames> getBankName() {
-        return bankName;
-    }
+  public List<BankNames> getBankName() {
+    return bankName;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_BANK_NAME)
+  @JsonProperty(JSON_PROPERTY_BANK_NAME)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setBankName(@javax.annotation.Nonnull List<BankNames> bankName) {
-            this.bankName = bankName;
-        }
+    this.bankName = bankName;
+  }
 
-        public BankCodeResponse eligibleConnectors(@javax.annotation.Nonnull List<String> eligibleConnectors) {
-        
-        this.eligibleConnectors = eligibleConnectors;
-        return this;
-        }
+  public BankCodeResponse eligibleConnectors(@javax.annotation.Nonnull List<String> eligibleConnectors) {
+    
+    this.eligibleConnectors = eligibleConnectors;
+    return this;
+  }
 
-            public BankCodeResponse addEligibleConnectorsItem(String eligibleConnectorsItem) {
-                if (this.eligibleConnectors == null) {
-                this.eligibleConnectors = new ArrayList<>();
-                }
-                this.eligibleConnectors.add(eligibleConnectorsItem);
-                return this;
-            }
+  public BankCodeResponse addEligibleConnectorsItem(String eligibleConnectorsItem) {
+    if (this.eligibleConnectors == null) {
+      this.eligibleConnectors = new ArrayList<>();
+    }
+    this.eligibleConnectors.add(eligibleConnectorsItem);
+    return this;
+  }
 
-    /**
-        * Get eligibleConnectors
-    * @return eligibleConnectors
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_ELIGIBLE_CONNECTORS)
+  /**
+   * Get eligibleConnectors
+   * @return eligibleConnectors
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_ELIGIBLE_CONNECTORS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public List<String> getEligibleConnectors() {
-        return eligibleConnectors;
-    }
+  public List<String> getEligibleConnectors() {
+    return eligibleConnectors;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_ELIGIBLE_CONNECTORS)
+  @JsonProperty(JSON_PROPERTY_ELIGIBLE_CONNECTORS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setEligibleConnectors(@javax.annotation.Nonnull List<String> eligibleConnectors) {
-            this.eligibleConnectors = eligibleConnectors;
-        }
+    this.eligibleConnectors = eligibleConnectors;
+  }
 
-@Override
-public boolean equals(Object o) {
+  @Override
+  public boolean equals(Object o) {
     if (this == o) {
-    return true;
+      return true;
     }
     if (o == null || getClass() != o.getClass()) {
-    return false;
+      return false;
     }
-        BankCodeResponse bankCodeResponse = (BankCodeResponse) o;
-        return Objects.equals(this.bankName, bankCodeResponse.bankName) &&
+    BankCodeResponse bankCodeResponse = (BankCodeResponse) o;
+    return Objects.equals(this.bankName, bankCodeResponse.bankName) &&
         Objects.equals(this.eligibleConnectors, bankCodeResponse.eligibleConnectors);
-}
+  }
 
-    @Override
-    public int hashCode() {
-        return Objects.hash(bankName, eligibleConnectors);
-    }
+  @Override
+  public int hashCode() {
+    return Objects.hash(bankName, eligibleConnectors);
+  }
 
-    @Override
-    public String toString() {
+  @Override
+  public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class BankCodeResponse {\n");
-        sb.append("    bankName: ").append(toIndentedString(bankName)).append("\n");
-        sb.append("    eligibleConnectors: ").append(toIndentedString(eligibleConnectors)).append("\n");
+    sb.append("    bankName: ").append(toIndentedString(bankName)).append("\n");
+    sb.append("    eligibleConnectors: ").append(toIndentedString(eligibleConnectors)).append("\n");
     sb.append("}");
     return sb.toString();
-    }
+  }
 
-    /**
-    * Convert the given object to string with each line indented by 4 spaces
-    * (except the first line).
-    */
-    private String toIndentedString(Object o) {
+  /**
+   * Convert the given object to string with each line indented by 4 spaces
+   * (except the first line).
+   */
+  private String toIndentedString(Object o) {
     if (o == null) {
-    return "null";
+      return "null";
     }
     return o.toString().replace("\n", "\n    ");
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @return URL query string
+   */
+  public String toUrlQueryString() {
+    return toUrlQueryString(null);
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @param prefix prefix of the query string
+   * @return URL query string
+   */
+  public String toUrlQueryString(String prefix) {
+    String suffix = "";
+    String containerSuffix = "";
+    String containerPrefix = "";
+    if (prefix == null) {
+      // style=form, explode=true, e.g. /pet?name=cat&type=manx
+      prefix = "";
+    } else {
+      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+      prefix = prefix + "[";
+      suffix = "]";
+      containerSuffix = "]";
+      containerPrefix = "[";
     }
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @return URL query string
-        */
-        public String toUrlQueryString() {
-        return toUrlQueryString(null);
+    StringJoiner joiner = new StringJoiner("&");
+
+    // add `bank_name` to the URL query string
+    if (getBankName() != null) {
+      for (int i = 0; i < getBankName().size(); i++) {
+        if (getBankName().get(i) != null) {
+          try {
+            joiner.add(String.format("%sbank_name%s%s=%s", prefix, suffix,
+                "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix),
+                URLEncoder.encode(String.valueOf(getBankName().get(i)), "UTF-8").replaceAll("\\+", "%20")));
+          } catch (UnsupportedEncodingException e) {
+            // Should never happen, UTF-8 is always supported
+            throw new RuntimeException(e);
+          }
         }
-
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @param prefix prefix of the query string
-        * @return URL query string
-        */
-        public String toUrlQueryString(String prefix) {
-        String suffix = "";
-        String containerSuffix = "";
-        String containerPrefix = "";
-        if (prefix == null) {
-        // style=form, explode=true, e.g. /pet?name=cat&type=manx
-        prefix = "";
-        } else {
-        // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
-        prefix = prefix + "[";
-        suffix = "]";
-        containerSuffix = "]";
-        containerPrefix = "[";
-        }
-
-        StringJoiner joiner = new StringJoiner("&");
-
-            // add `bank_name` to the URL query string
-                            if (getBankName() != null) {
-                            for (int i = 0; i < getBankName().size(); i++) {
-                            if (getBankName().get(i) != null) {
-                            try {
-                            joiner.add(String.format("%sbank_name%s%s=%s", prefix, suffix,
-                            "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix),
-                            URLEncoder.encode(String.valueOf(getBankName().get(i)), "UTF-8").replaceAll("\\+", "%20")));
-                            } catch (UnsupportedEncodingException e) {
-                            // Should never happen, UTF-8 is always supported
-                            throw new RuntimeException(e);
-                            }
-                            }
-                            }
-                            }
-
-            // add `eligible_connectors` to the URL query string
-                        if (getEligibleConnectors() != null) {
-                        for (int i = 0; i < getEligibleConnectors().size(); i++) {
-                        try {
-                        joiner.add(String.format("%seligible_connectors%s%s=%s", prefix, suffix,
-                        "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix),
-                        URLEncoder.encode(String.valueOf(getEligibleConnectors().get(i)), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-                        }
-
-        return joiner.toString();
-        }
-
+      }
     }
+
+    // add `eligible_connectors` to the URL query string
+    if (getEligibleConnectors() != null) {
+      for (int i = 0; i < getEligibleConnectors().size(); i++) {
+        try {
+          joiner.add(String.format("%seligible_connectors%s%s=%s", prefix, suffix,
+              "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix),
+              URLEncoder.encode(String.valueOf(getEligibleConnectors().get(i)), "UTF-8").replaceAll("\\+", "%20")));
+        } catch (UnsupportedEncodingException e) {
+          // Should never happen, UTF-8 is always supported
+          throw new RuntimeException(e);
+        }
+      }
+    }
+
+    return joiner.toString();
+  }
+
+}
 

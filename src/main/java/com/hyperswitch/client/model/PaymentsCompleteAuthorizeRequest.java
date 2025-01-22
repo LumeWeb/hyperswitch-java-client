@@ -32,182 +32,182 @@ import java.net.URLEncoder;
 import java.util.StringJoiner;
 
 /**
-* PaymentsCompleteAuthorizeRequest
-*/
-    @JsonPropertyOrder({
-        PaymentsCompleteAuthorizeRequest.JSON_PROPERTY_SHIPPING,
-        PaymentsCompleteAuthorizeRequest.JSON_PROPERTY_CLIENT_SECRET
-    })
+ * PaymentsCompleteAuthorizeRequest
+ */
+@JsonPropertyOrder({
+  PaymentsCompleteAuthorizeRequest.JSON_PROPERTY_SHIPPING,
+  PaymentsCompleteAuthorizeRequest.JSON_PROPERTY_CLIENT_SECRET
+})
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class PaymentsCompleteAuthorizeRequest {
-        public static final String JSON_PROPERTY_SHIPPING = "shipping";
-    @javax.annotation.Nullable
-            private JsonNullable<Address> shipping = JsonNullable.<Address>undefined();
+  public static final String JSON_PROPERTY_SHIPPING = "shipping";
+  @javax.annotation.Nullable
+  private JsonNullable<Address> shipping = JsonNullable.<Address>undefined();
 
-        public static final String JSON_PROPERTY_CLIENT_SECRET = "client_secret";
-    @javax.annotation.Nonnull
-            private String clientSecret;
+  public static final String JSON_PROPERTY_CLIENT_SECRET = "client_secret";
+  @javax.annotation.Nonnull
+  private String clientSecret;
 
-public PaymentsCompleteAuthorizeRequest() {
-}
+  public PaymentsCompleteAuthorizeRequest() {
+  }
 
-        public PaymentsCompleteAuthorizeRequest shipping(@javax.annotation.Nullable Address shipping) {
-        this.shipping = JsonNullable.<Address>of(shipping);
-        
-        return this;
-        }
-
-    /**
-        * Get shipping
-    * @return shipping
-    */
-    @javax.annotation.Nullable
-        @JsonIgnore
+  public PaymentsCompleteAuthorizeRequest shipping(@javax.annotation.Nullable Address shipping) {
+    this.shipping = JsonNullable.<Address>of(shipping);
     
-    public Address getShipping() {
-                return shipping.orElse(null);
-    }
+    return this;
+  }
 
-          @JsonProperty(JSON_PROPERTY_SHIPPING)
+  /**
+   * Get shipping
+   * @return shipping
+   */
+  @javax.annotation.Nullable
+  @JsonIgnore
+
+  public Address getShipping() {
+        return shipping.orElse(null);
+  }
+
+  @JsonProperty(JSON_PROPERTY_SHIPPING)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-        public JsonNullable<Address> getShipping_JsonNullable() {
-        return shipping;
-        }
+  public JsonNullable<Address> getShipping_JsonNullable() {
+    return shipping;
+  }
+  
+  @JsonProperty(JSON_PROPERTY_SHIPPING)
+  public void setShipping_JsonNullable(JsonNullable<Address> shipping) {
+    this.shipping = shipping;
+  }
+
+  public void setShipping(@javax.annotation.Nullable Address shipping) {
+    this.shipping = JsonNullable.<Address>of(shipping);
+  }
+
+  public PaymentsCompleteAuthorizeRequest clientSecret(@javax.annotation.Nonnull String clientSecret) {
     
-        @JsonProperty(JSON_PROPERTY_SHIPPING)
-        public void setShipping_JsonNullable(JsonNullable<Address> shipping) {
-        this.shipping = shipping;
-        }
+    this.clientSecret = clientSecret;
+    return this;
+  }
 
-          public void setShipping(@javax.annotation.Nullable Address shipping) {
-            this.shipping = JsonNullable.<Address>of(shipping);
-        }
-
-        public PaymentsCompleteAuthorizeRequest clientSecret(@javax.annotation.Nonnull String clientSecret) {
-        
-        this.clientSecret = clientSecret;
-        return this;
-        }
-
-    /**
-        * Client Secret
-    * @return clientSecret
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_CLIENT_SECRET)
+  /**
+   * Client Secret
+   * @return clientSecret
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_CLIENT_SECRET)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public String getClientSecret() {
-        return clientSecret;
-    }
+  public String getClientSecret() {
+    return clientSecret;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_CLIENT_SECRET)
+  @JsonProperty(JSON_PROPERTY_CLIENT_SECRET)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setClientSecret(@javax.annotation.Nonnull String clientSecret) {
-            this.clientSecret = clientSecret;
-        }
+    this.clientSecret = clientSecret;
+  }
 
-@Override
-public boolean equals(Object o) {
+  @Override
+  public boolean equals(Object o) {
     if (this == o) {
-    return true;
+      return true;
     }
     if (o == null || getClass() != o.getClass()) {
-    return false;
+      return false;
     }
-        PaymentsCompleteAuthorizeRequest paymentsCompleteAuthorizeRequest = (PaymentsCompleteAuthorizeRequest) o;
-        return equalsNullable(this.shipping, paymentsCompleteAuthorizeRequest.shipping) &&
+    PaymentsCompleteAuthorizeRequest paymentsCompleteAuthorizeRequest = (PaymentsCompleteAuthorizeRequest) o;
+    return equalsNullable(this.shipping, paymentsCompleteAuthorizeRequest.shipping) &&
         Objects.equals(this.clientSecret, paymentsCompleteAuthorizeRequest.clientSecret);
-}
+  }
 
-    private static <T> boolean equalsNullable(JsonNullable<T> a, JsonNullable<T> b) {
-        return a == b || (a != null && b != null && a.isPresent() && b.isPresent() && Objects.deepEquals(a.get(), b.get()));
-        }
+  private static <T> boolean equalsNullable(JsonNullable<T> a, JsonNullable<T> b) {
+    return a == b || (a != null && b != null && a.isPresent() && b.isPresent() && Objects.deepEquals(a.get(), b.get()));
+  }
 
-    @Override
-    public int hashCode() {
-        return Objects.hash(hashCodeNullable(shipping), clientSecret);
+  @Override
+  public int hashCode() {
+    return Objects.hash(hashCodeNullable(shipping), clientSecret);
+  }
+
+  private static <T> int hashCodeNullable(JsonNullable<T> a) {
+    if (a == null) {
+      return 1;
     }
+    return a.isPresent() ? Arrays.deepHashCode(new Object[]{a.get()}) : 31;
+  }
 
-        private static <T> int hashCodeNullable(JsonNullable<T> a) {
-        if (a == null) {
-        return 1;
-        }
-        return a.isPresent() ? Arrays.deepHashCode(new Object[]{a.get()}) : 31;
-        }
-
-    @Override
-    public String toString() {
+  @Override
+  public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class PaymentsCompleteAuthorizeRequest {\n");
-        sb.append("    shipping: ").append(toIndentedString(shipping)).append("\n");
-        sb.append("    clientSecret: ").append(toIndentedString(clientSecret)).append("\n");
+    sb.append("    shipping: ").append(toIndentedString(shipping)).append("\n");
+    sb.append("    clientSecret: ").append(toIndentedString(clientSecret)).append("\n");
     sb.append("}");
     return sb.toString();
-    }
+  }
 
-    /**
-    * Convert the given object to string with each line indented by 4 spaces
-    * (except the first line).
-    */
-    private String toIndentedString(Object o) {
+  /**
+   * Convert the given object to string with each line indented by 4 spaces
+   * (except the first line).
+   */
+  private String toIndentedString(Object o) {
     if (o == null) {
-    return "null";
+      return "null";
     }
     return o.toString().replace("\n", "\n    ");
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @return URL query string
+   */
+  public String toUrlQueryString() {
+    return toUrlQueryString(null);
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @param prefix prefix of the query string
+   * @return URL query string
+   */
+  public String toUrlQueryString(String prefix) {
+    String suffix = "";
+    String containerSuffix = "";
+    String containerPrefix = "";
+    if (prefix == null) {
+      // style=form, explode=true, e.g. /pet?name=cat&type=manx
+      prefix = "";
+    } else {
+      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+      prefix = prefix + "[";
+      suffix = "]";
+      containerSuffix = "]";
+      containerPrefix = "[";
     }
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @return URL query string
-        */
-        public String toUrlQueryString() {
-        return toUrlQueryString(null);
-        }
+    StringJoiner joiner = new StringJoiner("&");
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @param prefix prefix of the query string
-        * @return URL query string
-        */
-        public String toUrlQueryString(String prefix) {
-        String suffix = "";
-        String containerSuffix = "";
-        String containerPrefix = "";
-        if (prefix == null) {
-        // style=form, explode=true, e.g. /pet?name=cat&type=manx
-        prefix = "";
-        } else {
-        // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
-        prefix = prefix + "[";
-        suffix = "]";
-        containerSuffix = "]";
-        containerPrefix = "[";
-        }
-
-        StringJoiner joiner = new StringJoiner("&");
-
-            // add `shipping` to the URL query string
-                            if (getShipping() != null) {
-                            joiner.add(getShipping().toUrlQueryString(prefix + "shipping" + suffix));
-                            }
-
-            // add `client_secret` to the URL query string
-                        if (getClientSecret() != null) {
-                        try {
-                        joiner.add(String.format("%sclient_secret%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getClientSecret()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-        return joiner.toString();
-        }
-
+    // add `shipping` to the URL query string
+    if (getShipping() != null) {
+      joiner.add(getShipping().toUrlQueryString(prefix + "shipping" + suffix));
     }
+
+    // add `client_secret` to the URL query string
+    if (getClientSecret() != null) {
+      try {
+        joiner.add(String.format("%sclient_secret%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getClientSecret()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    return joiner.toString();
+  }
+
+}
 

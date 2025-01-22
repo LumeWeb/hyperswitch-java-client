@@ -31,205 +31,205 @@ import java.net.URLEncoder;
 import java.util.StringJoiner;
 
 /**
-* MerchantRecipientData
-*/
-    @JsonPropertyOrder({
-        MerchantRecipientData.JSON_PROPERTY_CONNECTOR_RECIPIENT_ID,
-        MerchantRecipientData.JSON_PROPERTY_WALLET_ID,
-        MerchantRecipientData.JSON_PROPERTY_ACCOUNT_DATA
-    })
+ * MerchantRecipientData
+ */
+@JsonPropertyOrder({
+  MerchantRecipientData.JSON_PROPERTY_CONNECTOR_RECIPIENT_ID,
+  MerchantRecipientData.JSON_PROPERTY_WALLET_ID,
+  MerchantRecipientData.JSON_PROPERTY_ACCOUNT_DATA
+})
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class MerchantRecipientData {
-        public static final String JSON_PROPERTY_CONNECTOR_RECIPIENT_ID = "connector_recipient_id";
-    @javax.annotation.Nullable
-            private String connectorRecipientId;
+  public static final String JSON_PROPERTY_CONNECTOR_RECIPIENT_ID = "connector_recipient_id";
+  @javax.annotation.Nullable
+  private String connectorRecipientId;
 
-        public static final String JSON_PROPERTY_WALLET_ID = "wallet_id";
-    @javax.annotation.Nullable
-            private String walletId;
+  public static final String JSON_PROPERTY_WALLET_ID = "wallet_id";
+  @javax.annotation.Nullable
+  private String walletId;
 
-        public static final String JSON_PROPERTY_ACCOUNT_DATA = "account_data";
-    @javax.annotation.Nonnull
-            private MerchantAccountData accountData;
+  public static final String JSON_PROPERTY_ACCOUNT_DATA = "account_data";
+  @javax.annotation.Nonnull
+  private MerchantAccountData accountData;
 
-public MerchantRecipientData() {
-}
+  public MerchantRecipientData() {
+  }
 
-        public MerchantRecipientData connectorRecipientId(@javax.annotation.Nullable String connectorRecipientId) {
-        
-        this.connectorRecipientId = connectorRecipientId;
-        return this;
-        }
+  public MerchantRecipientData connectorRecipientId(@javax.annotation.Nullable String connectorRecipientId) {
+    
+    this.connectorRecipientId = connectorRecipientId;
+    return this;
+  }
 
-    /**
-        * Get connectorRecipientId
-    * @return connectorRecipientId
-    */
-    @javax.annotation.Nullable
-      @JsonProperty(JSON_PROPERTY_CONNECTOR_RECIPIENT_ID)
+  /**
+   * Get connectorRecipientId
+   * @return connectorRecipientId
+   */
+  @javax.annotation.Nullable
+  @JsonProperty(JSON_PROPERTY_CONNECTOR_RECIPIENT_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public String getConnectorRecipientId() {
-        return connectorRecipientId;
-    }
+  public String getConnectorRecipientId() {
+    return connectorRecipientId;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_CONNECTOR_RECIPIENT_ID)
+  @JsonProperty(JSON_PROPERTY_CONNECTOR_RECIPIENT_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setConnectorRecipientId(@javax.annotation.Nullable String connectorRecipientId) {
-            this.connectorRecipientId = connectorRecipientId;
-        }
+    this.connectorRecipientId = connectorRecipientId;
+  }
 
-        public MerchantRecipientData walletId(@javax.annotation.Nullable String walletId) {
-        
-        this.walletId = walletId;
-        return this;
-        }
+  public MerchantRecipientData walletId(@javax.annotation.Nullable String walletId) {
+    
+    this.walletId = walletId;
+    return this;
+  }
 
-    /**
-        * Get walletId
-    * @return walletId
-    */
-    @javax.annotation.Nullable
-      @JsonProperty(JSON_PROPERTY_WALLET_ID)
+  /**
+   * Get walletId
+   * @return walletId
+   */
+  @javax.annotation.Nullable
+  @JsonProperty(JSON_PROPERTY_WALLET_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public String getWalletId() {
-        return walletId;
-    }
+  public String getWalletId() {
+    return walletId;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_WALLET_ID)
+  @JsonProperty(JSON_PROPERTY_WALLET_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setWalletId(@javax.annotation.Nullable String walletId) {
-            this.walletId = walletId;
-        }
+    this.walletId = walletId;
+  }
 
-        public MerchantRecipientData accountData(@javax.annotation.Nonnull MerchantAccountData accountData) {
-        
-        this.accountData = accountData;
-        return this;
-        }
+  public MerchantRecipientData accountData(@javax.annotation.Nonnull MerchantAccountData accountData) {
+    
+    this.accountData = accountData;
+    return this;
+  }
 
-    /**
-        * Get accountData
-    * @return accountData
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_ACCOUNT_DATA)
+  /**
+   * Get accountData
+   * @return accountData
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_ACCOUNT_DATA)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public MerchantAccountData getAccountData() {
-        return accountData;
-    }
+  public MerchantAccountData getAccountData() {
+    return accountData;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_ACCOUNT_DATA)
+  @JsonProperty(JSON_PROPERTY_ACCOUNT_DATA)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setAccountData(@javax.annotation.Nonnull MerchantAccountData accountData) {
-            this.accountData = accountData;
-        }
+    this.accountData = accountData;
+  }
 
-@Override
-public boolean equals(Object o) {
+  @Override
+  public boolean equals(Object o) {
     if (this == o) {
-    return true;
+      return true;
     }
     if (o == null || getClass() != o.getClass()) {
-    return false;
+      return false;
     }
-        MerchantRecipientData merchantRecipientData = (MerchantRecipientData) o;
-        return Objects.equals(this.connectorRecipientId, merchantRecipientData.connectorRecipientId) &&
+    MerchantRecipientData merchantRecipientData = (MerchantRecipientData) o;
+    return Objects.equals(this.connectorRecipientId, merchantRecipientData.connectorRecipientId) &&
         Objects.equals(this.walletId, merchantRecipientData.walletId) &&
         Objects.equals(this.accountData, merchantRecipientData.accountData);
-}
+  }
 
-    @Override
-    public int hashCode() {
-        return Objects.hash(connectorRecipientId, walletId, accountData);
-    }
+  @Override
+  public int hashCode() {
+    return Objects.hash(connectorRecipientId, walletId, accountData);
+  }
 
-    @Override
-    public String toString() {
+  @Override
+  public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class MerchantRecipientData {\n");
-        sb.append("    connectorRecipientId: ").append(toIndentedString(connectorRecipientId)).append("\n");
-        sb.append("    walletId: ").append(toIndentedString(walletId)).append("\n");
-        sb.append("    accountData: ").append(toIndentedString(accountData)).append("\n");
+    sb.append("    connectorRecipientId: ").append(toIndentedString(connectorRecipientId)).append("\n");
+    sb.append("    walletId: ").append(toIndentedString(walletId)).append("\n");
+    sb.append("    accountData: ").append(toIndentedString(accountData)).append("\n");
     sb.append("}");
     return sb.toString();
-    }
+  }
 
-    /**
-    * Convert the given object to string with each line indented by 4 spaces
-    * (except the first line).
-    */
-    private String toIndentedString(Object o) {
+  /**
+   * Convert the given object to string with each line indented by 4 spaces
+   * (except the first line).
+   */
+  private String toIndentedString(Object o) {
     if (o == null) {
-    return "null";
+      return "null";
     }
     return o.toString().replace("\n", "\n    ");
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @return URL query string
+   */
+  public String toUrlQueryString() {
+    return toUrlQueryString(null);
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @param prefix prefix of the query string
+   * @return URL query string
+   */
+  public String toUrlQueryString(String prefix) {
+    String suffix = "";
+    String containerSuffix = "";
+    String containerPrefix = "";
+    if (prefix == null) {
+      // style=form, explode=true, e.g. /pet?name=cat&type=manx
+      prefix = "";
+    } else {
+      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+      prefix = prefix + "[";
+      suffix = "]";
+      containerSuffix = "]";
+      containerPrefix = "[";
     }
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @return URL query string
-        */
-        public String toUrlQueryString() {
-        return toUrlQueryString(null);
-        }
+    StringJoiner joiner = new StringJoiner("&");
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @param prefix prefix of the query string
-        * @return URL query string
-        */
-        public String toUrlQueryString(String prefix) {
-        String suffix = "";
-        String containerSuffix = "";
-        String containerPrefix = "";
-        if (prefix == null) {
-        // style=form, explode=true, e.g. /pet?name=cat&type=manx
-        prefix = "";
-        } else {
-        // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
-        prefix = prefix + "[";
-        suffix = "]";
-        containerSuffix = "]";
-        containerPrefix = "[";
-        }
-
-        StringJoiner joiner = new StringJoiner("&");
-
-            // add `connector_recipient_id` to the URL query string
-                        if (getConnectorRecipientId() != null) {
-                        try {
-                        joiner.add(String.format("%sconnector_recipient_id%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getConnectorRecipientId()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-            // add `wallet_id` to the URL query string
-                        if (getWalletId() != null) {
-                        try {
-                        joiner.add(String.format("%swallet_id%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getWalletId()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-            // add `account_data` to the URL query string
-                            if (getAccountData() != null) {
-                            joiner.add(getAccountData().toUrlQueryString(prefix + "account_data" + suffix));
-                            }
-
-        return joiner.toString();
-        }
-
+    // add `connector_recipient_id` to the URL query string
+    if (getConnectorRecipientId() != null) {
+      try {
+        joiner.add(String.format("%sconnector_recipient_id%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getConnectorRecipientId()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
     }
+
+    // add `wallet_id` to the URL query string
+    if (getWalletId() != null) {
+      try {
+        joiner.add(String.format("%swallet_id%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getWalletId()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `account_data` to the URL query string
+    if (getAccountData() != null) {
+      joiner.add(getAccountData().toUrlQueryString(prefix + "account_data" + suffix));
+    }
+
+    return joiner.toString();
+  }
+
+}
 

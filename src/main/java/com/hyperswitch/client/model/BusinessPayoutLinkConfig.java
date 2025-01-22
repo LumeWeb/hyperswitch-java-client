@@ -35,452 +35,452 @@ import java.net.URLEncoder;
 import java.util.StringJoiner;
 
 /**
-* BusinessPayoutLinkConfig
-*/
-    @JsonPropertyOrder({
-        BusinessPayoutLinkConfig.JSON_PROPERTY_LOGO,
-        BusinessPayoutLinkConfig.JSON_PROPERTY_MERCHANT_NAME,
-        BusinessPayoutLinkConfig.JSON_PROPERTY_THEME,
-        BusinessPayoutLinkConfig.JSON_PROPERTY_DOMAIN_NAME,
-        BusinessPayoutLinkConfig.JSON_PROPERTY_ALLOWED_DOMAINS,
-        BusinessPayoutLinkConfig.JSON_PROPERTY_FORM_LAYOUT,
-        BusinessPayoutLinkConfig.JSON_PROPERTY_PAYOUT_TEST_MODE
-    })
+ * BusinessPayoutLinkConfig
+ */
+@JsonPropertyOrder({
+  BusinessPayoutLinkConfig.JSON_PROPERTY_LOGO,
+  BusinessPayoutLinkConfig.JSON_PROPERTY_MERCHANT_NAME,
+  BusinessPayoutLinkConfig.JSON_PROPERTY_THEME,
+  BusinessPayoutLinkConfig.JSON_PROPERTY_DOMAIN_NAME,
+  BusinessPayoutLinkConfig.JSON_PROPERTY_ALLOWED_DOMAINS,
+  BusinessPayoutLinkConfig.JSON_PROPERTY_FORM_LAYOUT,
+  BusinessPayoutLinkConfig.JSON_PROPERTY_PAYOUT_TEST_MODE
+})
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class BusinessPayoutLinkConfig {
-        public static final String JSON_PROPERTY_LOGO = "logo";
-    @javax.annotation.Nullable
-            private JsonNullable<String> logo = JsonNullable.<String>undefined();
+  public static final String JSON_PROPERTY_LOGO = "logo";
+  @javax.annotation.Nullable
+  private JsonNullable<String> logo = JsonNullable.<String>undefined();
 
-        public static final String JSON_PROPERTY_MERCHANT_NAME = "merchant_name";
-    @javax.annotation.Nullable
-            private JsonNullable<String> merchantName = JsonNullable.<String>undefined();
+  public static final String JSON_PROPERTY_MERCHANT_NAME = "merchant_name";
+  @javax.annotation.Nullable
+  private JsonNullable<String> merchantName = JsonNullable.<String>undefined();
 
-        public static final String JSON_PROPERTY_THEME = "theme";
-    @javax.annotation.Nullable
-            private JsonNullable<String> theme = JsonNullable.<String>undefined();
+  public static final String JSON_PROPERTY_THEME = "theme";
+  @javax.annotation.Nullable
+  private JsonNullable<String> theme = JsonNullable.<String>undefined();
 
-        public static final String JSON_PROPERTY_DOMAIN_NAME = "domain_name";
-    @javax.annotation.Nullable
-            private JsonNullable<String> domainName = JsonNullable.<String>undefined();
+  public static final String JSON_PROPERTY_DOMAIN_NAME = "domain_name";
+  @javax.annotation.Nullable
+  private JsonNullable<String> domainName = JsonNullable.<String>undefined();
 
-        public static final String JSON_PROPERTY_ALLOWED_DOMAINS = "allowed_domains";
-    @javax.annotation.Nonnull
-            private Set<String> allowedDomains = new LinkedHashSet<>();
+  public static final String JSON_PROPERTY_ALLOWED_DOMAINS = "allowed_domains";
+  @javax.annotation.Nonnull
+  private Set<String> allowedDomains = new LinkedHashSet<>();
 
-        public static final String JSON_PROPERTY_FORM_LAYOUT = "form_layout";
-    @javax.annotation.Nullable
-            private JsonNullable<UIWidgetFormLayout> formLayout = JsonNullable.<UIWidgetFormLayout>undefined();
+  public static final String JSON_PROPERTY_FORM_LAYOUT = "form_layout";
+  @javax.annotation.Nullable
+  private JsonNullable<UIWidgetFormLayout> formLayout = JsonNullable.<UIWidgetFormLayout>undefined();
 
-        public static final String JSON_PROPERTY_PAYOUT_TEST_MODE = "payout_test_mode";
-    @javax.annotation.Nullable
-            private JsonNullable<Boolean> payoutTestMode = JsonNullable.<Boolean>of(false);
+  public static final String JSON_PROPERTY_PAYOUT_TEST_MODE = "payout_test_mode";
+  @javax.annotation.Nullable
+  private JsonNullable<Boolean> payoutTestMode = JsonNullable.<Boolean>of(false);
 
-public BusinessPayoutLinkConfig() {
-}
+  public BusinessPayoutLinkConfig() {
+  }
 
-        public BusinessPayoutLinkConfig logo(@javax.annotation.Nullable String logo) {
-        this.logo = JsonNullable.<String>of(logo);
-        
-        return this;
-        }
-
-    /**
-        * Merchant&#39;s display logo
-    * @return logo
-    */
-    @javax.annotation.Nullable
-        @JsonIgnore
+  public BusinessPayoutLinkConfig logo(@javax.annotation.Nullable String logo) {
+    this.logo = JsonNullable.<String>of(logo);
     
-    public String getLogo() {
-                return logo.orElse(null);
-    }
+    return this;
+  }
 
-          @JsonProperty(JSON_PROPERTY_LOGO)
+  /**
+   * Merchant&#39;s display logo
+   * @return logo
+   */
+  @javax.annotation.Nullable
+  @JsonIgnore
+
+  public String getLogo() {
+        return logo.orElse(null);
+  }
+
+  @JsonProperty(JSON_PROPERTY_LOGO)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-        public JsonNullable<String> getLogo_JsonNullable() {
-        return logo;
-        }
+  public JsonNullable<String> getLogo_JsonNullable() {
+    return logo;
+  }
+  
+  @JsonProperty(JSON_PROPERTY_LOGO)
+  public void setLogo_JsonNullable(JsonNullable<String> logo) {
+    this.logo = logo;
+  }
+
+  public void setLogo(@javax.annotation.Nullable String logo) {
+    this.logo = JsonNullable.<String>of(logo);
+  }
+
+  public BusinessPayoutLinkConfig merchantName(@javax.annotation.Nullable String merchantName) {
+    this.merchantName = JsonNullable.<String>of(merchantName);
     
-        @JsonProperty(JSON_PROPERTY_LOGO)
-        public void setLogo_JsonNullable(JsonNullable<String> logo) {
-        this.logo = logo;
-        }
+    return this;
+  }
 
-          public void setLogo(@javax.annotation.Nullable String logo) {
-            this.logo = JsonNullable.<String>of(logo);
-        }
+  /**
+   * Custom merchant name for the link
+   * @return merchantName
+   */
+  @javax.annotation.Nullable
+  @JsonIgnore
 
-        public BusinessPayoutLinkConfig merchantName(@javax.annotation.Nullable String merchantName) {
-        this.merchantName = JsonNullable.<String>of(merchantName);
-        
-        return this;
-        }
+  public String getMerchantName() {
+        return merchantName.orElse(null);
+  }
 
-    /**
-        * Custom merchant name for the link
-    * @return merchantName
-    */
-    @javax.annotation.Nullable
-        @JsonIgnore
-    
-    public String getMerchantName() {
-                return merchantName.orElse(null);
-    }
-
-          @JsonProperty(JSON_PROPERTY_MERCHANT_NAME)
+  @JsonProperty(JSON_PROPERTY_MERCHANT_NAME)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-        public JsonNullable<String> getMerchantName_JsonNullable() {
-        return merchantName;
-        }
+  public JsonNullable<String> getMerchantName_JsonNullable() {
+    return merchantName;
+  }
+  
+  @JsonProperty(JSON_PROPERTY_MERCHANT_NAME)
+  public void setMerchantName_JsonNullable(JsonNullable<String> merchantName) {
+    this.merchantName = merchantName;
+  }
+
+  public void setMerchantName(@javax.annotation.Nullable String merchantName) {
+    this.merchantName = JsonNullable.<String>of(merchantName);
+  }
+
+  public BusinessPayoutLinkConfig theme(@javax.annotation.Nullable String theme) {
+    this.theme = JsonNullable.<String>of(theme);
     
-        @JsonProperty(JSON_PROPERTY_MERCHANT_NAME)
-        public void setMerchantName_JsonNullable(JsonNullable<String> merchantName) {
-        this.merchantName = merchantName;
-        }
+    return this;
+  }
 
-          public void setMerchantName(@javax.annotation.Nullable String merchantName) {
-            this.merchantName = JsonNullable.<String>of(merchantName);
-        }
+  /**
+   * Primary color to be used in the form represented in hex format
+   * @return theme
+   */
+  @javax.annotation.Nullable
+  @JsonIgnore
 
-        public BusinessPayoutLinkConfig theme(@javax.annotation.Nullable String theme) {
-        this.theme = JsonNullable.<String>of(theme);
-        
-        return this;
-        }
+  public String getTheme() {
+        return theme.orElse(null);
+  }
 
-    /**
-        * Primary color to be used in the form represented in hex format
-    * @return theme
-    */
-    @javax.annotation.Nullable
-        @JsonIgnore
-    
-    public String getTheme() {
-                return theme.orElse(null);
-    }
-
-          @JsonProperty(JSON_PROPERTY_THEME)
+  @JsonProperty(JSON_PROPERTY_THEME)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-        public JsonNullable<String> getTheme_JsonNullable() {
-        return theme;
-        }
+  public JsonNullable<String> getTheme_JsonNullable() {
+    return theme;
+  }
+  
+  @JsonProperty(JSON_PROPERTY_THEME)
+  public void setTheme_JsonNullable(JsonNullable<String> theme) {
+    this.theme = theme;
+  }
+
+  public void setTheme(@javax.annotation.Nullable String theme) {
+    this.theme = JsonNullable.<String>of(theme);
+  }
+
+  public BusinessPayoutLinkConfig domainName(@javax.annotation.Nullable String domainName) {
+    this.domainName = JsonNullable.<String>of(domainName);
     
-        @JsonProperty(JSON_PROPERTY_THEME)
-        public void setTheme_JsonNullable(JsonNullable<String> theme) {
-        this.theme = theme;
-        }
+    return this;
+  }
 
-          public void setTheme(@javax.annotation.Nullable String theme) {
-            this.theme = JsonNullable.<String>of(theme);
-        }
+  /**
+   * Custom domain name to be used for hosting the link
+   * @return domainName
+   */
+  @javax.annotation.Nullable
+  @JsonIgnore
 
-        public BusinessPayoutLinkConfig domainName(@javax.annotation.Nullable String domainName) {
-        this.domainName = JsonNullable.<String>of(domainName);
-        
-        return this;
-        }
+  public String getDomainName() {
+        return domainName.orElse(null);
+  }
 
-    /**
-        * Custom domain name to be used for hosting the link
-    * @return domainName
-    */
-    @javax.annotation.Nullable
-        @JsonIgnore
-    
-    public String getDomainName() {
-                return domainName.orElse(null);
-    }
-
-          @JsonProperty(JSON_PROPERTY_DOMAIN_NAME)
+  @JsonProperty(JSON_PROPERTY_DOMAIN_NAME)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-        public JsonNullable<String> getDomainName_JsonNullable() {
-        return domainName;
-        }
+  public JsonNullable<String> getDomainName_JsonNullable() {
+    return domainName;
+  }
+  
+  @JsonProperty(JSON_PROPERTY_DOMAIN_NAME)
+  public void setDomainName_JsonNullable(JsonNullable<String> domainName) {
+    this.domainName = domainName;
+  }
+
+  public void setDomainName(@javax.annotation.Nullable String domainName) {
+    this.domainName = JsonNullable.<String>of(domainName);
+  }
+
+  public BusinessPayoutLinkConfig allowedDomains(@javax.annotation.Nonnull Set<String> allowedDomains) {
     
-        @JsonProperty(JSON_PROPERTY_DOMAIN_NAME)
-        public void setDomainName_JsonNullable(JsonNullable<String> domainName) {
-        this.domainName = domainName;
-        }
+    this.allowedDomains = allowedDomains;
+    return this;
+  }
 
-          public void setDomainName(@javax.annotation.Nullable String domainName) {
-            this.domainName = JsonNullable.<String>of(domainName);
-        }
+  public BusinessPayoutLinkConfig addAllowedDomainsItem(String allowedDomainsItem) {
+    if (this.allowedDomains == null) {
+      this.allowedDomains = new LinkedHashSet<>();
+    }
+    this.allowedDomains.add(allowedDomainsItem);
+    return this;
+  }
 
-        public BusinessPayoutLinkConfig allowedDomains(@javax.annotation.Nonnull Set<String> allowedDomains) {
-        
-        this.allowedDomains = allowedDomains;
-        return this;
-        }
-
-            public BusinessPayoutLinkConfig addAllowedDomainsItem(String allowedDomainsItem) {
-                if (this.allowedDomains == null) {
-                this.allowedDomains = new LinkedHashSet<>();
-                }
-                this.allowedDomains.add(allowedDomainsItem);
-                return this;
-            }
-
-    /**
-        * A list of allowed domains (glob patterns) where this link can be embedded / opened from
-    * @return allowedDomains
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_ALLOWED_DOMAINS)
+  /**
+   * A list of allowed domains (glob patterns) where this link can be embedded / opened from
+   * @return allowedDomains
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_ALLOWED_DOMAINS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public Set<String> getAllowedDomains() {
-        return allowedDomains;
-    }
+  public Set<String> getAllowedDomains() {
+    return allowedDomains;
+  }
 
 
-          @JsonDeserialize(as = LinkedHashSet.class)
-          @JsonProperty(JSON_PROPERTY_ALLOWED_DOMAINS)
+  @JsonDeserialize(as = LinkedHashSet.class)
+  @JsonProperty(JSON_PROPERTY_ALLOWED_DOMAINS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setAllowedDomains(@javax.annotation.Nonnull Set<String> allowedDomains) {
-            this.allowedDomains = allowedDomains;
-        }
+    this.allowedDomains = allowedDomains;
+  }
 
-        public BusinessPayoutLinkConfig formLayout(@javax.annotation.Nullable UIWidgetFormLayout formLayout) {
-        this.formLayout = JsonNullable.<UIWidgetFormLayout>of(formLayout);
-        
-        return this;
-        }
-
-    /**
-        * Get formLayout
-    * @return formLayout
-    */
-    @javax.annotation.Nullable
-        @JsonIgnore
+  public BusinessPayoutLinkConfig formLayout(@javax.annotation.Nullable UIWidgetFormLayout formLayout) {
+    this.formLayout = JsonNullable.<UIWidgetFormLayout>of(formLayout);
     
-    public UIWidgetFormLayout getFormLayout() {
-                return formLayout.orElse(null);
-    }
+    return this;
+  }
 
-          @JsonProperty(JSON_PROPERTY_FORM_LAYOUT)
+  /**
+   * Get formLayout
+   * @return formLayout
+   */
+  @javax.annotation.Nullable
+  @JsonIgnore
+
+  public UIWidgetFormLayout getFormLayout() {
+        return formLayout.orElse(null);
+  }
+
+  @JsonProperty(JSON_PROPERTY_FORM_LAYOUT)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-        public JsonNullable<UIWidgetFormLayout> getFormLayout_JsonNullable() {
-        return formLayout;
-        }
+  public JsonNullable<UIWidgetFormLayout> getFormLayout_JsonNullable() {
+    return formLayout;
+  }
+  
+  @JsonProperty(JSON_PROPERTY_FORM_LAYOUT)
+  public void setFormLayout_JsonNullable(JsonNullable<UIWidgetFormLayout> formLayout) {
+    this.formLayout = formLayout;
+  }
+
+  public void setFormLayout(@javax.annotation.Nullable UIWidgetFormLayout formLayout) {
+    this.formLayout = JsonNullable.<UIWidgetFormLayout>of(formLayout);
+  }
+
+  public BusinessPayoutLinkConfig payoutTestMode(@javax.annotation.Nullable Boolean payoutTestMode) {
+    this.payoutTestMode = JsonNullable.<Boolean>of(payoutTestMode);
     
-        @JsonProperty(JSON_PROPERTY_FORM_LAYOUT)
-        public void setFormLayout_JsonNullable(JsonNullable<UIWidgetFormLayout> formLayout) {
-        this.formLayout = formLayout;
-        }
+    return this;
+  }
 
-          public void setFormLayout(@javax.annotation.Nullable UIWidgetFormLayout formLayout) {
-            this.formLayout = JsonNullable.<UIWidgetFormLayout>of(formLayout);
-        }
+  /**
+   * Allows for removing any validations / pre-requisites which are necessary in a production environment
+   * @return payoutTestMode
+   */
+  @javax.annotation.Nullable
+  @JsonIgnore
 
-        public BusinessPayoutLinkConfig payoutTestMode(@javax.annotation.Nullable Boolean payoutTestMode) {
-        this.payoutTestMode = JsonNullable.<Boolean>of(payoutTestMode);
-        
-        return this;
-        }
+  public Boolean getPayoutTestMode() {
+        return payoutTestMode.orElse(null);
+  }
 
-    /**
-        * Allows for removing any validations / pre-requisites which are necessary in a production environment
-    * @return payoutTestMode
-    */
-    @javax.annotation.Nullable
-        @JsonIgnore
-    
-    public Boolean getPayoutTestMode() {
-                return payoutTestMode.orElse(null);
-    }
-
-          @JsonProperty(JSON_PROPERTY_PAYOUT_TEST_MODE)
+  @JsonProperty(JSON_PROPERTY_PAYOUT_TEST_MODE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-        public JsonNullable<Boolean> getPayoutTestMode_JsonNullable() {
-        return payoutTestMode;
-        }
-    
-        @JsonProperty(JSON_PROPERTY_PAYOUT_TEST_MODE)
-        public void setPayoutTestMode_JsonNullable(JsonNullable<Boolean> payoutTestMode) {
-        this.payoutTestMode = payoutTestMode;
-        }
+  public JsonNullable<Boolean> getPayoutTestMode_JsonNullable() {
+    return payoutTestMode;
+  }
+  
+  @JsonProperty(JSON_PROPERTY_PAYOUT_TEST_MODE)
+  public void setPayoutTestMode_JsonNullable(JsonNullable<Boolean> payoutTestMode) {
+    this.payoutTestMode = payoutTestMode;
+  }
 
-          public void setPayoutTestMode(@javax.annotation.Nullable Boolean payoutTestMode) {
-            this.payoutTestMode = JsonNullable.<Boolean>of(payoutTestMode);
-        }
+  public void setPayoutTestMode(@javax.annotation.Nullable Boolean payoutTestMode) {
+    this.payoutTestMode = JsonNullable.<Boolean>of(payoutTestMode);
+  }
 
-@Override
-public boolean equals(Object o) {
+  @Override
+  public boolean equals(Object o) {
     if (this == o) {
-    return true;
+      return true;
     }
     if (o == null || getClass() != o.getClass()) {
-    return false;
+      return false;
     }
-        BusinessPayoutLinkConfig businessPayoutLinkConfig = (BusinessPayoutLinkConfig) o;
-        return equalsNullable(this.logo, businessPayoutLinkConfig.logo) &&
+    BusinessPayoutLinkConfig businessPayoutLinkConfig = (BusinessPayoutLinkConfig) o;
+    return equalsNullable(this.logo, businessPayoutLinkConfig.logo) &&
         equalsNullable(this.merchantName, businessPayoutLinkConfig.merchantName) &&
         equalsNullable(this.theme, businessPayoutLinkConfig.theme) &&
         equalsNullable(this.domainName, businessPayoutLinkConfig.domainName) &&
         Objects.equals(this.allowedDomains, businessPayoutLinkConfig.allowedDomains) &&
         equalsNullable(this.formLayout, businessPayoutLinkConfig.formLayout) &&
         equalsNullable(this.payoutTestMode, businessPayoutLinkConfig.payoutTestMode);
-}
+  }
 
-    private static <T> boolean equalsNullable(JsonNullable<T> a, JsonNullable<T> b) {
-        return a == b || (a != null && b != null && a.isPresent() && b.isPresent() && Objects.deepEquals(a.get(), b.get()));
-        }
+  private static <T> boolean equalsNullable(JsonNullable<T> a, JsonNullable<T> b) {
+    return a == b || (a != null && b != null && a.isPresent() && b.isPresent() && Objects.deepEquals(a.get(), b.get()));
+  }
 
-    @Override
-    public int hashCode() {
-        return Objects.hash(hashCodeNullable(logo), hashCodeNullable(merchantName), hashCodeNullable(theme), hashCodeNullable(domainName), allowedDomains, hashCodeNullable(formLayout), hashCodeNullable(payoutTestMode));
+  @Override
+  public int hashCode() {
+    return Objects.hash(hashCodeNullable(logo), hashCodeNullable(merchantName), hashCodeNullable(theme), hashCodeNullable(domainName), allowedDomains, hashCodeNullable(formLayout), hashCodeNullable(payoutTestMode));
+  }
+
+  private static <T> int hashCodeNullable(JsonNullable<T> a) {
+    if (a == null) {
+      return 1;
     }
+    return a.isPresent() ? Arrays.deepHashCode(new Object[]{a.get()}) : 31;
+  }
 
-        private static <T> int hashCodeNullable(JsonNullable<T> a) {
-        if (a == null) {
-        return 1;
-        }
-        return a.isPresent() ? Arrays.deepHashCode(new Object[]{a.get()}) : 31;
-        }
-
-    @Override
-    public String toString() {
+  @Override
+  public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class BusinessPayoutLinkConfig {\n");
-        sb.append("    logo: ").append(toIndentedString(logo)).append("\n");
-        sb.append("    merchantName: ").append(toIndentedString(merchantName)).append("\n");
-        sb.append("    theme: ").append(toIndentedString(theme)).append("\n");
-        sb.append("    domainName: ").append(toIndentedString(domainName)).append("\n");
-        sb.append("    allowedDomains: ").append(toIndentedString(allowedDomains)).append("\n");
-        sb.append("    formLayout: ").append(toIndentedString(formLayout)).append("\n");
-        sb.append("    payoutTestMode: ").append(toIndentedString(payoutTestMode)).append("\n");
+    sb.append("    logo: ").append(toIndentedString(logo)).append("\n");
+    sb.append("    merchantName: ").append(toIndentedString(merchantName)).append("\n");
+    sb.append("    theme: ").append(toIndentedString(theme)).append("\n");
+    sb.append("    domainName: ").append(toIndentedString(domainName)).append("\n");
+    sb.append("    allowedDomains: ").append(toIndentedString(allowedDomains)).append("\n");
+    sb.append("    formLayout: ").append(toIndentedString(formLayout)).append("\n");
+    sb.append("    payoutTestMode: ").append(toIndentedString(payoutTestMode)).append("\n");
     sb.append("}");
     return sb.toString();
-    }
+  }
 
-    /**
-    * Convert the given object to string with each line indented by 4 spaces
-    * (except the first line).
-    */
-    private String toIndentedString(Object o) {
+  /**
+   * Convert the given object to string with each line indented by 4 spaces
+   * (except the first line).
+   */
+  private String toIndentedString(Object o) {
     if (o == null) {
-    return "null";
+      return "null";
     }
     return o.toString().replace("\n", "\n    ");
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @return URL query string
+   */
+  public String toUrlQueryString() {
+    return toUrlQueryString(null);
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @param prefix prefix of the query string
+   * @return URL query string
+   */
+  public String toUrlQueryString(String prefix) {
+    String suffix = "";
+    String containerSuffix = "";
+    String containerPrefix = "";
+    if (prefix == null) {
+      // style=form, explode=true, e.g. /pet?name=cat&type=manx
+      prefix = "";
+    } else {
+      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+      prefix = prefix + "[";
+      suffix = "]";
+      containerSuffix = "]";
+      containerPrefix = "[";
     }
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @return URL query string
-        */
-        public String toUrlQueryString() {
-        return toUrlQueryString(null);
-        }
+    StringJoiner joiner = new StringJoiner("&");
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @param prefix prefix of the query string
-        * @return URL query string
-        */
-        public String toUrlQueryString(String prefix) {
-        String suffix = "";
-        String containerSuffix = "";
-        String containerPrefix = "";
-        if (prefix == null) {
-        // style=form, explode=true, e.g. /pet?name=cat&type=manx
-        prefix = "";
-        } else {
-        // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
-        prefix = prefix + "[";
-        suffix = "]";
-        containerSuffix = "]";
-        containerPrefix = "[";
-        }
-
-        StringJoiner joiner = new StringJoiner("&");
-
-            // add `logo` to the URL query string
-                        if (getLogo() != null) {
-                        try {
-                        joiner.add(String.format("%slogo%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getLogo()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-            // add `merchant_name` to the URL query string
-                        if (getMerchantName() != null) {
-                        try {
-                        joiner.add(String.format("%smerchant_name%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getMerchantName()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-            // add `theme` to the URL query string
-                        if (getTheme() != null) {
-                        try {
-                        joiner.add(String.format("%stheme%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getTheme()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-            // add `domain_name` to the URL query string
-                        if (getDomainName() != null) {
-                        try {
-                        joiner.add(String.format("%sdomain_name%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getDomainName()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-            // add `allowed_domains` to the URL query string
-                        if (getAllowedDomains() != null) {
-                        int i = 0;
-                        for (String _item : getAllowedDomains()) {
-                        try {
-                        joiner.add(String.format("%sallowed_domains%s%s=%s", prefix, suffix,
-                        "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix),
-                        URLEncoder.encode(String.valueOf(_item), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-                        i++;
-                        }
-
-            // add `form_layout` to the URL query string
-                            if (getFormLayout() != null) {
-                            try {
-                            joiner.add(String.format("%sform_layout%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getFormLayout()), "UTF-8").replaceAll("\\+", "%20")));
-                            } catch (UnsupportedEncodingException e) {
-                            // Should never happen, UTF-8 is always supported
-                            throw new RuntimeException(e);
-                            }
-                            }
-
-            // add `payout_test_mode` to the URL query string
-                        if (getPayoutTestMode() != null) {
-                        try {
-                        joiner.add(String.format("%spayout_test_mode%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getPayoutTestMode()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-        return joiner.toString();
-        }
-
+    // add `logo` to the URL query string
+    if (getLogo() != null) {
+      try {
+        joiner.add(String.format("%slogo%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getLogo()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
     }
+
+    // add `merchant_name` to the URL query string
+    if (getMerchantName() != null) {
+      try {
+        joiner.add(String.format("%smerchant_name%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getMerchantName()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `theme` to the URL query string
+    if (getTheme() != null) {
+      try {
+        joiner.add(String.format("%stheme%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getTheme()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `domain_name` to the URL query string
+    if (getDomainName() != null) {
+      try {
+        joiner.add(String.format("%sdomain_name%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getDomainName()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `allowed_domains` to the URL query string
+    if (getAllowedDomains() != null) {
+      int i = 0;
+      for (String _item : getAllowedDomains()) {
+        try {
+          joiner.add(String.format("%sallowed_domains%s%s=%s", prefix, suffix,
+              "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix),
+              URLEncoder.encode(String.valueOf(_item), "UTF-8").replaceAll("\\+", "%20")));
+        } catch (UnsupportedEncodingException e) {
+          // Should never happen, UTF-8 is always supported
+          throw new RuntimeException(e);
+        }
+      }
+      i++;
+    }
+
+    // add `form_layout` to the URL query string
+    if (getFormLayout() != null) {
+      try {
+        joiner.add(String.format("%sform_layout%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getFormLayout()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `payout_test_mode` to the URL query string
+    if (getPayoutTestMode() != null) {
+      try {
+        joiner.add(String.format("%spayout_test_mode%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getPayoutTestMode()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    return joiner.toString();
+  }
+
+}
 

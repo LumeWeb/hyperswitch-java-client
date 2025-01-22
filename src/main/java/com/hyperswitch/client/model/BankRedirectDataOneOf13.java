@@ -28,122 +28,122 @@ import java.net.URLEncoder;
 import java.util.StringJoiner;
 
 /**
-* BankRedirectDataOneOf13
-*/
-    @JsonPropertyOrder({
-        BankRedirectDataOneOf13.JSON_PROPERTY_SOFORT
-    })
-            @JsonTypeName("BankRedirectData_oneOf_13")
+ * BankRedirectDataOneOf13
+ */
+@JsonPropertyOrder({
+  BankRedirectDataOneOf13.JSON_PROPERTY_SOFORT
+})
+@JsonTypeName("BankRedirectData_oneOf_13")
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class BankRedirectDataOneOf13 {
-        public static final String JSON_PROPERTY_SOFORT = "sofort";
-    @javax.annotation.Nonnull
-            private BankRedirectDataOneOf13Sofort sofort;
+  public static final String JSON_PROPERTY_SOFORT = "sofort";
+  @javax.annotation.Nonnull
+  private BankRedirectDataOneOf13Sofort sofort;
 
-public BankRedirectDataOneOf13() {
-}
+  public BankRedirectDataOneOf13() {
+  }
 
-        public BankRedirectDataOneOf13 sofort(@javax.annotation.Nonnull BankRedirectDataOneOf13Sofort sofort) {
-        
-        this.sofort = sofort;
-        return this;
-        }
+  public BankRedirectDataOneOf13 sofort(@javax.annotation.Nonnull BankRedirectDataOneOf13Sofort sofort) {
+    
+    this.sofort = sofort;
+    return this;
+  }
 
-    /**
-        * Get sofort
-    * @return sofort
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_SOFORT)
+  /**
+   * Get sofort
+   * @return sofort
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_SOFORT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public BankRedirectDataOneOf13Sofort getSofort() {
-        return sofort;
-    }
+  public BankRedirectDataOneOf13Sofort getSofort() {
+    return sofort;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_SOFORT)
+  @JsonProperty(JSON_PROPERTY_SOFORT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setSofort(@javax.annotation.Nonnull BankRedirectDataOneOf13Sofort sofort) {
-            this.sofort = sofort;
-        }
+    this.sofort = sofort;
+  }
 
-@Override
-public boolean equals(Object o) {
+  @Override
+  public boolean equals(Object o) {
     if (this == o) {
-    return true;
+      return true;
     }
     if (o == null || getClass() != o.getClass()) {
-    return false;
+      return false;
     }
-        BankRedirectDataOneOf13 bankRedirectDataOneOf13 = (BankRedirectDataOneOf13) o;
-        return Objects.equals(this.sofort, bankRedirectDataOneOf13.sofort);
-}
+    BankRedirectDataOneOf13 bankRedirectDataOneOf13 = (BankRedirectDataOneOf13) o;
+    return Objects.equals(this.sofort, bankRedirectDataOneOf13.sofort);
+  }
 
-    @Override
-    public int hashCode() {
-        return Objects.hash(sofort);
-    }
+  @Override
+  public int hashCode() {
+    return Objects.hash(sofort);
+  }
 
-    @Override
-    public String toString() {
+  @Override
+  public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class BankRedirectDataOneOf13 {\n");
-        sb.append("    sofort: ").append(toIndentedString(sofort)).append("\n");
+    sb.append("    sofort: ").append(toIndentedString(sofort)).append("\n");
     sb.append("}");
     return sb.toString();
-    }
+  }
 
-    /**
-    * Convert the given object to string with each line indented by 4 spaces
-    * (except the first line).
-    */
-    private String toIndentedString(Object o) {
+  /**
+   * Convert the given object to string with each line indented by 4 spaces
+   * (except the first line).
+   */
+  private String toIndentedString(Object o) {
     if (o == null) {
-    return "null";
+      return "null";
     }
     return o.toString().replace("\n", "\n    ");
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @return URL query string
+   */
+  public String toUrlQueryString() {
+    return toUrlQueryString(null);
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @param prefix prefix of the query string
+   * @return URL query string
+   */
+  public String toUrlQueryString(String prefix) {
+    String suffix = "";
+    String containerSuffix = "";
+    String containerPrefix = "";
+    if (prefix == null) {
+      // style=form, explode=true, e.g. /pet?name=cat&type=manx
+      prefix = "";
+    } else {
+      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+      prefix = prefix + "[";
+      suffix = "]";
+      containerSuffix = "]";
+      containerPrefix = "[";
     }
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @return URL query string
-        */
-        public String toUrlQueryString() {
-        return toUrlQueryString(null);
-        }
+    StringJoiner joiner = new StringJoiner("&");
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @param prefix prefix of the query string
-        * @return URL query string
-        */
-        public String toUrlQueryString(String prefix) {
-        String suffix = "";
-        String containerSuffix = "";
-        String containerPrefix = "";
-        if (prefix == null) {
-        // style=form, explode=true, e.g. /pet?name=cat&type=manx
-        prefix = "";
-        } else {
-        // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
-        prefix = prefix + "[";
-        suffix = "]";
-        containerSuffix = "]";
-        containerPrefix = "[";
-        }
-
-        StringJoiner joiner = new StringJoiner("&");
-
-            // add `sofort` to the URL query string
-                            if (getSofort() != null) {
-                            joiner.add(getSofort().toUrlQueryString(prefix + "sofort" + suffix));
-                            }
-
-        return joiner.toString();
-        }
-
+    // add `sofort` to the URL query string
+    if (getSofort() != null) {
+      joiner.add(getSofort().toUrlQueryString(prefix + "sofort" + suffix));
     }
+
+    return joiner.toString();
+  }
+
+}
 

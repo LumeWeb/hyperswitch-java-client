@@ -32,431 +32,431 @@ import java.net.URLEncoder;
 import java.util.StringJoiner;
 
 /**
-* PayoutListConstraints
-*/
-    @JsonPropertyOrder({
-        PayoutListConstraints.JSON_PROPERTY_START_TIME,
-        PayoutListConstraints.JSON_PROPERTY_END_TIME,
-        PayoutListConstraints.JSON_PROPERTY_CUSTOMER_ID,
-        PayoutListConstraints.JSON_PROPERTY_STARTING_AFTER,
-        PayoutListConstraints.JSON_PROPERTY_ENDING_BEFORE,
-        PayoutListConstraints.JSON_PROPERTY_LIMIT,
-        PayoutListConstraints.JSON_PROPERTY_CREATED
-    })
+ * PayoutListConstraints
+ */
+@JsonPropertyOrder({
+  PayoutListConstraints.JSON_PROPERTY_START_TIME,
+  PayoutListConstraints.JSON_PROPERTY_END_TIME,
+  PayoutListConstraints.JSON_PROPERTY_CUSTOMER_ID,
+  PayoutListConstraints.JSON_PROPERTY_STARTING_AFTER,
+  PayoutListConstraints.JSON_PROPERTY_ENDING_BEFORE,
+  PayoutListConstraints.JSON_PROPERTY_LIMIT,
+  PayoutListConstraints.JSON_PROPERTY_CREATED
+})
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class PayoutListConstraints {
-        public static final String JSON_PROPERTY_START_TIME = "start_time";
-    @javax.annotation.Nonnull
-            private OffsetDateTime startTime;
+  public static final String JSON_PROPERTY_START_TIME = "start_time";
+  @javax.annotation.Nonnull
+  private OffsetDateTime startTime;
 
-        public static final String JSON_PROPERTY_END_TIME = "end_time";
-    @javax.annotation.Nullable
-            private JsonNullable<OffsetDateTime> endTime = JsonNullable.<OffsetDateTime>undefined();
+  public static final String JSON_PROPERTY_END_TIME = "end_time";
+  @javax.annotation.Nullable
+  private JsonNullable<OffsetDateTime> endTime = JsonNullable.<OffsetDateTime>undefined();
 
-        public static final String JSON_PROPERTY_CUSTOMER_ID = "customer_id";
-    @javax.annotation.Nullable
-            private JsonNullable<String> customerId = JsonNullable.<String>undefined();
+  public static final String JSON_PROPERTY_CUSTOMER_ID = "customer_id";
+  @javax.annotation.Nullable
+  private JsonNullable<String> customerId = JsonNullable.<String>undefined();
 
-        public static final String JSON_PROPERTY_STARTING_AFTER = "starting_after";
-    @javax.annotation.Nullable
-            private JsonNullable<String> startingAfter = JsonNullable.<String>undefined();
+  public static final String JSON_PROPERTY_STARTING_AFTER = "starting_after";
+  @javax.annotation.Nullable
+  private JsonNullable<String> startingAfter = JsonNullable.<String>undefined();
 
-        public static final String JSON_PROPERTY_ENDING_BEFORE = "ending_before";
-    @javax.annotation.Nullable
-            private JsonNullable<String> endingBefore = JsonNullable.<String>undefined();
+  public static final String JSON_PROPERTY_ENDING_BEFORE = "ending_before";
+  @javax.annotation.Nullable
+  private JsonNullable<String> endingBefore = JsonNullable.<String>undefined();
 
-        public static final String JSON_PROPERTY_LIMIT = "limit";
-    @javax.annotation.Nullable
-            private Integer limit = 10;
+  public static final String JSON_PROPERTY_LIMIT = "limit";
+  @javax.annotation.Nullable
+  private Integer limit = 10;
 
-        public static final String JSON_PROPERTY_CREATED = "created";
-    @javax.annotation.Nullable
-            private JsonNullable<OffsetDateTime> created = JsonNullable.<OffsetDateTime>undefined();
+  public static final String JSON_PROPERTY_CREATED = "created";
+  @javax.annotation.Nullable
+  private JsonNullable<OffsetDateTime> created = JsonNullable.<OffsetDateTime>undefined();
 
-public PayoutListConstraints() {
-}
+  public PayoutListConstraints() {
+  }
 
-        public PayoutListConstraints startTime(@javax.annotation.Nonnull OffsetDateTime startTime) {
-        
-        this.startTime = startTime;
-        return this;
-        }
+  public PayoutListConstraints startTime(@javax.annotation.Nonnull OffsetDateTime startTime) {
+    
+    this.startTime = startTime;
+    return this;
+  }
 
-    /**
-        * The start time to filter payments list or to get list of filters. To get list of filters start time is needed to be passed
-    * @return startTime
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_START_TIME)
+  /**
+   * The start time to filter payments list or to get list of filters. To get list of filters start time is needed to be passed
+   * @return startTime
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_START_TIME)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public OffsetDateTime getStartTime() {
-        return startTime;
-    }
+  public OffsetDateTime getStartTime() {
+    return startTime;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_START_TIME)
+  @JsonProperty(JSON_PROPERTY_START_TIME)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setStartTime(@javax.annotation.Nonnull OffsetDateTime startTime) {
-            this.startTime = startTime;
-        }
+    this.startTime = startTime;
+  }
 
-        public PayoutListConstraints endTime(@javax.annotation.Nullable OffsetDateTime endTime) {
-        this.endTime = JsonNullable.<OffsetDateTime>of(endTime);
-        
-        return this;
-        }
-
-    /**
-        * The end time to filter payments list or to get list of filters. If not passed the default time is now
-    * @return endTime
-    */
-    @javax.annotation.Nullable
-        @JsonIgnore
+  public PayoutListConstraints endTime(@javax.annotation.Nullable OffsetDateTime endTime) {
+    this.endTime = JsonNullable.<OffsetDateTime>of(endTime);
     
-    public OffsetDateTime getEndTime() {
-                return endTime.orElse(null);
-    }
+    return this;
+  }
 
-          @JsonProperty(JSON_PROPERTY_END_TIME)
+  /**
+   * The end time to filter payments list or to get list of filters. If not passed the default time is now
+   * @return endTime
+   */
+  @javax.annotation.Nullable
+  @JsonIgnore
+
+  public OffsetDateTime getEndTime() {
+        return endTime.orElse(null);
+  }
+
+  @JsonProperty(JSON_PROPERTY_END_TIME)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-        public JsonNullable<OffsetDateTime> getEndTime_JsonNullable() {
-        return endTime;
-        }
+  public JsonNullable<OffsetDateTime> getEndTime_JsonNullable() {
+    return endTime;
+  }
+  
+  @JsonProperty(JSON_PROPERTY_END_TIME)
+  public void setEndTime_JsonNullable(JsonNullable<OffsetDateTime> endTime) {
+    this.endTime = endTime;
+  }
+
+  public void setEndTime(@javax.annotation.Nullable OffsetDateTime endTime) {
+    this.endTime = JsonNullable.<OffsetDateTime>of(endTime);
+  }
+
+  public PayoutListConstraints customerId(@javax.annotation.Nullable String customerId) {
+    this.customerId = JsonNullable.<String>of(customerId);
     
-        @JsonProperty(JSON_PROPERTY_END_TIME)
-        public void setEndTime_JsonNullable(JsonNullable<OffsetDateTime> endTime) {
-        this.endTime = endTime;
-        }
+    return this;
+  }
 
-          public void setEndTime(@javax.annotation.Nullable OffsetDateTime endTime) {
-            this.endTime = JsonNullable.<OffsetDateTime>of(endTime);
-        }
+  /**
+   * The identifier for customer
+   * @return customerId
+   */
+  @javax.annotation.Nullable
+  @JsonIgnore
 
-        public PayoutListConstraints customerId(@javax.annotation.Nullable String customerId) {
-        this.customerId = JsonNullable.<String>of(customerId);
-        
-        return this;
-        }
+  public String getCustomerId() {
+        return customerId.orElse(null);
+  }
 
-    /**
-        * The identifier for customer
-    * @return customerId
-    */
-    @javax.annotation.Nullable
-        @JsonIgnore
-    
-    public String getCustomerId() {
-                return customerId.orElse(null);
-    }
-
-          @JsonProperty(JSON_PROPERTY_CUSTOMER_ID)
+  @JsonProperty(JSON_PROPERTY_CUSTOMER_ID)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-        public JsonNullable<String> getCustomerId_JsonNullable() {
-        return customerId;
-        }
+  public JsonNullable<String> getCustomerId_JsonNullable() {
+    return customerId;
+  }
+  
+  @JsonProperty(JSON_PROPERTY_CUSTOMER_ID)
+  public void setCustomerId_JsonNullable(JsonNullable<String> customerId) {
+    this.customerId = customerId;
+  }
+
+  public void setCustomerId(@javax.annotation.Nullable String customerId) {
+    this.customerId = JsonNullable.<String>of(customerId);
+  }
+
+  public PayoutListConstraints startingAfter(@javax.annotation.Nullable String startingAfter) {
+    this.startingAfter = JsonNullable.<String>of(startingAfter);
     
-        @JsonProperty(JSON_PROPERTY_CUSTOMER_ID)
-        public void setCustomerId_JsonNullable(JsonNullable<String> customerId) {
-        this.customerId = customerId;
-        }
+    return this;
+  }
 
-          public void setCustomerId(@javax.annotation.Nullable String customerId) {
-            this.customerId = JsonNullable.<String>of(customerId);
-        }
+  /**
+   * A cursor for use in pagination, fetch the next list after some object
+   * @return startingAfter
+   */
+  @javax.annotation.Nullable
+  @JsonIgnore
 
-        public PayoutListConstraints startingAfter(@javax.annotation.Nullable String startingAfter) {
-        this.startingAfter = JsonNullable.<String>of(startingAfter);
-        
-        return this;
-        }
+  public String getStartingAfter() {
+        return startingAfter.orElse(null);
+  }
 
-    /**
-        * A cursor for use in pagination, fetch the next list after some object
-    * @return startingAfter
-    */
-    @javax.annotation.Nullable
-        @JsonIgnore
-    
-    public String getStartingAfter() {
-                return startingAfter.orElse(null);
-    }
-
-          @JsonProperty(JSON_PROPERTY_STARTING_AFTER)
+  @JsonProperty(JSON_PROPERTY_STARTING_AFTER)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-        public JsonNullable<String> getStartingAfter_JsonNullable() {
-        return startingAfter;
-        }
+  public JsonNullable<String> getStartingAfter_JsonNullable() {
+    return startingAfter;
+  }
+  
+  @JsonProperty(JSON_PROPERTY_STARTING_AFTER)
+  public void setStartingAfter_JsonNullable(JsonNullable<String> startingAfter) {
+    this.startingAfter = startingAfter;
+  }
+
+  public void setStartingAfter(@javax.annotation.Nullable String startingAfter) {
+    this.startingAfter = JsonNullable.<String>of(startingAfter);
+  }
+
+  public PayoutListConstraints endingBefore(@javax.annotation.Nullable String endingBefore) {
+    this.endingBefore = JsonNullable.<String>of(endingBefore);
     
-        @JsonProperty(JSON_PROPERTY_STARTING_AFTER)
-        public void setStartingAfter_JsonNullable(JsonNullable<String> startingAfter) {
-        this.startingAfter = startingAfter;
-        }
+    return this;
+  }
 
-          public void setStartingAfter(@javax.annotation.Nullable String startingAfter) {
-            this.startingAfter = JsonNullable.<String>of(startingAfter);
-        }
+  /**
+   * A cursor for use in pagination, fetch the previous list before some object
+   * @return endingBefore
+   */
+  @javax.annotation.Nullable
+  @JsonIgnore
 
-        public PayoutListConstraints endingBefore(@javax.annotation.Nullable String endingBefore) {
-        this.endingBefore = JsonNullable.<String>of(endingBefore);
-        
-        return this;
-        }
+  public String getEndingBefore() {
+        return endingBefore.orElse(null);
+  }
 
-    /**
-        * A cursor for use in pagination, fetch the previous list before some object
-    * @return endingBefore
-    */
-    @javax.annotation.Nullable
-        @JsonIgnore
-    
-    public String getEndingBefore() {
-                return endingBefore.orElse(null);
-    }
-
-          @JsonProperty(JSON_PROPERTY_ENDING_BEFORE)
+  @JsonProperty(JSON_PROPERTY_ENDING_BEFORE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-        public JsonNullable<String> getEndingBefore_JsonNullable() {
-        return endingBefore;
-        }
+  public JsonNullable<String> getEndingBefore_JsonNullable() {
+    return endingBefore;
+  }
+  
+  @JsonProperty(JSON_PROPERTY_ENDING_BEFORE)
+  public void setEndingBefore_JsonNullable(JsonNullable<String> endingBefore) {
+    this.endingBefore = endingBefore;
+  }
+
+  public void setEndingBefore(@javax.annotation.Nullable String endingBefore) {
+    this.endingBefore = JsonNullable.<String>of(endingBefore);
+  }
+
+  public PayoutListConstraints limit(@javax.annotation.Nullable Integer limit) {
     
-        @JsonProperty(JSON_PROPERTY_ENDING_BEFORE)
-        public void setEndingBefore_JsonNullable(JsonNullable<String> endingBefore) {
-        this.endingBefore = endingBefore;
-        }
+    this.limit = limit;
+    return this;
+  }
 
-          public void setEndingBefore(@javax.annotation.Nullable String endingBefore) {
-            this.endingBefore = JsonNullable.<String>of(endingBefore);
-        }
-
-        public PayoutListConstraints limit(@javax.annotation.Nullable Integer limit) {
-        
-        this.limit = limit;
-        return this;
-        }
-
-    /**
-        * limit on the number of objects to return
-        * minimum: 0
-        * maximum: 100
-    * @return limit
-    */
-    @javax.annotation.Nullable
-      @JsonProperty(JSON_PROPERTY_LIMIT)
+  /**
+   * limit on the number of objects to return
+   * minimum: 0
+   * maximum: 100
+   * @return limit
+   */
+  @javax.annotation.Nullable
+  @JsonProperty(JSON_PROPERTY_LIMIT)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-    public Integer getLimit() {
-        return limit;
-    }
+  public Integer getLimit() {
+    return limit;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_LIMIT)
+  @JsonProperty(JSON_PROPERTY_LIMIT)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setLimit(@javax.annotation.Nullable Integer limit) {
-            this.limit = limit;
-        }
+    this.limit = limit;
+  }
 
-        public PayoutListConstraints created(@javax.annotation.Nullable OffsetDateTime created) {
-        this.created = JsonNullable.<OffsetDateTime>of(created);
-        
-        return this;
-        }
-
-    /**
-        * The time at which payout is created
-    * @return created
-    */
-    @javax.annotation.Nullable
-        @JsonIgnore
+  public PayoutListConstraints created(@javax.annotation.Nullable OffsetDateTime created) {
+    this.created = JsonNullable.<OffsetDateTime>of(created);
     
-    public OffsetDateTime getCreated() {
-                return created.orElse(null);
-    }
+    return this;
+  }
 
-          @JsonProperty(JSON_PROPERTY_CREATED)
+  /**
+   * The time at which payout is created
+   * @return created
+   */
+  @javax.annotation.Nullable
+  @JsonIgnore
+
+  public OffsetDateTime getCreated() {
+        return created.orElse(null);
+  }
+
+  @JsonProperty(JSON_PROPERTY_CREATED)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-        public JsonNullable<OffsetDateTime> getCreated_JsonNullable() {
-        return created;
-        }
-    
-        @JsonProperty(JSON_PROPERTY_CREATED)
-        public void setCreated_JsonNullable(JsonNullable<OffsetDateTime> created) {
-        this.created = created;
-        }
+  public JsonNullable<OffsetDateTime> getCreated_JsonNullable() {
+    return created;
+  }
+  
+  @JsonProperty(JSON_PROPERTY_CREATED)
+  public void setCreated_JsonNullable(JsonNullable<OffsetDateTime> created) {
+    this.created = created;
+  }
 
-          public void setCreated(@javax.annotation.Nullable OffsetDateTime created) {
-            this.created = JsonNullable.<OffsetDateTime>of(created);
-        }
+  public void setCreated(@javax.annotation.Nullable OffsetDateTime created) {
+    this.created = JsonNullable.<OffsetDateTime>of(created);
+  }
 
-@Override
-public boolean equals(Object o) {
+  @Override
+  public boolean equals(Object o) {
     if (this == o) {
-    return true;
+      return true;
     }
     if (o == null || getClass() != o.getClass()) {
-    return false;
+      return false;
     }
-        PayoutListConstraints payoutListConstraints = (PayoutListConstraints) o;
-        return Objects.equals(this.startTime, payoutListConstraints.startTime) &&
+    PayoutListConstraints payoutListConstraints = (PayoutListConstraints) o;
+    return Objects.equals(this.startTime, payoutListConstraints.startTime) &&
         equalsNullable(this.endTime, payoutListConstraints.endTime) &&
         equalsNullable(this.customerId, payoutListConstraints.customerId) &&
         equalsNullable(this.startingAfter, payoutListConstraints.startingAfter) &&
         equalsNullable(this.endingBefore, payoutListConstraints.endingBefore) &&
         Objects.equals(this.limit, payoutListConstraints.limit) &&
         equalsNullable(this.created, payoutListConstraints.created);
-}
+  }
 
-    private static <T> boolean equalsNullable(JsonNullable<T> a, JsonNullable<T> b) {
-        return a == b || (a != null && b != null && a.isPresent() && b.isPresent() && Objects.deepEquals(a.get(), b.get()));
-        }
+  private static <T> boolean equalsNullable(JsonNullable<T> a, JsonNullable<T> b) {
+    return a == b || (a != null && b != null && a.isPresent() && b.isPresent() && Objects.deepEquals(a.get(), b.get()));
+  }
 
-    @Override
-    public int hashCode() {
-        return Objects.hash(startTime, hashCodeNullable(endTime), hashCodeNullable(customerId), hashCodeNullable(startingAfter), hashCodeNullable(endingBefore), limit, hashCodeNullable(created));
+  @Override
+  public int hashCode() {
+    return Objects.hash(startTime, hashCodeNullable(endTime), hashCodeNullable(customerId), hashCodeNullable(startingAfter), hashCodeNullable(endingBefore), limit, hashCodeNullable(created));
+  }
+
+  private static <T> int hashCodeNullable(JsonNullable<T> a) {
+    if (a == null) {
+      return 1;
     }
+    return a.isPresent() ? Arrays.deepHashCode(new Object[]{a.get()}) : 31;
+  }
 
-        private static <T> int hashCodeNullable(JsonNullable<T> a) {
-        if (a == null) {
-        return 1;
-        }
-        return a.isPresent() ? Arrays.deepHashCode(new Object[]{a.get()}) : 31;
-        }
-
-    @Override
-    public String toString() {
+  @Override
+  public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class PayoutListConstraints {\n");
-        sb.append("    startTime: ").append(toIndentedString(startTime)).append("\n");
-        sb.append("    endTime: ").append(toIndentedString(endTime)).append("\n");
-        sb.append("    customerId: ").append(toIndentedString(customerId)).append("\n");
-        sb.append("    startingAfter: ").append(toIndentedString(startingAfter)).append("\n");
-        sb.append("    endingBefore: ").append(toIndentedString(endingBefore)).append("\n");
-        sb.append("    limit: ").append(toIndentedString(limit)).append("\n");
-        sb.append("    created: ").append(toIndentedString(created)).append("\n");
+    sb.append("    startTime: ").append(toIndentedString(startTime)).append("\n");
+    sb.append("    endTime: ").append(toIndentedString(endTime)).append("\n");
+    sb.append("    customerId: ").append(toIndentedString(customerId)).append("\n");
+    sb.append("    startingAfter: ").append(toIndentedString(startingAfter)).append("\n");
+    sb.append("    endingBefore: ").append(toIndentedString(endingBefore)).append("\n");
+    sb.append("    limit: ").append(toIndentedString(limit)).append("\n");
+    sb.append("    created: ").append(toIndentedString(created)).append("\n");
     sb.append("}");
     return sb.toString();
-    }
+  }
 
-    /**
-    * Convert the given object to string with each line indented by 4 spaces
-    * (except the first line).
-    */
-    private String toIndentedString(Object o) {
+  /**
+   * Convert the given object to string with each line indented by 4 spaces
+   * (except the first line).
+   */
+  private String toIndentedString(Object o) {
     if (o == null) {
-    return "null";
+      return "null";
     }
     return o.toString().replace("\n", "\n    ");
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @return URL query string
+   */
+  public String toUrlQueryString() {
+    return toUrlQueryString(null);
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @param prefix prefix of the query string
+   * @return URL query string
+   */
+  public String toUrlQueryString(String prefix) {
+    String suffix = "";
+    String containerSuffix = "";
+    String containerPrefix = "";
+    if (prefix == null) {
+      // style=form, explode=true, e.g. /pet?name=cat&type=manx
+      prefix = "";
+    } else {
+      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+      prefix = prefix + "[";
+      suffix = "]";
+      containerSuffix = "]";
+      containerPrefix = "[";
     }
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @return URL query string
-        */
-        public String toUrlQueryString() {
-        return toUrlQueryString(null);
-        }
+    StringJoiner joiner = new StringJoiner("&");
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @param prefix prefix of the query string
-        * @return URL query string
-        */
-        public String toUrlQueryString(String prefix) {
-        String suffix = "";
-        String containerSuffix = "";
-        String containerPrefix = "";
-        if (prefix == null) {
-        // style=form, explode=true, e.g. /pet?name=cat&type=manx
-        prefix = "";
-        } else {
-        // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
-        prefix = prefix + "[";
-        suffix = "]";
-        containerSuffix = "]";
-        containerPrefix = "[";
-        }
-
-        StringJoiner joiner = new StringJoiner("&");
-
-            // add `start_time` to the URL query string
-                            if (getStartTime() != null) {
-                            try {
-                            joiner.add(String.format("%sstart_time%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getStartTime()), "UTF-8").replaceAll("\\+", "%20")));
-                            } catch (UnsupportedEncodingException e) {
-                            // Should never happen, UTF-8 is always supported
-                            throw new RuntimeException(e);
-                            }
-                            }
-
-            // add `end_time` to the URL query string
-                            if (getEndTime() != null) {
-                            try {
-                            joiner.add(String.format("%send_time%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getEndTime()), "UTF-8").replaceAll("\\+", "%20")));
-                            } catch (UnsupportedEncodingException e) {
-                            // Should never happen, UTF-8 is always supported
-                            throw new RuntimeException(e);
-                            }
-                            }
-
-            // add `customer_id` to the URL query string
-                        if (getCustomerId() != null) {
-                        try {
-                        joiner.add(String.format("%scustomer_id%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCustomerId()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-            // add `starting_after` to the URL query string
-                        if (getStartingAfter() != null) {
-                        try {
-                        joiner.add(String.format("%sstarting_after%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getStartingAfter()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-            // add `ending_before` to the URL query string
-                        if (getEndingBefore() != null) {
-                        try {
-                        joiner.add(String.format("%sending_before%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getEndingBefore()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-            // add `limit` to the URL query string
-                        if (getLimit() != null) {
-                        try {
-                        joiner.add(String.format("%slimit%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getLimit()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-            // add `created` to the URL query string
-                            if (getCreated() != null) {
-                            try {
-                            joiner.add(String.format("%screated%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCreated()), "UTF-8").replaceAll("\\+", "%20")));
-                            } catch (UnsupportedEncodingException e) {
-                            // Should never happen, UTF-8 is always supported
-                            throw new RuntimeException(e);
-                            }
-                            }
-
-        return joiner.toString();
-        }
-
+    // add `start_time` to the URL query string
+    if (getStartTime() != null) {
+      try {
+        joiner.add(String.format("%sstart_time%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getStartTime()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
     }
+
+    // add `end_time` to the URL query string
+    if (getEndTime() != null) {
+      try {
+        joiner.add(String.format("%send_time%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getEndTime()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `customer_id` to the URL query string
+    if (getCustomerId() != null) {
+      try {
+        joiner.add(String.format("%scustomer_id%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCustomerId()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `starting_after` to the URL query string
+    if (getStartingAfter() != null) {
+      try {
+        joiner.add(String.format("%sstarting_after%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getStartingAfter()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `ending_before` to the URL query string
+    if (getEndingBefore() != null) {
+      try {
+        joiner.add(String.format("%sending_before%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getEndingBefore()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `limit` to the URL query string
+    if (getLimit() != null) {
+      try {
+        joiner.add(String.format("%slimit%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getLimit()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `created` to the URL query string
+    if (getCreated() != null) {
+      try {
+        joiner.add(String.format("%screated%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCreated()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    return joiner.toString();
+  }
+
+}
 

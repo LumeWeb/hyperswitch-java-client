@@ -34,357 +34,357 @@ import java.net.URLEncoder;
 import java.util.StringJoiner;
 
 /**
-* RetrievePaymentLinkResponse
-*/
-    @JsonPropertyOrder({
-        RetrievePaymentLinkResponse.JSON_PROPERTY_PAYMENT_LINK_ID,
-        RetrievePaymentLinkResponse.JSON_PROPERTY_MERCHANT_ID,
-        RetrievePaymentLinkResponse.JSON_PROPERTY_LINK_TO_PAY,
-        RetrievePaymentLinkResponse.JSON_PROPERTY_AMOUNT,
-        RetrievePaymentLinkResponse.JSON_PROPERTY_CREATED_AT,
-        RetrievePaymentLinkResponse.JSON_PROPERTY_EXPIRY,
-        RetrievePaymentLinkResponse.JSON_PROPERTY_DESCRIPTION,
-        RetrievePaymentLinkResponse.JSON_PROPERTY_STATUS,
-        RetrievePaymentLinkResponse.JSON_PROPERTY_CURRENCY,
-        RetrievePaymentLinkResponse.JSON_PROPERTY_SECURE_LINK
-    })
+ * RetrievePaymentLinkResponse
+ */
+@JsonPropertyOrder({
+  RetrievePaymentLinkResponse.JSON_PROPERTY_PAYMENT_LINK_ID,
+  RetrievePaymentLinkResponse.JSON_PROPERTY_MERCHANT_ID,
+  RetrievePaymentLinkResponse.JSON_PROPERTY_LINK_TO_PAY,
+  RetrievePaymentLinkResponse.JSON_PROPERTY_AMOUNT,
+  RetrievePaymentLinkResponse.JSON_PROPERTY_CREATED_AT,
+  RetrievePaymentLinkResponse.JSON_PROPERTY_EXPIRY,
+  RetrievePaymentLinkResponse.JSON_PROPERTY_DESCRIPTION,
+  RetrievePaymentLinkResponse.JSON_PROPERTY_STATUS,
+  RetrievePaymentLinkResponse.JSON_PROPERTY_CURRENCY,
+  RetrievePaymentLinkResponse.JSON_PROPERTY_SECURE_LINK
+})
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class RetrievePaymentLinkResponse {
-        public static final String JSON_PROPERTY_PAYMENT_LINK_ID = "payment_link_id";
-    @javax.annotation.Nonnull
-            private String paymentLinkId;
+  public static final String JSON_PROPERTY_PAYMENT_LINK_ID = "payment_link_id";
+  @javax.annotation.Nonnull
+  private String paymentLinkId;
 
-        public static final String JSON_PROPERTY_MERCHANT_ID = "merchant_id";
-    @javax.annotation.Nonnull
-            private String merchantId;
+  public static final String JSON_PROPERTY_MERCHANT_ID = "merchant_id";
+  @javax.annotation.Nonnull
+  private String merchantId;
 
-        public static final String JSON_PROPERTY_LINK_TO_PAY = "link_to_pay";
-    @javax.annotation.Nonnull
-            private String linkToPay;
+  public static final String JSON_PROPERTY_LINK_TO_PAY = "link_to_pay";
+  @javax.annotation.Nonnull
+  private String linkToPay;
 
-        public static final String JSON_PROPERTY_AMOUNT = "amount";
-    @javax.annotation.Nonnull
-            private Long amount;
+  public static final String JSON_PROPERTY_AMOUNT = "amount";
+  @javax.annotation.Nonnull
+  private Long amount;
 
-        public static final String JSON_PROPERTY_CREATED_AT = "created_at";
-    @javax.annotation.Nonnull
-            private OffsetDateTime createdAt;
+  public static final String JSON_PROPERTY_CREATED_AT = "created_at";
+  @javax.annotation.Nonnull
+  private OffsetDateTime createdAt;
 
-        public static final String JSON_PROPERTY_EXPIRY = "expiry";
-    @javax.annotation.Nullable
-            private JsonNullable<OffsetDateTime> expiry = JsonNullable.<OffsetDateTime>undefined();
+  public static final String JSON_PROPERTY_EXPIRY = "expiry";
+  @javax.annotation.Nullable
+  private JsonNullable<OffsetDateTime> expiry = JsonNullable.<OffsetDateTime>undefined();
 
-        public static final String JSON_PROPERTY_DESCRIPTION = "description";
-    @javax.annotation.Nullable
-            private JsonNullable<String> description = JsonNullable.<String>undefined();
+  public static final String JSON_PROPERTY_DESCRIPTION = "description";
+  @javax.annotation.Nullable
+  private JsonNullable<String> description = JsonNullable.<String>undefined();
 
-        public static final String JSON_PROPERTY_STATUS = "status";
-    @javax.annotation.Nonnull
-            private PaymentLinkStatus status;
+  public static final String JSON_PROPERTY_STATUS = "status";
+  @javax.annotation.Nonnull
+  private PaymentLinkStatus status;
 
-        public static final String JSON_PROPERTY_CURRENCY = "currency";
-    @javax.annotation.Nullable
-            private JsonNullable<Currency> currency = JsonNullable.<Currency>undefined();
+  public static final String JSON_PROPERTY_CURRENCY = "currency";
+  @javax.annotation.Nullable
+  private JsonNullable<Currency> currency = JsonNullable.<Currency>undefined();
 
-        public static final String JSON_PROPERTY_SECURE_LINK = "secure_link";
-    @javax.annotation.Nullable
-            private JsonNullable<String> secureLink = JsonNullable.<String>undefined();
+  public static final String JSON_PROPERTY_SECURE_LINK = "secure_link";
+  @javax.annotation.Nullable
+  private JsonNullable<String> secureLink = JsonNullable.<String>undefined();
 
-public RetrievePaymentLinkResponse() {
-}
+  public RetrievePaymentLinkResponse() {
+  }
 
-        public RetrievePaymentLinkResponse paymentLinkId(@javax.annotation.Nonnull String paymentLinkId) {
-        
-        this.paymentLinkId = paymentLinkId;
-        return this;
-        }
+  public RetrievePaymentLinkResponse paymentLinkId(@javax.annotation.Nonnull String paymentLinkId) {
+    
+    this.paymentLinkId = paymentLinkId;
+    return this;
+  }
 
-    /**
-        * Identifier for Payment Link
-    * @return paymentLinkId
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_PAYMENT_LINK_ID)
+  /**
+   * Identifier for Payment Link
+   * @return paymentLinkId
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_PAYMENT_LINK_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public String getPaymentLinkId() {
-        return paymentLinkId;
-    }
+  public String getPaymentLinkId() {
+    return paymentLinkId;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_PAYMENT_LINK_ID)
+  @JsonProperty(JSON_PROPERTY_PAYMENT_LINK_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setPaymentLinkId(@javax.annotation.Nonnull String paymentLinkId) {
-            this.paymentLinkId = paymentLinkId;
-        }
+    this.paymentLinkId = paymentLinkId;
+  }
 
-        public RetrievePaymentLinkResponse merchantId(@javax.annotation.Nonnull String merchantId) {
-        
-        this.merchantId = merchantId;
-        return this;
-        }
+  public RetrievePaymentLinkResponse merchantId(@javax.annotation.Nonnull String merchantId) {
+    
+    this.merchantId = merchantId;
+    return this;
+  }
 
-    /**
-        * Identifier for Merchant
-    * @return merchantId
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_MERCHANT_ID)
+  /**
+   * Identifier for Merchant
+   * @return merchantId
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_MERCHANT_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public String getMerchantId() {
-        return merchantId;
-    }
+  public String getMerchantId() {
+    return merchantId;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_MERCHANT_ID)
+  @JsonProperty(JSON_PROPERTY_MERCHANT_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setMerchantId(@javax.annotation.Nonnull String merchantId) {
-            this.merchantId = merchantId;
-        }
+    this.merchantId = merchantId;
+  }
 
-        public RetrievePaymentLinkResponse linkToPay(@javax.annotation.Nonnull String linkToPay) {
-        
-        this.linkToPay = linkToPay;
-        return this;
-        }
+  public RetrievePaymentLinkResponse linkToPay(@javax.annotation.Nonnull String linkToPay) {
+    
+    this.linkToPay = linkToPay;
+    return this;
+  }
 
-    /**
-        * Open payment link (without any security checks and listing SPMs)
-    * @return linkToPay
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_LINK_TO_PAY)
+  /**
+   * Open payment link (without any security checks and listing SPMs)
+   * @return linkToPay
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_LINK_TO_PAY)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public String getLinkToPay() {
-        return linkToPay;
-    }
+  public String getLinkToPay() {
+    return linkToPay;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_LINK_TO_PAY)
+  @JsonProperty(JSON_PROPERTY_LINK_TO_PAY)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setLinkToPay(@javax.annotation.Nonnull String linkToPay) {
-            this.linkToPay = linkToPay;
-        }
+    this.linkToPay = linkToPay;
+  }
 
-        public RetrievePaymentLinkResponse amount(@javax.annotation.Nonnull Long amount) {
-        
-        this.amount = amount;
-        return this;
-        }
+  public RetrievePaymentLinkResponse amount(@javax.annotation.Nonnull Long amount) {
+    
+    this.amount = amount;
+    return this;
+  }
 
-    /**
-        * The payment amount. Amount for the payment in the lowest denomination of the currency
-    * @return amount
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_AMOUNT)
+  /**
+   * The payment amount. Amount for the payment in the lowest denomination of the currency
+   * @return amount
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_AMOUNT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public Long getAmount() {
-        return amount;
-    }
+  public Long getAmount() {
+    return amount;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_AMOUNT)
+  @JsonProperty(JSON_PROPERTY_AMOUNT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setAmount(@javax.annotation.Nonnull Long amount) {
-            this.amount = amount;
-        }
+    this.amount = amount;
+  }
 
-        public RetrievePaymentLinkResponse createdAt(@javax.annotation.Nonnull OffsetDateTime createdAt) {
-        
-        this.createdAt = createdAt;
-        return this;
-        }
+  public RetrievePaymentLinkResponse createdAt(@javax.annotation.Nonnull OffsetDateTime createdAt) {
+    
+    this.createdAt = createdAt;
+    return this;
+  }
 
-    /**
-        * Date and time of Payment Link creation
-    * @return createdAt
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_CREATED_AT)
+  /**
+   * Date and time of Payment Link creation
+   * @return createdAt
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_CREATED_AT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public OffsetDateTime getCreatedAt() {
-        return createdAt;
-    }
+  public OffsetDateTime getCreatedAt() {
+    return createdAt;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_CREATED_AT)
+  @JsonProperty(JSON_PROPERTY_CREATED_AT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setCreatedAt(@javax.annotation.Nonnull OffsetDateTime createdAt) {
-            this.createdAt = createdAt;
-        }
+    this.createdAt = createdAt;
+  }
 
-        public RetrievePaymentLinkResponse expiry(@javax.annotation.Nullable OffsetDateTime expiry) {
-        this.expiry = JsonNullable.<OffsetDateTime>of(expiry);
-        
-        return this;
-        }
-
-    /**
-        * Date and time of Expiration for Payment Link
-    * @return expiry
-    */
-    @javax.annotation.Nullable
-        @JsonIgnore
+  public RetrievePaymentLinkResponse expiry(@javax.annotation.Nullable OffsetDateTime expiry) {
+    this.expiry = JsonNullable.<OffsetDateTime>of(expiry);
     
-    public OffsetDateTime getExpiry() {
-                return expiry.orElse(null);
-    }
+    return this;
+  }
 
-          @JsonProperty(JSON_PROPERTY_EXPIRY)
+  /**
+   * Date and time of Expiration for Payment Link
+   * @return expiry
+   */
+  @javax.annotation.Nullable
+  @JsonIgnore
+
+  public OffsetDateTime getExpiry() {
+        return expiry.orElse(null);
+  }
+
+  @JsonProperty(JSON_PROPERTY_EXPIRY)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-        public JsonNullable<OffsetDateTime> getExpiry_JsonNullable() {
-        return expiry;
-        }
+  public JsonNullable<OffsetDateTime> getExpiry_JsonNullable() {
+    return expiry;
+  }
+  
+  @JsonProperty(JSON_PROPERTY_EXPIRY)
+  public void setExpiry_JsonNullable(JsonNullable<OffsetDateTime> expiry) {
+    this.expiry = expiry;
+  }
+
+  public void setExpiry(@javax.annotation.Nullable OffsetDateTime expiry) {
+    this.expiry = JsonNullable.<OffsetDateTime>of(expiry);
+  }
+
+  public RetrievePaymentLinkResponse description(@javax.annotation.Nullable String description) {
+    this.description = JsonNullable.<String>of(description);
     
-        @JsonProperty(JSON_PROPERTY_EXPIRY)
-        public void setExpiry_JsonNullable(JsonNullable<OffsetDateTime> expiry) {
-        this.expiry = expiry;
-        }
+    return this;
+  }
 
-          public void setExpiry(@javax.annotation.Nullable OffsetDateTime expiry) {
-            this.expiry = JsonNullable.<OffsetDateTime>of(expiry);
-        }
+  /**
+   * Description for Payment Link
+   * @return description
+   */
+  @javax.annotation.Nullable
+  @JsonIgnore
 
-        public RetrievePaymentLinkResponse description(@javax.annotation.Nullable String description) {
-        this.description = JsonNullable.<String>of(description);
-        
-        return this;
-        }
+  public String getDescription() {
+        return description.orElse(null);
+  }
 
-    /**
-        * Description for Payment Link
-    * @return description
-    */
-    @javax.annotation.Nullable
-        @JsonIgnore
-    
-    public String getDescription() {
-                return description.orElse(null);
-    }
-
-          @JsonProperty(JSON_PROPERTY_DESCRIPTION)
+  @JsonProperty(JSON_PROPERTY_DESCRIPTION)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-        public JsonNullable<String> getDescription_JsonNullable() {
-        return description;
-        }
+  public JsonNullable<String> getDescription_JsonNullable() {
+    return description;
+  }
+  
+  @JsonProperty(JSON_PROPERTY_DESCRIPTION)
+  public void setDescription_JsonNullable(JsonNullable<String> description) {
+    this.description = description;
+  }
+
+  public void setDescription(@javax.annotation.Nullable String description) {
+    this.description = JsonNullable.<String>of(description);
+  }
+
+  public RetrievePaymentLinkResponse status(@javax.annotation.Nonnull PaymentLinkStatus status) {
     
-        @JsonProperty(JSON_PROPERTY_DESCRIPTION)
-        public void setDescription_JsonNullable(JsonNullable<String> description) {
-        this.description = description;
-        }
+    this.status = status;
+    return this;
+  }
 
-          public void setDescription(@javax.annotation.Nullable String description) {
-            this.description = JsonNullable.<String>of(description);
-        }
-
-        public RetrievePaymentLinkResponse status(@javax.annotation.Nonnull PaymentLinkStatus status) {
-        
-        this.status = status;
-        return this;
-        }
-
-    /**
-        * Get status
-    * @return status
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_STATUS)
+  /**
+   * Get status
+   * @return status
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_STATUS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public PaymentLinkStatus getStatus() {
-        return status;
-    }
+  public PaymentLinkStatus getStatus() {
+    return status;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_STATUS)
+  @JsonProperty(JSON_PROPERTY_STATUS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setStatus(@javax.annotation.Nonnull PaymentLinkStatus status) {
-            this.status = status;
-        }
+    this.status = status;
+  }
 
-        public RetrievePaymentLinkResponse currency(@javax.annotation.Nullable Currency currency) {
-        this.currency = JsonNullable.<Currency>of(currency);
-        
-        return this;
-        }
-
-    /**
-        * Get currency
-    * @return currency
-    */
-    @javax.annotation.Nullable
-        @JsonIgnore
+  public RetrievePaymentLinkResponse currency(@javax.annotation.Nullable Currency currency) {
+    this.currency = JsonNullable.<Currency>of(currency);
     
-    public Currency getCurrency() {
-                return currency.orElse(null);
-    }
+    return this;
+  }
 
-          @JsonProperty(JSON_PROPERTY_CURRENCY)
+  /**
+   * Get currency
+   * @return currency
+   */
+  @javax.annotation.Nullable
+  @JsonIgnore
+
+  public Currency getCurrency() {
+        return currency.orElse(null);
+  }
+
+  @JsonProperty(JSON_PROPERTY_CURRENCY)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-        public JsonNullable<Currency> getCurrency_JsonNullable() {
-        return currency;
-        }
+  public JsonNullable<Currency> getCurrency_JsonNullable() {
+    return currency;
+  }
+  
+  @JsonProperty(JSON_PROPERTY_CURRENCY)
+  public void setCurrency_JsonNullable(JsonNullable<Currency> currency) {
+    this.currency = currency;
+  }
+
+  public void setCurrency(@javax.annotation.Nullable Currency currency) {
+    this.currency = JsonNullable.<Currency>of(currency);
+  }
+
+  public RetrievePaymentLinkResponse secureLink(@javax.annotation.Nullable String secureLink) {
+    this.secureLink = JsonNullable.<String>of(secureLink);
     
-        @JsonProperty(JSON_PROPERTY_CURRENCY)
-        public void setCurrency_JsonNullable(JsonNullable<Currency> currency) {
-        this.currency = currency;
-        }
+    return this;
+  }
 
-          public void setCurrency(@javax.annotation.Nullable Currency currency) {
-            this.currency = JsonNullable.<Currency>of(currency);
-        }
+  /**
+   * Secure payment link (with security checks and listing saved payment methods)
+   * @return secureLink
+   */
+  @javax.annotation.Nullable
+  @JsonIgnore
 
-        public RetrievePaymentLinkResponse secureLink(@javax.annotation.Nullable String secureLink) {
-        this.secureLink = JsonNullable.<String>of(secureLink);
-        
-        return this;
-        }
+  public String getSecureLink() {
+        return secureLink.orElse(null);
+  }
 
-    /**
-        * Secure payment link (with security checks and listing saved payment methods)
-    * @return secureLink
-    */
-    @javax.annotation.Nullable
-        @JsonIgnore
-    
-    public String getSecureLink() {
-                return secureLink.orElse(null);
-    }
-
-          @JsonProperty(JSON_PROPERTY_SECURE_LINK)
+  @JsonProperty(JSON_PROPERTY_SECURE_LINK)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-        public JsonNullable<String> getSecureLink_JsonNullable() {
-        return secureLink;
-        }
-    
-        @JsonProperty(JSON_PROPERTY_SECURE_LINK)
-        public void setSecureLink_JsonNullable(JsonNullable<String> secureLink) {
-        this.secureLink = secureLink;
-        }
+  public JsonNullable<String> getSecureLink_JsonNullable() {
+    return secureLink;
+  }
+  
+  @JsonProperty(JSON_PROPERTY_SECURE_LINK)
+  public void setSecureLink_JsonNullable(JsonNullable<String> secureLink) {
+    this.secureLink = secureLink;
+  }
 
-          public void setSecureLink(@javax.annotation.Nullable String secureLink) {
-            this.secureLink = JsonNullable.<String>of(secureLink);
-        }
+  public void setSecureLink(@javax.annotation.Nullable String secureLink) {
+    this.secureLink = JsonNullable.<String>of(secureLink);
+  }
 
-@Override
-public boolean equals(Object o) {
+  @Override
+  public boolean equals(Object o) {
     if (this == o) {
-    return true;
+      return true;
     }
     if (o == null || getClass() != o.getClass()) {
-    return false;
+      return false;
     }
-        RetrievePaymentLinkResponse retrievePaymentLinkResponse = (RetrievePaymentLinkResponse) o;
-        return Objects.equals(this.paymentLinkId, retrievePaymentLinkResponse.paymentLinkId) &&
+    RetrievePaymentLinkResponse retrievePaymentLinkResponse = (RetrievePaymentLinkResponse) o;
+    return Objects.equals(this.paymentLinkId, retrievePaymentLinkResponse.paymentLinkId) &&
         Objects.equals(this.merchantId, retrievePaymentLinkResponse.merchantId) &&
         Objects.equals(this.linkToPay, retrievePaymentLinkResponse.linkToPay) &&
         Objects.equals(this.amount, retrievePaymentLinkResponse.amount) &&
@@ -394,187 +394,187 @@ public boolean equals(Object o) {
         Objects.equals(this.status, retrievePaymentLinkResponse.status) &&
         equalsNullable(this.currency, retrievePaymentLinkResponse.currency) &&
         equalsNullable(this.secureLink, retrievePaymentLinkResponse.secureLink);
-}
+  }
 
-    private static <T> boolean equalsNullable(JsonNullable<T> a, JsonNullable<T> b) {
-        return a == b || (a != null && b != null && a.isPresent() && b.isPresent() && Objects.deepEquals(a.get(), b.get()));
-        }
+  private static <T> boolean equalsNullable(JsonNullable<T> a, JsonNullable<T> b) {
+    return a == b || (a != null && b != null && a.isPresent() && b.isPresent() && Objects.deepEquals(a.get(), b.get()));
+  }
 
-    @Override
-    public int hashCode() {
-        return Objects.hash(paymentLinkId, merchantId, linkToPay, amount, createdAt, hashCodeNullable(expiry), hashCodeNullable(description), status, hashCodeNullable(currency), hashCodeNullable(secureLink));
+  @Override
+  public int hashCode() {
+    return Objects.hash(paymentLinkId, merchantId, linkToPay, amount, createdAt, hashCodeNullable(expiry), hashCodeNullable(description), status, hashCodeNullable(currency), hashCodeNullable(secureLink));
+  }
+
+  private static <T> int hashCodeNullable(JsonNullable<T> a) {
+    if (a == null) {
+      return 1;
     }
+    return a.isPresent() ? Arrays.deepHashCode(new Object[]{a.get()}) : 31;
+  }
 
-        private static <T> int hashCodeNullable(JsonNullable<T> a) {
-        if (a == null) {
-        return 1;
-        }
-        return a.isPresent() ? Arrays.deepHashCode(new Object[]{a.get()}) : 31;
-        }
-
-    @Override
-    public String toString() {
+  @Override
+  public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class RetrievePaymentLinkResponse {\n");
-        sb.append("    paymentLinkId: ").append(toIndentedString(paymentLinkId)).append("\n");
-        sb.append("    merchantId: ").append(toIndentedString(merchantId)).append("\n");
-        sb.append("    linkToPay: ").append(toIndentedString(linkToPay)).append("\n");
-        sb.append("    amount: ").append(toIndentedString(amount)).append("\n");
-        sb.append("    createdAt: ").append(toIndentedString(createdAt)).append("\n");
-        sb.append("    expiry: ").append(toIndentedString(expiry)).append("\n");
-        sb.append("    description: ").append(toIndentedString(description)).append("\n");
-        sb.append("    status: ").append(toIndentedString(status)).append("\n");
-        sb.append("    currency: ").append(toIndentedString(currency)).append("\n");
-        sb.append("    secureLink: ").append(toIndentedString(secureLink)).append("\n");
+    sb.append("    paymentLinkId: ").append(toIndentedString(paymentLinkId)).append("\n");
+    sb.append("    merchantId: ").append(toIndentedString(merchantId)).append("\n");
+    sb.append("    linkToPay: ").append(toIndentedString(linkToPay)).append("\n");
+    sb.append("    amount: ").append(toIndentedString(amount)).append("\n");
+    sb.append("    createdAt: ").append(toIndentedString(createdAt)).append("\n");
+    sb.append("    expiry: ").append(toIndentedString(expiry)).append("\n");
+    sb.append("    description: ").append(toIndentedString(description)).append("\n");
+    sb.append("    status: ").append(toIndentedString(status)).append("\n");
+    sb.append("    currency: ").append(toIndentedString(currency)).append("\n");
+    sb.append("    secureLink: ").append(toIndentedString(secureLink)).append("\n");
     sb.append("}");
     return sb.toString();
-    }
+  }
 
-    /**
-    * Convert the given object to string with each line indented by 4 spaces
-    * (except the first line).
-    */
-    private String toIndentedString(Object o) {
+  /**
+   * Convert the given object to string with each line indented by 4 spaces
+   * (except the first line).
+   */
+  private String toIndentedString(Object o) {
     if (o == null) {
-    return "null";
+      return "null";
     }
     return o.toString().replace("\n", "\n    ");
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @return URL query string
+   */
+  public String toUrlQueryString() {
+    return toUrlQueryString(null);
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @param prefix prefix of the query string
+   * @return URL query string
+   */
+  public String toUrlQueryString(String prefix) {
+    String suffix = "";
+    String containerSuffix = "";
+    String containerPrefix = "";
+    if (prefix == null) {
+      // style=form, explode=true, e.g. /pet?name=cat&type=manx
+      prefix = "";
+    } else {
+      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+      prefix = prefix + "[";
+      suffix = "]";
+      containerSuffix = "]";
+      containerPrefix = "[";
     }
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @return URL query string
-        */
-        public String toUrlQueryString() {
-        return toUrlQueryString(null);
-        }
+    StringJoiner joiner = new StringJoiner("&");
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @param prefix prefix of the query string
-        * @return URL query string
-        */
-        public String toUrlQueryString(String prefix) {
-        String suffix = "";
-        String containerSuffix = "";
-        String containerPrefix = "";
-        if (prefix == null) {
-        // style=form, explode=true, e.g. /pet?name=cat&type=manx
-        prefix = "";
-        } else {
-        // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
-        prefix = prefix + "[";
-        suffix = "]";
-        containerSuffix = "]";
-        containerPrefix = "[";
-        }
-
-        StringJoiner joiner = new StringJoiner("&");
-
-            // add `payment_link_id` to the URL query string
-                        if (getPaymentLinkId() != null) {
-                        try {
-                        joiner.add(String.format("%spayment_link_id%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getPaymentLinkId()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-            // add `merchant_id` to the URL query string
-                        if (getMerchantId() != null) {
-                        try {
-                        joiner.add(String.format("%smerchant_id%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getMerchantId()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-            // add `link_to_pay` to the URL query string
-                        if (getLinkToPay() != null) {
-                        try {
-                        joiner.add(String.format("%slink_to_pay%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getLinkToPay()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-            // add `amount` to the URL query string
-                        if (getAmount() != null) {
-                        try {
-                        joiner.add(String.format("%samount%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getAmount()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-            // add `created_at` to the URL query string
-                            if (getCreatedAt() != null) {
-                            try {
-                            joiner.add(String.format("%screated_at%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCreatedAt()), "UTF-8").replaceAll("\\+", "%20")));
-                            } catch (UnsupportedEncodingException e) {
-                            // Should never happen, UTF-8 is always supported
-                            throw new RuntimeException(e);
-                            }
-                            }
-
-            // add `expiry` to the URL query string
-                            if (getExpiry() != null) {
-                            try {
-                            joiner.add(String.format("%sexpiry%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getExpiry()), "UTF-8").replaceAll("\\+", "%20")));
-                            } catch (UnsupportedEncodingException e) {
-                            // Should never happen, UTF-8 is always supported
-                            throw new RuntimeException(e);
-                            }
-                            }
-
-            // add `description` to the URL query string
-                        if (getDescription() != null) {
-                        try {
-                        joiner.add(String.format("%sdescription%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getDescription()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-            // add `status` to the URL query string
-                            if (getStatus() != null) {
-                            try {
-                            joiner.add(String.format("%sstatus%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getStatus()), "UTF-8").replaceAll("\\+", "%20")));
-                            } catch (UnsupportedEncodingException e) {
-                            // Should never happen, UTF-8 is always supported
-                            throw new RuntimeException(e);
-                            }
-                            }
-
-            // add `currency` to the URL query string
-                            if (getCurrency() != null) {
-                            try {
-                            joiner.add(String.format("%scurrency%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCurrency()), "UTF-8").replaceAll("\\+", "%20")));
-                            } catch (UnsupportedEncodingException e) {
-                            // Should never happen, UTF-8 is always supported
-                            throw new RuntimeException(e);
-                            }
-                            }
-
-            // add `secure_link` to the URL query string
-                        if (getSecureLink() != null) {
-                        try {
-                        joiner.add(String.format("%ssecure_link%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getSecureLink()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-        return joiner.toString();
-        }
-
+    // add `payment_link_id` to the URL query string
+    if (getPaymentLinkId() != null) {
+      try {
+        joiner.add(String.format("%spayment_link_id%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getPaymentLinkId()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
     }
+
+    // add `merchant_id` to the URL query string
+    if (getMerchantId() != null) {
+      try {
+        joiner.add(String.format("%smerchant_id%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getMerchantId()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `link_to_pay` to the URL query string
+    if (getLinkToPay() != null) {
+      try {
+        joiner.add(String.format("%slink_to_pay%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getLinkToPay()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `amount` to the URL query string
+    if (getAmount() != null) {
+      try {
+        joiner.add(String.format("%samount%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getAmount()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `created_at` to the URL query string
+    if (getCreatedAt() != null) {
+      try {
+        joiner.add(String.format("%screated_at%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCreatedAt()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `expiry` to the URL query string
+    if (getExpiry() != null) {
+      try {
+        joiner.add(String.format("%sexpiry%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getExpiry()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `description` to the URL query string
+    if (getDescription() != null) {
+      try {
+        joiner.add(String.format("%sdescription%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getDescription()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `status` to the URL query string
+    if (getStatus() != null) {
+      try {
+        joiner.add(String.format("%sstatus%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getStatus()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `currency` to the URL query string
+    if (getCurrency() != null) {
+      try {
+        joiner.add(String.format("%scurrency%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCurrency()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `secure_link` to the URL query string
+    if (getSecureLink() != null) {
+      try {
+        joiner.add(String.format("%ssecure_link%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getSecureLink()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    return joiner.toString();
+  }
+
+}
 

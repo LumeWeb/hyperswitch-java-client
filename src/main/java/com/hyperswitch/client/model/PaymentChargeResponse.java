@@ -32,266 +32,266 @@ import java.net.URLEncoder;
 import java.util.StringJoiner;
 
 /**
-* Fee information to be charged on the payment being collected
-*/
-    @JsonPropertyOrder({
-        PaymentChargeResponse.JSON_PROPERTY_CHARGE_ID,
-        PaymentChargeResponse.JSON_PROPERTY_CHARGE_TYPE,
-        PaymentChargeResponse.JSON_PROPERTY_APPLICATION_FEES,
-        PaymentChargeResponse.JSON_PROPERTY_TRANSFER_ACCOUNT_ID
-    })
+ * Fee information to be charged on the payment being collected
+ */
+@JsonPropertyOrder({
+  PaymentChargeResponse.JSON_PROPERTY_CHARGE_ID,
+  PaymentChargeResponse.JSON_PROPERTY_CHARGE_TYPE,
+  PaymentChargeResponse.JSON_PROPERTY_APPLICATION_FEES,
+  PaymentChargeResponse.JSON_PROPERTY_TRANSFER_ACCOUNT_ID
+})
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class PaymentChargeResponse {
-        public static final String JSON_PROPERTY_CHARGE_ID = "charge_id";
-    @javax.annotation.Nullable
-            private JsonNullable<String> chargeId = JsonNullable.<String>undefined();
+  public static final String JSON_PROPERTY_CHARGE_ID = "charge_id";
+  @javax.annotation.Nullable
+  private JsonNullable<String> chargeId = JsonNullable.<String>undefined();
 
-        public static final String JSON_PROPERTY_CHARGE_TYPE = "charge_type";
-    @javax.annotation.Nonnull
-            private PaymentChargeType chargeType;
+  public static final String JSON_PROPERTY_CHARGE_TYPE = "charge_type";
+  @javax.annotation.Nonnull
+  private PaymentChargeType chargeType;
 
-        public static final String JSON_PROPERTY_APPLICATION_FEES = "application_fees";
-    @javax.annotation.Nonnull
-            private Long applicationFees;
+  public static final String JSON_PROPERTY_APPLICATION_FEES = "application_fees";
+  @javax.annotation.Nonnull
+  private Long applicationFees;
 
-        public static final String JSON_PROPERTY_TRANSFER_ACCOUNT_ID = "transfer_account_id";
-    @javax.annotation.Nonnull
-            private String transferAccountId;
+  public static final String JSON_PROPERTY_TRANSFER_ACCOUNT_ID = "transfer_account_id";
+  @javax.annotation.Nonnull
+  private String transferAccountId;
 
-public PaymentChargeResponse() {
-}
+  public PaymentChargeResponse() {
+  }
 
-        public PaymentChargeResponse chargeId(@javax.annotation.Nullable String chargeId) {
-        this.chargeId = JsonNullable.<String>of(chargeId);
-        
-        return this;
-        }
-
-    /**
-        * Identifier for charge created for the payment
-    * @return chargeId
-    */
-    @javax.annotation.Nullable
-        @JsonIgnore
+  public PaymentChargeResponse chargeId(@javax.annotation.Nullable String chargeId) {
+    this.chargeId = JsonNullable.<String>of(chargeId);
     
-    public String getChargeId() {
-                return chargeId.orElse(null);
-    }
+    return this;
+  }
 
-          @JsonProperty(JSON_PROPERTY_CHARGE_ID)
+  /**
+   * Identifier for charge created for the payment
+   * @return chargeId
+   */
+  @javax.annotation.Nullable
+  @JsonIgnore
+
+  public String getChargeId() {
+        return chargeId.orElse(null);
+  }
+
+  @JsonProperty(JSON_PROPERTY_CHARGE_ID)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-        public JsonNullable<String> getChargeId_JsonNullable() {
-        return chargeId;
-        }
+  public JsonNullable<String> getChargeId_JsonNullable() {
+    return chargeId;
+  }
+  
+  @JsonProperty(JSON_PROPERTY_CHARGE_ID)
+  public void setChargeId_JsonNullable(JsonNullable<String> chargeId) {
+    this.chargeId = chargeId;
+  }
+
+  public void setChargeId(@javax.annotation.Nullable String chargeId) {
+    this.chargeId = JsonNullable.<String>of(chargeId);
+  }
+
+  public PaymentChargeResponse chargeType(@javax.annotation.Nonnull PaymentChargeType chargeType) {
     
-        @JsonProperty(JSON_PROPERTY_CHARGE_ID)
-        public void setChargeId_JsonNullable(JsonNullable<String> chargeId) {
-        this.chargeId = chargeId;
-        }
+    this.chargeType = chargeType;
+    return this;
+  }
 
-          public void setChargeId(@javax.annotation.Nullable String chargeId) {
-            this.chargeId = JsonNullable.<String>of(chargeId);
-        }
-
-        public PaymentChargeResponse chargeType(@javax.annotation.Nonnull PaymentChargeType chargeType) {
-        
-        this.chargeType = chargeType;
-        return this;
-        }
-
-    /**
-        * Get chargeType
-    * @return chargeType
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_CHARGE_TYPE)
+  /**
+   * Get chargeType
+   * @return chargeType
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_CHARGE_TYPE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public PaymentChargeType getChargeType() {
-        return chargeType;
-    }
+  public PaymentChargeType getChargeType() {
+    return chargeType;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_CHARGE_TYPE)
+  @JsonProperty(JSON_PROPERTY_CHARGE_TYPE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setChargeType(@javax.annotation.Nonnull PaymentChargeType chargeType) {
-            this.chargeType = chargeType;
-        }
+    this.chargeType = chargeType;
+  }
 
-        public PaymentChargeResponse applicationFees(@javax.annotation.Nonnull Long applicationFees) {
-        
-        this.applicationFees = applicationFees;
-        return this;
-        }
+  public PaymentChargeResponse applicationFees(@javax.annotation.Nonnull Long applicationFees) {
+    
+    this.applicationFees = applicationFees;
+    return this;
+  }
 
-    /**
-        * Platform fees collected on the payment
-    * @return applicationFees
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_APPLICATION_FEES)
+  /**
+   * Platform fees collected on the payment
+   * @return applicationFees
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_APPLICATION_FEES)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public Long getApplicationFees() {
-        return applicationFees;
-    }
+  public Long getApplicationFees() {
+    return applicationFees;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_APPLICATION_FEES)
+  @JsonProperty(JSON_PROPERTY_APPLICATION_FEES)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setApplicationFees(@javax.annotation.Nonnull Long applicationFees) {
-            this.applicationFees = applicationFees;
-        }
+    this.applicationFees = applicationFees;
+  }
 
-        public PaymentChargeResponse transferAccountId(@javax.annotation.Nonnull String transferAccountId) {
-        
-        this.transferAccountId = transferAccountId;
-        return this;
-        }
+  public PaymentChargeResponse transferAccountId(@javax.annotation.Nonnull String transferAccountId) {
+    
+    this.transferAccountId = transferAccountId;
+    return this;
+  }
 
-    /**
-        * Identifier for the reseller&#39;s account where the funds were transferred
-    * @return transferAccountId
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_TRANSFER_ACCOUNT_ID)
+  /**
+   * Identifier for the reseller&#39;s account where the funds were transferred
+   * @return transferAccountId
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_TRANSFER_ACCOUNT_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public String getTransferAccountId() {
-        return transferAccountId;
-    }
+  public String getTransferAccountId() {
+    return transferAccountId;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_TRANSFER_ACCOUNT_ID)
+  @JsonProperty(JSON_PROPERTY_TRANSFER_ACCOUNT_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setTransferAccountId(@javax.annotation.Nonnull String transferAccountId) {
-            this.transferAccountId = transferAccountId;
-        }
+    this.transferAccountId = transferAccountId;
+  }
 
-@Override
-public boolean equals(Object o) {
+  @Override
+  public boolean equals(Object o) {
     if (this == o) {
-    return true;
+      return true;
     }
     if (o == null || getClass() != o.getClass()) {
-    return false;
+      return false;
     }
-        PaymentChargeResponse paymentChargeResponse = (PaymentChargeResponse) o;
-        return equalsNullable(this.chargeId, paymentChargeResponse.chargeId) &&
+    PaymentChargeResponse paymentChargeResponse = (PaymentChargeResponse) o;
+    return equalsNullable(this.chargeId, paymentChargeResponse.chargeId) &&
         Objects.equals(this.chargeType, paymentChargeResponse.chargeType) &&
         Objects.equals(this.applicationFees, paymentChargeResponse.applicationFees) &&
         Objects.equals(this.transferAccountId, paymentChargeResponse.transferAccountId);
-}
+  }
 
-    private static <T> boolean equalsNullable(JsonNullable<T> a, JsonNullable<T> b) {
-        return a == b || (a != null && b != null && a.isPresent() && b.isPresent() && Objects.deepEquals(a.get(), b.get()));
-        }
+  private static <T> boolean equalsNullable(JsonNullable<T> a, JsonNullable<T> b) {
+    return a == b || (a != null && b != null && a.isPresent() && b.isPresent() && Objects.deepEquals(a.get(), b.get()));
+  }
 
-    @Override
-    public int hashCode() {
-        return Objects.hash(hashCodeNullable(chargeId), chargeType, applicationFees, transferAccountId);
+  @Override
+  public int hashCode() {
+    return Objects.hash(hashCodeNullable(chargeId), chargeType, applicationFees, transferAccountId);
+  }
+
+  private static <T> int hashCodeNullable(JsonNullable<T> a) {
+    if (a == null) {
+      return 1;
     }
+    return a.isPresent() ? Arrays.deepHashCode(new Object[]{a.get()}) : 31;
+  }
 
-        private static <T> int hashCodeNullable(JsonNullable<T> a) {
-        if (a == null) {
-        return 1;
-        }
-        return a.isPresent() ? Arrays.deepHashCode(new Object[]{a.get()}) : 31;
-        }
-
-    @Override
-    public String toString() {
+  @Override
+  public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class PaymentChargeResponse {\n");
-        sb.append("    chargeId: ").append(toIndentedString(chargeId)).append("\n");
-        sb.append("    chargeType: ").append(toIndentedString(chargeType)).append("\n");
-        sb.append("    applicationFees: ").append(toIndentedString(applicationFees)).append("\n");
-        sb.append("    transferAccountId: ").append(toIndentedString(transferAccountId)).append("\n");
+    sb.append("    chargeId: ").append(toIndentedString(chargeId)).append("\n");
+    sb.append("    chargeType: ").append(toIndentedString(chargeType)).append("\n");
+    sb.append("    applicationFees: ").append(toIndentedString(applicationFees)).append("\n");
+    sb.append("    transferAccountId: ").append(toIndentedString(transferAccountId)).append("\n");
     sb.append("}");
     return sb.toString();
-    }
+  }
 
-    /**
-    * Convert the given object to string with each line indented by 4 spaces
-    * (except the first line).
-    */
-    private String toIndentedString(Object o) {
+  /**
+   * Convert the given object to string with each line indented by 4 spaces
+   * (except the first line).
+   */
+  private String toIndentedString(Object o) {
     if (o == null) {
-    return "null";
+      return "null";
     }
     return o.toString().replace("\n", "\n    ");
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @return URL query string
+   */
+  public String toUrlQueryString() {
+    return toUrlQueryString(null);
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @param prefix prefix of the query string
+   * @return URL query string
+   */
+  public String toUrlQueryString(String prefix) {
+    String suffix = "";
+    String containerSuffix = "";
+    String containerPrefix = "";
+    if (prefix == null) {
+      // style=form, explode=true, e.g. /pet?name=cat&type=manx
+      prefix = "";
+    } else {
+      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+      prefix = prefix + "[";
+      suffix = "]";
+      containerSuffix = "]";
+      containerPrefix = "[";
     }
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @return URL query string
-        */
-        public String toUrlQueryString() {
-        return toUrlQueryString(null);
-        }
+    StringJoiner joiner = new StringJoiner("&");
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @param prefix prefix of the query string
-        * @return URL query string
-        */
-        public String toUrlQueryString(String prefix) {
-        String suffix = "";
-        String containerSuffix = "";
-        String containerPrefix = "";
-        if (prefix == null) {
-        // style=form, explode=true, e.g. /pet?name=cat&type=manx
-        prefix = "";
-        } else {
-        // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
-        prefix = prefix + "[";
-        suffix = "]";
-        containerSuffix = "]";
-        containerPrefix = "[";
-        }
-
-        StringJoiner joiner = new StringJoiner("&");
-
-            // add `charge_id` to the URL query string
-                        if (getChargeId() != null) {
-                        try {
-                        joiner.add(String.format("%scharge_id%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getChargeId()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-            // add `charge_type` to the URL query string
-                            if (getChargeType() != null) {
-                            joiner.add(getChargeType().toUrlQueryString(prefix + "charge_type" + suffix));
-                            }
-
-            // add `application_fees` to the URL query string
-                        if (getApplicationFees() != null) {
-                        try {
-                        joiner.add(String.format("%sapplication_fees%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getApplicationFees()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-            // add `transfer_account_id` to the URL query string
-                        if (getTransferAccountId() != null) {
-                        try {
-                        joiner.add(String.format("%stransfer_account_id%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getTransferAccountId()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-        return joiner.toString();
-        }
-
+    // add `charge_id` to the URL query string
+    if (getChargeId() != null) {
+      try {
+        joiner.add(String.format("%scharge_id%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getChargeId()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
     }
+
+    // add `charge_type` to the URL query string
+    if (getChargeType() != null) {
+      joiner.add(getChargeType().toUrlQueryString(prefix + "charge_type" + suffix));
+    }
+
+    // add `application_fees` to the URL query string
+    if (getApplicationFees() != null) {
+      try {
+        joiner.add(String.format("%sapplication_fees%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getApplicationFees()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `transfer_account_id` to the URL query string
+    if (getTransferAccountId() != null) {
+      try {
+        joiner.add(String.format("%stransfer_account_id%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getTransferAccountId()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    return joiner.toString();
+  }
+
+}
 

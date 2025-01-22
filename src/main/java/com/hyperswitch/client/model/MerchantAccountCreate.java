@@ -36,701 +36,701 @@ import java.net.URLEncoder;
 import java.util.StringJoiner;
 
 /**
-* MerchantAccountCreate
-*/
-    @JsonPropertyOrder({
-        MerchantAccountCreate.JSON_PROPERTY_MERCHANT_ID,
-        MerchantAccountCreate.JSON_PROPERTY_MERCHANT_NAME,
-        MerchantAccountCreate.JSON_PROPERTY_MERCHANT_DETAILS,
-        MerchantAccountCreate.JSON_PROPERTY_RETURN_URL,
-        MerchantAccountCreate.JSON_PROPERTY_WEBHOOK_DETAILS,
-        MerchantAccountCreate.JSON_PROPERTY_PAYOUT_ROUTING_ALGORITHM,
-        MerchantAccountCreate.JSON_PROPERTY_SUB_MERCHANTS_ENABLED,
-        MerchantAccountCreate.JSON_PROPERTY_PARENT_MERCHANT_ID,
-        MerchantAccountCreate.JSON_PROPERTY_ENABLE_PAYMENT_RESPONSE_HASH,
-        MerchantAccountCreate.JSON_PROPERTY_PAYMENT_RESPONSE_HASH_KEY,
-        MerchantAccountCreate.JSON_PROPERTY_REDIRECT_TO_MERCHANT_WITH_HTTP_POST,
-        MerchantAccountCreate.JSON_PROPERTY_METADATA,
-        MerchantAccountCreate.JSON_PROPERTY_PUBLISHABLE_KEY,
-        MerchantAccountCreate.JSON_PROPERTY_LOCKER_ID,
-        MerchantAccountCreate.JSON_PROPERTY_PRIMARY_BUSINESS_DETAILS,
-        MerchantAccountCreate.JSON_PROPERTY_FRM_ROUTING_ALGORITHM,
-        MerchantAccountCreate.JSON_PROPERTY_ORGANIZATION_ID,
-        MerchantAccountCreate.JSON_PROPERTY_PM_COLLECT_LINK_CONFIG
-    })
+ * MerchantAccountCreate
+ */
+@JsonPropertyOrder({
+  MerchantAccountCreate.JSON_PROPERTY_MERCHANT_ID,
+  MerchantAccountCreate.JSON_PROPERTY_MERCHANT_NAME,
+  MerchantAccountCreate.JSON_PROPERTY_MERCHANT_DETAILS,
+  MerchantAccountCreate.JSON_PROPERTY_RETURN_URL,
+  MerchantAccountCreate.JSON_PROPERTY_WEBHOOK_DETAILS,
+  MerchantAccountCreate.JSON_PROPERTY_PAYOUT_ROUTING_ALGORITHM,
+  MerchantAccountCreate.JSON_PROPERTY_SUB_MERCHANTS_ENABLED,
+  MerchantAccountCreate.JSON_PROPERTY_PARENT_MERCHANT_ID,
+  MerchantAccountCreate.JSON_PROPERTY_ENABLE_PAYMENT_RESPONSE_HASH,
+  MerchantAccountCreate.JSON_PROPERTY_PAYMENT_RESPONSE_HASH_KEY,
+  MerchantAccountCreate.JSON_PROPERTY_REDIRECT_TO_MERCHANT_WITH_HTTP_POST,
+  MerchantAccountCreate.JSON_PROPERTY_METADATA,
+  MerchantAccountCreate.JSON_PROPERTY_PUBLISHABLE_KEY,
+  MerchantAccountCreate.JSON_PROPERTY_LOCKER_ID,
+  MerchantAccountCreate.JSON_PROPERTY_PRIMARY_BUSINESS_DETAILS,
+  MerchantAccountCreate.JSON_PROPERTY_FRM_ROUTING_ALGORITHM,
+  MerchantAccountCreate.JSON_PROPERTY_ORGANIZATION_ID,
+  MerchantAccountCreate.JSON_PROPERTY_PM_COLLECT_LINK_CONFIG
+})
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class MerchantAccountCreate {
-        public static final String JSON_PROPERTY_MERCHANT_ID = "merchant_id";
-    @javax.annotation.Nonnull
-            private String merchantId;
+  public static final String JSON_PROPERTY_MERCHANT_ID = "merchant_id";
+  @javax.annotation.Nonnull
+  private String merchantId;
 
-        public static final String JSON_PROPERTY_MERCHANT_NAME = "merchant_name";
-    @javax.annotation.Nullable
-            private JsonNullable<String> merchantName = JsonNullable.<String>undefined();
+  public static final String JSON_PROPERTY_MERCHANT_NAME = "merchant_name";
+  @javax.annotation.Nullable
+  private JsonNullable<String> merchantName = JsonNullable.<String>undefined();
 
-        public static final String JSON_PROPERTY_MERCHANT_DETAILS = "merchant_details";
-    @javax.annotation.Nullable
-            private JsonNullable<MerchantDetails> merchantDetails = JsonNullable.<MerchantDetails>undefined();
+  public static final String JSON_PROPERTY_MERCHANT_DETAILS = "merchant_details";
+  @javax.annotation.Nullable
+  private JsonNullable<MerchantDetails> merchantDetails = JsonNullable.<MerchantDetails>undefined();
 
-        public static final String JSON_PROPERTY_RETURN_URL = "return_url";
-    @javax.annotation.Nullable
-            private JsonNullable<String> returnUrl = JsonNullable.<String>undefined();
+  public static final String JSON_PROPERTY_RETURN_URL = "return_url";
+  @javax.annotation.Nullable
+  private JsonNullable<String> returnUrl = JsonNullable.<String>undefined();
 
-        public static final String JSON_PROPERTY_WEBHOOK_DETAILS = "webhook_details";
-    @javax.annotation.Nullable
-            private JsonNullable<WebhookDetails> webhookDetails = JsonNullable.<WebhookDetails>undefined();
+  public static final String JSON_PROPERTY_WEBHOOK_DETAILS = "webhook_details";
+  @javax.annotation.Nullable
+  private JsonNullable<WebhookDetails> webhookDetails = JsonNullable.<WebhookDetails>undefined();
 
-        public static final String JSON_PROPERTY_PAYOUT_ROUTING_ALGORITHM = "payout_routing_algorithm";
-    @javax.annotation.Nullable
-            private JsonNullable<RoutingAlgorithm> payoutRoutingAlgorithm = JsonNullable.<RoutingAlgorithm>undefined();
+  public static final String JSON_PROPERTY_PAYOUT_ROUTING_ALGORITHM = "payout_routing_algorithm";
+  @javax.annotation.Nullable
+  private JsonNullable<RoutingAlgorithm> payoutRoutingAlgorithm = JsonNullable.<RoutingAlgorithm>undefined();
 
-        public static final String JSON_PROPERTY_SUB_MERCHANTS_ENABLED = "sub_merchants_enabled";
-    @javax.annotation.Nullable
-            private JsonNullable<Boolean> subMerchantsEnabled = JsonNullable.<Boolean>of(false);
+  public static final String JSON_PROPERTY_SUB_MERCHANTS_ENABLED = "sub_merchants_enabled";
+  @javax.annotation.Nullable
+  private JsonNullable<Boolean> subMerchantsEnabled = JsonNullable.<Boolean>of(false);
 
-        public static final String JSON_PROPERTY_PARENT_MERCHANT_ID = "parent_merchant_id";
-    @javax.annotation.Nullable
-            private JsonNullable<String> parentMerchantId = JsonNullable.<String>undefined();
+  public static final String JSON_PROPERTY_PARENT_MERCHANT_ID = "parent_merchant_id";
+  @javax.annotation.Nullable
+  private JsonNullable<String> parentMerchantId = JsonNullable.<String>undefined();
 
-        public static final String JSON_PROPERTY_ENABLE_PAYMENT_RESPONSE_HASH = "enable_payment_response_hash";
-    @javax.annotation.Nullable
-            private JsonNullable<Boolean> enablePaymentResponseHash = JsonNullable.<Boolean>of(false);
+  public static final String JSON_PROPERTY_ENABLE_PAYMENT_RESPONSE_HASH = "enable_payment_response_hash";
+  @javax.annotation.Nullable
+  private JsonNullable<Boolean> enablePaymentResponseHash = JsonNullable.<Boolean>of(false);
 
-        public static final String JSON_PROPERTY_PAYMENT_RESPONSE_HASH_KEY = "payment_response_hash_key";
-    @javax.annotation.Nullable
-            private JsonNullable<String> paymentResponseHashKey = JsonNullable.<String>undefined();
+  public static final String JSON_PROPERTY_PAYMENT_RESPONSE_HASH_KEY = "payment_response_hash_key";
+  @javax.annotation.Nullable
+  private JsonNullable<String> paymentResponseHashKey = JsonNullable.<String>undefined();
 
-        public static final String JSON_PROPERTY_REDIRECT_TO_MERCHANT_WITH_HTTP_POST = "redirect_to_merchant_with_http_post";
-    @javax.annotation.Nullable
-            private JsonNullable<Boolean> redirectToMerchantWithHttpPost = JsonNullable.<Boolean>of(false);
+  public static final String JSON_PROPERTY_REDIRECT_TO_MERCHANT_WITH_HTTP_POST = "redirect_to_merchant_with_http_post";
+  @javax.annotation.Nullable
+  private JsonNullable<Boolean> redirectToMerchantWithHttpPost = JsonNullable.<Boolean>of(false);
 
-        public static final String JSON_PROPERTY_METADATA = "metadata";
-    @javax.annotation.Nullable
-            private JsonNullable<Object> metadata = JsonNullable.<Object>undefined();
+  public static final String JSON_PROPERTY_METADATA = "metadata";
+  @javax.annotation.Nullable
+  private JsonNullable<Object> metadata = JsonNullable.<Object>undefined();
 
-        public static final String JSON_PROPERTY_PUBLISHABLE_KEY = "publishable_key";
-    @javax.annotation.Nullable
-            private JsonNullable<String> publishableKey = JsonNullable.<String>undefined();
+  public static final String JSON_PROPERTY_PUBLISHABLE_KEY = "publishable_key";
+  @javax.annotation.Nullable
+  private JsonNullable<String> publishableKey = JsonNullable.<String>undefined();
 
-        public static final String JSON_PROPERTY_LOCKER_ID = "locker_id";
-    @javax.annotation.Nullable
-            private JsonNullable<String> lockerId = JsonNullable.<String>undefined();
+  public static final String JSON_PROPERTY_LOCKER_ID = "locker_id";
+  @javax.annotation.Nullable
+  private JsonNullable<String> lockerId = JsonNullable.<String>undefined();
 
-        public static final String JSON_PROPERTY_PRIMARY_BUSINESS_DETAILS = "primary_business_details";
-    @javax.annotation.Nullable
-            private JsonNullable<PrimaryBusinessDetails> primaryBusinessDetails = JsonNullable.<PrimaryBusinessDetails>undefined();
+  public static final String JSON_PROPERTY_PRIMARY_BUSINESS_DETAILS = "primary_business_details";
+  @javax.annotation.Nullable
+  private JsonNullable<PrimaryBusinessDetails> primaryBusinessDetails = JsonNullable.<PrimaryBusinessDetails>undefined();
 
-        public static final String JSON_PROPERTY_FRM_ROUTING_ALGORITHM = "frm_routing_algorithm";
-    @javax.annotation.Nullable
-            private JsonNullable<Object> frmRoutingAlgorithm = JsonNullable.<Object>undefined();
+  public static final String JSON_PROPERTY_FRM_ROUTING_ALGORITHM = "frm_routing_algorithm";
+  @javax.annotation.Nullable
+  private JsonNullable<Object> frmRoutingAlgorithm = JsonNullable.<Object>undefined();
 
-        public static final String JSON_PROPERTY_ORGANIZATION_ID = "organization_id";
-    @javax.annotation.Nullable
-            private JsonNullable<String> organizationId = JsonNullable.<String>undefined();
+  public static final String JSON_PROPERTY_ORGANIZATION_ID = "organization_id";
+  @javax.annotation.Nullable
+  private JsonNullable<String> organizationId = JsonNullable.<String>undefined();
 
-        public static final String JSON_PROPERTY_PM_COLLECT_LINK_CONFIG = "pm_collect_link_config";
-    @javax.annotation.Nullable
-            private JsonNullable<BusinessCollectLinkConfig> pmCollectLinkConfig = JsonNullable.<BusinessCollectLinkConfig>undefined();
+  public static final String JSON_PROPERTY_PM_COLLECT_LINK_CONFIG = "pm_collect_link_config";
+  @javax.annotation.Nullable
+  private JsonNullable<BusinessCollectLinkConfig> pmCollectLinkConfig = JsonNullable.<BusinessCollectLinkConfig>undefined();
 
-public MerchantAccountCreate() {
-}
+  public MerchantAccountCreate() {
+  }
 
-        public MerchantAccountCreate merchantId(@javax.annotation.Nonnull String merchantId) {
-        
-        this.merchantId = merchantId;
-        return this;
-        }
+  public MerchantAccountCreate merchantId(@javax.annotation.Nonnull String merchantId) {
+    
+    this.merchantId = merchantId;
+    return this;
+  }
 
-    /**
-        * The identifier for the Merchant Account
-    * @return merchantId
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_MERCHANT_ID)
+  /**
+   * The identifier for the Merchant Account
+   * @return merchantId
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_MERCHANT_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public String getMerchantId() {
-        return merchantId;
-    }
+  public String getMerchantId() {
+    return merchantId;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_MERCHANT_ID)
+  @JsonProperty(JSON_PROPERTY_MERCHANT_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setMerchantId(@javax.annotation.Nonnull String merchantId) {
-            this.merchantId = merchantId;
-        }
+    this.merchantId = merchantId;
+  }
 
-        public MerchantAccountCreate merchantName(@javax.annotation.Nullable String merchantName) {
-        this.merchantName = JsonNullable.<String>of(merchantName);
-        
-        return this;
-        }
-
-    /**
-        * Name of the Merchant Account
-    * @return merchantName
-    */
-    @javax.annotation.Nullable
-        @JsonIgnore
+  public MerchantAccountCreate merchantName(@javax.annotation.Nullable String merchantName) {
+    this.merchantName = JsonNullable.<String>of(merchantName);
     
-    public String getMerchantName() {
-                return merchantName.orElse(null);
-    }
+    return this;
+  }
 
-          @JsonProperty(JSON_PROPERTY_MERCHANT_NAME)
+  /**
+   * Name of the Merchant Account
+   * @return merchantName
+   */
+  @javax.annotation.Nullable
+  @JsonIgnore
+
+  public String getMerchantName() {
+        return merchantName.orElse(null);
+  }
+
+  @JsonProperty(JSON_PROPERTY_MERCHANT_NAME)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-        public JsonNullable<String> getMerchantName_JsonNullable() {
-        return merchantName;
-        }
+  public JsonNullable<String> getMerchantName_JsonNullable() {
+    return merchantName;
+  }
+  
+  @JsonProperty(JSON_PROPERTY_MERCHANT_NAME)
+  public void setMerchantName_JsonNullable(JsonNullable<String> merchantName) {
+    this.merchantName = merchantName;
+  }
+
+  public void setMerchantName(@javax.annotation.Nullable String merchantName) {
+    this.merchantName = JsonNullable.<String>of(merchantName);
+  }
+
+  public MerchantAccountCreate merchantDetails(@javax.annotation.Nullable MerchantDetails merchantDetails) {
+    this.merchantDetails = JsonNullable.<MerchantDetails>of(merchantDetails);
     
-        @JsonProperty(JSON_PROPERTY_MERCHANT_NAME)
-        public void setMerchantName_JsonNullable(JsonNullable<String> merchantName) {
-        this.merchantName = merchantName;
-        }
+    return this;
+  }
 
-          public void setMerchantName(@javax.annotation.Nullable String merchantName) {
-            this.merchantName = JsonNullable.<String>of(merchantName);
-        }
+  /**
+   * Get merchantDetails
+   * @return merchantDetails
+   */
+  @javax.annotation.Nullable
+  @JsonIgnore
 
-        public MerchantAccountCreate merchantDetails(@javax.annotation.Nullable MerchantDetails merchantDetails) {
-        this.merchantDetails = JsonNullable.<MerchantDetails>of(merchantDetails);
-        
-        return this;
-        }
+  public MerchantDetails getMerchantDetails() {
+        return merchantDetails.orElse(null);
+  }
 
-    /**
-        * Get merchantDetails
-    * @return merchantDetails
-    */
-    @javax.annotation.Nullable
-        @JsonIgnore
-    
-    public MerchantDetails getMerchantDetails() {
-                return merchantDetails.orElse(null);
-    }
-
-          @JsonProperty(JSON_PROPERTY_MERCHANT_DETAILS)
+  @JsonProperty(JSON_PROPERTY_MERCHANT_DETAILS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-        public JsonNullable<MerchantDetails> getMerchantDetails_JsonNullable() {
-        return merchantDetails;
-        }
+  public JsonNullable<MerchantDetails> getMerchantDetails_JsonNullable() {
+    return merchantDetails;
+  }
+  
+  @JsonProperty(JSON_PROPERTY_MERCHANT_DETAILS)
+  public void setMerchantDetails_JsonNullable(JsonNullable<MerchantDetails> merchantDetails) {
+    this.merchantDetails = merchantDetails;
+  }
+
+  public void setMerchantDetails(@javax.annotation.Nullable MerchantDetails merchantDetails) {
+    this.merchantDetails = JsonNullable.<MerchantDetails>of(merchantDetails);
+  }
+
+  public MerchantAccountCreate returnUrl(@javax.annotation.Nullable String returnUrl) {
+    this.returnUrl = JsonNullable.<String>of(returnUrl);
     
-        @JsonProperty(JSON_PROPERTY_MERCHANT_DETAILS)
-        public void setMerchantDetails_JsonNullable(JsonNullable<MerchantDetails> merchantDetails) {
-        this.merchantDetails = merchantDetails;
-        }
+    return this;
+  }
 
-          public void setMerchantDetails(@javax.annotation.Nullable MerchantDetails merchantDetails) {
-            this.merchantDetails = JsonNullable.<MerchantDetails>of(merchantDetails);
-        }
+  /**
+   * The URL to redirect after the completion of the operation
+   * @return returnUrl
+   */
+  @javax.annotation.Nullable
+  @JsonIgnore
 
-        public MerchantAccountCreate returnUrl(@javax.annotation.Nullable String returnUrl) {
-        this.returnUrl = JsonNullable.<String>of(returnUrl);
-        
-        return this;
-        }
+  public String getReturnUrl() {
+        return returnUrl.orElse(null);
+  }
 
-    /**
-        * The URL to redirect after the completion of the operation
-    * @return returnUrl
-    */
-    @javax.annotation.Nullable
-        @JsonIgnore
-    
-    public String getReturnUrl() {
-                return returnUrl.orElse(null);
-    }
-
-          @JsonProperty(JSON_PROPERTY_RETURN_URL)
+  @JsonProperty(JSON_PROPERTY_RETURN_URL)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-        public JsonNullable<String> getReturnUrl_JsonNullable() {
-        return returnUrl;
-        }
+  public JsonNullable<String> getReturnUrl_JsonNullable() {
+    return returnUrl;
+  }
+  
+  @JsonProperty(JSON_PROPERTY_RETURN_URL)
+  public void setReturnUrl_JsonNullable(JsonNullable<String> returnUrl) {
+    this.returnUrl = returnUrl;
+  }
+
+  public void setReturnUrl(@javax.annotation.Nullable String returnUrl) {
+    this.returnUrl = JsonNullable.<String>of(returnUrl);
+  }
+
+  public MerchantAccountCreate webhookDetails(@javax.annotation.Nullable WebhookDetails webhookDetails) {
+    this.webhookDetails = JsonNullable.<WebhookDetails>of(webhookDetails);
     
-        @JsonProperty(JSON_PROPERTY_RETURN_URL)
-        public void setReturnUrl_JsonNullable(JsonNullable<String> returnUrl) {
-        this.returnUrl = returnUrl;
-        }
+    return this;
+  }
 
-          public void setReturnUrl(@javax.annotation.Nullable String returnUrl) {
-            this.returnUrl = JsonNullable.<String>of(returnUrl);
-        }
+  /**
+   * Get webhookDetails
+   * @return webhookDetails
+   */
+  @javax.annotation.Nullable
+  @JsonIgnore
 
-        public MerchantAccountCreate webhookDetails(@javax.annotation.Nullable WebhookDetails webhookDetails) {
-        this.webhookDetails = JsonNullable.<WebhookDetails>of(webhookDetails);
-        
-        return this;
-        }
+  public WebhookDetails getWebhookDetails() {
+        return webhookDetails.orElse(null);
+  }
 
-    /**
-        * Get webhookDetails
-    * @return webhookDetails
-    */
-    @javax.annotation.Nullable
-        @JsonIgnore
-    
-    public WebhookDetails getWebhookDetails() {
-                return webhookDetails.orElse(null);
-    }
-
-          @JsonProperty(JSON_PROPERTY_WEBHOOK_DETAILS)
+  @JsonProperty(JSON_PROPERTY_WEBHOOK_DETAILS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-        public JsonNullable<WebhookDetails> getWebhookDetails_JsonNullable() {
-        return webhookDetails;
-        }
+  public JsonNullable<WebhookDetails> getWebhookDetails_JsonNullable() {
+    return webhookDetails;
+  }
+  
+  @JsonProperty(JSON_PROPERTY_WEBHOOK_DETAILS)
+  public void setWebhookDetails_JsonNullable(JsonNullable<WebhookDetails> webhookDetails) {
+    this.webhookDetails = webhookDetails;
+  }
+
+  public void setWebhookDetails(@javax.annotation.Nullable WebhookDetails webhookDetails) {
+    this.webhookDetails = JsonNullable.<WebhookDetails>of(webhookDetails);
+  }
+
+  public MerchantAccountCreate payoutRoutingAlgorithm(@javax.annotation.Nullable RoutingAlgorithm payoutRoutingAlgorithm) {
+    this.payoutRoutingAlgorithm = JsonNullable.<RoutingAlgorithm>of(payoutRoutingAlgorithm);
     
-        @JsonProperty(JSON_PROPERTY_WEBHOOK_DETAILS)
-        public void setWebhookDetails_JsonNullable(JsonNullable<WebhookDetails> webhookDetails) {
-        this.webhookDetails = webhookDetails;
-        }
+    return this;
+  }
 
-          public void setWebhookDetails(@javax.annotation.Nullable WebhookDetails webhookDetails) {
-            this.webhookDetails = JsonNullable.<WebhookDetails>of(webhookDetails);
-        }
+  /**
+   * Get payoutRoutingAlgorithm
+   * @return payoutRoutingAlgorithm
+   */
+  @javax.annotation.Nullable
+  @JsonIgnore
 
-        public MerchantAccountCreate payoutRoutingAlgorithm(@javax.annotation.Nullable RoutingAlgorithm payoutRoutingAlgorithm) {
-        this.payoutRoutingAlgorithm = JsonNullable.<RoutingAlgorithm>of(payoutRoutingAlgorithm);
-        
-        return this;
-        }
+  public RoutingAlgorithm getPayoutRoutingAlgorithm() {
+        return payoutRoutingAlgorithm.orElse(null);
+  }
 
-    /**
-        * Get payoutRoutingAlgorithm
-    * @return payoutRoutingAlgorithm
-    */
-    @javax.annotation.Nullable
-        @JsonIgnore
-    
-    public RoutingAlgorithm getPayoutRoutingAlgorithm() {
-                return payoutRoutingAlgorithm.orElse(null);
-    }
-
-          @JsonProperty(JSON_PROPERTY_PAYOUT_ROUTING_ALGORITHM)
+  @JsonProperty(JSON_PROPERTY_PAYOUT_ROUTING_ALGORITHM)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-        public JsonNullable<RoutingAlgorithm> getPayoutRoutingAlgorithm_JsonNullable() {
-        return payoutRoutingAlgorithm;
-        }
+  public JsonNullable<RoutingAlgorithm> getPayoutRoutingAlgorithm_JsonNullable() {
+    return payoutRoutingAlgorithm;
+  }
+  
+  @JsonProperty(JSON_PROPERTY_PAYOUT_ROUTING_ALGORITHM)
+  public void setPayoutRoutingAlgorithm_JsonNullable(JsonNullable<RoutingAlgorithm> payoutRoutingAlgorithm) {
+    this.payoutRoutingAlgorithm = payoutRoutingAlgorithm;
+  }
+
+  public void setPayoutRoutingAlgorithm(@javax.annotation.Nullable RoutingAlgorithm payoutRoutingAlgorithm) {
+    this.payoutRoutingAlgorithm = JsonNullable.<RoutingAlgorithm>of(payoutRoutingAlgorithm);
+  }
+
+  public MerchantAccountCreate subMerchantsEnabled(@javax.annotation.Nullable Boolean subMerchantsEnabled) {
+    this.subMerchantsEnabled = JsonNullable.<Boolean>of(subMerchantsEnabled);
     
-        @JsonProperty(JSON_PROPERTY_PAYOUT_ROUTING_ALGORITHM)
-        public void setPayoutRoutingAlgorithm_JsonNullable(JsonNullable<RoutingAlgorithm> payoutRoutingAlgorithm) {
-        this.payoutRoutingAlgorithm = payoutRoutingAlgorithm;
-        }
+    return this;
+  }
 
-          public void setPayoutRoutingAlgorithm(@javax.annotation.Nullable RoutingAlgorithm payoutRoutingAlgorithm) {
-            this.payoutRoutingAlgorithm = JsonNullable.<RoutingAlgorithm>of(payoutRoutingAlgorithm);
-        }
+  /**
+   * A boolean value to indicate if the merchant is a sub-merchant under a master or a parent merchant. By default, its value is false.
+   * @return subMerchantsEnabled
+   */
+  @javax.annotation.Nullable
+  @JsonIgnore
 
-        public MerchantAccountCreate subMerchantsEnabled(@javax.annotation.Nullable Boolean subMerchantsEnabled) {
-        this.subMerchantsEnabled = JsonNullable.<Boolean>of(subMerchantsEnabled);
-        
-        return this;
-        }
+  public Boolean getSubMerchantsEnabled() {
+        return subMerchantsEnabled.orElse(null);
+  }
 
-    /**
-        * A boolean value to indicate if the merchant is a sub-merchant under a master or a parent merchant. By default, its value is false.
-    * @return subMerchantsEnabled
-    */
-    @javax.annotation.Nullable
-        @JsonIgnore
-    
-    public Boolean getSubMerchantsEnabled() {
-                return subMerchantsEnabled.orElse(null);
-    }
-
-          @JsonProperty(JSON_PROPERTY_SUB_MERCHANTS_ENABLED)
+  @JsonProperty(JSON_PROPERTY_SUB_MERCHANTS_ENABLED)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-        public JsonNullable<Boolean> getSubMerchantsEnabled_JsonNullable() {
-        return subMerchantsEnabled;
-        }
+  public JsonNullable<Boolean> getSubMerchantsEnabled_JsonNullable() {
+    return subMerchantsEnabled;
+  }
+  
+  @JsonProperty(JSON_PROPERTY_SUB_MERCHANTS_ENABLED)
+  public void setSubMerchantsEnabled_JsonNullable(JsonNullable<Boolean> subMerchantsEnabled) {
+    this.subMerchantsEnabled = subMerchantsEnabled;
+  }
+
+  public void setSubMerchantsEnabled(@javax.annotation.Nullable Boolean subMerchantsEnabled) {
+    this.subMerchantsEnabled = JsonNullable.<Boolean>of(subMerchantsEnabled);
+  }
+
+  public MerchantAccountCreate parentMerchantId(@javax.annotation.Nullable String parentMerchantId) {
+    this.parentMerchantId = JsonNullable.<String>of(parentMerchantId);
     
-        @JsonProperty(JSON_PROPERTY_SUB_MERCHANTS_ENABLED)
-        public void setSubMerchantsEnabled_JsonNullable(JsonNullable<Boolean> subMerchantsEnabled) {
-        this.subMerchantsEnabled = subMerchantsEnabled;
-        }
+    return this;
+  }
 
-          public void setSubMerchantsEnabled(@javax.annotation.Nullable Boolean subMerchantsEnabled) {
-            this.subMerchantsEnabled = JsonNullable.<Boolean>of(subMerchantsEnabled);
-        }
+  /**
+   * Refers to the Parent Merchant ID if the merchant being created is a sub-merchant
+   * @return parentMerchantId
+   */
+  @javax.annotation.Nullable
+  @JsonIgnore
 
-        public MerchantAccountCreate parentMerchantId(@javax.annotation.Nullable String parentMerchantId) {
-        this.parentMerchantId = JsonNullable.<String>of(parentMerchantId);
-        
-        return this;
-        }
+  public String getParentMerchantId() {
+        return parentMerchantId.orElse(null);
+  }
 
-    /**
-        * Refers to the Parent Merchant ID if the merchant being created is a sub-merchant
-    * @return parentMerchantId
-    */
-    @javax.annotation.Nullable
-        @JsonIgnore
-    
-    public String getParentMerchantId() {
-                return parentMerchantId.orElse(null);
-    }
-
-          @JsonProperty(JSON_PROPERTY_PARENT_MERCHANT_ID)
+  @JsonProperty(JSON_PROPERTY_PARENT_MERCHANT_ID)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-        public JsonNullable<String> getParentMerchantId_JsonNullable() {
-        return parentMerchantId;
-        }
+  public JsonNullable<String> getParentMerchantId_JsonNullable() {
+    return parentMerchantId;
+  }
+  
+  @JsonProperty(JSON_PROPERTY_PARENT_MERCHANT_ID)
+  public void setParentMerchantId_JsonNullable(JsonNullable<String> parentMerchantId) {
+    this.parentMerchantId = parentMerchantId;
+  }
+
+  public void setParentMerchantId(@javax.annotation.Nullable String parentMerchantId) {
+    this.parentMerchantId = JsonNullable.<String>of(parentMerchantId);
+  }
+
+  public MerchantAccountCreate enablePaymentResponseHash(@javax.annotation.Nullable Boolean enablePaymentResponseHash) {
+    this.enablePaymentResponseHash = JsonNullable.<Boolean>of(enablePaymentResponseHash);
     
-        @JsonProperty(JSON_PROPERTY_PARENT_MERCHANT_ID)
-        public void setParentMerchantId_JsonNullable(JsonNullable<String> parentMerchantId) {
-        this.parentMerchantId = parentMerchantId;
-        }
+    return this;
+  }
 
-          public void setParentMerchantId(@javax.annotation.Nullable String parentMerchantId) {
-            this.parentMerchantId = JsonNullable.<String>of(parentMerchantId);
-        }
+  /**
+   * A boolean value to indicate if payment response hash needs to be enabled
+   * @return enablePaymentResponseHash
+   */
+  @javax.annotation.Nullable
+  @JsonIgnore
 
-        public MerchantAccountCreate enablePaymentResponseHash(@javax.annotation.Nullable Boolean enablePaymentResponseHash) {
-        this.enablePaymentResponseHash = JsonNullable.<Boolean>of(enablePaymentResponseHash);
-        
-        return this;
-        }
+  public Boolean getEnablePaymentResponseHash() {
+        return enablePaymentResponseHash.orElse(null);
+  }
 
-    /**
-        * A boolean value to indicate if payment response hash needs to be enabled
-    * @return enablePaymentResponseHash
-    */
-    @javax.annotation.Nullable
-        @JsonIgnore
-    
-    public Boolean getEnablePaymentResponseHash() {
-                return enablePaymentResponseHash.orElse(null);
-    }
-
-          @JsonProperty(JSON_PROPERTY_ENABLE_PAYMENT_RESPONSE_HASH)
+  @JsonProperty(JSON_PROPERTY_ENABLE_PAYMENT_RESPONSE_HASH)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-        public JsonNullable<Boolean> getEnablePaymentResponseHash_JsonNullable() {
-        return enablePaymentResponseHash;
-        }
+  public JsonNullable<Boolean> getEnablePaymentResponseHash_JsonNullable() {
+    return enablePaymentResponseHash;
+  }
+  
+  @JsonProperty(JSON_PROPERTY_ENABLE_PAYMENT_RESPONSE_HASH)
+  public void setEnablePaymentResponseHash_JsonNullable(JsonNullable<Boolean> enablePaymentResponseHash) {
+    this.enablePaymentResponseHash = enablePaymentResponseHash;
+  }
+
+  public void setEnablePaymentResponseHash(@javax.annotation.Nullable Boolean enablePaymentResponseHash) {
+    this.enablePaymentResponseHash = JsonNullable.<Boolean>of(enablePaymentResponseHash);
+  }
+
+  public MerchantAccountCreate paymentResponseHashKey(@javax.annotation.Nullable String paymentResponseHashKey) {
+    this.paymentResponseHashKey = JsonNullable.<String>of(paymentResponseHashKey);
     
-        @JsonProperty(JSON_PROPERTY_ENABLE_PAYMENT_RESPONSE_HASH)
-        public void setEnablePaymentResponseHash_JsonNullable(JsonNullable<Boolean> enablePaymentResponseHash) {
-        this.enablePaymentResponseHash = enablePaymentResponseHash;
-        }
+    return this;
+  }
 
-          public void setEnablePaymentResponseHash(@javax.annotation.Nullable Boolean enablePaymentResponseHash) {
-            this.enablePaymentResponseHash = JsonNullable.<Boolean>of(enablePaymentResponseHash);
-        }
+  /**
+   * Refers to the hash key used for calculating the signature for webhooks and redirect response. If the value is not provided, a value is automatically generated.
+   * @return paymentResponseHashKey
+   */
+  @javax.annotation.Nullable
+  @JsonIgnore
 
-        public MerchantAccountCreate paymentResponseHashKey(@javax.annotation.Nullable String paymentResponseHashKey) {
-        this.paymentResponseHashKey = JsonNullable.<String>of(paymentResponseHashKey);
-        
-        return this;
-        }
+  public String getPaymentResponseHashKey() {
+        return paymentResponseHashKey.orElse(null);
+  }
 
-    /**
-        * Refers to the hash key used for calculating the signature for webhooks and redirect response. If the value is not provided, a value is automatically generated.
-    * @return paymentResponseHashKey
-    */
-    @javax.annotation.Nullable
-        @JsonIgnore
-    
-    public String getPaymentResponseHashKey() {
-                return paymentResponseHashKey.orElse(null);
-    }
-
-          @JsonProperty(JSON_PROPERTY_PAYMENT_RESPONSE_HASH_KEY)
+  @JsonProperty(JSON_PROPERTY_PAYMENT_RESPONSE_HASH_KEY)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-        public JsonNullable<String> getPaymentResponseHashKey_JsonNullable() {
-        return paymentResponseHashKey;
-        }
+  public JsonNullable<String> getPaymentResponseHashKey_JsonNullable() {
+    return paymentResponseHashKey;
+  }
+  
+  @JsonProperty(JSON_PROPERTY_PAYMENT_RESPONSE_HASH_KEY)
+  public void setPaymentResponseHashKey_JsonNullable(JsonNullable<String> paymentResponseHashKey) {
+    this.paymentResponseHashKey = paymentResponseHashKey;
+  }
+
+  public void setPaymentResponseHashKey(@javax.annotation.Nullable String paymentResponseHashKey) {
+    this.paymentResponseHashKey = JsonNullable.<String>of(paymentResponseHashKey);
+  }
+
+  public MerchantAccountCreate redirectToMerchantWithHttpPost(@javax.annotation.Nullable Boolean redirectToMerchantWithHttpPost) {
+    this.redirectToMerchantWithHttpPost = JsonNullable.<Boolean>of(redirectToMerchantWithHttpPost);
     
-        @JsonProperty(JSON_PROPERTY_PAYMENT_RESPONSE_HASH_KEY)
-        public void setPaymentResponseHashKey_JsonNullable(JsonNullable<String> paymentResponseHashKey) {
-        this.paymentResponseHashKey = paymentResponseHashKey;
-        }
+    return this;
+  }
 
-          public void setPaymentResponseHashKey(@javax.annotation.Nullable String paymentResponseHashKey) {
-            this.paymentResponseHashKey = JsonNullable.<String>of(paymentResponseHashKey);
-        }
+  /**
+   * A boolean value to indicate if redirect to merchant with http post needs to be enabled.
+   * @return redirectToMerchantWithHttpPost
+   */
+  @javax.annotation.Nullable
+  @JsonIgnore
 
-        public MerchantAccountCreate redirectToMerchantWithHttpPost(@javax.annotation.Nullable Boolean redirectToMerchantWithHttpPost) {
-        this.redirectToMerchantWithHttpPost = JsonNullable.<Boolean>of(redirectToMerchantWithHttpPost);
-        
-        return this;
-        }
+  public Boolean getRedirectToMerchantWithHttpPost() {
+        return redirectToMerchantWithHttpPost.orElse(null);
+  }
 
-    /**
-        * A boolean value to indicate if redirect to merchant with http post needs to be enabled.
-    * @return redirectToMerchantWithHttpPost
-    */
-    @javax.annotation.Nullable
-        @JsonIgnore
-    
-    public Boolean getRedirectToMerchantWithHttpPost() {
-                return redirectToMerchantWithHttpPost.orElse(null);
-    }
-
-          @JsonProperty(JSON_PROPERTY_REDIRECT_TO_MERCHANT_WITH_HTTP_POST)
+  @JsonProperty(JSON_PROPERTY_REDIRECT_TO_MERCHANT_WITH_HTTP_POST)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-        public JsonNullable<Boolean> getRedirectToMerchantWithHttpPost_JsonNullable() {
-        return redirectToMerchantWithHttpPost;
-        }
+  public JsonNullable<Boolean> getRedirectToMerchantWithHttpPost_JsonNullable() {
+    return redirectToMerchantWithHttpPost;
+  }
+  
+  @JsonProperty(JSON_PROPERTY_REDIRECT_TO_MERCHANT_WITH_HTTP_POST)
+  public void setRedirectToMerchantWithHttpPost_JsonNullable(JsonNullable<Boolean> redirectToMerchantWithHttpPost) {
+    this.redirectToMerchantWithHttpPost = redirectToMerchantWithHttpPost;
+  }
+
+  public void setRedirectToMerchantWithHttpPost(@javax.annotation.Nullable Boolean redirectToMerchantWithHttpPost) {
+    this.redirectToMerchantWithHttpPost = JsonNullable.<Boolean>of(redirectToMerchantWithHttpPost);
+  }
+
+  public MerchantAccountCreate metadata(@javax.annotation.Nullable Object metadata) {
+    this.metadata = JsonNullable.<Object>of(metadata);
     
-        @JsonProperty(JSON_PROPERTY_REDIRECT_TO_MERCHANT_WITH_HTTP_POST)
-        public void setRedirectToMerchantWithHttpPost_JsonNullable(JsonNullable<Boolean> redirectToMerchantWithHttpPost) {
-        this.redirectToMerchantWithHttpPost = redirectToMerchantWithHttpPost;
-        }
+    return this;
+  }
 
-          public void setRedirectToMerchantWithHttpPost(@javax.annotation.Nullable Boolean redirectToMerchantWithHttpPost) {
-            this.redirectToMerchantWithHttpPost = JsonNullable.<Boolean>of(redirectToMerchantWithHttpPost);
-        }
+  /**
+   * Metadata is useful for storing additional, unstructured information on an object
+   * @return metadata
+   */
+  @javax.annotation.Nullable
+  @JsonIgnore
 
-        public MerchantAccountCreate metadata(@javax.annotation.Nullable Object metadata) {
-        this.metadata = JsonNullable.<Object>of(metadata);
-        
-        return this;
-        }
+  public Object getMetadata() {
+        return metadata.orElse(null);
+  }
 
-    /**
-        * Metadata is useful for storing additional, unstructured information on an object
-    * @return metadata
-    */
-    @javax.annotation.Nullable
-        @JsonIgnore
-    
-    public Object getMetadata() {
-                return metadata.orElse(null);
-    }
-
-          @JsonProperty(JSON_PROPERTY_METADATA)
+  @JsonProperty(JSON_PROPERTY_METADATA)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-        public JsonNullable<Object> getMetadata_JsonNullable() {
-        return metadata;
-        }
+  public JsonNullable<Object> getMetadata_JsonNullable() {
+    return metadata;
+  }
+  
+  @JsonProperty(JSON_PROPERTY_METADATA)
+  public void setMetadata_JsonNullable(JsonNullable<Object> metadata) {
+    this.metadata = metadata;
+  }
+
+  public void setMetadata(@javax.annotation.Nullable Object metadata) {
+    this.metadata = JsonNullable.<Object>of(metadata);
+  }
+
+  public MerchantAccountCreate publishableKey(@javax.annotation.Nullable String publishableKey) {
+    this.publishableKey = JsonNullable.<String>of(publishableKey);
     
-        @JsonProperty(JSON_PROPERTY_METADATA)
-        public void setMetadata_JsonNullable(JsonNullable<Object> metadata) {
-        this.metadata = metadata;
-        }
+    return this;
+  }
 
-          public void setMetadata(@javax.annotation.Nullable Object metadata) {
-            this.metadata = JsonNullable.<Object>of(metadata);
-        }
+  /**
+   * API key that will be used for client side API access. A publishable key has to be always paired with a &#x60;client_secret&#x60;. A &#x60;client_secret&#x60; can be obtained by creating a payment with &#x60;confirm&#x60; set to false
+   * @return publishableKey
+   */
+  @javax.annotation.Nullable
+  @JsonIgnore
 
-        public MerchantAccountCreate publishableKey(@javax.annotation.Nullable String publishableKey) {
-        this.publishableKey = JsonNullable.<String>of(publishableKey);
-        
-        return this;
-        }
+  public String getPublishableKey() {
+        return publishableKey.orElse(null);
+  }
 
-    /**
-        * API key that will be used for client side API access. A publishable key has to be always paired with a &#x60;client_secret&#x60;. A &#x60;client_secret&#x60; can be obtained by creating a payment with &#x60;confirm&#x60; set to false
-    * @return publishableKey
-    */
-    @javax.annotation.Nullable
-        @JsonIgnore
-    
-    public String getPublishableKey() {
-                return publishableKey.orElse(null);
-    }
-
-          @JsonProperty(JSON_PROPERTY_PUBLISHABLE_KEY)
+  @JsonProperty(JSON_PROPERTY_PUBLISHABLE_KEY)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-        public JsonNullable<String> getPublishableKey_JsonNullable() {
-        return publishableKey;
-        }
+  public JsonNullable<String> getPublishableKey_JsonNullable() {
+    return publishableKey;
+  }
+  
+  @JsonProperty(JSON_PROPERTY_PUBLISHABLE_KEY)
+  public void setPublishableKey_JsonNullable(JsonNullable<String> publishableKey) {
+    this.publishableKey = publishableKey;
+  }
+
+  public void setPublishableKey(@javax.annotation.Nullable String publishableKey) {
+    this.publishableKey = JsonNullable.<String>of(publishableKey);
+  }
+
+  public MerchantAccountCreate lockerId(@javax.annotation.Nullable String lockerId) {
+    this.lockerId = JsonNullable.<String>of(lockerId);
     
-        @JsonProperty(JSON_PROPERTY_PUBLISHABLE_KEY)
-        public void setPublishableKey_JsonNullable(JsonNullable<String> publishableKey) {
-        this.publishableKey = publishableKey;
-        }
+    return this;
+  }
 
-          public void setPublishableKey(@javax.annotation.Nullable String publishableKey) {
-            this.publishableKey = JsonNullable.<String>of(publishableKey);
-        }
+  /**
+   * An identifier for the vault used to store payment method information.
+   * @return lockerId
+   */
+  @javax.annotation.Nullable
+  @JsonIgnore
 
-        public MerchantAccountCreate lockerId(@javax.annotation.Nullable String lockerId) {
-        this.lockerId = JsonNullable.<String>of(lockerId);
-        
-        return this;
-        }
+  public String getLockerId() {
+        return lockerId.orElse(null);
+  }
 
-    /**
-        * An identifier for the vault used to store payment method information.
-    * @return lockerId
-    */
-    @javax.annotation.Nullable
-        @JsonIgnore
-    
-    public String getLockerId() {
-                return lockerId.orElse(null);
-    }
-
-          @JsonProperty(JSON_PROPERTY_LOCKER_ID)
+  @JsonProperty(JSON_PROPERTY_LOCKER_ID)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-        public JsonNullable<String> getLockerId_JsonNullable() {
-        return lockerId;
-        }
+  public JsonNullable<String> getLockerId_JsonNullable() {
+    return lockerId;
+  }
+  
+  @JsonProperty(JSON_PROPERTY_LOCKER_ID)
+  public void setLockerId_JsonNullable(JsonNullable<String> lockerId) {
+    this.lockerId = lockerId;
+  }
+
+  public void setLockerId(@javax.annotation.Nullable String lockerId) {
+    this.lockerId = JsonNullable.<String>of(lockerId);
+  }
+
+  public MerchantAccountCreate primaryBusinessDetails(@javax.annotation.Nullable PrimaryBusinessDetails primaryBusinessDetails) {
+    this.primaryBusinessDetails = JsonNullable.<PrimaryBusinessDetails>of(primaryBusinessDetails);
     
-        @JsonProperty(JSON_PROPERTY_LOCKER_ID)
-        public void setLockerId_JsonNullable(JsonNullable<String> lockerId) {
-        this.lockerId = lockerId;
-        }
+    return this;
+  }
 
-          public void setLockerId(@javax.annotation.Nullable String lockerId) {
-            this.lockerId = JsonNullable.<String>of(lockerId);
-        }
+  /**
+   * Get primaryBusinessDetails
+   * @return primaryBusinessDetails
+   */
+  @javax.annotation.Nullable
+  @JsonIgnore
 
-        public MerchantAccountCreate primaryBusinessDetails(@javax.annotation.Nullable PrimaryBusinessDetails primaryBusinessDetails) {
-        this.primaryBusinessDetails = JsonNullable.<PrimaryBusinessDetails>of(primaryBusinessDetails);
-        
-        return this;
-        }
+  public PrimaryBusinessDetails getPrimaryBusinessDetails() {
+        return primaryBusinessDetails.orElse(null);
+  }
 
-    /**
-        * Get primaryBusinessDetails
-    * @return primaryBusinessDetails
-    */
-    @javax.annotation.Nullable
-        @JsonIgnore
-    
-    public PrimaryBusinessDetails getPrimaryBusinessDetails() {
-                return primaryBusinessDetails.orElse(null);
-    }
-
-          @JsonProperty(JSON_PROPERTY_PRIMARY_BUSINESS_DETAILS)
+  @JsonProperty(JSON_PROPERTY_PRIMARY_BUSINESS_DETAILS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-        public JsonNullable<PrimaryBusinessDetails> getPrimaryBusinessDetails_JsonNullable() {
-        return primaryBusinessDetails;
-        }
+  public JsonNullable<PrimaryBusinessDetails> getPrimaryBusinessDetails_JsonNullable() {
+    return primaryBusinessDetails;
+  }
+  
+  @JsonProperty(JSON_PROPERTY_PRIMARY_BUSINESS_DETAILS)
+  public void setPrimaryBusinessDetails_JsonNullable(JsonNullable<PrimaryBusinessDetails> primaryBusinessDetails) {
+    this.primaryBusinessDetails = primaryBusinessDetails;
+  }
+
+  public void setPrimaryBusinessDetails(@javax.annotation.Nullable PrimaryBusinessDetails primaryBusinessDetails) {
+    this.primaryBusinessDetails = JsonNullable.<PrimaryBusinessDetails>of(primaryBusinessDetails);
+  }
+
+  public MerchantAccountCreate frmRoutingAlgorithm(@javax.annotation.Nullable Object frmRoutingAlgorithm) {
+    this.frmRoutingAlgorithm = JsonNullable.<Object>of(frmRoutingAlgorithm);
     
-        @JsonProperty(JSON_PROPERTY_PRIMARY_BUSINESS_DETAILS)
-        public void setPrimaryBusinessDetails_JsonNullable(JsonNullable<PrimaryBusinessDetails> primaryBusinessDetails) {
-        this.primaryBusinessDetails = primaryBusinessDetails;
-        }
+    return this;
+  }
 
-          public void setPrimaryBusinessDetails(@javax.annotation.Nullable PrimaryBusinessDetails primaryBusinessDetails) {
-            this.primaryBusinessDetails = JsonNullable.<PrimaryBusinessDetails>of(primaryBusinessDetails);
-        }
+  /**
+   * The frm routing algorithm to be used for routing payments to desired FRM&#39;s
+   * @return frmRoutingAlgorithm
+   */
+  @javax.annotation.Nullable
+  @JsonIgnore
 
-        public MerchantAccountCreate frmRoutingAlgorithm(@javax.annotation.Nullable Object frmRoutingAlgorithm) {
-        this.frmRoutingAlgorithm = JsonNullable.<Object>of(frmRoutingAlgorithm);
-        
-        return this;
-        }
+  public Object getFrmRoutingAlgorithm() {
+        return frmRoutingAlgorithm.orElse(null);
+  }
 
-    /**
-        * The frm routing algorithm to be used for routing payments to desired FRM&#39;s
-    * @return frmRoutingAlgorithm
-    */
-    @javax.annotation.Nullable
-        @JsonIgnore
-    
-    public Object getFrmRoutingAlgorithm() {
-                return frmRoutingAlgorithm.orElse(null);
-    }
-
-          @JsonProperty(JSON_PROPERTY_FRM_ROUTING_ALGORITHM)
+  @JsonProperty(JSON_PROPERTY_FRM_ROUTING_ALGORITHM)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-        public JsonNullable<Object> getFrmRoutingAlgorithm_JsonNullable() {
-        return frmRoutingAlgorithm;
-        }
+  public JsonNullable<Object> getFrmRoutingAlgorithm_JsonNullable() {
+    return frmRoutingAlgorithm;
+  }
+  
+  @JsonProperty(JSON_PROPERTY_FRM_ROUTING_ALGORITHM)
+  public void setFrmRoutingAlgorithm_JsonNullable(JsonNullable<Object> frmRoutingAlgorithm) {
+    this.frmRoutingAlgorithm = frmRoutingAlgorithm;
+  }
+
+  public void setFrmRoutingAlgorithm(@javax.annotation.Nullable Object frmRoutingAlgorithm) {
+    this.frmRoutingAlgorithm = JsonNullable.<Object>of(frmRoutingAlgorithm);
+  }
+
+  public MerchantAccountCreate organizationId(@javax.annotation.Nullable String organizationId) {
+    this.organizationId = JsonNullable.<String>of(organizationId);
     
-        @JsonProperty(JSON_PROPERTY_FRM_ROUTING_ALGORITHM)
-        public void setFrmRoutingAlgorithm_JsonNullable(JsonNullable<Object> frmRoutingAlgorithm) {
-        this.frmRoutingAlgorithm = frmRoutingAlgorithm;
-        }
+    return this;
+  }
 
-          public void setFrmRoutingAlgorithm(@javax.annotation.Nullable Object frmRoutingAlgorithm) {
-            this.frmRoutingAlgorithm = JsonNullable.<Object>of(frmRoutingAlgorithm);
-        }
+  /**
+   * The id of the organization to which the merchant belongs to, if not passed an organization is created
+   * @return organizationId
+   */
+  @javax.annotation.Nullable
+  @JsonIgnore
 
-        public MerchantAccountCreate organizationId(@javax.annotation.Nullable String organizationId) {
-        this.organizationId = JsonNullable.<String>of(organizationId);
-        
-        return this;
-        }
+  public String getOrganizationId() {
+        return organizationId.orElse(null);
+  }
 
-    /**
-        * The id of the organization to which the merchant belongs to, if not passed an organization is created
-    * @return organizationId
-    */
-    @javax.annotation.Nullable
-        @JsonIgnore
-    
-    public String getOrganizationId() {
-                return organizationId.orElse(null);
-    }
-
-          @JsonProperty(JSON_PROPERTY_ORGANIZATION_ID)
+  @JsonProperty(JSON_PROPERTY_ORGANIZATION_ID)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-        public JsonNullable<String> getOrganizationId_JsonNullable() {
-        return organizationId;
-        }
+  public JsonNullable<String> getOrganizationId_JsonNullable() {
+    return organizationId;
+  }
+  
+  @JsonProperty(JSON_PROPERTY_ORGANIZATION_ID)
+  public void setOrganizationId_JsonNullable(JsonNullable<String> organizationId) {
+    this.organizationId = organizationId;
+  }
+
+  public void setOrganizationId(@javax.annotation.Nullable String organizationId) {
+    this.organizationId = JsonNullable.<String>of(organizationId);
+  }
+
+  public MerchantAccountCreate pmCollectLinkConfig(@javax.annotation.Nullable BusinessCollectLinkConfig pmCollectLinkConfig) {
+    this.pmCollectLinkConfig = JsonNullable.<BusinessCollectLinkConfig>of(pmCollectLinkConfig);
     
-        @JsonProperty(JSON_PROPERTY_ORGANIZATION_ID)
-        public void setOrganizationId_JsonNullable(JsonNullable<String> organizationId) {
-        this.organizationId = organizationId;
-        }
+    return this;
+  }
 
-          public void setOrganizationId(@javax.annotation.Nullable String organizationId) {
-            this.organizationId = JsonNullable.<String>of(organizationId);
-        }
+  /**
+   * Get pmCollectLinkConfig
+   * @return pmCollectLinkConfig
+   */
+  @javax.annotation.Nullable
+  @JsonIgnore
 
-        public MerchantAccountCreate pmCollectLinkConfig(@javax.annotation.Nullable BusinessCollectLinkConfig pmCollectLinkConfig) {
-        this.pmCollectLinkConfig = JsonNullable.<BusinessCollectLinkConfig>of(pmCollectLinkConfig);
-        
-        return this;
-        }
+  public BusinessCollectLinkConfig getPmCollectLinkConfig() {
+        return pmCollectLinkConfig.orElse(null);
+  }
 
-    /**
-        * Get pmCollectLinkConfig
-    * @return pmCollectLinkConfig
-    */
-    @javax.annotation.Nullable
-        @JsonIgnore
-    
-    public BusinessCollectLinkConfig getPmCollectLinkConfig() {
-                return pmCollectLinkConfig.orElse(null);
-    }
-
-          @JsonProperty(JSON_PROPERTY_PM_COLLECT_LINK_CONFIG)
+  @JsonProperty(JSON_PROPERTY_PM_COLLECT_LINK_CONFIG)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-        public JsonNullable<BusinessCollectLinkConfig> getPmCollectLinkConfig_JsonNullable() {
-        return pmCollectLinkConfig;
-        }
-    
-        @JsonProperty(JSON_PROPERTY_PM_COLLECT_LINK_CONFIG)
-        public void setPmCollectLinkConfig_JsonNullable(JsonNullable<BusinessCollectLinkConfig> pmCollectLinkConfig) {
-        this.pmCollectLinkConfig = pmCollectLinkConfig;
-        }
+  public JsonNullable<BusinessCollectLinkConfig> getPmCollectLinkConfig_JsonNullable() {
+    return pmCollectLinkConfig;
+  }
+  
+  @JsonProperty(JSON_PROPERTY_PM_COLLECT_LINK_CONFIG)
+  public void setPmCollectLinkConfig_JsonNullable(JsonNullable<BusinessCollectLinkConfig> pmCollectLinkConfig) {
+    this.pmCollectLinkConfig = pmCollectLinkConfig;
+  }
 
-          public void setPmCollectLinkConfig(@javax.annotation.Nullable BusinessCollectLinkConfig pmCollectLinkConfig) {
-            this.pmCollectLinkConfig = JsonNullable.<BusinessCollectLinkConfig>of(pmCollectLinkConfig);
-        }
+  public void setPmCollectLinkConfig(@javax.annotation.Nullable BusinessCollectLinkConfig pmCollectLinkConfig) {
+    this.pmCollectLinkConfig = JsonNullable.<BusinessCollectLinkConfig>of(pmCollectLinkConfig);
+  }
 
-@Override
-public boolean equals(Object o) {
+  @Override
+  public boolean equals(Object o) {
     if (this == o) {
-    return true;
+      return true;
     }
     if (o == null || getClass() != o.getClass()) {
-    return false;
+      return false;
     }
-        MerchantAccountCreate merchantAccountCreate = (MerchantAccountCreate) o;
-        return Objects.equals(this.merchantId, merchantAccountCreate.merchantId) &&
+    MerchantAccountCreate merchantAccountCreate = (MerchantAccountCreate) o;
+    return Objects.equals(this.merchantId, merchantAccountCreate.merchantId) &&
         equalsNullable(this.merchantName, merchantAccountCreate.merchantName) &&
         equalsNullable(this.merchantDetails, merchantAccountCreate.merchantDetails) &&
         equalsNullable(this.returnUrl, merchantAccountCreate.returnUrl) &&
@@ -748,250 +748,250 @@ public boolean equals(Object o) {
         equalsNullable(this.frmRoutingAlgorithm, merchantAccountCreate.frmRoutingAlgorithm) &&
         equalsNullable(this.organizationId, merchantAccountCreate.organizationId) &&
         equalsNullable(this.pmCollectLinkConfig, merchantAccountCreate.pmCollectLinkConfig);
-}
+  }
 
-    private static <T> boolean equalsNullable(JsonNullable<T> a, JsonNullable<T> b) {
-        return a == b || (a != null && b != null && a.isPresent() && b.isPresent() && Objects.deepEquals(a.get(), b.get()));
-        }
+  private static <T> boolean equalsNullable(JsonNullable<T> a, JsonNullable<T> b) {
+    return a == b || (a != null && b != null && a.isPresent() && b.isPresent() && Objects.deepEquals(a.get(), b.get()));
+  }
 
-    @Override
-    public int hashCode() {
-        return Objects.hash(merchantId, hashCodeNullable(merchantName), hashCodeNullable(merchantDetails), hashCodeNullable(returnUrl), hashCodeNullable(webhookDetails), hashCodeNullable(payoutRoutingAlgorithm), hashCodeNullable(subMerchantsEnabled), hashCodeNullable(parentMerchantId), hashCodeNullable(enablePaymentResponseHash), hashCodeNullable(paymentResponseHashKey), hashCodeNullable(redirectToMerchantWithHttpPost), hashCodeNullable(metadata), hashCodeNullable(publishableKey), hashCodeNullable(lockerId), hashCodeNullable(primaryBusinessDetails), hashCodeNullable(frmRoutingAlgorithm), hashCodeNullable(organizationId), hashCodeNullable(pmCollectLinkConfig));
+  @Override
+  public int hashCode() {
+    return Objects.hash(merchantId, hashCodeNullable(merchantName), hashCodeNullable(merchantDetails), hashCodeNullable(returnUrl), hashCodeNullable(webhookDetails), hashCodeNullable(payoutRoutingAlgorithm), hashCodeNullable(subMerchantsEnabled), hashCodeNullable(parentMerchantId), hashCodeNullable(enablePaymentResponseHash), hashCodeNullable(paymentResponseHashKey), hashCodeNullable(redirectToMerchantWithHttpPost), hashCodeNullable(metadata), hashCodeNullable(publishableKey), hashCodeNullable(lockerId), hashCodeNullable(primaryBusinessDetails), hashCodeNullable(frmRoutingAlgorithm), hashCodeNullable(organizationId), hashCodeNullable(pmCollectLinkConfig));
+  }
+
+  private static <T> int hashCodeNullable(JsonNullable<T> a) {
+    if (a == null) {
+      return 1;
     }
+    return a.isPresent() ? Arrays.deepHashCode(new Object[]{a.get()}) : 31;
+  }
 
-        private static <T> int hashCodeNullable(JsonNullable<T> a) {
-        if (a == null) {
-        return 1;
-        }
-        return a.isPresent() ? Arrays.deepHashCode(new Object[]{a.get()}) : 31;
-        }
-
-    @Override
-    public String toString() {
+  @Override
+  public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class MerchantAccountCreate {\n");
-        sb.append("    merchantId: ").append(toIndentedString(merchantId)).append("\n");
-        sb.append("    merchantName: ").append(toIndentedString(merchantName)).append("\n");
-        sb.append("    merchantDetails: ").append(toIndentedString(merchantDetails)).append("\n");
-        sb.append("    returnUrl: ").append(toIndentedString(returnUrl)).append("\n");
-        sb.append("    webhookDetails: ").append(toIndentedString(webhookDetails)).append("\n");
-        sb.append("    payoutRoutingAlgorithm: ").append(toIndentedString(payoutRoutingAlgorithm)).append("\n");
-        sb.append("    subMerchantsEnabled: ").append(toIndentedString(subMerchantsEnabled)).append("\n");
-        sb.append("    parentMerchantId: ").append(toIndentedString(parentMerchantId)).append("\n");
-        sb.append("    enablePaymentResponseHash: ").append(toIndentedString(enablePaymentResponseHash)).append("\n");
-        sb.append("    paymentResponseHashKey: ").append(toIndentedString(paymentResponseHashKey)).append("\n");
-        sb.append("    redirectToMerchantWithHttpPost: ").append(toIndentedString(redirectToMerchantWithHttpPost)).append("\n");
-        sb.append("    metadata: ").append(toIndentedString(metadata)).append("\n");
-        sb.append("    publishableKey: ").append(toIndentedString(publishableKey)).append("\n");
-        sb.append("    lockerId: ").append(toIndentedString(lockerId)).append("\n");
-        sb.append("    primaryBusinessDetails: ").append(toIndentedString(primaryBusinessDetails)).append("\n");
-        sb.append("    frmRoutingAlgorithm: ").append(toIndentedString(frmRoutingAlgorithm)).append("\n");
-        sb.append("    organizationId: ").append(toIndentedString(organizationId)).append("\n");
-        sb.append("    pmCollectLinkConfig: ").append(toIndentedString(pmCollectLinkConfig)).append("\n");
+    sb.append("    merchantId: ").append(toIndentedString(merchantId)).append("\n");
+    sb.append("    merchantName: ").append(toIndentedString(merchantName)).append("\n");
+    sb.append("    merchantDetails: ").append(toIndentedString(merchantDetails)).append("\n");
+    sb.append("    returnUrl: ").append(toIndentedString(returnUrl)).append("\n");
+    sb.append("    webhookDetails: ").append(toIndentedString(webhookDetails)).append("\n");
+    sb.append("    payoutRoutingAlgorithm: ").append(toIndentedString(payoutRoutingAlgorithm)).append("\n");
+    sb.append("    subMerchantsEnabled: ").append(toIndentedString(subMerchantsEnabled)).append("\n");
+    sb.append("    parentMerchantId: ").append(toIndentedString(parentMerchantId)).append("\n");
+    sb.append("    enablePaymentResponseHash: ").append(toIndentedString(enablePaymentResponseHash)).append("\n");
+    sb.append("    paymentResponseHashKey: ").append(toIndentedString(paymentResponseHashKey)).append("\n");
+    sb.append("    redirectToMerchantWithHttpPost: ").append(toIndentedString(redirectToMerchantWithHttpPost)).append("\n");
+    sb.append("    metadata: ").append(toIndentedString(metadata)).append("\n");
+    sb.append("    publishableKey: ").append(toIndentedString(publishableKey)).append("\n");
+    sb.append("    lockerId: ").append(toIndentedString(lockerId)).append("\n");
+    sb.append("    primaryBusinessDetails: ").append(toIndentedString(primaryBusinessDetails)).append("\n");
+    sb.append("    frmRoutingAlgorithm: ").append(toIndentedString(frmRoutingAlgorithm)).append("\n");
+    sb.append("    organizationId: ").append(toIndentedString(organizationId)).append("\n");
+    sb.append("    pmCollectLinkConfig: ").append(toIndentedString(pmCollectLinkConfig)).append("\n");
     sb.append("}");
     return sb.toString();
-    }
+  }
 
-    /**
-    * Convert the given object to string with each line indented by 4 spaces
-    * (except the first line).
-    */
-    private String toIndentedString(Object o) {
+  /**
+   * Convert the given object to string with each line indented by 4 spaces
+   * (except the first line).
+   */
+  private String toIndentedString(Object o) {
     if (o == null) {
-    return "null";
+      return "null";
     }
     return o.toString().replace("\n", "\n    ");
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @return URL query string
+   */
+  public String toUrlQueryString() {
+    return toUrlQueryString(null);
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @param prefix prefix of the query string
+   * @return URL query string
+   */
+  public String toUrlQueryString(String prefix) {
+    String suffix = "";
+    String containerSuffix = "";
+    String containerPrefix = "";
+    if (prefix == null) {
+      // style=form, explode=true, e.g. /pet?name=cat&type=manx
+      prefix = "";
+    } else {
+      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+      prefix = prefix + "[";
+      suffix = "]";
+      containerSuffix = "]";
+      containerPrefix = "[";
     }
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @return URL query string
-        */
-        public String toUrlQueryString() {
-        return toUrlQueryString(null);
-        }
+    StringJoiner joiner = new StringJoiner("&");
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @param prefix prefix of the query string
-        * @return URL query string
-        */
-        public String toUrlQueryString(String prefix) {
-        String suffix = "";
-        String containerSuffix = "";
-        String containerPrefix = "";
-        if (prefix == null) {
-        // style=form, explode=true, e.g. /pet?name=cat&type=manx
-        prefix = "";
-        } else {
-        // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
-        prefix = prefix + "[";
-        suffix = "]";
-        containerSuffix = "]";
-        containerPrefix = "[";
-        }
-
-        StringJoiner joiner = new StringJoiner("&");
-
-            // add `merchant_id` to the URL query string
-                        if (getMerchantId() != null) {
-                        try {
-                        joiner.add(String.format("%smerchant_id%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getMerchantId()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-            // add `merchant_name` to the URL query string
-                        if (getMerchantName() != null) {
-                        try {
-                        joiner.add(String.format("%smerchant_name%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getMerchantName()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-            // add `merchant_details` to the URL query string
-                            if (getMerchantDetails() != null) {
-                            joiner.add(getMerchantDetails().toUrlQueryString(prefix + "merchant_details" + suffix));
-                            }
-
-            // add `return_url` to the URL query string
-                        if (getReturnUrl() != null) {
-                        try {
-                        joiner.add(String.format("%sreturn_url%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getReturnUrl()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-            // add `webhook_details` to the URL query string
-                            if (getWebhookDetails() != null) {
-                            joiner.add(getWebhookDetails().toUrlQueryString(prefix + "webhook_details" + suffix));
-                            }
-
-            // add `payout_routing_algorithm` to the URL query string
-                            if (getPayoutRoutingAlgorithm() != null) {
-                            joiner.add(getPayoutRoutingAlgorithm().toUrlQueryString(prefix + "payout_routing_algorithm" + suffix));
-                            }
-
-            // add `sub_merchants_enabled` to the URL query string
-                        if (getSubMerchantsEnabled() != null) {
-                        try {
-                        joiner.add(String.format("%ssub_merchants_enabled%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getSubMerchantsEnabled()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-            // add `parent_merchant_id` to the URL query string
-                        if (getParentMerchantId() != null) {
-                        try {
-                        joiner.add(String.format("%sparent_merchant_id%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getParentMerchantId()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-            // add `enable_payment_response_hash` to the URL query string
-                        if (getEnablePaymentResponseHash() != null) {
-                        try {
-                        joiner.add(String.format("%senable_payment_response_hash%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getEnablePaymentResponseHash()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-            // add `payment_response_hash_key` to the URL query string
-                        if (getPaymentResponseHashKey() != null) {
-                        try {
-                        joiner.add(String.format("%spayment_response_hash_key%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getPaymentResponseHashKey()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-            // add `redirect_to_merchant_with_http_post` to the URL query string
-                        if (getRedirectToMerchantWithHttpPost() != null) {
-                        try {
-                        joiner.add(String.format("%sredirect_to_merchant_with_http_post%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getRedirectToMerchantWithHttpPost()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-            // add `metadata` to the URL query string
-                        if (getMetadata() != null) {
-                        try {
-                        joiner.add(String.format("%smetadata%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getMetadata()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-            // add `publishable_key` to the URL query string
-                        if (getPublishableKey() != null) {
-                        try {
-                        joiner.add(String.format("%spublishable_key%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getPublishableKey()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-            // add `locker_id` to the URL query string
-                        if (getLockerId() != null) {
-                        try {
-                        joiner.add(String.format("%slocker_id%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getLockerId()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-            // add `primary_business_details` to the URL query string
-                            if (getPrimaryBusinessDetails() != null) {
-                            joiner.add(getPrimaryBusinessDetails().toUrlQueryString(prefix + "primary_business_details" + suffix));
-                            }
-
-            // add `frm_routing_algorithm` to the URL query string
-                        if (getFrmRoutingAlgorithm() != null) {
-                        try {
-                        joiner.add(String.format("%sfrm_routing_algorithm%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getFrmRoutingAlgorithm()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-            // add `organization_id` to the URL query string
-                        if (getOrganizationId() != null) {
-                        try {
-                        joiner.add(String.format("%sorganization_id%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getOrganizationId()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-            // add `pm_collect_link_config` to the URL query string
-                            if (getPmCollectLinkConfig() != null) {
-                            joiner.add(getPmCollectLinkConfig().toUrlQueryString(prefix + "pm_collect_link_config" + suffix));
-                            }
-
-        return joiner.toString();
-        }
-
+    // add `merchant_id` to the URL query string
+    if (getMerchantId() != null) {
+      try {
+        joiner.add(String.format("%smerchant_id%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getMerchantId()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
     }
+
+    // add `merchant_name` to the URL query string
+    if (getMerchantName() != null) {
+      try {
+        joiner.add(String.format("%smerchant_name%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getMerchantName()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `merchant_details` to the URL query string
+    if (getMerchantDetails() != null) {
+      joiner.add(getMerchantDetails().toUrlQueryString(prefix + "merchant_details" + suffix));
+    }
+
+    // add `return_url` to the URL query string
+    if (getReturnUrl() != null) {
+      try {
+        joiner.add(String.format("%sreturn_url%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getReturnUrl()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `webhook_details` to the URL query string
+    if (getWebhookDetails() != null) {
+      joiner.add(getWebhookDetails().toUrlQueryString(prefix + "webhook_details" + suffix));
+    }
+
+    // add `payout_routing_algorithm` to the URL query string
+    if (getPayoutRoutingAlgorithm() != null) {
+      joiner.add(getPayoutRoutingAlgorithm().toUrlQueryString(prefix + "payout_routing_algorithm" + suffix));
+    }
+
+    // add `sub_merchants_enabled` to the URL query string
+    if (getSubMerchantsEnabled() != null) {
+      try {
+        joiner.add(String.format("%ssub_merchants_enabled%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getSubMerchantsEnabled()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `parent_merchant_id` to the URL query string
+    if (getParentMerchantId() != null) {
+      try {
+        joiner.add(String.format("%sparent_merchant_id%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getParentMerchantId()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `enable_payment_response_hash` to the URL query string
+    if (getEnablePaymentResponseHash() != null) {
+      try {
+        joiner.add(String.format("%senable_payment_response_hash%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getEnablePaymentResponseHash()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `payment_response_hash_key` to the URL query string
+    if (getPaymentResponseHashKey() != null) {
+      try {
+        joiner.add(String.format("%spayment_response_hash_key%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getPaymentResponseHashKey()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `redirect_to_merchant_with_http_post` to the URL query string
+    if (getRedirectToMerchantWithHttpPost() != null) {
+      try {
+        joiner.add(String.format("%sredirect_to_merchant_with_http_post%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getRedirectToMerchantWithHttpPost()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `metadata` to the URL query string
+    if (getMetadata() != null) {
+      try {
+        joiner.add(String.format("%smetadata%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getMetadata()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `publishable_key` to the URL query string
+    if (getPublishableKey() != null) {
+      try {
+        joiner.add(String.format("%spublishable_key%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getPublishableKey()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `locker_id` to the URL query string
+    if (getLockerId() != null) {
+      try {
+        joiner.add(String.format("%slocker_id%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getLockerId()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `primary_business_details` to the URL query string
+    if (getPrimaryBusinessDetails() != null) {
+      joiner.add(getPrimaryBusinessDetails().toUrlQueryString(prefix + "primary_business_details" + suffix));
+    }
+
+    // add `frm_routing_algorithm` to the URL query string
+    if (getFrmRoutingAlgorithm() != null) {
+      try {
+        joiner.add(String.format("%sfrm_routing_algorithm%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getFrmRoutingAlgorithm()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `organization_id` to the URL query string
+    if (getOrganizationId() != null) {
+      try {
+        joiner.add(String.format("%sorganization_id%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getOrganizationId()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `pm_collect_link_config` to the URL query string
+    if (getPmCollectLinkConfig() != null) {
+      joiner.add(getPmCollectLinkConfig().toUrlQueryString(prefix + "pm_collect_link_config" + suffix));
+    }
+
+    return joiner.toString();
+  }
+
+}
 

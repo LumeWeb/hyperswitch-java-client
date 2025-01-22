@@ -31,237 +31,237 @@ import java.net.URLEncoder;
 import java.util.StringJoiner;
 
 /**
-* ReceiverDetails
-*/
-    @JsonPropertyOrder({
-        ReceiverDetails.JSON_PROPERTY_AMOUNT_RECEIVED,
-        ReceiverDetails.JSON_PROPERTY_AMOUNT_CHARGED,
-        ReceiverDetails.JSON_PROPERTY_AMOUNT_REMAINING
-    })
+ * ReceiverDetails
+ */
+@JsonPropertyOrder({
+  ReceiverDetails.JSON_PROPERTY_AMOUNT_RECEIVED,
+  ReceiverDetails.JSON_PROPERTY_AMOUNT_CHARGED,
+  ReceiverDetails.JSON_PROPERTY_AMOUNT_REMAINING
+})
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class ReceiverDetails {
-        public static final String JSON_PROPERTY_AMOUNT_RECEIVED = "amount_received";
-    @javax.annotation.Nonnull
-            private Long amountReceived;
+  public static final String JSON_PROPERTY_AMOUNT_RECEIVED = "amount_received";
+  @javax.annotation.Nonnull
+  private Long amountReceived;
 
-        public static final String JSON_PROPERTY_AMOUNT_CHARGED = "amount_charged";
-    @javax.annotation.Nullable
-            private JsonNullable<Long> amountCharged = JsonNullable.<Long>undefined();
+  public static final String JSON_PROPERTY_AMOUNT_CHARGED = "amount_charged";
+  @javax.annotation.Nullable
+  private JsonNullable<Long> amountCharged = JsonNullable.<Long>undefined();
 
-        public static final String JSON_PROPERTY_AMOUNT_REMAINING = "amount_remaining";
-    @javax.annotation.Nullable
-            private JsonNullable<Long> amountRemaining = JsonNullable.<Long>undefined();
+  public static final String JSON_PROPERTY_AMOUNT_REMAINING = "amount_remaining";
+  @javax.annotation.Nullable
+  private JsonNullable<Long> amountRemaining = JsonNullable.<Long>undefined();
 
-public ReceiverDetails() {
-}
+  public ReceiverDetails() {
+  }
 
-        public ReceiverDetails amountReceived(@javax.annotation.Nonnull Long amountReceived) {
-        
-        this.amountReceived = amountReceived;
-        return this;
-        }
+  public ReceiverDetails amountReceived(@javax.annotation.Nonnull Long amountReceived) {
+    
+    this.amountReceived = amountReceived;
+    return this;
+  }
 
-    /**
-        * The amount received by receiver
-    * @return amountReceived
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_AMOUNT_RECEIVED)
+  /**
+   * The amount received by receiver
+   * @return amountReceived
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_AMOUNT_RECEIVED)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public Long getAmountReceived() {
-        return amountReceived;
-    }
+  public Long getAmountReceived() {
+    return amountReceived;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_AMOUNT_RECEIVED)
+  @JsonProperty(JSON_PROPERTY_AMOUNT_RECEIVED)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setAmountReceived(@javax.annotation.Nonnull Long amountReceived) {
-            this.amountReceived = amountReceived;
-        }
+    this.amountReceived = amountReceived;
+  }
 
-        public ReceiverDetails amountCharged(@javax.annotation.Nullable Long amountCharged) {
-        this.amountCharged = JsonNullable.<Long>of(amountCharged);
-        
-        return this;
-        }
-
-    /**
-        * The amount charged by ACH
-    * @return amountCharged
-    */
-    @javax.annotation.Nullable
-        @JsonIgnore
+  public ReceiverDetails amountCharged(@javax.annotation.Nullable Long amountCharged) {
+    this.amountCharged = JsonNullable.<Long>of(amountCharged);
     
-    public Long getAmountCharged() {
-                return amountCharged.orElse(null);
-    }
+    return this;
+  }
 
-          @JsonProperty(JSON_PROPERTY_AMOUNT_CHARGED)
+  /**
+   * The amount charged by ACH
+   * @return amountCharged
+   */
+  @javax.annotation.Nullable
+  @JsonIgnore
+
+  public Long getAmountCharged() {
+        return amountCharged.orElse(null);
+  }
+
+  @JsonProperty(JSON_PROPERTY_AMOUNT_CHARGED)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-        public JsonNullable<Long> getAmountCharged_JsonNullable() {
-        return amountCharged;
-        }
+  public JsonNullable<Long> getAmountCharged_JsonNullable() {
+    return amountCharged;
+  }
+  
+  @JsonProperty(JSON_PROPERTY_AMOUNT_CHARGED)
+  public void setAmountCharged_JsonNullable(JsonNullable<Long> amountCharged) {
+    this.amountCharged = amountCharged;
+  }
+
+  public void setAmountCharged(@javax.annotation.Nullable Long amountCharged) {
+    this.amountCharged = JsonNullable.<Long>of(amountCharged);
+  }
+
+  public ReceiverDetails amountRemaining(@javax.annotation.Nullable Long amountRemaining) {
+    this.amountRemaining = JsonNullable.<Long>of(amountRemaining);
     
-        @JsonProperty(JSON_PROPERTY_AMOUNT_CHARGED)
-        public void setAmountCharged_JsonNullable(JsonNullable<Long> amountCharged) {
-        this.amountCharged = amountCharged;
-        }
+    return this;
+  }
 
-          public void setAmountCharged(@javax.annotation.Nullable Long amountCharged) {
-            this.amountCharged = JsonNullable.<Long>of(amountCharged);
-        }
+  /**
+   * The amount remaining to be sent via ACH
+   * @return amountRemaining
+   */
+  @javax.annotation.Nullable
+  @JsonIgnore
 
-        public ReceiverDetails amountRemaining(@javax.annotation.Nullable Long amountRemaining) {
-        this.amountRemaining = JsonNullable.<Long>of(amountRemaining);
-        
-        return this;
-        }
+  public Long getAmountRemaining() {
+        return amountRemaining.orElse(null);
+  }
 
-    /**
-        * The amount remaining to be sent via ACH
-    * @return amountRemaining
-    */
-    @javax.annotation.Nullable
-        @JsonIgnore
-    
-    public Long getAmountRemaining() {
-                return amountRemaining.orElse(null);
-    }
-
-          @JsonProperty(JSON_PROPERTY_AMOUNT_REMAINING)
+  @JsonProperty(JSON_PROPERTY_AMOUNT_REMAINING)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-        public JsonNullable<Long> getAmountRemaining_JsonNullable() {
-        return amountRemaining;
-        }
-    
-        @JsonProperty(JSON_PROPERTY_AMOUNT_REMAINING)
-        public void setAmountRemaining_JsonNullable(JsonNullable<Long> amountRemaining) {
-        this.amountRemaining = amountRemaining;
-        }
+  public JsonNullable<Long> getAmountRemaining_JsonNullable() {
+    return amountRemaining;
+  }
+  
+  @JsonProperty(JSON_PROPERTY_AMOUNT_REMAINING)
+  public void setAmountRemaining_JsonNullable(JsonNullable<Long> amountRemaining) {
+    this.amountRemaining = amountRemaining;
+  }
 
-          public void setAmountRemaining(@javax.annotation.Nullable Long amountRemaining) {
-            this.amountRemaining = JsonNullable.<Long>of(amountRemaining);
-        }
+  public void setAmountRemaining(@javax.annotation.Nullable Long amountRemaining) {
+    this.amountRemaining = JsonNullable.<Long>of(amountRemaining);
+  }
 
-@Override
-public boolean equals(Object o) {
+  @Override
+  public boolean equals(Object o) {
     if (this == o) {
-    return true;
+      return true;
     }
     if (o == null || getClass() != o.getClass()) {
-    return false;
+      return false;
     }
-        ReceiverDetails receiverDetails = (ReceiverDetails) o;
-        return Objects.equals(this.amountReceived, receiverDetails.amountReceived) &&
+    ReceiverDetails receiverDetails = (ReceiverDetails) o;
+    return Objects.equals(this.amountReceived, receiverDetails.amountReceived) &&
         equalsNullable(this.amountCharged, receiverDetails.amountCharged) &&
         equalsNullable(this.amountRemaining, receiverDetails.amountRemaining);
-}
+  }
 
-    private static <T> boolean equalsNullable(JsonNullable<T> a, JsonNullable<T> b) {
-        return a == b || (a != null && b != null && a.isPresent() && b.isPresent() && Objects.deepEquals(a.get(), b.get()));
-        }
+  private static <T> boolean equalsNullable(JsonNullable<T> a, JsonNullable<T> b) {
+    return a == b || (a != null && b != null && a.isPresent() && b.isPresent() && Objects.deepEquals(a.get(), b.get()));
+  }
 
-    @Override
-    public int hashCode() {
-        return Objects.hash(amountReceived, hashCodeNullable(amountCharged), hashCodeNullable(amountRemaining));
+  @Override
+  public int hashCode() {
+    return Objects.hash(amountReceived, hashCodeNullable(amountCharged), hashCodeNullable(amountRemaining));
+  }
+
+  private static <T> int hashCodeNullable(JsonNullable<T> a) {
+    if (a == null) {
+      return 1;
     }
+    return a.isPresent() ? Arrays.deepHashCode(new Object[]{a.get()}) : 31;
+  }
 
-        private static <T> int hashCodeNullable(JsonNullable<T> a) {
-        if (a == null) {
-        return 1;
-        }
-        return a.isPresent() ? Arrays.deepHashCode(new Object[]{a.get()}) : 31;
-        }
-
-    @Override
-    public String toString() {
+  @Override
+  public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class ReceiverDetails {\n");
-        sb.append("    amountReceived: ").append(toIndentedString(amountReceived)).append("\n");
-        sb.append("    amountCharged: ").append(toIndentedString(amountCharged)).append("\n");
-        sb.append("    amountRemaining: ").append(toIndentedString(amountRemaining)).append("\n");
+    sb.append("    amountReceived: ").append(toIndentedString(amountReceived)).append("\n");
+    sb.append("    amountCharged: ").append(toIndentedString(amountCharged)).append("\n");
+    sb.append("    amountRemaining: ").append(toIndentedString(amountRemaining)).append("\n");
     sb.append("}");
     return sb.toString();
-    }
+  }
 
-    /**
-    * Convert the given object to string with each line indented by 4 spaces
-    * (except the first line).
-    */
-    private String toIndentedString(Object o) {
+  /**
+   * Convert the given object to string with each line indented by 4 spaces
+   * (except the first line).
+   */
+  private String toIndentedString(Object o) {
     if (o == null) {
-    return "null";
+      return "null";
     }
     return o.toString().replace("\n", "\n    ");
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @return URL query string
+   */
+  public String toUrlQueryString() {
+    return toUrlQueryString(null);
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @param prefix prefix of the query string
+   * @return URL query string
+   */
+  public String toUrlQueryString(String prefix) {
+    String suffix = "";
+    String containerSuffix = "";
+    String containerPrefix = "";
+    if (prefix == null) {
+      // style=form, explode=true, e.g. /pet?name=cat&type=manx
+      prefix = "";
+    } else {
+      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+      prefix = prefix + "[";
+      suffix = "]";
+      containerSuffix = "]";
+      containerPrefix = "[";
     }
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @return URL query string
-        */
-        public String toUrlQueryString() {
-        return toUrlQueryString(null);
-        }
+    StringJoiner joiner = new StringJoiner("&");
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @param prefix prefix of the query string
-        * @return URL query string
-        */
-        public String toUrlQueryString(String prefix) {
-        String suffix = "";
-        String containerSuffix = "";
-        String containerPrefix = "";
-        if (prefix == null) {
-        // style=form, explode=true, e.g. /pet?name=cat&type=manx
-        prefix = "";
-        } else {
-        // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
-        prefix = prefix + "[";
-        suffix = "]";
-        containerSuffix = "]";
-        containerPrefix = "[";
-        }
-
-        StringJoiner joiner = new StringJoiner("&");
-
-            // add `amount_received` to the URL query string
-                        if (getAmountReceived() != null) {
-                        try {
-                        joiner.add(String.format("%samount_received%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getAmountReceived()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-            // add `amount_charged` to the URL query string
-                        if (getAmountCharged() != null) {
-                        try {
-                        joiner.add(String.format("%samount_charged%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getAmountCharged()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-            // add `amount_remaining` to the URL query string
-                        if (getAmountRemaining() != null) {
-                        try {
-                        joiner.add(String.format("%samount_remaining%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getAmountRemaining()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-        return joiner.toString();
-        }
-
+    // add `amount_received` to the URL query string
+    if (getAmountReceived() != null) {
+      try {
+        joiner.add(String.format("%samount_received%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getAmountReceived()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
     }
+
+    // add `amount_charged` to the URL query string
+    if (getAmountCharged() != null) {
+      try {
+        joiner.add(String.format("%samount_charged%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getAmountCharged()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `amount_remaining` to the URL query string
+    if (getAmountRemaining() != null) {
+      try {
+        joiner.add(String.format("%samount_remaining%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getAmountRemaining()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    return joiner.toString();
+  }
+
+}
 

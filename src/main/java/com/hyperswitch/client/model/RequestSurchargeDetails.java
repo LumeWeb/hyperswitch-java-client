@@ -31,187 +31,187 @@ import java.net.URLEncoder;
 import java.util.StringJoiner;
 
 /**
-* Details of surcharge applied on this payment, if applicable
-*/
-    @JsonPropertyOrder({
-        RequestSurchargeDetails.JSON_PROPERTY_SURCHARGE_AMOUNT,
-        RequestSurchargeDetails.JSON_PROPERTY_TAX_AMOUNT
-    })
+ * Details of surcharge applied on this payment, if applicable
+ */
+@JsonPropertyOrder({
+  RequestSurchargeDetails.JSON_PROPERTY_SURCHARGE_AMOUNT,
+  RequestSurchargeDetails.JSON_PROPERTY_TAX_AMOUNT
+})
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class RequestSurchargeDetails {
-        public static final String JSON_PROPERTY_SURCHARGE_AMOUNT = "surcharge_amount";
-    @javax.annotation.Nonnull
-            private Long surchargeAmount;
+  public static final String JSON_PROPERTY_SURCHARGE_AMOUNT = "surcharge_amount";
+  @javax.annotation.Nonnull
+  private Long surchargeAmount;
 
-        public static final String JSON_PROPERTY_TAX_AMOUNT = "tax_amount";
-    @javax.annotation.Nullable
-            private JsonNullable<Long> taxAmount = JsonNullable.<Long>undefined();
+  public static final String JSON_PROPERTY_TAX_AMOUNT = "tax_amount";
+  @javax.annotation.Nullable
+  private JsonNullable<Long> taxAmount = JsonNullable.<Long>undefined();
 
-public RequestSurchargeDetails() {
-}
+  public RequestSurchargeDetails() {
+  }
 
-        public RequestSurchargeDetails surchargeAmount(@javax.annotation.Nonnull Long surchargeAmount) {
-        
-        this.surchargeAmount = surchargeAmount;
-        return this;
-        }
+  public RequestSurchargeDetails surchargeAmount(@javax.annotation.Nonnull Long surchargeAmount) {
+    
+    this.surchargeAmount = surchargeAmount;
+    return this;
+  }
 
-    /**
-        * Get surchargeAmount
-    * @return surchargeAmount
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_SURCHARGE_AMOUNT)
+  /**
+   * Get surchargeAmount
+   * @return surchargeAmount
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_SURCHARGE_AMOUNT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public Long getSurchargeAmount() {
-        return surchargeAmount;
-    }
+  public Long getSurchargeAmount() {
+    return surchargeAmount;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_SURCHARGE_AMOUNT)
+  @JsonProperty(JSON_PROPERTY_SURCHARGE_AMOUNT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setSurchargeAmount(@javax.annotation.Nonnull Long surchargeAmount) {
-            this.surchargeAmount = surchargeAmount;
-        }
+    this.surchargeAmount = surchargeAmount;
+  }
 
-        public RequestSurchargeDetails taxAmount(@javax.annotation.Nullable Long taxAmount) {
-        this.taxAmount = JsonNullable.<Long>of(taxAmount);
-        
-        return this;
-        }
-
-    /**
-        * This Unit struct represents MinorUnit in which core amount works
-    * @return taxAmount
-    */
-    @javax.annotation.Nullable
-        @JsonIgnore
+  public RequestSurchargeDetails taxAmount(@javax.annotation.Nullable Long taxAmount) {
+    this.taxAmount = JsonNullable.<Long>of(taxAmount);
     
-    public Long getTaxAmount() {
-                return taxAmount.orElse(null);
-    }
+    return this;
+  }
 
-          @JsonProperty(JSON_PROPERTY_TAX_AMOUNT)
+  /**
+   * This Unit struct represents MinorUnit in which core amount works
+   * @return taxAmount
+   */
+  @javax.annotation.Nullable
+  @JsonIgnore
+
+  public Long getTaxAmount() {
+        return taxAmount.orElse(null);
+  }
+
+  @JsonProperty(JSON_PROPERTY_TAX_AMOUNT)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-        public JsonNullable<Long> getTaxAmount_JsonNullable() {
-        return taxAmount;
-        }
-    
-        @JsonProperty(JSON_PROPERTY_TAX_AMOUNT)
-        public void setTaxAmount_JsonNullable(JsonNullable<Long> taxAmount) {
-        this.taxAmount = taxAmount;
-        }
+  public JsonNullable<Long> getTaxAmount_JsonNullable() {
+    return taxAmount;
+  }
+  
+  @JsonProperty(JSON_PROPERTY_TAX_AMOUNT)
+  public void setTaxAmount_JsonNullable(JsonNullable<Long> taxAmount) {
+    this.taxAmount = taxAmount;
+  }
 
-          public void setTaxAmount(@javax.annotation.Nullable Long taxAmount) {
-            this.taxAmount = JsonNullable.<Long>of(taxAmount);
-        }
+  public void setTaxAmount(@javax.annotation.Nullable Long taxAmount) {
+    this.taxAmount = JsonNullable.<Long>of(taxAmount);
+  }
 
-@Override
-public boolean equals(Object o) {
+  @Override
+  public boolean equals(Object o) {
     if (this == o) {
-    return true;
+      return true;
     }
     if (o == null || getClass() != o.getClass()) {
-    return false;
+      return false;
     }
-        RequestSurchargeDetails requestSurchargeDetails = (RequestSurchargeDetails) o;
-        return Objects.equals(this.surchargeAmount, requestSurchargeDetails.surchargeAmount) &&
+    RequestSurchargeDetails requestSurchargeDetails = (RequestSurchargeDetails) o;
+    return Objects.equals(this.surchargeAmount, requestSurchargeDetails.surchargeAmount) &&
         equalsNullable(this.taxAmount, requestSurchargeDetails.taxAmount);
-}
+  }
 
-    private static <T> boolean equalsNullable(JsonNullable<T> a, JsonNullable<T> b) {
-        return a == b || (a != null && b != null && a.isPresent() && b.isPresent() && Objects.deepEquals(a.get(), b.get()));
-        }
+  private static <T> boolean equalsNullable(JsonNullable<T> a, JsonNullable<T> b) {
+    return a == b || (a != null && b != null && a.isPresent() && b.isPresent() && Objects.deepEquals(a.get(), b.get()));
+  }
 
-    @Override
-    public int hashCode() {
-        return Objects.hash(surchargeAmount, hashCodeNullable(taxAmount));
+  @Override
+  public int hashCode() {
+    return Objects.hash(surchargeAmount, hashCodeNullable(taxAmount));
+  }
+
+  private static <T> int hashCodeNullable(JsonNullable<T> a) {
+    if (a == null) {
+      return 1;
     }
+    return a.isPresent() ? Arrays.deepHashCode(new Object[]{a.get()}) : 31;
+  }
 
-        private static <T> int hashCodeNullable(JsonNullable<T> a) {
-        if (a == null) {
-        return 1;
-        }
-        return a.isPresent() ? Arrays.deepHashCode(new Object[]{a.get()}) : 31;
-        }
-
-    @Override
-    public String toString() {
+  @Override
+  public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class RequestSurchargeDetails {\n");
-        sb.append("    surchargeAmount: ").append(toIndentedString(surchargeAmount)).append("\n");
-        sb.append("    taxAmount: ").append(toIndentedString(taxAmount)).append("\n");
+    sb.append("    surchargeAmount: ").append(toIndentedString(surchargeAmount)).append("\n");
+    sb.append("    taxAmount: ").append(toIndentedString(taxAmount)).append("\n");
     sb.append("}");
     return sb.toString();
-    }
+  }
 
-    /**
-    * Convert the given object to string with each line indented by 4 spaces
-    * (except the first line).
-    */
-    private String toIndentedString(Object o) {
+  /**
+   * Convert the given object to string with each line indented by 4 spaces
+   * (except the first line).
+   */
+  private String toIndentedString(Object o) {
     if (o == null) {
-    return "null";
+      return "null";
     }
     return o.toString().replace("\n", "\n    ");
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @return URL query string
+   */
+  public String toUrlQueryString() {
+    return toUrlQueryString(null);
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @param prefix prefix of the query string
+   * @return URL query string
+   */
+  public String toUrlQueryString(String prefix) {
+    String suffix = "";
+    String containerSuffix = "";
+    String containerPrefix = "";
+    if (prefix == null) {
+      // style=form, explode=true, e.g. /pet?name=cat&type=manx
+      prefix = "";
+    } else {
+      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+      prefix = prefix + "[";
+      suffix = "]";
+      containerSuffix = "]";
+      containerPrefix = "[";
     }
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @return URL query string
-        */
-        public String toUrlQueryString() {
-        return toUrlQueryString(null);
-        }
+    StringJoiner joiner = new StringJoiner("&");
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @param prefix prefix of the query string
-        * @return URL query string
-        */
-        public String toUrlQueryString(String prefix) {
-        String suffix = "";
-        String containerSuffix = "";
-        String containerPrefix = "";
-        if (prefix == null) {
-        // style=form, explode=true, e.g. /pet?name=cat&type=manx
-        prefix = "";
-        } else {
-        // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
-        prefix = prefix + "[";
-        suffix = "]";
-        containerSuffix = "]";
-        containerPrefix = "[";
-        }
-
-        StringJoiner joiner = new StringJoiner("&");
-
-            // add `surcharge_amount` to the URL query string
-                        if (getSurchargeAmount() != null) {
-                        try {
-                        joiner.add(String.format("%ssurcharge_amount%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getSurchargeAmount()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-            // add `tax_amount` to the URL query string
-                        if (getTaxAmount() != null) {
-                        try {
-                        joiner.add(String.format("%stax_amount%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getTaxAmount()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-        return joiner.toString();
-        }
-
+    // add `surcharge_amount` to the URL query string
+    if (getSurchargeAmount() != null) {
+      try {
+        joiner.add(String.format("%ssurcharge_amount%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getSurchargeAmount()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
     }
+
+    // add `tax_amount` to the URL query string
+    if (getTaxAmount() != null) {
+      try {
+        joiner.add(String.format("%stax_amount%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getTaxAmount()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    return joiner.toString();
+  }
+
+}
 

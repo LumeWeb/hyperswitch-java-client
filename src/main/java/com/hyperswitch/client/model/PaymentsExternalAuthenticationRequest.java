@@ -34,266 +34,266 @@ import java.net.URLEncoder;
 import java.util.StringJoiner;
 
 /**
-* PaymentsExternalAuthenticationRequest
-*/
-    @JsonPropertyOrder({
-        PaymentsExternalAuthenticationRequest.JSON_PROPERTY_CLIENT_SECRET,
-        PaymentsExternalAuthenticationRequest.JSON_PROPERTY_SDK_INFORMATION,
-        PaymentsExternalAuthenticationRequest.JSON_PROPERTY_DEVICE_CHANNEL,
-        PaymentsExternalAuthenticationRequest.JSON_PROPERTY_THREEDS_METHOD_COMP_IND
-    })
+ * PaymentsExternalAuthenticationRequest
+ */
+@JsonPropertyOrder({
+  PaymentsExternalAuthenticationRequest.JSON_PROPERTY_CLIENT_SECRET,
+  PaymentsExternalAuthenticationRequest.JSON_PROPERTY_SDK_INFORMATION,
+  PaymentsExternalAuthenticationRequest.JSON_PROPERTY_DEVICE_CHANNEL,
+  PaymentsExternalAuthenticationRequest.JSON_PROPERTY_THREEDS_METHOD_COMP_IND
+})
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class PaymentsExternalAuthenticationRequest {
-        public static final String JSON_PROPERTY_CLIENT_SECRET = "client_secret";
-    @javax.annotation.Nonnull
-            private String clientSecret;
+  public static final String JSON_PROPERTY_CLIENT_SECRET = "client_secret";
+  @javax.annotation.Nonnull
+  private String clientSecret;
 
-        public static final String JSON_PROPERTY_SDK_INFORMATION = "sdk_information";
-    @javax.annotation.Nullable
-            private JsonNullable<SdkInformation> sdkInformation = JsonNullable.<SdkInformation>undefined();
+  public static final String JSON_PROPERTY_SDK_INFORMATION = "sdk_information";
+  @javax.annotation.Nullable
+  private JsonNullable<SdkInformation> sdkInformation = JsonNullable.<SdkInformation>undefined();
 
-        public static final String JSON_PROPERTY_DEVICE_CHANNEL = "device_channel";
-    @javax.annotation.Nonnull
-            private DeviceChannel deviceChannel;
+  public static final String JSON_PROPERTY_DEVICE_CHANNEL = "device_channel";
+  @javax.annotation.Nonnull
+  private DeviceChannel deviceChannel;
 
-        public static final String JSON_PROPERTY_THREEDS_METHOD_COMP_IND = "threeds_method_comp_ind";
-    @javax.annotation.Nonnull
-            private ThreeDsCompletionIndicator threedsMethodCompInd;
+  public static final String JSON_PROPERTY_THREEDS_METHOD_COMP_IND = "threeds_method_comp_ind";
+  @javax.annotation.Nonnull
+  private ThreeDsCompletionIndicator threedsMethodCompInd;
 
-public PaymentsExternalAuthenticationRequest() {
-}
+  public PaymentsExternalAuthenticationRequest() {
+  }
 
-        public PaymentsExternalAuthenticationRequest clientSecret(@javax.annotation.Nonnull String clientSecret) {
-        
-        this.clientSecret = clientSecret;
-        return this;
-        }
+  public PaymentsExternalAuthenticationRequest clientSecret(@javax.annotation.Nonnull String clientSecret) {
+    
+    this.clientSecret = clientSecret;
+    return this;
+  }
 
-    /**
-        * Client Secret
-    * @return clientSecret
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_CLIENT_SECRET)
+  /**
+   * Client Secret
+   * @return clientSecret
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_CLIENT_SECRET)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public String getClientSecret() {
-        return clientSecret;
-    }
+  public String getClientSecret() {
+    return clientSecret;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_CLIENT_SECRET)
+  @JsonProperty(JSON_PROPERTY_CLIENT_SECRET)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setClientSecret(@javax.annotation.Nonnull String clientSecret) {
-            this.clientSecret = clientSecret;
-        }
+    this.clientSecret = clientSecret;
+  }
 
-        public PaymentsExternalAuthenticationRequest sdkInformation(@javax.annotation.Nullable SdkInformation sdkInformation) {
-        this.sdkInformation = JsonNullable.<SdkInformation>of(sdkInformation);
-        
-        return this;
-        }
-
-    /**
-        * Get sdkInformation
-    * @return sdkInformation
-    */
-    @javax.annotation.Nullable
-        @JsonIgnore
+  public PaymentsExternalAuthenticationRequest sdkInformation(@javax.annotation.Nullable SdkInformation sdkInformation) {
+    this.sdkInformation = JsonNullable.<SdkInformation>of(sdkInformation);
     
-    public SdkInformation getSdkInformation() {
-                return sdkInformation.orElse(null);
-    }
+    return this;
+  }
 
-          @JsonProperty(JSON_PROPERTY_SDK_INFORMATION)
+  /**
+   * Get sdkInformation
+   * @return sdkInformation
+   */
+  @javax.annotation.Nullable
+  @JsonIgnore
+
+  public SdkInformation getSdkInformation() {
+        return sdkInformation.orElse(null);
+  }
+
+  @JsonProperty(JSON_PROPERTY_SDK_INFORMATION)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-        public JsonNullable<SdkInformation> getSdkInformation_JsonNullable() {
-        return sdkInformation;
-        }
+  public JsonNullable<SdkInformation> getSdkInformation_JsonNullable() {
+    return sdkInformation;
+  }
+  
+  @JsonProperty(JSON_PROPERTY_SDK_INFORMATION)
+  public void setSdkInformation_JsonNullable(JsonNullable<SdkInformation> sdkInformation) {
+    this.sdkInformation = sdkInformation;
+  }
+
+  public void setSdkInformation(@javax.annotation.Nullable SdkInformation sdkInformation) {
+    this.sdkInformation = JsonNullable.<SdkInformation>of(sdkInformation);
+  }
+
+  public PaymentsExternalAuthenticationRequest deviceChannel(@javax.annotation.Nonnull DeviceChannel deviceChannel) {
     
-        @JsonProperty(JSON_PROPERTY_SDK_INFORMATION)
-        public void setSdkInformation_JsonNullable(JsonNullable<SdkInformation> sdkInformation) {
-        this.sdkInformation = sdkInformation;
-        }
+    this.deviceChannel = deviceChannel;
+    return this;
+  }
 
-          public void setSdkInformation(@javax.annotation.Nullable SdkInformation sdkInformation) {
-            this.sdkInformation = JsonNullable.<SdkInformation>of(sdkInformation);
-        }
-
-        public PaymentsExternalAuthenticationRequest deviceChannel(@javax.annotation.Nonnull DeviceChannel deviceChannel) {
-        
-        this.deviceChannel = deviceChannel;
-        return this;
-        }
-
-    /**
-        * Get deviceChannel
-    * @return deviceChannel
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_DEVICE_CHANNEL)
+  /**
+   * Get deviceChannel
+   * @return deviceChannel
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_DEVICE_CHANNEL)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public DeviceChannel getDeviceChannel() {
-        return deviceChannel;
-    }
+  public DeviceChannel getDeviceChannel() {
+    return deviceChannel;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_DEVICE_CHANNEL)
+  @JsonProperty(JSON_PROPERTY_DEVICE_CHANNEL)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setDeviceChannel(@javax.annotation.Nonnull DeviceChannel deviceChannel) {
-            this.deviceChannel = deviceChannel;
-        }
+    this.deviceChannel = deviceChannel;
+  }
 
-        public PaymentsExternalAuthenticationRequest threedsMethodCompInd(@javax.annotation.Nonnull ThreeDsCompletionIndicator threedsMethodCompInd) {
-        
-        this.threedsMethodCompInd = threedsMethodCompInd;
-        return this;
-        }
+  public PaymentsExternalAuthenticationRequest threedsMethodCompInd(@javax.annotation.Nonnull ThreeDsCompletionIndicator threedsMethodCompInd) {
+    
+    this.threedsMethodCompInd = threedsMethodCompInd;
+    return this;
+  }
 
-    /**
-        * Get threedsMethodCompInd
-    * @return threedsMethodCompInd
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_THREEDS_METHOD_COMP_IND)
+  /**
+   * Get threedsMethodCompInd
+   * @return threedsMethodCompInd
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_THREEDS_METHOD_COMP_IND)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public ThreeDsCompletionIndicator getThreedsMethodCompInd() {
-        return threedsMethodCompInd;
-    }
+  public ThreeDsCompletionIndicator getThreedsMethodCompInd() {
+    return threedsMethodCompInd;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_THREEDS_METHOD_COMP_IND)
+  @JsonProperty(JSON_PROPERTY_THREEDS_METHOD_COMP_IND)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setThreedsMethodCompInd(@javax.annotation.Nonnull ThreeDsCompletionIndicator threedsMethodCompInd) {
-            this.threedsMethodCompInd = threedsMethodCompInd;
-        }
+    this.threedsMethodCompInd = threedsMethodCompInd;
+  }
 
-@Override
-public boolean equals(Object o) {
+  @Override
+  public boolean equals(Object o) {
     if (this == o) {
-    return true;
+      return true;
     }
     if (o == null || getClass() != o.getClass()) {
-    return false;
+      return false;
     }
-        PaymentsExternalAuthenticationRequest paymentsExternalAuthenticationRequest = (PaymentsExternalAuthenticationRequest) o;
-        return Objects.equals(this.clientSecret, paymentsExternalAuthenticationRequest.clientSecret) &&
+    PaymentsExternalAuthenticationRequest paymentsExternalAuthenticationRequest = (PaymentsExternalAuthenticationRequest) o;
+    return Objects.equals(this.clientSecret, paymentsExternalAuthenticationRequest.clientSecret) &&
         equalsNullable(this.sdkInformation, paymentsExternalAuthenticationRequest.sdkInformation) &&
         Objects.equals(this.deviceChannel, paymentsExternalAuthenticationRequest.deviceChannel) &&
         Objects.equals(this.threedsMethodCompInd, paymentsExternalAuthenticationRequest.threedsMethodCompInd);
-}
+  }
 
-    private static <T> boolean equalsNullable(JsonNullable<T> a, JsonNullable<T> b) {
-        return a == b || (a != null && b != null && a.isPresent() && b.isPresent() && Objects.deepEquals(a.get(), b.get()));
-        }
+  private static <T> boolean equalsNullable(JsonNullable<T> a, JsonNullable<T> b) {
+    return a == b || (a != null && b != null && a.isPresent() && b.isPresent() && Objects.deepEquals(a.get(), b.get()));
+  }
 
-    @Override
-    public int hashCode() {
-        return Objects.hash(clientSecret, hashCodeNullable(sdkInformation), deviceChannel, threedsMethodCompInd);
+  @Override
+  public int hashCode() {
+    return Objects.hash(clientSecret, hashCodeNullable(sdkInformation), deviceChannel, threedsMethodCompInd);
+  }
+
+  private static <T> int hashCodeNullable(JsonNullable<T> a) {
+    if (a == null) {
+      return 1;
     }
+    return a.isPresent() ? Arrays.deepHashCode(new Object[]{a.get()}) : 31;
+  }
 
-        private static <T> int hashCodeNullable(JsonNullable<T> a) {
-        if (a == null) {
-        return 1;
-        }
-        return a.isPresent() ? Arrays.deepHashCode(new Object[]{a.get()}) : 31;
-        }
-
-    @Override
-    public String toString() {
+  @Override
+  public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class PaymentsExternalAuthenticationRequest {\n");
-        sb.append("    clientSecret: ").append(toIndentedString(clientSecret)).append("\n");
-        sb.append("    sdkInformation: ").append(toIndentedString(sdkInformation)).append("\n");
-        sb.append("    deviceChannel: ").append(toIndentedString(deviceChannel)).append("\n");
-        sb.append("    threedsMethodCompInd: ").append(toIndentedString(threedsMethodCompInd)).append("\n");
+    sb.append("    clientSecret: ").append(toIndentedString(clientSecret)).append("\n");
+    sb.append("    sdkInformation: ").append(toIndentedString(sdkInformation)).append("\n");
+    sb.append("    deviceChannel: ").append(toIndentedString(deviceChannel)).append("\n");
+    sb.append("    threedsMethodCompInd: ").append(toIndentedString(threedsMethodCompInd)).append("\n");
     sb.append("}");
     return sb.toString();
-    }
+  }
 
-    /**
-    * Convert the given object to string with each line indented by 4 spaces
-    * (except the first line).
-    */
-    private String toIndentedString(Object o) {
+  /**
+   * Convert the given object to string with each line indented by 4 spaces
+   * (except the first line).
+   */
+  private String toIndentedString(Object o) {
     if (o == null) {
-    return "null";
+      return "null";
     }
     return o.toString().replace("\n", "\n    ");
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @return URL query string
+   */
+  public String toUrlQueryString() {
+    return toUrlQueryString(null);
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @param prefix prefix of the query string
+   * @return URL query string
+   */
+  public String toUrlQueryString(String prefix) {
+    String suffix = "";
+    String containerSuffix = "";
+    String containerPrefix = "";
+    if (prefix == null) {
+      // style=form, explode=true, e.g. /pet?name=cat&type=manx
+      prefix = "";
+    } else {
+      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+      prefix = prefix + "[";
+      suffix = "]";
+      containerSuffix = "]";
+      containerPrefix = "[";
     }
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @return URL query string
-        */
-        public String toUrlQueryString() {
-        return toUrlQueryString(null);
-        }
+    StringJoiner joiner = new StringJoiner("&");
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @param prefix prefix of the query string
-        * @return URL query string
-        */
-        public String toUrlQueryString(String prefix) {
-        String suffix = "";
-        String containerSuffix = "";
-        String containerPrefix = "";
-        if (prefix == null) {
-        // style=form, explode=true, e.g. /pet?name=cat&type=manx
-        prefix = "";
-        } else {
-        // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
-        prefix = prefix + "[";
-        suffix = "]";
-        containerSuffix = "]";
-        containerPrefix = "[";
-        }
-
-        StringJoiner joiner = new StringJoiner("&");
-
-            // add `client_secret` to the URL query string
-                        if (getClientSecret() != null) {
-                        try {
-                        joiner.add(String.format("%sclient_secret%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getClientSecret()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-            // add `sdk_information` to the URL query string
-                            if (getSdkInformation() != null) {
-                            joiner.add(getSdkInformation().toUrlQueryString(prefix + "sdk_information" + suffix));
-                            }
-
-            // add `device_channel` to the URL query string
-                            if (getDeviceChannel() != null) {
-                            try {
-                            joiner.add(String.format("%sdevice_channel%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getDeviceChannel()), "UTF-8").replaceAll("\\+", "%20")));
-                            } catch (UnsupportedEncodingException e) {
-                            // Should never happen, UTF-8 is always supported
-                            throw new RuntimeException(e);
-                            }
-                            }
-
-            // add `threeds_method_comp_ind` to the URL query string
-                            if (getThreedsMethodCompInd() != null) {
-                            try {
-                            joiner.add(String.format("%sthreeds_method_comp_ind%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getThreedsMethodCompInd()), "UTF-8").replaceAll("\\+", "%20")));
-                            } catch (UnsupportedEncodingException e) {
-                            // Should never happen, UTF-8 is always supported
-                            throw new RuntimeException(e);
-                            }
-                            }
-
-        return joiner.toString();
-        }
-
+    // add `client_secret` to the URL query string
+    if (getClientSecret() != null) {
+      try {
+        joiner.add(String.format("%sclient_secret%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getClientSecret()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
     }
+
+    // add `sdk_information` to the URL query string
+    if (getSdkInformation() != null) {
+      joiner.add(getSdkInformation().toUrlQueryString(prefix + "sdk_information" + suffix));
+    }
+
+    // add `device_channel` to the URL query string
+    if (getDeviceChannel() != null) {
+      try {
+        joiner.add(String.format("%sdevice_channel%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getDeviceChannel()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `threeds_method_comp_ind` to the URL query string
+    if (getThreedsMethodCompInd() != null) {
+      try {
+        joiner.add(String.format("%sthreeds_method_comp_ind%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getThreedsMethodCompInd()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    return joiner.toString();
+  }
+
+}
 

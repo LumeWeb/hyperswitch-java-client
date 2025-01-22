@@ -28,122 +28,122 @@ import java.net.URLEncoder;
 import java.util.StringJoiner;
 
 /**
-* PaymentMethodDataResponseOneOf2
-*/
-    @JsonPropertyOrder({
-        PaymentMethodDataResponseOneOf2.JSON_PROPERTY_WALLET
-    })
-            @JsonTypeName("PaymentMethodDataResponse_oneOf_2")
+ * PaymentMethodDataResponseOneOf2
+ */
+@JsonPropertyOrder({
+  PaymentMethodDataResponseOneOf2.JSON_PROPERTY_WALLET
+})
+@JsonTypeName("PaymentMethodDataResponse_oneOf_2")
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class PaymentMethodDataResponseOneOf2 {
-        public static final String JSON_PROPERTY_WALLET = "wallet";
-    @javax.annotation.Nonnull
-            private WalletResponse wallet;
+  public static final String JSON_PROPERTY_WALLET = "wallet";
+  @javax.annotation.Nonnull
+  private WalletResponse wallet;
 
-public PaymentMethodDataResponseOneOf2() {
-}
+  public PaymentMethodDataResponseOneOf2() {
+  }
 
-        public PaymentMethodDataResponseOneOf2 wallet(@javax.annotation.Nonnull WalletResponse wallet) {
-        
-        this.wallet = wallet;
-        return this;
-        }
+  public PaymentMethodDataResponseOneOf2 wallet(@javax.annotation.Nonnull WalletResponse wallet) {
+    
+    this.wallet = wallet;
+    return this;
+  }
 
-    /**
-        * Get wallet
-    * @return wallet
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_WALLET)
+  /**
+   * Get wallet
+   * @return wallet
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_WALLET)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public WalletResponse getWallet() {
-        return wallet;
-    }
+  public WalletResponse getWallet() {
+    return wallet;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_WALLET)
+  @JsonProperty(JSON_PROPERTY_WALLET)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setWallet(@javax.annotation.Nonnull WalletResponse wallet) {
-            this.wallet = wallet;
-        }
+    this.wallet = wallet;
+  }
 
-@Override
-public boolean equals(Object o) {
+  @Override
+  public boolean equals(Object o) {
     if (this == o) {
-    return true;
+      return true;
     }
     if (o == null || getClass() != o.getClass()) {
-    return false;
+      return false;
     }
-        PaymentMethodDataResponseOneOf2 paymentMethodDataResponseOneOf2 = (PaymentMethodDataResponseOneOf2) o;
-        return Objects.equals(this.wallet, paymentMethodDataResponseOneOf2.wallet);
-}
+    PaymentMethodDataResponseOneOf2 paymentMethodDataResponseOneOf2 = (PaymentMethodDataResponseOneOf2) o;
+    return Objects.equals(this.wallet, paymentMethodDataResponseOneOf2.wallet);
+  }
 
-    @Override
-    public int hashCode() {
-        return Objects.hash(wallet);
-    }
+  @Override
+  public int hashCode() {
+    return Objects.hash(wallet);
+  }
 
-    @Override
-    public String toString() {
+  @Override
+  public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class PaymentMethodDataResponseOneOf2 {\n");
-        sb.append("    wallet: ").append(toIndentedString(wallet)).append("\n");
+    sb.append("    wallet: ").append(toIndentedString(wallet)).append("\n");
     sb.append("}");
     return sb.toString();
-    }
+  }
 
-    /**
-    * Convert the given object to string with each line indented by 4 spaces
-    * (except the first line).
-    */
-    private String toIndentedString(Object o) {
+  /**
+   * Convert the given object to string with each line indented by 4 spaces
+   * (except the first line).
+   */
+  private String toIndentedString(Object o) {
     if (o == null) {
-    return "null";
+      return "null";
     }
     return o.toString().replace("\n", "\n    ");
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @return URL query string
+   */
+  public String toUrlQueryString() {
+    return toUrlQueryString(null);
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @param prefix prefix of the query string
+   * @return URL query string
+   */
+  public String toUrlQueryString(String prefix) {
+    String suffix = "";
+    String containerSuffix = "";
+    String containerPrefix = "";
+    if (prefix == null) {
+      // style=form, explode=true, e.g. /pet?name=cat&type=manx
+      prefix = "";
+    } else {
+      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+      prefix = prefix + "[";
+      suffix = "]";
+      containerSuffix = "]";
+      containerPrefix = "[";
     }
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @return URL query string
-        */
-        public String toUrlQueryString() {
-        return toUrlQueryString(null);
-        }
+    StringJoiner joiner = new StringJoiner("&");
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @param prefix prefix of the query string
-        * @return URL query string
-        */
-        public String toUrlQueryString(String prefix) {
-        String suffix = "";
-        String containerSuffix = "";
-        String containerPrefix = "";
-        if (prefix == null) {
-        // style=form, explode=true, e.g. /pet?name=cat&type=manx
-        prefix = "";
-        } else {
-        // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
-        prefix = prefix + "[";
-        suffix = "]";
-        containerSuffix = "]";
-        containerPrefix = "[";
-        }
-
-        StringJoiner joiner = new StringJoiner("&");
-
-            // add `wallet` to the URL query string
-                            if (getWallet() != null) {
-                            joiner.add(getWallet().toUrlQueryString(prefix + "wallet" + suffix));
-                            }
-
-        return joiner.toString();
-        }
-
+    // add `wallet` to the URL query string
+    if (getWallet() != null) {
+      joiner.add(getWallet().toUrlQueryString(prefix + "wallet" + suffix));
     }
+
+    return joiner.toString();
+  }
+
+}
 

@@ -31,445 +31,445 @@ import java.net.URLEncoder;
 import java.util.StringJoiner;
 
 /**
-* WebhookDetails
-*/
-    @JsonPropertyOrder({
-        WebhookDetails.JSON_PROPERTY_WEBHOOK_VERSION,
-        WebhookDetails.JSON_PROPERTY_WEBHOOK_USERNAME,
-        WebhookDetails.JSON_PROPERTY_WEBHOOK_PASSWORD,
-        WebhookDetails.JSON_PROPERTY_WEBHOOK_URL,
-        WebhookDetails.JSON_PROPERTY_PAYMENT_CREATED_ENABLED,
-        WebhookDetails.JSON_PROPERTY_PAYMENT_SUCCEEDED_ENABLED,
-        WebhookDetails.JSON_PROPERTY_PAYMENT_FAILED_ENABLED
-    })
+ * WebhookDetails
+ */
+@JsonPropertyOrder({
+  WebhookDetails.JSON_PROPERTY_WEBHOOK_VERSION,
+  WebhookDetails.JSON_PROPERTY_WEBHOOK_USERNAME,
+  WebhookDetails.JSON_PROPERTY_WEBHOOK_PASSWORD,
+  WebhookDetails.JSON_PROPERTY_WEBHOOK_URL,
+  WebhookDetails.JSON_PROPERTY_PAYMENT_CREATED_ENABLED,
+  WebhookDetails.JSON_PROPERTY_PAYMENT_SUCCEEDED_ENABLED,
+  WebhookDetails.JSON_PROPERTY_PAYMENT_FAILED_ENABLED
+})
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class WebhookDetails {
-        public static final String JSON_PROPERTY_WEBHOOK_VERSION = "webhook_version";
-    @javax.annotation.Nullable
-            private JsonNullable<String> webhookVersion = JsonNullable.<String>undefined();
+  public static final String JSON_PROPERTY_WEBHOOK_VERSION = "webhook_version";
+  @javax.annotation.Nullable
+  private JsonNullable<String> webhookVersion = JsonNullable.<String>undefined();
 
-        public static final String JSON_PROPERTY_WEBHOOK_USERNAME = "webhook_username";
-    @javax.annotation.Nullable
-            private JsonNullable<String> webhookUsername = JsonNullable.<String>undefined();
+  public static final String JSON_PROPERTY_WEBHOOK_USERNAME = "webhook_username";
+  @javax.annotation.Nullable
+  private JsonNullable<String> webhookUsername = JsonNullable.<String>undefined();
 
-        public static final String JSON_PROPERTY_WEBHOOK_PASSWORD = "webhook_password";
-    @javax.annotation.Nullable
-            private JsonNullable<String> webhookPassword = JsonNullable.<String>undefined();
+  public static final String JSON_PROPERTY_WEBHOOK_PASSWORD = "webhook_password";
+  @javax.annotation.Nullable
+  private JsonNullable<String> webhookPassword = JsonNullable.<String>undefined();
 
-        public static final String JSON_PROPERTY_WEBHOOK_URL = "webhook_url";
-    @javax.annotation.Nullable
-            private JsonNullable<String> webhookUrl = JsonNullable.<String>undefined();
+  public static final String JSON_PROPERTY_WEBHOOK_URL = "webhook_url";
+  @javax.annotation.Nullable
+  private JsonNullable<String> webhookUrl = JsonNullable.<String>undefined();
 
-        public static final String JSON_PROPERTY_PAYMENT_CREATED_ENABLED = "payment_created_enabled";
-    @javax.annotation.Nullable
-            private JsonNullable<Boolean> paymentCreatedEnabled = JsonNullable.<Boolean>undefined();
+  public static final String JSON_PROPERTY_PAYMENT_CREATED_ENABLED = "payment_created_enabled";
+  @javax.annotation.Nullable
+  private JsonNullable<Boolean> paymentCreatedEnabled = JsonNullable.<Boolean>undefined();
 
-        public static final String JSON_PROPERTY_PAYMENT_SUCCEEDED_ENABLED = "payment_succeeded_enabled";
-    @javax.annotation.Nullable
-            private JsonNullable<Boolean> paymentSucceededEnabled = JsonNullable.<Boolean>undefined();
+  public static final String JSON_PROPERTY_PAYMENT_SUCCEEDED_ENABLED = "payment_succeeded_enabled";
+  @javax.annotation.Nullable
+  private JsonNullable<Boolean> paymentSucceededEnabled = JsonNullable.<Boolean>undefined();
 
-        public static final String JSON_PROPERTY_PAYMENT_FAILED_ENABLED = "payment_failed_enabled";
-    @javax.annotation.Nullable
-            private JsonNullable<Boolean> paymentFailedEnabled = JsonNullable.<Boolean>undefined();
+  public static final String JSON_PROPERTY_PAYMENT_FAILED_ENABLED = "payment_failed_enabled";
+  @javax.annotation.Nullable
+  private JsonNullable<Boolean> paymentFailedEnabled = JsonNullable.<Boolean>undefined();
 
-public WebhookDetails() {
-}
+  public WebhookDetails() {
+  }
 
-        public WebhookDetails webhookVersion(@javax.annotation.Nullable String webhookVersion) {
-        this.webhookVersion = JsonNullable.<String>of(webhookVersion);
-        
-        return this;
-        }
-
-    /**
-        * The version for Webhook
-    * @return webhookVersion
-    */
-    @javax.annotation.Nullable
-        @JsonIgnore
+  public WebhookDetails webhookVersion(@javax.annotation.Nullable String webhookVersion) {
+    this.webhookVersion = JsonNullable.<String>of(webhookVersion);
     
-    public String getWebhookVersion() {
-                return webhookVersion.orElse(null);
-    }
+    return this;
+  }
 
-          @JsonProperty(JSON_PROPERTY_WEBHOOK_VERSION)
+  /**
+   * The version for Webhook
+   * @return webhookVersion
+   */
+  @javax.annotation.Nullable
+  @JsonIgnore
+
+  public String getWebhookVersion() {
+        return webhookVersion.orElse(null);
+  }
+
+  @JsonProperty(JSON_PROPERTY_WEBHOOK_VERSION)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-        public JsonNullable<String> getWebhookVersion_JsonNullable() {
-        return webhookVersion;
-        }
+  public JsonNullable<String> getWebhookVersion_JsonNullable() {
+    return webhookVersion;
+  }
+  
+  @JsonProperty(JSON_PROPERTY_WEBHOOK_VERSION)
+  public void setWebhookVersion_JsonNullable(JsonNullable<String> webhookVersion) {
+    this.webhookVersion = webhookVersion;
+  }
+
+  public void setWebhookVersion(@javax.annotation.Nullable String webhookVersion) {
+    this.webhookVersion = JsonNullable.<String>of(webhookVersion);
+  }
+
+  public WebhookDetails webhookUsername(@javax.annotation.Nullable String webhookUsername) {
+    this.webhookUsername = JsonNullable.<String>of(webhookUsername);
     
-        @JsonProperty(JSON_PROPERTY_WEBHOOK_VERSION)
-        public void setWebhookVersion_JsonNullable(JsonNullable<String> webhookVersion) {
-        this.webhookVersion = webhookVersion;
-        }
+    return this;
+  }
 
-          public void setWebhookVersion(@javax.annotation.Nullable String webhookVersion) {
-            this.webhookVersion = JsonNullable.<String>of(webhookVersion);
-        }
+  /**
+   * The user name for Webhook login
+   * @return webhookUsername
+   */
+  @javax.annotation.Nullable
+  @JsonIgnore
 
-        public WebhookDetails webhookUsername(@javax.annotation.Nullable String webhookUsername) {
-        this.webhookUsername = JsonNullable.<String>of(webhookUsername);
-        
-        return this;
-        }
+  public String getWebhookUsername() {
+        return webhookUsername.orElse(null);
+  }
 
-    /**
-        * The user name for Webhook login
-    * @return webhookUsername
-    */
-    @javax.annotation.Nullable
-        @JsonIgnore
-    
-    public String getWebhookUsername() {
-                return webhookUsername.orElse(null);
-    }
-
-          @JsonProperty(JSON_PROPERTY_WEBHOOK_USERNAME)
+  @JsonProperty(JSON_PROPERTY_WEBHOOK_USERNAME)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-        public JsonNullable<String> getWebhookUsername_JsonNullable() {
-        return webhookUsername;
-        }
+  public JsonNullable<String> getWebhookUsername_JsonNullable() {
+    return webhookUsername;
+  }
+  
+  @JsonProperty(JSON_PROPERTY_WEBHOOK_USERNAME)
+  public void setWebhookUsername_JsonNullable(JsonNullable<String> webhookUsername) {
+    this.webhookUsername = webhookUsername;
+  }
+
+  public void setWebhookUsername(@javax.annotation.Nullable String webhookUsername) {
+    this.webhookUsername = JsonNullable.<String>of(webhookUsername);
+  }
+
+  public WebhookDetails webhookPassword(@javax.annotation.Nullable String webhookPassword) {
+    this.webhookPassword = JsonNullable.<String>of(webhookPassword);
     
-        @JsonProperty(JSON_PROPERTY_WEBHOOK_USERNAME)
-        public void setWebhookUsername_JsonNullable(JsonNullable<String> webhookUsername) {
-        this.webhookUsername = webhookUsername;
-        }
+    return this;
+  }
 
-          public void setWebhookUsername(@javax.annotation.Nullable String webhookUsername) {
-            this.webhookUsername = JsonNullable.<String>of(webhookUsername);
-        }
+  /**
+   * The password for Webhook login
+   * @return webhookPassword
+   */
+  @javax.annotation.Nullable
+  @JsonIgnore
 
-        public WebhookDetails webhookPassword(@javax.annotation.Nullable String webhookPassword) {
-        this.webhookPassword = JsonNullable.<String>of(webhookPassword);
-        
-        return this;
-        }
+  public String getWebhookPassword() {
+        return webhookPassword.orElse(null);
+  }
 
-    /**
-        * The password for Webhook login
-    * @return webhookPassword
-    */
-    @javax.annotation.Nullable
-        @JsonIgnore
-    
-    public String getWebhookPassword() {
-                return webhookPassword.orElse(null);
-    }
-
-          @JsonProperty(JSON_PROPERTY_WEBHOOK_PASSWORD)
+  @JsonProperty(JSON_PROPERTY_WEBHOOK_PASSWORD)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-        public JsonNullable<String> getWebhookPassword_JsonNullable() {
-        return webhookPassword;
-        }
+  public JsonNullable<String> getWebhookPassword_JsonNullable() {
+    return webhookPassword;
+  }
+  
+  @JsonProperty(JSON_PROPERTY_WEBHOOK_PASSWORD)
+  public void setWebhookPassword_JsonNullable(JsonNullable<String> webhookPassword) {
+    this.webhookPassword = webhookPassword;
+  }
+
+  public void setWebhookPassword(@javax.annotation.Nullable String webhookPassword) {
+    this.webhookPassword = JsonNullable.<String>of(webhookPassword);
+  }
+
+  public WebhookDetails webhookUrl(@javax.annotation.Nullable String webhookUrl) {
+    this.webhookUrl = JsonNullable.<String>of(webhookUrl);
     
-        @JsonProperty(JSON_PROPERTY_WEBHOOK_PASSWORD)
-        public void setWebhookPassword_JsonNullable(JsonNullable<String> webhookPassword) {
-        this.webhookPassword = webhookPassword;
-        }
+    return this;
+  }
 
-          public void setWebhookPassword(@javax.annotation.Nullable String webhookPassword) {
-            this.webhookPassword = JsonNullable.<String>of(webhookPassword);
-        }
+  /**
+   * The url for the webhook endpoint
+   * @return webhookUrl
+   */
+  @javax.annotation.Nullable
+  @JsonIgnore
 
-        public WebhookDetails webhookUrl(@javax.annotation.Nullable String webhookUrl) {
-        this.webhookUrl = JsonNullable.<String>of(webhookUrl);
-        
-        return this;
-        }
+  public String getWebhookUrl() {
+        return webhookUrl.orElse(null);
+  }
 
-    /**
-        * The url for the webhook endpoint
-    * @return webhookUrl
-    */
-    @javax.annotation.Nullable
-        @JsonIgnore
-    
-    public String getWebhookUrl() {
-                return webhookUrl.orElse(null);
-    }
-
-          @JsonProperty(JSON_PROPERTY_WEBHOOK_URL)
+  @JsonProperty(JSON_PROPERTY_WEBHOOK_URL)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-        public JsonNullable<String> getWebhookUrl_JsonNullable() {
-        return webhookUrl;
-        }
+  public JsonNullable<String> getWebhookUrl_JsonNullable() {
+    return webhookUrl;
+  }
+  
+  @JsonProperty(JSON_PROPERTY_WEBHOOK_URL)
+  public void setWebhookUrl_JsonNullable(JsonNullable<String> webhookUrl) {
+    this.webhookUrl = webhookUrl;
+  }
+
+  public void setWebhookUrl(@javax.annotation.Nullable String webhookUrl) {
+    this.webhookUrl = JsonNullable.<String>of(webhookUrl);
+  }
+
+  public WebhookDetails paymentCreatedEnabled(@javax.annotation.Nullable Boolean paymentCreatedEnabled) {
+    this.paymentCreatedEnabled = JsonNullable.<Boolean>of(paymentCreatedEnabled);
     
-        @JsonProperty(JSON_PROPERTY_WEBHOOK_URL)
-        public void setWebhookUrl_JsonNullable(JsonNullable<String> webhookUrl) {
-        this.webhookUrl = webhookUrl;
-        }
+    return this;
+  }
 
-          public void setWebhookUrl(@javax.annotation.Nullable String webhookUrl) {
-            this.webhookUrl = JsonNullable.<String>of(webhookUrl);
-        }
+  /**
+   * If this property is true, a webhook message is posted whenever a new payment is created
+   * @return paymentCreatedEnabled
+   */
+  @javax.annotation.Nullable
+  @JsonIgnore
 
-        public WebhookDetails paymentCreatedEnabled(@javax.annotation.Nullable Boolean paymentCreatedEnabled) {
-        this.paymentCreatedEnabled = JsonNullable.<Boolean>of(paymentCreatedEnabled);
-        
-        return this;
-        }
+  public Boolean getPaymentCreatedEnabled() {
+        return paymentCreatedEnabled.orElse(null);
+  }
 
-    /**
-        * If this property is true, a webhook message is posted whenever a new payment is created
-    * @return paymentCreatedEnabled
-    */
-    @javax.annotation.Nullable
-        @JsonIgnore
-    
-    public Boolean getPaymentCreatedEnabled() {
-                return paymentCreatedEnabled.orElse(null);
-    }
-
-          @JsonProperty(JSON_PROPERTY_PAYMENT_CREATED_ENABLED)
+  @JsonProperty(JSON_PROPERTY_PAYMENT_CREATED_ENABLED)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-        public JsonNullable<Boolean> getPaymentCreatedEnabled_JsonNullable() {
-        return paymentCreatedEnabled;
-        }
+  public JsonNullable<Boolean> getPaymentCreatedEnabled_JsonNullable() {
+    return paymentCreatedEnabled;
+  }
+  
+  @JsonProperty(JSON_PROPERTY_PAYMENT_CREATED_ENABLED)
+  public void setPaymentCreatedEnabled_JsonNullable(JsonNullable<Boolean> paymentCreatedEnabled) {
+    this.paymentCreatedEnabled = paymentCreatedEnabled;
+  }
+
+  public void setPaymentCreatedEnabled(@javax.annotation.Nullable Boolean paymentCreatedEnabled) {
+    this.paymentCreatedEnabled = JsonNullable.<Boolean>of(paymentCreatedEnabled);
+  }
+
+  public WebhookDetails paymentSucceededEnabled(@javax.annotation.Nullable Boolean paymentSucceededEnabled) {
+    this.paymentSucceededEnabled = JsonNullable.<Boolean>of(paymentSucceededEnabled);
     
-        @JsonProperty(JSON_PROPERTY_PAYMENT_CREATED_ENABLED)
-        public void setPaymentCreatedEnabled_JsonNullable(JsonNullable<Boolean> paymentCreatedEnabled) {
-        this.paymentCreatedEnabled = paymentCreatedEnabled;
-        }
+    return this;
+  }
 
-          public void setPaymentCreatedEnabled(@javax.annotation.Nullable Boolean paymentCreatedEnabled) {
-            this.paymentCreatedEnabled = JsonNullable.<Boolean>of(paymentCreatedEnabled);
-        }
+  /**
+   * If this property is true, a webhook message is posted whenever a payment is successful
+   * @return paymentSucceededEnabled
+   */
+  @javax.annotation.Nullable
+  @JsonIgnore
 
-        public WebhookDetails paymentSucceededEnabled(@javax.annotation.Nullable Boolean paymentSucceededEnabled) {
-        this.paymentSucceededEnabled = JsonNullable.<Boolean>of(paymentSucceededEnabled);
-        
-        return this;
-        }
+  public Boolean getPaymentSucceededEnabled() {
+        return paymentSucceededEnabled.orElse(null);
+  }
 
-    /**
-        * If this property is true, a webhook message is posted whenever a payment is successful
-    * @return paymentSucceededEnabled
-    */
-    @javax.annotation.Nullable
-        @JsonIgnore
-    
-    public Boolean getPaymentSucceededEnabled() {
-                return paymentSucceededEnabled.orElse(null);
-    }
-
-          @JsonProperty(JSON_PROPERTY_PAYMENT_SUCCEEDED_ENABLED)
+  @JsonProperty(JSON_PROPERTY_PAYMENT_SUCCEEDED_ENABLED)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-        public JsonNullable<Boolean> getPaymentSucceededEnabled_JsonNullable() {
-        return paymentSucceededEnabled;
-        }
+  public JsonNullable<Boolean> getPaymentSucceededEnabled_JsonNullable() {
+    return paymentSucceededEnabled;
+  }
+  
+  @JsonProperty(JSON_PROPERTY_PAYMENT_SUCCEEDED_ENABLED)
+  public void setPaymentSucceededEnabled_JsonNullable(JsonNullable<Boolean> paymentSucceededEnabled) {
+    this.paymentSucceededEnabled = paymentSucceededEnabled;
+  }
+
+  public void setPaymentSucceededEnabled(@javax.annotation.Nullable Boolean paymentSucceededEnabled) {
+    this.paymentSucceededEnabled = JsonNullable.<Boolean>of(paymentSucceededEnabled);
+  }
+
+  public WebhookDetails paymentFailedEnabled(@javax.annotation.Nullable Boolean paymentFailedEnabled) {
+    this.paymentFailedEnabled = JsonNullable.<Boolean>of(paymentFailedEnabled);
     
-        @JsonProperty(JSON_PROPERTY_PAYMENT_SUCCEEDED_ENABLED)
-        public void setPaymentSucceededEnabled_JsonNullable(JsonNullable<Boolean> paymentSucceededEnabled) {
-        this.paymentSucceededEnabled = paymentSucceededEnabled;
-        }
+    return this;
+  }
 
-          public void setPaymentSucceededEnabled(@javax.annotation.Nullable Boolean paymentSucceededEnabled) {
-            this.paymentSucceededEnabled = JsonNullable.<Boolean>of(paymentSucceededEnabled);
-        }
+  /**
+   * If this property is true, a webhook message is posted whenever a payment fails
+   * @return paymentFailedEnabled
+   */
+  @javax.annotation.Nullable
+  @JsonIgnore
 
-        public WebhookDetails paymentFailedEnabled(@javax.annotation.Nullable Boolean paymentFailedEnabled) {
-        this.paymentFailedEnabled = JsonNullable.<Boolean>of(paymentFailedEnabled);
-        
-        return this;
-        }
+  public Boolean getPaymentFailedEnabled() {
+        return paymentFailedEnabled.orElse(null);
+  }
 
-    /**
-        * If this property is true, a webhook message is posted whenever a payment fails
-    * @return paymentFailedEnabled
-    */
-    @javax.annotation.Nullable
-        @JsonIgnore
-    
-    public Boolean getPaymentFailedEnabled() {
-                return paymentFailedEnabled.orElse(null);
-    }
-
-          @JsonProperty(JSON_PROPERTY_PAYMENT_FAILED_ENABLED)
+  @JsonProperty(JSON_PROPERTY_PAYMENT_FAILED_ENABLED)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-        public JsonNullable<Boolean> getPaymentFailedEnabled_JsonNullable() {
-        return paymentFailedEnabled;
-        }
-    
-        @JsonProperty(JSON_PROPERTY_PAYMENT_FAILED_ENABLED)
-        public void setPaymentFailedEnabled_JsonNullable(JsonNullable<Boolean> paymentFailedEnabled) {
-        this.paymentFailedEnabled = paymentFailedEnabled;
-        }
+  public JsonNullable<Boolean> getPaymentFailedEnabled_JsonNullable() {
+    return paymentFailedEnabled;
+  }
+  
+  @JsonProperty(JSON_PROPERTY_PAYMENT_FAILED_ENABLED)
+  public void setPaymentFailedEnabled_JsonNullable(JsonNullable<Boolean> paymentFailedEnabled) {
+    this.paymentFailedEnabled = paymentFailedEnabled;
+  }
 
-          public void setPaymentFailedEnabled(@javax.annotation.Nullable Boolean paymentFailedEnabled) {
-            this.paymentFailedEnabled = JsonNullable.<Boolean>of(paymentFailedEnabled);
-        }
+  public void setPaymentFailedEnabled(@javax.annotation.Nullable Boolean paymentFailedEnabled) {
+    this.paymentFailedEnabled = JsonNullable.<Boolean>of(paymentFailedEnabled);
+  }
 
-@Override
-public boolean equals(Object o) {
+  @Override
+  public boolean equals(Object o) {
     if (this == o) {
-    return true;
+      return true;
     }
     if (o == null || getClass() != o.getClass()) {
-    return false;
+      return false;
     }
-        WebhookDetails webhookDetails = (WebhookDetails) o;
-        return equalsNullable(this.webhookVersion, webhookDetails.webhookVersion) &&
+    WebhookDetails webhookDetails = (WebhookDetails) o;
+    return equalsNullable(this.webhookVersion, webhookDetails.webhookVersion) &&
         equalsNullable(this.webhookUsername, webhookDetails.webhookUsername) &&
         equalsNullable(this.webhookPassword, webhookDetails.webhookPassword) &&
         equalsNullable(this.webhookUrl, webhookDetails.webhookUrl) &&
         equalsNullable(this.paymentCreatedEnabled, webhookDetails.paymentCreatedEnabled) &&
         equalsNullable(this.paymentSucceededEnabled, webhookDetails.paymentSucceededEnabled) &&
         equalsNullable(this.paymentFailedEnabled, webhookDetails.paymentFailedEnabled);
-}
+  }
 
-    private static <T> boolean equalsNullable(JsonNullable<T> a, JsonNullable<T> b) {
-        return a == b || (a != null && b != null && a.isPresent() && b.isPresent() && Objects.deepEquals(a.get(), b.get()));
-        }
+  private static <T> boolean equalsNullable(JsonNullable<T> a, JsonNullable<T> b) {
+    return a == b || (a != null && b != null && a.isPresent() && b.isPresent() && Objects.deepEquals(a.get(), b.get()));
+  }
 
-    @Override
-    public int hashCode() {
-        return Objects.hash(hashCodeNullable(webhookVersion), hashCodeNullable(webhookUsername), hashCodeNullable(webhookPassword), hashCodeNullable(webhookUrl), hashCodeNullable(paymentCreatedEnabled), hashCodeNullable(paymentSucceededEnabled), hashCodeNullable(paymentFailedEnabled));
+  @Override
+  public int hashCode() {
+    return Objects.hash(hashCodeNullable(webhookVersion), hashCodeNullable(webhookUsername), hashCodeNullable(webhookPassword), hashCodeNullable(webhookUrl), hashCodeNullable(paymentCreatedEnabled), hashCodeNullable(paymentSucceededEnabled), hashCodeNullable(paymentFailedEnabled));
+  }
+
+  private static <T> int hashCodeNullable(JsonNullable<T> a) {
+    if (a == null) {
+      return 1;
     }
+    return a.isPresent() ? Arrays.deepHashCode(new Object[]{a.get()}) : 31;
+  }
 
-        private static <T> int hashCodeNullable(JsonNullable<T> a) {
-        if (a == null) {
-        return 1;
-        }
-        return a.isPresent() ? Arrays.deepHashCode(new Object[]{a.get()}) : 31;
-        }
-
-    @Override
-    public String toString() {
+  @Override
+  public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class WebhookDetails {\n");
-        sb.append("    webhookVersion: ").append(toIndentedString(webhookVersion)).append("\n");
-        sb.append("    webhookUsername: ").append(toIndentedString(webhookUsername)).append("\n");
-        sb.append("    webhookPassword: ").append(toIndentedString(webhookPassword)).append("\n");
-        sb.append("    webhookUrl: ").append(toIndentedString(webhookUrl)).append("\n");
-        sb.append("    paymentCreatedEnabled: ").append(toIndentedString(paymentCreatedEnabled)).append("\n");
-        sb.append("    paymentSucceededEnabled: ").append(toIndentedString(paymentSucceededEnabled)).append("\n");
-        sb.append("    paymentFailedEnabled: ").append(toIndentedString(paymentFailedEnabled)).append("\n");
+    sb.append("    webhookVersion: ").append(toIndentedString(webhookVersion)).append("\n");
+    sb.append("    webhookUsername: ").append(toIndentedString(webhookUsername)).append("\n");
+    sb.append("    webhookPassword: ").append(toIndentedString(webhookPassword)).append("\n");
+    sb.append("    webhookUrl: ").append(toIndentedString(webhookUrl)).append("\n");
+    sb.append("    paymentCreatedEnabled: ").append(toIndentedString(paymentCreatedEnabled)).append("\n");
+    sb.append("    paymentSucceededEnabled: ").append(toIndentedString(paymentSucceededEnabled)).append("\n");
+    sb.append("    paymentFailedEnabled: ").append(toIndentedString(paymentFailedEnabled)).append("\n");
     sb.append("}");
     return sb.toString();
-    }
+  }
 
-    /**
-    * Convert the given object to string with each line indented by 4 spaces
-    * (except the first line).
-    */
-    private String toIndentedString(Object o) {
+  /**
+   * Convert the given object to string with each line indented by 4 spaces
+   * (except the first line).
+   */
+  private String toIndentedString(Object o) {
     if (o == null) {
-    return "null";
+      return "null";
     }
     return o.toString().replace("\n", "\n    ");
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @return URL query string
+   */
+  public String toUrlQueryString() {
+    return toUrlQueryString(null);
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @param prefix prefix of the query string
+   * @return URL query string
+   */
+  public String toUrlQueryString(String prefix) {
+    String suffix = "";
+    String containerSuffix = "";
+    String containerPrefix = "";
+    if (prefix == null) {
+      // style=form, explode=true, e.g. /pet?name=cat&type=manx
+      prefix = "";
+    } else {
+      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+      prefix = prefix + "[";
+      suffix = "]";
+      containerSuffix = "]";
+      containerPrefix = "[";
     }
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @return URL query string
-        */
-        public String toUrlQueryString() {
-        return toUrlQueryString(null);
-        }
+    StringJoiner joiner = new StringJoiner("&");
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @param prefix prefix of the query string
-        * @return URL query string
-        */
-        public String toUrlQueryString(String prefix) {
-        String suffix = "";
-        String containerSuffix = "";
-        String containerPrefix = "";
-        if (prefix == null) {
-        // style=form, explode=true, e.g. /pet?name=cat&type=manx
-        prefix = "";
-        } else {
-        // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
-        prefix = prefix + "[";
-        suffix = "]";
-        containerSuffix = "]";
-        containerPrefix = "[";
-        }
-
-        StringJoiner joiner = new StringJoiner("&");
-
-            // add `webhook_version` to the URL query string
-                        if (getWebhookVersion() != null) {
-                        try {
-                        joiner.add(String.format("%swebhook_version%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getWebhookVersion()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-            // add `webhook_username` to the URL query string
-                        if (getWebhookUsername() != null) {
-                        try {
-                        joiner.add(String.format("%swebhook_username%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getWebhookUsername()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-            // add `webhook_password` to the URL query string
-                        if (getWebhookPassword() != null) {
-                        try {
-                        joiner.add(String.format("%swebhook_password%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getWebhookPassword()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-            // add `webhook_url` to the URL query string
-                        if (getWebhookUrl() != null) {
-                        try {
-                        joiner.add(String.format("%swebhook_url%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getWebhookUrl()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-            // add `payment_created_enabled` to the URL query string
-                        if (getPaymentCreatedEnabled() != null) {
-                        try {
-                        joiner.add(String.format("%spayment_created_enabled%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getPaymentCreatedEnabled()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-            // add `payment_succeeded_enabled` to the URL query string
-                        if (getPaymentSucceededEnabled() != null) {
-                        try {
-                        joiner.add(String.format("%spayment_succeeded_enabled%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getPaymentSucceededEnabled()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-            // add `payment_failed_enabled` to the URL query string
-                        if (getPaymentFailedEnabled() != null) {
-                        try {
-                        joiner.add(String.format("%spayment_failed_enabled%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getPaymentFailedEnabled()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-        return joiner.toString();
-        }
-
+    // add `webhook_version` to the URL query string
+    if (getWebhookVersion() != null) {
+      try {
+        joiner.add(String.format("%swebhook_version%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getWebhookVersion()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
     }
+
+    // add `webhook_username` to the URL query string
+    if (getWebhookUsername() != null) {
+      try {
+        joiner.add(String.format("%swebhook_username%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getWebhookUsername()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `webhook_password` to the URL query string
+    if (getWebhookPassword() != null) {
+      try {
+        joiner.add(String.format("%swebhook_password%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getWebhookPassword()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `webhook_url` to the URL query string
+    if (getWebhookUrl() != null) {
+      try {
+        joiner.add(String.format("%swebhook_url%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getWebhookUrl()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `payment_created_enabled` to the URL query string
+    if (getPaymentCreatedEnabled() != null) {
+      try {
+        joiner.add(String.format("%spayment_created_enabled%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getPaymentCreatedEnabled()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `payment_succeeded_enabled` to the URL query string
+    if (getPaymentSucceededEnabled() != null) {
+      try {
+        joiner.add(String.format("%spayment_succeeded_enabled%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getPaymentSucceededEnabled()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `payment_failed_enabled` to the URL query string
+    if (getPaymentFailedEnabled() != null) {
+      try {
+        joiner.add(String.format("%spayment_failed_enabled%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getPaymentFailedEnabled()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    return joiner.toString();
+  }
+
+}
 

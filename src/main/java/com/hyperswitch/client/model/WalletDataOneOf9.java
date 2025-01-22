@@ -27,127 +27,127 @@ import java.net.URLEncoder;
 import java.util.StringJoiner;
 
 /**
-* WalletDataOneOf9
-*/
-    @JsonPropertyOrder({
-        WalletDataOneOf9.JSON_PROPERTY_APPLE_PAY_THIRD_PARTY_SDK
-    })
-            @JsonTypeName("WalletData_oneOf_9")
+ * WalletDataOneOf9
+ */
+@JsonPropertyOrder({
+  WalletDataOneOf9.JSON_PROPERTY_APPLE_PAY_THIRD_PARTY_SDK
+})
+@JsonTypeName("WalletData_oneOf_9")
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class WalletDataOneOf9 {
-        public static final String JSON_PROPERTY_APPLE_PAY_THIRD_PARTY_SDK = "apple_pay_third_party_sdk";
-    @javax.annotation.Nonnull
-            private Object applePayThirdPartySdk;
+  public static final String JSON_PROPERTY_APPLE_PAY_THIRD_PARTY_SDK = "apple_pay_third_party_sdk";
+  @javax.annotation.Nonnull
+  private Object applePayThirdPartySdk;
 
-public WalletDataOneOf9() {
-}
+  public WalletDataOneOf9() {
+  }
 
-        public WalletDataOneOf9 applePayThirdPartySdk(@javax.annotation.Nonnull Object applePayThirdPartySdk) {
-        
-        this.applePayThirdPartySdk = applePayThirdPartySdk;
-        return this;
-        }
+  public WalletDataOneOf9 applePayThirdPartySdk(@javax.annotation.Nonnull Object applePayThirdPartySdk) {
+    
+    this.applePayThirdPartySdk = applePayThirdPartySdk;
+    return this;
+  }
 
-    /**
-        * Get applePayThirdPartySdk
-    * @return applePayThirdPartySdk
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_APPLE_PAY_THIRD_PARTY_SDK)
+  /**
+   * Get applePayThirdPartySdk
+   * @return applePayThirdPartySdk
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_APPLE_PAY_THIRD_PARTY_SDK)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public Object getApplePayThirdPartySdk() {
-        return applePayThirdPartySdk;
-    }
+  public Object getApplePayThirdPartySdk() {
+    return applePayThirdPartySdk;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_APPLE_PAY_THIRD_PARTY_SDK)
+  @JsonProperty(JSON_PROPERTY_APPLE_PAY_THIRD_PARTY_SDK)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setApplePayThirdPartySdk(@javax.annotation.Nonnull Object applePayThirdPartySdk) {
-            this.applePayThirdPartySdk = applePayThirdPartySdk;
-        }
+    this.applePayThirdPartySdk = applePayThirdPartySdk;
+  }
 
-@Override
-public boolean equals(Object o) {
+  @Override
+  public boolean equals(Object o) {
     if (this == o) {
-    return true;
+      return true;
     }
     if (o == null || getClass() != o.getClass()) {
-    return false;
+      return false;
     }
-        WalletDataOneOf9 walletDataOneOf9 = (WalletDataOneOf9) o;
-        return Objects.equals(this.applePayThirdPartySdk, walletDataOneOf9.applePayThirdPartySdk);
-}
+    WalletDataOneOf9 walletDataOneOf9 = (WalletDataOneOf9) o;
+    return Objects.equals(this.applePayThirdPartySdk, walletDataOneOf9.applePayThirdPartySdk);
+  }
 
-    @Override
-    public int hashCode() {
-        return Objects.hash(applePayThirdPartySdk);
-    }
+  @Override
+  public int hashCode() {
+    return Objects.hash(applePayThirdPartySdk);
+  }
 
-    @Override
-    public String toString() {
+  @Override
+  public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class WalletDataOneOf9 {\n");
-        sb.append("    applePayThirdPartySdk: ").append(toIndentedString(applePayThirdPartySdk)).append("\n");
+    sb.append("    applePayThirdPartySdk: ").append(toIndentedString(applePayThirdPartySdk)).append("\n");
     sb.append("}");
     return sb.toString();
-    }
+  }
 
-    /**
-    * Convert the given object to string with each line indented by 4 spaces
-    * (except the first line).
-    */
-    private String toIndentedString(Object o) {
+  /**
+   * Convert the given object to string with each line indented by 4 spaces
+   * (except the first line).
+   */
+  private String toIndentedString(Object o) {
     if (o == null) {
-    return "null";
+      return "null";
     }
     return o.toString().replace("\n", "\n    ");
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @return URL query string
+   */
+  public String toUrlQueryString() {
+    return toUrlQueryString(null);
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @param prefix prefix of the query string
+   * @return URL query string
+   */
+  public String toUrlQueryString(String prefix) {
+    String suffix = "";
+    String containerSuffix = "";
+    String containerPrefix = "";
+    if (prefix == null) {
+      // style=form, explode=true, e.g. /pet?name=cat&type=manx
+      prefix = "";
+    } else {
+      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+      prefix = prefix + "[";
+      suffix = "]";
+      containerSuffix = "]";
+      containerPrefix = "[";
     }
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @return URL query string
-        */
-        public String toUrlQueryString() {
-        return toUrlQueryString(null);
-        }
+    StringJoiner joiner = new StringJoiner("&");
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @param prefix prefix of the query string
-        * @return URL query string
-        */
-        public String toUrlQueryString(String prefix) {
-        String suffix = "";
-        String containerSuffix = "";
-        String containerPrefix = "";
-        if (prefix == null) {
-        // style=form, explode=true, e.g. /pet?name=cat&type=manx
-        prefix = "";
-        } else {
-        // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
-        prefix = prefix + "[";
-        suffix = "]";
-        containerSuffix = "]";
-        containerPrefix = "[";
-        }
-
-        StringJoiner joiner = new StringJoiner("&");
-
-            // add `apple_pay_third_party_sdk` to the URL query string
-                        if (getApplePayThirdPartySdk() != null) {
-                        try {
-                        joiner.add(String.format("%sapple_pay_third_party_sdk%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getApplePayThirdPartySdk()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-        return joiner.toString();
-        }
-
+    // add `apple_pay_third_party_sdk` to the URL query string
+    if (getApplePayThirdPartySdk() != null) {
+      try {
+        joiner.add(String.format("%sapple_pay_third_party_sdk%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getApplePayThirdPartySdk()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
     }
+
+    return joiner.toString();
+  }
+
+}
 

@@ -33,233 +33,233 @@ import java.net.URLEncoder;
 import java.util.StringJoiner;
 
 /**
-* BankRedirectDataOneOf13Sofort
-*/
-    @JsonPropertyOrder({
-        BankRedirectDataOneOf13Sofort.JSON_PROPERTY_BILLING_DETAILS,
-        BankRedirectDataOneOf13Sofort.JSON_PROPERTY_COUNTRY,
-        BankRedirectDataOneOf13Sofort.JSON_PROPERTY_PREFERRED_LANGUAGE
-    })
-            @JsonTypeName("BankRedirectData_oneOf_13_sofort")
+ * BankRedirectDataOneOf13Sofort
+ */
+@JsonPropertyOrder({
+  BankRedirectDataOneOf13Sofort.JSON_PROPERTY_BILLING_DETAILS,
+  BankRedirectDataOneOf13Sofort.JSON_PROPERTY_COUNTRY,
+  BankRedirectDataOneOf13Sofort.JSON_PROPERTY_PREFERRED_LANGUAGE
+})
+@JsonTypeName("BankRedirectData_oneOf_13_sofort")
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class BankRedirectDataOneOf13Sofort {
-        public static final String JSON_PROPERTY_BILLING_DETAILS = "billing_details";
-    @javax.annotation.Nullable
-            private JsonNullable<BankRedirectBilling> billingDetails = JsonNullable.<BankRedirectBilling>undefined();
+  public static final String JSON_PROPERTY_BILLING_DETAILS = "billing_details";
+  @javax.annotation.Nullable
+  private JsonNullable<BankRedirectBilling> billingDetails = JsonNullable.<BankRedirectBilling>undefined();
 
-        public static final String JSON_PROPERTY_COUNTRY = "country";
-    @javax.annotation.Nonnull
-            private CountryAlpha2 country;
+  public static final String JSON_PROPERTY_COUNTRY = "country";
+  @javax.annotation.Nonnull
+  private CountryAlpha2 country;
 
-        public static final String JSON_PROPERTY_PREFERRED_LANGUAGE = "preferred_language";
-    @javax.annotation.Nullable
-            private JsonNullable<String> preferredLanguage = JsonNullable.<String>undefined();
+  public static final String JSON_PROPERTY_PREFERRED_LANGUAGE = "preferred_language";
+  @javax.annotation.Nullable
+  private JsonNullable<String> preferredLanguage = JsonNullable.<String>undefined();
 
-public BankRedirectDataOneOf13Sofort() {
-}
+  public BankRedirectDataOneOf13Sofort() {
+  }
 
-        public BankRedirectDataOneOf13Sofort billingDetails(@javax.annotation.Nullable BankRedirectBilling billingDetails) {
-        this.billingDetails = JsonNullable.<BankRedirectBilling>of(billingDetails);
-        
-        return this;
-        }
-
-    /**
-        * Get billingDetails
-    * @return billingDetails
-    */
-    @javax.annotation.Nullable
-        @JsonIgnore
+  public BankRedirectDataOneOf13Sofort billingDetails(@javax.annotation.Nullable BankRedirectBilling billingDetails) {
+    this.billingDetails = JsonNullable.<BankRedirectBilling>of(billingDetails);
     
-    public BankRedirectBilling getBillingDetails() {
-                return billingDetails.orElse(null);
-    }
+    return this;
+  }
 
-          @JsonProperty(JSON_PROPERTY_BILLING_DETAILS)
+  /**
+   * Get billingDetails
+   * @return billingDetails
+   */
+  @javax.annotation.Nullable
+  @JsonIgnore
+
+  public BankRedirectBilling getBillingDetails() {
+        return billingDetails.orElse(null);
+  }
+
+  @JsonProperty(JSON_PROPERTY_BILLING_DETAILS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-        public JsonNullable<BankRedirectBilling> getBillingDetails_JsonNullable() {
-        return billingDetails;
-        }
+  public JsonNullable<BankRedirectBilling> getBillingDetails_JsonNullable() {
+    return billingDetails;
+  }
+  
+  @JsonProperty(JSON_PROPERTY_BILLING_DETAILS)
+  public void setBillingDetails_JsonNullable(JsonNullable<BankRedirectBilling> billingDetails) {
+    this.billingDetails = billingDetails;
+  }
+
+  public void setBillingDetails(@javax.annotation.Nullable BankRedirectBilling billingDetails) {
+    this.billingDetails = JsonNullable.<BankRedirectBilling>of(billingDetails);
+  }
+
+  public BankRedirectDataOneOf13Sofort country(@javax.annotation.Nonnull CountryAlpha2 country) {
     
-        @JsonProperty(JSON_PROPERTY_BILLING_DETAILS)
-        public void setBillingDetails_JsonNullable(JsonNullable<BankRedirectBilling> billingDetails) {
-        this.billingDetails = billingDetails;
-        }
+    this.country = country;
+    return this;
+  }
 
-          public void setBillingDetails(@javax.annotation.Nullable BankRedirectBilling billingDetails) {
-            this.billingDetails = JsonNullable.<BankRedirectBilling>of(billingDetails);
-        }
-
-        public BankRedirectDataOneOf13Sofort country(@javax.annotation.Nonnull CountryAlpha2 country) {
-        
-        this.country = country;
-        return this;
-        }
-
-    /**
-        * Get country
-    * @return country
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_COUNTRY)
+  /**
+   * Get country
+   * @return country
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_COUNTRY)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public CountryAlpha2 getCountry() {
-        return country;
-    }
+  public CountryAlpha2 getCountry() {
+    return country;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_COUNTRY)
+  @JsonProperty(JSON_PROPERTY_COUNTRY)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setCountry(@javax.annotation.Nonnull CountryAlpha2 country) {
-            this.country = country;
-        }
+    this.country = country;
+  }
 
-        public BankRedirectDataOneOf13Sofort preferredLanguage(@javax.annotation.Nullable String preferredLanguage) {
-        this.preferredLanguage = JsonNullable.<String>of(preferredLanguage);
-        
-        return this;
-        }
-
-    /**
-        * The preferred language
-    * @return preferredLanguage
-    */
-    @javax.annotation.Nullable
-        @JsonIgnore
+  public BankRedirectDataOneOf13Sofort preferredLanguage(@javax.annotation.Nullable String preferredLanguage) {
+    this.preferredLanguage = JsonNullable.<String>of(preferredLanguage);
     
-    public String getPreferredLanguage() {
-                return preferredLanguage.orElse(null);
-    }
+    return this;
+  }
 
-          @JsonProperty(JSON_PROPERTY_PREFERRED_LANGUAGE)
+  /**
+   * The preferred language
+   * @return preferredLanguage
+   */
+  @javax.annotation.Nullable
+  @JsonIgnore
+
+  public String getPreferredLanguage() {
+        return preferredLanguage.orElse(null);
+  }
+
+  @JsonProperty(JSON_PROPERTY_PREFERRED_LANGUAGE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-        public JsonNullable<String> getPreferredLanguage_JsonNullable() {
-        return preferredLanguage;
-        }
-    
-        @JsonProperty(JSON_PROPERTY_PREFERRED_LANGUAGE)
-        public void setPreferredLanguage_JsonNullable(JsonNullable<String> preferredLanguage) {
-        this.preferredLanguage = preferredLanguage;
-        }
+  public JsonNullable<String> getPreferredLanguage_JsonNullable() {
+    return preferredLanguage;
+  }
+  
+  @JsonProperty(JSON_PROPERTY_PREFERRED_LANGUAGE)
+  public void setPreferredLanguage_JsonNullable(JsonNullable<String> preferredLanguage) {
+    this.preferredLanguage = preferredLanguage;
+  }
 
-          public void setPreferredLanguage(@javax.annotation.Nullable String preferredLanguage) {
-            this.preferredLanguage = JsonNullable.<String>of(preferredLanguage);
-        }
+  public void setPreferredLanguage(@javax.annotation.Nullable String preferredLanguage) {
+    this.preferredLanguage = JsonNullable.<String>of(preferredLanguage);
+  }
 
-@Override
-public boolean equals(Object o) {
+  @Override
+  public boolean equals(Object o) {
     if (this == o) {
-    return true;
+      return true;
     }
     if (o == null || getClass() != o.getClass()) {
-    return false;
+      return false;
     }
-        BankRedirectDataOneOf13Sofort bankRedirectDataOneOf13Sofort = (BankRedirectDataOneOf13Sofort) o;
-        return equalsNullable(this.billingDetails, bankRedirectDataOneOf13Sofort.billingDetails) &&
+    BankRedirectDataOneOf13Sofort bankRedirectDataOneOf13Sofort = (BankRedirectDataOneOf13Sofort) o;
+    return equalsNullable(this.billingDetails, bankRedirectDataOneOf13Sofort.billingDetails) &&
         Objects.equals(this.country, bankRedirectDataOneOf13Sofort.country) &&
         equalsNullable(this.preferredLanguage, bankRedirectDataOneOf13Sofort.preferredLanguage);
-}
+  }
 
-    private static <T> boolean equalsNullable(JsonNullable<T> a, JsonNullable<T> b) {
-        return a == b || (a != null && b != null && a.isPresent() && b.isPresent() && Objects.deepEquals(a.get(), b.get()));
-        }
+  private static <T> boolean equalsNullable(JsonNullable<T> a, JsonNullable<T> b) {
+    return a == b || (a != null && b != null && a.isPresent() && b.isPresent() && Objects.deepEquals(a.get(), b.get()));
+  }
 
-    @Override
-    public int hashCode() {
-        return Objects.hash(hashCodeNullable(billingDetails), country, hashCodeNullable(preferredLanguage));
+  @Override
+  public int hashCode() {
+    return Objects.hash(hashCodeNullable(billingDetails), country, hashCodeNullable(preferredLanguage));
+  }
+
+  private static <T> int hashCodeNullable(JsonNullable<T> a) {
+    if (a == null) {
+      return 1;
     }
+    return a.isPresent() ? Arrays.deepHashCode(new Object[]{a.get()}) : 31;
+  }
 
-        private static <T> int hashCodeNullable(JsonNullable<T> a) {
-        if (a == null) {
-        return 1;
-        }
-        return a.isPresent() ? Arrays.deepHashCode(new Object[]{a.get()}) : 31;
-        }
-
-    @Override
-    public String toString() {
+  @Override
+  public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class BankRedirectDataOneOf13Sofort {\n");
-        sb.append("    billingDetails: ").append(toIndentedString(billingDetails)).append("\n");
-        sb.append("    country: ").append(toIndentedString(country)).append("\n");
-        sb.append("    preferredLanguage: ").append(toIndentedString(preferredLanguage)).append("\n");
+    sb.append("    billingDetails: ").append(toIndentedString(billingDetails)).append("\n");
+    sb.append("    country: ").append(toIndentedString(country)).append("\n");
+    sb.append("    preferredLanguage: ").append(toIndentedString(preferredLanguage)).append("\n");
     sb.append("}");
     return sb.toString();
-    }
+  }
 
-    /**
-    * Convert the given object to string with each line indented by 4 spaces
-    * (except the first line).
-    */
-    private String toIndentedString(Object o) {
+  /**
+   * Convert the given object to string with each line indented by 4 spaces
+   * (except the first line).
+   */
+  private String toIndentedString(Object o) {
     if (o == null) {
-    return "null";
+      return "null";
     }
     return o.toString().replace("\n", "\n    ");
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @return URL query string
+   */
+  public String toUrlQueryString() {
+    return toUrlQueryString(null);
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @param prefix prefix of the query string
+   * @return URL query string
+   */
+  public String toUrlQueryString(String prefix) {
+    String suffix = "";
+    String containerSuffix = "";
+    String containerPrefix = "";
+    if (prefix == null) {
+      // style=form, explode=true, e.g. /pet?name=cat&type=manx
+      prefix = "";
+    } else {
+      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+      prefix = prefix + "[";
+      suffix = "]";
+      containerSuffix = "]";
+      containerPrefix = "[";
     }
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @return URL query string
-        */
-        public String toUrlQueryString() {
-        return toUrlQueryString(null);
-        }
+    StringJoiner joiner = new StringJoiner("&");
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @param prefix prefix of the query string
-        * @return URL query string
-        */
-        public String toUrlQueryString(String prefix) {
-        String suffix = "";
-        String containerSuffix = "";
-        String containerPrefix = "";
-        if (prefix == null) {
-        // style=form, explode=true, e.g. /pet?name=cat&type=manx
-        prefix = "";
-        } else {
-        // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
-        prefix = prefix + "[";
-        suffix = "]";
-        containerSuffix = "]";
-        containerPrefix = "[";
-        }
-
-        StringJoiner joiner = new StringJoiner("&");
-
-            // add `billing_details` to the URL query string
-                            if (getBillingDetails() != null) {
-                            joiner.add(getBillingDetails().toUrlQueryString(prefix + "billing_details" + suffix));
-                            }
-
-            // add `country` to the URL query string
-                            if (getCountry() != null) {
-                            try {
-                            joiner.add(String.format("%scountry%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCountry()), "UTF-8").replaceAll("\\+", "%20")));
-                            } catch (UnsupportedEncodingException e) {
-                            // Should never happen, UTF-8 is always supported
-                            throw new RuntimeException(e);
-                            }
-                            }
-
-            // add `preferred_language` to the URL query string
-                        if (getPreferredLanguage() != null) {
-                        try {
-                        joiner.add(String.format("%spreferred_language%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getPreferredLanguage()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-        return joiner.toString();
-        }
-
+    // add `billing_details` to the URL query string
+    if (getBillingDetails() != null) {
+      joiner.add(getBillingDetails().toUrlQueryString(prefix + "billing_details" + suffix));
     }
+
+    // add `country` to the URL query string
+    if (getCountry() != null) {
+      try {
+        joiner.add(String.format("%scountry%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCountry()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `preferred_language` to the URL query string
+    if (getPreferredLanguage() != null) {
+      try {
+        joiner.add(String.format("%spreferred_language%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getPreferredLanguage()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    return joiner.toString();
+  }
+
+}
 

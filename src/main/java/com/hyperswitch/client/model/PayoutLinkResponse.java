@@ -27,168 +27,168 @@ import java.net.URLEncoder;
 import java.util.StringJoiner;
 
 /**
-* PayoutLinkResponse
-*/
-    @JsonPropertyOrder({
-        PayoutLinkResponse.JSON_PROPERTY_PAYOUT_LINK_ID,
-        PayoutLinkResponse.JSON_PROPERTY_LINK
-    })
+ * PayoutLinkResponse
+ */
+@JsonPropertyOrder({
+  PayoutLinkResponse.JSON_PROPERTY_PAYOUT_LINK_ID,
+  PayoutLinkResponse.JSON_PROPERTY_LINK
+})
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class PayoutLinkResponse {
-        public static final String JSON_PROPERTY_PAYOUT_LINK_ID = "payout_link_id";
-    @javax.annotation.Nonnull
-            private String payoutLinkId;
+  public static final String JSON_PROPERTY_PAYOUT_LINK_ID = "payout_link_id";
+  @javax.annotation.Nonnull
+  private String payoutLinkId;
 
-        public static final String JSON_PROPERTY_LINK = "link";
-    @javax.annotation.Nonnull
-            private String link;
+  public static final String JSON_PROPERTY_LINK = "link";
+  @javax.annotation.Nonnull
+  private String link;
 
-public PayoutLinkResponse() {
-}
+  public PayoutLinkResponse() {
+  }
 
-        public PayoutLinkResponse payoutLinkId(@javax.annotation.Nonnull String payoutLinkId) {
-        
-        this.payoutLinkId = payoutLinkId;
-        return this;
-        }
+  public PayoutLinkResponse payoutLinkId(@javax.annotation.Nonnull String payoutLinkId) {
+    
+    this.payoutLinkId = payoutLinkId;
+    return this;
+  }
 
-    /**
-        * Get payoutLinkId
-    * @return payoutLinkId
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_PAYOUT_LINK_ID)
+  /**
+   * Get payoutLinkId
+   * @return payoutLinkId
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_PAYOUT_LINK_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public String getPayoutLinkId() {
-        return payoutLinkId;
-    }
+  public String getPayoutLinkId() {
+    return payoutLinkId;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_PAYOUT_LINK_ID)
+  @JsonProperty(JSON_PROPERTY_PAYOUT_LINK_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setPayoutLinkId(@javax.annotation.Nonnull String payoutLinkId) {
-            this.payoutLinkId = payoutLinkId;
-        }
+    this.payoutLinkId = payoutLinkId;
+  }
 
-        public PayoutLinkResponse link(@javax.annotation.Nonnull String link) {
-        
-        this.link = link;
-        return this;
-        }
+  public PayoutLinkResponse link(@javax.annotation.Nonnull String link) {
+    
+    this.link = link;
+    return this;
+  }
 
-    /**
-        * Get link
-    * @return link
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_LINK)
+  /**
+   * Get link
+   * @return link
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_LINK)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public String getLink() {
-        return link;
-    }
+  public String getLink() {
+    return link;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_LINK)
+  @JsonProperty(JSON_PROPERTY_LINK)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setLink(@javax.annotation.Nonnull String link) {
-            this.link = link;
-        }
+    this.link = link;
+  }
 
-@Override
-public boolean equals(Object o) {
+  @Override
+  public boolean equals(Object o) {
     if (this == o) {
-    return true;
+      return true;
     }
     if (o == null || getClass() != o.getClass()) {
-    return false;
+      return false;
     }
-        PayoutLinkResponse payoutLinkResponse = (PayoutLinkResponse) o;
-        return Objects.equals(this.payoutLinkId, payoutLinkResponse.payoutLinkId) &&
+    PayoutLinkResponse payoutLinkResponse = (PayoutLinkResponse) o;
+    return Objects.equals(this.payoutLinkId, payoutLinkResponse.payoutLinkId) &&
         Objects.equals(this.link, payoutLinkResponse.link);
-}
+  }
 
-    @Override
-    public int hashCode() {
-        return Objects.hash(payoutLinkId, link);
-    }
+  @Override
+  public int hashCode() {
+    return Objects.hash(payoutLinkId, link);
+  }
 
-    @Override
-    public String toString() {
+  @Override
+  public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class PayoutLinkResponse {\n");
-        sb.append("    payoutLinkId: ").append(toIndentedString(payoutLinkId)).append("\n");
-        sb.append("    link: ").append(toIndentedString(link)).append("\n");
+    sb.append("    payoutLinkId: ").append(toIndentedString(payoutLinkId)).append("\n");
+    sb.append("    link: ").append(toIndentedString(link)).append("\n");
     sb.append("}");
     return sb.toString();
-    }
+  }
 
-    /**
-    * Convert the given object to string with each line indented by 4 spaces
-    * (except the first line).
-    */
-    private String toIndentedString(Object o) {
+  /**
+   * Convert the given object to string with each line indented by 4 spaces
+   * (except the first line).
+   */
+  private String toIndentedString(Object o) {
     if (o == null) {
-    return "null";
+      return "null";
     }
     return o.toString().replace("\n", "\n    ");
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @return URL query string
+   */
+  public String toUrlQueryString() {
+    return toUrlQueryString(null);
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @param prefix prefix of the query string
+   * @return URL query string
+   */
+  public String toUrlQueryString(String prefix) {
+    String suffix = "";
+    String containerSuffix = "";
+    String containerPrefix = "";
+    if (prefix == null) {
+      // style=form, explode=true, e.g. /pet?name=cat&type=manx
+      prefix = "";
+    } else {
+      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+      prefix = prefix + "[";
+      suffix = "]";
+      containerSuffix = "]";
+      containerPrefix = "[";
     }
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @return URL query string
-        */
-        public String toUrlQueryString() {
-        return toUrlQueryString(null);
-        }
+    StringJoiner joiner = new StringJoiner("&");
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @param prefix prefix of the query string
-        * @return URL query string
-        */
-        public String toUrlQueryString(String prefix) {
-        String suffix = "";
-        String containerSuffix = "";
-        String containerPrefix = "";
-        if (prefix == null) {
-        // style=form, explode=true, e.g. /pet?name=cat&type=manx
-        prefix = "";
-        } else {
-        // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
-        prefix = prefix + "[";
-        suffix = "]";
-        containerSuffix = "]";
-        containerPrefix = "[";
-        }
-
-        StringJoiner joiner = new StringJoiner("&");
-
-            // add `payout_link_id` to the URL query string
-                        if (getPayoutLinkId() != null) {
-                        try {
-                        joiner.add(String.format("%spayout_link_id%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getPayoutLinkId()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-            // add `link` to the URL query string
-                        if (getLink() != null) {
-                        try {
-                        joiner.add(String.format("%slink%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getLink()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-        return joiner.toString();
-        }
-
+    // add `payout_link_id` to the URL query string
+    if (getPayoutLinkId() != null) {
+      try {
+        joiner.add(String.format("%spayout_link_id%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getPayoutLinkId()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
     }
+
+    // add `link` to the URL query string
+    if (getLink() != null) {
+      try {
+        joiner.add(String.format("%slink%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getLink()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    return joiner.toString();
+  }
+
+}
 

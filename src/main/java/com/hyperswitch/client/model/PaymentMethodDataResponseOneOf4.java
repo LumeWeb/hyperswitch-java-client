@@ -28,122 +28,122 @@ import java.net.URLEncoder;
 import java.util.StringJoiner;
 
 /**
-* PaymentMethodDataResponseOneOf4
-*/
-    @JsonPropertyOrder({
-        PaymentMethodDataResponseOneOf4.JSON_PROPERTY_BANK_REDIRECT
-    })
-            @JsonTypeName("PaymentMethodDataResponse_oneOf_4")
+ * PaymentMethodDataResponseOneOf4
+ */
+@JsonPropertyOrder({
+  PaymentMethodDataResponseOneOf4.JSON_PROPERTY_BANK_REDIRECT
+})
+@JsonTypeName("PaymentMethodDataResponse_oneOf_4")
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class PaymentMethodDataResponseOneOf4 {
-        public static final String JSON_PROPERTY_BANK_REDIRECT = "bank_redirect";
-    @javax.annotation.Nonnull
-            private BankRedirectResponse bankRedirect;
+  public static final String JSON_PROPERTY_BANK_REDIRECT = "bank_redirect";
+  @javax.annotation.Nonnull
+  private BankRedirectResponse bankRedirect;
 
-public PaymentMethodDataResponseOneOf4() {
-}
+  public PaymentMethodDataResponseOneOf4() {
+  }
 
-        public PaymentMethodDataResponseOneOf4 bankRedirect(@javax.annotation.Nonnull BankRedirectResponse bankRedirect) {
-        
-        this.bankRedirect = bankRedirect;
-        return this;
-        }
+  public PaymentMethodDataResponseOneOf4 bankRedirect(@javax.annotation.Nonnull BankRedirectResponse bankRedirect) {
+    
+    this.bankRedirect = bankRedirect;
+    return this;
+  }
 
-    /**
-        * Get bankRedirect
-    * @return bankRedirect
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_BANK_REDIRECT)
+  /**
+   * Get bankRedirect
+   * @return bankRedirect
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_BANK_REDIRECT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public BankRedirectResponse getBankRedirect() {
-        return bankRedirect;
-    }
+  public BankRedirectResponse getBankRedirect() {
+    return bankRedirect;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_BANK_REDIRECT)
+  @JsonProperty(JSON_PROPERTY_BANK_REDIRECT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setBankRedirect(@javax.annotation.Nonnull BankRedirectResponse bankRedirect) {
-            this.bankRedirect = bankRedirect;
-        }
+    this.bankRedirect = bankRedirect;
+  }
 
-@Override
-public boolean equals(Object o) {
+  @Override
+  public boolean equals(Object o) {
     if (this == o) {
-    return true;
+      return true;
     }
     if (o == null || getClass() != o.getClass()) {
-    return false;
+      return false;
     }
-        PaymentMethodDataResponseOneOf4 paymentMethodDataResponseOneOf4 = (PaymentMethodDataResponseOneOf4) o;
-        return Objects.equals(this.bankRedirect, paymentMethodDataResponseOneOf4.bankRedirect);
-}
+    PaymentMethodDataResponseOneOf4 paymentMethodDataResponseOneOf4 = (PaymentMethodDataResponseOneOf4) o;
+    return Objects.equals(this.bankRedirect, paymentMethodDataResponseOneOf4.bankRedirect);
+  }
 
-    @Override
-    public int hashCode() {
-        return Objects.hash(bankRedirect);
-    }
+  @Override
+  public int hashCode() {
+    return Objects.hash(bankRedirect);
+  }
 
-    @Override
-    public String toString() {
+  @Override
+  public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class PaymentMethodDataResponseOneOf4 {\n");
-        sb.append("    bankRedirect: ").append(toIndentedString(bankRedirect)).append("\n");
+    sb.append("    bankRedirect: ").append(toIndentedString(bankRedirect)).append("\n");
     sb.append("}");
     return sb.toString();
-    }
+  }
 
-    /**
-    * Convert the given object to string with each line indented by 4 spaces
-    * (except the first line).
-    */
-    private String toIndentedString(Object o) {
+  /**
+   * Convert the given object to string with each line indented by 4 spaces
+   * (except the first line).
+   */
+  private String toIndentedString(Object o) {
     if (o == null) {
-    return "null";
+      return "null";
     }
     return o.toString().replace("\n", "\n    ");
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @return URL query string
+   */
+  public String toUrlQueryString() {
+    return toUrlQueryString(null);
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @param prefix prefix of the query string
+   * @return URL query string
+   */
+  public String toUrlQueryString(String prefix) {
+    String suffix = "";
+    String containerSuffix = "";
+    String containerPrefix = "";
+    if (prefix == null) {
+      // style=form, explode=true, e.g. /pet?name=cat&type=manx
+      prefix = "";
+    } else {
+      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+      prefix = prefix + "[";
+      suffix = "]";
+      containerSuffix = "]";
+      containerPrefix = "[";
     }
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @return URL query string
-        */
-        public String toUrlQueryString() {
-        return toUrlQueryString(null);
-        }
+    StringJoiner joiner = new StringJoiner("&");
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @param prefix prefix of the query string
-        * @return URL query string
-        */
-        public String toUrlQueryString(String prefix) {
-        String suffix = "";
-        String containerSuffix = "";
-        String containerPrefix = "";
-        if (prefix == null) {
-        // style=form, explode=true, e.g. /pet?name=cat&type=manx
-        prefix = "";
-        } else {
-        // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
-        prefix = prefix + "[";
-        suffix = "]";
-        containerSuffix = "]";
-        containerPrefix = "[";
-        }
-
-        StringJoiner joiner = new StringJoiner("&");
-
-            // add `bank_redirect` to the URL query string
-                            if (getBankRedirect() != null) {
-                            joiner.add(getBankRedirect().toUrlQueryString(prefix + "bank_redirect" + suffix));
-                            }
-
-        return joiner.toString();
-        }
-
+    // add `bank_redirect` to the URL query string
+    if (getBankRedirect() != null) {
+      joiner.add(getBankRedirect().toUrlQueryString(prefix + "bank_redirect" + suffix));
     }
+
+    return joiner.toString();
+  }
+
+}
 

@@ -28,122 +28,122 @@ import java.net.URLEncoder;
 import java.util.StringJoiner;
 
 /**
-* WalletDataOneOf7
-*/
-    @JsonPropertyOrder({
-        WalletDataOneOf7.JSON_PROPERTY_APPLE_PAY
-    })
-            @JsonTypeName("WalletData_oneOf_7")
+ * WalletDataOneOf7
+ */
+@JsonPropertyOrder({
+  WalletDataOneOf7.JSON_PROPERTY_APPLE_PAY
+})
+@JsonTypeName("WalletData_oneOf_7")
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class WalletDataOneOf7 {
-        public static final String JSON_PROPERTY_APPLE_PAY = "apple_pay";
-    @javax.annotation.Nonnull
-            private ApplePayWalletData applePay;
+  public static final String JSON_PROPERTY_APPLE_PAY = "apple_pay";
+  @javax.annotation.Nonnull
+  private ApplePayWalletData applePay;
 
-public WalletDataOneOf7() {
-}
+  public WalletDataOneOf7() {
+  }
 
-        public WalletDataOneOf7 applePay(@javax.annotation.Nonnull ApplePayWalletData applePay) {
-        
-        this.applePay = applePay;
-        return this;
-        }
+  public WalletDataOneOf7 applePay(@javax.annotation.Nonnull ApplePayWalletData applePay) {
+    
+    this.applePay = applePay;
+    return this;
+  }
 
-    /**
-        * Get applePay
-    * @return applePay
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_APPLE_PAY)
+  /**
+   * Get applePay
+   * @return applePay
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_APPLE_PAY)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public ApplePayWalletData getApplePay() {
-        return applePay;
-    }
+  public ApplePayWalletData getApplePay() {
+    return applePay;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_APPLE_PAY)
+  @JsonProperty(JSON_PROPERTY_APPLE_PAY)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setApplePay(@javax.annotation.Nonnull ApplePayWalletData applePay) {
-            this.applePay = applePay;
-        }
+    this.applePay = applePay;
+  }
 
-@Override
-public boolean equals(Object o) {
+  @Override
+  public boolean equals(Object o) {
     if (this == o) {
-    return true;
+      return true;
     }
     if (o == null || getClass() != o.getClass()) {
-    return false;
+      return false;
     }
-        WalletDataOneOf7 walletDataOneOf7 = (WalletDataOneOf7) o;
-        return Objects.equals(this.applePay, walletDataOneOf7.applePay);
-}
+    WalletDataOneOf7 walletDataOneOf7 = (WalletDataOneOf7) o;
+    return Objects.equals(this.applePay, walletDataOneOf7.applePay);
+  }
 
-    @Override
-    public int hashCode() {
-        return Objects.hash(applePay);
-    }
+  @Override
+  public int hashCode() {
+    return Objects.hash(applePay);
+  }
 
-    @Override
-    public String toString() {
+  @Override
+  public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class WalletDataOneOf7 {\n");
-        sb.append("    applePay: ").append(toIndentedString(applePay)).append("\n");
+    sb.append("    applePay: ").append(toIndentedString(applePay)).append("\n");
     sb.append("}");
     return sb.toString();
-    }
+  }
 
-    /**
-    * Convert the given object to string with each line indented by 4 spaces
-    * (except the first line).
-    */
-    private String toIndentedString(Object o) {
+  /**
+   * Convert the given object to string with each line indented by 4 spaces
+   * (except the first line).
+   */
+  private String toIndentedString(Object o) {
     if (o == null) {
-    return "null";
+      return "null";
     }
     return o.toString().replace("\n", "\n    ");
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @return URL query string
+   */
+  public String toUrlQueryString() {
+    return toUrlQueryString(null);
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @param prefix prefix of the query string
+   * @return URL query string
+   */
+  public String toUrlQueryString(String prefix) {
+    String suffix = "";
+    String containerSuffix = "";
+    String containerPrefix = "";
+    if (prefix == null) {
+      // style=form, explode=true, e.g. /pet?name=cat&type=manx
+      prefix = "";
+    } else {
+      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+      prefix = prefix + "[";
+      suffix = "]";
+      containerSuffix = "]";
+      containerPrefix = "[";
     }
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @return URL query string
-        */
-        public String toUrlQueryString() {
-        return toUrlQueryString(null);
-        }
+    StringJoiner joiner = new StringJoiner("&");
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @param prefix prefix of the query string
-        * @return URL query string
-        */
-        public String toUrlQueryString(String prefix) {
-        String suffix = "";
-        String containerSuffix = "";
-        String containerPrefix = "";
-        if (prefix == null) {
-        // style=form, explode=true, e.g. /pet?name=cat&type=manx
-        prefix = "";
-        } else {
-        // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
-        prefix = prefix + "[";
-        suffix = "]";
-        containerSuffix = "]";
-        containerPrefix = "[";
-        }
-
-        StringJoiner joiner = new StringJoiner("&");
-
-            // add `apple_pay` to the URL query string
-                            if (getApplePay() != null) {
-                            joiner.add(getApplePay().toUrlQueryString(prefix + "apple_pay" + suffix));
-                            }
-
-        return joiner.toString();
-        }
-
+    // add `apple_pay` to the URL query string
+    if (getApplePay() != null) {
+      joiner.add(getApplePay().toUrlQueryString(prefix + "apple_pay" + suffix));
     }
+
+    return joiner.toString();
+  }
+
+}
 

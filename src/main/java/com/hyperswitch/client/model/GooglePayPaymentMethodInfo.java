@@ -32,224 +32,224 @@ import java.net.URLEncoder;
 import java.util.StringJoiner;
 
 /**
-* GooglePayPaymentMethodInfo
-*/
-    @JsonPropertyOrder({
-        GooglePayPaymentMethodInfo.JSON_PROPERTY_CARD_NETWORK,
-        GooglePayPaymentMethodInfo.JSON_PROPERTY_CARD_DETAILS,
-        GooglePayPaymentMethodInfo.JSON_PROPERTY_ASSURANCE_DETAILS
-    })
+ * GooglePayPaymentMethodInfo
+ */
+@JsonPropertyOrder({
+  GooglePayPaymentMethodInfo.JSON_PROPERTY_CARD_NETWORK,
+  GooglePayPaymentMethodInfo.JSON_PROPERTY_CARD_DETAILS,
+  GooglePayPaymentMethodInfo.JSON_PROPERTY_ASSURANCE_DETAILS
+})
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class GooglePayPaymentMethodInfo {
-        public static final String JSON_PROPERTY_CARD_NETWORK = "card_network";
-    @javax.annotation.Nonnull
-            private String cardNetwork;
+  public static final String JSON_PROPERTY_CARD_NETWORK = "card_network";
+  @javax.annotation.Nonnull
+  private String cardNetwork;
 
-        public static final String JSON_PROPERTY_CARD_DETAILS = "card_details";
-    @javax.annotation.Nonnull
-            private String cardDetails;
+  public static final String JSON_PROPERTY_CARD_DETAILS = "card_details";
+  @javax.annotation.Nonnull
+  private String cardDetails;
 
-        public static final String JSON_PROPERTY_ASSURANCE_DETAILS = "assurance_details";
-    @javax.annotation.Nullable
-            private JsonNullable<GooglePayAssuranceDetails> assuranceDetails = JsonNullable.<GooglePayAssuranceDetails>undefined();
+  public static final String JSON_PROPERTY_ASSURANCE_DETAILS = "assurance_details";
+  @javax.annotation.Nullable
+  private JsonNullable<GooglePayAssuranceDetails> assuranceDetails = JsonNullable.<GooglePayAssuranceDetails>undefined();
 
-public GooglePayPaymentMethodInfo() {
-}
+  public GooglePayPaymentMethodInfo() {
+  }
 
-        public GooglePayPaymentMethodInfo cardNetwork(@javax.annotation.Nonnull String cardNetwork) {
-        
-        this.cardNetwork = cardNetwork;
-        return this;
-        }
+  public GooglePayPaymentMethodInfo cardNetwork(@javax.annotation.Nonnull String cardNetwork) {
+    
+    this.cardNetwork = cardNetwork;
+    return this;
+  }
 
-    /**
-        * The name of the card network
-    * @return cardNetwork
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_CARD_NETWORK)
+  /**
+   * The name of the card network
+   * @return cardNetwork
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_CARD_NETWORK)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public String getCardNetwork() {
-        return cardNetwork;
-    }
+  public String getCardNetwork() {
+    return cardNetwork;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_CARD_NETWORK)
+  @JsonProperty(JSON_PROPERTY_CARD_NETWORK)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setCardNetwork(@javax.annotation.Nonnull String cardNetwork) {
-            this.cardNetwork = cardNetwork;
-        }
+    this.cardNetwork = cardNetwork;
+  }
 
-        public GooglePayPaymentMethodInfo cardDetails(@javax.annotation.Nonnull String cardDetails) {
-        
-        this.cardDetails = cardDetails;
-        return this;
-        }
+  public GooglePayPaymentMethodInfo cardDetails(@javax.annotation.Nonnull String cardDetails) {
+    
+    this.cardDetails = cardDetails;
+    return this;
+  }
 
-    /**
-        * The details of the card
-    * @return cardDetails
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_CARD_DETAILS)
+  /**
+   * The details of the card
+   * @return cardDetails
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_CARD_DETAILS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public String getCardDetails() {
-        return cardDetails;
-    }
+  public String getCardDetails() {
+    return cardDetails;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_CARD_DETAILS)
+  @JsonProperty(JSON_PROPERTY_CARD_DETAILS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setCardDetails(@javax.annotation.Nonnull String cardDetails) {
-            this.cardDetails = cardDetails;
-        }
+    this.cardDetails = cardDetails;
+  }
 
-        public GooglePayPaymentMethodInfo assuranceDetails(@javax.annotation.Nullable GooglePayAssuranceDetails assuranceDetails) {
-        this.assuranceDetails = JsonNullable.<GooglePayAssuranceDetails>of(assuranceDetails);
-        
-        return this;
-        }
-
-    /**
-        * Get assuranceDetails
-    * @return assuranceDetails
-    */
-    @javax.annotation.Nullable
-        @JsonIgnore
+  public GooglePayPaymentMethodInfo assuranceDetails(@javax.annotation.Nullable GooglePayAssuranceDetails assuranceDetails) {
+    this.assuranceDetails = JsonNullable.<GooglePayAssuranceDetails>of(assuranceDetails);
     
-    public GooglePayAssuranceDetails getAssuranceDetails() {
-                return assuranceDetails.orElse(null);
-    }
+    return this;
+  }
 
-          @JsonProperty(JSON_PROPERTY_ASSURANCE_DETAILS)
+  /**
+   * Get assuranceDetails
+   * @return assuranceDetails
+   */
+  @javax.annotation.Nullable
+  @JsonIgnore
+
+  public GooglePayAssuranceDetails getAssuranceDetails() {
+        return assuranceDetails.orElse(null);
+  }
+
+  @JsonProperty(JSON_PROPERTY_ASSURANCE_DETAILS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-        public JsonNullable<GooglePayAssuranceDetails> getAssuranceDetails_JsonNullable() {
-        return assuranceDetails;
-        }
-    
-        @JsonProperty(JSON_PROPERTY_ASSURANCE_DETAILS)
-        public void setAssuranceDetails_JsonNullable(JsonNullable<GooglePayAssuranceDetails> assuranceDetails) {
-        this.assuranceDetails = assuranceDetails;
-        }
+  public JsonNullable<GooglePayAssuranceDetails> getAssuranceDetails_JsonNullable() {
+    return assuranceDetails;
+  }
+  
+  @JsonProperty(JSON_PROPERTY_ASSURANCE_DETAILS)
+  public void setAssuranceDetails_JsonNullable(JsonNullable<GooglePayAssuranceDetails> assuranceDetails) {
+    this.assuranceDetails = assuranceDetails;
+  }
 
-          public void setAssuranceDetails(@javax.annotation.Nullable GooglePayAssuranceDetails assuranceDetails) {
-            this.assuranceDetails = JsonNullable.<GooglePayAssuranceDetails>of(assuranceDetails);
-        }
+  public void setAssuranceDetails(@javax.annotation.Nullable GooglePayAssuranceDetails assuranceDetails) {
+    this.assuranceDetails = JsonNullable.<GooglePayAssuranceDetails>of(assuranceDetails);
+  }
 
-@Override
-public boolean equals(Object o) {
+  @Override
+  public boolean equals(Object o) {
     if (this == o) {
-    return true;
+      return true;
     }
     if (o == null || getClass() != o.getClass()) {
-    return false;
+      return false;
     }
-        GooglePayPaymentMethodInfo googlePayPaymentMethodInfo = (GooglePayPaymentMethodInfo) o;
-        return Objects.equals(this.cardNetwork, googlePayPaymentMethodInfo.cardNetwork) &&
+    GooglePayPaymentMethodInfo googlePayPaymentMethodInfo = (GooglePayPaymentMethodInfo) o;
+    return Objects.equals(this.cardNetwork, googlePayPaymentMethodInfo.cardNetwork) &&
         Objects.equals(this.cardDetails, googlePayPaymentMethodInfo.cardDetails) &&
         equalsNullable(this.assuranceDetails, googlePayPaymentMethodInfo.assuranceDetails);
-}
+  }
 
-    private static <T> boolean equalsNullable(JsonNullable<T> a, JsonNullable<T> b) {
-        return a == b || (a != null && b != null && a.isPresent() && b.isPresent() && Objects.deepEquals(a.get(), b.get()));
-        }
+  private static <T> boolean equalsNullable(JsonNullable<T> a, JsonNullable<T> b) {
+    return a == b || (a != null && b != null && a.isPresent() && b.isPresent() && Objects.deepEquals(a.get(), b.get()));
+  }
 
-    @Override
-    public int hashCode() {
-        return Objects.hash(cardNetwork, cardDetails, hashCodeNullable(assuranceDetails));
+  @Override
+  public int hashCode() {
+    return Objects.hash(cardNetwork, cardDetails, hashCodeNullable(assuranceDetails));
+  }
+
+  private static <T> int hashCodeNullable(JsonNullable<T> a) {
+    if (a == null) {
+      return 1;
     }
+    return a.isPresent() ? Arrays.deepHashCode(new Object[]{a.get()}) : 31;
+  }
 
-        private static <T> int hashCodeNullable(JsonNullable<T> a) {
-        if (a == null) {
-        return 1;
-        }
-        return a.isPresent() ? Arrays.deepHashCode(new Object[]{a.get()}) : 31;
-        }
-
-    @Override
-    public String toString() {
+  @Override
+  public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class GooglePayPaymentMethodInfo {\n");
-        sb.append("    cardNetwork: ").append(toIndentedString(cardNetwork)).append("\n");
-        sb.append("    cardDetails: ").append(toIndentedString(cardDetails)).append("\n");
-        sb.append("    assuranceDetails: ").append(toIndentedString(assuranceDetails)).append("\n");
+    sb.append("    cardNetwork: ").append(toIndentedString(cardNetwork)).append("\n");
+    sb.append("    cardDetails: ").append(toIndentedString(cardDetails)).append("\n");
+    sb.append("    assuranceDetails: ").append(toIndentedString(assuranceDetails)).append("\n");
     sb.append("}");
     return sb.toString();
-    }
+  }
 
-    /**
-    * Convert the given object to string with each line indented by 4 spaces
-    * (except the first line).
-    */
-    private String toIndentedString(Object o) {
+  /**
+   * Convert the given object to string with each line indented by 4 spaces
+   * (except the first line).
+   */
+  private String toIndentedString(Object o) {
     if (o == null) {
-    return "null";
+      return "null";
     }
     return o.toString().replace("\n", "\n    ");
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @return URL query string
+   */
+  public String toUrlQueryString() {
+    return toUrlQueryString(null);
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @param prefix prefix of the query string
+   * @return URL query string
+   */
+  public String toUrlQueryString(String prefix) {
+    String suffix = "";
+    String containerSuffix = "";
+    String containerPrefix = "";
+    if (prefix == null) {
+      // style=form, explode=true, e.g. /pet?name=cat&type=manx
+      prefix = "";
+    } else {
+      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+      prefix = prefix + "[";
+      suffix = "]";
+      containerSuffix = "]";
+      containerPrefix = "[";
     }
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @return URL query string
-        */
-        public String toUrlQueryString() {
-        return toUrlQueryString(null);
-        }
+    StringJoiner joiner = new StringJoiner("&");
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @param prefix prefix of the query string
-        * @return URL query string
-        */
-        public String toUrlQueryString(String prefix) {
-        String suffix = "";
-        String containerSuffix = "";
-        String containerPrefix = "";
-        if (prefix == null) {
-        // style=form, explode=true, e.g. /pet?name=cat&type=manx
-        prefix = "";
-        } else {
-        // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
-        prefix = prefix + "[";
-        suffix = "]";
-        containerSuffix = "]";
-        containerPrefix = "[";
-        }
-
-        StringJoiner joiner = new StringJoiner("&");
-
-            // add `card_network` to the URL query string
-                        if (getCardNetwork() != null) {
-                        try {
-                        joiner.add(String.format("%scard_network%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCardNetwork()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-            // add `card_details` to the URL query string
-                        if (getCardDetails() != null) {
-                        try {
-                        joiner.add(String.format("%scard_details%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCardDetails()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-            // add `assurance_details` to the URL query string
-                            if (getAssuranceDetails() != null) {
-                            joiner.add(getAssuranceDetails().toUrlQueryString(prefix + "assurance_details" + suffix));
-                            }
-
-        return joiner.toString();
-        }
-
+    // add `card_network` to the URL query string
+    if (getCardNetwork() != null) {
+      try {
+        joiner.add(String.format("%scard_network%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCardNetwork()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
     }
+
+    // add `card_details` to the URL query string
+    if (getCardDetails() != null) {
+      try {
+        joiner.add(String.format("%scard_details%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCardDetails()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `assurance_details` to the URL query string
+    if (getAssuranceDetails() != null) {
+      joiner.add(getAssuranceDetails().toUrlQueryString(prefix + "assurance_details" + suffix));
+    }
+
+    return joiner.toString();
+  }
+
+}
 

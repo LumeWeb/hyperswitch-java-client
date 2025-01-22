@@ -31,158 +31,158 @@ import java.net.URLEncoder;
 import java.util.StringJoiner;
 
 /**
-* Wallet
-*/
-    @JsonPropertyOrder({
-        Wallet.JSON_PROPERTY_PAYPAL,
-        Wallet.JSON_PROPERTY_VENMO
-    })
+ * Wallet
+ */
+@JsonPropertyOrder({
+  Wallet.JSON_PROPERTY_PAYPAL,
+  Wallet.JSON_PROPERTY_VENMO
+})
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class Wallet {
-        public static final String JSON_PROPERTY_PAYPAL = "paypal";
-    @javax.annotation.Nonnull
-            private Paypal paypal;
+  public static final String JSON_PROPERTY_PAYPAL = "paypal";
+  @javax.annotation.Nonnull
+  private Paypal paypal;
 
-        public static final String JSON_PROPERTY_VENMO = "venmo";
-    @javax.annotation.Nonnull
-            private Venmo venmo;
+  public static final String JSON_PROPERTY_VENMO = "venmo";
+  @javax.annotation.Nonnull
+  private Venmo venmo;
 
-public Wallet() {
-}
+  public Wallet() {
+  }
 
-        public Wallet paypal(@javax.annotation.Nonnull Paypal paypal) {
-        
-        this.paypal = paypal;
-        return this;
-        }
+  public Wallet paypal(@javax.annotation.Nonnull Paypal paypal) {
+    
+    this.paypal = paypal;
+    return this;
+  }
 
-    /**
-        * Get paypal
-    * @return paypal
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_PAYPAL)
+  /**
+   * Get paypal
+   * @return paypal
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_PAYPAL)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public Paypal getPaypal() {
-        return paypal;
-    }
+  public Paypal getPaypal() {
+    return paypal;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_PAYPAL)
+  @JsonProperty(JSON_PROPERTY_PAYPAL)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setPaypal(@javax.annotation.Nonnull Paypal paypal) {
-            this.paypal = paypal;
-        }
+    this.paypal = paypal;
+  }
 
-        public Wallet venmo(@javax.annotation.Nonnull Venmo venmo) {
-        
-        this.venmo = venmo;
-        return this;
-        }
+  public Wallet venmo(@javax.annotation.Nonnull Venmo venmo) {
+    
+    this.venmo = venmo;
+    return this;
+  }
 
-    /**
-        * Get venmo
-    * @return venmo
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_VENMO)
+  /**
+   * Get venmo
+   * @return venmo
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_VENMO)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public Venmo getVenmo() {
-        return venmo;
-    }
+  public Venmo getVenmo() {
+    return venmo;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_VENMO)
+  @JsonProperty(JSON_PROPERTY_VENMO)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setVenmo(@javax.annotation.Nonnull Venmo venmo) {
-            this.venmo = venmo;
-        }
+    this.venmo = venmo;
+  }
 
-@Override
-public boolean equals(Object o) {
+  @Override
+  public boolean equals(Object o) {
     if (this == o) {
-    return true;
+      return true;
     }
     if (o == null || getClass() != o.getClass()) {
-    return false;
+      return false;
     }
-        Wallet wallet = (Wallet) o;
-        return Objects.equals(this.paypal, wallet.paypal) &&
+    Wallet wallet = (Wallet) o;
+    return Objects.equals(this.paypal, wallet.paypal) &&
         Objects.equals(this.venmo, wallet.venmo);
-}
+  }
 
-    @Override
-    public int hashCode() {
-        return Objects.hash(paypal, venmo);
-    }
+  @Override
+  public int hashCode() {
+    return Objects.hash(paypal, venmo);
+  }
 
-    @Override
-    public String toString() {
+  @Override
+  public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class Wallet {\n");
-        sb.append("    paypal: ").append(toIndentedString(paypal)).append("\n");
-        sb.append("    venmo: ").append(toIndentedString(venmo)).append("\n");
+    sb.append("    paypal: ").append(toIndentedString(paypal)).append("\n");
+    sb.append("    venmo: ").append(toIndentedString(venmo)).append("\n");
     sb.append("}");
     return sb.toString();
-    }
+  }
 
-    /**
-    * Convert the given object to string with each line indented by 4 spaces
-    * (except the first line).
-    */
-    private String toIndentedString(Object o) {
+  /**
+   * Convert the given object to string with each line indented by 4 spaces
+   * (except the first line).
+   */
+  private String toIndentedString(Object o) {
     if (o == null) {
-    return "null";
+      return "null";
     }
     return o.toString().replace("\n", "\n    ");
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @return URL query string
+   */
+  public String toUrlQueryString() {
+    return toUrlQueryString(null);
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @param prefix prefix of the query string
+   * @return URL query string
+   */
+  public String toUrlQueryString(String prefix) {
+    String suffix = "";
+    String containerSuffix = "";
+    String containerPrefix = "";
+    if (prefix == null) {
+      // style=form, explode=true, e.g. /pet?name=cat&type=manx
+      prefix = "";
+    } else {
+      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+      prefix = prefix + "[";
+      suffix = "]";
+      containerSuffix = "]";
+      containerPrefix = "[";
     }
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @return URL query string
-        */
-        public String toUrlQueryString() {
-        return toUrlQueryString(null);
-        }
+    StringJoiner joiner = new StringJoiner("&");
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @param prefix prefix of the query string
-        * @return URL query string
-        */
-        public String toUrlQueryString(String prefix) {
-        String suffix = "";
-        String containerSuffix = "";
-        String containerPrefix = "";
-        if (prefix == null) {
-        // style=form, explode=true, e.g. /pet?name=cat&type=manx
-        prefix = "";
-        } else {
-        // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
-        prefix = prefix + "[";
-        suffix = "]";
-        containerSuffix = "]";
-        containerPrefix = "[";
-        }
-
-        StringJoiner joiner = new StringJoiner("&");
-
-            // add `paypal` to the URL query string
-                            if (getPaypal() != null) {
-                            joiner.add(getPaypal().toUrlQueryString(prefix + "paypal" + suffix));
-                            }
-
-            // add `venmo` to the URL query string
-                            if (getVenmo() != null) {
-                            joiner.add(getVenmo().toUrlQueryString(prefix + "venmo" + suffix));
-                            }
-
-        return joiner.toString();
-        }
-
+    // add `paypal` to the URL query string
+    if (getPaypal() != null) {
+      joiner.add(getPaypal().toUrlQueryString(prefix + "paypal" + suffix));
     }
+
+    // add `venmo` to the URL query string
+    if (getVenmo() != null) {
+      joiner.add(getVenmo().toUrlQueryString(prefix + "venmo" + suffix));
+    }
+
+    return joiner.toString();
+  }
+
+}
 

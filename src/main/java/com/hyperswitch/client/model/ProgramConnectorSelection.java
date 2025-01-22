@@ -31,209 +31,209 @@ import java.net.URLEncoder;
 import java.util.StringJoiner;
 
 /**
-* The program, having a default connector selection and a bunch of rules. Also can hold arbitrary metadata.
-*/
-    @JsonPropertyOrder({
-        ProgramConnectorSelection.JSON_PROPERTY_DEFAULT_SELECTION,
-        ProgramConnectorSelection.JSON_PROPERTY_RULES,
-        ProgramConnectorSelection.JSON_PROPERTY_METADATA
-    })
+ * The program, having a default connector selection and a bunch of rules. Also can hold arbitrary metadata.
+ */
+@JsonPropertyOrder({
+  ProgramConnectorSelection.JSON_PROPERTY_DEFAULT_SELECTION,
+  ProgramConnectorSelection.JSON_PROPERTY_RULES,
+  ProgramConnectorSelection.JSON_PROPERTY_METADATA
+})
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class ProgramConnectorSelection {
-        public static final String JSON_PROPERTY_DEFAULT_SELECTION = "defaultSelection";
-    @javax.annotation.Nonnull
-            private ConnectorSelection defaultSelection;
+  public static final String JSON_PROPERTY_DEFAULT_SELECTION = "defaultSelection";
+  @javax.annotation.Nonnull
+  private ConnectorSelection defaultSelection;
 
-        public static final String JSON_PROPERTY_RULES = "rules";
-    @javax.annotation.Nonnull
-            private RuleConnectorSelection rules;
+  public static final String JSON_PROPERTY_RULES = "rules";
+  @javax.annotation.Nonnull
+  private RuleConnectorSelection rules;
 
-        public static final String JSON_PROPERTY_METADATA = "metadata";
-    @javax.annotation.Nonnull
-            private Map<String, Object> metadata = new HashMap<>();
+  public static final String JSON_PROPERTY_METADATA = "metadata";
+  @javax.annotation.Nonnull
+  private Map<String, Object> metadata = new HashMap<>();
 
-public ProgramConnectorSelection() {
-}
+  public ProgramConnectorSelection() {
+  }
 
-        public ProgramConnectorSelection defaultSelection(@javax.annotation.Nonnull ConnectorSelection defaultSelection) {
-        
-        this.defaultSelection = defaultSelection;
-        return this;
-        }
+  public ProgramConnectorSelection defaultSelection(@javax.annotation.Nonnull ConnectorSelection defaultSelection) {
+    
+    this.defaultSelection = defaultSelection;
+    return this;
+  }
 
-    /**
-        * Get defaultSelection
-    * @return defaultSelection
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_DEFAULT_SELECTION)
+  /**
+   * Get defaultSelection
+   * @return defaultSelection
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_DEFAULT_SELECTION)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public ConnectorSelection getDefaultSelection() {
-        return defaultSelection;
-    }
+  public ConnectorSelection getDefaultSelection() {
+    return defaultSelection;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_DEFAULT_SELECTION)
+  @JsonProperty(JSON_PROPERTY_DEFAULT_SELECTION)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setDefaultSelection(@javax.annotation.Nonnull ConnectorSelection defaultSelection) {
-            this.defaultSelection = defaultSelection;
-        }
+    this.defaultSelection = defaultSelection;
+  }
 
-        public ProgramConnectorSelection rules(@javax.annotation.Nonnull RuleConnectorSelection rules) {
-        
-        this.rules = rules;
-        return this;
-        }
+  public ProgramConnectorSelection rules(@javax.annotation.Nonnull RuleConnectorSelection rules) {
+    
+    this.rules = rules;
+    return this;
+  }
 
-    /**
-        * Get rules
-    * @return rules
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_RULES)
+  /**
+   * Get rules
+   * @return rules
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_RULES)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public RuleConnectorSelection getRules() {
-        return rules;
-    }
+  public RuleConnectorSelection getRules() {
+    return rules;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_RULES)
+  @JsonProperty(JSON_PROPERTY_RULES)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setRules(@javax.annotation.Nonnull RuleConnectorSelection rules) {
-            this.rules = rules;
-        }
+    this.rules = rules;
+  }
 
-        public ProgramConnectorSelection metadata(@javax.annotation.Nonnull Map<String, Object> metadata) {
-        
-        this.metadata = metadata;
-        return this;
-        }
+  public ProgramConnectorSelection metadata(@javax.annotation.Nonnull Map<String, Object> metadata) {
+    
+    this.metadata = metadata;
+    return this;
+  }
 
-            public ProgramConnectorSelection putMetadataItem(String key, Object metadataItem) {
-                this.metadata.put(key, metadataItem);
-                return this;
-            }
+  public ProgramConnectorSelection putMetadataItem(String key, Object metadataItem) {
+    this.metadata.put(key, metadataItem);
+    return this;
+  }
 
-    /**
-        * Get metadata
-    * @return metadata
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_METADATA)
+  /**
+   * Get metadata
+   * @return metadata
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_METADATA)
   @JsonInclude(content = JsonInclude.Include.ALWAYS, value = JsonInclude.Include.ALWAYS)
 
-    public Map<String, Object> getMetadata() {
-        return metadata;
-    }
+  public Map<String, Object> getMetadata() {
+    return metadata;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_METADATA)
+  @JsonProperty(JSON_PROPERTY_METADATA)
   @JsonInclude(content = JsonInclude.Include.ALWAYS, value = JsonInclude.Include.ALWAYS)
   public void setMetadata(@javax.annotation.Nonnull Map<String, Object> metadata) {
-            this.metadata = metadata;
-        }
+    this.metadata = metadata;
+  }
 
-@Override
-public boolean equals(Object o) {
+  @Override
+  public boolean equals(Object o) {
     if (this == o) {
-    return true;
+      return true;
     }
     if (o == null || getClass() != o.getClass()) {
-    return false;
+      return false;
     }
-        ProgramConnectorSelection programConnectorSelection = (ProgramConnectorSelection) o;
-        return Objects.equals(this.defaultSelection, programConnectorSelection.defaultSelection) &&
+    ProgramConnectorSelection programConnectorSelection = (ProgramConnectorSelection) o;
+    return Objects.equals(this.defaultSelection, programConnectorSelection.defaultSelection) &&
         Objects.equals(this.rules, programConnectorSelection.rules) &&
         Objects.equals(this.metadata, programConnectorSelection.metadata);
-}
+  }
 
-    @Override
-    public int hashCode() {
-        return Objects.hash(defaultSelection, rules, metadata);
-    }
+  @Override
+  public int hashCode() {
+    return Objects.hash(defaultSelection, rules, metadata);
+  }
 
-    @Override
-    public String toString() {
+  @Override
+  public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class ProgramConnectorSelection {\n");
-        sb.append("    defaultSelection: ").append(toIndentedString(defaultSelection)).append("\n");
-        sb.append("    rules: ").append(toIndentedString(rules)).append("\n");
-        sb.append("    metadata: ").append(toIndentedString(metadata)).append("\n");
+    sb.append("    defaultSelection: ").append(toIndentedString(defaultSelection)).append("\n");
+    sb.append("    rules: ").append(toIndentedString(rules)).append("\n");
+    sb.append("    metadata: ").append(toIndentedString(metadata)).append("\n");
     sb.append("}");
     return sb.toString();
-    }
+  }
 
-    /**
-    * Convert the given object to string with each line indented by 4 spaces
-    * (except the first line).
-    */
-    private String toIndentedString(Object o) {
+  /**
+   * Convert the given object to string with each line indented by 4 spaces
+   * (except the first line).
+   */
+  private String toIndentedString(Object o) {
     if (o == null) {
-    return "null";
+      return "null";
     }
     return o.toString().replace("\n", "\n    ");
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @return URL query string
+   */
+  public String toUrlQueryString() {
+    return toUrlQueryString(null);
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @param prefix prefix of the query string
+   * @return URL query string
+   */
+  public String toUrlQueryString(String prefix) {
+    String suffix = "";
+    String containerSuffix = "";
+    String containerPrefix = "";
+    if (prefix == null) {
+      // style=form, explode=true, e.g. /pet?name=cat&type=manx
+      prefix = "";
+    } else {
+      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+      prefix = prefix + "[";
+      suffix = "]";
+      containerSuffix = "]";
+      containerPrefix = "[";
     }
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @return URL query string
-        */
-        public String toUrlQueryString() {
-        return toUrlQueryString(null);
-        }
+    StringJoiner joiner = new StringJoiner("&");
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @param prefix prefix of the query string
-        * @return URL query string
-        */
-        public String toUrlQueryString(String prefix) {
-        String suffix = "";
-        String containerSuffix = "";
-        String containerPrefix = "";
-        if (prefix == null) {
-        // style=form, explode=true, e.g. /pet?name=cat&type=manx
-        prefix = "";
-        } else {
-        // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
-        prefix = prefix + "[";
-        suffix = "]";
-        containerSuffix = "]";
-        containerPrefix = "[";
-        }
-
-        StringJoiner joiner = new StringJoiner("&");
-
-            // add `defaultSelection` to the URL query string
-                            if (getDefaultSelection() != null) {
-                            joiner.add(getDefaultSelection().toUrlQueryString(prefix + "defaultSelection" + suffix));
-                            }
-
-            // add `rules` to the URL query string
-                            if (getRules() != null) {
-                            joiner.add(getRules().toUrlQueryString(prefix + "rules" + suffix));
-                            }
-
-            // add `metadata` to the URL query string
-                        if (getMetadata() != null) {
-                        for (String _key : getMetadata().keySet()) {
-                        try {
-                        joiner.add(String.format("%smetadata%s%s=%s", prefix, suffix,
-                        "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, _key, containerSuffix),
-                    getMetadata().get(_key), URLEncoder.encode(String.valueOf(getMetadata().get(_key)), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-                        }
-
-        return joiner.toString();
-        }
-
+    // add `defaultSelection` to the URL query string
+    if (getDefaultSelection() != null) {
+      joiner.add(getDefaultSelection().toUrlQueryString(prefix + "defaultSelection" + suffix));
     }
+
+    // add `rules` to the URL query string
+    if (getRules() != null) {
+      joiner.add(getRules().toUrlQueryString(prefix + "rules" + suffix));
+    }
+
+    // add `metadata` to the URL query string
+    if (getMetadata() != null) {
+      for (String _key : getMetadata().keySet()) {
+        try {
+          joiner.add(String.format("%smetadata%s%s=%s", prefix, suffix,
+              "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, _key, containerSuffix),
+              getMetadata().get(_key), URLEncoder.encode(String.valueOf(getMetadata().get(_key)), "UTF-8").replaceAll("\\+", "%20")));
+        } catch (UnsupportedEncodingException e) {
+          // Should never happen, UTF-8 is always supported
+          throw new RuntimeException(e);
+        }
+      }
+    }
+
+    return joiner.toString();
+  }
+
+}
 

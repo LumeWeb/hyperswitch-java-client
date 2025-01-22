@@ -32,420 +32,420 @@ import java.net.URLEncoder;
 import java.util.StringJoiner;
 
 /**
-* OrderDetailsWithAmount
-*/
-    @JsonPropertyOrder({
-        OrderDetailsWithAmount.JSON_PROPERTY_PRODUCT_NAME,
-        OrderDetailsWithAmount.JSON_PROPERTY_QUANTITY,
-        OrderDetailsWithAmount.JSON_PROPERTY_AMOUNT,
-        OrderDetailsWithAmount.JSON_PROPERTY_REQUIRES_SHIPPING,
-        OrderDetailsWithAmount.JSON_PROPERTY_PRODUCT_IMG_LINK,
-        OrderDetailsWithAmount.JSON_PROPERTY_PRODUCT_ID,
-        OrderDetailsWithAmount.JSON_PROPERTY_CATEGORY,
-        OrderDetailsWithAmount.JSON_PROPERTY_SUB_CATEGORY,
-        OrderDetailsWithAmount.JSON_PROPERTY_BRAND,
-        OrderDetailsWithAmount.JSON_PROPERTY_PRODUCT_TYPE,
-        OrderDetailsWithAmount.JSON_PROPERTY_PRODUCT_TAX_CODE
-    })
+ * OrderDetailsWithAmount
+ */
+@JsonPropertyOrder({
+  OrderDetailsWithAmount.JSON_PROPERTY_PRODUCT_NAME,
+  OrderDetailsWithAmount.JSON_PROPERTY_QUANTITY,
+  OrderDetailsWithAmount.JSON_PROPERTY_AMOUNT,
+  OrderDetailsWithAmount.JSON_PROPERTY_REQUIRES_SHIPPING,
+  OrderDetailsWithAmount.JSON_PROPERTY_PRODUCT_IMG_LINK,
+  OrderDetailsWithAmount.JSON_PROPERTY_PRODUCT_ID,
+  OrderDetailsWithAmount.JSON_PROPERTY_CATEGORY,
+  OrderDetailsWithAmount.JSON_PROPERTY_SUB_CATEGORY,
+  OrderDetailsWithAmount.JSON_PROPERTY_BRAND,
+  OrderDetailsWithAmount.JSON_PROPERTY_PRODUCT_TYPE,
+  OrderDetailsWithAmount.JSON_PROPERTY_PRODUCT_TAX_CODE
+})
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class OrderDetailsWithAmount {
-        public static final String JSON_PROPERTY_PRODUCT_NAME = "product_name";
-    @javax.annotation.Nonnull
-            private String productName;
+  public static final String JSON_PROPERTY_PRODUCT_NAME = "product_name";
+  @javax.annotation.Nonnull
+  private String productName;
 
-        public static final String JSON_PROPERTY_QUANTITY = "quantity";
-    @javax.annotation.Nonnull
-            private Integer quantity;
+  public static final String JSON_PROPERTY_QUANTITY = "quantity";
+  @javax.annotation.Nonnull
+  private Integer quantity;
 
-        public static final String JSON_PROPERTY_AMOUNT = "amount";
-    @javax.annotation.Nonnull
-            private Long amount;
+  public static final String JSON_PROPERTY_AMOUNT = "amount";
+  @javax.annotation.Nonnull
+  private Long amount;
 
-        public static final String JSON_PROPERTY_REQUIRES_SHIPPING = "requires_shipping";
-    @javax.annotation.Nullable
-            private JsonNullable<Boolean> requiresShipping = JsonNullable.<Boolean>undefined();
+  public static final String JSON_PROPERTY_REQUIRES_SHIPPING = "requires_shipping";
+  @javax.annotation.Nullable
+  private JsonNullable<Boolean> requiresShipping = JsonNullable.<Boolean>undefined();
 
-        public static final String JSON_PROPERTY_PRODUCT_IMG_LINK = "product_img_link";
-    @javax.annotation.Nullable
-            private JsonNullable<String> productImgLink = JsonNullable.<String>undefined();
+  public static final String JSON_PROPERTY_PRODUCT_IMG_LINK = "product_img_link";
+  @javax.annotation.Nullable
+  private JsonNullable<String> productImgLink = JsonNullable.<String>undefined();
 
-        public static final String JSON_PROPERTY_PRODUCT_ID = "product_id";
-    @javax.annotation.Nullable
-            private JsonNullable<String> productId = JsonNullable.<String>undefined();
+  public static final String JSON_PROPERTY_PRODUCT_ID = "product_id";
+  @javax.annotation.Nullable
+  private JsonNullable<String> productId = JsonNullable.<String>undefined();
 
-        public static final String JSON_PROPERTY_CATEGORY = "category";
-    @javax.annotation.Nullable
-            private JsonNullable<String> category = JsonNullable.<String>undefined();
+  public static final String JSON_PROPERTY_CATEGORY = "category";
+  @javax.annotation.Nullable
+  private JsonNullable<String> category = JsonNullable.<String>undefined();
 
-        public static final String JSON_PROPERTY_SUB_CATEGORY = "sub_category";
-    @javax.annotation.Nullable
-            private JsonNullable<String> subCategory = JsonNullable.<String>undefined();
+  public static final String JSON_PROPERTY_SUB_CATEGORY = "sub_category";
+  @javax.annotation.Nullable
+  private JsonNullable<String> subCategory = JsonNullable.<String>undefined();
 
-        public static final String JSON_PROPERTY_BRAND = "brand";
-    @javax.annotation.Nullable
-            private JsonNullable<String> brand = JsonNullable.<String>undefined();
+  public static final String JSON_PROPERTY_BRAND = "brand";
+  @javax.annotation.Nullable
+  private JsonNullable<String> brand = JsonNullable.<String>undefined();
 
-        public static final String JSON_PROPERTY_PRODUCT_TYPE = "product_type";
-    @javax.annotation.Nullable
-            private JsonNullable<ProductType> productType = JsonNullable.<ProductType>undefined();
+  public static final String JSON_PROPERTY_PRODUCT_TYPE = "product_type";
+  @javax.annotation.Nullable
+  private JsonNullable<ProductType> productType = JsonNullable.<ProductType>undefined();
 
-        public static final String JSON_PROPERTY_PRODUCT_TAX_CODE = "product_tax_code";
-    @javax.annotation.Nullable
-            private JsonNullable<String> productTaxCode = JsonNullable.<String>undefined();
+  public static final String JSON_PROPERTY_PRODUCT_TAX_CODE = "product_tax_code";
+  @javax.annotation.Nullable
+  private JsonNullable<String> productTaxCode = JsonNullable.<String>undefined();
 
-public OrderDetailsWithAmount() {
-}
+  public OrderDetailsWithAmount() {
+  }
 
-        public OrderDetailsWithAmount productName(@javax.annotation.Nonnull String productName) {
-        
-        this.productName = productName;
-        return this;
-        }
+  public OrderDetailsWithAmount productName(@javax.annotation.Nonnull String productName) {
+    
+    this.productName = productName;
+    return this;
+  }
 
-    /**
-        * Name of the product that is being purchased
-    * @return productName
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_PRODUCT_NAME)
+  /**
+   * Name of the product that is being purchased
+   * @return productName
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_PRODUCT_NAME)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public String getProductName() {
-        return productName;
-    }
+  public String getProductName() {
+    return productName;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_PRODUCT_NAME)
+  @JsonProperty(JSON_PROPERTY_PRODUCT_NAME)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setProductName(@javax.annotation.Nonnull String productName) {
-            this.productName = productName;
-        }
+    this.productName = productName;
+  }
 
-        public OrderDetailsWithAmount quantity(@javax.annotation.Nonnull Integer quantity) {
-        
-        this.quantity = quantity;
-        return this;
-        }
+  public OrderDetailsWithAmount quantity(@javax.annotation.Nonnull Integer quantity) {
+    
+    this.quantity = quantity;
+    return this;
+  }
 
-    /**
-        * The quantity of the product to be purchased
-        * minimum: 0
-    * @return quantity
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_QUANTITY)
+  /**
+   * The quantity of the product to be purchased
+   * minimum: 0
+   * @return quantity
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_QUANTITY)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public Integer getQuantity() {
-        return quantity;
-    }
+  public Integer getQuantity() {
+    return quantity;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_QUANTITY)
+  @JsonProperty(JSON_PROPERTY_QUANTITY)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setQuantity(@javax.annotation.Nonnull Integer quantity) {
-            this.quantity = quantity;
-        }
+    this.quantity = quantity;
+  }
 
-        public OrderDetailsWithAmount amount(@javax.annotation.Nonnull Long amount) {
-        
-        this.amount = amount;
-        return this;
-        }
+  public OrderDetailsWithAmount amount(@javax.annotation.Nonnull Long amount) {
+    
+    this.amount = amount;
+    return this;
+  }
 
-    /**
-        * This Unit struct represents MinorUnit in which core amount works
-    * @return amount
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_AMOUNT)
+  /**
+   * This Unit struct represents MinorUnit in which core amount works
+   * @return amount
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_AMOUNT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public Long getAmount() {
-        return amount;
-    }
+  public Long getAmount() {
+    return amount;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_AMOUNT)
+  @JsonProperty(JSON_PROPERTY_AMOUNT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setAmount(@javax.annotation.Nonnull Long amount) {
-            this.amount = amount;
-        }
+    this.amount = amount;
+  }
 
-        public OrderDetailsWithAmount requiresShipping(@javax.annotation.Nullable Boolean requiresShipping) {
-        this.requiresShipping = JsonNullable.<Boolean>of(requiresShipping);
-        
-        return this;
-        }
-
-    /**
-        * Get requiresShipping
-    * @return requiresShipping
-    */
-    @javax.annotation.Nullable
-        @JsonIgnore
+  public OrderDetailsWithAmount requiresShipping(@javax.annotation.Nullable Boolean requiresShipping) {
+    this.requiresShipping = JsonNullable.<Boolean>of(requiresShipping);
     
-    public Boolean getRequiresShipping() {
-                return requiresShipping.orElse(null);
-    }
+    return this;
+  }
 
-          @JsonProperty(JSON_PROPERTY_REQUIRES_SHIPPING)
+  /**
+   * Get requiresShipping
+   * @return requiresShipping
+   */
+  @javax.annotation.Nullable
+  @JsonIgnore
+
+  public Boolean getRequiresShipping() {
+        return requiresShipping.orElse(null);
+  }
+
+  @JsonProperty(JSON_PROPERTY_REQUIRES_SHIPPING)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-        public JsonNullable<Boolean> getRequiresShipping_JsonNullable() {
-        return requiresShipping;
-        }
+  public JsonNullable<Boolean> getRequiresShipping_JsonNullable() {
+    return requiresShipping;
+  }
+  
+  @JsonProperty(JSON_PROPERTY_REQUIRES_SHIPPING)
+  public void setRequiresShipping_JsonNullable(JsonNullable<Boolean> requiresShipping) {
+    this.requiresShipping = requiresShipping;
+  }
+
+  public void setRequiresShipping(@javax.annotation.Nullable Boolean requiresShipping) {
+    this.requiresShipping = JsonNullable.<Boolean>of(requiresShipping);
+  }
+
+  public OrderDetailsWithAmount productImgLink(@javax.annotation.Nullable String productImgLink) {
+    this.productImgLink = JsonNullable.<String>of(productImgLink);
     
-        @JsonProperty(JSON_PROPERTY_REQUIRES_SHIPPING)
-        public void setRequiresShipping_JsonNullable(JsonNullable<Boolean> requiresShipping) {
-        this.requiresShipping = requiresShipping;
-        }
+    return this;
+  }
 
-          public void setRequiresShipping(@javax.annotation.Nullable Boolean requiresShipping) {
-            this.requiresShipping = JsonNullable.<Boolean>of(requiresShipping);
-        }
+  /**
+   * The image URL of the product
+   * @return productImgLink
+   */
+  @javax.annotation.Nullable
+  @JsonIgnore
 
-        public OrderDetailsWithAmount productImgLink(@javax.annotation.Nullable String productImgLink) {
-        this.productImgLink = JsonNullable.<String>of(productImgLink);
-        
-        return this;
-        }
+  public String getProductImgLink() {
+        return productImgLink.orElse(null);
+  }
 
-    /**
-        * The image URL of the product
-    * @return productImgLink
-    */
-    @javax.annotation.Nullable
-        @JsonIgnore
-    
-    public String getProductImgLink() {
-                return productImgLink.orElse(null);
-    }
-
-          @JsonProperty(JSON_PROPERTY_PRODUCT_IMG_LINK)
+  @JsonProperty(JSON_PROPERTY_PRODUCT_IMG_LINK)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-        public JsonNullable<String> getProductImgLink_JsonNullable() {
-        return productImgLink;
-        }
+  public JsonNullable<String> getProductImgLink_JsonNullable() {
+    return productImgLink;
+  }
+  
+  @JsonProperty(JSON_PROPERTY_PRODUCT_IMG_LINK)
+  public void setProductImgLink_JsonNullable(JsonNullable<String> productImgLink) {
+    this.productImgLink = productImgLink;
+  }
+
+  public void setProductImgLink(@javax.annotation.Nullable String productImgLink) {
+    this.productImgLink = JsonNullable.<String>of(productImgLink);
+  }
+
+  public OrderDetailsWithAmount productId(@javax.annotation.Nullable String productId) {
+    this.productId = JsonNullable.<String>of(productId);
     
-        @JsonProperty(JSON_PROPERTY_PRODUCT_IMG_LINK)
-        public void setProductImgLink_JsonNullable(JsonNullable<String> productImgLink) {
-        this.productImgLink = productImgLink;
-        }
+    return this;
+  }
 
-          public void setProductImgLink(@javax.annotation.Nullable String productImgLink) {
-            this.productImgLink = JsonNullable.<String>of(productImgLink);
-        }
+  /**
+   * ID of the product that is being purchased
+   * @return productId
+   */
+  @javax.annotation.Nullable
+  @JsonIgnore
 
-        public OrderDetailsWithAmount productId(@javax.annotation.Nullable String productId) {
-        this.productId = JsonNullable.<String>of(productId);
-        
-        return this;
-        }
+  public String getProductId() {
+        return productId.orElse(null);
+  }
 
-    /**
-        * ID of the product that is being purchased
-    * @return productId
-    */
-    @javax.annotation.Nullable
-        @JsonIgnore
-    
-    public String getProductId() {
-                return productId.orElse(null);
-    }
-
-          @JsonProperty(JSON_PROPERTY_PRODUCT_ID)
+  @JsonProperty(JSON_PROPERTY_PRODUCT_ID)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-        public JsonNullable<String> getProductId_JsonNullable() {
-        return productId;
-        }
+  public JsonNullable<String> getProductId_JsonNullable() {
+    return productId;
+  }
+  
+  @JsonProperty(JSON_PROPERTY_PRODUCT_ID)
+  public void setProductId_JsonNullable(JsonNullable<String> productId) {
+    this.productId = productId;
+  }
+
+  public void setProductId(@javax.annotation.Nullable String productId) {
+    this.productId = JsonNullable.<String>of(productId);
+  }
+
+  public OrderDetailsWithAmount category(@javax.annotation.Nullable String category) {
+    this.category = JsonNullable.<String>of(category);
     
-        @JsonProperty(JSON_PROPERTY_PRODUCT_ID)
-        public void setProductId_JsonNullable(JsonNullable<String> productId) {
-        this.productId = productId;
-        }
+    return this;
+  }
 
-          public void setProductId(@javax.annotation.Nullable String productId) {
-            this.productId = JsonNullable.<String>of(productId);
-        }
+  /**
+   * Category of the product that is being purchased
+   * @return category
+   */
+  @javax.annotation.Nullable
+  @JsonIgnore
 
-        public OrderDetailsWithAmount category(@javax.annotation.Nullable String category) {
-        this.category = JsonNullable.<String>of(category);
-        
-        return this;
-        }
+  public String getCategory() {
+        return category.orElse(null);
+  }
 
-    /**
-        * Category of the product that is being purchased
-    * @return category
-    */
-    @javax.annotation.Nullable
-        @JsonIgnore
-    
-    public String getCategory() {
-                return category.orElse(null);
-    }
-
-          @JsonProperty(JSON_PROPERTY_CATEGORY)
+  @JsonProperty(JSON_PROPERTY_CATEGORY)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-        public JsonNullable<String> getCategory_JsonNullable() {
-        return category;
-        }
+  public JsonNullable<String> getCategory_JsonNullable() {
+    return category;
+  }
+  
+  @JsonProperty(JSON_PROPERTY_CATEGORY)
+  public void setCategory_JsonNullable(JsonNullable<String> category) {
+    this.category = category;
+  }
+
+  public void setCategory(@javax.annotation.Nullable String category) {
+    this.category = JsonNullable.<String>of(category);
+  }
+
+  public OrderDetailsWithAmount subCategory(@javax.annotation.Nullable String subCategory) {
+    this.subCategory = JsonNullable.<String>of(subCategory);
     
-        @JsonProperty(JSON_PROPERTY_CATEGORY)
-        public void setCategory_JsonNullable(JsonNullable<String> category) {
-        this.category = category;
-        }
+    return this;
+  }
 
-          public void setCategory(@javax.annotation.Nullable String category) {
-            this.category = JsonNullable.<String>of(category);
-        }
+  /**
+   * Sub category of the product that is being purchased
+   * @return subCategory
+   */
+  @javax.annotation.Nullable
+  @JsonIgnore
 
-        public OrderDetailsWithAmount subCategory(@javax.annotation.Nullable String subCategory) {
-        this.subCategory = JsonNullable.<String>of(subCategory);
-        
-        return this;
-        }
+  public String getSubCategory() {
+        return subCategory.orElse(null);
+  }
 
-    /**
-        * Sub category of the product that is being purchased
-    * @return subCategory
-    */
-    @javax.annotation.Nullable
-        @JsonIgnore
-    
-    public String getSubCategory() {
-                return subCategory.orElse(null);
-    }
-
-          @JsonProperty(JSON_PROPERTY_SUB_CATEGORY)
+  @JsonProperty(JSON_PROPERTY_SUB_CATEGORY)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-        public JsonNullable<String> getSubCategory_JsonNullable() {
-        return subCategory;
-        }
+  public JsonNullable<String> getSubCategory_JsonNullable() {
+    return subCategory;
+  }
+  
+  @JsonProperty(JSON_PROPERTY_SUB_CATEGORY)
+  public void setSubCategory_JsonNullable(JsonNullable<String> subCategory) {
+    this.subCategory = subCategory;
+  }
+
+  public void setSubCategory(@javax.annotation.Nullable String subCategory) {
+    this.subCategory = JsonNullable.<String>of(subCategory);
+  }
+
+  public OrderDetailsWithAmount brand(@javax.annotation.Nullable String brand) {
+    this.brand = JsonNullable.<String>of(brand);
     
-        @JsonProperty(JSON_PROPERTY_SUB_CATEGORY)
-        public void setSubCategory_JsonNullable(JsonNullable<String> subCategory) {
-        this.subCategory = subCategory;
-        }
+    return this;
+  }
 
-          public void setSubCategory(@javax.annotation.Nullable String subCategory) {
-            this.subCategory = JsonNullable.<String>of(subCategory);
-        }
+  /**
+   * Brand of the product that is being purchased
+   * @return brand
+   */
+  @javax.annotation.Nullable
+  @JsonIgnore
 
-        public OrderDetailsWithAmount brand(@javax.annotation.Nullable String brand) {
-        this.brand = JsonNullable.<String>of(brand);
-        
-        return this;
-        }
+  public String getBrand() {
+        return brand.orElse(null);
+  }
 
-    /**
-        * Brand of the product that is being purchased
-    * @return brand
-    */
-    @javax.annotation.Nullable
-        @JsonIgnore
-    
-    public String getBrand() {
-                return brand.orElse(null);
-    }
-
-          @JsonProperty(JSON_PROPERTY_BRAND)
+  @JsonProperty(JSON_PROPERTY_BRAND)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-        public JsonNullable<String> getBrand_JsonNullable() {
-        return brand;
-        }
+  public JsonNullable<String> getBrand_JsonNullable() {
+    return brand;
+  }
+  
+  @JsonProperty(JSON_PROPERTY_BRAND)
+  public void setBrand_JsonNullable(JsonNullable<String> brand) {
+    this.brand = brand;
+  }
+
+  public void setBrand(@javax.annotation.Nullable String brand) {
+    this.brand = JsonNullable.<String>of(brand);
+  }
+
+  public OrderDetailsWithAmount productType(@javax.annotation.Nullable ProductType productType) {
+    this.productType = JsonNullable.<ProductType>of(productType);
     
-        @JsonProperty(JSON_PROPERTY_BRAND)
-        public void setBrand_JsonNullable(JsonNullable<String> brand) {
-        this.brand = brand;
-        }
+    return this;
+  }
 
-          public void setBrand(@javax.annotation.Nullable String brand) {
-            this.brand = JsonNullable.<String>of(brand);
-        }
+  /**
+   * Get productType
+   * @return productType
+   */
+  @javax.annotation.Nullable
+  @JsonIgnore
 
-        public OrderDetailsWithAmount productType(@javax.annotation.Nullable ProductType productType) {
-        this.productType = JsonNullable.<ProductType>of(productType);
-        
-        return this;
-        }
+  public ProductType getProductType() {
+        return productType.orElse(null);
+  }
 
-    /**
-        * Get productType
-    * @return productType
-    */
-    @javax.annotation.Nullable
-        @JsonIgnore
-    
-    public ProductType getProductType() {
-                return productType.orElse(null);
-    }
-
-          @JsonProperty(JSON_PROPERTY_PRODUCT_TYPE)
+  @JsonProperty(JSON_PROPERTY_PRODUCT_TYPE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-        public JsonNullable<ProductType> getProductType_JsonNullable() {
-        return productType;
-        }
+  public JsonNullable<ProductType> getProductType_JsonNullable() {
+    return productType;
+  }
+  
+  @JsonProperty(JSON_PROPERTY_PRODUCT_TYPE)
+  public void setProductType_JsonNullable(JsonNullable<ProductType> productType) {
+    this.productType = productType;
+  }
+
+  public void setProductType(@javax.annotation.Nullable ProductType productType) {
+    this.productType = JsonNullable.<ProductType>of(productType);
+  }
+
+  public OrderDetailsWithAmount productTaxCode(@javax.annotation.Nullable String productTaxCode) {
+    this.productTaxCode = JsonNullable.<String>of(productTaxCode);
     
-        @JsonProperty(JSON_PROPERTY_PRODUCT_TYPE)
-        public void setProductType_JsonNullable(JsonNullable<ProductType> productType) {
-        this.productType = productType;
-        }
+    return this;
+  }
 
-          public void setProductType(@javax.annotation.Nullable ProductType productType) {
-            this.productType = JsonNullable.<ProductType>of(productType);
-        }
+  /**
+   * The tax code for the product
+   * @return productTaxCode
+   */
+  @javax.annotation.Nullable
+  @JsonIgnore
 
-        public OrderDetailsWithAmount productTaxCode(@javax.annotation.Nullable String productTaxCode) {
-        this.productTaxCode = JsonNullable.<String>of(productTaxCode);
-        
-        return this;
-        }
+  public String getProductTaxCode() {
+        return productTaxCode.orElse(null);
+  }
 
-    /**
-        * The tax code for the product
-    * @return productTaxCode
-    */
-    @javax.annotation.Nullable
-        @JsonIgnore
-    
-    public String getProductTaxCode() {
-                return productTaxCode.orElse(null);
-    }
-
-          @JsonProperty(JSON_PROPERTY_PRODUCT_TAX_CODE)
+  @JsonProperty(JSON_PROPERTY_PRODUCT_TAX_CODE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-        public JsonNullable<String> getProductTaxCode_JsonNullable() {
-        return productTaxCode;
-        }
-    
-        @JsonProperty(JSON_PROPERTY_PRODUCT_TAX_CODE)
-        public void setProductTaxCode_JsonNullable(JsonNullable<String> productTaxCode) {
-        this.productTaxCode = productTaxCode;
-        }
+  public JsonNullable<String> getProductTaxCode_JsonNullable() {
+    return productTaxCode;
+  }
+  
+  @JsonProperty(JSON_PROPERTY_PRODUCT_TAX_CODE)
+  public void setProductTaxCode_JsonNullable(JsonNullable<String> productTaxCode) {
+    this.productTaxCode = productTaxCode;
+  }
 
-          public void setProductTaxCode(@javax.annotation.Nullable String productTaxCode) {
-            this.productTaxCode = JsonNullable.<String>of(productTaxCode);
-        }
+  public void setProductTaxCode(@javax.annotation.Nullable String productTaxCode) {
+    this.productTaxCode = JsonNullable.<String>of(productTaxCode);
+  }
 
-@Override
-public boolean equals(Object o) {
+  @Override
+  public boolean equals(Object o) {
     if (this == o) {
-    return true;
+      return true;
     }
     if (o == null || getClass() != o.getClass()) {
-    return false;
+      return false;
     }
-        OrderDetailsWithAmount orderDetailsWithAmount = (OrderDetailsWithAmount) o;
-        return Objects.equals(this.productName, orderDetailsWithAmount.productName) &&
+    OrderDetailsWithAmount orderDetailsWithAmount = (OrderDetailsWithAmount) o;
+    return Objects.equals(this.productName, orderDetailsWithAmount.productName) &&
         Objects.equals(this.quantity, orderDetailsWithAmount.quantity) &&
         Objects.equals(this.amount, orderDetailsWithAmount.amount) &&
         equalsNullable(this.requiresShipping, orderDetailsWithAmount.requiresShipping) &&
@@ -456,198 +456,198 @@ public boolean equals(Object o) {
         equalsNullable(this.brand, orderDetailsWithAmount.brand) &&
         equalsNullable(this.productType, orderDetailsWithAmount.productType) &&
         equalsNullable(this.productTaxCode, orderDetailsWithAmount.productTaxCode);
-}
+  }
 
-    private static <T> boolean equalsNullable(JsonNullable<T> a, JsonNullable<T> b) {
-        return a == b || (a != null && b != null && a.isPresent() && b.isPresent() && Objects.deepEquals(a.get(), b.get()));
-        }
+  private static <T> boolean equalsNullable(JsonNullable<T> a, JsonNullable<T> b) {
+    return a == b || (a != null && b != null && a.isPresent() && b.isPresent() && Objects.deepEquals(a.get(), b.get()));
+  }
 
-    @Override
-    public int hashCode() {
-        return Objects.hash(productName, quantity, amount, hashCodeNullable(requiresShipping), hashCodeNullable(productImgLink), hashCodeNullable(productId), hashCodeNullable(category), hashCodeNullable(subCategory), hashCodeNullable(brand), hashCodeNullable(productType), hashCodeNullable(productTaxCode));
+  @Override
+  public int hashCode() {
+    return Objects.hash(productName, quantity, amount, hashCodeNullable(requiresShipping), hashCodeNullable(productImgLink), hashCodeNullable(productId), hashCodeNullable(category), hashCodeNullable(subCategory), hashCodeNullable(brand), hashCodeNullable(productType), hashCodeNullable(productTaxCode));
+  }
+
+  private static <T> int hashCodeNullable(JsonNullable<T> a) {
+    if (a == null) {
+      return 1;
     }
+    return a.isPresent() ? Arrays.deepHashCode(new Object[]{a.get()}) : 31;
+  }
 
-        private static <T> int hashCodeNullable(JsonNullable<T> a) {
-        if (a == null) {
-        return 1;
-        }
-        return a.isPresent() ? Arrays.deepHashCode(new Object[]{a.get()}) : 31;
-        }
-
-    @Override
-    public String toString() {
+  @Override
+  public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class OrderDetailsWithAmount {\n");
-        sb.append("    productName: ").append(toIndentedString(productName)).append("\n");
-        sb.append("    quantity: ").append(toIndentedString(quantity)).append("\n");
-        sb.append("    amount: ").append(toIndentedString(amount)).append("\n");
-        sb.append("    requiresShipping: ").append(toIndentedString(requiresShipping)).append("\n");
-        sb.append("    productImgLink: ").append(toIndentedString(productImgLink)).append("\n");
-        sb.append("    productId: ").append(toIndentedString(productId)).append("\n");
-        sb.append("    category: ").append(toIndentedString(category)).append("\n");
-        sb.append("    subCategory: ").append(toIndentedString(subCategory)).append("\n");
-        sb.append("    brand: ").append(toIndentedString(brand)).append("\n");
-        sb.append("    productType: ").append(toIndentedString(productType)).append("\n");
-        sb.append("    productTaxCode: ").append(toIndentedString(productTaxCode)).append("\n");
+    sb.append("    productName: ").append(toIndentedString(productName)).append("\n");
+    sb.append("    quantity: ").append(toIndentedString(quantity)).append("\n");
+    sb.append("    amount: ").append(toIndentedString(amount)).append("\n");
+    sb.append("    requiresShipping: ").append(toIndentedString(requiresShipping)).append("\n");
+    sb.append("    productImgLink: ").append(toIndentedString(productImgLink)).append("\n");
+    sb.append("    productId: ").append(toIndentedString(productId)).append("\n");
+    sb.append("    category: ").append(toIndentedString(category)).append("\n");
+    sb.append("    subCategory: ").append(toIndentedString(subCategory)).append("\n");
+    sb.append("    brand: ").append(toIndentedString(brand)).append("\n");
+    sb.append("    productType: ").append(toIndentedString(productType)).append("\n");
+    sb.append("    productTaxCode: ").append(toIndentedString(productTaxCode)).append("\n");
     sb.append("}");
     return sb.toString();
-    }
+  }
 
-    /**
-    * Convert the given object to string with each line indented by 4 spaces
-    * (except the first line).
-    */
-    private String toIndentedString(Object o) {
+  /**
+   * Convert the given object to string with each line indented by 4 spaces
+   * (except the first line).
+   */
+  private String toIndentedString(Object o) {
     if (o == null) {
-    return "null";
+      return "null";
     }
     return o.toString().replace("\n", "\n    ");
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @return URL query string
+   */
+  public String toUrlQueryString() {
+    return toUrlQueryString(null);
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @param prefix prefix of the query string
+   * @return URL query string
+   */
+  public String toUrlQueryString(String prefix) {
+    String suffix = "";
+    String containerSuffix = "";
+    String containerPrefix = "";
+    if (prefix == null) {
+      // style=form, explode=true, e.g. /pet?name=cat&type=manx
+      prefix = "";
+    } else {
+      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+      prefix = prefix + "[";
+      suffix = "]";
+      containerSuffix = "]";
+      containerPrefix = "[";
     }
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @return URL query string
-        */
-        public String toUrlQueryString() {
-        return toUrlQueryString(null);
-        }
+    StringJoiner joiner = new StringJoiner("&");
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @param prefix prefix of the query string
-        * @return URL query string
-        */
-        public String toUrlQueryString(String prefix) {
-        String suffix = "";
-        String containerSuffix = "";
-        String containerPrefix = "";
-        if (prefix == null) {
-        // style=form, explode=true, e.g. /pet?name=cat&type=manx
-        prefix = "";
-        } else {
-        // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
-        prefix = prefix + "[";
-        suffix = "]";
-        containerSuffix = "]";
-        containerPrefix = "[";
-        }
-
-        StringJoiner joiner = new StringJoiner("&");
-
-            // add `product_name` to the URL query string
-                        if (getProductName() != null) {
-                        try {
-                        joiner.add(String.format("%sproduct_name%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getProductName()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-            // add `quantity` to the URL query string
-                        if (getQuantity() != null) {
-                        try {
-                        joiner.add(String.format("%squantity%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getQuantity()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-            // add `amount` to the URL query string
-                        if (getAmount() != null) {
-                        try {
-                        joiner.add(String.format("%samount%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getAmount()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-            // add `requires_shipping` to the URL query string
-                        if (getRequiresShipping() != null) {
-                        try {
-                        joiner.add(String.format("%srequires_shipping%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getRequiresShipping()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-            // add `product_img_link` to the URL query string
-                        if (getProductImgLink() != null) {
-                        try {
-                        joiner.add(String.format("%sproduct_img_link%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getProductImgLink()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-            // add `product_id` to the URL query string
-                        if (getProductId() != null) {
-                        try {
-                        joiner.add(String.format("%sproduct_id%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getProductId()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-            // add `category` to the URL query string
-                        if (getCategory() != null) {
-                        try {
-                        joiner.add(String.format("%scategory%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCategory()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-            // add `sub_category` to the URL query string
-                        if (getSubCategory() != null) {
-                        try {
-                        joiner.add(String.format("%ssub_category%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getSubCategory()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-            // add `brand` to the URL query string
-                        if (getBrand() != null) {
-                        try {
-                        joiner.add(String.format("%sbrand%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getBrand()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-            // add `product_type` to the URL query string
-                            if (getProductType() != null) {
-                            try {
-                            joiner.add(String.format("%sproduct_type%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getProductType()), "UTF-8").replaceAll("\\+", "%20")));
-                            } catch (UnsupportedEncodingException e) {
-                            // Should never happen, UTF-8 is always supported
-                            throw new RuntimeException(e);
-                            }
-                            }
-
-            // add `product_tax_code` to the URL query string
-                        if (getProductTaxCode() != null) {
-                        try {
-                        joiner.add(String.format("%sproduct_tax_code%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getProductTaxCode()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-        return joiner.toString();
-        }
-
+    // add `product_name` to the URL query string
+    if (getProductName() != null) {
+      try {
+        joiner.add(String.format("%sproduct_name%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getProductName()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
     }
+
+    // add `quantity` to the URL query string
+    if (getQuantity() != null) {
+      try {
+        joiner.add(String.format("%squantity%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getQuantity()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `amount` to the URL query string
+    if (getAmount() != null) {
+      try {
+        joiner.add(String.format("%samount%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getAmount()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `requires_shipping` to the URL query string
+    if (getRequiresShipping() != null) {
+      try {
+        joiner.add(String.format("%srequires_shipping%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getRequiresShipping()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `product_img_link` to the URL query string
+    if (getProductImgLink() != null) {
+      try {
+        joiner.add(String.format("%sproduct_img_link%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getProductImgLink()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `product_id` to the URL query string
+    if (getProductId() != null) {
+      try {
+        joiner.add(String.format("%sproduct_id%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getProductId()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `category` to the URL query string
+    if (getCategory() != null) {
+      try {
+        joiner.add(String.format("%scategory%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCategory()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `sub_category` to the URL query string
+    if (getSubCategory() != null) {
+      try {
+        joiner.add(String.format("%ssub_category%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getSubCategory()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `brand` to the URL query string
+    if (getBrand() != null) {
+      try {
+        joiner.add(String.format("%sbrand%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getBrand()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `product_type` to the URL query string
+    if (getProductType() != null) {
+      try {
+        joiner.add(String.format("%sproduct_type%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getProductType()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `product_tax_code` to the URL query string
+    if (getProductTaxCode() != null) {
+      try {
+        joiner.add(String.format("%sproduct_tax_code%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getProductTaxCode()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    return joiner.toString();
+  }
+
+}
 

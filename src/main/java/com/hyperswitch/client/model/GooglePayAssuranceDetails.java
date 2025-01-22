@@ -27,168 +27,168 @@ import java.net.URLEncoder;
 import java.util.StringJoiner;
 
 /**
-* GooglePayAssuranceDetails
-*/
-    @JsonPropertyOrder({
-        GooglePayAssuranceDetails.JSON_PROPERTY_CARD_HOLDER_AUTHENTICATED,
-        GooglePayAssuranceDetails.JSON_PROPERTY_ACCOUNT_VERIFIED
-    })
+ * GooglePayAssuranceDetails
+ */
+@JsonPropertyOrder({
+  GooglePayAssuranceDetails.JSON_PROPERTY_CARD_HOLDER_AUTHENTICATED,
+  GooglePayAssuranceDetails.JSON_PROPERTY_ACCOUNT_VERIFIED
+})
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class GooglePayAssuranceDetails {
-        public static final String JSON_PROPERTY_CARD_HOLDER_AUTHENTICATED = "card_holder_authenticated";
-    @javax.annotation.Nonnull
-            private Boolean cardHolderAuthenticated;
+  public static final String JSON_PROPERTY_CARD_HOLDER_AUTHENTICATED = "card_holder_authenticated";
+  @javax.annotation.Nonnull
+  private Boolean cardHolderAuthenticated;
 
-        public static final String JSON_PROPERTY_ACCOUNT_VERIFIED = "account_verified";
-    @javax.annotation.Nonnull
-            private Boolean accountVerified;
+  public static final String JSON_PROPERTY_ACCOUNT_VERIFIED = "account_verified";
+  @javax.annotation.Nonnull
+  private Boolean accountVerified;
 
-public GooglePayAssuranceDetails() {
-}
+  public GooglePayAssuranceDetails() {
+  }
 
-        public GooglePayAssuranceDetails cardHolderAuthenticated(@javax.annotation.Nonnull Boolean cardHolderAuthenticated) {
-        
-        this.cardHolderAuthenticated = cardHolderAuthenticated;
-        return this;
-        }
+  public GooglePayAssuranceDetails cardHolderAuthenticated(@javax.annotation.Nonnull Boolean cardHolderAuthenticated) {
+    
+    this.cardHolderAuthenticated = cardHolderAuthenticated;
+    return this;
+  }
 
-    /**
-        * indicates that Cardholder possession validation has been performed
-    * @return cardHolderAuthenticated
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_CARD_HOLDER_AUTHENTICATED)
+  /**
+   * indicates that Cardholder possession validation has been performed
+   * @return cardHolderAuthenticated
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_CARD_HOLDER_AUTHENTICATED)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public Boolean getCardHolderAuthenticated() {
-        return cardHolderAuthenticated;
-    }
+  public Boolean getCardHolderAuthenticated() {
+    return cardHolderAuthenticated;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_CARD_HOLDER_AUTHENTICATED)
+  @JsonProperty(JSON_PROPERTY_CARD_HOLDER_AUTHENTICATED)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setCardHolderAuthenticated(@javax.annotation.Nonnull Boolean cardHolderAuthenticated) {
-            this.cardHolderAuthenticated = cardHolderAuthenticated;
-        }
+    this.cardHolderAuthenticated = cardHolderAuthenticated;
+  }
 
-        public GooglePayAssuranceDetails accountVerified(@javax.annotation.Nonnull Boolean accountVerified) {
-        
-        this.accountVerified = accountVerified;
-        return this;
-        }
+  public GooglePayAssuranceDetails accountVerified(@javax.annotation.Nonnull Boolean accountVerified) {
+    
+    this.accountVerified = accountVerified;
+    return this;
+  }
 
-    /**
-        * indicates that identification and verifications (ID&amp;V) was performed
-    * @return accountVerified
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_ACCOUNT_VERIFIED)
+  /**
+   * indicates that identification and verifications (ID&amp;V) was performed
+   * @return accountVerified
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_ACCOUNT_VERIFIED)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public Boolean getAccountVerified() {
-        return accountVerified;
-    }
+  public Boolean getAccountVerified() {
+    return accountVerified;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_ACCOUNT_VERIFIED)
+  @JsonProperty(JSON_PROPERTY_ACCOUNT_VERIFIED)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setAccountVerified(@javax.annotation.Nonnull Boolean accountVerified) {
-            this.accountVerified = accountVerified;
-        }
+    this.accountVerified = accountVerified;
+  }
 
-@Override
-public boolean equals(Object o) {
+  @Override
+  public boolean equals(Object o) {
     if (this == o) {
-    return true;
+      return true;
     }
     if (o == null || getClass() != o.getClass()) {
-    return false;
+      return false;
     }
-        GooglePayAssuranceDetails googlePayAssuranceDetails = (GooglePayAssuranceDetails) o;
-        return Objects.equals(this.cardHolderAuthenticated, googlePayAssuranceDetails.cardHolderAuthenticated) &&
+    GooglePayAssuranceDetails googlePayAssuranceDetails = (GooglePayAssuranceDetails) o;
+    return Objects.equals(this.cardHolderAuthenticated, googlePayAssuranceDetails.cardHolderAuthenticated) &&
         Objects.equals(this.accountVerified, googlePayAssuranceDetails.accountVerified);
-}
+  }
 
-    @Override
-    public int hashCode() {
-        return Objects.hash(cardHolderAuthenticated, accountVerified);
-    }
+  @Override
+  public int hashCode() {
+    return Objects.hash(cardHolderAuthenticated, accountVerified);
+  }
 
-    @Override
-    public String toString() {
+  @Override
+  public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class GooglePayAssuranceDetails {\n");
-        sb.append("    cardHolderAuthenticated: ").append(toIndentedString(cardHolderAuthenticated)).append("\n");
-        sb.append("    accountVerified: ").append(toIndentedString(accountVerified)).append("\n");
+    sb.append("    cardHolderAuthenticated: ").append(toIndentedString(cardHolderAuthenticated)).append("\n");
+    sb.append("    accountVerified: ").append(toIndentedString(accountVerified)).append("\n");
     sb.append("}");
     return sb.toString();
-    }
+  }
 
-    /**
-    * Convert the given object to string with each line indented by 4 spaces
-    * (except the first line).
-    */
-    private String toIndentedString(Object o) {
+  /**
+   * Convert the given object to string with each line indented by 4 spaces
+   * (except the first line).
+   */
+  private String toIndentedString(Object o) {
     if (o == null) {
-    return "null";
+      return "null";
     }
     return o.toString().replace("\n", "\n    ");
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @return URL query string
+   */
+  public String toUrlQueryString() {
+    return toUrlQueryString(null);
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @param prefix prefix of the query string
+   * @return URL query string
+   */
+  public String toUrlQueryString(String prefix) {
+    String suffix = "";
+    String containerSuffix = "";
+    String containerPrefix = "";
+    if (prefix == null) {
+      // style=form, explode=true, e.g. /pet?name=cat&type=manx
+      prefix = "";
+    } else {
+      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+      prefix = prefix + "[";
+      suffix = "]";
+      containerSuffix = "]";
+      containerPrefix = "[";
     }
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @return URL query string
-        */
-        public String toUrlQueryString() {
-        return toUrlQueryString(null);
-        }
+    StringJoiner joiner = new StringJoiner("&");
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @param prefix prefix of the query string
-        * @return URL query string
-        */
-        public String toUrlQueryString(String prefix) {
-        String suffix = "";
-        String containerSuffix = "";
-        String containerPrefix = "";
-        if (prefix == null) {
-        // style=form, explode=true, e.g. /pet?name=cat&type=manx
-        prefix = "";
-        } else {
-        // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
-        prefix = prefix + "[";
-        suffix = "]";
-        containerSuffix = "]";
-        containerPrefix = "[";
-        }
-
-        StringJoiner joiner = new StringJoiner("&");
-
-            // add `card_holder_authenticated` to the URL query string
-                        if (getCardHolderAuthenticated() != null) {
-                        try {
-                        joiner.add(String.format("%scard_holder_authenticated%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCardHolderAuthenticated()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-            // add `account_verified` to the URL query string
-                        if (getAccountVerified() != null) {
-                        try {
-                        joiner.add(String.format("%saccount_verified%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getAccountVerified()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-        return joiner.toString();
-        }
-
+    // add `card_holder_authenticated` to the URL query string
+    if (getCardHolderAuthenticated() != null) {
+      try {
+        joiner.add(String.format("%scard_holder_authenticated%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCardHolderAuthenticated()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
     }
+
+    // add `account_verified` to the URL query string
+    if (getAccountVerified() != null) {
+      try {
+        joiner.add(String.format("%saccount_verified%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getAccountVerified()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    return joiner.toString();
+  }
+
+}
 

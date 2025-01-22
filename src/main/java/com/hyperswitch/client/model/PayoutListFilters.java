@@ -34,308 +34,308 @@ import java.net.URLEncoder;
 import java.util.StringJoiner;
 
 /**
-* PayoutListFilters
-*/
-    @JsonPropertyOrder({
-        PayoutListFilters.JSON_PROPERTY_CONNECTOR,
-        PayoutListFilters.JSON_PROPERTY_CURRENCY,
-        PayoutListFilters.JSON_PROPERTY_STATUS,
-        PayoutListFilters.JSON_PROPERTY_PAYOUT_METHOD
-    })
+ * PayoutListFilters
+ */
+@JsonPropertyOrder({
+  PayoutListFilters.JSON_PROPERTY_CONNECTOR,
+  PayoutListFilters.JSON_PROPERTY_CURRENCY,
+  PayoutListFilters.JSON_PROPERTY_STATUS,
+  PayoutListFilters.JSON_PROPERTY_PAYOUT_METHOD
+})
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class PayoutListFilters {
-        public static final String JSON_PROPERTY_CONNECTOR = "connector";
-    @javax.annotation.Nonnull
-            private List<PayoutConnectors> connector = new ArrayList<>();
+  public static final String JSON_PROPERTY_CONNECTOR = "connector";
+  @javax.annotation.Nonnull
+  private List<PayoutConnectors> connector = new ArrayList<>();
 
-        public static final String JSON_PROPERTY_CURRENCY = "currency";
-    @javax.annotation.Nonnull
-            private List<Currency> currency = new ArrayList<>();
+  public static final String JSON_PROPERTY_CURRENCY = "currency";
+  @javax.annotation.Nonnull
+  private List<Currency> currency = new ArrayList<>();
 
-        public static final String JSON_PROPERTY_STATUS = "status";
-    @javax.annotation.Nonnull
-            private List<PayoutStatus> status = new ArrayList<>();
+  public static final String JSON_PROPERTY_STATUS = "status";
+  @javax.annotation.Nonnull
+  private List<PayoutStatus> status = new ArrayList<>();
 
-        public static final String JSON_PROPERTY_PAYOUT_METHOD = "payout_method";
-    @javax.annotation.Nonnull
-            private List<PayoutType> payoutMethod = new ArrayList<>();
+  public static final String JSON_PROPERTY_PAYOUT_METHOD = "payout_method";
+  @javax.annotation.Nonnull
+  private List<PayoutType> payoutMethod = new ArrayList<>();
 
-public PayoutListFilters() {
-}
+  public PayoutListFilters() {
+  }
 
-        public PayoutListFilters connector(@javax.annotation.Nonnull List<PayoutConnectors> connector) {
-        
-        this.connector = connector;
-        return this;
-        }
+  public PayoutListFilters connector(@javax.annotation.Nonnull List<PayoutConnectors> connector) {
+    
+    this.connector = connector;
+    return this;
+  }
 
-            public PayoutListFilters addConnectorItem(PayoutConnectors connectorItem) {
-                if (this.connector == null) {
-                this.connector = new ArrayList<>();
-                }
-                this.connector.add(connectorItem);
-                return this;
-            }
+  public PayoutListFilters addConnectorItem(PayoutConnectors connectorItem) {
+    if (this.connector == null) {
+      this.connector = new ArrayList<>();
+    }
+    this.connector.add(connectorItem);
+    return this;
+  }
 
-    /**
-        * The list of available connector filters
-    * @return connector
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_CONNECTOR)
+  /**
+   * The list of available connector filters
+   * @return connector
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_CONNECTOR)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public List<PayoutConnectors> getConnector() {
-        return connector;
-    }
+  public List<PayoutConnectors> getConnector() {
+    return connector;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_CONNECTOR)
+  @JsonProperty(JSON_PROPERTY_CONNECTOR)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setConnector(@javax.annotation.Nonnull List<PayoutConnectors> connector) {
-            this.connector = connector;
-        }
+    this.connector = connector;
+  }
 
-        public PayoutListFilters currency(@javax.annotation.Nonnull List<Currency> currency) {
-        
-        this.currency = currency;
-        return this;
-        }
+  public PayoutListFilters currency(@javax.annotation.Nonnull List<Currency> currency) {
+    
+    this.currency = currency;
+    return this;
+  }
 
-            public PayoutListFilters addCurrencyItem(Currency currencyItem) {
-                if (this.currency == null) {
-                this.currency = new ArrayList<>();
-                }
-                this.currency.add(currencyItem);
-                return this;
-            }
+  public PayoutListFilters addCurrencyItem(Currency currencyItem) {
+    if (this.currency == null) {
+      this.currency = new ArrayList<>();
+    }
+    this.currency.add(currencyItem);
+    return this;
+  }
 
-    /**
-        * The list of available currency filters
-    * @return currency
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_CURRENCY)
+  /**
+   * The list of available currency filters
+   * @return currency
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_CURRENCY)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public List<Currency> getCurrency() {
-        return currency;
-    }
+  public List<Currency> getCurrency() {
+    return currency;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_CURRENCY)
+  @JsonProperty(JSON_PROPERTY_CURRENCY)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setCurrency(@javax.annotation.Nonnull List<Currency> currency) {
-            this.currency = currency;
-        }
+    this.currency = currency;
+  }
 
-        public PayoutListFilters status(@javax.annotation.Nonnull List<PayoutStatus> status) {
-        
-        this.status = status;
-        return this;
-        }
+  public PayoutListFilters status(@javax.annotation.Nonnull List<PayoutStatus> status) {
+    
+    this.status = status;
+    return this;
+  }
 
-            public PayoutListFilters addStatusItem(PayoutStatus statusItem) {
-                if (this.status == null) {
-                this.status = new ArrayList<>();
-                }
-                this.status.add(statusItem);
-                return this;
-            }
+  public PayoutListFilters addStatusItem(PayoutStatus statusItem) {
+    if (this.status == null) {
+      this.status = new ArrayList<>();
+    }
+    this.status.add(statusItem);
+    return this;
+  }
 
-    /**
-        * The list of available payout status filters
-    * @return status
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_STATUS)
+  /**
+   * The list of available payout status filters
+   * @return status
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_STATUS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public List<PayoutStatus> getStatus() {
-        return status;
-    }
+  public List<PayoutStatus> getStatus() {
+    return status;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_STATUS)
+  @JsonProperty(JSON_PROPERTY_STATUS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setStatus(@javax.annotation.Nonnull List<PayoutStatus> status) {
-            this.status = status;
-        }
+    this.status = status;
+  }
 
-        public PayoutListFilters payoutMethod(@javax.annotation.Nonnull List<PayoutType> payoutMethod) {
-        
-        this.payoutMethod = payoutMethod;
-        return this;
-        }
+  public PayoutListFilters payoutMethod(@javax.annotation.Nonnull List<PayoutType> payoutMethod) {
+    
+    this.payoutMethod = payoutMethod;
+    return this;
+  }
 
-            public PayoutListFilters addPayoutMethodItem(PayoutType payoutMethodItem) {
-                if (this.payoutMethod == null) {
-                this.payoutMethod = new ArrayList<>();
-                }
-                this.payoutMethod.add(payoutMethodItem);
-                return this;
-            }
+  public PayoutListFilters addPayoutMethodItem(PayoutType payoutMethodItem) {
+    if (this.payoutMethod == null) {
+      this.payoutMethod = new ArrayList<>();
+    }
+    this.payoutMethod.add(payoutMethodItem);
+    return this;
+  }
 
-    /**
-        * The list of available payout method filters
-    * @return payoutMethod
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_PAYOUT_METHOD)
+  /**
+   * The list of available payout method filters
+   * @return payoutMethod
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_PAYOUT_METHOD)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public List<PayoutType> getPayoutMethod() {
-        return payoutMethod;
-    }
+  public List<PayoutType> getPayoutMethod() {
+    return payoutMethod;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_PAYOUT_METHOD)
+  @JsonProperty(JSON_PROPERTY_PAYOUT_METHOD)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setPayoutMethod(@javax.annotation.Nonnull List<PayoutType> payoutMethod) {
-            this.payoutMethod = payoutMethod;
-        }
+    this.payoutMethod = payoutMethod;
+  }
 
-@Override
-public boolean equals(Object o) {
+  @Override
+  public boolean equals(Object o) {
     if (this == o) {
-    return true;
+      return true;
     }
     if (o == null || getClass() != o.getClass()) {
-    return false;
+      return false;
     }
-        PayoutListFilters payoutListFilters = (PayoutListFilters) o;
-        return Objects.equals(this.connector, payoutListFilters.connector) &&
+    PayoutListFilters payoutListFilters = (PayoutListFilters) o;
+    return Objects.equals(this.connector, payoutListFilters.connector) &&
         Objects.equals(this.currency, payoutListFilters.currency) &&
         Objects.equals(this.status, payoutListFilters.status) &&
         Objects.equals(this.payoutMethod, payoutListFilters.payoutMethod);
-}
+  }
 
-    @Override
-    public int hashCode() {
-        return Objects.hash(connector, currency, status, payoutMethod);
-    }
+  @Override
+  public int hashCode() {
+    return Objects.hash(connector, currency, status, payoutMethod);
+  }
 
-    @Override
-    public String toString() {
+  @Override
+  public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class PayoutListFilters {\n");
-        sb.append("    connector: ").append(toIndentedString(connector)).append("\n");
-        sb.append("    currency: ").append(toIndentedString(currency)).append("\n");
-        sb.append("    status: ").append(toIndentedString(status)).append("\n");
-        sb.append("    payoutMethod: ").append(toIndentedString(payoutMethod)).append("\n");
+    sb.append("    connector: ").append(toIndentedString(connector)).append("\n");
+    sb.append("    currency: ").append(toIndentedString(currency)).append("\n");
+    sb.append("    status: ").append(toIndentedString(status)).append("\n");
+    sb.append("    payoutMethod: ").append(toIndentedString(payoutMethod)).append("\n");
     sb.append("}");
     return sb.toString();
-    }
+  }
 
-    /**
-    * Convert the given object to string with each line indented by 4 spaces
-    * (except the first line).
-    */
-    private String toIndentedString(Object o) {
+  /**
+   * Convert the given object to string with each line indented by 4 spaces
+   * (except the first line).
+   */
+  private String toIndentedString(Object o) {
     if (o == null) {
-    return "null";
+      return "null";
     }
     return o.toString().replace("\n", "\n    ");
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @return URL query string
+   */
+  public String toUrlQueryString() {
+    return toUrlQueryString(null);
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @param prefix prefix of the query string
+   * @return URL query string
+   */
+  public String toUrlQueryString(String prefix) {
+    String suffix = "";
+    String containerSuffix = "";
+    String containerPrefix = "";
+    if (prefix == null) {
+      // style=form, explode=true, e.g. /pet?name=cat&type=manx
+      prefix = "";
+    } else {
+      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+      prefix = prefix + "[";
+      suffix = "]";
+      containerSuffix = "]";
+      containerPrefix = "[";
     }
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @return URL query string
-        */
-        public String toUrlQueryString() {
-        return toUrlQueryString(null);
+    StringJoiner joiner = new StringJoiner("&");
+
+    // add `connector` to the URL query string
+    if (getConnector() != null) {
+      for (int i = 0; i < getConnector().size(); i++) {
+        if (getConnector().get(i) != null) {
+          try {
+            joiner.add(String.format("%sconnector%s%s=%s", prefix, suffix,
+                "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix),
+                URLEncoder.encode(String.valueOf(getConnector().get(i)), "UTF-8").replaceAll("\\+", "%20")));
+          } catch (UnsupportedEncodingException e) {
+            // Should never happen, UTF-8 is always supported
+            throw new RuntimeException(e);
+          }
         }
-
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @param prefix prefix of the query string
-        * @return URL query string
-        */
-        public String toUrlQueryString(String prefix) {
-        String suffix = "";
-        String containerSuffix = "";
-        String containerPrefix = "";
-        if (prefix == null) {
-        // style=form, explode=true, e.g. /pet?name=cat&type=manx
-        prefix = "";
-        } else {
-        // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
-        prefix = prefix + "[";
-        suffix = "]";
-        containerSuffix = "]";
-        containerPrefix = "[";
-        }
-
-        StringJoiner joiner = new StringJoiner("&");
-
-            // add `connector` to the URL query string
-                            if (getConnector() != null) {
-                            for (int i = 0; i < getConnector().size(); i++) {
-                            if (getConnector().get(i) != null) {
-                            try {
-                            joiner.add(String.format("%sconnector%s%s=%s", prefix, suffix,
-                            "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix),
-                            URLEncoder.encode(String.valueOf(getConnector().get(i)), "UTF-8").replaceAll("\\+", "%20")));
-                            } catch (UnsupportedEncodingException e) {
-                            // Should never happen, UTF-8 is always supported
-                            throw new RuntimeException(e);
-                            }
-                            }
-                            }
-                            }
-
-            // add `currency` to the URL query string
-                            if (getCurrency() != null) {
-                            for (int i = 0; i < getCurrency().size(); i++) {
-                            if (getCurrency().get(i) != null) {
-                            try {
-                            joiner.add(String.format("%scurrency%s%s=%s", prefix, suffix,
-                            "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix),
-                            URLEncoder.encode(String.valueOf(getCurrency().get(i)), "UTF-8").replaceAll("\\+", "%20")));
-                            } catch (UnsupportedEncodingException e) {
-                            // Should never happen, UTF-8 is always supported
-                            throw new RuntimeException(e);
-                            }
-                            }
-                            }
-                            }
-
-            // add `status` to the URL query string
-                            if (getStatus() != null) {
-                            for (int i = 0; i < getStatus().size(); i++) {
-                            if (getStatus().get(i) != null) {
-                            try {
-                            joiner.add(String.format("%sstatus%s%s=%s", prefix, suffix,
-                            "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix),
-                            URLEncoder.encode(String.valueOf(getStatus().get(i)), "UTF-8").replaceAll("\\+", "%20")));
-                            } catch (UnsupportedEncodingException e) {
-                            // Should never happen, UTF-8 is always supported
-                            throw new RuntimeException(e);
-                            }
-                            }
-                            }
-                            }
-
-            // add `payout_method` to the URL query string
-                            if (getPayoutMethod() != null) {
-                            for (int i = 0; i < getPayoutMethod().size(); i++) {
-                            if (getPayoutMethod().get(i) != null) {
-                            try {
-                            joiner.add(String.format("%spayout_method%s%s=%s", prefix, suffix,
-                            "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix),
-                            URLEncoder.encode(String.valueOf(getPayoutMethod().get(i)), "UTF-8").replaceAll("\\+", "%20")));
-                            } catch (UnsupportedEncodingException e) {
-                            // Should never happen, UTF-8 is always supported
-                            throw new RuntimeException(e);
-                            }
-                            }
-                            }
-                            }
-
-        return joiner.toString();
-        }
-
+      }
     }
+
+    // add `currency` to the URL query string
+    if (getCurrency() != null) {
+      for (int i = 0; i < getCurrency().size(); i++) {
+        if (getCurrency().get(i) != null) {
+          try {
+            joiner.add(String.format("%scurrency%s%s=%s", prefix, suffix,
+                "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix),
+                URLEncoder.encode(String.valueOf(getCurrency().get(i)), "UTF-8").replaceAll("\\+", "%20")));
+          } catch (UnsupportedEncodingException e) {
+            // Should never happen, UTF-8 is always supported
+            throw new RuntimeException(e);
+          }
+        }
+      }
+    }
+
+    // add `status` to the URL query string
+    if (getStatus() != null) {
+      for (int i = 0; i < getStatus().size(); i++) {
+        if (getStatus().get(i) != null) {
+          try {
+            joiner.add(String.format("%sstatus%s%s=%s", prefix, suffix,
+                "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix),
+                URLEncoder.encode(String.valueOf(getStatus().get(i)), "UTF-8").replaceAll("\\+", "%20")));
+          } catch (UnsupportedEncodingException e) {
+            // Should never happen, UTF-8 is always supported
+            throw new RuntimeException(e);
+          }
+        }
+      }
+    }
+
+    // add `payout_method` to the URL query string
+    if (getPayoutMethod() != null) {
+      for (int i = 0; i < getPayoutMethod().size(); i++) {
+        if (getPayoutMethod().get(i) != null) {
+          try {
+            joiner.add(String.format("%spayout_method%s%s=%s", prefix, suffix,
+                "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix),
+                URLEncoder.encode(String.valueOf(getPayoutMethod().get(i)), "UTF-8").replaceAll("\\+", "%20")));
+          } catch (UnsupportedEncodingException e) {
+            // Should never happen, UTF-8 is always supported
+            throw new RuntimeException(e);
+          }
+        }
+      }
+    }
+
+    return joiner.toString();
+  }
+
+}
 

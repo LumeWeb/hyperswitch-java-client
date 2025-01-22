@@ -28,122 +28,122 @@ import java.net.URLEncoder;
 import java.util.StringJoiner;
 
 /**
-* FieldTypeOneOf1
-*/
-    @JsonPropertyOrder({
-        FieldTypeOneOf1.JSON_PROPERTY_USER_CURRENCY
-    })
-            @JsonTypeName("FieldType_oneOf_1")
+ * FieldTypeOneOf1
+ */
+@JsonPropertyOrder({
+  FieldTypeOneOf1.JSON_PROPERTY_USER_CURRENCY
+})
+@JsonTypeName("FieldType_oneOf_1")
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class FieldTypeOneOf1 {
-        public static final String JSON_PROPERTY_USER_CURRENCY = "user_currency";
-    @javax.annotation.Nonnull
-            private FieldTypeOneOfUserCountry userCurrency;
+  public static final String JSON_PROPERTY_USER_CURRENCY = "user_currency";
+  @javax.annotation.Nonnull
+  private FieldTypeOneOfUserCountry userCurrency;
 
-public FieldTypeOneOf1() {
-}
+  public FieldTypeOneOf1() {
+  }
 
-        public FieldTypeOneOf1 userCurrency(@javax.annotation.Nonnull FieldTypeOneOfUserCountry userCurrency) {
-        
-        this.userCurrency = userCurrency;
-        return this;
-        }
+  public FieldTypeOneOf1 userCurrency(@javax.annotation.Nonnull FieldTypeOneOfUserCountry userCurrency) {
+    
+    this.userCurrency = userCurrency;
+    return this;
+  }
 
-    /**
-        * Get userCurrency
-    * @return userCurrency
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_USER_CURRENCY)
+  /**
+   * Get userCurrency
+   * @return userCurrency
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_USER_CURRENCY)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public FieldTypeOneOfUserCountry getUserCurrency() {
-        return userCurrency;
-    }
+  public FieldTypeOneOfUserCountry getUserCurrency() {
+    return userCurrency;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_USER_CURRENCY)
+  @JsonProperty(JSON_PROPERTY_USER_CURRENCY)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setUserCurrency(@javax.annotation.Nonnull FieldTypeOneOfUserCountry userCurrency) {
-            this.userCurrency = userCurrency;
-        }
+    this.userCurrency = userCurrency;
+  }
 
-@Override
-public boolean equals(Object o) {
+  @Override
+  public boolean equals(Object o) {
     if (this == o) {
-    return true;
+      return true;
     }
     if (o == null || getClass() != o.getClass()) {
-    return false;
+      return false;
     }
-        FieldTypeOneOf1 fieldTypeOneOf1 = (FieldTypeOneOf1) o;
-        return Objects.equals(this.userCurrency, fieldTypeOneOf1.userCurrency);
-}
+    FieldTypeOneOf1 fieldTypeOneOf1 = (FieldTypeOneOf1) o;
+    return Objects.equals(this.userCurrency, fieldTypeOneOf1.userCurrency);
+  }
 
-    @Override
-    public int hashCode() {
-        return Objects.hash(userCurrency);
-    }
+  @Override
+  public int hashCode() {
+    return Objects.hash(userCurrency);
+  }
 
-    @Override
-    public String toString() {
+  @Override
+  public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class FieldTypeOneOf1 {\n");
-        sb.append("    userCurrency: ").append(toIndentedString(userCurrency)).append("\n");
+    sb.append("    userCurrency: ").append(toIndentedString(userCurrency)).append("\n");
     sb.append("}");
     return sb.toString();
-    }
+  }
 
-    /**
-    * Convert the given object to string with each line indented by 4 spaces
-    * (except the first line).
-    */
-    private String toIndentedString(Object o) {
+  /**
+   * Convert the given object to string with each line indented by 4 spaces
+   * (except the first line).
+   */
+  private String toIndentedString(Object o) {
     if (o == null) {
-    return "null";
+      return "null";
     }
     return o.toString().replace("\n", "\n    ");
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @return URL query string
+   */
+  public String toUrlQueryString() {
+    return toUrlQueryString(null);
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @param prefix prefix of the query string
+   * @return URL query string
+   */
+  public String toUrlQueryString(String prefix) {
+    String suffix = "";
+    String containerSuffix = "";
+    String containerPrefix = "";
+    if (prefix == null) {
+      // style=form, explode=true, e.g. /pet?name=cat&type=manx
+      prefix = "";
+    } else {
+      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+      prefix = prefix + "[";
+      suffix = "]";
+      containerSuffix = "]";
+      containerPrefix = "[";
     }
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @return URL query string
-        */
-        public String toUrlQueryString() {
-        return toUrlQueryString(null);
-        }
+    StringJoiner joiner = new StringJoiner("&");
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @param prefix prefix of the query string
-        * @return URL query string
-        */
-        public String toUrlQueryString(String prefix) {
-        String suffix = "";
-        String containerSuffix = "";
-        String containerPrefix = "";
-        if (prefix == null) {
-        // style=form, explode=true, e.g. /pet?name=cat&type=manx
-        prefix = "";
-        } else {
-        // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
-        prefix = prefix + "[";
-        suffix = "]";
-        containerSuffix = "]";
-        containerPrefix = "[";
-        }
-
-        StringJoiner joiner = new StringJoiner("&");
-
-            // add `user_currency` to the URL query string
-                            if (getUserCurrency() != null) {
-                            joiner.add(getUserCurrency().toUrlQueryString(prefix + "user_currency" + suffix));
-                            }
-
-        return joiner.toString();
-        }
-
+    // add `user_currency` to the URL query string
+    if (getUserCurrency() != null) {
+      joiner.add(getUserCurrency().toUrlQueryString(prefix + "user_currency" + suffix));
     }
+
+    return joiner.toString();
+  }
+
+}
 

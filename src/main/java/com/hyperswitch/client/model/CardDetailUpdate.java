@@ -31,271 +31,271 @@ import java.net.URLEncoder;
 import java.util.StringJoiner;
 
 /**
-* CardDetailUpdate
-*/
-    @JsonPropertyOrder({
-        CardDetailUpdate.JSON_PROPERTY_CARD_EXP_MONTH,
-        CardDetailUpdate.JSON_PROPERTY_CARD_EXP_YEAR,
-        CardDetailUpdate.JSON_PROPERTY_CARD_HOLDER_NAME,
-        CardDetailUpdate.JSON_PROPERTY_NICK_NAME
-    })
+ * CardDetailUpdate
+ */
+@JsonPropertyOrder({
+  CardDetailUpdate.JSON_PROPERTY_CARD_EXP_MONTH,
+  CardDetailUpdate.JSON_PROPERTY_CARD_EXP_YEAR,
+  CardDetailUpdate.JSON_PROPERTY_CARD_HOLDER_NAME,
+  CardDetailUpdate.JSON_PROPERTY_NICK_NAME
+})
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class CardDetailUpdate {
-        public static final String JSON_PROPERTY_CARD_EXP_MONTH = "card_exp_month";
-    @javax.annotation.Nonnull
-            private String cardExpMonth;
+  public static final String JSON_PROPERTY_CARD_EXP_MONTH = "card_exp_month";
+  @javax.annotation.Nonnull
+  private String cardExpMonth;
 
-        public static final String JSON_PROPERTY_CARD_EXP_YEAR = "card_exp_year";
-    @javax.annotation.Nonnull
-            private String cardExpYear;
+  public static final String JSON_PROPERTY_CARD_EXP_YEAR = "card_exp_year";
+  @javax.annotation.Nonnull
+  private String cardExpYear;
 
-        public static final String JSON_PROPERTY_CARD_HOLDER_NAME = "card_holder_name";
-    @javax.annotation.Nonnull
-            private String cardHolderName;
+  public static final String JSON_PROPERTY_CARD_HOLDER_NAME = "card_holder_name";
+  @javax.annotation.Nonnull
+  private String cardHolderName;
 
-        public static final String JSON_PROPERTY_NICK_NAME = "nick_name";
-    @javax.annotation.Nullable
-            private JsonNullable<String> nickName = JsonNullable.<String>undefined();
+  public static final String JSON_PROPERTY_NICK_NAME = "nick_name";
+  @javax.annotation.Nullable
+  private JsonNullable<String> nickName = JsonNullable.<String>undefined();
 
-public CardDetailUpdate() {
-}
+  public CardDetailUpdate() {
+  }
 
-        public CardDetailUpdate cardExpMonth(@javax.annotation.Nonnull String cardExpMonth) {
-        
-        this.cardExpMonth = cardExpMonth;
-        return this;
-        }
+  public CardDetailUpdate cardExpMonth(@javax.annotation.Nonnull String cardExpMonth) {
+    
+    this.cardExpMonth = cardExpMonth;
+    return this;
+  }
 
-    /**
-        * Card Expiry Month
-    * @return cardExpMonth
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_CARD_EXP_MONTH)
+  /**
+   * Card Expiry Month
+   * @return cardExpMonth
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_CARD_EXP_MONTH)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public String getCardExpMonth() {
-        return cardExpMonth;
-    }
+  public String getCardExpMonth() {
+    return cardExpMonth;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_CARD_EXP_MONTH)
+  @JsonProperty(JSON_PROPERTY_CARD_EXP_MONTH)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setCardExpMonth(@javax.annotation.Nonnull String cardExpMonth) {
-            this.cardExpMonth = cardExpMonth;
-        }
+    this.cardExpMonth = cardExpMonth;
+  }
 
-        public CardDetailUpdate cardExpYear(@javax.annotation.Nonnull String cardExpYear) {
-        
-        this.cardExpYear = cardExpYear;
-        return this;
-        }
+  public CardDetailUpdate cardExpYear(@javax.annotation.Nonnull String cardExpYear) {
+    
+    this.cardExpYear = cardExpYear;
+    return this;
+  }
 
-    /**
-        * Card Expiry Year
-    * @return cardExpYear
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_CARD_EXP_YEAR)
+  /**
+   * Card Expiry Year
+   * @return cardExpYear
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_CARD_EXP_YEAR)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public String getCardExpYear() {
-        return cardExpYear;
-    }
+  public String getCardExpYear() {
+    return cardExpYear;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_CARD_EXP_YEAR)
+  @JsonProperty(JSON_PROPERTY_CARD_EXP_YEAR)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setCardExpYear(@javax.annotation.Nonnull String cardExpYear) {
-            this.cardExpYear = cardExpYear;
-        }
+    this.cardExpYear = cardExpYear;
+  }
 
-        public CardDetailUpdate cardHolderName(@javax.annotation.Nonnull String cardHolderName) {
-        
-        this.cardHolderName = cardHolderName;
-        return this;
-        }
+  public CardDetailUpdate cardHolderName(@javax.annotation.Nonnull String cardHolderName) {
+    
+    this.cardHolderName = cardHolderName;
+    return this;
+  }
 
-    /**
-        * Card Holder Name
-    * @return cardHolderName
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_CARD_HOLDER_NAME)
+  /**
+   * Card Holder Name
+   * @return cardHolderName
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_CARD_HOLDER_NAME)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public String getCardHolderName() {
-        return cardHolderName;
-    }
+  public String getCardHolderName() {
+    return cardHolderName;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_CARD_HOLDER_NAME)
+  @JsonProperty(JSON_PROPERTY_CARD_HOLDER_NAME)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setCardHolderName(@javax.annotation.Nonnull String cardHolderName) {
-            this.cardHolderName = cardHolderName;
-        }
+    this.cardHolderName = cardHolderName;
+  }
 
-        public CardDetailUpdate nickName(@javax.annotation.Nullable String nickName) {
-        this.nickName = JsonNullable.<String>of(nickName);
-        
-        return this;
-        }
-
-    /**
-        * Card Holder&#39;s Nick Name
-    * @return nickName
-    */
-    @javax.annotation.Nullable
-        @JsonIgnore
+  public CardDetailUpdate nickName(@javax.annotation.Nullable String nickName) {
+    this.nickName = JsonNullable.<String>of(nickName);
     
-    public String getNickName() {
-                return nickName.orElse(null);
-    }
+    return this;
+  }
 
-          @JsonProperty(JSON_PROPERTY_NICK_NAME)
+  /**
+   * Card Holder&#39;s Nick Name
+   * @return nickName
+   */
+  @javax.annotation.Nullable
+  @JsonIgnore
+
+  public String getNickName() {
+        return nickName.orElse(null);
+  }
+
+  @JsonProperty(JSON_PROPERTY_NICK_NAME)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-        public JsonNullable<String> getNickName_JsonNullable() {
-        return nickName;
-        }
-    
-        @JsonProperty(JSON_PROPERTY_NICK_NAME)
-        public void setNickName_JsonNullable(JsonNullable<String> nickName) {
-        this.nickName = nickName;
-        }
+  public JsonNullable<String> getNickName_JsonNullable() {
+    return nickName;
+  }
+  
+  @JsonProperty(JSON_PROPERTY_NICK_NAME)
+  public void setNickName_JsonNullable(JsonNullable<String> nickName) {
+    this.nickName = nickName;
+  }
 
-          public void setNickName(@javax.annotation.Nullable String nickName) {
-            this.nickName = JsonNullable.<String>of(nickName);
-        }
+  public void setNickName(@javax.annotation.Nullable String nickName) {
+    this.nickName = JsonNullable.<String>of(nickName);
+  }
 
-@Override
-public boolean equals(Object o) {
+  @Override
+  public boolean equals(Object o) {
     if (this == o) {
-    return true;
+      return true;
     }
     if (o == null || getClass() != o.getClass()) {
-    return false;
+      return false;
     }
-        CardDetailUpdate cardDetailUpdate = (CardDetailUpdate) o;
-        return Objects.equals(this.cardExpMonth, cardDetailUpdate.cardExpMonth) &&
+    CardDetailUpdate cardDetailUpdate = (CardDetailUpdate) o;
+    return Objects.equals(this.cardExpMonth, cardDetailUpdate.cardExpMonth) &&
         Objects.equals(this.cardExpYear, cardDetailUpdate.cardExpYear) &&
         Objects.equals(this.cardHolderName, cardDetailUpdate.cardHolderName) &&
         equalsNullable(this.nickName, cardDetailUpdate.nickName);
-}
+  }
 
-    private static <T> boolean equalsNullable(JsonNullable<T> a, JsonNullable<T> b) {
-        return a == b || (a != null && b != null && a.isPresent() && b.isPresent() && Objects.deepEquals(a.get(), b.get()));
-        }
+  private static <T> boolean equalsNullable(JsonNullable<T> a, JsonNullable<T> b) {
+    return a == b || (a != null && b != null && a.isPresent() && b.isPresent() && Objects.deepEquals(a.get(), b.get()));
+  }
 
-    @Override
-    public int hashCode() {
-        return Objects.hash(cardExpMonth, cardExpYear, cardHolderName, hashCodeNullable(nickName));
+  @Override
+  public int hashCode() {
+    return Objects.hash(cardExpMonth, cardExpYear, cardHolderName, hashCodeNullable(nickName));
+  }
+
+  private static <T> int hashCodeNullable(JsonNullable<T> a) {
+    if (a == null) {
+      return 1;
     }
+    return a.isPresent() ? Arrays.deepHashCode(new Object[]{a.get()}) : 31;
+  }
 
-        private static <T> int hashCodeNullable(JsonNullable<T> a) {
-        if (a == null) {
-        return 1;
-        }
-        return a.isPresent() ? Arrays.deepHashCode(new Object[]{a.get()}) : 31;
-        }
-
-    @Override
-    public String toString() {
+  @Override
+  public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class CardDetailUpdate {\n");
-        sb.append("    cardExpMonth: ").append(toIndentedString(cardExpMonth)).append("\n");
-        sb.append("    cardExpYear: ").append(toIndentedString(cardExpYear)).append("\n");
-        sb.append("    cardHolderName: ").append(toIndentedString(cardHolderName)).append("\n");
-        sb.append("    nickName: ").append(toIndentedString(nickName)).append("\n");
+    sb.append("    cardExpMonth: ").append(toIndentedString(cardExpMonth)).append("\n");
+    sb.append("    cardExpYear: ").append(toIndentedString(cardExpYear)).append("\n");
+    sb.append("    cardHolderName: ").append(toIndentedString(cardHolderName)).append("\n");
+    sb.append("    nickName: ").append(toIndentedString(nickName)).append("\n");
     sb.append("}");
     return sb.toString();
-    }
+  }
 
-    /**
-    * Convert the given object to string with each line indented by 4 spaces
-    * (except the first line).
-    */
-    private String toIndentedString(Object o) {
+  /**
+   * Convert the given object to string with each line indented by 4 spaces
+   * (except the first line).
+   */
+  private String toIndentedString(Object o) {
     if (o == null) {
-    return "null";
+      return "null";
     }
     return o.toString().replace("\n", "\n    ");
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @return URL query string
+   */
+  public String toUrlQueryString() {
+    return toUrlQueryString(null);
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @param prefix prefix of the query string
+   * @return URL query string
+   */
+  public String toUrlQueryString(String prefix) {
+    String suffix = "";
+    String containerSuffix = "";
+    String containerPrefix = "";
+    if (prefix == null) {
+      // style=form, explode=true, e.g. /pet?name=cat&type=manx
+      prefix = "";
+    } else {
+      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+      prefix = prefix + "[";
+      suffix = "]";
+      containerSuffix = "]";
+      containerPrefix = "[";
     }
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @return URL query string
-        */
-        public String toUrlQueryString() {
-        return toUrlQueryString(null);
-        }
+    StringJoiner joiner = new StringJoiner("&");
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @param prefix prefix of the query string
-        * @return URL query string
-        */
-        public String toUrlQueryString(String prefix) {
-        String suffix = "";
-        String containerSuffix = "";
-        String containerPrefix = "";
-        if (prefix == null) {
-        // style=form, explode=true, e.g. /pet?name=cat&type=manx
-        prefix = "";
-        } else {
-        // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
-        prefix = prefix + "[";
-        suffix = "]";
-        containerSuffix = "]";
-        containerPrefix = "[";
-        }
-
-        StringJoiner joiner = new StringJoiner("&");
-
-            // add `card_exp_month` to the URL query string
-                        if (getCardExpMonth() != null) {
-                        try {
-                        joiner.add(String.format("%scard_exp_month%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCardExpMonth()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-            // add `card_exp_year` to the URL query string
-                        if (getCardExpYear() != null) {
-                        try {
-                        joiner.add(String.format("%scard_exp_year%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCardExpYear()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-            // add `card_holder_name` to the URL query string
-                        if (getCardHolderName() != null) {
-                        try {
-                        joiner.add(String.format("%scard_holder_name%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCardHolderName()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-            // add `nick_name` to the URL query string
-                        if (getNickName() != null) {
-                        try {
-                        joiner.add(String.format("%snick_name%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getNickName()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-        return joiner.toString();
-        }
-
+    // add `card_exp_month` to the URL query string
+    if (getCardExpMonth() != null) {
+      try {
+        joiner.add(String.format("%scard_exp_month%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCardExpMonth()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
     }
+
+    // add `card_exp_year` to the URL query string
+    if (getCardExpYear() != null) {
+      try {
+        joiner.add(String.format("%scard_exp_year%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCardExpYear()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `card_holder_name` to the URL query string
+    if (getCardHolderName() != null) {
+      try {
+        joiner.add(String.format("%scard_holder_name%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCardHolderName()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `nick_name` to the URL query string
+    if (getNickName() != null) {
+      try {
+        joiner.add(String.format("%snick_name%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getNickName()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    return joiner.toString();
+  }
+
+}
 

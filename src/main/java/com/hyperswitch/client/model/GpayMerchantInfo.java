@@ -31,187 +31,187 @@ import java.net.URLEncoder;
 import java.util.StringJoiner;
 
 /**
-* GpayMerchantInfo
-*/
-    @JsonPropertyOrder({
-        GpayMerchantInfo.JSON_PROPERTY_MERCHANT_ID,
-        GpayMerchantInfo.JSON_PROPERTY_MERCHANT_NAME
-    })
+ * GpayMerchantInfo
+ */
+@JsonPropertyOrder({
+  GpayMerchantInfo.JSON_PROPERTY_MERCHANT_ID,
+  GpayMerchantInfo.JSON_PROPERTY_MERCHANT_NAME
+})
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class GpayMerchantInfo {
-        public static final String JSON_PROPERTY_MERCHANT_ID = "merchant_id";
-    @javax.annotation.Nullable
-            private JsonNullable<String> merchantId = JsonNullable.<String>undefined();
+  public static final String JSON_PROPERTY_MERCHANT_ID = "merchant_id";
+  @javax.annotation.Nullable
+  private JsonNullable<String> merchantId = JsonNullable.<String>undefined();
 
-        public static final String JSON_PROPERTY_MERCHANT_NAME = "merchant_name";
-    @javax.annotation.Nonnull
-            private String merchantName;
+  public static final String JSON_PROPERTY_MERCHANT_NAME = "merchant_name";
+  @javax.annotation.Nonnull
+  private String merchantName;
 
-public GpayMerchantInfo() {
-}
+  public GpayMerchantInfo() {
+  }
 
-        public GpayMerchantInfo merchantId(@javax.annotation.Nullable String merchantId) {
-        this.merchantId = JsonNullable.<String>of(merchantId);
-        
-        return this;
-        }
-
-    /**
-        * The merchant Identifier that needs to be passed while invoking Gpay SDK
-    * @return merchantId
-    */
-    @javax.annotation.Nullable
-        @JsonIgnore
+  public GpayMerchantInfo merchantId(@javax.annotation.Nullable String merchantId) {
+    this.merchantId = JsonNullable.<String>of(merchantId);
     
-    public String getMerchantId() {
-                return merchantId.orElse(null);
-    }
+    return this;
+  }
 
-          @JsonProperty(JSON_PROPERTY_MERCHANT_ID)
+  /**
+   * The merchant Identifier that needs to be passed while invoking Gpay SDK
+   * @return merchantId
+   */
+  @javax.annotation.Nullable
+  @JsonIgnore
+
+  public String getMerchantId() {
+        return merchantId.orElse(null);
+  }
+
+  @JsonProperty(JSON_PROPERTY_MERCHANT_ID)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-        public JsonNullable<String> getMerchantId_JsonNullable() {
-        return merchantId;
-        }
+  public JsonNullable<String> getMerchantId_JsonNullable() {
+    return merchantId;
+  }
+  
+  @JsonProperty(JSON_PROPERTY_MERCHANT_ID)
+  public void setMerchantId_JsonNullable(JsonNullable<String> merchantId) {
+    this.merchantId = merchantId;
+  }
+
+  public void setMerchantId(@javax.annotation.Nullable String merchantId) {
+    this.merchantId = JsonNullable.<String>of(merchantId);
+  }
+
+  public GpayMerchantInfo merchantName(@javax.annotation.Nonnull String merchantName) {
     
-        @JsonProperty(JSON_PROPERTY_MERCHANT_ID)
-        public void setMerchantId_JsonNullable(JsonNullable<String> merchantId) {
-        this.merchantId = merchantId;
-        }
+    this.merchantName = merchantName;
+    return this;
+  }
 
-          public void setMerchantId(@javax.annotation.Nullable String merchantId) {
-            this.merchantId = JsonNullable.<String>of(merchantId);
-        }
-
-        public GpayMerchantInfo merchantName(@javax.annotation.Nonnull String merchantName) {
-        
-        this.merchantName = merchantName;
-        return this;
-        }
-
-    /**
-        * The name of the merchant that needs to be displayed on Gpay PopUp
-    * @return merchantName
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_MERCHANT_NAME)
+  /**
+   * The name of the merchant that needs to be displayed on Gpay PopUp
+   * @return merchantName
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_MERCHANT_NAME)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public String getMerchantName() {
-        return merchantName;
-    }
+  public String getMerchantName() {
+    return merchantName;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_MERCHANT_NAME)
+  @JsonProperty(JSON_PROPERTY_MERCHANT_NAME)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setMerchantName(@javax.annotation.Nonnull String merchantName) {
-            this.merchantName = merchantName;
-        }
+    this.merchantName = merchantName;
+  }
 
-@Override
-public boolean equals(Object o) {
+  @Override
+  public boolean equals(Object o) {
     if (this == o) {
-    return true;
+      return true;
     }
     if (o == null || getClass() != o.getClass()) {
-    return false;
+      return false;
     }
-        GpayMerchantInfo gpayMerchantInfo = (GpayMerchantInfo) o;
-        return equalsNullable(this.merchantId, gpayMerchantInfo.merchantId) &&
+    GpayMerchantInfo gpayMerchantInfo = (GpayMerchantInfo) o;
+    return equalsNullable(this.merchantId, gpayMerchantInfo.merchantId) &&
         Objects.equals(this.merchantName, gpayMerchantInfo.merchantName);
-}
+  }
 
-    private static <T> boolean equalsNullable(JsonNullable<T> a, JsonNullable<T> b) {
-        return a == b || (a != null && b != null && a.isPresent() && b.isPresent() && Objects.deepEquals(a.get(), b.get()));
-        }
+  private static <T> boolean equalsNullable(JsonNullable<T> a, JsonNullable<T> b) {
+    return a == b || (a != null && b != null && a.isPresent() && b.isPresent() && Objects.deepEquals(a.get(), b.get()));
+  }
 
-    @Override
-    public int hashCode() {
-        return Objects.hash(hashCodeNullable(merchantId), merchantName);
+  @Override
+  public int hashCode() {
+    return Objects.hash(hashCodeNullable(merchantId), merchantName);
+  }
+
+  private static <T> int hashCodeNullable(JsonNullable<T> a) {
+    if (a == null) {
+      return 1;
     }
+    return a.isPresent() ? Arrays.deepHashCode(new Object[]{a.get()}) : 31;
+  }
 
-        private static <T> int hashCodeNullable(JsonNullable<T> a) {
-        if (a == null) {
-        return 1;
-        }
-        return a.isPresent() ? Arrays.deepHashCode(new Object[]{a.get()}) : 31;
-        }
-
-    @Override
-    public String toString() {
+  @Override
+  public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class GpayMerchantInfo {\n");
-        sb.append("    merchantId: ").append(toIndentedString(merchantId)).append("\n");
-        sb.append("    merchantName: ").append(toIndentedString(merchantName)).append("\n");
+    sb.append("    merchantId: ").append(toIndentedString(merchantId)).append("\n");
+    sb.append("    merchantName: ").append(toIndentedString(merchantName)).append("\n");
     sb.append("}");
     return sb.toString();
-    }
+  }
 
-    /**
-    * Convert the given object to string with each line indented by 4 spaces
-    * (except the first line).
-    */
-    private String toIndentedString(Object o) {
+  /**
+   * Convert the given object to string with each line indented by 4 spaces
+   * (except the first line).
+   */
+  private String toIndentedString(Object o) {
     if (o == null) {
-    return "null";
+      return "null";
     }
     return o.toString().replace("\n", "\n    ");
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @return URL query string
+   */
+  public String toUrlQueryString() {
+    return toUrlQueryString(null);
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @param prefix prefix of the query string
+   * @return URL query string
+   */
+  public String toUrlQueryString(String prefix) {
+    String suffix = "";
+    String containerSuffix = "";
+    String containerPrefix = "";
+    if (prefix == null) {
+      // style=form, explode=true, e.g. /pet?name=cat&type=manx
+      prefix = "";
+    } else {
+      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+      prefix = prefix + "[";
+      suffix = "]";
+      containerSuffix = "]";
+      containerPrefix = "[";
     }
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @return URL query string
-        */
-        public String toUrlQueryString() {
-        return toUrlQueryString(null);
-        }
+    StringJoiner joiner = new StringJoiner("&");
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @param prefix prefix of the query string
-        * @return URL query string
-        */
-        public String toUrlQueryString(String prefix) {
-        String suffix = "";
-        String containerSuffix = "";
-        String containerPrefix = "";
-        if (prefix == null) {
-        // style=form, explode=true, e.g. /pet?name=cat&type=manx
-        prefix = "";
-        } else {
-        // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
-        prefix = prefix + "[";
-        suffix = "]";
-        containerSuffix = "]";
-        containerPrefix = "[";
-        }
-
-        StringJoiner joiner = new StringJoiner("&");
-
-            // add `merchant_id` to the URL query string
-                        if (getMerchantId() != null) {
-                        try {
-                        joiner.add(String.format("%smerchant_id%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getMerchantId()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-            // add `merchant_name` to the URL query string
-                        if (getMerchantName() != null) {
-                        try {
-                        joiner.add(String.format("%smerchant_name%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getMerchantName()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-        return joiner.toString();
-        }
-
+    // add `merchant_id` to the URL query string
+    if (getMerchantId() != null) {
+      try {
+        joiner.add(String.format("%smerchant_id%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getMerchantId()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
     }
+
+    // add `merchant_name` to the URL query string
+    if (getMerchantName() != null) {
+      try {
+        joiner.add(String.format("%smerchant_name%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getMerchantName()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    return joiner.toString();
+  }
+
+}
 

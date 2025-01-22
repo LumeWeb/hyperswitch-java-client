@@ -31,252 +31,252 @@ import java.net.URLEncoder;
 import java.util.StringJoiner;
 
 /**
-* Details of FrmPaymentMethodType are mentioned here... it should be passed in payment connector create api call, and stored in merchant_connector_table
-*/
-    @JsonPropertyOrder({
-        FrmPaymentMethodType.JSON_PROPERTY_PAYMENT_METHOD_TYPE,
-        FrmPaymentMethodType.JSON_PROPERTY_CARD_NETWORKS,
-        FrmPaymentMethodType.JSON_PROPERTY_FLOW,
-        FrmPaymentMethodType.JSON_PROPERTY_ACTION
-    })
+ * Details of FrmPaymentMethodType are mentioned here... it should be passed in payment connector create api call, and stored in merchant_connector_table
+ */
+@JsonPropertyOrder({
+  FrmPaymentMethodType.JSON_PROPERTY_PAYMENT_METHOD_TYPE,
+  FrmPaymentMethodType.JSON_PROPERTY_CARD_NETWORKS,
+  FrmPaymentMethodType.JSON_PROPERTY_FLOW,
+  FrmPaymentMethodType.JSON_PROPERTY_ACTION
+})
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class FrmPaymentMethodType {
-        public static final String JSON_PROPERTY_PAYMENT_METHOD_TYPE = "payment_method_type";
-    @javax.annotation.Nonnull
-            private PaymentMethodType paymentMethodType;
+  public static final String JSON_PROPERTY_PAYMENT_METHOD_TYPE = "payment_method_type";
+  @javax.annotation.Nonnull
+  private PaymentMethodType paymentMethodType;
 
-        public static final String JSON_PROPERTY_CARD_NETWORKS = "card_networks";
-    @javax.annotation.Nonnull
-            private CardNetwork cardNetworks;
+  public static final String JSON_PROPERTY_CARD_NETWORKS = "card_networks";
+  @javax.annotation.Nonnull
+  private CardNetwork cardNetworks;
 
-        public static final String JSON_PROPERTY_FLOW = "flow";
-    @javax.annotation.Nonnull
-            private FrmPreferredFlowTypes flow;
+  public static final String JSON_PROPERTY_FLOW = "flow";
+  @javax.annotation.Nonnull
+  private FrmPreferredFlowTypes flow;
 
-        public static final String JSON_PROPERTY_ACTION = "action";
-    @javax.annotation.Nonnull
-            private FrmAction action;
+  public static final String JSON_PROPERTY_ACTION = "action";
+  @javax.annotation.Nonnull
+  private FrmAction action;
 
-public FrmPaymentMethodType() {
-}
+  public FrmPaymentMethodType() {
+  }
 
-        public FrmPaymentMethodType paymentMethodType(@javax.annotation.Nonnull PaymentMethodType paymentMethodType) {
-        
-        this.paymentMethodType = paymentMethodType;
-        return this;
-        }
+  public FrmPaymentMethodType paymentMethodType(@javax.annotation.Nonnull PaymentMethodType paymentMethodType) {
+    
+    this.paymentMethodType = paymentMethodType;
+    return this;
+  }
 
-    /**
-        * Get paymentMethodType
-    * @return paymentMethodType
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_PAYMENT_METHOD_TYPE)
+  /**
+   * Get paymentMethodType
+   * @return paymentMethodType
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_PAYMENT_METHOD_TYPE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public PaymentMethodType getPaymentMethodType() {
-        return paymentMethodType;
-    }
+  public PaymentMethodType getPaymentMethodType() {
+    return paymentMethodType;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_PAYMENT_METHOD_TYPE)
+  @JsonProperty(JSON_PROPERTY_PAYMENT_METHOD_TYPE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setPaymentMethodType(@javax.annotation.Nonnull PaymentMethodType paymentMethodType) {
-            this.paymentMethodType = paymentMethodType;
-        }
+    this.paymentMethodType = paymentMethodType;
+  }
 
-        public FrmPaymentMethodType cardNetworks(@javax.annotation.Nonnull CardNetwork cardNetworks) {
-        
-        this.cardNetworks = cardNetworks;
-        return this;
-        }
+  public FrmPaymentMethodType cardNetworks(@javax.annotation.Nonnull CardNetwork cardNetworks) {
+    
+    this.cardNetworks = cardNetworks;
+    return this;
+  }
 
-    /**
-        * Get cardNetworks
-    * @return cardNetworks
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_CARD_NETWORKS)
+  /**
+   * Get cardNetworks
+   * @return cardNetworks
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_CARD_NETWORKS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public CardNetwork getCardNetworks() {
-        return cardNetworks;
-    }
+  public CardNetwork getCardNetworks() {
+    return cardNetworks;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_CARD_NETWORKS)
+  @JsonProperty(JSON_PROPERTY_CARD_NETWORKS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setCardNetworks(@javax.annotation.Nonnull CardNetwork cardNetworks) {
-            this.cardNetworks = cardNetworks;
-        }
+    this.cardNetworks = cardNetworks;
+  }
 
-        public FrmPaymentMethodType flow(@javax.annotation.Nonnull FrmPreferredFlowTypes flow) {
-        
-        this.flow = flow;
-        return this;
-        }
+  public FrmPaymentMethodType flow(@javax.annotation.Nonnull FrmPreferredFlowTypes flow) {
+    
+    this.flow = flow;
+    return this;
+  }
 
-    /**
-        * Get flow
-    * @return flow
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_FLOW)
+  /**
+   * Get flow
+   * @return flow
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_FLOW)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public FrmPreferredFlowTypes getFlow() {
-        return flow;
-    }
+  public FrmPreferredFlowTypes getFlow() {
+    return flow;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_FLOW)
+  @JsonProperty(JSON_PROPERTY_FLOW)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setFlow(@javax.annotation.Nonnull FrmPreferredFlowTypes flow) {
-            this.flow = flow;
-        }
+    this.flow = flow;
+  }
 
-        public FrmPaymentMethodType action(@javax.annotation.Nonnull FrmAction action) {
-        
-        this.action = action;
-        return this;
-        }
+  public FrmPaymentMethodType action(@javax.annotation.Nonnull FrmAction action) {
+    
+    this.action = action;
+    return this;
+  }
 
-    /**
-        * Get action
-    * @return action
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_ACTION)
+  /**
+   * Get action
+   * @return action
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_ACTION)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public FrmAction getAction() {
-        return action;
-    }
+  public FrmAction getAction() {
+    return action;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_ACTION)
+  @JsonProperty(JSON_PROPERTY_ACTION)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setAction(@javax.annotation.Nonnull FrmAction action) {
-            this.action = action;
-        }
+    this.action = action;
+  }
 
-@Override
-public boolean equals(Object o) {
+  @Override
+  public boolean equals(Object o) {
     if (this == o) {
-    return true;
+      return true;
     }
     if (o == null || getClass() != o.getClass()) {
-    return false;
+      return false;
     }
-        FrmPaymentMethodType frmPaymentMethodType = (FrmPaymentMethodType) o;
-        return Objects.equals(this.paymentMethodType, frmPaymentMethodType.paymentMethodType) &&
+    FrmPaymentMethodType frmPaymentMethodType = (FrmPaymentMethodType) o;
+    return Objects.equals(this.paymentMethodType, frmPaymentMethodType.paymentMethodType) &&
         Objects.equals(this.cardNetworks, frmPaymentMethodType.cardNetworks) &&
         Objects.equals(this.flow, frmPaymentMethodType.flow) &&
         Objects.equals(this.action, frmPaymentMethodType.action);
-}
+  }
 
-    @Override
-    public int hashCode() {
-        return Objects.hash(paymentMethodType, cardNetworks, flow, action);
-    }
+  @Override
+  public int hashCode() {
+    return Objects.hash(paymentMethodType, cardNetworks, flow, action);
+  }
 
-    @Override
-    public String toString() {
+  @Override
+  public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class FrmPaymentMethodType {\n");
-        sb.append("    paymentMethodType: ").append(toIndentedString(paymentMethodType)).append("\n");
-        sb.append("    cardNetworks: ").append(toIndentedString(cardNetworks)).append("\n");
-        sb.append("    flow: ").append(toIndentedString(flow)).append("\n");
-        sb.append("    action: ").append(toIndentedString(action)).append("\n");
+    sb.append("    paymentMethodType: ").append(toIndentedString(paymentMethodType)).append("\n");
+    sb.append("    cardNetworks: ").append(toIndentedString(cardNetworks)).append("\n");
+    sb.append("    flow: ").append(toIndentedString(flow)).append("\n");
+    sb.append("    action: ").append(toIndentedString(action)).append("\n");
     sb.append("}");
     return sb.toString();
-    }
+  }
 
-    /**
-    * Convert the given object to string with each line indented by 4 spaces
-    * (except the first line).
-    */
-    private String toIndentedString(Object o) {
+  /**
+   * Convert the given object to string with each line indented by 4 spaces
+   * (except the first line).
+   */
+  private String toIndentedString(Object o) {
     if (o == null) {
-    return "null";
+      return "null";
     }
     return o.toString().replace("\n", "\n    ");
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @return URL query string
+   */
+  public String toUrlQueryString() {
+    return toUrlQueryString(null);
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @param prefix prefix of the query string
+   * @return URL query string
+   */
+  public String toUrlQueryString(String prefix) {
+    String suffix = "";
+    String containerSuffix = "";
+    String containerPrefix = "";
+    if (prefix == null) {
+      // style=form, explode=true, e.g. /pet?name=cat&type=manx
+      prefix = "";
+    } else {
+      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+      prefix = prefix + "[";
+      suffix = "]";
+      containerSuffix = "]";
+      containerPrefix = "[";
     }
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @return URL query string
-        */
-        public String toUrlQueryString() {
-        return toUrlQueryString(null);
-        }
+    StringJoiner joiner = new StringJoiner("&");
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @param prefix prefix of the query string
-        * @return URL query string
-        */
-        public String toUrlQueryString(String prefix) {
-        String suffix = "";
-        String containerSuffix = "";
-        String containerPrefix = "";
-        if (prefix == null) {
-        // style=form, explode=true, e.g. /pet?name=cat&type=manx
-        prefix = "";
-        } else {
-        // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
-        prefix = prefix + "[";
-        suffix = "]";
-        containerSuffix = "]";
-        containerPrefix = "[";
-        }
-
-        StringJoiner joiner = new StringJoiner("&");
-
-            // add `payment_method_type` to the URL query string
-                            if (getPaymentMethodType() != null) {
-                            try {
-                            joiner.add(String.format("%spayment_method_type%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getPaymentMethodType()), "UTF-8").replaceAll("\\+", "%20")));
-                            } catch (UnsupportedEncodingException e) {
-                            // Should never happen, UTF-8 is always supported
-                            throw new RuntimeException(e);
-                            }
-                            }
-
-            // add `card_networks` to the URL query string
-                            if (getCardNetworks() != null) {
-                            try {
-                            joiner.add(String.format("%scard_networks%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCardNetworks()), "UTF-8").replaceAll("\\+", "%20")));
-                            } catch (UnsupportedEncodingException e) {
-                            // Should never happen, UTF-8 is always supported
-                            throw new RuntimeException(e);
-                            }
-                            }
-
-            // add `flow` to the URL query string
-                            if (getFlow() != null) {
-                            try {
-                            joiner.add(String.format("%sflow%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getFlow()), "UTF-8").replaceAll("\\+", "%20")));
-                            } catch (UnsupportedEncodingException e) {
-                            // Should never happen, UTF-8 is always supported
-                            throw new RuntimeException(e);
-                            }
-                            }
-
-            // add `action` to the URL query string
-                            if (getAction() != null) {
-                            try {
-                            joiner.add(String.format("%saction%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getAction()), "UTF-8").replaceAll("\\+", "%20")));
-                            } catch (UnsupportedEncodingException e) {
-                            // Should never happen, UTF-8 is always supported
-                            throw new RuntimeException(e);
-                            }
-                            }
-
-        return joiner.toString();
-        }
-
+    // add `payment_method_type` to the URL query string
+    if (getPaymentMethodType() != null) {
+      try {
+        joiner.add(String.format("%spayment_method_type%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getPaymentMethodType()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
     }
+
+    // add `card_networks` to the URL query string
+    if (getCardNetworks() != null) {
+      try {
+        joiner.add(String.format("%scard_networks%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCardNetworks()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `flow` to the URL query string
+    if (getFlow() != null) {
+      try {
+        joiner.add(String.format("%sflow%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getFlow()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `action` to the URL query string
+    if (getAction() != null) {
+      try {
+        joiner.add(String.format("%saction%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getAction()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    return joiner.toString();
+  }
+
+}
 

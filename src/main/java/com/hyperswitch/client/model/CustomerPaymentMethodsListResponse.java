@@ -35,195 +35,195 @@ import java.net.URLEncoder;
 import java.util.StringJoiner;
 
 /**
-* CustomerPaymentMethodsListResponse
-*/
-    @JsonPropertyOrder({
-        CustomerPaymentMethodsListResponse.JSON_PROPERTY_CUSTOMER_PAYMENT_METHODS,
-        CustomerPaymentMethodsListResponse.JSON_PROPERTY_IS_GUEST_CUSTOMER
-    })
+ * CustomerPaymentMethodsListResponse
+ */
+@JsonPropertyOrder({
+  CustomerPaymentMethodsListResponse.JSON_PROPERTY_CUSTOMER_PAYMENT_METHODS,
+  CustomerPaymentMethodsListResponse.JSON_PROPERTY_IS_GUEST_CUSTOMER
+})
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class CustomerPaymentMethodsListResponse {
-        public static final String JSON_PROPERTY_CUSTOMER_PAYMENT_METHODS = "customer_payment_methods";
-    @javax.annotation.Nonnull
-            private List<CustomerPaymentMethod> customerPaymentMethods = new ArrayList<>();
+  public static final String JSON_PROPERTY_CUSTOMER_PAYMENT_METHODS = "customer_payment_methods";
+  @javax.annotation.Nonnull
+  private List<CustomerPaymentMethod> customerPaymentMethods = new ArrayList<>();
 
-        public static final String JSON_PROPERTY_IS_GUEST_CUSTOMER = "is_guest_customer";
-    @javax.annotation.Nullable
-            private JsonNullable<Boolean> isGuestCustomer = JsonNullable.<Boolean>undefined();
+  public static final String JSON_PROPERTY_IS_GUEST_CUSTOMER = "is_guest_customer";
+  @javax.annotation.Nullable
+  private JsonNullable<Boolean> isGuestCustomer = JsonNullable.<Boolean>undefined();
 
-public CustomerPaymentMethodsListResponse() {
-}
+  public CustomerPaymentMethodsListResponse() {
+  }
 
-        public CustomerPaymentMethodsListResponse customerPaymentMethods(@javax.annotation.Nonnull List<CustomerPaymentMethod> customerPaymentMethods) {
-        
-        this.customerPaymentMethods = customerPaymentMethods;
-        return this;
-        }
+  public CustomerPaymentMethodsListResponse customerPaymentMethods(@javax.annotation.Nonnull List<CustomerPaymentMethod> customerPaymentMethods) {
+    
+    this.customerPaymentMethods = customerPaymentMethods;
+    return this;
+  }
 
-            public CustomerPaymentMethodsListResponse addCustomerPaymentMethodsItem(CustomerPaymentMethod customerPaymentMethodsItem) {
-                if (this.customerPaymentMethods == null) {
-                this.customerPaymentMethods = new ArrayList<>();
-                }
-                this.customerPaymentMethods.add(customerPaymentMethodsItem);
-                return this;
-            }
+  public CustomerPaymentMethodsListResponse addCustomerPaymentMethodsItem(CustomerPaymentMethod customerPaymentMethodsItem) {
+    if (this.customerPaymentMethods == null) {
+      this.customerPaymentMethods = new ArrayList<>();
+    }
+    this.customerPaymentMethods.add(customerPaymentMethodsItem);
+    return this;
+  }
 
-    /**
-        * List of payment methods for customer
-    * @return customerPaymentMethods
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_CUSTOMER_PAYMENT_METHODS)
+  /**
+   * List of payment methods for customer
+   * @return customerPaymentMethods
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_CUSTOMER_PAYMENT_METHODS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public List<CustomerPaymentMethod> getCustomerPaymentMethods() {
-        return customerPaymentMethods;
-    }
+  public List<CustomerPaymentMethod> getCustomerPaymentMethods() {
+    return customerPaymentMethods;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_CUSTOMER_PAYMENT_METHODS)
+  @JsonProperty(JSON_PROPERTY_CUSTOMER_PAYMENT_METHODS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setCustomerPaymentMethods(@javax.annotation.Nonnull List<CustomerPaymentMethod> customerPaymentMethods) {
-            this.customerPaymentMethods = customerPaymentMethods;
-        }
+    this.customerPaymentMethods = customerPaymentMethods;
+  }
 
-        public CustomerPaymentMethodsListResponse isGuestCustomer(@javax.annotation.Nullable Boolean isGuestCustomer) {
-        this.isGuestCustomer = JsonNullable.<Boolean>of(isGuestCustomer);
-        
-        return this;
-        }
-
-    /**
-        * Returns whether a customer id is not tied to a payment intent (only when the request is made against a client secret)
-    * @return isGuestCustomer
-    */
-    @javax.annotation.Nullable
-        @JsonIgnore
+  public CustomerPaymentMethodsListResponse isGuestCustomer(@javax.annotation.Nullable Boolean isGuestCustomer) {
+    this.isGuestCustomer = JsonNullable.<Boolean>of(isGuestCustomer);
     
-    public Boolean getIsGuestCustomer() {
-                return isGuestCustomer.orElse(null);
-    }
+    return this;
+  }
 
-          @JsonProperty(JSON_PROPERTY_IS_GUEST_CUSTOMER)
+  /**
+   * Returns whether a customer id is not tied to a payment intent (only when the request is made against a client secret)
+   * @return isGuestCustomer
+   */
+  @javax.annotation.Nullable
+  @JsonIgnore
+
+  public Boolean getIsGuestCustomer() {
+        return isGuestCustomer.orElse(null);
+  }
+
+  @JsonProperty(JSON_PROPERTY_IS_GUEST_CUSTOMER)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-        public JsonNullable<Boolean> getIsGuestCustomer_JsonNullable() {
-        return isGuestCustomer;
-        }
-    
-        @JsonProperty(JSON_PROPERTY_IS_GUEST_CUSTOMER)
-        public void setIsGuestCustomer_JsonNullable(JsonNullable<Boolean> isGuestCustomer) {
-        this.isGuestCustomer = isGuestCustomer;
-        }
+  public JsonNullable<Boolean> getIsGuestCustomer_JsonNullable() {
+    return isGuestCustomer;
+  }
+  
+  @JsonProperty(JSON_PROPERTY_IS_GUEST_CUSTOMER)
+  public void setIsGuestCustomer_JsonNullable(JsonNullable<Boolean> isGuestCustomer) {
+    this.isGuestCustomer = isGuestCustomer;
+  }
 
-          public void setIsGuestCustomer(@javax.annotation.Nullable Boolean isGuestCustomer) {
-            this.isGuestCustomer = JsonNullable.<Boolean>of(isGuestCustomer);
-        }
+  public void setIsGuestCustomer(@javax.annotation.Nullable Boolean isGuestCustomer) {
+    this.isGuestCustomer = JsonNullable.<Boolean>of(isGuestCustomer);
+  }
 
-@Override
-public boolean equals(Object o) {
+  @Override
+  public boolean equals(Object o) {
     if (this == o) {
-    return true;
+      return true;
     }
     if (o == null || getClass() != o.getClass()) {
-    return false;
+      return false;
     }
-        CustomerPaymentMethodsListResponse customerPaymentMethodsListResponse = (CustomerPaymentMethodsListResponse) o;
-        return Objects.equals(this.customerPaymentMethods, customerPaymentMethodsListResponse.customerPaymentMethods) &&
+    CustomerPaymentMethodsListResponse customerPaymentMethodsListResponse = (CustomerPaymentMethodsListResponse) o;
+    return Objects.equals(this.customerPaymentMethods, customerPaymentMethodsListResponse.customerPaymentMethods) &&
         equalsNullable(this.isGuestCustomer, customerPaymentMethodsListResponse.isGuestCustomer);
-}
+  }
 
-    private static <T> boolean equalsNullable(JsonNullable<T> a, JsonNullable<T> b) {
-        return a == b || (a != null && b != null && a.isPresent() && b.isPresent() && Objects.deepEquals(a.get(), b.get()));
-        }
+  private static <T> boolean equalsNullable(JsonNullable<T> a, JsonNullable<T> b) {
+    return a == b || (a != null && b != null && a.isPresent() && b.isPresent() && Objects.deepEquals(a.get(), b.get()));
+  }
 
-    @Override
-    public int hashCode() {
-        return Objects.hash(customerPaymentMethods, hashCodeNullable(isGuestCustomer));
+  @Override
+  public int hashCode() {
+    return Objects.hash(customerPaymentMethods, hashCodeNullable(isGuestCustomer));
+  }
+
+  private static <T> int hashCodeNullable(JsonNullable<T> a) {
+    if (a == null) {
+      return 1;
     }
+    return a.isPresent() ? Arrays.deepHashCode(new Object[]{a.get()}) : 31;
+  }
 
-        private static <T> int hashCodeNullable(JsonNullable<T> a) {
-        if (a == null) {
-        return 1;
-        }
-        return a.isPresent() ? Arrays.deepHashCode(new Object[]{a.get()}) : 31;
-        }
-
-    @Override
-    public String toString() {
+  @Override
+  public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class CustomerPaymentMethodsListResponse {\n");
-        sb.append("    customerPaymentMethods: ").append(toIndentedString(customerPaymentMethods)).append("\n");
-        sb.append("    isGuestCustomer: ").append(toIndentedString(isGuestCustomer)).append("\n");
+    sb.append("    customerPaymentMethods: ").append(toIndentedString(customerPaymentMethods)).append("\n");
+    sb.append("    isGuestCustomer: ").append(toIndentedString(isGuestCustomer)).append("\n");
     sb.append("}");
     return sb.toString();
-    }
+  }
 
-    /**
-    * Convert the given object to string with each line indented by 4 spaces
-    * (except the first line).
-    */
-    private String toIndentedString(Object o) {
+  /**
+   * Convert the given object to string with each line indented by 4 spaces
+   * (except the first line).
+   */
+  private String toIndentedString(Object o) {
     if (o == null) {
-    return "null";
+      return "null";
     }
     return o.toString().replace("\n", "\n    ");
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @return URL query string
+   */
+  public String toUrlQueryString() {
+    return toUrlQueryString(null);
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @param prefix prefix of the query string
+   * @return URL query string
+   */
+  public String toUrlQueryString(String prefix) {
+    String suffix = "";
+    String containerSuffix = "";
+    String containerPrefix = "";
+    if (prefix == null) {
+      // style=form, explode=true, e.g. /pet?name=cat&type=manx
+      prefix = "";
+    } else {
+      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+      prefix = prefix + "[";
+      suffix = "]";
+      containerSuffix = "]";
+      containerPrefix = "[";
     }
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @return URL query string
-        */
-        public String toUrlQueryString() {
-        return toUrlQueryString(null);
+    StringJoiner joiner = new StringJoiner("&");
+
+    // add `customer_payment_methods` to the URL query string
+    if (getCustomerPaymentMethods() != null) {
+      for (int i = 0; i < getCustomerPaymentMethods().size(); i++) {
+        if (getCustomerPaymentMethods().get(i) != null) {
+          joiner.add(getCustomerPaymentMethods().get(i).toUrlQueryString(String.format("%scustomer_payment_methods%s%s", prefix, suffix,
+              "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix))));
         }
-
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @param prefix prefix of the query string
-        * @return URL query string
-        */
-        public String toUrlQueryString(String prefix) {
-        String suffix = "";
-        String containerSuffix = "";
-        String containerPrefix = "";
-        if (prefix == null) {
-        // style=form, explode=true, e.g. /pet?name=cat&type=manx
-        prefix = "";
-        } else {
-        // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
-        prefix = prefix + "[";
-        suffix = "]";
-        containerSuffix = "]";
-        containerPrefix = "[";
-        }
-
-        StringJoiner joiner = new StringJoiner("&");
-
-            // add `customer_payment_methods` to the URL query string
-                            if (getCustomerPaymentMethods() != null) {
-                            for (int i = 0; i < getCustomerPaymentMethods().size(); i++) {
-                            if (getCustomerPaymentMethods().get(i) != null) {
-                            joiner.add(getCustomerPaymentMethods().get(i).toUrlQueryString(String.format("%scustomer_payment_methods%s%s", prefix, suffix,
-                            "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix))));
-                            }
-                            }
-                            }
-
-            // add `is_guest_customer` to the URL query string
-                        if (getIsGuestCustomer() != null) {
-                        try {
-                        joiner.add(String.format("%sis_guest_customer%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getIsGuestCustomer()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-        return joiner.toString();
-        }
-
+      }
     }
+
+    // add `is_guest_customer` to the URL query string
+    if (getIsGuestCustomer() != null) {
+      try {
+        joiner.add(String.format("%sis_guest_customer%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getIsGuestCustomer()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    return joiner.toString();
+  }
+
+}
 

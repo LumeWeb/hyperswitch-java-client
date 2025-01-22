@@ -31,195 +31,195 @@ import java.net.URLEncoder;
 import java.util.StringJoiner;
 
 /**
-* RedirectResponse
-*/
-    @JsonPropertyOrder({
-        RedirectResponse.JSON_PROPERTY_PARAM,
-        RedirectResponse.JSON_PROPERTY_JSON_PAYLOAD
-    })
+ * RedirectResponse
+ */
+@JsonPropertyOrder({
+  RedirectResponse.JSON_PROPERTY_PARAM,
+  RedirectResponse.JSON_PROPERTY_JSON_PAYLOAD
+})
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class RedirectResponse {
-        public static final String JSON_PROPERTY_PARAM = "param";
-    @javax.annotation.Nullable
-            private JsonNullable<String> param = JsonNullable.<String>undefined();
+  public static final String JSON_PROPERTY_PARAM = "param";
+  @javax.annotation.Nullable
+  private JsonNullable<String> param = JsonNullable.<String>undefined();
 
-        public static final String JSON_PROPERTY_JSON_PAYLOAD = "json_payload";
-    @javax.annotation.Nullable
-            private JsonNullable<Object> jsonPayload = JsonNullable.<Object>undefined();
+  public static final String JSON_PROPERTY_JSON_PAYLOAD = "json_payload";
+  @javax.annotation.Nullable
+  private JsonNullable<Object> jsonPayload = JsonNullable.<Object>undefined();
 
-public RedirectResponse() {
-}
+  public RedirectResponse() {
+  }
 
-        public RedirectResponse param(@javax.annotation.Nullable String param) {
-        this.param = JsonNullable.<String>of(param);
-        
-        return this;
-        }
-
-    /**
-        * Get param
-    * @return param
-    */
-    @javax.annotation.Nullable
-        @JsonIgnore
+  public RedirectResponse param(@javax.annotation.Nullable String param) {
+    this.param = JsonNullable.<String>of(param);
     
-    public String getParam() {
-                return param.orElse(null);
-    }
+    return this;
+  }
 
-          @JsonProperty(JSON_PROPERTY_PARAM)
+  /**
+   * Get param
+   * @return param
+   */
+  @javax.annotation.Nullable
+  @JsonIgnore
+
+  public String getParam() {
+        return param.orElse(null);
+  }
+
+  @JsonProperty(JSON_PROPERTY_PARAM)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-        public JsonNullable<String> getParam_JsonNullable() {
-        return param;
-        }
+  public JsonNullable<String> getParam_JsonNullable() {
+    return param;
+  }
+  
+  @JsonProperty(JSON_PROPERTY_PARAM)
+  public void setParam_JsonNullable(JsonNullable<String> param) {
+    this.param = param;
+  }
+
+  public void setParam(@javax.annotation.Nullable String param) {
+    this.param = JsonNullable.<String>of(param);
+  }
+
+  public RedirectResponse jsonPayload(@javax.annotation.Nullable Object jsonPayload) {
+    this.jsonPayload = JsonNullable.<Object>of(jsonPayload);
     
-        @JsonProperty(JSON_PROPERTY_PARAM)
-        public void setParam_JsonNullable(JsonNullable<String> param) {
-        this.param = param;
-        }
+    return this;
+  }
 
-          public void setParam(@javax.annotation.Nullable String param) {
-            this.param = JsonNullable.<String>of(param);
-        }
+  /**
+   * Get jsonPayload
+   * @return jsonPayload
+   */
+  @javax.annotation.Nullable
+  @JsonIgnore
 
-        public RedirectResponse jsonPayload(@javax.annotation.Nullable Object jsonPayload) {
-        this.jsonPayload = JsonNullable.<Object>of(jsonPayload);
-        
-        return this;
-        }
+  public Object getJsonPayload() {
+        return jsonPayload.orElse(null);
+  }
 
-    /**
-        * Get jsonPayload
-    * @return jsonPayload
-    */
-    @javax.annotation.Nullable
-        @JsonIgnore
-    
-    public Object getJsonPayload() {
-                return jsonPayload.orElse(null);
-    }
-
-          @JsonProperty(JSON_PROPERTY_JSON_PAYLOAD)
+  @JsonProperty(JSON_PROPERTY_JSON_PAYLOAD)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-        public JsonNullable<Object> getJsonPayload_JsonNullable() {
-        return jsonPayload;
-        }
-    
-        @JsonProperty(JSON_PROPERTY_JSON_PAYLOAD)
-        public void setJsonPayload_JsonNullable(JsonNullable<Object> jsonPayload) {
-        this.jsonPayload = jsonPayload;
-        }
+  public JsonNullable<Object> getJsonPayload_JsonNullable() {
+    return jsonPayload;
+  }
+  
+  @JsonProperty(JSON_PROPERTY_JSON_PAYLOAD)
+  public void setJsonPayload_JsonNullable(JsonNullable<Object> jsonPayload) {
+    this.jsonPayload = jsonPayload;
+  }
 
-          public void setJsonPayload(@javax.annotation.Nullable Object jsonPayload) {
-            this.jsonPayload = JsonNullable.<Object>of(jsonPayload);
-        }
+  public void setJsonPayload(@javax.annotation.Nullable Object jsonPayload) {
+    this.jsonPayload = JsonNullable.<Object>of(jsonPayload);
+  }
 
-@Override
-public boolean equals(Object o) {
+  @Override
+  public boolean equals(Object o) {
     if (this == o) {
-    return true;
+      return true;
     }
     if (o == null || getClass() != o.getClass()) {
-    return false;
+      return false;
     }
-        RedirectResponse redirectResponse = (RedirectResponse) o;
-        return equalsNullable(this.param, redirectResponse.param) &&
+    RedirectResponse redirectResponse = (RedirectResponse) o;
+    return equalsNullable(this.param, redirectResponse.param) &&
         equalsNullable(this.jsonPayload, redirectResponse.jsonPayload);
-}
+  }
 
-    private static <T> boolean equalsNullable(JsonNullable<T> a, JsonNullable<T> b) {
-        return a == b || (a != null && b != null && a.isPresent() && b.isPresent() && Objects.deepEquals(a.get(), b.get()));
-        }
+  private static <T> boolean equalsNullable(JsonNullable<T> a, JsonNullable<T> b) {
+    return a == b || (a != null && b != null && a.isPresent() && b.isPresent() && Objects.deepEquals(a.get(), b.get()));
+  }
 
-    @Override
-    public int hashCode() {
-        return Objects.hash(hashCodeNullable(param), hashCodeNullable(jsonPayload));
+  @Override
+  public int hashCode() {
+    return Objects.hash(hashCodeNullable(param), hashCodeNullable(jsonPayload));
+  }
+
+  private static <T> int hashCodeNullable(JsonNullable<T> a) {
+    if (a == null) {
+      return 1;
     }
+    return a.isPresent() ? Arrays.deepHashCode(new Object[]{a.get()}) : 31;
+  }
 
-        private static <T> int hashCodeNullable(JsonNullable<T> a) {
-        if (a == null) {
-        return 1;
-        }
-        return a.isPresent() ? Arrays.deepHashCode(new Object[]{a.get()}) : 31;
-        }
-
-    @Override
-    public String toString() {
+  @Override
+  public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class RedirectResponse {\n");
-        sb.append("    param: ").append(toIndentedString(param)).append("\n");
-        sb.append("    jsonPayload: ").append(toIndentedString(jsonPayload)).append("\n");
+    sb.append("    param: ").append(toIndentedString(param)).append("\n");
+    sb.append("    jsonPayload: ").append(toIndentedString(jsonPayload)).append("\n");
     sb.append("}");
     return sb.toString();
-    }
+  }
 
-    /**
-    * Convert the given object to string with each line indented by 4 spaces
-    * (except the first line).
-    */
-    private String toIndentedString(Object o) {
+  /**
+   * Convert the given object to string with each line indented by 4 spaces
+   * (except the first line).
+   */
+  private String toIndentedString(Object o) {
     if (o == null) {
-    return "null";
+      return "null";
     }
     return o.toString().replace("\n", "\n    ");
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @return URL query string
+   */
+  public String toUrlQueryString() {
+    return toUrlQueryString(null);
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @param prefix prefix of the query string
+   * @return URL query string
+   */
+  public String toUrlQueryString(String prefix) {
+    String suffix = "";
+    String containerSuffix = "";
+    String containerPrefix = "";
+    if (prefix == null) {
+      // style=form, explode=true, e.g. /pet?name=cat&type=manx
+      prefix = "";
+    } else {
+      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+      prefix = prefix + "[";
+      suffix = "]";
+      containerSuffix = "]";
+      containerPrefix = "[";
     }
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @return URL query string
-        */
-        public String toUrlQueryString() {
-        return toUrlQueryString(null);
-        }
+    StringJoiner joiner = new StringJoiner("&");
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @param prefix prefix of the query string
-        * @return URL query string
-        */
-        public String toUrlQueryString(String prefix) {
-        String suffix = "";
-        String containerSuffix = "";
-        String containerPrefix = "";
-        if (prefix == null) {
-        // style=form, explode=true, e.g. /pet?name=cat&type=manx
-        prefix = "";
-        } else {
-        // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
-        prefix = prefix + "[";
-        suffix = "]";
-        containerSuffix = "]";
-        containerPrefix = "[";
-        }
-
-        StringJoiner joiner = new StringJoiner("&");
-
-            // add `param` to the URL query string
-                        if (getParam() != null) {
-                        try {
-                        joiner.add(String.format("%sparam%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getParam()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-            // add `json_payload` to the URL query string
-                        if (getJsonPayload() != null) {
-                        try {
-                        joiner.add(String.format("%sjson_payload%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getJsonPayload()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-        return joiner.toString();
-        }
-
+    // add `param` to the URL query string
+    if (getParam() != null) {
+      try {
+        joiner.add(String.format("%sparam%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getParam()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
     }
+
+    // add `json_payload` to the URL query string
+    if (getJsonPayload() != null) {
+      try {
+        joiner.add(String.format("%sjson_payload%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getJsonPayload()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    return joiner.toString();
+  }
+
+}
 

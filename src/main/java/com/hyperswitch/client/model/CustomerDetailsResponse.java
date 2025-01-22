@@ -31,345 +31,345 @@ import java.net.URLEncoder;
 import java.util.StringJoiner;
 
 /**
-* Details of customer attached to this payment
-*/
-    @JsonPropertyOrder({
-        CustomerDetailsResponse.JSON_PROPERTY_ID,
-        CustomerDetailsResponse.JSON_PROPERTY_NAME,
-        CustomerDetailsResponse.JSON_PROPERTY_EMAIL,
-        CustomerDetailsResponse.JSON_PROPERTY_PHONE,
-        CustomerDetailsResponse.JSON_PROPERTY_PHONE_COUNTRY_CODE
-    })
+ * Details of customer attached to this payment
+ */
+@JsonPropertyOrder({
+  CustomerDetailsResponse.JSON_PROPERTY_ID,
+  CustomerDetailsResponse.JSON_PROPERTY_NAME,
+  CustomerDetailsResponse.JSON_PROPERTY_EMAIL,
+  CustomerDetailsResponse.JSON_PROPERTY_PHONE,
+  CustomerDetailsResponse.JSON_PROPERTY_PHONE_COUNTRY_CODE
+})
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class CustomerDetailsResponse {
-        public static final String JSON_PROPERTY_ID = "id";
-    @javax.annotation.Nullable
-            private JsonNullable<String> id = JsonNullable.<String>undefined();
+  public static final String JSON_PROPERTY_ID = "id";
+  @javax.annotation.Nullable
+  private JsonNullable<String> id = JsonNullable.<String>undefined();
 
-        public static final String JSON_PROPERTY_NAME = "name";
-    @javax.annotation.Nullable
-            private JsonNullable<String> name = JsonNullable.<String>undefined();
+  public static final String JSON_PROPERTY_NAME = "name";
+  @javax.annotation.Nullable
+  private JsonNullable<String> name = JsonNullable.<String>undefined();
 
-        public static final String JSON_PROPERTY_EMAIL = "email";
-    @javax.annotation.Nullable
-            private JsonNullable<String> email = JsonNullable.<String>undefined();
+  public static final String JSON_PROPERTY_EMAIL = "email";
+  @javax.annotation.Nullable
+  private JsonNullable<String> email = JsonNullable.<String>undefined();
 
-        public static final String JSON_PROPERTY_PHONE = "phone";
-    @javax.annotation.Nullable
-            private JsonNullable<String> phone = JsonNullable.<String>undefined();
+  public static final String JSON_PROPERTY_PHONE = "phone";
+  @javax.annotation.Nullable
+  private JsonNullable<String> phone = JsonNullable.<String>undefined();
 
-        public static final String JSON_PROPERTY_PHONE_COUNTRY_CODE = "phone_country_code";
-    @javax.annotation.Nullable
-            private JsonNullable<String> phoneCountryCode = JsonNullable.<String>undefined();
+  public static final String JSON_PROPERTY_PHONE_COUNTRY_CODE = "phone_country_code";
+  @javax.annotation.Nullable
+  private JsonNullable<String> phoneCountryCode = JsonNullable.<String>undefined();
 
-public CustomerDetailsResponse() {
-}
+  public CustomerDetailsResponse() {
+  }
 
-        public CustomerDetailsResponse id(@javax.annotation.Nullable String id) {
-        this.id = JsonNullable.<String>of(id);
-        
-        return this;
-        }
-
-    /**
-        * The identifier for the customer.
-    * @return id
-    */
-    @javax.annotation.Nullable
-        @JsonIgnore
+  public CustomerDetailsResponse id(@javax.annotation.Nullable String id) {
+    this.id = JsonNullable.<String>of(id);
     
-    public String getId() {
-                return id.orElse(null);
-    }
+    return this;
+  }
 
-          @JsonProperty(JSON_PROPERTY_ID)
+  /**
+   * The identifier for the customer.
+   * @return id
+   */
+  @javax.annotation.Nullable
+  @JsonIgnore
+
+  public String getId() {
+        return id.orElse(null);
+  }
+
+  @JsonProperty(JSON_PROPERTY_ID)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-        public JsonNullable<String> getId_JsonNullable() {
-        return id;
-        }
+  public JsonNullable<String> getId_JsonNullable() {
+    return id;
+  }
+  
+  @JsonProperty(JSON_PROPERTY_ID)
+  public void setId_JsonNullable(JsonNullable<String> id) {
+    this.id = id;
+  }
+
+  public void setId(@javax.annotation.Nullable String id) {
+    this.id = JsonNullable.<String>of(id);
+  }
+
+  public CustomerDetailsResponse name(@javax.annotation.Nullable String name) {
+    this.name = JsonNullable.<String>of(name);
     
-        @JsonProperty(JSON_PROPERTY_ID)
-        public void setId_JsonNullable(JsonNullable<String> id) {
-        this.id = id;
-        }
+    return this;
+  }
 
-          public void setId(@javax.annotation.Nullable String id) {
-            this.id = JsonNullable.<String>of(id);
-        }
+  /**
+   * The customer&#39;s name
+   * @return name
+   */
+  @javax.annotation.Nullable
+  @JsonIgnore
 
-        public CustomerDetailsResponse name(@javax.annotation.Nullable String name) {
-        this.name = JsonNullable.<String>of(name);
-        
-        return this;
-        }
+  public String getName() {
+        return name.orElse(null);
+  }
 
-    /**
-        * The customer&#39;s name
-    * @return name
-    */
-    @javax.annotation.Nullable
-        @JsonIgnore
-    
-    public String getName() {
-                return name.orElse(null);
-    }
-
-          @JsonProperty(JSON_PROPERTY_NAME)
+  @JsonProperty(JSON_PROPERTY_NAME)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-        public JsonNullable<String> getName_JsonNullable() {
-        return name;
-        }
+  public JsonNullable<String> getName_JsonNullable() {
+    return name;
+  }
+  
+  @JsonProperty(JSON_PROPERTY_NAME)
+  public void setName_JsonNullable(JsonNullable<String> name) {
+    this.name = name;
+  }
+
+  public void setName(@javax.annotation.Nullable String name) {
+    this.name = JsonNullable.<String>of(name);
+  }
+
+  public CustomerDetailsResponse email(@javax.annotation.Nullable String email) {
+    this.email = JsonNullable.<String>of(email);
     
-        @JsonProperty(JSON_PROPERTY_NAME)
-        public void setName_JsonNullable(JsonNullable<String> name) {
-        this.name = name;
-        }
+    return this;
+  }
 
-          public void setName(@javax.annotation.Nullable String name) {
-            this.name = JsonNullable.<String>of(name);
-        }
+  /**
+   * The customer&#39;s email address
+   * @return email
+   */
+  @javax.annotation.Nullable
+  @JsonIgnore
 
-        public CustomerDetailsResponse email(@javax.annotation.Nullable String email) {
-        this.email = JsonNullable.<String>of(email);
-        
-        return this;
-        }
+  public String getEmail() {
+        return email.orElse(null);
+  }
 
-    /**
-        * The customer&#39;s email address
-    * @return email
-    */
-    @javax.annotation.Nullable
-        @JsonIgnore
-    
-    public String getEmail() {
-                return email.orElse(null);
-    }
-
-          @JsonProperty(JSON_PROPERTY_EMAIL)
+  @JsonProperty(JSON_PROPERTY_EMAIL)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-        public JsonNullable<String> getEmail_JsonNullable() {
-        return email;
-        }
+  public JsonNullable<String> getEmail_JsonNullable() {
+    return email;
+  }
+  
+  @JsonProperty(JSON_PROPERTY_EMAIL)
+  public void setEmail_JsonNullable(JsonNullable<String> email) {
+    this.email = email;
+  }
+
+  public void setEmail(@javax.annotation.Nullable String email) {
+    this.email = JsonNullable.<String>of(email);
+  }
+
+  public CustomerDetailsResponse phone(@javax.annotation.Nullable String phone) {
+    this.phone = JsonNullable.<String>of(phone);
     
-        @JsonProperty(JSON_PROPERTY_EMAIL)
-        public void setEmail_JsonNullable(JsonNullable<String> email) {
-        this.email = email;
-        }
+    return this;
+  }
 
-          public void setEmail(@javax.annotation.Nullable String email) {
-            this.email = JsonNullable.<String>of(email);
-        }
+  /**
+   * The customer&#39;s phone number
+   * @return phone
+   */
+  @javax.annotation.Nullable
+  @JsonIgnore
 
-        public CustomerDetailsResponse phone(@javax.annotation.Nullable String phone) {
-        this.phone = JsonNullable.<String>of(phone);
-        
-        return this;
-        }
+  public String getPhone() {
+        return phone.orElse(null);
+  }
 
-    /**
-        * The customer&#39;s phone number
-    * @return phone
-    */
-    @javax.annotation.Nullable
-        @JsonIgnore
-    
-    public String getPhone() {
-                return phone.orElse(null);
-    }
-
-          @JsonProperty(JSON_PROPERTY_PHONE)
+  @JsonProperty(JSON_PROPERTY_PHONE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-        public JsonNullable<String> getPhone_JsonNullable() {
-        return phone;
-        }
+  public JsonNullable<String> getPhone_JsonNullable() {
+    return phone;
+  }
+  
+  @JsonProperty(JSON_PROPERTY_PHONE)
+  public void setPhone_JsonNullable(JsonNullable<String> phone) {
+    this.phone = phone;
+  }
+
+  public void setPhone(@javax.annotation.Nullable String phone) {
+    this.phone = JsonNullable.<String>of(phone);
+  }
+
+  public CustomerDetailsResponse phoneCountryCode(@javax.annotation.Nullable String phoneCountryCode) {
+    this.phoneCountryCode = JsonNullable.<String>of(phoneCountryCode);
     
-        @JsonProperty(JSON_PROPERTY_PHONE)
-        public void setPhone_JsonNullable(JsonNullable<String> phone) {
-        this.phone = phone;
-        }
+    return this;
+  }
 
-          public void setPhone(@javax.annotation.Nullable String phone) {
-            this.phone = JsonNullable.<String>of(phone);
-        }
+  /**
+   * The country code for the customer&#39;s phone number
+   * @return phoneCountryCode
+   */
+  @javax.annotation.Nullable
+  @JsonIgnore
 
-        public CustomerDetailsResponse phoneCountryCode(@javax.annotation.Nullable String phoneCountryCode) {
-        this.phoneCountryCode = JsonNullable.<String>of(phoneCountryCode);
-        
-        return this;
-        }
+  public String getPhoneCountryCode() {
+        return phoneCountryCode.orElse(null);
+  }
 
-    /**
-        * The country code for the customer&#39;s phone number
-    * @return phoneCountryCode
-    */
-    @javax.annotation.Nullable
-        @JsonIgnore
-    
-    public String getPhoneCountryCode() {
-                return phoneCountryCode.orElse(null);
-    }
-
-          @JsonProperty(JSON_PROPERTY_PHONE_COUNTRY_CODE)
+  @JsonProperty(JSON_PROPERTY_PHONE_COUNTRY_CODE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-        public JsonNullable<String> getPhoneCountryCode_JsonNullable() {
-        return phoneCountryCode;
-        }
-    
-        @JsonProperty(JSON_PROPERTY_PHONE_COUNTRY_CODE)
-        public void setPhoneCountryCode_JsonNullable(JsonNullable<String> phoneCountryCode) {
-        this.phoneCountryCode = phoneCountryCode;
-        }
+  public JsonNullable<String> getPhoneCountryCode_JsonNullable() {
+    return phoneCountryCode;
+  }
+  
+  @JsonProperty(JSON_PROPERTY_PHONE_COUNTRY_CODE)
+  public void setPhoneCountryCode_JsonNullable(JsonNullable<String> phoneCountryCode) {
+    this.phoneCountryCode = phoneCountryCode;
+  }
 
-          public void setPhoneCountryCode(@javax.annotation.Nullable String phoneCountryCode) {
-            this.phoneCountryCode = JsonNullable.<String>of(phoneCountryCode);
-        }
+  public void setPhoneCountryCode(@javax.annotation.Nullable String phoneCountryCode) {
+    this.phoneCountryCode = JsonNullable.<String>of(phoneCountryCode);
+  }
 
-@Override
-public boolean equals(Object o) {
+  @Override
+  public boolean equals(Object o) {
     if (this == o) {
-    return true;
+      return true;
     }
     if (o == null || getClass() != o.getClass()) {
-    return false;
+      return false;
     }
-        CustomerDetailsResponse customerDetailsResponse = (CustomerDetailsResponse) o;
-        return equalsNullable(this.id, customerDetailsResponse.id) &&
+    CustomerDetailsResponse customerDetailsResponse = (CustomerDetailsResponse) o;
+    return equalsNullable(this.id, customerDetailsResponse.id) &&
         equalsNullable(this.name, customerDetailsResponse.name) &&
         equalsNullable(this.email, customerDetailsResponse.email) &&
         equalsNullable(this.phone, customerDetailsResponse.phone) &&
         equalsNullable(this.phoneCountryCode, customerDetailsResponse.phoneCountryCode);
-}
+  }
 
-    private static <T> boolean equalsNullable(JsonNullable<T> a, JsonNullable<T> b) {
-        return a == b || (a != null && b != null && a.isPresent() && b.isPresent() && Objects.deepEquals(a.get(), b.get()));
-        }
+  private static <T> boolean equalsNullable(JsonNullable<T> a, JsonNullable<T> b) {
+    return a == b || (a != null && b != null && a.isPresent() && b.isPresent() && Objects.deepEquals(a.get(), b.get()));
+  }
 
-    @Override
-    public int hashCode() {
-        return Objects.hash(hashCodeNullable(id), hashCodeNullable(name), hashCodeNullable(email), hashCodeNullable(phone), hashCodeNullable(phoneCountryCode));
+  @Override
+  public int hashCode() {
+    return Objects.hash(hashCodeNullable(id), hashCodeNullable(name), hashCodeNullable(email), hashCodeNullable(phone), hashCodeNullable(phoneCountryCode));
+  }
+
+  private static <T> int hashCodeNullable(JsonNullable<T> a) {
+    if (a == null) {
+      return 1;
     }
+    return a.isPresent() ? Arrays.deepHashCode(new Object[]{a.get()}) : 31;
+  }
 
-        private static <T> int hashCodeNullable(JsonNullable<T> a) {
-        if (a == null) {
-        return 1;
-        }
-        return a.isPresent() ? Arrays.deepHashCode(new Object[]{a.get()}) : 31;
-        }
-
-    @Override
-    public String toString() {
+  @Override
+  public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class CustomerDetailsResponse {\n");
-        sb.append("    id: ").append(toIndentedString(id)).append("\n");
-        sb.append("    name: ").append(toIndentedString(name)).append("\n");
-        sb.append("    email: ").append(toIndentedString(email)).append("\n");
-        sb.append("    phone: ").append(toIndentedString(phone)).append("\n");
-        sb.append("    phoneCountryCode: ").append(toIndentedString(phoneCountryCode)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    name: ").append(toIndentedString(name)).append("\n");
+    sb.append("    email: ").append(toIndentedString(email)).append("\n");
+    sb.append("    phone: ").append(toIndentedString(phone)).append("\n");
+    sb.append("    phoneCountryCode: ").append(toIndentedString(phoneCountryCode)).append("\n");
     sb.append("}");
     return sb.toString();
-    }
+  }
 
-    /**
-    * Convert the given object to string with each line indented by 4 spaces
-    * (except the first line).
-    */
-    private String toIndentedString(Object o) {
+  /**
+   * Convert the given object to string with each line indented by 4 spaces
+   * (except the first line).
+   */
+  private String toIndentedString(Object o) {
     if (o == null) {
-    return "null";
+      return "null";
     }
     return o.toString().replace("\n", "\n    ");
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @return URL query string
+   */
+  public String toUrlQueryString() {
+    return toUrlQueryString(null);
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @param prefix prefix of the query string
+   * @return URL query string
+   */
+  public String toUrlQueryString(String prefix) {
+    String suffix = "";
+    String containerSuffix = "";
+    String containerPrefix = "";
+    if (prefix == null) {
+      // style=form, explode=true, e.g. /pet?name=cat&type=manx
+      prefix = "";
+    } else {
+      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+      prefix = prefix + "[";
+      suffix = "]";
+      containerSuffix = "]";
+      containerPrefix = "[";
     }
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @return URL query string
-        */
-        public String toUrlQueryString() {
-        return toUrlQueryString(null);
-        }
+    StringJoiner joiner = new StringJoiner("&");
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @param prefix prefix of the query string
-        * @return URL query string
-        */
-        public String toUrlQueryString(String prefix) {
-        String suffix = "";
-        String containerSuffix = "";
-        String containerPrefix = "";
-        if (prefix == null) {
-        // style=form, explode=true, e.g. /pet?name=cat&type=manx
-        prefix = "";
-        } else {
-        // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
-        prefix = prefix + "[";
-        suffix = "]";
-        containerSuffix = "]";
-        containerPrefix = "[";
-        }
-
-        StringJoiner joiner = new StringJoiner("&");
-
-            // add `id` to the URL query string
-                        if (getId() != null) {
-                        try {
-                        joiner.add(String.format("%sid%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getId()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-            // add `name` to the URL query string
-                        if (getName() != null) {
-                        try {
-                        joiner.add(String.format("%sname%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getName()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-            // add `email` to the URL query string
-                        if (getEmail() != null) {
-                        try {
-                        joiner.add(String.format("%semail%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getEmail()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-            // add `phone` to the URL query string
-                        if (getPhone() != null) {
-                        try {
-                        joiner.add(String.format("%sphone%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getPhone()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-            // add `phone_country_code` to the URL query string
-                        if (getPhoneCountryCode() != null) {
-                        try {
-                        joiner.add(String.format("%sphone_country_code%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getPhoneCountryCode()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-        return joiner.toString();
-        }
-
+    // add `id` to the URL query string
+    if (getId() != null) {
+      try {
+        joiner.add(String.format("%sid%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getId()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
     }
+
+    // add `name` to the URL query string
+    if (getName() != null) {
+      try {
+        joiner.add(String.format("%sname%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getName()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `email` to the URL query string
+    if (getEmail() != null) {
+      try {
+        joiner.add(String.format("%semail%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getEmail()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `phone` to the URL query string
+    if (getPhone() != null) {
+      try {
+        joiner.add(String.format("%sphone%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getPhone()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `phone_country_code` to the URL query string
+    if (getPhoneCountryCode() != null) {
+      try {
+        joiner.add(String.format("%sphone_country_code%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getPhoneCountryCode()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    return joiner.toString();
+  }
+
+}
 

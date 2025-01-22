@@ -34,230 +34,230 @@ import java.net.URLEncoder;
 import java.util.StringJoiner;
 
 /**
-* Some connectors like Apple Pay, Airwallex and Noon might require some additional information, find specific details in the child attributes below.
-*/
-    @JsonPropertyOrder({
-        ConnectorMetadata.JSON_PROPERTY_APPLE_PAY,
-        ConnectorMetadata.JSON_PROPERTY_AIRWALLEX,
-        ConnectorMetadata.JSON_PROPERTY_NOON
-    })
+ * Some connectors like Apple Pay, Airwallex and Noon might require some additional information, find specific details in the child attributes below.
+ */
+@JsonPropertyOrder({
+  ConnectorMetadata.JSON_PROPERTY_APPLE_PAY,
+  ConnectorMetadata.JSON_PROPERTY_AIRWALLEX,
+  ConnectorMetadata.JSON_PROPERTY_NOON
+})
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class ConnectorMetadata {
-        public static final String JSON_PROPERTY_APPLE_PAY = "apple_pay";
-    @javax.annotation.Nullable
-            private JsonNullable<ApplepayConnectorMetadataRequest> applePay = JsonNullable.<ApplepayConnectorMetadataRequest>undefined();
+  public static final String JSON_PROPERTY_APPLE_PAY = "apple_pay";
+  @javax.annotation.Nullable
+  private JsonNullable<ApplepayConnectorMetadataRequest> applePay = JsonNullable.<ApplepayConnectorMetadataRequest>undefined();
 
-        public static final String JSON_PROPERTY_AIRWALLEX = "airwallex";
-    @javax.annotation.Nullable
-            private JsonNullable<AirwallexData> airwallex = JsonNullable.<AirwallexData>undefined();
+  public static final String JSON_PROPERTY_AIRWALLEX = "airwallex";
+  @javax.annotation.Nullable
+  private JsonNullable<AirwallexData> airwallex = JsonNullable.<AirwallexData>undefined();
 
-        public static final String JSON_PROPERTY_NOON = "noon";
-    @javax.annotation.Nullable
-            private JsonNullable<NoonData> noon = JsonNullable.<NoonData>undefined();
+  public static final String JSON_PROPERTY_NOON = "noon";
+  @javax.annotation.Nullable
+  private JsonNullable<NoonData> noon = JsonNullable.<NoonData>undefined();
 
-public ConnectorMetadata() {
-}
+  public ConnectorMetadata() {
+  }
 
-        public ConnectorMetadata applePay(@javax.annotation.Nullable ApplepayConnectorMetadataRequest applePay) {
-        this.applePay = JsonNullable.<ApplepayConnectorMetadataRequest>of(applePay);
-        
-        return this;
-        }
-
-    /**
-        * Get applePay
-    * @return applePay
-    */
-    @javax.annotation.Nullable
-        @JsonIgnore
+  public ConnectorMetadata applePay(@javax.annotation.Nullable ApplepayConnectorMetadataRequest applePay) {
+    this.applePay = JsonNullable.<ApplepayConnectorMetadataRequest>of(applePay);
     
-    public ApplepayConnectorMetadataRequest getApplePay() {
-                return applePay.orElse(null);
-    }
+    return this;
+  }
 
-          @JsonProperty(JSON_PROPERTY_APPLE_PAY)
+  /**
+   * Get applePay
+   * @return applePay
+   */
+  @javax.annotation.Nullable
+  @JsonIgnore
+
+  public ApplepayConnectorMetadataRequest getApplePay() {
+        return applePay.orElse(null);
+  }
+
+  @JsonProperty(JSON_PROPERTY_APPLE_PAY)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-        public JsonNullable<ApplepayConnectorMetadataRequest> getApplePay_JsonNullable() {
-        return applePay;
-        }
+  public JsonNullable<ApplepayConnectorMetadataRequest> getApplePay_JsonNullable() {
+    return applePay;
+  }
+  
+  @JsonProperty(JSON_PROPERTY_APPLE_PAY)
+  public void setApplePay_JsonNullable(JsonNullable<ApplepayConnectorMetadataRequest> applePay) {
+    this.applePay = applePay;
+  }
+
+  public void setApplePay(@javax.annotation.Nullable ApplepayConnectorMetadataRequest applePay) {
+    this.applePay = JsonNullable.<ApplepayConnectorMetadataRequest>of(applePay);
+  }
+
+  public ConnectorMetadata airwallex(@javax.annotation.Nullable AirwallexData airwallex) {
+    this.airwallex = JsonNullable.<AirwallexData>of(airwallex);
     
-        @JsonProperty(JSON_PROPERTY_APPLE_PAY)
-        public void setApplePay_JsonNullable(JsonNullable<ApplepayConnectorMetadataRequest> applePay) {
-        this.applePay = applePay;
-        }
+    return this;
+  }
 
-          public void setApplePay(@javax.annotation.Nullable ApplepayConnectorMetadataRequest applePay) {
-            this.applePay = JsonNullable.<ApplepayConnectorMetadataRequest>of(applePay);
-        }
+  /**
+   * Get airwallex
+   * @return airwallex
+   */
+  @javax.annotation.Nullable
+  @JsonIgnore
 
-        public ConnectorMetadata airwallex(@javax.annotation.Nullable AirwallexData airwallex) {
-        this.airwallex = JsonNullable.<AirwallexData>of(airwallex);
-        
-        return this;
-        }
+  public AirwallexData getAirwallex() {
+        return airwallex.orElse(null);
+  }
 
-    /**
-        * Get airwallex
-    * @return airwallex
-    */
-    @javax.annotation.Nullable
-        @JsonIgnore
-    
-    public AirwallexData getAirwallex() {
-                return airwallex.orElse(null);
-    }
-
-          @JsonProperty(JSON_PROPERTY_AIRWALLEX)
+  @JsonProperty(JSON_PROPERTY_AIRWALLEX)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-        public JsonNullable<AirwallexData> getAirwallex_JsonNullable() {
-        return airwallex;
-        }
+  public JsonNullable<AirwallexData> getAirwallex_JsonNullable() {
+    return airwallex;
+  }
+  
+  @JsonProperty(JSON_PROPERTY_AIRWALLEX)
+  public void setAirwallex_JsonNullable(JsonNullable<AirwallexData> airwallex) {
+    this.airwallex = airwallex;
+  }
+
+  public void setAirwallex(@javax.annotation.Nullable AirwallexData airwallex) {
+    this.airwallex = JsonNullable.<AirwallexData>of(airwallex);
+  }
+
+  public ConnectorMetadata noon(@javax.annotation.Nullable NoonData noon) {
+    this.noon = JsonNullable.<NoonData>of(noon);
     
-        @JsonProperty(JSON_PROPERTY_AIRWALLEX)
-        public void setAirwallex_JsonNullable(JsonNullable<AirwallexData> airwallex) {
-        this.airwallex = airwallex;
-        }
+    return this;
+  }
 
-          public void setAirwallex(@javax.annotation.Nullable AirwallexData airwallex) {
-            this.airwallex = JsonNullable.<AirwallexData>of(airwallex);
-        }
+  /**
+   * Get noon
+   * @return noon
+   */
+  @javax.annotation.Nullable
+  @JsonIgnore
 
-        public ConnectorMetadata noon(@javax.annotation.Nullable NoonData noon) {
-        this.noon = JsonNullable.<NoonData>of(noon);
-        
-        return this;
-        }
+  public NoonData getNoon() {
+        return noon.orElse(null);
+  }
 
-    /**
-        * Get noon
-    * @return noon
-    */
-    @javax.annotation.Nullable
-        @JsonIgnore
-    
-    public NoonData getNoon() {
-                return noon.orElse(null);
-    }
-
-          @JsonProperty(JSON_PROPERTY_NOON)
+  @JsonProperty(JSON_PROPERTY_NOON)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-        public JsonNullable<NoonData> getNoon_JsonNullable() {
-        return noon;
-        }
-    
-        @JsonProperty(JSON_PROPERTY_NOON)
-        public void setNoon_JsonNullable(JsonNullable<NoonData> noon) {
-        this.noon = noon;
-        }
+  public JsonNullable<NoonData> getNoon_JsonNullable() {
+    return noon;
+  }
+  
+  @JsonProperty(JSON_PROPERTY_NOON)
+  public void setNoon_JsonNullable(JsonNullable<NoonData> noon) {
+    this.noon = noon;
+  }
 
-          public void setNoon(@javax.annotation.Nullable NoonData noon) {
-            this.noon = JsonNullable.<NoonData>of(noon);
-        }
+  public void setNoon(@javax.annotation.Nullable NoonData noon) {
+    this.noon = JsonNullable.<NoonData>of(noon);
+  }
 
-@Override
-public boolean equals(Object o) {
+  @Override
+  public boolean equals(Object o) {
     if (this == o) {
-    return true;
+      return true;
     }
     if (o == null || getClass() != o.getClass()) {
-    return false;
+      return false;
     }
-        ConnectorMetadata connectorMetadata = (ConnectorMetadata) o;
-        return equalsNullable(this.applePay, connectorMetadata.applePay) &&
+    ConnectorMetadata connectorMetadata = (ConnectorMetadata) o;
+    return equalsNullable(this.applePay, connectorMetadata.applePay) &&
         equalsNullable(this.airwallex, connectorMetadata.airwallex) &&
         equalsNullable(this.noon, connectorMetadata.noon);
-}
+  }
 
-    private static <T> boolean equalsNullable(JsonNullable<T> a, JsonNullable<T> b) {
-        return a == b || (a != null && b != null && a.isPresent() && b.isPresent() && Objects.deepEquals(a.get(), b.get()));
-        }
+  private static <T> boolean equalsNullable(JsonNullable<T> a, JsonNullable<T> b) {
+    return a == b || (a != null && b != null && a.isPresent() && b.isPresent() && Objects.deepEquals(a.get(), b.get()));
+  }
 
-    @Override
-    public int hashCode() {
-        return Objects.hash(hashCodeNullable(applePay), hashCodeNullable(airwallex), hashCodeNullable(noon));
+  @Override
+  public int hashCode() {
+    return Objects.hash(hashCodeNullable(applePay), hashCodeNullable(airwallex), hashCodeNullable(noon));
+  }
+
+  private static <T> int hashCodeNullable(JsonNullable<T> a) {
+    if (a == null) {
+      return 1;
     }
+    return a.isPresent() ? Arrays.deepHashCode(new Object[]{a.get()}) : 31;
+  }
 
-        private static <T> int hashCodeNullable(JsonNullable<T> a) {
-        if (a == null) {
-        return 1;
-        }
-        return a.isPresent() ? Arrays.deepHashCode(new Object[]{a.get()}) : 31;
-        }
-
-    @Override
-    public String toString() {
+  @Override
+  public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class ConnectorMetadata {\n");
-        sb.append("    applePay: ").append(toIndentedString(applePay)).append("\n");
-        sb.append("    airwallex: ").append(toIndentedString(airwallex)).append("\n");
-        sb.append("    noon: ").append(toIndentedString(noon)).append("\n");
+    sb.append("    applePay: ").append(toIndentedString(applePay)).append("\n");
+    sb.append("    airwallex: ").append(toIndentedString(airwallex)).append("\n");
+    sb.append("    noon: ").append(toIndentedString(noon)).append("\n");
     sb.append("}");
     return sb.toString();
-    }
+  }
 
-    /**
-    * Convert the given object to string with each line indented by 4 spaces
-    * (except the first line).
-    */
-    private String toIndentedString(Object o) {
+  /**
+   * Convert the given object to string with each line indented by 4 spaces
+   * (except the first line).
+   */
+  private String toIndentedString(Object o) {
     if (o == null) {
-    return "null";
+      return "null";
     }
     return o.toString().replace("\n", "\n    ");
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @return URL query string
+   */
+  public String toUrlQueryString() {
+    return toUrlQueryString(null);
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @param prefix prefix of the query string
+   * @return URL query string
+   */
+  public String toUrlQueryString(String prefix) {
+    String suffix = "";
+    String containerSuffix = "";
+    String containerPrefix = "";
+    if (prefix == null) {
+      // style=form, explode=true, e.g. /pet?name=cat&type=manx
+      prefix = "";
+    } else {
+      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+      prefix = prefix + "[";
+      suffix = "]";
+      containerSuffix = "]";
+      containerPrefix = "[";
     }
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @return URL query string
-        */
-        public String toUrlQueryString() {
-        return toUrlQueryString(null);
-        }
+    StringJoiner joiner = new StringJoiner("&");
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @param prefix prefix of the query string
-        * @return URL query string
-        */
-        public String toUrlQueryString(String prefix) {
-        String suffix = "";
-        String containerSuffix = "";
-        String containerPrefix = "";
-        if (prefix == null) {
-        // style=form, explode=true, e.g. /pet?name=cat&type=manx
-        prefix = "";
-        } else {
-        // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
-        prefix = prefix + "[";
-        suffix = "]";
-        containerSuffix = "]";
-        containerPrefix = "[";
-        }
-
-        StringJoiner joiner = new StringJoiner("&");
-
-            // add `apple_pay` to the URL query string
-                            if (getApplePay() != null) {
-                            joiner.add(getApplePay().toUrlQueryString(prefix + "apple_pay" + suffix));
-                            }
-
-            // add `airwallex` to the URL query string
-                            if (getAirwallex() != null) {
-                            joiner.add(getAirwallex().toUrlQueryString(prefix + "airwallex" + suffix));
-                            }
-
-            // add `noon` to the URL query string
-                            if (getNoon() != null) {
-                            joiner.add(getNoon().toUrlQueryString(prefix + "noon" + suffix));
-                            }
-
-        return joiner.toString();
-        }
-
+    // add `apple_pay` to the URL query string
+    if (getApplePay() != null) {
+      joiner.add(getApplePay().toUrlQueryString(prefix + "apple_pay" + suffix));
     }
+
+    // add `airwallex` to the URL query string
+    if (getAirwallex() != null) {
+      joiner.add(getAirwallex().toUrlQueryString(prefix + "airwallex" + suffix));
+    }
+
+    // add `noon` to the URL query string
+    if (getNoon() != null) {
+      joiner.add(getNoon().toUrlQueryString(prefix + "noon" + suffix));
+    }
+
+    return joiner.toString();
+  }
+
+}
 

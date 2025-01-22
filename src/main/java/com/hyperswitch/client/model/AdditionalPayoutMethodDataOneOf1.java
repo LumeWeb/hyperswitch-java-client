@@ -28,122 +28,122 @@ import java.net.URLEncoder;
 import java.util.StringJoiner;
 
 /**
-* AdditionalPayoutMethodDataOneOf1
-*/
-    @JsonPropertyOrder({
-        AdditionalPayoutMethodDataOneOf1.JSON_PROPERTY_BANK
-    })
-            @JsonTypeName("AdditionalPayoutMethodData_oneOf_1")
+ * AdditionalPayoutMethodDataOneOf1
+ */
+@JsonPropertyOrder({
+  AdditionalPayoutMethodDataOneOf1.JSON_PROPERTY_BANK
+})
+@JsonTypeName("AdditionalPayoutMethodData_oneOf_1")
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class AdditionalPayoutMethodDataOneOf1 {
-        public static final String JSON_PROPERTY_BANK = "Bank";
-    @javax.annotation.Nonnull
-            private BankAdditionalData bank;
+  public static final String JSON_PROPERTY_BANK = "Bank";
+  @javax.annotation.Nonnull
+  private BankAdditionalData bank;
 
-public AdditionalPayoutMethodDataOneOf1() {
-}
+  public AdditionalPayoutMethodDataOneOf1() {
+  }
 
-        public AdditionalPayoutMethodDataOneOf1 bank(@javax.annotation.Nonnull BankAdditionalData bank) {
-        
-        this.bank = bank;
-        return this;
-        }
+  public AdditionalPayoutMethodDataOneOf1 bank(@javax.annotation.Nonnull BankAdditionalData bank) {
+    
+    this.bank = bank;
+    return this;
+  }
 
-    /**
-        * Get bank
-    * @return bank
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_BANK)
+  /**
+   * Get bank
+   * @return bank
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_BANK)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public BankAdditionalData getBank() {
-        return bank;
-    }
+  public BankAdditionalData getBank() {
+    return bank;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_BANK)
+  @JsonProperty(JSON_PROPERTY_BANK)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setBank(@javax.annotation.Nonnull BankAdditionalData bank) {
-            this.bank = bank;
-        }
+    this.bank = bank;
+  }
 
-@Override
-public boolean equals(Object o) {
+  @Override
+  public boolean equals(Object o) {
     if (this == o) {
-    return true;
+      return true;
     }
     if (o == null || getClass() != o.getClass()) {
-    return false;
+      return false;
     }
-        AdditionalPayoutMethodDataOneOf1 additionalPayoutMethodDataOneOf1 = (AdditionalPayoutMethodDataOneOf1) o;
-        return Objects.equals(this.bank, additionalPayoutMethodDataOneOf1.bank);
-}
+    AdditionalPayoutMethodDataOneOf1 additionalPayoutMethodDataOneOf1 = (AdditionalPayoutMethodDataOneOf1) o;
+    return Objects.equals(this.bank, additionalPayoutMethodDataOneOf1.bank);
+  }
 
-    @Override
-    public int hashCode() {
-        return Objects.hash(bank);
-    }
+  @Override
+  public int hashCode() {
+    return Objects.hash(bank);
+  }
 
-    @Override
-    public String toString() {
+  @Override
+  public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class AdditionalPayoutMethodDataOneOf1 {\n");
-        sb.append("    bank: ").append(toIndentedString(bank)).append("\n");
+    sb.append("    bank: ").append(toIndentedString(bank)).append("\n");
     sb.append("}");
     return sb.toString();
-    }
+  }
 
-    /**
-    * Convert the given object to string with each line indented by 4 spaces
-    * (except the first line).
-    */
-    private String toIndentedString(Object o) {
+  /**
+   * Convert the given object to string with each line indented by 4 spaces
+   * (except the first line).
+   */
+  private String toIndentedString(Object o) {
     if (o == null) {
-    return "null";
+      return "null";
     }
     return o.toString().replace("\n", "\n    ");
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @return URL query string
+   */
+  public String toUrlQueryString() {
+    return toUrlQueryString(null);
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @param prefix prefix of the query string
+   * @return URL query string
+   */
+  public String toUrlQueryString(String prefix) {
+    String suffix = "";
+    String containerSuffix = "";
+    String containerPrefix = "";
+    if (prefix == null) {
+      // style=form, explode=true, e.g. /pet?name=cat&type=manx
+      prefix = "";
+    } else {
+      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+      prefix = prefix + "[";
+      suffix = "]";
+      containerSuffix = "]";
+      containerPrefix = "[";
     }
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @return URL query string
-        */
-        public String toUrlQueryString() {
-        return toUrlQueryString(null);
-        }
+    StringJoiner joiner = new StringJoiner("&");
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @param prefix prefix of the query string
-        * @return URL query string
-        */
-        public String toUrlQueryString(String prefix) {
-        String suffix = "";
-        String containerSuffix = "";
-        String containerPrefix = "";
-        if (prefix == null) {
-        // style=form, explode=true, e.g. /pet?name=cat&type=manx
-        prefix = "";
-        } else {
-        // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
-        prefix = prefix + "[";
-        suffix = "]";
-        containerSuffix = "]";
-        containerPrefix = "[";
-        }
-
-        StringJoiner joiner = new StringJoiner("&");
-
-            // add `Bank` to the URL query string
-                            if (getBank() != null) {
-                            joiner.add(getBank().toUrlQueryString(prefix + "Bank" + suffix));
-                            }
-
-        return joiner.toString();
-        }
-
+    // add `Bank` to the URL query string
+    if (getBank() != null) {
+      joiner.add(getBank().toUrlQueryString(prefix + "Bank" + suffix));
     }
+
+    return joiner.toString();
+  }
+
+}
 

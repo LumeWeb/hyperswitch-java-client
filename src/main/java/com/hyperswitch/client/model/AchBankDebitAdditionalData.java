@@ -34,429 +34,429 @@ import java.net.URLEncoder;
 import java.util.StringJoiner;
 
 /**
-* AchBankDebitAdditionalData
-*/
-    @JsonPropertyOrder({
-        AchBankDebitAdditionalData.JSON_PROPERTY_ACCOUNT_NUMBER,
-        AchBankDebitAdditionalData.JSON_PROPERTY_ROUTING_NUMBER,
-        AchBankDebitAdditionalData.JSON_PROPERTY_CARD_HOLDER_NAME,
-        AchBankDebitAdditionalData.JSON_PROPERTY_BANK_ACCOUNT_HOLDER_NAME,
-        AchBankDebitAdditionalData.JSON_PROPERTY_BANK_NAME,
-        AchBankDebitAdditionalData.JSON_PROPERTY_BANK_TYPE,
-        AchBankDebitAdditionalData.JSON_PROPERTY_BANK_HOLDER_TYPE
-    })
+ * AchBankDebitAdditionalData
+ */
+@JsonPropertyOrder({
+  AchBankDebitAdditionalData.JSON_PROPERTY_ACCOUNT_NUMBER,
+  AchBankDebitAdditionalData.JSON_PROPERTY_ROUTING_NUMBER,
+  AchBankDebitAdditionalData.JSON_PROPERTY_CARD_HOLDER_NAME,
+  AchBankDebitAdditionalData.JSON_PROPERTY_BANK_ACCOUNT_HOLDER_NAME,
+  AchBankDebitAdditionalData.JSON_PROPERTY_BANK_NAME,
+  AchBankDebitAdditionalData.JSON_PROPERTY_BANK_TYPE,
+  AchBankDebitAdditionalData.JSON_PROPERTY_BANK_HOLDER_TYPE
+})
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class AchBankDebitAdditionalData {
-        public static final String JSON_PROPERTY_ACCOUNT_NUMBER = "account_number";
-    @javax.annotation.Nonnull
-            private String accountNumber;
+  public static final String JSON_PROPERTY_ACCOUNT_NUMBER = "account_number";
+  @javax.annotation.Nonnull
+  private String accountNumber;
 
-        public static final String JSON_PROPERTY_ROUTING_NUMBER = "routing_number";
-    @javax.annotation.Nonnull
-            private String routingNumber;
+  public static final String JSON_PROPERTY_ROUTING_NUMBER = "routing_number";
+  @javax.annotation.Nonnull
+  private String routingNumber;
 
-        public static final String JSON_PROPERTY_CARD_HOLDER_NAME = "card_holder_name";
-    @javax.annotation.Nullable
-            private JsonNullable<String> cardHolderName = JsonNullable.<String>undefined();
+  public static final String JSON_PROPERTY_CARD_HOLDER_NAME = "card_holder_name";
+  @javax.annotation.Nullable
+  private JsonNullable<String> cardHolderName = JsonNullable.<String>undefined();
 
-        public static final String JSON_PROPERTY_BANK_ACCOUNT_HOLDER_NAME = "bank_account_holder_name";
-    @javax.annotation.Nullable
-            private JsonNullable<String> bankAccountHolderName = JsonNullable.<String>undefined();
+  public static final String JSON_PROPERTY_BANK_ACCOUNT_HOLDER_NAME = "bank_account_holder_name";
+  @javax.annotation.Nullable
+  private JsonNullable<String> bankAccountHolderName = JsonNullable.<String>undefined();
 
-        public static final String JSON_PROPERTY_BANK_NAME = "bank_name";
-    @javax.annotation.Nullable
-            private JsonNullable<BankNames> bankName = JsonNullable.<BankNames>undefined();
+  public static final String JSON_PROPERTY_BANK_NAME = "bank_name";
+  @javax.annotation.Nullable
+  private JsonNullable<BankNames> bankName = JsonNullable.<BankNames>undefined();
 
-        public static final String JSON_PROPERTY_BANK_TYPE = "bank_type";
-    @javax.annotation.Nullable
-            private JsonNullable<BankType> bankType = JsonNullable.<BankType>undefined();
+  public static final String JSON_PROPERTY_BANK_TYPE = "bank_type";
+  @javax.annotation.Nullable
+  private JsonNullable<BankType> bankType = JsonNullable.<BankType>undefined();
 
-        public static final String JSON_PROPERTY_BANK_HOLDER_TYPE = "bank_holder_type";
-    @javax.annotation.Nullable
-            private JsonNullable<BankHolderType> bankHolderType = JsonNullable.<BankHolderType>undefined();
+  public static final String JSON_PROPERTY_BANK_HOLDER_TYPE = "bank_holder_type";
+  @javax.annotation.Nullable
+  private JsonNullable<BankHolderType> bankHolderType = JsonNullable.<BankHolderType>undefined();
 
-public AchBankDebitAdditionalData() {
-}
+  public AchBankDebitAdditionalData() {
+  }
 
-        public AchBankDebitAdditionalData accountNumber(@javax.annotation.Nonnull String accountNumber) {
-        
-        this.accountNumber = accountNumber;
-        return this;
-        }
+  public AchBankDebitAdditionalData accountNumber(@javax.annotation.Nonnull String accountNumber) {
+    
+    this.accountNumber = accountNumber;
+    return this;
+  }
 
-    /**
-        * Partially masked account number for ach bank debit payment
-    * @return accountNumber
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_ACCOUNT_NUMBER)
+  /**
+   * Partially masked account number for ach bank debit payment
+   * @return accountNumber
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_ACCOUNT_NUMBER)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public String getAccountNumber() {
-        return accountNumber;
-    }
+  public String getAccountNumber() {
+    return accountNumber;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_ACCOUNT_NUMBER)
+  @JsonProperty(JSON_PROPERTY_ACCOUNT_NUMBER)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setAccountNumber(@javax.annotation.Nonnull String accountNumber) {
-            this.accountNumber = accountNumber;
-        }
+    this.accountNumber = accountNumber;
+  }
 
-        public AchBankDebitAdditionalData routingNumber(@javax.annotation.Nonnull String routingNumber) {
-        
-        this.routingNumber = routingNumber;
-        return this;
-        }
+  public AchBankDebitAdditionalData routingNumber(@javax.annotation.Nonnull String routingNumber) {
+    
+    this.routingNumber = routingNumber;
+    return this;
+  }
 
-    /**
-        * Partially masked routing number for ach bank debit payment
-    * @return routingNumber
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_ROUTING_NUMBER)
+  /**
+   * Partially masked routing number for ach bank debit payment
+   * @return routingNumber
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_ROUTING_NUMBER)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public String getRoutingNumber() {
-        return routingNumber;
-    }
+  public String getRoutingNumber() {
+    return routingNumber;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_ROUTING_NUMBER)
+  @JsonProperty(JSON_PROPERTY_ROUTING_NUMBER)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setRoutingNumber(@javax.annotation.Nonnull String routingNumber) {
-            this.routingNumber = routingNumber;
-        }
+    this.routingNumber = routingNumber;
+  }
 
-        public AchBankDebitAdditionalData cardHolderName(@javax.annotation.Nullable String cardHolderName) {
-        this.cardHolderName = JsonNullable.<String>of(cardHolderName);
-        
-        return this;
-        }
-
-    /**
-        * Card holder&#39;s name
-    * @return cardHolderName
-    */
-    @javax.annotation.Nullable
-        @JsonIgnore
+  public AchBankDebitAdditionalData cardHolderName(@javax.annotation.Nullable String cardHolderName) {
+    this.cardHolderName = JsonNullable.<String>of(cardHolderName);
     
-    public String getCardHolderName() {
-                return cardHolderName.orElse(null);
-    }
+    return this;
+  }
 
-          @JsonProperty(JSON_PROPERTY_CARD_HOLDER_NAME)
+  /**
+   * Card holder&#39;s name
+   * @return cardHolderName
+   */
+  @javax.annotation.Nullable
+  @JsonIgnore
+
+  public String getCardHolderName() {
+        return cardHolderName.orElse(null);
+  }
+
+  @JsonProperty(JSON_PROPERTY_CARD_HOLDER_NAME)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-        public JsonNullable<String> getCardHolderName_JsonNullable() {
-        return cardHolderName;
-        }
+  public JsonNullable<String> getCardHolderName_JsonNullable() {
+    return cardHolderName;
+  }
+  
+  @JsonProperty(JSON_PROPERTY_CARD_HOLDER_NAME)
+  public void setCardHolderName_JsonNullable(JsonNullable<String> cardHolderName) {
+    this.cardHolderName = cardHolderName;
+  }
+
+  public void setCardHolderName(@javax.annotation.Nullable String cardHolderName) {
+    this.cardHolderName = JsonNullable.<String>of(cardHolderName);
+  }
+
+  public AchBankDebitAdditionalData bankAccountHolderName(@javax.annotation.Nullable String bankAccountHolderName) {
+    this.bankAccountHolderName = JsonNullable.<String>of(bankAccountHolderName);
     
-        @JsonProperty(JSON_PROPERTY_CARD_HOLDER_NAME)
-        public void setCardHolderName_JsonNullable(JsonNullable<String> cardHolderName) {
-        this.cardHolderName = cardHolderName;
-        }
+    return this;
+  }
 
-          public void setCardHolderName(@javax.annotation.Nullable String cardHolderName) {
-            this.cardHolderName = JsonNullable.<String>of(cardHolderName);
-        }
+  /**
+   * Bank account&#39;s owner name
+   * @return bankAccountHolderName
+   */
+  @javax.annotation.Nullable
+  @JsonIgnore
 
-        public AchBankDebitAdditionalData bankAccountHolderName(@javax.annotation.Nullable String bankAccountHolderName) {
-        this.bankAccountHolderName = JsonNullable.<String>of(bankAccountHolderName);
-        
-        return this;
-        }
+  public String getBankAccountHolderName() {
+        return bankAccountHolderName.orElse(null);
+  }
 
-    /**
-        * Bank account&#39;s owner name
-    * @return bankAccountHolderName
-    */
-    @javax.annotation.Nullable
-        @JsonIgnore
-    
-    public String getBankAccountHolderName() {
-                return bankAccountHolderName.orElse(null);
-    }
-
-          @JsonProperty(JSON_PROPERTY_BANK_ACCOUNT_HOLDER_NAME)
+  @JsonProperty(JSON_PROPERTY_BANK_ACCOUNT_HOLDER_NAME)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-        public JsonNullable<String> getBankAccountHolderName_JsonNullable() {
-        return bankAccountHolderName;
-        }
+  public JsonNullable<String> getBankAccountHolderName_JsonNullable() {
+    return bankAccountHolderName;
+  }
+  
+  @JsonProperty(JSON_PROPERTY_BANK_ACCOUNT_HOLDER_NAME)
+  public void setBankAccountHolderName_JsonNullable(JsonNullable<String> bankAccountHolderName) {
+    this.bankAccountHolderName = bankAccountHolderName;
+  }
+
+  public void setBankAccountHolderName(@javax.annotation.Nullable String bankAccountHolderName) {
+    this.bankAccountHolderName = JsonNullable.<String>of(bankAccountHolderName);
+  }
+
+  public AchBankDebitAdditionalData bankName(@javax.annotation.Nullable BankNames bankName) {
+    this.bankName = JsonNullable.<BankNames>of(bankName);
     
-        @JsonProperty(JSON_PROPERTY_BANK_ACCOUNT_HOLDER_NAME)
-        public void setBankAccountHolderName_JsonNullable(JsonNullable<String> bankAccountHolderName) {
-        this.bankAccountHolderName = bankAccountHolderName;
-        }
+    return this;
+  }
 
-          public void setBankAccountHolderName(@javax.annotation.Nullable String bankAccountHolderName) {
-            this.bankAccountHolderName = JsonNullable.<String>of(bankAccountHolderName);
-        }
+  /**
+   * Get bankName
+   * @return bankName
+   */
+  @javax.annotation.Nullable
+  @JsonIgnore
 
-        public AchBankDebitAdditionalData bankName(@javax.annotation.Nullable BankNames bankName) {
-        this.bankName = JsonNullable.<BankNames>of(bankName);
-        
-        return this;
-        }
+  public BankNames getBankName() {
+        return bankName.orElse(null);
+  }
 
-    /**
-        * Get bankName
-    * @return bankName
-    */
-    @javax.annotation.Nullable
-        @JsonIgnore
-    
-    public BankNames getBankName() {
-                return bankName.orElse(null);
-    }
-
-          @JsonProperty(JSON_PROPERTY_BANK_NAME)
+  @JsonProperty(JSON_PROPERTY_BANK_NAME)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-        public JsonNullable<BankNames> getBankName_JsonNullable() {
-        return bankName;
-        }
+  public JsonNullable<BankNames> getBankName_JsonNullable() {
+    return bankName;
+  }
+  
+  @JsonProperty(JSON_PROPERTY_BANK_NAME)
+  public void setBankName_JsonNullable(JsonNullable<BankNames> bankName) {
+    this.bankName = bankName;
+  }
+
+  public void setBankName(@javax.annotation.Nullable BankNames bankName) {
+    this.bankName = JsonNullable.<BankNames>of(bankName);
+  }
+
+  public AchBankDebitAdditionalData bankType(@javax.annotation.Nullable BankType bankType) {
+    this.bankType = JsonNullable.<BankType>of(bankType);
     
-        @JsonProperty(JSON_PROPERTY_BANK_NAME)
-        public void setBankName_JsonNullable(JsonNullable<BankNames> bankName) {
-        this.bankName = bankName;
-        }
+    return this;
+  }
 
-          public void setBankName(@javax.annotation.Nullable BankNames bankName) {
-            this.bankName = JsonNullable.<BankNames>of(bankName);
-        }
+  /**
+   * Get bankType
+   * @return bankType
+   */
+  @javax.annotation.Nullable
+  @JsonIgnore
 
-        public AchBankDebitAdditionalData bankType(@javax.annotation.Nullable BankType bankType) {
-        this.bankType = JsonNullable.<BankType>of(bankType);
-        
-        return this;
-        }
+  public BankType getBankType() {
+        return bankType.orElse(null);
+  }
 
-    /**
-        * Get bankType
-    * @return bankType
-    */
-    @javax.annotation.Nullable
-        @JsonIgnore
-    
-    public BankType getBankType() {
-                return bankType.orElse(null);
-    }
-
-          @JsonProperty(JSON_PROPERTY_BANK_TYPE)
+  @JsonProperty(JSON_PROPERTY_BANK_TYPE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-        public JsonNullable<BankType> getBankType_JsonNullable() {
-        return bankType;
-        }
+  public JsonNullable<BankType> getBankType_JsonNullable() {
+    return bankType;
+  }
+  
+  @JsonProperty(JSON_PROPERTY_BANK_TYPE)
+  public void setBankType_JsonNullable(JsonNullable<BankType> bankType) {
+    this.bankType = bankType;
+  }
+
+  public void setBankType(@javax.annotation.Nullable BankType bankType) {
+    this.bankType = JsonNullable.<BankType>of(bankType);
+  }
+
+  public AchBankDebitAdditionalData bankHolderType(@javax.annotation.Nullable BankHolderType bankHolderType) {
+    this.bankHolderType = JsonNullable.<BankHolderType>of(bankHolderType);
     
-        @JsonProperty(JSON_PROPERTY_BANK_TYPE)
-        public void setBankType_JsonNullable(JsonNullable<BankType> bankType) {
-        this.bankType = bankType;
-        }
+    return this;
+  }
 
-          public void setBankType(@javax.annotation.Nullable BankType bankType) {
-            this.bankType = JsonNullable.<BankType>of(bankType);
-        }
+  /**
+   * Get bankHolderType
+   * @return bankHolderType
+   */
+  @javax.annotation.Nullable
+  @JsonIgnore
 
-        public AchBankDebitAdditionalData bankHolderType(@javax.annotation.Nullable BankHolderType bankHolderType) {
-        this.bankHolderType = JsonNullable.<BankHolderType>of(bankHolderType);
-        
-        return this;
-        }
+  public BankHolderType getBankHolderType() {
+        return bankHolderType.orElse(null);
+  }
 
-    /**
-        * Get bankHolderType
-    * @return bankHolderType
-    */
-    @javax.annotation.Nullable
-        @JsonIgnore
-    
-    public BankHolderType getBankHolderType() {
-                return bankHolderType.orElse(null);
-    }
-
-          @JsonProperty(JSON_PROPERTY_BANK_HOLDER_TYPE)
+  @JsonProperty(JSON_PROPERTY_BANK_HOLDER_TYPE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-        public JsonNullable<BankHolderType> getBankHolderType_JsonNullable() {
-        return bankHolderType;
-        }
-    
-        @JsonProperty(JSON_PROPERTY_BANK_HOLDER_TYPE)
-        public void setBankHolderType_JsonNullable(JsonNullable<BankHolderType> bankHolderType) {
-        this.bankHolderType = bankHolderType;
-        }
+  public JsonNullable<BankHolderType> getBankHolderType_JsonNullable() {
+    return bankHolderType;
+  }
+  
+  @JsonProperty(JSON_PROPERTY_BANK_HOLDER_TYPE)
+  public void setBankHolderType_JsonNullable(JsonNullable<BankHolderType> bankHolderType) {
+    this.bankHolderType = bankHolderType;
+  }
 
-          public void setBankHolderType(@javax.annotation.Nullable BankHolderType bankHolderType) {
-            this.bankHolderType = JsonNullable.<BankHolderType>of(bankHolderType);
-        }
+  public void setBankHolderType(@javax.annotation.Nullable BankHolderType bankHolderType) {
+    this.bankHolderType = JsonNullable.<BankHolderType>of(bankHolderType);
+  }
 
-@Override
-public boolean equals(Object o) {
+  @Override
+  public boolean equals(Object o) {
     if (this == o) {
-    return true;
+      return true;
     }
     if (o == null || getClass() != o.getClass()) {
-    return false;
+      return false;
     }
-        AchBankDebitAdditionalData achBankDebitAdditionalData = (AchBankDebitAdditionalData) o;
-        return Objects.equals(this.accountNumber, achBankDebitAdditionalData.accountNumber) &&
+    AchBankDebitAdditionalData achBankDebitAdditionalData = (AchBankDebitAdditionalData) o;
+    return Objects.equals(this.accountNumber, achBankDebitAdditionalData.accountNumber) &&
         Objects.equals(this.routingNumber, achBankDebitAdditionalData.routingNumber) &&
         equalsNullable(this.cardHolderName, achBankDebitAdditionalData.cardHolderName) &&
         equalsNullable(this.bankAccountHolderName, achBankDebitAdditionalData.bankAccountHolderName) &&
         equalsNullable(this.bankName, achBankDebitAdditionalData.bankName) &&
         equalsNullable(this.bankType, achBankDebitAdditionalData.bankType) &&
         equalsNullable(this.bankHolderType, achBankDebitAdditionalData.bankHolderType);
-}
+  }
 
-    private static <T> boolean equalsNullable(JsonNullable<T> a, JsonNullable<T> b) {
-        return a == b || (a != null && b != null && a.isPresent() && b.isPresent() && Objects.deepEquals(a.get(), b.get()));
-        }
+  private static <T> boolean equalsNullable(JsonNullable<T> a, JsonNullable<T> b) {
+    return a == b || (a != null && b != null && a.isPresent() && b.isPresent() && Objects.deepEquals(a.get(), b.get()));
+  }
 
-    @Override
-    public int hashCode() {
-        return Objects.hash(accountNumber, routingNumber, hashCodeNullable(cardHolderName), hashCodeNullable(bankAccountHolderName), hashCodeNullable(bankName), hashCodeNullable(bankType), hashCodeNullable(bankHolderType));
+  @Override
+  public int hashCode() {
+    return Objects.hash(accountNumber, routingNumber, hashCodeNullable(cardHolderName), hashCodeNullable(bankAccountHolderName), hashCodeNullable(bankName), hashCodeNullable(bankType), hashCodeNullable(bankHolderType));
+  }
+
+  private static <T> int hashCodeNullable(JsonNullable<T> a) {
+    if (a == null) {
+      return 1;
     }
+    return a.isPresent() ? Arrays.deepHashCode(new Object[]{a.get()}) : 31;
+  }
 
-        private static <T> int hashCodeNullable(JsonNullable<T> a) {
-        if (a == null) {
-        return 1;
-        }
-        return a.isPresent() ? Arrays.deepHashCode(new Object[]{a.get()}) : 31;
-        }
-
-    @Override
-    public String toString() {
+  @Override
+  public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class AchBankDebitAdditionalData {\n");
-        sb.append("    accountNumber: ").append(toIndentedString(accountNumber)).append("\n");
-        sb.append("    routingNumber: ").append(toIndentedString(routingNumber)).append("\n");
-        sb.append("    cardHolderName: ").append(toIndentedString(cardHolderName)).append("\n");
-        sb.append("    bankAccountHolderName: ").append(toIndentedString(bankAccountHolderName)).append("\n");
-        sb.append("    bankName: ").append(toIndentedString(bankName)).append("\n");
-        sb.append("    bankType: ").append(toIndentedString(bankType)).append("\n");
-        sb.append("    bankHolderType: ").append(toIndentedString(bankHolderType)).append("\n");
+    sb.append("    accountNumber: ").append(toIndentedString(accountNumber)).append("\n");
+    sb.append("    routingNumber: ").append(toIndentedString(routingNumber)).append("\n");
+    sb.append("    cardHolderName: ").append(toIndentedString(cardHolderName)).append("\n");
+    sb.append("    bankAccountHolderName: ").append(toIndentedString(bankAccountHolderName)).append("\n");
+    sb.append("    bankName: ").append(toIndentedString(bankName)).append("\n");
+    sb.append("    bankType: ").append(toIndentedString(bankType)).append("\n");
+    sb.append("    bankHolderType: ").append(toIndentedString(bankHolderType)).append("\n");
     sb.append("}");
     return sb.toString();
-    }
+  }
 
-    /**
-    * Convert the given object to string with each line indented by 4 spaces
-    * (except the first line).
-    */
-    private String toIndentedString(Object o) {
+  /**
+   * Convert the given object to string with each line indented by 4 spaces
+   * (except the first line).
+   */
+  private String toIndentedString(Object o) {
     if (o == null) {
-    return "null";
+      return "null";
     }
     return o.toString().replace("\n", "\n    ");
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @return URL query string
+   */
+  public String toUrlQueryString() {
+    return toUrlQueryString(null);
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @param prefix prefix of the query string
+   * @return URL query string
+   */
+  public String toUrlQueryString(String prefix) {
+    String suffix = "";
+    String containerSuffix = "";
+    String containerPrefix = "";
+    if (prefix == null) {
+      // style=form, explode=true, e.g. /pet?name=cat&type=manx
+      prefix = "";
+    } else {
+      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+      prefix = prefix + "[";
+      suffix = "]";
+      containerSuffix = "]";
+      containerPrefix = "[";
     }
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @return URL query string
-        */
-        public String toUrlQueryString() {
-        return toUrlQueryString(null);
-        }
+    StringJoiner joiner = new StringJoiner("&");
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @param prefix prefix of the query string
-        * @return URL query string
-        */
-        public String toUrlQueryString(String prefix) {
-        String suffix = "";
-        String containerSuffix = "";
-        String containerPrefix = "";
-        if (prefix == null) {
-        // style=form, explode=true, e.g. /pet?name=cat&type=manx
-        prefix = "";
-        } else {
-        // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
-        prefix = prefix + "[";
-        suffix = "]";
-        containerSuffix = "]";
-        containerPrefix = "[";
-        }
-
-        StringJoiner joiner = new StringJoiner("&");
-
-            // add `account_number` to the URL query string
-                        if (getAccountNumber() != null) {
-                        try {
-                        joiner.add(String.format("%saccount_number%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getAccountNumber()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-            // add `routing_number` to the URL query string
-                        if (getRoutingNumber() != null) {
-                        try {
-                        joiner.add(String.format("%srouting_number%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getRoutingNumber()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-            // add `card_holder_name` to the URL query string
-                        if (getCardHolderName() != null) {
-                        try {
-                        joiner.add(String.format("%scard_holder_name%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCardHolderName()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-            // add `bank_account_holder_name` to the URL query string
-                        if (getBankAccountHolderName() != null) {
-                        try {
-                        joiner.add(String.format("%sbank_account_holder_name%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getBankAccountHolderName()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-            // add `bank_name` to the URL query string
-                            if (getBankName() != null) {
-                            try {
-                            joiner.add(String.format("%sbank_name%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getBankName()), "UTF-8").replaceAll("\\+", "%20")));
-                            } catch (UnsupportedEncodingException e) {
-                            // Should never happen, UTF-8 is always supported
-                            throw new RuntimeException(e);
-                            }
-                            }
-
-            // add `bank_type` to the URL query string
-                            if (getBankType() != null) {
-                            try {
-                            joiner.add(String.format("%sbank_type%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getBankType()), "UTF-8").replaceAll("\\+", "%20")));
-                            } catch (UnsupportedEncodingException e) {
-                            // Should never happen, UTF-8 is always supported
-                            throw new RuntimeException(e);
-                            }
-                            }
-
-            // add `bank_holder_type` to the URL query string
-                            if (getBankHolderType() != null) {
-                            try {
-                            joiner.add(String.format("%sbank_holder_type%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getBankHolderType()), "UTF-8").replaceAll("\\+", "%20")));
-                            } catch (UnsupportedEncodingException e) {
-                            // Should never happen, UTF-8 is always supported
-                            throw new RuntimeException(e);
-                            }
-                            }
-
-        return joiner.toString();
-        }
-
+    // add `account_number` to the URL query string
+    if (getAccountNumber() != null) {
+      try {
+        joiner.add(String.format("%saccount_number%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getAccountNumber()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
     }
+
+    // add `routing_number` to the URL query string
+    if (getRoutingNumber() != null) {
+      try {
+        joiner.add(String.format("%srouting_number%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getRoutingNumber()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `card_holder_name` to the URL query string
+    if (getCardHolderName() != null) {
+      try {
+        joiner.add(String.format("%scard_holder_name%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCardHolderName()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `bank_account_holder_name` to the URL query string
+    if (getBankAccountHolderName() != null) {
+      try {
+        joiner.add(String.format("%sbank_account_holder_name%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getBankAccountHolderName()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `bank_name` to the URL query string
+    if (getBankName() != null) {
+      try {
+        joiner.add(String.format("%sbank_name%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getBankName()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `bank_type` to the URL query string
+    if (getBankType() != null) {
+      try {
+        joiner.add(String.format("%sbank_type%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getBankType()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `bank_holder_type` to the URL query string
+    if (getBankHolderType() != null) {
+      try {
+        joiner.add(String.format("%sbank_holder_type%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getBankHolderType()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    return joiner.toString();
+  }
+
+}
 

@@ -28,122 +28,122 @@ import java.net.URLEncoder;
 import java.util.StringJoiner;
 
 /**
-* BankRedirectDataOneOf16
-*/
-    @JsonPropertyOrder({
-        BankRedirectDataOneOf16.JSON_PROPERTY_ONLINE_BANKING_THAILAND
-    })
-            @JsonTypeName("BankRedirectData_oneOf_16")
+ * BankRedirectDataOneOf16
+ */
+@JsonPropertyOrder({
+  BankRedirectDataOneOf16.JSON_PROPERTY_ONLINE_BANKING_THAILAND
+})
+@JsonTypeName("BankRedirectData_oneOf_16")
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class BankRedirectDataOneOf16 {
-        public static final String JSON_PROPERTY_ONLINE_BANKING_THAILAND = "online_banking_thailand";
-    @javax.annotation.Nonnull
-            private BankRedirectDataOneOf7OnlineBankingCzechRepublic onlineBankingThailand;
+  public static final String JSON_PROPERTY_ONLINE_BANKING_THAILAND = "online_banking_thailand";
+  @javax.annotation.Nonnull
+  private BankRedirectDataOneOf7OnlineBankingCzechRepublic onlineBankingThailand;
 
-public BankRedirectDataOneOf16() {
-}
+  public BankRedirectDataOneOf16() {
+  }
 
-        public BankRedirectDataOneOf16 onlineBankingThailand(@javax.annotation.Nonnull BankRedirectDataOneOf7OnlineBankingCzechRepublic onlineBankingThailand) {
-        
-        this.onlineBankingThailand = onlineBankingThailand;
-        return this;
-        }
+  public BankRedirectDataOneOf16 onlineBankingThailand(@javax.annotation.Nonnull BankRedirectDataOneOf7OnlineBankingCzechRepublic onlineBankingThailand) {
+    
+    this.onlineBankingThailand = onlineBankingThailand;
+    return this;
+  }
 
-    /**
-        * Get onlineBankingThailand
-    * @return onlineBankingThailand
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_ONLINE_BANKING_THAILAND)
+  /**
+   * Get onlineBankingThailand
+   * @return onlineBankingThailand
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_ONLINE_BANKING_THAILAND)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public BankRedirectDataOneOf7OnlineBankingCzechRepublic getOnlineBankingThailand() {
-        return onlineBankingThailand;
-    }
+  public BankRedirectDataOneOf7OnlineBankingCzechRepublic getOnlineBankingThailand() {
+    return onlineBankingThailand;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_ONLINE_BANKING_THAILAND)
+  @JsonProperty(JSON_PROPERTY_ONLINE_BANKING_THAILAND)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setOnlineBankingThailand(@javax.annotation.Nonnull BankRedirectDataOneOf7OnlineBankingCzechRepublic onlineBankingThailand) {
-            this.onlineBankingThailand = onlineBankingThailand;
-        }
+    this.onlineBankingThailand = onlineBankingThailand;
+  }
 
-@Override
-public boolean equals(Object o) {
+  @Override
+  public boolean equals(Object o) {
     if (this == o) {
-    return true;
+      return true;
     }
     if (o == null || getClass() != o.getClass()) {
-    return false;
+      return false;
     }
-        BankRedirectDataOneOf16 bankRedirectDataOneOf16 = (BankRedirectDataOneOf16) o;
-        return Objects.equals(this.onlineBankingThailand, bankRedirectDataOneOf16.onlineBankingThailand);
-}
+    BankRedirectDataOneOf16 bankRedirectDataOneOf16 = (BankRedirectDataOneOf16) o;
+    return Objects.equals(this.onlineBankingThailand, bankRedirectDataOneOf16.onlineBankingThailand);
+  }
 
-    @Override
-    public int hashCode() {
-        return Objects.hash(onlineBankingThailand);
-    }
+  @Override
+  public int hashCode() {
+    return Objects.hash(onlineBankingThailand);
+  }
 
-    @Override
-    public String toString() {
+  @Override
+  public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class BankRedirectDataOneOf16 {\n");
-        sb.append("    onlineBankingThailand: ").append(toIndentedString(onlineBankingThailand)).append("\n");
+    sb.append("    onlineBankingThailand: ").append(toIndentedString(onlineBankingThailand)).append("\n");
     sb.append("}");
     return sb.toString();
-    }
+  }
 
-    /**
-    * Convert the given object to string with each line indented by 4 spaces
-    * (except the first line).
-    */
-    private String toIndentedString(Object o) {
+  /**
+   * Convert the given object to string with each line indented by 4 spaces
+   * (except the first line).
+   */
+  private String toIndentedString(Object o) {
     if (o == null) {
-    return "null";
+      return "null";
     }
     return o.toString().replace("\n", "\n    ");
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @return URL query string
+   */
+  public String toUrlQueryString() {
+    return toUrlQueryString(null);
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @param prefix prefix of the query string
+   * @return URL query string
+   */
+  public String toUrlQueryString(String prefix) {
+    String suffix = "";
+    String containerSuffix = "";
+    String containerPrefix = "";
+    if (prefix == null) {
+      // style=form, explode=true, e.g. /pet?name=cat&type=manx
+      prefix = "";
+    } else {
+      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+      prefix = prefix + "[";
+      suffix = "]";
+      containerSuffix = "]";
+      containerPrefix = "[";
     }
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @return URL query string
-        */
-        public String toUrlQueryString() {
-        return toUrlQueryString(null);
-        }
+    StringJoiner joiner = new StringJoiner("&");
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @param prefix prefix of the query string
-        * @return URL query string
-        */
-        public String toUrlQueryString(String prefix) {
-        String suffix = "";
-        String containerSuffix = "";
-        String containerPrefix = "";
-        if (prefix == null) {
-        // style=form, explode=true, e.g. /pet?name=cat&type=manx
-        prefix = "";
-        } else {
-        // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
-        prefix = prefix + "[";
-        suffix = "]";
-        containerSuffix = "]";
-        containerPrefix = "[";
-        }
-
-        StringJoiner joiner = new StringJoiner("&");
-
-            // add `online_banking_thailand` to the URL query string
-                            if (getOnlineBankingThailand() != null) {
-                            joiner.add(getOnlineBankingThailand().toUrlQueryString(prefix + "online_banking_thailand" + suffix));
-                            }
-
-        return joiner.toString();
-        }
-
+    // add `online_banking_thailand` to the URL query string
+    if (getOnlineBankingThailand() != null) {
+      joiner.add(getOnlineBankingThailand().toUrlQueryString(prefix + "online_banking_thailand" + suffix));
     }
+
+    return joiner.toString();
+  }
+
+}
 

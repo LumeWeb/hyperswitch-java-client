@@ -31,187 +31,187 @@ import java.net.URLEncoder;
 import java.util.StringJoiner;
 
 /**
-* PaymentsIncrementalAuthorizationRequest
-*/
-    @JsonPropertyOrder({
-        PaymentsIncrementalAuthorizationRequest.JSON_PROPERTY_AMOUNT,
-        PaymentsIncrementalAuthorizationRequest.JSON_PROPERTY_REASON
-    })
+ * PaymentsIncrementalAuthorizationRequest
+ */
+@JsonPropertyOrder({
+  PaymentsIncrementalAuthorizationRequest.JSON_PROPERTY_AMOUNT,
+  PaymentsIncrementalAuthorizationRequest.JSON_PROPERTY_REASON
+})
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class PaymentsIncrementalAuthorizationRequest {
-        public static final String JSON_PROPERTY_AMOUNT = "amount";
-    @javax.annotation.Nonnull
-            private Long amount;
+  public static final String JSON_PROPERTY_AMOUNT = "amount";
+  @javax.annotation.Nonnull
+  private Long amount;
 
-        public static final String JSON_PROPERTY_REASON = "reason";
-    @javax.annotation.Nullable
-            private JsonNullable<String> reason = JsonNullable.<String>undefined();
+  public static final String JSON_PROPERTY_REASON = "reason";
+  @javax.annotation.Nullable
+  private JsonNullable<String> reason = JsonNullable.<String>undefined();
 
-public PaymentsIncrementalAuthorizationRequest() {
-}
+  public PaymentsIncrementalAuthorizationRequest() {
+  }
 
-        public PaymentsIncrementalAuthorizationRequest amount(@javax.annotation.Nonnull Long amount) {
-        
-        this.amount = amount;
-        return this;
-        }
+  public PaymentsIncrementalAuthorizationRequest amount(@javax.annotation.Nonnull Long amount) {
+    
+    this.amount = amount;
+    return this;
+  }
 
-    /**
-        * The total amount including previously authorized amount and additional amount
-    * @return amount
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_AMOUNT)
+  /**
+   * The total amount including previously authorized amount and additional amount
+   * @return amount
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_AMOUNT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public Long getAmount() {
-        return amount;
-    }
+  public Long getAmount() {
+    return amount;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_AMOUNT)
+  @JsonProperty(JSON_PROPERTY_AMOUNT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setAmount(@javax.annotation.Nonnull Long amount) {
-            this.amount = amount;
-        }
+    this.amount = amount;
+  }
 
-        public PaymentsIncrementalAuthorizationRequest reason(@javax.annotation.Nullable String reason) {
-        this.reason = JsonNullable.<String>of(reason);
-        
-        return this;
-        }
-
-    /**
-        * Reason for incremental authorization
-    * @return reason
-    */
-    @javax.annotation.Nullable
-        @JsonIgnore
+  public PaymentsIncrementalAuthorizationRequest reason(@javax.annotation.Nullable String reason) {
+    this.reason = JsonNullable.<String>of(reason);
     
-    public String getReason() {
-                return reason.orElse(null);
-    }
+    return this;
+  }
 
-          @JsonProperty(JSON_PROPERTY_REASON)
+  /**
+   * Reason for incremental authorization
+   * @return reason
+   */
+  @javax.annotation.Nullable
+  @JsonIgnore
+
+  public String getReason() {
+        return reason.orElse(null);
+  }
+
+  @JsonProperty(JSON_PROPERTY_REASON)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-        public JsonNullable<String> getReason_JsonNullable() {
-        return reason;
-        }
-    
-        @JsonProperty(JSON_PROPERTY_REASON)
-        public void setReason_JsonNullable(JsonNullable<String> reason) {
-        this.reason = reason;
-        }
+  public JsonNullable<String> getReason_JsonNullable() {
+    return reason;
+  }
+  
+  @JsonProperty(JSON_PROPERTY_REASON)
+  public void setReason_JsonNullable(JsonNullable<String> reason) {
+    this.reason = reason;
+  }
 
-          public void setReason(@javax.annotation.Nullable String reason) {
-            this.reason = JsonNullable.<String>of(reason);
-        }
+  public void setReason(@javax.annotation.Nullable String reason) {
+    this.reason = JsonNullable.<String>of(reason);
+  }
 
-@Override
-public boolean equals(Object o) {
+  @Override
+  public boolean equals(Object o) {
     if (this == o) {
-    return true;
+      return true;
     }
     if (o == null || getClass() != o.getClass()) {
-    return false;
+      return false;
     }
-        PaymentsIncrementalAuthorizationRequest paymentsIncrementalAuthorizationRequest = (PaymentsIncrementalAuthorizationRequest) o;
-        return Objects.equals(this.amount, paymentsIncrementalAuthorizationRequest.amount) &&
+    PaymentsIncrementalAuthorizationRequest paymentsIncrementalAuthorizationRequest = (PaymentsIncrementalAuthorizationRequest) o;
+    return Objects.equals(this.amount, paymentsIncrementalAuthorizationRequest.amount) &&
         equalsNullable(this.reason, paymentsIncrementalAuthorizationRequest.reason);
-}
+  }
 
-    private static <T> boolean equalsNullable(JsonNullable<T> a, JsonNullable<T> b) {
-        return a == b || (a != null && b != null && a.isPresent() && b.isPresent() && Objects.deepEquals(a.get(), b.get()));
-        }
+  private static <T> boolean equalsNullable(JsonNullable<T> a, JsonNullable<T> b) {
+    return a == b || (a != null && b != null && a.isPresent() && b.isPresent() && Objects.deepEquals(a.get(), b.get()));
+  }
 
-    @Override
-    public int hashCode() {
-        return Objects.hash(amount, hashCodeNullable(reason));
+  @Override
+  public int hashCode() {
+    return Objects.hash(amount, hashCodeNullable(reason));
+  }
+
+  private static <T> int hashCodeNullable(JsonNullable<T> a) {
+    if (a == null) {
+      return 1;
     }
+    return a.isPresent() ? Arrays.deepHashCode(new Object[]{a.get()}) : 31;
+  }
 
-        private static <T> int hashCodeNullable(JsonNullable<T> a) {
-        if (a == null) {
-        return 1;
-        }
-        return a.isPresent() ? Arrays.deepHashCode(new Object[]{a.get()}) : 31;
-        }
-
-    @Override
-    public String toString() {
+  @Override
+  public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class PaymentsIncrementalAuthorizationRequest {\n");
-        sb.append("    amount: ").append(toIndentedString(amount)).append("\n");
-        sb.append("    reason: ").append(toIndentedString(reason)).append("\n");
+    sb.append("    amount: ").append(toIndentedString(amount)).append("\n");
+    sb.append("    reason: ").append(toIndentedString(reason)).append("\n");
     sb.append("}");
     return sb.toString();
-    }
+  }
 
-    /**
-    * Convert the given object to string with each line indented by 4 spaces
-    * (except the first line).
-    */
-    private String toIndentedString(Object o) {
+  /**
+   * Convert the given object to string with each line indented by 4 spaces
+   * (except the first line).
+   */
+  private String toIndentedString(Object o) {
     if (o == null) {
-    return "null";
+      return "null";
     }
     return o.toString().replace("\n", "\n    ");
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @return URL query string
+   */
+  public String toUrlQueryString() {
+    return toUrlQueryString(null);
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @param prefix prefix of the query string
+   * @return URL query string
+   */
+  public String toUrlQueryString(String prefix) {
+    String suffix = "";
+    String containerSuffix = "";
+    String containerPrefix = "";
+    if (prefix == null) {
+      // style=form, explode=true, e.g. /pet?name=cat&type=manx
+      prefix = "";
+    } else {
+      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+      prefix = prefix + "[";
+      suffix = "]";
+      containerSuffix = "]";
+      containerPrefix = "[";
     }
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @return URL query string
-        */
-        public String toUrlQueryString() {
-        return toUrlQueryString(null);
-        }
+    StringJoiner joiner = new StringJoiner("&");
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @param prefix prefix of the query string
-        * @return URL query string
-        */
-        public String toUrlQueryString(String prefix) {
-        String suffix = "";
-        String containerSuffix = "";
-        String containerPrefix = "";
-        if (prefix == null) {
-        // style=form, explode=true, e.g. /pet?name=cat&type=manx
-        prefix = "";
-        } else {
-        // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
-        prefix = prefix + "[";
-        suffix = "]";
-        containerSuffix = "]";
-        containerPrefix = "[";
-        }
-
-        StringJoiner joiner = new StringJoiner("&");
-
-            // add `amount` to the URL query string
-                        if (getAmount() != null) {
-                        try {
-                        joiner.add(String.format("%samount%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getAmount()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-            // add `reason` to the URL query string
-                        if (getReason() != null) {
-                        try {
-                        joiner.add(String.format("%sreason%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getReason()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-        return joiner.toString();
-        }
-
+    // add `amount` to the URL query string
+    if (getAmount() != null) {
+      try {
+        joiner.add(String.format("%samount%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getAmount()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
     }
+
+    // add `reason` to the URL query string
+    if (getReason() != null) {
+      try {
+        joiner.add(String.format("%sreason%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getReason()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    return joiner.toString();
+  }
+
+}
 

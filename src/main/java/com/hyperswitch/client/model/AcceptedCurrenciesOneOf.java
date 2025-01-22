@@ -31,16 +31,16 @@ import java.net.URLEncoder;
 import java.util.StringJoiner;
 
 /**
-* AcceptedCurrenciesOneOf
-*/
-    @JsonPropertyOrder({
-        AcceptedCurrenciesOneOf.JSON_PROPERTY_TYPE,
-        AcceptedCurrenciesOneOf.JSON_PROPERTY_LIST
-    })
-            @JsonTypeName("AcceptedCurrencies_oneOf")
+ * AcceptedCurrenciesOneOf
+ */
+@JsonPropertyOrder({
+  AcceptedCurrenciesOneOf.JSON_PROPERTY_TYPE,
+  AcceptedCurrenciesOneOf.JSON_PROPERTY_LIST
+})
+@JsonTypeName("AcceptedCurrencies_oneOf")
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class AcceptedCurrenciesOneOf {
-              /**
+  /**
    * Gets or Sets type
    */
   public enum TypeEnum {
@@ -73,174 +73,174 @@ public class AcceptedCurrenciesOneOf {
     }
   }
 
-        public static final String JSON_PROPERTY_TYPE = "type";
-    @javax.annotation.Nonnull
-            private TypeEnum type;
+  public static final String JSON_PROPERTY_TYPE = "type";
+  @javax.annotation.Nonnull
+  private TypeEnum type;
 
-        public static final String JSON_PROPERTY_LIST = "list";
-    @javax.annotation.Nonnull
-            private List<Currency> _list = new ArrayList<>();
+  public static final String JSON_PROPERTY_LIST = "list";
+  @javax.annotation.Nonnull
+  private List<Currency> _list = new ArrayList<>();
 
-public AcceptedCurrenciesOneOf() {
-}
+  public AcceptedCurrenciesOneOf() {
+  }
 
-        public AcceptedCurrenciesOneOf type(@javax.annotation.Nonnull TypeEnum type) {
-        
-        this.type = type;
-        return this;
-        }
+  public AcceptedCurrenciesOneOf type(@javax.annotation.Nonnull TypeEnum type) {
+    
+    this.type = type;
+    return this;
+  }
 
-    /**
-        * Get type
-    * @return type
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_TYPE)
+  /**
+   * Get type
+   * @return type
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_TYPE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public TypeEnum getType() {
-        return type;
-    }
+  public TypeEnum getType() {
+    return type;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_TYPE)
+  @JsonProperty(JSON_PROPERTY_TYPE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setType(@javax.annotation.Nonnull TypeEnum type) {
-            this.type = type;
-        }
+    this.type = type;
+  }
 
-        public AcceptedCurrenciesOneOf _list(@javax.annotation.Nonnull List<Currency> _list) {
-        
-        this._list = _list;
-        return this;
-        }
+  public AcceptedCurrenciesOneOf _list(@javax.annotation.Nonnull List<Currency> _list) {
+    
+    this._list = _list;
+    return this;
+  }
 
-            public AcceptedCurrenciesOneOf addListItem(Currency _listItem) {
-                if (this._list == null) {
-                this._list = new ArrayList<>();
-                }
-                this._list.add(_listItem);
-                return this;
-            }
+  public AcceptedCurrenciesOneOf addListItem(Currency _listItem) {
+    if (this._list == null) {
+      this._list = new ArrayList<>();
+    }
+    this._list.add(_listItem);
+    return this;
+  }
 
-    /**
-        * Get _list
-    * @return _list
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_LIST)
+  /**
+   * Get _list
+   * @return _list
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_LIST)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public List<Currency> getList() {
-        return _list;
-    }
+  public List<Currency> getList() {
+    return _list;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_LIST)
+  @JsonProperty(JSON_PROPERTY_LIST)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setList(@javax.annotation.Nonnull List<Currency> _list) {
-            this._list = _list;
-        }
+    this._list = _list;
+  }
 
-@Override
-public boolean equals(Object o) {
+  @Override
+  public boolean equals(Object o) {
     if (this == o) {
-    return true;
+      return true;
     }
     if (o == null || getClass() != o.getClass()) {
-    return false;
+      return false;
     }
-        AcceptedCurrenciesOneOf acceptedCurrenciesOneOf = (AcceptedCurrenciesOneOf) o;
-        return Objects.equals(this.type, acceptedCurrenciesOneOf.type) &&
+    AcceptedCurrenciesOneOf acceptedCurrenciesOneOf = (AcceptedCurrenciesOneOf) o;
+    return Objects.equals(this.type, acceptedCurrenciesOneOf.type) &&
         Objects.equals(this._list, acceptedCurrenciesOneOf._list);
-}
+  }
 
-    @Override
-    public int hashCode() {
-        return Objects.hash(type, _list);
-    }
+  @Override
+  public int hashCode() {
+    return Objects.hash(type, _list);
+  }
 
-    @Override
-    public String toString() {
+  @Override
+  public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class AcceptedCurrenciesOneOf {\n");
-        sb.append("    type: ").append(toIndentedString(type)).append("\n");
-        sb.append("    _list: ").append(toIndentedString(_list)).append("\n");
+    sb.append("    type: ").append(toIndentedString(type)).append("\n");
+    sb.append("    _list: ").append(toIndentedString(_list)).append("\n");
     sb.append("}");
     return sb.toString();
-    }
+  }
 
-    /**
-    * Convert the given object to string with each line indented by 4 spaces
-    * (except the first line).
-    */
-    private String toIndentedString(Object o) {
+  /**
+   * Convert the given object to string with each line indented by 4 spaces
+   * (except the first line).
+   */
+  private String toIndentedString(Object o) {
     if (o == null) {
-    return "null";
+      return "null";
     }
     return o.toString().replace("\n", "\n    ");
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @return URL query string
+   */
+  public String toUrlQueryString() {
+    return toUrlQueryString(null);
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @param prefix prefix of the query string
+   * @return URL query string
+   */
+  public String toUrlQueryString(String prefix) {
+    String suffix = "";
+    String containerSuffix = "";
+    String containerPrefix = "";
+    if (prefix == null) {
+      // style=form, explode=true, e.g. /pet?name=cat&type=manx
+      prefix = "";
+    } else {
+      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+      prefix = prefix + "[";
+      suffix = "]";
+      containerSuffix = "]";
+      containerPrefix = "[";
     }
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @return URL query string
-        */
-        public String toUrlQueryString() {
-        return toUrlQueryString(null);
-        }
+    StringJoiner joiner = new StringJoiner("&");
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @param prefix prefix of the query string
-        * @return URL query string
-        */
-        public String toUrlQueryString(String prefix) {
-        String suffix = "";
-        String containerSuffix = "";
-        String containerPrefix = "";
-        if (prefix == null) {
-        // style=form, explode=true, e.g. /pet?name=cat&type=manx
-        prefix = "";
-        } else {
-        // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
-        prefix = prefix + "[";
-        suffix = "]";
-        containerSuffix = "]";
-        containerPrefix = "[";
-        }
-
-        StringJoiner joiner = new StringJoiner("&");
-
-            // add `type` to the URL query string
-                        if (getType() != null) {
-                        try {
-                        joiner.add(String.format("%stype%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getType()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-            // add `list` to the URL query string
-                            if (getList() != null) {
-                            for (int i = 0; i < getList().size(); i++) {
-                            if (getList().get(i) != null) {
-                            try {
-                            joiner.add(String.format("%slist%s%s=%s", prefix, suffix,
-                            "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix),
-                            URLEncoder.encode(String.valueOf(getList().get(i)), "UTF-8").replaceAll("\\+", "%20")));
-                            } catch (UnsupportedEncodingException e) {
-                            // Should never happen, UTF-8 is always supported
-                            throw new RuntimeException(e);
-                            }
-                            }
-                            }
-                            }
-
-        return joiner.toString();
-        }
-
+    // add `type` to the URL query string
+    if (getType() != null) {
+      try {
+        joiner.add(String.format("%stype%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getType()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
     }
+
+    // add `list` to the URL query string
+    if (getList() != null) {
+      for (int i = 0; i < getList().size(); i++) {
+        if (getList().get(i) != null) {
+          try {
+            joiner.add(String.format("%slist%s%s=%s", prefix, suffix,
+                "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix),
+                URLEncoder.encode(String.valueOf(getList().get(i)), "UTF-8").replaceAll("\\+", "%20")));
+          } catch (UnsupportedEncodingException e) {
+            // Should never happen, UTF-8 is always supported
+            throw new RuntimeException(e);
+          }
+        }
+      }
+    }
+
+    return joiner.toString();
+  }
+
+}
 

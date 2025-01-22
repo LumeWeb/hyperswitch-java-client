@@ -27,127 +27,127 @@ import java.net.URLEncoder;
 import java.util.StringJoiner;
 
 /**
-* WalletDataOneOf26
-*/
-    @JsonPropertyOrder({
-        WalletDataOneOf26.JSON_PROPERTY_SWISH_QR
-    })
-            @JsonTypeName("WalletData_oneOf_26")
+ * WalletDataOneOf26
+ */
+@JsonPropertyOrder({
+  WalletDataOneOf26.JSON_PROPERTY_SWISH_QR
+})
+@JsonTypeName("WalletData_oneOf_26")
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class WalletDataOneOf26 {
-        public static final String JSON_PROPERTY_SWISH_QR = "swish_qr";
-    @javax.annotation.Nonnull
-            private Object swishQr;
+  public static final String JSON_PROPERTY_SWISH_QR = "swish_qr";
+  @javax.annotation.Nonnull
+  private Object swishQr;
 
-public WalletDataOneOf26() {
-}
+  public WalletDataOneOf26() {
+  }
 
-        public WalletDataOneOf26 swishQr(@javax.annotation.Nonnull Object swishQr) {
-        
-        this.swishQr = swishQr;
-        return this;
-        }
+  public WalletDataOneOf26 swishQr(@javax.annotation.Nonnull Object swishQr) {
+    
+    this.swishQr = swishQr;
+    return this;
+  }
 
-    /**
-        * Get swishQr
-    * @return swishQr
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_SWISH_QR)
+  /**
+   * Get swishQr
+   * @return swishQr
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_SWISH_QR)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public Object getSwishQr() {
-        return swishQr;
-    }
+  public Object getSwishQr() {
+    return swishQr;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_SWISH_QR)
+  @JsonProperty(JSON_PROPERTY_SWISH_QR)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setSwishQr(@javax.annotation.Nonnull Object swishQr) {
-            this.swishQr = swishQr;
-        }
+    this.swishQr = swishQr;
+  }
 
-@Override
-public boolean equals(Object o) {
+  @Override
+  public boolean equals(Object o) {
     if (this == o) {
-    return true;
+      return true;
     }
     if (o == null || getClass() != o.getClass()) {
-    return false;
+      return false;
     }
-        WalletDataOneOf26 walletDataOneOf26 = (WalletDataOneOf26) o;
-        return Objects.equals(this.swishQr, walletDataOneOf26.swishQr);
-}
+    WalletDataOneOf26 walletDataOneOf26 = (WalletDataOneOf26) o;
+    return Objects.equals(this.swishQr, walletDataOneOf26.swishQr);
+  }
 
-    @Override
-    public int hashCode() {
-        return Objects.hash(swishQr);
-    }
+  @Override
+  public int hashCode() {
+    return Objects.hash(swishQr);
+  }
 
-    @Override
-    public String toString() {
+  @Override
+  public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class WalletDataOneOf26 {\n");
-        sb.append("    swishQr: ").append(toIndentedString(swishQr)).append("\n");
+    sb.append("    swishQr: ").append(toIndentedString(swishQr)).append("\n");
     sb.append("}");
     return sb.toString();
-    }
+  }
 
-    /**
-    * Convert the given object to string with each line indented by 4 spaces
-    * (except the first line).
-    */
-    private String toIndentedString(Object o) {
+  /**
+   * Convert the given object to string with each line indented by 4 spaces
+   * (except the first line).
+   */
+  private String toIndentedString(Object o) {
     if (o == null) {
-    return "null";
+      return "null";
     }
     return o.toString().replace("\n", "\n    ");
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @return URL query string
+   */
+  public String toUrlQueryString() {
+    return toUrlQueryString(null);
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @param prefix prefix of the query string
+   * @return URL query string
+   */
+  public String toUrlQueryString(String prefix) {
+    String suffix = "";
+    String containerSuffix = "";
+    String containerPrefix = "";
+    if (prefix == null) {
+      // style=form, explode=true, e.g. /pet?name=cat&type=manx
+      prefix = "";
+    } else {
+      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+      prefix = prefix + "[";
+      suffix = "]";
+      containerSuffix = "]";
+      containerPrefix = "[";
     }
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @return URL query string
-        */
-        public String toUrlQueryString() {
-        return toUrlQueryString(null);
-        }
+    StringJoiner joiner = new StringJoiner("&");
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @param prefix prefix of the query string
-        * @return URL query string
-        */
-        public String toUrlQueryString(String prefix) {
-        String suffix = "";
-        String containerSuffix = "";
-        String containerPrefix = "";
-        if (prefix == null) {
-        // style=form, explode=true, e.g. /pet?name=cat&type=manx
-        prefix = "";
-        } else {
-        // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
-        prefix = prefix + "[";
-        suffix = "]";
-        containerSuffix = "]";
-        containerPrefix = "[";
-        }
-
-        StringJoiner joiner = new StringJoiner("&");
-
-            // add `swish_qr` to the URL query string
-                        if (getSwishQr() != null) {
-                        try {
-                        joiner.add(String.format("%sswish_qr%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getSwishQr()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-        return joiner.toString();
-        }
-
+    // add `swish_qr` to the URL query string
+    if (getSwishQr() != null) {
+      try {
+        joiner.add(String.format("%sswish_qr%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getSwishQr()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
     }
+
+    return joiner.toString();
+  }
+
+}
 

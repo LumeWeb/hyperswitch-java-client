@@ -38,521 +38,521 @@ import java.net.URLEncoder;
 import java.util.StringJoiner;
 
 /**
-* RefundListRequest
-*/
-    @JsonPropertyOrder({
-        RefundListRequest.JSON_PROPERTY_START_TIME,
-        RefundListRequest.JSON_PROPERTY_END_TIME,
-        RefundListRequest.JSON_PROPERTY_PAYMENT_ID,
-        RefundListRequest.JSON_PROPERTY_REFUND_ID,
-        RefundListRequest.JSON_PROPERTY_PROFILE_ID,
-        RefundListRequest.JSON_PROPERTY_LIMIT,
-        RefundListRequest.JSON_PROPERTY_OFFSET,
-        RefundListRequest.JSON_PROPERTY_AMOUNT_FILTER,
-        RefundListRequest.JSON_PROPERTY_CONNECTOR,
-        RefundListRequest.JSON_PROPERTY_MERCHANT_CONNECTOR_ID,
-        RefundListRequest.JSON_PROPERTY_CURRENCY,
-        RefundListRequest.JSON_PROPERTY_REFUND_STATUS
-    })
+ * RefundListRequest
+ */
+@JsonPropertyOrder({
+  RefundListRequest.JSON_PROPERTY_START_TIME,
+  RefundListRequest.JSON_PROPERTY_END_TIME,
+  RefundListRequest.JSON_PROPERTY_PAYMENT_ID,
+  RefundListRequest.JSON_PROPERTY_REFUND_ID,
+  RefundListRequest.JSON_PROPERTY_PROFILE_ID,
+  RefundListRequest.JSON_PROPERTY_LIMIT,
+  RefundListRequest.JSON_PROPERTY_OFFSET,
+  RefundListRequest.JSON_PROPERTY_AMOUNT_FILTER,
+  RefundListRequest.JSON_PROPERTY_CONNECTOR,
+  RefundListRequest.JSON_PROPERTY_MERCHANT_CONNECTOR_ID,
+  RefundListRequest.JSON_PROPERTY_CURRENCY,
+  RefundListRequest.JSON_PROPERTY_REFUND_STATUS
+})
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class RefundListRequest {
-        public static final String JSON_PROPERTY_START_TIME = "start_time";
-    @javax.annotation.Nonnull
-            private OffsetDateTime startTime;
+  public static final String JSON_PROPERTY_START_TIME = "start_time";
+  @javax.annotation.Nonnull
+  private OffsetDateTime startTime;
 
-        public static final String JSON_PROPERTY_END_TIME = "end_time";
-    @javax.annotation.Nullable
-            private JsonNullable<OffsetDateTime> endTime = JsonNullable.<OffsetDateTime>undefined();
+  public static final String JSON_PROPERTY_END_TIME = "end_time";
+  @javax.annotation.Nullable
+  private JsonNullable<OffsetDateTime> endTime = JsonNullable.<OffsetDateTime>undefined();
 
-        public static final String JSON_PROPERTY_PAYMENT_ID = "payment_id";
-    @javax.annotation.Nullable
-            private JsonNullable<String> paymentId = JsonNullable.<String>undefined();
+  public static final String JSON_PROPERTY_PAYMENT_ID = "payment_id";
+  @javax.annotation.Nullable
+  private JsonNullable<String> paymentId = JsonNullable.<String>undefined();
 
-        public static final String JSON_PROPERTY_REFUND_ID = "refund_id";
-    @javax.annotation.Nullable
-            private JsonNullable<String> refundId = JsonNullable.<String>undefined();
+  public static final String JSON_PROPERTY_REFUND_ID = "refund_id";
+  @javax.annotation.Nullable
+  private JsonNullable<String> refundId = JsonNullable.<String>undefined();
 
-        public static final String JSON_PROPERTY_PROFILE_ID = "profile_id";
-    @javax.annotation.Nullable
-            private JsonNullable<String> profileId = JsonNullable.<String>undefined();
+  public static final String JSON_PROPERTY_PROFILE_ID = "profile_id";
+  @javax.annotation.Nullable
+  private JsonNullable<String> profileId = JsonNullable.<String>undefined();
 
-        public static final String JSON_PROPERTY_LIMIT = "limit";
-    @javax.annotation.Nullable
-            private JsonNullable<Long> limit = JsonNullable.<Long>undefined();
+  public static final String JSON_PROPERTY_LIMIT = "limit";
+  @javax.annotation.Nullable
+  private JsonNullable<Long> limit = JsonNullable.<Long>undefined();
 
-        public static final String JSON_PROPERTY_OFFSET = "offset";
-    @javax.annotation.Nullable
-            private JsonNullable<Long> offset = JsonNullable.<Long>undefined();
+  public static final String JSON_PROPERTY_OFFSET = "offset";
+  @javax.annotation.Nullable
+  private JsonNullable<Long> offset = JsonNullable.<Long>undefined();
 
-        public static final String JSON_PROPERTY_AMOUNT_FILTER = "amount_filter";
-    @javax.annotation.Nullable
-            private JsonNullable<AmountFilter> amountFilter = JsonNullable.<AmountFilter>undefined();
+  public static final String JSON_PROPERTY_AMOUNT_FILTER = "amount_filter";
+  @javax.annotation.Nullable
+  private JsonNullable<AmountFilter> amountFilter = JsonNullable.<AmountFilter>undefined();
 
-        public static final String JSON_PROPERTY_CONNECTOR = "connector";
-    @javax.annotation.Nullable
-            private JsonNullable<List<String>> connector = JsonNullable.<List<String>>undefined();
+  public static final String JSON_PROPERTY_CONNECTOR = "connector";
+  @javax.annotation.Nullable
+  private JsonNullable<List<String>> connector = JsonNullable.<List<String>>undefined();
 
-        public static final String JSON_PROPERTY_MERCHANT_CONNECTOR_ID = "merchant_connector_id";
-    @javax.annotation.Nullable
-            private JsonNullable<List<String>> merchantConnectorId = JsonNullable.<List<String>>undefined();
+  public static final String JSON_PROPERTY_MERCHANT_CONNECTOR_ID = "merchant_connector_id";
+  @javax.annotation.Nullable
+  private JsonNullable<List<String>> merchantConnectorId = JsonNullable.<List<String>>undefined();
 
-        public static final String JSON_PROPERTY_CURRENCY = "currency";
-    @javax.annotation.Nullable
-            private JsonNullable<List<Currency>> currency = JsonNullable.<List<Currency>>undefined();
+  public static final String JSON_PROPERTY_CURRENCY = "currency";
+  @javax.annotation.Nullable
+  private JsonNullable<List<Currency>> currency = JsonNullable.<List<Currency>>undefined();
 
-        public static final String JSON_PROPERTY_REFUND_STATUS = "refund_status";
-    @javax.annotation.Nullable
-            private JsonNullable<List<RefundStatus>> refundStatus = JsonNullable.<List<RefundStatus>>undefined();
+  public static final String JSON_PROPERTY_REFUND_STATUS = "refund_status";
+  @javax.annotation.Nullable
+  private JsonNullable<List<RefundStatus>> refundStatus = JsonNullable.<List<RefundStatus>>undefined();
 
-public RefundListRequest() {
-}
+  public RefundListRequest() {
+  }
 
-        public RefundListRequest startTime(@javax.annotation.Nonnull OffsetDateTime startTime) {
-        
-        this.startTime = startTime;
-        return this;
-        }
+  public RefundListRequest startTime(@javax.annotation.Nonnull OffsetDateTime startTime) {
+    
+    this.startTime = startTime;
+    return this;
+  }
 
-    /**
-        * The start time to filter payments list or to get list of filters. To get list of filters start time is needed to be passed
-    * @return startTime
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_START_TIME)
+  /**
+   * The start time to filter payments list or to get list of filters. To get list of filters start time is needed to be passed
+   * @return startTime
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_START_TIME)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public OffsetDateTime getStartTime() {
-        return startTime;
-    }
+  public OffsetDateTime getStartTime() {
+    return startTime;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_START_TIME)
+  @JsonProperty(JSON_PROPERTY_START_TIME)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setStartTime(@javax.annotation.Nonnull OffsetDateTime startTime) {
-            this.startTime = startTime;
-        }
+    this.startTime = startTime;
+  }
 
-        public RefundListRequest endTime(@javax.annotation.Nullable OffsetDateTime endTime) {
-        this.endTime = JsonNullable.<OffsetDateTime>of(endTime);
-        
-        return this;
-        }
-
-    /**
-        * The end time to filter payments list or to get list of filters. If not passed the default time is now
-    * @return endTime
-    */
-    @javax.annotation.Nullable
-        @JsonIgnore
+  public RefundListRequest endTime(@javax.annotation.Nullable OffsetDateTime endTime) {
+    this.endTime = JsonNullable.<OffsetDateTime>of(endTime);
     
-    public OffsetDateTime getEndTime() {
-                return endTime.orElse(null);
-    }
+    return this;
+  }
 
-          @JsonProperty(JSON_PROPERTY_END_TIME)
+  /**
+   * The end time to filter payments list or to get list of filters. If not passed the default time is now
+   * @return endTime
+   */
+  @javax.annotation.Nullable
+  @JsonIgnore
+
+  public OffsetDateTime getEndTime() {
+        return endTime.orElse(null);
+  }
+
+  @JsonProperty(JSON_PROPERTY_END_TIME)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-        public JsonNullable<OffsetDateTime> getEndTime_JsonNullable() {
-        return endTime;
-        }
+  public JsonNullable<OffsetDateTime> getEndTime_JsonNullable() {
+    return endTime;
+  }
+  
+  @JsonProperty(JSON_PROPERTY_END_TIME)
+  public void setEndTime_JsonNullable(JsonNullable<OffsetDateTime> endTime) {
+    this.endTime = endTime;
+  }
+
+  public void setEndTime(@javax.annotation.Nullable OffsetDateTime endTime) {
+    this.endTime = JsonNullable.<OffsetDateTime>of(endTime);
+  }
+
+  public RefundListRequest paymentId(@javax.annotation.Nullable String paymentId) {
+    this.paymentId = JsonNullable.<String>of(paymentId);
     
-        @JsonProperty(JSON_PROPERTY_END_TIME)
-        public void setEndTime_JsonNullable(JsonNullable<OffsetDateTime> endTime) {
-        this.endTime = endTime;
-        }
+    return this;
+  }
 
-          public void setEndTime(@javax.annotation.Nullable OffsetDateTime endTime) {
-            this.endTime = JsonNullable.<OffsetDateTime>of(endTime);
-        }
+  /**
+   * The identifier for the payment
+   * @return paymentId
+   */
+  @javax.annotation.Nullable
+  @JsonIgnore
 
-        public RefundListRequest paymentId(@javax.annotation.Nullable String paymentId) {
-        this.paymentId = JsonNullable.<String>of(paymentId);
-        
-        return this;
-        }
+  public String getPaymentId() {
+        return paymentId.orElse(null);
+  }
 
-    /**
-        * The identifier for the payment
-    * @return paymentId
-    */
-    @javax.annotation.Nullable
-        @JsonIgnore
-    
-    public String getPaymentId() {
-                return paymentId.orElse(null);
-    }
-
-          @JsonProperty(JSON_PROPERTY_PAYMENT_ID)
+  @JsonProperty(JSON_PROPERTY_PAYMENT_ID)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-        public JsonNullable<String> getPaymentId_JsonNullable() {
-        return paymentId;
-        }
+  public JsonNullable<String> getPaymentId_JsonNullable() {
+    return paymentId;
+  }
+  
+  @JsonProperty(JSON_PROPERTY_PAYMENT_ID)
+  public void setPaymentId_JsonNullable(JsonNullable<String> paymentId) {
+    this.paymentId = paymentId;
+  }
+
+  public void setPaymentId(@javax.annotation.Nullable String paymentId) {
+    this.paymentId = JsonNullable.<String>of(paymentId);
+  }
+
+  public RefundListRequest refundId(@javax.annotation.Nullable String refundId) {
+    this.refundId = JsonNullable.<String>of(refundId);
     
-        @JsonProperty(JSON_PROPERTY_PAYMENT_ID)
-        public void setPaymentId_JsonNullable(JsonNullable<String> paymentId) {
-        this.paymentId = paymentId;
-        }
+    return this;
+  }
 
-          public void setPaymentId(@javax.annotation.Nullable String paymentId) {
-            this.paymentId = JsonNullable.<String>of(paymentId);
-        }
+  /**
+   * The identifier for the refund
+   * @return refundId
+   */
+  @javax.annotation.Nullable
+  @JsonIgnore
 
-        public RefundListRequest refundId(@javax.annotation.Nullable String refundId) {
-        this.refundId = JsonNullable.<String>of(refundId);
-        
-        return this;
-        }
+  public String getRefundId() {
+        return refundId.orElse(null);
+  }
 
-    /**
-        * The identifier for the refund
-    * @return refundId
-    */
-    @javax.annotation.Nullable
-        @JsonIgnore
-    
-    public String getRefundId() {
-                return refundId.orElse(null);
-    }
-
-          @JsonProperty(JSON_PROPERTY_REFUND_ID)
+  @JsonProperty(JSON_PROPERTY_REFUND_ID)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-        public JsonNullable<String> getRefundId_JsonNullable() {
-        return refundId;
-        }
+  public JsonNullable<String> getRefundId_JsonNullable() {
+    return refundId;
+  }
+  
+  @JsonProperty(JSON_PROPERTY_REFUND_ID)
+  public void setRefundId_JsonNullable(JsonNullable<String> refundId) {
+    this.refundId = refundId;
+  }
+
+  public void setRefundId(@javax.annotation.Nullable String refundId) {
+    this.refundId = JsonNullable.<String>of(refundId);
+  }
+
+  public RefundListRequest profileId(@javax.annotation.Nullable String profileId) {
+    this.profileId = JsonNullable.<String>of(profileId);
     
-        @JsonProperty(JSON_PROPERTY_REFUND_ID)
-        public void setRefundId_JsonNullable(JsonNullable<String> refundId) {
-        this.refundId = refundId;
-        }
+    return this;
+  }
 
-          public void setRefundId(@javax.annotation.Nullable String refundId) {
-            this.refundId = JsonNullable.<String>of(refundId);
-        }
+  /**
+   * The identifier for business profile
+   * @return profileId
+   */
+  @javax.annotation.Nullable
+  @JsonIgnore
 
-        public RefundListRequest profileId(@javax.annotation.Nullable String profileId) {
-        this.profileId = JsonNullable.<String>of(profileId);
-        
-        return this;
-        }
+  public String getProfileId() {
+        return profileId.orElse(null);
+  }
 
-    /**
-        * The identifier for business profile
-    * @return profileId
-    */
-    @javax.annotation.Nullable
-        @JsonIgnore
-    
-    public String getProfileId() {
-                return profileId.orElse(null);
-    }
-
-          @JsonProperty(JSON_PROPERTY_PROFILE_ID)
+  @JsonProperty(JSON_PROPERTY_PROFILE_ID)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-        public JsonNullable<String> getProfileId_JsonNullable() {
-        return profileId;
-        }
+  public JsonNullable<String> getProfileId_JsonNullable() {
+    return profileId;
+  }
+  
+  @JsonProperty(JSON_PROPERTY_PROFILE_ID)
+  public void setProfileId_JsonNullable(JsonNullable<String> profileId) {
+    this.profileId = profileId;
+  }
+
+  public void setProfileId(@javax.annotation.Nullable String profileId) {
+    this.profileId = JsonNullable.<String>of(profileId);
+  }
+
+  public RefundListRequest limit(@javax.annotation.Nullable Long limit) {
+    this.limit = JsonNullable.<Long>of(limit);
     
-        @JsonProperty(JSON_PROPERTY_PROFILE_ID)
-        public void setProfileId_JsonNullable(JsonNullable<String> profileId) {
-        this.profileId = profileId;
-        }
+    return this;
+  }
 
-          public void setProfileId(@javax.annotation.Nullable String profileId) {
-            this.profileId = JsonNullable.<String>of(profileId);
-        }
+  /**
+   * Limit on the number of objects to return
+   * @return limit
+   */
+  @javax.annotation.Nullable
+  @JsonIgnore
 
-        public RefundListRequest limit(@javax.annotation.Nullable Long limit) {
-        this.limit = JsonNullable.<Long>of(limit);
-        
-        return this;
-        }
+  public Long getLimit() {
+        return limit.orElse(null);
+  }
 
-    /**
-        * Limit on the number of objects to return
-    * @return limit
-    */
-    @javax.annotation.Nullable
-        @JsonIgnore
-    
-    public Long getLimit() {
-                return limit.orElse(null);
-    }
-
-          @JsonProperty(JSON_PROPERTY_LIMIT)
+  @JsonProperty(JSON_PROPERTY_LIMIT)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-        public JsonNullable<Long> getLimit_JsonNullable() {
-        return limit;
-        }
+  public JsonNullable<Long> getLimit_JsonNullable() {
+    return limit;
+  }
+  
+  @JsonProperty(JSON_PROPERTY_LIMIT)
+  public void setLimit_JsonNullable(JsonNullable<Long> limit) {
+    this.limit = limit;
+  }
+
+  public void setLimit(@javax.annotation.Nullable Long limit) {
+    this.limit = JsonNullable.<Long>of(limit);
+  }
+
+  public RefundListRequest offset(@javax.annotation.Nullable Long offset) {
+    this.offset = JsonNullable.<Long>of(offset);
     
-        @JsonProperty(JSON_PROPERTY_LIMIT)
-        public void setLimit_JsonNullable(JsonNullable<Long> limit) {
-        this.limit = limit;
-        }
+    return this;
+  }
 
-          public void setLimit(@javax.annotation.Nullable Long limit) {
-            this.limit = JsonNullable.<Long>of(limit);
-        }
+  /**
+   * The starting point within a list of objects
+   * @return offset
+   */
+  @javax.annotation.Nullable
+  @JsonIgnore
 
-        public RefundListRequest offset(@javax.annotation.Nullable Long offset) {
-        this.offset = JsonNullable.<Long>of(offset);
-        
-        return this;
-        }
+  public Long getOffset() {
+        return offset.orElse(null);
+  }
 
-    /**
-        * The starting point within a list of objects
-    * @return offset
-    */
-    @javax.annotation.Nullable
-        @JsonIgnore
-    
-    public Long getOffset() {
-                return offset.orElse(null);
-    }
-
-          @JsonProperty(JSON_PROPERTY_OFFSET)
+  @JsonProperty(JSON_PROPERTY_OFFSET)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-        public JsonNullable<Long> getOffset_JsonNullable() {
-        return offset;
-        }
+  public JsonNullable<Long> getOffset_JsonNullable() {
+    return offset;
+  }
+  
+  @JsonProperty(JSON_PROPERTY_OFFSET)
+  public void setOffset_JsonNullable(JsonNullable<Long> offset) {
+    this.offset = offset;
+  }
+
+  public void setOffset(@javax.annotation.Nullable Long offset) {
+    this.offset = JsonNullable.<Long>of(offset);
+  }
+
+  public RefundListRequest amountFilter(@javax.annotation.Nullable AmountFilter amountFilter) {
+    this.amountFilter = JsonNullable.<AmountFilter>of(amountFilter);
     
-        @JsonProperty(JSON_PROPERTY_OFFSET)
-        public void setOffset_JsonNullable(JsonNullable<Long> offset) {
-        this.offset = offset;
-        }
+    return this;
+  }
 
-          public void setOffset(@javax.annotation.Nullable Long offset) {
-            this.offset = JsonNullable.<Long>of(offset);
-        }
+  /**
+   * Get amountFilter
+   * @return amountFilter
+   */
+  @javax.annotation.Nullable
+  @JsonIgnore
 
-        public RefundListRequest amountFilter(@javax.annotation.Nullable AmountFilter amountFilter) {
-        this.amountFilter = JsonNullable.<AmountFilter>of(amountFilter);
-        
-        return this;
-        }
+  public AmountFilter getAmountFilter() {
+        return amountFilter.orElse(null);
+  }
 
-    /**
-        * Get amountFilter
-    * @return amountFilter
-    */
-    @javax.annotation.Nullable
-        @JsonIgnore
-    
-    public AmountFilter getAmountFilter() {
-                return amountFilter.orElse(null);
-    }
-
-          @JsonProperty(JSON_PROPERTY_AMOUNT_FILTER)
+  @JsonProperty(JSON_PROPERTY_AMOUNT_FILTER)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-        public JsonNullable<AmountFilter> getAmountFilter_JsonNullable() {
-        return amountFilter;
-        }
+  public JsonNullable<AmountFilter> getAmountFilter_JsonNullable() {
+    return amountFilter;
+  }
+  
+  @JsonProperty(JSON_PROPERTY_AMOUNT_FILTER)
+  public void setAmountFilter_JsonNullable(JsonNullable<AmountFilter> amountFilter) {
+    this.amountFilter = amountFilter;
+  }
+
+  public void setAmountFilter(@javax.annotation.Nullable AmountFilter amountFilter) {
+    this.amountFilter = JsonNullable.<AmountFilter>of(amountFilter);
+  }
+
+  public RefundListRequest connector(@javax.annotation.Nullable List<String> connector) {
+    this.connector = JsonNullable.<List<String>>of(connector);
     
-        @JsonProperty(JSON_PROPERTY_AMOUNT_FILTER)
-        public void setAmountFilter_JsonNullable(JsonNullable<AmountFilter> amountFilter) {
-        this.amountFilter = amountFilter;
-        }
+    return this;
+  }
 
-          public void setAmountFilter(@javax.annotation.Nullable AmountFilter amountFilter) {
-            this.amountFilter = JsonNullable.<AmountFilter>of(amountFilter);
-        }
-
-        public RefundListRequest connector(@javax.annotation.Nullable List<String> connector) {
-        this.connector = JsonNullable.<List<String>>of(connector);
-        
-        return this;
-        }
-
-            public RefundListRequest addConnectorItem(String connectorItem) {
-                if (this.connector == null || !this.connector.isPresent()) {
-                this.connector = JsonNullable.<List<String>>of(new ArrayList<>());
-                }
-                try {
-                this.connector.get().add(connectorItem);
-                } catch (java.util.NoSuchElementException e) {
-                // this can never happen, as we make sure above that the value is present
-                }
-                return this;
-            }
-
-    /**
-        * The list of connectors to filter refunds list
-    * @return connector
-    */
-    @javax.annotation.Nullable
-        @JsonIgnore
-    
-    public List<String> getConnector() {
-                return connector.orElse(null);
+  public RefundListRequest addConnectorItem(String connectorItem) {
+    if (this.connector == null || !this.connector.isPresent()) {
+      this.connector = JsonNullable.<List<String>>of(new ArrayList<>());
     }
+    try {
+      this.connector.get().add(connectorItem);
+    } catch (java.util.NoSuchElementException e) {
+      // this can never happen, as we make sure above that the value is present
+    }
+    return this;
+  }
 
-          @JsonProperty(JSON_PROPERTY_CONNECTOR)
+  /**
+   * The list of connectors to filter refunds list
+   * @return connector
+   */
+  @javax.annotation.Nullable
+  @JsonIgnore
+
+  public List<String> getConnector() {
+        return connector.orElse(null);
+  }
+
+  @JsonProperty(JSON_PROPERTY_CONNECTOR)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-        public JsonNullable<List<String>> getConnector_JsonNullable() {
-        return connector;
-        }
+  public JsonNullable<List<String>> getConnector_JsonNullable() {
+    return connector;
+  }
+  
+  @JsonProperty(JSON_PROPERTY_CONNECTOR)
+  public void setConnector_JsonNullable(JsonNullable<List<String>> connector) {
+    this.connector = connector;
+  }
+
+  public void setConnector(@javax.annotation.Nullable List<String> connector) {
+    this.connector = JsonNullable.<List<String>>of(connector);
+  }
+
+  public RefundListRequest merchantConnectorId(@javax.annotation.Nullable List<String> merchantConnectorId) {
+    this.merchantConnectorId = JsonNullable.<List<String>>of(merchantConnectorId);
     
-        @JsonProperty(JSON_PROPERTY_CONNECTOR)
-        public void setConnector_JsonNullable(JsonNullable<List<String>> connector) {
-        this.connector = connector;
-        }
+    return this;
+  }
 
-          public void setConnector(@javax.annotation.Nullable List<String> connector) {
-            this.connector = JsonNullable.<List<String>>of(connector);
-        }
-
-        public RefundListRequest merchantConnectorId(@javax.annotation.Nullable List<String> merchantConnectorId) {
-        this.merchantConnectorId = JsonNullable.<List<String>>of(merchantConnectorId);
-        
-        return this;
-        }
-
-            public RefundListRequest addMerchantConnectorIdItem(String merchantConnectorIdItem) {
-                if (this.merchantConnectorId == null || !this.merchantConnectorId.isPresent()) {
-                this.merchantConnectorId = JsonNullable.<List<String>>of(new ArrayList<>());
-                }
-                try {
-                this.merchantConnectorId.get().add(merchantConnectorIdItem);
-                } catch (java.util.NoSuchElementException e) {
-                // this can never happen, as we make sure above that the value is present
-                }
-                return this;
-            }
-
-    /**
-        * The list of merchant connector ids to filter the refunds list for selected label
-    * @return merchantConnectorId
-    */
-    @javax.annotation.Nullable
-        @JsonIgnore
-    
-    public List<String> getMerchantConnectorId() {
-                return merchantConnectorId.orElse(null);
+  public RefundListRequest addMerchantConnectorIdItem(String merchantConnectorIdItem) {
+    if (this.merchantConnectorId == null || !this.merchantConnectorId.isPresent()) {
+      this.merchantConnectorId = JsonNullable.<List<String>>of(new ArrayList<>());
     }
+    try {
+      this.merchantConnectorId.get().add(merchantConnectorIdItem);
+    } catch (java.util.NoSuchElementException e) {
+      // this can never happen, as we make sure above that the value is present
+    }
+    return this;
+  }
 
-          @JsonProperty(JSON_PROPERTY_MERCHANT_CONNECTOR_ID)
+  /**
+   * The list of merchant connector ids to filter the refunds list for selected label
+   * @return merchantConnectorId
+   */
+  @javax.annotation.Nullable
+  @JsonIgnore
+
+  public List<String> getMerchantConnectorId() {
+        return merchantConnectorId.orElse(null);
+  }
+
+  @JsonProperty(JSON_PROPERTY_MERCHANT_CONNECTOR_ID)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-        public JsonNullable<List<String>> getMerchantConnectorId_JsonNullable() {
-        return merchantConnectorId;
-        }
+  public JsonNullable<List<String>> getMerchantConnectorId_JsonNullable() {
+    return merchantConnectorId;
+  }
+  
+  @JsonProperty(JSON_PROPERTY_MERCHANT_CONNECTOR_ID)
+  public void setMerchantConnectorId_JsonNullable(JsonNullable<List<String>> merchantConnectorId) {
+    this.merchantConnectorId = merchantConnectorId;
+  }
+
+  public void setMerchantConnectorId(@javax.annotation.Nullable List<String> merchantConnectorId) {
+    this.merchantConnectorId = JsonNullable.<List<String>>of(merchantConnectorId);
+  }
+
+  public RefundListRequest currency(@javax.annotation.Nullable List<Currency> currency) {
+    this.currency = JsonNullable.<List<Currency>>of(currency);
     
-        @JsonProperty(JSON_PROPERTY_MERCHANT_CONNECTOR_ID)
-        public void setMerchantConnectorId_JsonNullable(JsonNullable<List<String>> merchantConnectorId) {
-        this.merchantConnectorId = merchantConnectorId;
-        }
+    return this;
+  }
 
-          public void setMerchantConnectorId(@javax.annotation.Nullable List<String> merchantConnectorId) {
-            this.merchantConnectorId = JsonNullable.<List<String>>of(merchantConnectorId);
-        }
-
-        public RefundListRequest currency(@javax.annotation.Nullable List<Currency> currency) {
-        this.currency = JsonNullable.<List<Currency>>of(currency);
-        
-        return this;
-        }
-
-            public RefundListRequest addCurrencyItem(Currency currencyItem) {
-                if (this.currency == null || !this.currency.isPresent()) {
-                this.currency = JsonNullable.<List<Currency>>of(new ArrayList<>());
-                }
-                try {
-                this.currency.get().add(currencyItem);
-                } catch (java.util.NoSuchElementException e) {
-                // this can never happen, as we make sure above that the value is present
-                }
-                return this;
-            }
-
-    /**
-        * The list of currencies to filter refunds list
-    * @return currency
-    */
-    @javax.annotation.Nullable
-        @JsonIgnore
-    
-    public List<Currency> getCurrency() {
-                return currency.orElse(null);
+  public RefundListRequest addCurrencyItem(Currency currencyItem) {
+    if (this.currency == null || !this.currency.isPresent()) {
+      this.currency = JsonNullable.<List<Currency>>of(new ArrayList<>());
     }
+    try {
+      this.currency.get().add(currencyItem);
+    } catch (java.util.NoSuchElementException e) {
+      // this can never happen, as we make sure above that the value is present
+    }
+    return this;
+  }
 
-          @JsonProperty(JSON_PROPERTY_CURRENCY)
+  /**
+   * The list of currencies to filter refunds list
+   * @return currency
+   */
+  @javax.annotation.Nullable
+  @JsonIgnore
+
+  public List<Currency> getCurrency() {
+        return currency.orElse(null);
+  }
+
+  @JsonProperty(JSON_PROPERTY_CURRENCY)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-        public JsonNullable<List<Currency>> getCurrency_JsonNullable() {
-        return currency;
-        }
+  public JsonNullable<List<Currency>> getCurrency_JsonNullable() {
+    return currency;
+  }
+  
+  @JsonProperty(JSON_PROPERTY_CURRENCY)
+  public void setCurrency_JsonNullable(JsonNullable<List<Currency>> currency) {
+    this.currency = currency;
+  }
+
+  public void setCurrency(@javax.annotation.Nullable List<Currency> currency) {
+    this.currency = JsonNullable.<List<Currency>>of(currency);
+  }
+
+  public RefundListRequest refundStatus(@javax.annotation.Nullable List<RefundStatus> refundStatus) {
+    this.refundStatus = JsonNullable.<List<RefundStatus>>of(refundStatus);
     
-        @JsonProperty(JSON_PROPERTY_CURRENCY)
-        public void setCurrency_JsonNullable(JsonNullable<List<Currency>> currency) {
-        this.currency = currency;
-        }
+    return this;
+  }
 
-          public void setCurrency(@javax.annotation.Nullable List<Currency> currency) {
-            this.currency = JsonNullable.<List<Currency>>of(currency);
-        }
-
-        public RefundListRequest refundStatus(@javax.annotation.Nullable List<RefundStatus> refundStatus) {
-        this.refundStatus = JsonNullable.<List<RefundStatus>>of(refundStatus);
-        
-        return this;
-        }
-
-            public RefundListRequest addRefundStatusItem(RefundStatus refundStatusItem) {
-                if (this.refundStatus == null || !this.refundStatus.isPresent()) {
-                this.refundStatus = JsonNullable.<List<RefundStatus>>of(new ArrayList<>());
-                }
-                try {
-                this.refundStatus.get().add(refundStatusItem);
-                } catch (java.util.NoSuchElementException e) {
-                // this can never happen, as we make sure above that the value is present
-                }
-                return this;
-            }
-
-    /**
-        * The list of refund statuses to filter refunds list
-    * @return refundStatus
-    */
-    @javax.annotation.Nullable
-        @JsonIgnore
-    
-    public List<RefundStatus> getRefundStatus() {
-                return refundStatus.orElse(null);
+  public RefundListRequest addRefundStatusItem(RefundStatus refundStatusItem) {
+    if (this.refundStatus == null || !this.refundStatus.isPresent()) {
+      this.refundStatus = JsonNullable.<List<RefundStatus>>of(new ArrayList<>());
     }
+    try {
+      this.refundStatus.get().add(refundStatusItem);
+    } catch (java.util.NoSuchElementException e) {
+      // this can never happen, as we make sure above that the value is present
+    }
+    return this;
+  }
 
-          @JsonProperty(JSON_PROPERTY_REFUND_STATUS)
+  /**
+   * The list of refund statuses to filter refunds list
+   * @return refundStatus
+   */
+  @javax.annotation.Nullable
+  @JsonIgnore
+
+  public List<RefundStatus> getRefundStatus() {
+        return refundStatus.orElse(null);
+  }
+
+  @JsonProperty(JSON_PROPERTY_REFUND_STATUS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-        public JsonNullable<List<RefundStatus>> getRefundStatus_JsonNullable() {
-        return refundStatus;
-        }
-    
-        @JsonProperty(JSON_PROPERTY_REFUND_STATUS)
-        public void setRefundStatus_JsonNullable(JsonNullable<List<RefundStatus>> refundStatus) {
-        this.refundStatus = refundStatus;
-        }
+  public JsonNullable<List<RefundStatus>> getRefundStatus_JsonNullable() {
+    return refundStatus;
+  }
+  
+  @JsonProperty(JSON_PROPERTY_REFUND_STATUS)
+  public void setRefundStatus_JsonNullable(JsonNullable<List<RefundStatus>> refundStatus) {
+    this.refundStatus = refundStatus;
+  }
 
-          public void setRefundStatus(@javax.annotation.Nullable List<RefundStatus> refundStatus) {
-            this.refundStatus = JsonNullable.<List<RefundStatus>>of(refundStatus);
-        }
+  public void setRefundStatus(@javax.annotation.Nullable List<RefundStatus> refundStatus) {
+    this.refundStatus = JsonNullable.<List<RefundStatus>>of(refundStatus);
+  }
 
-@Override
-public boolean equals(Object o) {
+  @Override
+  public boolean equals(Object o) {
     if (this == o) {
-    return true;
+      return true;
     }
     if (o == null || getClass() != o.getClass()) {
-    return false;
+      return false;
     }
-        RefundListRequest refundListRequest = (RefundListRequest) o;
-        return Objects.equals(this.startTime, refundListRequest.startTime) &&
+    RefundListRequest refundListRequest = (RefundListRequest) o;
+    return Objects.equals(this.startTime, refundListRequest.startTime) &&
         equalsNullable(this.endTime, refundListRequest.endTime) &&
         equalsNullable(this.paymentId, refundListRequest.paymentId) &&
         equalsNullable(this.refundId, refundListRequest.refundId) &&
@@ -564,224 +564,224 @@ public boolean equals(Object o) {
         equalsNullable(this.merchantConnectorId, refundListRequest.merchantConnectorId) &&
         equalsNullable(this.currency, refundListRequest.currency) &&
         equalsNullable(this.refundStatus, refundListRequest.refundStatus);
-}
+  }
 
-    private static <T> boolean equalsNullable(JsonNullable<T> a, JsonNullable<T> b) {
-        return a == b || (a != null && b != null && a.isPresent() && b.isPresent() && Objects.deepEquals(a.get(), b.get()));
-        }
+  private static <T> boolean equalsNullable(JsonNullable<T> a, JsonNullable<T> b) {
+    return a == b || (a != null && b != null && a.isPresent() && b.isPresent() && Objects.deepEquals(a.get(), b.get()));
+  }
 
-    @Override
-    public int hashCode() {
-        return Objects.hash(startTime, hashCodeNullable(endTime), hashCodeNullable(paymentId), hashCodeNullable(refundId), hashCodeNullable(profileId), hashCodeNullable(limit), hashCodeNullable(offset), hashCodeNullable(amountFilter), hashCodeNullable(connector), hashCodeNullable(merchantConnectorId), hashCodeNullable(currency), hashCodeNullable(refundStatus));
+  @Override
+  public int hashCode() {
+    return Objects.hash(startTime, hashCodeNullable(endTime), hashCodeNullable(paymentId), hashCodeNullable(refundId), hashCodeNullable(profileId), hashCodeNullable(limit), hashCodeNullable(offset), hashCodeNullable(amountFilter), hashCodeNullable(connector), hashCodeNullable(merchantConnectorId), hashCodeNullable(currency), hashCodeNullable(refundStatus));
+  }
+
+  private static <T> int hashCodeNullable(JsonNullable<T> a) {
+    if (a == null) {
+      return 1;
     }
+    return a.isPresent() ? Arrays.deepHashCode(new Object[]{a.get()}) : 31;
+  }
 
-        private static <T> int hashCodeNullable(JsonNullable<T> a) {
-        if (a == null) {
-        return 1;
-        }
-        return a.isPresent() ? Arrays.deepHashCode(new Object[]{a.get()}) : 31;
-        }
-
-    @Override
-    public String toString() {
+  @Override
+  public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class RefundListRequest {\n");
-        sb.append("    startTime: ").append(toIndentedString(startTime)).append("\n");
-        sb.append("    endTime: ").append(toIndentedString(endTime)).append("\n");
-        sb.append("    paymentId: ").append(toIndentedString(paymentId)).append("\n");
-        sb.append("    refundId: ").append(toIndentedString(refundId)).append("\n");
-        sb.append("    profileId: ").append(toIndentedString(profileId)).append("\n");
-        sb.append("    limit: ").append(toIndentedString(limit)).append("\n");
-        sb.append("    offset: ").append(toIndentedString(offset)).append("\n");
-        sb.append("    amountFilter: ").append(toIndentedString(amountFilter)).append("\n");
-        sb.append("    connector: ").append(toIndentedString(connector)).append("\n");
-        sb.append("    merchantConnectorId: ").append(toIndentedString(merchantConnectorId)).append("\n");
-        sb.append("    currency: ").append(toIndentedString(currency)).append("\n");
-        sb.append("    refundStatus: ").append(toIndentedString(refundStatus)).append("\n");
+    sb.append("    startTime: ").append(toIndentedString(startTime)).append("\n");
+    sb.append("    endTime: ").append(toIndentedString(endTime)).append("\n");
+    sb.append("    paymentId: ").append(toIndentedString(paymentId)).append("\n");
+    sb.append("    refundId: ").append(toIndentedString(refundId)).append("\n");
+    sb.append("    profileId: ").append(toIndentedString(profileId)).append("\n");
+    sb.append("    limit: ").append(toIndentedString(limit)).append("\n");
+    sb.append("    offset: ").append(toIndentedString(offset)).append("\n");
+    sb.append("    amountFilter: ").append(toIndentedString(amountFilter)).append("\n");
+    sb.append("    connector: ").append(toIndentedString(connector)).append("\n");
+    sb.append("    merchantConnectorId: ").append(toIndentedString(merchantConnectorId)).append("\n");
+    sb.append("    currency: ").append(toIndentedString(currency)).append("\n");
+    sb.append("    refundStatus: ").append(toIndentedString(refundStatus)).append("\n");
     sb.append("}");
     return sb.toString();
-    }
+  }
 
-    /**
-    * Convert the given object to string with each line indented by 4 spaces
-    * (except the first line).
-    */
-    private String toIndentedString(Object o) {
+  /**
+   * Convert the given object to string with each line indented by 4 spaces
+   * (except the first line).
+   */
+  private String toIndentedString(Object o) {
     if (o == null) {
-    return "null";
+      return "null";
     }
     return o.toString().replace("\n", "\n    ");
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @return URL query string
+   */
+  public String toUrlQueryString() {
+    return toUrlQueryString(null);
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @param prefix prefix of the query string
+   * @return URL query string
+   */
+  public String toUrlQueryString(String prefix) {
+    String suffix = "";
+    String containerSuffix = "";
+    String containerPrefix = "";
+    if (prefix == null) {
+      // style=form, explode=true, e.g. /pet?name=cat&type=manx
+      prefix = "";
+    } else {
+      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+      prefix = prefix + "[";
+      suffix = "]";
+      containerSuffix = "]";
+      containerPrefix = "[";
     }
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @return URL query string
-        */
-        public String toUrlQueryString() {
-        return toUrlQueryString(null);
-        }
+    StringJoiner joiner = new StringJoiner("&");
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @param prefix prefix of the query string
-        * @return URL query string
-        */
-        public String toUrlQueryString(String prefix) {
-        String suffix = "";
-        String containerSuffix = "";
-        String containerPrefix = "";
-        if (prefix == null) {
-        // style=form, explode=true, e.g. /pet?name=cat&type=manx
-        prefix = "";
-        } else {
-        // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
-        prefix = prefix + "[";
-        suffix = "]";
-        containerSuffix = "]";
-        containerPrefix = "[";
-        }
-
-        StringJoiner joiner = new StringJoiner("&");
-
-            // add `start_time` to the URL query string
-                            if (getStartTime() != null) {
-                            try {
-                            joiner.add(String.format("%sstart_time%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getStartTime()), "UTF-8").replaceAll("\\+", "%20")));
-                            } catch (UnsupportedEncodingException e) {
-                            // Should never happen, UTF-8 is always supported
-                            throw new RuntimeException(e);
-                            }
-                            }
-
-            // add `end_time` to the URL query string
-                            if (getEndTime() != null) {
-                            try {
-                            joiner.add(String.format("%send_time%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getEndTime()), "UTF-8").replaceAll("\\+", "%20")));
-                            } catch (UnsupportedEncodingException e) {
-                            // Should never happen, UTF-8 is always supported
-                            throw new RuntimeException(e);
-                            }
-                            }
-
-            // add `payment_id` to the URL query string
-                        if (getPaymentId() != null) {
-                        try {
-                        joiner.add(String.format("%spayment_id%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getPaymentId()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-            // add `refund_id` to the URL query string
-                        if (getRefundId() != null) {
-                        try {
-                        joiner.add(String.format("%srefund_id%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getRefundId()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-            // add `profile_id` to the URL query string
-                        if (getProfileId() != null) {
-                        try {
-                        joiner.add(String.format("%sprofile_id%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getProfileId()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-            // add `limit` to the URL query string
-                        if (getLimit() != null) {
-                        try {
-                        joiner.add(String.format("%slimit%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getLimit()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-            // add `offset` to the URL query string
-                        if (getOffset() != null) {
-                        try {
-                        joiner.add(String.format("%soffset%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getOffset()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-            // add `amount_filter` to the URL query string
-                            if (getAmountFilter() != null) {
-                            joiner.add(getAmountFilter().toUrlQueryString(prefix + "amount_filter" + suffix));
-                            }
-
-            // add `connector` to the URL query string
-                        if (getConnector() != null) {
-                        for (int i = 0; i < getConnector().size(); i++) {
-                        try {
-                        joiner.add(String.format("%sconnector%s%s=%s", prefix, suffix,
-                        "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix),
-                        URLEncoder.encode(String.valueOf(getConnector().get(i)), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-                        }
-
-            // add `merchant_connector_id` to the URL query string
-                        if (getMerchantConnectorId() != null) {
-                        for (int i = 0; i < getMerchantConnectorId().size(); i++) {
-                        try {
-                        joiner.add(String.format("%smerchant_connector_id%s%s=%s", prefix, suffix,
-                        "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix),
-                        URLEncoder.encode(String.valueOf(getMerchantConnectorId().get(i)), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-                        }
-
-            // add `currency` to the URL query string
-                            if (getCurrency() != null) {
-                            for (int i = 0; i < getCurrency().size(); i++) {
-                            if (getCurrency().get(i) != null) {
-                            try {
-                            joiner.add(String.format("%scurrency%s%s=%s", prefix, suffix,
-                            "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix),
-                            URLEncoder.encode(String.valueOf(getCurrency().get(i)), "UTF-8").replaceAll("\\+", "%20")));
-                            } catch (UnsupportedEncodingException e) {
-                            // Should never happen, UTF-8 is always supported
-                            throw new RuntimeException(e);
-                            }
-                            }
-                            }
-                            }
-
-            // add `refund_status` to the URL query string
-                            if (getRefundStatus() != null) {
-                            for (int i = 0; i < getRefundStatus().size(); i++) {
-                            if (getRefundStatus().get(i) != null) {
-                            try {
-                            joiner.add(String.format("%srefund_status%s%s=%s", prefix, suffix,
-                            "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix),
-                            URLEncoder.encode(String.valueOf(getRefundStatus().get(i)), "UTF-8").replaceAll("\\+", "%20")));
-                            } catch (UnsupportedEncodingException e) {
-                            // Should never happen, UTF-8 is always supported
-                            throw new RuntimeException(e);
-                            }
-                            }
-                            }
-                            }
-
-        return joiner.toString();
-        }
-
+    // add `start_time` to the URL query string
+    if (getStartTime() != null) {
+      try {
+        joiner.add(String.format("%sstart_time%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getStartTime()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
     }
+
+    // add `end_time` to the URL query string
+    if (getEndTime() != null) {
+      try {
+        joiner.add(String.format("%send_time%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getEndTime()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `payment_id` to the URL query string
+    if (getPaymentId() != null) {
+      try {
+        joiner.add(String.format("%spayment_id%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getPaymentId()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `refund_id` to the URL query string
+    if (getRefundId() != null) {
+      try {
+        joiner.add(String.format("%srefund_id%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getRefundId()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `profile_id` to the URL query string
+    if (getProfileId() != null) {
+      try {
+        joiner.add(String.format("%sprofile_id%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getProfileId()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `limit` to the URL query string
+    if (getLimit() != null) {
+      try {
+        joiner.add(String.format("%slimit%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getLimit()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `offset` to the URL query string
+    if (getOffset() != null) {
+      try {
+        joiner.add(String.format("%soffset%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getOffset()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `amount_filter` to the URL query string
+    if (getAmountFilter() != null) {
+      joiner.add(getAmountFilter().toUrlQueryString(prefix + "amount_filter" + suffix));
+    }
+
+    // add `connector` to the URL query string
+    if (getConnector() != null) {
+      for (int i = 0; i < getConnector().size(); i++) {
+        try {
+          joiner.add(String.format("%sconnector%s%s=%s", prefix, suffix,
+              "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix),
+              URLEncoder.encode(String.valueOf(getConnector().get(i)), "UTF-8").replaceAll("\\+", "%20")));
+        } catch (UnsupportedEncodingException e) {
+          // Should never happen, UTF-8 is always supported
+          throw new RuntimeException(e);
+        }
+      }
+    }
+
+    // add `merchant_connector_id` to the URL query string
+    if (getMerchantConnectorId() != null) {
+      for (int i = 0; i < getMerchantConnectorId().size(); i++) {
+        try {
+          joiner.add(String.format("%smerchant_connector_id%s%s=%s", prefix, suffix,
+              "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix),
+              URLEncoder.encode(String.valueOf(getMerchantConnectorId().get(i)), "UTF-8").replaceAll("\\+", "%20")));
+        } catch (UnsupportedEncodingException e) {
+          // Should never happen, UTF-8 is always supported
+          throw new RuntimeException(e);
+        }
+      }
+    }
+
+    // add `currency` to the URL query string
+    if (getCurrency() != null) {
+      for (int i = 0; i < getCurrency().size(); i++) {
+        if (getCurrency().get(i) != null) {
+          try {
+            joiner.add(String.format("%scurrency%s%s=%s", prefix, suffix,
+                "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix),
+                URLEncoder.encode(String.valueOf(getCurrency().get(i)), "UTF-8").replaceAll("\\+", "%20")));
+          } catch (UnsupportedEncodingException e) {
+            // Should never happen, UTF-8 is always supported
+            throw new RuntimeException(e);
+          }
+        }
+      }
+    }
+
+    // add `refund_status` to the URL query string
+    if (getRefundStatus() != null) {
+      for (int i = 0; i < getRefundStatus().size(); i++) {
+        if (getRefundStatus().get(i) != null) {
+          try {
+            joiner.add(String.format("%srefund_status%s%s=%s", prefix, suffix,
+                "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix),
+                URLEncoder.encode(String.valueOf(getRefundStatus().get(i)), "UTF-8").replaceAll("\\+", "%20")));
+          } catch (UnsupportedEncodingException e) {
+            // Should never happen, UTF-8 is always supported
+            throw new RuntimeException(e);
+          }
+        }
+      }
+    }
+
+    return joiner.toString();
+  }
+
+}
 

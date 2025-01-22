@@ -27,127 +27,127 @@ import java.net.URLEncoder;
 import java.util.StringJoiner;
 
 /**
-* BankTransferAdditionalDataOneOf12
-*/
-    @JsonPropertyOrder({
-        BankTransferAdditionalDataOneOf12.JSON_PROPERTY_PSE
-    })
-            @JsonTypeName("BankTransferAdditionalData_oneOf_12")
+ * BankTransferAdditionalDataOneOf12
+ */
+@JsonPropertyOrder({
+  BankTransferAdditionalDataOneOf12.JSON_PROPERTY_PSE
+})
+@JsonTypeName("BankTransferAdditionalData_oneOf_12")
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class BankTransferAdditionalDataOneOf12 {
-        public static final String JSON_PROPERTY_PSE = "pse";
-    @javax.annotation.Nonnull
-            private Object pse;
+  public static final String JSON_PROPERTY_PSE = "pse";
+  @javax.annotation.Nonnull
+  private Object pse;
 
-public BankTransferAdditionalDataOneOf12() {
-}
+  public BankTransferAdditionalDataOneOf12() {
+  }
 
-        public BankTransferAdditionalDataOneOf12 pse(@javax.annotation.Nonnull Object pse) {
-        
-        this.pse = pse;
-        return this;
-        }
+  public BankTransferAdditionalDataOneOf12 pse(@javax.annotation.Nonnull Object pse) {
+    
+    this.pse = pse;
+    return this;
+  }
 
-    /**
-        * Get pse
-    * @return pse
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_PSE)
+  /**
+   * Get pse
+   * @return pse
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_PSE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public Object getPse() {
-        return pse;
-    }
+  public Object getPse() {
+    return pse;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_PSE)
+  @JsonProperty(JSON_PROPERTY_PSE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setPse(@javax.annotation.Nonnull Object pse) {
-            this.pse = pse;
-        }
+    this.pse = pse;
+  }
 
-@Override
-public boolean equals(Object o) {
+  @Override
+  public boolean equals(Object o) {
     if (this == o) {
-    return true;
+      return true;
     }
     if (o == null || getClass() != o.getClass()) {
-    return false;
+      return false;
     }
-        BankTransferAdditionalDataOneOf12 bankTransferAdditionalDataOneOf12 = (BankTransferAdditionalDataOneOf12) o;
-        return Objects.equals(this.pse, bankTransferAdditionalDataOneOf12.pse);
-}
+    BankTransferAdditionalDataOneOf12 bankTransferAdditionalDataOneOf12 = (BankTransferAdditionalDataOneOf12) o;
+    return Objects.equals(this.pse, bankTransferAdditionalDataOneOf12.pse);
+  }
 
-    @Override
-    public int hashCode() {
-        return Objects.hash(pse);
-    }
+  @Override
+  public int hashCode() {
+    return Objects.hash(pse);
+  }
 
-    @Override
-    public String toString() {
+  @Override
+  public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class BankTransferAdditionalDataOneOf12 {\n");
-        sb.append("    pse: ").append(toIndentedString(pse)).append("\n");
+    sb.append("    pse: ").append(toIndentedString(pse)).append("\n");
     sb.append("}");
     return sb.toString();
-    }
+  }
 
-    /**
-    * Convert the given object to string with each line indented by 4 spaces
-    * (except the first line).
-    */
-    private String toIndentedString(Object o) {
+  /**
+   * Convert the given object to string with each line indented by 4 spaces
+   * (except the first line).
+   */
+  private String toIndentedString(Object o) {
     if (o == null) {
-    return "null";
+      return "null";
     }
     return o.toString().replace("\n", "\n    ");
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @return URL query string
+   */
+  public String toUrlQueryString() {
+    return toUrlQueryString(null);
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @param prefix prefix of the query string
+   * @return URL query string
+   */
+  public String toUrlQueryString(String prefix) {
+    String suffix = "";
+    String containerSuffix = "";
+    String containerPrefix = "";
+    if (prefix == null) {
+      // style=form, explode=true, e.g. /pet?name=cat&type=manx
+      prefix = "";
+    } else {
+      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+      prefix = prefix + "[";
+      suffix = "]";
+      containerSuffix = "]";
+      containerPrefix = "[";
     }
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @return URL query string
-        */
-        public String toUrlQueryString() {
-        return toUrlQueryString(null);
-        }
+    StringJoiner joiner = new StringJoiner("&");
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @param prefix prefix of the query string
-        * @return URL query string
-        */
-        public String toUrlQueryString(String prefix) {
-        String suffix = "";
-        String containerSuffix = "";
-        String containerPrefix = "";
-        if (prefix == null) {
-        // style=form, explode=true, e.g. /pet?name=cat&type=manx
-        prefix = "";
-        } else {
-        // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
-        prefix = prefix + "[";
-        suffix = "]";
-        containerSuffix = "]";
-        containerPrefix = "[";
-        }
-
-        StringJoiner joiner = new StringJoiner("&");
-
-            // add `pse` to the URL query string
-                        if (getPse() != null) {
-                        try {
-                        joiner.add(String.format("%spse%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getPse()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-        return joiner.toString();
-        }
-
+    // add `pse` to the URL query string
+    if (getPse() != null) {
+      try {
+        joiner.add(String.format("%spse%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getPse()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
     }
+
+    return joiner.toString();
+  }
+
+}
 

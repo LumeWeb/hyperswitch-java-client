@@ -28,122 +28,122 @@ import java.net.URLEncoder;
 import java.util.StringJoiner;
 
 /**
-* BankTransferAdditionalDataOneOf11
-*/
-    @JsonPropertyOrder({
-        BankTransferAdditionalDataOneOf11.JSON_PROPERTY_PIX
-    })
-            @JsonTypeName("BankTransferAdditionalData_oneOf_11")
+ * BankTransferAdditionalDataOneOf11
+ */
+@JsonPropertyOrder({
+  BankTransferAdditionalDataOneOf11.JSON_PROPERTY_PIX
+})
+@JsonTypeName("BankTransferAdditionalData_oneOf_11")
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class BankTransferAdditionalDataOneOf11 {
-        public static final String JSON_PROPERTY_PIX = "pix";
-    @javax.annotation.Nonnull
-            private PixBankTransferAdditionalData pix;
+  public static final String JSON_PROPERTY_PIX = "pix";
+  @javax.annotation.Nonnull
+  private PixBankTransferAdditionalData pix;
 
-public BankTransferAdditionalDataOneOf11() {
-}
+  public BankTransferAdditionalDataOneOf11() {
+  }
 
-        public BankTransferAdditionalDataOneOf11 pix(@javax.annotation.Nonnull PixBankTransferAdditionalData pix) {
-        
-        this.pix = pix;
-        return this;
-        }
+  public BankTransferAdditionalDataOneOf11 pix(@javax.annotation.Nonnull PixBankTransferAdditionalData pix) {
+    
+    this.pix = pix;
+    return this;
+  }
 
-    /**
-        * Get pix
-    * @return pix
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_PIX)
+  /**
+   * Get pix
+   * @return pix
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_PIX)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public PixBankTransferAdditionalData getPix() {
-        return pix;
-    }
+  public PixBankTransferAdditionalData getPix() {
+    return pix;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_PIX)
+  @JsonProperty(JSON_PROPERTY_PIX)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setPix(@javax.annotation.Nonnull PixBankTransferAdditionalData pix) {
-            this.pix = pix;
-        }
+    this.pix = pix;
+  }
 
-@Override
-public boolean equals(Object o) {
+  @Override
+  public boolean equals(Object o) {
     if (this == o) {
-    return true;
+      return true;
     }
     if (o == null || getClass() != o.getClass()) {
-    return false;
+      return false;
     }
-        BankTransferAdditionalDataOneOf11 bankTransferAdditionalDataOneOf11 = (BankTransferAdditionalDataOneOf11) o;
-        return Objects.equals(this.pix, bankTransferAdditionalDataOneOf11.pix);
-}
+    BankTransferAdditionalDataOneOf11 bankTransferAdditionalDataOneOf11 = (BankTransferAdditionalDataOneOf11) o;
+    return Objects.equals(this.pix, bankTransferAdditionalDataOneOf11.pix);
+  }
 
-    @Override
-    public int hashCode() {
-        return Objects.hash(pix);
-    }
+  @Override
+  public int hashCode() {
+    return Objects.hash(pix);
+  }
 
-    @Override
-    public String toString() {
+  @Override
+  public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class BankTransferAdditionalDataOneOf11 {\n");
-        sb.append("    pix: ").append(toIndentedString(pix)).append("\n");
+    sb.append("    pix: ").append(toIndentedString(pix)).append("\n");
     sb.append("}");
     return sb.toString();
-    }
+  }
 
-    /**
-    * Convert the given object to string with each line indented by 4 spaces
-    * (except the first line).
-    */
-    private String toIndentedString(Object o) {
+  /**
+   * Convert the given object to string with each line indented by 4 spaces
+   * (except the first line).
+   */
+  private String toIndentedString(Object o) {
     if (o == null) {
-    return "null";
+      return "null";
     }
     return o.toString().replace("\n", "\n    ");
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @return URL query string
+   */
+  public String toUrlQueryString() {
+    return toUrlQueryString(null);
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @param prefix prefix of the query string
+   * @return URL query string
+   */
+  public String toUrlQueryString(String prefix) {
+    String suffix = "";
+    String containerSuffix = "";
+    String containerPrefix = "";
+    if (prefix == null) {
+      // style=form, explode=true, e.g. /pet?name=cat&type=manx
+      prefix = "";
+    } else {
+      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+      prefix = prefix + "[";
+      suffix = "]";
+      containerSuffix = "]";
+      containerPrefix = "[";
     }
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @return URL query string
-        */
-        public String toUrlQueryString() {
-        return toUrlQueryString(null);
-        }
+    StringJoiner joiner = new StringJoiner("&");
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @param prefix prefix of the query string
-        * @return URL query string
-        */
-        public String toUrlQueryString(String prefix) {
-        String suffix = "";
-        String containerSuffix = "";
-        String containerPrefix = "";
-        if (prefix == null) {
-        // style=form, explode=true, e.g. /pet?name=cat&type=manx
-        prefix = "";
-        } else {
-        // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
-        prefix = prefix + "[";
-        suffix = "]";
-        containerSuffix = "]";
-        containerPrefix = "[";
-        }
-
-        StringJoiner joiner = new StringJoiner("&");
-
-            // add `pix` to the URL query string
-                            if (getPix() != null) {
-                            joiner.add(getPix().toUrlQueryString(prefix + "pix" + suffix));
-                            }
-
-        return joiner.toString();
-        }
-
+    // add `pix` to the URL query string
+    if (getPix() != null) {
+      joiner.add(getPix().toUrlQueryString(prefix + "pix" + suffix));
     }
+
+    return joiner.toString();
+  }
+
+}
 

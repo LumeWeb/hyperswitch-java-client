@@ -27,294 +27,294 @@ import java.net.URLEncoder;
 import java.util.StringJoiner;
 
 /**
-* GsmDeleteResponse
-*/
-    @JsonPropertyOrder({
-        GsmDeleteResponse.JSON_PROPERTY_GSM_RULE_DELETE,
-        GsmDeleteResponse.JSON_PROPERTY_CONNECTOR,
-        GsmDeleteResponse.JSON_PROPERTY_FLOW,
-        GsmDeleteResponse.JSON_PROPERTY_SUB_FLOW,
-        GsmDeleteResponse.JSON_PROPERTY_CODE
-    })
+ * GsmDeleteResponse
+ */
+@JsonPropertyOrder({
+  GsmDeleteResponse.JSON_PROPERTY_GSM_RULE_DELETE,
+  GsmDeleteResponse.JSON_PROPERTY_CONNECTOR,
+  GsmDeleteResponse.JSON_PROPERTY_FLOW,
+  GsmDeleteResponse.JSON_PROPERTY_SUB_FLOW,
+  GsmDeleteResponse.JSON_PROPERTY_CODE
+})
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class GsmDeleteResponse {
-        public static final String JSON_PROPERTY_GSM_RULE_DELETE = "gsm_rule_delete";
-    @javax.annotation.Nonnull
-            private Boolean gsmRuleDelete;
+  public static final String JSON_PROPERTY_GSM_RULE_DELETE = "gsm_rule_delete";
+  @javax.annotation.Nonnull
+  private Boolean gsmRuleDelete;
 
-        public static final String JSON_PROPERTY_CONNECTOR = "connector";
-    @javax.annotation.Nonnull
-            private String connector;
+  public static final String JSON_PROPERTY_CONNECTOR = "connector";
+  @javax.annotation.Nonnull
+  private String connector;
 
-        public static final String JSON_PROPERTY_FLOW = "flow";
-    @javax.annotation.Nonnull
-            private String flow;
+  public static final String JSON_PROPERTY_FLOW = "flow";
+  @javax.annotation.Nonnull
+  private String flow;
 
-        public static final String JSON_PROPERTY_SUB_FLOW = "sub_flow";
-    @javax.annotation.Nonnull
-            private String subFlow;
+  public static final String JSON_PROPERTY_SUB_FLOW = "sub_flow";
+  @javax.annotation.Nonnull
+  private String subFlow;
 
-        public static final String JSON_PROPERTY_CODE = "code";
-    @javax.annotation.Nonnull
-            private String code;
+  public static final String JSON_PROPERTY_CODE = "code";
+  @javax.annotation.Nonnull
+  private String code;
 
-public GsmDeleteResponse() {
-}
+  public GsmDeleteResponse() {
+  }
 
-        public GsmDeleteResponse gsmRuleDelete(@javax.annotation.Nonnull Boolean gsmRuleDelete) {
-        
-        this.gsmRuleDelete = gsmRuleDelete;
-        return this;
-        }
+  public GsmDeleteResponse gsmRuleDelete(@javax.annotation.Nonnull Boolean gsmRuleDelete) {
+    
+    this.gsmRuleDelete = gsmRuleDelete;
+    return this;
+  }
 
-    /**
-        * Get gsmRuleDelete
-    * @return gsmRuleDelete
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_GSM_RULE_DELETE)
+  /**
+   * Get gsmRuleDelete
+   * @return gsmRuleDelete
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_GSM_RULE_DELETE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public Boolean getGsmRuleDelete() {
-        return gsmRuleDelete;
-    }
+  public Boolean getGsmRuleDelete() {
+    return gsmRuleDelete;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_GSM_RULE_DELETE)
+  @JsonProperty(JSON_PROPERTY_GSM_RULE_DELETE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setGsmRuleDelete(@javax.annotation.Nonnull Boolean gsmRuleDelete) {
-            this.gsmRuleDelete = gsmRuleDelete;
-        }
+    this.gsmRuleDelete = gsmRuleDelete;
+  }
 
-        public GsmDeleteResponse connector(@javax.annotation.Nonnull String connector) {
-        
-        this.connector = connector;
-        return this;
-        }
+  public GsmDeleteResponse connector(@javax.annotation.Nonnull String connector) {
+    
+    this.connector = connector;
+    return this;
+  }
 
-    /**
-        * The connector through which payment has gone through
-    * @return connector
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_CONNECTOR)
+  /**
+   * The connector through which payment has gone through
+   * @return connector
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_CONNECTOR)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public String getConnector() {
-        return connector;
-    }
+  public String getConnector() {
+    return connector;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_CONNECTOR)
+  @JsonProperty(JSON_PROPERTY_CONNECTOR)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setConnector(@javax.annotation.Nonnull String connector) {
-            this.connector = connector;
-        }
+    this.connector = connector;
+  }
 
-        public GsmDeleteResponse flow(@javax.annotation.Nonnull String flow) {
-        
-        this.flow = flow;
-        return this;
-        }
+  public GsmDeleteResponse flow(@javax.annotation.Nonnull String flow) {
+    
+    this.flow = flow;
+    return this;
+  }
 
-    /**
-        * The flow in which the code and message occurred for a connector
-    * @return flow
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_FLOW)
+  /**
+   * The flow in which the code and message occurred for a connector
+   * @return flow
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_FLOW)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public String getFlow() {
-        return flow;
-    }
+  public String getFlow() {
+    return flow;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_FLOW)
+  @JsonProperty(JSON_PROPERTY_FLOW)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setFlow(@javax.annotation.Nonnull String flow) {
-            this.flow = flow;
-        }
+    this.flow = flow;
+  }
 
-        public GsmDeleteResponse subFlow(@javax.annotation.Nonnull String subFlow) {
-        
-        this.subFlow = subFlow;
-        return this;
-        }
+  public GsmDeleteResponse subFlow(@javax.annotation.Nonnull String subFlow) {
+    
+    this.subFlow = subFlow;
+    return this;
+  }
 
-    /**
-        * The sub_flow in which the code and message occurred  for a connector
-    * @return subFlow
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_SUB_FLOW)
+  /**
+   * The sub_flow in which the code and message occurred  for a connector
+   * @return subFlow
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_SUB_FLOW)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public String getSubFlow() {
-        return subFlow;
-    }
+  public String getSubFlow() {
+    return subFlow;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_SUB_FLOW)
+  @JsonProperty(JSON_PROPERTY_SUB_FLOW)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setSubFlow(@javax.annotation.Nonnull String subFlow) {
-            this.subFlow = subFlow;
-        }
+    this.subFlow = subFlow;
+  }
 
-        public GsmDeleteResponse code(@javax.annotation.Nonnull String code) {
-        
-        this.code = code;
-        return this;
-        }
+  public GsmDeleteResponse code(@javax.annotation.Nonnull String code) {
+    
+    this.code = code;
+    return this;
+  }
 
-    /**
-        * code received from the connector
-    * @return code
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_CODE)
+  /**
+   * code received from the connector
+   * @return code
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_CODE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public String getCode() {
-        return code;
-    }
+  public String getCode() {
+    return code;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_CODE)
+  @JsonProperty(JSON_PROPERTY_CODE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setCode(@javax.annotation.Nonnull String code) {
-            this.code = code;
-        }
+    this.code = code;
+  }
 
-@Override
-public boolean equals(Object o) {
+  @Override
+  public boolean equals(Object o) {
     if (this == o) {
-    return true;
+      return true;
     }
     if (o == null || getClass() != o.getClass()) {
-    return false;
+      return false;
     }
-        GsmDeleteResponse gsmDeleteResponse = (GsmDeleteResponse) o;
-        return Objects.equals(this.gsmRuleDelete, gsmDeleteResponse.gsmRuleDelete) &&
+    GsmDeleteResponse gsmDeleteResponse = (GsmDeleteResponse) o;
+    return Objects.equals(this.gsmRuleDelete, gsmDeleteResponse.gsmRuleDelete) &&
         Objects.equals(this.connector, gsmDeleteResponse.connector) &&
         Objects.equals(this.flow, gsmDeleteResponse.flow) &&
         Objects.equals(this.subFlow, gsmDeleteResponse.subFlow) &&
         Objects.equals(this.code, gsmDeleteResponse.code);
-}
+  }
 
-    @Override
-    public int hashCode() {
-        return Objects.hash(gsmRuleDelete, connector, flow, subFlow, code);
-    }
+  @Override
+  public int hashCode() {
+    return Objects.hash(gsmRuleDelete, connector, flow, subFlow, code);
+  }
 
-    @Override
-    public String toString() {
+  @Override
+  public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class GsmDeleteResponse {\n");
-        sb.append("    gsmRuleDelete: ").append(toIndentedString(gsmRuleDelete)).append("\n");
-        sb.append("    connector: ").append(toIndentedString(connector)).append("\n");
-        sb.append("    flow: ").append(toIndentedString(flow)).append("\n");
-        sb.append("    subFlow: ").append(toIndentedString(subFlow)).append("\n");
-        sb.append("    code: ").append(toIndentedString(code)).append("\n");
+    sb.append("    gsmRuleDelete: ").append(toIndentedString(gsmRuleDelete)).append("\n");
+    sb.append("    connector: ").append(toIndentedString(connector)).append("\n");
+    sb.append("    flow: ").append(toIndentedString(flow)).append("\n");
+    sb.append("    subFlow: ").append(toIndentedString(subFlow)).append("\n");
+    sb.append("    code: ").append(toIndentedString(code)).append("\n");
     sb.append("}");
     return sb.toString();
-    }
+  }
 
-    /**
-    * Convert the given object to string with each line indented by 4 spaces
-    * (except the first line).
-    */
-    private String toIndentedString(Object o) {
+  /**
+   * Convert the given object to string with each line indented by 4 spaces
+   * (except the first line).
+   */
+  private String toIndentedString(Object o) {
     if (o == null) {
-    return "null";
+      return "null";
     }
     return o.toString().replace("\n", "\n    ");
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @return URL query string
+   */
+  public String toUrlQueryString() {
+    return toUrlQueryString(null);
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @param prefix prefix of the query string
+   * @return URL query string
+   */
+  public String toUrlQueryString(String prefix) {
+    String suffix = "";
+    String containerSuffix = "";
+    String containerPrefix = "";
+    if (prefix == null) {
+      // style=form, explode=true, e.g. /pet?name=cat&type=manx
+      prefix = "";
+    } else {
+      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+      prefix = prefix + "[";
+      suffix = "]";
+      containerSuffix = "]";
+      containerPrefix = "[";
     }
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @return URL query string
-        */
-        public String toUrlQueryString() {
-        return toUrlQueryString(null);
-        }
+    StringJoiner joiner = new StringJoiner("&");
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @param prefix prefix of the query string
-        * @return URL query string
-        */
-        public String toUrlQueryString(String prefix) {
-        String suffix = "";
-        String containerSuffix = "";
-        String containerPrefix = "";
-        if (prefix == null) {
-        // style=form, explode=true, e.g. /pet?name=cat&type=manx
-        prefix = "";
-        } else {
-        // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
-        prefix = prefix + "[";
-        suffix = "]";
-        containerSuffix = "]";
-        containerPrefix = "[";
-        }
-
-        StringJoiner joiner = new StringJoiner("&");
-
-            // add `gsm_rule_delete` to the URL query string
-                        if (getGsmRuleDelete() != null) {
-                        try {
-                        joiner.add(String.format("%sgsm_rule_delete%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getGsmRuleDelete()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-            // add `connector` to the URL query string
-                        if (getConnector() != null) {
-                        try {
-                        joiner.add(String.format("%sconnector%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getConnector()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-            // add `flow` to the URL query string
-                        if (getFlow() != null) {
-                        try {
-                        joiner.add(String.format("%sflow%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getFlow()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-            // add `sub_flow` to the URL query string
-                        if (getSubFlow() != null) {
-                        try {
-                        joiner.add(String.format("%ssub_flow%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getSubFlow()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-            // add `code` to the URL query string
-                        if (getCode() != null) {
-                        try {
-                        joiner.add(String.format("%scode%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCode()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-        return joiner.toString();
-        }
-
+    // add `gsm_rule_delete` to the URL query string
+    if (getGsmRuleDelete() != null) {
+      try {
+        joiner.add(String.format("%sgsm_rule_delete%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getGsmRuleDelete()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
     }
+
+    // add `connector` to the URL query string
+    if (getConnector() != null) {
+      try {
+        joiner.add(String.format("%sconnector%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getConnector()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `flow` to the URL query string
+    if (getFlow() != null) {
+      try {
+        joiner.add(String.format("%sflow%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getFlow()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `sub_flow` to the URL query string
+    if (getSubFlow() != null) {
+      try {
+        joiner.add(String.format("%ssub_flow%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getSubFlow()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `code` to the URL query string
+    if (getCode() != null) {
+      try {
+        joiner.add(String.format("%scode%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCode()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    return joiner.toString();
+  }
+
+}
 

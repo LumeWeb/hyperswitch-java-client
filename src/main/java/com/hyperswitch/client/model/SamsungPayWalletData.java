@@ -28,121 +28,121 @@ import java.net.URLEncoder;
 import java.util.StringJoiner;
 
 /**
-* SamsungPayWalletData
-*/
-    @JsonPropertyOrder({
-        SamsungPayWalletData.JSON_PROPERTY_PAYMENT_CREDENTIAL
-    })
+ * SamsungPayWalletData
+ */
+@JsonPropertyOrder({
+  SamsungPayWalletData.JSON_PROPERTY_PAYMENT_CREDENTIAL
+})
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class SamsungPayWalletData {
-        public static final String JSON_PROPERTY_PAYMENT_CREDENTIAL = "payment_credential";
-    @javax.annotation.Nonnull
-            private SamsungPayWalletCredentials paymentCredential;
+  public static final String JSON_PROPERTY_PAYMENT_CREDENTIAL = "payment_credential";
+  @javax.annotation.Nonnull
+  private SamsungPayWalletCredentials paymentCredential;
 
-public SamsungPayWalletData() {
-}
+  public SamsungPayWalletData() {
+  }
 
-        public SamsungPayWalletData paymentCredential(@javax.annotation.Nonnull SamsungPayWalletCredentials paymentCredential) {
-        
-        this.paymentCredential = paymentCredential;
-        return this;
-        }
+  public SamsungPayWalletData paymentCredential(@javax.annotation.Nonnull SamsungPayWalletCredentials paymentCredential) {
+    
+    this.paymentCredential = paymentCredential;
+    return this;
+  }
 
-    /**
-        * Get paymentCredential
-    * @return paymentCredential
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_PAYMENT_CREDENTIAL)
+  /**
+   * Get paymentCredential
+   * @return paymentCredential
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_PAYMENT_CREDENTIAL)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public SamsungPayWalletCredentials getPaymentCredential() {
-        return paymentCredential;
-    }
+  public SamsungPayWalletCredentials getPaymentCredential() {
+    return paymentCredential;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_PAYMENT_CREDENTIAL)
+  @JsonProperty(JSON_PROPERTY_PAYMENT_CREDENTIAL)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setPaymentCredential(@javax.annotation.Nonnull SamsungPayWalletCredentials paymentCredential) {
-            this.paymentCredential = paymentCredential;
-        }
+    this.paymentCredential = paymentCredential;
+  }
 
-@Override
-public boolean equals(Object o) {
+  @Override
+  public boolean equals(Object o) {
     if (this == o) {
-    return true;
+      return true;
     }
     if (o == null || getClass() != o.getClass()) {
-    return false;
+      return false;
     }
-        SamsungPayWalletData samsungPayWalletData = (SamsungPayWalletData) o;
-        return Objects.equals(this.paymentCredential, samsungPayWalletData.paymentCredential);
-}
+    SamsungPayWalletData samsungPayWalletData = (SamsungPayWalletData) o;
+    return Objects.equals(this.paymentCredential, samsungPayWalletData.paymentCredential);
+  }
 
-    @Override
-    public int hashCode() {
-        return Objects.hash(paymentCredential);
-    }
+  @Override
+  public int hashCode() {
+    return Objects.hash(paymentCredential);
+  }
 
-    @Override
-    public String toString() {
+  @Override
+  public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class SamsungPayWalletData {\n");
-        sb.append("    paymentCredential: ").append(toIndentedString(paymentCredential)).append("\n");
+    sb.append("    paymentCredential: ").append(toIndentedString(paymentCredential)).append("\n");
     sb.append("}");
     return sb.toString();
-    }
+  }
 
-    /**
-    * Convert the given object to string with each line indented by 4 spaces
-    * (except the first line).
-    */
-    private String toIndentedString(Object o) {
+  /**
+   * Convert the given object to string with each line indented by 4 spaces
+   * (except the first line).
+   */
+  private String toIndentedString(Object o) {
     if (o == null) {
-    return "null";
+      return "null";
     }
     return o.toString().replace("\n", "\n    ");
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @return URL query string
+   */
+  public String toUrlQueryString() {
+    return toUrlQueryString(null);
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @param prefix prefix of the query string
+   * @return URL query string
+   */
+  public String toUrlQueryString(String prefix) {
+    String suffix = "";
+    String containerSuffix = "";
+    String containerPrefix = "";
+    if (prefix == null) {
+      // style=form, explode=true, e.g. /pet?name=cat&type=manx
+      prefix = "";
+    } else {
+      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+      prefix = prefix + "[";
+      suffix = "]";
+      containerSuffix = "]";
+      containerPrefix = "[";
     }
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @return URL query string
-        */
-        public String toUrlQueryString() {
-        return toUrlQueryString(null);
-        }
+    StringJoiner joiner = new StringJoiner("&");
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @param prefix prefix of the query string
-        * @return URL query string
-        */
-        public String toUrlQueryString(String prefix) {
-        String suffix = "";
-        String containerSuffix = "";
-        String containerPrefix = "";
-        if (prefix == null) {
-        // style=form, explode=true, e.g. /pet?name=cat&type=manx
-        prefix = "";
-        } else {
-        // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
-        prefix = prefix + "[";
-        suffix = "]";
-        containerSuffix = "]";
-        containerPrefix = "[";
-        }
-
-        StringJoiner joiner = new StringJoiner("&");
-
-            // add `payment_credential` to the URL query string
-                            if (getPaymentCredential() != null) {
-                            joiner.add(getPaymentCredential().toUrlQueryString(prefix + "payment_credential" + suffix));
-                            }
-
-        return joiner.toString();
-        }
-
+    // add `payment_credential` to the URL query string
+    if (getPaymentCredential() != null) {
+      joiner.add(getPaymentCredential().toUrlQueryString(prefix + "payment_credential" + suffix));
     }
+
+    return joiner.toString();
+  }
+
+}
 

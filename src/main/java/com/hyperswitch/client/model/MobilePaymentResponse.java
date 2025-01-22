@@ -28,121 +28,121 @@ import java.net.URLEncoder;
 import java.util.StringJoiner;
 
 /**
-* MobilePaymentResponse
-*/
-    @JsonPropertyOrder({
-        MobilePaymentResponse.JSON_PROPERTY_DIRECT_CARRIER_BILLING
-    })
+ * MobilePaymentResponse
+ */
+@JsonPropertyOrder({
+  MobilePaymentResponse.JSON_PROPERTY_DIRECT_CARRIER_BILLING
+})
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class MobilePaymentResponse {
-        public static final String JSON_PROPERTY_DIRECT_CARRIER_BILLING = "direct_carrier_billing";
-    @javax.annotation.Nonnull
-            private MobilePaymentDataOneOfDirectCarrierBilling directCarrierBilling;
+  public static final String JSON_PROPERTY_DIRECT_CARRIER_BILLING = "direct_carrier_billing";
+  @javax.annotation.Nonnull
+  private MobilePaymentDataOneOfDirectCarrierBilling directCarrierBilling;
 
-public MobilePaymentResponse() {
-}
+  public MobilePaymentResponse() {
+  }
 
-        public MobilePaymentResponse directCarrierBilling(@javax.annotation.Nonnull MobilePaymentDataOneOfDirectCarrierBilling directCarrierBilling) {
-        
-        this.directCarrierBilling = directCarrierBilling;
-        return this;
-        }
+  public MobilePaymentResponse directCarrierBilling(@javax.annotation.Nonnull MobilePaymentDataOneOfDirectCarrierBilling directCarrierBilling) {
+    
+    this.directCarrierBilling = directCarrierBilling;
+    return this;
+  }
 
-    /**
-        * Get directCarrierBilling
-    * @return directCarrierBilling
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_DIRECT_CARRIER_BILLING)
+  /**
+   * Get directCarrierBilling
+   * @return directCarrierBilling
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_DIRECT_CARRIER_BILLING)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public MobilePaymentDataOneOfDirectCarrierBilling getDirectCarrierBilling() {
-        return directCarrierBilling;
-    }
+  public MobilePaymentDataOneOfDirectCarrierBilling getDirectCarrierBilling() {
+    return directCarrierBilling;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_DIRECT_CARRIER_BILLING)
+  @JsonProperty(JSON_PROPERTY_DIRECT_CARRIER_BILLING)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setDirectCarrierBilling(@javax.annotation.Nonnull MobilePaymentDataOneOfDirectCarrierBilling directCarrierBilling) {
-            this.directCarrierBilling = directCarrierBilling;
-        }
+    this.directCarrierBilling = directCarrierBilling;
+  }
 
-@Override
-public boolean equals(Object o) {
+  @Override
+  public boolean equals(Object o) {
     if (this == o) {
-    return true;
+      return true;
     }
     if (o == null || getClass() != o.getClass()) {
-    return false;
+      return false;
     }
-        MobilePaymentResponse mobilePaymentResponse = (MobilePaymentResponse) o;
-        return Objects.equals(this.directCarrierBilling, mobilePaymentResponse.directCarrierBilling);
-}
+    MobilePaymentResponse mobilePaymentResponse = (MobilePaymentResponse) o;
+    return Objects.equals(this.directCarrierBilling, mobilePaymentResponse.directCarrierBilling);
+  }
 
-    @Override
-    public int hashCode() {
-        return Objects.hash(directCarrierBilling);
-    }
+  @Override
+  public int hashCode() {
+    return Objects.hash(directCarrierBilling);
+  }
 
-    @Override
-    public String toString() {
+  @Override
+  public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class MobilePaymentResponse {\n");
-        sb.append("    directCarrierBilling: ").append(toIndentedString(directCarrierBilling)).append("\n");
+    sb.append("    directCarrierBilling: ").append(toIndentedString(directCarrierBilling)).append("\n");
     sb.append("}");
     return sb.toString();
-    }
+  }
 
-    /**
-    * Convert the given object to string with each line indented by 4 spaces
-    * (except the first line).
-    */
-    private String toIndentedString(Object o) {
+  /**
+   * Convert the given object to string with each line indented by 4 spaces
+   * (except the first line).
+   */
+  private String toIndentedString(Object o) {
     if (o == null) {
-    return "null";
+      return "null";
     }
     return o.toString().replace("\n", "\n    ");
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @return URL query string
+   */
+  public String toUrlQueryString() {
+    return toUrlQueryString(null);
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @param prefix prefix of the query string
+   * @return URL query string
+   */
+  public String toUrlQueryString(String prefix) {
+    String suffix = "";
+    String containerSuffix = "";
+    String containerPrefix = "";
+    if (prefix == null) {
+      // style=form, explode=true, e.g. /pet?name=cat&type=manx
+      prefix = "";
+    } else {
+      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+      prefix = prefix + "[";
+      suffix = "]";
+      containerSuffix = "]";
+      containerPrefix = "[";
     }
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @return URL query string
-        */
-        public String toUrlQueryString() {
-        return toUrlQueryString(null);
-        }
+    StringJoiner joiner = new StringJoiner("&");
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @param prefix prefix of the query string
-        * @return URL query string
-        */
-        public String toUrlQueryString(String prefix) {
-        String suffix = "";
-        String containerSuffix = "";
-        String containerPrefix = "";
-        if (prefix == null) {
-        // style=form, explode=true, e.g. /pet?name=cat&type=manx
-        prefix = "";
-        } else {
-        // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
-        prefix = prefix + "[";
-        suffix = "]";
-        containerSuffix = "]";
-        containerPrefix = "[";
-        }
-
-        StringJoiner joiner = new StringJoiner("&");
-
-            // add `direct_carrier_billing` to the URL query string
-                            if (getDirectCarrierBilling() != null) {
-                            joiner.add(getDirectCarrierBilling().toUrlQueryString(prefix + "direct_carrier_billing" + suffix));
-                            }
-
-        return joiner.toString();
-        }
-
+    // add `direct_carrier_billing` to the URL query string
+    if (getDirectCarrierBilling() != null) {
+      joiner.add(getDirectCarrierBilling().toUrlQueryString(prefix + "direct_carrier_billing" + suffix));
     }
+
+    return joiner.toString();
+  }
+
+}
 

@@ -31,25 +31,25 @@ import java.net.URLEncoder;
 import java.util.StringJoiner;
 
 /**
-* Contains duration for displaying a wait screen, wait screen with timer is displayed by sdk
-*/
-    @JsonPropertyOrder({
-        NextActionDataOneOf6.JSON_PROPERTY_DISPLAY_FROM_TIMESTAMP,
-        NextActionDataOneOf6.JSON_PROPERTY_DISPLAY_TO_TIMESTAMP,
-        NextActionDataOneOf6.JSON_PROPERTY_TYPE
-    })
-            @JsonTypeName("NextActionData_oneOf_6")
+ * Contains duration for displaying a wait screen, wait screen with timer is displayed by sdk
+ */
+@JsonPropertyOrder({
+  NextActionDataOneOf6.JSON_PROPERTY_DISPLAY_FROM_TIMESTAMP,
+  NextActionDataOneOf6.JSON_PROPERTY_DISPLAY_TO_TIMESTAMP,
+  NextActionDataOneOf6.JSON_PROPERTY_TYPE
+})
+@JsonTypeName("NextActionData_oneOf_6")
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class NextActionDataOneOf6 {
-        public static final String JSON_PROPERTY_DISPLAY_FROM_TIMESTAMP = "display_from_timestamp";
-    @javax.annotation.Nonnull
-            private Integer displayFromTimestamp;
+  public static final String JSON_PROPERTY_DISPLAY_FROM_TIMESTAMP = "display_from_timestamp";
+  @javax.annotation.Nonnull
+  private Integer displayFromTimestamp;
 
-        public static final String JSON_PROPERTY_DISPLAY_TO_TIMESTAMP = "display_to_timestamp";
-    @javax.annotation.Nullable
-            private JsonNullable<Integer> displayToTimestamp = JsonNullable.<Integer>undefined();
+  public static final String JSON_PROPERTY_DISPLAY_TO_TIMESTAMP = "display_to_timestamp";
+  @javax.annotation.Nullable
+  private JsonNullable<Integer> displayToTimestamp = JsonNullable.<Integer>undefined();
 
-              /**
+  /**
    * Gets or Sets type
    */
   public enum TypeEnum {
@@ -82,212 +82,212 @@ public class NextActionDataOneOf6 {
     }
   }
 
-        public static final String JSON_PROPERTY_TYPE = "type";
-    @javax.annotation.Nonnull
-            private TypeEnum type;
+  public static final String JSON_PROPERTY_TYPE = "type";
+  @javax.annotation.Nonnull
+  private TypeEnum type;
 
-public NextActionDataOneOf6() {
-}
+  public NextActionDataOneOf6() {
+  }
 
-        public NextActionDataOneOf6 displayFromTimestamp(@javax.annotation.Nonnull Integer displayFromTimestamp) {
-        
-        this.displayFromTimestamp = displayFromTimestamp;
-        return this;
-        }
+  public NextActionDataOneOf6 displayFromTimestamp(@javax.annotation.Nonnull Integer displayFromTimestamp) {
+    
+    this.displayFromTimestamp = displayFromTimestamp;
+    return this;
+  }
 
-    /**
-        * Get displayFromTimestamp
-    * @return displayFromTimestamp
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_DISPLAY_FROM_TIMESTAMP)
+  /**
+   * Get displayFromTimestamp
+   * @return displayFromTimestamp
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_DISPLAY_FROM_TIMESTAMP)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public Integer getDisplayFromTimestamp() {
-        return displayFromTimestamp;
-    }
+  public Integer getDisplayFromTimestamp() {
+    return displayFromTimestamp;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_DISPLAY_FROM_TIMESTAMP)
+  @JsonProperty(JSON_PROPERTY_DISPLAY_FROM_TIMESTAMP)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setDisplayFromTimestamp(@javax.annotation.Nonnull Integer displayFromTimestamp) {
-            this.displayFromTimestamp = displayFromTimestamp;
-        }
+    this.displayFromTimestamp = displayFromTimestamp;
+  }
 
-        public NextActionDataOneOf6 displayToTimestamp(@javax.annotation.Nullable Integer displayToTimestamp) {
-        this.displayToTimestamp = JsonNullable.<Integer>of(displayToTimestamp);
-        
-        return this;
-        }
-
-    /**
-        * Get displayToTimestamp
-    * @return displayToTimestamp
-    */
-    @javax.annotation.Nullable
-        @JsonIgnore
+  public NextActionDataOneOf6 displayToTimestamp(@javax.annotation.Nullable Integer displayToTimestamp) {
+    this.displayToTimestamp = JsonNullable.<Integer>of(displayToTimestamp);
     
-    public Integer getDisplayToTimestamp() {
-                return displayToTimestamp.orElse(null);
-    }
+    return this;
+  }
 
-          @JsonProperty(JSON_PROPERTY_DISPLAY_TO_TIMESTAMP)
+  /**
+   * Get displayToTimestamp
+   * @return displayToTimestamp
+   */
+  @javax.annotation.Nullable
+  @JsonIgnore
+
+  public Integer getDisplayToTimestamp() {
+        return displayToTimestamp.orElse(null);
+  }
+
+  @JsonProperty(JSON_PROPERTY_DISPLAY_TO_TIMESTAMP)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-        public JsonNullable<Integer> getDisplayToTimestamp_JsonNullable() {
-        return displayToTimestamp;
-        }
+  public JsonNullable<Integer> getDisplayToTimestamp_JsonNullable() {
+    return displayToTimestamp;
+  }
+  
+  @JsonProperty(JSON_PROPERTY_DISPLAY_TO_TIMESTAMP)
+  public void setDisplayToTimestamp_JsonNullable(JsonNullable<Integer> displayToTimestamp) {
+    this.displayToTimestamp = displayToTimestamp;
+  }
+
+  public void setDisplayToTimestamp(@javax.annotation.Nullable Integer displayToTimestamp) {
+    this.displayToTimestamp = JsonNullable.<Integer>of(displayToTimestamp);
+  }
+
+  public NextActionDataOneOf6 type(@javax.annotation.Nonnull TypeEnum type) {
     
-        @JsonProperty(JSON_PROPERTY_DISPLAY_TO_TIMESTAMP)
-        public void setDisplayToTimestamp_JsonNullable(JsonNullable<Integer> displayToTimestamp) {
-        this.displayToTimestamp = displayToTimestamp;
-        }
+    this.type = type;
+    return this;
+  }
 
-          public void setDisplayToTimestamp(@javax.annotation.Nullable Integer displayToTimestamp) {
-            this.displayToTimestamp = JsonNullable.<Integer>of(displayToTimestamp);
-        }
-
-        public NextActionDataOneOf6 type(@javax.annotation.Nonnull TypeEnum type) {
-        
-        this.type = type;
-        return this;
-        }
-
-    /**
-        * Get type
-    * @return type
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_TYPE)
+  /**
+   * Get type
+   * @return type
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_TYPE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public TypeEnum getType() {
-        return type;
-    }
+  public TypeEnum getType() {
+    return type;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_TYPE)
+  @JsonProperty(JSON_PROPERTY_TYPE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setType(@javax.annotation.Nonnull TypeEnum type) {
-            this.type = type;
-        }
+    this.type = type;
+  }
 
-@Override
-public boolean equals(Object o) {
+  @Override
+  public boolean equals(Object o) {
     if (this == o) {
-    return true;
+      return true;
     }
     if (o == null || getClass() != o.getClass()) {
-    return false;
+      return false;
     }
-        NextActionDataOneOf6 nextActionDataOneOf6 = (NextActionDataOneOf6) o;
-        return Objects.equals(this.displayFromTimestamp, nextActionDataOneOf6.displayFromTimestamp) &&
+    NextActionDataOneOf6 nextActionDataOneOf6 = (NextActionDataOneOf6) o;
+    return Objects.equals(this.displayFromTimestamp, nextActionDataOneOf6.displayFromTimestamp) &&
         equalsNullable(this.displayToTimestamp, nextActionDataOneOf6.displayToTimestamp) &&
         Objects.equals(this.type, nextActionDataOneOf6.type);
-}
+  }
 
-    private static <T> boolean equalsNullable(JsonNullable<T> a, JsonNullable<T> b) {
-        return a == b || (a != null && b != null && a.isPresent() && b.isPresent() && Objects.deepEquals(a.get(), b.get()));
-        }
+  private static <T> boolean equalsNullable(JsonNullable<T> a, JsonNullable<T> b) {
+    return a == b || (a != null && b != null && a.isPresent() && b.isPresent() && Objects.deepEquals(a.get(), b.get()));
+  }
 
-    @Override
-    public int hashCode() {
-        return Objects.hash(displayFromTimestamp, hashCodeNullable(displayToTimestamp), type);
+  @Override
+  public int hashCode() {
+    return Objects.hash(displayFromTimestamp, hashCodeNullable(displayToTimestamp), type);
+  }
+
+  private static <T> int hashCodeNullable(JsonNullable<T> a) {
+    if (a == null) {
+      return 1;
     }
+    return a.isPresent() ? Arrays.deepHashCode(new Object[]{a.get()}) : 31;
+  }
 
-        private static <T> int hashCodeNullable(JsonNullable<T> a) {
-        if (a == null) {
-        return 1;
-        }
-        return a.isPresent() ? Arrays.deepHashCode(new Object[]{a.get()}) : 31;
-        }
-
-    @Override
-    public String toString() {
+  @Override
+  public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class NextActionDataOneOf6 {\n");
-        sb.append("    displayFromTimestamp: ").append(toIndentedString(displayFromTimestamp)).append("\n");
-        sb.append("    displayToTimestamp: ").append(toIndentedString(displayToTimestamp)).append("\n");
-        sb.append("    type: ").append(toIndentedString(type)).append("\n");
+    sb.append("    displayFromTimestamp: ").append(toIndentedString(displayFromTimestamp)).append("\n");
+    sb.append("    displayToTimestamp: ").append(toIndentedString(displayToTimestamp)).append("\n");
+    sb.append("    type: ").append(toIndentedString(type)).append("\n");
     sb.append("}");
     return sb.toString();
-    }
+  }
 
-    /**
-    * Convert the given object to string with each line indented by 4 spaces
-    * (except the first line).
-    */
-    private String toIndentedString(Object o) {
+  /**
+   * Convert the given object to string with each line indented by 4 spaces
+   * (except the first line).
+   */
+  private String toIndentedString(Object o) {
     if (o == null) {
-    return "null";
+      return "null";
     }
     return o.toString().replace("\n", "\n    ");
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @return URL query string
+   */
+  public String toUrlQueryString() {
+    return toUrlQueryString(null);
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @param prefix prefix of the query string
+   * @return URL query string
+   */
+  public String toUrlQueryString(String prefix) {
+    String suffix = "";
+    String containerSuffix = "";
+    String containerPrefix = "";
+    if (prefix == null) {
+      // style=form, explode=true, e.g. /pet?name=cat&type=manx
+      prefix = "";
+    } else {
+      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+      prefix = prefix + "[";
+      suffix = "]";
+      containerSuffix = "]";
+      containerPrefix = "[";
     }
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @return URL query string
-        */
-        public String toUrlQueryString() {
-        return toUrlQueryString(null);
-        }
+    StringJoiner joiner = new StringJoiner("&");
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @param prefix prefix of the query string
-        * @return URL query string
-        */
-        public String toUrlQueryString(String prefix) {
-        String suffix = "";
-        String containerSuffix = "";
-        String containerPrefix = "";
-        if (prefix == null) {
-        // style=form, explode=true, e.g. /pet?name=cat&type=manx
-        prefix = "";
-        } else {
-        // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
-        prefix = prefix + "[";
-        suffix = "]";
-        containerSuffix = "]";
-        containerPrefix = "[";
-        }
-
-        StringJoiner joiner = new StringJoiner("&");
-
-            // add `display_from_timestamp` to the URL query string
-                        if (getDisplayFromTimestamp() != null) {
-                        try {
-                        joiner.add(String.format("%sdisplay_from_timestamp%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getDisplayFromTimestamp()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-            // add `display_to_timestamp` to the URL query string
-                        if (getDisplayToTimestamp() != null) {
-                        try {
-                        joiner.add(String.format("%sdisplay_to_timestamp%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getDisplayToTimestamp()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-            // add `type` to the URL query string
-                        if (getType() != null) {
-                        try {
-                        joiner.add(String.format("%stype%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getType()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-        return joiner.toString();
-        }
-
+    // add `display_from_timestamp` to the URL query string
+    if (getDisplayFromTimestamp() != null) {
+      try {
+        joiner.add(String.format("%sdisplay_from_timestamp%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getDisplayFromTimestamp()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
     }
+
+    // add `display_to_timestamp` to the URL query string
+    if (getDisplayToTimestamp() != null) {
+      try {
+        joiner.add(String.format("%sdisplay_to_timestamp%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getDisplayToTimestamp()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `type` to the URL query string
+    if (getType() != null) {
+      try {
+        joiner.add(String.format("%stype%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getType()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    return joiner.toString();
+  }
+
+}
 

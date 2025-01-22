@@ -27,16 +27,16 @@ import java.net.URLEncoder;
 import java.util.StringJoiner;
 
 /**
-* ValueTypeOneOf
-*/
-    @JsonPropertyOrder({
-        ValueTypeOneOf.JSON_PROPERTY_TYPE,
-        ValueTypeOneOf.JSON_PROPERTY_VALUE
-    })
-            @JsonTypeName("ValueType_oneOf")
+ * ValueTypeOneOf
+ */
+@JsonPropertyOrder({
+  ValueTypeOneOf.JSON_PROPERTY_TYPE,
+  ValueTypeOneOf.JSON_PROPERTY_VALUE
+})
+@JsonTypeName("ValueType_oneOf")
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class ValueTypeOneOf {
-              /**
+  /**
    * Gets or Sets type
    */
   public enum TypeEnum {
@@ -69,160 +69,160 @@ public class ValueTypeOneOf {
     }
   }
 
-        public static final String JSON_PROPERTY_TYPE = "type";
-    @javax.annotation.Nonnull
-            private TypeEnum type;
+  public static final String JSON_PROPERTY_TYPE = "type";
+  @javax.annotation.Nonnull
+  private TypeEnum type;
 
-        public static final String JSON_PROPERTY_VALUE = "value";
-    @javax.annotation.Nonnull
-            private Long value;
+  public static final String JSON_PROPERTY_VALUE = "value";
+  @javax.annotation.Nonnull
+  private Long value;
 
-public ValueTypeOneOf() {
-}
+  public ValueTypeOneOf() {
+  }
 
-        public ValueTypeOneOf type(@javax.annotation.Nonnull TypeEnum type) {
-        
-        this.type = type;
-        return this;
-        }
+  public ValueTypeOneOf type(@javax.annotation.Nonnull TypeEnum type) {
+    
+    this.type = type;
+    return this;
+  }
 
-    /**
-        * Get type
-    * @return type
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_TYPE)
+  /**
+   * Get type
+   * @return type
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_TYPE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public TypeEnum getType() {
-        return type;
-    }
+  public TypeEnum getType() {
+    return type;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_TYPE)
+  @JsonProperty(JSON_PROPERTY_TYPE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setType(@javax.annotation.Nonnull TypeEnum type) {
-            this.type = type;
-        }
+    this.type = type;
+  }
 
-        public ValueTypeOneOf value(@javax.annotation.Nonnull Long value) {
-        
-        this.value = value;
-        return this;
-        }
+  public ValueTypeOneOf value(@javax.annotation.Nonnull Long value) {
+    
+    this.value = value;
+    return this;
+  }
 
-    /**
-        * This Unit struct represents MinorUnit in which core amount works
-    * @return value
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_VALUE)
+  /**
+   * This Unit struct represents MinorUnit in which core amount works
+   * @return value
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_VALUE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public Long getValue() {
-        return value;
-    }
+  public Long getValue() {
+    return value;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_VALUE)
+  @JsonProperty(JSON_PROPERTY_VALUE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setValue(@javax.annotation.Nonnull Long value) {
-            this.value = value;
-        }
+    this.value = value;
+  }
 
-@Override
-public boolean equals(Object o) {
+  @Override
+  public boolean equals(Object o) {
     if (this == o) {
-    return true;
+      return true;
     }
     if (o == null || getClass() != o.getClass()) {
-    return false;
+      return false;
     }
-        ValueTypeOneOf valueTypeOneOf = (ValueTypeOneOf) o;
-        return Objects.equals(this.type, valueTypeOneOf.type) &&
+    ValueTypeOneOf valueTypeOneOf = (ValueTypeOneOf) o;
+    return Objects.equals(this.type, valueTypeOneOf.type) &&
         Objects.equals(this.value, valueTypeOneOf.value);
-}
+  }
 
-    @Override
-    public int hashCode() {
-        return Objects.hash(type, value);
-    }
+  @Override
+  public int hashCode() {
+    return Objects.hash(type, value);
+  }
 
-    @Override
-    public String toString() {
+  @Override
+  public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class ValueTypeOneOf {\n");
-        sb.append("    type: ").append(toIndentedString(type)).append("\n");
-        sb.append("    value: ").append(toIndentedString(value)).append("\n");
+    sb.append("    type: ").append(toIndentedString(type)).append("\n");
+    sb.append("    value: ").append(toIndentedString(value)).append("\n");
     sb.append("}");
     return sb.toString();
-    }
+  }
 
-    /**
-    * Convert the given object to string with each line indented by 4 spaces
-    * (except the first line).
-    */
-    private String toIndentedString(Object o) {
+  /**
+   * Convert the given object to string with each line indented by 4 spaces
+   * (except the first line).
+   */
+  private String toIndentedString(Object o) {
     if (o == null) {
-    return "null";
+      return "null";
     }
     return o.toString().replace("\n", "\n    ");
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @return URL query string
+   */
+  public String toUrlQueryString() {
+    return toUrlQueryString(null);
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @param prefix prefix of the query string
+   * @return URL query string
+   */
+  public String toUrlQueryString(String prefix) {
+    String suffix = "";
+    String containerSuffix = "";
+    String containerPrefix = "";
+    if (prefix == null) {
+      // style=form, explode=true, e.g. /pet?name=cat&type=manx
+      prefix = "";
+    } else {
+      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+      prefix = prefix + "[";
+      suffix = "]";
+      containerSuffix = "]";
+      containerPrefix = "[";
     }
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @return URL query string
-        */
-        public String toUrlQueryString() {
-        return toUrlQueryString(null);
-        }
+    StringJoiner joiner = new StringJoiner("&");
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @param prefix prefix of the query string
-        * @return URL query string
-        */
-        public String toUrlQueryString(String prefix) {
-        String suffix = "";
-        String containerSuffix = "";
-        String containerPrefix = "";
-        if (prefix == null) {
-        // style=form, explode=true, e.g. /pet?name=cat&type=manx
-        prefix = "";
-        } else {
-        // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
-        prefix = prefix + "[";
-        suffix = "]";
-        containerSuffix = "]";
-        containerPrefix = "[";
-        }
-
-        StringJoiner joiner = new StringJoiner("&");
-
-            // add `type` to the URL query string
-                        if (getType() != null) {
-                        try {
-                        joiner.add(String.format("%stype%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getType()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-            // add `value` to the URL query string
-                        if (getValue() != null) {
-                        try {
-                        joiner.add(String.format("%svalue%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getValue()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-        return joiner.toString();
-        }
-
+    // add `type` to the URL query string
+    if (getType() != null) {
+      try {
+        joiner.add(String.format("%stype%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getType()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
     }
+
+    // add `value` to the URL query string
+    if (getValue() != null) {
+      try {
+        joiner.add(String.format("%svalue%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getValue()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    return joiner.toString();
+  }
+
+}
 

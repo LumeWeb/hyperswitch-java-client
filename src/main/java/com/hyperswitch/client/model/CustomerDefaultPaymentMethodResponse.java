@@ -33,279 +33,279 @@ import java.net.URLEncoder;
 import java.util.StringJoiner;
 
 /**
-* CustomerDefaultPaymentMethodResponse
-*/
-    @JsonPropertyOrder({
-        CustomerDefaultPaymentMethodResponse.JSON_PROPERTY_DEFAULT_PAYMENT_METHOD_ID,
-        CustomerDefaultPaymentMethodResponse.JSON_PROPERTY_CUSTOMER_ID,
-        CustomerDefaultPaymentMethodResponse.JSON_PROPERTY_PAYMENT_METHOD,
-        CustomerDefaultPaymentMethodResponse.JSON_PROPERTY_PAYMENT_METHOD_TYPE
-    })
+ * CustomerDefaultPaymentMethodResponse
+ */
+@JsonPropertyOrder({
+  CustomerDefaultPaymentMethodResponse.JSON_PROPERTY_DEFAULT_PAYMENT_METHOD_ID,
+  CustomerDefaultPaymentMethodResponse.JSON_PROPERTY_CUSTOMER_ID,
+  CustomerDefaultPaymentMethodResponse.JSON_PROPERTY_PAYMENT_METHOD,
+  CustomerDefaultPaymentMethodResponse.JSON_PROPERTY_PAYMENT_METHOD_TYPE
+})
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class CustomerDefaultPaymentMethodResponse {
-        public static final String JSON_PROPERTY_DEFAULT_PAYMENT_METHOD_ID = "default_payment_method_id";
-    @javax.annotation.Nullable
-            private JsonNullable<String> defaultPaymentMethodId = JsonNullable.<String>undefined();
+  public static final String JSON_PROPERTY_DEFAULT_PAYMENT_METHOD_ID = "default_payment_method_id";
+  @javax.annotation.Nullable
+  private JsonNullable<String> defaultPaymentMethodId = JsonNullable.<String>undefined();
 
-        public static final String JSON_PROPERTY_CUSTOMER_ID = "customer_id";
-    @javax.annotation.Nonnull
-            private String customerId;
+  public static final String JSON_PROPERTY_CUSTOMER_ID = "customer_id";
+  @javax.annotation.Nonnull
+  private String customerId;
 
-        public static final String JSON_PROPERTY_PAYMENT_METHOD = "payment_method";
-    @javax.annotation.Nonnull
-            private PaymentMethod paymentMethod;
+  public static final String JSON_PROPERTY_PAYMENT_METHOD = "payment_method";
+  @javax.annotation.Nonnull
+  private PaymentMethod paymentMethod;
 
-        public static final String JSON_PROPERTY_PAYMENT_METHOD_TYPE = "payment_method_type";
-    @javax.annotation.Nullable
-            private JsonNullable<PaymentMethodType> paymentMethodType = JsonNullable.<PaymentMethodType>undefined();
+  public static final String JSON_PROPERTY_PAYMENT_METHOD_TYPE = "payment_method_type";
+  @javax.annotation.Nullable
+  private JsonNullable<PaymentMethodType> paymentMethodType = JsonNullable.<PaymentMethodType>undefined();
 
-public CustomerDefaultPaymentMethodResponse() {
-}
+  public CustomerDefaultPaymentMethodResponse() {
+  }
 
-        public CustomerDefaultPaymentMethodResponse defaultPaymentMethodId(@javax.annotation.Nullable String defaultPaymentMethodId) {
-        this.defaultPaymentMethodId = JsonNullable.<String>of(defaultPaymentMethodId);
-        
-        return this;
-        }
-
-    /**
-        * The unique identifier of the Payment method
-    * @return defaultPaymentMethodId
-    */
-    @javax.annotation.Nullable
-        @JsonIgnore
+  public CustomerDefaultPaymentMethodResponse defaultPaymentMethodId(@javax.annotation.Nullable String defaultPaymentMethodId) {
+    this.defaultPaymentMethodId = JsonNullable.<String>of(defaultPaymentMethodId);
     
-    public String getDefaultPaymentMethodId() {
-                return defaultPaymentMethodId.orElse(null);
-    }
+    return this;
+  }
 
-          @JsonProperty(JSON_PROPERTY_DEFAULT_PAYMENT_METHOD_ID)
+  /**
+   * The unique identifier of the Payment method
+   * @return defaultPaymentMethodId
+   */
+  @javax.annotation.Nullable
+  @JsonIgnore
+
+  public String getDefaultPaymentMethodId() {
+        return defaultPaymentMethodId.orElse(null);
+  }
+
+  @JsonProperty(JSON_PROPERTY_DEFAULT_PAYMENT_METHOD_ID)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-        public JsonNullable<String> getDefaultPaymentMethodId_JsonNullable() {
-        return defaultPaymentMethodId;
-        }
+  public JsonNullable<String> getDefaultPaymentMethodId_JsonNullable() {
+    return defaultPaymentMethodId;
+  }
+  
+  @JsonProperty(JSON_PROPERTY_DEFAULT_PAYMENT_METHOD_ID)
+  public void setDefaultPaymentMethodId_JsonNullable(JsonNullable<String> defaultPaymentMethodId) {
+    this.defaultPaymentMethodId = defaultPaymentMethodId;
+  }
+
+  public void setDefaultPaymentMethodId(@javax.annotation.Nullable String defaultPaymentMethodId) {
+    this.defaultPaymentMethodId = JsonNullable.<String>of(defaultPaymentMethodId);
+  }
+
+  public CustomerDefaultPaymentMethodResponse customerId(@javax.annotation.Nonnull String customerId) {
     
-        @JsonProperty(JSON_PROPERTY_DEFAULT_PAYMENT_METHOD_ID)
-        public void setDefaultPaymentMethodId_JsonNullable(JsonNullable<String> defaultPaymentMethodId) {
-        this.defaultPaymentMethodId = defaultPaymentMethodId;
-        }
+    this.customerId = customerId;
+    return this;
+  }
 
-          public void setDefaultPaymentMethodId(@javax.annotation.Nullable String defaultPaymentMethodId) {
-            this.defaultPaymentMethodId = JsonNullable.<String>of(defaultPaymentMethodId);
-        }
-
-        public CustomerDefaultPaymentMethodResponse customerId(@javax.annotation.Nonnull String customerId) {
-        
-        this.customerId = customerId;
-        return this;
-        }
-
-    /**
-        * The unique identifier of the customer.
-    * @return customerId
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_CUSTOMER_ID)
+  /**
+   * The unique identifier of the customer.
+   * @return customerId
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_CUSTOMER_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public String getCustomerId() {
-        return customerId;
-    }
+  public String getCustomerId() {
+    return customerId;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_CUSTOMER_ID)
+  @JsonProperty(JSON_PROPERTY_CUSTOMER_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setCustomerId(@javax.annotation.Nonnull String customerId) {
-            this.customerId = customerId;
-        }
+    this.customerId = customerId;
+  }
 
-        public CustomerDefaultPaymentMethodResponse paymentMethod(@javax.annotation.Nonnull PaymentMethod paymentMethod) {
-        
-        this.paymentMethod = paymentMethod;
-        return this;
-        }
+  public CustomerDefaultPaymentMethodResponse paymentMethod(@javax.annotation.Nonnull PaymentMethod paymentMethod) {
+    
+    this.paymentMethod = paymentMethod;
+    return this;
+  }
 
-    /**
-        * Get paymentMethod
-    * @return paymentMethod
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_PAYMENT_METHOD)
+  /**
+   * Get paymentMethod
+   * @return paymentMethod
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_PAYMENT_METHOD)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public PaymentMethod getPaymentMethod() {
-        return paymentMethod;
-    }
+  public PaymentMethod getPaymentMethod() {
+    return paymentMethod;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_PAYMENT_METHOD)
+  @JsonProperty(JSON_PROPERTY_PAYMENT_METHOD)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setPaymentMethod(@javax.annotation.Nonnull PaymentMethod paymentMethod) {
-            this.paymentMethod = paymentMethod;
-        }
+    this.paymentMethod = paymentMethod;
+  }
 
-        public CustomerDefaultPaymentMethodResponse paymentMethodType(@javax.annotation.Nullable PaymentMethodType paymentMethodType) {
-        this.paymentMethodType = JsonNullable.<PaymentMethodType>of(paymentMethodType);
-        
-        return this;
-        }
-
-    /**
-        * Get paymentMethodType
-    * @return paymentMethodType
-    */
-    @javax.annotation.Nullable
-        @JsonIgnore
+  public CustomerDefaultPaymentMethodResponse paymentMethodType(@javax.annotation.Nullable PaymentMethodType paymentMethodType) {
+    this.paymentMethodType = JsonNullable.<PaymentMethodType>of(paymentMethodType);
     
-    public PaymentMethodType getPaymentMethodType() {
-                return paymentMethodType.orElse(null);
-    }
+    return this;
+  }
 
-          @JsonProperty(JSON_PROPERTY_PAYMENT_METHOD_TYPE)
+  /**
+   * Get paymentMethodType
+   * @return paymentMethodType
+   */
+  @javax.annotation.Nullable
+  @JsonIgnore
+
+  public PaymentMethodType getPaymentMethodType() {
+        return paymentMethodType.orElse(null);
+  }
+
+  @JsonProperty(JSON_PROPERTY_PAYMENT_METHOD_TYPE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-        public JsonNullable<PaymentMethodType> getPaymentMethodType_JsonNullable() {
-        return paymentMethodType;
-        }
-    
-        @JsonProperty(JSON_PROPERTY_PAYMENT_METHOD_TYPE)
-        public void setPaymentMethodType_JsonNullable(JsonNullable<PaymentMethodType> paymentMethodType) {
-        this.paymentMethodType = paymentMethodType;
-        }
+  public JsonNullable<PaymentMethodType> getPaymentMethodType_JsonNullable() {
+    return paymentMethodType;
+  }
+  
+  @JsonProperty(JSON_PROPERTY_PAYMENT_METHOD_TYPE)
+  public void setPaymentMethodType_JsonNullable(JsonNullable<PaymentMethodType> paymentMethodType) {
+    this.paymentMethodType = paymentMethodType;
+  }
 
-          public void setPaymentMethodType(@javax.annotation.Nullable PaymentMethodType paymentMethodType) {
-            this.paymentMethodType = JsonNullable.<PaymentMethodType>of(paymentMethodType);
-        }
+  public void setPaymentMethodType(@javax.annotation.Nullable PaymentMethodType paymentMethodType) {
+    this.paymentMethodType = JsonNullable.<PaymentMethodType>of(paymentMethodType);
+  }
 
-@Override
-public boolean equals(Object o) {
+  @Override
+  public boolean equals(Object o) {
     if (this == o) {
-    return true;
+      return true;
     }
     if (o == null || getClass() != o.getClass()) {
-    return false;
+      return false;
     }
-        CustomerDefaultPaymentMethodResponse customerDefaultPaymentMethodResponse = (CustomerDefaultPaymentMethodResponse) o;
-        return equalsNullable(this.defaultPaymentMethodId, customerDefaultPaymentMethodResponse.defaultPaymentMethodId) &&
+    CustomerDefaultPaymentMethodResponse customerDefaultPaymentMethodResponse = (CustomerDefaultPaymentMethodResponse) o;
+    return equalsNullable(this.defaultPaymentMethodId, customerDefaultPaymentMethodResponse.defaultPaymentMethodId) &&
         Objects.equals(this.customerId, customerDefaultPaymentMethodResponse.customerId) &&
         Objects.equals(this.paymentMethod, customerDefaultPaymentMethodResponse.paymentMethod) &&
         equalsNullable(this.paymentMethodType, customerDefaultPaymentMethodResponse.paymentMethodType);
-}
+  }
 
-    private static <T> boolean equalsNullable(JsonNullable<T> a, JsonNullable<T> b) {
-        return a == b || (a != null && b != null && a.isPresent() && b.isPresent() && Objects.deepEquals(a.get(), b.get()));
-        }
+  private static <T> boolean equalsNullable(JsonNullable<T> a, JsonNullable<T> b) {
+    return a == b || (a != null && b != null && a.isPresent() && b.isPresent() && Objects.deepEquals(a.get(), b.get()));
+  }
 
-    @Override
-    public int hashCode() {
-        return Objects.hash(hashCodeNullable(defaultPaymentMethodId), customerId, paymentMethod, hashCodeNullable(paymentMethodType));
+  @Override
+  public int hashCode() {
+    return Objects.hash(hashCodeNullable(defaultPaymentMethodId), customerId, paymentMethod, hashCodeNullable(paymentMethodType));
+  }
+
+  private static <T> int hashCodeNullable(JsonNullable<T> a) {
+    if (a == null) {
+      return 1;
     }
+    return a.isPresent() ? Arrays.deepHashCode(new Object[]{a.get()}) : 31;
+  }
 
-        private static <T> int hashCodeNullable(JsonNullable<T> a) {
-        if (a == null) {
-        return 1;
-        }
-        return a.isPresent() ? Arrays.deepHashCode(new Object[]{a.get()}) : 31;
-        }
-
-    @Override
-    public String toString() {
+  @Override
+  public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class CustomerDefaultPaymentMethodResponse {\n");
-        sb.append("    defaultPaymentMethodId: ").append(toIndentedString(defaultPaymentMethodId)).append("\n");
-        sb.append("    customerId: ").append(toIndentedString(customerId)).append("\n");
-        sb.append("    paymentMethod: ").append(toIndentedString(paymentMethod)).append("\n");
-        sb.append("    paymentMethodType: ").append(toIndentedString(paymentMethodType)).append("\n");
+    sb.append("    defaultPaymentMethodId: ").append(toIndentedString(defaultPaymentMethodId)).append("\n");
+    sb.append("    customerId: ").append(toIndentedString(customerId)).append("\n");
+    sb.append("    paymentMethod: ").append(toIndentedString(paymentMethod)).append("\n");
+    sb.append("    paymentMethodType: ").append(toIndentedString(paymentMethodType)).append("\n");
     sb.append("}");
     return sb.toString();
-    }
+  }
 
-    /**
-    * Convert the given object to string with each line indented by 4 spaces
-    * (except the first line).
-    */
-    private String toIndentedString(Object o) {
+  /**
+   * Convert the given object to string with each line indented by 4 spaces
+   * (except the first line).
+   */
+  private String toIndentedString(Object o) {
     if (o == null) {
-    return "null";
+      return "null";
     }
     return o.toString().replace("\n", "\n    ");
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @return URL query string
+   */
+  public String toUrlQueryString() {
+    return toUrlQueryString(null);
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @param prefix prefix of the query string
+   * @return URL query string
+   */
+  public String toUrlQueryString(String prefix) {
+    String suffix = "";
+    String containerSuffix = "";
+    String containerPrefix = "";
+    if (prefix == null) {
+      // style=form, explode=true, e.g. /pet?name=cat&type=manx
+      prefix = "";
+    } else {
+      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+      prefix = prefix + "[";
+      suffix = "]";
+      containerSuffix = "]";
+      containerPrefix = "[";
     }
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @return URL query string
-        */
-        public String toUrlQueryString() {
-        return toUrlQueryString(null);
-        }
+    StringJoiner joiner = new StringJoiner("&");
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @param prefix prefix of the query string
-        * @return URL query string
-        */
-        public String toUrlQueryString(String prefix) {
-        String suffix = "";
-        String containerSuffix = "";
-        String containerPrefix = "";
-        if (prefix == null) {
-        // style=form, explode=true, e.g. /pet?name=cat&type=manx
-        prefix = "";
-        } else {
-        // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
-        prefix = prefix + "[";
-        suffix = "]";
-        containerSuffix = "]";
-        containerPrefix = "[";
-        }
-
-        StringJoiner joiner = new StringJoiner("&");
-
-            // add `default_payment_method_id` to the URL query string
-                        if (getDefaultPaymentMethodId() != null) {
-                        try {
-                        joiner.add(String.format("%sdefault_payment_method_id%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getDefaultPaymentMethodId()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-            // add `customer_id` to the URL query string
-                        if (getCustomerId() != null) {
-                        try {
-                        joiner.add(String.format("%scustomer_id%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCustomerId()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-            // add `payment_method` to the URL query string
-                            if (getPaymentMethod() != null) {
-                            try {
-                            joiner.add(String.format("%spayment_method%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getPaymentMethod()), "UTF-8").replaceAll("\\+", "%20")));
-                            } catch (UnsupportedEncodingException e) {
-                            // Should never happen, UTF-8 is always supported
-                            throw new RuntimeException(e);
-                            }
-                            }
-
-            // add `payment_method_type` to the URL query string
-                            if (getPaymentMethodType() != null) {
-                            try {
-                            joiner.add(String.format("%spayment_method_type%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getPaymentMethodType()), "UTF-8").replaceAll("\\+", "%20")));
-                            } catch (UnsupportedEncodingException e) {
-                            // Should never happen, UTF-8 is always supported
-                            throw new RuntimeException(e);
-                            }
-                            }
-
-        return joiner.toString();
-        }
-
+    // add `default_payment_method_id` to the URL query string
+    if (getDefaultPaymentMethodId() != null) {
+      try {
+        joiner.add(String.format("%sdefault_payment_method_id%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getDefaultPaymentMethodId()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
     }
+
+    // add `customer_id` to the URL query string
+    if (getCustomerId() != null) {
+      try {
+        joiner.add(String.format("%scustomer_id%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCustomerId()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `payment_method` to the URL query string
+    if (getPaymentMethod() != null) {
+      try {
+        joiner.add(String.format("%spayment_method%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getPaymentMethod()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `payment_method_type` to the URL query string
+    if (getPaymentMethodType() != null) {
+      try {
+        joiner.add(String.format("%spayment_method_type%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getPaymentMethodType()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    return joiner.toString();
+  }
+
+}
 

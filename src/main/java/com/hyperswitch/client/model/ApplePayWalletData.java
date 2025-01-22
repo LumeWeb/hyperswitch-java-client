@@ -28,205 +28,205 @@ import java.net.URLEncoder;
 import java.util.StringJoiner;
 
 /**
-* ApplePayWalletData
-*/
-    @JsonPropertyOrder({
-        ApplePayWalletData.JSON_PROPERTY_PAYMENT_DATA,
-        ApplePayWalletData.JSON_PROPERTY_PAYMENT_METHOD,
-        ApplePayWalletData.JSON_PROPERTY_TRANSACTION_IDENTIFIER
-    })
+ * ApplePayWalletData
+ */
+@JsonPropertyOrder({
+  ApplePayWalletData.JSON_PROPERTY_PAYMENT_DATA,
+  ApplePayWalletData.JSON_PROPERTY_PAYMENT_METHOD,
+  ApplePayWalletData.JSON_PROPERTY_TRANSACTION_IDENTIFIER
+})
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class ApplePayWalletData {
-        public static final String JSON_PROPERTY_PAYMENT_DATA = "payment_data";
-    @javax.annotation.Nonnull
-            private String paymentData;
+  public static final String JSON_PROPERTY_PAYMENT_DATA = "payment_data";
+  @javax.annotation.Nonnull
+  private String paymentData;
 
-        public static final String JSON_PROPERTY_PAYMENT_METHOD = "payment_method";
-    @javax.annotation.Nonnull
-            private ApplepayPaymentMethod paymentMethod;
+  public static final String JSON_PROPERTY_PAYMENT_METHOD = "payment_method";
+  @javax.annotation.Nonnull
+  private ApplepayPaymentMethod paymentMethod;
 
-        public static final String JSON_PROPERTY_TRANSACTION_IDENTIFIER = "transaction_identifier";
-    @javax.annotation.Nonnull
-            private String transactionIdentifier;
+  public static final String JSON_PROPERTY_TRANSACTION_IDENTIFIER = "transaction_identifier";
+  @javax.annotation.Nonnull
+  private String transactionIdentifier;
 
-public ApplePayWalletData() {
-}
+  public ApplePayWalletData() {
+  }
 
-        public ApplePayWalletData paymentData(@javax.annotation.Nonnull String paymentData) {
-        
-        this.paymentData = paymentData;
-        return this;
-        }
+  public ApplePayWalletData paymentData(@javax.annotation.Nonnull String paymentData) {
+    
+    this.paymentData = paymentData;
+    return this;
+  }
 
-    /**
-        * The payment data of Apple pay
-    * @return paymentData
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_PAYMENT_DATA)
+  /**
+   * The payment data of Apple pay
+   * @return paymentData
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_PAYMENT_DATA)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public String getPaymentData() {
-        return paymentData;
-    }
+  public String getPaymentData() {
+    return paymentData;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_PAYMENT_DATA)
+  @JsonProperty(JSON_PROPERTY_PAYMENT_DATA)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setPaymentData(@javax.annotation.Nonnull String paymentData) {
-            this.paymentData = paymentData;
-        }
+    this.paymentData = paymentData;
+  }
 
-        public ApplePayWalletData paymentMethod(@javax.annotation.Nonnull ApplepayPaymentMethod paymentMethod) {
-        
-        this.paymentMethod = paymentMethod;
-        return this;
-        }
+  public ApplePayWalletData paymentMethod(@javax.annotation.Nonnull ApplepayPaymentMethod paymentMethod) {
+    
+    this.paymentMethod = paymentMethod;
+    return this;
+  }
 
-    /**
-        * Get paymentMethod
-    * @return paymentMethod
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_PAYMENT_METHOD)
+  /**
+   * Get paymentMethod
+   * @return paymentMethod
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_PAYMENT_METHOD)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public ApplepayPaymentMethod getPaymentMethod() {
-        return paymentMethod;
-    }
+  public ApplepayPaymentMethod getPaymentMethod() {
+    return paymentMethod;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_PAYMENT_METHOD)
+  @JsonProperty(JSON_PROPERTY_PAYMENT_METHOD)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setPaymentMethod(@javax.annotation.Nonnull ApplepayPaymentMethod paymentMethod) {
-            this.paymentMethod = paymentMethod;
-        }
+    this.paymentMethod = paymentMethod;
+  }
 
-        public ApplePayWalletData transactionIdentifier(@javax.annotation.Nonnull String transactionIdentifier) {
-        
-        this.transactionIdentifier = transactionIdentifier;
-        return this;
-        }
+  public ApplePayWalletData transactionIdentifier(@javax.annotation.Nonnull String transactionIdentifier) {
+    
+    this.transactionIdentifier = transactionIdentifier;
+    return this;
+  }
 
-    /**
-        * The unique identifier for the transaction
-    * @return transactionIdentifier
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_TRANSACTION_IDENTIFIER)
+  /**
+   * The unique identifier for the transaction
+   * @return transactionIdentifier
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_TRANSACTION_IDENTIFIER)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public String getTransactionIdentifier() {
-        return transactionIdentifier;
-    }
+  public String getTransactionIdentifier() {
+    return transactionIdentifier;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_TRANSACTION_IDENTIFIER)
+  @JsonProperty(JSON_PROPERTY_TRANSACTION_IDENTIFIER)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setTransactionIdentifier(@javax.annotation.Nonnull String transactionIdentifier) {
-            this.transactionIdentifier = transactionIdentifier;
-        }
+    this.transactionIdentifier = transactionIdentifier;
+  }
 
-@Override
-public boolean equals(Object o) {
+  @Override
+  public boolean equals(Object o) {
     if (this == o) {
-    return true;
+      return true;
     }
     if (o == null || getClass() != o.getClass()) {
-    return false;
+      return false;
     }
-        ApplePayWalletData applePayWalletData = (ApplePayWalletData) o;
-        return Objects.equals(this.paymentData, applePayWalletData.paymentData) &&
+    ApplePayWalletData applePayWalletData = (ApplePayWalletData) o;
+    return Objects.equals(this.paymentData, applePayWalletData.paymentData) &&
         Objects.equals(this.paymentMethod, applePayWalletData.paymentMethod) &&
         Objects.equals(this.transactionIdentifier, applePayWalletData.transactionIdentifier);
-}
+  }
 
-    @Override
-    public int hashCode() {
-        return Objects.hash(paymentData, paymentMethod, transactionIdentifier);
-    }
+  @Override
+  public int hashCode() {
+    return Objects.hash(paymentData, paymentMethod, transactionIdentifier);
+  }
 
-    @Override
-    public String toString() {
+  @Override
+  public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class ApplePayWalletData {\n");
-        sb.append("    paymentData: ").append(toIndentedString(paymentData)).append("\n");
-        sb.append("    paymentMethod: ").append(toIndentedString(paymentMethod)).append("\n");
-        sb.append("    transactionIdentifier: ").append(toIndentedString(transactionIdentifier)).append("\n");
+    sb.append("    paymentData: ").append(toIndentedString(paymentData)).append("\n");
+    sb.append("    paymentMethod: ").append(toIndentedString(paymentMethod)).append("\n");
+    sb.append("    transactionIdentifier: ").append(toIndentedString(transactionIdentifier)).append("\n");
     sb.append("}");
     return sb.toString();
-    }
+  }
 
-    /**
-    * Convert the given object to string with each line indented by 4 spaces
-    * (except the first line).
-    */
-    private String toIndentedString(Object o) {
+  /**
+   * Convert the given object to string with each line indented by 4 spaces
+   * (except the first line).
+   */
+  private String toIndentedString(Object o) {
     if (o == null) {
-    return "null";
+      return "null";
     }
     return o.toString().replace("\n", "\n    ");
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @return URL query string
+   */
+  public String toUrlQueryString() {
+    return toUrlQueryString(null);
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @param prefix prefix of the query string
+   * @return URL query string
+   */
+  public String toUrlQueryString(String prefix) {
+    String suffix = "";
+    String containerSuffix = "";
+    String containerPrefix = "";
+    if (prefix == null) {
+      // style=form, explode=true, e.g. /pet?name=cat&type=manx
+      prefix = "";
+    } else {
+      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+      prefix = prefix + "[";
+      suffix = "]";
+      containerSuffix = "]";
+      containerPrefix = "[";
     }
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @return URL query string
-        */
-        public String toUrlQueryString() {
-        return toUrlQueryString(null);
-        }
+    StringJoiner joiner = new StringJoiner("&");
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @param prefix prefix of the query string
-        * @return URL query string
-        */
-        public String toUrlQueryString(String prefix) {
-        String suffix = "";
-        String containerSuffix = "";
-        String containerPrefix = "";
-        if (prefix == null) {
-        // style=form, explode=true, e.g. /pet?name=cat&type=manx
-        prefix = "";
-        } else {
-        // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
-        prefix = prefix + "[";
-        suffix = "]";
-        containerSuffix = "]";
-        containerPrefix = "[";
-        }
-
-        StringJoiner joiner = new StringJoiner("&");
-
-            // add `payment_data` to the URL query string
-                        if (getPaymentData() != null) {
-                        try {
-                        joiner.add(String.format("%spayment_data%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getPaymentData()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-            // add `payment_method` to the URL query string
-                            if (getPaymentMethod() != null) {
-                            joiner.add(getPaymentMethod().toUrlQueryString(prefix + "payment_method" + suffix));
-                            }
-
-            // add `transaction_identifier` to the URL query string
-                        if (getTransactionIdentifier() != null) {
-                        try {
-                        joiner.add(String.format("%stransaction_identifier%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getTransactionIdentifier()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-        return joiner.toString();
-        }
-
+    // add `payment_data` to the URL query string
+    if (getPaymentData() != null) {
+      try {
+        joiner.add(String.format("%spayment_data%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getPaymentData()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
     }
+
+    // add `payment_method` to the URL query string
+    if (getPaymentMethod() != null) {
+      joiner.add(getPaymentMethod().toUrlQueryString(prefix + "payment_method" + suffix));
+    }
+
+    // add `transaction_identifier` to the URL query string
+    if (getTransactionIdentifier() != null) {
+      try {
+        joiner.add(String.format("%stransaction_identifier%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getTransactionIdentifier()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    return joiner.toString();
+  }
+
+}
 

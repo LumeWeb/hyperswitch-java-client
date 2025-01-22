@@ -27,127 +27,127 @@ import java.net.URLEncoder;
 import java.util.StringJoiner;
 
 /**
-* WalletDataOneOf
-*/
-    @JsonPropertyOrder({
-        WalletDataOneOf.JSON_PROPERTY_ALI_PAY_QR
-    })
-            @JsonTypeName("WalletData_oneOf")
+ * WalletDataOneOf
+ */
+@JsonPropertyOrder({
+  WalletDataOneOf.JSON_PROPERTY_ALI_PAY_QR
+})
+@JsonTypeName("WalletData_oneOf")
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class WalletDataOneOf {
-        public static final String JSON_PROPERTY_ALI_PAY_QR = "ali_pay_qr";
-    @javax.annotation.Nonnull
-            private Object aliPayQr;
+  public static final String JSON_PROPERTY_ALI_PAY_QR = "ali_pay_qr";
+  @javax.annotation.Nonnull
+  private Object aliPayQr;
 
-public WalletDataOneOf() {
-}
+  public WalletDataOneOf() {
+  }
 
-        public WalletDataOneOf aliPayQr(@javax.annotation.Nonnull Object aliPayQr) {
-        
-        this.aliPayQr = aliPayQr;
-        return this;
-        }
+  public WalletDataOneOf aliPayQr(@javax.annotation.Nonnull Object aliPayQr) {
+    
+    this.aliPayQr = aliPayQr;
+    return this;
+  }
 
-    /**
-        * Get aliPayQr
-    * @return aliPayQr
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_ALI_PAY_QR)
+  /**
+   * Get aliPayQr
+   * @return aliPayQr
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_ALI_PAY_QR)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public Object getAliPayQr() {
-        return aliPayQr;
-    }
+  public Object getAliPayQr() {
+    return aliPayQr;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_ALI_PAY_QR)
+  @JsonProperty(JSON_PROPERTY_ALI_PAY_QR)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setAliPayQr(@javax.annotation.Nonnull Object aliPayQr) {
-            this.aliPayQr = aliPayQr;
-        }
+    this.aliPayQr = aliPayQr;
+  }
 
-@Override
-public boolean equals(Object o) {
+  @Override
+  public boolean equals(Object o) {
     if (this == o) {
-    return true;
+      return true;
     }
     if (o == null || getClass() != o.getClass()) {
-    return false;
+      return false;
     }
-        WalletDataOneOf walletDataOneOf = (WalletDataOneOf) o;
-        return Objects.equals(this.aliPayQr, walletDataOneOf.aliPayQr);
-}
+    WalletDataOneOf walletDataOneOf = (WalletDataOneOf) o;
+    return Objects.equals(this.aliPayQr, walletDataOneOf.aliPayQr);
+  }
 
-    @Override
-    public int hashCode() {
-        return Objects.hash(aliPayQr);
-    }
+  @Override
+  public int hashCode() {
+    return Objects.hash(aliPayQr);
+  }
 
-    @Override
-    public String toString() {
+  @Override
+  public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class WalletDataOneOf {\n");
-        sb.append("    aliPayQr: ").append(toIndentedString(aliPayQr)).append("\n");
+    sb.append("    aliPayQr: ").append(toIndentedString(aliPayQr)).append("\n");
     sb.append("}");
     return sb.toString();
-    }
+  }
 
-    /**
-    * Convert the given object to string with each line indented by 4 spaces
-    * (except the first line).
-    */
-    private String toIndentedString(Object o) {
+  /**
+   * Convert the given object to string with each line indented by 4 spaces
+   * (except the first line).
+   */
+  private String toIndentedString(Object o) {
     if (o == null) {
-    return "null";
+      return "null";
     }
     return o.toString().replace("\n", "\n    ");
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @return URL query string
+   */
+  public String toUrlQueryString() {
+    return toUrlQueryString(null);
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @param prefix prefix of the query string
+   * @return URL query string
+   */
+  public String toUrlQueryString(String prefix) {
+    String suffix = "";
+    String containerSuffix = "";
+    String containerPrefix = "";
+    if (prefix == null) {
+      // style=form, explode=true, e.g. /pet?name=cat&type=manx
+      prefix = "";
+    } else {
+      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+      prefix = prefix + "[";
+      suffix = "]";
+      containerSuffix = "]";
+      containerPrefix = "[";
     }
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @return URL query string
-        */
-        public String toUrlQueryString() {
-        return toUrlQueryString(null);
-        }
+    StringJoiner joiner = new StringJoiner("&");
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @param prefix prefix of the query string
-        * @return URL query string
-        */
-        public String toUrlQueryString(String prefix) {
-        String suffix = "";
-        String containerSuffix = "";
-        String containerPrefix = "";
-        if (prefix == null) {
-        // style=form, explode=true, e.g. /pet?name=cat&type=manx
-        prefix = "";
-        } else {
-        // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
-        prefix = prefix + "[";
-        suffix = "]";
-        containerSuffix = "]";
-        containerPrefix = "[";
-        }
-
-        StringJoiner joiner = new StringJoiner("&");
-
-            // add `ali_pay_qr` to the URL query string
-                        if (getAliPayQr() != null) {
-                        try {
-                        joiner.add(String.format("%sali_pay_qr%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getAliPayQr()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-        return joiner.toString();
-        }
-
+    // add `ali_pay_qr` to the URL query string
+    if (getAliPayQr() != null) {
+      try {
+        joiner.add(String.format("%sali_pay_qr%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getAliPayQr()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
     }
+
+    return joiner.toString();
+  }
+
+}
 

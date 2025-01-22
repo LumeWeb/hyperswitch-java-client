@@ -27,127 +27,127 @@ import java.net.URLEncoder;
 import java.util.StringJoiner;
 
 /**
-* WalletDataOneOf25
-*/
-    @JsonPropertyOrder({
-        WalletDataOneOf25.JSON_PROPERTY_CASHAPP_QR
-    })
-            @JsonTypeName("WalletData_oneOf_25")
+ * WalletDataOneOf25
+ */
+@JsonPropertyOrder({
+  WalletDataOneOf25.JSON_PROPERTY_CASHAPP_QR
+})
+@JsonTypeName("WalletData_oneOf_25")
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class WalletDataOneOf25 {
-        public static final String JSON_PROPERTY_CASHAPP_QR = "cashapp_qr";
-    @javax.annotation.Nonnull
-            private Object cashappQr;
+  public static final String JSON_PROPERTY_CASHAPP_QR = "cashapp_qr";
+  @javax.annotation.Nonnull
+  private Object cashappQr;
 
-public WalletDataOneOf25() {
-}
+  public WalletDataOneOf25() {
+  }
 
-        public WalletDataOneOf25 cashappQr(@javax.annotation.Nonnull Object cashappQr) {
-        
-        this.cashappQr = cashappQr;
-        return this;
-        }
+  public WalletDataOneOf25 cashappQr(@javax.annotation.Nonnull Object cashappQr) {
+    
+    this.cashappQr = cashappQr;
+    return this;
+  }
 
-    /**
-        * Get cashappQr
-    * @return cashappQr
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_CASHAPP_QR)
+  /**
+   * Get cashappQr
+   * @return cashappQr
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_CASHAPP_QR)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public Object getCashappQr() {
-        return cashappQr;
-    }
+  public Object getCashappQr() {
+    return cashappQr;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_CASHAPP_QR)
+  @JsonProperty(JSON_PROPERTY_CASHAPP_QR)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setCashappQr(@javax.annotation.Nonnull Object cashappQr) {
-            this.cashappQr = cashappQr;
-        }
+    this.cashappQr = cashappQr;
+  }
 
-@Override
-public boolean equals(Object o) {
+  @Override
+  public boolean equals(Object o) {
     if (this == o) {
-    return true;
+      return true;
     }
     if (o == null || getClass() != o.getClass()) {
-    return false;
+      return false;
     }
-        WalletDataOneOf25 walletDataOneOf25 = (WalletDataOneOf25) o;
-        return Objects.equals(this.cashappQr, walletDataOneOf25.cashappQr);
-}
+    WalletDataOneOf25 walletDataOneOf25 = (WalletDataOneOf25) o;
+    return Objects.equals(this.cashappQr, walletDataOneOf25.cashappQr);
+  }
 
-    @Override
-    public int hashCode() {
-        return Objects.hash(cashappQr);
-    }
+  @Override
+  public int hashCode() {
+    return Objects.hash(cashappQr);
+  }
 
-    @Override
-    public String toString() {
+  @Override
+  public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class WalletDataOneOf25 {\n");
-        sb.append("    cashappQr: ").append(toIndentedString(cashappQr)).append("\n");
+    sb.append("    cashappQr: ").append(toIndentedString(cashappQr)).append("\n");
     sb.append("}");
     return sb.toString();
-    }
+  }
 
-    /**
-    * Convert the given object to string with each line indented by 4 spaces
-    * (except the first line).
-    */
-    private String toIndentedString(Object o) {
+  /**
+   * Convert the given object to string with each line indented by 4 spaces
+   * (except the first line).
+   */
+  private String toIndentedString(Object o) {
     if (o == null) {
-    return "null";
+      return "null";
     }
     return o.toString().replace("\n", "\n    ");
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @return URL query string
+   */
+  public String toUrlQueryString() {
+    return toUrlQueryString(null);
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @param prefix prefix of the query string
+   * @return URL query string
+   */
+  public String toUrlQueryString(String prefix) {
+    String suffix = "";
+    String containerSuffix = "";
+    String containerPrefix = "";
+    if (prefix == null) {
+      // style=form, explode=true, e.g. /pet?name=cat&type=manx
+      prefix = "";
+    } else {
+      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+      prefix = prefix + "[";
+      suffix = "]";
+      containerSuffix = "]";
+      containerPrefix = "[";
     }
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @return URL query string
-        */
-        public String toUrlQueryString() {
-        return toUrlQueryString(null);
-        }
+    StringJoiner joiner = new StringJoiner("&");
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @param prefix prefix of the query string
-        * @return URL query string
-        */
-        public String toUrlQueryString(String prefix) {
-        String suffix = "";
-        String containerSuffix = "";
-        String containerPrefix = "";
-        if (prefix == null) {
-        // style=form, explode=true, e.g. /pet?name=cat&type=manx
-        prefix = "";
-        } else {
-        // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
-        prefix = prefix + "[";
-        suffix = "]";
-        containerSuffix = "]";
-        containerPrefix = "[";
-        }
-
-        StringJoiner joiner = new StringJoiner("&");
-
-            // add `cashapp_qr` to the URL query string
-                        if (getCashappQr() != null) {
-                        try {
-                        joiner.add(String.format("%scashapp_qr%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCashappQr()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-        return joiner.toString();
-        }
-
+    // add `cashapp_qr` to the URL query string
+    if (getCashappQr() != null) {
+      try {
+        joiner.add(String.format("%scashapp_qr%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCashappQr()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
     }
+
+    return joiner.toString();
+  }
+
+}
 

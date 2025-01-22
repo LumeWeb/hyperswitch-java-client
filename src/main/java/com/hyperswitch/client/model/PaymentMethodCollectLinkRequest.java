@@ -35,334 +35,334 @@ import java.net.URLEncoder;
 import java.util.StringJoiner;
 
 /**
-* PaymentMethodCollectLinkRequest
-*/
-    @JsonPropertyOrder({
-        PaymentMethodCollectLinkRequest.JSON_PROPERTY_LOGO,
-        PaymentMethodCollectLinkRequest.JSON_PROPERTY_MERCHANT_NAME,
-        PaymentMethodCollectLinkRequest.JSON_PROPERTY_THEME,
-        PaymentMethodCollectLinkRequest.JSON_PROPERTY_PM_COLLECT_LINK_ID,
-        PaymentMethodCollectLinkRequest.JSON_PROPERTY_CUSTOMER_ID,
-        PaymentMethodCollectLinkRequest.JSON_PROPERTY_SESSION_EXPIRY,
-        PaymentMethodCollectLinkRequest.JSON_PROPERTY_RETURN_URL,
-        PaymentMethodCollectLinkRequest.JSON_PROPERTY_ENABLED_PAYMENT_METHODS
-    })
+ * PaymentMethodCollectLinkRequest
+ */
+@JsonPropertyOrder({
+  PaymentMethodCollectLinkRequest.JSON_PROPERTY_LOGO,
+  PaymentMethodCollectLinkRequest.JSON_PROPERTY_MERCHANT_NAME,
+  PaymentMethodCollectLinkRequest.JSON_PROPERTY_THEME,
+  PaymentMethodCollectLinkRequest.JSON_PROPERTY_PM_COLLECT_LINK_ID,
+  PaymentMethodCollectLinkRequest.JSON_PROPERTY_CUSTOMER_ID,
+  PaymentMethodCollectLinkRequest.JSON_PROPERTY_SESSION_EXPIRY,
+  PaymentMethodCollectLinkRequest.JSON_PROPERTY_RETURN_URL,
+  PaymentMethodCollectLinkRequest.JSON_PROPERTY_ENABLED_PAYMENT_METHODS
+})
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class PaymentMethodCollectLinkRequest {
-        public static final String JSON_PROPERTY_LOGO = "logo";
-    @javax.annotation.Nullable
-            private JsonNullable<String> logo = JsonNullable.<String>undefined();
+  public static final String JSON_PROPERTY_LOGO = "logo";
+  @javax.annotation.Nullable
+  private JsonNullable<String> logo = JsonNullable.<String>undefined();
 
-        public static final String JSON_PROPERTY_MERCHANT_NAME = "merchant_name";
-    @javax.annotation.Nullable
-            private JsonNullable<String> merchantName = JsonNullable.<String>undefined();
+  public static final String JSON_PROPERTY_MERCHANT_NAME = "merchant_name";
+  @javax.annotation.Nullable
+  private JsonNullable<String> merchantName = JsonNullable.<String>undefined();
 
-        public static final String JSON_PROPERTY_THEME = "theme";
-    @javax.annotation.Nullable
-            private JsonNullable<String> theme = JsonNullable.<String>undefined();
+  public static final String JSON_PROPERTY_THEME = "theme";
+  @javax.annotation.Nullable
+  private JsonNullable<String> theme = JsonNullable.<String>undefined();
 
-        public static final String JSON_PROPERTY_PM_COLLECT_LINK_ID = "pm_collect_link_id";
-    @javax.annotation.Nullable
-            private JsonNullable<String> pmCollectLinkId = JsonNullable.<String>undefined();
+  public static final String JSON_PROPERTY_PM_COLLECT_LINK_ID = "pm_collect_link_id";
+  @javax.annotation.Nullable
+  private JsonNullable<String> pmCollectLinkId = JsonNullable.<String>undefined();
 
-        public static final String JSON_PROPERTY_CUSTOMER_ID = "customer_id";
-    @javax.annotation.Nonnull
-            private String customerId;
+  public static final String JSON_PROPERTY_CUSTOMER_ID = "customer_id";
+  @javax.annotation.Nonnull
+  private String customerId;
 
-        public static final String JSON_PROPERTY_SESSION_EXPIRY = "session_expiry";
-    @javax.annotation.Nullable
-            private JsonNullable<Integer> sessionExpiry = JsonNullable.<Integer>undefined();
+  public static final String JSON_PROPERTY_SESSION_EXPIRY = "session_expiry";
+  @javax.annotation.Nullable
+  private JsonNullable<Integer> sessionExpiry = JsonNullable.<Integer>undefined();
 
-        public static final String JSON_PROPERTY_RETURN_URL = "return_url";
-    @javax.annotation.Nullable
-            private JsonNullable<String> returnUrl = JsonNullable.<String>undefined();
+  public static final String JSON_PROPERTY_RETURN_URL = "return_url";
+  @javax.annotation.Nullable
+  private JsonNullable<String> returnUrl = JsonNullable.<String>undefined();
 
-        public static final String JSON_PROPERTY_ENABLED_PAYMENT_METHODS = "enabled_payment_methods";
-    @javax.annotation.Nullable
-            private JsonNullable<List<EnabledPaymentMethod>> enabledPaymentMethods = JsonNullable.<List<EnabledPaymentMethod>>undefined();
+  public static final String JSON_PROPERTY_ENABLED_PAYMENT_METHODS = "enabled_payment_methods";
+  @javax.annotation.Nullable
+  private JsonNullable<List<EnabledPaymentMethod>> enabledPaymentMethods = JsonNullable.<List<EnabledPaymentMethod>>undefined();
 
-public PaymentMethodCollectLinkRequest() {
-}
+  public PaymentMethodCollectLinkRequest() {
+  }
 
-        public PaymentMethodCollectLinkRequest logo(@javax.annotation.Nullable String logo) {
-        this.logo = JsonNullable.<String>of(logo);
-        
-        return this;
-        }
-
-    /**
-        * Merchant&#39;s display logo
-    * @return logo
-    */
-    @javax.annotation.Nullable
-        @JsonIgnore
+  public PaymentMethodCollectLinkRequest logo(@javax.annotation.Nullable String logo) {
+    this.logo = JsonNullable.<String>of(logo);
     
-    public String getLogo() {
-                return logo.orElse(null);
-    }
+    return this;
+  }
 
-          @JsonProperty(JSON_PROPERTY_LOGO)
+  /**
+   * Merchant&#39;s display logo
+   * @return logo
+   */
+  @javax.annotation.Nullable
+  @JsonIgnore
+
+  public String getLogo() {
+        return logo.orElse(null);
+  }
+
+  @JsonProperty(JSON_PROPERTY_LOGO)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-        public JsonNullable<String> getLogo_JsonNullable() {
-        return logo;
-        }
+  public JsonNullable<String> getLogo_JsonNullable() {
+    return logo;
+  }
+  
+  @JsonProperty(JSON_PROPERTY_LOGO)
+  public void setLogo_JsonNullable(JsonNullable<String> logo) {
+    this.logo = logo;
+  }
+
+  public void setLogo(@javax.annotation.Nullable String logo) {
+    this.logo = JsonNullable.<String>of(logo);
+  }
+
+  public PaymentMethodCollectLinkRequest merchantName(@javax.annotation.Nullable String merchantName) {
+    this.merchantName = JsonNullable.<String>of(merchantName);
     
-        @JsonProperty(JSON_PROPERTY_LOGO)
-        public void setLogo_JsonNullable(JsonNullable<String> logo) {
-        this.logo = logo;
-        }
+    return this;
+  }
 
-          public void setLogo(@javax.annotation.Nullable String logo) {
-            this.logo = JsonNullable.<String>of(logo);
-        }
+  /**
+   * Custom merchant name for the link
+   * @return merchantName
+   */
+  @javax.annotation.Nullable
+  @JsonIgnore
 
-        public PaymentMethodCollectLinkRequest merchantName(@javax.annotation.Nullable String merchantName) {
-        this.merchantName = JsonNullable.<String>of(merchantName);
-        
-        return this;
-        }
+  public String getMerchantName() {
+        return merchantName.orElse(null);
+  }
 
-    /**
-        * Custom merchant name for the link
-    * @return merchantName
-    */
-    @javax.annotation.Nullable
-        @JsonIgnore
-    
-    public String getMerchantName() {
-                return merchantName.orElse(null);
-    }
-
-          @JsonProperty(JSON_PROPERTY_MERCHANT_NAME)
+  @JsonProperty(JSON_PROPERTY_MERCHANT_NAME)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-        public JsonNullable<String> getMerchantName_JsonNullable() {
-        return merchantName;
-        }
+  public JsonNullable<String> getMerchantName_JsonNullable() {
+    return merchantName;
+  }
+  
+  @JsonProperty(JSON_PROPERTY_MERCHANT_NAME)
+  public void setMerchantName_JsonNullable(JsonNullable<String> merchantName) {
+    this.merchantName = merchantName;
+  }
+
+  public void setMerchantName(@javax.annotation.Nullable String merchantName) {
+    this.merchantName = JsonNullable.<String>of(merchantName);
+  }
+
+  public PaymentMethodCollectLinkRequest theme(@javax.annotation.Nullable String theme) {
+    this.theme = JsonNullable.<String>of(theme);
     
-        @JsonProperty(JSON_PROPERTY_MERCHANT_NAME)
-        public void setMerchantName_JsonNullable(JsonNullable<String> merchantName) {
-        this.merchantName = merchantName;
-        }
+    return this;
+  }
 
-          public void setMerchantName(@javax.annotation.Nullable String merchantName) {
-            this.merchantName = JsonNullable.<String>of(merchantName);
-        }
+  /**
+   * Primary color to be used in the form represented in hex format
+   * @return theme
+   */
+  @javax.annotation.Nullable
+  @JsonIgnore
 
-        public PaymentMethodCollectLinkRequest theme(@javax.annotation.Nullable String theme) {
-        this.theme = JsonNullable.<String>of(theme);
-        
-        return this;
-        }
+  public String getTheme() {
+        return theme.orElse(null);
+  }
 
-    /**
-        * Primary color to be used in the form represented in hex format
-    * @return theme
-    */
-    @javax.annotation.Nullable
-        @JsonIgnore
-    
-    public String getTheme() {
-                return theme.orElse(null);
-    }
-
-          @JsonProperty(JSON_PROPERTY_THEME)
+  @JsonProperty(JSON_PROPERTY_THEME)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-        public JsonNullable<String> getTheme_JsonNullable() {
-        return theme;
-        }
+  public JsonNullable<String> getTheme_JsonNullable() {
+    return theme;
+  }
+  
+  @JsonProperty(JSON_PROPERTY_THEME)
+  public void setTheme_JsonNullable(JsonNullable<String> theme) {
+    this.theme = theme;
+  }
+
+  public void setTheme(@javax.annotation.Nullable String theme) {
+    this.theme = JsonNullable.<String>of(theme);
+  }
+
+  public PaymentMethodCollectLinkRequest pmCollectLinkId(@javax.annotation.Nullable String pmCollectLinkId) {
+    this.pmCollectLinkId = JsonNullable.<String>of(pmCollectLinkId);
     
-        @JsonProperty(JSON_PROPERTY_THEME)
-        public void setTheme_JsonNullable(JsonNullable<String> theme) {
-        this.theme = theme;
-        }
+    return this;
+  }
 
-          public void setTheme(@javax.annotation.Nullable String theme) {
-            this.theme = JsonNullable.<String>of(theme);
-        }
+  /**
+   * The unique identifier for the collect link.
+   * @return pmCollectLinkId
+   */
+  @javax.annotation.Nullable
+  @JsonIgnore
 
-        public PaymentMethodCollectLinkRequest pmCollectLinkId(@javax.annotation.Nullable String pmCollectLinkId) {
-        this.pmCollectLinkId = JsonNullable.<String>of(pmCollectLinkId);
-        
-        return this;
-        }
+  public String getPmCollectLinkId() {
+        return pmCollectLinkId.orElse(null);
+  }
 
-    /**
-        * The unique identifier for the collect link.
-    * @return pmCollectLinkId
-    */
-    @javax.annotation.Nullable
-        @JsonIgnore
-    
-    public String getPmCollectLinkId() {
-                return pmCollectLinkId.orElse(null);
-    }
-
-          @JsonProperty(JSON_PROPERTY_PM_COLLECT_LINK_ID)
+  @JsonProperty(JSON_PROPERTY_PM_COLLECT_LINK_ID)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-        public JsonNullable<String> getPmCollectLinkId_JsonNullable() {
-        return pmCollectLinkId;
-        }
+  public JsonNullable<String> getPmCollectLinkId_JsonNullable() {
+    return pmCollectLinkId;
+  }
+  
+  @JsonProperty(JSON_PROPERTY_PM_COLLECT_LINK_ID)
+  public void setPmCollectLinkId_JsonNullable(JsonNullable<String> pmCollectLinkId) {
+    this.pmCollectLinkId = pmCollectLinkId;
+  }
+
+  public void setPmCollectLinkId(@javax.annotation.Nullable String pmCollectLinkId) {
+    this.pmCollectLinkId = JsonNullable.<String>of(pmCollectLinkId);
+  }
+
+  public PaymentMethodCollectLinkRequest customerId(@javax.annotation.Nonnull String customerId) {
     
-        @JsonProperty(JSON_PROPERTY_PM_COLLECT_LINK_ID)
-        public void setPmCollectLinkId_JsonNullable(JsonNullable<String> pmCollectLinkId) {
-        this.pmCollectLinkId = pmCollectLinkId;
-        }
+    this.customerId = customerId;
+    return this;
+  }
 
-          public void setPmCollectLinkId(@javax.annotation.Nullable String pmCollectLinkId) {
-            this.pmCollectLinkId = JsonNullable.<String>of(pmCollectLinkId);
-        }
-
-        public PaymentMethodCollectLinkRequest customerId(@javax.annotation.Nonnull String customerId) {
-        
-        this.customerId = customerId;
-        return this;
-        }
-
-    /**
-        * The unique identifier of the customer.
-    * @return customerId
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_CUSTOMER_ID)
+  /**
+   * The unique identifier of the customer.
+   * @return customerId
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_CUSTOMER_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public String getCustomerId() {
-        return customerId;
-    }
+  public String getCustomerId() {
+    return customerId;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_CUSTOMER_ID)
+  @JsonProperty(JSON_PROPERTY_CUSTOMER_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setCustomerId(@javax.annotation.Nonnull String customerId) {
-            this.customerId = customerId;
-        }
+    this.customerId = customerId;
+  }
 
-        public PaymentMethodCollectLinkRequest sessionExpiry(@javax.annotation.Nullable Integer sessionExpiry) {
-        this.sessionExpiry = JsonNullable.<Integer>of(sessionExpiry);
-        
-        return this;
-        }
-
-    /**
-        * Will be used to expire client secret after certain amount of time to be supplied in seconds (900) for 15 mins
-        * minimum: 0
-    * @return sessionExpiry
-    */
-    @javax.annotation.Nullable
-        @JsonIgnore
+  public PaymentMethodCollectLinkRequest sessionExpiry(@javax.annotation.Nullable Integer sessionExpiry) {
+    this.sessionExpiry = JsonNullable.<Integer>of(sessionExpiry);
     
-    public Integer getSessionExpiry() {
-                return sessionExpiry.orElse(null);
-    }
+    return this;
+  }
 
-          @JsonProperty(JSON_PROPERTY_SESSION_EXPIRY)
+  /**
+   * Will be used to expire client secret after certain amount of time to be supplied in seconds (900) for 15 mins
+   * minimum: 0
+   * @return sessionExpiry
+   */
+  @javax.annotation.Nullable
+  @JsonIgnore
+
+  public Integer getSessionExpiry() {
+        return sessionExpiry.orElse(null);
+  }
+
+  @JsonProperty(JSON_PROPERTY_SESSION_EXPIRY)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-        public JsonNullable<Integer> getSessionExpiry_JsonNullable() {
-        return sessionExpiry;
-        }
+  public JsonNullable<Integer> getSessionExpiry_JsonNullable() {
+    return sessionExpiry;
+  }
+  
+  @JsonProperty(JSON_PROPERTY_SESSION_EXPIRY)
+  public void setSessionExpiry_JsonNullable(JsonNullable<Integer> sessionExpiry) {
+    this.sessionExpiry = sessionExpiry;
+  }
+
+  public void setSessionExpiry(@javax.annotation.Nullable Integer sessionExpiry) {
+    this.sessionExpiry = JsonNullable.<Integer>of(sessionExpiry);
+  }
+
+  public PaymentMethodCollectLinkRequest returnUrl(@javax.annotation.Nullable String returnUrl) {
+    this.returnUrl = JsonNullable.<String>of(returnUrl);
     
-        @JsonProperty(JSON_PROPERTY_SESSION_EXPIRY)
-        public void setSessionExpiry_JsonNullable(JsonNullable<Integer> sessionExpiry) {
-        this.sessionExpiry = sessionExpiry;
-        }
+    return this;
+  }
 
-          public void setSessionExpiry(@javax.annotation.Nullable Integer sessionExpiry) {
-            this.sessionExpiry = JsonNullable.<Integer>of(sessionExpiry);
-        }
+  /**
+   * Redirect to this URL post completion
+   * @return returnUrl
+   */
+  @javax.annotation.Nullable
+  @JsonIgnore
 
-        public PaymentMethodCollectLinkRequest returnUrl(@javax.annotation.Nullable String returnUrl) {
-        this.returnUrl = JsonNullable.<String>of(returnUrl);
-        
-        return this;
-        }
+  public String getReturnUrl() {
+        return returnUrl.orElse(null);
+  }
 
-    /**
-        * Redirect to this URL post completion
-    * @return returnUrl
-    */
-    @javax.annotation.Nullable
-        @JsonIgnore
-    
-    public String getReturnUrl() {
-                return returnUrl.orElse(null);
-    }
-
-          @JsonProperty(JSON_PROPERTY_RETURN_URL)
+  @JsonProperty(JSON_PROPERTY_RETURN_URL)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-        public JsonNullable<String> getReturnUrl_JsonNullable() {
-        return returnUrl;
-        }
+  public JsonNullable<String> getReturnUrl_JsonNullable() {
+    return returnUrl;
+  }
+  
+  @JsonProperty(JSON_PROPERTY_RETURN_URL)
+  public void setReturnUrl_JsonNullable(JsonNullable<String> returnUrl) {
+    this.returnUrl = returnUrl;
+  }
+
+  public void setReturnUrl(@javax.annotation.Nullable String returnUrl) {
+    this.returnUrl = JsonNullable.<String>of(returnUrl);
+  }
+
+  public PaymentMethodCollectLinkRequest enabledPaymentMethods(@javax.annotation.Nullable List<EnabledPaymentMethod> enabledPaymentMethods) {
+    this.enabledPaymentMethods = JsonNullable.<List<EnabledPaymentMethod>>of(enabledPaymentMethods);
     
-        @JsonProperty(JSON_PROPERTY_RETURN_URL)
-        public void setReturnUrl_JsonNullable(JsonNullable<String> returnUrl) {
-        this.returnUrl = returnUrl;
-        }
+    return this;
+  }
 
-          public void setReturnUrl(@javax.annotation.Nullable String returnUrl) {
-            this.returnUrl = JsonNullable.<String>of(returnUrl);
-        }
-
-        public PaymentMethodCollectLinkRequest enabledPaymentMethods(@javax.annotation.Nullable List<EnabledPaymentMethod> enabledPaymentMethods) {
-        this.enabledPaymentMethods = JsonNullable.<List<EnabledPaymentMethod>>of(enabledPaymentMethods);
-        
-        return this;
-        }
-
-            public PaymentMethodCollectLinkRequest addEnabledPaymentMethodsItem(EnabledPaymentMethod enabledPaymentMethodsItem) {
-                if (this.enabledPaymentMethods == null || !this.enabledPaymentMethods.isPresent()) {
-                this.enabledPaymentMethods = JsonNullable.<List<EnabledPaymentMethod>>of(new ArrayList<>());
-                }
-                try {
-                this.enabledPaymentMethods.get().add(enabledPaymentMethodsItem);
-                } catch (java.util.NoSuchElementException e) {
-                // this can never happen, as we make sure above that the value is present
-                }
-                return this;
-            }
-
-    /**
-        * List of payment methods shown on collect UI
-    * @return enabledPaymentMethods
-    */
-    @javax.annotation.Nullable
-        @JsonIgnore
-    
-    public List<EnabledPaymentMethod> getEnabledPaymentMethods() {
-                return enabledPaymentMethods.orElse(null);
+  public PaymentMethodCollectLinkRequest addEnabledPaymentMethodsItem(EnabledPaymentMethod enabledPaymentMethodsItem) {
+    if (this.enabledPaymentMethods == null || !this.enabledPaymentMethods.isPresent()) {
+      this.enabledPaymentMethods = JsonNullable.<List<EnabledPaymentMethod>>of(new ArrayList<>());
     }
+    try {
+      this.enabledPaymentMethods.get().add(enabledPaymentMethodsItem);
+    } catch (java.util.NoSuchElementException e) {
+      // this can never happen, as we make sure above that the value is present
+    }
+    return this;
+  }
 
-          @JsonProperty(JSON_PROPERTY_ENABLED_PAYMENT_METHODS)
+  /**
+   * List of payment methods shown on collect UI
+   * @return enabledPaymentMethods
+   */
+  @javax.annotation.Nullable
+  @JsonIgnore
+
+  public List<EnabledPaymentMethod> getEnabledPaymentMethods() {
+        return enabledPaymentMethods.orElse(null);
+  }
+
+  @JsonProperty(JSON_PROPERTY_ENABLED_PAYMENT_METHODS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-        public JsonNullable<List<EnabledPaymentMethod>> getEnabledPaymentMethods_JsonNullable() {
-        return enabledPaymentMethods;
-        }
-    
-        @JsonProperty(JSON_PROPERTY_ENABLED_PAYMENT_METHODS)
-        public void setEnabledPaymentMethods_JsonNullable(JsonNullable<List<EnabledPaymentMethod>> enabledPaymentMethods) {
-        this.enabledPaymentMethods = enabledPaymentMethods;
-        }
+  public JsonNullable<List<EnabledPaymentMethod>> getEnabledPaymentMethods_JsonNullable() {
+    return enabledPaymentMethods;
+  }
+  
+  @JsonProperty(JSON_PROPERTY_ENABLED_PAYMENT_METHODS)
+  public void setEnabledPaymentMethods_JsonNullable(JsonNullable<List<EnabledPaymentMethod>> enabledPaymentMethods) {
+    this.enabledPaymentMethods = enabledPaymentMethods;
+  }
 
-          public void setEnabledPaymentMethods(@javax.annotation.Nullable List<EnabledPaymentMethod> enabledPaymentMethods) {
-            this.enabledPaymentMethods = JsonNullable.<List<EnabledPaymentMethod>>of(enabledPaymentMethods);
-        }
+  public void setEnabledPaymentMethods(@javax.annotation.Nullable List<EnabledPaymentMethod> enabledPaymentMethods) {
+    this.enabledPaymentMethods = JsonNullable.<List<EnabledPaymentMethod>>of(enabledPaymentMethods);
+  }
 
-@Override
-public boolean equals(Object o) {
+  @Override
+  public boolean equals(Object o) {
     if (this == o) {
-    return true;
+      return true;
     }
     if (o == null || getClass() != o.getClass()) {
-    return false;
+      return false;
     }
-        PaymentMethodCollectLinkRequest paymentMethodCollectLinkRequest = (PaymentMethodCollectLinkRequest) o;
-        return equalsNullable(this.logo, paymentMethodCollectLinkRequest.logo) &&
+    PaymentMethodCollectLinkRequest paymentMethodCollectLinkRequest = (PaymentMethodCollectLinkRequest) o;
+    return equalsNullable(this.logo, paymentMethodCollectLinkRequest.logo) &&
         equalsNullable(this.merchantName, paymentMethodCollectLinkRequest.merchantName) &&
         equalsNullable(this.theme, paymentMethodCollectLinkRequest.theme) &&
         equalsNullable(this.pmCollectLinkId, paymentMethodCollectLinkRequest.pmCollectLinkId) &&
@@ -370,165 +370,165 @@ public boolean equals(Object o) {
         equalsNullable(this.sessionExpiry, paymentMethodCollectLinkRequest.sessionExpiry) &&
         equalsNullable(this.returnUrl, paymentMethodCollectLinkRequest.returnUrl) &&
         equalsNullable(this.enabledPaymentMethods, paymentMethodCollectLinkRequest.enabledPaymentMethods);
-}
+  }
 
-    private static <T> boolean equalsNullable(JsonNullable<T> a, JsonNullable<T> b) {
-        return a == b || (a != null && b != null && a.isPresent() && b.isPresent() && Objects.deepEquals(a.get(), b.get()));
-        }
+  private static <T> boolean equalsNullable(JsonNullable<T> a, JsonNullable<T> b) {
+    return a == b || (a != null && b != null && a.isPresent() && b.isPresent() && Objects.deepEquals(a.get(), b.get()));
+  }
 
-    @Override
-    public int hashCode() {
-        return Objects.hash(hashCodeNullable(logo), hashCodeNullable(merchantName), hashCodeNullable(theme), hashCodeNullable(pmCollectLinkId), customerId, hashCodeNullable(sessionExpiry), hashCodeNullable(returnUrl), hashCodeNullable(enabledPaymentMethods));
+  @Override
+  public int hashCode() {
+    return Objects.hash(hashCodeNullable(logo), hashCodeNullable(merchantName), hashCodeNullable(theme), hashCodeNullable(pmCollectLinkId), customerId, hashCodeNullable(sessionExpiry), hashCodeNullable(returnUrl), hashCodeNullable(enabledPaymentMethods));
+  }
+
+  private static <T> int hashCodeNullable(JsonNullable<T> a) {
+    if (a == null) {
+      return 1;
     }
+    return a.isPresent() ? Arrays.deepHashCode(new Object[]{a.get()}) : 31;
+  }
 
-        private static <T> int hashCodeNullable(JsonNullable<T> a) {
-        if (a == null) {
-        return 1;
-        }
-        return a.isPresent() ? Arrays.deepHashCode(new Object[]{a.get()}) : 31;
-        }
-
-    @Override
-    public String toString() {
+  @Override
+  public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class PaymentMethodCollectLinkRequest {\n");
-        sb.append("    logo: ").append(toIndentedString(logo)).append("\n");
-        sb.append("    merchantName: ").append(toIndentedString(merchantName)).append("\n");
-        sb.append("    theme: ").append(toIndentedString(theme)).append("\n");
-        sb.append("    pmCollectLinkId: ").append(toIndentedString(pmCollectLinkId)).append("\n");
-        sb.append("    customerId: ").append(toIndentedString(customerId)).append("\n");
-        sb.append("    sessionExpiry: ").append(toIndentedString(sessionExpiry)).append("\n");
-        sb.append("    returnUrl: ").append(toIndentedString(returnUrl)).append("\n");
-        sb.append("    enabledPaymentMethods: ").append(toIndentedString(enabledPaymentMethods)).append("\n");
+    sb.append("    logo: ").append(toIndentedString(logo)).append("\n");
+    sb.append("    merchantName: ").append(toIndentedString(merchantName)).append("\n");
+    sb.append("    theme: ").append(toIndentedString(theme)).append("\n");
+    sb.append("    pmCollectLinkId: ").append(toIndentedString(pmCollectLinkId)).append("\n");
+    sb.append("    customerId: ").append(toIndentedString(customerId)).append("\n");
+    sb.append("    sessionExpiry: ").append(toIndentedString(sessionExpiry)).append("\n");
+    sb.append("    returnUrl: ").append(toIndentedString(returnUrl)).append("\n");
+    sb.append("    enabledPaymentMethods: ").append(toIndentedString(enabledPaymentMethods)).append("\n");
     sb.append("}");
     return sb.toString();
-    }
+  }
 
-    /**
-    * Convert the given object to string with each line indented by 4 spaces
-    * (except the first line).
-    */
-    private String toIndentedString(Object o) {
+  /**
+   * Convert the given object to string with each line indented by 4 spaces
+   * (except the first line).
+   */
+  private String toIndentedString(Object o) {
     if (o == null) {
-    return "null";
+      return "null";
     }
     return o.toString().replace("\n", "\n    ");
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @return URL query string
+   */
+  public String toUrlQueryString() {
+    return toUrlQueryString(null);
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @param prefix prefix of the query string
+   * @return URL query string
+   */
+  public String toUrlQueryString(String prefix) {
+    String suffix = "";
+    String containerSuffix = "";
+    String containerPrefix = "";
+    if (prefix == null) {
+      // style=form, explode=true, e.g. /pet?name=cat&type=manx
+      prefix = "";
+    } else {
+      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+      prefix = prefix + "[";
+      suffix = "]";
+      containerSuffix = "]";
+      containerPrefix = "[";
     }
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @return URL query string
-        */
-        public String toUrlQueryString() {
-        return toUrlQueryString(null);
-        }
+    StringJoiner joiner = new StringJoiner("&");
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @param prefix prefix of the query string
-        * @return URL query string
-        */
-        public String toUrlQueryString(String prefix) {
-        String suffix = "";
-        String containerSuffix = "";
-        String containerPrefix = "";
-        if (prefix == null) {
-        // style=form, explode=true, e.g. /pet?name=cat&type=manx
-        prefix = "";
-        } else {
-        // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
-        prefix = prefix + "[";
-        suffix = "]";
-        containerSuffix = "]";
-        containerPrefix = "[";
-        }
-
-        StringJoiner joiner = new StringJoiner("&");
-
-            // add `logo` to the URL query string
-                        if (getLogo() != null) {
-                        try {
-                        joiner.add(String.format("%slogo%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getLogo()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-            // add `merchant_name` to the URL query string
-                        if (getMerchantName() != null) {
-                        try {
-                        joiner.add(String.format("%smerchant_name%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getMerchantName()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-            // add `theme` to the URL query string
-                        if (getTheme() != null) {
-                        try {
-                        joiner.add(String.format("%stheme%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getTheme()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-            // add `pm_collect_link_id` to the URL query string
-                        if (getPmCollectLinkId() != null) {
-                        try {
-                        joiner.add(String.format("%spm_collect_link_id%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getPmCollectLinkId()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-            // add `customer_id` to the URL query string
-                        if (getCustomerId() != null) {
-                        try {
-                        joiner.add(String.format("%scustomer_id%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCustomerId()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-            // add `session_expiry` to the URL query string
-                        if (getSessionExpiry() != null) {
-                        try {
-                        joiner.add(String.format("%ssession_expiry%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getSessionExpiry()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-            // add `return_url` to the URL query string
-                        if (getReturnUrl() != null) {
-                        try {
-                        joiner.add(String.format("%sreturn_url%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getReturnUrl()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-            // add `enabled_payment_methods` to the URL query string
-                            if (getEnabledPaymentMethods() != null) {
-                            for (int i = 0; i < getEnabledPaymentMethods().size(); i++) {
-                            if (getEnabledPaymentMethods().get(i) != null) {
-                            joiner.add(getEnabledPaymentMethods().get(i).toUrlQueryString(String.format("%senabled_payment_methods%s%s", prefix, suffix,
-                            "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix))));
-                            }
-                            }
-                            }
-
-        return joiner.toString();
-        }
-
+    // add `logo` to the URL query string
+    if (getLogo() != null) {
+      try {
+        joiner.add(String.format("%slogo%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getLogo()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
     }
+
+    // add `merchant_name` to the URL query string
+    if (getMerchantName() != null) {
+      try {
+        joiner.add(String.format("%smerchant_name%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getMerchantName()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `theme` to the URL query string
+    if (getTheme() != null) {
+      try {
+        joiner.add(String.format("%stheme%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getTheme()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `pm_collect_link_id` to the URL query string
+    if (getPmCollectLinkId() != null) {
+      try {
+        joiner.add(String.format("%spm_collect_link_id%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getPmCollectLinkId()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `customer_id` to the URL query string
+    if (getCustomerId() != null) {
+      try {
+        joiner.add(String.format("%scustomer_id%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCustomerId()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `session_expiry` to the URL query string
+    if (getSessionExpiry() != null) {
+      try {
+        joiner.add(String.format("%ssession_expiry%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getSessionExpiry()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `return_url` to the URL query string
+    if (getReturnUrl() != null) {
+      try {
+        joiner.add(String.format("%sreturn_url%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getReturnUrl()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `enabled_payment_methods` to the URL query string
+    if (getEnabledPaymentMethods() != null) {
+      for (int i = 0; i < getEnabledPaymentMethods().size(); i++) {
+        if (getEnabledPaymentMethods().get(i) != null) {
+          joiner.add(getEnabledPaymentMethods().get(i).toUrlQueryString(String.format("%senabled_payment_methods%s%s", prefix, suffix,
+              "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix))));
+        }
+      }
+    }
+
+    return joiner.toString();
+  }
+
+}
 

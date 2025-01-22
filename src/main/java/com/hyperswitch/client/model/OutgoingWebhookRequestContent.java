@@ -31,182 +31,182 @@ import java.net.URLEncoder;
 import java.util.StringJoiner;
 
 /**
-* The request information (headers and body) sent in the webhook.
-*/
-    @JsonPropertyOrder({
-        OutgoingWebhookRequestContent.JSON_PROPERTY_BODY,
-        OutgoingWebhookRequestContent.JSON_PROPERTY_HEADERS
-    })
+ * The request information (headers and body) sent in the webhook.
+ */
+@JsonPropertyOrder({
+  OutgoingWebhookRequestContent.JSON_PROPERTY_BODY,
+  OutgoingWebhookRequestContent.JSON_PROPERTY_HEADERS
+})
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class OutgoingWebhookRequestContent {
-        public static final String JSON_PROPERTY_BODY = "body";
-    @javax.annotation.Nonnull
-            private String body;
+  public static final String JSON_PROPERTY_BODY = "body";
+  @javax.annotation.Nonnull
+  private String body;
 
-        public static final String JSON_PROPERTY_HEADERS = "headers";
-    @javax.annotation.Nonnull
-            private List<List<OutgoingWebhookRequestContentHeadersInnerInner>> headers = new ArrayList<>();
+  public static final String JSON_PROPERTY_HEADERS = "headers";
+  @javax.annotation.Nonnull
+  private List<List<OutgoingWebhookRequestContentHeadersInnerInner>> headers = new ArrayList<>();
 
-public OutgoingWebhookRequestContent() {
-}
+  public OutgoingWebhookRequestContent() {
+  }
 
-        public OutgoingWebhookRequestContent body(@javax.annotation.Nonnull String body) {
-        
-        this.body = body;
-        return this;
-        }
+  public OutgoingWebhookRequestContent body(@javax.annotation.Nonnull String body) {
+    
+    this.body = body;
+    return this;
+  }
 
-    /**
-        * The request body sent in the webhook.
-    * @return body
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_BODY)
+  /**
+   * The request body sent in the webhook.
+   * @return body
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_BODY)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public String getBody() {
-        return body;
-    }
+  public String getBody() {
+    return body;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_BODY)
+  @JsonProperty(JSON_PROPERTY_BODY)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setBody(@javax.annotation.Nonnull String body) {
-            this.body = body;
-        }
+    this.body = body;
+  }
 
-        public OutgoingWebhookRequestContent headers(@javax.annotation.Nonnull List<List<OutgoingWebhookRequestContentHeadersInnerInner>> headers) {
-        
-        this.headers = headers;
-        return this;
-        }
+  public OutgoingWebhookRequestContent headers(@javax.annotation.Nonnull List<List<OutgoingWebhookRequestContentHeadersInnerInner>> headers) {
+    
+    this.headers = headers;
+    return this;
+  }
 
-            public OutgoingWebhookRequestContent addHeadersItem(List<OutgoingWebhookRequestContentHeadersInnerInner> headersItem) {
-                if (this.headers == null) {
-                this.headers = new ArrayList<>();
-                }
-                this.headers.add(headersItem);
-                return this;
-            }
+  public OutgoingWebhookRequestContent addHeadersItem(List<OutgoingWebhookRequestContentHeadersInnerInner> headersItem) {
+    if (this.headers == null) {
+      this.headers = new ArrayList<>();
+    }
+    this.headers.add(headersItem);
+    return this;
+  }
 
-    /**
-        * The request headers sent in the webhook.
-    * @return headers
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_HEADERS)
+  /**
+   * The request headers sent in the webhook.
+   * @return headers
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_HEADERS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public List<List<OutgoingWebhookRequestContentHeadersInnerInner>> getHeaders() {
-        return headers;
-    }
+  public List<List<OutgoingWebhookRequestContentHeadersInnerInner>> getHeaders() {
+    return headers;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_HEADERS)
+  @JsonProperty(JSON_PROPERTY_HEADERS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setHeaders(@javax.annotation.Nonnull List<List<OutgoingWebhookRequestContentHeadersInnerInner>> headers) {
-            this.headers = headers;
-        }
+    this.headers = headers;
+  }
 
-@Override
-public boolean equals(Object o) {
+  @Override
+  public boolean equals(Object o) {
     if (this == o) {
-    return true;
+      return true;
     }
     if (o == null || getClass() != o.getClass()) {
-    return false;
+      return false;
     }
-        OutgoingWebhookRequestContent outgoingWebhookRequestContent = (OutgoingWebhookRequestContent) o;
-        return Objects.equals(this.body, outgoingWebhookRequestContent.body) &&
+    OutgoingWebhookRequestContent outgoingWebhookRequestContent = (OutgoingWebhookRequestContent) o;
+    return Objects.equals(this.body, outgoingWebhookRequestContent.body) &&
         Objects.equals(this.headers, outgoingWebhookRequestContent.headers);
-}
+  }
 
-    @Override
-    public int hashCode() {
-        return Objects.hash(body, headers);
-    }
+  @Override
+  public int hashCode() {
+    return Objects.hash(body, headers);
+  }
 
-    @Override
-    public String toString() {
+  @Override
+  public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class OutgoingWebhookRequestContent {\n");
-        sb.append("    body: ").append(toIndentedString(body)).append("\n");
-        sb.append("    headers: ").append(toIndentedString(headers)).append("\n");
+    sb.append("    body: ").append(toIndentedString(body)).append("\n");
+    sb.append("    headers: ").append(toIndentedString(headers)).append("\n");
     sb.append("}");
     return sb.toString();
-    }
+  }
 
-    /**
-    * Convert the given object to string with each line indented by 4 spaces
-    * (except the first line).
-    */
-    private String toIndentedString(Object o) {
+  /**
+   * Convert the given object to string with each line indented by 4 spaces
+   * (except the first line).
+   */
+  private String toIndentedString(Object o) {
     if (o == null) {
-    return "null";
+      return "null";
     }
     return o.toString().replace("\n", "\n    ");
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @return URL query string
+   */
+  public String toUrlQueryString() {
+    return toUrlQueryString(null);
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @param prefix prefix of the query string
+   * @return URL query string
+   */
+  public String toUrlQueryString(String prefix) {
+    String suffix = "";
+    String containerSuffix = "";
+    String containerPrefix = "";
+    if (prefix == null) {
+      // style=form, explode=true, e.g. /pet?name=cat&type=manx
+      prefix = "";
+    } else {
+      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+      prefix = prefix + "[";
+      suffix = "]";
+      containerSuffix = "]";
+      containerPrefix = "[";
     }
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @return URL query string
-        */
-        public String toUrlQueryString() {
-        return toUrlQueryString(null);
-        }
+    StringJoiner joiner = new StringJoiner("&");
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @param prefix prefix of the query string
-        * @return URL query string
-        */
-        public String toUrlQueryString(String prefix) {
-        String suffix = "";
-        String containerSuffix = "";
-        String containerPrefix = "";
-        if (prefix == null) {
-        // style=form, explode=true, e.g. /pet?name=cat&type=manx
-        prefix = "";
-        } else {
-        // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
-        prefix = prefix + "[";
-        suffix = "]";
-        containerSuffix = "]";
-        containerPrefix = "[";
-        }
-
-        StringJoiner joiner = new StringJoiner("&");
-
-            // add `body` to the URL query string
-                        if (getBody() != null) {
-                        try {
-                        joiner.add(String.format("%sbody%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getBody()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-            // add `headers` to the URL query string
-                            if (getHeaders() != null) {
-                            for (int i = 0; i < getHeaders().size(); i++) {
-                            if (getHeaders().get(i) != null) {
-                            try {
-                            joiner.add(String.format("%sheaders%s%s=%s", prefix, suffix,
-                            "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix),
-                            URLEncoder.encode(String.valueOf(getHeaders().get(i)), "UTF-8").replaceAll("\\+", "%20")));
-                            } catch (UnsupportedEncodingException e) {
-                            // Should never happen, UTF-8 is always supported
-                            throw new RuntimeException(e);
-                            }
-                            }
-                            }
-                            }
-
-        return joiner.toString();
-        }
-
+    // add `body` to the URL query string
+    if (getBody() != null) {
+      try {
+        joiner.add(String.format("%sbody%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getBody()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
     }
+
+    // add `headers` to the URL query string
+    if (getHeaders() != null) {
+      for (int i = 0; i < getHeaders().size(); i++) {
+        if (getHeaders().get(i) != null) {
+          try {
+            joiner.add(String.format("%sheaders%s%s=%s", prefix, suffix,
+                "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix),
+                URLEncoder.encode(String.valueOf(getHeaders().get(i)), "UTF-8").replaceAll("\\+", "%20")));
+          } catch (UnsupportedEncodingException e) {
+            // Should never happen, UTF-8 is always supported
+            throw new RuntimeException(e);
+          }
+        }
+      }
+    }
+
+    return joiner.toString();
+  }
+
+}
 

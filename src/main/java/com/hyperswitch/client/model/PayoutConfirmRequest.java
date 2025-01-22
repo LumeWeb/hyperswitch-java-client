@@ -45,1107 +45,1107 @@ import java.net.URLEncoder;
 import java.util.StringJoiner;
 
 /**
-* PayoutConfirmRequest
-*/
-    @JsonPropertyOrder({
-        PayoutConfirmRequest.JSON_PROPERTY_AMOUNT,
-        PayoutConfirmRequest.JSON_PROPERTY_CURRENCY,
-        PayoutConfirmRequest.JSON_PROPERTY_ROUTING,
-        PayoutConfirmRequest.JSON_PROPERTY_CONNECTOR,
-        PayoutConfirmRequest.JSON_PROPERTY_PAYOUT_TYPE,
-        PayoutConfirmRequest.JSON_PROPERTY_PAYOUT_METHOD_DATA,
-        PayoutConfirmRequest.JSON_PROPERTY_BILLING,
-        PayoutConfirmRequest.JSON_PROPERTY_AUTO_FULFILL,
-        PayoutConfirmRequest.JSON_PROPERTY_CUSTOMER_ID,
-        PayoutConfirmRequest.JSON_PROPERTY_CUSTOMER,
-        PayoutConfirmRequest.JSON_PROPERTY_CLIENT_SECRET,
-        PayoutConfirmRequest.JSON_PROPERTY_RETURN_URL,
-        PayoutConfirmRequest.JSON_PROPERTY_BUSINESS_COUNTRY,
-        PayoutConfirmRequest.JSON_PROPERTY_BUSINESS_LABEL,
-        PayoutConfirmRequest.JSON_PROPERTY_DESCRIPTION,
-        PayoutConfirmRequest.JSON_PROPERTY_ENTITY_TYPE,
-        PayoutConfirmRequest.JSON_PROPERTY_RECURRING,
-        PayoutConfirmRequest.JSON_PROPERTY_METADATA,
-        PayoutConfirmRequest.JSON_PROPERTY_PAYOUT_TOKEN,
-        PayoutConfirmRequest.JSON_PROPERTY_PROFILE_ID,
-        PayoutConfirmRequest.JSON_PROPERTY_PRIORITY,
-        PayoutConfirmRequest.JSON_PROPERTY_PAYOUT_LINK,
-        PayoutConfirmRequest.JSON_PROPERTY_PAYOUT_LINK_CONFIG,
-        PayoutConfirmRequest.JSON_PROPERTY_SESSION_EXPIRY,
-        PayoutConfirmRequest.JSON_PROPERTY_EMAIL,
-        PayoutConfirmRequest.JSON_PROPERTY_NAME,
-        PayoutConfirmRequest.JSON_PROPERTY_PHONE,
-        PayoutConfirmRequest.JSON_PROPERTY_PHONE_COUNTRY_CODE
-    })
+ * PayoutConfirmRequest
+ */
+@JsonPropertyOrder({
+  PayoutConfirmRequest.JSON_PROPERTY_AMOUNT,
+  PayoutConfirmRequest.JSON_PROPERTY_CURRENCY,
+  PayoutConfirmRequest.JSON_PROPERTY_ROUTING,
+  PayoutConfirmRequest.JSON_PROPERTY_CONNECTOR,
+  PayoutConfirmRequest.JSON_PROPERTY_PAYOUT_TYPE,
+  PayoutConfirmRequest.JSON_PROPERTY_PAYOUT_METHOD_DATA,
+  PayoutConfirmRequest.JSON_PROPERTY_BILLING,
+  PayoutConfirmRequest.JSON_PROPERTY_AUTO_FULFILL,
+  PayoutConfirmRequest.JSON_PROPERTY_CUSTOMER_ID,
+  PayoutConfirmRequest.JSON_PROPERTY_CUSTOMER,
+  PayoutConfirmRequest.JSON_PROPERTY_CLIENT_SECRET,
+  PayoutConfirmRequest.JSON_PROPERTY_RETURN_URL,
+  PayoutConfirmRequest.JSON_PROPERTY_BUSINESS_COUNTRY,
+  PayoutConfirmRequest.JSON_PROPERTY_BUSINESS_LABEL,
+  PayoutConfirmRequest.JSON_PROPERTY_DESCRIPTION,
+  PayoutConfirmRequest.JSON_PROPERTY_ENTITY_TYPE,
+  PayoutConfirmRequest.JSON_PROPERTY_RECURRING,
+  PayoutConfirmRequest.JSON_PROPERTY_METADATA,
+  PayoutConfirmRequest.JSON_PROPERTY_PAYOUT_TOKEN,
+  PayoutConfirmRequest.JSON_PROPERTY_PROFILE_ID,
+  PayoutConfirmRequest.JSON_PROPERTY_PRIORITY,
+  PayoutConfirmRequest.JSON_PROPERTY_PAYOUT_LINK,
+  PayoutConfirmRequest.JSON_PROPERTY_PAYOUT_LINK_CONFIG,
+  PayoutConfirmRequest.JSON_PROPERTY_SESSION_EXPIRY,
+  PayoutConfirmRequest.JSON_PROPERTY_EMAIL,
+  PayoutConfirmRequest.JSON_PROPERTY_NAME,
+  PayoutConfirmRequest.JSON_PROPERTY_PHONE,
+  PayoutConfirmRequest.JSON_PROPERTY_PHONE_COUNTRY_CODE
+})
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class PayoutConfirmRequest {
-        public static final String JSON_PROPERTY_AMOUNT = "amount";
-    @javax.annotation.Nullable
-            private JsonNullable<Long> amount = JsonNullable.<Long>undefined();
+  public static final String JSON_PROPERTY_AMOUNT = "amount";
+  @javax.annotation.Nullable
+  private JsonNullable<Long> amount = JsonNullable.<Long>undefined();
 
-        public static final String JSON_PROPERTY_CURRENCY = "currency";
-    @javax.annotation.Nullable
-            private JsonNullable<Currency> currency = JsonNullable.<Currency>undefined();
+  public static final String JSON_PROPERTY_CURRENCY = "currency";
+  @javax.annotation.Nullable
+  private JsonNullable<Currency> currency = JsonNullable.<Currency>undefined();
 
-        public static final String JSON_PROPERTY_ROUTING = "routing";
-    @javax.annotation.Nullable
-            private JsonNullable<RoutingAlgorithm> routing = JsonNullable.<RoutingAlgorithm>undefined();
+  public static final String JSON_PROPERTY_ROUTING = "routing";
+  @javax.annotation.Nullable
+  private JsonNullable<RoutingAlgorithm> routing = JsonNullable.<RoutingAlgorithm>undefined();
 
-        public static final String JSON_PROPERTY_CONNECTOR = "connector";
-    @javax.annotation.Nullable
-            private JsonNullable<List<PayoutConnectors>> connector = JsonNullable.<List<PayoutConnectors>>undefined();
+  public static final String JSON_PROPERTY_CONNECTOR = "connector";
+  @javax.annotation.Nullable
+  private JsonNullable<List<PayoutConnectors>> connector = JsonNullable.<List<PayoutConnectors>>undefined();
 
-        public static final String JSON_PROPERTY_PAYOUT_TYPE = "payout_type";
-    @javax.annotation.Nullable
-            private JsonNullable<PayoutType> payoutType = JsonNullable.<PayoutType>undefined();
+  public static final String JSON_PROPERTY_PAYOUT_TYPE = "payout_type";
+  @javax.annotation.Nullable
+  private JsonNullable<PayoutType> payoutType = JsonNullable.<PayoutType>undefined();
 
-        public static final String JSON_PROPERTY_PAYOUT_METHOD_DATA = "payout_method_data";
-    @javax.annotation.Nullable
-            private JsonNullable<PayoutMethodData> payoutMethodData = JsonNullable.<PayoutMethodData>undefined();
+  public static final String JSON_PROPERTY_PAYOUT_METHOD_DATA = "payout_method_data";
+  @javax.annotation.Nullable
+  private JsonNullable<PayoutMethodData> payoutMethodData = JsonNullable.<PayoutMethodData>undefined();
 
-        public static final String JSON_PROPERTY_BILLING = "billing";
-    @javax.annotation.Nullable
-            private JsonNullable<Address> billing = JsonNullable.<Address>undefined();
+  public static final String JSON_PROPERTY_BILLING = "billing";
+  @javax.annotation.Nullable
+  private JsonNullable<Address> billing = JsonNullable.<Address>undefined();
 
-        public static final String JSON_PROPERTY_AUTO_FULFILL = "auto_fulfill";
-    @javax.annotation.Nullable
-            private JsonNullable<Boolean> autoFulfill = JsonNullable.<Boolean>of(false);
+  public static final String JSON_PROPERTY_AUTO_FULFILL = "auto_fulfill";
+  @javax.annotation.Nullable
+  private JsonNullable<Boolean> autoFulfill = JsonNullable.<Boolean>of(false);
 
-        public static final String JSON_PROPERTY_CUSTOMER_ID = "customer_id";
-    @javax.annotation.Nullable
-            private JsonNullable<String> customerId = JsonNullable.<String>undefined();
+  public static final String JSON_PROPERTY_CUSTOMER_ID = "customer_id";
+  @javax.annotation.Nullable
+  private JsonNullable<String> customerId = JsonNullable.<String>undefined();
 
-        public static final String JSON_PROPERTY_CUSTOMER = "customer";
-    @javax.annotation.Nullable
-            private JsonNullable<CustomerDetails> customer = JsonNullable.<CustomerDetails>undefined();
+  public static final String JSON_PROPERTY_CUSTOMER = "customer";
+  @javax.annotation.Nullable
+  private JsonNullable<CustomerDetails> customer = JsonNullable.<CustomerDetails>undefined();
 
-        public static final String JSON_PROPERTY_CLIENT_SECRET = "client_secret";
-    @javax.annotation.Nonnull
-            private String clientSecret;
+  public static final String JSON_PROPERTY_CLIENT_SECRET = "client_secret";
+  @javax.annotation.Nonnull
+  private String clientSecret;
 
-        public static final String JSON_PROPERTY_RETURN_URL = "return_url";
-    @javax.annotation.Nullable
-            private JsonNullable<String> returnUrl = JsonNullable.<String>undefined();
+  public static final String JSON_PROPERTY_RETURN_URL = "return_url";
+  @javax.annotation.Nullable
+  private JsonNullable<String> returnUrl = JsonNullable.<String>undefined();
 
-        public static final String JSON_PROPERTY_BUSINESS_COUNTRY = "business_country";
-    @javax.annotation.Nullable
-            private JsonNullable<CountryAlpha2> businessCountry = JsonNullable.<CountryAlpha2>undefined();
+  public static final String JSON_PROPERTY_BUSINESS_COUNTRY = "business_country";
+  @javax.annotation.Nullable
+  private JsonNullable<CountryAlpha2> businessCountry = JsonNullable.<CountryAlpha2>undefined();
 
-        public static final String JSON_PROPERTY_BUSINESS_LABEL = "business_label";
-    @javax.annotation.Nullable
-            private JsonNullable<String> businessLabel = JsonNullable.<String>undefined();
+  public static final String JSON_PROPERTY_BUSINESS_LABEL = "business_label";
+  @javax.annotation.Nullable
+  private JsonNullable<String> businessLabel = JsonNullable.<String>undefined();
 
-        public static final String JSON_PROPERTY_DESCRIPTION = "description";
-    @javax.annotation.Nullable
-            private JsonNullable<String> description = JsonNullable.<String>undefined();
+  public static final String JSON_PROPERTY_DESCRIPTION = "description";
+  @javax.annotation.Nullable
+  private JsonNullable<String> description = JsonNullable.<String>undefined();
 
-        public static final String JSON_PROPERTY_ENTITY_TYPE = "entity_type";
-    @javax.annotation.Nullable
-            private JsonNullable<PayoutEntityType> entityType = JsonNullable.<PayoutEntityType>undefined();
+  public static final String JSON_PROPERTY_ENTITY_TYPE = "entity_type";
+  @javax.annotation.Nullable
+  private JsonNullable<PayoutEntityType> entityType = JsonNullable.<PayoutEntityType>undefined();
 
-        public static final String JSON_PROPERTY_RECURRING = "recurring";
-    @javax.annotation.Nullable
-            private JsonNullable<Boolean> recurring = JsonNullable.<Boolean>of(false);
+  public static final String JSON_PROPERTY_RECURRING = "recurring";
+  @javax.annotation.Nullable
+  private JsonNullable<Boolean> recurring = JsonNullable.<Boolean>of(false);
 
-        public static final String JSON_PROPERTY_METADATA = "metadata";
-    @javax.annotation.Nullable
-            private JsonNullable<Object> metadata = JsonNullable.<Object>undefined();
+  public static final String JSON_PROPERTY_METADATA = "metadata";
+  @javax.annotation.Nullable
+  private JsonNullable<Object> metadata = JsonNullable.<Object>undefined();
 
-        public static final String JSON_PROPERTY_PAYOUT_TOKEN = "payout_token";
-    @javax.annotation.Nullable
-            private JsonNullable<String> payoutToken = JsonNullable.<String>undefined();
+  public static final String JSON_PROPERTY_PAYOUT_TOKEN = "payout_token";
+  @javax.annotation.Nullable
+  private JsonNullable<String> payoutToken = JsonNullable.<String>undefined();
 
-        public static final String JSON_PROPERTY_PROFILE_ID = "profile_id";
-    @javax.annotation.Nullable
-            private JsonNullable<String> profileId = JsonNullable.<String>undefined();
+  public static final String JSON_PROPERTY_PROFILE_ID = "profile_id";
+  @javax.annotation.Nullable
+  private JsonNullable<String> profileId = JsonNullable.<String>undefined();
 
-        public static final String JSON_PROPERTY_PRIORITY = "priority";
-    @javax.annotation.Nullable
-            private JsonNullable<PayoutSendPriority> priority = JsonNullable.<PayoutSendPriority>undefined();
+  public static final String JSON_PROPERTY_PRIORITY = "priority";
+  @javax.annotation.Nullable
+  private JsonNullable<PayoutSendPriority> priority = JsonNullable.<PayoutSendPriority>undefined();
 
-        public static final String JSON_PROPERTY_PAYOUT_LINK = "payout_link";
-    @javax.annotation.Nullable
-            private JsonNullable<Boolean> payoutLink = JsonNullable.<Boolean>of(false);
+  public static final String JSON_PROPERTY_PAYOUT_LINK = "payout_link";
+  @javax.annotation.Nullable
+  private JsonNullable<Boolean> payoutLink = JsonNullable.<Boolean>of(false);
 
-        public static final String JSON_PROPERTY_PAYOUT_LINK_CONFIG = "payout_link_config";
-    @javax.annotation.Nullable
-            private JsonNullable<PayoutCreatePayoutLinkConfig> payoutLinkConfig = JsonNullable.<PayoutCreatePayoutLinkConfig>undefined();
+  public static final String JSON_PROPERTY_PAYOUT_LINK_CONFIG = "payout_link_config";
+  @javax.annotation.Nullable
+  private JsonNullable<PayoutCreatePayoutLinkConfig> payoutLinkConfig = JsonNullable.<PayoutCreatePayoutLinkConfig>undefined();
 
-        public static final String JSON_PROPERTY_SESSION_EXPIRY = "session_expiry";
-    @javax.annotation.Nullable
-            private JsonNullable<Integer> sessionExpiry = JsonNullable.<Integer>undefined();
+  public static final String JSON_PROPERTY_SESSION_EXPIRY = "session_expiry";
+  @javax.annotation.Nullable
+  private JsonNullable<Integer> sessionExpiry = JsonNullable.<Integer>undefined();
 
-        public static final String JSON_PROPERTY_EMAIL = "email";
-    @javax.annotation.Nullable
-            private JsonNullable<String> email = JsonNullable.<String>undefined();
+  public static final String JSON_PROPERTY_EMAIL = "email";
+  @javax.annotation.Nullable
+  private JsonNullable<String> email = JsonNullable.<String>undefined();
 
-        public static final String JSON_PROPERTY_NAME = "name";
-    @javax.annotation.Nullable
-            private JsonNullable<String> name = JsonNullable.<String>undefined();
+  public static final String JSON_PROPERTY_NAME = "name";
+  @javax.annotation.Nullable
+  private JsonNullable<String> name = JsonNullable.<String>undefined();
 
-        public static final String JSON_PROPERTY_PHONE = "phone";
-    @javax.annotation.Nullable
-            private JsonNullable<String> phone = JsonNullable.<String>undefined();
+  public static final String JSON_PROPERTY_PHONE = "phone";
+  @javax.annotation.Nullable
+  private JsonNullable<String> phone = JsonNullable.<String>undefined();
 
-        public static final String JSON_PROPERTY_PHONE_COUNTRY_CODE = "phone_country_code";
-    @javax.annotation.Nullable
-            private JsonNullable<String> phoneCountryCode = JsonNullable.<String>undefined();
+  public static final String JSON_PROPERTY_PHONE_COUNTRY_CODE = "phone_country_code";
+  @javax.annotation.Nullable
+  private JsonNullable<String> phoneCountryCode = JsonNullable.<String>undefined();
 
-public PayoutConfirmRequest() {
-}
+  public PayoutConfirmRequest() {
+  }
 
-        public PayoutConfirmRequest amount(@javax.annotation.Nullable Long amount) {
-        this.amount = JsonNullable.<Long>of(amount);
-        
-        return this;
-        }
-
-    /**
-        * The payout amount. Amount for the payout in lowest denomination of the currency. (i.e) in cents for USD denomination, in paisa for INR denomination etc.,
-        * minimum: 0
-    * @return amount
-    */
-    @javax.annotation.Nullable
-        @JsonIgnore
+  public PayoutConfirmRequest amount(@javax.annotation.Nullable Long amount) {
+    this.amount = JsonNullable.<Long>of(amount);
     
-    public Long getAmount() {
-                return amount.orElse(null);
-    }
+    return this;
+  }
 
-          @JsonProperty(JSON_PROPERTY_AMOUNT)
+  /**
+   * The payout amount. Amount for the payout in lowest denomination of the currency. (i.e) in cents for USD denomination, in paisa for INR denomination etc.,
+   * minimum: 0
+   * @return amount
+   */
+  @javax.annotation.Nullable
+  @JsonIgnore
+
+  public Long getAmount() {
+        return amount.orElse(null);
+  }
+
+  @JsonProperty(JSON_PROPERTY_AMOUNT)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-        public JsonNullable<Long> getAmount_JsonNullable() {
-        return amount;
-        }
+  public JsonNullable<Long> getAmount_JsonNullable() {
+    return amount;
+  }
+  
+  @JsonProperty(JSON_PROPERTY_AMOUNT)
+  public void setAmount_JsonNullable(JsonNullable<Long> amount) {
+    this.amount = amount;
+  }
+
+  public void setAmount(@javax.annotation.Nullable Long amount) {
+    this.amount = JsonNullable.<Long>of(amount);
+  }
+
+  public PayoutConfirmRequest currency(@javax.annotation.Nullable Currency currency) {
+    this.currency = JsonNullable.<Currency>of(currency);
     
-        @JsonProperty(JSON_PROPERTY_AMOUNT)
-        public void setAmount_JsonNullable(JsonNullable<Long> amount) {
-        this.amount = amount;
-        }
+    return this;
+  }
 
-          public void setAmount(@javax.annotation.Nullable Long amount) {
-            this.amount = JsonNullable.<Long>of(amount);
-        }
+  /**
+   * Get currency
+   * @return currency
+   */
+  @javax.annotation.Nullable
+  @JsonIgnore
 
-        public PayoutConfirmRequest currency(@javax.annotation.Nullable Currency currency) {
-        this.currency = JsonNullable.<Currency>of(currency);
-        
-        return this;
-        }
+  public Currency getCurrency() {
+        return currency.orElse(null);
+  }
 
-    /**
-        * Get currency
-    * @return currency
-    */
-    @javax.annotation.Nullable
-        @JsonIgnore
-    
-    public Currency getCurrency() {
-                return currency.orElse(null);
-    }
-
-          @JsonProperty(JSON_PROPERTY_CURRENCY)
+  @JsonProperty(JSON_PROPERTY_CURRENCY)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-        public JsonNullable<Currency> getCurrency_JsonNullable() {
-        return currency;
-        }
+  public JsonNullable<Currency> getCurrency_JsonNullable() {
+    return currency;
+  }
+  
+  @JsonProperty(JSON_PROPERTY_CURRENCY)
+  public void setCurrency_JsonNullable(JsonNullable<Currency> currency) {
+    this.currency = currency;
+  }
+
+  public void setCurrency(@javax.annotation.Nullable Currency currency) {
+    this.currency = JsonNullable.<Currency>of(currency);
+  }
+
+  public PayoutConfirmRequest routing(@javax.annotation.Nullable RoutingAlgorithm routing) {
+    this.routing = JsonNullable.<RoutingAlgorithm>of(routing);
     
-        @JsonProperty(JSON_PROPERTY_CURRENCY)
-        public void setCurrency_JsonNullable(JsonNullable<Currency> currency) {
-        this.currency = currency;
-        }
+    return this;
+  }
 
-          public void setCurrency(@javax.annotation.Nullable Currency currency) {
-            this.currency = JsonNullable.<Currency>of(currency);
-        }
+  /**
+   * Get routing
+   * @return routing
+   */
+  @javax.annotation.Nullable
+  @JsonIgnore
 
-        public PayoutConfirmRequest routing(@javax.annotation.Nullable RoutingAlgorithm routing) {
-        this.routing = JsonNullable.<RoutingAlgorithm>of(routing);
-        
-        return this;
-        }
+  public RoutingAlgorithm getRouting() {
+        return routing.orElse(null);
+  }
 
-    /**
-        * Get routing
-    * @return routing
-    */
-    @javax.annotation.Nullable
-        @JsonIgnore
-    
-    public RoutingAlgorithm getRouting() {
-                return routing.orElse(null);
-    }
-
-          @JsonProperty(JSON_PROPERTY_ROUTING)
+  @JsonProperty(JSON_PROPERTY_ROUTING)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-        public JsonNullable<RoutingAlgorithm> getRouting_JsonNullable() {
-        return routing;
-        }
+  public JsonNullable<RoutingAlgorithm> getRouting_JsonNullable() {
+    return routing;
+  }
+  
+  @JsonProperty(JSON_PROPERTY_ROUTING)
+  public void setRouting_JsonNullable(JsonNullable<RoutingAlgorithm> routing) {
+    this.routing = routing;
+  }
+
+  public void setRouting(@javax.annotation.Nullable RoutingAlgorithm routing) {
+    this.routing = JsonNullable.<RoutingAlgorithm>of(routing);
+  }
+
+  public PayoutConfirmRequest connector(@javax.annotation.Nullable List<PayoutConnectors> connector) {
+    this.connector = JsonNullable.<List<PayoutConnectors>>of(connector);
     
-        @JsonProperty(JSON_PROPERTY_ROUTING)
-        public void setRouting_JsonNullable(JsonNullable<RoutingAlgorithm> routing) {
-        this.routing = routing;
-        }
+    return this;
+  }
 
-          public void setRouting(@javax.annotation.Nullable RoutingAlgorithm routing) {
-            this.routing = JsonNullable.<RoutingAlgorithm>of(routing);
-        }
-
-        public PayoutConfirmRequest connector(@javax.annotation.Nullable List<PayoutConnectors> connector) {
-        this.connector = JsonNullable.<List<PayoutConnectors>>of(connector);
-        
-        return this;
-        }
-
-            public PayoutConfirmRequest addConnectorItem(PayoutConnectors connectorItem) {
-                if (this.connector == null || !this.connector.isPresent()) {
-                this.connector = JsonNullable.<List<PayoutConnectors>>of(new ArrayList<>());
-                }
-                try {
-                this.connector.get().add(connectorItem);
-                } catch (java.util.NoSuchElementException e) {
-                // this can never happen, as we make sure above that the value is present
-                }
-                return this;
-            }
-
-    /**
-        * This field allows the merchant to manually select a connector with which the payout can go through.
-    * @return connector
-    */
-    @javax.annotation.Nullable
-        @JsonIgnore
-    
-    public List<PayoutConnectors> getConnector() {
-                return connector.orElse(null);
+  public PayoutConfirmRequest addConnectorItem(PayoutConnectors connectorItem) {
+    if (this.connector == null || !this.connector.isPresent()) {
+      this.connector = JsonNullable.<List<PayoutConnectors>>of(new ArrayList<>());
     }
+    try {
+      this.connector.get().add(connectorItem);
+    } catch (java.util.NoSuchElementException e) {
+      // this can never happen, as we make sure above that the value is present
+    }
+    return this;
+  }
 
-          @JsonProperty(JSON_PROPERTY_CONNECTOR)
+  /**
+   * This field allows the merchant to manually select a connector with which the payout can go through.
+   * @return connector
+   */
+  @javax.annotation.Nullable
+  @JsonIgnore
+
+  public List<PayoutConnectors> getConnector() {
+        return connector.orElse(null);
+  }
+
+  @JsonProperty(JSON_PROPERTY_CONNECTOR)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-        public JsonNullable<List<PayoutConnectors>> getConnector_JsonNullable() {
-        return connector;
-        }
+  public JsonNullable<List<PayoutConnectors>> getConnector_JsonNullable() {
+    return connector;
+  }
+  
+  @JsonProperty(JSON_PROPERTY_CONNECTOR)
+  public void setConnector_JsonNullable(JsonNullable<List<PayoutConnectors>> connector) {
+    this.connector = connector;
+  }
+
+  public void setConnector(@javax.annotation.Nullable List<PayoutConnectors> connector) {
+    this.connector = JsonNullable.<List<PayoutConnectors>>of(connector);
+  }
+
+  public PayoutConfirmRequest payoutType(@javax.annotation.Nullable PayoutType payoutType) {
+    this.payoutType = JsonNullable.<PayoutType>of(payoutType);
     
-        @JsonProperty(JSON_PROPERTY_CONNECTOR)
-        public void setConnector_JsonNullable(JsonNullable<List<PayoutConnectors>> connector) {
-        this.connector = connector;
-        }
+    return this;
+  }
 
-          public void setConnector(@javax.annotation.Nullable List<PayoutConnectors> connector) {
-            this.connector = JsonNullable.<List<PayoutConnectors>>of(connector);
-        }
+  /**
+   * Get payoutType
+   * @return payoutType
+   */
+  @javax.annotation.Nullable
+  @JsonIgnore
 
-        public PayoutConfirmRequest payoutType(@javax.annotation.Nullable PayoutType payoutType) {
-        this.payoutType = JsonNullable.<PayoutType>of(payoutType);
-        
-        return this;
-        }
+  public PayoutType getPayoutType() {
+        return payoutType.orElse(null);
+  }
 
-    /**
-        * Get payoutType
-    * @return payoutType
-    */
-    @javax.annotation.Nullable
-        @JsonIgnore
-    
-    public PayoutType getPayoutType() {
-                return payoutType.orElse(null);
-    }
-
-          @JsonProperty(JSON_PROPERTY_PAYOUT_TYPE)
+  @JsonProperty(JSON_PROPERTY_PAYOUT_TYPE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-        public JsonNullable<PayoutType> getPayoutType_JsonNullable() {
-        return payoutType;
-        }
+  public JsonNullable<PayoutType> getPayoutType_JsonNullable() {
+    return payoutType;
+  }
+  
+  @JsonProperty(JSON_PROPERTY_PAYOUT_TYPE)
+  public void setPayoutType_JsonNullable(JsonNullable<PayoutType> payoutType) {
+    this.payoutType = payoutType;
+  }
+
+  public void setPayoutType(@javax.annotation.Nullable PayoutType payoutType) {
+    this.payoutType = JsonNullable.<PayoutType>of(payoutType);
+  }
+
+  public PayoutConfirmRequest payoutMethodData(@javax.annotation.Nullable PayoutMethodData payoutMethodData) {
+    this.payoutMethodData = JsonNullable.<PayoutMethodData>of(payoutMethodData);
     
-        @JsonProperty(JSON_PROPERTY_PAYOUT_TYPE)
-        public void setPayoutType_JsonNullable(JsonNullable<PayoutType> payoutType) {
-        this.payoutType = payoutType;
-        }
+    return this;
+  }
 
-          public void setPayoutType(@javax.annotation.Nullable PayoutType payoutType) {
-            this.payoutType = JsonNullable.<PayoutType>of(payoutType);
-        }
+  /**
+   * Get payoutMethodData
+   * @return payoutMethodData
+   */
+  @javax.annotation.Nullable
+  @JsonIgnore
 
-        public PayoutConfirmRequest payoutMethodData(@javax.annotation.Nullable PayoutMethodData payoutMethodData) {
-        this.payoutMethodData = JsonNullable.<PayoutMethodData>of(payoutMethodData);
-        
-        return this;
-        }
+  public PayoutMethodData getPayoutMethodData() {
+        return payoutMethodData.orElse(null);
+  }
 
-    /**
-        * Get payoutMethodData
-    * @return payoutMethodData
-    */
-    @javax.annotation.Nullable
-        @JsonIgnore
-    
-    public PayoutMethodData getPayoutMethodData() {
-                return payoutMethodData.orElse(null);
-    }
-
-          @JsonProperty(JSON_PROPERTY_PAYOUT_METHOD_DATA)
+  @JsonProperty(JSON_PROPERTY_PAYOUT_METHOD_DATA)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-        public JsonNullable<PayoutMethodData> getPayoutMethodData_JsonNullable() {
-        return payoutMethodData;
-        }
+  public JsonNullable<PayoutMethodData> getPayoutMethodData_JsonNullable() {
+    return payoutMethodData;
+  }
+  
+  @JsonProperty(JSON_PROPERTY_PAYOUT_METHOD_DATA)
+  public void setPayoutMethodData_JsonNullable(JsonNullable<PayoutMethodData> payoutMethodData) {
+    this.payoutMethodData = payoutMethodData;
+  }
+
+  public void setPayoutMethodData(@javax.annotation.Nullable PayoutMethodData payoutMethodData) {
+    this.payoutMethodData = JsonNullable.<PayoutMethodData>of(payoutMethodData);
+  }
+
+  public PayoutConfirmRequest billing(@javax.annotation.Nullable Address billing) {
+    this.billing = JsonNullable.<Address>of(billing);
     
-        @JsonProperty(JSON_PROPERTY_PAYOUT_METHOD_DATA)
-        public void setPayoutMethodData_JsonNullable(JsonNullable<PayoutMethodData> payoutMethodData) {
-        this.payoutMethodData = payoutMethodData;
-        }
+    return this;
+  }
 
-          public void setPayoutMethodData(@javax.annotation.Nullable PayoutMethodData payoutMethodData) {
-            this.payoutMethodData = JsonNullable.<PayoutMethodData>of(payoutMethodData);
-        }
+  /**
+   * Get billing
+   * @return billing
+   */
+  @javax.annotation.Nullable
+  @JsonIgnore
 
-        public PayoutConfirmRequest billing(@javax.annotation.Nullable Address billing) {
-        this.billing = JsonNullable.<Address>of(billing);
-        
-        return this;
-        }
+  public Address getBilling() {
+        return billing.orElse(null);
+  }
 
-    /**
-        * Get billing
-    * @return billing
-    */
-    @javax.annotation.Nullable
-        @JsonIgnore
-    
-    public Address getBilling() {
-                return billing.orElse(null);
-    }
-
-          @JsonProperty(JSON_PROPERTY_BILLING)
+  @JsonProperty(JSON_PROPERTY_BILLING)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-        public JsonNullable<Address> getBilling_JsonNullable() {
-        return billing;
-        }
+  public JsonNullable<Address> getBilling_JsonNullable() {
+    return billing;
+  }
+  
+  @JsonProperty(JSON_PROPERTY_BILLING)
+  public void setBilling_JsonNullable(JsonNullable<Address> billing) {
+    this.billing = billing;
+  }
+
+  public void setBilling(@javax.annotation.Nullable Address billing) {
+    this.billing = JsonNullable.<Address>of(billing);
+  }
+
+  public PayoutConfirmRequest autoFulfill(@javax.annotation.Nullable Boolean autoFulfill) {
+    this.autoFulfill = JsonNullable.<Boolean>of(autoFulfill);
     
-        @JsonProperty(JSON_PROPERTY_BILLING)
-        public void setBilling_JsonNullable(JsonNullable<Address> billing) {
-        this.billing = billing;
-        }
+    return this;
+  }
 
-          public void setBilling(@javax.annotation.Nullable Address billing) {
-            this.billing = JsonNullable.<Address>of(billing);
-        }
+  /**
+   * Set to true to confirm the payout without review, no further action required
+   * @return autoFulfill
+   */
+  @javax.annotation.Nullable
+  @JsonIgnore
 
-        public PayoutConfirmRequest autoFulfill(@javax.annotation.Nullable Boolean autoFulfill) {
-        this.autoFulfill = JsonNullable.<Boolean>of(autoFulfill);
-        
-        return this;
-        }
+  public Boolean getAutoFulfill() {
+        return autoFulfill.orElse(null);
+  }
 
-    /**
-        * Set to true to confirm the payout without review, no further action required
-    * @return autoFulfill
-    */
-    @javax.annotation.Nullable
-        @JsonIgnore
-    
-    public Boolean getAutoFulfill() {
-                return autoFulfill.orElse(null);
-    }
-
-          @JsonProperty(JSON_PROPERTY_AUTO_FULFILL)
+  @JsonProperty(JSON_PROPERTY_AUTO_FULFILL)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-        public JsonNullable<Boolean> getAutoFulfill_JsonNullable() {
-        return autoFulfill;
-        }
+  public JsonNullable<Boolean> getAutoFulfill_JsonNullable() {
+    return autoFulfill;
+  }
+  
+  @JsonProperty(JSON_PROPERTY_AUTO_FULFILL)
+  public void setAutoFulfill_JsonNullable(JsonNullable<Boolean> autoFulfill) {
+    this.autoFulfill = autoFulfill;
+  }
+
+  public void setAutoFulfill(@javax.annotation.Nullable Boolean autoFulfill) {
+    this.autoFulfill = JsonNullable.<Boolean>of(autoFulfill);
+  }
+
+  public PayoutConfirmRequest customerId(@javax.annotation.Nullable String customerId) {
+    this.customerId = JsonNullable.<String>of(customerId);
     
-        @JsonProperty(JSON_PROPERTY_AUTO_FULFILL)
-        public void setAutoFulfill_JsonNullable(JsonNullable<Boolean> autoFulfill) {
-        this.autoFulfill = autoFulfill;
-        }
+    return this;
+  }
 
-          public void setAutoFulfill(@javax.annotation.Nullable Boolean autoFulfill) {
-            this.autoFulfill = JsonNullable.<Boolean>of(autoFulfill);
-        }
+  /**
+   * The identifier for the customer object. If not provided the customer ID will be autogenerated. _Deprecated: Use customer_id instead._
+   * @return customerId
+   * @deprecated
+   */
+  @Deprecated
+  @javax.annotation.Nullable
+  @JsonIgnore
 
-        public PayoutConfirmRequest customerId(@javax.annotation.Nullable String customerId) {
-        this.customerId = JsonNullable.<String>of(customerId);
-        
-        return this;
-        }
+  public String getCustomerId() {
+        return customerId.orElse(null);
+  }
 
-    /**
-        * The identifier for the customer object. If not provided the customer ID will be autogenerated. _Deprecated: Use customer_id instead._
-    * @return customerId
-        * @deprecated
-    */
-        @Deprecated
-    @javax.annotation.Nullable
-        @JsonIgnore
-    
-    public String getCustomerId() {
-                return customerId.orElse(null);
-    }
-
-          @JsonProperty(JSON_PROPERTY_CUSTOMER_ID)
+  @JsonProperty(JSON_PROPERTY_CUSTOMER_ID)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-        public JsonNullable<String> getCustomerId_JsonNullable() {
-        return customerId;
-        }
+  public JsonNullable<String> getCustomerId_JsonNullable() {
+    return customerId;
+  }
+  
+  @JsonProperty(JSON_PROPERTY_CUSTOMER_ID)
+  public void setCustomerId_JsonNullable(JsonNullable<String> customerId) {
+    this.customerId = customerId;
+  }
+
+  public void setCustomerId(@javax.annotation.Nullable String customerId) {
+    this.customerId = JsonNullable.<String>of(customerId);
+  }
+
+  public PayoutConfirmRequest customer(@javax.annotation.Nullable CustomerDetails customer) {
+    this.customer = JsonNullable.<CustomerDetails>of(customer);
     
-        @JsonProperty(JSON_PROPERTY_CUSTOMER_ID)
-        public void setCustomerId_JsonNullable(JsonNullable<String> customerId) {
-        this.customerId = customerId;
-        }
+    return this;
+  }
 
-          public void setCustomerId(@javax.annotation.Nullable String customerId) {
-            this.customerId = JsonNullable.<String>of(customerId);
-        }
+  /**
+   * Get customer
+   * @return customer
+   */
+  @javax.annotation.Nullable
+  @JsonIgnore
 
-        public PayoutConfirmRequest customer(@javax.annotation.Nullable CustomerDetails customer) {
-        this.customer = JsonNullable.<CustomerDetails>of(customer);
-        
-        return this;
-        }
+  public CustomerDetails getCustomer() {
+        return customer.orElse(null);
+  }
 
-    /**
-        * Get customer
-    * @return customer
-    */
-    @javax.annotation.Nullable
-        @JsonIgnore
-    
-    public CustomerDetails getCustomer() {
-                return customer.orElse(null);
-    }
-
-          @JsonProperty(JSON_PROPERTY_CUSTOMER)
+  @JsonProperty(JSON_PROPERTY_CUSTOMER)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-        public JsonNullable<CustomerDetails> getCustomer_JsonNullable() {
-        return customer;
-        }
+  public JsonNullable<CustomerDetails> getCustomer_JsonNullable() {
+    return customer;
+  }
+  
+  @JsonProperty(JSON_PROPERTY_CUSTOMER)
+  public void setCustomer_JsonNullable(JsonNullable<CustomerDetails> customer) {
+    this.customer = customer;
+  }
+
+  public void setCustomer(@javax.annotation.Nullable CustomerDetails customer) {
+    this.customer = JsonNullable.<CustomerDetails>of(customer);
+  }
+
+  public PayoutConfirmRequest clientSecret(@javax.annotation.Nonnull String clientSecret) {
     
-        @JsonProperty(JSON_PROPERTY_CUSTOMER)
-        public void setCustomer_JsonNullable(JsonNullable<CustomerDetails> customer) {
-        this.customer = customer;
-        }
+    this.clientSecret = clientSecret;
+    return this;
+  }
 
-          public void setCustomer(@javax.annotation.Nullable CustomerDetails customer) {
-            this.customer = JsonNullable.<CustomerDetails>of(customer);
-        }
-
-        public PayoutConfirmRequest clientSecret(@javax.annotation.Nonnull String clientSecret) {
-        
-        this.clientSecret = clientSecret;
-        return this;
-        }
-
-    /**
-        * It&#39;s a token used for client side verification.
-    * @return clientSecret
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_CLIENT_SECRET)
+  /**
+   * It&#39;s a token used for client side verification.
+   * @return clientSecret
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_CLIENT_SECRET)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public String getClientSecret() {
-        return clientSecret;
-    }
+  public String getClientSecret() {
+    return clientSecret;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_CLIENT_SECRET)
+  @JsonProperty(JSON_PROPERTY_CLIENT_SECRET)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setClientSecret(@javax.annotation.Nonnull String clientSecret) {
-            this.clientSecret = clientSecret;
-        }
+    this.clientSecret = clientSecret;
+  }
 
-        public PayoutConfirmRequest returnUrl(@javax.annotation.Nullable String returnUrl) {
-        this.returnUrl = JsonNullable.<String>of(returnUrl);
-        
-        return this;
-        }
-
-    /**
-        * The URL to redirect after the completion of the operation
-    * @return returnUrl
-    */
-    @javax.annotation.Nullable
-        @JsonIgnore
+  public PayoutConfirmRequest returnUrl(@javax.annotation.Nullable String returnUrl) {
+    this.returnUrl = JsonNullable.<String>of(returnUrl);
     
-    public String getReturnUrl() {
-                return returnUrl.orElse(null);
-    }
+    return this;
+  }
 
-          @JsonProperty(JSON_PROPERTY_RETURN_URL)
+  /**
+   * The URL to redirect after the completion of the operation
+   * @return returnUrl
+   */
+  @javax.annotation.Nullable
+  @JsonIgnore
+
+  public String getReturnUrl() {
+        return returnUrl.orElse(null);
+  }
+
+  @JsonProperty(JSON_PROPERTY_RETURN_URL)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-        public JsonNullable<String> getReturnUrl_JsonNullable() {
-        return returnUrl;
-        }
+  public JsonNullable<String> getReturnUrl_JsonNullable() {
+    return returnUrl;
+  }
+  
+  @JsonProperty(JSON_PROPERTY_RETURN_URL)
+  public void setReturnUrl_JsonNullable(JsonNullable<String> returnUrl) {
+    this.returnUrl = returnUrl;
+  }
+
+  public void setReturnUrl(@javax.annotation.Nullable String returnUrl) {
+    this.returnUrl = JsonNullable.<String>of(returnUrl);
+  }
+
+  public PayoutConfirmRequest businessCountry(@javax.annotation.Nullable CountryAlpha2 businessCountry) {
+    this.businessCountry = JsonNullable.<CountryAlpha2>of(businessCountry);
     
-        @JsonProperty(JSON_PROPERTY_RETURN_URL)
-        public void setReturnUrl_JsonNullable(JsonNullable<String> returnUrl) {
-        this.returnUrl = returnUrl;
-        }
+    return this;
+  }
 
-          public void setReturnUrl(@javax.annotation.Nullable String returnUrl) {
-            this.returnUrl = JsonNullable.<String>of(returnUrl);
-        }
+  /**
+   * Get businessCountry
+   * @return businessCountry
+   */
+  @javax.annotation.Nullable
+  @JsonIgnore
 
-        public PayoutConfirmRequest businessCountry(@javax.annotation.Nullable CountryAlpha2 businessCountry) {
-        this.businessCountry = JsonNullable.<CountryAlpha2>of(businessCountry);
-        
-        return this;
-        }
+  public CountryAlpha2 getBusinessCountry() {
+        return businessCountry.orElse(null);
+  }
 
-    /**
-        * Get businessCountry
-    * @return businessCountry
-    */
-    @javax.annotation.Nullable
-        @JsonIgnore
-    
-    public CountryAlpha2 getBusinessCountry() {
-                return businessCountry.orElse(null);
-    }
-
-          @JsonProperty(JSON_PROPERTY_BUSINESS_COUNTRY)
+  @JsonProperty(JSON_PROPERTY_BUSINESS_COUNTRY)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-        public JsonNullable<CountryAlpha2> getBusinessCountry_JsonNullable() {
-        return businessCountry;
-        }
+  public JsonNullable<CountryAlpha2> getBusinessCountry_JsonNullable() {
+    return businessCountry;
+  }
+  
+  @JsonProperty(JSON_PROPERTY_BUSINESS_COUNTRY)
+  public void setBusinessCountry_JsonNullable(JsonNullable<CountryAlpha2> businessCountry) {
+    this.businessCountry = businessCountry;
+  }
+
+  public void setBusinessCountry(@javax.annotation.Nullable CountryAlpha2 businessCountry) {
+    this.businessCountry = JsonNullable.<CountryAlpha2>of(businessCountry);
+  }
+
+  public PayoutConfirmRequest businessLabel(@javax.annotation.Nullable String businessLabel) {
+    this.businessLabel = JsonNullable.<String>of(businessLabel);
     
-        @JsonProperty(JSON_PROPERTY_BUSINESS_COUNTRY)
-        public void setBusinessCountry_JsonNullable(JsonNullable<CountryAlpha2> businessCountry) {
-        this.businessCountry = businessCountry;
-        }
+    return this;
+  }
 
-          public void setBusinessCountry(@javax.annotation.Nullable CountryAlpha2 businessCountry) {
-            this.businessCountry = JsonNullable.<CountryAlpha2>of(businessCountry);
-        }
+  /**
+   * Business label of the merchant for this payout. _Deprecated: Use profile_id instead._
+   * @return businessLabel
+   * @deprecated
+   */
+  @Deprecated
+  @javax.annotation.Nullable
+  @JsonIgnore
 
-        public PayoutConfirmRequest businessLabel(@javax.annotation.Nullable String businessLabel) {
-        this.businessLabel = JsonNullable.<String>of(businessLabel);
-        
-        return this;
-        }
+  public String getBusinessLabel() {
+        return businessLabel.orElse(null);
+  }
 
-    /**
-        * Business label of the merchant for this payout. _Deprecated: Use profile_id instead._
-    * @return businessLabel
-        * @deprecated
-    */
-        @Deprecated
-    @javax.annotation.Nullable
-        @JsonIgnore
-    
-    public String getBusinessLabel() {
-                return businessLabel.orElse(null);
-    }
-
-          @JsonProperty(JSON_PROPERTY_BUSINESS_LABEL)
+  @JsonProperty(JSON_PROPERTY_BUSINESS_LABEL)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-        public JsonNullable<String> getBusinessLabel_JsonNullable() {
-        return businessLabel;
-        }
+  public JsonNullable<String> getBusinessLabel_JsonNullable() {
+    return businessLabel;
+  }
+  
+  @JsonProperty(JSON_PROPERTY_BUSINESS_LABEL)
+  public void setBusinessLabel_JsonNullable(JsonNullable<String> businessLabel) {
+    this.businessLabel = businessLabel;
+  }
+
+  public void setBusinessLabel(@javax.annotation.Nullable String businessLabel) {
+    this.businessLabel = JsonNullable.<String>of(businessLabel);
+  }
+
+  public PayoutConfirmRequest description(@javax.annotation.Nullable String description) {
+    this.description = JsonNullable.<String>of(description);
     
-        @JsonProperty(JSON_PROPERTY_BUSINESS_LABEL)
-        public void setBusinessLabel_JsonNullable(JsonNullable<String> businessLabel) {
-        this.businessLabel = businessLabel;
-        }
+    return this;
+  }
 
-          public void setBusinessLabel(@javax.annotation.Nullable String businessLabel) {
-            this.businessLabel = JsonNullable.<String>of(businessLabel);
-        }
+  /**
+   * A description of the payout
+   * @return description
+   */
+  @javax.annotation.Nullable
+  @JsonIgnore
 
-        public PayoutConfirmRequest description(@javax.annotation.Nullable String description) {
-        this.description = JsonNullable.<String>of(description);
-        
-        return this;
-        }
+  public String getDescription() {
+        return description.orElse(null);
+  }
 
-    /**
-        * A description of the payout
-    * @return description
-    */
-    @javax.annotation.Nullable
-        @JsonIgnore
-    
-    public String getDescription() {
-                return description.orElse(null);
-    }
-
-          @JsonProperty(JSON_PROPERTY_DESCRIPTION)
+  @JsonProperty(JSON_PROPERTY_DESCRIPTION)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-        public JsonNullable<String> getDescription_JsonNullable() {
-        return description;
-        }
+  public JsonNullable<String> getDescription_JsonNullable() {
+    return description;
+  }
+  
+  @JsonProperty(JSON_PROPERTY_DESCRIPTION)
+  public void setDescription_JsonNullable(JsonNullable<String> description) {
+    this.description = description;
+  }
+
+  public void setDescription(@javax.annotation.Nullable String description) {
+    this.description = JsonNullable.<String>of(description);
+  }
+
+  public PayoutConfirmRequest entityType(@javax.annotation.Nullable PayoutEntityType entityType) {
+    this.entityType = JsonNullable.<PayoutEntityType>of(entityType);
     
-        @JsonProperty(JSON_PROPERTY_DESCRIPTION)
-        public void setDescription_JsonNullable(JsonNullable<String> description) {
-        this.description = description;
-        }
+    return this;
+  }
 
-          public void setDescription(@javax.annotation.Nullable String description) {
-            this.description = JsonNullable.<String>of(description);
-        }
+  /**
+   * Get entityType
+   * @return entityType
+   */
+  @javax.annotation.Nullable
+  @JsonIgnore
 
-        public PayoutConfirmRequest entityType(@javax.annotation.Nullable PayoutEntityType entityType) {
-        this.entityType = JsonNullable.<PayoutEntityType>of(entityType);
-        
-        return this;
-        }
+  public PayoutEntityType getEntityType() {
+        return entityType.orElse(null);
+  }
 
-    /**
-        * Get entityType
-    * @return entityType
-    */
-    @javax.annotation.Nullable
-        @JsonIgnore
-    
-    public PayoutEntityType getEntityType() {
-                return entityType.orElse(null);
-    }
-
-          @JsonProperty(JSON_PROPERTY_ENTITY_TYPE)
+  @JsonProperty(JSON_PROPERTY_ENTITY_TYPE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-        public JsonNullable<PayoutEntityType> getEntityType_JsonNullable() {
-        return entityType;
-        }
+  public JsonNullable<PayoutEntityType> getEntityType_JsonNullable() {
+    return entityType;
+  }
+  
+  @JsonProperty(JSON_PROPERTY_ENTITY_TYPE)
+  public void setEntityType_JsonNullable(JsonNullable<PayoutEntityType> entityType) {
+    this.entityType = entityType;
+  }
+
+  public void setEntityType(@javax.annotation.Nullable PayoutEntityType entityType) {
+    this.entityType = JsonNullable.<PayoutEntityType>of(entityType);
+  }
+
+  public PayoutConfirmRequest recurring(@javax.annotation.Nullable Boolean recurring) {
+    this.recurring = JsonNullable.<Boolean>of(recurring);
     
-        @JsonProperty(JSON_PROPERTY_ENTITY_TYPE)
-        public void setEntityType_JsonNullable(JsonNullable<PayoutEntityType> entityType) {
-        this.entityType = entityType;
-        }
+    return this;
+  }
 
-          public void setEntityType(@javax.annotation.Nullable PayoutEntityType entityType) {
-            this.entityType = JsonNullable.<PayoutEntityType>of(entityType);
-        }
+  /**
+   * Specifies whether or not the payout request is recurring
+   * @return recurring
+   */
+  @javax.annotation.Nullable
+  @JsonIgnore
 
-        public PayoutConfirmRequest recurring(@javax.annotation.Nullable Boolean recurring) {
-        this.recurring = JsonNullable.<Boolean>of(recurring);
-        
-        return this;
-        }
+  public Boolean getRecurring() {
+        return recurring.orElse(null);
+  }
 
-    /**
-        * Specifies whether or not the payout request is recurring
-    * @return recurring
-    */
-    @javax.annotation.Nullable
-        @JsonIgnore
-    
-    public Boolean getRecurring() {
-                return recurring.orElse(null);
-    }
-
-          @JsonProperty(JSON_PROPERTY_RECURRING)
+  @JsonProperty(JSON_PROPERTY_RECURRING)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-        public JsonNullable<Boolean> getRecurring_JsonNullable() {
-        return recurring;
-        }
+  public JsonNullable<Boolean> getRecurring_JsonNullable() {
+    return recurring;
+  }
+  
+  @JsonProperty(JSON_PROPERTY_RECURRING)
+  public void setRecurring_JsonNullable(JsonNullable<Boolean> recurring) {
+    this.recurring = recurring;
+  }
+
+  public void setRecurring(@javax.annotation.Nullable Boolean recurring) {
+    this.recurring = JsonNullable.<Boolean>of(recurring);
+  }
+
+  public PayoutConfirmRequest metadata(@javax.annotation.Nullable Object metadata) {
+    this.metadata = JsonNullable.<Object>of(metadata);
     
-        @JsonProperty(JSON_PROPERTY_RECURRING)
-        public void setRecurring_JsonNullable(JsonNullable<Boolean> recurring) {
-        this.recurring = recurring;
-        }
+    return this;
+  }
 
-          public void setRecurring(@javax.annotation.Nullable Boolean recurring) {
-            this.recurring = JsonNullable.<Boolean>of(recurring);
-        }
+  /**
+   * You can specify up to 50 keys, with key names up to 40 characters long and values up to 500 characters long. Metadata is useful for storing additional, structured information on an object.
+   * @return metadata
+   */
+  @javax.annotation.Nullable
+  @JsonIgnore
 
-        public PayoutConfirmRequest metadata(@javax.annotation.Nullable Object metadata) {
-        this.metadata = JsonNullable.<Object>of(metadata);
-        
-        return this;
-        }
+  public Object getMetadata() {
+        return metadata.orElse(null);
+  }
 
-    /**
-        * You can specify up to 50 keys, with key names up to 40 characters long and values up to 500 characters long. Metadata is useful for storing additional, structured information on an object.
-    * @return metadata
-    */
-    @javax.annotation.Nullable
-        @JsonIgnore
-    
-    public Object getMetadata() {
-                return metadata.orElse(null);
-    }
-
-          @JsonProperty(JSON_PROPERTY_METADATA)
+  @JsonProperty(JSON_PROPERTY_METADATA)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-        public JsonNullable<Object> getMetadata_JsonNullable() {
-        return metadata;
-        }
+  public JsonNullable<Object> getMetadata_JsonNullable() {
+    return metadata;
+  }
+  
+  @JsonProperty(JSON_PROPERTY_METADATA)
+  public void setMetadata_JsonNullable(JsonNullable<Object> metadata) {
+    this.metadata = metadata;
+  }
+
+  public void setMetadata(@javax.annotation.Nullable Object metadata) {
+    this.metadata = JsonNullable.<Object>of(metadata);
+  }
+
+  public PayoutConfirmRequest payoutToken(@javax.annotation.Nullable String payoutToken) {
+    this.payoutToken = JsonNullable.<String>of(payoutToken);
     
-        @JsonProperty(JSON_PROPERTY_METADATA)
-        public void setMetadata_JsonNullable(JsonNullable<Object> metadata) {
-        this.metadata = metadata;
-        }
+    return this;
+  }
 
-          public void setMetadata(@javax.annotation.Nullable Object metadata) {
-            this.metadata = JsonNullable.<Object>of(metadata);
-        }
+  /**
+   * Provide a reference to a stored payout method, used to process the payout.
+   * @return payoutToken
+   */
+  @javax.annotation.Nullable
+  @JsonIgnore
 
-        public PayoutConfirmRequest payoutToken(@javax.annotation.Nullable String payoutToken) {
-        this.payoutToken = JsonNullable.<String>of(payoutToken);
-        
-        return this;
-        }
+  public String getPayoutToken() {
+        return payoutToken.orElse(null);
+  }
 
-    /**
-        * Provide a reference to a stored payout method, used to process the payout.
-    * @return payoutToken
-    */
-    @javax.annotation.Nullable
-        @JsonIgnore
-    
-    public String getPayoutToken() {
-                return payoutToken.orElse(null);
-    }
-
-          @JsonProperty(JSON_PROPERTY_PAYOUT_TOKEN)
+  @JsonProperty(JSON_PROPERTY_PAYOUT_TOKEN)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-        public JsonNullable<String> getPayoutToken_JsonNullable() {
-        return payoutToken;
-        }
+  public JsonNullable<String> getPayoutToken_JsonNullable() {
+    return payoutToken;
+  }
+  
+  @JsonProperty(JSON_PROPERTY_PAYOUT_TOKEN)
+  public void setPayoutToken_JsonNullable(JsonNullable<String> payoutToken) {
+    this.payoutToken = payoutToken;
+  }
+
+  public void setPayoutToken(@javax.annotation.Nullable String payoutToken) {
+    this.payoutToken = JsonNullable.<String>of(payoutToken);
+  }
+
+  public PayoutConfirmRequest profileId(@javax.annotation.Nullable String profileId) {
+    this.profileId = JsonNullable.<String>of(profileId);
     
-        @JsonProperty(JSON_PROPERTY_PAYOUT_TOKEN)
-        public void setPayoutToken_JsonNullable(JsonNullable<String> payoutToken) {
-        this.payoutToken = payoutToken;
-        }
+    return this;
+  }
 
-          public void setPayoutToken(@javax.annotation.Nullable String payoutToken) {
-            this.payoutToken = JsonNullable.<String>of(payoutToken);
-        }
+  /**
+   * The business profile to use for this payout, especially if there are multiple business profiles associated with the account, otherwise default business profile associated with the merchant account will be used.
+   * @return profileId
+   */
+  @javax.annotation.Nullable
+  @JsonIgnore
 
-        public PayoutConfirmRequest profileId(@javax.annotation.Nullable String profileId) {
-        this.profileId = JsonNullable.<String>of(profileId);
-        
-        return this;
-        }
+  public String getProfileId() {
+        return profileId.orElse(null);
+  }
 
-    /**
-        * The business profile to use for this payout, especially if there are multiple business profiles associated with the account, otherwise default business profile associated with the merchant account will be used.
-    * @return profileId
-    */
-    @javax.annotation.Nullable
-        @JsonIgnore
-    
-    public String getProfileId() {
-                return profileId.orElse(null);
-    }
-
-          @JsonProperty(JSON_PROPERTY_PROFILE_ID)
+  @JsonProperty(JSON_PROPERTY_PROFILE_ID)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-        public JsonNullable<String> getProfileId_JsonNullable() {
-        return profileId;
-        }
+  public JsonNullable<String> getProfileId_JsonNullable() {
+    return profileId;
+  }
+  
+  @JsonProperty(JSON_PROPERTY_PROFILE_ID)
+  public void setProfileId_JsonNullable(JsonNullable<String> profileId) {
+    this.profileId = profileId;
+  }
+
+  public void setProfileId(@javax.annotation.Nullable String profileId) {
+    this.profileId = JsonNullable.<String>of(profileId);
+  }
+
+  public PayoutConfirmRequest priority(@javax.annotation.Nullable PayoutSendPriority priority) {
+    this.priority = JsonNullable.<PayoutSendPriority>of(priority);
     
-        @JsonProperty(JSON_PROPERTY_PROFILE_ID)
-        public void setProfileId_JsonNullable(JsonNullable<String> profileId) {
-        this.profileId = profileId;
-        }
+    return this;
+  }
 
-          public void setProfileId(@javax.annotation.Nullable String profileId) {
-            this.profileId = JsonNullable.<String>of(profileId);
-        }
+  /**
+   * Get priority
+   * @return priority
+   */
+  @javax.annotation.Nullable
+  @JsonIgnore
 
-        public PayoutConfirmRequest priority(@javax.annotation.Nullable PayoutSendPriority priority) {
-        this.priority = JsonNullable.<PayoutSendPriority>of(priority);
-        
-        return this;
-        }
+  public PayoutSendPriority getPriority() {
+        return priority.orElse(null);
+  }
 
-    /**
-        * Get priority
-    * @return priority
-    */
-    @javax.annotation.Nullable
-        @JsonIgnore
-    
-    public PayoutSendPriority getPriority() {
-                return priority.orElse(null);
-    }
-
-          @JsonProperty(JSON_PROPERTY_PRIORITY)
+  @JsonProperty(JSON_PROPERTY_PRIORITY)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-        public JsonNullable<PayoutSendPriority> getPriority_JsonNullable() {
-        return priority;
-        }
+  public JsonNullable<PayoutSendPriority> getPriority_JsonNullable() {
+    return priority;
+  }
+  
+  @JsonProperty(JSON_PROPERTY_PRIORITY)
+  public void setPriority_JsonNullable(JsonNullable<PayoutSendPriority> priority) {
+    this.priority = priority;
+  }
+
+  public void setPriority(@javax.annotation.Nullable PayoutSendPriority priority) {
+    this.priority = JsonNullable.<PayoutSendPriority>of(priority);
+  }
+
+  public PayoutConfirmRequest payoutLink(@javax.annotation.Nullable Boolean payoutLink) {
+    this.payoutLink = JsonNullable.<Boolean>of(payoutLink);
     
-        @JsonProperty(JSON_PROPERTY_PRIORITY)
-        public void setPriority_JsonNullable(JsonNullable<PayoutSendPriority> priority) {
-        this.priority = priority;
-        }
+    return this;
+  }
 
-          public void setPriority(@javax.annotation.Nullable PayoutSendPriority priority) {
-            this.priority = JsonNullable.<PayoutSendPriority>of(priority);
-        }
+  /**
+   * Whether to get the payout link (if applicable). Merchant need to specify this during the Payout _Create_, this field can not be updated during Payout _Update_.
+   * @return payoutLink
+   */
+  @javax.annotation.Nullable
+  @JsonIgnore
 
-        public PayoutConfirmRequest payoutLink(@javax.annotation.Nullable Boolean payoutLink) {
-        this.payoutLink = JsonNullable.<Boolean>of(payoutLink);
-        
-        return this;
-        }
+  public Boolean getPayoutLink() {
+        return payoutLink.orElse(null);
+  }
 
-    /**
-        * Whether to get the payout link (if applicable). Merchant need to specify this during the Payout _Create_, this field can not be updated during Payout _Update_.
-    * @return payoutLink
-    */
-    @javax.annotation.Nullable
-        @JsonIgnore
-    
-    public Boolean getPayoutLink() {
-                return payoutLink.orElse(null);
-    }
-
-          @JsonProperty(JSON_PROPERTY_PAYOUT_LINK)
+  @JsonProperty(JSON_PROPERTY_PAYOUT_LINK)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-        public JsonNullable<Boolean> getPayoutLink_JsonNullable() {
-        return payoutLink;
-        }
+  public JsonNullable<Boolean> getPayoutLink_JsonNullable() {
+    return payoutLink;
+  }
+  
+  @JsonProperty(JSON_PROPERTY_PAYOUT_LINK)
+  public void setPayoutLink_JsonNullable(JsonNullable<Boolean> payoutLink) {
+    this.payoutLink = payoutLink;
+  }
+
+  public void setPayoutLink(@javax.annotation.Nullable Boolean payoutLink) {
+    this.payoutLink = JsonNullable.<Boolean>of(payoutLink);
+  }
+
+  public PayoutConfirmRequest payoutLinkConfig(@javax.annotation.Nullable PayoutCreatePayoutLinkConfig payoutLinkConfig) {
+    this.payoutLinkConfig = JsonNullable.<PayoutCreatePayoutLinkConfig>of(payoutLinkConfig);
     
-        @JsonProperty(JSON_PROPERTY_PAYOUT_LINK)
-        public void setPayoutLink_JsonNullable(JsonNullable<Boolean> payoutLink) {
-        this.payoutLink = payoutLink;
-        }
+    return this;
+  }
 
-          public void setPayoutLink(@javax.annotation.Nullable Boolean payoutLink) {
-            this.payoutLink = JsonNullable.<Boolean>of(payoutLink);
-        }
+  /**
+   * Get payoutLinkConfig
+   * @return payoutLinkConfig
+   */
+  @javax.annotation.Nullable
+  @JsonIgnore
 
-        public PayoutConfirmRequest payoutLinkConfig(@javax.annotation.Nullable PayoutCreatePayoutLinkConfig payoutLinkConfig) {
-        this.payoutLinkConfig = JsonNullable.<PayoutCreatePayoutLinkConfig>of(payoutLinkConfig);
-        
-        return this;
-        }
+  public PayoutCreatePayoutLinkConfig getPayoutLinkConfig() {
+        return payoutLinkConfig.orElse(null);
+  }
 
-    /**
-        * Get payoutLinkConfig
-    * @return payoutLinkConfig
-    */
-    @javax.annotation.Nullable
-        @JsonIgnore
-    
-    public PayoutCreatePayoutLinkConfig getPayoutLinkConfig() {
-                return payoutLinkConfig.orElse(null);
-    }
-
-          @JsonProperty(JSON_PROPERTY_PAYOUT_LINK_CONFIG)
+  @JsonProperty(JSON_PROPERTY_PAYOUT_LINK_CONFIG)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-        public JsonNullable<PayoutCreatePayoutLinkConfig> getPayoutLinkConfig_JsonNullable() {
-        return payoutLinkConfig;
-        }
+  public JsonNullable<PayoutCreatePayoutLinkConfig> getPayoutLinkConfig_JsonNullable() {
+    return payoutLinkConfig;
+  }
+  
+  @JsonProperty(JSON_PROPERTY_PAYOUT_LINK_CONFIG)
+  public void setPayoutLinkConfig_JsonNullable(JsonNullable<PayoutCreatePayoutLinkConfig> payoutLinkConfig) {
+    this.payoutLinkConfig = payoutLinkConfig;
+  }
+
+  public void setPayoutLinkConfig(@javax.annotation.Nullable PayoutCreatePayoutLinkConfig payoutLinkConfig) {
+    this.payoutLinkConfig = JsonNullable.<PayoutCreatePayoutLinkConfig>of(payoutLinkConfig);
+  }
+
+  public PayoutConfirmRequest sessionExpiry(@javax.annotation.Nullable Integer sessionExpiry) {
+    this.sessionExpiry = JsonNullable.<Integer>of(sessionExpiry);
     
-        @JsonProperty(JSON_PROPERTY_PAYOUT_LINK_CONFIG)
-        public void setPayoutLinkConfig_JsonNullable(JsonNullable<PayoutCreatePayoutLinkConfig> payoutLinkConfig) {
-        this.payoutLinkConfig = payoutLinkConfig;
-        }
+    return this;
+  }
 
-          public void setPayoutLinkConfig(@javax.annotation.Nullable PayoutCreatePayoutLinkConfig payoutLinkConfig) {
-            this.payoutLinkConfig = JsonNullable.<PayoutCreatePayoutLinkConfig>of(payoutLinkConfig);
-        }
+  /**
+   * Will be used to expire client secret after certain amount of time to be supplied in seconds (900) for 15 mins
+   * minimum: 0
+   * @return sessionExpiry
+   */
+  @javax.annotation.Nullable
+  @JsonIgnore
 
-        public PayoutConfirmRequest sessionExpiry(@javax.annotation.Nullable Integer sessionExpiry) {
-        this.sessionExpiry = JsonNullable.<Integer>of(sessionExpiry);
-        
-        return this;
-        }
+  public Integer getSessionExpiry() {
+        return sessionExpiry.orElse(null);
+  }
 
-    /**
-        * Will be used to expire client secret after certain amount of time to be supplied in seconds (900) for 15 mins
-        * minimum: 0
-    * @return sessionExpiry
-    */
-    @javax.annotation.Nullable
-        @JsonIgnore
-    
-    public Integer getSessionExpiry() {
-                return sessionExpiry.orElse(null);
-    }
-
-          @JsonProperty(JSON_PROPERTY_SESSION_EXPIRY)
+  @JsonProperty(JSON_PROPERTY_SESSION_EXPIRY)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-        public JsonNullable<Integer> getSessionExpiry_JsonNullable() {
-        return sessionExpiry;
-        }
+  public JsonNullable<Integer> getSessionExpiry_JsonNullable() {
+    return sessionExpiry;
+  }
+  
+  @JsonProperty(JSON_PROPERTY_SESSION_EXPIRY)
+  public void setSessionExpiry_JsonNullable(JsonNullable<Integer> sessionExpiry) {
+    this.sessionExpiry = sessionExpiry;
+  }
+
+  public void setSessionExpiry(@javax.annotation.Nullable Integer sessionExpiry) {
+    this.sessionExpiry = JsonNullable.<Integer>of(sessionExpiry);
+  }
+
+  public PayoutConfirmRequest email(@javax.annotation.Nullable String email) {
+    this.email = JsonNullable.<String>of(email);
     
-        @JsonProperty(JSON_PROPERTY_SESSION_EXPIRY)
-        public void setSessionExpiry_JsonNullable(JsonNullable<Integer> sessionExpiry) {
-        this.sessionExpiry = sessionExpiry;
-        }
+    return this;
+  }
 
-          public void setSessionExpiry(@javax.annotation.Nullable Integer sessionExpiry) {
-            this.sessionExpiry = JsonNullable.<Integer>of(sessionExpiry);
-        }
+  /**
+   * Customer&#39;s email. _Deprecated: Use customer object instead._
+   * @return email
+   * @deprecated
+   */
+  @Deprecated
+  @javax.annotation.Nullable
+  @JsonIgnore
 
-        public PayoutConfirmRequest email(@javax.annotation.Nullable String email) {
-        this.email = JsonNullable.<String>of(email);
-        
-        return this;
-        }
+  public String getEmail() {
+        return email.orElse(null);
+  }
 
-    /**
-        * Customer&#39;s email. _Deprecated: Use customer object instead._
-    * @return email
-        * @deprecated
-    */
-        @Deprecated
-    @javax.annotation.Nullable
-        @JsonIgnore
-    
-    public String getEmail() {
-                return email.orElse(null);
-    }
-
-          @JsonProperty(JSON_PROPERTY_EMAIL)
+  @JsonProperty(JSON_PROPERTY_EMAIL)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-        public JsonNullable<String> getEmail_JsonNullable() {
-        return email;
-        }
+  public JsonNullable<String> getEmail_JsonNullable() {
+    return email;
+  }
+  
+  @JsonProperty(JSON_PROPERTY_EMAIL)
+  public void setEmail_JsonNullable(JsonNullable<String> email) {
+    this.email = email;
+  }
+
+  public void setEmail(@javax.annotation.Nullable String email) {
+    this.email = JsonNullable.<String>of(email);
+  }
+
+  public PayoutConfirmRequest name(@javax.annotation.Nullable String name) {
+    this.name = JsonNullable.<String>of(name);
     
-        @JsonProperty(JSON_PROPERTY_EMAIL)
-        public void setEmail_JsonNullable(JsonNullable<String> email) {
-        this.email = email;
-        }
+    return this;
+  }
 
-          public void setEmail(@javax.annotation.Nullable String email) {
-            this.email = JsonNullable.<String>of(email);
-        }
+  /**
+   * Customer&#39;s name. _Deprecated: Use customer object instead._
+   * @return name
+   * @deprecated
+   */
+  @Deprecated
+  @javax.annotation.Nullable
+  @JsonIgnore
 
-        public PayoutConfirmRequest name(@javax.annotation.Nullable String name) {
-        this.name = JsonNullable.<String>of(name);
-        
-        return this;
-        }
+  public String getName() {
+        return name.orElse(null);
+  }
 
-    /**
-        * Customer&#39;s name. _Deprecated: Use customer object instead._
-    * @return name
-        * @deprecated
-    */
-        @Deprecated
-    @javax.annotation.Nullable
-        @JsonIgnore
-    
-    public String getName() {
-                return name.orElse(null);
-    }
-
-          @JsonProperty(JSON_PROPERTY_NAME)
+  @JsonProperty(JSON_PROPERTY_NAME)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-        public JsonNullable<String> getName_JsonNullable() {
-        return name;
-        }
+  public JsonNullable<String> getName_JsonNullable() {
+    return name;
+  }
+  
+  @JsonProperty(JSON_PROPERTY_NAME)
+  public void setName_JsonNullable(JsonNullable<String> name) {
+    this.name = name;
+  }
+
+  public void setName(@javax.annotation.Nullable String name) {
+    this.name = JsonNullable.<String>of(name);
+  }
+
+  public PayoutConfirmRequest phone(@javax.annotation.Nullable String phone) {
+    this.phone = JsonNullable.<String>of(phone);
     
-        @JsonProperty(JSON_PROPERTY_NAME)
-        public void setName_JsonNullable(JsonNullable<String> name) {
-        this.name = name;
-        }
+    return this;
+  }
 
-          public void setName(@javax.annotation.Nullable String name) {
-            this.name = JsonNullable.<String>of(name);
-        }
+  /**
+   * Customer&#39;s phone. _Deprecated: Use customer object instead._
+   * @return phone
+   * @deprecated
+   */
+  @Deprecated
+  @javax.annotation.Nullable
+  @JsonIgnore
 
-        public PayoutConfirmRequest phone(@javax.annotation.Nullable String phone) {
-        this.phone = JsonNullable.<String>of(phone);
-        
-        return this;
-        }
+  public String getPhone() {
+        return phone.orElse(null);
+  }
 
-    /**
-        * Customer&#39;s phone. _Deprecated: Use customer object instead._
-    * @return phone
-        * @deprecated
-    */
-        @Deprecated
-    @javax.annotation.Nullable
-        @JsonIgnore
-    
-    public String getPhone() {
-                return phone.orElse(null);
-    }
-
-          @JsonProperty(JSON_PROPERTY_PHONE)
+  @JsonProperty(JSON_PROPERTY_PHONE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-        public JsonNullable<String> getPhone_JsonNullable() {
-        return phone;
-        }
+  public JsonNullable<String> getPhone_JsonNullable() {
+    return phone;
+  }
+  
+  @JsonProperty(JSON_PROPERTY_PHONE)
+  public void setPhone_JsonNullable(JsonNullable<String> phone) {
+    this.phone = phone;
+  }
+
+  public void setPhone(@javax.annotation.Nullable String phone) {
+    this.phone = JsonNullable.<String>of(phone);
+  }
+
+  public PayoutConfirmRequest phoneCountryCode(@javax.annotation.Nullable String phoneCountryCode) {
+    this.phoneCountryCode = JsonNullable.<String>of(phoneCountryCode);
     
-        @JsonProperty(JSON_PROPERTY_PHONE)
-        public void setPhone_JsonNullable(JsonNullable<String> phone) {
-        this.phone = phone;
-        }
+    return this;
+  }
 
-          public void setPhone(@javax.annotation.Nullable String phone) {
-            this.phone = JsonNullable.<String>of(phone);
-        }
+  /**
+   * Customer&#39;s phone country code. _Deprecated: Use customer object instead._
+   * @return phoneCountryCode
+   * @deprecated
+   */
+  @Deprecated
+  @javax.annotation.Nullable
+  @JsonIgnore
 
-        public PayoutConfirmRequest phoneCountryCode(@javax.annotation.Nullable String phoneCountryCode) {
-        this.phoneCountryCode = JsonNullable.<String>of(phoneCountryCode);
-        
-        return this;
-        }
+  public String getPhoneCountryCode() {
+        return phoneCountryCode.orElse(null);
+  }
 
-    /**
-        * Customer&#39;s phone country code. _Deprecated: Use customer object instead._
-    * @return phoneCountryCode
-        * @deprecated
-    */
-        @Deprecated
-    @javax.annotation.Nullable
-        @JsonIgnore
-    
-    public String getPhoneCountryCode() {
-                return phoneCountryCode.orElse(null);
-    }
-
-          @JsonProperty(JSON_PROPERTY_PHONE_COUNTRY_CODE)
+  @JsonProperty(JSON_PROPERTY_PHONE_COUNTRY_CODE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-        public JsonNullable<String> getPhoneCountryCode_JsonNullable() {
-        return phoneCountryCode;
-        }
-    
-        @JsonProperty(JSON_PROPERTY_PHONE_COUNTRY_CODE)
-        public void setPhoneCountryCode_JsonNullable(JsonNullable<String> phoneCountryCode) {
-        this.phoneCountryCode = phoneCountryCode;
-        }
+  public JsonNullable<String> getPhoneCountryCode_JsonNullable() {
+    return phoneCountryCode;
+  }
+  
+  @JsonProperty(JSON_PROPERTY_PHONE_COUNTRY_CODE)
+  public void setPhoneCountryCode_JsonNullable(JsonNullable<String> phoneCountryCode) {
+    this.phoneCountryCode = phoneCountryCode;
+  }
 
-          public void setPhoneCountryCode(@javax.annotation.Nullable String phoneCountryCode) {
-            this.phoneCountryCode = JsonNullable.<String>of(phoneCountryCode);
-        }
+  public void setPhoneCountryCode(@javax.annotation.Nullable String phoneCountryCode) {
+    this.phoneCountryCode = JsonNullable.<String>of(phoneCountryCode);
+  }
 
-@Override
-public boolean equals(Object o) {
+  @Override
+  public boolean equals(Object o) {
     if (this == o) {
-    return true;
+      return true;
     }
     if (o == null || getClass() != o.getClass()) {
-    return false;
+      return false;
     }
-        PayoutConfirmRequest payoutConfirmRequest = (PayoutConfirmRequest) o;
-        return equalsNullable(this.amount, payoutConfirmRequest.amount) &&
+    PayoutConfirmRequest payoutConfirmRequest = (PayoutConfirmRequest) o;
+    return equalsNullable(this.amount, payoutConfirmRequest.amount) &&
         equalsNullable(this.currency, payoutConfirmRequest.currency) &&
         equalsNullable(this.routing, payoutConfirmRequest.routing) &&
         equalsNullable(this.connector, payoutConfirmRequest.connector) &&
@@ -1173,366 +1173,366 @@ public boolean equals(Object o) {
         equalsNullable(this.name, payoutConfirmRequest.name) &&
         equalsNullable(this.phone, payoutConfirmRequest.phone) &&
         equalsNullable(this.phoneCountryCode, payoutConfirmRequest.phoneCountryCode);
-}
+  }
 
-    private static <T> boolean equalsNullable(JsonNullable<T> a, JsonNullable<T> b) {
-        return a == b || (a != null && b != null && a.isPresent() && b.isPresent() && Objects.deepEquals(a.get(), b.get()));
-        }
+  private static <T> boolean equalsNullable(JsonNullable<T> a, JsonNullable<T> b) {
+    return a == b || (a != null && b != null && a.isPresent() && b.isPresent() && Objects.deepEquals(a.get(), b.get()));
+  }
 
-    @Override
-    public int hashCode() {
-        return Objects.hash(hashCodeNullable(amount), hashCodeNullable(currency), hashCodeNullable(routing), hashCodeNullable(connector), hashCodeNullable(payoutType), hashCodeNullable(payoutMethodData), hashCodeNullable(billing), hashCodeNullable(autoFulfill), hashCodeNullable(customerId), hashCodeNullable(customer), clientSecret, hashCodeNullable(returnUrl), hashCodeNullable(businessCountry), hashCodeNullable(businessLabel), hashCodeNullable(description), hashCodeNullable(entityType), hashCodeNullable(recurring), hashCodeNullable(metadata), hashCodeNullable(payoutToken), hashCodeNullable(profileId), hashCodeNullable(priority), hashCodeNullable(payoutLink), hashCodeNullable(payoutLinkConfig), hashCodeNullable(sessionExpiry), hashCodeNullable(email), hashCodeNullable(name), hashCodeNullable(phone), hashCodeNullable(phoneCountryCode));
+  @Override
+  public int hashCode() {
+    return Objects.hash(hashCodeNullable(amount), hashCodeNullable(currency), hashCodeNullable(routing), hashCodeNullable(connector), hashCodeNullable(payoutType), hashCodeNullable(payoutMethodData), hashCodeNullable(billing), hashCodeNullable(autoFulfill), hashCodeNullable(customerId), hashCodeNullable(customer), clientSecret, hashCodeNullable(returnUrl), hashCodeNullable(businessCountry), hashCodeNullable(businessLabel), hashCodeNullable(description), hashCodeNullable(entityType), hashCodeNullable(recurring), hashCodeNullable(metadata), hashCodeNullable(payoutToken), hashCodeNullable(profileId), hashCodeNullable(priority), hashCodeNullable(payoutLink), hashCodeNullable(payoutLinkConfig), hashCodeNullable(sessionExpiry), hashCodeNullable(email), hashCodeNullable(name), hashCodeNullable(phone), hashCodeNullable(phoneCountryCode));
+  }
+
+  private static <T> int hashCodeNullable(JsonNullable<T> a) {
+    if (a == null) {
+      return 1;
     }
+    return a.isPresent() ? Arrays.deepHashCode(new Object[]{a.get()}) : 31;
+  }
 
-        private static <T> int hashCodeNullable(JsonNullable<T> a) {
-        if (a == null) {
-        return 1;
-        }
-        return a.isPresent() ? Arrays.deepHashCode(new Object[]{a.get()}) : 31;
-        }
-
-    @Override
-    public String toString() {
+  @Override
+  public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class PayoutConfirmRequest {\n");
-        sb.append("    amount: ").append(toIndentedString(amount)).append("\n");
-        sb.append("    currency: ").append(toIndentedString(currency)).append("\n");
-        sb.append("    routing: ").append(toIndentedString(routing)).append("\n");
-        sb.append("    connector: ").append(toIndentedString(connector)).append("\n");
-        sb.append("    payoutType: ").append(toIndentedString(payoutType)).append("\n");
-        sb.append("    payoutMethodData: ").append(toIndentedString(payoutMethodData)).append("\n");
-        sb.append("    billing: ").append(toIndentedString(billing)).append("\n");
-        sb.append("    autoFulfill: ").append(toIndentedString(autoFulfill)).append("\n");
-        sb.append("    customerId: ").append(toIndentedString(customerId)).append("\n");
-        sb.append("    customer: ").append(toIndentedString(customer)).append("\n");
-        sb.append("    clientSecret: ").append(toIndentedString(clientSecret)).append("\n");
-        sb.append("    returnUrl: ").append(toIndentedString(returnUrl)).append("\n");
-        sb.append("    businessCountry: ").append(toIndentedString(businessCountry)).append("\n");
-        sb.append("    businessLabel: ").append(toIndentedString(businessLabel)).append("\n");
-        sb.append("    description: ").append(toIndentedString(description)).append("\n");
-        sb.append("    entityType: ").append(toIndentedString(entityType)).append("\n");
-        sb.append("    recurring: ").append(toIndentedString(recurring)).append("\n");
-        sb.append("    metadata: ").append(toIndentedString(metadata)).append("\n");
-        sb.append("    payoutToken: ").append(toIndentedString(payoutToken)).append("\n");
-        sb.append("    profileId: ").append(toIndentedString(profileId)).append("\n");
-        sb.append("    priority: ").append(toIndentedString(priority)).append("\n");
-        sb.append("    payoutLink: ").append(toIndentedString(payoutLink)).append("\n");
-        sb.append("    payoutLinkConfig: ").append(toIndentedString(payoutLinkConfig)).append("\n");
-        sb.append("    sessionExpiry: ").append(toIndentedString(sessionExpiry)).append("\n");
-        sb.append("    email: ").append(toIndentedString(email)).append("\n");
-        sb.append("    name: ").append(toIndentedString(name)).append("\n");
-        sb.append("    phone: ").append(toIndentedString(phone)).append("\n");
-        sb.append("    phoneCountryCode: ").append(toIndentedString(phoneCountryCode)).append("\n");
+    sb.append("    amount: ").append(toIndentedString(amount)).append("\n");
+    sb.append("    currency: ").append(toIndentedString(currency)).append("\n");
+    sb.append("    routing: ").append(toIndentedString(routing)).append("\n");
+    sb.append("    connector: ").append(toIndentedString(connector)).append("\n");
+    sb.append("    payoutType: ").append(toIndentedString(payoutType)).append("\n");
+    sb.append("    payoutMethodData: ").append(toIndentedString(payoutMethodData)).append("\n");
+    sb.append("    billing: ").append(toIndentedString(billing)).append("\n");
+    sb.append("    autoFulfill: ").append(toIndentedString(autoFulfill)).append("\n");
+    sb.append("    customerId: ").append(toIndentedString(customerId)).append("\n");
+    sb.append("    customer: ").append(toIndentedString(customer)).append("\n");
+    sb.append("    clientSecret: ").append(toIndentedString(clientSecret)).append("\n");
+    sb.append("    returnUrl: ").append(toIndentedString(returnUrl)).append("\n");
+    sb.append("    businessCountry: ").append(toIndentedString(businessCountry)).append("\n");
+    sb.append("    businessLabel: ").append(toIndentedString(businessLabel)).append("\n");
+    sb.append("    description: ").append(toIndentedString(description)).append("\n");
+    sb.append("    entityType: ").append(toIndentedString(entityType)).append("\n");
+    sb.append("    recurring: ").append(toIndentedString(recurring)).append("\n");
+    sb.append("    metadata: ").append(toIndentedString(metadata)).append("\n");
+    sb.append("    payoutToken: ").append(toIndentedString(payoutToken)).append("\n");
+    sb.append("    profileId: ").append(toIndentedString(profileId)).append("\n");
+    sb.append("    priority: ").append(toIndentedString(priority)).append("\n");
+    sb.append("    payoutLink: ").append(toIndentedString(payoutLink)).append("\n");
+    sb.append("    payoutLinkConfig: ").append(toIndentedString(payoutLinkConfig)).append("\n");
+    sb.append("    sessionExpiry: ").append(toIndentedString(sessionExpiry)).append("\n");
+    sb.append("    email: ").append(toIndentedString(email)).append("\n");
+    sb.append("    name: ").append(toIndentedString(name)).append("\n");
+    sb.append("    phone: ").append(toIndentedString(phone)).append("\n");
+    sb.append("    phoneCountryCode: ").append(toIndentedString(phoneCountryCode)).append("\n");
     sb.append("}");
     return sb.toString();
-    }
+  }
 
-    /**
-    * Convert the given object to string with each line indented by 4 spaces
-    * (except the first line).
-    */
-    private String toIndentedString(Object o) {
+  /**
+   * Convert the given object to string with each line indented by 4 spaces
+   * (except the first line).
+   */
+  private String toIndentedString(Object o) {
     if (o == null) {
-    return "null";
+      return "null";
     }
     return o.toString().replace("\n", "\n    ");
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @return URL query string
+   */
+  public String toUrlQueryString() {
+    return toUrlQueryString(null);
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @param prefix prefix of the query string
+   * @return URL query string
+   */
+  public String toUrlQueryString(String prefix) {
+    String suffix = "";
+    String containerSuffix = "";
+    String containerPrefix = "";
+    if (prefix == null) {
+      // style=form, explode=true, e.g. /pet?name=cat&type=manx
+      prefix = "";
+    } else {
+      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+      prefix = prefix + "[";
+      suffix = "]";
+      containerSuffix = "]";
+      containerPrefix = "[";
     }
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @return URL query string
-        */
-        public String toUrlQueryString() {
-        return toUrlQueryString(null);
-        }
+    StringJoiner joiner = new StringJoiner("&");
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @param prefix prefix of the query string
-        * @return URL query string
-        */
-        public String toUrlQueryString(String prefix) {
-        String suffix = "";
-        String containerSuffix = "";
-        String containerPrefix = "";
-        if (prefix == null) {
-        // style=form, explode=true, e.g. /pet?name=cat&type=manx
-        prefix = "";
-        } else {
-        // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
-        prefix = prefix + "[";
-        suffix = "]";
-        containerSuffix = "]";
-        containerPrefix = "[";
-        }
-
-        StringJoiner joiner = new StringJoiner("&");
-
-            // add `amount` to the URL query string
-                        if (getAmount() != null) {
-                        try {
-                        joiner.add(String.format("%samount%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getAmount()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-            // add `currency` to the URL query string
-                            if (getCurrency() != null) {
-                            try {
-                            joiner.add(String.format("%scurrency%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCurrency()), "UTF-8").replaceAll("\\+", "%20")));
-                            } catch (UnsupportedEncodingException e) {
-                            // Should never happen, UTF-8 is always supported
-                            throw new RuntimeException(e);
-                            }
-                            }
-
-            // add `routing` to the URL query string
-                            if (getRouting() != null) {
-                            joiner.add(getRouting().toUrlQueryString(prefix + "routing" + suffix));
-                            }
-
-            // add `connector` to the URL query string
-                            if (getConnector() != null) {
-                            for (int i = 0; i < getConnector().size(); i++) {
-                            if (getConnector().get(i) != null) {
-                            try {
-                            joiner.add(String.format("%sconnector%s%s=%s", prefix, suffix,
-                            "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix),
-                            URLEncoder.encode(String.valueOf(getConnector().get(i)), "UTF-8").replaceAll("\\+", "%20")));
-                            } catch (UnsupportedEncodingException e) {
-                            // Should never happen, UTF-8 is always supported
-                            throw new RuntimeException(e);
-                            }
-                            }
-                            }
-                            }
-
-            // add `payout_type` to the URL query string
-                            if (getPayoutType() != null) {
-                            try {
-                            joiner.add(String.format("%spayout_type%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getPayoutType()), "UTF-8").replaceAll("\\+", "%20")));
-                            } catch (UnsupportedEncodingException e) {
-                            // Should never happen, UTF-8 is always supported
-                            throw new RuntimeException(e);
-                            }
-                            }
-
-            // add `payout_method_data` to the URL query string
-                            if (getPayoutMethodData() != null) {
-                            joiner.add(getPayoutMethodData().toUrlQueryString(prefix + "payout_method_data" + suffix));
-                            }
-
-            // add `billing` to the URL query string
-                            if (getBilling() != null) {
-                            joiner.add(getBilling().toUrlQueryString(prefix + "billing" + suffix));
-                            }
-
-            // add `auto_fulfill` to the URL query string
-                        if (getAutoFulfill() != null) {
-                        try {
-                        joiner.add(String.format("%sauto_fulfill%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getAutoFulfill()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-            // add `customer_id` to the URL query string
-                        if (getCustomerId() != null) {
-                        try {
-                        joiner.add(String.format("%scustomer_id%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCustomerId()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-            // add `customer` to the URL query string
-                            if (getCustomer() != null) {
-                            joiner.add(getCustomer().toUrlQueryString(prefix + "customer" + suffix));
-                            }
-
-            // add `client_secret` to the URL query string
-                        if (getClientSecret() != null) {
-                        try {
-                        joiner.add(String.format("%sclient_secret%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getClientSecret()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-            // add `return_url` to the URL query string
-                        if (getReturnUrl() != null) {
-                        try {
-                        joiner.add(String.format("%sreturn_url%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getReturnUrl()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-            // add `business_country` to the URL query string
-                            if (getBusinessCountry() != null) {
-                            try {
-                            joiner.add(String.format("%sbusiness_country%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getBusinessCountry()), "UTF-8").replaceAll("\\+", "%20")));
-                            } catch (UnsupportedEncodingException e) {
-                            // Should never happen, UTF-8 is always supported
-                            throw new RuntimeException(e);
-                            }
-                            }
-
-            // add `business_label` to the URL query string
-                        if (getBusinessLabel() != null) {
-                        try {
-                        joiner.add(String.format("%sbusiness_label%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getBusinessLabel()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-            // add `description` to the URL query string
-                        if (getDescription() != null) {
-                        try {
-                        joiner.add(String.format("%sdescription%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getDescription()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-            // add `entity_type` to the URL query string
-                            if (getEntityType() != null) {
-                            try {
-                            joiner.add(String.format("%sentity_type%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getEntityType()), "UTF-8").replaceAll("\\+", "%20")));
-                            } catch (UnsupportedEncodingException e) {
-                            // Should never happen, UTF-8 is always supported
-                            throw new RuntimeException(e);
-                            }
-                            }
-
-            // add `recurring` to the URL query string
-                        if (getRecurring() != null) {
-                        try {
-                        joiner.add(String.format("%srecurring%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getRecurring()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-            // add `metadata` to the URL query string
-                        if (getMetadata() != null) {
-                        try {
-                        joiner.add(String.format("%smetadata%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getMetadata()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-            // add `payout_token` to the URL query string
-                        if (getPayoutToken() != null) {
-                        try {
-                        joiner.add(String.format("%spayout_token%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getPayoutToken()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-            // add `profile_id` to the URL query string
-                        if (getProfileId() != null) {
-                        try {
-                        joiner.add(String.format("%sprofile_id%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getProfileId()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-            // add `priority` to the URL query string
-                            if (getPriority() != null) {
-                            try {
-                            joiner.add(String.format("%spriority%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getPriority()), "UTF-8").replaceAll("\\+", "%20")));
-                            } catch (UnsupportedEncodingException e) {
-                            // Should never happen, UTF-8 is always supported
-                            throw new RuntimeException(e);
-                            }
-                            }
-
-            // add `payout_link` to the URL query string
-                        if (getPayoutLink() != null) {
-                        try {
-                        joiner.add(String.format("%spayout_link%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getPayoutLink()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-            // add `payout_link_config` to the URL query string
-                            if (getPayoutLinkConfig() != null) {
-                            joiner.add(getPayoutLinkConfig().toUrlQueryString(prefix + "payout_link_config" + suffix));
-                            }
-
-            // add `session_expiry` to the URL query string
-                        if (getSessionExpiry() != null) {
-                        try {
-                        joiner.add(String.format("%ssession_expiry%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getSessionExpiry()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-            // add `email` to the URL query string
-                        if (getEmail() != null) {
-                        try {
-                        joiner.add(String.format("%semail%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getEmail()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-            // add `name` to the URL query string
-                        if (getName() != null) {
-                        try {
-                        joiner.add(String.format("%sname%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getName()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-            // add `phone` to the URL query string
-                        if (getPhone() != null) {
-                        try {
-                        joiner.add(String.format("%sphone%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getPhone()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-            // add `phone_country_code` to the URL query string
-                        if (getPhoneCountryCode() != null) {
-                        try {
-                        joiner.add(String.format("%sphone_country_code%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getPhoneCountryCode()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-        return joiner.toString();
-        }
-
+    // add `amount` to the URL query string
+    if (getAmount() != null) {
+      try {
+        joiner.add(String.format("%samount%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getAmount()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
     }
+
+    // add `currency` to the URL query string
+    if (getCurrency() != null) {
+      try {
+        joiner.add(String.format("%scurrency%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCurrency()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `routing` to the URL query string
+    if (getRouting() != null) {
+      joiner.add(getRouting().toUrlQueryString(prefix + "routing" + suffix));
+    }
+
+    // add `connector` to the URL query string
+    if (getConnector() != null) {
+      for (int i = 0; i < getConnector().size(); i++) {
+        if (getConnector().get(i) != null) {
+          try {
+            joiner.add(String.format("%sconnector%s%s=%s", prefix, suffix,
+                "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix),
+                URLEncoder.encode(String.valueOf(getConnector().get(i)), "UTF-8").replaceAll("\\+", "%20")));
+          } catch (UnsupportedEncodingException e) {
+            // Should never happen, UTF-8 is always supported
+            throw new RuntimeException(e);
+          }
+        }
+      }
+    }
+
+    // add `payout_type` to the URL query string
+    if (getPayoutType() != null) {
+      try {
+        joiner.add(String.format("%spayout_type%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getPayoutType()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `payout_method_data` to the URL query string
+    if (getPayoutMethodData() != null) {
+      joiner.add(getPayoutMethodData().toUrlQueryString(prefix + "payout_method_data" + suffix));
+    }
+
+    // add `billing` to the URL query string
+    if (getBilling() != null) {
+      joiner.add(getBilling().toUrlQueryString(prefix + "billing" + suffix));
+    }
+
+    // add `auto_fulfill` to the URL query string
+    if (getAutoFulfill() != null) {
+      try {
+        joiner.add(String.format("%sauto_fulfill%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getAutoFulfill()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `customer_id` to the URL query string
+    if (getCustomerId() != null) {
+      try {
+        joiner.add(String.format("%scustomer_id%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCustomerId()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `customer` to the URL query string
+    if (getCustomer() != null) {
+      joiner.add(getCustomer().toUrlQueryString(prefix + "customer" + suffix));
+    }
+
+    // add `client_secret` to the URL query string
+    if (getClientSecret() != null) {
+      try {
+        joiner.add(String.format("%sclient_secret%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getClientSecret()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `return_url` to the URL query string
+    if (getReturnUrl() != null) {
+      try {
+        joiner.add(String.format("%sreturn_url%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getReturnUrl()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `business_country` to the URL query string
+    if (getBusinessCountry() != null) {
+      try {
+        joiner.add(String.format("%sbusiness_country%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getBusinessCountry()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `business_label` to the URL query string
+    if (getBusinessLabel() != null) {
+      try {
+        joiner.add(String.format("%sbusiness_label%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getBusinessLabel()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `description` to the URL query string
+    if (getDescription() != null) {
+      try {
+        joiner.add(String.format("%sdescription%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getDescription()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `entity_type` to the URL query string
+    if (getEntityType() != null) {
+      try {
+        joiner.add(String.format("%sentity_type%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getEntityType()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `recurring` to the URL query string
+    if (getRecurring() != null) {
+      try {
+        joiner.add(String.format("%srecurring%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getRecurring()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `metadata` to the URL query string
+    if (getMetadata() != null) {
+      try {
+        joiner.add(String.format("%smetadata%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getMetadata()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `payout_token` to the URL query string
+    if (getPayoutToken() != null) {
+      try {
+        joiner.add(String.format("%spayout_token%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getPayoutToken()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `profile_id` to the URL query string
+    if (getProfileId() != null) {
+      try {
+        joiner.add(String.format("%sprofile_id%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getProfileId()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `priority` to the URL query string
+    if (getPriority() != null) {
+      try {
+        joiner.add(String.format("%spriority%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getPriority()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `payout_link` to the URL query string
+    if (getPayoutLink() != null) {
+      try {
+        joiner.add(String.format("%spayout_link%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getPayoutLink()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `payout_link_config` to the URL query string
+    if (getPayoutLinkConfig() != null) {
+      joiner.add(getPayoutLinkConfig().toUrlQueryString(prefix + "payout_link_config" + suffix));
+    }
+
+    // add `session_expiry` to the URL query string
+    if (getSessionExpiry() != null) {
+      try {
+        joiner.add(String.format("%ssession_expiry%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getSessionExpiry()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `email` to the URL query string
+    if (getEmail() != null) {
+      try {
+        joiner.add(String.format("%semail%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getEmail()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `name` to the URL query string
+    if (getName() != null) {
+      try {
+        joiner.add(String.format("%sname%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getName()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `phone` to the URL query string
+    if (getPhone() != null) {
+      try {
+        joiner.add(String.format("%sphone%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getPhone()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `phone_country_code` to the URL query string
+    if (getPhoneCountryCode() != null) {
+      try {
+        joiner.add(String.format("%sphone_country_code%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getPhoneCountryCode()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    return joiner.toString();
+  }
+
+}
 

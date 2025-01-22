@@ -28,16 +28,16 @@ import java.net.URLEncoder;
 import java.util.StringJoiner;
 
 /**
-* RefundResponse1
-*/
-    @JsonPropertyOrder({
-        RefundResponse1.JSON_PROPERTY_TYPE,
-        RefundResponse1.JSON_PROPERTY_OBJECT
-    })
-            @JsonTypeName("RefundResponse_1")
+ * RefundResponse1
+ */
+@JsonPropertyOrder({
+  RefundResponse1.JSON_PROPERTY_TYPE,
+  RefundResponse1.JSON_PROPERTY_OBJECT
+})
+@JsonTypeName("RefundResponse_1")
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class RefundResponse1 {
-              /**
+  /**
    * Gets or Sets type
    */
   public enum TypeEnum {
@@ -70,155 +70,155 @@ public class RefundResponse1 {
     }
   }
 
-        public static final String JSON_PROPERTY_TYPE = "type";
-    @javax.annotation.Nonnull
-            private TypeEnum type;
+  public static final String JSON_PROPERTY_TYPE = "type";
+  @javax.annotation.Nonnull
+  private TypeEnum type;
 
-        public static final String JSON_PROPERTY_OBJECT = "object";
-    @javax.annotation.Nonnull
-            private RefundResponse _object;
+  public static final String JSON_PROPERTY_OBJECT = "object";
+  @javax.annotation.Nonnull
+  private RefundResponse _object;
 
-public RefundResponse1() {
-}
+  public RefundResponse1() {
+  }
 
-        public RefundResponse1 type(@javax.annotation.Nonnull TypeEnum type) {
-        
-        this.type = type;
-        return this;
-        }
+  public RefundResponse1 type(@javax.annotation.Nonnull TypeEnum type) {
+    
+    this.type = type;
+    return this;
+  }
 
-    /**
-        * Get type
-    * @return type
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_TYPE)
+  /**
+   * Get type
+   * @return type
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_TYPE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public TypeEnum getType() {
-        return type;
-    }
+  public TypeEnum getType() {
+    return type;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_TYPE)
+  @JsonProperty(JSON_PROPERTY_TYPE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setType(@javax.annotation.Nonnull TypeEnum type) {
-            this.type = type;
-        }
+    this.type = type;
+  }
 
-        public RefundResponse1 _object(@javax.annotation.Nonnull RefundResponse _object) {
-        
-        this._object = _object;
-        return this;
-        }
+  public RefundResponse1 _object(@javax.annotation.Nonnull RefundResponse _object) {
+    
+    this._object = _object;
+    return this;
+  }
 
-    /**
-        * Get _object
-    * @return _object
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_OBJECT)
+  /**
+   * Get _object
+   * @return _object
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_OBJECT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public RefundResponse getObject() {
-        return _object;
-    }
+  public RefundResponse getObject() {
+    return _object;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_OBJECT)
+  @JsonProperty(JSON_PROPERTY_OBJECT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setObject(@javax.annotation.Nonnull RefundResponse _object) {
-            this._object = _object;
-        }
+    this._object = _object;
+  }
 
-@Override
-public boolean equals(Object o) {
+  @Override
+  public boolean equals(Object o) {
     if (this == o) {
-    return true;
+      return true;
     }
     if (o == null || getClass() != o.getClass()) {
-    return false;
+      return false;
     }
-        RefundResponse1 refundResponse1 = (RefundResponse1) o;
-        return Objects.equals(this.type, refundResponse1.type) &&
+    RefundResponse1 refundResponse1 = (RefundResponse1) o;
+    return Objects.equals(this.type, refundResponse1.type) &&
         Objects.equals(this._object, refundResponse1._object);
-}
+  }
 
-    @Override
-    public int hashCode() {
-        return Objects.hash(type, _object);
-    }
+  @Override
+  public int hashCode() {
+    return Objects.hash(type, _object);
+  }
 
-    @Override
-    public String toString() {
+  @Override
+  public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class RefundResponse1 {\n");
-        sb.append("    type: ").append(toIndentedString(type)).append("\n");
-        sb.append("    _object: ").append(toIndentedString(_object)).append("\n");
+    sb.append("    type: ").append(toIndentedString(type)).append("\n");
+    sb.append("    _object: ").append(toIndentedString(_object)).append("\n");
     sb.append("}");
     return sb.toString();
-    }
+  }
 
-    /**
-    * Convert the given object to string with each line indented by 4 spaces
-    * (except the first line).
-    */
-    private String toIndentedString(Object o) {
+  /**
+   * Convert the given object to string with each line indented by 4 spaces
+   * (except the first line).
+   */
+  private String toIndentedString(Object o) {
     if (o == null) {
-    return "null";
+      return "null";
     }
     return o.toString().replace("\n", "\n    ");
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @return URL query string
+   */
+  public String toUrlQueryString() {
+    return toUrlQueryString(null);
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @param prefix prefix of the query string
+   * @return URL query string
+   */
+  public String toUrlQueryString(String prefix) {
+    String suffix = "";
+    String containerSuffix = "";
+    String containerPrefix = "";
+    if (prefix == null) {
+      // style=form, explode=true, e.g. /pet?name=cat&type=manx
+      prefix = "";
+    } else {
+      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+      prefix = prefix + "[";
+      suffix = "]";
+      containerSuffix = "]";
+      containerPrefix = "[";
     }
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @return URL query string
-        */
-        public String toUrlQueryString() {
-        return toUrlQueryString(null);
-        }
+    StringJoiner joiner = new StringJoiner("&");
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @param prefix prefix of the query string
-        * @return URL query string
-        */
-        public String toUrlQueryString(String prefix) {
-        String suffix = "";
-        String containerSuffix = "";
-        String containerPrefix = "";
-        if (prefix == null) {
-        // style=form, explode=true, e.g. /pet?name=cat&type=manx
-        prefix = "";
-        } else {
-        // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
-        prefix = prefix + "[";
-        suffix = "]";
-        containerSuffix = "]";
-        containerPrefix = "[";
-        }
-
-        StringJoiner joiner = new StringJoiner("&");
-
-            // add `type` to the URL query string
-                        if (getType() != null) {
-                        try {
-                        joiner.add(String.format("%stype%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getType()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-            // add `object` to the URL query string
-                            if (getObject() != null) {
-                            joiner.add(getObject().toUrlQueryString(prefix + "object" + suffix));
-                            }
-
-        return joiner.toString();
-        }
-
+    // add `type` to the URL query string
+    if (getType() != null) {
+      try {
+        joiner.add(String.format("%stype%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getType()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
     }
+
+    // add `object` to the URL query string
+    if (getObject() != null) {
+      joiner.add(getObject().toUrlQueryString(prefix + "object" + suffix));
+    }
+
+    return joiner.toString();
+  }
+
+}
 

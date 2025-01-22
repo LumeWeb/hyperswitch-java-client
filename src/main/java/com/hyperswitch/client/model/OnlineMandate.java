@@ -27,168 +27,168 @@ import java.net.URLEncoder;
 import java.util.StringJoiner;
 
 /**
-* OnlineMandate
-*/
-    @JsonPropertyOrder({
-        OnlineMandate.JSON_PROPERTY_IP_ADDRESS,
-        OnlineMandate.JSON_PROPERTY_USER_AGENT
-    })
+ * OnlineMandate
+ */
+@JsonPropertyOrder({
+  OnlineMandate.JSON_PROPERTY_IP_ADDRESS,
+  OnlineMandate.JSON_PROPERTY_USER_AGENT
+})
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class OnlineMandate {
-        public static final String JSON_PROPERTY_IP_ADDRESS = "ip_address";
-    @javax.annotation.Nonnull
-            private String ipAddress;
+  public static final String JSON_PROPERTY_IP_ADDRESS = "ip_address";
+  @javax.annotation.Nonnull
+  private String ipAddress;
 
-        public static final String JSON_PROPERTY_USER_AGENT = "user_agent";
-    @javax.annotation.Nonnull
-            private String userAgent;
+  public static final String JSON_PROPERTY_USER_AGENT = "user_agent";
+  @javax.annotation.Nonnull
+  private String userAgent;
 
-public OnlineMandate() {
-}
+  public OnlineMandate() {
+  }
 
-        public OnlineMandate ipAddress(@javax.annotation.Nonnull String ipAddress) {
-        
-        this.ipAddress = ipAddress;
-        return this;
-        }
+  public OnlineMandate ipAddress(@javax.annotation.Nonnull String ipAddress) {
+    
+    this.ipAddress = ipAddress;
+    return this;
+  }
 
-    /**
-        * Ip address of the customer machine from which the mandate was created
-    * @return ipAddress
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_IP_ADDRESS)
+  /**
+   * Ip address of the customer machine from which the mandate was created
+   * @return ipAddress
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_IP_ADDRESS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public String getIpAddress() {
-        return ipAddress;
-    }
+  public String getIpAddress() {
+    return ipAddress;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_IP_ADDRESS)
+  @JsonProperty(JSON_PROPERTY_IP_ADDRESS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setIpAddress(@javax.annotation.Nonnull String ipAddress) {
-            this.ipAddress = ipAddress;
-        }
+    this.ipAddress = ipAddress;
+  }
 
-        public OnlineMandate userAgent(@javax.annotation.Nonnull String userAgent) {
-        
-        this.userAgent = userAgent;
-        return this;
-        }
+  public OnlineMandate userAgent(@javax.annotation.Nonnull String userAgent) {
+    
+    this.userAgent = userAgent;
+    return this;
+  }
 
-    /**
-        * The user-agent of the customer&#39;s browser
-    * @return userAgent
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_USER_AGENT)
+  /**
+   * The user-agent of the customer&#39;s browser
+   * @return userAgent
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_USER_AGENT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public String getUserAgent() {
-        return userAgent;
-    }
+  public String getUserAgent() {
+    return userAgent;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_USER_AGENT)
+  @JsonProperty(JSON_PROPERTY_USER_AGENT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setUserAgent(@javax.annotation.Nonnull String userAgent) {
-            this.userAgent = userAgent;
-        }
+    this.userAgent = userAgent;
+  }
 
-@Override
-public boolean equals(Object o) {
+  @Override
+  public boolean equals(Object o) {
     if (this == o) {
-    return true;
+      return true;
     }
     if (o == null || getClass() != o.getClass()) {
-    return false;
+      return false;
     }
-        OnlineMandate onlineMandate = (OnlineMandate) o;
-        return Objects.equals(this.ipAddress, onlineMandate.ipAddress) &&
+    OnlineMandate onlineMandate = (OnlineMandate) o;
+    return Objects.equals(this.ipAddress, onlineMandate.ipAddress) &&
         Objects.equals(this.userAgent, onlineMandate.userAgent);
-}
+  }
 
-    @Override
-    public int hashCode() {
-        return Objects.hash(ipAddress, userAgent);
-    }
+  @Override
+  public int hashCode() {
+    return Objects.hash(ipAddress, userAgent);
+  }
 
-    @Override
-    public String toString() {
+  @Override
+  public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class OnlineMandate {\n");
-        sb.append("    ipAddress: ").append(toIndentedString(ipAddress)).append("\n");
-        sb.append("    userAgent: ").append(toIndentedString(userAgent)).append("\n");
+    sb.append("    ipAddress: ").append(toIndentedString(ipAddress)).append("\n");
+    sb.append("    userAgent: ").append(toIndentedString(userAgent)).append("\n");
     sb.append("}");
     return sb.toString();
-    }
+  }
 
-    /**
-    * Convert the given object to string with each line indented by 4 spaces
-    * (except the first line).
-    */
-    private String toIndentedString(Object o) {
+  /**
+   * Convert the given object to string with each line indented by 4 spaces
+   * (except the first line).
+   */
+  private String toIndentedString(Object o) {
     if (o == null) {
-    return "null";
+      return "null";
     }
     return o.toString().replace("\n", "\n    ");
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @return URL query string
+   */
+  public String toUrlQueryString() {
+    return toUrlQueryString(null);
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @param prefix prefix of the query string
+   * @return URL query string
+   */
+  public String toUrlQueryString(String prefix) {
+    String suffix = "";
+    String containerSuffix = "";
+    String containerPrefix = "";
+    if (prefix == null) {
+      // style=form, explode=true, e.g. /pet?name=cat&type=manx
+      prefix = "";
+    } else {
+      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+      prefix = prefix + "[";
+      suffix = "]";
+      containerSuffix = "]";
+      containerPrefix = "[";
     }
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @return URL query string
-        */
-        public String toUrlQueryString() {
-        return toUrlQueryString(null);
-        }
+    StringJoiner joiner = new StringJoiner("&");
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @param prefix prefix of the query string
-        * @return URL query string
-        */
-        public String toUrlQueryString(String prefix) {
-        String suffix = "";
-        String containerSuffix = "";
-        String containerPrefix = "";
-        if (prefix == null) {
-        // style=form, explode=true, e.g. /pet?name=cat&type=manx
-        prefix = "";
-        } else {
-        // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
-        prefix = prefix + "[";
-        suffix = "]";
-        containerSuffix = "]";
-        containerPrefix = "[";
-        }
-
-        StringJoiner joiner = new StringJoiner("&");
-
-            // add `ip_address` to the URL query string
-                        if (getIpAddress() != null) {
-                        try {
-                        joiner.add(String.format("%sip_address%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getIpAddress()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-            // add `user_agent` to the URL query string
-                        if (getUserAgent() != null) {
-                        try {
-                        joiner.add(String.format("%suser_agent%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getUserAgent()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-        return joiner.toString();
-        }
-
+    // add `ip_address` to the URL query string
+    if (getIpAddress() != null) {
+      try {
+        joiner.add(String.format("%sip_address%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getIpAddress()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
     }
+
+    // add `user_agent` to the URL query string
+    if (getUserAgent() != null) {
+      try {
+        joiner.add(String.format("%suser_agent%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getUserAgent()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    return joiner.toString();
+  }
+
+}
 

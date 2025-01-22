@@ -27,168 +27,168 @@ import java.net.URLEncoder;
 import java.util.StringJoiner;
 
 /**
-* GpayTokenizationData
-*/
-    @JsonPropertyOrder({
-        GpayTokenizationData.JSON_PROPERTY_TYPE,
-        GpayTokenizationData.JSON_PROPERTY_TOKEN
-    })
+ * GpayTokenizationData
+ */
+@JsonPropertyOrder({
+  GpayTokenizationData.JSON_PROPERTY_TYPE,
+  GpayTokenizationData.JSON_PROPERTY_TOKEN
+})
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class GpayTokenizationData {
-        public static final String JSON_PROPERTY_TYPE = "type";
-    @javax.annotation.Nonnull
-            private String type;
+  public static final String JSON_PROPERTY_TYPE = "type";
+  @javax.annotation.Nonnull
+  private String type;
 
-        public static final String JSON_PROPERTY_TOKEN = "token";
-    @javax.annotation.Nonnull
-            private String token;
+  public static final String JSON_PROPERTY_TOKEN = "token";
+  @javax.annotation.Nonnull
+  private String token;
 
-public GpayTokenizationData() {
-}
+  public GpayTokenizationData() {
+  }
 
-        public GpayTokenizationData type(@javax.annotation.Nonnull String type) {
-        
-        this.type = type;
-        return this;
-        }
+  public GpayTokenizationData type(@javax.annotation.Nonnull String type) {
+    
+    this.type = type;
+    return this;
+  }
 
-    /**
-        * The type of the token
-    * @return type
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_TYPE)
+  /**
+   * The type of the token
+   * @return type
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_TYPE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public String getType() {
-        return type;
-    }
+  public String getType() {
+    return type;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_TYPE)
+  @JsonProperty(JSON_PROPERTY_TYPE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setType(@javax.annotation.Nonnull String type) {
-            this.type = type;
-        }
+    this.type = type;
+  }
 
-        public GpayTokenizationData token(@javax.annotation.Nonnull String token) {
-        
-        this.token = token;
-        return this;
-        }
+  public GpayTokenizationData token(@javax.annotation.Nonnull String token) {
+    
+    this.token = token;
+    return this;
+  }
 
-    /**
-        * Token generated for the wallet
-    * @return token
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_TOKEN)
+  /**
+   * Token generated for the wallet
+   * @return token
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_TOKEN)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public String getToken() {
-        return token;
-    }
+  public String getToken() {
+    return token;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_TOKEN)
+  @JsonProperty(JSON_PROPERTY_TOKEN)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setToken(@javax.annotation.Nonnull String token) {
-            this.token = token;
-        }
+    this.token = token;
+  }
 
-@Override
-public boolean equals(Object o) {
+  @Override
+  public boolean equals(Object o) {
     if (this == o) {
-    return true;
+      return true;
     }
     if (o == null || getClass() != o.getClass()) {
-    return false;
+      return false;
     }
-        GpayTokenizationData gpayTokenizationData = (GpayTokenizationData) o;
-        return Objects.equals(this.type, gpayTokenizationData.type) &&
+    GpayTokenizationData gpayTokenizationData = (GpayTokenizationData) o;
+    return Objects.equals(this.type, gpayTokenizationData.type) &&
         Objects.equals(this.token, gpayTokenizationData.token);
-}
+  }
 
-    @Override
-    public int hashCode() {
-        return Objects.hash(type, token);
-    }
+  @Override
+  public int hashCode() {
+    return Objects.hash(type, token);
+  }
 
-    @Override
-    public String toString() {
+  @Override
+  public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class GpayTokenizationData {\n");
-        sb.append("    type: ").append(toIndentedString(type)).append("\n");
-        sb.append("    token: ").append(toIndentedString(token)).append("\n");
+    sb.append("    type: ").append(toIndentedString(type)).append("\n");
+    sb.append("    token: ").append(toIndentedString(token)).append("\n");
     sb.append("}");
     return sb.toString();
-    }
+  }
 
-    /**
-    * Convert the given object to string with each line indented by 4 spaces
-    * (except the first line).
-    */
-    private String toIndentedString(Object o) {
+  /**
+   * Convert the given object to string with each line indented by 4 spaces
+   * (except the first line).
+   */
+  private String toIndentedString(Object o) {
     if (o == null) {
-    return "null";
+      return "null";
     }
     return o.toString().replace("\n", "\n    ");
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @return URL query string
+   */
+  public String toUrlQueryString() {
+    return toUrlQueryString(null);
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @param prefix prefix of the query string
+   * @return URL query string
+   */
+  public String toUrlQueryString(String prefix) {
+    String suffix = "";
+    String containerSuffix = "";
+    String containerPrefix = "";
+    if (prefix == null) {
+      // style=form, explode=true, e.g. /pet?name=cat&type=manx
+      prefix = "";
+    } else {
+      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+      prefix = prefix + "[";
+      suffix = "]";
+      containerSuffix = "]";
+      containerPrefix = "[";
     }
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @return URL query string
-        */
-        public String toUrlQueryString() {
-        return toUrlQueryString(null);
-        }
+    StringJoiner joiner = new StringJoiner("&");
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @param prefix prefix of the query string
-        * @return URL query string
-        */
-        public String toUrlQueryString(String prefix) {
-        String suffix = "";
-        String containerSuffix = "";
-        String containerPrefix = "";
-        if (prefix == null) {
-        // style=form, explode=true, e.g. /pet?name=cat&type=manx
-        prefix = "";
-        } else {
-        // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
-        prefix = prefix + "[";
-        suffix = "]";
-        containerSuffix = "]";
-        containerPrefix = "[";
-        }
-
-        StringJoiner joiner = new StringJoiner("&");
-
-            // add `type` to the URL query string
-                        if (getType() != null) {
-                        try {
-                        joiner.add(String.format("%stype%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getType()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-            // add `token` to the URL query string
-                        if (getToken() != null) {
-                        try {
-                        joiner.add(String.format("%stoken%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getToken()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-        return joiner.toString();
-        }
-
+    // add `type` to the URL query string
+    if (getType() != null) {
+      try {
+        joiner.add(String.format("%stype%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getType()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
     }
+
+    // add `token` to the URL query string
+    if (getToken() != null) {
+      try {
+        joiner.add(String.format("%stoken%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getToken()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    return joiner.toString();
+  }
+
+}
 

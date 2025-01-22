@@ -31,218 +31,218 @@ import java.net.URLEncoder;
 import java.util.StringJoiner;
 
 /**
-* PaymentsSessionResponse
-*/
-    @JsonPropertyOrder({
-        PaymentsSessionResponse.JSON_PROPERTY_PAYMENT_ID,
-        PaymentsSessionResponse.JSON_PROPERTY_CLIENT_SECRET,
-        PaymentsSessionResponse.JSON_PROPERTY_SESSION_TOKEN
-    })
+ * PaymentsSessionResponse
+ */
+@JsonPropertyOrder({
+  PaymentsSessionResponse.JSON_PROPERTY_PAYMENT_ID,
+  PaymentsSessionResponse.JSON_PROPERTY_CLIENT_SECRET,
+  PaymentsSessionResponse.JSON_PROPERTY_SESSION_TOKEN
+})
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class PaymentsSessionResponse {
-        public static final String JSON_PROPERTY_PAYMENT_ID = "payment_id";
-    @javax.annotation.Nonnull
-            private String paymentId;
+  public static final String JSON_PROPERTY_PAYMENT_ID = "payment_id";
+  @javax.annotation.Nonnull
+  private String paymentId;
 
-        public static final String JSON_PROPERTY_CLIENT_SECRET = "client_secret";
-    @javax.annotation.Nonnull
-            private String clientSecret;
+  public static final String JSON_PROPERTY_CLIENT_SECRET = "client_secret";
+  @javax.annotation.Nonnull
+  private String clientSecret;
 
-        public static final String JSON_PROPERTY_SESSION_TOKEN = "session_token";
-    @javax.annotation.Nonnull
-            private List<SessionToken> sessionToken = new ArrayList<>();
+  public static final String JSON_PROPERTY_SESSION_TOKEN = "session_token";
+  @javax.annotation.Nonnull
+  private List<SessionToken> sessionToken = new ArrayList<>();
 
-public PaymentsSessionResponse() {
-}
+  public PaymentsSessionResponse() {
+  }
 
-        public PaymentsSessionResponse paymentId(@javax.annotation.Nonnull String paymentId) {
-        
-        this.paymentId = paymentId;
-        return this;
-        }
+  public PaymentsSessionResponse paymentId(@javax.annotation.Nonnull String paymentId) {
+    
+    this.paymentId = paymentId;
+    return this;
+  }
 
-    /**
-        * The identifier for the payment
-    * @return paymentId
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_PAYMENT_ID)
+  /**
+   * The identifier for the payment
+   * @return paymentId
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_PAYMENT_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public String getPaymentId() {
-        return paymentId;
-    }
+  public String getPaymentId() {
+    return paymentId;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_PAYMENT_ID)
+  @JsonProperty(JSON_PROPERTY_PAYMENT_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setPaymentId(@javax.annotation.Nonnull String paymentId) {
-            this.paymentId = paymentId;
-        }
+    this.paymentId = paymentId;
+  }
 
-        public PaymentsSessionResponse clientSecret(@javax.annotation.Nonnull String clientSecret) {
-        
-        this.clientSecret = clientSecret;
-        return this;
-        }
+  public PaymentsSessionResponse clientSecret(@javax.annotation.Nonnull String clientSecret) {
+    
+    this.clientSecret = clientSecret;
+    return this;
+  }
 
-    /**
-        * This is a token which expires after 15 minutes, used from the client to authenticate and create sessions from the SDK
-    * @return clientSecret
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_CLIENT_SECRET)
+  /**
+   * This is a token which expires after 15 minutes, used from the client to authenticate and create sessions from the SDK
+   * @return clientSecret
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_CLIENT_SECRET)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public String getClientSecret() {
-        return clientSecret;
-    }
+  public String getClientSecret() {
+    return clientSecret;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_CLIENT_SECRET)
+  @JsonProperty(JSON_PROPERTY_CLIENT_SECRET)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setClientSecret(@javax.annotation.Nonnull String clientSecret) {
-            this.clientSecret = clientSecret;
-        }
+    this.clientSecret = clientSecret;
+  }
 
-        public PaymentsSessionResponse sessionToken(@javax.annotation.Nonnull List<SessionToken> sessionToken) {
-        
-        this.sessionToken = sessionToken;
-        return this;
-        }
+  public PaymentsSessionResponse sessionToken(@javax.annotation.Nonnull List<SessionToken> sessionToken) {
+    
+    this.sessionToken = sessionToken;
+    return this;
+  }
 
-            public PaymentsSessionResponse addSessionTokenItem(SessionToken sessionTokenItem) {
-                if (this.sessionToken == null) {
-                this.sessionToken = new ArrayList<>();
-                }
-                this.sessionToken.add(sessionTokenItem);
-                return this;
-            }
+  public PaymentsSessionResponse addSessionTokenItem(SessionToken sessionTokenItem) {
+    if (this.sessionToken == null) {
+      this.sessionToken = new ArrayList<>();
+    }
+    this.sessionToken.add(sessionTokenItem);
+    return this;
+  }
 
-    /**
-        * The list of session token object
-    * @return sessionToken
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_SESSION_TOKEN)
+  /**
+   * The list of session token object
+   * @return sessionToken
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_SESSION_TOKEN)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public List<SessionToken> getSessionToken() {
-        return sessionToken;
-    }
+  public List<SessionToken> getSessionToken() {
+    return sessionToken;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_SESSION_TOKEN)
+  @JsonProperty(JSON_PROPERTY_SESSION_TOKEN)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setSessionToken(@javax.annotation.Nonnull List<SessionToken> sessionToken) {
-            this.sessionToken = sessionToken;
-        }
+    this.sessionToken = sessionToken;
+  }
 
-@Override
-public boolean equals(Object o) {
+  @Override
+  public boolean equals(Object o) {
     if (this == o) {
-    return true;
+      return true;
     }
     if (o == null || getClass() != o.getClass()) {
-    return false;
+      return false;
     }
-        PaymentsSessionResponse paymentsSessionResponse = (PaymentsSessionResponse) o;
-        return Objects.equals(this.paymentId, paymentsSessionResponse.paymentId) &&
+    PaymentsSessionResponse paymentsSessionResponse = (PaymentsSessionResponse) o;
+    return Objects.equals(this.paymentId, paymentsSessionResponse.paymentId) &&
         Objects.equals(this.clientSecret, paymentsSessionResponse.clientSecret) &&
         Objects.equals(this.sessionToken, paymentsSessionResponse.sessionToken);
-}
+  }
 
-    @Override
-    public int hashCode() {
-        return Objects.hash(paymentId, clientSecret, sessionToken);
-    }
+  @Override
+  public int hashCode() {
+    return Objects.hash(paymentId, clientSecret, sessionToken);
+  }
 
-    @Override
-    public String toString() {
+  @Override
+  public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class PaymentsSessionResponse {\n");
-        sb.append("    paymentId: ").append(toIndentedString(paymentId)).append("\n");
-        sb.append("    clientSecret: ").append(toIndentedString(clientSecret)).append("\n");
-        sb.append("    sessionToken: ").append(toIndentedString(sessionToken)).append("\n");
+    sb.append("    paymentId: ").append(toIndentedString(paymentId)).append("\n");
+    sb.append("    clientSecret: ").append(toIndentedString(clientSecret)).append("\n");
+    sb.append("    sessionToken: ").append(toIndentedString(sessionToken)).append("\n");
     sb.append("}");
     return sb.toString();
-    }
+  }
 
-    /**
-    * Convert the given object to string with each line indented by 4 spaces
-    * (except the first line).
-    */
-    private String toIndentedString(Object o) {
+  /**
+   * Convert the given object to string with each line indented by 4 spaces
+   * (except the first line).
+   */
+  private String toIndentedString(Object o) {
     if (o == null) {
-    return "null";
+      return "null";
     }
     return o.toString().replace("\n", "\n    ");
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @return URL query string
+   */
+  public String toUrlQueryString() {
+    return toUrlQueryString(null);
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @param prefix prefix of the query string
+   * @return URL query string
+   */
+  public String toUrlQueryString(String prefix) {
+    String suffix = "";
+    String containerSuffix = "";
+    String containerPrefix = "";
+    if (prefix == null) {
+      // style=form, explode=true, e.g. /pet?name=cat&type=manx
+      prefix = "";
+    } else {
+      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+      prefix = prefix + "[";
+      suffix = "]";
+      containerSuffix = "]";
+      containerPrefix = "[";
     }
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @return URL query string
-        */
-        public String toUrlQueryString() {
-        return toUrlQueryString(null);
-        }
+    StringJoiner joiner = new StringJoiner("&");
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @param prefix prefix of the query string
-        * @return URL query string
-        */
-        public String toUrlQueryString(String prefix) {
-        String suffix = "";
-        String containerSuffix = "";
-        String containerPrefix = "";
-        if (prefix == null) {
-        // style=form, explode=true, e.g. /pet?name=cat&type=manx
-        prefix = "";
-        } else {
-        // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
-        prefix = prefix + "[";
-        suffix = "]";
-        containerSuffix = "]";
-        containerPrefix = "[";
-        }
-
-        StringJoiner joiner = new StringJoiner("&");
-
-            // add `payment_id` to the URL query string
-                        if (getPaymentId() != null) {
-                        try {
-                        joiner.add(String.format("%spayment_id%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getPaymentId()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-            // add `client_secret` to the URL query string
-                        if (getClientSecret() != null) {
-                        try {
-                        joiner.add(String.format("%sclient_secret%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getClientSecret()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-            // add `session_token` to the URL query string
-                            if (getSessionToken() != null) {
-                            for (int i = 0; i < getSessionToken().size(); i++) {
-                            if (getSessionToken().get(i) != null) {
-                            joiner.add(getSessionToken().get(i).toUrlQueryString(String.format("%ssession_token%s%s", prefix, suffix,
-                            "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix))));
-                            }
-                            }
-                            }
-
-        return joiner.toString();
-        }
-
+    // add `payment_id` to the URL query string
+    if (getPaymentId() != null) {
+      try {
+        joiner.add(String.format("%spayment_id%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getPaymentId()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
     }
+
+    // add `client_secret` to the URL query string
+    if (getClientSecret() != null) {
+      try {
+        joiner.add(String.format("%sclient_secret%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getClientSecret()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `session_token` to the URL query string
+    if (getSessionToken() != null) {
+      for (int i = 0; i < getSessionToken().size(); i++) {
+        if (getSessionToken().get(i) != null) {
+          joiner.add(getSessionToken().get(i).toUrlQueryString(String.format("%ssession_token%s%s", prefix, suffix,
+              "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix))));
+        }
+      }
+    }
+
+    return joiner.toString();
+  }
+
+}
 

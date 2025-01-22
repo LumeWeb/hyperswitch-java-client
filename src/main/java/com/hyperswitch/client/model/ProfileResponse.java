@@ -40,1151 +40,1151 @@ import java.net.URLEncoder;
 import java.util.StringJoiner;
 
 /**
-* ProfileResponse
-*/
-    @JsonPropertyOrder({
-        ProfileResponse.JSON_PROPERTY_MERCHANT_ID,
-        ProfileResponse.JSON_PROPERTY_PROFILE_ID,
-        ProfileResponse.JSON_PROPERTY_PROFILE_NAME,
-        ProfileResponse.JSON_PROPERTY_RETURN_URL,
-        ProfileResponse.JSON_PROPERTY_ENABLE_PAYMENT_RESPONSE_HASH,
-        ProfileResponse.JSON_PROPERTY_PAYMENT_RESPONSE_HASH_KEY,
-        ProfileResponse.JSON_PROPERTY_REDIRECT_TO_MERCHANT_WITH_HTTP_POST,
-        ProfileResponse.JSON_PROPERTY_WEBHOOK_DETAILS,
-        ProfileResponse.JSON_PROPERTY_METADATA,
-        ProfileResponse.JSON_PROPERTY_ROUTING_ALGORITHM,
-        ProfileResponse.JSON_PROPERTY_INTENT_FULFILLMENT_TIME,
-        ProfileResponse.JSON_PROPERTY_FRM_ROUTING_ALGORITHM,
-        ProfileResponse.JSON_PROPERTY_PAYOUT_ROUTING_ALGORITHM,
-        ProfileResponse.JSON_PROPERTY_APPLEPAY_VERIFIED_DOMAINS,
-        ProfileResponse.JSON_PROPERTY_SESSION_EXPIRY,
-        ProfileResponse.JSON_PROPERTY_PAYMENT_LINK_CONFIG,
-        ProfileResponse.JSON_PROPERTY_AUTHENTICATION_CONNECTOR_DETAILS,
-        ProfileResponse.JSON_PROPERTY_USE_BILLING_AS_PAYMENT_METHOD_BILLING,
-        ProfileResponse.JSON_PROPERTY_EXTENDED_CARD_INFO_CONFIG,
-        ProfileResponse.JSON_PROPERTY_COLLECT_SHIPPING_DETAILS_FROM_WALLET_CONNECTOR,
-        ProfileResponse.JSON_PROPERTY_COLLECT_BILLING_DETAILS_FROM_WALLET_CONNECTOR,
-        ProfileResponse.JSON_PROPERTY_ALWAYS_COLLECT_SHIPPING_DETAILS_FROM_WALLET_CONNECTOR,
-        ProfileResponse.JSON_PROPERTY_ALWAYS_COLLECT_BILLING_DETAILS_FROM_WALLET_CONNECTOR,
-        ProfileResponse.JSON_PROPERTY_IS_CONNECTOR_AGNOSTIC_MIT_ENABLED,
-        ProfileResponse.JSON_PROPERTY_PAYOUT_LINK_CONFIG,
-        ProfileResponse.JSON_PROPERTY_OUTGOING_WEBHOOK_CUSTOM_HTTP_HEADERS,
-        ProfileResponse.JSON_PROPERTY_TAX_CONNECTOR_ID,
-        ProfileResponse.JSON_PROPERTY_IS_TAX_CONNECTOR_ENABLED,
-        ProfileResponse.JSON_PROPERTY_IS_NETWORK_TOKENIZATION_ENABLED,
-        ProfileResponse.JSON_PROPERTY_IS_AUTO_RETRIES_ENABLED,
-        ProfileResponse.JSON_PROPERTY_MAX_AUTO_RETRIES_ENABLED
-    })
+ * ProfileResponse
+ */
+@JsonPropertyOrder({
+  ProfileResponse.JSON_PROPERTY_MERCHANT_ID,
+  ProfileResponse.JSON_PROPERTY_PROFILE_ID,
+  ProfileResponse.JSON_PROPERTY_PROFILE_NAME,
+  ProfileResponse.JSON_PROPERTY_RETURN_URL,
+  ProfileResponse.JSON_PROPERTY_ENABLE_PAYMENT_RESPONSE_HASH,
+  ProfileResponse.JSON_PROPERTY_PAYMENT_RESPONSE_HASH_KEY,
+  ProfileResponse.JSON_PROPERTY_REDIRECT_TO_MERCHANT_WITH_HTTP_POST,
+  ProfileResponse.JSON_PROPERTY_WEBHOOK_DETAILS,
+  ProfileResponse.JSON_PROPERTY_METADATA,
+  ProfileResponse.JSON_PROPERTY_ROUTING_ALGORITHM,
+  ProfileResponse.JSON_PROPERTY_INTENT_FULFILLMENT_TIME,
+  ProfileResponse.JSON_PROPERTY_FRM_ROUTING_ALGORITHM,
+  ProfileResponse.JSON_PROPERTY_PAYOUT_ROUTING_ALGORITHM,
+  ProfileResponse.JSON_PROPERTY_APPLEPAY_VERIFIED_DOMAINS,
+  ProfileResponse.JSON_PROPERTY_SESSION_EXPIRY,
+  ProfileResponse.JSON_PROPERTY_PAYMENT_LINK_CONFIG,
+  ProfileResponse.JSON_PROPERTY_AUTHENTICATION_CONNECTOR_DETAILS,
+  ProfileResponse.JSON_PROPERTY_USE_BILLING_AS_PAYMENT_METHOD_BILLING,
+  ProfileResponse.JSON_PROPERTY_EXTENDED_CARD_INFO_CONFIG,
+  ProfileResponse.JSON_PROPERTY_COLLECT_SHIPPING_DETAILS_FROM_WALLET_CONNECTOR,
+  ProfileResponse.JSON_PROPERTY_COLLECT_BILLING_DETAILS_FROM_WALLET_CONNECTOR,
+  ProfileResponse.JSON_PROPERTY_ALWAYS_COLLECT_SHIPPING_DETAILS_FROM_WALLET_CONNECTOR,
+  ProfileResponse.JSON_PROPERTY_ALWAYS_COLLECT_BILLING_DETAILS_FROM_WALLET_CONNECTOR,
+  ProfileResponse.JSON_PROPERTY_IS_CONNECTOR_AGNOSTIC_MIT_ENABLED,
+  ProfileResponse.JSON_PROPERTY_PAYOUT_LINK_CONFIG,
+  ProfileResponse.JSON_PROPERTY_OUTGOING_WEBHOOK_CUSTOM_HTTP_HEADERS,
+  ProfileResponse.JSON_PROPERTY_TAX_CONNECTOR_ID,
+  ProfileResponse.JSON_PROPERTY_IS_TAX_CONNECTOR_ENABLED,
+  ProfileResponse.JSON_PROPERTY_IS_NETWORK_TOKENIZATION_ENABLED,
+  ProfileResponse.JSON_PROPERTY_IS_AUTO_RETRIES_ENABLED,
+  ProfileResponse.JSON_PROPERTY_MAX_AUTO_RETRIES_ENABLED
+})
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class ProfileResponse {
-        public static final String JSON_PROPERTY_MERCHANT_ID = "merchant_id";
-    @javax.annotation.Nonnull
-            private String merchantId;
+  public static final String JSON_PROPERTY_MERCHANT_ID = "merchant_id";
+  @javax.annotation.Nonnull
+  private String merchantId;
 
-        public static final String JSON_PROPERTY_PROFILE_ID = "profile_id";
-    @javax.annotation.Nonnull
-            private String profileId;
+  public static final String JSON_PROPERTY_PROFILE_ID = "profile_id";
+  @javax.annotation.Nonnull
+  private String profileId;
 
-        public static final String JSON_PROPERTY_PROFILE_NAME = "profile_name";
-    @javax.annotation.Nonnull
-            private String profileName;
+  public static final String JSON_PROPERTY_PROFILE_NAME = "profile_name";
+  @javax.annotation.Nonnull
+  private String profileName;
 
-        public static final String JSON_PROPERTY_RETURN_URL = "return_url";
-    @javax.annotation.Nullable
-            private JsonNullable<String> returnUrl = JsonNullable.<String>undefined();
+  public static final String JSON_PROPERTY_RETURN_URL = "return_url";
+  @javax.annotation.Nullable
+  private JsonNullable<String> returnUrl = JsonNullable.<String>undefined();
 
-        public static final String JSON_PROPERTY_ENABLE_PAYMENT_RESPONSE_HASH = "enable_payment_response_hash";
-    @javax.annotation.Nonnull
-            private Boolean enablePaymentResponseHash = true;
+  public static final String JSON_PROPERTY_ENABLE_PAYMENT_RESPONSE_HASH = "enable_payment_response_hash";
+  @javax.annotation.Nonnull
+  private Boolean enablePaymentResponseHash = true;
 
-        public static final String JSON_PROPERTY_PAYMENT_RESPONSE_HASH_KEY = "payment_response_hash_key";
-    @javax.annotation.Nullable
-            private JsonNullable<String> paymentResponseHashKey = JsonNullable.<String>undefined();
+  public static final String JSON_PROPERTY_PAYMENT_RESPONSE_HASH_KEY = "payment_response_hash_key";
+  @javax.annotation.Nullable
+  private JsonNullable<String> paymentResponseHashKey = JsonNullable.<String>undefined();
 
-        public static final String JSON_PROPERTY_REDIRECT_TO_MERCHANT_WITH_HTTP_POST = "redirect_to_merchant_with_http_post";
-    @javax.annotation.Nonnull
-            private Boolean redirectToMerchantWithHttpPost = false;
+  public static final String JSON_PROPERTY_REDIRECT_TO_MERCHANT_WITH_HTTP_POST = "redirect_to_merchant_with_http_post";
+  @javax.annotation.Nonnull
+  private Boolean redirectToMerchantWithHttpPost = false;
 
-        public static final String JSON_PROPERTY_WEBHOOK_DETAILS = "webhook_details";
-    @javax.annotation.Nullable
-            private JsonNullable<WebhookDetails> webhookDetails = JsonNullable.<WebhookDetails>undefined();
+  public static final String JSON_PROPERTY_WEBHOOK_DETAILS = "webhook_details";
+  @javax.annotation.Nullable
+  private JsonNullable<WebhookDetails> webhookDetails = JsonNullable.<WebhookDetails>undefined();
 
-        public static final String JSON_PROPERTY_METADATA = "metadata";
-    @javax.annotation.Nullable
-            private JsonNullable<Object> metadata = JsonNullable.<Object>undefined();
+  public static final String JSON_PROPERTY_METADATA = "metadata";
+  @javax.annotation.Nullable
+  private JsonNullable<Object> metadata = JsonNullable.<Object>undefined();
 
-        public static final String JSON_PROPERTY_ROUTING_ALGORITHM = "routing_algorithm";
-    @javax.annotation.Nullable
-            private JsonNullable<Object> routingAlgorithm = JsonNullable.<Object>undefined();
+  public static final String JSON_PROPERTY_ROUTING_ALGORITHM = "routing_algorithm";
+  @javax.annotation.Nullable
+  private JsonNullable<Object> routingAlgorithm = JsonNullable.<Object>undefined();
 
-        public static final String JSON_PROPERTY_INTENT_FULFILLMENT_TIME = "intent_fulfillment_time";
-    @javax.annotation.Nullable
-            private JsonNullable<Long> intentFulfillmentTime = JsonNullable.<Long>undefined();
+  public static final String JSON_PROPERTY_INTENT_FULFILLMENT_TIME = "intent_fulfillment_time";
+  @javax.annotation.Nullable
+  private JsonNullable<Long> intentFulfillmentTime = JsonNullable.<Long>undefined();
 
-        public static final String JSON_PROPERTY_FRM_ROUTING_ALGORITHM = "frm_routing_algorithm";
-    @javax.annotation.Nullable
-            private JsonNullable<Object> frmRoutingAlgorithm = JsonNullable.<Object>undefined();
+  public static final String JSON_PROPERTY_FRM_ROUTING_ALGORITHM = "frm_routing_algorithm";
+  @javax.annotation.Nullable
+  private JsonNullable<Object> frmRoutingAlgorithm = JsonNullable.<Object>undefined();
 
-        public static final String JSON_PROPERTY_PAYOUT_ROUTING_ALGORITHM = "payout_routing_algorithm";
-    @javax.annotation.Nullable
-            private JsonNullable<RoutingAlgorithm> payoutRoutingAlgorithm = JsonNullable.<RoutingAlgorithm>undefined();
+  public static final String JSON_PROPERTY_PAYOUT_ROUTING_ALGORITHM = "payout_routing_algorithm";
+  @javax.annotation.Nullable
+  private JsonNullable<RoutingAlgorithm> payoutRoutingAlgorithm = JsonNullable.<RoutingAlgorithm>undefined();
 
-        public static final String JSON_PROPERTY_APPLEPAY_VERIFIED_DOMAINS = "applepay_verified_domains";
-    @javax.annotation.Nullable
-            private JsonNullable<List<String>> applepayVerifiedDomains = JsonNullable.<List<String>>undefined();
+  public static final String JSON_PROPERTY_APPLEPAY_VERIFIED_DOMAINS = "applepay_verified_domains";
+  @javax.annotation.Nullable
+  private JsonNullable<List<String>> applepayVerifiedDomains = JsonNullable.<List<String>>undefined();
 
-        public static final String JSON_PROPERTY_SESSION_EXPIRY = "session_expiry";
-    @javax.annotation.Nullable
-            private JsonNullable<Long> sessionExpiry = JsonNullable.<Long>undefined();
+  public static final String JSON_PROPERTY_SESSION_EXPIRY = "session_expiry";
+  @javax.annotation.Nullable
+  private JsonNullable<Long> sessionExpiry = JsonNullable.<Long>undefined();
 
-        public static final String JSON_PROPERTY_PAYMENT_LINK_CONFIG = "payment_link_config";
-    @javax.annotation.Nullable
-            private JsonNullable<BusinessPaymentLinkConfig> paymentLinkConfig = JsonNullable.<BusinessPaymentLinkConfig>undefined();
+  public static final String JSON_PROPERTY_PAYMENT_LINK_CONFIG = "payment_link_config";
+  @javax.annotation.Nullable
+  private JsonNullable<BusinessPaymentLinkConfig> paymentLinkConfig = JsonNullable.<BusinessPaymentLinkConfig>undefined();
 
-        public static final String JSON_PROPERTY_AUTHENTICATION_CONNECTOR_DETAILS = "authentication_connector_details";
-    @javax.annotation.Nullable
-            private JsonNullable<AuthenticationConnectorDetails> authenticationConnectorDetails = JsonNullable.<AuthenticationConnectorDetails>undefined();
+  public static final String JSON_PROPERTY_AUTHENTICATION_CONNECTOR_DETAILS = "authentication_connector_details";
+  @javax.annotation.Nullable
+  private JsonNullable<AuthenticationConnectorDetails> authenticationConnectorDetails = JsonNullable.<AuthenticationConnectorDetails>undefined();
 
-        public static final String JSON_PROPERTY_USE_BILLING_AS_PAYMENT_METHOD_BILLING = "use_billing_as_payment_method_billing";
-    @javax.annotation.Nullable
-            private JsonNullable<Boolean> useBillingAsPaymentMethodBilling = JsonNullable.<Boolean>undefined();
+  public static final String JSON_PROPERTY_USE_BILLING_AS_PAYMENT_METHOD_BILLING = "use_billing_as_payment_method_billing";
+  @javax.annotation.Nullable
+  private JsonNullable<Boolean> useBillingAsPaymentMethodBilling = JsonNullable.<Boolean>undefined();
 
-        public static final String JSON_PROPERTY_EXTENDED_CARD_INFO_CONFIG = "extended_card_info_config";
-    @javax.annotation.Nullable
-            private JsonNullable<ExtendedCardInfoConfig> extendedCardInfoConfig = JsonNullable.<ExtendedCardInfoConfig>undefined();
+  public static final String JSON_PROPERTY_EXTENDED_CARD_INFO_CONFIG = "extended_card_info_config";
+  @javax.annotation.Nullable
+  private JsonNullable<ExtendedCardInfoConfig> extendedCardInfoConfig = JsonNullable.<ExtendedCardInfoConfig>undefined();
 
-        public static final String JSON_PROPERTY_COLLECT_SHIPPING_DETAILS_FROM_WALLET_CONNECTOR = "collect_shipping_details_from_wallet_connector";
-    @javax.annotation.Nullable
-            private JsonNullable<Boolean> collectShippingDetailsFromWalletConnector = JsonNullable.<Boolean>of(false);
+  public static final String JSON_PROPERTY_COLLECT_SHIPPING_DETAILS_FROM_WALLET_CONNECTOR = "collect_shipping_details_from_wallet_connector";
+  @javax.annotation.Nullable
+  private JsonNullable<Boolean> collectShippingDetailsFromWalletConnector = JsonNullable.<Boolean>of(false);
 
-        public static final String JSON_PROPERTY_COLLECT_BILLING_DETAILS_FROM_WALLET_CONNECTOR = "collect_billing_details_from_wallet_connector";
-    @javax.annotation.Nullable
-            private JsonNullable<Boolean> collectBillingDetailsFromWalletConnector = JsonNullable.<Boolean>of(false);
+  public static final String JSON_PROPERTY_COLLECT_BILLING_DETAILS_FROM_WALLET_CONNECTOR = "collect_billing_details_from_wallet_connector";
+  @javax.annotation.Nullable
+  private JsonNullable<Boolean> collectBillingDetailsFromWalletConnector = JsonNullable.<Boolean>of(false);
 
-        public static final String JSON_PROPERTY_ALWAYS_COLLECT_SHIPPING_DETAILS_FROM_WALLET_CONNECTOR = "always_collect_shipping_details_from_wallet_connector";
-    @javax.annotation.Nullable
-            private JsonNullable<Boolean> alwaysCollectShippingDetailsFromWalletConnector = JsonNullable.<Boolean>of(false);
+  public static final String JSON_PROPERTY_ALWAYS_COLLECT_SHIPPING_DETAILS_FROM_WALLET_CONNECTOR = "always_collect_shipping_details_from_wallet_connector";
+  @javax.annotation.Nullable
+  private JsonNullable<Boolean> alwaysCollectShippingDetailsFromWalletConnector = JsonNullable.<Boolean>of(false);
 
-        public static final String JSON_PROPERTY_ALWAYS_COLLECT_BILLING_DETAILS_FROM_WALLET_CONNECTOR = "always_collect_billing_details_from_wallet_connector";
-    @javax.annotation.Nullable
-            private JsonNullable<Boolean> alwaysCollectBillingDetailsFromWalletConnector = JsonNullable.<Boolean>of(false);
+  public static final String JSON_PROPERTY_ALWAYS_COLLECT_BILLING_DETAILS_FROM_WALLET_CONNECTOR = "always_collect_billing_details_from_wallet_connector";
+  @javax.annotation.Nullable
+  private JsonNullable<Boolean> alwaysCollectBillingDetailsFromWalletConnector = JsonNullable.<Boolean>of(false);
 
-        public static final String JSON_PROPERTY_IS_CONNECTOR_AGNOSTIC_MIT_ENABLED = "is_connector_agnostic_mit_enabled";
-    @javax.annotation.Nullable
-            private JsonNullable<Boolean> isConnectorAgnosticMitEnabled = JsonNullable.<Boolean>undefined();
+  public static final String JSON_PROPERTY_IS_CONNECTOR_AGNOSTIC_MIT_ENABLED = "is_connector_agnostic_mit_enabled";
+  @javax.annotation.Nullable
+  private JsonNullable<Boolean> isConnectorAgnosticMitEnabled = JsonNullable.<Boolean>undefined();
 
-        public static final String JSON_PROPERTY_PAYOUT_LINK_CONFIG = "payout_link_config";
-    @javax.annotation.Nullable
-            private JsonNullable<BusinessPayoutLinkConfig> payoutLinkConfig = JsonNullable.<BusinessPayoutLinkConfig>undefined();
+  public static final String JSON_PROPERTY_PAYOUT_LINK_CONFIG = "payout_link_config";
+  @javax.annotation.Nullable
+  private JsonNullable<BusinessPayoutLinkConfig> payoutLinkConfig = JsonNullable.<BusinessPayoutLinkConfig>undefined();
 
-        public static final String JSON_PROPERTY_OUTGOING_WEBHOOK_CUSTOM_HTTP_HEADERS = "outgoing_webhook_custom_http_headers";
-    @javax.annotation.Nullable
-            private JsonNullable<Object> outgoingWebhookCustomHttpHeaders = JsonNullable.<Object>undefined();
+  public static final String JSON_PROPERTY_OUTGOING_WEBHOOK_CUSTOM_HTTP_HEADERS = "outgoing_webhook_custom_http_headers";
+  @javax.annotation.Nullable
+  private JsonNullable<Object> outgoingWebhookCustomHttpHeaders = JsonNullable.<Object>undefined();
 
-        public static final String JSON_PROPERTY_TAX_CONNECTOR_ID = "tax_connector_id";
-    @javax.annotation.Nullable
-            private JsonNullable<String> taxConnectorId = JsonNullable.<String>undefined();
+  public static final String JSON_PROPERTY_TAX_CONNECTOR_ID = "tax_connector_id";
+  @javax.annotation.Nullable
+  private JsonNullable<String> taxConnectorId = JsonNullable.<String>undefined();
 
-        public static final String JSON_PROPERTY_IS_TAX_CONNECTOR_ENABLED = "is_tax_connector_enabled";
-    @javax.annotation.Nonnull
-            private Boolean isTaxConnectorEnabled;
+  public static final String JSON_PROPERTY_IS_TAX_CONNECTOR_ENABLED = "is_tax_connector_enabled";
+  @javax.annotation.Nonnull
+  private Boolean isTaxConnectorEnabled;
 
-        public static final String JSON_PROPERTY_IS_NETWORK_TOKENIZATION_ENABLED = "is_network_tokenization_enabled";
-    @javax.annotation.Nonnull
-            private Boolean isNetworkTokenizationEnabled = false;
+  public static final String JSON_PROPERTY_IS_NETWORK_TOKENIZATION_ENABLED = "is_network_tokenization_enabled";
+  @javax.annotation.Nonnull
+  private Boolean isNetworkTokenizationEnabled = false;
 
-        public static final String JSON_PROPERTY_IS_AUTO_RETRIES_ENABLED = "is_auto_retries_enabled";
-    @javax.annotation.Nonnull
-            private Boolean isAutoRetriesEnabled = false;
+  public static final String JSON_PROPERTY_IS_AUTO_RETRIES_ENABLED = "is_auto_retries_enabled";
+  @javax.annotation.Nonnull
+  private Boolean isAutoRetriesEnabled = false;
 
-        public static final String JSON_PROPERTY_MAX_AUTO_RETRIES_ENABLED = "max_auto_retries_enabled";
-    @javax.annotation.Nullable
-            private JsonNullable<Integer> maxAutoRetriesEnabled = JsonNullable.<Integer>undefined();
+  public static final String JSON_PROPERTY_MAX_AUTO_RETRIES_ENABLED = "max_auto_retries_enabled";
+  @javax.annotation.Nullable
+  private JsonNullable<Integer> maxAutoRetriesEnabled = JsonNullable.<Integer>undefined();
 
-public ProfileResponse() {
-}
+  public ProfileResponse() {
+  }
 
-        public ProfileResponse merchantId(@javax.annotation.Nonnull String merchantId) {
-        
-        this.merchantId = merchantId;
-        return this;
-        }
+  public ProfileResponse merchantId(@javax.annotation.Nonnull String merchantId) {
+    
+    this.merchantId = merchantId;
+    return this;
+  }
 
-    /**
-        * The identifier for Merchant Account
-    * @return merchantId
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_MERCHANT_ID)
+  /**
+   * The identifier for Merchant Account
+   * @return merchantId
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_MERCHANT_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public String getMerchantId() {
-        return merchantId;
-    }
+  public String getMerchantId() {
+    return merchantId;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_MERCHANT_ID)
+  @JsonProperty(JSON_PROPERTY_MERCHANT_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setMerchantId(@javax.annotation.Nonnull String merchantId) {
-            this.merchantId = merchantId;
-        }
+    this.merchantId = merchantId;
+  }
 
-        public ProfileResponse profileId(@javax.annotation.Nonnull String profileId) {
-        
-        this.profileId = profileId;
-        return this;
-        }
+  public ProfileResponse profileId(@javax.annotation.Nonnull String profileId) {
+    
+    this.profileId = profileId;
+    return this;
+  }
 
-    /**
-        * The identifier for profile. This must be used for creating merchant accounts, payments and payouts
-    * @return profileId
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_PROFILE_ID)
+  /**
+   * The identifier for profile. This must be used for creating merchant accounts, payments and payouts
+   * @return profileId
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_PROFILE_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public String getProfileId() {
-        return profileId;
-    }
+  public String getProfileId() {
+    return profileId;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_PROFILE_ID)
+  @JsonProperty(JSON_PROPERTY_PROFILE_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setProfileId(@javax.annotation.Nonnull String profileId) {
-            this.profileId = profileId;
-        }
+    this.profileId = profileId;
+  }
 
-        public ProfileResponse profileName(@javax.annotation.Nonnull String profileName) {
-        
-        this.profileName = profileName;
-        return this;
-        }
+  public ProfileResponse profileName(@javax.annotation.Nonnull String profileName) {
+    
+    this.profileName = profileName;
+    return this;
+  }
 
-    /**
-        * Name of the profile
-    * @return profileName
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_PROFILE_NAME)
+  /**
+   * Name of the profile
+   * @return profileName
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_PROFILE_NAME)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public String getProfileName() {
-        return profileName;
-    }
+  public String getProfileName() {
+    return profileName;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_PROFILE_NAME)
+  @JsonProperty(JSON_PROPERTY_PROFILE_NAME)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setProfileName(@javax.annotation.Nonnull String profileName) {
-            this.profileName = profileName;
-        }
+    this.profileName = profileName;
+  }
 
-        public ProfileResponse returnUrl(@javax.annotation.Nullable String returnUrl) {
-        this.returnUrl = JsonNullable.<String>of(returnUrl);
-        
-        return this;
-        }
-
-    /**
-        * The URL to redirect after the completion of the operation
-    * @return returnUrl
-    */
-    @javax.annotation.Nullable
-        @JsonIgnore
+  public ProfileResponse returnUrl(@javax.annotation.Nullable String returnUrl) {
+    this.returnUrl = JsonNullable.<String>of(returnUrl);
     
-    public String getReturnUrl() {
-                return returnUrl.orElse(null);
-    }
+    return this;
+  }
 
-          @JsonProperty(JSON_PROPERTY_RETURN_URL)
+  /**
+   * The URL to redirect after the completion of the operation
+   * @return returnUrl
+   */
+  @javax.annotation.Nullable
+  @JsonIgnore
+
+  public String getReturnUrl() {
+        return returnUrl.orElse(null);
+  }
+
+  @JsonProperty(JSON_PROPERTY_RETURN_URL)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-        public JsonNullable<String> getReturnUrl_JsonNullable() {
-        return returnUrl;
-        }
+  public JsonNullable<String> getReturnUrl_JsonNullable() {
+    return returnUrl;
+  }
+  
+  @JsonProperty(JSON_PROPERTY_RETURN_URL)
+  public void setReturnUrl_JsonNullable(JsonNullable<String> returnUrl) {
+    this.returnUrl = returnUrl;
+  }
+
+  public void setReturnUrl(@javax.annotation.Nullable String returnUrl) {
+    this.returnUrl = JsonNullable.<String>of(returnUrl);
+  }
+
+  public ProfileResponse enablePaymentResponseHash(@javax.annotation.Nonnull Boolean enablePaymentResponseHash) {
     
-        @JsonProperty(JSON_PROPERTY_RETURN_URL)
-        public void setReturnUrl_JsonNullable(JsonNullable<String> returnUrl) {
-        this.returnUrl = returnUrl;
-        }
+    this.enablePaymentResponseHash = enablePaymentResponseHash;
+    return this;
+  }
 
-          public void setReturnUrl(@javax.annotation.Nullable String returnUrl) {
-            this.returnUrl = JsonNullable.<String>of(returnUrl);
-        }
-
-        public ProfileResponse enablePaymentResponseHash(@javax.annotation.Nonnull Boolean enablePaymentResponseHash) {
-        
-        this.enablePaymentResponseHash = enablePaymentResponseHash;
-        return this;
-        }
-
-    /**
-        * A boolean value to indicate if payment response hash needs to be enabled
-    * @return enablePaymentResponseHash
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_ENABLE_PAYMENT_RESPONSE_HASH)
+  /**
+   * A boolean value to indicate if payment response hash needs to be enabled
+   * @return enablePaymentResponseHash
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_ENABLE_PAYMENT_RESPONSE_HASH)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public Boolean getEnablePaymentResponseHash() {
-        return enablePaymentResponseHash;
-    }
+  public Boolean getEnablePaymentResponseHash() {
+    return enablePaymentResponseHash;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_ENABLE_PAYMENT_RESPONSE_HASH)
+  @JsonProperty(JSON_PROPERTY_ENABLE_PAYMENT_RESPONSE_HASH)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setEnablePaymentResponseHash(@javax.annotation.Nonnull Boolean enablePaymentResponseHash) {
-            this.enablePaymentResponseHash = enablePaymentResponseHash;
-        }
+    this.enablePaymentResponseHash = enablePaymentResponseHash;
+  }
 
-        public ProfileResponse paymentResponseHashKey(@javax.annotation.Nullable String paymentResponseHashKey) {
-        this.paymentResponseHashKey = JsonNullable.<String>of(paymentResponseHashKey);
-        
-        return this;
-        }
-
-    /**
-        * Refers to the hash key used for calculating the signature for webhooks and redirect response. If the value is not provided, a value is automatically generated.
-    * @return paymentResponseHashKey
-    */
-    @javax.annotation.Nullable
-        @JsonIgnore
+  public ProfileResponse paymentResponseHashKey(@javax.annotation.Nullable String paymentResponseHashKey) {
+    this.paymentResponseHashKey = JsonNullable.<String>of(paymentResponseHashKey);
     
-    public String getPaymentResponseHashKey() {
-                return paymentResponseHashKey.orElse(null);
-    }
+    return this;
+  }
 
-          @JsonProperty(JSON_PROPERTY_PAYMENT_RESPONSE_HASH_KEY)
+  /**
+   * Refers to the hash key used for calculating the signature for webhooks and redirect response. If the value is not provided, a value is automatically generated.
+   * @return paymentResponseHashKey
+   */
+  @javax.annotation.Nullable
+  @JsonIgnore
+
+  public String getPaymentResponseHashKey() {
+        return paymentResponseHashKey.orElse(null);
+  }
+
+  @JsonProperty(JSON_PROPERTY_PAYMENT_RESPONSE_HASH_KEY)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-        public JsonNullable<String> getPaymentResponseHashKey_JsonNullable() {
-        return paymentResponseHashKey;
-        }
+  public JsonNullable<String> getPaymentResponseHashKey_JsonNullable() {
+    return paymentResponseHashKey;
+  }
+  
+  @JsonProperty(JSON_PROPERTY_PAYMENT_RESPONSE_HASH_KEY)
+  public void setPaymentResponseHashKey_JsonNullable(JsonNullable<String> paymentResponseHashKey) {
+    this.paymentResponseHashKey = paymentResponseHashKey;
+  }
+
+  public void setPaymentResponseHashKey(@javax.annotation.Nullable String paymentResponseHashKey) {
+    this.paymentResponseHashKey = JsonNullable.<String>of(paymentResponseHashKey);
+  }
+
+  public ProfileResponse redirectToMerchantWithHttpPost(@javax.annotation.Nonnull Boolean redirectToMerchantWithHttpPost) {
     
-        @JsonProperty(JSON_PROPERTY_PAYMENT_RESPONSE_HASH_KEY)
-        public void setPaymentResponseHashKey_JsonNullable(JsonNullable<String> paymentResponseHashKey) {
-        this.paymentResponseHashKey = paymentResponseHashKey;
-        }
+    this.redirectToMerchantWithHttpPost = redirectToMerchantWithHttpPost;
+    return this;
+  }
 
-          public void setPaymentResponseHashKey(@javax.annotation.Nullable String paymentResponseHashKey) {
-            this.paymentResponseHashKey = JsonNullable.<String>of(paymentResponseHashKey);
-        }
-
-        public ProfileResponse redirectToMerchantWithHttpPost(@javax.annotation.Nonnull Boolean redirectToMerchantWithHttpPost) {
-        
-        this.redirectToMerchantWithHttpPost = redirectToMerchantWithHttpPost;
-        return this;
-        }
-
-    /**
-        * A boolean value to indicate if redirect to merchant with http post needs to be enabled
-    * @return redirectToMerchantWithHttpPost
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_REDIRECT_TO_MERCHANT_WITH_HTTP_POST)
+  /**
+   * A boolean value to indicate if redirect to merchant with http post needs to be enabled
+   * @return redirectToMerchantWithHttpPost
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_REDIRECT_TO_MERCHANT_WITH_HTTP_POST)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public Boolean getRedirectToMerchantWithHttpPost() {
-        return redirectToMerchantWithHttpPost;
-    }
+  public Boolean getRedirectToMerchantWithHttpPost() {
+    return redirectToMerchantWithHttpPost;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_REDIRECT_TO_MERCHANT_WITH_HTTP_POST)
+  @JsonProperty(JSON_PROPERTY_REDIRECT_TO_MERCHANT_WITH_HTTP_POST)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setRedirectToMerchantWithHttpPost(@javax.annotation.Nonnull Boolean redirectToMerchantWithHttpPost) {
-            this.redirectToMerchantWithHttpPost = redirectToMerchantWithHttpPost;
-        }
+    this.redirectToMerchantWithHttpPost = redirectToMerchantWithHttpPost;
+  }
 
-        public ProfileResponse webhookDetails(@javax.annotation.Nullable WebhookDetails webhookDetails) {
-        this.webhookDetails = JsonNullable.<WebhookDetails>of(webhookDetails);
-        
-        return this;
-        }
-
-    /**
-        * Get webhookDetails
-    * @return webhookDetails
-    */
-    @javax.annotation.Nullable
-        @JsonIgnore
+  public ProfileResponse webhookDetails(@javax.annotation.Nullable WebhookDetails webhookDetails) {
+    this.webhookDetails = JsonNullable.<WebhookDetails>of(webhookDetails);
     
-    public WebhookDetails getWebhookDetails() {
-                return webhookDetails.orElse(null);
-    }
+    return this;
+  }
 
-          @JsonProperty(JSON_PROPERTY_WEBHOOK_DETAILS)
+  /**
+   * Get webhookDetails
+   * @return webhookDetails
+   */
+  @javax.annotation.Nullable
+  @JsonIgnore
+
+  public WebhookDetails getWebhookDetails() {
+        return webhookDetails.orElse(null);
+  }
+
+  @JsonProperty(JSON_PROPERTY_WEBHOOK_DETAILS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-        public JsonNullable<WebhookDetails> getWebhookDetails_JsonNullable() {
-        return webhookDetails;
-        }
+  public JsonNullable<WebhookDetails> getWebhookDetails_JsonNullable() {
+    return webhookDetails;
+  }
+  
+  @JsonProperty(JSON_PROPERTY_WEBHOOK_DETAILS)
+  public void setWebhookDetails_JsonNullable(JsonNullable<WebhookDetails> webhookDetails) {
+    this.webhookDetails = webhookDetails;
+  }
+
+  public void setWebhookDetails(@javax.annotation.Nullable WebhookDetails webhookDetails) {
+    this.webhookDetails = JsonNullable.<WebhookDetails>of(webhookDetails);
+  }
+
+  public ProfileResponse metadata(@javax.annotation.Nullable Object metadata) {
+    this.metadata = JsonNullable.<Object>of(metadata);
     
-        @JsonProperty(JSON_PROPERTY_WEBHOOK_DETAILS)
-        public void setWebhookDetails_JsonNullable(JsonNullable<WebhookDetails> webhookDetails) {
-        this.webhookDetails = webhookDetails;
-        }
+    return this;
+  }
 
-          public void setWebhookDetails(@javax.annotation.Nullable WebhookDetails webhookDetails) {
-            this.webhookDetails = JsonNullable.<WebhookDetails>of(webhookDetails);
-        }
+  /**
+   * Metadata is useful for storing additional, unstructured information on an object.
+   * @return metadata
+   */
+  @javax.annotation.Nullable
+  @JsonIgnore
 
-        public ProfileResponse metadata(@javax.annotation.Nullable Object metadata) {
-        this.metadata = JsonNullable.<Object>of(metadata);
-        
-        return this;
-        }
+  public Object getMetadata() {
+        return metadata.orElse(null);
+  }
 
-    /**
-        * Metadata is useful for storing additional, unstructured information on an object.
-    * @return metadata
-    */
-    @javax.annotation.Nullable
-        @JsonIgnore
-    
-    public Object getMetadata() {
-                return metadata.orElse(null);
-    }
-
-          @JsonProperty(JSON_PROPERTY_METADATA)
+  @JsonProperty(JSON_PROPERTY_METADATA)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-        public JsonNullable<Object> getMetadata_JsonNullable() {
-        return metadata;
-        }
+  public JsonNullable<Object> getMetadata_JsonNullable() {
+    return metadata;
+  }
+  
+  @JsonProperty(JSON_PROPERTY_METADATA)
+  public void setMetadata_JsonNullable(JsonNullable<Object> metadata) {
+    this.metadata = metadata;
+  }
+
+  public void setMetadata(@javax.annotation.Nullable Object metadata) {
+    this.metadata = JsonNullable.<Object>of(metadata);
+  }
+
+  public ProfileResponse routingAlgorithm(@javax.annotation.Nullable Object routingAlgorithm) {
+    this.routingAlgorithm = JsonNullable.<Object>of(routingAlgorithm);
     
-        @JsonProperty(JSON_PROPERTY_METADATA)
-        public void setMetadata_JsonNullable(JsonNullable<Object> metadata) {
-        this.metadata = metadata;
-        }
+    return this;
+  }
 
-          public void setMetadata(@javax.annotation.Nullable Object metadata) {
-            this.metadata = JsonNullable.<Object>of(metadata);
-        }
+  /**
+   * The routing algorithm to be used for routing payments to desired connectors
+   * @return routingAlgorithm
+   */
+  @javax.annotation.Nullable
+  @JsonIgnore
 
-        public ProfileResponse routingAlgorithm(@javax.annotation.Nullable Object routingAlgorithm) {
-        this.routingAlgorithm = JsonNullable.<Object>of(routingAlgorithm);
-        
-        return this;
-        }
+  public Object getRoutingAlgorithm() {
+        return routingAlgorithm.orElse(null);
+  }
 
-    /**
-        * The routing algorithm to be used for routing payments to desired connectors
-    * @return routingAlgorithm
-    */
-    @javax.annotation.Nullable
-        @JsonIgnore
-    
-    public Object getRoutingAlgorithm() {
-                return routingAlgorithm.orElse(null);
-    }
-
-          @JsonProperty(JSON_PROPERTY_ROUTING_ALGORITHM)
+  @JsonProperty(JSON_PROPERTY_ROUTING_ALGORITHM)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-        public JsonNullable<Object> getRoutingAlgorithm_JsonNullable() {
-        return routingAlgorithm;
-        }
+  public JsonNullable<Object> getRoutingAlgorithm_JsonNullable() {
+    return routingAlgorithm;
+  }
+  
+  @JsonProperty(JSON_PROPERTY_ROUTING_ALGORITHM)
+  public void setRoutingAlgorithm_JsonNullable(JsonNullable<Object> routingAlgorithm) {
+    this.routingAlgorithm = routingAlgorithm;
+  }
+
+  public void setRoutingAlgorithm(@javax.annotation.Nullable Object routingAlgorithm) {
+    this.routingAlgorithm = JsonNullable.<Object>of(routingAlgorithm);
+  }
+
+  public ProfileResponse intentFulfillmentTime(@javax.annotation.Nullable Long intentFulfillmentTime) {
+    this.intentFulfillmentTime = JsonNullable.<Long>of(intentFulfillmentTime);
     
-        @JsonProperty(JSON_PROPERTY_ROUTING_ALGORITHM)
-        public void setRoutingAlgorithm_JsonNullable(JsonNullable<Object> routingAlgorithm) {
-        this.routingAlgorithm = routingAlgorithm;
-        }
+    return this;
+  }
 
-          public void setRoutingAlgorithm(@javax.annotation.Nullable Object routingAlgorithm) {
-            this.routingAlgorithm = JsonNullable.<Object>of(routingAlgorithm);
-        }
+  /**
+   * Will be used to determine the time till which your payment will be active once the payment session starts
+   * @return intentFulfillmentTime
+   */
+  @javax.annotation.Nullable
+  @JsonIgnore
 
-        public ProfileResponse intentFulfillmentTime(@javax.annotation.Nullable Long intentFulfillmentTime) {
-        this.intentFulfillmentTime = JsonNullable.<Long>of(intentFulfillmentTime);
-        
-        return this;
-        }
+  public Long getIntentFulfillmentTime() {
+        return intentFulfillmentTime.orElse(null);
+  }
 
-    /**
-        * Will be used to determine the time till which your payment will be active once the payment session starts
-    * @return intentFulfillmentTime
-    */
-    @javax.annotation.Nullable
-        @JsonIgnore
-    
-    public Long getIntentFulfillmentTime() {
-                return intentFulfillmentTime.orElse(null);
-    }
-
-          @JsonProperty(JSON_PROPERTY_INTENT_FULFILLMENT_TIME)
+  @JsonProperty(JSON_PROPERTY_INTENT_FULFILLMENT_TIME)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-        public JsonNullable<Long> getIntentFulfillmentTime_JsonNullable() {
-        return intentFulfillmentTime;
-        }
+  public JsonNullable<Long> getIntentFulfillmentTime_JsonNullable() {
+    return intentFulfillmentTime;
+  }
+  
+  @JsonProperty(JSON_PROPERTY_INTENT_FULFILLMENT_TIME)
+  public void setIntentFulfillmentTime_JsonNullable(JsonNullable<Long> intentFulfillmentTime) {
+    this.intentFulfillmentTime = intentFulfillmentTime;
+  }
+
+  public void setIntentFulfillmentTime(@javax.annotation.Nullable Long intentFulfillmentTime) {
+    this.intentFulfillmentTime = JsonNullable.<Long>of(intentFulfillmentTime);
+  }
+
+  public ProfileResponse frmRoutingAlgorithm(@javax.annotation.Nullable Object frmRoutingAlgorithm) {
+    this.frmRoutingAlgorithm = JsonNullable.<Object>of(frmRoutingAlgorithm);
     
-        @JsonProperty(JSON_PROPERTY_INTENT_FULFILLMENT_TIME)
-        public void setIntentFulfillmentTime_JsonNullable(JsonNullable<Long> intentFulfillmentTime) {
-        this.intentFulfillmentTime = intentFulfillmentTime;
-        }
+    return this;
+  }
 
-          public void setIntentFulfillmentTime(@javax.annotation.Nullable Long intentFulfillmentTime) {
-            this.intentFulfillmentTime = JsonNullable.<Long>of(intentFulfillmentTime);
-        }
+  /**
+   * The routing algorithm to be used to process the incoming request from merchant to outgoing payment processor or payment method. The default is &#39;Custom&#39;
+   * @return frmRoutingAlgorithm
+   */
+  @javax.annotation.Nullable
+  @JsonIgnore
 
-        public ProfileResponse frmRoutingAlgorithm(@javax.annotation.Nullable Object frmRoutingAlgorithm) {
-        this.frmRoutingAlgorithm = JsonNullable.<Object>of(frmRoutingAlgorithm);
-        
-        return this;
-        }
+  public Object getFrmRoutingAlgorithm() {
+        return frmRoutingAlgorithm.orElse(null);
+  }
 
-    /**
-        * The routing algorithm to be used to process the incoming request from merchant to outgoing payment processor or payment method. The default is &#39;Custom&#39;
-    * @return frmRoutingAlgorithm
-    */
-    @javax.annotation.Nullable
-        @JsonIgnore
-    
-    public Object getFrmRoutingAlgorithm() {
-                return frmRoutingAlgorithm.orElse(null);
-    }
-
-          @JsonProperty(JSON_PROPERTY_FRM_ROUTING_ALGORITHM)
+  @JsonProperty(JSON_PROPERTY_FRM_ROUTING_ALGORITHM)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-        public JsonNullable<Object> getFrmRoutingAlgorithm_JsonNullable() {
-        return frmRoutingAlgorithm;
-        }
+  public JsonNullable<Object> getFrmRoutingAlgorithm_JsonNullable() {
+    return frmRoutingAlgorithm;
+  }
+  
+  @JsonProperty(JSON_PROPERTY_FRM_ROUTING_ALGORITHM)
+  public void setFrmRoutingAlgorithm_JsonNullable(JsonNullable<Object> frmRoutingAlgorithm) {
+    this.frmRoutingAlgorithm = frmRoutingAlgorithm;
+  }
+
+  public void setFrmRoutingAlgorithm(@javax.annotation.Nullable Object frmRoutingAlgorithm) {
+    this.frmRoutingAlgorithm = JsonNullable.<Object>of(frmRoutingAlgorithm);
+  }
+
+  public ProfileResponse payoutRoutingAlgorithm(@javax.annotation.Nullable RoutingAlgorithm payoutRoutingAlgorithm) {
+    this.payoutRoutingAlgorithm = JsonNullable.<RoutingAlgorithm>of(payoutRoutingAlgorithm);
     
-        @JsonProperty(JSON_PROPERTY_FRM_ROUTING_ALGORITHM)
-        public void setFrmRoutingAlgorithm_JsonNullable(JsonNullable<Object> frmRoutingAlgorithm) {
-        this.frmRoutingAlgorithm = frmRoutingAlgorithm;
-        }
+    return this;
+  }
 
-          public void setFrmRoutingAlgorithm(@javax.annotation.Nullable Object frmRoutingAlgorithm) {
-            this.frmRoutingAlgorithm = JsonNullable.<Object>of(frmRoutingAlgorithm);
-        }
+  /**
+   * Get payoutRoutingAlgorithm
+   * @return payoutRoutingAlgorithm
+   */
+  @javax.annotation.Nullable
+  @JsonIgnore
 
-        public ProfileResponse payoutRoutingAlgorithm(@javax.annotation.Nullable RoutingAlgorithm payoutRoutingAlgorithm) {
-        this.payoutRoutingAlgorithm = JsonNullable.<RoutingAlgorithm>of(payoutRoutingAlgorithm);
-        
-        return this;
-        }
+  public RoutingAlgorithm getPayoutRoutingAlgorithm() {
+        return payoutRoutingAlgorithm.orElse(null);
+  }
 
-    /**
-        * Get payoutRoutingAlgorithm
-    * @return payoutRoutingAlgorithm
-    */
-    @javax.annotation.Nullable
-        @JsonIgnore
-    
-    public RoutingAlgorithm getPayoutRoutingAlgorithm() {
-                return payoutRoutingAlgorithm.orElse(null);
-    }
-
-          @JsonProperty(JSON_PROPERTY_PAYOUT_ROUTING_ALGORITHM)
+  @JsonProperty(JSON_PROPERTY_PAYOUT_ROUTING_ALGORITHM)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-        public JsonNullable<RoutingAlgorithm> getPayoutRoutingAlgorithm_JsonNullable() {
-        return payoutRoutingAlgorithm;
-        }
+  public JsonNullable<RoutingAlgorithm> getPayoutRoutingAlgorithm_JsonNullable() {
+    return payoutRoutingAlgorithm;
+  }
+  
+  @JsonProperty(JSON_PROPERTY_PAYOUT_ROUTING_ALGORITHM)
+  public void setPayoutRoutingAlgorithm_JsonNullable(JsonNullable<RoutingAlgorithm> payoutRoutingAlgorithm) {
+    this.payoutRoutingAlgorithm = payoutRoutingAlgorithm;
+  }
+
+  public void setPayoutRoutingAlgorithm(@javax.annotation.Nullable RoutingAlgorithm payoutRoutingAlgorithm) {
+    this.payoutRoutingAlgorithm = JsonNullable.<RoutingAlgorithm>of(payoutRoutingAlgorithm);
+  }
+
+  public ProfileResponse applepayVerifiedDomains(@javax.annotation.Nullable List<String> applepayVerifiedDomains) {
+    this.applepayVerifiedDomains = JsonNullable.<List<String>>of(applepayVerifiedDomains);
     
-        @JsonProperty(JSON_PROPERTY_PAYOUT_ROUTING_ALGORITHM)
-        public void setPayoutRoutingAlgorithm_JsonNullable(JsonNullable<RoutingAlgorithm> payoutRoutingAlgorithm) {
-        this.payoutRoutingAlgorithm = payoutRoutingAlgorithm;
-        }
+    return this;
+  }
 
-          public void setPayoutRoutingAlgorithm(@javax.annotation.Nullable RoutingAlgorithm payoutRoutingAlgorithm) {
-            this.payoutRoutingAlgorithm = JsonNullable.<RoutingAlgorithm>of(payoutRoutingAlgorithm);
-        }
-
-        public ProfileResponse applepayVerifiedDomains(@javax.annotation.Nullable List<String> applepayVerifiedDomains) {
-        this.applepayVerifiedDomains = JsonNullable.<List<String>>of(applepayVerifiedDomains);
-        
-        return this;
-        }
-
-            public ProfileResponse addApplepayVerifiedDomainsItem(String applepayVerifiedDomainsItem) {
-                if (this.applepayVerifiedDomains == null || !this.applepayVerifiedDomains.isPresent()) {
-                this.applepayVerifiedDomains = JsonNullable.<List<String>>of(new ArrayList<>());
-                }
-                try {
-                this.applepayVerifiedDomains.get().add(applepayVerifiedDomainsItem);
-                } catch (java.util.NoSuchElementException e) {
-                // this can never happen, as we make sure above that the value is present
-                }
-                return this;
-            }
-
-    /**
-        * Verified Apple Pay domains for a particular profile
-    * @return applepayVerifiedDomains
-    */
-    @javax.annotation.Nullable
-        @JsonIgnore
-    
-    public List<String> getApplepayVerifiedDomains() {
-                return applepayVerifiedDomains.orElse(null);
+  public ProfileResponse addApplepayVerifiedDomainsItem(String applepayVerifiedDomainsItem) {
+    if (this.applepayVerifiedDomains == null || !this.applepayVerifiedDomains.isPresent()) {
+      this.applepayVerifiedDomains = JsonNullable.<List<String>>of(new ArrayList<>());
     }
+    try {
+      this.applepayVerifiedDomains.get().add(applepayVerifiedDomainsItem);
+    } catch (java.util.NoSuchElementException e) {
+      // this can never happen, as we make sure above that the value is present
+    }
+    return this;
+  }
 
-          @JsonProperty(JSON_PROPERTY_APPLEPAY_VERIFIED_DOMAINS)
+  /**
+   * Verified Apple Pay domains for a particular profile
+   * @return applepayVerifiedDomains
+   */
+  @javax.annotation.Nullable
+  @JsonIgnore
+
+  public List<String> getApplepayVerifiedDomains() {
+        return applepayVerifiedDomains.orElse(null);
+  }
+
+  @JsonProperty(JSON_PROPERTY_APPLEPAY_VERIFIED_DOMAINS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-        public JsonNullable<List<String>> getApplepayVerifiedDomains_JsonNullable() {
-        return applepayVerifiedDomains;
-        }
+  public JsonNullable<List<String>> getApplepayVerifiedDomains_JsonNullable() {
+    return applepayVerifiedDomains;
+  }
+  
+  @JsonProperty(JSON_PROPERTY_APPLEPAY_VERIFIED_DOMAINS)
+  public void setApplepayVerifiedDomains_JsonNullable(JsonNullable<List<String>> applepayVerifiedDomains) {
+    this.applepayVerifiedDomains = applepayVerifiedDomains;
+  }
+
+  public void setApplepayVerifiedDomains(@javax.annotation.Nullable List<String> applepayVerifiedDomains) {
+    this.applepayVerifiedDomains = JsonNullable.<List<String>>of(applepayVerifiedDomains);
+  }
+
+  public ProfileResponse sessionExpiry(@javax.annotation.Nullable Long sessionExpiry) {
+    this.sessionExpiry = JsonNullable.<Long>of(sessionExpiry);
     
-        @JsonProperty(JSON_PROPERTY_APPLEPAY_VERIFIED_DOMAINS)
-        public void setApplepayVerifiedDomains_JsonNullable(JsonNullable<List<String>> applepayVerifiedDomains) {
-        this.applepayVerifiedDomains = applepayVerifiedDomains;
-        }
+    return this;
+  }
 
-          public void setApplepayVerifiedDomains(@javax.annotation.Nullable List<String> applepayVerifiedDomains) {
-            this.applepayVerifiedDomains = JsonNullable.<List<String>>of(applepayVerifiedDomains);
-        }
+  /**
+   * Client Secret Default expiry for all payments created under this profile
+   * @return sessionExpiry
+   */
+  @javax.annotation.Nullable
+  @JsonIgnore
 
-        public ProfileResponse sessionExpiry(@javax.annotation.Nullable Long sessionExpiry) {
-        this.sessionExpiry = JsonNullable.<Long>of(sessionExpiry);
-        
-        return this;
-        }
+  public Long getSessionExpiry() {
+        return sessionExpiry.orElse(null);
+  }
 
-    /**
-        * Client Secret Default expiry for all payments created under this profile
-    * @return sessionExpiry
-    */
-    @javax.annotation.Nullable
-        @JsonIgnore
-    
-    public Long getSessionExpiry() {
-                return sessionExpiry.orElse(null);
-    }
-
-          @JsonProperty(JSON_PROPERTY_SESSION_EXPIRY)
+  @JsonProperty(JSON_PROPERTY_SESSION_EXPIRY)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-        public JsonNullable<Long> getSessionExpiry_JsonNullable() {
-        return sessionExpiry;
-        }
+  public JsonNullable<Long> getSessionExpiry_JsonNullable() {
+    return sessionExpiry;
+  }
+  
+  @JsonProperty(JSON_PROPERTY_SESSION_EXPIRY)
+  public void setSessionExpiry_JsonNullable(JsonNullable<Long> sessionExpiry) {
+    this.sessionExpiry = sessionExpiry;
+  }
+
+  public void setSessionExpiry(@javax.annotation.Nullable Long sessionExpiry) {
+    this.sessionExpiry = JsonNullable.<Long>of(sessionExpiry);
+  }
+
+  public ProfileResponse paymentLinkConfig(@javax.annotation.Nullable BusinessPaymentLinkConfig paymentLinkConfig) {
+    this.paymentLinkConfig = JsonNullable.<BusinessPaymentLinkConfig>of(paymentLinkConfig);
     
-        @JsonProperty(JSON_PROPERTY_SESSION_EXPIRY)
-        public void setSessionExpiry_JsonNullable(JsonNullable<Long> sessionExpiry) {
-        this.sessionExpiry = sessionExpiry;
-        }
+    return this;
+  }
 
-          public void setSessionExpiry(@javax.annotation.Nullable Long sessionExpiry) {
-            this.sessionExpiry = JsonNullable.<Long>of(sessionExpiry);
-        }
+  /**
+   * Get paymentLinkConfig
+   * @return paymentLinkConfig
+   */
+  @javax.annotation.Nullable
+  @JsonIgnore
 
-        public ProfileResponse paymentLinkConfig(@javax.annotation.Nullable BusinessPaymentLinkConfig paymentLinkConfig) {
-        this.paymentLinkConfig = JsonNullable.<BusinessPaymentLinkConfig>of(paymentLinkConfig);
-        
-        return this;
-        }
+  public BusinessPaymentLinkConfig getPaymentLinkConfig() {
+        return paymentLinkConfig.orElse(null);
+  }
 
-    /**
-        * Get paymentLinkConfig
-    * @return paymentLinkConfig
-    */
-    @javax.annotation.Nullable
-        @JsonIgnore
-    
-    public BusinessPaymentLinkConfig getPaymentLinkConfig() {
-                return paymentLinkConfig.orElse(null);
-    }
-
-          @JsonProperty(JSON_PROPERTY_PAYMENT_LINK_CONFIG)
+  @JsonProperty(JSON_PROPERTY_PAYMENT_LINK_CONFIG)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-        public JsonNullable<BusinessPaymentLinkConfig> getPaymentLinkConfig_JsonNullable() {
-        return paymentLinkConfig;
-        }
+  public JsonNullable<BusinessPaymentLinkConfig> getPaymentLinkConfig_JsonNullable() {
+    return paymentLinkConfig;
+  }
+  
+  @JsonProperty(JSON_PROPERTY_PAYMENT_LINK_CONFIG)
+  public void setPaymentLinkConfig_JsonNullable(JsonNullable<BusinessPaymentLinkConfig> paymentLinkConfig) {
+    this.paymentLinkConfig = paymentLinkConfig;
+  }
+
+  public void setPaymentLinkConfig(@javax.annotation.Nullable BusinessPaymentLinkConfig paymentLinkConfig) {
+    this.paymentLinkConfig = JsonNullable.<BusinessPaymentLinkConfig>of(paymentLinkConfig);
+  }
+
+  public ProfileResponse authenticationConnectorDetails(@javax.annotation.Nullable AuthenticationConnectorDetails authenticationConnectorDetails) {
+    this.authenticationConnectorDetails = JsonNullable.<AuthenticationConnectorDetails>of(authenticationConnectorDetails);
     
-        @JsonProperty(JSON_PROPERTY_PAYMENT_LINK_CONFIG)
-        public void setPaymentLinkConfig_JsonNullable(JsonNullable<BusinessPaymentLinkConfig> paymentLinkConfig) {
-        this.paymentLinkConfig = paymentLinkConfig;
-        }
+    return this;
+  }
 
-          public void setPaymentLinkConfig(@javax.annotation.Nullable BusinessPaymentLinkConfig paymentLinkConfig) {
-            this.paymentLinkConfig = JsonNullable.<BusinessPaymentLinkConfig>of(paymentLinkConfig);
-        }
+  /**
+   * Get authenticationConnectorDetails
+   * @return authenticationConnectorDetails
+   */
+  @javax.annotation.Nullable
+  @JsonIgnore
 
-        public ProfileResponse authenticationConnectorDetails(@javax.annotation.Nullable AuthenticationConnectorDetails authenticationConnectorDetails) {
-        this.authenticationConnectorDetails = JsonNullable.<AuthenticationConnectorDetails>of(authenticationConnectorDetails);
-        
-        return this;
-        }
+  public AuthenticationConnectorDetails getAuthenticationConnectorDetails() {
+        return authenticationConnectorDetails.orElse(null);
+  }
 
-    /**
-        * Get authenticationConnectorDetails
-    * @return authenticationConnectorDetails
-    */
-    @javax.annotation.Nullable
-        @JsonIgnore
-    
-    public AuthenticationConnectorDetails getAuthenticationConnectorDetails() {
-                return authenticationConnectorDetails.orElse(null);
-    }
-
-          @JsonProperty(JSON_PROPERTY_AUTHENTICATION_CONNECTOR_DETAILS)
+  @JsonProperty(JSON_PROPERTY_AUTHENTICATION_CONNECTOR_DETAILS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-        public JsonNullable<AuthenticationConnectorDetails> getAuthenticationConnectorDetails_JsonNullable() {
-        return authenticationConnectorDetails;
-        }
+  public JsonNullable<AuthenticationConnectorDetails> getAuthenticationConnectorDetails_JsonNullable() {
+    return authenticationConnectorDetails;
+  }
+  
+  @JsonProperty(JSON_PROPERTY_AUTHENTICATION_CONNECTOR_DETAILS)
+  public void setAuthenticationConnectorDetails_JsonNullable(JsonNullable<AuthenticationConnectorDetails> authenticationConnectorDetails) {
+    this.authenticationConnectorDetails = authenticationConnectorDetails;
+  }
+
+  public void setAuthenticationConnectorDetails(@javax.annotation.Nullable AuthenticationConnectorDetails authenticationConnectorDetails) {
+    this.authenticationConnectorDetails = JsonNullable.<AuthenticationConnectorDetails>of(authenticationConnectorDetails);
+  }
+
+  public ProfileResponse useBillingAsPaymentMethodBilling(@javax.annotation.Nullable Boolean useBillingAsPaymentMethodBilling) {
+    this.useBillingAsPaymentMethodBilling = JsonNullable.<Boolean>of(useBillingAsPaymentMethodBilling);
     
-        @JsonProperty(JSON_PROPERTY_AUTHENTICATION_CONNECTOR_DETAILS)
-        public void setAuthenticationConnectorDetails_JsonNullable(JsonNullable<AuthenticationConnectorDetails> authenticationConnectorDetails) {
-        this.authenticationConnectorDetails = authenticationConnectorDetails;
-        }
+    return this;
+  }
 
-          public void setAuthenticationConnectorDetails(@javax.annotation.Nullable AuthenticationConnectorDetails authenticationConnectorDetails) {
-            this.authenticationConnectorDetails = JsonNullable.<AuthenticationConnectorDetails>of(authenticationConnectorDetails);
-        }
+  /**
+   * Get useBillingAsPaymentMethodBilling
+   * @return useBillingAsPaymentMethodBilling
+   */
+  @javax.annotation.Nullable
+  @JsonIgnore
 
-        public ProfileResponse useBillingAsPaymentMethodBilling(@javax.annotation.Nullable Boolean useBillingAsPaymentMethodBilling) {
-        this.useBillingAsPaymentMethodBilling = JsonNullable.<Boolean>of(useBillingAsPaymentMethodBilling);
-        
-        return this;
-        }
+  public Boolean getUseBillingAsPaymentMethodBilling() {
+        return useBillingAsPaymentMethodBilling.orElse(null);
+  }
 
-    /**
-        * Get useBillingAsPaymentMethodBilling
-    * @return useBillingAsPaymentMethodBilling
-    */
-    @javax.annotation.Nullable
-        @JsonIgnore
-    
-    public Boolean getUseBillingAsPaymentMethodBilling() {
-                return useBillingAsPaymentMethodBilling.orElse(null);
-    }
-
-          @JsonProperty(JSON_PROPERTY_USE_BILLING_AS_PAYMENT_METHOD_BILLING)
+  @JsonProperty(JSON_PROPERTY_USE_BILLING_AS_PAYMENT_METHOD_BILLING)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-        public JsonNullable<Boolean> getUseBillingAsPaymentMethodBilling_JsonNullable() {
-        return useBillingAsPaymentMethodBilling;
-        }
+  public JsonNullable<Boolean> getUseBillingAsPaymentMethodBilling_JsonNullable() {
+    return useBillingAsPaymentMethodBilling;
+  }
+  
+  @JsonProperty(JSON_PROPERTY_USE_BILLING_AS_PAYMENT_METHOD_BILLING)
+  public void setUseBillingAsPaymentMethodBilling_JsonNullable(JsonNullable<Boolean> useBillingAsPaymentMethodBilling) {
+    this.useBillingAsPaymentMethodBilling = useBillingAsPaymentMethodBilling;
+  }
+
+  public void setUseBillingAsPaymentMethodBilling(@javax.annotation.Nullable Boolean useBillingAsPaymentMethodBilling) {
+    this.useBillingAsPaymentMethodBilling = JsonNullable.<Boolean>of(useBillingAsPaymentMethodBilling);
+  }
+
+  public ProfileResponse extendedCardInfoConfig(@javax.annotation.Nullable ExtendedCardInfoConfig extendedCardInfoConfig) {
+    this.extendedCardInfoConfig = JsonNullable.<ExtendedCardInfoConfig>of(extendedCardInfoConfig);
     
-        @JsonProperty(JSON_PROPERTY_USE_BILLING_AS_PAYMENT_METHOD_BILLING)
-        public void setUseBillingAsPaymentMethodBilling_JsonNullable(JsonNullable<Boolean> useBillingAsPaymentMethodBilling) {
-        this.useBillingAsPaymentMethodBilling = useBillingAsPaymentMethodBilling;
-        }
+    return this;
+  }
 
-          public void setUseBillingAsPaymentMethodBilling(@javax.annotation.Nullable Boolean useBillingAsPaymentMethodBilling) {
-            this.useBillingAsPaymentMethodBilling = JsonNullable.<Boolean>of(useBillingAsPaymentMethodBilling);
-        }
+  /**
+   * Get extendedCardInfoConfig
+   * @return extendedCardInfoConfig
+   */
+  @javax.annotation.Nullable
+  @JsonIgnore
 
-        public ProfileResponse extendedCardInfoConfig(@javax.annotation.Nullable ExtendedCardInfoConfig extendedCardInfoConfig) {
-        this.extendedCardInfoConfig = JsonNullable.<ExtendedCardInfoConfig>of(extendedCardInfoConfig);
-        
-        return this;
-        }
+  public ExtendedCardInfoConfig getExtendedCardInfoConfig() {
+        return extendedCardInfoConfig.orElse(null);
+  }
 
-    /**
-        * Get extendedCardInfoConfig
-    * @return extendedCardInfoConfig
-    */
-    @javax.annotation.Nullable
-        @JsonIgnore
-    
-    public ExtendedCardInfoConfig getExtendedCardInfoConfig() {
-                return extendedCardInfoConfig.orElse(null);
-    }
-
-          @JsonProperty(JSON_PROPERTY_EXTENDED_CARD_INFO_CONFIG)
+  @JsonProperty(JSON_PROPERTY_EXTENDED_CARD_INFO_CONFIG)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-        public JsonNullable<ExtendedCardInfoConfig> getExtendedCardInfoConfig_JsonNullable() {
-        return extendedCardInfoConfig;
-        }
+  public JsonNullable<ExtendedCardInfoConfig> getExtendedCardInfoConfig_JsonNullable() {
+    return extendedCardInfoConfig;
+  }
+  
+  @JsonProperty(JSON_PROPERTY_EXTENDED_CARD_INFO_CONFIG)
+  public void setExtendedCardInfoConfig_JsonNullable(JsonNullable<ExtendedCardInfoConfig> extendedCardInfoConfig) {
+    this.extendedCardInfoConfig = extendedCardInfoConfig;
+  }
+
+  public void setExtendedCardInfoConfig(@javax.annotation.Nullable ExtendedCardInfoConfig extendedCardInfoConfig) {
+    this.extendedCardInfoConfig = JsonNullable.<ExtendedCardInfoConfig>of(extendedCardInfoConfig);
+  }
+
+  public ProfileResponse collectShippingDetailsFromWalletConnector(@javax.annotation.Nullable Boolean collectShippingDetailsFromWalletConnector) {
+    this.collectShippingDetailsFromWalletConnector = JsonNullable.<Boolean>of(collectShippingDetailsFromWalletConnector);
     
-        @JsonProperty(JSON_PROPERTY_EXTENDED_CARD_INFO_CONFIG)
-        public void setExtendedCardInfoConfig_JsonNullable(JsonNullable<ExtendedCardInfoConfig> extendedCardInfoConfig) {
-        this.extendedCardInfoConfig = extendedCardInfoConfig;
-        }
+    return this;
+  }
 
-          public void setExtendedCardInfoConfig(@javax.annotation.Nullable ExtendedCardInfoConfig extendedCardInfoConfig) {
-            this.extendedCardInfoConfig = JsonNullable.<ExtendedCardInfoConfig>of(extendedCardInfoConfig);
-        }
+  /**
+   * A boolean value to indicate if customer shipping details needs to be collected from wallet connector only if it is required field for connector (Eg. Apple Pay, Google Pay etc)
+   * @return collectShippingDetailsFromWalletConnector
+   */
+  @javax.annotation.Nullable
+  @JsonIgnore
 
-        public ProfileResponse collectShippingDetailsFromWalletConnector(@javax.annotation.Nullable Boolean collectShippingDetailsFromWalletConnector) {
-        this.collectShippingDetailsFromWalletConnector = JsonNullable.<Boolean>of(collectShippingDetailsFromWalletConnector);
-        
-        return this;
-        }
+  public Boolean getCollectShippingDetailsFromWalletConnector() {
+        return collectShippingDetailsFromWalletConnector.orElse(null);
+  }
 
-    /**
-        * A boolean value to indicate if customer shipping details needs to be collected from wallet connector only if it is required field for connector (Eg. Apple Pay, Google Pay etc)
-    * @return collectShippingDetailsFromWalletConnector
-    */
-    @javax.annotation.Nullable
-        @JsonIgnore
-    
-    public Boolean getCollectShippingDetailsFromWalletConnector() {
-                return collectShippingDetailsFromWalletConnector.orElse(null);
-    }
-
-          @JsonProperty(JSON_PROPERTY_COLLECT_SHIPPING_DETAILS_FROM_WALLET_CONNECTOR)
+  @JsonProperty(JSON_PROPERTY_COLLECT_SHIPPING_DETAILS_FROM_WALLET_CONNECTOR)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-        public JsonNullable<Boolean> getCollectShippingDetailsFromWalletConnector_JsonNullable() {
-        return collectShippingDetailsFromWalletConnector;
-        }
+  public JsonNullable<Boolean> getCollectShippingDetailsFromWalletConnector_JsonNullable() {
+    return collectShippingDetailsFromWalletConnector;
+  }
+  
+  @JsonProperty(JSON_PROPERTY_COLLECT_SHIPPING_DETAILS_FROM_WALLET_CONNECTOR)
+  public void setCollectShippingDetailsFromWalletConnector_JsonNullable(JsonNullable<Boolean> collectShippingDetailsFromWalletConnector) {
+    this.collectShippingDetailsFromWalletConnector = collectShippingDetailsFromWalletConnector;
+  }
+
+  public void setCollectShippingDetailsFromWalletConnector(@javax.annotation.Nullable Boolean collectShippingDetailsFromWalletConnector) {
+    this.collectShippingDetailsFromWalletConnector = JsonNullable.<Boolean>of(collectShippingDetailsFromWalletConnector);
+  }
+
+  public ProfileResponse collectBillingDetailsFromWalletConnector(@javax.annotation.Nullable Boolean collectBillingDetailsFromWalletConnector) {
+    this.collectBillingDetailsFromWalletConnector = JsonNullable.<Boolean>of(collectBillingDetailsFromWalletConnector);
     
-        @JsonProperty(JSON_PROPERTY_COLLECT_SHIPPING_DETAILS_FROM_WALLET_CONNECTOR)
-        public void setCollectShippingDetailsFromWalletConnector_JsonNullable(JsonNullable<Boolean> collectShippingDetailsFromWalletConnector) {
-        this.collectShippingDetailsFromWalletConnector = collectShippingDetailsFromWalletConnector;
-        }
+    return this;
+  }
 
-          public void setCollectShippingDetailsFromWalletConnector(@javax.annotation.Nullable Boolean collectShippingDetailsFromWalletConnector) {
-            this.collectShippingDetailsFromWalletConnector = JsonNullable.<Boolean>of(collectShippingDetailsFromWalletConnector);
-        }
+  /**
+   * A boolean value to indicate if customer billing details needs to be collected from wallet connector only if it is required field for connector (Eg. Apple Pay, Google Pay etc)
+   * @return collectBillingDetailsFromWalletConnector
+   */
+  @javax.annotation.Nullable
+  @JsonIgnore
 
-        public ProfileResponse collectBillingDetailsFromWalletConnector(@javax.annotation.Nullable Boolean collectBillingDetailsFromWalletConnector) {
-        this.collectBillingDetailsFromWalletConnector = JsonNullable.<Boolean>of(collectBillingDetailsFromWalletConnector);
-        
-        return this;
-        }
+  public Boolean getCollectBillingDetailsFromWalletConnector() {
+        return collectBillingDetailsFromWalletConnector.orElse(null);
+  }
 
-    /**
-        * A boolean value to indicate if customer billing details needs to be collected from wallet connector only if it is required field for connector (Eg. Apple Pay, Google Pay etc)
-    * @return collectBillingDetailsFromWalletConnector
-    */
-    @javax.annotation.Nullable
-        @JsonIgnore
-    
-    public Boolean getCollectBillingDetailsFromWalletConnector() {
-                return collectBillingDetailsFromWalletConnector.orElse(null);
-    }
-
-          @JsonProperty(JSON_PROPERTY_COLLECT_BILLING_DETAILS_FROM_WALLET_CONNECTOR)
+  @JsonProperty(JSON_PROPERTY_COLLECT_BILLING_DETAILS_FROM_WALLET_CONNECTOR)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-        public JsonNullable<Boolean> getCollectBillingDetailsFromWalletConnector_JsonNullable() {
-        return collectBillingDetailsFromWalletConnector;
-        }
+  public JsonNullable<Boolean> getCollectBillingDetailsFromWalletConnector_JsonNullable() {
+    return collectBillingDetailsFromWalletConnector;
+  }
+  
+  @JsonProperty(JSON_PROPERTY_COLLECT_BILLING_DETAILS_FROM_WALLET_CONNECTOR)
+  public void setCollectBillingDetailsFromWalletConnector_JsonNullable(JsonNullable<Boolean> collectBillingDetailsFromWalletConnector) {
+    this.collectBillingDetailsFromWalletConnector = collectBillingDetailsFromWalletConnector;
+  }
+
+  public void setCollectBillingDetailsFromWalletConnector(@javax.annotation.Nullable Boolean collectBillingDetailsFromWalletConnector) {
+    this.collectBillingDetailsFromWalletConnector = JsonNullable.<Boolean>of(collectBillingDetailsFromWalletConnector);
+  }
+
+  public ProfileResponse alwaysCollectShippingDetailsFromWalletConnector(@javax.annotation.Nullable Boolean alwaysCollectShippingDetailsFromWalletConnector) {
+    this.alwaysCollectShippingDetailsFromWalletConnector = JsonNullable.<Boolean>of(alwaysCollectShippingDetailsFromWalletConnector);
     
-        @JsonProperty(JSON_PROPERTY_COLLECT_BILLING_DETAILS_FROM_WALLET_CONNECTOR)
-        public void setCollectBillingDetailsFromWalletConnector_JsonNullable(JsonNullable<Boolean> collectBillingDetailsFromWalletConnector) {
-        this.collectBillingDetailsFromWalletConnector = collectBillingDetailsFromWalletConnector;
-        }
+    return this;
+  }
 
-          public void setCollectBillingDetailsFromWalletConnector(@javax.annotation.Nullable Boolean collectBillingDetailsFromWalletConnector) {
-            this.collectBillingDetailsFromWalletConnector = JsonNullable.<Boolean>of(collectBillingDetailsFromWalletConnector);
-        }
+  /**
+   * A boolean value to indicate if customer shipping details needs to be collected from wallet connector irrespective of connector required fields (Eg. Apple pay, Google pay etc)
+   * @return alwaysCollectShippingDetailsFromWalletConnector
+   */
+  @javax.annotation.Nullable
+  @JsonIgnore
 
-        public ProfileResponse alwaysCollectShippingDetailsFromWalletConnector(@javax.annotation.Nullable Boolean alwaysCollectShippingDetailsFromWalletConnector) {
-        this.alwaysCollectShippingDetailsFromWalletConnector = JsonNullable.<Boolean>of(alwaysCollectShippingDetailsFromWalletConnector);
-        
-        return this;
-        }
+  public Boolean getAlwaysCollectShippingDetailsFromWalletConnector() {
+        return alwaysCollectShippingDetailsFromWalletConnector.orElse(null);
+  }
 
-    /**
-        * A boolean value to indicate if customer shipping details needs to be collected from wallet connector irrespective of connector required fields (Eg. Apple pay, Google pay etc)
-    * @return alwaysCollectShippingDetailsFromWalletConnector
-    */
-    @javax.annotation.Nullable
-        @JsonIgnore
-    
-    public Boolean getAlwaysCollectShippingDetailsFromWalletConnector() {
-                return alwaysCollectShippingDetailsFromWalletConnector.orElse(null);
-    }
-
-          @JsonProperty(JSON_PROPERTY_ALWAYS_COLLECT_SHIPPING_DETAILS_FROM_WALLET_CONNECTOR)
+  @JsonProperty(JSON_PROPERTY_ALWAYS_COLLECT_SHIPPING_DETAILS_FROM_WALLET_CONNECTOR)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-        public JsonNullable<Boolean> getAlwaysCollectShippingDetailsFromWalletConnector_JsonNullable() {
-        return alwaysCollectShippingDetailsFromWalletConnector;
-        }
+  public JsonNullable<Boolean> getAlwaysCollectShippingDetailsFromWalletConnector_JsonNullable() {
+    return alwaysCollectShippingDetailsFromWalletConnector;
+  }
+  
+  @JsonProperty(JSON_PROPERTY_ALWAYS_COLLECT_SHIPPING_DETAILS_FROM_WALLET_CONNECTOR)
+  public void setAlwaysCollectShippingDetailsFromWalletConnector_JsonNullable(JsonNullable<Boolean> alwaysCollectShippingDetailsFromWalletConnector) {
+    this.alwaysCollectShippingDetailsFromWalletConnector = alwaysCollectShippingDetailsFromWalletConnector;
+  }
+
+  public void setAlwaysCollectShippingDetailsFromWalletConnector(@javax.annotation.Nullable Boolean alwaysCollectShippingDetailsFromWalletConnector) {
+    this.alwaysCollectShippingDetailsFromWalletConnector = JsonNullable.<Boolean>of(alwaysCollectShippingDetailsFromWalletConnector);
+  }
+
+  public ProfileResponse alwaysCollectBillingDetailsFromWalletConnector(@javax.annotation.Nullable Boolean alwaysCollectBillingDetailsFromWalletConnector) {
+    this.alwaysCollectBillingDetailsFromWalletConnector = JsonNullable.<Boolean>of(alwaysCollectBillingDetailsFromWalletConnector);
     
-        @JsonProperty(JSON_PROPERTY_ALWAYS_COLLECT_SHIPPING_DETAILS_FROM_WALLET_CONNECTOR)
-        public void setAlwaysCollectShippingDetailsFromWalletConnector_JsonNullable(JsonNullable<Boolean> alwaysCollectShippingDetailsFromWalletConnector) {
-        this.alwaysCollectShippingDetailsFromWalletConnector = alwaysCollectShippingDetailsFromWalletConnector;
-        }
+    return this;
+  }
 
-          public void setAlwaysCollectShippingDetailsFromWalletConnector(@javax.annotation.Nullable Boolean alwaysCollectShippingDetailsFromWalletConnector) {
-            this.alwaysCollectShippingDetailsFromWalletConnector = JsonNullable.<Boolean>of(alwaysCollectShippingDetailsFromWalletConnector);
-        }
+  /**
+   * A boolean value to indicate if customer billing details needs to be collected from wallet connector irrespective of connector required fields (Eg. Apple pay, Google pay etc)
+   * @return alwaysCollectBillingDetailsFromWalletConnector
+   */
+  @javax.annotation.Nullable
+  @JsonIgnore
 
-        public ProfileResponse alwaysCollectBillingDetailsFromWalletConnector(@javax.annotation.Nullable Boolean alwaysCollectBillingDetailsFromWalletConnector) {
-        this.alwaysCollectBillingDetailsFromWalletConnector = JsonNullable.<Boolean>of(alwaysCollectBillingDetailsFromWalletConnector);
-        
-        return this;
-        }
+  public Boolean getAlwaysCollectBillingDetailsFromWalletConnector() {
+        return alwaysCollectBillingDetailsFromWalletConnector.orElse(null);
+  }
 
-    /**
-        * A boolean value to indicate if customer billing details needs to be collected from wallet connector irrespective of connector required fields (Eg. Apple pay, Google pay etc)
-    * @return alwaysCollectBillingDetailsFromWalletConnector
-    */
-    @javax.annotation.Nullable
-        @JsonIgnore
-    
-    public Boolean getAlwaysCollectBillingDetailsFromWalletConnector() {
-                return alwaysCollectBillingDetailsFromWalletConnector.orElse(null);
-    }
-
-          @JsonProperty(JSON_PROPERTY_ALWAYS_COLLECT_BILLING_DETAILS_FROM_WALLET_CONNECTOR)
+  @JsonProperty(JSON_PROPERTY_ALWAYS_COLLECT_BILLING_DETAILS_FROM_WALLET_CONNECTOR)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-        public JsonNullable<Boolean> getAlwaysCollectBillingDetailsFromWalletConnector_JsonNullable() {
-        return alwaysCollectBillingDetailsFromWalletConnector;
-        }
+  public JsonNullable<Boolean> getAlwaysCollectBillingDetailsFromWalletConnector_JsonNullable() {
+    return alwaysCollectBillingDetailsFromWalletConnector;
+  }
+  
+  @JsonProperty(JSON_PROPERTY_ALWAYS_COLLECT_BILLING_DETAILS_FROM_WALLET_CONNECTOR)
+  public void setAlwaysCollectBillingDetailsFromWalletConnector_JsonNullable(JsonNullable<Boolean> alwaysCollectBillingDetailsFromWalletConnector) {
+    this.alwaysCollectBillingDetailsFromWalletConnector = alwaysCollectBillingDetailsFromWalletConnector;
+  }
+
+  public void setAlwaysCollectBillingDetailsFromWalletConnector(@javax.annotation.Nullable Boolean alwaysCollectBillingDetailsFromWalletConnector) {
+    this.alwaysCollectBillingDetailsFromWalletConnector = JsonNullable.<Boolean>of(alwaysCollectBillingDetailsFromWalletConnector);
+  }
+
+  public ProfileResponse isConnectorAgnosticMitEnabled(@javax.annotation.Nullable Boolean isConnectorAgnosticMitEnabled) {
+    this.isConnectorAgnosticMitEnabled = JsonNullable.<Boolean>of(isConnectorAgnosticMitEnabled);
     
-        @JsonProperty(JSON_PROPERTY_ALWAYS_COLLECT_BILLING_DETAILS_FROM_WALLET_CONNECTOR)
-        public void setAlwaysCollectBillingDetailsFromWalletConnector_JsonNullable(JsonNullable<Boolean> alwaysCollectBillingDetailsFromWalletConnector) {
-        this.alwaysCollectBillingDetailsFromWalletConnector = alwaysCollectBillingDetailsFromWalletConnector;
-        }
+    return this;
+  }
 
-          public void setAlwaysCollectBillingDetailsFromWalletConnector(@javax.annotation.Nullable Boolean alwaysCollectBillingDetailsFromWalletConnector) {
-            this.alwaysCollectBillingDetailsFromWalletConnector = JsonNullable.<Boolean>of(alwaysCollectBillingDetailsFromWalletConnector);
-        }
+  /**
+   * Indicates if the MIT (merchant initiated transaction) payments can be made connector agnostic, i.e., MITs may be processed through different connector than CIT (customer initiated transaction) based on the routing rules. If set to &#x60;false&#x60;, MIT will go through the same connector as the CIT.
+   * @return isConnectorAgnosticMitEnabled
+   */
+  @javax.annotation.Nullable
+  @JsonIgnore
 
-        public ProfileResponse isConnectorAgnosticMitEnabled(@javax.annotation.Nullable Boolean isConnectorAgnosticMitEnabled) {
-        this.isConnectorAgnosticMitEnabled = JsonNullable.<Boolean>of(isConnectorAgnosticMitEnabled);
-        
-        return this;
-        }
+  public Boolean getIsConnectorAgnosticMitEnabled() {
+        return isConnectorAgnosticMitEnabled.orElse(null);
+  }
 
-    /**
-        * Indicates if the MIT (merchant initiated transaction) payments can be made connector agnostic, i.e., MITs may be processed through different connector than CIT (customer initiated transaction) based on the routing rules. If set to &#x60;false&#x60;, MIT will go through the same connector as the CIT.
-    * @return isConnectorAgnosticMitEnabled
-    */
-    @javax.annotation.Nullable
-        @JsonIgnore
-    
-    public Boolean getIsConnectorAgnosticMitEnabled() {
-                return isConnectorAgnosticMitEnabled.orElse(null);
-    }
-
-          @JsonProperty(JSON_PROPERTY_IS_CONNECTOR_AGNOSTIC_MIT_ENABLED)
+  @JsonProperty(JSON_PROPERTY_IS_CONNECTOR_AGNOSTIC_MIT_ENABLED)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-        public JsonNullable<Boolean> getIsConnectorAgnosticMitEnabled_JsonNullable() {
-        return isConnectorAgnosticMitEnabled;
-        }
+  public JsonNullable<Boolean> getIsConnectorAgnosticMitEnabled_JsonNullable() {
+    return isConnectorAgnosticMitEnabled;
+  }
+  
+  @JsonProperty(JSON_PROPERTY_IS_CONNECTOR_AGNOSTIC_MIT_ENABLED)
+  public void setIsConnectorAgnosticMitEnabled_JsonNullable(JsonNullable<Boolean> isConnectorAgnosticMitEnabled) {
+    this.isConnectorAgnosticMitEnabled = isConnectorAgnosticMitEnabled;
+  }
+
+  public void setIsConnectorAgnosticMitEnabled(@javax.annotation.Nullable Boolean isConnectorAgnosticMitEnabled) {
+    this.isConnectorAgnosticMitEnabled = JsonNullable.<Boolean>of(isConnectorAgnosticMitEnabled);
+  }
+
+  public ProfileResponse payoutLinkConfig(@javax.annotation.Nullable BusinessPayoutLinkConfig payoutLinkConfig) {
+    this.payoutLinkConfig = JsonNullable.<BusinessPayoutLinkConfig>of(payoutLinkConfig);
     
-        @JsonProperty(JSON_PROPERTY_IS_CONNECTOR_AGNOSTIC_MIT_ENABLED)
-        public void setIsConnectorAgnosticMitEnabled_JsonNullable(JsonNullable<Boolean> isConnectorAgnosticMitEnabled) {
-        this.isConnectorAgnosticMitEnabled = isConnectorAgnosticMitEnabled;
-        }
+    return this;
+  }
 
-          public void setIsConnectorAgnosticMitEnabled(@javax.annotation.Nullable Boolean isConnectorAgnosticMitEnabled) {
-            this.isConnectorAgnosticMitEnabled = JsonNullable.<Boolean>of(isConnectorAgnosticMitEnabled);
-        }
+  /**
+   * Get payoutLinkConfig
+   * @return payoutLinkConfig
+   */
+  @javax.annotation.Nullable
+  @JsonIgnore
 
-        public ProfileResponse payoutLinkConfig(@javax.annotation.Nullable BusinessPayoutLinkConfig payoutLinkConfig) {
-        this.payoutLinkConfig = JsonNullable.<BusinessPayoutLinkConfig>of(payoutLinkConfig);
-        
-        return this;
-        }
+  public BusinessPayoutLinkConfig getPayoutLinkConfig() {
+        return payoutLinkConfig.orElse(null);
+  }
 
-    /**
-        * Get payoutLinkConfig
-    * @return payoutLinkConfig
-    */
-    @javax.annotation.Nullable
-        @JsonIgnore
-    
-    public BusinessPayoutLinkConfig getPayoutLinkConfig() {
-                return payoutLinkConfig.orElse(null);
-    }
-
-          @JsonProperty(JSON_PROPERTY_PAYOUT_LINK_CONFIG)
+  @JsonProperty(JSON_PROPERTY_PAYOUT_LINK_CONFIG)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-        public JsonNullable<BusinessPayoutLinkConfig> getPayoutLinkConfig_JsonNullable() {
-        return payoutLinkConfig;
-        }
+  public JsonNullable<BusinessPayoutLinkConfig> getPayoutLinkConfig_JsonNullable() {
+    return payoutLinkConfig;
+  }
+  
+  @JsonProperty(JSON_PROPERTY_PAYOUT_LINK_CONFIG)
+  public void setPayoutLinkConfig_JsonNullable(JsonNullable<BusinessPayoutLinkConfig> payoutLinkConfig) {
+    this.payoutLinkConfig = payoutLinkConfig;
+  }
+
+  public void setPayoutLinkConfig(@javax.annotation.Nullable BusinessPayoutLinkConfig payoutLinkConfig) {
+    this.payoutLinkConfig = JsonNullable.<BusinessPayoutLinkConfig>of(payoutLinkConfig);
+  }
+
+  public ProfileResponse outgoingWebhookCustomHttpHeaders(@javax.annotation.Nullable Object outgoingWebhookCustomHttpHeaders) {
+    this.outgoingWebhookCustomHttpHeaders = JsonNullable.<Object>of(outgoingWebhookCustomHttpHeaders);
     
-        @JsonProperty(JSON_PROPERTY_PAYOUT_LINK_CONFIG)
-        public void setPayoutLinkConfig_JsonNullable(JsonNullable<BusinessPayoutLinkConfig> payoutLinkConfig) {
-        this.payoutLinkConfig = payoutLinkConfig;
-        }
+    return this;
+  }
 
-          public void setPayoutLinkConfig(@javax.annotation.Nullable BusinessPayoutLinkConfig payoutLinkConfig) {
-            this.payoutLinkConfig = JsonNullable.<BusinessPayoutLinkConfig>of(payoutLinkConfig);
-        }
+  /**
+   * These key-value pairs are sent as additional custom headers in the outgoing webhook request.
+   * @return outgoingWebhookCustomHttpHeaders
+   */
+  @javax.annotation.Nullable
+  @JsonIgnore
 
-        public ProfileResponse outgoingWebhookCustomHttpHeaders(@javax.annotation.Nullable Object outgoingWebhookCustomHttpHeaders) {
-        this.outgoingWebhookCustomHttpHeaders = JsonNullable.<Object>of(outgoingWebhookCustomHttpHeaders);
-        
-        return this;
-        }
+  public Object getOutgoingWebhookCustomHttpHeaders() {
+        return outgoingWebhookCustomHttpHeaders.orElse(null);
+  }
 
-    /**
-        * These key-value pairs are sent as additional custom headers in the outgoing webhook request.
-    * @return outgoingWebhookCustomHttpHeaders
-    */
-    @javax.annotation.Nullable
-        @JsonIgnore
-    
-    public Object getOutgoingWebhookCustomHttpHeaders() {
-                return outgoingWebhookCustomHttpHeaders.orElse(null);
-    }
-
-          @JsonProperty(JSON_PROPERTY_OUTGOING_WEBHOOK_CUSTOM_HTTP_HEADERS)
+  @JsonProperty(JSON_PROPERTY_OUTGOING_WEBHOOK_CUSTOM_HTTP_HEADERS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-        public JsonNullable<Object> getOutgoingWebhookCustomHttpHeaders_JsonNullable() {
-        return outgoingWebhookCustomHttpHeaders;
-        }
+  public JsonNullable<Object> getOutgoingWebhookCustomHttpHeaders_JsonNullable() {
+    return outgoingWebhookCustomHttpHeaders;
+  }
+  
+  @JsonProperty(JSON_PROPERTY_OUTGOING_WEBHOOK_CUSTOM_HTTP_HEADERS)
+  public void setOutgoingWebhookCustomHttpHeaders_JsonNullable(JsonNullable<Object> outgoingWebhookCustomHttpHeaders) {
+    this.outgoingWebhookCustomHttpHeaders = outgoingWebhookCustomHttpHeaders;
+  }
+
+  public void setOutgoingWebhookCustomHttpHeaders(@javax.annotation.Nullable Object outgoingWebhookCustomHttpHeaders) {
+    this.outgoingWebhookCustomHttpHeaders = JsonNullable.<Object>of(outgoingWebhookCustomHttpHeaders);
+  }
+
+  public ProfileResponse taxConnectorId(@javax.annotation.Nullable String taxConnectorId) {
+    this.taxConnectorId = JsonNullable.<String>of(taxConnectorId);
     
-        @JsonProperty(JSON_PROPERTY_OUTGOING_WEBHOOK_CUSTOM_HTTP_HEADERS)
-        public void setOutgoingWebhookCustomHttpHeaders_JsonNullable(JsonNullable<Object> outgoingWebhookCustomHttpHeaders) {
-        this.outgoingWebhookCustomHttpHeaders = outgoingWebhookCustomHttpHeaders;
-        }
+    return this;
+  }
 
-          public void setOutgoingWebhookCustomHttpHeaders(@javax.annotation.Nullable Object outgoingWebhookCustomHttpHeaders) {
-            this.outgoingWebhookCustomHttpHeaders = JsonNullable.<Object>of(outgoingWebhookCustomHttpHeaders);
-        }
+  /**
+   * Merchant Connector id to be stored for tax_calculator connector
+   * @return taxConnectorId
+   */
+  @javax.annotation.Nullable
+  @JsonIgnore
 
-        public ProfileResponse taxConnectorId(@javax.annotation.Nullable String taxConnectorId) {
-        this.taxConnectorId = JsonNullable.<String>of(taxConnectorId);
-        
-        return this;
-        }
+  public String getTaxConnectorId() {
+        return taxConnectorId.orElse(null);
+  }
 
-    /**
-        * Merchant Connector id to be stored for tax_calculator connector
-    * @return taxConnectorId
-    */
-    @javax.annotation.Nullable
-        @JsonIgnore
-    
-    public String getTaxConnectorId() {
-                return taxConnectorId.orElse(null);
-    }
-
-          @JsonProperty(JSON_PROPERTY_TAX_CONNECTOR_ID)
+  @JsonProperty(JSON_PROPERTY_TAX_CONNECTOR_ID)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-        public JsonNullable<String> getTaxConnectorId_JsonNullable() {
-        return taxConnectorId;
-        }
+  public JsonNullable<String> getTaxConnectorId_JsonNullable() {
+    return taxConnectorId;
+  }
+  
+  @JsonProperty(JSON_PROPERTY_TAX_CONNECTOR_ID)
+  public void setTaxConnectorId_JsonNullable(JsonNullable<String> taxConnectorId) {
+    this.taxConnectorId = taxConnectorId;
+  }
+
+  public void setTaxConnectorId(@javax.annotation.Nullable String taxConnectorId) {
+    this.taxConnectorId = JsonNullable.<String>of(taxConnectorId);
+  }
+
+  public ProfileResponse isTaxConnectorEnabled(@javax.annotation.Nonnull Boolean isTaxConnectorEnabled) {
     
-        @JsonProperty(JSON_PROPERTY_TAX_CONNECTOR_ID)
-        public void setTaxConnectorId_JsonNullable(JsonNullable<String> taxConnectorId) {
-        this.taxConnectorId = taxConnectorId;
-        }
+    this.isTaxConnectorEnabled = isTaxConnectorEnabled;
+    return this;
+  }
 
-          public void setTaxConnectorId(@javax.annotation.Nullable String taxConnectorId) {
-            this.taxConnectorId = JsonNullable.<String>of(taxConnectorId);
-        }
-
-        public ProfileResponse isTaxConnectorEnabled(@javax.annotation.Nonnull Boolean isTaxConnectorEnabled) {
-        
-        this.isTaxConnectorEnabled = isTaxConnectorEnabled;
-        return this;
-        }
-
-    /**
-        * Indicates if tax_calculator connector is enabled or not. If set to &#x60;true&#x60; tax_connector_id will be checked.
-    * @return isTaxConnectorEnabled
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_IS_TAX_CONNECTOR_ENABLED)
+  /**
+   * Indicates if tax_calculator connector is enabled or not. If set to &#x60;true&#x60; tax_connector_id will be checked.
+   * @return isTaxConnectorEnabled
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_IS_TAX_CONNECTOR_ENABLED)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public Boolean getIsTaxConnectorEnabled() {
-        return isTaxConnectorEnabled;
-    }
+  public Boolean getIsTaxConnectorEnabled() {
+    return isTaxConnectorEnabled;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_IS_TAX_CONNECTOR_ENABLED)
+  @JsonProperty(JSON_PROPERTY_IS_TAX_CONNECTOR_ENABLED)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setIsTaxConnectorEnabled(@javax.annotation.Nonnull Boolean isTaxConnectorEnabled) {
-            this.isTaxConnectorEnabled = isTaxConnectorEnabled;
-        }
+    this.isTaxConnectorEnabled = isTaxConnectorEnabled;
+  }
 
-        public ProfileResponse isNetworkTokenizationEnabled(@javax.annotation.Nonnull Boolean isNetworkTokenizationEnabled) {
-        
-        this.isNetworkTokenizationEnabled = isNetworkTokenizationEnabled;
-        return this;
-        }
+  public ProfileResponse isNetworkTokenizationEnabled(@javax.annotation.Nonnull Boolean isNetworkTokenizationEnabled) {
+    
+    this.isNetworkTokenizationEnabled = isNetworkTokenizationEnabled;
+    return this;
+  }
 
-    /**
-        * Indicates if network tokenization is enabled or not.
-    * @return isNetworkTokenizationEnabled
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_IS_NETWORK_TOKENIZATION_ENABLED)
+  /**
+   * Indicates if network tokenization is enabled or not.
+   * @return isNetworkTokenizationEnabled
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_IS_NETWORK_TOKENIZATION_ENABLED)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public Boolean getIsNetworkTokenizationEnabled() {
-        return isNetworkTokenizationEnabled;
-    }
+  public Boolean getIsNetworkTokenizationEnabled() {
+    return isNetworkTokenizationEnabled;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_IS_NETWORK_TOKENIZATION_ENABLED)
+  @JsonProperty(JSON_PROPERTY_IS_NETWORK_TOKENIZATION_ENABLED)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setIsNetworkTokenizationEnabled(@javax.annotation.Nonnull Boolean isNetworkTokenizationEnabled) {
-            this.isNetworkTokenizationEnabled = isNetworkTokenizationEnabled;
-        }
+    this.isNetworkTokenizationEnabled = isNetworkTokenizationEnabled;
+  }
 
-        public ProfileResponse isAutoRetriesEnabled(@javax.annotation.Nonnull Boolean isAutoRetriesEnabled) {
-        
-        this.isAutoRetriesEnabled = isAutoRetriesEnabled;
-        return this;
-        }
+  public ProfileResponse isAutoRetriesEnabled(@javax.annotation.Nonnull Boolean isAutoRetriesEnabled) {
+    
+    this.isAutoRetriesEnabled = isAutoRetriesEnabled;
+    return this;
+  }
 
-    /**
-        * Indicates if is_auto_retries_enabled is enabled or not.
-    * @return isAutoRetriesEnabled
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_IS_AUTO_RETRIES_ENABLED)
+  /**
+   * Indicates if is_auto_retries_enabled is enabled or not.
+   * @return isAutoRetriesEnabled
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_IS_AUTO_RETRIES_ENABLED)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public Boolean getIsAutoRetriesEnabled() {
-        return isAutoRetriesEnabled;
-    }
+  public Boolean getIsAutoRetriesEnabled() {
+    return isAutoRetriesEnabled;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_IS_AUTO_RETRIES_ENABLED)
+  @JsonProperty(JSON_PROPERTY_IS_AUTO_RETRIES_ENABLED)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setIsAutoRetriesEnabled(@javax.annotation.Nonnull Boolean isAutoRetriesEnabled) {
-            this.isAutoRetriesEnabled = isAutoRetriesEnabled;
-        }
+    this.isAutoRetriesEnabled = isAutoRetriesEnabled;
+  }
 
-        public ProfileResponse maxAutoRetriesEnabled(@javax.annotation.Nullable Integer maxAutoRetriesEnabled) {
-        this.maxAutoRetriesEnabled = JsonNullable.<Integer>of(maxAutoRetriesEnabled);
-        
-        return this;
-        }
-
-    /**
-        * Maximum number of auto retries allowed for a payment
-    * @return maxAutoRetriesEnabled
-    */
-    @javax.annotation.Nullable
-        @JsonIgnore
+  public ProfileResponse maxAutoRetriesEnabled(@javax.annotation.Nullable Integer maxAutoRetriesEnabled) {
+    this.maxAutoRetriesEnabled = JsonNullable.<Integer>of(maxAutoRetriesEnabled);
     
-    public Integer getMaxAutoRetriesEnabled() {
-                return maxAutoRetriesEnabled.orElse(null);
-    }
+    return this;
+  }
 
-          @JsonProperty(JSON_PROPERTY_MAX_AUTO_RETRIES_ENABLED)
+  /**
+   * Maximum number of auto retries allowed for a payment
+   * @return maxAutoRetriesEnabled
+   */
+  @javax.annotation.Nullable
+  @JsonIgnore
+
+  public Integer getMaxAutoRetriesEnabled() {
+        return maxAutoRetriesEnabled.orElse(null);
+  }
+
+  @JsonProperty(JSON_PROPERTY_MAX_AUTO_RETRIES_ENABLED)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-        public JsonNullable<Integer> getMaxAutoRetriesEnabled_JsonNullable() {
-        return maxAutoRetriesEnabled;
-        }
-    
-        @JsonProperty(JSON_PROPERTY_MAX_AUTO_RETRIES_ENABLED)
-        public void setMaxAutoRetriesEnabled_JsonNullable(JsonNullable<Integer> maxAutoRetriesEnabled) {
-        this.maxAutoRetriesEnabled = maxAutoRetriesEnabled;
-        }
+  public JsonNullable<Integer> getMaxAutoRetriesEnabled_JsonNullable() {
+    return maxAutoRetriesEnabled;
+  }
+  
+  @JsonProperty(JSON_PROPERTY_MAX_AUTO_RETRIES_ENABLED)
+  public void setMaxAutoRetriesEnabled_JsonNullable(JsonNullable<Integer> maxAutoRetriesEnabled) {
+    this.maxAutoRetriesEnabled = maxAutoRetriesEnabled;
+  }
 
-          public void setMaxAutoRetriesEnabled(@javax.annotation.Nullable Integer maxAutoRetriesEnabled) {
-            this.maxAutoRetriesEnabled = JsonNullable.<Integer>of(maxAutoRetriesEnabled);
-        }
+  public void setMaxAutoRetriesEnabled(@javax.annotation.Nullable Integer maxAutoRetriesEnabled) {
+    this.maxAutoRetriesEnabled = JsonNullable.<Integer>of(maxAutoRetriesEnabled);
+  }
 
-@Override
-public boolean equals(Object o) {
+  @Override
+  public boolean equals(Object o) {
     if (this == o) {
-    return true;
+      return true;
     }
     if (o == null || getClass() != o.getClass()) {
-    return false;
+      return false;
     }
-        ProfileResponse profileResponse = (ProfileResponse) o;
-        return Objects.equals(this.merchantId, profileResponse.merchantId) &&
+    ProfileResponse profileResponse = (ProfileResponse) o;
+    return Objects.equals(this.merchantId, profileResponse.merchantId) &&
         Objects.equals(this.profileId, profileResponse.profileId) &&
         Objects.equals(this.profileName, profileResponse.profileName) &&
         equalsNullable(this.returnUrl, profileResponse.returnUrl) &&
@@ -1215,392 +1215,392 @@ public boolean equals(Object o) {
         Objects.equals(this.isNetworkTokenizationEnabled, profileResponse.isNetworkTokenizationEnabled) &&
         Objects.equals(this.isAutoRetriesEnabled, profileResponse.isAutoRetriesEnabled) &&
         equalsNullable(this.maxAutoRetriesEnabled, profileResponse.maxAutoRetriesEnabled);
-}
+  }
 
-    private static <T> boolean equalsNullable(JsonNullable<T> a, JsonNullable<T> b) {
-        return a == b || (a != null && b != null && a.isPresent() && b.isPresent() && Objects.deepEquals(a.get(), b.get()));
-        }
+  private static <T> boolean equalsNullable(JsonNullable<T> a, JsonNullable<T> b) {
+    return a == b || (a != null && b != null && a.isPresent() && b.isPresent() && Objects.deepEquals(a.get(), b.get()));
+  }
 
-    @Override
-    public int hashCode() {
-        return Objects.hash(merchantId, profileId, profileName, hashCodeNullable(returnUrl), enablePaymentResponseHash, hashCodeNullable(paymentResponseHashKey), redirectToMerchantWithHttpPost, hashCodeNullable(webhookDetails), hashCodeNullable(metadata), hashCodeNullable(routingAlgorithm), hashCodeNullable(intentFulfillmentTime), hashCodeNullable(frmRoutingAlgorithm), hashCodeNullable(payoutRoutingAlgorithm), hashCodeNullable(applepayVerifiedDomains), hashCodeNullable(sessionExpiry), hashCodeNullable(paymentLinkConfig), hashCodeNullable(authenticationConnectorDetails), hashCodeNullable(useBillingAsPaymentMethodBilling), hashCodeNullable(extendedCardInfoConfig), hashCodeNullable(collectShippingDetailsFromWalletConnector), hashCodeNullable(collectBillingDetailsFromWalletConnector), hashCodeNullable(alwaysCollectShippingDetailsFromWalletConnector), hashCodeNullable(alwaysCollectBillingDetailsFromWalletConnector), hashCodeNullable(isConnectorAgnosticMitEnabled), hashCodeNullable(payoutLinkConfig), hashCodeNullable(outgoingWebhookCustomHttpHeaders), hashCodeNullable(taxConnectorId), isTaxConnectorEnabled, isNetworkTokenizationEnabled, isAutoRetriesEnabled, hashCodeNullable(maxAutoRetriesEnabled));
+  @Override
+  public int hashCode() {
+    return Objects.hash(merchantId, profileId, profileName, hashCodeNullable(returnUrl), enablePaymentResponseHash, hashCodeNullable(paymentResponseHashKey), redirectToMerchantWithHttpPost, hashCodeNullable(webhookDetails), hashCodeNullable(metadata), hashCodeNullable(routingAlgorithm), hashCodeNullable(intentFulfillmentTime), hashCodeNullable(frmRoutingAlgorithm), hashCodeNullable(payoutRoutingAlgorithm), hashCodeNullable(applepayVerifiedDomains), hashCodeNullable(sessionExpiry), hashCodeNullable(paymentLinkConfig), hashCodeNullable(authenticationConnectorDetails), hashCodeNullable(useBillingAsPaymentMethodBilling), hashCodeNullable(extendedCardInfoConfig), hashCodeNullable(collectShippingDetailsFromWalletConnector), hashCodeNullable(collectBillingDetailsFromWalletConnector), hashCodeNullable(alwaysCollectShippingDetailsFromWalletConnector), hashCodeNullable(alwaysCollectBillingDetailsFromWalletConnector), hashCodeNullable(isConnectorAgnosticMitEnabled), hashCodeNullable(payoutLinkConfig), hashCodeNullable(outgoingWebhookCustomHttpHeaders), hashCodeNullable(taxConnectorId), isTaxConnectorEnabled, isNetworkTokenizationEnabled, isAutoRetriesEnabled, hashCodeNullable(maxAutoRetriesEnabled));
+  }
+
+  private static <T> int hashCodeNullable(JsonNullable<T> a) {
+    if (a == null) {
+      return 1;
     }
+    return a.isPresent() ? Arrays.deepHashCode(new Object[]{a.get()}) : 31;
+  }
 
-        private static <T> int hashCodeNullable(JsonNullable<T> a) {
-        if (a == null) {
-        return 1;
-        }
-        return a.isPresent() ? Arrays.deepHashCode(new Object[]{a.get()}) : 31;
-        }
-
-    @Override
-    public String toString() {
+  @Override
+  public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class ProfileResponse {\n");
-        sb.append("    merchantId: ").append(toIndentedString(merchantId)).append("\n");
-        sb.append("    profileId: ").append(toIndentedString(profileId)).append("\n");
-        sb.append("    profileName: ").append(toIndentedString(profileName)).append("\n");
-        sb.append("    returnUrl: ").append(toIndentedString(returnUrl)).append("\n");
-        sb.append("    enablePaymentResponseHash: ").append(toIndentedString(enablePaymentResponseHash)).append("\n");
-        sb.append("    paymentResponseHashKey: ").append(toIndentedString(paymentResponseHashKey)).append("\n");
-        sb.append("    redirectToMerchantWithHttpPost: ").append(toIndentedString(redirectToMerchantWithHttpPost)).append("\n");
-        sb.append("    webhookDetails: ").append(toIndentedString(webhookDetails)).append("\n");
-        sb.append("    metadata: ").append(toIndentedString(metadata)).append("\n");
-        sb.append("    routingAlgorithm: ").append(toIndentedString(routingAlgorithm)).append("\n");
-        sb.append("    intentFulfillmentTime: ").append(toIndentedString(intentFulfillmentTime)).append("\n");
-        sb.append("    frmRoutingAlgorithm: ").append(toIndentedString(frmRoutingAlgorithm)).append("\n");
-        sb.append("    payoutRoutingAlgorithm: ").append(toIndentedString(payoutRoutingAlgorithm)).append("\n");
-        sb.append("    applepayVerifiedDomains: ").append(toIndentedString(applepayVerifiedDomains)).append("\n");
-        sb.append("    sessionExpiry: ").append(toIndentedString(sessionExpiry)).append("\n");
-        sb.append("    paymentLinkConfig: ").append(toIndentedString(paymentLinkConfig)).append("\n");
-        sb.append("    authenticationConnectorDetails: ").append(toIndentedString(authenticationConnectorDetails)).append("\n");
-        sb.append("    useBillingAsPaymentMethodBilling: ").append(toIndentedString(useBillingAsPaymentMethodBilling)).append("\n");
-        sb.append("    extendedCardInfoConfig: ").append(toIndentedString(extendedCardInfoConfig)).append("\n");
-        sb.append("    collectShippingDetailsFromWalletConnector: ").append(toIndentedString(collectShippingDetailsFromWalletConnector)).append("\n");
-        sb.append("    collectBillingDetailsFromWalletConnector: ").append(toIndentedString(collectBillingDetailsFromWalletConnector)).append("\n");
-        sb.append("    alwaysCollectShippingDetailsFromWalletConnector: ").append(toIndentedString(alwaysCollectShippingDetailsFromWalletConnector)).append("\n");
-        sb.append("    alwaysCollectBillingDetailsFromWalletConnector: ").append(toIndentedString(alwaysCollectBillingDetailsFromWalletConnector)).append("\n");
-        sb.append("    isConnectorAgnosticMitEnabled: ").append(toIndentedString(isConnectorAgnosticMitEnabled)).append("\n");
-        sb.append("    payoutLinkConfig: ").append(toIndentedString(payoutLinkConfig)).append("\n");
-        sb.append("    outgoingWebhookCustomHttpHeaders: ").append(toIndentedString(outgoingWebhookCustomHttpHeaders)).append("\n");
-        sb.append("    taxConnectorId: ").append(toIndentedString(taxConnectorId)).append("\n");
-        sb.append("    isTaxConnectorEnabled: ").append(toIndentedString(isTaxConnectorEnabled)).append("\n");
-        sb.append("    isNetworkTokenizationEnabled: ").append(toIndentedString(isNetworkTokenizationEnabled)).append("\n");
-        sb.append("    isAutoRetriesEnabled: ").append(toIndentedString(isAutoRetriesEnabled)).append("\n");
-        sb.append("    maxAutoRetriesEnabled: ").append(toIndentedString(maxAutoRetriesEnabled)).append("\n");
+    sb.append("    merchantId: ").append(toIndentedString(merchantId)).append("\n");
+    sb.append("    profileId: ").append(toIndentedString(profileId)).append("\n");
+    sb.append("    profileName: ").append(toIndentedString(profileName)).append("\n");
+    sb.append("    returnUrl: ").append(toIndentedString(returnUrl)).append("\n");
+    sb.append("    enablePaymentResponseHash: ").append(toIndentedString(enablePaymentResponseHash)).append("\n");
+    sb.append("    paymentResponseHashKey: ").append(toIndentedString(paymentResponseHashKey)).append("\n");
+    sb.append("    redirectToMerchantWithHttpPost: ").append(toIndentedString(redirectToMerchantWithHttpPost)).append("\n");
+    sb.append("    webhookDetails: ").append(toIndentedString(webhookDetails)).append("\n");
+    sb.append("    metadata: ").append(toIndentedString(metadata)).append("\n");
+    sb.append("    routingAlgorithm: ").append(toIndentedString(routingAlgorithm)).append("\n");
+    sb.append("    intentFulfillmentTime: ").append(toIndentedString(intentFulfillmentTime)).append("\n");
+    sb.append("    frmRoutingAlgorithm: ").append(toIndentedString(frmRoutingAlgorithm)).append("\n");
+    sb.append("    payoutRoutingAlgorithm: ").append(toIndentedString(payoutRoutingAlgorithm)).append("\n");
+    sb.append("    applepayVerifiedDomains: ").append(toIndentedString(applepayVerifiedDomains)).append("\n");
+    sb.append("    sessionExpiry: ").append(toIndentedString(sessionExpiry)).append("\n");
+    sb.append("    paymentLinkConfig: ").append(toIndentedString(paymentLinkConfig)).append("\n");
+    sb.append("    authenticationConnectorDetails: ").append(toIndentedString(authenticationConnectorDetails)).append("\n");
+    sb.append("    useBillingAsPaymentMethodBilling: ").append(toIndentedString(useBillingAsPaymentMethodBilling)).append("\n");
+    sb.append("    extendedCardInfoConfig: ").append(toIndentedString(extendedCardInfoConfig)).append("\n");
+    sb.append("    collectShippingDetailsFromWalletConnector: ").append(toIndentedString(collectShippingDetailsFromWalletConnector)).append("\n");
+    sb.append("    collectBillingDetailsFromWalletConnector: ").append(toIndentedString(collectBillingDetailsFromWalletConnector)).append("\n");
+    sb.append("    alwaysCollectShippingDetailsFromWalletConnector: ").append(toIndentedString(alwaysCollectShippingDetailsFromWalletConnector)).append("\n");
+    sb.append("    alwaysCollectBillingDetailsFromWalletConnector: ").append(toIndentedString(alwaysCollectBillingDetailsFromWalletConnector)).append("\n");
+    sb.append("    isConnectorAgnosticMitEnabled: ").append(toIndentedString(isConnectorAgnosticMitEnabled)).append("\n");
+    sb.append("    payoutLinkConfig: ").append(toIndentedString(payoutLinkConfig)).append("\n");
+    sb.append("    outgoingWebhookCustomHttpHeaders: ").append(toIndentedString(outgoingWebhookCustomHttpHeaders)).append("\n");
+    sb.append("    taxConnectorId: ").append(toIndentedString(taxConnectorId)).append("\n");
+    sb.append("    isTaxConnectorEnabled: ").append(toIndentedString(isTaxConnectorEnabled)).append("\n");
+    sb.append("    isNetworkTokenizationEnabled: ").append(toIndentedString(isNetworkTokenizationEnabled)).append("\n");
+    sb.append("    isAutoRetriesEnabled: ").append(toIndentedString(isAutoRetriesEnabled)).append("\n");
+    sb.append("    maxAutoRetriesEnabled: ").append(toIndentedString(maxAutoRetriesEnabled)).append("\n");
     sb.append("}");
     return sb.toString();
-    }
+  }
 
-    /**
-    * Convert the given object to string with each line indented by 4 spaces
-    * (except the first line).
-    */
-    private String toIndentedString(Object o) {
+  /**
+   * Convert the given object to string with each line indented by 4 spaces
+   * (except the first line).
+   */
+  private String toIndentedString(Object o) {
     if (o == null) {
-    return "null";
+      return "null";
     }
     return o.toString().replace("\n", "\n    ");
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @return URL query string
+   */
+  public String toUrlQueryString() {
+    return toUrlQueryString(null);
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @param prefix prefix of the query string
+   * @return URL query string
+   */
+  public String toUrlQueryString(String prefix) {
+    String suffix = "";
+    String containerSuffix = "";
+    String containerPrefix = "";
+    if (prefix == null) {
+      // style=form, explode=true, e.g. /pet?name=cat&type=manx
+      prefix = "";
+    } else {
+      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+      prefix = prefix + "[";
+      suffix = "]";
+      containerSuffix = "]";
+      containerPrefix = "[";
     }
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @return URL query string
-        */
-        public String toUrlQueryString() {
-        return toUrlQueryString(null);
-        }
+    StringJoiner joiner = new StringJoiner("&");
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @param prefix prefix of the query string
-        * @return URL query string
-        */
-        public String toUrlQueryString(String prefix) {
-        String suffix = "";
-        String containerSuffix = "";
-        String containerPrefix = "";
-        if (prefix == null) {
-        // style=form, explode=true, e.g. /pet?name=cat&type=manx
-        prefix = "";
-        } else {
-        // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
-        prefix = prefix + "[";
-        suffix = "]";
-        containerSuffix = "]";
-        containerPrefix = "[";
-        }
-
-        StringJoiner joiner = new StringJoiner("&");
-
-            // add `merchant_id` to the URL query string
-                        if (getMerchantId() != null) {
-                        try {
-                        joiner.add(String.format("%smerchant_id%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getMerchantId()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-            // add `profile_id` to the URL query string
-                        if (getProfileId() != null) {
-                        try {
-                        joiner.add(String.format("%sprofile_id%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getProfileId()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-            // add `profile_name` to the URL query string
-                        if (getProfileName() != null) {
-                        try {
-                        joiner.add(String.format("%sprofile_name%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getProfileName()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-            // add `return_url` to the URL query string
-                        if (getReturnUrl() != null) {
-                        try {
-                        joiner.add(String.format("%sreturn_url%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getReturnUrl()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-            // add `enable_payment_response_hash` to the URL query string
-                        if (getEnablePaymentResponseHash() != null) {
-                        try {
-                        joiner.add(String.format("%senable_payment_response_hash%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getEnablePaymentResponseHash()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-            // add `payment_response_hash_key` to the URL query string
-                        if (getPaymentResponseHashKey() != null) {
-                        try {
-                        joiner.add(String.format("%spayment_response_hash_key%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getPaymentResponseHashKey()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-            // add `redirect_to_merchant_with_http_post` to the URL query string
-                        if (getRedirectToMerchantWithHttpPost() != null) {
-                        try {
-                        joiner.add(String.format("%sredirect_to_merchant_with_http_post%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getRedirectToMerchantWithHttpPost()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-            // add `webhook_details` to the URL query string
-                            if (getWebhookDetails() != null) {
-                            joiner.add(getWebhookDetails().toUrlQueryString(prefix + "webhook_details" + suffix));
-                            }
-
-            // add `metadata` to the URL query string
-                        if (getMetadata() != null) {
-                        try {
-                        joiner.add(String.format("%smetadata%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getMetadata()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-            // add `routing_algorithm` to the URL query string
-                        if (getRoutingAlgorithm() != null) {
-                        try {
-                        joiner.add(String.format("%srouting_algorithm%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getRoutingAlgorithm()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-            // add `intent_fulfillment_time` to the URL query string
-                        if (getIntentFulfillmentTime() != null) {
-                        try {
-                        joiner.add(String.format("%sintent_fulfillment_time%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getIntentFulfillmentTime()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-            // add `frm_routing_algorithm` to the URL query string
-                        if (getFrmRoutingAlgorithm() != null) {
-                        try {
-                        joiner.add(String.format("%sfrm_routing_algorithm%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getFrmRoutingAlgorithm()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-            // add `payout_routing_algorithm` to the URL query string
-                            if (getPayoutRoutingAlgorithm() != null) {
-                            joiner.add(getPayoutRoutingAlgorithm().toUrlQueryString(prefix + "payout_routing_algorithm" + suffix));
-                            }
-
-            // add `applepay_verified_domains` to the URL query string
-                        if (getApplepayVerifiedDomains() != null) {
-                        for (int i = 0; i < getApplepayVerifiedDomains().size(); i++) {
-                        try {
-                        joiner.add(String.format("%sapplepay_verified_domains%s%s=%s", prefix, suffix,
-                        "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix),
-                        URLEncoder.encode(String.valueOf(getApplepayVerifiedDomains().get(i)), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-                        }
-
-            // add `session_expiry` to the URL query string
-                        if (getSessionExpiry() != null) {
-                        try {
-                        joiner.add(String.format("%ssession_expiry%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getSessionExpiry()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-            // add `payment_link_config` to the URL query string
-                            if (getPaymentLinkConfig() != null) {
-                            joiner.add(getPaymentLinkConfig().toUrlQueryString(prefix + "payment_link_config" + suffix));
-                            }
-
-            // add `authentication_connector_details` to the URL query string
-                            if (getAuthenticationConnectorDetails() != null) {
-                            joiner.add(getAuthenticationConnectorDetails().toUrlQueryString(prefix + "authentication_connector_details" + suffix));
-                            }
-
-            // add `use_billing_as_payment_method_billing` to the URL query string
-                        if (getUseBillingAsPaymentMethodBilling() != null) {
-                        try {
-                        joiner.add(String.format("%suse_billing_as_payment_method_billing%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getUseBillingAsPaymentMethodBilling()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-            // add `extended_card_info_config` to the URL query string
-                            if (getExtendedCardInfoConfig() != null) {
-                            joiner.add(getExtendedCardInfoConfig().toUrlQueryString(prefix + "extended_card_info_config" + suffix));
-                            }
-
-            // add `collect_shipping_details_from_wallet_connector` to the URL query string
-                        if (getCollectShippingDetailsFromWalletConnector() != null) {
-                        try {
-                        joiner.add(String.format("%scollect_shipping_details_from_wallet_connector%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCollectShippingDetailsFromWalletConnector()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-            // add `collect_billing_details_from_wallet_connector` to the URL query string
-                        if (getCollectBillingDetailsFromWalletConnector() != null) {
-                        try {
-                        joiner.add(String.format("%scollect_billing_details_from_wallet_connector%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCollectBillingDetailsFromWalletConnector()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-            // add `always_collect_shipping_details_from_wallet_connector` to the URL query string
-                        if (getAlwaysCollectShippingDetailsFromWalletConnector() != null) {
-                        try {
-                        joiner.add(String.format("%salways_collect_shipping_details_from_wallet_connector%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getAlwaysCollectShippingDetailsFromWalletConnector()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-            // add `always_collect_billing_details_from_wallet_connector` to the URL query string
-                        if (getAlwaysCollectBillingDetailsFromWalletConnector() != null) {
-                        try {
-                        joiner.add(String.format("%salways_collect_billing_details_from_wallet_connector%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getAlwaysCollectBillingDetailsFromWalletConnector()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-            // add `is_connector_agnostic_mit_enabled` to the URL query string
-                        if (getIsConnectorAgnosticMitEnabled() != null) {
-                        try {
-                        joiner.add(String.format("%sis_connector_agnostic_mit_enabled%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getIsConnectorAgnosticMitEnabled()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-            // add `payout_link_config` to the URL query string
-                            if (getPayoutLinkConfig() != null) {
-                            joiner.add(getPayoutLinkConfig().toUrlQueryString(prefix + "payout_link_config" + suffix));
-                            }
-
-            // add `outgoing_webhook_custom_http_headers` to the URL query string
-                        if (getOutgoingWebhookCustomHttpHeaders() != null) {
-                        try {
-                        joiner.add(String.format("%soutgoing_webhook_custom_http_headers%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getOutgoingWebhookCustomHttpHeaders()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-            // add `tax_connector_id` to the URL query string
-                        if (getTaxConnectorId() != null) {
-                        try {
-                        joiner.add(String.format("%stax_connector_id%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getTaxConnectorId()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-            // add `is_tax_connector_enabled` to the URL query string
-                        if (getIsTaxConnectorEnabled() != null) {
-                        try {
-                        joiner.add(String.format("%sis_tax_connector_enabled%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getIsTaxConnectorEnabled()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-            // add `is_network_tokenization_enabled` to the URL query string
-                        if (getIsNetworkTokenizationEnabled() != null) {
-                        try {
-                        joiner.add(String.format("%sis_network_tokenization_enabled%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getIsNetworkTokenizationEnabled()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-            // add `is_auto_retries_enabled` to the URL query string
-                        if (getIsAutoRetriesEnabled() != null) {
-                        try {
-                        joiner.add(String.format("%sis_auto_retries_enabled%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getIsAutoRetriesEnabled()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-            // add `max_auto_retries_enabled` to the URL query string
-                        if (getMaxAutoRetriesEnabled() != null) {
-                        try {
-                        joiner.add(String.format("%smax_auto_retries_enabled%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getMaxAutoRetriesEnabled()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-        return joiner.toString();
-        }
-
+    // add `merchant_id` to the URL query string
+    if (getMerchantId() != null) {
+      try {
+        joiner.add(String.format("%smerchant_id%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getMerchantId()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
     }
+
+    // add `profile_id` to the URL query string
+    if (getProfileId() != null) {
+      try {
+        joiner.add(String.format("%sprofile_id%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getProfileId()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `profile_name` to the URL query string
+    if (getProfileName() != null) {
+      try {
+        joiner.add(String.format("%sprofile_name%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getProfileName()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `return_url` to the URL query string
+    if (getReturnUrl() != null) {
+      try {
+        joiner.add(String.format("%sreturn_url%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getReturnUrl()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `enable_payment_response_hash` to the URL query string
+    if (getEnablePaymentResponseHash() != null) {
+      try {
+        joiner.add(String.format("%senable_payment_response_hash%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getEnablePaymentResponseHash()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `payment_response_hash_key` to the URL query string
+    if (getPaymentResponseHashKey() != null) {
+      try {
+        joiner.add(String.format("%spayment_response_hash_key%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getPaymentResponseHashKey()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `redirect_to_merchant_with_http_post` to the URL query string
+    if (getRedirectToMerchantWithHttpPost() != null) {
+      try {
+        joiner.add(String.format("%sredirect_to_merchant_with_http_post%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getRedirectToMerchantWithHttpPost()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `webhook_details` to the URL query string
+    if (getWebhookDetails() != null) {
+      joiner.add(getWebhookDetails().toUrlQueryString(prefix + "webhook_details" + suffix));
+    }
+
+    // add `metadata` to the URL query string
+    if (getMetadata() != null) {
+      try {
+        joiner.add(String.format("%smetadata%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getMetadata()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `routing_algorithm` to the URL query string
+    if (getRoutingAlgorithm() != null) {
+      try {
+        joiner.add(String.format("%srouting_algorithm%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getRoutingAlgorithm()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `intent_fulfillment_time` to the URL query string
+    if (getIntentFulfillmentTime() != null) {
+      try {
+        joiner.add(String.format("%sintent_fulfillment_time%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getIntentFulfillmentTime()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `frm_routing_algorithm` to the URL query string
+    if (getFrmRoutingAlgorithm() != null) {
+      try {
+        joiner.add(String.format("%sfrm_routing_algorithm%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getFrmRoutingAlgorithm()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `payout_routing_algorithm` to the URL query string
+    if (getPayoutRoutingAlgorithm() != null) {
+      joiner.add(getPayoutRoutingAlgorithm().toUrlQueryString(prefix + "payout_routing_algorithm" + suffix));
+    }
+
+    // add `applepay_verified_domains` to the URL query string
+    if (getApplepayVerifiedDomains() != null) {
+      for (int i = 0; i < getApplepayVerifiedDomains().size(); i++) {
+        try {
+          joiner.add(String.format("%sapplepay_verified_domains%s%s=%s", prefix, suffix,
+              "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix),
+              URLEncoder.encode(String.valueOf(getApplepayVerifiedDomains().get(i)), "UTF-8").replaceAll("\\+", "%20")));
+        } catch (UnsupportedEncodingException e) {
+          // Should never happen, UTF-8 is always supported
+          throw new RuntimeException(e);
+        }
+      }
+    }
+
+    // add `session_expiry` to the URL query string
+    if (getSessionExpiry() != null) {
+      try {
+        joiner.add(String.format("%ssession_expiry%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getSessionExpiry()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `payment_link_config` to the URL query string
+    if (getPaymentLinkConfig() != null) {
+      joiner.add(getPaymentLinkConfig().toUrlQueryString(prefix + "payment_link_config" + suffix));
+    }
+
+    // add `authentication_connector_details` to the URL query string
+    if (getAuthenticationConnectorDetails() != null) {
+      joiner.add(getAuthenticationConnectorDetails().toUrlQueryString(prefix + "authentication_connector_details" + suffix));
+    }
+
+    // add `use_billing_as_payment_method_billing` to the URL query string
+    if (getUseBillingAsPaymentMethodBilling() != null) {
+      try {
+        joiner.add(String.format("%suse_billing_as_payment_method_billing%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getUseBillingAsPaymentMethodBilling()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `extended_card_info_config` to the URL query string
+    if (getExtendedCardInfoConfig() != null) {
+      joiner.add(getExtendedCardInfoConfig().toUrlQueryString(prefix + "extended_card_info_config" + suffix));
+    }
+
+    // add `collect_shipping_details_from_wallet_connector` to the URL query string
+    if (getCollectShippingDetailsFromWalletConnector() != null) {
+      try {
+        joiner.add(String.format("%scollect_shipping_details_from_wallet_connector%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCollectShippingDetailsFromWalletConnector()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `collect_billing_details_from_wallet_connector` to the URL query string
+    if (getCollectBillingDetailsFromWalletConnector() != null) {
+      try {
+        joiner.add(String.format("%scollect_billing_details_from_wallet_connector%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCollectBillingDetailsFromWalletConnector()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `always_collect_shipping_details_from_wallet_connector` to the URL query string
+    if (getAlwaysCollectShippingDetailsFromWalletConnector() != null) {
+      try {
+        joiner.add(String.format("%salways_collect_shipping_details_from_wallet_connector%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getAlwaysCollectShippingDetailsFromWalletConnector()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `always_collect_billing_details_from_wallet_connector` to the URL query string
+    if (getAlwaysCollectBillingDetailsFromWalletConnector() != null) {
+      try {
+        joiner.add(String.format("%salways_collect_billing_details_from_wallet_connector%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getAlwaysCollectBillingDetailsFromWalletConnector()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `is_connector_agnostic_mit_enabled` to the URL query string
+    if (getIsConnectorAgnosticMitEnabled() != null) {
+      try {
+        joiner.add(String.format("%sis_connector_agnostic_mit_enabled%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getIsConnectorAgnosticMitEnabled()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `payout_link_config` to the URL query string
+    if (getPayoutLinkConfig() != null) {
+      joiner.add(getPayoutLinkConfig().toUrlQueryString(prefix + "payout_link_config" + suffix));
+    }
+
+    // add `outgoing_webhook_custom_http_headers` to the URL query string
+    if (getOutgoingWebhookCustomHttpHeaders() != null) {
+      try {
+        joiner.add(String.format("%soutgoing_webhook_custom_http_headers%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getOutgoingWebhookCustomHttpHeaders()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `tax_connector_id` to the URL query string
+    if (getTaxConnectorId() != null) {
+      try {
+        joiner.add(String.format("%stax_connector_id%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getTaxConnectorId()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `is_tax_connector_enabled` to the URL query string
+    if (getIsTaxConnectorEnabled() != null) {
+      try {
+        joiner.add(String.format("%sis_tax_connector_enabled%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getIsTaxConnectorEnabled()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `is_network_tokenization_enabled` to the URL query string
+    if (getIsNetworkTokenizationEnabled() != null) {
+      try {
+        joiner.add(String.format("%sis_network_tokenization_enabled%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getIsNetworkTokenizationEnabled()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `is_auto_retries_enabled` to the URL query string
+    if (getIsAutoRetriesEnabled() != null) {
+      try {
+        joiner.add(String.format("%sis_auto_retries_enabled%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getIsAutoRetriesEnabled()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `max_auto_retries_enabled` to the URL query string
+    if (getMaxAutoRetriesEnabled() != null) {
+      try {
+        joiner.add(String.format("%smax_auto_retries_enabled%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getMaxAutoRetriesEnabled()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    return joiner.toString();
+  }
+
+}
 

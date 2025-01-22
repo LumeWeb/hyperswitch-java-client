@@ -27,16 +27,16 @@ import java.net.URLEncoder;
 import java.util.StringJoiner;
 
 /**
-* BlocklistRequestOneOf
-*/
-    @JsonPropertyOrder({
-        BlocklistRequestOneOf.JSON_PROPERTY_TYPE,
-        BlocklistRequestOneOf.JSON_PROPERTY_DATA
-    })
-            @JsonTypeName("BlocklistRequest_oneOf")
+ * BlocklistRequestOneOf
+ */
+@JsonPropertyOrder({
+  BlocklistRequestOneOf.JSON_PROPERTY_TYPE,
+  BlocklistRequestOneOf.JSON_PROPERTY_DATA
+})
+@JsonTypeName("BlocklistRequest_oneOf")
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class BlocklistRequestOneOf {
-              /**
+  /**
    * Gets or Sets type
    */
   public enum TypeEnum {
@@ -69,160 +69,160 @@ public class BlocklistRequestOneOf {
     }
   }
 
-        public static final String JSON_PROPERTY_TYPE = "type";
-    @javax.annotation.Nonnull
-            private TypeEnum type;
+  public static final String JSON_PROPERTY_TYPE = "type";
+  @javax.annotation.Nonnull
+  private TypeEnum type;
 
-        public static final String JSON_PROPERTY_DATA = "data";
-    @javax.annotation.Nonnull
-            private String data;
+  public static final String JSON_PROPERTY_DATA = "data";
+  @javax.annotation.Nonnull
+  private String data;
 
-public BlocklistRequestOneOf() {
-}
+  public BlocklistRequestOneOf() {
+  }
 
-        public BlocklistRequestOneOf type(@javax.annotation.Nonnull TypeEnum type) {
-        
-        this.type = type;
-        return this;
-        }
+  public BlocklistRequestOneOf type(@javax.annotation.Nonnull TypeEnum type) {
+    
+    this.type = type;
+    return this;
+  }
 
-    /**
-        * Get type
-    * @return type
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_TYPE)
+  /**
+   * Get type
+   * @return type
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_TYPE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public TypeEnum getType() {
-        return type;
-    }
+  public TypeEnum getType() {
+    return type;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_TYPE)
+  @JsonProperty(JSON_PROPERTY_TYPE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setType(@javax.annotation.Nonnull TypeEnum type) {
-            this.type = type;
-        }
+    this.type = type;
+  }
 
-        public BlocklistRequestOneOf data(@javax.annotation.Nonnull String data) {
-        
-        this.data = data;
-        return this;
-        }
+  public BlocklistRequestOneOf data(@javax.annotation.Nonnull String data) {
+    
+    this.data = data;
+    return this;
+  }
 
-    /**
-        * Get data
-    * @return data
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_DATA)
+  /**
+   * Get data
+   * @return data
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_DATA)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public String getData() {
-        return data;
-    }
+  public String getData() {
+    return data;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_DATA)
+  @JsonProperty(JSON_PROPERTY_DATA)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setData(@javax.annotation.Nonnull String data) {
-            this.data = data;
-        }
+    this.data = data;
+  }
 
-@Override
-public boolean equals(Object o) {
+  @Override
+  public boolean equals(Object o) {
     if (this == o) {
-    return true;
+      return true;
     }
     if (o == null || getClass() != o.getClass()) {
-    return false;
+      return false;
     }
-        BlocklistRequestOneOf blocklistRequestOneOf = (BlocklistRequestOneOf) o;
-        return Objects.equals(this.type, blocklistRequestOneOf.type) &&
+    BlocklistRequestOneOf blocklistRequestOneOf = (BlocklistRequestOneOf) o;
+    return Objects.equals(this.type, blocklistRequestOneOf.type) &&
         Objects.equals(this.data, blocklistRequestOneOf.data);
-}
+  }
 
-    @Override
-    public int hashCode() {
-        return Objects.hash(type, data);
-    }
+  @Override
+  public int hashCode() {
+    return Objects.hash(type, data);
+  }
 
-    @Override
-    public String toString() {
+  @Override
+  public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class BlocklistRequestOneOf {\n");
-        sb.append("    type: ").append(toIndentedString(type)).append("\n");
-        sb.append("    data: ").append(toIndentedString(data)).append("\n");
+    sb.append("    type: ").append(toIndentedString(type)).append("\n");
+    sb.append("    data: ").append(toIndentedString(data)).append("\n");
     sb.append("}");
     return sb.toString();
-    }
+  }
 
-    /**
-    * Convert the given object to string with each line indented by 4 spaces
-    * (except the first line).
-    */
-    private String toIndentedString(Object o) {
+  /**
+   * Convert the given object to string with each line indented by 4 spaces
+   * (except the first line).
+   */
+  private String toIndentedString(Object o) {
     if (o == null) {
-    return "null";
+      return "null";
     }
     return o.toString().replace("\n", "\n    ");
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @return URL query string
+   */
+  public String toUrlQueryString() {
+    return toUrlQueryString(null);
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @param prefix prefix of the query string
+   * @return URL query string
+   */
+  public String toUrlQueryString(String prefix) {
+    String suffix = "";
+    String containerSuffix = "";
+    String containerPrefix = "";
+    if (prefix == null) {
+      // style=form, explode=true, e.g. /pet?name=cat&type=manx
+      prefix = "";
+    } else {
+      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+      prefix = prefix + "[";
+      suffix = "]";
+      containerSuffix = "]";
+      containerPrefix = "[";
     }
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @return URL query string
-        */
-        public String toUrlQueryString() {
-        return toUrlQueryString(null);
-        }
+    StringJoiner joiner = new StringJoiner("&");
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @param prefix prefix of the query string
-        * @return URL query string
-        */
-        public String toUrlQueryString(String prefix) {
-        String suffix = "";
-        String containerSuffix = "";
-        String containerPrefix = "";
-        if (prefix == null) {
-        // style=form, explode=true, e.g. /pet?name=cat&type=manx
-        prefix = "";
-        } else {
-        // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
-        prefix = prefix + "[";
-        suffix = "]";
-        containerSuffix = "]";
-        containerPrefix = "[";
-        }
-
-        StringJoiner joiner = new StringJoiner("&");
-
-            // add `type` to the URL query string
-                        if (getType() != null) {
-                        try {
-                        joiner.add(String.format("%stype%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getType()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-            // add `data` to the URL query string
-                        if (getData() != null) {
-                        try {
-                        joiner.add(String.format("%sdata%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getData()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-        return joiner.toString();
-        }
-
+    // add `type` to the URL query string
+    if (getType() != null) {
+      try {
+        joiner.add(String.format("%stype%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getType()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
     }
+
+    // add `data` to the URL query string
+    if (getData() != null) {
+      try {
+        joiner.add(String.format("%sdata%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getData()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    return joiner.toString();
+  }
+
+}
 

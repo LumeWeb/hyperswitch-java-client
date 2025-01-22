@@ -29,210 +29,210 @@ import java.net.URLEncoder;
 import java.util.StringJoiner;
 
 /**
-* PaymentsPostSessionTokensRequest
-*/
-    @JsonPropertyOrder({
-        PaymentsPostSessionTokensRequest.JSON_PROPERTY_CLIENT_SECRET,
-        PaymentsPostSessionTokensRequest.JSON_PROPERTY_PAYMENT_METHOD_TYPE,
-        PaymentsPostSessionTokensRequest.JSON_PROPERTY_PAYMENT_METHOD
-    })
+ * PaymentsPostSessionTokensRequest
+ */
+@JsonPropertyOrder({
+  PaymentsPostSessionTokensRequest.JSON_PROPERTY_CLIENT_SECRET,
+  PaymentsPostSessionTokensRequest.JSON_PROPERTY_PAYMENT_METHOD_TYPE,
+  PaymentsPostSessionTokensRequest.JSON_PROPERTY_PAYMENT_METHOD
+})
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class PaymentsPostSessionTokensRequest {
-        public static final String JSON_PROPERTY_CLIENT_SECRET = "client_secret";
-    @javax.annotation.Nonnull
-            private String clientSecret;
+  public static final String JSON_PROPERTY_CLIENT_SECRET = "client_secret";
+  @javax.annotation.Nonnull
+  private String clientSecret;
 
-        public static final String JSON_PROPERTY_PAYMENT_METHOD_TYPE = "payment_method_type";
-    @javax.annotation.Nonnull
-            private PaymentMethodType paymentMethodType;
+  public static final String JSON_PROPERTY_PAYMENT_METHOD_TYPE = "payment_method_type";
+  @javax.annotation.Nonnull
+  private PaymentMethodType paymentMethodType;
 
-        public static final String JSON_PROPERTY_PAYMENT_METHOD = "payment_method";
-    @javax.annotation.Nonnull
-            private PaymentMethod paymentMethod;
+  public static final String JSON_PROPERTY_PAYMENT_METHOD = "payment_method";
+  @javax.annotation.Nonnull
+  private PaymentMethod paymentMethod;
 
-public PaymentsPostSessionTokensRequest() {
-}
+  public PaymentsPostSessionTokensRequest() {
+  }
 
-        public PaymentsPostSessionTokensRequest clientSecret(@javax.annotation.Nonnull String clientSecret) {
-        
-        this.clientSecret = clientSecret;
-        return this;
-        }
+  public PaymentsPostSessionTokensRequest clientSecret(@javax.annotation.Nonnull String clientSecret) {
+    
+    this.clientSecret = clientSecret;
+    return this;
+  }
 
-    /**
-        * It&#39;s a token used for client side verification.
-    * @return clientSecret
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_CLIENT_SECRET)
+  /**
+   * It&#39;s a token used for client side verification.
+   * @return clientSecret
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_CLIENT_SECRET)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public String getClientSecret() {
-        return clientSecret;
-    }
+  public String getClientSecret() {
+    return clientSecret;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_CLIENT_SECRET)
+  @JsonProperty(JSON_PROPERTY_CLIENT_SECRET)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setClientSecret(@javax.annotation.Nonnull String clientSecret) {
-            this.clientSecret = clientSecret;
-        }
+    this.clientSecret = clientSecret;
+  }
 
-        public PaymentsPostSessionTokensRequest paymentMethodType(@javax.annotation.Nonnull PaymentMethodType paymentMethodType) {
-        
-        this.paymentMethodType = paymentMethodType;
-        return this;
-        }
+  public PaymentsPostSessionTokensRequest paymentMethodType(@javax.annotation.Nonnull PaymentMethodType paymentMethodType) {
+    
+    this.paymentMethodType = paymentMethodType;
+    return this;
+  }
 
-    /**
-        * Get paymentMethodType
-    * @return paymentMethodType
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_PAYMENT_METHOD_TYPE)
+  /**
+   * Get paymentMethodType
+   * @return paymentMethodType
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_PAYMENT_METHOD_TYPE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public PaymentMethodType getPaymentMethodType() {
-        return paymentMethodType;
-    }
+  public PaymentMethodType getPaymentMethodType() {
+    return paymentMethodType;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_PAYMENT_METHOD_TYPE)
+  @JsonProperty(JSON_PROPERTY_PAYMENT_METHOD_TYPE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setPaymentMethodType(@javax.annotation.Nonnull PaymentMethodType paymentMethodType) {
-            this.paymentMethodType = paymentMethodType;
-        }
+    this.paymentMethodType = paymentMethodType;
+  }
 
-        public PaymentsPostSessionTokensRequest paymentMethod(@javax.annotation.Nonnull PaymentMethod paymentMethod) {
-        
-        this.paymentMethod = paymentMethod;
-        return this;
-        }
+  public PaymentsPostSessionTokensRequest paymentMethod(@javax.annotation.Nonnull PaymentMethod paymentMethod) {
+    
+    this.paymentMethod = paymentMethod;
+    return this;
+  }
 
-    /**
-        * Get paymentMethod
-    * @return paymentMethod
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_PAYMENT_METHOD)
+  /**
+   * Get paymentMethod
+   * @return paymentMethod
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_PAYMENT_METHOD)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public PaymentMethod getPaymentMethod() {
-        return paymentMethod;
-    }
+  public PaymentMethod getPaymentMethod() {
+    return paymentMethod;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_PAYMENT_METHOD)
+  @JsonProperty(JSON_PROPERTY_PAYMENT_METHOD)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setPaymentMethod(@javax.annotation.Nonnull PaymentMethod paymentMethod) {
-            this.paymentMethod = paymentMethod;
-        }
+    this.paymentMethod = paymentMethod;
+  }
 
-@Override
-public boolean equals(Object o) {
+  @Override
+  public boolean equals(Object o) {
     if (this == o) {
-    return true;
+      return true;
     }
     if (o == null || getClass() != o.getClass()) {
-    return false;
+      return false;
     }
-        PaymentsPostSessionTokensRequest paymentsPostSessionTokensRequest = (PaymentsPostSessionTokensRequest) o;
-        return Objects.equals(this.clientSecret, paymentsPostSessionTokensRequest.clientSecret) &&
+    PaymentsPostSessionTokensRequest paymentsPostSessionTokensRequest = (PaymentsPostSessionTokensRequest) o;
+    return Objects.equals(this.clientSecret, paymentsPostSessionTokensRequest.clientSecret) &&
         Objects.equals(this.paymentMethodType, paymentsPostSessionTokensRequest.paymentMethodType) &&
         Objects.equals(this.paymentMethod, paymentsPostSessionTokensRequest.paymentMethod);
-}
+  }
 
-    @Override
-    public int hashCode() {
-        return Objects.hash(clientSecret, paymentMethodType, paymentMethod);
-    }
+  @Override
+  public int hashCode() {
+    return Objects.hash(clientSecret, paymentMethodType, paymentMethod);
+  }
 
-    @Override
-    public String toString() {
+  @Override
+  public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class PaymentsPostSessionTokensRequest {\n");
-        sb.append("    clientSecret: ").append(toIndentedString(clientSecret)).append("\n");
-        sb.append("    paymentMethodType: ").append(toIndentedString(paymentMethodType)).append("\n");
-        sb.append("    paymentMethod: ").append(toIndentedString(paymentMethod)).append("\n");
+    sb.append("    clientSecret: ").append(toIndentedString(clientSecret)).append("\n");
+    sb.append("    paymentMethodType: ").append(toIndentedString(paymentMethodType)).append("\n");
+    sb.append("    paymentMethod: ").append(toIndentedString(paymentMethod)).append("\n");
     sb.append("}");
     return sb.toString();
-    }
+  }
 
-    /**
-    * Convert the given object to string with each line indented by 4 spaces
-    * (except the first line).
-    */
-    private String toIndentedString(Object o) {
+  /**
+   * Convert the given object to string with each line indented by 4 spaces
+   * (except the first line).
+   */
+  private String toIndentedString(Object o) {
     if (o == null) {
-    return "null";
+      return "null";
     }
     return o.toString().replace("\n", "\n    ");
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @return URL query string
+   */
+  public String toUrlQueryString() {
+    return toUrlQueryString(null);
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @param prefix prefix of the query string
+   * @return URL query string
+   */
+  public String toUrlQueryString(String prefix) {
+    String suffix = "";
+    String containerSuffix = "";
+    String containerPrefix = "";
+    if (prefix == null) {
+      // style=form, explode=true, e.g. /pet?name=cat&type=manx
+      prefix = "";
+    } else {
+      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+      prefix = prefix + "[";
+      suffix = "]";
+      containerSuffix = "]";
+      containerPrefix = "[";
     }
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @return URL query string
-        */
-        public String toUrlQueryString() {
-        return toUrlQueryString(null);
-        }
+    StringJoiner joiner = new StringJoiner("&");
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @param prefix prefix of the query string
-        * @return URL query string
-        */
-        public String toUrlQueryString(String prefix) {
-        String suffix = "";
-        String containerSuffix = "";
-        String containerPrefix = "";
-        if (prefix == null) {
-        // style=form, explode=true, e.g. /pet?name=cat&type=manx
-        prefix = "";
-        } else {
-        // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
-        prefix = prefix + "[";
-        suffix = "]";
-        containerSuffix = "]";
-        containerPrefix = "[";
-        }
-
-        StringJoiner joiner = new StringJoiner("&");
-
-            // add `client_secret` to the URL query string
-                        if (getClientSecret() != null) {
-                        try {
-                        joiner.add(String.format("%sclient_secret%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getClientSecret()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-            // add `payment_method_type` to the URL query string
-                            if (getPaymentMethodType() != null) {
-                            try {
-                            joiner.add(String.format("%spayment_method_type%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getPaymentMethodType()), "UTF-8").replaceAll("\\+", "%20")));
-                            } catch (UnsupportedEncodingException e) {
-                            // Should never happen, UTF-8 is always supported
-                            throw new RuntimeException(e);
-                            }
-                            }
-
-            // add `payment_method` to the URL query string
-                            if (getPaymentMethod() != null) {
-                            try {
-                            joiner.add(String.format("%spayment_method%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getPaymentMethod()), "UTF-8").replaceAll("\\+", "%20")));
-                            } catch (UnsupportedEncodingException e) {
-                            // Should never happen, UTF-8 is always supported
-                            throw new RuntimeException(e);
-                            }
-                            }
-
-        return joiner.toString();
-        }
-
+    // add `client_secret` to the URL query string
+    if (getClientSecret() != null) {
+      try {
+        joiner.add(String.format("%sclient_secret%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getClientSecret()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
     }
+
+    // add `payment_method_type` to the URL query string
+    if (getPaymentMethodType() != null) {
+      try {
+        joiner.add(String.format("%spayment_method_type%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getPaymentMethodType()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `payment_method` to the URL query string
+    if (getPaymentMethod() != null) {
+      try {
+        joiner.add(String.format("%spayment_method%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getPaymentMethod()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    return joiner.toString();
+  }
+
+}
 

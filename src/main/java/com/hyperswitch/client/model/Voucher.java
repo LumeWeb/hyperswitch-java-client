@@ -28,121 +28,121 @@ import java.net.URLEncoder;
 import java.util.StringJoiner;
 
 /**
-* Voucher
-*/
-    @JsonPropertyOrder({
-        Voucher.JSON_PROPERTY_VOUCHER
-    })
+ * Voucher
+ */
+@JsonPropertyOrder({
+  Voucher.JSON_PROPERTY_VOUCHER
+})
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class Voucher {
-        public static final String JSON_PROPERTY_VOUCHER = "voucher";
-    @javax.annotation.Nonnull
-            private VoucherData voucher;
+  public static final String JSON_PROPERTY_VOUCHER = "voucher";
+  @javax.annotation.Nonnull
+  private VoucherData voucher;
 
-public Voucher() {
-}
+  public Voucher() {
+  }
 
-        public Voucher voucher(@javax.annotation.Nonnull VoucherData voucher) {
-        
-        this.voucher = voucher;
-        return this;
-        }
+  public Voucher voucher(@javax.annotation.Nonnull VoucherData voucher) {
+    
+    this.voucher = voucher;
+    return this;
+  }
 
-    /**
-        * Get voucher
-    * @return voucher
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_VOUCHER)
+  /**
+   * Get voucher
+   * @return voucher
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_VOUCHER)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public VoucherData getVoucher() {
-        return voucher;
-    }
+  public VoucherData getVoucher() {
+    return voucher;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_VOUCHER)
+  @JsonProperty(JSON_PROPERTY_VOUCHER)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setVoucher(@javax.annotation.Nonnull VoucherData voucher) {
-            this.voucher = voucher;
-        }
+    this.voucher = voucher;
+  }
 
-@Override
-public boolean equals(Object o) {
+  @Override
+  public boolean equals(Object o) {
     if (this == o) {
-    return true;
+      return true;
     }
     if (o == null || getClass() != o.getClass()) {
-    return false;
+      return false;
     }
-        Voucher voucher = (Voucher) o;
-        return Objects.equals(this.voucher, voucher.voucher);
-}
+    Voucher voucher = (Voucher) o;
+    return Objects.equals(this.voucher, voucher.voucher);
+  }
 
-    @Override
-    public int hashCode() {
-        return Objects.hash(voucher);
-    }
+  @Override
+  public int hashCode() {
+    return Objects.hash(voucher);
+  }
 
-    @Override
-    public String toString() {
+  @Override
+  public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class Voucher {\n");
-        sb.append("    voucher: ").append(toIndentedString(voucher)).append("\n");
+    sb.append("    voucher: ").append(toIndentedString(voucher)).append("\n");
     sb.append("}");
     return sb.toString();
-    }
+  }
 
-    /**
-    * Convert the given object to string with each line indented by 4 spaces
-    * (except the first line).
-    */
-    private String toIndentedString(Object o) {
+  /**
+   * Convert the given object to string with each line indented by 4 spaces
+   * (except the first line).
+   */
+  private String toIndentedString(Object o) {
     if (o == null) {
-    return "null";
+      return "null";
     }
     return o.toString().replace("\n", "\n    ");
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @return URL query string
+   */
+  public String toUrlQueryString() {
+    return toUrlQueryString(null);
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @param prefix prefix of the query string
+   * @return URL query string
+   */
+  public String toUrlQueryString(String prefix) {
+    String suffix = "";
+    String containerSuffix = "";
+    String containerPrefix = "";
+    if (prefix == null) {
+      // style=form, explode=true, e.g. /pet?name=cat&type=manx
+      prefix = "";
+    } else {
+      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+      prefix = prefix + "[";
+      suffix = "]";
+      containerSuffix = "]";
+      containerPrefix = "[";
     }
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @return URL query string
-        */
-        public String toUrlQueryString() {
-        return toUrlQueryString(null);
-        }
+    StringJoiner joiner = new StringJoiner("&");
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @param prefix prefix of the query string
-        * @return URL query string
-        */
-        public String toUrlQueryString(String prefix) {
-        String suffix = "";
-        String containerSuffix = "";
-        String containerPrefix = "";
-        if (prefix == null) {
-        // style=form, explode=true, e.g. /pet?name=cat&type=manx
-        prefix = "";
-        } else {
-        // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
-        prefix = prefix + "[";
-        suffix = "]";
-        containerSuffix = "]";
-        containerPrefix = "[";
-        }
-
-        StringJoiner joiner = new StringJoiner("&");
-
-            // add `voucher` to the URL query string
-                            if (getVoucher() != null) {
-                            joiner.add(getVoucher().toUrlQueryString(prefix + "voucher" + suffix));
-                            }
-
-        return joiner.toString();
-        }
-
+    // add `voucher` to the URL query string
+    if (getVoucher() != null) {
+      joiner.add(getVoucher().toUrlQueryString(prefix + "voucher" + suffix));
     }
+
+    return joiner.toString();
+  }
+
+}
 

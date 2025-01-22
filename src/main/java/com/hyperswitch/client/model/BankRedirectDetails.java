@@ -33,195 +33,195 @@ import java.net.URLEncoder;
 import java.util.StringJoiner;
 
 /**
-* BankRedirectDetails
-*/
-    @JsonPropertyOrder({
-        BankRedirectDetails.JSON_PROPERTY_BANCONTACT_CARD,
-        BankRedirectDetails.JSON_PROPERTY_BLIK,
-        BankRedirectDetails.JSON_PROPERTY_GIROPAY
-    })
+ * BankRedirectDetails
+ */
+@JsonPropertyOrder({
+  BankRedirectDetails.JSON_PROPERTY_BANCONTACT_CARD,
+  BankRedirectDetails.JSON_PROPERTY_BLIK,
+  BankRedirectDetails.JSON_PROPERTY_GIROPAY
+})
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class BankRedirectDetails {
-        public static final String JSON_PROPERTY_BANCONTACT_CARD = "BancontactCard";
-    @javax.annotation.Nonnull
-            private BancontactBankRedirectAdditionalData bancontactCard;
+  public static final String JSON_PROPERTY_BANCONTACT_CARD = "BancontactCard";
+  @javax.annotation.Nonnull
+  private BancontactBankRedirectAdditionalData bancontactCard;
 
-        public static final String JSON_PROPERTY_BLIK = "Blik";
-    @javax.annotation.Nonnull
-            private BlikBankRedirectAdditionalData blik;
+  public static final String JSON_PROPERTY_BLIK = "Blik";
+  @javax.annotation.Nonnull
+  private BlikBankRedirectAdditionalData blik;
 
-        public static final String JSON_PROPERTY_GIROPAY = "Giropay";
-    @javax.annotation.Nonnull
-            private GiropayBankRedirectAdditionalData giropay;
+  public static final String JSON_PROPERTY_GIROPAY = "Giropay";
+  @javax.annotation.Nonnull
+  private GiropayBankRedirectAdditionalData giropay;
 
-public BankRedirectDetails() {
-}
+  public BankRedirectDetails() {
+  }
 
-        public BankRedirectDetails bancontactCard(@javax.annotation.Nonnull BancontactBankRedirectAdditionalData bancontactCard) {
-        
-        this.bancontactCard = bancontactCard;
-        return this;
-        }
+  public BankRedirectDetails bancontactCard(@javax.annotation.Nonnull BancontactBankRedirectAdditionalData bancontactCard) {
+    
+    this.bancontactCard = bancontactCard;
+    return this;
+  }
 
-    /**
-        * Get bancontactCard
-    * @return bancontactCard
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_BANCONTACT_CARD)
+  /**
+   * Get bancontactCard
+   * @return bancontactCard
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_BANCONTACT_CARD)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public BancontactBankRedirectAdditionalData getBancontactCard() {
-        return bancontactCard;
-    }
+  public BancontactBankRedirectAdditionalData getBancontactCard() {
+    return bancontactCard;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_BANCONTACT_CARD)
+  @JsonProperty(JSON_PROPERTY_BANCONTACT_CARD)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setBancontactCard(@javax.annotation.Nonnull BancontactBankRedirectAdditionalData bancontactCard) {
-            this.bancontactCard = bancontactCard;
-        }
+    this.bancontactCard = bancontactCard;
+  }
 
-        public BankRedirectDetails blik(@javax.annotation.Nonnull BlikBankRedirectAdditionalData blik) {
-        
-        this.blik = blik;
-        return this;
-        }
+  public BankRedirectDetails blik(@javax.annotation.Nonnull BlikBankRedirectAdditionalData blik) {
+    
+    this.blik = blik;
+    return this;
+  }
 
-    /**
-        * Get blik
-    * @return blik
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_BLIK)
+  /**
+   * Get blik
+   * @return blik
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_BLIK)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public BlikBankRedirectAdditionalData getBlik() {
-        return blik;
-    }
+  public BlikBankRedirectAdditionalData getBlik() {
+    return blik;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_BLIK)
+  @JsonProperty(JSON_PROPERTY_BLIK)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setBlik(@javax.annotation.Nonnull BlikBankRedirectAdditionalData blik) {
-            this.blik = blik;
-        }
+    this.blik = blik;
+  }
 
-        public BankRedirectDetails giropay(@javax.annotation.Nonnull GiropayBankRedirectAdditionalData giropay) {
-        
-        this.giropay = giropay;
-        return this;
-        }
+  public BankRedirectDetails giropay(@javax.annotation.Nonnull GiropayBankRedirectAdditionalData giropay) {
+    
+    this.giropay = giropay;
+    return this;
+  }
 
-    /**
-        * Get giropay
-    * @return giropay
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_GIROPAY)
+  /**
+   * Get giropay
+   * @return giropay
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_GIROPAY)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public GiropayBankRedirectAdditionalData getGiropay() {
-        return giropay;
-    }
+  public GiropayBankRedirectAdditionalData getGiropay() {
+    return giropay;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_GIROPAY)
+  @JsonProperty(JSON_PROPERTY_GIROPAY)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setGiropay(@javax.annotation.Nonnull GiropayBankRedirectAdditionalData giropay) {
-            this.giropay = giropay;
-        }
+    this.giropay = giropay;
+  }
 
-@Override
-public boolean equals(Object o) {
+  @Override
+  public boolean equals(Object o) {
     if (this == o) {
-    return true;
+      return true;
     }
     if (o == null || getClass() != o.getClass()) {
-    return false;
+      return false;
     }
-        BankRedirectDetails bankRedirectDetails = (BankRedirectDetails) o;
-        return Objects.equals(this.bancontactCard, bankRedirectDetails.bancontactCard) &&
+    BankRedirectDetails bankRedirectDetails = (BankRedirectDetails) o;
+    return Objects.equals(this.bancontactCard, bankRedirectDetails.bancontactCard) &&
         Objects.equals(this.blik, bankRedirectDetails.blik) &&
         Objects.equals(this.giropay, bankRedirectDetails.giropay);
-}
+  }
 
-    @Override
-    public int hashCode() {
-        return Objects.hash(bancontactCard, blik, giropay);
-    }
+  @Override
+  public int hashCode() {
+    return Objects.hash(bancontactCard, blik, giropay);
+  }
 
-    @Override
-    public String toString() {
+  @Override
+  public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class BankRedirectDetails {\n");
-        sb.append("    bancontactCard: ").append(toIndentedString(bancontactCard)).append("\n");
-        sb.append("    blik: ").append(toIndentedString(blik)).append("\n");
-        sb.append("    giropay: ").append(toIndentedString(giropay)).append("\n");
+    sb.append("    bancontactCard: ").append(toIndentedString(bancontactCard)).append("\n");
+    sb.append("    blik: ").append(toIndentedString(blik)).append("\n");
+    sb.append("    giropay: ").append(toIndentedString(giropay)).append("\n");
     sb.append("}");
     return sb.toString();
-    }
+  }
 
-    /**
-    * Convert the given object to string with each line indented by 4 spaces
-    * (except the first line).
-    */
-    private String toIndentedString(Object o) {
+  /**
+   * Convert the given object to string with each line indented by 4 spaces
+   * (except the first line).
+   */
+  private String toIndentedString(Object o) {
     if (o == null) {
-    return "null";
+      return "null";
     }
     return o.toString().replace("\n", "\n    ");
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @return URL query string
+   */
+  public String toUrlQueryString() {
+    return toUrlQueryString(null);
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @param prefix prefix of the query string
+   * @return URL query string
+   */
+  public String toUrlQueryString(String prefix) {
+    String suffix = "";
+    String containerSuffix = "";
+    String containerPrefix = "";
+    if (prefix == null) {
+      // style=form, explode=true, e.g. /pet?name=cat&type=manx
+      prefix = "";
+    } else {
+      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+      prefix = prefix + "[";
+      suffix = "]";
+      containerSuffix = "]";
+      containerPrefix = "[";
     }
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @return URL query string
-        */
-        public String toUrlQueryString() {
-        return toUrlQueryString(null);
-        }
+    StringJoiner joiner = new StringJoiner("&");
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @param prefix prefix of the query string
-        * @return URL query string
-        */
-        public String toUrlQueryString(String prefix) {
-        String suffix = "";
-        String containerSuffix = "";
-        String containerPrefix = "";
-        if (prefix == null) {
-        // style=form, explode=true, e.g. /pet?name=cat&type=manx
-        prefix = "";
-        } else {
-        // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
-        prefix = prefix + "[";
-        suffix = "]";
-        containerSuffix = "]";
-        containerPrefix = "[";
-        }
-
-        StringJoiner joiner = new StringJoiner("&");
-
-            // add `BancontactCard` to the URL query string
-                            if (getBancontactCard() != null) {
-                            joiner.add(getBancontactCard().toUrlQueryString(prefix + "BancontactCard" + suffix));
-                            }
-
-            // add `Blik` to the URL query string
-                            if (getBlik() != null) {
-                            joiner.add(getBlik().toUrlQueryString(prefix + "Blik" + suffix));
-                            }
-
-            // add `Giropay` to the URL query string
-                            if (getGiropay() != null) {
-                            joiner.add(getGiropay().toUrlQueryString(prefix + "Giropay" + suffix));
-                            }
-
-        return joiner.toString();
-        }
-
+    // add `BancontactCard` to the URL query string
+    if (getBancontactCard() != null) {
+      joiner.add(getBancontactCard().toUrlQueryString(prefix + "BancontactCard" + suffix));
     }
+
+    // add `Blik` to the URL query string
+    if (getBlik() != null) {
+      joiner.add(getBlik().toUrlQueryString(prefix + "Blik" + suffix));
+    }
+
+    // add `Giropay` to the URL query string
+    if (getGiropay() != null) {
+      joiner.add(getGiropay().toUrlQueryString(prefix + "Giropay" + suffix));
+    }
+
+    return joiner.toString();
+  }
+
+}
 

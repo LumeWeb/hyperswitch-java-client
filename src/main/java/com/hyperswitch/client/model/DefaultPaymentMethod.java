@@ -27,168 +27,168 @@ import java.net.URLEncoder;
 import java.util.StringJoiner;
 
 /**
-* DefaultPaymentMethod
-*/
-    @JsonPropertyOrder({
-        DefaultPaymentMethod.JSON_PROPERTY_CUSTOMER_ID,
-        DefaultPaymentMethod.JSON_PROPERTY_PAYMENT_METHOD_ID
-    })
+ * DefaultPaymentMethod
+ */
+@JsonPropertyOrder({
+  DefaultPaymentMethod.JSON_PROPERTY_CUSTOMER_ID,
+  DefaultPaymentMethod.JSON_PROPERTY_PAYMENT_METHOD_ID
+})
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class DefaultPaymentMethod {
-        public static final String JSON_PROPERTY_CUSTOMER_ID = "customer_id";
-    @javax.annotation.Nonnull
-            private String customerId;
+  public static final String JSON_PROPERTY_CUSTOMER_ID = "customer_id";
+  @javax.annotation.Nonnull
+  private String customerId;
 
-        public static final String JSON_PROPERTY_PAYMENT_METHOD_ID = "payment_method_id";
-    @javax.annotation.Nonnull
-            private String paymentMethodId;
+  public static final String JSON_PROPERTY_PAYMENT_METHOD_ID = "payment_method_id";
+  @javax.annotation.Nonnull
+  private String paymentMethodId;
 
-public DefaultPaymentMethod() {
-}
+  public DefaultPaymentMethod() {
+  }
 
-        public DefaultPaymentMethod customerId(@javax.annotation.Nonnull String customerId) {
-        
-        this.customerId = customerId;
-        return this;
-        }
+  public DefaultPaymentMethod customerId(@javax.annotation.Nonnull String customerId) {
+    
+    this.customerId = customerId;
+    return this;
+  }
 
-    /**
-        * Get customerId
-    * @return customerId
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_CUSTOMER_ID)
+  /**
+   * Get customerId
+   * @return customerId
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_CUSTOMER_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public String getCustomerId() {
-        return customerId;
-    }
+  public String getCustomerId() {
+    return customerId;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_CUSTOMER_ID)
+  @JsonProperty(JSON_PROPERTY_CUSTOMER_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setCustomerId(@javax.annotation.Nonnull String customerId) {
-            this.customerId = customerId;
-        }
+    this.customerId = customerId;
+  }
 
-        public DefaultPaymentMethod paymentMethodId(@javax.annotation.Nonnull String paymentMethodId) {
-        
-        this.paymentMethodId = paymentMethodId;
-        return this;
-        }
+  public DefaultPaymentMethod paymentMethodId(@javax.annotation.Nonnull String paymentMethodId) {
+    
+    this.paymentMethodId = paymentMethodId;
+    return this;
+  }
 
-    /**
-        * Get paymentMethodId
-    * @return paymentMethodId
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_PAYMENT_METHOD_ID)
+  /**
+   * Get paymentMethodId
+   * @return paymentMethodId
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_PAYMENT_METHOD_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public String getPaymentMethodId() {
-        return paymentMethodId;
-    }
+  public String getPaymentMethodId() {
+    return paymentMethodId;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_PAYMENT_METHOD_ID)
+  @JsonProperty(JSON_PROPERTY_PAYMENT_METHOD_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setPaymentMethodId(@javax.annotation.Nonnull String paymentMethodId) {
-            this.paymentMethodId = paymentMethodId;
-        }
+    this.paymentMethodId = paymentMethodId;
+  }
 
-@Override
-public boolean equals(Object o) {
+  @Override
+  public boolean equals(Object o) {
     if (this == o) {
-    return true;
+      return true;
     }
     if (o == null || getClass() != o.getClass()) {
-    return false;
+      return false;
     }
-        DefaultPaymentMethod defaultPaymentMethod = (DefaultPaymentMethod) o;
-        return Objects.equals(this.customerId, defaultPaymentMethod.customerId) &&
+    DefaultPaymentMethod defaultPaymentMethod = (DefaultPaymentMethod) o;
+    return Objects.equals(this.customerId, defaultPaymentMethod.customerId) &&
         Objects.equals(this.paymentMethodId, defaultPaymentMethod.paymentMethodId);
-}
+  }
 
-    @Override
-    public int hashCode() {
-        return Objects.hash(customerId, paymentMethodId);
-    }
+  @Override
+  public int hashCode() {
+    return Objects.hash(customerId, paymentMethodId);
+  }
 
-    @Override
-    public String toString() {
+  @Override
+  public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class DefaultPaymentMethod {\n");
-        sb.append("    customerId: ").append(toIndentedString(customerId)).append("\n");
-        sb.append("    paymentMethodId: ").append(toIndentedString(paymentMethodId)).append("\n");
+    sb.append("    customerId: ").append(toIndentedString(customerId)).append("\n");
+    sb.append("    paymentMethodId: ").append(toIndentedString(paymentMethodId)).append("\n");
     sb.append("}");
     return sb.toString();
-    }
+  }
 
-    /**
-    * Convert the given object to string with each line indented by 4 spaces
-    * (except the first line).
-    */
-    private String toIndentedString(Object o) {
+  /**
+   * Convert the given object to string with each line indented by 4 spaces
+   * (except the first line).
+   */
+  private String toIndentedString(Object o) {
     if (o == null) {
-    return "null";
+      return "null";
     }
     return o.toString().replace("\n", "\n    ");
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @return URL query string
+   */
+  public String toUrlQueryString() {
+    return toUrlQueryString(null);
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @param prefix prefix of the query string
+   * @return URL query string
+   */
+  public String toUrlQueryString(String prefix) {
+    String suffix = "";
+    String containerSuffix = "";
+    String containerPrefix = "";
+    if (prefix == null) {
+      // style=form, explode=true, e.g. /pet?name=cat&type=manx
+      prefix = "";
+    } else {
+      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+      prefix = prefix + "[";
+      suffix = "]";
+      containerSuffix = "]";
+      containerPrefix = "[";
     }
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @return URL query string
-        */
-        public String toUrlQueryString() {
-        return toUrlQueryString(null);
-        }
+    StringJoiner joiner = new StringJoiner("&");
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @param prefix prefix of the query string
-        * @return URL query string
-        */
-        public String toUrlQueryString(String prefix) {
-        String suffix = "";
-        String containerSuffix = "";
-        String containerPrefix = "";
-        if (prefix == null) {
-        // style=form, explode=true, e.g. /pet?name=cat&type=manx
-        prefix = "";
-        } else {
-        // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
-        prefix = prefix + "[";
-        suffix = "]";
-        containerSuffix = "]";
-        containerPrefix = "[";
-        }
-
-        StringJoiner joiner = new StringJoiner("&");
-
-            // add `customer_id` to the URL query string
-                        if (getCustomerId() != null) {
-                        try {
-                        joiner.add(String.format("%scustomer_id%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCustomerId()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-            // add `payment_method_id` to the URL query string
-                        if (getPaymentMethodId() != null) {
-                        try {
-                        joiner.add(String.format("%spayment_method_id%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getPaymentMethodId()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-        return joiner.toString();
-        }
-
+    // add `customer_id` to the URL query string
+    if (getCustomerId() != null) {
+      try {
+        joiner.add(String.format("%scustomer_id%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCustomerId()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
     }
+
+    // add `payment_method_id` to the URL query string
+    if (getPaymentMethodId() != null) {
+      try {
+        joiner.add(String.format("%spayment_method_id%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getPaymentMethodId()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    return joiner.toString();
+  }
+
+}
 

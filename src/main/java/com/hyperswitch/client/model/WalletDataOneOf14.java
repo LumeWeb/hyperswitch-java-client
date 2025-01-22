@@ -28,122 +28,122 @@ import java.net.URLEncoder;
 import java.util.StringJoiner;
 
 /**
-* WalletDataOneOf14
-*/
-    @JsonPropertyOrder({
-        WalletDataOneOf14.JSON_PROPERTY_MB_WAY_REDIRECT
-    })
-            @JsonTypeName("WalletData_oneOf_14")
+ * WalletDataOneOf14
+ */
+@JsonPropertyOrder({
+  WalletDataOneOf14.JSON_PROPERTY_MB_WAY_REDIRECT
+})
+@JsonTypeName("WalletData_oneOf_14")
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class WalletDataOneOf14 {
-        public static final String JSON_PROPERTY_MB_WAY_REDIRECT = "mb_way_redirect";
-    @javax.annotation.Nonnull
-            private MbWayRedirection mbWayRedirect;
+  public static final String JSON_PROPERTY_MB_WAY_REDIRECT = "mb_way_redirect";
+  @javax.annotation.Nonnull
+  private MbWayRedirection mbWayRedirect;
 
-public WalletDataOneOf14() {
-}
+  public WalletDataOneOf14() {
+  }
 
-        public WalletDataOneOf14 mbWayRedirect(@javax.annotation.Nonnull MbWayRedirection mbWayRedirect) {
-        
-        this.mbWayRedirect = mbWayRedirect;
-        return this;
-        }
+  public WalletDataOneOf14 mbWayRedirect(@javax.annotation.Nonnull MbWayRedirection mbWayRedirect) {
+    
+    this.mbWayRedirect = mbWayRedirect;
+    return this;
+  }
 
-    /**
-        * Get mbWayRedirect
-    * @return mbWayRedirect
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_MB_WAY_REDIRECT)
+  /**
+   * Get mbWayRedirect
+   * @return mbWayRedirect
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_MB_WAY_REDIRECT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public MbWayRedirection getMbWayRedirect() {
-        return mbWayRedirect;
-    }
+  public MbWayRedirection getMbWayRedirect() {
+    return mbWayRedirect;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_MB_WAY_REDIRECT)
+  @JsonProperty(JSON_PROPERTY_MB_WAY_REDIRECT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setMbWayRedirect(@javax.annotation.Nonnull MbWayRedirection mbWayRedirect) {
-            this.mbWayRedirect = mbWayRedirect;
-        }
+    this.mbWayRedirect = mbWayRedirect;
+  }
 
-@Override
-public boolean equals(Object o) {
+  @Override
+  public boolean equals(Object o) {
     if (this == o) {
-    return true;
+      return true;
     }
     if (o == null || getClass() != o.getClass()) {
-    return false;
+      return false;
     }
-        WalletDataOneOf14 walletDataOneOf14 = (WalletDataOneOf14) o;
-        return Objects.equals(this.mbWayRedirect, walletDataOneOf14.mbWayRedirect);
-}
+    WalletDataOneOf14 walletDataOneOf14 = (WalletDataOneOf14) o;
+    return Objects.equals(this.mbWayRedirect, walletDataOneOf14.mbWayRedirect);
+  }
 
-    @Override
-    public int hashCode() {
-        return Objects.hash(mbWayRedirect);
-    }
+  @Override
+  public int hashCode() {
+    return Objects.hash(mbWayRedirect);
+  }
 
-    @Override
-    public String toString() {
+  @Override
+  public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class WalletDataOneOf14 {\n");
-        sb.append("    mbWayRedirect: ").append(toIndentedString(mbWayRedirect)).append("\n");
+    sb.append("    mbWayRedirect: ").append(toIndentedString(mbWayRedirect)).append("\n");
     sb.append("}");
     return sb.toString();
-    }
+  }
 
-    /**
-    * Convert the given object to string with each line indented by 4 spaces
-    * (except the first line).
-    */
-    private String toIndentedString(Object o) {
+  /**
+   * Convert the given object to string with each line indented by 4 spaces
+   * (except the first line).
+   */
+  private String toIndentedString(Object o) {
     if (o == null) {
-    return "null";
+      return "null";
     }
     return o.toString().replace("\n", "\n    ");
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @return URL query string
+   */
+  public String toUrlQueryString() {
+    return toUrlQueryString(null);
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @param prefix prefix of the query string
+   * @return URL query string
+   */
+  public String toUrlQueryString(String prefix) {
+    String suffix = "";
+    String containerSuffix = "";
+    String containerPrefix = "";
+    if (prefix == null) {
+      // style=form, explode=true, e.g. /pet?name=cat&type=manx
+      prefix = "";
+    } else {
+      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+      prefix = prefix + "[";
+      suffix = "]";
+      containerSuffix = "]";
+      containerPrefix = "[";
     }
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @return URL query string
-        */
-        public String toUrlQueryString() {
-        return toUrlQueryString(null);
-        }
+    StringJoiner joiner = new StringJoiner("&");
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @param prefix prefix of the query string
-        * @return URL query string
-        */
-        public String toUrlQueryString(String prefix) {
-        String suffix = "";
-        String containerSuffix = "";
-        String containerPrefix = "";
-        if (prefix == null) {
-        // style=form, explode=true, e.g. /pet?name=cat&type=manx
-        prefix = "";
-        } else {
-        // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
-        prefix = prefix + "[";
-        suffix = "]";
-        containerSuffix = "]";
-        containerPrefix = "[";
-        }
-
-        StringJoiner joiner = new StringJoiner("&");
-
-            // add `mb_way_redirect` to the URL query string
-                            if (getMbWayRedirect() != null) {
-                            joiner.add(getMbWayRedirect().toUrlQueryString(prefix + "mb_way_redirect" + suffix));
-                            }
-
-        return joiner.toString();
-        }
-
+    // add `mb_way_redirect` to the URL query string
+    if (getMbWayRedirect() != null) {
+      joiner.add(getMbWayRedirect().toUrlQueryString(prefix + "mb_way_redirect" + suffix));
     }
+
+    return joiner.toString();
+  }
+
+}
 

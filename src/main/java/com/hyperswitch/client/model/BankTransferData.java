@@ -48,445 +48,445 @@ import java.net.URLEncoder;
 import java.util.StringJoiner;
 
 /**
-* BankTransferData
-*/
-    @JsonPropertyOrder({
-        BankTransferData.JSON_PROPERTY_ACH_BANK_TRANSFER,
-        BankTransferData.JSON_PROPERTY_SEPA_BANK_TRANSFER,
-        BankTransferData.JSON_PROPERTY_BACS_BANK_TRANSFER,
-        BankTransferData.JSON_PROPERTY_MULTIBANCO_BANK_TRANSFER,
-        BankTransferData.JSON_PROPERTY_PERMATA_BANK_TRANSFER,
-        BankTransferData.JSON_PROPERTY_BCA_BANK_TRANSFER,
-        BankTransferData.JSON_PROPERTY_BNI_VA_BANK_TRANSFER,
-        BankTransferData.JSON_PROPERTY_BRI_VA_BANK_TRANSFER,
-        BankTransferData.JSON_PROPERTY_CIMB_VA_BANK_TRANSFER,
-        BankTransferData.JSON_PROPERTY_DANAMON_VA_BANK_TRANSFER,
-        BankTransferData.JSON_PROPERTY_MANDIRI_VA_BANK_TRANSFER,
-        BankTransferData.JSON_PROPERTY_PIX,
-        BankTransferData.JSON_PROPERTY_PSE,
-        BankTransferData.JSON_PROPERTY_LOCAL_BANK_TRANSFER
-    })
+ * BankTransferData
+ */
+@JsonPropertyOrder({
+  BankTransferData.JSON_PROPERTY_ACH_BANK_TRANSFER,
+  BankTransferData.JSON_PROPERTY_SEPA_BANK_TRANSFER,
+  BankTransferData.JSON_PROPERTY_BACS_BANK_TRANSFER,
+  BankTransferData.JSON_PROPERTY_MULTIBANCO_BANK_TRANSFER,
+  BankTransferData.JSON_PROPERTY_PERMATA_BANK_TRANSFER,
+  BankTransferData.JSON_PROPERTY_BCA_BANK_TRANSFER,
+  BankTransferData.JSON_PROPERTY_BNI_VA_BANK_TRANSFER,
+  BankTransferData.JSON_PROPERTY_BRI_VA_BANK_TRANSFER,
+  BankTransferData.JSON_PROPERTY_CIMB_VA_BANK_TRANSFER,
+  BankTransferData.JSON_PROPERTY_DANAMON_VA_BANK_TRANSFER,
+  BankTransferData.JSON_PROPERTY_MANDIRI_VA_BANK_TRANSFER,
+  BankTransferData.JSON_PROPERTY_PIX,
+  BankTransferData.JSON_PROPERTY_PSE,
+  BankTransferData.JSON_PROPERTY_LOCAL_BANK_TRANSFER
+})
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class BankTransferData {
-        public static final String JSON_PROPERTY_ACH_BANK_TRANSFER = "ach_bank_transfer";
-    @javax.annotation.Nonnull
-            private BankTransferDataOneOfAchBankTransfer achBankTransfer;
+  public static final String JSON_PROPERTY_ACH_BANK_TRANSFER = "ach_bank_transfer";
+  @javax.annotation.Nonnull
+  private BankTransferDataOneOfAchBankTransfer achBankTransfer;
 
-        public static final String JSON_PROPERTY_SEPA_BANK_TRANSFER = "sepa_bank_transfer";
-    @javax.annotation.Nonnull
-            private BankTransferDataOneOf1SepaBankTransfer sepaBankTransfer;
+  public static final String JSON_PROPERTY_SEPA_BANK_TRANSFER = "sepa_bank_transfer";
+  @javax.annotation.Nonnull
+  private BankTransferDataOneOf1SepaBankTransfer sepaBankTransfer;
 
-        public static final String JSON_PROPERTY_BACS_BANK_TRANSFER = "bacs_bank_transfer";
-    @javax.annotation.Nonnull
-            private BankTransferDataOneOf2BacsBankTransfer bacsBankTransfer;
+  public static final String JSON_PROPERTY_BACS_BANK_TRANSFER = "bacs_bank_transfer";
+  @javax.annotation.Nonnull
+  private BankTransferDataOneOf2BacsBankTransfer bacsBankTransfer;
 
-        public static final String JSON_PROPERTY_MULTIBANCO_BANK_TRANSFER = "multibanco_bank_transfer";
-    @javax.annotation.Nonnull
-            private BankTransferDataOneOf3MultibancoBankTransfer multibancoBankTransfer;
+  public static final String JSON_PROPERTY_MULTIBANCO_BANK_TRANSFER = "multibanco_bank_transfer";
+  @javax.annotation.Nonnull
+  private BankTransferDataOneOf3MultibancoBankTransfer multibancoBankTransfer;
 
-        public static final String JSON_PROPERTY_PERMATA_BANK_TRANSFER = "permata_bank_transfer";
-    @javax.annotation.Nonnull
-            private BankTransferDataOneOf4PermataBankTransfer permataBankTransfer;
+  public static final String JSON_PROPERTY_PERMATA_BANK_TRANSFER = "permata_bank_transfer";
+  @javax.annotation.Nonnull
+  private BankTransferDataOneOf4PermataBankTransfer permataBankTransfer;
 
-        public static final String JSON_PROPERTY_BCA_BANK_TRANSFER = "bca_bank_transfer";
-    @javax.annotation.Nonnull
-            private BankTransferDataOneOf4PermataBankTransfer bcaBankTransfer;
+  public static final String JSON_PROPERTY_BCA_BANK_TRANSFER = "bca_bank_transfer";
+  @javax.annotation.Nonnull
+  private BankTransferDataOneOf4PermataBankTransfer bcaBankTransfer;
 
-        public static final String JSON_PROPERTY_BNI_VA_BANK_TRANSFER = "bni_va_bank_transfer";
-    @javax.annotation.Nonnull
-            private BankTransferDataOneOf4PermataBankTransfer bniVaBankTransfer;
+  public static final String JSON_PROPERTY_BNI_VA_BANK_TRANSFER = "bni_va_bank_transfer";
+  @javax.annotation.Nonnull
+  private BankTransferDataOneOf4PermataBankTransfer bniVaBankTransfer;
 
-        public static final String JSON_PROPERTY_BRI_VA_BANK_TRANSFER = "bri_va_bank_transfer";
-    @javax.annotation.Nonnull
-            private BankTransferDataOneOf4PermataBankTransfer briVaBankTransfer;
+  public static final String JSON_PROPERTY_BRI_VA_BANK_TRANSFER = "bri_va_bank_transfer";
+  @javax.annotation.Nonnull
+  private BankTransferDataOneOf4PermataBankTransfer briVaBankTransfer;
 
-        public static final String JSON_PROPERTY_CIMB_VA_BANK_TRANSFER = "cimb_va_bank_transfer";
-    @javax.annotation.Nonnull
-            private BankTransferDataOneOf4PermataBankTransfer cimbVaBankTransfer;
+  public static final String JSON_PROPERTY_CIMB_VA_BANK_TRANSFER = "cimb_va_bank_transfer";
+  @javax.annotation.Nonnull
+  private BankTransferDataOneOf4PermataBankTransfer cimbVaBankTransfer;
 
-        public static final String JSON_PROPERTY_DANAMON_VA_BANK_TRANSFER = "danamon_va_bank_transfer";
-    @javax.annotation.Nonnull
-            private BankTransferDataOneOf4PermataBankTransfer danamonVaBankTransfer;
+  public static final String JSON_PROPERTY_DANAMON_VA_BANK_TRANSFER = "danamon_va_bank_transfer";
+  @javax.annotation.Nonnull
+  private BankTransferDataOneOf4PermataBankTransfer danamonVaBankTransfer;
 
-        public static final String JSON_PROPERTY_MANDIRI_VA_BANK_TRANSFER = "mandiri_va_bank_transfer";
-    @javax.annotation.Nonnull
-            private BankTransferDataOneOf4PermataBankTransfer mandiriVaBankTransfer;
+  public static final String JSON_PROPERTY_MANDIRI_VA_BANK_TRANSFER = "mandiri_va_bank_transfer";
+  @javax.annotation.Nonnull
+  private BankTransferDataOneOf4PermataBankTransfer mandiriVaBankTransfer;
 
-        public static final String JSON_PROPERTY_PIX = "pix";
-    @javax.annotation.Nonnull
-            private BankTransferDataOneOf11Pix pix;
+  public static final String JSON_PROPERTY_PIX = "pix";
+  @javax.annotation.Nonnull
+  private BankTransferDataOneOf11Pix pix;
 
-        public static final String JSON_PROPERTY_PSE = "pse";
-    @javax.annotation.Nonnull
-            private Object pse;
+  public static final String JSON_PROPERTY_PSE = "pse";
+  @javax.annotation.Nonnull
+  private Object pse;
 
-        public static final String JSON_PROPERTY_LOCAL_BANK_TRANSFER = "local_bank_transfer";
-    @javax.annotation.Nonnull
-            private BankTransferDataOneOf12LocalBankTransfer localBankTransfer;
+  public static final String JSON_PROPERTY_LOCAL_BANK_TRANSFER = "local_bank_transfer";
+  @javax.annotation.Nonnull
+  private BankTransferDataOneOf12LocalBankTransfer localBankTransfer;
 
-public BankTransferData() {
-}
+  public BankTransferData() {
+  }
 
-        public BankTransferData achBankTransfer(@javax.annotation.Nonnull BankTransferDataOneOfAchBankTransfer achBankTransfer) {
-        
-        this.achBankTransfer = achBankTransfer;
-        return this;
-        }
+  public BankTransferData achBankTransfer(@javax.annotation.Nonnull BankTransferDataOneOfAchBankTransfer achBankTransfer) {
+    
+    this.achBankTransfer = achBankTransfer;
+    return this;
+  }
 
-    /**
-        * Get achBankTransfer
-    * @return achBankTransfer
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_ACH_BANK_TRANSFER)
+  /**
+   * Get achBankTransfer
+   * @return achBankTransfer
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_ACH_BANK_TRANSFER)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public BankTransferDataOneOfAchBankTransfer getAchBankTransfer() {
-        return achBankTransfer;
-    }
+  public BankTransferDataOneOfAchBankTransfer getAchBankTransfer() {
+    return achBankTransfer;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_ACH_BANK_TRANSFER)
+  @JsonProperty(JSON_PROPERTY_ACH_BANK_TRANSFER)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setAchBankTransfer(@javax.annotation.Nonnull BankTransferDataOneOfAchBankTransfer achBankTransfer) {
-            this.achBankTransfer = achBankTransfer;
-        }
+    this.achBankTransfer = achBankTransfer;
+  }
 
-        public BankTransferData sepaBankTransfer(@javax.annotation.Nonnull BankTransferDataOneOf1SepaBankTransfer sepaBankTransfer) {
-        
-        this.sepaBankTransfer = sepaBankTransfer;
-        return this;
-        }
+  public BankTransferData sepaBankTransfer(@javax.annotation.Nonnull BankTransferDataOneOf1SepaBankTransfer sepaBankTransfer) {
+    
+    this.sepaBankTransfer = sepaBankTransfer;
+    return this;
+  }
 
-    /**
-        * Get sepaBankTransfer
-    * @return sepaBankTransfer
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_SEPA_BANK_TRANSFER)
+  /**
+   * Get sepaBankTransfer
+   * @return sepaBankTransfer
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_SEPA_BANK_TRANSFER)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public BankTransferDataOneOf1SepaBankTransfer getSepaBankTransfer() {
-        return sepaBankTransfer;
-    }
+  public BankTransferDataOneOf1SepaBankTransfer getSepaBankTransfer() {
+    return sepaBankTransfer;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_SEPA_BANK_TRANSFER)
+  @JsonProperty(JSON_PROPERTY_SEPA_BANK_TRANSFER)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setSepaBankTransfer(@javax.annotation.Nonnull BankTransferDataOneOf1SepaBankTransfer sepaBankTransfer) {
-            this.sepaBankTransfer = sepaBankTransfer;
-        }
+    this.sepaBankTransfer = sepaBankTransfer;
+  }
 
-        public BankTransferData bacsBankTransfer(@javax.annotation.Nonnull BankTransferDataOneOf2BacsBankTransfer bacsBankTransfer) {
-        
-        this.bacsBankTransfer = bacsBankTransfer;
-        return this;
-        }
+  public BankTransferData bacsBankTransfer(@javax.annotation.Nonnull BankTransferDataOneOf2BacsBankTransfer bacsBankTransfer) {
+    
+    this.bacsBankTransfer = bacsBankTransfer;
+    return this;
+  }
 
-    /**
-        * Get bacsBankTransfer
-    * @return bacsBankTransfer
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_BACS_BANK_TRANSFER)
+  /**
+   * Get bacsBankTransfer
+   * @return bacsBankTransfer
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_BACS_BANK_TRANSFER)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public BankTransferDataOneOf2BacsBankTransfer getBacsBankTransfer() {
-        return bacsBankTransfer;
-    }
+  public BankTransferDataOneOf2BacsBankTransfer getBacsBankTransfer() {
+    return bacsBankTransfer;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_BACS_BANK_TRANSFER)
+  @JsonProperty(JSON_PROPERTY_BACS_BANK_TRANSFER)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setBacsBankTransfer(@javax.annotation.Nonnull BankTransferDataOneOf2BacsBankTransfer bacsBankTransfer) {
-            this.bacsBankTransfer = bacsBankTransfer;
-        }
+    this.bacsBankTransfer = bacsBankTransfer;
+  }
 
-        public BankTransferData multibancoBankTransfer(@javax.annotation.Nonnull BankTransferDataOneOf3MultibancoBankTransfer multibancoBankTransfer) {
-        
-        this.multibancoBankTransfer = multibancoBankTransfer;
-        return this;
-        }
+  public BankTransferData multibancoBankTransfer(@javax.annotation.Nonnull BankTransferDataOneOf3MultibancoBankTransfer multibancoBankTransfer) {
+    
+    this.multibancoBankTransfer = multibancoBankTransfer;
+    return this;
+  }
 
-    /**
-        * Get multibancoBankTransfer
-    * @return multibancoBankTransfer
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_MULTIBANCO_BANK_TRANSFER)
+  /**
+   * Get multibancoBankTransfer
+   * @return multibancoBankTransfer
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_MULTIBANCO_BANK_TRANSFER)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public BankTransferDataOneOf3MultibancoBankTransfer getMultibancoBankTransfer() {
-        return multibancoBankTransfer;
-    }
+  public BankTransferDataOneOf3MultibancoBankTransfer getMultibancoBankTransfer() {
+    return multibancoBankTransfer;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_MULTIBANCO_BANK_TRANSFER)
+  @JsonProperty(JSON_PROPERTY_MULTIBANCO_BANK_TRANSFER)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setMultibancoBankTransfer(@javax.annotation.Nonnull BankTransferDataOneOf3MultibancoBankTransfer multibancoBankTransfer) {
-            this.multibancoBankTransfer = multibancoBankTransfer;
-        }
+    this.multibancoBankTransfer = multibancoBankTransfer;
+  }
 
-        public BankTransferData permataBankTransfer(@javax.annotation.Nonnull BankTransferDataOneOf4PermataBankTransfer permataBankTransfer) {
-        
-        this.permataBankTransfer = permataBankTransfer;
-        return this;
-        }
+  public BankTransferData permataBankTransfer(@javax.annotation.Nonnull BankTransferDataOneOf4PermataBankTransfer permataBankTransfer) {
+    
+    this.permataBankTransfer = permataBankTransfer;
+    return this;
+  }
 
-    /**
-        * Get permataBankTransfer
-    * @return permataBankTransfer
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_PERMATA_BANK_TRANSFER)
+  /**
+   * Get permataBankTransfer
+   * @return permataBankTransfer
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_PERMATA_BANK_TRANSFER)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public BankTransferDataOneOf4PermataBankTransfer getPermataBankTransfer() {
-        return permataBankTransfer;
-    }
+  public BankTransferDataOneOf4PermataBankTransfer getPermataBankTransfer() {
+    return permataBankTransfer;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_PERMATA_BANK_TRANSFER)
+  @JsonProperty(JSON_PROPERTY_PERMATA_BANK_TRANSFER)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setPermataBankTransfer(@javax.annotation.Nonnull BankTransferDataOneOf4PermataBankTransfer permataBankTransfer) {
-            this.permataBankTransfer = permataBankTransfer;
-        }
+    this.permataBankTransfer = permataBankTransfer;
+  }
 
-        public BankTransferData bcaBankTransfer(@javax.annotation.Nonnull BankTransferDataOneOf4PermataBankTransfer bcaBankTransfer) {
-        
-        this.bcaBankTransfer = bcaBankTransfer;
-        return this;
-        }
+  public BankTransferData bcaBankTransfer(@javax.annotation.Nonnull BankTransferDataOneOf4PermataBankTransfer bcaBankTransfer) {
+    
+    this.bcaBankTransfer = bcaBankTransfer;
+    return this;
+  }
 
-    /**
-        * Get bcaBankTransfer
-    * @return bcaBankTransfer
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_BCA_BANK_TRANSFER)
+  /**
+   * Get bcaBankTransfer
+   * @return bcaBankTransfer
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_BCA_BANK_TRANSFER)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public BankTransferDataOneOf4PermataBankTransfer getBcaBankTransfer() {
-        return bcaBankTransfer;
-    }
+  public BankTransferDataOneOf4PermataBankTransfer getBcaBankTransfer() {
+    return bcaBankTransfer;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_BCA_BANK_TRANSFER)
+  @JsonProperty(JSON_PROPERTY_BCA_BANK_TRANSFER)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setBcaBankTransfer(@javax.annotation.Nonnull BankTransferDataOneOf4PermataBankTransfer bcaBankTransfer) {
-            this.bcaBankTransfer = bcaBankTransfer;
-        }
+    this.bcaBankTransfer = bcaBankTransfer;
+  }
 
-        public BankTransferData bniVaBankTransfer(@javax.annotation.Nonnull BankTransferDataOneOf4PermataBankTransfer bniVaBankTransfer) {
-        
-        this.bniVaBankTransfer = bniVaBankTransfer;
-        return this;
-        }
+  public BankTransferData bniVaBankTransfer(@javax.annotation.Nonnull BankTransferDataOneOf4PermataBankTransfer bniVaBankTransfer) {
+    
+    this.bniVaBankTransfer = bniVaBankTransfer;
+    return this;
+  }
 
-    /**
-        * Get bniVaBankTransfer
-    * @return bniVaBankTransfer
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_BNI_VA_BANK_TRANSFER)
+  /**
+   * Get bniVaBankTransfer
+   * @return bniVaBankTransfer
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_BNI_VA_BANK_TRANSFER)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public BankTransferDataOneOf4PermataBankTransfer getBniVaBankTransfer() {
-        return bniVaBankTransfer;
-    }
+  public BankTransferDataOneOf4PermataBankTransfer getBniVaBankTransfer() {
+    return bniVaBankTransfer;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_BNI_VA_BANK_TRANSFER)
+  @JsonProperty(JSON_PROPERTY_BNI_VA_BANK_TRANSFER)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setBniVaBankTransfer(@javax.annotation.Nonnull BankTransferDataOneOf4PermataBankTransfer bniVaBankTransfer) {
-            this.bniVaBankTransfer = bniVaBankTransfer;
-        }
+    this.bniVaBankTransfer = bniVaBankTransfer;
+  }
 
-        public BankTransferData briVaBankTransfer(@javax.annotation.Nonnull BankTransferDataOneOf4PermataBankTransfer briVaBankTransfer) {
-        
-        this.briVaBankTransfer = briVaBankTransfer;
-        return this;
-        }
+  public BankTransferData briVaBankTransfer(@javax.annotation.Nonnull BankTransferDataOneOf4PermataBankTransfer briVaBankTransfer) {
+    
+    this.briVaBankTransfer = briVaBankTransfer;
+    return this;
+  }
 
-    /**
-        * Get briVaBankTransfer
-    * @return briVaBankTransfer
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_BRI_VA_BANK_TRANSFER)
+  /**
+   * Get briVaBankTransfer
+   * @return briVaBankTransfer
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_BRI_VA_BANK_TRANSFER)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public BankTransferDataOneOf4PermataBankTransfer getBriVaBankTransfer() {
-        return briVaBankTransfer;
-    }
+  public BankTransferDataOneOf4PermataBankTransfer getBriVaBankTransfer() {
+    return briVaBankTransfer;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_BRI_VA_BANK_TRANSFER)
+  @JsonProperty(JSON_PROPERTY_BRI_VA_BANK_TRANSFER)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setBriVaBankTransfer(@javax.annotation.Nonnull BankTransferDataOneOf4PermataBankTransfer briVaBankTransfer) {
-            this.briVaBankTransfer = briVaBankTransfer;
-        }
+    this.briVaBankTransfer = briVaBankTransfer;
+  }
 
-        public BankTransferData cimbVaBankTransfer(@javax.annotation.Nonnull BankTransferDataOneOf4PermataBankTransfer cimbVaBankTransfer) {
-        
-        this.cimbVaBankTransfer = cimbVaBankTransfer;
-        return this;
-        }
+  public BankTransferData cimbVaBankTransfer(@javax.annotation.Nonnull BankTransferDataOneOf4PermataBankTransfer cimbVaBankTransfer) {
+    
+    this.cimbVaBankTransfer = cimbVaBankTransfer;
+    return this;
+  }
 
-    /**
-        * Get cimbVaBankTransfer
-    * @return cimbVaBankTransfer
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_CIMB_VA_BANK_TRANSFER)
+  /**
+   * Get cimbVaBankTransfer
+   * @return cimbVaBankTransfer
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_CIMB_VA_BANK_TRANSFER)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public BankTransferDataOneOf4PermataBankTransfer getCimbVaBankTransfer() {
-        return cimbVaBankTransfer;
-    }
+  public BankTransferDataOneOf4PermataBankTransfer getCimbVaBankTransfer() {
+    return cimbVaBankTransfer;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_CIMB_VA_BANK_TRANSFER)
+  @JsonProperty(JSON_PROPERTY_CIMB_VA_BANK_TRANSFER)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setCimbVaBankTransfer(@javax.annotation.Nonnull BankTransferDataOneOf4PermataBankTransfer cimbVaBankTransfer) {
-            this.cimbVaBankTransfer = cimbVaBankTransfer;
-        }
+    this.cimbVaBankTransfer = cimbVaBankTransfer;
+  }
 
-        public BankTransferData danamonVaBankTransfer(@javax.annotation.Nonnull BankTransferDataOneOf4PermataBankTransfer danamonVaBankTransfer) {
-        
-        this.danamonVaBankTransfer = danamonVaBankTransfer;
-        return this;
-        }
+  public BankTransferData danamonVaBankTransfer(@javax.annotation.Nonnull BankTransferDataOneOf4PermataBankTransfer danamonVaBankTransfer) {
+    
+    this.danamonVaBankTransfer = danamonVaBankTransfer;
+    return this;
+  }
 
-    /**
-        * Get danamonVaBankTransfer
-    * @return danamonVaBankTransfer
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_DANAMON_VA_BANK_TRANSFER)
+  /**
+   * Get danamonVaBankTransfer
+   * @return danamonVaBankTransfer
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_DANAMON_VA_BANK_TRANSFER)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public BankTransferDataOneOf4PermataBankTransfer getDanamonVaBankTransfer() {
-        return danamonVaBankTransfer;
-    }
+  public BankTransferDataOneOf4PermataBankTransfer getDanamonVaBankTransfer() {
+    return danamonVaBankTransfer;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_DANAMON_VA_BANK_TRANSFER)
+  @JsonProperty(JSON_PROPERTY_DANAMON_VA_BANK_TRANSFER)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setDanamonVaBankTransfer(@javax.annotation.Nonnull BankTransferDataOneOf4PermataBankTransfer danamonVaBankTransfer) {
-            this.danamonVaBankTransfer = danamonVaBankTransfer;
-        }
+    this.danamonVaBankTransfer = danamonVaBankTransfer;
+  }
 
-        public BankTransferData mandiriVaBankTransfer(@javax.annotation.Nonnull BankTransferDataOneOf4PermataBankTransfer mandiriVaBankTransfer) {
-        
-        this.mandiriVaBankTransfer = mandiriVaBankTransfer;
-        return this;
-        }
+  public BankTransferData mandiriVaBankTransfer(@javax.annotation.Nonnull BankTransferDataOneOf4PermataBankTransfer mandiriVaBankTransfer) {
+    
+    this.mandiriVaBankTransfer = mandiriVaBankTransfer;
+    return this;
+  }
 
-    /**
-        * Get mandiriVaBankTransfer
-    * @return mandiriVaBankTransfer
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_MANDIRI_VA_BANK_TRANSFER)
+  /**
+   * Get mandiriVaBankTransfer
+   * @return mandiriVaBankTransfer
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_MANDIRI_VA_BANK_TRANSFER)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public BankTransferDataOneOf4PermataBankTransfer getMandiriVaBankTransfer() {
-        return mandiriVaBankTransfer;
-    }
+  public BankTransferDataOneOf4PermataBankTransfer getMandiriVaBankTransfer() {
+    return mandiriVaBankTransfer;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_MANDIRI_VA_BANK_TRANSFER)
+  @JsonProperty(JSON_PROPERTY_MANDIRI_VA_BANK_TRANSFER)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setMandiriVaBankTransfer(@javax.annotation.Nonnull BankTransferDataOneOf4PermataBankTransfer mandiriVaBankTransfer) {
-            this.mandiriVaBankTransfer = mandiriVaBankTransfer;
-        }
+    this.mandiriVaBankTransfer = mandiriVaBankTransfer;
+  }
 
-        public BankTransferData pix(@javax.annotation.Nonnull BankTransferDataOneOf11Pix pix) {
-        
-        this.pix = pix;
-        return this;
-        }
+  public BankTransferData pix(@javax.annotation.Nonnull BankTransferDataOneOf11Pix pix) {
+    
+    this.pix = pix;
+    return this;
+  }
 
-    /**
-        * Get pix
-    * @return pix
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_PIX)
+  /**
+   * Get pix
+   * @return pix
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_PIX)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public BankTransferDataOneOf11Pix getPix() {
-        return pix;
-    }
+  public BankTransferDataOneOf11Pix getPix() {
+    return pix;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_PIX)
+  @JsonProperty(JSON_PROPERTY_PIX)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setPix(@javax.annotation.Nonnull BankTransferDataOneOf11Pix pix) {
-            this.pix = pix;
-        }
+    this.pix = pix;
+  }
 
-        public BankTransferData pse(@javax.annotation.Nonnull Object pse) {
-        
-        this.pse = pse;
-        return this;
-        }
+  public BankTransferData pse(@javax.annotation.Nonnull Object pse) {
+    
+    this.pse = pse;
+    return this;
+  }
 
-    /**
-        * Get pse
-    * @return pse
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_PSE)
+  /**
+   * Get pse
+   * @return pse
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_PSE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public Object getPse() {
-        return pse;
-    }
+  public Object getPse() {
+    return pse;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_PSE)
+  @JsonProperty(JSON_PROPERTY_PSE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setPse(@javax.annotation.Nonnull Object pse) {
-            this.pse = pse;
-        }
+    this.pse = pse;
+  }
 
-        public BankTransferData localBankTransfer(@javax.annotation.Nonnull BankTransferDataOneOf12LocalBankTransfer localBankTransfer) {
-        
-        this.localBankTransfer = localBankTransfer;
-        return this;
-        }
+  public BankTransferData localBankTransfer(@javax.annotation.Nonnull BankTransferDataOneOf12LocalBankTransfer localBankTransfer) {
+    
+    this.localBankTransfer = localBankTransfer;
+    return this;
+  }
 
-    /**
-        * Get localBankTransfer
-    * @return localBankTransfer
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_LOCAL_BANK_TRANSFER)
+  /**
+   * Get localBankTransfer
+   * @return localBankTransfer
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_LOCAL_BANK_TRANSFER)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public BankTransferDataOneOf12LocalBankTransfer getLocalBankTransfer() {
-        return localBankTransfer;
-    }
+  public BankTransferDataOneOf12LocalBankTransfer getLocalBankTransfer() {
+    return localBankTransfer;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_LOCAL_BANK_TRANSFER)
+  @JsonProperty(JSON_PROPERTY_LOCAL_BANK_TRANSFER)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setLocalBankTransfer(@javax.annotation.Nonnull BankTransferDataOneOf12LocalBankTransfer localBankTransfer) {
-            this.localBankTransfer = localBankTransfer;
-        }
+    this.localBankTransfer = localBankTransfer;
+  }
 
-@Override
-public boolean equals(Object o) {
+  @Override
+  public boolean equals(Object o) {
     if (this == o) {
-    return true;
+      return true;
     }
     if (o == null || getClass() != o.getClass()) {
-    return false;
+      return false;
     }
-        BankTransferData bankTransferData = (BankTransferData) o;
-        return Objects.equals(this.achBankTransfer, bankTransferData.achBankTransfer) &&
+    BankTransferData bankTransferData = (BankTransferData) o;
+    return Objects.equals(this.achBankTransfer, bankTransferData.achBankTransfer) &&
         Objects.equals(this.sepaBankTransfer, bankTransferData.sepaBankTransfer) &&
         Objects.equals(this.bacsBankTransfer, bankTransferData.bacsBankTransfer) &&
         Objects.equals(this.multibancoBankTransfer, bankTransferData.multibancoBankTransfer) &&
@@ -500,155 +500,155 @@ public boolean equals(Object o) {
         Objects.equals(this.pix, bankTransferData.pix) &&
         Objects.equals(this.pse, bankTransferData.pse) &&
         Objects.equals(this.localBankTransfer, bankTransferData.localBankTransfer);
-}
+  }
 
-    @Override
-    public int hashCode() {
-        return Objects.hash(achBankTransfer, sepaBankTransfer, bacsBankTransfer, multibancoBankTransfer, permataBankTransfer, bcaBankTransfer, bniVaBankTransfer, briVaBankTransfer, cimbVaBankTransfer, danamonVaBankTransfer, mandiriVaBankTransfer, pix, pse, localBankTransfer);
-    }
+  @Override
+  public int hashCode() {
+    return Objects.hash(achBankTransfer, sepaBankTransfer, bacsBankTransfer, multibancoBankTransfer, permataBankTransfer, bcaBankTransfer, bniVaBankTransfer, briVaBankTransfer, cimbVaBankTransfer, danamonVaBankTransfer, mandiriVaBankTransfer, pix, pse, localBankTransfer);
+  }
 
-    @Override
-    public String toString() {
+  @Override
+  public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class BankTransferData {\n");
-        sb.append("    achBankTransfer: ").append(toIndentedString(achBankTransfer)).append("\n");
-        sb.append("    sepaBankTransfer: ").append(toIndentedString(sepaBankTransfer)).append("\n");
-        sb.append("    bacsBankTransfer: ").append(toIndentedString(bacsBankTransfer)).append("\n");
-        sb.append("    multibancoBankTransfer: ").append(toIndentedString(multibancoBankTransfer)).append("\n");
-        sb.append("    permataBankTransfer: ").append(toIndentedString(permataBankTransfer)).append("\n");
-        sb.append("    bcaBankTransfer: ").append(toIndentedString(bcaBankTransfer)).append("\n");
-        sb.append("    bniVaBankTransfer: ").append(toIndentedString(bniVaBankTransfer)).append("\n");
-        sb.append("    briVaBankTransfer: ").append(toIndentedString(briVaBankTransfer)).append("\n");
-        sb.append("    cimbVaBankTransfer: ").append(toIndentedString(cimbVaBankTransfer)).append("\n");
-        sb.append("    danamonVaBankTransfer: ").append(toIndentedString(danamonVaBankTransfer)).append("\n");
-        sb.append("    mandiriVaBankTransfer: ").append(toIndentedString(mandiriVaBankTransfer)).append("\n");
-        sb.append("    pix: ").append(toIndentedString(pix)).append("\n");
-        sb.append("    pse: ").append(toIndentedString(pse)).append("\n");
-        sb.append("    localBankTransfer: ").append(toIndentedString(localBankTransfer)).append("\n");
+    sb.append("    achBankTransfer: ").append(toIndentedString(achBankTransfer)).append("\n");
+    sb.append("    sepaBankTransfer: ").append(toIndentedString(sepaBankTransfer)).append("\n");
+    sb.append("    bacsBankTransfer: ").append(toIndentedString(bacsBankTransfer)).append("\n");
+    sb.append("    multibancoBankTransfer: ").append(toIndentedString(multibancoBankTransfer)).append("\n");
+    sb.append("    permataBankTransfer: ").append(toIndentedString(permataBankTransfer)).append("\n");
+    sb.append("    bcaBankTransfer: ").append(toIndentedString(bcaBankTransfer)).append("\n");
+    sb.append("    bniVaBankTransfer: ").append(toIndentedString(bniVaBankTransfer)).append("\n");
+    sb.append("    briVaBankTransfer: ").append(toIndentedString(briVaBankTransfer)).append("\n");
+    sb.append("    cimbVaBankTransfer: ").append(toIndentedString(cimbVaBankTransfer)).append("\n");
+    sb.append("    danamonVaBankTransfer: ").append(toIndentedString(danamonVaBankTransfer)).append("\n");
+    sb.append("    mandiriVaBankTransfer: ").append(toIndentedString(mandiriVaBankTransfer)).append("\n");
+    sb.append("    pix: ").append(toIndentedString(pix)).append("\n");
+    sb.append("    pse: ").append(toIndentedString(pse)).append("\n");
+    sb.append("    localBankTransfer: ").append(toIndentedString(localBankTransfer)).append("\n");
     sb.append("}");
     return sb.toString();
-    }
+  }
 
-    /**
-    * Convert the given object to string with each line indented by 4 spaces
-    * (except the first line).
-    */
-    private String toIndentedString(Object o) {
+  /**
+   * Convert the given object to string with each line indented by 4 spaces
+   * (except the first line).
+   */
+  private String toIndentedString(Object o) {
     if (o == null) {
-    return "null";
+      return "null";
     }
     return o.toString().replace("\n", "\n    ");
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @return URL query string
+   */
+  public String toUrlQueryString() {
+    return toUrlQueryString(null);
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @param prefix prefix of the query string
+   * @return URL query string
+   */
+  public String toUrlQueryString(String prefix) {
+    String suffix = "";
+    String containerSuffix = "";
+    String containerPrefix = "";
+    if (prefix == null) {
+      // style=form, explode=true, e.g. /pet?name=cat&type=manx
+      prefix = "";
+    } else {
+      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+      prefix = prefix + "[";
+      suffix = "]";
+      containerSuffix = "]";
+      containerPrefix = "[";
     }
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @return URL query string
-        */
-        public String toUrlQueryString() {
-        return toUrlQueryString(null);
-        }
+    StringJoiner joiner = new StringJoiner("&");
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @param prefix prefix of the query string
-        * @return URL query string
-        */
-        public String toUrlQueryString(String prefix) {
-        String suffix = "";
-        String containerSuffix = "";
-        String containerPrefix = "";
-        if (prefix == null) {
-        // style=form, explode=true, e.g. /pet?name=cat&type=manx
-        prefix = "";
-        } else {
-        // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
-        prefix = prefix + "[";
-        suffix = "]";
-        containerSuffix = "]";
-        containerPrefix = "[";
-        }
-
-        StringJoiner joiner = new StringJoiner("&");
-
-            // add `ach_bank_transfer` to the URL query string
-                            if (getAchBankTransfer() != null) {
-                            joiner.add(getAchBankTransfer().toUrlQueryString(prefix + "ach_bank_transfer" + suffix));
-                            }
-
-            // add `sepa_bank_transfer` to the URL query string
-                            if (getSepaBankTransfer() != null) {
-                            joiner.add(getSepaBankTransfer().toUrlQueryString(prefix + "sepa_bank_transfer" + suffix));
-                            }
-
-            // add `bacs_bank_transfer` to the URL query string
-                            if (getBacsBankTransfer() != null) {
-                            joiner.add(getBacsBankTransfer().toUrlQueryString(prefix + "bacs_bank_transfer" + suffix));
-                            }
-
-            // add `multibanco_bank_transfer` to the URL query string
-                            if (getMultibancoBankTransfer() != null) {
-                            joiner.add(getMultibancoBankTransfer().toUrlQueryString(prefix + "multibanco_bank_transfer" + suffix));
-                            }
-
-            // add `permata_bank_transfer` to the URL query string
-                            if (getPermataBankTransfer() != null) {
-                            joiner.add(getPermataBankTransfer().toUrlQueryString(prefix + "permata_bank_transfer" + suffix));
-                            }
-
-            // add `bca_bank_transfer` to the URL query string
-                            if (getBcaBankTransfer() != null) {
-                            joiner.add(getBcaBankTransfer().toUrlQueryString(prefix + "bca_bank_transfer" + suffix));
-                            }
-
-            // add `bni_va_bank_transfer` to the URL query string
-                            if (getBniVaBankTransfer() != null) {
-                            joiner.add(getBniVaBankTransfer().toUrlQueryString(prefix + "bni_va_bank_transfer" + suffix));
-                            }
-
-            // add `bri_va_bank_transfer` to the URL query string
-                            if (getBriVaBankTransfer() != null) {
-                            joiner.add(getBriVaBankTransfer().toUrlQueryString(prefix + "bri_va_bank_transfer" + suffix));
-                            }
-
-            // add `cimb_va_bank_transfer` to the URL query string
-                            if (getCimbVaBankTransfer() != null) {
-                            joiner.add(getCimbVaBankTransfer().toUrlQueryString(prefix + "cimb_va_bank_transfer" + suffix));
-                            }
-
-            // add `danamon_va_bank_transfer` to the URL query string
-                            if (getDanamonVaBankTransfer() != null) {
-                            joiner.add(getDanamonVaBankTransfer().toUrlQueryString(prefix + "danamon_va_bank_transfer" + suffix));
-                            }
-
-            // add `mandiri_va_bank_transfer` to the URL query string
-                            if (getMandiriVaBankTransfer() != null) {
-                            joiner.add(getMandiriVaBankTransfer().toUrlQueryString(prefix + "mandiri_va_bank_transfer" + suffix));
-                            }
-
-            // add `pix` to the URL query string
-                            if (getPix() != null) {
-                            joiner.add(getPix().toUrlQueryString(prefix + "pix" + suffix));
-                            }
-
-            // add `pse` to the URL query string
-                        if (getPse() != null) {
-                        try {
-                        joiner.add(String.format("%spse%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getPse()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-            // add `local_bank_transfer` to the URL query string
-                            if (getLocalBankTransfer() != null) {
-                            joiner.add(getLocalBankTransfer().toUrlQueryString(prefix + "local_bank_transfer" + suffix));
-                            }
-
-        return joiner.toString();
-        }
-
+    // add `ach_bank_transfer` to the URL query string
+    if (getAchBankTransfer() != null) {
+      joiner.add(getAchBankTransfer().toUrlQueryString(prefix + "ach_bank_transfer" + suffix));
     }
+
+    // add `sepa_bank_transfer` to the URL query string
+    if (getSepaBankTransfer() != null) {
+      joiner.add(getSepaBankTransfer().toUrlQueryString(prefix + "sepa_bank_transfer" + suffix));
+    }
+
+    // add `bacs_bank_transfer` to the URL query string
+    if (getBacsBankTransfer() != null) {
+      joiner.add(getBacsBankTransfer().toUrlQueryString(prefix + "bacs_bank_transfer" + suffix));
+    }
+
+    // add `multibanco_bank_transfer` to the URL query string
+    if (getMultibancoBankTransfer() != null) {
+      joiner.add(getMultibancoBankTransfer().toUrlQueryString(prefix + "multibanco_bank_transfer" + suffix));
+    }
+
+    // add `permata_bank_transfer` to the URL query string
+    if (getPermataBankTransfer() != null) {
+      joiner.add(getPermataBankTransfer().toUrlQueryString(prefix + "permata_bank_transfer" + suffix));
+    }
+
+    // add `bca_bank_transfer` to the URL query string
+    if (getBcaBankTransfer() != null) {
+      joiner.add(getBcaBankTransfer().toUrlQueryString(prefix + "bca_bank_transfer" + suffix));
+    }
+
+    // add `bni_va_bank_transfer` to the URL query string
+    if (getBniVaBankTransfer() != null) {
+      joiner.add(getBniVaBankTransfer().toUrlQueryString(prefix + "bni_va_bank_transfer" + suffix));
+    }
+
+    // add `bri_va_bank_transfer` to the URL query string
+    if (getBriVaBankTransfer() != null) {
+      joiner.add(getBriVaBankTransfer().toUrlQueryString(prefix + "bri_va_bank_transfer" + suffix));
+    }
+
+    // add `cimb_va_bank_transfer` to the URL query string
+    if (getCimbVaBankTransfer() != null) {
+      joiner.add(getCimbVaBankTransfer().toUrlQueryString(prefix + "cimb_va_bank_transfer" + suffix));
+    }
+
+    // add `danamon_va_bank_transfer` to the URL query string
+    if (getDanamonVaBankTransfer() != null) {
+      joiner.add(getDanamonVaBankTransfer().toUrlQueryString(prefix + "danamon_va_bank_transfer" + suffix));
+    }
+
+    // add `mandiri_va_bank_transfer` to the URL query string
+    if (getMandiriVaBankTransfer() != null) {
+      joiner.add(getMandiriVaBankTransfer().toUrlQueryString(prefix + "mandiri_va_bank_transfer" + suffix));
+    }
+
+    // add `pix` to the URL query string
+    if (getPix() != null) {
+      joiner.add(getPix().toUrlQueryString(prefix + "pix" + suffix));
+    }
+
+    // add `pse` to the URL query string
+    if (getPse() != null) {
+      try {
+        joiner.add(String.format("%spse%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getPse()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `local_bank_transfer` to the URL query string
+    if (getLocalBankTransfer() != null) {
+      joiner.add(getLocalBankTransfer().toUrlQueryString(prefix + "local_bank_transfer" + suffix));
+    }
+
+    return joiner.toString();
+  }
+
+}
 

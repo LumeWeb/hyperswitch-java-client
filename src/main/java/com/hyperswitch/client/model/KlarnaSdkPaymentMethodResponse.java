@@ -31,145 +31,145 @@ import java.net.URLEncoder;
 import java.util.StringJoiner;
 
 /**
-* KlarnaSdkPaymentMethodResponse
-*/
-    @JsonPropertyOrder({
-        KlarnaSdkPaymentMethodResponse.JSON_PROPERTY_PAYMENT_TYPE
-    })
+ * KlarnaSdkPaymentMethodResponse
+ */
+@JsonPropertyOrder({
+  KlarnaSdkPaymentMethodResponse.JSON_PROPERTY_PAYMENT_TYPE
+})
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class KlarnaSdkPaymentMethodResponse {
-        public static final String JSON_PROPERTY_PAYMENT_TYPE = "payment_type";
-    @javax.annotation.Nullable
-            private JsonNullable<String> paymentType = JsonNullable.<String>undefined();
+  public static final String JSON_PROPERTY_PAYMENT_TYPE = "payment_type";
+  @javax.annotation.Nullable
+  private JsonNullable<String> paymentType = JsonNullable.<String>undefined();
 
-public KlarnaSdkPaymentMethodResponse() {
-}
+  public KlarnaSdkPaymentMethodResponse() {
+  }
 
-        public KlarnaSdkPaymentMethodResponse paymentType(@javax.annotation.Nullable String paymentType) {
-        this.paymentType = JsonNullable.<String>of(paymentType);
-        
-        return this;
-        }
-
-    /**
-        * Get paymentType
-    * @return paymentType
-    */
-    @javax.annotation.Nullable
-        @JsonIgnore
+  public KlarnaSdkPaymentMethodResponse paymentType(@javax.annotation.Nullable String paymentType) {
+    this.paymentType = JsonNullable.<String>of(paymentType);
     
-    public String getPaymentType() {
-                return paymentType.orElse(null);
-    }
+    return this;
+  }
 
-          @JsonProperty(JSON_PROPERTY_PAYMENT_TYPE)
+  /**
+   * Get paymentType
+   * @return paymentType
+   */
+  @javax.annotation.Nullable
+  @JsonIgnore
+
+  public String getPaymentType() {
+        return paymentType.orElse(null);
+  }
+
+  @JsonProperty(JSON_PROPERTY_PAYMENT_TYPE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-        public JsonNullable<String> getPaymentType_JsonNullable() {
-        return paymentType;
-        }
-    
-        @JsonProperty(JSON_PROPERTY_PAYMENT_TYPE)
-        public void setPaymentType_JsonNullable(JsonNullable<String> paymentType) {
-        this.paymentType = paymentType;
-        }
+  public JsonNullable<String> getPaymentType_JsonNullable() {
+    return paymentType;
+  }
+  
+  @JsonProperty(JSON_PROPERTY_PAYMENT_TYPE)
+  public void setPaymentType_JsonNullable(JsonNullable<String> paymentType) {
+    this.paymentType = paymentType;
+  }
 
-          public void setPaymentType(@javax.annotation.Nullable String paymentType) {
-            this.paymentType = JsonNullable.<String>of(paymentType);
-        }
+  public void setPaymentType(@javax.annotation.Nullable String paymentType) {
+    this.paymentType = JsonNullable.<String>of(paymentType);
+  }
 
-@Override
-public boolean equals(Object o) {
+  @Override
+  public boolean equals(Object o) {
     if (this == o) {
-    return true;
+      return true;
     }
     if (o == null || getClass() != o.getClass()) {
-    return false;
+      return false;
     }
-        KlarnaSdkPaymentMethodResponse klarnaSdkPaymentMethodResponse = (KlarnaSdkPaymentMethodResponse) o;
-        return equalsNullable(this.paymentType, klarnaSdkPaymentMethodResponse.paymentType);
-}
+    KlarnaSdkPaymentMethodResponse klarnaSdkPaymentMethodResponse = (KlarnaSdkPaymentMethodResponse) o;
+    return equalsNullable(this.paymentType, klarnaSdkPaymentMethodResponse.paymentType);
+  }
 
-    private static <T> boolean equalsNullable(JsonNullable<T> a, JsonNullable<T> b) {
-        return a == b || (a != null && b != null && a.isPresent() && b.isPresent() && Objects.deepEquals(a.get(), b.get()));
-        }
+  private static <T> boolean equalsNullable(JsonNullable<T> a, JsonNullable<T> b) {
+    return a == b || (a != null && b != null && a.isPresent() && b.isPresent() && Objects.deepEquals(a.get(), b.get()));
+  }
 
-    @Override
-    public int hashCode() {
-        return Objects.hash(hashCodeNullable(paymentType));
+  @Override
+  public int hashCode() {
+    return Objects.hash(hashCodeNullable(paymentType));
+  }
+
+  private static <T> int hashCodeNullable(JsonNullable<T> a) {
+    if (a == null) {
+      return 1;
     }
+    return a.isPresent() ? Arrays.deepHashCode(new Object[]{a.get()}) : 31;
+  }
 
-        private static <T> int hashCodeNullable(JsonNullable<T> a) {
-        if (a == null) {
-        return 1;
-        }
-        return a.isPresent() ? Arrays.deepHashCode(new Object[]{a.get()}) : 31;
-        }
-
-    @Override
-    public String toString() {
+  @Override
+  public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class KlarnaSdkPaymentMethodResponse {\n");
-        sb.append("    paymentType: ").append(toIndentedString(paymentType)).append("\n");
+    sb.append("    paymentType: ").append(toIndentedString(paymentType)).append("\n");
     sb.append("}");
     return sb.toString();
-    }
+  }
 
-    /**
-    * Convert the given object to string with each line indented by 4 spaces
-    * (except the first line).
-    */
-    private String toIndentedString(Object o) {
+  /**
+   * Convert the given object to string with each line indented by 4 spaces
+   * (except the first line).
+   */
+  private String toIndentedString(Object o) {
     if (o == null) {
-    return "null";
+      return "null";
     }
     return o.toString().replace("\n", "\n    ");
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @return URL query string
+   */
+  public String toUrlQueryString() {
+    return toUrlQueryString(null);
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @param prefix prefix of the query string
+   * @return URL query string
+   */
+  public String toUrlQueryString(String prefix) {
+    String suffix = "";
+    String containerSuffix = "";
+    String containerPrefix = "";
+    if (prefix == null) {
+      // style=form, explode=true, e.g. /pet?name=cat&type=manx
+      prefix = "";
+    } else {
+      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+      prefix = prefix + "[";
+      suffix = "]";
+      containerSuffix = "]";
+      containerPrefix = "[";
     }
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @return URL query string
-        */
-        public String toUrlQueryString() {
-        return toUrlQueryString(null);
-        }
+    StringJoiner joiner = new StringJoiner("&");
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @param prefix prefix of the query string
-        * @return URL query string
-        */
-        public String toUrlQueryString(String prefix) {
-        String suffix = "";
-        String containerSuffix = "";
-        String containerPrefix = "";
-        if (prefix == null) {
-        // style=form, explode=true, e.g. /pet?name=cat&type=manx
-        prefix = "";
-        } else {
-        // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
-        prefix = prefix + "[";
-        suffix = "]";
-        containerSuffix = "]";
-        containerPrefix = "[";
-        }
-
-        StringJoiner joiner = new StringJoiner("&");
-
-            // add `payment_type` to the URL query string
-                        if (getPaymentType() != null) {
-                        try {
-                        joiner.add(String.format("%spayment_type%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getPaymentType()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-        return joiner.toString();
-        }
-
+    // add `payment_type` to the URL query string
+    if (getPaymentType() != null) {
+      try {
+        joiner.add(String.format("%spayment_type%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getPaymentType()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
     }
+
+    return joiner.toString();
+  }
+
+}
 

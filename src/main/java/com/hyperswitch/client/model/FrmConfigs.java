@@ -32,176 +32,176 @@ import java.net.URLEncoder;
 import java.util.StringJoiner;
 
 /**
-* Details of FrmConfigs are mentioned here... it should be passed in payment connector create api call, and stored in merchant_connector_table
-*/
-    @JsonPropertyOrder({
-        FrmConfigs.JSON_PROPERTY_GATEWAY,
-        FrmConfigs.JSON_PROPERTY_PAYMENT_METHODS
-    })
+ * Details of FrmConfigs are mentioned here... it should be passed in payment connector create api call, and stored in merchant_connector_table
+ */
+@JsonPropertyOrder({
+  FrmConfigs.JSON_PROPERTY_GATEWAY,
+  FrmConfigs.JSON_PROPERTY_PAYMENT_METHODS
+})
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class FrmConfigs {
-        public static final String JSON_PROPERTY_GATEWAY = "gateway";
-    @javax.annotation.Nonnull
-            private ConnectorType gateway;
+  public static final String JSON_PROPERTY_GATEWAY = "gateway";
+  @javax.annotation.Nonnull
+  private ConnectorType gateway;
 
-        public static final String JSON_PROPERTY_PAYMENT_METHODS = "payment_methods";
-    @javax.annotation.Nonnull
-            private List<FrmPaymentMethod> paymentMethods = new ArrayList<>();
+  public static final String JSON_PROPERTY_PAYMENT_METHODS = "payment_methods";
+  @javax.annotation.Nonnull
+  private List<FrmPaymentMethod> paymentMethods = new ArrayList<>();
 
-public FrmConfigs() {
-}
+  public FrmConfigs() {
+  }
 
-        public FrmConfigs gateway(@javax.annotation.Nonnull ConnectorType gateway) {
-        
-        this.gateway = gateway;
-        return this;
-        }
+  public FrmConfigs gateway(@javax.annotation.Nonnull ConnectorType gateway) {
+    
+    this.gateway = gateway;
+    return this;
+  }
 
-    /**
-        * Get gateway
-    * @return gateway
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_GATEWAY)
+  /**
+   * Get gateway
+   * @return gateway
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_GATEWAY)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public ConnectorType getGateway() {
-        return gateway;
-    }
+  public ConnectorType getGateway() {
+    return gateway;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_GATEWAY)
+  @JsonProperty(JSON_PROPERTY_GATEWAY)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setGateway(@javax.annotation.Nonnull ConnectorType gateway) {
-            this.gateway = gateway;
-        }
+    this.gateway = gateway;
+  }
 
-        public FrmConfigs paymentMethods(@javax.annotation.Nonnull List<FrmPaymentMethod> paymentMethods) {
-        
-        this.paymentMethods = paymentMethods;
-        return this;
-        }
+  public FrmConfigs paymentMethods(@javax.annotation.Nonnull List<FrmPaymentMethod> paymentMethods) {
+    
+    this.paymentMethods = paymentMethods;
+    return this;
+  }
 
-            public FrmConfigs addPaymentMethodsItem(FrmPaymentMethod paymentMethodsItem) {
-                if (this.paymentMethods == null) {
-                this.paymentMethods = new ArrayList<>();
-                }
-                this.paymentMethods.add(paymentMethodsItem);
-                return this;
-            }
+  public FrmConfigs addPaymentMethodsItem(FrmPaymentMethod paymentMethodsItem) {
+    if (this.paymentMethods == null) {
+      this.paymentMethods = new ArrayList<>();
+    }
+    this.paymentMethods.add(paymentMethodsItem);
+    return this;
+  }
 
-    /**
-        * payment methods that can be used in the payment
-    * @return paymentMethods
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_PAYMENT_METHODS)
+  /**
+   * payment methods that can be used in the payment
+   * @return paymentMethods
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_PAYMENT_METHODS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public List<FrmPaymentMethod> getPaymentMethods() {
-        return paymentMethods;
-    }
+  public List<FrmPaymentMethod> getPaymentMethods() {
+    return paymentMethods;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_PAYMENT_METHODS)
+  @JsonProperty(JSON_PROPERTY_PAYMENT_METHODS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setPaymentMethods(@javax.annotation.Nonnull List<FrmPaymentMethod> paymentMethods) {
-            this.paymentMethods = paymentMethods;
-        }
+    this.paymentMethods = paymentMethods;
+  }
 
-@Override
-public boolean equals(Object o) {
+  @Override
+  public boolean equals(Object o) {
     if (this == o) {
-    return true;
+      return true;
     }
     if (o == null || getClass() != o.getClass()) {
-    return false;
+      return false;
     }
-        FrmConfigs frmConfigs = (FrmConfigs) o;
-        return Objects.equals(this.gateway, frmConfigs.gateway) &&
+    FrmConfigs frmConfigs = (FrmConfigs) o;
+    return Objects.equals(this.gateway, frmConfigs.gateway) &&
         Objects.equals(this.paymentMethods, frmConfigs.paymentMethods);
-}
+  }
 
-    @Override
-    public int hashCode() {
-        return Objects.hash(gateway, paymentMethods);
-    }
+  @Override
+  public int hashCode() {
+    return Objects.hash(gateway, paymentMethods);
+  }
 
-    @Override
-    public String toString() {
+  @Override
+  public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class FrmConfigs {\n");
-        sb.append("    gateway: ").append(toIndentedString(gateway)).append("\n");
-        sb.append("    paymentMethods: ").append(toIndentedString(paymentMethods)).append("\n");
+    sb.append("    gateway: ").append(toIndentedString(gateway)).append("\n");
+    sb.append("    paymentMethods: ").append(toIndentedString(paymentMethods)).append("\n");
     sb.append("}");
     return sb.toString();
-    }
+  }
 
-    /**
-    * Convert the given object to string with each line indented by 4 spaces
-    * (except the first line).
-    */
-    private String toIndentedString(Object o) {
+  /**
+   * Convert the given object to string with each line indented by 4 spaces
+   * (except the first line).
+   */
+  private String toIndentedString(Object o) {
     if (o == null) {
-    return "null";
+      return "null";
     }
     return o.toString().replace("\n", "\n    ");
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @return URL query string
+   */
+  public String toUrlQueryString() {
+    return toUrlQueryString(null);
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @param prefix prefix of the query string
+   * @return URL query string
+   */
+  public String toUrlQueryString(String prefix) {
+    String suffix = "";
+    String containerSuffix = "";
+    String containerPrefix = "";
+    if (prefix == null) {
+      // style=form, explode=true, e.g. /pet?name=cat&type=manx
+      prefix = "";
+    } else {
+      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+      prefix = prefix + "[";
+      suffix = "]";
+      containerSuffix = "]";
+      containerPrefix = "[";
     }
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @return URL query string
-        */
-        public String toUrlQueryString() {
-        return toUrlQueryString(null);
-        }
+    StringJoiner joiner = new StringJoiner("&");
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @param prefix prefix of the query string
-        * @return URL query string
-        */
-        public String toUrlQueryString(String prefix) {
-        String suffix = "";
-        String containerSuffix = "";
-        String containerPrefix = "";
-        if (prefix == null) {
-        // style=form, explode=true, e.g. /pet?name=cat&type=manx
-        prefix = "";
-        } else {
-        // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
-        prefix = prefix + "[";
-        suffix = "]";
-        containerSuffix = "]";
-        containerPrefix = "[";
-        }
-
-        StringJoiner joiner = new StringJoiner("&");
-
-            // add `gateway` to the URL query string
-                            if (getGateway() != null) {
-                            try {
-                            joiner.add(String.format("%sgateway%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getGateway()), "UTF-8").replaceAll("\\+", "%20")));
-                            } catch (UnsupportedEncodingException e) {
-                            // Should never happen, UTF-8 is always supported
-                            throw new RuntimeException(e);
-                            }
-                            }
-
-            // add `payment_methods` to the URL query string
-                            if (getPaymentMethods() != null) {
-                            for (int i = 0; i < getPaymentMethods().size(); i++) {
-                            if (getPaymentMethods().get(i) != null) {
-                            joiner.add(getPaymentMethods().get(i).toUrlQueryString(String.format("%spayment_methods%s%s", prefix, suffix,
-                            "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix))));
-                            }
-                            }
-                            }
-
-        return joiner.toString();
-        }
-
+    // add `gateway` to the URL query string
+    if (getGateway() != null) {
+      try {
+        joiner.add(String.format("%sgateway%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getGateway()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
     }
+
+    // add `payment_methods` to the URL query string
+    if (getPaymentMethods() != null) {
+      for (int i = 0; i < getPaymentMethods().size(); i++) {
+        if (getPaymentMethods().get(i) != null) {
+          joiner.add(getPaymentMethods().get(i).toUrlQueryString(String.format("%spayment_methods%s%s", prefix, suffix,
+              "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix))));
+        }
+      }
+    }
+
+    return joiner.toString();
+  }
+
+}
 

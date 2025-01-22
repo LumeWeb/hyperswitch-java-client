@@ -29,169 +29,169 @@ import java.net.URLEncoder;
 import java.util.StringJoiner;
 
 /**
-* BankRedirectDataOneOf11OpenBankingUk
-*/
-    @JsonPropertyOrder({
-        BankRedirectDataOneOf11OpenBankingUk.JSON_PROPERTY_ISSUER,
-        BankRedirectDataOneOf11OpenBankingUk.JSON_PROPERTY_COUNTRY
-    })
-            @JsonTypeName("BankRedirectData_oneOf_11_open_banking_uk")
+ * BankRedirectDataOneOf11OpenBankingUk
+ */
+@JsonPropertyOrder({
+  BankRedirectDataOneOf11OpenBankingUk.JSON_PROPERTY_ISSUER,
+  BankRedirectDataOneOf11OpenBankingUk.JSON_PROPERTY_COUNTRY
+})
+@JsonTypeName("BankRedirectData_oneOf_11_open_banking_uk")
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class BankRedirectDataOneOf11OpenBankingUk {
-        public static final String JSON_PROPERTY_ISSUER = "issuer";
-    @javax.annotation.Nonnull
-            private BankNames issuer;
+  public static final String JSON_PROPERTY_ISSUER = "issuer";
+  @javax.annotation.Nonnull
+  private BankNames issuer;
 
-        public static final String JSON_PROPERTY_COUNTRY = "country";
-    @javax.annotation.Nonnull
-            private CountryAlpha2 country;
+  public static final String JSON_PROPERTY_COUNTRY = "country";
+  @javax.annotation.Nonnull
+  private CountryAlpha2 country;
 
-public BankRedirectDataOneOf11OpenBankingUk() {
-}
+  public BankRedirectDataOneOf11OpenBankingUk() {
+  }
 
-        public BankRedirectDataOneOf11OpenBankingUk issuer(@javax.annotation.Nonnull BankNames issuer) {
-        
-        this.issuer = issuer;
-        return this;
-        }
+  public BankRedirectDataOneOf11OpenBankingUk issuer(@javax.annotation.Nonnull BankNames issuer) {
+    
+    this.issuer = issuer;
+    return this;
+  }
 
-    /**
-        * Get issuer
-    * @return issuer
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_ISSUER)
+  /**
+   * Get issuer
+   * @return issuer
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_ISSUER)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public BankNames getIssuer() {
-        return issuer;
-    }
+  public BankNames getIssuer() {
+    return issuer;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_ISSUER)
+  @JsonProperty(JSON_PROPERTY_ISSUER)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setIssuer(@javax.annotation.Nonnull BankNames issuer) {
-            this.issuer = issuer;
-        }
+    this.issuer = issuer;
+  }
 
-        public BankRedirectDataOneOf11OpenBankingUk country(@javax.annotation.Nonnull CountryAlpha2 country) {
-        
-        this.country = country;
-        return this;
-        }
+  public BankRedirectDataOneOf11OpenBankingUk country(@javax.annotation.Nonnull CountryAlpha2 country) {
+    
+    this.country = country;
+    return this;
+  }
 
-    /**
-        * Get country
-    * @return country
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_COUNTRY)
+  /**
+   * Get country
+   * @return country
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_COUNTRY)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public CountryAlpha2 getCountry() {
-        return country;
-    }
+  public CountryAlpha2 getCountry() {
+    return country;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_COUNTRY)
+  @JsonProperty(JSON_PROPERTY_COUNTRY)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setCountry(@javax.annotation.Nonnull CountryAlpha2 country) {
-            this.country = country;
-        }
+    this.country = country;
+  }
 
-@Override
-public boolean equals(Object o) {
+  @Override
+  public boolean equals(Object o) {
     if (this == o) {
-    return true;
+      return true;
     }
     if (o == null || getClass() != o.getClass()) {
-    return false;
+      return false;
     }
-        BankRedirectDataOneOf11OpenBankingUk bankRedirectDataOneOf11OpenBankingUk = (BankRedirectDataOneOf11OpenBankingUk) o;
-        return Objects.equals(this.issuer, bankRedirectDataOneOf11OpenBankingUk.issuer) &&
+    BankRedirectDataOneOf11OpenBankingUk bankRedirectDataOneOf11OpenBankingUk = (BankRedirectDataOneOf11OpenBankingUk) o;
+    return Objects.equals(this.issuer, bankRedirectDataOneOf11OpenBankingUk.issuer) &&
         Objects.equals(this.country, bankRedirectDataOneOf11OpenBankingUk.country);
-}
+  }
 
-    @Override
-    public int hashCode() {
-        return Objects.hash(issuer, country);
-    }
+  @Override
+  public int hashCode() {
+    return Objects.hash(issuer, country);
+  }
 
-    @Override
-    public String toString() {
+  @Override
+  public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class BankRedirectDataOneOf11OpenBankingUk {\n");
-        sb.append("    issuer: ").append(toIndentedString(issuer)).append("\n");
-        sb.append("    country: ").append(toIndentedString(country)).append("\n");
+    sb.append("    issuer: ").append(toIndentedString(issuer)).append("\n");
+    sb.append("    country: ").append(toIndentedString(country)).append("\n");
     sb.append("}");
     return sb.toString();
-    }
+  }
 
-    /**
-    * Convert the given object to string with each line indented by 4 spaces
-    * (except the first line).
-    */
-    private String toIndentedString(Object o) {
+  /**
+   * Convert the given object to string with each line indented by 4 spaces
+   * (except the first line).
+   */
+  private String toIndentedString(Object o) {
     if (o == null) {
-    return "null";
+      return "null";
     }
     return o.toString().replace("\n", "\n    ");
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @return URL query string
+   */
+  public String toUrlQueryString() {
+    return toUrlQueryString(null);
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @param prefix prefix of the query string
+   * @return URL query string
+   */
+  public String toUrlQueryString(String prefix) {
+    String suffix = "";
+    String containerSuffix = "";
+    String containerPrefix = "";
+    if (prefix == null) {
+      // style=form, explode=true, e.g. /pet?name=cat&type=manx
+      prefix = "";
+    } else {
+      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+      prefix = prefix + "[";
+      suffix = "]";
+      containerSuffix = "]";
+      containerPrefix = "[";
     }
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @return URL query string
-        */
-        public String toUrlQueryString() {
-        return toUrlQueryString(null);
-        }
+    StringJoiner joiner = new StringJoiner("&");
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @param prefix prefix of the query string
-        * @return URL query string
-        */
-        public String toUrlQueryString(String prefix) {
-        String suffix = "";
-        String containerSuffix = "";
-        String containerPrefix = "";
-        if (prefix == null) {
-        // style=form, explode=true, e.g. /pet?name=cat&type=manx
-        prefix = "";
-        } else {
-        // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
-        prefix = prefix + "[";
-        suffix = "]";
-        containerSuffix = "]";
-        containerPrefix = "[";
-        }
-
-        StringJoiner joiner = new StringJoiner("&");
-
-            // add `issuer` to the URL query string
-                            if (getIssuer() != null) {
-                            try {
-                            joiner.add(String.format("%sissuer%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getIssuer()), "UTF-8").replaceAll("\\+", "%20")));
-                            } catch (UnsupportedEncodingException e) {
-                            // Should never happen, UTF-8 is always supported
-                            throw new RuntimeException(e);
-                            }
-                            }
-
-            // add `country` to the URL query string
-                            if (getCountry() != null) {
-                            try {
-                            joiner.add(String.format("%scountry%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCountry()), "UTF-8").replaceAll("\\+", "%20")));
-                            } catch (UnsupportedEncodingException e) {
-                            // Should never happen, UTF-8 is always supported
-                            throw new RuntimeException(e);
-                            }
-                            }
-
-        return joiner.toString();
-        }
-
+    // add `issuer` to the URL query string
+    if (getIssuer() != null) {
+      try {
+        joiner.add(String.format("%sissuer%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getIssuer()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
     }
+
+    // add `country` to the URL query string
+    if (getCountry() != null) {
+      try {
+        joiner.add(String.format("%scountry%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCountry()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    return joiner.toString();
+  }
+
+}
 

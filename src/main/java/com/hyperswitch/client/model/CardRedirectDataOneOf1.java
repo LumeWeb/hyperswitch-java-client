@@ -27,127 +27,127 @@ import java.net.URLEncoder;
 import java.util.StringJoiner;
 
 /**
-* CardRedirectDataOneOf1
-*/
-    @JsonPropertyOrder({
-        CardRedirectDataOneOf1.JSON_PROPERTY_BENEFIT
-    })
-            @JsonTypeName("CardRedirectData_oneOf_1")
+ * CardRedirectDataOneOf1
+ */
+@JsonPropertyOrder({
+  CardRedirectDataOneOf1.JSON_PROPERTY_BENEFIT
+})
+@JsonTypeName("CardRedirectData_oneOf_1")
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class CardRedirectDataOneOf1 {
-        public static final String JSON_PROPERTY_BENEFIT = "benefit";
-    @javax.annotation.Nonnull
-            private Object benefit;
+  public static final String JSON_PROPERTY_BENEFIT = "benefit";
+  @javax.annotation.Nonnull
+  private Object benefit;
 
-public CardRedirectDataOneOf1() {
-}
+  public CardRedirectDataOneOf1() {
+  }
 
-        public CardRedirectDataOneOf1 benefit(@javax.annotation.Nonnull Object benefit) {
-        
-        this.benefit = benefit;
-        return this;
-        }
+  public CardRedirectDataOneOf1 benefit(@javax.annotation.Nonnull Object benefit) {
+    
+    this.benefit = benefit;
+    return this;
+  }
 
-    /**
-        * Get benefit
-    * @return benefit
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_BENEFIT)
+  /**
+   * Get benefit
+   * @return benefit
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_BENEFIT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public Object getBenefit() {
-        return benefit;
-    }
+  public Object getBenefit() {
+    return benefit;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_BENEFIT)
+  @JsonProperty(JSON_PROPERTY_BENEFIT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setBenefit(@javax.annotation.Nonnull Object benefit) {
-            this.benefit = benefit;
-        }
+    this.benefit = benefit;
+  }
 
-@Override
-public boolean equals(Object o) {
+  @Override
+  public boolean equals(Object o) {
     if (this == o) {
-    return true;
+      return true;
     }
     if (o == null || getClass() != o.getClass()) {
-    return false;
+      return false;
     }
-        CardRedirectDataOneOf1 cardRedirectDataOneOf1 = (CardRedirectDataOneOf1) o;
-        return Objects.equals(this.benefit, cardRedirectDataOneOf1.benefit);
-}
+    CardRedirectDataOneOf1 cardRedirectDataOneOf1 = (CardRedirectDataOneOf1) o;
+    return Objects.equals(this.benefit, cardRedirectDataOneOf1.benefit);
+  }
 
-    @Override
-    public int hashCode() {
-        return Objects.hash(benefit);
-    }
+  @Override
+  public int hashCode() {
+    return Objects.hash(benefit);
+  }
 
-    @Override
-    public String toString() {
+  @Override
+  public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class CardRedirectDataOneOf1 {\n");
-        sb.append("    benefit: ").append(toIndentedString(benefit)).append("\n");
+    sb.append("    benefit: ").append(toIndentedString(benefit)).append("\n");
     sb.append("}");
     return sb.toString();
-    }
+  }
 
-    /**
-    * Convert the given object to string with each line indented by 4 spaces
-    * (except the first line).
-    */
-    private String toIndentedString(Object o) {
+  /**
+   * Convert the given object to string with each line indented by 4 spaces
+   * (except the first line).
+   */
+  private String toIndentedString(Object o) {
     if (o == null) {
-    return "null";
+      return "null";
     }
     return o.toString().replace("\n", "\n    ");
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @return URL query string
+   */
+  public String toUrlQueryString() {
+    return toUrlQueryString(null);
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @param prefix prefix of the query string
+   * @return URL query string
+   */
+  public String toUrlQueryString(String prefix) {
+    String suffix = "";
+    String containerSuffix = "";
+    String containerPrefix = "";
+    if (prefix == null) {
+      // style=form, explode=true, e.g. /pet?name=cat&type=manx
+      prefix = "";
+    } else {
+      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+      prefix = prefix + "[";
+      suffix = "]";
+      containerSuffix = "]";
+      containerPrefix = "[";
     }
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @return URL query string
-        */
-        public String toUrlQueryString() {
-        return toUrlQueryString(null);
-        }
+    StringJoiner joiner = new StringJoiner("&");
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @param prefix prefix of the query string
-        * @return URL query string
-        */
-        public String toUrlQueryString(String prefix) {
-        String suffix = "";
-        String containerSuffix = "";
-        String containerPrefix = "";
-        if (prefix == null) {
-        // style=form, explode=true, e.g. /pet?name=cat&type=manx
-        prefix = "";
-        } else {
-        // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
-        prefix = prefix + "[";
-        suffix = "]";
-        containerSuffix = "]";
-        containerPrefix = "[";
-        }
-
-        StringJoiner joiner = new StringJoiner("&");
-
-            // add `benefit` to the URL query string
-                        if (getBenefit() != null) {
-                        try {
-                        joiner.add(String.format("%sbenefit%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getBenefit()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-        return joiner.toString();
-        }
-
+    // add `benefit` to the URL query string
+    if (getBenefit() != null) {
+      try {
+        joiner.add(String.format("%sbenefit%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getBenefit()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
     }
+
+    return joiner.toString();
+  }
+
+}
 

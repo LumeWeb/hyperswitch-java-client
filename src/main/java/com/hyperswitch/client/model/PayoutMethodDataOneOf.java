@@ -28,122 +28,122 @@ import java.net.URLEncoder;
 import java.util.StringJoiner;
 
 /**
-* PayoutMethodDataOneOf
-*/
-    @JsonPropertyOrder({
-        PayoutMethodDataOneOf.JSON_PROPERTY_CARD
-    })
-            @JsonTypeName("PayoutMethodData_oneOf")
+ * PayoutMethodDataOneOf
+ */
+@JsonPropertyOrder({
+  PayoutMethodDataOneOf.JSON_PROPERTY_CARD
+})
+@JsonTypeName("PayoutMethodData_oneOf")
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class PayoutMethodDataOneOf {
-        public static final String JSON_PROPERTY_CARD = "card";
-    @javax.annotation.Nonnull
-            private CardPayout card;
+  public static final String JSON_PROPERTY_CARD = "card";
+  @javax.annotation.Nonnull
+  private CardPayout card;
 
-public PayoutMethodDataOneOf() {
-}
+  public PayoutMethodDataOneOf() {
+  }
 
-        public PayoutMethodDataOneOf card(@javax.annotation.Nonnull CardPayout card) {
-        
-        this.card = card;
-        return this;
-        }
+  public PayoutMethodDataOneOf card(@javax.annotation.Nonnull CardPayout card) {
+    
+    this.card = card;
+    return this;
+  }
 
-    /**
-        * Get card
-    * @return card
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_CARD)
+  /**
+   * Get card
+   * @return card
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_CARD)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public CardPayout getCard() {
-        return card;
-    }
+  public CardPayout getCard() {
+    return card;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_CARD)
+  @JsonProperty(JSON_PROPERTY_CARD)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setCard(@javax.annotation.Nonnull CardPayout card) {
-            this.card = card;
-        }
+    this.card = card;
+  }
 
-@Override
-public boolean equals(Object o) {
+  @Override
+  public boolean equals(Object o) {
     if (this == o) {
-    return true;
+      return true;
     }
     if (o == null || getClass() != o.getClass()) {
-    return false;
+      return false;
     }
-        PayoutMethodDataOneOf payoutMethodDataOneOf = (PayoutMethodDataOneOf) o;
-        return Objects.equals(this.card, payoutMethodDataOneOf.card);
-}
+    PayoutMethodDataOneOf payoutMethodDataOneOf = (PayoutMethodDataOneOf) o;
+    return Objects.equals(this.card, payoutMethodDataOneOf.card);
+  }
 
-    @Override
-    public int hashCode() {
-        return Objects.hash(card);
-    }
+  @Override
+  public int hashCode() {
+    return Objects.hash(card);
+  }
 
-    @Override
-    public String toString() {
+  @Override
+  public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class PayoutMethodDataOneOf {\n");
-        sb.append("    card: ").append(toIndentedString(card)).append("\n");
+    sb.append("    card: ").append(toIndentedString(card)).append("\n");
     sb.append("}");
     return sb.toString();
-    }
+  }
 
-    /**
-    * Convert the given object to string with each line indented by 4 spaces
-    * (except the first line).
-    */
-    private String toIndentedString(Object o) {
+  /**
+   * Convert the given object to string with each line indented by 4 spaces
+   * (except the first line).
+   */
+  private String toIndentedString(Object o) {
     if (o == null) {
-    return "null";
+      return "null";
     }
     return o.toString().replace("\n", "\n    ");
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @return URL query string
+   */
+  public String toUrlQueryString() {
+    return toUrlQueryString(null);
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @param prefix prefix of the query string
+   * @return URL query string
+   */
+  public String toUrlQueryString(String prefix) {
+    String suffix = "";
+    String containerSuffix = "";
+    String containerPrefix = "";
+    if (prefix == null) {
+      // style=form, explode=true, e.g. /pet?name=cat&type=manx
+      prefix = "";
+    } else {
+      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+      prefix = prefix + "[";
+      suffix = "]";
+      containerSuffix = "]";
+      containerPrefix = "[";
     }
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @return URL query string
-        */
-        public String toUrlQueryString() {
-        return toUrlQueryString(null);
-        }
+    StringJoiner joiner = new StringJoiner("&");
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @param prefix prefix of the query string
-        * @return URL query string
-        */
-        public String toUrlQueryString(String prefix) {
-        String suffix = "";
-        String containerSuffix = "";
-        String containerPrefix = "";
-        if (prefix == null) {
-        // style=form, explode=true, e.g. /pet?name=cat&type=manx
-        prefix = "";
-        } else {
-        // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
-        prefix = prefix + "[";
-        suffix = "]";
-        containerSuffix = "]";
-        containerPrefix = "[";
-        }
-
-        StringJoiner joiner = new StringJoiner("&");
-
-            // add `card` to the URL query string
-                            if (getCard() != null) {
-                            joiner.add(getCard().toUrlQueryString(prefix + "card" + suffix));
-                            }
-
-        return joiner.toString();
-        }
-
+    // add `card` to the URL query string
+    if (getCard() != null) {
+      joiner.add(getCard().toUrlQueryString(prefix + "card" + suffix));
     }
+
+    return joiner.toString();
+  }
+
+}
 

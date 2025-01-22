@@ -35,232 +35,232 @@ import java.net.URLEncoder;
 import java.util.StringJoiner;
 
 /**
-* BankDebitData
-*/
-    @JsonPropertyOrder({
-        BankDebitData.JSON_PROPERTY_ACH_BANK_DEBIT,
-        BankDebitData.JSON_PROPERTY_SEPA_BANK_DEBIT,
-        BankDebitData.JSON_PROPERTY_BECS_BANK_DEBIT,
-        BankDebitData.JSON_PROPERTY_BACS_BANK_DEBIT
-    })
+ * BankDebitData
+ */
+@JsonPropertyOrder({
+  BankDebitData.JSON_PROPERTY_ACH_BANK_DEBIT,
+  BankDebitData.JSON_PROPERTY_SEPA_BANK_DEBIT,
+  BankDebitData.JSON_PROPERTY_BECS_BANK_DEBIT,
+  BankDebitData.JSON_PROPERTY_BACS_BANK_DEBIT
+})
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class BankDebitData {
-        public static final String JSON_PROPERTY_ACH_BANK_DEBIT = "ach_bank_debit";
-    @javax.annotation.Nonnull
-            private BankDebitDataOneOfAchBankDebit achBankDebit;
+  public static final String JSON_PROPERTY_ACH_BANK_DEBIT = "ach_bank_debit";
+  @javax.annotation.Nonnull
+  private BankDebitDataOneOfAchBankDebit achBankDebit;
 
-        public static final String JSON_PROPERTY_SEPA_BANK_DEBIT = "sepa_bank_debit";
-    @javax.annotation.Nonnull
-            private BankDebitDataOneOf1SepaBankDebit sepaBankDebit;
+  public static final String JSON_PROPERTY_SEPA_BANK_DEBIT = "sepa_bank_debit";
+  @javax.annotation.Nonnull
+  private BankDebitDataOneOf1SepaBankDebit sepaBankDebit;
 
-        public static final String JSON_PROPERTY_BECS_BANK_DEBIT = "becs_bank_debit";
-    @javax.annotation.Nonnull
-            private BankDebitDataOneOf2BecsBankDebit becsBankDebit;
+  public static final String JSON_PROPERTY_BECS_BANK_DEBIT = "becs_bank_debit";
+  @javax.annotation.Nonnull
+  private BankDebitDataOneOf2BecsBankDebit becsBankDebit;
 
-        public static final String JSON_PROPERTY_BACS_BANK_DEBIT = "bacs_bank_debit";
-    @javax.annotation.Nonnull
-            private BankDebitDataOneOf3BacsBankDebit bacsBankDebit;
+  public static final String JSON_PROPERTY_BACS_BANK_DEBIT = "bacs_bank_debit";
+  @javax.annotation.Nonnull
+  private BankDebitDataOneOf3BacsBankDebit bacsBankDebit;
 
-public BankDebitData() {
-}
+  public BankDebitData() {
+  }
 
-        public BankDebitData achBankDebit(@javax.annotation.Nonnull BankDebitDataOneOfAchBankDebit achBankDebit) {
-        
-        this.achBankDebit = achBankDebit;
-        return this;
-        }
+  public BankDebitData achBankDebit(@javax.annotation.Nonnull BankDebitDataOneOfAchBankDebit achBankDebit) {
+    
+    this.achBankDebit = achBankDebit;
+    return this;
+  }
 
-    /**
-        * Get achBankDebit
-    * @return achBankDebit
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_ACH_BANK_DEBIT)
+  /**
+   * Get achBankDebit
+   * @return achBankDebit
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_ACH_BANK_DEBIT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public BankDebitDataOneOfAchBankDebit getAchBankDebit() {
-        return achBankDebit;
-    }
+  public BankDebitDataOneOfAchBankDebit getAchBankDebit() {
+    return achBankDebit;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_ACH_BANK_DEBIT)
+  @JsonProperty(JSON_PROPERTY_ACH_BANK_DEBIT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setAchBankDebit(@javax.annotation.Nonnull BankDebitDataOneOfAchBankDebit achBankDebit) {
-            this.achBankDebit = achBankDebit;
-        }
+    this.achBankDebit = achBankDebit;
+  }
 
-        public BankDebitData sepaBankDebit(@javax.annotation.Nonnull BankDebitDataOneOf1SepaBankDebit sepaBankDebit) {
-        
-        this.sepaBankDebit = sepaBankDebit;
-        return this;
-        }
+  public BankDebitData sepaBankDebit(@javax.annotation.Nonnull BankDebitDataOneOf1SepaBankDebit sepaBankDebit) {
+    
+    this.sepaBankDebit = sepaBankDebit;
+    return this;
+  }
 
-    /**
-        * Get sepaBankDebit
-    * @return sepaBankDebit
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_SEPA_BANK_DEBIT)
+  /**
+   * Get sepaBankDebit
+   * @return sepaBankDebit
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_SEPA_BANK_DEBIT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public BankDebitDataOneOf1SepaBankDebit getSepaBankDebit() {
-        return sepaBankDebit;
-    }
+  public BankDebitDataOneOf1SepaBankDebit getSepaBankDebit() {
+    return sepaBankDebit;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_SEPA_BANK_DEBIT)
+  @JsonProperty(JSON_PROPERTY_SEPA_BANK_DEBIT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setSepaBankDebit(@javax.annotation.Nonnull BankDebitDataOneOf1SepaBankDebit sepaBankDebit) {
-            this.sepaBankDebit = sepaBankDebit;
-        }
+    this.sepaBankDebit = sepaBankDebit;
+  }
 
-        public BankDebitData becsBankDebit(@javax.annotation.Nonnull BankDebitDataOneOf2BecsBankDebit becsBankDebit) {
-        
-        this.becsBankDebit = becsBankDebit;
-        return this;
-        }
+  public BankDebitData becsBankDebit(@javax.annotation.Nonnull BankDebitDataOneOf2BecsBankDebit becsBankDebit) {
+    
+    this.becsBankDebit = becsBankDebit;
+    return this;
+  }
 
-    /**
-        * Get becsBankDebit
-    * @return becsBankDebit
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_BECS_BANK_DEBIT)
+  /**
+   * Get becsBankDebit
+   * @return becsBankDebit
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_BECS_BANK_DEBIT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public BankDebitDataOneOf2BecsBankDebit getBecsBankDebit() {
-        return becsBankDebit;
-    }
+  public BankDebitDataOneOf2BecsBankDebit getBecsBankDebit() {
+    return becsBankDebit;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_BECS_BANK_DEBIT)
+  @JsonProperty(JSON_PROPERTY_BECS_BANK_DEBIT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setBecsBankDebit(@javax.annotation.Nonnull BankDebitDataOneOf2BecsBankDebit becsBankDebit) {
-            this.becsBankDebit = becsBankDebit;
-        }
+    this.becsBankDebit = becsBankDebit;
+  }
 
-        public BankDebitData bacsBankDebit(@javax.annotation.Nonnull BankDebitDataOneOf3BacsBankDebit bacsBankDebit) {
-        
-        this.bacsBankDebit = bacsBankDebit;
-        return this;
-        }
+  public BankDebitData bacsBankDebit(@javax.annotation.Nonnull BankDebitDataOneOf3BacsBankDebit bacsBankDebit) {
+    
+    this.bacsBankDebit = bacsBankDebit;
+    return this;
+  }
 
-    /**
-        * Get bacsBankDebit
-    * @return bacsBankDebit
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_BACS_BANK_DEBIT)
+  /**
+   * Get bacsBankDebit
+   * @return bacsBankDebit
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_BACS_BANK_DEBIT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public BankDebitDataOneOf3BacsBankDebit getBacsBankDebit() {
-        return bacsBankDebit;
-    }
+  public BankDebitDataOneOf3BacsBankDebit getBacsBankDebit() {
+    return bacsBankDebit;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_BACS_BANK_DEBIT)
+  @JsonProperty(JSON_PROPERTY_BACS_BANK_DEBIT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setBacsBankDebit(@javax.annotation.Nonnull BankDebitDataOneOf3BacsBankDebit bacsBankDebit) {
-            this.bacsBankDebit = bacsBankDebit;
-        }
+    this.bacsBankDebit = bacsBankDebit;
+  }
 
-@Override
-public boolean equals(Object o) {
+  @Override
+  public boolean equals(Object o) {
     if (this == o) {
-    return true;
+      return true;
     }
     if (o == null || getClass() != o.getClass()) {
-    return false;
+      return false;
     }
-        BankDebitData bankDebitData = (BankDebitData) o;
-        return Objects.equals(this.achBankDebit, bankDebitData.achBankDebit) &&
+    BankDebitData bankDebitData = (BankDebitData) o;
+    return Objects.equals(this.achBankDebit, bankDebitData.achBankDebit) &&
         Objects.equals(this.sepaBankDebit, bankDebitData.sepaBankDebit) &&
         Objects.equals(this.becsBankDebit, bankDebitData.becsBankDebit) &&
         Objects.equals(this.bacsBankDebit, bankDebitData.bacsBankDebit);
-}
+  }
 
-    @Override
-    public int hashCode() {
-        return Objects.hash(achBankDebit, sepaBankDebit, becsBankDebit, bacsBankDebit);
-    }
+  @Override
+  public int hashCode() {
+    return Objects.hash(achBankDebit, sepaBankDebit, becsBankDebit, bacsBankDebit);
+  }
 
-    @Override
-    public String toString() {
+  @Override
+  public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class BankDebitData {\n");
-        sb.append("    achBankDebit: ").append(toIndentedString(achBankDebit)).append("\n");
-        sb.append("    sepaBankDebit: ").append(toIndentedString(sepaBankDebit)).append("\n");
-        sb.append("    becsBankDebit: ").append(toIndentedString(becsBankDebit)).append("\n");
-        sb.append("    bacsBankDebit: ").append(toIndentedString(bacsBankDebit)).append("\n");
+    sb.append("    achBankDebit: ").append(toIndentedString(achBankDebit)).append("\n");
+    sb.append("    sepaBankDebit: ").append(toIndentedString(sepaBankDebit)).append("\n");
+    sb.append("    becsBankDebit: ").append(toIndentedString(becsBankDebit)).append("\n");
+    sb.append("    bacsBankDebit: ").append(toIndentedString(bacsBankDebit)).append("\n");
     sb.append("}");
     return sb.toString();
-    }
+  }
 
-    /**
-    * Convert the given object to string with each line indented by 4 spaces
-    * (except the first line).
-    */
-    private String toIndentedString(Object o) {
+  /**
+   * Convert the given object to string with each line indented by 4 spaces
+   * (except the first line).
+   */
+  private String toIndentedString(Object o) {
     if (o == null) {
-    return "null";
+      return "null";
     }
     return o.toString().replace("\n", "\n    ");
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @return URL query string
+   */
+  public String toUrlQueryString() {
+    return toUrlQueryString(null);
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @param prefix prefix of the query string
+   * @return URL query string
+   */
+  public String toUrlQueryString(String prefix) {
+    String suffix = "";
+    String containerSuffix = "";
+    String containerPrefix = "";
+    if (prefix == null) {
+      // style=form, explode=true, e.g. /pet?name=cat&type=manx
+      prefix = "";
+    } else {
+      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+      prefix = prefix + "[";
+      suffix = "]";
+      containerSuffix = "]";
+      containerPrefix = "[";
     }
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @return URL query string
-        */
-        public String toUrlQueryString() {
-        return toUrlQueryString(null);
-        }
+    StringJoiner joiner = new StringJoiner("&");
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @param prefix prefix of the query string
-        * @return URL query string
-        */
-        public String toUrlQueryString(String prefix) {
-        String suffix = "";
-        String containerSuffix = "";
-        String containerPrefix = "";
-        if (prefix == null) {
-        // style=form, explode=true, e.g. /pet?name=cat&type=manx
-        prefix = "";
-        } else {
-        // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
-        prefix = prefix + "[";
-        suffix = "]";
-        containerSuffix = "]";
-        containerPrefix = "[";
-        }
-
-        StringJoiner joiner = new StringJoiner("&");
-
-            // add `ach_bank_debit` to the URL query string
-                            if (getAchBankDebit() != null) {
-                            joiner.add(getAchBankDebit().toUrlQueryString(prefix + "ach_bank_debit" + suffix));
-                            }
-
-            // add `sepa_bank_debit` to the URL query string
-                            if (getSepaBankDebit() != null) {
-                            joiner.add(getSepaBankDebit().toUrlQueryString(prefix + "sepa_bank_debit" + suffix));
-                            }
-
-            // add `becs_bank_debit` to the URL query string
-                            if (getBecsBankDebit() != null) {
-                            joiner.add(getBecsBankDebit().toUrlQueryString(prefix + "becs_bank_debit" + suffix));
-                            }
-
-            // add `bacs_bank_debit` to the URL query string
-                            if (getBacsBankDebit() != null) {
-                            joiner.add(getBacsBankDebit().toUrlQueryString(prefix + "bacs_bank_debit" + suffix));
-                            }
-
-        return joiner.toString();
-        }
-
+    // add `ach_bank_debit` to the URL query string
+    if (getAchBankDebit() != null) {
+      joiner.add(getAchBankDebit().toUrlQueryString(prefix + "ach_bank_debit" + suffix));
     }
+
+    // add `sepa_bank_debit` to the URL query string
+    if (getSepaBankDebit() != null) {
+      joiner.add(getSepaBankDebit().toUrlQueryString(prefix + "sepa_bank_debit" + suffix));
+    }
+
+    // add `becs_bank_debit` to the URL query string
+    if (getBecsBankDebit() != null) {
+      joiner.add(getBecsBankDebit().toUrlQueryString(prefix + "becs_bank_debit" + suffix));
+    }
+
+    // add `bacs_bank_debit` to the URL query string
+    if (getBacsBankDebit() != null) {
+      joiner.add(getBacsBankDebit().toUrlQueryString(prefix + "bacs_bank_debit" + suffix));
+    }
+
+    return joiner.toString();
+  }
+
+}
 

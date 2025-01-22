@@ -29,265 +29,265 @@ import java.net.URLEncoder;
 import java.util.StringJoiner;
 
 /**
-* Routing Algorithm specific to merchants
-*/
-    @JsonPropertyOrder({
-        MerchantRoutingAlgorithm.JSON_PROPERTY_ID,
-        MerchantRoutingAlgorithm.JSON_PROPERTY_PROFILE_ID,
-        MerchantRoutingAlgorithm.JSON_PROPERTY_NAME,
-        MerchantRoutingAlgorithm.JSON_PROPERTY_DESCRIPTION,
-        MerchantRoutingAlgorithm.JSON_PROPERTY_ALGORITHM,
-        MerchantRoutingAlgorithm.JSON_PROPERTY_CREATED_AT,
-        MerchantRoutingAlgorithm.JSON_PROPERTY_MODIFIED_AT,
-        MerchantRoutingAlgorithm.JSON_PROPERTY_ALGORITHM_FOR
-    })
+ * Routing Algorithm specific to merchants
+ */
+@JsonPropertyOrder({
+  MerchantRoutingAlgorithm.JSON_PROPERTY_ID,
+  MerchantRoutingAlgorithm.JSON_PROPERTY_PROFILE_ID,
+  MerchantRoutingAlgorithm.JSON_PROPERTY_NAME,
+  MerchantRoutingAlgorithm.JSON_PROPERTY_DESCRIPTION,
+  MerchantRoutingAlgorithm.JSON_PROPERTY_ALGORITHM,
+  MerchantRoutingAlgorithm.JSON_PROPERTY_CREATED_AT,
+  MerchantRoutingAlgorithm.JSON_PROPERTY_MODIFIED_AT,
+  MerchantRoutingAlgorithm.JSON_PROPERTY_ALGORITHM_FOR
+})
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class MerchantRoutingAlgorithm {
-        public static final String JSON_PROPERTY_ID = "id";
-    @javax.annotation.Nonnull
-            private String id;
+  public static final String JSON_PROPERTY_ID = "id";
+  @javax.annotation.Nonnull
+  private String id;
 
-        public static final String JSON_PROPERTY_PROFILE_ID = "profile_id";
-    @javax.annotation.Nonnull
-            private String profileId;
+  public static final String JSON_PROPERTY_PROFILE_ID = "profile_id";
+  @javax.annotation.Nonnull
+  private String profileId;
 
-        public static final String JSON_PROPERTY_NAME = "name";
-    @javax.annotation.Nonnull
-            private String name;
+  public static final String JSON_PROPERTY_NAME = "name";
+  @javax.annotation.Nonnull
+  private String name;
 
-        public static final String JSON_PROPERTY_DESCRIPTION = "description";
-    @javax.annotation.Nonnull
-            private String description;
+  public static final String JSON_PROPERTY_DESCRIPTION = "description";
+  @javax.annotation.Nonnull
+  private String description;
 
-        public static final String JSON_PROPERTY_ALGORITHM = "algorithm";
-    @javax.annotation.Nonnull
-            private RoutingAlgorithm algorithm;
+  public static final String JSON_PROPERTY_ALGORITHM = "algorithm";
+  @javax.annotation.Nonnull
+  private RoutingAlgorithm algorithm;
 
-        public static final String JSON_PROPERTY_CREATED_AT = "created_at";
-    @javax.annotation.Nonnull
-            private Long createdAt;
+  public static final String JSON_PROPERTY_CREATED_AT = "created_at";
+  @javax.annotation.Nonnull
+  private Long createdAt;
 
-        public static final String JSON_PROPERTY_MODIFIED_AT = "modified_at";
-    @javax.annotation.Nonnull
-            private Long modifiedAt;
+  public static final String JSON_PROPERTY_MODIFIED_AT = "modified_at";
+  @javax.annotation.Nonnull
+  private Long modifiedAt;
 
-        public static final String JSON_PROPERTY_ALGORITHM_FOR = "algorithm_for";
-    @javax.annotation.Nonnull
-            private TransactionType algorithmFor;
+  public static final String JSON_PROPERTY_ALGORITHM_FOR = "algorithm_for";
+  @javax.annotation.Nonnull
+  private TransactionType algorithmFor;
 
-public MerchantRoutingAlgorithm() {
-}
+  public MerchantRoutingAlgorithm() {
+  }
 
-        public MerchantRoutingAlgorithm id(@javax.annotation.Nonnull String id) {
-        
-        this.id = id;
-        return this;
-        }
+  public MerchantRoutingAlgorithm id(@javax.annotation.Nonnull String id) {
+    
+    this.id = id;
+    return this;
+  }
 
-    /**
-        * Get id
-    * @return id
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_ID)
+  /**
+   * Get id
+   * @return id
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public String getId() {
-        return id;
-    }
+  public String getId() {
+    return id;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_ID)
+  @JsonProperty(JSON_PROPERTY_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setId(@javax.annotation.Nonnull String id) {
-            this.id = id;
-        }
+    this.id = id;
+  }
 
-        public MerchantRoutingAlgorithm profileId(@javax.annotation.Nonnull String profileId) {
-        
-        this.profileId = profileId;
-        return this;
-        }
+  public MerchantRoutingAlgorithm profileId(@javax.annotation.Nonnull String profileId) {
+    
+    this.profileId = profileId;
+    return this;
+  }
 
-    /**
-        * Get profileId
-    * @return profileId
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_PROFILE_ID)
+  /**
+   * Get profileId
+   * @return profileId
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_PROFILE_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public String getProfileId() {
-        return profileId;
-    }
+  public String getProfileId() {
+    return profileId;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_PROFILE_ID)
+  @JsonProperty(JSON_PROPERTY_PROFILE_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setProfileId(@javax.annotation.Nonnull String profileId) {
-            this.profileId = profileId;
-        }
+    this.profileId = profileId;
+  }
 
-        public MerchantRoutingAlgorithm name(@javax.annotation.Nonnull String name) {
-        
-        this.name = name;
-        return this;
-        }
+  public MerchantRoutingAlgorithm name(@javax.annotation.Nonnull String name) {
+    
+    this.name = name;
+    return this;
+  }
 
-    /**
-        * Get name
-    * @return name
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_NAME)
+  /**
+   * Get name
+   * @return name
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_NAME)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public String getName() {
-        return name;
-    }
+  public String getName() {
+    return name;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_NAME)
+  @JsonProperty(JSON_PROPERTY_NAME)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setName(@javax.annotation.Nonnull String name) {
-            this.name = name;
-        }
+    this.name = name;
+  }
 
-        public MerchantRoutingAlgorithm description(@javax.annotation.Nonnull String description) {
-        
-        this.description = description;
-        return this;
-        }
+  public MerchantRoutingAlgorithm description(@javax.annotation.Nonnull String description) {
+    
+    this.description = description;
+    return this;
+  }
 
-    /**
-        * Get description
-    * @return description
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_DESCRIPTION)
+  /**
+   * Get description
+   * @return description
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_DESCRIPTION)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public String getDescription() {
-        return description;
-    }
+  public String getDescription() {
+    return description;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_DESCRIPTION)
+  @JsonProperty(JSON_PROPERTY_DESCRIPTION)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setDescription(@javax.annotation.Nonnull String description) {
-            this.description = description;
-        }
+    this.description = description;
+  }
 
-        public MerchantRoutingAlgorithm algorithm(@javax.annotation.Nonnull RoutingAlgorithm algorithm) {
-        
-        this.algorithm = algorithm;
-        return this;
-        }
+  public MerchantRoutingAlgorithm algorithm(@javax.annotation.Nonnull RoutingAlgorithm algorithm) {
+    
+    this.algorithm = algorithm;
+    return this;
+  }
 
-    /**
-        * Get algorithm
-    * @return algorithm
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_ALGORITHM)
+  /**
+   * Get algorithm
+   * @return algorithm
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_ALGORITHM)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public RoutingAlgorithm getAlgorithm() {
-        return algorithm;
-    }
+  public RoutingAlgorithm getAlgorithm() {
+    return algorithm;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_ALGORITHM)
+  @JsonProperty(JSON_PROPERTY_ALGORITHM)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setAlgorithm(@javax.annotation.Nonnull RoutingAlgorithm algorithm) {
-            this.algorithm = algorithm;
-        }
+    this.algorithm = algorithm;
+  }
 
-        public MerchantRoutingAlgorithm createdAt(@javax.annotation.Nonnull Long createdAt) {
-        
-        this.createdAt = createdAt;
-        return this;
-        }
+  public MerchantRoutingAlgorithm createdAt(@javax.annotation.Nonnull Long createdAt) {
+    
+    this.createdAt = createdAt;
+    return this;
+  }
 
-    /**
-        * Get createdAt
-    * @return createdAt
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_CREATED_AT)
+  /**
+   * Get createdAt
+   * @return createdAt
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_CREATED_AT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public Long getCreatedAt() {
-        return createdAt;
-    }
+  public Long getCreatedAt() {
+    return createdAt;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_CREATED_AT)
+  @JsonProperty(JSON_PROPERTY_CREATED_AT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setCreatedAt(@javax.annotation.Nonnull Long createdAt) {
-            this.createdAt = createdAt;
-        }
+    this.createdAt = createdAt;
+  }
 
-        public MerchantRoutingAlgorithm modifiedAt(@javax.annotation.Nonnull Long modifiedAt) {
-        
-        this.modifiedAt = modifiedAt;
-        return this;
-        }
+  public MerchantRoutingAlgorithm modifiedAt(@javax.annotation.Nonnull Long modifiedAt) {
+    
+    this.modifiedAt = modifiedAt;
+    return this;
+  }
 
-    /**
-        * Get modifiedAt
-    * @return modifiedAt
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_MODIFIED_AT)
+  /**
+   * Get modifiedAt
+   * @return modifiedAt
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_MODIFIED_AT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public Long getModifiedAt() {
-        return modifiedAt;
-    }
+  public Long getModifiedAt() {
+    return modifiedAt;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_MODIFIED_AT)
+  @JsonProperty(JSON_PROPERTY_MODIFIED_AT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setModifiedAt(@javax.annotation.Nonnull Long modifiedAt) {
-            this.modifiedAt = modifiedAt;
-        }
+    this.modifiedAt = modifiedAt;
+  }
 
-        public MerchantRoutingAlgorithm algorithmFor(@javax.annotation.Nonnull TransactionType algorithmFor) {
-        
-        this.algorithmFor = algorithmFor;
-        return this;
-        }
+  public MerchantRoutingAlgorithm algorithmFor(@javax.annotation.Nonnull TransactionType algorithmFor) {
+    
+    this.algorithmFor = algorithmFor;
+    return this;
+  }
 
-    /**
-        * Get algorithmFor
-    * @return algorithmFor
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_ALGORITHM_FOR)
+  /**
+   * Get algorithmFor
+   * @return algorithmFor
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_ALGORITHM_FOR)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public TransactionType getAlgorithmFor() {
-        return algorithmFor;
-    }
+  public TransactionType getAlgorithmFor() {
+    return algorithmFor;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_ALGORITHM_FOR)
+  @JsonProperty(JSON_PROPERTY_ALGORITHM_FOR)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setAlgorithmFor(@javax.annotation.Nonnull TransactionType algorithmFor) {
-            this.algorithmFor = algorithmFor;
-        }
+    this.algorithmFor = algorithmFor;
+  }
 
-@Override
-public boolean equals(Object o) {
+  @Override
+  public boolean equals(Object o) {
     if (this == o) {
-    return true;
+      return true;
     }
     if (o == null || getClass() != o.getClass()) {
-    return false;
+      return false;
     }
-        MerchantRoutingAlgorithm merchantRoutingAlgorithm = (MerchantRoutingAlgorithm) o;
-        return Objects.equals(this.id, merchantRoutingAlgorithm.id) &&
+    MerchantRoutingAlgorithm merchantRoutingAlgorithm = (MerchantRoutingAlgorithm) o;
+    return Objects.equals(this.id, merchantRoutingAlgorithm.id) &&
         Objects.equals(this.profileId, merchantRoutingAlgorithm.profileId) &&
         Objects.equals(this.name, merchantRoutingAlgorithm.name) &&
         Objects.equals(this.description, merchantRoutingAlgorithm.description) &&
@@ -295,149 +295,149 @@ public boolean equals(Object o) {
         Objects.equals(this.createdAt, merchantRoutingAlgorithm.createdAt) &&
         Objects.equals(this.modifiedAt, merchantRoutingAlgorithm.modifiedAt) &&
         Objects.equals(this.algorithmFor, merchantRoutingAlgorithm.algorithmFor);
-}
+  }
 
-    @Override
-    public int hashCode() {
-        return Objects.hash(id, profileId, name, description, algorithm, createdAt, modifiedAt, algorithmFor);
-    }
+  @Override
+  public int hashCode() {
+    return Objects.hash(id, profileId, name, description, algorithm, createdAt, modifiedAt, algorithmFor);
+  }
 
-    @Override
-    public String toString() {
+  @Override
+  public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class MerchantRoutingAlgorithm {\n");
-        sb.append("    id: ").append(toIndentedString(id)).append("\n");
-        sb.append("    profileId: ").append(toIndentedString(profileId)).append("\n");
-        sb.append("    name: ").append(toIndentedString(name)).append("\n");
-        sb.append("    description: ").append(toIndentedString(description)).append("\n");
-        sb.append("    algorithm: ").append(toIndentedString(algorithm)).append("\n");
-        sb.append("    createdAt: ").append(toIndentedString(createdAt)).append("\n");
-        sb.append("    modifiedAt: ").append(toIndentedString(modifiedAt)).append("\n");
-        sb.append("    algorithmFor: ").append(toIndentedString(algorithmFor)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    profileId: ").append(toIndentedString(profileId)).append("\n");
+    sb.append("    name: ").append(toIndentedString(name)).append("\n");
+    sb.append("    description: ").append(toIndentedString(description)).append("\n");
+    sb.append("    algorithm: ").append(toIndentedString(algorithm)).append("\n");
+    sb.append("    createdAt: ").append(toIndentedString(createdAt)).append("\n");
+    sb.append("    modifiedAt: ").append(toIndentedString(modifiedAt)).append("\n");
+    sb.append("    algorithmFor: ").append(toIndentedString(algorithmFor)).append("\n");
     sb.append("}");
     return sb.toString();
-    }
+  }
 
-    /**
-    * Convert the given object to string with each line indented by 4 spaces
-    * (except the first line).
-    */
-    private String toIndentedString(Object o) {
+  /**
+   * Convert the given object to string with each line indented by 4 spaces
+   * (except the first line).
+   */
+  private String toIndentedString(Object o) {
     if (o == null) {
-    return "null";
+      return "null";
     }
     return o.toString().replace("\n", "\n    ");
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @return URL query string
+   */
+  public String toUrlQueryString() {
+    return toUrlQueryString(null);
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @param prefix prefix of the query string
+   * @return URL query string
+   */
+  public String toUrlQueryString(String prefix) {
+    String suffix = "";
+    String containerSuffix = "";
+    String containerPrefix = "";
+    if (prefix == null) {
+      // style=form, explode=true, e.g. /pet?name=cat&type=manx
+      prefix = "";
+    } else {
+      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+      prefix = prefix + "[";
+      suffix = "]";
+      containerSuffix = "]";
+      containerPrefix = "[";
     }
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @return URL query string
-        */
-        public String toUrlQueryString() {
-        return toUrlQueryString(null);
-        }
+    StringJoiner joiner = new StringJoiner("&");
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @param prefix prefix of the query string
-        * @return URL query string
-        */
-        public String toUrlQueryString(String prefix) {
-        String suffix = "";
-        String containerSuffix = "";
-        String containerPrefix = "";
-        if (prefix == null) {
-        // style=form, explode=true, e.g. /pet?name=cat&type=manx
-        prefix = "";
-        } else {
-        // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
-        prefix = prefix + "[";
-        suffix = "]";
-        containerSuffix = "]";
-        containerPrefix = "[";
-        }
-
-        StringJoiner joiner = new StringJoiner("&");
-
-            // add `id` to the URL query string
-                        if (getId() != null) {
-                        try {
-                        joiner.add(String.format("%sid%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getId()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-            // add `profile_id` to the URL query string
-                        if (getProfileId() != null) {
-                        try {
-                        joiner.add(String.format("%sprofile_id%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getProfileId()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-            // add `name` to the URL query string
-                        if (getName() != null) {
-                        try {
-                        joiner.add(String.format("%sname%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getName()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-            // add `description` to the URL query string
-                        if (getDescription() != null) {
-                        try {
-                        joiner.add(String.format("%sdescription%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getDescription()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-            // add `algorithm` to the URL query string
-                            if (getAlgorithm() != null) {
-                            joiner.add(getAlgorithm().toUrlQueryString(prefix + "algorithm" + suffix));
-                            }
-
-            // add `created_at` to the URL query string
-                        if (getCreatedAt() != null) {
-                        try {
-                        joiner.add(String.format("%screated_at%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCreatedAt()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-            // add `modified_at` to the URL query string
-                        if (getModifiedAt() != null) {
-                        try {
-                        joiner.add(String.format("%smodified_at%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getModifiedAt()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-            // add `algorithm_for` to the URL query string
-                            if (getAlgorithmFor() != null) {
-                            try {
-                            joiner.add(String.format("%salgorithm_for%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getAlgorithmFor()), "UTF-8").replaceAll("\\+", "%20")));
-                            } catch (UnsupportedEncodingException e) {
-                            // Should never happen, UTF-8 is always supported
-                            throw new RuntimeException(e);
-                            }
-                            }
-
-        return joiner.toString();
-        }
-
+    // add `id` to the URL query string
+    if (getId() != null) {
+      try {
+        joiner.add(String.format("%sid%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getId()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
     }
+
+    // add `profile_id` to the URL query string
+    if (getProfileId() != null) {
+      try {
+        joiner.add(String.format("%sprofile_id%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getProfileId()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `name` to the URL query string
+    if (getName() != null) {
+      try {
+        joiner.add(String.format("%sname%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getName()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `description` to the URL query string
+    if (getDescription() != null) {
+      try {
+        joiner.add(String.format("%sdescription%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getDescription()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `algorithm` to the URL query string
+    if (getAlgorithm() != null) {
+      joiner.add(getAlgorithm().toUrlQueryString(prefix + "algorithm" + suffix));
+    }
+
+    // add `created_at` to the URL query string
+    if (getCreatedAt() != null) {
+      try {
+        joiner.add(String.format("%screated_at%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCreatedAt()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `modified_at` to the URL query string
+    if (getModifiedAt() != null) {
+      try {
+        joiner.add(String.format("%smodified_at%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getModifiedAt()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `algorithm_for` to the URL query string
+    if (getAlgorithmFor() != null) {
+      try {
+        joiner.add(String.format("%salgorithm_for%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getAlgorithmFor()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    return joiner.toString();
+  }
+
+}
 

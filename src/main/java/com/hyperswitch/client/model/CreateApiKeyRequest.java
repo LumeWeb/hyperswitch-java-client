@@ -32,224 +32,224 @@ import java.net.URLEncoder;
 import java.util.StringJoiner;
 
 /**
-* The request body for creating an API Key.
-*/
-    @JsonPropertyOrder({
-        CreateApiKeyRequest.JSON_PROPERTY_NAME,
-        CreateApiKeyRequest.JSON_PROPERTY_DESCRIPTION,
-        CreateApiKeyRequest.JSON_PROPERTY_EXPIRATION
-    })
+ * The request body for creating an API Key.
+ */
+@JsonPropertyOrder({
+  CreateApiKeyRequest.JSON_PROPERTY_NAME,
+  CreateApiKeyRequest.JSON_PROPERTY_DESCRIPTION,
+  CreateApiKeyRequest.JSON_PROPERTY_EXPIRATION
+})
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class CreateApiKeyRequest {
-        public static final String JSON_PROPERTY_NAME = "name";
-    @javax.annotation.Nonnull
-            private String name;
+  public static final String JSON_PROPERTY_NAME = "name";
+  @javax.annotation.Nonnull
+  private String name;
 
-        public static final String JSON_PROPERTY_DESCRIPTION = "description";
-    @javax.annotation.Nullable
-            private JsonNullable<String> description = JsonNullable.<String>undefined();
+  public static final String JSON_PROPERTY_DESCRIPTION = "description";
+  @javax.annotation.Nullable
+  private JsonNullable<String> description = JsonNullable.<String>undefined();
 
-        public static final String JSON_PROPERTY_EXPIRATION = "expiration";
-    @javax.annotation.Nonnull
-            private ApiKeyExpiration expiration;
+  public static final String JSON_PROPERTY_EXPIRATION = "expiration";
+  @javax.annotation.Nonnull
+  private ApiKeyExpiration expiration;
 
-public CreateApiKeyRequest() {
-}
+  public CreateApiKeyRequest() {
+  }
 
-        public CreateApiKeyRequest name(@javax.annotation.Nonnull String name) {
-        
-        this.name = name;
-        return this;
-        }
+  public CreateApiKeyRequest name(@javax.annotation.Nonnull String name) {
+    
+    this.name = name;
+    return this;
+  }
 
-    /**
-        * A unique name for the API Key to help you identify it.
-    * @return name
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_NAME)
+  /**
+   * A unique name for the API Key to help you identify it.
+   * @return name
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_NAME)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public String getName() {
-        return name;
-    }
+  public String getName() {
+    return name;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_NAME)
+  @JsonProperty(JSON_PROPERTY_NAME)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setName(@javax.annotation.Nonnull String name) {
-            this.name = name;
-        }
+    this.name = name;
+  }
 
-        public CreateApiKeyRequest description(@javax.annotation.Nullable String description) {
-        this.description = JsonNullable.<String>of(description);
-        
-        return this;
-        }
-
-    /**
-        * A description to provide more context about the API Key.
-    * @return description
-    */
-    @javax.annotation.Nullable
-        @JsonIgnore
+  public CreateApiKeyRequest description(@javax.annotation.Nullable String description) {
+    this.description = JsonNullable.<String>of(description);
     
-    public String getDescription() {
-                return description.orElse(null);
-    }
+    return this;
+  }
 
-          @JsonProperty(JSON_PROPERTY_DESCRIPTION)
+  /**
+   * A description to provide more context about the API Key.
+   * @return description
+   */
+  @javax.annotation.Nullable
+  @JsonIgnore
+
+  public String getDescription() {
+        return description.orElse(null);
+  }
+
+  @JsonProperty(JSON_PROPERTY_DESCRIPTION)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-        public JsonNullable<String> getDescription_JsonNullable() {
-        return description;
-        }
+  public JsonNullable<String> getDescription_JsonNullable() {
+    return description;
+  }
+  
+  @JsonProperty(JSON_PROPERTY_DESCRIPTION)
+  public void setDescription_JsonNullable(JsonNullable<String> description) {
+    this.description = description;
+  }
+
+  public void setDescription(@javax.annotation.Nullable String description) {
+    this.description = JsonNullable.<String>of(description);
+  }
+
+  public CreateApiKeyRequest expiration(@javax.annotation.Nonnull ApiKeyExpiration expiration) {
     
-        @JsonProperty(JSON_PROPERTY_DESCRIPTION)
-        public void setDescription_JsonNullable(JsonNullable<String> description) {
-        this.description = description;
-        }
+    this.expiration = expiration;
+    return this;
+  }
 
-          public void setDescription(@javax.annotation.Nullable String description) {
-            this.description = JsonNullable.<String>of(description);
-        }
-
-        public CreateApiKeyRequest expiration(@javax.annotation.Nonnull ApiKeyExpiration expiration) {
-        
-        this.expiration = expiration;
-        return this;
-        }
-
-    /**
-        * Get expiration
-    * @return expiration
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_EXPIRATION)
+  /**
+   * Get expiration
+   * @return expiration
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_EXPIRATION)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public ApiKeyExpiration getExpiration() {
-        return expiration;
-    }
+  public ApiKeyExpiration getExpiration() {
+    return expiration;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_EXPIRATION)
+  @JsonProperty(JSON_PROPERTY_EXPIRATION)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setExpiration(@javax.annotation.Nonnull ApiKeyExpiration expiration) {
-            this.expiration = expiration;
-        }
+    this.expiration = expiration;
+  }
 
-@Override
-public boolean equals(Object o) {
+  @Override
+  public boolean equals(Object o) {
     if (this == o) {
-    return true;
+      return true;
     }
     if (o == null || getClass() != o.getClass()) {
-    return false;
+      return false;
     }
-        CreateApiKeyRequest createApiKeyRequest = (CreateApiKeyRequest) o;
-        return Objects.equals(this.name, createApiKeyRequest.name) &&
+    CreateApiKeyRequest createApiKeyRequest = (CreateApiKeyRequest) o;
+    return Objects.equals(this.name, createApiKeyRequest.name) &&
         equalsNullable(this.description, createApiKeyRequest.description) &&
         Objects.equals(this.expiration, createApiKeyRequest.expiration);
-}
+  }
 
-    private static <T> boolean equalsNullable(JsonNullable<T> a, JsonNullable<T> b) {
-        return a == b || (a != null && b != null && a.isPresent() && b.isPresent() && Objects.deepEquals(a.get(), b.get()));
-        }
+  private static <T> boolean equalsNullable(JsonNullable<T> a, JsonNullable<T> b) {
+    return a == b || (a != null && b != null && a.isPresent() && b.isPresent() && Objects.deepEquals(a.get(), b.get()));
+  }
 
-    @Override
-    public int hashCode() {
-        return Objects.hash(name, hashCodeNullable(description), expiration);
+  @Override
+  public int hashCode() {
+    return Objects.hash(name, hashCodeNullable(description), expiration);
+  }
+
+  private static <T> int hashCodeNullable(JsonNullable<T> a) {
+    if (a == null) {
+      return 1;
     }
+    return a.isPresent() ? Arrays.deepHashCode(new Object[]{a.get()}) : 31;
+  }
 
-        private static <T> int hashCodeNullable(JsonNullable<T> a) {
-        if (a == null) {
-        return 1;
-        }
-        return a.isPresent() ? Arrays.deepHashCode(new Object[]{a.get()}) : 31;
-        }
-
-    @Override
-    public String toString() {
+  @Override
+  public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class CreateApiKeyRequest {\n");
-        sb.append("    name: ").append(toIndentedString(name)).append("\n");
-        sb.append("    description: ").append(toIndentedString(description)).append("\n");
-        sb.append("    expiration: ").append(toIndentedString(expiration)).append("\n");
+    sb.append("    name: ").append(toIndentedString(name)).append("\n");
+    sb.append("    description: ").append(toIndentedString(description)).append("\n");
+    sb.append("    expiration: ").append(toIndentedString(expiration)).append("\n");
     sb.append("}");
     return sb.toString();
-    }
+  }
 
-    /**
-    * Convert the given object to string with each line indented by 4 spaces
-    * (except the first line).
-    */
-    private String toIndentedString(Object o) {
+  /**
+   * Convert the given object to string with each line indented by 4 spaces
+   * (except the first line).
+   */
+  private String toIndentedString(Object o) {
     if (o == null) {
-    return "null";
+      return "null";
     }
     return o.toString().replace("\n", "\n    ");
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @return URL query string
+   */
+  public String toUrlQueryString() {
+    return toUrlQueryString(null);
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @param prefix prefix of the query string
+   * @return URL query string
+   */
+  public String toUrlQueryString(String prefix) {
+    String suffix = "";
+    String containerSuffix = "";
+    String containerPrefix = "";
+    if (prefix == null) {
+      // style=form, explode=true, e.g. /pet?name=cat&type=manx
+      prefix = "";
+    } else {
+      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+      prefix = prefix + "[";
+      suffix = "]";
+      containerSuffix = "]";
+      containerPrefix = "[";
     }
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @return URL query string
-        */
-        public String toUrlQueryString() {
-        return toUrlQueryString(null);
-        }
+    StringJoiner joiner = new StringJoiner("&");
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @param prefix prefix of the query string
-        * @return URL query string
-        */
-        public String toUrlQueryString(String prefix) {
-        String suffix = "";
-        String containerSuffix = "";
-        String containerPrefix = "";
-        if (prefix == null) {
-        // style=form, explode=true, e.g. /pet?name=cat&type=manx
-        prefix = "";
-        } else {
-        // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
-        prefix = prefix + "[";
-        suffix = "]";
-        containerSuffix = "]";
-        containerPrefix = "[";
-        }
-
-        StringJoiner joiner = new StringJoiner("&");
-
-            // add `name` to the URL query string
-                        if (getName() != null) {
-                        try {
-                        joiner.add(String.format("%sname%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getName()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-            // add `description` to the URL query string
-                        if (getDescription() != null) {
-                        try {
-                        joiner.add(String.format("%sdescription%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getDescription()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-            // add `expiration` to the URL query string
-                            if (getExpiration() != null) {
-                            joiner.add(getExpiration().toUrlQueryString(prefix + "expiration" + suffix));
-                            }
-
-        return joiner.toString();
-        }
-
+    // add `name` to the URL query string
+    if (getName() != null) {
+      try {
+        joiner.add(String.format("%sname%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getName()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
     }
+
+    // add `description` to the URL query string
+    if (getDescription() != null) {
+      try {
+        joiner.add(String.format("%sdescription%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getDescription()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `expiration` to the URL query string
+    if (getExpiration() != null) {
+      joiner.add(getExpiration().toUrlQueryString(prefix + "expiration" + suffix));
+    }
+
+    return joiner.toString();
+  }
+
+}
 

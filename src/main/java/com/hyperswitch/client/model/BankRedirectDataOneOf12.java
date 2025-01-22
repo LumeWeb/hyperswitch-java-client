@@ -28,122 +28,122 @@ import java.net.URLEncoder;
 import java.util.StringJoiner;
 
 /**
-* BankRedirectDataOneOf12
-*/
-    @JsonPropertyOrder({
-        BankRedirectDataOneOf12.JSON_PROPERTY_PRZELEWY24
-    })
-            @JsonTypeName("BankRedirectData_oneOf_12")
+ * BankRedirectDataOneOf12
+ */
+@JsonPropertyOrder({
+  BankRedirectDataOneOf12.JSON_PROPERTY_PRZELEWY24
+})
+@JsonTypeName("BankRedirectData_oneOf_12")
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class BankRedirectDataOneOf12 {
-        public static final String JSON_PROPERTY_PRZELEWY24 = "przelewy24";
-    @javax.annotation.Nonnull
-            private BankRedirectDataOneOf12Przelewy24 przelewy24;
+  public static final String JSON_PROPERTY_PRZELEWY24 = "przelewy24";
+  @javax.annotation.Nonnull
+  private BankRedirectDataOneOf12Przelewy24 przelewy24;
 
-public BankRedirectDataOneOf12() {
-}
+  public BankRedirectDataOneOf12() {
+  }
 
-        public BankRedirectDataOneOf12 przelewy24(@javax.annotation.Nonnull BankRedirectDataOneOf12Przelewy24 przelewy24) {
-        
-        this.przelewy24 = przelewy24;
-        return this;
-        }
+  public BankRedirectDataOneOf12 przelewy24(@javax.annotation.Nonnull BankRedirectDataOneOf12Przelewy24 przelewy24) {
+    
+    this.przelewy24 = przelewy24;
+    return this;
+  }
 
-    /**
-        * Get przelewy24
-    * @return przelewy24
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_PRZELEWY24)
+  /**
+   * Get przelewy24
+   * @return przelewy24
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_PRZELEWY24)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public BankRedirectDataOneOf12Przelewy24 getPrzelewy24() {
-        return przelewy24;
-    }
+  public BankRedirectDataOneOf12Przelewy24 getPrzelewy24() {
+    return przelewy24;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_PRZELEWY24)
+  @JsonProperty(JSON_PROPERTY_PRZELEWY24)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setPrzelewy24(@javax.annotation.Nonnull BankRedirectDataOneOf12Przelewy24 przelewy24) {
-            this.przelewy24 = przelewy24;
-        }
+    this.przelewy24 = przelewy24;
+  }
 
-@Override
-public boolean equals(Object o) {
+  @Override
+  public boolean equals(Object o) {
     if (this == o) {
-    return true;
+      return true;
     }
     if (o == null || getClass() != o.getClass()) {
-    return false;
+      return false;
     }
-        BankRedirectDataOneOf12 bankRedirectDataOneOf12 = (BankRedirectDataOneOf12) o;
-        return Objects.equals(this.przelewy24, bankRedirectDataOneOf12.przelewy24);
-}
+    BankRedirectDataOneOf12 bankRedirectDataOneOf12 = (BankRedirectDataOneOf12) o;
+    return Objects.equals(this.przelewy24, bankRedirectDataOneOf12.przelewy24);
+  }
 
-    @Override
-    public int hashCode() {
-        return Objects.hash(przelewy24);
-    }
+  @Override
+  public int hashCode() {
+    return Objects.hash(przelewy24);
+  }
 
-    @Override
-    public String toString() {
+  @Override
+  public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class BankRedirectDataOneOf12 {\n");
-        sb.append("    przelewy24: ").append(toIndentedString(przelewy24)).append("\n");
+    sb.append("    przelewy24: ").append(toIndentedString(przelewy24)).append("\n");
     sb.append("}");
     return sb.toString();
-    }
+  }
 
-    /**
-    * Convert the given object to string with each line indented by 4 spaces
-    * (except the first line).
-    */
-    private String toIndentedString(Object o) {
+  /**
+   * Convert the given object to string with each line indented by 4 spaces
+   * (except the first line).
+   */
+  private String toIndentedString(Object o) {
     if (o == null) {
-    return "null";
+      return "null";
     }
     return o.toString().replace("\n", "\n    ");
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @return URL query string
+   */
+  public String toUrlQueryString() {
+    return toUrlQueryString(null);
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @param prefix prefix of the query string
+   * @return URL query string
+   */
+  public String toUrlQueryString(String prefix) {
+    String suffix = "";
+    String containerSuffix = "";
+    String containerPrefix = "";
+    if (prefix == null) {
+      // style=form, explode=true, e.g. /pet?name=cat&type=manx
+      prefix = "";
+    } else {
+      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+      prefix = prefix + "[";
+      suffix = "]";
+      containerSuffix = "]";
+      containerPrefix = "[";
     }
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @return URL query string
-        */
-        public String toUrlQueryString() {
-        return toUrlQueryString(null);
-        }
+    StringJoiner joiner = new StringJoiner("&");
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @param prefix prefix of the query string
-        * @return URL query string
-        */
-        public String toUrlQueryString(String prefix) {
-        String suffix = "";
-        String containerSuffix = "";
-        String containerPrefix = "";
-        if (prefix == null) {
-        // style=form, explode=true, e.g. /pet?name=cat&type=manx
-        prefix = "";
-        } else {
-        // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
-        prefix = prefix + "[";
-        suffix = "]";
-        containerSuffix = "]";
-        containerPrefix = "[";
-        }
-
-        StringJoiner joiner = new StringJoiner("&");
-
-            // add `przelewy24` to the URL query string
-                            if (getPrzelewy24() != null) {
-                            joiner.add(getPrzelewy24().toUrlQueryString(prefix + "przelewy24" + suffix));
-                            }
-
-        return joiner.toString();
-        }
-
+    // add `przelewy24` to the URL query string
+    if (getPrzelewy24() != null) {
+      joiner.add(getPrzelewy24().toUrlQueryString(prefix + "przelewy24" + suffix));
     }
+
+    return joiner.toString();
+  }
+
+}
 

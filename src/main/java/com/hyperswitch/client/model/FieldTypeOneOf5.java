@@ -28,122 +28,122 @@ import java.net.URLEncoder;
 import java.util.StringJoiner;
 
 /**
-* FieldTypeOneOf5
-*/
-    @JsonPropertyOrder({
-        FieldTypeOneOf5.JSON_PROPERTY_LANGUAGE_PREFERENCE
-    })
-            @JsonTypeName("FieldType_oneOf_5")
+ * FieldTypeOneOf5
+ */
+@JsonPropertyOrder({
+  FieldTypeOneOf5.JSON_PROPERTY_LANGUAGE_PREFERENCE
+})
+@JsonTypeName("FieldType_oneOf_5")
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class FieldTypeOneOf5 {
-        public static final String JSON_PROPERTY_LANGUAGE_PREFERENCE = "language_preference";
-    @javax.annotation.Nonnull
-            private FieldTypeOneOfUserCountry languagePreference;
+  public static final String JSON_PROPERTY_LANGUAGE_PREFERENCE = "language_preference";
+  @javax.annotation.Nonnull
+  private FieldTypeOneOfUserCountry languagePreference;
 
-public FieldTypeOneOf5() {
-}
+  public FieldTypeOneOf5() {
+  }
 
-        public FieldTypeOneOf5 languagePreference(@javax.annotation.Nonnull FieldTypeOneOfUserCountry languagePreference) {
-        
-        this.languagePreference = languagePreference;
-        return this;
-        }
+  public FieldTypeOneOf5 languagePreference(@javax.annotation.Nonnull FieldTypeOneOfUserCountry languagePreference) {
+    
+    this.languagePreference = languagePreference;
+    return this;
+  }
 
-    /**
-        * Get languagePreference
-    * @return languagePreference
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_LANGUAGE_PREFERENCE)
+  /**
+   * Get languagePreference
+   * @return languagePreference
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_LANGUAGE_PREFERENCE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public FieldTypeOneOfUserCountry getLanguagePreference() {
-        return languagePreference;
-    }
+  public FieldTypeOneOfUserCountry getLanguagePreference() {
+    return languagePreference;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_LANGUAGE_PREFERENCE)
+  @JsonProperty(JSON_PROPERTY_LANGUAGE_PREFERENCE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setLanguagePreference(@javax.annotation.Nonnull FieldTypeOneOfUserCountry languagePreference) {
-            this.languagePreference = languagePreference;
-        }
+    this.languagePreference = languagePreference;
+  }
 
-@Override
-public boolean equals(Object o) {
+  @Override
+  public boolean equals(Object o) {
     if (this == o) {
-    return true;
+      return true;
     }
     if (o == null || getClass() != o.getClass()) {
-    return false;
+      return false;
     }
-        FieldTypeOneOf5 fieldTypeOneOf5 = (FieldTypeOneOf5) o;
-        return Objects.equals(this.languagePreference, fieldTypeOneOf5.languagePreference);
-}
+    FieldTypeOneOf5 fieldTypeOneOf5 = (FieldTypeOneOf5) o;
+    return Objects.equals(this.languagePreference, fieldTypeOneOf5.languagePreference);
+  }
 
-    @Override
-    public int hashCode() {
-        return Objects.hash(languagePreference);
-    }
+  @Override
+  public int hashCode() {
+    return Objects.hash(languagePreference);
+  }
 
-    @Override
-    public String toString() {
+  @Override
+  public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class FieldTypeOneOf5 {\n");
-        sb.append("    languagePreference: ").append(toIndentedString(languagePreference)).append("\n");
+    sb.append("    languagePreference: ").append(toIndentedString(languagePreference)).append("\n");
     sb.append("}");
     return sb.toString();
-    }
+  }
 
-    /**
-    * Convert the given object to string with each line indented by 4 spaces
-    * (except the first line).
-    */
-    private String toIndentedString(Object o) {
+  /**
+   * Convert the given object to string with each line indented by 4 spaces
+   * (except the first line).
+   */
+  private String toIndentedString(Object o) {
     if (o == null) {
-    return "null";
+      return "null";
     }
     return o.toString().replace("\n", "\n    ");
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @return URL query string
+   */
+  public String toUrlQueryString() {
+    return toUrlQueryString(null);
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @param prefix prefix of the query string
+   * @return URL query string
+   */
+  public String toUrlQueryString(String prefix) {
+    String suffix = "";
+    String containerSuffix = "";
+    String containerPrefix = "";
+    if (prefix == null) {
+      // style=form, explode=true, e.g. /pet?name=cat&type=manx
+      prefix = "";
+    } else {
+      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+      prefix = prefix + "[";
+      suffix = "]";
+      containerSuffix = "]";
+      containerPrefix = "[";
     }
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @return URL query string
-        */
-        public String toUrlQueryString() {
-        return toUrlQueryString(null);
-        }
+    StringJoiner joiner = new StringJoiner("&");
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @param prefix prefix of the query string
-        * @return URL query string
-        */
-        public String toUrlQueryString(String prefix) {
-        String suffix = "";
-        String containerSuffix = "";
-        String containerPrefix = "";
-        if (prefix == null) {
-        // style=form, explode=true, e.g. /pet?name=cat&type=manx
-        prefix = "";
-        } else {
-        // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
-        prefix = prefix + "[";
-        suffix = "]";
-        containerSuffix = "]";
-        containerPrefix = "[";
-        }
-
-        StringJoiner joiner = new StringJoiner("&");
-
-            // add `language_preference` to the URL query string
-                            if (getLanguagePreference() != null) {
-                            joiner.add(getLanguagePreference().toUrlQueryString(prefix + "language_preference" + suffix));
-                            }
-
-        return joiner.toString();
-        }
-
+    // add `language_preference` to the URL query string
+    if (getLanguagePreference() != null) {
+      joiner.add(getLanguagePreference().toUrlQueryString(prefix + "language_preference" + suffix));
     }
+
+    return joiner.toString();
+  }
+
+}
 

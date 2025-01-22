@@ -28,168 +28,168 @@ import java.net.URLEncoder;
 import java.util.StringJoiner;
 
 /**
-* GpayBillingAddressParameters
-*/
-    @JsonPropertyOrder({
-        GpayBillingAddressParameters.JSON_PROPERTY_PHONE_NUMBER_REQUIRED,
-        GpayBillingAddressParameters.JSON_PROPERTY_FORMAT
-    })
+ * GpayBillingAddressParameters
+ */
+@JsonPropertyOrder({
+  GpayBillingAddressParameters.JSON_PROPERTY_PHONE_NUMBER_REQUIRED,
+  GpayBillingAddressParameters.JSON_PROPERTY_FORMAT
+})
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class GpayBillingAddressParameters {
-        public static final String JSON_PROPERTY_PHONE_NUMBER_REQUIRED = "phone_number_required";
-    @javax.annotation.Nonnull
-            private Boolean phoneNumberRequired;
+  public static final String JSON_PROPERTY_PHONE_NUMBER_REQUIRED = "phone_number_required";
+  @javax.annotation.Nonnull
+  private Boolean phoneNumberRequired;
 
-        public static final String JSON_PROPERTY_FORMAT = "format";
-    @javax.annotation.Nonnull
-            private GpayBillingAddressFormat format;
+  public static final String JSON_PROPERTY_FORMAT = "format";
+  @javax.annotation.Nonnull
+  private GpayBillingAddressFormat format;
 
-public GpayBillingAddressParameters() {
-}
+  public GpayBillingAddressParameters() {
+  }
 
-        public GpayBillingAddressParameters phoneNumberRequired(@javax.annotation.Nonnull Boolean phoneNumberRequired) {
-        
-        this.phoneNumberRequired = phoneNumberRequired;
-        return this;
-        }
+  public GpayBillingAddressParameters phoneNumberRequired(@javax.annotation.Nonnull Boolean phoneNumberRequired) {
+    
+    this.phoneNumberRequired = phoneNumberRequired;
+    return this;
+  }
 
-    /**
-        * Is billing phone number required
-    * @return phoneNumberRequired
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_PHONE_NUMBER_REQUIRED)
+  /**
+   * Is billing phone number required
+   * @return phoneNumberRequired
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_PHONE_NUMBER_REQUIRED)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public Boolean getPhoneNumberRequired() {
-        return phoneNumberRequired;
-    }
+  public Boolean getPhoneNumberRequired() {
+    return phoneNumberRequired;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_PHONE_NUMBER_REQUIRED)
+  @JsonProperty(JSON_PROPERTY_PHONE_NUMBER_REQUIRED)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setPhoneNumberRequired(@javax.annotation.Nonnull Boolean phoneNumberRequired) {
-            this.phoneNumberRequired = phoneNumberRequired;
-        }
+    this.phoneNumberRequired = phoneNumberRequired;
+  }
 
-        public GpayBillingAddressParameters format(@javax.annotation.Nonnull GpayBillingAddressFormat format) {
-        
-        this.format = format;
-        return this;
-        }
+  public GpayBillingAddressParameters format(@javax.annotation.Nonnull GpayBillingAddressFormat format) {
+    
+    this.format = format;
+    return this;
+  }
 
-    /**
-        * Get format
-    * @return format
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_FORMAT)
+  /**
+   * Get format
+   * @return format
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_FORMAT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public GpayBillingAddressFormat getFormat() {
-        return format;
-    }
+  public GpayBillingAddressFormat getFormat() {
+    return format;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_FORMAT)
+  @JsonProperty(JSON_PROPERTY_FORMAT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setFormat(@javax.annotation.Nonnull GpayBillingAddressFormat format) {
-            this.format = format;
-        }
+    this.format = format;
+  }
 
-@Override
-public boolean equals(Object o) {
+  @Override
+  public boolean equals(Object o) {
     if (this == o) {
-    return true;
+      return true;
     }
     if (o == null || getClass() != o.getClass()) {
-    return false;
+      return false;
     }
-        GpayBillingAddressParameters gpayBillingAddressParameters = (GpayBillingAddressParameters) o;
-        return Objects.equals(this.phoneNumberRequired, gpayBillingAddressParameters.phoneNumberRequired) &&
+    GpayBillingAddressParameters gpayBillingAddressParameters = (GpayBillingAddressParameters) o;
+    return Objects.equals(this.phoneNumberRequired, gpayBillingAddressParameters.phoneNumberRequired) &&
         Objects.equals(this.format, gpayBillingAddressParameters.format);
-}
+  }
 
-    @Override
-    public int hashCode() {
-        return Objects.hash(phoneNumberRequired, format);
-    }
+  @Override
+  public int hashCode() {
+    return Objects.hash(phoneNumberRequired, format);
+  }
 
-    @Override
-    public String toString() {
+  @Override
+  public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class GpayBillingAddressParameters {\n");
-        sb.append("    phoneNumberRequired: ").append(toIndentedString(phoneNumberRequired)).append("\n");
-        sb.append("    format: ").append(toIndentedString(format)).append("\n");
+    sb.append("    phoneNumberRequired: ").append(toIndentedString(phoneNumberRequired)).append("\n");
+    sb.append("    format: ").append(toIndentedString(format)).append("\n");
     sb.append("}");
     return sb.toString();
-    }
+  }
 
-    /**
-    * Convert the given object to string with each line indented by 4 spaces
-    * (except the first line).
-    */
-    private String toIndentedString(Object o) {
+  /**
+   * Convert the given object to string with each line indented by 4 spaces
+   * (except the first line).
+   */
+  private String toIndentedString(Object o) {
     if (o == null) {
-    return "null";
+      return "null";
     }
     return o.toString().replace("\n", "\n    ");
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @return URL query string
+   */
+  public String toUrlQueryString() {
+    return toUrlQueryString(null);
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @param prefix prefix of the query string
+   * @return URL query string
+   */
+  public String toUrlQueryString(String prefix) {
+    String suffix = "";
+    String containerSuffix = "";
+    String containerPrefix = "";
+    if (prefix == null) {
+      // style=form, explode=true, e.g. /pet?name=cat&type=manx
+      prefix = "";
+    } else {
+      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+      prefix = prefix + "[";
+      suffix = "]";
+      containerSuffix = "]";
+      containerPrefix = "[";
     }
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @return URL query string
-        */
-        public String toUrlQueryString() {
-        return toUrlQueryString(null);
-        }
+    StringJoiner joiner = new StringJoiner("&");
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @param prefix prefix of the query string
-        * @return URL query string
-        */
-        public String toUrlQueryString(String prefix) {
-        String suffix = "";
-        String containerSuffix = "";
-        String containerPrefix = "";
-        if (prefix == null) {
-        // style=form, explode=true, e.g. /pet?name=cat&type=manx
-        prefix = "";
-        } else {
-        // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
-        prefix = prefix + "[";
-        suffix = "]";
-        containerSuffix = "]";
-        containerPrefix = "[";
-        }
-
-        StringJoiner joiner = new StringJoiner("&");
-
-            // add `phone_number_required` to the URL query string
-                        if (getPhoneNumberRequired() != null) {
-                        try {
-                        joiner.add(String.format("%sphone_number_required%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getPhoneNumberRequired()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-            // add `format` to the URL query string
-                            if (getFormat() != null) {
-                            try {
-                            joiner.add(String.format("%sformat%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getFormat()), "UTF-8").replaceAll("\\+", "%20")));
-                            } catch (UnsupportedEncodingException e) {
-                            // Should never happen, UTF-8 is always supported
-                            throw new RuntimeException(e);
-                            }
-                            }
-
-        return joiner.toString();
-        }
-
+    // add `phone_number_required` to the URL query string
+    if (getPhoneNumberRequired() != null) {
+      try {
+        joiner.add(String.format("%sphone_number_required%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getPhoneNumberRequired()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
     }
+
+    // add `format` to the URL query string
+    if (getFormat() != null) {
+      try {
+        joiner.add(String.format("%sformat%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getFormat()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    return joiner.toString();
+  }
+
+}
 

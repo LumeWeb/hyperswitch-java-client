@@ -27,127 +27,127 @@ import java.net.URLEncoder;
 import java.util.StringJoiner;
 
 /**
-* BankTransferAdditionalDataOneOf3
-*/
-    @JsonPropertyOrder({
-        BankTransferAdditionalDataOneOf3.JSON_PROPERTY_MULTIBANCO
-    })
-            @JsonTypeName("BankTransferAdditionalData_oneOf_3")
+ * BankTransferAdditionalDataOneOf3
+ */
+@JsonPropertyOrder({
+  BankTransferAdditionalDataOneOf3.JSON_PROPERTY_MULTIBANCO
+})
+@JsonTypeName("BankTransferAdditionalData_oneOf_3")
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class BankTransferAdditionalDataOneOf3 {
-        public static final String JSON_PROPERTY_MULTIBANCO = "multibanco";
-    @javax.annotation.Nonnull
-            private Object multibanco;
+  public static final String JSON_PROPERTY_MULTIBANCO = "multibanco";
+  @javax.annotation.Nonnull
+  private Object multibanco;
 
-public BankTransferAdditionalDataOneOf3() {
-}
+  public BankTransferAdditionalDataOneOf3() {
+  }
 
-        public BankTransferAdditionalDataOneOf3 multibanco(@javax.annotation.Nonnull Object multibanco) {
-        
-        this.multibanco = multibanco;
-        return this;
-        }
+  public BankTransferAdditionalDataOneOf3 multibanco(@javax.annotation.Nonnull Object multibanco) {
+    
+    this.multibanco = multibanco;
+    return this;
+  }
 
-    /**
-        * Get multibanco
-    * @return multibanco
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_MULTIBANCO)
+  /**
+   * Get multibanco
+   * @return multibanco
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_MULTIBANCO)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public Object getMultibanco() {
-        return multibanco;
-    }
+  public Object getMultibanco() {
+    return multibanco;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_MULTIBANCO)
+  @JsonProperty(JSON_PROPERTY_MULTIBANCO)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setMultibanco(@javax.annotation.Nonnull Object multibanco) {
-            this.multibanco = multibanco;
-        }
+    this.multibanco = multibanco;
+  }
 
-@Override
-public boolean equals(Object o) {
+  @Override
+  public boolean equals(Object o) {
     if (this == o) {
-    return true;
+      return true;
     }
     if (o == null || getClass() != o.getClass()) {
-    return false;
+      return false;
     }
-        BankTransferAdditionalDataOneOf3 bankTransferAdditionalDataOneOf3 = (BankTransferAdditionalDataOneOf3) o;
-        return Objects.equals(this.multibanco, bankTransferAdditionalDataOneOf3.multibanco);
-}
+    BankTransferAdditionalDataOneOf3 bankTransferAdditionalDataOneOf3 = (BankTransferAdditionalDataOneOf3) o;
+    return Objects.equals(this.multibanco, bankTransferAdditionalDataOneOf3.multibanco);
+  }
 
-    @Override
-    public int hashCode() {
-        return Objects.hash(multibanco);
-    }
+  @Override
+  public int hashCode() {
+    return Objects.hash(multibanco);
+  }
 
-    @Override
-    public String toString() {
+  @Override
+  public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class BankTransferAdditionalDataOneOf3 {\n");
-        sb.append("    multibanco: ").append(toIndentedString(multibanco)).append("\n");
+    sb.append("    multibanco: ").append(toIndentedString(multibanco)).append("\n");
     sb.append("}");
     return sb.toString();
-    }
+  }
 
-    /**
-    * Convert the given object to string with each line indented by 4 spaces
-    * (except the first line).
-    */
-    private String toIndentedString(Object o) {
+  /**
+   * Convert the given object to string with each line indented by 4 spaces
+   * (except the first line).
+   */
+  private String toIndentedString(Object o) {
     if (o == null) {
-    return "null";
+      return "null";
     }
     return o.toString().replace("\n", "\n    ");
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @return URL query string
+   */
+  public String toUrlQueryString() {
+    return toUrlQueryString(null);
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @param prefix prefix of the query string
+   * @return URL query string
+   */
+  public String toUrlQueryString(String prefix) {
+    String suffix = "";
+    String containerSuffix = "";
+    String containerPrefix = "";
+    if (prefix == null) {
+      // style=form, explode=true, e.g. /pet?name=cat&type=manx
+      prefix = "";
+    } else {
+      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+      prefix = prefix + "[";
+      suffix = "]";
+      containerSuffix = "]";
+      containerPrefix = "[";
     }
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @return URL query string
-        */
-        public String toUrlQueryString() {
-        return toUrlQueryString(null);
-        }
+    StringJoiner joiner = new StringJoiner("&");
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @param prefix prefix of the query string
-        * @return URL query string
-        */
-        public String toUrlQueryString(String prefix) {
-        String suffix = "";
-        String containerSuffix = "";
-        String containerPrefix = "";
-        if (prefix == null) {
-        // style=form, explode=true, e.g. /pet?name=cat&type=manx
-        prefix = "";
-        } else {
-        // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
-        prefix = prefix + "[";
-        suffix = "]";
-        containerSuffix = "]";
-        containerPrefix = "[";
-        }
-
-        StringJoiner joiner = new StringJoiner("&");
-
-            // add `multibanco` to the URL query string
-                        if (getMultibanco() != null) {
-                        try {
-                        joiner.add(String.format("%smultibanco%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getMultibanco()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-        return joiner.toString();
-        }
-
+    // add `multibanco` to the URL query string
+    if (getMultibanco() != null) {
+      try {
+        joiner.add(String.format("%smultibanco%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getMultibanco()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
     }
+
+    return joiner.toString();
+  }
+
+}
 

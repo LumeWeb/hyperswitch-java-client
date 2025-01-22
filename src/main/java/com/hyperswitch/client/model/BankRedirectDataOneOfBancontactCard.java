@@ -32,309 +32,309 @@ import java.net.URLEncoder;
 import java.util.StringJoiner;
 
 /**
-* BankRedirectDataOneOfBancontactCard
-*/
-    @JsonPropertyOrder({
-        BankRedirectDataOneOfBancontactCard.JSON_PROPERTY_CARD_NUMBER,
-        BankRedirectDataOneOfBancontactCard.JSON_PROPERTY_CARD_EXP_MONTH,
-        BankRedirectDataOneOfBancontactCard.JSON_PROPERTY_CARD_EXP_YEAR,
-        BankRedirectDataOneOfBancontactCard.JSON_PROPERTY_CARD_HOLDER_NAME,
-        BankRedirectDataOneOfBancontactCard.JSON_PROPERTY_BILLING_DETAILS
-    })
-            @JsonTypeName("BankRedirectData_oneOf_bancontact_card")
+ * BankRedirectDataOneOfBancontactCard
+ */
+@JsonPropertyOrder({
+  BankRedirectDataOneOfBancontactCard.JSON_PROPERTY_CARD_NUMBER,
+  BankRedirectDataOneOfBancontactCard.JSON_PROPERTY_CARD_EXP_MONTH,
+  BankRedirectDataOneOfBancontactCard.JSON_PROPERTY_CARD_EXP_YEAR,
+  BankRedirectDataOneOfBancontactCard.JSON_PROPERTY_CARD_HOLDER_NAME,
+  BankRedirectDataOneOfBancontactCard.JSON_PROPERTY_BILLING_DETAILS
+})
+@JsonTypeName("BankRedirectData_oneOf_bancontact_card")
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class BankRedirectDataOneOfBancontactCard {
-        public static final String JSON_PROPERTY_CARD_NUMBER = "card_number";
-    @javax.annotation.Nonnull
-            private String cardNumber;
+  public static final String JSON_PROPERTY_CARD_NUMBER = "card_number";
+  @javax.annotation.Nonnull
+  private String cardNumber;
 
-        public static final String JSON_PROPERTY_CARD_EXP_MONTH = "card_exp_month";
-    @javax.annotation.Nonnull
-            private String cardExpMonth;
+  public static final String JSON_PROPERTY_CARD_EXP_MONTH = "card_exp_month";
+  @javax.annotation.Nonnull
+  private String cardExpMonth;
 
-        public static final String JSON_PROPERTY_CARD_EXP_YEAR = "card_exp_year";
-    @javax.annotation.Nonnull
-            private String cardExpYear;
+  public static final String JSON_PROPERTY_CARD_EXP_YEAR = "card_exp_year";
+  @javax.annotation.Nonnull
+  private String cardExpYear;
 
-        public static final String JSON_PROPERTY_CARD_HOLDER_NAME = "card_holder_name";
-    @javax.annotation.Nonnull
-            private String cardHolderName;
+  public static final String JSON_PROPERTY_CARD_HOLDER_NAME = "card_holder_name";
+  @javax.annotation.Nonnull
+  private String cardHolderName;
 
-        public static final String JSON_PROPERTY_BILLING_DETAILS = "billing_details";
-    @javax.annotation.Nullable
-            private JsonNullable<BankRedirectBilling> billingDetails = JsonNullable.<BankRedirectBilling>undefined();
+  public static final String JSON_PROPERTY_BILLING_DETAILS = "billing_details";
+  @javax.annotation.Nullable
+  private JsonNullable<BankRedirectBilling> billingDetails = JsonNullable.<BankRedirectBilling>undefined();
 
-public BankRedirectDataOneOfBancontactCard() {
-}
+  public BankRedirectDataOneOfBancontactCard() {
+  }
 
-        public BankRedirectDataOneOfBancontactCard cardNumber(@javax.annotation.Nonnull String cardNumber) {
-        
-        this.cardNumber = cardNumber;
-        return this;
-        }
+  public BankRedirectDataOneOfBancontactCard cardNumber(@javax.annotation.Nonnull String cardNumber) {
+    
+    this.cardNumber = cardNumber;
+    return this;
+  }
 
-    /**
-        * The card number
-    * @return cardNumber
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_CARD_NUMBER)
+  /**
+   * The card number
+   * @return cardNumber
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_CARD_NUMBER)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public String getCardNumber() {
-        return cardNumber;
-    }
+  public String getCardNumber() {
+    return cardNumber;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_CARD_NUMBER)
+  @JsonProperty(JSON_PROPERTY_CARD_NUMBER)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setCardNumber(@javax.annotation.Nonnull String cardNumber) {
-            this.cardNumber = cardNumber;
-        }
+    this.cardNumber = cardNumber;
+  }
 
-        public BankRedirectDataOneOfBancontactCard cardExpMonth(@javax.annotation.Nonnull String cardExpMonth) {
-        
-        this.cardExpMonth = cardExpMonth;
-        return this;
-        }
+  public BankRedirectDataOneOfBancontactCard cardExpMonth(@javax.annotation.Nonnull String cardExpMonth) {
+    
+    this.cardExpMonth = cardExpMonth;
+    return this;
+  }
 
-    /**
-        * The card&#39;s expiry month
-    * @return cardExpMonth
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_CARD_EXP_MONTH)
+  /**
+   * The card&#39;s expiry month
+   * @return cardExpMonth
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_CARD_EXP_MONTH)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public String getCardExpMonth() {
-        return cardExpMonth;
-    }
+  public String getCardExpMonth() {
+    return cardExpMonth;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_CARD_EXP_MONTH)
+  @JsonProperty(JSON_PROPERTY_CARD_EXP_MONTH)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setCardExpMonth(@javax.annotation.Nonnull String cardExpMonth) {
-            this.cardExpMonth = cardExpMonth;
-        }
+    this.cardExpMonth = cardExpMonth;
+  }
 
-        public BankRedirectDataOneOfBancontactCard cardExpYear(@javax.annotation.Nonnull String cardExpYear) {
-        
-        this.cardExpYear = cardExpYear;
-        return this;
-        }
+  public BankRedirectDataOneOfBancontactCard cardExpYear(@javax.annotation.Nonnull String cardExpYear) {
+    
+    this.cardExpYear = cardExpYear;
+    return this;
+  }
 
-    /**
-        * The card&#39;s expiry year
-    * @return cardExpYear
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_CARD_EXP_YEAR)
+  /**
+   * The card&#39;s expiry year
+   * @return cardExpYear
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_CARD_EXP_YEAR)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public String getCardExpYear() {
-        return cardExpYear;
-    }
+  public String getCardExpYear() {
+    return cardExpYear;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_CARD_EXP_YEAR)
+  @JsonProperty(JSON_PROPERTY_CARD_EXP_YEAR)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setCardExpYear(@javax.annotation.Nonnull String cardExpYear) {
-            this.cardExpYear = cardExpYear;
-        }
+    this.cardExpYear = cardExpYear;
+  }
 
-        public BankRedirectDataOneOfBancontactCard cardHolderName(@javax.annotation.Nonnull String cardHolderName) {
-        
-        this.cardHolderName = cardHolderName;
-        return this;
-        }
+  public BankRedirectDataOneOfBancontactCard cardHolderName(@javax.annotation.Nonnull String cardHolderName) {
+    
+    this.cardHolderName = cardHolderName;
+    return this;
+  }
 
-    /**
-        * The card holder&#39;s name
-    * @return cardHolderName
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_CARD_HOLDER_NAME)
+  /**
+   * The card holder&#39;s name
+   * @return cardHolderName
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_CARD_HOLDER_NAME)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public String getCardHolderName() {
-        return cardHolderName;
-    }
+  public String getCardHolderName() {
+    return cardHolderName;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_CARD_HOLDER_NAME)
+  @JsonProperty(JSON_PROPERTY_CARD_HOLDER_NAME)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setCardHolderName(@javax.annotation.Nonnull String cardHolderName) {
-            this.cardHolderName = cardHolderName;
-        }
+    this.cardHolderName = cardHolderName;
+  }
 
-        public BankRedirectDataOneOfBancontactCard billingDetails(@javax.annotation.Nullable BankRedirectBilling billingDetails) {
-        this.billingDetails = JsonNullable.<BankRedirectBilling>of(billingDetails);
-        
-        return this;
-        }
-
-    /**
-        * Get billingDetails
-    * @return billingDetails
-    */
-    @javax.annotation.Nullable
-        @JsonIgnore
+  public BankRedirectDataOneOfBancontactCard billingDetails(@javax.annotation.Nullable BankRedirectBilling billingDetails) {
+    this.billingDetails = JsonNullable.<BankRedirectBilling>of(billingDetails);
     
-    public BankRedirectBilling getBillingDetails() {
-                return billingDetails.orElse(null);
-    }
+    return this;
+  }
 
-          @JsonProperty(JSON_PROPERTY_BILLING_DETAILS)
+  /**
+   * Get billingDetails
+   * @return billingDetails
+   */
+  @javax.annotation.Nullable
+  @JsonIgnore
+
+  public BankRedirectBilling getBillingDetails() {
+        return billingDetails.orElse(null);
+  }
+
+  @JsonProperty(JSON_PROPERTY_BILLING_DETAILS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-        public JsonNullable<BankRedirectBilling> getBillingDetails_JsonNullable() {
-        return billingDetails;
-        }
-    
-        @JsonProperty(JSON_PROPERTY_BILLING_DETAILS)
-        public void setBillingDetails_JsonNullable(JsonNullable<BankRedirectBilling> billingDetails) {
-        this.billingDetails = billingDetails;
-        }
+  public JsonNullable<BankRedirectBilling> getBillingDetails_JsonNullable() {
+    return billingDetails;
+  }
+  
+  @JsonProperty(JSON_PROPERTY_BILLING_DETAILS)
+  public void setBillingDetails_JsonNullable(JsonNullable<BankRedirectBilling> billingDetails) {
+    this.billingDetails = billingDetails;
+  }
 
-          public void setBillingDetails(@javax.annotation.Nullable BankRedirectBilling billingDetails) {
-            this.billingDetails = JsonNullable.<BankRedirectBilling>of(billingDetails);
-        }
+  public void setBillingDetails(@javax.annotation.Nullable BankRedirectBilling billingDetails) {
+    this.billingDetails = JsonNullable.<BankRedirectBilling>of(billingDetails);
+  }
 
-@Override
-public boolean equals(Object o) {
+  @Override
+  public boolean equals(Object o) {
     if (this == o) {
-    return true;
+      return true;
     }
     if (o == null || getClass() != o.getClass()) {
-    return false;
+      return false;
     }
-        BankRedirectDataOneOfBancontactCard bankRedirectDataOneOfBancontactCard = (BankRedirectDataOneOfBancontactCard) o;
-        return Objects.equals(this.cardNumber, bankRedirectDataOneOfBancontactCard.cardNumber) &&
+    BankRedirectDataOneOfBancontactCard bankRedirectDataOneOfBancontactCard = (BankRedirectDataOneOfBancontactCard) o;
+    return Objects.equals(this.cardNumber, bankRedirectDataOneOfBancontactCard.cardNumber) &&
         Objects.equals(this.cardExpMonth, bankRedirectDataOneOfBancontactCard.cardExpMonth) &&
         Objects.equals(this.cardExpYear, bankRedirectDataOneOfBancontactCard.cardExpYear) &&
         Objects.equals(this.cardHolderName, bankRedirectDataOneOfBancontactCard.cardHolderName) &&
         equalsNullable(this.billingDetails, bankRedirectDataOneOfBancontactCard.billingDetails);
-}
+  }
 
-    private static <T> boolean equalsNullable(JsonNullable<T> a, JsonNullable<T> b) {
-        return a == b || (a != null && b != null && a.isPresent() && b.isPresent() && Objects.deepEquals(a.get(), b.get()));
-        }
+  private static <T> boolean equalsNullable(JsonNullable<T> a, JsonNullable<T> b) {
+    return a == b || (a != null && b != null && a.isPresent() && b.isPresent() && Objects.deepEquals(a.get(), b.get()));
+  }
 
-    @Override
-    public int hashCode() {
-        return Objects.hash(cardNumber, cardExpMonth, cardExpYear, cardHolderName, hashCodeNullable(billingDetails));
+  @Override
+  public int hashCode() {
+    return Objects.hash(cardNumber, cardExpMonth, cardExpYear, cardHolderName, hashCodeNullable(billingDetails));
+  }
+
+  private static <T> int hashCodeNullable(JsonNullable<T> a) {
+    if (a == null) {
+      return 1;
     }
+    return a.isPresent() ? Arrays.deepHashCode(new Object[]{a.get()}) : 31;
+  }
 
-        private static <T> int hashCodeNullable(JsonNullable<T> a) {
-        if (a == null) {
-        return 1;
-        }
-        return a.isPresent() ? Arrays.deepHashCode(new Object[]{a.get()}) : 31;
-        }
-
-    @Override
-    public String toString() {
+  @Override
+  public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class BankRedirectDataOneOfBancontactCard {\n");
-        sb.append("    cardNumber: ").append(toIndentedString(cardNumber)).append("\n");
-        sb.append("    cardExpMonth: ").append(toIndentedString(cardExpMonth)).append("\n");
-        sb.append("    cardExpYear: ").append(toIndentedString(cardExpYear)).append("\n");
-        sb.append("    cardHolderName: ").append(toIndentedString(cardHolderName)).append("\n");
-        sb.append("    billingDetails: ").append(toIndentedString(billingDetails)).append("\n");
+    sb.append("    cardNumber: ").append(toIndentedString(cardNumber)).append("\n");
+    sb.append("    cardExpMonth: ").append(toIndentedString(cardExpMonth)).append("\n");
+    sb.append("    cardExpYear: ").append(toIndentedString(cardExpYear)).append("\n");
+    sb.append("    cardHolderName: ").append(toIndentedString(cardHolderName)).append("\n");
+    sb.append("    billingDetails: ").append(toIndentedString(billingDetails)).append("\n");
     sb.append("}");
     return sb.toString();
-    }
+  }
 
-    /**
-    * Convert the given object to string with each line indented by 4 spaces
-    * (except the first line).
-    */
-    private String toIndentedString(Object o) {
+  /**
+   * Convert the given object to string with each line indented by 4 spaces
+   * (except the first line).
+   */
+  private String toIndentedString(Object o) {
     if (o == null) {
-    return "null";
+      return "null";
     }
     return o.toString().replace("\n", "\n    ");
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @return URL query string
+   */
+  public String toUrlQueryString() {
+    return toUrlQueryString(null);
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @param prefix prefix of the query string
+   * @return URL query string
+   */
+  public String toUrlQueryString(String prefix) {
+    String suffix = "";
+    String containerSuffix = "";
+    String containerPrefix = "";
+    if (prefix == null) {
+      // style=form, explode=true, e.g. /pet?name=cat&type=manx
+      prefix = "";
+    } else {
+      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+      prefix = prefix + "[";
+      suffix = "]";
+      containerSuffix = "]";
+      containerPrefix = "[";
     }
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @return URL query string
-        */
-        public String toUrlQueryString() {
-        return toUrlQueryString(null);
-        }
+    StringJoiner joiner = new StringJoiner("&");
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @param prefix prefix of the query string
-        * @return URL query string
-        */
-        public String toUrlQueryString(String prefix) {
-        String suffix = "";
-        String containerSuffix = "";
-        String containerPrefix = "";
-        if (prefix == null) {
-        // style=form, explode=true, e.g. /pet?name=cat&type=manx
-        prefix = "";
-        } else {
-        // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
-        prefix = prefix + "[";
-        suffix = "]";
-        containerSuffix = "]";
-        containerPrefix = "[";
-        }
-
-        StringJoiner joiner = new StringJoiner("&");
-
-            // add `card_number` to the URL query string
-                        if (getCardNumber() != null) {
-                        try {
-                        joiner.add(String.format("%scard_number%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCardNumber()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-            // add `card_exp_month` to the URL query string
-                        if (getCardExpMonth() != null) {
-                        try {
-                        joiner.add(String.format("%scard_exp_month%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCardExpMonth()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-            // add `card_exp_year` to the URL query string
-                        if (getCardExpYear() != null) {
-                        try {
-                        joiner.add(String.format("%scard_exp_year%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCardExpYear()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-            // add `card_holder_name` to the URL query string
-                        if (getCardHolderName() != null) {
-                        try {
-                        joiner.add(String.format("%scard_holder_name%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCardHolderName()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-            // add `billing_details` to the URL query string
-                            if (getBillingDetails() != null) {
-                            joiner.add(getBillingDetails().toUrlQueryString(prefix + "billing_details" + suffix));
-                            }
-
-        return joiner.toString();
-        }
-
+    // add `card_number` to the URL query string
+    if (getCardNumber() != null) {
+      try {
+        joiner.add(String.format("%scard_number%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCardNumber()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
     }
+
+    // add `card_exp_month` to the URL query string
+    if (getCardExpMonth() != null) {
+      try {
+        joiner.add(String.format("%scard_exp_month%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCardExpMonth()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `card_exp_year` to the URL query string
+    if (getCardExpYear() != null) {
+      try {
+        joiner.add(String.format("%scard_exp_year%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCardExpYear()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `card_holder_name` to the URL query string
+    if (getCardHolderName() != null) {
+      try {
+        joiner.add(String.format("%scard_holder_name%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCardHolderName()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `billing_details` to the URL query string
+    if (getBillingDetails() != null) {
+      joiner.add(getBillingDetails().toUrlQueryString(prefix + "billing_details" + suffix));
+    }
+
+    return joiner.toString();
+  }
+
+}
 

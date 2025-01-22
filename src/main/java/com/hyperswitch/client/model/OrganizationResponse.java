@@ -32,371 +32,371 @@ import java.net.URLEncoder;
 import java.util.StringJoiner;
 
 /**
-* OrganizationResponse
-*/
-    @JsonPropertyOrder({
-        OrganizationResponse.JSON_PROPERTY_ORGANIZATION_ID,
-        OrganizationResponse.JSON_PROPERTY_ORGANIZATION_NAME,
-        OrganizationResponse.JSON_PROPERTY_ORGANIZATION_DETAILS,
-        OrganizationResponse.JSON_PROPERTY_METADATA,
-        OrganizationResponse.JSON_PROPERTY_MODIFIED_AT,
-        OrganizationResponse.JSON_PROPERTY_CREATED_AT
-    })
+ * OrganizationResponse
+ */
+@JsonPropertyOrder({
+  OrganizationResponse.JSON_PROPERTY_ORGANIZATION_ID,
+  OrganizationResponse.JSON_PROPERTY_ORGANIZATION_NAME,
+  OrganizationResponse.JSON_PROPERTY_ORGANIZATION_DETAILS,
+  OrganizationResponse.JSON_PROPERTY_METADATA,
+  OrganizationResponse.JSON_PROPERTY_MODIFIED_AT,
+  OrganizationResponse.JSON_PROPERTY_CREATED_AT
+})
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class OrganizationResponse {
-        public static final String JSON_PROPERTY_ORGANIZATION_ID = "organization_id";
-    @javax.annotation.Nonnull
-            private String organizationId;
+  public static final String JSON_PROPERTY_ORGANIZATION_ID = "organization_id";
+  @javax.annotation.Nonnull
+  private String organizationId;
 
-        public static final String JSON_PROPERTY_ORGANIZATION_NAME = "organization_name";
-    @javax.annotation.Nullable
-            private JsonNullable<String> organizationName = JsonNullable.<String>undefined();
+  public static final String JSON_PROPERTY_ORGANIZATION_NAME = "organization_name";
+  @javax.annotation.Nullable
+  private JsonNullable<String> organizationName = JsonNullable.<String>undefined();
 
-        public static final String JSON_PROPERTY_ORGANIZATION_DETAILS = "organization_details";
-    @javax.annotation.Nullable
-            private JsonNullable<Object> organizationDetails = JsonNullable.<Object>undefined();
+  public static final String JSON_PROPERTY_ORGANIZATION_DETAILS = "organization_details";
+  @javax.annotation.Nullable
+  private JsonNullable<Object> organizationDetails = JsonNullable.<Object>undefined();
 
-        public static final String JSON_PROPERTY_METADATA = "metadata";
-    @javax.annotation.Nullable
-            private JsonNullable<Object> metadata = JsonNullable.<Object>undefined();
+  public static final String JSON_PROPERTY_METADATA = "metadata";
+  @javax.annotation.Nullable
+  private JsonNullable<Object> metadata = JsonNullable.<Object>undefined();
 
-        public static final String JSON_PROPERTY_MODIFIED_AT = "modified_at";
-    @javax.annotation.Nonnull
-            private OffsetDateTime modifiedAt;
+  public static final String JSON_PROPERTY_MODIFIED_AT = "modified_at";
+  @javax.annotation.Nonnull
+  private OffsetDateTime modifiedAt;
 
-        public static final String JSON_PROPERTY_CREATED_AT = "created_at";
-    @javax.annotation.Nonnull
-            private OffsetDateTime createdAt;
+  public static final String JSON_PROPERTY_CREATED_AT = "created_at";
+  @javax.annotation.Nonnull
+  private OffsetDateTime createdAt;
 
-public OrganizationResponse() {
-}
+  public OrganizationResponse() {
+  }
 
-        public OrganizationResponse organizationId(@javax.annotation.Nonnull String organizationId) {
-        
-        this.organizationId = organizationId;
-        return this;
-        }
+  public OrganizationResponse organizationId(@javax.annotation.Nonnull String organizationId) {
+    
+    this.organizationId = organizationId;
+    return this;
+  }
 
-    /**
-        * The unique identifier for the Organization
-    * @return organizationId
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_ORGANIZATION_ID)
+  /**
+   * The unique identifier for the Organization
+   * @return organizationId
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_ORGANIZATION_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public String getOrganizationId() {
-        return organizationId;
-    }
+  public String getOrganizationId() {
+    return organizationId;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_ORGANIZATION_ID)
+  @JsonProperty(JSON_PROPERTY_ORGANIZATION_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setOrganizationId(@javax.annotation.Nonnull String organizationId) {
-            this.organizationId = organizationId;
-        }
+    this.organizationId = organizationId;
+  }
 
-        public OrganizationResponse organizationName(@javax.annotation.Nullable String organizationName) {
-        this.organizationName = JsonNullable.<String>of(organizationName);
-        
-        return this;
-        }
-
-    /**
-        * Name of the Organization
-    * @return organizationName
-    */
-    @javax.annotation.Nullable
-        @JsonIgnore
+  public OrganizationResponse organizationName(@javax.annotation.Nullable String organizationName) {
+    this.organizationName = JsonNullable.<String>of(organizationName);
     
-    public String getOrganizationName() {
-                return organizationName.orElse(null);
-    }
+    return this;
+  }
 
-          @JsonProperty(JSON_PROPERTY_ORGANIZATION_NAME)
+  /**
+   * Name of the Organization
+   * @return organizationName
+   */
+  @javax.annotation.Nullable
+  @JsonIgnore
+
+  public String getOrganizationName() {
+        return organizationName.orElse(null);
+  }
+
+  @JsonProperty(JSON_PROPERTY_ORGANIZATION_NAME)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-        public JsonNullable<String> getOrganizationName_JsonNullable() {
-        return organizationName;
-        }
+  public JsonNullable<String> getOrganizationName_JsonNullable() {
+    return organizationName;
+  }
+  
+  @JsonProperty(JSON_PROPERTY_ORGANIZATION_NAME)
+  public void setOrganizationName_JsonNullable(JsonNullable<String> organizationName) {
+    this.organizationName = organizationName;
+  }
+
+  public void setOrganizationName(@javax.annotation.Nullable String organizationName) {
+    this.organizationName = JsonNullable.<String>of(organizationName);
+  }
+
+  public OrganizationResponse organizationDetails(@javax.annotation.Nullable Object organizationDetails) {
+    this.organizationDetails = JsonNullable.<Object>of(organizationDetails);
     
-        @JsonProperty(JSON_PROPERTY_ORGANIZATION_NAME)
-        public void setOrganizationName_JsonNullable(JsonNullable<String> organizationName) {
-        this.organizationName = organizationName;
-        }
+    return this;
+  }
 
-          public void setOrganizationName(@javax.annotation.Nullable String organizationName) {
-            this.organizationName = JsonNullable.<String>of(organizationName);
-        }
+  /**
+   * Details about the organization
+   * @return organizationDetails
+   */
+  @javax.annotation.Nullable
+  @JsonIgnore
 
-        public OrganizationResponse organizationDetails(@javax.annotation.Nullable Object organizationDetails) {
-        this.organizationDetails = JsonNullable.<Object>of(organizationDetails);
-        
-        return this;
-        }
+  public Object getOrganizationDetails() {
+        return organizationDetails.orElse(null);
+  }
 
-    /**
-        * Details about the organization
-    * @return organizationDetails
-    */
-    @javax.annotation.Nullable
-        @JsonIgnore
-    
-    public Object getOrganizationDetails() {
-                return organizationDetails.orElse(null);
-    }
-
-          @JsonProperty(JSON_PROPERTY_ORGANIZATION_DETAILS)
+  @JsonProperty(JSON_PROPERTY_ORGANIZATION_DETAILS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-        public JsonNullable<Object> getOrganizationDetails_JsonNullable() {
-        return organizationDetails;
-        }
+  public JsonNullable<Object> getOrganizationDetails_JsonNullable() {
+    return organizationDetails;
+  }
+  
+  @JsonProperty(JSON_PROPERTY_ORGANIZATION_DETAILS)
+  public void setOrganizationDetails_JsonNullable(JsonNullable<Object> organizationDetails) {
+    this.organizationDetails = organizationDetails;
+  }
+
+  public void setOrganizationDetails(@javax.annotation.Nullable Object organizationDetails) {
+    this.organizationDetails = JsonNullable.<Object>of(organizationDetails);
+  }
+
+  public OrganizationResponse metadata(@javax.annotation.Nullable Object metadata) {
+    this.metadata = JsonNullable.<Object>of(metadata);
     
-        @JsonProperty(JSON_PROPERTY_ORGANIZATION_DETAILS)
-        public void setOrganizationDetails_JsonNullable(JsonNullable<Object> organizationDetails) {
-        this.organizationDetails = organizationDetails;
-        }
+    return this;
+  }
 
-          public void setOrganizationDetails(@javax.annotation.Nullable Object organizationDetails) {
-            this.organizationDetails = JsonNullable.<Object>of(organizationDetails);
-        }
+  /**
+   * Metadata is useful for storing additional, unstructured information on an object.
+   * @return metadata
+   */
+  @javax.annotation.Nullable
+  @JsonIgnore
 
-        public OrganizationResponse metadata(@javax.annotation.Nullable Object metadata) {
-        this.metadata = JsonNullable.<Object>of(metadata);
-        
-        return this;
-        }
+  public Object getMetadata() {
+        return metadata.orElse(null);
+  }
 
-    /**
-        * Metadata is useful for storing additional, unstructured information on an object.
-    * @return metadata
-    */
-    @javax.annotation.Nullable
-        @JsonIgnore
-    
-    public Object getMetadata() {
-                return metadata.orElse(null);
-    }
-
-          @JsonProperty(JSON_PROPERTY_METADATA)
+  @JsonProperty(JSON_PROPERTY_METADATA)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-        public JsonNullable<Object> getMetadata_JsonNullable() {
-        return metadata;
-        }
+  public JsonNullable<Object> getMetadata_JsonNullable() {
+    return metadata;
+  }
+  
+  @JsonProperty(JSON_PROPERTY_METADATA)
+  public void setMetadata_JsonNullable(JsonNullable<Object> metadata) {
+    this.metadata = metadata;
+  }
+
+  public void setMetadata(@javax.annotation.Nullable Object metadata) {
+    this.metadata = JsonNullable.<Object>of(metadata);
+  }
+
+  public OrganizationResponse modifiedAt(@javax.annotation.Nonnull OffsetDateTime modifiedAt) {
     
-        @JsonProperty(JSON_PROPERTY_METADATA)
-        public void setMetadata_JsonNullable(JsonNullable<Object> metadata) {
-        this.metadata = metadata;
-        }
+    this.modifiedAt = modifiedAt;
+    return this;
+  }
 
-          public void setMetadata(@javax.annotation.Nullable Object metadata) {
-            this.metadata = JsonNullable.<Object>of(metadata);
-        }
-
-        public OrganizationResponse modifiedAt(@javax.annotation.Nonnull OffsetDateTime modifiedAt) {
-        
-        this.modifiedAt = modifiedAt;
-        return this;
-        }
-
-    /**
-        * Get modifiedAt
-    * @return modifiedAt
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_MODIFIED_AT)
+  /**
+   * Get modifiedAt
+   * @return modifiedAt
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_MODIFIED_AT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public OffsetDateTime getModifiedAt() {
-        return modifiedAt;
-    }
+  public OffsetDateTime getModifiedAt() {
+    return modifiedAt;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_MODIFIED_AT)
+  @JsonProperty(JSON_PROPERTY_MODIFIED_AT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setModifiedAt(@javax.annotation.Nonnull OffsetDateTime modifiedAt) {
-            this.modifiedAt = modifiedAt;
-        }
+    this.modifiedAt = modifiedAt;
+  }
 
-        public OrganizationResponse createdAt(@javax.annotation.Nonnull OffsetDateTime createdAt) {
-        
-        this.createdAt = createdAt;
-        return this;
-        }
+  public OrganizationResponse createdAt(@javax.annotation.Nonnull OffsetDateTime createdAt) {
+    
+    this.createdAt = createdAt;
+    return this;
+  }
 
-    /**
-        * Get createdAt
-    * @return createdAt
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_CREATED_AT)
+  /**
+   * Get createdAt
+   * @return createdAt
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_CREATED_AT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public OffsetDateTime getCreatedAt() {
-        return createdAt;
-    }
+  public OffsetDateTime getCreatedAt() {
+    return createdAt;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_CREATED_AT)
+  @JsonProperty(JSON_PROPERTY_CREATED_AT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setCreatedAt(@javax.annotation.Nonnull OffsetDateTime createdAt) {
-            this.createdAt = createdAt;
-        }
+    this.createdAt = createdAt;
+  }
 
-@Override
-public boolean equals(Object o) {
+  @Override
+  public boolean equals(Object o) {
     if (this == o) {
-    return true;
+      return true;
     }
     if (o == null || getClass() != o.getClass()) {
-    return false;
+      return false;
     }
-        OrganizationResponse organizationResponse = (OrganizationResponse) o;
-        return Objects.equals(this.organizationId, organizationResponse.organizationId) &&
+    OrganizationResponse organizationResponse = (OrganizationResponse) o;
+    return Objects.equals(this.organizationId, organizationResponse.organizationId) &&
         equalsNullable(this.organizationName, organizationResponse.organizationName) &&
         equalsNullable(this.organizationDetails, organizationResponse.organizationDetails) &&
         equalsNullable(this.metadata, organizationResponse.metadata) &&
         Objects.equals(this.modifiedAt, organizationResponse.modifiedAt) &&
         Objects.equals(this.createdAt, organizationResponse.createdAt);
-}
+  }
 
-    private static <T> boolean equalsNullable(JsonNullable<T> a, JsonNullable<T> b) {
-        return a == b || (a != null && b != null && a.isPresent() && b.isPresent() && Objects.deepEquals(a.get(), b.get()));
-        }
+  private static <T> boolean equalsNullable(JsonNullable<T> a, JsonNullable<T> b) {
+    return a == b || (a != null && b != null && a.isPresent() && b.isPresent() && Objects.deepEquals(a.get(), b.get()));
+  }
 
-    @Override
-    public int hashCode() {
-        return Objects.hash(organizationId, hashCodeNullable(organizationName), hashCodeNullable(organizationDetails), hashCodeNullable(metadata), modifiedAt, createdAt);
+  @Override
+  public int hashCode() {
+    return Objects.hash(organizationId, hashCodeNullable(organizationName), hashCodeNullable(organizationDetails), hashCodeNullable(metadata), modifiedAt, createdAt);
+  }
+
+  private static <T> int hashCodeNullable(JsonNullable<T> a) {
+    if (a == null) {
+      return 1;
     }
+    return a.isPresent() ? Arrays.deepHashCode(new Object[]{a.get()}) : 31;
+  }
 
-        private static <T> int hashCodeNullable(JsonNullable<T> a) {
-        if (a == null) {
-        return 1;
-        }
-        return a.isPresent() ? Arrays.deepHashCode(new Object[]{a.get()}) : 31;
-        }
-
-    @Override
-    public String toString() {
+  @Override
+  public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class OrganizationResponse {\n");
-        sb.append("    organizationId: ").append(toIndentedString(organizationId)).append("\n");
-        sb.append("    organizationName: ").append(toIndentedString(organizationName)).append("\n");
-        sb.append("    organizationDetails: ").append(toIndentedString(organizationDetails)).append("\n");
-        sb.append("    metadata: ").append(toIndentedString(metadata)).append("\n");
-        sb.append("    modifiedAt: ").append(toIndentedString(modifiedAt)).append("\n");
-        sb.append("    createdAt: ").append(toIndentedString(createdAt)).append("\n");
+    sb.append("    organizationId: ").append(toIndentedString(organizationId)).append("\n");
+    sb.append("    organizationName: ").append(toIndentedString(organizationName)).append("\n");
+    sb.append("    organizationDetails: ").append(toIndentedString(organizationDetails)).append("\n");
+    sb.append("    metadata: ").append(toIndentedString(metadata)).append("\n");
+    sb.append("    modifiedAt: ").append(toIndentedString(modifiedAt)).append("\n");
+    sb.append("    createdAt: ").append(toIndentedString(createdAt)).append("\n");
     sb.append("}");
     return sb.toString();
-    }
+  }
 
-    /**
-    * Convert the given object to string with each line indented by 4 spaces
-    * (except the first line).
-    */
-    private String toIndentedString(Object o) {
+  /**
+   * Convert the given object to string with each line indented by 4 spaces
+   * (except the first line).
+   */
+  private String toIndentedString(Object o) {
     if (o == null) {
-    return "null";
+      return "null";
     }
     return o.toString().replace("\n", "\n    ");
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @return URL query string
+   */
+  public String toUrlQueryString() {
+    return toUrlQueryString(null);
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @param prefix prefix of the query string
+   * @return URL query string
+   */
+  public String toUrlQueryString(String prefix) {
+    String suffix = "";
+    String containerSuffix = "";
+    String containerPrefix = "";
+    if (prefix == null) {
+      // style=form, explode=true, e.g. /pet?name=cat&type=manx
+      prefix = "";
+    } else {
+      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+      prefix = prefix + "[";
+      suffix = "]";
+      containerSuffix = "]";
+      containerPrefix = "[";
     }
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @return URL query string
-        */
-        public String toUrlQueryString() {
-        return toUrlQueryString(null);
-        }
+    StringJoiner joiner = new StringJoiner("&");
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @param prefix prefix of the query string
-        * @return URL query string
-        */
-        public String toUrlQueryString(String prefix) {
-        String suffix = "";
-        String containerSuffix = "";
-        String containerPrefix = "";
-        if (prefix == null) {
-        // style=form, explode=true, e.g. /pet?name=cat&type=manx
-        prefix = "";
-        } else {
-        // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
-        prefix = prefix + "[";
-        suffix = "]";
-        containerSuffix = "]";
-        containerPrefix = "[";
-        }
-
-        StringJoiner joiner = new StringJoiner("&");
-
-            // add `organization_id` to the URL query string
-                        if (getOrganizationId() != null) {
-                        try {
-                        joiner.add(String.format("%sorganization_id%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getOrganizationId()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-            // add `organization_name` to the URL query string
-                        if (getOrganizationName() != null) {
-                        try {
-                        joiner.add(String.format("%sorganization_name%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getOrganizationName()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-            // add `organization_details` to the URL query string
-                        if (getOrganizationDetails() != null) {
-                        try {
-                        joiner.add(String.format("%sorganization_details%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getOrganizationDetails()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-            // add `metadata` to the URL query string
-                        if (getMetadata() != null) {
-                        try {
-                        joiner.add(String.format("%smetadata%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getMetadata()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-            // add `modified_at` to the URL query string
-                            if (getModifiedAt() != null) {
-                            try {
-                            joiner.add(String.format("%smodified_at%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getModifiedAt()), "UTF-8").replaceAll("\\+", "%20")));
-                            } catch (UnsupportedEncodingException e) {
-                            // Should never happen, UTF-8 is always supported
-                            throw new RuntimeException(e);
-                            }
-                            }
-
-            // add `created_at` to the URL query string
-                            if (getCreatedAt() != null) {
-                            try {
-                            joiner.add(String.format("%screated_at%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCreatedAt()), "UTF-8").replaceAll("\\+", "%20")));
-                            } catch (UnsupportedEncodingException e) {
-                            // Should never happen, UTF-8 is always supported
-                            throw new RuntimeException(e);
-                            }
-                            }
-
-        return joiner.toString();
-        }
-
+    // add `organization_id` to the URL query string
+    if (getOrganizationId() != null) {
+      try {
+        joiner.add(String.format("%sorganization_id%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getOrganizationId()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
     }
+
+    // add `organization_name` to the URL query string
+    if (getOrganizationName() != null) {
+      try {
+        joiner.add(String.format("%sorganization_name%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getOrganizationName()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `organization_details` to the URL query string
+    if (getOrganizationDetails() != null) {
+      try {
+        joiner.add(String.format("%sorganization_details%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getOrganizationDetails()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `metadata` to the URL query string
+    if (getMetadata() != null) {
+      try {
+        joiner.add(String.format("%smetadata%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getMetadata()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `modified_at` to the URL query string
+    if (getModifiedAt() != null) {
+      try {
+        joiner.add(String.format("%smodified_at%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getModifiedAt()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `created_at` to the URL query string
+    if (getCreatedAt() != null) {
+      try {
+        joiner.add(String.format("%screated_at%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCreatedAt()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    return joiner.toString();
+  }
+
+}
 

@@ -35,314 +35,314 @@ import java.net.URLEncoder;
 import java.util.StringJoiner;
 
 /**
-* The response information (headers, body and status code) received for the webhook sent.
-*/
-    @JsonPropertyOrder({
-        OutgoingWebhookResponseContent.JSON_PROPERTY_BODY,
-        OutgoingWebhookResponseContent.JSON_PROPERTY_HEADERS,
-        OutgoingWebhookResponseContent.JSON_PROPERTY_STATUS_CODE,
-        OutgoingWebhookResponseContent.JSON_PROPERTY_ERROR_MESSAGE
-    })
+ * The response information (headers, body and status code) received for the webhook sent.
+ */
+@JsonPropertyOrder({
+  OutgoingWebhookResponseContent.JSON_PROPERTY_BODY,
+  OutgoingWebhookResponseContent.JSON_PROPERTY_HEADERS,
+  OutgoingWebhookResponseContent.JSON_PROPERTY_STATUS_CODE,
+  OutgoingWebhookResponseContent.JSON_PROPERTY_ERROR_MESSAGE
+})
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class OutgoingWebhookResponseContent {
-        public static final String JSON_PROPERTY_BODY = "body";
-    @javax.annotation.Nullable
-            private JsonNullable<String> body = JsonNullable.<String>undefined();
+  public static final String JSON_PROPERTY_BODY = "body";
+  @javax.annotation.Nullable
+  private JsonNullable<String> body = JsonNullable.<String>undefined();
 
-        public static final String JSON_PROPERTY_HEADERS = "headers";
-    @javax.annotation.Nullable
-            private JsonNullable<List<List<OutgoingWebhookRequestContentHeadersInnerInner>>> headers = JsonNullable.<List<List<OutgoingWebhookRequestContentHeadersInnerInner>>>undefined();
+  public static final String JSON_PROPERTY_HEADERS = "headers";
+  @javax.annotation.Nullable
+  private JsonNullable<List<List<OutgoingWebhookRequestContentHeadersInnerInner>>> headers = JsonNullable.<List<List<OutgoingWebhookRequestContentHeadersInnerInner>>>undefined();
 
-        public static final String JSON_PROPERTY_STATUS_CODE = "status_code";
-    @javax.annotation.Nullable
-            private JsonNullable<Integer> statusCode = JsonNullable.<Integer>undefined();
+  public static final String JSON_PROPERTY_STATUS_CODE = "status_code";
+  @javax.annotation.Nullable
+  private JsonNullable<Integer> statusCode = JsonNullable.<Integer>undefined();
 
-        public static final String JSON_PROPERTY_ERROR_MESSAGE = "error_message";
-    @javax.annotation.Nullable
-            private JsonNullable<String> errorMessage = JsonNullable.<String>undefined();
+  public static final String JSON_PROPERTY_ERROR_MESSAGE = "error_message";
+  @javax.annotation.Nullable
+  private JsonNullable<String> errorMessage = JsonNullable.<String>undefined();
 
-public OutgoingWebhookResponseContent() {
-}
+  public OutgoingWebhookResponseContent() {
+  }
 
-        public OutgoingWebhookResponseContent body(@javax.annotation.Nullable String body) {
-        this.body = JsonNullable.<String>of(body);
-        
-        return this;
-        }
-
-    /**
-        * The response body received for the webhook sent.
-    * @return body
-    */
-    @javax.annotation.Nullable
-        @JsonIgnore
+  public OutgoingWebhookResponseContent body(@javax.annotation.Nullable String body) {
+    this.body = JsonNullable.<String>of(body);
     
-    public String getBody() {
-                return body.orElse(null);
-    }
+    return this;
+  }
 
-          @JsonProperty(JSON_PROPERTY_BODY)
+  /**
+   * The response body received for the webhook sent.
+   * @return body
+   */
+  @javax.annotation.Nullable
+  @JsonIgnore
+
+  public String getBody() {
+        return body.orElse(null);
+  }
+
+  @JsonProperty(JSON_PROPERTY_BODY)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-        public JsonNullable<String> getBody_JsonNullable() {
-        return body;
-        }
+  public JsonNullable<String> getBody_JsonNullable() {
+    return body;
+  }
+  
+  @JsonProperty(JSON_PROPERTY_BODY)
+  public void setBody_JsonNullable(JsonNullable<String> body) {
+    this.body = body;
+  }
+
+  public void setBody(@javax.annotation.Nullable String body) {
+    this.body = JsonNullable.<String>of(body);
+  }
+
+  public OutgoingWebhookResponseContent headers(@javax.annotation.Nullable List<List<OutgoingWebhookRequestContentHeadersInnerInner>> headers) {
+    this.headers = JsonNullable.<List<List<OutgoingWebhookRequestContentHeadersInnerInner>>>of(headers);
     
-        @JsonProperty(JSON_PROPERTY_BODY)
-        public void setBody_JsonNullable(JsonNullable<String> body) {
-        this.body = body;
-        }
+    return this;
+  }
 
-          public void setBody(@javax.annotation.Nullable String body) {
-            this.body = JsonNullable.<String>of(body);
-        }
-
-        public OutgoingWebhookResponseContent headers(@javax.annotation.Nullable List<List<OutgoingWebhookRequestContentHeadersInnerInner>> headers) {
-        this.headers = JsonNullable.<List<List<OutgoingWebhookRequestContentHeadersInnerInner>>>of(headers);
-        
-        return this;
-        }
-
-            public OutgoingWebhookResponseContent addHeadersItem(List<OutgoingWebhookRequestContentHeadersInnerInner> headersItem) {
-                if (this.headers == null || !this.headers.isPresent()) {
-                this.headers = JsonNullable.<List<List<OutgoingWebhookRequestContentHeadersInnerInner>>>of(new ArrayList<>());
-                }
-                try {
-                this.headers.get().add(headersItem);
-                } catch (java.util.NoSuchElementException e) {
-                // this can never happen, as we make sure above that the value is present
-                }
-                return this;
-            }
-
-    /**
-        * The response headers received for the webhook sent.
-    * @return headers
-    */
-    @javax.annotation.Nullable
-        @JsonIgnore
-    
-    public List<List<OutgoingWebhookRequestContentHeadersInnerInner>> getHeaders() {
-                return headers.orElse(null);
+  public OutgoingWebhookResponseContent addHeadersItem(List<OutgoingWebhookRequestContentHeadersInnerInner> headersItem) {
+    if (this.headers == null || !this.headers.isPresent()) {
+      this.headers = JsonNullable.<List<List<OutgoingWebhookRequestContentHeadersInnerInner>>>of(new ArrayList<>());
     }
+    try {
+      this.headers.get().add(headersItem);
+    } catch (java.util.NoSuchElementException e) {
+      // this can never happen, as we make sure above that the value is present
+    }
+    return this;
+  }
 
-          @JsonProperty(JSON_PROPERTY_HEADERS)
+  /**
+   * The response headers received for the webhook sent.
+   * @return headers
+   */
+  @javax.annotation.Nullable
+  @JsonIgnore
+
+  public List<List<OutgoingWebhookRequestContentHeadersInnerInner>> getHeaders() {
+        return headers.orElse(null);
+  }
+
+  @JsonProperty(JSON_PROPERTY_HEADERS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-        public JsonNullable<List<List<OutgoingWebhookRequestContentHeadersInnerInner>>> getHeaders_JsonNullable() {
-        return headers;
-        }
+  public JsonNullable<List<List<OutgoingWebhookRequestContentHeadersInnerInner>>> getHeaders_JsonNullable() {
+    return headers;
+  }
+  
+  @JsonProperty(JSON_PROPERTY_HEADERS)
+  public void setHeaders_JsonNullable(JsonNullable<List<List<OutgoingWebhookRequestContentHeadersInnerInner>>> headers) {
+    this.headers = headers;
+  }
+
+  public void setHeaders(@javax.annotation.Nullable List<List<OutgoingWebhookRequestContentHeadersInnerInner>> headers) {
+    this.headers = JsonNullable.<List<List<OutgoingWebhookRequestContentHeadersInnerInner>>>of(headers);
+  }
+
+  public OutgoingWebhookResponseContent statusCode(@javax.annotation.Nullable Integer statusCode) {
+    this.statusCode = JsonNullable.<Integer>of(statusCode);
     
-        @JsonProperty(JSON_PROPERTY_HEADERS)
-        public void setHeaders_JsonNullable(JsonNullable<List<List<OutgoingWebhookRequestContentHeadersInnerInner>>> headers) {
-        this.headers = headers;
-        }
+    return this;
+  }
 
-          public void setHeaders(@javax.annotation.Nullable List<List<OutgoingWebhookRequestContentHeadersInnerInner>> headers) {
-            this.headers = JsonNullable.<List<List<OutgoingWebhookRequestContentHeadersInnerInner>>>of(headers);
-        }
+  /**
+   * The HTTP status code for the webhook sent.
+   * minimum: 0
+   * @return statusCode
+   */
+  @javax.annotation.Nullable
+  @JsonIgnore
 
-        public OutgoingWebhookResponseContent statusCode(@javax.annotation.Nullable Integer statusCode) {
-        this.statusCode = JsonNullable.<Integer>of(statusCode);
-        
-        return this;
-        }
+  public Integer getStatusCode() {
+        return statusCode.orElse(null);
+  }
 
-    /**
-        * The HTTP status code for the webhook sent.
-        * minimum: 0
-    * @return statusCode
-    */
-    @javax.annotation.Nullable
-        @JsonIgnore
-    
-    public Integer getStatusCode() {
-                return statusCode.orElse(null);
-    }
-
-          @JsonProperty(JSON_PROPERTY_STATUS_CODE)
+  @JsonProperty(JSON_PROPERTY_STATUS_CODE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-        public JsonNullable<Integer> getStatusCode_JsonNullable() {
-        return statusCode;
-        }
+  public JsonNullable<Integer> getStatusCode_JsonNullable() {
+    return statusCode;
+  }
+  
+  @JsonProperty(JSON_PROPERTY_STATUS_CODE)
+  public void setStatusCode_JsonNullable(JsonNullable<Integer> statusCode) {
+    this.statusCode = statusCode;
+  }
+
+  public void setStatusCode(@javax.annotation.Nullable Integer statusCode) {
+    this.statusCode = JsonNullable.<Integer>of(statusCode);
+  }
+
+  public OutgoingWebhookResponseContent errorMessage(@javax.annotation.Nullable String errorMessage) {
+    this.errorMessage = JsonNullable.<String>of(errorMessage);
     
-        @JsonProperty(JSON_PROPERTY_STATUS_CODE)
-        public void setStatusCode_JsonNullable(JsonNullable<Integer> statusCode) {
-        this.statusCode = statusCode;
-        }
+    return this;
+  }
 
-          public void setStatusCode(@javax.annotation.Nullable Integer statusCode) {
-            this.statusCode = JsonNullable.<Integer>of(statusCode);
-        }
+  /**
+   * Error message in case any error occurred when trying to deliver the webhook.
+   * @return errorMessage
+   */
+  @javax.annotation.Nullable
+  @JsonIgnore
 
-        public OutgoingWebhookResponseContent errorMessage(@javax.annotation.Nullable String errorMessage) {
-        this.errorMessage = JsonNullable.<String>of(errorMessage);
-        
-        return this;
-        }
+  public String getErrorMessage() {
+        return errorMessage.orElse(null);
+  }
 
-    /**
-        * Error message in case any error occurred when trying to deliver the webhook.
-    * @return errorMessage
-    */
-    @javax.annotation.Nullable
-        @JsonIgnore
-    
-    public String getErrorMessage() {
-                return errorMessage.orElse(null);
-    }
-
-          @JsonProperty(JSON_PROPERTY_ERROR_MESSAGE)
+  @JsonProperty(JSON_PROPERTY_ERROR_MESSAGE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-        public JsonNullable<String> getErrorMessage_JsonNullable() {
-        return errorMessage;
-        }
-    
-        @JsonProperty(JSON_PROPERTY_ERROR_MESSAGE)
-        public void setErrorMessage_JsonNullable(JsonNullable<String> errorMessage) {
-        this.errorMessage = errorMessage;
-        }
+  public JsonNullable<String> getErrorMessage_JsonNullable() {
+    return errorMessage;
+  }
+  
+  @JsonProperty(JSON_PROPERTY_ERROR_MESSAGE)
+  public void setErrorMessage_JsonNullable(JsonNullable<String> errorMessage) {
+    this.errorMessage = errorMessage;
+  }
 
-          public void setErrorMessage(@javax.annotation.Nullable String errorMessage) {
-            this.errorMessage = JsonNullable.<String>of(errorMessage);
-        }
+  public void setErrorMessage(@javax.annotation.Nullable String errorMessage) {
+    this.errorMessage = JsonNullable.<String>of(errorMessage);
+  }
 
-@Override
-public boolean equals(Object o) {
+  @Override
+  public boolean equals(Object o) {
     if (this == o) {
-    return true;
+      return true;
     }
     if (o == null || getClass() != o.getClass()) {
-    return false;
+      return false;
     }
-        OutgoingWebhookResponseContent outgoingWebhookResponseContent = (OutgoingWebhookResponseContent) o;
-        return equalsNullable(this.body, outgoingWebhookResponseContent.body) &&
+    OutgoingWebhookResponseContent outgoingWebhookResponseContent = (OutgoingWebhookResponseContent) o;
+    return equalsNullable(this.body, outgoingWebhookResponseContent.body) &&
         equalsNullable(this.headers, outgoingWebhookResponseContent.headers) &&
         equalsNullable(this.statusCode, outgoingWebhookResponseContent.statusCode) &&
         equalsNullable(this.errorMessage, outgoingWebhookResponseContent.errorMessage);
-}
+  }
 
-    private static <T> boolean equalsNullable(JsonNullable<T> a, JsonNullable<T> b) {
-        return a == b || (a != null && b != null && a.isPresent() && b.isPresent() && Objects.deepEquals(a.get(), b.get()));
-        }
+  private static <T> boolean equalsNullable(JsonNullable<T> a, JsonNullable<T> b) {
+    return a == b || (a != null && b != null && a.isPresent() && b.isPresent() && Objects.deepEquals(a.get(), b.get()));
+  }
 
-    @Override
-    public int hashCode() {
-        return Objects.hash(hashCodeNullable(body), hashCodeNullable(headers), hashCodeNullable(statusCode), hashCodeNullable(errorMessage));
+  @Override
+  public int hashCode() {
+    return Objects.hash(hashCodeNullable(body), hashCodeNullable(headers), hashCodeNullable(statusCode), hashCodeNullable(errorMessage));
+  }
+
+  private static <T> int hashCodeNullable(JsonNullable<T> a) {
+    if (a == null) {
+      return 1;
     }
+    return a.isPresent() ? Arrays.deepHashCode(new Object[]{a.get()}) : 31;
+  }
 
-        private static <T> int hashCodeNullable(JsonNullable<T> a) {
-        if (a == null) {
-        return 1;
-        }
-        return a.isPresent() ? Arrays.deepHashCode(new Object[]{a.get()}) : 31;
-        }
-
-    @Override
-    public String toString() {
+  @Override
+  public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class OutgoingWebhookResponseContent {\n");
-        sb.append("    body: ").append(toIndentedString(body)).append("\n");
-        sb.append("    headers: ").append(toIndentedString(headers)).append("\n");
-        sb.append("    statusCode: ").append(toIndentedString(statusCode)).append("\n");
-        sb.append("    errorMessage: ").append(toIndentedString(errorMessage)).append("\n");
+    sb.append("    body: ").append(toIndentedString(body)).append("\n");
+    sb.append("    headers: ").append(toIndentedString(headers)).append("\n");
+    sb.append("    statusCode: ").append(toIndentedString(statusCode)).append("\n");
+    sb.append("    errorMessage: ").append(toIndentedString(errorMessage)).append("\n");
     sb.append("}");
     return sb.toString();
-    }
+  }
 
-    /**
-    * Convert the given object to string with each line indented by 4 spaces
-    * (except the first line).
-    */
-    private String toIndentedString(Object o) {
+  /**
+   * Convert the given object to string with each line indented by 4 spaces
+   * (except the first line).
+   */
+  private String toIndentedString(Object o) {
     if (o == null) {
-    return "null";
+      return "null";
     }
     return o.toString().replace("\n", "\n    ");
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @return URL query string
+   */
+  public String toUrlQueryString() {
+    return toUrlQueryString(null);
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @param prefix prefix of the query string
+   * @return URL query string
+   */
+  public String toUrlQueryString(String prefix) {
+    String suffix = "";
+    String containerSuffix = "";
+    String containerPrefix = "";
+    if (prefix == null) {
+      // style=form, explode=true, e.g. /pet?name=cat&type=manx
+      prefix = "";
+    } else {
+      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+      prefix = prefix + "[";
+      suffix = "]";
+      containerSuffix = "]";
+      containerPrefix = "[";
     }
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @return URL query string
-        */
-        public String toUrlQueryString() {
-        return toUrlQueryString(null);
-        }
+    StringJoiner joiner = new StringJoiner("&");
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @param prefix prefix of the query string
-        * @return URL query string
-        */
-        public String toUrlQueryString(String prefix) {
-        String suffix = "";
-        String containerSuffix = "";
-        String containerPrefix = "";
-        if (prefix == null) {
-        // style=form, explode=true, e.g. /pet?name=cat&type=manx
-        prefix = "";
-        } else {
-        // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
-        prefix = prefix + "[";
-        suffix = "]";
-        containerSuffix = "]";
-        containerPrefix = "[";
-        }
-
-        StringJoiner joiner = new StringJoiner("&");
-
-            // add `body` to the URL query string
-                        if (getBody() != null) {
-                        try {
-                        joiner.add(String.format("%sbody%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getBody()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-            // add `headers` to the URL query string
-                            if (getHeaders() != null) {
-                            for (int i = 0; i < getHeaders().size(); i++) {
-                            if (getHeaders().get(i) != null) {
-                            try {
-                            joiner.add(String.format("%sheaders%s%s=%s", prefix, suffix,
-                            "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix),
-                            URLEncoder.encode(String.valueOf(getHeaders().get(i)), "UTF-8").replaceAll("\\+", "%20")));
-                            } catch (UnsupportedEncodingException e) {
-                            // Should never happen, UTF-8 is always supported
-                            throw new RuntimeException(e);
-                            }
-                            }
-                            }
-                            }
-
-            // add `status_code` to the URL query string
-                        if (getStatusCode() != null) {
-                        try {
-                        joiner.add(String.format("%sstatus_code%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getStatusCode()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-            // add `error_message` to the URL query string
-                        if (getErrorMessage() != null) {
-                        try {
-                        joiner.add(String.format("%serror_message%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getErrorMessage()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-        return joiner.toString();
-        }
-
+    // add `body` to the URL query string
+    if (getBody() != null) {
+      try {
+        joiner.add(String.format("%sbody%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getBody()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
     }
+
+    // add `headers` to the URL query string
+    if (getHeaders() != null) {
+      for (int i = 0; i < getHeaders().size(); i++) {
+        if (getHeaders().get(i) != null) {
+          try {
+            joiner.add(String.format("%sheaders%s%s=%s", prefix, suffix,
+                "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix),
+                URLEncoder.encode(String.valueOf(getHeaders().get(i)), "UTF-8").replaceAll("\\+", "%20")));
+          } catch (UnsupportedEncodingException e) {
+            // Should never happen, UTF-8 is always supported
+            throw new RuntimeException(e);
+          }
+        }
+      }
+    }
+
+    // add `status_code` to the URL query string
+    if (getStatusCode() != null) {
+      try {
+        joiner.add(String.format("%sstatus_code%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getStatusCode()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `error_message` to the URL query string
+    if (getErrorMessage() != null) {
+      try {
+        joiner.add(String.format("%serror_message%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getErrorMessage()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    return joiner.toString();
+  }
+
+}
 

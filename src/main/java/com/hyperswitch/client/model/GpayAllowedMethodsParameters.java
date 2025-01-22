@@ -35,348 +35,348 @@ import java.net.URLEncoder;
 import java.util.StringJoiner;
 
 /**
-* GpayAllowedMethodsParameters
-*/
-    @JsonPropertyOrder({
-        GpayAllowedMethodsParameters.JSON_PROPERTY_ALLOWED_AUTH_METHODS,
-        GpayAllowedMethodsParameters.JSON_PROPERTY_ALLOWED_CARD_NETWORKS,
-        GpayAllowedMethodsParameters.JSON_PROPERTY_BILLING_ADDRESS_REQUIRED,
-        GpayAllowedMethodsParameters.JSON_PROPERTY_BILLING_ADDRESS_PARAMETERS,
-        GpayAllowedMethodsParameters.JSON_PROPERTY_ASSURANCE_DETAILS_REQUIRED
-    })
+ * GpayAllowedMethodsParameters
+ */
+@JsonPropertyOrder({
+  GpayAllowedMethodsParameters.JSON_PROPERTY_ALLOWED_AUTH_METHODS,
+  GpayAllowedMethodsParameters.JSON_PROPERTY_ALLOWED_CARD_NETWORKS,
+  GpayAllowedMethodsParameters.JSON_PROPERTY_BILLING_ADDRESS_REQUIRED,
+  GpayAllowedMethodsParameters.JSON_PROPERTY_BILLING_ADDRESS_PARAMETERS,
+  GpayAllowedMethodsParameters.JSON_PROPERTY_ASSURANCE_DETAILS_REQUIRED
+})
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class GpayAllowedMethodsParameters {
-        public static final String JSON_PROPERTY_ALLOWED_AUTH_METHODS = "allowed_auth_methods";
-    @javax.annotation.Nonnull
-            private List<String> allowedAuthMethods = new ArrayList<>();
+  public static final String JSON_PROPERTY_ALLOWED_AUTH_METHODS = "allowed_auth_methods";
+  @javax.annotation.Nonnull
+  private List<String> allowedAuthMethods = new ArrayList<>();
 
-        public static final String JSON_PROPERTY_ALLOWED_CARD_NETWORKS = "allowed_card_networks";
-    @javax.annotation.Nonnull
-            private List<String> allowedCardNetworks = new ArrayList<>();
+  public static final String JSON_PROPERTY_ALLOWED_CARD_NETWORKS = "allowed_card_networks";
+  @javax.annotation.Nonnull
+  private List<String> allowedCardNetworks = new ArrayList<>();
 
-        public static final String JSON_PROPERTY_BILLING_ADDRESS_REQUIRED = "billing_address_required";
-    @javax.annotation.Nullable
-            private JsonNullable<Boolean> billingAddressRequired = JsonNullable.<Boolean>undefined();
+  public static final String JSON_PROPERTY_BILLING_ADDRESS_REQUIRED = "billing_address_required";
+  @javax.annotation.Nullable
+  private JsonNullable<Boolean> billingAddressRequired = JsonNullable.<Boolean>undefined();
 
-        public static final String JSON_PROPERTY_BILLING_ADDRESS_PARAMETERS = "billing_address_parameters";
-    @javax.annotation.Nullable
-            private JsonNullable<GpayBillingAddressParameters> billingAddressParameters = JsonNullable.<GpayBillingAddressParameters>undefined();
+  public static final String JSON_PROPERTY_BILLING_ADDRESS_PARAMETERS = "billing_address_parameters";
+  @javax.annotation.Nullable
+  private JsonNullable<GpayBillingAddressParameters> billingAddressParameters = JsonNullable.<GpayBillingAddressParameters>undefined();
 
-        public static final String JSON_PROPERTY_ASSURANCE_DETAILS_REQUIRED = "assurance_details_required";
-    @javax.annotation.Nullable
-            private JsonNullable<Boolean> assuranceDetailsRequired = JsonNullable.<Boolean>undefined();
+  public static final String JSON_PROPERTY_ASSURANCE_DETAILS_REQUIRED = "assurance_details_required";
+  @javax.annotation.Nullable
+  private JsonNullable<Boolean> assuranceDetailsRequired = JsonNullable.<Boolean>undefined();
 
-public GpayAllowedMethodsParameters() {
-}
+  public GpayAllowedMethodsParameters() {
+  }
 
-        public GpayAllowedMethodsParameters allowedAuthMethods(@javax.annotation.Nonnull List<String> allowedAuthMethods) {
-        
-        this.allowedAuthMethods = allowedAuthMethods;
-        return this;
-        }
+  public GpayAllowedMethodsParameters allowedAuthMethods(@javax.annotation.Nonnull List<String> allowedAuthMethods) {
+    
+    this.allowedAuthMethods = allowedAuthMethods;
+    return this;
+  }
 
-            public GpayAllowedMethodsParameters addAllowedAuthMethodsItem(String allowedAuthMethodsItem) {
-                if (this.allowedAuthMethods == null) {
-                this.allowedAuthMethods = new ArrayList<>();
-                }
-                this.allowedAuthMethods.add(allowedAuthMethodsItem);
-                return this;
-            }
+  public GpayAllowedMethodsParameters addAllowedAuthMethodsItem(String allowedAuthMethodsItem) {
+    if (this.allowedAuthMethods == null) {
+      this.allowedAuthMethods = new ArrayList<>();
+    }
+    this.allowedAuthMethods.add(allowedAuthMethodsItem);
+    return this;
+  }
 
-    /**
-        * The list of allowed auth methods (ex: 3DS, No3DS, PAN_ONLY etc)
-    * @return allowedAuthMethods
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_ALLOWED_AUTH_METHODS)
+  /**
+   * The list of allowed auth methods (ex: 3DS, No3DS, PAN_ONLY etc)
+   * @return allowedAuthMethods
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_ALLOWED_AUTH_METHODS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public List<String> getAllowedAuthMethods() {
-        return allowedAuthMethods;
-    }
+  public List<String> getAllowedAuthMethods() {
+    return allowedAuthMethods;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_ALLOWED_AUTH_METHODS)
+  @JsonProperty(JSON_PROPERTY_ALLOWED_AUTH_METHODS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setAllowedAuthMethods(@javax.annotation.Nonnull List<String> allowedAuthMethods) {
-            this.allowedAuthMethods = allowedAuthMethods;
-        }
+    this.allowedAuthMethods = allowedAuthMethods;
+  }
 
-        public GpayAllowedMethodsParameters allowedCardNetworks(@javax.annotation.Nonnull List<String> allowedCardNetworks) {
-        
-        this.allowedCardNetworks = allowedCardNetworks;
-        return this;
-        }
+  public GpayAllowedMethodsParameters allowedCardNetworks(@javax.annotation.Nonnull List<String> allowedCardNetworks) {
+    
+    this.allowedCardNetworks = allowedCardNetworks;
+    return this;
+  }
 
-            public GpayAllowedMethodsParameters addAllowedCardNetworksItem(String allowedCardNetworksItem) {
-                if (this.allowedCardNetworks == null) {
-                this.allowedCardNetworks = new ArrayList<>();
-                }
-                this.allowedCardNetworks.add(allowedCardNetworksItem);
-                return this;
-            }
+  public GpayAllowedMethodsParameters addAllowedCardNetworksItem(String allowedCardNetworksItem) {
+    if (this.allowedCardNetworks == null) {
+      this.allowedCardNetworks = new ArrayList<>();
+    }
+    this.allowedCardNetworks.add(allowedCardNetworksItem);
+    return this;
+  }
 
-    /**
-        * The list of allowed card networks (ex: AMEX,JCB etc)
-    * @return allowedCardNetworks
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_ALLOWED_CARD_NETWORKS)
+  /**
+   * The list of allowed card networks (ex: AMEX,JCB etc)
+   * @return allowedCardNetworks
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_ALLOWED_CARD_NETWORKS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public List<String> getAllowedCardNetworks() {
-        return allowedCardNetworks;
-    }
+  public List<String> getAllowedCardNetworks() {
+    return allowedCardNetworks;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_ALLOWED_CARD_NETWORKS)
+  @JsonProperty(JSON_PROPERTY_ALLOWED_CARD_NETWORKS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setAllowedCardNetworks(@javax.annotation.Nonnull List<String> allowedCardNetworks) {
-            this.allowedCardNetworks = allowedCardNetworks;
-        }
+    this.allowedCardNetworks = allowedCardNetworks;
+  }
 
-        public GpayAllowedMethodsParameters billingAddressRequired(@javax.annotation.Nullable Boolean billingAddressRequired) {
-        this.billingAddressRequired = JsonNullable.<Boolean>of(billingAddressRequired);
-        
-        return this;
-        }
-
-    /**
-        * Is billing address required
-    * @return billingAddressRequired
-    */
-    @javax.annotation.Nullable
-        @JsonIgnore
+  public GpayAllowedMethodsParameters billingAddressRequired(@javax.annotation.Nullable Boolean billingAddressRequired) {
+    this.billingAddressRequired = JsonNullable.<Boolean>of(billingAddressRequired);
     
-    public Boolean getBillingAddressRequired() {
-                return billingAddressRequired.orElse(null);
-    }
+    return this;
+  }
 
-          @JsonProperty(JSON_PROPERTY_BILLING_ADDRESS_REQUIRED)
+  /**
+   * Is billing address required
+   * @return billingAddressRequired
+   */
+  @javax.annotation.Nullable
+  @JsonIgnore
+
+  public Boolean getBillingAddressRequired() {
+        return billingAddressRequired.orElse(null);
+  }
+
+  @JsonProperty(JSON_PROPERTY_BILLING_ADDRESS_REQUIRED)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-        public JsonNullable<Boolean> getBillingAddressRequired_JsonNullable() {
-        return billingAddressRequired;
-        }
+  public JsonNullable<Boolean> getBillingAddressRequired_JsonNullable() {
+    return billingAddressRequired;
+  }
+  
+  @JsonProperty(JSON_PROPERTY_BILLING_ADDRESS_REQUIRED)
+  public void setBillingAddressRequired_JsonNullable(JsonNullable<Boolean> billingAddressRequired) {
+    this.billingAddressRequired = billingAddressRequired;
+  }
+
+  public void setBillingAddressRequired(@javax.annotation.Nullable Boolean billingAddressRequired) {
+    this.billingAddressRequired = JsonNullable.<Boolean>of(billingAddressRequired);
+  }
+
+  public GpayAllowedMethodsParameters billingAddressParameters(@javax.annotation.Nullable GpayBillingAddressParameters billingAddressParameters) {
+    this.billingAddressParameters = JsonNullable.<GpayBillingAddressParameters>of(billingAddressParameters);
     
-        @JsonProperty(JSON_PROPERTY_BILLING_ADDRESS_REQUIRED)
-        public void setBillingAddressRequired_JsonNullable(JsonNullable<Boolean> billingAddressRequired) {
-        this.billingAddressRequired = billingAddressRequired;
-        }
+    return this;
+  }
 
-          public void setBillingAddressRequired(@javax.annotation.Nullable Boolean billingAddressRequired) {
-            this.billingAddressRequired = JsonNullable.<Boolean>of(billingAddressRequired);
-        }
+  /**
+   * Get billingAddressParameters
+   * @return billingAddressParameters
+   */
+  @javax.annotation.Nullable
+  @JsonIgnore
 
-        public GpayAllowedMethodsParameters billingAddressParameters(@javax.annotation.Nullable GpayBillingAddressParameters billingAddressParameters) {
-        this.billingAddressParameters = JsonNullable.<GpayBillingAddressParameters>of(billingAddressParameters);
-        
-        return this;
-        }
+  public GpayBillingAddressParameters getBillingAddressParameters() {
+        return billingAddressParameters.orElse(null);
+  }
 
-    /**
-        * Get billingAddressParameters
-    * @return billingAddressParameters
-    */
-    @javax.annotation.Nullable
-        @JsonIgnore
-    
-    public GpayBillingAddressParameters getBillingAddressParameters() {
-                return billingAddressParameters.orElse(null);
-    }
-
-          @JsonProperty(JSON_PROPERTY_BILLING_ADDRESS_PARAMETERS)
+  @JsonProperty(JSON_PROPERTY_BILLING_ADDRESS_PARAMETERS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-        public JsonNullable<GpayBillingAddressParameters> getBillingAddressParameters_JsonNullable() {
-        return billingAddressParameters;
-        }
+  public JsonNullable<GpayBillingAddressParameters> getBillingAddressParameters_JsonNullable() {
+    return billingAddressParameters;
+  }
+  
+  @JsonProperty(JSON_PROPERTY_BILLING_ADDRESS_PARAMETERS)
+  public void setBillingAddressParameters_JsonNullable(JsonNullable<GpayBillingAddressParameters> billingAddressParameters) {
+    this.billingAddressParameters = billingAddressParameters;
+  }
+
+  public void setBillingAddressParameters(@javax.annotation.Nullable GpayBillingAddressParameters billingAddressParameters) {
+    this.billingAddressParameters = JsonNullable.<GpayBillingAddressParameters>of(billingAddressParameters);
+  }
+
+  public GpayAllowedMethodsParameters assuranceDetailsRequired(@javax.annotation.Nullable Boolean assuranceDetailsRequired) {
+    this.assuranceDetailsRequired = JsonNullable.<Boolean>of(assuranceDetailsRequired);
     
-        @JsonProperty(JSON_PROPERTY_BILLING_ADDRESS_PARAMETERS)
-        public void setBillingAddressParameters_JsonNullable(JsonNullable<GpayBillingAddressParameters> billingAddressParameters) {
-        this.billingAddressParameters = billingAddressParameters;
-        }
+    return this;
+  }
 
-          public void setBillingAddressParameters(@javax.annotation.Nullable GpayBillingAddressParameters billingAddressParameters) {
-            this.billingAddressParameters = JsonNullable.<GpayBillingAddressParameters>of(billingAddressParameters);
-        }
+  /**
+   * Whether assurance details are required
+   * @return assuranceDetailsRequired
+   */
+  @javax.annotation.Nullable
+  @JsonIgnore
 
-        public GpayAllowedMethodsParameters assuranceDetailsRequired(@javax.annotation.Nullable Boolean assuranceDetailsRequired) {
-        this.assuranceDetailsRequired = JsonNullable.<Boolean>of(assuranceDetailsRequired);
-        
-        return this;
-        }
+  public Boolean getAssuranceDetailsRequired() {
+        return assuranceDetailsRequired.orElse(null);
+  }
 
-    /**
-        * Whether assurance details are required
-    * @return assuranceDetailsRequired
-    */
-    @javax.annotation.Nullable
-        @JsonIgnore
-    
-    public Boolean getAssuranceDetailsRequired() {
-                return assuranceDetailsRequired.orElse(null);
-    }
-
-          @JsonProperty(JSON_PROPERTY_ASSURANCE_DETAILS_REQUIRED)
+  @JsonProperty(JSON_PROPERTY_ASSURANCE_DETAILS_REQUIRED)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-        public JsonNullable<Boolean> getAssuranceDetailsRequired_JsonNullable() {
-        return assuranceDetailsRequired;
-        }
-    
-        @JsonProperty(JSON_PROPERTY_ASSURANCE_DETAILS_REQUIRED)
-        public void setAssuranceDetailsRequired_JsonNullable(JsonNullable<Boolean> assuranceDetailsRequired) {
-        this.assuranceDetailsRequired = assuranceDetailsRequired;
-        }
+  public JsonNullable<Boolean> getAssuranceDetailsRequired_JsonNullable() {
+    return assuranceDetailsRequired;
+  }
+  
+  @JsonProperty(JSON_PROPERTY_ASSURANCE_DETAILS_REQUIRED)
+  public void setAssuranceDetailsRequired_JsonNullable(JsonNullable<Boolean> assuranceDetailsRequired) {
+    this.assuranceDetailsRequired = assuranceDetailsRequired;
+  }
 
-          public void setAssuranceDetailsRequired(@javax.annotation.Nullable Boolean assuranceDetailsRequired) {
-            this.assuranceDetailsRequired = JsonNullable.<Boolean>of(assuranceDetailsRequired);
-        }
+  public void setAssuranceDetailsRequired(@javax.annotation.Nullable Boolean assuranceDetailsRequired) {
+    this.assuranceDetailsRequired = JsonNullable.<Boolean>of(assuranceDetailsRequired);
+  }
 
-@Override
-public boolean equals(Object o) {
+  @Override
+  public boolean equals(Object o) {
     if (this == o) {
-    return true;
+      return true;
     }
     if (o == null || getClass() != o.getClass()) {
-    return false;
+      return false;
     }
-        GpayAllowedMethodsParameters gpayAllowedMethodsParameters = (GpayAllowedMethodsParameters) o;
-        return Objects.equals(this.allowedAuthMethods, gpayAllowedMethodsParameters.allowedAuthMethods) &&
+    GpayAllowedMethodsParameters gpayAllowedMethodsParameters = (GpayAllowedMethodsParameters) o;
+    return Objects.equals(this.allowedAuthMethods, gpayAllowedMethodsParameters.allowedAuthMethods) &&
         Objects.equals(this.allowedCardNetworks, gpayAllowedMethodsParameters.allowedCardNetworks) &&
         equalsNullable(this.billingAddressRequired, gpayAllowedMethodsParameters.billingAddressRequired) &&
         equalsNullable(this.billingAddressParameters, gpayAllowedMethodsParameters.billingAddressParameters) &&
         equalsNullable(this.assuranceDetailsRequired, gpayAllowedMethodsParameters.assuranceDetailsRequired);
-}
+  }
 
-    private static <T> boolean equalsNullable(JsonNullable<T> a, JsonNullable<T> b) {
-        return a == b || (a != null && b != null && a.isPresent() && b.isPresent() && Objects.deepEquals(a.get(), b.get()));
-        }
+  private static <T> boolean equalsNullable(JsonNullable<T> a, JsonNullable<T> b) {
+    return a == b || (a != null && b != null && a.isPresent() && b.isPresent() && Objects.deepEquals(a.get(), b.get()));
+  }
 
-    @Override
-    public int hashCode() {
-        return Objects.hash(allowedAuthMethods, allowedCardNetworks, hashCodeNullable(billingAddressRequired), hashCodeNullable(billingAddressParameters), hashCodeNullable(assuranceDetailsRequired));
+  @Override
+  public int hashCode() {
+    return Objects.hash(allowedAuthMethods, allowedCardNetworks, hashCodeNullable(billingAddressRequired), hashCodeNullable(billingAddressParameters), hashCodeNullable(assuranceDetailsRequired));
+  }
+
+  private static <T> int hashCodeNullable(JsonNullable<T> a) {
+    if (a == null) {
+      return 1;
     }
+    return a.isPresent() ? Arrays.deepHashCode(new Object[]{a.get()}) : 31;
+  }
 
-        private static <T> int hashCodeNullable(JsonNullable<T> a) {
-        if (a == null) {
-        return 1;
-        }
-        return a.isPresent() ? Arrays.deepHashCode(new Object[]{a.get()}) : 31;
-        }
-
-    @Override
-    public String toString() {
+  @Override
+  public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class GpayAllowedMethodsParameters {\n");
-        sb.append("    allowedAuthMethods: ").append(toIndentedString(allowedAuthMethods)).append("\n");
-        sb.append("    allowedCardNetworks: ").append(toIndentedString(allowedCardNetworks)).append("\n");
-        sb.append("    billingAddressRequired: ").append(toIndentedString(billingAddressRequired)).append("\n");
-        sb.append("    billingAddressParameters: ").append(toIndentedString(billingAddressParameters)).append("\n");
-        sb.append("    assuranceDetailsRequired: ").append(toIndentedString(assuranceDetailsRequired)).append("\n");
+    sb.append("    allowedAuthMethods: ").append(toIndentedString(allowedAuthMethods)).append("\n");
+    sb.append("    allowedCardNetworks: ").append(toIndentedString(allowedCardNetworks)).append("\n");
+    sb.append("    billingAddressRequired: ").append(toIndentedString(billingAddressRequired)).append("\n");
+    sb.append("    billingAddressParameters: ").append(toIndentedString(billingAddressParameters)).append("\n");
+    sb.append("    assuranceDetailsRequired: ").append(toIndentedString(assuranceDetailsRequired)).append("\n");
     sb.append("}");
     return sb.toString();
-    }
+  }
 
-    /**
-    * Convert the given object to string with each line indented by 4 spaces
-    * (except the first line).
-    */
-    private String toIndentedString(Object o) {
+  /**
+   * Convert the given object to string with each line indented by 4 spaces
+   * (except the first line).
+   */
+  private String toIndentedString(Object o) {
     if (o == null) {
-    return "null";
+      return "null";
     }
     return o.toString().replace("\n", "\n    ");
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @return URL query string
+   */
+  public String toUrlQueryString() {
+    return toUrlQueryString(null);
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @param prefix prefix of the query string
+   * @return URL query string
+   */
+  public String toUrlQueryString(String prefix) {
+    String suffix = "";
+    String containerSuffix = "";
+    String containerPrefix = "";
+    if (prefix == null) {
+      // style=form, explode=true, e.g. /pet?name=cat&type=manx
+      prefix = "";
+    } else {
+      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+      prefix = prefix + "[";
+      suffix = "]";
+      containerSuffix = "]";
+      containerPrefix = "[";
     }
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @return URL query string
-        */
-        public String toUrlQueryString() {
-        return toUrlQueryString(null);
+    StringJoiner joiner = new StringJoiner("&");
+
+    // add `allowed_auth_methods` to the URL query string
+    if (getAllowedAuthMethods() != null) {
+      for (int i = 0; i < getAllowedAuthMethods().size(); i++) {
+        try {
+          joiner.add(String.format("%sallowed_auth_methods%s%s=%s", prefix, suffix,
+              "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix),
+              URLEncoder.encode(String.valueOf(getAllowedAuthMethods().get(i)), "UTF-8").replaceAll("\\+", "%20")));
+        } catch (UnsupportedEncodingException e) {
+          // Should never happen, UTF-8 is always supported
+          throw new RuntimeException(e);
         }
-
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @param prefix prefix of the query string
-        * @return URL query string
-        */
-        public String toUrlQueryString(String prefix) {
-        String suffix = "";
-        String containerSuffix = "";
-        String containerPrefix = "";
-        if (prefix == null) {
-        // style=form, explode=true, e.g. /pet?name=cat&type=manx
-        prefix = "";
-        } else {
-        // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
-        prefix = prefix + "[";
-        suffix = "]";
-        containerSuffix = "]";
-        containerPrefix = "[";
-        }
-
-        StringJoiner joiner = new StringJoiner("&");
-
-            // add `allowed_auth_methods` to the URL query string
-                        if (getAllowedAuthMethods() != null) {
-                        for (int i = 0; i < getAllowedAuthMethods().size(); i++) {
-                        try {
-                        joiner.add(String.format("%sallowed_auth_methods%s%s=%s", prefix, suffix,
-                        "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix),
-                        URLEncoder.encode(String.valueOf(getAllowedAuthMethods().get(i)), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-                        }
-
-            // add `allowed_card_networks` to the URL query string
-                        if (getAllowedCardNetworks() != null) {
-                        for (int i = 0; i < getAllowedCardNetworks().size(); i++) {
-                        try {
-                        joiner.add(String.format("%sallowed_card_networks%s%s=%s", prefix, suffix,
-                        "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix),
-                        URLEncoder.encode(String.valueOf(getAllowedCardNetworks().get(i)), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-                        }
-
-            // add `billing_address_required` to the URL query string
-                        if (getBillingAddressRequired() != null) {
-                        try {
-                        joiner.add(String.format("%sbilling_address_required%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getBillingAddressRequired()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-            // add `billing_address_parameters` to the URL query string
-                            if (getBillingAddressParameters() != null) {
-                            joiner.add(getBillingAddressParameters().toUrlQueryString(prefix + "billing_address_parameters" + suffix));
-                            }
-
-            // add `assurance_details_required` to the URL query string
-                        if (getAssuranceDetailsRequired() != null) {
-                        try {
-                        joiner.add(String.format("%sassurance_details_required%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getAssuranceDetailsRequired()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-        return joiner.toString();
-        }
-
+      }
     }
+
+    // add `allowed_card_networks` to the URL query string
+    if (getAllowedCardNetworks() != null) {
+      for (int i = 0; i < getAllowedCardNetworks().size(); i++) {
+        try {
+          joiner.add(String.format("%sallowed_card_networks%s%s=%s", prefix, suffix,
+              "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix),
+              URLEncoder.encode(String.valueOf(getAllowedCardNetworks().get(i)), "UTF-8").replaceAll("\\+", "%20")));
+        } catch (UnsupportedEncodingException e) {
+          // Should never happen, UTF-8 is always supported
+          throw new RuntimeException(e);
+        }
+      }
+    }
+
+    // add `billing_address_required` to the URL query string
+    if (getBillingAddressRequired() != null) {
+      try {
+        joiner.add(String.format("%sbilling_address_required%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getBillingAddressRequired()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `billing_address_parameters` to the URL query string
+    if (getBillingAddressParameters() != null) {
+      joiner.add(getBillingAddressParameters().toUrlQueryString(prefix + "billing_address_parameters" + suffix));
+    }
+
+    // add `assurance_details_required` to the URL query string
+    if (getAssuranceDetailsRequired() != null) {
+      try {
+        joiner.add(String.format("%sassurance_details_required%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getAssuranceDetailsRequired()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    return joiner.toString();
+  }
+
+}
 

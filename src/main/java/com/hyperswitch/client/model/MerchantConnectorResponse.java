@@ -44,781 +44,781 @@ import java.net.URLEncoder;
 import java.util.StringJoiner;
 
 /**
-* Response of creating a new Merchant Connector for the merchant account.\&quot;
-*/
-    @JsonPropertyOrder({
-        MerchantConnectorResponse.JSON_PROPERTY_CONNECTOR_TYPE,
-        MerchantConnectorResponse.JSON_PROPERTY_CONNECTOR_NAME,
-        MerchantConnectorResponse.JSON_PROPERTY_CONNECTOR_LABEL,
-        MerchantConnectorResponse.JSON_PROPERTY_MERCHANT_CONNECTOR_ID,
-        MerchantConnectorResponse.JSON_PROPERTY_PROFILE_ID,
-        MerchantConnectorResponse.JSON_PROPERTY_CONNECTOR_ACCOUNT_DETAILS,
-        MerchantConnectorResponse.JSON_PROPERTY_PAYMENT_METHODS_ENABLED,
-        MerchantConnectorResponse.JSON_PROPERTY_CONNECTOR_WEBHOOK_DETAILS,
-        MerchantConnectorResponse.JSON_PROPERTY_METADATA,
-        MerchantConnectorResponse.JSON_PROPERTY_TEST_MODE,
-        MerchantConnectorResponse.JSON_PROPERTY_DISABLED,
-        MerchantConnectorResponse.JSON_PROPERTY_FRM_CONFIGS,
-        MerchantConnectorResponse.JSON_PROPERTY_BUSINESS_COUNTRY,
-        MerchantConnectorResponse.JSON_PROPERTY_BUSINESS_LABEL,
-        MerchantConnectorResponse.JSON_PROPERTY_BUSINESS_SUB_LABEL,
-        MerchantConnectorResponse.JSON_PROPERTY_APPLEPAY_VERIFIED_DOMAINS,
-        MerchantConnectorResponse.JSON_PROPERTY_PM_AUTH_CONFIG,
-        MerchantConnectorResponse.JSON_PROPERTY_STATUS,
-        MerchantConnectorResponse.JSON_PROPERTY_ADDITIONAL_MERCHANT_DATA,
-        MerchantConnectorResponse.JSON_PROPERTY_CONNECTOR_WALLETS_DETAILS
-    })
+ * Response of creating a new Merchant Connector for the merchant account.\&quot;
+ */
+@JsonPropertyOrder({
+  MerchantConnectorResponse.JSON_PROPERTY_CONNECTOR_TYPE,
+  MerchantConnectorResponse.JSON_PROPERTY_CONNECTOR_NAME,
+  MerchantConnectorResponse.JSON_PROPERTY_CONNECTOR_LABEL,
+  MerchantConnectorResponse.JSON_PROPERTY_MERCHANT_CONNECTOR_ID,
+  MerchantConnectorResponse.JSON_PROPERTY_PROFILE_ID,
+  MerchantConnectorResponse.JSON_PROPERTY_CONNECTOR_ACCOUNT_DETAILS,
+  MerchantConnectorResponse.JSON_PROPERTY_PAYMENT_METHODS_ENABLED,
+  MerchantConnectorResponse.JSON_PROPERTY_CONNECTOR_WEBHOOK_DETAILS,
+  MerchantConnectorResponse.JSON_PROPERTY_METADATA,
+  MerchantConnectorResponse.JSON_PROPERTY_TEST_MODE,
+  MerchantConnectorResponse.JSON_PROPERTY_DISABLED,
+  MerchantConnectorResponse.JSON_PROPERTY_FRM_CONFIGS,
+  MerchantConnectorResponse.JSON_PROPERTY_BUSINESS_COUNTRY,
+  MerchantConnectorResponse.JSON_PROPERTY_BUSINESS_LABEL,
+  MerchantConnectorResponse.JSON_PROPERTY_BUSINESS_SUB_LABEL,
+  MerchantConnectorResponse.JSON_PROPERTY_APPLEPAY_VERIFIED_DOMAINS,
+  MerchantConnectorResponse.JSON_PROPERTY_PM_AUTH_CONFIG,
+  MerchantConnectorResponse.JSON_PROPERTY_STATUS,
+  MerchantConnectorResponse.JSON_PROPERTY_ADDITIONAL_MERCHANT_DATA,
+  MerchantConnectorResponse.JSON_PROPERTY_CONNECTOR_WALLETS_DETAILS
+})
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class MerchantConnectorResponse {
-        public static final String JSON_PROPERTY_CONNECTOR_TYPE = "connector_type";
-    @javax.annotation.Nonnull
-            private ConnectorType connectorType;
+  public static final String JSON_PROPERTY_CONNECTOR_TYPE = "connector_type";
+  @javax.annotation.Nonnull
+  private ConnectorType connectorType;
 
-        public static final String JSON_PROPERTY_CONNECTOR_NAME = "connector_name";
-    @javax.annotation.Nonnull
-            private Connector connectorName;
+  public static final String JSON_PROPERTY_CONNECTOR_NAME = "connector_name";
+  @javax.annotation.Nonnull
+  private Connector connectorName;
 
-        public static final String JSON_PROPERTY_CONNECTOR_LABEL = "connector_label";
-    @javax.annotation.Nullable
-            private JsonNullable<String> connectorLabel = JsonNullable.<String>undefined();
+  public static final String JSON_PROPERTY_CONNECTOR_LABEL = "connector_label";
+  @javax.annotation.Nullable
+  private JsonNullable<String> connectorLabel = JsonNullable.<String>undefined();
 
-        public static final String JSON_PROPERTY_MERCHANT_CONNECTOR_ID = "merchant_connector_id";
-    @javax.annotation.Nonnull
-            private String merchantConnectorId;
+  public static final String JSON_PROPERTY_MERCHANT_CONNECTOR_ID = "merchant_connector_id";
+  @javax.annotation.Nonnull
+  private String merchantConnectorId;
 
-        public static final String JSON_PROPERTY_PROFILE_ID = "profile_id";
-    @javax.annotation.Nonnull
-            private String profileId;
+  public static final String JSON_PROPERTY_PROFILE_ID = "profile_id";
+  @javax.annotation.Nonnull
+  private String profileId;
 
-        public static final String JSON_PROPERTY_CONNECTOR_ACCOUNT_DETAILS = "connector_account_details";
-    @javax.annotation.Nullable
-            private JsonNullable<MerchantConnectorDetails> connectorAccountDetails = JsonNullable.<MerchantConnectorDetails>undefined();
+  public static final String JSON_PROPERTY_CONNECTOR_ACCOUNT_DETAILS = "connector_account_details";
+  @javax.annotation.Nullable
+  private JsonNullable<MerchantConnectorDetails> connectorAccountDetails = JsonNullable.<MerchantConnectorDetails>undefined();
 
-        public static final String JSON_PROPERTY_PAYMENT_METHODS_ENABLED = "payment_methods_enabled";
-    @javax.annotation.Nullable
-            private JsonNullable<List<PaymentMethodsEnabled>> paymentMethodsEnabled = JsonNullable.<List<PaymentMethodsEnabled>>undefined();
+  public static final String JSON_PROPERTY_PAYMENT_METHODS_ENABLED = "payment_methods_enabled";
+  @javax.annotation.Nullable
+  private JsonNullable<List<PaymentMethodsEnabled>> paymentMethodsEnabled = JsonNullable.<List<PaymentMethodsEnabled>>undefined();
 
-        public static final String JSON_PROPERTY_CONNECTOR_WEBHOOK_DETAILS = "connector_webhook_details";
-    @javax.annotation.Nullable
-            private JsonNullable<MerchantConnectorWebhookDetails> connectorWebhookDetails = JsonNullable.<MerchantConnectorWebhookDetails>undefined();
+  public static final String JSON_PROPERTY_CONNECTOR_WEBHOOK_DETAILS = "connector_webhook_details";
+  @javax.annotation.Nullable
+  private JsonNullable<MerchantConnectorWebhookDetails> connectorWebhookDetails = JsonNullable.<MerchantConnectorWebhookDetails>undefined();
 
-        public static final String JSON_PROPERTY_METADATA = "metadata";
-    @javax.annotation.Nullable
-            private JsonNullable<Object> metadata = JsonNullable.<Object>undefined();
+  public static final String JSON_PROPERTY_METADATA = "metadata";
+  @javax.annotation.Nullable
+  private JsonNullable<Object> metadata = JsonNullable.<Object>undefined();
 
-        public static final String JSON_PROPERTY_TEST_MODE = "test_mode";
-    @javax.annotation.Nullable
-            private JsonNullable<Boolean> testMode = JsonNullable.<Boolean>of(false);
+  public static final String JSON_PROPERTY_TEST_MODE = "test_mode";
+  @javax.annotation.Nullable
+  private JsonNullable<Boolean> testMode = JsonNullable.<Boolean>of(false);
 
-        public static final String JSON_PROPERTY_DISABLED = "disabled";
-    @javax.annotation.Nullable
-            private JsonNullable<Boolean> disabled = JsonNullable.<Boolean>of(false);
+  public static final String JSON_PROPERTY_DISABLED = "disabled";
+  @javax.annotation.Nullable
+  private JsonNullable<Boolean> disabled = JsonNullable.<Boolean>of(false);
 
-        public static final String JSON_PROPERTY_FRM_CONFIGS = "frm_configs";
-    @javax.annotation.Nullable
-            private JsonNullable<List<FrmConfigs>> frmConfigs = JsonNullable.<List<FrmConfigs>>undefined();
+  public static final String JSON_PROPERTY_FRM_CONFIGS = "frm_configs";
+  @javax.annotation.Nullable
+  private JsonNullable<List<FrmConfigs>> frmConfigs = JsonNullable.<List<FrmConfigs>>undefined();
 
-        public static final String JSON_PROPERTY_BUSINESS_COUNTRY = "business_country";
-    @javax.annotation.Nullable
-            private JsonNullable<CountryAlpha2> businessCountry = JsonNullable.<CountryAlpha2>undefined();
+  public static final String JSON_PROPERTY_BUSINESS_COUNTRY = "business_country";
+  @javax.annotation.Nullable
+  private JsonNullable<CountryAlpha2> businessCountry = JsonNullable.<CountryAlpha2>undefined();
 
-        public static final String JSON_PROPERTY_BUSINESS_LABEL = "business_label";
-    @javax.annotation.Nullable
-            private JsonNullable<String> businessLabel = JsonNullable.<String>undefined();
+  public static final String JSON_PROPERTY_BUSINESS_LABEL = "business_label";
+  @javax.annotation.Nullable
+  private JsonNullable<String> businessLabel = JsonNullable.<String>undefined();
 
-        public static final String JSON_PROPERTY_BUSINESS_SUB_LABEL = "business_sub_label";
-    @javax.annotation.Nullable
-            private JsonNullable<String> businessSubLabel = JsonNullable.<String>undefined();
+  public static final String JSON_PROPERTY_BUSINESS_SUB_LABEL = "business_sub_label";
+  @javax.annotation.Nullable
+  private JsonNullable<String> businessSubLabel = JsonNullable.<String>undefined();
 
-        public static final String JSON_PROPERTY_APPLEPAY_VERIFIED_DOMAINS = "applepay_verified_domains";
-    @javax.annotation.Nullable
-            private JsonNullable<List<String>> applepayVerifiedDomains = JsonNullable.<List<String>>undefined();
+  public static final String JSON_PROPERTY_APPLEPAY_VERIFIED_DOMAINS = "applepay_verified_domains";
+  @javax.annotation.Nullable
+  private JsonNullable<List<String>> applepayVerifiedDomains = JsonNullable.<List<String>>undefined();
 
-        public static final String JSON_PROPERTY_PM_AUTH_CONFIG = "pm_auth_config";
-    @javax.annotation.Nullable
-            private JsonNullable<Object> pmAuthConfig = JsonNullable.<Object>undefined();
+  public static final String JSON_PROPERTY_PM_AUTH_CONFIG = "pm_auth_config";
+  @javax.annotation.Nullable
+  private JsonNullable<Object> pmAuthConfig = JsonNullable.<Object>undefined();
 
-        public static final String JSON_PROPERTY_STATUS = "status";
-    @javax.annotation.Nonnull
-            private ConnectorStatus status;
+  public static final String JSON_PROPERTY_STATUS = "status";
+  @javax.annotation.Nonnull
+  private ConnectorStatus status;
 
-        public static final String JSON_PROPERTY_ADDITIONAL_MERCHANT_DATA = "additional_merchant_data";
-    @javax.annotation.Nullable
-            private JsonNullable<AdditionalMerchantData> additionalMerchantData = JsonNullable.<AdditionalMerchantData>undefined();
+  public static final String JSON_PROPERTY_ADDITIONAL_MERCHANT_DATA = "additional_merchant_data";
+  @javax.annotation.Nullable
+  private JsonNullable<AdditionalMerchantData> additionalMerchantData = JsonNullable.<AdditionalMerchantData>undefined();
 
-        public static final String JSON_PROPERTY_CONNECTOR_WALLETS_DETAILS = "connector_wallets_details";
-    @javax.annotation.Nullable
-            private JsonNullable<ConnectorWalletDetails> connectorWalletsDetails = JsonNullable.<ConnectorWalletDetails>undefined();
+  public static final String JSON_PROPERTY_CONNECTOR_WALLETS_DETAILS = "connector_wallets_details";
+  @javax.annotation.Nullable
+  private JsonNullable<ConnectorWalletDetails> connectorWalletsDetails = JsonNullable.<ConnectorWalletDetails>undefined();
 
-public MerchantConnectorResponse() {
-}
+  public MerchantConnectorResponse() {
+  }
 
-        public MerchantConnectorResponse connectorType(@javax.annotation.Nonnull ConnectorType connectorType) {
-        
-        this.connectorType = connectorType;
-        return this;
-        }
+  public MerchantConnectorResponse connectorType(@javax.annotation.Nonnull ConnectorType connectorType) {
+    
+    this.connectorType = connectorType;
+    return this;
+  }
 
-    /**
-        * Get connectorType
-    * @return connectorType
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_CONNECTOR_TYPE)
+  /**
+   * Get connectorType
+   * @return connectorType
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_CONNECTOR_TYPE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public ConnectorType getConnectorType() {
-        return connectorType;
-    }
+  public ConnectorType getConnectorType() {
+    return connectorType;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_CONNECTOR_TYPE)
+  @JsonProperty(JSON_PROPERTY_CONNECTOR_TYPE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setConnectorType(@javax.annotation.Nonnull ConnectorType connectorType) {
-            this.connectorType = connectorType;
-        }
+    this.connectorType = connectorType;
+  }
 
-        public MerchantConnectorResponse connectorName(@javax.annotation.Nonnull Connector connectorName) {
-        
-        this.connectorName = connectorName;
-        return this;
-        }
+  public MerchantConnectorResponse connectorName(@javax.annotation.Nonnull Connector connectorName) {
+    
+    this.connectorName = connectorName;
+    return this;
+  }
 
-    /**
-        * Get connectorName
-    * @return connectorName
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_CONNECTOR_NAME)
+  /**
+   * Get connectorName
+   * @return connectorName
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_CONNECTOR_NAME)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public Connector getConnectorName() {
-        return connectorName;
-    }
+  public Connector getConnectorName() {
+    return connectorName;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_CONNECTOR_NAME)
+  @JsonProperty(JSON_PROPERTY_CONNECTOR_NAME)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setConnectorName(@javax.annotation.Nonnull Connector connectorName) {
-            this.connectorName = connectorName;
-        }
+    this.connectorName = connectorName;
+  }
 
-        public MerchantConnectorResponse connectorLabel(@javax.annotation.Nullable String connectorLabel) {
-        this.connectorLabel = JsonNullable.<String>of(connectorLabel);
-        
-        return this;
-        }
-
-    /**
-        * A unique label to identify the connector account created under a profile
-    * @return connectorLabel
-    */
-    @javax.annotation.Nullable
-        @JsonIgnore
+  public MerchantConnectorResponse connectorLabel(@javax.annotation.Nullable String connectorLabel) {
+    this.connectorLabel = JsonNullable.<String>of(connectorLabel);
     
-    public String getConnectorLabel() {
-                return connectorLabel.orElse(null);
-    }
+    return this;
+  }
 
-          @JsonProperty(JSON_PROPERTY_CONNECTOR_LABEL)
+  /**
+   * A unique label to identify the connector account created under a profile
+   * @return connectorLabel
+   */
+  @javax.annotation.Nullable
+  @JsonIgnore
+
+  public String getConnectorLabel() {
+        return connectorLabel.orElse(null);
+  }
+
+  @JsonProperty(JSON_PROPERTY_CONNECTOR_LABEL)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-        public JsonNullable<String> getConnectorLabel_JsonNullable() {
-        return connectorLabel;
-        }
+  public JsonNullable<String> getConnectorLabel_JsonNullable() {
+    return connectorLabel;
+  }
+  
+  @JsonProperty(JSON_PROPERTY_CONNECTOR_LABEL)
+  public void setConnectorLabel_JsonNullable(JsonNullable<String> connectorLabel) {
+    this.connectorLabel = connectorLabel;
+  }
+
+  public void setConnectorLabel(@javax.annotation.Nullable String connectorLabel) {
+    this.connectorLabel = JsonNullable.<String>of(connectorLabel);
+  }
+
+  public MerchantConnectorResponse merchantConnectorId(@javax.annotation.Nonnull String merchantConnectorId) {
     
-        @JsonProperty(JSON_PROPERTY_CONNECTOR_LABEL)
-        public void setConnectorLabel_JsonNullable(JsonNullable<String> connectorLabel) {
-        this.connectorLabel = connectorLabel;
-        }
+    this.merchantConnectorId = merchantConnectorId;
+    return this;
+  }
 
-          public void setConnectorLabel(@javax.annotation.Nullable String connectorLabel) {
-            this.connectorLabel = JsonNullable.<String>of(connectorLabel);
-        }
-
-        public MerchantConnectorResponse merchantConnectorId(@javax.annotation.Nonnull String merchantConnectorId) {
-        
-        this.merchantConnectorId = merchantConnectorId;
-        return this;
-        }
-
-    /**
-        * Unique ID of the merchant connector account
-    * @return merchantConnectorId
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_MERCHANT_CONNECTOR_ID)
+  /**
+   * Unique ID of the merchant connector account
+   * @return merchantConnectorId
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_MERCHANT_CONNECTOR_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public String getMerchantConnectorId() {
-        return merchantConnectorId;
-    }
+  public String getMerchantConnectorId() {
+    return merchantConnectorId;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_MERCHANT_CONNECTOR_ID)
+  @JsonProperty(JSON_PROPERTY_MERCHANT_CONNECTOR_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setMerchantConnectorId(@javax.annotation.Nonnull String merchantConnectorId) {
-            this.merchantConnectorId = merchantConnectorId;
-        }
+    this.merchantConnectorId = merchantConnectorId;
+  }
 
-        public MerchantConnectorResponse profileId(@javax.annotation.Nonnull String profileId) {
-        
-        this.profileId = profileId;
-        return this;
-        }
+  public MerchantConnectorResponse profileId(@javax.annotation.Nonnull String profileId) {
+    
+    this.profileId = profileId;
+    return this;
+  }
 
-    /**
-        * Identifier for the profile, if not provided default will be chosen from merchant account
-    * @return profileId
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_PROFILE_ID)
+  /**
+   * Identifier for the profile, if not provided default will be chosen from merchant account
+   * @return profileId
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_PROFILE_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public String getProfileId() {
-        return profileId;
-    }
+  public String getProfileId() {
+    return profileId;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_PROFILE_ID)
+  @JsonProperty(JSON_PROPERTY_PROFILE_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setProfileId(@javax.annotation.Nonnull String profileId) {
-            this.profileId = profileId;
-        }
+    this.profileId = profileId;
+  }
 
-        public MerchantConnectorResponse connectorAccountDetails(@javax.annotation.Nullable MerchantConnectorDetails connectorAccountDetails) {
-        this.connectorAccountDetails = JsonNullable.<MerchantConnectorDetails>of(connectorAccountDetails);
-        
-        return this;
-        }
-
-    /**
-        * Get connectorAccountDetails
-    * @return connectorAccountDetails
-    */
-    @javax.annotation.Nullable
-        @JsonIgnore
+  public MerchantConnectorResponse connectorAccountDetails(@javax.annotation.Nullable MerchantConnectorDetails connectorAccountDetails) {
+    this.connectorAccountDetails = JsonNullable.<MerchantConnectorDetails>of(connectorAccountDetails);
     
-    public MerchantConnectorDetails getConnectorAccountDetails() {
-                return connectorAccountDetails.orElse(null);
-    }
+    return this;
+  }
 
-          @JsonProperty(JSON_PROPERTY_CONNECTOR_ACCOUNT_DETAILS)
+  /**
+   * Get connectorAccountDetails
+   * @return connectorAccountDetails
+   */
+  @javax.annotation.Nullable
+  @JsonIgnore
+
+  public MerchantConnectorDetails getConnectorAccountDetails() {
+        return connectorAccountDetails.orElse(null);
+  }
+
+  @JsonProperty(JSON_PROPERTY_CONNECTOR_ACCOUNT_DETAILS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-        public JsonNullable<MerchantConnectorDetails> getConnectorAccountDetails_JsonNullable() {
-        return connectorAccountDetails;
-        }
+  public JsonNullable<MerchantConnectorDetails> getConnectorAccountDetails_JsonNullable() {
+    return connectorAccountDetails;
+  }
+  
+  @JsonProperty(JSON_PROPERTY_CONNECTOR_ACCOUNT_DETAILS)
+  public void setConnectorAccountDetails_JsonNullable(JsonNullable<MerchantConnectorDetails> connectorAccountDetails) {
+    this.connectorAccountDetails = connectorAccountDetails;
+  }
+
+  public void setConnectorAccountDetails(@javax.annotation.Nullable MerchantConnectorDetails connectorAccountDetails) {
+    this.connectorAccountDetails = JsonNullable.<MerchantConnectorDetails>of(connectorAccountDetails);
+  }
+
+  public MerchantConnectorResponse paymentMethodsEnabled(@javax.annotation.Nullable List<PaymentMethodsEnabled> paymentMethodsEnabled) {
+    this.paymentMethodsEnabled = JsonNullable.<List<PaymentMethodsEnabled>>of(paymentMethodsEnabled);
     
-        @JsonProperty(JSON_PROPERTY_CONNECTOR_ACCOUNT_DETAILS)
-        public void setConnectorAccountDetails_JsonNullable(JsonNullable<MerchantConnectorDetails> connectorAccountDetails) {
-        this.connectorAccountDetails = connectorAccountDetails;
-        }
+    return this;
+  }
 
-          public void setConnectorAccountDetails(@javax.annotation.Nullable MerchantConnectorDetails connectorAccountDetails) {
-            this.connectorAccountDetails = JsonNullable.<MerchantConnectorDetails>of(connectorAccountDetails);
-        }
-
-        public MerchantConnectorResponse paymentMethodsEnabled(@javax.annotation.Nullable List<PaymentMethodsEnabled> paymentMethodsEnabled) {
-        this.paymentMethodsEnabled = JsonNullable.<List<PaymentMethodsEnabled>>of(paymentMethodsEnabled);
-        
-        return this;
-        }
-
-            public MerchantConnectorResponse addPaymentMethodsEnabledItem(PaymentMethodsEnabled paymentMethodsEnabledItem) {
-                if (this.paymentMethodsEnabled == null || !this.paymentMethodsEnabled.isPresent()) {
-                this.paymentMethodsEnabled = JsonNullable.<List<PaymentMethodsEnabled>>of(new ArrayList<>());
-                }
-                try {
-                this.paymentMethodsEnabled.get().add(paymentMethodsEnabledItem);
-                } catch (java.util.NoSuchElementException e) {
-                // this can never happen, as we make sure above that the value is present
-                }
-                return this;
-            }
-
-    /**
-        * An object containing the details about the payment methods that need to be enabled under this merchant connector account
-    * @return paymentMethodsEnabled
-    */
-    @javax.annotation.Nullable
-        @JsonIgnore
-    
-    public List<PaymentMethodsEnabled> getPaymentMethodsEnabled() {
-                return paymentMethodsEnabled.orElse(null);
+  public MerchantConnectorResponse addPaymentMethodsEnabledItem(PaymentMethodsEnabled paymentMethodsEnabledItem) {
+    if (this.paymentMethodsEnabled == null || !this.paymentMethodsEnabled.isPresent()) {
+      this.paymentMethodsEnabled = JsonNullable.<List<PaymentMethodsEnabled>>of(new ArrayList<>());
     }
+    try {
+      this.paymentMethodsEnabled.get().add(paymentMethodsEnabledItem);
+    } catch (java.util.NoSuchElementException e) {
+      // this can never happen, as we make sure above that the value is present
+    }
+    return this;
+  }
 
-          @JsonProperty(JSON_PROPERTY_PAYMENT_METHODS_ENABLED)
+  /**
+   * An object containing the details about the payment methods that need to be enabled under this merchant connector account
+   * @return paymentMethodsEnabled
+   */
+  @javax.annotation.Nullable
+  @JsonIgnore
+
+  public List<PaymentMethodsEnabled> getPaymentMethodsEnabled() {
+        return paymentMethodsEnabled.orElse(null);
+  }
+
+  @JsonProperty(JSON_PROPERTY_PAYMENT_METHODS_ENABLED)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-        public JsonNullable<List<PaymentMethodsEnabled>> getPaymentMethodsEnabled_JsonNullable() {
-        return paymentMethodsEnabled;
-        }
+  public JsonNullable<List<PaymentMethodsEnabled>> getPaymentMethodsEnabled_JsonNullable() {
+    return paymentMethodsEnabled;
+  }
+  
+  @JsonProperty(JSON_PROPERTY_PAYMENT_METHODS_ENABLED)
+  public void setPaymentMethodsEnabled_JsonNullable(JsonNullable<List<PaymentMethodsEnabled>> paymentMethodsEnabled) {
+    this.paymentMethodsEnabled = paymentMethodsEnabled;
+  }
+
+  public void setPaymentMethodsEnabled(@javax.annotation.Nullable List<PaymentMethodsEnabled> paymentMethodsEnabled) {
+    this.paymentMethodsEnabled = JsonNullable.<List<PaymentMethodsEnabled>>of(paymentMethodsEnabled);
+  }
+
+  public MerchantConnectorResponse connectorWebhookDetails(@javax.annotation.Nullable MerchantConnectorWebhookDetails connectorWebhookDetails) {
+    this.connectorWebhookDetails = JsonNullable.<MerchantConnectorWebhookDetails>of(connectorWebhookDetails);
     
-        @JsonProperty(JSON_PROPERTY_PAYMENT_METHODS_ENABLED)
-        public void setPaymentMethodsEnabled_JsonNullable(JsonNullable<List<PaymentMethodsEnabled>> paymentMethodsEnabled) {
-        this.paymentMethodsEnabled = paymentMethodsEnabled;
-        }
+    return this;
+  }
 
-          public void setPaymentMethodsEnabled(@javax.annotation.Nullable List<PaymentMethodsEnabled> paymentMethodsEnabled) {
-            this.paymentMethodsEnabled = JsonNullable.<List<PaymentMethodsEnabled>>of(paymentMethodsEnabled);
-        }
+  /**
+   * Get connectorWebhookDetails
+   * @return connectorWebhookDetails
+   */
+  @javax.annotation.Nullable
+  @JsonIgnore
 
-        public MerchantConnectorResponse connectorWebhookDetails(@javax.annotation.Nullable MerchantConnectorWebhookDetails connectorWebhookDetails) {
-        this.connectorWebhookDetails = JsonNullable.<MerchantConnectorWebhookDetails>of(connectorWebhookDetails);
-        
-        return this;
-        }
+  public MerchantConnectorWebhookDetails getConnectorWebhookDetails() {
+        return connectorWebhookDetails.orElse(null);
+  }
 
-    /**
-        * Get connectorWebhookDetails
-    * @return connectorWebhookDetails
-    */
-    @javax.annotation.Nullable
-        @JsonIgnore
-    
-    public MerchantConnectorWebhookDetails getConnectorWebhookDetails() {
-                return connectorWebhookDetails.orElse(null);
-    }
-
-          @JsonProperty(JSON_PROPERTY_CONNECTOR_WEBHOOK_DETAILS)
+  @JsonProperty(JSON_PROPERTY_CONNECTOR_WEBHOOK_DETAILS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-        public JsonNullable<MerchantConnectorWebhookDetails> getConnectorWebhookDetails_JsonNullable() {
-        return connectorWebhookDetails;
-        }
+  public JsonNullable<MerchantConnectorWebhookDetails> getConnectorWebhookDetails_JsonNullable() {
+    return connectorWebhookDetails;
+  }
+  
+  @JsonProperty(JSON_PROPERTY_CONNECTOR_WEBHOOK_DETAILS)
+  public void setConnectorWebhookDetails_JsonNullable(JsonNullable<MerchantConnectorWebhookDetails> connectorWebhookDetails) {
+    this.connectorWebhookDetails = connectorWebhookDetails;
+  }
+
+  public void setConnectorWebhookDetails(@javax.annotation.Nullable MerchantConnectorWebhookDetails connectorWebhookDetails) {
+    this.connectorWebhookDetails = JsonNullable.<MerchantConnectorWebhookDetails>of(connectorWebhookDetails);
+  }
+
+  public MerchantConnectorResponse metadata(@javax.annotation.Nullable Object metadata) {
+    this.metadata = JsonNullable.<Object>of(metadata);
     
-        @JsonProperty(JSON_PROPERTY_CONNECTOR_WEBHOOK_DETAILS)
-        public void setConnectorWebhookDetails_JsonNullable(JsonNullable<MerchantConnectorWebhookDetails> connectorWebhookDetails) {
-        this.connectorWebhookDetails = connectorWebhookDetails;
-        }
+    return this;
+  }
 
-          public void setConnectorWebhookDetails(@javax.annotation.Nullable MerchantConnectorWebhookDetails connectorWebhookDetails) {
-            this.connectorWebhookDetails = JsonNullable.<MerchantConnectorWebhookDetails>of(connectorWebhookDetails);
-        }
+  /**
+   * Metadata is useful for storing additional, unstructured information on an object.
+   * @return metadata
+   */
+  @javax.annotation.Nullable
+  @JsonIgnore
 
-        public MerchantConnectorResponse metadata(@javax.annotation.Nullable Object metadata) {
-        this.metadata = JsonNullable.<Object>of(metadata);
-        
-        return this;
-        }
+  public Object getMetadata() {
+        return metadata.orElse(null);
+  }
 
-    /**
-        * Metadata is useful for storing additional, unstructured information on an object.
-    * @return metadata
-    */
-    @javax.annotation.Nullable
-        @JsonIgnore
-    
-    public Object getMetadata() {
-                return metadata.orElse(null);
-    }
-
-          @JsonProperty(JSON_PROPERTY_METADATA)
+  @JsonProperty(JSON_PROPERTY_METADATA)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-        public JsonNullable<Object> getMetadata_JsonNullable() {
-        return metadata;
-        }
+  public JsonNullable<Object> getMetadata_JsonNullable() {
+    return metadata;
+  }
+  
+  @JsonProperty(JSON_PROPERTY_METADATA)
+  public void setMetadata_JsonNullable(JsonNullable<Object> metadata) {
+    this.metadata = metadata;
+  }
+
+  public void setMetadata(@javax.annotation.Nullable Object metadata) {
+    this.metadata = JsonNullable.<Object>of(metadata);
+  }
+
+  public MerchantConnectorResponse testMode(@javax.annotation.Nullable Boolean testMode) {
+    this.testMode = JsonNullable.<Boolean>of(testMode);
     
-        @JsonProperty(JSON_PROPERTY_METADATA)
-        public void setMetadata_JsonNullable(JsonNullable<Object> metadata) {
-        this.metadata = metadata;
-        }
+    return this;
+  }
 
-          public void setMetadata(@javax.annotation.Nullable Object metadata) {
-            this.metadata = JsonNullable.<Object>of(metadata);
-        }
+  /**
+   * A boolean value to indicate if the connector is in Test mode. By default, its value is false.
+   * @return testMode
+   */
+  @javax.annotation.Nullable
+  @JsonIgnore
 
-        public MerchantConnectorResponse testMode(@javax.annotation.Nullable Boolean testMode) {
-        this.testMode = JsonNullable.<Boolean>of(testMode);
-        
-        return this;
-        }
+  public Boolean getTestMode() {
+        return testMode.orElse(null);
+  }
 
-    /**
-        * A boolean value to indicate if the connector is in Test mode. By default, its value is false.
-    * @return testMode
-    */
-    @javax.annotation.Nullable
-        @JsonIgnore
-    
-    public Boolean getTestMode() {
-                return testMode.orElse(null);
-    }
-
-          @JsonProperty(JSON_PROPERTY_TEST_MODE)
+  @JsonProperty(JSON_PROPERTY_TEST_MODE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-        public JsonNullable<Boolean> getTestMode_JsonNullable() {
-        return testMode;
-        }
+  public JsonNullable<Boolean> getTestMode_JsonNullable() {
+    return testMode;
+  }
+  
+  @JsonProperty(JSON_PROPERTY_TEST_MODE)
+  public void setTestMode_JsonNullable(JsonNullable<Boolean> testMode) {
+    this.testMode = testMode;
+  }
+
+  public void setTestMode(@javax.annotation.Nullable Boolean testMode) {
+    this.testMode = JsonNullable.<Boolean>of(testMode);
+  }
+
+  public MerchantConnectorResponse disabled(@javax.annotation.Nullable Boolean disabled) {
+    this.disabled = JsonNullable.<Boolean>of(disabled);
     
-        @JsonProperty(JSON_PROPERTY_TEST_MODE)
-        public void setTestMode_JsonNullable(JsonNullable<Boolean> testMode) {
-        this.testMode = testMode;
-        }
+    return this;
+  }
 
-          public void setTestMode(@javax.annotation.Nullable Boolean testMode) {
-            this.testMode = JsonNullable.<Boolean>of(testMode);
-        }
+  /**
+   * A boolean value to indicate if the connector is disabled. By default, its value is false.
+   * @return disabled
+   */
+  @javax.annotation.Nullable
+  @JsonIgnore
 
-        public MerchantConnectorResponse disabled(@javax.annotation.Nullable Boolean disabled) {
-        this.disabled = JsonNullable.<Boolean>of(disabled);
-        
-        return this;
-        }
+  public Boolean getDisabled() {
+        return disabled.orElse(null);
+  }
 
-    /**
-        * A boolean value to indicate if the connector is disabled. By default, its value is false.
-    * @return disabled
-    */
-    @javax.annotation.Nullable
-        @JsonIgnore
-    
-    public Boolean getDisabled() {
-                return disabled.orElse(null);
-    }
-
-          @JsonProperty(JSON_PROPERTY_DISABLED)
+  @JsonProperty(JSON_PROPERTY_DISABLED)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-        public JsonNullable<Boolean> getDisabled_JsonNullable() {
-        return disabled;
-        }
+  public JsonNullable<Boolean> getDisabled_JsonNullable() {
+    return disabled;
+  }
+  
+  @JsonProperty(JSON_PROPERTY_DISABLED)
+  public void setDisabled_JsonNullable(JsonNullable<Boolean> disabled) {
+    this.disabled = disabled;
+  }
+
+  public void setDisabled(@javax.annotation.Nullable Boolean disabled) {
+    this.disabled = JsonNullable.<Boolean>of(disabled);
+  }
+
+  public MerchantConnectorResponse frmConfigs(@javax.annotation.Nullable List<FrmConfigs> frmConfigs) {
+    this.frmConfigs = JsonNullable.<List<FrmConfigs>>of(frmConfigs);
     
-        @JsonProperty(JSON_PROPERTY_DISABLED)
-        public void setDisabled_JsonNullable(JsonNullable<Boolean> disabled) {
-        this.disabled = disabled;
-        }
+    return this;
+  }
 
-          public void setDisabled(@javax.annotation.Nullable Boolean disabled) {
-            this.disabled = JsonNullable.<Boolean>of(disabled);
-        }
-
-        public MerchantConnectorResponse frmConfigs(@javax.annotation.Nullable List<FrmConfigs> frmConfigs) {
-        this.frmConfigs = JsonNullable.<List<FrmConfigs>>of(frmConfigs);
-        
-        return this;
-        }
-
-            public MerchantConnectorResponse addFrmConfigsItem(FrmConfigs frmConfigsItem) {
-                if (this.frmConfigs == null || !this.frmConfigs.isPresent()) {
-                this.frmConfigs = JsonNullable.<List<FrmConfigs>>of(new ArrayList<>());
-                }
-                try {
-                this.frmConfigs.get().add(frmConfigsItem);
-                } catch (java.util.NoSuchElementException e) {
-                // this can never happen, as we make sure above that the value is present
-                }
-                return this;
-            }
-
-    /**
-        * Contains the frm configs for the merchant connector
-    * @return frmConfigs
-    */
-    @javax.annotation.Nullable
-        @JsonIgnore
-    
-    public List<FrmConfigs> getFrmConfigs() {
-                return frmConfigs.orElse(null);
+  public MerchantConnectorResponse addFrmConfigsItem(FrmConfigs frmConfigsItem) {
+    if (this.frmConfigs == null || !this.frmConfigs.isPresent()) {
+      this.frmConfigs = JsonNullable.<List<FrmConfigs>>of(new ArrayList<>());
     }
+    try {
+      this.frmConfigs.get().add(frmConfigsItem);
+    } catch (java.util.NoSuchElementException e) {
+      // this can never happen, as we make sure above that the value is present
+    }
+    return this;
+  }
 
-          @JsonProperty(JSON_PROPERTY_FRM_CONFIGS)
+  /**
+   * Contains the frm configs for the merchant connector
+   * @return frmConfigs
+   */
+  @javax.annotation.Nullable
+  @JsonIgnore
+
+  public List<FrmConfigs> getFrmConfigs() {
+        return frmConfigs.orElse(null);
+  }
+
+  @JsonProperty(JSON_PROPERTY_FRM_CONFIGS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-        public JsonNullable<List<FrmConfigs>> getFrmConfigs_JsonNullable() {
-        return frmConfigs;
-        }
+  public JsonNullable<List<FrmConfigs>> getFrmConfigs_JsonNullable() {
+    return frmConfigs;
+  }
+  
+  @JsonProperty(JSON_PROPERTY_FRM_CONFIGS)
+  public void setFrmConfigs_JsonNullable(JsonNullable<List<FrmConfigs>> frmConfigs) {
+    this.frmConfigs = frmConfigs;
+  }
+
+  public void setFrmConfigs(@javax.annotation.Nullable List<FrmConfigs> frmConfigs) {
+    this.frmConfigs = JsonNullable.<List<FrmConfigs>>of(frmConfigs);
+  }
+
+  public MerchantConnectorResponse businessCountry(@javax.annotation.Nullable CountryAlpha2 businessCountry) {
+    this.businessCountry = JsonNullable.<CountryAlpha2>of(businessCountry);
     
-        @JsonProperty(JSON_PROPERTY_FRM_CONFIGS)
-        public void setFrmConfigs_JsonNullable(JsonNullable<List<FrmConfigs>> frmConfigs) {
-        this.frmConfigs = frmConfigs;
-        }
+    return this;
+  }
 
-          public void setFrmConfigs(@javax.annotation.Nullable List<FrmConfigs> frmConfigs) {
-            this.frmConfigs = JsonNullable.<List<FrmConfigs>>of(frmConfigs);
-        }
+  /**
+   * Get businessCountry
+   * @return businessCountry
+   */
+  @javax.annotation.Nullable
+  @JsonIgnore
 
-        public MerchantConnectorResponse businessCountry(@javax.annotation.Nullable CountryAlpha2 businessCountry) {
-        this.businessCountry = JsonNullable.<CountryAlpha2>of(businessCountry);
-        
-        return this;
-        }
+  public CountryAlpha2 getBusinessCountry() {
+        return businessCountry.orElse(null);
+  }
 
-    /**
-        * Get businessCountry
-    * @return businessCountry
-    */
-    @javax.annotation.Nullable
-        @JsonIgnore
-    
-    public CountryAlpha2 getBusinessCountry() {
-                return businessCountry.orElse(null);
-    }
-
-          @JsonProperty(JSON_PROPERTY_BUSINESS_COUNTRY)
+  @JsonProperty(JSON_PROPERTY_BUSINESS_COUNTRY)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-        public JsonNullable<CountryAlpha2> getBusinessCountry_JsonNullable() {
-        return businessCountry;
-        }
+  public JsonNullable<CountryAlpha2> getBusinessCountry_JsonNullable() {
+    return businessCountry;
+  }
+  
+  @JsonProperty(JSON_PROPERTY_BUSINESS_COUNTRY)
+  public void setBusinessCountry_JsonNullable(JsonNullable<CountryAlpha2> businessCountry) {
+    this.businessCountry = businessCountry;
+  }
+
+  public void setBusinessCountry(@javax.annotation.Nullable CountryAlpha2 businessCountry) {
+    this.businessCountry = JsonNullable.<CountryAlpha2>of(businessCountry);
+  }
+
+  public MerchantConnectorResponse businessLabel(@javax.annotation.Nullable String businessLabel) {
+    this.businessLabel = JsonNullable.<String>of(businessLabel);
     
-        @JsonProperty(JSON_PROPERTY_BUSINESS_COUNTRY)
-        public void setBusinessCountry_JsonNullable(JsonNullable<CountryAlpha2> businessCountry) {
-        this.businessCountry = businessCountry;
-        }
+    return this;
+  }
 
-          public void setBusinessCountry(@javax.annotation.Nullable CountryAlpha2 businessCountry) {
-            this.businessCountry = JsonNullable.<CountryAlpha2>of(businessCountry);
-        }
+  /**
+   * The business label to which the connector account is attached. To be deprecated soon. Use the &#39;profile_id&#39; instead
+   * @return businessLabel
+   */
+  @javax.annotation.Nullable
+  @JsonIgnore
 
-        public MerchantConnectorResponse businessLabel(@javax.annotation.Nullable String businessLabel) {
-        this.businessLabel = JsonNullable.<String>of(businessLabel);
-        
-        return this;
-        }
+  public String getBusinessLabel() {
+        return businessLabel.orElse(null);
+  }
 
-    /**
-        * The business label to which the connector account is attached. To be deprecated soon. Use the &#39;profile_id&#39; instead
-    * @return businessLabel
-    */
-    @javax.annotation.Nullable
-        @JsonIgnore
-    
-    public String getBusinessLabel() {
-                return businessLabel.orElse(null);
-    }
-
-          @JsonProperty(JSON_PROPERTY_BUSINESS_LABEL)
+  @JsonProperty(JSON_PROPERTY_BUSINESS_LABEL)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-        public JsonNullable<String> getBusinessLabel_JsonNullable() {
-        return businessLabel;
-        }
+  public JsonNullable<String> getBusinessLabel_JsonNullable() {
+    return businessLabel;
+  }
+  
+  @JsonProperty(JSON_PROPERTY_BUSINESS_LABEL)
+  public void setBusinessLabel_JsonNullable(JsonNullable<String> businessLabel) {
+    this.businessLabel = businessLabel;
+  }
+
+  public void setBusinessLabel(@javax.annotation.Nullable String businessLabel) {
+    this.businessLabel = JsonNullable.<String>of(businessLabel);
+  }
+
+  public MerchantConnectorResponse businessSubLabel(@javax.annotation.Nullable String businessSubLabel) {
+    this.businessSubLabel = JsonNullable.<String>of(businessSubLabel);
     
-        @JsonProperty(JSON_PROPERTY_BUSINESS_LABEL)
-        public void setBusinessLabel_JsonNullable(JsonNullable<String> businessLabel) {
-        this.businessLabel = businessLabel;
-        }
+    return this;
+  }
 
-          public void setBusinessLabel(@javax.annotation.Nullable String businessLabel) {
-            this.businessLabel = JsonNullable.<String>of(businessLabel);
-        }
+  /**
+   * The business sublabel to which the connector account is attached. To be deprecated soon. Use the &#39;profile_id&#39; instead
+   * @return businessSubLabel
+   */
+  @javax.annotation.Nullable
+  @JsonIgnore
 
-        public MerchantConnectorResponse businessSubLabel(@javax.annotation.Nullable String businessSubLabel) {
-        this.businessSubLabel = JsonNullable.<String>of(businessSubLabel);
-        
-        return this;
-        }
+  public String getBusinessSubLabel() {
+        return businessSubLabel.orElse(null);
+  }
 
-    /**
-        * The business sublabel to which the connector account is attached. To be deprecated soon. Use the &#39;profile_id&#39; instead
-    * @return businessSubLabel
-    */
-    @javax.annotation.Nullable
-        @JsonIgnore
-    
-    public String getBusinessSubLabel() {
-                return businessSubLabel.orElse(null);
-    }
-
-          @JsonProperty(JSON_PROPERTY_BUSINESS_SUB_LABEL)
+  @JsonProperty(JSON_PROPERTY_BUSINESS_SUB_LABEL)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-        public JsonNullable<String> getBusinessSubLabel_JsonNullable() {
-        return businessSubLabel;
-        }
+  public JsonNullable<String> getBusinessSubLabel_JsonNullable() {
+    return businessSubLabel;
+  }
+  
+  @JsonProperty(JSON_PROPERTY_BUSINESS_SUB_LABEL)
+  public void setBusinessSubLabel_JsonNullable(JsonNullable<String> businessSubLabel) {
+    this.businessSubLabel = businessSubLabel;
+  }
+
+  public void setBusinessSubLabel(@javax.annotation.Nullable String businessSubLabel) {
+    this.businessSubLabel = JsonNullable.<String>of(businessSubLabel);
+  }
+
+  public MerchantConnectorResponse applepayVerifiedDomains(@javax.annotation.Nullable List<String> applepayVerifiedDomains) {
+    this.applepayVerifiedDomains = JsonNullable.<List<String>>of(applepayVerifiedDomains);
     
-        @JsonProperty(JSON_PROPERTY_BUSINESS_SUB_LABEL)
-        public void setBusinessSubLabel_JsonNullable(JsonNullable<String> businessSubLabel) {
-        this.businessSubLabel = businessSubLabel;
-        }
+    return this;
+  }
 
-          public void setBusinessSubLabel(@javax.annotation.Nullable String businessSubLabel) {
-            this.businessSubLabel = JsonNullable.<String>of(businessSubLabel);
-        }
-
-        public MerchantConnectorResponse applepayVerifiedDomains(@javax.annotation.Nullable List<String> applepayVerifiedDomains) {
-        this.applepayVerifiedDomains = JsonNullable.<List<String>>of(applepayVerifiedDomains);
-        
-        return this;
-        }
-
-            public MerchantConnectorResponse addApplepayVerifiedDomainsItem(String applepayVerifiedDomainsItem) {
-                if (this.applepayVerifiedDomains == null || !this.applepayVerifiedDomains.isPresent()) {
-                this.applepayVerifiedDomains = JsonNullable.<List<String>>of(new ArrayList<>());
-                }
-                try {
-                this.applepayVerifiedDomains.get().add(applepayVerifiedDomainsItem);
-                } catch (java.util.NoSuchElementException e) {
-                // this can never happen, as we make sure above that the value is present
-                }
-                return this;
-            }
-
-    /**
-        * identifier for the verified domains of a particular connector account
-    * @return applepayVerifiedDomains
-    */
-    @javax.annotation.Nullable
-        @JsonIgnore
-    
-    public List<String> getApplepayVerifiedDomains() {
-                return applepayVerifiedDomains.orElse(null);
+  public MerchantConnectorResponse addApplepayVerifiedDomainsItem(String applepayVerifiedDomainsItem) {
+    if (this.applepayVerifiedDomains == null || !this.applepayVerifiedDomains.isPresent()) {
+      this.applepayVerifiedDomains = JsonNullable.<List<String>>of(new ArrayList<>());
     }
+    try {
+      this.applepayVerifiedDomains.get().add(applepayVerifiedDomainsItem);
+    } catch (java.util.NoSuchElementException e) {
+      // this can never happen, as we make sure above that the value is present
+    }
+    return this;
+  }
 
-          @JsonProperty(JSON_PROPERTY_APPLEPAY_VERIFIED_DOMAINS)
+  /**
+   * identifier for the verified domains of a particular connector account
+   * @return applepayVerifiedDomains
+   */
+  @javax.annotation.Nullable
+  @JsonIgnore
+
+  public List<String> getApplepayVerifiedDomains() {
+        return applepayVerifiedDomains.orElse(null);
+  }
+
+  @JsonProperty(JSON_PROPERTY_APPLEPAY_VERIFIED_DOMAINS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-        public JsonNullable<List<String>> getApplepayVerifiedDomains_JsonNullable() {
-        return applepayVerifiedDomains;
-        }
+  public JsonNullable<List<String>> getApplepayVerifiedDomains_JsonNullable() {
+    return applepayVerifiedDomains;
+  }
+  
+  @JsonProperty(JSON_PROPERTY_APPLEPAY_VERIFIED_DOMAINS)
+  public void setApplepayVerifiedDomains_JsonNullable(JsonNullable<List<String>> applepayVerifiedDomains) {
+    this.applepayVerifiedDomains = applepayVerifiedDomains;
+  }
+
+  public void setApplepayVerifiedDomains(@javax.annotation.Nullable List<String> applepayVerifiedDomains) {
+    this.applepayVerifiedDomains = JsonNullable.<List<String>>of(applepayVerifiedDomains);
+  }
+
+  public MerchantConnectorResponse pmAuthConfig(@javax.annotation.Nullable Object pmAuthConfig) {
+    this.pmAuthConfig = JsonNullable.<Object>of(pmAuthConfig);
     
-        @JsonProperty(JSON_PROPERTY_APPLEPAY_VERIFIED_DOMAINS)
-        public void setApplepayVerifiedDomains_JsonNullable(JsonNullable<List<String>> applepayVerifiedDomains) {
-        this.applepayVerifiedDomains = applepayVerifiedDomains;
-        }
+    return this;
+  }
 
-          public void setApplepayVerifiedDomains(@javax.annotation.Nullable List<String> applepayVerifiedDomains) {
-            this.applepayVerifiedDomains = JsonNullable.<List<String>>of(applepayVerifiedDomains);
-        }
+  /**
+   * Get pmAuthConfig
+   * @return pmAuthConfig
+   */
+  @javax.annotation.Nullable
+  @JsonIgnore
 
-        public MerchantConnectorResponse pmAuthConfig(@javax.annotation.Nullable Object pmAuthConfig) {
-        this.pmAuthConfig = JsonNullable.<Object>of(pmAuthConfig);
-        
-        return this;
-        }
+  public Object getPmAuthConfig() {
+        return pmAuthConfig.orElse(null);
+  }
 
-    /**
-        * Get pmAuthConfig
-    * @return pmAuthConfig
-    */
-    @javax.annotation.Nullable
-        @JsonIgnore
-    
-    public Object getPmAuthConfig() {
-                return pmAuthConfig.orElse(null);
-    }
-
-          @JsonProperty(JSON_PROPERTY_PM_AUTH_CONFIG)
+  @JsonProperty(JSON_PROPERTY_PM_AUTH_CONFIG)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-        public JsonNullable<Object> getPmAuthConfig_JsonNullable() {
-        return pmAuthConfig;
-        }
+  public JsonNullable<Object> getPmAuthConfig_JsonNullable() {
+    return pmAuthConfig;
+  }
+  
+  @JsonProperty(JSON_PROPERTY_PM_AUTH_CONFIG)
+  public void setPmAuthConfig_JsonNullable(JsonNullable<Object> pmAuthConfig) {
+    this.pmAuthConfig = pmAuthConfig;
+  }
+
+  public void setPmAuthConfig(@javax.annotation.Nullable Object pmAuthConfig) {
+    this.pmAuthConfig = JsonNullable.<Object>of(pmAuthConfig);
+  }
+
+  public MerchantConnectorResponse status(@javax.annotation.Nonnull ConnectorStatus status) {
     
-        @JsonProperty(JSON_PROPERTY_PM_AUTH_CONFIG)
-        public void setPmAuthConfig_JsonNullable(JsonNullable<Object> pmAuthConfig) {
-        this.pmAuthConfig = pmAuthConfig;
-        }
+    this.status = status;
+    return this;
+  }
 
-          public void setPmAuthConfig(@javax.annotation.Nullable Object pmAuthConfig) {
-            this.pmAuthConfig = JsonNullable.<Object>of(pmAuthConfig);
-        }
-
-        public MerchantConnectorResponse status(@javax.annotation.Nonnull ConnectorStatus status) {
-        
-        this.status = status;
-        return this;
-        }
-
-    /**
-        * Get status
-    * @return status
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_STATUS)
+  /**
+   * Get status
+   * @return status
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_STATUS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public ConnectorStatus getStatus() {
-        return status;
-    }
+  public ConnectorStatus getStatus() {
+    return status;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_STATUS)
+  @JsonProperty(JSON_PROPERTY_STATUS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setStatus(@javax.annotation.Nonnull ConnectorStatus status) {
-            this.status = status;
-        }
+    this.status = status;
+  }
 
-        public MerchantConnectorResponse additionalMerchantData(@javax.annotation.Nullable AdditionalMerchantData additionalMerchantData) {
-        this.additionalMerchantData = JsonNullable.<AdditionalMerchantData>of(additionalMerchantData);
-        
-        return this;
-        }
-
-    /**
-        * Get additionalMerchantData
-    * @return additionalMerchantData
-    */
-    @javax.annotation.Nullable
-        @JsonIgnore
+  public MerchantConnectorResponse additionalMerchantData(@javax.annotation.Nullable AdditionalMerchantData additionalMerchantData) {
+    this.additionalMerchantData = JsonNullable.<AdditionalMerchantData>of(additionalMerchantData);
     
-    public AdditionalMerchantData getAdditionalMerchantData() {
-                return additionalMerchantData.orElse(null);
-    }
+    return this;
+  }
 
-          @JsonProperty(JSON_PROPERTY_ADDITIONAL_MERCHANT_DATA)
+  /**
+   * Get additionalMerchantData
+   * @return additionalMerchantData
+   */
+  @javax.annotation.Nullable
+  @JsonIgnore
+
+  public AdditionalMerchantData getAdditionalMerchantData() {
+        return additionalMerchantData.orElse(null);
+  }
+
+  @JsonProperty(JSON_PROPERTY_ADDITIONAL_MERCHANT_DATA)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-        public JsonNullable<AdditionalMerchantData> getAdditionalMerchantData_JsonNullable() {
-        return additionalMerchantData;
-        }
+  public JsonNullable<AdditionalMerchantData> getAdditionalMerchantData_JsonNullable() {
+    return additionalMerchantData;
+  }
+  
+  @JsonProperty(JSON_PROPERTY_ADDITIONAL_MERCHANT_DATA)
+  public void setAdditionalMerchantData_JsonNullable(JsonNullable<AdditionalMerchantData> additionalMerchantData) {
+    this.additionalMerchantData = additionalMerchantData;
+  }
+
+  public void setAdditionalMerchantData(@javax.annotation.Nullable AdditionalMerchantData additionalMerchantData) {
+    this.additionalMerchantData = JsonNullable.<AdditionalMerchantData>of(additionalMerchantData);
+  }
+
+  public MerchantConnectorResponse connectorWalletsDetails(@javax.annotation.Nullable ConnectorWalletDetails connectorWalletsDetails) {
+    this.connectorWalletsDetails = JsonNullable.<ConnectorWalletDetails>of(connectorWalletsDetails);
     
-        @JsonProperty(JSON_PROPERTY_ADDITIONAL_MERCHANT_DATA)
-        public void setAdditionalMerchantData_JsonNullable(JsonNullable<AdditionalMerchantData> additionalMerchantData) {
-        this.additionalMerchantData = additionalMerchantData;
-        }
+    return this;
+  }
 
-          public void setAdditionalMerchantData(@javax.annotation.Nullable AdditionalMerchantData additionalMerchantData) {
-            this.additionalMerchantData = JsonNullable.<AdditionalMerchantData>of(additionalMerchantData);
-        }
+  /**
+   * Get connectorWalletsDetails
+   * @return connectorWalletsDetails
+   */
+  @javax.annotation.Nullable
+  @JsonIgnore
 
-        public MerchantConnectorResponse connectorWalletsDetails(@javax.annotation.Nullable ConnectorWalletDetails connectorWalletsDetails) {
-        this.connectorWalletsDetails = JsonNullable.<ConnectorWalletDetails>of(connectorWalletsDetails);
-        
-        return this;
-        }
+  public ConnectorWalletDetails getConnectorWalletsDetails() {
+        return connectorWalletsDetails.orElse(null);
+  }
 
-    /**
-        * Get connectorWalletsDetails
-    * @return connectorWalletsDetails
-    */
-    @javax.annotation.Nullable
-        @JsonIgnore
-    
-    public ConnectorWalletDetails getConnectorWalletsDetails() {
-                return connectorWalletsDetails.orElse(null);
-    }
-
-          @JsonProperty(JSON_PROPERTY_CONNECTOR_WALLETS_DETAILS)
+  @JsonProperty(JSON_PROPERTY_CONNECTOR_WALLETS_DETAILS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-        public JsonNullable<ConnectorWalletDetails> getConnectorWalletsDetails_JsonNullable() {
-        return connectorWalletsDetails;
-        }
-    
-        @JsonProperty(JSON_PROPERTY_CONNECTOR_WALLETS_DETAILS)
-        public void setConnectorWalletsDetails_JsonNullable(JsonNullable<ConnectorWalletDetails> connectorWalletsDetails) {
-        this.connectorWalletsDetails = connectorWalletsDetails;
-        }
+  public JsonNullable<ConnectorWalletDetails> getConnectorWalletsDetails_JsonNullable() {
+    return connectorWalletsDetails;
+  }
+  
+  @JsonProperty(JSON_PROPERTY_CONNECTOR_WALLETS_DETAILS)
+  public void setConnectorWalletsDetails_JsonNullable(JsonNullable<ConnectorWalletDetails> connectorWalletsDetails) {
+    this.connectorWalletsDetails = connectorWalletsDetails;
+  }
 
-          public void setConnectorWalletsDetails(@javax.annotation.Nullable ConnectorWalletDetails connectorWalletsDetails) {
-            this.connectorWalletsDetails = JsonNullable.<ConnectorWalletDetails>of(connectorWalletsDetails);
-        }
+  public void setConnectorWalletsDetails(@javax.annotation.Nullable ConnectorWalletDetails connectorWalletsDetails) {
+    this.connectorWalletsDetails = JsonNullable.<ConnectorWalletDetails>of(connectorWalletsDetails);
+  }
 
-@Override
-public boolean equals(Object o) {
+  @Override
+  public boolean equals(Object o) {
     if (this == o) {
-    return true;
+      return true;
     }
     if (o == null || getClass() != o.getClass()) {
-    return false;
+      return false;
     }
-        MerchantConnectorResponse merchantConnectorResponse = (MerchantConnectorResponse) o;
-        return Objects.equals(this.connectorType, merchantConnectorResponse.connectorType) &&
+    MerchantConnectorResponse merchantConnectorResponse = (MerchantConnectorResponse) o;
+    return Objects.equals(this.connectorType, merchantConnectorResponse.connectorType) &&
         Objects.equals(this.connectorName, merchantConnectorResponse.connectorName) &&
         equalsNullable(this.connectorLabel, merchantConnectorResponse.connectorLabel) &&
         Objects.equals(this.merchantConnectorId, merchantConnectorResponse.merchantConnectorId) &&
@@ -838,281 +838,281 @@ public boolean equals(Object o) {
         Objects.equals(this.status, merchantConnectorResponse.status) &&
         equalsNullable(this.additionalMerchantData, merchantConnectorResponse.additionalMerchantData) &&
         equalsNullable(this.connectorWalletsDetails, merchantConnectorResponse.connectorWalletsDetails);
-}
+  }
 
-    private static <T> boolean equalsNullable(JsonNullable<T> a, JsonNullable<T> b) {
-        return a == b || (a != null && b != null && a.isPresent() && b.isPresent() && Objects.deepEquals(a.get(), b.get()));
-        }
+  private static <T> boolean equalsNullable(JsonNullable<T> a, JsonNullable<T> b) {
+    return a == b || (a != null && b != null && a.isPresent() && b.isPresent() && Objects.deepEquals(a.get(), b.get()));
+  }
 
-    @Override
-    public int hashCode() {
-        return Objects.hash(connectorType, connectorName, hashCodeNullable(connectorLabel), merchantConnectorId, profileId, hashCodeNullable(connectorAccountDetails), hashCodeNullable(paymentMethodsEnabled), hashCodeNullable(connectorWebhookDetails), hashCodeNullable(metadata), hashCodeNullable(testMode), hashCodeNullable(disabled), hashCodeNullable(frmConfigs), hashCodeNullable(businessCountry), hashCodeNullable(businessLabel), hashCodeNullable(businessSubLabel), hashCodeNullable(applepayVerifiedDomains), hashCodeNullable(pmAuthConfig), status, hashCodeNullable(additionalMerchantData), hashCodeNullable(connectorWalletsDetails));
+  @Override
+  public int hashCode() {
+    return Objects.hash(connectorType, connectorName, hashCodeNullable(connectorLabel), merchantConnectorId, profileId, hashCodeNullable(connectorAccountDetails), hashCodeNullable(paymentMethodsEnabled), hashCodeNullable(connectorWebhookDetails), hashCodeNullable(metadata), hashCodeNullable(testMode), hashCodeNullable(disabled), hashCodeNullable(frmConfigs), hashCodeNullable(businessCountry), hashCodeNullable(businessLabel), hashCodeNullable(businessSubLabel), hashCodeNullable(applepayVerifiedDomains), hashCodeNullable(pmAuthConfig), status, hashCodeNullable(additionalMerchantData), hashCodeNullable(connectorWalletsDetails));
+  }
+
+  private static <T> int hashCodeNullable(JsonNullable<T> a) {
+    if (a == null) {
+      return 1;
     }
+    return a.isPresent() ? Arrays.deepHashCode(new Object[]{a.get()}) : 31;
+  }
 
-        private static <T> int hashCodeNullable(JsonNullable<T> a) {
-        if (a == null) {
-        return 1;
-        }
-        return a.isPresent() ? Arrays.deepHashCode(new Object[]{a.get()}) : 31;
-        }
-
-    @Override
-    public String toString() {
+  @Override
+  public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class MerchantConnectorResponse {\n");
-        sb.append("    connectorType: ").append(toIndentedString(connectorType)).append("\n");
-        sb.append("    connectorName: ").append(toIndentedString(connectorName)).append("\n");
-        sb.append("    connectorLabel: ").append(toIndentedString(connectorLabel)).append("\n");
-        sb.append("    merchantConnectorId: ").append(toIndentedString(merchantConnectorId)).append("\n");
-        sb.append("    profileId: ").append(toIndentedString(profileId)).append("\n");
-        sb.append("    connectorAccountDetails: ").append(toIndentedString(connectorAccountDetails)).append("\n");
-        sb.append("    paymentMethodsEnabled: ").append(toIndentedString(paymentMethodsEnabled)).append("\n");
-        sb.append("    connectorWebhookDetails: ").append(toIndentedString(connectorWebhookDetails)).append("\n");
-        sb.append("    metadata: ").append(toIndentedString(metadata)).append("\n");
-        sb.append("    testMode: ").append(toIndentedString(testMode)).append("\n");
-        sb.append("    disabled: ").append(toIndentedString(disabled)).append("\n");
-        sb.append("    frmConfigs: ").append(toIndentedString(frmConfigs)).append("\n");
-        sb.append("    businessCountry: ").append(toIndentedString(businessCountry)).append("\n");
-        sb.append("    businessLabel: ").append(toIndentedString(businessLabel)).append("\n");
-        sb.append("    businessSubLabel: ").append(toIndentedString(businessSubLabel)).append("\n");
-        sb.append("    applepayVerifiedDomains: ").append(toIndentedString(applepayVerifiedDomains)).append("\n");
-        sb.append("    pmAuthConfig: ").append(toIndentedString(pmAuthConfig)).append("\n");
-        sb.append("    status: ").append(toIndentedString(status)).append("\n");
-        sb.append("    additionalMerchantData: ").append(toIndentedString(additionalMerchantData)).append("\n");
-        sb.append("    connectorWalletsDetails: ").append(toIndentedString(connectorWalletsDetails)).append("\n");
+    sb.append("    connectorType: ").append(toIndentedString(connectorType)).append("\n");
+    sb.append("    connectorName: ").append(toIndentedString(connectorName)).append("\n");
+    sb.append("    connectorLabel: ").append(toIndentedString(connectorLabel)).append("\n");
+    sb.append("    merchantConnectorId: ").append(toIndentedString(merchantConnectorId)).append("\n");
+    sb.append("    profileId: ").append(toIndentedString(profileId)).append("\n");
+    sb.append("    connectorAccountDetails: ").append(toIndentedString(connectorAccountDetails)).append("\n");
+    sb.append("    paymentMethodsEnabled: ").append(toIndentedString(paymentMethodsEnabled)).append("\n");
+    sb.append("    connectorWebhookDetails: ").append(toIndentedString(connectorWebhookDetails)).append("\n");
+    sb.append("    metadata: ").append(toIndentedString(metadata)).append("\n");
+    sb.append("    testMode: ").append(toIndentedString(testMode)).append("\n");
+    sb.append("    disabled: ").append(toIndentedString(disabled)).append("\n");
+    sb.append("    frmConfigs: ").append(toIndentedString(frmConfigs)).append("\n");
+    sb.append("    businessCountry: ").append(toIndentedString(businessCountry)).append("\n");
+    sb.append("    businessLabel: ").append(toIndentedString(businessLabel)).append("\n");
+    sb.append("    businessSubLabel: ").append(toIndentedString(businessSubLabel)).append("\n");
+    sb.append("    applepayVerifiedDomains: ").append(toIndentedString(applepayVerifiedDomains)).append("\n");
+    sb.append("    pmAuthConfig: ").append(toIndentedString(pmAuthConfig)).append("\n");
+    sb.append("    status: ").append(toIndentedString(status)).append("\n");
+    sb.append("    additionalMerchantData: ").append(toIndentedString(additionalMerchantData)).append("\n");
+    sb.append("    connectorWalletsDetails: ").append(toIndentedString(connectorWalletsDetails)).append("\n");
     sb.append("}");
     return sb.toString();
-    }
+  }
 
-    /**
-    * Convert the given object to string with each line indented by 4 spaces
-    * (except the first line).
-    */
-    private String toIndentedString(Object o) {
+  /**
+   * Convert the given object to string with each line indented by 4 spaces
+   * (except the first line).
+   */
+  private String toIndentedString(Object o) {
     if (o == null) {
-    return "null";
+      return "null";
     }
     return o.toString().replace("\n", "\n    ");
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @return URL query string
+   */
+  public String toUrlQueryString() {
+    return toUrlQueryString(null);
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @param prefix prefix of the query string
+   * @return URL query string
+   */
+  public String toUrlQueryString(String prefix) {
+    String suffix = "";
+    String containerSuffix = "";
+    String containerPrefix = "";
+    if (prefix == null) {
+      // style=form, explode=true, e.g. /pet?name=cat&type=manx
+      prefix = "";
+    } else {
+      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+      prefix = prefix + "[";
+      suffix = "]";
+      containerSuffix = "]";
+      containerPrefix = "[";
     }
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @return URL query string
-        */
-        public String toUrlQueryString() {
-        return toUrlQueryString(null);
-        }
+    StringJoiner joiner = new StringJoiner("&");
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @param prefix prefix of the query string
-        * @return URL query string
-        */
-        public String toUrlQueryString(String prefix) {
-        String suffix = "";
-        String containerSuffix = "";
-        String containerPrefix = "";
-        if (prefix == null) {
-        // style=form, explode=true, e.g. /pet?name=cat&type=manx
-        prefix = "";
-        } else {
-        // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
-        prefix = prefix + "[";
-        suffix = "]";
-        containerSuffix = "]";
-        containerPrefix = "[";
-        }
-
-        StringJoiner joiner = new StringJoiner("&");
-
-            // add `connector_type` to the URL query string
-                            if (getConnectorType() != null) {
-                            try {
-                            joiner.add(String.format("%sconnector_type%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getConnectorType()), "UTF-8").replaceAll("\\+", "%20")));
-                            } catch (UnsupportedEncodingException e) {
-                            // Should never happen, UTF-8 is always supported
-                            throw new RuntimeException(e);
-                            }
-                            }
-
-            // add `connector_name` to the URL query string
-                            if (getConnectorName() != null) {
-                            try {
-                            joiner.add(String.format("%sconnector_name%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getConnectorName()), "UTF-8").replaceAll("\\+", "%20")));
-                            } catch (UnsupportedEncodingException e) {
-                            // Should never happen, UTF-8 is always supported
-                            throw new RuntimeException(e);
-                            }
-                            }
-
-            // add `connector_label` to the URL query string
-                        if (getConnectorLabel() != null) {
-                        try {
-                        joiner.add(String.format("%sconnector_label%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getConnectorLabel()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-            // add `merchant_connector_id` to the URL query string
-                        if (getMerchantConnectorId() != null) {
-                        try {
-                        joiner.add(String.format("%smerchant_connector_id%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getMerchantConnectorId()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-            // add `profile_id` to the URL query string
-                        if (getProfileId() != null) {
-                        try {
-                        joiner.add(String.format("%sprofile_id%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getProfileId()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-            // add `connector_account_details` to the URL query string
-                            if (getConnectorAccountDetails() != null) {
-                            joiner.add(getConnectorAccountDetails().toUrlQueryString(prefix + "connector_account_details" + suffix));
-                            }
-
-            // add `payment_methods_enabled` to the URL query string
-                            if (getPaymentMethodsEnabled() != null) {
-                            for (int i = 0; i < getPaymentMethodsEnabled().size(); i++) {
-                            if (getPaymentMethodsEnabled().get(i) != null) {
-                            joiner.add(getPaymentMethodsEnabled().get(i).toUrlQueryString(String.format("%spayment_methods_enabled%s%s", prefix, suffix,
-                            "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix))));
-                            }
-                            }
-                            }
-
-            // add `connector_webhook_details` to the URL query string
-                            if (getConnectorWebhookDetails() != null) {
-                            joiner.add(getConnectorWebhookDetails().toUrlQueryString(prefix + "connector_webhook_details" + suffix));
-                            }
-
-            // add `metadata` to the URL query string
-                        if (getMetadata() != null) {
-                        try {
-                        joiner.add(String.format("%smetadata%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getMetadata()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-            // add `test_mode` to the URL query string
-                        if (getTestMode() != null) {
-                        try {
-                        joiner.add(String.format("%stest_mode%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getTestMode()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-            // add `disabled` to the URL query string
-                        if (getDisabled() != null) {
-                        try {
-                        joiner.add(String.format("%sdisabled%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getDisabled()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-            // add `frm_configs` to the URL query string
-                            if (getFrmConfigs() != null) {
-                            for (int i = 0; i < getFrmConfigs().size(); i++) {
-                            if (getFrmConfigs().get(i) != null) {
-                            joiner.add(getFrmConfigs().get(i).toUrlQueryString(String.format("%sfrm_configs%s%s", prefix, suffix,
-                            "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix))));
-                            }
-                            }
-                            }
-
-            // add `business_country` to the URL query string
-                            if (getBusinessCountry() != null) {
-                            try {
-                            joiner.add(String.format("%sbusiness_country%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getBusinessCountry()), "UTF-8").replaceAll("\\+", "%20")));
-                            } catch (UnsupportedEncodingException e) {
-                            // Should never happen, UTF-8 is always supported
-                            throw new RuntimeException(e);
-                            }
-                            }
-
-            // add `business_label` to the URL query string
-                        if (getBusinessLabel() != null) {
-                        try {
-                        joiner.add(String.format("%sbusiness_label%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getBusinessLabel()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-            // add `business_sub_label` to the URL query string
-                        if (getBusinessSubLabel() != null) {
-                        try {
-                        joiner.add(String.format("%sbusiness_sub_label%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getBusinessSubLabel()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-            // add `applepay_verified_domains` to the URL query string
-                        if (getApplepayVerifiedDomains() != null) {
-                        for (int i = 0; i < getApplepayVerifiedDomains().size(); i++) {
-                        try {
-                        joiner.add(String.format("%sapplepay_verified_domains%s%s=%s", prefix, suffix,
-                        "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix),
-                        URLEncoder.encode(String.valueOf(getApplepayVerifiedDomains().get(i)), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-                        }
-
-            // add `pm_auth_config` to the URL query string
-                        if (getPmAuthConfig() != null) {
-                        try {
-                        joiner.add(String.format("%spm_auth_config%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getPmAuthConfig()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-            // add `status` to the URL query string
-                            if (getStatus() != null) {
-                            try {
-                            joiner.add(String.format("%sstatus%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getStatus()), "UTF-8").replaceAll("\\+", "%20")));
-                            } catch (UnsupportedEncodingException e) {
-                            // Should never happen, UTF-8 is always supported
-                            throw new RuntimeException(e);
-                            }
-                            }
-
-            // add `additional_merchant_data` to the URL query string
-                            if (getAdditionalMerchantData() != null) {
-                            joiner.add(getAdditionalMerchantData().toUrlQueryString(prefix + "additional_merchant_data" + suffix));
-                            }
-
-            // add `connector_wallets_details` to the URL query string
-                            if (getConnectorWalletsDetails() != null) {
-                            joiner.add(getConnectorWalletsDetails().toUrlQueryString(prefix + "connector_wallets_details" + suffix));
-                            }
-
-        return joiner.toString();
-        }
-
+    // add `connector_type` to the URL query string
+    if (getConnectorType() != null) {
+      try {
+        joiner.add(String.format("%sconnector_type%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getConnectorType()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
     }
+
+    // add `connector_name` to the URL query string
+    if (getConnectorName() != null) {
+      try {
+        joiner.add(String.format("%sconnector_name%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getConnectorName()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `connector_label` to the URL query string
+    if (getConnectorLabel() != null) {
+      try {
+        joiner.add(String.format("%sconnector_label%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getConnectorLabel()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `merchant_connector_id` to the URL query string
+    if (getMerchantConnectorId() != null) {
+      try {
+        joiner.add(String.format("%smerchant_connector_id%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getMerchantConnectorId()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `profile_id` to the URL query string
+    if (getProfileId() != null) {
+      try {
+        joiner.add(String.format("%sprofile_id%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getProfileId()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `connector_account_details` to the URL query string
+    if (getConnectorAccountDetails() != null) {
+      joiner.add(getConnectorAccountDetails().toUrlQueryString(prefix + "connector_account_details" + suffix));
+    }
+
+    // add `payment_methods_enabled` to the URL query string
+    if (getPaymentMethodsEnabled() != null) {
+      for (int i = 0; i < getPaymentMethodsEnabled().size(); i++) {
+        if (getPaymentMethodsEnabled().get(i) != null) {
+          joiner.add(getPaymentMethodsEnabled().get(i).toUrlQueryString(String.format("%spayment_methods_enabled%s%s", prefix, suffix,
+              "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix))));
+        }
+      }
+    }
+
+    // add `connector_webhook_details` to the URL query string
+    if (getConnectorWebhookDetails() != null) {
+      joiner.add(getConnectorWebhookDetails().toUrlQueryString(prefix + "connector_webhook_details" + suffix));
+    }
+
+    // add `metadata` to the URL query string
+    if (getMetadata() != null) {
+      try {
+        joiner.add(String.format("%smetadata%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getMetadata()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `test_mode` to the URL query string
+    if (getTestMode() != null) {
+      try {
+        joiner.add(String.format("%stest_mode%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getTestMode()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `disabled` to the URL query string
+    if (getDisabled() != null) {
+      try {
+        joiner.add(String.format("%sdisabled%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getDisabled()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `frm_configs` to the URL query string
+    if (getFrmConfigs() != null) {
+      for (int i = 0; i < getFrmConfigs().size(); i++) {
+        if (getFrmConfigs().get(i) != null) {
+          joiner.add(getFrmConfigs().get(i).toUrlQueryString(String.format("%sfrm_configs%s%s", prefix, suffix,
+              "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix))));
+        }
+      }
+    }
+
+    // add `business_country` to the URL query string
+    if (getBusinessCountry() != null) {
+      try {
+        joiner.add(String.format("%sbusiness_country%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getBusinessCountry()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `business_label` to the URL query string
+    if (getBusinessLabel() != null) {
+      try {
+        joiner.add(String.format("%sbusiness_label%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getBusinessLabel()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `business_sub_label` to the URL query string
+    if (getBusinessSubLabel() != null) {
+      try {
+        joiner.add(String.format("%sbusiness_sub_label%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getBusinessSubLabel()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `applepay_verified_domains` to the URL query string
+    if (getApplepayVerifiedDomains() != null) {
+      for (int i = 0; i < getApplepayVerifiedDomains().size(); i++) {
+        try {
+          joiner.add(String.format("%sapplepay_verified_domains%s%s=%s", prefix, suffix,
+              "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix),
+              URLEncoder.encode(String.valueOf(getApplepayVerifiedDomains().get(i)), "UTF-8").replaceAll("\\+", "%20")));
+        } catch (UnsupportedEncodingException e) {
+          // Should never happen, UTF-8 is always supported
+          throw new RuntimeException(e);
+        }
+      }
+    }
+
+    // add `pm_auth_config` to the URL query string
+    if (getPmAuthConfig() != null) {
+      try {
+        joiner.add(String.format("%spm_auth_config%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getPmAuthConfig()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `status` to the URL query string
+    if (getStatus() != null) {
+      try {
+        joiner.add(String.format("%sstatus%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getStatus()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `additional_merchant_data` to the URL query string
+    if (getAdditionalMerchantData() != null) {
+      joiner.add(getAdditionalMerchantData().toUrlQueryString(prefix + "additional_merchant_data" + suffix));
+    }
+
+    // add `connector_wallets_details` to the URL query string
+    if (getConnectorWalletsDetails() != null) {
+      joiner.add(getConnectorWalletsDetails().toUrlQueryString(prefix + "connector_wallets_details" + suffix));
+    }
+
+    return joiner.toString();
+  }
+
+}
 

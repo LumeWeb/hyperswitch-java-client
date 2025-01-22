@@ -35,206 +35,206 @@ import java.net.URLEncoder;
 import java.util.StringJoiner;
 
 /**
-* additional data that might be required by hyperswitch
-*/
-    @JsonPropertyOrder({
-        FeatureMetadata.JSON_PROPERTY_REDIRECT_RESPONSE,
-        FeatureMetadata.JSON_PROPERTY_SEARCH_TAGS
-    })
+ * additional data that might be required by hyperswitch
+ */
+@JsonPropertyOrder({
+  FeatureMetadata.JSON_PROPERTY_REDIRECT_RESPONSE,
+  FeatureMetadata.JSON_PROPERTY_SEARCH_TAGS
+})
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class FeatureMetadata {
-        public static final String JSON_PROPERTY_REDIRECT_RESPONSE = "redirect_response";
-    @javax.annotation.Nullable
-            private JsonNullable<RedirectResponse> redirectResponse = JsonNullable.<RedirectResponse>undefined();
+  public static final String JSON_PROPERTY_REDIRECT_RESPONSE = "redirect_response";
+  @javax.annotation.Nullable
+  private JsonNullable<RedirectResponse> redirectResponse = JsonNullable.<RedirectResponse>undefined();
 
-        public static final String JSON_PROPERTY_SEARCH_TAGS = "search_tags";
-    @javax.annotation.Nullable
-            private JsonNullable<List<String>> searchTags = JsonNullable.<List<String>>undefined();
+  public static final String JSON_PROPERTY_SEARCH_TAGS = "search_tags";
+  @javax.annotation.Nullable
+  private JsonNullable<List<String>> searchTags = JsonNullable.<List<String>>undefined();
 
-public FeatureMetadata() {
-}
+  public FeatureMetadata() {
+  }
 
-        public FeatureMetadata redirectResponse(@javax.annotation.Nullable RedirectResponse redirectResponse) {
-        this.redirectResponse = JsonNullable.<RedirectResponse>of(redirectResponse);
-        
-        return this;
-        }
-
-    /**
-        * Get redirectResponse
-    * @return redirectResponse
-    */
-    @javax.annotation.Nullable
-        @JsonIgnore
+  public FeatureMetadata redirectResponse(@javax.annotation.Nullable RedirectResponse redirectResponse) {
+    this.redirectResponse = JsonNullable.<RedirectResponse>of(redirectResponse);
     
-    public RedirectResponse getRedirectResponse() {
-                return redirectResponse.orElse(null);
-    }
+    return this;
+  }
 
-          @JsonProperty(JSON_PROPERTY_REDIRECT_RESPONSE)
+  /**
+   * Get redirectResponse
+   * @return redirectResponse
+   */
+  @javax.annotation.Nullable
+  @JsonIgnore
+
+  public RedirectResponse getRedirectResponse() {
+        return redirectResponse.orElse(null);
+  }
+
+  @JsonProperty(JSON_PROPERTY_REDIRECT_RESPONSE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-        public JsonNullable<RedirectResponse> getRedirectResponse_JsonNullable() {
-        return redirectResponse;
-        }
+  public JsonNullable<RedirectResponse> getRedirectResponse_JsonNullable() {
+    return redirectResponse;
+  }
+  
+  @JsonProperty(JSON_PROPERTY_REDIRECT_RESPONSE)
+  public void setRedirectResponse_JsonNullable(JsonNullable<RedirectResponse> redirectResponse) {
+    this.redirectResponse = redirectResponse;
+  }
+
+  public void setRedirectResponse(@javax.annotation.Nullable RedirectResponse redirectResponse) {
+    this.redirectResponse = JsonNullable.<RedirectResponse>of(redirectResponse);
+  }
+
+  public FeatureMetadata searchTags(@javax.annotation.Nullable List<String> searchTags) {
+    this.searchTags = JsonNullable.<List<String>>of(searchTags);
     
-        @JsonProperty(JSON_PROPERTY_REDIRECT_RESPONSE)
-        public void setRedirectResponse_JsonNullable(JsonNullable<RedirectResponse> redirectResponse) {
-        this.redirectResponse = redirectResponse;
-        }
+    return this;
+  }
 
-          public void setRedirectResponse(@javax.annotation.Nullable RedirectResponse redirectResponse) {
-            this.redirectResponse = JsonNullable.<RedirectResponse>of(redirectResponse);
-        }
-
-        public FeatureMetadata searchTags(@javax.annotation.Nullable List<String> searchTags) {
-        this.searchTags = JsonNullable.<List<String>>of(searchTags);
-        
-        return this;
-        }
-
-            public FeatureMetadata addSearchTagsItem(String searchTagsItem) {
-                if (this.searchTags == null || !this.searchTags.isPresent()) {
-                this.searchTags = JsonNullable.<List<String>>of(new ArrayList<>());
-                }
-                try {
-                this.searchTags.get().add(searchTagsItem);
-                } catch (java.util.NoSuchElementException e) {
-                // this can never happen, as we make sure above that the value is present
-                }
-                return this;
-            }
-
-    /**
-        * Additional tags to be used for global search
-    * @return searchTags
-    */
-    @javax.annotation.Nullable
-        @JsonIgnore
-    
-    public List<String> getSearchTags() {
-                return searchTags.orElse(null);
+  public FeatureMetadata addSearchTagsItem(String searchTagsItem) {
+    if (this.searchTags == null || !this.searchTags.isPresent()) {
+      this.searchTags = JsonNullable.<List<String>>of(new ArrayList<>());
     }
+    try {
+      this.searchTags.get().add(searchTagsItem);
+    } catch (java.util.NoSuchElementException e) {
+      // this can never happen, as we make sure above that the value is present
+    }
+    return this;
+  }
 
-          @JsonProperty(JSON_PROPERTY_SEARCH_TAGS)
+  /**
+   * Additional tags to be used for global search
+   * @return searchTags
+   */
+  @javax.annotation.Nullable
+  @JsonIgnore
+
+  public List<String> getSearchTags() {
+        return searchTags.orElse(null);
+  }
+
+  @JsonProperty(JSON_PROPERTY_SEARCH_TAGS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-        public JsonNullable<List<String>> getSearchTags_JsonNullable() {
-        return searchTags;
-        }
-    
-        @JsonProperty(JSON_PROPERTY_SEARCH_TAGS)
-        public void setSearchTags_JsonNullable(JsonNullable<List<String>> searchTags) {
-        this.searchTags = searchTags;
-        }
+  public JsonNullable<List<String>> getSearchTags_JsonNullable() {
+    return searchTags;
+  }
+  
+  @JsonProperty(JSON_PROPERTY_SEARCH_TAGS)
+  public void setSearchTags_JsonNullable(JsonNullable<List<String>> searchTags) {
+    this.searchTags = searchTags;
+  }
 
-          public void setSearchTags(@javax.annotation.Nullable List<String> searchTags) {
-            this.searchTags = JsonNullable.<List<String>>of(searchTags);
-        }
+  public void setSearchTags(@javax.annotation.Nullable List<String> searchTags) {
+    this.searchTags = JsonNullable.<List<String>>of(searchTags);
+  }
 
-@Override
-public boolean equals(Object o) {
+  @Override
+  public boolean equals(Object o) {
     if (this == o) {
-    return true;
+      return true;
     }
     if (o == null || getClass() != o.getClass()) {
-    return false;
+      return false;
     }
-        FeatureMetadata featureMetadata = (FeatureMetadata) o;
-        return equalsNullable(this.redirectResponse, featureMetadata.redirectResponse) &&
+    FeatureMetadata featureMetadata = (FeatureMetadata) o;
+    return equalsNullable(this.redirectResponse, featureMetadata.redirectResponse) &&
         equalsNullable(this.searchTags, featureMetadata.searchTags);
-}
+  }
 
-    private static <T> boolean equalsNullable(JsonNullable<T> a, JsonNullable<T> b) {
-        return a == b || (a != null && b != null && a.isPresent() && b.isPresent() && Objects.deepEquals(a.get(), b.get()));
-        }
+  private static <T> boolean equalsNullable(JsonNullable<T> a, JsonNullable<T> b) {
+    return a == b || (a != null && b != null && a.isPresent() && b.isPresent() && Objects.deepEquals(a.get(), b.get()));
+  }
 
-    @Override
-    public int hashCode() {
-        return Objects.hash(hashCodeNullable(redirectResponse), hashCodeNullable(searchTags));
+  @Override
+  public int hashCode() {
+    return Objects.hash(hashCodeNullable(redirectResponse), hashCodeNullable(searchTags));
+  }
+
+  private static <T> int hashCodeNullable(JsonNullable<T> a) {
+    if (a == null) {
+      return 1;
     }
+    return a.isPresent() ? Arrays.deepHashCode(new Object[]{a.get()}) : 31;
+  }
 
-        private static <T> int hashCodeNullable(JsonNullable<T> a) {
-        if (a == null) {
-        return 1;
-        }
-        return a.isPresent() ? Arrays.deepHashCode(new Object[]{a.get()}) : 31;
-        }
-
-    @Override
-    public String toString() {
+  @Override
+  public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class FeatureMetadata {\n");
-        sb.append("    redirectResponse: ").append(toIndentedString(redirectResponse)).append("\n");
-        sb.append("    searchTags: ").append(toIndentedString(searchTags)).append("\n");
+    sb.append("    redirectResponse: ").append(toIndentedString(redirectResponse)).append("\n");
+    sb.append("    searchTags: ").append(toIndentedString(searchTags)).append("\n");
     sb.append("}");
     return sb.toString();
-    }
+  }
 
-    /**
-    * Convert the given object to string with each line indented by 4 spaces
-    * (except the first line).
-    */
-    private String toIndentedString(Object o) {
+  /**
+   * Convert the given object to string with each line indented by 4 spaces
+   * (except the first line).
+   */
+  private String toIndentedString(Object o) {
     if (o == null) {
-    return "null";
+      return "null";
     }
     return o.toString().replace("\n", "\n    ");
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @return URL query string
+   */
+  public String toUrlQueryString() {
+    return toUrlQueryString(null);
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @param prefix prefix of the query string
+   * @return URL query string
+   */
+  public String toUrlQueryString(String prefix) {
+    String suffix = "";
+    String containerSuffix = "";
+    String containerPrefix = "";
+    if (prefix == null) {
+      // style=form, explode=true, e.g. /pet?name=cat&type=manx
+      prefix = "";
+    } else {
+      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+      prefix = prefix + "[";
+      suffix = "]";
+      containerSuffix = "]";
+      containerPrefix = "[";
     }
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @return URL query string
-        */
-        public String toUrlQueryString() {
-        return toUrlQueryString(null);
-        }
+    StringJoiner joiner = new StringJoiner("&");
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @param prefix prefix of the query string
-        * @return URL query string
-        */
-        public String toUrlQueryString(String prefix) {
-        String suffix = "";
-        String containerSuffix = "";
-        String containerPrefix = "";
-        if (prefix == null) {
-        // style=form, explode=true, e.g. /pet?name=cat&type=manx
-        prefix = "";
-        } else {
-        // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
-        prefix = prefix + "[";
-        suffix = "]";
-        containerSuffix = "]";
-        containerPrefix = "[";
-        }
-
-        StringJoiner joiner = new StringJoiner("&");
-
-            // add `redirect_response` to the URL query string
-                            if (getRedirectResponse() != null) {
-                            joiner.add(getRedirectResponse().toUrlQueryString(prefix + "redirect_response" + suffix));
-                            }
-
-            // add `search_tags` to the URL query string
-                        if (getSearchTags() != null) {
-                        for (int i = 0; i < getSearchTags().size(); i++) {
-                        try {
-                        joiner.add(String.format("%ssearch_tags%s%s=%s", prefix, suffix,
-                        "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix),
-                        URLEncoder.encode(String.valueOf(getSearchTags().get(i)), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-                        }
-
-        return joiner.toString();
-        }
-
+    // add `redirect_response` to the URL query string
+    if (getRedirectResponse() != null) {
+      joiner.add(getRedirectResponse().toUrlQueryString(prefix + "redirect_response" + suffix));
     }
+
+    // add `search_tags` to the URL query string
+    if (getSearchTags() != null) {
+      for (int i = 0; i < getSearchTags().size(); i++) {
+        try {
+          joiner.add(String.format("%ssearch_tags%s%s=%s", prefix, suffix,
+              "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix),
+              URLEncoder.encode(String.valueOf(getSearchTags().get(i)), "UTF-8").replaceAll("\\+", "%20")));
+        } catch (UnsupportedEncodingException e) {
+          // Should never happen, UTF-8 is always supported
+          throw new RuntimeException(e);
+        }
+      }
+    }
+
+    return joiner.toString();
+  }
+
+}
 

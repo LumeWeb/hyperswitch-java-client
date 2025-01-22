@@ -30,158 +30,158 @@ import java.net.URLEncoder;
 import java.util.StringJoiner;
 
 /**
-* Hyperswitch supports SDK integration with Apple Pay and Google Pay wallets. For other wallets, we integrate with their respective connectors, redirecting the customer to the connector for wallet payments. As a result, we don’t receive any payment method data in the confirm call for payments made through other wallets.
-*/
-    @JsonPropertyOrder({
-        WalletResponseData.JSON_PROPERTY_APPLE_PAY,
-        WalletResponseData.JSON_PROPERTY_GOOGLE_PAY
-    })
+ * Hyperswitch supports SDK integration with Apple Pay and Google Pay wallets. For other wallets, we integrate with their respective connectors, redirecting the customer to the connector for wallet payments. As a result, we don’t receive any payment method data in the confirm call for payments made through other wallets.
+ */
+@JsonPropertyOrder({
+  WalletResponseData.JSON_PROPERTY_APPLE_PAY,
+  WalletResponseData.JSON_PROPERTY_GOOGLE_PAY
+})
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class WalletResponseData {
-        public static final String JSON_PROPERTY_APPLE_PAY = "apple_pay";
-    @javax.annotation.Nonnull
-            private WalletAdditionalDataForCard applePay;
+  public static final String JSON_PROPERTY_APPLE_PAY = "apple_pay";
+  @javax.annotation.Nonnull
+  private WalletAdditionalDataForCard applePay;
 
-        public static final String JSON_PROPERTY_GOOGLE_PAY = "google_pay";
-    @javax.annotation.Nonnull
-            private WalletAdditionalDataForCard googlePay;
+  public static final String JSON_PROPERTY_GOOGLE_PAY = "google_pay";
+  @javax.annotation.Nonnull
+  private WalletAdditionalDataForCard googlePay;
 
-public WalletResponseData() {
-}
+  public WalletResponseData() {
+  }
 
-        public WalletResponseData applePay(@javax.annotation.Nonnull WalletAdditionalDataForCard applePay) {
-        
-        this.applePay = applePay;
-        return this;
-        }
+  public WalletResponseData applePay(@javax.annotation.Nonnull WalletAdditionalDataForCard applePay) {
+    
+    this.applePay = applePay;
+    return this;
+  }
 
-    /**
-        * Get applePay
-    * @return applePay
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_APPLE_PAY)
+  /**
+   * Get applePay
+   * @return applePay
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_APPLE_PAY)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public WalletAdditionalDataForCard getApplePay() {
-        return applePay;
-    }
+  public WalletAdditionalDataForCard getApplePay() {
+    return applePay;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_APPLE_PAY)
+  @JsonProperty(JSON_PROPERTY_APPLE_PAY)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setApplePay(@javax.annotation.Nonnull WalletAdditionalDataForCard applePay) {
-            this.applePay = applePay;
-        }
+    this.applePay = applePay;
+  }
 
-        public WalletResponseData googlePay(@javax.annotation.Nonnull WalletAdditionalDataForCard googlePay) {
-        
-        this.googlePay = googlePay;
-        return this;
-        }
+  public WalletResponseData googlePay(@javax.annotation.Nonnull WalletAdditionalDataForCard googlePay) {
+    
+    this.googlePay = googlePay;
+    return this;
+  }
 
-    /**
-        * Get googlePay
-    * @return googlePay
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_GOOGLE_PAY)
+  /**
+   * Get googlePay
+   * @return googlePay
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_GOOGLE_PAY)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public WalletAdditionalDataForCard getGooglePay() {
-        return googlePay;
-    }
+  public WalletAdditionalDataForCard getGooglePay() {
+    return googlePay;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_GOOGLE_PAY)
+  @JsonProperty(JSON_PROPERTY_GOOGLE_PAY)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setGooglePay(@javax.annotation.Nonnull WalletAdditionalDataForCard googlePay) {
-            this.googlePay = googlePay;
-        }
+    this.googlePay = googlePay;
+  }
 
-@Override
-public boolean equals(Object o) {
+  @Override
+  public boolean equals(Object o) {
     if (this == o) {
-    return true;
+      return true;
     }
     if (o == null || getClass() != o.getClass()) {
-    return false;
+      return false;
     }
-        WalletResponseData walletResponseData = (WalletResponseData) o;
-        return Objects.equals(this.applePay, walletResponseData.applePay) &&
+    WalletResponseData walletResponseData = (WalletResponseData) o;
+    return Objects.equals(this.applePay, walletResponseData.applePay) &&
         Objects.equals(this.googlePay, walletResponseData.googlePay);
-}
+  }
 
-    @Override
-    public int hashCode() {
-        return Objects.hash(applePay, googlePay);
-    }
+  @Override
+  public int hashCode() {
+    return Objects.hash(applePay, googlePay);
+  }
 
-    @Override
-    public String toString() {
+  @Override
+  public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class WalletResponseData {\n");
-        sb.append("    applePay: ").append(toIndentedString(applePay)).append("\n");
-        sb.append("    googlePay: ").append(toIndentedString(googlePay)).append("\n");
+    sb.append("    applePay: ").append(toIndentedString(applePay)).append("\n");
+    sb.append("    googlePay: ").append(toIndentedString(googlePay)).append("\n");
     sb.append("}");
     return sb.toString();
-    }
+  }
 
-    /**
-    * Convert the given object to string with each line indented by 4 spaces
-    * (except the first line).
-    */
-    private String toIndentedString(Object o) {
+  /**
+   * Convert the given object to string with each line indented by 4 spaces
+   * (except the first line).
+   */
+  private String toIndentedString(Object o) {
     if (o == null) {
-    return "null";
+      return "null";
     }
     return o.toString().replace("\n", "\n    ");
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @return URL query string
+   */
+  public String toUrlQueryString() {
+    return toUrlQueryString(null);
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @param prefix prefix of the query string
+   * @return URL query string
+   */
+  public String toUrlQueryString(String prefix) {
+    String suffix = "";
+    String containerSuffix = "";
+    String containerPrefix = "";
+    if (prefix == null) {
+      // style=form, explode=true, e.g. /pet?name=cat&type=manx
+      prefix = "";
+    } else {
+      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+      prefix = prefix + "[";
+      suffix = "]";
+      containerSuffix = "]";
+      containerPrefix = "[";
     }
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @return URL query string
-        */
-        public String toUrlQueryString() {
-        return toUrlQueryString(null);
-        }
+    StringJoiner joiner = new StringJoiner("&");
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @param prefix prefix of the query string
-        * @return URL query string
-        */
-        public String toUrlQueryString(String prefix) {
-        String suffix = "";
-        String containerSuffix = "";
-        String containerPrefix = "";
-        if (prefix == null) {
-        // style=form, explode=true, e.g. /pet?name=cat&type=manx
-        prefix = "";
-        } else {
-        // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
-        prefix = prefix + "[";
-        suffix = "]";
-        containerSuffix = "]";
-        containerPrefix = "[";
-        }
-
-        StringJoiner joiner = new StringJoiner("&");
-
-            // add `apple_pay` to the URL query string
-                            if (getApplePay() != null) {
-                            joiner.add(getApplePay().toUrlQueryString(prefix + "apple_pay" + suffix));
-                            }
-
-            // add `google_pay` to the URL query string
-                            if (getGooglePay() != null) {
-                            joiner.add(getGooglePay().toUrlQueryString(prefix + "google_pay" + suffix));
-                            }
-
-        return joiner.toString();
-        }
-
+    // add `apple_pay` to the URL query string
+    if (getApplePay() != null) {
+      joiner.add(getApplePay().toUrlQueryString(prefix + "apple_pay" + suffix));
     }
+
+    // add `google_pay` to the URL query string
+    if (getGooglePay() != null) {
+      joiner.add(getGooglePay().toUrlQueryString(prefix + "google_pay" + suffix));
+    }
+
+    return joiner.toString();
+  }
+
+}
 

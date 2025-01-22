@@ -31,229 +31,229 @@ import java.net.URLEncoder;
 import java.util.StringJoiner;
 
 /**
-* PaymentLinkResponse
-*/
-    @JsonPropertyOrder({
-        PaymentLinkResponse.JSON_PROPERTY_LINK,
-        PaymentLinkResponse.JSON_PROPERTY_SECURE_LINK,
-        PaymentLinkResponse.JSON_PROPERTY_PAYMENT_LINK_ID
-    })
+ * PaymentLinkResponse
+ */
+@JsonPropertyOrder({
+  PaymentLinkResponse.JSON_PROPERTY_LINK,
+  PaymentLinkResponse.JSON_PROPERTY_SECURE_LINK,
+  PaymentLinkResponse.JSON_PROPERTY_PAYMENT_LINK_ID
+})
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class PaymentLinkResponse {
-        public static final String JSON_PROPERTY_LINK = "link";
-    @javax.annotation.Nonnull
-            private String link;
+  public static final String JSON_PROPERTY_LINK = "link";
+  @javax.annotation.Nonnull
+  private String link;
 
-        public static final String JSON_PROPERTY_SECURE_LINK = "secure_link";
-    @javax.annotation.Nullable
-            private JsonNullable<String> secureLink = JsonNullable.<String>undefined();
+  public static final String JSON_PROPERTY_SECURE_LINK = "secure_link";
+  @javax.annotation.Nullable
+  private JsonNullable<String> secureLink = JsonNullable.<String>undefined();
 
-        public static final String JSON_PROPERTY_PAYMENT_LINK_ID = "payment_link_id";
-    @javax.annotation.Nonnull
-            private String paymentLinkId;
+  public static final String JSON_PROPERTY_PAYMENT_LINK_ID = "payment_link_id";
+  @javax.annotation.Nonnull
+  private String paymentLinkId;
 
-public PaymentLinkResponse() {
-}
+  public PaymentLinkResponse() {
+  }
 
-        public PaymentLinkResponse link(@javax.annotation.Nonnull String link) {
-        
-        this.link = link;
-        return this;
-        }
+  public PaymentLinkResponse link(@javax.annotation.Nonnull String link) {
+    
+    this.link = link;
+    return this;
+  }
 
-    /**
-        * URL for rendering the open payment link
-    * @return link
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_LINK)
+  /**
+   * URL for rendering the open payment link
+   * @return link
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_LINK)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public String getLink() {
-        return link;
-    }
+  public String getLink() {
+    return link;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_LINK)
+  @JsonProperty(JSON_PROPERTY_LINK)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setLink(@javax.annotation.Nonnull String link) {
-            this.link = link;
-        }
+    this.link = link;
+  }
 
-        public PaymentLinkResponse secureLink(@javax.annotation.Nullable String secureLink) {
-        this.secureLink = JsonNullable.<String>of(secureLink);
-        
-        return this;
-        }
-
-    /**
-        * URL for rendering the secure payment link
-    * @return secureLink
-    */
-    @javax.annotation.Nullable
-        @JsonIgnore
+  public PaymentLinkResponse secureLink(@javax.annotation.Nullable String secureLink) {
+    this.secureLink = JsonNullable.<String>of(secureLink);
     
-    public String getSecureLink() {
-                return secureLink.orElse(null);
-    }
+    return this;
+  }
 
-          @JsonProperty(JSON_PROPERTY_SECURE_LINK)
+  /**
+   * URL for rendering the secure payment link
+   * @return secureLink
+   */
+  @javax.annotation.Nullable
+  @JsonIgnore
+
+  public String getSecureLink() {
+        return secureLink.orElse(null);
+  }
+
+  @JsonProperty(JSON_PROPERTY_SECURE_LINK)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-        public JsonNullable<String> getSecureLink_JsonNullable() {
-        return secureLink;
-        }
+  public JsonNullable<String> getSecureLink_JsonNullable() {
+    return secureLink;
+  }
+  
+  @JsonProperty(JSON_PROPERTY_SECURE_LINK)
+  public void setSecureLink_JsonNullable(JsonNullable<String> secureLink) {
+    this.secureLink = secureLink;
+  }
+
+  public void setSecureLink(@javax.annotation.Nullable String secureLink) {
+    this.secureLink = JsonNullable.<String>of(secureLink);
+  }
+
+  public PaymentLinkResponse paymentLinkId(@javax.annotation.Nonnull String paymentLinkId) {
     
-        @JsonProperty(JSON_PROPERTY_SECURE_LINK)
-        public void setSecureLink_JsonNullable(JsonNullable<String> secureLink) {
-        this.secureLink = secureLink;
-        }
+    this.paymentLinkId = paymentLinkId;
+    return this;
+  }
 
-          public void setSecureLink(@javax.annotation.Nullable String secureLink) {
-            this.secureLink = JsonNullable.<String>of(secureLink);
-        }
-
-        public PaymentLinkResponse paymentLinkId(@javax.annotation.Nonnull String paymentLinkId) {
-        
-        this.paymentLinkId = paymentLinkId;
-        return this;
-        }
-
-    /**
-        * Identifier for the payment link
-    * @return paymentLinkId
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_PAYMENT_LINK_ID)
+  /**
+   * Identifier for the payment link
+   * @return paymentLinkId
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_PAYMENT_LINK_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public String getPaymentLinkId() {
-        return paymentLinkId;
-    }
+  public String getPaymentLinkId() {
+    return paymentLinkId;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_PAYMENT_LINK_ID)
+  @JsonProperty(JSON_PROPERTY_PAYMENT_LINK_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setPaymentLinkId(@javax.annotation.Nonnull String paymentLinkId) {
-            this.paymentLinkId = paymentLinkId;
-        }
+    this.paymentLinkId = paymentLinkId;
+  }
 
-@Override
-public boolean equals(Object o) {
+  @Override
+  public boolean equals(Object o) {
     if (this == o) {
-    return true;
+      return true;
     }
     if (o == null || getClass() != o.getClass()) {
-    return false;
+      return false;
     }
-        PaymentLinkResponse paymentLinkResponse = (PaymentLinkResponse) o;
-        return Objects.equals(this.link, paymentLinkResponse.link) &&
+    PaymentLinkResponse paymentLinkResponse = (PaymentLinkResponse) o;
+    return Objects.equals(this.link, paymentLinkResponse.link) &&
         equalsNullable(this.secureLink, paymentLinkResponse.secureLink) &&
         Objects.equals(this.paymentLinkId, paymentLinkResponse.paymentLinkId);
-}
+  }
 
-    private static <T> boolean equalsNullable(JsonNullable<T> a, JsonNullable<T> b) {
-        return a == b || (a != null && b != null && a.isPresent() && b.isPresent() && Objects.deepEquals(a.get(), b.get()));
-        }
+  private static <T> boolean equalsNullable(JsonNullable<T> a, JsonNullable<T> b) {
+    return a == b || (a != null && b != null && a.isPresent() && b.isPresent() && Objects.deepEquals(a.get(), b.get()));
+  }
 
-    @Override
-    public int hashCode() {
-        return Objects.hash(link, hashCodeNullable(secureLink), paymentLinkId);
+  @Override
+  public int hashCode() {
+    return Objects.hash(link, hashCodeNullable(secureLink), paymentLinkId);
+  }
+
+  private static <T> int hashCodeNullable(JsonNullable<T> a) {
+    if (a == null) {
+      return 1;
     }
+    return a.isPresent() ? Arrays.deepHashCode(new Object[]{a.get()}) : 31;
+  }
 
-        private static <T> int hashCodeNullable(JsonNullable<T> a) {
-        if (a == null) {
-        return 1;
-        }
-        return a.isPresent() ? Arrays.deepHashCode(new Object[]{a.get()}) : 31;
-        }
-
-    @Override
-    public String toString() {
+  @Override
+  public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class PaymentLinkResponse {\n");
-        sb.append("    link: ").append(toIndentedString(link)).append("\n");
-        sb.append("    secureLink: ").append(toIndentedString(secureLink)).append("\n");
-        sb.append("    paymentLinkId: ").append(toIndentedString(paymentLinkId)).append("\n");
+    sb.append("    link: ").append(toIndentedString(link)).append("\n");
+    sb.append("    secureLink: ").append(toIndentedString(secureLink)).append("\n");
+    sb.append("    paymentLinkId: ").append(toIndentedString(paymentLinkId)).append("\n");
     sb.append("}");
     return sb.toString();
-    }
+  }
 
-    /**
-    * Convert the given object to string with each line indented by 4 spaces
-    * (except the first line).
-    */
-    private String toIndentedString(Object o) {
+  /**
+   * Convert the given object to string with each line indented by 4 spaces
+   * (except the first line).
+   */
+  private String toIndentedString(Object o) {
     if (o == null) {
-    return "null";
+      return "null";
     }
     return o.toString().replace("\n", "\n    ");
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @return URL query string
+   */
+  public String toUrlQueryString() {
+    return toUrlQueryString(null);
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @param prefix prefix of the query string
+   * @return URL query string
+   */
+  public String toUrlQueryString(String prefix) {
+    String suffix = "";
+    String containerSuffix = "";
+    String containerPrefix = "";
+    if (prefix == null) {
+      // style=form, explode=true, e.g. /pet?name=cat&type=manx
+      prefix = "";
+    } else {
+      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+      prefix = prefix + "[";
+      suffix = "]";
+      containerSuffix = "]";
+      containerPrefix = "[";
     }
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @return URL query string
-        */
-        public String toUrlQueryString() {
-        return toUrlQueryString(null);
-        }
+    StringJoiner joiner = new StringJoiner("&");
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @param prefix prefix of the query string
-        * @return URL query string
-        */
-        public String toUrlQueryString(String prefix) {
-        String suffix = "";
-        String containerSuffix = "";
-        String containerPrefix = "";
-        if (prefix == null) {
-        // style=form, explode=true, e.g. /pet?name=cat&type=manx
-        prefix = "";
-        } else {
-        // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
-        prefix = prefix + "[";
-        suffix = "]";
-        containerSuffix = "]";
-        containerPrefix = "[";
-        }
-
-        StringJoiner joiner = new StringJoiner("&");
-
-            // add `link` to the URL query string
-                        if (getLink() != null) {
-                        try {
-                        joiner.add(String.format("%slink%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getLink()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-            // add `secure_link` to the URL query string
-                        if (getSecureLink() != null) {
-                        try {
-                        joiner.add(String.format("%ssecure_link%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getSecureLink()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-            // add `payment_link_id` to the URL query string
-                        if (getPaymentLinkId() != null) {
-                        try {
-                        joiner.add(String.format("%spayment_link_id%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getPaymentLinkId()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-        return joiner.toString();
-        }
-
+    // add `link` to the URL query string
+    if (getLink() != null) {
+      try {
+        joiner.add(String.format("%slink%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getLink()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
     }
+
+    // add `secure_link` to the URL query string
+    if (getSecureLink() != null) {
+      try {
+        joiner.add(String.format("%ssecure_link%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getSecureLink()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `payment_link_id` to the URL query string
+    if (getPaymentLinkId() != null) {
+      try {
+        joiner.add(String.format("%spayment_link_id%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getPaymentLinkId()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    return joiner.toString();
+  }
+
+}
 

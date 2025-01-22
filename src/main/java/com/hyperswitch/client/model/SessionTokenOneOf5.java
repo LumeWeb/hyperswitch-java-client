@@ -27,20 +27,20 @@ import java.net.URLEncoder;
 import java.util.StringJoiner;
 
 /**
-* SessionTokenOneOf5
-*/
-    @JsonPropertyOrder({
-        SessionTokenOneOf5.JSON_PROPERTY_OPEN_BANKING_SESSION_TOKEN,
-        SessionTokenOneOf5.JSON_PROPERTY_WALLET_NAME
-    })
-            @JsonTypeName("SessionToken_oneOf_5")
+ * SessionTokenOneOf5
+ */
+@JsonPropertyOrder({
+  SessionTokenOneOf5.JSON_PROPERTY_OPEN_BANKING_SESSION_TOKEN,
+  SessionTokenOneOf5.JSON_PROPERTY_WALLET_NAME
+})
+@JsonTypeName("SessionToken_oneOf_5")
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class SessionTokenOneOf5 {
-        public static final String JSON_PROPERTY_OPEN_BANKING_SESSION_TOKEN = "open_banking_session_token";
-    @javax.annotation.Nonnull
-            private String openBankingSessionToken;
+  public static final String JSON_PROPERTY_OPEN_BANKING_SESSION_TOKEN = "open_banking_session_token";
+  @javax.annotation.Nonnull
+  private String openBankingSessionToken;
 
-              /**
+  /**
    * Gets or Sets walletName
    */
   public enum WalletNameEnum {
@@ -73,156 +73,156 @@ public class SessionTokenOneOf5 {
     }
   }
 
-        public static final String JSON_PROPERTY_WALLET_NAME = "wallet_name";
-    @javax.annotation.Nonnull
-            private WalletNameEnum walletName;
+  public static final String JSON_PROPERTY_WALLET_NAME = "wallet_name";
+  @javax.annotation.Nonnull
+  private WalletNameEnum walletName;
 
-public SessionTokenOneOf5() {
-}
+  public SessionTokenOneOf5() {
+  }
 
-        public SessionTokenOneOf5 openBankingSessionToken(@javax.annotation.Nonnull String openBankingSessionToken) {
-        
-        this.openBankingSessionToken = openBankingSessionToken;
-        return this;
-        }
+  public SessionTokenOneOf5 openBankingSessionToken(@javax.annotation.Nonnull String openBankingSessionToken) {
+    
+    this.openBankingSessionToken = openBankingSessionToken;
+    return this;
+  }
 
-    /**
-        * The session token for OpenBanking Connectors
-    * @return openBankingSessionToken
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_OPEN_BANKING_SESSION_TOKEN)
+  /**
+   * The session token for OpenBanking Connectors
+   * @return openBankingSessionToken
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_OPEN_BANKING_SESSION_TOKEN)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public String getOpenBankingSessionToken() {
-        return openBankingSessionToken;
-    }
+  public String getOpenBankingSessionToken() {
+    return openBankingSessionToken;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_OPEN_BANKING_SESSION_TOKEN)
+  @JsonProperty(JSON_PROPERTY_OPEN_BANKING_SESSION_TOKEN)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setOpenBankingSessionToken(@javax.annotation.Nonnull String openBankingSessionToken) {
-            this.openBankingSessionToken = openBankingSessionToken;
-        }
+    this.openBankingSessionToken = openBankingSessionToken;
+  }
 
-        public SessionTokenOneOf5 walletName(@javax.annotation.Nonnull WalletNameEnum walletName) {
-        
-        this.walletName = walletName;
-        return this;
-        }
+  public SessionTokenOneOf5 walletName(@javax.annotation.Nonnull WalletNameEnum walletName) {
+    
+    this.walletName = walletName;
+    return this;
+  }
 
-    /**
-        * Get walletName
-    * @return walletName
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_WALLET_NAME)
+  /**
+   * Get walletName
+   * @return walletName
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_WALLET_NAME)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public WalletNameEnum getWalletName() {
-        return walletName;
-    }
+  public WalletNameEnum getWalletName() {
+    return walletName;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_WALLET_NAME)
+  @JsonProperty(JSON_PROPERTY_WALLET_NAME)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setWalletName(@javax.annotation.Nonnull WalletNameEnum walletName) {
-            this.walletName = walletName;
-        }
+    this.walletName = walletName;
+  }
 
-@Override
-public boolean equals(Object o) {
+  @Override
+  public boolean equals(Object o) {
     if (this == o) {
-    return true;
+      return true;
     }
     if (o == null || getClass() != o.getClass()) {
-    return false;
+      return false;
     }
-        SessionTokenOneOf5 sessionTokenOneOf5 = (SessionTokenOneOf5) o;
-        return Objects.equals(this.openBankingSessionToken, sessionTokenOneOf5.openBankingSessionToken) &&
+    SessionTokenOneOf5 sessionTokenOneOf5 = (SessionTokenOneOf5) o;
+    return Objects.equals(this.openBankingSessionToken, sessionTokenOneOf5.openBankingSessionToken) &&
         Objects.equals(this.walletName, sessionTokenOneOf5.walletName);
-}
+  }
 
-    @Override
-    public int hashCode() {
-        return Objects.hash(openBankingSessionToken, walletName);
-    }
+  @Override
+  public int hashCode() {
+    return Objects.hash(openBankingSessionToken, walletName);
+  }
 
-    @Override
-    public String toString() {
+  @Override
+  public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class SessionTokenOneOf5 {\n");
-        sb.append("    openBankingSessionToken: ").append(toIndentedString(openBankingSessionToken)).append("\n");
-        sb.append("    walletName: ").append(toIndentedString(walletName)).append("\n");
+    sb.append("    openBankingSessionToken: ").append(toIndentedString(openBankingSessionToken)).append("\n");
+    sb.append("    walletName: ").append(toIndentedString(walletName)).append("\n");
     sb.append("}");
     return sb.toString();
-    }
+  }
 
-    /**
-    * Convert the given object to string with each line indented by 4 spaces
-    * (except the first line).
-    */
-    private String toIndentedString(Object o) {
+  /**
+   * Convert the given object to string with each line indented by 4 spaces
+   * (except the first line).
+   */
+  private String toIndentedString(Object o) {
     if (o == null) {
-    return "null";
+      return "null";
     }
     return o.toString().replace("\n", "\n    ");
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @return URL query string
+   */
+  public String toUrlQueryString() {
+    return toUrlQueryString(null);
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @param prefix prefix of the query string
+   * @return URL query string
+   */
+  public String toUrlQueryString(String prefix) {
+    String suffix = "";
+    String containerSuffix = "";
+    String containerPrefix = "";
+    if (prefix == null) {
+      // style=form, explode=true, e.g. /pet?name=cat&type=manx
+      prefix = "";
+    } else {
+      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+      prefix = prefix + "[";
+      suffix = "]";
+      containerSuffix = "]";
+      containerPrefix = "[";
     }
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @return URL query string
-        */
-        public String toUrlQueryString() {
-        return toUrlQueryString(null);
-        }
+    StringJoiner joiner = new StringJoiner("&");
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @param prefix prefix of the query string
-        * @return URL query string
-        */
-        public String toUrlQueryString(String prefix) {
-        String suffix = "";
-        String containerSuffix = "";
-        String containerPrefix = "";
-        if (prefix == null) {
-        // style=form, explode=true, e.g. /pet?name=cat&type=manx
-        prefix = "";
-        } else {
-        // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
-        prefix = prefix + "[";
-        suffix = "]";
-        containerSuffix = "]";
-        containerPrefix = "[";
-        }
-
-        StringJoiner joiner = new StringJoiner("&");
-
-            // add `open_banking_session_token` to the URL query string
-                        if (getOpenBankingSessionToken() != null) {
-                        try {
-                        joiner.add(String.format("%sopen_banking_session_token%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getOpenBankingSessionToken()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-            // add `wallet_name` to the URL query string
-                        if (getWalletName() != null) {
-                        try {
-                        joiner.add(String.format("%swallet_name%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getWalletName()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-        return joiner.toString();
-        }
-
+    // add `open_banking_session_token` to the URL query string
+    if (getOpenBankingSessionToken() != null) {
+      try {
+        joiner.add(String.format("%sopen_banking_session_token%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getOpenBankingSessionToken()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
     }
+
+    // add `wallet_name` to the URL query string
+    if (getWalletName() != null) {
+      try {
+        joiner.add(String.format("%swallet_name%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getWalletName()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    return joiner.toString();
+  }
+
+}
 

@@ -39,479 +39,479 @@ import java.net.URLEncoder;
 import java.util.StringJoiner;
 
 /**
-* PaymentLinkConfig
-*/
-    @JsonPropertyOrder({
-        PaymentLinkConfig.JSON_PROPERTY_THEME,
-        PaymentLinkConfig.JSON_PROPERTY_LOGO,
-        PaymentLinkConfig.JSON_PROPERTY_SELLER_NAME,
-        PaymentLinkConfig.JSON_PROPERTY_SDK_LAYOUT,
-        PaymentLinkConfig.JSON_PROPERTY_DISPLAY_SDK_ONLY,
-        PaymentLinkConfig.JSON_PROPERTY_ENABLED_SAVED_PAYMENT_METHOD,
-        PaymentLinkConfig.JSON_PROPERTY_HIDE_CARD_NICKNAME_FIELD,
-        PaymentLinkConfig.JSON_PROPERTY_SHOW_CARD_FORM_BY_DEFAULT,
-        PaymentLinkConfig.JSON_PROPERTY_ALLOWED_DOMAINS,
-        PaymentLinkConfig.JSON_PROPERTY_TRANSACTION_DETAILS,
-        PaymentLinkConfig.JSON_PROPERTY_BACKGROUND_IMAGE,
-        PaymentLinkConfig.JSON_PROPERTY_DETAILS_LAYOUT,
-        PaymentLinkConfig.JSON_PROPERTY_BRANDING_VISIBILITY
-    })
+ * PaymentLinkConfig
+ */
+@JsonPropertyOrder({
+  PaymentLinkConfig.JSON_PROPERTY_THEME,
+  PaymentLinkConfig.JSON_PROPERTY_LOGO,
+  PaymentLinkConfig.JSON_PROPERTY_SELLER_NAME,
+  PaymentLinkConfig.JSON_PROPERTY_SDK_LAYOUT,
+  PaymentLinkConfig.JSON_PROPERTY_DISPLAY_SDK_ONLY,
+  PaymentLinkConfig.JSON_PROPERTY_ENABLED_SAVED_PAYMENT_METHOD,
+  PaymentLinkConfig.JSON_PROPERTY_HIDE_CARD_NICKNAME_FIELD,
+  PaymentLinkConfig.JSON_PROPERTY_SHOW_CARD_FORM_BY_DEFAULT,
+  PaymentLinkConfig.JSON_PROPERTY_ALLOWED_DOMAINS,
+  PaymentLinkConfig.JSON_PROPERTY_TRANSACTION_DETAILS,
+  PaymentLinkConfig.JSON_PROPERTY_BACKGROUND_IMAGE,
+  PaymentLinkConfig.JSON_PROPERTY_DETAILS_LAYOUT,
+  PaymentLinkConfig.JSON_PROPERTY_BRANDING_VISIBILITY
+})
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class PaymentLinkConfig {
-        public static final String JSON_PROPERTY_THEME = "theme";
-    @javax.annotation.Nonnull
-            private String theme;
+  public static final String JSON_PROPERTY_THEME = "theme";
+  @javax.annotation.Nonnull
+  private String theme;
 
-        public static final String JSON_PROPERTY_LOGO = "logo";
-    @javax.annotation.Nonnull
-            private String logo;
+  public static final String JSON_PROPERTY_LOGO = "logo";
+  @javax.annotation.Nonnull
+  private String logo;
 
-        public static final String JSON_PROPERTY_SELLER_NAME = "seller_name";
-    @javax.annotation.Nonnull
-            private String sellerName;
+  public static final String JSON_PROPERTY_SELLER_NAME = "seller_name";
+  @javax.annotation.Nonnull
+  private String sellerName;
 
-        public static final String JSON_PROPERTY_SDK_LAYOUT = "sdk_layout";
-    @javax.annotation.Nonnull
-            private String sdkLayout;
+  public static final String JSON_PROPERTY_SDK_LAYOUT = "sdk_layout";
+  @javax.annotation.Nonnull
+  private String sdkLayout;
 
-        public static final String JSON_PROPERTY_DISPLAY_SDK_ONLY = "display_sdk_only";
-    @javax.annotation.Nonnull
-            private Boolean displaySdkOnly;
+  public static final String JSON_PROPERTY_DISPLAY_SDK_ONLY = "display_sdk_only";
+  @javax.annotation.Nonnull
+  private Boolean displaySdkOnly;
 
-        public static final String JSON_PROPERTY_ENABLED_SAVED_PAYMENT_METHOD = "enabled_saved_payment_method";
-    @javax.annotation.Nonnull
-            private Boolean enabledSavedPaymentMethod;
+  public static final String JSON_PROPERTY_ENABLED_SAVED_PAYMENT_METHOD = "enabled_saved_payment_method";
+  @javax.annotation.Nonnull
+  private Boolean enabledSavedPaymentMethod;
 
-        public static final String JSON_PROPERTY_HIDE_CARD_NICKNAME_FIELD = "hide_card_nickname_field";
-    @javax.annotation.Nonnull
-            private Boolean hideCardNicknameField;
+  public static final String JSON_PROPERTY_HIDE_CARD_NICKNAME_FIELD = "hide_card_nickname_field";
+  @javax.annotation.Nonnull
+  private Boolean hideCardNicknameField;
 
-        public static final String JSON_PROPERTY_SHOW_CARD_FORM_BY_DEFAULT = "show_card_form_by_default";
-    @javax.annotation.Nonnull
-            private Boolean showCardFormByDefault;
+  public static final String JSON_PROPERTY_SHOW_CARD_FORM_BY_DEFAULT = "show_card_form_by_default";
+  @javax.annotation.Nonnull
+  private Boolean showCardFormByDefault;
 
-        public static final String JSON_PROPERTY_ALLOWED_DOMAINS = "allowed_domains";
-    @javax.annotation.Nullable
-            private JsonNullable<Set<String>> allowedDomains = JsonNullable.<Set<String>>undefined();
+  public static final String JSON_PROPERTY_ALLOWED_DOMAINS = "allowed_domains";
+  @javax.annotation.Nullable
+  private JsonNullable<Set<String>> allowedDomains = JsonNullable.<Set<String>>undefined();
 
-        public static final String JSON_PROPERTY_TRANSACTION_DETAILS = "transaction_details";
-    @javax.annotation.Nullable
-            private JsonNullable<List<PaymentLinkTransactionDetails>> transactionDetails = JsonNullable.<List<PaymentLinkTransactionDetails>>undefined();
+  public static final String JSON_PROPERTY_TRANSACTION_DETAILS = "transaction_details";
+  @javax.annotation.Nullable
+  private JsonNullable<List<PaymentLinkTransactionDetails>> transactionDetails = JsonNullable.<List<PaymentLinkTransactionDetails>>undefined();
 
-        public static final String JSON_PROPERTY_BACKGROUND_IMAGE = "background_image";
-    @javax.annotation.Nullable
-            private JsonNullable<PaymentLinkBackgroundImageConfig> backgroundImage = JsonNullable.<PaymentLinkBackgroundImageConfig>undefined();
+  public static final String JSON_PROPERTY_BACKGROUND_IMAGE = "background_image";
+  @javax.annotation.Nullable
+  private JsonNullable<PaymentLinkBackgroundImageConfig> backgroundImage = JsonNullable.<PaymentLinkBackgroundImageConfig>undefined();
 
-        public static final String JSON_PROPERTY_DETAILS_LAYOUT = "details_layout";
-    @javax.annotation.Nullable
-            private JsonNullable<PaymentLinkDetailsLayout> detailsLayout = JsonNullable.<PaymentLinkDetailsLayout>undefined();
+  public static final String JSON_PROPERTY_DETAILS_LAYOUT = "details_layout";
+  @javax.annotation.Nullable
+  private JsonNullable<PaymentLinkDetailsLayout> detailsLayout = JsonNullable.<PaymentLinkDetailsLayout>undefined();
 
-        public static final String JSON_PROPERTY_BRANDING_VISIBILITY = "branding_visibility";
-    @javax.annotation.Nullable
-            private JsonNullable<Boolean> brandingVisibility = JsonNullable.<Boolean>undefined();
+  public static final String JSON_PROPERTY_BRANDING_VISIBILITY = "branding_visibility";
+  @javax.annotation.Nullable
+  private JsonNullable<Boolean> brandingVisibility = JsonNullable.<Boolean>undefined();
 
-public PaymentLinkConfig() {
-}
+  public PaymentLinkConfig() {
+  }
 
-        public PaymentLinkConfig theme(@javax.annotation.Nonnull String theme) {
-        
-        this.theme = theme;
-        return this;
-        }
+  public PaymentLinkConfig theme(@javax.annotation.Nonnull String theme) {
+    
+    this.theme = theme;
+    return this;
+  }
 
-    /**
-        * custom theme for the payment link
-    * @return theme
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_THEME)
+  /**
+   * custom theme for the payment link
+   * @return theme
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_THEME)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public String getTheme() {
-        return theme;
-    }
+  public String getTheme() {
+    return theme;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_THEME)
+  @JsonProperty(JSON_PROPERTY_THEME)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setTheme(@javax.annotation.Nonnull String theme) {
-            this.theme = theme;
-        }
+    this.theme = theme;
+  }
 
-        public PaymentLinkConfig logo(@javax.annotation.Nonnull String logo) {
-        
-        this.logo = logo;
-        return this;
-        }
+  public PaymentLinkConfig logo(@javax.annotation.Nonnull String logo) {
+    
+    this.logo = logo;
+    return this;
+  }
 
-    /**
-        * merchant display logo
-    * @return logo
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_LOGO)
+  /**
+   * merchant display logo
+   * @return logo
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_LOGO)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public String getLogo() {
-        return logo;
-    }
+  public String getLogo() {
+    return logo;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_LOGO)
+  @JsonProperty(JSON_PROPERTY_LOGO)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setLogo(@javax.annotation.Nonnull String logo) {
-            this.logo = logo;
-        }
+    this.logo = logo;
+  }
 
-        public PaymentLinkConfig sellerName(@javax.annotation.Nonnull String sellerName) {
-        
-        this.sellerName = sellerName;
-        return this;
-        }
+  public PaymentLinkConfig sellerName(@javax.annotation.Nonnull String sellerName) {
+    
+    this.sellerName = sellerName;
+    return this;
+  }
 
-    /**
-        * Custom merchant name for payment link
-    * @return sellerName
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_SELLER_NAME)
+  /**
+   * Custom merchant name for payment link
+   * @return sellerName
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_SELLER_NAME)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public String getSellerName() {
-        return sellerName;
-    }
+  public String getSellerName() {
+    return sellerName;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_SELLER_NAME)
+  @JsonProperty(JSON_PROPERTY_SELLER_NAME)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setSellerName(@javax.annotation.Nonnull String sellerName) {
-            this.sellerName = sellerName;
-        }
+    this.sellerName = sellerName;
+  }
 
-        public PaymentLinkConfig sdkLayout(@javax.annotation.Nonnull String sdkLayout) {
-        
-        this.sdkLayout = sdkLayout;
-        return this;
-        }
+  public PaymentLinkConfig sdkLayout(@javax.annotation.Nonnull String sdkLayout) {
+    
+    this.sdkLayout = sdkLayout;
+    return this;
+  }
 
-    /**
-        * Custom layout for sdk
-    * @return sdkLayout
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_SDK_LAYOUT)
+  /**
+   * Custom layout for sdk
+   * @return sdkLayout
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_SDK_LAYOUT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public String getSdkLayout() {
-        return sdkLayout;
-    }
+  public String getSdkLayout() {
+    return sdkLayout;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_SDK_LAYOUT)
+  @JsonProperty(JSON_PROPERTY_SDK_LAYOUT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setSdkLayout(@javax.annotation.Nonnull String sdkLayout) {
-            this.sdkLayout = sdkLayout;
-        }
+    this.sdkLayout = sdkLayout;
+  }
 
-        public PaymentLinkConfig displaySdkOnly(@javax.annotation.Nonnull Boolean displaySdkOnly) {
-        
-        this.displaySdkOnly = displaySdkOnly;
-        return this;
-        }
+  public PaymentLinkConfig displaySdkOnly(@javax.annotation.Nonnull Boolean displaySdkOnly) {
+    
+    this.displaySdkOnly = displaySdkOnly;
+    return this;
+  }
 
-    /**
-        * Display only the sdk for payment link
-    * @return displaySdkOnly
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_DISPLAY_SDK_ONLY)
+  /**
+   * Display only the sdk for payment link
+   * @return displaySdkOnly
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_DISPLAY_SDK_ONLY)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public Boolean getDisplaySdkOnly() {
-        return displaySdkOnly;
-    }
+  public Boolean getDisplaySdkOnly() {
+    return displaySdkOnly;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_DISPLAY_SDK_ONLY)
+  @JsonProperty(JSON_PROPERTY_DISPLAY_SDK_ONLY)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setDisplaySdkOnly(@javax.annotation.Nonnull Boolean displaySdkOnly) {
-            this.displaySdkOnly = displaySdkOnly;
-        }
+    this.displaySdkOnly = displaySdkOnly;
+  }
 
-        public PaymentLinkConfig enabledSavedPaymentMethod(@javax.annotation.Nonnull Boolean enabledSavedPaymentMethod) {
-        
-        this.enabledSavedPaymentMethod = enabledSavedPaymentMethod;
-        return this;
-        }
+  public PaymentLinkConfig enabledSavedPaymentMethod(@javax.annotation.Nonnull Boolean enabledSavedPaymentMethod) {
+    
+    this.enabledSavedPaymentMethod = enabledSavedPaymentMethod;
+    return this;
+  }
 
-    /**
-        * Enable saved payment method option for payment link
-    * @return enabledSavedPaymentMethod
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_ENABLED_SAVED_PAYMENT_METHOD)
+  /**
+   * Enable saved payment method option for payment link
+   * @return enabledSavedPaymentMethod
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_ENABLED_SAVED_PAYMENT_METHOD)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public Boolean getEnabledSavedPaymentMethod() {
-        return enabledSavedPaymentMethod;
-    }
+  public Boolean getEnabledSavedPaymentMethod() {
+    return enabledSavedPaymentMethod;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_ENABLED_SAVED_PAYMENT_METHOD)
+  @JsonProperty(JSON_PROPERTY_ENABLED_SAVED_PAYMENT_METHOD)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setEnabledSavedPaymentMethod(@javax.annotation.Nonnull Boolean enabledSavedPaymentMethod) {
-            this.enabledSavedPaymentMethod = enabledSavedPaymentMethod;
-        }
+    this.enabledSavedPaymentMethod = enabledSavedPaymentMethod;
+  }
 
-        public PaymentLinkConfig hideCardNicknameField(@javax.annotation.Nonnull Boolean hideCardNicknameField) {
-        
-        this.hideCardNicknameField = hideCardNicknameField;
-        return this;
-        }
+  public PaymentLinkConfig hideCardNicknameField(@javax.annotation.Nonnull Boolean hideCardNicknameField) {
+    
+    this.hideCardNicknameField = hideCardNicknameField;
+    return this;
+  }
 
-    /**
-        * Hide card nickname field option for payment link
-    * @return hideCardNicknameField
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_HIDE_CARD_NICKNAME_FIELD)
+  /**
+   * Hide card nickname field option for payment link
+   * @return hideCardNicknameField
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_HIDE_CARD_NICKNAME_FIELD)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public Boolean getHideCardNicknameField() {
-        return hideCardNicknameField;
-    }
+  public Boolean getHideCardNicknameField() {
+    return hideCardNicknameField;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_HIDE_CARD_NICKNAME_FIELD)
+  @JsonProperty(JSON_PROPERTY_HIDE_CARD_NICKNAME_FIELD)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setHideCardNicknameField(@javax.annotation.Nonnull Boolean hideCardNicknameField) {
-            this.hideCardNicknameField = hideCardNicknameField;
-        }
+    this.hideCardNicknameField = hideCardNicknameField;
+  }
 
-        public PaymentLinkConfig showCardFormByDefault(@javax.annotation.Nonnull Boolean showCardFormByDefault) {
-        
-        this.showCardFormByDefault = showCardFormByDefault;
-        return this;
-        }
+  public PaymentLinkConfig showCardFormByDefault(@javax.annotation.Nonnull Boolean showCardFormByDefault) {
+    
+    this.showCardFormByDefault = showCardFormByDefault;
+    return this;
+  }
 
-    /**
-        * Show card form by default for payment link
-    * @return showCardFormByDefault
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_SHOW_CARD_FORM_BY_DEFAULT)
+  /**
+   * Show card form by default for payment link
+   * @return showCardFormByDefault
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_SHOW_CARD_FORM_BY_DEFAULT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public Boolean getShowCardFormByDefault() {
-        return showCardFormByDefault;
-    }
+  public Boolean getShowCardFormByDefault() {
+    return showCardFormByDefault;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_SHOW_CARD_FORM_BY_DEFAULT)
+  @JsonProperty(JSON_PROPERTY_SHOW_CARD_FORM_BY_DEFAULT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setShowCardFormByDefault(@javax.annotation.Nonnull Boolean showCardFormByDefault) {
-            this.showCardFormByDefault = showCardFormByDefault;
-        }
+    this.showCardFormByDefault = showCardFormByDefault;
+  }
 
-        public PaymentLinkConfig allowedDomains(@javax.annotation.Nullable Set<String> allowedDomains) {
-        this.allowedDomains = JsonNullable.<Set<String>>of(allowedDomains);
-        
-        return this;
-        }
-
-            public PaymentLinkConfig addAllowedDomainsItem(String allowedDomainsItem) {
-                if (this.allowedDomains == null || !this.allowedDomains.isPresent()) {
-                this.allowedDomains = JsonNullable.<Set<String>>of(new LinkedHashSet<>());
-                }
-                try {
-                this.allowedDomains.get().add(allowedDomainsItem);
-                } catch (java.util.NoSuchElementException e) {
-                // this can never happen, as we make sure above that the value is present
-                }
-                return this;
-            }
-
-    /**
-        * A list of allowed domains (glob patterns) where this link can be embedded / opened from
-    * @return allowedDomains
-    */
-    @javax.annotation.Nullable
-        @JsonIgnore
+  public PaymentLinkConfig allowedDomains(@javax.annotation.Nullable Set<String> allowedDomains) {
+    this.allowedDomains = JsonNullable.<Set<String>>of(allowedDomains);
     
-    public Set<String> getAllowedDomains() {
-                return allowedDomains.orElse(null);
-    }
+    return this;
+  }
 
-          @JsonProperty(JSON_PROPERTY_ALLOWED_DOMAINS)
+  public PaymentLinkConfig addAllowedDomainsItem(String allowedDomainsItem) {
+    if (this.allowedDomains == null || !this.allowedDomains.isPresent()) {
+      this.allowedDomains = JsonNullable.<Set<String>>of(new LinkedHashSet<>());
+    }
+    try {
+      this.allowedDomains.get().add(allowedDomainsItem);
+    } catch (java.util.NoSuchElementException e) {
+      // this can never happen, as we make sure above that the value is present
+    }
+    return this;
+  }
+
+  /**
+   * A list of allowed domains (glob patterns) where this link can be embedded / opened from
+   * @return allowedDomains
+   */
+  @javax.annotation.Nullable
+  @JsonIgnore
+
+  public Set<String> getAllowedDomains() {
+        return allowedDomains.orElse(null);
+  }
+
+  @JsonProperty(JSON_PROPERTY_ALLOWED_DOMAINS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-        public JsonNullable<Set<String>> getAllowedDomains_JsonNullable() {
-        return allowedDomains;
-        }
+  public JsonNullable<Set<String>> getAllowedDomains_JsonNullable() {
+    return allowedDomains;
+  }
+  
+  @JsonProperty(JSON_PROPERTY_ALLOWED_DOMAINS)
+  public void setAllowedDomains_JsonNullable(JsonNullable<Set<String>> allowedDomains) {
+    this.allowedDomains = allowedDomains;
+  }
+
+  public void setAllowedDomains(@javax.annotation.Nullable Set<String> allowedDomains) {
+    this.allowedDomains = JsonNullable.<Set<String>>of(allowedDomains);
+  }
+
+  public PaymentLinkConfig transactionDetails(@javax.annotation.Nullable List<PaymentLinkTransactionDetails> transactionDetails) {
+    this.transactionDetails = JsonNullable.<List<PaymentLinkTransactionDetails>>of(transactionDetails);
     
-        @JsonProperty(JSON_PROPERTY_ALLOWED_DOMAINS)
-        public void setAllowedDomains_JsonNullable(JsonNullable<Set<String>> allowedDomains) {
-        this.allowedDomains = allowedDomains;
-        }
+    return this;
+  }
 
-          public void setAllowedDomains(@javax.annotation.Nullable Set<String> allowedDomains) {
-            this.allowedDomains = JsonNullable.<Set<String>>of(allowedDomains);
-        }
-
-        public PaymentLinkConfig transactionDetails(@javax.annotation.Nullable List<PaymentLinkTransactionDetails> transactionDetails) {
-        this.transactionDetails = JsonNullable.<List<PaymentLinkTransactionDetails>>of(transactionDetails);
-        
-        return this;
-        }
-
-            public PaymentLinkConfig addTransactionDetailsItem(PaymentLinkTransactionDetails transactionDetailsItem) {
-                if (this.transactionDetails == null || !this.transactionDetails.isPresent()) {
-                this.transactionDetails = JsonNullable.<List<PaymentLinkTransactionDetails>>of(new ArrayList<>());
-                }
-                try {
-                this.transactionDetails.get().add(transactionDetailsItem);
-                } catch (java.util.NoSuchElementException e) {
-                // this can never happen, as we make sure above that the value is present
-                }
-                return this;
-            }
-
-    /**
-        * Dynamic details related to merchant to be rendered in payment link
-    * @return transactionDetails
-    */
-    @javax.annotation.Nullable
-        @JsonIgnore
-    
-    public List<PaymentLinkTransactionDetails> getTransactionDetails() {
-                return transactionDetails.orElse(null);
+  public PaymentLinkConfig addTransactionDetailsItem(PaymentLinkTransactionDetails transactionDetailsItem) {
+    if (this.transactionDetails == null || !this.transactionDetails.isPresent()) {
+      this.transactionDetails = JsonNullable.<List<PaymentLinkTransactionDetails>>of(new ArrayList<>());
     }
+    try {
+      this.transactionDetails.get().add(transactionDetailsItem);
+    } catch (java.util.NoSuchElementException e) {
+      // this can never happen, as we make sure above that the value is present
+    }
+    return this;
+  }
 
-          @JsonProperty(JSON_PROPERTY_TRANSACTION_DETAILS)
+  /**
+   * Dynamic details related to merchant to be rendered in payment link
+   * @return transactionDetails
+   */
+  @javax.annotation.Nullable
+  @JsonIgnore
+
+  public List<PaymentLinkTransactionDetails> getTransactionDetails() {
+        return transactionDetails.orElse(null);
+  }
+
+  @JsonProperty(JSON_PROPERTY_TRANSACTION_DETAILS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-        public JsonNullable<List<PaymentLinkTransactionDetails>> getTransactionDetails_JsonNullable() {
-        return transactionDetails;
-        }
+  public JsonNullable<List<PaymentLinkTransactionDetails>> getTransactionDetails_JsonNullable() {
+    return transactionDetails;
+  }
+  
+  @JsonProperty(JSON_PROPERTY_TRANSACTION_DETAILS)
+  public void setTransactionDetails_JsonNullable(JsonNullable<List<PaymentLinkTransactionDetails>> transactionDetails) {
+    this.transactionDetails = transactionDetails;
+  }
+
+  public void setTransactionDetails(@javax.annotation.Nullable List<PaymentLinkTransactionDetails> transactionDetails) {
+    this.transactionDetails = JsonNullable.<List<PaymentLinkTransactionDetails>>of(transactionDetails);
+  }
+
+  public PaymentLinkConfig backgroundImage(@javax.annotation.Nullable PaymentLinkBackgroundImageConfig backgroundImage) {
+    this.backgroundImage = JsonNullable.<PaymentLinkBackgroundImageConfig>of(backgroundImage);
     
-        @JsonProperty(JSON_PROPERTY_TRANSACTION_DETAILS)
-        public void setTransactionDetails_JsonNullable(JsonNullable<List<PaymentLinkTransactionDetails>> transactionDetails) {
-        this.transactionDetails = transactionDetails;
-        }
+    return this;
+  }
 
-          public void setTransactionDetails(@javax.annotation.Nullable List<PaymentLinkTransactionDetails> transactionDetails) {
-            this.transactionDetails = JsonNullable.<List<PaymentLinkTransactionDetails>>of(transactionDetails);
-        }
+  /**
+   * Get backgroundImage
+   * @return backgroundImage
+   */
+  @javax.annotation.Nullable
+  @JsonIgnore
 
-        public PaymentLinkConfig backgroundImage(@javax.annotation.Nullable PaymentLinkBackgroundImageConfig backgroundImage) {
-        this.backgroundImage = JsonNullable.<PaymentLinkBackgroundImageConfig>of(backgroundImage);
-        
-        return this;
-        }
+  public PaymentLinkBackgroundImageConfig getBackgroundImage() {
+        return backgroundImage.orElse(null);
+  }
 
-    /**
-        * Get backgroundImage
-    * @return backgroundImage
-    */
-    @javax.annotation.Nullable
-        @JsonIgnore
-    
-    public PaymentLinkBackgroundImageConfig getBackgroundImage() {
-                return backgroundImage.orElse(null);
-    }
-
-          @JsonProperty(JSON_PROPERTY_BACKGROUND_IMAGE)
+  @JsonProperty(JSON_PROPERTY_BACKGROUND_IMAGE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-        public JsonNullable<PaymentLinkBackgroundImageConfig> getBackgroundImage_JsonNullable() {
-        return backgroundImage;
-        }
+  public JsonNullable<PaymentLinkBackgroundImageConfig> getBackgroundImage_JsonNullable() {
+    return backgroundImage;
+  }
+  
+  @JsonProperty(JSON_PROPERTY_BACKGROUND_IMAGE)
+  public void setBackgroundImage_JsonNullable(JsonNullable<PaymentLinkBackgroundImageConfig> backgroundImage) {
+    this.backgroundImage = backgroundImage;
+  }
+
+  public void setBackgroundImage(@javax.annotation.Nullable PaymentLinkBackgroundImageConfig backgroundImage) {
+    this.backgroundImage = JsonNullable.<PaymentLinkBackgroundImageConfig>of(backgroundImage);
+  }
+
+  public PaymentLinkConfig detailsLayout(@javax.annotation.Nullable PaymentLinkDetailsLayout detailsLayout) {
+    this.detailsLayout = JsonNullable.<PaymentLinkDetailsLayout>of(detailsLayout);
     
-        @JsonProperty(JSON_PROPERTY_BACKGROUND_IMAGE)
-        public void setBackgroundImage_JsonNullable(JsonNullable<PaymentLinkBackgroundImageConfig> backgroundImage) {
-        this.backgroundImage = backgroundImage;
-        }
+    return this;
+  }
 
-          public void setBackgroundImage(@javax.annotation.Nullable PaymentLinkBackgroundImageConfig backgroundImage) {
-            this.backgroundImage = JsonNullable.<PaymentLinkBackgroundImageConfig>of(backgroundImage);
-        }
+  /**
+   * Get detailsLayout
+   * @return detailsLayout
+   */
+  @javax.annotation.Nullable
+  @JsonIgnore
 
-        public PaymentLinkConfig detailsLayout(@javax.annotation.Nullable PaymentLinkDetailsLayout detailsLayout) {
-        this.detailsLayout = JsonNullable.<PaymentLinkDetailsLayout>of(detailsLayout);
-        
-        return this;
-        }
+  public PaymentLinkDetailsLayout getDetailsLayout() {
+        return detailsLayout.orElse(null);
+  }
 
-    /**
-        * Get detailsLayout
-    * @return detailsLayout
-    */
-    @javax.annotation.Nullable
-        @JsonIgnore
-    
-    public PaymentLinkDetailsLayout getDetailsLayout() {
-                return detailsLayout.orElse(null);
-    }
-
-          @JsonProperty(JSON_PROPERTY_DETAILS_LAYOUT)
+  @JsonProperty(JSON_PROPERTY_DETAILS_LAYOUT)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-        public JsonNullable<PaymentLinkDetailsLayout> getDetailsLayout_JsonNullable() {
-        return detailsLayout;
-        }
+  public JsonNullable<PaymentLinkDetailsLayout> getDetailsLayout_JsonNullable() {
+    return detailsLayout;
+  }
+  
+  @JsonProperty(JSON_PROPERTY_DETAILS_LAYOUT)
+  public void setDetailsLayout_JsonNullable(JsonNullable<PaymentLinkDetailsLayout> detailsLayout) {
+    this.detailsLayout = detailsLayout;
+  }
+
+  public void setDetailsLayout(@javax.annotation.Nullable PaymentLinkDetailsLayout detailsLayout) {
+    this.detailsLayout = JsonNullable.<PaymentLinkDetailsLayout>of(detailsLayout);
+  }
+
+  public PaymentLinkConfig brandingVisibility(@javax.annotation.Nullable Boolean brandingVisibility) {
+    this.brandingVisibility = JsonNullable.<Boolean>of(brandingVisibility);
     
-        @JsonProperty(JSON_PROPERTY_DETAILS_LAYOUT)
-        public void setDetailsLayout_JsonNullable(JsonNullable<PaymentLinkDetailsLayout> detailsLayout) {
-        this.detailsLayout = detailsLayout;
-        }
+    return this;
+  }
 
-          public void setDetailsLayout(@javax.annotation.Nullable PaymentLinkDetailsLayout detailsLayout) {
-            this.detailsLayout = JsonNullable.<PaymentLinkDetailsLayout>of(detailsLayout);
-        }
+  /**
+   * Toggle for HyperSwitch branding visibility
+   * @return brandingVisibility
+   */
+  @javax.annotation.Nullable
+  @JsonIgnore
 
-        public PaymentLinkConfig brandingVisibility(@javax.annotation.Nullable Boolean brandingVisibility) {
-        this.brandingVisibility = JsonNullable.<Boolean>of(brandingVisibility);
-        
-        return this;
-        }
+  public Boolean getBrandingVisibility() {
+        return brandingVisibility.orElse(null);
+  }
 
-    /**
-        * Toggle for HyperSwitch branding visibility
-    * @return brandingVisibility
-    */
-    @javax.annotation.Nullable
-        @JsonIgnore
-    
-    public Boolean getBrandingVisibility() {
-                return brandingVisibility.orElse(null);
-    }
-
-          @JsonProperty(JSON_PROPERTY_BRANDING_VISIBILITY)
+  @JsonProperty(JSON_PROPERTY_BRANDING_VISIBILITY)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-        public JsonNullable<Boolean> getBrandingVisibility_JsonNullable() {
-        return brandingVisibility;
-        }
-    
-        @JsonProperty(JSON_PROPERTY_BRANDING_VISIBILITY)
-        public void setBrandingVisibility_JsonNullable(JsonNullable<Boolean> brandingVisibility) {
-        this.brandingVisibility = brandingVisibility;
-        }
+  public JsonNullable<Boolean> getBrandingVisibility_JsonNullable() {
+    return brandingVisibility;
+  }
+  
+  @JsonProperty(JSON_PROPERTY_BRANDING_VISIBILITY)
+  public void setBrandingVisibility_JsonNullable(JsonNullable<Boolean> brandingVisibility) {
+    this.brandingVisibility = brandingVisibility;
+  }
 
-          public void setBrandingVisibility(@javax.annotation.Nullable Boolean brandingVisibility) {
-            this.brandingVisibility = JsonNullable.<Boolean>of(brandingVisibility);
-        }
+  public void setBrandingVisibility(@javax.annotation.Nullable Boolean brandingVisibility) {
+    this.brandingVisibility = JsonNullable.<Boolean>of(brandingVisibility);
+  }
 
-@Override
-public boolean equals(Object o) {
+  @Override
+  public boolean equals(Object o) {
     if (this == o) {
-    return true;
+      return true;
     }
     if (o == null || getClass() != o.getClass()) {
-    return false;
+      return false;
     }
-        PaymentLinkConfig paymentLinkConfig = (PaymentLinkConfig) o;
-        return Objects.equals(this.theme, paymentLinkConfig.theme) &&
+    PaymentLinkConfig paymentLinkConfig = (PaymentLinkConfig) o;
+    return Objects.equals(this.theme, paymentLinkConfig.theme) &&
         Objects.equals(this.logo, paymentLinkConfig.logo) &&
         Objects.equals(this.sellerName, paymentLinkConfig.sellerName) &&
         Objects.equals(this.sdkLayout, paymentLinkConfig.sdkLayout) &&
@@ -524,221 +524,221 @@ public boolean equals(Object o) {
         equalsNullable(this.backgroundImage, paymentLinkConfig.backgroundImage) &&
         equalsNullable(this.detailsLayout, paymentLinkConfig.detailsLayout) &&
         equalsNullable(this.brandingVisibility, paymentLinkConfig.brandingVisibility);
-}
+  }
 
-    private static <T> boolean equalsNullable(JsonNullable<T> a, JsonNullable<T> b) {
-        return a == b || (a != null && b != null && a.isPresent() && b.isPresent() && Objects.deepEquals(a.get(), b.get()));
-        }
+  private static <T> boolean equalsNullable(JsonNullable<T> a, JsonNullable<T> b) {
+    return a == b || (a != null && b != null && a.isPresent() && b.isPresent() && Objects.deepEquals(a.get(), b.get()));
+  }
 
-    @Override
-    public int hashCode() {
-        return Objects.hash(theme, logo, sellerName, sdkLayout, displaySdkOnly, enabledSavedPaymentMethod, hideCardNicknameField, showCardFormByDefault, hashCodeNullable(allowedDomains), hashCodeNullable(transactionDetails), hashCodeNullable(backgroundImage), hashCodeNullable(detailsLayout), hashCodeNullable(brandingVisibility));
+  @Override
+  public int hashCode() {
+    return Objects.hash(theme, logo, sellerName, sdkLayout, displaySdkOnly, enabledSavedPaymentMethod, hideCardNicknameField, showCardFormByDefault, hashCodeNullable(allowedDomains), hashCodeNullable(transactionDetails), hashCodeNullable(backgroundImage), hashCodeNullable(detailsLayout), hashCodeNullable(brandingVisibility));
+  }
+
+  private static <T> int hashCodeNullable(JsonNullable<T> a) {
+    if (a == null) {
+      return 1;
     }
+    return a.isPresent() ? Arrays.deepHashCode(new Object[]{a.get()}) : 31;
+  }
 
-        private static <T> int hashCodeNullable(JsonNullable<T> a) {
-        if (a == null) {
-        return 1;
-        }
-        return a.isPresent() ? Arrays.deepHashCode(new Object[]{a.get()}) : 31;
-        }
-
-    @Override
-    public String toString() {
+  @Override
+  public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class PaymentLinkConfig {\n");
-        sb.append("    theme: ").append(toIndentedString(theme)).append("\n");
-        sb.append("    logo: ").append(toIndentedString(logo)).append("\n");
-        sb.append("    sellerName: ").append(toIndentedString(sellerName)).append("\n");
-        sb.append("    sdkLayout: ").append(toIndentedString(sdkLayout)).append("\n");
-        sb.append("    displaySdkOnly: ").append(toIndentedString(displaySdkOnly)).append("\n");
-        sb.append("    enabledSavedPaymentMethod: ").append(toIndentedString(enabledSavedPaymentMethod)).append("\n");
-        sb.append("    hideCardNicknameField: ").append(toIndentedString(hideCardNicknameField)).append("\n");
-        sb.append("    showCardFormByDefault: ").append(toIndentedString(showCardFormByDefault)).append("\n");
-        sb.append("    allowedDomains: ").append(toIndentedString(allowedDomains)).append("\n");
-        sb.append("    transactionDetails: ").append(toIndentedString(transactionDetails)).append("\n");
-        sb.append("    backgroundImage: ").append(toIndentedString(backgroundImage)).append("\n");
-        sb.append("    detailsLayout: ").append(toIndentedString(detailsLayout)).append("\n");
-        sb.append("    brandingVisibility: ").append(toIndentedString(brandingVisibility)).append("\n");
+    sb.append("    theme: ").append(toIndentedString(theme)).append("\n");
+    sb.append("    logo: ").append(toIndentedString(logo)).append("\n");
+    sb.append("    sellerName: ").append(toIndentedString(sellerName)).append("\n");
+    sb.append("    sdkLayout: ").append(toIndentedString(sdkLayout)).append("\n");
+    sb.append("    displaySdkOnly: ").append(toIndentedString(displaySdkOnly)).append("\n");
+    sb.append("    enabledSavedPaymentMethod: ").append(toIndentedString(enabledSavedPaymentMethod)).append("\n");
+    sb.append("    hideCardNicknameField: ").append(toIndentedString(hideCardNicknameField)).append("\n");
+    sb.append("    showCardFormByDefault: ").append(toIndentedString(showCardFormByDefault)).append("\n");
+    sb.append("    allowedDomains: ").append(toIndentedString(allowedDomains)).append("\n");
+    sb.append("    transactionDetails: ").append(toIndentedString(transactionDetails)).append("\n");
+    sb.append("    backgroundImage: ").append(toIndentedString(backgroundImage)).append("\n");
+    sb.append("    detailsLayout: ").append(toIndentedString(detailsLayout)).append("\n");
+    sb.append("    brandingVisibility: ").append(toIndentedString(brandingVisibility)).append("\n");
     sb.append("}");
     return sb.toString();
-    }
+  }
 
-    /**
-    * Convert the given object to string with each line indented by 4 spaces
-    * (except the first line).
-    */
-    private String toIndentedString(Object o) {
+  /**
+   * Convert the given object to string with each line indented by 4 spaces
+   * (except the first line).
+   */
+  private String toIndentedString(Object o) {
     if (o == null) {
-    return "null";
+      return "null";
     }
     return o.toString().replace("\n", "\n    ");
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @return URL query string
+   */
+  public String toUrlQueryString() {
+    return toUrlQueryString(null);
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @param prefix prefix of the query string
+   * @return URL query string
+   */
+  public String toUrlQueryString(String prefix) {
+    String suffix = "";
+    String containerSuffix = "";
+    String containerPrefix = "";
+    if (prefix == null) {
+      // style=form, explode=true, e.g. /pet?name=cat&type=manx
+      prefix = "";
+    } else {
+      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+      prefix = prefix + "[";
+      suffix = "]";
+      containerSuffix = "]";
+      containerPrefix = "[";
     }
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @return URL query string
-        */
-        public String toUrlQueryString() {
-        return toUrlQueryString(null);
-        }
+    StringJoiner joiner = new StringJoiner("&");
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @param prefix prefix of the query string
-        * @return URL query string
-        */
-        public String toUrlQueryString(String prefix) {
-        String suffix = "";
-        String containerSuffix = "";
-        String containerPrefix = "";
-        if (prefix == null) {
-        // style=form, explode=true, e.g. /pet?name=cat&type=manx
-        prefix = "";
-        } else {
-        // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
-        prefix = prefix + "[";
-        suffix = "]";
-        containerSuffix = "]";
-        containerPrefix = "[";
-        }
-
-        StringJoiner joiner = new StringJoiner("&");
-
-            // add `theme` to the URL query string
-                        if (getTheme() != null) {
-                        try {
-                        joiner.add(String.format("%stheme%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getTheme()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-            // add `logo` to the URL query string
-                        if (getLogo() != null) {
-                        try {
-                        joiner.add(String.format("%slogo%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getLogo()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-            // add `seller_name` to the URL query string
-                        if (getSellerName() != null) {
-                        try {
-                        joiner.add(String.format("%sseller_name%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getSellerName()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-            // add `sdk_layout` to the URL query string
-                        if (getSdkLayout() != null) {
-                        try {
-                        joiner.add(String.format("%ssdk_layout%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getSdkLayout()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-            // add `display_sdk_only` to the URL query string
-                        if (getDisplaySdkOnly() != null) {
-                        try {
-                        joiner.add(String.format("%sdisplay_sdk_only%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getDisplaySdkOnly()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-            // add `enabled_saved_payment_method` to the URL query string
-                        if (getEnabledSavedPaymentMethod() != null) {
-                        try {
-                        joiner.add(String.format("%senabled_saved_payment_method%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getEnabledSavedPaymentMethod()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-            // add `hide_card_nickname_field` to the URL query string
-                        if (getHideCardNicknameField() != null) {
-                        try {
-                        joiner.add(String.format("%shide_card_nickname_field%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getHideCardNicknameField()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-            // add `show_card_form_by_default` to the URL query string
-                        if (getShowCardFormByDefault() != null) {
-                        try {
-                        joiner.add(String.format("%sshow_card_form_by_default%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getShowCardFormByDefault()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-            // add `allowed_domains` to the URL query string
-                        if (getAllowedDomains() != null) {
-                        int i = 0;
-                        for (String _item : getAllowedDomains()) {
-                        try {
-                        joiner.add(String.format("%sallowed_domains%s%s=%s", prefix, suffix,
-                        "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix),
-                        URLEncoder.encode(String.valueOf(_item), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-                        i++;
-                        }
-
-            // add `transaction_details` to the URL query string
-                            if (getTransactionDetails() != null) {
-                            for (int i = 0; i < getTransactionDetails().size(); i++) {
-                            if (getTransactionDetails().get(i) != null) {
-                            joiner.add(getTransactionDetails().get(i).toUrlQueryString(String.format("%stransaction_details%s%s", prefix, suffix,
-                            "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix))));
-                            }
-                            }
-                            }
-
-            // add `background_image` to the URL query string
-                            if (getBackgroundImage() != null) {
-                            joiner.add(getBackgroundImage().toUrlQueryString(prefix + "background_image" + suffix));
-                            }
-
-            // add `details_layout` to the URL query string
-                            if (getDetailsLayout() != null) {
-                            try {
-                            joiner.add(String.format("%sdetails_layout%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getDetailsLayout()), "UTF-8").replaceAll("\\+", "%20")));
-                            } catch (UnsupportedEncodingException e) {
-                            // Should never happen, UTF-8 is always supported
-                            throw new RuntimeException(e);
-                            }
-                            }
-
-            // add `branding_visibility` to the URL query string
-                        if (getBrandingVisibility() != null) {
-                        try {
-                        joiner.add(String.format("%sbranding_visibility%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getBrandingVisibility()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-        return joiner.toString();
-        }
-
+    // add `theme` to the URL query string
+    if (getTheme() != null) {
+      try {
+        joiner.add(String.format("%stheme%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getTheme()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
     }
+
+    // add `logo` to the URL query string
+    if (getLogo() != null) {
+      try {
+        joiner.add(String.format("%slogo%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getLogo()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `seller_name` to the URL query string
+    if (getSellerName() != null) {
+      try {
+        joiner.add(String.format("%sseller_name%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getSellerName()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `sdk_layout` to the URL query string
+    if (getSdkLayout() != null) {
+      try {
+        joiner.add(String.format("%ssdk_layout%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getSdkLayout()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `display_sdk_only` to the URL query string
+    if (getDisplaySdkOnly() != null) {
+      try {
+        joiner.add(String.format("%sdisplay_sdk_only%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getDisplaySdkOnly()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `enabled_saved_payment_method` to the URL query string
+    if (getEnabledSavedPaymentMethod() != null) {
+      try {
+        joiner.add(String.format("%senabled_saved_payment_method%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getEnabledSavedPaymentMethod()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `hide_card_nickname_field` to the URL query string
+    if (getHideCardNicknameField() != null) {
+      try {
+        joiner.add(String.format("%shide_card_nickname_field%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getHideCardNicknameField()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `show_card_form_by_default` to the URL query string
+    if (getShowCardFormByDefault() != null) {
+      try {
+        joiner.add(String.format("%sshow_card_form_by_default%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getShowCardFormByDefault()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `allowed_domains` to the URL query string
+    if (getAllowedDomains() != null) {
+      int i = 0;
+      for (String _item : getAllowedDomains()) {
+        try {
+          joiner.add(String.format("%sallowed_domains%s%s=%s", prefix, suffix,
+              "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix),
+              URLEncoder.encode(String.valueOf(_item), "UTF-8").replaceAll("\\+", "%20")));
+        } catch (UnsupportedEncodingException e) {
+          // Should never happen, UTF-8 is always supported
+          throw new RuntimeException(e);
+        }
+      }
+      i++;
+    }
+
+    // add `transaction_details` to the URL query string
+    if (getTransactionDetails() != null) {
+      for (int i = 0; i < getTransactionDetails().size(); i++) {
+        if (getTransactionDetails().get(i) != null) {
+          joiner.add(getTransactionDetails().get(i).toUrlQueryString(String.format("%stransaction_details%s%s", prefix, suffix,
+              "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix))));
+        }
+      }
+    }
+
+    // add `background_image` to the URL query string
+    if (getBackgroundImage() != null) {
+      joiner.add(getBackgroundImage().toUrlQueryString(prefix + "background_image" + suffix));
+    }
+
+    // add `details_layout` to the URL query string
+    if (getDetailsLayout() != null) {
+      try {
+        joiner.add(String.format("%sdetails_layout%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getDetailsLayout()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `branding_visibility` to the URL query string
+    if (getBrandingVisibility() != null) {
+      try {
+        joiner.add(String.format("%sbranding_visibility%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getBrandingVisibility()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    return joiner.toString();
+  }
+
+}
 

@@ -27,127 +27,127 @@ import java.net.URLEncoder;
 import java.util.StringJoiner;
 
 /**
-* BankTransferAdditionalDataOneOf4
-*/
-    @JsonPropertyOrder({
-        BankTransferAdditionalDataOneOf4.JSON_PROPERTY_PERMATA
-    })
-            @JsonTypeName("BankTransferAdditionalData_oneOf_4")
+ * BankTransferAdditionalDataOneOf4
+ */
+@JsonPropertyOrder({
+  BankTransferAdditionalDataOneOf4.JSON_PROPERTY_PERMATA
+})
+@JsonTypeName("BankTransferAdditionalData_oneOf_4")
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class BankTransferAdditionalDataOneOf4 {
-        public static final String JSON_PROPERTY_PERMATA = "permata";
-    @javax.annotation.Nonnull
-            private Object permata;
+  public static final String JSON_PROPERTY_PERMATA = "permata";
+  @javax.annotation.Nonnull
+  private Object permata;
 
-public BankTransferAdditionalDataOneOf4() {
-}
+  public BankTransferAdditionalDataOneOf4() {
+  }
 
-        public BankTransferAdditionalDataOneOf4 permata(@javax.annotation.Nonnull Object permata) {
-        
-        this.permata = permata;
-        return this;
-        }
+  public BankTransferAdditionalDataOneOf4 permata(@javax.annotation.Nonnull Object permata) {
+    
+    this.permata = permata;
+    return this;
+  }
 
-    /**
-        * Get permata
-    * @return permata
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_PERMATA)
+  /**
+   * Get permata
+   * @return permata
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_PERMATA)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public Object getPermata() {
-        return permata;
-    }
+  public Object getPermata() {
+    return permata;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_PERMATA)
+  @JsonProperty(JSON_PROPERTY_PERMATA)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setPermata(@javax.annotation.Nonnull Object permata) {
-            this.permata = permata;
-        }
+    this.permata = permata;
+  }
 
-@Override
-public boolean equals(Object o) {
+  @Override
+  public boolean equals(Object o) {
     if (this == o) {
-    return true;
+      return true;
     }
     if (o == null || getClass() != o.getClass()) {
-    return false;
+      return false;
     }
-        BankTransferAdditionalDataOneOf4 bankTransferAdditionalDataOneOf4 = (BankTransferAdditionalDataOneOf4) o;
-        return Objects.equals(this.permata, bankTransferAdditionalDataOneOf4.permata);
-}
+    BankTransferAdditionalDataOneOf4 bankTransferAdditionalDataOneOf4 = (BankTransferAdditionalDataOneOf4) o;
+    return Objects.equals(this.permata, bankTransferAdditionalDataOneOf4.permata);
+  }
 
-    @Override
-    public int hashCode() {
-        return Objects.hash(permata);
-    }
+  @Override
+  public int hashCode() {
+    return Objects.hash(permata);
+  }
 
-    @Override
-    public String toString() {
+  @Override
+  public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class BankTransferAdditionalDataOneOf4 {\n");
-        sb.append("    permata: ").append(toIndentedString(permata)).append("\n");
+    sb.append("    permata: ").append(toIndentedString(permata)).append("\n");
     sb.append("}");
     return sb.toString();
-    }
+  }
 
-    /**
-    * Convert the given object to string with each line indented by 4 spaces
-    * (except the first line).
-    */
-    private String toIndentedString(Object o) {
+  /**
+   * Convert the given object to string with each line indented by 4 spaces
+   * (except the first line).
+   */
+  private String toIndentedString(Object o) {
     if (o == null) {
-    return "null";
+      return "null";
     }
     return o.toString().replace("\n", "\n    ");
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @return URL query string
+   */
+  public String toUrlQueryString() {
+    return toUrlQueryString(null);
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @param prefix prefix of the query string
+   * @return URL query string
+   */
+  public String toUrlQueryString(String prefix) {
+    String suffix = "";
+    String containerSuffix = "";
+    String containerPrefix = "";
+    if (prefix == null) {
+      // style=form, explode=true, e.g. /pet?name=cat&type=manx
+      prefix = "";
+    } else {
+      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+      prefix = prefix + "[";
+      suffix = "]";
+      containerSuffix = "]";
+      containerPrefix = "[";
     }
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @return URL query string
-        */
-        public String toUrlQueryString() {
-        return toUrlQueryString(null);
-        }
+    StringJoiner joiner = new StringJoiner("&");
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @param prefix prefix of the query string
-        * @return URL query string
-        */
-        public String toUrlQueryString(String prefix) {
-        String suffix = "";
-        String containerSuffix = "";
-        String containerPrefix = "";
-        if (prefix == null) {
-        // style=form, explode=true, e.g. /pet?name=cat&type=manx
-        prefix = "";
-        } else {
-        // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
-        prefix = prefix + "[";
-        suffix = "]";
-        containerSuffix = "]";
-        containerPrefix = "[";
-        }
-
-        StringJoiner joiner = new StringJoiner("&");
-
-            // add `permata` to the URL query string
-                        if (getPermata() != null) {
-                        try {
-                        joiner.add(String.format("%spermata%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getPermata()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-        return joiner.toString();
-        }
-
+    // add `permata` to the URL query string
+    if (getPermata() != null) {
+      try {
+        joiner.add(String.format("%spermata%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getPermata()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
     }
+
+    return joiner.toString();
+  }
+
+}
 

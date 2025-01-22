@@ -27,210 +27,210 @@ import java.net.URLEncoder;
 import java.util.StringJoiner;
 
 /**
-* The response body for revoking an API Key.
-*/
-    @JsonPropertyOrder({
-        RevokeApiKeyResponse.JSON_PROPERTY_MERCHANT_ID,
-        RevokeApiKeyResponse.JSON_PROPERTY_KEY_ID,
-        RevokeApiKeyResponse.JSON_PROPERTY_REVOKED
-    })
+ * The response body for revoking an API Key.
+ */
+@JsonPropertyOrder({
+  RevokeApiKeyResponse.JSON_PROPERTY_MERCHANT_ID,
+  RevokeApiKeyResponse.JSON_PROPERTY_KEY_ID,
+  RevokeApiKeyResponse.JSON_PROPERTY_REVOKED
+})
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class RevokeApiKeyResponse {
-        public static final String JSON_PROPERTY_MERCHANT_ID = "merchant_id";
-    @javax.annotation.Nonnull
-            private String merchantId;
+  public static final String JSON_PROPERTY_MERCHANT_ID = "merchant_id";
+  @javax.annotation.Nonnull
+  private String merchantId;
 
-        public static final String JSON_PROPERTY_KEY_ID = "key_id";
-    @javax.annotation.Nonnull
-            private String keyId;
+  public static final String JSON_PROPERTY_KEY_ID = "key_id";
+  @javax.annotation.Nonnull
+  private String keyId;
 
-        public static final String JSON_PROPERTY_REVOKED = "revoked";
-    @javax.annotation.Nonnull
-            private Boolean revoked;
+  public static final String JSON_PROPERTY_REVOKED = "revoked";
+  @javax.annotation.Nonnull
+  private Boolean revoked;
 
-public RevokeApiKeyResponse() {
-}
+  public RevokeApiKeyResponse() {
+  }
 
-        public RevokeApiKeyResponse merchantId(@javax.annotation.Nonnull String merchantId) {
-        
-        this.merchantId = merchantId;
-        return this;
-        }
+  public RevokeApiKeyResponse merchantId(@javax.annotation.Nonnull String merchantId) {
+    
+    this.merchantId = merchantId;
+    return this;
+  }
 
-    /**
-        * The identifier for the Merchant Account.
-    * @return merchantId
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_MERCHANT_ID)
+  /**
+   * The identifier for the Merchant Account.
+   * @return merchantId
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_MERCHANT_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public String getMerchantId() {
-        return merchantId;
-    }
+  public String getMerchantId() {
+    return merchantId;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_MERCHANT_ID)
+  @JsonProperty(JSON_PROPERTY_MERCHANT_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setMerchantId(@javax.annotation.Nonnull String merchantId) {
-            this.merchantId = merchantId;
-        }
+    this.merchantId = merchantId;
+  }
 
-        public RevokeApiKeyResponse keyId(@javax.annotation.Nonnull String keyId) {
-        
-        this.keyId = keyId;
-        return this;
-        }
+  public RevokeApiKeyResponse keyId(@javax.annotation.Nonnull String keyId) {
+    
+    this.keyId = keyId;
+    return this;
+  }
 
-    /**
-        * The identifier for the API Key.
-    * @return keyId
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_KEY_ID)
+  /**
+   * The identifier for the API Key.
+   * @return keyId
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_KEY_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public String getKeyId() {
-        return keyId;
-    }
+  public String getKeyId() {
+    return keyId;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_KEY_ID)
+  @JsonProperty(JSON_PROPERTY_KEY_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setKeyId(@javax.annotation.Nonnull String keyId) {
-            this.keyId = keyId;
-        }
+    this.keyId = keyId;
+  }
 
-        public RevokeApiKeyResponse revoked(@javax.annotation.Nonnull Boolean revoked) {
-        
-        this.revoked = revoked;
-        return this;
-        }
+  public RevokeApiKeyResponse revoked(@javax.annotation.Nonnull Boolean revoked) {
+    
+    this.revoked = revoked;
+    return this;
+  }
 
-    /**
-        * Indicates whether the API key was revoked or not.
-    * @return revoked
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_REVOKED)
+  /**
+   * Indicates whether the API key was revoked or not.
+   * @return revoked
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_REVOKED)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public Boolean getRevoked() {
-        return revoked;
-    }
+  public Boolean getRevoked() {
+    return revoked;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_REVOKED)
+  @JsonProperty(JSON_PROPERTY_REVOKED)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setRevoked(@javax.annotation.Nonnull Boolean revoked) {
-            this.revoked = revoked;
-        }
+    this.revoked = revoked;
+  }
 
-@Override
-public boolean equals(Object o) {
+  @Override
+  public boolean equals(Object o) {
     if (this == o) {
-    return true;
+      return true;
     }
     if (o == null || getClass() != o.getClass()) {
-    return false;
+      return false;
     }
-        RevokeApiKeyResponse revokeApiKeyResponse = (RevokeApiKeyResponse) o;
-        return Objects.equals(this.merchantId, revokeApiKeyResponse.merchantId) &&
+    RevokeApiKeyResponse revokeApiKeyResponse = (RevokeApiKeyResponse) o;
+    return Objects.equals(this.merchantId, revokeApiKeyResponse.merchantId) &&
         Objects.equals(this.keyId, revokeApiKeyResponse.keyId) &&
         Objects.equals(this.revoked, revokeApiKeyResponse.revoked);
-}
+  }
 
-    @Override
-    public int hashCode() {
-        return Objects.hash(merchantId, keyId, revoked);
-    }
+  @Override
+  public int hashCode() {
+    return Objects.hash(merchantId, keyId, revoked);
+  }
 
-    @Override
-    public String toString() {
+  @Override
+  public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class RevokeApiKeyResponse {\n");
-        sb.append("    merchantId: ").append(toIndentedString(merchantId)).append("\n");
-        sb.append("    keyId: ").append(toIndentedString(keyId)).append("\n");
-        sb.append("    revoked: ").append(toIndentedString(revoked)).append("\n");
+    sb.append("    merchantId: ").append(toIndentedString(merchantId)).append("\n");
+    sb.append("    keyId: ").append(toIndentedString(keyId)).append("\n");
+    sb.append("    revoked: ").append(toIndentedString(revoked)).append("\n");
     sb.append("}");
     return sb.toString();
-    }
+  }
 
-    /**
-    * Convert the given object to string with each line indented by 4 spaces
-    * (except the first line).
-    */
-    private String toIndentedString(Object o) {
+  /**
+   * Convert the given object to string with each line indented by 4 spaces
+   * (except the first line).
+   */
+  private String toIndentedString(Object o) {
     if (o == null) {
-    return "null";
+      return "null";
     }
     return o.toString().replace("\n", "\n    ");
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @return URL query string
+   */
+  public String toUrlQueryString() {
+    return toUrlQueryString(null);
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @param prefix prefix of the query string
+   * @return URL query string
+   */
+  public String toUrlQueryString(String prefix) {
+    String suffix = "";
+    String containerSuffix = "";
+    String containerPrefix = "";
+    if (prefix == null) {
+      // style=form, explode=true, e.g. /pet?name=cat&type=manx
+      prefix = "";
+    } else {
+      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+      prefix = prefix + "[";
+      suffix = "]";
+      containerSuffix = "]";
+      containerPrefix = "[";
     }
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @return URL query string
-        */
-        public String toUrlQueryString() {
-        return toUrlQueryString(null);
-        }
+    StringJoiner joiner = new StringJoiner("&");
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @param prefix prefix of the query string
-        * @return URL query string
-        */
-        public String toUrlQueryString(String prefix) {
-        String suffix = "";
-        String containerSuffix = "";
-        String containerPrefix = "";
-        if (prefix == null) {
-        // style=form, explode=true, e.g. /pet?name=cat&type=manx
-        prefix = "";
-        } else {
-        // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
-        prefix = prefix + "[";
-        suffix = "]";
-        containerSuffix = "]";
-        containerPrefix = "[";
-        }
-
-        StringJoiner joiner = new StringJoiner("&");
-
-            // add `merchant_id` to the URL query string
-                        if (getMerchantId() != null) {
-                        try {
-                        joiner.add(String.format("%smerchant_id%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getMerchantId()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-            // add `key_id` to the URL query string
-                        if (getKeyId() != null) {
-                        try {
-                        joiner.add(String.format("%skey_id%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getKeyId()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-            // add `revoked` to the URL query string
-                        if (getRevoked() != null) {
-                        try {
-                        joiner.add(String.format("%srevoked%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getRevoked()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-        return joiner.toString();
-        }
-
+    // add `merchant_id` to the URL query string
+    if (getMerchantId() != null) {
+      try {
+        joiner.add(String.format("%smerchant_id%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getMerchantId()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
     }
+
+    // add `key_id` to the URL query string
+    if (getKeyId() != null) {
+      try {
+        joiner.add(String.format("%skey_id%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getKeyId()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `revoked` to the URL query string
+    if (getRevoked() != null) {
+      try {
+        joiner.add(String.format("%srevoked%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getRevoked()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    return joiner.toString();
+  }
+
+}
 

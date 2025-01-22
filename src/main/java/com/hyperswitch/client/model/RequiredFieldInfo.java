@@ -32,266 +32,266 @@ import java.net.URLEncoder;
 import java.util.StringJoiner;
 
 /**
-* Required fields info used while listing the payment_method_data
-*/
-    @JsonPropertyOrder({
-        RequiredFieldInfo.JSON_PROPERTY_REQUIRED_FIELD,
-        RequiredFieldInfo.JSON_PROPERTY_DISPLAY_NAME,
-        RequiredFieldInfo.JSON_PROPERTY_FIELD_TYPE,
-        RequiredFieldInfo.JSON_PROPERTY_VALUE
-    })
+ * Required fields info used while listing the payment_method_data
+ */
+@JsonPropertyOrder({
+  RequiredFieldInfo.JSON_PROPERTY_REQUIRED_FIELD,
+  RequiredFieldInfo.JSON_PROPERTY_DISPLAY_NAME,
+  RequiredFieldInfo.JSON_PROPERTY_FIELD_TYPE,
+  RequiredFieldInfo.JSON_PROPERTY_VALUE
+})
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class RequiredFieldInfo {
-        public static final String JSON_PROPERTY_REQUIRED_FIELD = "required_field";
-    @javax.annotation.Nonnull
-            private String requiredField;
+  public static final String JSON_PROPERTY_REQUIRED_FIELD = "required_field";
+  @javax.annotation.Nonnull
+  private String requiredField;
 
-        public static final String JSON_PROPERTY_DISPLAY_NAME = "display_name";
-    @javax.annotation.Nonnull
-            private String displayName;
+  public static final String JSON_PROPERTY_DISPLAY_NAME = "display_name";
+  @javax.annotation.Nonnull
+  private String displayName;
 
-        public static final String JSON_PROPERTY_FIELD_TYPE = "field_type";
-    @javax.annotation.Nonnull
-            private FieldType fieldType;
+  public static final String JSON_PROPERTY_FIELD_TYPE = "field_type";
+  @javax.annotation.Nonnull
+  private FieldType fieldType;
 
-        public static final String JSON_PROPERTY_VALUE = "value";
-    @javax.annotation.Nullable
-            private JsonNullable<String> value = JsonNullable.<String>undefined();
+  public static final String JSON_PROPERTY_VALUE = "value";
+  @javax.annotation.Nullable
+  private JsonNullable<String> value = JsonNullable.<String>undefined();
 
-public RequiredFieldInfo() {
-}
+  public RequiredFieldInfo() {
+  }
 
-        public RequiredFieldInfo requiredField(@javax.annotation.Nonnull String requiredField) {
-        
-        this.requiredField = requiredField;
-        return this;
-        }
+  public RequiredFieldInfo requiredField(@javax.annotation.Nonnull String requiredField) {
+    
+    this.requiredField = requiredField;
+    return this;
+  }
 
-    /**
-        * Required field for a payment_method through a payment_method_type
-    * @return requiredField
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_REQUIRED_FIELD)
+  /**
+   * Required field for a payment_method through a payment_method_type
+   * @return requiredField
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_REQUIRED_FIELD)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public String getRequiredField() {
-        return requiredField;
-    }
+  public String getRequiredField() {
+    return requiredField;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_REQUIRED_FIELD)
+  @JsonProperty(JSON_PROPERTY_REQUIRED_FIELD)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setRequiredField(@javax.annotation.Nonnull String requiredField) {
-            this.requiredField = requiredField;
-        }
+    this.requiredField = requiredField;
+  }
 
-        public RequiredFieldInfo displayName(@javax.annotation.Nonnull String displayName) {
-        
-        this.displayName = displayName;
-        return this;
-        }
+  public RequiredFieldInfo displayName(@javax.annotation.Nonnull String displayName) {
+    
+    this.displayName = displayName;
+    return this;
+  }
 
-    /**
-        * Display name of the required field in the front-end
-    * @return displayName
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_DISPLAY_NAME)
+  /**
+   * Display name of the required field in the front-end
+   * @return displayName
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_DISPLAY_NAME)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public String getDisplayName() {
-        return displayName;
-    }
+  public String getDisplayName() {
+    return displayName;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_DISPLAY_NAME)
+  @JsonProperty(JSON_PROPERTY_DISPLAY_NAME)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setDisplayName(@javax.annotation.Nonnull String displayName) {
-            this.displayName = displayName;
-        }
+    this.displayName = displayName;
+  }
 
-        public RequiredFieldInfo fieldType(@javax.annotation.Nonnull FieldType fieldType) {
-        
-        this.fieldType = fieldType;
-        return this;
-        }
+  public RequiredFieldInfo fieldType(@javax.annotation.Nonnull FieldType fieldType) {
+    
+    this.fieldType = fieldType;
+    return this;
+  }
 
-    /**
-        * Get fieldType
-    * @return fieldType
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_FIELD_TYPE)
+  /**
+   * Get fieldType
+   * @return fieldType
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_FIELD_TYPE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public FieldType getFieldType() {
-        return fieldType;
-    }
+  public FieldType getFieldType() {
+    return fieldType;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_FIELD_TYPE)
+  @JsonProperty(JSON_PROPERTY_FIELD_TYPE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setFieldType(@javax.annotation.Nonnull FieldType fieldType) {
-            this.fieldType = fieldType;
-        }
+    this.fieldType = fieldType;
+  }
 
-        public RequiredFieldInfo value(@javax.annotation.Nullable String value) {
-        this.value = JsonNullable.<String>of(value);
-        
-        return this;
-        }
-
-    /**
-        * Get value
-    * @return value
-    */
-    @javax.annotation.Nullable
-        @JsonIgnore
+  public RequiredFieldInfo value(@javax.annotation.Nullable String value) {
+    this.value = JsonNullable.<String>of(value);
     
-    public String getValue() {
-                return value.orElse(null);
-    }
+    return this;
+  }
 
-          @JsonProperty(JSON_PROPERTY_VALUE)
+  /**
+   * Get value
+   * @return value
+   */
+  @javax.annotation.Nullable
+  @JsonIgnore
+
+  public String getValue() {
+        return value.orElse(null);
+  }
+
+  @JsonProperty(JSON_PROPERTY_VALUE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-        public JsonNullable<String> getValue_JsonNullable() {
-        return value;
-        }
-    
-        @JsonProperty(JSON_PROPERTY_VALUE)
-        public void setValue_JsonNullable(JsonNullable<String> value) {
-        this.value = value;
-        }
+  public JsonNullable<String> getValue_JsonNullable() {
+    return value;
+  }
+  
+  @JsonProperty(JSON_PROPERTY_VALUE)
+  public void setValue_JsonNullable(JsonNullable<String> value) {
+    this.value = value;
+  }
 
-          public void setValue(@javax.annotation.Nullable String value) {
-            this.value = JsonNullable.<String>of(value);
-        }
+  public void setValue(@javax.annotation.Nullable String value) {
+    this.value = JsonNullable.<String>of(value);
+  }
 
-@Override
-public boolean equals(Object o) {
+  @Override
+  public boolean equals(Object o) {
     if (this == o) {
-    return true;
+      return true;
     }
     if (o == null || getClass() != o.getClass()) {
-    return false;
+      return false;
     }
-        RequiredFieldInfo requiredFieldInfo = (RequiredFieldInfo) o;
-        return Objects.equals(this.requiredField, requiredFieldInfo.requiredField) &&
+    RequiredFieldInfo requiredFieldInfo = (RequiredFieldInfo) o;
+    return Objects.equals(this.requiredField, requiredFieldInfo.requiredField) &&
         Objects.equals(this.displayName, requiredFieldInfo.displayName) &&
         Objects.equals(this.fieldType, requiredFieldInfo.fieldType) &&
         equalsNullable(this.value, requiredFieldInfo.value);
-}
+  }
 
-    private static <T> boolean equalsNullable(JsonNullable<T> a, JsonNullable<T> b) {
-        return a == b || (a != null && b != null && a.isPresent() && b.isPresent() && Objects.deepEquals(a.get(), b.get()));
-        }
+  private static <T> boolean equalsNullable(JsonNullable<T> a, JsonNullable<T> b) {
+    return a == b || (a != null && b != null && a.isPresent() && b.isPresent() && Objects.deepEquals(a.get(), b.get()));
+  }
 
-    @Override
-    public int hashCode() {
-        return Objects.hash(requiredField, displayName, fieldType, hashCodeNullable(value));
+  @Override
+  public int hashCode() {
+    return Objects.hash(requiredField, displayName, fieldType, hashCodeNullable(value));
+  }
+
+  private static <T> int hashCodeNullable(JsonNullable<T> a) {
+    if (a == null) {
+      return 1;
     }
+    return a.isPresent() ? Arrays.deepHashCode(new Object[]{a.get()}) : 31;
+  }
 
-        private static <T> int hashCodeNullable(JsonNullable<T> a) {
-        if (a == null) {
-        return 1;
-        }
-        return a.isPresent() ? Arrays.deepHashCode(new Object[]{a.get()}) : 31;
-        }
-
-    @Override
-    public String toString() {
+  @Override
+  public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class RequiredFieldInfo {\n");
-        sb.append("    requiredField: ").append(toIndentedString(requiredField)).append("\n");
-        sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-        sb.append("    fieldType: ").append(toIndentedString(fieldType)).append("\n");
-        sb.append("    value: ").append(toIndentedString(value)).append("\n");
+    sb.append("    requiredField: ").append(toIndentedString(requiredField)).append("\n");
+    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
+    sb.append("    fieldType: ").append(toIndentedString(fieldType)).append("\n");
+    sb.append("    value: ").append(toIndentedString(value)).append("\n");
     sb.append("}");
     return sb.toString();
-    }
+  }
 
-    /**
-    * Convert the given object to string with each line indented by 4 spaces
-    * (except the first line).
-    */
-    private String toIndentedString(Object o) {
+  /**
+   * Convert the given object to string with each line indented by 4 spaces
+   * (except the first line).
+   */
+  private String toIndentedString(Object o) {
     if (o == null) {
-    return "null";
+      return "null";
     }
     return o.toString().replace("\n", "\n    ");
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @return URL query string
+   */
+  public String toUrlQueryString() {
+    return toUrlQueryString(null);
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @param prefix prefix of the query string
+   * @return URL query string
+   */
+  public String toUrlQueryString(String prefix) {
+    String suffix = "";
+    String containerSuffix = "";
+    String containerPrefix = "";
+    if (prefix == null) {
+      // style=form, explode=true, e.g. /pet?name=cat&type=manx
+      prefix = "";
+    } else {
+      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+      prefix = prefix + "[";
+      suffix = "]";
+      containerSuffix = "]";
+      containerPrefix = "[";
     }
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @return URL query string
-        */
-        public String toUrlQueryString() {
-        return toUrlQueryString(null);
-        }
+    StringJoiner joiner = new StringJoiner("&");
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @param prefix prefix of the query string
-        * @return URL query string
-        */
-        public String toUrlQueryString(String prefix) {
-        String suffix = "";
-        String containerSuffix = "";
-        String containerPrefix = "";
-        if (prefix == null) {
-        // style=form, explode=true, e.g. /pet?name=cat&type=manx
-        prefix = "";
-        } else {
-        // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
-        prefix = prefix + "[";
-        suffix = "]";
-        containerSuffix = "]";
-        containerPrefix = "[";
-        }
-
-        StringJoiner joiner = new StringJoiner("&");
-
-            // add `required_field` to the URL query string
-                        if (getRequiredField() != null) {
-                        try {
-                        joiner.add(String.format("%srequired_field%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getRequiredField()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-            // add `display_name` to the URL query string
-                        if (getDisplayName() != null) {
-                        try {
-                        joiner.add(String.format("%sdisplay_name%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getDisplayName()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-            // add `field_type` to the URL query string
-                            if (getFieldType() != null) {
-                            joiner.add(getFieldType().toUrlQueryString(prefix + "field_type" + suffix));
-                            }
-
-            // add `value` to the URL query string
-                        if (getValue() != null) {
-                        try {
-                        joiner.add(String.format("%svalue%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getValue()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-        return joiner.toString();
-        }
-
+    // add `required_field` to the URL query string
+    if (getRequiredField() != null) {
+      try {
+        joiner.add(String.format("%srequired_field%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getRequiredField()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
     }
+
+    // add `display_name` to the URL query string
+    if (getDisplayName() != null) {
+      try {
+        joiner.add(String.format("%sdisplay_name%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getDisplayName()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `field_type` to the URL query string
+    if (getFieldType() != null) {
+      joiner.add(getFieldType().toUrlQueryString(prefix + "field_type" + suffix));
+    }
+
+    // add `value` to the URL query string
+    if (getValue() != null) {
+      try {
+        joiner.add(String.format("%svalue%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getValue()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    return joiner.toString();
+  }
+
+}
 

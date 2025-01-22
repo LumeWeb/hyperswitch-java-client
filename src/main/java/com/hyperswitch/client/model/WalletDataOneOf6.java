@@ -27,127 +27,127 @@ import java.net.URLEncoder;
 import java.util.StringJoiner;
 
 /**
-* WalletDataOneOf6
-*/
-    @JsonPropertyOrder({
-        WalletDataOneOf6.JSON_PROPERTY_GCASH_REDIRECT
-    })
-            @JsonTypeName("WalletData_oneOf_6")
+ * WalletDataOneOf6
+ */
+@JsonPropertyOrder({
+  WalletDataOneOf6.JSON_PROPERTY_GCASH_REDIRECT
+})
+@JsonTypeName("WalletData_oneOf_6")
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class WalletDataOneOf6 {
-        public static final String JSON_PROPERTY_GCASH_REDIRECT = "gcash_redirect";
-    @javax.annotation.Nonnull
-            private Object gcashRedirect;
+  public static final String JSON_PROPERTY_GCASH_REDIRECT = "gcash_redirect";
+  @javax.annotation.Nonnull
+  private Object gcashRedirect;
 
-public WalletDataOneOf6() {
-}
+  public WalletDataOneOf6() {
+  }
 
-        public WalletDataOneOf6 gcashRedirect(@javax.annotation.Nonnull Object gcashRedirect) {
-        
-        this.gcashRedirect = gcashRedirect;
-        return this;
-        }
+  public WalletDataOneOf6 gcashRedirect(@javax.annotation.Nonnull Object gcashRedirect) {
+    
+    this.gcashRedirect = gcashRedirect;
+    return this;
+  }
 
-    /**
-        * Get gcashRedirect
-    * @return gcashRedirect
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_GCASH_REDIRECT)
+  /**
+   * Get gcashRedirect
+   * @return gcashRedirect
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_GCASH_REDIRECT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public Object getGcashRedirect() {
-        return gcashRedirect;
-    }
+  public Object getGcashRedirect() {
+    return gcashRedirect;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_GCASH_REDIRECT)
+  @JsonProperty(JSON_PROPERTY_GCASH_REDIRECT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setGcashRedirect(@javax.annotation.Nonnull Object gcashRedirect) {
-            this.gcashRedirect = gcashRedirect;
-        }
+    this.gcashRedirect = gcashRedirect;
+  }
 
-@Override
-public boolean equals(Object o) {
+  @Override
+  public boolean equals(Object o) {
     if (this == o) {
-    return true;
+      return true;
     }
     if (o == null || getClass() != o.getClass()) {
-    return false;
+      return false;
     }
-        WalletDataOneOf6 walletDataOneOf6 = (WalletDataOneOf6) o;
-        return Objects.equals(this.gcashRedirect, walletDataOneOf6.gcashRedirect);
-}
+    WalletDataOneOf6 walletDataOneOf6 = (WalletDataOneOf6) o;
+    return Objects.equals(this.gcashRedirect, walletDataOneOf6.gcashRedirect);
+  }
 
-    @Override
-    public int hashCode() {
-        return Objects.hash(gcashRedirect);
-    }
+  @Override
+  public int hashCode() {
+    return Objects.hash(gcashRedirect);
+  }
 
-    @Override
-    public String toString() {
+  @Override
+  public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class WalletDataOneOf6 {\n");
-        sb.append("    gcashRedirect: ").append(toIndentedString(gcashRedirect)).append("\n");
+    sb.append("    gcashRedirect: ").append(toIndentedString(gcashRedirect)).append("\n");
     sb.append("}");
     return sb.toString();
-    }
+  }
 
-    /**
-    * Convert the given object to string with each line indented by 4 spaces
-    * (except the first line).
-    */
-    private String toIndentedString(Object o) {
+  /**
+   * Convert the given object to string with each line indented by 4 spaces
+   * (except the first line).
+   */
+  private String toIndentedString(Object o) {
     if (o == null) {
-    return "null";
+      return "null";
     }
     return o.toString().replace("\n", "\n    ");
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @return URL query string
+   */
+  public String toUrlQueryString() {
+    return toUrlQueryString(null);
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @param prefix prefix of the query string
+   * @return URL query string
+   */
+  public String toUrlQueryString(String prefix) {
+    String suffix = "";
+    String containerSuffix = "";
+    String containerPrefix = "";
+    if (prefix == null) {
+      // style=form, explode=true, e.g. /pet?name=cat&type=manx
+      prefix = "";
+    } else {
+      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+      prefix = prefix + "[";
+      suffix = "]";
+      containerSuffix = "]";
+      containerPrefix = "[";
     }
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @return URL query string
-        */
-        public String toUrlQueryString() {
-        return toUrlQueryString(null);
-        }
+    StringJoiner joiner = new StringJoiner("&");
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @param prefix prefix of the query string
-        * @return URL query string
-        */
-        public String toUrlQueryString(String prefix) {
-        String suffix = "";
-        String containerSuffix = "";
-        String containerPrefix = "";
-        if (prefix == null) {
-        // style=form, explode=true, e.g. /pet?name=cat&type=manx
-        prefix = "";
-        } else {
-        // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
-        prefix = prefix + "[";
-        suffix = "]";
-        containerSuffix = "]";
-        containerPrefix = "[";
-        }
-
-        StringJoiner joiner = new StringJoiner("&");
-
-            // add `gcash_redirect` to the URL query string
-                        if (getGcashRedirect() != null) {
-                        try {
-                        joiner.add(String.format("%sgcash_redirect%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getGcashRedirect()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-        return joiner.toString();
-        }
-
+    // add `gcash_redirect` to the URL query string
+    if (getGcashRedirect() != null) {
+      try {
+        joiner.add(String.format("%sgcash_redirect%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getGcashRedirect()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
     }
+
+    return joiner.toString();
+  }
+
+}
 

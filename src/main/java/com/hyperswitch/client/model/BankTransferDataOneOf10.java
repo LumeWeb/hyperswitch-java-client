@@ -28,122 +28,122 @@ import java.net.URLEncoder;
 import java.util.StringJoiner;
 
 /**
-* BankTransferDataOneOf10
-*/
-    @JsonPropertyOrder({
-        BankTransferDataOneOf10.JSON_PROPERTY_MANDIRI_VA_BANK_TRANSFER
-    })
-            @JsonTypeName("BankTransferData_oneOf_10")
+ * BankTransferDataOneOf10
+ */
+@JsonPropertyOrder({
+  BankTransferDataOneOf10.JSON_PROPERTY_MANDIRI_VA_BANK_TRANSFER
+})
+@JsonTypeName("BankTransferData_oneOf_10")
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class BankTransferDataOneOf10 {
-        public static final String JSON_PROPERTY_MANDIRI_VA_BANK_TRANSFER = "mandiri_va_bank_transfer";
-    @javax.annotation.Nonnull
-            private BankTransferDataOneOf4PermataBankTransfer mandiriVaBankTransfer;
+  public static final String JSON_PROPERTY_MANDIRI_VA_BANK_TRANSFER = "mandiri_va_bank_transfer";
+  @javax.annotation.Nonnull
+  private BankTransferDataOneOf4PermataBankTransfer mandiriVaBankTransfer;
 
-public BankTransferDataOneOf10() {
-}
+  public BankTransferDataOneOf10() {
+  }
 
-        public BankTransferDataOneOf10 mandiriVaBankTransfer(@javax.annotation.Nonnull BankTransferDataOneOf4PermataBankTransfer mandiriVaBankTransfer) {
-        
-        this.mandiriVaBankTransfer = mandiriVaBankTransfer;
-        return this;
-        }
+  public BankTransferDataOneOf10 mandiriVaBankTransfer(@javax.annotation.Nonnull BankTransferDataOneOf4PermataBankTransfer mandiriVaBankTransfer) {
+    
+    this.mandiriVaBankTransfer = mandiriVaBankTransfer;
+    return this;
+  }
 
-    /**
-        * Get mandiriVaBankTransfer
-    * @return mandiriVaBankTransfer
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_MANDIRI_VA_BANK_TRANSFER)
+  /**
+   * Get mandiriVaBankTransfer
+   * @return mandiriVaBankTransfer
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_MANDIRI_VA_BANK_TRANSFER)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public BankTransferDataOneOf4PermataBankTransfer getMandiriVaBankTransfer() {
-        return mandiriVaBankTransfer;
-    }
+  public BankTransferDataOneOf4PermataBankTransfer getMandiriVaBankTransfer() {
+    return mandiriVaBankTransfer;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_MANDIRI_VA_BANK_TRANSFER)
+  @JsonProperty(JSON_PROPERTY_MANDIRI_VA_BANK_TRANSFER)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setMandiriVaBankTransfer(@javax.annotation.Nonnull BankTransferDataOneOf4PermataBankTransfer mandiriVaBankTransfer) {
-            this.mandiriVaBankTransfer = mandiriVaBankTransfer;
-        }
+    this.mandiriVaBankTransfer = mandiriVaBankTransfer;
+  }
 
-@Override
-public boolean equals(Object o) {
+  @Override
+  public boolean equals(Object o) {
     if (this == o) {
-    return true;
+      return true;
     }
     if (o == null || getClass() != o.getClass()) {
-    return false;
+      return false;
     }
-        BankTransferDataOneOf10 bankTransferDataOneOf10 = (BankTransferDataOneOf10) o;
-        return Objects.equals(this.mandiriVaBankTransfer, bankTransferDataOneOf10.mandiriVaBankTransfer);
-}
+    BankTransferDataOneOf10 bankTransferDataOneOf10 = (BankTransferDataOneOf10) o;
+    return Objects.equals(this.mandiriVaBankTransfer, bankTransferDataOneOf10.mandiriVaBankTransfer);
+  }
 
-    @Override
-    public int hashCode() {
-        return Objects.hash(mandiriVaBankTransfer);
-    }
+  @Override
+  public int hashCode() {
+    return Objects.hash(mandiriVaBankTransfer);
+  }
 
-    @Override
-    public String toString() {
+  @Override
+  public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class BankTransferDataOneOf10 {\n");
-        sb.append("    mandiriVaBankTransfer: ").append(toIndentedString(mandiriVaBankTransfer)).append("\n");
+    sb.append("    mandiriVaBankTransfer: ").append(toIndentedString(mandiriVaBankTransfer)).append("\n");
     sb.append("}");
     return sb.toString();
-    }
+  }
 
-    /**
-    * Convert the given object to string with each line indented by 4 spaces
-    * (except the first line).
-    */
-    private String toIndentedString(Object o) {
+  /**
+   * Convert the given object to string with each line indented by 4 spaces
+   * (except the first line).
+   */
+  private String toIndentedString(Object o) {
     if (o == null) {
-    return "null";
+      return "null";
     }
     return o.toString().replace("\n", "\n    ");
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @return URL query string
+   */
+  public String toUrlQueryString() {
+    return toUrlQueryString(null);
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @param prefix prefix of the query string
+   * @return URL query string
+   */
+  public String toUrlQueryString(String prefix) {
+    String suffix = "";
+    String containerSuffix = "";
+    String containerPrefix = "";
+    if (prefix == null) {
+      // style=form, explode=true, e.g. /pet?name=cat&type=manx
+      prefix = "";
+    } else {
+      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+      prefix = prefix + "[";
+      suffix = "]";
+      containerSuffix = "]";
+      containerPrefix = "[";
     }
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @return URL query string
-        */
-        public String toUrlQueryString() {
-        return toUrlQueryString(null);
-        }
+    StringJoiner joiner = new StringJoiner("&");
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @param prefix prefix of the query string
-        * @return URL query string
-        */
-        public String toUrlQueryString(String prefix) {
-        String suffix = "";
-        String containerSuffix = "";
-        String containerPrefix = "";
-        if (prefix == null) {
-        // style=form, explode=true, e.g. /pet?name=cat&type=manx
-        prefix = "";
-        } else {
-        // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
-        prefix = prefix + "[";
-        suffix = "]";
-        containerSuffix = "]";
-        containerPrefix = "[";
-        }
-
-        StringJoiner joiner = new StringJoiner("&");
-
-            // add `mandiri_va_bank_transfer` to the URL query string
-                            if (getMandiriVaBankTransfer() != null) {
-                            joiner.add(getMandiriVaBankTransfer().toUrlQueryString(prefix + "mandiri_va_bank_transfer" + suffix));
-                            }
-
-        return joiner.toString();
-        }
-
+    // add `mandiri_va_bank_transfer` to the URL query string
+    if (getMandiriVaBankTransfer() != null) {
+      joiner.add(getMandiriVaBankTransfer().toUrlQueryString(prefix + "mandiri_va_bank_transfer" + suffix));
     }
+
+    return joiner.toString();
+  }
+
+}
 

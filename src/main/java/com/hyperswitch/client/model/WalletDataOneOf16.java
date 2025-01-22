@@ -28,122 +28,122 @@ import java.net.URLEncoder;
 import java.util.StringJoiner;
 
 /**
-* WalletDataOneOf16
-*/
-    @JsonPropertyOrder({
-        WalletDataOneOf16.JSON_PROPERTY_PAYPAL_REDIRECT
-    })
-            @JsonTypeName("WalletData_oneOf_16")
+ * WalletDataOneOf16
+ */
+@JsonPropertyOrder({
+  WalletDataOneOf16.JSON_PROPERTY_PAYPAL_REDIRECT
+})
+@JsonTypeName("WalletData_oneOf_16")
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class WalletDataOneOf16 {
-        public static final String JSON_PROPERTY_PAYPAL_REDIRECT = "paypal_redirect";
-    @javax.annotation.Nonnull
-            private PaypalRedirection paypalRedirect;
+  public static final String JSON_PROPERTY_PAYPAL_REDIRECT = "paypal_redirect";
+  @javax.annotation.Nonnull
+  private PaypalRedirection paypalRedirect;
 
-public WalletDataOneOf16() {
-}
+  public WalletDataOneOf16() {
+  }
 
-        public WalletDataOneOf16 paypalRedirect(@javax.annotation.Nonnull PaypalRedirection paypalRedirect) {
-        
-        this.paypalRedirect = paypalRedirect;
-        return this;
-        }
+  public WalletDataOneOf16 paypalRedirect(@javax.annotation.Nonnull PaypalRedirection paypalRedirect) {
+    
+    this.paypalRedirect = paypalRedirect;
+    return this;
+  }
 
-    /**
-        * Get paypalRedirect
-    * @return paypalRedirect
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_PAYPAL_REDIRECT)
+  /**
+   * Get paypalRedirect
+   * @return paypalRedirect
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_PAYPAL_REDIRECT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public PaypalRedirection getPaypalRedirect() {
-        return paypalRedirect;
-    }
+  public PaypalRedirection getPaypalRedirect() {
+    return paypalRedirect;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_PAYPAL_REDIRECT)
+  @JsonProperty(JSON_PROPERTY_PAYPAL_REDIRECT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setPaypalRedirect(@javax.annotation.Nonnull PaypalRedirection paypalRedirect) {
-            this.paypalRedirect = paypalRedirect;
-        }
+    this.paypalRedirect = paypalRedirect;
+  }
 
-@Override
-public boolean equals(Object o) {
+  @Override
+  public boolean equals(Object o) {
     if (this == o) {
-    return true;
+      return true;
     }
     if (o == null || getClass() != o.getClass()) {
-    return false;
+      return false;
     }
-        WalletDataOneOf16 walletDataOneOf16 = (WalletDataOneOf16) o;
-        return Objects.equals(this.paypalRedirect, walletDataOneOf16.paypalRedirect);
-}
+    WalletDataOneOf16 walletDataOneOf16 = (WalletDataOneOf16) o;
+    return Objects.equals(this.paypalRedirect, walletDataOneOf16.paypalRedirect);
+  }
 
-    @Override
-    public int hashCode() {
-        return Objects.hash(paypalRedirect);
-    }
+  @Override
+  public int hashCode() {
+    return Objects.hash(paypalRedirect);
+  }
 
-    @Override
-    public String toString() {
+  @Override
+  public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class WalletDataOneOf16 {\n");
-        sb.append("    paypalRedirect: ").append(toIndentedString(paypalRedirect)).append("\n");
+    sb.append("    paypalRedirect: ").append(toIndentedString(paypalRedirect)).append("\n");
     sb.append("}");
     return sb.toString();
-    }
+  }
 
-    /**
-    * Convert the given object to string with each line indented by 4 spaces
-    * (except the first line).
-    */
-    private String toIndentedString(Object o) {
+  /**
+   * Convert the given object to string with each line indented by 4 spaces
+   * (except the first line).
+   */
+  private String toIndentedString(Object o) {
     if (o == null) {
-    return "null";
+      return "null";
     }
     return o.toString().replace("\n", "\n    ");
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @return URL query string
+   */
+  public String toUrlQueryString() {
+    return toUrlQueryString(null);
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @param prefix prefix of the query string
+   * @return URL query string
+   */
+  public String toUrlQueryString(String prefix) {
+    String suffix = "";
+    String containerSuffix = "";
+    String containerPrefix = "";
+    if (prefix == null) {
+      // style=form, explode=true, e.g. /pet?name=cat&type=manx
+      prefix = "";
+    } else {
+      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+      prefix = prefix + "[";
+      suffix = "]";
+      containerSuffix = "]";
+      containerPrefix = "[";
     }
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @return URL query string
-        */
-        public String toUrlQueryString() {
-        return toUrlQueryString(null);
-        }
+    StringJoiner joiner = new StringJoiner("&");
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @param prefix prefix of the query string
-        * @return URL query string
-        */
-        public String toUrlQueryString(String prefix) {
-        String suffix = "";
-        String containerSuffix = "";
-        String containerPrefix = "";
-        if (prefix == null) {
-        // style=form, explode=true, e.g. /pet?name=cat&type=manx
-        prefix = "";
-        } else {
-        // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
-        prefix = prefix + "[";
-        suffix = "]";
-        containerSuffix = "]";
-        containerPrefix = "[";
-        }
-
-        StringJoiner joiner = new StringJoiner("&");
-
-            // add `paypal_redirect` to the URL query string
-                            if (getPaypalRedirect() != null) {
-                            joiner.add(getPaypalRedirect().toUrlQueryString(prefix + "paypal_redirect" + suffix));
-                            }
-
-        return joiner.toString();
-        }
-
+    // add `paypal_redirect` to the URL query string
+    if (getPaypalRedirect() != null) {
+      joiner.add(getPaypalRedirect().toUrlQueryString(prefix + "paypal_redirect" + suffix));
     }
+
+    return joiner.toString();
+  }
+
+}
 

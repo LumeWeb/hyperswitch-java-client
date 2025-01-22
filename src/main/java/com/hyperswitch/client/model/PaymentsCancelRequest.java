@@ -32,190 +32,190 @@ import java.net.URLEncoder;
 import java.util.StringJoiner;
 
 /**
-* PaymentsCancelRequest
-*/
-    @JsonPropertyOrder({
-        PaymentsCancelRequest.JSON_PROPERTY_CANCELLATION_REASON,
-        PaymentsCancelRequest.JSON_PROPERTY_MERCHANT_CONNECTOR_DETAILS
-    })
+ * PaymentsCancelRequest
+ */
+@JsonPropertyOrder({
+  PaymentsCancelRequest.JSON_PROPERTY_CANCELLATION_REASON,
+  PaymentsCancelRequest.JSON_PROPERTY_MERCHANT_CONNECTOR_DETAILS
+})
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class PaymentsCancelRequest {
-        public static final String JSON_PROPERTY_CANCELLATION_REASON = "cancellation_reason";
-    @javax.annotation.Nullable
-            private JsonNullable<String> cancellationReason = JsonNullable.<String>undefined();
+  public static final String JSON_PROPERTY_CANCELLATION_REASON = "cancellation_reason";
+  @javax.annotation.Nullable
+  private JsonNullable<String> cancellationReason = JsonNullable.<String>undefined();
 
-        public static final String JSON_PROPERTY_MERCHANT_CONNECTOR_DETAILS = "merchant_connector_details";
-    @javax.annotation.Nullable
-            private JsonNullable<MerchantConnectorDetailsWrap> merchantConnectorDetails = JsonNullable.<MerchantConnectorDetailsWrap>undefined();
+  public static final String JSON_PROPERTY_MERCHANT_CONNECTOR_DETAILS = "merchant_connector_details";
+  @javax.annotation.Nullable
+  private JsonNullable<MerchantConnectorDetailsWrap> merchantConnectorDetails = JsonNullable.<MerchantConnectorDetailsWrap>undefined();
 
-public PaymentsCancelRequest() {
-}
+  public PaymentsCancelRequest() {
+  }
 
-        public PaymentsCancelRequest cancellationReason(@javax.annotation.Nullable String cancellationReason) {
-        this.cancellationReason = JsonNullable.<String>of(cancellationReason);
-        
-        return this;
-        }
-
-    /**
-        * The reason for the payment cancel
-    * @return cancellationReason
-    */
-    @javax.annotation.Nullable
-        @JsonIgnore
+  public PaymentsCancelRequest cancellationReason(@javax.annotation.Nullable String cancellationReason) {
+    this.cancellationReason = JsonNullable.<String>of(cancellationReason);
     
-    public String getCancellationReason() {
-                return cancellationReason.orElse(null);
-    }
+    return this;
+  }
 
-          @JsonProperty(JSON_PROPERTY_CANCELLATION_REASON)
+  /**
+   * The reason for the payment cancel
+   * @return cancellationReason
+   */
+  @javax.annotation.Nullable
+  @JsonIgnore
+
+  public String getCancellationReason() {
+        return cancellationReason.orElse(null);
+  }
+
+  @JsonProperty(JSON_PROPERTY_CANCELLATION_REASON)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-        public JsonNullable<String> getCancellationReason_JsonNullable() {
-        return cancellationReason;
-        }
+  public JsonNullable<String> getCancellationReason_JsonNullable() {
+    return cancellationReason;
+  }
+  
+  @JsonProperty(JSON_PROPERTY_CANCELLATION_REASON)
+  public void setCancellationReason_JsonNullable(JsonNullable<String> cancellationReason) {
+    this.cancellationReason = cancellationReason;
+  }
+
+  public void setCancellationReason(@javax.annotation.Nullable String cancellationReason) {
+    this.cancellationReason = JsonNullable.<String>of(cancellationReason);
+  }
+
+  public PaymentsCancelRequest merchantConnectorDetails(@javax.annotation.Nullable MerchantConnectorDetailsWrap merchantConnectorDetails) {
+    this.merchantConnectorDetails = JsonNullable.<MerchantConnectorDetailsWrap>of(merchantConnectorDetails);
     
-        @JsonProperty(JSON_PROPERTY_CANCELLATION_REASON)
-        public void setCancellationReason_JsonNullable(JsonNullable<String> cancellationReason) {
-        this.cancellationReason = cancellationReason;
-        }
+    return this;
+  }
 
-          public void setCancellationReason(@javax.annotation.Nullable String cancellationReason) {
-            this.cancellationReason = JsonNullable.<String>of(cancellationReason);
-        }
+  /**
+   * Get merchantConnectorDetails
+   * @return merchantConnectorDetails
+   */
+  @javax.annotation.Nullable
+  @JsonIgnore
 
-        public PaymentsCancelRequest merchantConnectorDetails(@javax.annotation.Nullable MerchantConnectorDetailsWrap merchantConnectorDetails) {
-        this.merchantConnectorDetails = JsonNullable.<MerchantConnectorDetailsWrap>of(merchantConnectorDetails);
-        
-        return this;
-        }
+  public MerchantConnectorDetailsWrap getMerchantConnectorDetails() {
+        return merchantConnectorDetails.orElse(null);
+  }
 
-    /**
-        * Get merchantConnectorDetails
-    * @return merchantConnectorDetails
-    */
-    @javax.annotation.Nullable
-        @JsonIgnore
-    
-    public MerchantConnectorDetailsWrap getMerchantConnectorDetails() {
-                return merchantConnectorDetails.orElse(null);
-    }
-
-          @JsonProperty(JSON_PROPERTY_MERCHANT_CONNECTOR_DETAILS)
+  @JsonProperty(JSON_PROPERTY_MERCHANT_CONNECTOR_DETAILS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-        public JsonNullable<MerchantConnectorDetailsWrap> getMerchantConnectorDetails_JsonNullable() {
-        return merchantConnectorDetails;
-        }
-    
-        @JsonProperty(JSON_PROPERTY_MERCHANT_CONNECTOR_DETAILS)
-        public void setMerchantConnectorDetails_JsonNullable(JsonNullable<MerchantConnectorDetailsWrap> merchantConnectorDetails) {
-        this.merchantConnectorDetails = merchantConnectorDetails;
-        }
+  public JsonNullable<MerchantConnectorDetailsWrap> getMerchantConnectorDetails_JsonNullable() {
+    return merchantConnectorDetails;
+  }
+  
+  @JsonProperty(JSON_PROPERTY_MERCHANT_CONNECTOR_DETAILS)
+  public void setMerchantConnectorDetails_JsonNullable(JsonNullable<MerchantConnectorDetailsWrap> merchantConnectorDetails) {
+    this.merchantConnectorDetails = merchantConnectorDetails;
+  }
 
-          public void setMerchantConnectorDetails(@javax.annotation.Nullable MerchantConnectorDetailsWrap merchantConnectorDetails) {
-            this.merchantConnectorDetails = JsonNullable.<MerchantConnectorDetailsWrap>of(merchantConnectorDetails);
-        }
+  public void setMerchantConnectorDetails(@javax.annotation.Nullable MerchantConnectorDetailsWrap merchantConnectorDetails) {
+    this.merchantConnectorDetails = JsonNullable.<MerchantConnectorDetailsWrap>of(merchantConnectorDetails);
+  }
 
-@Override
-public boolean equals(Object o) {
+  @Override
+  public boolean equals(Object o) {
     if (this == o) {
-    return true;
+      return true;
     }
     if (o == null || getClass() != o.getClass()) {
-    return false;
+      return false;
     }
-        PaymentsCancelRequest paymentsCancelRequest = (PaymentsCancelRequest) o;
-        return equalsNullable(this.cancellationReason, paymentsCancelRequest.cancellationReason) &&
+    PaymentsCancelRequest paymentsCancelRequest = (PaymentsCancelRequest) o;
+    return equalsNullable(this.cancellationReason, paymentsCancelRequest.cancellationReason) &&
         equalsNullable(this.merchantConnectorDetails, paymentsCancelRequest.merchantConnectorDetails);
-}
+  }
 
-    private static <T> boolean equalsNullable(JsonNullable<T> a, JsonNullable<T> b) {
-        return a == b || (a != null && b != null && a.isPresent() && b.isPresent() && Objects.deepEquals(a.get(), b.get()));
-        }
+  private static <T> boolean equalsNullable(JsonNullable<T> a, JsonNullable<T> b) {
+    return a == b || (a != null && b != null && a.isPresent() && b.isPresent() && Objects.deepEquals(a.get(), b.get()));
+  }
 
-    @Override
-    public int hashCode() {
-        return Objects.hash(hashCodeNullable(cancellationReason), hashCodeNullable(merchantConnectorDetails));
+  @Override
+  public int hashCode() {
+    return Objects.hash(hashCodeNullable(cancellationReason), hashCodeNullable(merchantConnectorDetails));
+  }
+
+  private static <T> int hashCodeNullable(JsonNullable<T> a) {
+    if (a == null) {
+      return 1;
     }
+    return a.isPresent() ? Arrays.deepHashCode(new Object[]{a.get()}) : 31;
+  }
 
-        private static <T> int hashCodeNullable(JsonNullable<T> a) {
-        if (a == null) {
-        return 1;
-        }
-        return a.isPresent() ? Arrays.deepHashCode(new Object[]{a.get()}) : 31;
-        }
-
-    @Override
-    public String toString() {
+  @Override
+  public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class PaymentsCancelRequest {\n");
-        sb.append("    cancellationReason: ").append(toIndentedString(cancellationReason)).append("\n");
-        sb.append("    merchantConnectorDetails: ").append(toIndentedString(merchantConnectorDetails)).append("\n");
+    sb.append("    cancellationReason: ").append(toIndentedString(cancellationReason)).append("\n");
+    sb.append("    merchantConnectorDetails: ").append(toIndentedString(merchantConnectorDetails)).append("\n");
     sb.append("}");
     return sb.toString();
-    }
+  }
 
-    /**
-    * Convert the given object to string with each line indented by 4 spaces
-    * (except the first line).
-    */
-    private String toIndentedString(Object o) {
+  /**
+   * Convert the given object to string with each line indented by 4 spaces
+   * (except the first line).
+   */
+  private String toIndentedString(Object o) {
     if (o == null) {
-    return "null";
+      return "null";
     }
     return o.toString().replace("\n", "\n    ");
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @return URL query string
+   */
+  public String toUrlQueryString() {
+    return toUrlQueryString(null);
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @param prefix prefix of the query string
+   * @return URL query string
+   */
+  public String toUrlQueryString(String prefix) {
+    String suffix = "";
+    String containerSuffix = "";
+    String containerPrefix = "";
+    if (prefix == null) {
+      // style=form, explode=true, e.g. /pet?name=cat&type=manx
+      prefix = "";
+    } else {
+      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+      prefix = prefix + "[";
+      suffix = "]";
+      containerSuffix = "]";
+      containerPrefix = "[";
     }
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @return URL query string
-        */
-        public String toUrlQueryString() {
-        return toUrlQueryString(null);
-        }
+    StringJoiner joiner = new StringJoiner("&");
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @param prefix prefix of the query string
-        * @return URL query string
-        */
-        public String toUrlQueryString(String prefix) {
-        String suffix = "";
-        String containerSuffix = "";
-        String containerPrefix = "";
-        if (prefix == null) {
-        // style=form, explode=true, e.g. /pet?name=cat&type=manx
-        prefix = "";
-        } else {
-        // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
-        prefix = prefix + "[";
-        suffix = "]";
-        containerSuffix = "]";
-        containerPrefix = "[";
-        }
-
-        StringJoiner joiner = new StringJoiner("&");
-
-            // add `cancellation_reason` to the URL query string
-                        if (getCancellationReason() != null) {
-                        try {
-                        joiner.add(String.format("%scancellation_reason%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCancellationReason()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-            // add `merchant_connector_details` to the URL query string
-                            if (getMerchantConnectorDetails() != null) {
-                            joiner.add(getMerchantConnectorDetails().toUrlQueryString(prefix + "merchant_connector_details" + suffix));
-                            }
-
-        return joiner.toString();
-        }
-
+    // add `cancellation_reason` to the URL query string
+    if (getCancellationReason() != null) {
+      try {
+        joiner.add(String.format("%scancellation_reason%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCancellationReason()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
     }
+
+    // add `merchant_connector_details` to the URL query string
+    if (getMerchantConnectorDetails() != null) {
+      joiner.add(getMerchantConnectorDetails().toUrlQueryString(prefix + "merchant_connector_details" + suffix));
+    }
+
+    return joiner.toString();
+  }
+
+}
 

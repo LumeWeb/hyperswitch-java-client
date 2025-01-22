@@ -27,210 +27,210 @@ import java.net.URLEncoder;
 import java.util.StringJoiner;
 
 /**
-* WalletAdditionalDataForCard
-*/
-    @JsonPropertyOrder({
-        WalletAdditionalDataForCard.JSON_PROPERTY_LAST4,
-        WalletAdditionalDataForCard.JSON_PROPERTY_CARD_NETWORK,
-        WalletAdditionalDataForCard.JSON_PROPERTY_TYPE
-    })
+ * WalletAdditionalDataForCard
+ */
+@JsonPropertyOrder({
+  WalletAdditionalDataForCard.JSON_PROPERTY_LAST4,
+  WalletAdditionalDataForCard.JSON_PROPERTY_CARD_NETWORK,
+  WalletAdditionalDataForCard.JSON_PROPERTY_TYPE
+})
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class WalletAdditionalDataForCard {
-        public static final String JSON_PROPERTY_LAST4 = "last4";
-    @javax.annotation.Nonnull
-            private String last4;
+  public static final String JSON_PROPERTY_LAST4 = "last4";
+  @javax.annotation.Nonnull
+  private String last4;
 
-        public static final String JSON_PROPERTY_CARD_NETWORK = "card_network";
-    @javax.annotation.Nonnull
-            private String cardNetwork;
+  public static final String JSON_PROPERTY_CARD_NETWORK = "card_network";
+  @javax.annotation.Nonnull
+  private String cardNetwork;
 
-        public static final String JSON_PROPERTY_TYPE = "type";
-    @javax.annotation.Nonnull
-            private String type;
+  public static final String JSON_PROPERTY_TYPE = "type";
+  @javax.annotation.Nonnull
+  private String type;
 
-public WalletAdditionalDataForCard() {
-}
+  public WalletAdditionalDataForCard() {
+  }
 
-        public WalletAdditionalDataForCard last4(@javax.annotation.Nonnull String last4) {
-        
-        this.last4 = last4;
-        return this;
-        }
+  public WalletAdditionalDataForCard last4(@javax.annotation.Nonnull String last4) {
+    
+    this.last4 = last4;
+    return this;
+  }
 
-    /**
-        * Last 4 digits of the card number
-    * @return last4
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_LAST4)
+  /**
+   * Last 4 digits of the card number
+   * @return last4
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_LAST4)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public String getLast4() {
-        return last4;
-    }
+  public String getLast4() {
+    return last4;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_LAST4)
+  @JsonProperty(JSON_PROPERTY_LAST4)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setLast4(@javax.annotation.Nonnull String last4) {
-            this.last4 = last4;
-        }
+    this.last4 = last4;
+  }
 
-        public WalletAdditionalDataForCard cardNetwork(@javax.annotation.Nonnull String cardNetwork) {
-        
-        this.cardNetwork = cardNetwork;
-        return this;
-        }
+  public WalletAdditionalDataForCard cardNetwork(@javax.annotation.Nonnull String cardNetwork) {
+    
+    this.cardNetwork = cardNetwork;
+    return this;
+  }
 
-    /**
-        * The information of the payment method
-    * @return cardNetwork
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_CARD_NETWORK)
+  /**
+   * The information of the payment method
+   * @return cardNetwork
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_CARD_NETWORK)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public String getCardNetwork() {
-        return cardNetwork;
-    }
+  public String getCardNetwork() {
+    return cardNetwork;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_CARD_NETWORK)
+  @JsonProperty(JSON_PROPERTY_CARD_NETWORK)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setCardNetwork(@javax.annotation.Nonnull String cardNetwork) {
-            this.cardNetwork = cardNetwork;
-        }
+    this.cardNetwork = cardNetwork;
+  }
 
-        public WalletAdditionalDataForCard type(@javax.annotation.Nonnull String type) {
-        
-        this.type = type;
-        return this;
-        }
+  public WalletAdditionalDataForCard type(@javax.annotation.Nonnull String type) {
+    
+    this.type = type;
+    return this;
+  }
 
-    /**
-        * The type of payment method
-    * @return type
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_TYPE)
+  /**
+   * The type of payment method
+   * @return type
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_TYPE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public String getType() {
-        return type;
-    }
+  public String getType() {
+    return type;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_TYPE)
+  @JsonProperty(JSON_PROPERTY_TYPE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setType(@javax.annotation.Nonnull String type) {
-            this.type = type;
-        }
+    this.type = type;
+  }
 
-@Override
-public boolean equals(Object o) {
+  @Override
+  public boolean equals(Object o) {
     if (this == o) {
-    return true;
+      return true;
     }
     if (o == null || getClass() != o.getClass()) {
-    return false;
+      return false;
     }
-        WalletAdditionalDataForCard walletAdditionalDataForCard = (WalletAdditionalDataForCard) o;
-        return Objects.equals(this.last4, walletAdditionalDataForCard.last4) &&
+    WalletAdditionalDataForCard walletAdditionalDataForCard = (WalletAdditionalDataForCard) o;
+    return Objects.equals(this.last4, walletAdditionalDataForCard.last4) &&
         Objects.equals(this.cardNetwork, walletAdditionalDataForCard.cardNetwork) &&
         Objects.equals(this.type, walletAdditionalDataForCard.type);
-}
+  }
 
-    @Override
-    public int hashCode() {
-        return Objects.hash(last4, cardNetwork, type);
-    }
+  @Override
+  public int hashCode() {
+    return Objects.hash(last4, cardNetwork, type);
+  }
 
-    @Override
-    public String toString() {
+  @Override
+  public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class WalletAdditionalDataForCard {\n");
-        sb.append("    last4: ").append(toIndentedString(last4)).append("\n");
-        sb.append("    cardNetwork: ").append(toIndentedString(cardNetwork)).append("\n");
-        sb.append("    type: ").append(toIndentedString(type)).append("\n");
+    sb.append("    last4: ").append(toIndentedString(last4)).append("\n");
+    sb.append("    cardNetwork: ").append(toIndentedString(cardNetwork)).append("\n");
+    sb.append("    type: ").append(toIndentedString(type)).append("\n");
     sb.append("}");
     return sb.toString();
-    }
+  }
 
-    /**
-    * Convert the given object to string with each line indented by 4 spaces
-    * (except the first line).
-    */
-    private String toIndentedString(Object o) {
+  /**
+   * Convert the given object to string with each line indented by 4 spaces
+   * (except the first line).
+   */
+  private String toIndentedString(Object o) {
     if (o == null) {
-    return "null";
+      return "null";
     }
     return o.toString().replace("\n", "\n    ");
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @return URL query string
+   */
+  public String toUrlQueryString() {
+    return toUrlQueryString(null);
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @param prefix prefix of the query string
+   * @return URL query string
+   */
+  public String toUrlQueryString(String prefix) {
+    String suffix = "";
+    String containerSuffix = "";
+    String containerPrefix = "";
+    if (prefix == null) {
+      // style=form, explode=true, e.g. /pet?name=cat&type=manx
+      prefix = "";
+    } else {
+      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+      prefix = prefix + "[";
+      suffix = "]";
+      containerSuffix = "]";
+      containerPrefix = "[";
     }
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @return URL query string
-        */
-        public String toUrlQueryString() {
-        return toUrlQueryString(null);
-        }
+    StringJoiner joiner = new StringJoiner("&");
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @param prefix prefix of the query string
-        * @return URL query string
-        */
-        public String toUrlQueryString(String prefix) {
-        String suffix = "";
-        String containerSuffix = "";
-        String containerPrefix = "";
-        if (prefix == null) {
-        // style=form, explode=true, e.g. /pet?name=cat&type=manx
-        prefix = "";
-        } else {
-        // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
-        prefix = prefix + "[";
-        suffix = "]";
-        containerSuffix = "]";
-        containerPrefix = "[";
-        }
-
-        StringJoiner joiner = new StringJoiner("&");
-
-            // add `last4` to the URL query string
-                        if (getLast4() != null) {
-                        try {
-                        joiner.add(String.format("%slast4%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getLast4()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-            // add `card_network` to the URL query string
-                        if (getCardNetwork() != null) {
-                        try {
-                        joiner.add(String.format("%scard_network%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCardNetwork()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-            // add `type` to the URL query string
-                        if (getType() != null) {
-                        try {
-                        joiner.add(String.format("%stype%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getType()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-        return joiner.toString();
-        }
-
+    // add `last4` to the URL query string
+    if (getLast4() != null) {
+      try {
+        joiner.add(String.format("%slast4%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getLast4()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
     }
+
+    // add `card_network` to the URL query string
+    if (getCardNetwork() != null) {
+      try {
+        joiner.add(String.format("%scard_network%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCardNetwork()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `type` to the URL query string
+    if (getType() != null) {
+      try {
+        joiner.add(String.format("%stype%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getType()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    return joiner.toString();
+  }
+
+}
 

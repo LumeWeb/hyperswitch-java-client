@@ -30,163 +30,163 @@ import java.net.URLEncoder;
 import java.util.StringJoiner;
 
 /**
-* GiftCardData
-*/
-    @JsonPropertyOrder({
-        GiftCardData.JSON_PROPERTY_GIVEX,
-        GiftCardData.JSON_PROPERTY_PAY_SAFE_CARD
-    })
+ * GiftCardData
+ */
+@JsonPropertyOrder({
+  GiftCardData.JSON_PROPERTY_GIVEX,
+  GiftCardData.JSON_PROPERTY_PAY_SAFE_CARD
+})
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class GiftCardData {
-        public static final String JSON_PROPERTY_GIVEX = "givex";
-    @javax.annotation.Nonnull
-            private GiftCardDetails givex;
+  public static final String JSON_PROPERTY_GIVEX = "givex";
+  @javax.annotation.Nonnull
+  private GiftCardDetails givex;
 
-        public static final String JSON_PROPERTY_PAY_SAFE_CARD = "pay_safe_card";
-    @javax.annotation.Nonnull
-            private Object paySafeCard;
+  public static final String JSON_PROPERTY_PAY_SAFE_CARD = "pay_safe_card";
+  @javax.annotation.Nonnull
+  private Object paySafeCard;
 
-public GiftCardData() {
-}
+  public GiftCardData() {
+  }
 
-        public GiftCardData givex(@javax.annotation.Nonnull GiftCardDetails givex) {
-        
-        this.givex = givex;
-        return this;
-        }
+  public GiftCardData givex(@javax.annotation.Nonnull GiftCardDetails givex) {
+    
+    this.givex = givex;
+    return this;
+  }
 
-    /**
-        * Get givex
-    * @return givex
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_GIVEX)
+  /**
+   * Get givex
+   * @return givex
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_GIVEX)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public GiftCardDetails getGivex() {
-        return givex;
-    }
+  public GiftCardDetails getGivex() {
+    return givex;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_GIVEX)
+  @JsonProperty(JSON_PROPERTY_GIVEX)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setGivex(@javax.annotation.Nonnull GiftCardDetails givex) {
-            this.givex = givex;
-        }
+    this.givex = givex;
+  }
 
-        public GiftCardData paySafeCard(@javax.annotation.Nonnull Object paySafeCard) {
-        
-        this.paySafeCard = paySafeCard;
-        return this;
-        }
+  public GiftCardData paySafeCard(@javax.annotation.Nonnull Object paySafeCard) {
+    
+    this.paySafeCard = paySafeCard;
+    return this;
+  }
 
-    /**
-        * Get paySafeCard
-    * @return paySafeCard
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_PAY_SAFE_CARD)
+  /**
+   * Get paySafeCard
+   * @return paySafeCard
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_PAY_SAFE_CARD)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public Object getPaySafeCard() {
-        return paySafeCard;
-    }
+  public Object getPaySafeCard() {
+    return paySafeCard;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_PAY_SAFE_CARD)
+  @JsonProperty(JSON_PROPERTY_PAY_SAFE_CARD)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setPaySafeCard(@javax.annotation.Nonnull Object paySafeCard) {
-            this.paySafeCard = paySafeCard;
-        }
+    this.paySafeCard = paySafeCard;
+  }
 
-@Override
-public boolean equals(Object o) {
+  @Override
+  public boolean equals(Object o) {
     if (this == o) {
-    return true;
+      return true;
     }
     if (o == null || getClass() != o.getClass()) {
-    return false;
+      return false;
     }
-        GiftCardData giftCardData = (GiftCardData) o;
-        return Objects.equals(this.givex, giftCardData.givex) &&
+    GiftCardData giftCardData = (GiftCardData) o;
+    return Objects.equals(this.givex, giftCardData.givex) &&
         Objects.equals(this.paySafeCard, giftCardData.paySafeCard);
-}
+  }
 
-    @Override
-    public int hashCode() {
-        return Objects.hash(givex, paySafeCard);
-    }
+  @Override
+  public int hashCode() {
+    return Objects.hash(givex, paySafeCard);
+  }
 
-    @Override
-    public String toString() {
+  @Override
+  public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class GiftCardData {\n");
-        sb.append("    givex: ").append(toIndentedString(givex)).append("\n");
-        sb.append("    paySafeCard: ").append(toIndentedString(paySafeCard)).append("\n");
+    sb.append("    givex: ").append(toIndentedString(givex)).append("\n");
+    sb.append("    paySafeCard: ").append(toIndentedString(paySafeCard)).append("\n");
     sb.append("}");
     return sb.toString();
-    }
+  }
 
-    /**
-    * Convert the given object to string with each line indented by 4 spaces
-    * (except the first line).
-    */
-    private String toIndentedString(Object o) {
+  /**
+   * Convert the given object to string with each line indented by 4 spaces
+   * (except the first line).
+   */
+  private String toIndentedString(Object o) {
     if (o == null) {
-    return "null";
+      return "null";
     }
     return o.toString().replace("\n", "\n    ");
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @return URL query string
+   */
+  public String toUrlQueryString() {
+    return toUrlQueryString(null);
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @param prefix prefix of the query string
+   * @return URL query string
+   */
+  public String toUrlQueryString(String prefix) {
+    String suffix = "";
+    String containerSuffix = "";
+    String containerPrefix = "";
+    if (prefix == null) {
+      // style=form, explode=true, e.g. /pet?name=cat&type=manx
+      prefix = "";
+    } else {
+      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+      prefix = prefix + "[";
+      suffix = "]";
+      containerSuffix = "]";
+      containerPrefix = "[";
     }
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @return URL query string
-        */
-        public String toUrlQueryString() {
-        return toUrlQueryString(null);
-        }
+    StringJoiner joiner = new StringJoiner("&");
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @param prefix prefix of the query string
-        * @return URL query string
-        */
-        public String toUrlQueryString(String prefix) {
-        String suffix = "";
-        String containerSuffix = "";
-        String containerPrefix = "";
-        if (prefix == null) {
-        // style=form, explode=true, e.g. /pet?name=cat&type=manx
-        prefix = "";
-        } else {
-        // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
-        prefix = prefix + "[";
-        suffix = "]";
-        containerSuffix = "]";
-        containerPrefix = "[";
-        }
-
-        StringJoiner joiner = new StringJoiner("&");
-
-            // add `givex` to the URL query string
-                            if (getGivex() != null) {
-                            joiner.add(getGivex().toUrlQueryString(prefix + "givex" + suffix));
-                            }
-
-            // add `pay_safe_card` to the URL query string
-                        if (getPaySafeCard() != null) {
-                        try {
-                        joiner.add(String.format("%spay_safe_card%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getPaySafeCard()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-        return joiner.toString();
-        }
-
+    // add `givex` to the URL query string
+    if (getGivex() != null) {
+      joiner.add(getGivex().toUrlQueryString(prefix + "givex" + suffix));
     }
+
+    // add `pay_safe_card` to the URL query string
+    if (getPaySafeCard() != null) {
+      try {
+        joiner.add(String.format("%spay_safe_card%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getPaySafeCard()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    return joiner.toString();
+  }
+
+}
 

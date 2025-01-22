@@ -27,168 +27,168 @@ import java.net.URLEncoder;
 import java.util.StringJoiner;
 
 /**
-* PayoutLinkInitiateRequest
-*/
-    @JsonPropertyOrder({
-        PayoutLinkInitiateRequest.JSON_PROPERTY_MERCHANT_ID,
-        PayoutLinkInitiateRequest.JSON_PROPERTY_PAYOUT_ID
-    })
+ * PayoutLinkInitiateRequest
+ */
+@JsonPropertyOrder({
+  PayoutLinkInitiateRequest.JSON_PROPERTY_MERCHANT_ID,
+  PayoutLinkInitiateRequest.JSON_PROPERTY_PAYOUT_ID
+})
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class PayoutLinkInitiateRequest {
-        public static final String JSON_PROPERTY_MERCHANT_ID = "merchant_id";
-    @javax.annotation.Nonnull
-            private String merchantId;
+  public static final String JSON_PROPERTY_MERCHANT_ID = "merchant_id";
+  @javax.annotation.Nonnull
+  private String merchantId;
 
-        public static final String JSON_PROPERTY_PAYOUT_ID = "payout_id";
-    @javax.annotation.Nonnull
-            private String payoutId;
+  public static final String JSON_PROPERTY_PAYOUT_ID = "payout_id";
+  @javax.annotation.Nonnull
+  private String payoutId;
 
-public PayoutLinkInitiateRequest() {
-}
+  public PayoutLinkInitiateRequest() {
+  }
 
-        public PayoutLinkInitiateRequest merchantId(@javax.annotation.Nonnull String merchantId) {
-        
-        this.merchantId = merchantId;
-        return this;
-        }
+  public PayoutLinkInitiateRequest merchantId(@javax.annotation.Nonnull String merchantId) {
+    
+    this.merchantId = merchantId;
+    return this;
+  }
 
-    /**
-        * Get merchantId
-    * @return merchantId
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_MERCHANT_ID)
+  /**
+   * Get merchantId
+   * @return merchantId
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_MERCHANT_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public String getMerchantId() {
-        return merchantId;
-    }
+  public String getMerchantId() {
+    return merchantId;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_MERCHANT_ID)
+  @JsonProperty(JSON_PROPERTY_MERCHANT_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setMerchantId(@javax.annotation.Nonnull String merchantId) {
-            this.merchantId = merchantId;
-        }
+    this.merchantId = merchantId;
+  }
 
-        public PayoutLinkInitiateRequest payoutId(@javax.annotation.Nonnull String payoutId) {
-        
-        this.payoutId = payoutId;
-        return this;
-        }
+  public PayoutLinkInitiateRequest payoutId(@javax.annotation.Nonnull String payoutId) {
+    
+    this.payoutId = payoutId;
+    return this;
+  }
 
-    /**
-        * Get payoutId
-    * @return payoutId
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_PAYOUT_ID)
+  /**
+   * Get payoutId
+   * @return payoutId
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_PAYOUT_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public String getPayoutId() {
-        return payoutId;
-    }
+  public String getPayoutId() {
+    return payoutId;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_PAYOUT_ID)
+  @JsonProperty(JSON_PROPERTY_PAYOUT_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setPayoutId(@javax.annotation.Nonnull String payoutId) {
-            this.payoutId = payoutId;
-        }
+    this.payoutId = payoutId;
+  }
 
-@Override
-public boolean equals(Object o) {
+  @Override
+  public boolean equals(Object o) {
     if (this == o) {
-    return true;
+      return true;
     }
     if (o == null || getClass() != o.getClass()) {
-    return false;
+      return false;
     }
-        PayoutLinkInitiateRequest payoutLinkInitiateRequest = (PayoutLinkInitiateRequest) o;
-        return Objects.equals(this.merchantId, payoutLinkInitiateRequest.merchantId) &&
+    PayoutLinkInitiateRequest payoutLinkInitiateRequest = (PayoutLinkInitiateRequest) o;
+    return Objects.equals(this.merchantId, payoutLinkInitiateRequest.merchantId) &&
         Objects.equals(this.payoutId, payoutLinkInitiateRequest.payoutId);
-}
+  }
 
-    @Override
-    public int hashCode() {
-        return Objects.hash(merchantId, payoutId);
-    }
+  @Override
+  public int hashCode() {
+    return Objects.hash(merchantId, payoutId);
+  }
 
-    @Override
-    public String toString() {
+  @Override
+  public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class PayoutLinkInitiateRequest {\n");
-        sb.append("    merchantId: ").append(toIndentedString(merchantId)).append("\n");
-        sb.append("    payoutId: ").append(toIndentedString(payoutId)).append("\n");
+    sb.append("    merchantId: ").append(toIndentedString(merchantId)).append("\n");
+    sb.append("    payoutId: ").append(toIndentedString(payoutId)).append("\n");
     sb.append("}");
     return sb.toString();
-    }
+  }
 
-    /**
-    * Convert the given object to string with each line indented by 4 spaces
-    * (except the first line).
-    */
-    private String toIndentedString(Object o) {
+  /**
+   * Convert the given object to string with each line indented by 4 spaces
+   * (except the first line).
+   */
+  private String toIndentedString(Object o) {
     if (o == null) {
-    return "null";
+      return "null";
     }
     return o.toString().replace("\n", "\n    ");
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @return URL query string
+   */
+  public String toUrlQueryString() {
+    return toUrlQueryString(null);
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @param prefix prefix of the query string
+   * @return URL query string
+   */
+  public String toUrlQueryString(String prefix) {
+    String suffix = "";
+    String containerSuffix = "";
+    String containerPrefix = "";
+    if (prefix == null) {
+      // style=form, explode=true, e.g. /pet?name=cat&type=manx
+      prefix = "";
+    } else {
+      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+      prefix = prefix + "[";
+      suffix = "]";
+      containerSuffix = "]";
+      containerPrefix = "[";
     }
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @return URL query string
-        */
-        public String toUrlQueryString() {
-        return toUrlQueryString(null);
-        }
+    StringJoiner joiner = new StringJoiner("&");
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @param prefix prefix of the query string
-        * @return URL query string
-        */
-        public String toUrlQueryString(String prefix) {
-        String suffix = "";
-        String containerSuffix = "";
-        String containerPrefix = "";
-        if (prefix == null) {
-        // style=form, explode=true, e.g. /pet?name=cat&type=manx
-        prefix = "";
-        } else {
-        // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
-        prefix = prefix + "[";
-        suffix = "]";
-        containerSuffix = "]";
-        containerPrefix = "[";
-        }
-
-        StringJoiner joiner = new StringJoiner("&");
-
-            // add `merchant_id` to the URL query string
-                        if (getMerchantId() != null) {
-                        try {
-                        joiner.add(String.format("%smerchant_id%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getMerchantId()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-            // add `payout_id` to the URL query string
-                        if (getPayoutId() != null) {
-                        try {
-                        joiner.add(String.format("%spayout_id%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getPayoutId()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-        return joiner.toString();
-        }
-
+    // add `merchant_id` to the URL query string
+    if (getMerchantId() != null) {
+      try {
+        joiner.add(String.format("%smerchant_id%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getMerchantId()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
     }
+
+    // add `payout_id` to the URL query string
+    if (getPayoutId() != null) {
+      try {
+        joiner.add(String.format("%spayout_id%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getPayoutId()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    return joiner.toString();
+  }
+
+}
 

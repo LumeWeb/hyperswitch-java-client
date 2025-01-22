@@ -27,127 +27,127 @@ import java.net.URLEncoder;
 import java.util.StringJoiner;
 
 /**
-* WalletDataOneOf13
-*/
-    @JsonPropertyOrder({
-        WalletDataOneOf13.JSON_PROPERTY_GOOGLE_PAY_THIRD_PARTY_SDK
-    })
-            @JsonTypeName("WalletData_oneOf_13")
+ * WalletDataOneOf13
+ */
+@JsonPropertyOrder({
+  WalletDataOneOf13.JSON_PROPERTY_GOOGLE_PAY_THIRD_PARTY_SDK
+})
+@JsonTypeName("WalletData_oneOf_13")
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class WalletDataOneOf13 {
-        public static final String JSON_PROPERTY_GOOGLE_PAY_THIRD_PARTY_SDK = "google_pay_third_party_sdk";
-    @javax.annotation.Nonnull
-            private Object googlePayThirdPartySdk;
+  public static final String JSON_PROPERTY_GOOGLE_PAY_THIRD_PARTY_SDK = "google_pay_third_party_sdk";
+  @javax.annotation.Nonnull
+  private Object googlePayThirdPartySdk;
 
-public WalletDataOneOf13() {
-}
+  public WalletDataOneOf13() {
+  }
 
-        public WalletDataOneOf13 googlePayThirdPartySdk(@javax.annotation.Nonnull Object googlePayThirdPartySdk) {
-        
-        this.googlePayThirdPartySdk = googlePayThirdPartySdk;
-        return this;
-        }
+  public WalletDataOneOf13 googlePayThirdPartySdk(@javax.annotation.Nonnull Object googlePayThirdPartySdk) {
+    
+    this.googlePayThirdPartySdk = googlePayThirdPartySdk;
+    return this;
+  }
 
-    /**
-        * Get googlePayThirdPartySdk
-    * @return googlePayThirdPartySdk
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_GOOGLE_PAY_THIRD_PARTY_SDK)
+  /**
+   * Get googlePayThirdPartySdk
+   * @return googlePayThirdPartySdk
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_GOOGLE_PAY_THIRD_PARTY_SDK)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public Object getGooglePayThirdPartySdk() {
-        return googlePayThirdPartySdk;
-    }
+  public Object getGooglePayThirdPartySdk() {
+    return googlePayThirdPartySdk;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_GOOGLE_PAY_THIRD_PARTY_SDK)
+  @JsonProperty(JSON_PROPERTY_GOOGLE_PAY_THIRD_PARTY_SDK)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setGooglePayThirdPartySdk(@javax.annotation.Nonnull Object googlePayThirdPartySdk) {
-            this.googlePayThirdPartySdk = googlePayThirdPartySdk;
-        }
+    this.googlePayThirdPartySdk = googlePayThirdPartySdk;
+  }
 
-@Override
-public boolean equals(Object o) {
+  @Override
+  public boolean equals(Object o) {
     if (this == o) {
-    return true;
+      return true;
     }
     if (o == null || getClass() != o.getClass()) {
-    return false;
+      return false;
     }
-        WalletDataOneOf13 walletDataOneOf13 = (WalletDataOneOf13) o;
-        return Objects.equals(this.googlePayThirdPartySdk, walletDataOneOf13.googlePayThirdPartySdk);
-}
+    WalletDataOneOf13 walletDataOneOf13 = (WalletDataOneOf13) o;
+    return Objects.equals(this.googlePayThirdPartySdk, walletDataOneOf13.googlePayThirdPartySdk);
+  }
 
-    @Override
-    public int hashCode() {
-        return Objects.hash(googlePayThirdPartySdk);
-    }
+  @Override
+  public int hashCode() {
+    return Objects.hash(googlePayThirdPartySdk);
+  }
 
-    @Override
-    public String toString() {
+  @Override
+  public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class WalletDataOneOf13 {\n");
-        sb.append("    googlePayThirdPartySdk: ").append(toIndentedString(googlePayThirdPartySdk)).append("\n");
+    sb.append("    googlePayThirdPartySdk: ").append(toIndentedString(googlePayThirdPartySdk)).append("\n");
     sb.append("}");
     return sb.toString();
-    }
+  }
 
-    /**
-    * Convert the given object to string with each line indented by 4 spaces
-    * (except the first line).
-    */
-    private String toIndentedString(Object o) {
+  /**
+   * Convert the given object to string with each line indented by 4 spaces
+   * (except the first line).
+   */
+  private String toIndentedString(Object o) {
     if (o == null) {
-    return "null";
+      return "null";
     }
     return o.toString().replace("\n", "\n    ");
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @return URL query string
+   */
+  public String toUrlQueryString() {
+    return toUrlQueryString(null);
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @param prefix prefix of the query string
+   * @return URL query string
+   */
+  public String toUrlQueryString(String prefix) {
+    String suffix = "";
+    String containerSuffix = "";
+    String containerPrefix = "";
+    if (prefix == null) {
+      // style=form, explode=true, e.g. /pet?name=cat&type=manx
+      prefix = "";
+    } else {
+      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+      prefix = prefix + "[";
+      suffix = "]";
+      containerSuffix = "]";
+      containerPrefix = "[";
     }
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @return URL query string
-        */
-        public String toUrlQueryString() {
-        return toUrlQueryString(null);
-        }
+    StringJoiner joiner = new StringJoiner("&");
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @param prefix prefix of the query string
-        * @return URL query string
-        */
-        public String toUrlQueryString(String prefix) {
-        String suffix = "";
-        String containerSuffix = "";
-        String containerPrefix = "";
-        if (prefix == null) {
-        // style=form, explode=true, e.g. /pet?name=cat&type=manx
-        prefix = "";
-        } else {
-        // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
-        prefix = prefix + "[";
-        suffix = "]";
-        containerSuffix = "]";
-        containerPrefix = "[";
-        }
-
-        StringJoiner joiner = new StringJoiner("&");
-
-            // add `google_pay_third_party_sdk` to the URL query string
-                        if (getGooglePayThirdPartySdk() != null) {
-                        try {
-                        joiner.add(String.format("%sgoogle_pay_third_party_sdk%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getGooglePayThirdPartySdk()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-        return joiner.toString();
-        }
-
+    // add `google_pay_third_party_sdk` to the URL query string
+    if (getGooglePayThirdPartySdk() != null) {
+      try {
+        joiner.add(String.format("%sgoogle_pay_third_party_sdk%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getGooglePayThirdPartySdk()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
     }
+
+    return joiner.toString();
+  }
+
+}
 

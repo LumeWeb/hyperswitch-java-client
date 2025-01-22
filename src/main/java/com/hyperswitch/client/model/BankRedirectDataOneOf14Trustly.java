@@ -28,127 +28,127 @@ import java.net.URLEncoder;
 import java.util.StringJoiner;
 
 /**
-* BankRedirectDataOneOf14Trustly
-*/
-    @JsonPropertyOrder({
-        BankRedirectDataOneOf14Trustly.JSON_PROPERTY_COUNTRY
-    })
-            @JsonTypeName("BankRedirectData_oneOf_14_trustly")
+ * BankRedirectDataOneOf14Trustly
+ */
+@JsonPropertyOrder({
+  BankRedirectDataOneOf14Trustly.JSON_PROPERTY_COUNTRY
+})
+@JsonTypeName("BankRedirectData_oneOf_14_trustly")
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class BankRedirectDataOneOf14Trustly {
-        public static final String JSON_PROPERTY_COUNTRY = "country";
-    @javax.annotation.Nonnull
-            private CountryAlpha2 country;
+  public static final String JSON_PROPERTY_COUNTRY = "country";
+  @javax.annotation.Nonnull
+  private CountryAlpha2 country;
 
-public BankRedirectDataOneOf14Trustly() {
-}
+  public BankRedirectDataOneOf14Trustly() {
+  }
 
-        public BankRedirectDataOneOf14Trustly country(@javax.annotation.Nonnull CountryAlpha2 country) {
-        
-        this.country = country;
-        return this;
-        }
+  public BankRedirectDataOneOf14Trustly country(@javax.annotation.Nonnull CountryAlpha2 country) {
+    
+    this.country = country;
+    return this;
+  }
 
-    /**
-        * Get country
-    * @return country
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_COUNTRY)
+  /**
+   * Get country
+   * @return country
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_COUNTRY)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public CountryAlpha2 getCountry() {
-        return country;
-    }
+  public CountryAlpha2 getCountry() {
+    return country;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_COUNTRY)
+  @JsonProperty(JSON_PROPERTY_COUNTRY)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setCountry(@javax.annotation.Nonnull CountryAlpha2 country) {
-            this.country = country;
-        }
+    this.country = country;
+  }
 
-@Override
-public boolean equals(Object o) {
+  @Override
+  public boolean equals(Object o) {
     if (this == o) {
-    return true;
+      return true;
     }
     if (o == null || getClass() != o.getClass()) {
-    return false;
+      return false;
     }
-        BankRedirectDataOneOf14Trustly bankRedirectDataOneOf14Trustly = (BankRedirectDataOneOf14Trustly) o;
-        return Objects.equals(this.country, bankRedirectDataOneOf14Trustly.country);
-}
+    BankRedirectDataOneOf14Trustly bankRedirectDataOneOf14Trustly = (BankRedirectDataOneOf14Trustly) o;
+    return Objects.equals(this.country, bankRedirectDataOneOf14Trustly.country);
+  }
 
-    @Override
-    public int hashCode() {
-        return Objects.hash(country);
-    }
+  @Override
+  public int hashCode() {
+    return Objects.hash(country);
+  }
 
-    @Override
-    public String toString() {
+  @Override
+  public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class BankRedirectDataOneOf14Trustly {\n");
-        sb.append("    country: ").append(toIndentedString(country)).append("\n");
+    sb.append("    country: ").append(toIndentedString(country)).append("\n");
     sb.append("}");
     return sb.toString();
-    }
+  }
 
-    /**
-    * Convert the given object to string with each line indented by 4 spaces
-    * (except the first line).
-    */
-    private String toIndentedString(Object o) {
+  /**
+   * Convert the given object to string with each line indented by 4 spaces
+   * (except the first line).
+   */
+  private String toIndentedString(Object o) {
     if (o == null) {
-    return "null";
+      return "null";
     }
     return o.toString().replace("\n", "\n    ");
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @return URL query string
+   */
+  public String toUrlQueryString() {
+    return toUrlQueryString(null);
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @param prefix prefix of the query string
+   * @return URL query string
+   */
+  public String toUrlQueryString(String prefix) {
+    String suffix = "";
+    String containerSuffix = "";
+    String containerPrefix = "";
+    if (prefix == null) {
+      // style=form, explode=true, e.g. /pet?name=cat&type=manx
+      prefix = "";
+    } else {
+      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+      prefix = prefix + "[";
+      suffix = "]";
+      containerSuffix = "]";
+      containerPrefix = "[";
     }
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @return URL query string
-        */
-        public String toUrlQueryString() {
-        return toUrlQueryString(null);
-        }
+    StringJoiner joiner = new StringJoiner("&");
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @param prefix prefix of the query string
-        * @return URL query string
-        */
-        public String toUrlQueryString(String prefix) {
-        String suffix = "";
-        String containerSuffix = "";
-        String containerPrefix = "";
-        if (prefix == null) {
-        // style=form, explode=true, e.g. /pet?name=cat&type=manx
-        prefix = "";
-        } else {
-        // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
-        prefix = prefix + "[";
-        suffix = "]";
-        containerSuffix = "]";
-        containerPrefix = "[";
-        }
-
-        StringJoiner joiner = new StringJoiner("&");
-
-            // add `country` to the URL query string
-                            if (getCountry() != null) {
-                            try {
-                            joiner.add(String.format("%scountry%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCountry()), "UTF-8").replaceAll("\\+", "%20")));
-                            } catch (UnsupportedEncodingException e) {
-                            // Should never happen, UTF-8 is always supported
-                            throw new RuntimeException(e);
-                            }
-                            }
-
-        return joiner.toString();
-        }
-
+    // add `country` to the URL query string
+    if (getCountry() != null) {
+      try {
+        joiner.add(String.format("%scountry%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCountry()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
     }
+
+    return joiner.toString();
+  }
+
+}
 

@@ -29,445 +29,445 @@ import java.net.URLEncoder;
 import java.util.StringJoiner;
 
 /**
-* BankTransferResponse
-*/
-    @JsonPropertyOrder({
-        BankTransferResponse.JSON_PROPERTY_ACH,
-        BankTransferResponse.JSON_PROPERTY_SEPA,
-        BankTransferResponse.JSON_PROPERTY_BACS,
-        BankTransferResponse.JSON_PROPERTY_MULTIBANCO,
-        BankTransferResponse.JSON_PROPERTY_PERMATA,
-        BankTransferResponse.JSON_PROPERTY_BCA,
-        BankTransferResponse.JSON_PROPERTY_BNI_VA,
-        BankTransferResponse.JSON_PROPERTY_BRI_VA,
-        BankTransferResponse.JSON_PROPERTY_CIMB_VA,
-        BankTransferResponse.JSON_PROPERTY_DANAMON_VA,
-        BankTransferResponse.JSON_PROPERTY_MANDIRI_VA,
-        BankTransferResponse.JSON_PROPERTY_PIX,
-        BankTransferResponse.JSON_PROPERTY_PSE,
-        BankTransferResponse.JSON_PROPERTY_LOCAL_BANK_TRANSFER
-    })
+ * BankTransferResponse
+ */
+@JsonPropertyOrder({
+  BankTransferResponse.JSON_PROPERTY_ACH,
+  BankTransferResponse.JSON_PROPERTY_SEPA,
+  BankTransferResponse.JSON_PROPERTY_BACS,
+  BankTransferResponse.JSON_PROPERTY_MULTIBANCO,
+  BankTransferResponse.JSON_PROPERTY_PERMATA,
+  BankTransferResponse.JSON_PROPERTY_BCA,
+  BankTransferResponse.JSON_PROPERTY_BNI_VA,
+  BankTransferResponse.JSON_PROPERTY_BRI_VA,
+  BankTransferResponse.JSON_PROPERTY_CIMB_VA,
+  BankTransferResponse.JSON_PROPERTY_DANAMON_VA,
+  BankTransferResponse.JSON_PROPERTY_MANDIRI_VA,
+  BankTransferResponse.JSON_PROPERTY_PIX,
+  BankTransferResponse.JSON_PROPERTY_PSE,
+  BankTransferResponse.JSON_PROPERTY_LOCAL_BANK_TRANSFER
+})
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class BankTransferResponse {
-        public static final String JSON_PROPERTY_ACH = "ach";
-    @javax.annotation.Nonnull
-            private Object ach;
+  public static final String JSON_PROPERTY_ACH = "ach";
+  @javax.annotation.Nonnull
+  private Object ach;
 
-        public static final String JSON_PROPERTY_SEPA = "sepa";
-    @javax.annotation.Nonnull
-            private Object sepa;
+  public static final String JSON_PROPERTY_SEPA = "sepa";
+  @javax.annotation.Nonnull
+  private Object sepa;
 
-        public static final String JSON_PROPERTY_BACS = "bacs";
-    @javax.annotation.Nonnull
-            private Object bacs;
+  public static final String JSON_PROPERTY_BACS = "bacs";
+  @javax.annotation.Nonnull
+  private Object bacs;
 
-        public static final String JSON_PROPERTY_MULTIBANCO = "multibanco";
-    @javax.annotation.Nonnull
-            private Object multibanco;
+  public static final String JSON_PROPERTY_MULTIBANCO = "multibanco";
+  @javax.annotation.Nonnull
+  private Object multibanco;
 
-        public static final String JSON_PROPERTY_PERMATA = "permata";
-    @javax.annotation.Nonnull
-            private Object permata;
+  public static final String JSON_PROPERTY_PERMATA = "permata";
+  @javax.annotation.Nonnull
+  private Object permata;
 
-        public static final String JSON_PROPERTY_BCA = "bca";
-    @javax.annotation.Nonnull
-            private Object bca;
+  public static final String JSON_PROPERTY_BCA = "bca";
+  @javax.annotation.Nonnull
+  private Object bca;
 
-        public static final String JSON_PROPERTY_BNI_VA = "bni_va";
-    @javax.annotation.Nonnull
-            private Object bniVa;
+  public static final String JSON_PROPERTY_BNI_VA = "bni_va";
+  @javax.annotation.Nonnull
+  private Object bniVa;
 
-        public static final String JSON_PROPERTY_BRI_VA = "bri_va";
-    @javax.annotation.Nonnull
-            private Object briVa;
+  public static final String JSON_PROPERTY_BRI_VA = "bri_va";
+  @javax.annotation.Nonnull
+  private Object briVa;
 
-        public static final String JSON_PROPERTY_CIMB_VA = "cimb_va";
-    @javax.annotation.Nonnull
-            private Object cimbVa;
+  public static final String JSON_PROPERTY_CIMB_VA = "cimb_va";
+  @javax.annotation.Nonnull
+  private Object cimbVa;
 
-        public static final String JSON_PROPERTY_DANAMON_VA = "danamon_va";
-    @javax.annotation.Nonnull
-            private Object danamonVa;
+  public static final String JSON_PROPERTY_DANAMON_VA = "danamon_va";
+  @javax.annotation.Nonnull
+  private Object danamonVa;
 
-        public static final String JSON_PROPERTY_MANDIRI_VA = "mandiri_va";
-    @javax.annotation.Nonnull
-            private Object mandiriVa;
+  public static final String JSON_PROPERTY_MANDIRI_VA = "mandiri_va";
+  @javax.annotation.Nonnull
+  private Object mandiriVa;
 
-        public static final String JSON_PROPERTY_PIX = "pix";
-    @javax.annotation.Nonnull
-            private PixBankTransferAdditionalData pix;
+  public static final String JSON_PROPERTY_PIX = "pix";
+  @javax.annotation.Nonnull
+  private PixBankTransferAdditionalData pix;
 
-        public static final String JSON_PROPERTY_PSE = "pse";
-    @javax.annotation.Nonnull
-            private Object pse;
+  public static final String JSON_PROPERTY_PSE = "pse";
+  @javax.annotation.Nonnull
+  private Object pse;
 
-        public static final String JSON_PROPERTY_LOCAL_BANK_TRANSFER = "local_bank_transfer";
-    @javax.annotation.Nonnull
-            private LocalBankTransferAdditionalData localBankTransfer;
+  public static final String JSON_PROPERTY_LOCAL_BANK_TRANSFER = "local_bank_transfer";
+  @javax.annotation.Nonnull
+  private LocalBankTransferAdditionalData localBankTransfer;
 
-public BankTransferResponse() {
-}
+  public BankTransferResponse() {
+  }
 
-        public BankTransferResponse ach(@javax.annotation.Nonnull Object ach) {
-        
-        this.ach = ach;
-        return this;
-        }
+  public BankTransferResponse ach(@javax.annotation.Nonnull Object ach) {
+    
+    this.ach = ach;
+    return this;
+  }
 
-    /**
-        * Get ach
-    * @return ach
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_ACH)
+  /**
+   * Get ach
+   * @return ach
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_ACH)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public Object getAch() {
-        return ach;
-    }
+  public Object getAch() {
+    return ach;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_ACH)
+  @JsonProperty(JSON_PROPERTY_ACH)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setAch(@javax.annotation.Nonnull Object ach) {
-            this.ach = ach;
-        }
+    this.ach = ach;
+  }
 
-        public BankTransferResponse sepa(@javax.annotation.Nonnull Object sepa) {
-        
-        this.sepa = sepa;
-        return this;
-        }
+  public BankTransferResponse sepa(@javax.annotation.Nonnull Object sepa) {
+    
+    this.sepa = sepa;
+    return this;
+  }
 
-    /**
-        * Get sepa
-    * @return sepa
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_SEPA)
+  /**
+   * Get sepa
+   * @return sepa
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_SEPA)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public Object getSepa() {
-        return sepa;
-    }
+  public Object getSepa() {
+    return sepa;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_SEPA)
+  @JsonProperty(JSON_PROPERTY_SEPA)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setSepa(@javax.annotation.Nonnull Object sepa) {
-            this.sepa = sepa;
-        }
+    this.sepa = sepa;
+  }
 
-        public BankTransferResponse bacs(@javax.annotation.Nonnull Object bacs) {
-        
-        this.bacs = bacs;
-        return this;
-        }
+  public BankTransferResponse bacs(@javax.annotation.Nonnull Object bacs) {
+    
+    this.bacs = bacs;
+    return this;
+  }
 
-    /**
-        * Get bacs
-    * @return bacs
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_BACS)
+  /**
+   * Get bacs
+   * @return bacs
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_BACS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public Object getBacs() {
-        return bacs;
-    }
+  public Object getBacs() {
+    return bacs;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_BACS)
+  @JsonProperty(JSON_PROPERTY_BACS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setBacs(@javax.annotation.Nonnull Object bacs) {
-            this.bacs = bacs;
-        }
+    this.bacs = bacs;
+  }
 
-        public BankTransferResponse multibanco(@javax.annotation.Nonnull Object multibanco) {
-        
-        this.multibanco = multibanco;
-        return this;
-        }
+  public BankTransferResponse multibanco(@javax.annotation.Nonnull Object multibanco) {
+    
+    this.multibanco = multibanco;
+    return this;
+  }
 
-    /**
-        * Get multibanco
-    * @return multibanco
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_MULTIBANCO)
+  /**
+   * Get multibanco
+   * @return multibanco
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_MULTIBANCO)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public Object getMultibanco() {
-        return multibanco;
-    }
+  public Object getMultibanco() {
+    return multibanco;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_MULTIBANCO)
+  @JsonProperty(JSON_PROPERTY_MULTIBANCO)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setMultibanco(@javax.annotation.Nonnull Object multibanco) {
-            this.multibanco = multibanco;
-        }
+    this.multibanco = multibanco;
+  }
 
-        public BankTransferResponse permata(@javax.annotation.Nonnull Object permata) {
-        
-        this.permata = permata;
-        return this;
-        }
+  public BankTransferResponse permata(@javax.annotation.Nonnull Object permata) {
+    
+    this.permata = permata;
+    return this;
+  }
 
-    /**
-        * Get permata
-    * @return permata
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_PERMATA)
+  /**
+   * Get permata
+   * @return permata
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_PERMATA)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public Object getPermata() {
-        return permata;
-    }
+  public Object getPermata() {
+    return permata;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_PERMATA)
+  @JsonProperty(JSON_PROPERTY_PERMATA)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setPermata(@javax.annotation.Nonnull Object permata) {
-            this.permata = permata;
-        }
+    this.permata = permata;
+  }
 
-        public BankTransferResponse bca(@javax.annotation.Nonnull Object bca) {
-        
-        this.bca = bca;
-        return this;
-        }
+  public BankTransferResponse bca(@javax.annotation.Nonnull Object bca) {
+    
+    this.bca = bca;
+    return this;
+  }
 
-    /**
-        * Get bca
-    * @return bca
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_BCA)
+  /**
+   * Get bca
+   * @return bca
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_BCA)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public Object getBca() {
-        return bca;
-    }
+  public Object getBca() {
+    return bca;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_BCA)
+  @JsonProperty(JSON_PROPERTY_BCA)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setBca(@javax.annotation.Nonnull Object bca) {
-            this.bca = bca;
-        }
+    this.bca = bca;
+  }
 
-        public BankTransferResponse bniVa(@javax.annotation.Nonnull Object bniVa) {
-        
-        this.bniVa = bniVa;
-        return this;
-        }
+  public BankTransferResponse bniVa(@javax.annotation.Nonnull Object bniVa) {
+    
+    this.bniVa = bniVa;
+    return this;
+  }
 
-    /**
-        * Get bniVa
-    * @return bniVa
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_BNI_VA)
+  /**
+   * Get bniVa
+   * @return bniVa
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_BNI_VA)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public Object getBniVa() {
-        return bniVa;
-    }
+  public Object getBniVa() {
+    return bniVa;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_BNI_VA)
+  @JsonProperty(JSON_PROPERTY_BNI_VA)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setBniVa(@javax.annotation.Nonnull Object bniVa) {
-            this.bniVa = bniVa;
-        }
+    this.bniVa = bniVa;
+  }
 
-        public BankTransferResponse briVa(@javax.annotation.Nonnull Object briVa) {
-        
-        this.briVa = briVa;
-        return this;
-        }
+  public BankTransferResponse briVa(@javax.annotation.Nonnull Object briVa) {
+    
+    this.briVa = briVa;
+    return this;
+  }
 
-    /**
-        * Get briVa
-    * @return briVa
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_BRI_VA)
+  /**
+   * Get briVa
+   * @return briVa
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_BRI_VA)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public Object getBriVa() {
-        return briVa;
-    }
+  public Object getBriVa() {
+    return briVa;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_BRI_VA)
+  @JsonProperty(JSON_PROPERTY_BRI_VA)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setBriVa(@javax.annotation.Nonnull Object briVa) {
-            this.briVa = briVa;
-        }
+    this.briVa = briVa;
+  }
 
-        public BankTransferResponse cimbVa(@javax.annotation.Nonnull Object cimbVa) {
-        
-        this.cimbVa = cimbVa;
-        return this;
-        }
+  public BankTransferResponse cimbVa(@javax.annotation.Nonnull Object cimbVa) {
+    
+    this.cimbVa = cimbVa;
+    return this;
+  }
 
-    /**
-        * Get cimbVa
-    * @return cimbVa
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_CIMB_VA)
+  /**
+   * Get cimbVa
+   * @return cimbVa
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_CIMB_VA)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public Object getCimbVa() {
-        return cimbVa;
-    }
+  public Object getCimbVa() {
+    return cimbVa;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_CIMB_VA)
+  @JsonProperty(JSON_PROPERTY_CIMB_VA)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setCimbVa(@javax.annotation.Nonnull Object cimbVa) {
-            this.cimbVa = cimbVa;
-        }
+    this.cimbVa = cimbVa;
+  }
 
-        public BankTransferResponse danamonVa(@javax.annotation.Nonnull Object danamonVa) {
-        
-        this.danamonVa = danamonVa;
-        return this;
-        }
+  public BankTransferResponse danamonVa(@javax.annotation.Nonnull Object danamonVa) {
+    
+    this.danamonVa = danamonVa;
+    return this;
+  }
 
-    /**
-        * Get danamonVa
-    * @return danamonVa
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_DANAMON_VA)
+  /**
+   * Get danamonVa
+   * @return danamonVa
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_DANAMON_VA)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public Object getDanamonVa() {
-        return danamonVa;
-    }
+  public Object getDanamonVa() {
+    return danamonVa;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_DANAMON_VA)
+  @JsonProperty(JSON_PROPERTY_DANAMON_VA)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setDanamonVa(@javax.annotation.Nonnull Object danamonVa) {
-            this.danamonVa = danamonVa;
-        }
+    this.danamonVa = danamonVa;
+  }
 
-        public BankTransferResponse mandiriVa(@javax.annotation.Nonnull Object mandiriVa) {
-        
-        this.mandiriVa = mandiriVa;
-        return this;
-        }
+  public BankTransferResponse mandiriVa(@javax.annotation.Nonnull Object mandiriVa) {
+    
+    this.mandiriVa = mandiriVa;
+    return this;
+  }
 
-    /**
-        * Get mandiriVa
-    * @return mandiriVa
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_MANDIRI_VA)
+  /**
+   * Get mandiriVa
+   * @return mandiriVa
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_MANDIRI_VA)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public Object getMandiriVa() {
-        return mandiriVa;
-    }
+  public Object getMandiriVa() {
+    return mandiriVa;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_MANDIRI_VA)
+  @JsonProperty(JSON_PROPERTY_MANDIRI_VA)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setMandiriVa(@javax.annotation.Nonnull Object mandiriVa) {
-            this.mandiriVa = mandiriVa;
-        }
+    this.mandiriVa = mandiriVa;
+  }
 
-        public BankTransferResponse pix(@javax.annotation.Nonnull PixBankTransferAdditionalData pix) {
-        
-        this.pix = pix;
-        return this;
-        }
+  public BankTransferResponse pix(@javax.annotation.Nonnull PixBankTransferAdditionalData pix) {
+    
+    this.pix = pix;
+    return this;
+  }
 
-    /**
-        * Get pix
-    * @return pix
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_PIX)
+  /**
+   * Get pix
+   * @return pix
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_PIX)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public PixBankTransferAdditionalData getPix() {
-        return pix;
-    }
+  public PixBankTransferAdditionalData getPix() {
+    return pix;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_PIX)
+  @JsonProperty(JSON_PROPERTY_PIX)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setPix(@javax.annotation.Nonnull PixBankTransferAdditionalData pix) {
-            this.pix = pix;
-        }
+    this.pix = pix;
+  }
 
-        public BankTransferResponse pse(@javax.annotation.Nonnull Object pse) {
-        
-        this.pse = pse;
-        return this;
-        }
+  public BankTransferResponse pse(@javax.annotation.Nonnull Object pse) {
+    
+    this.pse = pse;
+    return this;
+  }
 
-    /**
-        * Get pse
-    * @return pse
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_PSE)
+  /**
+   * Get pse
+   * @return pse
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_PSE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public Object getPse() {
-        return pse;
-    }
+  public Object getPse() {
+    return pse;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_PSE)
+  @JsonProperty(JSON_PROPERTY_PSE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setPse(@javax.annotation.Nonnull Object pse) {
-            this.pse = pse;
-        }
+    this.pse = pse;
+  }
 
-        public BankTransferResponse localBankTransfer(@javax.annotation.Nonnull LocalBankTransferAdditionalData localBankTransfer) {
-        
-        this.localBankTransfer = localBankTransfer;
-        return this;
-        }
+  public BankTransferResponse localBankTransfer(@javax.annotation.Nonnull LocalBankTransferAdditionalData localBankTransfer) {
+    
+    this.localBankTransfer = localBankTransfer;
+    return this;
+  }
 
-    /**
-        * Get localBankTransfer
-    * @return localBankTransfer
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_LOCAL_BANK_TRANSFER)
+  /**
+   * Get localBankTransfer
+   * @return localBankTransfer
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_LOCAL_BANK_TRANSFER)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public LocalBankTransferAdditionalData getLocalBankTransfer() {
-        return localBankTransfer;
-    }
+  public LocalBankTransferAdditionalData getLocalBankTransfer() {
+    return localBankTransfer;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_LOCAL_BANK_TRANSFER)
+  @JsonProperty(JSON_PROPERTY_LOCAL_BANK_TRANSFER)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setLocalBankTransfer(@javax.annotation.Nonnull LocalBankTransferAdditionalData localBankTransfer) {
-            this.localBankTransfer = localBankTransfer;
-        }
+    this.localBankTransfer = localBankTransfer;
+  }
 
-@Override
-public boolean equals(Object o) {
+  @Override
+  public boolean equals(Object o) {
     if (this == o) {
-    return true;
+      return true;
     }
     if (o == null || getClass() != o.getClass()) {
-    return false;
+      return false;
     }
-        BankTransferResponse bankTransferResponse = (BankTransferResponse) o;
-        return Objects.equals(this.ach, bankTransferResponse.ach) &&
+    BankTransferResponse bankTransferResponse = (BankTransferResponse) o;
+    return Objects.equals(this.ach, bankTransferResponse.ach) &&
         Objects.equals(this.sepa, bankTransferResponse.sepa) &&
         Objects.equals(this.bacs, bankTransferResponse.bacs) &&
         Objects.equals(this.multibanco, bankTransferResponse.multibanco) &&
@@ -481,210 +481,210 @@ public boolean equals(Object o) {
         Objects.equals(this.pix, bankTransferResponse.pix) &&
         Objects.equals(this.pse, bankTransferResponse.pse) &&
         Objects.equals(this.localBankTransfer, bankTransferResponse.localBankTransfer);
-}
+  }
 
-    @Override
-    public int hashCode() {
-        return Objects.hash(ach, sepa, bacs, multibanco, permata, bca, bniVa, briVa, cimbVa, danamonVa, mandiriVa, pix, pse, localBankTransfer);
-    }
+  @Override
+  public int hashCode() {
+    return Objects.hash(ach, sepa, bacs, multibanco, permata, bca, bniVa, briVa, cimbVa, danamonVa, mandiriVa, pix, pse, localBankTransfer);
+  }
 
-    @Override
-    public String toString() {
+  @Override
+  public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class BankTransferResponse {\n");
-        sb.append("    ach: ").append(toIndentedString(ach)).append("\n");
-        sb.append("    sepa: ").append(toIndentedString(sepa)).append("\n");
-        sb.append("    bacs: ").append(toIndentedString(bacs)).append("\n");
-        sb.append("    multibanco: ").append(toIndentedString(multibanco)).append("\n");
-        sb.append("    permata: ").append(toIndentedString(permata)).append("\n");
-        sb.append("    bca: ").append(toIndentedString(bca)).append("\n");
-        sb.append("    bniVa: ").append(toIndentedString(bniVa)).append("\n");
-        sb.append("    briVa: ").append(toIndentedString(briVa)).append("\n");
-        sb.append("    cimbVa: ").append(toIndentedString(cimbVa)).append("\n");
-        sb.append("    danamonVa: ").append(toIndentedString(danamonVa)).append("\n");
-        sb.append("    mandiriVa: ").append(toIndentedString(mandiriVa)).append("\n");
-        sb.append("    pix: ").append(toIndentedString(pix)).append("\n");
-        sb.append("    pse: ").append(toIndentedString(pse)).append("\n");
-        sb.append("    localBankTransfer: ").append(toIndentedString(localBankTransfer)).append("\n");
+    sb.append("    ach: ").append(toIndentedString(ach)).append("\n");
+    sb.append("    sepa: ").append(toIndentedString(sepa)).append("\n");
+    sb.append("    bacs: ").append(toIndentedString(bacs)).append("\n");
+    sb.append("    multibanco: ").append(toIndentedString(multibanco)).append("\n");
+    sb.append("    permata: ").append(toIndentedString(permata)).append("\n");
+    sb.append("    bca: ").append(toIndentedString(bca)).append("\n");
+    sb.append("    bniVa: ").append(toIndentedString(bniVa)).append("\n");
+    sb.append("    briVa: ").append(toIndentedString(briVa)).append("\n");
+    sb.append("    cimbVa: ").append(toIndentedString(cimbVa)).append("\n");
+    sb.append("    danamonVa: ").append(toIndentedString(danamonVa)).append("\n");
+    sb.append("    mandiriVa: ").append(toIndentedString(mandiriVa)).append("\n");
+    sb.append("    pix: ").append(toIndentedString(pix)).append("\n");
+    sb.append("    pse: ").append(toIndentedString(pse)).append("\n");
+    sb.append("    localBankTransfer: ").append(toIndentedString(localBankTransfer)).append("\n");
     sb.append("}");
     return sb.toString();
-    }
+  }
 
-    /**
-    * Convert the given object to string with each line indented by 4 spaces
-    * (except the first line).
-    */
-    private String toIndentedString(Object o) {
+  /**
+   * Convert the given object to string with each line indented by 4 spaces
+   * (except the first line).
+   */
+  private String toIndentedString(Object o) {
     if (o == null) {
-    return "null";
+      return "null";
     }
     return o.toString().replace("\n", "\n    ");
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @return URL query string
+   */
+  public String toUrlQueryString() {
+    return toUrlQueryString(null);
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @param prefix prefix of the query string
+   * @return URL query string
+   */
+  public String toUrlQueryString(String prefix) {
+    String suffix = "";
+    String containerSuffix = "";
+    String containerPrefix = "";
+    if (prefix == null) {
+      // style=form, explode=true, e.g. /pet?name=cat&type=manx
+      prefix = "";
+    } else {
+      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+      prefix = prefix + "[";
+      suffix = "]";
+      containerSuffix = "]";
+      containerPrefix = "[";
     }
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @return URL query string
-        */
-        public String toUrlQueryString() {
-        return toUrlQueryString(null);
-        }
+    StringJoiner joiner = new StringJoiner("&");
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @param prefix prefix of the query string
-        * @return URL query string
-        */
-        public String toUrlQueryString(String prefix) {
-        String suffix = "";
-        String containerSuffix = "";
-        String containerPrefix = "";
-        if (prefix == null) {
-        // style=form, explode=true, e.g. /pet?name=cat&type=manx
-        prefix = "";
-        } else {
-        // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
-        prefix = prefix + "[";
-        suffix = "]";
-        containerSuffix = "]";
-        containerPrefix = "[";
-        }
-
-        StringJoiner joiner = new StringJoiner("&");
-
-            // add `ach` to the URL query string
-                        if (getAch() != null) {
-                        try {
-                        joiner.add(String.format("%sach%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getAch()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-            // add `sepa` to the URL query string
-                        if (getSepa() != null) {
-                        try {
-                        joiner.add(String.format("%ssepa%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getSepa()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-            // add `bacs` to the URL query string
-                        if (getBacs() != null) {
-                        try {
-                        joiner.add(String.format("%sbacs%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getBacs()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-            // add `multibanco` to the URL query string
-                        if (getMultibanco() != null) {
-                        try {
-                        joiner.add(String.format("%smultibanco%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getMultibanco()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-            // add `permata` to the URL query string
-                        if (getPermata() != null) {
-                        try {
-                        joiner.add(String.format("%spermata%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getPermata()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-            // add `bca` to the URL query string
-                        if (getBca() != null) {
-                        try {
-                        joiner.add(String.format("%sbca%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getBca()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-            // add `bni_va` to the URL query string
-                        if (getBniVa() != null) {
-                        try {
-                        joiner.add(String.format("%sbni_va%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getBniVa()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-            // add `bri_va` to the URL query string
-                        if (getBriVa() != null) {
-                        try {
-                        joiner.add(String.format("%sbri_va%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getBriVa()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-            // add `cimb_va` to the URL query string
-                        if (getCimbVa() != null) {
-                        try {
-                        joiner.add(String.format("%scimb_va%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCimbVa()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-            // add `danamon_va` to the URL query string
-                        if (getDanamonVa() != null) {
-                        try {
-                        joiner.add(String.format("%sdanamon_va%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getDanamonVa()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-            // add `mandiri_va` to the URL query string
-                        if (getMandiriVa() != null) {
-                        try {
-                        joiner.add(String.format("%smandiri_va%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getMandiriVa()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-            // add `pix` to the URL query string
-                            if (getPix() != null) {
-                            joiner.add(getPix().toUrlQueryString(prefix + "pix" + suffix));
-                            }
-
-            // add `pse` to the URL query string
-                        if (getPse() != null) {
-                        try {
-                        joiner.add(String.format("%spse%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getPse()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-            // add `local_bank_transfer` to the URL query string
-                            if (getLocalBankTransfer() != null) {
-                            joiner.add(getLocalBankTransfer().toUrlQueryString(prefix + "local_bank_transfer" + suffix));
-                            }
-
-        return joiner.toString();
-        }
-
+    // add `ach` to the URL query string
+    if (getAch() != null) {
+      try {
+        joiner.add(String.format("%sach%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getAch()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
     }
+
+    // add `sepa` to the URL query string
+    if (getSepa() != null) {
+      try {
+        joiner.add(String.format("%ssepa%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getSepa()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `bacs` to the URL query string
+    if (getBacs() != null) {
+      try {
+        joiner.add(String.format("%sbacs%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getBacs()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `multibanco` to the URL query string
+    if (getMultibanco() != null) {
+      try {
+        joiner.add(String.format("%smultibanco%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getMultibanco()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `permata` to the URL query string
+    if (getPermata() != null) {
+      try {
+        joiner.add(String.format("%spermata%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getPermata()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `bca` to the URL query string
+    if (getBca() != null) {
+      try {
+        joiner.add(String.format("%sbca%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getBca()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `bni_va` to the URL query string
+    if (getBniVa() != null) {
+      try {
+        joiner.add(String.format("%sbni_va%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getBniVa()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `bri_va` to the URL query string
+    if (getBriVa() != null) {
+      try {
+        joiner.add(String.format("%sbri_va%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getBriVa()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `cimb_va` to the URL query string
+    if (getCimbVa() != null) {
+      try {
+        joiner.add(String.format("%scimb_va%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCimbVa()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `danamon_va` to the URL query string
+    if (getDanamonVa() != null) {
+      try {
+        joiner.add(String.format("%sdanamon_va%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getDanamonVa()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `mandiri_va` to the URL query string
+    if (getMandiriVa() != null) {
+      try {
+        joiner.add(String.format("%smandiri_va%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getMandiriVa()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `pix` to the URL query string
+    if (getPix() != null) {
+      joiner.add(getPix().toUrlQueryString(prefix + "pix" + suffix));
+    }
+
+    // add `pse` to the URL query string
+    if (getPse() != null) {
+      try {
+        joiner.add(String.format("%spse%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getPse()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `local_bank_transfer` to the URL query string
+    if (getLocalBankTransfer() != null) {
+      joiner.add(getLocalBankTransfer().toUrlQueryString(prefix + "local_bank_transfer" + suffix));
+    }
+
+    return joiner.toString();
+  }
+
+}
 

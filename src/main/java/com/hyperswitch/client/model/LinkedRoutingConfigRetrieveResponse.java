@@ -35,140 +35,140 @@ import java.net.URLEncoder;
 import java.util.StringJoiner;
 
 /**
-* LinkedRoutingConfigRetrieveResponse
-*/
-    @JsonPropertyOrder({
-        LinkedRoutingConfigRetrieveResponse.JSON_PROPERTY_ALGORITHM
-    })
+ * LinkedRoutingConfigRetrieveResponse
+ */
+@JsonPropertyOrder({
+  LinkedRoutingConfigRetrieveResponse.JSON_PROPERTY_ALGORITHM
+})
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class LinkedRoutingConfigRetrieveResponse {
-        public static final String JSON_PROPERTY_ALGORITHM = "algorithm";
-    @javax.annotation.Nullable
-            private JsonNullable<MerchantRoutingAlgorithm> algorithm = JsonNullable.<MerchantRoutingAlgorithm>undefined();
+  public static final String JSON_PROPERTY_ALGORITHM = "algorithm";
+  @javax.annotation.Nullable
+  private JsonNullable<MerchantRoutingAlgorithm> algorithm = JsonNullable.<MerchantRoutingAlgorithm>undefined();
 
-public LinkedRoutingConfigRetrieveResponse() {
-}
+  public LinkedRoutingConfigRetrieveResponse() {
+  }
 
-        public LinkedRoutingConfigRetrieveResponse algorithm(@javax.annotation.Nullable MerchantRoutingAlgorithm algorithm) {
-        this.algorithm = JsonNullable.<MerchantRoutingAlgorithm>of(algorithm);
-        
-        return this;
-        }
-
-    /**
-        * Get algorithm
-    * @return algorithm
-    */
-    @javax.annotation.Nullable
-        @JsonIgnore
+  public LinkedRoutingConfigRetrieveResponse algorithm(@javax.annotation.Nullable MerchantRoutingAlgorithm algorithm) {
+    this.algorithm = JsonNullable.<MerchantRoutingAlgorithm>of(algorithm);
     
-    public MerchantRoutingAlgorithm getAlgorithm() {
-                return algorithm.orElse(null);
-    }
+    return this;
+  }
 
-          @JsonProperty(JSON_PROPERTY_ALGORITHM)
+  /**
+   * Get algorithm
+   * @return algorithm
+   */
+  @javax.annotation.Nullable
+  @JsonIgnore
+
+  public MerchantRoutingAlgorithm getAlgorithm() {
+        return algorithm.orElse(null);
+  }
+
+  @JsonProperty(JSON_PROPERTY_ALGORITHM)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-        public JsonNullable<MerchantRoutingAlgorithm> getAlgorithm_JsonNullable() {
-        return algorithm;
-        }
-    
-        @JsonProperty(JSON_PROPERTY_ALGORITHM)
-        public void setAlgorithm_JsonNullable(JsonNullable<MerchantRoutingAlgorithm> algorithm) {
-        this.algorithm = algorithm;
-        }
+  public JsonNullable<MerchantRoutingAlgorithm> getAlgorithm_JsonNullable() {
+    return algorithm;
+  }
+  
+  @JsonProperty(JSON_PROPERTY_ALGORITHM)
+  public void setAlgorithm_JsonNullable(JsonNullable<MerchantRoutingAlgorithm> algorithm) {
+    this.algorithm = algorithm;
+  }
 
-          public void setAlgorithm(@javax.annotation.Nullable MerchantRoutingAlgorithm algorithm) {
-            this.algorithm = JsonNullable.<MerchantRoutingAlgorithm>of(algorithm);
-        }
+  public void setAlgorithm(@javax.annotation.Nullable MerchantRoutingAlgorithm algorithm) {
+    this.algorithm = JsonNullable.<MerchantRoutingAlgorithm>of(algorithm);
+  }
 
-@Override
-public boolean equals(Object o) {
+  @Override
+  public boolean equals(Object o) {
     if (this == o) {
-    return true;
+      return true;
     }
     if (o == null || getClass() != o.getClass()) {
-    return false;
+      return false;
     }
-        LinkedRoutingConfigRetrieveResponse linkedRoutingConfigRetrieveResponse = (LinkedRoutingConfigRetrieveResponse) o;
-        return equalsNullable(this.algorithm, linkedRoutingConfigRetrieveResponse.algorithm);
-}
+    LinkedRoutingConfigRetrieveResponse linkedRoutingConfigRetrieveResponse = (LinkedRoutingConfigRetrieveResponse) o;
+    return equalsNullable(this.algorithm, linkedRoutingConfigRetrieveResponse.algorithm);
+  }
 
-    private static <T> boolean equalsNullable(JsonNullable<T> a, JsonNullable<T> b) {
-        return a == b || (a != null && b != null && a.isPresent() && b.isPresent() && Objects.deepEquals(a.get(), b.get()));
-        }
+  private static <T> boolean equalsNullable(JsonNullable<T> a, JsonNullable<T> b) {
+    return a == b || (a != null && b != null && a.isPresent() && b.isPresent() && Objects.deepEquals(a.get(), b.get()));
+  }
 
-    @Override
-    public int hashCode() {
-        return Objects.hash(hashCodeNullable(algorithm));
+  @Override
+  public int hashCode() {
+    return Objects.hash(hashCodeNullable(algorithm));
+  }
+
+  private static <T> int hashCodeNullable(JsonNullable<T> a) {
+    if (a == null) {
+      return 1;
     }
+    return a.isPresent() ? Arrays.deepHashCode(new Object[]{a.get()}) : 31;
+  }
 
-        private static <T> int hashCodeNullable(JsonNullable<T> a) {
-        if (a == null) {
-        return 1;
-        }
-        return a.isPresent() ? Arrays.deepHashCode(new Object[]{a.get()}) : 31;
-        }
-
-    @Override
-    public String toString() {
+  @Override
+  public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class LinkedRoutingConfigRetrieveResponse {\n");
-        sb.append("    algorithm: ").append(toIndentedString(algorithm)).append("\n");
+    sb.append("    algorithm: ").append(toIndentedString(algorithm)).append("\n");
     sb.append("}");
     return sb.toString();
-    }
+  }
 
-    /**
-    * Convert the given object to string with each line indented by 4 spaces
-    * (except the first line).
-    */
-    private String toIndentedString(Object o) {
+  /**
+   * Convert the given object to string with each line indented by 4 spaces
+   * (except the first line).
+   */
+  private String toIndentedString(Object o) {
     if (o == null) {
-    return "null";
+      return "null";
     }
     return o.toString().replace("\n", "\n    ");
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @return URL query string
+   */
+  public String toUrlQueryString() {
+    return toUrlQueryString(null);
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @param prefix prefix of the query string
+   * @return URL query string
+   */
+  public String toUrlQueryString(String prefix) {
+    String suffix = "";
+    String containerSuffix = "";
+    String containerPrefix = "";
+    if (prefix == null) {
+      // style=form, explode=true, e.g. /pet?name=cat&type=manx
+      prefix = "";
+    } else {
+      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+      prefix = prefix + "[";
+      suffix = "]";
+      containerSuffix = "]";
+      containerPrefix = "[";
     }
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @return URL query string
-        */
-        public String toUrlQueryString() {
-        return toUrlQueryString(null);
-        }
+    StringJoiner joiner = new StringJoiner("&");
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @param prefix prefix of the query string
-        * @return URL query string
-        */
-        public String toUrlQueryString(String prefix) {
-        String suffix = "";
-        String containerSuffix = "";
-        String containerPrefix = "";
-        if (prefix == null) {
-        // style=form, explode=true, e.g. /pet?name=cat&type=manx
-        prefix = "";
-        } else {
-        // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
-        prefix = prefix + "[";
-        suffix = "]";
-        containerSuffix = "]";
-        containerPrefix = "[";
-        }
-
-        StringJoiner joiner = new StringJoiner("&");
-
-            // add `algorithm` to the URL query string
-                            if (getAlgorithm() != null) {
-                            joiner.add(getAlgorithm().toUrlQueryString(prefix + "algorithm" + suffix));
-                            }
-
-        return joiner.toString();
-        }
-
+    // add `algorithm` to the URL query string
+    if (getAlgorithm() != null) {
+      joiner.add(getAlgorithm().toUrlQueryString(prefix + "algorithm" + suffix));
     }
+
+    return joiner.toString();
+  }
+
+}
 

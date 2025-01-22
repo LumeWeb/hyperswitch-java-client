@@ -27,252 +27,252 @@ import java.net.URLEncoder;
 import java.util.StringJoiner;
 
 /**
-* CustomerDeleteResponse
-*/
-    @JsonPropertyOrder({
-        CustomerDeleteResponse.JSON_PROPERTY_CUSTOMER_ID,
-        CustomerDeleteResponse.JSON_PROPERTY_CUSTOMER_DELETED,
-        CustomerDeleteResponse.JSON_PROPERTY_ADDRESS_DELETED,
-        CustomerDeleteResponse.JSON_PROPERTY_PAYMENT_METHODS_DELETED
-    })
+ * CustomerDeleteResponse
+ */
+@JsonPropertyOrder({
+  CustomerDeleteResponse.JSON_PROPERTY_CUSTOMER_ID,
+  CustomerDeleteResponse.JSON_PROPERTY_CUSTOMER_DELETED,
+  CustomerDeleteResponse.JSON_PROPERTY_ADDRESS_DELETED,
+  CustomerDeleteResponse.JSON_PROPERTY_PAYMENT_METHODS_DELETED
+})
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class CustomerDeleteResponse {
-        public static final String JSON_PROPERTY_CUSTOMER_ID = "customer_id";
-    @javax.annotation.Nonnull
-            private String customerId;
+  public static final String JSON_PROPERTY_CUSTOMER_ID = "customer_id";
+  @javax.annotation.Nonnull
+  private String customerId;
 
-        public static final String JSON_PROPERTY_CUSTOMER_DELETED = "customer_deleted";
-    @javax.annotation.Nonnull
-            private Boolean customerDeleted;
+  public static final String JSON_PROPERTY_CUSTOMER_DELETED = "customer_deleted";
+  @javax.annotation.Nonnull
+  private Boolean customerDeleted;
 
-        public static final String JSON_PROPERTY_ADDRESS_DELETED = "address_deleted";
-    @javax.annotation.Nonnull
-            private Boolean addressDeleted;
+  public static final String JSON_PROPERTY_ADDRESS_DELETED = "address_deleted";
+  @javax.annotation.Nonnull
+  private Boolean addressDeleted;
 
-        public static final String JSON_PROPERTY_PAYMENT_METHODS_DELETED = "payment_methods_deleted";
-    @javax.annotation.Nonnull
-            private Boolean paymentMethodsDeleted;
+  public static final String JSON_PROPERTY_PAYMENT_METHODS_DELETED = "payment_methods_deleted";
+  @javax.annotation.Nonnull
+  private Boolean paymentMethodsDeleted;
 
-public CustomerDeleteResponse() {
-}
+  public CustomerDeleteResponse() {
+  }
 
-        public CustomerDeleteResponse customerId(@javax.annotation.Nonnull String customerId) {
-        
-        this.customerId = customerId;
-        return this;
-        }
+  public CustomerDeleteResponse customerId(@javax.annotation.Nonnull String customerId) {
+    
+    this.customerId = customerId;
+    return this;
+  }
 
-    /**
-        * The identifier for the customer object
-    * @return customerId
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_CUSTOMER_ID)
+  /**
+   * The identifier for the customer object
+   * @return customerId
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_CUSTOMER_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public String getCustomerId() {
-        return customerId;
-    }
+  public String getCustomerId() {
+    return customerId;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_CUSTOMER_ID)
+  @JsonProperty(JSON_PROPERTY_CUSTOMER_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setCustomerId(@javax.annotation.Nonnull String customerId) {
-            this.customerId = customerId;
-        }
+    this.customerId = customerId;
+  }
 
-        public CustomerDeleteResponse customerDeleted(@javax.annotation.Nonnull Boolean customerDeleted) {
-        
-        this.customerDeleted = customerDeleted;
-        return this;
-        }
+  public CustomerDeleteResponse customerDeleted(@javax.annotation.Nonnull Boolean customerDeleted) {
+    
+    this.customerDeleted = customerDeleted;
+    return this;
+  }
 
-    /**
-        * Whether customer was deleted or not
-    * @return customerDeleted
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_CUSTOMER_DELETED)
+  /**
+   * Whether customer was deleted or not
+   * @return customerDeleted
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_CUSTOMER_DELETED)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public Boolean getCustomerDeleted() {
-        return customerDeleted;
-    }
+  public Boolean getCustomerDeleted() {
+    return customerDeleted;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_CUSTOMER_DELETED)
+  @JsonProperty(JSON_PROPERTY_CUSTOMER_DELETED)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setCustomerDeleted(@javax.annotation.Nonnull Boolean customerDeleted) {
-            this.customerDeleted = customerDeleted;
-        }
+    this.customerDeleted = customerDeleted;
+  }
 
-        public CustomerDeleteResponse addressDeleted(@javax.annotation.Nonnull Boolean addressDeleted) {
-        
-        this.addressDeleted = addressDeleted;
-        return this;
-        }
+  public CustomerDeleteResponse addressDeleted(@javax.annotation.Nonnull Boolean addressDeleted) {
+    
+    this.addressDeleted = addressDeleted;
+    return this;
+  }
 
-    /**
-        * Whether address was deleted or not
-    * @return addressDeleted
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_ADDRESS_DELETED)
+  /**
+   * Whether address was deleted or not
+   * @return addressDeleted
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_ADDRESS_DELETED)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public Boolean getAddressDeleted() {
-        return addressDeleted;
-    }
+  public Boolean getAddressDeleted() {
+    return addressDeleted;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_ADDRESS_DELETED)
+  @JsonProperty(JSON_PROPERTY_ADDRESS_DELETED)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setAddressDeleted(@javax.annotation.Nonnull Boolean addressDeleted) {
-            this.addressDeleted = addressDeleted;
-        }
+    this.addressDeleted = addressDeleted;
+  }
 
-        public CustomerDeleteResponse paymentMethodsDeleted(@javax.annotation.Nonnull Boolean paymentMethodsDeleted) {
-        
-        this.paymentMethodsDeleted = paymentMethodsDeleted;
-        return this;
-        }
+  public CustomerDeleteResponse paymentMethodsDeleted(@javax.annotation.Nonnull Boolean paymentMethodsDeleted) {
+    
+    this.paymentMethodsDeleted = paymentMethodsDeleted;
+    return this;
+  }
 
-    /**
-        * Whether payment methods deleted or not
-    * @return paymentMethodsDeleted
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_PAYMENT_METHODS_DELETED)
+  /**
+   * Whether payment methods deleted or not
+   * @return paymentMethodsDeleted
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_PAYMENT_METHODS_DELETED)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public Boolean getPaymentMethodsDeleted() {
-        return paymentMethodsDeleted;
-    }
+  public Boolean getPaymentMethodsDeleted() {
+    return paymentMethodsDeleted;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_PAYMENT_METHODS_DELETED)
+  @JsonProperty(JSON_PROPERTY_PAYMENT_METHODS_DELETED)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setPaymentMethodsDeleted(@javax.annotation.Nonnull Boolean paymentMethodsDeleted) {
-            this.paymentMethodsDeleted = paymentMethodsDeleted;
-        }
+    this.paymentMethodsDeleted = paymentMethodsDeleted;
+  }
 
-@Override
-public boolean equals(Object o) {
+  @Override
+  public boolean equals(Object o) {
     if (this == o) {
-    return true;
+      return true;
     }
     if (o == null || getClass() != o.getClass()) {
-    return false;
+      return false;
     }
-        CustomerDeleteResponse customerDeleteResponse = (CustomerDeleteResponse) o;
-        return Objects.equals(this.customerId, customerDeleteResponse.customerId) &&
+    CustomerDeleteResponse customerDeleteResponse = (CustomerDeleteResponse) o;
+    return Objects.equals(this.customerId, customerDeleteResponse.customerId) &&
         Objects.equals(this.customerDeleted, customerDeleteResponse.customerDeleted) &&
         Objects.equals(this.addressDeleted, customerDeleteResponse.addressDeleted) &&
         Objects.equals(this.paymentMethodsDeleted, customerDeleteResponse.paymentMethodsDeleted);
-}
+  }
 
-    @Override
-    public int hashCode() {
-        return Objects.hash(customerId, customerDeleted, addressDeleted, paymentMethodsDeleted);
-    }
+  @Override
+  public int hashCode() {
+    return Objects.hash(customerId, customerDeleted, addressDeleted, paymentMethodsDeleted);
+  }
 
-    @Override
-    public String toString() {
+  @Override
+  public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class CustomerDeleteResponse {\n");
-        sb.append("    customerId: ").append(toIndentedString(customerId)).append("\n");
-        sb.append("    customerDeleted: ").append(toIndentedString(customerDeleted)).append("\n");
-        sb.append("    addressDeleted: ").append(toIndentedString(addressDeleted)).append("\n");
-        sb.append("    paymentMethodsDeleted: ").append(toIndentedString(paymentMethodsDeleted)).append("\n");
+    sb.append("    customerId: ").append(toIndentedString(customerId)).append("\n");
+    sb.append("    customerDeleted: ").append(toIndentedString(customerDeleted)).append("\n");
+    sb.append("    addressDeleted: ").append(toIndentedString(addressDeleted)).append("\n");
+    sb.append("    paymentMethodsDeleted: ").append(toIndentedString(paymentMethodsDeleted)).append("\n");
     sb.append("}");
     return sb.toString();
-    }
+  }
 
-    /**
-    * Convert the given object to string with each line indented by 4 spaces
-    * (except the first line).
-    */
-    private String toIndentedString(Object o) {
+  /**
+   * Convert the given object to string with each line indented by 4 spaces
+   * (except the first line).
+   */
+  private String toIndentedString(Object o) {
     if (o == null) {
-    return "null";
+      return "null";
     }
     return o.toString().replace("\n", "\n    ");
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @return URL query string
+   */
+  public String toUrlQueryString() {
+    return toUrlQueryString(null);
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @param prefix prefix of the query string
+   * @return URL query string
+   */
+  public String toUrlQueryString(String prefix) {
+    String suffix = "";
+    String containerSuffix = "";
+    String containerPrefix = "";
+    if (prefix == null) {
+      // style=form, explode=true, e.g. /pet?name=cat&type=manx
+      prefix = "";
+    } else {
+      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+      prefix = prefix + "[";
+      suffix = "]";
+      containerSuffix = "]";
+      containerPrefix = "[";
     }
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @return URL query string
-        */
-        public String toUrlQueryString() {
-        return toUrlQueryString(null);
-        }
+    StringJoiner joiner = new StringJoiner("&");
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @param prefix prefix of the query string
-        * @return URL query string
-        */
-        public String toUrlQueryString(String prefix) {
-        String suffix = "";
-        String containerSuffix = "";
-        String containerPrefix = "";
-        if (prefix == null) {
-        // style=form, explode=true, e.g. /pet?name=cat&type=manx
-        prefix = "";
-        } else {
-        // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
-        prefix = prefix + "[";
-        suffix = "]";
-        containerSuffix = "]";
-        containerPrefix = "[";
-        }
-
-        StringJoiner joiner = new StringJoiner("&");
-
-            // add `customer_id` to the URL query string
-                        if (getCustomerId() != null) {
-                        try {
-                        joiner.add(String.format("%scustomer_id%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCustomerId()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-            // add `customer_deleted` to the URL query string
-                        if (getCustomerDeleted() != null) {
-                        try {
-                        joiner.add(String.format("%scustomer_deleted%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCustomerDeleted()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-            // add `address_deleted` to the URL query string
-                        if (getAddressDeleted() != null) {
-                        try {
-                        joiner.add(String.format("%saddress_deleted%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getAddressDeleted()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-            // add `payment_methods_deleted` to the URL query string
-                        if (getPaymentMethodsDeleted() != null) {
-                        try {
-                        joiner.add(String.format("%spayment_methods_deleted%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getPaymentMethodsDeleted()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-        return joiner.toString();
-        }
-
+    // add `customer_id` to the URL query string
+    if (getCustomerId() != null) {
+      try {
+        joiner.add(String.format("%scustomer_id%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCustomerId()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
     }
+
+    // add `customer_deleted` to the URL query string
+    if (getCustomerDeleted() != null) {
+      try {
+        joiner.add(String.format("%scustomer_deleted%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCustomerDeleted()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `address_deleted` to the URL query string
+    if (getAddressDeleted() != null) {
+      try {
+        joiner.add(String.format("%saddress_deleted%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getAddressDeleted()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `payment_methods_deleted` to the URL query string
+    if (getPaymentMethodsDeleted() != null) {
+      try {
+        joiner.add(String.format("%spayment_methods_deleted%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getPaymentMethodsDeleted()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    return joiner.toString();
+  }
+
+}
 

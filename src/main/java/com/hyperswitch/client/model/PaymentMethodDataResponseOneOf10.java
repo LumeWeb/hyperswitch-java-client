@@ -28,122 +28,122 @@ import java.net.URLEncoder;
 import java.util.StringJoiner;
 
 /**
-* PaymentMethodDataResponseOneOf10
-*/
-    @JsonPropertyOrder({
-        PaymentMethodDataResponseOneOf10.JSON_PROPERTY_UPI
-    })
-            @JsonTypeName("PaymentMethodDataResponse_oneOf_10")
+ * PaymentMethodDataResponseOneOf10
+ */
+@JsonPropertyOrder({
+  PaymentMethodDataResponseOneOf10.JSON_PROPERTY_UPI
+})
+@JsonTypeName("PaymentMethodDataResponse_oneOf_10")
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class PaymentMethodDataResponseOneOf10 {
-        public static final String JSON_PROPERTY_UPI = "upi";
-    @javax.annotation.Nonnull
-            private UpiResponse upi;
+  public static final String JSON_PROPERTY_UPI = "upi";
+  @javax.annotation.Nonnull
+  private UpiResponse upi;
 
-public PaymentMethodDataResponseOneOf10() {
-}
+  public PaymentMethodDataResponseOneOf10() {
+  }
 
-        public PaymentMethodDataResponseOneOf10 upi(@javax.annotation.Nonnull UpiResponse upi) {
-        
-        this.upi = upi;
-        return this;
-        }
+  public PaymentMethodDataResponseOneOf10 upi(@javax.annotation.Nonnull UpiResponse upi) {
+    
+    this.upi = upi;
+    return this;
+  }
 
-    /**
-        * Get upi
-    * @return upi
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_UPI)
+  /**
+   * Get upi
+   * @return upi
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_UPI)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public UpiResponse getUpi() {
-        return upi;
-    }
+  public UpiResponse getUpi() {
+    return upi;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_UPI)
+  @JsonProperty(JSON_PROPERTY_UPI)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setUpi(@javax.annotation.Nonnull UpiResponse upi) {
-            this.upi = upi;
-        }
+    this.upi = upi;
+  }
 
-@Override
-public boolean equals(Object o) {
+  @Override
+  public boolean equals(Object o) {
     if (this == o) {
-    return true;
+      return true;
     }
     if (o == null || getClass() != o.getClass()) {
-    return false;
+      return false;
     }
-        PaymentMethodDataResponseOneOf10 paymentMethodDataResponseOneOf10 = (PaymentMethodDataResponseOneOf10) o;
-        return Objects.equals(this.upi, paymentMethodDataResponseOneOf10.upi);
-}
+    PaymentMethodDataResponseOneOf10 paymentMethodDataResponseOneOf10 = (PaymentMethodDataResponseOneOf10) o;
+    return Objects.equals(this.upi, paymentMethodDataResponseOneOf10.upi);
+  }
 
-    @Override
-    public int hashCode() {
-        return Objects.hash(upi);
-    }
+  @Override
+  public int hashCode() {
+    return Objects.hash(upi);
+  }
 
-    @Override
-    public String toString() {
+  @Override
+  public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class PaymentMethodDataResponseOneOf10 {\n");
-        sb.append("    upi: ").append(toIndentedString(upi)).append("\n");
+    sb.append("    upi: ").append(toIndentedString(upi)).append("\n");
     sb.append("}");
     return sb.toString();
-    }
+  }
 
-    /**
-    * Convert the given object to string with each line indented by 4 spaces
-    * (except the first line).
-    */
-    private String toIndentedString(Object o) {
+  /**
+   * Convert the given object to string with each line indented by 4 spaces
+   * (except the first line).
+   */
+  private String toIndentedString(Object o) {
     if (o == null) {
-    return "null";
+      return "null";
     }
     return o.toString().replace("\n", "\n    ");
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @return URL query string
+   */
+  public String toUrlQueryString() {
+    return toUrlQueryString(null);
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @param prefix prefix of the query string
+   * @return URL query string
+   */
+  public String toUrlQueryString(String prefix) {
+    String suffix = "";
+    String containerSuffix = "";
+    String containerPrefix = "";
+    if (prefix == null) {
+      // style=form, explode=true, e.g. /pet?name=cat&type=manx
+      prefix = "";
+    } else {
+      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+      prefix = prefix + "[";
+      suffix = "]";
+      containerSuffix = "]";
+      containerPrefix = "[";
     }
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @return URL query string
-        */
-        public String toUrlQueryString() {
-        return toUrlQueryString(null);
-        }
+    StringJoiner joiner = new StringJoiner("&");
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @param prefix prefix of the query string
-        * @return URL query string
-        */
-        public String toUrlQueryString(String prefix) {
-        String suffix = "";
-        String containerSuffix = "";
-        String containerPrefix = "";
-        if (prefix == null) {
-        // style=form, explode=true, e.g. /pet?name=cat&type=manx
-        prefix = "";
-        } else {
-        // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
-        prefix = prefix + "[";
-        suffix = "]";
-        containerSuffix = "]";
-        containerPrefix = "[";
-        }
-
-        StringJoiner joiner = new StringJoiner("&");
-
-            // add `upi` to the URL query string
-                            if (getUpi() != null) {
-                            joiner.add(getUpi().toUrlQueryString(prefix + "upi" + suffix));
-                            }
-
-        return joiner.toString();
-        }
-
+    // add `upi` to the URL query string
+    if (getUpi() != null) {
+      joiner.add(getUpi().toUrlQueryString(prefix + "upi" + suffix));
     }
+
+    return joiner.toString();
+  }
+
+}
 

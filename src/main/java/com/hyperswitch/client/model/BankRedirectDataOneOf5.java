@@ -28,122 +28,122 @@ import java.net.URLEncoder;
 import java.util.StringJoiner;
 
 /**
-* BankRedirectDataOneOf5
-*/
-    @JsonPropertyOrder({
-        BankRedirectDataOneOf5.JSON_PROPERTY_IDEAL
-    })
-            @JsonTypeName("BankRedirectData_oneOf_5")
+ * BankRedirectDataOneOf5
+ */
+@JsonPropertyOrder({
+  BankRedirectDataOneOf5.JSON_PROPERTY_IDEAL
+})
+@JsonTypeName("BankRedirectData_oneOf_5")
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class BankRedirectDataOneOf5 {
-        public static final String JSON_PROPERTY_IDEAL = "ideal";
-    @javax.annotation.Nonnull
-            private BankRedirectDataOneOf3Eps ideal;
+  public static final String JSON_PROPERTY_IDEAL = "ideal";
+  @javax.annotation.Nonnull
+  private BankRedirectDataOneOf3Eps ideal;
 
-public BankRedirectDataOneOf5() {
-}
+  public BankRedirectDataOneOf5() {
+  }
 
-        public BankRedirectDataOneOf5 ideal(@javax.annotation.Nonnull BankRedirectDataOneOf3Eps ideal) {
-        
-        this.ideal = ideal;
-        return this;
-        }
+  public BankRedirectDataOneOf5 ideal(@javax.annotation.Nonnull BankRedirectDataOneOf3Eps ideal) {
+    
+    this.ideal = ideal;
+    return this;
+  }
 
-    /**
-        * Get ideal
-    * @return ideal
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_IDEAL)
+  /**
+   * Get ideal
+   * @return ideal
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_IDEAL)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public BankRedirectDataOneOf3Eps getIdeal() {
-        return ideal;
-    }
+  public BankRedirectDataOneOf3Eps getIdeal() {
+    return ideal;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_IDEAL)
+  @JsonProperty(JSON_PROPERTY_IDEAL)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setIdeal(@javax.annotation.Nonnull BankRedirectDataOneOf3Eps ideal) {
-            this.ideal = ideal;
-        }
+    this.ideal = ideal;
+  }
 
-@Override
-public boolean equals(Object o) {
+  @Override
+  public boolean equals(Object o) {
     if (this == o) {
-    return true;
+      return true;
     }
     if (o == null || getClass() != o.getClass()) {
-    return false;
+      return false;
     }
-        BankRedirectDataOneOf5 bankRedirectDataOneOf5 = (BankRedirectDataOneOf5) o;
-        return Objects.equals(this.ideal, bankRedirectDataOneOf5.ideal);
-}
+    BankRedirectDataOneOf5 bankRedirectDataOneOf5 = (BankRedirectDataOneOf5) o;
+    return Objects.equals(this.ideal, bankRedirectDataOneOf5.ideal);
+  }
 
-    @Override
-    public int hashCode() {
-        return Objects.hash(ideal);
-    }
+  @Override
+  public int hashCode() {
+    return Objects.hash(ideal);
+  }
 
-    @Override
-    public String toString() {
+  @Override
+  public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class BankRedirectDataOneOf5 {\n");
-        sb.append("    ideal: ").append(toIndentedString(ideal)).append("\n");
+    sb.append("    ideal: ").append(toIndentedString(ideal)).append("\n");
     sb.append("}");
     return sb.toString();
-    }
+  }
 
-    /**
-    * Convert the given object to string with each line indented by 4 spaces
-    * (except the first line).
-    */
-    private String toIndentedString(Object o) {
+  /**
+   * Convert the given object to string with each line indented by 4 spaces
+   * (except the first line).
+   */
+  private String toIndentedString(Object o) {
     if (o == null) {
-    return "null";
+      return "null";
     }
     return o.toString().replace("\n", "\n    ");
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @return URL query string
+   */
+  public String toUrlQueryString() {
+    return toUrlQueryString(null);
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @param prefix prefix of the query string
+   * @return URL query string
+   */
+  public String toUrlQueryString(String prefix) {
+    String suffix = "";
+    String containerSuffix = "";
+    String containerPrefix = "";
+    if (prefix == null) {
+      // style=form, explode=true, e.g. /pet?name=cat&type=manx
+      prefix = "";
+    } else {
+      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+      prefix = prefix + "[";
+      suffix = "]";
+      containerSuffix = "]";
+      containerPrefix = "[";
     }
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @return URL query string
-        */
-        public String toUrlQueryString() {
-        return toUrlQueryString(null);
-        }
+    StringJoiner joiner = new StringJoiner("&");
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @param prefix prefix of the query string
-        * @return URL query string
-        */
-        public String toUrlQueryString(String prefix) {
-        String suffix = "";
-        String containerSuffix = "";
-        String containerPrefix = "";
-        if (prefix == null) {
-        // style=form, explode=true, e.g. /pet?name=cat&type=manx
-        prefix = "";
-        } else {
-        // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
-        prefix = prefix + "[";
-        suffix = "]";
-        containerSuffix = "]";
-        containerPrefix = "[";
-        }
-
-        StringJoiner joiner = new StringJoiner("&");
-
-            // add `ideal` to the URL query string
-                            if (getIdeal() != null) {
-                            joiner.add(getIdeal().toUrlQueryString(prefix + "ideal" + suffix));
-                            }
-
-        return joiner.toString();
-        }
-
+    // add `ideal` to the URL query string
+    if (getIdeal() != null) {
+      joiner.add(getIdeal().toUrlQueryString(prefix + "ideal" + suffix));
     }
+
+    return joiner.toString();
+  }
+
+}
 

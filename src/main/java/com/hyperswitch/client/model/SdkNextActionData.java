@@ -32,187 +32,187 @@ import java.net.URLEncoder;
 import java.util.StringJoiner;
 
 /**
-* SdkNextActionData
-*/
-    @JsonPropertyOrder({
-        SdkNextActionData.JSON_PROPERTY_NEXT_ACTION,
-        SdkNextActionData.JSON_PROPERTY_ORDER_ID
-    })
+ * SdkNextActionData
+ */
+@JsonPropertyOrder({
+  SdkNextActionData.JSON_PROPERTY_NEXT_ACTION,
+  SdkNextActionData.JSON_PROPERTY_ORDER_ID
+})
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class SdkNextActionData {
-        public static final String JSON_PROPERTY_NEXT_ACTION = "next_action";
-    @javax.annotation.Nonnull
-            private NextActionCall nextAction;
+  public static final String JSON_PROPERTY_NEXT_ACTION = "next_action";
+  @javax.annotation.Nonnull
+  private NextActionCall nextAction;
 
-        public static final String JSON_PROPERTY_ORDER_ID = "order_id";
-    @javax.annotation.Nullable
-            private JsonNullable<String> orderId = JsonNullable.<String>undefined();
+  public static final String JSON_PROPERTY_ORDER_ID = "order_id";
+  @javax.annotation.Nullable
+  private JsonNullable<String> orderId = JsonNullable.<String>undefined();
 
-public SdkNextActionData() {
-}
+  public SdkNextActionData() {
+  }
 
-        public SdkNextActionData nextAction(@javax.annotation.Nonnull NextActionCall nextAction) {
-        
-        this.nextAction = nextAction;
-        return this;
-        }
+  public SdkNextActionData nextAction(@javax.annotation.Nonnull NextActionCall nextAction) {
+    
+    this.nextAction = nextAction;
+    return this;
+  }
 
-    /**
-        * Get nextAction
-    * @return nextAction
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_NEXT_ACTION)
+  /**
+   * Get nextAction
+   * @return nextAction
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_NEXT_ACTION)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public NextActionCall getNextAction() {
-        return nextAction;
-    }
+  public NextActionCall getNextAction() {
+    return nextAction;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_NEXT_ACTION)
+  @JsonProperty(JSON_PROPERTY_NEXT_ACTION)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setNextAction(@javax.annotation.Nonnull NextActionCall nextAction) {
-            this.nextAction = nextAction;
-        }
+    this.nextAction = nextAction;
+  }
 
-        public SdkNextActionData orderId(@javax.annotation.Nullable String orderId) {
-        this.orderId = JsonNullable.<String>of(orderId);
-        
-        return this;
-        }
-
-    /**
-        * Get orderId
-    * @return orderId
-    */
-    @javax.annotation.Nullable
-        @JsonIgnore
+  public SdkNextActionData orderId(@javax.annotation.Nullable String orderId) {
+    this.orderId = JsonNullable.<String>of(orderId);
     
-    public String getOrderId() {
-                return orderId.orElse(null);
-    }
+    return this;
+  }
 
-          @JsonProperty(JSON_PROPERTY_ORDER_ID)
+  /**
+   * Get orderId
+   * @return orderId
+   */
+  @javax.annotation.Nullable
+  @JsonIgnore
+
+  public String getOrderId() {
+        return orderId.orElse(null);
+  }
+
+  @JsonProperty(JSON_PROPERTY_ORDER_ID)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-        public JsonNullable<String> getOrderId_JsonNullable() {
-        return orderId;
-        }
-    
-        @JsonProperty(JSON_PROPERTY_ORDER_ID)
-        public void setOrderId_JsonNullable(JsonNullable<String> orderId) {
-        this.orderId = orderId;
-        }
+  public JsonNullable<String> getOrderId_JsonNullable() {
+    return orderId;
+  }
+  
+  @JsonProperty(JSON_PROPERTY_ORDER_ID)
+  public void setOrderId_JsonNullable(JsonNullable<String> orderId) {
+    this.orderId = orderId;
+  }
 
-          public void setOrderId(@javax.annotation.Nullable String orderId) {
-            this.orderId = JsonNullable.<String>of(orderId);
-        }
+  public void setOrderId(@javax.annotation.Nullable String orderId) {
+    this.orderId = JsonNullable.<String>of(orderId);
+  }
 
-@Override
-public boolean equals(Object o) {
+  @Override
+  public boolean equals(Object o) {
     if (this == o) {
-    return true;
+      return true;
     }
     if (o == null || getClass() != o.getClass()) {
-    return false;
+      return false;
     }
-        SdkNextActionData sdkNextActionData = (SdkNextActionData) o;
-        return Objects.equals(this.nextAction, sdkNextActionData.nextAction) &&
+    SdkNextActionData sdkNextActionData = (SdkNextActionData) o;
+    return Objects.equals(this.nextAction, sdkNextActionData.nextAction) &&
         equalsNullable(this.orderId, sdkNextActionData.orderId);
-}
+  }
 
-    private static <T> boolean equalsNullable(JsonNullable<T> a, JsonNullable<T> b) {
-        return a == b || (a != null && b != null && a.isPresent() && b.isPresent() && Objects.deepEquals(a.get(), b.get()));
-        }
+  private static <T> boolean equalsNullable(JsonNullable<T> a, JsonNullable<T> b) {
+    return a == b || (a != null && b != null && a.isPresent() && b.isPresent() && Objects.deepEquals(a.get(), b.get()));
+  }
 
-    @Override
-    public int hashCode() {
-        return Objects.hash(nextAction, hashCodeNullable(orderId));
+  @Override
+  public int hashCode() {
+    return Objects.hash(nextAction, hashCodeNullable(orderId));
+  }
+
+  private static <T> int hashCodeNullable(JsonNullable<T> a) {
+    if (a == null) {
+      return 1;
     }
+    return a.isPresent() ? Arrays.deepHashCode(new Object[]{a.get()}) : 31;
+  }
 
-        private static <T> int hashCodeNullable(JsonNullable<T> a) {
-        if (a == null) {
-        return 1;
-        }
-        return a.isPresent() ? Arrays.deepHashCode(new Object[]{a.get()}) : 31;
-        }
-
-    @Override
-    public String toString() {
+  @Override
+  public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class SdkNextActionData {\n");
-        sb.append("    nextAction: ").append(toIndentedString(nextAction)).append("\n");
-        sb.append("    orderId: ").append(toIndentedString(orderId)).append("\n");
+    sb.append("    nextAction: ").append(toIndentedString(nextAction)).append("\n");
+    sb.append("    orderId: ").append(toIndentedString(orderId)).append("\n");
     sb.append("}");
     return sb.toString();
-    }
+  }
 
-    /**
-    * Convert the given object to string with each line indented by 4 spaces
-    * (except the first line).
-    */
-    private String toIndentedString(Object o) {
+  /**
+   * Convert the given object to string with each line indented by 4 spaces
+   * (except the first line).
+   */
+  private String toIndentedString(Object o) {
     if (o == null) {
-    return "null";
+      return "null";
     }
     return o.toString().replace("\n", "\n    ");
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @return URL query string
+   */
+  public String toUrlQueryString() {
+    return toUrlQueryString(null);
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @param prefix prefix of the query string
+   * @return URL query string
+   */
+  public String toUrlQueryString(String prefix) {
+    String suffix = "";
+    String containerSuffix = "";
+    String containerPrefix = "";
+    if (prefix == null) {
+      // style=form, explode=true, e.g. /pet?name=cat&type=manx
+      prefix = "";
+    } else {
+      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+      prefix = prefix + "[";
+      suffix = "]";
+      containerSuffix = "]";
+      containerPrefix = "[";
     }
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @return URL query string
-        */
-        public String toUrlQueryString() {
-        return toUrlQueryString(null);
-        }
+    StringJoiner joiner = new StringJoiner("&");
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @param prefix prefix of the query string
-        * @return URL query string
-        */
-        public String toUrlQueryString(String prefix) {
-        String suffix = "";
-        String containerSuffix = "";
-        String containerPrefix = "";
-        if (prefix == null) {
-        // style=form, explode=true, e.g. /pet?name=cat&type=manx
-        prefix = "";
-        } else {
-        // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
-        prefix = prefix + "[";
-        suffix = "]";
-        containerSuffix = "]";
-        containerPrefix = "[";
-        }
-
-        StringJoiner joiner = new StringJoiner("&");
-
-            // add `next_action` to the URL query string
-                            if (getNextAction() != null) {
-                            try {
-                            joiner.add(String.format("%snext_action%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getNextAction()), "UTF-8").replaceAll("\\+", "%20")));
-                            } catch (UnsupportedEncodingException e) {
-                            // Should never happen, UTF-8 is always supported
-                            throw new RuntimeException(e);
-                            }
-                            }
-
-            // add `order_id` to the URL query string
-                        if (getOrderId() != null) {
-                        try {
-                        joiner.add(String.format("%sorder_id%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getOrderId()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-        return joiner.toString();
-        }
-
+    // add `next_action` to the URL query string
+    if (getNextAction() != null) {
+      try {
+        joiner.add(String.format("%snext_action%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getNextAction()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
     }
+
+    // add `order_id` to the URL query string
+    if (getOrderId() != null) {
+      try {
+        joiner.add(String.format("%sorder_id%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getOrderId()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    return joiner.toString();
+  }
+
+}
 

@@ -27,127 +27,127 @@ import java.net.URLEncoder;
 import java.util.StringJoiner;
 
 /**
-* MerchantRecipientDataOneOf1
-*/
-    @JsonPropertyOrder({
-        MerchantRecipientDataOneOf1.JSON_PROPERTY_WALLET_ID
-    })
-            @JsonTypeName("MerchantRecipientData_oneOf_1")
+ * MerchantRecipientDataOneOf1
+ */
+@JsonPropertyOrder({
+  MerchantRecipientDataOneOf1.JSON_PROPERTY_WALLET_ID
+})
+@JsonTypeName("MerchantRecipientData_oneOf_1")
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class MerchantRecipientDataOneOf1 {
-        public static final String JSON_PROPERTY_WALLET_ID = "wallet_id";
-    @javax.annotation.Nullable
-            private String walletId;
+  public static final String JSON_PROPERTY_WALLET_ID = "wallet_id";
+  @javax.annotation.Nullable
+  private String walletId;
 
-public MerchantRecipientDataOneOf1() {
-}
+  public MerchantRecipientDataOneOf1() {
+  }
 
-        public MerchantRecipientDataOneOf1 walletId(@javax.annotation.Nullable String walletId) {
-        
-        this.walletId = walletId;
-        return this;
-        }
+  public MerchantRecipientDataOneOf1 walletId(@javax.annotation.Nullable String walletId) {
+    
+    this.walletId = walletId;
+    return this;
+  }
 
-    /**
-        * Get walletId
-    * @return walletId
-    */
-    @javax.annotation.Nullable
-      @JsonProperty(JSON_PROPERTY_WALLET_ID)
+  /**
+   * Get walletId
+   * @return walletId
+   */
+  @javax.annotation.Nullable
+  @JsonProperty(JSON_PROPERTY_WALLET_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public String getWalletId() {
-        return walletId;
-    }
+  public String getWalletId() {
+    return walletId;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_WALLET_ID)
+  @JsonProperty(JSON_PROPERTY_WALLET_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setWalletId(@javax.annotation.Nullable String walletId) {
-            this.walletId = walletId;
-        }
+    this.walletId = walletId;
+  }
 
-@Override
-public boolean equals(Object o) {
+  @Override
+  public boolean equals(Object o) {
     if (this == o) {
-    return true;
+      return true;
     }
     if (o == null || getClass() != o.getClass()) {
-    return false;
+      return false;
     }
-        MerchantRecipientDataOneOf1 merchantRecipientDataOneOf1 = (MerchantRecipientDataOneOf1) o;
-        return Objects.equals(this.walletId, merchantRecipientDataOneOf1.walletId);
-}
+    MerchantRecipientDataOneOf1 merchantRecipientDataOneOf1 = (MerchantRecipientDataOneOf1) o;
+    return Objects.equals(this.walletId, merchantRecipientDataOneOf1.walletId);
+  }
 
-    @Override
-    public int hashCode() {
-        return Objects.hash(walletId);
-    }
+  @Override
+  public int hashCode() {
+    return Objects.hash(walletId);
+  }
 
-    @Override
-    public String toString() {
+  @Override
+  public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class MerchantRecipientDataOneOf1 {\n");
-        sb.append("    walletId: ").append(toIndentedString(walletId)).append("\n");
+    sb.append("    walletId: ").append(toIndentedString(walletId)).append("\n");
     sb.append("}");
     return sb.toString();
-    }
+  }
 
-    /**
-    * Convert the given object to string with each line indented by 4 spaces
-    * (except the first line).
-    */
-    private String toIndentedString(Object o) {
+  /**
+   * Convert the given object to string with each line indented by 4 spaces
+   * (except the first line).
+   */
+  private String toIndentedString(Object o) {
     if (o == null) {
-    return "null";
+      return "null";
     }
     return o.toString().replace("\n", "\n    ");
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @return URL query string
+   */
+  public String toUrlQueryString() {
+    return toUrlQueryString(null);
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @param prefix prefix of the query string
+   * @return URL query string
+   */
+  public String toUrlQueryString(String prefix) {
+    String suffix = "";
+    String containerSuffix = "";
+    String containerPrefix = "";
+    if (prefix == null) {
+      // style=form, explode=true, e.g. /pet?name=cat&type=manx
+      prefix = "";
+    } else {
+      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+      prefix = prefix + "[";
+      suffix = "]";
+      containerSuffix = "]";
+      containerPrefix = "[";
     }
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @return URL query string
-        */
-        public String toUrlQueryString() {
-        return toUrlQueryString(null);
-        }
+    StringJoiner joiner = new StringJoiner("&");
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @param prefix prefix of the query string
-        * @return URL query string
-        */
-        public String toUrlQueryString(String prefix) {
-        String suffix = "";
-        String containerSuffix = "";
-        String containerPrefix = "";
-        if (prefix == null) {
-        // style=form, explode=true, e.g. /pet?name=cat&type=manx
-        prefix = "";
-        } else {
-        // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
-        prefix = prefix + "[";
-        suffix = "]";
-        containerSuffix = "]";
-        containerPrefix = "[";
-        }
-
-        StringJoiner joiner = new StringJoiner("&");
-
-            // add `wallet_id` to the URL query string
-                        if (getWalletId() != null) {
-                        try {
-                        joiner.add(String.format("%swallet_id%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getWalletId()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-        return joiner.toString();
-        }
-
+    // add `wallet_id` to the URL query string
+    if (getWalletId() != null) {
+      try {
+        joiner.add(String.format("%swallet_id%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getWalletId()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
     }
+
+    return joiner.toString();
+  }
+
+}
 

@@ -28,122 +28,122 @@ import java.net.URLEncoder;
 import java.util.StringJoiner;
 
 /**
-* PayLaterDataOneOf1
-*/
-    @JsonPropertyOrder({
-        PayLaterDataOneOf1.JSON_PROPERTY_KLARNA_SDK
-    })
-            @JsonTypeName("PayLaterData_oneOf_1")
+ * PayLaterDataOneOf1
+ */
+@JsonPropertyOrder({
+  PayLaterDataOneOf1.JSON_PROPERTY_KLARNA_SDK
+})
+@JsonTypeName("PayLaterData_oneOf_1")
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class PayLaterDataOneOf1 {
-        public static final String JSON_PROPERTY_KLARNA_SDK = "klarna_sdk";
-    @javax.annotation.Nonnull
-            private PayLaterDataOneOf1KlarnaSdk klarnaSdk;
+  public static final String JSON_PROPERTY_KLARNA_SDK = "klarna_sdk";
+  @javax.annotation.Nonnull
+  private PayLaterDataOneOf1KlarnaSdk klarnaSdk;
 
-public PayLaterDataOneOf1() {
-}
+  public PayLaterDataOneOf1() {
+  }
 
-        public PayLaterDataOneOf1 klarnaSdk(@javax.annotation.Nonnull PayLaterDataOneOf1KlarnaSdk klarnaSdk) {
-        
-        this.klarnaSdk = klarnaSdk;
-        return this;
-        }
+  public PayLaterDataOneOf1 klarnaSdk(@javax.annotation.Nonnull PayLaterDataOneOf1KlarnaSdk klarnaSdk) {
+    
+    this.klarnaSdk = klarnaSdk;
+    return this;
+  }
 
-    /**
-        * Get klarnaSdk
-    * @return klarnaSdk
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_KLARNA_SDK)
+  /**
+   * Get klarnaSdk
+   * @return klarnaSdk
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_KLARNA_SDK)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public PayLaterDataOneOf1KlarnaSdk getKlarnaSdk() {
-        return klarnaSdk;
-    }
+  public PayLaterDataOneOf1KlarnaSdk getKlarnaSdk() {
+    return klarnaSdk;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_KLARNA_SDK)
+  @JsonProperty(JSON_PROPERTY_KLARNA_SDK)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setKlarnaSdk(@javax.annotation.Nonnull PayLaterDataOneOf1KlarnaSdk klarnaSdk) {
-            this.klarnaSdk = klarnaSdk;
-        }
+    this.klarnaSdk = klarnaSdk;
+  }
 
-@Override
-public boolean equals(Object o) {
+  @Override
+  public boolean equals(Object o) {
     if (this == o) {
-    return true;
+      return true;
     }
     if (o == null || getClass() != o.getClass()) {
-    return false;
+      return false;
     }
-        PayLaterDataOneOf1 payLaterDataOneOf1 = (PayLaterDataOneOf1) o;
-        return Objects.equals(this.klarnaSdk, payLaterDataOneOf1.klarnaSdk);
-}
+    PayLaterDataOneOf1 payLaterDataOneOf1 = (PayLaterDataOneOf1) o;
+    return Objects.equals(this.klarnaSdk, payLaterDataOneOf1.klarnaSdk);
+  }
 
-    @Override
-    public int hashCode() {
-        return Objects.hash(klarnaSdk);
-    }
+  @Override
+  public int hashCode() {
+    return Objects.hash(klarnaSdk);
+  }
 
-    @Override
-    public String toString() {
+  @Override
+  public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class PayLaterDataOneOf1 {\n");
-        sb.append("    klarnaSdk: ").append(toIndentedString(klarnaSdk)).append("\n");
+    sb.append("    klarnaSdk: ").append(toIndentedString(klarnaSdk)).append("\n");
     sb.append("}");
     return sb.toString();
-    }
+  }
 
-    /**
-    * Convert the given object to string with each line indented by 4 spaces
-    * (except the first line).
-    */
-    private String toIndentedString(Object o) {
+  /**
+   * Convert the given object to string with each line indented by 4 spaces
+   * (except the first line).
+   */
+  private String toIndentedString(Object o) {
     if (o == null) {
-    return "null";
+      return "null";
     }
     return o.toString().replace("\n", "\n    ");
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @return URL query string
+   */
+  public String toUrlQueryString() {
+    return toUrlQueryString(null);
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @param prefix prefix of the query string
+   * @return URL query string
+   */
+  public String toUrlQueryString(String prefix) {
+    String suffix = "";
+    String containerSuffix = "";
+    String containerPrefix = "";
+    if (prefix == null) {
+      // style=form, explode=true, e.g. /pet?name=cat&type=manx
+      prefix = "";
+    } else {
+      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+      prefix = prefix + "[";
+      suffix = "]";
+      containerSuffix = "]";
+      containerPrefix = "[";
     }
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @return URL query string
-        */
-        public String toUrlQueryString() {
-        return toUrlQueryString(null);
-        }
+    StringJoiner joiner = new StringJoiner("&");
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @param prefix prefix of the query string
-        * @return URL query string
-        */
-        public String toUrlQueryString(String prefix) {
-        String suffix = "";
-        String containerSuffix = "";
-        String containerPrefix = "";
-        if (prefix == null) {
-        // style=form, explode=true, e.g. /pet?name=cat&type=manx
-        prefix = "";
-        } else {
-        // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
-        prefix = prefix + "[";
-        suffix = "]";
-        containerSuffix = "]";
-        containerPrefix = "[";
-        }
-
-        StringJoiner joiner = new StringJoiner("&");
-
-            // add `klarna_sdk` to the URL query string
-                            if (getKlarnaSdk() != null) {
-                            joiner.add(getKlarnaSdk().toUrlQueryString(prefix + "klarna_sdk" + suffix));
-                            }
-
-        return joiner.toString();
-        }
-
+    // add `klarna_sdk` to the URL query string
+    if (getKlarnaSdk() != null) {
+      joiner.add(getKlarnaSdk().toUrlQueryString(prefix + "klarna_sdk" + suffix));
     }
+
+    return joiner.toString();
+  }
+
+}
 

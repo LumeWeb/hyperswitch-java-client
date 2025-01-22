@@ -28,122 +28,122 @@ import java.net.URLEncoder;
 import java.util.StringJoiner;
 
 /**
-* PaymentMethodDataResponseOneOf5
-*/
-    @JsonPropertyOrder({
-        PaymentMethodDataResponseOneOf5.JSON_PROPERTY_CRYPTO
-    })
-            @JsonTypeName("PaymentMethodDataResponse_oneOf_5")
+ * PaymentMethodDataResponseOneOf5
+ */
+@JsonPropertyOrder({
+  PaymentMethodDataResponseOneOf5.JSON_PROPERTY_CRYPTO
+})
+@JsonTypeName("PaymentMethodDataResponse_oneOf_5")
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class PaymentMethodDataResponseOneOf5 {
-        public static final String JSON_PROPERTY_CRYPTO = "crypto";
-    @javax.annotation.Nonnull
-            private CryptoResponse crypto;
+  public static final String JSON_PROPERTY_CRYPTO = "crypto";
+  @javax.annotation.Nonnull
+  private CryptoResponse crypto;
 
-public PaymentMethodDataResponseOneOf5() {
-}
+  public PaymentMethodDataResponseOneOf5() {
+  }
 
-        public PaymentMethodDataResponseOneOf5 crypto(@javax.annotation.Nonnull CryptoResponse crypto) {
-        
-        this.crypto = crypto;
-        return this;
-        }
+  public PaymentMethodDataResponseOneOf5 crypto(@javax.annotation.Nonnull CryptoResponse crypto) {
+    
+    this.crypto = crypto;
+    return this;
+  }
 
-    /**
-        * Get crypto
-    * @return crypto
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_CRYPTO)
+  /**
+   * Get crypto
+   * @return crypto
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_CRYPTO)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public CryptoResponse getCrypto() {
-        return crypto;
-    }
+  public CryptoResponse getCrypto() {
+    return crypto;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_CRYPTO)
+  @JsonProperty(JSON_PROPERTY_CRYPTO)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setCrypto(@javax.annotation.Nonnull CryptoResponse crypto) {
-            this.crypto = crypto;
-        }
+    this.crypto = crypto;
+  }
 
-@Override
-public boolean equals(Object o) {
+  @Override
+  public boolean equals(Object o) {
     if (this == o) {
-    return true;
+      return true;
     }
     if (o == null || getClass() != o.getClass()) {
-    return false;
+      return false;
     }
-        PaymentMethodDataResponseOneOf5 paymentMethodDataResponseOneOf5 = (PaymentMethodDataResponseOneOf5) o;
-        return Objects.equals(this.crypto, paymentMethodDataResponseOneOf5.crypto);
-}
+    PaymentMethodDataResponseOneOf5 paymentMethodDataResponseOneOf5 = (PaymentMethodDataResponseOneOf5) o;
+    return Objects.equals(this.crypto, paymentMethodDataResponseOneOf5.crypto);
+  }
 
-    @Override
-    public int hashCode() {
-        return Objects.hash(crypto);
-    }
+  @Override
+  public int hashCode() {
+    return Objects.hash(crypto);
+  }
 
-    @Override
-    public String toString() {
+  @Override
+  public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class PaymentMethodDataResponseOneOf5 {\n");
-        sb.append("    crypto: ").append(toIndentedString(crypto)).append("\n");
+    sb.append("    crypto: ").append(toIndentedString(crypto)).append("\n");
     sb.append("}");
     return sb.toString();
-    }
+  }
 
-    /**
-    * Convert the given object to string with each line indented by 4 spaces
-    * (except the first line).
-    */
-    private String toIndentedString(Object o) {
+  /**
+   * Convert the given object to string with each line indented by 4 spaces
+   * (except the first line).
+   */
+  private String toIndentedString(Object o) {
     if (o == null) {
-    return "null";
+      return "null";
     }
     return o.toString().replace("\n", "\n    ");
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @return URL query string
+   */
+  public String toUrlQueryString() {
+    return toUrlQueryString(null);
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @param prefix prefix of the query string
+   * @return URL query string
+   */
+  public String toUrlQueryString(String prefix) {
+    String suffix = "";
+    String containerSuffix = "";
+    String containerPrefix = "";
+    if (prefix == null) {
+      // style=form, explode=true, e.g. /pet?name=cat&type=manx
+      prefix = "";
+    } else {
+      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+      prefix = prefix + "[";
+      suffix = "]";
+      containerSuffix = "]";
+      containerPrefix = "[";
     }
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @return URL query string
-        */
-        public String toUrlQueryString() {
-        return toUrlQueryString(null);
-        }
+    StringJoiner joiner = new StringJoiner("&");
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @param prefix prefix of the query string
-        * @return URL query string
-        */
-        public String toUrlQueryString(String prefix) {
-        String suffix = "";
-        String containerSuffix = "";
-        String containerPrefix = "";
-        if (prefix == null) {
-        // style=form, explode=true, e.g. /pet?name=cat&type=manx
-        prefix = "";
-        } else {
-        // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
-        prefix = prefix + "[";
-        suffix = "]";
-        containerSuffix = "]";
-        containerPrefix = "[";
-        }
-
-        StringJoiner joiner = new StringJoiner("&");
-
-            // add `crypto` to the URL query string
-                            if (getCrypto() != null) {
-                            joiner.add(getCrypto().toUrlQueryString(prefix + "crypto" + suffix));
-                            }
-
-        return joiner.toString();
-        }
-
+    // add `crypto` to the URL query string
+    if (getCrypto() != null) {
+      joiner.add(getCrypto().toUrlQueryString(prefix + "crypto" + suffix));
     }
+
+    return joiner.toString();
+  }
+
+}
 

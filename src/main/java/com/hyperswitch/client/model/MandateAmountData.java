@@ -33,329 +33,329 @@ import java.net.URLEncoder;
 import java.util.StringJoiner;
 
 /**
-* MandateAmountData
-*/
-    @JsonPropertyOrder({
-        MandateAmountData.JSON_PROPERTY_AMOUNT,
-        MandateAmountData.JSON_PROPERTY_CURRENCY,
-        MandateAmountData.JSON_PROPERTY_START_DATE,
-        MandateAmountData.JSON_PROPERTY_END_DATE,
-        MandateAmountData.JSON_PROPERTY_METADATA
-    })
+ * MandateAmountData
+ */
+@JsonPropertyOrder({
+  MandateAmountData.JSON_PROPERTY_AMOUNT,
+  MandateAmountData.JSON_PROPERTY_CURRENCY,
+  MandateAmountData.JSON_PROPERTY_START_DATE,
+  MandateAmountData.JSON_PROPERTY_END_DATE,
+  MandateAmountData.JSON_PROPERTY_METADATA
+})
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class MandateAmountData {
-        public static final String JSON_PROPERTY_AMOUNT = "amount";
-    @javax.annotation.Nonnull
-            private Long amount;
+  public static final String JSON_PROPERTY_AMOUNT = "amount";
+  @javax.annotation.Nonnull
+  private Long amount;
 
-        public static final String JSON_PROPERTY_CURRENCY = "currency";
-    @javax.annotation.Nonnull
-            private Currency currency;
+  public static final String JSON_PROPERTY_CURRENCY = "currency";
+  @javax.annotation.Nonnull
+  private Currency currency;
 
-        public static final String JSON_PROPERTY_START_DATE = "start_date";
-    @javax.annotation.Nullable
-            private JsonNullable<OffsetDateTime> startDate = JsonNullable.<OffsetDateTime>undefined();
+  public static final String JSON_PROPERTY_START_DATE = "start_date";
+  @javax.annotation.Nullable
+  private JsonNullable<OffsetDateTime> startDate = JsonNullable.<OffsetDateTime>undefined();
 
-        public static final String JSON_PROPERTY_END_DATE = "end_date";
-    @javax.annotation.Nullable
-            private JsonNullable<OffsetDateTime> endDate = JsonNullable.<OffsetDateTime>undefined();
+  public static final String JSON_PROPERTY_END_DATE = "end_date";
+  @javax.annotation.Nullable
+  private JsonNullable<OffsetDateTime> endDate = JsonNullable.<OffsetDateTime>undefined();
 
-        public static final String JSON_PROPERTY_METADATA = "metadata";
-    @javax.annotation.Nullable
-            private JsonNullable<Object> metadata = JsonNullable.<Object>undefined();
+  public static final String JSON_PROPERTY_METADATA = "metadata";
+  @javax.annotation.Nullable
+  private JsonNullable<Object> metadata = JsonNullable.<Object>undefined();
 
-public MandateAmountData() {
-}
+  public MandateAmountData() {
+  }
 
-        public MandateAmountData amount(@javax.annotation.Nonnull Long amount) {
-        
-        this.amount = amount;
-        return this;
-        }
+  public MandateAmountData amount(@javax.annotation.Nonnull Long amount) {
+    
+    this.amount = amount;
+    return this;
+  }
 
-    /**
-        * The maximum amount to be debited for the mandate transaction
-    * @return amount
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_AMOUNT)
+  /**
+   * The maximum amount to be debited for the mandate transaction
+   * @return amount
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_AMOUNT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public Long getAmount() {
-        return amount;
-    }
+  public Long getAmount() {
+    return amount;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_AMOUNT)
+  @JsonProperty(JSON_PROPERTY_AMOUNT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setAmount(@javax.annotation.Nonnull Long amount) {
-            this.amount = amount;
-        }
+    this.amount = amount;
+  }
 
-        public MandateAmountData currency(@javax.annotation.Nonnull Currency currency) {
-        
-        this.currency = currency;
-        return this;
-        }
+  public MandateAmountData currency(@javax.annotation.Nonnull Currency currency) {
+    
+    this.currency = currency;
+    return this;
+  }
 
-    /**
-        * Get currency
-    * @return currency
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_CURRENCY)
+  /**
+   * Get currency
+   * @return currency
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_CURRENCY)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public Currency getCurrency() {
-        return currency;
-    }
+  public Currency getCurrency() {
+    return currency;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_CURRENCY)
+  @JsonProperty(JSON_PROPERTY_CURRENCY)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setCurrency(@javax.annotation.Nonnull Currency currency) {
-            this.currency = currency;
-        }
+    this.currency = currency;
+  }
 
-        public MandateAmountData startDate(@javax.annotation.Nullable OffsetDateTime startDate) {
-        this.startDate = JsonNullable.<OffsetDateTime>of(startDate);
-        
-        return this;
-        }
-
-    /**
-        * Specifying start date of the mandate
-    * @return startDate
-    */
-    @javax.annotation.Nullable
-        @JsonIgnore
+  public MandateAmountData startDate(@javax.annotation.Nullable OffsetDateTime startDate) {
+    this.startDate = JsonNullable.<OffsetDateTime>of(startDate);
     
-    public OffsetDateTime getStartDate() {
-                return startDate.orElse(null);
-    }
+    return this;
+  }
 
-          @JsonProperty(JSON_PROPERTY_START_DATE)
+  /**
+   * Specifying start date of the mandate
+   * @return startDate
+   */
+  @javax.annotation.Nullable
+  @JsonIgnore
+
+  public OffsetDateTime getStartDate() {
+        return startDate.orElse(null);
+  }
+
+  @JsonProperty(JSON_PROPERTY_START_DATE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-        public JsonNullable<OffsetDateTime> getStartDate_JsonNullable() {
-        return startDate;
-        }
+  public JsonNullable<OffsetDateTime> getStartDate_JsonNullable() {
+    return startDate;
+  }
+  
+  @JsonProperty(JSON_PROPERTY_START_DATE)
+  public void setStartDate_JsonNullable(JsonNullable<OffsetDateTime> startDate) {
+    this.startDate = startDate;
+  }
+
+  public void setStartDate(@javax.annotation.Nullable OffsetDateTime startDate) {
+    this.startDate = JsonNullable.<OffsetDateTime>of(startDate);
+  }
+
+  public MandateAmountData endDate(@javax.annotation.Nullable OffsetDateTime endDate) {
+    this.endDate = JsonNullable.<OffsetDateTime>of(endDate);
     
-        @JsonProperty(JSON_PROPERTY_START_DATE)
-        public void setStartDate_JsonNullable(JsonNullable<OffsetDateTime> startDate) {
-        this.startDate = startDate;
-        }
+    return this;
+  }
 
-          public void setStartDate(@javax.annotation.Nullable OffsetDateTime startDate) {
-            this.startDate = JsonNullable.<OffsetDateTime>of(startDate);
-        }
+  /**
+   * Specifying end date of the mandate
+   * @return endDate
+   */
+  @javax.annotation.Nullable
+  @JsonIgnore
 
-        public MandateAmountData endDate(@javax.annotation.Nullable OffsetDateTime endDate) {
-        this.endDate = JsonNullable.<OffsetDateTime>of(endDate);
-        
-        return this;
-        }
+  public OffsetDateTime getEndDate() {
+        return endDate.orElse(null);
+  }
 
-    /**
-        * Specifying end date of the mandate
-    * @return endDate
-    */
-    @javax.annotation.Nullable
-        @JsonIgnore
-    
-    public OffsetDateTime getEndDate() {
-                return endDate.orElse(null);
-    }
-
-          @JsonProperty(JSON_PROPERTY_END_DATE)
+  @JsonProperty(JSON_PROPERTY_END_DATE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-        public JsonNullable<OffsetDateTime> getEndDate_JsonNullable() {
-        return endDate;
-        }
+  public JsonNullable<OffsetDateTime> getEndDate_JsonNullable() {
+    return endDate;
+  }
+  
+  @JsonProperty(JSON_PROPERTY_END_DATE)
+  public void setEndDate_JsonNullable(JsonNullable<OffsetDateTime> endDate) {
+    this.endDate = endDate;
+  }
+
+  public void setEndDate(@javax.annotation.Nullable OffsetDateTime endDate) {
+    this.endDate = JsonNullable.<OffsetDateTime>of(endDate);
+  }
+
+  public MandateAmountData metadata(@javax.annotation.Nullable Object metadata) {
+    this.metadata = JsonNullable.<Object>of(metadata);
     
-        @JsonProperty(JSON_PROPERTY_END_DATE)
-        public void setEndDate_JsonNullable(JsonNullable<OffsetDateTime> endDate) {
-        this.endDate = endDate;
-        }
+    return this;
+  }
 
-          public void setEndDate(@javax.annotation.Nullable OffsetDateTime endDate) {
-            this.endDate = JsonNullable.<OffsetDateTime>of(endDate);
-        }
+  /**
+   * Additional details required by mandate
+   * @return metadata
+   */
+  @javax.annotation.Nullable
+  @JsonIgnore
 
-        public MandateAmountData metadata(@javax.annotation.Nullable Object metadata) {
-        this.metadata = JsonNullable.<Object>of(metadata);
-        
-        return this;
-        }
+  public Object getMetadata() {
+        return metadata.orElse(null);
+  }
 
-    /**
-        * Additional details required by mandate
-    * @return metadata
-    */
-    @javax.annotation.Nullable
-        @JsonIgnore
-    
-    public Object getMetadata() {
-                return metadata.orElse(null);
-    }
-
-          @JsonProperty(JSON_PROPERTY_METADATA)
+  @JsonProperty(JSON_PROPERTY_METADATA)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-        public JsonNullable<Object> getMetadata_JsonNullable() {
-        return metadata;
-        }
-    
-        @JsonProperty(JSON_PROPERTY_METADATA)
-        public void setMetadata_JsonNullable(JsonNullable<Object> metadata) {
-        this.metadata = metadata;
-        }
+  public JsonNullable<Object> getMetadata_JsonNullable() {
+    return metadata;
+  }
+  
+  @JsonProperty(JSON_PROPERTY_METADATA)
+  public void setMetadata_JsonNullable(JsonNullable<Object> metadata) {
+    this.metadata = metadata;
+  }
 
-          public void setMetadata(@javax.annotation.Nullable Object metadata) {
-            this.metadata = JsonNullable.<Object>of(metadata);
-        }
+  public void setMetadata(@javax.annotation.Nullable Object metadata) {
+    this.metadata = JsonNullable.<Object>of(metadata);
+  }
 
-@Override
-public boolean equals(Object o) {
+  @Override
+  public boolean equals(Object o) {
     if (this == o) {
-    return true;
+      return true;
     }
     if (o == null || getClass() != o.getClass()) {
-    return false;
+      return false;
     }
-        MandateAmountData mandateAmountData = (MandateAmountData) o;
-        return Objects.equals(this.amount, mandateAmountData.amount) &&
+    MandateAmountData mandateAmountData = (MandateAmountData) o;
+    return Objects.equals(this.amount, mandateAmountData.amount) &&
         Objects.equals(this.currency, mandateAmountData.currency) &&
         equalsNullable(this.startDate, mandateAmountData.startDate) &&
         equalsNullable(this.endDate, mandateAmountData.endDate) &&
         equalsNullable(this.metadata, mandateAmountData.metadata);
-}
+  }
 
-    private static <T> boolean equalsNullable(JsonNullable<T> a, JsonNullable<T> b) {
-        return a == b || (a != null && b != null && a.isPresent() && b.isPresent() && Objects.deepEquals(a.get(), b.get()));
-        }
+  private static <T> boolean equalsNullable(JsonNullable<T> a, JsonNullable<T> b) {
+    return a == b || (a != null && b != null && a.isPresent() && b.isPresent() && Objects.deepEquals(a.get(), b.get()));
+  }
 
-    @Override
-    public int hashCode() {
-        return Objects.hash(amount, currency, hashCodeNullable(startDate), hashCodeNullable(endDate), hashCodeNullable(metadata));
+  @Override
+  public int hashCode() {
+    return Objects.hash(amount, currency, hashCodeNullable(startDate), hashCodeNullable(endDate), hashCodeNullable(metadata));
+  }
+
+  private static <T> int hashCodeNullable(JsonNullable<T> a) {
+    if (a == null) {
+      return 1;
     }
+    return a.isPresent() ? Arrays.deepHashCode(new Object[]{a.get()}) : 31;
+  }
 
-        private static <T> int hashCodeNullable(JsonNullable<T> a) {
-        if (a == null) {
-        return 1;
-        }
-        return a.isPresent() ? Arrays.deepHashCode(new Object[]{a.get()}) : 31;
-        }
-
-    @Override
-    public String toString() {
+  @Override
+  public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class MandateAmountData {\n");
-        sb.append("    amount: ").append(toIndentedString(amount)).append("\n");
-        sb.append("    currency: ").append(toIndentedString(currency)).append("\n");
-        sb.append("    startDate: ").append(toIndentedString(startDate)).append("\n");
-        sb.append("    endDate: ").append(toIndentedString(endDate)).append("\n");
-        sb.append("    metadata: ").append(toIndentedString(metadata)).append("\n");
+    sb.append("    amount: ").append(toIndentedString(amount)).append("\n");
+    sb.append("    currency: ").append(toIndentedString(currency)).append("\n");
+    sb.append("    startDate: ").append(toIndentedString(startDate)).append("\n");
+    sb.append("    endDate: ").append(toIndentedString(endDate)).append("\n");
+    sb.append("    metadata: ").append(toIndentedString(metadata)).append("\n");
     sb.append("}");
     return sb.toString();
-    }
+  }
 
-    /**
-    * Convert the given object to string with each line indented by 4 spaces
-    * (except the first line).
-    */
-    private String toIndentedString(Object o) {
+  /**
+   * Convert the given object to string with each line indented by 4 spaces
+   * (except the first line).
+   */
+  private String toIndentedString(Object o) {
     if (o == null) {
-    return "null";
+      return "null";
     }
     return o.toString().replace("\n", "\n    ");
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @return URL query string
+   */
+  public String toUrlQueryString() {
+    return toUrlQueryString(null);
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @param prefix prefix of the query string
+   * @return URL query string
+   */
+  public String toUrlQueryString(String prefix) {
+    String suffix = "";
+    String containerSuffix = "";
+    String containerPrefix = "";
+    if (prefix == null) {
+      // style=form, explode=true, e.g. /pet?name=cat&type=manx
+      prefix = "";
+    } else {
+      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+      prefix = prefix + "[";
+      suffix = "]";
+      containerSuffix = "]";
+      containerPrefix = "[";
     }
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @return URL query string
-        */
-        public String toUrlQueryString() {
-        return toUrlQueryString(null);
-        }
+    StringJoiner joiner = new StringJoiner("&");
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @param prefix prefix of the query string
-        * @return URL query string
-        */
-        public String toUrlQueryString(String prefix) {
-        String suffix = "";
-        String containerSuffix = "";
-        String containerPrefix = "";
-        if (prefix == null) {
-        // style=form, explode=true, e.g. /pet?name=cat&type=manx
-        prefix = "";
-        } else {
-        // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
-        prefix = prefix + "[";
-        suffix = "]";
-        containerSuffix = "]";
-        containerPrefix = "[";
-        }
-
-        StringJoiner joiner = new StringJoiner("&");
-
-            // add `amount` to the URL query string
-                        if (getAmount() != null) {
-                        try {
-                        joiner.add(String.format("%samount%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getAmount()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-            // add `currency` to the URL query string
-                            if (getCurrency() != null) {
-                            try {
-                            joiner.add(String.format("%scurrency%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCurrency()), "UTF-8").replaceAll("\\+", "%20")));
-                            } catch (UnsupportedEncodingException e) {
-                            // Should never happen, UTF-8 is always supported
-                            throw new RuntimeException(e);
-                            }
-                            }
-
-            // add `start_date` to the URL query string
-                            if (getStartDate() != null) {
-                            try {
-                            joiner.add(String.format("%sstart_date%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getStartDate()), "UTF-8").replaceAll("\\+", "%20")));
-                            } catch (UnsupportedEncodingException e) {
-                            // Should never happen, UTF-8 is always supported
-                            throw new RuntimeException(e);
-                            }
-                            }
-
-            // add `end_date` to the URL query string
-                            if (getEndDate() != null) {
-                            try {
-                            joiner.add(String.format("%send_date%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getEndDate()), "UTF-8").replaceAll("\\+", "%20")));
-                            } catch (UnsupportedEncodingException e) {
-                            // Should never happen, UTF-8 is always supported
-                            throw new RuntimeException(e);
-                            }
-                            }
-
-            // add `metadata` to the URL query string
-                        if (getMetadata() != null) {
-                        try {
-                        joiner.add(String.format("%smetadata%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getMetadata()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-        return joiner.toString();
-        }
-
+    // add `amount` to the URL query string
+    if (getAmount() != null) {
+      try {
+        joiner.add(String.format("%samount%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getAmount()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
     }
+
+    // add `currency` to the URL query string
+    if (getCurrency() != null) {
+      try {
+        joiner.add(String.format("%scurrency%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCurrency()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `start_date` to the URL query string
+    if (getStartDate() != null) {
+      try {
+        joiner.add(String.format("%sstart_date%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getStartDate()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `end_date` to the URL query string
+    if (getEndDate() != null) {
+      try {
+        joiner.add(String.format("%send_date%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getEndDate()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `metadata` to the URL query string
+    if (getMetadata() != null) {
+      try {
+        joiner.add(String.format("%smetadata%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getMetadata()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    return joiner.toString();
+  }
+
+}
 

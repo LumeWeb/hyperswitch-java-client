@@ -28,205 +28,205 @@ import java.net.URLEncoder;
 import java.util.StringJoiner;
 
 /**
-* Fee information to be charged on the payment being collected
-*/
-    @JsonPropertyOrder({
-        PaymentChargeRequest.JSON_PROPERTY_CHARGE_TYPE,
-        PaymentChargeRequest.JSON_PROPERTY_FEES,
-        PaymentChargeRequest.JSON_PROPERTY_TRANSFER_ACCOUNT_ID
-    })
+ * Fee information to be charged on the payment being collected
+ */
+@JsonPropertyOrder({
+  PaymentChargeRequest.JSON_PROPERTY_CHARGE_TYPE,
+  PaymentChargeRequest.JSON_PROPERTY_FEES,
+  PaymentChargeRequest.JSON_PROPERTY_TRANSFER_ACCOUNT_ID
+})
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class PaymentChargeRequest {
-        public static final String JSON_PROPERTY_CHARGE_TYPE = "charge_type";
-    @javax.annotation.Nonnull
-            private PaymentChargeType chargeType;
+  public static final String JSON_PROPERTY_CHARGE_TYPE = "charge_type";
+  @javax.annotation.Nonnull
+  private PaymentChargeType chargeType;
 
-        public static final String JSON_PROPERTY_FEES = "fees";
-    @javax.annotation.Nonnull
-            private Long fees;
+  public static final String JSON_PROPERTY_FEES = "fees";
+  @javax.annotation.Nonnull
+  private Long fees;
 
-        public static final String JSON_PROPERTY_TRANSFER_ACCOUNT_ID = "transfer_account_id";
-    @javax.annotation.Nonnull
-            private String transferAccountId;
+  public static final String JSON_PROPERTY_TRANSFER_ACCOUNT_ID = "transfer_account_id";
+  @javax.annotation.Nonnull
+  private String transferAccountId;
 
-public PaymentChargeRequest() {
-}
+  public PaymentChargeRequest() {
+  }
 
-        public PaymentChargeRequest chargeType(@javax.annotation.Nonnull PaymentChargeType chargeType) {
-        
-        this.chargeType = chargeType;
-        return this;
-        }
+  public PaymentChargeRequest chargeType(@javax.annotation.Nonnull PaymentChargeType chargeType) {
+    
+    this.chargeType = chargeType;
+    return this;
+  }
 
-    /**
-        * Get chargeType
-    * @return chargeType
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_CHARGE_TYPE)
+  /**
+   * Get chargeType
+   * @return chargeType
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_CHARGE_TYPE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public PaymentChargeType getChargeType() {
-        return chargeType;
-    }
+  public PaymentChargeType getChargeType() {
+    return chargeType;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_CHARGE_TYPE)
+  @JsonProperty(JSON_PROPERTY_CHARGE_TYPE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setChargeType(@javax.annotation.Nonnull PaymentChargeType chargeType) {
-            this.chargeType = chargeType;
-        }
+    this.chargeType = chargeType;
+  }
 
-        public PaymentChargeRequest fees(@javax.annotation.Nonnull Long fees) {
-        
-        this.fees = fees;
-        return this;
-        }
+  public PaymentChargeRequest fees(@javax.annotation.Nonnull Long fees) {
+    
+    this.fees = fees;
+    return this;
+  }
 
-    /**
-        * Platform fees to be collected on the payment
-    * @return fees
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_FEES)
+  /**
+   * Platform fees to be collected on the payment
+   * @return fees
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_FEES)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public Long getFees() {
-        return fees;
-    }
+  public Long getFees() {
+    return fees;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_FEES)
+  @JsonProperty(JSON_PROPERTY_FEES)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setFees(@javax.annotation.Nonnull Long fees) {
-            this.fees = fees;
-        }
+    this.fees = fees;
+  }
 
-        public PaymentChargeRequest transferAccountId(@javax.annotation.Nonnull String transferAccountId) {
-        
-        this.transferAccountId = transferAccountId;
-        return this;
-        }
+  public PaymentChargeRequest transferAccountId(@javax.annotation.Nonnull String transferAccountId) {
+    
+    this.transferAccountId = transferAccountId;
+    return this;
+  }
 
-    /**
-        * Identifier for the reseller&#39;s account to send the funds to
-    * @return transferAccountId
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_TRANSFER_ACCOUNT_ID)
+  /**
+   * Identifier for the reseller&#39;s account to send the funds to
+   * @return transferAccountId
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_TRANSFER_ACCOUNT_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public String getTransferAccountId() {
-        return transferAccountId;
-    }
+  public String getTransferAccountId() {
+    return transferAccountId;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_TRANSFER_ACCOUNT_ID)
+  @JsonProperty(JSON_PROPERTY_TRANSFER_ACCOUNT_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setTransferAccountId(@javax.annotation.Nonnull String transferAccountId) {
-            this.transferAccountId = transferAccountId;
-        }
+    this.transferAccountId = transferAccountId;
+  }
 
-@Override
-public boolean equals(Object o) {
+  @Override
+  public boolean equals(Object o) {
     if (this == o) {
-    return true;
+      return true;
     }
     if (o == null || getClass() != o.getClass()) {
-    return false;
+      return false;
     }
-        PaymentChargeRequest paymentChargeRequest = (PaymentChargeRequest) o;
-        return Objects.equals(this.chargeType, paymentChargeRequest.chargeType) &&
+    PaymentChargeRequest paymentChargeRequest = (PaymentChargeRequest) o;
+    return Objects.equals(this.chargeType, paymentChargeRequest.chargeType) &&
         Objects.equals(this.fees, paymentChargeRequest.fees) &&
         Objects.equals(this.transferAccountId, paymentChargeRequest.transferAccountId);
-}
+  }
 
-    @Override
-    public int hashCode() {
-        return Objects.hash(chargeType, fees, transferAccountId);
-    }
+  @Override
+  public int hashCode() {
+    return Objects.hash(chargeType, fees, transferAccountId);
+  }
 
-    @Override
-    public String toString() {
+  @Override
+  public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class PaymentChargeRequest {\n");
-        sb.append("    chargeType: ").append(toIndentedString(chargeType)).append("\n");
-        sb.append("    fees: ").append(toIndentedString(fees)).append("\n");
-        sb.append("    transferAccountId: ").append(toIndentedString(transferAccountId)).append("\n");
+    sb.append("    chargeType: ").append(toIndentedString(chargeType)).append("\n");
+    sb.append("    fees: ").append(toIndentedString(fees)).append("\n");
+    sb.append("    transferAccountId: ").append(toIndentedString(transferAccountId)).append("\n");
     sb.append("}");
     return sb.toString();
-    }
+  }
 
-    /**
-    * Convert the given object to string with each line indented by 4 spaces
-    * (except the first line).
-    */
-    private String toIndentedString(Object o) {
+  /**
+   * Convert the given object to string with each line indented by 4 spaces
+   * (except the first line).
+   */
+  private String toIndentedString(Object o) {
     if (o == null) {
-    return "null";
+      return "null";
     }
     return o.toString().replace("\n", "\n    ");
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @return URL query string
+   */
+  public String toUrlQueryString() {
+    return toUrlQueryString(null);
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @param prefix prefix of the query string
+   * @return URL query string
+   */
+  public String toUrlQueryString(String prefix) {
+    String suffix = "";
+    String containerSuffix = "";
+    String containerPrefix = "";
+    if (prefix == null) {
+      // style=form, explode=true, e.g. /pet?name=cat&type=manx
+      prefix = "";
+    } else {
+      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+      prefix = prefix + "[";
+      suffix = "]";
+      containerSuffix = "]";
+      containerPrefix = "[";
     }
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @return URL query string
-        */
-        public String toUrlQueryString() {
-        return toUrlQueryString(null);
-        }
+    StringJoiner joiner = new StringJoiner("&");
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @param prefix prefix of the query string
-        * @return URL query string
-        */
-        public String toUrlQueryString(String prefix) {
-        String suffix = "";
-        String containerSuffix = "";
-        String containerPrefix = "";
-        if (prefix == null) {
-        // style=form, explode=true, e.g. /pet?name=cat&type=manx
-        prefix = "";
-        } else {
-        // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
-        prefix = prefix + "[";
-        suffix = "]";
-        containerSuffix = "]";
-        containerPrefix = "[";
-        }
-
-        StringJoiner joiner = new StringJoiner("&");
-
-            // add `charge_type` to the URL query string
-                            if (getChargeType() != null) {
-                            joiner.add(getChargeType().toUrlQueryString(prefix + "charge_type" + suffix));
-                            }
-
-            // add `fees` to the URL query string
-                        if (getFees() != null) {
-                        try {
-                        joiner.add(String.format("%sfees%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getFees()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-            // add `transfer_account_id` to the URL query string
-                        if (getTransferAccountId() != null) {
-                        try {
-                        joiner.add(String.format("%stransfer_account_id%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getTransferAccountId()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-        return joiner.toString();
-        }
-
+    // add `charge_type` to the URL query string
+    if (getChargeType() != null) {
+      joiner.add(getChargeType().toUrlQueryString(prefix + "charge_type" + suffix));
     }
+
+    // add `fees` to the URL query string
+    if (getFees() != null) {
+      try {
+        joiner.add(String.format("%sfees%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getFees()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `transfer_account_id` to the URL query string
+    if (getTransferAccountId() != null) {
+      try {
+        joiner.add(String.format("%stransfer_account_id%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getTransferAccountId()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    return joiner.toString();
+  }
+
+}
 

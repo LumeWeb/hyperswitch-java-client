@@ -34,305 +34,305 @@ import java.net.URLEncoder;
 import java.util.StringJoiner;
 
 /**
-* ApplepaySessionTokenResponse
-*/
-    @JsonPropertyOrder({
-        ApplepaySessionTokenResponse.JSON_PROPERTY_SESSION_TOKEN_DATA,
-        ApplepaySessionTokenResponse.JSON_PROPERTY_PAYMENT_REQUEST_DATA,
-        ApplepaySessionTokenResponse.JSON_PROPERTY_CONNECTOR,
-        ApplepaySessionTokenResponse.JSON_PROPERTY_DELAYED_SESSION_TOKEN,
-        ApplepaySessionTokenResponse.JSON_PROPERTY_SDK_NEXT_ACTION,
-        ApplepaySessionTokenResponse.JSON_PROPERTY_CONNECTOR_REFERENCE_ID,
-        ApplepaySessionTokenResponse.JSON_PROPERTY_CONNECTOR_SDK_PUBLIC_KEY,
-        ApplepaySessionTokenResponse.JSON_PROPERTY_CONNECTOR_MERCHANT_ID
-    })
+ * ApplepaySessionTokenResponse
+ */
+@JsonPropertyOrder({
+  ApplepaySessionTokenResponse.JSON_PROPERTY_SESSION_TOKEN_DATA,
+  ApplepaySessionTokenResponse.JSON_PROPERTY_PAYMENT_REQUEST_DATA,
+  ApplepaySessionTokenResponse.JSON_PROPERTY_CONNECTOR,
+  ApplepaySessionTokenResponse.JSON_PROPERTY_DELAYED_SESSION_TOKEN,
+  ApplepaySessionTokenResponse.JSON_PROPERTY_SDK_NEXT_ACTION,
+  ApplepaySessionTokenResponse.JSON_PROPERTY_CONNECTOR_REFERENCE_ID,
+  ApplepaySessionTokenResponse.JSON_PROPERTY_CONNECTOR_SDK_PUBLIC_KEY,
+  ApplepaySessionTokenResponse.JSON_PROPERTY_CONNECTOR_MERCHANT_ID
+})
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class ApplepaySessionTokenResponse {
-        public static final String JSON_PROPERTY_SESSION_TOKEN_DATA = "session_token_data";
-    @javax.annotation.Nullable
-            private JsonNullable<ApplePaySessionResponse> sessionTokenData = JsonNullable.<ApplePaySessionResponse>undefined();
+  public static final String JSON_PROPERTY_SESSION_TOKEN_DATA = "session_token_data";
+  @javax.annotation.Nullable
+  private JsonNullable<ApplePaySessionResponse> sessionTokenData = JsonNullable.<ApplePaySessionResponse>undefined();
 
-        public static final String JSON_PROPERTY_PAYMENT_REQUEST_DATA = "payment_request_data";
-    @javax.annotation.Nullable
-            private JsonNullable<ApplePayPaymentRequest> paymentRequestData = JsonNullable.<ApplePayPaymentRequest>undefined();
+  public static final String JSON_PROPERTY_PAYMENT_REQUEST_DATA = "payment_request_data";
+  @javax.annotation.Nullable
+  private JsonNullable<ApplePayPaymentRequest> paymentRequestData = JsonNullable.<ApplePayPaymentRequest>undefined();
 
-        public static final String JSON_PROPERTY_CONNECTOR = "connector";
-    @javax.annotation.Nonnull
-            private String connector;
+  public static final String JSON_PROPERTY_CONNECTOR = "connector";
+  @javax.annotation.Nonnull
+  private String connector;
 
-        public static final String JSON_PROPERTY_DELAYED_SESSION_TOKEN = "delayed_session_token";
-    @javax.annotation.Nonnull
-            private Boolean delayedSessionToken;
+  public static final String JSON_PROPERTY_DELAYED_SESSION_TOKEN = "delayed_session_token";
+  @javax.annotation.Nonnull
+  private Boolean delayedSessionToken;
 
-        public static final String JSON_PROPERTY_SDK_NEXT_ACTION = "sdk_next_action";
-    @javax.annotation.Nonnull
-            private SdkNextAction sdkNextAction;
+  public static final String JSON_PROPERTY_SDK_NEXT_ACTION = "sdk_next_action";
+  @javax.annotation.Nonnull
+  private SdkNextAction sdkNextAction;
 
-        public static final String JSON_PROPERTY_CONNECTOR_REFERENCE_ID = "connector_reference_id";
-    @javax.annotation.Nullable
-            private JsonNullable<String> connectorReferenceId = JsonNullable.<String>undefined();
+  public static final String JSON_PROPERTY_CONNECTOR_REFERENCE_ID = "connector_reference_id";
+  @javax.annotation.Nullable
+  private JsonNullable<String> connectorReferenceId = JsonNullable.<String>undefined();
 
-        public static final String JSON_PROPERTY_CONNECTOR_SDK_PUBLIC_KEY = "connector_sdk_public_key";
-    @javax.annotation.Nullable
-            private JsonNullable<String> connectorSdkPublicKey = JsonNullable.<String>undefined();
+  public static final String JSON_PROPERTY_CONNECTOR_SDK_PUBLIC_KEY = "connector_sdk_public_key";
+  @javax.annotation.Nullable
+  private JsonNullable<String> connectorSdkPublicKey = JsonNullable.<String>undefined();
 
-        public static final String JSON_PROPERTY_CONNECTOR_MERCHANT_ID = "connector_merchant_id";
-    @javax.annotation.Nullable
-            private JsonNullable<String> connectorMerchantId = JsonNullable.<String>undefined();
+  public static final String JSON_PROPERTY_CONNECTOR_MERCHANT_ID = "connector_merchant_id";
+  @javax.annotation.Nullable
+  private JsonNullable<String> connectorMerchantId = JsonNullable.<String>undefined();
 
-public ApplepaySessionTokenResponse() {
-}
+  public ApplepaySessionTokenResponse() {
+  }
 
-        public ApplepaySessionTokenResponse sessionTokenData(@javax.annotation.Nullable ApplePaySessionResponse sessionTokenData) {
-        this.sessionTokenData = JsonNullable.<ApplePaySessionResponse>of(sessionTokenData);
-        
-        return this;
-        }
-
-    /**
-        * Get sessionTokenData
-    * @return sessionTokenData
-    */
-    @javax.annotation.Nullable
-        @JsonIgnore
+  public ApplepaySessionTokenResponse sessionTokenData(@javax.annotation.Nullable ApplePaySessionResponse sessionTokenData) {
+    this.sessionTokenData = JsonNullable.<ApplePaySessionResponse>of(sessionTokenData);
     
-    public ApplePaySessionResponse getSessionTokenData() {
-                return sessionTokenData.orElse(null);
-    }
+    return this;
+  }
 
-          @JsonProperty(JSON_PROPERTY_SESSION_TOKEN_DATA)
+  /**
+   * Get sessionTokenData
+   * @return sessionTokenData
+   */
+  @javax.annotation.Nullable
+  @JsonIgnore
+
+  public ApplePaySessionResponse getSessionTokenData() {
+        return sessionTokenData.orElse(null);
+  }
+
+  @JsonProperty(JSON_PROPERTY_SESSION_TOKEN_DATA)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-        public JsonNullable<ApplePaySessionResponse> getSessionTokenData_JsonNullable() {
-        return sessionTokenData;
-        }
+  public JsonNullable<ApplePaySessionResponse> getSessionTokenData_JsonNullable() {
+    return sessionTokenData;
+  }
+  
+  @JsonProperty(JSON_PROPERTY_SESSION_TOKEN_DATA)
+  public void setSessionTokenData_JsonNullable(JsonNullable<ApplePaySessionResponse> sessionTokenData) {
+    this.sessionTokenData = sessionTokenData;
+  }
+
+  public void setSessionTokenData(@javax.annotation.Nullable ApplePaySessionResponse sessionTokenData) {
+    this.sessionTokenData = JsonNullable.<ApplePaySessionResponse>of(sessionTokenData);
+  }
+
+  public ApplepaySessionTokenResponse paymentRequestData(@javax.annotation.Nullable ApplePayPaymentRequest paymentRequestData) {
+    this.paymentRequestData = JsonNullable.<ApplePayPaymentRequest>of(paymentRequestData);
     
-        @JsonProperty(JSON_PROPERTY_SESSION_TOKEN_DATA)
-        public void setSessionTokenData_JsonNullable(JsonNullable<ApplePaySessionResponse> sessionTokenData) {
-        this.sessionTokenData = sessionTokenData;
-        }
+    return this;
+  }
 
-          public void setSessionTokenData(@javax.annotation.Nullable ApplePaySessionResponse sessionTokenData) {
-            this.sessionTokenData = JsonNullable.<ApplePaySessionResponse>of(sessionTokenData);
-        }
+  /**
+   * Get paymentRequestData
+   * @return paymentRequestData
+   */
+  @javax.annotation.Nullable
+  @JsonIgnore
 
-        public ApplepaySessionTokenResponse paymentRequestData(@javax.annotation.Nullable ApplePayPaymentRequest paymentRequestData) {
-        this.paymentRequestData = JsonNullable.<ApplePayPaymentRequest>of(paymentRequestData);
-        
-        return this;
-        }
+  public ApplePayPaymentRequest getPaymentRequestData() {
+        return paymentRequestData.orElse(null);
+  }
 
-    /**
-        * Get paymentRequestData
-    * @return paymentRequestData
-    */
-    @javax.annotation.Nullable
-        @JsonIgnore
-    
-    public ApplePayPaymentRequest getPaymentRequestData() {
-                return paymentRequestData.orElse(null);
-    }
-
-          @JsonProperty(JSON_PROPERTY_PAYMENT_REQUEST_DATA)
+  @JsonProperty(JSON_PROPERTY_PAYMENT_REQUEST_DATA)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-        public JsonNullable<ApplePayPaymentRequest> getPaymentRequestData_JsonNullable() {
-        return paymentRequestData;
-        }
+  public JsonNullable<ApplePayPaymentRequest> getPaymentRequestData_JsonNullable() {
+    return paymentRequestData;
+  }
+  
+  @JsonProperty(JSON_PROPERTY_PAYMENT_REQUEST_DATA)
+  public void setPaymentRequestData_JsonNullable(JsonNullable<ApplePayPaymentRequest> paymentRequestData) {
+    this.paymentRequestData = paymentRequestData;
+  }
+
+  public void setPaymentRequestData(@javax.annotation.Nullable ApplePayPaymentRequest paymentRequestData) {
+    this.paymentRequestData = JsonNullable.<ApplePayPaymentRequest>of(paymentRequestData);
+  }
+
+  public ApplepaySessionTokenResponse connector(@javax.annotation.Nonnull String connector) {
     
-        @JsonProperty(JSON_PROPERTY_PAYMENT_REQUEST_DATA)
-        public void setPaymentRequestData_JsonNullable(JsonNullable<ApplePayPaymentRequest> paymentRequestData) {
-        this.paymentRequestData = paymentRequestData;
-        }
+    this.connector = connector;
+    return this;
+  }
 
-          public void setPaymentRequestData(@javax.annotation.Nullable ApplePayPaymentRequest paymentRequestData) {
-            this.paymentRequestData = JsonNullable.<ApplePayPaymentRequest>of(paymentRequestData);
-        }
-
-        public ApplepaySessionTokenResponse connector(@javax.annotation.Nonnull String connector) {
-        
-        this.connector = connector;
-        return this;
-        }
-
-    /**
-        * The session token is w.r.t this connector
-    * @return connector
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_CONNECTOR)
+  /**
+   * The session token is w.r.t this connector
+   * @return connector
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_CONNECTOR)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public String getConnector() {
-        return connector;
-    }
+  public String getConnector() {
+    return connector;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_CONNECTOR)
+  @JsonProperty(JSON_PROPERTY_CONNECTOR)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setConnector(@javax.annotation.Nonnull String connector) {
-            this.connector = connector;
-        }
+    this.connector = connector;
+  }
 
-        public ApplepaySessionTokenResponse delayedSessionToken(@javax.annotation.Nonnull Boolean delayedSessionToken) {
-        
-        this.delayedSessionToken = delayedSessionToken;
-        return this;
-        }
+  public ApplepaySessionTokenResponse delayedSessionToken(@javax.annotation.Nonnull Boolean delayedSessionToken) {
+    
+    this.delayedSessionToken = delayedSessionToken;
+    return this;
+  }
 
-    /**
-        * Identifier for the delayed session response
-    * @return delayedSessionToken
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_DELAYED_SESSION_TOKEN)
+  /**
+   * Identifier for the delayed session response
+   * @return delayedSessionToken
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_DELAYED_SESSION_TOKEN)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public Boolean getDelayedSessionToken() {
-        return delayedSessionToken;
-    }
+  public Boolean getDelayedSessionToken() {
+    return delayedSessionToken;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_DELAYED_SESSION_TOKEN)
+  @JsonProperty(JSON_PROPERTY_DELAYED_SESSION_TOKEN)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setDelayedSessionToken(@javax.annotation.Nonnull Boolean delayedSessionToken) {
-            this.delayedSessionToken = delayedSessionToken;
-        }
+    this.delayedSessionToken = delayedSessionToken;
+  }
 
-        public ApplepaySessionTokenResponse sdkNextAction(@javax.annotation.Nonnull SdkNextAction sdkNextAction) {
-        
-        this.sdkNextAction = sdkNextAction;
-        return this;
-        }
+  public ApplepaySessionTokenResponse sdkNextAction(@javax.annotation.Nonnull SdkNextAction sdkNextAction) {
+    
+    this.sdkNextAction = sdkNextAction;
+    return this;
+  }
 
-    /**
-        * Get sdkNextAction
-    * @return sdkNextAction
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_SDK_NEXT_ACTION)
+  /**
+   * Get sdkNextAction
+   * @return sdkNextAction
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_SDK_NEXT_ACTION)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public SdkNextAction getSdkNextAction() {
-        return sdkNextAction;
-    }
+  public SdkNextAction getSdkNextAction() {
+    return sdkNextAction;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_SDK_NEXT_ACTION)
+  @JsonProperty(JSON_PROPERTY_SDK_NEXT_ACTION)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setSdkNextAction(@javax.annotation.Nonnull SdkNextAction sdkNextAction) {
-            this.sdkNextAction = sdkNextAction;
-        }
+    this.sdkNextAction = sdkNextAction;
+  }
 
-        public ApplepaySessionTokenResponse connectorReferenceId(@javax.annotation.Nullable String connectorReferenceId) {
-        this.connectorReferenceId = JsonNullable.<String>of(connectorReferenceId);
-        
-        return this;
-        }
-
-    /**
-        * The connector transaction id
-    * @return connectorReferenceId
-    */
-    @javax.annotation.Nullable
-        @JsonIgnore
+  public ApplepaySessionTokenResponse connectorReferenceId(@javax.annotation.Nullable String connectorReferenceId) {
+    this.connectorReferenceId = JsonNullable.<String>of(connectorReferenceId);
     
-    public String getConnectorReferenceId() {
-                return connectorReferenceId.orElse(null);
-    }
+    return this;
+  }
 
-          @JsonProperty(JSON_PROPERTY_CONNECTOR_REFERENCE_ID)
+  /**
+   * The connector transaction id
+   * @return connectorReferenceId
+   */
+  @javax.annotation.Nullable
+  @JsonIgnore
+
+  public String getConnectorReferenceId() {
+        return connectorReferenceId.orElse(null);
+  }
+
+  @JsonProperty(JSON_PROPERTY_CONNECTOR_REFERENCE_ID)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-        public JsonNullable<String> getConnectorReferenceId_JsonNullable() {
-        return connectorReferenceId;
-        }
+  public JsonNullable<String> getConnectorReferenceId_JsonNullable() {
+    return connectorReferenceId;
+  }
+  
+  @JsonProperty(JSON_PROPERTY_CONNECTOR_REFERENCE_ID)
+  public void setConnectorReferenceId_JsonNullable(JsonNullable<String> connectorReferenceId) {
+    this.connectorReferenceId = connectorReferenceId;
+  }
+
+  public void setConnectorReferenceId(@javax.annotation.Nullable String connectorReferenceId) {
+    this.connectorReferenceId = JsonNullable.<String>of(connectorReferenceId);
+  }
+
+  public ApplepaySessionTokenResponse connectorSdkPublicKey(@javax.annotation.Nullable String connectorSdkPublicKey) {
+    this.connectorSdkPublicKey = JsonNullable.<String>of(connectorSdkPublicKey);
     
-        @JsonProperty(JSON_PROPERTY_CONNECTOR_REFERENCE_ID)
-        public void setConnectorReferenceId_JsonNullable(JsonNullable<String> connectorReferenceId) {
-        this.connectorReferenceId = connectorReferenceId;
-        }
+    return this;
+  }
 
-          public void setConnectorReferenceId(@javax.annotation.Nullable String connectorReferenceId) {
-            this.connectorReferenceId = JsonNullable.<String>of(connectorReferenceId);
-        }
+  /**
+   * The public key id is to invoke third party sdk
+   * @return connectorSdkPublicKey
+   */
+  @javax.annotation.Nullable
+  @JsonIgnore
 
-        public ApplepaySessionTokenResponse connectorSdkPublicKey(@javax.annotation.Nullable String connectorSdkPublicKey) {
-        this.connectorSdkPublicKey = JsonNullable.<String>of(connectorSdkPublicKey);
-        
-        return this;
-        }
+  public String getConnectorSdkPublicKey() {
+        return connectorSdkPublicKey.orElse(null);
+  }
 
-    /**
-        * The public key id is to invoke third party sdk
-    * @return connectorSdkPublicKey
-    */
-    @javax.annotation.Nullable
-        @JsonIgnore
-    
-    public String getConnectorSdkPublicKey() {
-                return connectorSdkPublicKey.orElse(null);
-    }
-
-          @JsonProperty(JSON_PROPERTY_CONNECTOR_SDK_PUBLIC_KEY)
+  @JsonProperty(JSON_PROPERTY_CONNECTOR_SDK_PUBLIC_KEY)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-        public JsonNullable<String> getConnectorSdkPublicKey_JsonNullable() {
-        return connectorSdkPublicKey;
-        }
+  public JsonNullable<String> getConnectorSdkPublicKey_JsonNullable() {
+    return connectorSdkPublicKey;
+  }
+  
+  @JsonProperty(JSON_PROPERTY_CONNECTOR_SDK_PUBLIC_KEY)
+  public void setConnectorSdkPublicKey_JsonNullable(JsonNullable<String> connectorSdkPublicKey) {
+    this.connectorSdkPublicKey = connectorSdkPublicKey;
+  }
+
+  public void setConnectorSdkPublicKey(@javax.annotation.Nullable String connectorSdkPublicKey) {
+    this.connectorSdkPublicKey = JsonNullable.<String>of(connectorSdkPublicKey);
+  }
+
+  public ApplepaySessionTokenResponse connectorMerchantId(@javax.annotation.Nullable String connectorMerchantId) {
+    this.connectorMerchantId = JsonNullable.<String>of(connectorMerchantId);
     
-        @JsonProperty(JSON_PROPERTY_CONNECTOR_SDK_PUBLIC_KEY)
-        public void setConnectorSdkPublicKey_JsonNullable(JsonNullable<String> connectorSdkPublicKey) {
-        this.connectorSdkPublicKey = connectorSdkPublicKey;
-        }
+    return this;
+  }
 
-          public void setConnectorSdkPublicKey(@javax.annotation.Nullable String connectorSdkPublicKey) {
-            this.connectorSdkPublicKey = JsonNullable.<String>of(connectorSdkPublicKey);
-        }
+  /**
+   * The connector merchant id
+   * @return connectorMerchantId
+   */
+  @javax.annotation.Nullable
+  @JsonIgnore
 
-        public ApplepaySessionTokenResponse connectorMerchantId(@javax.annotation.Nullable String connectorMerchantId) {
-        this.connectorMerchantId = JsonNullable.<String>of(connectorMerchantId);
-        
-        return this;
-        }
+  public String getConnectorMerchantId() {
+        return connectorMerchantId.orElse(null);
+  }
 
-    /**
-        * The connector merchant id
-    * @return connectorMerchantId
-    */
-    @javax.annotation.Nullable
-        @JsonIgnore
-    
-    public String getConnectorMerchantId() {
-                return connectorMerchantId.orElse(null);
-    }
-
-          @JsonProperty(JSON_PROPERTY_CONNECTOR_MERCHANT_ID)
+  @JsonProperty(JSON_PROPERTY_CONNECTOR_MERCHANT_ID)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-        public JsonNullable<String> getConnectorMerchantId_JsonNullable() {
-        return connectorMerchantId;
-        }
-    
-        @JsonProperty(JSON_PROPERTY_CONNECTOR_MERCHANT_ID)
-        public void setConnectorMerchantId_JsonNullable(JsonNullable<String> connectorMerchantId) {
-        this.connectorMerchantId = connectorMerchantId;
-        }
+  public JsonNullable<String> getConnectorMerchantId_JsonNullable() {
+    return connectorMerchantId;
+  }
+  
+  @JsonProperty(JSON_PROPERTY_CONNECTOR_MERCHANT_ID)
+  public void setConnectorMerchantId_JsonNullable(JsonNullable<String> connectorMerchantId) {
+    this.connectorMerchantId = connectorMerchantId;
+  }
 
-          public void setConnectorMerchantId(@javax.annotation.Nullable String connectorMerchantId) {
-            this.connectorMerchantId = JsonNullable.<String>of(connectorMerchantId);
-        }
+  public void setConnectorMerchantId(@javax.annotation.Nullable String connectorMerchantId) {
+    this.connectorMerchantId = JsonNullable.<String>of(connectorMerchantId);
+  }
 
-@Override
-public boolean equals(Object o) {
+  @Override
+  public boolean equals(Object o) {
     if (this == o) {
-    return true;
+      return true;
     }
     if (o == null || getClass() != o.getClass()) {
-    return false;
+      return false;
     }
-        ApplepaySessionTokenResponse applepaySessionTokenResponse = (ApplepaySessionTokenResponse) o;
-        return equalsNullable(this.sessionTokenData, applepaySessionTokenResponse.sessionTokenData) &&
+    ApplepaySessionTokenResponse applepaySessionTokenResponse = (ApplepaySessionTokenResponse) o;
+    return equalsNullable(this.sessionTokenData, applepaySessionTokenResponse.sessionTokenData) &&
         equalsNullable(this.paymentRequestData, applepaySessionTokenResponse.paymentRequestData) &&
         Objects.equals(this.connector, applepaySessionTokenResponse.connector) &&
         Objects.equals(this.delayedSessionToken, applepaySessionTokenResponse.delayedSessionToken) &&
@@ -340,150 +340,150 @@ public boolean equals(Object o) {
         equalsNullable(this.connectorReferenceId, applepaySessionTokenResponse.connectorReferenceId) &&
         equalsNullable(this.connectorSdkPublicKey, applepaySessionTokenResponse.connectorSdkPublicKey) &&
         equalsNullable(this.connectorMerchantId, applepaySessionTokenResponse.connectorMerchantId);
-}
+  }
 
-    private static <T> boolean equalsNullable(JsonNullable<T> a, JsonNullable<T> b) {
-        return a == b || (a != null && b != null && a.isPresent() && b.isPresent() && Objects.deepEquals(a.get(), b.get()));
-        }
+  private static <T> boolean equalsNullable(JsonNullable<T> a, JsonNullable<T> b) {
+    return a == b || (a != null && b != null && a.isPresent() && b.isPresent() && Objects.deepEquals(a.get(), b.get()));
+  }
 
-    @Override
-    public int hashCode() {
-        return Objects.hash(hashCodeNullable(sessionTokenData), hashCodeNullable(paymentRequestData), connector, delayedSessionToken, sdkNextAction, hashCodeNullable(connectorReferenceId), hashCodeNullable(connectorSdkPublicKey), hashCodeNullable(connectorMerchantId));
+  @Override
+  public int hashCode() {
+    return Objects.hash(hashCodeNullable(sessionTokenData), hashCodeNullable(paymentRequestData), connector, delayedSessionToken, sdkNextAction, hashCodeNullable(connectorReferenceId), hashCodeNullable(connectorSdkPublicKey), hashCodeNullable(connectorMerchantId));
+  }
+
+  private static <T> int hashCodeNullable(JsonNullable<T> a) {
+    if (a == null) {
+      return 1;
     }
+    return a.isPresent() ? Arrays.deepHashCode(new Object[]{a.get()}) : 31;
+  }
 
-        private static <T> int hashCodeNullable(JsonNullable<T> a) {
-        if (a == null) {
-        return 1;
-        }
-        return a.isPresent() ? Arrays.deepHashCode(new Object[]{a.get()}) : 31;
-        }
-
-    @Override
-    public String toString() {
+  @Override
+  public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class ApplepaySessionTokenResponse {\n");
-        sb.append("    sessionTokenData: ").append(toIndentedString(sessionTokenData)).append("\n");
-        sb.append("    paymentRequestData: ").append(toIndentedString(paymentRequestData)).append("\n");
-        sb.append("    connector: ").append(toIndentedString(connector)).append("\n");
-        sb.append("    delayedSessionToken: ").append(toIndentedString(delayedSessionToken)).append("\n");
-        sb.append("    sdkNextAction: ").append(toIndentedString(sdkNextAction)).append("\n");
-        sb.append("    connectorReferenceId: ").append(toIndentedString(connectorReferenceId)).append("\n");
-        sb.append("    connectorSdkPublicKey: ").append(toIndentedString(connectorSdkPublicKey)).append("\n");
-        sb.append("    connectorMerchantId: ").append(toIndentedString(connectorMerchantId)).append("\n");
+    sb.append("    sessionTokenData: ").append(toIndentedString(sessionTokenData)).append("\n");
+    sb.append("    paymentRequestData: ").append(toIndentedString(paymentRequestData)).append("\n");
+    sb.append("    connector: ").append(toIndentedString(connector)).append("\n");
+    sb.append("    delayedSessionToken: ").append(toIndentedString(delayedSessionToken)).append("\n");
+    sb.append("    sdkNextAction: ").append(toIndentedString(sdkNextAction)).append("\n");
+    sb.append("    connectorReferenceId: ").append(toIndentedString(connectorReferenceId)).append("\n");
+    sb.append("    connectorSdkPublicKey: ").append(toIndentedString(connectorSdkPublicKey)).append("\n");
+    sb.append("    connectorMerchantId: ").append(toIndentedString(connectorMerchantId)).append("\n");
     sb.append("}");
     return sb.toString();
-    }
+  }
 
-    /**
-    * Convert the given object to string with each line indented by 4 spaces
-    * (except the first line).
-    */
-    private String toIndentedString(Object o) {
+  /**
+   * Convert the given object to string with each line indented by 4 spaces
+   * (except the first line).
+   */
+  private String toIndentedString(Object o) {
     if (o == null) {
-    return "null";
+      return "null";
     }
     return o.toString().replace("\n", "\n    ");
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @return URL query string
+   */
+  public String toUrlQueryString() {
+    return toUrlQueryString(null);
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @param prefix prefix of the query string
+   * @return URL query string
+   */
+  public String toUrlQueryString(String prefix) {
+    String suffix = "";
+    String containerSuffix = "";
+    String containerPrefix = "";
+    if (prefix == null) {
+      // style=form, explode=true, e.g. /pet?name=cat&type=manx
+      prefix = "";
+    } else {
+      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+      prefix = prefix + "[";
+      suffix = "]";
+      containerSuffix = "]";
+      containerPrefix = "[";
     }
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @return URL query string
-        */
-        public String toUrlQueryString() {
-        return toUrlQueryString(null);
-        }
+    StringJoiner joiner = new StringJoiner("&");
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @param prefix prefix of the query string
-        * @return URL query string
-        */
-        public String toUrlQueryString(String prefix) {
-        String suffix = "";
-        String containerSuffix = "";
-        String containerPrefix = "";
-        if (prefix == null) {
-        // style=form, explode=true, e.g. /pet?name=cat&type=manx
-        prefix = "";
-        } else {
-        // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
-        prefix = prefix + "[";
-        suffix = "]";
-        containerSuffix = "]";
-        containerPrefix = "[";
-        }
-
-        StringJoiner joiner = new StringJoiner("&");
-
-            // add `session_token_data` to the URL query string
-                            if (getSessionTokenData() != null) {
-                            joiner.add(getSessionTokenData().toUrlQueryString(prefix + "session_token_data" + suffix));
-                            }
-
-            // add `payment_request_data` to the URL query string
-                            if (getPaymentRequestData() != null) {
-                            joiner.add(getPaymentRequestData().toUrlQueryString(prefix + "payment_request_data" + suffix));
-                            }
-
-            // add `connector` to the URL query string
-                        if (getConnector() != null) {
-                        try {
-                        joiner.add(String.format("%sconnector%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getConnector()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-            // add `delayed_session_token` to the URL query string
-                        if (getDelayedSessionToken() != null) {
-                        try {
-                        joiner.add(String.format("%sdelayed_session_token%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getDelayedSessionToken()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-            // add `sdk_next_action` to the URL query string
-                            if (getSdkNextAction() != null) {
-                            joiner.add(getSdkNextAction().toUrlQueryString(prefix + "sdk_next_action" + suffix));
-                            }
-
-            // add `connector_reference_id` to the URL query string
-                        if (getConnectorReferenceId() != null) {
-                        try {
-                        joiner.add(String.format("%sconnector_reference_id%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getConnectorReferenceId()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-            // add `connector_sdk_public_key` to the URL query string
-                        if (getConnectorSdkPublicKey() != null) {
-                        try {
-                        joiner.add(String.format("%sconnector_sdk_public_key%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getConnectorSdkPublicKey()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-            // add `connector_merchant_id` to the URL query string
-                        if (getConnectorMerchantId() != null) {
-                        try {
-                        joiner.add(String.format("%sconnector_merchant_id%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getConnectorMerchantId()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-        return joiner.toString();
-        }
-
+    // add `session_token_data` to the URL query string
+    if (getSessionTokenData() != null) {
+      joiner.add(getSessionTokenData().toUrlQueryString(prefix + "session_token_data" + suffix));
     }
+
+    // add `payment_request_data` to the URL query string
+    if (getPaymentRequestData() != null) {
+      joiner.add(getPaymentRequestData().toUrlQueryString(prefix + "payment_request_data" + suffix));
+    }
+
+    // add `connector` to the URL query string
+    if (getConnector() != null) {
+      try {
+        joiner.add(String.format("%sconnector%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getConnector()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `delayed_session_token` to the URL query string
+    if (getDelayedSessionToken() != null) {
+      try {
+        joiner.add(String.format("%sdelayed_session_token%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getDelayedSessionToken()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `sdk_next_action` to the URL query string
+    if (getSdkNextAction() != null) {
+      joiner.add(getSdkNextAction().toUrlQueryString(prefix + "sdk_next_action" + suffix));
+    }
+
+    // add `connector_reference_id` to the URL query string
+    if (getConnectorReferenceId() != null) {
+      try {
+        joiner.add(String.format("%sconnector_reference_id%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getConnectorReferenceId()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `connector_sdk_public_key` to the URL query string
+    if (getConnectorSdkPublicKey() != null) {
+      try {
+        joiner.add(String.format("%sconnector_sdk_public_key%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getConnectorSdkPublicKey()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `connector_merchant_id` to the URL query string
+    if (getConnectorMerchantId() != null) {
+      try {
+        joiner.add(String.format("%sconnector_merchant_id%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getConnectorMerchantId()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    return joiner.toString();
+  }
+
+}
 

@@ -34,306 +34,306 @@ import java.net.URLEncoder;
 import java.util.StringJoiner;
 
 /**
-* Possible field type of required fields in payment_method_data
-*/
-    @JsonPropertyOrder({
-        FieldType.JSON_PROPERTY_USER_COUNTRY,
-        FieldType.JSON_PROPERTY_USER_CURRENCY,
-        FieldType.JSON_PROPERTY_USER_ADDRESS_COUNTRY,
-        FieldType.JSON_PROPERTY_USER_SHIPPING_ADDRESS_COUNTRY,
-        FieldType.JSON_PROPERTY_DROP_DOWN,
-        FieldType.JSON_PROPERTY_LANGUAGE_PREFERENCE
-    })
+ * Possible field type of required fields in payment_method_data
+ */
+@JsonPropertyOrder({
+  FieldType.JSON_PROPERTY_USER_COUNTRY,
+  FieldType.JSON_PROPERTY_USER_CURRENCY,
+  FieldType.JSON_PROPERTY_USER_ADDRESS_COUNTRY,
+  FieldType.JSON_PROPERTY_USER_SHIPPING_ADDRESS_COUNTRY,
+  FieldType.JSON_PROPERTY_DROP_DOWN,
+  FieldType.JSON_PROPERTY_LANGUAGE_PREFERENCE
+})
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class FieldType {
-        public static final String JSON_PROPERTY_USER_COUNTRY = "user_country";
-    @javax.annotation.Nonnull
-            private FieldTypeOneOfUserCountry userCountry;
+  public static final String JSON_PROPERTY_USER_COUNTRY = "user_country";
+  @javax.annotation.Nonnull
+  private FieldTypeOneOfUserCountry userCountry;
 
-        public static final String JSON_PROPERTY_USER_CURRENCY = "user_currency";
-    @javax.annotation.Nonnull
-            private FieldTypeOneOfUserCountry userCurrency;
+  public static final String JSON_PROPERTY_USER_CURRENCY = "user_currency";
+  @javax.annotation.Nonnull
+  private FieldTypeOneOfUserCountry userCurrency;
 
-        public static final String JSON_PROPERTY_USER_ADDRESS_COUNTRY = "user_address_country";
-    @javax.annotation.Nonnull
-            private FieldTypeOneOfUserCountry userAddressCountry;
+  public static final String JSON_PROPERTY_USER_ADDRESS_COUNTRY = "user_address_country";
+  @javax.annotation.Nonnull
+  private FieldTypeOneOfUserCountry userAddressCountry;
 
-        public static final String JSON_PROPERTY_USER_SHIPPING_ADDRESS_COUNTRY = "user_shipping_address_country";
-    @javax.annotation.Nonnull
-            private FieldTypeOneOfUserCountry userShippingAddressCountry;
+  public static final String JSON_PROPERTY_USER_SHIPPING_ADDRESS_COUNTRY = "user_shipping_address_country";
+  @javax.annotation.Nonnull
+  private FieldTypeOneOfUserCountry userShippingAddressCountry;
 
-        public static final String JSON_PROPERTY_DROP_DOWN = "drop_down";
-    @javax.annotation.Nonnull
-            private FieldTypeOneOfUserCountry dropDown;
+  public static final String JSON_PROPERTY_DROP_DOWN = "drop_down";
+  @javax.annotation.Nonnull
+  private FieldTypeOneOfUserCountry dropDown;
 
-        public static final String JSON_PROPERTY_LANGUAGE_PREFERENCE = "language_preference";
-    @javax.annotation.Nonnull
-            private FieldTypeOneOfUserCountry languagePreference;
+  public static final String JSON_PROPERTY_LANGUAGE_PREFERENCE = "language_preference";
+  @javax.annotation.Nonnull
+  private FieldTypeOneOfUserCountry languagePreference;
 
-public FieldType() {
-}
+  public FieldType() {
+  }
 
-        public FieldType userCountry(@javax.annotation.Nonnull FieldTypeOneOfUserCountry userCountry) {
-        
-        this.userCountry = userCountry;
-        return this;
-        }
+  public FieldType userCountry(@javax.annotation.Nonnull FieldTypeOneOfUserCountry userCountry) {
+    
+    this.userCountry = userCountry;
+    return this;
+  }
 
-    /**
-        * Get userCountry
-    * @return userCountry
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_USER_COUNTRY)
+  /**
+   * Get userCountry
+   * @return userCountry
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_USER_COUNTRY)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public FieldTypeOneOfUserCountry getUserCountry() {
-        return userCountry;
-    }
+  public FieldTypeOneOfUserCountry getUserCountry() {
+    return userCountry;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_USER_COUNTRY)
+  @JsonProperty(JSON_PROPERTY_USER_COUNTRY)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setUserCountry(@javax.annotation.Nonnull FieldTypeOneOfUserCountry userCountry) {
-            this.userCountry = userCountry;
-        }
+    this.userCountry = userCountry;
+  }
 
-        public FieldType userCurrency(@javax.annotation.Nonnull FieldTypeOneOfUserCountry userCurrency) {
-        
-        this.userCurrency = userCurrency;
-        return this;
-        }
+  public FieldType userCurrency(@javax.annotation.Nonnull FieldTypeOneOfUserCountry userCurrency) {
+    
+    this.userCurrency = userCurrency;
+    return this;
+  }
 
-    /**
-        * Get userCurrency
-    * @return userCurrency
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_USER_CURRENCY)
+  /**
+   * Get userCurrency
+   * @return userCurrency
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_USER_CURRENCY)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public FieldTypeOneOfUserCountry getUserCurrency() {
-        return userCurrency;
-    }
+  public FieldTypeOneOfUserCountry getUserCurrency() {
+    return userCurrency;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_USER_CURRENCY)
+  @JsonProperty(JSON_PROPERTY_USER_CURRENCY)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setUserCurrency(@javax.annotation.Nonnull FieldTypeOneOfUserCountry userCurrency) {
-            this.userCurrency = userCurrency;
-        }
+    this.userCurrency = userCurrency;
+  }
 
-        public FieldType userAddressCountry(@javax.annotation.Nonnull FieldTypeOneOfUserCountry userAddressCountry) {
-        
-        this.userAddressCountry = userAddressCountry;
-        return this;
-        }
+  public FieldType userAddressCountry(@javax.annotation.Nonnull FieldTypeOneOfUserCountry userAddressCountry) {
+    
+    this.userAddressCountry = userAddressCountry;
+    return this;
+  }
 
-    /**
-        * Get userAddressCountry
-    * @return userAddressCountry
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_USER_ADDRESS_COUNTRY)
+  /**
+   * Get userAddressCountry
+   * @return userAddressCountry
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_USER_ADDRESS_COUNTRY)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public FieldTypeOneOfUserCountry getUserAddressCountry() {
-        return userAddressCountry;
-    }
+  public FieldTypeOneOfUserCountry getUserAddressCountry() {
+    return userAddressCountry;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_USER_ADDRESS_COUNTRY)
+  @JsonProperty(JSON_PROPERTY_USER_ADDRESS_COUNTRY)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setUserAddressCountry(@javax.annotation.Nonnull FieldTypeOneOfUserCountry userAddressCountry) {
-            this.userAddressCountry = userAddressCountry;
-        }
+    this.userAddressCountry = userAddressCountry;
+  }
 
-        public FieldType userShippingAddressCountry(@javax.annotation.Nonnull FieldTypeOneOfUserCountry userShippingAddressCountry) {
-        
-        this.userShippingAddressCountry = userShippingAddressCountry;
-        return this;
-        }
+  public FieldType userShippingAddressCountry(@javax.annotation.Nonnull FieldTypeOneOfUserCountry userShippingAddressCountry) {
+    
+    this.userShippingAddressCountry = userShippingAddressCountry;
+    return this;
+  }
 
-    /**
-        * Get userShippingAddressCountry
-    * @return userShippingAddressCountry
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_USER_SHIPPING_ADDRESS_COUNTRY)
+  /**
+   * Get userShippingAddressCountry
+   * @return userShippingAddressCountry
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_USER_SHIPPING_ADDRESS_COUNTRY)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public FieldTypeOneOfUserCountry getUserShippingAddressCountry() {
-        return userShippingAddressCountry;
-    }
+  public FieldTypeOneOfUserCountry getUserShippingAddressCountry() {
+    return userShippingAddressCountry;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_USER_SHIPPING_ADDRESS_COUNTRY)
+  @JsonProperty(JSON_PROPERTY_USER_SHIPPING_ADDRESS_COUNTRY)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setUserShippingAddressCountry(@javax.annotation.Nonnull FieldTypeOneOfUserCountry userShippingAddressCountry) {
-            this.userShippingAddressCountry = userShippingAddressCountry;
-        }
+    this.userShippingAddressCountry = userShippingAddressCountry;
+  }
 
-        public FieldType dropDown(@javax.annotation.Nonnull FieldTypeOneOfUserCountry dropDown) {
-        
-        this.dropDown = dropDown;
-        return this;
-        }
+  public FieldType dropDown(@javax.annotation.Nonnull FieldTypeOneOfUserCountry dropDown) {
+    
+    this.dropDown = dropDown;
+    return this;
+  }
 
-    /**
-        * Get dropDown
-    * @return dropDown
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_DROP_DOWN)
+  /**
+   * Get dropDown
+   * @return dropDown
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_DROP_DOWN)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public FieldTypeOneOfUserCountry getDropDown() {
-        return dropDown;
-    }
+  public FieldTypeOneOfUserCountry getDropDown() {
+    return dropDown;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_DROP_DOWN)
+  @JsonProperty(JSON_PROPERTY_DROP_DOWN)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setDropDown(@javax.annotation.Nonnull FieldTypeOneOfUserCountry dropDown) {
-            this.dropDown = dropDown;
-        }
+    this.dropDown = dropDown;
+  }
 
-        public FieldType languagePreference(@javax.annotation.Nonnull FieldTypeOneOfUserCountry languagePreference) {
-        
-        this.languagePreference = languagePreference;
-        return this;
-        }
+  public FieldType languagePreference(@javax.annotation.Nonnull FieldTypeOneOfUserCountry languagePreference) {
+    
+    this.languagePreference = languagePreference;
+    return this;
+  }
 
-    /**
-        * Get languagePreference
-    * @return languagePreference
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_LANGUAGE_PREFERENCE)
+  /**
+   * Get languagePreference
+   * @return languagePreference
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_LANGUAGE_PREFERENCE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public FieldTypeOneOfUserCountry getLanguagePreference() {
-        return languagePreference;
-    }
+  public FieldTypeOneOfUserCountry getLanguagePreference() {
+    return languagePreference;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_LANGUAGE_PREFERENCE)
+  @JsonProperty(JSON_PROPERTY_LANGUAGE_PREFERENCE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setLanguagePreference(@javax.annotation.Nonnull FieldTypeOneOfUserCountry languagePreference) {
-            this.languagePreference = languagePreference;
-        }
+    this.languagePreference = languagePreference;
+  }
 
-@Override
-public boolean equals(Object o) {
+  @Override
+  public boolean equals(Object o) {
     if (this == o) {
-    return true;
+      return true;
     }
     if (o == null || getClass() != o.getClass()) {
-    return false;
+      return false;
     }
-        FieldType fieldType = (FieldType) o;
-        return Objects.equals(this.userCountry, fieldType.userCountry) &&
+    FieldType fieldType = (FieldType) o;
+    return Objects.equals(this.userCountry, fieldType.userCountry) &&
         Objects.equals(this.userCurrency, fieldType.userCurrency) &&
         Objects.equals(this.userAddressCountry, fieldType.userAddressCountry) &&
         Objects.equals(this.userShippingAddressCountry, fieldType.userShippingAddressCountry) &&
         Objects.equals(this.dropDown, fieldType.dropDown) &&
         Objects.equals(this.languagePreference, fieldType.languagePreference);
-}
+  }
 
-    @Override
-    public int hashCode() {
-        return Objects.hash(userCountry, userCurrency, userAddressCountry, userShippingAddressCountry, dropDown, languagePreference);
-    }
+  @Override
+  public int hashCode() {
+    return Objects.hash(userCountry, userCurrency, userAddressCountry, userShippingAddressCountry, dropDown, languagePreference);
+  }
 
-    @Override
-    public String toString() {
+  @Override
+  public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class FieldType {\n");
-        sb.append("    userCountry: ").append(toIndentedString(userCountry)).append("\n");
-        sb.append("    userCurrency: ").append(toIndentedString(userCurrency)).append("\n");
-        sb.append("    userAddressCountry: ").append(toIndentedString(userAddressCountry)).append("\n");
-        sb.append("    userShippingAddressCountry: ").append(toIndentedString(userShippingAddressCountry)).append("\n");
-        sb.append("    dropDown: ").append(toIndentedString(dropDown)).append("\n");
-        sb.append("    languagePreference: ").append(toIndentedString(languagePreference)).append("\n");
+    sb.append("    userCountry: ").append(toIndentedString(userCountry)).append("\n");
+    sb.append("    userCurrency: ").append(toIndentedString(userCurrency)).append("\n");
+    sb.append("    userAddressCountry: ").append(toIndentedString(userAddressCountry)).append("\n");
+    sb.append("    userShippingAddressCountry: ").append(toIndentedString(userShippingAddressCountry)).append("\n");
+    sb.append("    dropDown: ").append(toIndentedString(dropDown)).append("\n");
+    sb.append("    languagePreference: ").append(toIndentedString(languagePreference)).append("\n");
     sb.append("}");
     return sb.toString();
-    }
+  }
 
-    /**
-    * Convert the given object to string with each line indented by 4 spaces
-    * (except the first line).
-    */
-    private String toIndentedString(Object o) {
+  /**
+   * Convert the given object to string with each line indented by 4 spaces
+   * (except the first line).
+   */
+  private String toIndentedString(Object o) {
     if (o == null) {
-    return "null";
+      return "null";
     }
     return o.toString().replace("\n", "\n    ");
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @return URL query string
+   */
+  public String toUrlQueryString() {
+    return toUrlQueryString(null);
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @param prefix prefix of the query string
+   * @return URL query string
+   */
+  public String toUrlQueryString(String prefix) {
+    String suffix = "";
+    String containerSuffix = "";
+    String containerPrefix = "";
+    if (prefix == null) {
+      // style=form, explode=true, e.g. /pet?name=cat&type=manx
+      prefix = "";
+    } else {
+      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+      prefix = prefix + "[";
+      suffix = "]";
+      containerSuffix = "]";
+      containerPrefix = "[";
     }
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @return URL query string
-        */
-        public String toUrlQueryString() {
-        return toUrlQueryString(null);
-        }
+    StringJoiner joiner = new StringJoiner("&");
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @param prefix prefix of the query string
-        * @return URL query string
-        */
-        public String toUrlQueryString(String prefix) {
-        String suffix = "";
-        String containerSuffix = "";
-        String containerPrefix = "";
-        if (prefix == null) {
-        // style=form, explode=true, e.g. /pet?name=cat&type=manx
-        prefix = "";
-        } else {
-        // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
-        prefix = prefix + "[";
-        suffix = "]";
-        containerSuffix = "]";
-        containerPrefix = "[";
-        }
-
-        StringJoiner joiner = new StringJoiner("&");
-
-            // add `user_country` to the URL query string
-                            if (getUserCountry() != null) {
-                            joiner.add(getUserCountry().toUrlQueryString(prefix + "user_country" + suffix));
-                            }
-
-            // add `user_currency` to the URL query string
-                            if (getUserCurrency() != null) {
-                            joiner.add(getUserCurrency().toUrlQueryString(prefix + "user_currency" + suffix));
-                            }
-
-            // add `user_address_country` to the URL query string
-                            if (getUserAddressCountry() != null) {
-                            joiner.add(getUserAddressCountry().toUrlQueryString(prefix + "user_address_country" + suffix));
-                            }
-
-            // add `user_shipping_address_country` to the URL query string
-                            if (getUserShippingAddressCountry() != null) {
-                            joiner.add(getUserShippingAddressCountry().toUrlQueryString(prefix + "user_shipping_address_country" + suffix));
-                            }
-
-            // add `drop_down` to the URL query string
-                            if (getDropDown() != null) {
-                            joiner.add(getDropDown().toUrlQueryString(prefix + "drop_down" + suffix));
-                            }
-
-            // add `language_preference` to the URL query string
-                            if (getLanguagePreference() != null) {
-                            joiner.add(getLanguagePreference().toUrlQueryString(prefix + "language_preference" + suffix));
-                            }
-
-        return joiner.toString();
-        }
-
+    // add `user_country` to the URL query string
+    if (getUserCountry() != null) {
+      joiner.add(getUserCountry().toUrlQueryString(prefix + "user_country" + suffix));
     }
+
+    // add `user_currency` to the URL query string
+    if (getUserCurrency() != null) {
+      joiner.add(getUserCurrency().toUrlQueryString(prefix + "user_currency" + suffix));
+    }
+
+    // add `user_address_country` to the URL query string
+    if (getUserAddressCountry() != null) {
+      joiner.add(getUserAddressCountry().toUrlQueryString(prefix + "user_address_country" + suffix));
+    }
+
+    // add `user_shipping_address_country` to the URL query string
+    if (getUserShippingAddressCountry() != null) {
+      joiner.add(getUserShippingAddressCountry().toUrlQueryString(prefix + "user_shipping_address_country" + suffix));
+    }
+
+    // add `drop_down` to the URL query string
+    if (getDropDown() != null) {
+      joiner.add(getDropDown().toUrlQueryString(prefix + "drop_down" + suffix));
+    }
+
+    // add `language_preference` to the URL query string
+    if (getLanguagePreference() != null) {
+      joiner.add(getLanguagePreference().toUrlQueryString(prefix + "language_preference" + suffix));
+    }
+
+    return joiner.toString();
+  }
+
+}
 

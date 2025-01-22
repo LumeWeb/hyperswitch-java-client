@@ -28,122 +28,122 @@ import java.net.URLEncoder;
 import java.util.StringJoiner;
 
 /**
-* WalletDataOneOf17
-*/
-    @JsonPropertyOrder({
-        WalletDataOneOf17.JSON_PROPERTY_PAYPAL_SDK
-    })
-            @JsonTypeName("WalletData_oneOf_17")
+ * WalletDataOneOf17
+ */
+@JsonPropertyOrder({
+  WalletDataOneOf17.JSON_PROPERTY_PAYPAL_SDK
+})
+@JsonTypeName("WalletData_oneOf_17")
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class WalletDataOneOf17 {
-        public static final String JSON_PROPERTY_PAYPAL_SDK = "paypal_sdk";
-    @javax.annotation.Nonnull
-            private PayPalWalletData paypalSdk;
+  public static final String JSON_PROPERTY_PAYPAL_SDK = "paypal_sdk";
+  @javax.annotation.Nonnull
+  private PayPalWalletData paypalSdk;
 
-public WalletDataOneOf17() {
-}
+  public WalletDataOneOf17() {
+  }
 
-        public WalletDataOneOf17 paypalSdk(@javax.annotation.Nonnull PayPalWalletData paypalSdk) {
-        
-        this.paypalSdk = paypalSdk;
-        return this;
-        }
+  public WalletDataOneOf17 paypalSdk(@javax.annotation.Nonnull PayPalWalletData paypalSdk) {
+    
+    this.paypalSdk = paypalSdk;
+    return this;
+  }
 
-    /**
-        * Get paypalSdk
-    * @return paypalSdk
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_PAYPAL_SDK)
+  /**
+   * Get paypalSdk
+   * @return paypalSdk
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_PAYPAL_SDK)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public PayPalWalletData getPaypalSdk() {
-        return paypalSdk;
-    }
+  public PayPalWalletData getPaypalSdk() {
+    return paypalSdk;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_PAYPAL_SDK)
+  @JsonProperty(JSON_PROPERTY_PAYPAL_SDK)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setPaypalSdk(@javax.annotation.Nonnull PayPalWalletData paypalSdk) {
-            this.paypalSdk = paypalSdk;
-        }
+    this.paypalSdk = paypalSdk;
+  }
 
-@Override
-public boolean equals(Object o) {
+  @Override
+  public boolean equals(Object o) {
     if (this == o) {
-    return true;
+      return true;
     }
     if (o == null || getClass() != o.getClass()) {
-    return false;
+      return false;
     }
-        WalletDataOneOf17 walletDataOneOf17 = (WalletDataOneOf17) o;
-        return Objects.equals(this.paypalSdk, walletDataOneOf17.paypalSdk);
-}
+    WalletDataOneOf17 walletDataOneOf17 = (WalletDataOneOf17) o;
+    return Objects.equals(this.paypalSdk, walletDataOneOf17.paypalSdk);
+  }
 
-    @Override
-    public int hashCode() {
-        return Objects.hash(paypalSdk);
-    }
+  @Override
+  public int hashCode() {
+    return Objects.hash(paypalSdk);
+  }
 
-    @Override
-    public String toString() {
+  @Override
+  public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class WalletDataOneOf17 {\n");
-        sb.append("    paypalSdk: ").append(toIndentedString(paypalSdk)).append("\n");
+    sb.append("    paypalSdk: ").append(toIndentedString(paypalSdk)).append("\n");
     sb.append("}");
     return sb.toString();
-    }
+  }
 
-    /**
-    * Convert the given object to string with each line indented by 4 spaces
-    * (except the first line).
-    */
-    private String toIndentedString(Object o) {
+  /**
+   * Convert the given object to string with each line indented by 4 spaces
+   * (except the first line).
+   */
+  private String toIndentedString(Object o) {
     if (o == null) {
-    return "null";
+      return "null";
     }
     return o.toString().replace("\n", "\n    ");
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @return URL query string
+   */
+  public String toUrlQueryString() {
+    return toUrlQueryString(null);
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @param prefix prefix of the query string
+   * @return URL query string
+   */
+  public String toUrlQueryString(String prefix) {
+    String suffix = "";
+    String containerSuffix = "";
+    String containerPrefix = "";
+    if (prefix == null) {
+      // style=form, explode=true, e.g. /pet?name=cat&type=manx
+      prefix = "";
+    } else {
+      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+      prefix = prefix + "[";
+      suffix = "]";
+      containerSuffix = "]";
+      containerPrefix = "[";
     }
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @return URL query string
-        */
-        public String toUrlQueryString() {
-        return toUrlQueryString(null);
-        }
+    StringJoiner joiner = new StringJoiner("&");
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @param prefix prefix of the query string
-        * @return URL query string
-        */
-        public String toUrlQueryString(String prefix) {
-        String suffix = "";
-        String containerSuffix = "";
-        String containerPrefix = "";
-        if (prefix == null) {
-        // style=form, explode=true, e.g. /pet?name=cat&type=manx
-        prefix = "";
-        } else {
-        // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
-        prefix = prefix + "[";
-        suffix = "]";
-        containerSuffix = "]";
-        containerPrefix = "[";
-        }
-
-        StringJoiner joiner = new StringJoiner("&");
-
-            // add `paypal_sdk` to the URL query string
-                            if (getPaypalSdk() != null) {
-                            joiner.add(getPaypalSdk().toUrlQueryString(prefix + "paypal_sdk" + suffix));
-                            }
-
-        return joiner.toString();
-        }
-
+    // add `paypal_sdk` to the URL query string
+    if (getPaypalSdk() != null) {
+      joiner.add(getPaypalSdk().toUrlQueryString(prefix + "paypal_sdk" + suffix));
     }
+
+    return joiner.toString();
+  }
+
+}
 

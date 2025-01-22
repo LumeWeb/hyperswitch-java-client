@@ -32,141 +32,141 @@ import java.net.URLEncoder;
 import java.util.StringJoiner;
 
 /**
-* BankTransferDataOneOfAchBankTransfer
-*/
-    @JsonPropertyOrder({
-        BankTransferDataOneOfAchBankTransfer.JSON_PROPERTY_BILLING_DETAILS
-    })
-            @JsonTypeName("BankTransferData_oneOf_ach_bank_transfer")
+ * BankTransferDataOneOfAchBankTransfer
+ */
+@JsonPropertyOrder({
+  BankTransferDataOneOfAchBankTransfer.JSON_PROPERTY_BILLING_DETAILS
+})
+@JsonTypeName("BankTransferData_oneOf_ach_bank_transfer")
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class BankTransferDataOneOfAchBankTransfer {
-        public static final String JSON_PROPERTY_BILLING_DETAILS = "billing_details";
-    @javax.annotation.Nullable
-            private JsonNullable<AchBillingDetails> billingDetails = JsonNullable.<AchBillingDetails>undefined();
+  public static final String JSON_PROPERTY_BILLING_DETAILS = "billing_details";
+  @javax.annotation.Nullable
+  private JsonNullable<AchBillingDetails> billingDetails = JsonNullable.<AchBillingDetails>undefined();
 
-public BankTransferDataOneOfAchBankTransfer() {
-}
+  public BankTransferDataOneOfAchBankTransfer() {
+  }
 
-        public BankTransferDataOneOfAchBankTransfer billingDetails(@javax.annotation.Nullable AchBillingDetails billingDetails) {
-        this.billingDetails = JsonNullable.<AchBillingDetails>of(billingDetails);
-        
-        return this;
-        }
-
-    /**
-        * Get billingDetails
-    * @return billingDetails
-    */
-    @javax.annotation.Nullable
-        @JsonIgnore
+  public BankTransferDataOneOfAchBankTransfer billingDetails(@javax.annotation.Nullable AchBillingDetails billingDetails) {
+    this.billingDetails = JsonNullable.<AchBillingDetails>of(billingDetails);
     
-    public AchBillingDetails getBillingDetails() {
-                return billingDetails.orElse(null);
-    }
+    return this;
+  }
 
-          @JsonProperty(JSON_PROPERTY_BILLING_DETAILS)
+  /**
+   * Get billingDetails
+   * @return billingDetails
+   */
+  @javax.annotation.Nullable
+  @JsonIgnore
+
+  public AchBillingDetails getBillingDetails() {
+        return billingDetails.orElse(null);
+  }
+
+  @JsonProperty(JSON_PROPERTY_BILLING_DETAILS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-        public JsonNullable<AchBillingDetails> getBillingDetails_JsonNullable() {
-        return billingDetails;
-        }
-    
-        @JsonProperty(JSON_PROPERTY_BILLING_DETAILS)
-        public void setBillingDetails_JsonNullable(JsonNullable<AchBillingDetails> billingDetails) {
-        this.billingDetails = billingDetails;
-        }
+  public JsonNullable<AchBillingDetails> getBillingDetails_JsonNullable() {
+    return billingDetails;
+  }
+  
+  @JsonProperty(JSON_PROPERTY_BILLING_DETAILS)
+  public void setBillingDetails_JsonNullable(JsonNullable<AchBillingDetails> billingDetails) {
+    this.billingDetails = billingDetails;
+  }
 
-          public void setBillingDetails(@javax.annotation.Nullable AchBillingDetails billingDetails) {
-            this.billingDetails = JsonNullable.<AchBillingDetails>of(billingDetails);
-        }
+  public void setBillingDetails(@javax.annotation.Nullable AchBillingDetails billingDetails) {
+    this.billingDetails = JsonNullable.<AchBillingDetails>of(billingDetails);
+  }
 
-@Override
-public boolean equals(Object o) {
+  @Override
+  public boolean equals(Object o) {
     if (this == o) {
-    return true;
+      return true;
     }
     if (o == null || getClass() != o.getClass()) {
-    return false;
+      return false;
     }
-        BankTransferDataOneOfAchBankTransfer bankTransferDataOneOfAchBankTransfer = (BankTransferDataOneOfAchBankTransfer) o;
-        return equalsNullable(this.billingDetails, bankTransferDataOneOfAchBankTransfer.billingDetails);
-}
+    BankTransferDataOneOfAchBankTransfer bankTransferDataOneOfAchBankTransfer = (BankTransferDataOneOfAchBankTransfer) o;
+    return equalsNullable(this.billingDetails, bankTransferDataOneOfAchBankTransfer.billingDetails);
+  }
 
-    private static <T> boolean equalsNullable(JsonNullable<T> a, JsonNullable<T> b) {
-        return a == b || (a != null && b != null && a.isPresent() && b.isPresent() && Objects.deepEquals(a.get(), b.get()));
-        }
+  private static <T> boolean equalsNullable(JsonNullable<T> a, JsonNullable<T> b) {
+    return a == b || (a != null && b != null && a.isPresent() && b.isPresent() && Objects.deepEquals(a.get(), b.get()));
+  }
 
-    @Override
-    public int hashCode() {
-        return Objects.hash(hashCodeNullable(billingDetails));
+  @Override
+  public int hashCode() {
+    return Objects.hash(hashCodeNullable(billingDetails));
+  }
+
+  private static <T> int hashCodeNullable(JsonNullable<T> a) {
+    if (a == null) {
+      return 1;
     }
+    return a.isPresent() ? Arrays.deepHashCode(new Object[]{a.get()}) : 31;
+  }
 
-        private static <T> int hashCodeNullable(JsonNullable<T> a) {
-        if (a == null) {
-        return 1;
-        }
-        return a.isPresent() ? Arrays.deepHashCode(new Object[]{a.get()}) : 31;
-        }
-
-    @Override
-    public String toString() {
+  @Override
+  public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class BankTransferDataOneOfAchBankTransfer {\n");
-        sb.append("    billingDetails: ").append(toIndentedString(billingDetails)).append("\n");
+    sb.append("    billingDetails: ").append(toIndentedString(billingDetails)).append("\n");
     sb.append("}");
     return sb.toString();
-    }
+  }
 
-    /**
-    * Convert the given object to string with each line indented by 4 spaces
-    * (except the first line).
-    */
-    private String toIndentedString(Object o) {
+  /**
+   * Convert the given object to string with each line indented by 4 spaces
+   * (except the first line).
+   */
+  private String toIndentedString(Object o) {
     if (o == null) {
-    return "null";
+      return "null";
     }
     return o.toString().replace("\n", "\n    ");
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @return URL query string
+   */
+  public String toUrlQueryString() {
+    return toUrlQueryString(null);
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @param prefix prefix of the query string
+   * @return URL query string
+   */
+  public String toUrlQueryString(String prefix) {
+    String suffix = "";
+    String containerSuffix = "";
+    String containerPrefix = "";
+    if (prefix == null) {
+      // style=form, explode=true, e.g. /pet?name=cat&type=manx
+      prefix = "";
+    } else {
+      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+      prefix = prefix + "[";
+      suffix = "]";
+      containerSuffix = "]";
+      containerPrefix = "[";
     }
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @return URL query string
-        */
-        public String toUrlQueryString() {
-        return toUrlQueryString(null);
-        }
+    StringJoiner joiner = new StringJoiner("&");
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @param prefix prefix of the query string
-        * @return URL query string
-        */
-        public String toUrlQueryString(String prefix) {
-        String suffix = "";
-        String containerSuffix = "";
-        String containerPrefix = "";
-        if (prefix == null) {
-        // style=form, explode=true, e.g. /pet?name=cat&type=manx
-        prefix = "";
-        } else {
-        // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
-        prefix = prefix + "[";
-        suffix = "]";
-        containerSuffix = "]";
-        containerPrefix = "[";
-        }
-
-        StringJoiner joiner = new StringJoiner("&");
-
-            // add `billing_details` to the URL query string
-                            if (getBillingDetails() != null) {
-                            joiner.add(getBillingDetails().toUrlQueryString(prefix + "billing_details" + suffix));
-                            }
-
-        return joiner.toString();
-        }
-
+    // add `billing_details` to the URL query string
+    if (getBillingDetails() != null) {
+      joiner.add(getBillingDetails().toUrlQueryString(prefix + "billing_details" + suffix));
     }
+
+    return joiner.toString();
+  }
+
+}
 

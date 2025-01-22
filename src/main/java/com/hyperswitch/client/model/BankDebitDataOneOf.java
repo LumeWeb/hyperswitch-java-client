@@ -28,122 +28,122 @@ import java.net.URLEncoder;
 import java.util.StringJoiner;
 
 /**
-* BankDebitDataOneOf
-*/
-    @JsonPropertyOrder({
-        BankDebitDataOneOf.JSON_PROPERTY_ACH_BANK_DEBIT
-    })
-            @JsonTypeName("BankDebitData_oneOf")
+ * BankDebitDataOneOf
+ */
+@JsonPropertyOrder({
+  BankDebitDataOneOf.JSON_PROPERTY_ACH_BANK_DEBIT
+})
+@JsonTypeName("BankDebitData_oneOf")
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class BankDebitDataOneOf {
-        public static final String JSON_PROPERTY_ACH_BANK_DEBIT = "ach_bank_debit";
-    @javax.annotation.Nonnull
-            private BankDebitDataOneOfAchBankDebit achBankDebit;
+  public static final String JSON_PROPERTY_ACH_BANK_DEBIT = "ach_bank_debit";
+  @javax.annotation.Nonnull
+  private BankDebitDataOneOfAchBankDebit achBankDebit;
 
-public BankDebitDataOneOf() {
-}
+  public BankDebitDataOneOf() {
+  }
 
-        public BankDebitDataOneOf achBankDebit(@javax.annotation.Nonnull BankDebitDataOneOfAchBankDebit achBankDebit) {
-        
-        this.achBankDebit = achBankDebit;
-        return this;
-        }
+  public BankDebitDataOneOf achBankDebit(@javax.annotation.Nonnull BankDebitDataOneOfAchBankDebit achBankDebit) {
+    
+    this.achBankDebit = achBankDebit;
+    return this;
+  }
 
-    /**
-        * Get achBankDebit
-    * @return achBankDebit
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_ACH_BANK_DEBIT)
+  /**
+   * Get achBankDebit
+   * @return achBankDebit
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_ACH_BANK_DEBIT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public BankDebitDataOneOfAchBankDebit getAchBankDebit() {
-        return achBankDebit;
-    }
+  public BankDebitDataOneOfAchBankDebit getAchBankDebit() {
+    return achBankDebit;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_ACH_BANK_DEBIT)
+  @JsonProperty(JSON_PROPERTY_ACH_BANK_DEBIT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setAchBankDebit(@javax.annotation.Nonnull BankDebitDataOneOfAchBankDebit achBankDebit) {
-            this.achBankDebit = achBankDebit;
-        }
+    this.achBankDebit = achBankDebit;
+  }
 
-@Override
-public boolean equals(Object o) {
+  @Override
+  public boolean equals(Object o) {
     if (this == o) {
-    return true;
+      return true;
     }
     if (o == null || getClass() != o.getClass()) {
-    return false;
+      return false;
     }
-        BankDebitDataOneOf bankDebitDataOneOf = (BankDebitDataOneOf) o;
-        return Objects.equals(this.achBankDebit, bankDebitDataOneOf.achBankDebit);
-}
+    BankDebitDataOneOf bankDebitDataOneOf = (BankDebitDataOneOf) o;
+    return Objects.equals(this.achBankDebit, bankDebitDataOneOf.achBankDebit);
+  }
 
-    @Override
-    public int hashCode() {
-        return Objects.hash(achBankDebit);
-    }
+  @Override
+  public int hashCode() {
+    return Objects.hash(achBankDebit);
+  }
 
-    @Override
-    public String toString() {
+  @Override
+  public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class BankDebitDataOneOf {\n");
-        sb.append("    achBankDebit: ").append(toIndentedString(achBankDebit)).append("\n");
+    sb.append("    achBankDebit: ").append(toIndentedString(achBankDebit)).append("\n");
     sb.append("}");
     return sb.toString();
-    }
+  }
 
-    /**
-    * Convert the given object to string with each line indented by 4 spaces
-    * (except the first line).
-    */
-    private String toIndentedString(Object o) {
+  /**
+   * Convert the given object to string with each line indented by 4 spaces
+   * (except the first line).
+   */
+  private String toIndentedString(Object o) {
     if (o == null) {
-    return "null";
+      return "null";
     }
     return o.toString().replace("\n", "\n    ");
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @return URL query string
+   */
+  public String toUrlQueryString() {
+    return toUrlQueryString(null);
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @param prefix prefix of the query string
+   * @return URL query string
+   */
+  public String toUrlQueryString(String prefix) {
+    String suffix = "";
+    String containerSuffix = "";
+    String containerPrefix = "";
+    if (prefix == null) {
+      // style=form, explode=true, e.g. /pet?name=cat&type=manx
+      prefix = "";
+    } else {
+      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+      prefix = prefix + "[";
+      suffix = "]";
+      containerSuffix = "]";
+      containerPrefix = "[";
     }
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @return URL query string
-        */
-        public String toUrlQueryString() {
-        return toUrlQueryString(null);
-        }
+    StringJoiner joiner = new StringJoiner("&");
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @param prefix prefix of the query string
-        * @return URL query string
-        */
-        public String toUrlQueryString(String prefix) {
-        String suffix = "";
-        String containerSuffix = "";
-        String containerPrefix = "";
-        if (prefix == null) {
-        // style=form, explode=true, e.g. /pet?name=cat&type=manx
-        prefix = "";
-        } else {
-        // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
-        prefix = prefix + "[";
-        suffix = "]";
-        containerSuffix = "]";
-        containerPrefix = "[";
-        }
-
-        StringJoiner joiner = new StringJoiner("&");
-
-            // add `ach_bank_debit` to the URL query string
-                            if (getAchBankDebit() != null) {
-                            joiner.add(getAchBankDebit().toUrlQueryString(prefix + "ach_bank_debit" + suffix));
-                            }
-
-        return joiner.toString();
-        }
-
+    // add `ach_bank_debit` to the URL query string
+    if (getAchBankDebit() != null) {
+      joiner.add(getAchBankDebit().toUrlQueryString(prefix + "ach_bank_debit" + suffix));
     }
+
+    return joiner.toString();
+  }
+
+}
 

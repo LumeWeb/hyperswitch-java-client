@@ -28,168 +28,168 @@ import java.net.URLEncoder;
 import java.util.StringJoiner;
 
 /**
-* PollResponse
-*/
-    @JsonPropertyOrder({
-        PollResponse.JSON_PROPERTY_POLL_ID,
-        PollResponse.JSON_PROPERTY_STATUS
-    })
+ * PollResponse
+ */
+@JsonPropertyOrder({
+  PollResponse.JSON_PROPERTY_POLL_ID,
+  PollResponse.JSON_PROPERTY_STATUS
+})
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class PollResponse {
-        public static final String JSON_PROPERTY_POLL_ID = "poll_id";
-    @javax.annotation.Nonnull
-            private String pollId;
+  public static final String JSON_PROPERTY_POLL_ID = "poll_id";
+  @javax.annotation.Nonnull
+  private String pollId;
 
-        public static final String JSON_PROPERTY_STATUS = "status";
-    @javax.annotation.Nonnull
-            private PollStatus status;
+  public static final String JSON_PROPERTY_STATUS = "status";
+  @javax.annotation.Nonnull
+  private PollStatus status;
 
-public PollResponse() {
-}
+  public PollResponse() {
+  }
 
-        public PollResponse pollId(@javax.annotation.Nonnull String pollId) {
-        
-        this.pollId = pollId;
-        return this;
-        }
+  public PollResponse pollId(@javax.annotation.Nonnull String pollId) {
+    
+    this.pollId = pollId;
+    return this;
+  }
 
-    /**
-        * The poll id
-    * @return pollId
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_POLL_ID)
+  /**
+   * The poll id
+   * @return pollId
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_POLL_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public String getPollId() {
-        return pollId;
-    }
+  public String getPollId() {
+    return pollId;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_POLL_ID)
+  @JsonProperty(JSON_PROPERTY_POLL_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setPollId(@javax.annotation.Nonnull String pollId) {
-            this.pollId = pollId;
-        }
+    this.pollId = pollId;
+  }
 
-        public PollResponse status(@javax.annotation.Nonnull PollStatus status) {
-        
-        this.status = status;
-        return this;
-        }
+  public PollResponse status(@javax.annotation.Nonnull PollStatus status) {
+    
+    this.status = status;
+    return this;
+  }
 
-    /**
-        * Get status
-    * @return status
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_STATUS)
+  /**
+   * Get status
+   * @return status
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_STATUS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public PollStatus getStatus() {
-        return status;
-    }
+  public PollStatus getStatus() {
+    return status;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_STATUS)
+  @JsonProperty(JSON_PROPERTY_STATUS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setStatus(@javax.annotation.Nonnull PollStatus status) {
-            this.status = status;
-        }
+    this.status = status;
+  }
 
-@Override
-public boolean equals(Object o) {
+  @Override
+  public boolean equals(Object o) {
     if (this == o) {
-    return true;
+      return true;
     }
     if (o == null || getClass() != o.getClass()) {
-    return false;
+      return false;
     }
-        PollResponse pollResponse = (PollResponse) o;
-        return Objects.equals(this.pollId, pollResponse.pollId) &&
+    PollResponse pollResponse = (PollResponse) o;
+    return Objects.equals(this.pollId, pollResponse.pollId) &&
         Objects.equals(this.status, pollResponse.status);
-}
+  }
 
-    @Override
-    public int hashCode() {
-        return Objects.hash(pollId, status);
-    }
+  @Override
+  public int hashCode() {
+    return Objects.hash(pollId, status);
+  }
 
-    @Override
-    public String toString() {
+  @Override
+  public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class PollResponse {\n");
-        sb.append("    pollId: ").append(toIndentedString(pollId)).append("\n");
-        sb.append("    status: ").append(toIndentedString(status)).append("\n");
+    sb.append("    pollId: ").append(toIndentedString(pollId)).append("\n");
+    sb.append("    status: ").append(toIndentedString(status)).append("\n");
     sb.append("}");
     return sb.toString();
-    }
+  }
 
-    /**
-    * Convert the given object to string with each line indented by 4 spaces
-    * (except the first line).
-    */
-    private String toIndentedString(Object o) {
+  /**
+   * Convert the given object to string with each line indented by 4 spaces
+   * (except the first line).
+   */
+  private String toIndentedString(Object o) {
     if (o == null) {
-    return "null";
+      return "null";
     }
     return o.toString().replace("\n", "\n    ");
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @return URL query string
+   */
+  public String toUrlQueryString() {
+    return toUrlQueryString(null);
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @param prefix prefix of the query string
+   * @return URL query string
+   */
+  public String toUrlQueryString(String prefix) {
+    String suffix = "";
+    String containerSuffix = "";
+    String containerPrefix = "";
+    if (prefix == null) {
+      // style=form, explode=true, e.g. /pet?name=cat&type=manx
+      prefix = "";
+    } else {
+      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+      prefix = prefix + "[";
+      suffix = "]";
+      containerSuffix = "]";
+      containerPrefix = "[";
     }
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @return URL query string
-        */
-        public String toUrlQueryString() {
-        return toUrlQueryString(null);
-        }
+    StringJoiner joiner = new StringJoiner("&");
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @param prefix prefix of the query string
-        * @return URL query string
-        */
-        public String toUrlQueryString(String prefix) {
-        String suffix = "";
-        String containerSuffix = "";
-        String containerPrefix = "";
-        if (prefix == null) {
-        // style=form, explode=true, e.g. /pet?name=cat&type=manx
-        prefix = "";
-        } else {
-        // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
-        prefix = prefix + "[";
-        suffix = "]";
-        containerSuffix = "]";
-        containerPrefix = "[";
-        }
-
-        StringJoiner joiner = new StringJoiner("&");
-
-            // add `poll_id` to the URL query string
-                        if (getPollId() != null) {
-                        try {
-                        joiner.add(String.format("%spoll_id%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getPollId()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-            // add `status` to the URL query string
-                            if (getStatus() != null) {
-                            try {
-                            joiner.add(String.format("%sstatus%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getStatus()), "UTF-8").replaceAll("\\+", "%20")));
-                            } catch (UnsupportedEncodingException e) {
-                            // Should never happen, UTF-8 is always supported
-                            throw new RuntimeException(e);
-                            }
-                            }
-
-        return joiner.toString();
-        }
-
+    // add `poll_id` to the URL query string
+    if (getPollId() != null) {
+      try {
+        joiner.add(String.format("%spoll_id%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getPollId()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
     }
+
+    // add `status` to the URL query string
+    if (getStatus() != null) {
+      try {
+        joiner.add(String.format("%sstatus%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getStatus()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    return joiner.toString();
+  }
+
+}
 

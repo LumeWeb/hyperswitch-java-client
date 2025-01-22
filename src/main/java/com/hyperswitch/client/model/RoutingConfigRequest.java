@@ -32,290 +32,290 @@ import java.net.URLEncoder;
 import java.util.StringJoiner;
 
 /**
-* RoutingConfigRequest
-*/
-    @JsonPropertyOrder({
-        RoutingConfigRequest.JSON_PROPERTY_NAME,
-        RoutingConfigRequest.JSON_PROPERTY_DESCRIPTION,
-        RoutingConfigRequest.JSON_PROPERTY_ALGORITHM,
-        RoutingConfigRequest.JSON_PROPERTY_PROFILE_ID
-    })
+ * RoutingConfigRequest
+ */
+@JsonPropertyOrder({
+  RoutingConfigRequest.JSON_PROPERTY_NAME,
+  RoutingConfigRequest.JSON_PROPERTY_DESCRIPTION,
+  RoutingConfigRequest.JSON_PROPERTY_ALGORITHM,
+  RoutingConfigRequest.JSON_PROPERTY_PROFILE_ID
+})
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class RoutingConfigRequest {
-        public static final String JSON_PROPERTY_NAME = "name";
-    @javax.annotation.Nullable
-            private JsonNullable<String> name = JsonNullable.<String>undefined();
+  public static final String JSON_PROPERTY_NAME = "name";
+  @javax.annotation.Nullable
+  private JsonNullable<String> name = JsonNullable.<String>undefined();
 
-        public static final String JSON_PROPERTY_DESCRIPTION = "description";
-    @javax.annotation.Nullable
-            private JsonNullable<String> description = JsonNullable.<String>undefined();
+  public static final String JSON_PROPERTY_DESCRIPTION = "description";
+  @javax.annotation.Nullable
+  private JsonNullable<String> description = JsonNullable.<String>undefined();
 
-        public static final String JSON_PROPERTY_ALGORITHM = "algorithm";
-    @javax.annotation.Nullable
-            private JsonNullable<RoutingAlgorithm> algorithm = JsonNullable.<RoutingAlgorithm>undefined();
+  public static final String JSON_PROPERTY_ALGORITHM = "algorithm";
+  @javax.annotation.Nullable
+  private JsonNullable<RoutingAlgorithm> algorithm = JsonNullable.<RoutingAlgorithm>undefined();
 
-        public static final String JSON_PROPERTY_PROFILE_ID = "profile_id";
-    @javax.annotation.Nullable
-            private JsonNullable<String> profileId = JsonNullable.<String>undefined();
+  public static final String JSON_PROPERTY_PROFILE_ID = "profile_id";
+  @javax.annotation.Nullable
+  private JsonNullable<String> profileId = JsonNullable.<String>undefined();
 
-public RoutingConfigRequest() {
-}
+  public RoutingConfigRequest() {
+  }
 
-        public RoutingConfigRequest name(@javax.annotation.Nullable String name) {
-        this.name = JsonNullable.<String>of(name);
-        
-        return this;
-        }
-
-    /**
-        * Get name
-    * @return name
-    */
-    @javax.annotation.Nullable
-        @JsonIgnore
+  public RoutingConfigRequest name(@javax.annotation.Nullable String name) {
+    this.name = JsonNullable.<String>of(name);
     
-    public String getName() {
-                return name.orElse(null);
-    }
+    return this;
+  }
 
-          @JsonProperty(JSON_PROPERTY_NAME)
+  /**
+   * Get name
+   * @return name
+   */
+  @javax.annotation.Nullable
+  @JsonIgnore
+
+  public String getName() {
+        return name.orElse(null);
+  }
+
+  @JsonProperty(JSON_PROPERTY_NAME)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-        public JsonNullable<String> getName_JsonNullable() {
-        return name;
-        }
+  public JsonNullable<String> getName_JsonNullable() {
+    return name;
+  }
+  
+  @JsonProperty(JSON_PROPERTY_NAME)
+  public void setName_JsonNullable(JsonNullable<String> name) {
+    this.name = name;
+  }
+
+  public void setName(@javax.annotation.Nullable String name) {
+    this.name = JsonNullable.<String>of(name);
+  }
+
+  public RoutingConfigRequest description(@javax.annotation.Nullable String description) {
+    this.description = JsonNullable.<String>of(description);
     
-        @JsonProperty(JSON_PROPERTY_NAME)
-        public void setName_JsonNullable(JsonNullable<String> name) {
-        this.name = name;
-        }
+    return this;
+  }
 
-          public void setName(@javax.annotation.Nullable String name) {
-            this.name = JsonNullable.<String>of(name);
-        }
+  /**
+   * Get description
+   * @return description
+   */
+  @javax.annotation.Nullable
+  @JsonIgnore
 
-        public RoutingConfigRequest description(@javax.annotation.Nullable String description) {
-        this.description = JsonNullable.<String>of(description);
-        
-        return this;
-        }
+  public String getDescription() {
+        return description.orElse(null);
+  }
 
-    /**
-        * Get description
-    * @return description
-    */
-    @javax.annotation.Nullable
-        @JsonIgnore
-    
-    public String getDescription() {
-                return description.orElse(null);
-    }
-
-          @JsonProperty(JSON_PROPERTY_DESCRIPTION)
+  @JsonProperty(JSON_PROPERTY_DESCRIPTION)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-        public JsonNullable<String> getDescription_JsonNullable() {
-        return description;
-        }
+  public JsonNullable<String> getDescription_JsonNullable() {
+    return description;
+  }
+  
+  @JsonProperty(JSON_PROPERTY_DESCRIPTION)
+  public void setDescription_JsonNullable(JsonNullable<String> description) {
+    this.description = description;
+  }
+
+  public void setDescription(@javax.annotation.Nullable String description) {
+    this.description = JsonNullable.<String>of(description);
+  }
+
+  public RoutingConfigRequest algorithm(@javax.annotation.Nullable RoutingAlgorithm algorithm) {
+    this.algorithm = JsonNullable.<RoutingAlgorithm>of(algorithm);
     
-        @JsonProperty(JSON_PROPERTY_DESCRIPTION)
-        public void setDescription_JsonNullable(JsonNullable<String> description) {
-        this.description = description;
-        }
+    return this;
+  }
 
-          public void setDescription(@javax.annotation.Nullable String description) {
-            this.description = JsonNullable.<String>of(description);
-        }
+  /**
+   * Get algorithm
+   * @return algorithm
+   */
+  @javax.annotation.Nullable
+  @JsonIgnore
 
-        public RoutingConfigRequest algorithm(@javax.annotation.Nullable RoutingAlgorithm algorithm) {
-        this.algorithm = JsonNullable.<RoutingAlgorithm>of(algorithm);
-        
-        return this;
-        }
+  public RoutingAlgorithm getAlgorithm() {
+        return algorithm.orElse(null);
+  }
 
-    /**
-        * Get algorithm
-    * @return algorithm
-    */
-    @javax.annotation.Nullable
-        @JsonIgnore
-    
-    public RoutingAlgorithm getAlgorithm() {
-                return algorithm.orElse(null);
-    }
-
-          @JsonProperty(JSON_PROPERTY_ALGORITHM)
+  @JsonProperty(JSON_PROPERTY_ALGORITHM)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-        public JsonNullable<RoutingAlgorithm> getAlgorithm_JsonNullable() {
-        return algorithm;
-        }
+  public JsonNullable<RoutingAlgorithm> getAlgorithm_JsonNullable() {
+    return algorithm;
+  }
+  
+  @JsonProperty(JSON_PROPERTY_ALGORITHM)
+  public void setAlgorithm_JsonNullable(JsonNullable<RoutingAlgorithm> algorithm) {
+    this.algorithm = algorithm;
+  }
+
+  public void setAlgorithm(@javax.annotation.Nullable RoutingAlgorithm algorithm) {
+    this.algorithm = JsonNullable.<RoutingAlgorithm>of(algorithm);
+  }
+
+  public RoutingConfigRequest profileId(@javax.annotation.Nullable String profileId) {
+    this.profileId = JsonNullable.<String>of(profileId);
     
-        @JsonProperty(JSON_PROPERTY_ALGORITHM)
-        public void setAlgorithm_JsonNullable(JsonNullable<RoutingAlgorithm> algorithm) {
-        this.algorithm = algorithm;
-        }
+    return this;
+  }
 
-          public void setAlgorithm(@javax.annotation.Nullable RoutingAlgorithm algorithm) {
-            this.algorithm = JsonNullable.<RoutingAlgorithm>of(algorithm);
-        }
+  /**
+   * Get profileId
+   * @return profileId
+   */
+  @javax.annotation.Nullable
+  @JsonIgnore
 
-        public RoutingConfigRequest profileId(@javax.annotation.Nullable String profileId) {
-        this.profileId = JsonNullable.<String>of(profileId);
-        
-        return this;
-        }
+  public String getProfileId() {
+        return profileId.orElse(null);
+  }
 
-    /**
-        * Get profileId
-    * @return profileId
-    */
-    @javax.annotation.Nullable
-        @JsonIgnore
-    
-    public String getProfileId() {
-                return profileId.orElse(null);
-    }
-
-          @JsonProperty(JSON_PROPERTY_PROFILE_ID)
+  @JsonProperty(JSON_PROPERTY_PROFILE_ID)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-        public JsonNullable<String> getProfileId_JsonNullable() {
-        return profileId;
-        }
-    
-        @JsonProperty(JSON_PROPERTY_PROFILE_ID)
-        public void setProfileId_JsonNullable(JsonNullable<String> profileId) {
-        this.profileId = profileId;
-        }
+  public JsonNullable<String> getProfileId_JsonNullable() {
+    return profileId;
+  }
+  
+  @JsonProperty(JSON_PROPERTY_PROFILE_ID)
+  public void setProfileId_JsonNullable(JsonNullable<String> profileId) {
+    this.profileId = profileId;
+  }
 
-          public void setProfileId(@javax.annotation.Nullable String profileId) {
-            this.profileId = JsonNullable.<String>of(profileId);
-        }
+  public void setProfileId(@javax.annotation.Nullable String profileId) {
+    this.profileId = JsonNullable.<String>of(profileId);
+  }
 
-@Override
-public boolean equals(Object o) {
+  @Override
+  public boolean equals(Object o) {
     if (this == o) {
-    return true;
+      return true;
     }
     if (o == null || getClass() != o.getClass()) {
-    return false;
+      return false;
     }
-        RoutingConfigRequest routingConfigRequest = (RoutingConfigRequest) o;
-        return equalsNullable(this.name, routingConfigRequest.name) &&
+    RoutingConfigRequest routingConfigRequest = (RoutingConfigRequest) o;
+    return equalsNullable(this.name, routingConfigRequest.name) &&
         equalsNullable(this.description, routingConfigRequest.description) &&
         equalsNullable(this.algorithm, routingConfigRequest.algorithm) &&
         equalsNullable(this.profileId, routingConfigRequest.profileId);
-}
+  }
 
-    private static <T> boolean equalsNullable(JsonNullable<T> a, JsonNullable<T> b) {
-        return a == b || (a != null && b != null && a.isPresent() && b.isPresent() && Objects.deepEquals(a.get(), b.get()));
-        }
+  private static <T> boolean equalsNullable(JsonNullable<T> a, JsonNullable<T> b) {
+    return a == b || (a != null && b != null && a.isPresent() && b.isPresent() && Objects.deepEquals(a.get(), b.get()));
+  }
 
-    @Override
-    public int hashCode() {
-        return Objects.hash(hashCodeNullable(name), hashCodeNullable(description), hashCodeNullable(algorithm), hashCodeNullable(profileId));
+  @Override
+  public int hashCode() {
+    return Objects.hash(hashCodeNullable(name), hashCodeNullable(description), hashCodeNullable(algorithm), hashCodeNullable(profileId));
+  }
+
+  private static <T> int hashCodeNullable(JsonNullable<T> a) {
+    if (a == null) {
+      return 1;
     }
+    return a.isPresent() ? Arrays.deepHashCode(new Object[]{a.get()}) : 31;
+  }
 
-        private static <T> int hashCodeNullable(JsonNullable<T> a) {
-        if (a == null) {
-        return 1;
-        }
-        return a.isPresent() ? Arrays.deepHashCode(new Object[]{a.get()}) : 31;
-        }
-
-    @Override
-    public String toString() {
+  @Override
+  public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class RoutingConfigRequest {\n");
-        sb.append("    name: ").append(toIndentedString(name)).append("\n");
-        sb.append("    description: ").append(toIndentedString(description)).append("\n");
-        sb.append("    algorithm: ").append(toIndentedString(algorithm)).append("\n");
-        sb.append("    profileId: ").append(toIndentedString(profileId)).append("\n");
+    sb.append("    name: ").append(toIndentedString(name)).append("\n");
+    sb.append("    description: ").append(toIndentedString(description)).append("\n");
+    sb.append("    algorithm: ").append(toIndentedString(algorithm)).append("\n");
+    sb.append("    profileId: ").append(toIndentedString(profileId)).append("\n");
     sb.append("}");
     return sb.toString();
-    }
+  }
 
-    /**
-    * Convert the given object to string with each line indented by 4 spaces
-    * (except the first line).
-    */
-    private String toIndentedString(Object o) {
+  /**
+   * Convert the given object to string with each line indented by 4 spaces
+   * (except the first line).
+   */
+  private String toIndentedString(Object o) {
     if (o == null) {
-    return "null";
+      return "null";
     }
     return o.toString().replace("\n", "\n    ");
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @return URL query string
+   */
+  public String toUrlQueryString() {
+    return toUrlQueryString(null);
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @param prefix prefix of the query string
+   * @return URL query string
+   */
+  public String toUrlQueryString(String prefix) {
+    String suffix = "";
+    String containerSuffix = "";
+    String containerPrefix = "";
+    if (prefix == null) {
+      // style=form, explode=true, e.g. /pet?name=cat&type=manx
+      prefix = "";
+    } else {
+      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+      prefix = prefix + "[";
+      suffix = "]";
+      containerSuffix = "]";
+      containerPrefix = "[";
     }
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @return URL query string
-        */
-        public String toUrlQueryString() {
-        return toUrlQueryString(null);
-        }
+    StringJoiner joiner = new StringJoiner("&");
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @param prefix prefix of the query string
-        * @return URL query string
-        */
-        public String toUrlQueryString(String prefix) {
-        String suffix = "";
-        String containerSuffix = "";
-        String containerPrefix = "";
-        if (prefix == null) {
-        // style=form, explode=true, e.g. /pet?name=cat&type=manx
-        prefix = "";
-        } else {
-        // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
-        prefix = prefix + "[";
-        suffix = "]";
-        containerSuffix = "]";
-        containerPrefix = "[";
-        }
-
-        StringJoiner joiner = new StringJoiner("&");
-
-            // add `name` to the URL query string
-                        if (getName() != null) {
-                        try {
-                        joiner.add(String.format("%sname%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getName()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-            // add `description` to the URL query string
-                        if (getDescription() != null) {
-                        try {
-                        joiner.add(String.format("%sdescription%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getDescription()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-            // add `algorithm` to the URL query string
-                            if (getAlgorithm() != null) {
-                            joiner.add(getAlgorithm().toUrlQueryString(prefix + "algorithm" + suffix));
-                            }
-
-            // add `profile_id` to the URL query string
-                        if (getProfileId() != null) {
-                        try {
-                        joiner.add(String.format("%sprofile_id%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getProfileId()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-        return joiner.toString();
-        }
-
+    // add `name` to the URL query string
+    if (getName() != null) {
+      try {
+        joiner.add(String.format("%sname%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getName()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
     }
+
+    // add `description` to the URL query string
+    if (getDescription() != null) {
+      try {
+        joiner.add(String.format("%sdescription%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getDescription()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `algorithm` to the URL query string
+    if (getAlgorithm() != null) {
+      joiner.add(getAlgorithm().toUrlQueryString(prefix + "algorithm" + suffix));
+    }
+
+    // add `profile_id` to the URL query string
+    if (getProfileId() != null) {
+      try {
+        joiner.add(String.format("%sprofile_id%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getProfileId()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    return joiner.toString();
+  }
+
+}
 

@@ -28,16 +28,16 @@ import java.net.URLEncoder;
 import java.util.StringJoiner;
 
 /**
-* RoutingAlgorithmOneOf
-*/
-    @JsonPropertyOrder({
-        RoutingAlgorithmOneOf.JSON_PROPERTY_TYPE,
-        RoutingAlgorithmOneOf.JSON_PROPERTY_DATA
-    })
-            @JsonTypeName("RoutingAlgorithm_oneOf")
+ * RoutingAlgorithmOneOf
+ */
+@JsonPropertyOrder({
+  RoutingAlgorithmOneOf.JSON_PROPERTY_TYPE,
+  RoutingAlgorithmOneOf.JSON_PROPERTY_DATA
+})
+@JsonTypeName("RoutingAlgorithm_oneOf")
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class RoutingAlgorithmOneOf {
-              /**
+  /**
    * Gets or Sets type
    */
   public enum TypeEnum {
@@ -70,155 +70,155 @@ public class RoutingAlgorithmOneOf {
     }
   }
 
-        public static final String JSON_PROPERTY_TYPE = "type";
-    @javax.annotation.Nonnull
-            private TypeEnum type;
+  public static final String JSON_PROPERTY_TYPE = "type";
+  @javax.annotation.Nonnull
+  private TypeEnum type;
 
-        public static final String JSON_PROPERTY_DATA = "data";
-    @javax.annotation.Nonnull
-            private RoutableConnectorChoice data;
+  public static final String JSON_PROPERTY_DATA = "data";
+  @javax.annotation.Nonnull
+  private RoutableConnectorChoice data;
 
-public RoutingAlgorithmOneOf() {
-}
+  public RoutingAlgorithmOneOf() {
+  }
 
-        public RoutingAlgorithmOneOf type(@javax.annotation.Nonnull TypeEnum type) {
-        
-        this.type = type;
-        return this;
-        }
+  public RoutingAlgorithmOneOf type(@javax.annotation.Nonnull TypeEnum type) {
+    
+    this.type = type;
+    return this;
+  }
 
-    /**
-        * Get type
-    * @return type
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_TYPE)
+  /**
+   * Get type
+   * @return type
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_TYPE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public TypeEnum getType() {
-        return type;
-    }
+  public TypeEnum getType() {
+    return type;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_TYPE)
+  @JsonProperty(JSON_PROPERTY_TYPE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setType(@javax.annotation.Nonnull TypeEnum type) {
-            this.type = type;
-        }
+    this.type = type;
+  }
 
-        public RoutingAlgorithmOneOf data(@javax.annotation.Nonnull RoutableConnectorChoice data) {
-        
-        this.data = data;
-        return this;
-        }
+  public RoutingAlgorithmOneOf data(@javax.annotation.Nonnull RoutableConnectorChoice data) {
+    
+    this.data = data;
+    return this;
+  }
 
-    /**
-        * Get data
-    * @return data
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_DATA)
+  /**
+   * Get data
+   * @return data
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_DATA)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public RoutableConnectorChoice getData() {
-        return data;
-    }
+  public RoutableConnectorChoice getData() {
+    return data;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_DATA)
+  @JsonProperty(JSON_PROPERTY_DATA)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setData(@javax.annotation.Nonnull RoutableConnectorChoice data) {
-            this.data = data;
-        }
+    this.data = data;
+  }
 
-@Override
-public boolean equals(Object o) {
+  @Override
+  public boolean equals(Object o) {
     if (this == o) {
-    return true;
+      return true;
     }
     if (o == null || getClass() != o.getClass()) {
-    return false;
+      return false;
     }
-        RoutingAlgorithmOneOf routingAlgorithmOneOf = (RoutingAlgorithmOneOf) o;
-        return Objects.equals(this.type, routingAlgorithmOneOf.type) &&
+    RoutingAlgorithmOneOf routingAlgorithmOneOf = (RoutingAlgorithmOneOf) o;
+    return Objects.equals(this.type, routingAlgorithmOneOf.type) &&
         Objects.equals(this.data, routingAlgorithmOneOf.data);
-}
+  }
 
-    @Override
-    public int hashCode() {
-        return Objects.hash(type, data);
-    }
+  @Override
+  public int hashCode() {
+    return Objects.hash(type, data);
+  }
 
-    @Override
-    public String toString() {
+  @Override
+  public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class RoutingAlgorithmOneOf {\n");
-        sb.append("    type: ").append(toIndentedString(type)).append("\n");
-        sb.append("    data: ").append(toIndentedString(data)).append("\n");
+    sb.append("    type: ").append(toIndentedString(type)).append("\n");
+    sb.append("    data: ").append(toIndentedString(data)).append("\n");
     sb.append("}");
     return sb.toString();
-    }
+  }
 
-    /**
-    * Convert the given object to string with each line indented by 4 spaces
-    * (except the first line).
-    */
-    private String toIndentedString(Object o) {
+  /**
+   * Convert the given object to string with each line indented by 4 spaces
+   * (except the first line).
+   */
+  private String toIndentedString(Object o) {
     if (o == null) {
-    return "null";
+      return "null";
     }
     return o.toString().replace("\n", "\n    ");
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @return URL query string
+   */
+  public String toUrlQueryString() {
+    return toUrlQueryString(null);
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @param prefix prefix of the query string
+   * @return URL query string
+   */
+  public String toUrlQueryString(String prefix) {
+    String suffix = "";
+    String containerSuffix = "";
+    String containerPrefix = "";
+    if (prefix == null) {
+      // style=form, explode=true, e.g. /pet?name=cat&type=manx
+      prefix = "";
+    } else {
+      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+      prefix = prefix + "[";
+      suffix = "]";
+      containerSuffix = "]";
+      containerPrefix = "[";
     }
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @return URL query string
-        */
-        public String toUrlQueryString() {
-        return toUrlQueryString(null);
-        }
+    StringJoiner joiner = new StringJoiner("&");
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @param prefix prefix of the query string
-        * @return URL query string
-        */
-        public String toUrlQueryString(String prefix) {
-        String suffix = "";
-        String containerSuffix = "";
-        String containerPrefix = "";
-        if (prefix == null) {
-        // style=form, explode=true, e.g. /pet?name=cat&type=manx
-        prefix = "";
-        } else {
-        // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
-        prefix = prefix + "[";
-        suffix = "]";
-        containerSuffix = "]";
-        containerPrefix = "[";
-        }
-
-        StringJoiner joiner = new StringJoiner("&");
-
-            // add `type` to the URL query string
-                        if (getType() != null) {
-                        try {
-                        joiner.add(String.format("%stype%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getType()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-            // add `data` to the URL query string
-                            if (getData() != null) {
-                            joiner.add(getData().toUrlQueryString(prefix + "data" + suffix));
-                            }
-
-        return joiner.toString();
-        }
-
+    // add `type` to the URL query string
+    if (getType() != null) {
+      try {
+        joiner.add(String.format("%stype%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getType()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
     }
+
+    // add `data` to the URL query string
+    if (getData() != null) {
+      joiner.add(getData().toUrlQueryString(prefix + "data" + suffix));
+    }
+
+    return joiner.toString();
+  }
+
+}
 

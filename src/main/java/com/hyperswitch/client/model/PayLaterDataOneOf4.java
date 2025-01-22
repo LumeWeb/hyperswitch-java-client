@@ -27,127 +27,127 @@ import java.net.URLEncoder;
 import java.util.StringJoiner;
 
 /**
-* PayLaterDataOneOf4
-*/
-    @JsonPropertyOrder({
-        PayLaterDataOneOf4.JSON_PROPERTY_PAY_BRIGHT_REDIRECT
-    })
-            @JsonTypeName("PayLaterData_oneOf_4")
+ * PayLaterDataOneOf4
+ */
+@JsonPropertyOrder({
+  PayLaterDataOneOf4.JSON_PROPERTY_PAY_BRIGHT_REDIRECT
+})
+@JsonTypeName("PayLaterData_oneOf_4")
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class PayLaterDataOneOf4 {
-        public static final String JSON_PROPERTY_PAY_BRIGHT_REDIRECT = "pay_bright_redirect";
-    @javax.annotation.Nonnull
-            private Object payBrightRedirect;
+  public static final String JSON_PROPERTY_PAY_BRIGHT_REDIRECT = "pay_bright_redirect";
+  @javax.annotation.Nonnull
+  private Object payBrightRedirect;
 
-public PayLaterDataOneOf4() {
-}
+  public PayLaterDataOneOf4() {
+  }
 
-        public PayLaterDataOneOf4 payBrightRedirect(@javax.annotation.Nonnull Object payBrightRedirect) {
-        
-        this.payBrightRedirect = payBrightRedirect;
-        return this;
-        }
+  public PayLaterDataOneOf4 payBrightRedirect(@javax.annotation.Nonnull Object payBrightRedirect) {
+    
+    this.payBrightRedirect = payBrightRedirect;
+    return this;
+  }
 
-    /**
-        * For PayBright Redirect as PayLater Option
-    * @return payBrightRedirect
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_PAY_BRIGHT_REDIRECT)
+  /**
+   * For PayBright Redirect as PayLater Option
+   * @return payBrightRedirect
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_PAY_BRIGHT_REDIRECT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public Object getPayBrightRedirect() {
-        return payBrightRedirect;
-    }
+  public Object getPayBrightRedirect() {
+    return payBrightRedirect;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_PAY_BRIGHT_REDIRECT)
+  @JsonProperty(JSON_PROPERTY_PAY_BRIGHT_REDIRECT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setPayBrightRedirect(@javax.annotation.Nonnull Object payBrightRedirect) {
-            this.payBrightRedirect = payBrightRedirect;
-        }
+    this.payBrightRedirect = payBrightRedirect;
+  }
 
-@Override
-public boolean equals(Object o) {
+  @Override
+  public boolean equals(Object o) {
     if (this == o) {
-    return true;
+      return true;
     }
     if (o == null || getClass() != o.getClass()) {
-    return false;
+      return false;
     }
-        PayLaterDataOneOf4 payLaterDataOneOf4 = (PayLaterDataOneOf4) o;
-        return Objects.equals(this.payBrightRedirect, payLaterDataOneOf4.payBrightRedirect);
-}
+    PayLaterDataOneOf4 payLaterDataOneOf4 = (PayLaterDataOneOf4) o;
+    return Objects.equals(this.payBrightRedirect, payLaterDataOneOf4.payBrightRedirect);
+  }
 
-    @Override
-    public int hashCode() {
-        return Objects.hash(payBrightRedirect);
-    }
+  @Override
+  public int hashCode() {
+    return Objects.hash(payBrightRedirect);
+  }
 
-    @Override
-    public String toString() {
+  @Override
+  public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class PayLaterDataOneOf4 {\n");
-        sb.append("    payBrightRedirect: ").append(toIndentedString(payBrightRedirect)).append("\n");
+    sb.append("    payBrightRedirect: ").append(toIndentedString(payBrightRedirect)).append("\n");
     sb.append("}");
     return sb.toString();
-    }
+  }
 
-    /**
-    * Convert the given object to string with each line indented by 4 spaces
-    * (except the first line).
-    */
-    private String toIndentedString(Object o) {
+  /**
+   * Convert the given object to string with each line indented by 4 spaces
+   * (except the first line).
+   */
+  private String toIndentedString(Object o) {
     if (o == null) {
-    return "null";
+      return "null";
     }
     return o.toString().replace("\n", "\n    ");
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @return URL query string
+   */
+  public String toUrlQueryString() {
+    return toUrlQueryString(null);
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @param prefix prefix of the query string
+   * @return URL query string
+   */
+  public String toUrlQueryString(String prefix) {
+    String suffix = "";
+    String containerSuffix = "";
+    String containerPrefix = "";
+    if (prefix == null) {
+      // style=form, explode=true, e.g. /pet?name=cat&type=manx
+      prefix = "";
+    } else {
+      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+      prefix = prefix + "[";
+      suffix = "]";
+      containerSuffix = "]";
+      containerPrefix = "[";
     }
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @return URL query string
-        */
-        public String toUrlQueryString() {
-        return toUrlQueryString(null);
-        }
+    StringJoiner joiner = new StringJoiner("&");
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @param prefix prefix of the query string
-        * @return URL query string
-        */
-        public String toUrlQueryString(String prefix) {
-        String suffix = "";
-        String containerSuffix = "";
-        String containerPrefix = "";
-        if (prefix == null) {
-        // style=form, explode=true, e.g. /pet?name=cat&type=manx
-        prefix = "";
-        } else {
-        // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
-        prefix = prefix + "[";
-        suffix = "]";
-        containerSuffix = "]";
-        containerPrefix = "[";
-        }
-
-        StringJoiner joiner = new StringJoiner("&");
-
-            // add `pay_bright_redirect` to the URL query string
-                        if (getPayBrightRedirect() != null) {
-                        try {
-                        joiner.add(String.format("%spay_bright_redirect%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getPayBrightRedirect()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-        return joiner.toString();
-        }
-
+    // add `pay_bright_redirect` to the URL query string
+    if (getPayBrightRedirect() != null) {
+      try {
+        joiner.add(String.format("%spay_bright_redirect%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getPayBrightRedirect()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
     }
+
+    return joiner.toString();
+  }
+
+}
 

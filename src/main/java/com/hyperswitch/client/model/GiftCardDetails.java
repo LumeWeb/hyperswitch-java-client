@@ -27,168 +27,168 @@ import java.net.URLEncoder;
 import java.util.StringJoiner;
 
 /**
-* GiftCardDetails
-*/
-    @JsonPropertyOrder({
-        GiftCardDetails.JSON_PROPERTY_NUMBER,
-        GiftCardDetails.JSON_PROPERTY_CVC
-    })
+ * GiftCardDetails
+ */
+@JsonPropertyOrder({
+  GiftCardDetails.JSON_PROPERTY_NUMBER,
+  GiftCardDetails.JSON_PROPERTY_CVC
+})
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class GiftCardDetails {
-        public static final String JSON_PROPERTY_NUMBER = "number";
-    @javax.annotation.Nonnull
-            private String number;
+  public static final String JSON_PROPERTY_NUMBER = "number";
+  @javax.annotation.Nonnull
+  private String number;
 
-        public static final String JSON_PROPERTY_CVC = "cvc";
-    @javax.annotation.Nonnull
-            private String cvc;
+  public static final String JSON_PROPERTY_CVC = "cvc";
+  @javax.annotation.Nonnull
+  private String cvc;
 
-public GiftCardDetails() {
-}
+  public GiftCardDetails() {
+  }
 
-        public GiftCardDetails number(@javax.annotation.Nonnull String number) {
-        
-        this.number = number;
-        return this;
-        }
+  public GiftCardDetails number(@javax.annotation.Nonnull String number) {
+    
+    this.number = number;
+    return this;
+  }
 
-    /**
-        * The gift card number
-    * @return number
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_NUMBER)
+  /**
+   * The gift card number
+   * @return number
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_NUMBER)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public String getNumber() {
-        return number;
-    }
+  public String getNumber() {
+    return number;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_NUMBER)
+  @JsonProperty(JSON_PROPERTY_NUMBER)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setNumber(@javax.annotation.Nonnull String number) {
-            this.number = number;
-        }
+    this.number = number;
+  }
 
-        public GiftCardDetails cvc(@javax.annotation.Nonnull String cvc) {
-        
-        this.cvc = cvc;
-        return this;
-        }
+  public GiftCardDetails cvc(@javax.annotation.Nonnull String cvc) {
+    
+    this.cvc = cvc;
+    return this;
+  }
 
-    /**
-        * The card verification code.
-    * @return cvc
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_CVC)
+  /**
+   * The card verification code.
+   * @return cvc
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_CVC)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public String getCvc() {
-        return cvc;
-    }
+  public String getCvc() {
+    return cvc;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_CVC)
+  @JsonProperty(JSON_PROPERTY_CVC)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setCvc(@javax.annotation.Nonnull String cvc) {
-            this.cvc = cvc;
-        }
+    this.cvc = cvc;
+  }
 
-@Override
-public boolean equals(Object o) {
+  @Override
+  public boolean equals(Object o) {
     if (this == o) {
-    return true;
+      return true;
     }
     if (o == null || getClass() != o.getClass()) {
-    return false;
+      return false;
     }
-        GiftCardDetails giftCardDetails = (GiftCardDetails) o;
-        return Objects.equals(this.number, giftCardDetails.number) &&
+    GiftCardDetails giftCardDetails = (GiftCardDetails) o;
+    return Objects.equals(this.number, giftCardDetails.number) &&
         Objects.equals(this.cvc, giftCardDetails.cvc);
-}
+  }
 
-    @Override
-    public int hashCode() {
-        return Objects.hash(number, cvc);
-    }
+  @Override
+  public int hashCode() {
+    return Objects.hash(number, cvc);
+  }
 
-    @Override
-    public String toString() {
+  @Override
+  public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class GiftCardDetails {\n");
-        sb.append("    number: ").append(toIndentedString(number)).append("\n");
-        sb.append("    cvc: ").append(toIndentedString(cvc)).append("\n");
+    sb.append("    number: ").append(toIndentedString(number)).append("\n");
+    sb.append("    cvc: ").append(toIndentedString(cvc)).append("\n");
     sb.append("}");
     return sb.toString();
-    }
+  }
 
-    /**
-    * Convert the given object to string with each line indented by 4 spaces
-    * (except the first line).
-    */
-    private String toIndentedString(Object o) {
+  /**
+   * Convert the given object to string with each line indented by 4 spaces
+   * (except the first line).
+   */
+  private String toIndentedString(Object o) {
     if (o == null) {
-    return "null";
+      return "null";
     }
     return o.toString().replace("\n", "\n    ");
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @return URL query string
+   */
+  public String toUrlQueryString() {
+    return toUrlQueryString(null);
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @param prefix prefix of the query string
+   * @return URL query string
+   */
+  public String toUrlQueryString(String prefix) {
+    String suffix = "";
+    String containerSuffix = "";
+    String containerPrefix = "";
+    if (prefix == null) {
+      // style=form, explode=true, e.g. /pet?name=cat&type=manx
+      prefix = "";
+    } else {
+      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+      prefix = prefix + "[";
+      suffix = "]";
+      containerSuffix = "]";
+      containerPrefix = "[";
     }
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @return URL query string
-        */
-        public String toUrlQueryString() {
-        return toUrlQueryString(null);
-        }
+    StringJoiner joiner = new StringJoiner("&");
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @param prefix prefix of the query string
-        * @return URL query string
-        */
-        public String toUrlQueryString(String prefix) {
-        String suffix = "";
-        String containerSuffix = "";
-        String containerPrefix = "";
-        if (prefix == null) {
-        // style=form, explode=true, e.g. /pet?name=cat&type=manx
-        prefix = "";
-        } else {
-        // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
-        prefix = prefix + "[";
-        suffix = "]";
-        containerSuffix = "]";
-        containerPrefix = "[";
-        }
-
-        StringJoiner joiner = new StringJoiner("&");
-
-            // add `number` to the URL query string
-                        if (getNumber() != null) {
-                        try {
-                        joiner.add(String.format("%snumber%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getNumber()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-            // add `cvc` to the URL query string
-                        if (getCvc() != null) {
-                        try {
-                        joiner.add(String.format("%scvc%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCvc()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-        return joiner.toString();
-        }
-
+    // add `number` to the URL query string
+    if (getNumber() != null) {
+      try {
+        joiner.add(String.format("%snumber%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getNumber()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
     }
+
+    // add `cvc` to the URL query string
+    if (getCvc() != null) {
+      try {
+        joiner.add(String.format("%scvc%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCvc()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    return joiner.toString();
+  }
+
+}
 

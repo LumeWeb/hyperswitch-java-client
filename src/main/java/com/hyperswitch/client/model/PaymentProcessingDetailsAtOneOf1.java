@@ -27,15 +27,15 @@ import java.net.URLEncoder;
 import java.util.StringJoiner;
 
 /**
-* PaymentProcessingDetailsAtOneOf1
-*/
-    @JsonPropertyOrder({
-        PaymentProcessingDetailsAtOneOf1.JSON_PROPERTY_PAYMENT_PROCESSING_DETAILS_AT
-    })
-            @JsonTypeName("PaymentProcessingDetailsAt_oneOf_1")
+ * PaymentProcessingDetailsAtOneOf1
+ */
+@JsonPropertyOrder({
+  PaymentProcessingDetailsAtOneOf1.JSON_PROPERTY_PAYMENT_PROCESSING_DETAILS_AT
+})
+@JsonTypeName("PaymentProcessingDetailsAt_oneOf_1")
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class PaymentProcessingDetailsAtOneOf1 {
-              /**
+  /**
    * Gets or Sets paymentProcessingDetailsAt
    */
   public enum PaymentProcessingDetailsAtEnum {
@@ -68,119 +68,119 @@ public class PaymentProcessingDetailsAtOneOf1 {
     }
   }
 
-        public static final String JSON_PROPERTY_PAYMENT_PROCESSING_DETAILS_AT = "payment_processing_details_at";
-    @javax.annotation.Nonnull
-            private PaymentProcessingDetailsAtEnum paymentProcessingDetailsAt;
+  public static final String JSON_PROPERTY_PAYMENT_PROCESSING_DETAILS_AT = "payment_processing_details_at";
+  @javax.annotation.Nonnull
+  private PaymentProcessingDetailsAtEnum paymentProcessingDetailsAt;
 
-public PaymentProcessingDetailsAtOneOf1() {
-}
+  public PaymentProcessingDetailsAtOneOf1() {
+  }
 
-        public PaymentProcessingDetailsAtOneOf1 paymentProcessingDetailsAt(@javax.annotation.Nonnull PaymentProcessingDetailsAtEnum paymentProcessingDetailsAt) {
-        
-        this.paymentProcessingDetailsAt = paymentProcessingDetailsAt;
-        return this;
-        }
+  public PaymentProcessingDetailsAtOneOf1 paymentProcessingDetailsAt(@javax.annotation.Nonnull PaymentProcessingDetailsAtEnum paymentProcessingDetailsAt) {
+    
+    this.paymentProcessingDetailsAt = paymentProcessingDetailsAt;
+    return this;
+  }
 
-    /**
-        * Get paymentProcessingDetailsAt
-    * @return paymentProcessingDetailsAt
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_PAYMENT_PROCESSING_DETAILS_AT)
+  /**
+   * Get paymentProcessingDetailsAt
+   * @return paymentProcessingDetailsAt
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_PAYMENT_PROCESSING_DETAILS_AT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public PaymentProcessingDetailsAtEnum getPaymentProcessingDetailsAt() {
-        return paymentProcessingDetailsAt;
-    }
+  public PaymentProcessingDetailsAtEnum getPaymentProcessingDetailsAt() {
+    return paymentProcessingDetailsAt;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_PAYMENT_PROCESSING_DETAILS_AT)
+  @JsonProperty(JSON_PROPERTY_PAYMENT_PROCESSING_DETAILS_AT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setPaymentProcessingDetailsAt(@javax.annotation.Nonnull PaymentProcessingDetailsAtEnum paymentProcessingDetailsAt) {
-            this.paymentProcessingDetailsAt = paymentProcessingDetailsAt;
-        }
+    this.paymentProcessingDetailsAt = paymentProcessingDetailsAt;
+  }
 
-@Override
-public boolean equals(Object o) {
+  @Override
+  public boolean equals(Object o) {
     if (this == o) {
-    return true;
+      return true;
     }
     if (o == null || getClass() != o.getClass()) {
-    return false;
+      return false;
     }
-        PaymentProcessingDetailsAtOneOf1 paymentProcessingDetailsAtOneOf1 = (PaymentProcessingDetailsAtOneOf1) o;
-        return Objects.equals(this.paymentProcessingDetailsAt, paymentProcessingDetailsAtOneOf1.paymentProcessingDetailsAt);
-}
+    PaymentProcessingDetailsAtOneOf1 paymentProcessingDetailsAtOneOf1 = (PaymentProcessingDetailsAtOneOf1) o;
+    return Objects.equals(this.paymentProcessingDetailsAt, paymentProcessingDetailsAtOneOf1.paymentProcessingDetailsAt);
+  }
 
-    @Override
-    public int hashCode() {
-        return Objects.hash(paymentProcessingDetailsAt);
-    }
+  @Override
+  public int hashCode() {
+    return Objects.hash(paymentProcessingDetailsAt);
+  }
 
-    @Override
-    public String toString() {
+  @Override
+  public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class PaymentProcessingDetailsAtOneOf1 {\n");
-        sb.append("    paymentProcessingDetailsAt: ").append(toIndentedString(paymentProcessingDetailsAt)).append("\n");
+    sb.append("    paymentProcessingDetailsAt: ").append(toIndentedString(paymentProcessingDetailsAt)).append("\n");
     sb.append("}");
     return sb.toString();
-    }
+  }
 
-    /**
-    * Convert the given object to string with each line indented by 4 spaces
-    * (except the first line).
-    */
-    private String toIndentedString(Object o) {
+  /**
+   * Convert the given object to string with each line indented by 4 spaces
+   * (except the first line).
+   */
+  private String toIndentedString(Object o) {
     if (o == null) {
-    return "null";
+      return "null";
     }
     return o.toString().replace("\n", "\n    ");
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @return URL query string
+   */
+  public String toUrlQueryString() {
+    return toUrlQueryString(null);
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @param prefix prefix of the query string
+   * @return URL query string
+   */
+  public String toUrlQueryString(String prefix) {
+    String suffix = "";
+    String containerSuffix = "";
+    String containerPrefix = "";
+    if (prefix == null) {
+      // style=form, explode=true, e.g. /pet?name=cat&type=manx
+      prefix = "";
+    } else {
+      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+      prefix = prefix + "[";
+      suffix = "]";
+      containerSuffix = "]";
+      containerPrefix = "[";
     }
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @return URL query string
-        */
-        public String toUrlQueryString() {
-        return toUrlQueryString(null);
-        }
+    StringJoiner joiner = new StringJoiner("&");
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @param prefix prefix of the query string
-        * @return URL query string
-        */
-        public String toUrlQueryString(String prefix) {
-        String suffix = "";
-        String containerSuffix = "";
-        String containerPrefix = "";
-        if (prefix == null) {
-        // style=form, explode=true, e.g. /pet?name=cat&type=manx
-        prefix = "";
-        } else {
-        // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
-        prefix = prefix + "[";
-        suffix = "]";
-        containerSuffix = "]";
-        containerPrefix = "[";
-        }
-
-        StringJoiner joiner = new StringJoiner("&");
-
-            // add `payment_processing_details_at` to the URL query string
-                        if (getPaymentProcessingDetailsAt() != null) {
-                        try {
-                        joiner.add(String.format("%spayment_processing_details_at%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getPaymentProcessingDetailsAt()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-        return joiner.toString();
-        }
-
+    // add `payment_processing_details_at` to the URL query string
+    if (getPaymentProcessingDetailsAt() != null) {
+      try {
+        joiner.add(String.format("%spayment_processing_details_at%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getPaymentProcessingDetailsAt()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
     }
+
+    return joiner.toString();
+  }
+
+}
 

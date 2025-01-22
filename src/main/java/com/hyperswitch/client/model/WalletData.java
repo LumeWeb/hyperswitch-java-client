@@ -63,865 +63,865 @@ import java.net.URLEncoder;
 import java.util.StringJoiner;
 
 /**
-* WalletData
-*/
-    @JsonPropertyOrder({
-        WalletData.JSON_PROPERTY_ALI_PAY_QR,
-        WalletData.JSON_PROPERTY_ALI_PAY_REDIRECT,
-        WalletData.JSON_PROPERTY_ALI_PAY_HK_REDIRECT,
-        WalletData.JSON_PROPERTY_MOMO_REDIRECT,
-        WalletData.JSON_PROPERTY_KAKAO_PAY_REDIRECT,
-        WalletData.JSON_PROPERTY_GO_PAY_REDIRECT,
-        WalletData.JSON_PROPERTY_GCASH_REDIRECT,
-        WalletData.JSON_PROPERTY_APPLE_PAY,
-        WalletData.JSON_PROPERTY_APPLE_PAY_REDIRECT,
-        WalletData.JSON_PROPERTY_APPLE_PAY_THIRD_PARTY_SDK,
-        WalletData.JSON_PROPERTY_DANA_REDIRECT,
-        WalletData.JSON_PROPERTY_GOOGLE_PAY,
-        WalletData.JSON_PROPERTY_GOOGLE_PAY_REDIRECT,
-        WalletData.JSON_PROPERTY_GOOGLE_PAY_THIRD_PARTY_SDK,
-        WalletData.JSON_PROPERTY_MB_WAY_REDIRECT,
-        WalletData.JSON_PROPERTY_MOBILE_PAY_REDIRECT,
-        WalletData.JSON_PROPERTY_PAYPAL_REDIRECT,
-        WalletData.JSON_PROPERTY_PAYPAL_SDK,
-        WalletData.JSON_PROPERTY_PAZE,
-        WalletData.JSON_PROPERTY_SAMSUNG_PAY,
-        WalletData.JSON_PROPERTY_TWINT_REDIRECT,
-        WalletData.JSON_PROPERTY_VIPPS_REDIRECT,
-        WalletData.JSON_PROPERTY_TOUCH_N_GO_REDIRECT,
-        WalletData.JSON_PROPERTY_WE_CHAT_PAY_REDIRECT,
-        WalletData.JSON_PROPERTY_WE_CHAT_PAY_QR,
-        WalletData.JSON_PROPERTY_CASHAPP_QR,
-        WalletData.JSON_PROPERTY_SWISH_QR,
-        WalletData.JSON_PROPERTY_MIFINITY
-    })
+ * WalletData
+ */
+@JsonPropertyOrder({
+  WalletData.JSON_PROPERTY_ALI_PAY_QR,
+  WalletData.JSON_PROPERTY_ALI_PAY_REDIRECT,
+  WalletData.JSON_PROPERTY_ALI_PAY_HK_REDIRECT,
+  WalletData.JSON_PROPERTY_MOMO_REDIRECT,
+  WalletData.JSON_PROPERTY_KAKAO_PAY_REDIRECT,
+  WalletData.JSON_PROPERTY_GO_PAY_REDIRECT,
+  WalletData.JSON_PROPERTY_GCASH_REDIRECT,
+  WalletData.JSON_PROPERTY_APPLE_PAY,
+  WalletData.JSON_PROPERTY_APPLE_PAY_REDIRECT,
+  WalletData.JSON_PROPERTY_APPLE_PAY_THIRD_PARTY_SDK,
+  WalletData.JSON_PROPERTY_DANA_REDIRECT,
+  WalletData.JSON_PROPERTY_GOOGLE_PAY,
+  WalletData.JSON_PROPERTY_GOOGLE_PAY_REDIRECT,
+  WalletData.JSON_PROPERTY_GOOGLE_PAY_THIRD_PARTY_SDK,
+  WalletData.JSON_PROPERTY_MB_WAY_REDIRECT,
+  WalletData.JSON_PROPERTY_MOBILE_PAY_REDIRECT,
+  WalletData.JSON_PROPERTY_PAYPAL_REDIRECT,
+  WalletData.JSON_PROPERTY_PAYPAL_SDK,
+  WalletData.JSON_PROPERTY_PAZE,
+  WalletData.JSON_PROPERTY_SAMSUNG_PAY,
+  WalletData.JSON_PROPERTY_TWINT_REDIRECT,
+  WalletData.JSON_PROPERTY_VIPPS_REDIRECT,
+  WalletData.JSON_PROPERTY_TOUCH_N_GO_REDIRECT,
+  WalletData.JSON_PROPERTY_WE_CHAT_PAY_REDIRECT,
+  WalletData.JSON_PROPERTY_WE_CHAT_PAY_QR,
+  WalletData.JSON_PROPERTY_CASHAPP_QR,
+  WalletData.JSON_PROPERTY_SWISH_QR,
+  WalletData.JSON_PROPERTY_MIFINITY
+})
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class WalletData {
-        public static final String JSON_PROPERTY_ALI_PAY_QR = "ali_pay_qr";
-    @javax.annotation.Nonnull
-            private Object aliPayQr;
+  public static final String JSON_PROPERTY_ALI_PAY_QR = "ali_pay_qr";
+  @javax.annotation.Nonnull
+  private Object aliPayQr;
 
-        public static final String JSON_PROPERTY_ALI_PAY_REDIRECT = "ali_pay_redirect";
-    @javax.annotation.Nonnull
-            private Object aliPayRedirect;
+  public static final String JSON_PROPERTY_ALI_PAY_REDIRECT = "ali_pay_redirect";
+  @javax.annotation.Nonnull
+  private Object aliPayRedirect;
 
-        public static final String JSON_PROPERTY_ALI_PAY_HK_REDIRECT = "ali_pay_hk_redirect";
-    @javax.annotation.Nonnull
-            private Object aliPayHkRedirect;
+  public static final String JSON_PROPERTY_ALI_PAY_HK_REDIRECT = "ali_pay_hk_redirect";
+  @javax.annotation.Nonnull
+  private Object aliPayHkRedirect;
 
-        public static final String JSON_PROPERTY_MOMO_REDIRECT = "momo_redirect";
-    @javax.annotation.Nonnull
-            private Object momoRedirect;
+  public static final String JSON_PROPERTY_MOMO_REDIRECT = "momo_redirect";
+  @javax.annotation.Nonnull
+  private Object momoRedirect;
 
-        public static final String JSON_PROPERTY_KAKAO_PAY_REDIRECT = "kakao_pay_redirect";
-    @javax.annotation.Nonnull
-            private Object kakaoPayRedirect;
+  public static final String JSON_PROPERTY_KAKAO_PAY_REDIRECT = "kakao_pay_redirect";
+  @javax.annotation.Nonnull
+  private Object kakaoPayRedirect;
 
-        public static final String JSON_PROPERTY_GO_PAY_REDIRECT = "go_pay_redirect";
-    @javax.annotation.Nonnull
-            private Object goPayRedirect;
+  public static final String JSON_PROPERTY_GO_PAY_REDIRECT = "go_pay_redirect";
+  @javax.annotation.Nonnull
+  private Object goPayRedirect;
 
-        public static final String JSON_PROPERTY_GCASH_REDIRECT = "gcash_redirect";
-    @javax.annotation.Nonnull
-            private Object gcashRedirect;
+  public static final String JSON_PROPERTY_GCASH_REDIRECT = "gcash_redirect";
+  @javax.annotation.Nonnull
+  private Object gcashRedirect;
 
-        public static final String JSON_PROPERTY_APPLE_PAY = "apple_pay";
-    @javax.annotation.Nonnull
-            private ApplePayWalletData applePay;
+  public static final String JSON_PROPERTY_APPLE_PAY = "apple_pay";
+  @javax.annotation.Nonnull
+  private ApplePayWalletData applePay;
 
-        public static final String JSON_PROPERTY_APPLE_PAY_REDIRECT = "apple_pay_redirect";
-    @javax.annotation.Nonnull
-            private Object applePayRedirect;
+  public static final String JSON_PROPERTY_APPLE_PAY_REDIRECT = "apple_pay_redirect";
+  @javax.annotation.Nonnull
+  private Object applePayRedirect;
 
-        public static final String JSON_PROPERTY_APPLE_PAY_THIRD_PARTY_SDK = "apple_pay_third_party_sdk";
-    @javax.annotation.Nonnull
-            private Object applePayThirdPartySdk;
+  public static final String JSON_PROPERTY_APPLE_PAY_THIRD_PARTY_SDK = "apple_pay_third_party_sdk";
+  @javax.annotation.Nonnull
+  private Object applePayThirdPartySdk;
 
-        public static final String JSON_PROPERTY_DANA_REDIRECT = "dana_redirect";
-    @javax.annotation.Nonnull
-            private Object danaRedirect;
+  public static final String JSON_PROPERTY_DANA_REDIRECT = "dana_redirect";
+  @javax.annotation.Nonnull
+  private Object danaRedirect;
 
-        public static final String JSON_PROPERTY_GOOGLE_PAY = "google_pay";
-    @javax.annotation.Nonnull
-            private GooglePayWalletData googlePay;
+  public static final String JSON_PROPERTY_GOOGLE_PAY = "google_pay";
+  @javax.annotation.Nonnull
+  private GooglePayWalletData googlePay;
 
-        public static final String JSON_PROPERTY_GOOGLE_PAY_REDIRECT = "google_pay_redirect";
-    @javax.annotation.Nonnull
-            private Object googlePayRedirect;
+  public static final String JSON_PROPERTY_GOOGLE_PAY_REDIRECT = "google_pay_redirect";
+  @javax.annotation.Nonnull
+  private Object googlePayRedirect;
 
-        public static final String JSON_PROPERTY_GOOGLE_PAY_THIRD_PARTY_SDK = "google_pay_third_party_sdk";
-    @javax.annotation.Nonnull
-            private Object googlePayThirdPartySdk;
+  public static final String JSON_PROPERTY_GOOGLE_PAY_THIRD_PARTY_SDK = "google_pay_third_party_sdk";
+  @javax.annotation.Nonnull
+  private Object googlePayThirdPartySdk;
 
-        public static final String JSON_PROPERTY_MB_WAY_REDIRECT = "mb_way_redirect";
-    @javax.annotation.Nonnull
-            private MbWayRedirection mbWayRedirect;
+  public static final String JSON_PROPERTY_MB_WAY_REDIRECT = "mb_way_redirect";
+  @javax.annotation.Nonnull
+  private MbWayRedirection mbWayRedirect;
 
-        public static final String JSON_PROPERTY_MOBILE_PAY_REDIRECT = "mobile_pay_redirect";
-    @javax.annotation.Nonnull
-            private Object mobilePayRedirect;
+  public static final String JSON_PROPERTY_MOBILE_PAY_REDIRECT = "mobile_pay_redirect";
+  @javax.annotation.Nonnull
+  private Object mobilePayRedirect;
 
-        public static final String JSON_PROPERTY_PAYPAL_REDIRECT = "paypal_redirect";
-    @javax.annotation.Nonnull
-            private PaypalRedirection paypalRedirect;
+  public static final String JSON_PROPERTY_PAYPAL_REDIRECT = "paypal_redirect";
+  @javax.annotation.Nonnull
+  private PaypalRedirection paypalRedirect;
 
-        public static final String JSON_PROPERTY_PAYPAL_SDK = "paypal_sdk";
-    @javax.annotation.Nonnull
-            private PayPalWalletData paypalSdk;
+  public static final String JSON_PROPERTY_PAYPAL_SDK = "paypal_sdk";
+  @javax.annotation.Nonnull
+  private PayPalWalletData paypalSdk;
 
-        public static final String JSON_PROPERTY_PAZE = "paze";
-    @javax.annotation.Nonnull
-            private PazeWalletData paze;
+  public static final String JSON_PROPERTY_PAZE = "paze";
+  @javax.annotation.Nonnull
+  private PazeWalletData paze;
 
-        public static final String JSON_PROPERTY_SAMSUNG_PAY = "samsung_pay";
-    @javax.annotation.Nonnull
-            private SamsungPayWalletData samsungPay;
+  public static final String JSON_PROPERTY_SAMSUNG_PAY = "samsung_pay";
+  @javax.annotation.Nonnull
+  private SamsungPayWalletData samsungPay;
 
-        public static final String JSON_PROPERTY_TWINT_REDIRECT = "twint_redirect";
-    @javax.annotation.Nonnull
-            private Object twintRedirect;
+  public static final String JSON_PROPERTY_TWINT_REDIRECT = "twint_redirect";
+  @javax.annotation.Nonnull
+  private Object twintRedirect;
 
-        public static final String JSON_PROPERTY_VIPPS_REDIRECT = "vipps_redirect";
-    @javax.annotation.Nonnull
-            private Object vippsRedirect;
+  public static final String JSON_PROPERTY_VIPPS_REDIRECT = "vipps_redirect";
+  @javax.annotation.Nonnull
+  private Object vippsRedirect;
 
-        public static final String JSON_PROPERTY_TOUCH_N_GO_REDIRECT = "touch_n_go_redirect";
-    @javax.annotation.Nonnull
-            private Object touchNGoRedirect;
+  public static final String JSON_PROPERTY_TOUCH_N_GO_REDIRECT = "touch_n_go_redirect";
+  @javax.annotation.Nonnull
+  private Object touchNGoRedirect;
 
-        public static final String JSON_PROPERTY_WE_CHAT_PAY_REDIRECT = "we_chat_pay_redirect";
-    @javax.annotation.Nonnull
-            private Object weChatPayRedirect;
+  public static final String JSON_PROPERTY_WE_CHAT_PAY_REDIRECT = "we_chat_pay_redirect";
+  @javax.annotation.Nonnull
+  private Object weChatPayRedirect;
 
-        public static final String JSON_PROPERTY_WE_CHAT_PAY_QR = "we_chat_pay_qr";
-    @javax.annotation.Nonnull
-            private Object weChatPayQr;
+  public static final String JSON_PROPERTY_WE_CHAT_PAY_QR = "we_chat_pay_qr";
+  @javax.annotation.Nonnull
+  private Object weChatPayQr;
 
-        public static final String JSON_PROPERTY_CASHAPP_QR = "cashapp_qr";
-    @javax.annotation.Nonnull
-            private Object cashappQr;
+  public static final String JSON_PROPERTY_CASHAPP_QR = "cashapp_qr";
+  @javax.annotation.Nonnull
+  private Object cashappQr;
 
-        public static final String JSON_PROPERTY_SWISH_QR = "swish_qr";
-    @javax.annotation.Nonnull
-            private Object swishQr;
+  public static final String JSON_PROPERTY_SWISH_QR = "swish_qr";
+  @javax.annotation.Nonnull
+  private Object swishQr;
 
-        public static final String JSON_PROPERTY_MIFINITY = "mifinity";
-    @javax.annotation.Nonnull
-            private MifinityData mifinity;
+  public static final String JSON_PROPERTY_MIFINITY = "mifinity";
+  @javax.annotation.Nonnull
+  private MifinityData mifinity;
 
-public WalletData() {
-}
+  public WalletData() {
+  }
 
-        public WalletData aliPayQr(@javax.annotation.Nonnull Object aliPayQr) {
-        
-        this.aliPayQr = aliPayQr;
-        return this;
-        }
+  public WalletData aliPayQr(@javax.annotation.Nonnull Object aliPayQr) {
+    
+    this.aliPayQr = aliPayQr;
+    return this;
+  }
 
-    /**
-        * Get aliPayQr
-    * @return aliPayQr
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_ALI_PAY_QR)
+  /**
+   * Get aliPayQr
+   * @return aliPayQr
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_ALI_PAY_QR)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public Object getAliPayQr() {
-        return aliPayQr;
-    }
+  public Object getAliPayQr() {
+    return aliPayQr;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_ALI_PAY_QR)
+  @JsonProperty(JSON_PROPERTY_ALI_PAY_QR)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setAliPayQr(@javax.annotation.Nonnull Object aliPayQr) {
-            this.aliPayQr = aliPayQr;
-        }
+    this.aliPayQr = aliPayQr;
+  }
 
-        public WalletData aliPayRedirect(@javax.annotation.Nonnull Object aliPayRedirect) {
-        
-        this.aliPayRedirect = aliPayRedirect;
-        return this;
-        }
+  public WalletData aliPayRedirect(@javax.annotation.Nonnull Object aliPayRedirect) {
+    
+    this.aliPayRedirect = aliPayRedirect;
+    return this;
+  }
 
-    /**
-        * Get aliPayRedirect
-    * @return aliPayRedirect
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_ALI_PAY_REDIRECT)
+  /**
+   * Get aliPayRedirect
+   * @return aliPayRedirect
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_ALI_PAY_REDIRECT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public Object getAliPayRedirect() {
-        return aliPayRedirect;
-    }
+  public Object getAliPayRedirect() {
+    return aliPayRedirect;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_ALI_PAY_REDIRECT)
+  @JsonProperty(JSON_PROPERTY_ALI_PAY_REDIRECT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setAliPayRedirect(@javax.annotation.Nonnull Object aliPayRedirect) {
-            this.aliPayRedirect = aliPayRedirect;
-        }
+    this.aliPayRedirect = aliPayRedirect;
+  }
 
-        public WalletData aliPayHkRedirect(@javax.annotation.Nonnull Object aliPayHkRedirect) {
-        
-        this.aliPayHkRedirect = aliPayHkRedirect;
-        return this;
-        }
+  public WalletData aliPayHkRedirect(@javax.annotation.Nonnull Object aliPayHkRedirect) {
+    
+    this.aliPayHkRedirect = aliPayHkRedirect;
+    return this;
+  }
 
-    /**
-        * Get aliPayHkRedirect
-    * @return aliPayHkRedirect
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_ALI_PAY_HK_REDIRECT)
+  /**
+   * Get aliPayHkRedirect
+   * @return aliPayHkRedirect
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_ALI_PAY_HK_REDIRECT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public Object getAliPayHkRedirect() {
-        return aliPayHkRedirect;
-    }
+  public Object getAliPayHkRedirect() {
+    return aliPayHkRedirect;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_ALI_PAY_HK_REDIRECT)
+  @JsonProperty(JSON_PROPERTY_ALI_PAY_HK_REDIRECT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setAliPayHkRedirect(@javax.annotation.Nonnull Object aliPayHkRedirect) {
-            this.aliPayHkRedirect = aliPayHkRedirect;
-        }
+    this.aliPayHkRedirect = aliPayHkRedirect;
+  }
 
-        public WalletData momoRedirect(@javax.annotation.Nonnull Object momoRedirect) {
-        
-        this.momoRedirect = momoRedirect;
-        return this;
-        }
+  public WalletData momoRedirect(@javax.annotation.Nonnull Object momoRedirect) {
+    
+    this.momoRedirect = momoRedirect;
+    return this;
+  }
 
-    /**
-        * Get momoRedirect
-    * @return momoRedirect
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_MOMO_REDIRECT)
+  /**
+   * Get momoRedirect
+   * @return momoRedirect
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_MOMO_REDIRECT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public Object getMomoRedirect() {
-        return momoRedirect;
-    }
+  public Object getMomoRedirect() {
+    return momoRedirect;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_MOMO_REDIRECT)
+  @JsonProperty(JSON_PROPERTY_MOMO_REDIRECT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setMomoRedirect(@javax.annotation.Nonnull Object momoRedirect) {
-            this.momoRedirect = momoRedirect;
-        }
+    this.momoRedirect = momoRedirect;
+  }
 
-        public WalletData kakaoPayRedirect(@javax.annotation.Nonnull Object kakaoPayRedirect) {
-        
-        this.kakaoPayRedirect = kakaoPayRedirect;
-        return this;
-        }
+  public WalletData kakaoPayRedirect(@javax.annotation.Nonnull Object kakaoPayRedirect) {
+    
+    this.kakaoPayRedirect = kakaoPayRedirect;
+    return this;
+  }
 
-    /**
-        * Get kakaoPayRedirect
-    * @return kakaoPayRedirect
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_KAKAO_PAY_REDIRECT)
+  /**
+   * Get kakaoPayRedirect
+   * @return kakaoPayRedirect
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_KAKAO_PAY_REDIRECT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public Object getKakaoPayRedirect() {
-        return kakaoPayRedirect;
-    }
+  public Object getKakaoPayRedirect() {
+    return kakaoPayRedirect;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_KAKAO_PAY_REDIRECT)
+  @JsonProperty(JSON_PROPERTY_KAKAO_PAY_REDIRECT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setKakaoPayRedirect(@javax.annotation.Nonnull Object kakaoPayRedirect) {
-            this.kakaoPayRedirect = kakaoPayRedirect;
-        }
+    this.kakaoPayRedirect = kakaoPayRedirect;
+  }
 
-        public WalletData goPayRedirect(@javax.annotation.Nonnull Object goPayRedirect) {
-        
-        this.goPayRedirect = goPayRedirect;
-        return this;
-        }
+  public WalletData goPayRedirect(@javax.annotation.Nonnull Object goPayRedirect) {
+    
+    this.goPayRedirect = goPayRedirect;
+    return this;
+  }
 
-    /**
-        * Get goPayRedirect
-    * @return goPayRedirect
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_GO_PAY_REDIRECT)
+  /**
+   * Get goPayRedirect
+   * @return goPayRedirect
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_GO_PAY_REDIRECT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public Object getGoPayRedirect() {
-        return goPayRedirect;
-    }
+  public Object getGoPayRedirect() {
+    return goPayRedirect;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_GO_PAY_REDIRECT)
+  @JsonProperty(JSON_PROPERTY_GO_PAY_REDIRECT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setGoPayRedirect(@javax.annotation.Nonnull Object goPayRedirect) {
-            this.goPayRedirect = goPayRedirect;
-        }
+    this.goPayRedirect = goPayRedirect;
+  }
 
-        public WalletData gcashRedirect(@javax.annotation.Nonnull Object gcashRedirect) {
-        
-        this.gcashRedirect = gcashRedirect;
-        return this;
-        }
+  public WalletData gcashRedirect(@javax.annotation.Nonnull Object gcashRedirect) {
+    
+    this.gcashRedirect = gcashRedirect;
+    return this;
+  }
 
-    /**
-        * Get gcashRedirect
-    * @return gcashRedirect
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_GCASH_REDIRECT)
+  /**
+   * Get gcashRedirect
+   * @return gcashRedirect
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_GCASH_REDIRECT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public Object getGcashRedirect() {
-        return gcashRedirect;
-    }
+  public Object getGcashRedirect() {
+    return gcashRedirect;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_GCASH_REDIRECT)
+  @JsonProperty(JSON_PROPERTY_GCASH_REDIRECT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setGcashRedirect(@javax.annotation.Nonnull Object gcashRedirect) {
-            this.gcashRedirect = gcashRedirect;
-        }
+    this.gcashRedirect = gcashRedirect;
+  }
 
-        public WalletData applePay(@javax.annotation.Nonnull ApplePayWalletData applePay) {
-        
-        this.applePay = applePay;
-        return this;
-        }
+  public WalletData applePay(@javax.annotation.Nonnull ApplePayWalletData applePay) {
+    
+    this.applePay = applePay;
+    return this;
+  }
 
-    /**
-        * Get applePay
-    * @return applePay
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_APPLE_PAY)
+  /**
+   * Get applePay
+   * @return applePay
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_APPLE_PAY)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public ApplePayWalletData getApplePay() {
-        return applePay;
-    }
+  public ApplePayWalletData getApplePay() {
+    return applePay;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_APPLE_PAY)
+  @JsonProperty(JSON_PROPERTY_APPLE_PAY)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setApplePay(@javax.annotation.Nonnull ApplePayWalletData applePay) {
-            this.applePay = applePay;
-        }
+    this.applePay = applePay;
+  }
 
-        public WalletData applePayRedirect(@javax.annotation.Nonnull Object applePayRedirect) {
-        
-        this.applePayRedirect = applePayRedirect;
-        return this;
-        }
+  public WalletData applePayRedirect(@javax.annotation.Nonnull Object applePayRedirect) {
+    
+    this.applePayRedirect = applePayRedirect;
+    return this;
+  }
 
-    /**
-        * Get applePayRedirect
-    * @return applePayRedirect
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_APPLE_PAY_REDIRECT)
+  /**
+   * Get applePayRedirect
+   * @return applePayRedirect
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_APPLE_PAY_REDIRECT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public Object getApplePayRedirect() {
-        return applePayRedirect;
-    }
+  public Object getApplePayRedirect() {
+    return applePayRedirect;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_APPLE_PAY_REDIRECT)
+  @JsonProperty(JSON_PROPERTY_APPLE_PAY_REDIRECT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setApplePayRedirect(@javax.annotation.Nonnull Object applePayRedirect) {
-            this.applePayRedirect = applePayRedirect;
-        }
+    this.applePayRedirect = applePayRedirect;
+  }
 
-        public WalletData applePayThirdPartySdk(@javax.annotation.Nonnull Object applePayThirdPartySdk) {
-        
-        this.applePayThirdPartySdk = applePayThirdPartySdk;
-        return this;
-        }
+  public WalletData applePayThirdPartySdk(@javax.annotation.Nonnull Object applePayThirdPartySdk) {
+    
+    this.applePayThirdPartySdk = applePayThirdPartySdk;
+    return this;
+  }
 
-    /**
-        * Get applePayThirdPartySdk
-    * @return applePayThirdPartySdk
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_APPLE_PAY_THIRD_PARTY_SDK)
+  /**
+   * Get applePayThirdPartySdk
+   * @return applePayThirdPartySdk
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_APPLE_PAY_THIRD_PARTY_SDK)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public Object getApplePayThirdPartySdk() {
-        return applePayThirdPartySdk;
-    }
+  public Object getApplePayThirdPartySdk() {
+    return applePayThirdPartySdk;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_APPLE_PAY_THIRD_PARTY_SDK)
+  @JsonProperty(JSON_PROPERTY_APPLE_PAY_THIRD_PARTY_SDK)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setApplePayThirdPartySdk(@javax.annotation.Nonnull Object applePayThirdPartySdk) {
-            this.applePayThirdPartySdk = applePayThirdPartySdk;
-        }
+    this.applePayThirdPartySdk = applePayThirdPartySdk;
+  }
 
-        public WalletData danaRedirect(@javax.annotation.Nonnull Object danaRedirect) {
-        
-        this.danaRedirect = danaRedirect;
-        return this;
-        }
+  public WalletData danaRedirect(@javax.annotation.Nonnull Object danaRedirect) {
+    
+    this.danaRedirect = danaRedirect;
+    return this;
+  }
 
-    /**
-        * Wallet data for DANA redirect flow
-    * @return danaRedirect
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_DANA_REDIRECT)
+  /**
+   * Wallet data for DANA redirect flow
+   * @return danaRedirect
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_DANA_REDIRECT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public Object getDanaRedirect() {
-        return danaRedirect;
-    }
+  public Object getDanaRedirect() {
+    return danaRedirect;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_DANA_REDIRECT)
+  @JsonProperty(JSON_PROPERTY_DANA_REDIRECT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setDanaRedirect(@javax.annotation.Nonnull Object danaRedirect) {
-            this.danaRedirect = danaRedirect;
-        }
+    this.danaRedirect = danaRedirect;
+  }
 
-        public WalletData googlePay(@javax.annotation.Nonnull GooglePayWalletData googlePay) {
-        
-        this.googlePay = googlePay;
-        return this;
-        }
+  public WalletData googlePay(@javax.annotation.Nonnull GooglePayWalletData googlePay) {
+    
+    this.googlePay = googlePay;
+    return this;
+  }
 
-    /**
-        * Get googlePay
-    * @return googlePay
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_GOOGLE_PAY)
+  /**
+   * Get googlePay
+   * @return googlePay
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_GOOGLE_PAY)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public GooglePayWalletData getGooglePay() {
-        return googlePay;
-    }
+  public GooglePayWalletData getGooglePay() {
+    return googlePay;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_GOOGLE_PAY)
+  @JsonProperty(JSON_PROPERTY_GOOGLE_PAY)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setGooglePay(@javax.annotation.Nonnull GooglePayWalletData googlePay) {
-            this.googlePay = googlePay;
-        }
+    this.googlePay = googlePay;
+  }
 
-        public WalletData googlePayRedirect(@javax.annotation.Nonnull Object googlePayRedirect) {
-        
-        this.googlePayRedirect = googlePayRedirect;
-        return this;
-        }
+  public WalletData googlePayRedirect(@javax.annotation.Nonnull Object googlePayRedirect) {
+    
+    this.googlePayRedirect = googlePayRedirect;
+    return this;
+  }
 
-    /**
-        * Get googlePayRedirect
-    * @return googlePayRedirect
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_GOOGLE_PAY_REDIRECT)
+  /**
+   * Get googlePayRedirect
+   * @return googlePayRedirect
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_GOOGLE_PAY_REDIRECT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public Object getGooglePayRedirect() {
-        return googlePayRedirect;
-    }
+  public Object getGooglePayRedirect() {
+    return googlePayRedirect;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_GOOGLE_PAY_REDIRECT)
+  @JsonProperty(JSON_PROPERTY_GOOGLE_PAY_REDIRECT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setGooglePayRedirect(@javax.annotation.Nonnull Object googlePayRedirect) {
-            this.googlePayRedirect = googlePayRedirect;
-        }
+    this.googlePayRedirect = googlePayRedirect;
+  }
 
-        public WalletData googlePayThirdPartySdk(@javax.annotation.Nonnull Object googlePayThirdPartySdk) {
-        
-        this.googlePayThirdPartySdk = googlePayThirdPartySdk;
-        return this;
-        }
+  public WalletData googlePayThirdPartySdk(@javax.annotation.Nonnull Object googlePayThirdPartySdk) {
+    
+    this.googlePayThirdPartySdk = googlePayThirdPartySdk;
+    return this;
+  }
 
-    /**
-        * Get googlePayThirdPartySdk
-    * @return googlePayThirdPartySdk
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_GOOGLE_PAY_THIRD_PARTY_SDK)
+  /**
+   * Get googlePayThirdPartySdk
+   * @return googlePayThirdPartySdk
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_GOOGLE_PAY_THIRD_PARTY_SDK)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public Object getGooglePayThirdPartySdk() {
-        return googlePayThirdPartySdk;
-    }
+  public Object getGooglePayThirdPartySdk() {
+    return googlePayThirdPartySdk;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_GOOGLE_PAY_THIRD_PARTY_SDK)
+  @JsonProperty(JSON_PROPERTY_GOOGLE_PAY_THIRD_PARTY_SDK)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setGooglePayThirdPartySdk(@javax.annotation.Nonnull Object googlePayThirdPartySdk) {
-            this.googlePayThirdPartySdk = googlePayThirdPartySdk;
-        }
+    this.googlePayThirdPartySdk = googlePayThirdPartySdk;
+  }
 
-        public WalletData mbWayRedirect(@javax.annotation.Nonnull MbWayRedirection mbWayRedirect) {
-        
-        this.mbWayRedirect = mbWayRedirect;
-        return this;
-        }
+  public WalletData mbWayRedirect(@javax.annotation.Nonnull MbWayRedirection mbWayRedirect) {
+    
+    this.mbWayRedirect = mbWayRedirect;
+    return this;
+  }
 
-    /**
-        * Get mbWayRedirect
-    * @return mbWayRedirect
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_MB_WAY_REDIRECT)
+  /**
+   * Get mbWayRedirect
+   * @return mbWayRedirect
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_MB_WAY_REDIRECT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public MbWayRedirection getMbWayRedirect() {
-        return mbWayRedirect;
-    }
+  public MbWayRedirection getMbWayRedirect() {
+    return mbWayRedirect;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_MB_WAY_REDIRECT)
+  @JsonProperty(JSON_PROPERTY_MB_WAY_REDIRECT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setMbWayRedirect(@javax.annotation.Nonnull MbWayRedirection mbWayRedirect) {
-            this.mbWayRedirect = mbWayRedirect;
-        }
+    this.mbWayRedirect = mbWayRedirect;
+  }
 
-        public WalletData mobilePayRedirect(@javax.annotation.Nonnull Object mobilePayRedirect) {
-        
-        this.mobilePayRedirect = mobilePayRedirect;
-        return this;
-        }
+  public WalletData mobilePayRedirect(@javax.annotation.Nonnull Object mobilePayRedirect) {
+    
+    this.mobilePayRedirect = mobilePayRedirect;
+    return this;
+  }
 
-    /**
-        * Get mobilePayRedirect
-    * @return mobilePayRedirect
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_MOBILE_PAY_REDIRECT)
+  /**
+   * Get mobilePayRedirect
+   * @return mobilePayRedirect
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_MOBILE_PAY_REDIRECT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public Object getMobilePayRedirect() {
-        return mobilePayRedirect;
-    }
+  public Object getMobilePayRedirect() {
+    return mobilePayRedirect;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_MOBILE_PAY_REDIRECT)
+  @JsonProperty(JSON_PROPERTY_MOBILE_PAY_REDIRECT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setMobilePayRedirect(@javax.annotation.Nonnull Object mobilePayRedirect) {
-            this.mobilePayRedirect = mobilePayRedirect;
-        }
+    this.mobilePayRedirect = mobilePayRedirect;
+  }
 
-        public WalletData paypalRedirect(@javax.annotation.Nonnull PaypalRedirection paypalRedirect) {
-        
-        this.paypalRedirect = paypalRedirect;
-        return this;
-        }
+  public WalletData paypalRedirect(@javax.annotation.Nonnull PaypalRedirection paypalRedirect) {
+    
+    this.paypalRedirect = paypalRedirect;
+    return this;
+  }
 
-    /**
-        * Get paypalRedirect
-    * @return paypalRedirect
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_PAYPAL_REDIRECT)
+  /**
+   * Get paypalRedirect
+   * @return paypalRedirect
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_PAYPAL_REDIRECT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public PaypalRedirection getPaypalRedirect() {
-        return paypalRedirect;
-    }
+  public PaypalRedirection getPaypalRedirect() {
+    return paypalRedirect;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_PAYPAL_REDIRECT)
+  @JsonProperty(JSON_PROPERTY_PAYPAL_REDIRECT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setPaypalRedirect(@javax.annotation.Nonnull PaypalRedirection paypalRedirect) {
-            this.paypalRedirect = paypalRedirect;
-        }
+    this.paypalRedirect = paypalRedirect;
+  }
 
-        public WalletData paypalSdk(@javax.annotation.Nonnull PayPalWalletData paypalSdk) {
-        
-        this.paypalSdk = paypalSdk;
-        return this;
-        }
+  public WalletData paypalSdk(@javax.annotation.Nonnull PayPalWalletData paypalSdk) {
+    
+    this.paypalSdk = paypalSdk;
+    return this;
+  }
 
-    /**
-        * Get paypalSdk
-    * @return paypalSdk
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_PAYPAL_SDK)
+  /**
+   * Get paypalSdk
+   * @return paypalSdk
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_PAYPAL_SDK)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public PayPalWalletData getPaypalSdk() {
-        return paypalSdk;
-    }
+  public PayPalWalletData getPaypalSdk() {
+    return paypalSdk;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_PAYPAL_SDK)
+  @JsonProperty(JSON_PROPERTY_PAYPAL_SDK)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setPaypalSdk(@javax.annotation.Nonnull PayPalWalletData paypalSdk) {
-            this.paypalSdk = paypalSdk;
-        }
+    this.paypalSdk = paypalSdk;
+  }
 
-        public WalletData paze(@javax.annotation.Nonnull PazeWalletData paze) {
-        
-        this.paze = paze;
-        return this;
-        }
+  public WalletData paze(@javax.annotation.Nonnull PazeWalletData paze) {
+    
+    this.paze = paze;
+    return this;
+  }
 
-    /**
-        * Get paze
-    * @return paze
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_PAZE)
+  /**
+   * Get paze
+   * @return paze
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_PAZE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public PazeWalletData getPaze() {
-        return paze;
-    }
+  public PazeWalletData getPaze() {
+    return paze;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_PAZE)
+  @JsonProperty(JSON_PROPERTY_PAZE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setPaze(@javax.annotation.Nonnull PazeWalletData paze) {
-            this.paze = paze;
-        }
+    this.paze = paze;
+  }
 
-        public WalletData samsungPay(@javax.annotation.Nonnull SamsungPayWalletData samsungPay) {
-        
-        this.samsungPay = samsungPay;
-        return this;
-        }
+  public WalletData samsungPay(@javax.annotation.Nonnull SamsungPayWalletData samsungPay) {
+    
+    this.samsungPay = samsungPay;
+    return this;
+  }
 
-    /**
-        * Get samsungPay
-    * @return samsungPay
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_SAMSUNG_PAY)
+  /**
+   * Get samsungPay
+   * @return samsungPay
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_SAMSUNG_PAY)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public SamsungPayWalletData getSamsungPay() {
-        return samsungPay;
-    }
+  public SamsungPayWalletData getSamsungPay() {
+    return samsungPay;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_SAMSUNG_PAY)
+  @JsonProperty(JSON_PROPERTY_SAMSUNG_PAY)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setSamsungPay(@javax.annotation.Nonnull SamsungPayWalletData samsungPay) {
-            this.samsungPay = samsungPay;
-        }
+    this.samsungPay = samsungPay;
+  }
 
-        public WalletData twintRedirect(@javax.annotation.Nonnull Object twintRedirect) {
-        
-        this.twintRedirect = twintRedirect;
-        return this;
-        }
+  public WalletData twintRedirect(@javax.annotation.Nonnull Object twintRedirect) {
+    
+    this.twintRedirect = twintRedirect;
+    return this;
+  }
 
-    /**
-        * Wallet data for Twint Redirection
-    * @return twintRedirect
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_TWINT_REDIRECT)
+  /**
+   * Wallet data for Twint Redirection
+   * @return twintRedirect
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_TWINT_REDIRECT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public Object getTwintRedirect() {
-        return twintRedirect;
-    }
+  public Object getTwintRedirect() {
+    return twintRedirect;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_TWINT_REDIRECT)
+  @JsonProperty(JSON_PROPERTY_TWINT_REDIRECT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setTwintRedirect(@javax.annotation.Nonnull Object twintRedirect) {
-            this.twintRedirect = twintRedirect;
-        }
+    this.twintRedirect = twintRedirect;
+  }
 
-        public WalletData vippsRedirect(@javax.annotation.Nonnull Object vippsRedirect) {
-        
-        this.vippsRedirect = vippsRedirect;
-        return this;
-        }
+  public WalletData vippsRedirect(@javax.annotation.Nonnull Object vippsRedirect) {
+    
+    this.vippsRedirect = vippsRedirect;
+    return this;
+  }
 
-    /**
-        * Wallet data for Vipps Redirection
-    * @return vippsRedirect
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_VIPPS_REDIRECT)
+  /**
+   * Wallet data for Vipps Redirection
+   * @return vippsRedirect
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_VIPPS_REDIRECT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public Object getVippsRedirect() {
-        return vippsRedirect;
-    }
+  public Object getVippsRedirect() {
+    return vippsRedirect;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_VIPPS_REDIRECT)
+  @JsonProperty(JSON_PROPERTY_VIPPS_REDIRECT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setVippsRedirect(@javax.annotation.Nonnull Object vippsRedirect) {
-            this.vippsRedirect = vippsRedirect;
-        }
+    this.vippsRedirect = vippsRedirect;
+  }
 
-        public WalletData touchNGoRedirect(@javax.annotation.Nonnull Object touchNGoRedirect) {
-        
-        this.touchNGoRedirect = touchNGoRedirect;
-        return this;
-        }
+  public WalletData touchNGoRedirect(@javax.annotation.Nonnull Object touchNGoRedirect) {
+    
+    this.touchNGoRedirect = touchNGoRedirect;
+    return this;
+  }
 
-    /**
-        * Get touchNGoRedirect
-    * @return touchNGoRedirect
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_TOUCH_N_GO_REDIRECT)
+  /**
+   * Get touchNGoRedirect
+   * @return touchNGoRedirect
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_TOUCH_N_GO_REDIRECT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public Object getTouchNGoRedirect() {
-        return touchNGoRedirect;
-    }
+  public Object getTouchNGoRedirect() {
+    return touchNGoRedirect;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_TOUCH_N_GO_REDIRECT)
+  @JsonProperty(JSON_PROPERTY_TOUCH_N_GO_REDIRECT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setTouchNGoRedirect(@javax.annotation.Nonnull Object touchNGoRedirect) {
-            this.touchNGoRedirect = touchNGoRedirect;
-        }
+    this.touchNGoRedirect = touchNGoRedirect;
+  }
 
-        public WalletData weChatPayRedirect(@javax.annotation.Nonnull Object weChatPayRedirect) {
-        
-        this.weChatPayRedirect = weChatPayRedirect;
-        return this;
-        }
+  public WalletData weChatPayRedirect(@javax.annotation.Nonnull Object weChatPayRedirect) {
+    
+    this.weChatPayRedirect = weChatPayRedirect;
+    return this;
+  }
 
-    /**
-        * Get weChatPayRedirect
-    * @return weChatPayRedirect
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_WE_CHAT_PAY_REDIRECT)
+  /**
+   * Get weChatPayRedirect
+   * @return weChatPayRedirect
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_WE_CHAT_PAY_REDIRECT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public Object getWeChatPayRedirect() {
-        return weChatPayRedirect;
-    }
+  public Object getWeChatPayRedirect() {
+    return weChatPayRedirect;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_WE_CHAT_PAY_REDIRECT)
+  @JsonProperty(JSON_PROPERTY_WE_CHAT_PAY_REDIRECT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setWeChatPayRedirect(@javax.annotation.Nonnull Object weChatPayRedirect) {
-            this.weChatPayRedirect = weChatPayRedirect;
-        }
+    this.weChatPayRedirect = weChatPayRedirect;
+  }
 
-        public WalletData weChatPayQr(@javax.annotation.Nonnull Object weChatPayQr) {
-        
-        this.weChatPayQr = weChatPayQr;
-        return this;
-        }
+  public WalletData weChatPayQr(@javax.annotation.Nonnull Object weChatPayQr) {
+    
+    this.weChatPayQr = weChatPayQr;
+    return this;
+  }
 
-    /**
-        * Get weChatPayQr
-    * @return weChatPayQr
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_WE_CHAT_PAY_QR)
+  /**
+   * Get weChatPayQr
+   * @return weChatPayQr
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_WE_CHAT_PAY_QR)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public Object getWeChatPayQr() {
-        return weChatPayQr;
-    }
+  public Object getWeChatPayQr() {
+    return weChatPayQr;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_WE_CHAT_PAY_QR)
+  @JsonProperty(JSON_PROPERTY_WE_CHAT_PAY_QR)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setWeChatPayQr(@javax.annotation.Nonnull Object weChatPayQr) {
-            this.weChatPayQr = weChatPayQr;
-        }
+    this.weChatPayQr = weChatPayQr;
+  }
 
-        public WalletData cashappQr(@javax.annotation.Nonnull Object cashappQr) {
-        
-        this.cashappQr = cashappQr;
-        return this;
-        }
+  public WalletData cashappQr(@javax.annotation.Nonnull Object cashappQr) {
+    
+    this.cashappQr = cashappQr;
+    return this;
+  }
 
-    /**
-        * Get cashappQr
-    * @return cashappQr
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_CASHAPP_QR)
+  /**
+   * Get cashappQr
+   * @return cashappQr
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_CASHAPP_QR)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public Object getCashappQr() {
-        return cashappQr;
-    }
+  public Object getCashappQr() {
+    return cashappQr;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_CASHAPP_QR)
+  @JsonProperty(JSON_PROPERTY_CASHAPP_QR)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setCashappQr(@javax.annotation.Nonnull Object cashappQr) {
-            this.cashappQr = cashappQr;
-        }
+    this.cashappQr = cashappQr;
+  }
 
-        public WalletData swishQr(@javax.annotation.Nonnull Object swishQr) {
-        
-        this.swishQr = swishQr;
-        return this;
-        }
+  public WalletData swishQr(@javax.annotation.Nonnull Object swishQr) {
+    
+    this.swishQr = swishQr;
+    return this;
+  }
 
-    /**
-        * Get swishQr
-    * @return swishQr
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_SWISH_QR)
+  /**
+   * Get swishQr
+   * @return swishQr
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_SWISH_QR)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public Object getSwishQr() {
-        return swishQr;
-    }
+  public Object getSwishQr() {
+    return swishQr;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_SWISH_QR)
+  @JsonProperty(JSON_PROPERTY_SWISH_QR)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setSwishQr(@javax.annotation.Nonnull Object swishQr) {
-            this.swishQr = swishQr;
-        }
+    this.swishQr = swishQr;
+  }
 
-        public WalletData mifinity(@javax.annotation.Nonnull MifinityData mifinity) {
-        
-        this.mifinity = mifinity;
-        return this;
-        }
+  public WalletData mifinity(@javax.annotation.Nonnull MifinityData mifinity) {
+    
+    this.mifinity = mifinity;
+    return this;
+  }
 
-    /**
-        * Get mifinity
-    * @return mifinity
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_MIFINITY)
+  /**
+   * Get mifinity
+   * @return mifinity
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_MIFINITY)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public MifinityData getMifinity() {
-        return mifinity;
-    }
+  public MifinityData getMifinity() {
+    return mifinity;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_MIFINITY)
+  @JsonProperty(JSON_PROPERTY_MIFINITY)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setMifinity(@javax.annotation.Nonnull MifinityData mifinity) {
-            this.mifinity = mifinity;
-        }
+    this.mifinity = mifinity;
+  }
 
-@Override
-public boolean equals(Object o) {
+  @Override
+  public boolean equals(Object o) {
     if (this == o) {
-    return true;
+      return true;
     }
     if (o == null || getClass() != o.getClass()) {
-    return false;
+      return false;
     }
-        WalletData walletData = (WalletData) o;
-        return Objects.equals(this.aliPayQr, walletData.aliPayQr) &&
+    WalletData walletData = (WalletData) o;
+    return Objects.equals(this.aliPayQr, walletData.aliPayQr) &&
         Objects.equals(this.aliPayRedirect, walletData.aliPayRedirect) &&
         Objects.equals(this.aliPayHkRedirect, walletData.aliPayHkRedirect) &&
         Objects.equals(this.momoRedirect, walletData.momoRedirect) &&
@@ -949,334 +949,334 @@ public boolean equals(Object o) {
         Objects.equals(this.cashappQr, walletData.cashappQr) &&
         Objects.equals(this.swishQr, walletData.swishQr) &&
         Objects.equals(this.mifinity, walletData.mifinity);
-}
+  }
 
-    @Override
-    public int hashCode() {
-        return Objects.hash(aliPayQr, aliPayRedirect, aliPayHkRedirect, momoRedirect, kakaoPayRedirect, goPayRedirect, gcashRedirect, applePay, applePayRedirect, applePayThirdPartySdk, danaRedirect, googlePay, googlePayRedirect, googlePayThirdPartySdk, mbWayRedirect, mobilePayRedirect, paypalRedirect, paypalSdk, paze, samsungPay, twintRedirect, vippsRedirect, touchNGoRedirect, weChatPayRedirect, weChatPayQr, cashappQr, swishQr, mifinity);
-    }
+  @Override
+  public int hashCode() {
+    return Objects.hash(aliPayQr, aliPayRedirect, aliPayHkRedirect, momoRedirect, kakaoPayRedirect, goPayRedirect, gcashRedirect, applePay, applePayRedirect, applePayThirdPartySdk, danaRedirect, googlePay, googlePayRedirect, googlePayThirdPartySdk, mbWayRedirect, mobilePayRedirect, paypalRedirect, paypalSdk, paze, samsungPay, twintRedirect, vippsRedirect, touchNGoRedirect, weChatPayRedirect, weChatPayQr, cashappQr, swishQr, mifinity);
+  }
 
-    @Override
-    public String toString() {
+  @Override
+  public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class WalletData {\n");
-        sb.append("    aliPayQr: ").append(toIndentedString(aliPayQr)).append("\n");
-        sb.append("    aliPayRedirect: ").append(toIndentedString(aliPayRedirect)).append("\n");
-        sb.append("    aliPayHkRedirect: ").append(toIndentedString(aliPayHkRedirect)).append("\n");
-        sb.append("    momoRedirect: ").append(toIndentedString(momoRedirect)).append("\n");
-        sb.append("    kakaoPayRedirect: ").append(toIndentedString(kakaoPayRedirect)).append("\n");
-        sb.append("    goPayRedirect: ").append(toIndentedString(goPayRedirect)).append("\n");
-        sb.append("    gcashRedirect: ").append(toIndentedString(gcashRedirect)).append("\n");
-        sb.append("    applePay: ").append(toIndentedString(applePay)).append("\n");
-        sb.append("    applePayRedirect: ").append(toIndentedString(applePayRedirect)).append("\n");
-        sb.append("    applePayThirdPartySdk: ").append(toIndentedString(applePayThirdPartySdk)).append("\n");
-        sb.append("    danaRedirect: ").append(toIndentedString(danaRedirect)).append("\n");
-        sb.append("    googlePay: ").append(toIndentedString(googlePay)).append("\n");
-        sb.append("    googlePayRedirect: ").append(toIndentedString(googlePayRedirect)).append("\n");
-        sb.append("    googlePayThirdPartySdk: ").append(toIndentedString(googlePayThirdPartySdk)).append("\n");
-        sb.append("    mbWayRedirect: ").append(toIndentedString(mbWayRedirect)).append("\n");
-        sb.append("    mobilePayRedirect: ").append(toIndentedString(mobilePayRedirect)).append("\n");
-        sb.append("    paypalRedirect: ").append(toIndentedString(paypalRedirect)).append("\n");
-        sb.append("    paypalSdk: ").append(toIndentedString(paypalSdk)).append("\n");
-        sb.append("    paze: ").append(toIndentedString(paze)).append("\n");
-        sb.append("    samsungPay: ").append(toIndentedString(samsungPay)).append("\n");
-        sb.append("    twintRedirect: ").append(toIndentedString(twintRedirect)).append("\n");
-        sb.append("    vippsRedirect: ").append(toIndentedString(vippsRedirect)).append("\n");
-        sb.append("    touchNGoRedirect: ").append(toIndentedString(touchNGoRedirect)).append("\n");
-        sb.append("    weChatPayRedirect: ").append(toIndentedString(weChatPayRedirect)).append("\n");
-        sb.append("    weChatPayQr: ").append(toIndentedString(weChatPayQr)).append("\n");
-        sb.append("    cashappQr: ").append(toIndentedString(cashappQr)).append("\n");
-        sb.append("    swishQr: ").append(toIndentedString(swishQr)).append("\n");
-        sb.append("    mifinity: ").append(toIndentedString(mifinity)).append("\n");
+    sb.append("    aliPayQr: ").append(toIndentedString(aliPayQr)).append("\n");
+    sb.append("    aliPayRedirect: ").append(toIndentedString(aliPayRedirect)).append("\n");
+    sb.append("    aliPayHkRedirect: ").append(toIndentedString(aliPayHkRedirect)).append("\n");
+    sb.append("    momoRedirect: ").append(toIndentedString(momoRedirect)).append("\n");
+    sb.append("    kakaoPayRedirect: ").append(toIndentedString(kakaoPayRedirect)).append("\n");
+    sb.append("    goPayRedirect: ").append(toIndentedString(goPayRedirect)).append("\n");
+    sb.append("    gcashRedirect: ").append(toIndentedString(gcashRedirect)).append("\n");
+    sb.append("    applePay: ").append(toIndentedString(applePay)).append("\n");
+    sb.append("    applePayRedirect: ").append(toIndentedString(applePayRedirect)).append("\n");
+    sb.append("    applePayThirdPartySdk: ").append(toIndentedString(applePayThirdPartySdk)).append("\n");
+    sb.append("    danaRedirect: ").append(toIndentedString(danaRedirect)).append("\n");
+    sb.append("    googlePay: ").append(toIndentedString(googlePay)).append("\n");
+    sb.append("    googlePayRedirect: ").append(toIndentedString(googlePayRedirect)).append("\n");
+    sb.append("    googlePayThirdPartySdk: ").append(toIndentedString(googlePayThirdPartySdk)).append("\n");
+    sb.append("    mbWayRedirect: ").append(toIndentedString(mbWayRedirect)).append("\n");
+    sb.append("    mobilePayRedirect: ").append(toIndentedString(mobilePayRedirect)).append("\n");
+    sb.append("    paypalRedirect: ").append(toIndentedString(paypalRedirect)).append("\n");
+    sb.append("    paypalSdk: ").append(toIndentedString(paypalSdk)).append("\n");
+    sb.append("    paze: ").append(toIndentedString(paze)).append("\n");
+    sb.append("    samsungPay: ").append(toIndentedString(samsungPay)).append("\n");
+    sb.append("    twintRedirect: ").append(toIndentedString(twintRedirect)).append("\n");
+    sb.append("    vippsRedirect: ").append(toIndentedString(vippsRedirect)).append("\n");
+    sb.append("    touchNGoRedirect: ").append(toIndentedString(touchNGoRedirect)).append("\n");
+    sb.append("    weChatPayRedirect: ").append(toIndentedString(weChatPayRedirect)).append("\n");
+    sb.append("    weChatPayQr: ").append(toIndentedString(weChatPayQr)).append("\n");
+    sb.append("    cashappQr: ").append(toIndentedString(cashappQr)).append("\n");
+    sb.append("    swishQr: ").append(toIndentedString(swishQr)).append("\n");
+    sb.append("    mifinity: ").append(toIndentedString(mifinity)).append("\n");
     sb.append("}");
     return sb.toString();
-    }
+  }
 
-    /**
-    * Convert the given object to string with each line indented by 4 spaces
-    * (except the first line).
-    */
-    private String toIndentedString(Object o) {
+  /**
+   * Convert the given object to string with each line indented by 4 spaces
+   * (except the first line).
+   */
+  private String toIndentedString(Object o) {
     if (o == null) {
-    return "null";
+      return "null";
     }
     return o.toString().replace("\n", "\n    ");
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @return URL query string
+   */
+  public String toUrlQueryString() {
+    return toUrlQueryString(null);
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @param prefix prefix of the query string
+   * @return URL query string
+   */
+  public String toUrlQueryString(String prefix) {
+    String suffix = "";
+    String containerSuffix = "";
+    String containerPrefix = "";
+    if (prefix == null) {
+      // style=form, explode=true, e.g. /pet?name=cat&type=manx
+      prefix = "";
+    } else {
+      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+      prefix = prefix + "[";
+      suffix = "]";
+      containerSuffix = "]";
+      containerPrefix = "[";
     }
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @return URL query string
-        */
-        public String toUrlQueryString() {
-        return toUrlQueryString(null);
-        }
+    StringJoiner joiner = new StringJoiner("&");
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @param prefix prefix of the query string
-        * @return URL query string
-        */
-        public String toUrlQueryString(String prefix) {
-        String suffix = "";
-        String containerSuffix = "";
-        String containerPrefix = "";
-        if (prefix == null) {
-        // style=form, explode=true, e.g. /pet?name=cat&type=manx
-        prefix = "";
-        } else {
-        // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
-        prefix = prefix + "[";
-        suffix = "]";
-        containerSuffix = "]";
-        containerPrefix = "[";
-        }
-
-        StringJoiner joiner = new StringJoiner("&");
-
-            // add `ali_pay_qr` to the URL query string
-                        if (getAliPayQr() != null) {
-                        try {
-                        joiner.add(String.format("%sali_pay_qr%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getAliPayQr()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-            // add `ali_pay_redirect` to the URL query string
-                        if (getAliPayRedirect() != null) {
-                        try {
-                        joiner.add(String.format("%sali_pay_redirect%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getAliPayRedirect()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-            // add `ali_pay_hk_redirect` to the URL query string
-                        if (getAliPayHkRedirect() != null) {
-                        try {
-                        joiner.add(String.format("%sali_pay_hk_redirect%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getAliPayHkRedirect()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-            // add `momo_redirect` to the URL query string
-                        if (getMomoRedirect() != null) {
-                        try {
-                        joiner.add(String.format("%smomo_redirect%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getMomoRedirect()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-            // add `kakao_pay_redirect` to the URL query string
-                        if (getKakaoPayRedirect() != null) {
-                        try {
-                        joiner.add(String.format("%skakao_pay_redirect%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getKakaoPayRedirect()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-            // add `go_pay_redirect` to the URL query string
-                        if (getGoPayRedirect() != null) {
-                        try {
-                        joiner.add(String.format("%sgo_pay_redirect%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getGoPayRedirect()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-            // add `gcash_redirect` to the URL query string
-                        if (getGcashRedirect() != null) {
-                        try {
-                        joiner.add(String.format("%sgcash_redirect%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getGcashRedirect()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-            // add `apple_pay` to the URL query string
-                            if (getApplePay() != null) {
-                            joiner.add(getApplePay().toUrlQueryString(prefix + "apple_pay" + suffix));
-                            }
-
-            // add `apple_pay_redirect` to the URL query string
-                        if (getApplePayRedirect() != null) {
-                        try {
-                        joiner.add(String.format("%sapple_pay_redirect%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getApplePayRedirect()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-            // add `apple_pay_third_party_sdk` to the URL query string
-                        if (getApplePayThirdPartySdk() != null) {
-                        try {
-                        joiner.add(String.format("%sapple_pay_third_party_sdk%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getApplePayThirdPartySdk()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-            // add `dana_redirect` to the URL query string
-                        if (getDanaRedirect() != null) {
-                        try {
-                        joiner.add(String.format("%sdana_redirect%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getDanaRedirect()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-            // add `google_pay` to the URL query string
-                            if (getGooglePay() != null) {
-                            joiner.add(getGooglePay().toUrlQueryString(prefix + "google_pay" + suffix));
-                            }
-
-            // add `google_pay_redirect` to the URL query string
-                        if (getGooglePayRedirect() != null) {
-                        try {
-                        joiner.add(String.format("%sgoogle_pay_redirect%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getGooglePayRedirect()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-            // add `google_pay_third_party_sdk` to the URL query string
-                        if (getGooglePayThirdPartySdk() != null) {
-                        try {
-                        joiner.add(String.format("%sgoogle_pay_third_party_sdk%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getGooglePayThirdPartySdk()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-            // add `mb_way_redirect` to the URL query string
-                            if (getMbWayRedirect() != null) {
-                            joiner.add(getMbWayRedirect().toUrlQueryString(prefix + "mb_way_redirect" + suffix));
-                            }
-
-            // add `mobile_pay_redirect` to the URL query string
-                        if (getMobilePayRedirect() != null) {
-                        try {
-                        joiner.add(String.format("%smobile_pay_redirect%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getMobilePayRedirect()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-            // add `paypal_redirect` to the URL query string
-                            if (getPaypalRedirect() != null) {
-                            joiner.add(getPaypalRedirect().toUrlQueryString(prefix + "paypal_redirect" + suffix));
-                            }
-
-            // add `paypal_sdk` to the URL query string
-                            if (getPaypalSdk() != null) {
-                            joiner.add(getPaypalSdk().toUrlQueryString(prefix + "paypal_sdk" + suffix));
-                            }
-
-            // add `paze` to the URL query string
-                            if (getPaze() != null) {
-                            joiner.add(getPaze().toUrlQueryString(prefix + "paze" + suffix));
-                            }
-
-            // add `samsung_pay` to the URL query string
-                            if (getSamsungPay() != null) {
-                            joiner.add(getSamsungPay().toUrlQueryString(prefix + "samsung_pay" + suffix));
-                            }
-
-            // add `twint_redirect` to the URL query string
-                        if (getTwintRedirect() != null) {
-                        try {
-                        joiner.add(String.format("%stwint_redirect%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getTwintRedirect()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-            // add `vipps_redirect` to the URL query string
-                        if (getVippsRedirect() != null) {
-                        try {
-                        joiner.add(String.format("%svipps_redirect%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getVippsRedirect()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-            // add `touch_n_go_redirect` to the URL query string
-                        if (getTouchNGoRedirect() != null) {
-                        try {
-                        joiner.add(String.format("%stouch_n_go_redirect%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getTouchNGoRedirect()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-            // add `we_chat_pay_redirect` to the URL query string
-                        if (getWeChatPayRedirect() != null) {
-                        try {
-                        joiner.add(String.format("%swe_chat_pay_redirect%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getWeChatPayRedirect()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-            // add `we_chat_pay_qr` to the URL query string
-                        if (getWeChatPayQr() != null) {
-                        try {
-                        joiner.add(String.format("%swe_chat_pay_qr%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getWeChatPayQr()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-            // add `cashapp_qr` to the URL query string
-                        if (getCashappQr() != null) {
-                        try {
-                        joiner.add(String.format("%scashapp_qr%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCashappQr()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-            // add `swish_qr` to the URL query string
-                        if (getSwishQr() != null) {
-                        try {
-                        joiner.add(String.format("%sswish_qr%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getSwishQr()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-            // add `mifinity` to the URL query string
-                            if (getMifinity() != null) {
-                            joiner.add(getMifinity().toUrlQueryString(prefix + "mifinity" + suffix));
-                            }
-
-        return joiner.toString();
-        }
-
+    // add `ali_pay_qr` to the URL query string
+    if (getAliPayQr() != null) {
+      try {
+        joiner.add(String.format("%sali_pay_qr%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getAliPayQr()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
     }
+
+    // add `ali_pay_redirect` to the URL query string
+    if (getAliPayRedirect() != null) {
+      try {
+        joiner.add(String.format("%sali_pay_redirect%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getAliPayRedirect()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `ali_pay_hk_redirect` to the URL query string
+    if (getAliPayHkRedirect() != null) {
+      try {
+        joiner.add(String.format("%sali_pay_hk_redirect%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getAliPayHkRedirect()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `momo_redirect` to the URL query string
+    if (getMomoRedirect() != null) {
+      try {
+        joiner.add(String.format("%smomo_redirect%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getMomoRedirect()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `kakao_pay_redirect` to the URL query string
+    if (getKakaoPayRedirect() != null) {
+      try {
+        joiner.add(String.format("%skakao_pay_redirect%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getKakaoPayRedirect()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `go_pay_redirect` to the URL query string
+    if (getGoPayRedirect() != null) {
+      try {
+        joiner.add(String.format("%sgo_pay_redirect%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getGoPayRedirect()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `gcash_redirect` to the URL query string
+    if (getGcashRedirect() != null) {
+      try {
+        joiner.add(String.format("%sgcash_redirect%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getGcashRedirect()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `apple_pay` to the URL query string
+    if (getApplePay() != null) {
+      joiner.add(getApplePay().toUrlQueryString(prefix + "apple_pay" + suffix));
+    }
+
+    // add `apple_pay_redirect` to the URL query string
+    if (getApplePayRedirect() != null) {
+      try {
+        joiner.add(String.format("%sapple_pay_redirect%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getApplePayRedirect()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `apple_pay_third_party_sdk` to the URL query string
+    if (getApplePayThirdPartySdk() != null) {
+      try {
+        joiner.add(String.format("%sapple_pay_third_party_sdk%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getApplePayThirdPartySdk()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `dana_redirect` to the URL query string
+    if (getDanaRedirect() != null) {
+      try {
+        joiner.add(String.format("%sdana_redirect%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getDanaRedirect()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `google_pay` to the URL query string
+    if (getGooglePay() != null) {
+      joiner.add(getGooglePay().toUrlQueryString(prefix + "google_pay" + suffix));
+    }
+
+    // add `google_pay_redirect` to the URL query string
+    if (getGooglePayRedirect() != null) {
+      try {
+        joiner.add(String.format("%sgoogle_pay_redirect%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getGooglePayRedirect()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `google_pay_third_party_sdk` to the URL query string
+    if (getGooglePayThirdPartySdk() != null) {
+      try {
+        joiner.add(String.format("%sgoogle_pay_third_party_sdk%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getGooglePayThirdPartySdk()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `mb_way_redirect` to the URL query string
+    if (getMbWayRedirect() != null) {
+      joiner.add(getMbWayRedirect().toUrlQueryString(prefix + "mb_way_redirect" + suffix));
+    }
+
+    // add `mobile_pay_redirect` to the URL query string
+    if (getMobilePayRedirect() != null) {
+      try {
+        joiner.add(String.format("%smobile_pay_redirect%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getMobilePayRedirect()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `paypal_redirect` to the URL query string
+    if (getPaypalRedirect() != null) {
+      joiner.add(getPaypalRedirect().toUrlQueryString(prefix + "paypal_redirect" + suffix));
+    }
+
+    // add `paypal_sdk` to the URL query string
+    if (getPaypalSdk() != null) {
+      joiner.add(getPaypalSdk().toUrlQueryString(prefix + "paypal_sdk" + suffix));
+    }
+
+    // add `paze` to the URL query string
+    if (getPaze() != null) {
+      joiner.add(getPaze().toUrlQueryString(prefix + "paze" + suffix));
+    }
+
+    // add `samsung_pay` to the URL query string
+    if (getSamsungPay() != null) {
+      joiner.add(getSamsungPay().toUrlQueryString(prefix + "samsung_pay" + suffix));
+    }
+
+    // add `twint_redirect` to the URL query string
+    if (getTwintRedirect() != null) {
+      try {
+        joiner.add(String.format("%stwint_redirect%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getTwintRedirect()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `vipps_redirect` to the URL query string
+    if (getVippsRedirect() != null) {
+      try {
+        joiner.add(String.format("%svipps_redirect%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getVippsRedirect()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `touch_n_go_redirect` to the URL query string
+    if (getTouchNGoRedirect() != null) {
+      try {
+        joiner.add(String.format("%stouch_n_go_redirect%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getTouchNGoRedirect()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `we_chat_pay_redirect` to the URL query string
+    if (getWeChatPayRedirect() != null) {
+      try {
+        joiner.add(String.format("%swe_chat_pay_redirect%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getWeChatPayRedirect()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `we_chat_pay_qr` to the URL query string
+    if (getWeChatPayQr() != null) {
+      try {
+        joiner.add(String.format("%swe_chat_pay_qr%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getWeChatPayQr()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `cashapp_qr` to the URL query string
+    if (getCashappQr() != null) {
+      try {
+        joiner.add(String.format("%scashapp_qr%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCashappQr()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `swish_qr` to the URL query string
+    if (getSwishQr() != null) {
+      try {
+        joiner.add(String.format("%sswish_qr%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getSwishQr()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `mifinity` to the URL query string
+    if (getMifinity() != null) {
+      joiner.add(getMifinity().toUrlQueryString(prefix + "mifinity" + suffix));
+    }
+
+    return joiner.toString();
+  }
+
+}
 

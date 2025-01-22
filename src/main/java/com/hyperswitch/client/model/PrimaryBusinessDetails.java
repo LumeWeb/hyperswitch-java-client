@@ -28,168 +28,168 @@ import java.net.URLEncoder;
 import java.util.StringJoiner;
 
 /**
-* PrimaryBusinessDetails
-*/
-    @JsonPropertyOrder({
-        PrimaryBusinessDetails.JSON_PROPERTY_COUNTRY,
-        PrimaryBusinessDetails.JSON_PROPERTY_BUSINESS
-    })
+ * PrimaryBusinessDetails
+ */
+@JsonPropertyOrder({
+  PrimaryBusinessDetails.JSON_PROPERTY_COUNTRY,
+  PrimaryBusinessDetails.JSON_PROPERTY_BUSINESS
+})
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class PrimaryBusinessDetails {
-        public static final String JSON_PROPERTY_COUNTRY = "country";
-    @javax.annotation.Nonnull
-            private CountryAlpha2 country;
+  public static final String JSON_PROPERTY_COUNTRY = "country";
+  @javax.annotation.Nonnull
+  private CountryAlpha2 country;
 
-        public static final String JSON_PROPERTY_BUSINESS = "business";
-    @javax.annotation.Nonnull
-            private String business;
+  public static final String JSON_PROPERTY_BUSINESS = "business";
+  @javax.annotation.Nonnull
+  private String business;
 
-public PrimaryBusinessDetails() {
-}
+  public PrimaryBusinessDetails() {
+  }
 
-        public PrimaryBusinessDetails country(@javax.annotation.Nonnull CountryAlpha2 country) {
-        
-        this.country = country;
-        return this;
-        }
+  public PrimaryBusinessDetails country(@javax.annotation.Nonnull CountryAlpha2 country) {
+    
+    this.country = country;
+    return this;
+  }
 
-    /**
-        * Get country
-    * @return country
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_COUNTRY)
+  /**
+   * Get country
+   * @return country
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_COUNTRY)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public CountryAlpha2 getCountry() {
-        return country;
-    }
+  public CountryAlpha2 getCountry() {
+    return country;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_COUNTRY)
+  @JsonProperty(JSON_PROPERTY_COUNTRY)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setCountry(@javax.annotation.Nonnull CountryAlpha2 country) {
-            this.country = country;
-        }
+    this.country = country;
+  }
 
-        public PrimaryBusinessDetails business(@javax.annotation.Nonnull String business) {
-        
-        this.business = business;
-        return this;
-        }
+  public PrimaryBusinessDetails business(@javax.annotation.Nonnull String business) {
+    
+    this.business = business;
+    return this;
+  }
 
-    /**
-        * Get business
-    * @return business
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_BUSINESS)
+  /**
+   * Get business
+   * @return business
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_BUSINESS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public String getBusiness() {
-        return business;
-    }
+  public String getBusiness() {
+    return business;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_BUSINESS)
+  @JsonProperty(JSON_PROPERTY_BUSINESS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setBusiness(@javax.annotation.Nonnull String business) {
-            this.business = business;
-        }
+    this.business = business;
+  }
 
-@Override
-public boolean equals(Object o) {
+  @Override
+  public boolean equals(Object o) {
     if (this == o) {
-    return true;
+      return true;
     }
     if (o == null || getClass() != o.getClass()) {
-    return false;
+      return false;
     }
-        PrimaryBusinessDetails primaryBusinessDetails = (PrimaryBusinessDetails) o;
-        return Objects.equals(this.country, primaryBusinessDetails.country) &&
+    PrimaryBusinessDetails primaryBusinessDetails = (PrimaryBusinessDetails) o;
+    return Objects.equals(this.country, primaryBusinessDetails.country) &&
         Objects.equals(this.business, primaryBusinessDetails.business);
-}
+  }
 
-    @Override
-    public int hashCode() {
-        return Objects.hash(country, business);
-    }
+  @Override
+  public int hashCode() {
+    return Objects.hash(country, business);
+  }
 
-    @Override
-    public String toString() {
+  @Override
+  public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class PrimaryBusinessDetails {\n");
-        sb.append("    country: ").append(toIndentedString(country)).append("\n");
-        sb.append("    business: ").append(toIndentedString(business)).append("\n");
+    sb.append("    country: ").append(toIndentedString(country)).append("\n");
+    sb.append("    business: ").append(toIndentedString(business)).append("\n");
     sb.append("}");
     return sb.toString();
-    }
+  }
 
-    /**
-    * Convert the given object to string with each line indented by 4 spaces
-    * (except the first line).
-    */
-    private String toIndentedString(Object o) {
+  /**
+   * Convert the given object to string with each line indented by 4 spaces
+   * (except the first line).
+   */
+  private String toIndentedString(Object o) {
     if (o == null) {
-    return "null";
+      return "null";
     }
     return o.toString().replace("\n", "\n    ");
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @return URL query string
+   */
+  public String toUrlQueryString() {
+    return toUrlQueryString(null);
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @param prefix prefix of the query string
+   * @return URL query string
+   */
+  public String toUrlQueryString(String prefix) {
+    String suffix = "";
+    String containerSuffix = "";
+    String containerPrefix = "";
+    if (prefix == null) {
+      // style=form, explode=true, e.g. /pet?name=cat&type=manx
+      prefix = "";
+    } else {
+      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+      prefix = prefix + "[";
+      suffix = "]";
+      containerSuffix = "]";
+      containerPrefix = "[";
     }
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @return URL query string
-        */
-        public String toUrlQueryString() {
-        return toUrlQueryString(null);
-        }
+    StringJoiner joiner = new StringJoiner("&");
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @param prefix prefix of the query string
-        * @return URL query string
-        */
-        public String toUrlQueryString(String prefix) {
-        String suffix = "";
-        String containerSuffix = "";
-        String containerPrefix = "";
-        if (prefix == null) {
-        // style=form, explode=true, e.g. /pet?name=cat&type=manx
-        prefix = "";
-        } else {
-        // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
-        prefix = prefix + "[";
-        suffix = "]";
-        containerSuffix = "]";
-        containerPrefix = "[";
-        }
-
-        StringJoiner joiner = new StringJoiner("&");
-
-            // add `country` to the URL query string
-                            if (getCountry() != null) {
-                            try {
-                            joiner.add(String.format("%scountry%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCountry()), "UTF-8").replaceAll("\\+", "%20")));
-                            } catch (UnsupportedEncodingException e) {
-                            // Should never happen, UTF-8 is always supported
-                            throw new RuntimeException(e);
-                            }
-                            }
-
-            // add `business` to the URL query string
-                        if (getBusiness() != null) {
-                        try {
-                        joiner.add(String.format("%sbusiness%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getBusiness()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-        return joiner.toString();
-        }
-
+    // add `country` to the URL query string
+    if (getCountry() != null) {
+      try {
+        joiner.add(String.format("%scountry%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCountry()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
     }
+
+    // add `business` to the URL query string
+    if (getBusiness() != null) {
+      try {
+        joiner.add(String.format("%sbusiness%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getBusiness()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    return joiner.toString();
+  }
+
+}
 

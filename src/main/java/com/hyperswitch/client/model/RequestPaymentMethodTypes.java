@@ -39,355 +39,355 @@ import java.net.URLEncoder;
 import java.util.StringJoiner;
 
 /**
-* RequestPaymentMethodTypes
-*/
-    @JsonPropertyOrder({
-        RequestPaymentMethodTypes.JSON_PROPERTY_PAYMENT_METHOD_TYPE,
-        RequestPaymentMethodTypes.JSON_PROPERTY_PAYMENT_EXPERIENCE,
-        RequestPaymentMethodTypes.JSON_PROPERTY_CARD_NETWORKS,
-        RequestPaymentMethodTypes.JSON_PROPERTY_ACCEPTED_CURRENCIES,
-        RequestPaymentMethodTypes.JSON_PROPERTY_ACCEPTED_COUNTRIES,
-        RequestPaymentMethodTypes.JSON_PROPERTY_MINIMUM_AMOUNT,
-        RequestPaymentMethodTypes.JSON_PROPERTY_MAXIMUM_AMOUNT,
-        RequestPaymentMethodTypes.JSON_PROPERTY_RECURRING_ENABLED,
-        RequestPaymentMethodTypes.JSON_PROPERTY_INSTALLMENT_PAYMENT_ENABLED
-    })
+ * RequestPaymentMethodTypes
+ */
+@JsonPropertyOrder({
+  RequestPaymentMethodTypes.JSON_PROPERTY_PAYMENT_METHOD_TYPE,
+  RequestPaymentMethodTypes.JSON_PROPERTY_PAYMENT_EXPERIENCE,
+  RequestPaymentMethodTypes.JSON_PROPERTY_CARD_NETWORKS,
+  RequestPaymentMethodTypes.JSON_PROPERTY_ACCEPTED_CURRENCIES,
+  RequestPaymentMethodTypes.JSON_PROPERTY_ACCEPTED_COUNTRIES,
+  RequestPaymentMethodTypes.JSON_PROPERTY_MINIMUM_AMOUNT,
+  RequestPaymentMethodTypes.JSON_PROPERTY_MAXIMUM_AMOUNT,
+  RequestPaymentMethodTypes.JSON_PROPERTY_RECURRING_ENABLED,
+  RequestPaymentMethodTypes.JSON_PROPERTY_INSTALLMENT_PAYMENT_ENABLED
+})
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class RequestPaymentMethodTypes {
-        public static final String JSON_PROPERTY_PAYMENT_METHOD_TYPE = "payment_method_type";
-    @javax.annotation.Nonnull
-            private PaymentMethodType paymentMethodType;
+  public static final String JSON_PROPERTY_PAYMENT_METHOD_TYPE = "payment_method_type";
+  @javax.annotation.Nonnull
+  private PaymentMethodType paymentMethodType;
 
-        public static final String JSON_PROPERTY_PAYMENT_EXPERIENCE = "payment_experience";
-    @javax.annotation.Nullable
-            private JsonNullable<PaymentExperience> paymentExperience = JsonNullable.<PaymentExperience>undefined();
+  public static final String JSON_PROPERTY_PAYMENT_EXPERIENCE = "payment_experience";
+  @javax.annotation.Nullable
+  private JsonNullable<PaymentExperience> paymentExperience = JsonNullable.<PaymentExperience>undefined();
 
-        public static final String JSON_PROPERTY_CARD_NETWORKS = "card_networks";
-    @javax.annotation.Nullable
-            private JsonNullable<List<CardNetwork>> cardNetworks = JsonNullable.<List<CardNetwork>>undefined();
+  public static final String JSON_PROPERTY_CARD_NETWORKS = "card_networks";
+  @javax.annotation.Nullable
+  private JsonNullable<List<CardNetwork>> cardNetworks = JsonNullable.<List<CardNetwork>>undefined();
 
-        public static final String JSON_PROPERTY_ACCEPTED_CURRENCIES = "accepted_currencies";
-    @javax.annotation.Nullable
-            private JsonNullable<AcceptedCurrencies> acceptedCurrencies = JsonNullable.<AcceptedCurrencies>undefined();
+  public static final String JSON_PROPERTY_ACCEPTED_CURRENCIES = "accepted_currencies";
+  @javax.annotation.Nullable
+  private JsonNullable<AcceptedCurrencies> acceptedCurrencies = JsonNullable.<AcceptedCurrencies>undefined();
 
-        public static final String JSON_PROPERTY_ACCEPTED_COUNTRIES = "accepted_countries";
-    @javax.annotation.Nullable
-            private JsonNullable<AcceptedCountries> acceptedCountries = JsonNullable.<AcceptedCountries>undefined();
+  public static final String JSON_PROPERTY_ACCEPTED_COUNTRIES = "accepted_countries";
+  @javax.annotation.Nullable
+  private JsonNullable<AcceptedCountries> acceptedCountries = JsonNullable.<AcceptedCountries>undefined();
 
-        public static final String JSON_PROPERTY_MINIMUM_AMOUNT = "minimum_amount";
-    @javax.annotation.Nullable
-            private JsonNullable<Long> minimumAmount = JsonNullable.<Long>undefined();
+  public static final String JSON_PROPERTY_MINIMUM_AMOUNT = "minimum_amount";
+  @javax.annotation.Nullable
+  private JsonNullable<Long> minimumAmount = JsonNullable.<Long>undefined();
 
-        public static final String JSON_PROPERTY_MAXIMUM_AMOUNT = "maximum_amount";
-    @javax.annotation.Nullable
-            private JsonNullable<Long> maximumAmount = JsonNullable.<Long>undefined();
+  public static final String JSON_PROPERTY_MAXIMUM_AMOUNT = "maximum_amount";
+  @javax.annotation.Nullable
+  private JsonNullable<Long> maximumAmount = JsonNullable.<Long>undefined();
 
-        public static final String JSON_PROPERTY_RECURRING_ENABLED = "recurring_enabled";
-    @javax.annotation.Nonnull
-            private Boolean recurringEnabled = true;
+  public static final String JSON_PROPERTY_RECURRING_ENABLED = "recurring_enabled";
+  @javax.annotation.Nonnull
+  private Boolean recurringEnabled = true;
 
-        public static final String JSON_PROPERTY_INSTALLMENT_PAYMENT_ENABLED = "installment_payment_enabled";
-    @javax.annotation.Nonnull
-            private Boolean installmentPaymentEnabled = true;
+  public static final String JSON_PROPERTY_INSTALLMENT_PAYMENT_ENABLED = "installment_payment_enabled";
+  @javax.annotation.Nonnull
+  private Boolean installmentPaymentEnabled = true;
 
-public RequestPaymentMethodTypes() {
-}
+  public RequestPaymentMethodTypes() {
+  }
 
-        public RequestPaymentMethodTypes paymentMethodType(@javax.annotation.Nonnull PaymentMethodType paymentMethodType) {
-        
-        this.paymentMethodType = paymentMethodType;
-        return this;
-        }
+  public RequestPaymentMethodTypes paymentMethodType(@javax.annotation.Nonnull PaymentMethodType paymentMethodType) {
+    
+    this.paymentMethodType = paymentMethodType;
+    return this;
+  }
 
-    /**
-        * Get paymentMethodType
-    * @return paymentMethodType
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_PAYMENT_METHOD_TYPE)
+  /**
+   * Get paymentMethodType
+   * @return paymentMethodType
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_PAYMENT_METHOD_TYPE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public PaymentMethodType getPaymentMethodType() {
-        return paymentMethodType;
-    }
+  public PaymentMethodType getPaymentMethodType() {
+    return paymentMethodType;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_PAYMENT_METHOD_TYPE)
+  @JsonProperty(JSON_PROPERTY_PAYMENT_METHOD_TYPE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setPaymentMethodType(@javax.annotation.Nonnull PaymentMethodType paymentMethodType) {
-            this.paymentMethodType = paymentMethodType;
-        }
+    this.paymentMethodType = paymentMethodType;
+  }
 
-        public RequestPaymentMethodTypes paymentExperience(@javax.annotation.Nullable PaymentExperience paymentExperience) {
-        this.paymentExperience = JsonNullable.<PaymentExperience>of(paymentExperience);
-        
-        return this;
-        }
-
-    /**
-        * Get paymentExperience
-    * @return paymentExperience
-    */
-    @javax.annotation.Nullable
-        @JsonIgnore
+  public RequestPaymentMethodTypes paymentExperience(@javax.annotation.Nullable PaymentExperience paymentExperience) {
+    this.paymentExperience = JsonNullable.<PaymentExperience>of(paymentExperience);
     
-    public PaymentExperience getPaymentExperience() {
-                return paymentExperience.orElse(null);
-    }
+    return this;
+  }
 
-          @JsonProperty(JSON_PROPERTY_PAYMENT_EXPERIENCE)
+  /**
+   * Get paymentExperience
+   * @return paymentExperience
+   */
+  @javax.annotation.Nullable
+  @JsonIgnore
+
+  public PaymentExperience getPaymentExperience() {
+        return paymentExperience.orElse(null);
+  }
+
+  @JsonProperty(JSON_PROPERTY_PAYMENT_EXPERIENCE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-        public JsonNullable<PaymentExperience> getPaymentExperience_JsonNullable() {
-        return paymentExperience;
-        }
+  public JsonNullable<PaymentExperience> getPaymentExperience_JsonNullable() {
+    return paymentExperience;
+  }
+  
+  @JsonProperty(JSON_PROPERTY_PAYMENT_EXPERIENCE)
+  public void setPaymentExperience_JsonNullable(JsonNullable<PaymentExperience> paymentExperience) {
+    this.paymentExperience = paymentExperience;
+  }
+
+  public void setPaymentExperience(@javax.annotation.Nullable PaymentExperience paymentExperience) {
+    this.paymentExperience = JsonNullable.<PaymentExperience>of(paymentExperience);
+  }
+
+  public RequestPaymentMethodTypes cardNetworks(@javax.annotation.Nullable List<CardNetwork> cardNetworks) {
+    this.cardNetworks = JsonNullable.<List<CardNetwork>>of(cardNetworks);
     
-        @JsonProperty(JSON_PROPERTY_PAYMENT_EXPERIENCE)
-        public void setPaymentExperience_JsonNullable(JsonNullable<PaymentExperience> paymentExperience) {
-        this.paymentExperience = paymentExperience;
-        }
+    return this;
+  }
 
-          public void setPaymentExperience(@javax.annotation.Nullable PaymentExperience paymentExperience) {
-            this.paymentExperience = JsonNullable.<PaymentExperience>of(paymentExperience);
-        }
-
-        public RequestPaymentMethodTypes cardNetworks(@javax.annotation.Nullable List<CardNetwork> cardNetworks) {
-        this.cardNetworks = JsonNullable.<List<CardNetwork>>of(cardNetworks);
-        
-        return this;
-        }
-
-            public RequestPaymentMethodTypes addCardNetworksItem(CardNetwork cardNetworksItem) {
-                if (this.cardNetworks == null || !this.cardNetworks.isPresent()) {
-                this.cardNetworks = JsonNullable.<List<CardNetwork>>of(new ArrayList<>());
-                }
-                try {
-                this.cardNetworks.get().add(cardNetworksItem);
-                } catch (java.util.NoSuchElementException e) {
-                // this can never happen, as we make sure above that the value is present
-                }
-                return this;
-            }
-
-    /**
-        * Get cardNetworks
-    * @return cardNetworks
-    */
-    @javax.annotation.Nullable
-        @JsonIgnore
-    
-    public List<CardNetwork> getCardNetworks() {
-                return cardNetworks.orElse(null);
+  public RequestPaymentMethodTypes addCardNetworksItem(CardNetwork cardNetworksItem) {
+    if (this.cardNetworks == null || !this.cardNetworks.isPresent()) {
+      this.cardNetworks = JsonNullable.<List<CardNetwork>>of(new ArrayList<>());
     }
+    try {
+      this.cardNetworks.get().add(cardNetworksItem);
+    } catch (java.util.NoSuchElementException e) {
+      // this can never happen, as we make sure above that the value is present
+    }
+    return this;
+  }
 
-          @JsonProperty(JSON_PROPERTY_CARD_NETWORKS)
+  /**
+   * Get cardNetworks
+   * @return cardNetworks
+   */
+  @javax.annotation.Nullable
+  @JsonIgnore
+
+  public List<CardNetwork> getCardNetworks() {
+        return cardNetworks.orElse(null);
+  }
+
+  @JsonProperty(JSON_PROPERTY_CARD_NETWORKS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-        public JsonNullable<List<CardNetwork>> getCardNetworks_JsonNullable() {
-        return cardNetworks;
-        }
+  public JsonNullable<List<CardNetwork>> getCardNetworks_JsonNullable() {
+    return cardNetworks;
+  }
+  
+  @JsonProperty(JSON_PROPERTY_CARD_NETWORKS)
+  public void setCardNetworks_JsonNullable(JsonNullable<List<CardNetwork>> cardNetworks) {
+    this.cardNetworks = cardNetworks;
+  }
+
+  public void setCardNetworks(@javax.annotation.Nullable List<CardNetwork> cardNetworks) {
+    this.cardNetworks = JsonNullable.<List<CardNetwork>>of(cardNetworks);
+  }
+
+  public RequestPaymentMethodTypes acceptedCurrencies(@javax.annotation.Nullable AcceptedCurrencies acceptedCurrencies) {
+    this.acceptedCurrencies = JsonNullable.<AcceptedCurrencies>of(acceptedCurrencies);
     
-        @JsonProperty(JSON_PROPERTY_CARD_NETWORKS)
-        public void setCardNetworks_JsonNullable(JsonNullable<List<CardNetwork>> cardNetworks) {
-        this.cardNetworks = cardNetworks;
-        }
+    return this;
+  }
 
-          public void setCardNetworks(@javax.annotation.Nullable List<CardNetwork> cardNetworks) {
-            this.cardNetworks = JsonNullable.<List<CardNetwork>>of(cardNetworks);
-        }
+  /**
+   * Get acceptedCurrencies
+   * @return acceptedCurrencies
+   */
+  @javax.annotation.Nullable
+  @JsonIgnore
 
-        public RequestPaymentMethodTypes acceptedCurrencies(@javax.annotation.Nullable AcceptedCurrencies acceptedCurrencies) {
-        this.acceptedCurrencies = JsonNullable.<AcceptedCurrencies>of(acceptedCurrencies);
-        
-        return this;
-        }
+  public AcceptedCurrencies getAcceptedCurrencies() {
+        return acceptedCurrencies.orElse(null);
+  }
 
-    /**
-        * Get acceptedCurrencies
-    * @return acceptedCurrencies
-    */
-    @javax.annotation.Nullable
-        @JsonIgnore
-    
-    public AcceptedCurrencies getAcceptedCurrencies() {
-                return acceptedCurrencies.orElse(null);
-    }
-
-          @JsonProperty(JSON_PROPERTY_ACCEPTED_CURRENCIES)
+  @JsonProperty(JSON_PROPERTY_ACCEPTED_CURRENCIES)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-        public JsonNullable<AcceptedCurrencies> getAcceptedCurrencies_JsonNullable() {
-        return acceptedCurrencies;
-        }
+  public JsonNullable<AcceptedCurrencies> getAcceptedCurrencies_JsonNullable() {
+    return acceptedCurrencies;
+  }
+  
+  @JsonProperty(JSON_PROPERTY_ACCEPTED_CURRENCIES)
+  public void setAcceptedCurrencies_JsonNullable(JsonNullable<AcceptedCurrencies> acceptedCurrencies) {
+    this.acceptedCurrencies = acceptedCurrencies;
+  }
+
+  public void setAcceptedCurrencies(@javax.annotation.Nullable AcceptedCurrencies acceptedCurrencies) {
+    this.acceptedCurrencies = JsonNullable.<AcceptedCurrencies>of(acceptedCurrencies);
+  }
+
+  public RequestPaymentMethodTypes acceptedCountries(@javax.annotation.Nullable AcceptedCountries acceptedCountries) {
+    this.acceptedCountries = JsonNullable.<AcceptedCountries>of(acceptedCountries);
     
-        @JsonProperty(JSON_PROPERTY_ACCEPTED_CURRENCIES)
-        public void setAcceptedCurrencies_JsonNullable(JsonNullable<AcceptedCurrencies> acceptedCurrencies) {
-        this.acceptedCurrencies = acceptedCurrencies;
-        }
+    return this;
+  }
 
-          public void setAcceptedCurrencies(@javax.annotation.Nullable AcceptedCurrencies acceptedCurrencies) {
-            this.acceptedCurrencies = JsonNullable.<AcceptedCurrencies>of(acceptedCurrencies);
-        }
+  /**
+   * Get acceptedCountries
+   * @return acceptedCountries
+   */
+  @javax.annotation.Nullable
+  @JsonIgnore
 
-        public RequestPaymentMethodTypes acceptedCountries(@javax.annotation.Nullable AcceptedCountries acceptedCountries) {
-        this.acceptedCountries = JsonNullable.<AcceptedCountries>of(acceptedCountries);
-        
-        return this;
-        }
+  public AcceptedCountries getAcceptedCountries() {
+        return acceptedCountries.orElse(null);
+  }
 
-    /**
-        * Get acceptedCountries
-    * @return acceptedCountries
-    */
-    @javax.annotation.Nullable
-        @JsonIgnore
-    
-    public AcceptedCountries getAcceptedCountries() {
-                return acceptedCountries.orElse(null);
-    }
-
-          @JsonProperty(JSON_PROPERTY_ACCEPTED_COUNTRIES)
+  @JsonProperty(JSON_PROPERTY_ACCEPTED_COUNTRIES)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-        public JsonNullable<AcceptedCountries> getAcceptedCountries_JsonNullable() {
-        return acceptedCountries;
-        }
+  public JsonNullable<AcceptedCountries> getAcceptedCountries_JsonNullable() {
+    return acceptedCountries;
+  }
+  
+  @JsonProperty(JSON_PROPERTY_ACCEPTED_COUNTRIES)
+  public void setAcceptedCountries_JsonNullable(JsonNullable<AcceptedCountries> acceptedCountries) {
+    this.acceptedCountries = acceptedCountries;
+  }
+
+  public void setAcceptedCountries(@javax.annotation.Nullable AcceptedCountries acceptedCountries) {
+    this.acceptedCountries = JsonNullable.<AcceptedCountries>of(acceptedCountries);
+  }
+
+  public RequestPaymentMethodTypes minimumAmount(@javax.annotation.Nullable Long minimumAmount) {
+    this.minimumAmount = JsonNullable.<Long>of(minimumAmount);
     
-        @JsonProperty(JSON_PROPERTY_ACCEPTED_COUNTRIES)
-        public void setAcceptedCountries_JsonNullable(JsonNullable<AcceptedCountries> acceptedCountries) {
-        this.acceptedCountries = acceptedCountries;
-        }
+    return this;
+  }
 
-          public void setAcceptedCountries(@javax.annotation.Nullable AcceptedCountries acceptedCountries) {
-            this.acceptedCountries = JsonNullable.<AcceptedCountries>of(acceptedCountries);
-        }
+  /**
+   * This Unit struct represents MinorUnit in which core amount works
+   * @return minimumAmount
+   */
+  @javax.annotation.Nullable
+  @JsonIgnore
 
-        public RequestPaymentMethodTypes minimumAmount(@javax.annotation.Nullable Long minimumAmount) {
-        this.minimumAmount = JsonNullable.<Long>of(minimumAmount);
-        
-        return this;
-        }
+  public Long getMinimumAmount() {
+        return minimumAmount.orElse(null);
+  }
 
-    /**
-        * This Unit struct represents MinorUnit in which core amount works
-    * @return minimumAmount
-    */
-    @javax.annotation.Nullable
-        @JsonIgnore
-    
-    public Long getMinimumAmount() {
-                return minimumAmount.orElse(null);
-    }
-
-          @JsonProperty(JSON_PROPERTY_MINIMUM_AMOUNT)
+  @JsonProperty(JSON_PROPERTY_MINIMUM_AMOUNT)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-        public JsonNullable<Long> getMinimumAmount_JsonNullable() {
-        return minimumAmount;
-        }
+  public JsonNullable<Long> getMinimumAmount_JsonNullable() {
+    return minimumAmount;
+  }
+  
+  @JsonProperty(JSON_PROPERTY_MINIMUM_AMOUNT)
+  public void setMinimumAmount_JsonNullable(JsonNullable<Long> minimumAmount) {
+    this.minimumAmount = minimumAmount;
+  }
+
+  public void setMinimumAmount(@javax.annotation.Nullable Long minimumAmount) {
+    this.minimumAmount = JsonNullable.<Long>of(minimumAmount);
+  }
+
+  public RequestPaymentMethodTypes maximumAmount(@javax.annotation.Nullable Long maximumAmount) {
+    this.maximumAmount = JsonNullable.<Long>of(maximumAmount);
     
-        @JsonProperty(JSON_PROPERTY_MINIMUM_AMOUNT)
-        public void setMinimumAmount_JsonNullable(JsonNullable<Long> minimumAmount) {
-        this.minimumAmount = minimumAmount;
-        }
+    return this;
+  }
 
-          public void setMinimumAmount(@javax.annotation.Nullable Long minimumAmount) {
-            this.minimumAmount = JsonNullable.<Long>of(minimumAmount);
-        }
+  /**
+   * This Unit struct represents MinorUnit in which core amount works
+   * @return maximumAmount
+   */
+  @javax.annotation.Nullable
+  @JsonIgnore
 
-        public RequestPaymentMethodTypes maximumAmount(@javax.annotation.Nullable Long maximumAmount) {
-        this.maximumAmount = JsonNullable.<Long>of(maximumAmount);
-        
-        return this;
-        }
+  public Long getMaximumAmount() {
+        return maximumAmount.orElse(null);
+  }
 
-    /**
-        * This Unit struct represents MinorUnit in which core amount works
-    * @return maximumAmount
-    */
-    @javax.annotation.Nullable
-        @JsonIgnore
-    
-    public Long getMaximumAmount() {
-                return maximumAmount.orElse(null);
-    }
-
-          @JsonProperty(JSON_PROPERTY_MAXIMUM_AMOUNT)
+  @JsonProperty(JSON_PROPERTY_MAXIMUM_AMOUNT)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-        public JsonNullable<Long> getMaximumAmount_JsonNullable() {
-        return maximumAmount;
-        }
+  public JsonNullable<Long> getMaximumAmount_JsonNullable() {
+    return maximumAmount;
+  }
+  
+  @JsonProperty(JSON_PROPERTY_MAXIMUM_AMOUNT)
+  public void setMaximumAmount_JsonNullable(JsonNullable<Long> maximumAmount) {
+    this.maximumAmount = maximumAmount;
+  }
+
+  public void setMaximumAmount(@javax.annotation.Nullable Long maximumAmount) {
+    this.maximumAmount = JsonNullable.<Long>of(maximumAmount);
+  }
+
+  public RequestPaymentMethodTypes recurringEnabled(@javax.annotation.Nonnull Boolean recurringEnabled) {
     
-        @JsonProperty(JSON_PROPERTY_MAXIMUM_AMOUNT)
-        public void setMaximumAmount_JsonNullable(JsonNullable<Long> maximumAmount) {
-        this.maximumAmount = maximumAmount;
-        }
+    this.recurringEnabled = recurringEnabled;
+    return this;
+  }
 
-          public void setMaximumAmount(@javax.annotation.Nullable Long maximumAmount) {
-            this.maximumAmount = JsonNullable.<Long>of(maximumAmount);
-        }
-
-        public RequestPaymentMethodTypes recurringEnabled(@javax.annotation.Nonnull Boolean recurringEnabled) {
-        
-        this.recurringEnabled = recurringEnabled;
-        return this;
-        }
-
-    /**
-        * Boolean to enable recurring payments / mandates. Default is true.
-    * @return recurringEnabled
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_RECURRING_ENABLED)
+  /**
+   * Boolean to enable recurring payments / mandates. Default is true.
+   * @return recurringEnabled
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_RECURRING_ENABLED)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public Boolean getRecurringEnabled() {
-        return recurringEnabled;
-    }
+  public Boolean getRecurringEnabled() {
+    return recurringEnabled;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_RECURRING_ENABLED)
+  @JsonProperty(JSON_PROPERTY_RECURRING_ENABLED)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setRecurringEnabled(@javax.annotation.Nonnull Boolean recurringEnabled) {
-            this.recurringEnabled = recurringEnabled;
-        }
+    this.recurringEnabled = recurringEnabled;
+  }
 
-        public RequestPaymentMethodTypes installmentPaymentEnabled(@javax.annotation.Nonnull Boolean installmentPaymentEnabled) {
-        
-        this.installmentPaymentEnabled = installmentPaymentEnabled;
-        return this;
-        }
+  public RequestPaymentMethodTypes installmentPaymentEnabled(@javax.annotation.Nonnull Boolean installmentPaymentEnabled) {
+    
+    this.installmentPaymentEnabled = installmentPaymentEnabled;
+    return this;
+  }
 
-    /**
-        * Boolean to enable installment / EMI / BNPL payments. Default is true.
-    * @return installmentPaymentEnabled
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_INSTALLMENT_PAYMENT_ENABLED)
+  /**
+   * Boolean to enable installment / EMI / BNPL payments. Default is true.
+   * @return installmentPaymentEnabled
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_INSTALLMENT_PAYMENT_ENABLED)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public Boolean getInstallmentPaymentEnabled() {
-        return installmentPaymentEnabled;
-    }
+  public Boolean getInstallmentPaymentEnabled() {
+    return installmentPaymentEnabled;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_INSTALLMENT_PAYMENT_ENABLED)
+  @JsonProperty(JSON_PROPERTY_INSTALLMENT_PAYMENT_ENABLED)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setInstallmentPaymentEnabled(@javax.annotation.Nonnull Boolean installmentPaymentEnabled) {
-            this.installmentPaymentEnabled = installmentPaymentEnabled;
-        }
+    this.installmentPaymentEnabled = installmentPaymentEnabled;
+  }
 
-@Override
-public boolean equals(Object o) {
+  @Override
+  public boolean equals(Object o) {
     if (this == o) {
-    return true;
+      return true;
     }
     if (o == null || getClass() != o.getClass()) {
-    return false;
+      return false;
     }
-        RequestPaymentMethodTypes requestPaymentMethodTypes = (RequestPaymentMethodTypes) o;
-        return Objects.equals(this.paymentMethodType, requestPaymentMethodTypes.paymentMethodType) &&
+    RequestPaymentMethodTypes requestPaymentMethodTypes = (RequestPaymentMethodTypes) o;
+    return Objects.equals(this.paymentMethodType, requestPaymentMethodTypes.paymentMethodType) &&
         equalsNullable(this.paymentExperience, requestPaymentMethodTypes.paymentExperience) &&
         equalsNullable(this.cardNetworks, requestPaymentMethodTypes.cardNetworks) &&
         equalsNullable(this.acceptedCurrencies, requestPaymentMethodTypes.acceptedCurrencies) &&
@@ -396,172 +396,172 @@ public boolean equals(Object o) {
         equalsNullable(this.maximumAmount, requestPaymentMethodTypes.maximumAmount) &&
         Objects.equals(this.recurringEnabled, requestPaymentMethodTypes.recurringEnabled) &&
         Objects.equals(this.installmentPaymentEnabled, requestPaymentMethodTypes.installmentPaymentEnabled);
-}
+  }
 
-    private static <T> boolean equalsNullable(JsonNullable<T> a, JsonNullable<T> b) {
-        return a == b || (a != null && b != null && a.isPresent() && b.isPresent() && Objects.deepEquals(a.get(), b.get()));
-        }
+  private static <T> boolean equalsNullable(JsonNullable<T> a, JsonNullable<T> b) {
+    return a == b || (a != null && b != null && a.isPresent() && b.isPresent() && Objects.deepEquals(a.get(), b.get()));
+  }
 
-    @Override
-    public int hashCode() {
-        return Objects.hash(paymentMethodType, hashCodeNullable(paymentExperience), hashCodeNullable(cardNetworks), hashCodeNullable(acceptedCurrencies), hashCodeNullable(acceptedCountries), hashCodeNullable(minimumAmount), hashCodeNullable(maximumAmount), recurringEnabled, installmentPaymentEnabled);
+  @Override
+  public int hashCode() {
+    return Objects.hash(paymentMethodType, hashCodeNullable(paymentExperience), hashCodeNullable(cardNetworks), hashCodeNullable(acceptedCurrencies), hashCodeNullable(acceptedCountries), hashCodeNullable(minimumAmount), hashCodeNullable(maximumAmount), recurringEnabled, installmentPaymentEnabled);
+  }
+
+  private static <T> int hashCodeNullable(JsonNullable<T> a) {
+    if (a == null) {
+      return 1;
     }
+    return a.isPresent() ? Arrays.deepHashCode(new Object[]{a.get()}) : 31;
+  }
 
-        private static <T> int hashCodeNullable(JsonNullable<T> a) {
-        if (a == null) {
-        return 1;
-        }
-        return a.isPresent() ? Arrays.deepHashCode(new Object[]{a.get()}) : 31;
-        }
-
-    @Override
-    public String toString() {
+  @Override
+  public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class RequestPaymentMethodTypes {\n");
-        sb.append("    paymentMethodType: ").append(toIndentedString(paymentMethodType)).append("\n");
-        sb.append("    paymentExperience: ").append(toIndentedString(paymentExperience)).append("\n");
-        sb.append("    cardNetworks: ").append(toIndentedString(cardNetworks)).append("\n");
-        sb.append("    acceptedCurrencies: ").append(toIndentedString(acceptedCurrencies)).append("\n");
-        sb.append("    acceptedCountries: ").append(toIndentedString(acceptedCountries)).append("\n");
-        sb.append("    minimumAmount: ").append(toIndentedString(minimumAmount)).append("\n");
-        sb.append("    maximumAmount: ").append(toIndentedString(maximumAmount)).append("\n");
-        sb.append("    recurringEnabled: ").append(toIndentedString(recurringEnabled)).append("\n");
-        sb.append("    installmentPaymentEnabled: ").append(toIndentedString(installmentPaymentEnabled)).append("\n");
+    sb.append("    paymentMethodType: ").append(toIndentedString(paymentMethodType)).append("\n");
+    sb.append("    paymentExperience: ").append(toIndentedString(paymentExperience)).append("\n");
+    sb.append("    cardNetworks: ").append(toIndentedString(cardNetworks)).append("\n");
+    sb.append("    acceptedCurrencies: ").append(toIndentedString(acceptedCurrencies)).append("\n");
+    sb.append("    acceptedCountries: ").append(toIndentedString(acceptedCountries)).append("\n");
+    sb.append("    minimumAmount: ").append(toIndentedString(minimumAmount)).append("\n");
+    sb.append("    maximumAmount: ").append(toIndentedString(maximumAmount)).append("\n");
+    sb.append("    recurringEnabled: ").append(toIndentedString(recurringEnabled)).append("\n");
+    sb.append("    installmentPaymentEnabled: ").append(toIndentedString(installmentPaymentEnabled)).append("\n");
     sb.append("}");
     return sb.toString();
-    }
+  }
 
-    /**
-    * Convert the given object to string with each line indented by 4 spaces
-    * (except the first line).
-    */
-    private String toIndentedString(Object o) {
+  /**
+   * Convert the given object to string with each line indented by 4 spaces
+   * (except the first line).
+   */
+  private String toIndentedString(Object o) {
     if (o == null) {
-    return "null";
+      return "null";
     }
     return o.toString().replace("\n", "\n    ");
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @return URL query string
+   */
+  public String toUrlQueryString() {
+    return toUrlQueryString(null);
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @param prefix prefix of the query string
+   * @return URL query string
+   */
+  public String toUrlQueryString(String prefix) {
+    String suffix = "";
+    String containerSuffix = "";
+    String containerPrefix = "";
+    if (prefix == null) {
+      // style=form, explode=true, e.g. /pet?name=cat&type=manx
+      prefix = "";
+    } else {
+      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+      prefix = prefix + "[";
+      suffix = "]";
+      containerSuffix = "]";
+      containerPrefix = "[";
     }
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @return URL query string
-        */
-        public String toUrlQueryString() {
-        return toUrlQueryString(null);
-        }
+    StringJoiner joiner = new StringJoiner("&");
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @param prefix prefix of the query string
-        * @return URL query string
-        */
-        public String toUrlQueryString(String prefix) {
-        String suffix = "";
-        String containerSuffix = "";
-        String containerPrefix = "";
-        if (prefix == null) {
-        // style=form, explode=true, e.g. /pet?name=cat&type=manx
-        prefix = "";
-        } else {
-        // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
-        prefix = prefix + "[";
-        suffix = "]";
-        containerSuffix = "]";
-        containerPrefix = "[";
-        }
-
-        StringJoiner joiner = new StringJoiner("&");
-
-            // add `payment_method_type` to the URL query string
-                            if (getPaymentMethodType() != null) {
-                            try {
-                            joiner.add(String.format("%spayment_method_type%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getPaymentMethodType()), "UTF-8").replaceAll("\\+", "%20")));
-                            } catch (UnsupportedEncodingException e) {
-                            // Should never happen, UTF-8 is always supported
-                            throw new RuntimeException(e);
-                            }
-                            }
-
-            // add `payment_experience` to the URL query string
-                            if (getPaymentExperience() != null) {
-                            try {
-                            joiner.add(String.format("%spayment_experience%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getPaymentExperience()), "UTF-8").replaceAll("\\+", "%20")));
-                            } catch (UnsupportedEncodingException e) {
-                            // Should never happen, UTF-8 is always supported
-                            throw new RuntimeException(e);
-                            }
-                            }
-
-            // add `card_networks` to the URL query string
-                            if (getCardNetworks() != null) {
-                            for (int i = 0; i < getCardNetworks().size(); i++) {
-                            if (getCardNetworks().get(i) != null) {
-                            try {
-                            joiner.add(String.format("%scard_networks%s%s=%s", prefix, suffix,
-                            "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix),
-                            URLEncoder.encode(String.valueOf(getCardNetworks().get(i)), "UTF-8").replaceAll("\\+", "%20")));
-                            } catch (UnsupportedEncodingException e) {
-                            // Should never happen, UTF-8 is always supported
-                            throw new RuntimeException(e);
-                            }
-                            }
-                            }
-                            }
-
-            // add `accepted_currencies` to the URL query string
-                            if (getAcceptedCurrencies() != null) {
-                            joiner.add(getAcceptedCurrencies().toUrlQueryString(prefix + "accepted_currencies" + suffix));
-                            }
-
-            // add `accepted_countries` to the URL query string
-                            if (getAcceptedCountries() != null) {
-                            joiner.add(getAcceptedCountries().toUrlQueryString(prefix + "accepted_countries" + suffix));
-                            }
-
-            // add `minimum_amount` to the URL query string
-                        if (getMinimumAmount() != null) {
-                        try {
-                        joiner.add(String.format("%sminimum_amount%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getMinimumAmount()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-            // add `maximum_amount` to the URL query string
-                        if (getMaximumAmount() != null) {
-                        try {
-                        joiner.add(String.format("%smaximum_amount%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getMaximumAmount()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-            // add `recurring_enabled` to the URL query string
-                        if (getRecurringEnabled() != null) {
-                        try {
-                        joiner.add(String.format("%srecurring_enabled%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getRecurringEnabled()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-            // add `installment_payment_enabled` to the URL query string
-                        if (getInstallmentPaymentEnabled() != null) {
-                        try {
-                        joiner.add(String.format("%sinstallment_payment_enabled%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getInstallmentPaymentEnabled()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-        return joiner.toString();
-        }
-
+    // add `payment_method_type` to the URL query string
+    if (getPaymentMethodType() != null) {
+      try {
+        joiner.add(String.format("%spayment_method_type%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getPaymentMethodType()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
     }
+
+    // add `payment_experience` to the URL query string
+    if (getPaymentExperience() != null) {
+      try {
+        joiner.add(String.format("%spayment_experience%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getPaymentExperience()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `card_networks` to the URL query string
+    if (getCardNetworks() != null) {
+      for (int i = 0; i < getCardNetworks().size(); i++) {
+        if (getCardNetworks().get(i) != null) {
+          try {
+            joiner.add(String.format("%scard_networks%s%s=%s", prefix, suffix,
+                "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix),
+                URLEncoder.encode(String.valueOf(getCardNetworks().get(i)), "UTF-8").replaceAll("\\+", "%20")));
+          } catch (UnsupportedEncodingException e) {
+            // Should never happen, UTF-8 is always supported
+            throw new RuntimeException(e);
+          }
+        }
+      }
+    }
+
+    // add `accepted_currencies` to the URL query string
+    if (getAcceptedCurrencies() != null) {
+      joiner.add(getAcceptedCurrencies().toUrlQueryString(prefix + "accepted_currencies" + suffix));
+    }
+
+    // add `accepted_countries` to the URL query string
+    if (getAcceptedCountries() != null) {
+      joiner.add(getAcceptedCountries().toUrlQueryString(prefix + "accepted_countries" + suffix));
+    }
+
+    // add `minimum_amount` to the URL query string
+    if (getMinimumAmount() != null) {
+      try {
+        joiner.add(String.format("%sminimum_amount%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getMinimumAmount()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `maximum_amount` to the URL query string
+    if (getMaximumAmount() != null) {
+      try {
+        joiner.add(String.format("%smaximum_amount%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getMaximumAmount()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `recurring_enabled` to the URL query string
+    if (getRecurringEnabled() != null) {
+      try {
+        joiner.add(String.format("%srecurring_enabled%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getRecurringEnabled()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `installment_payment_enabled` to the URL query string
+    if (getInstallmentPaymentEnabled() != null) {
+      try {
+        joiner.add(String.format("%sinstallment_payment_enabled%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getInstallmentPaymentEnabled()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    return joiner.toString();
+  }
+
+}
 

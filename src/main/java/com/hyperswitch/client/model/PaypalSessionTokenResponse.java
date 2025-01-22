@@ -28,205 +28,205 @@ import java.net.URLEncoder;
 import java.util.StringJoiner;
 
 /**
-* PaypalSessionTokenResponse
-*/
-    @JsonPropertyOrder({
-        PaypalSessionTokenResponse.JSON_PROPERTY_CONNECTOR,
-        PaypalSessionTokenResponse.JSON_PROPERTY_SESSION_TOKEN,
-        PaypalSessionTokenResponse.JSON_PROPERTY_SDK_NEXT_ACTION
-    })
+ * PaypalSessionTokenResponse
+ */
+@JsonPropertyOrder({
+  PaypalSessionTokenResponse.JSON_PROPERTY_CONNECTOR,
+  PaypalSessionTokenResponse.JSON_PROPERTY_SESSION_TOKEN,
+  PaypalSessionTokenResponse.JSON_PROPERTY_SDK_NEXT_ACTION
+})
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class PaypalSessionTokenResponse {
-        public static final String JSON_PROPERTY_CONNECTOR = "connector";
-    @javax.annotation.Nonnull
-            private String connector;
+  public static final String JSON_PROPERTY_CONNECTOR = "connector";
+  @javax.annotation.Nonnull
+  private String connector;
 
-        public static final String JSON_PROPERTY_SESSION_TOKEN = "session_token";
-    @javax.annotation.Nonnull
-            private String sessionToken;
+  public static final String JSON_PROPERTY_SESSION_TOKEN = "session_token";
+  @javax.annotation.Nonnull
+  private String sessionToken;
 
-        public static final String JSON_PROPERTY_SDK_NEXT_ACTION = "sdk_next_action";
-    @javax.annotation.Nonnull
-            private SdkNextAction sdkNextAction;
+  public static final String JSON_PROPERTY_SDK_NEXT_ACTION = "sdk_next_action";
+  @javax.annotation.Nonnull
+  private SdkNextAction sdkNextAction;
 
-public PaypalSessionTokenResponse() {
-}
+  public PaypalSessionTokenResponse() {
+  }
 
-        public PaypalSessionTokenResponse connector(@javax.annotation.Nonnull String connector) {
-        
-        this.connector = connector;
-        return this;
-        }
+  public PaypalSessionTokenResponse connector(@javax.annotation.Nonnull String connector) {
+    
+    this.connector = connector;
+    return this;
+  }
 
-    /**
-        * Name of the connector
-    * @return connector
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_CONNECTOR)
+  /**
+   * Name of the connector
+   * @return connector
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_CONNECTOR)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public String getConnector() {
-        return connector;
-    }
+  public String getConnector() {
+    return connector;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_CONNECTOR)
+  @JsonProperty(JSON_PROPERTY_CONNECTOR)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setConnector(@javax.annotation.Nonnull String connector) {
-            this.connector = connector;
-        }
+    this.connector = connector;
+  }
 
-        public PaypalSessionTokenResponse sessionToken(@javax.annotation.Nonnull String sessionToken) {
-        
-        this.sessionToken = sessionToken;
-        return this;
-        }
+  public PaypalSessionTokenResponse sessionToken(@javax.annotation.Nonnull String sessionToken) {
+    
+    this.sessionToken = sessionToken;
+    return this;
+  }
 
-    /**
-        * The session token for PayPal
-    * @return sessionToken
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_SESSION_TOKEN)
+  /**
+   * The session token for PayPal
+   * @return sessionToken
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_SESSION_TOKEN)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public String getSessionToken() {
-        return sessionToken;
-    }
+  public String getSessionToken() {
+    return sessionToken;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_SESSION_TOKEN)
+  @JsonProperty(JSON_PROPERTY_SESSION_TOKEN)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setSessionToken(@javax.annotation.Nonnull String sessionToken) {
-            this.sessionToken = sessionToken;
-        }
+    this.sessionToken = sessionToken;
+  }
 
-        public PaypalSessionTokenResponse sdkNextAction(@javax.annotation.Nonnull SdkNextAction sdkNextAction) {
-        
-        this.sdkNextAction = sdkNextAction;
-        return this;
-        }
+  public PaypalSessionTokenResponse sdkNextAction(@javax.annotation.Nonnull SdkNextAction sdkNextAction) {
+    
+    this.sdkNextAction = sdkNextAction;
+    return this;
+  }
 
-    /**
-        * Get sdkNextAction
-    * @return sdkNextAction
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_SDK_NEXT_ACTION)
+  /**
+   * Get sdkNextAction
+   * @return sdkNextAction
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_SDK_NEXT_ACTION)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public SdkNextAction getSdkNextAction() {
-        return sdkNextAction;
-    }
+  public SdkNextAction getSdkNextAction() {
+    return sdkNextAction;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_SDK_NEXT_ACTION)
+  @JsonProperty(JSON_PROPERTY_SDK_NEXT_ACTION)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setSdkNextAction(@javax.annotation.Nonnull SdkNextAction sdkNextAction) {
-            this.sdkNextAction = sdkNextAction;
-        }
+    this.sdkNextAction = sdkNextAction;
+  }
 
-@Override
-public boolean equals(Object o) {
+  @Override
+  public boolean equals(Object o) {
     if (this == o) {
-    return true;
+      return true;
     }
     if (o == null || getClass() != o.getClass()) {
-    return false;
+      return false;
     }
-        PaypalSessionTokenResponse paypalSessionTokenResponse = (PaypalSessionTokenResponse) o;
-        return Objects.equals(this.connector, paypalSessionTokenResponse.connector) &&
+    PaypalSessionTokenResponse paypalSessionTokenResponse = (PaypalSessionTokenResponse) o;
+    return Objects.equals(this.connector, paypalSessionTokenResponse.connector) &&
         Objects.equals(this.sessionToken, paypalSessionTokenResponse.sessionToken) &&
         Objects.equals(this.sdkNextAction, paypalSessionTokenResponse.sdkNextAction);
-}
+  }
 
-    @Override
-    public int hashCode() {
-        return Objects.hash(connector, sessionToken, sdkNextAction);
-    }
+  @Override
+  public int hashCode() {
+    return Objects.hash(connector, sessionToken, sdkNextAction);
+  }
 
-    @Override
-    public String toString() {
+  @Override
+  public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class PaypalSessionTokenResponse {\n");
-        sb.append("    connector: ").append(toIndentedString(connector)).append("\n");
-        sb.append("    sessionToken: ").append(toIndentedString(sessionToken)).append("\n");
-        sb.append("    sdkNextAction: ").append(toIndentedString(sdkNextAction)).append("\n");
+    sb.append("    connector: ").append(toIndentedString(connector)).append("\n");
+    sb.append("    sessionToken: ").append(toIndentedString(sessionToken)).append("\n");
+    sb.append("    sdkNextAction: ").append(toIndentedString(sdkNextAction)).append("\n");
     sb.append("}");
     return sb.toString();
-    }
+  }
 
-    /**
-    * Convert the given object to string with each line indented by 4 spaces
-    * (except the first line).
-    */
-    private String toIndentedString(Object o) {
+  /**
+   * Convert the given object to string with each line indented by 4 spaces
+   * (except the first line).
+   */
+  private String toIndentedString(Object o) {
     if (o == null) {
-    return "null";
+      return "null";
     }
     return o.toString().replace("\n", "\n    ");
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @return URL query string
+   */
+  public String toUrlQueryString() {
+    return toUrlQueryString(null);
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @param prefix prefix of the query string
+   * @return URL query string
+   */
+  public String toUrlQueryString(String prefix) {
+    String suffix = "";
+    String containerSuffix = "";
+    String containerPrefix = "";
+    if (prefix == null) {
+      // style=form, explode=true, e.g. /pet?name=cat&type=manx
+      prefix = "";
+    } else {
+      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+      prefix = prefix + "[";
+      suffix = "]";
+      containerSuffix = "]";
+      containerPrefix = "[";
     }
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @return URL query string
-        */
-        public String toUrlQueryString() {
-        return toUrlQueryString(null);
-        }
+    StringJoiner joiner = new StringJoiner("&");
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @param prefix prefix of the query string
-        * @return URL query string
-        */
-        public String toUrlQueryString(String prefix) {
-        String suffix = "";
-        String containerSuffix = "";
-        String containerPrefix = "";
-        if (prefix == null) {
-        // style=form, explode=true, e.g. /pet?name=cat&type=manx
-        prefix = "";
-        } else {
-        // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
-        prefix = prefix + "[";
-        suffix = "]";
-        containerSuffix = "]";
-        containerPrefix = "[";
-        }
-
-        StringJoiner joiner = new StringJoiner("&");
-
-            // add `connector` to the URL query string
-                        if (getConnector() != null) {
-                        try {
-                        joiner.add(String.format("%sconnector%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getConnector()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-            // add `session_token` to the URL query string
-                        if (getSessionToken() != null) {
-                        try {
-                        joiner.add(String.format("%ssession_token%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getSessionToken()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-            // add `sdk_next_action` to the URL query string
-                            if (getSdkNextAction() != null) {
-                            joiner.add(getSdkNextAction().toUrlQueryString(prefix + "sdk_next_action" + suffix));
-                            }
-
-        return joiner.toString();
-        }
-
+    // add `connector` to the URL query string
+    if (getConnector() != null) {
+      try {
+        joiner.add(String.format("%sconnector%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getConnector()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
     }
+
+    // add `session_token` to the URL query string
+    if (getSessionToken() != null) {
+      try {
+        joiner.add(String.format("%ssession_token%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getSessionToken()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `sdk_next_action` to the URL query string
+    if (getSdkNextAction() != null) {
+      joiner.add(getSdkNextAction().toUrlQueryString(prefix + "sdk_next_action" + suffix));
+    }
+
+    return joiner.toString();
+  }
+
+}
 

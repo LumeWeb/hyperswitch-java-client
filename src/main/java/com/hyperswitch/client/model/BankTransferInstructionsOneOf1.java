@@ -28,122 +28,122 @@ import java.net.URLEncoder;
 import java.util.StringJoiner;
 
 /**
-* BankTransferInstructionsOneOf1
-*/
-    @JsonPropertyOrder({
-        BankTransferInstructionsOneOf1.JSON_PROPERTY_ACH_CREDIT_TRANSFER
-    })
-            @JsonTypeName("BankTransferInstructions_oneOf_1")
+ * BankTransferInstructionsOneOf1
+ */
+@JsonPropertyOrder({
+  BankTransferInstructionsOneOf1.JSON_PROPERTY_ACH_CREDIT_TRANSFER
+})
+@JsonTypeName("BankTransferInstructions_oneOf_1")
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class BankTransferInstructionsOneOf1 {
-        public static final String JSON_PROPERTY_ACH_CREDIT_TRANSFER = "ach_credit_transfer";
-    @javax.annotation.Nonnull
-            private AchTransfer achCreditTransfer;
+  public static final String JSON_PROPERTY_ACH_CREDIT_TRANSFER = "ach_credit_transfer";
+  @javax.annotation.Nonnull
+  private AchTransfer achCreditTransfer;
 
-public BankTransferInstructionsOneOf1() {
-}
+  public BankTransferInstructionsOneOf1() {
+  }
 
-        public BankTransferInstructionsOneOf1 achCreditTransfer(@javax.annotation.Nonnull AchTransfer achCreditTransfer) {
-        
-        this.achCreditTransfer = achCreditTransfer;
-        return this;
-        }
+  public BankTransferInstructionsOneOf1 achCreditTransfer(@javax.annotation.Nonnull AchTransfer achCreditTransfer) {
+    
+    this.achCreditTransfer = achCreditTransfer;
+    return this;
+  }
 
-    /**
-        * Get achCreditTransfer
-    * @return achCreditTransfer
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_ACH_CREDIT_TRANSFER)
+  /**
+   * Get achCreditTransfer
+   * @return achCreditTransfer
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_ACH_CREDIT_TRANSFER)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public AchTransfer getAchCreditTransfer() {
-        return achCreditTransfer;
-    }
+  public AchTransfer getAchCreditTransfer() {
+    return achCreditTransfer;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_ACH_CREDIT_TRANSFER)
+  @JsonProperty(JSON_PROPERTY_ACH_CREDIT_TRANSFER)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setAchCreditTransfer(@javax.annotation.Nonnull AchTransfer achCreditTransfer) {
-            this.achCreditTransfer = achCreditTransfer;
-        }
+    this.achCreditTransfer = achCreditTransfer;
+  }
 
-@Override
-public boolean equals(Object o) {
+  @Override
+  public boolean equals(Object o) {
     if (this == o) {
-    return true;
+      return true;
     }
     if (o == null || getClass() != o.getClass()) {
-    return false;
+      return false;
     }
-        BankTransferInstructionsOneOf1 bankTransferInstructionsOneOf1 = (BankTransferInstructionsOneOf1) o;
-        return Objects.equals(this.achCreditTransfer, bankTransferInstructionsOneOf1.achCreditTransfer);
-}
+    BankTransferInstructionsOneOf1 bankTransferInstructionsOneOf1 = (BankTransferInstructionsOneOf1) o;
+    return Objects.equals(this.achCreditTransfer, bankTransferInstructionsOneOf1.achCreditTransfer);
+  }
 
-    @Override
-    public int hashCode() {
-        return Objects.hash(achCreditTransfer);
-    }
+  @Override
+  public int hashCode() {
+    return Objects.hash(achCreditTransfer);
+  }
 
-    @Override
-    public String toString() {
+  @Override
+  public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class BankTransferInstructionsOneOf1 {\n");
-        sb.append("    achCreditTransfer: ").append(toIndentedString(achCreditTransfer)).append("\n");
+    sb.append("    achCreditTransfer: ").append(toIndentedString(achCreditTransfer)).append("\n");
     sb.append("}");
     return sb.toString();
-    }
+  }
 
-    /**
-    * Convert the given object to string with each line indented by 4 spaces
-    * (except the first line).
-    */
-    private String toIndentedString(Object o) {
+  /**
+   * Convert the given object to string with each line indented by 4 spaces
+   * (except the first line).
+   */
+  private String toIndentedString(Object o) {
     if (o == null) {
-    return "null";
+      return "null";
     }
     return o.toString().replace("\n", "\n    ");
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @return URL query string
+   */
+  public String toUrlQueryString() {
+    return toUrlQueryString(null);
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @param prefix prefix of the query string
+   * @return URL query string
+   */
+  public String toUrlQueryString(String prefix) {
+    String suffix = "";
+    String containerSuffix = "";
+    String containerPrefix = "";
+    if (prefix == null) {
+      // style=form, explode=true, e.g. /pet?name=cat&type=manx
+      prefix = "";
+    } else {
+      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+      prefix = prefix + "[";
+      suffix = "]";
+      containerSuffix = "]";
+      containerPrefix = "[";
     }
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @return URL query string
-        */
-        public String toUrlQueryString() {
-        return toUrlQueryString(null);
-        }
+    StringJoiner joiner = new StringJoiner("&");
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @param prefix prefix of the query string
-        * @return URL query string
-        */
-        public String toUrlQueryString(String prefix) {
-        String suffix = "";
-        String containerSuffix = "";
-        String containerPrefix = "";
-        if (prefix == null) {
-        // style=form, explode=true, e.g. /pet?name=cat&type=manx
-        prefix = "";
-        } else {
-        // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
-        prefix = prefix + "[";
-        suffix = "]";
-        containerSuffix = "]";
-        containerPrefix = "[";
-        }
-
-        StringJoiner joiner = new StringJoiner("&");
-
-            // add `ach_credit_transfer` to the URL query string
-                            if (getAchCreditTransfer() != null) {
-                            joiner.add(getAchCreditTransfer().toUrlQueryString(prefix + "ach_credit_transfer" + suffix));
-                            }
-
-        return joiner.toString();
-        }
-
+    // add `ach_credit_transfer` to the URL query string
+    if (getAchCreditTransfer() != null) {
+      joiner.add(getAchCreditTransfer().toUrlQueryString(prefix + "ach_credit_transfer" + suffix));
     }
+
+    return joiner.toString();
+  }
+
+}
 

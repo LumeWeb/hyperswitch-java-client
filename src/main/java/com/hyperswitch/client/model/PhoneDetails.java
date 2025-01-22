@@ -31,195 +31,195 @@ import java.net.URLEncoder;
 import java.util.StringJoiner;
 
 /**
-* PhoneDetails
-*/
-    @JsonPropertyOrder({
-        PhoneDetails.JSON_PROPERTY_NUMBER,
-        PhoneDetails.JSON_PROPERTY_COUNTRY_CODE
-    })
+ * PhoneDetails
+ */
+@JsonPropertyOrder({
+  PhoneDetails.JSON_PROPERTY_NUMBER,
+  PhoneDetails.JSON_PROPERTY_COUNTRY_CODE
+})
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class PhoneDetails {
-        public static final String JSON_PROPERTY_NUMBER = "number";
-    @javax.annotation.Nullable
-            private JsonNullable<String> number = JsonNullable.<String>undefined();
+  public static final String JSON_PROPERTY_NUMBER = "number";
+  @javax.annotation.Nullable
+  private JsonNullable<String> number = JsonNullable.<String>undefined();
 
-        public static final String JSON_PROPERTY_COUNTRY_CODE = "country_code";
-    @javax.annotation.Nullable
-            private JsonNullable<String> countryCode = JsonNullable.<String>undefined();
+  public static final String JSON_PROPERTY_COUNTRY_CODE = "country_code";
+  @javax.annotation.Nullable
+  private JsonNullable<String> countryCode = JsonNullable.<String>undefined();
 
-public PhoneDetails() {
-}
+  public PhoneDetails() {
+  }
 
-        public PhoneDetails number(@javax.annotation.Nullable String number) {
-        this.number = JsonNullable.<String>of(number);
-        
-        return this;
-        }
-
-    /**
-        * The contact number
-    * @return number
-    */
-    @javax.annotation.Nullable
-        @JsonIgnore
+  public PhoneDetails number(@javax.annotation.Nullable String number) {
+    this.number = JsonNullable.<String>of(number);
     
-    public String getNumber() {
-                return number.orElse(null);
-    }
+    return this;
+  }
 
-          @JsonProperty(JSON_PROPERTY_NUMBER)
+  /**
+   * The contact number
+   * @return number
+   */
+  @javax.annotation.Nullable
+  @JsonIgnore
+
+  public String getNumber() {
+        return number.orElse(null);
+  }
+
+  @JsonProperty(JSON_PROPERTY_NUMBER)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-        public JsonNullable<String> getNumber_JsonNullable() {
-        return number;
-        }
+  public JsonNullable<String> getNumber_JsonNullable() {
+    return number;
+  }
+  
+  @JsonProperty(JSON_PROPERTY_NUMBER)
+  public void setNumber_JsonNullable(JsonNullable<String> number) {
+    this.number = number;
+  }
+
+  public void setNumber(@javax.annotation.Nullable String number) {
+    this.number = JsonNullable.<String>of(number);
+  }
+
+  public PhoneDetails countryCode(@javax.annotation.Nullable String countryCode) {
+    this.countryCode = JsonNullable.<String>of(countryCode);
     
-        @JsonProperty(JSON_PROPERTY_NUMBER)
-        public void setNumber_JsonNullable(JsonNullable<String> number) {
-        this.number = number;
-        }
+    return this;
+  }
 
-          public void setNumber(@javax.annotation.Nullable String number) {
-            this.number = JsonNullable.<String>of(number);
-        }
+  /**
+   * The country code attached to the number
+   * @return countryCode
+   */
+  @javax.annotation.Nullable
+  @JsonIgnore
 
-        public PhoneDetails countryCode(@javax.annotation.Nullable String countryCode) {
-        this.countryCode = JsonNullable.<String>of(countryCode);
-        
-        return this;
-        }
+  public String getCountryCode() {
+        return countryCode.orElse(null);
+  }
 
-    /**
-        * The country code attached to the number
-    * @return countryCode
-    */
-    @javax.annotation.Nullable
-        @JsonIgnore
-    
-    public String getCountryCode() {
-                return countryCode.orElse(null);
-    }
-
-          @JsonProperty(JSON_PROPERTY_COUNTRY_CODE)
+  @JsonProperty(JSON_PROPERTY_COUNTRY_CODE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-        public JsonNullable<String> getCountryCode_JsonNullable() {
-        return countryCode;
-        }
-    
-        @JsonProperty(JSON_PROPERTY_COUNTRY_CODE)
-        public void setCountryCode_JsonNullable(JsonNullable<String> countryCode) {
-        this.countryCode = countryCode;
-        }
+  public JsonNullable<String> getCountryCode_JsonNullable() {
+    return countryCode;
+  }
+  
+  @JsonProperty(JSON_PROPERTY_COUNTRY_CODE)
+  public void setCountryCode_JsonNullable(JsonNullable<String> countryCode) {
+    this.countryCode = countryCode;
+  }
 
-          public void setCountryCode(@javax.annotation.Nullable String countryCode) {
-            this.countryCode = JsonNullable.<String>of(countryCode);
-        }
+  public void setCountryCode(@javax.annotation.Nullable String countryCode) {
+    this.countryCode = JsonNullable.<String>of(countryCode);
+  }
 
-@Override
-public boolean equals(Object o) {
+  @Override
+  public boolean equals(Object o) {
     if (this == o) {
-    return true;
+      return true;
     }
     if (o == null || getClass() != o.getClass()) {
-    return false;
+      return false;
     }
-        PhoneDetails phoneDetails = (PhoneDetails) o;
-        return equalsNullable(this.number, phoneDetails.number) &&
+    PhoneDetails phoneDetails = (PhoneDetails) o;
+    return equalsNullable(this.number, phoneDetails.number) &&
         equalsNullable(this.countryCode, phoneDetails.countryCode);
-}
+  }
 
-    private static <T> boolean equalsNullable(JsonNullable<T> a, JsonNullable<T> b) {
-        return a == b || (a != null && b != null && a.isPresent() && b.isPresent() && Objects.deepEquals(a.get(), b.get()));
-        }
+  private static <T> boolean equalsNullable(JsonNullable<T> a, JsonNullable<T> b) {
+    return a == b || (a != null && b != null && a.isPresent() && b.isPresent() && Objects.deepEquals(a.get(), b.get()));
+  }
 
-    @Override
-    public int hashCode() {
-        return Objects.hash(hashCodeNullable(number), hashCodeNullable(countryCode));
+  @Override
+  public int hashCode() {
+    return Objects.hash(hashCodeNullable(number), hashCodeNullable(countryCode));
+  }
+
+  private static <T> int hashCodeNullable(JsonNullable<T> a) {
+    if (a == null) {
+      return 1;
     }
+    return a.isPresent() ? Arrays.deepHashCode(new Object[]{a.get()}) : 31;
+  }
 
-        private static <T> int hashCodeNullable(JsonNullable<T> a) {
-        if (a == null) {
-        return 1;
-        }
-        return a.isPresent() ? Arrays.deepHashCode(new Object[]{a.get()}) : 31;
-        }
-
-    @Override
-    public String toString() {
+  @Override
+  public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class PhoneDetails {\n");
-        sb.append("    number: ").append(toIndentedString(number)).append("\n");
-        sb.append("    countryCode: ").append(toIndentedString(countryCode)).append("\n");
+    sb.append("    number: ").append(toIndentedString(number)).append("\n");
+    sb.append("    countryCode: ").append(toIndentedString(countryCode)).append("\n");
     sb.append("}");
     return sb.toString();
-    }
+  }
 
-    /**
-    * Convert the given object to string with each line indented by 4 spaces
-    * (except the first line).
-    */
-    private String toIndentedString(Object o) {
+  /**
+   * Convert the given object to string with each line indented by 4 spaces
+   * (except the first line).
+   */
+  private String toIndentedString(Object o) {
     if (o == null) {
-    return "null";
+      return "null";
     }
     return o.toString().replace("\n", "\n    ");
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @return URL query string
+   */
+  public String toUrlQueryString() {
+    return toUrlQueryString(null);
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @param prefix prefix of the query string
+   * @return URL query string
+   */
+  public String toUrlQueryString(String prefix) {
+    String suffix = "";
+    String containerSuffix = "";
+    String containerPrefix = "";
+    if (prefix == null) {
+      // style=form, explode=true, e.g. /pet?name=cat&type=manx
+      prefix = "";
+    } else {
+      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+      prefix = prefix + "[";
+      suffix = "]";
+      containerSuffix = "]";
+      containerPrefix = "[";
     }
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @return URL query string
-        */
-        public String toUrlQueryString() {
-        return toUrlQueryString(null);
-        }
+    StringJoiner joiner = new StringJoiner("&");
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @param prefix prefix of the query string
-        * @return URL query string
-        */
-        public String toUrlQueryString(String prefix) {
-        String suffix = "";
-        String containerSuffix = "";
-        String containerPrefix = "";
-        if (prefix == null) {
-        // style=form, explode=true, e.g. /pet?name=cat&type=manx
-        prefix = "";
-        } else {
-        // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
-        prefix = prefix + "[";
-        suffix = "]";
-        containerSuffix = "]";
-        containerPrefix = "[";
-        }
-
-        StringJoiner joiner = new StringJoiner("&");
-
-            // add `number` to the URL query string
-                        if (getNumber() != null) {
-                        try {
-                        joiner.add(String.format("%snumber%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getNumber()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-            // add `country_code` to the URL query string
-                        if (getCountryCode() != null) {
-                        try {
-                        joiner.add(String.format("%scountry_code%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCountryCode()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-        return joiner.toString();
-        }
-
+    // add `number` to the URL query string
+    if (getNumber() != null) {
+      try {
+        joiner.add(String.format("%snumber%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getNumber()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
     }
+
+    // add `country_code` to the URL query string
+    if (getCountryCode() != null) {
+      try {
+        joiner.add(String.format("%scountry_code%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCountryCode()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    return joiner.toString();
+  }
+
+}
 

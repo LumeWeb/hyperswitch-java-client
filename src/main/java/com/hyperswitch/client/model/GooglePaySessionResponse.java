@@ -40,341 +40,341 @@ import java.net.URLEncoder;
 import java.util.StringJoiner;
 
 /**
-* GooglePaySessionResponse
-*/
-    @JsonPropertyOrder({
-        GooglePaySessionResponse.JSON_PROPERTY_MERCHANT_INFO,
-        GooglePaySessionResponse.JSON_PROPERTY_SHIPPING_ADDRESS_REQUIRED,
-        GooglePaySessionResponse.JSON_PROPERTY_EMAIL_REQUIRED,
-        GooglePaySessionResponse.JSON_PROPERTY_SHIPPING_ADDRESS_PARAMETERS,
-        GooglePaySessionResponse.JSON_PROPERTY_ALLOWED_PAYMENT_METHODS,
-        GooglePaySessionResponse.JSON_PROPERTY_TRANSACTION_INFO,
-        GooglePaySessionResponse.JSON_PROPERTY_DELAYED_SESSION_TOKEN,
-        GooglePaySessionResponse.JSON_PROPERTY_CONNECTOR,
-        GooglePaySessionResponse.JSON_PROPERTY_SDK_NEXT_ACTION,
-        GooglePaySessionResponse.JSON_PROPERTY_SECRETS
-    })
+ * GooglePaySessionResponse
+ */
+@JsonPropertyOrder({
+  GooglePaySessionResponse.JSON_PROPERTY_MERCHANT_INFO,
+  GooglePaySessionResponse.JSON_PROPERTY_SHIPPING_ADDRESS_REQUIRED,
+  GooglePaySessionResponse.JSON_PROPERTY_EMAIL_REQUIRED,
+  GooglePaySessionResponse.JSON_PROPERTY_SHIPPING_ADDRESS_PARAMETERS,
+  GooglePaySessionResponse.JSON_PROPERTY_ALLOWED_PAYMENT_METHODS,
+  GooglePaySessionResponse.JSON_PROPERTY_TRANSACTION_INFO,
+  GooglePaySessionResponse.JSON_PROPERTY_DELAYED_SESSION_TOKEN,
+  GooglePaySessionResponse.JSON_PROPERTY_CONNECTOR,
+  GooglePaySessionResponse.JSON_PROPERTY_SDK_NEXT_ACTION,
+  GooglePaySessionResponse.JSON_PROPERTY_SECRETS
+})
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class GooglePaySessionResponse {
-        public static final String JSON_PROPERTY_MERCHANT_INFO = "merchant_info";
-    @javax.annotation.Nonnull
-            private GpayMerchantInfo merchantInfo;
+  public static final String JSON_PROPERTY_MERCHANT_INFO = "merchant_info";
+  @javax.annotation.Nonnull
+  private GpayMerchantInfo merchantInfo;
 
-        public static final String JSON_PROPERTY_SHIPPING_ADDRESS_REQUIRED = "shipping_address_required";
-    @javax.annotation.Nonnull
-            private Boolean shippingAddressRequired;
+  public static final String JSON_PROPERTY_SHIPPING_ADDRESS_REQUIRED = "shipping_address_required";
+  @javax.annotation.Nonnull
+  private Boolean shippingAddressRequired;
 
-        public static final String JSON_PROPERTY_EMAIL_REQUIRED = "email_required";
-    @javax.annotation.Nonnull
-            private Boolean emailRequired;
+  public static final String JSON_PROPERTY_EMAIL_REQUIRED = "email_required";
+  @javax.annotation.Nonnull
+  private Boolean emailRequired;
 
-        public static final String JSON_PROPERTY_SHIPPING_ADDRESS_PARAMETERS = "shipping_address_parameters";
-    @javax.annotation.Nonnull
-            private GpayShippingAddressParameters shippingAddressParameters;
+  public static final String JSON_PROPERTY_SHIPPING_ADDRESS_PARAMETERS = "shipping_address_parameters";
+  @javax.annotation.Nonnull
+  private GpayShippingAddressParameters shippingAddressParameters;
 
-        public static final String JSON_PROPERTY_ALLOWED_PAYMENT_METHODS = "allowed_payment_methods";
-    @javax.annotation.Nonnull
-            private List<GpayAllowedPaymentMethods> allowedPaymentMethods = new ArrayList<>();
+  public static final String JSON_PROPERTY_ALLOWED_PAYMENT_METHODS = "allowed_payment_methods";
+  @javax.annotation.Nonnull
+  private List<GpayAllowedPaymentMethods> allowedPaymentMethods = new ArrayList<>();
 
-        public static final String JSON_PROPERTY_TRANSACTION_INFO = "transaction_info";
-    @javax.annotation.Nonnull
-            private GpayTransactionInfo transactionInfo;
+  public static final String JSON_PROPERTY_TRANSACTION_INFO = "transaction_info";
+  @javax.annotation.Nonnull
+  private GpayTransactionInfo transactionInfo;
 
-        public static final String JSON_PROPERTY_DELAYED_SESSION_TOKEN = "delayed_session_token";
-    @javax.annotation.Nonnull
-            private Boolean delayedSessionToken;
+  public static final String JSON_PROPERTY_DELAYED_SESSION_TOKEN = "delayed_session_token";
+  @javax.annotation.Nonnull
+  private Boolean delayedSessionToken;
 
-        public static final String JSON_PROPERTY_CONNECTOR = "connector";
-    @javax.annotation.Nonnull
-            private String connector;
+  public static final String JSON_PROPERTY_CONNECTOR = "connector";
+  @javax.annotation.Nonnull
+  private String connector;
 
-        public static final String JSON_PROPERTY_SDK_NEXT_ACTION = "sdk_next_action";
-    @javax.annotation.Nonnull
-            private SdkNextAction sdkNextAction;
+  public static final String JSON_PROPERTY_SDK_NEXT_ACTION = "sdk_next_action";
+  @javax.annotation.Nonnull
+  private SdkNextAction sdkNextAction;
 
-        public static final String JSON_PROPERTY_SECRETS = "secrets";
-    @javax.annotation.Nullable
-            private JsonNullable<SecretInfoToInitiateSdk> secrets = JsonNullable.<SecretInfoToInitiateSdk>undefined();
+  public static final String JSON_PROPERTY_SECRETS = "secrets";
+  @javax.annotation.Nullable
+  private JsonNullable<SecretInfoToInitiateSdk> secrets = JsonNullable.<SecretInfoToInitiateSdk>undefined();
 
-public GooglePaySessionResponse() {
-}
+  public GooglePaySessionResponse() {
+  }
 
-        public GooglePaySessionResponse merchantInfo(@javax.annotation.Nonnull GpayMerchantInfo merchantInfo) {
-        
-        this.merchantInfo = merchantInfo;
-        return this;
-        }
+  public GooglePaySessionResponse merchantInfo(@javax.annotation.Nonnull GpayMerchantInfo merchantInfo) {
+    
+    this.merchantInfo = merchantInfo;
+    return this;
+  }
 
-    /**
-        * Get merchantInfo
-    * @return merchantInfo
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_MERCHANT_INFO)
+  /**
+   * Get merchantInfo
+   * @return merchantInfo
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_MERCHANT_INFO)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public GpayMerchantInfo getMerchantInfo() {
-        return merchantInfo;
-    }
+  public GpayMerchantInfo getMerchantInfo() {
+    return merchantInfo;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_MERCHANT_INFO)
+  @JsonProperty(JSON_PROPERTY_MERCHANT_INFO)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setMerchantInfo(@javax.annotation.Nonnull GpayMerchantInfo merchantInfo) {
-            this.merchantInfo = merchantInfo;
-        }
+    this.merchantInfo = merchantInfo;
+  }
 
-        public GooglePaySessionResponse shippingAddressRequired(@javax.annotation.Nonnull Boolean shippingAddressRequired) {
-        
-        this.shippingAddressRequired = shippingAddressRequired;
-        return this;
-        }
+  public GooglePaySessionResponse shippingAddressRequired(@javax.annotation.Nonnull Boolean shippingAddressRequired) {
+    
+    this.shippingAddressRequired = shippingAddressRequired;
+    return this;
+  }
 
-    /**
-        * Is shipping address required
-    * @return shippingAddressRequired
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_SHIPPING_ADDRESS_REQUIRED)
+  /**
+   * Is shipping address required
+   * @return shippingAddressRequired
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_SHIPPING_ADDRESS_REQUIRED)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public Boolean getShippingAddressRequired() {
-        return shippingAddressRequired;
-    }
+  public Boolean getShippingAddressRequired() {
+    return shippingAddressRequired;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_SHIPPING_ADDRESS_REQUIRED)
+  @JsonProperty(JSON_PROPERTY_SHIPPING_ADDRESS_REQUIRED)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setShippingAddressRequired(@javax.annotation.Nonnull Boolean shippingAddressRequired) {
-            this.shippingAddressRequired = shippingAddressRequired;
-        }
+    this.shippingAddressRequired = shippingAddressRequired;
+  }
 
-        public GooglePaySessionResponse emailRequired(@javax.annotation.Nonnull Boolean emailRequired) {
-        
-        this.emailRequired = emailRequired;
-        return this;
-        }
+  public GooglePaySessionResponse emailRequired(@javax.annotation.Nonnull Boolean emailRequired) {
+    
+    this.emailRequired = emailRequired;
+    return this;
+  }
 
-    /**
-        * Is email required
-    * @return emailRequired
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_EMAIL_REQUIRED)
+  /**
+   * Is email required
+   * @return emailRequired
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_EMAIL_REQUIRED)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public Boolean getEmailRequired() {
-        return emailRequired;
-    }
+  public Boolean getEmailRequired() {
+    return emailRequired;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_EMAIL_REQUIRED)
+  @JsonProperty(JSON_PROPERTY_EMAIL_REQUIRED)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setEmailRequired(@javax.annotation.Nonnull Boolean emailRequired) {
-            this.emailRequired = emailRequired;
-        }
+    this.emailRequired = emailRequired;
+  }
 
-        public GooglePaySessionResponse shippingAddressParameters(@javax.annotation.Nonnull GpayShippingAddressParameters shippingAddressParameters) {
-        
-        this.shippingAddressParameters = shippingAddressParameters;
-        return this;
-        }
+  public GooglePaySessionResponse shippingAddressParameters(@javax.annotation.Nonnull GpayShippingAddressParameters shippingAddressParameters) {
+    
+    this.shippingAddressParameters = shippingAddressParameters;
+    return this;
+  }
 
-    /**
-        * Get shippingAddressParameters
-    * @return shippingAddressParameters
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_SHIPPING_ADDRESS_PARAMETERS)
+  /**
+   * Get shippingAddressParameters
+   * @return shippingAddressParameters
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_SHIPPING_ADDRESS_PARAMETERS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public GpayShippingAddressParameters getShippingAddressParameters() {
-        return shippingAddressParameters;
-    }
+  public GpayShippingAddressParameters getShippingAddressParameters() {
+    return shippingAddressParameters;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_SHIPPING_ADDRESS_PARAMETERS)
+  @JsonProperty(JSON_PROPERTY_SHIPPING_ADDRESS_PARAMETERS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setShippingAddressParameters(@javax.annotation.Nonnull GpayShippingAddressParameters shippingAddressParameters) {
-            this.shippingAddressParameters = shippingAddressParameters;
-        }
+    this.shippingAddressParameters = shippingAddressParameters;
+  }
 
-        public GooglePaySessionResponse allowedPaymentMethods(@javax.annotation.Nonnull List<GpayAllowedPaymentMethods> allowedPaymentMethods) {
-        
-        this.allowedPaymentMethods = allowedPaymentMethods;
-        return this;
-        }
+  public GooglePaySessionResponse allowedPaymentMethods(@javax.annotation.Nonnull List<GpayAllowedPaymentMethods> allowedPaymentMethods) {
+    
+    this.allowedPaymentMethods = allowedPaymentMethods;
+    return this;
+  }
 
-            public GooglePaySessionResponse addAllowedPaymentMethodsItem(GpayAllowedPaymentMethods allowedPaymentMethodsItem) {
-                if (this.allowedPaymentMethods == null) {
-                this.allowedPaymentMethods = new ArrayList<>();
-                }
-                this.allowedPaymentMethods.add(allowedPaymentMethodsItem);
-                return this;
-            }
+  public GooglePaySessionResponse addAllowedPaymentMethodsItem(GpayAllowedPaymentMethods allowedPaymentMethodsItem) {
+    if (this.allowedPaymentMethods == null) {
+      this.allowedPaymentMethods = new ArrayList<>();
+    }
+    this.allowedPaymentMethods.add(allowedPaymentMethodsItem);
+    return this;
+  }
 
-    /**
-        * List of the allowed payment meythods
-    * @return allowedPaymentMethods
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_ALLOWED_PAYMENT_METHODS)
+  /**
+   * List of the allowed payment meythods
+   * @return allowedPaymentMethods
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_ALLOWED_PAYMENT_METHODS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public List<GpayAllowedPaymentMethods> getAllowedPaymentMethods() {
-        return allowedPaymentMethods;
-    }
+  public List<GpayAllowedPaymentMethods> getAllowedPaymentMethods() {
+    return allowedPaymentMethods;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_ALLOWED_PAYMENT_METHODS)
+  @JsonProperty(JSON_PROPERTY_ALLOWED_PAYMENT_METHODS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setAllowedPaymentMethods(@javax.annotation.Nonnull List<GpayAllowedPaymentMethods> allowedPaymentMethods) {
-            this.allowedPaymentMethods = allowedPaymentMethods;
-        }
+    this.allowedPaymentMethods = allowedPaymentMethods;
+  }
 
-        public GooglePaySessionResponse transactionInfo(@javax.annotation.Nonnull GpayTransactionInfo transactionInfo) {
-        
-        this.transactionInfo = transactionInfo;
-        return this;
-        }
+  public GooglePaySessionResponse transactionInfo(@javax.annotation.Nonnull GpayTransactionInfo transactionInfo) {
+    
+    this.transactionInfo = transactionInfo;
+    return this;
+  }
 
-    /**
-        * Get transactionInfo
-    * @return transactionInfo
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_TRANSACTION_INFO)
+  /**
+   * Get transactionInfo
+   * @return transactionInfo
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_TRANSACTION_INFO)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public GpayTransactionInfo getTransactionInfo() {
-        return transactionInfo;
-    }
+  public GpayTransactionInfo getTransactionInfo() {
+    return transactionInfo;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_TRANSACTION_INFO)
+  @JsonProperty(JSON_PROPERTY_TRANSACTION_INFO)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setTransactionInfo(@javax.annotation.Nonnull GpayTransactionInfo transactionInfo) {
-            this.transactionInfo = transactionInfo;
-        }
+    this.transactionInfo = transactionInfo;
+  }
 
-        public GooglePaySessionResponse delayedSessionToken(@javax.annotation.Nonnull Boolean delayedSessionToken) {
-        
-        this.delayedSessionToken = delayedSessionToken;
-        return this;
-        }
+  public GooglePaySessionResponse delayedSessionToken(@javax.annotation.Nonnull Boolean delayedSessionToken) {
+    
+    this.delayedSessionToken = delayedSessionToken;
+    return this;
+  }
 
-    /**
-        * Identifier for the delayed session response
-    * @return delayedSessionToken
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_DELAYED_SESSION_TOKEN)
+  /**
+   * Identifier for the delayed session response
+   * @return delayedSessionToken
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_DELAYED_SESSION_TOKEN)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public Boolean getDelayedSessionToken() {
-        return delayedSessionToken;
-    }
+  public Boolean getDelayedSessionToken() {
+    return delayedSessionToken;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_DELAYED_SESSION_TOKEN)
+  @JsonProperty(JSON_PROPERTY_DELAYED_SESSION_TOKEN)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setDelayedSessionToken(@javax.annotation.Nonnull Boolean delayedSessionToken) {
-            this.delayedSessionToken = delayedSessionToken;
-        }
+    this.delayedSessionToken = delayedSessionToken;
+  }
 
-        public GooglePaySessionResponse connector(@javax.annotation.Nonnull String connector) {
-        
-        this.connector = connector;
-        return this;
-        }
+  public GooglePaySessionResponse connector(@javax.annotation.Nonnull String connector) {
+    
+    this.connector = connector;
+    return this;
+  }
 
-    /**
-        * The name of the connector
-    * @return connector
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_CONNECTOR)
+  /**
+   * The name of the connector
+   * @return connector
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_CONNECTOR)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public String getConnector() {
-        return connector;
-    }
+  public String getConnector() {
+    return connector;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_CONNECTOR)
+  @JsonProperty(JSON_PROPERTY_CONNECTOR)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setConnector(@javax.annotation.Nonnull String connector) {
-            this.connector = connector;
-        }
+    this.connector = connector;
+  }
 
-        public GooglePaySessionResponse sdkNextAction(@javax.annotation.Nonnull SdkNextAction sdkNextAction) {
-        
-        this.sdkNextAction = sdkNextAction;
-        return this;
-        }
+  public GooglePaySessionResponse sdkNextAction(@javax.annotation.Nonnull SdkNextAction sdkNextAction) {
+    
+    this.sdkNextAction = sdkNextAction;
+    return this;
+  }
 
-    /**
-        * Get sdkNextAction
-    * @return sdkNextAction
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_SDK_NEXT_ACTION)
+  /**
+   * Get sdkNextAction
+   * @return sdkNextAction
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_SDK_NEXT_ACTION)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public SdkNextAction getSdkNextAction() {
-        return sdkNextAction;
-    }
+  public SdkNextAction getSdkNextAction() {
+    return sdkNextAction;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_SDK_NEXT_ACTION)
+  @JsonProperty(JSON_PROPERTY_SDK_NEXT_ACTION)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setSdkNextAction(@javax.annotation.Nonnull SdkNextAction sdkNextAction) {
-            this.sdkNextAction = sdkNextAction;
-        }
+    this.sdkNextAction = sdkNextAction;
+  }
 
-        public GooglePaySessionResponse secrets(@javax.annotation.Nullable SecretInfoToInitiateSdk secrets) {
-        this.secrets = JsonNullable.<SecretInfoToInitiateSdk>of(secrets);
-        
-        return this;
-        }
-
-    /**
-        * Get secrets
-    * @return secrets
-    */
-    @javax.annotation.Nullable
-        @JsonIgnore
+  public GooglePaySessionResponse secrets(@javax.annotation.Nullable SecretInfoToInitiateSdk secrets) {
+    this.secrets = JsonNullable.<SecretInfoToInitiateSdk>of(secrets);
     
-    public SecretInfoToInitiateSdk getSecrets() {
-                return secrets.orElse(null);
-    }
+    return this;
+  }
 
-          @JsonProperty(JSON_PROPERTY_SECRETS)
+  /**
+   * Get secrets
+   * @return secrets
+   */
+  @javax.annotation.Nullable
+  @JsonIgnore
+
+  public SecretInfoToInitiateSdk getSecrets() {
+        return secrets.orElse(null);
+  }
+
+  @JsonProperty(JSON_PROPERTY_SECRETS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-        public JsonNullable<SecretInfoToInitiateSdk> getSecrets_JsonNullable() {
-        return secrets;
-        }
-    
-        @JsonProperty(JSON_PROPERTY_SECRETS)
-        public void setSecrets_JsonNullable(JsonNullable<SecretInfoToInitiateSdk> secrets) {
-        this.secrets = secrets;
-        }
+  public JsonNullable<SecretInfoToInitiateSdk> getSecrets_JsonNullable() {
+    return secrets;
+  }
+  
+  @JsonProperty(JSON_PROPERTY_SECRETS)
+  public void setSecrets_JsonNullable(JsonNullable<SecretInfoToInitiateSdk> secrets) {
+    this.secrets = secrets;
+  }
 
-          public void setSecrets(@javax.annotation.Nullable SecretInfoToInitiateSdk secrets) {
-            this.secrets = JsonNullable.<SecretInfoToInitiateSdk>of(secrets);
-        }
+  public void setSecrets(@javax.annotation.Nullable SecretInfoToInitiateSdk secrets) {
+    this.secrets = JsonNullable.<SecretInfoToInitiateSdk>of(secrets);
+  }
 
-@Override
-public boolean equals(Object o) {
+  @Override
+  public boolean equals(Object o) {
     if (this == o) {
-    return true;
+      return true;
     }
     if (o == null || getClass() != o.getClass()) {
-    return false;
+      return false;
     }
-        GooglePaySessionResponse googlePaySessionResponse = (GooglePaySessionResponse) o;
-        return Objects.equals(this.merchantInfo, googlePaySessionResponse.merchantInfo) &&
+    GooglePaySessionResponse googlePaySessionResponse = (GooglePaySessionResponse) o;
+    return Objects.equals(this.merchantInfo, googlePaySessionResponse.merchantInfo) &&
         Objects.equals(this.shippingAddressRequired, googlePaySessionResponse.shippingAddressRequired) &&
         Objects.equals(this.emailRequired, googlePaySessionResponse.emailRequired) &&
         Objects.equals(this.shippingAddressParameters, googlePaySessionResponse.shippingAddressParameters) &&
@@ -384,162 +384,162 @@ public boolean equals(Object o) {
         Objects.equals(this.connector, googlePaySessionResponse.connector) &&
         Objects.equals(this.sdkNextAction, googlePaySessionResponse.sdkNextAction) &&
         equalsNullable(this.secrets, googlePaySessionResponse.secrets);
-}
+  }
 
-    private static <T> boolean equalsNullable(JsonNullable<T> a, JsonNullable<T> b) {
-        return a == b || (a != null && b != null && a.isPresent() && b.isPresent() && Objects.deepEquals(a.get(), b.get()));
-        }
+  private static <T> boolean equalsNullable(JsonNullable<T> a, JsonNullable<T> b) {
+    return a == b || (a != null && b != null && a.isPresent() && b.isPresent() && Objects.deepEquals(a.get(), b.get()));
+  }
 
-    @Override
-    public int hashCode() {
-        return Objects.hash(merchantInfo, shippingAddressRequired, emailRequired, shippingAddressParameters, allowedPaymentMethods, transactionInfo, delayedSessionToken, connector, sdkNextAction, hashCodeNullable(secrets));
+  @Override
+  public int hashCode() {
+    return Objects.hash(merchantInfo, shippingAddressRequired, emailRequired, shippingAddressParameters, allowedPaymentMethods, transactionInfo, delayedSessionToken, connector, sdkNextAction, hashCodeNullable(secrets));
+  }
+
+  private static <T> int hashCodeNullable(JsonNullable<T> a) {
+    if (a == null) {
+      return 1;
     }
+    return a.isPresent() ? Arrays.deepHashCode(new Object[]{a.get()}) : 31;
+  }
 
-        private static <T> int hashCodeNullable(JsonNullable<T> a) {
-        if (a == null) {
-        return 1;
-        }
-        return a.isPresent() ? Arrays.deepHashCode(new Object[]{a.get()}) : 31;
-        }
-
-    @Override
-    public String toString() {
+  @Override
+  public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class GooglePaySessionResponse {\n");
-        sb.append("    merchantInfo: ").append(toIndentedString(merchantInfo)).append("\n");
-        sb.append("    shippingAddressRequired: ").append(toIndentedString(shippingAddressRequired)).append("\n");
-        sb.append("    emailRequired: ").append(toIndentedString(emailRequired)).append("\n");
-        sb.append("    shippingAddressParameters: ").append(toIndentedString(shippingAddressParameters)).append("\n");
-        sb.append("    allowedPaymentMethods: ").append(toIndentedString(allowedPaymentMethods)).append("\n");
-        sb.append("    transactionInfo: ").append(toIndentedString(transactionInfo)).append("\n");
-        sb.append("    delayedSessionToken: ").append(toIndentedString(delayedSessionToken)).append("\n");
-        sb.append("    connector: ").append(toIndentedString(connector)).append("\n");
-        sb.append("    sdkNextAction: ").append(toIndentedString(sdkNextAction)).append("\n");
-        sb.append("    secrets: ").append(toIndentedString(secrets)).append("\n");
+    sb.append("    merchantInfo: ").append(toIndentedString(merchantInfo)).append("\n");
+    sb.append("    shippingAddressRequired: ").append(toIndentedString(shippingAddressRequired)).append("\n");
+    sb.append("    emailRequired: ").append(toIndentedString(emailRequired)).append("\n");
+    sb.append("    shippingAddressParameters: ").append(toIndentedString(shippingAddressParameters)).append("\n");
+    sb.append("    allowedPaymentMethods: ").append(toIndentedString(allowedPaymentMethods)).append("\n");
+    sb.append("    transactionInfo: ").append(toIndentedString(transactionInfo)).append("\n");
+    sb.append("    delayedSessionToken: ").append(toIndentedString(delayedSessionToken)).append("\n");
+    sb.append("    connector: ").append(toIndentedString(connector)).append("\n");
+    sb.append("    sdkNextAction: ").append(toIndentedString(sdkNextAction)).append("\n");
+    sb.append("    secrets: ").append(toIndentedString(secrets)).append("\n");
     sb.append("}");
     return sb.toString();
-    }
+  }
 
-    /**
-    * Convert the given object to string with each line indented by 4 spaces
-    * (except the first line).
-    */
-    private String toIndentedString(Object o) {
+  /**
+   * Convert the given object to string with each line indented by 4 spaces
+   * (except the first line).
+   */
+  private String toIndentedString(Object o) {
     if (o == null) {
-    return "null";
+      return "null";
     }
     return o.toString().replace("\n", "\n    ");
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @return URL query string
+   */
+  public String toUrlQueryString() {
+    return toUrlQueryString(null);
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @param prefix prefix of the query string
+   * @return URL query string
+   */
+  public String toUrlQueryString(String prefix) {
+    String suffix = "";
+    String containerSuffix = "";
+    String containerPrefix = "";
+    if (prefix == null) {
+      // style=form, explode=true, e.g. /pet?name=cat&type=manx
+      prefix = "";
+    } else {
+      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+      prefix = prefix + "[";
+      suffix = "]";
+      containerSuffix = "]";
+      containerPrefix = "[";
     }
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @return URL query string
-        */
-        public String toUrlQueryString() {
-        return toUrlQueryString(null);
-        }
+    StringJoiner joiner = new StringJoiner("&");
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @param prefix prefix of the query string
-        * @return URL query string
-        */
-        public String toUrlQueryString(String prefix) {
-        String suffix = "";
-        String containerSuffix = "";
-        String containerPrefix = "";
-        if (prefix == null) {
-        // style=form, explode=true, e.g. /pet?name=cat&type=manx
-        prefix = "";
-        } else {
-        // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
-        prefix = prefix + "[";
-        suffix = "]";
-        containerSuffix = "]";
-        containerPrefix = "[";
-        }
-
-        StringJoiner joiner = new StringJoiner("&");
-
-            // add `merchant_info` to the URL query string
-                            if (getMerchantInfo() != null) {
-                            joiner.add(getMerchantInfo().toUrlQueryString(prefix + "merchant_info" + suffix));
-                            }
-
-            // add `shipping_address_required` to the URL query string
-                        if (getShippingAddressRequired() != null) {
-                        try {
-                        joiner.add(String.format("%sshipping_address_required%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getShippingAddressRequired()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-            // add `email_required` to the URL query string
-                        if (getEmailRequired() != null) {
-                        try {
-                        joiner.add(String.format("%semail_required%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getEmailRequired()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-            // add `shipping_address_parameters` to the URL query string
-                            if (getShippingAddressParameters() != null) {
-                            joiner.add(getShippingAddressParameters().toUrlQueryString(prefix + "shipping_address_parameters" + suffix));
-                            }
-
-            // add `allowed_payment_methods` to the URL query string
-                            if (getAllowedPaymentMethods() != null) {
-                            for (int i = 0; i < getAllowedPaymentMethods().size(); i++) {
-                            if (getAllowedPaymentMethods().get(i) != null) {
-                            joiner.add(getAllowedPaymentMethods().get(i).toUrlQueryString(String.format("%sallowed_payment_methods%s%s", prefix, suffix,
-                            "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix))));
-                            }
-                            }
-                            }
-
-            // add `transaction_info` to the URL query string
-                            if (getTransactionInfo() != null) {
-                            joiner.add(getTransactionInfo().toUrlQueryString(prefix + "transaction_info" + suffix));
-                            }
-
-            // add `delayed_session_token` to the URL query string
-                        if (getDelayedSessionToken() != null) {
-                        try {
-                        joiner.add(String.format("%sdelayed_session_token%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getDelayedSessionToken()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-            // add `connector` to the URL query string
-                        if (getConnector() != null) {
-                        try {
-                        joiner.add(String.format("%sconnector%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getConnector()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-            // add `sdk_next_action` to the URL query string
-                            if (getSdkNextAction() != null) {
-                            joiner.add(getSdkNextAction().toUrlQueryString(prefix + "sdk_next_action" + suffix));
-                            }
-
-            // add `secrets` to the URL query string
-                            if (getSecrets() != null) {
-                            joiner.add(getSecrets().toUrlQueryString(prefix + "secrets" + suffix));
-                            }
-
-        return joiner.toString();
-        }
-
+    // add `merchant_info` to the URL query string
+    if (getMerchantInfo() != null) {
+      joiner.add(getMerchantInfo().toUrlQueryString(prefix + "merchant_info" + suffix));
     }
+
+    // add `shipping_address_required` to the URL query string
+    if (getShippingAddressRequired() != null) {
+      try {
+        joiner.add(String.format("%sshipping_address_required%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getShippingAddressRequired()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `email_required` to the URL query string
+    if (getEmailRequired() != null) {
+      try {
+        joiner.add(String.format("%semail_required%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getEmailRequired()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `shipping_address_parameters` to the URL query string
+    if (getShippingAddressParameters() != null) {
+      joiner.add(getShippingAddressParameters().toUrlQueryString(prefix + "shipping_address_parameters" + suffix));
+    }
+
+    // add `allowed_payment_methods` to the URL query string
+    if (getAllowedPaymentMethods() != null) {
+      for (int i = 0; i < getAllowedPaymentMethods().size(); i++) {
+        if (getAllowedPaymentMethods().get(i) != null) {
+          joiner.add(getAllowedPaymentMethods().get(i).toUrlQueryString(String.format("%sallowed_payment_methods%s%s", prefix, suffix,
+              "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix))));
+        }
+      }
+    }
+
+    // add `transaction_info` to the URL query string
+    if (getTransactionInfo() != null) {
+      joiner.add(getTransactionInfo().toUrlQueryString(prefix + "transaction_info" + suffix));
+    }
+
+    // add `delayed_session_token` to the URL query string
+    if (getDelayedSessionToken() != null) {
+      try {
+        joiner.add(String.format("%sdelayed_session_token%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getDelayedSessionToken()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `connector` to the URL query string
+    if (getConnector() != null) {
+      try {
+        joiner.add(String.format("%sconnector%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getConnector()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `sdk_next_action` to the URL query string
+    if (getSdkNextAction() != null) {
+      joiner.add(getSdkNextAction().toUrlQueryString(prefix + "sdk_next_action" + suffix));
+    }
+
+    // add `secrets` to the URL query string
+    if (getSecrets() != null) {
+      joiner.add(getSecrets().toUrlQueryString(prefix + "secrets" + suffix));
+    }
+
+    return joiner.toString();
+  }
+
+}
 

@@ -27,127 +27,127 @@ import java.net.URLEncoder;
 import java.util.StringJoiner;
 
 /**
-* BankTransferAdditionalDataOneOf
-*/
-    @JsonPropertyOrder({
-        BankTransferAdditionalDataOneOf.JSON_PROPERTY_ACH
-    })
-            @JsonTypeName("BankTransferAdditionalData_oneOf")
+ * BankTransferAdditionalDataOneOf
+ */
+@JsonPropertyOrder({
+  BankTransferAdditionalDataOneOf.JSON_PROPERTY_ACH
+})
+@JsonTypeName("BankTransferAdditionalData_oneOf")
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class BankTransferAdditionalDataOneOf {
-        public static final String JSON_PROPERTY_ACH = "ach";
-    @javax.annotation.Nonnull
-            private Object ach;
+  public static final String JSON_PROPERTY_ACH = "ach";
+  @javax.annotation.Nonnull
+  private Object ach;
 
-public BankTransferAdditionalDataOneOf() {
-}
+  public BankTransferAdditionalDataOneOf() {
+  }
 
-        public BankTransferAdditionalDataOneOf ach(@javax.annotation.Nonnull Object ach) {
-        
-        this.ach = ach;
-        return this;
-        }
+  public BankTransferAdditionalDataOneOf ach(@javax.annotation.Nonnull Object ach) {
+    
+    this.ach = ach;
+    return this;
+  }
 
-    /**
-        * Get ach
-    * @return ach
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_ACH)
+  /**
+   * Get ach
+   * @return ach
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_ACH)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public Object getAch() {
-        return ach;
-    }
+  public Object getAch() {
+    return ach;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_ACH)
+  @JsonProperty(JSON_PROPERTY_ACH)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setAch(@javax.annotation.Nonnull Object ach) {
-            this.ach = ach;
-        }
+    this.ach = ach;
+  }
 
-@Override
-public boolean equals(Object o) {
+  @Override
+  public boolean equals(Object o) {
     if (this == o) {
-    return true;
+      return true;
     }
     if (o == null || getClass() != o.getClass()) {
-    return false;
+      return false;
     }
-        BankTransferAdditionalDataOneOf bankTransferAdditionalDataOneOf = (BankTransferAdditionalDataOneOf) o;
-        return Objects.equals(this.ach, bankTransferAdditionalDataOneOf.ach);
-}
+    BankTransferAdditionalDataOneOf bankTransferAdditionalDataOneOf = (BankTransferAdditionalDataOneOf) o;
+    return Objects.equals(this.ach, bankTransferAdditionalDataOneOf.ach);
+  }
 
-    @Override
-    public int hashCode() {
-        return Objects.hash(ach);
-    }
+  @Override
+  public int hashCode() {
+    return Objects.hash(ach);
+  }
 
-    @Override
-    public String toString() {
+  @Override
+  public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class BankTransferAdditionalDataOneOf {\n");
-        sb.append("    ach: ").append(toIndentedString(ach)).append("\n");
+    sb.append("    ach: ").append(toIndentedString(ach)).append("\n");
     sb.append("}");
     return sb.toString();
-    }
+  }
 
-    /**
-    * Convert the given object to string with each line indented by 4 spaces
-    * (except the first line).
-    */
-    private String toIndentedString(Object o) {
+  /**
+   * Convert the given object to string with each line indented by 4 spaces
+   * (except the first line).
+   */
+  private String toIndentedString(Object o) {
     if (o == null) {
-    return "null";
+      return "null";
     }
     return o.toString().replace("\n", "\n    ");
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @return URL query string
+   */
+  public String toUrlQueryString() {
+    return toUrlQueryString(null);
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @param prefix prefix of the query string
+   * @return URL query string
+   */
+  public String toUrlQueryString(String prefix) {
+    String suffix = "";
+    String containerSuffix = "";
+    String containerPrefix = "";
+    if (prefix == null) {
+      // style=form, explode=true, e.g. /pet?name=cat&type=manx
+      prefix = "";
+    } else {
+      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+      prefix = prefix + "[";
+      suffix = "]";
+      containerSuffix = "]";
+      containerPrefix = "[";
     }
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @return URL query string
-        */
-        public String toUrlQueryString() {
-        return toUrlQueryString(null);
-        }
+    StringJoiner joiner = new StringJoiner("&");
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @param prefix prefix of the query string
-        * @return URL query string
-        */
-        public String toUrlQueryString(String prefix) {
-        String suffix = "";
-        String containerSuffix = "";
-        String containerPrefix = "";
-        if (prefix == null) {
-        // style=form, explode=true, e.g. /pet?name=cat&type=manx
-        prefix = "";
-        } else {
-        // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
-        prefix = prefix + "[";
-        suffix = "]";
-        containerSuffix = "]";
-        containerPrefix = "[";
-        }
-
-        StringJoiner joiner = new StringJoiner("&");
-
-            // add `ach` to the URL query string
-                        if (getAch() != null) {
-                        try {
-                        joiner.add(String.format("%sach%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getAch()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-        return joiner.toString();
-        }
-
+    // add `ach` to the URL query string
+    if (getAch() != null) {
+      try {
+        joiner.add(String.format("%sach%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getAch()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
     }
+
+    return joiner.toString();
+  }
+
+}
 

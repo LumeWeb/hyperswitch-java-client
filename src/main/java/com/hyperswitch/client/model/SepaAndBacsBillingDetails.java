@@ -31,195 +31,195 @@ import java.net.URLEncoder;
 import java.util.StringJoiner;
 
 /**
-* SepaAndBacsBillingDetails
-*/
-    @JsonPropertyOrder({
-        SepaAndBacsBillingDetails.JSON_PROPERTY_EMAIL,
-        SepaAndBacsBillingDetails.JSON_PROPERTY_NAME
-    })
+ * SepaAndBacsBillingDetails
+ */
+@JsonPropertyOrder({
+  SepaAndBacsBillingDetails.JSON_PROPERTY_EMAIL,
+  SepaAndBacsBillingDetails.JSON_PROPERTY_NAME
+})
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class SepaAndBacsBillingDetails {
-        public static final String JSON_PROPERTY_EMAIL = "email";
-    @javax.annotation.Nullable
-            private JsonNullable<String> email = JsonNullable.<String>undefined();
+  public static final String JSON_PROPERTY_EMAIL = "email";
+  @javax.annotation.Nullable
+  private JsonNullable<String> email = JsonNullable.<String>undefined();
 
-        public static final String JSON_PROPERTY_NAME = "name";
-    @javax.annotation.Nullable
-            private JsonNullable<String> name = JsonNullable.<String>undefined();
+  public static final String JSON_PROPERTY_NAME = "name";
+  @javax.annotation.Nullable
+  private JsonNullable<String> name = JsonNullable.<String>undefined();
 
-public SepaAndBacsBillingDetails() {
-}
+  public SepaAndBacsBillingDetails() {
+  }
 
-        public SepaAndBacsBillingDetails email(@javax.annotation.Nullable String email) {
-        this.email = JsonNullable.<String>of(email);
-        
-        return this;
-        }
-
-    /**
-        * The Email ID for SEPA and BACS billing
-    * @return email
-    */
-    @javax.annotation.Nullable
-        @JsonIgnore
+  public SepaAndBacsBillingDetails email(@javax.annotation.Nullable String email) {
+    this.email = JsonNullable.<String>of(email);
     
-    public String getEmail() {
-                return email.orElse(null);
-    }
+    return this;
+  }
 
-          @JsonProperty(JSON_PROPERTY_EMAIL)
+  /**
+   * The Email ID for SEPA and BACS billing
+   * @return email
+   */
+  @javax.annotation.Nullable
+  @JsonIgnore
+
+  public String getEmail() {
+        return email.orElse(null);
+  }
+
+  @JsonProperty(JSON_PROPERTY_EMAIL)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-        public JsonNullable<String> getEmail_JsonNullable() {
-        return email;
-        }
+  public JsonNullable<String> getEmail_JsonNullable() {
+    return email;
+  }
+  
+  @JsonProperty(JSON_PROPERTY_EMAIL)
+  public void setEmail_JsonNullable(JsonNullable<String> email) {
+    this.email = email;
+  }
+
+  public void setEmail(@javax.annotation.Nullable String email) {
+    this.email = JsonNullable.<String>of(email);
+  }
+
+  public SepaAndBacsBillingDetails name(@javax.annotation.Nullable String name) {
+    this.name = JsonNullable.<String>of(name);
     
-        @JsonProperty(JSON_PROPERTY_EMAIL)
-        public void setEmail_JsonNullable(JsonNullable<String> email) {
-        this.email = email;
-        }
+    return this;
+  }
 
-          public void setEmail(@javax.annotation.Nullable String email) {
-            this.email = JsonNullable.<String>of(email);
-        }
+  /**
+   * The billing name for SEPA and BACS billing
+   * @return name
+   */
+  @javax.annotation.Nullable
+  @JsonIgnore
 
-        public SepaAndBacsBillingDetails name(@javax.annotation.Nullable String name) {
-        this.name = JsonNullable.<String>of(name);
-        
-        return this;
-        }
+  public String getName() {
+        return name.orElse(null);
+  }
 
-    /**
-        * The billing name for SEPA and BACS billing
-    * @return name
-    */
-    @javax.annotation.Nullable
-        @JsonIgnore
-    
-    public String getName() {
-                return name.orElse(null);
-    }
-
-          @JsonProperty(JSON_PROPERTY_NAME)
+  @JsonProperty(JSON_PROPERTY_NAME)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-        public JsonNullable<String> getName_JsonNullable() {
-        return name;
-        }
-    
-        @JsonProperty(JSON_PROPERTY_NAME)
-        public void setName_JsonNullable(JsonNullable<String> name) {
-        this.name = name;
-        }
+  public JsonNullable<String> getName_JsonNullable() {
+    return name;
+  }
+  
+  @JsonProperty(JSON_PROPERTY_NAME)
+  public void setName_JsonNullable(JsonNullable<String> name) {
+    this.name = name;
+  }
 
-          public void setName(@javax.annotation.Nullable String name) {
-            this.name = JsonNullable.<String>of(name);
-        }
+  public void setName(@javax.annotation.Nullable String name) {
+    this.name = JsonNullable.<String>of(name);
+  }
 
-@Override
-public boolean equals(Object o) {
+  @Override
+  public boolean equals(Object o) {
     if (this == o) {
-    return true;
+      return true;
     }
     if (o == null || getClass() != o.getClass()) {
-    return false;
+      return false;
     }
-        SepaAndBacsBillingDetails sepaAndBacsBillingDetails = (SepaAndBacsBillingDetails) o;
-        return equalsNullable(this.email, sepaAndBacsBillingDetails.email) &&
+    SepaAndBacsBillingDetails sepaAndBacsBillingDetails = (SepaAndBacsBillingDetails) o;
+    return equalsNullable(this.email, sepaAndBacsBillingDetails.email) &&
         equalsNullable(this.name, sepaAndBacsBillingDetails.name);
-}
+  }
 
-    private static <T> boolean equalsNullable(JsonNullable<T> a, JsonNullable<T> b) {
-        return a == b || (a != null && b != null && a.isPresent() && b.isPresent() && Objects.deepEquals(a.get(), b.get()));
-        }
+  private static <T> boolean equalsNullable(JsonNullable<T> a, JsonNullable<T> b) {
+    return a == b || (a != null && b != null && a.isPresent() && b.isPresent() && Objects.deepEquals(a.get(), b.get()));
+  }
 
-    @Override
-    public int hashCode() {
-        return Objects.hash(hashCodeNullable(email), hashCodeNullable(name));
+  @Override
+  public int hashCode() {
+    return Objects.hash(hashCodeNullable(email), hashCodeNullable(name));
+  }
+
+  private static <T> int hashCodeNullable(JsonNullable<T> a) {
+    if (a == null) {
+      return 1;
     }
+    return a.isPresent() ? Arrays.deepHashCode(new Object[]{a.get()}) : 31;
+  }
 
-        private static <T> int hashCodeNullable(JsonNullable<T> a) {
-        if (a == null) {
-        return 1;
-        }
-        return a.isPresent() ? Arrays.deepHashCode(new Object[]{a.get()}) : 31;
-        }
-
-    @Override
-    public String toString() {
+  @Override
+  public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class SepaAndBacsBillingDetails {\n");
-        sb.append("    email: ").append(toIndentedString(email)).append("\n");
-        sb.append("    name: ").append(toIndentedString(name)).append("\n");
+    sb.append("    email: ").append(toIndentedString(email)).append("\n");
+    sb.append("    name: ").append(toIndentedString(name)).append("\n");
     sb.append("}");
     return sb.toString();
-    }
+  }
 
-    /**
-    * Convert the given object to string with each line indented by 4 spaces
-    * (except the first line).
-    */
-    private String toIndentedString(Object o) {
+  /**
+   * Convert the given object to string with each line indented by 4 spaces
+   * (except the first line).
+   */
+  private String toIndentedString(Object o) {
     if (o == null) {
-    return "null";
+      return "null";
     }
     return o.toString().replace("\n", "\n    ");
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @return URL query string
+   */
+  public String toUrlQueryString() {
+    return toUrlQueryString(null);
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @param prefix prefix of the query string
+   * @return URL query string
+   */
+  public String toUrlQueryString(String prefix) {
+    String suffix = "";
+    String containerSuffix = "";
+    String containerPrefix = "";
+    if (prefix == null) {
+      // style=form, explode=true, e.g. /pet?name=cat&type=manx
+      prefix = "";
+    } else {
+      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+      prefix = prefix + "[";
+      suffix = "]";
+      containerSuffix = "]";
+      containerPrefix = "[";
     }
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @return URL query string
-        */
-        public String toUrlQueryString() {
-        return toUrlQueryString(null);
-        }
+    StringJoiner joiner = new StringJoiner("&");
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @param prefix prefix of the query string
-        * @return URL query string
-        */
-        public String toUrlQueryString(String prefix) {
-        String suffix = "";
-        String containerSuffix = "";
-        String containerPrefix = "";
-        if (prefix == null) {
-        // style=form, explode=true, e.g. /pet?name=cat&type=manx
-        prefix = "";
-        } else {
-        // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
-        prefix = prefix + "[";
-        suffix = "]";
-        containerSuffix = "]";
-        containerPrefix = "[";
-        }
-
-        StringJoiner joiner = new StringJoiner("&");
-
-            // add `email` to the URL query string
-                        if (getEmail() != null) {
-                        try {
-                        joiner.add(String.format("%semail%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getEmail()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-            // add `name` to the URL query string
-                        if (getName() != null) {
-                        try {
-                        joiner.add(String.format("%sname%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getName()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-        return joiner.toString();
-        }
-
+    // add `email` to the URL query string
+    if (getEmail() != null) {
+      try {
+        joiner.add(String.format("%semail%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getEmail()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
     }
+
+    // add `name` to the URL query string
+    if (getName() != null) {
+      try {
+        joiner.add(String.format("%sname%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getName()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    return joiner.toString();
+  }
+
+}
 

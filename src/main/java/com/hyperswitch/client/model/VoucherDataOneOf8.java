@@ -28,122 +28,122 @@ import java.net.URLEncoder;
 import java.util.StringJoiner;
 
 /**
-* VoucherDataOneOf8
-*/
-    @JsonPropertyOrder({
-        VoucherDataOneOf8.JSON_PROPERTY_PAY_EASY
-    })
-            @JsonTypeName("VoucherData_oneOf_8")
+ * VoucherDataOneOf8
+ */
+@JsonPropertyOrder({
+  VoucherDataOneOf8.JSON_PROPERTY_PAY_EASY
+})
+@JsonTypeName("VoucherData_oneOf_8")
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class VoucherDataOneOf8 {
-        public static final String JSON_PROPERTY_PAY_EASY = "pay_easy";
-    @javax.annotation.Nonnull
-            private JCSVoucherData payEasy;
+  public static final String JSON_PROPERTY_PAY_EASY = "pay_easy";
+  @javax.annotation.Nonnull
+  private JCSVoucherData payEasy;
 
-public VoucherDataOneOf8() {
-}
+  public VoucherDataOneOf8() {
+  }
 
-        public VoucherDataOneOf8 payEasy(@javax.annotation.Nonnull JCSVoucherData payEasy) {
-        
-        this.payEasy = payEasy;
-        return this;
-        }
+  public VoucherDataOneOf8 payEasy(@javax.annotation.Nonnull JCSVoucherData payEasy) {
+    
+    this.payEasy = payEasy;
+    return this;
+  }
 
-    /**
-        * Get payEasy
-    * @return payEasy
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_PAY_EASY)
+  /**
+   * Get payEasy
+   * @return payEasy
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_PAY_EASY)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public JCSVoucherData getPayEasy() {
-        return payEasy;
-    }
+  public JCSVoucherData getPayEasy() {
+    return payEasy;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_PAY_EASY)
+  @JsonProperty(JSON_PROPERTY_PAY_EASY)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setPayEasy(@javax.annotation.Nonnull JCSVoucherData payEasy) {
-            this.payEasy = payEasy;
-        }
+    this.payEasy = payEasy;
+  }
 
-@Override
-public boolean equals(Object o) {
+  @Override
+  public boolean equals(Object o) {
     if (this == o) {
-    return true;
+      return true;
     }
     if (o == null || getClass() != o.getClass()) {
-    return false;
+      return false;
     }
-        VoucherDataOneOf8 voucherDataOneOf8 = (VoucherDataOneOf8) o;
-        return Objects.equals(this.payEasy, voucherDataOneOf8.payEasy);
-}
+    VoucherDataOneOf8 voucherDataOneOf8 = (VoucherDataOneOf8) o;
+    return Objects.equals(this.payEasy, voucherDataOneOf8.payEasy);
+  }
 
-    @Override
-    public int hashCode() {
-        return Objects.hash(payEasy);
-    }
+  @Override
+  public int hashCode() {
+    return Objects.hash(payEasy);
+  }
 
-    @Override
-    public String toString() {
+  @Override
+  public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class VoucherDataOneOf8 {\n");
-        sb.append("    payEasy: ").append(toIndentedString(payEasy)).append("\n");
+    sb.append("    payEasy: ").append(toIndentedString(payEasy)).append("\n");
     sb.append("}");
     return sb.toString();
-    }
+  }
 
-    /**
-    * Convert the given object to string with each line indented by 4 spaces
-    * (except the first line).
-    */
-    private String toIndentedString(Object o) {
+  /**
+   * Convert the given object to string with each line indented by 4 spaces
+   * (except the first line).
+   */
+  private String toIndentedString(Object o) {
     if (o == null) {
-    return "null";
+      return "null";
     }
     return o.toString().replace("\n", "\n    ");
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @return URL query string
+   */
+  public String toUrlQueryString() {
+    return toUrlQueryString(null);
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @param prefix prefix of the query string
+   * @return URL query string
+   */
+  public String toUrlQueryString(String prefix) {
+    String suffix = "";
+    String containerSuffix = "";
+    String containerPrefix = "";
+    if (prefix == null) {
+      // style=form, explode=true, e.g. /pet?name=cat&type=manx
+      prefix = "";
+    } else {
+      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+      prefix = prefix + "[";
+      suffix = "]";
+      containerSuffix = "]";
+      containerPrefix = "[";
     }
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @return URL query string
-        */
-        public String toUrlQueryString() {
-        return toUrlQueryString(null);
-        }
+    StringJoiner joiner = new StringJoiner("&");
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @param prefix prefix of the query string
-        * @return URL query string
-        */
-        public String toUrlQueryString(String prefix) {
-        String suffix = "";
-        String containerSuffix = "";
-        String containerPrefix = "";
-        if (prefix == null) {
-        // style=form, explode=true, e.g. /pet?name=cat&type=manx
-        prefix = "";
-        } else {
-        // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
-        prefix = prefix + "[";
-        suffix = "]";
-        containerSuffix = "]";
-        containerPrefix = "[";
-        }
-
-        StringJoiner joiner = new StringJoiner("&");
-
-            // add `pay_easy` to the URL query string
-                            if (getPayEasy() != null) {
-                            joiner.add(getPayEasy().toUrlQueryString(prefix + "pay_easy" + suffix));
-                            }
-
-        return joiner.toString();
-        }
-
+    // add `pay_easy` to the URL query string
+    if (getPayEasy() != null) {
+      joiner.add(getPayEasy().toUrlQueryString(prefix + "pay_easy" + suffix));
     }
+
+    return joiner.toString();
+  }
+
+}
 

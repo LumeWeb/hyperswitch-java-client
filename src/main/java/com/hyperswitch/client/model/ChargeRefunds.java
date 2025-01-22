@@ -31,237 +31,237 @@ import java.net.URLEncoder;
 import java.util.StringJoiner;
 
 /**
-* Charge specific fields for controlling the revert of funds from either platform or connected account. Check sub-fields for more details.
-*/
-    @JsonPropertyOrder({
-        ChargeRefunds.JSON_PROPERTY_CHARGE_ID,
-        ChargeRefunds.JSON_PROPERTY_REVERT_PLATFORM_FEE,
-        ChargeRefunds.JSON_PROPERTY_REVERT_TRANSFER
-    })
+ * Charge specific fields for controlling the revert of funds from either platform or connected account. Check sub-fields for more details.
+ */
+@JsonPropertyOrder({
+  ChargeRefunds.JSON_PROPERTY_CHARGE_ID,
+  ChargeRefunds.JSON_PROPERTY_REVERT_PLATFORM_FEE,
+  ChargeRefunds.JSON_PROPERTY_REVERT_TRANSFER
+})
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class ChargeRefunds {
-        public static final String JSON_PROPERTY_CHARGE_ID = "charge_id";
-    @javax.annotation.Nonnull
-            private String chargeId;
+  public static final String JSON_PROPERTY_CHARGE_ID = "charge_id";
+  @javax.annotation.Nonnull
+  private String chargeId;
 
-        public static final String JSON_PROPERTY_REVERT_PLATFORM_FEE = "revert_platform_fee";
-    @javax.annotation.Nullable
-            private JsonNullable<Boolean> revertPlatformFee = JsonNullable.<Boolean>undefined();
+  public static final String JSON_PROPERTY_REVERT_PLATFORM_FEE = "revert_platform_fee";
+  @javax.annotation.Nullable
+  private JsonNullable<Boolean> revertPlatformFee = JsonNullable.<Boolean>undefined();
 
-        public static final String JSON_PROPERTY_REVERT_TRANSFER = "revert_transfer";
-    @javax.annotation.Nullable
-            private JsonNullable<Boolean> revertTransfer = JsonNullable.<Boolean>undefined();
+  public static final String JSON_PROPERTY_REVERT_TRANSFER = "revert_transfer";
+  @javax.annotation.Nullable
+  private JsonNullable<Boolean> revertTransfer = JsonNullable.<Boolean>undefined();
 
-public ChargeRefunds() {
-}
+  public ChargeRefunds() {
+  }
 
-        public ChargeRefunds chargeId(@javax.annotation.Nonnull String chargeId) {
-        
-        this.chargeId = chargeId;
-        return this;
-        }
+  public ChargeRefunds chargeId(@javax.annotation.Nonnull String chargeId) {
+    
+    this.chargeId = chargeId;
+    return this;
+  }
 
-    /**
-        * Identifier for charge created for the payment
-    * @return chargeId
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_CHARGE_ID)
+  /**
+   * Identifier for charge created for the payment
+   * @return chargeId
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_CHARGE_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public String getChargeId() {
-        return chargeId;
-    }
+  public String getChargeId() {
+    return chargeId;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_CHARGE_ID)
+  @JsonProperty(JSON_PROPERTY_CHARGE_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setChargeId(@javax.annotation.Nonnull String chargeId) {
-            this.chargeId = chargeId;
-        }
+    this.chargeId = chargeId;
+  }
 
-        public ChargeRefunds revertPlatformFee(@javax.annotation.Nullable Boolean revertPlatformFee) {
-        this.revertPlatformFee = JsonNullable.<Boolean>of(revertPlatformFee);
-        
-        return this;
-        }
-
-    /**
-        * Toggle for reverting the application fee that was collected for the payment. If set to false, the funds are pulled from the destination account.
-    * @return revertPlatformFee
-    */
-    @javax.annotation.Nullable
-        @JsonIgnore
+  public ChargeRefunds revertPlatformFee(@javax.annotation.Nullable Boolean revertPlatformFee) {
+    this.revertPlatformFee = JsonNullable.<Boolean>of(revertPlatformFee);
     
-    public Boolean getRevertPlatformFee() {
-                return revertPlatformFee.orElse(null);
-    }
+    return this;
+  }
 
-          @JsonProperty(JSON_PROPERTY_REVERT_PLATFORM_FEE)
+  /**
+   * Toggle for reverting the application fee that was collected for the payment. If set to false, the funds are pulled from the destination account.
+   * @return revertPlatformFee
+   */
+  @javax.annotation.Nullable
+  @JsonIgnore
+
+  public Boolean getRevertPlatformFee() {
+        return revertPlatformFee.orElse(null);
+  }
+
+  @JsonProperty(JSON_PROPERTY_REVERT_PLATFORM_FEE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-        public JsonNullable<Boolean> getRevertPlatformFee_JsonNullable() {
-        return revertPlatformFee;
-        }
+  public JsonNullable<Boolean> getRevertPlatformFee_JsonNullable() {
+    return revertPlatformFee;
+  }
+  
+  @JsonProperty(JSON_PROPERTY_REVERT_PLATFORM_FEE)
+  public void setRevertPlatformFee_JsonNullable(JsonNullable<Boolean> revertPlatformFee) {
+    this.revertPlatformFee = revertPlatformFee;
+  }
+
+  public void setRevertPlatformFee(@javax.annotation.Nullable Boolean revertPlatformFee) {
+    this.revertPlatformFee = JsonNullable.<Boolean>of(revertPlatformFee);
+  }
+
+  public ChargeRefunds revertTransfer(@javax.annotation.Nullable Boolean revertTransfer) {
+    this.revertTransfer = JsonNullable.<Boolean>of(revertTransfer);
     
-        @JsonProperty(JSON_PROPERTY_REVERT_PLATFORM_FEE)
-        public void setRevertPlatformFee_JsonNullable(JsonNullable<Boolean> revertPlatformFee) {
-        this.revertPlatformFee = revertPlatformFee;
-        }
+    return this;
+  }
 
-          public void setRevertPlatformFee(@javax.annotation.Nullable Boolean revertPlatformFee) {
-            this.revertPlatformFee = JsonNullable.<Boolean>of(revertPlatformFee);
-        }
+  /**
+   * Toggle for reverting the transfer that was made during the charge. If set to false, the funds are pulled from the main platform&#39;s account.
+   * @return revertTransfer
+   */
+  @javax.annotation.Nullable
+  @JsonIgnore
 
-        public ChargeRefunds revertTransfer(@javax.annotation.Nullable Boolean revertTransfer) {
-        this.revertTransfer = JsonNullable.<Boolean>of(revertTransfer);
-        
-        return this;
-        }
+  public Boolean getRevertTransfer() {
+        return revertTransfer.orElse(null);
+  }
 
-    /**
-        * Toggle for reverting the transfer that was made during the charge. If set to false, the funds are pulled from the main platform&#39;s account.
-    * @return revertTransfer
-    */
-    @javax.annotation.Nullable
-        @JsonIgnore
-    
-    public Boolean getRevertTransfer() {
-                return revertTransfer.orElse(null);
-    }
-
-          @JsonProperty(JSON_PROPERTY_REVERT_TRANSFER)
+  @JsonProperty(JSON_PROPERTY_REVERT_TRANSFER)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-        public JsonNullable<Boolean> getRevertTransfer_JsonNullable() {
-        return revertTransfer;
-        }
-    
-        @JsonProperty(JSON_PROPERTY_REVERT_TRANSFER)
-        public void setRevertTransfer_JsonNullable(JsonNullable<Boolean> revertTransfer) {
-        this.revertTransfer = revertTransfer;
-        }
+  public JsonNullable<Boolean> getRevertTransfer_JsonNullable() {
+    return revertTransfer;
+  }
+  
+  @JsonProperty(JSON_PROPERTY_REVERT_TRANSFER)
+  public void setRevertTransfer_JsonNullable(JsonNullable<Boolean> revertTransfer) {
+    this.revertTransfer = revertTransfer;
+  }
 
-          public void setRevertTransfer(@javax.annotation.Nullable Boolean revertTransfer) {
-            this.revertTransfer = JsonNullable.<Boolean>of(revertTransfer);
-        }
+  public void setRevertTransfer(@javax.annotation.Nullable Boolean revertTransfer) {
+    this.revertTransfer = JsonNullable.<Boolean>of(revertTransfer);
+  }
 
-@Override
-public boolean equals(Object o) {
+  @Override
+  public boolean equals(Object o) {
     if (this == o) {
-    return true;
+      return true;
     }
     if (o == null || getClass() != o.getClass()) {
-    return false;
+      return false;
     }
-        ChargeRefunds chargeRefunds = (ChargeRefunds) o;
-        return Objects.equals(this.chargeId, chargeRefunds.chargeId) &&
+    ChargeRefunds chargeRefunds = (ChargeRefunds) o;
+    return Objects.equals(this.chargeId, chargeRefunds.chargeId) &&
         equalsNullable(this.revertPlatformFee, chargeRefunds.revertPlatformFee) &&
         equalsNullable(this.revertTransfer, chargeRefunds.revertTransfer);
-}
+  }
 
-    private static <T> boolean equalsNullable(JsonNullable<T> a, JsonNullable<T> b) {
-        return a == b || (a != null && b != null && a.isPresent() && b.isPresent() && Objects.deepEquals(a.get(), b.get()));
-        }
+  private static <T> boolean equalsNullable(JsonNullable<T> a, JsonNullable<T> b) {
+    return a == b || (a != null && b != null && a.isPresent() && b.isPresent() && Objects.deepEquals(a.get(), b.get()));
+  }
 
-    @Override
-    public int hashCode() {
-        return Objects.hash(chargeId, hashCodeNullable(revertPlatformFee), hashCodeNullable(revertTransfer));
+  @Override
+  public int hashCode() {
+    return Objects.hash(chargeId, hashCodeNullable(revertPlatformFee), hashCodeNullable(revertTransfer));
+  }
+
+  private static <T> int hashCodeNullable(JsonNullable<T> a) {
+    if (a == null) {
+      return 1;
     }
+    return a.isPresent() ? Arrays.deepHashCode(new Object[]{a.get()}) : 31;
+  }
 
-        private static <T> int hashCodeNullable(JsonNullable<T> a) {
-        if (a == null) {
-        return 1;
-        }
-        return a.isPresent() ? Arrays.deepHashCode(new Object[]{a.get()}) : 31;
-        }
-
-    @Override
-    public String toString() {
+  @Override
+  public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class ChargeRefunds {\n");
-        sb.append("    chargeId: ").append(toIndentedString(chargeId)).append("\n");
-        sb.append("    revertPlatformFee: ").append(toIndentedString(revertPlatformFee)).append("\n");
-        sb.append("    revertTransfer: ").append(toIndentedString(revertTransfer)).append("\n");
+    sb.append("    chargeId: ").append(toIndentedString(chargeId)).append("\n");
+    sb.append("    revertPlatformFee: ").append(toIndentedString(revertPlatformFee)).append("\n");
+    sb.append("    revertTransfer: ").append(toIndentedString(revertTransfer)).append("\n");
     sb.append("}");
     return sb.toString();
-    }
+  }
 
-    /**
-    * Convert the given object to string with each line indented by 4 spaces
-    * (except the first line).
-    */
-    private String toIndentedString(Object o) {
+  /**
+   * Convert the given object to string with each line indented by 4 spaces
+   * (except the first line).
+   */
+  private String toIndentedString(Object o) {
     if (o == null) {
-    return "null";
+      return "null";
     }
     return o.toString().replace("\n", "\n    ");
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @return URL query string
+   */
+  public String toUrlQueryString() {
+    return toUrlQueryString(null);
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @param prefix prefix of the query string
+   * @return URL query string
+   */
+  public String toUrlQueryString(String prefix) {
+    String suffix = "";
+    String containerSuffix = "";
+    String containerPrefix = "";
+    if (prefix == null) {
+      // style=form, explode=true, e.g. /pet?name=cat&type=manx
+      prefix = "";
+    } else {
+      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+      prefix = prefix + "[";
+      suffix = "]";
+      containerSuffix = "]";
+      containerPrefix = "[";
     }
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @return URL query string
-        */
-        public String toUrlQueryString() {
-        return toUrlQueryString(null);
-        }
+    StringJoiner joiner = new StringJoiner("&");
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @param prefix prefix of the query string
-        * @return URL query string
-        */
-        public String toUrlQueryString(String prefix) {
-        String suffix = "";
-        String containerSuffix = "";
-        String containerPrefix = "";
-        if (prefix == null) {
-        // style=form, explode=true, e.g. /pet?name=cat&type=manx
-        prefix = "";
-        } else {
-        // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
-        prefix = prefix + "[";
-        suffix = "]";
-        containerSuffix = "]";
-        containerPrefix = "[";
-        }
-
-        StringJoiner joiner = new StringJoiner("&");
-
-            // add `charge_id` to the URL query string
-                        if (getChargeId() != null) {
-                        try {
-                        joiner.add(String.format("%scharge_id%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getChargeId()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-            // add `revert_platform_fee` to the URL query string
-                        if (getRevertPlatformFee() != null) {
-                        try {
-                        joiner.add(String.format("%srevert_platform_fee%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getRevertPlatformFee()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-            // add `revert_transfer` to the URL query string
-                        if (getRevertTransfer() != null) {
-                        try {
-                        joiner.add(String.format("%srevert_transfer%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getRevertTransfer()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-        return joiner.toString();
-        }
-
+    // add `charge_id` to the URL query string
+    if (getChargeId() != null) {
+      try {
+        joiner.add(String.format("%scharge_id%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getChargeId()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
     }
+
+    // add `revert_platform_fee` to the URL query string
+    if (getRevertPlatformFee() != null) {
+      try {
+        joiner.add(String.format("%srevert_platform_fee%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getRevertPlatformFee()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `revert_transfer` to the URL query string
+    if (getRevertTransfer() != null) {
+      try {
+        joiner.add(String.format("%srevert_transfer%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getRevertTransfer()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    return joiner.toString();
+  }
+
+}
 

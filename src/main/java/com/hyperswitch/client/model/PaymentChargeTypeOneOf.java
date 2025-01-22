@@ -28,127 +28,127 @@ import java.net.URLEncoder;
 import java.util.StringJoiner;
 
 /**
-* PaymentChargeTypeOneOf
-*/
-    @JsonPropertyOrder({
-        PaymentChargeTypeOneOf.JSON_PROPERTY_STRIPE
-    })
-            @JsonTypeName("PaymentChargeType_oneOf")
+ * PaymentChargeTypeOneOf
+ */
+@JsonPropertyOrder({
+  PaymentChargeTypeOneOf.JSON_PROPERTY_STRIPE
+})
+@JsonTypeName("PaymentChargeType_oneOf")
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class PaymentChargeTypeOneOf {
-        public static final String JSON_PROPERTY_STRIPE = "Stripe";
-    @javax.annotation.Nonnull
-            private StripeChargeType stripe;
+  public static final String JSON_PROPERTY_STRIPE = "Stripe";
+  @javax.annotation.Nonnull
+  private StripeChargeType stripe;
 
-public PaymentChargeTypeOneOf() {
-}
+  public PaymentChargeTypeOneOf() {
+  }
 
-        public PaymentChargeTypeOneOf stripe(@javax.annotation.Nonnull StripeChargeType stripe) {
-        
-        this.stripe = stripe;
-        return this;
-        }
+  public PaymentChargeTypeOneOf stripe(@javax.annotation.Nonnull StripeChargeType stripe) {
+    
+    this.stripe = stripe;
+    return this;
+  }
 
-    /**
-        * Get stripe
-    * @return stripe
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_STRIPE)
+  /**
+   * Get stripe
+   * @return stripe
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_STRIPE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public StripeChargeType getStripe() {
-        return stripe;
-    }
+  public StripeChargeType getStripe() {
+    return stripe;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_STRIPE)
+  @JsonProperty(JSON_PROPERTY_STRIPE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setStripe(@javax.annotation.Nonnull StripeChargeType stripe) {
-            this.stripe = stripe;
-        }
+    this.stripe = stripe;
+  }
 
-@Override
-public boolean equals(Object o) {
+  @Override
+  public boolean equals(Object o) {
     if (this == o) {
-    return true;
+      return true;
     }
     if (o == null || getClass() != o.getClass()) {
-    return false;
+      return false;
     }
-        PaymentChargeTypeOneOf paymentChargeTypeOneOf = (PaymentChargeTypeOneOf) o;
-        return Objects.equals(this.stripe, paymentChargeTypeOneOf.stripe);
-}
+    PaymentChargeTypeOneOf paymentChargeTypeOneOf = (PaymentChargeTypeOneOf) o;
+    return Objects.equals(this.stripe, paymentChargeTypeOneOf.stripe);
+  }
 
-    @Override
-    public int hashCode() {
-        return Objects.hash(stripe);
-    }
+  @Override
+  public int hashCode() {
+    return Objects.hash(stripe);
+  }
 
-    @Override
-    public String toString() {
+  @Override
+  public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class PaymentChargeTypeOneOf {\n");
-        sb.append("    stripe: ").append(toIndentedString(stripe)).append("\n");
+    sb.append("    stripe: ").append(toIndentedString(stripe)).append("\n");
     sb.append("}");
     return sb.toString();
-    }
+  }
 
-    /**
-    * Convert the given object to string with each line indented by 4 spaces
-    * (except the first line).
-    */
-    private String toIndentedString(Object o) {
+  /**
+   * Convert the given object to string with each line indented by 4 spaces
+   * (except the first line).
+   */
+  private String toIndentedString(Object o) {
     if (o == null) {
-    return "null";
+      return "null";
     }
     return o.toString().replace("\n", "\n    ");
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @return URL query string
+   */
+  public String toUrlQueryString() {
+    return toUrlQueryString(null);
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @param prefix prefix of the query string
+   * @return URL query string
+   */
+  public String toUrlQueryString(String prefix) {
+    String suffix = "";
+    String containerSuffix = "";
+    String containerPrefix = "";
+    if (prefix == null) {
+      // style=form, explode=true, e.g. /pet?name=cat&type=manx
+      prefix = "";
+    } else {
+      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+      prefix = prefix + "[";
+      suffix = "]";
+      containerSuffix = "]";
+      containerPrefix = "[";
     }
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @return URL query string
-        */
-        public String toUrlQueryString() {
-        return toUrlQueryString(null);
-        }
+    StringJoiner joiner = new StringJoiner("&");
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @param prefix prefix of the query string
-        * @return URL query string
-        */
-        public String toUrlQueryString(String prefix) {
-        String suffix = "";
-        String containerSuffix = "";
-        String containerPrefix = "";
-        if (prefix == null) {
-        // style=form, explode=true, e.g. /pet?name=cat&type=manx
-        prefix = "";
-        } else {
-        // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
-        prefix = prefix + "[";
-        suffix = "]";
-        containerSuffix = "]";
-        containerPrefix = "[";
-        }
-
-        StringJoiner joiner = new StringJoiner("&");
-
-            // add `Stripe` to the URL query string
-                            if (getStripe() != null) {
-                            try {
-                            joiner.add(String.format("%sStripe%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getStripe()), "UTF-8").replaceAll("\\+", "%20")));
-                            } catch (UnsupportedEncodingException e) {
-                            // Should never happen, UTF-8 is always supported
-                            throw new RuntimeException(e);
-                            }
-                            }
-
-        return joiner.toString();
-        }
-
+    // add `Stripe` to the URL query string
+    if (getStripe() != null) {
+      try {
+        joiner.add(String.format("%sStripe%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getStripe()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
     }
+
+    return joiner.toString();
+  }
+
+}
 

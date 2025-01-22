@@ -27,210 +27,210 @@ import java.net.URLEncoder;
 import java.util.StringJoiner;
 
 /**
-* MerchantConnectorDeleteResponse
-*/
-    @JsonPropertyOrder({
-        MerchantConnectorDeleteResponse.JSON_PROPERTY_MERCHANT_ID,
-        MerchantConnectorDeleteResponse.JSON_PROPERTY_MERCHANT_CONNECTOR_ID,
-        MerchantConnectorDeleteResponse.JSON_PROPERTY_DELETED
-    })
+ * MerchantConnectorDeleteResponse
+ */
+@JsonPropertyOrder({
+  MerchantConnectorDeleteResponse.JSON_PROPERTY_MERCHANT_ID,
+  MerchantConnectorDeleteResponse.JSON_PROPERTY_MERCHANT_CONNECTOR_ID,
+  MerchantConnectorDeleteResponse.JSON_PROPERTY_DELETED
+})
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0")
 public class MerchantConnectorDeleteResponse {
-        public static final String JSON_PROPERTY_MERCHANT_ID = "merchant_id";
-    @javax.annotation.Nonnull
-            private String merchantId;
+  public static final String JSON_PROPERTY_MERCHANT_ID = "merchant_id";
+  @javax.annotation.Nonnull
+  private String merchantId;
 
-        public static final String JSON_PROPERTY_MERCHANT_CONNECTOR_ID = "merchant_connector_id";
-    @javax.annotation.Nonnull
-            private String merchantConnectorId;
+  public static final String JSON_PROPERTY_MERCHANT_CONNECTOR_ID = "merchant_connector_id";
+  @javax.annotation.Nonnull
+  private String merchantConnectorId;
 
-        public static final String JSON_PROPERTY_DELETED = "deleted";
-    @javax.annotation.Nonnull
-            private Boolean deleted;
+  public static final String JSON_PROPERTY_DELETED = "deleted";
+  @javax.annotation.Nonnull
+  private Boolean deleted;
 
-public MerchantConnectorDeleteResponse() {
-}
+  public MerchantConnectorDeleteResponse() {
+  }
 
-        public MerchantConnectorDeleteResponse merchantId(@javax.annotation.Nonnull String merchantId) {
-        
-        this.merchantId = merchantId;
-        return this;
-        }
+  public MerchantConnectorDeleteResponse merchantId(@javax.annotation.Nonnull String merchantId) {
+    
+    this.merchantId = merchantId;
+    return this;
+  }
 
-    /**
-        * The identifier for the Merchant Account
-    * @return merchantId
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_MERCHANT_ID)
+  /**
+   * The identifier for the Merchant Account
+   * @return merchantId
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_MERCHANT_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public String getMerchantId() {
-        return merchantId;
-    }
+  public String getMerchantId() {
+    return merchantId;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_MERCHANT_ID)
+  @JsonProperty(JSON_PROPERTY_MERCHANT_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setMerchantId(@javax.annotation.Nonnull String merchantId) {
-            this.merchantId = merchantId;
-        }
+    this.merchantId = merchantId;
+  }
 
-        public MerchantConnectorDeleteResponse merchantConnectorId(@javax.annotation.Nonnull String merchantConnectorId) {
-        
-        this.merchantConnectorId = merchantConnectorId;
-        return this;
-        }
+  public MerchantConnectorDeleteResponse merchantConnectorId(@javax.annotation.Nonnull String merchantConnectorId) {
+    
+    this.merchantConnectorId = merchantConnectorId;
+    return this;
+  }
 
-    /**
-        * Unique ID of the connector
-    * @return merchantConnectorId
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_MERCHANT_CONNECTOR_ID)
+  /**
+   * Unique ID of the connector
+   * @return merchantConnectorId
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_MERCHANT_CONNECTOR_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public String getMerchantConnectorId() {
-        return merchantConnectorId;
-    }
+  public String getMerchantConnectorId() {
+    return merchantConnectorId;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_MERCHANT_CONNECTOR_ID)
+  @JsonProperty(JSON_PROPERTY_MERCHANT_CONNECTOR_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setMerchantConnectorId(@javax.annotation.Nonnull String merchantConnectorId) {
-            this.merchantConnectorId = merchantConnectorId;
-        }
+    this.merchantConnectorId = merchantConnectorId;
+  }
 
-        public MerchantConnectorDeleteResponse deleted(@javax.annotation.Nonnull Boolean deleted) {
-        
-        this.deleted = deleted;
-        return this;
-        }
+  public MerchantConnectorDeleteResponse deleted(@javax.annotation.Nonnull Boolean deleted) {
+    
+    this.deleted = deleted;
+    return this;
+  }
 
-    /**
-        * If the connector is deleted or not
-    * @return deleted
-    */
-    @javax.annotation.Nonnull
-      @JsonProperty(JSON_PROPERTY_DELETED)
+  /**
+   * If the connector is deleted or not
+   * @return deleted
+   */
+  @javax.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_DELETED)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-    public Boolean getDeleted() {
-        return deleted;
-    }
+  public Boolean getDeleted() {
+    return deleted;
+  }
 
 
-          @JsonProperty(JSON_PROPERTY_DELETED)
+  @JsonProperty(JSON_PROPERTY_DELETED)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setDeleted(@javax.annotation.Nonnull Boolean deleted) {
-            this.deleted = deleted;
-        }
+    this.deleted = deleted;
+  }
 
-@Override
-public boolean equals(Object o) {
+  @Override
+  public boolean equals(Object o) {
     if (this == o) {
-    return true;
+      return true;
     }
     if (o == null || getClass() != o.getClass()) {
-    return false;
+      return false;
     }
-        MerchantConnectorDeleteResponse merchantConnectorDeleteResponse = (MerchantConnectorDeleteResponse) o;
-        return Objects.equals(this.merchantId, merchantConnectorDeleteResponse.merchantId) &&
+    MerchantConnectorDeleteResponse merchantConnectorDeleteResponse = (MerchantConnectorDeleteResponse) o;
+    return Objects.equals(this.merchantId, merchantConnectorDeleteResponse.merchantId) &&
         Objects.equals(this.merchantConnectorId, merchantConnectorDeleteResponse.merchantConnectorId) &&
         Objects.equals(this.deleted, merchantConnectorDeleteResponse.deleted);
-}
+  }
 
-    @Override
-    public int hashCode() {
-        return Objects.hash(merchantId, merchantConnectorId, deleted);
-    }
+  @Override
+  public int hashCode() {
+    return Objects.hash(merchantId, merchantConnectorId, deleted);
+  }
 
-    @Override
-    public String toString() {
+  @Override
+  public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class MerchantConnectorDeleteResponse {\n");
-        sb.append("    merchantId: ").append(toIndentedString(merchantId)).append("\n");
-        sb.append("    merchantConnectorId: ").append(toIndentedString(merchantConnectorId)).append("\n");
-        sb.append("    deleted: ").append(toIndentedString(deleted)).append("\n");
+    sb.append("    merchantId: ").append(toIndentedString(merchantId)).append("\n");
+    sb.append("    merchantConnectorId: ").append(toIndentedString(merchantConnectorId)).append("\n");
+    sb.append("    deleted: ").append(toIndentedString(deleted)).append("\n");
     sb.append("}");
     return sb.toString();
-    }
+  }
 
-    /**
-    * Convert the given object to string with each line indented by 4 spaces
-    * (except the first line).
-    */
-    private String toIndentedString(Object o) {
+  /**
+   * Convert the given object to string with each line indented by 4 spaces
+   * (except the first line).
+   */
+  private String toIndentedString(Object o) {
     if (o == null) {
-    return "null";
+      return "null";
     }
     return o.toString().replace("\n", "\n    ");
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @return URL query string
+   */
+  public String toUrlQueryString() {
+    return toUrlQueryString(null);
+  }
+
+  /**
+   * Convert the instance into URL query string.
+   *
+   * @param prefix prefix of the query string
+   * @return URL query string
+   */
+  public String toUrlQueryString(String prefix) {
+    String suffix = "";
+    String containerSuffix = "";
+    String containerPrefix = "";
+    if (prefix == null) {
+      // style=form, explode=true, e.g. /pet?name=cat&type=manx
+      prefix = "";
+    } else {
+      // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
+      prefix = prefix + "[";
+      suffix = "]";
+      containerSuffix = "]";
+      containerPrefix = "[";
     }
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @return URL query string
-        */
-        public String toUrlQueryString() {
-        return toUrlQueryString(null);
-        }
+    StringJoiner joiner = new StringJoiner("&");
 
-        /**
-        * Convert the instance into URL query string.
-        *
-        * @param prefix prefix of the query string
-        * @return URL query string
-        */
-        public String toUrlQueryString(String prefix) {
-        String suffix = "";
-        String containerSuffix = "";
-        String containerPrefix = "";
-        if (prefix == null) {
-        // style=form, explode=true, e.g. /pet?name=cat&type=manx
-        prefix = "";
-        } else {
-        // deepObject style e.g. /pet?id[name]=cat&id[type]=manx
-        prefix = prefix + "[";
-        suffix = "]";
-        containerSuffix = "]";
-        containerPrefix = "[";
-        }
-
-        StringJoiner joiner = new StringJoiner("&");
-
-            // add `merchant_id` to the URL query string
-                        if (getMerchantId() != null) {
-                        try {
-                        joiner.add(String.format("%smerchant_id%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getMerchantId()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-            // add `merchant_connector_id` to the URL query string
-                        if (getMerchantConnectorId() != null) {
-                        try {
-                        joiner.add(String.format("%smerchant_connector_id%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getMerchantConnectorId()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-            // add `deleted` to the URL query string
-                        if (getDeleted() != null) {
-                        try {
-                        joiner.add(String.format("%sdeleted%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getDeleted()), "UTF-8").replaceAll("\\+", "%20")));
-                        } catch (UnsupportedEncodingException e) {
-                        // Should never happen, UTF-8 is always supported
-                        throw new RuntimeException(e);
-                        }
-                        }
-
-        return joiner.toString();
-        }
-
+    // add `merchant_id` to the URL query string
+    if (getMerchantId() != null) {
+      try {
+        joiner.add(String.format("%smerchant_id%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getMerchantId()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
     }
+
+    // add `merchant_connector_id` to the URL query string
+    if (getMerchantConnectorId() != null) {
+      try {
+        joiner.add(String.format("%smerchant_connector_id%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getMerchantConnectorId()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `deleted` to the URL query string
+    if (getDeleted() != null) {
+      try {
+        joiner.add(String.format("%sdeleted%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getDeleted()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    return joiner.toString();
+  }
+
+}
 
